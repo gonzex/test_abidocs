@@ -1,0 +1,1921 @@
+## **adpimd** 
+
+
+ Mnemonics: ADiabatic Path-Integral Molecular Dynamics  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[imgmov]]==9 or [[imgmov]]==13  
+
+
+
+Controls whether adiabatic Path-Integral Molecular Dynamics is performed or
+not.  
+The corresponding adiabaticity parameter is given by [[adpimd_gamma]].  
+  
+If equal to 0, no adiabatic Path-Integral Molecular Dynamics (standard PIMD)
+is performed.  
+If equal to 1, adiabatic Path-Integral Molecular Dynamics is activated.  
+Only relevant with [[pitransform]]=1 (normal mode transformation). In that
+case,  
+\- the mass associated with to the zero-frequency mode is the true mass
+[[amu]],  
+\- the mass associated to the other higher frequency modes of the polymer
+chains is equal to the normal mode mass divided by [[adpimd_gamma]]
+(adiabaticity parameter),  
+\- the equation of motion on the zero-frequency mode is not thermostated.  
+NOT YET USABLE
+
+
+
+
+## **adpimd_gamma** 
+
+
+ Mnemonics: ADiabatic Path-Integral Molecular Dynamics: GAMMA factor  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[adpimd]]==1 and [[imgmov]] in [9,13]  
+
+
+
+Adiabaticity parameter to be used in adiabatic Path-Integral Molecular
+Dynamics.  
+NOT YET USABLE
+
+
+
+
+## **amu** 
+
+
+ Mnemonics: Atomic Mass Units  
+Variable type: real  
+Dimensions: ([[ntypat]])  
+Default value: None  
+Comment: provided by a database of atomic masses.  
+
+
+
+Gives the masses in atomic mass units for each kind of atom in cell. These
+masses are used in performing molecular dynamical atomic motion if
+[[ionmov]]=1, 6, 7 or 8. They are also used in phonon calculations, in the
+diagonalization of the dynamical matrix. Note that one may set all masses to 1
+for certain cases in which merely structural relaxation is desired and not
+actual molecular dynamics.
+
+Using 1986 recommended values, 1 atomic mass unit = 1.6605402e-27 kg. In this
+unit the mass of Carbon 12 is exactly 12.
+
+A database of atomic masses is provided, giving default values. Note that the
+default database uses mixed isotope masses (for Carbon the natural occurrence
+of Carbon 13 is taken into account). The values are those recommended by the
+commission on Atomic Weights and Isotopic Abundances, Inorganic Chemistry
+Division, IUPAC, in _ Pure Appl. Chem. _ ** 60 ** , 841 (1988). For Tc, Pm, Po
+to Ac, Pa and beyond U, none of the isotopes has a half-life greater than
+3.0d10 years, and the values provided in the database do not come from that
+source.
+
+For alchemical pseudoatoms, the masses of the constituents atoms are mixed,
+according to the alchemical mixing coefficients [[mixalch]]
+
+In most cases, the use of [[amu]] will be as a static (non-evolving) variable.
+However, the possibility to have different values of [[amu]] for different
+images has been coded. A population of cells with different atomic
+characteristics can thus be considered, and can be made to evolve, e.g. with a
+genetic algorithm (not coded in v7.0.0 though).
+
+
+
+
+## **bmass** 
+
+
+ Mnemonics: Barostat MASS  
+Variable type: real  
+Dimensions: scalar  
+Default value: 10  
+
+
+
+bmass is the mass of the barostat when [[ionmov]]=13 (constant pressure
+molecular dynamics)
+
+
+
+
+## **cineb_start** 
+
+
+ Mnemonics: Climbing-Image Nudged Elastic Band: STARTing iteration  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 7  
+Only relevant if [[imgmov]]== 5 and [[neb_algo]]==2  
+
+
+
+Gives the index of the first CI-NEB iteration..  
+The CI-NEB method constitutes a small modification to the NEB method allowing
+a rigorous convergence to the saddle point. As the image with the highest
+energy has to be identified, the calculation begins with several iterations of
+the standard NEB algorithm. The effective CI-NEB begins at the [[cineb_start]]
+iteration.  
+_ See: J. Chem. Phys. 113, 9901 (2000). _
+
+
+
+
+## **delayperm** 
+
+
+ Mnemonics: DELAY between trials to PERMUTE atoms  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Delay (number of time steps) between trials to permute two atoms, in view of
+accelerated search of minima. Still in development. See the routine
+moldyn.F90. See also [[signperm]]. When [[delayperm]] is zero, there is not
+permutation trials.
+
+
+
+
+## **diismemory** 
+
+
+ Mnemonics: Direct Inversion in the Iterative Subspace MEMORY  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 8  
+
+
+
+Gives the maximum number of "time" steps for which the forces and stresses are
+stored, and taken into account in the DIIS algorithm ([[ionmov]]=20) to find
+zero-force and stress configurations.
+
+
+
+
+## **dilatmx** 
+
+
+ Mnemonics: lattice DILATation : MaXimal value  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1.0  
+
+
+
+Gives the maximal permitted scaling of the lattice parameters when the cell
+shape and dimension is varied (see variable [[optcell]]). It is used to define
+the sphere of plane waves and FFT box coherent with the possible modifications
+of the cell ([[ionmov]]==2 and [[optcell] /=0). For these definitions, it is
+equivalent to changing [[ecut]] by multiplying it by [[dilatmx]]  2  (the
+result is an "effective ecut", called internally "ecut_eff", other uses of
+[[ecut]] being not modified when [[dilatmx]]&gt;1.0 .  
+Using [[dilatmx]]&lt;1.0 is equivalent to changing [[ecut]] in all its uses.
+This is allowed, although its meaning is no longer related to a maximal
+expected scaling.  
+Setting [[dilatmx]] to a large value leads to waste of CPU time and memory.
+Supposing you think that the optimized [[acell]] values might be 10% larger
+than your input values, use simply [[dilatmx]] 1.1 . This will already lead to
+an increase of the number of planewaves by a factor (1.1)  3  =1.331 , and a
+corresponding increase in CPU time and memory.  
+It is possible to use [[dilatmx]] when [[optcell]] =0, but a value larger than
+1.0 will be a waste.
+
+
+
+
+## **dtion** 
+
+
+ Mnemonics: Delta Time for IONs  
+Variable type: real  
+Dimensions: scalar  
+Default value: 100  
+
+
+
+Used for controlling ion time steps. If [[ionmov]] is set to 1, 6 or 7, then
+molecular dynamics is  used to update atomic positions in response to forces.
+The parameter [[dtion]] is a time step in atomic units of time. (One atomic
+time unit is 2.418884e-17 seconds, which is the value of Planck's constant in
+hartree*sec.) In this case the atomic masses, in amu (given in array " [[amu]]
+"), are used in Newton's equation and the viscosity (for [[ionmov]] =1) and
+number of time steps are provided to the code using input variables "[[vis]]"
+and "[[ntime]]". The code actually converts from masses in amu to masses in
+atomic units (in units of electron masses) but the user enters masses in
+[[amu]] . (The conversion from amu to atomic units (electron masses) is
+1822.88851 electron masses/amu.)  
+A typical good value for [[dtion]] is about 100. The user must try several
+values for [[dtion]] in order to establish the stable and efficient choice for
+the accompanying amu, atom types and positions, and [[vis]] (viscosity).  
+For quenched dynamics ([[ionmov]]=7), a larger time step might be taken, for
+example 200.  
+No meaning for RF calculations.
+
+
+
+
+## **dynimage** 
+
+
+ Mnemonics: DYNamics of the IMAGE  
+Variable type: integer  
+Dimensions: ([[nimage]])  
+Default value: *1  
+Comment: if [[imgmov]] in [2,5] (String Method, NEB), <b>dynimage(1)</b>=0 and <b>dynimage([[nimage]])</b>=0.  
+
+
+
+This input variable is relevant when sets of images are activated (see
+[[imgmov]]). Not all images might be required to evolve from one time step to
+the other. Indeed, in the String Method or the Nudged Elastic Band, one might
+impose that the extremal configurations of the string are fixed. In case the
+[[dynimage]](iimage)=0, the image with index "iimage" will be consider as
+fixed. Thus, there is no need to compute forces and stresses for this image at
+each time step. The purpose of defining extremal images is to make the
+input/output easier.  
+  
+In order to save CPU time, the computation of properties of static images
+([[dynimage]](iimage)=0) can be avoided: see [[istatimg]] keyword.
+
+
+
+
+## **ecutsm** 
+
+
+ Mnemonics: Energy CUToff SMearing  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+
+
+
+This input variable is important when performing relaxation of unit cell size
+and shape (non-zero [[optcell]]). Using a non-zero [[ecutsm]], the total
+energy curves as a function of [[ecut]], or [[acell]], can be smoothed,
+keeping consistency with the stress (and automatically including the Pulay
+stress). The recommended value is 0.5 Ha. Actually, when [[optcell]]/=0,
+ABINIT requires [[ecutsm]] to be larger than zero. If you want to optimize
+cell shape and size without smoothing the total energy curve (a dangerous
+thing to do), use a very small [[ecutsm]], on the order of one microHartree.
+
+Technical information :  
+See Bernasconi et al, J. Phys. Chem. Solids 56, 501 (1995) for a related
+method.  
+[[ecutsm]] allows to define an effective kinetic energy for plane waves, close
+to, but lower than the maximal kinetic energy [[ecut]]. For kinetic energies
+less than [[ecut]]-[[ecutsm]], nothing is modified, while between
+[[ecut]]-[[ecutsm]] and [[ecut]] , the kinetic energy is multiplied by:  
+1.0 / ( x  2  (3+x-6x  2  +3x  3  ))  
+where x = ([[ecut]] - kinetic_energy)/[[ecutsm]]  
+Note that x  2  ( 3+x-6x  2  +3x  3  ) is 0 at x=0, with vanishing derivative,
+and that at x=1 , it is 1, with also vanishing derivative.  
+If [[ecutsm]] is zero, the unmodified kinetic energy is used.  
+[[ecutsm]] can be specified in Ha (the default), Ry, eV or Kelvin, since
+[[ecutsm]] has the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV).  
+A few test for Silicon (diamond structure, 2 k-points) have shown 0.5 Ha to be
+largely enough for [[ecut]] between 2Ha and 6Ha, to get smooth curves. It is
+likely that this value is OK as soon as [[ecut]] is larger than 4Ha.
+
+
+
+
+## **friction** 
+
+
+ Mnemonics: internal FRICTION coefficient  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.001  
+
+
+
+Gives the internal friction coefficient (atomic units) for Langevin dynamics
+(when [[ionmov]]=9): fixed temperature simulations with random forces.
+
+The equation of motion is :  
+M  I  d  2  R  I  /dt  2  = F  I  \- [[friction]] M  I  dR  I  /dt - F_random
+I  
+where F_random  I  is a Gaussian random force with average zero, and variance
+2 [[friction]] M  I  kT.  
+The atomic unit of friction is hartrees*electronic mass*(atomic time
+units)/Bohr  2  . See J. Chelikowsky, J. Phys. D : Appl Phys. 33(2000)R33.
+
+
+
+
+## **fxcartfactor** 
+
+
+ Mnemonics: Forces to (X) CARTesian coordinates FACTOR  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1 (Bohr^2)/Hartree  
+
+
+
+The forces multiplied by [[fxcartfactor]] will be treated like difference in
+cartesian coordinates in the process of optimization. This is a simple
+preconditioner.  
+TO BE UPDATED See ([[ionmov]]=2, non-zero [[optcell]]). For example, the
+stopping criterion defined by [[tolmxf]] relates to these scaled stresses.
+
+
+
+
+## **ga_algor** 
+
+
+ Mnemonics: Genetic Algorithm - ALGOrithm selection  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Choosing method to make the structure selection. Only the enthalpy is used now
+but we plan to include, energy, electronic band gap and alchemical potentials.
+Right now only value of 1 (enthalpy) works.
+
+
+
+
+## **ga_fitness** 
+
+
+ Mnemonics: Genetic Algorithm FITNESS function selection  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Different methodologies to perform the roulette-wheel selection of parents.
+Even though, the objective function is the crystalline enthalpy (H_i), the
+weight of the population elements to be chosen from in a roulette-wheel
+selection can be given through different functions. We consider the following
+cases.  
+1\. F = H_i / Sum H_i  
+2\. F = exp(-(H_i-H_min)) / Sum exp(-(H_i-H_min))  
+3\. F = (1/n_i) / Sum (1/n_i). Where n_i is the position in the ordered list
+of enthalpies
+
+
+
+
+## **ga_n_rules** 
+
+
+ Mnemonics: Genetic Algorithm Number of RULES  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Different genetic rules have been implemented and the user has the change to
+choose between any of them. Right now we have 4 rules. See [[ga_rules]]
+
+
+
+
+## **ga_opt_percent** 
+
+
+ Mnemonics: Genetic Algorithm OPTimal PERCENT  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.2  
+
+
+
+Percentage of the population that according to the fitness function passes to
+the following iteration.
+
+
+
+
+## **ga_rules** 
+
+
+ Mnemonics: Genetic Algorithm RULES  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Different genetic rules have been implemented and the user has the change to
+choose between any of them. The chosen number of rules have been defined in
+[[ga_n_rules]  
+  
+Implemented rules are  
+1) crossover. Two parents are randomly chosen and two springs are mixed from
+the two by (a) choosing randomly (through Fitness function) two parents and
+then randomly rotating and shifting the coordinates withing that particular
+cell. (b) Slice every one of the unit cell of the parents along a random
+direction and creating the spring offs from the pieces of the two parents.  
+2) Vector flip mutation. From the coordinates from a given parent, a piece of
+it is inverted.  
+3) random strain. A random anisotropic deformation is given to the unit cell.  
+4) Coordinates mutation of 1/4 of the whole coordinates.  
+
+
+
+
+## **getcell** 
+
+
+ Mnemonics: GET CELL parameters from ...  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+This variable is typically used to chain the calculations, in the multi-
+dataset mode ([[ndtset]]&gt;0), since it describes from which dataset
+[[acell]] and [[rprim]] are to be taken, as input of the present dataset. The
+cell parameters are [[EVOLVING]] variables, for which such a chain of
+calculations is useful.  
+If ==0, no use of previously computed values must occur.  
+If it is positive, its value gives the index of the dataset from which the
+data are to be used as input data. It must be the index of a dataset already
+computed in the SAME run.  
+If equal to -1, the output data of the previous dataset must be taken, which
+is a frequently occurring case. However, if the first dataset is treated, -1
+is equivalent to 0, since no dataset has yet been computed in the same run.  
+If another negative number, it indicates the number of datasets to go backward
+to find the needed data (once again, going back beyond the first dataset is
+equivalent to using a null get variable).
+
+
+
+
+## **getvel** 
+
+
+ Mnemonics: GET VEL from ...  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+These variables are typically used to chain the calculations, in the multi-
+dataset mode ([[ndtset]]&gt;0) since they describe from which dataset the
+corresponding output variables are to be taken, as input of the present
+dataset. The atomic positions and velocities are [[EVOLVING]] variables, for
+which such a chain of calculation is useful.  
+Note that the use of ** getxcart ** and ** getxred ** differs when [[acell]]
+and [[rprim]] are different from one dataset to the other.  
+If ==0, no use of previously computed values must occur.  
+If it is positive, its value gives the index of the dataset from which the
+data are to be used as input data. It must be the index of a dataset already
+computed in the SAME run.  
+If equal to -1, the output data of the previous dataset must be taken, which
+is a frequently occurring case. However, if the first dataset is treated, -1
+is equivalent to 0, since no dataset has yet been computed in the same run.  
+If another negative number, it indicates the number of datasets to go backward
+to find the needed data (once again, going back beyond the first dataset is
+equivalent to using a null get variable).  
+Note : ** getxred ** and ** getxcart ** cannot be simultaneously non-zero for
+the same dataset. On the other hand the use of [[getvel]] with ** getxred **
+is allowed, despite the different coordinate system.
+
+
+
+
+## **getxcart** 
+
+
+ Mnemonics: GET XCART from ...  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+These variables are typically used to chain the calculations, in the multi-
+dataset mode ([[ndtset]]&gt;0) since they describe from which dataset the
+corresponding output variables are to be taken, as input of the present
+dataset. The atomic positions and velocities are [[EVOLVING]] variables, for
+which such a chain of calculation is useful.  
+Note that the use of [[getxcart]] and ** getxred ** differs when [[acell]] and
+[[rprim]] are different from one dataset to the other.  
+If ==0, no use of previously computed values must occur.  
+If it is positive, its value gives the index of the dataset from which the
+data are to be used as input data. It must be the index of a dataset already
+computed in the SAME run.  
+If equal to -1, the output data of the previous dataset must be taken, which
+is a frequently occurring case. However, if the first dataset is treated, -1
+is equivalent to 0, since no dataset has yet been computed in the same run.  
+If another negative number, it indicates the number of datasets to go backward
+to find the needed data (once again, going back beyond the first dataset is
+equivalent to using a null get variable).  
+Note : ** getxred ** and [[getxcart]] cannot be simultaneously non-zero for
+the same dataset. On the other hand the use of ** getvel ** with ** getxred **
+is allowed, despite the different coordinate system.
+
+
+
+
+## **getxred** 
+
+
+ Mnemonics: GET XRED from ...  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+These variables are typically used to chain the calculations, in the multi-
+dataset mode ([[ndtset]]&gt;0) since they describe from which dataset the
+corresponding output variables are to be taken, as input of the present
+dataset. The atomic positions and velocities are [[EVOLVING]] variables, for
+which such a chain of calculation is useful.  
+Note that the use of ** getxcart ** and [[getxred]] differs when [[acell]] and
+[[rprim]] are different from one dataset to the other.  
+If ==0, no use of previously computed values must occur.  
+If it is positive, its value gives the index of the dataset from which the
+data are to be used as input data. It must be the index of a dataset already
+computed in the SAME run.  
+If equal to -1, the output data of the previous dataset must be taken, which
+is a frequently occurring case. However, if the first dataset is treated, -1
+is equivalent to 0, since no dataset has yet been computed in the same run.  
+If another negative number, it indicates the number of datasets to go backward
+to find the needed data (once again, going back beyond the first dataset is
+equivalent to using a null get variable).  
+Note : [[getxred]] and ** getxcart ** cannot be simultaneously non-zero for
+the same dataset. On the other hand the use of ** getvel ** with [[getxred]]
+is allowed, despite the different coordinate system.
+
+
+
+
+## **goprecon** 
+
+
+ Mnemonics: Geometry Optimization PRECONditioner equations  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Set the kind of preconditioner to be used for Geometry Optimization  
+(Note : Under development now (2011.05.20))
+
+  * [[goprecon]]=0 : No preconditioner 
+  * [[goprecon]]=[1-9] : Linear preconditioner 
+  * [[goprecon]]=[11-19] : Non-linear preconditioner 
+
+  
+
+
+
+
+## **goprecprm** 
+
+
+ Mnemonics: Geometry Optimization PREconditioner PaRaMeters equations  
+Variable type: real  
+Dimensions: (3)  
+Default value: 0  
+
+
+
+Set the paramenters use by the preconditioner to be used for Geometry
+Optimization  
+(Note : Under development now (2011.06.06))
+
+
+
+
+## **iatcon** 
+
+
+ Mnemonics: Indices of AToms in CONstraint equations  
+Variable type: integer  
+Dimensions: ([[natcon]],[[nconeq]])  
+Default value: 0  
+
+
+
+Gives the indices of the atoms appearing in each of the [[nconeq]] independent
+equations constraining the motion of atoms during structural optimization or
+molecular dynamics (see [[nconeq]] , [[natcon]], and [[wtatcon]]).  
+(Note : combined with wtatcon to give internal representation of the latter -
+this should be described)
+
+
+
+
+## **iatfix** 
+
+
+ Mnemonics: Indices of AToms that are FIXed   
+Variable type: integer  
+Dimensions: ([[natfix]])  
+Default value: None  
+Only relevant if [[natfix]] > 0  
+
+
+
+Give the index (in the range 1 to [[natom]] ) of each atom which is to be held
+fixed for structural optimization or molecular dynamics. The variable
+[[iatfix]] lists those fixed in the three directions, while the variables
+[[iatfixx]], [[iatfixy]], and [[iatfixz]], allow to fix some atoms along x, y
+or z directions, or a combination of these.
+
+WARNING : The implementation is inconsistent !! For [[ionmov]] ==1, the fixing
+of directions was done in cartesian coordinates, while for the other values of
+[[ionmov]], it was done in reduced coordinates. Sorry for this.
+
+There is no harm in fixing one atom in the three directions using [[iatfix]],
+then fixing it again in other directions by mentioning it in ** iatfixx ** ,
+** iatfixy ** or ** iatfixz ** .  
+The internal representation of these input data is done by the mean of one
+variable [[iatfix]](3,[[natom]]), defined for each direction and each atom,
+being 0 if the atom is not fixed along the direction, and 1 if the atom is
+fixed along the direction. When some atoms are fixed along 1 or 2 directions,
+the use of symmetries is restricted to symmetry operations whose (3x3)
+matrices [[symrel]] are diagonal.  
+If the geometry builder is used, [[iatfix]] will be related to the
+preprocessed set of atoms, generated by the geometry builder. The user must
+thus foresee the effect of this geometry builder (see [[objarf]]).
+
+
+
+
+## **iatfixx** 
+
+
+ Mnemonics: Indices of AToms that are FIXed along the X direction  
+Variable type: integer  
+Dimensions: ([[natfixx]])  
+Default value: None  
+Only relevant if [[natfixx]] > 0  
+
+
+
+Give the index (in the range 1 to [[natom]] ) of each atom which is to be held
+fixed ALONG THE X direction for structural optimization or molecular dynamics.
+The variable [[iatfix]] lists those fixed in the three directions, while the
+variables [[iatfixx]], [[iatfixy]], and [[iatfixz]], allow to fix some atoms
+along x, y or z directions, or a combination of these. See the variable
+[[iatfix]] for more information.
+
+
+
+
+## **iatfixy** 
+
+
+ Mnemonics: Indices of AToms that are FIXed along the Y direction  
+Variable type: integer  
+Dimensions: ([[natfixy]])  
+Default value: None  
+Only relevant if [[natfixy]] > 0  
+
+
+
+Give the index (in the range 1 to [[natom]] ) of each atom which is to be held
+fixed ALONG THE Y direction for structural optimization or molecular dynamics.
+The variable [[iatfix]] lists those fixed in the three directions, while the
+variables [[iatfixx]], [[iatfixy]], and [[iatfixz]], allow to fix some atoms
+along x, y or z directions, or a combination of these. See the variable
+[[iatfix]] for more information.
+
+
+
+
+## **iatfixz** 
+
+
+ Mnemonics: Indices of AToms that are FIXed along the Z direction  
+Variable type: integer  
+Dimensions: ([[natfixz]])  
+Default value: None  
+Only relevant if [[natfixz]] > 0  
+
+
+
+Give the index (in the range 1 to [[natom]] ) of each atom which is to be held
+fixed ALONG THE Z direction for structural optimization or molecular dynamics.
+The variable [[iatfix]] lists those fixed in the three directions, while the
+variables [[iatfixx]], [[iatfixy]], and [[iatfixz]], allow to fix some atoms
+along x, y or z directions, or a combination of these. See the variable
+[[iatfix]] for more information.
+
+
+
+
+## **imgmov** 
+
+
+ Mnemonics: IMaGe MOVEs  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Control the collective changes of images (see [[nimage]],[[npimage]],
+[[dynimage]], [[ntimimage]], [[tolimg]], [[istatimg]], [[prtvolimg]]).  
+Similar to [[ionmov]] in spirit, although here, a population of self-
+consistent calculations for different geometries is managed, while with
+[[ionmov]], only one geometry for self-consistent calculation is managed.  
+In this respect the maximal number of time step for image propagation is
+[[ntimimage]], corresponding to the input variable [[ntime]] of the single
+geometry case. Also, the stopping criterion is governed by [[tolimg]],
+corresponding to the input variable [[toldfe]] of the single geometry case.
+The stopping condition is crude: the image propagation is stopped when the
+mean value (over dynamic images) of the absolute difference of total energy
+(previous and current time step) is less than [[tolimg]].
+
+Actually, there might be combinations of [[ionmov]] and [[imgmov]] in which
+the two mechanisms are at work. Usually, however, only one mechanism will be
+activated (so, usually, either [[ntimimage]] is bigger than one OR [[ntime]]
+is bigger than one). In order for the user to acquire a mental representation
+of the interplay between [[ionmov]] and [[imgmov]], here is a F90 pseudo-code
+presenting the interplay between the different above-mentioned input
+variables, as well as with the parallelism (see input variable [[npimage]]).
+
+    
+    
+    do itimimage=1,ntimimage
+      do iimage=1,nimage
+        (possibly, parallelisation over images)
+        do itime=1,ntime
+          Compute the forces and stresses for image(iimage)
+          Examine whether the stopping criterion defined by tolmxf is fulfilled
+          Predict the next geometry for image(iimage) using ionmov
+        enddo
+      enddo
+      Examine whether the stopping criterion defined by tolimg is fulfilled
+      Predict the next geometries for all images using imgmov
+    enddo
+    
+
+  * = 0 => simply ** copy ** images from previous timimage step.
+  * = 1 => move images according to ** Steepest Descent ** following the (scaled) forces, the scaling factor being [[fxcartfactor]]. 
+  * = 2 => ** String Method ** for finding Minimal Energy Path (MEP) connecting to minima (see PRB 66, 052301 (2002)); the algorithm variant can be selected with the [[string_algo]] keyword (Simplified String Method by default). The solver for the Ordinary Differential Equation (ODE) can be selected with [[mep_solver]] (steepest-descent by default). See also [[mep_mxstep]] keyword.
+  * = 3 => (tentatively, not yet coded) ** Metadynamics **.
+  * = 4 => (tentatively, not yet coded) ** Genetic Algorithm**.
+  * = 5 => ** Nudged Elastic Band (NEB) ** for finding Minimal Energy Path (MEP) connecting two minima; the algorithm variant can be selected with the [[neb_algo]] keyword (NEB+improved tangent by default). The solver for the Ordinary Differential Equation (ODE) can be selected with [[mep_solver]] (steepest-descent by default). The spring constant connecting images along the path is defined by [[neb_spring]]. See also [[mep_mxstep]] keyword.
+  * = 9 or 13 => ** Path-Integral Molecular Dynamics ** (see e.g. [D. Marx and M. Parrinello, J. Chem. Phys. 104, 4077 (1996)]). Will use 9 for ** Langevin thermostat ** (associated friction coefficient given by [[vis]]) and 13 for ** Nose-Hoover thermostat chains ** (associated input variables are the number of thermostats in the chains, [[nnos]], and the masses of these thermostats [[qmass]]). [[nimage]] is the Trotter number (no use of [[dynimage]]); possible transformations of coordinates are defined by [[pitransform]]; Fictitious masses of the atoms (possibly different from the true masses given by [[amu]]) can be specified by [[pimass]]. At present, it is only possible to perform calculations in the (N,V,T) ensemble ([[optcell]]=0).
+
+No meaning for RF calculations.
+
+
+
+
+## **ionmov** 
+
+
+ Mnemonics: IONic MOVEs  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Choice of algorithm to control the displacements of ions, and eventually (see
+[[optcell]]) changes of cell shape and size.
+
+  * 0=&gt; Do not move ions;   
+  
+
+  * 1=&gt; Move atoms using molecular dynamics with optional viscous damping (friction linearly proportional to velocity). The viscous damping is controlled by the parameter "[[vis]]". If actual undamped molecular dynamics is desired, set [[vis]] to 0. The implemented algorithm is the generalisation of the Numerov technique (6th order), but is NOT invariant upon time-reversal, so that the energy is not conserved. The value [[ionmov]]=6 will usually be preferred, although the algorithm that is implemented is lower-order. The time step is governed by [[dtion]].   
+** Purpose: ** Molecular dynamics (if [[vis]]=0), Structural optimization (if [[vis]]&gt;0)   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** Viscous parameter [[vis]], time step [[dtion]], index of atoms fixed [[iatfix]]   
+  
+
+  * 2=&gt; Conduct structural optimization using the Broyden-Fletcher-Goldfarb-Shanno minimization (BFGS). This is much more efficient for structural optimization than viscous damping, when there are less than about 10 degrees of freedom to optimize.   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** Yes (if [[optcell]]/=0)   
+** Related variables: **   
+  
+
+  * 3=&gt; Conduct structural optimization using the Broyden-Fletcher-Goldfarb-Shanno minimization (BFGS), modified to take into account the total energy as well as the gradients (as in usual BFGS).   
+See the paper by [Schlegel, J. Comp. Chem. 3, 214 (1982)]. Might be better
+than [[ionmov]]=2 for few degrees of freedom (less than 3 or 4). Can be very
+unstable - use with caution!  
+** Purpose: ** Structural optimization   
+** Cell optimization: ** Yes (if [[optcell]]/=0)   
+** Related variables: **   
+  
+
+  * 4=&gt; Conjugate gradient algorithm for simultaneous optimization of potential and ionic degrees of freedom. It can be used with [[iscf]]=2 and [[iscf]] =5 or 6 (WARNING : this is under development, and does not work very well in many cases).   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 5=&gt; Simple relaxation of ionic positions according to (converged) forces. Equivalent to [[ionmov]]=1 with zero masses, albeit the relaxation coefficient is not [[vis]], but [[iprcfc]].   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 6=&gt; Molecular dynamics using the Verlet algorithm, see [Allen &amp; Tildesley "Computer simulation of liquids" 1987, p 81]. The only related parameter is the time step ([[dtion]]).   
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step [[dtion]], index of atoms fixed [[iatfix]]   
+  
+
+  * 7=&gt; Quenched Molecular dynamics using the Verlet algorithm, and stopping each atom for which the scalar product of velocity and force is negative. The only related parameter is the time step ([[dtion]]). The goal is not to produce a realistic dynamics, but to go as fast as possible to the minimum. For this purpose, it is advised to set all the masses to the same value (for example, use the Carbon mass, i.e. set [[amu]] to 12 for all type of atoms).   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step [[dtion]], index of atoms fixed [[iatfix]]   
+  
+
+  * 8=&gt; Molecular dynamics with Nose-Hoover thermostat, using the Verlet algorithm.   
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step ([[dtion]]), Temperatures ([[mdtemp]]), and thermostat mass ([[noseinert]]).   
+  
+
+  * 9=&gt; Langevin molecular dynamics.   
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step ([[dtion]]), temperatures ([[mdtemp]]) and friction coefficient ([[friction]]).   
+  
+
+  * 10=&gt; Delocalized internal coordinates. with BFGS simple   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 11=&gt; Delocalized internal coordinates. with BFGS using total energy   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 12=&gt; Isokinetic ensemble molecular dynamics. The equation of motion of the ions in contact with a thermostat are solved with the algorithm proposed by Zhang [J. Chem. Phys. 106, 6102 (1997)], as worked out by Minary et al [J. Chem. Phys. 188, 2510 (2003)]. The conservation of the kinetic energy is obtained within machine precision, at each step.   
+~~ Related parameters : the time step ([[dtion]]), the temperatures
+([[mdtemp]]), and the friction coefficient ([[friction]]). ~~  
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 13=&gt; Isothermal/isenthalpic ensemble. The equation of motion of the ions in contact with a thermostat and a barostat are solved with the algorithm proposed by Martyna, Tuckermann Tobias and Klein [Mol. Phys., 1996, p. 1117].   
+If optcell=1 or 2, the mass of the barostat ([[bmass]]) must be given in
+addition.  
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** Yes (if [[optcell]]/=0)   
+** Related variables: ** The time step ([[dtion]]), the temperatures ([[mdtemp]]), the number of thermostats ([[nnos]]), and the masses of thermostats ([[qmass]]).   
+  
+
+  * 14=&gt; Simple molecular dynamics with a symplectic algorithm proposed by S.Blanes and P.C.Moans [called SRKNa14 in Practical symplectic partitioned Runge--Kutta and Runge--Kutta--Nystrom methods, Journal of Computational and Applied Mathematics archive, volume 142, issue 2 (May 2002), pages 313 - 330] of the kind first published by H. Yoshida [Construction of higher order symplectic integrators, Physics Letters A, volume 150, number 5 to 7, pages 262 - 268]. This algorithm requires at least 14 evaluation of the forces (actually 15 are done within Abinit) per time step. At this cost it usually gives much better energy conservation than the verlet algorithm ([[ionmov]] 6) for a 30 times bigger value of [[dtion]]. Notice that the potential energy of the initial atomic configuration is never evaluated using this algorithm.   
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  * 20=&gt; Direct inversion of the iterative subspace. Given a starting point [[xred]] that is a vector of length 3*[[natom]] (reduced nuclei coordinates), and unit cell parameters ([[rprimd]]) this routine uses the DIIS (direct inversion of the iterative subspace) to minimize the gradient (forces) on atoms. The preconditioning used to compute errors from gradients is using an inverse hessian matrix obtained by a BFGS algorithm. This method is known to converge to the nearest point where gradients vanish. This is efficient to refine positions around a saddle point for instance.   
+** Purpose: ** Structural optimization   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** DIIS memory [[diismemory]]   
+  
+
+  * 22=&gt; Conduct structural optimization using the Limited-memory Broyden-Fletcher-Goldfarb-Shanno minimization (L-BFGS). The working routines were based on the original implementation of J. Nocera available on netlib.org. This algorithm can be much better than the native implementation of BFGS in ABINIT ([[ionmov]]=2) when one approaches convergence, perhaps because of better treatment of numerical details.  
+** Purpose: ** Structural optimization   
+** Cell optimization: ** Yes (if [[optcell]]/=0)   
+** Related variables: **   
+  
+
+  * 23=&gt; Use of Learn on The Fly method (LOTF) for Molecular Dynamics. In the framework of isokinetic MD, the atomic forces and positions are computed by using LOTF interpolation. A SCF computation is performed only any [[lotf_nitex]] steps. The results of the SCF are used to compute the parameters of a short range classical potential (for the moment only the glue potential for gold is implemented). Then these parameters are continuously tuned to compute atomic trajectories. LOTF has to be enabled at configure time. If LOTF is not enabled and [[ionmov]]=23, abinit will set automatically [[ionmov]]=12.   
+The LOTF cycle is divided in the following steps:  
+a) Initialization (SFC at t=0) and computation of potential parameters.  
+b) Extrapolation of the atomic forces and positions for [[lotf_nitex]] time
+step. To perform this extrapolation, the potential computed in a) is used
+(Verlet algorithm).  
+c) SFC at t=[[lotf_nitex]]. Computation of the potential parameters.  
+d) LOTF interpolation, linear interpolation of the potential parameters and
+computation of the atomic forces and positions between t=0 and t=lotf_nitex.  
+  
+** Purpose: ** Molecular Dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** [[dtion]], [[lotf_classic]], [[lotf_nitex]], [[lotf_nneigx]], [[lotf_version]].   
+  
+
+  * 24=&gt; Simple constant energy molecular dynamics using the velocity Verlet symplectic algorithm (second order), see e.g. [E. Hairer et al. Acta Numerica. 12, 399 (2003)]. The only related parameter is the time step ([[dtion]]).   
+** Purpose: ** Molecular dynamics   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step [[dtion]]   
+  
+
+  * 25=&gt; Hybrid Monte Carlo sampling of the ionic positions at fixed temperature and unit cell geometry (NVT ensemle). The underlying molecular dynamics corresponds to ionmov=24. The related parameters are the time step ([[dtion]]) and thermostat temperature ([[mdtemp]]).   
+** Purpose: ** Monte Carlo sampling   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: ** time step [[dtion]], thermostat temperature [[mdtemp]],   
+  
+
+  * 30=&gt; Using a supercell, calculate a self consistent phonon structure as in PRL 100 095901 (2008). The initial phonon eigenvectors and eigenvalues are read in, and then atoms are displaced according to the normal modes populated at a given temperature until convergence of the vibrational free energy (or so I hope)   
+** Purpose: ** Phonon structure   
+** Cell optimization: ** No (Use [[optcell]]=0 only)   
+** Related variables: **   
+  
+
+  
+No meaning for RF calculations.
+
+
+
+
+## **istatimg** 
+
+
+ Mnemonics: Integer governing the computation of STATic IMaGes  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+This input variable is relevant when sets of images are activated (see
+[[imgmov]]).  
+Not all images might be required to evolve from one time step to the other
+(see[[dynimage]]): these are static images.  
+If [[istatimg]]=0, the total energy of static images is not computed (but
+static images are used to make the dynamic images evolve). This can be useful
+to save CPU time.  
+If [[istatimg]]=1, the total energy of static images is computed.
+
+
+
+
+## **mdtemp** 
+
+
+ Mnemonics: Molecular Dynamics TEMPeratures  
+Variable type: real  
+Dimensions: (2)  
+Default value: [300, 300]  
+
+
+
+Give the initial and final temperature of the Nose-Hoover thermostat
+([[ionmov]]=8) and Langevin dynamics ([[ionmov]]=9), in Kelvin. This
+temperature will change linearly from the initial temperature ** mdtemp(1) **
+at itime=1 to the final temperature ** mdtemp(2) ** at the end of the
+[[ntime]] timesteps.
+
+
+
+
+## **mdwall** 
+
+
+ Mnemonics: Molecular Dynamics WALL location  
+Variable type: real  
+Dimensions: scalar  
+Default value: 10000.0  
+Comment: the walls are extremely far away  
+
+
+
+Gives the location (atomic units) of walls on which the atoms will bounce
+back. when [[ionmov]]=6, 7, 8 or 9. For each cartesian direction idir=1, 2 or
+3, there is a pair of walls with coordinates xcart(idir)=-wall and
+xcart(idir)=rprimd(idir,idir)+wall . Supposing the particle will cross the
+wall, its velocity normal to the wall is reversed, so that it bounces back.  
+By default, given in Bohr atomic units (1 Bohr=0.5291772108 Angstroms),
+although Angstrom can be specified, if preferred, since [[mdwall]] has the
+'[[LENGTH]]' characteristics.
+
+
+
+
+## **mep_mxstep** 
+
+
+ Mnemonics: Minimal Energy Path search: MaXimum allowed STEP size  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.4 if [[imgmov]]==5,
+100.0 otherwise.
+  
+
+
+
+Relevant only when [[imgmov]]=1 (Steepest-Descent), 2 (String Method) or 5
+(Nudged Elastic Band).  
+The optimizer used to solve the Ordinary Differential Equation (ODE) can be
+constrained with a maximum allowed step size for each image. By default this
+feature is only activated for Nudged Elastic Band (NEB) and the value is
+inspired by _ J. Chem. Phys. 128, 134106 (2008) _ .  
+Note that the step size is defined for each image as _ step = SQRT[SUM(R_i dot
+R_i)] _ where the _ R_i _ are the positions of the atoms in the cell.
+
+
+
+
+## **mep_solver** 
+
+
+ Mnemonics: Minimal Energy Path ordinary differential equation SOLVER  
+Variable type: integer  
+Dimensions: scalar  
+Default value: None  
+
+
+
+Relevant only when [[imgmov]]=2 (String Method) or 5 (Nudged Elastic Band).  
+Gives the algorithm used to solve the Ordinary Differential Equation (ODE)
+when searching for a Minimal Energy Path (MEP).  
+Possible values can be:  
+
+  * 0=&gt; ** Steepest-Descent algorithm ** following the (scaled) forces, the scaling factor being [[fxcartfactor]] (forward Euler method).   
+Compatible with all MEP search methods.
+
+  
+
+  * 1=&gt; ** Quick-min optimizer ** following the (scaled) forces, the scaling factor being [[fxcartfactor]]. The "quick minimizer" improves upon the steepest-descent method by accelerating the system in the direction of the forces. The velocity (of the image) is projected long the force and cancelled if antiparallel to it.   
+Compatible only with Nudged Elastic Band ([[imgmov]]=5).  
+_ See, for instance: J. Chem. Phys. 128, 134106 (2008). _  
+
+  
+
+  * 2=&gt; ** Local Broyden-Fletcher-Goldfarb-Shanno (L-BFGS) algorithm ** ; each image along the band is minimized with a different instance of the BFGS optimizer.   
+Compatible only with Nudged Elastic Band ([[imgmov]]=5).  
+_ See, for instance: J. Chem. Phys. 128, 134106 (2008). _  
+IN [[DEVELOP]]PMENT - NOT RELIABLE
+
+  
+
+  * 3=&gt; ** Global Broyden-Fletcher-Goldfarb-Shanno (GL-BFGS) algorithm ** ; all images along the band are minimized with a single instance of the BFGS optimizer.   
+Compatible only with Nudged Elastic Band ([[imgmov]]=5).  
+_ See, for instance: J. Chem. Phys. 128, 134106 (2008). _  
+IN [[DEVELOP]]PMENT - NOT RELIABLE
+
+  
+
+  * 4=&gt; ** Fourth-order Runge-Kutta method ** ; the images along the band are moved every four steps (1&lt;=istep&lt;=[[ntimimage]]) following the Runge-Kutta algorithm, the time step being [[fxcartfactor]].   
+Compatible only with Simplified String Method ([[imgmov]]=2 and
+[[string_algo]]=1 or 2).  
+_ See: J. Chem. Phys. 126, 164103 (2007). _
+
+All of the optimizers can be constrained with a maximum allowed step size for
+each image; see [[mep_mxstep]]. This is by default the case of the Nudged
+Elastic Band ([[imgmov]]=5).
+
+
+
+
+## **natcon** 
+
+
+ Mnemonics: Number of AToms in CONstraint equations  
+Variable type: integer  
+Dimensions: ([[nconeq]])  
+Default value: 0  
+
+
+
+Gives the number of atoms appearing in each of the [[nconeq]] independent
+equations constraining the motion of atoms during structural optimization or
+molecular dynamics (see [[nconeq]] , [[iatcon]], and [[wtatcon]]).
+
+
+
+
+## **natfix** 
+
+
+ Mnemonics: Number of Atoms that are FIXed  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Comment: (no atoms held fixed)  
+
+
+
+Gives the number of atoms (not to exceed [[natom]]) which are to be held fixed
+during a structural optimization or molecular dynamics.  
+When [[natfix]] &gt; 0, [[natfix]] entries should be provided in array
+[[iatfix]] .
+
+
+
+
+## **natfixx** 
+
+
+ Mnemonics: Number of Atoms that are FIXed along the X direction  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of atoms (not to exceed [[natom]]) which are to be held fixed
+along the X direction during a structural optimization or molecular dynamics.  
+When [[natfixx]] &gt; 0, [[natfixx]] entries should be provided in array
+[[iatfixx]].
+
+
+
+
+## **natfixy** 
+
+
+ Mnemonics: Number of Atoms that are FIXed along the Y direction  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of atoms (not to exceed [[natom]]) which are to be held fixed
+along the Y direction during a structural optimization or molecular dynamics.  
+When [[natfixy]] &gt; 0, [[natfixy]] entries should be provided in array
+[[iatfixy]]
+
+
+
+
+## **natfixz** 
+
+
+ Mnemonics: Number of Atoms that are FIXed along the Z direction  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of atoms (not to exceed [[natom]]) which are to be held fixed
+along the Z direction during a structural optimization or molecular dynamics.  
+When [[natfixz]] &gt; 0, [[natfixz]] entries should be provided in array
+[[iatfixz]].
+
+
+
+
+## **nconeq** 
+
+
+ Mnemonics: Number of CONstraint EQuations  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of independent equations constraining the motion of atoms
+during structural optimization or molecular dynamics (see [[natcon]] ,
+[[iatcon]], and [[wtatcon]]).
+
+
+
+
+## **neb_algo** 
+
+
+ Mnemonics: Nudged Elastic Band ALGOrithm  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[imgmov]]==5  
+
+
+
+Gives the variant of the NEB method used.  
+Possible values can be:  
+
+  * 0=&gt; ** Original NEB method ** .   
+_ See: Classical and Quantum Dynamics in Condensed Phase Simulations, edited
+by Berne, Ciccotti, Coker (World Scientific, Singapore, 1998), pp. 385-404 _
+
+  
+
+  * 1=&gt; ** NEB + improved tangent ** .   
+The Improved Tangent Method builds on the NEB with an improved estimate of the
+tangent direction and a resulting change of the component of the spring force
+acting on the images.  
+_ See: J. Chem. Phys. 113, 9978 (2000). _
+
+  
+
+  * 2=&gt; ** Climbing-Image NEB (CI-NEB) ** .   
+The CI-NEB method constitutes a small modification to the NEB method.
+Information about the shape of the MEP is retained, but a rigorous convergence
+to a saddle point is also obtained. By default the spring constants are
+variable (see [[neb_spring]]). As the image with the highest energy has to be
+identified, the calculation begins with several iterations of the standard NEB
+algorithm. The effective CI-NEB begins at the [[cineb_start]] iteration.  
+_ See: J. Chem. Phys. 113, 9901 (2000). _
+
+Note that, in all cases, it is possible to define the value of the spring
+constant connecting images with [[neb_spring]], keeping it constant or
+allowing it to vary between 2 values (to have higher resolution close to the
+saddle point).
+
+
+
+
+## **neb_spring** 
+
+
+ Mnemonics: Nudged Elastic Band: SPRING constant  
+Variable type: real  
+Dimensions: (2)  
+Default value: [0.02, 0.15] if [[neb_algo]]==2,
+[0.05, 0.05] otherwise.
+  
+Only relevant if [[imgmov]]==5  
+
+
+
+Gives the minimal and maximal values of the spring constant connecting images
+for the NEB method.  
+In the standard "Nudged Elastic Band" method, the spring constant is constant
+along the path, but, in order to have higher resolution close to the saddle
+point, it can be better to have stronger springs close to it.  
+_ See: J. Chem. Phys. 113, 9901 (2000). _
+
+
+
+
+## **nimage** 
+
+
+ Mnemonics: Number of IMAGEs  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Give the number of images (or replicas) of the system, for which the forces
+and stresses might be computed independently, in the context of the string
+method, the genetic algorithm, hyperdynamics or Path-Integral Molecular
+Dynamics depending on the value of [[imgmov]]). Related input variables :
+[[dynimage]], [[npimage]], [[ntimimage]] and [[prtvolimg]].  
+Images might differ by the position of atoms in the unit cell, their velocity,
+as well as by their cell geometry. The following input variables might be used
+to define the images :
+
+  * [[acell]] 
+  * [[amu]] 
+  * [[angdeg]] 
+  * [[dmatpawu]] 
+  * [[jpawu]] 
+  * [[mixalch]] 
+  * [[rprim]] 
+  * [[upawu]] 
+  * [[vel]] 
+  * [[vel_cell]] 
+  * [[xangst]] 
+  * [[xcart]] 
+  * [[xred]] 
+
+These input variables, non-modified, will be used to define the image with
+index 1. For the image with the last index, the input file might specify the
+values of such input variables, appended with "_lastimg", e.g. :
+
+  * acell_lastimg 
+  * rprim_lastimg 
+  * xcart_lastimg 
+  * ... 
+
+By default, these values will be interpolated linearly to define values for
+the other images, unless there exist specific values for some images, for
+which the string "last" has to be replaced by the index of the image, e.g. for
+the image number 4 :
+
+  * acell_4img 
+  * rprim_4img 
+  * xcart_4img 
+  * ... 
+
+It is notably possible to specify the starting point and the end point of the
+path (of images), while specifying intermediate points.  
+  
+It usually happen that the images do not have the same symmetries and space
+group. ABINIT has not been designed to use different set of symmetries for
+different images. ABINIT will use the symmetry and space group of the image
+number 2, that is expected to have a low number of symmetries. This might lead
+to erroneous calculations, in case some image has even less symmetry. By
+contrast, there is no problem if some other image has more symmetries than
+those of the second image.
+
+
+
+
+## **nnos** 
+
+
+ Mnemonics: Number of NOSe masses  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of thermostats in the Martyna et al. chain of oscillators
+thermostats. The thermostat chains can be used either to perform Molecular
+Dynamics (MD) ([[ionmov]]=13) or to perform Path Integral Molecular Dynamics
+(PIMD) ([[imgmov]]=13).  
+The mass of these thermostats is given by [[qmass]].  
+
+
+
+
+## **noseinert** 
+
+
+ Mnemonics: NOSE thermostat INERTia factor  
+Variable type: real  
+Dimensions: scalar  
+Default value: 100000  
+Only relevant if [[ionmov]]==8  
+
+
+
+Give the inertia factor WT of the Nose-Hoover thermostat (when [[ionmov]]=8),
+in atomic units of weight*length2, that is (electron mass)*(Bohr)2. The
+equations of motion are : MI d2RI/dt2= FI - dX/dt MI dRI/dt and WT d2X/dt2=
+Sum(I) MI (dRI/dt)2 - 3NkBT where I represent each nucleus, MI is the mass of
+each nucleus (see [[amu]]), RI is the coordinate of each nucleus (see
+[[xcart]]), dX/dt is a dynamical friction coefficient, and T is the
+temperature of the thermostat (see [[mdtemp]]).
+
+
+
+
+## **ntime** 
+
+
+ Mnemonics: Number of TIME steps  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of molecular dynamics time steps or Broyden structural
+optimization steps to be done if [[ionmov]] is non-zero.  
+Note that at the present the option [[ionmov]]=1 is initialized with four
+Runge-Kutta steps which costs some overhead in the startup. By contrast, the
+initialisation of other [[ionmov]] values is only one SCF call.  
+[[ntime]] is ignored if [[ionmov]]=0.
+
+
+
+
+## **ntimimage** 
+
+
+ Mnemonics: Number of TIME steps for IMAGE propagation  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Gives the maximal number of molecular dynamics time steps or structural
+optimization steps to be done for the set of images, referred to as 'image-
+timesteps'. At each image-timestep, all the images are propagated
+simultaneously, each according to the algorithm determined by [[imgmov]] and
+the usual accompanying input variables, and then the next positions and
+velocities for each image are determined from the set of results obtained for
+all images.
+
+
+
+
+## **optcell** 
+
+
+ Mnemonics: OPTimize the CELL shape and dimensions  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Allows to optimize the unit cell shape and dimensions, when [[ionmov]]>=2 or
+3. The configuration for which the stress almost vanishes is iteratively
+determined, by using the same algorithms as for the nuclei positions. Will
+eventually modify [[acell]] and/or [[rprim]]. The ionic positions are ALWAYS
+updated, according to the forces. A target stress tensor might be defined, see
+[[strtarget]].
+
+  * [[optcell]]=0 : modify nuclear positions, since [[ionmov]]=2 or 3, but no cell shape and dimension optimisation.
+  * [[optcell]]=1 : optimisation of volume only (do not modify [[rprim]], and allow an homogeneous dilatation of the three components of [[acell]])
+  * [[optcell]]=2 : full optimization of cell geometry (modify [[acell]] and [[rprim]] \- normalize the vectors of [[rprim]] to generate the [[acell]]). This is the usual mode for cell shape and volume optimization. It takes into account the symmetry of the system, so that only the effectively relevant degrees of freedom are optimized.
+  * [[optcell]]=3 : constant-volume optimization of cell geometry (modify [[acell]] and [[rprim]] under constraint \- normalize the vectors of [[rprim]] to generate the [[acell]])
+  * [[optcell]]=4, 5 or 6 : optimize [[acell]](1), [[acell]](2), or [[acell]](3), respectively (only works if the two other vectors are orthogonal to the optimized one, the latter being along its cartesian axis).
+  * [[optcell]]=7, 8 or 9 : optimize the cell geometry while keeping the first, second or third vector unchanged (only works if the two other vectors are orthogonal to the one left unchanged, the latter being along its cartesian axis).
+
+A few details require attention when performing unit cell optimisation :
+
+  * one has to get rid of the discontinuities due to discrete changes of plane wave number with cell size, by using a suitable value of [[ecutsm]];
+  * one has to allow for the possibility of a larger sphere of plane waves, by using [[dilatmx]];
+  * one might have to adjust the scale of stresses to the scale of forces, by using [[strfact]].
+  * if all the reduced coordinates of atoms are fixed by symmetry, one cannot use [[toldff]] to stop the SCF cycle. (Suggestion : use [[toldfe]] with a small value, like 1.0d-10)
+
+It is STRONGLY suggested first to optimize the ionic positions without cell
+shape and size optimization ([[optcell]]=0), then start the cell shape and
+size optimization from the cell with relaxed ionic positions. Presently
+(v3.1), one cannot restart ([[restartxf]]) a calculation with a non-zero
+[[optcell]] value from the (x,f) history of another run with a different non-
+zero [[optcell]] value. There are still a few problems at that level.
+
+
+
+
+## **pimass** 
+
+
+ Mnemonics: Path Integral fictitious MASSes  
+Variable type: real  
+Dimensions: ([[ntypat]])  
+Default value: [[ntypat]]  
+Only relevant if [[imgmov]]=9 or 13  
+
+
+
+Only relevant if [[imgmov]]=9 or 13 (Path-Integral Molecular Dynamics).  
+Gives the fictitious masses ( _ D. Marx and M. Parrinello, J. Chem. Phys. 104,
+4077 (1996) _ ) in atomic mass units for each kind of atom in cell. These
+masses are the inertial masses used in performing Path Integral Molecular
+Dynamics (PIMD), they are different from the true masses ([[amu]]) used to
+define the quantum spring that relates the different beads in PIMD. They can
+be chosen arbitrarily, but an appropriate choice will lead the different
+variables to move on the same time scale in order to optimize the sampling
+efficiency of the PIMD trajectory.  
+If [[pitransform]]=1 (normal mode transformation), or [[pitransform]]=2
+(staging transformation), [[pimass]] is automatically set to its optimal
+value.  
+
+
+
+
+## **pimd_constraint** 
+
+
+ Mnemonics: Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[imgmov]]=9 or 13  
+
+
+
+Only relevant for Path-Integral Molecular Dynamics.  
+Selects a constraint to be applied during the PIMD trajectory. The constraint
+is holonomic (it is a relation between the position variables).In practice,
+the total forces applied to the atomic positions are modified so as to respect
+the constraint.  
+To date, the available constraints are:  
+
+  * **0**: no constraint
+  * **1**: _"Blue Moon Ensemble" method_.  
+The constraint is a linear combination of the positions of atomic centroids
+(this linear combination is kept constant during the simulation).  
+Sum[W_i * X_i]=constant  
+The X_i are the coordinates of the atomic centroids. The weights W_i have to
+be specified with the [[wtatcon]](3,[[natcon]],[[nconeq]]),
+[[iatcon]]([[natcon]]) and [[natcon]] input parameters (where [[nconeq]] is
+fixed to 1).  
+More details on the implementation in: [Y. Komeiji,Chem-Bio Informatics
+Journal 7, 12-23 (2007)](http://doi.org/10.1273/cbij.7.12).
+
+
+
+
+## **pitransform** 
+
+
+ Mnemonics: Path Integral coordinate TRANSFORMation  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Only relevant if [[imgmov]]=9 or 13 (Path-Integral Molecular Dynamics).
+Coordinate transformation used in the integration of the Path Integral
+Molecular Dynamics equations of motion. The transformation, with an
+appropriate choice of fictitious masses ([[pimass]]), is used to force the
+different modes to move on the same time scale, and thus optimize the
+efficiency of the statistical sampling in the corresponding statistical
+ensemble. Available with a Langevin thermostat ([[imgmov]]=9) or with Nose-
+Hoover chains ([[imgmov]]=13). See M. Tuckerman et al, J. Chem. Phys. 104,
+5579 (1996).
+
+If equal to 0, no transformation is applied (primitive coordinates).  
+If equal to 1, normal mode transformation (in that case, [[nimage]] must be
+absolutely EVEN).  
+If equal to 2, staging transformation.
+
+
+
+
+## **prtatlist** 
+
+
+ Mnemonics: PRinT by ATom LIST of ATom  
+Variable type: integer  
+Default value: 0  
+
+
+
+This is an array of the numbers associated to the index atoms that the user
+want to print in the output or log files, this is useful when you have a large
+number of atoms and you are only interested to follow specific atoms, the
+numbers associated should be consistent with the list in [[xcart]] or
+[[xred]]. This input varible does not affect the contents of the "OUT.nc" or
+"HIST.nc", those are NetCDF files containing the information about all the
+atoms.
+
+
+
+
+## **qmass** 
+
+
+ Mnemonics: Q thermostat MASS  
+Variable type: real  
+Dimensions: ([[nnos]])  
+Default value: *10.0  
+
+
+
+This are the masses of the chains of [[nnos]] thermostats to be used when
+[[ionmov]]=13 (Molecular Dynamics) or [[imgmov]]=13 (Path Integral Molecular
+Dynamics).
+
+If [[ionmov]]=13 (Molecular Dynamics), this temperature control can be used
+with  [[optcell]] =0, 1 (homogeneous cell deformation) or 2 (full cell
+deformation).  
+If [[imgmov]]=13 (Path Integral Molecular Dynamics), this temperature control
+can be used with  [[optcell]] =0 (NVT ensemble) or 2 (fully flexible NPT
+ensemble). In that case, [[optcell]]=2 iS NOT USABLE yet.
+
+
+
+
+## **random_atpos** 
+
+
+ Mnemonics: RANDOM ATomic POSitions  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Control the inner coordinates, which can be generated randomly by using 4
+different methods depending ont its value  
+(0) if zero, no random generation and xred are taken as they have been
+introduced by the user  
+(1) if one, particles are generated completly random within the unit cell.  
+(2) if two, particles are generated randomly but the inner particle distance
+is always larger than a factor of the sum of the covalent bonds between the
+atoms (note : this is incompatible with the definition of alchemical mixing,
+in which [[ntypat]] differs from [[npsp]])
+
+
+
+
+## **restartxf** 
+
+
+ Mnemonics: RESTART from (X,F) history  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Control the restart of a molecular dynamics or structural optimization job.  
+  
+** restartxf&gt;0 (Deprecated) ** :The code reads from the input wf file, the previous history of atomic coordinates and corresponding forces, in order to continue the work done by the job that produced this wf file. If [[optcell]]/=0, the history of [[acell]] and [[rprim]] variables is also taken into account. The code will take into consideration the whole history (if [[restartxf]]=1), or discard the few first (x,f) pairs, and begin only at the pair whose number corresponds to [[restartxf]].   
+Works only for [[ionmov]]=2 (Broyden) and when an input wavefunction file is
+specified, thanks to the appropriate values of [[irdwfk]] or [[getwfk]].  
+  
+NOTES :  
+* The input wf file must have been produced by a run that exited cleanly. It cannot be one of the temporary wf files that exist when a job crashed.   
+* One cannot restart a calculation with a non-zero [[optcell]] value from the (x,f) history of another run with a different non-zero [[optcell]] value. Starting a non-zero [[optcell]] run from a zero [[optcell]] run should work.   
+* Deprecated, the use of the new options (-1 and -2) is preferred.   
+  
+** restartxf=0 (Default) ** : No restart procedure is enable and will start a Molecular dynamics or structural optimization from scratch.   
+  
+** restartxf=-1 (New) ** : Use the HIST file to reconstruct a partial calculation. It will reconstruct the different configurations using the forces and stress store in the HIST file, instead of calling the SCF procedure.   
+Enable ** restartxf=-1 ** from the beginning is harmless. The only condition
+is to keep the input file the same in such a way that the same predictor is
+used and it will predict the same structure recorded in the HIST file.  
+This option will always compute extra [[ntime]] iterations independent of the
+number of iterations recovered previously.  
+  
+** restartxf=-2 (New) ** :Read the HIST file and select the atomic positions and cell parameters with the lowest energy. Forget all the history and start the calculation using those values. The original atomic coordinates and cell parameters are irrelevant in that case.   
+  
+NOTES:  
+* You can use ** restartxf=-1 or -2 ** for all predictiors that make no use of random numbers.   
+* You can use ** restartxf=-1 or -2 ** to restart a calculation that was not completed. The HIST file is written on each iteration. So you always have something to recover from.   
+* You can take advantage of the appropriate values of [[irdwfk]] or [[getwfk]] to get a good wave function to continue your job. 
+
+
+
+
+## **signperm** 
+
+
+ Mnemonics: SIGN of PERMutation potential  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
++1 favors alternation of species -1 favors segregation
+
+
+
+
+## **strfact** 
+
+
+ Mnemonics: STRess FACTor  
+Variable type: real  
+Dimensions: scalar  
+Default value: 100  
+
+
+
+The stresses multiplied by [[strfact]] will be treated like forces in the
+process of optimization ([[ionmov]]=2, non-zero [[optcell]]).  
+For example, the stopping criterion defined by [[tolmxf]] relates to these
+scaled stresses.
+
+
+
+
+## **string_algo** 
+
+
+ Mnemonics: STRING method ALGOrithm  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+Relevant only when [[imgmov]]=2 (String Method).  
+Gives the variant of the String Method method used.  
+Possible values can be:  
+
+  * 0=&gt; ** Original String Method ** .   
+NOT YET IMPLEMENTED  
+_ See: Phys. Rev. B 66, 052301 (2002) _
+
+  
+
+  * 1=&gt; ** Simplified String Method ** with parametrization by ** equal arc length ** .   
+Instead of using the normal force (wr the band), the full force is used; the
+reparametrization is enforced by keeping the points of the string equally
+spaced.  
+_ See: J. Chem. Phys. 126, 164103 (2007) _
+
+  
+
+  * 2=&gt; ** Simplified String Method ** with parametrization by ** energy-weighted arc length ** .   
+A variant of the Simplified String Method (like 2-); the reparametrization is
+done by using energy-weight arc-lengths, giving a finer distribution near the
+saddle point..  
+_ See: J. Chem. Phys. 126, 164103 (2007) and J. Chem. Phys. 130, 244108 (2009)
+_
+
+
+
+
+## **strprecon** 
+
+
+ Mnemonics: STRess PRECONditioner  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1.0  
+
+
+
+This is a scaling factor to initialize the part of the Hessian related to the
+treatment of the stresses (optimisation of the unit cell). In case there is an
+instability, decrease the default value, e.g. set it to 0.1 .
+
+
+
+
+## **strtarget** 
+
+
+ Mnemonics: STRess TARGET  
+Variable type: real  
+Dimensions: (6)  
+Default value: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
+
+
+
+The components of the stress tensor must be stored according to : (1,1)-&gt;1
+; (2,2)-&gt;2 ; (3,3)-&gt;3 ; (2,3)-&gt;4 ; (3,1)-&gt;5 ; (1,2)-&gt;6\. The
+conversion factor between Ha/Bohr**3 and GPa is : 1 Ha/Bohr**3 = 29421.033d0
+GPa.  
+Not used if [[optcell]]==0.
+
+
+
+
+## **tolimg** 
+
+
+ Mnemonics: TOLerance on the mean total energy for IMaGes  
+Variable type: real  
+Dimensions: scalar  
+Default value: 5e-05  
+
+
+
+Sets a maximal absolute energy tolerance (in hartree, averaged over dynamic
+images) below which iterations on images (the one governed by the
+[[ntimimage]] input variable) will stop.  
+This is to be used when trying to optimize a population of structures to their
+lowest energy configuration, taking into account the particular algorithm
+defined by [[imgmov]]  
+A value of about 5.0d-5 hartree or smaller is suggested (this corresponds to
+about 3.7d-7 eV).  
+No meaning for RF calculations.
+
+
+
+
+## **tolmxde** 
+
+
+ Mnemonics: TOLerance on the MaXimal Difference in Energy  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+
+
+
+Sets a maximal difference in energy with respect to the two previous steps
+below which BFGS structural relaxation iterations will stop.  
+A value of about 0.0005 eV/atom or smaller is suggested.  
+In order to use tolmxde, you should explicitly set tolmxf to 0.0.  
+No meaning for RF calculations.
+
+
+
+
+## **tolmxf** 
+
+
+ Mnemonics: TOLerance on the MaXimal Force  
+Variable type: real  
+Dimensions: scalar  
+Default value: 5e-05  
+
+
+
+Sets a maximal absolute force tolerance (in hartree/Bohr) below which BFGS
+structural relaxation iterations will stop.  
+Can also control tolerance on stresses, when [[optcell]] /=0, using the
+conversion factor [[strfact]]. This tolerance applies to any particular
+cartesian component of any atom, excluding fixed ones. See the parameter
+[[ionmov]].  
+This is to be used when trying to equilibrate a structure to its lowest energy
+configuration ( [[ionmov]] =2).  
+A value of about 5.0d-5 hartree/Bohr or smaller is suggested (this corresponds
+to about 2.5d-3 eV/Angstrom).  
+No meaning for RF calculations.
+
+
+
+
+## **vel** 
+
+
+ Mnemonics: VELocity  
+Variable type: real  
+Dimensions: (3,[[natom]])  
+commentdims It is represented internally as [[vel]](3,[[natom]],[[nimage]])  
+Default value: *0  
+Only relevant if [[ionmov]] > 0  
+
+
+
+Gives the starting velocities of atoms, in cartesian coordinates, in
+Bohr/atomic time units (atomic time units given where [[dtion]] is described).  
+For [[ionmov]]=8 (Nose thermostat), if [[vel]] is not initialized, a random
+initial velocity giving the right kinetic energy will be generated.  
+If the geometry builder is used, [[vel]] will be related to the preprocessed
+set of atoms, generated by the geometry builder. The user must thus foresee
+the effect of this geometry builder (see [[objarf]]).  
+Velocities evolve is [[ionmov]]==1.
+
+
+
+
+## **vel_cell** 
+
+
+ Mnemonics: VELocity of the CELL parameters  
+Variable type: real  
+Dimensions: (3,3)  
+commentdims It is represented internally as [[vel_cell]](3,3,[[nimage]])   
+Default value: *3  
+Only relevant if [[imgmov]] in [9,13] and [[optcell]] > 0
+(Path-Integral Molecular Dynamics
+with NPT algorithm)  
+
+
+
+Irrelevant unless [[imgmov]]=9 or 13 and [[optcell]]&gt;0 (Path-Integral
+Molecular Dynamics with NPT algorithm).  
+Gives the starting velocities of the dimensional cell parameters in
+Bohr/atomic time units (atomic time units given where [[dtion]] is described).
+
+
+
+
+## **vis** 
+
+
+ Mnemonics: VIScosity  
+Variable type: real  
+Dimensions: scalar  
+Default value: 100  
+
+
+
+The equation of motion is :  
+M  I  d  2  R  I  /dt  2  = F  I  \- [[vis]] dR  I  /dt  
+  
+The atomic unit of viscosity is hartrees*(atomic time units)/Bohr  2  . Units
+are not critical as this is a fictitious damping used to relax structures. A
+typical value for silicon is 400 with [[dtion]] of 350 and atomic mass 28
+[[amu]]. Critical damping is most desirable and is found only by optimizing
+[[vis]] for a given situation.  
+  
+In the case of Path-Integral Molecular Dynamics using the Langevin Thermostat
+([[imgmov]]=9), [[vis]] defines the friction coefficient, in atomic units.
+Typical value range is 0.00001-0.001.
+
+
+
+
+## **wtatcon** 
+
+
+ Mnemonics: WeighTs for AToms in CONstraint equations  
+Variable type: real  
+Dimensions: (3,[[natcon]],[[nconeq]])  
+Default value: 0  
+
+
+
+Gives the weights determining how the motion of atoms is constrained during
+structural optimization or molecular dynamics (see [[nconeq]] , [[natcon]],
+and [[iatcon]]). For each of the [[nconeq]] independent constraint equations,
+wtatcon is a 3*[[natcon]] array giving weights, W  I  , for the x, y, and z
+components of each of the atoms (labeled by I) in the list of indices
+[[iatcon]]. Prior to taking an atomic step, the calculated forces, F  I  , are
+replaced by projected forces, F'  I  , which satisfy the set of constraint
+equations  
+  
+Sum  mu=x,y,z; I=1,natcon  : W  mu,I  * F'  mu,I  = 0 for each of the
+[[nconeq]] arrays W  I  .  
+  
+Different types of motion constraints can be implemented this way. For
+example,  
+  
+nconeq 1 natcon 2 iatcon 1 2 wtatcon 0 0 +1 0 0 -1  
+  
+could be used to constrain the relative height difference of two adsorbate
+atoms on a surface (assuming their masses are equal), since F'  z,1  \- F'
+z,2  = 0 implies z  1  \- z  2  = constant.
+
+
+
+

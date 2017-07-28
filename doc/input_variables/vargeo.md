@@ -1,0 +1,736 @@
+## **brvltt** 
+
+
+ Mnemonics: BRaVais LaTTice type  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[spgroup]] != 0  
+
+
+
+Set the type of Bravais lattice. The cell defined by [[acell]] and [[rprim]]
+or [[angdeg]] should be the CONVENTIONAL cell.
+
+If brvltt=0, the code will assign brvltt from the space group information
+[[spgroup]], and produce the symmetry operations for the conventional unit
+cell. If the conventional cell is not primitive, the user should set
+[[chkprim]]=0.
+
+If brvltt=-1, the code will assign brvltt from the space group information,
+then reduce the unit cell to a primitive unit cell. The echo of [[acell]] and
+[[rprim]] might thus differ from those derived directly from the input
+variables. Also, the input variable [[xred]] will refer to the CONVENTIONAL
+unit cell, but its echo will refer to the preprocessed PRIMITIVE unit cell.
+There is of course no problem with [[xangst]] and [[xcart]], as they are
+independent of the unit cell.
+
+The echo of [[brvltt]] in the output file will be one of the following Bravais
+lattices:  
+
+  * 1 = Primitive with no associated translations 
+  * 2 = Inner centered with (a/2 + b/2 + c/2) associated translation 
+  * 3 = Face centered with (a/2 + b/2; b/2 + c/2; c/2 + a/2) associated translations 
+  * 4 = C - centered with (a/2 + b/2) associated translation 
+  * 5 = A - centered with (b/2 + c/2) associated translation 
+  * 6 = B - centered with (c/2 + a/2) associated translation 
+  * 7 = Rhombohedral lattice. 
+
+The user might also input directly these values, although they might not be
+consistent with [[spgroup]].
+
+The space groups 146, 148, 155, 160, 161, 166, 167, when used with
+[[spgaxor]]=1 (hexagonal axes) will have [[brvltt]]=7 and two associated
+translations: (2/3, 1/3, 1/3) and (1/3, 2/3, 2/3).  
+For more details see the space group [ help file
+](../../users/spacegrouphelpfile.html) .
+
+
+
+
+## **chempot** 
+
+
+ Mnemonics: spatially varying CHEMical POTential  
+Variable type: real  
+Dimensions: (3,[['nzchempot']],[['ntype']])  
+Default value: 0.0  
+Only relevant if [[nzchempot]]/=0  
+
+
+
+For each type of atoms, from 1 to [[ntypat]], specifies the spatially varying
+chemical potential, through the specification of [[nzchempot]] triplets of
+real numbers. They give data for [[nzchempot]] delimiting planes, all parallel
+to each other, each determined by its z reduced coordinate. The first real
+number is the z reduced coordinate of the delimiting plane. The second real
+number is the value of the chemical potential for this type of atom on this
+plane. The third real number is the derivative of the chemical potential fior
+this type of atom with respect to the z reduced coordinate, evaluated on this
+plane. In the space between delimiting planes, a piecewise cubic polynomial
+interpolation is determined : the cubic polynomial between two delimiting
+planes will have the imposed chemical potentials and derivatives on the two
+delimiting planes. The z reduced coordinates must be ordered in increasing
+values, and cannot span more than 1.0 . There is an automatic periodic
+boundary condition imposed. Specifying two identical z reduced coordinates is
+allowed, and means that the first one applies to the adjacent space with lower
+values of z, while the second applies to the adjacent space with higher values
+of z. When the spatial chemical potential is defined only for one type of atom
+(and no chemical potential is present for the other atoms), simply set the
+related values to *0.0 in the [[chempot]] array. In the present input array,
+reduced positions, energies and derivatives of energies are mixed. Hence,
+although the chemical potential is an energy, one cannot use the usual energy
+definitions (i.e. the chemical potential is always to be input in Hartree
+atomic units).
+
+
+
+
+## **genafm** 
+
+
+ Mnemonics: GENerator of the translation for Anti-FerroMagnetic space group  
+Variable type: real  
+Dimensions: (3)  
+Default value: 3*0  
+
+
+
+This input variable might be used to define a Shubnikov type IV magnetic space
+group (anti-ferromagnetic space group). The user is advised to consult "The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford."  
+A Shubnikov type IV magnetic space group might be defined by its Fedorov space
+group (set of spatial symmetries, that do not change the magnetization), and
+one translation associated with a change of magnetization. [[genafm]] is
+precisely this translation, in reduced coordinates (like [[xred]])  
+Thus, one way to specify a Shubnikov IV magnetic space group, is to define
+both [[spgroup]] and [[genafm]]. Alternatively, one might define [[spgroup]]
+and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
+[[tnons]] and [[symafm]]
+
+
+
+
+## **natrd** 
+
+
+ Mnemonics: Number of AToms ReaD  
+Variable type: integer  
+Dimensions: scalar  
+Default value: [[natom]]  
+
+
+
+Gives the number of atoms to be read from the input file, in the case the
+geometry builder or the symmetriser is used. In this case, [[natrd]] is also
+used to dimension the array [[typat]], and the arrays [[xred]], [[xangst]] and
+[[xcart]].  
+Must take into account the vacancies (see [[vacnum]] and [[vaclst]]).  
+Despite possible vacancies, cannot be bigger than [[natom]].
+
+
+
+
+## **nobj** 
+
+
+ Mnemonics: Number of OBJects  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Comment: (no use of the geometry builder)  
+
+
+
+Gives the number of 'objects' to be used by the geometry builder in order to
+find the full set of atoms. At present, only one or two objects can be
+defined, identified as objects 'a' and 'b'.  
+Related variables for object 'a' are : [[objan]], [[objaat]], [[objarf]],
+[[objatr]], [[objaro]], [[objaax]]. Related variables for object 'b' are :
+[[objbn]] , [[objbat]] , [[objbrf]] , [[objbtr]] , [[objbro]] , [[objbax]] .  
+More detailed explanation : when the geometry builder is used (i.e. when
+[[nobj]]==1 or [[nobj]]==2), the code will be given a primitive set of atoms,
+from which it will have to deduce the full set of atoms.  
+An object will be specified by the number of atoms it includes ([[objan]] or
+[[objbn]] ), and the list of these atoms ([[objaat]] or [[objbat]] ).  
+Examples of physical realisation of an object can be a molecule, or a group of
+atom to be repeated, or a part of a molecule to be rotated. The geometry
+builder can indeed repeat these objects ([[objarf]] or [[objbrf]] ), rotate
+them ([[objaro]] or [[objbro]] ) with respect to an axis ([[objaax]] or
+[[objbax]] ), and translate them ([[objatr]] or [[objbtr]] ). After having
+generated a geometry thanks to rotation, translation and repetition of
+objects, it is possible to remove some atoms, in order to create vacancies
+([[vacnum]] and [[vaclst]]). The number of atoms in the primitive set, those
+that will be read from the input file, is specified by the variable [[natrd]].
+It will be always smaller than the final number of atoms, given by the
+variable [[natom]]. The code checks whether the primitive number of atoms plus
+those obtained by the repetition operation is coherent with the variable
+[[natom]], taking into account possible vacancies.  
+You should look at the other variables for more information. Go to [[objan]],
+for example.  
+
+
+
+
+## **nzchempot** 
+
+
+ Mnemonics: Number of Z reduced coordinates that define the spatial CHEMical POTential  
+Variable type: integer  
+Default value: None  
+
+
+
+Defines the number of z reduced coordinates that defines the spatially varying
+chemical potential. See the input variable [[chempot]], of which [[nzchempot]]
+is the second dimension.
+
+
+
+
+## **objaat** 
+
+
+ Mnemonics: OBJect A : list of AToms  
+Variable type: integer  
+Dimensions: ([[objan]])  
+Default value: None  
+Only relevant if '[[nobj]]==1'
+  
+
+
+
+Gives the list of atoms in object a. This list is specified by giving, for
+each atom, its index in the list of coordinates ([[xred]], [[xangst]] or
+[[xcart]]), that also corresponds to a type of atom (given by the array type).
+These objects can be thought as molecules, or groups of atoms, or parts of
+molecules, to be repeated, rotated and translated to generate the full set of
+atoms.  
+Look at [[objarf]] for further explanations.  
+
+
+
+
+## **objaax** 
+
+
+ Mnemonics: OBJect A : AXis  
+Variable type: real  
+Default value: None  
+Comment: [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
+[[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
+
+
+
+Gives, for each object, the cartesian coordinates of two points (first point :
+[[objaax]](1:3) second point : [[objaax]](4:6). By default, given in Bohr
+atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
+specified, if preferred, since these variables have the '[[LENGTH]]'
+characteristics.  
+The two points define an axis of rotation of the corresponding object.  
+Note that the rotation of the object is done BEFORE the object is translated.  
+The sign of the rotation angle is positive if the object is to be rotated
+clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
+toward point 2 (coordinates 4:6).  
+
+
+
+
+## **objan** 
+
+
+ Mnemonics: OBJect A : Number of atoms  
+Variable type: integer  
+Dimensions: scalar  
+Default value: None  
+Comment:  [[objan]] MUST be provided if [[nobj]]==1.
+ [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
+
+
+
+Gives the number of atoms in object a. The list of atoms is given by the
+variables [[objaat]].  
+
+
+
+
+## **objarf** 
+
+
+ Mnemonics: OBJect A : Repetition Factors  
+Variable type: integer  
+Default value: [1, 1, 1]  
+
+
+
+Gives three repetition factors of the objects a.  
+This gives the opportunity to generate a three-dimensional set of repeated
+objects, although a simple one-dimensional repetition will be easily obtained
+through the specification of  
+'nrep' 1 1  
+where 'nrep' is the 1D repetition factor.  
+The initial rotation and translation of the object, as well as the increment
+of rotation or translation from one object to the next are specified by the
+variables [[objaro]] and [[objatr]], for object a,  
+Note that the geometry builder will generate the full set of atoms from the
+primitive set of atoms using the following order : it will process each atom
+in the primitive list one by one, determine whether it belongs to either
+object a or object b, and then repeat it taking into account the proper
+rotation and translation, with the fastest varying repetition factor being the
+first, then the second, then the third.  
+In the final list of atoms, one will first find the atoms generated from atom
+1 in the primitive list, then those generated from atom 2 in the primitive
+list, and so on.  
+If the geometry builder is only used to rotate or translate an object, without
+repeating it, simply use 1 1 1, which is also the Default value.  
+
+
+
+
+## **objaro** 
+
+
+ Mnemonics: OBJect A : ROtations  
+Variable type: real  
+Default value: 4*0.0d0  
+Comment: (no rotation)  
+
+
+
+Give, for each object, the angles of rotation in degrees to be applied to the
+corresponding object.  
+The rotation is applied before the translation, and the axis is defined by the
+variables [[objaax]] and [[objbax]]. See the latter variables for the
+definition of the sign of the rotation.  
+The first component [[objaro]](1) and ** objbro ** (1) gives the angle of
+rotation to be applied to the first instance of the object. The second, third
+or fourth component (resp.) gives the increment of rotation angle from one
+instance to the next instance, defined by the first, second or third
+repetition factor (resp.) . This allows to generate 3D arrays of molecules
+with different rotation angles.  
+
+
+
+
+## **objatr** 
+
+
+ Mnemonics: OBJect A : TRanslations  
+Variable type: real  
+Default value: 12*0.0d0  
+Comment: (no translation)  
+
+
+
+Give, for each object, the vectors of translations, in cartesian coordinates,
+to be applied to the corresponding object. By default, given in Bohr atomic
+units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
+preferred, since these variables have the '[[LENGTH]]' characteristics.  
+The translation is applied after the rotation.  
+The first vector [[objatr]](3,1) and [[objbtr]](3,1) gives the translation to
+be applied to the first instance of the object. The second, third or fourth
+component (resp.) gives the increment of translation from one instance to the
+next instance, defined by the first, second or third repetition factor (resp.)
+. This allows to generate 3D arrays of molecules.  
+In general, when the objects are repeated, a translation vector must be given,
+since otherwise, the repeated objects pack in the same region of space. As an
+exception, one can have a set of molecules regularly spaced on a circle, in
+which case, only rotations are needed.  
+Not present in the dtset array (no internal).
+
+
+
+
+## **objbat** 
+
+
+ Mnemonics: OBJect B : list of AToms  
+Variable type: integer  
+Default value: None  
+Only relevant if [[nobj]]==2  
+
+
+
+Gives the list of atoms in object b. This list is specified by giving, for
+each atom, its index in the list of coordinates ([[xred]], [[xangst]] or
+[[xcart]]), that also corresponds to a type of atom (given by the array type).
+These objects can be thought as molecules, or groups of atoms, or parts of
+molecules, to be repeated, rotated and translated to generate the full set of
+atoms.  
+Look at [[objbrf]] for further explanations.  
+
+
+
+
+## **objbax** 
+
+
+ Mnemonics: OBJect B : AXis  
+Variable type: real  
+Default value: None  
+Comment: [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
+[[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
+
+
+
+Gives, for each object, the cartesian coordinates of two points (first point :
+[[objbax]](1:3) second point : [[objbax]](4:6). By default, given in Bohr
+atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
+specified, if preferred, since these variables have the '[[LENGTH]]'
+characteristics.  
+The two points define an axis of rotation of the corresponding object.  
+Note that the rotation of the object is done BEFORE the object is translated.  
+The sign of the rotation angle is positive if the object is to be rotated
+clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
+toward point 2 (coordinates 4:6).  
+
+
+
+
+## **objbn** 
+
+
+ Mnemonics: OBJect B : Number of atoms  
+Variable type: integer  
+Dimensions: scalar  
+Default value: None  
+Comment:  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
+
+
+
+Gives the number of atoms in either object b. The list of atoms is given by
+the variables [[objbat]].  
+
+
+
+
+## **objbrf** 
+
+
+ Mnemonics: OBJect B : Repetition Factors  
+Variable type: integer  
+Default value: [1, 1, 1]  
+
+
+
+Gives three repetition factors of the objects a or b.  
+This gives the opportunity to generate a three-dimensional set of repeated
+objects, although a simple one-dimensional repetition will be easily obtained
+through the specification of  
+nrep 1 1 &lt;r&gt; where nrep is the 1D repetition factor.  
+The initial rotation and translation of the object, as well as the increment
+of rotation or translation from one object to the next are specified by the
+variables [[objbro]] and [[objbtr]], for object b.  
+Note that the geometry builder will generate the full set of atoms from the
+primitive set of atoms using the following order : it will process each atom
+in the primitive list one by one, determine whether it belongs to either
+object a or object b, and then repeat it taking into account the proper
+rotation and translation, with the fastest varying repetition factor being the
+first, then the second, then the third.  
+In the final list of atoms, one will first find the atoms generated from atom
+1 in the primitive list, then those generated from atom 2 in the primitive
+list, and so on.  
+If the geometry builder is only used to rotate or translate an object, without
+repeating it, simply use 1 1 1, which is also the Default value.  
+
+
+
+
+## **objbro** 
+
+
+ Mnemonics: OBJect B : ROtations  
+Variable type: real  
+Default value: 4*0.0d0  
+Comment: (no rotation)  
+
+
+
+Give, for each object, the angles of rotation in degrees to be applied to the
+corresponding object.  
+The rotation is applied before the translation, and the axis is defined by the
+variables [[objaax]] and [[objbax]]. See the latter variables for the
+definition of the sign of the rotation.  
+The first component [[objaro]](1) and ** objbro ** (1) gives the angle of
+rotation to be applied to the first instance of the object. The second, third
+or fourth component (resp.) gives the increment of rotation angle from one
+instance to the next instance, defined by the first, second or third
+repetition factor (resp.) . This allows to generate 3D arrays of molecules
+with different rotation angles.  
+
+
+
+
+## **objbtr** 
+
+
+ Mnemonics: OBJect B : TRanslations  
+Variable type: real  
+Default value: 12*0.0d0  
+Comment: (no translation)  
+
+
+
+Give, for each object, the vectors of translations, in cartesian coordinates,
+to be applied to the corresponding object. By default, given in Bohr atomic
+units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
+preferred, since these variables have the '[[LENGTH]]' characteristics.  
+The translation is applied after the rotation.  
+The first vector [[objatr]](3,1) and [[objbtr]](3,1) gives the translation to
+be applied to the first instance of the object. The second, third or fourth
+component (resp.) gives the increment of translation from one instance to the
+next instance, defined by the first, second or third repetition factor (resp.)
+. This allows to generate 3D arrays of molecules.  
+In general, when the objects are repeated, a translation vector must be given,
+since otherwise, the repeated objects pack in the same region of space. As an
+exception, one can have a set of molecules regularly spaced on a circle, in
+which case, only rotations are needed.  
+
+
+
+
+## **ptgroupma** 
+
+
+ Mnemonics: PoinT GROUP number for the MAgnetic space group  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+This internal variable characterizes a Shubnikov type III magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult "The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford."  
+A Shubnikov type III magnetic space group might be defined by its Fedorov
+space group (set of all spatial symmetries, irrespective of their magnetic
+action), and the halving space group (only the symmetries that do not change
+the magnetization).  
+The specification of the halving space group might be done by specifying, for
+each point symmetry, the magnetic action. See Table 7.1 of the above-mentioned
+reference. Magnetic point groups are numbered from 1 to 58.
+
+Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
+
+
+
+
+## **spgaxor** 
+
+
+ Mnemonics: SPace Group : AXes ORientation  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+
+
+
+It is taken into account only when [[spgroup]]/=0; it allows one to define the
+axes orientation for the specific space groups for which this is needed.
+Trigonal groups (number 146,148,155,160,161,166,167):
+
+  * 1 represents the hexagonal axes 
+  * 2 represents the rhombohedral axes 
+
+Orthorhombic space groups : there are six possibilities corresponding to the
+possible axes permutations
+
+  * 1 abc -&gt; abc 
+  * 2 abc -&gt; cab 
+  * 3 abc -&gt; bca 
+  * 4 abc -&gt; acb 
+  * 5 abc -&gt; bac 
+  * 6 abc -&gt; cba 
+
+Monoclinic : there are 3 or 9 possibilities depending on the space group. See
+the space group [ help file ](../../users/spacegrouphelpfile.html) for
+details. In the log/output file the notation used to describe the monoclinic
+groups is for example:  
+15:c1, A2/a_c = C2/c  
+where,
+
+  * 15 represents the space group number, 
+  * c1 the orientation as it appears on the web page, 
+  * A is the real Bravais type lattice, 
+  * 2/a the existent symmetry elements, 
+  * _c marks the orientation of the two-fold axis or of the mirror plane, 
+  * C2/c represents the parent space group. 
+
+How to determine which spgaxor you need:
+
+  1. check the reduced positions you have, for more symmetric positions, e.g. 1/2 1/4 3/4 etc... Let us say your symmetric positions are in the first coordinate (a axis) and you are using spgroup 62. 
+  2. look up the raw space group Wyckoff positions on [ the Bilbao server ](http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-wp-list) to see where they put the corresponding symmetric positions. For spgroup 62 Bilbao puts the 1/4 3/4 in the second coordinate, ie along the b axis. 
+  3. in this case you need to swap the axes from the original abc order to a new order where the Bilbao axis (b) is in the first position. In this case you have 2 possibilities, spgaxor 3 or 5. If you have more than one highly symmetric coordinate you may have only a single possibility. 
+
+
+
+
+## **spgorig** 
+
+
+ Mnemonics: SPace Group : ORIGin  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[spgroup]]!=0  
+
+
+
+Gives the choice of origin for the axes system.  
+It is defined according to the origin choice in the International Tables of
+Crystallography.  
+It applies only to the space groups 48, 50, 59, 70, 85, 86, 88, 125, 126, 129,
+130, 133, 134, 137, 141, 142, 201, 203, 222, 224, 227, 228.  
+For details see the space group [ help file
+](../../users/spacegrouphelpfile.html) .
+
+
+
+
+## **spgroup** 
+
+
+ Mnemonics: SPace GROUP number  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of the space group.  
+If [[spgroup]] is 0, the code assumes that all the symmetries are input
+through the [[symrel]] matrices and the [[tnons]] vectors, or obtained from
+the symmetry finder (the default when [[nsym]]==0).  
+It should be between 1 and 230. This option can be used to obtain all the
+atoms in the unit cell, starting from the asymmetric unit cell.  
+The references for computing the symmetry corresponding to the space groups
+are :
+
+  * International Tables for Crystallography, 1983, Ed. Theo Hahn, D. Reidel Publishing Company 
+  * The mathematical theory of symmetry in solids, Representation theory for point groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon Press, Oxford. 
+
+  
+For details see the space group [ help file
+](../../users/spacegrouphelpfile.html) .
+
+
+
+
+## **spgroupma** 
+
+
+ Mnemonics: SPace GROUP number defining a MAgnetic space group  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+This input variable might be used to define a Shubnikov magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult "The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford."  
+A Shubnikov type IV magnetic space group might be defined by its Fedorov space
+group (set of spatial symmetries that do not change the magnetization), and an
+additional magnetic space group number [[spgroupma]].  
+A Shubnikov type III magnetic space group might be defined by its Fedorov
+space group (set of all spatial symmetries, irrespective of their magnetic
+action), and an additional magnetic space group number [[spgroupma]].  
+For the additional number [[spgroupma]], we follow the definition of Table 7.4
+of the above-mentioned Bradley and Cracknell textbook.  
+Thus, one way to specify a Shubnikov IV magnetic space group, is to define
+both [[spgroup]] and [[spgroupma]].  
+For example, the group P2_1/c_prime has [[spgroup]]=14 and [[spgroupma]]=78.  
+Alternatively, for Shubnikov IV magnetic groups, one might define [[spgroup]]
+and [[genafm]]. For both the type III and IV, one might define by hand the set
+of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
+
+
+
+
+## **tolsym** 
+
+
+ Mnemonics: TOLERANCE for SYMmetries  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1e-08  
+
+
+
+Gives the tolerance on the atomic positions (reduced coordinates), primitive
+vectors, or magnetization, to be considered equivalent, thanks to symmetry
+operations. This is used in the recognition of the set of symmetries of the
+system, or the application of the symmetry operations to generate from a
+reduced set of atoms, the full set of atoms. Note that a value larger than
+0.01 is considered to be unacceptable.  
+Note : ABINIT needs the atomic positions to be symmmetric to each others
+within 1.e-8 . If [[tolsym]] is set to a larger value than 1.e-8, then the
+input atomic coordinates will be automatically symmetrized by the symmetry
+operations that will have been found.
+
+
+
+
+## **vaclst** 
+
+
+ Mnemonics: VACancies LiST  
+Variable type: integer  
+Dimensions: ([[vacnum]])  
+Default value: None  
+
+
+
+Gives the identification number(s) of atoms to be subtracted from the set of
+atoms that are obtained after having rotated, translated and repeated the
+objects.  
+Useful to created vacancies.
+
+
+
+
+## **vacnum** 
+
+
+ Mnemonics: VACancies NUMber  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+Gives the number of atoms to be subtracted from the list of atoms after the
+rotations, translations and repetitions have been done. The list of these
+atoms is contained in [[vaclst]].
+
+
+
+
+## **xyzfile** 
+
+
+ Mnemonics: XYZ FILE input for geometry  
+Variable type: string  
+Dimensions: scalar  
+Default value: None  
+
+
+
+Gives the name of a xyz format file, to take [[natom]], [[ntypat]], [[typat]],
+[[znucl]], and [[xangst]] from. This input can not be mixed with normal atom
+specifications for other datasets.
+
+Notes: do not quote the file name in the abinit input file, simply leave a
+space after xyzfile. The xyz format is the number of atoms on the first line,
+a comment line, then one line per atom, with the element as a 2 letter symbol
+("As" "O" or "Pu") and the three cartesian coordinates in Angstrom.
+
+
+
+

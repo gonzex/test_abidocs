@@ -1,0 +1,98 @@
+site_name: abinit
+site_url: http://www.abinit.org
+site_description: Abinit documentation
+site_author: The Abinit group
+docs_dir: doc
+
+repo_url: https://github.com/abinit/abinit/
+
+pages:
+- Quick Start: 
+    - Introduction: index.md
+    - Installation:  installation.md
+    - Topics:
+        - Crystalline Structure: topics/crystal.md
+        - K-points: topics/kpoints.md
+- User Guide:
+    - Overview: user-guide/help_what_ABINIT_does.md
+    - Abinit: user-guide/help_abinit.md
+    - Mrgddb: user-guide/help_mrgddb.md
+    - Optic: user-guide/help_optic.md
+- Input Variables:
+    - Abinit:
+        - Basic: input_variables/varbas.md
+        - Bethe-Salpeter: input_variables/varbse.md
+        - Developers: input_variables/vardev.md
+        - DMFT: input_variables/vardmft.md
+        - Electron-Phonon: input_variables/vareph.md
+        - Varff: input_variables/varff.md
+        - File-handling: input_variables/varfil.md
+        - Geometry: input_variables/vargeo.md
+        - Ground-State: input_variables/vargs.md
+        - GW: input_variables/vargw.md
+        - Internal: input_variables/varint.md
+        - Parallelism: input_variables/varpar.md
+        - PAW: input_variables/varpaw.md
+        - RF: input_variables/varrf.md
+        - Relaxation: input_variables/varrlx.md
+        - VdW: input_variables/varvdw.md
+        - Wannier90: input_variables/varw90.md
+- Tutorials:
+    - Overview: tutorials/welcome.md
+    - Base Tutorials: 
+        - Base1: tutorials/base1.md
+        - Base2: tutorials/base2.md
+        - Base3: tutorials/base3.md
+        - Base4: tutorials/base4.md
+    - DFPT:
+        - RF1: tutorials/rf1.md
+        - RF2: tutorials/rf2.md
+        - Elastic: tutorials/elastic.md
+        - EPH: tutorials/eph.md
+    - DMFT: tutorials/dmft.md
+    - Many-Body:
+        - GW1: tutorials/gw1.md
+        - GW2: tutorials/gw2.md
+        - Bethe-Salpeter: tutorials/bse.md
+    - Parallelism:
+        - Base: tutorials/basepar.md
+        - Many-Body: tutorials/paral_mbt.md
+- Theory:
+    - MBPT: theory/theory_mbt.md
+    - Notes: theory/notes.md
+      #- Bibliography: theory/bibliography.md
+- About:
+    - Release Notes: about/release-notes.md
+    - Contributing: about/contributing.md
+    - License: about/license.md
+
+markdown_extensions:
+  #- markdown.extensions.toc:
+  #   permalink: true
+  #   #separator: "_"
+  - markdown.extensions.admonition
+  #- markdown.extensions.codehilite
+  #- markdown.extensions.wikilinks
+  #- markdown_newtab
+  #- smarty
+  - pymods.extensions.wikilinks
+  - mdx_math:
+        enable_dollar_delimiter: True
+
+        
+#strict: true
+
+copyright: Copyright &copy; 2017 The Abinit Group
+#google_analytics: ['UA-27795084-5', 'abinit.org']
+#
+#extra_javascript: 
+    #- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    #- http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+theme: mkdocs
+theme_dir: abinit_theme
+extra_css:
+    - css/extra.css
+
+extra:
+    version: 8.5.4

@@ -1,0 +1,2375 @@
+## **awtr** 
+
+
+ Mnemonics: evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==3  
+
+
+
+This input variable defines whether the irreducible polarizability
+$\chi^{0}_{KS}$ is evaluated taking advantage of time-reversal symmetry or
+not.
+
+  * 0 =&gt; Use the "standard" Adler-Wiser expression without assuming time-reversal symmetry. In this case, the irreducible polarizability is calculated summing over all possible electronic transitions (both resonant and antiresonant). 
+  * 1 =&gt; Take advantage of time-reversal symmetry to halve the number of transitions to be explicitly considered. This method leads to a decrease in the CPU time by a factor two with respect to the [[awtr]]=0 case. 
+
+Note that the parallel algorithm [[gwpara]]=2 is not compatible with the
+choice [[awtr]]=0.
+
+
+
+
+## **bdgw** 
+
+
+ Mnemonics: BanDs for GW calculation  
+Variable type: integer  
+Dimensions: (2,[[nkptgw]],[[nsppol]])  
+Default value: *0  
+Only relevant if [[optdriver]]==4  
+
+
+
+For each k-point with number ikptgw in the range (1:[[nkptgw]]) and each spin
+index isppol, ** bdgw(1,ikptgw,isppol) ** is the number of the lowest band for
+which the [[GW]] computation must be done, and ** bdgw(2,ikptgw,isppol) ** is
+the number of the highest band for which the [[GW]] computation must be done.
+
+When [[gwcalctyp]] &gt;= 20, the quasiparticle wavefunctions are computed and
+represented as linear combination of Kohn-Sham wavefunctions. In this case
+[[bdgw]] designates the range of KS wavefunctions used as basis set. For each
+k-point, indeed, the quasiparticle wavefunctions are expanded considering only
+the KS states between ** bdgw(1,ikptgw,isppol) ** and ** bdgw(2,ikptgw,isppol)
+** .
+
+Note that the initial values given in the input file might be changed inside
+the code so that all the degenerate states at a given k-point and spin are
+included. This might happen when [[symsigma]]=1 is used or in the case of
+self-consistent [[GW]] calculations.
+
+When [[symsigma]]=1, the diagonal matrix elements of the self-energy are
+obtained by averaging the unsymmetrized results in the subspace spanned by the
+degenerate states.
+
+For self-consistent calculations, on the other hand, the basis set used to
+expand the [[GW]] wavefunctions should include all the degenerate states
+belonging to the same irreducible representation. Only in this case, indeed,
+the initial symmetries and energy degenerations are preserved.
+
+
+
+
+## **cd_customnimfrqs** 
+
+
+ Mnemonics: Contour Deformation CUSTOM IMaginary FReQuencieS  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[cd_customnimfrqs]] lets the user define the grid points along the imaginary
+axis by hand. Set this to the number of frequencies you want. The frequencies
+are specified with [[cd_imfrqs]].
+
+
+
+
+## **cd_frqim_method** 
+
+
+ Mnemonics: Contour Deformation FReQuency integration on IMaginary axis Method  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[cd_frqim_method]] defines the choice of integration method along the
+imaginary frequency axis for Contour Deformation calculations. The default
+method is very robust, fast and optimal for the vast majority of cases.
+However, for very accurate ("paranoid level") convergence studies, ABINIT
+offers the possibility of a variety of methods and grids. Note that as one
+starts to change the defaults, one needs to carefully consider the grid used.
+Therefore we recommend that in addition to reading the information below, the
+user reads the description of the input variables [[freqim_alpha]],
+[[nfreqim]], [[ppmfrq]], [[gw_frqim_inzgrid]].
+
+The integration to be performed for each matrix element of the self energy
+along the imaginary axis is of the form:
+
+![](../vargw_img/self_energy_cd.png)
+
+Where  _ ω _ is the frequency point along the real axis,  _ ε s  _ is an
+eigenvalue, and  _ iω' _ is the variable along the imaginary axis. Thus the
+function to be integrated is a Lorentzian weight function centred on the
+origin (whose FWHM is decided by |  _ ω \- ε s  _ |), times a function. The
+function is related to the inverse dielectric matrix. It might have a peaked
+structure near the origin and is very smooth otherwise. the function decays
+asymptotically as  1 / _ iω' _ , so the whole integral converges as this to
+the third power.
+
+  * ** cd_frqim_method = 1 - Histogram: ** This is the ** default ** method where the function  _ f(iω') _ is approximated by a histogram, and the Lorentzian is integrated analytically in each sub-interval. See the section on grids below for a description of the default grid. This method combined with the default grid is the fastest and optimised for the use of few points along the imaginary axis. 
+  * ** cd_frqim_method = 2 - Trapezoid: ** The next step up from the histogram approximation in the previous method. The integration region is transformed  _ [0,∞[ -&gt; [0,1] _ with a proper weight depending on the width of the Lorentzian. In this space  _ f(iω') _ is approximated by a linear function between grid points (trapezoids), and the integrand is integrated analytically in each sub-interval. This method tends to slightly overestimate contributions while the default method tends to slightly underestimate them, so the results from methods 1 and 2 should bracket the converged values. The asymptotic behaviour is explicitly taken into account by a fit using the last two grid points. 
+  * ** cd_frqim_method = 3, 4, 5 - Natural Spline: ** The function is transfomed  _ [0,∞[ -&gt; [0,1] _ . In this space  _ f(iω') _ is approximated by a natural spline function whose starting and ending sections are linear. This transform is chosen so that the function should approach a linear function asymptotically as the integration interval approaches 1, so that the asymptotic behaviour is automatically taken into account. For each Lorentzian width (determined by |  _ ω \- ε s  _ |) the integrand is appropriately scaled in the interval  _ [0,1] _ , and a nested Gauss-Kronrod (GK) numerical integration rule is performed. The integrand is evaluated at the GK nodes by means of a spline-fit. The order of the GK rule is controlled by the index of the method: 
+    * ** 3 =&gt; Gauss 7 point, Kronrod 15 point rule **
+    * ** 4 =&gt; Gauss 11 point, Kronrod 23 point rule **
+    * ** 5 =&gt; Gauss 15 point, Kronrod 31 point rule **
+There is rarely any difference to machine precision between these rules, and
+the code will issue a warning if a higher-order rule is recommended.
+
+** Grids for the integral along the imaginary axis: **
+
+All the methods above should execute no matter what grid is used along the
+imaginary axis, so this is very much under the control of the user. The only
+requirement is that the grid be strictly increasing. The point at zero
+frequency is assumed to lie on the real axis, so the calculation of that point
+is controlled by [[nfreqre]] and corresponding variables. We highly recommend
+extracting various elements of the dielectric matrix from the _SCR file using
+the ** Mrgscr ** utility and plotting them for visual inspection.
+
+  * ** Default ** \- The default grid is an exponentially increasing grid given by the formula: 
+
+![](../vargw_img/cd_default_grid.png)
+
+Here  _ ω p  _ is the plasma frequency (by default determined by the average
+density of the system, but this can be overridden by setting [[ppmfrq]]).  _ N
+_ is the total number of grid points (set by [[nfreqim]]).  _ α _ is a
+parameter which determines how far out the final grid point will lie. The
+final point will be at  _ α*ω p  _ (the default is  _ α = 5 _ , and was hard-
+coded in older versions of ABINIT). This grid is designed so that
+approximately half the grid points are always distributed to values lower than
+the plasma frequency, in order to resolve any peaked structure. If one seeks
+to increase the outermost reach by increasing [[ppmfrq]] one must
+simultaneously take care to increase [[nfreqim]] in order to have the
+appropriate resolution for the low-frequency region. In more recent versions
+of ABINIT one can also simply adjust the parameter  _ α _ by using
+[[freqim_alpha]]. This grid is optimised for speed and accurate results with
+few grid points for ** cd_frqim_method = 1 ** .
+
+  * ** Inverse z transform ** \- This grid is activated by the use of the variable [[gw_frqim_inzgrid]]. This is the standard  _ [0,∞[ -&gt; [0,1] _ transform using the formula: 
+
+![](../vargw_img/cd_inzgrid.png)
+
+Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
+[[ppmfrq]]). The grid points are then picked by an equidistant grid (number of
+points set by [[nfreqim]]) in the interval  _ z ⊂ [0,1] _ . This grid can
+easily be uniquely converged by just increasing [[nfreqim]]. Again the points
+are distributed so that approximately half of them lie below the plasma
+frequency.
+
+  * ** User defined ** \- The user can also define their own grid using the variables [[cd_customnimfrqs]] and [[cd_imfrqs]] . _ With great power comes great responsibility! _
+
+The ** Mrgscr ** utility is handy in optimising the numerical effort expended
+in convergence studies. By estimating the densest grid one can afford to
+calculate in the SCR file, and successively removing frequencies from a single
+file (using the utility), one only needs to perform the screening calculation
+** once ** on the dense mesh for a given convergence study. One can also use
+the utility to merge independent screening calculations over q-points and
+frequency sections.
+
+
+
+
+## **cd_full_grid** 
+
+
+ Mnemonics: Contour Deformation FULL GRID in complex plane  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[cd_full_grid]] enables the calculation of the screening [both chi0 and
+epsilon^(-1)] on a grid in the first quadrant of the complex plane. The grid
+is determined by the (tensor) product of the grid in real frequency and the
+grid in imaginary frequency. In the SUS and SCR files the grid points are
+stored as follows:
+
+    
+    
+      **
+       Index:
+      **
+      1   . . .   nfreqre   nfrqre+1 . . . nfreqre+nfreqim   nfreqre+nfreqim+1 . . . nfreqre*nfreqim
+      **
+       Entry:
+      **
+      | purely real freq.  |     purely imaginary freq.     |      gridpoints in complex plane        |
+     
+
+The grid in the complex plane is stored looping over the real dimension as the
+inner loop and the imaginary as the outer loop. The contents of the generated
+SUS and SCR files can be extracted for visualisation and further analysis with
+the ** Mrgscr ** utility.
+
+
+
+
+## **cd_halfway_freq** 
+
+
+ Mnemonics: Contour Deformation tangent grid HALFWAY FREQuency  
+Variable type: real  
+Dimensions: scalar  
+Default value: 100.0 eV  
+Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[cd_halfway_freq]] determines the frequency where half of the number of
+points defined in [[nfreqre]] are used up. The tangent transformed grid is
+approximately linear up to this point. To be used in conjunction with
+[[gw_frqre_tangrid]].
+
+
+
+
+## **cd_imfrqs** 
+
+
+ Mnemonics: Contour Deformation IMaginary FReQuencieS  
+Variable type: real  
+Dimensions: ([[cd_customnimfrqs]])  
+Default value: None  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
+
+
+
+[[cd_imfrqs]] specifies the grid points for the imaginary axis. The number of
+frequencies is set by the value of [[cd_customnimfrqs]]. Example:
+
+    
+    
+    cd_customnimfrqs   5
+    nfreqim            5
+    cd_imfrqs          0.1  0.2  0.5  1.0  5.0
+     
+
+If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
+
+** Use at own risk! ** The use of a custom grid makes it your responsibility that the SUS and SCR files are valid in self-energy (i.e. [[optdriver]]=4) calculations, so caution is advised. Note that frequencies have to be strictly increasing, and the point at zero frequency is ** not ** considered to be part of the imaginary grid, but rather the grid along the real axis. The calculation of that point should be controlled by [[nfreqre]] and related variables. 
+
+
+
+
+## **cd_max_freq** 
+
+
+ Mnemonics: Contour Deformation grid MAXimum FREQuency  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1000.0 eV  
+Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[cd_max_freq]] determines the frequency where all the points defined in
+[[nfreqre]] are used up. To be used in conjunction with [[gw_frqre_tangrid]].
+
+
+
+
+## **cd_subset_freq** 
+
+
+ Mnemonics: Contour Deformation grid calculate SUBSET of FREQuencies  
+Variable type: integer  
+Dimensions: (2)  
+Default value: [1, '[[nfreqre]]']  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
+
+
+
+[[cd_subset_freq]] Specifies that only a subset of the frequencies defined by
+[[nfreqre]] are to be calculated. The first index is the start and the second
+the end, with index number 1 always being the origin. For example a
+calculation with ** [[nfreqre]]=100 ** could be separated into two datasets
+with:
+
+    
+    
+    subset_freq1   1   50
+    subset_freq2   51  100
+     
+
+Any resulting susceptibility (_SUS) and screening (_SCR) files can then be
+merged with the ** mrgscr ** utility.
+
+
+
+
+## **ecuteps** 
+
+
+ Mnemonics: Energy CUT-off for EPSilon (the dielectric matrix)  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==3 or [[optdriver]]==4  
+
+
+
+[[ecuteps]] determines the cut-off energy of the planewave set used to
+represent the independent-particle susceptibility $\chi^{0}_{KS}$, the
+dielectric matrix $\epsilon$, and its inverse.  
+It is not worth to take [[ecuteps]] bigger than four times [[ecutwfn]], this
+latter limit corresponding to the highest Fourier components of a wavefunction
+convoluted with itself. Usually, even twice the value of [[ecutwfn]] might
+overkill. A value of [[ecuteps]] between 5 and 10 Hartree often (but not
+always) leads to converged results (at the level of 0.01 eV for the energy
+gap). In any case, a convergence study is worth.
+
+
+
+
+## **ecutsigx** 
+
+
+ Mnemonics: Energy CUT-off for SIGma eXchange  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[ecutsigx]] determines the cut-off energy of the planewave set used to
+generate the exchange part of the self-energy operator. For norm-conserving
+calculations, it is pointless to have [[ecutsigx]] bigger than 4*[[ecut]],
+while for PAW calculations, the maximal useful value is [[pawecutdg]]. Thus,
+if you do not care about CPU time, please use these values. If you want to
+spare some CPU time, you might try to use a value between [[ecut]] and these
+upper limits.
+
+
+
+
+## **ecutwfn** 
+
+
+ Mnemonics: Energy CUT-off for WaveFunctioNs  
+Variable type: real  
+Dimensions: scalar  
+Default value: [[ecut]] if [[optdriver]] in [3, 4],
+0.0 otherwise.
+  
+Only relevant if  [[optdriver]]==3 or [[optdriver]]==4  
+
+
+
+[[ecutwfn]] determines the cut-off energy of the planewave set used to
+represent the wavefunctions in the formula that generates the independent-
+particle susceptibility $\chi^{0}_{KS}$ (for [[optdriver]]=3), or the self-
+energy (for [[optdriver]]=4).  
+Usually, [[ecutwfn]] is smaller than [[ecut]], so that the wavefunctions are
+filtered, and some components are ignored. As a side effect, the wavefunctions
+are no more normalized, and also, no more orthogonal. Also, the set of plane
+waves can be much smaller for [[optdriver]]=3, than for [[optdriver]]=4,
+although a convergence study is needed to choose correctly both values.
+
+The size of this set of planewaves is [[npwwfn]].
+
+
+
+
+## **fftgw** 
+
+
+ Mnemonics: FFT for GW calculation  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 21  
+Only relevant if  [[optdriver]]==3 or [[optdriver]]==4  
+
+
+
+The basic ingredients needed to perform both a screening and a sigma
+calculation are the so-called oscillator matrix elements defined as  
+  
+&lt; ** k-q ** , b1 | e^{-i ( ** q+G ** ). ** r ** } | ** k ** b2 &gt;  
+  
+In reciprocal space, this expression is evaluated by a convolution in which
+the number of reciprocal lattice vectors employed to describe the
+wavefunctions is given by [[ecutwfn]]. In the case of screening calculations,
+the number of ** G ** vectors in the above expression is defined by
+[[ecuteps]], while [[ecutsigx]] defined the number of ** G ** used in sigma
+calculations. To improve the efficiency of the code, the oscillator matrix
+elements are evaluated in real space through FFT techniques, and the [[fftgw]]
+input variable is used to select the FFT mesh to be used.
+
+[[fftgw]] is the concatenation of two digits, labelled (A) and (B) whose value
+is internally used to define the value of [[ngfft]](1:3) (see the setmesh.F90
+routine).
+
+The first digit (A) defines the augmentation of the FFT grid. Possible values
+are 1, 2 and 3.
+
+  * 0 =&gt; Use the FFT grid specified by the user through [[ngfft]](1:3) 
+  * 1 =&gt; Use a coarse FFT grid which encloses a sphere in reciprocal space whose radius depends on the largest value between [[ecutwfn]] and [[ecuteps]] 
+  * 2 =&gt; Use a slightly augmented FFT which is sufficient for the correct treatment of the convolution 
+  * 3 =&gt; Doubled FFT grid (same mesh as that used for GS calculations). 
+
+The second digit (B) can be chosen between 0 and 1. It defines whether a FFT
+grid compatible with all the symmetries of the space group must be enforced or
+not:
+
+  * 0 =&gt; Use the smallest FFT mesh which is compatible with the FFT library (faster, save memory but is less accurate) 
+  * 1 =&gt; Enforce a FFT grid which is compatible with all the symmetry operations of the space group. This method leads to an increase both of CPU time and memory, but the matrix elements are more accurate since the symmetry properties of the system are preserved. 
+
+The behaviour of ABINIT before v5.5 corresponds to the default value 11.
+
+
+
+
+## **freqim_alpha** 
+
+
+ Mnemonics: FREQuencies along the IMaginary axis ALPHA parameter  
+Variable type: real  
+Dimensions: scalar  
+Default value: 5.0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[freqim_alpha]] is used only for numerical integration of the [[GW]] self-
+energy ([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
+[[freqim_alpha]] determines the location of the maximum frequency point along
+the imaginary axis if the default grid is used in Contour Deformation
+(numerical integration) calculations. It is set as  _ α*ω p  _ , where  _ ω p
+_ is the plasma frequency determined by the average density of the system
+(this can be set by hand by using the variable [[ppmfrq]]). See the section on
+grids in the descriptive text for [[cd_frqim_method]] for a detailed
+description of the formula.
+
+
+
+
+## **freqremax** 
+
+
+ Mnemonics: FREQuencies along the Real axis MAXimum  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==3  
+
+
+
+[[freqremax]] is used only for numerical integration of the [[GW]] self-energy
+([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
+[[freqremax]] sets the maximum real frequency used to calculate the dielectric
+matrix in order to perform the numerical integration of the [[GW]] self-
+energy. [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
+frequency mesh along the real axis.
+
+
+
+
+## **freqremin** 
+
+
+ Mnemonics: FREQuencies along the Real axis MINimum  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==3  
+
+
+
+[[freqremin]] is used only for numerical integration of the [[GW]] self-energy
+([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
+[[freqremin]] sets the minimum real frequency used to calculate the dielectric
+matrix in order to perform the numerical integration of the [[GW]] self-
+energy. [[freqremin]] can be used to split a wide frequency interval into
+smaller subintervals that can be calculated independently. The different
+subintervals can then be merged together with the ** Mrgscr ** utility thus
+obtaining a single screening file that can used for self-energy calculations.
+Note that [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of
+the frequency mesh along the real axis.
+
+
+
+
+## **freqspmax** 
+
+
+ Mnemonics: FREQuencies for the SPectral function MAXimum  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[freqspmax]] sets the maximum real frequency used to calculate the spectral
+function from the [[GW]] Green's function. [[freqspmin]], [[freqspmax]] and
+[[nfreqsp]] define the spacing of an equidistant frequency mesh along the real
+axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
+be used to make a user-defined grid.
+
+
+
+
+## **freqspmin** 
+
+
+ Mnemonics: FREQuencies for the SPectral function MINimum  
+Variable type: real  
+Dimensions: scalar  
+Default value: -[[freqspmax]]  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[freqspmin]] sets the minimum real frequency used to calculate the spectral
+function from the [[GW]] Green's function. [[freqspmin]] is set to
+-[[freqspmax]] if left undefined. [[freqspmin]], [[freqspmax]], and
+[[nfreqsp]] define the spacing of an equidistant frequency mesh along the real
+axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
+be used to make a user-defined grid.
+
+
+
+
+## **gw_customnfreqsp** 
+
+
+ Mnemonics: GW CUSTOM FREQuencies for SPectral function  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[gw_customnfreqsp]] lets the user define the grid points along the real
+frequency axis by hand for the calculation of the self-energy along the real
+axis. Set this to the number of frequencies you want. The frequencies are
+specified with [[gw_freqsp]].
+
+
+
+
+## **gw_freqsp** 
+
+
+ Mnemonics: GW SPectral FREQuencies  
+Variable type: real  
+Dimensions: ([[gw_customnfreqsp]])  
+Default value: [1 .. [[gw_customnfreqsp]]]  
+Only relevant if [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
+
+
+
+[[gw_freqsp]] specifies the grid points for the real frequency axis when the
+real and imaginary (spectral funtion) parts of sigma are calculated explicitly
+for post-processing or plotting. Only activated if [[gw_customnfreqsp]] is not
+equal to 0. The number of frequencies is set by the value of
+[[gw_customnfreqsp]]. Example:
+
+    
+    
+    gw_customnfreqsp   5
+    nfreqsp            5
+    gw_freqsp         -0.5  -0.1  0.0  1.0  10.0 eV
+     
+
+If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
+
+
+
+
+## **gw_frqim_inzgrid** 
+
+
+ Mnemonics: GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[gw_frqim_inzgrid]] creates gridpoints along the ** imaginary ** frequency
+axis by using an equidistant grid in the variable  _ z ⊂ [0,1] _ where the
+transform is:
+
+![](../vargw_img/cd_inzgrid.png)
+
+Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
+[[ppmfrq]]). The equidistant grid in z is determined uniquely by [[nfreqim]])
+and the points are distributed so that half of them lie below the plasma
+frequency.
+
+
+
+
+## **gw_frqre_inzgrid** 
+
+
+ Mnemonics: GW Contour Deformation FReQuencies on REal axis Inverse Z Grid  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[gw_frqre_inzgrid]] creates grid points along the ** real ** frequency axis
+by using an equidistant grid in the variable  _ z ⊂ [0,1] _ where the
+transform is:
+
+![](../vargw_img/cd_inzgrid_re.png)
+
+Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
+[[ppmfrq]]). The equidistant grid in z is determined uniquely by [[nfreqre]] )
+and the points are distributed so that half of them lie below the plasma
+frequency. This is useful in conjuction with [[gw_frqim_inzgrid]] if one needs
+to use a grid which maps  _ [0,∞[ -&gt; [0,1] _ . Note that typically _ many _
+more points are needed along the real axis in order to properly resolve peak
+structures. In contrast, both the screening and self-energy are very smooth
+along the imaginary axis. Also, please note that this is ** not ** an
+efficient grid for ** standard ** Contour Deformation calculations, where
+typically only a smaller range of frequencies near the origin is required. The
+maximum value needed along the real frequency axis is output in the logfile
+during Contour Deformation sigma calculations.
+
+
+
+
+## **gw_frqre_tangrid** 
+
+
+ Mnemonics: GW Contour Deformation FReQencies on REal axis - Use Tangent Grid  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+
+
+
+[[gw_frqre_tangrid]] defines a nonuniform grid to be used in frequency, with
+stepsize increasing proportional to tan(x). This makes the grid approximately
+linear to start with, with a rapid increase towards the end. Also, this is the
+grid which gives equal importance to each point used in the integration of a
+function which decays as 1/x^2. To be used in conjunction with [[nfreqre]],
+[[cd_max_freq]] and [[cd_halfway_freq]] which determine the parameters of the
+transformed grid.
+
+
+
+
+## **gw_invalid_freq** 
+
+
+ Mnemonics: GW treatment of INVALID FREQuency for Hybertsen-Louie PPM  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
+
+
+
+[[gw_invalid_freq]] sets the procedure to follow when a PPM frequency is
+invalid (negative or imaginary).
+
+  * [[gw_invalid_freq]]=0 : Drop them as proposed in Appendix B of PRB 34, 8, 5390, 1986. 
+  * [[gw_invalid_freq]]=1 : Set them to 1 hartree, as done for the PPM of Godby-Needs. 
+  * [[gw_invalid_freq]]=2 : Set them to infinity. 
+
+
+
+
+## **gw_nqlwl** 
+
+
+ Mnemonics: GW, Number of Q-points for the Long Wave-Length Limit  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] in [3,4,99]  
+
+
+
+Only relevant if [[optdriver]]=3,4,99 that is, screening, sigma or
+[[BETHE_SALPETER]] calculations, although the actual meaning of the variable
+depends on the particular run-level (see discussion below).
+
+[[gw_nqlwl]] defines the number of directions in reciprocal space used to
+describe the non-analytical behaviour of the heads (G = G'=0) and the wings
+(G=0 or G'=0) of the dielectric matrix in the optical limit (i.e. for q
+tending to zero). The number of directions is specified by the additional
+variable [[gw_qlwl]].
+
+When [[optdriver]]=3, [[gw_nqlwl]] and ** gw_qlwl ** define the set of "small"
+q that will be calculated and stored in the final SCR file. Therefore, the two
+variables can be used to analyze how the optical spectra depend on the
+direction of the incident phonon (useful especially in anisotropic systems).
+
+When [[optdriver]]=4, [[gw_nqlwl]] and ** gw_qlwl ** can be used to specify
+the heads and the wings to be used to perform the quadrature of the correlated
+part of the self-energy in the small region around the origin. (NB: not yet
+available, at present the quadrature is performed using a single direction in
+q-space)
+
+When [[optdriver]]=99, [[gw_nqlwl]] and ** gw_qlwl ** define the set of
+directions in q-space along which the macroscopic dielectric function is
+evaluated. By default the [[BETHE_SALPETER]] code calculates the macroscopic
+dielectric function using six different directions in q-space (the three basis
+vectors of the reciprocal lattice and the three Cartesian axis).
+
+
+
+
+## **gw_nstep** 
+
+
+ Mnemonics: GW Number of self-consistent STEPs  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 30  
+Only relevant if [[optdriver]]==8  
+
+
+
+Gives the maximum number of self-consistent [[GW]] cycles (or "iterations").
+in which G and/or W will be updated until the quasi-particle energies are
+converged within [[gw_toldfeig]]. [[gwcalctyp]] and [[gw_sctype]] are used to
+define the type of self-consistency.
+
+
+
+
+## **gw_qlwl** 
+
+
+ Mnemonics: GW, Q-points for the Long Wave-Length limit  
+Variable type: real  
+Dimensions: (3,[[gw_nqlwl]])  
+Default value: [1e-05, 2e-05, 3e-05]  
+Only relevant if [[optdriver]]==3  
+
+
+
+When [[optdriver]]=3, [[gw_qlwl]] defines the set of q-points around Gamma
+that are considered during the evaluation of the non-analytical behaviour of
+the dielectric matrix. Optical spectra (with and without non-local field
+effects) are evaluated for each direction specified by [[gw_qlwl]].
+
+
+
+
+## **gw_qprange** 
+
+
+ Mnemonics: GW QuasiParticle RANGE policy  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[gw_qprange]] is active only when [[nkptgw]] is equal to zero (default
+value). This variable simplifies the specification of the list of kpoints and
+of the bands to be used for the computation of the quasi-particle corrections.
+The possible values are:
+
+  * 0 =&gt; Compute the QP corrections only for the fundamental and the optical gap 
+  * +num =&gt; Compute the QP corrections for all the k-points in the irreducible zone. and include `num` bands above and below the Fermi level. 
+  * -num =&gt; Compute the QP corrections for all the k-points in the irreducible zone. Include all occupied states and `num` empty states. 
+
+The default value is 0 and is very handy for one-shot calculations. It is
+important to stress, however, that the position of the optical/fundamental
+gaps is deduced from the energies computed on the k-mesh used for the WFK
+file. Therefore the computed gaps might differ from the correct ones that can
+only be obtained with an appropriate sampling of the irreducible zone.
+Positive values are useful if we do not know the position of the [[GW]] HOMO,
+LOMO and we want to investigate the effect of the [[GW]] corrections on the
+states close to the gap Negative values are usually used for self-consistent
+calculations Note that, in the case of self-consistency or symsigma=1, the
+code might change the bands range so that all the degenerate states are
+included. Note also that [[kptgw]], and [[bdgw]] are ignored when this options
+is used. If you want to select manually the list of k-points and bands, you
+have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
+
+
+
+
+## **gw_sctype** 
+
+
+ Mnemonics: GW, Self-Consistency TYPE  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+This variable is used to partially define the kind of self-consistency for
+[[GW]] calculations. The other piece of information is given by [[gwcalctyp]]
+that defines the particular approximation for the self-energy operator as well
+as whether the wavefunctions have to replaced by quasi-particle amplitudes.
+
+If [[gw_sctype]] is specified in the input file, the code will perform an
+iterative update of the quantities entering the [[GW]] equations until the
+quasi-particle energies are converged within [[gw_toldfeig]]. The maximum
+number of iterations is specified by [[gw_nstep]]. Possible values are:
+
+  * 1 =&gt; standard one-shot method (one screening calculation followed by a single sigma run) 
+  * 2 =&gt; self-consistency only on W (iterative update of W followed by a sigma run in which G is approximated with the Kohn-Sham independent-particle Green's function G0) 
+  * 3 =&gt; self-consistency only of G (a single screening calculation to obtain the Kohn-Sham polarizability followed by an iterative update of the Green's functions in the self-energy) 
+  * 4 =&gt; fully self-consistent algorithm (iterative update of both G and W) 
+
+It is possible to initialize the self-consistent procedure by reading a
+previously calculated SCR or SUSC file via the variables [[getscr]] or
+[[getsuscep]], respectively. [[getqps]] can be used to read a previous QPS
+file thus initializing the Green functions to be used in the first self-
+consistent iteration.
+
+
+
+
+## **gw_sigxcore** 
+
+
+ Mnemonics: GW, SIGma (self-energy) for the CORE contribution  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4 and [[usepaw]]==1  
+
+
+
+Only available for PAW and relevant if [[optdriver]]=4 that is, sigma
+calculations.
+
+Theoretical introduction: [[GW]] calculations performed on top of electronic
+calculations relying when the frozen-core approximation is used to separate
+inner-core electrons from valence electrons, only the contribution to the
+self-energy arising from valence electrons is explicitly accounted for. In the
+standard approach based on pseudopotentials the contribution to the self-
+energy due to core electrons is approximated by means of the KS exchange-
+correlation potential generated by the core density. In the case of [[GW]]
+calculations employing the PAW method, the core contribution to the self-
+energy can be more accurately estimated in terms of the Fock operator
+generated by the core wavefunctions. In the simplest approach, the only
+ingredients required for this more refined treatment are the wave functions of
+the core electrons in the reference atomic configuration that are calculated
+during the generation of the PAW setup. This is a good approximation provided
+that the core wave functions are strictly localized inside the PAW spheres.
+
+[[gw_sigxcore]] defines the approximation used to evaluate the core
+contribution to sigma.
+
+  * [[gw_sigxcore]] = 0, standard approach, the core contribution is approximated with vxc. 
+  * [[gw_sigxcore]] = 1, the core term is approximated with the Fock operator inside the PAW spheres. 
+
+
+
+
+## **gw_toldfeig** 
+
+
+ Mnemonics: GW TOLerance on the DiFference of the EIGenvalues  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.1 eV  
+Only relevant if [[optdriver]]==8  
+
+
+
+Sets a tolerance for absolute differences of QP energies that will cause one
+self-consistent [[GW]] cycle to stop.  
+Can be specified in Ha (the default), Ry, eV or Kelvin, since ** toldfe ** has
+the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)  
+
+
+
+
+## **gwcalctyp** 
+
+
+ Mnemonics: GW CALCulation TYPe  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+[[gwcalctyp]] governs the choice between the different capabilities of the
+[[GW]] code.
+
+  * 0 &lt;= [[gwcalctyp]] &lt;= 9 : standard "1 shot" quasiparticle method 
+  * 10 &lt;= [[gwcalctyp]] &lt;= 19 : self-consistent quasiparticle method on energies only 
+  * 20 &lt;= [[gwcalctyp]] &lt;= 29 : self-consistent quasiparticle method on energies and wavefunctions 
+
+  * [[gwcalctyp]] = 0, 10, or 20 : standard Plasmon-Pole model [[GW]] calculation 
+  * [[gwcalctyp]] = 1 : [[GW]] calculation where the self-energy along the real axis is obtained by performing the analytic continuation from the imaginary axis to the full complex plane via the Pade approximant. Only available for standard "1 shot" quasiparticle method. 
+  * [[gwcalctyp]] = 2, 12, or 22 : [[GW]] calculation using numerical integration (contour deformation method, see e.g. S. Lebegue _ et al. _ PRB ** 67 ** , 155208 (2003).) 
+  * [[gwcalctyp]] = 5, 15, or 25 : Hartree-Fock calculation 
+  * [[gwcalctyp]] = 6, 16, or 26 : Screened Exchange calculation 
+  * [[gwcalctyp]] = 7, 17, or 27 : COHSEX calculation 
+  * [[gwcalctyp]] = 8, 18, or 28 : model [[GW]] calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using a Plasmon-Pole model 
+  * [[gwcalctyp]] = 9, 19, or 29 : model [[GW]] calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using numerical integration (contour deformation method) 
+
+Also
+
+  * [[gwcalctyp]] = 105,125 : HSE06 calculations (1-shot and self-consistent) 
+  * [[gwcalctyp]] = 205,225 : PBE0 calculations (1-shot and self-consistent) 
+  * [[gwcalctyp]] = 305,325 : B3LYP calculations (1-shot and self-consistent) 
+
+
+
+
+## **gwcomp** 
+
+
+ Mnemonics: GW COMPleteness  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+[[gwcomp]] governs the use of an extrapolar approximation. If [[gwcomp]]==1,
+one improves the completeness in a truncated sum over states. In practice,
+this permits one to reduce quite much the number of bands required in the
+calculation of the screening or of the self-energy. The energy parameter
+needed in the extrapolar approximation is set by [[gwencomp]]. See F.
+Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of the
+methodology.
+
+
+
+
+## **gwencomp** 
+
+
+ Mnemonics: GW ENergy for COMPleteness  
+Variable type: real  
+Dimensions: scalar  
+Default value: 2.0  
+Only relevant if [[optdriver]] in [3,4] and [[gwcomp]]==1  
+
+
+
+[[gwencomp]] sets the energy parameter used in the extrapolar approximation
+used to improve completeness and make the convergence against the number of
+bands much faster.
+
+See F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of
+the methodology.
+
+
+
+
+## **gwfockmix** 
+
+
+ Mnemonics: GW FOCK exchange MIXing parameter  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.25  
+Only relevant if [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
+
+
+
+Mixing parameter of Fock exchange for PBE0 and HSE hybrid-functional
+calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
+(essentially PBE) to 1.
+
+
+
+
+## **gwgamma** 
+
+
+ Mnemonics: GW GAMMA  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]=3 or 4 (Sigma calculations)  
+
+
+
+If [[gwgamma]] is 1, the vertex correction will be included leading to what is
+known as "[[GW]]Gamma" approximation. see R. Del Sole, L. Reining, and R. W.
+Godby, Phys. Rev. B 49, 8024 (1994). Note that, in order to include the vertex
+correction in W, one has to start the sigma calculation from the
+susceptibility file_SUSC instead of the _SCR file (see [[getsuscep]]   and
+[[irdsuscep]]  ) Not available for PAW calculations.
+
+[[gwgamma]]=-4 activates the bootstrap kernel of Sharma et al. [Phys. Rev.
+Lett. 107, 186401 (2011)] in the test-charge-test-charge dielectric function
+[cf. Chen and Pasquarello, Phys. Rev. B 92, 041115(R) (2015)]. A cheaper one-
+shot variant can be achieved with [[gwgamma]]=-6 using only the head of the
+kernel.
+
+[[gwgamma]]=-8 uses the RPA bootstrap-like kernel (one-shot) [Phys. Rev. Lett.
+115, 137402 (2015), ibid. 114, 146402 (2015)].
+
+
+
+
+## **gwls_band_index** 
+
+
+ Mnemonics: GWLS BAND INDEX  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==66  
+
+
+
+Governs the DFT eigenstate |e> in which the self-energy will be evaluated, as
+shown in eq. (7) of Phys. Rev. B 91, 125120 (2015). That is, it is the state
+to be corrected in the G0W0 scheme.
+
+
+
+
+## **gwls_correlation** 
+
+
+ Mnemonics: GWLS CORRELATION  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 3  
+Only relevant if [[optdriver]]==66  
+
+
+
+Governs the use of a dielectric model (as explained in section V of Phys. Rev.
+B 91, 125120 (2015). and the use of the Lanczos scheme to solve eqs. (30) and
+(35) of the same reference at all external [[gw_freqsp]] and integration (as
+generated from [[gwls_npt_gauss_quad]]) frequencies. The different choices
+are:
+
+  * [[gwls_correlation]] == 1 : GWLS calculation WITH the dielectric model and WITHOUT the shift Lanczos technique, 
+  * [[gwls_correlation]] == 2 : GWLS calculation WITHOUT the dielectric model and WITHOUT the shift Lanczos technique, 
+  * [[gwls_correlation]] == 3 : GWLS calculation WITH the dielectric model and WITH the shift Lanczos technique, 
+  * [[gwls_correlation]] == 4 : GWLS calculation WITHOUT the dielectric model and WITH the shift Lanczos technique, 
+  * [[gwls_correlation]] == 5 : Not a GWLS calculation; just calculate and print the eigenvalues of the (static) dielectric matrix (for debugging purposes). 
+
+The default, ([[gwls_correlation]] == 3), is the most performant option and
+should be kept by the user. Option 1, 2 and 5 are deprecated and will be
+removed.
+
+
+
+
+## **gwls_dielectric_model** 
+
+
+ Mnemonics: GWLS dielectric model  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 2  
+Only relevant if [[optdriver]]==66  
+
+
+
+Not used yet.
+
+
+
+
+## **gwls_exchange** 
+
+
+ Mnemonics: GWLS exact EXCHANGE  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==66  
+
+
+
+Governs whether the exact exchange for the state to be corrected
+([[gwls_band_index]]) is calculated ([[gwls_exchange]]==1) or not
+([[gwls_exchange]]==0).
+
+
+
+
+## **gwls_first_seed** 
+
+
+ Mnemonics: GWLS FIRST SEED vector  
+Variable type: integer  
+Dimensions: scalar  
+Default value: [[gwls_band_index]]  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable sets the band index to be used to generate the first seed vector
+to be used in the construction of the Lanczos basis for the (static)
+dielectric matrix in a GWLS calculation. See section IV of Phys. Rev. B 91,
+125120 (2015). Together with [[gwls_nseeds]], defines the seeds for the
+Lanczos procedure. That is, the states associated to band index
+[[gwls_first_seed]] to [[gwls_first_seed]]+[[gwls_nseeds]]-1 are used to
+generate the seed vectors.
+
+The default [[gwls_first_seed]]==[[gwls_band_index]] and [[gwls_nseeds]]==1
+has been touroughly tested and seems to be the most performant. Users should
+therefore keep the default value.
+
+
+
+
+## **gwls_kmax_analytic** 
+
+
+ Mnemonics: GWLS KMAX for the ANALYTIC term  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 8  
+Only relevant if [[optdriver]]==66  
+
+
+
+Governs the number of iterations to be done in the shift Lanczos solution of
+eq. (35) of Phys. Rev. B 91, 125120 (2015) to solve it at all external
+frequencies requested by the user ([[gw_freqsp]]). The default value is
+converged to a few 10s of meV for all molecules studied so far.
+
+
+
+
+## **gwls_kmax_complement** 
+
+
+ Mnemonics: GWLS KMAX for the COMPLEMENT space.  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==66  
+
+
+
+The G0W0 formalism involves the calculation of a summation conceptually linked
+to the trace of the dielectric matrix (see eq. (38) of Phys. Rev. B 91, 125120
+(2015). Since the eigenvalues spectrum of the dielectric matrix of formed by a
+few large discrete eigenvalues and an integrable divergence in the density of
+eigenvalues around 0, it is expensive to sample accurately this divergence
+using the exact dielectric operator. It this becomes interesting to calculate
+the 'trace' of the 'exact - model' dielectric matrix in a small basis and add
+it to the 'trace' of the 'model' dielectric matrix obtained in a large bais.
+In the context where the model dielectric matrix is used in the calculations,
+[[gwls_sternheimer_kmax]] determines the size of the 'small' basis and
+[[gwls_kmax_complement]] determines the size of the 'large' basis.
+
+For more information on the exact role of these bases and on the model
+dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
+
+
+
+
+## **gwls_kmax_numeric** 
+
+
+ Mnemonics: GWLS KMAX for the NUMERIC term  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 16  
+Only relevant if [[optdriver]]==66  
+
+
+
+Governs the number of iterations to be done in the shift Lanczos solution of
+eq. (30) of Phys. Rev. B 91, 125120 (2015) to solve it simultaneously at all
+integration frequencies (generated automatically by the number of points
+[[gwls_npt_gauss_quad]] to use in the gaussian quadrature) and all external
+frequencies requested by the user ([[gw_freqsp]]). The default value is
+converged to a few 10s of meV for all molecules studied so far.
+
+
+
+
+## **gwls_kmax_poles** 
+
+
+ Mnemonics: GWLS KMAX for the calculation of the POLES residue  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 4  
+Only relevant if [[optdriver]]==66  
+
+
+
+The contour deformation technique, in the G0W0 context, will involve the
+calculation of pole residues associated to states lying between the one
+corrected ([[gwls_band_index]]) and the fermi level. These residues take the
+form of a matrix element of the inverse dielectric matrix at a real frequency
+(see eq. (11) of Phys. Rev. B 91, 125120 (2015)). Therefore, the dielectric
+matrix must be constructed in some basis at these frequencies and inverted to
+calculate the matrix element. The present input variable sets the size of the
+Lanczos basis to be constructed for this purpose. The default value has proven
+to be very robust for many molecular systems and should therefore be left to
+the default value by the user.
+
+For more information on the Lanczos basis constructed for the calculation of
+the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
+
+
+
+
+## **gwls_list_proj_freq** 
+
+
+ Mnemonics: GWLS LIST of the PROJection FREQuencies  
+Variable type: real  
+Dimensions: ([[gwls_n_proj_freq]])  
+Default value: *0.0  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable sets the frequencies to be used to construct the basis in which
+the Hamiltonian is projected to accelerate the solution of the Sternheimer
+equations involved by the construction of the dielectric matrix at finite
+frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
+since the frequencies \Infty and (if [[gwls_recycle]]>0) 0.0 are used at no
+computational cost, [[gwls_n_proj_freq]]==0 (which means no ADDITIONAL
+frequency is to be used) is fine and no frequencies need to be picked up.
+
+
+
+
+## **gwls_model_parameter** 
+
+
+ Mnemonics: GWLS MODEL PARAMETER  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1.0  
+Only relevant if [[optdriver]]==66  
+
+
+
+This is the width of the lorentzian, in Ha, used to model the frequency
+dependence of the dielectric matrix in the GWLS calculation (see eqs. (12),
+(13), (14), (15), (16) and (34) of Phys. Rev. B 91, 125120 (2015)). More
+precisely, this parameter is the value of \alpha used in eq. (34). This model
+is then used to separate the integration over frequencies into a 'model' part
+(second term of eq. (12)) and a 'exact - model' part (first term of eq. (12)).
+Since the 'model' part can be integrated analytically (see eqs. (15), (16) and
+(34)), only the the 'exact - model' part needs to be integrated numerically.
+
+The only effect of this model is therefore to alleviate the numerical cost of
+the integration over frequencies in the G0W0 calculation. The value of the
+associated parameter has thus an impact on the convergence rate of the GWLS
+calculation with respect to the number of frequencies of integration
+([[gwls_npt_gauss_quad]]), but no impact on the converged result of the GWLS
+calculation. Typically, the default ([[gwls_model_parameter]]==1.0) is
+optimal.
+
+
+
+
+## **gwls_n_proj_freq** 
+
+
+ Mnemonics: GWLS Number of PROJection FREQuencies  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable sets the number of frequencies, on top of \Infty and (if
+[[gwls_recycle]]>0) 0.0, to be used for the construction of the basis in which
+the hamiltonian is projected to accelerate the solution of the Sternheimer
+equations involved in the construction of the dielectric matrix at finite
+frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
+the default ([[gwls_n_proj_freq]]==0) is fine.
+
+
+
+
+## **gwls_npt_gauss_quad** 
+
+
+ Mnemonics: GWLS Number of PoinTs to use for the GAUSSian QUADrature   
+Variable type: integer  
+Dimensions: scalar  
+Default value: 10  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable defines the number of points used for the numerical integration
+of the self-energy over frequencies in GWLS computations (see eq. (12) of
+Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
+
+
+
+
+## **gwls_nseeds** 
+
+
+ Mnemonics: GWLS Number of SEED vectorS  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable sets the number of seed vectors to be used in the construction
+of the Lanczos basis for the (static) dielectric matrix in a GWLS calculation.
+See section IV of Phys. Rev. B 91, 125120 (2015). Only [[gwls_nseeds]]==1 has
+been tested for now and users should keep this value.
+
+
+
+
+## **gwls_print_debug** 
+
+
+ Mnemonics: GWLS PRINT level for DEBUGging  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==66  
+
+
+
+Influences the level of verbosity for debugging purposes in a GWLS
+calculation. Users should keep its value at the default.
+
+
+
+
+## **gwls_recycle** 
+
+
+ Mnemonics: GWLS RECYCLE  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 2  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable let the user choose if and how he wants to recycle the solutions
+of the Sternheimer equations involved in the construction of the static
+dielectric matrix.
+
+  * [[gwls_recycle]]==0 : No recycling of the solutions 
+  * [[gwls_recycle]]==1 : Recycle the solutions. To do so, store them in RAM. 
+  * [[gwls_recycle]]==2 : Recycle the solutions. To do so, store them on disk. 
+
+If the user choose to recycle the solutions, they are used to construct the
+basis in which the hamiltonian is projected for the solution of the
+Sternheimer equations involved by the calculation of the dielectric matrix at
+finite frequencies. The other solutions used will be those at \omega \to
+\Infty (alwyas used) and those at \omega=[[gwls_list_proj_freq]]. For more
+information of the basis constructed, see section IV of Phys. Rev. B 91,
+125120 (2015).
+
+It is important to note that the solutions rapidly take much space to store.
+Therefore, it is often not possible to store them in RAM in production
+calculations, yet still desirable to retain them. This is when it becomes
+interesting to store them on disk. It is particularly efficient to choose the
+path of the file to be on disk space local to the processor in large MPI
+calculations, since each processor need only his own solutions in the
+construction of the basis.
+
+
+
+
+## **gwls_second_model_parameter** 
+
+
+ Mnemonics: GWLS SECOND MODEL PARAMETER  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==66  
+
+
+
+Not used yet.
+
+
+
+
+## **gwls_sternheimer_kmax** 
+
+
+ Mnemonics: GWLS Kmax  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==66  
+
+
+
+This variable sets the dimension of the dielectric matrix used in a GWLS
+calculation (see section IV of Phys. Rev. B 91, 125120 (2015)). Typically
+converged at a value of a few hundreds to a few thousands for a convergence
+criterion of 50meV on the eigenenergies.
+
+
+
+
+## **gwmem** 
+
+
+ Mnemonics: GW MEMory  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 11  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+[[gwmem]] governs the memory strategy during a screening and/or a sigma run.
+
+  * [[gwmem]] = 1x , the screening matrix are read for all q-vectors and stored in the memory. 
+  * [[gwmem]] = 0x , the screening matrix are read just a q-vector after another.   
+
+  * [[gwmem]] = x1 , the real-space wavefunctions are stored in the memory. 
+  * [[gwmem]] = x0 , the real-space wavefunctions are not stored, but rather recalculated on-fly each abinit needs them using FFTs. 
+
+The default is [[gwmem]] = 11, which is the fastest, but also the most memory
+consuming. When experiencing memory shortage, one should try [[gwmem]] = 0.
+The first digit is only meaningful when performing sigma calculations.
+
+
+
+
+## **gwrpacorr** 
+
+
+ Mnemonics: GW RPA CORRelation energy  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
+
+
+
+[[gwrpacorr]] governs the calculation of the RPA correlation energy.
+
+  * [[gwrpacorr]] = 0, no RPA correlation energy is calculated 
+  * [[gwrpacorr]] = 1, the RPA correlation energy is calculated using an exact integration over the coupling constant: it requires one diagonalization of the polarizability matrix 
+  * [[gwrpacorr]] = _ n _ &gt; 1, the RPA correlation energy is calculated using _ n _ values for the coupling constant: it requires _ n _ inversions of the polarizability matrix 
+
+
+
+
+## **icutcoul** 
+
+
+ Mnemonics: Integer that governs the CUT-off for COULomb interaction  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 6  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+Many-body calculations for isolated systems present a slow convergence with
+respect to the size of the supercell due to the long ranged Coulomb
+interaction and the high degree of non-locality of the operators involved. A
+similar issue also occurs in fully periodic systems due to the presence of the
+integrable Coulomb singularity at G=0 that hinders the convergence with
+respect to the number of q-points used to sample the Brillouin zone. The
+convergence can be accelerated by replacing the true bare Coulomb interaction
+with other expressions.
+
+[[icutcoul]] defines the particular expression to be used for the Coulomb term
+in reciprocal space. The choice of [[icutcoul]] depends on the dimensionality
+of the system. Possible values of [[icutcoul]] are from 0 to 6. The
+corresponding influential variables are [[vcutgeo]] and [[rcut]].
+
+  * 0 =&gt; sphere (molecules but also 3D-crystals) 
+  * 1 =&gt; cylinder (nanowires, nanotubes) 
+  * 2 =&gt; surface 
+  * 3 =&gt; 3D crystal (no cut-off, integration in a spherical mini-Brillouin Zone, legacy value) 
+  * 4 =&gt; ERF, long-range only Coulomb interaction 
+  * 5 =&gt; ERFC, short-range only Coulomb interaction (e.g. as used in the HSE functional) 
+  * 6 =&gt; auxiliary function integration for 3D systems from P. Carrier _ et al. _ , PRB ** 75 ** ,205126 (2007). 
+  * 7 =&gt; auxiliary function for 3D systems of Gygi and Baldereschi [cf. Phys. Rev. B **34**, 4405 (1986) and Massidda et al., ibid. **48**, 5058 (1993)]. 
+
+Note that Spencer and Alavi PRB **77**, 193110 (2008) showed that the
+spherical cutoff can efficiently be used also for 3D systems. In the latter
+case, use a negative value for the cutoff radius of the sphere
+([[rcut]]&lt;0), which is automatically calculated so that the volume enclosed
+in the sphere is equal to the volume of the solid.
+
+
+
+
+## **inclvkb** 
+
+
+ Mnemonics: INCLude VKB  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 2  
+Only relevant if [[optdriver]] in [3,99]  
+
+
+
+Possible values of [[inclvkb]] are 0,1,2. If [[inclvkb]] is 1 or 2, the
+commutator of the non-local part of the pseudopotential with the position
+operator is correctly included in the q =&gt; 0 contribution. This is
+unfortunately time-consuming and in particular when the old algorithm
+implemented by inclvkb==1 is used (inclvkb=2 is the recommended option). When
+[[inclvkb]] is 0, this contribution is incorrectly omitted, but the
+computation is much faster.
+
+The importance of this contribution depends on the number of k points. Turning
+off [[inclvkb]] is let to the choice of the user.
+
+In general, the use of [[inclvkb]]=0 is fine for [[GW]] calculations in
+crystalline systems provided that the k-point sampling is sufficiently
+converged.
+
+The use of [[inclvkb]]=2 is strongly recommended for the calculation of
+optical properties.
+
+
+
+
+## **kptgw** 
+
+
+ Mnemonics: K-PoinTs for GW calculations  
+Variable type: real  
+Dimensions: (3,[[nkptgw]])  
+Default value: *0.0  
+Only relevant if [[optdriver]]==4  
+
+
+
+For each k-point with number igwpt in the range (1:[[nkptgw]]),
+[[kptgw]](1,igwpt) is the reduced coordinate of the k-point where [[GW]]
+corrections are required. while [[bdgw]] (1:2,igwpt) specifies the range of
+bands to be considered.
+
+At present, not all k-points are possible. Only those corresponding to the
+k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
+[[ngkpt]] ) than the GS one, but WITHOUT any shift, are allowed.
+
+
+
+
+## **mbpt_sciss** 
+
+
+ Mnemonics: Many Body Perturbation Theory SCISSor operator  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]] in [3,4,99]  
+
+
+
+The Scissors operator energy added to the conductions states. In some cases,
+it mimics a second iteration self-consistent [[GW]] calculation.
+
+
+
+
+## **mdf_epsinf** 
+
+
+ Mnemonics: Model Dielectric Function, EPSilon INFinity  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
+
+
+
+[[mdf_epsinf]] specifies the value of the macroscopic dielectric function used
+to model the screening function (see Solid State Commun. **84**, 765 (1992)).
+The proper spatial symmetry of the screening W(r,r_prime) is enforced using
+Eq. (7) of Phys. Rev. B **37**, (1988)  
+
+
+
+
+## **nbandkss** 
+
+
+ Mnemonics: Number of BANDs in the KSS file  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+This input variable is used for the preparation of a [[GW]] calculation : it
+is used in a GS run (where [[optdriver]]=0) to generate a _KSS file. In this
+run, [[nbandkss]] should be non-zero. The generated _KSS file can be
+subsequently used to calculate the irreducible polarizabilty $\chi^{(0)}_{KS}$
+using [[optdriver]]=3 or to calculate [[GW]] corrections setting
+[[optdriver]]=4.
+
+  * If [[nbandkss]]=0, no _KSS file is created 
+  * If [[nbandkss]]=-1, all the available eigenstates (energies and eigenfunctions) are stored in the abo_KSS file at the end of the ground state calculation. The number of states is forced to be the same for all k-points : it will be the minimum of the number of plane waves over all k-points. 
+  * If [[nbandkss]] is greater than 0, abinit stores (about) [[nbandkss]] eigenstates in the abo_KSS file. This number of states is forced to be the same for all k-points. 
+
+See [[npwkss]] for the selection of the number of the planewave components of
+the eigenstates to be stored.  
+The input variable [[iomode]] can be used to read and write KSS files
+according to different fileformat (presently only [[iomode]]=0 and 3 are
+available in the [[GW]] part).  
+The precision of the KSS file can be tuned through the input variable
+[[kssform]].  
+For more details about the format of the abo_KSS file, see the routine
+outkss.F90.
+
+Very important : for the time being, [[istwfk]] must be 1 for all the k-points
+in order to generate a _KSS file.
+
+
+
+
+## **nfreqim** 
+
+
+ Mnemonics: Number of FREQuencies along the IMaginary axis  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
+
+
+
+[[nfreqim]] sets the number of pure imaginary frequencies used to calculate
+the dielectric matrix in order to perform the numerical integration of the
+[[GW]] self-energy.
+
+
+
+
+## **nfreqmidm** 
+
+
+ Mnemonics: Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix  
+Variable type: integer  
+Dimensions: scalar  
+Default value: None  
+Only relevant if [[optdriver]]==4  
+
+
+
+depending on the value of [[nfreqmidm]] will calculate the frequency moment of
+the Dielectric matrix or its inverse,
+
+  * if [[nfreqmidm]] is positive : calculate (nth=[[nfreqmidm]]) frequency moment of the Dielectric matrix
+  * if [[nfreqmidm]] is negative : calculate (nth=[[nfreqmidm]]) frequency moment of the inverse Dielectric matrix
+  * if [[nfreqmidm]] = 0 : calculate first frequency moment of the full polarizability
+
+see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
+
+
+
+
+## **nfreqre** 
+
+
+ Mnemonics: Number of FREQuencies along the REal axis  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
+
+
+
+[[nfreqre]] sets the number of real frequencies used to calculate the
+dielectric matrix in order to perform the numerical integration of the [[GW]]
+self-energy.
+
+It can be used also in case of [[GW]] calculations with plasmon-pole models, _
+i.e _ [[gwcalctyp]]&lt;10, to reduce the number of frequencies used to
+evaluate the dielectric matrix from the (default) two to one frequency
+(omega=0) by setting [[nfreqre]]=1. This might be a good idea in case one is
+planning to use ppmodel&gt;1\. This will force the calculation of the
+screening on a single frequency (omega=0) and hence reduce memory and disk
+space requirement. The only draw back is that the user will not be able to
+perform self energy calculation using [[ppmodel]]=1, since in the last case
+the dielectric matrix calculated on two frequencies is required. If the user
+is not sure which ppmodel to use, then s/he is not advised to use this input
+variable. Using the default values, one must be able to get a screening file
+that can be used with any ppmodel.
+
+
+
+
+## **nfreqsp** 
+
+
+ Mnemonics: Number of FREQuencies for the SPectral function  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[nfreqsp]] defines the number of real frequencies used to calculate the
+spectral function of the [[GW]] Green's function.
+
+
+
+
+## **nkptgw** 
+
+
+ Mnemonics: Number of K-PoinTs for GW corrections  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4  
+
+
+
+[[nkptgw]] gives the number of k-points for which the [[GW]] calculation must
+be done. It is used to dimension [[kptgw]]
+
+
+
+
+## **nomegasf** 
+
+
+ Mnemonics: Number of OMEGA to evaluate the Spectral Function  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3 and [[spmeth]]!=0  
+
+
+
+[[nomegasf]] defines the number of real frequencies used to describe the
+spectral function associated to the irreducible polarizability
+$\chi^{(0)}_{KS}$. The frequency mesh will cover the interval between 0 and
+the maximum (positive) transition energy between occupied and empty states.
+The delta function entering the expression defining the spectral function is
+approximated using two different methods according to the value of the
+[[spmeth]] input variable.
+
+It is important to notice that an accurate description of the imaginary part
+of $\chi^{(0)}_{KS}$ requires an extremely dense frequency mesh. It should be
+kept in mind, however, that the memory required grows fast with the value of
+[[nomegasf]].
+
+
+
+
+## **nomegasi** 
+
+
+ Mnemonics: Number of OMEGA(S) along the Imaginary axis  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 12  
+Only relevant if [[optdriver]]==4 and [[gwcalctyp]]==1  
+
+
+
+[[nomegasi]] defines the number of frequency points used to sample the self-
+energy along the imaginary axis. The frequency mesh is linear and covers the
+interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
+
+
+
+
+## **nomegasrd** 
+
+
+ Mnemonics: Number of OMEGA to evaluate the Sigma Real axis Derivative  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 9  
+Only relevant if [[optdriver]]==4  
+
+
+
+The number of real frequencies around the KS energy where the self-energy
+Sigma is evaluated. From these values, the derivative of Sigma at the KS
+energy is numerically estimated through linear interpolation.
+
+
+
+
+## **npvel** 
+
+
+ Mnemonics: Number of Particle VELocities  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3  
+
+
+
+In the context of the electronic stopping power of impinging ion in matter,
+[[npvel]] sets the number of the ion velocities to be calculated via linear
+response.  
+When [[npvel]]=0, no stopping power calculation is performed.  
+The direction and the velocity maximum are set with the input variable
+[[pvelmax]]. Note that the results are output for a Z=1 impinging ion, i.e. a
+proton.
+
+
+
+
+## **npwkss** 
+
+
+ Mnemonics: Number of PlaneWaves in the KSS file  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+
+
+
+This input variable is used for the preparation of a [[GW]] calculation: the
+GS run (where [[optdriver]]=1 and ** nbandkss ** /=0) should be followed with
+a run where [[optdriver]]=3. Also, if [[nbandkss]]=0, no use of [[npwkss]].
+
+[[npwkss]] defines the number of planewave components of the Kohn-Sham states
+to build the Hamiltonian, in the routine outkss.F90, and so, the size of the
+matrix, the size of eigenvectors, and the number of available states, to be
+stored in the abo_KSS file. If it is set to 0, then, the planewave basis set
+defined by the usual Ground State input variable [[ecut]] is used to generate
+the superset of all planewaves used for all k-points. Note that this (large)
+planewave basis is the same for all k-points.
+
+Very important : for the time being, [[istwfk]] must be 1 for all the
+k-points.
+
+
+
+
+## **nqptdm** 
+
+
+ Mnemonics: Number of Q-PoinTs for the Dielectric Matrix  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==3  
+
+
+
+If [[nqptdm]] is equal to 0, the set of q-points for computing the dielectric
+matrix is determined automatically considering all the possible differences
+between the k-points contained in the _KSS file. When [[nqptdm]] is non-zero,
+the list of q points is read from [[qptdm]]. This allows one to split the big
+calculation of all the dielectric matrices into smaller calculations that can
+be performed independently. The _SCR files generated in different runs can be
+merged thanks to the ** Mrgscr ** utility. If [[nqptdm]] is equal to -1, the
+code reports the list of q-points in the log file (YAML format) and then
+stops.
+
+
+
+
+## **omegasimax** 
+
+
+ Mnemonics: OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value  
+Variable type: real  
+Dimensions: scalar  
+Default value: 50 eV  
+Only relevant if [[optdriver]]==4 and [[gwcalctyp]]==1  
+
+
+
+[[omegasimax]] defines the maximum frequency along the imaginary the axis. In
+conjunction with [[nomegasi]], [[omegasimax]] uniquely defines the linear mesh
+employed to sample the self-energy along the imaginary axis.
+
+
+
+
+## **omegasrdmax** 
+
+
+ Mnemonics: OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1.0 eV  
+Only relevant if [[optdriver]]==4  
+
+
+
+The maximum distance from the KS energy where to evaluate Sigma. Sigma is
+evaluated at [KS_energy - [[omegasrdmax]], KS_energy + [[omegasrdmax]]]
+sampled [[nomegasrd]] times.
+
+
+
+
+## **ppmfrq** 
+
+
+ Mnemonics: Plasmon Pole Model FReQuency  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0 Ha  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+** In plasmon-pole calculations **
+
+Usually only effective if [[GW]] corrections are evaluated using the plasmon-
+pole model of Godby-Needs ([[ppmodel]]==1).  
+  
+In the present status of the [[GW]] code, the convolution in frequency space
+defining the self-energy operator can be evaluated using two different
+approaches: numerical integration and plasmon-pole models.  
+Methods based on the numerical integration (contour deformation, analytic
+continuation) require the knowledge of the screened interaction for several
+frequencies. These approaches give the most accurate results but at the price
+of an increase in the CPU time required.  
+Alternatively, it is possible to approximate the dynamical behaviour of the
+screened interaction through simple analytical expressions, the so-called
+plasmon-pole models. In the plasmon-pole model proposed by Godby-Needs
+([[ppmodel]]=1), the screening must be available at zero frequency, as well as
+at another imaginary frequency, of the order of the plasmon frequency (the
+peak in the EELS spectrum). This information is used to model the behaviour of
+the dielectric matrix for all frequencies. During the calculation of the
+screening, [[ppmfrq]] defines the imaginary frequency where the dielectric
+matrix is evaluated, in addition to the zero frequency. During the self-energy
+run, [[ppmfrq]] can be used to define the second frequency to be used to
+calculate the plasmon-pole parameters. This is particularly useful when the
+SCR file contains several frequencies along the imaginary axis. In this case
+the frequency whose value is the closest one to [[ppmfrq]] will be selected.
+Note that, if the plasmon-pole approximation is good, then, the choice of
+[[ppmfrq]] should have no influence on the final result. One should check
+whether this is the case. In general, the plasmon frequencies of bulk solids
+are of the order of 0.5 Hartree.  
+  
+** In Contour Deformation calculations **
+
+[[ppmfrq]] is here used to ** override ** the default value calculated from
+the average electronic density per unit cell. This can affect the distribution
+of gridpoints along the imaginary and real frequency axes. See
+[[cd_frqim_method]], [[gw_frqim_inzgrid]] and [[gw_frqre_inzgrid]] for more
+details.
+
+
+
+
+## **ppmodel** 
+
+
+ Mnemonics: Plasmon Pole MODEL  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] in [3,4]  
+
+
+
+  * [[ppmodel]]=1 : PP model of Godby and Needs, See Phys Rev Lett 62, 1169 (1989) 
+  * [[ppmodel]]=2 : PP model of Hybertsen and Louie, See Phys Rev B 34, 5390 (1986) 
+  * [[ppmodel]]=3 : PP model of W. von der Linden and P. Horsh see Phys Rev B 37, 8351 (1988) 
+  * [[ppmodel]]=4 : PP model of Farid and Engel. See Phys Rev B47,15931 (1993) 
+  * [[ppmodel]]=0 : no PP model, numerical integration (contour deformation method, see e.g. S. Lebegue et al. PRB 67, 155208 (2003).) 
+
+Please note the difference between [[ppmodel]] 1 and [[ppmodel]] 2,3,4. In the
+first case ([[ppmodel]]=1), the plasmon-pole parameters are determined in
+order to reproduce the behaviour of the dielectric matrix at two calculated
+frequencies: the static limit (omega=0) and the imaginary frequency defined by
+[[ppmfrq]]. In the last three cases, instead, the plasmon-pole parameters are
+found by using the dielectric matrix calculated only at omega=0 and enforcing
+the so-called f-sum rule. See also [[nfreqre]].
+
+Please note also that in the case of [[ppmodel]] 4, the plasmon energies are
+not simple mathematical parameters, but rather have a physical meaning (at
+least the lowest ones). Thus the calculated plasmon band structure (plasmon
+energy vs q vector) is reported in the output file for the lowest 10 bands.
+
+
+
+
+## **pvelmax** 
+
+
+ Mnemonics: Particle VELocity MAXimum  
+Variable type: real  
+Dimensions: (3)  
+Default value: 3*1.0  
+Only relevant if [[optdriver]]==3  
+
+
+
+When [[npvel]] is larger than 0, it performs electronic stopping power
+calculations on a velocity grid along the direction determined by [[pvelmax]].  
+The vector [[pvelmax]] defines both the direction and the maximum velocity.
+[[pvelmax]] is input in Cartesian coordinates.
+
+
+
+
+## **qptdm** 
+
+
+ Mnemonics: Q-PoinTs for the Dielectric Matrix  
+Variable type: real  
+Dimensions: (3,[[nqptdm]])  
+Default value: *0.0  
+Only relevant if [[optdriver]]==3 and [[nqptdm]]!=0  
+
+
+
+[[qptdm]] contains the set of q-points used in the screening part of ABINIT,
+instead of the automatic generation of the q points when [[nqptdm]]=0. These q
+points are given in terms of reciprocal space primitive translations (NOT in
+cartesian coordinates!). For further explanation, see the input variable
+[[nqptdm]].
+
+
+
+
+## **rcut** 
+
+
+ Mnemonics: Radius of the CUT-off for coulomb interaction  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+
+
+
+Truncation of the Coulomb interaction in real space. The meaning of [[rcut]]
+is governed by the cutoff shape option [[icutcoul]].
+
+If [[rcut]] is negative, the cutoff is automatically calculated so to enclose
+the same volume inside the cutoff as the volume of the primitive cell.
+
+
+
+
+## **rhoqpmix** 
+
+
+ Mnemonics: RHO QuasiParticle MIXing  
+Variable type: real  
+Dimensions: scalar  
+Default value: 1.0  
+
+
+
+For self-consistent [[GW]] runs, [[rhoqpmix]] sets the mixing coefficient
+between the new and the previous electronic densities. This mixing damps the
+spurious oscillations in the Hartree potential when achieving self-
+consistency. [[rhoqpmix]] is meaningful only when doing self-consistency on
+the wavefunctions with [[gwcalctyp]] &gt;= 20\.
+
+
+
+
+## **spbroad** 
+
+
+ Mnemonics: SPectral BROADening  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0  
+Only relevant if [[optdriver]]==3 and [[spmeth]]==2  
+
+
+
+When a screening calculation ([[optdriver]]==3) uses a spectral representation
+of the irreducible polarizability in which the delta function is replaced by
+the gaussian approximant ([[spmeth]]==2), the standard deviation of the
+gaussian is given by [[spbroad]].
+
+
+
+
+## **spmeth** 
+
+
+ Mnemonics: SPectral METHod  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4  
+
+
+
+The [[spmeth]] input variable defines the method used to calculate the
+irreducible polarizability $\chi^{(0)}_{KS}$.
+
+By default $\chi^{(0)}_{KS}$ is calculated employing the Adler-Wiser
+expression ([[spmeth]]=0) with a CPU effort that scales linearly with the
+number of frequencies. This approach is convenient when few frequencies are
+required, and is usually used in conjunction with plasmon-pole models in which
+only one or two frequencies are calculated, according to the value of
+[[ppmodel]].  
+Unfortunately a calculation based on the Adler-Wiser expression might be quite
+CPU demanding if the matrix elements of the self-energy operator are evaluated
+by performing numerically the convolution defining the self-energy. The
+integrand function, indeed, has poles above and below the real axis, and the
+screened interaction has to be evaluated on a dense frequency mesh in order to
+obtain accurate results.
+
+In the spectral method ([[spmeth]]=1 or 2) the irreducible polarizability is
+expressed as the Hilbert transform of the imaginary part. The advantage in
+using this approach consists in the fact that, once the spectral function is
+known, the irreducible polarizability for an arbitrary frequency can be easily
+obtained through inexpensive integrations. On the other hand an accurate
+evaluation of the imaginary part requires a dense frequency mesh due to the
+presence of delta functions. Two different approaches can be used to
+approximate these delta functions thus allowing the use of affordable
+frequency grids.
+
+Summarizing:
+
+  * 0 =&gt; use Adler-Wiser expression to calculate $\chi^{(0)}_{KS}$ 
+  * 1 =&gt; use the spectral method approximating the delta function with a triangular approximant as proposed in ** REF TO BE ADDED **
+  * 2 =&gt; use spectral method but approximating the delta function with a Taylor expansion of the exponential as proposed in ** REF TO BE ADDED **
+
+
+
+
+## **symchi** 
+
+
+ Mnemonics: SYMmetryze \chi_o  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]]==3  
+
+
+
+The evaluation of the irreducible polarizability for a given q-point requires
+an integration over the Brillouin zone (BZ) which is approximated by a
+discrete sum over k-points. In principle the integrand function should be
+evaluated for each k-point in the BZ, however it is possible to reduce the
+number of points to be explicitly considered by taking advantage of symmetry
+properties. The development input variable [[symchi]] is used to choose
+between these two equivalent methods:
+
+  * 0=&gt; the summation over k-points is performed considering ALL the points in the BZ (useful for testing and debugging). 
+  * 1=&gt; the summation is restricted to the k-points belonging to the irreducible wedge defined by the little group associated to the external vector q. 
+
+
+
+
+## **symsigma** 
+
+
+ Mnemonics: SYMmetrization of SIGMA matrix elements  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]]==4  
+
+
+
+This option is used to switch on the symmetrization of the self-energy matrix
+elements ([[symsigma]]=1). In this case the BZ integration defining the self-
+energy matrix elements is reduced to an appropriate irreducible wedge defined
+by the point group of the wave-vector k specified in the [[kptgw]] list.
+
+The symmetrized expression leads to a considerable speedup of the run but,
+unfortunately, this option is not yet compatible with self-consistent [[GW]]
+calculations (see [[gwcalctyp]]).
+
+The algorithm implemented in [[symsigma]]=1 constructs a symmetric invariant
+for the diagonal matrix elements of the self-energy by simply averaging the
+[[GW]] results within the degenerate subspace. Therefore particular care has
+to be taken in the presence of accidental degeneracies. since [[GW]]
+calculations performed with [[symsigma]]=1 will not be able to remove the
+initial accidental degeneracy.
+
+
+
+
+## **ucrpa** 
+
+
+ Mnemonics: calculation of the screened interaction U with the Constrained RPA method  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[nspinor]] == 1  
+
+
+
+When equal to one or two, this variable allows for the calculation of U with
+the cRPA method. An explicit test is shown in automatic tests v7/t23-t24-t25
+and in v7/t68-t69. The present implementation is parallelized (as for usual
+[[GW]] calculations), use symetry over k-points only for calculations
+involving one correlated atom, and can be use when correlated bands are
+entangled or not. The constrained calculation of the polarisability can be
+done by eliminating transition betweens correlated bands (and not orbitals)
+with the variable [[ucrpa_bands]].
+
+For [[ucrpa]] = 1, two solutions are possible. The first one is to specify
+(with the variable [[ucrpa_bands]]) the bands to exclude from the
+polarisability calculation. The second solution is to provide an energy window
+(with the variable [[ucrpa_window]]). The electronic transitions inside this
+window will not be taken into account in the polarisability calculation.
+
+For [[ucrpa]] = 2, the ucrpa_bands should be equal to the [[dmftbandi]] and
+[[dmftbandf]] values, and the polarisability of the correlated subspace is
+constructed with a band and k-point dependent weight.
+
+The implementation is restricted to the case of [[nspinor]] = 1 (collinear
+case).
+
+A short presentation of the method and some aspect of the implementation can
+be found in Section II and Appendix A of [ B. Amadon, T. Applencourt and F.
+Bruneval Phys. Rev. B 89, 125110 (2014)
+](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.125110) .
+
+
+
+
+## **ucrpa_bands** 
+
+
+ Mnemonics: For the calculation of U with the Constrained RPA method, gives correlated BANDS  
+Variable type: integer  
+Dimensions: (2)  
+Default value: [-1, -1]  
+Comment: That is, the default includes no band.  
+
+
+
+Gives the first and last correlated bands for the cRPA calculation of the
+polarisability.
+
+
+
+
+## **ucrpa_window** 
+
+
+ Mnemonics: For the calculation of U with the Constrained RPA method, gives energy WINDOW  
+Variable type: real  
+Dimensions: (2)  
+Default value: [-1, -1]  
+Comment: That is, the energy window is empty by default.  
+
+
+
+Specify a window of energy for the cRPA calculation of the polarisability. The
+transition inside this window will not be taken into account in the
+constrained polarisabilty calculations.
+
+The lower bound and the upper bound energies must be specified (two real
+numbers) with respect to the position of the Fermi level.
+
+
+
+
+## **vcutgeo** 
+
+
+ Mnemonics: V (potential) CUT-off GEOmetry  
+Variable type: real  
+Dimensions: (3)  
+Default value: 3*0.0  
+Only relevant if [[icutcoul]] in [1,2]  
+
+
+
+[[vcutgeo]] is used in conjunction with [[icutcoul]] to specify the geometry
+used to truncate the Coulomb interaction, as well as the particular approach
+to be used. It has a meaning only for the cylindrical symmetry
+([[icutcoul]]=1) or in the case of surfaces ([[icutcoul]]=2). For each
+geometry, two different definitions of the cutoff region are available (see
+Phys. Rev. B 73, 233103 and Phys. Rev. B 73, 205119 for a complete description
+of the methods)
+
+In Beigi method (Phys. Rev. B 73, 233103), the cutoff region is given by the
+Wigner-Seitz cell centered on the axis of the cylinder. The cutoff region is
+thus automatically defined by the unit cell and there is no need to specify
+When [[rcut]].
+
+To define a cylinder along the z-axis use the following lines. icutcoul 1
+vcutgeo 0 0 1
+
+Please note that Beigi method is implemented only in the case if an
+orthorhombic Bravais lattic. For hexagonal lattices, one has to use the method
+of Rozzi (Phys. Rev. B 73, 205119) In this case, the interaction is truncated
+in a finite cylinder. Contrarily to the first approach, here one has to
+specify both the radius of the cylinder with [[rcut]] as well as the length of
+the cylinder along the periodic dimension that should always be smaller than
+the extension of the Born von Karman box. The length of the cylinder is given
+in terms of the fraction of the primitive vector along the periodic direction.
+
+For example, in order to define a finite cylinder along z of radius 2.5 Bohr
+and length 3*R3 icutcoul 1 vcutgeo 0 0 -3.0 # note the minus sign rcut 2.5
+
+For surface calculations ([[icutcoul]]=2), [[vcutgeo]] is used to define the
+two periodic directions defining the surface. Also in this case two different
+techniques are available. In the method of Beigi, the (positive) non-zero
+components of vcutgeo define the periodic directions of the infinite surface.
+The interaction is truncated within a slab of width L where L is the length of
+the primitive vector of the lattice along the non-periodic dimension. For
+example: icutcoul 2 vcutgeo 1 1 0 It is also possible to define a finite
+surface by employing negative values For example: icutcoul 2 vcutgeo -3 -2 0
+defines ....
+
+
+
+
+## **zcut** 
+
+
+ Mnemonics: Z-CUT  
+Variable type: real  
+Dimensions: scalar  
+Default value: 0.0036749326  
+Comment: 0.0036749326 Ha = 0.1 eV  
+Only relevant if [[optdriver]] in [3,4,99]  
+
+
+
+It is meant to avoid some divergencies that might occur during the evaluation
+of the Adler-Wiser expression of the irreducible polarizability
+([[optdriver]]=3) or during the numerical treatment of the integrals defining
+the contribution to the self-energy matrix elements ([[optdriver]]=4). If the
+denominator becomes smaller than [[zcut]], a small imaginary part (depending
+on [[zcut]]) is added, in order to avoid the divergence.
+
+When [[optdriver]]=99, [[zcut]] defines the small complex shift used to avoid
+divergences in the expression for the macroscopic dieletric function. It
+simulates the experimental uncertainty and the finite lifetime of the
+quasiparticles (although the true lifetime should be k- and band-dependent).
+The value of [[zcut]] affects the number of iteration needed to achieve
+convergence in the Haydock iterative method. In this case, [[zcut]] should be
+larger than the typical distance between the eigenvalues of the exciton
+Hamiltonian.  
+Ideally, one should make a convergence study decreasing the value of [[zcut]]
+for increasing number of k-points.
+
+
+
+

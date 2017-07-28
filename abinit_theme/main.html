@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block libs %}
+    {{ super() }}
+    <!-- <script src="{{ base_url }}/js/somelib.js"></script> -->
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <!--
+     Configure MathJax to produce automatic equation numbers
+     http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+            equationNumbers: { autoNumber: "all" },
+            extensions: ["AMSmath.js"],
+            Macros: {
+                rr: "{\\bf r}",
+                GG: "{\\bf G}",
+                kk: "{\\bf k}",
+                qq: "{\\bf q}"
+            }
+        }
+    });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+{% endblock %}
+
+{%- block footer %}
+<hr>
+{% if config.extra.version %}
+    <center>Abinit version {{ config.extra.version }}</center>
+{% endif %}
+{% if config.copyright and page.meta.authors %}
+<center>{{ config.copyright }} ({{ page.meta.authors | join(", ") }})</center>
+{% elif config.copyright %}
+    <center>{{ config.copyright }}</center>
+{% endif %}
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+{%- endblock %}

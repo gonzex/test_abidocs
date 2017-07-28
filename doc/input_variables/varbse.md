@@ -1,0 +1,361 @@
+## **bs_algorithm** 
+
+
+ Mnemonics: Bethe-Salpeter ALGORITHM  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 2  
+Only relevant if [[optdriver]] == 99  
+
+
+
+The bs_algorithm input variable defines the algorithm employed to calculate
+the macroscopic dielectric function. Possible values are 1, 2 or 3:
+
+  * 1 =&gt; The macroscopic dielectric is obtained by performing a direct diagonalization of the excitonic Hamiltonian. Advantages: It gives direct access to the excitonic eigenvalues as well as to the oscillator strengths. Drawbacks: It is a very CPU- and memory-consuming approach as the size of the Hamiltonian scales as (nk*nc*nv)**2. where nk is the number of k-point in the FULL Brillouin zone, and nc and nv are the number of conduction and valence states, respectively. Pros: It can be used both for resonant-only and resonant+coupling calculations (non Tamm-Dancoff approximation). 
+  * 2 =&gt; Haydock iterative method. The macroscopic dielectric function is obtained by iterative applications of the Hamiltonian on a set of vectors in the electron-hole space. Advantages: It is less memory demanding and usually faster than the direct diagonalization provided that [[zcut]] is larger than the typical energy spacing of the eigenvalues. Drawbacks: It is an iterative method therefore the convergence with respect to bs_haydock_niter should be checked. It is not possible to have direct information on the exciton spectrum, oscillator strengths and excitonic wave functions. For the time being [[bs_algorithm]]=2 cannot be used for calculations in which the coupling term is included (Tamm-Dancoff approximation). 
+  * 3 =&gt; Conjugate-gradient method. This method allows to find the few first excitonic eigenvalues. Only available for resonant calculations (Tamm-Dancoff approximation). 
+
+
+
+
+## **bs_calctype** 
+
+
+ Mnemonics: Bethe-Salpeter CALCulation TYPE  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] == 99  
+
+
+
+Possible values are 1,2,3.
+
+  * 1 =&gt; use the KS eigenvalues and wave functions stored in the KSS file to construct the transition space 
+  * 2 =&gt; The transition space is constructed with Kohn-Sham orbitals but the energies are read from the external [[GW]] file 
+  * 3 =&gt; QP amplitudes and energies will be read from the QPS file and used to construct H_ex. Not coded yet because &lt;\psi|r|\psj&gt;^QP should be calculated taking into account the non-locality of the self-energy in the commutator [H,r]. 
+
+
+
+
+## **bs_coulomb_term** 
+
+
+ Mnemonics: Bethe-Salpeter COULOMB TERM  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 11  
+Only relevant if [[optdriver]] == 99  
+
+
+
+This variable governs the choice among the different options that are
+available for the treatment of Coulomb term of the [[BETHE_SALPETER]]
+Hamiltonian. [[bs_coulomb_term]] is the concatenation of two digits, labelled
+(A) and (B).
+
+The first digit (A) can assume the values 0,1,2:
+
+  * 0 =&gt; The Coulomb term is not computed. This choice is equivalent to computing the RPA spectrum but using the representation in transition space instead of the more efficient approach based on the sum over states. 
+  * 1 =&gt; The Coulomb term is computed using the screened interaction read from an external SCR file (standard excitonic calculation). 
+  * 2 =&gt; The Coulomb term is computed using a model screening function (useful for convergence studies or for reproducing published results). 
+
+The second digit (B) can assume the values 0,1:
+
+  * 0 =&gt; Use a diagonal approximation for W_GG' (mainly used for accelerating convergence studies). 
+  * 1 =&gt; The Coulomb term is correctly evaluated using the truly non-local W(r,r'). 
+
+
+
+
+## **bs_coupling** 
+
+
+ Mnemonics: Bethe-Salpeter COUPLING  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] == 99  
+
+
+
+The [[bs_coupling]] input variable defines the treatment of the coupling block
+of the [[BETHE_SALPETER]] Hamiltonian. Possible values are 0,1.
+
+  * 0 =&gt; The coupling block is neglected (the so-called Tamm-Dancoff approximation). The code runs faster and the Hamiltonian matrix requires less memory (factor 4). It is a good approximation for the absorption spectrum which only requires the knowledge of Im(\epsilon). The reliability of this approximation should be tested in the case of EELF calculations. 
+  * 1 =&gt; The coupling term is included (non Tamm-Dancoff approxmation). 
+
+
+
+
+## **bs_eh_cutoff** 
+
+
+ Mnemonics: Bethe-Salpeter Electron-Hole CUTOFF  
+Variable type: integer  
+Dimensions: (2)  
+Default value: [-inf, inf]  
+Only relevant if [[optdriver]] == 99  
+
+
+
+It is used to define a cutoff in the e-h basis set. Only those transitions
+whose energy is between bs_eh_window(1) and bs_eh_window(2) will be considered
+during the construction of the e-h Hamiltonian.
+
+
+
+
+## **bs_exchange_term** 
+
+
+ Mnemonics: Bethe-Salpeter EXCHANGE TERM  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] == 99  
+
+
+
+  * 0 =&gt;The exchange term is not calculated. This is equivalent to neglecting local field effects in the macroscopic dielectric function.
+  * 1 =&gt;The exchange term is calculated and added to the excitonic Hamiltonian. 
+
+
+
+
+## **bs_freq_mesh** 
+
+
+ Mnemonics: Bethe-Salpeter FREQuency MESH  
+Variable type: real  
+Dimensions: (3)  
+Default value: [0.0, 0.0, 0.01]  
+Only relevant if [[optdriver]] == 99  
+
+
+
+**bs_freq_mesh(1)** defines the first frequency for the calculation of the macroscopic dielectric function. 
+
+**bs_freq_mesh(2)** gives the last frequency for the calculation of the macroscopic dielectric function. If zero, **bs_freq_mesh(2)** is set automatically to MAX(resonant_energy) + 10%. 
+
+**bs_freq_mesh(3)** gives the step of the linear mesh used for evaluating the macroscopic dielectric function. 
+
+
+
+
+## **bs_hayd_term** 
+
+
+ Mnemonics: Bethe-Salpeter HAYdock TERMinator  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+
+
+
+Defines how to terminate the continued fraction expression for the dielectric
+function. The terminator reduces the number of iterations needed to converge
+by smoothing the oscillation in the high energy part of the spectrum
+
+  * 0 =&gt; No terminator. The contribution given by the terms missing in the Lanczos chain are set to zero. 
+  * 1 =&gt; Use the terminator function. The particular expression depends on the type of calculation: In the resonant-only case, the a_i and b_i coefficients for i &gt; niter, are replaced by their values at i=niter. Even the coupling block is included, the terminator function described in D. Rocca, R. Gebauer, Y. Saad, S. Baroni, J. Chem. Phys. 128, 154105 (2008) is used. 
+
+
+
+
+## **bs_haydock_niter** 
+
+
+ Mnemonics: Bethe-Salpeter HAYDOCK Number of ITERations  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 100  
+Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+
+
+
+[[bs_haydock_niter]] defines the maximum number of iterations used to
+calculate the macroscopic dielectric function. The iterative algorithm stops
+when the difference between two consecutive evaluations of the optical spectra
+is less than [[bs_haydock_tol]].
+
+
+
+
+## **bs_haydock_tol** 
+
+
+ Mnemonics: Bethe-Salpeter HAYDOCK TOLerance  
+Variable type: real  
+Dimensions: (2)  
+Default value: [0.02, 0]  
+Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+
+
+
+Defines the convergence criterion for the Haydock iterative method. The
+iterative algorithm stops when the difference between two consecutive
+evaluations of the macroscopic dielectric function is less than **
+bs_haydock_tol(1) ** . The sign of ** bs_haydock_tol(1) ** defines how to
+estimate the convergence error. A negative value signals that the converge
+should be reached for each frequency (strict criterion), while a positive
+value indicates that the converge error is estimated by averaging over the
+entire frequency range (mild criterion).
+
+**bs_haydock_tol(2)** defines the quantity that will be checked for convergence: 
+
+  * 0 -&gt; both the real and the imaginary part must converge 
+  * 1 -&gt; only the real part 
+  * 2 -&gt; only the imaginary part 
+
+
+
+
+## **bs_interp_kmult** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation K-point MULTiplication factors  
+Variable type: integer  
+Dimensions: (3)  
+Default value: [0, 0, 0]  
+Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+
+
+
+[[bs_interp_kmult]] defines the number of divisions used to generate the dense
+mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
+** * [[ngkpt]] of the coarse mesh.
+
+
+
+
+## **bs_interp_m3_width** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation Method3 WIDTH  
+Variable type: real  
+Default value: 1.0  
+Only relevant if [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+
+
+
+Defines the width of the region where divergence treatment is applied for BSE
+interpolation
+
+
+
+
+## **bs_interp_method** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation METHOD  
+Variable type: integer  
+Default value: 1  
+Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+
+
+
+[[bs_interp_method]] selects the method of interpolation:
+
+  * 0 =&gt; Interpolate using Y. Gillet technique with 8 neighbours (see Comput. Phys. Commun. 203, 83 (2016)) 
+  * 1 =&gt; Interpolation using Rohlfing & Louie technique (see above-mentioned article and Phys. Rev. B 62, 4927 (2000)) 
+
+
+
+
+## **bs_interp_mode** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation MODE  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+
+
+
+[[bs_interp_mode]] selects the mode of interpolation:
+
+  * 0 =&gt; No interpolation. Standard [[BETHE_SALPETER]] computation is performed 
+  * 1 =&gt; Simple interpolation 
+  * 2 =&gt; Treatment of the divergence on the whole set of dense k-points 
+  * 3 =&gt; Treatment of the divergence along the diagonal in k-space and simple interpolation elsewhere. 
+
+
+
+
+## **bs_interp_prep** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation PREParation  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+
+
+
+[[bs_interp_prep]] allows to trigger the preparation of the interpolation with
+method 2 or method 3. It generates the decomposition of BSR in a,b,c
+coefficients used for the interpolation.
+
+
+
+
+## **bs_interp_rl_nb** 
+
+
+ Mnemonics: Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour  
+Variable type: integer  
+Default value: 1  
+Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
+
+
+
+Gives the index of the neighbour that is used for Rohlfing & Louie method
+
+
+
+
+## **bs_loband** 
+
+
+ Mnemonics: Bethe-Salpeter Lowest Occupied BAND  
+Variable type: integer  
+Dimensions: ([[nsppol]])  
+Default value: 0  
+Only relevant if [[optdriver]] == 99  
+
+
+
+This variable defines the index of the lowest occupied band used for the
+construction of the electron-hole basis set. For spin polarized calculations,
+one must provide two separated indices for spin up and spin down. An
+additional cutoff energy can be applied by means of the bs_eh_window input
+variable.
+
+
+
+
+## **bs_nstates** 
+
+
+ Mnemonics: Bethe-Salpeter Number of STATES  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Only relevant if [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
+
+
+
+[[bs_nstates]] defines the maximum number of excitonic states calculated in
+the direct diagonalization of the excitonic matrix or in the conjugate-
+gradient method. The number of states should be sufficiently large for a
+correct description of the optical properties in the frequency range of
+interest.
+
+
+
+

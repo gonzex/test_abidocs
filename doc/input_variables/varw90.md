@@ -1,0 +1,93 @@
+## **w90iniprj** 
+
+
+ Mnemonics: Wannier90- INItial PROJections  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 1  
+Only relevant if [[prtwant]]==2 or [[prtwant]]==3  
+
+
+
+In order to find the Maximally Localized Wannier Functions, the user has to
+provide an initial guess. A set of localized trial orbitals is chosen
+corresponding to some rough initial guess at the Wannier Functions, and these
+are projected onto the Bloch eigenstates. See Ivo Souza, Nicola Marzari, and
+David Vanderbilt. Phys. Rev. B, 65, 035109 (2001).  
+These initial projections are stored in a file .amn and the variable **
+w90iniprj ** is used to construct them:
+
+  * ** w90iniprj ** =1: Random projections.   
+  
+
+  * ** w90iniprj ** =2: The initial projections will be a linear combination of hydrogenic atomic orbitals.   
+The user has to define the projections in the secondary input file
+wannier90.win  
+Information about how to define them can be found in the manual of Wannier90.
+See  [ www.wannier.org ](http://www.wannier.org)
+
+
+
+
+## **w90prtunk** 
+
+
+ Mnemonics: Wannier90- PRINT UNKp.s file  
+Variable type: integer  
+Dimensions: scalar  
+Default value: 0  
+Comment: The default is set to zero because UNKp.s files occupy a lot of
+memory.  
+Only relevant if [[prtwant]]==2 or [[prtwant]]==3  
+
+
+
+Defines whether or not the UNKp.s file will be printed.
+
+  * [[w90prtunk]]=0: Do not print the UNKp.s files   
+  
+
+  * [[w90prtunk]]=1: Print the UNKp.s files on a fine grid   
+  
+
+  * [[w90prtunk]]&gt;1: Print the UNKp.s files on a coarse grid   
+Instead of printing every record we will print every w90prtunk records. This
+is useful to reduce the size of the UNKp.s files, but, the quality is also
+reduced.
+
+  
+  
+These files contain the periodic part of the bloch states represented on a
+regular real space grid. They are indexed by k-point ** p ** (from 1 to nkpt)
+and spin ** s ** ('1' for 'up','2' for 'down').  
+  
+The name of the wavefunction file is assumed to have the form:  
+  
+write(wfnname,200) ** p ** , ** spin **  
+200 format ('UNK',i5.5,'.',i1)  
+  
+These file are unformatted. The first line of each file contains 5 integers:
+the number of grid points in each direction ( ** n1 ** , ** n2 ** and ** n3 **
+), the k-point number ** ikpt ** and the total number of bands mband in the
+file. The following rows contain the wavefunctions in real space.
+
+These files are written in the following way for the coarse grid:
+
+    
+    
+     write(iun_plot) n1/w90prtunk,n2/w90prtunk,n3/w90prtunk,ikpt,nband
+    write(iun_plot) (((fofr(1,jj1,jj2,jj3),fofr(2,jj1,jj2,jj3),&
+    &      jj1=1,n1,w90prtunk),jj2=1,n2,w90prtunk),jj3=1,n3,w90prtunk)
+    
+
+Where ** fofr ** is a double precision variable which contains the
+wavefunctions in real space. Note that in order to reduce the size of the UNK
+files we are just including records in the wavefunctions for 1/(w90prtunk^3)
+of the grid points. That is why we divide n1, n2 and n3 by prtunk. The output
+.xsf files for plotting with XCrysDen will also be on the coarse grid. When
+this does not produce an acceptable plot, prtunk can be set to 1 to output
+every grid point. (You should try spline interpolation in XCrysDen first.)
+
+
+
+
