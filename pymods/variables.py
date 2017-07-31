@@ -74,17 +74,21 @@ class Variable(yaml.YAMLObject):
         return "Variable " + str(self.abivarname) + " (default = " + str(self.defaultval) + ")"
 
     # MG
+    def website_ilink(self, label=None):
+        """String with the URL of the web page."""
+        label = self.abivarname if label is None else str(label)
+        url = "/input_variables/%s/#%s" % (self.varfile, self.abivarname)
+        return '<a href="%s" target="_blank">%s</a>' % (url, label)
+
     def to_md(self):
         import html2text
         lines = []
         app = lines.append
 
         # Title
-        #app("<br><font id=\"title\"><a name=\"" + var.abivarname + "\">" + var.abivarname + "</a></font>")
-        app("## %s  \n\n" % self.abivarname)
+        app("## **%s** \n\n" % self.abivarname)
         # Mnemonics
-        app("Mnemonics: %s  " % str(self.mnemonics))
-        #app("<br><font id=\"mnemonics\">Mnemonics: "+var.mnemonics+"</font>")
+        app(" Mnemonics: %s  " % str(self.mnemonics))
         # Characteristics
         #if var.characteristics is not None:
         #  chars = ""
@@ -109,28 +113,32 @@ class Variable(yaml.YAMLObject):
         #    print(" No topic_tribe for abivarname "+var.abivarname)
         # Variable type, including dimensions
         app("Variable type: %s  " % str(self.vartype))
-        #app("<br><font id=\"vartype\">Variable type: %s" % str(var.vartype))
-        #if var.dimensions is not None:
-        #  cur_content += make_links(format_dimensions(var.dimensions),var.abivarname,allowed_link_seeds,backlinks,backlink)
-        #if var.commentdims is not None and var.commentdims != "":
+        if self.dimensions is not None:
+           app("Dimensions: %s  " % format_dimensions(self.dimensions))
+        if self.commentdims is not None and self.commentdims != "":
+            app("commentdims %s  " % self.commentdims)
         #  cur_content += " (Comment: "+make_links(var.commentdims,var.abivarname,allowed_link_seeds,backlinks,backlink)+")"
-        #app("</font>")
         ## Default
+        app("Default value: %s  " % self.defaultval)
         #cur_content += "<br><font id=\"default\">"+make_links(format_default(var.defaultval),var.abivarname,allowed_link_seeds,backlinks,backlink)
-        #if var.commentdefault is not None and var.commentdefault != "":
+        if self.commentdefault is not None and self.commentdefault != "":
+            app("Comment: %s  " % self.commentdefault)
         #  cur_content += " (Comment: "+make_links(var.commentdefault,var.abivarname,allowed_link_seeds,backlinks,backlink)+")"
         #cur_content += "</font>\n"
         # Requires
-        #if var.requires is not None and var.requires != "":
+        if self.requires is not None and self.requires != "":
+            app("Only relevant if %s  " % self.requires)
         #  cur_content += "<br><br><font id=\"requires\">\nOnly relevant if "+doku2html(make_links(var.requires,var.abivarname,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
         # Excludes
-        #if var.excludes is not None and var.excludes != "":
+        if self.excludes is not None and self.excludes != "":
+            app("The use of this variable forbids the use of %s  " % self.excludes)
         #  cur_content += "<br><br><font id=\"excludes\">\nThe use of this variable forbids the use of "+doku2html(make_links(var.excludes,var.abivarname,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
         # Text
         #app("<br><font id=\"text\">\n")
         #app(str(var.text))
         if self.text is not None:
             md_text = html2text.html2text(self.text)
+            app(2 * "\n")
             app(str(md_text))
         else:
             print("Var:", self.abivarname, "with None text")
@@ -281,13 +289,13 @@ from collections import OrderedDict
 
 _VARS = None
 
-def get_code_variables():
+def get_variables_code():
     global _VARS
     if _VARS is None:
         _VARS = {}
         root = "/Users/gmatteo/git_repos/abidocs"
         path = os.path.join(root, "doc", "input_variables", "abinit_vars.yml")
-        _VARS["abinit"] = InputVariables.from_file(path)
+        _VARS["abinit"] = InputVariables.from_file(path, "abinit")
 
     return _VARS
 
@@ -295,15 +303,20 @@ def get_code_variables():
 class InputVariables(OrderedDict):
 
     @classmethod
-    def from_file(cls, yaml_path):
+    def from_file(cls, yaml_path, codename):
         with open(yaml_path, 'rt') as f:
             vlist = yaml.load(f)
             items = [(v.abivarname, v) for v in vlist]
             new = cls(sorted(items, key=lambda t: t[0]))
             new.varfiles = sorted(set(v.varfile for v in vlist))
+            new.codename = codename
             return new
 
     def write_markdown_files(self, workdir):
+        # Build list of variables
+        with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
+            fh.write(self.get_vartabs_html())
+
         # Build markdown
         for varfile in self.varfiles:
             var_list = [v for v in self.values() if v.varfile == varfile]
@@ -315,15 +328,80 @@ class InputVariables(OrderedDict):
                     #print(var.abivarname)
                     fh.write(var.to_md())
 
+    def groupby_first_letter(self):
+        keys = sorted(list(self.keys()))
+        from itertools import groupby
+        od = OrderedDict()
+        for char, names in groupby(keys, key=lambda n: n[0].lower()):
+            #print(char, list(names))
+            od[char] = [self[name] for name in names]
+        return od
+
+    def get_vartabs_html(self):
+        ch2vars = self.groupby_first_letter()
+
+        # https://jqueryui.com/tabs/
+        #idname = self.codename + "-tabs"
+        #html = '<div id="%s"> <ul>' % idname
+        #for char in ch2vars:
+        #    #html += "<li><a href="#tabs-1">Nunc tincidunt</a></li>"
+        #    id_char = "#%s-%s" % (idname, char)
+        #    html += '<li><a href="%s">%s</a></li>' % (id_char, char)
+        #html += "</ul>"
+        #for char, vlist in ch2vars.items():
+        #    id_char = "%s-%s" % (idname, char)
+        #    p = " ".join(v.abivarname for v in vlist)
+        #    html += '<div id="%s"><p>%s</p></div>' % (id_char, p)
+        #html += "</div>"
+
+        # http://getbootstrap.com/javascript/#tabs
+        html = """\
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">\n"""
+
+        idname = self.codename + "-tabs"
+        for i, char in enumerate(ch2vars):
+            id_char = "#%s-%s" % (idname, char)
+            if i == 0:
+                html += '<li role="presentation" class="active"><a href="%s" aria-controls="home" role="tab"\
+                         data-toggle="tab">%s</a></li>\n' % (id_char, char)
+            else:
+                html += '<li role="presentation"><a href="%s" aria-controls="home" role="tab"\
+                         data-toggle="tab">%s</a></li>\n' % (id_char, char)
+        html += """\
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        """
+
+        for i, (char, vlist) in enumerate(ch2vars.items()):
+            id_char = "%s-%s" % (idname, char)
+            p = " ".join(v.website_ilink() for v in vlist)
+            if i == 0:
+                html += '<div role="tabpanel" class="tab-pane active" id="%s">\n%s\n</div>\n' % (id_char, p)
+            else:
+                html += '<div role="tabpanel" class="tab-pane" id="%s">\n%s\n</div>\n' % (id_char, p)
+
+        return html + "</div> </div>"
 
 
+def format_dimensions(dimensions):
 
+  if dimensions is None:
+    s = ''
+  elif dimensions == "scalar":
+    s = 'scalar'
+  else:
+    #s = str(dimensions)
+    if isinstance(dimensions,list):
+      s = '('
+      for dim in dimensions:
+        s += str(dim) + ','
 
+      s = s[:-1]
+      s += ')'
+    else:
+      s = str(dimensions)
 
-
-
-
-
-
-
-
+  return s

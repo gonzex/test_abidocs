@@ -1,5 +1,3 @@
-[TOC]
-
 # v8.4
 
 Many thanks to the contributors to the ABINIT project between

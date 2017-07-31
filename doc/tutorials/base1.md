@@ -57,7 +57,7 @@ directory `~abinit/tests/tutorespfn/Input`.
 **1.1.b **You also need a working directory. So, you should create a subdirectory of this directory, 
 whose name might be "Work" (so ~abinit/tests/tutorial/Input/Work). Change the working directory of windows 2 to "Work": 
 
-```bash
+```sh
     $ mkdir Work
     $ cd Work
 ```
@@ -65,7 +65,7 @@ whose name might be "Work" (so ~abinit/tests/tutorial/Input/Work). Change the wo
 You will do most of the actions of this tutorial in this working directory.
 Copy the file tbase1_x.files in "Work":
 
-```bash
+```terminal
     $ cp ../tbase1_x.files .
 ```
 

@@ -20,6 +20,7 @@ pages:
     - Optic: user-guide/help_optic.md
 - Input Variables:
     - Abinit:
+        - All Variables: input_variables/varlist_abinit.md
         - Basic: input_variables/varbas.md
         - Bethe-Salpeter: input_variables/varbse.md
         - Developers: input_variables/vardev.md
@@ -59,40 +60,62 @@ pages:
         - Many-Body: tutorials/paral_mbt.md
 - Theory:
     - MBPT: theory/theory_mbt.md
-    - Notes: theory/notes.md
-      #- Bibliography: theory/bibliography.md
+    - Additional Material: theory/additional_material.md
+    - Bibliography: bibliography.md
 - About:
     - Release Notes: about/release-notes.md
     - Contributing: about/contributing.md
     - License: about/license.md
 
 markdown_extensions:
-  #- markdown.extensions.toc:
-  #   permalink: true
-  #   #separator: "_"
+  - markdown.extensions.toc:
+     permalink: true
+     #separator: "_"
   - markdown.extensions.admonition
-  #- markdown.extensions.codehilite
-  #- markdown.extensions.wikilinks
+  - markdown.extensions.codehilite
+  - markdown.extensions.def_list
+  - markdown.extensions.smarty
   #- markdown_newtab
-  #- smarty
-  - pymods.extensions.wikilinks
+  #- markdown.extensions.wikilinks
+  - pymods.extensions.wikilinks:
+  - pymods.extensions.modal:
   - mdx_math:
         enable_dollar_delimiter: True
-
         
 #strict: true
 
 copyright: Copyright &copy; 2017 The Abinit Group
 #google_analytics: ['UA-27795084-5', 'abinit.org']
 #
+
+theme: mkdocs
+#theme: readthedocs
+#theme: material   # Nice
+#theme: bootstrap
+#theme: bootswatch
+#theme: flatly
+#theme: cinder
+#theme: docSkimmer
+#theme: windmill
+#theme: journal
+#theme: yeti
+#theme: united
+#theme: spacelab
+#theme: docSkimmer
+theme_dir: abinit_theme
+extra_css:
+    - css/extra.css
+    - css/codehilite.css
+
+extra_javascript:
+    - extra_javascript/github_edit.js
 #extra_javascript: 
     #- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     #- http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-theme: mkdocs
-theme_dir: abinit_theme
-extra_css:
-    - css/extra.css
-
 extra:
     version: 8.5.4
+    # For Material them
+    #logo: 'images/logo.svg
+    #feature:
+    #    tabs: true

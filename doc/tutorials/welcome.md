@@ -54,12 +54,12 @@ inside ABINIT.
 -->
 </map>
 
-<img style="height: 540px; width: 720px;" alt="Schema 1" src="/tutorials/welcome_assets/tutorial_flowchart_v2.png" usemap="#map1"/>
+<img style="height: 540px; width: 720px;" alt="Schema 1" src="welcome_assets/tutorial_flowchart_v2.png" usemap="#map1"/>
 </center>
 
 
-Before following the tutorials, you should have read the [ "new user's
-guide"](../../users/generated_files/help_new_user.html), as well as the pages
+Before following the tutorials, you should have read the 
+[ "new user's guide"](../../users/generated_files/help_new_user.html), as well as the pages
 1045-1058 of the paper "Iterative minimization techniques for ab initio total-
 energy calculations: molecular dynamics and conjugate gradients", by M.C.
 Payne, M.P. Teter, D.C. Allan, T.A. Arias and J.D. Joannopoulos, Rev. Mod.

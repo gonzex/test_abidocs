@@ -1,7 +1,3 @@
-[TOC]
-
-* * *
-
 ### **0\. Foreword**
 
 The ABINIT project is a group effort of dozens of people worldwide, whose
@@ -10,19 +6,19 @@ files in the ABINIT package. The ABINIT project includes also resources
 provided on the [ABINIT Web site](http://www.abinit.org) and the 
 [ABINIT Github repository](https://github.com/abinit).
 
-Before reading the present file, and get some grasp about the main ABINIT
-application, you should get some theoretical background. In case you have
-already used another electronic structure code, or a quantum chemistry code,
-it might be sufficient to read the introduction of the paper ``Iterative
-minimization techniques for ab initio total-energy calculations: molecular
-dynamics and conjugate gradients'' M. C. Payne, M. P. Teter, D. C. Allan, T.
-A. Arias, and J. D. Joannopoulos, Rev. Mod. Phys. 64, 1045-1097 (1992).
-
-If you have never used another electronic structure code or a Quantum
-Chemistry package, you should complete such reading by going (at your own
-pace) through the Chaps. 1 to 13 , and appendices L and M of the book
-Electronic Structure. Basic Theory and Practical Methods. R. M. Martin.
-Cambridge University Press (2004) ISBN 0 521 78285 6.
+!!! warning
+    Before reading the present file, and get some grasp about the main ABINIT
+    application, you should get some theoretical background. In case you have
+    already used another electronic structure code, or a quantum chemistry code,
+    it might be sufficient to read the introduction of the paper ``Iterative
+    minimization techniques for ab initio total-energy calculations: molecular
+    dynamics and conjugate gradients'' M. C. Payne, M. P. Teter, D. C. Allan, T.
+    A. Arias, and J. D. Joannopoulos, Rev. Mod. Phys. 64, 1045-1097 (1992).
+    If you have never used another electronic structure code or a Quantum
+    Chemistry package, you should complete such reading by going (at your own
+    pace) through the Chaps. 1 to 13 , and appendices L and M of the book
+    Electronic Structure. Basic Theory and Practical Methods. R. M. Martin.
+    Cambridge University Press (2004) ISBN 0 521 78285 6.
 
 After having gone through the present New User's Guide, you should follow the
 ABINIT tutorial ([[lesson_welcome]]).
@@ -50,9 +46,7 @@ We suppose that you have downloaded the ABINIT package from the Web site,
 unpacked it and installed it. If not, you might nevertheless continue reading
 the present Web page, just to get an overview, but it might prove more
 fruitful to have first downloaded the ABINIT package and at least unpacked it,
-see the [installation notes](http://www.abinit.org/installation)
-
-.
+see the [installation notes](http://www.abinit.org/installation).
 
 We will use the name "~abinit" to refer to the directory that contains the
 ABINIT package after download. In practice, a version number is appended to
@@ -65,7 +59,7 @@ subdirectories will be described later.
 
 * * *
 
-### **2\. The ABINIT executable : abinit . **
+### **2\. The ABINIT executable : abinit. **
 
 After compilation, the main code will be present in the package as
 ~abinit/src/98_main/abinit (or perhaps at another place, depending on your
@@ -174,48 +168,91 @@ more by browsing the Web...
 As an overview, the most important input variables, to be provided in the
 input file, are listed below:
     
-    Specification of the geometry of the problem, and types of atoms :
-    [[natom]]           total number of atoms in unit cell
-    [[ntypat]]          number of types of atoms
-    [[typat]]([[natom]])    sequence of integers, specifying the type of each atom.
-                    NOTE: the atomic coordinates ([[xangst]], [[xcart]] or [[xred]])
-                    must be specified in the same order
-    [[rprim]](3,3)      unscaled primitive translations of periodic cell;
-                    each COLUMN of this array is one primitive translation
-    [[xangst]](3,[[natom]])  cartesian coordinates (Angstrom) of atoms in unit cell
-                    NOTE: only used when [[xred]] and [[xcart]] are absent
-    [[xcart]](3,[[natom]])  cartesian coordinates (Bohr) of atoms in unit cell
-                    NOTE: only used when [[xred]] and [[xangst]] are absent
-    [[xred]](3,[[natom]])   fractional coordinates for atomic locations;
-                    NOTE: leave out if [[xangst]] or [[xcart]] is used
-    [[znucl]]([[ntypat]])   Nuclear charge of each type of element; must agree with
-                    nuclear charge found in psp file.
-    
-    Specification of the planewave basis set, Brillouin zone wavevector sampling, and occupation of the bands:
-    [[ecut]]            planewave kinetic energy cutoff in Hartree
-    [[kptopt]]          option for specifying the k-point grid
-                    if [[kptopt]]=1, automatic generation, using ngkpt and shiftk.
-                    (for the latter, see the [help_abinit](help_abinit.html) file)
-    [[ngkpt]](3)        dimensions of the three-dimensional grid of k-points
-    [[occopt]]          set the occupation of electronic levels :
-                     =1 for semiconductors
-                     =3 ... 7  for metals
-    
-    Specification of the type of calculation to be done:
-    [[ionmov]]          when [[ionmov]] = 0 : the ions and cell shape are fixed
-                                = 2 : search for the equilibrium geometry
-                                = 6 : molecular dynamics
-    [[iscf]]            either a positive number for defining self-consistent
-                    algorithm (usual), or -2 for band structure in fixed potential
-    [[optdriver]]       when == 3 and 4 : will do GW calculations (many-body perturbation theory)
-    [[rfelfd]]          when /= 0 : will do response calculation to electric field
-    [[rfphon]]          when = 1 : will do response calculation to atomic displacements
-    
-    Specification of the numerical convergency of the calculation:
-    [[nstep]]           maximal number of self-consistent cycles (on the order of 20)
-    [[tolvrs]]          tolerance on self-consistent convergence
-    [[ntime]]           number of molecular dynamics or relaxation steps
-    [[tolmxf]]          force tolerance for structural relaxation in Hartree/Bohr
+Specification of the geometry of the problem, and types of atoms :
+
+[[natom]]
+: total number of atoms in unit cell
+
+[[ntypat]]
+: number of types of atoms
+
+[[typat]] ([[natom]])
+: sequence of integers, specifying the type of each atom.
+!!! note
+    the atomic coordinates ([[xangst]], [[xcart]] or [[xred]])
+    must be specified in the same order
+
+[[rprim]] (3,3)
+: unscaled primitive translations of periodic cell;
+  each COLUMN of this array is one primitive translation
+
+[[xangst]] (3,[[natom]])
+: cartesian coordinates (Angstrom) of atoms in unit cell
+  NOTE: only used when [[xred]] and [[xcart]] are absent
+
+[[xcart]] (3,[[natom]])
+: cartesian coordinates (Bohr) of atoms in unit cell
+  NOTE: only used when [[xred]] and [[xangst]] are absent
+
+[[xred]] (3,[[natom]])
+: fractional coordinates for atomic locations;
+  NOTE: leave out if [[xangst]] or [[xcart]] is used
+
+[[znucl]] ([[ntypat]])
+: Nuclear charge of each type of element; must agree with
+  nuclear charge found in psp file.
+
+Specification of the planewave basis set, Brillouin zone wavevector sampling, and occupation of the bands:
+
+[[ecut]]
+: planewave kinetic energy cutoff in Hartree
+
+[[kptopt]]
+: option for specifying the k-point grid
+  if [[kptopt]]=1, automatic generation, using ngkpt and shiftk.
+  (for the latter, see the [help_abinit](help_abinit.html) file)
+
+[[ngkpt]] (3)
+: dimensions of the three-dimensional grid of k-points
+
+[[occopt]]
+: set the occupation of electronic levels:
+    =1 for semiconductors
+    =3 ... 7  for metals
+
+Specification of the type of calculation to be done:
+
+[[ionmov]]
+: when [[ionmov]] = 0 : the ions and cell shape are fixed
+                  = 2 : search for the equilibrium geometry
+                  = 6 : molecular dynamics
+
+[[iscf]]
+: either a positive number for defining self-consistent
+  algorithm (usual), or -2 for band structure in fixed potential
+
+[[optdriver]]
+: when == 3 and 4 : will do GW calculations (many-body perturbation theory)
+
+[[rfelfd]]
+: when /= 0 : will do response calculation to electric field
+
+[[rfphon]]
+: when = 1 : will do response calculation to atomic displacements
+
+Specification of the numerical convergency of the calculation:
+
+[[nstep]]
+: maximal number of self-consistent cycles (on the order of 20)
+
+[[tolvrs]]
+: tolerance on self-consistent convergence
+
+[[ntime]]
+: number of molecular dynamics or relaxation steps
+
+[[tolmxf]]
+: force tolerance for structural relaxation in Hartree/Bohr
 
 * * *
 
@@ -270,11 +307,7 @@ molecular dynamics. It can also be used to find responses to atomic
 displacements and homogeneous electric field, so that the full phonon band
 structure can be constructed...
 
-
-
 * * *
-
-
 
 ### ** 8\. Versioning logic.**
 

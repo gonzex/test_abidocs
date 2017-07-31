@@ -1,5 +1,3 @@
-[TOC]
-
 The new user is advised to read first the [[help_new_user]], before reading
 the present file. It will be easier to discover the present file with the help
 of the [[lesson_welcome]] file.
@@ -12,33 +10,7 @@ additional documentation files, is not available on the Web, but is available
 in the package). For response-function calculations using abinit, the
 complementary [[help_respfn]] is needed.
 
-<!--
-  * 1\. How to run the code
-    * 1.1. Introducing the files file.
-    * 1.2. Running the code
-  * 2\. The underlying theoretical framework and algorithms
-  * 3\. The input file
-    * 3.1. Format of the input file.
-    * 3.2. More about ABINIT input variables.
-    * 3.3. The multi-dataset mode
-    * 3.4. Defining a series
-    * 3.5. Defining a double loop dataset
-    * 3.6. File names in the multi-dataset mode
-  * 4\. The files file
-  * 5\. The pseudopotential files
-  * 6\. The different output files
-    * 6.1. The log file
-    * 6.2. The main output file
-    * 6.3. More on the main output file
-    * 6.4. The header
-    * 6.5. The density output file
-    * 6.6. The potential files
-    * 6.7. The wavefunction output file
-    * 6.8. Other output files
-    * 6.9. Control of output in the parallel case
-  * 7\. Numerical quality of the calculations
-  * 8\. Final remarks 
--->
+{!tests/v1/Input/t01.in!}
 
 ### **1. How to run the code**
 

@@ -1,7 +1,9 @@
 ---
 title: Many-Body Theory in ABINIT
 authors: MG, MS
+mathjax: False
 ---
+
 
 The aim of this section is to introduce the Green's function formalism, 
 the concept of self-energy and the set of coupled equations proposed by Hedin
