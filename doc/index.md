@@ -6,6 +6,13 @@ files in the ABINIT package. The ABINIT project includes also resources
 provided on the [ABINIT Web site](http://www.abinit.org) and the 
 [ABINIT Github repository](https://github.com/abinit).
 
+```
+markdown admonition
+
+!!! warning
+    text
+```
+
 !!! warning
     Before reading the present file, and get some grasp about the main ABINIT
     application, you should get some theoretical background. In case you have
@@ -22,6 +29,37 @@ provided on the [ABINIT Web site](http://www.abinit.org) and the
 
 After having gone through the present New User's Guide, you should follow the
 ABINIT tutorial ([[lesson_welcome]]).
+
+```
+modal
+\{!tests/v1/Input/t01.in!\}
+```
+
+{!tests/v1/Input/t01.in!}
+
+```
+wiki links
+[[ecut]]
+```
+
+This is a link to the [[ecut]] input variable.
+
+```
+citations:
+[[Allen1976]]
+```
+
+Link to [[Allen1976]] paper
+
+```
+Mathjax support
+```
+
+$$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle
+\label{eq:GreenDef} $$
+
+The propagator in Eq.\ref{eq:GreenDef} contains ...
+
 
 * * *
 

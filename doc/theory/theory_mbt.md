@@ -4,7 +4,6 @@ authors: MG, MS
 mathjax: False
 ---
 
-
 The aim of this section is to introduce the Green's function formalism, 
 the concept of self-energy and the set of coupled equations proposed by Hedin
 whose self-consistent solution, in principle, gives the exact Green's function of the interacting system. 
