@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/about/contributing/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Contributing - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../release-notes/">Release Notes</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../release-notes/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../license/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#how-to-contribute-to-abinit">How to contribute to ABINIT</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#code-repositories">Code repositories</a></li>
+            <li><a href="#basic-philosophy">Basic philosophy</a></li>
+            <li><a href="#detailed-protocol-for-the-developer">Detailed protocol for the developer</a></li>
+            <li><a href="#example">Example</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="how-to-contribute-to-abinit">How to contribute to ABINIT<a class="headerlink" href="#how-to-contribute-to-abinit" title="Permanent link">&para;</a></h1>
+<p>This page provides a description of the procedures followed for development of
+the ABINIT package through collaboration of different groups of persons, based
+in different places in the world. Its content was formerly found in the
+Infos/Notes_for_coding/contributing.html text file.</p>
+<p>Any comment or suggestion to improve these procedures will be welcome!</p>
+<div class="toc">
+<ul>
+<li><a href="#how-to-contribute-to-abinit">How to contribute to ABINIT</a><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#code-repositories">Code repositories</a></li>
+<li><a href="#basic-philosophy">Basic philosophy</a></li>
+<li><a href="#detailed-protocol-for-the-developer">Detailed protocol for the developer</a></li>
+<li><a href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The ABINIT package is aimed at being used by different groups of people,
+without mandatory control by the main contributors of the ABINIT group. In the
+same way, the ABINIT development project is fundamentally open to the
+contributions of different persons, not located in Louvain-la-neuve or
+Corning. These contributing persons are members <em>de facto</em> of the ABINIT
+group.</p>
+<p>People using the code might consider adding their personal subroutines,
+without trying to make them part of the official ABINIT package. However, this
+has two drawbacks for them: in subsequent versions, their modifications will
+not be incorporated, so that they might have to check and modify the interface
+for each new version ; moreover, their contribution is not tested by other
+users of the code, so that bugs might remain unnoticed. It is also nicer to
+share the result of their coding efforts with other users of the code.</p>
+<p>Of course, a collaborative effort has also some drawbacks. In particular, the
+collaboration between distant developers should be carefully planned, since
+orthogonal modifications of the same piece of code by two different people at
+the same time is very likely to happen, generating &ldquo;negative progress&rdquo;, i.e. a
+large waste of time when synchronization is to be done. Also, it is required
+to use a well-defined coding style, to provide test case files, and to comment
+the modifications and additions as much as possible, in order to facilitate
+the maintenance and the future modifications.</p>
+<p>This document aims at defining the protocol to be followed to avoid &ldquo;negative
+progress&rdquo; due to lack of synchronization. The analogy with the procedures to
+be used for the parallelization of a code is obvious. The aim is that each
+external &lsquo;node&rsquo; does not waste its time, that communications are kept at the
+lowest level possible, and that the final result is correct ! We will need
+barriers for synchronization, and so on &hellip;</p>
+<p>The ability to incorporate the contributions of different groups in a
+harmonious way might become a noticeable strength of the ABINIT project.</p>
+<h2 id="code-repositories">Code repositories<a class="headerlink" href="#code-repositories" title="Permanent link">&para;</a></h2>
+<p>Managing different versions of ABINIT is done thanks to a utility called
+<a href="http://www.bazaar-vcs.org/"><strong>Bazaar</strong></a>. For an introduction to this powerful
+and versatile tool, you can have a look at our dedicated pages in the
+Developers&rsquo; corner of the ABINIT web site.</p>
+<p>Thanks to Bazaar, the development of a project becomes completely transparent,
+since all the changes in the files are registered: the latest version is of
+course available, but one can come backwards in time to track bugs easily or
+to know what anybody did. The development of different branches is also
+managed, as well as the subsequent merging procedure. This feature is
+important to allow development by many different people. The place where all
+the files are stored, including their history, is called a <strong>repository</strong>.</p>
+<p>For developers, using the repository is a privileged way of managing their
+contributions, since the coordinator is automatically and instantly informed
+of their progresses. They also benefit from regular backups of all the
+contributions.</p>
+<p>The ABINIT repository is divided into several <strong>main categories</strong>:</p>
+<ul>
+<li><strong>abinit-release</strong>, where go all contributions for the official release packages, these contributions consisting mainly in fixes and documentation;</li>
+<li><strong>abinit-devel</strong>, where all new and ongoing developments are managed;</li>
+<li><strong>abinit-doc</strong>, containing new and incomplete documentation, until it is consistent enough to be moved to the source code.</li>
+</ul>
+<p>Each category is divided into <strong>versions</strong>, 3 digits for <em>abinit-release</em> and
+2 digits for <em>abinit-devel</em>. Then, in each category and for each version,
+there is one <strong>reference branch</strong>, codename <em>merge</em>, which is the backbone of
+the development effort. All concerned developers are supposed to use this
+branch as a starting point for their tasks and to keep permanently in sync
+with it. They may have at least one branch of their own.</p>
+<h2 id="basic-philosophy">Basic philosophy<a class="headerlink" href="#basic-philosophy" title="Permanent link">&para;</a></h2>
+<p>In the following, we will distinguish between <strong>&ldquo;debugging&rdquo; contributions</strong>
+and <strong>&ldquo;development&rdquo; contributions</strong>.</p>
+<p><em>Debugging contributions</em> are typically modifications of a few lines in one or
+relatively few routines, needed for the code to work properly or to be
+properly documented. Sometimes they are related to comments within routines or
+corrections to documents. Usually, such modifications do not need any
+synchronization and can be sent directly to the coordinator via email, in the
+form of a patch. It is however possible to have them synchronized by recording
+them inside the <strong>abinit-release</strong> category of the repository.</p>
+<p>For the time being, Xavier
+<a href="mailto:gonze@pcpm.ucl.ac.be">&lt;gonze@pcpm.ucl.ac.be&gt;</a> should be
+contacted.</p>
+<p><em>Development contributions</em> usually involve the addition of new capabilities
+to the code. Despite the use of Bazaar, synchronization with the coordinator
+is <strong>ALWAYS</strong> needed: one has to make sure that nobody else is already in
+charge of a similar project! The development contributions might be quite
+local (basically adding one routine, called by a few lines from an existing
+routine), or, on the contrary, involve modifications of many existing
+routines. Even for the local type of modifications, discussion with the
+coordinator is mandatory. Though Bazaar now deals nicely with conflicts at the
+file level, it is of great importance to avoid semantic conflicts from the
+very beginning.</p>
+<p>The developer will be allocated a <em>development task</em>. Related to this task,
+they will be free to code, experiment, debug, and check the result of their
+work without any communication with the rest of the ABINIT group. The
+allocation of the task has obviously to be done in coordination with the rest
+of the group prior to the work, while the result of the development has to be
+incorporated into a new official version. The task is thus also limited in
+time.</p>
+<p>The prior allocation and subsequent incorporation, taking into account the
+possibility that many different developers work independently, must be done
+centrally by one or more coordinators (at present Xavier but this might change
+in the future), in order to guarantee the harmony, relevancy and consistency
+of all contributions.</p>
+<p>It will be the responsibility of the developer to make enough checks of the
+correctness of their modifications or additions. The developer should provide
+adequate documentation: basically the description of the input variables and
+output data in the <em>abinit_help</em> file, as well as a possible update of the
+bibliography. They should also provide one or more tests to be added to the
+standard suite of tests. This is needed to ensure that the transfer to the
+official version of the code has been done properly, and also that the new
+capabilities will be preserved by the subsequent modifications of the code.
+Finally, they have to show that their modifications have not suppressed
+existing capabilities of the codes, by running the set of already existing
+automatic tests.</p>
+<p>It will be the responsibility of the coordinator to transfer the result of the
+development effort of each developer to an official version, in such a way
+that the test is reproduced in a satisfactory way. The subsequent maintenance
+will be automatically done by checking that the corresponding test is still
+working despite modifications.</p>
+<h2 id="detailed-protocol-for-the-developer">Detailed protocol for the developer<a class="headerlink" href="#detailed-protocol-for-the-developer" title="Permanent link">&para;</a></h2>
+<p><strong>a.</strong> The developer proposes a modification or addition to the code to the coordinator. In most cases, such a proposal will be warmly welcome! There might be some discussions possibly involving other scientists to improve the original proposal. The developers mailing list has been set-up for that purpose (see the &ldquo;Community section&rdquo; on the ABINIT web site). </p>
+<p><strong>b.</strong> With respect to the latest official version, the developers define their task and make a list of routines they wish to heavily modify (and those they would like to add, but this is not really needed at that time). Following the current coding practice, adding new input variables would need rather small modifications of a very large number of routines (invars, abinit, gstate, brdmin, move, scfcv, vtorho &hellip;). In order to avoid the allocation of too large an area of development within the source code, which would make other development efforts impossible, it is assumed that the developer will make appropriate use of the different &lsquo;user&rsquo; input variables. This appropriate use means that none of the aforementioned routines will be modified for that purpose. The easiest case to handle is when a routine or a set of routines are added to the package, and the interface to the rest of the code involves only a set of called subroutines the interface (list of arguments) should not change, and just one (modified) calling routine. Many development projects of this type can coexist. By contrast, if one of the development efforts involves major changes to major routines, it will prohibit the execution of another development project of the same type, taking into account the current structure of the code. </p>
+<p><strong>c.</strong> Having gathered the different suggestions made on the basis of the current official version, the coordinator releases the next version, adequately prepared to allow the proposed developments by different developer groups, with a list of routines allocated to each group, the number of the test cases allocated, and, for information, the tasks that will be done. </p>
+<p><strong>d.</strong> After installation on the development machine, and prior to any modification, the developer runs the internal tests, as well as the tests series <em>v1</em> to <em>v5</em> and the <em>paral</em> (sequential cases) suite of tests. The &ldquo;<code>make tests_dev</code>&rdquo; command is perfectly suited for that purpose. Checking against previous reference files that the results are OK is always nice enough. The developer can replace the reference files provided with the official version by those produced on their machines, to ease further checking of the results. Then the development effort can begin. It is expected <em>a priori</em> that the following files will be modified in any case: </p>
+<ul>
+<li><em>abinit.src</em> files in some <em>src/*</em> directories, because the new routines must be listed there;</li>
+<li>the <em>allvariables.html</em> and some of the <em>var*.html</em> files, because the new input variables must be listed and documented there (the &lsquo;user&rsquo; variables are now used, but a final, aesthetic, name should be proposed);</li>
+<li>the <em>README</em> and <em>tests.cnf</em> files in the subdirectory <em>v5</em>, as well as an additional input file (at least).</li>
+</ul>
+<p><strong>IMPORTANT</strong>  </p>
+<p>During the development, only the allocated routines should be modified. This
+is very important. Many others can be created.</p>
+<p>In both cases, the developers <strong>MUST</strong> follow the current ABINIT coding style,
+presented in the latest version of the document <em>rules_coding</em>, in the
+<em>~abinit/doc/developers</em> subdirectory. In particular, they should mention
+their initials in the header of the new or modified routines. This will be
+useful if somebody needs information about this routine some time later.</p>
+<p>At the end of the development effort, it is mandatory that the developer runs
+again the <em>tests_dev</em> series, to be sure that the developments have not
+spoiled some other feature of the code. This is easily done by issuing <strong><code>make
+tests_dev</code></strong>. This command will run automatically the required tests, and
+produce a file <em>summary_tests.tar.gz</em> that should be send with the updated
+routines and separate new tests. This is important, since the coordinator will
+have to run the suite of tests as well, but at that time, having trouble with
+a modification done by some developer would mean an important delay in the
+delivery of the new official version, and thus a large waste of time. It is
+desirable that the tests of the new feature do not last more than 1 minute on
+Pentium III 1GHz, or about 20 seconds on other (faster) processors.</p>
+<p><strong>e.</strong> After the development has occurred, the developer prepares a gzipped (compressed) tar file with all the needed files (additional routines, modified routines, makemake, abinit_help, README, tests.cnf, &hellip;), the <em>summary_tests.tar.gz</em> file, and makes it available to the coordinator (by email, FTP or SSH). </p>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>a. David proposes a nice addition to the ABINIT package. Doug and Xavier are
+enthusiastic about it.</p>
+<p>b. On the basis of version 5.3.4, David proposes a list of routines that
+should be allocated to him.</p>
+<p>c. Xavier delivers a 5.4.x version that has been adequately prepared for the
+independent development that David wants to do.</p>
+<p>d. David implements his addition and modifications on the basis of version
+5.4.x, checks whether the suite of tests is still OK, and makes the files
+available to Xavier.</p>
+<p>e. Xavier thanks David very much, transfers the work to the official version
+5.5.y and performs the final modification of the names of the (new) input
+variables, including the propagation through the routines that were not
+allocated to the developper.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (XG)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

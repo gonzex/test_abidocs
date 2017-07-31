@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/vargs/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Ground-State - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li class="active">
+    <a href="./">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../vargeo/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../vargw/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#algalch">algalch</a></li>
+        <li class="main "><a href="#boxcenter">boxcenter</a></li>
+        <li class="main "><a href="#boxcutmin">boxcutmin</a></li>
+        <li class="main "><a href="#charge">charge</a></li>
+        <li class="main "><a href="#chkexit">chkexit</a></li>
+        <li class="main "><a href="#chkprim">chkprim</a></li>
+        <li class="main "><a href="#chksymbreak">chksymbreak</a></li>
+        <li class="main "><a href="#cpuh">cpuh</a></li>
+        <li class="main "><a href="#cpum">cpum</a></li>
+        <li class="main "><a href="#cpus">cpus</a></li>
+        <li class="main "><a href="#diecut">diecut</a></li>
+        <li class="main "><a href="#diegap">diegap</a></li>
+        <li class="main "><a href="#dielam">dielam</a></li>
+        <li class="main "><a href="#dielng">dielng</a></li>
+        <li class="main "><a href="#diemac">diemac</a></li>
+        <li class="main "><a href="#diemix">diemix</a></li>
+        <li class="main "><a href="#diemixmag">diemixmag</a></li>
+        <li class="main "><a href="#dosdeltae">dosdeltae</a></li>
+        <li class="main "><a href="#enunit">enunit</a></li>
+        <li class="main "><a href="#fband">fband</a></li>
+        <li class="main "><a href="#iatsph">iatsph</a></li>
+        <li class="main "><a href="#icoulomb">icoulomb</a></li>
+        <li class="main "><a href="#iprcel">iprcel</a></li>
+        <li class="main "><a href="#iqpt">iqpt</a></li>
+        <li class="main "><a href="#ixcpositron">ixcpositron</a></li>
+        <li class="main "><a href="#jellslab">jellslab</a></li>
+        <li class="main "><a href="#kptbounds">kptbounds</a></li>
+        <li class="main "><a href="#kptrlatt">kptrlatt</a></li>
+        <li class="main "><a href="#kptrlen">kptrlen</a></li>
+        <li class="main "><a href="#magcon_lambda">magcon_lambda</a></li>
+        <li class="main "><a href="#magconon">magconon</a></li>
+        <li class="main "><a href="#mixalch">mixalch</a></li>
+        <li class="main "><a href="#natsph">natsph</a></li>
+        <li class="main "><a href="#natsph_extra">natsph_extra</a></li>
+        <li class="main "><a href="#nbdbuf">nbdbuf</a></li>
+        <li class="main "><a href="#ndivk">ndivk</a></li>
+        <li class="main "><a href="#ndivsm">ndivsm</a></li>
+        <li class="main "><a href="#ngfft">ngfft</a></li>
+        <li class="main "><a href="#ngqpt">ngqpt</a></li>
+        <li class="main "><a href="#nline">nline</a></li>
+        <li class="main "><a href="#npsp">npsp</a></li>
+        <li class="main "><a href="#npspalch">npspalch</a></li>
+        <li class="main "><a href="#nqpt">nqpt</a></li>
+        <li class="main "><a href="#nshiftq">nshiftq</a></li>
+        <li class="main "><a href="#nspden">nspden</a></li>
+        <li class="main "><a href="#nspinor">nspinor</a></li>
+        <li class="main "><a href="#ntypalch">ntypalch</a></li>
+        <li class="main "><a href="#ntyppure">ntyppure</a></li>
+        <li class="main "><a href="#nucdipmom">nucdipmom</a></li>
+        <li class="main "><a href="#nwfshist">nwfshist</a></li>
+        <li class="main "><a href="#occ">occ</a></li>
+        <li class="main "><a href="#optdriver">optdriver</a></li>
+        <li class="main "><a href="#optstress">optstress</a></li>
+        <li class="main "><a href="#posdoppler">posdoppler</a></li>
+        <li class="main "><a href="#positron">positron</a></li>
+        <li class="main "><a href="#posnstep">posnstep</a></li>
+        <li class="main "><a href="#posocc">posocc</a></li>
+        <li class="main "><a href="#postoldfe">postoldfe</a></li>
+        <li class="main "><a href="#postoldff">postoldff</a></li>
+        <li class="main "><a href="#prtdensph">prtdensph</a></li>
+        <li class="main "><a href="#prtebands">prtebands</a></li>
+        <li class="main "><a href="#qpt">qpt</a></li>
+        <li class="main "><a href="#qptnrm">qptnrm</a></li>
+        <li class="main "><a href="#qptopt">qptopt</a></li>
+        <li class="main "><a href="#qptrlatt">qptrlatt</a></li>
+        <li class="main "><a href="#ratsph">ratsph</a></li>
+        <li class="main "><a href="#ratsph_extra">ratsph_extra</a></li>
+        <li class="main "><a href="#scphon_supercell">scphon_supercell</a></li>
+        <li class="main "><a href="#scphon_temp">scphon_temp</a></li>
+        <li class="main "><a href="#shiftq">shiftq</a></li>
+        <li class="main "><a href="#slabwsrad">slabwsrad</a></li>
+        <li class="main "><a href="#slabzbeg">slabzbeg</a></li>
+        <li class="main "><a href="#slabzend">slabzend</a></li>
+        <li class="main "><a href="#so_psp">so_psp</a></li>
+        <li class="main "><a href="#spinat">spinat</a></li>
+        <li class="main "><a href="#stmbias">stmbias</a></li>
+        <li class="main "><a href="#symafm">symafm</a></li>
+        <li class="main "><a href="#timopt">timopt</a></li>
+        <li class="main "><a href="#tl_nprccg">tl_nprccg</a></li>
+        <li class="main "><a href="#tl_radius">tl_radius</a></li>
+        <li class="main "><a href="#tphysel">tphysel</a></li>
+        <li class="main "><a href="#tsmear">tsmear</a></li>
+        <li class="main "><a href="#usekden">usekden</a></li>
+        <li class="main "><a href="#vacuum">vacuum</a></li>
+        <li class="main "><a href="#vacwidth">vacwidth</a></li>
+        <li class="main "><a href="#wtq">wtq</a></li>
+        <li class="main "><a href="#wvl_bigdft_comp">wvl_bigdft_comp</a></li>
+        <li class="main "><a href="#wvl_crmult">wvl_crmult</a></li>
+        <li class="main "><a href="#wvl_frmult">wvl_frmult</a></li>
+        <li class="main "><a href="#wvl_ngauss">wvl_ngauss</a></li>
+        <li class="main "><a href="#wvl_nprccg">wvl_nprccg</a></li>
+        <li class="main "><a href="#xredsph_extra">xredsph_extra</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="algalch"><strong>algalch</strong><a class="headerlink" href="#algalch" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: ALGorithm for generating ALCHemical pseudopotentials<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>)<br />
+Default value: *1  </p>
+<p>Used for the generation of alchemical pseudopotentials, that is, when
+<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> is non-zero.</p>
+<p>Give the algorithm to be used to generate the <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> alchemical
+potentials from the different <a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a> pseudopotentials dedicated to this
+use.</p>
+<p>Presently, <a class="wikilink" href="../../input_variables/vargs#algalch">algalch</a> can only have the value 1, that is :</p>
+<ul>
+<li>the local potentials are mixed, thanks to the <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> mixing coefficients </li>
+<li>the form factors of the non-local projectors are all preserved, and all considered to generate the alchemical potential </li>
+<li>the scalar coefficients of the non-local projectors are multiplied by the proportion of the corresponding type of atom that is present in <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> </li>
+<li>the characteristic radius for the core charge is a linear combination of the characteristic radii of the core charges, build with the <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> mixing coefficients </li>
+<li>the core charge function f(r/rc) is a linear combination of the core charge functions, build with the <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> mixing coefficients </li>
+</ul>
+<p>Later, other algorithms for the mixing might be included.</p>
+<p>Note that alchemical mixing cannot be used with PAW.</p>
+<h2 id="boxcenter"><strong>boxcenter</strong><a class="headerlink" href="#boxcenter" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BOX CENTER<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: [0.5, 0.5, 0.5]  </p>
+<p>Defines the center of the box, in reduced coordinates. At present, this
+information is only used in the case of Time-Dependent DFT computation of the
+oscillator strength. One must take boxcenter such as to be roughly the center
+of the cluster or molecule. The default is sensible when the vacuum
+surrounding the cluster or molecule has xred 0 or 1. On the contrary, when the
+cluster or molecule is close to the origin, it is better to take
+<a class="wikilink" href="../../input_variables/vargs#boxcenter">boxcenter</a>=(0 0 0).</p>
+<h2 id="boxcutmin"><strong>boxcutmin</strong><a class="headerlink" href="#boxcutmin" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BOX CUT-off MINimum<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 2.0  </p>
+<p>The box cut-off ratio is the ratio between the wavefunction plane wave sphere
+radius, and the radius of the sphere that can be inserted in the FFT box, in
+reciprocal space. In order for the density to be exact (in the case of plane
+wave, not PAW), this ratio should be at least two. If one uses a smaller
+ratio, one will gain speed, at the expense of accuracy. In case of pure ground
+state calculation (e.g. for the determination of geometries), this is
+sensible. However, the wavefunctions that are obtained CANNOT be used for
+starting response function calculation.</p>
+<h2 id="charge"><strong>charge</strong><a class="headerlink" href="#charge" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CHARGE<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used to establish charge balance between the number of electrons filling the
+bands and the nominal <a class="wikilink" href="../../input_variables/vargs#charge">charge</a> associated with the atomic cores.<br />
+The code adds up the number of valence electrons provided by the
+pseudopotentials of each type (call this &ldquo;zval&rdquo;), then add <a class="wikilink" href="../../input_variables/vargs#charge">charge</a>, to get
+the number of electrons per unit cell, <a class="wikilink" href="../../input_variables/varint#nelect">nelect</a>.<br />
+Then, if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> is positive, the code adds up the band occupancies (given in
+array <a class="wikilink" href="../../input_variables/vargs#occ">occ</a>) for all bands at each k point, then multiplies by the k point
+weight <a class="wikilink" href="../../input_variables/varbas#wtk">wtk</a> at each k point. Call this sum &ldquo;nelect_occ&rdquo; (for the number of
+electrons from occupation numbers). It is then required that:<br />
+nelect_occ = nelect<br />
+To treat a neutral system, which is desired in nearly all cases, one must use
+<a class="wikilink" href="../../input_variables/vargs#charge">charge</a>=0. To treat a system missing one electron per unit cell, set
+<a class="wikilink" href="../../input_variables/vargs#charge">charge</a>=+1.</p>
+<h2 id="chkexit"><strong>chkexit</strong><a class="headerlink" href="#chkexit" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CHecK whether the user want to EXIT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#chkexit">chkexit</a> is 1 or 2, ABINIT will check whether the user wants to
+interrupt the run (using the keyword &ldquo;exit&rdquo; on the top of the input file or
+creating a file named &ldquo;abinit.exit&rdquo;: see the <a href="../../../users/generated_files/help_abinit.html#chkexit"> end of section 3.2
+</a> of the
+<a class="wikilink" href="../../help_abinit/">help_abinit</a>).</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#chkexit">chkexit</a>=0, the check is not performed at all</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#chkexit">chkexit</a>=1, the check is not performed frequently (after each SCF step)</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#chkexit">chkexit</a>=2, the check is performed frequently (after a few bands, at
+each k point)</p>
+<p>In all cases, the check is performed at most every 2 seconds of CPU time.</p>
+<h2 id="chkprim"><strong>chkprim</strong><a class="headerlink" href="#chkprim" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CHecK whether the cell is PRIMitive<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>If the symmetry finder is used (see <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>), a non-zero value of <a class="wikilink" href="../../input_variables/vargs#chkprim">chkprim</a>
+will make the code stop if a non-primitive cell is used. If <a class="wikilink" href="../../input_variables/vargs#chkprim">chkprim</a>=0, a
+warning is issued, but the run does not stop.</p>
+<p>If you are generating the atomic and cell geometry using <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>, you
+might generate a PRIMITIVE cell using <a class="wikilink" href="../../input_variables/vargeo#brvltt">brvltt</a>=-1 .</p>
+<h2 id="chksymbreak"><strong>chksymbreak</strong><a class="headerlink" href="#chksymbreak" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CHecK SYMmetry BREAKing<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>This variable governs the behaviour of the code when there are potential
+source of symmetry breaking, related e.g. to the k point grid or the presence
+of non-symmorphic translations which might not be coherent with the exchange-
+correlation grid.</p>
+<p>When <a class="wikilink" href="../../input_variables/vargs#chksymbreak">chksymbreak</a>=1, the code stops (or issue a warning) if :</p>
+<ul>
+<li>(1) The k point grid is non-symmetric, in case <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> =1, 2, or 4 ; </li>
+<li>(2) The non-symmorphic translation part of the symmetry operations has components that are not zero, or simple fractions, with 2, 3, 4, 6, 8 or 12 as denominators. </li>
+</ul>
+<p>When <a class="wikilink" href="../../input_variables/vargs#chksymbreak">chksymbreak</a> is zero, there is no such check.<br />
+When <a class="wikilink" href="../../input_variables/vargs#chksymbreak">chksymbreak</a> is minus 1, the code stops if the condition (1) is met,
+but in case the condition (2) is met, there will be a trial to shift the
+atomic coordinates such as to obtain symmetry operations with the adequate
+non-symmorphic part.</p>
+<p>Explanation :<br />
+In the ground-state calculation, such breaking of the symmetry is usually
+harmless. However, if the user is doing a calculation of phonons using DFPT
+(<a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a>=1), the convergence with respect to the number of k points will be
+much worse with a non-symmetric grid than with a symmetric one. Also, if the
+user is doing a <a class="wikilink" href="../../GW/">GW</a> calculation, the presence of non-symmorphic
+translations that are not coherent with the FFT grid might cause problems. In
+the <a class="wikilink" href="../../GW/">GW</a> part, indeed, one needs to reconstruct the wavefunctions in the
+full Brillouin zone for calculating both the polarizability and the self-
+energy. The wavefunctions in the full Brillouin zone are obtained from the
+irreducible wedge by applying the symmetry operations of the space group of
+the crystal. In the present implementation, the symmetrization of the
+wavefunctions is done in real space on the FFT mesh that, therefore, has to be
+coherent both with the rotational part as well as with the fractional
+translation of each symmetry operation. If the condition (2) is met, the
+<a class="wikilink" href="../../GW/">GW</a> code will not be able to find a symmetry-preserving FFT mesh.<br />
+So, it was decided to warn the user about these possible problems already at
+the level of the ground state calculations, although such warning might be
+irrelevant.<br />
+If you encounter a problem outlined above, you have two choices : change your
+atomic positions (translate them) such that the origin appears as the most
+symmetric point ; or ignore the problem, and set <a class="wikilink" href="../../input_variables/vargs#chksymbreak">chksymbreak</a>=0 .</p>
+<h2 id="cpuh"><strong>cpuh</strong><a class="headerlink" href="#cpuh" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CPU time limit in Hours<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a>) or specified(<a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>)  </p>
+<p>Only one of the three real parameters <a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>, <a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a> and <a class="wikilink" href="../../input_variables/vargs#cpuh">cpuh</a> can be
+defined in the input file to set up a CPU time limit. When the job reaches
+that limit, it will try to end smoothly. However, note that this might still
+take some time. If the user want a firm CPU time limit, the present parameter
+must be reduced sufficiently. Intuition about the actual margin to be taken
+into account should come with experience &hellip;<br />
+A zero value has no action of the job.</p>
+<h2 id="cpum"><strong>cpum</strong><a class="headerlink" href="#cpum" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CPU time limit in Minutes<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a>) or specified(<a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>)  </p>
+<p>Only one of the three real parameters <a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>, <a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a> and <a class="wikilink" href="../../input_variables/vargs#cpuh">cpuh</a> can be
+defined in the input file to set up a CPU time limit. When the job reaches
+that limit, it will try to end smoothly. However, note that this might still
+take some time. If the user want a firm CPU time limit, the present parameter
+must be reduced sufficiently. Intuition about the actual margin to be taken
+into account should come with experience &hellip;<br />
+A zero value has no action of the job.</p>
+<h2 id="cpus"><strong>cpus</strong><a class="headerlink" href="#cpus" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: CPU time limit in seconds<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a>) or specified(<a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>)  </p>
+<p>Only one of the three real parameters <a class="wikilink" href="../../input_variables/vargs#cpus">cpus</a>, <a class="wikilink" href="../../input_variables/vargs#cpum">cpum</a> and <a class="wikilink" href="../../input_variables/vargs#cpuh">cpuh</a> can be
+defined in the input file to set up a CPU time limit. When the job reaches
+that limit, it will try to end smoothly. However, note that this might still
+take some time. If the user want a firm CPU time limit, the present parameter
+must be reduced sufficiently. Intuition about the actual margin to be taken
+into account should come with experience &hellip;<br />
+A zero value has no action of the job.</p>
+<h2 id="diecut"><strong>diecut</strong><a class="headerlink" href="#diecut" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: DIElectric matrix energy CUToff<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 2.2  </p>
+<p>Kinetic energy cutoff that controls the number of planewaves used to represent
+the dielectric matrix:<br />
+(1/2)[(2 Pi)*(Gmax)]  2  =<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> for Gmax.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since <a class="wikilink" href="../../input_variables/vargs#diecut">diecut</a> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics. (1 Ha=27.2113845 eV)<br />
+All planewaves inside this &ldquo;basis sphere&rdquo; centered at G=0 are included in the
+basis. This is useful only when <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>&gt;=21, which means that a
+preconditioning scheme based on the dielectric matrix is used.<br />
+NOTE : a negative <a class="wikilink" href="../../input_variables/vargs#diecut">diecut</a> will define the same dielectric basis sphere as
+the corresponding positive value, but the FFT grid will be identical to the
+one used for the wavefunctions. The much smaller FFT grid, used when
+<a class="wikilink" href="../../input_variables/vargs#diecut">diecut</a> is positive, gives exactly the same results.<br />
+No meaning for RF calculations yet.</p>
+<h2 id="diegap"><strong>diegap</strong><a class="headerlink" href="#diegap" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: DIElectric matrix GAP<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.1  </p>
+<p>Gives a rough estimation of the dielectric gap between the highest energy
+level computed in the run, and the set of bands not represented. Used to
+extrapolate dielectric matrix when <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &gt;= 21.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since <a class="wikilink" href="../../input_variables/vargs#diegap">diegap</a> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics. (1 Ha=27.2113845 eV)<br />
+No meaning for RF calculations yet.</p>
+<h2 id="dielam"><strong>dielam</strong><a class="headerlink" href="#dielam" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: DIElectric matrix LAMbda<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.5<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &gt;= 21  </p>
+<p>Gives the amount of occupied states with mean energy given by the highest
+level computed in the run, included in the extrapolation of the dielectric
+matrix.<br />
+No meaning for RF calculations yet.</p>
+<h2 id="dielng"><strong>dielng</strong><a class="headerlink" href="#dielng" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: model DIElectric screening LeNGth<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1.0774841d0  </p>
+<p>Used for screening length (in Bohr) of the model dielectric function, diagonal
+in reciprocal space. By default, given in Bohr atomic units (1
+Bohr=0.5291772108 Angstrom), although Angstrom can be specified, if preferred,
+since <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a> has the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo; characteristics.<br />
+This model dielectric function is as follows (K being a wavevector) :</p>
+<div class="codehilite"><pre><span></span>         (     1        +     [[dielng]]2* K2   )
+diel(K)= ------------------------------------
+         ( 1/[[diemac]] + [[dielng]]2 * K2 ) * [[diemix]]
+</pre></div>
+
+
+<p>The inverse of this model dielectric function will be applied to the residual,
+to give the preconditioned change of potential. Right at K=0, diel(K) is
+imposed to be 1.</p>
+<p>If the preconditioning were perfect, the change of potential would lead to an
+exceedingly fast solution of the self-consistency problem (two or three
+steps). The present model dielectric function is excellent for rather
+homogeneous unit cells.<br />
+When K-&gt;0 , it tends to the macroscopic dielectric constant, eventually
+divided by the mixing factor <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> (or <a class="wikilink" href="../../input_variables/vargs#diemixmag">diemixmag</a>  for magnetization).<br />
+For metals, simply put <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> to a very large value (10^6 is OK)<br />
+The screening length <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a> governs the length scale to go from the
+macroscopic regime to the microscopic regime, where it is known that the
+dielectric function should tend to 1. It is on the order of 1 Bohr for metals
+with medium density of states at the Fermi level, like Molybdenum, and for
+Silicon. For metals with a larger DOS at the Fermi level (like Iron), the
+screening will be more effective, so that <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a> has to be decreased by a
+factor of 2-4.<br />
+This works for GS and RF calculations.</p>
+<h2 id="diemac"><strong>diemac</strong><a class="headerlink" href="#diemac" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: model DIElectric MACroscopic constant<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1000000.0  </p>
+<p>A rough knowledge of the macroscopic dielectric constant <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> of the
+system is a useful help to speed-up the SCF procedure: a model dielectric
+function, see the keyword <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a>, is used for that purpose. It is
+especially useful for speeding up the treatment of rather homogeneous unit
+cells.</p>
+<p>Some hint :<br />
+The value of <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> should usually be bigger than 1.0d0, on physical
+grounds.<br />
+For metals, simply put <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> to a very large value (the default 10  6  is
+OK)<br />
+For silicon, use 12.0 . A similar value is likely to work well for other
+semiconductors<br />
+For wider gap insulators, use 2.0 &hellip; 4.0<br />
+For molecules in an otherwise empty big box, try 1.5 &hellip; 3.0<br />
+Systems that combine a highly polarisable part and some vacuum are rather
+badly treated by the model dielectric function. One has to use the
+&ldquo;extrapolar&rdquo; technique, activated by the input variable <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>.<br />
+In sufficiently homogeneous systems, you might have to experiment a bit to
+find the best <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a>. If you let <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> to its default value, you
+might even never obtain the self-consistent convergence !<br />
+For response function calculations, use the same values as for GS. The
+improvement in speed can be considerable for small (but non-zero) values of
+the wavevector.</p>
+<h2 id="diemix"><strong>diemix</strong><a class="headerlink" href="#diemix" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: model DIElectric MIXing factor<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1.0 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==0 or <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> !=0,
+0.7 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 or <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>==0,
+None otherwise.</p>
+<p>Only relevant if <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> &gt;= 0.0 and <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> &lt;=  1.0  </p>
+<p>Gives overall factor of the preconditioned residual density/potential to be
+transferred in the SCF cycle.<br />
+It should be between 0.0 and 1.0 .<br />
+If the model dielectric function were perfect, <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> should be 1.0 . By
+contrast, if the model dielectric function does nothing (when <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a>=1.0d0
+or <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a> is larger than the size of the cell), <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> can be used to
+damp the amplifying factor inherent to the SCF loop.<br />
+For molecules, a value on the order 0.5 or 0.33 is rather usual.<br />
+When mod(<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>,10)=3, 4 ,5 or 7, <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> is only important at the few
+first iterations when anharmonic effects are important, since these schemes
+compute their own mixing factor for self-consistency.<br />
+Also note that a different value of diemix can be used for the magnetization
+(see <a class="wikilink" href="../../input_variables/vargs#diemixmag">diemixmag</a>).</p>
+<h2 id="diemixmag"><strong>diemixmag</strong><a class="headerlink" href="#diemixmag" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: model DIElectric MIXing factor for the MAGgnetization<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> if 70 &lt; <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> and <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &lt; 80,
+<a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> if <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>==0,
+<a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;10,
+-<a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> otherwise.</p>
+<p>Gives overall factor of the preconditioned residual magnetization/magnetic
+field to be transferred in the SCF cycle (see <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> for further
+information).<br />
+For the time being, apply only when the SCF mixing is done on the density
+(<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;=10).  </p>
+<p>A negative value of diemixmag means that magnetization is only preconditionned
+by ABS(diemixmag), without the use of any preconditionner.  </p>
+<p>When SCF cycle has some difficulties to converge, changing the value of
+<a class="wikilink" href="../../input_variables/vargs#diemixmag">diemixmag</a> can have a positive effect.<br />
+In particular <a class="wikilink" href="../../input_variables/vargs#diemixmag">diemixmag</a>=-4 is a good choice (i.e. diemixmag=4, no other
+preconditionner on magnetization).</p>
+<h2 id="dosdeltae"><strong>dosdeltae</strong><a class="headerlink" href="#dosdeltae" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: DOS DELTA in Energy<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>Defines the linear grid resolution (energy increment) to be used for the
+computation of the Density-Of-States, when <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a> is non-zero.<br />
+If <a class="wikilink" href="../../input_variables/vargs#dosdeltae">dosdeltae</a> is set to zero (the default value), the actual increment is
+0.001 Ha if <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, and the much smaller value 0.00005 Ha if
+<a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2. This different default value arises because the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1
+case, based on a smearing technique, gives a quite smooth DOS, while the DOS
+from the tetrahedron method, <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2, is rapidly varying.</p>
+<h2 id="enunit"><strong>enunit</strong><a class="headerlink" href="#enunit" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: ENergy UNITs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Governs the units to be used for output of eigenvalues (and eventual phonon
+frequencies)</p>
+<ul>
+<li>0=&gt;print eigenvalues in hartree; </li>
+<li>1=&gt;print eigenvalues in eV; </li>
+<li>2=&gt;print eigenvalues in both hartree and eV. </li>
+</ul>
+<p>If phonon frequencies are to be computed :</p>
+<ul>
+<li>0=&gt; phonon frequencies in Hartree and cm-1; </li>
+<li>1=&gt; phonon frequencies in eV and THz; </li>
+<li>2=&gt; phonon frequencies in hartree, eV, cm-1, Thz and Kelvin. </li>
+</ul>
+<h2 id="fband"><strong>fband</strong><a class="headerlink" href="#fband" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Factor for the number of BANDs<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.125 if <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>==1,
+0.5 if <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>&gt;2,
+0.0 if <a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a>==1,
+0.0 otherwise.</p>
+<p>Governs the number of bands to be used in the code in the case the parameter
+<a class="wikilink" href="../../input_variables/varbas#nband">nband</a> is not defined in the input file (which means that <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> is not
+equal to 0 or 2).</p>
+<p>In case <a class="wikilink" href="../../input_variables/vargs#fband">fband</a> is 0.0d0, the code computes from the pseudopotential files
+and the geometry data contained in the input file, the number of electrons
+present in the system. Then, it computes the minimum number of bands that can
+accommodate them, and use that value for <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>.<br />
+In case <a class="wikilink" href="../../input_variables/vargs#fband">fband</a> differs from zero, other bands will be added, just larger
+than <a class="wikilink" href="../../input_variables/vargs#fband">fband</a> times the number of atoms. This parameter is not echoed in the
+top of the main output file, but only the parameter <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> that it allowed
+to compute. It is also not present in the dtset array (no internal).<br />
+The default values are chosen such as to give naturally some conduction bands.
+This improves the robustness of the code, since this allows to identify lack
+of convergence coming from (near-)degeneracies at the Fermi level. In the
+metallic case, the number of bands generated might be too small if the
+smearing factor is large. The occupation numbers of the higher bands should be
+small enough such as to neglect higher bands. It is difficult to automate
+this, so a fixed default value has been chosen.</p>
+<h2 id="iatsph"><strong>iatsph</strong><a class="headerlink" href="#iatsph" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Index for the ATomic SPHeres of the atom-projected density-of-states<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a>)<br />
+Default value: [1 .. <a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a>]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a> == 3 or <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a> in [1,2]  </p>
+<p><a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a> gives the number of the <a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> atoms around which the sphere
+for atom-projected density-of-states will be build, in the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3 case.
+The radius of these spheres is given by <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a>.<br />
+If <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a>=1 or 2, it gives the number of the <a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> atoms around
+which atom-projected band structure will be built.</p>
+<h2 id="icoulomb"><strong>icoulomb</strong><a class="headerlink" href="#icoulomb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Index for the Coulomb TReaTMenT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Defines the type of computation used for Hartree potential, local part of
+pseudo-potential and ion-ion interaction:</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vargs#icoulomb">icoulomb</a>=0 : usual reciprocal space computation, using 1 / g^2 for the Hartree potential and using Ewald correction. </li>
+<li><a class="wikilink" href="../../input_variables/vargs#icoulomb">icoulomb</a>=1 : free boundary conditions are used when the Hartree potential is computed, real space expressions of pseudo-potentials are involved (restricted to GTH pseudo-potentials) and simple coulomb interaction gives the ion-ion energy. </li>
+</ul>
+<h2 id="iprcel"><strong>iprcel</strong><a class="headerlink" href="#iprcel" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for PReConditioning of ELectron response<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used when <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;0, to define the SCF preconditioning scheme. Potential-
+based preconditioning schemes for the SCF loop (electronic part) are still a
+subject of active research. The present parameter (electronic part) describes
+the way the change of potential is derived from the residual.<br />
+The possible values of <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> correspond to :</p>
+<ul>
+<li>0 =&gt; model dielectric function described by <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a>, <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a> and <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a>. </li>
+<li>larger or equal to 21 =&gt; will compute the dielectric matrix according to <a class="wikilink" href="../../input_variables/vargs#diecut">diecut</a>, <a class="wikilink" href="../../input_variables/vargs#dielam">dielam</a>, <a class="wikilink" href="../../input_variables/vargs#diegap">diegap</a>. This methodology is described in P.-M. Anglade, X. Gonze, Phys. Rev. B 78, 045126 (2008). </li>
+<li>Between 21 and 29 =&gt; for the first few steps uses the same as option 0 then compute RPA dielectric function, and use it as such. </li>
+<li>Between 31 and 39 =&gt; for the first few steps uses the same as option 0 then compute RPA dielectric function, and use it, with the mixing factor <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a>. </li>
+<li>Between 41 and 49 =&gt; compute the RPA dielectric matrix at the first step, and recompute it at a later step, and take into account the mixing factor <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a>. </li>
+<li>Between 51 and 59 =&gt; same as between 41 and 49, but compute the RPA dielectric matrix by another mean </li>
+<li>Between 61 and 69 =&gt; same as between 41 and 49, but compute the electronic dielectric matrix instead of the RPA one. </li>
+<li>Between 71 and 78 =&gt; STILL UNDER DEVELOPMENT &ndash; NOT USABLE ; Use the modified Kerker preconditioner with a real-space formulation (basic formulation is shown at <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a>). The dielectric matrix is approximated thanks to <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a> and <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a>. Note that <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> is also used. </li>
+<li>79 =&gt; STILL UNDER DEVELOPMENT &ndash; NOT USABLE ; same as previous but with an alternate algorithm. </li>
+<li>141 to 169 =&gt; same as Between 41 and 69 (but, the dielectric matrix is also recomputed every iprcel modulo 10 step). </li>
+</ul>
+<p>The computation of the dielectric matrix (for 0 [100]&lt; <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &lt; 70
+[100]) is based on the <strong> extrapolar </strong> approximation. This approximation can
+be tuned with <a class="wikilink" href="../../input_variables/vargs#diecut">diecut</a>, <a class="wikilink" href="../../input_variables/vargs#dielam">dielam</a>, and <a class="wikilink" href="../../input_variables/vargs#diegap">diegap</a>. Yet its accuracy mainly
+depends on the number of conduction bands included in the system. Having 2 to
+10 empty bands in the calculation is usually enough (use <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>).  </p>
+<p>NOTES:</p>
+<ul>
+<li>The step at which the dielectric matrix is computed or recomputed is determined by modulo(<a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>,10). The recomputation happens just once in the calculation for <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &lt; 100. </li>
+<li>For non-homogeneous relatively large cells <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>=45 will likely give a large improvement over <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>=0. </li>
+<li>In case of PAW and <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>&gt;0, see <a class="wikilink" href="../../input_variables/varpaw#pawsushat">pawsushat</a> input variable. By default, an approximation (which can be suppressed) is done for the computation of susceptibility matrix. </li>
+<li>For extremely large inhomogeneous cells where computation of the full dielectric matrix takes too many weeks, 70 &lt; <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> &lt; 80 is advised. </li>
+<li>For <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2 or <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2 with metallic <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>, only <strong> mod(iprcel,100) </strong> &lt;50 is allowed. </li>
+<li>No meaning for RF calculations yet. </li>
+<li>The exchange term in the full dielectric matrix diverges for vanishing densities. Therefore the values of <a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a> beyond 60 must not be used for cells containing vacuum, unless ones computes this matrix for every step (<a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>=161). </li>
+</ul>
+<h2 id="iqpt"><strong>iqpt</strong><a class="headerlink" href="#iqpt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Index for QPoinT generation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Only used if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1, and <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=1 to 4.</p>
+<p>Defines the index of the Q point to be selected in the list of q points
+generated by <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a>, <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>, <a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a>, and <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>.</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>=0, then the q point is Gamma (0 0 0).</p>
+<p>The usual working mode is to define a series of values for <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>, starting
+with <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>=0 or 1 (so through the definition of <strong> iqpt: </strong> ), and
+increasing it by one for each dataset (thanks to <strong> iqpt+ </strong> ).</p>
+<h2 id="ixcpositron"><strong>ixcpositron</strong><a class="headerlink" href="#ixcpositron" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for the eXchange-Correlation applied to the electron-POSITRON interaction<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Comment: (Teter parameterization). However, if all the pseudopotentials have the same value of pspxc, the initial value of ixc will be that common value  </p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>/=0.<br />
+Define the type of electron-positron correlation that is used in case of a
+electron-positron two-component DFT calculation.<br />
+Define also the analytical formula of the enhancement factor used to compute
+the electron-positron annhilation rate:  </p>
+<p>Electron-positron correlation functional:  </p>
+<p><strong> ixcpositron=1 </strong> : LDA zero positron density limit parametrized by Arponen &amp; Pajanne and provided by Boronski &amp; Nieminen [1,2] <br />
+<strong> ixcpositron=11 </strong> : LDA zero positron density limit parametrized by Arponen &amp; Pajanne and fitted by Sterne &amp; Kaiser [1,3] <br />
+<strong> ixcpositron=2 </strong> : LDA electron-positron correlation provided by Puska, Seitsonen, and Nieminen [1,4] <br />
+<strong> ixcpositron=3 </strong> : GGA zero positron density limit parametrized by Arponen &amp; Pajanne and provided by Boronski &amp; Nieminen [1,2,5] <br />
+<strong> ixcpositron=31 </strong> : GGA zero positron density limit parametrized by Arponen &amp; Pajanne and fitted by Sterne &amp; Kaiser [1,3,5] 
+Annihilation rate enhancement factor:  </p>
+<p><strong> ixcpositron=1 </strong> : Boronski and Nieminen full modelisation and RPA limit [1] <br />
+<strong> ixcpositron=11 </strong> : Sterne and Kaiser [2] <br />
+<strong> ixcpositron=2 </strong> : Puska, Seitsonen and Nieminen [3] <br />
+<strong> ixcpositron=3 </strong> : Boronski and Nieminen full modelisation and RPA limit [1], with GGA corrections <br />
+<strong> ixcpositron=31 </strong> : Sterne and Kaiser [2], with GGA corrections   </p>
+<p>References:  <strong> [1] </strong> J. Arponen and E. Pajanne, Ann. Phys. (N.Y.) 121, 343
+(1979).<br />
+<strong> [2] </strong> Boronski and R.M. Nieminen, Phys. Rev. B 34, 3820 (1986). <br />
+<strong> [3] </strong> P.A. Sterne and J.H. Kaiser, Phys. Rev. B 43, 13892 (1991). <br />
+<strong> [4] </strong> M.J. Puska, A.P. Seitsonen and R.M. Nieminen, Phys. Rev. B 52, 10947 (1994). <br />
+<strong> [5] </strong> B. Barbiellini, M.J. Puska, T. Torsti and R.M.Nieminen, Phys. Rev. B 51, 7341 (1994)   </p>
+<h2 id="jellslab"><strong>jellslab</strong><a class="headerlink" href="#jellslab" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: include a JELLium SLAB in the cell<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If set to 1, a slab of uniform positive background charge density, that is, a
+jellium slab, is included in the calculation cell. A portion of the unit cell
+is filled with such positive charge density distribution which is equal to a
+bulk-mean value n  bulk  between two edges and zero in the vacuum region if
+present.<br />
+For the sake of convenience the unit cell is supposed to have the third
+crystal primitive lattice vector orthogonal to the other ones so that the
+portion of the cell filled by the jellium slab can be defined through its
+edges along z.<br />
+The bulk-mean positive charge density is fixed by the input variable
+<a class="wikilink" href="../../input_variables/vargs#slabwsrad">slabwsrad</a>, while the position of the slab edges along z is defined through
+the input variables <a class="wikilink" href="../../input_variables/vargs#slabzbeg">slabzbeg</a> and <a class="wikilink" href="../../input_variables/vargs#slabzend">slabzend</a>.</p>
+<h2 id="kptbounds"><strong>kptbounds</strong><a class="headerlink" href="#kptbounds" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: K PoinT BOUNDarieS<br />
+Variable type: real<br />
+Dimensions: (3,abs(<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>)+1))<br />
+Default value: None  </p>
+<p>It is used to generate the circuit to be followed by the band structure, when
+<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is negative (it is not read if <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is zero or positive).</p>
+<p>There are abs(<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>) segments to be defined, each of which starting from
+the end point of the preceeding one. Thus, the number of points to be input is
+abs(<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>)+1. They form a circuit starting at
+<a href="1:3,1">[kptbounds]</a>/<a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a> and ending at
+<a href="1:3,abs([[kptopt]])+1">[kptbounds]</a>/<a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>. The number of divisions of
+each segment can be defined either using the array <a class="wikilink" href="../../input_variables/vargs#ndivk">ndivk</a> or the variable
+<a class="wikilink" href="../../input_variables/vargs#ndivsm">ndivsm</a> that just defines the number of divisions for the smallest segment</p>
+<p>As for <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a>, <a class="wikilink" href="../../input_variables/vargs#kptbounds">kptbounds</a> is specified using the primitive vectors in
+reciprocal space. If your Bravais lattice is simple, then it should be quite
+easy to find the coordinates of the end points. On the other hand, for
+centered, body-centered, face-centered, hexagonal, and rhombohedral Bravais
+lattice, the conversion might be more difficult. See the description of
+<a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a> for an explanation of how to convert data from the &ldquo;conventional&rdquo;
+cartesian coordinates to the primitive vectors in the reciprocal space. In
+order to help a bit, we list below a series of typical values, for the FCC,
+BCC, hexagonal and rhombohedral Bravais lattices. Note : all the data below
+are given in dimensionless units ; they have to be rescaled by the actual
+lengths defined by the <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> values. However, <a class="wikilink" href="../../input_variables/vargs#kptbounds">kptbounds</a> values can be
+used as such, if the values of <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> given below are adopted.</p>
+<p>A. <strong> FCC lattice </strong></p>
+<p>Suppose the primitive vectors in real space are given by  </p>
+<div class="codehilite"><pre><span></span>  rprim   0 1 1    1 0 1    1 1 0
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre><span></span>  rprim   0 1/2 1/2    1/2 0 1/2    1/2 1/2 0
+</pre></div>
+
+
+<p>(these two possibilities only differ by a scaling factor, irrelevant for the
+definition of the k points in the primitive vectors in reciprocal space).
+Then, the reciprocal primitive vectors (in conventional cartesian coordinates)
+are</p>
+<div class="codehilite"><pre><span></span>  (-1/2 1/2 1/2), (1/2 -1/2 1/2), (1/2 1/2 -1/2)
+</pre></div>
+
+
+<p>or</p>
+<div class="codehilite"><pre><span></span>  (-1 1 1), (1 -1 1), (1 1 -1)
+</pre></div>
+
+
+<p>and, in both cases, the coordinates of several special points with respect to
+primitive vectors in reciprocal space are</p>
+<div class="codehilite"><pre><span></span>  X (0   1/2 1/2)   (conventional cartesian coordinate 1/2 0 0)
+  X&#39;(1/2 1/2 1  )   (conventional cartesian coordinate 1/2 1/2 0)  (an other instance of X, in another Brillouin zone)
+  L (1/2 1/2 1/2)   (conventional cartesian coordinate  1/4 1/4 1/4)
+  L&#39;(1/2 0   0  )   (conventional cartesian coordinate -1/4 1/4 1/4) (an other instance of L, on another face of the BZ)
+  W (1/4 1/2 3/4)   (conventional cartesian coordinate 1/2 1/4 0)
+  U (1/4 5/8 5/8)   (conventional cartesian coordinate 1/2 1/8 1/8)
+  K (3/8 3/8 3/4)   (conventional cartesian coordinate 3/8 3/8 0)
+</pre></div>
+
+
+<p>Note that K is actually equivalent to U, by spatial and translational
+symmetry. So, if you want to specify a typical circuit, the following might do
+the work : L-Gamma-X-W-K,U-L-W-X-K,U-Gamma with  </p>
+<div class="codehilite"><pre><span></span>  kptbounds  1/2 0 0  0 0 0  0 1/2 1/2  1/4 1/2 3/4  3/8 3/8 3/4  1/2 1/2 1/2  1/4 1/2 3/4  1/2 1/2 1  3/8 3/8 3/4  0 0 0
+</pre></div>
+
+
+<p>The lengths of segments (this information is useful to draw the band
+structure, with the correct relative scale between special points) can be
+found using the conventional cartesian coordinates :
+l(L-Gamma)=sqrt(3)/4=0.433&hellip; ; l(Gamma-X)=1/2=0.5 ; l(X-W)=1/4=0.25 ;
+l(W-K)=sqrt(2)/8=0.177&hellip; ; l(K-L)=sqrt(6)/8=0.306&hellip; ;
+l(L-W)=sqrt(2)/4=0.354&hellip; ; l(W-X)=1/4=0.25 ; l(X-K)=sqrt(2)/8=0.177&hellip; ;
+l(K-Gamma)=sqrt(2).3/8=0.530&hellip;</p>
+<p>B. <strong> BCC lattice </strong></p>
+<p>Suppose the primitive vectors in real space are given by  </p>
+<div class="codehilite"><pre><span></span>  rprim  -1 1 1    1 -1 1    1 1 -1
+</pre></div>
+
+
+<p>(as for the FCC lattice, there is a scale invariance). Then, the reciprocal
+primitive vectors (in conventional cartesian coordinates) are (0 1/2 1/2),
+(1/2 0 1/2), and (1/2 1/2 0) and the coordinates of several special points
+with respect to primitive vectors in reciprocal space are</p>
+<div class="codehilite"><pre><span></span>  H (-1/2 1/2 1/2)   (conventional cartesian coordinate 1/2 0 0)
+  N ( 0   0   1/2)   (conventional cartesian coordinate 1/4 1/4 0)
+  P ( 1/4 1/4 1/4)   (conventional cartesian coordinate 1/4 1/4 1/4)
+</pre></div>
+
+
+<dl>
+<dt>So, if you want to specify a typical circuit, the following might do the work</dt>
+<dd>
+<p>Gamma-H-N-Gamma-P-N-P-H  </p>
+<p>kptbounds  0 0 0  -1/2 1/2 1/2  0 0 1/2  0 0 0   1/4 1/4 1/4  0 0 1/2  1/4 1/4 1/4  -1/2 1/2 1/2</p>
+</dd>
+</dl>
+<p>The lengths of segments (this information is useful to draw the band
+structure, with the correct relative scale between special points) can be
+found using the conventional cartesian coordinates : l(Gamma-H)=1/2=0.5 ;
+l(H-N)=sqrt(2)/4=0.354&hellip; ; l(N-Gamma)=sqrt(2)/4=0.354&hellip; ;
+l(Gamma-P)=sqrt(3)/4=0.433&hellip; ; l(P-N)=1/4=0.25 ; l(N-P)=1/4=0.25 ;
+l(P-H)=sqrt(3)/4=0.433&hellip;</p>
+<p>C. <strong> Hexagonal lattices </strong></p>
+<p>Suppose the primitive vectors in real space are given by  </p>
+<div class="codehilite"><pre><span></span>  rprim  1 0 0    -1/2 sqrt(0.75) 0    0 0 1
+</pre></div>
+
+
+<p>The coordinates of several special points with respect to primitive vectors in
+reciprocal space are</p>
+<div class="codehilite"><pre><span></span>  M (1/2 0 0) or (0 1/2 0) or (-1/2 1/2 0)
+  L (1/2 0 1/2) or (0 1/2 1/2) or (-1/2 1/2 1/2)
+  K (1/3 1/3 0) or (2/3 -1/3 0) or (-1/3 2/3 0)
+  H (1/3 1/3 1/2) or (2/3 -1/3 1/2) or (-1/3 2/3 1/2)
+  A (0 0 1/2)
+</pre></div>
+
+
+<dl>
+<dt>So, if you want to specify a typical circuit, the following might do the work</dt>
+<dd>
+<p>K-Gamma-M-K-H-A-L-H-L-M-Gamma-A  </p>
+<p>kptbounds  1/3 1/3 0  0 0 0  1/2 0 0  1/3 1/3 0  1/3 1/3 1/2  0 0 1/2  1/2 0 1/2  1/3 1/3 1/2  1/2 0 1/2  1/2 0 0  0 0 0  0 0 1/2</p>
+</dd>
+</dl>
+<p>In order to find the lengths of segments (this information is useful to draw
+the band structure, with the correct relative scale between special points)
+one needs to know the a and c lattice parameters. Also, in what follows, we
+omit the 2<em>pi factor sometimes present in the definition of the reciprocal
+space vectors. The reciprocal vectors are (1/a 1/(sqrt(3)</em>a) 0) , (0
+2/(sqrt(3)<em>a) 0), (0 0 1/c). The lengths of the above-mentioned segments can
+be computed as : l(K-Gamma)=2/(3</em>a)=0.666&hellip;/a ;
+l(Gamma-M)=1/(sqrt(3)<em>a)=0.577&hellip;/a ; l(M-K)=1/(3</em>a)=0.333&hellip;/a ;
+l(K-H)=1/(2<em>c)=0.5&hellip;/c ; l(H-A)=2/(3</em>a)=0.666&hellip;/a ;
+l(A-L)=1/(sqrt(3)<em>a)=0.577&hellip;/a ; l(L-H)=1/(3</em>a)=0.333&hellip;/a ;
+l(H-L)=1/(3<em>a)=0.333&hellip;/a ; l(L-M)=1/(2</em>c)=0.5&hellip;/c ;
+l(M-Gamma)=-1/(sqrt(3)<em>a)=0.577&hellip;/a ; l(Gamma-A)=1/(2</em>c)=0.5&hellip;/c</p>
+<p>D. <strong> Rhombohedral lattices </strong></p>
+<p>Rhombohedral lattices are characterised by two parameters, the length of the
+primitive vectors, that we will denote a0, and the angle they form, alpha.
+These can be directly input of ABINIT, as <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#angdeg">angdeg</a></p>
+<p>This will generate the primitive vectors in real space , with</p>
+<div class="codehilite"><pre><span></span>  [[acell]] a0 a0 a0    and      [[rprim]]  a 0 c    -a/2 a*sqrt(0.75) c    -a/2 -a*sqrt(0.75) c
+</pre></div>
+
+
+<p>with a^2+c^2=1, a^2=(1-cos(alpha))<em>2/3, c^2=(1+2</em>cos(alpha))<em>1/3,
+(a/c)^2=2</em>(1-cos(alpha))/(1+2*cos(alpha)) and also
+cos(alpha)=(1-(a/c)^2/2)/(1+(a/c)^2). Alternatively, these values of rprim
+might directly be the input of ABINIT (then, the balance of the scaling factor
+might be adjusted between <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>).</p>
+<p>Unlike for the simple cubic, FCC, BCC, hexagonal (and some other) Bravais
+lattice, the topology of the Brillouin zone will depend on the alpha (or a/c)
+value. We give below information concerning the case when cos(alpha) is
+positive, that is, (a/c)^2 lower than 2.</p>
+<p>The coordinates of several special points with respect to primitive vectors in
+reciprocal space will not depend on the a/c ratio, but some others will depend
+on it. So, some care has to be exercised. Notations for the Brillouin Zone
+special points are the same as in Phys. Rev. B 41, 11827 (1990).</p>
+<div class="codehilite"><pre><span></span>  L (1/2 0 0) or (0 1/2 0) or (0 0 1/2) (or with negative signs)
+  T (1/2 1/2 1/2)
+  X (1/2 1/2 0) or (1/2 0 1/2) or (0 1/2 1/2) (or with separate negative signs)
+  W (5/6 - (a/c)^2/6 , 1/2 , 1/6 + (a/c)^2/6 ) = (1 0 -1)*(1-(a/c)^2/2)/3 + (1 1 1)/2
+  U ( (1+(a/c)^2)/6 , (8-(a/c)^2)/12 , (8-(a/c)^2)/12 ) = (-1 1/2 1/2)*(1-(a/c)^2/2)/3 + (1 1 1)/2
+  K (1 0 -1)*(1+(a/c)^2/4)/3
+</pre></div>
+
+
+<p>So, if you want to specify a typical circuit, the following might do the work
+(the representative points on lines of symmetry are indicated - there are
+sometimes more than one way to go from one point to another) : X-V-K-Sigma-
+Gamma-Lambda-T-Q-W-Y-L-sigma-Gamma-sigma-X . The suggestion is to sample this
+path with the following coordinates for the special points X, Gamma, T, L,
+Gamma, X :  </p>
+<div class="codehilite"><pre><span></span>  kptbounds  1/2 0 -1/2   0 0 0    1/2 1/2 1/2  1 1/2 0   1 0 0  1 1/2 1/2
+</pre></div>
+
+
+<p>In order to find the lengths of segments (this information is useful to draw
+the band structure, with the correct relative scale between special points)
+one needs to know the a and c lattice parameters. Also, in what follows, we
+omit the 2<em>pi factor sometimes present in the definition of the reciprocal
+space vectors. The reciprocal vectors are (2/(3</em>a) 0 1/(3<em>c)) , -(1/(3</em>a)
+1/(sqrt(3)<em>a) 1/(3</em>c), -(1/(3<em>a) -1/(sqrt(3)</em>a) 1/(3<em>c) ). The lengths of the
+above-mentioned segments can be computed as :
+l(X-Gamma)=2/(sqrt(3)</em>a)=1.155&hellip;/a , with
+l(K-Gamma)=(1+(a/c)^2/4)<em>4/(3</em>sqrt(3)<em>a); l(Gamma-T)=1/(2</em>c) ;
+l(T-L)=2/(sqrt(3)<em>a)=1.155&hellip;/a , with l(T-W)=(1-(a/c)^2/2)</em>4/(3<em>sqrt(3)</em>a);
+l(L-Gamma)=sqrt(4/(a^2)+1/(c^2))/3 l(Gamma-X)=sqrt(1/(a^2)+1/(c^2))*2/3</p>
+<h2 id="kptrlatt"><strong>kptrlatt</strong><a class="headerlink" href="#kptrlatt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: K - PoinTs grid : Real space LATTice<br />
+Variable type: integer<br />
+Dimensions: (3,3)<br />
+Default value: *0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>)  </p>
+<p>This input variable is used only when <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is positive. It partially
+defines the k point grid. The other piece of information is contained in
+<a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>. <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> cannot be used together with <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>.</p>
+<p>The values kptrlatt(1:3,1), kptrlatt(1:3,2), kptrlatt(1:3,3) are the
+coordinates of three vectors in real space, expressed in the <a class="wikilink" href="../../input_variables/varbas#rprimd">rprimd</a>
+coordinate system (reduced coordinates). They defines a super-lattice in real
+space. The k point lattice is the reciprocal of this super-lattice, possibly
+shifted (see <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>).</p>
+<p>If neither <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> nor <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> are defined, ABINIT will automatically
+generate a set of k point grids, and select the best combination of
+<a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> and <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a> that allows to reach a sufficient value of
+<a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>. See this latter variable for a complete description of this
+procedure.</p>
+<h2 id="kptrlen"><strong>kptrlen</strong><a class="headerlink" href="#kptrlen" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: K - PoinTs grid : Real space LENgth<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 30.0  </p>
+<p>This input variable is used only when <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is positive and non-zero.</p>
+<p>Preliminary explanation :<br />
+The k point lattice defined by <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> or <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> is used to perform
+integrations of periodic quantities in the Brillouin Zone, like the density or
+the kinetic energy. One can relate the error made by replacing the continuous
+integral by a sum over k point lattice to the Fourier transform of the
+periodic quantity. Erroneous contributions will appear only for the vectors in
+real space that belong to the reciprocal of the k point lattice, except the
+origin. Moreover, the expected size of these contributions usually decreases
+exponentially with the distance. So, the length of the smallest of these real
+space vectors is a measure of the accuracy of the k point grid.</p>
+<p>When either <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> or <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> is defined, <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a> is not used as
+an input variable, but the length of the smallest vector will be placed in
+this variable, and echoed in the output file.</p>
+<p>On the other hand, when neither <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> nor <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> are defined, ABINIT
+will automatically generate a large set of possible k point grids, and select
+among this set, the grids that give a length of smallest vector LARGER than
+<a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>, and among these grids, the one that, when used with <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=1,
+reduces to the smallest number of k points. Note that this procedure can be
+time-consuming. It is worth doing it once for a given unit cell and set of
+symmetries, but not use this procedure by default. The best is then to set
+<a class="wikilink" href="../../input_variables/varfil#prtkpt">prtkpt</a>=1, in order to get a detailed analysis of the set of grids.</p>
+<p>If some layer of vacuum is detected in the unit cell (see the input variable
+<a class="wikilink" href="../../input_variables/vargs#vacuum">vacuum</a>), the computation of <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a> will ignore the dimension related
+to the direction perpendicular to the vacuum layer, and generate a bi-
+dimensional k point grid. If the system is confined in a tube, a one-
+dimensional k point grid will be generated. For a cluster, this procedure will
+only generate the Gamma point.</p>
+<h2 id="magcon_lambda"><strong>magcon_lambda</strong><a class="headerlink" href="#magcon_lambda" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MAGnetization CONstraint LAMBDA parameter<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 10.0  </p>
+<p>This variable gives the amplitude of the constraint imposed on the
+magnetization vectors on each atom (turned on with flag variable
+<a class="wikilink" href="../../input_variables/vargs#magconon">magconon</a>). Typical values for lambda are 10 to a few hundred. The energy
+will vary strongly and convergence will be difficult if lambda is too large.
+The constraint will be weak and the magnetization will not be close to
+<a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> if lambda is too small. See variable <a class="wikilink" href="../../input_variables/vargs#magconon">magconon</a> for more details.</p>
+<h2 id="magconon"><strong>magconon</strong><a class="headerlink" href="#magconon" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: turn MAGnetization CONstraint ON<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Turns on the imposition of a Lagrangian constraint on the magnetization. For
+each atom, the magnetization is calculated in a sphere (radius <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a>) and
+a constraint is applied to bring it closer to the input values of <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a>.
+The constraint can be either on the direction only (magconon 1) or on the full
+vector (magconon 2). The Lagrangian constraint has an amplitude
+<a class="wikilink" href="../../input_variables/vargs#magcon_lambda">magcon_lambda</a> which should be neither too big (bad or impossible
+convergence) nor too small (no effect).</p>
+<h2 id="mixalch"><strong>mixalch</strong><a class="headerlink" href="#mixalch" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MIXing coefficients for ALCHemical potentials<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a>,<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>)<br />
+Default value: None  </p>
+<p>Used for the generation of alchemical pseudoatoms, that is, when <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>
+is non-zero.</p>
+<p>This array gives, for each type of alchemical pseudatom (there are
+<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> such pseudoatoms), the mixing coefficients of the basic
+<a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a> pseudopotentials for alchemical use. For each type of alchemical
+pseudoatom, the sum of the mixing coefficients must equal 1.</p>
+<p>The actual use of the mixing coefficients is defined by the input variable
+<a class="wikilink" href="../../input_variables/vargs#algalch">algalch</a>. Note that the masses of the atoms, <a class="wikilink" href="../../input_variables/varrlx#amu">amu</a> are also mixed
+according to the value of <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a>, by default.</p>
+<p>Example 1. Suppose that we want to describe Ba(0.25) Sr(0.75) Ti O3.<br />
+The input variables related to the construction of the alchemical Ba(0.25)
+Sr(0.75) potential will be :</p>
+<div class="codehilite"><pre><span></span>  npsp   4                 ! 4 pseudopotentials should be read.
+  znucl  8 40 56 38        ! The nuclear charges. Note that the two
+                           ! atoms whose pseudopotentials are to be mixed
+                           ! are mentioned at the end of the series.
+  ntypat  3                ! There will be three types of atoms.
+  ntypalch   1             ! One pseudoatom will be alchemical.
+                           ! Hence, there will be ntyppure=2 pure pseudoatoms,
+                           ! with znucl 8 (O) and 40 (Ti), corresponding to
+                           ! the two first pseudopotentials. Out of the
+                           ! four pseudopotentials, npspalch=2 are left
+                           ! for alchemical purposes, with znucl 56 (Ba)
+                           ! and 38 (Sr).
+  mixalch    0.25  0.75    ! For that unique pseudoatom to be
+                           ! generated, here are the mixing coeeficients,
+                           ! to be used to combine the Ba and Sr pseudopotentials.
+</pre></div>
+
+
+<p>Example 2. More complicated, and illustrate some minor drawback of the design
+of input variables. Suppose that one wants to generate Al(0.25)Ga(0.75)
+As(0.10)Sb(0.90).<br />
+The input variables will be :</p>
+<div class="codehilite"><pre><span></span>  npsp  4                  ! 4 pseudopotentials should be read
+  znucl  13 31 33 51       ! The atomic numbers. All pseudopotentials
+                           ! will be used for some alchemical purpose
+  ntypat  2                ! There will be two types of atoms.
+  ntypalch   2             ! None of the atoms will be &quot;pure&quot;.
+                           ! Hence, there will be npspalch=4 pseudopotentials
+                           !  to be used for alchemical purposes.
+  mixalch    0.25  0.75 0.0  0.0   ! This array is a (4,2) array, arranged in the
+             0.0   0.0  0.1  0.9   ! usual Fortran order.
+</pre></div>
+
+
+<p>Minor drawback : one should not forget to fill <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> with the needed
+zero&rsquo;s, in this later case.</p>
+<p>In most cases, the use of <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> will be as a static (non-evolving)
+variable. However, the possibility to have different values of <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> for
+different images has been coded. A population of cells with different atomic
+characteristics can thus be considered, and can be made to evolve, e.g. with a
+genetic algorithm (not coded in v7.0.0 though). There is one restriction to
+this possibility : the value of <a class="wikilink" href="../../input_variables/varint#ziontypat">ziontypat</a> for the atoms that are mixed
+should be identical.</p>
+<h2 id="natsph"><strong>natsph</strong><a class="headerlink" href="#natsph" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of ATomic SPHeres for the atom-projected density-of-states<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#natom">natom</a><br />
+Only relevant if <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a> == 3 or <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a> in [1,2]  </p>
+<p><a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> gives the number of atoms around which the sphere for atom-
+projected density-of-states will be built, in the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3 case. The
+indices of these atoms are given by <a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a>. The radius of these spheres is
+given by <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a>.<br />
+If <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a>=1 or 2, it gives the number of atoms around which atom-
+projected band structure will be built (the indices of these atoms are given
+by <a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a>).</p>
+<h2 id="natsph_extra"><strong>natsph_extra</strong><a class="headerlink" href="#natsph_extra" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of ATomic SPHeres for the l-projected density-of-states in EXTRA set<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a> == 3 or <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a> in [1,2]  </p>
+<p><a class="wikilink" href="../../input_variables/vargs#natsph_extra">natsph_extra</a> gives the number of extra spheres for which the angular-
+momentum-projected density-of-states will be built, in the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3 case.
+The radius of these spheres is given by <a class="wikilink" href="../../input_variables/vargs#ratsph_extra">ratsph_extra</a>. This simulates the
+STS signal for an STM tip atom placed at the sphere position, according to the
+chemical nature of the tip (s- p- d- wave etc&hellip;).<br />
+If <a class="wikilink" href="../../input_variables/varpaw#pawfatbnd">pawfatbnd</a>=1 or 2, it gives the number of spheres in which l-projected
+band structure will be built.<br />
+The position of the spheres is given by the <a class="wikilink" href="../../input_variables/vargs#xredsph_extra">xredsph_extra</a> variable.</p>
+<h2 id="nbdbuf"><strong>nbdbuf</strong><a class="headerlink" href="#nbdbuf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of BanDs for the BUFfer<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2<em><a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==0 and <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;0,
+2</em><a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==1 and 3&lt;=<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> and <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>&lt;= 8,
+0 otherwise.</p>
+<p><a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> gives the number of bands, the highest in energy, that, among the
+<a class="wikilink" href="../../input_variables/varbas#nband">nband</a> bands, are to be considered as part of a buffer. This concept is
+useful in three situations: in non-self-consistent calculations, for the
+determination of the convergence tolerance ; for response functions of metals,
+to avoid instabilities, and also when finite electric fields or non-linear
+responses (with electric field perturbations) are considered. For the two
+first, the need of a buffer is a natural requirement of the problem, so that
+the default value is changed to 2 automatically, as explained in the
+following. The third case is only for implementation convenience.</p>
+<p>In non-self-consistent GS calculations (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;0), the highest levels
+might be difficult to converge, if they are degenerate with another level,
+that does not belong to the set of bands treated. Then, it might take
+extremely long to reach <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a>, although the other bands are already
+extremely well-converged, and the energy of the highest bands (whose residual
+are not yet good enough), is also rather well converged.<br />
+In response to this problem, for non-zero <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a>, the largest residual
+(residm), to be later compared with <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a>, will be computed only in the
+set of non-buffer bands (this modification applies for non-self-consistent as
+well as self-consistent calculation, for GS as well as RF calculations).<br />
+For a GS calculation, with <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;0, supposing <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> is not
+initialized in the input file, then ABINIT will overcome the default
+<a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> value, and automatically set <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> to 2.</p>
+<p>In metallic RF calculations, in the conjugate gradient optimisation of first-
+order wavefunctions, there is an instability situation when the q wavevector
+of the perturbation brings the eigenenergy of the highest treated band at some
+k point higher than the lowest untreated eigenenergy at some k+q point. If one
+accepts a buffer of frozen states, this instability can be made to disappear.
+Frozen states receive automatically a residual value of -0.1d0.<br />
+For a RF calculation, with 3&lt;=<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>&lt;=7, supposing <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> is not
+initialized in the input file, then ABINIT will overcome the default
+<a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> value, and automatically set <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a> to 2. This value might be
+too low in some cases.</p>
+<p>Also, the number of active bands, in all cases, is imposed to be at least 1,
+irrespective of the value of <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a>.</p>
+<h2 id="ndivk"><strong>ndivk</strong><a class="headerlink" href="#ndivk" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of DIVisions of K lines<br />
+Variable type: integer<br />
+Dimensions: (abs(<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>))<br />
+Default value: None<br />
+Comment: Will be generated automatically from <a class="wikilink" href="../../input_variables/vargs#ndivsm">ndivsm</a> if the latter is defined.<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> &lt; 0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#ndivsm">ndivsm</a>)  </p>
+<p>Gives the number of divisions of each of the segments of the band structure,
+whose path is determined by <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> and <a class="wikilink" href="../../input_variables/vargs#kptbounds">kptbounds</a>. In this case, the
+absolute value of <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is the number of such segments.</p>
+<p>For example, suppose that the number of segment is just one (<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=-1), a
+value <a class="wikilink" href="../../input_variables/vargs#ndivk">ndivk</a>=4 will lead to the computation of points with relative
+coordinates 0.0, 0.25, 0.5, 0.75 and 1.0 , along the segment in consideration.</p>
+<p>Now, suppose that there are two segments (<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=-2), with <a href="../1">[ndivk]</a>=4
+and <a href="../2">[ndivk]</a>=2, the computation of the eigenvalues will be done at 7
+points, 5 belonging to the first segment, with relative coordinates 0.0, 0.25,
+0.5, 0.75 and 1.0, the last one being also the starting point of the next
+segment, for which two other points must be computed, with relative
+coordinates 0.5 and 1.0 .</p>
+<p>It is easy to compute disconnected circuits (non-chained segments), by
+separating the circuits with the value <a class="wikilink" href="../../input_variables/vargs#ndivk">ndivk</a>=1 for the intermediate
+segment connecting the end of one circuit with the beginning of the next one
+(in which case no intermediate point is computed along this segment).</p>
+<p>Alternatively it is possible to generate automatically the array <a class="wikilink" href="../../input_variables/vargs#ndivk">ndivk</a> by
+just specifying the number of divisions for the smallest segment. See the
+related input variable <a class="wikilink" href="../../input_variables/vargs#ndivsm">ndivsm</a>.</p>
+<h2 id="ndivsm"><strong>ndivsm</strong><a class="headerlink" href="#ndivsm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of DIVisions for the SMallest segment<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This variable defines the number of divisions used to sample the smallest
+segment of the circuit employed in a band structure calculations (see related
+input variables <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> and <a class="wikilink" href="../../input_variables/vargs#kptbounds">kptbounds</a>). If <a class="wikilink" href="../../input_variables/vargs#ndivsm">ndivsm</a> is given in the
+input file, there is no need to specify the number of divisions to be used for
+the other segments. Indeed <a class="wikilink" href="../../input_variables/vargs#ndivk">ndivk</a> is automatically calculated inside the
+code in order to generate a path where the number of divisions in each segment
+is proportional to the length of the segment itself. This option is activated
+only when <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is negative. In this case, the absolute value of
+<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is the number of such segments.</p>
+<h2 id="ngfft"><strong>ngfft</strong><a class="headerlink" href="#ngfft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Grid points for Fast Fourier Transform<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: [0, 0, 0]<br />
+Comment: (automatic selection of optimal values)  </p>
+<p>gives the size of fast Fourier transform (fft) grid in three dimensions. Each
+number must be composed of the factors 2, 3, and 5 to be consistent with the
+radices available in our fft. If no <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is provided or if <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is
+set to 0 0 0, the code will automatically provide an optimal set of <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>
+values, based on <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>, <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> and <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> (see also <a class="wikilink" href="../../input_variables/vargs#boxcutmin">boxcutmin</a> for
+speed/accuracy concerns). This is the recommended procedure, of course.<br />
+The total number of FFT points is the product:<br />
+<a href="../1">[ngfft]</a><em><a href="../2">[ngfft]</a></em><a href="../3">[ngfft]</a>=nfft  .<br />
+When <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is made smaller than recommended values (e.g. by setting
+<a class="wikilink" href="../../input_variables/vargs#boxcutmin">boxcutmin</a> to a value smaller than 2.0 or by setting <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> manually),
+the code runs faster and the equations in effect are approximated by a low
+pass Fourier filter. The code reports to standard output (unit 06) a parameter
+&ldquo;boxcut&rdquo; which is the smallest ratio of the fft box side to the G vector basis
+sphere diameter. When boxcut is less than 2 the Fourier filter approximation
+is being used. When boxcut gets less than about 1.5 the approximation may be
+too severe for realistic results and should be tested against larger values of
+<a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>. When boxcut is larger than 2, <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> could be reduced without
+loss of accuracy. In this case, the small variations that are observed are
+solely due to the xc quadrature, that may be handled with <a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=1 to even
+reduce this effect.</p>
+<p>Internally, <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is an array of size 18. The present components are
+stored in <a href="../1:3">[ngfft]</a>, while</p>
+<ul>
+<li><a href="../4:6">[ngfft]</a> contains slightly different (larger) values, modified for efficiency of the FFT </li>
+<li><a href="../7">[ngfft]</a> is <a class="wikilink" href="../../input_variables/vardev#fftalg">fftalg</a> </li>
+<li><a href="../8">[ngfft]</a> is <a class="wikilink" href="../../input_variables/vardev#fftcache">fftcache</a> </li>
+<li><a href="../9">[ngfft]</a> is set to 0 if the parallelization of the FFT is not activated, while it is set to 1 if it is activated. </li>
+<li><a href="../10">[ngfft]</a> is the number of processors of the FFT group </li>
+<li><a href="../11">[ngfft]</a> is the index of the processor in the group of processors </li>
+<li><a href="../12">[ngfft]</a> is n2proc, the number of x-z planes, in reciprocal space, treated by the processor </li>
+<li><a href="../13">[ngfft]</a> is n3proc, the number of x-y planes, in real space, treated by the processor </li>
+<li><a href="../14">[ngfft]</a> is mpi_comm_fft, the handle on the MPI communicator in charge of the FFT parallelisation </li>
+<li><a href="../15:18">[ngfft]</a> are not yet used </li>
+</ul>
+<p>The number of points stored by this processor in real space is n1<em>n2</em>n3proc,
+while in reciprocal space, it is n1<em>n2proc</em>n3.</p>
+<h2 id="ngqpt"><strong>ngqpt</strong><a class="headerlink" href="#ngqpt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Grid pointsfor Q PoinTs generation<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: [0, 0, 0]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>==1 and <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>&gt;=0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>)  </p>
+<p>At variance with <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>, note that only one q point is selected per dataset
+(see <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>).<br />
+Its three positive components give the number of q points of Monkhorst-Pack
+grids (defined with respect to primitive axis in reciprocal space) in each of
+the three dimensions. The use of <a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a> and <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>, allows to
+generate shifted grids, or Monkhorst-Pack grids defined with respect to
+conventional unit cells.</p>
+<p>For more information on Monkhorst-Pack grids, see <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>.</p>
+<h2 id="nline"><strong>nline</strong><a class="headerlink" href="#nline" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of LINE minimisations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 4  </p>
+<p>Gives maximum number of line minimizations allowed in preconditioned conjugate
+gradient minimization for each band. The Default, 4, is fine.<br />
+Special cases, with degeneracies or near-degeneracies of levels at the Fermi
+energy may require a larger value of <a class="wikilink" href="../../input_variables/vargs#nline">nline</a> (5 or 6 ?) Line minimizations
+will be stopped anyway when improvement gets small. With the input variable
+<a class="wikilink" href="../../input_variables/vardev#nnsclo">nnsclo</a>, governs the convergence of the wavefunctions for fixed potential.<br />
+Note that <a class="wikilink" href="../../input_variables/vargs#nline">nline</a>=0 can be used to diagonalize the Hamiltonian matrix in the
+subspace spanned by the input wavefunctions.</p>
+<h2 id="npsp"><strong>npsp</strong><a class="headerlink" href="#npsp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PSeudoPotentials<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>  </p>
+<p>Usually, the number of pseudopotentials to be read is equal to the number of
+type of atoms. However, in the case an alchemical mixing of pseudopotential is
+to be used, often the number of pseudopotentials to be read will not equal the
+number of types of atoms.</p>
+<p>Alchemical pseudopotentials will be present when <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> is non-zero. See
+<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> to understand how to use alchemical potentials in ABINIT. The
+input variables (<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>, <a class="wikilink" href="../../input_variables/vargs#algalch">algalch</a>,<a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a>) are active, and
+generate alchemical potentials from the available pseudopotentials. Also, the
+inner variables (<a class="wikilink" href="../../input_variables/vargs#ntyppure">ntyppure</a>,<a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a>) become active. See these input
+variables, especially <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a>, to understand how to use alchemical
+potentials in ABINIT.</p>
+<h2 id="npspalch"><strong>npspalch</strong><a class="headerlink" href="#npspalch" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PSeudoPotentials that are &ldquo;ALCHemical&rdquo;<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/vargs#npsp">npsp</a>-<a class="wikilink" href="../../input_variables/vargs#ntyppure">ntyppure</a><br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>/=0  </p>
+<p>Gives the number of pseudopotentials that are used for alchemical mixing (when
+<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> is non-zero) :</p>
+<p><a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a>=<a class="wikilink" href="../../input_variables/vargs#npsp">npsp</a>-<a class="wikilink" href="../../input_variables/vargs#ntyppure">ntyppure</a></p>
+<h2 id="nqpt"><strong>nqpt</strong><a class="headerlink" href="#nqpt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Q - POINTs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Determines whether one q point must be read (See the variable <a class="wikilink" href="../../input_variables/varint#qptn">qptn</a>).<br />
+Can be either 0 or 1.<br />
+If 1 and used in ground-state calculation, a global shift of all the k-points
+is applied, to give calculation at k+q. In this case, the output wavefunction
+will be appended by _WFQ instead of _WFK (see the <a href="../../../users/generated_files/help_abinit.html"> section 4
+</a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>) Also,
+if 1 and a RF calculation is done, defines the wavevector of the perturbation.</p>
+<h2 id="nshiftq"><strong>nshiftq</strong><a class="headerlink" href="#nshiftq" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of SHIFTs for Q point grids<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>This parameter gives the number of shifted grids to be used concurrently to
+generate the full grid of q points. It can be used with primitive grids
+defined either from <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a> or <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>. The maximum allowed value of
+<a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a> is 8. The values of the shifts are given by <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>.</p>
+<h2 id="nspden"><strong>nspden</strong><a class="headerlink" href="#nspden" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of SPin-DENsity components<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1, no spin-magnetization : the density matrix is diagonal, with
+same values spin-up and spin-down (compatible with <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1 only, for both
+<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1 or 2)</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2, scalar magnetization (the axis is arbitrarily fixed in the z
+direction) : the density matrix is diagonal, with different values for spin-up
+and spin-down (compatible with <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, either with <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2
+-general collinear magnetization- or <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1 -antiferromagnetism)</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, vector magnetization : the density matrix is full, with
+allowed x, y and z magnetization (useful only with <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2 and
+<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, either because there is spin-orbit without time-reversal
+symmetry - and thus spontaneous magnetization, or with spin-orbit, if one
+allows for spontaneous non-collinear magnetism). Not yet available for
+response functions. Also note that, with <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, time-reversal symmetry
+is not taken into account (at present ; this has to be checked) and thus
+<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> has to be different from 1 or 2.</p>
+<p>The default (<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>) does not suit the case of vector
+magnetization.</p>
+<h2 id="nspinor"><strong>nspinor</strong><a class="headerlink" href="#nspinor" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of SPINORial components of the wavefunctions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2 if <a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>==1,
+1 otherwise.</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, usual case : scalar wavefunction (compatible with
+(<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1) as well as (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2) )</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2, the wavefunction is a spinor (compatible with <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1,
+with <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1 or 4, but not with <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2)</p>
+<p>When <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> is 2, the values of <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a> are automatically set to 1.
+Also, the number of bands, for each k-point, should be even.</p>
+<h2 id="ntypalch"><strong>ntypalch</strong><a class="headerlink" href="#ntypalch" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of TYPe of atoms that are &ldquo;ALCHemical&rdquo;<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used for the generation of alchemical pseudopotentials : when <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> is
+non-zero, alchemical mixing will be used.</p>
+<p>Among the <a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a> types of atoms, the last <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> will be
+&ldquo;alchemical&rdquo; pseudoatoms, while only the first <strong> ntyppure </strong> will be uniquely
+associated with a pseudopotential (the <strong> ntyppure </strong> first of these,
+actually). The <a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> types of alchemical pseudoatoms are to be made
+from the remaining <a class="wikilink" href="../../input_variables/vargs#npspalch">npspalch</a> pseudopotentials.</p>
+<p>In this case, the input variables <a class="wikilink" href="../../input_variables/vargs#algalch">algalch</a>,<a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a> are active, and
+generate alchemical potentials from the available pseudopotentials. See these
+input variables, especially <a class="wikilink" href="../../input_variables/vargs#mixalch">mixalch</a>, to understand how to use alchemical
+potentials in ABINIT.</p>
+<h2 id="ntyppure"><strong>ntyppure</strong><a class="headerlink" href="#ntyppure" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of TYPe of atoms that are &ldquo;PURe&rdquo;<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>-<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a>  </p>
+<p>Gives the number of type of atoms that are &ldquo;pure&rdquo; when alchemical mixing is
+used (<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a> /= 0) :</p>
+<p><a class="wikilink" href="../../input_variables/vargs#ntyppure">ntyppure</a>=<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>-<a class="wikilink" href="../../input_variables/vargs#ntypalch">ntypalch</a></p>
+<h2 id="nucdipmom"><strong>nucdipmom</strong><a class="headerlink" href="#nucdipmom" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: NUClear DIPole MOMents<br />
+Variable type: real<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>)<br />
+Default value: 0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a> = 1; <a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a> = 2; <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> &gt; 2  </p>
+<p>Places an array of nuclear magnetic dipole moments on the atomic positions,
+useful for computing the magnetization in the presence of nuclear dipoles and
+thus the chemical shielding by the converse method. The presence of these
+dipoles breaks time reversal symmetry and lowers the overall spatial symmetry.</p>
+<h2 id="nwfshist"><strong>nwfshist</strong><a class="headerlink" href="#nwfshist" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of WaveFunctionS HISTory<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>In the wavelet basis set, the ground state is found by direct minimisation.
+The algorithm used can be either the steepest descent or the DIIS (Direct
+Inversion of Iteration Space). When <a class="wikilink" href="../../input_variables/vargs#nwfshist">nwfshist</a> = 0, the steepest descent is
+used ( _ i.e. _ there is no history storage of the previous iterations). If
+<a class="wikilink" href="../../input_variables/vargs#nwfshist">nwfshist</a> is strictly positive, a DIIS is used. A typical value is 6. Using
+a DIIS increases the memory required by the program since N previous
+wavefunctions are stored during the electronic minimisation.</p>
+<h2 id="occ"><strong>occ</strong><a class="headerlink" href="#occ" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OCCupation numbers<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#nband">nband</a>)<br />
+Default value: *0  </p>
+<p>Gives occupation numbers for all bands in the problem. Needed if <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>==0
+or <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>==2. Ignored otherwise. Also ignored when <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=-2.<br />
+Typical band occupancy is either 2 or 0, but can be 1 for half-occupied band
+or other choices in special circumstances.<br />
+If <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> is not 2, then the occupancies must be the same for each k
+point.<br />
+If <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=2, then the band occupancies must be provided explicitly for
+each band, EACH k POINT, and EACH SPIN-POLARIZATION, in an array which runs
+over all bands, k points, and spin-polarizations.<br />
+The order of entries in the array would correspond to all bands at the first k
+point (spin up), then all bands at the second k point (spin up), etc, then all
+k-points spin down.<br />
+The total number of array elements which must be provided is<br />
+( <a href="../1">[nband]</a>+<a href="../2">[nband]</a>+&hellip;+ <a href="../[[nkpt]]">[nband]</a> ) * <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a> .<br />
+The occupation numbers evolve only for metallic occupations, that is,
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> ≥ 3 .</p>
+<h2 id="optdriver"><strong>optdriver</strong><a class="headerlink" href="#optdriver" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OPTions for the DRIVER<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>For each dataset, choose the task to be done, at the level of the &ldquo;driver&rdquo;
+routine.</p>
+<p>The choice is among :<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=0 : ground-state calculation (GS), routine &ldquo;gstate&rdquo;<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=1 : response-function calculation (RF), routine &ldquo;respfn&rdquo;<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=2 : susceptibility calculation (SUS), routine &ldquo;suscep&rdquo;<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 : susceptibility and dielectric matrix calculation (SCR),
+routine &ldquo;screening&rdquo;<br />
+(see the input variables <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>, <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>, <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, as
+well as <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a> and <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>)<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4 : self-energy calculation (SIG), routine &ldquo;sigma&rdquo;<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=5 : non-linear response functions (NONLINEAR), using the 2n+1
+theorem, routine &ldquo;nonlinear&rdquo;<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> =7: electron-phonon coupling (EPH)<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> =66: GW using Lanczos-Sternheimer, see input variables whose
+name start with gwls_* .<br />
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=99 : Bethe-Salpeter calculation (BSE), routine &ldquo;bethe_salpeter&rdquo;</p>
+<p>If one of <a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf#rfddk">rfddk</a>, <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>, or <a class="wikilink" href="../../input_variables/varrf#rfstrs">rfstrs</a> is non-zero, while
+<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> is not defined in the input file, ABINIT will set <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>
+to 1 automatically. These input variables (<a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf#rfddk">rfddk</a>, <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>,
+and <a class="wikilink" href="../../input_variables/varrf#rfstrs">rfstrs</a>) must be zero if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> is not set to 1.</p>
+<h2 id="optstress"><strong>optstress</strong><a class="headerlink" href="#optstress" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OPTion for the computation of STRESS<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>If set to 1, the computation of stresses is done, in the SCF case (under the
+conditions <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &gt; 0 , <a class="wikilink" href="../../input_variables/varfil#prtstm">prtstm</a>==0 , <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>==0, and either
+<a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> &gt;0 , or <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==0 or <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a>==1).<br />
+Otherwise, to save CPU time, if no optimization of the cell is required, one
+can skip the computation of stresses. The CPU time saving might be interesting
+for some PAW calculations.</p>
+<h2 id="posdoppler"><strong>posdoppler</strong><a class="headerlink" href="#posdoppler" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSitron computation of DOPPLER broadening<br />
+Variable type: integer<br />
+Default value: 0  </p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>&lt;&gt;0.<br />
+This input parameter activates the calculation of the Doppler broadening of
+the electron-positron annihilation radiation.<br />
+An output file containing the momentum distributions of annihilating electron-
+positron pairs is created.<br />
+Such a computation needs a core wave-function file (per atom type) to be
+provided. This core WF file should be named &lsquo;&lt;psp_file_name&gt;.corewf&rsquo;
+(where &lt;pspfile_name&gt; is the name of the pseudo-potential (or PAW) file)
+or &lsquo;corewf.abinit&lt;ityp&gt;&lsquo; (where &lt;ityp&gt; is the index of the atom
+type). Core WF files can be obtained with the atompaw tool by the use of
+&lsquo;prtcorewf&rsquo; keyword.</p>
+<h2 id="positron"><strong>positron</strong><a class="headerlink" href="#positron" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSITRON calculation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This input parameter can be positive or negative.<br />
+Negative values for <a class="wikilink" href="../../input_variables/vargs#positron">positron</a> are only relevant for PAW calculations.<br />
+Electron-positron correlation functional is defined by <a class="wikilink" href="../../input_variables/vargs#ixcpositron">ixcpositron</a>.<br />
+Other relevant input parameter: <a class="wikilink" href="../../input_variables/vargs#posocc">posocc</a> (occupation number for the
+positron).  </p>
+<p><em>Positive values for <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>:</em><br />
+<em>For <strong><a class="wikilink" href="../../input_variables/vargs#positron">positron</a>=1 or 2</strong>, will perform the calculation of positron
+lifetime (and annihilation rate).</em>  </p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vargs#positron">positron</a>=1<strong>:<br />
+Starting from a previous electronic GS density (with </strong><a class="wikilink" href="../../input_variables/vargs#positron">positron</a>=0**), a
+positronic ground-state calculation is performed, considering that the
+electrons are not perturbed by the presence of the positron.<br />
+This is almost correct for a positron in a perfect bulk material. But this
+approximation fails when defects exist in the material (for instance: the
+positron might be trapped by a vacancy).<br />
+The electronic density will be automatically read from a _DEN file (with or
+without <a class="wikilink" href="../../input_variables/varfil#irdden">irdden</a> keyword).<br />
+At the end of the SCF cycle, the positron lifetime and annihilation rate are
+printed out.  </li>
+</ul>
+<p>_Additional information for the use of pseudopotentials:  </p>
+<div class="codehilite"><pre><span></span><span class="o">*</span> <span class="nt">PAW</span> <span class="nt">datasets</span><span class="o">:</span> <span class="nt">nothing</span> <span class="nt">to</span> <span class="nt">do</span><span class="o">;</span> <span class="nt">simply</span> <span class="nt">use</span> <span class="nt">usual</span> <span class="nt">electronic</span> <span class="nt">PAW</span> <span class="nt">datasets</span> 
+<span class="o">*</span> <span class="nt">Norm-conserving</span> <span class="nt">pseudopotentials</span><span class="o">:</span> <span class="nt">One</span> <span class="nt">has</span> <span class="nt">to</span> <span class="nt">use</span> <span class="nt">specific</span> <span class="nt">pseudopotentials</span> <span class="nt">for</span> <span class="nt">the</span> <span class="nt">positron</span> <span class="nt">calculation</span><span class="o">.</span> <span class="nt">They</span> <span class="nt">must</span> <span class="nt">be</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">FHI</span> <span class="nt">type</span> <span class="o">(</span><span class="nt">pspcod</span><span class="o">=</span><span class="nt">6</span><span class="o">),</span> <span class="nt">and</span> <span class="nt">must</span> <span class="nt">contain</span> <span class="nt">at</span> <span class="nt">their</span> <span class="nt">end</span><span class="o">,</span> <span class="nt">the</span> <span class="nt">all-electrons</span> <span class="nt">core</span> <span class="nt">density</span> <span class="nt">generated</span> <span class="nt">with</span> <span class="nt">FHI98PP</span><span class="o">.</span> <span class="nt">They</span> <span class="nt">must</span> <span class="nt">have</span> <span class="nt">lmax</span><span class="o">=</span><span class="nt">lloc</span><span class="o">=</span><span class="nt">0</span> <span class="o">(</span><span class="nt">check</span> <span class="nt">that</span> <span class="nt">this</span> <span class="nt">works</span> <span class="nt">for</span> <span class="nt">the</span> <span class="nt">electronic</span> <span class="nt">GS</span> <span class="o">!!</span> <span class="nt">No</span> <span class="nt">ghost</span><span class="o">,</span> <span class="nt">etc</span> <span class="o">...).</span> <span class="nt">Otherwise</span><span class="o">,</span> <span class="nt">their</span> <span class="nt">are</span> <span class="nt">similar</span> <span class="nt">to</span> <span class="nt">an</span> <span class="nt">usual</span> <span class="nt">FHI</span> <span class="nt">pseudopotential</span><span class="o">.</span>
+</pre></div>
+
+
+<p>_  </p>
+<ul>
+<li><strong>positron=2</strong>:<br />
+Starting from a previous positronic GS density (with <strong>positron=1</strong>), an
+electronic ground-state calculation is performed, keeping the positronic
+density constant.<br />
+The positronic density will be automatically read from a _DEN file (with or
+without <a class="wikilink" href="../../input_variables/varfil#getden">getden</a>/<a class="wikilink" href="../../input_variables/varfil#irdden">irdden</a> keyword).<br />
+At the end of the SCF cycle, the positron lifetime and annihilation rate are
+printed out.  </li>
+</ul>
+<p>_Additional information for the use of pseudopotentials:  </p>
+<div class="codehilite"><pre><span></span><span class="o">*</span> <span class="nt">PAW</span> <span class="nt">datasets</span><span class="o">:</span> <span class="nt">nothing</span> <span class="nt">to</span> <span class="nt">do</span><span class="o">;</span> <span class="nt">simply</span> <span class="nt">use</span> <span class="nt">usual</span> <span class="nt">electronic</span> <span class="nt">PAW</span> <span class="nt">datasets</span> 
+<span class="o">*</span> <span class="nt">Norm-conserving</span> <span class="nt">pseudopotentials</span><span class="o">:</span> <span class="nt">One</span> <span class="nt">has</span> <span class="nt">to</span> <span class="nt">use</span> <span class="nt">specific</span> <span class="nt">pseudopotentials</span> <span class="nt">for</span> <span class="nt">the</span> <span class="nt">electron</span> <span class="nt">calculation</span><span class="o">.</span> <span class="nt">They</span> <span class="nt">must</span> <span class="nt">be</span> <span class="nt">of</span> <span class="nt">the</span> <span class="nt">FHI</span> <span class="nt">type</span> <span class="o">(</span><span class="nt">pspcod</span><span class="o">=</span><span class="nt">6</span><span class="o">),</span> <span class="nt">and</span> <span class="nt">must</span> <span class="nt">contain</span> <span class="nt">at</span> <span class="nt">their</span> <span class="nt">end</span><span class="o">,</span> <span class="nt">the</span> <span class="nt">all-electrons</span> <span class="nt">core</span> <span class="nt">density</span> <span class="nt">generated</span> <span class="nt">with</span> <span class="nt">FHI98PP</span><span class="o">.</span>
+</pre></div>
+
+
+<p>_  </p>
+<ul>
+<li><strong>Typical use</strong>:<br />
+The calculation is done in several steps:<br />
+The first one is a normal GS calculation for the electrons, with
+<strong>positron</strong>=0. The only specific thing to do is to set <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>=1 (this is
+the defaut for ABINIT v6.x+). This will create the associated _DEN file which
+will be used as input file for the positronic GS calculation.<br />
+The second step is the GS calculation of the positron and subsequently its
+lifetime, with <strong>positron</strong>=1. One has to define also <a class="wikilink" href="../../input_variables/vargs#ixcpositron">ixcpositron</a>.<br />
+Then, it is possible to perform an additional step, computing the GS
+electronic density in presence of the positron, with <strong>positron</strong>=2.<br />
+and so on&hellip;<br />
+This procedure can be automated (for PAW only) by the use of a negative value
+for <strong>positron</strong>.<br />
+At the end, a converged value of the positron lifetime (decomposed in several
+contributions) is printed.<br />
+See also <a class="wikilink" href="../../input_variables/vargs#posdoppler">posdoppler</a> keyword for the calculation of Doppler broadening.  </li>
+</ul>
+<p><em>Negative values for <strong>positron</strong>:</em><br />
+<em>For <strong>positron&lt;0</strong>, will perform an automatic calculation of electrons and
+positron densities in the two-component DFT context; then will compute
+positron lifetime (and annihilation rate).</em>  </p>
+<ul>
+<li>
+<p><strong>positron=-1</strong>:<br />
+Starting from scratch, will first perform an usual electronic ground-state
+calculation until convergence (controlled by the use of one of the <em>tolerance</em>
+keywords).<br />
+Then will perform a positronic ground state calculation in presence of the
+electrons and ions; then an electronic ground state calculation in presence of
+the positron and the ions&hellip;<br />
+and so on&hellip; until the total energy is converged.<br />
+The convergence of the total energy of the ions+electrons+positron system is
+controlled by the use of the <a class="wikilink" href="../../input_variables/vargs#postoldfe">postoldfe</a>, <a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a> and <a class="wikilink" href="../../input_variables/vargs#posnstep">posnstep</a>
+input keywords.<br />
+With <strong>positron=-1</strong>, at the beginning of each new electronic/positronic step,
+the wave functions are unknown.</p>
+</li>
+<li>
+<p><strong>positron=-10</strong>:<br />
+Same as <strong>positron=-1</strong> except that the electronic/positronic wave functions
+are stored in memory.<br />
+Consequently, the total number of iterations to reach the convergence
+(diff_Etotal&lt;<a class="wikilink" href="../../input_variables/vargs#postoldfe">postoldfe</a> or diff_Forces&lt;<a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a>) is smaller.<br />
+But, this can increase the total amount of memory needed by the code.</p>
+</li>
+<li>
+<p><strong>positron=-2</strong>:<br />
+Same as <strong>positron=-1</strong> except that the two-component DFT cycle is forced to
+stop at the end of an electronic step.</p>
+</li>
+<li>
+<p><strong>positron=-20</strong>:<br />
+Same as <strong>positron=-10</strong> except that the two-component DFT cycle is forced to
+stop at the end of an electronic step.</p>
+</li>
+</ul>
+<p><em>Advice for use:</em><br />
+There are two typical cases which have to be differently treated:</p>
+<ul>
+<li>
+<p><strong>A positron in a perfect <em>bulk</em> system</strong>:<br />
+In that case, the positron is delocalized in the whole crystal. Its density is
+almost zero.<br />
+Thus, the &ldquo;zero density positron limit&rdquo; has to be used. <a class="wikilink" href="../../input_variables/vargs#ixcpositron">ixcpositron</a> has to
+be choosen accordingly.<br />
+In order to have the zero density positron limit it is adviced to follow these
+points:<br />
+1- Put a small positronic charge (by setting a <a class="wikilink" href="../../input_variables/vargs#posocc">posocc</a> to a small value)
+<strong>OR</strong> use a big supercell.<br />
+2- Use only k=gamma wave vector for the positronic calculation.<br />
+3- Use the manual procedure in 2 steps: first <strong>positron</strong>=0 and then
+<strong>positron</strong>=1; avoid the <strong>positron=2</strong> step and the automatic procedure
+(<strong>positron</strong>&lt;0).<br />
+In principle, the positron lifetime should converge with the value of
+<a class="wikilink" href="../../input_variables/vargs#posocc">posocc</a> or the size of the supercell.  </p>
+</li>
+<li>
+<p><strong>A positron trapped in a <em>default</em> (vacancy&hellip;)</strong>:<br />
+In that case, the positron is localized in the default. Its density can be
+localized in the simulation cell (provided that the cell is sufficiently
+large) and influences the electronic density.<br />
+So, it is advised to use the automatic procedure (<strong>positron</strong>&lt;0) or the
+manual procedure with several <strong>positron</strong>=0,1,2,1,&hellip; steps.<br />
+K-points can be used as in usual electronic calculations.<br />
+Also note that it is possible to use forces and stresses to perform structural
+minimization.  </p>
+</li>
+</ul>
+<p>References:  </p>
+<p><strong>[1]</strong> J. Arponen and E. Pajanne, Ann. Phys. (N.Y.) 121, 343 (1979).<br />
+<strong>[2]</strong> Boronski and R.M. Nieminen, Phys. Rev. B 34, 3820 (1986).<br />
+<strong>[3]</strong> P.A. Sterne and J.H. Kaiser, Phys. Rev. B 43, 13892 (1991).<br />
+<strong>[4]</strong> M.J. Puska, A.P. Seitsonen and R.M. Nieminen, Phys. Rev. B 52, 10947 (1994).<br />
+<strong>[5]</strong> B. Barbiellini, M.J. Puska, T. Torsti and R.M.Nieminen, Phys. Rev. B 51, 7341 (1994)  </p>
+<h2 id="posnstep"><strong>posnstep</strong><a class="headerlink" href="#posnstep" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSitron calculation: max. Number of STEPs for the two-component DFT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 50  </p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>&lt;0.<br />
+Sets the maximum number of electronic/positronic iterations that, when
+reached, will cause the two-component DFT SCF cycle to stop.<br />
+The code will first compute the electronic ground-state, then the positronic
+ground state in the electronic density, then the electronic ground-state in
+the positronic density, &hellip;<br />
+&hellip;until diff_Etotal&lt;<a class="wikilink" href="../../input_variables/vargs#postoldfe">postoldfe</a> or diff_Forces&lt;<a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a> or the
+number of electronic/positronic steps is <a class="wikilink" href="../../input_variables/vargs#posnstep">posnstep</a>.  </p>
+<h2 id="posocc"><strong>posocc</strong><a class="headerlink" href="#posocc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSitron calculation: OCCupation number for the positron<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>/=0.<br />
+Sets the occupation number for the positron. Has to be &lt;=1.<br />
+Changing <a class="wikilink" href="../../input_variables/vargs#posocc">posocc</a> is only useful for bulk calculation when one wants to
+perform lifetime computations using a small simulation cell (can avoid the use
+of a supercell). It simulates the dispersion of the positron in the whole
+crystal.  </p>
+<h2 id="postoldfe"><strong>postoldfe</strong><a class="headerlink" href="#postoldfe" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSitron calculation: TOLerance on the DiFference of total Energy<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1e-06 if <a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a>=0,
+0.0 otherwise.</p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>&lt;0.<br />
+Sets a tolerance for absolute difference of total energy (of _
+ions+electrons+positron _ system) that, when reached, will cause the SCF cycle
+to stop before the number of steps is <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> or the number of
+electronic/positronic steps is <a class="wikilink" href="../../input_variables/vargs#posnstep">posnstep</a>.  </p>
+<p>Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> toldfe </strong> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics.<br />
+Only one and only one of <a class="wikilink" href="../../input_variables/vargs#postoldfe">postoldfe</a> or <a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a> can be set.</p>
+<h2 id="postoldff"><strong>postoldff</strong><a class="headerlink" href="#postoldff" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POSitron calculation: TOLerance on the DiFference of Forces<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#positron">positron</a>&lt;0.<br />
+Sets a tolerance for absolute difference of maximum force acting on ions (due
+to _ ions+electrons+positron _ system) that, when reached, will cause the SCF
+cycle to stop before the number of SCF steps is <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> or the number of
+electronic/positronic steps is <a class="wikilink" href="../../input_variables/vargs#posnstep">posnstep</a>.<br />
+Only one and only one of <a class="wikilink" href="../../input_variables/vargs#postoldfe">postoldfe</a> or <a class="wikilink" href="../../input_variables/vargs#postoldff">postoldff</a> can be set.  </p>
+<h2 id="prtdensph"><strong>prtdensph</strong><a class="headerlink" href="#prtdensph" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT integral of DENsity inside atomic SPHeres<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 otherwise.</p>
+<p>When this flag is activated, values of integral(s) of total density inside
+sphere(s) around each atom are printed in output file (for each spin
+component). Spheres around atoms are defined by a radius given by <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a>
+keyword.<br />
+Note: integral of density inside a sphere around an atom can be used to
+determine a rough approximation of the local magnetic moment; this is
+particularly useful for antiferromagnetic systems.<br />
+The algorithm to compute this integral is particularly primitive : the points
+on the FFT grids, belonging to the interior of the sphere are determined, and
+the value of the functions on these points are summed, taking into account a
+fixed volume attributed to each point. In particular, the integral as a
+function of the radius will be a constant, except when a new point enters the
+sphere, in which case a sudden jump occurs. However, since the purpose of this
+output is to get a rough idea of the repartition of the density, this is not a
+real problem. If you are interested in a more accurate estimation of the
+density within a sphere, you should use the cut3d postprocessor.</p>
+<h2 id="prtebands"><strong>prtebands</strong><a class="headerlink" href="#prtebands" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT Electron BANDS<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a> &gt; 1,
+1 otherwise.</p>
+<p>This option activates the output of the electron eigenvalues. Possible values:</p>
+<ul>
+<li>0 Disable the output of the band energies.</li>
+<li>1 Write eigenvalues in xmgrace format. A file with extension <code>EBANDS.agr</code> is produced at the end of the run. Use <code>xmgrace file_EBANDS.agr</code> to visualize the band energies</li>
+<li>2 Write eigenvalues in gnuplot format. The code produces a <code>EBANDS.dat</code> file with the eigenvalues and a <code>EBANDS.gnuplot</code> script. Use <code>gnuplot file_EBANDS.gnuplot</code> to visualize the band energies.</li>
+</ul>
+<h2 id="qpt"><strong>qpt</strong><a class="headerlink" href="#qpt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Q PoinT<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: [0, 0, 0]  </p>
+<p>Only used if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1.</p>
+<p>Combined with <a class="wikilink" href="../../input_variables/vargs#qptnrm">qptnrm</a>, define the q vector <a href="../1:3">[qptn]</a> in the case
+<a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=0.</p>
+<p>This input variable is not internal (<a href="../1:3">[qptn]</a> is used instead), but is
+used to echo the value of <a href="../1:3">[qptn]</a>, with renormalisation factor one.</p>
+<h2 id="qptnrm"><strong>qptnrm</strong><a class="headerlink" href="#qptnrm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Q PoinTs NoRMalization<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1.0  </p>
+<p>Only used if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1 and <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=0</p>
+<p>Provides re-normalization of <a class="wikilink" href="../../input_variables/vargs#qpt">qpt</a>. Must be positive, non-zero. The actual q
+vector (renormalized) is <a href="../1:3">[qptn]</a>= <a href="../1:3">[qpt]</a>/<a class="wikilink" href="../../input_variables/vargs#qptnrm">qptnrm</a>.</p>
+<h2 id="qptopt"><strong>qptopt</strong><a class="headerlink" href="#qptopt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: QPoinTs OPTion<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Only used if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1.</p>
+<p>Controls the set up to generate the Q point <a href="../1:3">[qptn]</a> to be used for the
+specific dataset, either as a shift of k-point grid in ground-state
+calculations, or as a stand-alone phonon wavevector.</p>
+<p>There are two basic techniques to generate the Q point : either by specifying
+it directly, possibly with a renormalisation factor (<a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=0), or
+extracting it from a grid a Q points (<a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=1 to 4), using the index
+<a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>. At variance with the similar generation of k points, only ONE q
+point can be used per dataset.</p>
+<p>With <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=1 to 4, rely on <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a> or <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>, as well as on
+<a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a> and <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a> to set up a q point grid, from which the q point
+with number <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a> will be selected. The values <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=1 to 4 differ by
+the treatment of symmetries. Note that the symmetries are recomputed starting
+from the values of <a class="wikilink" href="../../input_variables/varbas#rprimd">rprimd</a> <a class="wikilink" href="../../input_variables/varbas#xred">xred</a> and <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a>. So, the explicit value
+of <a class="wikilink" href="../../input_variables/varbas#symrel">symrel</a> are not used. This is to allow doing calculations with
+<a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=1, sometimes needed for T-dependent electronic structure, still
+decreasing the number of q points in the case <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=1 or <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>=3.</p>
+<ul>
+<li>0=&gt; read directly <a class="wikilink" href="../../input_variables/vargs#qpt">qpt</a>, and its (eventual) renormalisation factor <a class="wikilink" href="../../input_variables/vargs#qptnrm">qptnrm</a>. </li>
+<li>
+<p>1=&gt; Take fully into account the symmetry to generate the grid of q points in the Irreducible Brillouin Zone only. <br />
+(This is the usual mode for RF calculations)</p>
+</li>
+<li>
+<p>2=&gt; Take into account only the time-reversal symmetry : q points will be generated in half the Brillouin zone.   </p>
+</li>
+<li>
+<p>3=&gt; Do not take into account any symmetry : q points will be generated in the full Brillouin zone.   </p>
+</li>
+<li>
+<p>4=&gt; Take into account all the symmetries EXCEPT the time-reversal symmetry to generate the k points in the Irreducible Brillouin Zone.   </p>
+</li>
+</ul>
+<p>In the case of a grid of q points, the auxiliary variables <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>,
+<a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/varfil#prtkpt">prtkpt</a> might help you to select the optimal grid, similarly
+to the case of the K point grid.</p>
+<h2 id="qptrlatt"><strong>qptrlatt</strong><a class="headerlink" href="#qptrlatt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Q - PoinTs grid : Real space LATTice<br />
+Variable type: integer<br />
+Dimensions: (3,3)<br />
+Default value: *0<br />
+The use of this variable forbids the use of specified(<a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a>)  </p>
+<p>This input variable is used only when <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a> is positive. It partially
+defines the q point grid. The other piece of information is contained in
+<a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>. <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a> cannot be used together with <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a>.</p>
+<p>The values <a href="1:3,1">[qptrlatt]</a>, <a href="1:3,2">[qptrlatt]</a>, <a href="1:3,3">[qptrlatt]</a> are
+the coordinates of three vectors in real space, expressed in the <a class="wikilink" href="../../input_variables/varbas#rprimd">rprimd</a>
+coordinate system (reduced coordinates). They defines a super-lattice in real
+space. The k point lattice is the reciprocal of this super-lattice, possibly
+shifted (see <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>).</p>
+<p>If neither <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a> nor <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a> are defined, ABINIT will automatically
+generate a set of k point grids, and select the best combination of
+<a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a> and <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a> that allows to reach a sufficient value of
+<a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>. See this latter variable for a complete description of this
+procedure.</p>
+<h2 id="ratsph"><strong>ratsph</strong><a class="headerlink" href="#ratsph" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Radii of the ATomic SPHere(s)<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Default value: [[&lsquo;AUTO_FROM_PSP&rsquo;]] if usepaw==1,
+2.0 otherwise.</p>
+<p>Relevant only when <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3 or <a class="wikilink" href="../../input_variables/vargs#prtdensph">prtdensph</a>=1.  </p>
+<p>When <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3:<br />
+Provides the radius of the spheres around the <a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> atoms of indices
+<a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a>, in which the local DOS and its angular-momentum projections will
+be analysed. The choice of this radius is quite arbitrary. In a plane-wave
+basis set, there is no natural definition of an atomic sphere. However, it
+might be wise to use the following well-defined and physically motivated
+procedure (in version 4.2, this procedure is NOT implemented, unfortunately) :
+from the Bader analysis, one can define the radius of the sphere that contains
+the same charge as the Bader volume. This &ldquo;Equivalent Bader charge atomic
+radius&rdquo; might then be used to perform the present analysis. See the
+<a class="wikilink" href="../../help_aim/">help_aim</a> for more explanations. Another physically motivated choice would
+be to rely on another charge partitioning, like the Hirshfeld one (see the
+cut3d utility). The advantage of using charge partitioning schemes comes from
+the fact that the sum of atomic DOS, for all angular momenta and atoms,
+integrated on the energy range of the occupied states, gives back the total
+charge. If this is not an issue, one could rely on the half of the nearest-
+neighbour distances, or any scheme that allows to define an atomic radius.
+Note that the choice of this radius is however critical for the balance
+between the s, p and d components. Indeed, the integrated charge within a
+given radius, behave as a different power of the radius, for the different
+channels s, p, d. At the limit of very small radii, the s component dominates
+the charge contained in the sphere &hellip;  </p>
+<p>When <a class="wikilink" href="../../input_variables/vargs#prtdensph">prtdensph</a>=1:<br />
+Provides the radius of the spheres around (all) atoms in which the total
+charge density will be integrated.  </p>
+<p>In case of PAW, <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a> radius has to be greater or equal to PAW radius of
+considered atom type (which is read from the PAW dataset file; see rc_sph or
+r_paw).</p>
+<h2 id="ratsph_extra"><strong>ratsph_extra</strong><a class="headerlink" href="#ratsph_extra" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Radii of the ATomic SPHere(s) in the EXTRA set<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 2.0 Bohr  </p>
+<p>Radius for extra spheres the DOS is projected into. See <a class="wikilink" href="../../input_variables/vargs#natsph_extra">natsph_extra</a> and
+<a class="wikilink" href="../../input_variables/vargs#xredsph_extra">xredsph_extra</a> for the number and positions of the spheres.</p>
+<h2 id="scphon_supercell"><strong>scphon_supercell</strong><a class="headerlink" href="#scphon_supercell" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Self Consistent PHONon SUPERCELL<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: [1, 1, 1]  </p>
+<p>Give extent, in number of primitive unit cells, of the supercell being used
+for a self-consistent phonon calculation. Presumes the phonon frequencies and
+eigenvectors have been calculated in the original primitive unit cell, on a
+grid of q-points which corresponds to the supercell in the present
+calculation. TO BE IMPROVED : should contain a tutorial on how to do self-
+consistent phonon calculations, David Waroquiers 090831</p>
+<h2 id="scphon_temp"><strong>scphon_temp</strong><a class="headerlink" href="#scphon_temp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Self Consistent PHONon TEMPerature<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>Temperature which is imposed on phonon distribution, in the self-consistent
+scheme of Souvatzis et al. PRL <strong> 100 </strong> , 095901. Determines the extent of
+the finite displacements used, and consequent anharmonic effects.
+Experimental.</p>
+<h2 id="shiftq"><strong>shiftq</strong><a class="headerlink" href="#shiftq" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SHIFT for Q points<br />
+Variable type: real<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a>)<br />
+Default value: None if <a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a>&gt;1,
+[0.5, 0.5, 0.5] otherwise.</p>
+<p>It is used only when <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>&gt;=0, and must be defined if <a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a> is
+larger than 1.<br />
+<a href="1:3,1:[[nshiftq]]">[shiftq]</a> defines <a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a> shifts of the homogeneous
+grid of q points based on <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a> or <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>.</p>
+<p>See <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a> for more information on the definition, use, and suitable
+values for these shifts.</p>
+<h2 id="slabwsrad"><strong>slabwsrad</strong><a class="headerlink" href="#slabwsrad" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: jellium SLAB Wigner-Seitz RADius<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>Fix the bulk-mean positive charge density nbulk of a jellium slab (if the
+latter is employed, e.g. <a class="wikilink" href="../../input_variables/vargs#jellslab">jellslab</a> ≠ 0). Often called &ldquo;rs&rdquo; [see for example
+N. D. Lang and W. Kohn PRB 1, 4555 (1970)], <a class="wikilink" href="../../input_variables/vargs#slabwsrad">slabwsrad</a> is the radius of a
+sphere which has the same volume as the average volume per particle in a
+homogeneous electron gas with density nbulk, so:</p>
+<div class="codehilite"><pre><span></span>  1/nbulk = 4/3 Pi * [[slabwsrad]]3
+</pre></div>
+
+
+<p>For example, the bulk aluminum fcc lattice constant is a=4.0495 Angstroms
+(webelements.com), each cubic centered cell includes 4 Al atoms and each atom
+has 3 valence electrons, so the average volume per electron is a3/12=37.34
+Bohr3 which has to be equal to 4/3 Pi*rs3. Consequently Al has approximately
+rs =2.07 Bohr, while for example magnesium has rs =2.65 Bohr, sodium 3.99
+Bohr.<br />
+By default, given in Bohr atomic units (1 Bohr=0.5291772108 Angstroms).</p>
+<h2 id="slabzbeg"><strong>slabzbeg</strong><a class="headerlink" href="#slabzbeg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: jellium SLAB BEGinning edge along the Z direction<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: [0.0, 0.0]  </p>
+<p>Define the edges of the jellium slab (if used, so if <a class="wikilink" href="../../input_variables/vargs#jellslab">jellslab</a> ≠ 0) along
+z, namely the slab starts at a point along z which is expressed in Bohr by
+<strong>slabzbeg</strong> and it ends at a point expressed in Bohr by <a class="wikilink" href="../../input_variables/vargs#slabzend">slabzend</a>. The z
+direction is parallel to the third crystal primitive lattice vector which has
+to be orthogonal to the other ones, so the length of the cell along z is
+<a href="../3,3">[rprimd]</a>. In addition <strong>slabzbeg</strong> and <a class="wikilink" href="../../input_variables/vargs#slabzend">slabzend</a> have to be such
+that:</p>
+<div class="codehilite"><pre><span></span>  0 ≤ **slabzbeg** &lt; [[slabzend]] ≤ [[rprimd]](3,3)
+</pre></div>
+
+
+<p>Together with <a class="wikilink" href="../../input_variables/vargs#slabwsrad">slabwsrad</a> they define the jellium positive charge density
+distribution n+(x,y,z) in this way:</p>
+<div class="codehilite"><pre><span></span>  n+(x,y,z) = nbulk     if **slabzbeg** ≤ z ≤ [[slabzend]]
+            = 0        otherwise,
+</pre></div>
+
+
+<p>so the positive charge density is invariant along the xy plane as well as the
+electrostatic potential generated by it.</p>
+<h2 id="slabzend"><strong>slabzend</strong><a class="headerlink" href="#slabzend" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: jellium SLAB ENDing edge along the Z direction<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: [0.0, 0.0]  </p>
+<p>Define the edges of the jellium slab (if used, so if <a class="wikilink" href="../../input_variables/vargs#jellslab">jellslab</a> ≠ 0) along
+z, namely the slab starts at a point along z which is expressed in Bohr by
+<a class="wikilink" href="../../input_variables/vargs#slabzbeg">slabzbeg</a> and it ends at a point expressed in Bohr by <strong>slabzend</strong>. The z
+direction is parallel to the third crystal primitive lattice vector which has
+to be orthogonal to the other ones, so the length of the cell along z is
+<a href="../3,3">[rprimd]</a>. In addition <a class="wikilink" href="../../input_variables/vargs#slabzbeg">slabzbeg</a> and <strong>slabzend</strong> have to be such
+that:</p>
+<div class="codehilite"><pre><span></span>  0 ≤ [[slabzbeg]] &lt; **slabzend** ≤ [[rprimd]](3,3)
+</pre></div>
+
+
+<p>Together with <a class="wikilink" href="../../input_variables/vargs#slabwsrad">slabwsrad</a> they define the jellium positive charge density
+distribution n+(x,y,z) in this way:</p>
+<div class="codehilite"><pre><span></span>  n+(x,y,z) = nbulk     if [[slabzbeg]] ≤ z ≤ **slabzend**
+            = 0        otherwise,
+</pre></div>
+
+
+<p>so the positive charge density is invariant along the xy plane as well as the
+electrostatic potential generated by it.</p>
+<h2 id="so_psp"><strong>so_psp</strong><a class="headerlink" href="#so_psp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Spin-Orbit treatment for each PSeudoPotential<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargs#npsp">npsp</a>)<br />
+Default value: <a class="wikilink" href="../../input_variables/vargs#npsp">npsp</a>*1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==2 and <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==0  </p>
+<p>For each type of atom (each pseudopotential), specify the treatment of spin-
+orbit interaction (if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==2 and Norm-conserving pseudopotentials
+<a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==0)<br />
+If 0 : no spin-orbit interaction, even if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2<br />
+If 1 : treat spin-orbit as specified in the pseudopotential file.<br />
+If 2 : treat spin-orbit in the HGH form (usual form, although not allowed for
+all pseudopotentials)<br />
+If 3 : treat spin-orbit in the HFN form (Hemstreet-Fong-Nelson) (actually, not
+implemented &hellip;).</p>
+<p>For typical usage, the default value is OK. If the spin-orbit needs to be
+turned off for one atom, 0 might be relevant. Note however, that the code will
+stop if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2 is used and one of the pseudopotential does not contain
+the information about the spin-orbit interaction (this is the case for some
+old pseudopotentials). Indeed, for spinorial calculations, turning off the
+spin-orbit interaction is unphysical, and also does not save CPU time &hellip; It
+should only be done for test purposes</p>
+<p>Note that if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==1, the spin-orbit cannot be treated anyhow, so the
+value of <a class="wikilink" href="../../input_variables/vargs#so_psp">so_psp</a> is irrelevant. In case <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1, please refer to
+<a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>.</p>
+<p>Prior to v5.4, the input variable <strong> so_typat </strong> was used, in place of
+<a class="wikilink" href="../../input_variables/vargs#so_psp">so_psp</a>. Because the values 0 and 1 have been switched between <a class="wikilink" href="../../input_variables/vargs#so_psp">so_psp</a>
+and so_typat, it was dangerous to continue to allow the use of so_typat.</p>
+<h2 id="spinat"><strong>spinat</strong><a class="headerlink" href="#spinat" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPIN for AToms<br />
+Variable type: real<br />
+Dimensions: [3, &lsquo;<a class="wikilink" href="../../input_variables/vargeo#natrd">natrd</a>&rsquo;] if <a class="wikilink" href="../../input_variables/vargeo#natrd">natrd</a>&lt;<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>,
+[3, &lsquo;<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>&rsquo;] otherwise.</p>
+<p>Default value: 0.0  </p>
+<p>Gives the initial electronic spin-magnetization for each atom, in unit of
+h-bar/2.</p>
+<p>Note that if <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2, the z-component must be given for each atom, in
+triplets (0 0 z-component).<br />
+For example, the electron of an hydrogen atom can be spin up (0 0 1.0) or spin
+down (0 0 -1.0).</p>
+<p>This value is only used to create the first exchange and correlation
+potential, and is not used anymore afterwards.<br />
+It is not checked against the initial occupation numbers <a class="wikilink" href="../../input_variables/vargs#occ">occ</a> for each spin
+channel.<br />
+It is meant to give an easy way to break the spin symmetry, and to allow to
+find stable local spin fluctuations, for example : antiferromagnetism, or the
+spontaneous spatial spin separation of elongated H2 molecule.  </p>
+<ul>
+<li>
+<p>If the geometry builder is used, <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> will be related to the preprocessed set of atoms, generated by the geometry builder. The user must thus foresee the effect of this geometry builder (see <a class="wikilink" href="../../input_variables/vargeo#objarf">objarf</a>). </p>
+</li>
+<li>
+<p>If the geometry builder is not used, and the symmetries are not specified by the user (<a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=0), spinat will be used, if present, to determine the anti-ferromagnetic characteristics of the symmetry operations, see <a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a>. <br />
+In case of collinear antiferromagnetism (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1,
+<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2), these symmetries are used to symmetrize the density.<br />
+In case of non-collinear magnetism (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1,
+<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4), they are also used to symmetrize the density. In the latter
+case, this strongly constrains the magnetization (imposing its direction). If
+the user want to let all degrees of freedom of the magnetization evolve, it is
+then recommended to put <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=1.  </p>
+</li>
+<li>
+<p>If the symmetries are specified, and the irreducible set of atoms is specified, the anti-ferromagnetic characteristics of the symmetry operations <a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a> will be used to generate <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> for all the non-irreducible atoms. </p>
+</li>
+<li>
+<p>In the case of PAW+U calculations using the <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> initial occupation matrix, and if <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> is also used to determine the direction of the integrated magnetization matrix. </p>
+</li>
+</ul>
+<h2 id="stmbias"><strong>stmbias</strong><a class="headerlink" href="#stmbias" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Scanning Tunneling Microscopy BIAS voltage<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>Gives, in Hartree, the bias of the STM tip, with respect to the sample, in
+order to generate the STM density map.<br />
+Used with positive <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>, <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=7 (metallic, gaussian), <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>=1 ,
+and positive <a class="wikilink" href="../../input_variables/varfil#prtstm">prtstm</a>, this value is used to generate a charge density map
+from electrons close to the Fermi energy, in a (positive or negative) energy
+range. Positive <a class="wikilink" href="../../input_variables/vargs#stmbias">stmbias</a> will lead to the inclusion of occupied (valence)
+states only, while negative <a class="wikilink" href="../../input_variables/vargs#stmbias">stmbias</a> will lead to the inclusion of
+unoccupied (conduction) states only.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since <a class="wikilink" href="../../input_variables/vargs#stmbias">stmbias</a> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics (0.001 Ha = 27.2113845 meV = 315.773 Kelvin).
+With <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=7, one has also to specify an independent broadening
+<a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>.</p>
+<h2 id="symafm"><strong>symafm</strong><a class="headerlink" href="#symafm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SYMmetries, Anti-FerroMagnetic characteristics<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>)<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>*1  </p>
+<p>In case the material is magnetic (well, this is only interesting in the case
+of antiferromagnetism, collinear or not), additional symmetries might appear,
+that change the sign of the magnetization. They have been introduced by
+Shubnikov (1951). They can be used by ABINIT to decrease the CPU time, by
+using them to decrease the number of k-points.<br />
+<a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a> should be set to +1 for all the usual symmetry operations, that do
+not change the sign of the magnetization, while it should be set to -1 for the
+magnetization-changing symmetries.<br />
+If the symmetry operations are not specified by the user in the input file,
+that is, if <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=0, then ABINIT will use the values of <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> to
+determine the content of <a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a>.<br />
+The symmetries found as &ldquo;antiferro magnetic&rdquo; (<a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a>=-1) are used to
+symmetrize density and magnetization in the following cases:<br />
+- antiferromagnetism (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2)<br />
+- non-collinear magnetism (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4)<br />
+In other cases they are not used.</p>
+<h2 id="timopt"><strong>timopt</strong><a class="headerlink" href="#timopt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: TIMing OPTion<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../SEQUENTIAL/">SEQUENTIAL</a>,
+0 otherwise.</p>
+<p>This input variable allows to modulate the use of the timing routines.</p>
+<p>If 0 =&gt; as soon as possible, suppresses all calls to timing routines<br />
+If 1 =&gt; usual timing behaviour, with short analysis, appropriate for
+sequential execution<br />
+If 2 =&gt; close to <a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=1, except that the analysis routine does not
+time the timer, appropriate for parallel execution.<br />
+If 3 =&gt; close to <a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=1, except that the different parts of the
+lobpcg routine are timed in detail.<br />
+If 4 =&gt; close to <a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=1, except that the different parts of the
+lobpcg routine are timed in detail. A different splitting of lobpcg than for
+<a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=-3 is provided.<br />
+If -1 =&gt; a full analysis of timings is delivered<br />
+If -2 =&gt; a full analysis of timings is delivered, except timing the timer<br />
+If -3 =&gt; a full analysis of timings is delivered, including the detailed
+timing of the different parts of the lobpcg routine. (this takes time, and is
+discouraged for too small runs - the timing would take more time than the run
+!). The timer is timed.<br />
+If -4 =&gt; a full analysis of timings is delivered, including the detailed
+timing of the different parts of the lobpcg routine. A different splitting of
+lobpcg than for <a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=-3 is provided (this takes time, and is discouraged
+for too small runs - the timing would take more time than the run !). The
+timer is timed. The sum of the independent parts is closer to 100% than for
+<a class="wikilink" href="../../input_variables/vargs#timopt">timopt</a>=-3.</p>
+<h2 id="tl_nprccg"><strong>tl_nprccg</strong><a class="headerlink" href="#tl_nprccg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: TaiL maximum Number of PReConditionner Conjugate Gradient iterations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 30  </p>
+<p>This variable is similar to <a class="wikilink" href="../../input_variables/vargs#wvl_nprccg">wvl_nprccg</a> but for the preconditionner
+iterations during the tail corrections (see <a class="wikilink" href="../../input_variables/vargs#tl_radius">tl_radius</a>  ). TO BE IMPROVED :
+all tl_<em> and wvl_</em> variables should contain a link to a tutorial, David
+Waroquiers 090831.</p>
+<h2 id="tl_radius"><strong>tl_radius</strong><a class="headerlink" href="#tl_radius" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: TaiL expansion RADIUS<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>In the wavelet computation case, the linkage between the grid and the free
+boundary conditions can be smoothed using an exponential decay. This means a
+correction on the energy at the end on each wavefunction optimisation run. If
+this parameter is set to zero, no tail computation is done. On the contrary,
+put it to a positive value makes the tail correction available. The value
+correspond to a length in atomic units being the spacial expansion with the
+exponential decay around the grid.</p>
+<h2 id="tphysel"><strong>tphysel</strong><a class="headerlink" href="#tphysel" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Temperature (PHYSical) of the ELectrons<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>Gives, in Hartree, the physical temperature of the system, in case
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=4, 5, 6, or 7.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> ecut </strong> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics (0.001 Ha = 27.2113845 meV = 315.773 Kelvin).
+One has to specify an independent broadening <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>. The combination of
+the two parameters <a class="wikilink" href="../../input_variables/vargs#tphysel">tphysel</a> and <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> is described in a paper by M.
+Verstraete and X. Gonze, Phys. Rev. B 65, 035111 (2002). Note that the
+signification of the entropy is modified with respect to the usual entropy.
+The choice has been made to use <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> as a prefactor of the entropy, to
+define the entropy contribution to the free energy.</p>
+<h2 id="tsmear"><strong>tsmear</strong><a class="headerlink" href="#tsmear" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Temperature of SMEARing<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.01  </p>
+<p>Gives the broadening of occupation numbers <a class="wikilink" href="../../input_variables/vargs#occ">occ</a>, in the metallic cases
+(<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=3, 4, 5, 6 and 7). Can be specified in Ha (the default), eV, Ry,
+or Kelvin, since <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> has the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics (0.001 Ha =
+27.2113845 meV = 315.773 Kelvin).<br />
+Default is 0.01 Ha. This should be OK using gaussian like smearings (occopt
+4,5,6,7) for a free-electron metal like Al. For d-band metals, you may need to
+use less.<br />
+Always check the convergence of the calculation with respect to this
+parameter, and simultaneously, with respect to the sampling of k-points (see
+<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>)<br />
+If <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=3, <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> is the physical temperature, as the broadening is
+based on Fermi-Dirac statistics. However, if <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=4, 5, 6, or 7, the
+broadening is not based on Fermi-Dirac statistics, and <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> is only a
+convergence parameter. It is still possible to define a physical temperature,
+thanks to the input variable <a class="wikilink" href="../../input_variables/vargs#tphysel">tphysel</a>. See the paper by M. Verstraete and
+X. Gonze, Phys. Rev. B (2002).</p>
+<h2 id="usekden"><strong>usekden</strong><a class="headerlink" href="#usekden" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE Kinetic energy DENsity<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#usekden">usekden</a>=1 the kinetic energy density will be computed during the self-
+consistency loop, in a way similar to the computation of the density. This is
+needed if a meta-GGA is to be used as XC functional. Otherwise
+(<a class="wikilink" href="../../input_variables/vargs#usekden">usekden</a>=0), the kinetic energy density is not computed during the self-
+consistency loop.</p>
+<h2 id="vacuum"><strong>vacuum</strong><a class="headerlink" href="#vacuum" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: VACUUM identification<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: None  </p>
+<p>Establishes the presence (if 1) or absence (if 0) of a vacuum layer, along the
+three possible directions normal to the primitive axes.</p>
+<p>This information might be used to generate k-point grids, if <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=0 and
+neither <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> nor <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> are defined (see explanations with the
+input variable <a class="wikilink" href="../../input_variables/varfil#prtkpt">prtkpt</a>).<br />
+It will allow to select a zero-, one-, two- or three-dimensional grid of k
+points. The coordinate of the k points along vacuum directions is
+automatically set to zero.</p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#vacuum">vacuum</a> is not defined, the input variable <a class="wikilink" href="../../input_variables/vargs#vacwidth">vacwidth</a> will be used to
+determine automatically whether the distance between atoms is sufficient to
+have the presence or absence of vacuum.</p>
+<h2 id="vacwidth"><strong>vacwidth</strong><a class="headerlink" href="#vacwidth" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: VACuum WIDTH<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 10.0  </p>
+<p>Give a minimum &ldquo;projected&rdquo; distance between atoms to be found in order to
+declare that there is some <a class="wikilink" href="../../input_variables/vargs#vacuum">vacuum</a> present for each of the three
+directions. By default, given in Bohr atomic units (1 Bohr=0.5291772108
+Angstroms), although Angstrom can be specified, if preferred, since
+<a class="wikilink" href="../../input_variables/vargs#vacwidth">vacwidth</a> has the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo; characteristics.<br />
+The precise requirement is that a slab of width <a class="wikilink" href="../../input_variables/vargs#vacwidth">vacwidth</a>, delimited by two
+planes of constant reduced coordinates in the investigated direction, must be
+empty of atoms.</p>
+<h2 id="wtq"><strong>wtq</strong><a class="headerlink" href="#wtq" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WeighTs for the current Q-points<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Comment: Except when <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>/=0  </p>
+<p>Gives the current q-point weight.</p>
+<h2 id="wvl_bigdft_comp"><strong>wvl_bigdft_comp</strong><a class="headerlink" href="#wvl_bigdft_comp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaVeLet BigDFT Comparison<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This variable is used for the wavelets capabilities of ABINIT (see <a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a>
+). It is used to compare the results obtained with ABINIT with those obtained
+with BigDFT stand-alone. When it is set to 1, ABINIT will follow the workflow
+as in BigDFT stand-alone. Therefore, the results must be exactly the same with
+the two codes.</p>
+<h2 id="wvl_crmult"><strong>wvl_crmult</strong><a class="headerlink" href="#wvl_crmult" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaVeLet Coarse grid Radius MULTiplier<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 6.0  </p>
+<p>This factor is used to defined the expansion of the coarse resolution grid in
+the case of wavelets (seea <a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a> ). The grid is made of points inside
+spheres centered on atoms. The radius of these spheres are the product between
+this factor and the covalent radius of element (read from the pseudo-potential
+file).<br />
+This factor is responsible for the amount of used memory (see also
+<a class="wikilink" href="../../input_variables/varbas#wvl_hgrid">wvl_hgrid</a>).</p>
+<h2 id="wvl_frmult"><strong>wvl_frmult</strong><a class="headerlink" href="#wvl_frmult" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaVeLet Fine grid Radius MULTiplier<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 10.0  </p>
+<p>This factor is used to defined the expansion of the fine resolution grid in
+the case of wavelets (see <a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a> ). This fine resolution grid has the same
+grid step than the coarse one (see <a class="wikilink" href="../../input_variables/vargs#wvl_crmult">wvl_crmult</a> ), but on each point, 8
+coefficients are stored instead of one, increasing the precision of the
+calculation in this area. The grid is made of points inside spheres centered
+on atoms. The radius of these spheres are the product between this factor and
+a value read from the pseudo-potential file.<br />
+This factor is responsible for the amount of used memory (see also
+<a class="wikilink" href="../../input_variables/varbas#wvl_hgrid">wvl_hgrid</a>).</p>
+<h2 id="wvl_ngauss"><strong>wvl_ngauss</strong><a class="headerlink" href="#wvl_ngauss" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaVeLet Number of GAUSSians<br />
+Variable type: integer<br />
+Dimensions: (2)<br />
+Default value: [1, 100]  </p>
+<p>In the wavelet-PAW computation case, projectors may be fitted to a sum of
+complex Gaussians. The fit is done for wvl_ngauss(1), wvl_ngauss(1)+1 &hellip; up
+to wvl_ngauss(2) Gaussians.</p>
+<h2 id="wvl_nprccg"><strong>wvl_nprccg</strong><a class="headerlink" href="#wvl_nprccg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaVeLet maximum Number of PReConditionner Conjugate Gradient iterations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 5  </p>
+<p>In the wavelet computation case, the wavefunctions are directly minimised
+using a real-space preconditionner. This preconditionner has internally some
+conjugate gradient iterations. This value defines a boundary for the number of
+conjugate gradient iterations on each wavefunction convergence step.</p>
+<h2 id="xredsph_extra"><strong>xredsph_extra</strong><a class="headerlink" href="#xredsph_extra" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: X(position) in REDuced coordinates of the SPHeres for dos projection in the EXTRA set<br />
+Variable type: real<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vargs#natsph_extra">natsph_extra</a>)<br />
+Default value: *0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#natsph_extra">natsph_extra</a> &gt; 0  </p>
+<p>The positions in reduced coordinates of extra spheres used in the DOS
+projection, simulating an STS signal. See <a class="wikilink" href="../../input_variables/vargs#natsph_extra">natsph_extra</a> for a more complete
+description.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

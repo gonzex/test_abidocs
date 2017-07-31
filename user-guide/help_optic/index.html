@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/user-guide/help_optic/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Optic - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../help_mrgddb/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../input_variables/varlist_abinit/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-introduction">1. Introduction</a></li>
+        <li class="main "><a href="#246-how-to-run-optic">2. How to run Optic ?</a></li>
+        <li class="main "><a href="#346-optic-input-file-and-input-variables">3. Optic input file and input variables</a></li>
+        <li class="main "><a href="#446-optic-output-files">4. Optic output files</a></li>
+            <li><a href="#41-linear-optical-response-data-files">4.1. Linear optical response data files</a></li>
+            <li><a href="#42-non-linear-optical-response-data-files">4.2. Non-linear optical response data files</a></li>
+        <li class="main "><a href="#546-trouble-shooting">5. Trouble shooting</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This file explains the i/o parameters needed for the calculation of the
+frequency dependent linear optical dielectric function and second order
+nonlinear optical susceptibility, in the RPA approximation (sum over states
+using independent electronic states) thanks to the Optic utility of the ABINIT
+package.</p>
+<p>The user is advised to be familiar with the main <a class="wikilink" href="../../help_abinit/">help_abinit</a> before
+reading the present file.</p>
+<p>A knowledge of the computation of the linear response d/dk perturbation,
+explained in the <a href="../help_respfn.html">ABINIT (respfn) help file</a>, is also
+requested. Actually, a full understanding of the ABINIT treatment of
+perturbation (respfn) should NOT be requested in order to use Optic, but with
+the present ordering of the help files and tutorial, this is not obvious. In a
+future version, the tutorials and help files will be reorder and modified.</p>
+<p>It will be easier to discover the present file with the help of the tutorial (<a class="wikilink" href="../../lesson_optic/">lesson_optic</a>).<br />
+It is worthwhile to print this help file, for ease of reading.</p>
+<div class="toc">
+<ul>
+<li><a href="#146-introduction">1. Introduction</a></li>
+<li><a href="#246-how-to-run-optic">2. How to run Optic ?</a></li>
+<li><a href="#346-optic-input-file-and-input-variables">3. Optic input file and input variables</a></li>
+<li><a href="#446-optic-output-files">4. Optic output files</a><ul>
+<li><a href="#41-linear-optical-response-data-files">4.1. Linear optical response data files</a></li>
+<li><a href="#42-non-linear-optical-response-data-files">4.2. Non-linear optical response data files</a></li>
+</ul>
+</li>
+<li><a href="#546-trouble-shooting">5. Trouble shooting</a></li>
+</ul>
+</div>
+<hr />
+<h3 id="146-introduction"><strong>1. Introduction </strong><a class="headerlink" href="#146-introduction" title="Permanent link">&para;</a></h3>
+<p>Optic allows to compute the frequency dependent linear optical dielectric
+function and second order nonlinear optical susceptibility. An introduction to
+such computations is given in the following paper :</p>
+<ul>
+<li>Ref. 1 : S. Sharma and C. Ambrosch-Draxl Physica Scripta T109, 128 (2004) or online: <a href="http://arxiv.org/abs/cond-mat/0305016">http://arxiv.org/abs/cond-mat/0305016</a></li>
+</ul>
+<p>The following are also very useful references :</p>
+<ul>
+<li>Ref. 2 : James L. P. Hughes and J. E. Sipe, Phys. Rev. B 53 10751 (1996) </li>
+<li>Ref. 3 : C. Ambrosch-Draxl and J. O. Sofo, online: <a href="http://arxiv.org/abs/cond-mat/0402523">http://arxiv.org/abs/cond-mat/0402523</a></li>
+<li>Ref. 4 : S. Sharma J. K. Dewhurst and C. Ambrosch-Draxl Phys. Rev. B 67 165332 (2003) or online: <a href="http://arxiv.org/abs/cond-mat/0211512">http://arxiv.org/abs/cond-mat/0211512</a></li>
+</ul>
+<p>Before going to the detailed explanation of the Optic utility, the user is
+advised to get familiar to the theory behind it, explained in these
+references. So, either you know this theory and you continue the tutorial, or
+you should stop the tutorial here, and read at least Ref. 1.</p>
+<p>The specific purpose of the Optic utility is to read in the position matrix
+elements generated by ABINIT (also giving the momentum matrix elements), and
+then use Eq. 46 in Ref. 1 to determine the linear and Eqs. 49, 50 and 51 in
+Ref. 1 to determine the nonlinear optical response of the material under
+investigation.</p>
+<hr />
+<h3 id="246-how-to-run-optic"><strong>2. How to run Optic ? </strong><a class="headerlink" href="#246-how-to-run-optic" title="Permanent link">&para;</a></h3>
+<p>The use of Optic is quite simple :</p>
+<div class="codehilite"><pre><span></span>    $ optic &lt; optic.files &gt; optic.log
+</pre></div>
+
+
+<p>where the optic.files file contains three information : the name of the input
+file, the name of an output file (actually unused), and the root name for all
+other output files. These input files will be described in the next section.</p>
+<p>However, before being able to use Optic, you must have obtained, from the main
+abinit program, four different files, corresponding to the physical system
+that you want to study:</p>
+<ul>
+<li>The ground state wavefunction file, indexed with _WFK </li>
+<li>Three files containing the matrix elements of the position operator (or the derivative with respect to wavevector), one for each direction of space</li>
+</ul>
+<p>Supposing you have read the <a href="../help_abinit.html"><strong>main ABINIT help file</strong></a>, the
+production of the first file should not require any additional explanation.
+However, the way to obtain the matrix elements is worth explaining.<br />
+The long-wave method as well as the Berry-phase treatment of electric field,
+allow to establish the equivalence between the off-diagonal matrix elements of
+the position operator, and the off-diagonal matrix elements of the derivative
+with respect to the wavevector (d/dk), for the periodic part of the Bloch
+functions, see for example section VI of X. Gonze, Phys. Rev. B 55, 10337
+(1997), or Nunes and Gonze, Phys. Rev. B 63, 155107 (2001), and references
+therein. Moreover, a straightforward relationship exists between these matrix
+elements, and the matrix elements of the momentum operator.</p>
+<p>The main abinit program has the capability to compute derivatives of
+wavefunctions with respect to their wavevector. This is explained in the
+<a href="../help_respfn.html"><strong>ABINIT (respfn) help file</strong></a>. Such a calculation implies
+treating three d/dk perturbations, with numbers 3<em>natom+1, 3</em>natom+2 and
+3*natom+3 (that is, for a unit cell with 2 atoms, perturbations number 7, 8
+and 9). In the 2-atom case, the associated files needed for Optic have the
+index _1WF7 , _1WF8 , and _1WF9 .</p>
+<p>The formalism implemented in Optic treats explicitly the eigenstates lying in
+the range of energy between the lowest occupied wavefunction and the highest
+one plus the maximal excitation energy (chosen by the user). All the other
+ones are neglected. This has two important consequences for the preliminary
+runs :</p>
+<ul>
+<li>The ground calculation must produce explicitly all the eigenstates and eigenvalues for that target range of energy, so it cannot be restricted to the occupied wavefunctions only</li>
+<li>One does not need the full change of Bloch wavefunctions with respect to d/dk, but only the matrix elements between the wavefunctions of this range of energy</li>
+</ul>
+<p>Because of the latter, the computation of the response to d/dk perturbations
+is much shorter than usual : indeed, the matrix elements between the
+explicitly ground-state wavefunctions are computed at the very beginning of
+the abinit(respfn) run. It is not worth to make a full calculation of the
+modification of the wavefunctions due to a change of wavevector.</p>
+<hr />
+<h3 id="346-optic-input-file-and-input-variables"><strong>3. Optic input file and input variables </strong><a class="headerlink" href="#346-optic-input-file-and-input-variables" title="Permanent link">&para;</a></h3>
+<p>A typical optic.files file is presented below :</p>
+<div class="codehilite"><pre><span></span>    optic.in     ! Name of input file
+    optic.out    ! Unused
+    optic        ! Root name for all files that will be produced
+</pre></div>
+
+
+<p>Please note that the format of input files for Optic has changed from Abinit
+v8.0 Since very few input parameters are required for Optic, the optic.in file
+contains them with the namelist format. The order of the three parts, namely
+FILES, PARAMETERS and COMPUTATIONS must be kept unaltered.</p>
+<div class="codehilite"><pre><span></span>    &amp;FILES
+     ddkfile_1 = &#39;toptic_1o_DS4_1WF7&#39;,
+     ddkfile_2 = &#39;toptic_1o_DS5_1WF8&#39;,
+     ddkfile_3 = &#39;toptic_1o_DS6_1WF9&#39;,
+     wfkfile = &#39;toptic_1o_DS3_WFK&#39;
+    /
+    &amp;PARAMETERS
+     broadening = 0.002,
+     domega = 0.0003,
+     maxomega = 0.3,
+     scissor = 0.000,
+     tolerance = 0.002
+    /
+    &amp;COMPUTATIONS
+     num_lin_comp = 1,
+     lin_comp = 11,
+     num_nonlin_comp = 2,
+     nonlin_comp = 123,222,
+    /
+</pre></div>
+
+
+<hr />
+<p>ddkfile_X : name of the ddk file on the direction X (no default)<br />
+Variable type: string with the filename  </p>
+<p>Specify the filename that has been produced by the preparatory Abinit run.
+This file must contain the matrix elements of the d/dk operator along
+direction X. It must not contain the first-order wavefunctions and may be
+generated using prtwf 3.<br />
+You should make sure that the number of bands, of spin channels and of
+k-points are the same in all the files.  </p>
+<p>Go to the top</p>
+<hr />
+<p>wfkfile : name of the wfk file (no default)<br />
+Variable type: string with the filename  </p>
+<p>Specify the filename that has been produced by the preparatory Abinit run.
+This file must contain the eigenenergies on the set of k-points and bands to
+be included in the calculation.<br />
+You should make sure that the number of bands, of spin channels and of
+k-points are the same in all the files.  </p>
+<p>Go to the top</p>
+<hr />
+<p>broadening (default = 1.0d-3 Ha)<br />
+Variable type: real parameter, given in Hartree  </p>
+<p>In Eq. 46 of Ref. 1, it is clear that when ever wnm(k) is equal to w, there is
+a resonance. Numerically this would lead to an infinity. In order to avoid
+this one could do two things. You could change the sum over k-points to
+integration and then use linear tetrahedron method (see Ref. 2 for details).
+Another way to get around the problem is, like we do in the present case,
+avoid this singularity by adding a small complex number to the denominator.
+This prevents the denominator from ever going to 0 and acts as a broadening to
+the spectrum. The broadening should not be too large as this would wash out
+the features in the spectrum.  </p>
+<p>Go to the top</p>
+<hr />
+<p>domega : Frequency grid step (default = 1.0d-3 Ha)<br />
+Variable type: two real parameters, given in Hartree  </p>
+<p>The step and maximum sets your energy grid for the calculation using the
+formula number of energy mesh points=maximum/step (zero excluded). So in order
+to capture more features you can decrease the step size to get a finer energy
+grid. In order to go to higher frequency, increase the maximum.  </p>
+<p>Go to the top</p>
+<hr />
+<p>maxomega : Maximum of frequency grid (default = 1 Ha)<br />
+Variable type: two real parameters, given in Hartree  </p>
+<p>The step and maximum sets your energy grid for the calculation using the
+formula number of energy mesh points=maximum/step (zero excluded). So in order
+to capture more features you can decrease the step size to get a finer energy
+grid. In order to go to higher frequency, increase the maximum.  </p>
+<p>Go to the top</p>
+<hr />
+<p>scissor : Scissors shift (default = 0.0 [ no scissor ])<br />
+Variable type: real parameter, given in Hartree  </p>
+<p>LDA/GGA are well known to underestimate the band-gap by up to 100%. In order
+to get the optical spectrum and make a realistic comparison with experiments
+one needs to correct for this. This can be achieved in two ways. The scissors
+shift is normally chosen to be the difference between the experimental and
+theoretical band-gap and is used to shift the conduction bands only. Another
+way in which you do not have to rely on experimental data is to determine the
+self energy using the <a href="../../../tutorial/generated_files/lesson_gw1.html">GW
+approach</a>. In this case the
+opening of the gap due to the GW correction can be used as scissor shift.  </p>
+<p>Go to the top</p>
+<hr />
+<p>tolerance (default = 1.0d-3 Ha)<br />
+Variable type: real parameter, given in Hartree  </p>
+<p>When energy denominators are smaller than tolerance, the term is discarded
+from the sum.  </p>
+<p>Go to the top</p>
+<hr />
+<p>num_lin_comp: Number of components for linear response<br />
+Variable type: integer  </p>
+<p>How many components out of 9 of the linear optical dielectric tensor do you
+want to calculate. Most of these are either equal or zero depending upon the
+symmetry of the material (for detail see Ref. 3).<br />
+Note that the directions are along the Cartesian axis.  </p>
+<p>Go to the top</p>
+<hr />
+<p>lin_comp: Components of the linear response<br />
+Variable type: integers(num_lin_comp)  </p>
+<p>This tells which component of the dielectric tensor you want to calculate.
+These numbers are called a and b Eqs. 46 in Ref. 1. 1 2 3 represent x y and z
+respectively. For example 11 would be xx and 32 would mean zy.  </p>
+<p>Go to the top</p>
+<hr />
+<p>num_nonlin_comp: Number of components for nonlinear response<br />
+Variable type: integer  </p>
+<p>How many components out of 27 of the non-linear optical dielectric tensor do
+you want to calculate. Most of these are either equal or zero depending upon
+the symmetry of the material (for detail see Ref. 3).<br />
+Note that the directions are along the Cartesian axis.  </p>
+<p>Go to the top</p>
+<hr />
+<p>nonlin_comp: Components of the nonlinear response<br />
+Variable type: integers(num_nonlin_comp)  </p>
+<p>This tells which component of the dielectric tensor you want to calculate.
+These numbers are called a, b and c in Ref. 1. 1 2 3 represent x y and z
+respectively. For example 111 would be xxx and 321 would mean zyx.  </p>
+<p>Go to the top</p>
+<hr />
+<hr />
+<h3 id="446-optic-output-files"><strong>4. Optic output files </strong><a class="headerlink" href="#446-optic-output-files" title="Permanent link">&para;</a></h3>
+<h4 id="41-linear-optical-response-data-files"><strong>4.1. Linear optical response data files</strong><a class="headerlink" href="#41-linear-optical-response-data-files" title="Permanent link">&para;</a></h4>
+<p>Name: case_a_b-linopt.out<br />
+Contains the following 3 data sets</p>
+<ul>
+<li>1) Column 1 - energy(eV), column 2 - imaginary part of the ab component of the frequency dependent linear dielectric tensor.</li>
+<li>2) Column 1 - energy(eV), column 2 - real part of the ab component of the frequency dependent linear dielectric tensor.</li>
+<li>3) Column 1 - energy(eV), column 2 - absolute value of the ab component of the frequency dependent linear dielectric tensor.</li>
+</ul>
+<p>In the header of the file you can find information about the calculation. Some
+results for GaAs(LiF???) are presented in this document to show what can be
+expected.</p>
+<h4 id="42-non-linear-optical-response-data-files"><strong>4.2. Non-linear optical response data files</strong><a class="headerlink" href="#42-non-linear-optical-response-data-files" title="Permanent link">&para;</a></h4>
+<p>Name: case_a_b_c-ChiKIND1.out<br />
+KIND1:This can be TotIm, TotRe or TotAbs<br />
+Contains: column 1 - energy(eV), column 2 and 3 - imaginary (KIND1=TotIm),
+real (KIND1=TotRe) or absolute (KIND1=TotAbs) value of the abc component of
+the nonlinear optical susceptibility. Second column contains values in
+electro-static units (esu) and third column contains values in the SI units.  </p>
+<p>Name: case_a_b_c-ChiKIND2.out<br />
+KIND2:This can be Im, Re or abs<br />
+Contains: column 1 - energy(eV), column 2, 3 inter and column 4, 5 intra band
+contributions to the imaginary (KIND2=Im), real (KIND2=Re) or absolute
+(KIND2=Abs) value of the abc component of the nonlinear optical
+susceptibility. These components are labeled as inter and intra in Eqs. 49-51
+in Ref. 1.  </p>
+<p>All the values are in electro-static units (esu). In the header of all the
+above files you can find information about the calculation. Some results of
+nonlinear optical spectrum for GaAs(LiF???) are presented in this document to
+show what can be expected.</p>
+<hr />
+<h3 id="546-trouble-shooting"><strong>5. Trouble shooting </strong><a class="headerlink" href="#546-trouble-shooting" title="Permanent link">&para;</a></h3>
+<p>1) All I get is zeros in my *-linopt.out file. Why?</p>
+<p>There are several possibilities.<br />
+Let us explore some of them here:</p>
+<ul>
+<li>(i) The component of the dielectric tensor that you are looking at could be zero due to symmetry of the crystal. Normally zz component is a good place to start. It is almost never zero. So check the file case__0003_0003-linopt.out.</li>
+<li>(ii) If the components zz is zero this is more serious, if you are using the default input file t57.in then please check that on the line number 10 the second number is 33. If you are not using the default input file please calculate the 33 (or zz) component and make sure it is not zero.</li>
+<li>(iii) If even zz component is zero then possibilities are endless maximum frequency on line number 6 of t57.in is too small, or the number of bands used for performing ground state calculation are too small.</li>
+</ul>
+<p>2) All I get is zeros in my *-ChiKIND.out file. Why?</p>
+<p>Two most common mistakes are:</p>
+<ul>
+<li>(i) You are calculating the second order response for material with inversion symmetry in this case all the components will be correctly zero or very small like 10-15.</li>
+<li>(ii) Most components out of the 27 are zero due to the symmetry of the crystal. Please calculate a different component.</li>
+</ul>
+<hr /></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

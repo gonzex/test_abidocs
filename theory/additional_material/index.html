@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/theory/additional_material/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Additional Material - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../theory_mbt/">MBPT</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../theory_mbt/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../bibliography/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pdf-files">PDF files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="pdf-files">PDF files<a class="headerlink" href="#pdf-files" title="Permanent link">&para;</a></h1>
+<p>Notes on elastic properties by O. Oganov. 
+<a href="/theory/notes_assets/elasticity-oganov.pdf" download>Download</a>
+<form method="get" action="/theory/additional_material_assets/elasticity-oganov.pdf">
+   <button type="submit">Download!</button>
+</form>
+<button type="submit" onclick="window.open('/theory/additional_material_assets/elasticity-oganov.pdf')">Download!</button></p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

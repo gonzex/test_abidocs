@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/gw2/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>GW2 - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li class="active">
+    <a href="./">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../gw1/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../bse/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-the-preliminary-kohn-sham-band-structure-calculation">1. The preliminary Kohn-Sham band structure calculation.</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This lesson aims at showing how to obtain self-energy corrections to the DFT
+Kohn-Sham eigenvalues within the GW approximation, in the metallic case,
+without the use of a plasmon-pole model. The band width and Fermi energy of
+Aluminum will be computed.  </p>
+<p>The user may read the paper</p>
+<ul>
+<li>
+<p>F. Bruneval, N. Vast, and L. Reining, Phys. Rev. B <strong>74</strong>, 045102 (2006), 
+for some information and results about the GW treatment of Aluminum. He will
+also find there an analysis of the effect of self-consistency on
+quasiparticles in solids (not present in this tutorial, however available in
+Abinit). The description of the contour deformation technique that bypasses
+the use of a plasmon-pole model to calculate the frequency convolution of G
+and W can be found in</p>
+</li>
+<li>
+<p>S. Lebegue, S. Arnaud, M. Alouani, P. Bloechl, Phys. Rev. B 67, 155208 (2003), 
+with the relevant formulas. We will refer to these papers as the
+Bruneval[2006] and the Lebegue[2003] papers.</p>
+</li>
+</ul>
+<p>A brief description of the equations implemented in the code can be found in
+the <a href="../../../theory/generated_files/theorydoc_mbt.html">GW_notes</a>.</p>
+<p>Also, it is suggested to [acknowledge the efforts of developers of the GW part
+of ABINIT, by citing</p>
+<ul>
+<li>X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet, M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval, L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan. Zeit. Kristallogr. 220, 558-562 (2005). </li>
+</ul>
+<p>The user should be familiarized with the four basic lessons of ABINIT, see the
+<a href="../lesson_welcome.html">tutorial home page</a>, as well as the <a href="../lesson_gw1.html">first lesson on
+GW</a>.</p>
+<p>This lesson should take about one hour to be completed (also including the
+reading of Bruneval[2006] and Lebegue[2003]).</p>
+<ul>
+<li>
+<ol>
+<li>The preliminary Kohn-Sham band structure calculation. </li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Calculation of the screening file. </li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Finding the Fermi energy and the bottom of the valence band. </li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Computing a GW spectral function, and the plasmon satellite of Aluminum. </li>
+</ol>
+</li>
+</ul>
+<hr />
+<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<h3 id="146-the-preliminary-kohn-sham-band-structure-calculation"><strong> 1. The preliminary Kohn-Sham band structure calculation. </strong><a class="headerlink" href="#146-the-preliminary-kohn-sham-band-structure-calculation" title="Permanent link">&para;</a></h3>
+<p><em>Before beginning, you might consider to work in a different subdirectory as
+for the other lessons. Why not &ldquo;Work_gw2&rdquo; ?</em></p>
+<p>During <a href="../lesson_base4.html">lesson 4</a>, you computed different properties of
+Aluminum within the LDA. Unlike for silicon, in this approximation, there is
+no outstanding problem in the computed band structure. Nevertheless, as you
+will see, the agreement of the band structure with experiment can be improved
+significantly if one relies on the GW approximation.</p>
+<p>In the directory ~abinit/tests/tutorial/Input/Work_gw2, copy the files
+~abinit/tests/tutorial/Input/tgw2_x.files and tgw2_1.in, and modify the
+tgw2_x.files file as usual (see lesson 1).<br />
+Then (supposing abinit is the proper alias), issue:</p>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw2_x.files &gt;&amp; tgw2_1.log &amp;
+</pre></div>
+
+
+<p>This run generates the WFK file for the subsequent GW computation and also
+provides the band width of Aluminum. Note that the simple Fermi-Dirac smearing
+functional is used (<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=3), with a large smearing (<a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>=0.05 Ha).
+The k point grid is quite rough, an unshifted 4x4x4 Monkhorst-Pack grid (64 k
+points in the full Brillouin Zone, folding to 8 k points in the Irreducible
+wedge, <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>=4 4 4). Converged results would need a 4x4x4 grid with 4
+shifts (256 k points in the full Brillouin zone). This grid contains the Gamma
+point, at which the valence band structure reaches its minimum.</p>
+<p>The output file presents the Fermi energy</p>
+<div class="codehilite"><pre><span></span> Fermi (or HOMO) energy (eV) =   7.14774   Average Vxc (eV)=  -9.35982
+</pre></div>
+
+
+<p>as well as the lowest energy, at the Gamma point</p>
+<div class="codehilite"><pre><span></span> Eigenvalues (   eV  ) for nkpt=   8  k points:
+ kpt#   1, nband=  6, wtk=  0.01563, kpt=  0.0000  0.0000  0.0000 (reduced coord)
+  -3.76175  19.92114  19.92114  19.92114  21.00078  21.00078
+</pre></div>
+
+
+<p>So, the occupied band width is 10.90 eV. More converged calculations would
+give 11.06 eV (see Bruneval[2006]).<br />
+This is to be compared to the experimental value of 10.6 eV (see references in
+Bruneval[2006]).</p>
+<hr />
+<h3 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>2. Calculation of the screening file. </strong></p>
+<p>In order not to lose time, let us start the calculation of the screening file
+before the examination of the corresponding input file. So, copy the file
+tgw2_2.in, and modify the tgw2_x.files file as usual (replace occurrences of
+twg2_x by tgw2_2). Also, copy the WFK file (tgw2_1o_WFK) to tgw2_2i_WFK. Then
+run the calculation (it should take about 30 seconds on a 3 GHz PC).</p>
+<p>We now have to consider starting a GW calculation. However, unlike in the case
+of Silicon in the previous GW tutorial, where we were focussing on quantities
+close to the Fermi energy (spanning a range of a few eV), here we need to
+consider a much wider range of energy: the bottom of the valence band lies
+around -11 eV below the Fermi level. Unfortunately, this energy is of the same
+order of magnitude as the plasmon excitations. With a rough evaluation, the
+classical plasma frequency for a homogeneous electron gas with a density equal
+to the average valence density of Aluminum is 15.77 eV. Hence, using plasmon-
+pole models may be not really appropriate.</p>
+<p>In what follows, one will compute the GW band structure without a plasmon-pole
+model, by performing explicitly the numerical frequency convolution. In
+practice, it is convenient to extend all the functions of frequency to the
+full complex plane. And then, making use of the residue theorem, the
+integration path can be deformed: one transforms an integral along the real
+axis into an integral along the imaginary axis plus residues enclosed in the
+new contour of integration. The method is extensively described in
+Lebegue[2003].</p>
+<p>Examine the input file tgw2_2.in . The ten first lines contain the important
+information. There, you find some input variables that you are already
+familiarized with, like <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>, <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>, <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, but also new
+input variables: <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>, <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>, <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>, and <a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a>.
+The purpose of this run is simply to generate the screening matrices. Unlike
+for the plasmon-pole models, one needs to compute these at many different
+frequencies. This is the purpose of the new input variables. The main variable
+<a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> is set to 2 in order to specify a <em>non</em> plasmon-pole model
+calculation. Note that the number of frequencies along the imaginary axis
+governed by <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a> can be chosen quite small, since all functions are
+smooth in this direction. In contrast, the number of frequencies needed along
+the real axis set with the variable <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> is usually larger.</p>
+<hr />
+<h3 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><strong>3. Finding the Fermi energy and the bottom of the valence band. </strong></p>
+<p>In order not to lose time, let us start the calculation of the band width
+before the study of the input file. So, copy the file tgw2_3.in, and modify
+the tgw3_x.files file as usual (replace occurrences of twg2_x by tgw2_3).
+Also, copy the WFK file (tgw2_1o_WFK) to tgw2_3i_WFK, and the screening file
+(tgw2_2o_SCR) to tgw2_3i_SCR. Then run the calculation (it should take about 2
+minutes on a 3 GHz PC).</p>
+<p>The computation of the GW quasi-particle energy at the Gamma point of Aluminum
+does not differ from the one of quasi-particle in Silicon. However, the
+determination of the Fermi energy raises a completely new problem: one should
+sample the Brillouin Zone, to get new energies (quasi-particle energies) and
+then determine the Fermi energy. This is actually the first step towards a
+self-consistency!</p>
+<p>Examine the input file tgw2_3.in. The first thirty lines contain the important
+information. There, you find some input variables with values that you are
+already familiarized with, like <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>, <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>.
+Then, comes the input variable <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>=12. The value <em>x2</em> corresponds to
+a contour integration. The value <em>1x</em> corresponds to a self-consistent
+calculation with update of the energies only. Then, one finds the list of k
+points and bands for which a quasi-particle correction will be computed:
+<a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>, <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a>, and <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a>. The number and list of k points is simply
+the same as <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a> and <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a>. One might have specified less k points,
+though (only those needing an update). The list of band ranges <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> has
+been generated on the basis of the LDA eigenenergies. We considered only the
+bands in the vicinity of the Fermi level: bands much below or much above are
+likely to remain much or much above the Fermi region. In the present run, we
+are just interested in the states that may cross the Fermi level, when going
+from LDA to GW. For commodity, one could have selected an homogeneous range
+for the whole Brillouin zone, e.g. from 1 to 5, but this would have been more
+time-consuming.</p>
+<p>In the output file, one finds the quasi-particle energy at Gamma, for the
+lowest band:</p>
+<div class="codehilite"><pre><span></span>k =    0.000   0.000   0.000
+ Band     E_lda   &lt;Vxclda&gt;   E(N-1)  &lt;Hhartree&gt;   SigX  SigC[E(N-1)]    Z     dSigC/dE  Sig[E(N)]  DeltaE  E(N)_pert E(N)_diago
+    1    -3.762    -9.451    -3.762     5.689   -15.049     5.676     0.777    -0.287    -9.390     0.060    -3.701    -3.684
+</pre></div>
+
+
+<p>(the last column is the relevant quantity). The updated Fermi energy is also
+mentioned:</p>
+<div class="codehilite"><pre><span></span> New Fermi energy:     2.469501E-01 Ha ,    6.719854E+00 eV
+</pre></div>
+
+
+<p>The last information is not printed in case of <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> lower than 10.</p>
+<p>Combining the quasi-particle energy at Gamma and the Fermi energy, gives the
+band width, 10.404 eV. Using converged parameters, the band width will be
+10.54 eV (see Bruneval[2006]). This is in excellent agreement with the
+experimental value of 10.6 eV.</p>
+<hr />
+<h3 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><strong>4. Computing a GW spectral function, and the plasmon satellite of Aluminum. </strong></p>
+<p>The access to the non-plasmon-pole-model self-energy (real and imaginary part)
+has additional benefit, e.g. an accurate spectral function can be computed,
+see Lebegue[2003]. You may be interested to see the plasmon satellite of
+Aluminum, which can be accounted for within the GW approximation. Remember the
+spectral function is almost (except some matrix elements) the spectrum which
+is measured in photoemission spectroscopy (PES). In PES, a photon impinges the
+sample and extracts an electron from the material. The difference of energy
+between the incoming photon and the obtained electron gives the binding energy
+of the electron in the solid, or in other words the quasiparticle energy or
+the band structure. In simple metals, an additional process can take place
+easily: the impinging photon can <strong>extract an electron together with a global
+charge oscillation in the sample</strong>. The extracted electron will have a kinetic
+energy lower than in the direct process, because a part of the energy has gone
+to the plasmon. The electron will appear to have a larger binding energy&hellip;
+You will see that the spectral function of Aluminum consists of a main peak
+which corresponds to the quasiparticle excitation and some additional peaks
+which correspond to quasiparticle and plasmon excitations together.</p>
+<p>In order not to lose time, this calculation can be started before the
+examination of the input file. So, copy the file tgw2_4.in, and modify the
+tgw4_x.files file as usual (replace occurrences of twg2_x by tgw2_4). Also,
+copy the WFK file (tgw2_1o_WFK) to tgw2_4i_WFK, and the screening file
+(tgw2_2o_SCR) to tgw2_4i_SCR. Then run the calculation (it should take about 2
+minutes on a 3 GHz PC).</p>
+<p>Compared to the previous file (tgw2_3.in), the input file contains two
+additional keywords: <a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a>, and <a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a>. Also, the computation of
+the GW self-energy is done only at the Gamma point.</p>
+<p>The spectral function is written in the file tgw2_4o_SIG. It is a simple text
+file. It contains, as a function of the frequency (eV), the real part of the
+self-energy, the imaginary part of the self-energy, and the spectral function.
+You can visualize it using your preferred software. For instance, issue</p>
+<div class="codehilite"><pre><span></span>$ gnuplot
+gnuplot&gt;  p<span class="s1">&#39;tgw2_4o_SIG&#39;</span> u <span class="m">1</span>:4 w l
+</pre></div>
+
+
+<p>You should be able to distinguish the main quasiparticle peak located at the
+GW energy (-3.7 eV) and some additional features in the vicinity of the GW
+eigenvalue minus a plasmon energy (-3.7 eV - 15.8 eV = -19.5 eV).</p>
+<p>Another file, tgw2_4o_GW, is worth to mention: it contains information to be
+used for the subsequent calculation of excitonic effects by the EXC code
+(usually available at http://theory.polytechnique.fr/codes/exc ; if not, see
+the <a href="http://www.etsf.eu/resources/software/codes">ETSF software page</a> and
+further links).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

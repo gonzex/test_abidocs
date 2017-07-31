@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/basepar/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Base - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../bse/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../paral_mbt/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-generalities">1. Generalities</a></li>
+        <li class="main "><a href="#246-characteristics-of-parallel-environments">2. Characteristics of parallel environments</a></li>
+            <li><a href="#generalities">Generalities</a></li>
+            <li><a href="#mpi">MPI</a></li>
+            <li><a href="#openmp">OpenMP</a></li>
+            <li><a href="#scalapack">Scalapack</a></li>
+            <li><a href="#fastslow-communications">Fast/slow communications</a></li>
+        <li class="main "><a href="#346-what-parts-of-abinit-are-parallel">3. What parts of ABINIT are parallel?</a></li>
+        <li class="main "><a href="#446-a-simple-example-of-parallelism-in-abinit">4. A simple example of parallelism in ABINIT</a></li>
+            <li><a href="#running-a-job">Running a job</a></li>
+            <li><a href="#parallelism-over-the-k-points">Parallelism over the k-points</a></li>
+            <li><a href="#parallelism-over-the-spins">Parallelism over the spins</a></li>
+            <li><a href="#number-of-computing-cores-to-accomplish-a-task">Number of computing cores to accomplish a task</a></li>
+            <li><a href="#evidencing-overhead">Evidencing overhead</a></li>
+        <li class="main "><a href="#546-details-of-the-implementation">5. Details of the implementation</a></li>
+            <li><a href="#the-mpi-toolbox-in-abinit">The MPI toolbox in ABINIT</a></li>
+            <li><a href="#how-to-parallelize-a-routine-some-hints">How to parallelize a routine: some hints</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>There are many situations where a sequential code is not enough, often because
+it would take too much time to get a result. There are also cases where you
+just want things to go as fast as your computational resources allow it. By
+using more than one processor, you might also have access to more memory than
+with only one processor. To this end, it is possible to use ABINIT in
+parallel, with dozens, hundreds or even thousands processors.</p>
+<p>This tutorial offers you a little reconnaissance tour inside the complex world
+that emerges as soon as you want to use more than one processor. From now on,
+we will suppose that you are already familiar with ABINIT and that you have
+gone through all four basic tutorials. If this is not the case, we strongly
+advise you to do so, in order to truly benefit from this tutorial.</p>
+<p>We strongly recommend you to acquaint yourself with some basic concepts of
+<a href="https://en.wikipedia.org/wiki/Parallel_computing">parallel computing</a> too. In
+particular <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law"> Almdalh&rsquo;s law</a>,
+that rationalizes the fact that, beyond some number of processors, the
+inherently sequential parts will dominate parallel parts, and give a
+limitation to the maximal speed-up that can be achieved.</p>
+<ul>
+<li>
+<ol>
+<li>Generalities</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Parallel environments </li>
+<li>Generalities</li>
+<li>MPI</li>
+<li>OpenMP</li>
+<li>Scalapack</li>
+<li>Fast/slow communications</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>What parts of ABINIT are parallel?</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>A simple example of parallelism in ABINIT </li>
+<li>Running a job</li>
+<li>Parallelism over the k-points</li>
+<li>Parallelism over the spins</li>
+<li>Number of computing cores to accomplish a task</li>
+<li>Evidencing overhead</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Details of the implementation </li>
+<li>The MPI toolbox in ABINIT</li>
+<li>How to parallelize a routine: some hints</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="146-generalities">1. Generalities<a class="headerlink" href="#146-generalities" title="Permanent link">&para;</a></h2>
+<p>With the broad availability of multi-core processors, everybody now has a
+parallel machine at hand. ABINIT will be able to take advantage of the
+availability of several cores for most of its capabilities, be it ground-state
+calculations, molecular dynamics, linear-response, many-body perturbation
+theory, &hellip;</p>
+<p>Such tightly integrated multi-core processors (or so-called SMP machines,
+meaning Symmetric Multi-Processing) can be interlinked within networks, based
+on Ethernet or other types of connections (Quadrics, Myrinet, etc &hellip;). The
+number of cores in such composite machines can easily exceed one hundred, and
+go up to a fraction of a million these days. Most ABINIT capabilities can use
+efficiently several hundred computing cores. In some cases, even more than ten
+thousand computing cores can be used efficiently.</p>
+<p>Before actually starting this tutorial and the associated ones, we strongly
+advise you to get familiar with your own parallel environment. It might be
+relatively simple for a SMP machine, but more difficult for very powerful
+machines. You will need at least to have MPI (see next section) installed on
+your machine. Take some time to determine how you can launch a job in parallel
+with MPI (typically the qsub command and an associated shell script), what are
+the resources available and the limitations as well, and do not hesitate to
+discuss with your system administrator if you feel that something is not clear
+to you.</p>
+<p>We will suppose in the following that you know how to run a parallel program
+and that you are familiar with the peculiarities of your system. Please
+remember that, as there is no standard way of setting up a parallel
+environment, we are not able to provide you with support beyond ABINIT itself.</p>
+<hr />
+<h2 id="246-characteristics-of-parallel-environments">2. Characteristics of parallel environments<a class="headerlink" href="#246-characteristics-of-parallel-environments" title="Permanent link">&para;</a></h2>
+<h3 id="generalities">Generalities<a class="headerlink" href="#generalities" title="Permanent link">&para;</a></h3>
+<p>Different software solutions can be used to benefit from parallelism. Most of
+ABINIT parallelism is based on MPI, but some additional speed-up (or a better
+distribution of data, allowing to run bigger calculations) is based on OpenMP.
+As of writing, efforts also focus on Graphical Processing Units (GPUs), with
+CUDA and MAGMA. The latter will not be described in the present tutorial.</p>
+<h3 id="mpi">MPI<a class="headerlink" href="#mpi" title="Permanent link">&para;</a></h3>
+<p>MPI stands for Message Passing Interface. The goal of MPI, simply stated, is
+to develop a widely used standard for writing message- passing programs. As
+such the interface attempts to establish a practical, portable, efficient, and
+flexible standard for message passing.</p>
+<p>The main advantages of establishing a message-passing standard are portability
+and ease-of-use. In a distributed memory communication environment in which
+the higher level routines and/or abstractions are build upon lower-level
+message-passing routines, the benefits of standardization are particularly
+obvious. Furthermore, the definition of a message-passing standard provides
+vendors with a clearly defined base set of routines that they can implement
+efficiently, or in some cases provide hardware support for, thereby enhancing
+scalability [MPI1].</p>
+<p>At some point in its history MPI has reach a critical popularity level, and a
+bunch of projects have popped-up like daisies in the grass. Now the tendency
+is back to gathering and merging. For instance, Open MPI is a project
+combining technologies and resources from several other projects (FT-MPI, LA-
+MPI, LAM/MPI, and PACX-MPI) in order to build the best MPI library available.
+Open MPI is a completely new MPI2-compliant implementation, offering
+advantages for system and software vendors, application developers and
+computer science researchers [MPI2].</p>
+<p>[MPI1] <a href="http://mpi-forum.org">http://mpi-forum.org</a><br />
+[MPI2] <a href="https://www.open-mpi.org">https://www.open-mpi.org</a></p>
+<h3 id="openmp">OpenMP<a class="headerlink" href="#openmp" title="Permanent link">&para;</a></h3>
+<p>The OpenMP Application Program Interface (API) supports multi-platform
+<strong>shared-memory</strong> parallel programming in C/C++ and Fortran on all
+architectures, including Unix platforms and Windows NT platforms. Jointly
+defined by a group of major computer hardware and software vendors, OpenMP is
+a portable, scalable model that gives shared-memory parallel programmers a
+simple and flexible interface for developing parallel applications for
+platforms ranging from the desktop to the supercomputer [OMP1].</p>
+<p>OpenMP is rarely used within ABINIT, and only for specific purposes. In any
+case, the first level of parallelism for these parts is based on MPI. Thus,
+the use of OpenMP in ABINIT will not be described in this tutorial.</p>
+<p>[OMP1] <a href="http://www.openmp.org">http://www.openmp.org</a></p>
+<h3 id="scalapack">Scalapack<a class="headerlink" href="#scalapack" title="Permanent link">&para;</a></h3>
+<p>Scalapack is the parallel version of the popular LAPACK library (for linear
+algebra). It can play some role in the parallelism of several parts of ABINIT,
+especially the Band-FFT parallelism, and the parallelism for the Bethe-
+Salpether equation. ScaLAPACK being itself based on MPI, we will not discuss
+its use in ABINIT in this tutorial.</p>
+<h3 id="fastslow-communications">Fast/slow communications<a class="headerlink" href="#fastslow-communications" title="Permanent link">&para;</a></h3>
+<p>Characterizing the data-transfer efficiency between two computing cores (or
+the whole set of cores) is a complex task. At a quite basic level, one has to
+recognize that not only the quantity of data that can be transferred per unit
+of time is important, but also the time that is needed to initialize such a
+transfer (so called &ldquo;latency&rdquo;).</p>
+<p>Broadly speaking, one can categorize computers following the speed of
+communications. In the fast communication machines, the latency is very low
+and the transfer time, once initialized, is very low too. For the parallelised
+part of ABINIT, SMP machines and machines with fast interconnect (Quadrics,
+Myrinet &hellip;) will usually not be limited by their network characteristics, but
+by the existence of residual sequential parts. The tutorials that have been
+developed for ABINIT have been based on fast communication machines.</p>
+<p>If the set of computing cores that you plan to use is not entirely linked
+using a fast network, but includes some connections based e.g. on Ethernet,
+then, you might not be able to benefit from the speed-up announced in the
+tutorials. You have to perform some tests on your actual machine to gain
+knowledge of it.</p>
+<hr />
+<h2 id="346-what-parts-of-abinit-are-parallel">3. What parts of ABINIT are parallel?<a class="headerlink" href="#346-what-parts-of-abinit-are-parallel" title="Permanent link">&para;</a></h2>
+<p>Parallelizing a code is a very delicate and complicated task, thus do not
+expect that things will systematically go faster just because you are using a
+parallel version of ABINIT. Please keep also in mind that in some situations,
+parallelization is simply impossible. At the present time, the parts of ABINIT
+that have been parallelized, and for which a tutorial is available, include:</p>
+<ul>
+<li><a href="../lesson_paral_gspw.html">ground state with plane waves</a>,</li>
+<li><a href="../lesson_paral_gswvl.html">ground state with wavelets</a>,</li>
+<li><a href="../lesson_paral_moldyn.html">molecular dynamics</a>,</li>
+<li><a href="../lesson_paral_string.html">parallelism on &ldquo;images&rdquo;</a>,</li>
+<li><a href="../lesson_paral_dfpt.html">response functions</a>,</li>
+<li><a href="../lesson_paral_mbt.html">Many-Body Perturbation Theory</a>.</li>
+</ul>
+<p>Note that the tutorial on <a href="../lesson_paral_gspw.html">ground state with plane
+waves</a> presents a complete overview of this
+parallelism, including up to four levels of parallelisation and, as such, is
+rather complex. Of course, it is also quite powerful, and allows to use
+several hundreds of processors.</p>
+<p>Actually, the two levels based on</p>
+<ul>
+<li>the treatment of k-points in reciprocal space;</li>
+<li>the treatment of spins, for spin-polarized collinear situations (when <a href="../../../input_variables/generated_files/varbas.html#nsppol">nsppol</a>=2);</li>
+</ul>
+<p>are, on the contrary, quite easy to use. An example of such parallelism will
+be given in the next section.</p>
+<hr />
+<h2 id="446-a-simple-example-of-parallelism-in-abinit">4. A simple example of parallelism in ABINIT<a class="headerlink" href="#446-a-simple-example-of-parallelism-in-abinit" title="Permanent link">&para;</a></h2>
+<h3 id="running-a-job">Running a job<a class="headerlink" href="#running-a-job" title="Permanent link">&para;</a></h3>
+<p><em>Before starting, you might consider working in a different subdirectory as
+for the other lessons. Why not &ldquo;Work_paral&rdquo; ?</em></p>
+<p>Copy the <em>files</em> file and the input file from the <em>~abinit/tests/tutorial</em>
+directory to your work directory. They are named <em>tbasepar_1.files</em> and
+<em>tbasepar_1.in</em>. You can start immediately a sequential run, to have a
+reference CPU time. On a 2.8GHz PC, it runs in about one minute.</p>
+<p>Contrary to the sequential case, it is worth to have a look at the &ldquo;files&rdquo;
+file, and to modify it for the parallel execution, as one should avoid
+unnecessary network communications. If every node has its own temporary or
+scratch directory, you can achieve this by providing a path to a local disk
+for the temporary files in <em>abinit.files</em>. Supposing each processor has access
+to a local temporary disk space named <em>/scratch/user</em>, then you might modify
+the 5th line of the <em>files</em> file so that it becomes:</p>
+<div class="codehilite"><pre><span></span>tbasepar_1.in
+tbasepar_1.out
+tbasepar_1i
+tbasepar_1o
+/scratch/user/tbasepar_1
+../../Psps_for_tests/HGH/82pb.4.hgh
+</pre></div>
+
+
+<p>Note that determining ahead of time the precise resources you will need for
+your run will save you a lot of time if you are using a batch queue system.</p>
+<h3 id="parallelism-over-the-k-points">Parallelism over the k-points<a class="headerlink" href="#parallelism-over-the-k-points" title="Permanent link">&para;</a></h3>
+<p>The most favorable case for a parallel run is to treat the k-points
+concurrently, since the calculations can be done independently for each one of
+them.</p>
+<p>Actually, <em>tbasepar_1.in</em> corresponds to the investigation of a fcc crystal of
+lead, which requires a large number of k-points if one wants to get an
+accurate description of the ground state. Examine this file. Note that the
+cut-off is realistic, as well as the grid of k-points (giving 60 k points in
+the irreducible Brillouin zone). However, the number of SCF steps, <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>,
+has been set to 3 only. This is to keep the CPU time reasonable for this
+tutorial, without affecting the way parallelism on the k points will be able
+to increase the speed. Once done, your output files have likely been produced.
+Examine the timing in the output file (the last line gives the overall CPU and
+Wall time), and keep note of it.</p>
+<p>Now you should run the parallel version of ABINIT. On a multi-core PC, you
+might succeed to use two compute cores by issuing the run command for your MPI
+implementation, and mention the number of processors you want to use, as well
+as the abinit command:</p>
+<div class="codehilite"><pre><span></span>mpirun -np 2 ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
+</pre></div>
+
+
+<p>Depending on your particular machine, &ldquo;mpirun&rdquo; might have to be replaced by
+&ldquo;mpiexec&rdquo;, and &ldquo;-np&rdquo; by some other option.</p>
+<p>On a cluster, with the MPICH implementation of MPI, you have to set up a file
+with the addresses of the different CPUs. Let&rsquo;s suppose you call it <em>cluster</em>.
+For a PC bi-processor machine, this file could have only one line, like the
+following:</p>
+<div class="codehilite"><pre><span></span>sleepy.pcpm.ucl.ac.be:2
+</pre></div>
+
+
+<p>For a cluster of four machines, you might have something like:</p>
+<div class="codehilite"><pre><span></span>tux0
+tux1
+tux2
+tux3
+</pre></div>
+
+
+<p>More possibilities are mentioned in the file <em>~abinit/doc/users/paral_use</em>.</p>
+<p>Then, you have to issue the run command for your MPI implementation, and
+mention the number of processors you want to use, as well as the abinit
+command and the file containing the CPU addresses.</p>
+<p>On a PC bi-processor machine, this gives the following:</p>
+<div class="codehilite"><pre><span></span>mpirun -np 2 -machinefile cluster ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
+</pre></div>
+
+
+<p>Now, examine the corresponding output file. If you have kept the output from
+the sequential job, you can make a diff between the two files. You will notice
+that the numerical results are quite identical. You will also see that 60
+k-points have been kept in the memory in the sequential case, while 30
+k-points have been kept in the memory (per processor !) in the parallel case.</p>
+<p>The timing can be found at the end of the file. Here is an example:</p>
+<div class="codehilite"><pre><span></span>- Proc.   0 individual time (sec): cpu=         28.3  wall=         28.3
+
+================================================================================
+
+ Calculation completed.
+ Delivered    1 WARNINGs and   1 COMMENTs to log file.
++Overall time at end (sec) : cpu=         56.6  wall=         56.6
+</pre></div>
+
+
+<p>This corresponds effectively to a speed-up of the job by a factor of two.
+Let&rsquo;s examine it. The line beginning with <code>Proc. 0</code> corresponds to the CPU and
+Wall clock timing seen by the processor number 0 (processor indexing always
+starts at 0: here the other is number 1): 28.3 sec of CPU time, and the same
+amount of Wall clock time. The line that starts with <code>+Overall time</code>
+corresponds to the sum of CPU times and Wall clock timing for all processors.
+The summation is quite meaningful for the CPU time, but not so for the wall
+clock time: the job was finished after 28.3 sec, and not 56.6 sec.</p>
+<p>Now, you might try to increase the number of processors, and see whether the
+CPU time is shared equally amongst the different processors, so that the Wall
+clock time seen by each processor decreases. At some point (depending on your
+machine, and the sequential part of ABINIT), you will not be able to decrease
+further the Wall clock time seen by one processor. It is not worth to try to
+use more processors. You should get a curve similar to this one:</p>
+<p><img alt="" src="../../documents/lesson_basepar/lesson_basepar_speedup.png" /></p>
+<p>The red curve materializes the speed-up achieved, while the green one is the
+&ldquo;y = x&rdquo; line. The shape of the red curve will vary depending on your hardware
+configuration. The definition of the speed-up is the time taken in a
+sequential calculation divided by the time for your parallel calculation
+(hopefully &gt; 1) .</p>
+<p>One last remark: the number of k-points need not be a multiple of the number
+of processors. As an example, you might try to run the above case with 16
+processors: most of the processors will treat 4 k points, but four of them
+will only treat 3 k points. The maximal speed-up will only be 15 (=60/4),
+instead of 16.</p>
+<p>Try to avoid leaving an empty processor as this can make abinit fail with
+certain compilers. An empty processor happens, for example, if you use 14
+processors: you obtain ceiling(60/14) = 5 k points per processor. In this case
+12 processors are filled with 5 k points each (giving 60), and the last 2
+processors are completely empty. Obviously there is no point in not reducing
+the number of processors to 12. The extra processors do no useful work, but
+have to run anyway, just to confirm to abinit once in a while that all 14
+processors are alive.</p>
+<h3 id="parallelism-over-the-spins">Parallelism over the spins<a class="headerlink" href="#parallelism-over-the-spins" title="Permanent link">&para;</a></h3>
+<p>The parallelization over the spins (up, down) is done along with the one over
+the k-points, so it works exactly the same way. The files
+<em>~abinit/tests/tutorial/tbasepar_2.in</em> and
+<em>~abinit/tests/tutorial/tbasepar_2.files</em> treat a spin-polarized system
+(distorted FCC Iron) with only one k-point in the Irreducible Brillouin Zone.
+This is quite unphysical, and has the sole purpose to show the spin
+parallelism with as few as two processors: the k-point parallelism has
+precedence over the spin parallelism, so that with 2 processors, one needs
+only one k-point to see the spin parallelism.<br />
+If needed, modify the <em>files</em> file, to provide a local temporary disk space.
+Run this test case, in sequential, then in parallel.</p>
+<p>While the jobs are running, read the input and files file. Then look closely
+at the output and log files. They are quite similar. With a diff, you will see
+the only obvious manifestation of the parallelism in the following:</p>
+<div class="codehilite"><pre><span></span>&lt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1
+&lt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1
+---
+&gt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1 by node    0
+&gt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1 by node    1
+</pre></div>
+
+
+<p>In the second case (parallelism), node 0 is taking care of the up state for
+k-point 1, while node 1 is taking care of the down state for k-point 1. The
+timing analysis is very similar to the k-point parallelism case.</p>
+<p>If you have more than 2 processors at hand, you might increase the value of
+<a href="../../../input_variables/generated_files/varbas.html#ngkpt">ngkpt</a>, so that more
+than one k-point is available, and see that the k-point and spin parallelism
+indeed work concurrently.</p>
+<h3 id="number-of-computing-cores-to-accomplish-a-task">Number of computing cores to accomplish a task<a class="headerlink" href="#number-of-computing-cores-to-accomplish-a-task" title="Permanent link">&para;</a></h3>
+<p>Balancing efficiently the load on the processors is not always
+straightforward. When using k-point- and spin-parallelism, the ideal numbers
+of processors to use are those that divide the product of <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a> by
+<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a> (e.g. for <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>*<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>, it is quite efficient to use 2, 3, 4,
+6 or 12 processors). ABINIT will nevertheless handle correctly other numbers
+of processors, albeit slightly less efficiently, as the final time will be
+determined by the processor that will have the biggest share of the work to
+do.</p>
+<h3 id="evidencing-overhead">Evidencing overhead<a class="headerlink" href="#evidencing-overhead" title="Permanent link">&para;</a></h3>
+<p>Beyond a certain number of processors, the efficiency of parallelism
+saturates, and may even decrease. This is due to the inevitable overhead
+resulting from the increasing amount of communication between the processors.
+The loss of efficiency is highly dependent on the implementation and linked to
+the decreasing charge on each processor too.</p>
+<hr />
+<h2 id="546-details-of-the-implementation">5. Details of the implementation<a class="headerlink" href="#546-details-of-the-implementation" title="Permanent link">&para;</a></h2>
+<h3 id="the-mpi-toolbox-in-abinit">The MPI toolbox in ABINIT<a class="headerlink" href="#the-mpi-toolbox-in-abinit" title="Permanent link">&para;</a></h3>
+<p>The ABINIT-specific MPI routines are located in different subdirectories of
+<em>~abinit/src</em>: 12_hide_mpi/, 51_manage_mpi/, 56_io_mpi/, 79_seqpar_mpi/. They
+include:</p>
+<ul>
+<li>low-level communication handlers (xfuncmpi, initmpi_*,xdef_comm);</li>
+<li>header I/O helpers (hdr_io, hdr_io_netcdf);</li>
+<li>wavefunction I/O helpers (Wff*);</li>
+<li>a multiprocess-aware output routine (wrtout);</li>
+<li>a clean exit routine (leave_new).</li>
+</ul>
+<p>They are used by a wide range of routines.</p>
+<p>You might want to have a look at the routine headers for more detailed
+descriptions.</p>
+<h3 id="how-to-parallelize-a-routine-some-hints">How to parallelize a routine: some hints<a class="headerlink" href="#how-to-parallelize-a-routine-some-hints" title="Permanent link">&para;</a></h3>
+<p>Here we will give you some advice on how to parallelize a subroutine of
+ABINIT. Do not expect too much, and remember that you remain mostly on your
+own for most decisions. Furthermore, we will suppose that you are familiar
+with ABINIT internals and source code. Anyway, you can skip this section
+without hesitation, as it is primarily intended for advanced developers.</p>
+<p>First, every call to a MPI routine and every purely parallel section of your
+subroutine <strong>must</strong> be surrounded by the following preprocessing directives:</p>
+<div class="codehilite"><pre><span></span>#if defined MPI
+...
+#endif
+</pre></div>
+
+
+<p>The first block of this type will likely appear in the &ldquo;local variables&rdquo;
+section, where you will declare all MPI-specific variables. Please note that
+some of them will be used in sequential mode as well, and thus will be
+declared outside this block (typically <em>am_master</em>, master, me_loc, etc.).</p>
+<p>The MPI communications should be initialized at the very beginning of your
+subroutine. To do this, we suggest the following piece of code:</p>
+<div class="codehilite"><pre><span></span><span class="sx">!Init mpi_comm</span>
+ <span class="n">call</span> <span class="n">xcomm_world</span><span class="p">(</span><span class="n">spaceComm</span><span class="p">)</span>
+ <span class="n">am_master</span><span class="p">=.</span><span class="n">true</span><span class="p">.</span>
+ <span class="n">master</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="sx">!Init ntot proc max</span>
+ <span class="n">call</span> <span class="n">xproc_max</span><span class="p">(</span><span class="n">nproc_loc</span><span class="p">,</span><span class="n">ierr</span><span class="p">)</span>
+
+<span class="sx">!Define who i am</span>
+ <span class="n">call</span> <span class="n">xme_whoiam</span><span class="p">(</span><span class="n">me_loc</span><span class="p">)</span>
+
+#<span class="k">if</span> <span class="n">defined</span> <span class="n">HAVE_MPI</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">me_loc</span><span class="o">/</span><span class="p">=</span><span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
+  <span class="n">am_master</span><span class="p">=.</span><span class="n">FALSE</span><span class="p">.</span>
+ <span class="n">endif</span>
+
+ <span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s">&#39;(a,i3,a)&#39;</span> <span class="p">)</span> <span class="s">&#39; &lt;ROUTINE NAME&gt; &#39;</span><span class="p">,</span><span class="n">nproc_loc</span><span class="p">,</span><span class="s">&#39; CPU synchronized&#39;</span>
+ <span class="n">call</span> <span class="n">wrtout</span><span class="p">(</span><span class="n">std_out</span><span class="p">,</span><span class="n">message</span><span class="p">,</span><span class="s">&#39;COLL&#39;</span><span class="p">)</span>
+ <span class="c">...</span>
+#<span class="n">endif</span>
+</pre></div>
+
+
+<p>Note that the first calls to x* are outside the preprocessing - they must be
+called in all cases, and have their own pre-processed sections. The cleaning
+and closing of MPI stuff is done in a central part of abinit at the end of the
+run.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

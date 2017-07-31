@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/base4/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Base4 - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li class="active">
+    <a href="./">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../base3/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../rf1/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#41-computing-the-total-energy-and-lattice-parameters-of-aluminum-for">** 4.1. Computing the total energy and lattice parameters of aluminum for</a></li>
+        <li class="main "><a href="#42-the-convergence-study-with-respect-to-k-points">4.2. The convergence study with respect to k points</a></li>
+        <li class="main "><a href="#43-the-convergence-study-with-respect-to-both-number-of-k-points-and">** 4.3. The convergence study with respect to both number of k points AND</a></li>
+        <li class="main "><a href="#44-determination-of-the-surface-energy-of-aluminum-100-changing">** 4.4. Determination of the surface energy of aluminum (100): changing</a></li>
+        <li class="main "><a href="#45-determination-of-the-surface-energy-a-3-aluminum-layer-1">** 4.5. Determination of the surface energy : a (3 aluminum layer + 1</a></li>
+        <li class="main "><a href="#46-determination-of-the-surface-energy-increasing-the-number-of">** 4.6. Determination of the surface energy: increasing the number of</a></li>
+        <li class="main "><a href="#47-determination-of-the-surface-energy-increasing-the-number-of">** 4.7. Determination of the surface energy: increasing the number of</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This lesson aims at showing how to get the following physical properties, for
+a metal, and for a surface:</p>
+<ul>
+<li>the total energy </li>
+<li>the lattice parameter </li>
+<li>the relaxation of surface atoms </li>
+<li>the surface energy 
+You will learn about the smearing of the Brillouin zone integration, and also
+a bit about preconditioning the SCF cycle.</li>
+</ul>
+<p>This lesson should take about 1 hour and 30 minutes.</p>
+<ul>
+<li>4.1. Computing the total energy and lattice parameters of aluminum for a fixed smearing and number of k points.</li>
+<li>4.2. The convergence study with respect to k points.</li>
+<li>4.3. The convergence study with respect to both number of k points AND broadening factor (tsmear).</li>
+<li>4.4. Determination of the surface energy of aluminum (100): changing the orientation of the unit cell.</li>
+<li>4.5. Determination of the surface energy: a (3 aluminum layer + 1 vacuum layer) slab calculation.</li>
+<li>4.6. Determination of the surface energy: increasing the number of vacuum layers.</li>
+<li>4.7. Determination of the surface energy: increasing the number of aluminum layers.</li>
+</ul>
+<hr />
+<h3 id="41-computing-the-total-energy-and-lattice-parameters-of-aluminum-for">** 4.1. Computing the total energy and lattice parameters of aluminum for<a class="headerlink" href="#41-computing-the-total-energy-and-lattice-parameters-of-aluminum-for" title="Permanent link">&para;</a></h3>
+<p>a fixed smearing and number of k points. **</p>
+<p>_Before beginning, you might consider to work in a different subdirectory as
+for lesson 1, 2 or 3 . Why not &ldquo;Work4&rdquo; ? _</p>
+<p>The file ~abinit/tests/tutorial/Input/tbase4_x.files lists the file names and
+root names. You can copy it in the Work4 directory (and change it, as usual).
+You can also copy the file ~abinit/tests/tutorial/Input/tbase4_1.in in Work4.
+This is your input file. You should edit it, read it carefully, and have a
+look at the following &ldquo;new&rdquo; input variables, and their explanation:</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> </li>
+<li><a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> 
+Note also the following:<br />
+1) You will work at fixed <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> (=6Ha). It is implicit that in &ldquo;real life&rdquo;,
+you should do a convergence test with respect to <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> &hellip; Here, a suitable
+<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is given to you. It will allow to obtain 0.2% relative accuracy on
+lattice parameters. Note that this is the softer pseudopotential of those that
+we have used until now: the 01h.pspgth for H needed 30 Ha (it was rather
+hard), the 14si.pspnc for Si needed 8 Ha.<br />
+2) The input variable diemac has been suppressed. Aluminum is a metal, and the
+default is tailored for that case.</li>
+</ul>
+<p>When you have read the input file, you can run the code, as usual (it will
+take a few seconds). Then, read the output file quietly.<br />
+You should note that the Fermi energy and occupation numbers have been
+computed automatically:</p>
+<div class="codehilite"><pre><span></span> Fermi (or HOMO) energy (hartree) =   0.26847   Average Vxc (hartree)=  -0.34746
+ Eigenvalues (hartree) for nkpt=   2  k points:
+ kpt#   1, nband=  3, wtk=  0.75000, kpt= -0.2500  0.5000  0.0000 (reduced coord)
+   0.09425   0.25438   0.41909
+      occupation numbers for kpt#   1
+   2.00003   1.33307   0.00014
+ prteigrs : prtvol=0 or 1, do not print more k-points.
+</pre></div>
+
+
+<p>You should also note that the components of the total energy include an
+entropy term:</p>
+<div class="codehilite"><pre><span></span> Components of total free energy (in Hartree):
+
+    Kinetic energy  =  8.70954971782498E-01
+    Hartree energy  =  3.84986358590396E-03
+    XC energy       = -8.08434339502224E-01
+    Ewald energy    = -2.72948286712169E+00
+    PspCore energy  =  3.78721653637092E-02
+    Loc. psp. energy=  8.26684645838168E-02
+    NL   psp  energy=  4.52588269933839E-01
+    &gt;&gt;&gt;&gt;&gt; Internal E= -2.08998347137414E+00
+
+    -kT*entropy     = -7.99729047978171E-03
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -2.09798076185393E+00
+
+ Other information on the energy :
+    Total energy(eV)= -5.70889598417024E+01 ; Band energy (Ha)=   3.6059822203E-01
+</pre></div>
+
+
+<hr />
+<h3 id="42-the-convergence-study-with-respect-to-k-points"><strong> 4.2. The convergence study with respect to k points </strong><a class="headerlink" href="#42-the-convergence-study-with-respect-to-k-points" title="Permanent link">&para;</a></h3>
+<p>There is of course a convergence study associated to the sampling of the
+Brillouin zone. You should examine different grids, of increasing resolution.
+You might try the following series of grids:</p>
+<div class="codehilite"><pre><span></span>  ngkpt1  2 2 2
+  ngkpt2  4 4 4
+  ngkpt3  6 6 6
+  ngkpt4  8 8 8
+</pre></div>
+
+
+<p>with the associated <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>:</p>
+<div class="codehilite"><pre><span></span>  nkpt1  2
+  nkpt2 10
+  nkpt3 28
+  nkpt4 60
+</pre></div>
+
+
+<p>The input file ~abinit/tests/tutorial/Input/tbase4_2.in is an example, while
+~abinit/tests/tutorial/Refs/tbase4_2.out is a reference output file. The run
+might take about thirty seconds on a PC 3 GHz.</p>
+<p>You will see that, FOR THE PARTICULAR VALUE OF <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>=0.05 Ha, the lattice
+parameter is already converged with <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>=10 :</p>
+<div class="codehilite"><pre><span></span>            acell1     7.5588968086E+00  7.5588968086E+00  7.5588968086E+00 Bohr
+            acell2     7.5070431499E+00  7.5070431499E+00  7.5070431499E+00 Bohr
+            acell3     7.5016877756E+00  7.5016877756E+00  7.5016877756E+00 Bohr
+            acell4     7.4992662653E+00  7.4992662653E+00  7.4992662653E+00 Bohr
+</pre></div>
+
+
+<p>Note that there is usually a STRONG cross-convergence effect between the
+number of k points and the value of the broadening, <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>.<br />
+The right procedure is: for each value of <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>, to get the convergence
+with respect to the number of k points, then to compare the k-point converged
+values for different values of <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>.</p>
+<p>In what follows, we will restrict ourselves to the grids with <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>=2, 10
+and 28.</p>
+<hr />
+<h3 id="43-the-convergence-study-with-respect-to-both-number-of-k-points-and">** 4.3. The convergence study with respect to both number of k points AND<a class="headerlink" href="#43-the-convergence-study-with-respect-to-both-number-of-k-points-and" title="Permanent link">&para;</a></h3>
+<p>broadening factor (tsmear). **</p>
+<p>The theoretical convergence rate for <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> ending to 0, in the case of
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=4, is quartic. This is obtained in the hypothesis of infinitely
+dense k point grid. We will check the evolution of <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> as a function of
+<a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>, for the following values of <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> : 0.01, 0.02, 0.03 and
+0.04. Use the double-loop capability of the multi-dataset mode, with the
+<a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> changes in the INNER loop. This will saves CPU time, as the
+wavefunctions of the previous dataset will be excellent (no transfer to
+different k points).</p>
+<p>The input file ~abinit/tests/tutorial/Input/tbase4_3.in is an example, while
+~abinit/tests/tutorial/Refs/tbase4_3.out is a reference output file.</p>
+<p>From the output file, here is the evolution of <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> :</p>
+<div class="codehilite"><pre><span></span>            acell11    7.5587661702E+00  7.5587661702E+00  7.5587661702E+00 Bohr
+            acell12    7.5587696944E+00  7.5587696944E+00  7.5587696944E+00 Bohr
+            acell13    7.5587696871E+00  7.5587696871E+00  7.5587696871E+00 Bohr
+            acell14    7.5587710578E+00  7.5587710578E+00  7.5587710578E+00 Bohr
+            acell21    7.5055168997E+00  7.5055168997E+00  7.5055168997E+00 Bohr
+            acell22    7.5056781966E+00  7.5056781966E+00  7.5056781966E+00 Bohr
+            acell23    7.5018335937E+00  7.5018335937E+00  7.5018335937E+00 Bohr
+            acell24    7.5041510220E+00  7.5041510220E+00  7.5041510220E+00 Bohr
+            acell31    7.4963466654E+00  7.4963466654E+00  7.4963466654E+00 Bohr
+            acell32    7.4957099831E+00  7.4957099831E+00  7.4957099831E+00 Bohr
+            acell33    7.4969520318E+00  7.4969520318E+00  7.4969520318E+00 Bohr
+            acell34    7.4993529673E+00  7.4993529673E+00  7.4993529673E+00 Bohr
+</pre></div>
+
+
+<p>These data should be analyzed properly.</p>
+<p>For <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>=0.01, the converged value, contained in acell31, must be
+compared to acell11 and acell21: between acell21 and acell31, the difference
+is below 0.2%. acell31 can be considered to be converged with respect to the
+number of k-points, at fixed <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>.<br />
+This tsmear being the lowest one, it is usually the most difficult to
+converge, and the values acell31,32,33 and 34 are indeed well-converged with
+respect to the k-point number.<br />
+The use of the largest <a href="../=0.04">[tsmear]</a>, giving acell34, induces only a small
+error in the lattice parameter. For that particular value of <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>, one
+can use the second k-point grid, giving acell24.</p>
+<p>So to <strong>summarize</strong>:<br />
+we can choose to work with a 10 k-point grid in the irreducible Brillouin
+zone, and the associated <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>=0.04, with less than 0.1% error on the
+lattice parameter.<br />
+NOTE that this error due to the Brillouin zone sampling could add to the error
+due to the choice of <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> (that was mentioned previously to be on the
+order of 0.2%).</p>
+<p>In what follows, we will stick to these values of <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> and <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>, and
+try to use k-point grids with a similar resolution.</p>
+<p>Our final value for the aluminum lattice parameter, in the LDA, using the
+13al.981214.fhi pseudopotential, is thus 7.5041 Bohr. Note: for historical
+reasons (consistency with older versions of the tutorial), we will work on the
+following, with a slightly different value, of 7.5056 Bohr, that is 3.9718
+Angstrom.<br />
+The experimental value at 25 degree Celsius is 4.04958 Angstrom.</p>
+<p>The associated total energy and accuracy can be deduced from</p>
+<div class="codehilite"><pre><span></span>           etotal11   -2.0916027819E+00
+           etotal12   -2.0931968906E+00
+           etotal13   -2.0947909992E+00
+           etotal14   -2.0963851177E+00
+           etotal21   -2.0969713557E+00
+           etotal22   -2.0975525285E+00
+           etotal23   -2.0978233733E+00
+           etotal24   -2.0979980153E+00
+           etotal31   -2.0983520905E+00
+           etotal32   -2.0983215368E+00
+           etotal33   -2.0983305960E+00
+           etotal34   -2.0984218116E+00
+</pre></div>
+
+
+<p><strong>etotal</strong>24 is -2.0979980153E+00 Ha, with an accuracy of 0.0005 Ha .</p>
+<hr />
+<h3 id="44-determination-of-the-surface-energy-of-aluminum-100-changing">** 4.4. Determination of the surface energy of aluminum (100): changing<a class="headerlink" href="#44-determination-of-the-surface-energy-of-aluminum-100-changing" title="Permanent link">&para;</a></h3>
+<p>the orientation of the unit cell. **</p>
+<p>In order to study the Aluminum (100) surface, we will have to set up a
+supercell representing a slab. This supercell should be chosen as to be
+compatible with the primitive surface unit cell.<br />
+The corresponding directions are <code>[-1 1 0]</code> and <code>[1 1 0]</code>. The direction
+perpendicular to the surface is <code>[0 0 1]</code>. There is no primitive cell of bulk
+aluminum based on these vectors, but a doubled cell. We will first compute the
+total energy associated with this doubled cell. This is not strictly needed,
+but it is a valuable intermediate step towards the study of the surface.</p>
+<p>You might start from tbase4_3.in.<br />
+You have to change <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>. Still, try to keep <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> at the values of
+bulk aluminum that were determined previously. But it is not all: the most
+difficult part in the passage to this doubled cell is the definition of the
+k-point grid. Of course, one could just take a homogeneous simple cubic grid
+of k points, but this will not correspond exactly to the k-point grid used in
+the primitive cell in tbase4_3.in . This would not be a big problem, but you
+would miss some error cancellation.</p>
+<p>The answer to this problem is given in the input file
+~abinit/tests/tutorial/Input/tbase4_4.in.<br />
+The procedure to do the exact translation of the k-point grid will not be
+explained here (sorry for this). If you do not see how to do it, just use
+homogeneous simple cubic grids, with about the same resolution as for the
+primitive cell case. There is a simple rule to estimate ROUGHLY whether two
+grids for different cells have the same resolution: simply multiply the linear
+dimensions of the k-point grids, by the number of sublattices, by the number
+of atoms in the cell. For example, the corresponding product for the usual 10
+k-point grid is <code>4x4x4 x 4 x 1 = 256</code> . In the file tbase4_4.in, one has
+<code>4x4x4 x 2 x 2 = 256</code> . The grids of k points should not be too anisotropic
+for this rough estimation to be valid.</p>
+<p>Note also the input variables <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> and <a class="wikilink" href="../../input_variables/vargs#chkprim">chkprim</a> in this input file.</p>
+<p>So, you run tbase4_4.in (only a few seconds, the reference file is
+~abinit/tests/tutorial/Refs/tbase4_4.out), and you find the following total
+energy:</p>
+<div class="codehilite"><pre><span></span>           etotal     -4.1962972610E+00
+</pre></div>
+
+
+<p>It is not exactly twice the total energy for the primitive cell, mentioned
+above, but the difference is less than 0.0005 Ha. It is due to the different
+FFT grids used in the two runs, and affect the exchange-correlation energy.
+These grids are always homogeneous primitive 3D grids, so that changing the
+orientation of the lattice will give mutually incompatible lattices.
+Increasing the size of the FFT grid would improve the agreement.</p>
+<hr />
+<h3 id="45-determination-of-the-surface-energy-a-3-aluminum-layer-1">** 4.5. Determination of the surface energy : a (3 aluminum layer + 1<a class="headerlink" href="#45-determination-of-the-surface-energy-a-3-aluminum-layer-1" title="Permanent link">&para;</a></h3>
+<p>vacuum layer) slab calculation. **</p>
+<p>We will first compute the total energy associated with only three layers of
+aluminum, separated by only one layer of vacuum. This is kind of a minimal
+slab:</p>
+<ul>
+<li>one surface layer </li>
+<li>one &ldquo;bulk&rdquo; layer </li>
+<li>one surface layer </li>
+<li>one vacuum layer </li>
+<li>&hellip; 
+It is convenient to take the vacuum region as having a multiple of the width
+of the aluminum layers, but this is not mandatory. The supercell to use is the
+double of the previous cell (that had two layers of Aluminum atoms along the
+<code>[0 0 1]</code> direction). Of course, the relaxation of the surface might give an
+important contribution to the total energy.</li>
+</ul>
+<p>You should start from tbase4_4.in .<br />
+You have to modify <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> (double the cell along <code>[0 0 1]</code>), the atomic
+positions, as well as the k point mesh. For the latter, it is supposed that
+the electrons cannot propagate from one slab to its image in the <code>[0 0 1]</code>
+direction, so that the k_z component of the special k points can be taken 0:
+only one layer of k points is needed along the z-direction. You should also
+allow the relaxation of atomic positions, but not the relaxation of lattice
+parameters (the lattice parameters along x or y must be considered fixed to
+the bulk value, while, for the z direction, there is no interest to allow the
+vacuum region to collapse !</p>
+<p>The input file ~abinit/tests/tutorial/Input/tbase4_5.in is an example, while
+~abinit/tests/tutorial/Refs/tbase4_5.out is a reference output file. The run
+might last one minute.</p>
+<p>The total energy after the first SCF cycle, when the atomic positions are
+equal to their starting values, is:</p>
+<div class="codehilite"><pre><span></span> ETOT  6  -6.2619738807344
+</pre></div>
+
+
+<p>Note that the total energy of three aluminum atoms in the bulk, (from section
+4.3, etotal24 multiplied by three) is</p>
+<div class="codehilite"><pre><span></span>   -6.293994 Ha
+</pre></div>
+
+
+<p>so that the non-relaxed surface energy, per surface unit cell (there are two
+surfaces in our simulation cell !) is</p>
+<div class="codehilite"><pre><span></span>  0.016010 Ha = 0.436 eV .
+</pre></div>
+
+
+<p>The total energy after the Broyden relaxation is:</p>
+<div class="codehilite"><pre><span></span>           etotal     -6.2622251508E+00
+</pre></div>
+
+
+<p>so that the relaxed surface energy, per surface unit cell is</p>
+<div class="codehilite"><pre><span></span>0.015885 Ha = 0.432eV .
+</pre></div>
+
+
+<p>It seems that the relaxation energy is very small, compared to the surface
+energy, but we need to do the convergence studies.</p>
+<hr />
+<h3 id="46-determination-of-the-surface-energy-increasing-the-number-of">** 4.6. Determination of the surface energy: increasing the number of<a class="headerlink" href="#46-determination-of-the-surface-energy-increasing-the-number-of" title="Permanent link">&para;</a></h3>
+<p>vacuum layers. **</p>
+<p>One should now increase the number of vacuum layers: 2 and 3 layers instead of
+only 1.<br />
+It is preferable to define atomic positions in Cartesian coordinates. The same
+coordinates will work for both 2 and 3 vacuum layers, while this is not the
+case for reduced coordinates, as the cell size increases.</p>
+<p>The input file ~abinit/tests/tutorial/Input/tbase4_6.in is an example input
+file, while ~abinit/tests/tutorial/Refs/tbase4_6.out is a reference output
+file. The run is on the order of thirty seconds on a PC 3 GHz.</p>
+<p>In the Broyden step 0 of the first dataset, you will notice the WARNING:</p>
+<div class="codehilite"><pre><span></span> scprqt:  WARNING -
+  nstep=    6 was not enough SCF cycles to converge;
+  maximum force difference=  5.493E-05 exceeds toldff=  5.000E-05
+</pre></div>
+
+
+<p>The input variable <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> was intentionally set to the rather low value of
+6, to warn you about possible convergence difficulties. The SCF convergence
+might indeed get more and more difficult with cell size. This is because the
+default preconditioner (see the notice of the input variable <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a>) is
+not very good for the metal+vacuum case.<br />
+For the interpretation of the present run, this is not critical, as the
+convergence criterion was close of being fulfilled, but one should keep this
+in mind, as you will see &hellip;</p>
+<p>For the 2 vacuum layer case, one has the non-relaxed total energy:</p>
+<div class="codehilite"><pre><span></span> ETOT  6  -6.2539524271719
+</pre></div>
+
+
+<p>giving the unrelaxed surface energy</p>
+<div class="codehilite"><pre><span></span>  0.0200 Ha = 0.544 eV ;
+</pre></div>
+
+
+<p>and for the relaxed case:</p>
+<div class="codehilite"><pre><span></span>           etotal1    -6.2547006435E+00
+</pre></div>
+
+
+<p>(this one is converged to the required level) giving the relaxed surface
+energy</p>
+<div class="codehilite"><pre><span></span>  0.0196 Ha = 0.533 eV
+</pre></div>
+
+
+<p>Note that the difference between unrelaxed and relaxed case is a bit larger
+than in the case of one vacuum layer. This is because there was some
+interaction between slabs of different supercells.</p>
+<p>For the 3 vacuum layer case, the self-consistency is slightly more difficult
+than with 2 vacuum layers: the Broyden step 0 is not sufficiently converged
+(one might set nstep to a larger value, but the best is to change the
+preconditioner, as described below)&hellip;<br />
+However, for the Broyden steps number 2 and beyond, because one takes
+advantage of the previous wavefunctions, a sufficient convergence is reached.
+The total energy, in the relaxed case, is:</p>
+<div class="codehilite"><pre><span></span>           etotal2    -6.2559103620E+00
+</pre></div>
+
+
+<p>giving the relaxed surface energy <code>0.0190 Ha = 0.515 eV</code> There is a rather
+small 0.018 eV difference with the 2 vacuum layer case.</p>
+<p>For the next run, we will keep the 2 vacuum layer case, and we know that the
+accuracy of the coming calculation cannot be better than 0.016 eV. One might
+investigate the 4 vacuum layer case, but this is not worth, in the present
+tutorial &hellip;</p>
+<hr />
+<h3 id="47-determination-of-the-surface-energy-increasing-the-number-of">** 4.7. Determination of the surface energy: increasing the number of<a class="headerlink" href="#47-determination-of-the-surface-energy-increasing-the-number-of" title="Permanent link">&para;</a></h3>
+<p>aluminum layers. **</p>
+<p>One should now increase the number of aluminum layers, while keeping 2 vacuum
+layers. We will consider 4 and 5 aluminum layers. This is rather
+straightforward to set up, but will also change the preconditioner. One could
+use an effective dielectric constant of about 3 or 5, with a rather small
+mixing coefficient, on the order of 0.2. However, there is also another
+possibility, using an estimation of the dielectric matrix governed by
+<a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>=45 . For comparison with the previous treatment of SCF, one can
+recompute the result with 3 aluminum layers.</p>
+<p>The input file ~abinit/tests/tutorial/Input/tbase4_7.in is an example, while
+~abinit/tests/tutorial/Refs/tbase4_7.out is a reference output file. This run
+might take about one minute, and is the longer of the four basic lessons. You
+should start it now.</p>
+<p>You can monitor its evolution by editing from time to time the tbase4_7_STATUS
+file that the code updates regularly. The status file, that refer to the
+skeleton of the code, is described in the
+~abinit/doc/developers/programmer_guide.txt . You might take advantage of the
+time of the run to explore the files contained in the ~abinit/doc/users
+directory and the ~abinit/doc/developers directory. The README files provided
+interesting entry points in the documentation of the code.</p>
+<p>Coming back to the file tbase4_7.out &hellip;<br />
+You will notice that the SCF convergence is rather satisfactory, for all the
+cases (3, 4 or 5 metal layers).</p>
+<p>For the 3 aluminum layer case, one has the non-relaxed total energy:</p>
+<div class="codehilite"><pre><span></span> ETOT  6  -6.2539524363433
+</pre></div>
+
+
+<p>(this quantity is converged, unlike in test 4.6)<br />
+giving the unrelaxed surface energy 0.0200 Ha = 0.544 eV ; and for the relaxed
+case:</p>
+<div class="codehilite"><pre><span></span>           etotal1    -6.2547008127E+00
+</pre></div>
+
+
+<p>(by contrast the difference with test 4.6 is less than 1 microHa)<br />
+giving the relaxed surface energy 0.0196 Ha = 0.533 eV .</p>
+<p>For the 4 aluminum layer case, one has the non-relaxed total energy:</p>
+<div class="codehilite"><pre><span></span> ETOT  6  -8.3546873357119
+</pre></div>
+
+
+<p>giving the unrelaxed surface energy 0.0186Ha = 0.506 eV ;<br />
+and for the relaxed case:</p>
+<div class="codehilite"><pre><span></span>           etotal2    -8.3565593186E+00
+</pre></div>
+
+
+<p>giving the relaxed surface energy 0.0183 Ha = 0.498 eV .</p>
+<p>For the 5 aluminum layer case, one has the non-relaxed total energy:</p>
+<div class="codehilite"><pre><span></span> ETOT  6  -10.453642176439
+</pre></div>
+
+
+<p>giving the unrelaxed surface energy 0.0183Ha = 0.498 eV ;<br />
+and for the relaxed case:</p>
+<div class="codehilite"><pre><span></span>           etotal3    -1.0454163186E+01
+</pre></div>
+
+
+<p>giving the relaxed surface energy 0.0180 Ha = 0.490 eV .</p>
+<p>The relative difference in the surface energy of the 4 and 5 layer cases is on
+the order of 1.5%.</p>
+<p>In the framework of this tutorial, we will not pursue this investigation,
+which is a simple application of the concepts already explored.</p>
+<p>Just for your information, and as an additional warning, when the work
+accomplished until now is completed with 6 and 7 layers without relaxation
+(see ~abinit/tests/tutorial/Input/tbase4_8.in and
+~abinit/tests/tutorial/Refs/tbase4_8.out where 5, 6 and 7 layers are treated),
+this non-relaxed energy surface energy behaves as follows:  </p>
+<p>number of<br />
+aluminum layers</p>
+<p>|</p>
+<p>surface energy  </p>
+<p>&mdash;|&mdash;  </p>
+<p>3</p>
+<p>|</p>
+<p>0.544 eV  </p>
+<p>4</p>
+<p>|</p>
+<p>0.506 eV  </p>
+<p>5</p>
+<p>|</p>
+<p>0.498 eV  </p>
+<p>6</p>
+<p>|</p>
+<p>0.449 eV  </p>
+<p>7</p>
+<p>|</p>
+<p>0.463 eV  </p>
+<p>So, the surface energy convergence is rather difficult to reach.<br />
+Our values, with a <code>4x4x1</code> grid, a smearing of 0.04 Ha, a kinetic energy cut-
+off of 6 Ha, the 13al.981214.fhi pseudopotential, still oscillate between 0.45
+eV and 0.51 eV. Increasing the k point sampling might decrease slightly the
+oscillations, but note that this effect is intrinsic to the computation of
+properties of a metallic surface : the electrons are confined inside the slab
+potential, with subbands in the direction normal to the surface, and the Fermi
+energy oscillates with the width of the slab. This effect might be understood
+based on a comparison with the behaviour of a jellium slab.<br />
+An error on the order of 0.016 eV is due to the thin vacuum layer. Other
+sources of errors might have to be rechecked, seeing the kind of accuracy that
+is needed.</p>
+<p>Experimental data give a surface energy around 0.55 eV (sorry, the reference
+is to be provided).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/about/release-notes/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Release Notes - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../bibliography/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../contributing/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#v84">v8.4</a></li>
+        <li class="main "><a href="#v82">v8.2</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<div class="toc">
+<ul>
+<li><a href="#v84">v8.4</a></li>
+<li><a href="#v82">v8.2</a></li>
+</ul>
+</div>
+<h1 id="v84">v8.4<a class="headerlink" href="#v84" title="Permanent link">&para;</a></h1>
+<p>Many thanks to the contributors to the ABINIT project between
+January 2017 and May 2017. 
+These release notes are relative to modifications/improvements of ABINITv8.4 with respect to v8.2.</p>
+<p>The list of contributors includes :
+F. Altvater, G. Antonius, L. Baguet, J.-M. Beuken, J. Bieder, E. Bousquet, 
+W. Chen, G. Geneste, M. Giantomassi, Y. Gillet, X. Gonze, F. Jollet, A. Martin, 
+F. Naccarato, G. Petretto, S. Prokhorenko, F. Ricci, M. Torrent , M. Verstraete, J. Zwanziger</p>
+<p>It is worth to read carefully all the modifications that are mentioned in the present file,
+and examine the links to help files or test cases &hellip;
+This might take some time &hellip;</p>
+<p>Xavier</p>
+<hr />
+<p>Version 8.4, released on June 2, 2017.</p>
+<p>Changes with respect to version 8.2 :</p>
+<p>A. Warnings and important remarks 
+B. Most noticeable achievements (for users)
+C. Changes in the package, for developers
+D. Other changes (or on-going developments, not finalized)</p>
+<hr />
+<p>A.  Warnings and important remarks</p>
+<p>A.1 The Github ABINIT Web page, at https://github.com/abinit, allows one to
+    access the mirror of the repository of ABINIT, as well as some other projects
+    related to ABINIT, like AbiPy or the pseudo-dojo.</p>
+<p>A.2 The content of the ABINIT Web portal, specifically for the pages related to the presentation of 
+    ABINIT (http://www.abinit.org/about/what-is-abinit), has been upgraded.  </p>
+<hr />
+<p>B.  Most noticeable achievements</p>
+<p>B.1 Implementation of algorithms to interpolate the electronic band structure,
+    based either on &ldquo;star functions&rdquo; of on &ldquo;B-splines&rdquo; (as alternatives to Wannier function interpolation).
+    See the input variables einterp, nkpath, and prtebands, and tests Tlibxc#42, Tv8#04.
+    Work by M. Giantomassi</p>
+<p>B.2 The Fock mixing factor for the HSE hybrid functional can be tuned thanks to the input variable gwfockmix  .
+    (Warning : this is for the GW-type approach to electronic structure only, not for total energies)
+    See test Tlibxc#43 .
+    Work by W. Chen.</p>
+<p>B.3 Implementation of spatially-varying chemical potential, for each atomic species.
+    See the input variables chempot and nzchempot, and tests Tv8#30 and 31.
+    Work by X. Gonze</p>
+<p>B.4 Linear geometrical constraints can now be imposed on PIMD runs.
+    This allows ABINIT to use the blue moon sampling technique.
+    See the input variable pimd_contraint, and test Tv8#05
+    The use of history (HIST) files is now possible with images.
+    Work by G. Geneste and M. Torrent.</p>
+<p>B.5 Computation of linear reponse (optics executable as well as BSE part of ABINIT)
+    in the case of temperature-dependent electronic structure.
+    See tests Tv67mbpt#50-53.
+    WARNING : This capability of ABINIT has not been fully tested. However, the
+    basic tests for non-spin-polarized simple semiconductors are OK.
+    As usual, use at your own risk.
+    Work by Y. Gillet and M. Giantomassi.</p>
+<p>B.6 Computation of Gruneisen parameters by finite differences, within ANADDB.
+    See test v8#45
+    Work by M. Giantomassi</p>
+<p>B.7 New LOBPCG implementation wfoptalg=114.
+    This is the default when paral_kgb=1.
+    Performances are equivalent in standard use (MPI alone) and much better with openmp+multithreaded linalg. 
+    It also allows to have only one block for large system and to reduce memory copies.
+    This version has been developed keeping in mind the next generation of HPC.
+    Work by J. Bieder</p>
+<p>B.8 New algorithms for the displacement of nuclei (ionmov) :
+    - Hybrid Monte Carlo (HMC) predictor (ionmov=25)
+    - Velocity Verlet (VV) NVE molecular dynamics predictor (ionmov=24)
+    See Tv8#12 for ionmov=24. 
+    Work by S. Prokhorenko</p>
+<p>B.9 Refactoring of ANADDB for the production of DOS and other thermodynamic quantities,
+    also the mean square displacement and mean square velocity.
+    The DOS is obtained using usual DOS methods, instead of the histogram method,
+    and converges much faster with ng2qpt. Activated with prtdos 1 or 2 in anaddb.
+    Work by M. Verstraete.</p>
+<hr />
+<p>C. Changes for the developers (also compilers)</p>
+<p>C.1 Management of the test farm : the new bot ubu_intel_17_openmpi 
+    has been activated, so that Intel 17 is now supported.
+    Also, replacement of shiva_gnu_6.3_py3k by inca_gnu_6.3_py3k,
+    update of graphene (MacPorts) to gcc6.3 + scalapack.
+    By J.M. Beuken.</p>
+<hr />
+<p>D.  Other changes (or on-going developments, not yet finalized).</p>
+<p>D.1 The printing of potentials (e.g. prtvxc &hellip;) works now for DFPT.
+    By M. Verstraete.</p>
+<p>D.2 New input variable prtphbands.
+    See tests v7#88 and v8#46.
+    By M. Giantomassi</p>
+<p>D.3 In case the ANADDB interpolation of phonon frequencies produces
+    erroneously a negative slope around gamma, the new nsphere=-1 possibility
+    allows ANADDB to select a set of IFCs that does not lead to such non-physical behaviour.
+    See test v8#46.
+    Work by M. Giantomassi.</p>
+<p>D.4 Added new value for nlflag=3 that computes only the non-linear susceptibility.
+    By F. Naccarato.</p>
+<p>D.5 Computation of forces is now possible in the Wavelets + PAW case.
+    By M. Torrent.</p>
+<p>D.6 Ongoing work concerning the new &ldquo;driver&rdquo; optdrive=7 specifically dealing with electron-phonon 
+    related computations (including zero-point renormalisation). 
+    See new tests v8#41 to 44.
+    Work by M. Giantomassi.</p>
+<p>D.7 Ongoing work : Raman intensities, in the PAW case, using DFPT. 
+    By L. Baguet and M. Torrent</p>
+<p>D.8 Ongoing work related to non-collinear DFPT.
+    Definition of the new input variable rfmagn, as well as Tv8#20 .
+    DFPT with static B-field (Zeeman term only) works for q=(0 0 0).
+    Adjustmanet of dfpt corrections for metals to non-collinear case.
+    Bug fix for GS calculations with finite magnetic field (case of collinear spins).
+    By S. Prokhorenko, F. Ricci, and E. Bousquet</p>
+<p>D.9 Ongoing work on the multibinit project.
+    NPT simulations are possible.
+    New tests v8#06 and paral#100, to check the correct IO of XML files.
+    Note that tests Tv7#120-124 have been renumbered Tv8#07-11.
+    Work by A. Martin</p>
+<p>D.10 New test paral#62, to make sure paralkgb=0 works when there are some idle procs.
+     By M. Giantomassi</p>
+<p>D.11 Ongoing work on forces and stresses for hybrid functionals.
+     By F. Jollet </p>
+<p>D.12 Ongoing work on the electron-phonon postprocessor ElectronPhononCoupling.
+     Fix bug affecting MPI runs. 
+     By G. Antonius.</p>
+<p>D.13 Improvement of zheevd using MAGMA (from a msg on the forum)
+     By M. Torrent</p>
+<p>D.14 Implemented KSS.nc output with netcdf primitives
+     By M. Giantomassi</p>
+<p>D.15 Concerning  the Fourier interpolation of the phonon band structure,
+     inside ANADDB, work by G Petretto :
+     - Updates in the calculation of sound velocity, 
+     - Small modifications for nlflag==3 and added some quantities to the anaddb netcdf file,
+     - Fix a bug in the implementation of the new weights</p>
+<p>D.16 Concerning Path Integral Molecular Dynamics with Quantum Thermal Bath :
+     allow restart from history file.
+     By M. Torrent</p>
+<p>D.17 Refactored the computation of the electric dipole moment.
+     By M. Torrent</p>
+<p>D.18 The energy width for the bands in the Boltztrap intrans file is now automatically set.
+     Previously a constant 0.4 Ryd, and the user should have checked by hand if
+     the value was sufficient. Should be considered a bug fix.
+     By M Verstraete</p>
+<p>D.19 Numerous miscellaneous additional bug fixes and improvements of documentation by :
+     F. Altvater, G. Antonius, J. Bieder, M. Giantomassi, F. Jollet, 
+     G. Petretto, M. Verstraete, M. Torrent, J. Zwanziger. </p>
+<hr />
+<h1 id="v82">v8.2<a class="headerlink" href="#v82" title="Permanent link">&para;</a></h1>
+<p>Many thanks to the contributors to the ABINIT project between
+June 2016 and January 2017. These release notes
+are relative to modifications/improvements of ABINITv8.2 with respect to v8.0.</p>
+<p>Moreover, most of them are also described in the Computer Physics Communications 2016 ABINIT paper, 
+doi:10.1016/j.cpc.2016.04.003</p>
+<p>The list of contributors includes :
+B. Amadon, G. Antonius, L. Baguet, J.-M. Beuken, J. Bieder, E. Bousquet, F. Bruneval,
+W. Chen, M. Giantomassi, Y. Gillet, X. Gonze, G. Petretto, F. Jollet, A. Martin,
+V. Planes, Y. Pouillon, T. Rangel, F. Ricci, M. Torrent , M. Verstraete</p>
+<p>It is worth to read carefully all the modifications that are mentioned in the present file,
+and examine the links to help files or test cases &hellip;
+This might take some time &hellip;</p>
+<p>Xavier</p>
+<hr />
+<p>Version 8.2, released on February 16, 2017.</p>
+<p>Changes with respect to version 8.0 :</p>
+<p>A. WARNINGS.
+B. Most noticeable achievements (for users)
+C. Changes in the package, for developers
+D. Other changes (or on-going developments, not finalized)</p>
+<hr />
+<p>A.  WARNINGS AND IMPORTANT REMARKS</p>
+<p>A.0 The 2016 article by the ABINIT group is now mentioned in the acknowledgments :
+    &ldquo;Recent developments in the ABINIT software package. 
+    Computer. Phys. Communications 205, 106 (2016)&rdquo;.
+    See http://www.abinit.org/doc/helpfiles/for-v8.2/users/acknowledgments.html , as well as
+    the notice at the end of ABINIT runs.</p>
+<p>A.1 inclvkb 1 has been removed. Now the possible values are either 0 or 2</p>
+<p>A.2 The default strategy of so_psp has been changed 
+    (see the description of the input variable so_psp).</p>
+<hr />
+<p>B.  Most noticeable achievements</p>
+<p>B.1 Implementation of the Limited-memory Broyden-Fletcher-Goldfarb-Shanno (LBFGS) 
+    minimization algorithm.  Activate this algorithm using ionmov=22. 
+    From the tests that have been run, this algorithm can be much better
+    than the native implementation of BFGS in ABINIT when one approaches convergence, 
+    perhaps because of better treatment of numerical details. 
+    This algorithm might become the default in ABINIT, if the better behaviour is confirmed.
+    Test case : v8#02 .
+    The working routines were based on the original implementation of J. Nocera 
+    available on netlib.org.  They have been reshaped and translated into modern fortran, 
+    then interfaced to ABINIT by F. Bruneval (sources in 45_geomoptim/m_lbfgs.F90).</p>
+<p>B.2 A new tutorial is available : a lesson on the calculation of the effective interactions U and J 
+    using constrained Random Phase Approximation (cRPA) for DFT+DMFT (or DFT+U) calculations.
+    See doc/tutorial/lesson_ucalc_crpa.html as well as the automatic tests tutorial/tucrpa#1-5 .
+    This lesson was prepared by B. Amadon.</p>
+<p>B.3 Implementation of temperature-dependent spectral functions 
+    (electronic spectral function, with electron-phonon interactions),
+    as well as real part of phonon self-energy (Pi) for gapped systems.
+    Also, automatic test for spectral function, v7#89, and improved documentation.
+    Work by G. Antonius.</p>
+<p>B.4 The RPA one-shot bootstrap fxc kernel has been implemented for GW calculations (gwgamma=-8).
+    See Rigamonti et al PRL 114, 146402 (2014) and Berger PRL 115, 137402 (2015).
+    The test v67mbpt#36 has been updated.
+    Work by W. Chen.</p>
+<hr />
+<p>C. Changes for the developers (also compilers)</p>
+<p>C.1 The version control system that is used for the development of ABINIT has been changed : 
+    the whole ABINIT project
+    has been ported from bzr to git.
+    Work by J.-M. Beuken, Y. Pouillon, M. Giantomassi, X. Gonze, 
+    with discussions with many developers.</p>
+<p>C.2 New versions of Fortran compilers have been integrated in the test farm:
+    - intel 16.0
+    - gnu 6.1 and 6.2
+    - IBM xlf compiler 14.1
+    - NAG 5.3
+    Corresponding examples are available in doc/config/build-examples.
+    On the contrary, g95 is not tested anymore.
+    Work by J.-M. Beuken</p>
+<p>C.3 The v8 directory for tests has been initialized.
+    By Matteo Giantomassi.</p>
+<p>C.4 Python 3 &gt;= 3.4 is now supported in build system scripts 
+    (compatibility with py2_ version &gt;= is maintained).
+    By Matteo Giantomassi.</p>
+<hr />
+<p>D.  Other changes
+(or on-going developments, not yet finalized).</p>
+<p>D.1 The main executable &ldquo;multibinit&rdquo; has been created.
+    Its goal is to perform &ldquo;second-principles calculations&rdquo;, building model Hamiltonians
+    using the data provided by the DDB (or other info from ABINIT).
+    Tests v7#120-124 (should be renamed) as well as paral#95-98.
+    Work by A. Martin.</p>
+<p>D.2 A new &ldquo;driver&rdquo; within ABINIT has been defined, specifically dealing with electron-phonon 
+    related computations (including zero-point renormalisation). 
+    Set optdriver=7 . 
+    New input variables : ddb_shiftq, eph_task, eph_transport, prtphdos, prtphsurf.
+    See tests v7#88 and 89.
+    Work by M. Giantomassi and G. Antonius.</p>
+<p>D.3 The generation of k-point meshes with kptrlatt and shiftk is now tested.
+    See test v8#03 .
+    Work by M. Giantomassi</p>
+<p>D.4 As a follow-up of the Achievement B3 in the release notes of ABINITv8.0 (DMFT + TRIQS),
+    new input variables have been defined for DMFT : dmft_tolfreq and dmftctqmc_triqs_nleg.
+    Automatic tests have been set-up, tests v8#01 and paral#99.
+    Work by B. Amadon and V. Planes</p>
+<p>D.5 More systematic tests of the IO in parallel (different files) have been set up,
+    in the norm-conserving, PAW and PAW + spin-orbit cases.
+    See tests mpiio#26, 27 and 28.
+    Also, the case paral_kgb=0 is now tested with idle processors. See test paral#62.
+    Work by M. Giantomassi</p>
+<p>D.6 The load balancing for the repartition of the plane waves among procs is now monitored,
+    and a dynamical equilibration is made possible thanks to the new input variable pw_unbal_thresh.
+    See test mpiio#26.
+    Work by M. Torrent</p>
+<p>D.7 The capability to output spin-resolved DOS in case of spin-orbit NC pseudopotential
+    calculations has been checked, and a test has been set-up (test v7#17).
+    Work by M. Giantomassi</p>
+<p>D.8 Files generated by ABINIT, and used by BOLTZTRAP are now tested.
+    See v6#11.
+    Work by M. Giantomassi</p>
+<p>D.9 Unit tests (fftprof) have been set up for the use of the MKL-DFTI routines : 
+    unitary#tfftmkl_03 and 04.
+    Work by M. Giantomassi</p>
+<p>D.10 Ongoing work : Raman intensities, in the PAW case, using DFPT. 
+     By L. Baguet and M. Torrent</p>
+<p>D.11 prtvcbm working with all parallelizations.
+     Tests mpiio 26:28 have been reactivated on 4 processors.
+     By M. Torrent</p>
+<p>D.12 On going work related to non-collinear DFPT.
+     By F. Ricci, S. Prokhorenko, and E. Bousquet</p>
+<p>D.13 MBPT : support for the commutator [Vnl r] in the case of NC pseudos 
+     with more than one projector per l-channel has been added. 
+     Tests in v67mbpt[40] (GW run with psp8 files).
+     SOC is not yet available, though.
+     The KSS file continues to use the old implementation to maintain backward compatibility 
+     hence outkss won&rsquo;t produce the file if multiple-projectors are detected
+     inclvkb 1 has been removed. Now the possible values are either 0 or 2
+     By M Giantomassi</p>
+<p>D.14 For Hirshfeld and Bader : doc and warning.
+     For Hirshfeld charges the output was unclear: the density integral (electrons only) 
+     was called the hirshfeld charge, as opposed to the net one. 
+     For Bader there was no check that the core charge file 
+     corresponded to the pseudopotential used. 
+     Now checks at least that it integrates to znucl-zion, which is a first step. 
+     Important as the default fc files on the web do not have semicore electrons, 
+     whereas many of the psp8 will.
+     Contribution by M. Verstraete.</p>
+<p>D.15 Updated acknowledgments, including the 2016 paper.
+     By X. Gonze</p>
+<p>D.16 Ongoing work on forces and stresses for hybrid functionals.
+     By F. Jollet </p>
+<p>D.17 Ongoing work concerning weights for the Fourier interpolation inside ANADDB.
+     By G. Petretto</p>
+<p>D.18 Numerous miscellaneous additional bug fixes 
+     (to the sources, as well as to the build system, including patches for the fallbacks), 
+     and improvements of documentation by :
+     G. Antonius, L. Baguet, J. Bieder, F. Bruneval,
+     M. Giantomassi, Y. Gillet, G. Petretto, Y. Pouillon,
+     M. Verstraete, M. Torrent (in particular, for DFPT+PAW).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

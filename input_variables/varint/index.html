@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varint/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Internal - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li class="active">
+    <a href="./">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../vargw/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../varpar/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#kptns">kptns</a></li>
+        <li class="main "><a href="#mband">mband</a></li>
+        <li class="main "><a href="#mgfft">mgfft</a></li>
+        <li class="main "><a href="#mgfftdg">mgfftdg</a></li>
+        <li class="main "><a href="#mpw">mpw</a></li>
+        <li class="main "><a href="#natpawu">natpawu</a></li>
+        <li class="main "><a href="#ndynimage">ndynimage</a></li>
+        <li class="main "><a href="#nelect">nelect</a></li>
+        <li class="main "><a href="#nfft">nfft</a></li>
+        <li class="main "><a href="#nfftdg">nfftdg</a></li>
+        <li class="main "><a href="#npweps">npweps</a></li>
+        <li class="main "><a href="#npwsigx">npwsigx</a></li>
+        <li class="main "><a href="#npwwfn">npwwfn</a></li>
+        <li class="main "><a href="#qptn">qptn</a></li>
+        <li class="main "><a href="#usefock">usefock</a></li>
+        <li class="main "><a href="#usepaw">usepaw</a></li>
+        <li class="main "><a href="#userec">userec</a></li>
+        <li class="main "><a href="#xclevel">xclevel</a></li>
+        <li class="main "><a href="#ziontypat">ziontypat</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="kptns"><strong>kptns</strong><a class="headerlink" href="#kptns" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: K-PoinTs re-Normalized and Shifted<br />
+Variable type: real<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>)<br />
+Default value: None  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=0, or if one is doing a reponse calculation, this internal
+variable is derived from <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a> and <a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>: <a href="1:3,:">[kptns]</a>=
+<a href="1:3,:">[kpt]</a>/ <a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>, so that it is <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a> renormalized by <a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>.<br />
+If <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1 and one is not doing a ground-state calculation, this internal
+variable is derived from <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a>,<a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a> and <a class="wikilink" href="../../input_variables/varint#qptn">qptn</a> <a href="1:3,:">[kptns]</a>=
+<a href="1:3,:">[kpt]</a>/ <a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>+ <a href="../1:3">[qptn]</a>, so that it is <a class="wikilink" href="../../input_variables/varbas#kpt">kpt</a> renormalized
+by <a class="wikilink" href="../../input_variables/varbas#kptnrm">kptnrm</a>, then shifted by <a href="../1:3">[qptn]</a>.</p>
+<h2 id="mband"><strong>mband</strong><a class="headerlink" href="#mband" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Maximum number of BANDs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This internal variable derives the maximum number of bands over all k-points
+and spin-polarisation from <a href="1:nkpt*nsppol">[nband]</a>.</p>
+<h2 id="mgfft"><strong>mgfft</strong><a class="headerlink" href="#mgfft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Maximum of nGFFT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This internal variable contains the maximum of <a href="../1:3">[ngfft]</a>.</p>
+<h2 id="mgfftdg"><strong>mgfftdg</strong><a class="headerlink" href="#mgfftdg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Maximum of nGFFT for the Double Grid<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This internal variable contains the maximum of <a href="../1:3">[ngfftdg]</a>.</p>
+<h2 id="mpw"><strong>mpw</strong><a class="headerlink" href="#mpw" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Maximum number of Plane Waves<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This internal variable gives the maximum of the number of plane waves over all
+k-points. It is computed from <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> and the description of the cell,
+provided by <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>, <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>, and/or <a class="wikilink" href="../../input_variables/varbas#angdeg">angdeg</a>.</p>
+<h2 id="natpawu"><strong>natpawu</strong><a class="headerlink" href="#natpawu" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of AToms on which PAW+U is applied<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1  </p>
+<p>This internal variable gives the number of atoms on which the LDA/GGA+U method
+is applied. This value is determined from <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>.</p>
+<h2 id="ndynimage"><strong>ndynimage</strong><a class="headerlink" href="#ndynimage" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of DYNamical IMAGEs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>This internal variable gives the number of dynamical images, immediately
+deduced from the number of non-zero values present in <a class="wikilink" href="../../input_variables/varrlx#dynimage">dynimage</a>. It is used
+to dimension many memory-consuming arrays (one copy for each image), e.g. the
+wavefunction array (cg), the density array (rho), etc .</p>
+<h2 id="nelect"><strong>nelect</strong><a class="headerlink" href="#nelect" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of ELECTrons<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../AUTO_FROM_PSP/">AUTO_FROM_PSP</a>  </p>
+<p>This internal variable gives the number of electrons per unit cell, as
+computed from the sum of the valence electrons related to each atom (given in
+the pseudopotential, where it is called &ldquo;zion&rdquo;), and the input variable
+<a class="wikilink" href="../../input_variables/vargs#charge">charge</a>:<br />
+<a class="wikilink" href="../../input_variables/varint#nelect">nelect</a>=zion-<a class="wikilink" href="../../input_variables/vargs#charge">charge</a>.</p>
+<h2 id="nfft"><strong>nfft</strong><a class="headerlink" href="#nfft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of FFT points<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>If space parallelisation is not used (that is, if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==0), this
+internal variable gives the number of Fast Fourier Transform points in the
+grid generated by <a href="../1:3">[ngfft]</a>. It is simply the product of the three
+components of <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>.<br />
+If space parallelisation is used (that is, if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1), then it
+becomes the number of Fast Fourier Transform points attributed to the
+particular processor. It is no longer the above-mentioned simple product, but
+a number usually close to this product divided by the number of processors on
+which the space is shared.</p>
+<h2 id="nfftdg"><strong>nfftdg</strong><a class="headerlink" href="#nfftdg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of FFT points for the Double Grid<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>If space parallelisation is not used (that is, if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==0), this
+internal variable gives the number of Fast Fourier Transform points in the
+(double) grid generated by <a href="../1:3">[ngfftdg]</a>. It is simply the product of the
+three components of <a class="wikilink" href="../../input_variables/varpaw#ngfftdg">ngfftdg</a>.<br />
+If space parallelisation is used (that is, if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1), then it
+becomes the number of Fast Fourier Transform points attributed to the
+particular processor. It is no longer the above-mentioned simple product, but
+a number usually close to this product divided by the number of processors on
+which the space is shared.</p>
+<h2 id="npweps"><strong>npweps</strong><a class="headerlink" href="#npweps" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PlaneWaves for EPSilon (the dielectric matrix)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p><a class="wikilink" href="../../input_variables/varint#npweps">npweps</a> determines the size of the planewave set used to represent the
+independent-particle susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>, the dielectric matrix
+<script type="math/tex">\epsilon</script> and its inverse.<br />
+It is an internal variable, determined from <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>.</p>
+<h2 id="npwsigx"><strong>npwsigx</strong><a class="headerlink" href="#npwsigx" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PlaneWaves for SIGma eXchange<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p><a class="wikilink" href="../../input_variables/varint#npwsigx">npwsigx</a> determines the cut-off energy of the planewave set used to
+generate the exchange part of the self-energy operator.<br />
+It is an internal variable, determed from <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>.</p>
+<h2 id="npwwfn"><strong>npwwfn</strong><a class="headerlink" href="#npwwfn" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PlaneWaves for WaveFunctioNs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p><a class="wikilink" href="../../input_variables/varint#npwwfn">npwwfn</a> is the size of the planewave set used to represent the
+wavefunctions in the formula that generates the independent-particle
+susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>. It is an internal variable, determined from
+<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>.</p>
+<h2 id="qptn"><strong>qptn</strong><a class="headerlink" href="#qptn" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Q-PoinT re-Normalized<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>==1  </p>
+<p>Only used if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1.<br />
+In ground-state calculation, the vector <a href="../1:3">[qptn]</a> is added to each
+renormalized k point (whatever the value of <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> that was used) to
+generate the normalized, shifted, set of k-points <a href="1:3,1: ** nkpt **">[kptns]</a>.<br />
+In response-function calculations, <a href="../1:3">[qptn]</a> is the wavevector of the
+phonon-type calculation.<br />
+<a href="../1:3">[qptn]</a> can be produced on the basis of the different methods described
+in <a class="wikilink" href="../../input_variables/vargs#qptopt">qptopt</a>, like using <a href="../1:3">[qpt]</a> with renormalisation provided by
+<a class="wikilink" href="../../input_variables/vargs#qptnrm">qptnrm</a>, or using the other possibilities defined by <a class="wikilink" href="../../input_variables/vargs#iqpt">iqpt</a>, <a class="wikilink" href="../../input_variables/vargs#ngqpt">ngqpt</a>,
+<a class="wikilink" href="../../input_variables/vargs#nshiftq">nshiftq</a>, <a class="wikilink" href="../../input_variables/vargs#qptrlatt">qptrlatt</a>, <a class="wikilink" href="../../input_variables/vargs#shiftq">shiftq</a>,<br />
+For insulators, there is no restriction on the q-points to be used for the
+perturbations. By contrast, for metals, for the time being, it is advised to
+take q points for which the k and k+q grids are the same (when the periodicity
+in reciprocal space is taken into account). Tests remain to be done to see
+whether other q points might be allowed (perhaps with some modification of the
+code).</p>
+<h2 id="usefock"><strong>usefock</strong><a class="headerlink" href="#usefock" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE FOCK exact exchange<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This internal variable is automatically set to 1 when the value of <a class="wikilink" href="../../input_variables/varbas#ixc">ixc</a>
+refers to an Hartree-Fock calculation or hybrid functionals.</p>
+<ul>
+<li>0 =&gt; No use of exact exchange. </li>
+<li>1 =&gt; exact exchange is required for the calculation. </li>
+</ul>
+<h2 id="usepaw"><strong>usepaw</strong><a class="headerlink" href="#usepaw" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE Projector Augmented Waves method<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../AUTO_FROM_PSP/">AUTO_FROM_PSP</a>  </p>
+<p>This variable is determined by the pseudopotentials files. PAW calculations
+(see <a href="../varpaw.html"> PAW variables </a> ) can only be performed with PAW atomic
+data input files, while pseudopotential calculations are performed in ABINIT
+with norm-conserving pseudopotential input files. Most functionalities in
+ABINIT are available with either type of calculation.</p>
+<h2 id="userec"><strong>userec</strong><a class="headerlink" href="#userec" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE RECursion<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This internal variable is set to 1 when the recursion method is activated (see
+<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>).</p>
+<h2 id="xclevel"><strong>xclevel</strong><a class="headerlink" href="#xclevel" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: eXchange Correlation functional LEVEL<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Automatically determined from the value of <a class="wikilink" href="../../input_variables/varbas#ixc">ixc</a>.</p>
+<ul>
+<li>0 =&gt; No XC contribution. </li>
+<li>1 =&gt; LDA functional. </li>
+<li>2 =&gt; GGA functional or hybrid functional based on GGA. </li>
+<li>3 =&gt; Functional for <a class="wikilink" href="../../TDDFT/">TDDFT</a>. </li>
+</ul>
+<h2 id="ziontypat"><strong>ziontypat</strong><a class="headerlink" href="#ziontypat" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Z (charge) of the IONs for the different TYPes of AToms<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Default value: <a class="wikilink" href="../../AUTO_FROM_PSP/">AUTO_FROM_PSP</a>  </p>
+<p>Charge of the pseudo-ion (=number of valence electrons that are needed to
+screen exactly the pseudopotential).</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varbse/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Bethe-Salpeter - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li class="active">
+    <a href="./">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../varbas/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../vardev/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bs_algorithm">bs_algorithm</a></li>
+        <li class="main "><a href="#bs_calctype">bs_calctype</a></li>
+        <li class="main "><a href="#bs_coulomb_term">bs_coulomb_term</a></li>
+        <li class="main "><a href="#bs_coupling">bs_coupling</a></li>
+        <li class="main "><a href="#bs_eh_cutoff">bs_eh_cutoff</a></li>
+        <li class="main "><a href="#bs_exchange_term">bs_exchange_term</a></li>
+        <li class="main "><a href="#bs_freq_mesh">bs_freq_mesh</a></li>
+        <li class="main "><a href="#bs_hayd_term">bs_hayd_term</a></li>
+        <li class="main "><a href="#bs_haydock_niter">bs_haydock_niter</a></li>
+        <li class="main "><a href="#bs_haydock_tol">bs_haydock_tol</a></li>
+        <li class="main "><a href="#bs_interp_kmult">bs_interp_kmult</a></li>
+        <li class="main "><a href="#bs_interp_m3_width">bs_interp_m3_width</a></li>
+        <li class="main "><a href="#bs_interp_method">bs_interp_method</a></li>
+        <li class="main "><a href="#bs_interp_mode">bs_interp_mode</a></li>
+        <li class="main "><a href="#bs_interp_prep">bs_interp_prep</a></li>
+        <li class="main "><a href="#bs_interp_rl_nb">bs_interp_rl_nb</a></li>
+        <li class="main "><a href="#bs_loband">bs_loband</a></li>
+        <li class="main "><a href="#bs_nstates">bs_nstates</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="bs_algorithm"><strong>bs_algorithm</strong><a class="headerlink" href="#bs_algorithm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter ALGORITHM<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>The bs_algorithm input variable defines the algorithm employed to calculate
+the macroscopic dielectric function. Possible values are 1, 2 or 3:</p>
+<ul>
+<li>1 =&gt; The macroscopic dielectric is obtained by performing a direct diagonalization of the excitonic Hamiltonian. Advantages: It gives direct access to the excitonic eigenvalues as well as to the oscillator strengths. Drawbacks: It is a very CPU- and memory-consuming approach as the size of the Hamiltonian scales as (nk<em>nc</em>nv)**2. where nk is the number of k-point in the FULL Brillouin zone, and nc and nv are the number of conduction and valence states, respectively. Pros: It can be used both for resonant-only and resonant+coupling calculations (non Tamm-Dancoff approximation). </li>
+<li>2 =&gt; Haydock iterative method. The macroscopic dielectric function is obtained by iterative applications of the Hamiltonian on a set of vectors in the electron-hole space. Advantages: It is less memory demanding and usually faster than the direct diagonalization provided that <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a> is larger than the typical energy spacing of the eigenvalues. Drawbacks: It is an iterative method therefore the convergence with respect to bs_haydock_niter should be checked. It is not possible to have direct information on the exciton spectrum, oscillator strengths and excitonic wave functions. For the time being <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>=2 cannot be used for calculations in which the coupling term is included (Tamm-Dancoff approximation). </li>
+<li>3 =&gt; Conjugate-gradient method. This method allows to find the few first excitonic eigenvalues. Only available for resonant calculations (Tamm-Dancoff approximation). </li>
+</ul>
+<h2 id="bs_calctype"><strong>bs_calctype</strong><a class="headerlink" href="#bs_calctype" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter CALCulation TYPE<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>Possible values are 1,2,3.</p>
+<ul>
+<li>1 =&gt; use the KS eigenvalues and wave functions stored in the KSS file to construct the transition space </li>
+<li>2 =&gt; The transition space is constructed with Kohn-Sham orbitals but the energies are read from the external <a class="wikilink" href="../../GW/">GW</a> file </li>
+<li>3 =&gt; QP amplitudes and energies will be read from the QPS file and used to construct H_ex. Not coded yet because &lt;\psi|r|\psj&gt;^QP should be calculated taking into account the non-locality of the self-energy in the commutator [H,r]. </li>
+</ul>
+<h2 id="bs_coulomb_term"><strong>bs_coulomb_term</strong><a class="headerlink" href="#bs_coulomb_term" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter COULOMB TERM<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 11<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>This variable governs the choice among the different options that are
+available for the treatment of Coulomb term of the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a>
+Hamiltonian. <a class="wikilink" href="../../input_variables/varbse#bs_coulomb_term">bs_coulomb_term</a> is the concatenation of two digits, labelled
+(A) and (B).</p>
+<p>The first digit (A) can assume the values 0,1,2:</p>
+<ul>
+<li>0 =&gt; The Coulomb term is not computed. This choice is equivalent to computing the RPA spectrum but using the representation in transition space instead of the more efficient approach based on the sum over states. </li>
+<li>1 =&gt; The Coulomb term is computed using the screened interaction read from an external SCR file (standard excitonic calculation). </li>
+<li>2 =&gt; The Coulomb term is computed using a model screening function (useful for convergence studies or for reproducing published results). </li>
+</ul>
+<p>The second digit (B) can assume the values 0,1:</p>
+<ul>
+<li>0 =&gt; Use a diagonal approximation for W_GG&rsquo; (mainly used for accelerating convergence studies). </li>
+<li>1 =&gt; The Coulomb term is correctly evaluated using the truly non-local W(r,r&rsquo;). </li>
+</ul>
+<h2 id="bs_coupling"><strong>bs_coupling</strong><a class="headerlink" href="#bs_coupling" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter COUPLING<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>The <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a> input variable defines the treatment of the coupling block
+of the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> Hamiltonian. Possible values are 0,1.</p>
+<ul>
+<li>0 =&gt; The coupling block is neglected (the so-called Tamm-Dancoff approximation). The code runs faster and the Hamiltonian matrix requires less memory (factor 4). It is a good approximation for the absorption spectrum which only requires the knowledge of Im(\epsilon). The reliability of this approximation should be tested in the case of EELF calculations. </li>
+<li>1 =&gt; The coupling term is included (non Tamm-Dancoff approxmation). </li>
+</ul>
+<h2 id="bs_eh_cutoff"><strong>bs_eh_cutoff</strong><a class="headerlink" href="#bs_eh_cutoff" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter Electron-Hole CUTOFF<br />
+Variable type: integer<br />
+Dimensions: (2)<br />
+Default value: [-inf, inf]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>It is used to define a cutoff in the e-h basis set. Only those transitions
+whose energy is between bs_eh_window(1) and bs_eh_window(2) will be considered
+during the construction of the e-h Hamiltonian.</p>
+<h2 id="bs_exchange_term"><strong>bs_exchange_term</strong><a class="headerlink" href="#bs_exchange_term" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter EXCHANGE TERM<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<ul>
+<li>0 =&gt;The exchange term is not calculated. This is equivalent to neglecting local field effects in the macroscopic dielectric function.</li>
+<li>1 =&gt;The exchange term is calculated and added to the excitonic Hamiltonian. </li>
+</ul>
+<h2 id="bs_freq_mesh"><strong>bs_freq_mesh</strong><a class="headerlink" href="#bs_freq_mesh" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter FREQuency MESH<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: [0.0, 0.0, 0.01]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p><strong>bs_freq_mesh(1)</strong> defines the first frequency for the calculation of the macroscopic dielectric function. </p>
+<p><strong>bs_freq_mesh(2)</strong> gives the last frequency for the calculation of the macroscopic dielectric function. If zero, <strong>bs_freq_mesh(2)</strong> is set automatically to MAX(resonant_energy) + 10%. </p>
+<p><strong>bs_freq_mesh(3)</strong> gives the step of the linear mesh used for evaluating the macroscopic dielectric function. </p>
+<h2 id="bs_hayd_term"><strong>bs_hayd_term</strong><a class="headerlink" href="#bs_hayd_term" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter HAYdock TERMinator<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
+<p>Defines how to terminate the continued fraction expression for the dielectric
+function. The terminator reduces the number of iterations needed to converge
+by smoothing the oscillation in the high energy part of the spectrum</p>
+<ul>
+<li>0 =&gt; No terminator. The contribution given by the terms missing in the Lanczos chain are set to zero. </li>
+<li>1 =&gt; Use the terminator function. The particular expression depends on the type of calculation: In the resonant-only case, the a_i and b_i coefficients for i &gt; niter, are replaced by their values at i=niter. Even the coupling block is included, the terminator function described in D. Rocca, R. Gebauer, Y. Saad, S. Baroni, J. Chem. Phys. 128, 154105 (2008) is used. </li>
+</ul>
+<h2 id="bs_haydock_niter"><strong>bs_haydock_niter</strong><a class="headerlink" href="#bs_haydock_niter" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter HAYDOCK Number of ITERations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 100<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_haydock_niter">bs_haydock_niter</a> defines the maximum number of iterations used to
+calculate the macroscopic dielectric function. The iterative algorithm stops
+when the difference between two consecutive evaluations of the optical spectra
+is less than <a class="wikilink" href="../../input_variables/varbse#bs_haydock_tol">bs_haydock_tol</a>.</p>
+<h2 id="bs_haydock_tol"><strong>bs_haydock_tol</strong><a class="headerlink" href="#bs_haydock_tol" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter HAYDOCK TOLerance<br />
+Variable type: real<br />
+Dimensions: (2)<br />
+Default value: [0.02, 0]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
+<p>Defines the convergence criterion for the Haydock iterative method. The
+iterative algorithm stops when the difference between two consecutive
+evaluations of the macroscopic dielectric function is less than <strong>
+bs_haydock_tol(1) </strong> . The sign of <strong> bs_haydock_tol(1) </strong> defines how to
+estimate the convergence error. A negative value signals that the converge
+should be reached for each frequency (strict criterion), while a positive
+value indicates that the converge error is estimated by averaging over the
+entire frequency range (mild criterion).</p>
+<p><strong>bs_haydock_tol(2)</strong> defines the quantity that will be checked for convergence: </p>
+<ul>
+<li>0 -&gt; both the real and the imaginary part must converge </li>
+<li>1 -&gt; only the real part </li>
+<li>2 -&gt; only the imaginary part </li>
+</ul>
+<h2 id="bs_interp_kmult"><strong>bs_interp_kmult</strong><a class="headerlink" href="#bs_interp_kmult" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation K-point MULTiplication factors<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: [0, 0, 0]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_kmult">bs_interp_kmult</a> defines the number of divisions used to generate the dense
+mesh in the interpolation. <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> of the dense mesh = <strong> bs_interp_kmult(:)
+</strong> * <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> of the coarse mesh.</p>
+<h2 id="bs_interp_m3_width"><strong>bs_interp_m3_width</strong><a class="headerlink" href="#bs_interp_m3_width" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation Method3 WIDTH<br />
+Variable type: real<br />
+Default value: 1.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a>==3 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p>Defines the width of the region where divergence treatment is applied for BSE
+interpolation</p>
+<h2 id="bs_interp_method"><strong>bs_interp_method</strong><a class="headerlink" href="#bs_interp_method" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation METHOD<br />
+Variable type: integer<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_method">bs_interp_method</a> selects the method of interpolation:</p>
+<ul>
+<li>0 =&gt; Interpolate using Y. Gillet technique with 8 neighbours (see Comput. Phys. Commun. 203, 83 (2016)) </li>
+<li>1 =&gt; Interpolation using Rohlfing &amp; Louie technique (see above-mentioned article and Phys. Rev. B 62, 4927 (2000)) </li>
+</ul>
+<h2 id="bs_interp_mode"><strong>bs_interp_mode</strong><a class="headerlink" href="#bs_interp_mode" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation MODE<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> selects the mode of interpolation:</p>
+<ul>
+<li>0 =&gt; No interpolation. Standard <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> computation is performed </li>
+<li>1 =&gt; Simple interpolation </li>
+<li>2 =&gt; Treatment of the divergence on the whole set of dense k-points </li>
+<li>3 =&gt; Treatment of the divergence along the diagonal in k-space and simple interpolation elsewhere. </li>
+</ul>
+<h2 id="bs_interp_prep"><strong>bs_interp_prep</strong><a class="headerlink" href="#bs_interp_prep" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation PREParation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_prep">bs_interp_prep</a> allows to trigger the preparation of the interpolation with
+method 2 or method 3. It generates the decomposition of BSR in a,b,c
+coefficients used for the interpolation.</p>
+<h2 id="bs_interp_rl_nb"><strong>bs_interp_rl_nb</strong><a class="headerlink" href="#bs_interp_rl_nb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter INTERPolation Rohlfing &amp; Louie NeighBour<br />
+Variable type: integer<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_interp_method">bs_interp_method</a> == 1 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+<p>Gives the index of the neighbour that is used for Rohlfing &amp; Louie method</p>
+<h2 id="bs_loband"><strong>bs_loband</strong><a class="headerlink" href="#bs_loband" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter Lowest Occupied BAND<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>)<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+<p>This variable defines the index of the lowest occupied band used for the
+construction of the electron-hole basis set. For spin polarized calculations,
+one must provide two separated indices for spin up and spin down. An
+additional cutoff energy can be applied by means of the bs_eh_window input
+variable.</p>
+<h2 id="bs_nstates"><strong>bs_nstates</strong><a class="headerlink" href="#bs_nstates" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Bethe-Salpeter Number of STATES<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a> in [2,3]  </p>
+<p><a class="wikilink" href="../../input_variables/varbse#bs_nstates">bs_nstates</a> defines the maximum number of excitonic states calculated in
+the direct diagonalization of the excitonic matrix or in the conjugate-
+gradient method. The number of states should be sufficiently large for a
+correct description of the optical properties in the frequency range of
+interest.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

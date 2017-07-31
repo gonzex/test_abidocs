@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/bibliography/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Bibliography - abinit</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/extra.css" rel="stylesheet">
+        <link href="../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+    <!-- <script src="../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../theory/additional_material/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../about/release-notes/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#albrecht1998">Albrecht1998</a></li>
+        <li class="main "><a href="#allen1976">Allen1976</a></li>
+        <li class="main "><a href="#allen1978">Allen1978</a></li>
+        <li class="main "><a href="#allen1981">Allen1981</a></li>
+        <li class="main "><a href="#allen1983">Allen1983</a></li>
+        <li class="main "><a href="#allen1996">Allen1996</a></li>
+        <li class="main "><a href="#allen2013">Allen2013</a></li>
+        <li class="main "><a href="#amadon2006">Amadon2006</a></li>
+        <li class="main "><a href="#amadon2008">Amadon2008</a></li>
+        <li class="main "><a href="#amadon2008a">Amadon2008a</a></li>
+        <li class="main "><a href="#amadon2012">Amadon2012</a></li>
+        <li class="main "><a href="#amadon2014">Amadon2014</a></li>
+        <li class="main "><a href="#amadon2015">Amadon2015</a></li>
+        <li class="main "><a href="#ambrosetti2012">Ambrosetti2012</a></li>
+        <li class="main "><a href="#anisimov1991">Anisimov1991</a></li>
+        <li class="main "><a href="#antonius2014">Antonius2014</a></li>
+        <li class="main "><a href="#antonius2015">Antonius2015</a></li>
+        <li class="main "><a href="#arponen1979">Arponen1979</a></li>
+        <li class="main "><a href="#aryasetiawan2004">Aryasetiawan2004</a></li>
+        <li class="main "><a href="#audouze2006">Audouze2006</a></li>
+        <li class="main "><a href="#audouze2008">Audouze2008</a></li>
+        <li class="main "><a href="#bachelet1982">Bachelet1982</a></li>
+        <li class="main "><a href="#bader1994">Bader1994</a></li>
+        <li class="main "><a href="#barbiellini1996">Barbiellini1996</a></li>
+        <li class="main "><a href="#baroni1987">Baroni1987</a></li>
+        <li class="main "><a href="#becke1990">Becke1990</a></li>
+        <li class="main "><a href="#benedict1998">Benedict1998</a></li>
+        <li class="main "><a href="#bengone2000">Bengone2000</a></li>
+        <li class="main "><a href="#bergeron2015">Bergeron2015</a></li>
+        <li class="main "><a href="#bieder2014">Bieder2014</a></li>
+        <li class="main "><a href="#bloechl1994">Bloechl1994</a></li>
+        <li class="main "><a href="#bockstedte1997">Bockstedte1997</a></li>
+        <li class="main "><a href="#boronski1986">Boronski1986</a></li>
+        <li class="main "><a href="#bottin2008">Bottin2008</a></li>
+        <li class="main "><a href="#bousquet2011">Bousquet2011</a></li>
+        <li class="main "><a href="#bruneval2006">Bruneval2006</a></li>
+        <li class="main "><a href="#bruneval2008">Bruneval2008</a></li>
+        <li class="main "><a href="#bruneval2012">Bruneval2012</a></li>
+        <li class="main "><a href="#bruneval2014">Bruneval2014</a></li>
+        <li class="main "><a href="#calloni2005">Calloni2005</a></li>
+        <li class="main "><a href="#campillo1998">Campillo1998</a></li>
+        <li class="main "><a href="#cappellini1993">Cappellini1993</a></li>
+        <li class="main "><a href="#caracas2007">Caracas2007</a></li>
+        <li class="main "><a href="#caracas2007a">Caracas2007a</a></li>
+        <li class="main "><a href="#caracas2008">Caracas2008</a></li>
+        <li class="main "><a href="#cococcioni2005">Cococcioni2005</a></li>
+        <li class="main "><a href="#coleman2015">Coleman2015</a></li>
+        <li class="main "><a href="#czyzyk1994">Czyzyk1994</a></li>
+        <li class="main "><a href="#daubechies1992">Daubechies1992</a></li>
+        <li class="main "><a href="#dion2004">Dion2004</a></li>
+        <li class="main "><a href="#espejo2012">Espejo2012</a></li>
+        <li class="main "><a href="#folegati2007">Folegati2007</a></li>
+        <li class="main "><a href="#freund1995">Freund1995</a></li>
+        <li class="main "><a href="#fuchs1999">Fuchs1999</a></li>
+        <li class="main "><a href="#garrity2014">Garrity2014</a></li>
+        <li class="main "><a href="#geneste2012">Geneste2012</a></li>
+        <li class="main "><a href="#geneste2015">Geneste2015</a></li>
+        <li class="main "><a href="#genovese2008">Genovese2008</a></li>
+        <li class="main "><a href="#genovese2009">Genovese2009</a></li>
+        <li class="main "><a href="#georges1996">Georges1996</a></li>
+        <li class="main "><a href="#georges2004">Georges2004</a></li>
+        <li class="main "><a href="#giannozzi2009">Giannozzi2009</a></li>
+        <li class="main "><a href="#giantomassi2011">Giantomassi2011</a></li>
+        <li class="main "><a href="#gillet2013">Gillet2013</a></li>
+        <li class="main "><a href="#gillet2015">Gillet2015</a></li>
+        <li class="main "><a href="#goedecker1996">Goedecker1996</a></li>
+        <li class="main "><a href="#gonze1991">Gonze1991</a></li>
+        <li class="main "><a href="#gonze1995">Gonze1995</a></li>
+        <li class="main "><a href="#gonze1997">Gonze1997</a></li>
+        <li class="main "><a href="#gonze1997a">Gonze1997a</a></li>
+        <li class="main "><a href="#gonze2002">Gonze2002</a></li>
+        <li class="main "><a href="#gonze2005">Gonze2005</a></li>
+        <li class="main "><a href="#gonze2009">Gonze2009</a></li>
+        <li class="main "><a href="#gonze2011">Gonze2011</a></li>
+        <li class="main "><a href="#gonze2016">Gonze2016</a></li>
+        <li class="main "><a href="#grimme2006">Grimme2006</a></li>
+        <li class="main "><a href="#grimme2010">Grimme2010</a></li>
+        <li class="main "><a href="#grimme2010a">Grimme2010a</a></li>
+        <li class="main "><a href="#grimvall1981">Grimvall1981</a></li>
+        <li class="main "><a href="#gull2011">Gull2011</a></li>
+        <li class="main "><a href="#hamann1979">Hamann1979</a></li>
+        <li class="main "><a href="#hamann1989">Hamann1989</a></li>
+        <li class="main "><a href="#hamann2005">Hamann2005</a></li>
+        <li class="main "><a href="#hamann2013">Hamann2013</a></li>
+        <li class="main "><a href="#harju2013">Harju2013</a></li>
+        <li class="main "><a href="#harl2010">Harl2010</a></li>
+        <li class="main "><a href="#hartwigsen1998">Hartwigsen1998</a></li>
+        <li class="main "><a href="#haydock1980">Haydock1980</a></li>
+        <li class="main "><a href="#he2014">He2014</a></li>
+        <li class="main "><a href="#hedin1965">Hedin1965</a></li>
+        <li class="main "><a href="#hellwege1985">Hellwege1985</a></li>
+        <li class="main "><a href="#henkelman2000">Henkelman2000</a></li>
+        <li class="main "><a href="#hermet2009">Hermet2009</a></li>
+        <li class="main "><a href="#hohenberg1964">Hohenberg1964</a></li>
+        <li class="main "><a href="#holzwarth2001">Holzwarth2001</a></li>
+        <li class="main "><a href="#hughes1996">Hughes1996</a></li>
+        <li class="main "><a href="#janssen2015">Janssen2015</a></li>
+        <li class="main "><a href="#jollet2009">Jollet2009</a></li>
+        <li class="main "><a href="#jollet2014">Jollet2014</a></li>
+        <li class="main "><a href="#kawasuso2005">Kawasuso2005</a></li>
+        <li class="main "><a href="#kingsmith1993">Kingsmith1993</a></li>
+        <li class="main "><a href="#kohn1965">Kohn1965</a></li>
+        <li class="main "><a href="#kolos1960">Kolos1960</a></li>
+        <li class="main "><a href="#kotliar2006">Kotliar2006</a></li>
+        <li class="main "><a href="#laflamme2016">Laflamme2016</a></li>
+        <li class="main "><a href="#lebegue2010">Lebegue2010</a></li>
+        <li class="main "><a href="#lee1995">Lee1995</a></li>
+        <li class="main "><a href="#lejaeghere2014">Lejaeghere2014</a></li>
+        <li class="main "><a href="#levitt2015">Levitt2015</a></li>
+        <li class="main "><a href="#liechtenstein1995">Liechtenstein1995</a></li>
+        <li class="main "><a href="#lindhard1954">Lindhard1954</a></li>
+        <li class="main "><a href="#luttinger1955">Luttinger1955</a></li>
+        <li class="main "><a href="#ma2015">Ma2015</a></li>
+        <li class="main "><a href="#maintz2012">Maintz2012</a></li>
+        <li class="main "><a href="#marek2014">Marek2014</a></li>
+        <li class="main "><a href="#marques2012">Marques2012</a></li>
+        <li class="main "><a href="#marx1996">Marx1996</a></li>
+        <li class="main "><a href="#mecholsky2014">Mecholsky2014</a></li>
+        <li class="main "><a href="#medeiros2014">Medeiros2014</a></li>
+        <li class="main "><a href="#methfessel1989">Methfessel1989</a></li>
+        <li class="main "><a href="#mills1994">Mills1994</a></li>
+        <li class="main "><a href="#momma2011">Momma2011</a></li>
+        <li class="main "><a href="#moscaconte2007">Moscaconte2007</a></li>
+        <li class="main "><a href="#nieminen1985">Nieminen1985</a></li>
+        <li class="main "><a href="#nunes2001">Nunes2001</a></li>
+        <li class="main "><a href="#ong2013">Ong2013</a></li>
+        <li class="main "><a href="#onida2002">Onida2002</a></li>
+        <li class="main "><a href="#payne1992">Payne1992</a></li>
+        <li class="main "><a href="#perdew1981">Perdew1981</a></li>
+        <li class="main "><a href="#perrot1979">Perrot1979</a></li>
+        <li class="main "><a href="#pickett1988">Pickett1988</a></li>
+        <li class="main "><a href="#ponce2014">Ponce2014</a></li>
+        <li class="main "><a href="#ponce2014a">Ponce2014a</a></li>
+        <li class="main "><a href="#ponce2015">Ponce2015</a></li>
+        <li class="main "><a href="#popescu2010">Popescu2010</a></li>
+        <li class="main "><a href="#popescu2012">Popescu2012</a></li>
+        <li class="main "><a href="#pouillon2011">Pouillon2011</a></li>
+        <li class="main "><a href="#puska1994">Puska1994</a></li>
+        <li class="main "><a href="#puska1995">Puska1995</a></li>
+        <li class="main "><a href="#rangel2016">Rangel2016</a></li>
+        <li class="main "><a href="#rappe1990">Rappe1990</a></li>
+        <li class="main "><a href="#rauch2011">Rauch2011</a></li>
+        <li class="main "><a href="#resta1994">Resta1994</a></li>
+        <li class="main "><a href="#restrepo2009">Restrepo2009</a></li>
+        <li class="main "><a href="#rieger1999">Rieger1999</a></li>
+        <li class="main "><a href="#rohlfing2000">Rohlfing2000</a></li>
+        <li class="main "><a href="#romanperez2009">Romanperez2009</a></li>
+        <li class="main "><a href="#rostgaard2006">Rostgaard2006</a></li>
+        <li class="main "><a href="#rubel2014">Rubel2014</a></li>
+        <li class="main "><a href="#rutishauser1970">Rutishauser1970</a></li>
+        <li class="main "><a href="#sakuma2013">Sakuma2013</a></li>
+        <li class="main "><a href="#savin1992">Savin1992</a></li>
+        <li class="main "><a href="#savrasov1996">Savrasov1996</a></li>
+        <li class="main "><a href="#sharma2003">Sharma2003</a></li>
+        <li class="main "><a href="#sharma2004">Sharma2004</a></li>
+        <li class="main "><a href="#shih2012">Shih2012</a></li>
+        <li class="main "><a href="#silvestrelli2008">Silvestrelli2008</a></li>
+        <li class="main "><a href="#silvestrelli2009">Silvestrelli2009</a></li>
+        <li class="main "><a href="#silvestrelli2013">Silvestrelli2013</a></li>
+        <li class="main "><a href="#sipe1993">Sipe1993</a></li>
+        <li class="main "><a href="#snyder2008">Snyder2008</a></li>
+        <li class="main "><a href="#souza2002">Souza2002</a></li>
+        <li class="main "><a href="#sterne1991">Sterne1991</a></li>
+        <li class="main "><a href="#torrent2008">Torrent2008</a></li>
+        <li class="main "><a href="#tran2009">Tran2009</a></li>
+        <li class="main "><a href="#tremblay2017">Tremblay2017</a></li>
+        <li class="main "><a href="#troullier1991">Troullier1991</a></li>
+        <li class="main "><a href="#tuckerman1996">Tuckerman1996</a></li>
+        <li class="main "><a href="#tuomisto2013">Tuomisto2013</a></li>
+        <li class="main "><a href="#uehara2000">Uehara2000</a></li>
+        <li class="main "><a href="#vanderbilt1998">Vanderbilt1998</a></li>
+        <li class="main "><a href="#vantroeye2016">Vantroeye2016</a></li>
+        <li class="main "><a href="#veithen2005">Veithen2005</a></li>
+        <li class="main "><a href="#veithen2005a">Veithen2005a</a></li>
+        <li class="main "><a href="#wang1998">Wang1998</a></li>
+        <li class="main "><a href="#wang2013">Wang2013</a></li>
+        <li class="main "><a href="#waroquiers2013">Waroquiers2013</a></li>
+        <li class="main "><a href="#weinan2007">Weinan2007</a></li>
+        <li class="main "><a href="#werner2006">Werner2006</a></li>
+        <li class="main "><a href="#wiktor2013">Wiktor2013</a></li>
+        <li class="main "><a href="#wiktor2014">Wiktor2014</a></li>
+        <li class="main "><a href="#wiktor2014a">Wiktor2014a</a></li>
+        <li class="main "><a href="#wiktor2014b">Wiktor2014b</a></li>
+        <li class="main "><a href="#wiktor2015">Wiktor2015</a></li>
+        <li class="main "><a href="#xu2014">Xu2014</a></li>
+        <li class="main "><a href="#zhou2006">Zhou2006</a></li>
+        <li class="main "><a href="#zhou2006a">Zhou2006a</a></li>
+        <li class="main "><a href="#ziman1960">Ziman1960</a></li>
+        <li class="main "><a href="#zwanziger2012">Zwanziger2012</a></li>
+        <li class="main "><a href="#lechermann2006">Lechermann2006</a></li>
+        <li class="main "><a href="#fresard1997">Fresard1997</a></li>
+        <li class="main "><a href="#bergeron2016">Bergeron2016</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="albrecht1998"><strong>Albrecht1998</strong><a class="headerlink" href="#albrecht1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1998&rsquo;), (&lsquo;volume&rsquo;, &lsquo;80&rsquo;), (&lsquo;pages&rsquo;, &lsquo;4510&ndash;4513&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.80.4510&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;3&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Albrecht, S.&rsquo;), Person(&lsquo;Reining, L.&rsquo;), Person(&lsquo;Del Sole, R.&rsquo;), Person(&lsquo;Onida, G.&rsquo;)])]))</p>
+<h2 id="allen1976"><strong>Allen1976</strong><a class="headerlink" href="#allen1976" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Theory of the temperature dependence of electronic band structures&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. of Phys. C: Solid State Physics&rsquo;), (&lsquo;year&rsquo;, &lsquo;1976&rsquo;), (&lsquo;volume&rsquo;, &lsquo;9&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2305&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;), Person(&lsquo;Heine, V.&rsquo;)])]))</p>
+<h2 id="allen1978"><strong>Allen1978</strong><a class="headerlink" href="#allen1978" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &ldquo;New method for solving Boltzmann&rsquo;s equation for electrons in metals&rdquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1978&rsquo;), (&lsquo;volume&rsquo;, &lsquo;17&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3725&ndash;3734&rsquo;), (&lsquo;optdoi&rsquo;, &lsquo;10.1103/PhysRevB.17.3725&rsquo;), (&lsquo;issue&rsquo;, &lsquo;10&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;)])]))</p>
+<h2 id="allen1981"><strong>Allen1981</strong><a class="headerlink" href="#allen1981" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Theory of the temperature dependence of the direct gap of germanium&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1981&rsquo;), (&lsquo;volume&rsquo;, &lsquo;23&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1495&ndash;1505&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;), Person(&lsquo;Cardona, M.&rsquo;)])]))</p>
+<h2 id="allen1983"><strong>Allen1983</strong><a class="headerlink" href="#allen1983" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Temperature dependence of the direct gap of {S}i and {G}e&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1983&rsquo;), (&lsquo;volume&rsquo;, &lsquo;27&rsquo;), (&lsquo;pages&rsquo;, &lsquo;4760&ndash;4769&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;), Person(&lsquo;Cardona, M.&rsquo;)])]))</p>
+<h2 id="allen1996"><strong>Allen1996</strong><a class="headerlink" href="#allen1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;incollection&rsquo;, fields=[(&lsquo;TITLE&rsquo;, &lsquo;Boltzmann Theory and Resistivity of Metals&rsquo;), (&lsquo;BOOKTITLE&rsquo;, &lsquo;Quantum Theory of Real Materials&rsquo;), (&lsquo;PUBLISHER&rsquo;, &lsquo;Kl{\&ldquo;u}wer&rsquo;), (&lsquo;ADDRESS&rsquo;, &lsquo;Boston&rsquo;), (&lsquo;PAGES&rsquo;, &lsquo;219-250&rsquo;), (&lsquo;YEAR&rsquo;, &lsquo;1996&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;AUTHOR&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;)]), (&lsquo;EDITOR&rsquo;, [Person(&lsquo;Chelikowsky, J. R.&rsquo;), Person(&lsquo;Louie, S. G.&rsquo;)])]))</p>
+<h2 id="allen2013"><strong>Allen2013</strong><a class="headerlink" href="#allen2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;085322&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;87&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Allen, P. B.&rsquo;), Person(&lsquo;Berlijn, T.&rsquo;), Person(&lsquo;Casavant, D. A.&rsquo;), Person(&lsquo;Soler, J. M.&rsquo;)])]))</p>
+<h2 id="amadon2006"><strong>Amadon2006</strong><a class="headerlink" href="#amadon2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;The <script type="math/tex">\\alpha</script>-<script type="math/tex">\\gamma</script> {T}ransition of {C}erium {I}s {E}ntropy {D}riven&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;volume&rsquo;, &lsquo;96&rsquo;), (&lsquo;pages&rsquo;, &lsquo;066402&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.96.066402&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Cerium/DMFT/PhysRevLett.96.066402.pdf:PDF&rsquo;), (&lsquo;issue&rsquo;, &lsquo;6&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;4&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Biermann, S.&rsquo;), Person(&lsquo;Georges, A.&rsquo;), Person(&lsquo;Aryasetiawan, F.&rsquo;)])]))</p>
+<h2 id="amadon2008"><strong>Amadon2008</strong><a class="headerlink" href="#amadon2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;volume&rsquo;, &lsquo;77&rsquo;), (&lsquo;pages&rsquo;, &lsquo;205112&rsquo;), (&lsquo;number&rsquo;, &lsquo;20&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/DMFT/PhysRevB.77.205112.pdf:PDF&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.77.205112&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.08.08&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.77.205112&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Lechermann, F.&rsquo;), Person(&lsquo;Georges, A.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Wehling, T. O.&rsquo;), Person(&lsquo;Liechtenstein, A. I.&rsquo;)])]))</p>
+<h2 id="amadon2008a"><strong>Amadon2008a</strong><a class="headerlink" href="#amadon2008a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;<script type="math/tex">\\gamma</script> and <script type="math/tex">\\beta</script> cerium: {LDA}+{U} calculations of ground-state parameters&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;volume&rsquo;, &lsquo;77&rsquo;), (&lsquo;pages&rsquo;, &lsquo;155104&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.77.155104&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Cerium/PhysRevB.77.155104-1.pdf:PDF&rsquo;), (&lsquo;issue&rsquo;, &lsquo;15&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;10&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;)])]))</p>
+<h2 id="amadon2012"><strong>Amadon2012</strong><a class="headerlink" href="#amadon2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e<script type="math/tex">_2</script>{O}<script type="math/tex">_3</script> and {P}u<script type="math/tex">_2</script>{O}<script type="math/tex">_3</script> with the {H}ubbard {I} solver and comparison to {DFT}+{U}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Phys.: Cond. Matt.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;), (&lsquo;volume&rsquo;, &lsquo;24&rsquo;), (&lsquo;pages&rsquo;, &lsquo;075604&rsquo;), (&lsquo;number&rsquo;, &lsquo;7&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/DMFT/0953-8984_24_7_075604.pdf:PDF&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0953-8984&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.08.08&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;)])]))</p>
+<h2 id="amadon2014"><strong>Amadon2014</strong><a class="headerlink" href="#amadon2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125110&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.89.125110&rsquo;), (&lsquo;issue&rsquo;, &lsquo;12&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;10&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Applencourt, T.&rsquo;), Person(&lsquo;Bruneval, F.&rsquo;)])]))</p>
+<h2 id="amadon2015"><strong>Amadon2015</strong><a class="headerlink" href="#amadon2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Comparative analysis of models for the <script type="math/tex">\\alpha</script>-<script type="math/tex">\\gamma</script> phase transition in cerium: A DFT+DMFT study using Wannier orbitals&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;volume&rsquo;, &lsquo;91&rsquo;), (&lsquo;pages&rsquo;, &lsquo;161103&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.91.161103&rsquo;), (&lsquo;issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;5&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Gerossier, A.&rsquo;)])]))</p>
+<h2 id="ambrosetti2012"><strong>Ambrosetti2012</strong><a class="headerlink" href="#ambrosetti2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;), (&lsquo;volume&rsquo;, &lsquo;85&rsquo;), (&lsquo;pages&rsquo;, &lsquo;073101&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Ambrosetti, A.&rsquo;), Person(&lsquo;Silvestrelli, P. L.&rsquo;)])]))</p>
+<h2 id="anisimov1991"><strong>Anisimov1991</strong><a class="headerlink" href="#anisimov1991" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Density-functional calculation of effective Coulomb interactions in metals&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1991&rsquo;), (&lsquo;volume&rsquo;, &lsquo;43&rsquo;), (&lsquo;pages&rsquo;, &lsquo;7570&ndash;7574&rsquo;), (&lsquo;number&rsquo;, &lsquo;10&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.43.7570&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2013.07.03&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.43.7570&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Anisimov, V. I.&rsquo;), Person(&lsquo;Gunnarsson, O.&rsquo;)])]))</p>
+<h2 id="antonius2014"><strong>Antonius2014</strong><a class="headerlink" href="#antonius2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Many-Body Effects on the Zero-Point Renormalization of the Band Structure&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;112&rsquo;), (&lsquo;pages&rsquo;, &lsquo;215501&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Antonius, G.&rsquo;), Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Boulanger, P.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="antonius2015"><strong>Antonius2015</strong><a class="headerlink" href="#antonius2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;volume&rsquo;, &lsquo;92&rsquo;), (&lsquo;pages&rsquo;, &lsquo;085137&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Antonius, G.&rsquo;), Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Lantagne-Hurtubise, E.&rsquo;), Person(&lsquo;Auclair, G.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;)])]))</p>
+<h2 id="arponen1979"><strong>Arponen1979</strong><a class="headerlink" href="#arponen1979" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Angular correlation in positron annihilation&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1088/0305-4608/9/12/009&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Phys. F&rsquo;), (&lsquo;volume&rsquo;, &lsquo;9&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2359&rsquo;), (&lsquo;year&rsquo;, &lsquo;1979&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Arponen, J.&rsquo;), Person(&lsquo;Pajanne, E.&rsquo;)])]))</p>
+<h2 id="aryasetiawan2004"><strong>Aryasetiawan2004</strong><a class="headerlink" href="#aryasetiawan2004" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Frequency-dependent local interactions and low-energy effective models from electronic structure calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2004&rsquo;), (&lsquo;volume&rsquo;, &lsquo;70&rsquo;), (&lsquo;pages&rsquo;, &lsquo;195104&ndash;&lsquo;), (&lsquo;number&rsquo;, &lsquo;19&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;cRPA&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.70.195104&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2013.03.15&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.70.195104&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Aryasetiawan, F.&rsquo;), Person(&lsquo;Imada, M.&rsquo;), Person(&lsquo;Georges, A.&rsquo;), Person(&lsquo;Kotliar, G.&rsquo;), Person(&lsquo;Biermann, S.&rsquo;), Person(&lsquo;Liechtenstein, A. I.&rsquo;)])]))</p>
+<h2 id="audouze2006"><strong>Audouze2006</strong><a class="headerlink" href="#audouze2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;73&rsquo;), (&lsquo;pages&rsquo;, &lsquo;235101&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;title&rsquo;, &lsquo;Projector augmented-wave approach to density-functional perturbation theory&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Audouze, C.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="audouze2008"><strong>Audouze2008</strong><a class="headerlink" href="#audouze2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;78&rsquo;), (&lsquo;pages&rsquo;, &lsquo;035105&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;title&rsquo;, &lsquo;Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Audouze, C.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="bachelet1982"><strong>Bachelet1982</strong><a class="headerlink" href="#bachelet1982" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Pseudopotentials that work: From {H} to {P}u&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1982&rsquo;), (&lsquo;volume&rsquo;, &lsquo;26&rsquo;), (&lsquo;pages&rsquo;, &lsquo;4199&ndash;4228&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.26.4199&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;29&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bachelet, G.B.&rsquo;), Person(&lsquo;Hamann, D.R.&rsquo;), Person(&lsquo;Schl\&ldquo;uter, M.&rsquo;)])]))</p>
+<h2 id="bader1994"><strong>Bader1994</strong><a class="headerlink" href="#bader1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Atoms in Molecules: A Quantum Theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Oxford University Press.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;), (&lsquo;volume&rsquo;, &lsquo;ISBN 978-0-19-855865-1&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;&rsquo;), (&lsquo;url&rsquo;, &lsquo;&rsquo;), (&lsquo;doi&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bader, R. F. W.&rsquo;)])]))</p>
+<h2 id="barbiellini1996"><strong>Barbiellini1996</strong><a class="headerlink" href="#barbiellini1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Calculation of positron states and annihilation in solids: A density-gradient-correction scheme&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;53&rsquo;), (&lsquo;issue&rsquo;, &lsquo;24&rsquo;), (&lsquo;pages&rsquo;, &lsquo;16201&rsquo;), (&lsquo;year&rsquo;, &lsquo;1996&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.53.16201&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Barbiellini, B.&rsquo;), Person(&lsquo;Puska, M. J.&rsquo;), Person(&lsquo;Korhonen, T.&rsquo;), Person(&lsquo;Harju, A.&rsquo;), Person(&lsquo;Torsti, T.&rsquo;), Person(&lsquo;Nieminen, R. M.&rsquo;)])]))</p>
+<h2 id="baroni1987"><strong>Baroni1987</strong><a class="headerlink" href="#baroni1987" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &ldquo;Green&rsquo;s-function approach to linear response in solids&rdquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1987&rsquo;), (&lsquo;volume&rsquo;, &lsquo;58&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1861&ndash;1864&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Baroni, S.&rsquo;), Person(&lsquo;Giannozzi, P.&rsquo;), Person(&lsquo;Testa, A.&rsquo;)])]))</p>
+<h2 id="becke1990"><strong>Becke1990</strong><a class="headerlink" href="#becke1990" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;A simple measure of electron localization in atomic and molecular systems&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1990&rsquo;), (&lsquo;volume&rsquo;, &lsquo;92&rsquo;), (&lsquo;number&rsquo;, &lsquo;9&rsquo;), (&lsquo;pages&rsquo;, &lsquo;5397-5403&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1063/1.458517&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Becke, A. D.&rsquo;), Person(&lsquo;Edgecombe, K. E.&rsquo;)])]))</p>
+<h2 id="benedict1998"><strong>Benedict1998</strong><a class="headerlink" href="#benedict1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;80&rsquo;), (&lsquo;issue&rsquo;, &lsquo;20&rsquo;), (&lsquo;pages&rsquo;, &lsquo;4514&ndash;4517&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1998&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.80.4514&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Benedict, L. X.&rsquo;), Person(&lsquo;Shirley, E. L.&rsquo;), Person(&lsquo;Bohn, R. B.&rsquo;)])]))</p>
+<h2 id="bengone2000"><strong>Bengone2000</strong><a class="headerlink" href="#bengone2000" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;62&rsquo;), (&lsquo;pages&rsquo;, &lsquo;16392&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;O. Bengone, M. Alouani, P. Bl\&ldquo;ochl,&rsquo;), Person(&lsquo;Hugel, J.&rsquo;)])]))</p>
+<h2 id="bergeron2015"><strong>Bergeron2015</strong><a class="headerlink" href="#bergeron2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&rsquo;), (&lsquo;journal&rsquo;, &lsquo;arXiv e-prints&rsquo;), (&lsquo;archivePrefix&rsquo;, &lsquo;arXiv:cond-mat.str-el&rsquo;), (&lsquo;eprint&rsquo;, &lsquo;1507.01012&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;month&rsquo;, &lsquo;jul&rsquo;), (&lsquo;adsurl&rsquo;, &lsquo;http://adsabs.harvard.edu/abs/2015arXiv150701012B&rsquo;), (&lsquo;adsnote&rsquo;, &lsquo;Provided by the SAO/NASA Astrophysics Data System&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bergeron, D.&rsquo;), Person(&lsquo;Tremblay, A.-M. S.&rsquo;)])]))</p>
+<h2 id="bieder2014"><strong>Bieder2014</strong><a class="headerlink" href="#bieder2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Thermodynamics of the <script type="math/tex">\\alpha</script>-<script type="math/tex">\\gamma</script> transition in cerium from first principles&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;pages&rsquo;, &lsquo;195132&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.89.195132&rsquo;), (&lsquo;issue&rsquo;, &lsquo;19&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;7&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bieder, J.&rsquo;), Person(&lsquo;Amadon, B.&rsquo;)])]))</p>
+<h2 id="bloechl1994"><strong>Bloechl1994</strong><a class="headerlink" href="#bloechl1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Projector augmented-wave method&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;), (&lsquo;volume&rsquo;, &lsquo;50&rsquo;), (&lsquo;pages&rsquo;, &lsquo;17953-17979&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.50.17953&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bl\&ldquo;{o}chl, P.E.&rsquo;)])]))</p>
+<h2 id="bockstedte1997"><strong>Bockstedte1997</strong><a class="headerlink" href="#bockstedte1997" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;107&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;187&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1997&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Bockstedte, M.&rsquo;), Person(&lsquo;Kley, A.&rsquo;), Person(&lsquo;Neugebauer, J.&rsquo;), Person(&lsquo;Scheffler, M.&rsquo;)])]))</p>
+<h2 id="boronski1986"><strong>Boronski1986</strong><a class="headerlink" href="#boronski1986" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electron-positron density-functional theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;34&rsquo;), (&lsquo;issue&rsquo;, &lsquo;6&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3820&rsquo;), (&lsquo;year&rsquo;, &lsquo;1986&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.34.3820&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Boro\&lsquo;nski, E.&rdquo;), Person(&lsquo;Nieminen, R. M.&rsquo;)])]))</p>
+<h2 id="bottin2008"><strong>Bottin2008</strong><a class="headerlink" href="#bottin2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Large-scale ab initio calculations based on three levels of parallelization&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Mat. Sci.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;42&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;329&ndash;336&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Elsevier&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bottin, F.&rsquo;), Person(&lsquo;Leroux, S.&rsquo;), Person(&lsquo;Knyazev, A.&rsquo;), Person(&ldquo;Z{\&lsquo;e}rah, G.&rdquo;)])]))</p>
+<h2 id="bousquet2011"><strong>Bousquet2011</strong><a class="headerlink" href="#bousquet2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;106&rsquo;), (&lsquo;pages&rsquo;, &lsquo;107202&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.106.107202&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bousquet, E.&rsquo;), Person(&lsquo;Spaldin, N. A.&rsquo;), Person(&lsquo;Delaney, K. T.&rsquo;)])]))</p>
+<h2 id="bruneval2006"><strong>Bruneval2006</strong><a class="headerlink" href="#bruneval2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Effect of self-consistency on quasiparticles in solids&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;74&rsquo;), (&lsquo;pages&rsquo;, &lsquo;045102&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Vast, N.&rsquo;), Person(&lsquo;Reining, L.&rsquo;)])]))</p>
+<h2 id="bruneval2008"><strong>Bruneval2008</strong><a class="headerlink" href="#bruneval2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;78&rsquo;), (&lsquo;issue&rsquo;, &lsquo;8&rsquo;), (&lsquo;pages&rsquo;, &lsquo;085125&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;9&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.78.085125&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="bruneval2012"><strong>Bruneval2012</strong><a class="headerlink" href="#bruneval2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;108&rsquo;), (&lsquo;issue&rsquo;, &lsquo;25&rsquo;), (&lsquo;pages&rsquo;, &lsquo;256403&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;5&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.108.256403&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bruneval, F.&rsquo;)])]))</p>
+<h2 id="bruneval2014"><strong>Bruneval2014</strong><a class="headerlink" href="#bruneval2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;issue&rsquo;, &lsquo;4&rsquo;), (&lsquo;pages&rsquo;, &lsquo;045116&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;13&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.89.045116&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Crocombette, J.-P.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Dorado, B.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;)])]))</p>
+<h2 id="calloni2005"><strong>Calloni2005</strong><a class="headerlink" href="#calloni2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;72&rsquo;), (&lsquo;number&rsquo;, &lsquo;5&rsquo;), (&lsquo;pages&rsquo;, &lsquo;054112&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Calloni, A.&rsquo;), Person(&lsquo;Dupasquier, A.&rsquo;), Person(&lsquo;Ferragut, R.&rsquo;), Person(&lsquo;Folegati, P.&rsquo;), Person(&lsquo;Iglesias, M.M.&rsquo;), Person(&lsquo;Makkonen, I.&rsquo;), Person(&lsquo;Puska, M.J.&rsquo;)])]))</p>
+<h2 id="campillo1998"><strong>Campillo1998</strong><a class="headerlink" href="#campillo1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electronic stopping power of aluminum crystal&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;58&rsquo;), (&lsquo;issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;pages&rsquo;, &lsquo;10307 - 10314&rsquo;), (&lsquo;year&rsquo;, &lsquo;1998&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.58.10307&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Campillo, I.&rsquo;), Person(&lsquo;Pitarke, J. M.&rsquo;), Person(&lsquo;Eguiluz, A. G.&rsquo;)])]))</p>
+<h2 id="cappellini1993"><strong>Cappellini1993</strong><a class="headerlink" href="#cappellini1993" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Model dielectric function for semiconductors&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;47&rsquo;), (&lsquo;issue&rsquo;, &lsquo;15&rsquo;), (&lsquo;pages&rsquo;, &lsquo;9892&ndash;9895&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1993&rsquo;), (&lsquo;month&rsquo;, &lsquo;Apr&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.47.9892&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Cappellini, G.&rsquo;), Person(&lsquo;Del Sole, R.&rsquo;), Person(&lsquo;Reining, L.&rsquo;), Person(&lsquo;Bechstedt, F.&rsquo;)])]))</p>
+<h2 id="caracas2007"><strong>Caracas2007</strong><a class="headerlink" href="#caracas2007" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Prediction of polar ordered oxynitride perovskites&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Appl. Phys. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;91&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;092902&rsquo;), (&lsquo;year&rsquo;, &lsquo;2007&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1063/1.2776370&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Caracas, R.&rsquo;), Person(&lsquo;Cohen, R.E.&rsquo;)])]))</p>
+<h2 id="caracas2007a"><strong>Caracas2007a</strong><a class="headerlink" href="#caracas2007a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Post-perovskite phase in selected sesquioxides from density-functional calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;76&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;184101&rsquo;), (&lsquo;year&rsquo;, &lsquo;2007&rsquo;), (&lsquo;doi&rsquo;, &lsquo;&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Caracas, R.&rsquo;), Person(&lsquo;Cohen, R.E.&rsquo;)])]))</p>
+<h2 id="caracas2008"><strong>Caracas2008</strong><a class="headerlink" href="#caracas2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Dynamical Instabilities of Ice X&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;101&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;085502&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.101.085502&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Caracas, R.&rsquo;)])]))</p>
+<h2 id="cococcioni2005"><strong>Cococcioni2005</strong><a class="headerlink" href="#cococcioni2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;volume&rsquo;, &lsquo;71&rsquo;), (&lsquo;pages&rsquo;, &lsquo;035105&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.71.035105.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;DFTU interaction, cRPA&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.71.035105&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.06.21&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.71.035105&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Cococcioni, M.&rsquo;), Person(&lsquo;de Gironcoli, S.&rsquo;)])]))</p>
+<h2 id="coleman2015"><strong>Coleman2015</strong><a class="headerlink" href="#coleman2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;book&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Introduction to Many-Body Physics&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Cambridge University Press&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Coleman, Piers&rsquo;)])]))</p>
+<h2 id="czyzyk1994"><strong>Czyzyk1994</strong><a class="headerlink" href="#czyzyk1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Local-density functional and on-site correlations: {T}he electronic structure of {L}a<script type="math/tex">_2</script>{C}u{O}<script type="math/tex">_4</script> and {L}a{C}u{O}<script type="math/tex">_3</script>&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;49&rsquo;), (&lsquo;pages&rsquo;, &lsquo;14211&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Czyzyk, M. T.&rsquo;), Person(&lsquo;Sawatzky, G. A.&rsquo;)])]))</p>
+<h2 id="daubechies1992"><strong>Daubechies1992</strong><a class="headerlink" href="#daubechies1992" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;book&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;10 Lectures on Wavelets&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104)&rsquo;), (&lsquo;year&rsquo;, &lsquo;1992&rsquo;), (&lsquo;isbn&rsquo;, &lsquo;9780898712742&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;Mathematics / General, Mathematics / Infinity, Mathematics / Mathematical Analysis, Science / Waves \&amp; Wave Mechanics, Technology \&amp; Engineering / General&rsquo;), (&lsquo;language&rsquo;, &lsquo;en&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Daubechies, I.&rsquo;)])]))</p>
+<h2 id="dion2004"><strong>Dion2004</strong><a class="headerlink" href="#dion2004" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Van der Waals Density Functional for General Geometries&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;92&rsquo;), (&lsquo;pages&rsquo;, &lsquo;246401&rsquo;), (&lsquo;year&rsquo;, &lsquo;2004&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.92.246401&rsquo;), (&lsquo;note&rsquo;, &lsquo;Erratum: DOI:10.1103/PhysRevLett.95.109902&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Dion, M.&rsquo;), Person(&lsquo;Rydberg, H.&rsquo;), Person(&lsquo;Schr\&ldquo;oder, E.&rsquo;), Person(&lsquo;Langreth, D. C.&rsquo;), Person(&lsquo;Lundqvist, B. I.&rsquo;)])]))</p>
+<h2 id="espejo2012"><strong>Espejo2012</strong><a class="headerlink" href="#espejo2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Wannier functions approach to van der Waals interactions in {ABINIT}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;183&rsquo;), (&lsquo;pages&rsquo;, &lsquo;480&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Espejo, C.&rsquo;), Person(&lsquo;Rangel, T.&rsquo;), Person(&lsquo;Pouillon, Y.&rsquo;), Person(&lsquo;Romero, A. H.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="folegati2007"><strong>Folegati2007</strong><a class="headerlink" href="#folegati2007" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;75&rsquo;), (&lsquo;number&rsquo;, &lsquo;5&rsquo;), (&lsquo;pages&rsquo;, &lsquo;054201&rsquo;), (&lsquo;year&rsquo;, &lsquo;2007&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Folegati, P.&rsquo;), Person(&lsquo;Makkonen, I.&rsquo;), Person(&lsquo;Ferragut, R.&rsquo;), Person(&lsquo;Puska, M.J.&rsquo;)])]))</p>
+<h2 id="freund1995"><strong>Freund1995</strong><a class="headerlink" href="#freund1995" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Software for simplified {L}anczos and {QMR} algorithms&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Applied Numerical Mathematics&rsquo;), (&lsquo;year&rsquo;, &lsquo;1995&rsquo;), (&lsquo;volume&rsquo;, &lsquo;19&rsquo;), (&lsquo;pages&rsquo;, &lsquo;319&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/0168-9274(95)00089-5&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Freund, R. W.&rsquo;), Person(&lsquo;Nachtigal, N. M.&rsquo;)])]))</p>
+<h2 id="fuchs1999"><strong>Fuchs1999</strong><a class="headerlink" href="#fuchs1999" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;119&rsquo;), (&lsquo;number&rsquo;, &lsquo;1&rsquo;), (&lsquo;pages&rsquo;, &lsquo;67 - 98&rsquo;), (&lsquo;year&rsquo;, &lsquo;1999&rsquo;), (&lsquo;note&rsquo;, &lsquo;&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0010-4655&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/S0010-4655(98)00201-X&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/S001046559800201X&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Fuchs, M.&rsquo;), Person(&lsquo;Scheffler, M.&rsquo;)])]))</p>
+<h2 id="garrity2014"><strong>Garrity2014</strong><a class="headerlink" href="#garrity2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Pseudopotentials for high-throughput {DFT} calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Mat. Sci.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;81&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;446 - 452&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;note&rsquo;, &lsquo;&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0927-0256&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/j.commatsci.2013.08.053&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/S0927025613005077&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;Density functional theory&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Garrity, K.F.&rsquo;), Person(&lsquo;Bennett, J.W.&rsquo;), Person(&lsquo;Rabe, K.M.&rsquo;), Person(&lsquo;Vanderbilt, D.&rsquo;)])]))</p>
+<h2 id="geneste2012"><strong>Geneste2012</strong><a class="headerlink" href="#geneste2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;109&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;155303&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Geneste, G.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Bottin, F.&rsquo;), Person(&lsquo;Loubeyre, P.&rsquo;)])]))</p>
+<h2 id="geneste2015"><strong>Geneste2015</strong><a class="headerlink" href="#geneste2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Proton transport in barium stannate: classical, semi-classical and quantum regimes&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Chem. Chem. Phys.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;17&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;19104&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Geneste, G.&rsquo;), Person(&lsquo;Ottochian, A.&rsquo;), Person(&lsquo;Hermet, J.&rsquo;), Person(&lsquo;Dezanneau, G.&rsquo;)])]))</p>
+<h2 id="genovese2008"><strong>Genovese2008</strong><a class="headerlink" href="#genovese2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Daubechies wavelets as a basis set for density functional pseudopotential calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;volume&rsquo;, &lsquo;129&rsquo;), (&lsquo;pages&rsquo;, &lsquo;014109&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Genovese, L.&rsquo;), Person(&lsquo;Neelov, L.&rsquo;), Person(&lsquo;Goedecker, S.&rsquo;), Person(&lsquo;Deutsch, T.&rsquo;), Person(&lsquo;Alireza Ghasemi, S.&rsquo;), Person(&lsquo;Willand, A.&rsquo;), Person(&lsquo;Caliste, D.&rsquo;), Person(&lsquo;Zilberberg, O.&rsquo;), Person(&lsquo;Rayson, M.&rsquo;), Person(&lsquo;Bergman, A.&rsquo;), Person(&lsquo;Schneider, R.&rsquo;)])]))</p>
+<h2 id="genovese2009"><strong>Genovese2009</strong><a class="headerlink" href="#genovese2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;131&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;034103&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Genovese, L.&rsquo;), Person(&lsquo;Ospici, M.&rsquo;), Person(&lsquo;Deutsch, T.&rsquo;), Person(&ldquo;M\&lsquo;ehaut, J.-F.&rdquo;), Person(&lsquo;Neelov, A.&rsquo;), Person(&lsquo;Goedecker, S.&rsquo;)])]))</p>
+<h2 id="georges1996"><strong>Georges1996</strong><a class="headerlink" href="#georges1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1996&rsquo;), (&lsquo;volume&rsquo;, &lsquo;68&rsquo;), (&lsquo;pages&rsquo;, &lsquo;13&ndash;125&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.68.13&rsquo;), (&lsquo;issue&rsquo;, &lsquo;1&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Georges, A.&rsquo;), Person(&lsquo;Kotliar, G.&rsquo;), Person(&lsquo;Krauth, W.&rsquo;), Person(&lsquo;Rozenberg, M.J.&rsquo;)])]))</p>
+<h2 id="georges2004"><strong>Georges2004</strong><a class="headerlink" href="#georges2004" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure&rsquo;), (&lsquo;journal&rsquo;, &lsquo;{AIP} {C}onf. {P}roc.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2004&rsquo;), (&lsquo;volume&rsquo;, &lsquo;715&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3&ndash;74&rsquo;), (&lsquo;number&rsquo;, &lsquo;1&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/DMFT/APC000003.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &ldquo;strongly correlated electron systems, metal-insulator transition, density functional theory, electronic structure, band theory, Green&rsquo;s function methods, spin systems, transport processes, critical phenomena, transition metal compounds, rare earth compounds, actinide compounds, oxygen compounds&rdquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;AIP&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.10.18&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1063/1.1800733&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Georges, A.&rsquo;)])]))</p>
+<h2 id="giannozzi2009"><strong>Giannozzi2009</strong><a class="headerlink" href="#giannozzi2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Phys.: Cond. Matt.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;21&rsquo;), (&lsquo;number&rsquo;, &lsquo;39&rsquo;), (&lsquo;pages&rsquo;, &lsquo;395502&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Giannozzi, P.&rsquo;), Person(&lsquo;Baroni, S.&rsquo;), Person(&lsquo;Bonini, N.&rsquo;), Person(&lsquo;Calandra, M.&rsquo;), Person(&lsquo;Car, R.&rsquo;), Person(&lsquo;Cavazzoni, C.&rsquo;), Person(&lsquo;Ceresoli, D.&rsquo;), Person(&lsquo;Chiarotti, G.L.&rsquo;), Person(&lsquo;Cococcioni, M.&rsquo;), Person(&lsquo;Dabo, I.&rsquo;), Person(&lsquo;Dal Corso, A.&rsquo;), Person(&lsquo;de Gironcoli, S.&rsquo;), Person(&lsquo;Fabris, S.&rsquo;), Person(&lsquo;Fratesi, G.&rsquo;), Person(&lsquo;Gebauer, R.&rsquo;), Person(&lsquo;Gerstmann, U.&rsquo;), Person(&lsquo;Gougoussis, C.&rsquo;), Person(&lsquo;Kokalj, A.&rsquo;), Person(&lsquo;Lazzeri, M.&rsquo;), Person(&lsquo;Martin-Samos, L.&rsquo;), Person(&lsquo;Marzari, N.&rsquo;), Person(&lsquo;Mauri, F.&rsquo;), Person(&lsquo;Mazzarello, R.&rsquo;), Person(&lsquo;Paolini, S.&rsquo;), Person(&lsquo;Pasquarello, A.&rsquo;), Person(&lsquo;Paulatto, L.&rsquo;), Person(&lsquo;Sbraccia, C.&rsquo;), Person(&lsquo;Scandolo, S.&rsquo;), Person(&lsquo;Sclauzero, G.&rsquo;), Person(&lsquo;Seitsonen, A.P.&rsquo;), Person(&lsquo;Smogunov, A.&rsquo;), Person(&lsquo;Umari, P.&rsquo;), Person(&lsquo;Wentzcovitch, R.M.&rsquo;)])]))</p>
+<h2 id="giantomassi2011"><strong>Giantomassi2011</strong><a class="headerlink" href="#giantomassi2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Physica Status Solidi B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;volume&rsquo;, &lsquo;248&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;275&ndash;289&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1002/pssb.201046094&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Stankovski, M.&rsquo;), Person(&lsquo;Shaltaf, R.&rsquo;), Person(&lsquo;Gruning, M.&rsquo;), Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Rinke, P.&rsquo;), Person(&lsquo;Rignanese, G.M.&rsquo;)])]))</p>
+<h2 id="gillet2013"><strong>Gillet2013</strong><a class="headerlink" href="#gillet2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;First-principles study of excitonic effects in Raman intensities&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;094305&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;88&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevB.88.094305&rsquo;), (&lsquo;File&rsquo;, &lsquo;Gillet2013.pdf:Gillet2013.pdf:PDF;Gillet2013.pdf:Gillet2013.pdf:PDF&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;9&rsquo;), (&lsquo;Numpages&rsquo;, &lsquo;9&rsquo;), (&lsquo;Publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;Url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevB.88.094305&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Gillet, Y.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="gillet2015"><strong>Gillet2015</strong><a class="headerlink" href="#gillet2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2016&rsquo;), (&lsquo;volume&rsquo;, &lsquo;203C&rsquo;), (&lsquo;pages&rsquo;, &lsquo;83-93&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Comput. Phys. Comm.&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1016/j.cpc.2016.02.008&rsquo;), (&lsquo;Owner&rsquo;, &lsquo;yannick&rsquo;), (&lsquo;Timestamp&rsquo;, &lsquo;2015.08.27&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Gillet, Y.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="goedecker1996"><strong>Goedecker1996</strong><a class="headerlink" href="#goedecker1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Separable dual-space Gaussian pseudopotentials&rsquo;), (&lsquo;volume&rsquo;, &lsquo;54&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1996&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1703&ndash;1710&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Goedecker, S.&rsquo;), Person(&lsquo;Teter, M.&rsquo;), Person(&lsquo;H\&ldquo;utter, J.&rsquo;)])]))</p>
+<h2 id="gonze1991"><strong>Gonze1991</strong><a class="headerlink" href="#gonze1991" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Analysis of separable potentials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;44&rsquo;), (&lsquo;issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;pages&rsquo;, &lsquo;8503&ndash;8513&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1991&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.44.8503&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Stumpf, R.&rsquo;), Person(&lsquo;Scheffler, M.&rsquo;)])]))</p>
+<h2 id="gonze1995"><strong>Gonze1995</strong><a class="headerlink" href="#gonze1995" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Adiabatic density-functional perturbation theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. A&rsquo;), (&lsquo;year&rsquo;, &lsquo;1995&rsquo;), (&lsquo;volume&rsquo;, &lsquo;52&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1096&ndash;1114&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevA.52.1096&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="gonze1997"><strong>Gonze1997</strong><a class="headerlink" href="#gonze1997" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1997&rsquo;), (&lsquo;volume&rsquo;, &lsquo;55&rsquo;), (&lsquo;pages&rsquo;, &lsquo;10337&ndash;10354&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="gonze1997a"><strong>Gonze1997a</strong><a class="headerlink" href="#gonze1997a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;55&rsquo;), (&lsquo;pages&rsquo;, &lsquo;10355&rsquo;), (&lsquo;year&rsquo;, &lsquo;1997&rsquo;), (&lsquo;title&rsquo;, &lsquo;Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Lee, C.&rsquo;)])]))</p>
+<h2 id="gonze2002"><strong>Gonze2002</strong><a class="headerlink" href="#gonze2002" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Comp. Mat. Science&rsquo;), (&lsquo;volume&rsquo;, &lsquo;25&rsquo;), (&lsquo;pages&rsquo;, &lsquo;478&ndash;492&rsquo;), (&lsquo;year&rsquo;, &lsquo;2002&rsquo;), (&lsquo;title&rsquo;, &lsquo;First-principles computation of material properties : the ABINIT software project&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Beuken, J.-M.&rsquo;), Person(&lsquo;Caracas, R.&rsquo;), Person(&lsquo;Detraux, F.&rsquo;), Person(&lsquo;Fuchs, M.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Sindic, L.&rsquo;), Person(&lsquo;Verstraete, M.&rsquo;), Person(&lsquo;Zerah, G.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Roy, A.&rsquo;), Person(&lsquo;Mikami, M.&rsquo;), Person(&lsquo;Ghosez, Ph.&rsquo;), Person(&lsquo;Raty, J.-Y.&rsquo;), Person(&lsquo;Allan, D.C.&rsquo;)])]))</p>
+<h2 id="gonze2005"><strong>Gonze2005</strong><a class="headerlink" href="#gonze2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Zeit. Kristallogr&rsquo;), (&lsquo;volume&rsquo;, &lsquo;220&rsquo;), (&lsquo;pages&rsquo;, &lsquo;558-562&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;title&rsquo;, &lsquo;A brief introduction to the ABINIT software package&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Verstraete, M.&rsquo;), Person(&lsquo;Beuken, J.-M.&rsquo;), Person(&lsquo;Pouillon, Y.&rsquo;), Person(&lsquo;Caracas, R.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Zerah, G.&rsquo;), Person(&lsquo;Mikami, M.&rsquo;), Person(&lsquo;Ghosez, Ph.&rsquo;), Person(&lsquo;Veithen, M.&rsquo;), Person(&lsquo;Raty, J.-Y.&rsquo;), Person(&lsquo;Olevano, V.&rsquo;), Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Reining, L.&rsquo;), Person(&lsquo;Godby, R.&rsquo;), Person(&lsquo;Onida, G.&rsquo;), Person(&lsquo;an D.C. Allan, D.R. Hamann&rsquo;)])]))</p>
+<h2 id="gonze2009"><strong>Gonze2009</strong><a class="headerlink" href="#gonze2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;180&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2582-2615&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;title&rsquo;, &lsquo;{ABINIT}: First-Principle approach to material and nanosystem properties&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Anglade, P.-M.&rsquo;), Person(&lsquo;Beuken, J.-M.&rsquo;), Person(&lsquo;Bottin, F.&rsquo;), Person(&lsquo;Boulanger, P.&rsquo;), Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Caliste, D.&rsquo;), Person(&lsquo;Caracas, R.&rsquo;), Person(&ldquo;C\^{o}t\&lsquo;{e}, M.&rdquo;), Person(&lsquo;Deutsch, T.&rsquo;), Person(&lsquo;Genovese, L.&rsquo;), Person(&lsquo;Ghosez, Ph.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Goedecker, S.&rsquo;), Person(&lsquo;Hamann, D.R.&rsquo;), Person(&lsquo;Hermet, P.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Leroux, S.&rsquo;), Person(&lsquo;Mancini, M.&rsquo;), Person(&lsquo;Mazevet, S.&rsquo;), Person(&lsquo;Oliveira, M.J.T.&rsquo;), Person(&lsquo;Onida, G.&rsquo;), Person(&lsquo;Pouillon, Y.&rsquo;), Person(&lsquo;Rangel, T.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Sangalli, D.&rsquo;), Person(&lsquo;Shaltaf, R.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Verstraete, M.J.&rsquo;), Person(&lsquo;Zerah, G.&rsquo;), Person(&lsquo;Zwanziger, J.W.&rsquo;)])]))</p>
+<h2 id="gonze2011"><strong>Gonze2011</strong><a class="headerlink" href="#gonze2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Annalen der Physik&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;volume&rsquo;, &lsquo;523&rsquo;), (&lsquo;pages&rsquo;, &lsquo;168&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Boulanger, P.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;)])]))</p>
+<h2 id="gonze2016"><strong>Gonze2016</strong><a class="headerlink" href="#gonze2016" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Recent developments in the {ABINIT} software package&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Computer Physics Communications&rsquo;), (&lsquo;volume&rsquo;, &lsquo;205&rsquo;), (&lsquo;pages&rsquo;, &lsquo;106&rsquo;), (&lsquo;year&rsquo;, &lsquo;2016&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0010-4655&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/j.cpc.2016.04.003&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/S0010465516300923&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;Many-Body Perturbation Theory&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Araujo, F. Abreu&rsquo;), Person(&lsquo;Adams, D.&rsquo;), Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Applencourt, T.&rsquo;), Person(&lsquo;Audouze, C.&rsquo;), Person(&lsquo;Beuken, J.-M.&rsquo;), Person(&lsquo;Bieder, J.&rsquo;), Person(&lsquo;Bokhanchuk, A.&rsquo;), Person(&lsquo;Bousquet, E.&rsquo;), Person(&lsquo;Bruneval, F.&rsquo;), Person(&lsquo;Caliste, D.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;), Person(&lsquo;Dahm, F.&rsquo;), Person(&lsquo;Pieve, F. Da&rsquo;), Person(&lsquo;Delaveau, M.&rsquo;), Person(&lsquo;Gennaro, M. Di&rsquo;), Person(&lsquo;Dorado, B.&rsquo;), Person(&lsquo;Espejo, C.&rsquo;), Person(&lsquo;Geneste, G.&rsquo;), Person(&lsquo;Genovese, L.&rsquo;), Person(&lsquo;Gerossier, A.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Gillet, Y.&rsquo;), Person(&lsquo;Hamann, D.R.&rsquo;), Person(&lsquo;He, L.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Janssen, J. Laflamme&rsquo;), Person(&lsquo;Roux, S. Le&rsquo;), Person(&lsquo;Levitt, A.&rsquo;), Person(&lsquo;Lherbier, A.&rsquo;), Person(&lsquo;Liu, F.&rsquo;), Person(&lsquo;Lukacevic, I.&rsquo;), Person(&lsquo;Martin, A.&rsquo;), Person(&lsquo;Martins, C.&rsquo;), Person(&lsquo;Oliveira, M.J.T.&rsquo;), Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Pouillon, Y.&rsquo;), Person(&lsquo;Rangel, T.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Romero, A.H.&rsquo;), Person(&lsquo;Rousseau, B.&rsquo;), Person(&lsquo;Rubel, O.&rsquo;), Person(&lsquo;Shukri, A.A.&rsquo;), Person(&lsquo;Stankovski, M.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Setten, M.J. Van&rsquo;), Person(&lsquo;troeye, B. Van&rsquo;), Person(&lsquo;Verstraete, M.J.&rsquo;), Person(&lsquo;Waroquier, D.&rsquo;), Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Xue, B.&rsquo;), Person(&lsquo;Zhou, A.&rsquo;), Person(&lsquo;Zwanziger, J.W.&rsquo;)])]))</p>
+<h2 id="grimme2006"><strong>Grimme2006</strong><a class="headerlink" href="#grimme2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Comput. Chem.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;27&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1787&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Grimme, S.&rsquo;)])]))</p>
+<h2 id="grimme2010"><strong>Grimme2010</strong><a class="headerlink" href="#grimme2010" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;132&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;154104&rsquo;), (&lsquo;year&rsquo;, &lsquo;2010&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Grimme, S.&rsquo;), Person(&lsquo;Anthony, J.&rsquo;), Person(&lsquo;Ehrlich, S.&rsquo;), Person(&lsquo;Krieg, H.&rsquo;)])]))</p>
+<h2 id="grimme2010a"><strong>Grimme2010a</strong><a class="headerlink" href="#grimme2010a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Effect of the Damping Function in Dispersion Corrected Density Functional Theory&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Comput. Chem.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;32&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1456-1465&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Grimme, S.&rsquo;), Person(&lsquo;Ehrlich, S.&rsquo;), Person(&lsquo;Goerigk, L.&rsquo;)])]))</p>
+<h2 id="grimvall1981"><strong>Grimvall1981</strong><a class="headerlink" href="#grimvall1981" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;book&rsquo;, fields=[(&lsquo;YEAR&rsquo;, &lsquo;1981&rsquo;), (&lsquo;TITLE&rsquo;, &lsquo;The electron phonon interaction in metals&rsquo;), (&lsquo;ADDRESS&rsquo;, &lsquo;Amsterdam&rsquo;), (&lsquo;PUBLISHER&rsquo;, &lsquo;North-Holland&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;AUTHOR&rsquo;, [Person(&lsquo;Grimvall, G.&rsquo;)])]))</p>
+<h2 id="gull2011"><strong>Gull2011</strong><a class="headerlink" href="#gull2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Continuous-time Monte Carlo methods for quantum impurity models&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;volume&rsquo;, &lsquo;83&rsquo;), (&lsquo;pages&rsquo;, &lsquo;349&ndash;404&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Interaction/RevModPhys.83.349-1.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;interaction CTQMC&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/RevModPhys.83.349&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.06.22&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.83.349&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Gull, E.&rsquo;), Person(&lsquo;Millis, A.J.&rsquo;), Person(&lsquo;Liechtenstein, A. I.&rsquo;), Person(&lsquo;Rubtsov, A.N.&rsquo;), Person(&lsquo;Troyer, M.&rsquo;), Person(&lsquo;Werner, P.&rsquo;)])]))</p>
+<h2 id="hamann1979"><strong>Hamann1979</strong><a class="headerlink" href="#hamann1979" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Norm-Conserving Pseudopotentials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1979&rsquo;), (&lsquo;volume&rsquo;, &lsquo;43&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1494&ndash;1497&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.43.1494&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;3&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hamann, D.R.&rsquo;), Person(&lsquo;Schl\&ldquo;uter, M.&rsquo;), Person(&lsquo;Chiang, C.&rsquo;)])]))</p>
+<h2 id="hamann1989"><strong>Hamann1989</strong><a class="headerlink" href="#hamann1989" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Generalized norm-conserving pseudopotentials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;40&rsquo;), (&lsquo;issue&rsquo;, &lsquo;5&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2980&ndash;2987&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1989&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.40.2980&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hamann, D. R.&rsquo;)])]))</p>
+<h2 id="hamann2005"><strong>Hamann2005</strong><a class="headerlink" href="#hamann2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Metric tensor formulation of strain in density-functional perturbation theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;71&rsquo;), (&lsquo;pages&rsquo;, &lsquo;035117&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hamann, D. R.&rsquo;), Person(&lsquo;Wu, X.&rsquo;), Person(&lsquo;Rabe, K. M.&rsquo;), Person(&lsquo;Vanderbilt, D.&rsquo;)])]))</p>
+<h2 id="hamann2013"><strong>Hamann2013</strong><a class="headerlink" href="#hamann2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Optimized norm-conserving Vanderbilt pseudopotentials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;88&rsquo;), (&lsquo;issue&rsquo;, &lsquo;8&rsquo;), (&lsquo;pages&rsquo;, &lsquo;085117&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;10&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.88.085117&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hamann, D. R.&rsquo;)])]))</p>
+<h2 id="harju2013"><strong>Harju2013</strong><a class="headerlink" href="#harju2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Computational Physics on Graphics Processing Units&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Lecture Notes in Computer Science&rsquo;), (&lsquo;volume&rsquo;, &lsquo;7782&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3&ndash;26&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Harju, A.&rsquo;), Person(&lsquo;Siro, T.&rsquo;), Person(&lsquo;Federici Canova, F.&rsquo;), Person(&lsquo;Hakala, S.&rsquo;), Person(&lsquo;Rantalaiho, T.&rsquo;)])]))</p>
+<h2 id="harl2010"><strong>Harl2010</strong><a class="headerlink" href="#harl2010" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;81&rsquo;), (&lsquo;issue&rsquo;, &lsquo;11&rsquo;), (&lsquo;pages&rsquo;, &lsquo;115126&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;18&rsquo;), (&lsquo;year&rsquo;, &lsquo;2010&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.81.115126&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Harl, J.&rsquo;), Person(&lsquo;Schimka, L.&rsquo;), Person(&lsquo;Kresse, G.&rsquo;)])]))</p>
+<h2 id="hartwigsen1998"><strong>Hartwigsen1998</strong><a class="headerlink" href="#hartwigsen1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n&rsquo;), (&lsquo;volume&rsquo;, &lsquo;58&rsquo;), (&lsquo;number&rsquo;, &lsquo;7&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1998&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3641&ndash;3662&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hartwigsen, C.&rsquo;), Person(&lsquo;Goedecker, S.&rsquo;), Person(&lsquo;H\&ldquo;utter, J.&rsquo;)])]))</p>
+<h2 id="haydock1980"><strong>Haydock1980</strong><a class="headerlink" href="#haydock1980" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;The recursive solution of the {S}chr\&ldquo;{o}dinger equation&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;20&rsquo;), (&lsquo;number&rsquo;, &lsquo;1&rsquo;), (&lsquo;pages&rsquo;, &lsquo;11 - 16&rsquo;), (&lsquo;year&rsquo;, &lsquo;1980&rsquo;), (&lsquo;note&rsquo;, &lsquo;&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0010-4655&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/0010-4655(80)90101-0&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/0010465580901010&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Haydock, R.&rsquo;)])]))</p>
+<h2 id="he2014"><strong>He2014</strong><a class="headerlink" href="#he2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;064305&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.89.064305&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2014&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;He, L.&rsquo;), Person(&lsquo;Liu, F.&rsquo;), Person(&lsquo;Hautier, G.&rsquo;), Person(&lsquo;Oliveira, M. J. T.&rsquo;), Person(&lsquo;Marques, M. A. L.&rsquo;), Person(&lsquo;Vila, F. D.&rsquo;), Person(&lsquo;Rehr, J. J.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Zhou, A.&rsquo;)])]))</p>
+<h2 id="hedin1965"><strong>Hedin1965</strong><a class="headerlink" href="#hedin1965" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &ldquo;New Method for Calculating the One-Particle Green&rsquo;s Function with Application to the Electron-Gas Problem&rdquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. A&rsquo;), (&lsquo;volume&rsquo;, &lsquo;139&rsquo;), (&lsquo;pages&rsquo;, &lsquo;796&rsquo;), (&lsquo;year&rsquo;, &lsquo;1965&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hedin, L.&rsquo;)])]))</p>
+<h2 id="hellwege1985"><strong>Hellwege1985</strong><a class="headerlink" href="#hellwege1985" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;book&rsquo;, fields=[(&lsquo;Date-Added&rsquo;, &lsquo;2014-02-21 11:07:18 +0000&rsquo;), (&lsquo;Date-Modified&rsquo;, &lsquo;2014-03-04 10:21:33 +0000&rsquo;), (&lsquo;Publisher&rsquo;, &lsquo;Springer&rsquo;), (&lsquo;Address&rsquo;, &lsquo;Berlin Heidelberg&rsquo;), (&lsquo;Title&rsquo;, &lsquo;Electrical Resistivity, Thermoelectrical Power and Optical Properties&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;15b&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1985&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Hellwege, K.-H.&rsquo;), Person(&lsquo;Olsen, J.L. (Eds.)&rsquo;)])]))</p>
+<h2 id="henkelman2000"><strong>Henkelman2000</strong><a class="headerlink" href="#henkelman2000" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points&rsquo;), (&lsquo;journal&rsquo;, &lsquo;The Journal of chemical physics&rsquo;), (&lsquo;volume&rsquo;, &lsquo;113&rsquo;), (&lsquo;number&rsquo;, &lsquo;22&rsquo;), (&lsquo;pages&rsquo;, &lsquo;9978&ndash;9985&rsquo;), (&lsquo;year&rsquo;, &lsquo;2000&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;AIP Publishing&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Henkelman, G.&rsquo;), Person(&ldquo;J{\&lsquo;o}nsson, H.&rdquo;)])]))</p>
+<h2 id="hermet2009"><strong>Hermet2009</strong><a class="headerlink" href="#hermet2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Phys. : Condens. Matter&rsquo;), (&lsquo;volume&rsquo;, &lsquo;21&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;215901&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1088/0953-8984/21/21/215901&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hermet, P.&rsquo;), Person(&lsquo;Veithen, M.&rsquo;), Person(&lsquo;Ghosez, P.&rsquo;)])]))</p>
+<h2 id="hohenberg1964"><strong>Hohenberg1964</strong><a class="headerlink" href="#hohenberg1964" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Inhomogeneous Electron Gas&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;136&rsquo;), (&lsquo;number&rsquo;, &lsquo;3B&rsquo;), (&lsquo;pages&rsquo;, &lsquo;B864&ndash;B871&rsquo;), (&lsquo;year&rsquo;, &lsquo;1964&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRev.136.B864&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Hohenberg, P.&rsquo;), Person(&lsquo;Kohn, W.&rsquo;)])]))</p>
+<h2 id="holzwarth2001"><strong>Holzwarth2001</strong><a class="headerlink" href="#holzwarth2001" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;135&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;329&rsquo;), (&lsquo;year&rsquo;, &lsquo;2001&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Holzwarth, N.A.W.&rsquo;), Person(&lsquo;Tackett, A.R.&rsquo;), Person(&lsquo;Matthews, G.E.&rsquo;)])]))</p>
+<h2 id="hughes1996"><strong>Hughes1996</strong><a class="headerlink" href="#hughes1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Calculation of second-order optical response in semiconductors&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1996&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;10751&ndash;10763&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;53&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevB.53.10751&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;Owner&rsquo;, &lsquo;yannick&rsquo;), (&lsquo;Publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;Timestamp&rsquo;, &lsquo;2015.11.12&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Hughes, J. L. P.&rsquo;), Person(&lsquo;Sipe, J. E.&rsquo;)])]))</p>
+<h2 id="janssen2015"><strong>Janssen2015</strong><a class="headerlink" href="#janssen2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}<script type="math/tex">_0</script>{W}<script type="math/tex">_0</script> implementations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;volume&rsquo;, &lsquo;91&rsquo;), (&lsquo;number&rsquo;, &lsquo;12&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125120&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.91.125120&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Laflamme Janssen, J.&rsquo;), Person(&lsquo;Rousseau, B.&rsquo;), Person(&ldquo;C{\^o}t{\&lsquo;e}, M.&rdquo;)])]))</p>
+<h2 id="jollet2009"><strong>Jollet2009</strong><a class="headerlink" href="#jollet2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;80&rsquo;), (&lsquo;pages&rsquo;, &lsquo;235109&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;title&rsquo;, &lsquo;Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Amadon, B.&rsquo;), Person(&lsquo;Crocombette, J.P.&rsquo;), Person(&lsquo;Torumba, D.&rsquo;)])]))</p>
+<h2 id="jollet2014"><strong>Jollet2014</strong><a class="headerlink" href="#jollet2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;185&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1246-1254&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;title&rsquo;, &lsquo;Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Jollet, F.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Holzwarth, N.&rsquo;)])]))</p>
+<h2 id="kawasuso2005"><strong>Kawasuso2005</strong><a class="headerlink" href="#kawasuso2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;72&rsquo;), (&lsquo;number&rsquo;, &lsquo;4&rsquo;), (&lsquo;pages&rsquo;, &lsquo;045204&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Kawasuso, A.&rsquo;), Person(&lsquo;Yoshikawa, M.&rsquo;), Person(&lsquo;Itoh, H.&rsquo;), Person(&lsquo;Chiba, T.&rsquo;), Person(&lsquo;Higuchi, T.&rsquo;), Person(&lsquo;Betsuyaku, K.&rsquo;), Person(&lsquo;Redmann, F.&rsquo;), Person(&lsquo;Krause-Rehberg, R.&rsquo;)])]))</p>
+<h2 id="kingsmith1993"><strong>Kingsmith1993</strong><a class="headerlink" href="#kingsmith1993" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Theory of polarization of crystalline solids&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;47&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1651&ndash;1654&rsquo;), (&lsquo;year&rsquo;, &lsquo;1993&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;King-Smith, R. D.&rsquo;), Person(&lsquo;Vanderbilt, D.&rsquo;)])]))</p>
+<h2 id="kohn1965"><strong>Kohn1965</strong><a class="headerlink" href="#kohn1965" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Self-Consistent Equations Including Exchange and Correlation Effects&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;140&rsquo;), (&lsquo;number&rsquo;, &lsquo;4A&rsquo;), (&lsquo;pages&rsquo;, &lsquo;A1133&ndash;A1138&rsquo;), (&lsquo;year&rsquo;, &lsquo;1965&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRev.140.A1133&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Kohn, W.&rsquo;), Person(&lsquo;Sham, L. J.&rsquo;)])]))</p>
+<h2 id="kolos1960"><strong>Kolos1960</strong><a class="headerlink" href="#kolos1960" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Accurate Electronic Wave Functions for the H<script type="math/tex">_2</script> Molecule&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;32&rsquo;), (&lsquo;pages&rsquo;, &lsquo;219&rsquo;), (&lsquo;year&rsquo;, &lsquo;1960&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Kolos, W.&rsquo;), Person(&lsquo;Roothaan, C.C.J.&rsquo;)])]))</p>
+<h2 id="kotliar2006"><strong>Kotliar2006</strong><a class="headerlink" href="#kotliar2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electronic structure calculations with dynamical mean-field theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;volume&rsquo;, &lsquo;78&rsquo;), (&lsquo;pages&rsquo;, &lsquo;865&ndash;951&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Review/RMP2006.pdf:PDF&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/RevModPhys.78.865&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.07.13&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.78.865&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Kotliar, G.&rsquo;), Person(&lsquo;Savrasov, S. Y.&rsquo;), Person(&lsquo;Haule, K.&rsquo;), Person(&lsquo;Oudovenko, V. S.&rsquo;), Person(&lsquo;Parcollet, O.&rsquo;), Person(&lsquo;Marianetti, C. A.&rsquo;)])]))</p>
+<h2 id="laflamme2016"><strong>Laflamme2016</strong><a class="headerlink" href="#laflamme2016" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Title&rsquo;, &lsquo;Precise Effective Masses from Density Functional Perturbation Theory&rsquo;), (&lsquo;year&rsquo;, &lsquo;2016&rsquo;), (&lsquo;pages&rsquo;, &lsquo;205147&rsquo;), (&lsquo;volume&rsquo;, &lsquo;93&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Laflamme Janssen, J.&rsquo;), Person(&lsquo;Gillet, Y.&rsquo;), Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Martin, A.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="lebegue2010"><strong>Lebegue2010</strong><a class="headerlink" href="#lebegue2010" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;Title&rsquo;, &lsquo;Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation&rsquo;), (&lsquo;year&rsquo;, &lsquo;2010&rsquo;), (&lsquo;pages&rsquo;, &lsquo;196401&rsquo;), (&lsquo;volume&rsquo;, &lsquo;105&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Leb\`egue, S.&rsquo;), Person(&lsquo;Harl, J.&rsquo;), Person(&lsquo;Gould, T.&rsquo;), Person(&ldquo;\&lsquo;Angy\&lsquo;an, J. G.&rdquo;), Person(&lsquo;Kresse, G.&rsquo;), Person(&lsquo;Dobson, J. F.&rsquo;)])]))</p>
+<h2 id="lee1995"><strong>Lee1995</strong><a class="headerlink" href="#lee1995" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO<script type="math/tex">_2</script>
+<script type="math/tex">\\alpha</script>-quartz and stishovite&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;51&rsquo;), (&lsquo;pages&rsquo;, &lsquo;8610&rsquo;), (&lsquo;year&rsquo;, &lsquo;1995&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Lee, C.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="lejaeghere2014"><strong>Lejaeghere2014</strong><a class="headerlink" href="#lejaeghere2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Crit. Rev. Solid State Mater. Sci.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;39&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Lejaeghere, K.&rsquo;), Person(&lsquo;{V}an {S}peybroeck, V.&rsquo;), Person(&lsquo;{V}an {O}ost, G.&rsquo;), Person(&lsquo;Cottenier, S.&rsquo;)])]))</p>
+<h2 id="levitt2015"><strong>Levitt2015</strong><a class="headerlink" href="#levitt2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Parallel eigensolvers in plane-wave Density Functional Theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;187&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;98&ndash;105&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Levitt, A.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;)])]))</p>
+<h2 id="liechtenstein1995"><strong>Liechtenstein1995</strong><a class="headerlink" href="#liechtenstein1995" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;1995&rsquo;), (&lsquo;volume&rsquo;, &lsquo;52&rsquo;), (&lsquo;pages&rsquo;, &lsquo;R5467&ndash;R5470&rsquo;), (&lsquo;number&rsquo;, &lsquo;8&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.52.R5467.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;interaction, LDA+U GGA+U DFT+U&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.52.R5467&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.06.14&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.52.R5467&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Liechtenstein, A. I.&rsquo;), Person(&lsquo;Anisimov, V. I.&rsquo;), Person(&lsquo;Zaanen, J.&rsquo;)])]))</p>
+<h2 id="lindhard1954"><strong>Lindhard1954</strong><a class="headerlink" href="#lindhard1954" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;On the properties of a gas of charged particles&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Mat. Fys. Medd. Dan. Vid. Selsk.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1954&rsquo;), (&lsquo;volume&rsquo;, &lsquo;28&rsquo;), (&lsquo;pages&rsquo;, &lsquo;8&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Lindhard, J.&rsquo;)])]))</p>
+<h2 id="luttinger1955"><strong>Luttinger1955</strong><a class="headerlink" href="#luttinger1955" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;{Motion of Electrons and Holes in Perturbed Periodic Fields}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1955&rsquo;), (&lsquo;volume&rsquo;, &lsquo;97&rsquo;), (&lsquo;number&rsquo;, &lsquo;4&rsquo;), (&lsquo;pages&rsquo;, &lsquo;869&ndash;883&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRev.97.869&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Luttinger, J.M.&rsquo;), Person(&lsquo;Kohn, W.&rsquo;)])]))</p>
+<h2 id="ma2015"><strong>Ma2015</strong><a class="headerlink" href="#ma2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Constrained density functional for noncollinear magnetism&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;91&rsquo;), (&lsquo;issue&rsquo;, &lsquo;5&rsquo;), (&lsquo;pages&rsquo;, &lsquo;054420&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;11&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Ma, Pui-Wai&rsquo;), Person(&lsquo;Dudarev, S. L.&rsquo;)])]))</p>
+<h2 id="maintz2012"><strong>Maintz2012</strong><a class="headerlink" href="#maintz2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Speeding up plane-wave electronic-structure calculations using graphics-processing units&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;182&rsquo;), (&lsquo;number&rsquo;, &lsquo;7&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1421&ndash;1427&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Maintz, S.&rsquo;), Person(&lsquo;Eck, B.&rsquo;), Person(&lsquo;Dronskowski, R.&rsquo;)])]))</p>
+<h2 id="marek2014"><strong>Marek2014</strong><a class="headerlink" href="#marek2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Phys.: Cond. Matt.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;26&rsquo;), (&lsquo;number&rsquo;, &lsquo;21&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1&ndash;15&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Marek, A.&rsquo;), Person(&lsquo;Blum, V.&rsquo;), Person(&lsquo;Johanni, R.&rsquo;), Person(&lsquo;Havu, V.&rsquo;), Person(&lsquo;Lang, B.&rsquo;), Person(&lsquo;Auckenthaler, T.&rsquo;), Person(&lsquo;Heinecke, A.&rsquo;), Person(&lsquo;Bungartz, H.-J.&rsquo;), Person(&lsquo;Lederer, H.&rsquo;)])]))</p>
+<h2 id="marques2012"><strong>Marques2012</strong><a class="headerlink" href="#marques2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;doi&rsquo;, &lsquo;10.1016/j.cpc.2012.05.007&rsquo;), (&lsquo;issn&rsquo;, &lsquo;00104655&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comput. Phys. Commun.&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2272&ndash;2281&rsquo;), (&lsquo;title&rsquo;, &lsquo;{Libxc: A library of exchange and correlation functionals for density functional theory}&rsquo;), (&lsquo;volume&rsquo;, &lsquo;183&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Marques, M. A. L.&rsquo;), Person(&lsquo;Oliveira, M. J. T.&rsquo;), Person(&lsquo;Burnus, T.&rsquo;)])]))</p>
+<h2 id="marx1996"><strong>Marx1996</strong><a class="headerlink" href="#marx1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Ab initio path integral molecular dynamics: Basic ideas&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;104&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;4077&rsquo;), (&lsquo;year&rsquo;, &lsquo;1996&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Marx, D.&rsquo;), Person(&lsquo;Parrinello, M.&rsquo;)])]))</p>
+<h2 id="mecholsky2014"><strong>Mecholsky2014</strong><a class="headerlink" href="#mecholsky2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;{Theory of band warping and its effects on thermoelectronic transport properties}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;number&rsquo;, &lsquo;15&rsquo;), (&lsquo;pages&rsquo;, &lsquo;155131&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.89.155131&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Mecholsky, N.A.&rsquo;), Person(&lsquo;Resca, L.&rsquo;), Person(&lsquo;Pegg, I.L.&rsquo;), Person(&lsquo;Fornari, M.&rsquo;)])]))</p>
+<h2 id="medeiros2014"><strong>Medeiros2014</strong><a class="headerlink" href="#medeiros2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;041407&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;89&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Medeiros, Paulo V. C.&rsquo;), Person(&lsquo;Stafstr\&ldquo;om, Sven&rsquo;), Person(&lsquo;Bj\&ldquo;ork, Jonas&rsquo;)])]))</p>
+<h2 id="methfessel1989"><strong>Methfessel1989</strong><a class="headerlink" href="#methfessel1989" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;High-precision sampling for Brillouin-Zone integration in metals&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;40&rsquo;), (&lsquo;pages&rsquo;, &lsquo;3616&rsquo;), (&lsquo;year&rsquo;, &lsquo;1989&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Methfessel, M.&rsquo;), Person(&lsquo;Paxton, T.&rsquo;)])]))</p>
+<h2 id="mills1994"><strong>Mills1994</strong><a class="headerlink" href="#mills1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Quantum and thermal effects in H<script type="math/tex">_2</script> dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;72&rsquo;), (&lsquo;number&rsquo;, &lsquo;7&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1124&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Mills, G.&rsquo;), Person(&ldquo;J{\&lsquo;o}nsson, H.&rdquo;)])]))</p>
+<h2 id="momma2011"><strong>Momma2011</strong><a class="headerlink" href="#momma2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Appl. Crystallogr.&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;Number&rsquo;, &lsquo;6&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1272&ndash;1276&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;44&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Momma, K.&rsquo;), Person(&lsquo;Izumi, F.&rsquo;)])]))</p>
+<h2 id="moscaconte2007"><strong>Moscaconte2007</strong><a class="headerlink" href="#moscaconte2007" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;phdthesis&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Quantum mechanical modeling of nano magnetism&rsquo;), (&lsquo;school&rsquo;, &lsquo;SISSA&rsquo;), (&lsquo;year&rsquo;, &lsquo;2007&rsquo;), (&lsquo;address&rsquo;, &lsquo;Trieste Italy&rsquo;), (&lsquo;optURI&rsquo;, &lsquo;http://hdl.handle.net/20.500.11767/3935&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Mosca Conte, A.&rsquo;)])]))</p>
+<h2 id="nieminen1985"><strong>Nieminen1985</strong><a class="headerlink" href="#nieminen1985" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Two-component density-functional theory: Application to positron states&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;32&rsquo;), (&lsquo;issue&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1377&rsquo;), (&lsquo;year&rsquo;, &lsquo;1985&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.32.1377&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Nieminen, R. M.&rsquo;), Person(&ldquo;Boro\&lsquo;nski, E.&rdquo;), Person(&lsquo;Lantto, L. J.&rsquo;)])]))</p>
+<h2 id="nunes2001"><strong>Nunes2001</strong><a class="headerlink" href="#nunes2001" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Berry-phase treatment of the homogeneous electric field perturbation in insulators&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;63&rsquo;), (&lsquo;number&rsquo;, &lsquo;15&rsquo;), (&lsquo;pages&rsquo;, &lsquo;155107&rsquo;), (&lsquo;year&rsquo;, &lsquo;2001&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Nunes, R. W.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="ong2013"><strong>Ong2013</strong><a class="headerlink" href="#ong2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Mat. Sci.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;68&rsquo;), (&lsquo;number&rsquo;, &lsquo;0&rsquo;), (&lsquo;pages&rsquo;, &lsquo;314 - 319&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;note&rsquo;, &lsquo;&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0927-0256&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/j.commatsci.2012.10.028&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/S0927025612006295&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;High-throughput&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Ong, S.P.&rsquo;), Person(&lsquo;Richards, W.D.&rsquo;), Person(&lsquo;Jain, A.&rsquo;), Person(&lsquo;Hautier, G.&rsquo;), Person(&lsquo;Kocher, M.&rsquo;), Person(&lsquo;Cholia, S.&rsquo;), Person(&lsquo;Gunter, D.&rsquo;), Person(&lsquo;Chevrier, V.L.&rsquo;), Person(&lsquo;Persson, K.A.&rsquo;), Person(&lsquo;Ceder, G.&rsquo;)])]))</p>
+<h2 id="onida2002"><strong>Onida2002</strong><a class="headerlink" href="#onida2002" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &ldquo;Electronic excitations: density-functional versus many-body Green&rsquo;s-function approaches&rdquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2002&rsquo;), (&lsquo;volume&rsquo;, &lsquo;74&rsquo;), (&lsquo;pages&rsquo;, &lsquo;601&ndash;659&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.74.601&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;58&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Onida, G.&rsquo;), Person(&lsquo;Reining, L.&rsquo;), Person(&lsquo;Rubio, A.&rsquo;)])]))</p>
+<h2 id="payne1992"><strong>Payne1992</strong><a class="headerlink" href="#payne1992" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;64&rsquo;), (&lsquo;issue&rsquo;, &lsquo;4&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1045&ndash;1097&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1992&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.64.1045&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Payne, M. C.&rsquo;), Person(&lsquo;Teter, M. P.&rsquo;), Person(&lsquo;Allan, D. C.&rsquo;), Person(&lsquo;Arias, T. A.&rsquo;), Person(&lsquo;Joannopoulos, J. D.&rsquo;)])]))</p>
+<h2 id="perdew1981"><strong>Perdew1981</strong><a class="headerlink" href="#perdew1981" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Self-interaction correction to density-functional approximations for many-electron systems&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;23&rsquo;), (&lsquo;pages&rsquo;, &lsquo;5048&rsquo;), (&lsquo;year&rsquo;, &lsquo;1981&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Perdew, J.P.&rsquo;), Person(&lsquo;Zunger, A.&rsquo;)])]))</p>
+<h2 id="perrot1979"><strong>Perrot1979</strong><a class="headerlink" href="#perrot1979" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. A&rsquo;), (&lsquo;volume&rsquo;, &lsquo;20&rsquo;), (&lsquo;pages&rsquo;, &lsquo;586-594&rsquo;), (&lsquo;year&rsquo;, &lsquo;1979&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Perrot, F.&rsquo;)])]))</p>
+<h2 id="pickett1988"><strong>Pickett1988</strong><a class="headerlink" href="#pickett1988" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Smooth Fourier interpolation of periodic functions&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;38&rsquo;), (&lsquo;pages&rsquo;, &lsquo;2721&rsquo;), (&lsquo;year&rsquo;, &lsquo;1988&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Warren E. Pickett, Henry Krakauer,&rsquo;), Person(&lsquo;Allen, Philip B.&rsquo;)])]))</p>
+<h2 id="ponce2014"><strong>Ponce2014</strong><a class="headerlink" href="#ponce2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron&ndash;phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Mat. Sci.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;83&rsquo;), (&lsquo;pages&rsquo;, &lsquo;341 - 348&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Antonius, G.&rsquo;), Person(&lsquo;Boulanger, P.&rsquo;), Person(&lsquo;Cannuccia, E.&rsquo;), Person(&lsquo;Marini, A.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="ponce2014a"><strong>Ponce2014a</strong><a class="headerlink" href="#ponce2014a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;volume&rsquo;, &lsquo;90&rsquo;), (&lsquo;pages&rsquo;, &lsquo;214304&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Antonius, G.&rsquo;), Person(&lsquo;Gillet, Y.&rsquo;), Person(&lsquo;Boulanger, P.&rsquo;), Person(&lsquo;Laflamme Janssen, J.&rsquo;), Person(&lsquo;Marini, A.&rsquo;), Person(&ldquo;C\^ot\&lsquo;e, M.&rdquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="ponce2015"><strong>Ponce2015</strong><a class="headerlink" href="#ponce2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Temperature dependence of the electronic structure of semiconductors and insulators&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;volume&rsquo;, &lsquo;143&rsquo;), (&lsquo;pages&rsquo;, &lsquo;102813&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Gillet, Y.&rsquo;), Person(&lsquo;Laflamme Janssen, J.&rsquo;), Person(&lsquo;Marini, A.&rsquo;), Person(&lsquo;Verstraete, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="popescu2010"><strong>Popescu2010</strong><a class="headerlink" href="#popescu2010" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Effective Band Structure of Random Alloys&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2010&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;236403&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;104&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Popescu, V.&rsquo;), Person(&lsquo;Zunger, A.&rsquo;)])]))</p>
+<h2 id="popescu2012"><strong>Popescu2012</strong><a class="headerlink" href="#popescu2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Extracting E versus k effective band structure from supercell calculations on alloys and impurities&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2012&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;085201&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;85&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Popescu, V.&rsquo;), Person(&lsquo;Zunger, A.&rsquo;)])]))</p>
+<h2 id="pouillon2011"><strong>Pouillon2011</strong><a class="headerlink" href="#pouillon2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Organizing software growth and distributed development: the case of {ABINIT}&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Comput. Sci. Eng.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;13&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;62&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Pouillon, Y.&rsquo;), Person(&lsquo;Beuken, J. -M.&rsquo;), Person(&lsquo;Deutsch, T.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="puska1994"><strong>Puska1994</strong><a class="headerlink" href="#puska1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Theory of positrons in solids and on solid surfaces&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;66&rsquo;), (&lsquo;issue&rsquo;, &lsquo;3&rsquo;), (&lsquo;pages&rsquo;, &lsquo;841&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.66.841&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Puska, M. J.&rsquo;), Person(&lsquo;Nieminen, R. M.&rsquo;)])]))</p>
+<h2 id="puska1995"><strong>Puska1995</strong><a class="headerlink" href="#puska1995" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;52&rsquo;), (&lsquo;issue&rsquo;, &lsquo;15&rsquo;), (&lsquo;pages&rsquo;, &lsquo;10947&rsquo;), (&lsquo;year&rsquo;, &lsquo;1995&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.52.10947&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Puska, M. J.&rsquo;), Person(&lsquo;Seitsonen, A. P.&rsquo;), Person(&lsquo;Nieminen, R. M.&rsquo;)])]))</p>
+<h2 id="rangel2016"><strong>Rangel2016</strong><a class="headerlink" href="#rangel2016" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set&rsquo;), (&lsquo;volume&rsquo;, &lsquo;208&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Computer Physics Communication&rsquo;), (&lsquo;year&rsquo;, &lsquo;2016&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1-8&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Rangel, T.&rsquo;), Person(&lsquo;Caliste, D.&rsquo;), Person(&lsquo;Genovese, L.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;)])]))</p>
+<h2 id="rappe1990"><strong>Rappe1990</strong><a class="headerlink" href="#rappe1990" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Optimized pseudopotentials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;41&rsquo;), (&lsquo;issue&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1227&ndash;1230&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;1990&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.41.1227&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Rappe, A.M.&rsquo;), Person(&lsquo;Rabe, K.M.&rsquo;), Person(&lsquo;Kaxiras, E.S.&rsquo;), Person(&lsquo;Joannopoulos, J.D.&rsquo;)])]))</p>
+<h2 id="rauch2011"><strong>Rauch2011</strong><a class="headerlink" href="#rauch2011" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;84&rsquo;), (&lsquo;number&rsquo;, &lsquo;12&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125201&rsquo;), (&lsquo;year&rsquo;, &lsquo;2011&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Rauch, C.&rsquo;), Person(&lsquo;Makkonen, I.&rsquo;), Person(&lsquo;Tuomisto, F.&rsquo;)])]))</p>
+<h2 id="resta1994"><strong>Resta1994</strong><a class="headerlink" href="#resta1994" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Macroscopic polarization in crystalline dielectrics: the geometric phase approach&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;66&rsquo;), (&lsquo;pages&rsquo;, &lsquo;899&ndash;915&rsquo;), (&lsquo;year&rsquo;, &lsquo;1994&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Resta, R.&rsquo;)])]))</p>
+<h2 id="restrepo2009"><strong>Restrepo2009</strong><a class="headerlink" href="#restrepo2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering&rsquo;), (&lsquo;journal&rsquo;, &lsquo;App. Phys. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;volume&rsquo;, &lsquo;94&rsquo;), (&lsquo;number&rsquo;, &lsquo;21&rsquo;), (&lsquo;eid&rsquo;, &lsquo;212103&rsquo;), (&lsquo;pages&rsquo;, &lsquo;&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1063/1.3147189&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Restrepo, O. D.&rsquo;), Person(&lsquo;Varga, K.&rsquo;), Person(&lsquo;Pantelides, S. T.&rsquo;)])]))</p>
+<h2 id="rieger1999"><strong>Rieger1999</strong><a class="headerlink" href="#rieger1999" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;The {GW} space-time method for the self-energy of large systems&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comp. Phys. Comm.&rsquo;), (&lsquo;year&rsquo;, &lsquo;1999&rsquo;), (&lsquo;volume&rsquo;, &lsquo;117&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;pages&rsquo;, &lsquo;211&ndash;228&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/S0010-4655(98)00174-X&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Rieger, M.&rsquo;), Person(&lsquo;Steinbeck, L.&rsquo;), Person(&lsquo;White, I. D.&rsquo;), Person(&lsquo;Rojas, H. N.&rsquo;), Person(&lsquo;Godby, R. W.&rsquo;)])]))</p>
+<h2 id="rohlfing2000"><strong>Rohlfing2000</strong><a class="headerlink" href="#rohlfing2000" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Electron-hole excitations and optical spectra from first principles&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2000&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;4927&ndash;4944&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;62&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevB.62.4927&rsquo;), (&lsquo;File&rsquo;, &lsquo;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;8&rsquo;), (&lsquo;Publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Rohlfing, M.&rsquo;), Person(&lsquo;Louie, S.G.&rsquo;)])]))</p>
+<h2 id="romanperez2009"><strong>Romanperez2009</strong><a class="headerlink" href="#romanperez2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;103&rsquo;), (&lsquo;pages&rsquo;, &lsquo;096102&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.103.096102&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Rom\&lsquo;an-P\&lsquo;erez, G.&rdquo;), Person(&lsquo;Soler, J.M.&rsquo;)])]))</p>
+<h2 id="rostgaard2006"><strong>Rostgaard2006</strong><a class="headerlink" href="#rostgaard2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;mastersthesis&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Exact exchange in density functional calculations&rsquo;), (&lsquo;School&rsquo;, &lsquo;Technical University of Denmark&rsquo;), (&lsquo;Address&rsquo;, &lsquo;Lyngby&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;url&rsquo;, &lsquo;https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Rostgaard, C.&rsquo;)])]))</p>
+<h2 id="rubel2014"><strong>Rubel2014</strong><a class="headerlink" href="#rubel2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;115202&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;90&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Rubel, O.&rsquo;), Person(&lsquo;Bokhanchuk, A.&rsquo;), Person(&lsquo;Ahmed, S. J.&rsquo;), Person(&lsquo;Assmann, E.&rsquo;)])]))</p>
+<h2 id="rutishauser1970"><strong>Rutishauser1970</strong><a class="headerlink" href="#rutishauser1970" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Simultaneous iteration method for symmetric matrices&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Numerische Mathematik&rsquo;), (&lsquo;volume&rsquo;, &lsquo;16&rsquo;), (&lsquo;number&rsquo;, &lsquo;3&rsquo;), (&lsquo;pages&rsquo;, &lsquo;205&ndash;223&rsquo;), (&lsquo;year&rsquo;, &lsquo;1970&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Springer&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Rutishauser, H.&rsquo;)])]))</p>
+<h2 id="sakuma2013"><strong>Sakuma2013</strong><a class="headerlink" href="#sakuma2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;volume&rsquo;, &lsquo;87&rsquo;), (&lsquo;pages&rsquo;, &lsquo;165118&rsquo;), (&lsquo;number&rsquo;, &lsquo;16&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.87.165118.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;cRPA&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.87.165118&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2013.06.04&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.87.165118&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Sakuma, R.&rsquo;), Person(&lsquo;Aryasetiawan, F.&rsquo;)])]))</p>
+<h2 id="savin1992"><strong>Savin1992</strong><a class="headerlink" href="#savin1992" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electron Localization in Solid-State Structures of the Elements: the Diamond Structure&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Angewandte Chemie International Edition in English&rsquo;), (&lsquo;volume&rsquo;, &lsquo;31&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1002/anie.199201871&rsquo;), (&lsquo;pages&rsquo;, &lsquo;187&ndash;188&rsquo;), (&lsquo;year&rsquo;, &lsquo;1992&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Savin, A.&rsquo;), Person(&lsquo;Jepsen, O.&rsquo;), Person(&lsquo;Flad, J.&rsquo;), Person(&lsquo;Andersen, O. K.&rsquo;), Person(&lsquo;Preuss, H.&rsquo;), Person(&lsquo;von Schnering, H. G.&rsquo;)])]))</p>
+<h2 id="savrasov1996"><strong>Savrasov1996</strong><a class="headerlink" href="#savrasov1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;PAGES&rsquo;, &lsquo;16487&rsquo;), (&lsquo;YEAR&rsquo;, &lsquo;1996&rsquo;), (&lsquo;TITLE&rsquo;, &lsquo;Electron-phonon interactions and related physical properties of metals from linear-response theory&rsquo;), (&lsquo;VOLUME&rsquo;, &lsquo;54&rsquo;), (&lsquo;JOURNAL&rsquo;, &lsquo;Phys. Rev. B&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;AUTHOR&rsquo;, [Person(&lsquo;Savrasov, S.Y.&rsquo;), Person(&lsquo;Savrasov, D.Y.&rsquo;)])]))</p>
+<h2 id="sharma2003"><strong>Sharma2003</strong><a class="headerlink" href="#sharma2003" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Linear and second-order optical response of {III}-{V} monolayer superlattices&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2003&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;165332&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;67&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevB.67.165332&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;Url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevB.67.165332&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Sharma, S.&rsquo;), Person(&lsquo;Dewhurst, J. K.&rsquo;), Person(&lsquo;Ambrosch-Draxl, C.&rsquo;)])]))</p>
+<h2 id="sharma2004"><strong>Sharma2004</strong><a class="headerlink" href="#sharma2004" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;{S}econd-{H}armonic Optical Response from First Principles&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Scripta&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2004&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;128&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;2004&rsquo;), (&lsquo;Url&rsquo;, &lsquo;http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Sharma, S.&rsquo;), Person(&lsquo;{A}mbrosch-{D}raxl, C.&rsquo;)])]))</p>
+<h2 id="shih2012"><strong>Shih2012</strong><a class="headerlink" href="#shih2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Screened Coulomb interaction of localized electrons in solids from first principles&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;), (&lsquo;volume&rsquo;, &lsquo;85&rsquo;), (&lsquo;pages&rsquo;, &lsquo;045132&rsquo;), (&lsquo;number&rsquo;, &lsquo;4&rsquo;), (&lsquo;file&rsquo;, &lsquo;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.85.045132.pdf:PDF&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;cRPA pseudopotentials&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevB.85.045132&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2012.06.19&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevB.85.045132&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Shih, B.-C.&rsquo;), Person(&lsquo;Zhang, Y.&rsquo;), Person(&lsquo;Zhang, W.&rsquo;), Person(&lsquo;Zhang, P.&rsquo;)])]))</p>
+<h2 id="silvestrelli2008"><strong>Silvestrelli2008</strong><a class="headerlink" href="#silvestrelli2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;053002&rsquo;), (&lsquo;title&rsquo;, &lsquo;van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions&rsquo;), (&lsquo;volume&rsquo;, &lsquo;100&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Silvestrelli, P. L.&rsquo;)])]))</p>
+<h2 id="silvestrelli2009"><strong>Silvestrelli2009</strong><a class="headerlink" href="#silvestrelli2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;J. Phys. Chem. A&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;5224&rsquo;), (&lsquo;title&rsquo;, &lsquo;van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions&rsquo;), (&lsquo;volume&rsquo;, &lsquo;113&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Silvestrelli, P. L.&rsquo;)])]))</p>
+<h2 id="silvestrelli2013"><strong>Silvestrelli2013</strong><a class="headerlink" href="#silvestrelli2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;number&rsquo;, &lsquo;&rsquo;), (&lsquo;pages&rsquo;, &lsquo;054106&rsquo;), (&lsquo;title&rsquo;, &lsquo;van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions&rsquo;), (&lsquo;volume&rsquo;, &lsquo;139&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Silvestrelli, P. L.&rsquo;)])]))</p>
+<h2 id="sipe1993"><strong>Sipe1993</strong><a class="headerlink" href="#sipe1993" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Nonlinear optical response of semiconductors in the independent-particle approximation&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1993&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;11705&ndash;11722&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;48&rsquo;), (&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevB.48.11705&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;16&rsquo;), (&lsquo;Url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevB.48.11705&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Sipe, J. E.&rsquo;), Person(&lsquo;Ghahramani, E.&rsquo;)])]))</p>
+<h2 id="snyder2008"><strong>Snyder2008</strong><a class="headerlink" href="#snyder2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;journal&rsquo;, &lsquo;Nature Materials&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;105&ndash;114&rsquo;), (&lsquo;title&rsquo;, &lsquo;Complex thermoelectric materials&rsquo;), (&lsquo;volume&rsquo;, &lsquo;7&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Snyder, G. J.&rsquo;), Person(&lsquo;Toberer, E. S.&rsquo;)])]))</p>
+<h2 id="souza2002"><strong>Souza2002</strong><a class="headerlink" href="#souza2002" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;First-Principles Approach to Insulators in Finite Electric Fields&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;pages&rsquo;, &lsquo;117602&rsquo;), (&lsquo;year&rsquo;, &lsquo;2002&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Souza, I.&rsquo;), Person(&ldquo;\&lsquo;I\ niguez, J.&rdquo;), Person(&lsquo;Vanderbilt, D.&rsquo;)])]))</p>
+<h2 id="sterne1991"><strong>Sterne1991</strong><a class="headerlink" href="#sterne1991" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;First-principles calculation of positron lifetimes in solids&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;43&rsquo;), (&lsquo;number&rsquo;, &lsquo;17&rsquo;), (&lsquo;pages&rsquo;, &lsquo;13892&rsquo;), (&lsquo;year&rsquo;, &lsquo;1991&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Sterne, P.A.&rsquo;), Person(&lsquo;Kaiser, J.H.&rsquo;)])]))</p>
+<h2 id="torrent2008"><strong>Torrent2008</strong><a class="headerlink" href="#torrent2008" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Computational Materials Science&rsquo;), (&lsquo;volume&rsquo;, &lsquo;42&rsquo;), (&lsquo;number&rsquo;, &lsquo;2&rsquo;), (&lsquo;pages&rsquo;, &lsquo;337 - 351&rsquo;), (&lsquo;year&rsquo;, &lsquo;2008&rsquo;), (&lsquo;note&rsquo;, &lsquo;&rsquo;), (&lsquo;issn&rsquo;, &lsquo;0927-0256&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/j.commatsci.2007.07.020&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://www.sciencedirect.com/science/article/pii/S0927025607002108&rsquo;), (&lsquo;keywords&rsquo;, &lsquo;Iron under pressure&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Torrent, Marc&rsquo;), Person(&lsquo;Jollet, Fran\c{c}ois&rsquo;), Person(&lsquo;Bottin, Fran\c{c}ois&rsquo;), Person(&ldquo;Z\&lsquo;erah, Gilles&rdquo;), Person(&lsquo;Gonze, Xavier&rsquo;)])]))</p>
+<h2 id="tran2009"><strong>Tran2009</strong><a class="headerlink" href="#tran2009" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;102&rsquo;), (&lsquo;issue&rsquo;, &lsquo;22&rsquo;), (&lsquo;pages&rsquo;, &lsquo;226401&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;4&rsquo;), (&lsquo;year&rsquo;, &lsquo;2009&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevLett.102.226401&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevLett.102.226401&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Tran, F.&rsquo;), Person(&lsquo;Blaha, P.&rsquo;)])]))</p>
+<h2 id="tremblay2017"><strong>Tremblay2017</strong><a class="headerlink" href="#tremblay2017" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;misc&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Probl\<code>eme \\</code>a N-corps&rsquo;), (&lsquo;note&rsquo;, &lsquo;Notes de cours&rsquo;), (&lsquo;howpublished&rsquo;, &lsquo;available <a href="https://www.physique.usherbrooke.ca/pages/en/node/3436">here</a>&lsquo;), (&lsquo;url&rsquo;, &lsquo;https://www.physique.usherbrooke.ca/pages/en/node/3436&rsquo;), (&lsquo;year&rsquo;, &lsquo;2017&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Tremblay, Andr\&lsquo;e-Marie&rdquo;)])]))</p>
+<h2 id="troullier1991"><strong>Troullier1991</strong><a class="headerlink" href="#troullier1991" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1993&rsquo;), (&lsquo;Title&rsquo;, &lsquo;Efficient pseudopotentials for plane-wave calculation&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;43&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1991&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Troullier, N.&rsquo;), Person(&lsquo;Martins, J.L.&rsquo;)])]))</p>
+<h2 id="tuckerman1996"><strong>Tuckerman1996</strong><a class="headerlink" href="#tuckerman1996" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Efficient and general algorithms for path integral {C}ar&ndash;{P}arrinello molecular dynamics&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;J. Chem. Phys.&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;104&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;5579&rsquo;), (&lsquo;year&rsquo;, &lsquo;1996&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Tuckerman, M. E.&rsquo;), Person(&lsquo;Marx, D.&rsquo;), Person(&lsquo;Klein, M. L.&rsquo;), Person(&lsquo;Parrinello, M.&rsquo;)])]))</p>
+<h2 id="tuomisto2013"><strong>Tuomisto2013</strong><a class="headerlink" href="#tuomisto2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Defect identification in semiconductors with positron annihilation: Experiment and theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Rev. Mod. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;85&rsquo;), (&lsquo;issue&rsquo;, &lsquo;4&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1583&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;0&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/RevModPhys.85.1583&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Tuomisto, F.&rsquo;), Person(&lsquo;Makkonen, I.&rsquo;)])]))</p>
+<h2 id="uehara2000"><strong>Uehara2000</strong><a class="headerlink" href="#uehara2000" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Calculations of transport properties with the linearized augmented plane-wave method&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;61&rsquo;), (&lsquo;pages&rsquo;, &lsquo;1639&rsquo;), (&lsquo;year&rsquo;, &lsquo;2000&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Uehara, Kentaro&rsquo;), Person(&lsquo;Tse, John S.&rsquo;)])]))</p>
+<h2 id="vanderbilt1998"><strong>Vanderbilt1998</strong><a class="headerlink" href="#vanderbilt1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electronic polarization in the ultrasoft pseudopotential formalism&rsquo;), (&lsquo;journal&rsquo;, &lsquo;arXiv/cond-mat&rsquo;), (&lsquo;eprint&rsquo;, &lsquo;9801177&rsquo;), (&lsquo;url&rsquo;, &lsquo;https://arxiv.org/abs/cond-mat/9801177&rsquo;), (&lsquo;year&rsquo;, &lsquo;1998&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Vanderbilt, D.&rsquo;), Person(&lsquo;{K}ing-{S}mith, R. D.&rsquo;)])]))</p>
+<h2 id="vantroeye2016"><strong>Vantroeye2016</strong><a class="headerlink" href="#vantroeye2016" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Interatomic force constants including the DFT-D dispersion contribution&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;93&rsquo;), (&lsquo;pages&rsquo;, &lsquo;144304&rsquo;), (&lsquo;year&rsquo;, &lsquo;2016&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Troeye, B. Van&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="veithen2005"><strong>Veithen2005</strong><a class="headerlink" href="#veithen2005" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first&ndash;principles density functional theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;71&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125107&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.71.125107&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Veithen, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;), Person(&lsquo;Ghosez, Ph.&rsquo;)])]))</p>
+<h2 id="veithen2005a"><strong>Veithen2005a</strong><a class="headerlink" href="#veithen2005a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;71&rsquo;), (&lsquo;pages&rsquo;, &lsquo;132101&rsquo;), (&lsquo;year&rsquo;, &lsquo;2005&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.71.132101&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Veithen, M.&rsquo;), Person(&lsquo;Ghosez, Ph.&rsquo;)])]))</p>
+<h2 id="wang1998"><strong>Wang1998</strong><a class="headerlink" href="#wang1998" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;Majority Representation of Alloy Electronic States&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;Year&rsquo;, &lsquo;1998&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;4725&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;80&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Wang, L.-W.&rsquo;), Person(&lsquo;Bellaiche, L.&rsquo;), Person(&lsquo;Wei, S.-H.&rsquo;), Person(&lsquo;Zunger, A.&rsquo;)])]))</p>
+<h2 id="wang2013"><strong>Wang2013</strong><a class="headerlink" href="#wang2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Title&rsquo;, &lsquo;The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Adv. Funct. Mater.&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;Number&rsquo;, &lsquo;12&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;1586&ndash;1596&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;23&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Wang, H.&rsquo;), Person(&lsquo;LaLonde, A. D.&rsquo;), Person(&lsquo;Pei, Y.&rsquo;), Person(&lsquo;Snyder, G. J.&rsquo;)])]))</p>
+<h2 id="waroquiers2013"><strong>Waroquiers2013</strong><a class="headerlink" href="#waroquiers2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;volume&rsquo;, &lsquo;87&rsquo;), (&lsquo;pages&rsquo;, &lsquo;075121&rsquo;), (&lsquo;doi&rsquo;, &lsquo;&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Waroquiers, D.&rsquo;), Person(&lsquo;Lherbier, A.&rsquo;), Person(&lsquo;Miglio, A.&rsquo;), Person(&lsquo;Stankovski, M.&rsquo;), Person(&ldquo;Ponc\&lsquo;e, S.&rdquo;), Person(&lsquo;Oliveira, M.J.T.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Rignanese, G.-M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="weinan2007"><strong>Weinan2007</strong><a class="headerlink" href="#weinan2007" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Simplified and improved string method for computing the minimum energy paths in barrier-crossing events&rsquo;), (&lsquo;journal&rsquo;, &lsquo;The Journal of Chemical Physics&rsquo;), (&lsquo;volume&rsquo;, &lsquo;126&rsquo;), (&lsquo;number&rsquo;, &lsquo;16&rsquo;), (&lsquo;pages&rsquo;, &lsquo;164103&rsquo;), (&lsquo;year&rsquo;, &lsquo;2007&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;AIP Publishing&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Weinan, E.&rsquo;), Person(&lsquo;Ren, W.&rsquo;), Person(&lsquo;Vanden-Eijnden, E.&rsquo;)])]))</p>
+<h2 id="werner2006"><strong>Werner2006</strong><a class="headerlink" href="#werner2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Continuous-Time Solver for Quantum Impurity Models&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;volume&rsquo;, &lsquo;97&rsquo;), (&lsquo;pages&rsquo;, &lsquo;076405&rsquo;), (&lsquo;number&rsquo;, &lsquo;7&rsquo;), (&lsquo;owner&rsquo;, &lsquo;amadonb&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;refid&rsquo;, &lsquo;10.1103/PhysRevLett.97.076405&rsquo;), (&lsquo;timestamp&rsquo;, &lsquo;2013.05.22&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevLett.97.076405&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Werner, P.&rsquo;), Person(&lsquo;Comanac, A.&rsquo;), Person(&lsquo;de Medici, L.&rsquo;), Person(&lsquo;Troyer, M.&rsquo;), Person(&lsquo;Millis, A.J.&rsquo;)])]))</p>
+<h2 id="wiktor2013"><strong>Wiktor2013</strong><a class="headerlink" href="#wiktor2013" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;87&rsquo;), (&lsquo;pages&rsquo;, &lsquo;235207&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;12&rsquo;), (&lsquo;year&rsquo;, &lsquo;2013&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.87.235207&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Bertolus, M.&rsquo;)])]))</p>
+<h2 id="wiktor2014"><strong>Wiktor2014</strong><a class="headerlink" href="#wiktor2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;89&rsquo;), (&lsquo;number&rsquo;, &lsquo;15&rsquo;), (&lsquo;pages&rsquo;, &lsquo;155203&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Kerbiriou, X.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Esnouf, S.&rsquo;), Person(&lsquo;Barthe, M.-F.&rsquo;), Person(&lsquo;Bertolus, M.&rsquo;)])]))</p>
+<h2 id="wiktor2014a"><strong>Wiktor2014a</strong><a class="headerlink" href="#wiktor2014a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}<script type="math/tex">_2</script>&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;90&rsquo;), (&lsquo;number&rsquo;, &lsquo;18&rsquo;), (&lsquo;pages&rsquo;, &lsquo;184101&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;APS&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Barthe, M.-F.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Freyss, M.&rsquo;), Person(&lsquo;Bertolus, M.&rsquo;)])]))</p>
+<h2 id="wiktor2014b"><strong>Wiktor2014b</strong><a class="headerlink" href="#wiktor2014b" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Nucl. Instrum. Meth.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;327&rsquo;), (&lsquo;pages&rsquo;, &lsquo;63&rsquo;), (&lsquo;year&rsquo;, &lsquo;2014&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1016/j.nimb.2013.09.050&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Elsevier&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Bertolus, M.&rsquo;)])]))</p>
+<h2 id="wiktor2015"><strong>Wiktor2015</strong><a class="headerlink" href="#wiktor2015" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;92&rsquo;), (&lsquo;issue&rsquo;, &lsquo;12&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125113&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;15&rsquo;), (&lsquo;year&rsquo;, &lsquo;2015&rsquo;), (&lsquo;month&rsquo;, &lsquo;Sep&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevB.92.125113&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevB.92.125113&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Wiktor, J.&rsquo;), Person(&lsquo;Jomard, G.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;)])]))</p>
+<h2 id="xu2014"><strong>Xu2014</strong><a class="headerlink" href="#xu2014" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;Doi&rsquo;, &lsquo;10.1103/PhysRevLett.112.196603&rsquo;), (&lsquo;Issue&rsquo;, &lsquo;19&rsquo;), (&lsquo;Journal&rsquo;, &lsquo;Phys. Rev. Lett.&rsquo;), (&lsquo;Numpages&rsquo;, &lsquo;5&rsquo;), (&lsquo;Pages&rsquo;, &lsquo;196603&rsquo;), (&lsquo;Publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;Title&rsquo;, &lsquo;First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium&rsquo;), (&lsquo;Volume&rsquo;, &lsquo;112&rsquo;), (&lsquo;Year&rsquo;, &lsquo;2014&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;Author&rsquo;, [Person(&lsquo;Xu, B.&rsquo;), Person(&lsquo;Verstraete, M. J.&rsquo;)])]))</p>
+<h2 id="zhou2006"><strong>Zhou2006</strong><a class="headerlink" href="#zhou2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. E&rsquo;), (&lsquo;volume&rsquo;, &lsquo;74&rsquo;), (&lsquo;issue&rsquo;, &lsquo;6&rsquo;), (&lsquo;pages&rsquo;, &lsquo;066704&rsquo;), (&lsquo;numpages&rsquo;, &lsquo;8&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;American Physical Society&rsquo;), (&lsquo;doi&rsquo;, &lsquo;10.1103/PhysRevE.74.066704&rsquo;), (&lsquo;url&rsquo;, &lsquo;http://link.aps.org/doi/10.1103/PhysRevE.74.066704&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Zhou, Y.&rsquo;), Person(&lsquo;Saad, Y.&rsquo;), Person(&lsquo;Tiago, M.L.&rsquo;), Person(&lsquo;Chelikowsky, J.R.&rsquo;)])]))</p>
+<h2 id="zhou2006a"><strong>Zhou2006a</strong><a class="headerlink" href="#zhou2006a" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Self-consistent-field calculations using Chebyshev-filtered subspace iteration&rsquo;), (&lsquo;journal&rsquo;, &lsquo;J. Comp. Phys.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;219&rsquo;), (&lsquo;number&rsquo;, &lsquo;1&rsquo;), (&lsquo;pages&rsquo;, &lsquo;172&ndash;184&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Elsevier&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Zhou, Y.&rsquo;), Person(&lsquo;Saad, Y.&rsquo;), Person(&lsquo;Tiago, M.L&rsquo;), Person(&lsquo;Chelikowsky, J. R.&rsquo;)])]))</p>
+<h2 id="ziman1960"><strong>Ziman1960</strong><a class="headerlink" href="#ziman1960" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;book&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Electrons and phonons&rsquo;), (&lsquo;publisher&rsquo;, &lsquo;Oxford University Press&rsquo;), (&lsquo;year&rsquo;, &lsquo;1960&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Ziman, J. M.&rsquo;)])]))</p>
+<h2 id="zwanziger2012"><strong>Zwanziger2012</strong><a class="headerlink" href="#zwanziger2012" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Comput. Mater. Sci.&rsquo;), (&lsquo;volume&rsquo;, &lsquo;58&rsquo;), (&lsquo;pages&rsquo;, &lsquo;113&ndash;118&rsquo;), (&lsquo;year&rsquo;, &lsquo;2012&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Zwanziger, J.W.&rsquo;), Person(&lsquo;Galbraith, J.&rsquo;), Person(&lsquo;Kipouros, Y.&rsquo;), Person(&lsquo;Torrent, M.&rsquo;), Person(&lsquo;Giantomassi, M.&rsquo;), Person(&lsquo;Gonze, X.&rsquo;)])]))</p>
+<h2 id="lechermann2006"><strong>Lechermann2006</strong><a class="headerlink" href="#lechermann2006" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;74&rsquo;), (&lsquo;pages&rsquo;, &lsquo;125120&rsquo;), (&lsquo;year&rsquo;, &lsquo;2006&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Lechermann, F.&rsquo;), Person(&lsquo;Georges, A.&rsquo;), Person(&lsquo;Poteryaev, S.&rsquo;), Person(&lsquo;Biermann, S.&rsquo;), Person(&lsquo;Posternak, M.&rsquo;), Person(&lsquo;Yamasaki, A.&rsquo;), Person(&lsquo;Andersen, O. K.&rsquo;)])]))</p>
+<h2 id="fresard1997"><strong>Fresard1997</strong><a class="headerlink" href="#fresard1997" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. B&rsquo;), (&lsquo;volume&rsquo;, &lsquo;56&rsquo;), (&lsquo;pages&rsquo;, &lsquo;12909&rsquo;), (&lsquo;year&rsquo;, &lsquo;1997&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&ldquo;Fr\&lsquo;esard, Raymond&rdquo;), Person(&lsquo;Kotliar, Gabriel&rsquo;)])]))</p>
+<h2 id="bergeron2016"><strong>Bergeron2016</strong><a class="headerlink" href="#bergeron2016" title="Permanent link">&para;</a></h2>
+<p>Entry(&lsquo;article&rsquo;, fields=[(&lsquo;title&rsquo;, &lsquo;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&rsquo;), (&lsquo;journal&rsquo;, &lsquo;Phys. Rev. E&rsquo;), (&lsquo;volume&rsquo;, &lsquo;94&rsquo;), (&lsquo;pages&rsquo;, &lsquo;023303&rsquo;), (&lsquo;year&rsquo;, &lsquo;2016&rsquo;)], persons=OrderedCaseInsensitiveDict([(&lsquo;author&rsquo;, [Person(&lsquo;Bergeron, D.&rsquo;), Person(&lsquo;Tremblay, A.-M.S.&rsquo;)])]))</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

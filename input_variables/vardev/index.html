@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/vardev/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Developers - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li class="active">
+    <a href="./">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../varbse/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../vardmft/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#builtintest">builtintest</a></li>
+        <li class="main "><a href="#cgtyphf">cgtyphf</a></li>
+        <li class="main "><a href="#densfor_pred">densfor_pred</a></li>
+        <li class="main "><a href="#densty">densty</a></li>
+        <li class="main "><a href="#dmft_read_occnd">dmft_read_occnd</a></li>
+        <li class="main "><a href="#dmftctqmc_basis">dmftctqmc_basis</a></li>
+        <li class="main "><a href="#effmass">effmass</a></li>
+        <li class="main "><a href="#eshift">eshift</a></li>
+        <li class="main "><a href="#exchmix">exchmix</a></li>
+        <li class="main "><a href="#exchn2n3d">exchn2n3d</a></li>
+        <li class="main "><a href="#extrapwf">extrapwf</a></li>
+        <li class="main "><a href="#fermie_nest">fermie_nest</a></li>
+        <li class="main "><a href="#fftalg">fftalg</a></li>
+        <li class="main "><a href="#fftcache">fftcache</a></li>
+        <li class="main "><a href="#getgam_eig2nkq">getgam_eig2nkq</a></li>
+        <li class="main "><a href="#getwfkfine">getwfkfine</a></li>
+        <li class="main "><a href="#intxc">intxc</a></li>
+        <li class="main "><a href="#iomode">iomode</a></li>
+        <li class="main "><a href="#iprcfc">iprcfc</a></li>
+        <li class="main "><a href="#irandom">irandom</a></li>
+        <li class="main "><a href="#irdwfkfine">irdwfkfine</a></li>
+        <li class="main "><a href="#isecur">isecur</a></li>
+        <li class="main "><a href="#istatr">istatr</a></li>
+        <li class="main "><a href="#istatshft">istatshft</a></li>
+        <li class="main "><a href="#istwfk">istwfk</a></li>
+        <li class="main "><a href="#lotf_classic">lotf_classic</a></li>
+        <li class="main "><a href="#lotf_nitex">lotf_nitex</a></li>
+        <li class="main "><a href="#lotf_nneigx">lotf_nneigx</a></li>
+        <li class="main "><a href="#lotf_version">lotf_version</a></li>
+        <li class="main "><a href="#macro_uj">macro_uj</a></li>
+        <li class="main "><a href="#maxnsym">maxnsym</a></li>
+        <li class="main "><a href="#mem_test">mem_test</a></li>
+        <li class="main "><a href="#mqgrid">mqgrid</a></li>
+        <li class="main "><a href="#nbdblock">nbdblock</a></li>
+        <li class="main "><a href="#nc_xccc_gspace">nc_xccc_gspace</a></li>
+        <li class="main "><a href="#nctime">nctime</a></li>
+        <li class="main "><a href="#nloc_alg">nloc_alg</a></li>
+        <li class="main "><a href="#nloc_mem">nloc_mem</a></li>
+        <li class="main "><a href="#nnsclo">nnsclo</a></li>
+        <li class="main "><a href="#nnsclohf">nnsclohf</a></li>
+        <li class="main "><a href="#normpawu">normpawu</a></li>
+        <li class="main "><a href="#npulayit">npulayit</a></li>
+        <li class="main "><a href="#nscforder">nscforder</a></li>
+        <li class="main "><a href="#optforces">optforces</a></li>
+        <li class="main "><a href="#optnlxccc">optnlxccc</a></li>
+        <li class="main "><a href="#ortalg">ortalg</a></li>
+        <li class="main "><a href="#papiopt">papiopt</a></li>
+        <li class="main "><a href="#pawprt_b">pawprt_b</a></li>
+        <li class="main "><a href="#pawprt_k">pawprt_k</a></li>
+        <li class="main "><a href="#pawujat">pawujat</a></li>
+        <li class="main "><a href="#pawujrad">pawujrad</a></li>
+        <li class="main "><a href="#pawujv">pawujv</a></li>
+        <li class="main "><a href="#plowan_bandf">plowan_bandf</a></li>
+        <li class="main "><a href="#plowan_bandi">plowan_bandi</a></li>
+        <li class="main "><a href="#plowan_compute">plowan_compute</a></li>
+        <li class="main "><a href="#plowan_iatom">plowan_iatom</a></li>
+        <li class="main "><a href="#plowan_it">plowan_it</a></li>
+        <li class="main "><a href="#plowan_lcalc">plowan_lcalc</a></li>
+        <li class="main "><a href="#plowan_natom">plowan_natom</a></li>
+        <li class="main "><a href="#plowan_nbl">plowan_nbl</a></li>
+        <li class="main "><a href="#plowan_nt">plowan_nt</a></li>
+        <li class="main "><a href="#plowan_projcalc">plowan_projcalc</a></li>
+        <li class="main "><a href="#plowan_realspace">plowan_realspace</a></li>
+        <li class="main "><a href="#prepscphon">prepscphon</a></li>
+        <li class="main "><a href="#prtbltztrp">prtbltztrp</a></li>
+        <li class="main "><a href="#prtcif">prtcif</a></li>
+        <li class="main "><a href="#prtdipole">prtdipole</a></li>
+        <li class="main "><a href="#prtnest">prtnest</a></li>
+        <li class="main "><a href="#prtposcar">prtposcar</a></li>
+        <li class="main "><a href="#recefermi">recefermi</a></li>
+        <li class="main "><a href="#recgratio">recgratio</a></li>
+        <li class="main "><a href="#recnpath">recnpath</a></li>
+        <li class="main "><a href="#recnrec">recnrec</a></li>
+        <li class="main "><a href="#recptrott">recptrott</a></li>
+        <li class="main "><a href="#recrcut">recrcut</a></li>
+        <li class="main "><a href="#rectesteg">rectesteg</a></li>
+        <li class="main "><a href="#rectolden">rectolden</a></li>
+        <li class="main "><a href="#symmorphi">symmorphi</a></li>
+        <li class="main "><a href="#tfkinfunc">tfkinfunc</a></li>
+        <li class="main "><a href="#tfw_toldfe">tfw_toldfe</a></li>
+        <li class="main "><a href="#tolrde">tolrde</a></li>
+        <li class="main "><a href="#use_gemm_nonlop">use_gemm_nonlop</a></li>
+        <li class="main "><a href="#use_nonscf_gkk">use_nonscf_gkk</a></li>
+        <li class="main "><a href="#usedmft">usedmft</a></li>
+        <li class="main "><a href="#useria">useria</a></li>
+        <li class="main "><a href="#userib">userib</a></li>
+        <li class="main "><a href="#useric">useric</a></li>
+        <li class="main "><a href="#userid">userid</a></li>
+        <li class="main "><a href="#userie">userie</a></li>
+        <li class="main "><a href="#userra">userra</a></li>
+        <li class="main "><a href="#userrb">userrb</a></li>
+        <li class="main "><a href="#userrc">userrc</a></li>
+        <li class="main "><a href="#userrd">userrd</a></li>
+        <li class="main "><a href="#userre">userre</a></li>
+        <li class="main "><a href="#useylm">useylm</a></li>
+        <li class="main "><a href="#wfoptalg">wfoptalg</a></li>
+        <li class="main "><a href="#xc_denpos">xc_denpos</a></li>
+        <li class="main "><a href="#xc_tb09_c">xc_tb09_c</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="builtintest"><strong>builtintest</strong><a class="headerlink" href="#builtintest" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BUIT-IN TEST number<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>When <a class="wikilink" href="../../input_variables/vardev#builtintest">builtintest</a> is non-zero, the input file is a special one, that runs
+very quickly, and that is accompanied by a specific analysis by ABINIT, at the
+end of the run, against a hard-coded value of total energy (and possibly
+stresses, forces &hellip;). The echo of the analysis is done in the STATUS file. In
+particular, such built-in tests can be used to check quickly whether ABINIT
+fallbacks have been connected or not (bigdft, etsf_io, libxc, wannier90). At
+present, <a class="wikilink" href="../../input_variables/vardev#builtintest">builtintest</a>=1 &hellip; 7 are allowed. See more information in
+tests/built-in/README .</p>
+<h2 id="cgtyphf"><strong>cgtyphf</strong><a class="headerlink" href="#cgtyphf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Conjugate Gradient TYPe used for Hartree Fock exact exchange<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2 if <a class="wikilink" href="../../input_variables/varint#usefock">usefock</a> == 1,
+0 otherwise.</p>
+<p>Gives how is calculated Fock exact exchange contribution in the conjugate
+gradient, in the SCF case.<br />
+The value 2 corresponds to calculate the Fock exact exchange contribution each
+time in the conjugate gradient. The value 1 corresponds to calculate the Fock
+exact exchange contribution only for the initial guess (not for the gradient
+direction) in the conjugate gradient</p>
+<h2 id="densfor_pred"><strong>densfor_pred</strong><a class="headerlink" href="#densfor_pred" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: DENSity and FORces PREDictor<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 6 if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1,
+2 otherwise.</p>
+<p>Only relevant if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &gt;0  </p>
+<p>Used when <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;0, to define:<br />
+- the way a change of density is derived from a change of atomic position,<br />
+- the way forces are corrected when the SCF cycle is not converged.  </p>
+<p>Supported values :</p>
+<ul>
+<li>0 =&gt; density not changed (fixed charge), forces not corrected </li>
+<li>1 =&gt; density not changed, forces corrected with rigid ion hypothesis (atomic charge moved with atom) </li>
+<li>2 =&gt; density changed and forces corrected with rigid ion hypothesis (atomic charge moves with atom) </li>
+<li>3 =&gt; density changed and forces corrected with a different implementation of the rigid ion hypothesis </li>
+<li>4 =&gt; density not changed, forces corrected with the use of Harris functional formula (*) </li>
+<li>5 =&gt; density changed using D. Alfe 2nd-order algorithm (**), forces not corrected </li>
+<li>6 =&gt; density changed using D. Alfe 2nd-order algorithm (*<em>) and forces corrected with the use of Harris functional formula (</em>) </li>
+</ul>
+<p>Similar negative values are also allowed (see the meaning later), for
+development purposes only. No meaning for RF calculations.  </p>
+<p>For the time being,<br />
+- <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>=3 must be used with <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=4 and <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=5.<br />
+- <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>=4, 5 or 6 must be used when band-FFT parallelism is
+selected.<br />
+Otherwise, use <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>=2  </p>
+<p><strong> (*) </strong> _ Note concerning the correction of forces (use of <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>=1, 2, 3, 4 or 6) _ : <br />
+The force on the atom located at R is corrected by the addition of the
+following term:<br />
+_ F_residual=Int[dr.V_residual.dRho_atomic/dR] _ , where Rho_atomic is an
+atomic (spherical) density.<br />
+- When such an atomic density (Rho_atomic) is found in the pseudopotential or
+PAW file, it is used. If not, a gaussian density (defined by <a class="wikilink" href="../../input_variables/vardev#densty">densty</a>
+parameter) is used.<br />
+- When SCF mixing is done on the density (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;=10), the potential
+residual (V_residual) is obtained from the density residual with the first
+order formula _ V_residual=dV/drho.Rho_residual _ and uses the exchange-
+correlation kernel _ dVxc/drho=Kxc _ whose computation is time-consuming for
+GGA functionals. By default (positive values of <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>), the local-
+density part of the GGA exchange-correlation kernel is used (even for GGA, for
+which it seems to give a reasonable accuracy). Using the full GGA exchange
+correlation kernel (so, including derivatives with respect to the gradient of
+the density) is always possible by giving a negative value to
+<a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>. In case of hybrid functionals, a similar correction term is
+added, although in the density mixing scheme, the related GGA kernel is used
+instead of the hybrid functional kernel.  </p>
+<p><strong> (</strong>) <strong> _ Note concerning the use of <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>=5 or 6 (density prediction) _ : <br />
+The algorithm is described in _ Computer Physics Communications </strong> 118 **
+(1999) 31-33 _ . It uses an atomic (spherical) density. When such an atomic
+density is found in the pseudopotential or PAW file, it is used. If not, a
+gaussian density (defined by <a class="wikilink" href="../../input_variables/vardev#densty">densty</a> parameter) is used.<br />
+Also note that, to be efficient, this algorithm requires a minimum convergence
+of the SCF cycle; Typically, vres2 (or nres2) has to be small enough (10  -4
+&hellip;10  -5  ).</p>
+<h2 id="densty"><strong>densty</strong><a class="headerlink" href="#densty" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: initial DENSity for each TYpe of atom<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Default value: 0.0  </p>
+<p>Gives a rough description of the initial GS density, for each type of atom.
+This value is only used to create the first exchange and correlation
+potential, and is not used anymore afterwards. For the time being, it
+corresponds to an average radius (a.u.) of the density, and is used to
+generate a gaussian density. If set to 0.0d0, an optimized value is used.<br />
+No meaning for RF calculations.</p>
+<h2 id="dmft_read_occnd"><strong>dmft_read_occnd</strong><a class="headerlink" href="#dmft_read_occnd" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Flag to read/write Occupations as computed in DMFT. This flag is useful to
+restart a DFT+DMFT calculation with self-consistency over electronic density.
+The occupations are written each time a DMFT loop is finished. So if the
+calculation stops because the time limit is reached, this option offers the
+possibility to restart the self-consistent loop over density at the point
+where it stopped (assuming a restart with the wave functions, see <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>).</p>
+<ul>
+<li>0=&gt; Occupations are written but never read. </li>
+<li>1=&gt; Occupations are read from I_DMFTOCCND, where I is the root for input files. </li>
+<li>2=&gt; Occupations are read from O_DMFTOCCND, where O is the root for output files. </li>
+</ul>
+<p>An alternative and more simple way to restart a DFT+DMFT calculation is to use
+the density file (obtained with <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>=1 or <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>=-1) and the self-
+energy (see <a class="wikilink" href="../../input_variables/vardmft#dmft_rslf">dmft_rslf</a>).</p>
+<h2 id="dmftctqmc_basis"><strong>dmftctqmc_basis</strong><a class="headerlink" href="#dmftctqmc_basis" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vardmft#dmft_solv">dmft_solv</a>==5  </p>
+<p>Choose the basis to perform CTQMC calculation.</p>
+<ul>
+<li>0=&gt; Use the local basis in the spherical harmonics basis. Can be useful if the Hamiltonian has weak off diagonal terms and for this reason, one want to keep the original basis for simplicity and for physical insight. </li>
+<li>1=&gt; Default value, diagonalize the local Hamiltonian (but only if it is not diagonal). The best choice in general. </li>
+<li>2=&gt; Diagonalise the local correlated occupation matrix. Can lead to non diagonal Hamiltonian that cannot be handled by CTQMC. This option should be thus avoided. </li>
+</ul>
+<h2 id="effmass"><strong>effmass</strong><a class="headerlink" href="#effmass" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: EFFective MASS<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>This parameter allows to change the electron mass, with respect to its
+experimental value.</p>
+<h2 id="eshift"><strong>eshift</strong><a class="headerlink" href="#eshift" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Energy SHIFT<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>==3  </p>
+<p><a class="wikilink" href="../../input_variables/vardev#eshift">eshift</a> gives the shift of the energy used in the shifted Hamiltonian
+squared. The algorithm will determine eigenvalues and eigenvectors centered on
+<a class="wikilink" href="../../input_variables/vardev#eshift">eshift</a>.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> ecut </strong> has
+the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics. (1 Ha=27.2113845 eV)</p>
+<h2 id="exchmix"><strong>exchmix</strong><a class="headerlink" href="#exchmix" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: EXCHange MIXing<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.25<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw#useexexch">useexexch</a> == 1  </p>
+<p><a class="wikilink" href="../../input_variables/vardev#exchmix">exchmix</a> allows to tune the ratio of exact exchange when <a class="wikilink" href="../../input_variables/varpaw#useexexch">useexexch</a> is
+used. The default value of 0.25 corresponds to PBE0.</p>
+<h2 id="exchn2n3d"><strong>exchn2n3d</strong><a class="headerlink" href="#exchn2n3d" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: EXCHange N2 and N3 Dimensions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If <a class="wikilink" href="../../input_variables/vardev#exchn2n3d">exchn2n3d</a> is 1, the internal representation of the FFT arrays in
+reciprocal space will be array(n1,n3,n2), where the second and third
+dimensions have been switched. This is to allow to be coherent with the
+<a class="wikilink" href="../../input_variables/vardev#exchn2n3d">exchn2n3d</a>=4xx FFT treatment.</p>
+<h2 id="extrapwf"><strong>extrapwf</strong><a class="headerlink" href="#extrapwf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: flag - EXTRAPolation of the Wave-Functions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>==5 or <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>==6  </p>
+<p>This flag activates the extrapolation of wave-functions from one Molecular
+Dynamics (or Structural Relaxation) step to another. The wave functions are
+extrapolated using 2nd-order algorithm of Arias, Payne and Joannopoulos (PRB
+45, 1538 (1992)).<br />
+Note that, when activated, this extrapolation requires non-negligible
+additional memory resources as the wave functions are stored for the two
+previous time steps. Also, it can only be activated if a consistent density
+extrapolation is activated (see <a class="wikilink" href="../../input_variables/vardev#densfor_pred">densfor_pred</a>).<br />
+ABINIT 7.10: this option is <strong>under development</strong> and might give wrong
+results.</p>
+<h2 id="fermie_nest"><strong>fermie_nest</strong><a class="headerlink" href="#fermie_nest" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: FERMI Energy for printing the NESTing function<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This input variable is only effective when <a class="wikilink" href="../../input_variables/vardev#prtnest">prtnest</a>=1. The energy is
+relative to the calculated fermi energy.</p>
+<h2 id="fftalg"><strong>fftalg</strong><a class="headerlink" href="#fftalg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Fast Fourier Transform ALGorithm<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 312 if <a class="wikilink" href="../../FFTW3/">FFTW3</a> and <a class="wikilink" href="../../input_variables/vardev#usedmft">usedmft</a>==0,
+401 if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1,
+112 otherwise.</p>
+<p>This keyword is <strong> irrelevant </strong> when Fast Fourier Transforms are done using
+<strong> Graphics Processing Units </strong> (GPU), i.e. when <a class="wikilink" href="../../input_variables/varpar#use_gpu_cuda">use_gpu_cuda</a>=1 (in that
+case, it is ignored).  </p>
+<p>Allows to choose the algorithm for Fast Fourier Transforms. These have to be
+used when applied to wavefunctions (routine fourwf.F90), as well as when
+applied to densities and potentials (routine fourdp.F90). Presently, it is the
+concatenation of three digits, labelled (A), (B) and (C).  </p>
+<p>The first digit (A) is to be chosen among 1, 2, 3, 4 or 5 :</p>
+<ul>
+<li>1=&gt; use FFT routines written by S. Goedecker. </li>
+<li>2=&gt; not available anymore </li>
+<li>3=&gt; use serial or multi-threaded FFTW3 fortran routines ( <a href="http://www.fftw.org"> http://www.fftw.org </a> ). Currently implemented with <a class="wikilink" href="../../input_variables/vardev#fftalg">fftalg</a>=312. </li>
+<li>4=&gt; use FFT routines written by S. Goedecker, 2002 version, that will be suited for MPI and OpenMP parallelism. </li>
+<li>5=&gt; use serial or multi-threaded MKL routines Currently implemented with <a class="wikilink" href="../../input_variables/vardev#fftalg">fftalg</a>=512. </li>
+</ul>
+<p>The second digit (B) is related to fourdp.f :</p>
+<ul>
+<li>0=&gt; only use Complex-to-complex FFT </li>
+<li>1=&gt; real-to-complex is also allowed (only coded for A==1, A==3 and A==5) </li>
+</ul>
+<p>The third digit (C) is related to fourwf.f :</p>
+<ul>
+<li>0=&gt; no use of zero padding </li>
+<li>1=&gt; use of zero padding (only coded for A==1, A==4) </li>
+<li>2=&gt; use of zero padding, and also combines actual FFT operations (using 2 routines from S. Goedecker) with important pre- and post-processing operations, in order to maximize cache data reuse. This is very efficient for cache architectures. (coded for A==1 and A==4, but A==4 is not yet sufficiently tested) </li>
+</ul>
+<p>Internal representation as <a href="../7">[ngfft]</a>.</p>
+<h2 id="fftcache"><strong>fftcache</strong><a class="headerlink" href="#fftcache" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Fast Fourier Transform CACHE size<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 16<br />
+Comment: todo: Not yet machine-dependent  </p>
+<p>Gives the cache size of the current machine, in Kbytes.<br />
+Internal representation as <a href="../8">[ngfft]</a>.</p>
+<h2 id="getgam_eig2nkq"><strong>getgam_eig2nkq</strong><a class="headerlink" href="#getgam_eig2nkq" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GET the GAMma phonon data EIG2NKQ from dataset<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> != 0 and <a class="wikilink" href="../../input_variables/vargs#qpt">qpt</a> != (0.0,0.0,0.0)  </p>
+<p>Relevant for second-order eigenvalue calculations using response-functions
+(<a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> != 0), and only for non-zero wavevectors <a class="wikilink" href="../../input_variables/vargs#qpt">qpt</a>.<br />
+From the electron-phonon matrix elements at some wavevector only, it is not
+possible to determine the Debye-Waller contribution : one has to know also the
+q=Gamma electron-phonon matrix elements.<br />
+The variable <a class="wikilink" href="../../input_variables/vardev#getgam_eig2nkq">getgam_eig2nkq</a> allows to transmit the information about the
+second-order derivatives of the eigenvalues for q=Gamma from the dataset where
+the calculation at Gamma was done, to the datasets for other wavevectors.</p>
+<h2 id="getwfkfine"><strong>getwfkfine</strong><a class="headerlink" href="#getwfkfine" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GET the fine grid wavefunctions from _WFK file<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
+starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a>. One should first
+read the explanations given for these latter variables.<br />
+The <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> variables is typically used to chain the calculations in
+the multi-dataset mode, since they describe from which dataset the OUTPUT
+wavefunctions are to be taken, as INPUT wavefunctions of the present dataset.<br />
+If <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a>==0, no use of previously computed output wavefunction file
+appended with _DSx_WFK is done.<br />
+If <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> is positive, its value gives the index of the dataset for
+which the output wavefunction file appended with _WFK must be used.<br />
+If <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> is -1, the output wf file with _WFK of the previous dataset
+must be taken, which is a frequently occurring case.<br />
+If <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> is a negative number, it indicates the number of datasets to
+go backward to find the needed wavefunction file. In this case, if one refers
+to a non existent data set (prior to the first), the wavefunctions are not
+initialised from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a>=0 for that
+initialisation. Thanks to this rule, the use of <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> -1 is rather
+straightforward : except for the first wavefunctions, that are not initialized
+by reading a disk file, the output wavefunction of one dataset is input of the
+next one.<br />
+NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
+to go backwards; it is not the number to be subtracted from the current
+dataset to find the proper dataset. As an example :</p>
+<div class="codehilite"><pre><span></span> ndtset 3   jdtset 1 2 4  getXXX -1
+</pre></div>
+
+
+<p>refers to dataset 2 when dataset 4 is initialized. Response-function
+calculation :</p>
+<ul>
+<li>one and only one of <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> or <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> MUST be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>Reading the fine grid wavefunction will trigger the k-points interpolation technique of the temperature dependent calculations. </li>
+</ul>
+<p>Bethe-Salpeter calculation :</p>
+<ul>
+<li>one and only one of <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> or <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> MUST be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>This variable or <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> is mandatory when <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> == 1 </li>
+</ul>
+<p><strong> This variable is experimental. In development. </strong></p>
+<h2 id="intxc"><strong>intxc</strong><a class="headerlink" href="#intxc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: INTerpolation for eXchange-Correlation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<ul>
+<li>0=&gt; do &ldquo;usual&rdquo; xc quadrature on fft grid </li>
+<li>1=&gt; do higher accuracy xc quadrature using fft grid and additional points at the centers of each cube (doubles number of grid points)&ndash;the high accuracy version is only valid for boxcut&gt;=2. If boxcut &lt; 2, the code stops. </li>
+</ul>
+<p>For RF calculations only <a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=0 is allowed yet. Moreover, the GS
+preparation runs (giving the density file and zero-order wavefunctions) must
+be done with <a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=0</p>
+<p>Prior to ABINITv2.3, the choice <a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=1 was favoured (it was the default),
+but the continuation of the development of the code lead to prefer the default
+<a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=0 . Indeed, the benefit of <a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=1 is rather small, while making
+it available for all cases is a non-negligible development effort. Other
+targets are prioritary&hellip; You will notice that many automatic tests use
+<a class="wikilink" href="../../input_variables/vardev#intxc">intxc</a>=1. Please, do not follow this historical choice for your production
+runs.</p>
+<h2 id="iomode"><strong>iomode</strong><a class="headerlink" href="#iomode" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Input-Output MODE<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../MPI_IO/">MPI_IO</a> and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1,
+0 otherwise.</p>
+<p>This option selects the format used to produce the output wavefunction files
+and the files containing densities and potentials. It mainly affects the
+creation of the output files since several parts of Abinit are able to read
+data from files independently of their format (either binary files or netcdf
+files). The possible values are:</p>
+<ul>
+<li>0 =&gt; Use standard Fortran IO (ok for sequential runs, not suitable for large parallel runs) </li>
+<li>1 =&gt; Use MPI/IO routines (ok both for sequential and large parallel runs) </li>
+<li>3 =&gt; Use NetCDF library to produce files according to the ETSF specification (ok for sequential, requires netcdf4 + hdf5 + MPI-IO support for large parallel runs) </li>
+</ul>
+<p>By default, Abinit produces Fortran files and uses parallel MPI-IO under the
+hood when these operations cannot be implemented in terms of simple Fortran
+write/read statements. For example, <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>=1 uses the MPI-IO API
+provided by your MPI library.</p>
+<p>In a nutshell, use the default value and make sure that your MPI library
+supports MPI-IO before embarking yourself in large parallel runs (HAVE_MPI_IO
+should be set to 1 in ~abinit/config.h). Many MPI libraries, nowadays, support
+the MPI-2 standard so it&rsquo;s very likely that your MPI supports parallel IO. If
+you encounter problems, please ask your sysadmin to install a MPI library with
+MPI-IO capabilities.</p>
+<p>There are cases, however, in which you would like to change the default
+behaviour. For example, you may want to generate WFK or DEN files in etsf-io
+format because you need data in this format. In this case, you have to use
+iomode==3 in the input file to override the default behaviour. Note however
+that you still need parallel IO capabilities enabled in the netcdf library if
+you want to produce netcdf files in parallel with <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>=1 (i.e.
+netcdf4 + hdf5 + MPI-IO). At present, the internal fallbacks provided by
+Abinit do not support netcdf4 so you have to link against an external netcdf
+library that supports hdf5+MPI-IO and is compatible with the mpif90 used to
+compile Abinit. See ~abinit/doc/build/config-examples/ubu_gnu_4.9_mpich.ac for
+a typical configuration file.</p>
+<p>References:</p>
+<ul>
+<li>&ldquo;Specification of an extensible and portable file format for electronic structure and crystallographic data&rdquo;, X. Gonze, C.-O. Almbladh, A. Cucca, D. Caliste, C. Freysoldt, M. Marques, V. Olevano, Y. Pouillon, M.J. Verstraete, Comput. Mat. Science 43, 1056 (2008) </li>
+<li>&ldquo;Sharing electronic structure and crystallographic data with ETSF_IO&rdquo;, D. Caliste, Y. Pouillon, M.J. Verstraete, V. Olevano, X. Gonze, Comput. Physics Communications 179, 748 (2008) </li>
+<li>see also <a href="http://www.etsf.eu/fileformats"> http://www.etsf.eu/fileformats </a> . </li>
+</ul>
+<h2 id="iprcfc"><strong>iprcfc</strong><a class="headerlink" href="#iprcfc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for PReConditioner of Force Constants<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used when <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;0, to define the SCF preconditioning scheme. Potential-
+based preconditioning schemes for the SCF loop are still under development.<br />
+The present parameter (force constant part) describes the way a change of
+force is derived from a change of atomic position.<br />
+Supported values :</p>
+<ul>
+<li>0 =&gt; hessian is the identity matrix </li>
+<li>1 =&gt; hessian is 0.5 times the identity matrix </li>
+<li>2 =&gt; hessian is 0.25 times the identity matrix </li>
+<li>-1=&gt; hessian is twice the identity matrix </li>
+<li>&hellip; (simply corresponding power of 2 times the identity matrix) </li>
+</ul>
+<p>No meaning for RF calculations.</p>
+<h2 id="irandom"><strong>irandom</strong><a class="headerlink" href="#irandom" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for the choice of the RANDOM number generator<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 3  </p>
+<p>For the time being, only used when <a class="wikilink" href="../../input_variables/varrlx#imgmov">imgmov</a>=9 (Langevin Path-Integral
+Molecular Dynamics).<br />
+<a class="wikilink" href="../../input_variables/vardev#irandom">irandom</a> defines the random number generator.  </p>
+<p>Supported values :</p>
+<ul>
+<li>1 =&gt; &ldquo;uniformrandom&rdquo;, delivered with ABINIT package (initially comes from numerical recipes). </li>
+<li>2 =&gt; intrinsic Fortran 90 random number generator. </li>
+<li>3 =&gt; &ldquo;ZBQ&rdquo; non-deterministic random number generator by R. Chandler and P. Northrop. (Available at [). </li>
+</ul>
+<p><a class="wikilink" href="../../input_variables/vardev#irandom">irandom</a>=3 is strongly advised when performing Molecular Dynamics restarts
+(avoids bias).</p>
+<h2 id="irdwfkfine"><strong>irdwfkfine</strong><a class="headerlink" href="#irdwfkfine" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer that governs the ReaDing of the grid _WFK file on the FINE grid<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Indicates eventual starting wavefunctions. As alternative, one can use the
+input variables <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a>.  </p>
+<p>Ground-state calculation :</p>
+<ul>
+<li>only <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> and <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> have a meaning </li>
+<li>at most one of <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> or <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> can be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state fine grid calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+</ul>
+<p>Response-function calculation :</p>
+<ul>
+<li>one and only one of <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> or <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> MUST be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>Reading the fine grid wavefunction will trigger the k-points interpolation technique of the temperature dependent calculations. </li>
+</ul>
+<p>Bethe-Salpeter calculation :</p>
+<ul>
+<li>one and only one of <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> or <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> MUST be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/vardev#irdwfkfine">irdwfkfine</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>This variable or <a class="wikilink" href="../../input_variables/vardev#getwfkfine">getwfkfine</a> is mandatory when <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> = 1 </li>
+</ul>
+<p><strong> This variable is experimental. In development. </strong></p>
+<h2 id="isecur"><strong>isecur</strong><a class="headerlink" href="#isecur" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for level of SECURity choice<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>In the presently used algorithms, there is a compromise between speed and
+robustness, that can be tuned by using <a class="wikilink" href="../../input_variables/vardev#isecur">isecur</a>.<br />
+If <a class="wikilink" href="../../input_variables/vardev#isecur">isecur</a> =0, an extrapolation of out-of-line data is allowed, and might
+save one non-SCF calculation every two line minimisation when some stability
+conditions are fulfilled (since there are 2 non-SCF calculations per line
+minimisation, 1 out of 4 is saved)<br />
+Using <a class="wikilink" href="../../input_variables/vardev#isecur">isecur</a>=1 or higher integers will raise gradually the threshold to
+make extrapolation.<br />
+Using <a class="wikilink" href="../../input_variables/vardev#isecur">isecur</a>=-2 will allow to save 2 non-SCF calculations every three line
+minimisation, but this can make the algorithm unstable. Lower values of
+<a class="wikilink" href="../../input_variables/vardev#isecur">isecur</a> allows for more (tentative) savings. In any case, there must be one
+non-SCF computation per line minimisation.<br />
+No meaning for RF calculations yet.</p>
+<h2 id="istatr"><strong>istatr</strong><a class="headerlink" href="#istatr" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for STATus file rate<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Comment: Values lower than 10 may not work on some machines.  </p>
+<p>Govern the rate of output of the status file. This status file is written when
+the number of the call to the status subroutine is equal to &lsquo; <strong> istatshft </strong>
+&lsquo; modulo &lsquo;<a class="wikilink" href="../../input_variables/vardev#istatr">istatr</a>&rsquo;, so that it is written once every &lsquo;<a class="wikilink" href="../../input_variables/vardev#istatr">istatr</a>&lsquo; call.
+When &lsquo;<a class="wikilink" href="../../input_variables/vardev#istatr">istatr</a>&lsquo;=0, there is no writing of a status file (which is the
+default).</p>
+<h2 id="istatshft"><strong>istatshft</strong><a class="headerlink" href="#istatshft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for STATus file SHiFT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Govern the rate of output of the status file. This status file is written when
+the number of the call to the status subroutine is equal to &lsquo;<a class="wikilink" href="../../input_variables/vardev#istatshft">istatshft</a>&lsquo;
+modulo &lsquo; <strong> istatr </strong> &lsquo;, so that it is written once every &lsquo; <strong> istatr </strong> &lsquo;
+call. There is also a writing for each of the 5 first calls, and the 10th
+call.</p>
+<h2 id="istwfk"><strong>istwfk</strong><a class="headerlink" href="#istwfk" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Integer for choice of STorage of WaveFunction at each k point<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>)<br />
+Default value: *0<br />
+Comment: For RF calculations, the Default is not used : <b>istwfk</b> is forced to be 1 deep inside the code, for all k points. For spin-orbit calculations (<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2), <b>istwfk</b> is also forced to be 1, for all k points.  </p>
+<p>Control the way the wavefunction for each k-point is stored inside ABINIT, in
+reciprocal space.<br />
+For the GS calculations, in the &ldquo;cg&rdquo; array containing the wavefunction
+coefficients, there is for each k-point and each band, a segment
+cg(1:2,1:npw). The &lsquo;full&rsquo; number of plane wave is determined by <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>.
+However, if the k-point coordinates are build only from zeroes and halves (see
+list below), the use of time-reversal symmetry (that connects coefficients)
+has been implemented, in order to use real-to-complex FFTs (see <a class="wikilink" href="../../input_variables/vardev#fftalg">fftalg</a>),
+and to treat explicitly only half of the number of plane waves (this being
+used as &lsquo;npw&rsquo;).<br />
+For the RF calculations, there is not only the &ldquo;cg&rdquo; array, but also the &ldquo;cgq&rdquo;
+and &ldquo;cg1&rdquo; arrays. For the time-reversal symmetry to decrease the number of
+plane waves of these arrays, the q vector MUST be (0 0 0). Then, for each k
+point, the same rule as for the RF can be applied.<br />
+WARNING (991018) : for the time being, the time-reversal symmetry cannot be
+used in the RF calculations.</p>
+<ul>
+<li>1=&gt; do NOT take advantage of the time-reversal symmetry </li>
+<li>2=&gt; use time-reversal symmetry for k=( 0 0 0 ) </li>
+<li>3=&gt; use time-reversal symmetry for k=(1/2 0 0 ) </li>
+<li>4=&gt; use time-reversal symmetry for k=( 0 0 1/2) </li>
+<li>5=&gt; use time-reversal symmetry for k=(1/2 0 1/2) </li>
+<li>6=&gt; use time-reversal symmetry for k=( 0 1/2 0 ) </li>
+<li>7=&gt; use time-reversal symmetry for k=(1/2 1/2 0 ) </li>
+<li>8=&gt; use time-reversal symmetry for k=( 0 1/2 1/2) </li>
+<li>9=&gt; use time-reversal symmetry for k=(1/2 1/2 1/2) </li>
+<li>0=&gt; (preprocessed) for each k point, choose automatically the appropriate time-reversal option when it is allowed, and chose <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a>=1 for all the other k points. </li>
+</ul>
+<h2 id="lotf_classic"><strong>lotf_classic</strong><a class="headerlink" href="#lotf_classic" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: LOTF CLASSIC model for glue model<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 5  </p>
+<p>Glue model used in LOTF.<br />
+For the moment it is imposed to be 5.</p>
+<h2 id="lotf_nitex"><strong>lotf_nitex</strong><a class="headerlink" href="#lotf_nitex" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: LOTF Number of ITerations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 10  </p>
+<p>Set the number of Molecular Dynamics iterations which are computed by LOTF.</p>
+<h2 id="lotf_nneigx"><strong>lotf_nneigx</strong><a class="headerlink" href="#lotf_nneigx" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: LOTF max Number of NEIGhbours<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 5  </p>
+<p>Set the max number of Neighbours used in the LOTF method.<br />
+For the moment it is imposed to be 40.</p>
+<h2 id="lotf_version"><strong>lotf_version</strong><a class="headerlink" href="#lotf_version" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: LOTF VERSION of MD algorithm<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2  </p>
+<p>Set the MD algorithm in the LOTF method.<br />
+For the moment it is imposed to be 2.</p>
+<h2 id="macro_uj"><strong>macro_uj</strong><a class="headerlink" href="#macro_uj" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Sets proper input values for the determination of U and J i.e. for <a class="wikilink" href="../../input_variables/vardev#pawujat">pawujat</a>
+(first atom treated with PAW+U), <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> (=1), <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a> (=10^(-8)),
+<a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> (=255), <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> (=0.45), <a class="wikilink" href="../../input_variables/varff#atvshift">atvshift</a> (<a class="wikilink" href="../../input_variables/vardev#pawujat">pawujat</a>) <a class="wikilink" href="../../input_variables/vardev#pawujv">pawujv</a>).
+Do not overwrite these variables manually unless you know what you do.</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>=1 (and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2) Standard procedure to determine U on atom pawujat through a shift of the potential on both spin channels. </li>
+<li><a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>=1 (and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1) Non standard procedure to determine U from potential shift on atom pawujat (experimental). </li>
+<li><a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>=2 (and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2) Non standard procedure to determine U from potential shift on atom pawujat through a shift on spin channel 1 on this atom and the response on this channel (experimental). </li>
+<li><a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>=3 (and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2) Standard procedure to determine J from potential shift on spin channel 1 on atom pawujat and response on spin channel 2 (experimental). </li>
+</ul>
+<p>Determination of U and J can be done only if the symmetry of the atomic
+arrangement is reduced and the atom pawujat is not connected to any other atom
+by symmetry relations (either input reduced symmetries manually, define
+concerned atom as a separate atomic species or shift concerned atom from ideal
+position).</p>
+<h2 id="maxnsym"><strong>maxnsym</strong><a class="headerlink" href="#maxnsym" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MAXimum Number of SYMetries<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 384  </p>
+<p>Gives the maximum number of spatial symetries allowed in the memory.<br />
+The default value is sufficient for most applications; it has to be increase
+in the case of the use of a supercell (unit cell identically repeated).</p>
+<h2 id="mem_test"><strong>mem_test</strong><a class="headerlink" href="#mem_test" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MEMory TEST<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>This variable controls the memory test done in the memana routine. Possible
+values:</p>
+<ul>
+<li>0 no test on the available memory is performed </li>
+<li>1 the routine tries to allocate the estimated memory, for testing purposes, and if a failure occurs, the routine stops. </li>
+<li>2 like 1, but before stopping, the routine will provide an estimation of the available memory. </li>
+</ul>
+<h2 id="mqgrid"><strong>mqgrid</strong><a class="headerlink" href="#mqgrid" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Maximum number of Q-space GRID points for pseudopotentials<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 3001  </p>
+<p>Govern the size of the one-dimensional information related to
+pseudopotentials, in reciprocal space : potentials, or projector functions.</p>
+<h2 id="nbdblock"><strong>nbdblock</strong><a class="headerlink" href="#nbdblock" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of BanDs in a BLOCK<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>In case of non-standard, blocked algorithms for the optimization of the
+wavefunctions (that is, if <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=4):</p>
+<ul>
+<li>if <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=4, <a class="wikilink" href="../../input_variables/vardev#nbdblock">nbdblock</a> defines the number of blocks (the number of bands in the block is then <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/<a class="wikilink" href="../../input_variables/vardev#nbdblock">nbdblock</a> ). </li>
+</ul>
+<h2 id="nc_xccc_gspace"><strong>nc_xccc_gspace</strong><a class="headerlink" href="#nc_xccc_gspace" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Norm-Conserving pseudopotentials - use XC Core-Correction in G-SPACE<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==0,
+1 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1,
+0 otherwise.</p>
+<p>Comment: 0 when <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=0, 1 when <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1  </p>
+<p>Historically, Abinit treats the model core charge used for the non-linear core
+correction in real space. Alternatively, it is possible to instruct the code
+to compute the core charge in G-space following the same approach used in the
+PAW code. The G-space formalism is more accurate than the interpolation in
+real space, especially when derivatives of the model core charge are needed,
+e.g. DFPT. Preliminary tests showed that the violation of the acoustic sum
+rule is reduced when <a class="wikilink" href="../../input_variables/vardev#nc_xccc_gspace">nc_xccc_gspace</a>==1 , especially for LDA. It is worth
+stressing, however, that <a class="wikilink" href="../../input_variables/vardev#nc_xccc_gspace">nc_xccc_gspace</a>==1 should be used only in
+conjunction with NC pseudos whose model core charge that decays quickly in
+G-space. Several NC pseudos available in the Abinit table are not optimized
+for the G-space formalism and users are strongly invited to perform
+convergence studies with respect to ecut before using this option.</p>
+<h2 id="nctime"><strong>nctime</strong><a class="headerlink" href="#nctime" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: NetCdf TIME between output of molecular dynamics informations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>When <a class="wikilink" href="../../input_variables/vardev#nctime">nctime</a> is non-zero, the molecular dynamics information is output in
+NetCDF format, every <a class="wikilink" href="../../input_variables/vardev#nctime">nctime</a> time step. Here is the content of an example
+file :</p>
+<div class="codehilite"><pre><span></span><span class="nt">netcdf</span> <span class="nt">md32</span><span class="p">.</span><span class="nc">outH_moldyn1</span> <span class="p">{</span>
+<span class="n">dimensions</span><span class="p">:</span>
+   <span class="n">time</span> <span class="o">=</span> <span class="n">UNLIMITED</span> <span class="p">;</span> <span class="err">//</span> <span class="err">(11</span> <span class="err">currently)</span>
+   <span class="err">DimTensor</span> <span class="err">=</span> <span class="err">6</span> <span class="p">;</span>
+   <span class="err">DimCoord</span> <span class="err">=</span> <span class="err">3</span> <span class="p">;</span>
+   <span class="err">NbAtoms</span> <span class="err">=</span> <span class="err">32</span> <span class="p">;</span>
+   <span class="err">DimVector</span> <span class="err">=</span> <span class="err">3</span> <span class="p">;</span>
+   <span class="err">DimScalar</span> <span class="err">=</span> <span class="err">1</span> <span class="p">;</span>
+<span class="n">variables</span><span class="p">:</span>
+   <span class="kc">double</span> <span class="nf">E_pot</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="p">;</span>
+      <span class="n">E_pot</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;hartree&quot;</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">E_kin(time)</span> <span class="p">;</span>
+      <span class="n">E_kin</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;hartree&quot;</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">Stress(time,</span> <span class="err">DimTensor)</span> <span class="p">;</span>
+      <span class="n">Stress</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;hartree/Bohr^3&quot;</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">Position(time,</span> <span class="err">DimCoord,</span> <span class="err">NbAtoms)</span> <span class="p">;</span>
+      <span class="n">Position</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;Bohr&quot;</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">Celerity(time,</span> <span class="err">DimCoord,</span> <span class="err">NbAtoms)</span> <span class="p">;</span>
+      <span class="n">Celerity</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;Bohr/(atomic time unit)&quot;</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">PrimitiveVector1(DimVector)</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">PrimitiveVector2(DimVector)</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">PrimitiveVector3(DimVector)</span> <span class="p">;</span>
+   <span class="err">double</span> <span class="err">Cell_Volume(DimScalar)</span> <span class="p">;</span>
+      <span class="n">Cell_Volume</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;Bohr^3&quot;</span> <span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="nloc_alg"><strong>nloc_alg</strong><a class="headerlink" href="#nloc_alg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Non LOCal ALGorithm<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 4  </p>
+<p>Allows to choose the algorithm for non-local operator application. On super-
+scalar architectures, the default <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>=4 is the best.<br />
+More detailed explanations:  </p>
+<p>- <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>=2 : Should be efficient on vector machines. It is indeed the
+fastest algorithm for the NEC, but actual tests on Fujitsu machine did not
+gave better performances than the other options.<br />
+- <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>=3 : same as <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>==2, but the loop order is inverted.<br />
+- <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>=4 : same as <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a>==3, but maximal use of registers has
+been coded. This should be especially efficient on scalar and super-scalar
+machines. This has been confirmed by tests.  </p>
+<p>Note: internally, <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a> is stored in _ nloalg(1) _ . See also
+<a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a> for the tuning of the memory used in the non-local operator
+application.</p>
+<h2 id="nloc_mem"><strong>nloc_mem</strong><a class="headerlink" href="#nloc_mem" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Non LOCal MEMOry<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1,
+1 otherwise.</p>
+<p>Controls the memory use for the application of the non-local operator.<br />
+More detailed explanations:  </p>
+<p>- <a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a>==1 : (k+G) vectors are not precomputed, in order to save
+memory space.<br />
+- <a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a>==2 : (k+G) vectors are precomputed, once per k-point.<br />
+- <a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a>==-1 or -2 : Negative values of <a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a> correspond
+positive ones, where the phase precomputation has been suppressed, in order to
+save memory space, as an array _ double precision :: ph3d(2,npw,<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>) _
+is saved (typically half the space needed for the wavefunctions at 1 k point -
+this corresponds to the silicon case). However, the computation of phases
+inside nonlop is somehow time-consuming.  </p>
+<p>Note: internally, sign(<a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a>) is stored in _ nloalg(2) _ and
+abs(<a class="wikilink" href="../../input_variables/vardev#nloc_mem">nloc_mem</a>)-1 is stored in _ nloalg(3) _ . See also <a class="wikilink" href="../../input_variables/vardev#nloc_alg">nloc_alg</a> for the
+algorithm for the non-local operator application.</p>
+<h2 id="nnsclo"><strong>nnsclo</strong><a class="headerlink" href="#nnsclo" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Non-Self Consistent LOops<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the maximum number of non-self-consistent loops of <a class="wikilink" href="../../input_variables/vargs#nline">nline</a> line
+minimisations, in the SCF case (when <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &gt;0). In the case <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>
+&lt;=0 , the number of non-self-consistent loops is determined by <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>.<br />
+The Default value of 0 &ndash; for standard plane-wave calculations &ndash; corresponds
+to make the two first fixed potential determinations of wavefunctions have 2
+non-self consistent loops, and the next ones to have only 1 non-self
+consistent loop.<br />
+The Default value of 0 &ndash; for wavelets calculations (<a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a>=1) &ndash;
+corresponds to make 2 steps with 3 non-self consistent loops , 2 steps with 2
+non-self consistent loops, then the next ones with 1 non-self consistent loop.</p>
+<h2 id="nnsclohf"><strong>nnsclohf</strong><a class="headerlink" href="#nnsclohf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Non-Self Consistent LOops for (Hartree)-Fock exact exchange<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../input_variables/varint#usefock">usefock</a>==1,
+0 otherwise.</p>
+<p>Gives the maximum number of loops with non-self-consistent occupied states
+used to calculate Fock exact exchange, in the SCF case.<br />
+The Default value is 0 when <a class="wikilink" href="../../input_variables/varint#usefock">usefock</a> = 0. Default value is 1 when
+<a class="wikilink" href="../../input_variables/varint#usefock">usefock</a> = 1 and correspond to update occupied wavefunctions at each self-
+consistent loop.</p>
+<h2 id="normpawu"><strong>normpawu</strong><a class="headerlink" href="#normpawu" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: NORMalize atomic PAW+U projector<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Default value: 0  </p>
+<p>Defines whether the atomic wave function (used as projectors in PAW+U) should
+be renormalized to 1 within PAW sphere.</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vardev#normpawu">normpawu</a>=0 : leave projector </li>
+<li><a class="wikilink" href="../../input_variables/vardev#normpawu">normpawu</a>=1 : renormalize </li>
+</ul>
+<h2 id="npulayit"><strong>npulayit</strong><a class="headerlink" href="#npulayit" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of PULAY ITerations for SC mixing<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 7<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> in [7,17]  </p>
+<p>Gives the number of previous iterations involved in Pulay mixing (mixing
+during electronic SC iterations).</p>
+<h2 id="nscforder"><strong>nscforder</strong><a class="headerlink" href="#nscforder" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Nth - SCaling Function ORDER<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 16  </p>
+<p>This variable controls the order of used scaling functions when the Hartree
+potential is computed using the Poisson solver (see <a class="wikilink" href="../../input_variables/vargs#icoulomb">icoulomb</a> imput
+variable). This variable is of seldom use since the default value is large
+enough. Nonetheless, possible values are 8, 14, 16, 20, 24, 30, 40, 50, 60,
+100. Values greater than 20 are included in ABINIT for test purposes only.</p>
+<h2 id="optforces"><strong>optforces</strong><a class="headerlink" href="#optforces" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OPTions for the calculation of FORCES<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a> or <a class="wikilink" href="../../input_variables/varbas#tolrff">tolrff</a> != 0,
+2 otherwise.</p>
+<p>Allows to choose options for the calculation of forces.</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vardev#optforces">optforces</a>=0 : the forces are set to zero, and many steps of the computation of forces are skipped </li>
+<li><a class="wikilink" href="../../input_variables/vardev#optforces">optforces</a>=1 : calculation of forces at each SCF iteration, allowing to use forces as criterion to stop the SCF cycles </li>
+<li><a class="wikilink" href="../../input_variables/vardev#optforces">optforces</a>=2 : calculation of forces at the end of the SCF iterations (like the stresses) </li>
+</ul>
+<h2 id="optnlxccc"><strong>optnlxccc</strong><a class="headerlink" href="#optnlxccc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Allows to choose options for the calculation of non-linear XC correction. At
+present, only relevant for the FHI type of pseudopotentials, with pspcod=6 .</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vardev#optnlxccc">optnlxccc</a>=1 : uses the old psp6cc.f routine, with inconsistent treatment of real-space derivatives of the core function (computed in this routine, while splined in the other parts of the code) </li>
+<li><a class="wikilink" href="../../input_variables/vardev#optnlxccc">optnlxccc</a>=2 : consistent calculation derivatives, in the psp6cc_dhr.f routine from DHamann. </li>
+</ul>
+<h2 id="ortalg"><strong>ortalg</strong><a class="headerlink" href="#ortalg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: ORThogonalisation ALGorithm<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: -2 if <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a> &gt;= 10 ,
+2 otherwise.</p>
+<p>Allows to choose the algorithm for orthogonalisation.<br />
+Positive or zero values make two projections per line minimisation, one before
+the preconditioning, one after. This is the clean application of the band-by-
+band CG gradient for finding eigenfunctions.<br />
+Negative values make only one projection per line minimisation.<br />
+The orthogonalisation step is twice faster, but the convergence is less good.
+This actually calls to a better understanding of this effect.<br />
+<a class="wikilink" href="../../input_variables/vardev#ortalg">ortalg</a>=0, 1 or -1 is the conventional coding.<br />
+<a class="wikilink" href="../../input_variables/vardev#ortalg">ortalg</a>=2 or -2 try to make better use of existing registers on the
+particular machine one is running.<br />
+More demanding use of registers is provided by <a class="wikilink" href="../../input_variables/vardev#ortalg">ortalg</a>=3 or -3, and so on.<br />
+The maximal value is presently 4 and -4.<br />
+Tests have shown that <a class="wikilink" href="../../input_variables/vardev#ortalg">ortalg</a>=2 or -2 is suitable for use on the available
+platforms.</p>
+<h2 id="papiopt"><strong>papiopt</strong><a class="headerlink" href="#papiopt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAPI OPTion<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p><a href="http://icl.cs.utk.edu/papi/index.html"> PAPI </a> aims to provide the tool
+designer and application engineer with a consistent interface and methodology
+for use of the performance counter hardware found in most major
+microprocessors. PAPI enables software engineers to see, in near real time,
+the relation between software performance and processor events.<br />
+This option can be used only when ABINIT has been compiled with the <code>--enable-papi</code> configure option.<br />
+If <a class="wikilink" href="../../input_variables/vardev#papiopt">papiopt</a>=1, then PAPI counters are used instead of the usual time()
+routine. All the timing output of ABINIT is then done with PAPI values. The
+measurements are more accurate and give also access to the flops of the
+calculation.</p>
+<h2 id="pawprt_b"><strong>pawprt_b</strong><a class="headerlink" href="#pawprt_b" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAW PRinT band<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Forces the output of the all-electron wavefunction for only a single band. To
+be used in conjuction with: <strong><br />
+<a class="wikilink" href="../../input_variables/varpaw#pawprtwf">pawprtwf</a>=1 </strong> and <a class="wikilink" href="../../input_variables/vardev#pawprt_k">pawprt_k</a>. The indexing of the bands start with one
+for the lowest occupied band and goes up from there.</p>
+<h2 id="pawprt_k"><strong>pawprt_k</strong><a class="headerlink" href="#pawprt_k" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAW PRinT K-point<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Forces the output of the all-electron wavefunction for only a single k-point.
+To be used in conjuction with: <strong><br />
+<a class="wikilink" href="../../input_variables/varpaw#pawprtwf">pawprtwf</a>=1 </strong> and <a class="wikilink" href="../../input_variables/vardev#pawprt_b">pawprt_b</a>. The indexing follows the order in ouptput
+of the internal variable <strong> kpt </strong> in the beginning of the run.</p>
+<h2 id="pawujat"><strong>pawujat</strong><a class="headerlink" href="#pawujat" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAW+macro_UJ, ATom number<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Comment:  i.e. the first atom treated with PAW+U.  </p>
+<p>Determines the atom for which U (or J) should be determined. See also
+<a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>.</p>
+<h2 id="pawujrad"><strong>pawujrad</strong><a class="headerlink" href="#pawujrad" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAW+macro_UJ, sphere RADius<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 20 a.u.  </p>
+<p>The sphere radius serves to extrapolate the U value calculated at r_paw to a
+larger sphere radius. See also <a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>. As most projector functions are
+localized within r_paw to ≈80%, 20 a.u. contains ≈100% of the wavefunction and
+corresponds to r_paw -&gt; ∞.</p>
+<h2 id="pawujv"><strong>pawujv</strong><a class="headerlink" href="#pawujv" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PAW+macro_UJ, potential shift (V)<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.1 eV  </p>
+<p>Amplitude of the potential shift for the determination of U (or J). See also
+<a class="wikilink" href="../../input_variables/vardev#macro_uj">macro_uj</a>.</p>
+<h2 id="plowan_bandf"><strong>plowan_bandf</strong><a class="headerlink" href="#plowan_bandf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions BAND Final<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the upper band to include in the calculation of Wannier functions</p>
+<h2 id="plowan_bandi"><strong>plowan_bandi</strong><a class="headerlink" href="#plowan_bandi" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions BAND Initial<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the lower band to include in the calculation of Wannier functions</p>
+<h2 id="plowan_compute"><strong>plowan_compute</strong><a class="headerlink" href="#plowan_compute" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions COMPUTATION<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Activate computation of Projected Local Orbital Wannier functions (PLO
+Wannier) and corresponding band structure. Variables <a class="wikilink" href="../../input_variables/vardev#plowan_bandi">plowan_bandi</a>,
+<a class="wikilink" href="../../input_variables/vardev#plowan_bandf">plowan_bandf</a>, <a class="wikilink" href="../../input_variables/vardev#plowan_natom">plowan_natom</a>, <a class="wikilink" href="../../input_variables/vardev#plowan_nbl">plowan_nbl</a>, <a class="wikilink" href="../../input_variables/vardev#plowan_iatom">plowan_iatom</a>,
+<a class="wikilink" href="../../input_variables/vardev#plowan_lcalc">plowan_lcalc</a>, <a class="wikilink" href="../../input_variables/vardev#plowan_projcalc">plowan_projcalc</a> are mandatory to precise the nature of
+the projections.</p>
+<ul>
+<li>0=&gt; Default value: do not activate calculation of PLO Wannier. </li>
+<li>1=&gt; Compute PLO Wannier and band structure </li>
+<li>2=&gt; Compute PLO Wannier and band structure. In this case, the coupling in k-space between blocks of Wannier functions belonging to different angular momenta or atoms is removed. </li>
+</ul>
+<p>Other related variables are <a class="wikilink" href="../../input_variables/vardev#plowan_realspace">plowan_realspace</a>, <a class="wikilink" href="../../input_variables/vardev#plowan_nt">plowan_nt</a>,
+<a class="wikilink" href="../../input_variables/vardev#plowan_it">plowan_it</a>. The implementation is not symetrized over k-point and not
+parallelized. (The calculation of projections is detailed in <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.205112"> Phys. Rev. B
+77, 205112, (2008)
+</a> )</p>
+<h2 id="plowan_iatom"><strong>plowan_iatom</strong><a class="headerlink" href="#plowan_iatom" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions, Index of ATOM<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the indices of the <a class="wikilink" href="../../input_variables/vardev#plowan_natom">plowan_natom</a> atoms on which the projections will
+be done.</p>
+<h2 id="plowan_it"><strong>plowan_it</strong><a class="headerlink" href="#plowan_it" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  Index of Translation.<br />
+Variable type: integer<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vardev#plowan_nt">plowan_nt</a>)<br />
+Default value: 0  </p>
+<p>Requires <a class="wikilink" href="../../input_variables/vardev#plowan_realspace">plowan_realspace</a> to be greater than 0 and <a class="wikilink" href="../../input_variables/vardev#plowan_nt">plowan_nt</a> to be
+greater than 0. Precise a given set of selected real space translation by
+using the real space vectors basis. These atoms are used to define Wannier
+functions in real space. These real space Wannier functions are used as a
+basis to compute the Hamiltonian.</p>
+<h2 id="plowan_lcalc"><strong>plowan_lcalc</strong><a class="headerlink" href="#plowan_lcalc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  L values to use for CALCulation<br />
+Variable type: integer<br />
+Dimensions: (sum(<a class="wikilink" href="../../input_variables/vardev#plowan_nbl">plowan_nbl</a>))<br />
+Default value: -1  </p>
+<p>Gives the <a class="wikilink" href="../../input_variables/vardev#plowan_nbl">plowan_nbl</a> values of angular momenta for each atom, in the order
+of the atoms as given in <a class="wikilink" href="../../input_variables/vardev#plowan_iatom">plowan_iatom</a>.</p>
+<h2 id="plowan_natom"><strong>plowan_natom</strong><a class="headerlink" href="#plowan_natom" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions, Number of ATOMs<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the number of atoms on which the projection will be done</p>
+<h2 id="plowan_nbl"><strong>plowan_nbl</strong><a class="headerlink" href="#plowan_nbl" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  NumBer of L values<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vardev#plowan_natom">plowan_natom</a>)<br />
+Default value: 0  </p>
+<p>Gives the total number of angular momenta (over all atoms) to compute the
+projections.</p>
+<h2 id="plowan_nt"><strong>plowan_nt</strong><a class="headerlink" href="#plowan_nt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
+energy are computed<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Requires <a class="wikilink" href="../../input_variables/vardev#plowan_realspace">plowan_realspace</a> to be greater than 0. Gives a number of selected
+atoms. These atoms are used to define Wannier functions in real space. These
+real space Wannier functions are used as a basis to compute the Hamiltonian.</p>
+<h2 id="plowan_projcalc"><strong>plowan_projcalc</strong><a class="headerlink" href="#plowan_projcalc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation<br />
+Variable type: integer<br />
+Dimensions: (sum(<a class="wikilink" href="../../input_variables/vardev#plowan_nbl">plowan_nbl</a>))<br />
+Default value: -1  </p>
+<p>Gives the <a class="wikilink" href="../../input_variables/vardev#plowan_nbl">plowan_nbl</a> values of projectors for each atom, in the order of
+the atoms as given in <a class="wikilink" href="../../input_variables/vardev#plowan_iatom">plowan_iatom</a>. The index i for the projectors refers
+to the ith number on line orbitals of the PAW atomic data file.</p>
+<h2 id="plowan_realspace"><strong>plowan_realspace</strong><a class="headerlink" href="#plowan_realspace" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Can take the following values:</p>
+<ul>
+<li>0=&gt; Default value: do not activate calculation of real space Wannier functions. </li>
+<li>1=&gt; Compute PLO Wannier in real space for analysis. These data can also be used in a following dataset to perform a Wannier interpolation. </li>
+<li>2=&gt; Do simple Wannier Interpolation for a given k points starting from real space Wannier function Hamiltonian computed in a preceding dataset. </li>
+</ul>
+<h2 id="prepscphon"><strong>prepscphon</strong><a class="headerlink" href="#prepscphon" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PREPare Self-Consistent PHONon calculation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Print PCINFO, PHFREQ, and PHVEC files, for use with self-consistent phonon
+runs, after a perturbation calculation. Only prints out files for the present
+q-point, and there is presently no tool to symmetrize or merge these files, so
+use anaddb instead (with prtscphon input variable). The abinit input variable
+is destined to someday bypass the use of anaddb for scphon calculations.</p>
+<h2 id="prtbltztrp"><strong>prtbltztrp</strong><a class="headerlink" href="#prtbltztrp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT output for BoLTZTRaP code<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Print out geometry (_BLZTRP_GEOM) and eigenenergy (_BLZTRP_EIGEN) files for
+the <a href="https://www.imc.tuwien.ac.at/forschungsbereich_theoretische_chemie/forschungsgruppen/prof_dr_gkh_madsen_theoretical_materials_chemistry/boltztrap/"> BoltzTraP
+code</a>
+by Georg Madsen.</p>
+<h2 id="prtcif"><strong>prtcif</strong><a class="headerlink" href="#prtcif" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT Crystallographic Information File<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If set to 1, a CIF file is output with the crystallographic data for the
+present run (cell size shape and atomic positions).</p>
+<h2 id="prtdipole"><strong>prtdipole</strong><a class="headerlink" href="#prtdipole" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT DIPOLE<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Print out dipole of unit cell, calculated in real space for the primitive cell
+only. Under development.</p>
+<h2 id="prtnest"><strong>prtnest</strong><a class="headerlink" href="#prtnest" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT NESTing function<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If set to 1, the nesting function for the k-point grid is printed. For the
+moment the path in q space for the nesting function is fixed, but will become
+an input as well.</p>
+<h2 id="prtposcar"><strong>prtposcar</strong><a class="headerlink" href="#prtposcar" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PRinT POSCAR file<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Print out VASP-style POSCAR and FORCES files, for use with PHON or frophon
+codes for frozen phonon calculations. See the associated script in
+~abinit/extras/post_processing/phondisp2abi.py for further details on
+interfacing with PHON, PHONOPY, etc&hellip;</p>
+<h2 id="recefermi"><strong>recefermi</strong><a class="headerlink" href="#recefermi" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - initial guess  of the FERMI Energy<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). In the first SCF calculation it
+fixes the initial guess for the Fermi energy.</p>
+<h2 id="recgratio"><strong>recgratio</strong><a class="headerlink" href="#recgratio" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - Grid RATIO<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). It represents the ratio of the two
+grid step: <a class="wikilink" href="../../input_variables/vardev#recgratio">recgratio</a>=fine_step/coarse_step and it is bigger or equal than
+1. It introduces a double-grid system which permits to compute the electronic
+density on a coarse grid, using a fine grid (defined by <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>) in the
+discretisation of the green kernel (see <a class="wikilink" href="../../input_variables/vardev#recptrott">recptrott</a>). Successively the
+density and the recursion coefficients are interpolated on the fine grid by
+FFT interpolation. Note that ngfft/recgratio=number of points of the coarse
+grid has to be compatible with the parallelization parameters.</p>
+<h2 id="recnpath"><strong>recnpath</strong><a class="headerlink" href="#recnpath" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - Number of point for PATH integral calculations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 500  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). Determine the number of
+discretisation points to compute some path integral in the recursion method ;
+those path integrals are used to compute the entropy and the eigenvalues
+energy. during the latest SFC cycles.</p>
+<h2 id="recnrec"><strong>recnrec</strong><a class="headerlink" href="#recnrec" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - Number of RECursions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 10  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). Determine the maximum order of
+recursion, that is the dimension of the krylov space we use to compute
+density. If the precision set by <a class="wikilink" href="../../input_variables/vardev#rectolden">rectolden</a> is reached before that order,
+the recursion method automatically stops.</p>
+<h2 id="recptrott"><strong>recptrott</strong><a class="headerlink" href="#recptrott" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - TROTTer parameter<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). Determine the trotter parameter
+used to compute the exponential of the hamiltonian in the recursion method:
+exp(-beta<em>(-Delta + V)) ~ (exp(-beta/(4</em>recptrott) V) exp(-beta/(4<em>recptrott)
+Delta) exp(-beta/(4</em>recptrott) V))^(2<em>recptrott). If set to 0, we use
+recptrott = 1/2 in the above formula. Increasing <a class="wikilink" href="../../input_variables/vardev#recptrott">recptrott</a> improve the
+accuracy of the trotter formula, but increase the dicretisation error: it may
+be necessary to increase <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>. The discretisation error is essentially
+the discretisation error of the green kernel exp((recptrott/beta</em>|r|^2)) on
+the ngfft grid.</p>
+<h2 id="recrcut"><strong>recrcut</strong><a class="headerlink" href="#recrcut" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - CUTing Radius<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). Used to improve the computational
+time in the case of the recursion method in a large cell: the density at a
+point will be computed with taking account only of a sphere of radius
+<a class="wikilink" href="../../input_variables/vardev#recrcut">recrcut</a>.</p>
+<h2 id="rectesteg"><strong>rectesteg</strong><a class="headerlink" href="#rectesteg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - TEST on Electron Gas<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). It is used to test an electron gas
+by putting the ion potential equal to zero.</p>
+<h2 id="rectolden"><strong>rectolden</strong><a class="headerlink" href="#rectolden" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: RECursion - TOLerance on the difference of electronic DENsity<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0<br />
+Comment: Default value to be changed.  </p>
+<p>Used in Recursion method (<a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2). Sets a tolerance for differences
+of electronic density that, reached TWICE successively, will cause one SCF
+cycle to stop. That electronic density difference is computed in the infinity
+norm (that is, it is computed point-by-point, and then the maximum difference
+is computed).</p>
+<h2 id="symmorphi"><strong>symmorphi</strong><a class="headerlink" href="#symmorphi" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SYMMORPHIc symmetry operation selection<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>With <a class="wikilink" href="../../input_variables/vardev#symmorphi">symmorphi</a>=1, symmetry operations with a non-symmorphic vector are
+allowed. With <a class="wikilink" href="../../input_variables/vardev#symmorphi">symmorphi</a>=0, they are not allowed. In the latter case, if
+the symmetry operations are specified in the input file, the code will stop
+and print an error message if a non-symmorphic vector is encountered. By
+contrast, if the symmetry operations are to be determined automatically (if
+<a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=0), then the set of symmetries will not include the non-symmorphic
+operations.</p>
+<p>Note : this feature exist because in a previous status of the <a class="wikilink" href="../../GW/">GW</a>
+calculations, non-symmorphic symmetry operations could not be exploited. Thus,
+the k points were restricted to the IBZ. In order to prepare <a class="wikilink" href="../../GW/">GW</a>
+calculations, and to perform <a class="wikilink" href="../../GW/">GW</a> calculations, <a class="wikilink" href="../../input_variables/vardev#symmorphi">symmorphi</a>=0 was to be
+used, together with <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>=0.</p>
+<h2 id="tfkinfunc"><strong>tfkinfunc</strong><a class="headerlink" href="#tfkinfunc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Thomas-Fermi KINetic energy FUNCtional<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<ul>
+<li>
+<p><a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=1 : Thomas-Fermi kinetic functional (explicit functional of the density) is used instead of Kohn-Sham kinetic energy functional (implicit functional of the density through Kohn-Sham wavefunctions).<br />
+See Perrot F., Phys. Rev. A20,586-594 (1979)).</p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=11 : Thomas-Fermi-Weizsacker kinetic functional with Gradient Corrections is used.<br />
+The convergence of a calculation with this functional needs to be initialized
+from a calculation without Gradient Correction. This is automatically done
+with <a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=11. For the initialization steps, the <a class="wikilink" href="../../input_variables/vardev#tfw_toldfe">tfw_toldfe</a>
+criterion is used. When it is reached, then the Gradient Correction is added
+and the SCF cycle continues.<br />
+Note: to obtain the convergence of a Molecular Dynamics simulation with TFW,
+it is necessary to find the best set of preconditionning parameters
+(<a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a>, <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a>, <a class="wikilink" href="../../input_variables/vargs#dielng">dielng</a>) and the best value of <a class="wikilink" href="../../input_variables/vardev#npulayit">npulayit</a> (if
+the default Pulay mixing is used).</p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=12 : same as <strong>tfkinfunc</strong>=11, but without the initialization steps. Gradient correction is directly added. </p>
+</li>
+<li><a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=2 : the Recursion Method is used in order to compute electronic density, entropy, Fermi energy and eigenvalues energy. This method computes the density without computing any orbital, is efficient at high temperature, with a efficient parallelization (almost perfect scalability). When that option is in use, the <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> input variable is no longer a convergence parameter ; <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> becomes the main convergence parameter: you should adapt ecut for the ngfft grid you need (it is not yet automatically computed). Other convergence parameter are for the energetic values: <a class="wikilink" href="../../input_variables/vardev#recnrec">recnrec</a>, <a class="wikilink" href="../../input_variables/vardev#recptrott">recptrott</a>, <a class="wikilink" href="../../input_variables/vardev#recnpath">recnpath</a>.<br />
+Since the convergence of the self-consistent cycle is determined directly by
+the convergence of the density: <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a>, <a class="wikilink" href="../../input_variables/varbas#tolrff">tolrff</a>,
+<a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>, <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a> are not used, and are replaced by <a class="wikilink" href="../../input_variables/vardev#rectolden">rectolden</a>; the
+energetic values, except for the fermi energy, are only computed during the
+latest SFC cycle : the output file will show a jump of the total energy at the
+end, but it is not because of a bad convergence behavior. Computational speed
+can be improved by the use of <a class="wikilink" href="../../input_variables/vardev#recrcut">recrcut</a> and <a class="wikilink" href="../../input_variables/vardev#recgratio">recgratio</a>. The recursion
+method has not be tested in the case of non cubic cell or with the use of
+symmetries.<br />
+In the recursion method the following variables are set to: <a class="wikilink" href="../../input_variables/vardev#useylm">useylm</a>=1,
+<a class="wikilink" href="../../input_variables/varint#userec">userec</a>=1.</li>
+</ul>
+<h2 id="tfw_toldfe"><strong>tfw_toldfe</strong><a class="headerlink" href="#tfw_toldfe" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1.0E-6 or <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a> is present<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=11  </p>
+<p>This input variable has the same definition as <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a> and is only relevant
+when <a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>=11.<br />
+It sets a tolerance for absolute differences of total energy that, reached
+TWICE successively, will cause the initialization steps (without gradient
+correction) to stop and the gradient correction to be added.<br />
+Can be specified in Ha (the default), Ry, eV or Kelvin, since it has the
+&lsquo;ENERGY&rsquo; characteristics.</p>
+<h2 id="tolrde"><strong>tolrde</strong><a class="headerlink" href="#tolrde" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: TOLerance on the Relative Difference of Eigenenergies<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.005  </p>
+<p>Sets a tolerance for the ratio of differences of eigenenergies in the line
+minimisation conjugate-gradient algorithm. It compares the decrease of the
+eigenenergy due to the last line minimisation, with the one observed for the
+first line minimisation. When the ratio is lower than <a class="wikilink" href="../../input_variables/vardev#tolrde">tolrde</a>, the next
+line minimisations are skipped.<br />
+The number of line minimisations is limited by <a class="wikilink" href="../../input_variables/vargs#nline">nline</a> anyhow.<br />
+This stopping criterion is present for both GS and RF calculations. In RF
+calculations, <a class="wikilink" href="../../input_variables/vardev#tolrde">tolrde</a> is actually doubled before comparing with the above-
+mentioned ratio, for historical reasons.</p>
+<h2 id="use_gemm_nonlop"><strong>use_gemm_nonlop</strong><a class="headerlink" href="#use_gemm_nonlop" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE the GEMM routine for the application of the NON-Local OPerator<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Comment: because it is not usually worth using it unless bandpp is large and it requires additional memory  </p>
+<p>This keyword tells abinit to use a BLAS routine to speed up the computation of
+the non-local operator. This requires the precomputation of a large matrix,
+and has a significant memory overhead. In exchange, it provides improved
+performance when used on several bands at once (Chebyshev or LOBPCG algorithm
+with <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a></p>
+<p>The memory overhead is proportional to the number of atoms, the number of
+plane waves, and the number of projectors per atom. It can be mitigated by
+distributing the array with <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a></p>
+<p>The performance depends crucially on having a good BLAS installed. Provided
+the BLAS supports OpenMP, this option also yields very good scaling for the
+nonlocal operator.</p>
+<h2 id="use_nonscf_gkk"><strong>use_nonscf_gkk</strong><a class="headerlink" href="#use_nonscf_gkk" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE NON-SCF calculation of GKK matrix elements (electron phonon)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Comment: Default is 0 for the moment. Do not use non-scf method.  </p>
+<p>When this flag is activated during a phonon calculation with abinit, all of
+the perturbations are cycled through, but only the symmetry-irreducible ones
+are calculated self-consistently. For the others the perturbed density is
+rotated by the appropriate symop and the gkk matrix elements are calculated
+non-self-consistently. As they do not depend on the perturbed wave functions,
+they are correct from the first iteration, and nstep is set to 1 for those
+perturbations. Note that the resulting 1DEN files are simply the
+rotate/symmetric ones and that the resulting 1WF files are garbage (completely
+unconverged) except the matrix elements in the header (equivalent to GKK
+files, but please use the latter much smaller files for el-ph calculations).
+The new default behavior with <a class="wikilink" href="../../input_variables/vardev#use_nonscf_gkk">use_nonscf_gkk</a> = 1 should be transparent for
+the user, with the same output files but a much quicker execution.</p>
+<p>Caveat: Note that very tight convergence of ground state and phonon
+calculations is necessary to get good GKK matrix elements! <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a> = 1.e-24
+or so is recommended everywhere. There may be problems using use_nonscf_gkk =
+1 with non-symmorphic symmetries - please check (at least) that lifetimes for
+phonons go to 0 for acoustic modes at Gamma.</p>
+<h2 id="usedmft"><strong>usedmft</strong><a class="headerlink" href="#usedmft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE Dynamical Mean Field Theory<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If set to 1, enable the use of DFT+DMFT, see in particular the important
+variables <a class="wikilink" href="../../input_variables/vardmft#dmft_solv">dmft_solv</a>, <a class="wikilink" href="../../input_variables/vardmft#dmftbandi">dmftbandi</a>, <a class="wikilink" href="../../input_variables/vardmft#dmftbandf">dmftbandf</a>, <a class="wikilink" href="../../input_variables/vardmft#dmft_nwli">dmft_nwli</a>,
+<a class="wikilink" href="../../input_variables/vardmft#dmft_nwlo">dmft_nwlo</a>, <a class="wikilink" href="../../input_variables/vardmft#dmft_tollc">dmft_tollc</a>, <a class="wikilink" href="../../input_variables/vardmft#dmft_tolfreq">dmft_tolfreq</a>, and <a class="wikilink" href="../../input_variables/vardmft#dmft_iter">dmft_iter</a>.</p>
+<p>The current implementation uses Wannier functions obtained from <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.205112"> projected
+local orbitals
+</a> as
+correlated orbitals (see <a class="wikilink" href="../../input_variables/vardmft#dmftbandi">dmftbandi</a> and <a class="wikilink" href="../../input_variables/vardmft#dmftbandf">dmftbandf</a> input variables to
+define them).</p>
+<p>The Green functions are computed on a mesh of linear Matsubara frequencies.
+However, most of the code uses logarithmic Matsubara grid to lower the
+computational cost. Both <a class="wikilink" href="../../input_variables/vardmft#dmft_nwli">dmft_nwli</a> and <a class="wikilink" href="../../input_variables/vardmft#dmft_nwlo">dmft_nwlo</a> are thus convergence
+parameters.</p>
+<p>DMFT is currently available for collinear (<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1) polarized or
+unpolarized calculations (<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2 or <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1)
+and for non collinear calculations (<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2,<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4,<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1).
+However it is not yet available for collinear antiferromagnetic calculations
+(<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2,<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1) and non collinear non magnetic calculations
+(<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1, <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1,<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2). CTQMC calculations
+(<a class="wikilink" href="../../input_variables/vardmft#dmft_solv">dmft_solv</a>=5) are not yet possible if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2.</p>
+<p>Only static calculations without relaxation or dynamics are possible (forces
+and stress are not computed in the scheme: so the computed values should NOT
+be trusted).</p>
+<p>When correlated density matrices are diagonal, all values of <a class="wikilink" href="../../input_variables/varpaw#upawu">upawu</a> and
+<a class="wikilink" href="../../input_variables/varpaw#jpawu">jpawu</a> are possible. If the correlated density matrices are non diagonal,
+only <a class="wikilink" href="../../input_variables/varpaw#jpawu">jpawu</a> = 0 is implemented.</p>
+<p>Relevant direct output quantities from converged DMFT calculations are total
+energy and occupation of correlated orbitals. For Hubbard I calculation
+(<a class="wikilink" href="../../input_variables/vardmft#dmft_solv">dmft_solv</a>=2), total and partial spectral functions can be obtained with
+prtdos=1 and can be found in files OUTSpFunc* (where OUT is the root for
+output files). For CTQMC calculations (<a class="wikilink" href="../../input_variables/vardmft#dmft_solv">dmft_solv</a>=5), imaginary time
+impurity Green function are output of the calculations and can be used to
+produce spectral function using an external Maximum Entropy Code.</p>
+<p>A typical DFT+DMFT calculation involves two runs. First, a DFT calculation is
+fully converged (even unoccupied wavefunctions have to be converged). Then,
+the DFT+DMFT calculation is started using DFT wavefunctions or density files.
+As DFT+DMFT calculations (with CTQMC) are computationnally expensive, it is
+convenient to use prtden=-1, to write DEN file at each DFT iteration, in order
+to be able to restart the calculation easily.</p>
+<p>For details of the implementation see, <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.205112"> B. Amadon, F. Lechermann, A. Georges,
+F. Jollet, T. O. Wehling, and A. I. Lichtenstein, Phys. Rev. B 77(20), (2008)
+</a> , for
+Wannier functions and B. Amadon, J. Phys.: Condens. Matter 24 075604 (2012)
+(doi:10.1088/0953-8984/24/7/075604), for self-consistency and Hubbard I
+implementation. If <a class="wikilink" href="../../input_variables/vardev#usedmft">usedmft</a>=1 and <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>/=0, then, the DFT+DMFT
+calculation is not done and only projections are computed at the end of the
+calculation. They can be used by an external code or used to compute the
+screened interaction (see variable <a class="wikilink" href="../../input_variables/vargw#ucrpa">ucrpa</a>).</p>
+<h2 id="useria"><strong>useria</strong><a class="headerlink" href="#useria" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Integer variable A<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>These are user-definable integers which the user may input and then utilize in
+subroutines of his/her own design. They are not used in the official versions
+of the ABINIT code, and should ease independent developments (hopefully
+integrated in the official version afterwards).<br />
+Internally, they are available in the dtset structured datatype, e.g.
+dtset%useria .</p>
+<h2 id="userib"><strong>userib</strong><a class="headerlink" href="#userib" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Integer variable B<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>These are user-definable integers which the user may input and then utilize in
+subroutines of his/her own design. They are not used in the official versions
+of the ABINIT code, and should ease independent developments (hopefully
+integrated in the official version afterwards).<br />
+Internally, they are available in the dtset structured datatype, e.g.
+dtset%useria .</p>
+<h2 id="useric"><strong>useric</strong><a class="headerlink" href="#useric" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Integer variable C<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>These are user-definable integers which the user may input and then utilize in
+subroutines of his/her own design. They are not used in the official versions
+of the ABINIT code, and should ease independent developments (hopefully
+integrated in the official version afterwards).<br />
+Internally, they are available in the dtset structured datatype, e.g.
+dtset%useria .</p>
+<h2 id="userid"><strong>userid</strong><a class="headerlink" href="#userid" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Integer variable D<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>These are user-definable integers which the user may input and then utilize in
+subroutines of his/her own design. They are not used in the official versions
+of the ABINIT code, and should ease independent developments (hopefully
+integrated in the official version afterwards).<br />
+Internally, they are available in the dtset structured datatype, e.g.
+dtset%useria .</p>
+<h2 id="userie"><strong>userie</strong><a class="headerlink" href="#userie" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Integer variable E<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>These are user-definable integers which the user may input and then utilize in
+subroutines of his/her own design. They are not used in the official versions
+of the ABINIT code, and should ease independent developments (hopefully
+integrated in the official version afterwards).<br />
+Internally, they are available in the dtset structured datatype, e.g.
+dtset%useria .</p>
+<h2 id="userra"><strong>userra</strong><a class="headerlink" href="#userra" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Real variable A<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>These are user-definable with the same purpose as <a class="wikilink" href="../../input_variables/vardev#useria">useria</a> and cie.</p>
+<h2 id="userrb"><strong>userrb</strong><a class="headerlink" href="#userrb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Real variable B<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>These are user-definable with the same purpose as <a class="wikilink" href="../../input_variables/vardev#useria">useria</a> and cie.</p>
+<h2 id="userrc"><strong>userrc</strong><a class="headerlink" href="#userrc" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Real variable C<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>These are user-definable with the same purpose as <a class="wikilink" href="../../input_variables/vardev#useria">useria</a> and cie.</p>
+<h2 id="userrd"><strong>userrd</strong><a class="headerlink" href="#userrd" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Real variable D<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>These are user-definable with the same purpose as <a class="wikilink" href="../../input_variables/vardev#useria">useria</a> and cie.</p>
+<h2 id="userre"><strong>userre</strong><a class="headerlink" href="#userre" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USER Real variable E<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.0  </p>
+<p>These are user-definable with the same purpose as <a class="wikilink" href="../../input_variables/vardev#useria">useria</a> and cie.</p>
+<h2 id="useylm"><strong>useylm</strong><a class="headerlink" href="#useylm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE YLM (the spherical harmonics)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../input_variables/vardev#tfkinfunc">tfkinfunc</a>==1,
+1 if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1,
+0 otherwise.</p>
+<p>When this flag is activated, the non-local operator is applied using an
+algorithm based on spherical harmonics. Non-local projectors are used with
+their usual form:  </p>
+<p>P  lmn  (r)=Y  lm  (r)*p  ln  (r)</p>
+<p>When <a class="wikilink" href="../../input_variables/vardev#useylm">useylm</a>=0, the sum over Y_lm can be reduced to a Legendre polynomial
+form.</p>
+<h2 id="wfoptalg"><strong>wfoptalg</strong><a class="headerlink" href="#wfoptalg" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: WaveFunction OPTimisation ALGorithm<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../AUTO_FROM_PSP/">AUTO_FROM_PSP</a><br />
+Comment: 0 when <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=0 (norm-conserving pseudopotentials), 10 when <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1 (PAW) ; 114 if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>=1.  </p>
+<p>Allows one to choose the algorithm for the optimisation of the wavefunctions.<br />
+The different possibilities are :</p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=0 : standard state-by-state conjugate gradient algorithm, with no possibility to parallelize over the states; </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=2 : minimisation of the residual with respect to different shifts, in order to cover the whole set of occupied bands, with possibility to parallelize over blocks of states (or bands). The number of states in a block is defined in <a class="wikilink" href="../../input_variables/vardev#nbdblock">nbdblock</a>. THIS IS STILL IN DEVELOPMENT. </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=3 : minimisation of the residual with respect to a shift. Available only in the non-self-consistent case <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=-2, in order to find eigenvalues and wavefunctions close to a prescribed value. </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=4 : (see also <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=14), a parallel code based on the Locally Optimal Block Preconditioned Conjugate Gradient (LOBPCG) method of Knyazev. <a href="http://dx.doi.org/10.1137/S1064827500366124"> Reference : A.V. Knyazev, &ldquo;Toward the Optimal Preconditioned Eigensolver : Locally Optimal Block Preconditioned Conjugate Gradient Method&rdquo;. SIAM Journal on Scientific Computing 23, pp517-541 (2001) </a> . The implementation rests on the <a href="http://www.mathworks.com/matlabcentral/fileexchange/48-lobpcg-m"> matlab program by Knyazev </a> . <a href="http://dx.doi.org/10.1137/060661624"> Reference A. V. Knyazev, I. Lashuk, M. E. Argentati, and E. Ovchinnikov, Block Locally Optimal Preconditioned Eigenvalue Xolvers (BLOPEX) in hypre and PETSc (2007). SIAM Journal on Scientific Computing (SISC). 25(5): 2224-2239 </a> . For more information see <a href="http://dx.doi.org/10.1016/j.commatsci.2007.07.019"> F. Bottin, S. Leroux, A. Knyazev, G. Zerah, Large scale ab initio calculations based on three levels of parallelization. (2008). Computational Material Science, 42(2), 329-336. </a></li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=10 : (for PAW) standard state-by-state conjugate gradient algorithm, with no possibility to parallelize over the states, but modified scheme described in Kresse, Furthmuller, PRB 54, 11169 (1996) (modified kinetic energy, modified preconditionning, minimal orthogonalization, &hellip;) ; </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=14 : the recommended for parallel code, the same as <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=4 except that the preconditioning of the block vectors does not depend on the kinetic energy of each band, and the orthogonalization after the LOBPCG algorithm is no longer performed. The first modification increases the convergence and the second one the efficiency. </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=114 : A new version of <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=14 which is more efficient for few blocks and can take advantage of OpenMP if abinit is compiled with a multithreaded linear algebra library. With more than 1 thread <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> shoud NOT be used for the time being. </li>
+<li><a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=1 : new algorithm based on Chebyshev filtering, designed for very large number of processors, in the regime where LOBPCG does not scale anymore. It is not able to use preconditionning and therefore might converge slower than other algorithms. By design, it will <strong> not </strong> converge the last bands: it is recommended to use slightly more bands than necessary. For usage with <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a>, it is imperative to use <a class="wikilink" href="../../input_variables/vargs#nbdbuf">nbdbuf</a>. For more performance, try <a class="wikilink" href="../../input_variables/vardev#use_gemm_nonlop">use_gemm_nonlop</a>. For more information, see the <a href="../../../theory/howto_chebfi.pdf"> performance guide </a> and the <a href="https://arxiv.org/abs/1406.4350"> paper </a> by A. Levitt and M. Torrent. Status: experimental but usable. Questions and bug reports should be sent to antoine (dot) levitt (at) gmail.com. </li>
+</ul>
+<h2 id="xc_denpos"><strong>xc_denpos</strong><a class="headerlink" href="#xc_denpos" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: eXchange-Correlation - DENsity POSitivity value<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1e-14  </p>
+<p>For the evaluation of the exchange-correlation functionals, the density cannot
+be negative, or even too small (e.g. the LDA exchange kernel behaves like the
+density at power -(2/3), and the density is used at the denominator of
+different factors in GGAs and metaGGAs. <a class="wikilink" href="../../input_variables/vardev#xc_denpos">xc_denpos</a> is the smallest value
+that the density can assume at the time of the evaluation of a XC functional,
+in ABINIT. When then computed density drops below <a class="wikilink" href="../../input_variables/vardev#xc_denpos">xc_denpos</a> before
+attacking the evaluation of the XC functional, then it will be (only for that
+purpose) replaced by <a class="wikilink" href="../../input_variables/vardev#xc_denpos">xc_denpos</a>. Note that the evaluation of the gradients
+or other quantities that are density-dependent is performed before this
+replacement.</p>
+<p>It has been observed that the SCF cycle of the Tran-Blaha mGGA can be quite
+hard to make converge, for systems for which there is some vacuum. In this
+case, setting <a class="wikilink" href="../../input_variables/vardev#xc_denpos">xc_denpos</a> to 1.0e-7 &hellip; 1.0e-6 has been seen to allow good
+convergence. Of course, this will affect the numerical results somehow, and
+one should play a bit with this value to avoid incorrect calculations.</p>
+<h2 id="xc_tb09_c"><strong>xc_tb09_c</strong><a class="headerlink" href="#xc_tb09_c" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Value of the c parameter in the eXchange-Correlation TB09 functional<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 99.99  </p>
+<p>The modified Becke-Johnson exchange-correlation functional by Tran and Blaha
+(Phys. Rev. Lett. 102, 226401 (2009)) reads :</p>
+<p>V_x(r) = c * V_x^{BR}(r) + (3<em>c - 2) * 1/pi * sqrt(5/12) </em>
+sqrt(2*kden(r)/den(r))</p>
+<p>in which V_x^{BR}(r) is the Becke-Roussel potential.</p>
+<p>In this equation the parameter c can be evaluated at each SCF step according
+to the following equation :</p>
+<p>c = alpha + beta * sqrt(1/V_{cell} * \int_{V_{cell}} |grad(den(r))|/den(r)
+d3r)</p>
+<p>The c parameter is evaluated thanks to the previous equation when xc_tb09_c is
+equal to the &ldquo;magic&rdquo; default value 99.99. The c parameter can also be fixed to
+some (property-optimized or material-optimized) value by using this variable.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

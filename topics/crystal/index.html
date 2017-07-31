@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/crystal/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Crystalline Structure - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../installation/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../kpoints/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-introduction">1. Introduction.</a></li>
+        <li class="main "><a href="#246-related-lessons-of-the-tutorial">2. Related lesson(s) of the tutorial.</a></li>
+        <li class="main "><a href="#346-related-input-variables">3. Related input variables.</a></li>
+        <li class="main "><a href="#446-selected-input-files">4. Selected input files.</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>This file gives hints on how to specify a crystal with the ABINIT package.</p>
+<div class="toc">
+<ul>
+<li><a href="#146-introduction">1. Introduction.</a></li>
+<li><a href="#246-related-lessons-of-the-tutorial">2. Related lesson(s) of the tutorial.</a></li>
+<li><a href="#346-related-input-variables">3. Related input variables.</a></li>
+<li><a href="#446-selected-input-files">4. Selected input files.</a></li>
+</ul>
+</div>
+<h3 id="146-introduction"><strong>1. Introduction.</strong><a class="headerlink" href="#146-introduction" title="Permanent link">&para;</a></h3>
+<p>The cell may be orthogonal or non-orthogonal. Any kind of symmetries and
+corresponding sets of k-point can be input, and taken into account in the
+computation. The crystal structure and the position of the atoms in the unit
+cell must be specified. Details about the way the crystal structure is defined
+in ABINIT can be found <a href="../../documents/geometry.pdf">here</a>.<br />
+The code can automatically generate symmetries from the primitive cell and the
+position of atoms. In this case, it identifies automatically the Bravais
+lattice, point group and space group. Alternatively, it can start from the
+symmetries and generate the atomic positions from the irreducible set. Also, a
+database of the 230 spatial groups of symmetry is built inside ABINIT.  </p>
+<hr />
+<h3 id="246-related-lessons-of-the-tutorial"><strong>2. Related lesson(s) of the tutorial.</strong><a class="headerlink" href="#246-related-lessons-of-the-tutorial" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="../../../tutorial/generated_files/lesson_base1.html">The lesson 1</a> deals with the H2 molecule : get the total energy, the electronic energies, the charge density, the bond length, the atomisation energy </li>
+<li><a href="../../../tutorial/generated_files/lesson_base2.html">The lesson 2</a> deals again with the H2 molecule: convergence studies, LDA versus GGA </li>
+<li><a href="../../../tutorial/generated_files/lesson_base3.html">The lesson 3</a> deals with crystalline silicon (an insulator): the definition of a k-point grid, the smearing of the cut-off energy, the computation of a band structure, and again, convergence studies &hellip;</li>
+<li><a href="../../../tutorial/generated_files/lesson_base4.html">The lesson 4</a> deals with crystalline aluminum (a metal), and its surface: occupation numbers, smearing the Fermi-Dirac distribution, the surface energy, and again, convergence studies &hellip;</li>
+</ul>
+<hr />
+<h3 id="346-related-input-variables"><strong>3. Related input variables.</strong><a class="headerlink" href="#346-related-input-variables" title="Permanent link">&para;</a></h3>
+<p>Compulsory input variables:</p>
+<p>&hellip; <a href="../../../input_variables/generated_files/varbas.html#acell">acell</a> [CELL
+lattice vector scaling]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#rprim">rprim</a> [Real
+space PRIMitive translations]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#xangst">xangst</a>
+[vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#xcart">xcart</a> [vectors
+(X) of atom positions in CARTesian coordinates]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#xred">xred</a> [vectors
+(X) of atom positions in REDuced coordinates]  </p>
+<p>Useful input variables:</p>
+<p>&hellip; <a href="../../../input_variables/generated_files/varbas.html#angdeg">angdeg</a> [ANGles
+in DEGrees]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargs.html#chkprim">chkprim</a> [CHecK
+whether the cell is PRIMitive]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#nsym">nsym</a> [Number of
+SYMmetry operations]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#scalecart">scalecart</a>
+[SCALE CARTesian coordinates]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#symrel">symrel</a>
+[SYMmetry in REaL space]<br />
+&hellip; <a href="../../../input_variables/generated_files/varbas.html#tnons">tnons</a>
+[Translation NON-Symmorphic vectors]  </p>
+<p>Input variables for experts:</p>
+<dl>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#brvltt">brvltt</a></dt>
+<dt>[BRaVais LaTTice type]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vardev.html#maxnsym">maxnsym</a></dt>
+<dt>[MAXimum Number of SYMetries]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#natrd">natrd</a> [Number</dt>
+<dt>of AToms ReaD]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#nobj">nobj</a> [Number of</dt>
+<dt>OBJects]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objaat">objaat</a> [OBJect</dt>
+<dt>A : list of AToms]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objaax">objaax</a> [OBJect</dt>
+<dt>A : AXis]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objan">objan</a> [OBJect A</dt>
+<dd>
+<dl>
+<dt>Number of atoms]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objarf">objarf</a> [OBJect</dt>
+<dt>A : Repetition Factors]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objaro">objaro</a> [OBJect</dt>
+<dt>A : ROtations]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objatr">objatr</a> [OBJect</dt>
+<dt>A : TRanslations]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbat">objbat</a> [OBJect</dt>
+<dt>B : list of AToms]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbax">objbax</a> [OBJect</dt>
+<dt>B : AXis]</dt>
+<dt>&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbn">objbn</a> [OBJect B</dt>
+<dd>Number of atoms]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbrf">objbrf</a> [OBJect
+B : Repetition Factors]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbro">objbro</a> [OBJect
+B : ROtations]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#objbtr">objbtr</a> [OBJect
+B : TRanslations]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#spgaxor">spgaxor</a>
+[SPace Group : AXes ORientation]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#spgorig">spgorig</a>
+[SPace Group : ORIGin]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#spgroup">spgroup</a>
+[SPace GROUP number]<br />
+&hellip; <a href="../../../input_variables/generated_files/vardev.html#symmorphi">symmorphi</a>
+[SYMMORPHIc symmetry operation selection]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#vaclst">vaclst</a>
+[VACancies LiST]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#vacnum">vacnum</a>
+[VACancies NUMber]<br />
+&hellip; <a href="../../../input_variables/generated_files/vargeo.html#xyzfile">xyzfile</a> [XYZ
+FILE input for geometry]  </dd>
+</dl>
+</dd>
+</dl>
+<hr />
+<h3 id="446-selected-input-files"><strong>4. Selected input files.</strong><a class="headerlink" href="#446-selected-input-files" title="Permanent link">&para;</a></h3>
+<p>The user can find some related example input files in the ABINIT package in
+the directory /tests, or on the Web:</p>
+<p>tests/v1/Input: <a href="../../../tests/v1/Input/t40.in">t40.in</a>
+<a href="../../../tests/v1/Input/t42.in">t42.in</a> <a href="../../../tests/v1/Input/t43.in">t43.in</a></p>
+<p>tests/v3/Input: <a href="../../../tests/v3/Input/t21.in">t21.in</a>
+<a href="../../../tests/v3/Input/t23.in">t23.in</a> <a href="../../../tests/v3/Input/t24.in">t24.in</a>
+<a href="../../../tests/v3/Input/t25.in">t25.in</a> <a href="../../../tests/v3/Input/t26.in">t26.in</a>
+<a href="../../../tests/v3/Input/t27.in">t27.in</a> <a href="../../../tests/v3/Input/t28.in">t28.in</a>
+<a href="../../../tests/v3/Input/t29.in">t29.in</a> <a href="../../../tests/v3/Input/t32.in">t32.in</a>
+<a href="../../../tests/v3/Input/t33.in">t33.in</a> <a href="../../../tests/v3/Input/t34.in">t34.in</a>
+<a href="../../../tests/v3/Input/t35.in">t35.in</a> <a href="../../../tests/v3/Input/t36.in">t36.in</a></p>
+<p>tests/v5/Input: <a href="../../../tests/v5/Input/t14.in">t14.in</a>  </p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (FJ)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

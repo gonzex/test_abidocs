@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varff/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Varff - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li class="active">
+    <a href="./">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../vareph/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../varfil/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#atvshift">atvshift</a></li>
+        <li class="main "><a href="#bdberry">bdberry</a></li>
+        <li class="main "><a href="#berryopt">berryopt</a></li>
+        <li class="main "><a href="#berrysav">berrysav</a></li>
+        <li class="main "><a href="#berrystep">berrystep</a></li>
+        <li class="main "><a href="#bfield">bfield</a></li>
+        <li class="main "><a href="#ddamp">ddamp</a></li>
+        <li class="main "><a href="#dfield">dfield</a></li>
+        <li class="main "><a href="#efield">efield</a></li>
+        <li class="main "><a href="#jfielddir">jfielddir</a></li>
+        <li class="main "><a href="#kberry">kberry</a></li>
+        <li class="main "><a href="#maxestep">maxestep</a></li>
+        <li class="main "><a href="#natvshift">natvshift</a></li>
+        <li class="main "><a href="#nberry">nberry</a></li>
+        <li class="main "><a href="#polcen">polcen</a></li>
+        <li class="main "><a href="#qprtrb">qprtrb</a></li>
+        <li class="main "><a href="#red_dfield">red_dfield</a></li>
+        <li class="main "><a href="#red_efield">red_efield</a></li>
+        <li class="main "><a href="#red_efieldbar">red_efieldbar</a></li>
+        <li class="main "><a href="#spinmagntarget">spinmagntarget</a></li>
+        <li class="main "><a href="#vprtrb">vprtrb</a></li>
+        <li class="main "><a href="#zeemanfield">zeemanfield</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="atvshift"><strong>atvshift</strong><a class="headerlink" href="#atvshift" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: ATomic potential (V) energy SHIFTs<br />
+Variable type: real<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varff#natvshift">natvshift</a>,<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>,<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>)<br />
+Default value: *0.0d0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a> /= 0 and <a class="wikilink" href="../../input_variables/varff#natvshift">natvshift</a> in [5,7]  </p>
+<p>Defines for each atom and each spin channel (at present, can only be used with
+<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1 or 2, like the +U scheme), a possible potential shift, for the d
+(with <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>=2, <a class="wikilink" href="../../input_variables/varff#natvshift">natvshift</a>=5), or f states (with <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>=3,
+<a class="wikilink" href="../../input_variables/varff#natvshift">natvshift</a>=7). In the case of d states, and 2 spin channels, a set of 10
+numbers for each atom must be defined. The first set of 5 numbers corresponds
+to real spherical harmonics m=-2 to m=+2 for the spin-up channel, the second
+set of 5 numbers corresponds to real spherical harmonics m=-2 to m=+2 for the
+spin-down channel. In the case of f states, the same ordering applies, for
+sets of 7 numbers, corresponding to m=-3 to m=+3.<br />
+<a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a> should be non-zero, <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> should be 2 or 3.</p>
+<h2 id="bdberry"><strong>bdberry</strong><a class="headerlink" href="#bdberry" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BanD limits for BERRY phase<br />
+Variable type: integer<br />
+Dimensions: (4)<br />
+Default value: 4*0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> in [1, 2, 3] and <a class="wikilink" href="../../input_variables/varff#nberry">nberry</a> &gt; 0  </p>
+<p>Give the lower band and the upper band of the set of bands for which the Berry
+phase must be computed. Irrelevant if <a class="wikilink" href="../../input_variables/varff#nberry">nberry</a> is not positive. When
+<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a> is 1 (no spin-polarisation), only the two first numbers, giving the
+lower and highest bands, are significant. Their occupation number is assumed
+to be 2. When <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a> is 2 (spin-polarized calculation), the two first
+numbers give the lowest and highest bands for spin up, and the third and
+fourth numbers give the lowest and highest bands for spin down. Their
+occupation number is assumed to be 1 .</p>
+<p>Presently, <a class="wikilink" href="../../input_variables/varff#bdberry">bdberry</a> MUST be initialized by the user in case of a Berry
+phase calculation with <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 1, 2, or 3: the above-mentioned default
+will cause an early exit.</p>
+<h2 id="berryopt"><strong>berryopt</strong><a class="headerlink" href="#berryopt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BERRY phase OPTions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Specifies the use of Berry phase for the computation of either the
+polarization, the derivatives with respect to the wavevector, or finite
+electric field calculations.</p>
+<ul>
+<li>0 =&gt; no computation of expressions relying on a Berry phase (default) </li>
+<li>1 =&gt; the computation of Berry phases is activated (berryphase routine) </li>
+<li>2 =&gt; the computation of derivatives with respect to the wavevector, thanks to the Berry phase finite-difference formula, is activated (uderiv routine) </li>
+<li>3 =&gt; same as option 1 and 2 together 
+<strong>Note that options 1 to 3 require the use of a serial build of Abinit.</strong></li>
+<li>-1 =&gt; alternative computation of Berry phases (berryphase_new routine) </li>
+<li>-2 =&gt; alternative computation of derivatives with respect to the wavevector, thanks to the Berry phase finite-difference formula (berryphase_new routine) </li>
+<li>-3 =&gt; same as option -1 and -2 together 
+<strong>Options -1 to -3 permit use of a parallel build and will be preferred by most users.</strong></li>
+<li>4 =&gt; finite electric field calculation (unreduced E-field) </li>
+<li>6 =&gt; finite electric displacement field calculation (unreduced D-field) </li>
+<li>14 =&gt; finite reduced electric field calculation </li>
+<li>16 =&gt; finite electric displacement field calculation </li>
+<li>17 =&gt; mixed electric boundary condition: finite reduced electric field in some directions, finite reduced electric displacement field along other directions. See variable <a class="wikilink" href="../../input_variables/varff#jfielddir">jfielddir</a> for more details. </li>
+</ul>
+<p>Other related input variables are :</p>
+<ul>
+<li>in case of <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=1,2, or 3 : <a class="wikilink" href="../../input_variables/varff#bdberry">bdberry</a> and <a class="wikilink" href="../../input_variables/varff#kberry">kberry</a>; also, <a class="wikilink" href="../../input_variables/varff#nberry">nberry</a> must be larger than 0; </li>
+<li>in case of <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=-1,-2, or -3 : the variable <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> must be used to specify the primitive vector along which the projection of the polarization or the ddk will be computed. For example if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=-1 and <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>=1 0 0, the projection of the polarization along the reciprocal lattice vector G_1 is computed. In case <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>=1 1 1, ABINIT computes the projection of P along G_1, G_2 and G_3 and transforms the results to cartesian coordinates; </li>
+<li>in cases where <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> is negative, <a class="wikilink" href="../../input_variables/varff#berrystep">berrystep</a> allow a computation of multiple-step Berry phase in order to accelerate the convergence. </li>
+<li><a class="wikilink" href="../../input_variables/varff#efield">efield</a> and <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> in case of <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=4 ; </li>
+</ul>
+<p>The cases <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=-1,-2,-3, 4, 6, 7, 14, 16, and 17 have to be used with
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=1.</p>
+<p>The cases <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=-1 and 4, 6, 7, 14, 16, 17 are compatible with PAW,
+howevever, if in these cases one uses <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>/=3, one must also use only
+symmorphic symmetries (either because the space group is symmorphic or the
+variable <a class="wikilink" href="../../input_variables/vardev#symmorphi">symmorphi</a> is set to zero).</p>
+<p>For a phonon calculation under a finite electric field, respect the following
+procedure.</p>
+<ul>
+<li>1. Run a scf ground-state calculation at zero electric field to get wavefunctions to initialize the ground-state calculation in finite electric fields. </li>
+<li>2. Run a scf ground-state calculation in finite electric field. The electric field is controlled by the input variable <a class="wikilink" href="../../input_variables/varff#efield">efield</a>. <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> should be 4. The input variable <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> should be set to be 2. </li>
+<li>3. Based on the wave functions obtained in step (2), perform phonon calculation by setting <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=4, <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=3 and The same value of <a class="wikilink" href="../../input_variables/varff#efield">efield</a> than in step 2. <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a> should be set to 1 currently but this restriction may be removed later . The other parameters are the same as phonon calculation at zero electric field. </li>
+<li>Note : the choice of k-point sampling N x N x N should be the same in the three runs and N should be an even number. </li>
+</ul>
+<p>In case of finite electric and displacement field calculations
+(<a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=4,6,7,14,16,17), see also the input variables <a class="wikilink" href="../../input_variables/varff#berrysav">berrysav</a>,
+<a class="wikilink" href="../../input_variables/varff#dfield">dfield</a>, <a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a>, <a class="wikilink" href="../../input_variables/varff#red_efield">red_efield</a>, <a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a></p>
+<h2 id="berrysav"><strong>berrysav</strong><a class="headerlink" href="#berrysav" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BERRY SAVe<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<ul>
+<li>0 =&gt; for finite electric field calculation (<a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=4/14), the polarization branch will be chosen on each iteration from (-pi, pi); for finite electric displacement field calculation(<a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=6/7/16/17), the polarization will be chosen to minimize the internal energy. </li>
+<li>1 =&gt; the polarization will be kept in the same branch on each iteration. At the end of the run, a file &ldquo;POLSAVE&rdquo; will be saved containing the reduced polarization in atomic units. Note: Make sure that &ldquo;POLSAVE&rdquo; is empty or it does not exist before the calculation, or else that it specifies the desired polarization branch. </li>
+</ul>
+<h2 id="berrystep"><strong>berrystep</strong><a class="headerlink" href="#berrystep" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BERRY phase : multiple STEP<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if 0 &gt; <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>  </p>
+<p>If <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> is negative, this variable is used to compute berry phases
+using multiple discrete steps, in order to accelerate convergence. The single-
+step berry phase is the standard calculation using strings of k-points based
+on overlap of Bloch function separated by dk, while the two-step berry phase
+use strings use overlaps based on dk and 2<em>dk, the three-step use overlaps
+based on dk, 2</em>dk and 3*dk&hellip;</p>
+<p>The default value of this variable is 1, meaning that only the single-step
+berry phase calculation is done. If a larger value is set, ABINIT will compute
+all the multiple-step berry phase from the single-step to the
+<a class="wikilink" href="../../input_variables/varff#berrystep">berrystep</a>-step, and use the large-step values of berry phase to correct
+the single-step berry phase. Use with care: while experience is still to be
+gained with this procedure, the outlook is promising.</p>
+<h2 id="bfield"><strong>bfield</strong><a class="headerlink" href="#bfield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: finite B FIELD calculation<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0  </p>
+<p>Perform finite magnetic field calculation.<br />
+<strong>THIS CODE IS UNDER DEVELOPMENT AND IS NOT READY FOR USE.</strong></p>
+<h2 id="ddamp"><strong>ddamp</strong><a class="headerlink" href="#ddamp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: electric Displacement field DAMPing parameter<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 6 or 16  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=6, the electric field is updated after each SCF iteration
+according to E_{n+1}= <a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a><em>(D - 4</em>pi<em>P_{n}) + (1-<a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a>)</em>E_{n} where
+P_{n} and E_{n} are the polarization and electric field after nth SCF
+iteration. <a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a> is a damping parameter used to control the convergence
+speed.<br />
+In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=16, the electric field is updated after each SCF
+iteration according to e_{n+1}= <a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a><em>(d - p_{n}) + (1-<a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a>)</em>e_{n}<br />
+If you have difficulty getting convergence, try to reduce this value or reduce
+maxestep. This parameter is used in finite electric displacement field
+calculations (berryopt=6,16,17).</p>
+<h2 id="dfield"><strong>dfield</strong><a class="headerlink" href="#dfield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Displacement FIELD<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 6, <a class="wikilink" href="../../input_variables/varff#efield">efield</a>  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=6, <a class="wikilink" href="../../input_variables/varff#dfield">dfield</a> specifies the (unreduced) finite electric
+displacement field vector, in atomic units, that is to be imposed as a
+constraint during the calculation.</p>
+<h2 id="efield"><strong>efield</strong><a class="headerlink" href="#efield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Electric FIELD<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 4 or 6  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=4, a finite electric field calculation is performed. The
+value of this electric field, and its direction is determined by <a class="wikilink" href="../../input_variables/varff#efield">efield</a>.
+It must be given in atomic units (1 a.u. of electric field= 514220624373.482
+V/m, see note below), in cartesian coordinates.</p>
+<p>References for the calculation under electric field (based on multi k point
+Berry phase) :</p>
+<ul>
+<li>Nunes and Vanderbilt, PRL 73, 712 (1994) : real-space version of the finite-field Hamiltonian </li>
+<li>Nunes and Gonze, PRB 63, 155107 (2001) : reciprocal-space version of the finite-field Hamiltonian (the one presently implemented), and extensive theoretical analysis </li>
+<li>Souza, Iniguez and Vanderbilt, PRL 89, 117602 (2003) : implementation of the finite-field Hamiltonian (reciprocal-space version) </li>
+<li>Zwanziger, Galbraith, Kipouros, Torrent, Giantomassi and Gonze, Comp. Mater. Sci. 58, 113 (2012) : extension to PAW formalism </li>
+</ul>
+<p>See also Umari, Gonze, Pasquarello, PRL 90, 027401 (2003).</p>
+<p>The atomic unit of electric field strength is : e_Cb/(4 pi eps0 a0**2), where
+e_Cb is the electronic charge in Coulomb (1.60217653e-19), eps0 is the
+electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
+(0.5291772108e-10).</p>
+<h2 id="jfielddir"><strong>jfielddir</strong><a class="headerlink" href="#jfielddir" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: electric/displacement FIELD DIRection<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: 3*0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 17  </p>
+<p>When specifying mixed electric field boundary conditions ( <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=17),
+jfielddir controls whether reduced electric field (<a class="wikilink" href="../../input_variables/varff#jfielddir">jfielddir</a>=1) or reduced
+electric displacement field (<a class="wikilink" href="../../input_variables/varff#jfielddir">jfielddir</a>=2) is chosen to be fixed, in each
+of the three lattice directions (i.e., in the reduced, not the Cartesian,
+frame). For example, <a class="wikilink" href="../../input_variables/varff#jfielddir">jfielddir</a>=(1 1 2) tells the code to use fixed ebar_1
+and ebar_2 along the first two lattice directions and fixed d_3 along the
+third.<br />
+For the case of mixed electric field boundary conditions, <a class="wikilink" href="../../input_variables/varff#red_efieldbar">red_efieldbar</a>
+and <a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a> are used to control ebar and d, respectively. For example,
+for electric boundary conditions corresponding to a material in a parallel-
+plate capacitor, if you want to control d_3=d0, while fixing ebar_1=ebar_2=0,
+then the input files should have <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=17, <a class="wikilink" href="../../input_variables/varff#jfielddir">jfielddir</a>=(1 1 2),
+<a class="wikilink" href="../../input_variables/varff#red_efieldbar">red_efieldbar</a>=(0.0 0.0 a), and <a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a>=(b c d0). Here a, b, and c
+are the starting values. They can be chosen in this way: do a single run for
+fixed d calculation (<a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a>=0,0,d0), from the final results you will
+have ebar_3, which is a good guess for a. Then do another single run for fixed
+ebar calculation (<a class="wikilink" href="../../input_variables/varff#red_efieldbar">red_efieldbar</a>=(0 0 0)), from the final results you will
+have d_1,d_2, these are good guesses for b, c.</p>
+<h2 id="kberry"><strong>kberry</strong><a class="headerlink" href="#kberry" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: K wavevectors for BERRY phase computation<br />
+Variable type: integer<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/varff#nberry">nberry</a>)<br />
+Default value: *0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 1, 2, or 3  </p>
+<p>Used for values of <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 1, 2, or 3.</p>
+<p>This array defines, for each Berry phase calculation (the number of such
+calculations is defined by <a class="wikilink" href="../../input_variables/varff#nberry">nberry</a>), the difference of wavevector between k
+points for which the overlap matrix must be computed. The polarisation vector
+will be projected on the direction of that wavevector, and the result of the
+computation will be the magnitude of this projection. Doing more than one
+wavevector, with different independent direction, allows to find the full
+polarisation vector. However, note that converged results need oriented grids,
+denser along the difference wavevector than usual Monkhorst-Pack grids.</p>
+<p>The difference of wavevector is computed in the coordinate system defined by
+the k-points grid (see <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a>), so that the values of
+<a class="wikilink" href="../../input_variables/varff#kberry">kberry</a> are integers. Of course, such a k point grid must exist, and all
+the corresponding wavefunctions must be available, so that the computation is
+allowed only when <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is equal to 3. In order to save computing time,
+it is suggested to make a preliminary calculation of the wavefunctions on the
+irreducible part of the grid, with <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> equal to 1, and then use these
+converged wavefunctions in the entire Brillouin zone, by reading them to
+initialize the <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=3 computation.</p>
+<h2 id="maxestep"><strong>maxestep</strong><a class="headerlink" href="#maxestep" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MAXimum Electric field STEP<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 0.005<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 6, 16, or 17  </p>
+<p>This variable controls the maximum change of electric field when updating the
+electric field after each SCF iteration. When the calculation is difficult to
+converge, try reducing this value or reducing <a class="wikilink" href="../../input_variables/varff#ddamp">ddamp</a>. This variable is used
+in finite electric displacement field calculations (<a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=6,16,17).</p>
+<h2 id="natvshift"><strong>natvshift</strong><a class="headerlink" href="#natvshift" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of ATomic potential (V) energy SHIFTs (per atom)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a> /= 0, <a class="wikilink" href="../../input_variables/varff#atvshift">atvshift</a>  </p>
+<p>Number of atomic potential energy shifts (per atom), to be used to define the
+array <a class="wikilink" href="../../input_variables/varff#atvshift">atvshift</a>. If non-zero, only two possibilities exist : 5 for d states
+(with <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>=2), and 7 for f states (with <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>=3). If non-zero, one
+should define <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>, <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> and <a class="wikilink" href="../../input_variables/varff#atvshift">atvshift</a>.</p>
+<h2 id="nberry"><strong>nberry</strong><a class="headerlink" href="#nberry" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of BERRY phase computations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 1, 2, or 3  </p>
+<p>Gives the number of Berry phase computations of polarisation, or finite-
+difference estimations of the derivative of wavefunctions with respect to the
+wavevector, each of which might be characterized by a different change of
+wavevector <a class="wikilink" href="../../input_variables/varff#kberry">kberry</a>.</p>
+<p>When equal to 0, no Berry phase calculation of polarisation is performed. The
+maximal value of <a class="wikilink" href="../../input_variables/varff#nberry">nberry</a> is 20.</p>
+<p>Note that the computation of the polarisation for a set of bands having
+different occupation numbers is meaningless (although in the case of spin-
+polarized calculations, the spin up bands might have an identical occupation
+number, that might differ from the identical occupation number of spin down
+bands). Although meaningless, ABINIT will perform such computation, if
+required by the user. The input variable <a class="wikilink" href="../../input_variables/varff#bdberry">bdberry</a> governs the set of bands
+for which a Berry phase is computed.</p>
+<p>For the <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 1, 2, and 3 cases, spinor wavefunctions are not
+allowed, nor are parallel computations.</p>
+<h2 id="polcen"><strong>polcen</strong><a class="headerlink" href="#polcen" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: POLarization for CENtrosymmetric geometry<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0  </p>
+<p>When doing a finite electric displacement field calculation, if the structure
+is centrosymmetric but the polarization is non-zero (such as for AlAs), this
+non-zero polarization should be specified as <a class="wikilink" href="../../input_variables/varff#polcen">polcen</a> (in REDUCED
+coordinates, in atomic units) in the input file. See Eq.(24) in the Suppl. of
+Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
+(2009))</p>
+<h2 id="qprtrb"><strong>qprtrb</strong><a class="headerlink" href="#qprtrb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Q-wavevector of the PERTurbation<br />
+Variable type: integer<br />
+Dimensions: (3)<br />
+Default value: [0, 0, 0]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#vprtrb">vprtrb</a>  </p>
+<p>Gives the wavevector, in units of reciprocal lattice primitive translations,
+of a perturbing potential of strength <a class="wikilink" href="../../input_variables/varff#vprtrb">vprtrb</a>. See <a class="wikilink" href="../../input_variables/varff#vprtrb">vprtrb</a> for more
+explanation.</p>
+<h2 id="red_dfield"><strong>red_dfield</strong><a class="headerlink" href="#red_dfield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: REDuced Displacement FIELD<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 16, <a class="wikilink" href="../../input_variables/varff#red_efield">red_efield</a>  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=16, a reduced finite electric displacement field
+calculation is performed. The value of this displacement field, and its
+direction is determined by <a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a>. It must be given in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/varff#red_dfield">red_dfield</a> is defined via Eq.(26) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<h2 id="red_efield"><strong>red_efield</strong><a class="headerlink" href="#red_efield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: REDuced Electric FIELD<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 16  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=16, a reduced finite electric displacement field
+calculation is performed. In this case, the parameter red_efield specifies the
+initial electric field used on the first iteration, in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/varff#red_efield">red_efield</a> is defined via Eq.(25) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<h2 id="red_efieldbar"><strong>red_efieldbar</strong><a class="headerlink" href="#red_efieldbar" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: REDuced Electric FIELD BAR<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> = 14  </p>
+<p>In case <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>=14, a reduced finite electric field calculation is
+performed. The magnitude and direction of this electric field are determined
+by red_efieldbar. It must be given in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/varff#red_efieldbar">red_efieldbar</a> is defined via Eq.(28) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<h2 id="spinmagntarget"><strong>spinmagntarget</strong><a class="headerlink" href="#spinmagntarget" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPIN-MAGNetization TARGET<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: -99.99  </p>
+<p>This input variable is active only in the <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2 case. If
+<a class="wikilink" href="../../input_variables/varff#spinmagntarget">spinmagntarget</a> is not the &ldquo;magic&rdquo; value of -99.99d0, the spin-
+magnetization of the primitive cell will be fixed (or optimized, if it is not
+possible to impose it) to the value of <a class="wikilink" href="../../input_variables/varff#spinmagntarget">spinmagntarget</a>, in Bohr magneton
+units, e.g. for an Hydrogen atom, it is 1.<br />
+If <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> is a metallic one, the Fermi energies for spin up and spin down
+are adjusted to give the target spin-polarisation (this is equivalent to an
+exchange splitting). If <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=1 and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2, the occupation numbers
+for spin up and spin down will be adjusted to give the required spin-
+magnetization (occupation numbers are identical for all k-points, with
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=1). The definition of <a class="wikilink" href="../../input_variables/varff#spinmagntarget">spinmagntarget</a> is actually requested in
+this case, except for the single isolated Hydrogen atom.<br />
+If <a class="wikilink" href="../../input_variables/varff#spinmagntarget">spinmagntarget</a> is the default one, the spin-magnetization will not be
+constrained, and will be determined self-consistently, by having the same spin
+up and spin down Fermi energy in the metallic case, while for the other cases,
+there will be no spin-magnetization, except for an odd number of electrons if
+<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=1 and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2.</p>
+<p>Note : for the time being, only the spin down Fermi energy is written out in
+the main output file. In the fixed magnetic moment case, it differs from the
+spin up Fermi energy.</p>
+<h2 id="vprtrb"><strong>vprtrb</strong><a class="headerlink" href="#vprtrb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: potential -V- for the PeRTuRBation<br />
+Variable type: real<br />
+Dimensions: (2)<br />
+Default value: [0.0, 0.0]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varff#qprtrb">qprtrb</a>  </p>
+<p>Gives the real and imaginary parts of a scalar potential perturbation. Can be
+specified in Ha (the default), Ry, eV or Kelvin, since <a class="wikilink" href="../../input_variables/varff#vprtrb">vprtrb</a> has the
+&lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics.<br />
+This is made available for testing responses to such perturbations. The form
+of the perturbation, which is added to the local potential, is:</p>
+<ul>
+<li>(<a href="../1">[vprtrb]</a>+I*<a href="../2">[vprtrb]</a>)/2 at G=<a class="wikilink" href="../../input_variables/varff#qprtrb">qprtrb</a> and </li>
+<li>(<a href="../1">[vprtrb]</a>-I*<a href="../2">[vprtrb]</a>)/2 at G=-<a class="wikilink" href="../../input_variables/varff#qprtrb">qprtrb</a> (see <a class="wikilink" href="../../input_variables/varff#qprtrb">qprtrb</a> also). </li>
+</ul>
+<h2 id="zeemanfield"><strong>zeemanfield</strong><a class="headerlink" href="#zeemanfield" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: ZEEMAN FIELD<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 0  </p>
+<p>Give the value of the Zeeman field, H, acting on the spinorial wavefunctions.
+Note that Tesla are admitted. This sets the magnitude of mu_0*H, in Tesla,
+with H in Amperes/metre.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

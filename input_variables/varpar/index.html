@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varpar/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Parallelism - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../vargeo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li class="active">
+    <a href="./">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../varint/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../varpaw/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#autoparal">autoparal</a></li>
+        <li class="main "><a href="#bandpp">bandpp</a></li>
+        <li class="main "><a href="#gpu_devices">gpu_devices</a></li>
+        <li class="main "><a href="#gpu_linalg_limit">gpu_linalg_limit</a></li>
+        <li class="main "><a href="#gwpara">gwpara</a></li>
+        <li class="main "><a href="#localrdwf">localrdwf</a></li>
+        <li class="main "><a href="#max_ncpus">max_ncpus</a></li>
+        <li class="main "><a href="#np_slk">np_slk</a></li>
+        <li class="main "><a href="#npband">npband</a></li>
+        <li class="main "><a href="#npfft">npfft</a></li>
+        <li class="main "><a href="#nphf">nphf</a></li>
+        <li class="main "><a href="#npimage">npimage</a></li>
+        <li class="main "><a href="#npkpt">npkpt</a></li>
+        <li class="main "><a href="#nppert">nppert</a></li>
+        <li class="main "><a href="#npspinor">npspinor</a></li>
+        <li class="main "><a href="#paral_atom">paral_atom</a></li>
+        <li class="main "><a href="#paral_kgb">paral_kgb</a></li>
+        <li class="main "><a href="#paral_rf">paral_rf</a></li>
+        <li class="main "><a href="#pw_unbal_thresh">pw_unbal_thresh</a></li>
+        <li class="main "><a href="#use_gpu_cuda">use_gpu_cuda</a></li>
+        <li class="main "><a href="#use_slk">use_slk</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="autoparal"><strong>autoparal</strong><a class="headerlink" href="#autoparal" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: AUTOmatisation of the PARALlelism<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This input variable is used only when running ABINIT in parallel and for
+Ground-State calculations.<br />
+It controls the automatic determination of parameters related to parallel work
+distribution (if not imposed in input file). Given a total number of
+processors, ABINIT can find a suitable distribution that fill (when possible)
+all the different levels of parallelization. ABINIT can also determine optimal
+parameters for the use of parallel Linear Algebra routines (using Scalapack or
+Cuda, at present).<br />
+The different values for <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> are:</p>
+<ul>
+<li><strong> 0: </strong> The <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> feature is deactivated. For ground-state and response function calculations, ABINIT can only activate automatically the parallelism over spins and k-points. </li>
+<li>
+<p><strong> 1: </strong> The number of processors per parallelization level is determined by mean of a simple (but relatively efficient) heuristic. A scaling factor is attributed to each level and an simple speedup factor is computed. The selected parameters are those giving the best speedup factor. <br />
+Possibly concerned parameters: <a class="wikilink" href="../../input_variables/varpar#npimage">npimage</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>,
+<a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a>.</p>
+</li>
+<li>
+<p><strong> 2: </strong> The number of processors per parallelization level is first determined by mean of a simple (but relatively efficient) heuristic (see 1 above). Then the code performs a series of small benchmarks using the scheme applied for the LOBPCG algorithm (see: <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a>=4 or 14). The parallel distribution is then changed according to the benchmarks. <br />
+Possibly concerned parameters: <a class="wikilink" href="../../input_variables/varpar#npimage">npimage</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>,
+<a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a>.</p>
+</li>
+<li>
+<p><strong> 3: </strong> Same as <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a>=1, plus automatic determination of Linear Algebra routines parameters. <br />
+In addition, the code performs a series of small benchmarks using the Linear
+Algebra routines (ScaLapack or Cuda-GPU). The parameters used to optimize
+Linear Algebra work distribution are then changed according to the benchmarks.<br />
+Possibly concerned parameters (in addition to those modified for
+<a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a>=1): <a class="wikilink" href="../../input_variables/varpar#use_slk">use_slk</a>, <a class="wikilink" href="../../input_variables/varpar#np_slk">np_slk</a>, <a class="wikilink" href="../../input_variables/varpar#gpu_linalg_limit">gpu_linalg_limit</a></p>
+</li>
+<li>
+<p><strong> 4: </strong> combination of <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a>=2 and <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a>=3. </p>
+</li>
+</ul>
+<p>Note that <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a>=1 can be used on every set of processors;
+<a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> &gt; 1 should be used on a sufficiently large number of MPI
+process.<br />
+Also note that <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> can be used simultaneously with <a class="wikilink" href="../../input_variables/varpar#max_ncpus">max_ncpus</a>; in
+this case, ABINIT performs an optimization of process distribution for each
+total number of processors from 2 to <a class="wikilink" href="../../input_variables/varpar#max_ncpus">max_ncpus</a>. A weight is associated to
+each distribution and the higher this weight is the better the distribution
+is. After having printed out the weights, the code stops.</p>
+<h2 id="bandpp"><strong>bandpp</strong><a class="headerlink" href="#bandpp" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BAND Per Processor<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>Control the size of the block in the LOBPCG algorithm. This keyword works only
+with <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>=1 and has to be either 1 or a multiple of 2.  </p>
+<p>-- With <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>=1:</p>
+<ul>
+<li>1 =&gt; band-per-band algorithm </li>
+<li>n =&gt; The minimization is performed using <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/n blocks of n bands. </li>
+</ul>
+<p>Note: <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/n has to be an integer.  </p>
+<p>-- With <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>/=1:</p>
+<ul>
+<li>1 =&gt; The minimization is performed using <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/<a class="wikilink" href="../../input_variables/varpar#npband">npband</a> blocks of <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> bands. </li>
+<li>n =&gt; The minimization is performed using <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/(<a class="wikilink" href="../../input_variables/varpar#npband">npband</a><em>n) blocks of <a class="wikilink" href="../../input_variables/varpar#npband">npband</a></em>n bands. </li>
+</ul>
+<p>Note: <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>/(<a class="wikilink" href="../../input_variables/varpar#npband">npband</a>*n) has to be an integer.  </p>
+<p>By minimizing a larger number of bands together in LOBPCG, we increase the
+convergency of the residual. The better minimization procedure (as concerns
+the convergency, but not as concerns the speed) is generally performed by
+using <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a>*<a class="wikilink" href="../../input_variables/varpar#npband">npband</a>=<a class="wikilink" href="../../input_variables/varbas#nband">nband</a>. Put <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a>=2 when <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a>=2 (the
+time spent in FFTs is divided by two).</p>
+<h2 id="gpu_devices"><strong>gpu_devices</strong><a class="headerlink" href="#gpu_devices" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GPU: choice of DEVICES on one node<br />
+Variable type: integer<br />
+Dimensions: (5)<br />
+Default value: [-1, -1, -1, -1, -1]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#use_gpu_cuda">use_gpu_cuda</a>==1 (CUDA functionality)  </p>
+<p>To be used when several GPU devices are present on each node, assuming the
+same number of devices on all nodes.<br />
+Allows to choose in which order the GPU devices are chosen and distributed
+among MPI processes (see examples below). When the default value (-1) is set,
+the GPU devices are chosen by order of performance (FLOPS, memory).  </p>
+<p>Examples:</p>
+<ul>
+<li>
+<p>2 GPU devices per node, 4 MPI processes per node, <strong>gpu_device</strong>=[-1,-1,-1,-1,-1] (default):<br />
+MPI processes 0 and 2 use the best GPU card, MPI processes 1 and 3 use the
+slowest GPU card.</p>
+</li>
+<li>
+<p>3 GPU devices per node, 5 MPI processes per node, <strong>gpu_device</strong>=[1,0,2,-1,-1]:<br />
+MPI processes 0 and 3 use GPU card 1, MPI processes 1 and 4 use GPU card 0,
+MPI process 2 uses GPU card 2.</p>
+</li>
+<li>
+<p>3 GPU devices per node, 5 MPI processes per node, <strong>gpu_device</strong>=[0,1,-1,-1,-1]:<br />
+MPI processes 0, 2 and 4 use GPU card 0, MPI processes 1 and 3 use GPU card 1;
+the 3rd GPU card is not used.</p>
+</li>
+</ul>
+<p>GPU card are numbered starting from 0; to get the GPU devices list, type
+&ldquo;nvidia-smi&rdquo; or &ldquo;lspci | grep -i nvidia&rdquo;.</p>
+<h2 id="gpu_linalg_limit"><strong>gpu_linalg_limit</strong><a class="headerlink" href="#gpu_linalg_limit" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GPU (Cuda): LINear ALGebra LIMIT<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2000000<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#use_gpu_cuda">use_gpu_cuda</a>==1 (CUDA functionality)  </p>
+<p>Use of linear algebra and matrix algebra on GPU is only efficient if the size
+of the involved matrices is large enough. The <a class="wikilink" href="../../input_variables/varpar#gpu_linalg_limit">gpu_linalg_limit</a> parameter
+defines the threshold above which linear (and matrix) algebra operations are
+done on the Graphics Processing Unit.<br />
+The considered matrix size is equal to:  </p>
+<ul>
+<li>SIZE=(<a class="wikilink" href="../../input_variables/varint#mpw">mpw</a><em><a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>/ <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>)</em> (<a class="wikilink" href="../../input_variables/varpar#npband">npband</a><em><a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a>)</em>*2 </li>
+</ul>
+<p>When SIZE&gt;=<a class="wikilink" href="../../input_variables/varpar#gpu_linalg_limit">gpu_linalg_limit</a>, <a class="wikilink" href="../../input_variables/vardev#wfoptalg">wfoptalg</a> parameter is automatically
+set to 14 which corresponds to the use of LOBPCG algorithm for the calculation
+of the eigenstates.</p>
+<h2 id="gwpara"><strong>gwpara</strong><a class="headerlink" href="#gwpara" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GW PARAllelization level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 2<br />
+Comment: The default value has been changed in v8. From 1 to 2 <br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
+<p><a class="wikilink" href="../../input_variables/varpar#gwpara">gwpara</a> is used to choose between the two different parallelization levels
+available in the <a class="wikilink" href="../../GW/">GW</a> code. The available options are:</p>
+<ul>
+<li>=1 =&gt; parallelisation on k points </li>
+<li>=2 =&gt; parallelisation on bands </li>
+</ul>
+<p>Additional notes:<br />
+In the present status of the code, only the parallelization over bands
+(<a class="wikilink" href="../../input_variables/varpar#gwpara">gwpara</a>=2) allows to reduce the memory allocated by each processor.<br />
+Using <a class="wikilink" href="../../input_variables/varpar#gwpara">gwpara</a>=1, indeed, requires the same amount of memory as a sequential
+run, irrespectively of the number of CPUs used.</p>
+<h2 id="localrdwf"><strong>localrdwf</strong><a class="headerlink" href="#localrdwf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: LOCAL ReaD WaveFunctions<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>This input variable is used only when running abinit in parallel. If
+<a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=1, the input wavefunction disk file or the KSS/SCR file in case
+of <a class="wikilink" href="../../GW/">GW</a> calculations, is read locally by each processor, while if
+<a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=0, only one processor reads it, and broadcast the data to the
+other processors.</p>
+<p>The option <a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=0 is NOT allowed when parallel I/O are activated
+(MPI-IO access), i.e. when <a class="wikilink" href="../../input_variables/vardev#iomode">iomode</a>==1.</p>
+<p>In the case of a parallel computer with a unique file system, both options are
+as convenient for the user. However, if the I/O are slow compared to
+communications between processors, , <a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=0 should be much more
+efficient; if you really need temporary disk storage, switch to localrdwf=1 ).</p>
+<p>In the case of a cluster of nodes, with a different file system for each
+machine, the input wavefunction file must be available on all nodes if
+<a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=1, while it is needed only for the master node if
+<a class="wikilink" href="../../input_variables/varpar#localrdwf">localrdwf</a>=0.</p>
+<h2 id="max_ncpus"><strong>max_ncpus</strong><a class="headerlink" href="#max_ncpus" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: MAXimum Number of CPUS<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> &gt; 1 and <a class="wikilink" href="../../input_variables/varpar#max_ncpus">max_ncpus</a> is greater than 0, ABINIT analyzes
+the efficiency of the process distribution for each possible number of
+processors from 2 to <a class="wikilink" href="../../input_variables/varpar#max_ncpus">max_ncpus</a>. After having printed out the efficiency,
+the code stops.</p>
+<h2 id="np_slk"><strong>np_slk</strong><a class="headerlink" href="#np_slk" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of mpi Processors used for ScaLapacK calls<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1000000<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==1 and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1 (Ground-state calculations with LOBPCG algorithm)  </p>
+<p>When using Scalapack (or any similar Matrix Algebra library), the efficiency
+of the eigenproblem resolution saturates as the number of CPU cores increases.
+It is better to use a smaller number of CPU cores for the LINALG calls.<br />
+This maximum number of cores can be set with <a class="wikilink" href="../../input_variables/varpar#np_slk">np_slk</a>.<br />
+A large number for <a class="wikilink" href="../../input_variables/varpar#np_slk">np_slk</a> (i.e. 1000000) means that all cores are used for
+the Linear Algebra calls.<br />
+np_slk must divide the number of processors involved in diagonalizations
+(<a class="wikilink" href="../../input_variables/varpar#npband">npband</a><em><a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a></em><a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>).<br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.</p>
+<h2 id="npband"><strong>npband</strong><a class="headerlink" href="#npband" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the BAND level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>Relevant only for the band/FFT parallelisation (see the <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> input
+variable).<br />
+<a class="wikilink" href="../../input_variables/varpar#npband">npband</a> gives the number of processors among which the work load over the
+band level is shared. <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a> and <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> are
+combined to give the total number of processors (nproc) working on the
+band/FFT/k-point parallelisation.<br />
+See <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> for the additional
+information on the use of band/FFT/k-point parallelisation. <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> has to
+be a divisor or equal to <a class="wikilink" href="../../input_variables/varbas#nband">nband</a><br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.</p>
+<h2 id="npfft"><strong>npfft</strong><a class="headerlink" href="#npfft" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the FFT level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>Relevant only for the band/FFT/k-point parallelisation (see the <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>
+input variable).<br />
+<a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> gives the number of processors among which the work load over the
+FFT level is shared. <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> and <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> are
+combined to give the total number of processors (nproc) working on the
+band/FFT/k-point parallelisation.<br />
+See <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>, and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> for the additional
+information on the use of band/FFT/k-point parallelisation.</p>
+<p>Note : <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is automatically adjusted to <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>. If the number of
+processor is changed from a calculation to another one, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> may change,
+and then <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> also.<br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.</p>
+<h2 id="nphf"><strong>nphf</strong><a class="headerlink" href="#nphf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors for (Hartree)-Fock exact exchange<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Relevant only for the k-point/fock parallelisation (option <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> input
+variable).<br />
+<a class="wikilink" href="../../input_variables/varpar#nphf">nphf</a> gives the number of processors among which the work load over the
+occupied states level is shared. <a class="wikilink" href="../../input_variables/varpar#nphf">nphf</a> and <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a> are combined to give
+the total number of processors (nproc) working on the parallelisation.  </p>
+<p>Note : <a class="wikilink" href="../../input_variables/varpar#nphf">nphf</a> should be a divisor or equal to the number of k-point times
+the number of bands for exact exchange (<a class="wikilink" href="../../input_variables/varbas#nkpthf">nkpthf</a>*<a class="wikilink" href="../../input_variables/varbas#nbandhf">nbandhf</a>) in order to
+have the better load-balancing and efficiency.  </p>
+<h2 id="npimage"><strong>npimage</strong><a class="headerlink" href="#npimage" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the IMAGE level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Relevant only when sets of images are activated (see <a class="wikilink" href="../../input_variables/varrlx#imgmov">imgmov</a> and <a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a>
+).<br />
+<a class="wikilink" href="../../input_variables/varpar#npimage">npimage</a> gives the number of processors among which the work load over the
+image level is shared. It is compatible with all other parallelization levels
+available for ground-state calculations.<br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.  </p>
+<p>_See <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> and <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> for the
+additional information on the use of k-point/band/FFT parallelisation. _</p>
+<h2 id="npkpt"><strong>npkpt</strong><a class="headerlink" href="#npkpt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the K-Point Level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>Relevant only for the band/FFT/k-point parallelisation (see the <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>
+input variable).<br />
+<a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a> gives the number of processors among which the work load over the
+k-point/spin-component level is shared. <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> and
+<a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> are combined to give the total number of processors (nproc)
+working on the band/FFT/k-point parallelisation.<br />
+See <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> for the additional
+information on the use of band/FFT/k-point parallelisation.</p>
+<p><a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a> should be a divisor or equal to with the number of k-point/spin-
+components (<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>*<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>) in order to have the better load-balancing
+and efficiency.<br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.</p>
+<h2 id="nppert"><strong>nppert</strong><a class="headerlink" href="#nppert" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the PERTurbation level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_rf">paral_rf</a>==1  </p>
+<p>This parameter is used in connection to the parallelization over
+perturbations(see <a class="wikilink" href="../../input_variables/varpar#paral_rf">paral_rf</a> ), for a linear response calculation.
+<a class="wikilink" href="../../input_variables/varpar#nppert">nppert</a> gives the number of processors among which the work load over the
+perturbation level is shared. It can even be specified separately for each
+dataset.</p>
+<h2 id="npspinor"><strong>npspinor</strong><a class="headerlink" href="#npspinor" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Processors at the SPINOR level<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>Can be 1 or 2 (if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2).<br />
+Relevant only for the band/FFT/k-point parallelisation (see the <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>
+input variable).<br />
+<a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> gives the number of processors among which the work load over the
+spinorial components of wave-functions is shared. <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>,
+<a class="wikilink" href="../../input_variables/varpar#npband">npband</a> and <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a> are combined to give the total number of processors
+(nproc) working on the band/FFT/k-point parallelisation.<br />
+Note: an optimal value for this parameter can be automatically found by using
+the <a class="wikilink" href="../../input_variables/varpar#autoparal">autoparal</a> input keyword.  </p>
+<p><em>See <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, and <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a> for the additional
+information on the use of band/FFT/k-point parallelisation.</em>  </p>
+<h2 id="paral_atom"><strong>paral_atom</strong><a class="headerlink" href="#paral_atom" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: activate PARALelization over (paw) ATOMic sites<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>Relevant only for PAW calculations.<br />
+This keyword controls the parallel distribution of memory over atomic sites.
+Calculations are also distributed using the &ldquo;kpt-band&rdquo; communicator.
+Compatible with ground-state calculations and response function calculations  </p>
+<h2 id="paral_kgb"><strong>paral_kgb</strong><a class="headerlink" href="#paral_kgb" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: activate PARALelization over K-point, G-vectors and Bands<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p><strong> If paral_kgb is not explicitely put in the input file </strong> , ABINIT automatically detects if the job has been sent in sequential or in parallel. In this last case, it detects the number of processors on which the job has been sent and calculates values of <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>, <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a> , <a class="wikilink" href="../../input_variables/varpar#npimage">npimage</a> and <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> that are compatible with the number of processors. It then set paral_kgb to 0 or 1 (see hereunder) and launches the job. </p>
+<p><strong> If paral_kgb=0 </strong> , the parallelization over k-points only is activated. In this case, <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> and <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> are ignored. Require compilation option &ndash;enable-mpi=&rdquo;yes&rdquo;. </p>
+<p><strong> If paral_kgb=1 </strong> , the parallelization over bands, FFTs, and k-point/spin-components is activated (see <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a> <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> and eventually <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>). With this parallelization, the work load is split over four levels of parallelization (three level of parallelisation (kpt-band-fft )+ spin) The different communications almost occur along one dimension only. Require compilation option &ndash;enable-mpi=&rdquo;yes&rdquo;. </p>
+<p>HOWTO fix the number of processors along one level of parallelisation:<br />
+At first, try to parallelise over the k point and spin (see
+<a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>,<a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>). Otherwise, for unpolarized calculation at the gamma
+point, parallelise over the two other levels: the band and FFT ones. For
+nproc&lt;=50, the best speed-up is achieved for <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>=nproc and
+<a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>=1 (which is not yet the default). For nproc&gt;=50, the best speed-
+up is achieved for <a class="wikilink" href="../../input_variables/varpar#npband">npband</a> &gt;=4*<a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>.</p>
+<p>For additional information, download F. Bottin presentation at the <a href="http://www.abinit.org/community/events/program3rd"> ABINIT
+workshop 2007 </a></p>
+<p>Suggested acknowledgments :<br />
+F. Bottin, S. Leroux, A. Knyazev and G. Zerah, _ Large scale ab initio
+calculations based on three levels of parallelization _ , Comput. Mat. Science
+<strong> 42 </strong> , 329 (2008), also available on arXiv, http://arxiv.org/abs/0707.3405
+.</p>
+<p>If the total number of processors used is compatible with the four levels of
+parallelization, the values for <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>
+and <a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a> will be filled automatically, although the repartition may not
+be optimal. To optimize the repartition use:</p>
+<p><strong> If paral_kgb=1 </strong> and <strong> max_ncpus = n /= 0 </strong> ABINIT will test automatically if all the processor numbers between 2 and n are convenient for a parallel calculation and print the possible values in the log file. A weight is attributed to each possible processors repartition. It is adviced to select a processor repartition for which the weight is high (as closed to the number of processors as possible). The code will then stop after the printing. This test can be done as well with a sequential as with a parallel version of the code. The user can then choose the adequate number of processor on which he can run his job. He must put again paral_kgb=1 in the input file and put the corresponding values for <a class="wikilink" href="../../input_variables/varpar#npkpt">npkpt</a>, <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>, <a class="wikilink" href="../../input_variables/varpar#npband">npband</a>,<a class="wikilink" href="../../input_variables/varpar#bandpp">bandpp</a> and eventually <a class="wikilink" href="../../input_variables/varpar#npspinor">npspinor</a> in the input file. </p>
+<h2 id="paral_rf"><strong>paral_rf</strong><a class="headerlink" href="#paral_rf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: activate PARALlelization over Response Function perturbations<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This parameter activates the parallelization over perturbations which can be
+used during RF-Calculation. It is possible to use this type of parallelization
+in combination to the parallelization over k-points.</p>
+<p>Currently total energies calculated by groups, where the master process is not
+in, are saved in .status_LOGxxxx files.</p>
+<p>If <a class="wikilink" href="../../input_variables/varpar#paral_rf">paral_rf</a> is set to -1, the code reports the list of irreducible
+perturbations for the specified q-point in the log file (YAML format) and then
+stops.</p>
+<p><a class="wikilink" href="../../input_variables/varpar#paral_rf">paral_rf</a> can be specified separately for each dataset.</p>
+<h2 id="pw_unbal_thresh"><strong>pw_unbal_thresh</strong><a class="headerlink" href="#pw_unbal_thresh" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Plane Wave UNBALancing: THRESHold for balancing procedure<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 40%<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varpar#paral_kgb">paral_kgb</a>==1  </p>
+<p>This parameter (in %) activates a load balancing procedure when the
+distribution of plane wave components over MPI processes is not optimal. The
+balancing procedure is activated when the ratio between the number of plane
+waves treated by a processor and the ideal one is higher than
+<em>pw_unbal_thresh</em> %.</p>
+<h2 id="use_gpu_cuda"><strong>use_gpu_cuda</strong><a class="headerlink" href="#use_gpu_cuda" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: activate USE of GPU accelerators with CUDA (nvidia)<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1 if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==0 and <a class="wikilink" href="../../CUDA/">CUDA</a>,
+0 otherwise.</p>
+<p>Only available if ABINIT executable has been compiled with cuda nvcc compiler.<br />
+This parameter activates the use of NVidia graphic accelerators (GPU) if
+present.<br />
+If <a class="wikilink" href="../../input_variables/varpar#use_gpu_cuda">use_gpu_cuda</a> = 1, some parts of the computation are transmitted to the
+GPUs.<br />
+If <a class="wikilink" href="../../input_variables/varpar#use_gpu_cuda">use_gpu_cuda</a> = 0, no computation is done on GPUs, even if present.  </p>
+<p>Note that, while running ABINIT on GPUs, it is recommended to use MAGMA
+external library (i.e. Lapack on GPUs). The latter is activated during
+compilation stage (see &ldquo;configure&rdquo; step of ABINIT compilation process). If
+MAGMA is not used, ABINIT performances on GPUs can be poor.</p>
+<h2 id="use_slk"><strong>use_slk</strong><a class="headerlink" href="#use_slk" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: USE ScaLapacK<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>If set to 1, enable the use of ScaLapack within LOBPCG.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

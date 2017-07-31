@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/vargeo/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Geometry - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/extra.css" rel="stylesheet">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!--
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    -->
+
+    <!--
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    -->
+
+    
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Topics</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../topics/crystal/">Crystalline Structure</a>
+</li>
+            
+<li >
+    <a href="../../topics/kpoints/">K-points</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../varbas/">Basic</a>
+</li>
+            
+<li >
+    <a href="../varbse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../vardev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../vardmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../vareph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../varff/">Varff</a>
+</li>
+            
+<li >
+    <a href="../varfil/">File-handling</a>
+</li>
+            
+<li class="active">
+    <a href="./">Geometry</a>
+</li>
+            
+<li >
+    <a href="../vargs/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../vargw/">GW</a>
+</li>
+            
+<li >
+    <a href="../varint/">Internal</a>
+</li>
+            
+<li >
+    <a href="../varpar/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../varpaw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../varrf/">RF</a>
+</li>
+            
+<li >
+    <a href="../varrlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../varvdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../varw90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../varfil/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../vargs/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#brvltt">brvltt</a></li>
+        <li class="main "><a href="#chempot">chempot</a></li>
+        <li class="main "><a href="#genafm">genafm</a></li>
+        <li class="main "><a href="#natrd">natrd</a></li>
+        <li class="main "><a href="#nobj">nobj</a></li>
+        <li class="main "><a href="#nzchempot">nzchempot</a></li>
+        <li class="main "><a href="#objaat">objaat</a></li>
+        <li class="main "><a href="#objaax">objaax</a></li>
+        <li class="main "><a href="#objan">objan</a></li>
+        <li class="main "><a href="#objarf">objarf</a></li>
+        <li class="main "><a href="#objaro">objaro</a></li>
+        <li class="main "><a href="#objatr">objatr</a></li>
+        <li class="main "><a href="#objbat">objbat</a></li>
+        <li class="main "><a href="#objbax">objbax</a></li>
+        <li class="main "><a href="#objbn">objbn</a></li>
+        <li class="main "><a href="#objbrf">objbrf</a></li>
+        <li class="main "><a href="#objbro">objbro</a></li>
+        <li class="main "><a href="#objbtr">objbtr</a></li>
+        <li class="main "><a href="#ptgroupma">ptgroupma</a></li>
+        <li class="main "><a href="#spgaxor">spgaxor</a></li>
+        <li class="main "><a href="#spgorig">spgorig</a></li>
+        <li class="main "><a href="#spgroup">spgroup</a></li>
+        <li class="main "><a href="#spgroupma">spgroupma</a></li>
+        <li class="main "><a href="#tolsym">tolsym</a></li>
+        <li class="main "><a href="#vaclst">vaclst</a></li>
+        <li class="main "><a href="#vacnum">vacnum</a></li>
+        <li class="main "><a href="#xyzfile">xyzfile</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="brvltt"><strong>brvltt</strong><a class="headerlink" href="#brvltt" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: BRaVais LaTTice type<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a> != 0  </p>
+<p>Set the type of Bravais lattice. The cell defined by <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>
+or <a class="wikilink" href="../../input_variables/varbas#angdeg">angdeg</a> should be the CONVENTIONAL cell.</p>
+<p>If brvltt=0, the code will assign brvltt from the space group information
+<a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>, and produce the symmetry operations for the conventional unit
+cell. If the conventional cell is not primitive, the user should set
+<a class="wikilink" href="../../input_variables/vargs#chkprim">chkprim</a>=0.</p>
+<p>If brvltt=-1, the code will assign brvltt from the space group information,
+then reduce the unit cell to a primitive unit cell. The echo of <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and
+<a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> might thus differ from those derived directly from the input
+variables. Also, the input variable <a class="wikilink" href="../../input_variables/varbas#xred">xred</a> will refer to the CONVENTIONAL
+unit cell, but its echo will refer to the preprocessed PRIMITIVE unit cell.
+There is of course no problem with <a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a> and <a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>, as they are
+independent of the unit cell.</p>
+<p>The echo of <a class="wikilink" href="../../input_variables/vargeo#brvltt">brvltt</a> in the output file will be one of the following Bravais
+lattices:  </p>
+<ul>
+<li>1 = Primitive with no associated translations </li>
+<li>2 = Inner centered with (a/2 + b/2 + c/2) associated translation </li>
+<li>3 = Face centered with (a/2 + b/2; b/2 + c/2; c/2 + a/2) associated translations </li>
+<li>4 = C - centered with (a/2 + b/2) associated translation </li>
+<li>5 = A - centered with (b/2 + c/2) associated translation </li>
+<li>6 = B - centered with (c/2 + a/2) associated translation </li>
+<li>7 = Rhombohedral lattice. </li>
+</ul>
+<p>The user might also input directly these values, although they might not be
+consistent with <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>.</p>
+<p>The space groups 146, 148, 155, 160, 161, 166, 167, when used with
+<a class="wikilink" href="../../input_variables/vargeo#spgaxor">spgaxor</a>=1 (hexagonal axes) will have <a class="wikilink" href="../../input_variables/vargeo#brvltt">brvltt</a>=7 and two associated
+translations: (2/3, 1/3, 1/3) and (1/3, 2/3, 2/3).<br />
+For more details see the space group <a href="../../../users/spacegrouphelpfile.html"> help file
+</a> .</p>
+<h2 id="chempot"><strong>chempot</strong><a class="headerlink" href="#chempot" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: spatially varying CHEMical POTential<br />
+Variable type: real<br />
+Dimensions: (3,[[&lsquo;nzchempot&rsquo;]],[[&lsquo;ntype&rsquo;]])<br />
+Default value: 0.0<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargeo#nzchempot">nzchempot</a>/=0  </p>
+<p>For each type of atoms, from 1 to <a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>, specifies the spatially varying
+chemical potential, through the specification of <a class="wikilink" href="../../input_variables/vargeo#nzchempot">nzchempot</a> triplets of
+real numbers. They give data for <a class="wikilink" href="../../input_variables/vargeo#nzchempot">nzchempot</a> delimiting planes, all parallel
+to each other, each determined by its z reduced coordinate. The first real
+number is the z reduced coordinate of the delimiting plane. The second real
+number is the value of the chemical potential for this type of atom on this
+plane. The third real number is the derivative of the chemical potential fior
+this type of atom with respect to the z reduced coordinate, evaluated on this
+plane. In the space between delimiting planes, a piecewise cubic polynomial
+interpolation is determined : the cubic polynomial between two delimiting
+planes will have the imposed chemical potentials and derivatives on the two
+delimiting planes. The z reduced coordinates must be ordered in increasing
+values, and cannot span more than 1.0 . There is an automatic periodic
+boundary condition imposed. Specifying two identical z reduced coordinates is
+allowed, and means that the first one applies to the adjacent space with lower
+values of z, while the second applies to the adjacent space with higher values
+of z. When the spatial chemical potential is defined only for one type of atom
+(and no chemical potential is present for the other atoms), simply set the
+related values to *0.0 in the <a class="wikilink" href="../../input_variables/vargeo#chempot">chempot</a> array. In the present input array,
+reduced positions, energies and derivatives of energies are mixed. Hence,
+although the chemical potential is an energy, one cannot use the usual energy
+definitions (i.e. the chemical potential is always to be input in Hartree
+atomic units).</p>
+<h2 id="genafm"><strong>genafm</strong><a class="headerlink" href="#genafm" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: GENerator of the translation for Anti-FerroMagnetic space group<br />
+Variable type: real<br />
+Dimensions: (3)<br />
+Default value: 3*0  </p>
+<p>This input variable might be used to define a Shubnikov type IV magnetic space
+group (anti-ferromagnetic space group). The user is advised to consult &ldquo;The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford.&rdquo;<br />
+A Shubnikov type IV magnetic space group might be defined by its Fedorov space
+group (set of spatial symmetries, that do not change the magnetization), and
+one translation associated with a change of magnetization. <a class="wikilink" href="../../input_variables/vargeo#genafm">genafm</a> is
+precisely this translation, in reduced coordinates (like <a class="wikilink" href="../../input_variables/varbas#xred">xred</a>)<br />
+Thus, one way to specify a Shubnikov IV magnetic space group, is to define
+both <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a> and <a class="wikilink" href="../../input_variables/vargeo#genafm">genafm</a>. Alternatively, one might define <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>
+and <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>, or define by hand the set of symmetries, using <a class="wikilink" href="../../input_variables/varbas#symrel">symrel</a>,
+<a class="wikilink" href="../../input_variables/varbas#tnons">tnons</a> and <a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a></p>
+<h2 id="natrd"><strong>natrd</strong><a class="headerlink" href="#natrd" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of AToms ReaD<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>  </p>
+<p>Gives the number of atoms to be read from the input file, in the case the
+geometry builder or the symmetriser is used. In this case, <a class="wikilink" href="../../input_variables/vargeo#natrd">natrd</a> is also
+used to dimension the array <a class="wikilink" href="../../input_variables/varbas#typat">typat</a>, and the arrays <a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, <a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a> and
+<a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>.<br />
+Must take into account the vacancies (see <a class="wikilink" href="../../input_variables/vargeo#vacnum">vacnum</a> and <a class="wikilink" href="../../input_variables/vargeo#vaclst">vaclst</a>).<br />
+Despite possible vacancies, cannot be bigger than <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>.</p>
+<h2 id="nobj"><strong>nobj</strong><a class="headerlink" href="#nobj" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of OBJects<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0<br />
+Comment: (no use of the geometry builder)  </p>
+<p>Gives the number of &lsquo;objects&rsquo; to be used by the geometry builder in order to
+find the full set of atoms. At present, only one or two objects can be
+defined, identified as objects &lsquo;a&rsquo; and &lsquo;b&rsquo;.<br />
+Related variables for object &lsquo;a&rsquo; are : <a class="wikilink" href="../../input_variables/vargeo#objan">objan</a>, <a class="wikilink" href="../../input_variables/vargeo#objaat">objaat</a>, <a class="wikilink" href="../../input_variables/vargeo#objarf">objarf</a>,
+<a class="wikilink" href="../../input_variables/vargeo#objatr">objatr</a>, <a class="wikilink" href="../../input_variables/vargeo#objaro">objaro</a>, <a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a>. Related variables for object &lsquo;b&rsquo; are :
+<a class="wikilink" href="../../input_variables/vargeo#objbn">objbn</a> , <a class="wikilink" href="../../input_variables/vargeo#objbat">objbat</a> , <a class="wikilink" href="../../input_variables/vargeo#objbrf">objbrf</a> , <a class="wikilink" href="../../input_variables/vargeo#objbtr">objbtr</a> , <a class="wikilink" href="../../input_variables/vargeo#objbro">objbro</a> , <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a> .<br />
+More detailed explanation : when the geometry builder is used (i.e. when
+<a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==1 or <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==2), the code will be given a primitive set of atoms,
+from which it will have to deduce the full set of atoms.<br />
+An object will be specified by the number of atoms it includes (<a class="wikilink" href="../../input_variables/vargeo#objan">objan</a> or
+<a class="wikilink" href="../../input_variables/vargeo#objbn">objbn</a> ), and the list of these atoms (<a class="wikilink" href="../../input_variables/vargeo#objaat">objaat</a> or <a class="wikilink" href="../../input_variables/vargeo#objbat">objbat</a> ).<br />
+Examples of physical realisation of an object can be a molecule, or a group of
+atom to be repeated, or a part of a molecule to be rotated. The geometry
+builder can indeed repeat these objects (<a class="wikilink" href="../../input_variables/vargeo#objarf">objarf</a> or <a class="wikilink" href="../../input_variables/vargeo#objbrf">objbrf</a> ), rotate
+them (<a class="wikilink" href="../../input_variables/vargeo#objaro">objaro</a> or <a class="wikilink" href="../../input_variables/vargeo#objbro">objbro</a> ) with respect to an axis (<a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> or
+<a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a> ), and translate them (<a class="wikilink" href="../../input_variables/vargeo#objatr">objatr</a> or <a class="wikilink" href="../../input_variables/vargeo#objbtr">objbtr</a> ). After having
+generated a geometry thanks to rotation, translation and repetition of
+objects, it is possible to remove some atoms, in order to create vacancies
+(<a class="wikilink" href="../../input_variables/vargeo#vacnum">vacnum</a> and <a class="wikilink" href="../../input_variables/vargeo#vaclst">vaclst</a>). The number of atoms in the primitive set, those
+that will be read from the input file, is specified by the variable <a class="wikilink" href="../../input_variables/vargeo#natrd">natrd</a>.
+It will be always smaller than the final number of atoms, given by the
+variable <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>. The code checks whether the primitive number of atoms plus
+those obtained by the repetition operation is coherent with the variable
+<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, taking into account possible vacancies.<br />
+You should look at the other variables for more information. Go to <a class="wikilink" href="../../input_variables/vargeo#objan">objan</a>,
+for example.  </p>
+<h2 id="nzchempot"><strong>nzchempot</strong><a class="headerlink" href="#nzchempot" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: Number of Z reduced coordinates that define the spatial CHEMical POTential<br />
+Variable type: integer<br />
+Default value: None  </p>
+<p>Defines the number of z reduced coordinates that defines the spatially varying
+chemical potential. See the input variable <a class="wikilink" href="../../input_variables/vargeo#chempot">chempot</a>, of which <a class="wikilink" href="../../input_variables/vargeo#nzchempot">nzchempot</a>
+is the second dimension.</p>
+<h2 id="objaat"><strong>objaat</strong><a class="headerlink" href="#objaat" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : list of AToms<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargeo#objan">objan</a>)<br />
+Default value: None<br />
+Only relevant if &lsquo;<a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==1&rsquo;</p>
+<p>Gives the list of atoms in object a. This list is specified by giving, for
+each atom, its index in the list of coordinates (<a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, <a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a> or
+<a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
+These objects can be thought as molecules, or groups of atoms, or parts of
+molecules, to be repeated, rotated and translated to generate the full set of
+atoms.<br />
+Look at <a class="wikilink" href="../../input_variables/vargeo#objarf">objarf</a> for further explanations.  </p>
+<h2 id="objaax"><strong>objaax</strong><a class="headerlink" href="#objaax" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : AXis<br />
+Variable type: real<br />
+Default value: None<br />
+Comment: <a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> must be provided if (<a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==1 and one component of <a class="wikilink" href="../../input_variables/vargeo#objaro">objaro</a> != 0). Moreover,
+<a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> AND <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a> must be provided if ( <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a> == 2 and one component of <a class="wikilink" href="../../input_variables/vargeo#objbro">objbro</a> != 0 ).  </p>
+<p>Gives, for each object, the cartesian coordinates of two points (first point :
+<a href="../1:3">[objaax]</a> second point : <a href="../4:6">[objaax]</a>. By default, given in Bohr
+atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
+specified, if preferred, since these variables have the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo;
+characteristics.<br />
+The two points define an axis of rotation of the corresponding object.<br />
+Note that the rotation of the object is done BEFORE the object is translated.<br />
+The sign of the rotation angle is positive if the object is to be rotated
+clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
+toward point 2 (coordinates 4:6).  </p>
+<h2 id="objan"><strong>objan</strong><a class="headerlink" href="#objan" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : Number of atoms<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None<br />
+Comment:  <a class="wikilink" href="../../input_variables/vargeo#objan">objan</a> MUST be provided if <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==1.
+ <a class="wikilink" href="../../input_variables/vargeo#objan">objan</a> and <a class="wikilink" href="../../input_variables/vargeo#objbn">objbn</a> MUST be provided if <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==2.  </p>
+<p>Gives the number of atoms in object a. The list of atoms is given by the
+variables <a class="wikilink" href="../../input_variables/vargeo#objaat">objaat</a>.  </p>
+<h2 id="objarf"><strong>objarf</strong><a class="headerlink" href="#objarf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : Repetition Factors<br />
+Variable type: integer<br />
+Default value: [1, 1, 1]  </p>
+<p>Gives three repetition factors of the objects a.<br />
+This gives the opportunity to generate a three-dimensional set of repeated
+objects, although a simple one-dimensional repetition will be easily obtained
+through the specification of<br />
+&lsquo;nrep&rsquo; 1 1<br />
+where &lsquo;nrep&rsquo; is the 1D repetition factor.<br />
+The initial rotation and translation of the object, as well as the increment
+of rotation or translation from one object to the next are specified by the
+variables <a class="wikilink" href="../../input_variables/vargeo#objaro">objaro</a> and <a class="wikilink" href="../../input_variables/vargeo#objatr">objatr</a>, for object a,<br />
+Note that the geometry builder will generate the full set of atoms from the
+primitive set of atoms using the following order : it will process each atom
+in the primitive list one by one, determine whether it belongs to either
+object a or object b, and then repeat it taking into account the proper
+rotation and translation, with the fastest varying repetition factor being the
+first, then the second, then the third.<br />
+In the final list of atoms, one will first find the atoms generated from atom
+1 in the primitive list, then those generated from atom 2 in the primitive
+list, and so on.<br />
+If the geometry builder is only used to rotate or translate an object, without
+repeating it, simply use 1 1 1, which is also the Default value.  </p>
+<h2 id="objaro"><strong>objaro</strong><a class="headerlink" href="#objaro" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : ROtations<br />
+Variable type: real<br />
+Default value: 4*0.0d0<br />
+Comment: (no rotation)  </p>
+<p>Give, for each object, the angles of rotation in degrees to be applied to the
+corresponding object.<br />
+The rotation is applied before the translation, and the axis is defined by the
+variables <a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> and <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a>. See the latter variables for the
+definition of the sign of the rotation.<br />
+The first component <a href="../1">[objaro]</a> and <strong> objbro </strong> (1) gives the angle of
+rotation to be applied to the first instance of the object. The second, third
+or fourth component (resp.) gives the increment of rotation angle from one
+instance to the next instance, defined by the first, second or third
+repetition factor (resp.) . This allows to generate 3D arrays of molecules
+with different rotation angles.  </p>
+<h2 id="objatr"><strong>objatr</strong><a class="headerlink" href="#objatr" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect A : TRanslations<br />
+Variable type: real<br />
+Default value: 12*0.0d0<br />
+Comment: (no translation)  </p>
+<p>Give, for each object, the vectors of translations, in cartesian coordinates,
+to be applied to the corresponding object. By default, given in Bohr atomic
+units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
+preferred, since these variables have the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo; characteristics.<br />
+The translation is applied after the rotation.<br />
+The first vector <a href="../3,1">[objatr]</a> and <a href="../3,1">[objbtr]</a> gives the translation to
+be applied to the first instance of the object. The second, third or fourth
+component (resp.) gives the increment of translation from one instance to the
+next instance, defined by the first, second or third repetition factor (resp.)
+. This allows to generate 3D arrays of molecules.<br />
+In general, when the objects are repeated, a translation vector must be given,
+since otherwise, the repeated objects pack in the same region of space. As an
+exception, one can have a set of molecules regularly spaced on a circle, in
+which case, only rotations are needed.<br />
+Not present in the dtset array (no internal).</p>
+<h2 id="objbat"><strong>objbat</strong><a class="headerlink" href="#objbat" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : list of AToms<br />
+Variable type: integer<br />
+Default value: None<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==2  </p>
+<p>Gives the list of atoms in object b. This list is specified by giving, for
+each atom, its index in the list of coordinates (<a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, <a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a> or
+<a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
+These objects can be thought as molecules, or groups of atoms, or parts of
+molecules, to be repeated, rotated and translated to generate the full set of
+atoms.<br />
+Look at <a class="wikilink" href="../../input_variables/vargeo#objbrf">objbrf</a> for further explanations.  </p>
+<h2 id="objbax"><strong>objbax</strong><a class="headerlink" href="#objbax" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : AXis<br />
+Variable type: real<br />
+Default value: None<br />
+Comment: <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a> must be provided if (<a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==1 and one component of <a class="wikilink" href="../../input_variables/vargeo#objaro">objaro</a> != 0). Moreover,
+<a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> AND <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a> must be provided if ( <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a> == 2 and one component of <a class="wikilink" href="../../input_variables/vargeo#objbro">objbro</a> != 0 ).  </p>
+<p>Gives, for each object, the cartesian coordinates of two points (first point :
+<a href="../1:3">[objbax]</a> second point : <a href="../4:6">[objbax]</a>. By default, given in Bohr
+atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
+specified, if preferred, since these variables have the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo;
+characteristics.<br />
+The two points define an axis of rotation of the corresponding object.<br />
+Note that the rotation of the object is done BEFORE the object is translated.<br />
+The sign of the rotation angle is positive if the object is to be rotated
+clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
+toward point 2 (coordinates 4:6).  </p>
+<h2 id="objbn"><strong>objbn</strong><a class="headerlink" href="#objbn" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : Number of atoms<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: None<br />
+Comment:  <a class="wikilink" href="../../input_variables/vargeo#objan">objan</a> and <a class="wikilink" href="../../input_variables/vargeo#objbn">objbn</a> MUST be provided if <a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>==2.  </p>
+<p>Gives the number of atoms in either object b. The list of atoms is given by
+the variables <a class="wikilink" href="../../input_variables/vargeo#objbat">objbat</a>.  </p>
+<h2 id="objbrf"><strong>objbrf</strong><a class="headerlink" href="#objbrf" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : Repetition Factors<br />
+Variable type: integer<br />
+Default value: [1, 1, 1]  </p>
+<p>Gives three repetition factors of the objects a or b.<br />
+This gives the opportunity to generate a three-dimensional set of repeated
+objects, although a simple one-dimensional repetition will be easily obtained
+through the specification of<br />
+nrep 1 1 &lt;r&gt; where nrep is the 1D repetition factor.<br />
+The initial rotation and translation of the object, as well as the increment
+of rotation or translation from one object to the next are specified by the
+variables <a class="wikilink" href="../../input_variables/vargeo#objbro">objbro</a> and <a class="wikilink" href="../../input_variables/vargeo#objbtr">objbtr</a>, for object b.<br />
+Note that the geometry builder will generate the full set of atoms from the
+primitive set of atoms using the following order : it will process each atom
+in the primitive list one by one, determine whether it belongs to either
+object a or object b, and then repeat it taking into account the proper
+rotation and translation, with the fastest varying repetition factor being the
+first, then the second, then the third.<br />
+In the final list of atoms, one will first find the atoms generated from atom
+1 in the primitive list, then those generated from atom 2 in the primitive
+list, and so on.<br />
+If the geometry builder is only used to rotate or translate an object, without
+repeating it, simply use 1 1 1, which is also the Default value.  </p>
+<h2 id="objbro"><strong>objbro</strong><a class="headerlink" href="#objbro" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : ROtations<br />
+Variable type: real<br />
+Default value: 4*0.0d0<br />
+Comment: (no rotation)  </p>
+<p>Give, for each object, the angles of rotation in degrees to be applied to the
+corresponding object.<br />
+The rotation is applied before the translation, and the axis is defined by the
+variables <a class="wikilink" href="../../input_variables/vargeo#objaax">objaax</a> and <a class="wikilink" href="../../input_variables/vargeo#objbax">objbax</a>. See the latter variables for the
+definition of the sign of the rotation.<br />
+The first component <a href="../1">[objaro]</a> and <strong> objbro </strong> (1) gives the angle of
+rotation to be applied to the first instance of the object. The second, third
+or fourth component (resp.) gives the increment of rotation angle from one
+instance to the next instance, defined by the first, second or third
+repetition factor (resp.) . This allows to generate 3D arrays of molecules
+with different rotation angles.  </p>
+<h2 id="objbtr"><strong>objbtr</strong><a class="headerlink" href="#objbtr" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: OBJect B : TRanslations<br />
+Variable type: real<br />
+Default value: 12*0.0d0<br />
+Comment: (no translation)  </p>
+<p>Give, for each object, the vectors of translations, in cartesian coordinates,
+to be applied to the corresponding object. By default, given in Bohr atomic
+units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
+preferred, since these variables have the &lsquo;<a class="wikilink" href="../../LENGTH/">LENGTH</a>&lsquo; characteristics.<br />
+The translation is applied after the rotation.<br />
+The first vector <a href="../3,1">[objatr]</a> and <a href="../3,1">[objbtr]</a> gives the translation to
+be applied to the first instance of the object. The second, third or fourth
+component (resp.) gives the increment of translation from one instance to the
+next instance, defined by the first, second or third repetition factor (resp.)
+. This allows to generate 3D arrays of molecules.<br />
+In general, when the objects are repeated, a translation vector must be given,
+since otherwise, the repeated objects pack in the same region of space. As an
+exception, one can have a set of molecules regularly spaced on a circle, in
+which case, only rotations are needed.  </p>
+<h2 id="ptgroupma"><strong>ptgroupma</strong><a class="headerlink" href="#ptgroupma" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: PoinT GROUP number for the MAgnetic space group<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This internal variable characterizes a Shubnikov type III magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult &ldquo;The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford.&rdquo;<br />
+A Shubnikov type III magnetic space group might be defined by its Fedorov
+space group (set of all spatial symmetries, irrespective of their magnetic
+action), and the halving space group (only the symmetries that do not change
+the magnetization).<br />
+The specification of the halving space group might be done by specifying, for
+each point symmetry, the magnetic action. See Table 7.1 of the above-mentioned
+reference. Magnetic point groups are numbered from 1 to 58.</p>
+<p>Related input variables : <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>, <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>, <a class="wikilink" href="../../input_variables/vargeo#genafm">genafm</a></p>
+<h2 id="spgaxor"><strong>spgaxor</strong><a class="headerlink" href="#spgaxor" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPace Group : AXes ORientation<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1  </p>
+<p>It is taken into account only when <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>/=0; it allows one to define the
+axes orientation for the specific space groups for which this is needed.
+Trigonal groups (number 146,148,155,160,161,166,167):</p>
+<ul>
+<li>1 represents the hexagonal axes </li>
+<li>2 represents the rhombohedral axes </li>
+</ul>
+<p>Orthorhombic space groups : there are six possibilities corresponding to the
+possible axes permutations</p>
+<ul>
+<li>1 abc -&gt; abc </li>
+<li>2 abc -&gt; cab </li>
+<li>3 abc -&gt; bca </li>
+<li>4 abc -&gt; acb </li>
+<li>5 abc -&gt; bac </li>
+<li>6 abc -&gt; cba </li>
+</ul>
+<p>Monoclinic : there are 3 or 9 possibilities depending on the space group. See
+the space group <a href="../../../users/spacegrouphelpfile.html"> help file </a> for
+details. In the log/output file the notation used to describe the monoclinic
+groups is for example:<br />
+15:c1, A2/a_c = C2/c<br />
+where,</p>
+<ul>
+<li>15 represents the space group number, </li>
+<li>c1 the orientation as it appears on the web page, </li>
+<li>A is the real Bravais type lattice, </li>
+<li>2/a the existent symmetry elements, </li>
+<li>_c marks the orientation of the two-fold axis or of the mirror plane, </li>
+<li>C2/c represents the parent space group. </li>
+</ul>
+<p>How to determine which spgaxor you need:</p>
+<ol>
+<li>check the reduced positions you have, for more symmetric positions, e.g. 1/2 1/4 3/4 etc&hellip; Let us say your symmetric positions are in the first coordinate (a axis) and you are using spgroup 62. </li>
+<li>look up the raw space group Wyckoff positions on <a href="http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-wp-list"> the Bilbao server </a> to see where they put the corresponding symmetric positions. For spgroup 62 Bilbao puts the 1/4 3/4 in the second coordinate, ie along the b axis. </li>
+<li>in this case you need to swap the axes from the original abc order to a new order where the Bilbao axis (b) is in the first position. In this case you have 2 possibilities, spgaxor 3 or 5. If you have more than one highly symmetric coordinate you may have only a single possibility. </li>
+</ol>
+<h2 id="spgorig"><strong>spgorig</strong><a class="headerlink" href="#spgorig" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPace Group : ORIGin<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 1<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>!=0  </p>
+<p>Gives the choice of origin for the axes system.<br />
+It is defined according to the origin choice in the International Tables of
+Crystallography.<br />
+It applies only to the space groups 48, 50, 59, 70, 85, 86, 88, 125, 126, 129,
+130, 133, 134, 137, 141, 142, 201, 203, 222, 224, 227, 228.<br />
+For details see the space group <a href="../../../users/spacegrouphelpfile.html"> help file
+</a> .</p>
+<h2 id="spgroup"><strong>spgroup</strong><a class="headerlink" href="#spgroup" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPace GROUP number<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the number of the space group.<br />
+If <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a> is 0, the code assumes that all the symmetries are input
+through the <a class="wikilink" href="../../input_variables/varbas#symrel">symrel</a> matrices and the <a class="wikilink" href="../../input_variables/varbas#tnons">tnons</a> vectors, or obtained from
+the symmetry finder (the default when <a class="wikilink" href="../../input_variables/varbas#nsym">nsym</a>==0).<br />
+It should be between 1 and 230. This option can be used to obtain all the
+atoms in the unit cell, starting from the asymmetric unit cell.<br />
+The references for computing the symmetry corresponding to the space groups
+are :</p>
+<ul>
+<li>International Tables for Crystallography, 1983, Ed. Theo Hahn, D. Reidel Publishing Company </li>
+<li>The mathematical theory of symmetry in solids, Representation theory for point groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon Press, Oxford. </li>
+</ul>
+<p>For details see the space group <a href="../../../users/spacegrouphelpfile.html"> help file
+</a> .</p>
+<h2 id="spgroupma"><strong>spgroupma</strong><a class="headerlink" href="#spgroupma" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: SPace GROUP number defining a MAgnetic space group<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>This input variable might be used to define a Shubnikov magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult &ldquo;The
+mathematical theory of symmetry in solids, Representation theory for point
+groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
+Press, Oxford.&rdquo;<br />
+A Shubnikov type IV magnetic space group might be defined by its Fedorov space
+group (set of spatial symmetries that do not change the magnetization), and an
+additional magnetic space group number <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>.<br />
+A Shubnikov type III magnetic space group might be defined by its Fedorov
+space group (set of all spatial symmetries, irrespective of their magnetic
+action), and an additional magnetic space group number <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>.<br />
+For the additional number <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>, we follow the definition of Table 7.4
+of the above-mentioned Bradley and Cracknell textbook.<br />
+Thus, one way to specify a Shubnikov IV magnetic space group, is to define
+both <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a> and <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>.<br />
+For example, the group P2_1/c_prime has <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>=14 and <a class="wikilink" href="../../input_variables/vargeo#spgroupma">spgroupma</a>=78.<br />
+Alternatively, for Shubnikov IV magnetic groups, one might define <a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>
+and <a class="wikilink" href="../../input_variables/vargeo#genafm">genafm</a>. For both the type III and IV, one might define by hand the set
+of symmetries, using <a class="wikilink" href="../../input_variables/varbas#symrel">symrel</a>, <a class="wikilink" href="../../input_variables/varbas#tnons">tnons</a> and <a class="wikilink" href="../../input_variables/vargs#symafm">symafm</a>.</p>
+<h2 id="tolsym"><strong>tolsym</strong><a class="headerlink" href="#tolsym" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: TOLERANCE for SYMmetries<br />
+Variable type: real<br />
+Dimensions: scalar<br />
+Default value: 1e-08  </p>
+<p>Gives the tolerance on the atomic positions (reduced coordinates), primitive
+vectors, or magnetization, to be considered equivalent, thanks to symmetry
+operations. This is used in the recognition of the set of symmetries of the
+system, or the application of the symmetry operations to generate from a
+reduced set of atoms, the full set of atoms. Note that a value larger than
+0.01 is considered to be unacceptable.<br />
+Note : ABINIT needs the atomic positions to be symmmetric to each others
+within 1.e-8 . If <a class="wikilink" href="../../input_variables/vargeo#tolsym">tolsym</a> is set to a larger value than 1.e-8, then the
+input atomic coordinates will be automatically symmetrized by the symmetry
+operations that will have been found.</p>
+<h2 id="vaclst"><strong>vaclst</strong><a class="headerlink" href="#vaclst" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: VACancies LiST<br />
+Variable type: integer<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargeo#vacnum">vacnum</a>)<br />
+Default value: None  </p>
+<p>Gives the identification number(s) of atoms to be subtracted from the set of
+atoms that are obtained after having rotated, translated and repeated the
+objects.<br />
+Useful to created vacancies.</p>
+<h2 id="vacnum"><strong>vacnum</strong><a class="headerlink" href="#vacnum" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: VACancies NUMber<br />
+Variable type: integer<br />
+Dimensions: scalar<br />
+Default value: 0  </p>
+<p>Gives the number of atoms to be subtracted from the list of atoms after the
+rotations, translations and repetitions have been done. The list of these
+atoms is contained in <a class="wikilink" href="../../input_variables/vargeo#vaclst">vaclst</a>.</p>
+<h2 id="xyzfile"><strong>xyzfile</strong><a class="headerlink" href="#xyzfile" title="Permanent link">&para;</a></h2>
+<p>Mnemonics: XYZ FILE input for geometry<br />
+Variable type: string<br />
+Dimensions: scalar<br />
+Default value: None  </p>
+<p>Gives the name of a xyz format file, to take <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, <a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>, <a class="wikilink" href="../../input_variables/varbas#typat">typat</a>,
+<a class="wikilink" href="../../input_variables/varbas#znucl">znucl</a>, and <a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a> from. This input can not be mixed with normal atom
+specifications for other datasets.</p>
+<p>Notes: do not quote the file name in the abinit input file, simply leave a
+space after xyzfile. The xyz format is the number of atoms on the first line,
+a comment line, then one line per atom, with the element as a 2 letter symbol
+(&ldquo;As&rdquo; &ldquo;O&rdquo; or &ldquo;Pu&rdquo;) and the three cartesian coordinates in Angstrom.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../extra_javascript/github_edit.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
