@@ -375,12 +375,12 @@
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 2<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p>The bs_algorithm input variable defines the algorithm employed to calculate
 the macroscopic dielectric function. Possible values are 1, 2 or 3:</p>
 <ul>
 <li>1 =&gt; The macroscopic dielectric is obtained by performing a direct diagonalization of the excitonic Hamiltonian. Advantages: It gives direct access to the excitonic eigenvalues as well as to the oscillator strengths. Drawbacks: It is a very CPU- and memory-consuming approach as the size of the Hamiltonian scales as (nk<em>nc</em>nv)**2. where nk is the number of k-point in the FULL Brillouin zone, and nc and nv are the number of conduction and valence states, respectively. Pros: It can be used both for resonant-only and resonant+coupling calculations (non Tamm-Dancoff approximation). </li>
-<li>2 =&gt; Haydock iterative method. The macroscopic dielectric function is obtained by iterative applications of the Hamiltonian on a set of vectors in the electron-hole space. Advantages: It is less memory demanding and usually faster than the direct diagonalization provided that <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a> is larger than the typical energy spacing of the eigenvalues. Drawbacks: It is an iterative method therefore the convergence with respect to bs_haydock_niter should be checked. It is not possible to have direct information on the exciton spectrum, oscillator strengths and excitonic wave functions. For the time being <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>=2 cannot be used for calculations in which the coupling term is included (Tamm-Dancoff approximation). </li>
+<li>2 =&gt; Haydock iterative method. The macroscopic dielectric function is obtained by iterative applications of the Hamiltonian on a set of vectors in the electron-hole space. Advantages: It is less memory demanding and usually faster than the direct diagonalization provided that <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a> is larger than the typical energy spacing of the eigenvalues. Drawbacks: It is an iterative method therefore the convergence with respect to bs_haydock_niter should be checked. It is not possible to have direct information on the exciton spectrum, oscillator strengths and excitonic wave functions. For the time being <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>=2 cannot be used for calculations in which the coupling term is included (Tamm-Dancoff approximation). </li>
 <li>3 =&gt; Conjugate-gradient method. This method allows to find the few first excitonic eigenvalues. Only available for resonant calculations (Tamm-Dancoff approximation). </li>
 </ul>
 <h2 id="bs_calctype"><strong>bs_calctype</strong><a class="headerlink" href="#bs_calctype" title="Permanent link">&para;</a></h2>
@@ -388,7 +388,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p>Possible values are 1,2,3.</p>
 <ul>
 <li>1 =&gt; use the KS eigenvalues and wave functions stored in the KSS file to construct the transition space </li>
@@ -400,10 +400,10 @@ Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 11<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p>This variable governs the choice among the different options that are
 available for the treatment of Coulomb term of the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a>
-Hamiltonian. <a class="wikilink" href="../../input_variables/varbse#bs_coulomb_term">bs_coulomb_term</a> is the concatenation of two digits, labelled
+Hamiltonian. <a class="wikilink" href="../../input_variables/varbse/#bs_coulomb_term">bs_coulomb_term</a> is the concatenation of two digits, labelled
 (A) and (B).</p>
 <p>The first digit (A) can assume the values 0,1,2:</p>
 <ul>
@@ -421,8 +421,8 @@ Hamiltonian. <a class="wikilink" href="../../input_variables/varbse#bs_coulomb_t
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
-<p>The <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a> input variable defines the treatment of the coupling block
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
+<p>The <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a> input variable defines the treatment of the coupling block
 of the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> Hamiltonian. Possible values are 0,1.</p>
 <ul>
 <li>0 =&gt; The coupling block is neglected (the so-called Tamm-Dancoff approximation). The code runs faster and the Hamiltonian matrix requires less memory (factor 4). It is a good approximation for the absorption spectrum which only requires the knowledge of Im(\epsilon). The reliability of this approximation should be tested in the case of EELF calculations. </li>
@@ -433,7 +433,7 @@ of the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> Hamil
 Variable type: integer<br />
 Dimensions: (2)<br />
 Default value: [-inf, inf]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p>It is used to define a cutoff in the e-h basis set. Only those transitions
 whose energy is between bs_eh_window(1) and bs_eh_window(2) will be considered
 during the construction of the e-h Hamiltonian.</p>
@@ -442,7 +442,7 @@ during the construction of the e-h Hamiltonian.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <ul>
 <li>0 =&gt;The exchange term is not calculated. This is equivalent to neglecting local field effects in the macroscopic dielectric function.</li>
 <li>1 =&gt;The exchange term is calculated and added to the excitonic Hamiltonian. </li>
@@ -452,7 +452,7 @@ Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver
 Variable type: real<br />
 Dimensions: (3)<br />
 Default value: [0.0, 0.0, 0.01]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p><strong>bs_freq_mesh(1)</strong> defines the first frequency for the calculation of the macroscopic dielectric function. </p>
 <p><strong>bs_freq_mesh(2)</strong> gives the last frequency for the calculation of the macroscopic dielectric function. If zero, <strong>bs_freq_mesh(2)</strong> is set automatically to MAX(resonant_energy) + 10%. </p>
 <p><strong>bs_freq_mesh(3)</strong> gives the step of the linear mesh used for evaluating the macroscopic dielectric function. </p>
@@ -461,7 +461,7 @@ Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2  </p>
 <p>Defines how to terminate the continued fraction expression for the dielectric
 function. The terminator reduces the number of iterations needed to converge
 by smoothing the oscillation in the high energy part of the spectrum</p>
@@ -474,17 +474,17 @@ by smoothing the oscillation in the high energy part of the spectrum</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 100<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_haydock_niter">bs_haydock_niter</a> defines the maximum number of iterations used to
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_haydock_niter">bs_haydock_niter</a> defines the maximum number of iterations used to
 calculate the macroscopic dielectric function. The iterative algorithm stops
 when the difference between two consecutive evaluations of the optical spectra
-is less than <a class="wikilink" href="../../input_variables/varbse#bs_haydock_tol">bs_haydock_tol</a>.</p>
+is less than <a class="wikilink" href="../../input_variables/varbse/#bs_haydock_tol">bs_haydock_tol</a>.</p>
 <h2 id="bs_haydock_tol"><strong>bs_haydock_tol</strong><a class="headerlink" href="#bs_haydock_tol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Bethe-Salpeter HAYDOCK TOLerance<br />
 Variable type: real<br />
 Dimensions: (2)<br />
 Default value: [0.02, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2  </p>
 <p>Defines the convergence criterion for the Haydock iterative method. The
 iterative algorithm stops when the difference between two consecutive
 evaluations of the macroscopic dielectric function is less than <strong>
@@ -504,23 +504,23 @@ entire frequency range (mild criterion).</p>
 Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_kmult">bs_interp_kmult</a> defines the number of divisions used to generate the dense
-mesh in the interpolation. <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> of the dense mesh = <strong> bs_interp_kmult(:)
-</strong> * <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> of the coarse mesh.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_interp_kmult">bs_interp_kmult</a> defines the number of divisions used to generate the dense
+mesh in the interpolation. <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> of the dense mesh = <strong> bs_interp_kmult(:)
+</strong> * <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> of the coarse mesh.</p>
 <h2 id="bs_interp_m3_width"><strong>bs_interp_m3_width</strong><a class="headerlink" href="#bs_interp_m3_width" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Bethe-Salpeter INTERPolation Method3 WIDTH<br />
 Variable type: real<br />
 Default value: 1.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a>==3 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a>==3 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
 <p>Defines the width of the region where divergence treatment is applied for BSE
 interpolation</p>
 <h2 id="bs_interp_method"><strong>bs_interp_method</strong><a class="headerlink" href="#bs_interp_method" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Bethe-Salpeter INTERPolation METHOD<br />
 Variable type: integer<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_method">bs_interp_method</a> selects the method of interpolation:</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_interp_method">bs_interp_method</a> selects the method of interpolation:</p>
 <ul>
 <li>0 =&gt; Interpolate using Y. Gillet technique with 8 neighbours (see Comput. Phys. Commun. 203, 83 (2016)) </li>
 <li>1 =&gt; Interpolation using Rohlfing &amp; Louie technique (see above-mentioned article and Phys. Rev. B 62, 4927 (2000)) </li>
@@ -530,8 +530,8 @@ Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_inter
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> selects the mode of interpolation:</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> selects the mode of interpolation:</p>
 <ul>
 <li>0 =&gt; No interpolation. Standard <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> computation is performed </li>
 <li>1 =&gt; Simple interpolation </li>
@@ -543,22 +543,22 @@ Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_inter
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_interp_prep">bs_interp_prep</a> allows to trigger the preparation of the interpolation with
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_interp_prep">bs_interp_prep</a> allows to trigger the preparation of the interpolation with
 method 2 or method 3. It generates the decomposition of BSR in a,b,c
 coefficients used for the interpolation.</p>
 <h2 id="bs_interp_rl_nb"><strong>bs_interp_rl_nb</strong><a class="headerlink" href="#bs_interp_rl_nb" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Bethe-Salpeter INTERPolation Rohlfing &amp; Louie NeighBour<br />
 Variable type: integer<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varbse#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse#bs_interp_method">bs_interp_method</a> == 1 and <a class="wikilink" href="../../input_variables/varbse#bs_coupling">bs_coupling</a>==0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varbse/#bs_interp_mode">bs_interp_mode</a> &gt; 0 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a>==2 and <a class="wikilink" href="../../input_variables/varbse/#bs_interp_method">bs_interp_method</a> == 1 and <a class="wikilink" href="../../input_variables/varbse/#bs_coupling">bs_coupling</a>==0  </p>
 <p>Gives the index of the neighbour that is used for Rohlfing &amp; Louie method</p>
 <h2 id="bs_loband"><strong>bs_loband</strong><a class="headerlink" href="#bs_loband" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Bethe-Salpeter Lowest Occupied BAND<br />
 Variable type: integer<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>)<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99  </p>
 <p>This variable defines the index of the lowest occupied band used for the
 construction of the electron-hole basis set. For spin polarized calculations,
 one must provide two separated indices for spin up and spin down. An
@@ -569,8 +569,8 @@ variable.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse#bs_algorithm">bs_algorithm</a> in [2,3]  </p>
-<p><a class="wikilink" href="../../input_variables/varbse#bs_nstates">bs_nstates</a> defines the maximum number of excitonic states calculated in
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> == 99 and <a class="wikilink" href="../../input_variables/varbse/#bs_algorithm">bs_algorithm</a> in [2,3]  </p>
+<p><a class="wikilink" href="../../input_variables/varbse/#bs_nstates">bs_nstates</a> defines the maximum number of excitonic states calculated in
 the direct diagonalization of the excitonic matrix or in the conjugate-
 gradient method. The number of states should be sufficiently large for a
 correct description of the optical properties in the frequency range of
@@ -588,6 +588,8 @@ interest.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -615,6 +617,7 @@ interest.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

@@ -404,143 +404,143 @@
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: -1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> in [1,2,3,4,5]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> in [1,2,3,4,5]  </p>
 <p>that is, if the user is performing second-order eigenvalue calculations using
 response-functions.  </p>
-<p>The variable <a class="wikilink" href="../../input_variables/varrf#bdeigrf">bdeigrf</a> is the maximum number of bands for which the second-
+<p>The variable <a class="wikilink" href="../../input_variables/varrf/#bdeigrf">bdeigrf</a> is the maximum number of bands for which the second-
 order eigenvalues must be calculated: the full number of bands is still used
 during the computation of these corrections.  </p>
-<p>If <a class="wikilink" href="../../input_variables/varrf#bdeigrf">bdeigrf</a> is set to -1, the code will automatically set <a class="wikilink" href="../../input_variables/varrf#bdeigrf">bdeigrf</a> equal
+<p>If <a class="wikilink" href="../../input_variables/varrf/#bdeigrf">bdeigrf</a> is set to -1, the code will automatically set <a class="wikilink" href="../../input_variables/varrf/#bdeigrf">bdeigrf</a> equal
 to nband.</p>
 <h2 id="d3e_pert1_atpol"><strong>d3e_pert1_atpol</strong><a class="headerlink" href="#d3e_pert1_atpol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations<br />
 Variable type: integer<br />
 Dimensions: (2)<br />
 Default value: [1, 1]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Controls the range of atoms for which displacements will be considered in non-
 linear computations (using the 2n+1 theorem), for the 1st perturbation.<br />
-May take values from 1 to <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, with
+May take values from 1 to <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, with
 <strong>d3e_pert1_atpol</strong>(1)&lt;=<strong>d3e_pert1_atpol</strong>(2).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a> for additional details.</p>
 <h2 id="d3e_pert1_dir"><strong>d3e_pert1_dir</strong><a class="headerlink" href="#d3e_pert1_dir" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: DIRections<br />
 Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Gives the directions to be considered in non-linear computations (using the
 2n+1 theorem), for the 1st perturbation.<br />
 The three elements corresponds to the three primitive vectors, either in real
 space (atomic displacement), or in reciprocal space (electric field
 perturbation).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> for additional details.</p>
 <h2 id="d3e_pert1_elfd"><strong>d3e_pert1_elfd</strong><a class="headerlink" href="#d3e_pert1_elfd" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: ELectric FielD<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on electric field perturbation in non-linear computation, as 1st
 perturbation. Actually, such calculations requires first the non-self-
 consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a> for additional details.</p>
 <h2 id="d3e_pert1_phon"><strong>d3e_pert1_phon</strong><a class="headerlink" href="#d3e_pert1_phon" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: PHONons<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on atomic displacement perturbation in non-linear computation, as 1st
 perturbation.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfphon">rfphon</a> for additional details.</p>
 <h2 id="d3e_pert2_atpol"><strong>d3e_pert2_atpol</strong><a class="headerlink" href="#d3e_pert2_atpol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations<br />
 Variable type: integer<br />
 Dimensions: (2)<br />
 Default value: [1, 1]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Controls the range of atoms for which displacements will be considered in non-
 linear computations (using the 2n+1 theorem), for the 2nd perturbation.<br />
-May take values from 1 to <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, with
+May take values from 1 to <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, with
 <strong>d3e_pert2_atpol</strong>(1)&lt;=<strong>d3e_pert2_atpol</strong>(2).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a> for additional details.</p>
 <h2 id="d3e_pert2_dir"><strong>d3e_pert2_dir</strong><a class="headerlink" href="#d3e_pert2_dir" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: DIRections<br />
 Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Gives the directions to be considered in non-linear computations (using the
 2n+1 theorem), for the 2nd perturbation.<br />
 The three elements corresponds to the three primitive vectors, either in real
 space (atomic displacement), or in reciprocal space (electric field
 perturbation).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> for additional details.</p>
 <h2 id="d3e_pert2_elfd"><strong>d3e_pert2_elfd</strong><a class="headerlink" href="#d3e_pert2_elfd" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: ELectric FielD<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on electric field perturbation in non-linear computation, as 2nd
 perturbation. Actually, such calculations requires first the non-self-
 consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a> for additional details.</p>
 <h2 id="d3e_pert2_phon"><strong>d3e_pert2_phon</strong><a class="headerlink" href="#d3e_pert2_phon" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: PHONons<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on atomic displacement perturbation in non-linear computation, as 2nd
 perturbation.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfphon">rfphon</a> for additional details.</p>
 <h2 id="d3e_pert3_atpol"><strong>d3e_pert3_atpol</strong><a class="headerlink" href="#d3e_pert3_atpol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations<br />
 Variable type: integer<br />
 Dimensions: (2)<br />
 Default value: [1, 1]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Controls the range of atoms for which displacements will be considered in non-
 linear computations (using the 2n+1 theorem), for the 3rd perturbation.<br />
-May take values from 1 to <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, with
+May take values from 1 to <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, with
 <strong>d3e_pert3_atpol</strong>(1)&lt;=<strong>d3e_pert3_atpol</strong>(2).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a> for additional details.</p>
 <h2 id="d3e_pert3_dir"><strong>d3e_pert3_dir</strong><a class="headerlink" href="#d3e_pert3_dir" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: DIRections<br />
 Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Gives the directions to be considered in non-linear computations (using the
 2n+1 theorem), for the 3rd perturbation.<br />
 The three elements corresponds to the three primitive vectors, either in real
 space (atomic displacement), or in reciprocal space (electric field
 perturbation).<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> for additional details.</p>
 <h2 id="d3e_pert3_elfd"><strong>d3e_pert3_elfd</strong><a class="headerlink" href="#d3e_pert3_elfd" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: ELectric FielD<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on electric field perturbation in non-linear computation, as 3rd
 perturbation. Actually, such calculations requires first the non-self-
 consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a> for additional details.</p>
 <h2 id="d3e_pert3_phon"><strong>d3e_pert3_phon</strong><a class="headerlink" href="#d3e_pert3_phon" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: PHONons<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==5 (non-linear response computations)  </p>
 <p>Turns on atomic displacement perturbation in non-linear computation, as 3rd
 perturbation.<br />
-See <a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a> for additional details.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#rfphon">rfphon</a> for additional details.</p>
 <h2 id="dfpt_sciss"><strong>dfpt_sciss</strong><a class="headerlink" href="#dfpt_sciss" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: DFPT SCISSor operator<br />
 Variable type: real<br />
@@ -550,8 +550,8 @@ Default value: 0  </p>
 eigenvalues, used in response function calculations.<br />
 Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> ecut </strong> has
 the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics. (1 Ha=27.2113845 eV)<br />
-Typical use is for response to electric field (<a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>=3), but NOT for d/dk
-(<a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>=2) and phonon responses.</p>
+Typical use is for response to electric field (<a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>=3), but NOT for d/dk
+(<a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>=2) and phonon responses.</p>
 <h2 id="efmas"><strong>efmas</strong><a class="headerlink" href="#efmas" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs<br />
 Variable type: integer<br />
@@ -559,22 +559,22 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Turns on effective mass tensor calculations. Such calculations requires the
 non-self-consistent calculation of derivatives with respect to k, in the same
-dataset. It must therefore be used with <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>=2.  </p>
+dataset. It must therefore be used with <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>=2.  </p>
 <ul>
 <li>0=&gt;no effective mass tensor calculation </li>
 <li>1=&gt;effective mass tensor calculation </li>
 </ul>
 <p>At the present time, both norm-conserving (NC) and PAW calculations are
-supported. Also, for PAW calculations only, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==2 and
-<a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>==1 (i.e. spin-orbit (SO) calculations) is supported. NC SO
+supported. Also, for PAW calculations only, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>==2 and
+<a class="wikilink" href="../../input_variables/varpaw/#pawspnorb">pawspnorb</a>==1 (i.e. spin-orbit (SO) calculations) is supported. NC SO
 calculations are NOT currently supported. Also, for both NC and PAW,
-<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>/=1 and <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>/=1 are NOT supported.</p>
+<a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>/=1 and <a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>/=1 are NOT supported.</p>
 <h2 id="efmas_bands"><strong>efmas_bands</strong><a class="headerlink" href="#efmas_bands" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, BANDS to be treated.<br />
 Variable type: integer<br />
-Dimensions: (2,<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>)<br />
+Dimensions: (2,<a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a>)<br />
 Default value: The full range of band available in the calculation for each k-point.<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas">efmas</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas">efmas</a>==1  </p>
 <p>This variable controls the range of bands for which the effective mass is to
 be calculated. If a band is degenerate, all other bands of the degenerate
 group will automatically be treated, even if they were not part of the user
@@ -584,19 +584,19 @@ specified range.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas">efmas</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas">efmas</a>==1  </p>
 <p>Allows the user to calculate the scalar effective mass of all bands specified
-by <a class="wikilink" href="../../input_variables/varrf#efmas_bands">efmas_bands</a> along specific directions in reciprocal space. This is
+by <a class="wikilink" href="../../input_variables/varrf/#efmas_bands">efmas_bands</a> along specific directions in reciprocal space. This is
 particularly useful when considering degenerate bands, which are usually
 warped, and thus cannot have their dispersion (hessian) and effective mass
 expressed as a tensor. This allows the user to see the more complex angular
 behavior of effective masses in these cases, for instance.</p>
-<p>When <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>==0, no directions are read from the input file (using
-<a class="wikilink" href="../../input_variables/varrf#efmas_dirs">efmas_dirs</a>) and the effective masses along the 3 cartesian directions are
+<p>When <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>==0, no directions are read from the input file (using
+<a class="wikilink" href="../../input_variables/varrf/#efmas_dirs">efmas_dirs</a>) and the effective masses along the 3 cartesian directions are
 output by default.</p>
-<p>When <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>==1, 2 or 3, <a class="wikilink" href="../../input_variables/varrf#efmas_n_dirs">efmas_n_dirs</a> directions are read from
-<a class="wikilink" href="../../input_variables/varrf#efmas_dirs">efmas_dirs</a>, assuming cartesian, reduced or angular (theta,phi)
-coordinates, respectively. In the case <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>==3, 2 real values
+<p>When <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>==1, 2 or 3, <a class="wikilink" href="../../input_variables/varrf/#efmas_n_dirs">efmas_n_dirs</a> directions are read from
+<a class="wikilink" href="../../input_variables/varrf/#efmas_dirs">efmas_dirs</a>, assuming cartesian, reduced or angular (theta,phi)
+coordinates, respectively. In the case <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>==3, 2 real values
 per directions are read, whereas 3 real values are read in the two other
 cases.</p>
 <h2 id="efmas_deg"><strong>efmas_deg</strong><a class="headerlink" href="#efmas_deg" title="Permanent link">&para;</a></h2>
@@ -604,25 +604,25 @@ cases.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas">efmas</a>&gt;0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas">efmas</a>&gt;0  </p>
 <p>Activate (==1) or not (==0) the treatment of degenerate bands (within a
-criterion <a class="wikilink" href="../../input_variables/varrf#efmas_deg_tol">efmas_deg_tol</a>) using the transport equivalent effective mass
+criterion <a class="wikilink" href="../../input_variables/varrf/#efmas_deg_tol">efmas_deg_tol</a>) using the transport equivalent effective mass
 idea (see <a href="https://doi.org/10.1103/PhysRevB.89.155131">PRB 89 155131 (2014)</a>).</p>
 <h2 id="efmas_deg_tol"><strong>efmas_deg_tol</strong><a class="headerlink" href="#efmas_deg_tol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, DEGeneracy TOLerance<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1e-05<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas_deg">efmas_deg</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas_deg">efmas_deg</a>==1  </p>
 <p>Energy difference below which 2 bands are considered degenerate (and treated
-using the formalism activated with <a class="wikilink" href="../../input_variables/varrf#efmas_deg">efmas_deg</a>==1). <a class="wikilink" href="../../input_variables/varrf#efmas_deg_tol">efmas_deg_tol</a> has
+using the formalism activated with <a class="wikilink" href="../../input_variables/varrf/#efmas_deg">efmas_deg</a>==1). <a class="wikilink" href="../../input_variables/varrf/#efmas_deg_tol">efmas_deg_tol</a> has
 the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics.</p>
 <h2 id="efmas_dim"><strong>efmas_dim</strong><a class="headerlink" href="#efmas_dim" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, DIMension of the effective mass tensor<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 3<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas">efmas</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas">efmas</a>==1  </p>
 <p>For 2D or 1D systems, the band dispersion goes to 0 perpendicular to the
 system, which causes the inverse effective mass to be singular, i.e. the
 effective mass to be NaN. This keyword circumvents the problem by eliminating
@@ -637,26 +637,26 @@ line immediately after the effective mass.</p>
 <h2 id="efmas_dirs"><strong>efmas_dirs</strong><a class="headerlink" href="#efmas_dirs" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, DIRectionS to be calculated<br />
 Variable type: real<br />
-Dimensions: (3 or 2,<a class="wikilink" href="../../input_variables/varrf#efmas_n_dirs">efmas_n_dirs</a>)<br />
+Dimensions: (3 or 2,<a class="wikilink" href="../../input_variables/varrf/#efmas_n_dirs">efmas_n_dirs</a>)<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>&gt;0  </p>
-<p>List of <a class="wikilink" href="../../input_variables/varrf#efmas_n_dirs">efmas_n_dirs</a> directions to be considered according to the value of
-<a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>. The directions are specified by 3 real values if
-<a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>==1 or 2 and by 2 real values if <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>==3.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>&gt;0  </p>
+<p>List of <a class="wikilink" href="../../input_variables/varrf/#efmas_n_dirs">efmas_n_dirs</a> directions to be considered according to the value of
+<a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>. The directions are specified by 3 real values if
+<a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>==1 or 2 and by 2 real values if <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>==3.</p>
 <h2 id="efmas_n_dirs"><strong>efmas_n_dirs</strong><a class="headerlink" href="#efmas_n_dirs" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, Number of DIRectionS<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>&gt;0  </p>
-<p>Number of directions in <a class="wikilink" href="../../input_variables/varrf#efmas_dirs">efmas_dirs</a>, to be considered according to
-<a class="wikilink" href="../../input_variables/varrf#efmas_calc_dirs">efmas_calc_dirs</a>.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>&gt;0  </p>
+<p>Number of directions in <a class="wikilink" href="../../input_variables/varrf/#efmas_dirs">efmas_dirs</a>, to be considered according to
+<a class="wikilink" href="../../input_variables/varrf/#efmas_calc_dirs">efmas_calc_dirs</a>.</p>
 <h2 id="efmas_ntheta"><strong>efmas_ntheta</strong><a class="headerlink" href="#efmas_ntheta" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: EFfective MASs, Number of points for integration w/r to THETA<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1000<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#efmas">efmas</a>==1 and <a class="wikilink" href="../../input_variables/varrf#efmas_bands">efmas_bands</a>==(degenerate band index)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#efmas">efmas</a>==1 and <a class="wikilink" href="../../input_variables/varrf/#efmas_bands">efmas_bands</a>==(degenerate band index)  </p>
 <p>When a band is degenerate, the usual definition of effective mass becomes
 invalid. However, it is still possible to define a &lsquo;transport equivalent mass
 tensor&rsquo; that reproduces the contribution of the band to the conductivity
@@ -667,12 +667,12 @@ required. The default value gives a tensor accurate to the 4th decimal in Ge.</p
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> != 0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> != 0  </p>
 <p>that is, if the user is performing performing second-order eigenvalue
 calculations using response-functions.  </p>
-<p>The variable <a class="wikilink" href="../../input_variables/varrf#elph2_imagden">elph2_imagden</a> determines the imaginary shift of the
+<p>The variable <a class="wikilink" href="../../input_variables/varrf/#elph2_imagden">elph2_imagden</a> determines the imaginary shift of the
 denominator of the sum-over-states in the perturbation denominator,
-(e_{nk}-e_{n&rsquo;k&rsquo;}+i <a class="wikilink" href="../../input_variables/varrf#elph2_imagden">elph2_imagden</a>). One should use a width comparable with
+(e_{nk}-e_{n&rsquo;k&rsquo;}+i <a class="wikilink" href="../../input_variables/varrf/#elph2_imagden">elph2_imagden</a>). One should use a width comparable with
 the Debye frequency or the maximum phonon frequency.<br />
 Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> ecut </strong> has
 the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteristics. (1 Ha=27.2113845 eV)</p>
@@ -681,18 +681,18 @@ the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteri
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1  </p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==7, select the task to be performed. The choice is among :<br />
-<a class="wikilink" href="../../input_variables/varrf#eph_task">eph_task</a>=1 : phonon linewidth<br />
-<a class="wikilink" href="../../input_variables/varrf#eph_task">eph_task</a>=2 : electron-phonon coupling elements</p>
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==7, select the task to be performed. The choice is among :<br />
+<a class="wikilink" href="../../input_variables/varrf/#eph_task">eph_task</a>=1 : phonon linewidth<br />
+<a class="wikilink" href="../../input_variables/varrf/#eph_task">eph_task</a>=2 : electron-phonon coupling elements</p>
 <h2 id="esmear"><strong>esmear</strong><a class="headerlink" href="#esmear" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Eigenvalue SMEARing<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.01<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> != 0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> != 0  </p>
 <p>that is, if the user is performing simulations of the electronic lifetimes
 induced by the electron-phonon coupling.  </p>
-<p>The variable <a class="wikilink" href="../../input_variables/varrf#esmear">esmear</a> determines the width of the functions approximating
+<p>The variable <a class="wikilink" href="../../input_variables/varrf/#esmear">esmear</a> determines the width of the functions approximating
 the delta function, \delta(e_{nk}-e_{n&rsquo;k&rsquo;}), present in the expression of the
 lifetimes. One should use a width comparable with the Debye frequency or the
 maximum phonon frequency.<br />
@@ -705,43 +705,43 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Can be used to suppress artificially the first-order change of Fermi energy,
 in case of Response Function calculation for metals at Q=0. The input variable
-<a class="wikilink" href="../../input_variables/varrf#frzfermi">frzfermi</a>, if set to 1, allows to suppress this contribution, but this is
+<a class="wikilink" href="../../input_variables/varrf/#frzfermi">frzfermi</a>, if set to 1, allows to suppress this contribution, but this is
 incorrect.</p>
 <h2 id="ieig2rf"><strong>ieig2rf</strong><a class="headerlink" href="#ieig2rf" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Integer for second-order EIGenvalues from Response-Function<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is greater then 0, the code will produce a file, named with the
+<p>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is greater then 0, the code will produce a file, named with the
 trailing suffix _EIGR2D, containing the second-order electronic eigenvalues
 for the perturbation. These files are used in the calculation of the thermal
 correction to the electronic eigenvalues.  </p>
 <dl>
-<dt>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is set to 1, the second-order electronic eigenvalues will be</dt>
+<dt>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is set to 1, the second-order electronic eigenvalues will be</dt>
 <dt>calculated from the DFPT method (Sternheimer).</dt>
-<dt>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is set to 2, the second-order electronic eigenvalues will be</dt>
+<dt>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is set to 2, the second-order electronic eigenvalues will be</dt>
 <dt>calculated from the Allen-Cardona method. (sum over states)</dt>
-<dt>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is set to 3, the second-order electronic eigenvalues will be</dt>
+<dt>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is set to 3, the second-order electronic eigenvalues will be</dt>
 <dt>calculated from the DFPT method (sum over states) but using a different part</dt>
-<dt>of the code. This is equivalent to <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> = 1 [debuging]</dt>
-<dt>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is set to 4, the second-order electronic eigenvalues will be</dt>
+<dt>of the code. This is equivalent to <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> = 1 [debuging]</dt>
+<dt>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is set to 4, the second-order electronic eigenvalues will be</dt>
 <dt>calculated from the dynamical DFPT method (Sternheimer). The code will</dt>
 <dt>generate _EIGR2D.nc files that contain the electron-phonon matrix element</dt>
 <dt>squared on the space orthogonal to the active space. The code will also</dt>
 <dt>produce _FAN.nc files that contain the electron-phonon matrix elements</dt>
-<dt>squared. Note that <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a>=4 can only be used if Abinit is compiled with</dt>
+<dt>squared. Note that <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a>=4 can only be used if Abinit is compiled with</dt>
 <dt>NETCDF support.</dt>
-<dt>If <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a> is set to 5, the second-order electronic eigenvalues will be</dt>
+<dt>If <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a> is set to 5, the second-order electronic eigenvalues will be</dt>
 <dt>calculated from the dynamical DFPT method (Sternheimer). The code will</dt>
 <dt>generate _EIGR2D.nc files that contain the electron-phonon matrix element</dt>
 <dt>square on the space orthogonal to the active space. The code will also produce</dt>
 <dt>_GKK.nc files that contain electron-phonon matrix elements. This option is</dt>
-<dt>preferable for large system to <a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a>=4 as the GKK files take less much</dt>
+<dt>preferable for large system to <a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a>=4 as the GKK files take less much</dt>
 <dt>less disk space and memory (but run a little bit slower). Note that</dt>
-<dt><a class="wikilink" href="../../input_variables/varrf#ieig2rf">ieig2rf</a>=5 can only be used if Abinit is compiled with NETCDF support.</dt>
+<dt><a class="wikilink" href="../../input_variables/varrf/#ieig2rf">ieig2rf</a>=5 can only be used if Abinit is compiled with NETCDF support.</dt>
 <dt>Related variables :</dt>
-<dt><a class="wikilink" href="../../input_variables/varrf#bdeigrf">bdeigrf</a>,<a class="wikilink" href="../../input_variables/varrf#elph2_imagden">elph2_imagden</a>,<a class="wikilink" href="../../input_variables/vardev#getgam_eig2nkq">getgam_eig2nkq</a>,<a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> Related variables</dt>
-<dd><a class="wikilink" href="../../input_variables/varrf#bdeigrf">bdeigrf</a>,<a class="wikilink" href="../../input_variables/varrf#elph2_imagden">elph2_imagden</a>,<a class="wikilink" href="../../input_variables/vardev#getgam_eig2nkq">getgam_eig2nkq</a>,<a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a></dd>
+<dt><a class="wikilink" href="../../input_variables/varrf/#bdeigrf">bdeigrf</a>,<a class="wikilink" href="../../input_variables/varrf/#elph2_imagden">elph2_imagden</a>,<a class="wikilink" href="../../input_variables/vardev/#getgam_eig2nkq">getgam_eig2nkq</a>,<a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> Related variables</dt>
+<dd><a class="wikilink" href="../../input_variables/varrf/#bdeigrf">bdeigrf</a>,<a class="wikilink" href="../../input_variables/varrf/#elph2_imagden">elph2_imagden</a>,<a class="wikilink" href="../../input_variables/vardev/#getgam_eig2nkq">getgam_eig2nkq</a>,<a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a></dd>
 </dl>
 <h2 id="ph_ngqpt"><strong>ph_ngqpt</strong><a class="headerlink" href="#ph_ngqpt" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PHonons: Number of Grid points for Q-PoinT mesh.<br />
@@ -750,16 +750,16 @@ Dimensions: (3)<br />
 Default value: [20, 20, 20]  </p>
 <p>This variable defines the q-mesh used to compute the phonon DOS and the
 Eliashberg function via Fourier interpolation. Related input variables:
-<a class="wikilink" href="../../input_variables/vareph#ph_qshift">ph_qshift</a> and <a class="wikilink" href="../../input_variables/vareph#ph_nqshift">ph_nqshift</a>.</p>
+<a class="wikilink" href="../../input_variables/vareph/#ph_qshift">ph_qshift</a> and <a class="wikilink" href="../../input_variables/vareph/#ph_nqshift">ph_nqshift</a>.</p>
 <h2 id="ph_qpath"><strong>ph_qpath</strong><a class="headerlink" href="#ph_qpath" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Phonons: Q-PATH<br />
 Variable type: real<br />
 Dimensions: (3,ph_nqpath)<br />
 Default value: None<br />
-Only relevant if specified(<a class="wikilink" href="../../input_variables/vareph#ph_nqpath">ph_nqpath</a>)  </p>
+Only relevant if specified(<a class="wikilink" href="../../input_variables/vareph/#ph_nqpath">ph_nqpath</a>)  </p>
 <p>This array contains the list of special q-points used to construct the q-path
-for phonon band structures and phonon linewidths. See also <a class="wikilink" href="../../input_variables/vareph#ph_nqpath">ph_nqpath</a> and
-[<a class="wikilink" href="../../input_variables/vareph#ph_ndivsm">ph_ndivsm</a>.</p>
+for phonon band structures and phonon linewidths. See also <a class="wikilink" href="../../input_variables/vareph/#ph_nqpath">ph_nqpath</a> and
+[<a class="wikilink" href="../../input_variables/vareph/#ph_ndivsm">ph_ndivsm</a>.</p>
 <h2 id="prepanl"><strong>prepanl</strong><a class="headerlink" href="#prepanl" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PREPAre Non-Linear response calculation<br />
 Variable type: integer<br />
@@ -777,7 +777,7 @@ Still, in case of phonons, only the irreducible perturbations are required.
 Second, for both electric fields and phonons, the wavefunctions must be
 available in half the BZ (kptopt=2), or the full BZ (kptopt=3).<br />
 During the linear response calculation, in order to prepare a non-linear
-calculation, one should put <a class="wikilink" href="../../input_variables/varrf#prepanl">prepanl</a> to 1 in order to force ABINIT (i) to
+calculation, one should put <a class="wikilink" href="../../input_variables/varrf/#prepanl">prepanl</a> to 1 in order to force ABINIT (i) to
 compute the electric field perturbation along the three directions explicitly,
 and (ii) to keep the full number of k-points.</p>
 <h2 id="prepgkk"><strong>prepgkk</strong><a class="headerlink" href="#prepgkk" title="Permanent link">&para;</a></h2>
@@ -788,14 +788,14 @@ Default value: 0  </p>
 <p>The calculation of electron-phonon coupling quantities requires the presence
 of all the perturbations (all atoms in all directions) for the chosen set of
 (irreducible) q-points. To impose this and prevent ABINIT from using symmetry
-to reduce the number of perturbations, set <a class="wikilink" href="../../input_variables/varrf#prepgkk">prepgkk</a> to 1. Use in
-conjunction with <a class="wikilink" href="../../input_variables/varfil#prtgkk">prtgkk</a>.</p>
+to reduce the number of perturbations, set <a class="wikilink" href="../../input_variables/varrf/#prepgkk">prepgkk</a> to 1. Use in
+conjunction with <a class="wikilink" href="../../input_variables/varfil/#prtgkk">prtgkk</a>.</p>
 <h2 id="prtbbb"><strong>prtbbb</strong><a class="headerlink" href="#prtbbb" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT Band-By-Band decomposition<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>If <a class="wikilink" href="../../input_variables/varrf#prtbbb">prtbbb</a> is 1, print the band-by-band decomposition of Born effective
+<p>If <a class="wikilink" href="../../input_variables/varrf/#prtbbb">prtbbb</a> is 1, print the band-by-band decomposition of Born effective
 charges and localization tensor, in case they are computed. See Ph. Ghosez and
 X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).</p>
 <h2 id="rf2_dkdk"><strong>rf2_dkdk</strong><a class="headerlink" href="#rf2_dkdk" title="Permanent link">&para;</a></h2>
@@ -808,7 +808,7 @@ Default value: 0  </p>
 wavevectors. This is not strictly a response function but is a needed
 auxiliary quantity in the calculations of 3rd-order derivatives of the energy
 (non-linear response). The directions for the derivatives are determined by
-<a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> (TO BE CORRECTED!).</p>
+<a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> (TO BE CORRECTED!).</p>
 <ul>
 <li>0=&gt;no derivative calculation </li>
 <li>1=&gt;calculation along diagonal directions (d2/(dk_i dk_i), natom+10 is activated) </li>
@@ -841,16 +841,16 @@ Default value: [1, 1]  </p>
 <p>Control the range of atoms for which displacements will be considered in
 phonon calculations (atomic polarizations), using the 2n+1 theorem.<br />
 These values are only relevant to phonon response function calculations.<br />
-May take values from 1 to <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, with <a href="../1">[rfatpol]</a>&lt;=<a href="../2">[rfatpol]</a>.<br />
+May take values from 1 to <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, with <a href="../1">[rfatpol]</a>&lt;=<a href="../2">[rfatpol]</a>.<br />
 The atoms to be moved will be defined by the<br />
 do-loop variable iatpol :<br />
 do iatpol=<a href="../1">[rfatpol]</a>,<a href="../2">[rfatpol]</a><br />
 For the calculation of a full dynamical matrix, use <a href="../1">[rfatpol]</a>=1 and
-<a href="../2">[rfatpol]</a>=<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, together with <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> 1 1 1 . For selected
-elements of the dynamical matrix, use different values of <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a> and/or
-<a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>. The name &lsquo;iatpol&rsquo; is used for the part of the internal variable
-ipert when it runs from 1 to <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>. The internal variable ipert can also
-assume values larger than <a class="wikilink" href="../../input_variables/varbas#natom">natom</a>, denoting perturbations of electric field
+<a href="../2">[rfatpol]</a>=<a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, together with <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> 1 1 1 . For selected
+elements of the dynamical matrix, use different values of <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a> and/or
+<a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a>. The name &lsquo;iatpol&rsquo; is used for the part of the internal variable
+ipert when it runs from 1 to <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>. The internal variable ipert can also
+assume values larger than <a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>, denoting perturbations of electric field
 or stress type (see <a href="../../../users/generated_files/help_respfn.html"> the response function help file
 </a> ).</p>
 <h2 id="rfddk"><strong>rfddk</strong><a class="headerlink" href="#rfddk" title="Permanent link">&para;</a></h2>
@@ -860,11 +860,11 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Activates computation of derivatives of ground state wavefunctions with
 respect to wavevectors. This is not strictly a response function but is a
-needed auxiliary quantity in the electric field calculations (see <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>)
-The directions for the derivatives are determined by <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>.</p>
+needed auxiliary quantity in the electric field calculations (see <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>)
+The directions for the derivatives are determined by <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a>.</p>
 <ul>
 <li>0=&gt;no derivative calculation </li>
-<li>1=&gt;calculation of first derivatives of wavefunctions with respect to k points (d/dk calculation). The exact same functionality is provided by <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a> = 2. </li>
+<li>1=&gt;calculation of first derivatives of wavefunctions with respect to k points (d/dk calculation). The exact same functionality is provided by <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a> = 2. </li>
 </ul>
 <h2 id="rfdir"><strong>rfdir</strong><a class="headerlink" href="#rfdir" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Response Function : DIRections<br />
@@ -872,7 +872,7 @@ Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]  </p>
 <p>Gives the directions to be considered for response function calculations (also
-for the Berry phase computation of the polarization, see the <a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a>
+for the Berry phase computation of the polarization, see the <a class="wikilink" href="../../input_variables/varff/#berryopt">berryopt</a>
 input variable).<br />
 The three elements corresponds to the three primitive vectors, either in real
 space (phonon calculations), or in reciprocal space (d/dk, homogeneous
@@ -880,8 +880,8 @@ electric field, homogeneous magnetic field calculations). So, they generate a
 basis for the generation of the dynamical matrix or the macroscopic dielectric
 tensor or magnetic susceptibility and magnetic shielding, or the effective
 charge tensors.<br />
-If equal to 1, response functions, as defined by <a class="wikilink" href="../../input_variables/varrf#rfddk">rfddk</a>, <a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>,
-<a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> and <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a>, are to be computed for the
+If equal to 1, response functions, as defined by <a class="wikilink" href="../../input_variables/varrf/#rfddk">rfddk</a>, <a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>,
+<a class="wikilink" href="../../input_variables/varrf/#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> and <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a>, are to be computed for the
 corresponding direction. If 0, this direction should not be considered.</p>
 <h2 id="rfelfd"><strong>rfelfd</strong><a class="headerlink" href="#rfelfd" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Response Function with respect to the ELectric FielD<br />
@@ -930,7 +930,7 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Used to run strain response-function calculations (e.g. needed to get elastic
-constants). Define, with <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>, the set of perturbations.</p>
+constants). Define, with <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a>, the set of perturbations.</p>
 <ul>
 <li>0=&gt;no strain perturbation </li>
 <li>1=&gt;only uniaxial strain(s) (ipert=natom+3 is activated) </li>
@@ -966,15 +966,15 @@ variable.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>When <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> in non-zero, it will trigger the calculation of the imaginary
+<p>When <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> in non-zero, it will trigger the calculation of the imaginary
 part of the second-order electronic eigenvalues, which can be related to the
 electronic lifetimes. The delta function is evaluated using:  </p>
 <ul>
-<li>when <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> == 1, Fermi-Dirac smearing : 0.25_dp/(cosh(xx/2.0_dp)**2 </li>
-<li>when <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> == 2, Cold smearing by Marzari using the parameter a=-.5634 (minimization of the bump): exp(-xx2)/sqrt(pi) * (1.5d0+xx<em>(-a</em>1.5d0+xx<em>(-1.0d0+a</em>xx))) </li>
-<li>when <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> == 3, Cold smearing by Marzari using the parameter a=-.8165 (monotonic function in the tail): as 2 but different a </li>
-<li>when <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> == 4, Smearing of Methfessel and Paxton (PRB40,3616(1989)) with Hermite polynomial of degree 2, corresponding to &ldquo;Cold smearing&rdquo; of N. Marzari with a=0 (so, same smeared delta function as smdelta=2, with different a). </li>
-<li>when <a class="wikilink" href="../../input_variables/varrf#smdelta">smdelta</a> == 5, Gaussian smearing : 1.0d0<em>exp(-xx</em>*2)/sqrt(pi) </li>
+<li>when <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> == 1, Fermi-Dirac smearing : 0.25_dp/(cosh(xx/2.0_dp)**2 </li>
+<li>when <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> == 2, Cold smearing by Marzari using the parameter a=-.5634 (minimization of the bump): exp(-xx2)/sqrt(pi) * (1.5d0+xx<em>(-a</em>1.5d0+xx<em>(-1.0d0+a</em>xx))) </li>
+<li>when <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> == 3, Cold smearing by Marzari using the parameter a=-.8165 (monotonic function in the tail): as 2 but different a </li>
+<li>when <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> == 4, Smearing of Methfessel and Paxton (PRB40,3616(1989)) with Hermite polynomial of degree 2, corresponding to &ldquo;Cold smearing&rdquo; of N. Marzari with a=0 (so, same smeared delta function as smdelta=2, with different a). </li>
+<li>when <a class="wikilink" href="../../input_variables/varrf/#smdelta">smdelta</a> == 5, Gaussian smearing : 1.0d0<em>exp(-xx</em>*2)/sqrt(pi) </li>
 </ul>
 <h2 id="td_maxene"><strong>td_maxene</strong><a class="headerlink" href="#td_maxene" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Time-Dependent dft : MAXimal kohn-sham ENErgy difference<br />
@@ -987,11 +987,11 @@ Methods, and Functionals&rdquo;, by M.E. Casida, in Recent Developments and
 Applications of Modern Density Functional Theory, edited by J.M. Seminario
 (Elsevier, Amsterdam, 1996).) is a NxN matrix, where, by default, N is the
 product of the number of occupied states by the number of unoccupied states.<br />
-The input variable <a class="wikilink" href="../../input_variables/varrf#td_maxene">td_maxene</a> allows to diminish N : it selects only the
+The input variable <a class="wikilink" href="../../input_variables/varrf/#td_maxene">td_maxene</a> allows to diminish N : it selects only the
 pairs of occupied and unoccupied states for which the Kohn-Sham energy
-difference is less than <a class="wikilink" href="../../input_variables/varrf#td_maxene">td_maxene</a>. The default value 0.0 means that all
+difference is less than <a class="wikilink" href="../../input_variables/varrf/#td_maxene">td_maxene</a>. The default value 0.0 means that all
 pairs are taken into account.<br />
-See <a class="wikilink" href="../../input_variables/varrf#td_mexcit">td_mexcit</a> for an alternative way to decrease N.</p>
+See <a class="wikilink" href="../../input_variables/varrf/#td_mexcit">td_mexcit</a> for an alternative way to decrease N.</p>
 <h2 id="td_mexcit"><strong>td_mexcit</strong><a class="headerlink" href="#td_mexcit" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Time-Dependent dft : Maximal number of EXCITations<br />
 Variable type: real<br />
@@ -1003,11 +1003,11 @@ Methods, and Functionals&rdquo;, by M.E. Casida, in Recent Developments and
 Applications of Modern Density Functional Theory, edited by J.M. Seminario
 (Elsevier, Amsterdam, 1996).) is a NxN matrix, where, by default, N is the
 product of the number of occupied states by the number of unoccupied states.<br />
-The input variable <a class="wikilink" href="../../input_variables/varrf#td_mexcit">td_mexcit</a> allows to diminish N : it selects the first
-<a class="wikilink" href="../../input_variables/varrf#td_mexcit">td_mexcit</a> pairs of occupied and unoccupied states, ordered with respect to
-increasing Kohn-Sham energy difference. However, when <a class="wikilink" href="../../input_variables/varrf#td_mexcit">td_mexcit</a> is zero,
+The input variable <a class="wikilink" href="../../input_variables/varrf/#td_mexcit">td_mexcit</a> allows to diminish N : it selects the first
+<a class="wikilink" href="../../input_variables/varrf/#td_mexcit">td_mexcit</a> pairs of occupied and unoccupied states, ordered with respect to
+increasing Kohn-Sham energy difference. However, when <a class="wikilink" href="../../input_variables/varrf/#td_mexcit">td_mexcit</a> is zero,
 all pairs are allowed.<br />
-See <a class="wikilink" href="../../input_variables/varrf#td_maxene">td_maxene</a> for an alternative way to decrease N.</p></div>
+See <a class="wikilink" href="../../input_variables/varrf/#td_maxene">td_maxene</a> for an alternative way to decrease N.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -1021,6 +1021,8 @@ See <a class="wikilink" href="../../input_variables/varrf#td_maxene">td_maxene</
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1048,6 +1050,7 @@ See <a class="wikilink" href="../../input_variables/varrf#td_maxene">td_maxene</
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

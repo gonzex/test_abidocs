@@ -403,23 +403,23 @@ Work_rf1. This is your input file. You should edit it, and read it carefully.</p
 <p>Because of the use of two types of atoms, have a look at the following input
 variables :</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a> </li>
-<li><a class="wikilink" href="../../input_variables/varbas#typat">typat</a> </li>
+<li><a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a> </li>
+<li><a class="wikilink" href="../../input_variables/varbas/#typat">typat</a> </li>
 </ul>
-<p>Note that the value of <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a> is rather stringent. This is because the
+<p>Note that the value of <a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a> is rather stringent. This is because the
 wavefunctions determined by the present run will be used later as starting
 point of the response-function calculation. However, the number of steps,
-<a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>, in this example file has been set to 15, and you will see that this
-is not enough to reach the target <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>. In production runs, you should
-choose a larger value of <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>, sufficient to reach your target
-<a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>. In the present tutorial, due to portability concerns related to
-automatic testing, we could not allow a larger <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> value. This minor
+<a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>, in this example file has been set to 15, and you will see that this
+is not enough to reach the target <a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a>. In production runs, you should
+choose a larger value of <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>, sufficient to reach your target
+<a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a>. In the present tutorial, due to portability concerns related to
+automatic testing, we could not allow a larger <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> value. This minor
 problem with some tutorial examples was mentioned briefly in <a href="../lesson_base1.html#aq1">a side note to
 the answer to question 1 of lesson 1</a>. So, do not
 follow blindly all examples in the tutorials : check by yourself the
 convergence of your runs !</p>
-<p>You will work at fixed <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> (=3Ha) and k-point grid, defined by
-<a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> (the 8x8x8 Monkhorst-Pack grid). It is implicit that in &ldquo;real
+<p>You will work at fixed <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> (=3Ha) and k-point grid, defined by
+<a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a> (the 8x8x8 Monkhorst-Pack grid). It is implicit that in &ldquo;real
 life&rdquo;, you should do a convergence test with respect to both convergence
 parameters. We postpone the discussion of the accuracy of these choices and
 the choice of pseudopotential to the end of the fifth section of this
@@ -465,8 +465,8 @@ of the Al atom along the first axis of the reduced coordinates.</p>
 <p>You can copy the file ~abinit/tests/tutorespfn/Input/trf1_2.in in Work_rf1.
 This is your input file. You should edit it and briefly look at the two
 changes with respect to the file ~abinit/tests/tutorespfn/Input/trf1_1.in :
-the change of <a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, and the reading of the wavefunction file, using the
-<a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> input variable. Then, you can make the run. The symmetry is lowered
+the change of <a class="wikilink" href="../../input_variables/varbas/#xred">xred</a>, and the reading of the wavefunction file, using the
+<a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> input variable. Then, you can make the run. The symmetry is lowered
 with respect to the ground-state geometry, so that the number of k-points
 increases a lot, and of course, the CPU time.</p>
 <p>From this run, it is possible to get the values of the total energy, and the
@@ -568,8 +568,8 @@ first part of this file, before</p>
 
 
 <p>Accordingly, you should get familiarized with the new input variables :
-<a class="wikilink" href="../../input_variables/varrf#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a>, <a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>. Then, pay attention to the special use of
-the <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> input variable. It will be explained in more detail later.</p>
+<a class="wikilink" href="../../input_variables/varrf/#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a>, <a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a>. Then, pay attention to the special use of
+the <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a> input variable. It will be explained in more detail later.</p>
 <p>When you have understood the purpose of the input variable values specified
 before the &ldquo;Common input variables&rdquo; section, you can make the code run.</p>
 <p>Then, we need to analyze the different output files. For that purpose, you
@@ -619,8 +619,8 @@ the respfn_help file.</p>
 Work_rf1. This is your input file. You should edit it. As for test rf1_3, the
 changes with respect to the file ~abinit/tests/tutorespfn/Input/trf1_1.in are
 all gathered in the first part of this file. Moreover, the changes with
-respect to trf1_3.in concern only the input variables <a class="wikilink" href="../../input_variables/varrf#rfatpol">rfatpol</a>, and
-<a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a>. Namely, all the atoms will be displaced, in all the directions.</p>
+respect to trf1_3.in concern only the input variables <a class="wikilink" href="../../input_variables/varrf/#rfatpol">rfatpol</a>, and
+<a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a>. Namely, all the atoms will be displaced, in all the directions.</p>
 <p>There are six perturbations to consider. So, one might think that the CPU time
 will raise accordingly. This is not true, as ABINIT is able to determine which
 perturbations are the symmetric of another perturbation, see <a href="../../../users/generated_files/help_respfn.html#3"> section
@@ -638,7 +638,7 @@ the other four could be deduced by using the symmetries.</p>
 atom, placed in a rather symmetric local site, and the other perturbation is
 for the As atom.</p>
 <p>The phonon frequencies, obtained by diagonalizing the dynamical matrix (where
-the atomic masses have been taken into account, see <a class="wikilink" href="../../input_variables/varrlx#amu">amu</a>), are given as
+the atomic masses have been taken into account, see <a class="wikilink" href="../../input_variables/varrlx/#amu">amu</a>), are given as
 follows :</p>
 <div class="codehilite"><pre><span></span>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
  Phonon energies in Hartree :
@@ -734,9 +734,9 @@ particularly interesting, except for the f-sum rule ratio</p>
 </pre></div>
 
 
-<p>that should be close to 1, and becomes closer to it when <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is
+<p>that should be close to 1, and becomes closer to it when <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is
 increased, and the sampling of k points is improved. (In the present status of
-ABINIT, the f-rule ratio is not computed correctly when <a class="wikilink" href="../../input_variables/varrlx#ecutsm">ecutsm</a>/=0)</p>
+ABINIT, the f-rule ratio is not computed correctly when <a class="wikilink" href="../../input_variables/varrlx/#ecutsm">ecutsm</a>/=0)</p>
 <p>In the third dataset section, three irreducible perturbations are considered :</p>
 <div class="codehilite"><pre><span></span> ==&gt;  initialize data related to q vector &lt;==
 
@@ -788,7 +788,7 @@ displacement, as explained in section II of X. Gonze, Phys. Rev. B55, 10355
 
 <p>Namely, the Born effective charge of the Al atom is 2.104, and the one of the
 As atom is -2.127 . The charge neutrality sum rule is not fulfilled exactly.
-When <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is increased, and the sampling of k points is improved, the sum
+When <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is increased, and the sampling of k points is improved, the sum
 of the two charges goes closer to zero.</p>
 <p>Finally, the phonon frequencies are computed:</p>
 <div class="codehilite"><pre><span></span>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
@@ -837,23 +837,23 @@ cm^-1, and one LO mode at 379.6 cm^-1 .</p>
 <p>These values can be compared to experimental (361 cm^-1 , 402 cm^-1) as well
 as theoretical (363 cm^-1 , 400 cm^-1) values (again the Gianozzi et al paper
 mentioned above). Most of the discrepancy comes from the too low value of
-<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>. Using ABINIT with <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=6 hartree gives (358.8 cm^-1 , 389.8
+<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>. Using ABINIT with <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=6 hartree gives (358.8 cm^-1 , 389.8
 cm^-1). The remaining of the discrepancy may come partly from the
 pseudopotentials, that are particularly soft.</p>
 <p>The comparison of Born effective charges is also interesting. After imposition
 of the neutrality sum rule, the Al Born effective charge is 2.116 . The value
 from Gianozzi et al is 2.17, the experimental value is 2.18. Increasing
-<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> to 6 hartree in ABINIT gives 2.168.</p>
+<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> to 6 hartree in ABINIT gives 2.168.</p>
 <p>For the dielectric tensor, it is more delicate. The value from Gianozzi et al
 is 9.2, while the experimental value is 8.2 . The agreement is not very good,
 a fact that can be attributed to the LDA lack of polarization-dependence ( X.
 Gonze, Ph. Ghosez and R. Godby, Phys. Rev. Lett. (1995)). Still, the agreement
 of our calculation with the theoretical result is not very good. With
-<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=3 hartree, we have 9.76. Changing it to 6 hartree gives 10.40 . A
-better k point sampling (8x8x8), with <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=6 hartree, reduces the value to
+<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=3 hartree, we have 9.76. Changing it to 6 hartree gives 10.40 . A
+better k point sampling (8x8x8), with <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=6 hartree, reduces the value to
 9.89 . Changing pseudopotentials finally improves the agreement : with the
 much harder 13al.pspgth and 33as.psphgh pseudopotentials with adequate
-<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=16 hartree and 8x8x8 Monkhorst-Pack sampling, we reach a value of
+<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=16 hartree and 8x8x8 Monkhorst-Pack sampling, we reach a value of
 9.37 . This illustrates that the dielectric tensor is a much more sensitive
 quantity than the others.</p>
 <hr />
@@ -880,10 +880,10 @@ documentation (why not the
 Gianozzi et al paper. The agreement is rather good, despite the low cut-off
 energy, and different pseudopotentials.</p>
 <p>At X, they get 95cm^-1, 216cm^-1, 337cm^-1 and 393cm^-1, while we get
-92.5cm^-1, 204.6cm^-1, 313.9cm^-1 and 375.9cm^-1. With <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=6 hartree, we
+92.5cm^-1, 204.6cm^-1, 313.9cm^-1 and 375.9cm^-1. With <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=6 hartree, we
 get 89.7cm^-1, 212.3cm^-1, 328.5cm^-1 and 385.8cm^-1.</p>
 <p>At L, they get 71cm^-1, 212cm^-1, 352cm^-1 and 372cm^-1, while we get
-69.0cm^-1, 202.5cm^-1, 332.6cm^-1 and 352.3cm^-1. With <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>=6 hartree, we
+69.0cm^-1, 202.5cm^-1, 332.6cm^-1 and 352.3cm^-1. With <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>=6 hartree, we
 get 68.1cm^-1, 208.5cm^-1, 346.7cm^-1 and 362.6cm^-1.</p>
 <p>At q=(0.1 0 0), we get 31.6cm^-1, 63.6cm^-1, 342.0cm^-1 and 379.7cm^-1. The
 acoustic modes tends (nearly-)linearly to zero, while the optic modes are
@@ -904,6 +904,8 @@ tutorial on response functions</a></p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -931,6 +933,7 @@ tutorial on response functions</a></p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

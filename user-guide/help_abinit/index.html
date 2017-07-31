@@ -472,10 +472,6 @@ complementary <a class="wikilink" href="../../help_respfn/">help_respfn</a> is n
 #%%<END TEST_INFO>
 </pre>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
     </div>
   </div>
 </div>
@@ -547,10 +543,10 @@ and a choice of different algorithms for the update of the potential, one of
 which is a potential-based conjugate gradient algorithm.</p>
 <p>The representation of potential, density and wavefunctions in real space will
 be done on a regular 3D grid of points. Its spacing will be determined by the
-cut-off energy (see the input variable <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>) of the planewave basis in
+cut-off energy (see the input variable <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>) of the planewave basis in
 reciprocal space. This grid of points will also be the starting point of Fast
 Fourier Transforms between real and reciprocal space. The number of such
-points, called <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>, should be sufficiently large for adequate
+points, called <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a>, should be sufficiently large for adequate
 representation of the functions, but not too large, for reasons of
 computational efficiency. The trade-off between accuracy and computational
 efficiency is present in many places of the code, and addressed briefly at the
@@ -601,7 +597,7 @@ contained in different files, of which some are listed here:</p>
 <p>In the actual input file, these parameters may be given in any desired order,
 and more than one may be given per line. Spaces are used to separate values
 and additional spaces are ignored.<br />
-An as example of input, the parameter for length scales is called <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>
+An as example of input, the parameter for length scales is called <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>
 and is an array <a href="../3">[acell]</a> for the lengths of the primitive translations in
 Bohr atomic units. To input a typical Si diamond lattice one would have the
 line</p>
@@ -631,7 +627,7 @@ ABINIT has also some (very limited) interpretor capabilities :</p>
 anything to the right of a &ldquo;#&rdquo; or a &ldquo;!&rdquo; on any line is simply ignored by the
 parser. Additional text, not preceded by a &ldquo;#&rdquo; or a &ldquo;!&rdquo; would not otherwise
 cause trouble unless the text inadvertently contained character strings which
-were the same as variable names (e.g. <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>). The characters &ldquo;#&rdquo; or &ldquo;!&rdquo;
+were the same as variable names (e.g. <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>). The characters &ldquo;#&rdquo; or &ldquo;!&rdquo;
 can also be used to &ldquo;store&rdquo; old values of variables or place anything else of
 convenience into the file in such a way as to be ignored by the parser when
 the data is read.<br />
@@ -673,7 +669,7 @@ also be skipped for the first few steps in the use of the code.<br />
 Indeed, it should be <em>easy to set up the geometry of systems with less than
 20-40 atoms without this geometry builder</em>. Even for larger systems, its
 functionalities could eventually be of no help. For a step-to-step description
-of this geometry builder, look at the variable &lsquo;<a class="wikilink" href="../../input_variables/vargeo#nobj">nobj</a>&rsquo;. The related input
+of this geometry builder, look at the variable &lsquo;<a class="wikilink" href="../../input_variables/vargeo/#nobj">nobj</a>&rsquo;. The related input
 variables being used for preprocessing of the input file, they are not echoed
 in the output file.</p>
 <p>Alternatively to the geometry builder, there is also a symmetriser. It allows
@@ -682,7 +678,7 @@ the symmetry operations and the atoms in the asymmetric cell. It also allows
 to generate the symmetry operations from the knowledge of the number of the
 space group according to the international crystallographic tables. The
 indication &lsquo;<strong>SYMMETRISER</strong>&lsquo; is given for the variables related to its use.
-Look at the variable &lsquo;<a class="wikilink" href="../../input_variables/vargeo#spgroup">spgroup</a>&rsquo;.<br />
+Look at the variable &lsquo;<a class="wikilink" href="../../input_variables/vargeo/#spgroup">spgroup</a>&rsquo;.<br />
 You may find in the space group <a href="../../spacegrouphelpfile.html">help file</a> the
 crystallographic equivalence of the parameters belonging to the symmetriser.
 The related input variables being used for preprocessing of the input file,
@@ -693,7 +689,7 @@ symmetry operations leaving the lattice and atomic sublattices invariant, see
 &lsquo;<strong>SYMMETRY_FINDER</strong>&rsquo;. Note that the default tolerance on the coordinates that
 are provided by the user, for a symmetry to be recognized, is on the order of
 1.e-8 . If the provided coordinates are rather inaccurate, ABINIT will not
-recognize the symmetry, unless the input variable <a class="wikilink" href="../../input_variables/vargeo#tolsym">tolsym</a> is changed.</p>
+recognize the symmetry, unless the input variable <a class="wikilink" href="../../input_variables/vargeo/#tolsym">tolsym</a> is changed.</p>
 <p>Most of the variables can be used in the multi-dataset mode (see section 3.3),
 but those that must have a unique value throughout all the datasets are
 signaled with the indication &lsquo;<strong>NO_MULTI</strong>&lsquo;</p>
@@ -747,18 +743,18 @@ choose (by default) atomic units, which is the correct behaviour. Example :</p>
 
 
 <p>The use of the atomic units is mandatory for other dimensioned input
-variables, like the tolerance on forces (<a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a>), parameters that define
+variables, like the tolerance on forces (<a class="wikilink" href="../../input_variables/varbas/#toldff">toldff</a>), parameters that define
 an &lsquo;object&rsquo; (<a href="../../../input_variables/generated_files/vargeo.html#objaax">objaax, objbax</a>, 
 <a href="../../../input_variables/generated_files/vargeo.html#objatr">objatr, objbtr</a>), and the
-initial velocity of atoms (<a class="wikilink" href="../../input_variables/varrlx#vel">vel</a> - if needed).</p>
+initial velocity of atoms (<a class="wikilink" href="../../input_variables/varrlx/#vel">vel</a> - if needed).</p>
 <p>The initial atomic positions can be input in Bohr or Angstrom through
-&lsquo;<a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>&rsquo;, but also, independently, in Angstrom through &lsquo;<a class="wikilink" href="../../input_variables/varbas#xangst">xangst</a>&rsquo;, or
-even in reduced coordinates, through &lsquo;<a class="wikilink" href="../../input_variables/varbas#xred">xred</a>&rsquo;. Reduced cartesian coordinates
+&lsquo;<a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a>&rsquo;, but also, independently, in Angstrom through &lsquo;<a class="wikilink" href="../../input_variables/varbas/#xangst">xangst</a>&rsquo;, or
+even in reduced coordinates, through &lsquo;<a class="wikilink" href="../../input_variables/varbas/#xred">xred</a>&rsquo;. Reduced cartesian coordinates
 must be used for the eventual translations accompanying symmetry operations
-(<a class="wikilink" href="../../input_variables/varbas#tnons">tnons</a>).</p>
+(<a class="wikilink" href="../../input_variables/varbas/#tnons">tnons</a>).</p>
 <p>In addition to giving the input variables, the input file can be useful for
 another purpose : placing the word &ldquo;<strong>exit</strong>&rdquo; on the top line will cause the
-job to end smoothly on the very next iteration, if the <a class="wikilink" href="../../input_variables/vargs#chkexit">chkexit</a> input
+job to end smoothly on the very next iteration, if the <a class="wikilink" href="../../input_variables/vargs/#chkexit">chkexit</a> input
 variable is non-zero. This functions because the program closes and reopens
 the input file on every iteration and checks the top line for the keyword
 &ldquo;exit&rdquo;. THE WORD MUST BE PLACED WITH SPACES (BLANKS) ON BOTH SIDES. Thus
@@ -785,13 +781,13 @@ potential, then the eigenenergy computation along different lines.</p>
 <p>For that purpose, the <strong>multi-dataset mode</strong> has been implemented.</p>
 <p>It allows the code to treat, in one run, different sets of data, and to chain
 them. The number of datasets to be treated is specified by the variable
-<a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>, while the indices of the datasets (by default 1, 2, 3, and so on)
-can be eventually provided by the array <a class="wikilink" href="../../input_variables/varbas#jdtset">jdtset</a>.</p>
+<a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>, while the indices of the datasets (by default 1, 2, 3, and so on)
+can be eventually provided by the array <a class="wikilink" href="../../input_variables/varbas/#jdtset">jdtset</a>.</p>
 <p>For each dataset to be treated, characterized by some index, each input
 variable will determined by the following <strong>rules</strong> (actually, it is easier to
 understand when one looks at examples, see below) :</p>
 <ul>
-<li>(1) ABINIT looks whether the variable name (e.g. <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> ), appended with the index of the dataset (e.g. <a class="wikilink" href="../../input_variables/varbas#jdtset">jdtset</a>=2), exists (e.g. &ldquo;ecut2&rdquo; ) . It will take the data that follows this keyword, if it exists.</li>
+<li>(1) ABINIT looks whether the variable name (e.g. <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> ), appended with the index of the dataset (e.g. <a class="wikilink" href="../../input_variables/varbas/#jdtset">jdtset</a>=2), exists (e.g. &ldquo;ecut2&rdquo; ) . It will take the data that follows this keyword, if it exists.</li>
 <li>(2) If this modified variable name does not exist, it will look whether a metacharacter, a series or a double-loop data set has been defined, see sections 3.4 or 3.5.</li>
 <li>(3) If the variable name appended with the index of the dataset does not exist, and if there is no series nor double-loop dataset for this keyword, it looks for an occurrence of the variable name without any index appended, and take the corresponding data. (This corresponds to the single dataset mode)</li>
 <li>(4) If such occurrences do not exist, it takes the default value. (Also, similar to the single dataset mode)<div class="codehilite"><pre><span></span> ---------------
@@ -884,25 +880,25 @@ term of the series.</p>
 </pre></div>
 
 
-<p>In both cases, there are six datasets, with increasing values of <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>.</p>
+<p>In both cases, there are six datasets, with increasing values of <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>.</p>
 <h4 id="35-defining-a-double-loop-dataset">3.5. Defining a double loop dataset<a class="headerlink" href="#35-defining-a-double-loop-dataset" title="Permanent link">&para;</a></h4>
 <p>To define a double loop dataset, one has first to define the upper limit of
-two loop counters, thanks to the variable <a class="wikilink" href="../../input_variables/varbas#udtset">udtset</a>. The inner loop will
+two loop counters, thanks to the variable <a class="wikilink" href="../../input_variables/varbas/#udtset">udtset</a>. The inner loop will
 execute from 1 to <a href="../2">[udtset]</a>, and the outer loop will execute from 1 to
 <a href="../1">[udtset]</a>. Note that the largest value for <a href="../1">[udtset]</a> is presently 999,
 while it is 9 for <a href="../2">[udtset]</a> (so, only the last digit for the inner loop).</p>
-<p>The value of <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a> must be coherent with <a class="wikilink" href="../../input_variables/varbas#udtset">udtset</a> (it must equal the
+<p>The value of <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a> must be coherent with <a class="wikilink" href="../../input_variables/varbas/#udtset">udtset</a> (it must equal the
 product <code>udtset(1)*udtset(2)</code> ).</p>
 <p>A dataset index is created by the concatenation of the outer loop index and
 the inner loop index.<br />
 For example, if <a href="../1">[udtset]</a> is 2 and <a href="../2">[udtset]</a> is 4, the index will
 assume the following values : <code>11, 12, 13, 14, 21, 22, 23, and 24</code>.</p>
-<p>Independently of the use of <a class="wikilink" href="../../input_variables/varbas#udtset">udtset</a>, rules (2a) and (2c) will be used to
+<p>Independently of the use of <a class="wikilink" href="../../input_variables/varbas/#udtset">udtset</a>, rules (2a) and (2c) will be used to
 define the value of an input variable:</p>
 <p>(2a) The question mark &ldquo;<strong>?</strong>&rdquo; can be used as a metacharacter, replacing any
 digit from 1 to 9, to define an index of a dataset.<br />
 For example, <strong>ecut?</strong>1 means that the input value that follows it can be used
-for <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> for the datasets <code>01, 11, 21, 31, 41, 51, 61, 71, 81, and 91</code>.</p>
+for <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> for the datasets <code>01, 11, 21, 31, 41, 51, 61, 71, 81, and 91</code>.</p>
 <p>(2c) If the variable name appended with the index of the dataset does not
 exist, the code looks whether a double-loop series has been defined for this
 keyword. Series can be defined for the inner loop index or the outer loop
@@ -946,13 +942,13 @@ later.</em></p>
 and so on) will receive an appendix : &lsquo;<strong>_DS</strong>&lsquo; followed by the index of the
 dataset. See section 4.</p>
 <p>The &lsquo;<strong>get</strong>&lsquo; variables can be used to chain the calculations.</p>
-<p>Until now, there are eight of them : <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a>,
-<a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a>, <a class="wikilink" href="../../input_variables/varfil#getden">getden</a>, <a class="wikilink" href="../../input_variables/varrlx#getcell">getcell</a>, <a class="wikilink" href="../../input_variables/varrlx#getxred">getxred</a> and <a class="wikilink" href="../../input_variables/varrlx#getxcart">getxcart</a>.</p>
+<p>Until now, there are eight of them : <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a>,
+<a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a>, <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a>, <a class="wikilink" href="../../input_variables/varrlx/#getcell">getcell</a>, <a class="wikilink" href="../../input_variables/varrlx/#getxred">getxred</a> and <a class="wikilink" href="../../input_variables/varrlx/#getxcart">getxcart</a>.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> allows to take the output wavefunctions of a previous dataset and use them as input wavefunctions </li>
-<li><a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> and <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> do similar things for response function calculations </li>
-<li><a class="wikilink" href="../../input_variables/varfil#getden">getden</a> does the same for the density ; <a class="wikilink" href="../../input_variables/varrlx#getcell">getcell</a> does the same for <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> </li>
-<li><a class="wikilink" href="../../input_variables/varrlx#getxred">getxred</a> and <a class="wikilink" href="../../input_variables/varrlx#getxcart">getxcart</a> do the same for the atomic positions, either in reduced coordinates, or in cartesian coordinates. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> allows to take the output wavefunctions of a previous dataset and use them as input wavefunctions </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> and <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> do similar things for response function calculations </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#getden">getden</a> does the same for the density ; <a class="wikilink" href="../../input_variables/varrlx/#getcell">getcell</a> does the same for <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a> </li>
+<li><a class="wikilink" href="../../input_variables/varrlx/#getxred">getxred</a> and <a class="wikilink" href="../../input_variables/varrlx/#getxcart">getxcart</a> do the same for the atomic positions, either in reduced coordinates, or in cartesian coordinates. </li>
 </ul>
 <p>The different variables corresponding to each dataset are echoed using the
 same indexing convention as for the input step. For the last echo of the code
@@ -994,7 +990,7 @@ created from the root &lsquo;abi&rsquo;, is the following (a similar list exist 
 <li>
 <p><strong>abi_WFK</strong> <br />
 filename of file containing input wavefunction coefficients created from an
-earlier run (with <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=0). Will be opened and read if <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> is 1 .
+earlier run (with <a class="wikilink" href="../../input_variables/vargs/#nqpt">nqpt</a>=0). Will be opened and read if <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> is 1 .
 The wavefunction file is unformatted and can be very large. <strong>Warning</strong> : in
 the multi dataset mode, if getwfk is non-zero, a wavefunction file build from
 <strong>abo</strong> will be read.</p>
@@ -1002,7 +998,7 @@ the multi dataset mode, if getwfk is non-zero, a wavefunction file build from
 <li>
 <p><strong>abi_WFQ</strong> <br />
 filename of file containing input wavefunction coefficients created from an
-earlier run (with <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1), as needed for response function calculations.
+earlier run (with <a class="wikilink" href="../../input_variables/vargs/#nqpt">nqpt</a>=1), as needed for response function calculations.
 The wavefunction file is unformatted and can be very large. <strong>Warning</strong> : in
 the multi dataset mode, if getwfk is non-zero, a wavefunction file build from
 <strong>abo</strong> will be read.</p>
@@ -1015,7 +1011,7 @@ earlier RF run. xx is the index of the perturbation</p>
 <li>
 <p><strong>abi_DEN</strong> <br />
 filename of file containing density created from an earlier run. See
-explanations related to negative values of <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>. This file is also
+explanations related to negative values of <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>. This file is also
 unformatted. <strong>Warning</strong> : in the multi dataset mode, if getwfk is non-zero, a
 density file build from <strong>abo</strong> will be read.</p>
 </li>
@@ -1023,7 +1019,7 @@ density file build from <strong>abo</strong> will be read.</p>
 <p><strong>abi_HES</strong> <br />
 filename of file containing an approximate hessian, for eventual
 (re)initialisation of Broyden minimisation. See brdmin.F90 routine. The use of
-<a class="wikilink" href="../../input_variables/varrlx#restartxf">restartxf</a> is preferred.</p>
+<a class="wikilink" href="../../input_variables/varrlx/#restartxf">restartxf</a> is preferred.</p>
 </li>
 </ul>
 <p><strong>abo</strong> <br />
@@ -1039,12 +1035,12 @@ similar list exists when &lsquo;<strong>_DS</strong>&lsquo; and the dataset inde
 <ul>
 <li>
 <p><strong>abo_WFK</strong> <br />
-Filename of file containing output wavefunction coefficients, if <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=0.
+Filename of file containing output wavefunction coefficients, if <a class="wikilink" href="../../input_variables/vargs/#nqpt">nqpt</a>=0.
 The wavefunction file is unformatted and can be very large.</p>
 </li>
 <li>
 <p><strong>abo_WFQ</strong> <br />
-Same as <strong>abo_WFK</strong>, but for the case <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1. The wavefunctions are always
+Same as <strong>abo_WFK</strong>, but for the case <a class="wikilink" href="../../input_variables/vargs/#nqpt">nqpt</a>=1. The wavefunctions are always
 output, either with the name <strong>abo_WFK</strong>, or with the name <strong>abo_WFQ</strong>.</p>
 </li>
 <li>
@@ -1060,53 +1056,53 @@ section <a href="../help_respfn.html#6.5">6.5</a> of the <a class="wikilink" hre
 </li>
 <li>
 <p><strong>abo_DEN</strong> <br />
-filename of file containing density, in the case <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=0. See the keyword
-<a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>. This file is unformatted, but can be read by cut3d.</p>
+filename of file containing density, in the case <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=0. See the keyword
+<a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a>. This file is unformatted, but can be read by cut3d.</p>
 </li>
 <li>
 <p><strong>abo_TIMx_DEN</strong> <br />
-filenames of files containing density, in the case <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>/=0. The value of
-&ldquo;x&rdquo; after &ldquo;<strong>TIM</strong>&rdquo; is described hereafter. See the keyword <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>. This
+filenames of files containing density, in the case <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>/=0. The value of
+&ldquo;x&rdquo; after &ldquo;<strong>TIM</strong>&rdquo; is described hereafter. See the keyword <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a>. This
 file is unformatted, but can be read by cut3d.</p>
 </li>
 <li>
 <p><strong>abo_POT</strong> <br />
-filename of file containing Kohn-Sham potential See the keyword <a class="wikilink" href="../../input_variables/varfil#prtpot">prtpot</a>.
+filename of file containing Kohn-Sham potential See the keyword <a class="wikilink" href="../../input_variables/varfil/#prtpot">prtpot</a>.
 This file is unformatted, but can be read by cut3d.</p>
 </li>
 <li>
 <p><strong>abo_TIMx_POT</strong> <br />
-filenames of files containing Kohn-Sham potential in the case <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>/=0.
+filenames of files containing Kohn-Sham potential in the case <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>/=0.
 The value of &ldquo;x&rdquo; after &ldquo;TIM&rdquo; is described hereafter. See the keyword
-<a class="wikilink" href="../../input_variables/varfil#prtpot">prtpot</a>. This file is unformatted, but can be read by cut3d.</p>
+<a class="wikilink" href="../../input_variables/varfil/#prtpot">prtpot</a>. This file is unformatted, but can be read by cut3d.</p>
 </li>
 <li>
 <p><strong>abo_DOS</strong> <br />
-filename of file containing density of states. See the keyword <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>.
+filename of file containing density of states. See the keyword <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>.
 This file is formatted.</p>
 </li>
 <li>
 <p><strong>abo_TIMx_DOS</strong> <br />
-filenames of files containing the density of states in the case <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2
-and <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=1 or 2. The value of &ldquo;x&rdquo; after &ldquo;TIM&rdquo; is described hereafter.
-See also the keyword <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>. This file is formatted.</p>
+filenames of files containing the density of states in the case <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2
+and <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=1 or 2. The value of &ldquo;x&rdquo; after &ldquo;TIM&rdquo; is described hereafter.
+See also the keyword <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>. This file is formatted.</p>
 </li>
 <li>
 <p><strong>abo_GEO</strong> <br />
 filename of file containing the geometrical analysis (bond lengths and bond
-angles) in the case <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=0. See the keyword <a class="wikilink" href="../../input_variables/varfil#prtgeo">prtgeo</a>. This file is
+angles) in the case <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=0. See the keyword <a class="wikilink" href="../../input_variables/varfil/#prtgeo">prtgeo</a>. This file is
 formatted.</p>
 </li>
 <li>
 <p><strong>abo_TIMx_GEO</strong> <br />
 filenames of files containing the geometrical analysis (bond lengths and bond
-angles) in the case <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=1 or 2. The value of &ldquo;x&rdquo; after &ldquo;TIM&rdquo; is
-described hereafter. See also the keyword <a class="wikilink" href="../../input_variables/varfil#prtgeo">prtgeo</a>. This file is formatted.</p>
+angles) in the case <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=1 or 2. The value of &ldquo;x&rdquo; after &ldquo;TIM&rdquo; is
+described hereafter. See also the keyword <a class="wikilink" href="../../input_variables/varfil/#prtgeo">prtgeo</a>. This file is formatted.</p>
 </li>
 <li>
 <p><strong>abo_KSS</strong> <br />
 filename of file containing output wavefunction coefficients, if
-<a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>/=0. This wavefunction file is unformatted and can be very large.
+<a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>/=0. This wavefunction file is unformatted and can be very large.
 Its purpose is to start a GW calculation using M.Torrent&rsquo;s code. A different
 format than for <strong>abo_WFK</strong> is used, see the file
 ~abinit/doc/developers/format_KSS.txt .</p>
@@ -1117,16 +1113,16 @@ A file containing the electronic eigenvalues, for subsequent plotting of band
 structure.</p>
 </li>
 </ul>
-<p>When <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>/=0, the <strong>POT</strong>, <strong>DEN</strong>, or <strong>GEO</strong> files are output each
+<p>When <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>/=0, the <strong>POT</strong>, <strong>DEN</strong>, or <strong>GEO</strong> files are output each
 time that a SCF cycle is finished. The &ldquo;<strong>x</strong>&rdquo; of <strong>TIMx</strong> aims at giving each
 of these files a different name. It is attributed as follows:<br />
 - case ionmov==1 : there is an initialization phase, that takes 4 calls to
 the SCF calculation. The value of x will be A, B, C, and D. Then, x will be 1,
 2, 3 &hellip; , actually in agreement with the value of itime (see the keyword
-<a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a>)<br />
+<a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a>)<br />
 - other ionmov cases : the initialisation phase take only one SCF call. The
 value of x will be 0 for that call. Then, the value of x is 1, 2, 3 &hellip; in
-agreement with the value of itime (see the keyword <a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a>)</p>
+agreement with the value of itime (see the keyword <a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a>)</p>
 <p><strong>tmp</strong> <br />
 The temporary files created by the codes will have a name that is constructed
 from the root &ldquo;<strong>tmp</strong>&rdquo;. tmp should usually be chosen such as to give access
@@ -1214,12 +1210,12 @@ details.</p>
 <li>the volume of the unit cell</li>
 <li>
 <p>the ratio between linear dimension of the FFT box and the sphere of plane waves, called &ldquo;<strong>boxcut</strong>&rdquo;. <br />
-It must be above 2 for exact treatment of convolutions by FFT. <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> has
+It must be above 2 for exact treatment of convolutions by FFT. <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a> has
 been automatically chosen to give a boxcut value larger than 2, but not much
 larger, since more CPU time is needed for larger FFT grids;</p>
 </li>
 <li>
-<p>the code also mention that for the same FFT grid you might treat (slightly) larger <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> (so, with a rather small increase of CPU time) </p>
+<p>the code also mention that for the same FFT grid you might treat (slightly) larger <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> (so, with a rather small increase of CPU time) </p>
 </li>
 <li>the heading for each pseudopotential which has been input </li>
 <li>from the inwffil subroutine, a description of the wavefunction initialization (random number initialization or input from a disk file), that is, a report of the number of planewaves (npw) in the basis at each k point</li>
@@ -1241,14 +1237,14 @@ especially section <a href="../help_respfn.html#6.2">6.2</a>.</p>
 <em>The latter two are directly related to forces on each atom.</em></p>
 </li>
 <li>
-<p>Then comes an assessment of the SCF convergence : the criterion for fulfillment of the SCF criterion (defined by <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a>, <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a> or <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>) might be satisfied or not &hellip; </p>
+<p>Then comes an assessment of the SCF convergence : the criterion for fulfillment of the SCF criterion (defined by <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas/#toldff">toldff</a>, <a class="wikilink" href="../../input_variables/varbas/#tolwfr">tolwfr</a> or <a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a>) might be satisfied or not &hellip; </p>
 </li>
 <li>Then the stresses are reported. </li>
 </ul>
 <p>This ends the content of a fixed atomic position calculation.</p>
 <p>Many such blocks can follow.</p>
 <p>When the atomic positions have been eventually relaxed, according to the value
-of <a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a>, the code output more information:</p>
+of <a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a>, the code output more information:</p>
 <ul>
 <li>The squared residuals for each band are reported, k point by k point. </li>
 <li>Then the fractional or reduced coordinates are given, </li>
@@ -1257,7 +1253,7 @@ of <a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a>, the 
 <li>followed by the cartesian forces in Hartree/Bohr and eV/Angstrom. </li>
 <li>Also are given the rms force (<strong>frms</strong>) and the maximum absolute value of any force component (<strong>max</strong>). </li>
 <li>Next are the length scales of the unit cell in Bohr and in Angstroms. </li>
-<li>Next are the eigenvalues of each band for each k point, in eV or Hartree or both depending on the choice of <a class="wikilink" href="../../input_variables/vargs#enunit">enunit</a>.   </li>
+<li>Next are the eigenvalues of each band for each k point, in eV or Hartree or both depending on the choice of <a class="wikilink" href="../../input_variables/vargs/#enunit">enunit</a>.   </li>
 </ul>
 <p>NOTE that the average electrostatic potential of a periodically repeated cell is UNDEFINED.<br />
 In the present implementation, the average Hartree potential and local
@@ -1296,7 +1292,7 @@ Martin, see the
 </ul>
 <p>Having finished all the calculations for the different datasets, the code
 echoes the parameters listed in the input file, using the latest values e.g.
-for <a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, <a class="wikilink" href="../../input_variables/varrlx#vel">vel</a>, and <a class="wikilink" href="../../input_variables/varbas#xcart">xcart</a>, and supplement them with the values
+for <a class="wikilink" href="../../input_variables/varbas/#xred">xred</a>, <a class="wikilink" href="../../input_variables/varrlx/#vel">vel</a>, and <a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a>, and supplement them with the values
 obtained for the total energy, the forces and stresses, as well as occupation
 numbers.<br />
 The latter echoes are very convenient for a quick look at the result of
@@ -1326,7 +1322,7 @@ The main subroutines, for BIG jobs, are</p>
 <p>In case of small jobs, other (initialisation) routines may take a larger
 share, and the sum of the times for the principal time-consuming subroutine
 calls will not make 90% of the run time..</p>
-<p>If the long printing option has been selected (<a class="wikilink" href="../../input_variables/varfil#prtvol">prtvol</a>=1), the code gives
+<p>If the long printing option has been selected (<a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a>=1), the code gives
 much more information in the whole output file. These should be rather self-
 explanatory, usually. Some need more explanation.<br />
 In particular the cpu and wall times for major subroutines which are NOT
@@ -1352,7 +1348,7 @@ dedicated routines inside ABINIT for initializing a header, updating it,
 reading the header of an unformatted disk file, writing a header to an
 unformatted disk file, echoing a header to a formatted disk file, cleaning a
 header datastructure.</p>
-<p>The header is made of 4+<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a> unformatted records, obtained by the
+<p>The header is made of 4+<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a> unformatted records, obtained by the
 following Fortran90 instructions (format 5.7):</p>
 <div class="codehilite"><pre><span></span> <span class="k">write</span><span class="p">(</span><span class="n">unit</span><span class="o">=</span><span class="n">header</span><span class="p">)</span> <span class="n">codvsn</span><span class="p">,</span><span class="n">headform</span><span class="p">,</span><span class="n">fform</span>
  <span class="k">write</span><span class="p">(</span><span class="n">unit</span><span class="o">=</span><span class="n">header</span><span class="p">)</span> <span class="n">bantot</span><span class="p">,</span><span class="n">date</span><span class="p">,</span><span class="n">intxc</span><span class="p">,</span><span class="n">ixc</span><span class="p">,</span><span class="n">natom</span><span class="p">,</span><span class="n">ngfft</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">),&amp;</span>
@@ -1445,11 +1441,11 @@ space FFT grid. It consists of the header records followed by</p>
 
 <p>where <strong>rhor</strong> is the electron density in electrons/Bohr^3, and cplex is the
 number of complex components of the density (cplex=1 for GS calculations -the
-density is real-, and cplex=1 or 2 for RF). The input variable <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>
+density is real-, and cplex=1 or 2 for RF). The input variable <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>
 describes the number of components of the density. The first component (the
-only one present when <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1) is always the total charge density. When
-<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2, the second component is the density associated with spin-up
-electrons. When <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, the second, third and fourth components
+only one present when <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=1) is always the total charge density. When
+<a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=2, the second component is the density associated with spin-up
+electrons. When <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=4, the second, third and fourth components
 correspond to the x, y and z projections of the local magnetization, in units
 of hbar/2 . Note that the meaning of the different components of the density
 differs for the density array (rhor) and for the different potential arrays
@@ -1483,12 +1479,12 @@ whole grid is viewed as being periodically repeated.</p>
 
 
 <p>where <strong>potential</strong> can be either the sum of the Hartree potential, exchange-
-correlation and local pseudopotential (see <a class="wikilink" href="../../input_variables/varfil#prtpot">prtpot</a>), the Hartree potential
-(see <a class="wikilink" href="../../input_variables/varfil#prtvha">prtvha</a>), the Hartree+XC potential (see <a class="wikilink" href="../../input_variables/varfil#prtvhxc">prtvhxc</a>), the local
-pseudopotential (see <a class="wikilink" href="../../input_variables/varfil#prtvpsp">prtvpsp</a>) or the XC potential (see <a class="wikilink" href="../../input_variables/varfil#prtvxc">prtvxc</a>), These
+correlation and local pseudopotential (see <a class="wikilink" href="../../input_variables/varfil/#prtpot">prtpot</a>), the Hartree potential
+(see <a class="wikilink" href="../../input_variables/varfil/#prtvha">prtvha</a>), the Hartree+XC potential (see <a class="wikilink" href="../../input_variables/varfil/#prtvhxc">prtvhxc</a>), the local
+pseudopotential (see <a class="wikilink" href="../../input_variables/varfil/#prtvpsp">prtvpsp</a>) or the XC potential (see <a class="wikilink" href="../../input_variables/varfil/#prtvxc">prtvxc</a>), These
 are defined on the real space grid in Hartree energy units. The underlying
-grid is as described above. If <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2, the different components are the
-spin-up potential and the spin-down potential. In the case <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, the
+grid is as described above. If <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=2, the different components are the
+spin-up potential and the spin-down potential. In the case <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=4, the
 components correspond to the up-up potential, the down-down potential, the
 real part of the up-down potential, and the imaginary part of the up-down
 potential. Note that the Hartree potential is NOT spin-dependent, but in order
@@ -1562,7 +1558,7 @@ versions):</p>
 <p>while the planewave coordinate record was not present (in both GS and RF
 cases).</p>
 <p>Note that there is an alternative format (_KSS) for the output of the
-wavefunction coefficients, activated by a non-zero value of <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>.</p>
+wavefunction coefficients, activated by a non-zero value of <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>.</p>
 <h4 id="68-other-output-files"><strong>6.8. Other output files.</strong><a class="headerlink" href="#68-other-output-files" title="Permanent link">&para;</a></h4>
 <p>There are many other output files, optionally written, all formatted files at
 present. Their use is usually governed by a specific input variable. Please
@@ -1599,12 +1595,12 @@ explanation.</p>
 and the numerical quality of calculations.</p>
 <p>The list of these input parameters is</p>
 <ul>
-<li>(1) <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> </li>
-<li>(2) <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a>, <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a>, and <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>, as well as <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> </li>
-<li>(3) <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a> </li>
-<li>(4) <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> </li>
-<li>(5) <a class="wikilink" href="../../input_variables/varrlx#tolmxf">tolmxf</a>, as well as <a class="wikilink" href="../../input_variables/varrlx#amu">amu</a>, <a class="wikilink" href="../../input_variables/varrlx#dtion">dtion</a>, <a class="wikilink" href="../../input_variables/varrlx#vis">vis</a>, <a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a> </li>
-<li>(6) <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> </li>
+<li>(1) <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> </li>
+<li>(2) <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas/#toldff">toldff</a>, <a class="wikilink" href="../../input_variables/varbas/#tolwfr">tolwfr</a>, and <a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a>, as well as <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> </li>
+<li>(3) <a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a> </li>
+<li>(4) <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a> </li>
+<li>(5) <a class="wikilink" href="../../input_variables/varrlx/#tolmxf">tolmxf</a>, as well as <a class="wikilink" href="../../input_variables/varrlx/#amu">amu</a>, <a class="wikilink" href="../../input_variables/varrlx/#dtion">dtion</a>, <a class="wikilink" href="../../input_variables/varrlx/#vis">vis</a>, <a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a> </li>
+<li>(6) <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a> </li>
 </ul>
 <p>The technical design of the pseudopotential also affects the quality of the
 results.</p>
@@ -1612,19 +1608,19 @@ results.</p>
 basis for a given set of atoms. Some atoms (notably those in the first row or
 first transition series row) have relatively deep pseudopotentials which
 require many planewaves for convergence. In contrast are atoms like Si for
-which fewer planewaves are needed. A typical value of <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> for silicon
+which fewer planewaves are needed. A typical value of <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> for silicon
 might be 5-10 Hartree for quite good convergence, while the value for oxygen
 might be 25-35 Hartree or more depending on the convergence desired and the
 design of the pseudo- potential.</p>
 <p>NOTE: It is necessary in every new problem to <strong>TEST</strong> the convergence by
-<strong>RAISING</strong> <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> for a given calculation until the results being computed
+<strong>RAISING</strong> <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> for a given calculation until the results being computed
 are constant to within some tolerance. This is up to the user and is very
-important. For a given <a class="wikilink" href="../../input_variables/varbas#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>, <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is the parameter
-which controls the number of planewaves. Of course if <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a> or <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>
+important. For a given <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a> and <a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a>, <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is the parameter
+which controls the number of planewaves. Of course if <a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a> or <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>
 is varied then the number of planewaves will also change.</p>
 <p>Let us reiterate that extremely careful pseudopotential design can optimize
 the convergence of <em>e.g.</em> the total energy within some range of planewave
-number or <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>. It is appropriate to attempt to optimize this convergence,
+number or <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>. It is appropriate to attempt to optimize this convergence,
 especially for difficult atoms like oxygen or copper, as long as one does not
 significantly compromise the quality or transferability of the
 pseudopotential. There are many people working on new techniques for
@@ -1637,10 +1633,10 @@ Rappe, K. M. Rabe, E. Kaxiras, and J. D. Joannopoulos, Phys. Rev. B 41, 1227
 <p>(2) In addition to achieving convergence in the number of planewaves in the
 basis, one must ensure that the SCF iterations which solve the electronic
 structure for a given set of atomic coordinates are also converged. This
-convergence is controlled by the parameters <a class="wikilink" href="../../input_variables/varbas#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas#toldff">toldff</a>,
-<a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a>, and <a class="wikilink" href="../../input_variables/varbas#tolvrs">tolvrs</a>, as well as the parameter <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>. One of the
+convergence is controlled by the parameters <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>, <a class="wikilink" href="../../input_variables/varbas/#toldff">toldff</a>,
+<a class="wikilink" href="../../input_variables/varbas/#tolwfr">tolwfr</a>, and <a class="wikilink" href="../../input_variables/varbas/#tolvrs">tolvrs</a>, as well as the parameter <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>. One of the
 &ldquo;tolerance&rdquo; parameters must be chosen, and, when the required level of
-tolerance is fulfilled, the SCF cycles will stop. The <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> variable also
+tolerance is fulfilled, the SCF cycles will stop. The <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> variable also
 controls convergence in preconditioned conjugate gradient iterations by
 forcing the calculation to stop whenever the number of such iterations exceeds
 nstep. Usually one wants nstep to be set larger than needed to reach a given
@@ -1652,14 +1648,14 @@ be slower to converge than for insulating materials. Convergence trouble
 during iterations usually signals closure of the gap. The code will suggest to
 treat at least one unoccupied state (or band) in order to be able to monitor
 such a closure.</p>
-<p>(3) For self consistent calculations (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> positive) it is important to
+<p>(3) For self consistent calculations (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> positive) it is important to
 test the adequacy of the k point integration. If symmetry is used then one
 usually tests a set of &ldquo;special point&rdquo; grids. Otherwise one tests the addition
 of more and more k points, presumably on uniform grids, to ensure that a
 sufficient number has been included for good k point integration. The
 parameter nkpt indicates how many k points are being used, and their
 coordinates are given by kpt and kptnrm, described above. The weight given to
-each k point is provided by input variable <a class="wikilink" href="../../input_variables/varbas#wtk">wtk</a>. Systematic tests of k
+each k point is provided by input variable <a class="wikilink" href="../../input_variables/varbas/#wtk">wtk</a>. Systematic tests of k
 point integration are much more difficult than tests of the adequacy of the
 number of planewaves. The difficulty I refer to is simply the lack of a very
 systematic method for generating k point grids for tests.</p>
@@ -1671,29 +1667,29 @@ to the planewave basis sphere diameter. If this ratio is 2 or larger then e.g.
 the calculation of the Hartree potential from the charge density is done
 without approximation.<br />
 NOTE : the values of <a href="../1:3">[ngfft]</a> are chosen automatically by the code to
-give boxcut &gt; 2, if <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> has not been set by hand. At ratios smaller than
+give boxcut &gt; 2, if <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a> has not been set by hand. At ratios smaller than
 2, certain of the highest Fourier components are corrupted in the convolution.
 If the basis is nearly complete, this Fourier filter can be an excellent
 approximation. In this case values of boxcut can be as small as about 1.5
-without incurring significant error. For a given <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>, <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>, and
-<a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>, one should run tests for which <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> is large enough to give
-boxcut &gt;= 2, and then one may try smaller values of <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a> if the results
+without incurring significant error. For a given <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>, <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>, and
+<a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a>, one should run tests for which <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a> is large enough to give
+boxcut &gt;= 2, and then one may try smaller values of <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a> if the results
 are not significantly altered. See the descriptions of these variables above.</p>
 <p>(5) If you are running calculations to relax or equilibrate structures, i.e.
-with <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=1 and possibly <a class="wikilink" href="../../input_variables/varrlx#vis">vis</a>&gt;0, then the quality of your molecular
-dynamics or relaxation will be affected by the parameters <a class="wikilink" href="../../input_variables/varrlx#amu">amu</a>, <a class="wikilink" href="../../input_variables/varrlx#dtion">dtion</a>,
-<a class="wikilink" href="../../input_variables/varrlx#vis">vis</a>, <a class="wikilink" href="../../input_variables/varrlx#ntime">ntime</a>, <a class="wikilink" href="../../input_variables/varrlx#tolmxf">tolmxf</a>. Clearly if you want a relaxed structure you
+with <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=1 and possibly <a class="wikilink" href="../../input_variables/varrlx/#vis">vis</a>&gt;0, then the quality of your molecular
+dynamics or relaxation will be affected by the parameters <a class="wikilink" href="../../input_variables/varrlx/#amu">amu</a>, <a class="wikilink" href="../../input_variables/varrlx/#dtion">dtion</a>,
+<a class="wikilink" href="../../input_variables/varrlx/#vis">vis</a>, <a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a>, <a class="wikilink" href="../../input_variables/varrlx/#tolmxf">tolmxf</a>. Clearly if you want a relaxed structure you
 must either run long enough or make repeated runs until the largest force in
 the problem (output as fmax) is smaller than what you will tolerate (see
-<a class="wikilink" href="../../input_variables/varrlx#tolmxf">tolmxf</a>).<br />
-If <a class="wikilink" href="../../input_variables/varrlx#dtion">dtion</a> is too large for the given values of masses (<a class="wikilink" href="../../input_variables/varrlx#amu">amu</a>) and
-viscosity (<a class="wikilink" href="../../input_variables/varrlx#vis">vis</a>) then the molecular dynamics will be unstable. If <a class="wikilink" href="../../input_variables/varrlx#dtion">dtion</a>
+<a class="wikilink" href="../../input_variables/varrlx/#tolmxf">tolmxf</a>).<br />
+If <a class="wikilink" href="../../input_variables/varrlx/#dtion">dtion</a> is too large for the given values of masses (<a class="wikilink" href="../../input_variables/varrlx/#amu">amu</a>) and
+viscosity (<a class="wikilink" href="../../input_variables/varrlx/#vis">vis</a>) then the molecular dynamics will be unstable. If <a class="wikilink" href="../../input_variables/varrlx/#dtion">dtion</a>
 is too small, then the molecular dynamics will move inefficiently slowly. A
 consensus exists in the community that forces larger than about 0.1
 eV/Angstrom are really too large to consider the relaxation to be converged.
 It is best for the user to get experience with this in his/her own
 application.<br />
-The option <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=2, 3 or 7 are also available This uses the Broyden
+The option <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=2, 3 or 7 are also available This uses the Broyden
 (BFGS) scheme for structural optimization and is much more efficient than
 viscous damping for structural relaxation.</p>
 <p>(6) If you are running supercell calculations (i.e. an isolated atom or
@@ -1701,7 +1697,7 @@ molecule in a big box, or a defect in a solid, or a slab calculation) you must
 check the convergence of your calculation with respect to the supercell and
 system size.</p>
 <ul>
-<li>For an isolated molecule in a big box : increase concurrently the three dimensions of your supercell (<a class="wikilink" href="../../input_variables/varbas#acell">acell</a>), and check the convergence of your physical property. </li>
+<li>For an isolated molecule in a big box : increase concurrently the three dimensions of your supercell (<a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>), and check the convergence of your physical property. </li>
 <li>For a defect in a solid : your supercell must be a multiple of the primitive cell of the bulk solid, so you have less freedom. Still, be sure that your supercell is large enough for your properties of interest to be accurate at the level you want it to be. </li>
 <li>For a slab calculation : you must increase the vacuum in the cell, but also the thickness of your slab systematically&hellip; </li>
 </ul>
@@ -1725,6 +1721,8 @@ some recent version of them.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1752,6 +1750,7 @@ some recent version of them.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

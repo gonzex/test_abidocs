@@ -404,7 +404,7 @@
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 2.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>The box cut-off ratio is the ratio between the wavefunction plane wave sphere
 radius, and the radius of the sphere that can be inserted in the FFT box, in
 reciprocal space.<br />
@@ -421,17 +421,17 @@ required level of accuracy.</p>
 <h2 id="dmatpawu"><strong>dmatpawu</strong><a class="headerlink" href="#dmatpawu" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: initial Density MATrix for PAW+U<br />
 Variable type: real<br />
-Dimensions: (2<em>max(<a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>)+1,2</em>max(<a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>)+1,max(<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>),<a class="wikilink" href="../../input_variables/varint#natpawu">natpawu</a>)<br />
+Dimensions: (2<em>max(<a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a>)+1,2</em>max(<a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a>)+1,max(<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>),<a class="wikilink" href="../../input_variables/varint/#natpawu">natpawu</a>)<br />
 Default value: *-10.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>!=0  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>!=0  </p>
 <p>For Ground state calculations only.<br />
 Gives the value of an initial density matrix used in LDA+U and kept fixed
-during the first abs(<a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>) SCF iterations.<br />
-Only components corresponding to <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> angular momentum are requested.<br />
-Restriction: In order to use dmatpawu, <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> must be identical for all
+during the first abs(<a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>) SCF iterations.<br />
+Only components corresponding to <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> angular momentum are requested.<br />
+Restriction: In order to use dmatpawu, <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> must be identical for all
 atom types (or -1).<br />
 The occupation matrix is in the basis of real spherical harmonics Slm (note
-that this differs from the choice made when <a class="wikilink" href="../../input_variables/varfil#prtdosm">prtdosm</a>=1 , that is in the
+that this differs from the choice made when <a class="wikilink" href="../../input_variables/varfil/#prtdosm">prtdosm</a>=1 , that is in the
 basis of complex spherical harmonics). Their are ordered by increasing m, and
 are defined e.g. in the article &ldquo;Evaluation of the rotation matrices in the
 basis of real spherical harmonics&rdquo;, by Miguel A. Blancoa, M. Floreza, M.
@@ -447,46 +447,46 @@ respectively to (the normalisation factor has been dropped)  </p>
 <li>m=1, xz </li>
 <li>m=2, x^2-y^2 </li>
 </ul>
-<p><a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> must always be given as a &ldquo;spin-up&rdquo; occupation matrix (and
+<p><a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> must always be given as a &ldquo;spin-up&rdquo; occupation matrix (and
 eventually a &ldquo;spin-down&rdquo; matrix). Be aware that its physical meaning depends
-on the magnetic properties imposed to the system (with <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>,
-<a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>):  </p>
+on the magnetic properties imposed to the system (with <a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>,
+<a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>):  </p>
 <ul>
 <li>
-<p><strong> Non-magnetic system </strong> (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1): <br />
-One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> matrix is given for each atom on which
+<p><strong> Non-magnetic system </strong> (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=1): <br />
+One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> matrix is given for each atom on which
 +U is applied.<br />
 It contains the &ldquo;spin-up&rdquo; occupations.</p>
 </li>
 <li>
-<p><strong> Ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=2, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2): <br />
-Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> matrices are given for each atom on
+<p><strong> Ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>=2, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=2): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
 which +U is applied.<br />
 They contain the &ldquo;spin-up&rdquo; and &ldquo;spin-down&rdquo; occupations.</p>
 </li>
 <li>
-<p><strong> Anti-ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=2): <br />
-One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> matrix is given for each atom on which
+<p><strong> Anti-ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=2): <br />
+One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> matrix is given for each atom on which
 +U is applied.<br />
 It contains the &ldquo;spin-up&rdquo; occupations.</p>
 </li>
 <li>
-<p><strong> Non-collinear magnetic system </strong> (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4): <br />
-Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> matrices are given for each atom on
+<p><strong> Non-collinear magnetic system </strong> (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=4): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
 which +U is applied.<br />
 They contains the &ldquo;spin-up&rdquo; and &ldquo;spin-down&rdquo; occupations (defined as
 n_up=(n+|m|)/2 and n_dn=(n-|m|)/2), where m is the integrated magnetization
 vector).<br />
 The direction of the magnetization (which is also the direction of n_up and
-n_dn) is given by <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a>.<br />
+n_dn) is given by <a class="wikilink" href="../../input_variables/vargs/#spinat">spinat</a>.<br />
 _ Warning: unlike collinear case, atoms having the same magnetization
 magnitude with different directions must be given the same occupation matrix;<br />
-the magnetization will be oriented by the value of <a class="wikilink" href="../../input_variables/vargs#spinat">spinat</a> (this is the
+the magnetization will be oriented by the value of <a class="wikilink" href="../../input_variables/vargs/#spinat">spinat</a> (this is the
 case for antiferro-magnetism). _</p>
 </li>
 <li>
-<p><strong> Non-collinear magnetic system with zero magnetization </strong> (<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=1): <br />
-Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> matrices are given for each atom on
+<p><strong> Non-collinear magnetic system with zero magnetization </strong> (<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=1): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
 which +U is applied.<br />
 They contain the &ldquo;spin-up&rdquo; and &ldquo;spin-down&rdquo; occupations;<br />
 But, as &ldquo;spin-up&rdquo; and &ldquo;spin-down&rdquo; are constrained identical, the &ldquo;spin-down&rdquo;
@@ -498,24 +498,24 @@ one is ignored by the code.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 2<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1  </p>
 <p>This option governs the way occupations of localized atomic levels are
 computed:  </p>
 <ul>
 <li>
-<p><a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=1: atomic occupations are projections on atomic orbitals (Eq. (6) of PRB 77, 155104 (2008)).   </p>
+<p><a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=1: atomic occupations are projections on atomic orbitals (Eq. (6) of PRB 77, 155104 (2008)).   </p>
 </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=2: atomic occupations are integrated values in PAW spheres of angular-momentum-decomposed charge densities (Eq. (7) of PRB 77, 155104 (2008)).   </p>
+<p><a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=2: atomic occupations are integrated values in PAW spheres of angular-momentum-decomposed charge densities (Eq. (7) of PRB 77, 155104 (2008)).   </p>
 </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=3: only for tests   </p>
+<p><a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=3: only for tests   </p>
 </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=4: Extrapolations of occupancies outside the PAW-sphere. This Definition gives normalized operator for occupation.   </p>
+<p><a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=4: Extrapolations of occupancies outside the PAW-sphere. This Definition gives normalized operator for occupation.   </p>
 </li>
 </ul>
-<p>In the general case <a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=2 is suitable. The use of <a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>=1 is
+<p>In the general case <a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=2 is suitable. The use of <a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>=1 is
 restricted to PAW datasets in which the first atomic wavefunction of the
 correlated subspace is a normalized atomic eigenfunction.</p>
 <h2 id="dmatudiag"><strong>dmatudiag</strong><a class="headerlink" href="#dmatudiag" title="Permanent link">&para;</a></h2>
@@ -523,7 +523,7 @@ correlated subspace is a normalized atomic eigenfunction.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a> != 4  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a> != 4  </p>
 <p>Relevant only for Ground-State calculations.<br />
 This option can be used to diagonalize the occupation matrix Nocc_{m,m_prime}.<br />
 Relevant values are:  </p>
@@ -537,7 +537,7 @@ Relevant values are:  </p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: [&lsquo;0.625 for d electron&rsquo;, &lsquo;0.6681 for f electron&rsquo;]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and (<a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/vardev#usedmft">usedmft</a>==1)  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and (<a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/vardev/#usedmft">usedmft</a>==1)  </p>
 <p>This gives the ratio of Slater Integrals F4 and F2. It is used in DFT+U or
 DFT+DMFT for the calculation of the orbital dependent screened coulomb
 interaction.</p>
@@ -546,9 +546,9 @@ interaction.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.4943<br />
-Only relevant if (<a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/vardev#usedmft">usedmft</a>==1) and <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>=3  </p>
+Only relevant if (<a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/vardev/#usedmft">usedmft</a>==1) and <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a>=3  </p>
 <p>Gives the ratio of Slater Integrals F6 and F2. It is used with
-<a class="wikilink" href="../../input_variables/varpaw#f4of2_sla">f4of2_sla</a>==3 in DFT+U or DFT+DMFT for the calculation of the orbital
+<a class="wikilink" href="../../input_variables/varpaw/#f4of2_sla">f4of2_sla</a>==3 in DFT+U or DFT+DMFT for the calculation of the orbital
 dependent screened coulomb interaction.</p>
 <h2 id="iboxcut"><strong>iboxcut</strong><a class="headerlink" href="#iboxcut" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Integer governing the internal use of BOXCUT - not a very good choice of variable name<br />
@@ -564,30 +564,30 @@ conserving.</p>
 <h2 id="jpawu"><strong>jpawu</strong><a class="headerlink" href="#jpawu" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: value of J for PAW+U<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: *0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1  </p>
 <p>Gives the value of the screened exchange interaction between correlated
-electrons corresponding to <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> for each species.<br />
-In the case where <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> =-1, the value is not used.</p>
+electrons corresponding to <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> for each species.<br />
+In the case where <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> =-1, the value is not used.</p>
 <h2 id="lexexch"><strong>lexexch</strong><a class="headerlink" href="#lexexch" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: value of angular momentum L for EXact EXCHange<br />
 Variable type: integer<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: -1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varpaw#useexexch">useexexch</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw/#useexexch">useexexch</a>==1  </p>
 <p>Give for each species the value of the angular momentum (only values 2 or 3
 are allowed) on which to apply the exact exchange correction.</p>
 <h2 id="lpawu"><strong>lpawu</strong><a class="headerlink" href="#lpawu" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: value of angular momentum L for PAW+U<br />
 Variable type: integer<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: *-1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>== 2  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>== 2  </p>
 <p>Give for each species the value of the angular momentum (only values 2 or 3
 are allowed)  on which to apply the LDA+U correction.  </p>
 <ul>
-<li>If equal to 2 (d-orbitals)  or 3 (f-orbitals), values of <a class="wikilink" href="../../input_variables/varpaw#upawu">upawu</a> and  <a class="wikilink" href="../../input_variables/varpaw#jpawu">jpawu</a> are used in the calculation. </li>
+<li>If equal to 2 (d-orbitals)  or 3 (f-orbitals), values of <a class="wikilink" href="../../input_variables/varpaw/#upawu">upawu</a> and  <a class="wikilink" href="../../input_variables/varpaw/#jpawu">jpawu</a> are used in the calculation. </li>
 <li>If equal to -1: do not apply LDA+U correction on the species. </li>
 </ul>
 <h2 id="mqgriddg"><strong>mqgriddg</strong><a class="headerlink" href="#mqgriddg" title="Permanent link">&para;</a></h2>
@@ -597,13 +597,13 @@ Dimensions: scalar<br />
 Default value: 3001  </p>
 <p>Maximum number of wavevectors used to sample the local part of the potential,
 in PAW. Actually referred to as mqgrid_vl internally. Should change name to
-the latter &hellip; See also <a class="wikilink" href="../../input_variables/vardev#mqgrid">mqgrid</a></p>
+the latter &hellip; See also <a class="wikilink" href="../../input_variables/vardev/#mqgrid">mqgrid</a></p>
 <h2 id="ngfftdg"><strong>ngfftdg</strong><a class="headerlink" href="#ngfftdg" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of Grid points for Fast Fourier Transform : Double Grid<br />
 Variable type: integer<br />
 Dimensions: (3)<br />
 Default value: [0, 0, 0]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>This variable has the same meaning as ngfft (gives the size of fast Fourier
 transform (fft) grid in three dimensions) but concerns the &ldquo;double grid&rdquo; only
 used for PAW calculations.</p>
@@ -611,32 +611,32 @@ used for PAW calculations.</p>
 <p>Mnemonics: PAW - use ComPleX rhoij OCCupancies<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 2 if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==0 and <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>&lt;6 and <a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>==1 and <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;=10 and (<a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> !=1 or <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>!=2) and <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1,
+Default value: 2 if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==0 and <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>&lt;6 and <a class="wikilink" href="../../input_variables/varpaw/#pawspnorb">pawspnorb</a>==1 and <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&gt;=10 and (<a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a> !=1 or <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>!=2) and <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1,
 1 otherwise.</p>
-<p>Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
-<p>The only possible values for <a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a> are 1 or 2.<br />
-When <strong> <a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a>==1 </strong> , &ldquo;direct&rdquo; decomposition of total energy cannot be
+<p>Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
+<p>The only possible values for <a class="wikilink" href="../../input_variables/varpaw/#pawcpxocc">pawcpxocc</a> are 1 or 2.<br />
+When <strong> <a class="wikilink" href="../../input_variables/varpaw/#pawcpxocc">pawcpxocc</a>==1 </strong> , &ldquo;direct&rdquo; decomposition of total energy cannot be
 printed out.<br />
-When <strong> <a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a>==2 </strong> , PAW augmentation occupancies are treated as
+When <strong> <a class="wikilink" href="../../input_variables/varpaw/#pawcpxocc">pawcpxocc</a>==2 </strong> , PAW augmentation occupancies are treated as
 COMPLEX; else they are considered as REAL.<br />
 This is needed when time-reversal symmetry is broken (typically when spin-
 orbit coupling is activated).  </p>
-<p>Note for ground-state calculations (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=0):<br />
+<p>Note for ground-state calculations (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=0):<br />
 The imaginary part of PAW augmentation occupancies is only used for the
 computation of the total energy by &ldquo;direct scheme&rdquo;; this is only necessary
-when SCF mixing on potential is chosen (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;10).<br />
-When SCF mixing on density is chosen (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;=10), the &ldquo;direct&rdquo;
+when SCF mixing on potential is chosen (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&lt;10).<br />
+When SCF mixing on density is chosen (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&gt;=10), the &ldquo;direct&rdquo;
 decomposition of energy is only printed out without being used. It is thus
-possible to use <a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a>=1 in the latter case.<br />
+possible to use <a class="wikilink" href="../../input_variables/varpaw/#pawcpxocc">pawcpxocc</a>=1 in the latter case.<br />
 In order to save CPU time, when molecular dynamics is selected
-(<a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>&gt;=6) and SCF mixing done on density (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&gt;=10),
-<a class="wikilink" href="../../input_variables/varpaw#pawcpxocc">pawcpxocc</a>=2 is (by default) set to <strong> 1 </strong></p>
+(<a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>&gt;=6) and SCF mixing done on density (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&gt;=10),
+<a class="wikilink" href="../../input_variables/varpaw/#pawcpxocc">pawcpxocc</a>=2 is (by default) set to <strong> 1 </strong></p>
 <h2 id="pawcross"><strong>pawcross</strong><a class="headerlink" href="#pawcross" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - add CROSS term in oscillator strengths<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>When <strong> pawcross=1 </strong> , the overlap between the plane-wave part of one band
 and the on-site part of an other is taken into account in the computation of
 the oscillator strengths. Hence, the completeness of the on-site basis is no
@@ -647,15 +647,15 @@ Variable type: real<br />
 Dimensions: scalar<br />
 Default value: -1<br />
 Comment: pawecutdg MUST be specified for PAW calculations.<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Define the energy cut-off for the fine FFT grid (the &ldquo;double grid&rdquo;, that
 allows to transfer data from the normal, coarse, FFT grid to the spherical
 grid around each atom).<br />
-<a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a> must be larger or equal to <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>. If it is equal to it, then
+<a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a> must be larger or equal to <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>. If it is equal to it, then
 no fine grid is used. The results are not very accurate, but the computations
 proceed quite fast.<br />
-For typical PAW computations, where <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is on the order of 15 Ha,
-<a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a> must be tested according to what you want to do. For
+For typical PAW computations, where <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is on the order of 15 Ha,
+<a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a> must be tested according to what you want to do. For
 calculations that do not require a high accuracy (molecular dynamics for
 instance) a value of 20 Ha is enough. For calculations that require a high
 accuracy (response fonctions for instance) it should be on the order of 30 Ha.
@@ -671,10 +671,10 @@ in the log file.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1   </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1   </p>
 <p>For Ground-State calculations and non self-consistent calculations only.<br />
 This option can be used to plot band structure. For each atom (specified by
-<a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> and <a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a>), each angular momentum, and each spin polarisation,
+<a class="wikilink" href="../../input_variables/vargs/#natsph">natsph</a> and <a class="wikilink" href="../../input_variables/vargs/#iatsph">iatsph</a>), each angular momentum, and each spin polarisation,
 the band structure is written in files (such as e.g.
 FATBANDS_at0001_Ni_is2_l2_m-1). Each file contains the eigenvalue, and the
 contribution of angular momentum L, and projection of angular momentum M, (for
@@ -692,10 +692,10 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:  </p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 10<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>The expansion of the densities in angular momenta is performed up to
-l=<a class="wikilink" href="../../input_variables/varpaw#pawlcutd">pawlcutd</a>.<br />
-Note that, for a given system, the maximum value of <a class="wikilink" href="../../input_variables/varpaw#pawlcutd">pawlcutd</a> is <strong> 2*l_max
+l=<a class="wikilink" href="../../input_variables/varpaw/#pawlcutd">pawlcutd</a>.<br />
+Note that, for a given system, the maximum value of <a class="wikilink" href="../../input_variables/varpaw/#pawlcutd">pawlcutd</a> is <strong> 2*l_max
 </strong> , where l_max is the maximum l of the PAW partial waves basis.  </p>
 <p>The choice made for this variable DOES have a bearing on the numerical
 accuracy of the results, and, as such, should be the object of a convergence
@@ -707,7 +707,7 @@ charge inside spheres&rdquo;, a quantity written in the log file.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 10<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>The choice made for this variable determine how the spherical part of the
 density is mixed during electronic iterations.  </p>
 <p>Only parts of rhoij quantities associated with l angular momenta up to
@@ -719,24 +719,24 @@ numerical accuracy of the results.</p>
 <p>Mnemonics: PAW - MIXing is done (or not) on the (fine) Double Grid<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 0 if <a class="wikilink" href="../../input_variables/varpar#npfft">npfft</a>==1,
+Default value: 0 if <a class="wikilink" href="../../input_variables/varpar/#npfft">npfft</a>==1,
 1 otherwise.</p>
-<p>Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+<p>Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>The choice made for this variable determines the grid on which the density (or
 potential) is mixed during the SCF cycle.  </p>
 <p>- If <strong> pawmixdg=1 </strong> the density/potential is mixed in REAL space using the
-fine FFT grid (defined by <a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a> or <a class="wikilink" href="../../input_variables/varpaw#ngfftdg">ngfftdg</a>).<br />
+fine FFT grid (defined by <a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a> or <a class="wikilink" href="../../input_variables/varpaw/#ngfftdg">ngfftdg</a>).<br />
 - If <strong> pawmixdg=0 </strong> the density/potential is mixed in RECIPROCAL space
-using the coarse FFT grid (defined by <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> or <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>). Only components
-of the coarse grid are mixed using the scheme defined by <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>; other
-components are only precondionned by <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a> and simply mixed.<br />
+using the coarse FFT grid (defined by <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> or <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a>). Only components
+of the coarse grid are mixed using the scheme defined by <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>; other
+components are only precondionned by <a class="wikilink" href="../../input_variables/vargs/#diemix">diemix</a> and simply mixed.<br />
 This option is useful to save memory and does not affect numerical accuracy of
 converged results. If <strong> pawmixdg=1 </strong> , density and corresponding residual
-are stored for previous iterations and are REAL arrays of size <a class="wikilink" href="../../input_variables/varint#nfftdg">nfftdg</a>. If
+are stored for previous iterations and are REAL arrays of size <a class="wikilink" href="../../input_variables/varint/#nfftdg">nfftdg</a>. If
 <strong> pawmixdg=0 </strong> , density and corresponding residual are stored for previous
-iterations and are COMPLEX arrays of size <a class="wikilink" href="../../input_variables/varint#nfft">nfft</a>. The memory saving is
-particularly efficient when using the Pulay mixing (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=7 or 17).  </p>
-<p>In <strong> wavelet </strong> calculations <a class="wikilink" href="../../input_variables/varbas#usewvl">usewvl</a>=1:<br />
+iterations and are COMPLEX arrays of size <a class="wikilink" href="../../input_variables/varint/#nfft">nfft</a>. The memory saving is
+particularly efficient when using the Pulay mixing (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>=7 or 17).  </p>
+<p>In <strong> wavelet </strong> calculations <a class="wikilink" href="../../input_variables/varbas/#usewvl">usewvl</a>=1:<br />
 - pawmixdg is set to 1 by default.<br />
 - A value of 0 is not allowed.<br />
 - Density/potential is mixed in REAL space (Here only one grid is used).</p>
@@ -745,14 +745,14 @@ particularly efficient when using the Pulay mixing (<a class="wikilink" href="..
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Relevant only when a GGA exchange-correlation functional is used.<br />
 When this flag is activated, the gradients of compensation charge density
 (n_hat) are exactly computed (i.e. analytically); when it is deactivated, they
 are computed with a numerical scheme in reciprocal space (which can produce
 inaccurate results if the compensation charge density is highly localized).<br />
 As analytical treatment of compensation charge density gradients is CPU time
-demanding, it is possible to bypass it with <a class="wikilink" href="../../input_variables/varpaw#pawnhatxc">pawnhatxc</a>=0; but the numerical
+demanding, it is possible to bypass it with <a class="wikilink" href="../../input_variables/varpaw/#pawnhatxc">pawnhatxc</a>=0; but the numerical
 accuracy can be affected by this choice. It is recommended to test the
 validity of this approximation before use.</p>
 <h2 id="pawnphi"><strong>pawnphi</strong><a class="headerlink" href="#pawnphi" title="Permanent link">&para;</a></h2>
@@ -760,25 +760,25 @@ validity of this approximation before use.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 13<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Number of phi angles (longitude) used to discretize the data on the atomic
-spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/varpaw#pawnphi">pawnphi</a> and
-<a class="wikilink" href="../../input_variables/varpaw#pawntheta">pawntheta</a>.</p>
+spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/varpaw/#pawnphi">pawnphi</a> and
+<a class="wikilink" href="../../input_variables/varpaw/#pawntheta">pawntheta</a>.</p>
 <h2 id="pawntheta"><strong>pawntheta</strong><a class="headerlink" href="#pawntheta" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - Number of THETA angles used to discretize the sphere around each atom.<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 12<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Number of theta angles (latitude) used to discretize the data on the atomic
-spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/varpaw#pawntheta">pawntheta</a> and
-<a class="wikilink" href="../../input_variables/varpaw#pawnphi">pawnphi</a>.</p>
+spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/varpaw/#pawntheta">pawntheta</a> and
+<a class="wikilink" href="../../input_variables/varpaw/#pawnphi">pawnphi</a>.</p>
 <h2 id="pawnzlm"><strong>pawnzlm</strong><a class="headerlink" href="#pawnzlm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Concerns the computation of the contributions to the density from the spheres
 (named rho_1 - rho_tild_1).<br />
 If set to 0, all lm-moments of the sphere contributions to the density are
@@ -792,7 +792,7 @@ thus the first iteration is more cpu intensive)</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>In the case of PAW computations, during the self-consistent cycle, ABINIT
 mixes the density ρ(r)= ∼ρ(r) +∧ρ(r) and the occupancy matrix ρij. (∼ρ(r) is
 the pseudo density, ∧ρ(r) is the compensation charge density). It can be
@@ -811,8 +811,8 @@ algorithm is based on ρ(r) and ρij.</p>
 </ul>
 <p>This has only an influence on the efficiency of the mixing algorithm.<br />
 In cas of mixing problems, the first suggestion is to increase the size of the
-history (see <a class="wikilink" href="../../input_variables/vardev#npulayit">npulayit</a>). Then it is also possible to play with the
-parameters of the Kerker mixing: <a class="wikilink" href="../../input_variables/vargs#diemix">diemix</a>, <a class="wikilink" href="../../input_variables/vargs#diemac">diemac</a>, etc&hellip;</p>
+history (see <a class="wikilink" href="../../input_variables/vardev/#npulayit">npulayit</a>). Then it is also possible to play with the
+parameters of the Kerker mixing: <a class="wikilink" href="../../input_variables/vargs/#diemix">diemix</a>, <a class="wikilink" href="../../input_variables/vargs/#diemac">diemac</a>, etc&hellip;</p>
 <h2 id="pawoptosc"><strong>pawoptosc</strong><a class="headerlink" href="#pawoptosc" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - OPTion for the computation of the OSCillator matrix elements<br />
 Variable type: integer<br />
@@ -821,46 +821,46 @@ Default value: 0  </p>
 <p>Only relevant for <a class="wikilink" href="../../GW/">GW</a> or <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> calculations with PAW.<br />
 This variable defines the approach used for the evaluation of the oscillator
 matrix elements within the PAW formalism. Possible values are 0,1,2.<br />
-If <a class="wikilink" href="../../input_variables/varpaw#pawoptosc">pawoptosc</a>=0 the code uses its internal default value (2 for SCREENING
+If <a class="wikilink" href="../../input_variables/varpaw/#pawoptosc">pawoptosc</a>=0 the code uses its internal default value (2 for SCREENING
 calculations, 1 for SIGMA calculations, 2 for <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a>)<br />
-If <a class="wikilink" href="../../input_variables/varpaw#pawoptosc">pawoptosc</a>=1 the matrix elements are computed with the expression given
+If <a class="wikilink" href="../../input_variables/varpaw/#pawoptosc">pawoptosc</a>=1 the matrix elements are computed with the expression given
 by Arnaud and Alouani in PRB 62. 4464 The equation is exact provided that the
 set of PAW partial waves is complete.<br />
-If <a class="wikilink" href="../../input_variables/varpaw#pawoptosc">pawoptosc</a>=2 the matrix elements are computed with the approximated
+If <a class="wikilink" href="../../input_variables/varpaw/#pawoptosc">pawoptosc</a>=2 the matrix elements are computed with the approximated
 expression proposed by Shishkin and Kresse in PRB 74. 035101</p>
 <h2 id="pawovlp"><strong>pawovlp</strong><a class="headerlink" href="#pawovlp" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - spheres OVerLaP allowed (in percentage)<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 5.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>When PAW is activated, a localized atomic basis is added to describe wave
 functions. Spheres around atoms are defined and they are IN PRINCIPLE not
 allowed to overlap. However, a small overlap can be allowed without
 compromising the accuracy of results. Be aware that too high overlaps can lead
 to unphysical results.<br />
-With the <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a> variable, the user can control the (voluminal) overlap
+With the <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a> variable, the user can control the (voluminal) overlap
 percentage allowed without stopping the execution.<br />
-<a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a> is the value (in percentage: 0&hellip;100%) obtained by dividing the
+<a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a> is the value (in percentage: 0&hellip;100%) obtained by dividing the
 volume of the overlap of two spheres by the volume of the smallest sphere.<br />
-The following values are permitted for <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a>:  </p>
-<p>- <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a>&lt;0. : overlap is always allowed<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a>=0. : no overlap is allowed<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a>&gt;0. and &lt;100. : overlap is allowed only if it is less
-than <a class="wikilink" href="../../input_variables/varpaw#pawovlp">pawovlp</a> %</p>
+The following values are permitted for <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a>:  </p>
+<p>- <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a>&lt;0. : overlap is always allowed<br />
+- <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a>=0. : no overlap is allowed<br />
+- <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a>&gt;0. and &lt;100. : overlap is allowed only if it is less
+than <a class="wikilink" href="../../input_variables/varpaw/#pawovlp">pawovlp</a> %</p>
 <h2 id="pawprtden"><strong>pawprtden</strong><a class="headerlink" href="#pawprtden" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW: PRinT total physical electron DENsity<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
-<p><strong> Deprecated : </strong> See the <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a>. </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
+<p><strong> Deprecated : </strong> See the <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a>. </p>
 <h2 id="pawprtdos"><strong>pawprtdos</strong><a class="headerlink" href="#pawprtdos" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW: PRinT partial DOS contributions<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>==3  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>==3  </p>
 <p>This input variable controls the computation and/or printing of contributions
 to the PAW partial DOS in _DOS file(s):  </p>
 <p>+ Plane-waves contribution<br />
@@ -878,40 +878,40 @@ file.<br />
 - This a (very) good approximation of total DOS, provided that (1) the PAW
 local basis is complete, (2) the electronic charge is mostly contained in PAW
 spheres.<br />
-- In that case, the <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a> variable is automatically set to the PAW
+- In that case, the <a class="wikilink" href="../../input_variables/vargs/#ratsph">ratsph</a> variable is automatically set to the PAW
 radius.</p>
 <h2 id="pawprtvol"><strong>pawprtvol</strong><a class="headerlink" href="#pawprtvol" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW: PRinT VOLume<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Control print volume and debugging output for PAW in log file or standard
 output. If set to 0, the print volume is at its minimum.<br />
-<a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a> can have values from -3 to 3:<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a>=-1 or 1: matrices rho_ij (atomic occupancies) and D_ij (psp
+<a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a> can have values from -3 to 3:<br />
+- <a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a>=-1 or 1: matrices rho_ij (atomic occupancies) and D_ij (psp
 strength) are printed at each SCF cycle with details about their
 contributions.<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a>=-2 or 2: like -1 or 1 plus additional printing: moments of
+- <a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a>=-2 or 2: like -1 or 1 plus additional printing: moments of
 &ldquo;on-site&rdquo; densities, details about local exact exchange.<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a>=-3 or 3: like -2 or 2 plus additional printing: details about
+- <a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a>=-3 or 3: like -2 or 2 plus additional printing: details about
 PAW+U, rotation matrices of sphercal harmonics.<br />
-When <a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a>&gt;=0, up to 12 components of rho_ij and D_ij matrices for
+When <a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a>&gt;=0, up to 12 components of rho_ij and D_ij matrices for
 the 1st and last atom are printed.<br />
-When <a class="wikilink" href="../../input_variables/varpaw#pawprtvol">pawprtvol</a>&lt;0, all components of rho_ij and D_ij matrices for all
+When <a class="wikilink" href="../../input_variables/varpaw/#pawprtvol">pawprtvol</a>&lt;0, all components of rho_ij and D_ij matrices for all
 atoms are printed.  </p>
 <h2 id="pawprtwf"><strong>pawprtwf</strong><a class="headerlink" href="#pawprtwf" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW: PRinT WaveFunctions<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>This input variable controls the output of the full PAW wave functions
 including the on-site contribution inside each PAW sphere needed to
 reconstruct the correct nodal shape in the augmentation region. <strong> pawprtwf=1
 </strong> causes the generation of a file _AE_WFK that contains the full
-wavefunctions in real space on the fine FFT grid defined by <a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a> or
-<a class="wikilink" href="../../input_variables/varpaw#ngfftdg">ngfftdg</a>. Limitations: At present (v6.0), <strong> pawprtwf=1 </strong> is not
+wavefunctions in real space on the fine FFT grid defined by <a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a> or
+<a class="wikilink" href="../../input_variables/varpaw/#ngfftdg">ngfftdg</a>. Limitations: At present (v6.0), <strong> pawprtwf=1 </strong> is not
 compatible neither with the k-point parallelism nor with the parallelism over
 G-vectors. Therefore the output of the _AE_WFK has to be done in sequential.
 Moreover, in order to use this feature, one has to enable the support for
@@ -920,50 +920,50 @@ format following the ETSF-IO specification for wavefunctions in real space. If
 the code is run entirely in serial, additional output is made of various
 contributions to the all-electron wavefunction. By default the full available
 set of bands and k-points are ouput, but a single band and k-point index can
-be requested by using the variables <a class="wikilink" href="../../input_variables/vardev#pawprt_b">pawprt_b</a> and <a class="wikilink" href="../../input_variables/vardev#pawprt_k">pawprt_k</a>.</p>
+be requested by using the variables <a class="wikilink" href="../../input_variables/vardev/#pawprt_b">pawprt_b</a> and <a class="wikilink" href="../../input_variables/vardev/#pawprt_k">pawprt_k</a>.</p>
 <h2 id="pawspnorb"><strong>pawspnorb</strong><a class="headerlink" href="#pawspnorb" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - option for SPiN-ORBit coupling<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 1 if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==2,
+Default value: 1 if <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>==2,
 0 otherwise.</p>
-<p>Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+<p>Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>When PAW is activated, the <strong> spin-orbit coupling </strong> can be added without the
 use of specific PAW datasets (pseudopotentials).<br />
-If <a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>=1, spin-orbit will be added.<br />
-If the wavefunction is spinorial (that is, if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2), there is no
+If <a class="wikilink" href="../../input_variables/varpaw/#pawspnorb">pawspnorb</a>=1, spin-orbit will be added.<br />
+If the wavefunction is spinorial (that is, if <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=2), there is no
 reason not to include the spin-orbit interaction, so that the default value of
-<a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a> becomes 1 when <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>=2.<br />
+<a class="wikilink" href="../../input_variables/varpaw/#pawspnorb">pawspnorb</a> becomes 1 when <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>=2.<br />
 Note that only the all-electron &ldquo;on-site&rdquo; contribution to the Hamiltonian is
 taken into account; this is a very good approximation but requires the
 following conditions to be fullfilled:  </p>
 <p>1- the  ~  φ i  basis is complete enough<br />
 2- the electronic density is mainly contained in the PAW sphere  </p>
 <p>Also note that, when spin-orbit coupling is activated and there is some
-magnetization <a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>=4, the time-reversal symmetry is broken.<br />
-The use of <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=1 or <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=2 is thus forbidden. It is advised to
-use <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=3 (no symmetry used to generate k-points) or <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=4 (only
+magnetization <a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>=4, the time-reversal symmetry is broken.<br />
+The use of <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=1 or <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=2 is thus forbidden. It is advised to
+use <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=3 (no symmetry used to generate k-points) or <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=4 (only
 spatial symmetries used to generate k-points).<br />
-Be careful if you choose to use <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=0 (k-points given by hand); Time-
+Be careful if you choose to use <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=0 (k-points given by hand); Time-
 reversal symmetry has to be avoided.<br />
 An artificial scaling of the spin-orbit can be introduced thanks to the
-<a class="wikilink" href="../../input_variables/varpaw#spnorbscl">spnorbscl</a> input variable.</p>
+<a class="wikilink" href="../../input_variables/varpaw/#spnorbscl">spnorbscl</a> input variable.</p>
 <h2 id="pawstgylm"><strong>pawstgylm</strong><a class="headerlink" href="#pawstgylm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - option for the STorage of G_l(r).YLM(r)<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>=1  </p>
 <p>When PAW is activated, the computation of compensation charge density (so
 called &ldquo;hat&rdquo; density) requires the computation of g_l(r).Y_lm(r) factors (and
 cartesian derivatives) at each point of real space contained in PAW spheres.
 The number of atoms, of (l,m) quantum numbers and the sharpness of the real
 FFT grid can lead to a very big {g_l.Y_lm} datastructure. One can save memory
-by putting <a class="wikilink" href="../../input_variables/varpaw#pawstgylm">pawstgylm</a>=0; but, in that case, g_l(r).Y_lm(r) factors a re-
+by putting <a class="wikilink" href="../../input_variables/varpaw/#pawstgylm">pawstgylm</a>=0; but, in that case, g_l(r).Y_lm(r) factors a re-
 computed each time they are needed and CPU time increases.  </p>
 <p>Possible choices:<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawstgylm">pawstgylm</a>=0 : g_l(r).Y_lm(r) are not stored in memory and recomputed.<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawstgylm">pawstgylm</a>=1 : g_l(r).Y_lm(r) are stored in memory.  </p>
+- <a class="wikilink" href="../../input_variables/varpaw/#pawstgylm">pawstgylm</a>=0 : g_l(r).Y_lm(r) are not stored in memory and recomputed.<br />
+- <a class="wikilink" href="../../input_variables/varpaw/#pawstgylm">pawstgylm</a>=1 : g_l(r).Y_lm(r) are stored in memory.  </p>
 <p>Note:<br />
 g_l(r) are shape functions (analytically known)<br />
 Y_lm(r) are real spherical harmonics</p>
@@ -972,31 +972,31 @@ Y_lm(r) are real spherical harmonics</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==0   </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==0   </p>
 <p>Ground-State calculation only.<br />
 When a sophisticated preconditioning scheme is selected for the SCF cycle of a
-Ground-State calculation (<a class="wikilink" href="../../input_variables/vargs#iprcel">iprcel</a>&gt;0), the computation of the
+Ground-State calculation (<a class="wikilink" href="../../input_variables/vargs/#iprcel">iprcel</a>&gt;0), the computation of the
 susceptibility matrix is required several times during the cycle. This
 computation is computer time consuming, especially -- within PAW &ndash; because
 of the inclusion of additional terms due to the compensation charge density.
 As only a crude valuation of the susceptibilty matrix is needed (to evaluate a
 preconditioning matrix), the compensation charge contribution can be neglected
-to save CPU time (select <a class="wikilink" href="../../input_variables/varpaw#pawsushat">pawsushat</a>=0). This approximation could be
-unfavourable in some cases; in the latter, we advise to put <a class="wikilink" href="../../input_variables/varpaw#pawsushat">pawsushat</a>=1.  </p>
+to save CPU time (select <a class="wikilink" href="../../input_variables/varpaw/#pawsushat">pawsushat</a>=0). This approximation could be
+unfavourable in some cases; in the latter, we advise to put <a class="wikilink" href="../../input_variables/varpaw/#pawsushat">pawsushat</a>=1.  </p>
 <p>Possible choices:<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawsushat">pawsushat</a>=0 : only plane-wave contribution to suscep. matrix is
+- <a class="wikilink" href="../../input_variables/varpaw/#pawsushat">pawsushat</a>=0 : only plane-wave contribution to suscep. matrix is
 computed.<br />
-- <a class="wikilink" href="../../input_variables/varpaw#pawsushat">pawsushat</a>=1 : the whole suscep. matrix (PW + PAW on-site) is computed.  </p>
+- <a class="wikilink" href="../../input_variables/varpaw/#pawsushat">pawsushat</a>=1 : the whole suscep. matrix (PW + PAW on-site) is computed.  </p>
 <h2 id="pawusecp"><strong>pawusecp</strong><a class="headerlink" href="#pawusecp" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>When PAW is activated, the computation of cprj arrays is memory and time
 consuming.<br />
-When <a class="wikilink" href="../../input_variables/varpaw#pawusecp">pawusecp</a>=0, then the cprj are never kept in memory, they are
-recomputed when needed (this is CPU-time consuming). When <a class="wikilink" href="../../input_variables/varpaw#pawusecp">pawusecp</a>=1, then
+When <a class="wikilink" href="../../input_variables/varpaw/#pawusecp">pawusecp</a>=0, then the cprj are never kept in memory, they are
+recomputed when needed (this is CPU-time consuming). When <a class="wikilink" href="../../input_variables/varpaw/#pawusecp">pawusecp</a>=1, then
 the cprj are computed once and then kept in memory.<br />
 Change the value of the keyword only if you are an experienced user
 (developper).<br />
@@ -1008,30 +1008,30 @@ projector).  </p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <ul>
 <li>If set to 0, the exchange-correlation term in the spherical part of energy is totally computed on the angular mesh </li>
 <li>If set to 1, the exchange-correlation term in the spherical part of energy is developed onto lm-moments at order 1 </li>
 <li>If set to 2, the exchange-correlation term in the spherical part of energy is developed onto lm-moments at order 2 (can be memory/CPU consuming) </li>
 </ul>
-<p>Be careful: GGA requires <a class="wikilink" href="../../input_variables/varpaw#pawxcdev">pawxcdev</a> &gt; 0</p>
+<p>Be careful: GGA requires <a class="wikilink" href="../../input_variables/varpaw/#pawxcdev">pawxcdev</a> &gt; 0</p>
 <h2 id="prtefg"><strong>prtefg</strong><a class="headerlink" href="#prtefg" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRint Electric Field Gradient<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1, <a class="wikilink" href="../../input_variables/varpaw#quadmom">quadmom</a>  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1, <a class="wikilink" href="../../input_variables/varpaw/#quadmom">quadmom</a>  </p>
 <ul>
-<li>If nonzero, calculate the electric field gradient at each atomic site in the unit cell. Using this option requires <a class="wikilink" href="../../input_variables/varpaw#quadmom">quadmom</a> to be set as well. Values will be written to main output file (search for Electric Field Gradient). If prtefg=1, only the quadrupole coupling in MHz and asymmetry are reported. If prtefg=2, the full electric field gradient tensors in atomic units are also given, showing separate contributions from the valence electrons, the ion cores, and the PAW reconstruction. If prtefg=3, then in addition to the prtefg=2 output, the EFGs are computed using an ionic point charge model. This is useful for comparing the accurate PAW-based results to those of simple ion-only models. Use of prtefg=3 requires that the variable <a class="wikilink" href="../../input_variables/varpaw#ptcharge">ptcharge</a> be set as well. <br />
+<li>If nonzero, calculate the electric field gradient at each atomic site in the unit cell. Using this option requires <a class="wikilink" href="../../input_variables/varpaw/#quadmom">quadmom</a> to be set as well. Values will be written to main output file (search for Electric Field Gradient). If prtefg=1, only the quadrupole coupling in MHz and asymmetry are reported. If prtefg=2, the full electric field gradient tensors in atomic units are also given, showing separate contributions from the valence electrons, the ion cores, and the PAW reconstruction. If prtefg=3, then in addition to the prtefg=2 output, the EFGs are computed using an ionic point charge model. This is useful for comparing the accurate PAW-based results to those of simple ion-only models. Use of prtefg=3 requires that the variable <a class="wikilink" href="../../input_variables/varpaw/#ptcharge">ptcharge</a> be set as well. <br />
 The option prtefg is compatible with spin polarized calculations (see
-<a class="wikilink" href="../../input_variables/vargs#nspden">nspden</a>) and also LDA+U (see <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>).</li>
+<a class="wikilink" href="../../input_variables/vargs/#nspden">nspden</a>) and also LDA+U (see <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>).</li>
 </ul>
 <h2 id="prtfc"><strong>prtfc</strong><a class="headerlink" href="#prtfc" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT Fermi Contact term<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <ul>
 <li>If set to 1, print the Fermi contact interaction at each nuclear site, that is, the electron density at each site. The result appears in the main output file (search for FC). Note that this calculation is different than what is done by cut3d, because it also computes the PAW on-site corrections in addition to the contribution from the valence pseudo-wavefunctions. </li>
 </ul>
@@ -1040,34 +1040,34 @@ Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <ul>
 <li>If set to 1, calculate the matrix elements &lt;Psi_n|-inabla|Psi_m&gt; and write it in file _OPT to be read by the code conducti. </li>
 </ul>
 <h2 id="ptcharge"><strong>ptcharge</strong><a class="headerlink" href="#ptcharge" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PoinT CHARGEs<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: *0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a>&gt;=3   </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a>&gt;=3   </p>
 <ul>
-<li>Array of point charges, in atomic units, of the nuclei. In the normal computation of electric field gradients (see <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a>) the ionic contribution is calculated from the core charges of the atomic sites. Thus for example in a PAW data set for oxygen where the core is 1s2, the core charge is +6 (total nuclear charge minus core electron charge). In point charge models, which are much less accurate than PAW calculations, all atomic sites are treated as ions with charges determined by their valence states. In such a case oxygen almost always would have a point charge of -2. The present variable taken together with <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a> performs a full PAW computation of the electric field gradient and also a simple point charge computation. The user inputs whatever point charges he/she wishes for each atom type. </li>
+<li>Array of point charges, in atomic units, of the nuclei. In the normal computation of electric field gradients (see <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a>) the ionic contribution is calculated from the core charges of the atomic sites. Thus for example in a PAW data set for oxygen where the core is 1s2, the core charge is +6 (total nuclear charge minus core electron charge). In point charge models, which are much less accurate than PAW calculations, all atomic sites are treated as ions with charges determined by their valence states. In such a case oxygen almost always would have a point charge of -2. The present variable taken together with <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a> performs a full PAW computation of the electric field gradient and also a simple point charge computation. The user inputs whatever point charges he/she wishes for each atom type. </li>
 </ul>
 <h2 id="quadmom"><strong>quadmom</strong><a class="headerlink" href="#quadmom" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: QUADrupole MOMents<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: *0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a>&gt;=1   </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a>&gt;=1   </p>
 <ul>
-<li>Array of quadrupole moments, in barns, of the nuclei. These values are used in conjunction with the electric field gradients computed with <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a> to calculate the quadrupole couplings in MHz, as well as the asymmetries. Note that the electric field gradient at a nuclear site is independent of the nuclear quadrupole moment, thus the quadrupole moment of a nucleus can be input as 0, and the option <a class="wikilink" href="../../input_variables/varpaw#prtefg">prtefg</a>=2 used to determine the electric field gradient at the site. </li>
+<li>Array of quadrupole moments, in barns, of the nuclei. These values are used in conjunction with the electric field gradients computed with <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a> to calculate the quadrupole couplings in MHz, as well as the asymmetries. Note that the electric field gradient at a nuclear site is independent of the nuclear quadrupole moment, thus the quadrupole moment of a nucleus can be input as 0, and the option <a class="wikilink" href="../../input_variables/varpaw/#prtefg">prtefg</a>=2 used to determine the electric field gradient at the site. </li>
 </ul>
 <h2 id="spnorbscl"><strong>spnorbscl</strong><a class="headerlink" href="#spnorbscl" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: SPin-ORBit SCaLing<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#pawspnorb">pawspnorb</a>&gt;= 1   </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#pawspnorb">pawspnorb</a>&gt;= 1   </p>
 <p>Scaling of the spin-orbit interaction. The default values gives the first-
 principles value, while other values are used for the analysis of the effect
 of the spin-orbit interaction, but are not expected to correspond to any
@@ -1075,13 +1075,13 @@ physical situation.</p>
 <h2 id="upawu"><strong>upawu</strong><a class="headerlink" href="#upawu" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: value of U for PAW+U<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>)<br />
 Default value: *0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1  </p>
 <p>Gives the value of the screened coulomb interaction between correlated
-electrons corresponding to <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> for each species.<br />
-In the case where <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a> =-1, the value is not used.<br />
-In the case of a <a class="wikilink" href="../../GW/">GW</a> calculation, the U interaction defined by <a class="wikilink" href="../../input_variables/varpaw#upawu">upawu</a>
+electrons corresponding to <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> for each species.<br />
+In the case where <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a> =-1, the value is not used.<br />
+In the case of a <a class="wikilink" href="../../GW/">GW</a> calculation, the U interaction defined by <a class="wikilink" href="../../input_variables/varpaw/#upawu">upawu</a>
 will be REMOVED from the self energy. In particular, for G0 W0 calculations
 (perturbative calculations), the energy eigenvalues obtained after an
 underlying DFT+U calculation will be<br />
@@ -1113,9 +1113,9 @@ uldau4   5.5 eV   ! This is for the screening calculation
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>==1  </p>
-<p>When <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>/=0, an initial density matrix (given by <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a>
-keyword) is used and kept fixed during the first ABS(<a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>) SCF steps.<br />
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>==1  </p>
+<p>When <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>/=0, an initial density matrix (given by <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a>
+keyword) is used and kept fixed during the first ABS(<a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>) SCF steps.<br />
 This starting value of the density matrix can be useful to find the correct
 ground state. Within LDA+U formalism, finding the minimal energy of the system
 is tricky; thus it is advised to test several values of the initial density
@@ -1123,27 +1123,27 @@ matrix.<br />
 Note also that the density matrix has to respect some symmetry rules
 determined by the space group. If the symmetry is not respected in the input,
 the matrix is however automatically symmetrised.  </p>
-<p>The sign of <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a> has influence only when <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>/=0 (dynamics or
+<p>The sign of <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a> has influence only when <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>/=0 (dynamics or
 relaxation):<br />
-- When <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>&gt;0, the density matrix is kept constant only at first
+- When <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>&gt;0, the density matrix is kept constant only at first
 ionic step<br />
-- When <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>&lt;0, the density matrix is kept constant at each ionic
+- When <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>&lt;0, the density matrix is kept constant at each ionic
 step  </p>
 <h2 id="useexexch"><strong>useexexch</strong><a class="headerlink" href="#useexexch" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: USE of EXact EXCHange<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
-<p>When <a class="wikilink" href="../../input_variables/varpaw#useexexch">useexexch</a>=1, the hybrid functional PBE0 is used in PAW, inside PAW
-spheres only, and only for correlated orbitals given by <a class="wikilink" href="../../input_variables/varpaw#lexexch">lexexch</a>. To change
-the ratio of exact exchange, see also <a class="wikilink" href="../../input_variables/vardev#exchmix">exchmix</a>.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
+<p>When <a class="wikilink" href="../../input_variables/varpaw/#useexexch">useexexch</a>=1, the hybrid functional PBE0 is used in PAW, inside PAW
+spheres only, and only for correlated orbitals given by <a class="wikilink" href="../../input_variables/varpaw/#lexexch">lexexch</a>. To change
+the ratio of exact exchange, see also <a class="wikilink" href="../../input_variables/vardev/#exchmix">exchmix</a>.</p>
 <h2 id="usepawu"><strong>usepawu</strong><a class="headerlink" href="#usepawu" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: USE PAW+U (spherical part)<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>Must be non-zero if a DFT+U calculation is done, or if a <a class="wikilink" href="../../GW/">GW</a> calculation
 following a DFT+U calculation is done (important !).</p>
 <ul>
@@ -1154,19 +1154,19 @@ following a DFT+U calculation is done (important !).</p>
 <p>If set to 1 or 2, the LDA+U method (cf [1]) is used. The full rotationally invariant formulation is used (see Eq. (3) of Ref [2]) for the interaction term of the energy. Two choices are allowed concerning the double counting term:   </p>
 <ul>
 <li>
-<p>If <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>=1, the Full Localized Limit (FLL) (or Atomic limit) double counting is used (cf Eq. (4) of Ref.[2] or Eq. (8) of Ref[3]).   </p>
+<p>If <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>=1, the Full Localized Limit (FLL) (or Atomic limit) double counting is used (cf Eq. (4) of Ref.[2] or Eq. (8) of Ref[3]).   </p>
 </li>
 <li>
-<p>If <a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>=2, the Around Mean Field (AMF) double counting is used (cf Eq. (7) of Ref [3]). Not valid if nspinor=2.   </p>
+<p>If <a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>=2, the Around Mean Field (AMF) double counting is used (cf Eq. (7) of Ref [3]). Not valid if nspinor=2.   </p>
 </li>
 </ul>
 </li>
 </ul>
-<p>If LDA+U is activated (<a class="wikilink" href="../../input_variables/varpaw#usepawu">usepawu</a>=1 or 2), the <a class="wikilink" href="../../input_variables/varpaw#lpawu">lpawu</a>, <a class="wikilink" href="../../input_variables/varpaw#upawu">upawu</a> and
-<a class="wikilink" href="../../input_variables/varpaw#jpawu">jpawu</a> input variables are read.<br />
+<p>If LDA+U is activated (<a class="wikilink" href="../../input_variables/varpaw/#usepawu">usepawu</a>=1 or 2), the <a class="wikilink" href="../../input_variables/varpaw/#lpawu">lpawu</a>, <a class="wikilink" href="../../input_variables/varpaw/#upawu">upawu</a> and
+<a class="wikilink" href="../../input_variables/varpaw/#jpawu">jpawu</a> input variables are read.<br />
 The implementation is done inside PAW augmentation regions only (cf Ref [4]).
-The initial density matrix can be given in the input file (see <a class="wikilink" href="../../input_variables/varpaw#usedmatpu">usedmatpu</a>).
-The expression of the density matrix is chosen thanks to <a class="wikilink" href="../../input_variables/varpaw#dmatpuopt">dmatpuopt</a>. See
+The initial density matrix can be given in the input file (see <a class="wikilink" href="../../input_variables/varpaw/#usedmatpu">usedmatpu</a>).
+The expression of the density matrix is chosen thanks to <a class="wikilink" href="../../input_variables/varpaw/#dmatpuopt">dmatpuopt</a>. See
 also <a href="../../../users/How_to_use_LDA_plus_U.txt"> How_to_use_LDA_plus_U.txt </a> .
 for some informations.<br />
 In the case of a <a class="wikilink" href="../../GW/">GW</a> calculation on top of a DFT+U, the absence of
@@ -1185,7 +1185,7 @@ wavefunctions will be different anyhow).<br />
 It is possible to perform calculations of the type <a class="wikilink" href="../../GW/">GW</a>+U_prime @ DFT+U , so
 keeping a smaller U interaction in the <a class="wikilink" href="../../GW/">GW</a> calculation, by subtracting a
 smaller U than the one used in the DFT calculation. See the description of the
-<a class="wikilink" href="../../input_variables/varpaw#upawu">upawu</a> input variable.<br />
+<a class="wikilink" href="../../input_variables/varpaw/#upawu">upawu</a> input variable.<br />
 References:<br />
 [1] V. I. Anisimov, J. Zaanen, and O. K. Andersen PRB 44, 943 (1991)<br />
 [2] A.I. Lichtenstein, V.I. Anisimov and J. Zaanen PRB 52, 5467 (1995)<br />
@@ -1199,23 +1199,23 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varpaw#usepotzero">usepotzero</a>=0, the usual convention: the smooth potential is set to zero averarage value. </li>
-<li><a class="wikilink" href="../../input_variables/varpaw#usepotzero">usepotzero</a>=1, the new convention: the physical potential is set to zero average value. </li>
-<li><a class="wikilink" href="../../input_variables/varpaw#usepotzero">usepotzero</a>=2, the PWscf convention: the potential of equivalent point charges is set to zero average value (convention also valid for NC pseudopotentials). </li>
+<li><a class="wikilink" href="../../input_variables/varpaw/#usepotzero">usepotzero</a>=0, the usual convention: the smooth potential is set to zero averarage value. </li>
+<li><a class="wikilink" href="../../input_variables/varpaw/#usepotzero">usepotzero</a>=1, the new convention: the physical potential is set to zero average value. </li>
+<li><a class="wikilink" href="../../input_variables/varpaw/#usepotzero">usepotzero</a>=2, the PWscf convention: the potential of equivalent point charges is set to zero average value (convention also valid for NC pseudopotentials). </li>
 </ul>
 <h2 id="usexcnhat"><strong>usexcnhat</strong><a class="headerlink" href="#usexcnhat" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: USE eXchange-Correlation with NHAT (compensation charge density)<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: -1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
 <p>This flag determines how the exchange-correlation terms are computed for the
 pseudo-density.<br />
-When <a class="wikilink" href="../../input_variables/varpaw#usexcnhat">usexcnhat</a>=0, exchange-correlation potential does not include the
+When <a class="wikilink" href="../../input_variables/varpaw/#usexcnhat">usexcnhat</a>=0, exchange-correlation potential does not include the
 compensation charge density, i.e. Vxc=Vxc(tild_Ncore + tild_Nvalence).<br />
-When <a class="wikilink" href="../../input_variables/varpaw#usexcnhat">usexcnhat</a>=1, exchange-correlation potential includes the compensation
+When <a class="wikilink" href="../../input_variables/varpaw/#usexcnhat">usexcnhat</a>=1, exchange-correlation potential includes the compensation
 charge density, i.e. Vxc=Vxc(tild_Ncore + tild_Nvalence + hat_N).<br />
-When <a class="wikilink" href="../../input_variables/varpaw#usexcnhat">usexcnhat</a>=-1,the value of <a class="wikilink" href="../../input_variables/varpaw#usexcnhat">usexcnhat</a> is determined from the
+When <a class="wikilink" href="../../input_variables/varpaw/#usexcnhat">usexcnhat</a>=-1,the value of <a class="wikilink" href="../../input_variables/varpaw/#usexcnhat">usexcnhat</a> is determined from the
 reading of the PAW dataset file (pseudopotential file). When PAW datasets with
 different treatment of Vxc are used in the same run, the code stops.</p></div>
         </div>
@@ -1231,6 +1231,8 @@ different treatment of Vxc are used in the same run, the code stops.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1258,6 +1260,7 @@ different treatment of Vxc are used in the same run, the code stops.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

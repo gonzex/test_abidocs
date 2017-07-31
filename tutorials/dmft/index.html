@@ -419,18 +419,18 @@ several processors).</p>
 systems. Generally, these highly correlated materials contain rare-earth
 metals or transition metals, which have partially filled <em>d</em> or <em>f</em> bands and
 thus localized electrons. For further information on this method, please refer
-to <a class="wikilink" href="../../bibliography#Georges1996">Georges1996</a> and <a class="wikilink" href="../../bibliography#Kotliar2006">Kotliar2006</a>. For an introduction to Many Body
+to <a class="wikilink" href="../../bibliography/#Georges1996">Georges1996</a> and <a class="wikilink" href="../../bibliography/#Kotliar2006">Kotliar2006</a>. For an introduction to Many Body
 Physics (Green&rsquo;s function, Self-energy, imaginary time, and Matsubara
-frequencies), see e.g. <a class="wikilink" href="../../bibliography#Coleman2015">Coleman2015</a> and <a class="wikilink" href="../../bibliography#Tremblay2017">Tremblay2017</a>.</p>
+frequencies), see e.g. <a class="wikilink" href="../../bibliography/#Coleman2015">Coleman2015</a> and <a class="wikilink" href="../../bibliography/#Tremblay2017">Tremblay2017</a>.</p>
 <p>Several parameters (both physical and technical) needs to be discussed for a
 DFT+DMFT calculation.</p>
 <ul>
-<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>, and <a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandi</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a href="../../../input_variables/generated_files/vardev.html#nnsclo">nnsclo</a>, and <a href="../../../input_variables/generated_files/vargs.html#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink" href="../../bibliography#Amadon2008a">Amadon2008a</a>). The relation between the two expressions is briefly discussed in <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>. </li>
+<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>, and <a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandi</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a href="../../../input_variables/generated_files/vardev.html#nnsclo">nnsclo</a>, and <a href="../../../input_variables/generated_files/vargs.html#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink" href="../../bibliography/#Amadon2008a">Amadon2008a</a>). The relation between the two expressions is briefly discussed in <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>. </li>
 <li>The definition of the Coulomb and exchange interaction U and J are done as in DFT+U through the variables <a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a> and <a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>. They could be computed with the cRPA method, also available in ABINIT. The value of U and J should in principle depend on the definition of correlated orbitals. In this tutorial, U and J will be seen as parameters, as in the DFT+U approach. As in DFT+U, two double counting methods are available (see the <a href="../../../input_variables/generated_files/vardmft.html#dmft_dc">dmft_dc</a> input variable). Note that in version 7.10.5 (but not in later versions) <a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>=0 is required if the density matrix in the correlated subspace is not diagonal. </li>
 <li>The choice of the double counting correction. The current default choice in ABINIT is (<a href="../../../input_variables/generated_files/vardmft.html#dmft_dc">dmft_dc</a>=1) which corresponds to the full localized limit. </li>
 <li>The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=2) the Continuous time Quantum Monte Carlo (CTQMC) method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=5) or the static mean field method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=1) equivalent to usual DFT+U. </li>
 <li>The solution of the Anderson Hamiltonian and the DMFT solution are strongly dependent over temperature. So the temperature <a href="../../../input_variables/generated_files/vargs.html#tsmear">tsmear</a> is a very important physical parameter of the calculation. </li>
-<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green&rsquo;s function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a href="../../../input_variables/generated_files/vardmft.html#dmft_iter">dmft_iter</a> and <a href="../../../input_variables/generated_files/varbas.html#nstep">nstep</a>. Other useful variables are <a href="../../../input_variables/generated_files/vardmft.html#dmft_rslf">dmft_rslf</a>=1 and <a href="../../../input_variables/generated_files/varfil.html#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwli">dmft_nwli</a> and <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a href="../../../input_variables/generated_files/varpaw.html#pawprtvol">pawprtvol</a>=3. </li>
+<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green&rsquo;s function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a href="../../../input_variables/generated_files/vardmft.html#dmft_iter">dmft_iter</a> and <a href="../../../input_variables/generated_files/varbas.html#nstep">nstep</a>. Other useful variables are <a href="../../../input_variables/generated_files/vardmft.html#dmft_rslf">dmft_rslf</a>=1 and <a href="../../../input_variables/generated_files/varfil.html#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwli">dmft_nwli</a> and <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a href="../../../input_variables/generated_files/varpaw.html#pawprtvol">pawprtvol</a>=3. </li>
 </ul>
 <hr />
 <h3 id="2-electronic-structure-of-srvo3-in-lda"><strong>2. Electronic Structure of SrVO3 in LDA </strong><a class="headerlink" href="#2-electronic-structure-of-srvo3-in-lda" title="Permanent link">&para;</a></h3>
@@ -478,7 +478,7 @@ already avaialble on your machine).</p>
 
 <p><img alt="FatbandV" src="../../documents/lesson_dmft/fatbandO.jpg" /><br />
 In these plots, you recover the band structure of SrVO3 (see for comparison
-the band structure of Fig.3 of <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>). , and the main character of
+the band structure of Fig.3 of <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>). , and the main character of
 the bands. Bands 21 to 25 are mainly <em>d</em> and bands 12 to 20 are mainly oxygen
 <em>p</em>. However, we clearly see an important hybridization. The Fermi level (at 0
 eV) is in the middle of bands 21-23.</p>
@@ -531,8 +531,8 @@ calculation.</p>
 <p>Notice the other dmft variables used in the input file and check their meaning
 in the input variable glossary. In particular, we are using dmft_solv=5 for
 the dmft dataset in order to use the density-density continuous time quantum
-monte carlo (CTQMC) solver. (See <a class="wikilink" href="../../bibliography#Gull2011">Gull2011</a>, as well as the ABINIT 2016
-paper <a class="wikilink" href="../../bibliography#Gonze2016">Gonze2016</a> for details about the CTQMC implementation in ABINIT.)<br />
+monte carlo (CTQMC) solver. (See <a class="wikilink" href="../../bibliography/#Gull2011">Gull2011</a>, as well as the ABINIT 2016
+paper <a class="wikilink" href="../../bibliography/#Gonze2016">Gonze2016</a> for details about the CTQMC implementation in ABINIT.)<br />
 Note that the number of imaginary frequencies
 <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a> has
 to be set to at least twice the value of
@@ -548,12 +548,12 @@ especially
 (<a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a>) and J
 (<a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>). The values
 of U and J used in ABINIT in DMFT use the same convention as in DFT+U
-calculations in ABINIT (cf <a class="wikilink" href="../../bibliography#Amadon2008a">Amadon2008a</a>). However, calculations in Ref.
-<a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a> use for U and J the usual convention for _ t2g _ systems as
-found in <a class="wikilink" href="../../bibliography#Lechermann2006">Lechermann2006</a>, Eq. 26 (see also the appendix in
-<a class="wikilink" href="../../bibliography#Fresard1997">Fresard1997</a>). It corresponds to the Slater integral F4=0 and we can show
+calculations in ABINIT (cf <a class="wikilink" href="../../bibliography/#Amadon2008a">Amadon2008a</a>). However, calculations in Ref.
+<a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a> use for U and J the usual convention for _ t2g _ systems as
+found in <a class="wikilink" href="../../bibliography/#Lechermann2006">Lechermann2006</a>, Eq. 26 (see also the appendix in
+<a class="wikilink" href="../../bibliography/#Fresard1997">Fresard1997</a>). It corresponds to the Slater integral F4=0 and we can show
 that U_abinit=U-4/3 J and J_abinit=7/6 J . So in order to use U=4 eV and
-J=0.65 eV with these latter conventions (as in <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>), we have to use
+J=0.65 eV with these latter conventions (as in <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>), we have to use
 in ABINIT:
 <a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a>=3.13333 eV;
 <a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>=0.75833 eV
@@ -579,8 +579,8 @@ directory and run ABINIT:</p>
 
 
 <p>The projection of Kohn Sham wavefunctions and (truncated) atomic orbitals are
-computed (Eq.(2.1) in <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>) and unnormalized orbitals are built
-(Eq.(2.2) in <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>) The occupation matrix in this orbital basis is</p>
+computed (Eq.(2.1) in <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>) and unnormalized orbitals are built
+(Eq.(2.2) in <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>) The occupation matrix in this orbital basis is</p>
 <div class="codehilite"><pre><span></span>  ------ Symetrised Occupation
 
 
@@ -609,15 +609,15 @@ and
 <a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandf</a>=nband,
 then the above Symetrised Occupation should be exactly equal to the occupation
 matrix given in the usual DFT+U occupation matrix written in the log file
-(with dmatpuopt=1) (see discussion in <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>). In our case, we are not
+(with dmatpuopt=1) (see discussion in <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>). In our case, we are not
 in this case because
 <a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>=21
 so this condition is not fulfilled. Concerning the norm if these orbitals, two
 factors play a role:</p>
 <ul>
-<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
+<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
 <li>
-<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep &ldquo;ph0phiint(icount)= 1&rdquo; log_2). (See also the discussion in Section B.3 of <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>). 
+<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep &ldquo;ph0phiint(icount)= 1&rdquo; log_2). (See also the discussion in Section B.3 of <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>). 
 Next the LDA Green&rsquo;s function is computed.</p>
 <p>=====  LDA Green Function Calculation</p>
 </li>
@@ -681,7 +681,7 @@ calculations:</p>
 
 
 <p>For the sake of efficiency, the DMFT Loop is in this calculation done only
-once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink" href="../../bibliography#Amadon2012">Amadon2012</a>). At the end
+once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink" href="../../bibliography/#Amadon2012">Amadon2012</a>). At the end
 of the calculation, the occupation matrix is written and is:</p>
 <div class="codehilite"><pre><span></span>          -- polarization spin component  1
         0.16843   0.00000  -0.00000
@@ -770,11 +770,11 @@ method.</p>
 <p>A maximum entropy code has been published recently by D. Bergeron. It can be
 downloaded
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Main_Page">here</a>. Please
-cite the related paper <a class="wikilink" href="../../bibliography#Bergeron2016">Bergeron2016</a> if you use this code in a publication.</p>
+cite the related paper <a class="wikilink" href="../../bibliography/#Bergeron2016">Bergeron2016</a> if you use this code in a publication.</p>
 <p>The code has a lot of options, and definitely, the method should be understood
 and the user guide should be read before any real use. It is not the goal of
 this DFT+DMFT tutorial to introduce to the Maximum Entropy Method (see
-<a class="wikilink" href="../../bibliography#Bergeron2016">Bergeron2016</a> and references therein). We give here a very quick way to
+<a class="wikilink" href="../../bibliography/#Bergeron2016">Bergeron2016</a> and references therein). We give here a very quick way to
 obtain a spectral function. First, you have to install this code and the
 armadillo library by following the
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Download">guidelines</a>,
@@ -810,7 +810,7 @@ imaginary time data (yes/[no]): yes
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction.jpg" /><br />
 Even if the calculation is not well converged, you recognize in the spectral
 functions the quasiparticle peak as well as Hubbard bands at -2 eV and +2.5 eV
-as in Fig.4 of <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>.</p>
+as in Fig.4 of <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>.</p>
 <hr />
 <h3 id="4-electronic-structure-of-srvo3-choice-of-correlated-orbitals"><strong>4. Electronic Structure of SrVO3: Choice of correlated orbitals </strong><a class="headerlink" href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="Permanent link">&para;</a></h3>
 <p>Previously, only the <em>t2g</em>-like bands were used in the definition of Wannier
@@ -892,14 +892,14 @@ is</p>
 
 <p>Similarly to the previous calculation, the spectral function can be plotted
 using the Maximum Entropy code: we find a spectral function with an
-hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>.<br />
+hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>.<br />
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction2.jpg" /><br />
 Resolving the lower Hubbard bands would require a more converged calculation.</p>
 <p>As above, one can compute the renormalization weight and it gives 0.68. It
 shows that with the same value of U and J, interactions have a weaker effect
 for the large window Wannier functions. Indeed, the value of the screened
 interaction U should be larger because the Wannier functions are more
-localized (see discussion in <a class="wikilink" href="../../bibliography#Amadon2008">Amadon2008</a>).</p>
+localized (see discussion in <a class="wikilink" href="../../bibliography/#Amadon2008">Amadon2008</a>).</p>
 <hr />
 <h3 id="5-electronic-structure-of-srvo3-the-internal-energy"><strong>5. Electronic Structure of SrVO3: the internal energy </strong><a class="headerlink" href="#5-electronic-structure-of-srvo3-the-internal-energy" title="Permanent link">&para;</a></h3>
 <p>The internal energy can be obtained with</p>
@@ -982,6 +982,8 @@ renormalization weights and total internal energy.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1009,6 +1011,7 @@ renormalization weights and total internal energy.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

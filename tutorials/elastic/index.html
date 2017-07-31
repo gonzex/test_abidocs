@@ -401,7 +401,7 @@ new features here, and you should look at the following new input variables
 which will be discussed below:  </p>
 <ul>
 <li><a href="../../../input_variables/generated_files/varrlx.html#getxred"> getxred</a></li>
-<li><a class="wikilink" href="../../input_variables/varrlx#iatfix">iatfix</a> </li>
+<li><a class="wikilink" href="../../input_variables/varrlx/#iatfix">iatfix</a> </li>
 <li><a href="../../../input_variables/generated_files/varrlx.html#natfix"> natfix</a></li>
 <li><a href="../../../input_variables/generated_files/varrlx.html#strfact"> strfact</a>   </li>
 </ul>
@@ -521,7 +521,7 @@ section 1</a> of the respfn_help
 file which you studied in lesson RF1. We will introduce only one new input
 variable for the strain perturbation,</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varrf#rfstrs">rfstrs</a>   </li>
+<li><a class="wikilink" href="../../input_variables/varrf/#rfstrs">rfstrs</a>   </li>
 </ul>
 <p>The treatment of strain as a perturbation has some subtle aspects. It would be
 a good idea to read  Metric tensor formulation of strain in density-functional
@@ -534,7 +534,7 @@ with strain, so you should review the variables</p>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfphon"> rfphon</a></li>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfatpol"> rfatpol</a></li>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfdir"> rfdir</a></li>
-<li><a class="wikilink" href="../../input_variables/varrf#rfelfd">rfelfd</a>   </li>
+<li><a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>   </li>
 </ul>
 <p>It would be a good idea to copy telast_2.files into Work_elast and start the
 calculation while you read (less than 2 minutes on a standard 3GHz machine).
@@ -587,7 +587,7 @@ electric field. These quantities, the interatomic force constants (at gamma)
 and the Born effective charges will be used later to compute the atomic
 relaxation contribution to the elastic and piezoelectric tensor.</p>
 <p>First-order wave functions for the strain perturbation are computed next.
-Setting <a class="wikilink" href="../../input_variables/varrf#rfstrs">rfstrs</a> = 3 specifies that we want both uniaxial and shear strains
+Setting <a class="wikilink" href="../../input_variables/varrf/#rfstrs">rfstrs</a> = 3 specifies that we want both uniaxial and shear strains
 to be treated, and <a href="../../../input_variables/generated_files/varrf.html#rfdir">
 rfdir</a> = 1 1 1 cycles
 through strains xx, yy, and zz for uniaxial and yz, xz, and xy for shear. We
@@ -654,7 +654,7 @@ wave functions, and these functions minimize a variational expression for the
 The  energy  convergence looks similar to that of GS calculations.  The fact
 that vres2, the residual of the self-consistent first-order potential, has
 reached <a href="../../../input_variables/generated_files/varbas.html#tolvrs"> tolvrs</a>
-well within <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a> (40) iterations indicates that the 2DTE calculation for
+well within <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> (40) iterations indicates that the 2DTE calculation for
 this perturbation (xy strain) has converged . It would pay to examine a few
 more cases for different perturbations (unless you have looked through all the
 warnings in the log).</p>
@@ -944,7 +944,7 @@ telast_1.out have already been included. Datasets 1 and 3 do the self-
 consistent convergence of the GS wave functions for the strained lattices and
 compute the stress. Datasets 2 and 4 introduce a new variable.  </p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varff#berryopt">berryopt</a> </li>
+<li><a class="wikilink" href="../../input_variables/varff/#berryopt">berryopt</a> </li>
 </ul>
 <p>Electric polarization in solids is a subtle topic which has only recently been
 rigorously resolved. It is now understood to be a bulk property, and to be
@@ -958,7 +958,7 @@ ddk wave functions used in RF calculations in  2 and introduced in <a href="../l
 RF1, section 5</a> . We will use <a href="../../../input_variables/generated_files/varff.html#berryopt">
 berryopt</a> = -1,
 which utilizes an improved coding of the calculation, and must specify
-<a class="wikilink" href="../../input_variables/varrf#rfdir">rfdir</a> = 1 1 1 so that the Cartesian components of the polarization are
+<a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> = 1 1 1 so that the Cartesian components of the polarization are
 computed.  </p>
 <p>Now, run the telast_4 calculation, which should only take a minute or two, and
 edit telast_4.out. To calculate the elastic constants, we need to find the
@@ -1182,10 +1182,10 @@ ngkpt=3*10  0.0042034396   0.0020343437   0.0012956768   7.5694820855
 <p>We can immediately see that the lattice constant converges considerably more
 rapidly with <strong>k</strong> sample than the elastic constants.  For <a href="../../../input_variables/generated_files/varbas.html#ngkpt">
 ngkpt</a> =3<em>6, acell is
-converged to 0.02%, while the C&rsquo;s have 5-10% errors.  For <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> =3</em>8, the
+converged to 0.02%, while the C&rsquo;s have 5-10% errors.  For <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> =3</em>8, the
 C&rsquo;s are converged to better than 1%, much better for the largest, C11, which
 should be acceptable.</p>
-<p>As in lesson 4, the <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> convergence is controlled by <a href="../../../input_variables/generated_files/vargs.html#tsmear">
+<p>As in lesson 4, the <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> convergence is controlled by <a href="../../../input_variables/generated_files/vargs.html#tsmear">
 tsmear</a> .  The
 smaller the broadening, the denser the <strong>k</strong> sample that is needed to get a
 smooth variation of occupancy, and presumably stress, with strain.  While we
@@ -1222,7 +1222,7 @@ imagine actually measuring the elastic tensor elements. If you start with the
 conventional cubic cell, and apply pressure to one face, you can measure
 <em>C11</em>. But if you turn the cell to some random angle, you&rsquo;ll measure a
 response that is a mixture of <em>C11</em> and <em>C12</em>. Within ABINIT, if the aluminum
-fcc cell is described using <a class="wikilink" href="../../input_variables/varbas#angdeg">angdeg</a> and
+fcc cell is described using <a class="wikilink" href="../../input_variables/varbas/#angdeg">angdeg</a> and
 <a href="../../../input_variables/generated_files/varbas.html#angdeg">acell</a>, then an
 axis of the primitive cell will be aligned along the laboratory <em>z</em> axis but
 this will not lead to a (conventional) cell alignment with the laboratory
@@ -1250,6 +1250,8 @@ frame.</p>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1277,6 +1279,7 @@ frame.</p>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

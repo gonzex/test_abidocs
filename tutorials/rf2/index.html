@@ -452,9 +452,9 @@ it is advised to take a q point mesh that is adjusted to the k point mesh used
 for the electronic structure : all q wavevectors should connect two k point
 wavevectors from this grid.</p>
 <p>Such a set of q wavevectors can be generated straightforwardly by running a GS
-calculation with <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=1, <a class="wikilink" href="../../input_variables/varbas#nshiftk">nshiftk</a>=1, <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>=0 0 0 (to include
+calculation with <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=1, <a class="wikilink" href="../../input_variables/varbas/#nshiftk">nshiftk</a>=1, <a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a>=0 0 0 (to include
 gamma) and taking the output kpt set file as this qpt set. One might set
-<a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>=1 and <a class="wikilink" href="../../input_variables/vargs#nline">nline</a>=1, so only one iteration runs.<br />
+<a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>=1 and <a class="wikilink" href="../../input_variables/vargs/#nline">nline</a>=1, so only one iteration runs.<br />
 The input file ~abinit/tests/tutorespfn/Input/trf2_2.in is precisely an input
 file that can be used to generate such a set of k points. Copy it in the
 present Work_rf2 directly, as well as the accompanying
@@ -745,6 +745,8 @@ in tests/v5 , test 22 .</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -772,6 +774,7 @@ in tests/v5 , test 22 .</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

@@ -384,15 +384,15 @@ part is a list of the parameters that were used to make the DDB,
 and the second part lists the 2DTEs and 3DTEs.</p>
 <p>The merging code will check if the following variables are exactly
 the same in the different input DDB : natom,
-<a class="wikilink" href="../../input_variables/varbas#ntypat">ntypat</a>, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>, <a class="wikilink" href="../../input_variables/varbas#acell">acell</a>, <a class="wikilink" href="../../input_variables/varrlx#amu">amu</a>, <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>, <a class="wikilink" href="../../input_variables/varbas#ixc">ixc</a>, lloc, <a class="wikilink" href="../../input_variables/vargs#ngfft">ngfft</a>, <a class="wikilink" href="../../input_variables/vargs#occ">occ</a>, <a class="wikilink" href="../../input_variables/varbas#rprim">rprim</a>,
-<a class="wikilink" href="../../input_variables/varbas#typat">typat</a>, <a class="wikilink" href="../../input_variables/varbas#xred">xred</a>, zion.</p>
-<p>For <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> and <a class="wikilink" href="../../input_variables/vargs#occ">occ</a>, the value of <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> is taken into account
+<a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a>, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>, <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>, <a class="wikilink" href="../../input_variables/varrlx/#amu">amu</a>, <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>, <a class="wikilink" href="../../input_variables/varbas/#ixc">ixc</a>, lloc, <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a>, <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a>, <a class="wikilink" href="../../input_variables/varbas/#rprim">rprim</a>,
+<a class="wikilink" href="../../input_variables/varbas/#typat">typat</a>, <a class="wikilink" href="../../input_variables/varbas/#xred">xred</a>, zion.</p>
+<p>For <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> and <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a>, the value of <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> is taken into account
 (see abinit help file). If possible, MRGDDB will produce
 a DDB with occopt=0.</p>
 <p>In case of two different data sets, the code will print an error message and stop.
 The code cannot merge two DDB that have been generated
 using two different geometries
-or convergence (<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>, &hellip;) parameters.</p>
+or convergence (<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>, &hellip;) parameters.</p>
 <p>The only exception is connected to the possibility to use Time-reversal
 symmetry to decrease the number of special k points when the
 wavevector of the perturbation is Gamma. In that case, the code
@@ -425,6 +425,8 @@ at the end of the DDB file.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -452,6 +454,7 @@ at the end of the DDB file.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

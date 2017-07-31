@@ -421,7 +421,7 @@ Default value: 0  </p>
 phonon matrix elements) or for non linear RF calculations (to get mixed higher
 order derivatives you need several perturbed densities and wave functions).
 Indicate the files from which first-order densities must be obtained, in
-multi-dataset mode (in single dataset mode, use <a class="wikilink" href="../../input_variables/varfil#ird1den">ird1den</a>).<br />
+multi-dataset mode (in single dataset mode, use <a class="wikilink" href="../../input_variables/varfil/#ird1den">ird1den</a>).<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -435,16 +435,16 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
-starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a>, <a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a>,
-<a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a>, <a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a>. One should first read the explanations given for these
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
+starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a>,
+<a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a>, <a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a>. One should first read the explanations given for these
 latter variables.<br />
-The <strong> getwfk </strong> , <strong> getwfq </strong> , <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> and <strong> getddk </strong> variables are
+The <strong> getwfk </strong> , <strong> getwfq </strong> , <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> and <strong> getddk </strong> variables are
 typically used to chain the calculations in the multi-dataset mode, since they
 describe from which dataset the OUTPUT wavefunctions are to be taken, as INPUT
 wavefunctions of the present dataset.  </p>
 <p>We now focus on the <strong> getwfk </strong> input variable (the only one used in ground-
-state calculations), but the rules for <strong> getwfq </strong> and <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> are
+state calculations), but the rules for <strong> getwfq </strong> and <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> are
 similar, with _WFK replaced by _WFQ or _1WF.<br />
 If <strong> getwfk </strong> ==0, no use of previously computed output wavefunction file
 appended with _DSx_WFK is done.<br />
@@ -477,61 +477,61 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
 a Bethe-Salpeter calculation to indicate that the starting coupling block of
 the excitonic Hamiltonian will be taken from the output of a previous dataset.
 It is used to chain the calculations, since it describes from which dataset
 the OUTPUT coupling block is to be taken, as INPUT of the present dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbscoup">getbscoup</a>==0, no such use of previously computed coupling block file is
+If <a class="wikilink" href="../../input_variables/varfil/#getbscoup">getbscoup</a>==0, no such use of previously computed coupling block file is
 done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbscoup">getbscoup</a> is positive, its value gives the index of the dataset to be
+If <a class="wikilink" href="../../input_variables/varfil/#getbscoup">getbscoup</a> is positive, its value gives the index of the dataset to be
 used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbscoup">getbscoup</a> is -1, the output of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#getbscoup">getbscoup</a> is -1, the output of the previous dataset must be taken,
 which is a frequently occuring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbscoup">getbscoup</a> is a negative number, it indicates the number of datasets to
+If <a class="wikilink" href="../../input_variables/varfil/#getbscoup">getbscoup</a> is a negative number, it indicates the number of datasets to
 go backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the coupling block is not initialised
-from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getbscoup">getbscoup</a>=0 for that initialisation.</p>
+from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getbscoup">getbscoup</a>=0 for that initialisation.</p>
 <h2 id="getbseig"><strong>getbseig</strong><a class="headerlink" href="#getbseig" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GET the Bethe-Salpeter EIGenstates from &hellip;<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
 a Bethe-Salpeter calculation to indicate that the starting excitonic
 eigenstates are to be taken from the output of a previous dataset. It is used
 to chain the calculations, since it describes from which dataset the OUTPUT
 eigenstates are to be taken, as INPUT eigenstates of the present dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbseig">getbseig</a>==0, no such use of previously computed output eigenstates file
+If <a class="wikilink" href="../../input_variables/varfil/#getbseig">getbseig</a>==0, no such use of previously computed output eigenstates file
 is done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbseig">getbseig</a> is positive, its value gives the index of the dataset from
+If <a class="wikilink" href="../../input_variables/varfil/#getbseig">getbseig</a> is positive, its value gives the index of the dataset from
 which the output states is to be used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbseig">getbseig</a> is -1, the output eigenstates of the previous dataset must be
+If <a class="wikilink" href="../../input_variables/varfil/#getbseig">getbseig</a> is -1, the output eigenstates of the previous dataset must be
 taken, which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbseig">getbseig</a> is a negative number, it indicates the number of datasets to
+If <a class="wikilink" href="../../input_variables/varfil/#getbseig">getbseig</a> is a negative number, it indicates the number of datasets to
 go backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the eigenstates are not initialised
-from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getbseig">getbseig</a>=0 for that initialisation.</p>
+from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getbseig">getbseig</a>=0 for that initialisation.</p>
 <h2 id="getbsreso"><strong>getbsreso</strong><a class="headerlink" href="#getbsreso" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GET the Bethe-Salpeter RESOnant block from &hellip;<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
 a Bethe-Salpeter calculation to indicate that the starting resonant block of
 the excitonic Hamiltonian will be taken from the output of a previous dataset.
 It is used to chain the calculations, since it describes from which dataset
 the OUTPUT resonant block is to be taken, as INPUT of the present dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbsreso">getbsreso</a>==0, no such use of previously computed resonant block file is
+If <a class="wikilink" href="../../input_variables/varfil/#getbsreso">getbsreso</a>==0, no such use of previously computed resonant block file is
 done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbsreso">getbsreso</a> is positive, its value gives the index of the dataset to be
+If <a class="wikilink" href="../../input_variables/varfil/#getbsreso">getbsreso</a> is positive, its value gives the index of the dataset to be
 used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbsreso">getbsreso</a> is -1, the output of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#getbsreso">getbsreso</a> is -1, the output of the previous dataset must be taken,
 which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getbsreso">getbsreso</a> is a negative number, it indicates the number of datasets to
+If <a class="wikilink" href="../../input_variables/varfil/#getbsreso">getbsreso</a> is a negative number, it indicates the number of datasets to
 go backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the resonant block is not initialised
-from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getbsreso">getbsreso</a>=0 for that initialisation.</p>
+from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getbsreso">getbsreso</a>=0 for that initialisation.</p>
 <h2 id="getddb"><strong>getddb</strong><a class="headerlink" href="#getddb" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GET the DDB from &hellip;<br />
 Variable type: integer<br />
@@ -545,13 +545,13 @@ dipole that leads to an unphysical divergence of the GKK with vanishing
 q-points. The use of this variable greatly improves the k-point convergence
 speed as the density of the k-point grid required to obtain the fulfillment of
 the charge neutrality sum rule is usually prohibitively large.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getddb">getddb</a>==0, no such use of previously computed Born effective charge and
+If <a class="wikilink" href="../../input_variables/varfil/#getddb">getddb</a>==0, no such use of previously computed Born effective charge and
 dielectric tensor is done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getddb">getddb</a> is positive, its value gives the index of the dataset from which
+If <a class="wikilink" href="../../input_variables/varfil/#getddb">getddb</a> is positive, its value gives the index of the dataset from which
 the output density is to be used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getddb">getddb</a> is -1, the output density of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#getddb">getddb</a> is -1, the output density of the previous dataset must be taken,
 which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getddb">getddb</a> is a negative number, it indicates the number of datasets to go
+If <a class="wikilink" href="../../input_variables/varfil/#getddb">getddb</a> is a negative number, it indicates the number of datasets to go
 backward to find the needed file.<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
@@ -566,11 +566,11 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
 starting wavefunctions, as an alternative to
-<a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a>,<a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a>. One should first read the
+<a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a>,<a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a>. One should first read the
 explanations given for these latter variables.<br />
-The <strong> getwfk </strong> , <strong> getwfq </strong> , <strong> get1wf </strong> and <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> variables are
+The <strong> getwfk </strong> , <strong> getwfq </strong> , <strong> get1wf </strong> and <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> variables are
 typically used to chain the calculations in the multi-dataset mode, since they
 describe from which dataset the OUTPUT wavefunctions are to be taken, as INPUT
 wavefunctions of the present dataset.  </p>
@@ -608,29 +608,29 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
-a ground-state calculation, if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;0 (non-SCF calculation), to
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
+a ground-state calculation, if <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&lt;0 (non-SCF calculation), to
 indicate that the starting density is to be taken from the output of a
 previous dataset. It is used to chain the calculations, since it describes
 from which dataset the OUTPUT density are to be taken, as INPUT density of the
 present dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getden">getden</a>==0, no such use of previously computed output density file is
+If <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a>==0, no such use of previously computed output density file is
 done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getden">getden</a> is positive, its value gives the index of the dataset from which
+If <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a> is positive, its value gives the index of the dataset from which
 the output density is to be used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getden">getden</a> is -1, the output density of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a> is -1, the output density of the previous dataset must be taken,
 which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getden">getden</a> is a negative number, it indicates the number of datasets to go
+If <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a> is a negative number, it indicates the number of datasets to go
 backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the density is not initialised from a
-disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getden">getden</a>=0 for that initialisation. Thanks to
-this rule, the use of <a class="wikilink" href="../../input_variables/varfil#getden">getden</a> -1 is rather straightforward : except for the
+disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a>=0 for that initialisation. Thanks to
+this rule, the use of <a class="wikilink" href="../../input_variables/varfil/#getden">getden</a> -1 is rather straightforward : except for the
 first density, that is not initialized by reading a disk file, the output
 density of one dataset is input of the next one.<br />
-Be careful : the output density file of a run with non-zero <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a> does
+Be careful : the output density file of a run with non-zero <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a> does
 not have the proper name (it has a &ldquo;TIM&rdquo; indication) for use as an input of an
-<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>&lt;0 calculation.<br />
-One should use the output density of a <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0 run.<br />
+<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>&lt;0 calculation.<br />
+One should use the output density of a <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0 run.<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -644,19 +644,19 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and, in the case of
 a Bethe-Salpeter calculation to indicate that the Haydock iterative technique
 will be restarted from the output of a previous dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#gethaydock">gethaydock</a>==0, no such use of previously computed coupling block file
+If <a class="wikilink" href="../../input_variables/varfil/#gethaydock">gethaydock</a>==0, no such use of previously computed coupling block file
 is done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#gethaydock">gethaydock</a> is positive, its value gives the index of the dataset to be
+If <a class="wikilink" href="../../input_variables/varfil/#gethaydock">gethaydock</a> is positive, its value gives the index of the dataset to be
 used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#gethaydock">gethaydock</a> is -1, the output of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#gethaydock">gethaydock</a> is -1, the output of the previous dataset must be taken,
 which is a frequently occuring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#gethaydock">gethaydock</a> is a negative number, it indicates the number of datasets to
+If <a class="wikilink" href="../../input_variables/varfil/#gethaydock">gethaydock</a> is a negative number, it indicates the number of datasets to
 go backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the coupling block is not initialised
-from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#gethaydock">gethaydock</a>=0 for that
+from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#gethaydock">gethaydock</a>=0 for that
 initialisation.</p>
 <h2 id="getocc"><strong>getocc</strong><a class="headerlink" href="#getocc" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GET OCC parameters from &hellip;<br />
@@ -664,25 +664,25 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>This variable is typically used to chain the calculations, in the multi-
-dataset mode (<a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0), since it describes from which dataset the
-array <a class="wikilink" href="../../input_variables/vargs#occ">occ</a> is to be taken, as input of the present dataset. The occupation
+dataset mode (<a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0), since it describes from which dataset the
+array <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a> is to be taken, as input of the present dataset. The occupation
 numbers are <a class="wikilink" href="../../EVOLVING/">EVOLVING</a> variables, for which such a chain of calculations is
 useful.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a>==0, no such use of previously computed output occupations is
+If <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a>==0, no such use of previously computed output occupations is
 done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a> is positive, its value gives the index of the dataset from which
+If <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a> is positive, its value gives the index of the dataset from which
 the data are to be used as input data. It must be the index of a dataset
 already computed in the SAME run.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a> is -1, the output data of the previous dataset must be taken,
+If <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a> is -1, the output data of the previous dataset must be taken,
 which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a> is a negative number, it indicates the number of datasets to go
+If <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a> is a negative number, it indicates the number of datasets to go
 backward to find the needed data. In this case, if one refers to a non
 existent data set (prior to the first), the date is not initialised from a
-disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a>==0 for that initialisation.<br />
-NOTE that a non-zero <a class="wikilink" href="../../input_variables/varfil#getocc">getocc</a> MUST be used with <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>==2, so that the
+disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a>==0 for that initialisation.<br />
+NOTE that a non-zero <a class="wikilink" href="../../input_variables/varfil/#getocc">getocc</a> MUST be used with <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a>==2, so that the
 number of bands has to be initialized for each k point. Of course, these
 numbers of bands must be identical to the numbers of bands of the dataset from
-which <a class="wikilink" href="../../input_variables/vargs#occ">occ</a> will be copied. The same is true for the number of k points.<br />
+which <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a> will be copied. The same is true for the number of k points.<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -696,11 +696,11 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3, or 4
+<p>Used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3, or 4
 (screening or sigma step of a <a class="wikilink" href="../../GW/">GW</a> calculation), to indicate that the
 eigenvalues and possibly the wavefunctions have to be taken from a previous
 quasiparticle calculation (instead of the usual LDA starting point). This is
-to achieve quasiparticle self-consistency. See also <a class="wikilink" href="../../input_variables/varfil#irdqps">irdqps</a><br />
+to achieve quasiparticle self-consistency. See also <a class="wikilink" href="../../input_variables/varfil/#irdqps">irdqps</a><br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -714,20 +714,20 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4 (sigma step
+<p>Used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4 (sigma step
 of a <a class="wikilink" href="../../GW/">GW</a> calculation), to indicate that the dielectric matrix (_SCR file)
 is to be taken from the output of a previous dataset. It is used to chain the
 calculations, since it describes from which dataset the OUTPUT dielectric
 matrix is to be taken, as INPUT of the present dataset.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a>==0, no such use of previously computed output _SCR file is done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> is positive, its value gives the index of the dataset from which
+If <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a>==0, no such use of previously computed output _SCR file is done.<br />
+If <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> is positive, its value gives the index of the dataset from which
 the output _SCR file is to be used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> is -1, the output _SCR file of the previous dataset must be
+If <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> is -1, the output _SCR file of the previous dataset must be
 taken, which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> is a negative number, it indicates the number of datasets to go
+If <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> is a negative number, it indicates the number of datasets to go
 backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the _SCR file is not initialised from
-a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a>=0 for that initialisation.<br />
+a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a>=0 for that initialisation.<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -741,7 +741,7 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4 (sigma step
+<p>Used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (multi-dataset mode) and <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4 (sigma step
 of a <a class="wikilink" href="../../GW/">GW</a> calculation), to indicate that the irreducible polarizability
 (_SUSC file) is to be taken from the output of a previous dataset. It is used
 to chain the calculations, since it describes from which dataset the OUTPUT
@@ -752,17 +752,17 @@ can calculate the screened interaction using different expressions without
 having to perform a screening calculation from scratch. For example, it is
 possible to apply a cutoff to the Coulomb interaction in order to facilitate
 the convergence of the <a class="wikilink" href="../../GW/">GW</a> correction with respect to the size of the
-supercell (see <a class="wikilink" href="../../input_variables/vargw#vcutgeo">vcutgeo</a> and <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a>)<br />
-If <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>==0, no such use of previously computed output _SUSC file is
+supercell (see <a class="wikilink" href="../../input_variables/vargw/#vcutgeo">vcutgeo</a> and <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a>)<br />
+If <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>==0, no such use of previously computed output _SUSC file is
 done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a> is positive, its value gives the index of the dataset from
+If <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a> is positive, its value gives the index of the dataset from
 which the output _SUSC file is to be used as input.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a> is -1, the output _SUSC file of the previous dataset must be
+If <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a> is -1, the output _SUSC file of the previous dataset must be
 taken, which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a> is a negative number, it indicates the number of datasets to
+If <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a> is a negative number, it indicates the number of datasets to
 go backward to find the needed file. In this case, if one refers to a non
 existent data set (prior to the first), the _SUSC file is not initialised from
-a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>=0 for that initialisation.<br />
+a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>=0 for that initialisation.<br />
 NOTE : a negative value of a &ldquo;get&rdquo; variable indicates the number of datasets
 to go backwards; it is not the number to be subtracted from the current
 dataset to find the proper dataset. As an example :</p>
@@ -776,28 +776,28 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
-starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a>,
-or <a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a>. One should first read the explanations given for these latter
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
+starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a>,
+or <a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a>. One should first read the explanations given for these latter
 variables.<br />
-The <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <strong> getwfq </strong> , <strong> get1wf </strong> and <strong> getddk </strong> variables are
+The <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <strong> getwfq </strong> , <strong> get1wf </strong> and <strong> getddk </strong> variables are
 typically used to chain the calculations in the multi-dataset mode, since they
 describe from which dataset the OUTPUT wavefunctions are to be taken, as INPUT
 wavefunctions of the present dataset.  </p>
-<p>We now focus on the <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> input variable (the only one used in ground-
+<p>We now focus on the <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> input variable (the only one used in ground-
 state calculations), but the rules for <strong> getwfq </strong> and <strong> get1wf </strong> are
 similar, with _WFK replaced by _WFQ or _1WF.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>==0, no use of previously computed output wavefunction file
+If <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>==0, no use of previously computed output wavefunction file
 appended with _DSx_WFK is done.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> is positive, its value gives the index of the dataset for which
+If <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> is positive, its value gives the index of the dataset for which
 the output wavefunction file appended with _WFK must be used.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> is -1, the output wf file with _WFK of the previous dataset must
+If <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> is -1, the output wf file with _WFK of the previous dataset must
 be taken, which is a frequently occurring case.<br />
-If <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> is a negative number, it indicates the number of datasets to go
+If <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> is a negative number, it indicates the number of datasets to go
 backward to find the needed wavefunction file. In this case, if one refers to
 a non existent data set (prior to the first), the wavefunctions are not
-initialised from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>=0 for that
-initialisation. Thanks to this rule, the use of <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> -1 is rather
+initialised from a disk file, so that it is as if <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>=0 for that
+initialisation. Thanks to this rule, the use of <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> -1 is rather
 straightforward : except for the first wavefunctions, that are not initialized
 by reading a disk file, the output wavefunction of one dataset is input of the
 next one.<br />
@@ -818,16 +818,16 @@ dataset to find the proper dataset. As an example :</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
-starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a>
-or <a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a>. One should first read the explanations given for these latter
+<p>Eventually used when <a class="wikilink" href="../../input_variables/varbas/#ndtset">ndtset</a>&gt;0 (in the multi-dataset mode), to indicate
+starting wavefunctions, as an alternative to <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a>,<a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a>,<a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a>
+or <a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a>. One should first read the explanations given for these latter
 variables.<br />
-The <strong> getwfk </strong> , <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <strong> get1wf </strong> and <strong> getddk </strong> variables are
+The <strong> getwfk </strong> , <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <strong> get1wf </strong> and <strong> getddk </strong> variables are
 typically used to chain the calculations in the multi-dataset mode, since they
 describe from which dataset the OUTPUT wavefunctions are to be taken, as INPUT
 wavefunctions of the present dataset.  </p>
 <p>We now focus on the <strong> getwfk </strong> input variable (the only one used in ground-
-state calculations), but the rules for <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a> and <strong> get1wf </strong> are
+state calculations), but the rules for <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a> and <strong> get1wf </strong> are
 similar, with _WFK replaced by _WFQ or _1WF.<br />
 If <strong> getwfk </strong> ==0, no use of previously computed output wavefunction file
 appended with _DSx_WFK is done.<br />
@@ -859,12 +859,12 @@ dataset to find the proper dataset. As an example :</p>
 <p>Mnemonics: Integer that governs the ReaDing of 1st-order DEN file<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 1 if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &lt; 0,
+Default value: 1 if <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> &lt; 0,
 0 otherwise.</p>
 <p>If first order density is needed in single dataset mode (for example in
-nonlinear optical response), use <a class="wikilink" href="../../input_variables/varfil#ird1den">ird1den</a>=1 to read first-order densities
+nonlinear optical response), use <a class="wikilink" href="../../input_variables/varfil/#ird1den">ird1den</a>=1 to read first-order densities
 from _DENx files produced in other calculations. In multi-dataset mode use
-<a class="wikilink" href="../../input_variables/varfil#get1den">get1den</a>.</p>
+<a class="wikilink" href="../../input_variables/varfil/#get1den">get1den</a>.</p>
 <p>When iscf &lt; 0, the reading of a DEN file is always enforced.</p>
 <p>A non-zero value of <strong> ird1den </strong> is treated in the same way as other &ldquo;ird&rdquo;
 variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4
@@ -875,24 +875,24 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Indicates eventual starting wavefunctions. As alternative, one can use the
-input variables <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a>.  </p>
+input variables <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a>.  </p>
 <p>Ground-state calculation :</p>
 <ul>
-<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> have a meaning </li>
-<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> can be non-zero </li>
-<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
+<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> have a meaning </li>
+<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> can be non-zero </li>
+<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
 <p>Response-function calculation :</p>
 <ul>
-<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> MUST be non-zero </li>
+<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> MUST be non-zero </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> </li>
+<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> </li>
 <li>if <strong> irdwfq </strong> = 1 : read ground state k+q -wavefunctions from a disk file appended with _WFQ , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a> or <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> can be non-zero </li>
+<li>at most one of <a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a> or <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> can be non-zero </li>
 <li>if both are zero, initialize first order wavefunctions to zeroes </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#ird1wf">ird1wf</a> = 1 : read first-order wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> can be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#ird1wf">ird1wf</a> = 1 : read first-order wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> can be non-zero </li>
 <li>one of them must be non-zero if an homogeneous electric field calculation is done (presently, a ddk calculation in the same dataset is not allowed) </li>
 <li>if <strong> irdddk </strong> = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
@@ -921,7 +921,7 @@ block produced in a previous run.</p>
 <p>Mnemonics: Integer that governs the ReaDing of DDB file<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 1 if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &lt; 0,
+Default value: 1 if <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> &lt; 0,
 0 otherwise.</p>
 <p>This variable should be used when performing electron-phonon or temperature-
 dependence calculations. The Born effective charge as well as the dielectric
@@ -931,7 +931,7 @@ dipole that leads to an unphysical divergence of the GKK with vanishing
 q-points. The use of this variable greatly improves the k-point convergence
 speed as the density of the k-point grid required to obtain the fulfillment of
 the charge neutrality sum rule is usually prohibitively large.</p>
-<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil#irdddb">irdddb</a> is treated in the same way as other &ldquo;ird&rdquo;
+<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil/#irdddb">irdddb</a> is treated in the same way as other &ldquo;ird&rdquo;
 variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4
 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>.  </p>
 <h2 id="irdddk"><strong>irdddk</strong><a class="headerlink" href="#irdddk" title="Permanent link">&para;</a></h2>
@@ -940,36 +940,36 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Indicates eventual starting wavefunctions. As alternative, one can use the
-input variables <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a>.  </p>
+input variables <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a>.  </p>
 <p>Ground-state calculation :</p>
 <ul>
-<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> have a meaning </li>
-<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> can be non-zero </li>
-<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
+<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> have a meaning </li>
+<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> can be non-zero </li>
+<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
 <p>Response-function calculation :</p>
 <ul>
-<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> MUST be non-zero </li>
+<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> MUST be non-zero </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> </li>
+<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> </li>
 <li>if <strong> irdwfq </strong> = 1 : read ground state k+q -wavefunctions from a disk file appended with _WFQ , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> can be non-zero </li>
+<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> can be non-zero </li>
 <li>if both are zero, initialize first order wavefunctions to zeroes </li>
 <li>if <strong> ird1wf </strong> = 1 : read first-order wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> can be non-zero </li>
+<li>at most one of <a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> can be non-zero </li>
 <li>one of them must be non-zero if an homogeneous electric field calculation is done (presently, a ddk calculation in the same dataset is not allowed) </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#irdddk">irdddk</a> = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#irdddk">irdddk</a> = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
 <h2 id="irdden"><strong>irdden</strong><a class="headerlink" href="#irdden" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Integer that governs the ReaDing of DEN file<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 1 if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &lt; 0,
+Default value: 1 if <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> &lt; 0,
 0 otherwise.</p>
 <p>Start the ground-state calculation from the density file of a previous run.
 When iscf &lt; 0, the reading of a DEN file is always enforced.</p>
-<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil#irdden">irdden</a> is treated in the same way as other &ldquo;ird&rdquo;
+<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil/#irdden">irdden</a> is treated in the same way as other &ldquo;ird&rdquo;
 variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4
 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>.  </p>
 <h2 id="irdhaydock"><strong>irdhaydock</strong><a class="headerlink" href="#irdhaydock" title="Permanent link">&para;</a></h2>
@@ -984,20 +984,20 @@ produced in a previous run.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 or 4. Indicate the file from which the
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 or 4. Indicate the file from which the
 eigenvalues and possibly the wavefunctions must be obtained, in order to
-achieve a self-consistent quasiparticle calculations. See also <a class="wikilink" href="../../input_variables/varfil#getqps">getqps</a></p>
+achieve a self-consistent quasiparticle calculations. See also <a class="wikilink" href="../../input_variables/varfil/#getqps">getqps</a></p>
 <h2 id="irdscr"><strong>irdscr</strong><a class="headerlink" href="#irdscr" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Integer that governs the ReaDing of the SCReening<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4. Indicate the file from which the
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4. Indicate the file from which the
 dielectric matrix must be obtained. As alternative, one can use the input
-variable <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a>.<br />
-When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4, at least one of <a class="wikilink" href="../../input_variables/varfil#irdscr">irdscr</a> or <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> (alternatively,
-<a class="wikilink" href="../../input_variables/varfil#irdsuscep">irdsuscep</a> or <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>) must be non-zero.</p>
-<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil#irdscr">irdscr</a> is treated in the same way as other &ldquo;ird&rdquo;
+variable <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a>.<br />
+When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4, at least one of <a class="wikilink" href="../../input_variables/varfil/#irdscr">irdscr</a> or <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> (alternatively,
+<a class="wikilink" href="../../input_variables/varfil/#irdsuscep">irdsuscep</a> or <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>) must be non-zero.</p>
+<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil/#irdscr">irdscr</a> is treated in the same way as other &ldquo;ird&rdquo;
 variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4
 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>.</p>
 <h2 id="irdsuscep"><strong>irdsuscep</strong><a class="headerlink" href="#irdsuscep" title="Permanent link">&para;</a></h2>
@@ -1005,12 +1005,12 @@ variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> 
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4. Indicate the file from which the
+<p>Relevant only when <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4. Indicate the file from which the
 irreducible polarizability must be obtained. As alternative, one can use the
-input variable <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>.<br />
-When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4, at least one of <a class="wikilink" href="../../input_variables/varfil#irdsuscep">irdsuscep</a> or <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>
-(alternatively, <a class="wikilink" href="../../input_variables/varfil#irdscr">irdscr</a> or <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a>) must be non-zero.</p>
-<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil#irdsuscep">irdsuscep</a> is treated in the same way as other &ldquo;ird&rdquo;
+input variable <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>.<br />
+When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4, at least one of <a class="wikilink" href="../../input_variables/varfil/#irdsuscep">irdsuscep</a> or <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>
+(alternatively, <a class="wikilink" href="../../input_variables/varfil/#irdscr">irdscr</a> or <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a>) must be non-zero.</p>
+<p>A non-zero value of <a class="wikilink" href="../../input_variables/varfil/#irdsuscep">irdsuscep</a> is treated in the same way as other &ldquo;ird&rdquo;
 variables, see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4
 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>.</p>
 <h2 id="irdwfk"><strong>irdwfk</strong><a class="headerlink" href="#irdwfk" title="Permanent link">&para;</a></h2>
@@ -1019,24 +1019,24 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Indicates eventual starting wavefunctions. As alternative, one can use the
-input variables <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a>.  </p>
+input variables <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a>.  </p>
 <p>Ground-state calculation :</p>
 <ul>
-<li>only <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> have a meaning </li>
-<li>at most one of <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> can be non-zero </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>only <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> have a meaning </li>
+<li>at most one of <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> can be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
 <p>Response-function calculation :</p>
 <ul>
-<li>one and only one of <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> MUST be non-zero </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <a class="wikilink" href="../../input_variables/varfil#irdwfk">irdwfk</a> and/or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> </li>
+<li>one and only one of <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> MUST be non-zero </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>only one of <strong> irdwfq </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> and/or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> </li>
 <li>if <strong> irdwfq </strong> = 1 : read ground state k+q -wavefunctions from a disk file appended with _WFQ , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> can be non-zero </li>
+<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> can be non-zero </li>
 <li>if both are zero, initialize first order wavefunctions to 0&rsquo;s. </li>
 <li>if <strong> ird1wf </strong> = 1 : read first-order wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> can be non-zero </li>
+<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> can be non-zero </li>
 <li>one of them must be non-zero if an homogeneous electric field calculation is done (presently, a ddk calculation in the same dataset is not allowed) </li>
 <li>if <strong> irdddk </strong> = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
@@ -1046,24 +1046,24 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Indicates eventual starting wavefunctions. As alternative, one can use the
-input variables <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a>.  </p>
+input variables <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a>, <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a>, <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a>.  </p>
 <p>Ground-state calculation :</p>
 <ul>
-<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> have a meaning </li>
-<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> can be non-zero </li>
-<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
+<li>only <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> have a meaning </li>
+<li>at most one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> can be non-zero </li>
+<li>if <strong> irdwfk </strong> and <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> are both zero, initialize wavefunctions with random numbers for ground state calculation. </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
 <p>Response-function calculation :</p>
 <ul>
-<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> MUST be non-zero </li>
+<li>one and only one of <strong> irdwfk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> MUST be non-zero </li>
 <li>if <strong> irdwfk </strong> = 1 : read ground state k -wavefunctions from a disk file appended with _WFK , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>only one of <a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a> or <a class="wikilink" href="../../input_variables/varfil#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> </li>
-<li>if <a class="wikilink" href="../../input_variables/varfil#irdwfq">irdwfq</a> = 1 : read ground state k+q -wavefunctions from a disk file appended with _WFQ , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil#get1wf">get1wf</a> can be non-zero </li>
+<li>only one of <a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a> or <a class="wikilink" href="../../input_variables/varfil/#getwfq">getwfq</a> can be non-zero, if both of them are non-zero, use as k + q file the one defined by <strong> irdwfk </strong> and/or <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> </li>
+<li>if <a class="wikilink" href="../../input_variables/varfil/#irdwfq">irdwfq</a> = 1 : read ground state k+q -wavefunctions from a disk file appended with _WFQ , produced in a previous ground state calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
+<li>at most one of <strong> ird1wf </strong> or <a class="wikilink" href="../../input_variables/varfil/#get1wf">get1wf</a> can be non-zero </li>
 <li>if both are zero, initialize first order wavefunctions to 0&rsquo;s. </li>
 <li>if <strong> ird1wf </strong> = 1 : read first-order wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
-<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil#getddk">getddk</a> can be non-zero </li>
+<li>at most one of <strong> irdddk </strong> or <a class="wikilink" href="../../input_variables/varfil/#getddk">getddk</a> can be non-zero </li>
 <li>one of them must be non-zero if an homogeneous electric field calculation is done (presently, a ddk calculation in the same dataset is not allowed) </li>
 <li>if <strong> irdddk </strong> = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the <a href="../../../users/generated_files/help_abinit.html#4"> section 4 </a> of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>). </li>
 </ul>
@@ -1074,12 +1074,12 @@ Dimensions: scalar<br />
 Default value: 1  </p>
 <p>Governs the choice of the format for the file that contains the Kohn-Sham
 electronic structure information, for use in <a class="wikilink" href="../../GW/">GW</a> calculations, see the
-input variables <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> and <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>.</p>
+input variables <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> and <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varfil#kssform">kssform</a>=1, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through full diagonalization of the complete Hamiltonian matrix. The file has at the beginning the standard abinit header. </li>
-<li><a class="wikilink" href="../../input_variables/varfil#kssform">kssform</a>=3, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through the usual conjugate gradient algorithm (so, a restricted number of states). The file has at the beginning the standard abinit header. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#kssform">kssform</a>=1, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through full diagonalization of the complete Hamiltonian matrix. The file has at the beginning the standard abinit header. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#kssform">kssform</a>=3, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through the usual conjugate gradient algorithm (so, a restricted number of states). The file has at the beginning the standard abinit header. </li>
 </ul>
-<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a> must be 1 for all the
+<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev/#istwfk">istwfk</a> must be 1 for all the
 k-points.</p>
 <h2 id="prt1dm"><strong>prt1dm</strong><a class="headerlink" href="#prt1dm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT 1-DiMensional potential and density<br />
@@ -1093,13 +1093,13 @@ density on bi-dimensional slices of the FFT grid.</p>
 <p>Mnemonics: PRinT the DENsity<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a>&gt;1,
+Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx/#nimage">nimage</a>&gt;1,
 1 otherwise.</p>
 <p>If set to 1 or a larger value , provide output of electron density in real
 space rho(r), in units of electrons/Bohr^3.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the density file will be the root output name,
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the density file will be the root output name,
 followed by _DEN .<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, density files will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, density files will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1108,8 +1108,8 @@ the name being made of</p>
 </ul>
 <p>The file structure of the unformatted output file is described below, see
 section 6).<br />
-If <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a> is lower than 0, two files will be printed for restart every
-<a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a> step, with the names being made of</p>
+If <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> is lower than 0, two files will be printed for restart every
+<a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> step, with the names being made of</p>
 <ul>
 <li>the root temporary name, </li>
 <li>followed by _DEN_x , where x is 0000 or 0001 alternatively. </li>
@@ -1119,7 +1119,7 @@ If <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a> is 
 <li>In the dataset 3, get the previous wf(getwfk3 -1), and continue the calculation </li>
 <li>This complicated procedure is due to the fact that reading the density is only allowed for a non sc calculation, and also for a dataset different of 0 or the previous one, the option we choose here. </li>
 </ul>
-<p>Please note that in the case of PAW (<a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1) calculations, the _DEN
+<p>Please note that in the case of PAW (<a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>=1) calculations, the _DEN
 density output is not the full physical electron density. If what is wanted is
 the full physical electron density, say for post-processing with <a href="../../../users/generated_files/help_aim.html"> AIM
 </a> or visualization, prtden &gt; 1
@@ -1129,7 +1129,7 @@ calculations where the density from one calculation is to be used in a
 subsequent calculation, it is necessary to use the _DEN files and <strong> not </strong>
 one of the other files produced with prtden &gt; 1, i.e. _PAWDEN, ATMDEN_xxx
 or else. Note that the usual _DEN file is always generated as soon as prtden
-&gt;= 1. Options 2 to 6 for prtden are relevant only for <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1 and
+&gt;= 1. Options 2 to 6 for prtden are relevant only for <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>=1 and
 control the output of the full electron density in the PAW case :  </p>
 <p><strong> prtden=2 </strong> causes generation of a file _PAWDEN that contains the bulk <strong> valence </strong> charge density together with the PAW on-site contributions, and has the same format as the other density files. <br />
 <strong> prtden=3 </strong> causes generation of a file _PAWDEN that contains the bulk <strong> full </strong> charge density (valence+core) <br />
@@ -1157,91 +1157,91 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Provide output of Density of States if set to 1, 2 or 3. Can either use a
-smearing technique (<a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1), or the tetrahedron method (<a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2).
-If <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3, provide output of Local Density of States inside a sphere
+smearing technique (<a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1), or the tetrahedron method (<a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2).
+If <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3, provide output of Local Density of States inside a sphere
 centered on an atom, as well as the angular-momentum projected DOS, in the
 same sphere. The resolution of the linear grid of energies for which the DOS
-is computed can be tuned thanks to <a class="wikilink" href="../../input_variables/vargs#dosdeltae">dosdeltae</a>.</p>
-<p>If <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, the smeared density of states is obtained from the
-eigenvalues, properly weighted at each k point using <a class="wikilink" href="../../input_variables/varbas#wtk">wtk</a>, and smeared
-according to <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> and <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a>. All levels that are present in the
+is computed can be tuned thanks to <a class="wikilink" href="../../input_variables/vargs/#dosdeltae">dosdeltae</a>.</p>
+<p>If <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1, the smeared density of states is obtained from the
+eigenvalues, properly weighted at each k point using <a class="wikilink" href="../../input_variables/varbas/#wtk">wtk</a>, and smeared
+according to <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> and <a class="wikilink" href="../../input_variables/vargs/#tsmear">tsmear</a>. All levels that are present in the
 calculation are taken into account (occupied and unoccupied). Note that
-<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> must be between 3 and 7 . Also note that the sampling of the
+<a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> must be between 3 and 7 . Also note that the sampling of the
 Brillouin Zone that is needed to get a converged DOS is usually much finer
 than the sampling needed to converge the total energy or the geometry of the
-system, unless <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> is very large (hence the DOS is not obtained
+system, unless <a class="wikilink" href="../../input_variables/vargs/#tsmear">tsmear</a> is very large (hence the DOS is not obtained
 properly).. A separate convergence study is needed.<br />
-In order to compute the DOS of an insulator with <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, compute its
+In order to compute the DOS of an insulator with <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1, compute its
 density thanks to a self-consistent calculation (with a non-metallic
-<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> value, 0, 1 or 2), then use <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, together with
-<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=-3, and a metallic <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>, between 3 and 7, providing the needed
-smearing. If <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, the name of the DOS file is the root name for the
+<a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> value, 0, 1 or 2), then use <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1, together with
+<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>=-3, and a metallic <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a>, between 3 and 7, providing the needed
+smearing. If <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1, the name of the DOS file is the root name for the
 output files, followed by &ldquo;_DOS&rdquo; .</p>
-<p>If <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2, the DOS is computed using the tetrahedron method. As in the
-case of <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1, all levels that are present in the calculation are taken
+<p>If <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2, the DOS is computed using the tetrahedron method. As in the
+case of <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1, all levels that are present in the calculation are taken
 into account (occupied and unoccupied). In this case, the k-points must have
-been defined using the input variable <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> or the input variable
-<a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a>. There must be at least two non-equivalent points in the
-Irreducible Brillouin Zone to use <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2. It is strongly advised to use
-a non-shifted k-point grid (<a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a> 0 0 0): such grids contain naturally
+been defined using the input variable <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> or the input variable
+<a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a>. There must be at least two non-equivalent points in the
+Irreducible Brillouin Zone to use <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2. It is strongly advised to use
+a non-shifted k-point grid (<a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a> 0 0 0): such grids contain naturally
 more extremal points (band minima and maxima at Gamma or at the zone-
 boundaries) than shifted grids, and lead to more non-equivalent points than
 shifted grids, for the same grid spacing. There is no need to take care of the
-<a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a> or <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> input variables, and there is no subtlety to be taken
+<a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> or <a class="wikilink" href="../../input_variables/vargs/#tsmear">tsmear</a> input variables, and there is no subtlety to be taken
 into account for insulators. The computation can be done in the self-
-consistent case as well as in the non-self-consistent case, using <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=-3.
+consistent case as well as in the non-self-consistent case, using <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>=-3.
 This allows to refine the DOS at fixed starting density.<br />
-In that case, if <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the
-root output name, followed by _DOS (like in the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1 case).<br />
-However, if <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential files will be output at each time
+In that case, if <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the
+root output name, followed by _DOS (like in the <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1 case).<br />
+However, if <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential files will be output at each time
 step, with the name being made of</p>
 <ul>
 <li>the root output name, </li>
 <li>followed by _TIMx , where x is related to the timestep (see later) </li>
 <li>then followed by _DOS. </li>
 </ul>
-<p>If <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3, the same tetrahedron method as for <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2 is used, but
+<p>If <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3, the same tetrahedron method as for <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2 is used, but
 the DOS inside a sphere centered on some atom is delivered, as well as the
 angular-momentum projected (l=0,1,2,3,4) DOS in the same sphere. The
 preparation of this case, the parameters under which the computation is to be
-done, and the file denomination is similar to the <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2 case. However,
+done, and the file denomination is similar to the <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2 case. However,
 three additional input variables might be provided, describing the atoms that
-are the center of the sphere (input variables <a class="wikilink" href="../../input_variables/vargs#natsph">natsph</a> and <a class="wikilink" href="../../input_variables/vargs#iatsph">iatsph</a>), as
-well as the radius of this sphere (input variable <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a>).<br />
-In case of PAW, <a class="wikilink" href="../../input_variables/vargs#ratsph">ratsph</a> radius has to be greater or equal to largest PAW
+are the center of the sphere (input variables <a class="wikilink" href="../../input_variables/vargs/#natsph">natsph</a> and <a class="wikilink" href="../../input_variables/vargs/#iatsph">iatsph</a>), as
+well as the radius of this sphere (input variable <a class="wikilink" href="../../input_variables/vargs/#ratsph">ratsph</a>).<br />
+In case of PAW, <a class="wikilink" href="../../input_variables/vargs/#ratsph">ratsph</a> radius has to be greater or equal to largest PAW
 radius of the atom types considered (which is read from the PAW atomic data
 file; see rc_sph or r_paw). Additional printing and/or approximations in PAW
-mode can be controlled with <a class="wikilink" href="../../input_variables/varpaw#pawprtdos">pawprtdos</a> keyword (in
-particular,<a class="wikilink" href="../../input_variables/varpaw#pawprtdos">pawprtdos</a>=2 can be used to compute quickly a very good
+mode can be controlled with <a class="wikilink" href="../../input_variables/varpaw/#pawprtdos">pawprtdos</a> keyword (in
+particular,<a class="wikilink" href="../../input_variables/varpaw/#pawprtdos">pawprtdos</a>=2 can be used to compute quickly a very good
 approximation of the DOS).  </p>
-<p>Note 1: when <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3, it is possible to output m-decomposed LDOS in _DOS
-file; simply use <a class="wikilink" href="../../input_variables/varfil#prtdosm">prtdosm</a> keyword.<br />
+<p>Note 1: when <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3, it is possible to output m-decomposed LDOS in _DOS
+file; simply use <a class="wikilink" href="../../input_variables/varfil/#prtdosm">prtdosm</a> keyword.<br />
 Note 2: the integrated total DOS in spheres around atoms can be obtained when
-<a class="wikilink" href="../../input_variables/vargs#prtdensph">prtdensph</a> flag is activated. It can be compared to the integrated DOS
-provided in _DOS file when <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3.</p>
-<p><a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=4 delivers the sphere-projected DOS (like <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3), on the
-basis of a smearing approach (like <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=1)</p>
-<p><a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=5 delivers the spin-spin DOS in the <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a>==2 case, using the
-tetrahedron method (as <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=2).</p>
+<a class="wikilink" href="../../input_variables/vargs/#prtdensph">prtdensph</a> flag is activated. It can be compared to the integrated DOS
+provided in _DOS file when <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3.</p>
+<p><a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=4 delivers the sphere-projected DOS (like <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3), on the
+basis of a smearing approach (like <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=1)</p>
+<p><a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=5 delivers the spin-spin DOS in the <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a>==2 case, using the
+tetrahedron method (as <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=2).</p>
 <h2 id="prtdosm"><strong>prtdosm</strong><a class="headerlink" href="#prtdosm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the Density Of States with M decomposition<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
-<p>Relevant only when <a class="wikilink" href="../../input_variables/varfil#prtdos">prtdos</a>=3.<br />
+<p>Relevant only when <a class="wikilink" href="../../input_variables/varfil/#prtdos">prtdos</a>=3.<br />
 If set to 1, the m-decomposed LDOS is delivered in DOS file.<br />
-Note that <a class="wikilink" href="../../input_variables/varfil#prtdosm">prtdosm</a> computes the M-resolved partial dos for complex
+Note that <a class="wikilink" href="../../input_variables/varfil/#prtdosm">prtdosm</a> computes the M-resolved partial dos for complex
 spherical harmonics,giving e.g. DOS(L,M) == DOS(L,-M) (without spin-orbit). In
-the contrary, the LDA+U occupation matrix, see <a class="wikilink" href="../../input_variables/varpaw#dmatpawu">dmatpawu</a> is in the real
+the contrary, the LDA+U occupation matrix, see <a class="wikilink" href="../../input_variables/varpaw/#dmatpawu">dmatpawu</a> is in the real
 spherical harmonics basis.<br />
 If set to 2, the m-decomposed LDOS is delivered in DOS file.<br />
-In this case, <a class="wikilink" href="../../input_variables/varfil#prtdosm">prtdosm</a> computes the M-resolved partial dos for real
+In this case, <a class="wikilink" href="../../input_variables/varfil/#prtdosm">prtdosm</a> computes the M-resolved partial dos for real
 spherical harmonics in the same basis as the LDA+U occupation matrix.</p>
 <h2 id="prteig"><strong>prteig</strong><a class="headerlink" href="#prteig" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT EIGenenergies<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a> &gt; 1,
+Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx/#nimage">nimage</a> &gt; 1,
 1 otherwise.</p>
 <p>If set to 1, a file *_EIG, containing the k-points and one-electron
 eigenvalues is printed.</p>
@@ -1269,23 +1269,23 @@ ELF is computed from an alternative approach which should better take into
 account the existence of spin dependent densities (see the documentation in
 /doc/theory/ELF of your ABINIT repository)  </p>
 <p>Please note that ELF is <strong> not </strong> yet implemented in the case of PAW
-(<a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1) calculations.</p>
+(<a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>=1) calculations.</p>
 <h2 id="prtfsurf"><strong>prtfsurf</strong><a class="headerlink" href="#prtfsurf" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT Fermi SURFace file<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set to 1, provide Fermi surface file in the BXSF format (Xcrysden) If
-<a class="wikilink" href="../../input_variables/varfil#prtfsurf">prtfsurf</a>=1, a _BXSF file readable by <a href="http://www.xcrysden.org"> XCrySDen </a>
+<a class="wikilink" href="../../input_variables/varfil/#prtfsurf">prtfsurf</a>=1, a _BXSF file readable by <a href="http://www.xcrysden.org"> XCrySDen </a>
 will be produced at the end of the calculation. The file contains information
 on the band structure of the system and can be used to visualize the Fermi
-surface or any other energy isosurface. <a class="wikilink" href="../../input_variables/varfil#prtfsurf">prtfsurf</a>=1 is compatible only with
-SCF calculations (<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> &gt; 1) or NSCF runs in which the occupation
+surface or any other energy isosurface. <a class="wikilink" href="../../input_variables/varfil/#prtfsurf">prtfsurf</a>=1 is compatible only with
+SCF calculations (<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> &gt; 1) or NSCF runs in which the occupation
 factors and Fermi level are recalculated once convergence is achieved
-(<a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> = -3). The two methods should produce the same Fermi surface
+(<a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> = -3). The two methods should produce the same Fermi surface
 provided that the k-meshes are sufficiently dense. The k-mesh used for the
 sampling of the Fermi surface can be specified using the standard variables
-<a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>, (<a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>, and <a class="wikilink" href="../../input_variables/varbas#nshiftk">nshiftk</a>. Note, however, that the mesh must be
+<a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a>, (<a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a>, and <a class="wikilink" href="../../input_variables/varbas/#nshiftk">nshiftk</a>. Note, however, that the mesh must be
 homogeneous and centered on gamma (multiple shifts are not supported by
 Xcrysden)</p>
 <h2 id="prtgden"><strong>prtgden</strong><a class="headerlink" href="#prtgden" title="Permanent link">&para;</a></h2>
@@ -1306,14 +1306,14 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set to 1 or a larger value, provide output of geometrical analysis (bond
-lengths and bond angles). The value of <a class="wikilink" href="../../input_variables/varfil#prtgeo">prtgeo</a> is taken by the code to be
+lengths and bond angles). The value of <a class="wikilink" href="../../input_variables/varfil/#prtgeo">prtgeo</a> is taken by the code to be
 the maximum coordination number of atoms in the system.<br />
 It will deduce a maximum number of &ldquo;nearest&rdquo; and &ldquo;next-nearest&rdquo; neighbors
 accordingly , and compute corresponding bond lengths.<br />
 It will compute bond angles for the &ldquo;nearest&rdquo; neighbours only.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the file will be the root output name, followed
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the file will be the root output name, followed
 by _GEO .<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, one file will be output at each time step, with the
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, one file will be output at each time step, with the
 name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1321,8 +1321,8 @@ name being made of</p>
 <li>then followed by _GEO </li>
 </ul>
 <p>The content of the file should be rather self-explanatory.<br />
-No output is provided by <a class="wikilink" href="../../input_variables/varfil#prtgeo">prtgeo</a> is lower than or equal to 0.<br />
-If <a class="wikilink" href="../../input_variables/varfil#prtgeo">prtgeo</a>&gt;0, the maximum number of atoms (<a class="wikilink" href="../../input_variables/varbas#natom">natom</a>) is 9999.</p>
+No output is provided by <a class="wikilink" href="../../input_variables/varfil/#prtgeo">prtgeo</a> is lower than or equal to 0.<br />
+If <a class="wikilink" href="../../input_variables/varfil/#prtgeo">prtgeo</a>&gt;0, the maximum number of atoms (<a class="wikilink" href="../../input_variables/varbas/#natom">natom</a>) is 9999.</p>
 <h2 id="prtgkk"><strong>prtgkk</strong><a class="headerlink" href="#prtgkk" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the GKK matrix elements file<br />
 Variable type: integer<br />
@@ -1344,7 +1344,7 @@ The GSR file contains the most important GS results (band structure, forces,
 stresses, electronic density). The GSR file can be read by AbiPy and used for
 futher postprocessing.<br />
 Note that, by default, the GSR file contains the electronic density unless
-<a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a> is set to 0.</p>
+<a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> is set to 0.</p>
 <h2 id="prtkden"><strong>prtkden</strong><a class="headerlink" href="#prtkden" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the Kinetic energy DENsity<br />
 Variable type: integer<br />
@@ -1358,33 +1358,33 @@ Like a _DEN file, it can be analyzed by cut3d. The file structure of the
 unformatted output file is described below (see <a href="../../../users/generated_files/help_abinit.html#6"> section 6
 </a>).<br />
 Note that the computation of the kinetic energy density must be activate,
-thanks to the input variable <a class="wikilink" href="../../input_variables/vargs#usekden">usekden</a>.<br />
+thanks to the input variable <a class="wikilink" href="../../input_variables/vargs/#usekden">usekden</a>.<br />
 Please note that kinetic energy density is <strong> not </strong> yet implemented in the
-case of PAW (<a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>=1) calculations.</p>
+case of PAW (<a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>=1) calculations.</p>
 <h2 id="prtkpt"><strong>prtkpt</strong><a class="headerlink" href="#prtkpt" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the K-PoinTs sets<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set /= 0 , proceeds to a detailed analysis of different k point grids.
-Works only if <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a> is positive, and neither <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> nor <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a>
+Works only if <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a> is positive, and neither <a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a> nor <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a>
 are defined. ABINIT will stop after this analysis.</p>
-<p>Different sets of k point grids are defined, with common values of <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>.
+<p>Different sets of k point grids are defined, with common values of <a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a>.
 In each set, ABINIT increases the length of vectors of the supercell (see
-<a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a>) by integer steps. The different sets are labelled by &ldquo;iset&rdquo;. For
-each k point grid, <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a> and <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a> are computed (the latter always
-invoking <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>=1, that is, full use of symmetries). A series is finished
-when the computed <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a> is twice larger than the input variable
-<a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>. After the examination of the different sets, ABINIT summarizes,
-for each <a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>, the best possible grid, that is, the one with the largest
-computed <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>.</p>
-<p>Note that this analysis is also performed when <a class="wikilink" href="../../input_variables/varfil#prtkpt">prtkpt</a>=0, as soon as
-neither <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a> nor <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> are defined. But, in this case, no analysis
-report is given, and the code selects the grid with the smaller <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> for
-the desired <a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>. However, this analysis takes some times (well
+<a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a>) by integer steps. The different sets are labelled by &ldquo;iset&rdquo;. For
+each k point grid, <a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a> and <a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a> are computed (the latter always
+invoking <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>=1, that is, full use of symmetries). A series is finished
+when the computed <a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a> is twice larger than the input variable
+<a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a>. After the examination of the different sets, ABINIT summarizes,
+for each <a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a>, the best possible grid, that is, the one with the largest
+computed <a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a>.</p>
+<p>Note that this analysis is also performed when <a class="wikilink" href="../../input_variables/varfil/#prtkpt">prtkpt</a>=0, as soon as
+neither <a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a> nor <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> are defined. But, in this case, no analysis
+report is given, and the code selects the grid with the smaller <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> for
+the desired <a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a>. However, this analysis takes some times (well
 sometimes, it is only a few seconds - it depends on the value of the input
-<a class="wikilink" href="../../input_variables/vargs#kptrlen">kptrlen</a>), and it is better to examine the full analysis for a given cell
-and set of symmetries, <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a> for all the production runs.</p>
+<a class="wikilink" href="../../input_variables/vargs/#kptrlen">kptrlen</a>), and it is better to examine the full analysis for a given cell
+and set of symmetries, <a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a> for all the production runs.</p>
 <p>if set to -2, the code stops in invars1 after the computation of the
 irreducible set and a file named kpts.nc with the list of the k-points and the
 corresponding weights is produced</p>
@@ -1407,9 +1407,9 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;=1 , provide output of the total (Kohn-Sham) potential (sum of
 local pseudo-potential, Hartree potential, and xc potential).</p>
-<p>If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
+<p>If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
 followed by _POT.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential file will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential file will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1435,7 +1435,7 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set to 1 or a larger value, provide output of the current density of
 different direction spins (x,y,z) in the whole unit cell. Should require
-spinorial wave functions <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> = 2. Experimental: this does not work
+spinorial wave functions <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a> = 2. Experimental: this does not work
 yet.</p>
 <h2 id="prtstm"><strong>prtstm</strong><a class="headerlink" href="#prtstm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the STM density<br />
@@ -1445,7 +1445,7 @@ Default value: 0  </p>
 <p>If set to 1 or a larger value, provide output of the electron density in real
 space rho(r), made only from the electrons close to the Fermi energy, in a
 range of energy (positive or negative), determined by the (positive or
-negative, but non-zero) value of the STM bias <a class="wikilink" href="../../input_variables/vargs#stmbias">stmbias</a>.<br />
+negative, but non-zero) value of the STM bias <a class="wikilink" href="../../input_variables/vargs/#stmbias">stmbias</a>.<br />
 This is a very approximate way to obtain STM profiles : one can choose an
 equidensity surface, and consider that the STM tip will follow this surface.
 Such equidensity surface might be determined with the help of Cut3D, and
@@ -1461,23 +1461,23 @@ output file is described in <a href="../../../users/generated_files/help_abinit.
 For the STM charge density to be generated, one must give, as an input file,
 the converged wavefunctions obtained from a previous run, at exactly the same
 k-points and cut-off energy, self-consistently determined, using the
-occupation numbers from <a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=7.<br />
-In the run with positive <a class="wikilink" href="../../input_variables/varfil#prtstm">prtstm</a>, one has to use :</p>
+occupation numbers from <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a>=7.<br />
+In the run with positive <a class="wikilink" href="../../input_variables/varfil/#prtstm">prtstm</a>, one has to use :</p>
 <ul>
-<li>positive <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a> </li>
-<li><a class="wikilink" href="../../input_variables/varbas#occopt">occopt</a>=7, with specification of <a class="wikilink" href="../../input_variables/vargs#tsmear">tsmear</a> </li>
-<li><a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>=1 </li>
-<li>the <a class="wikilink" href="../../input_variables/varbas#tolwfr">tolwfr</a> convergence criterion </li>
-<li><a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>=0 (this is the default value) </li>
-<li><a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=0 (this is the default value) </li>
+<li>positive <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a> </li>
+<li><a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a>=7, with specification of <a class="wikilink" href="../../input_variables/vargs/#tsmear">tsmear</a> </li>
+<li><a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>=1 </li>
+<li>the <a class="wikilink" href="../../input_variables/varbas/#tolwfr">tolwfr</a> convergence criterion </li>
+<li><a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>=0 (this is the default value) </li>
+<li><a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=0 (this is the default value) </li>
 </ul>
-<p>Note that you might have to adjust the value of <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> as well, for the
+<p>Note that you might have to adjust the value of <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> as well, for the
 treatment of unoccupied states, because the automatic determination of
-<a class="wikilink" href="../../input_variables/varbas#nband">nband</a> will often not include enough unoccupied states.<br />
-When <a class="wikilink" href="../../input_variables/varfil#prtstm">prtstm</a> is non-zero, the stress tensor is set to zero.<br />
-No output of _STM file is provided by <a class="wikilink" href="../../input_variables/varfil#prtstm">prtstm</a> lower or equal to 0.<br />
+<a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> will often not include enough unoccupied states.<br />
+When <a class="wikilink" href="../../input_variables/varfil/#prtstm">prtstm</a> is non-zero, the stress tensor is set to zero.<br />
+No output of _STM file is provided by <a class="wikilink" href="../../input_variables/varfil/#prtstm">prtstm</a> lower or equal to 0.<br />
 No other printing variables for density or potentials should be activated
-(e.g. <a class="wikilink" href="../../input_variables/varfil#prtden">prtden</a> has to be set to zero).</p>
+(e.g. <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> has to be set to zero).</p>
 <h2 id="prtsuscep"><strong>prtsuscep</strong><a class="headerlink" href="#prtsuscep" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT the SUSCEPtibility file (the irreducible polarizability)<br />
 Variable type: integer<br />
@@ -1492,7 +1492,7 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;= 0 outputs a file with the Coulomb potential, defined as Hartree +
 local Pseudopotential.</p>
-<p>If <strong>prtvclmb=1</strong> and in case of PAW (<a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a> &gt; 0), the full core potential
+<p>If <strong>prtvclmb=1</strong> and in case of PAW (<a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a> &gt; 0), the full core potential
 is added for the Hartree part, with the on-site corrections vh1 - vht1.</p>
 <p>If <strong>prtvclmb=2</strong>, only the smooth part of the Coulomb potential is output.</p>
 <h2 id="prtvha"><strong>prtvha</strong><a class="headerlink" href="#prtvha" title="Permanent link">&para;</a></h2>
@@ -1501,9 +1501,9 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;=1 , provide output of the Hartree potential.  </p>
-<p>If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
+<p>If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
 followed by _VHA.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1520,9 +1520,9 @@ Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;=1 , provide output of the sum of the Hartree potential and xc
 potential.</p>
-<p>If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
+<p>If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
 followed by _VHXC.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1545,7 +1545,7 @@ Standard choice is 0. Positive values print more in the output and log files,
 while negative values are for debugging (or preprocessing only), and cause the
 code to stop at some point.</p>
 <ul>
-<li>0 =&gt; The eigenenergies and residuals for all bands and k points are not echoed in the main output file. There are exceptions: the eigenvalues of the first k point are printed at the end of the SCF loop, and also, if <a class="wikilink" href="../../input_variables/varbas#iscf">iscf</a>=-2 and <a class="wikilink" href="../../input_variables/varbas#kptopt">kptopt</a>&lt;=0, the eigenvalues for all the k points are printed anyway, for a maximum of 50 k-points. Due to some subtlety, if for <strong>some</strong> dataset <a class="wikilink" href="../../input_variables/varfil#prtvol">prtvol</a> is non-zero, the limit for input and output echoes cannot be enforced, so it is like if <a class="wikilink" href="../../input_variables/varfil#prtvol">prtvol</a>=1 for <strong>all</strong> the datasets for which <a class="wikilink" href="../../input_variables/varfil#prtvol">prtvol</a> was set to 0.</li>
+<li>0 =&gt; The eigenenergies and residuals for all bands and k points are not echoed in the main output file. There are exceptions: the eigenvalues of the first k point are printed at the end of the SCF loop, and also, if <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>=-2 and <a class="wikilink" href="../../input_variables/varbas/#kptopt">kptopt</a>&lt;=0, the eigenvalues for all the k points are printed anyway, for a maximum of 50 k-points. Due to some subtlety, if for <strong>some</strong> dataset <a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a> is non-zero, the limit for input and output echoes cannot be enforced, so it is like if <a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a>=1 for <strong>all</strong> the datasets for which <a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a> was set to 0.</li>
 <li>1 =&gt; the eigenvalues for the first 50 k-points are printed in all cases, at the end of the SCF loop.</li>
 <li>2 =&gt; all the eigenvalues and the residuals are printed at the end of the SCF loop. Also, the analysis of the value and location of the maximal density (and magnetization) is printed.</li>
 <li>3 =&gt; Print memory information for lobpcg </li>
@@ -1566,14 +1566,14 @@ code to stop at some point.</p>
 <li>= -10 =&gt; stop in getghc, after the Hamiltonian is applied once</li>
 </ul>
 <p>This debugging feature is not yet activated in the RF routines. Note that
-<a class="wikilink" href="../../input_variables/vardev#fftalg">fftalg</a> offers another option for debugging.</p>
+<a class="wikilink" href="../../input_variables/vardev/#fftalg">fftalg</a> offers another option for debugging.</p>
 <h2 id="prtvolimg"><strong>prtvolimg</strong><a class="headerlink" href="#prtvolimg" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT VOLume for IMaGes<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>Control the volume of printed output when an algorithm using images of the
-cell is used (<a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a>&gt;1).<br />
+cell is used (<a class="wikilink" href="../../input_variables/varrlx/#nimage">nimage</a>&gt;1).<br />
 When such an algorithm is activated, the printing volume (in output file) can
 be large and difficult to read.<br />
 Using <strong> prtvolimg=1 </strong> , the printing volume, for each image, is reduced to
@@ -1587,9 +1587,9 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;=1 , provide output of the local pseudo potential.  </p>
-<p>If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
+<p>If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
 followed by _VPSP.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1605,9 +1605,9 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>If set &gt;=1 , provide output of the exchange-correlation potential.</p>
-<p>If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
+<p>If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==0, the name of the potential file will be the root output name,
 followed by _VXC.<br />
-If <a class="wikilink" href="../../input_variables/varrlx#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
+If <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>==1 or 2, potential files will be output at each time step, with
 the name being made of</p>
 <ul>
 <li>the root output name, </li>
@@ -1625,12 +1625,12 @@ Default value: 0  </p>
 <p>Flag used to indicate that either the Wannier90 or the WanT interfaces will be
 used.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varfil#prtwant">prtwant</a>=1 =&gt; Use the <strong> ABINIT- WanT </strong> interface. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#prtwant">prtwant</a>=1 =&gt; Use the <strong> ABINIT- WanT </strong> interface. </li>
 </ul>
 <p>Provide an output file that can be used by the WanT postprocessing program
 (see http://www.wannier-transport.org). The value of the prtwant indicates the
 version of the WanT code that can read it. Currently only the value
-<a class="wikilink" href="../../input_variables/varfil#prtwant">prtwant</a>=1 is implemented, corresponding to WanT version 1.0.1, available
+<a class="wikilink" href="../../input_variables/varfil/#prtwant">prtwant</a>=1 is implemented, corresponding to WanT version 1.0.1, available
 since Oct. 22, 2004.</p>
 <p>Notes : Several requirements must be fulfilled by the wavefunction. Among
 them, two are mandatory:  </p>
@@ -1662,7 +1662,7 @@ have to recompile it with the appropriate flags (see ABINIT makefile). Up to
 now only the -convert big-endian was found to be mandatory, for machines with
 little-endian default choice.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varfil#prtwant">prtwant</a>=2 =&gt; Use the <strong> ABINIT- Wannier90 </strong> interface. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#prtwant">prtwant</a>=2 =&gt; Use the <strong> ABINIT- Wannier90 </strong> interface. </li>
 </ul>
 <p>ABINIT will produce the input files required by Wannier90 and it will run
 Wannier90 to produce the Maximally-locallized Wannier functions (see <a href="http://www.wannier.org">
@@ -1675,7 +1675,7 @@ http://www.wannier.org </a> ).</p>
 
 
 <ul>
-<li><a class="wikilink" href="../../input_variables/varfil#prtwant">prtwant</a>=3 =&gt; Use the <strong> ABINIT- Wannier90 </strong> interface after converting the input wavefunctions to <strong> <a class="wikilink" href="../../GW/">GW</a> quasiparticle </strong> wavefunctions. </li>
+<li><a class="wikilink" href="../../input_variables/varfil/#prtwant">prtwant</a>=3 =&gt; Use the <strong> ABINIT- Wannier90 </strong> interface after converting the input wavefunctions to <strong> <a class="wikilink" href="../../GW/">GW</a> quasiparticle </strong> wavefunctions. </li>
 </ul>
 <p>ABINIT will produce the input files required by Wannier90 and it will run
 Wannier90 to produce the Maximally-localized Wannier functions (see <a href="http://www.wannier.org">
@@ -1693,30 +1693,30 @@ http://www.wannier.org </a> ).</p>
 <p>Mnemonics: PRinT the WaveFunction<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx#nimage">nimage</a> &gt; 1,
+Default value: 0 if <a class="wikilink" href="../../input_variables/varrlx/#nimage">nimage</a> &gt; 1,
 1 otherwise.</p>
-<p>If <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=1 , provide output of wavefunction and eigenvalue file, as
+<p>If <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=1 , provide output of wavefunction and eigenvalue file, as
 described in <a href="../../../users/generated_files/help_abinit.html#wavefctfile"> section 6.7
 </a> of the main
 <a class="wikilink" href="../../help_abinit/">help_abinit</a>.<br />
 For a standard ground-state calculation, the name of the wavefunction file
-will be the root output name, followed by _WFK. If <a class="wikilink" href="../../input_variables/vargs#nqpt">nqpt</a>=1, the root name
+will be the root output name, followed by _WFK. If <a class="wikilink" href="../../input_variables/vargs/#nqpt">nqpt</a>=1, the root name
 will be followed by _WFQ. For response-function calculations, the root name
 will be followed by _1WFx, where x is the number of the perturbation. The
 dataset information will be added as well, if relevant.<br />
-No wavefunction output is provided by <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=0.<br />
-If <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=-1, the code writes the wavefunction file only if convergence is
+No wavefunction output is provided by <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=0.<br />
+If <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=-1, the code writes the wavefunction file only if convergence is
 not achieved in the self-consistent cycle.</p>
-<p>If <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=2, a file pwfn.data is produced, to be used as input for the
+<p>If <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=2, a file pwfn.data is produced, to be used as input for the
 CASINO QMC code. See more explanation at the end of this section.<br />
-If <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=3, the file that is created is nearly the same as with
-<a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=1, except that the records that should contain the wavefunction is
+If <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=3, the file that is created is nearly the same as with
+<a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=1, except that the records that should contain the wavefunction is
 empty (so, such records exist, but store nothing). This is useful to generate
 size-reduced DDK files, to perform an optic run. Indeed, in the latter case,
 only matrix elements are needed [so, no wavefunction], but possibly a large
 number of conduction bands, so that the DDK file might be huge if it contains
 the wavefunctions.</p>
-<p>Further explanation for the <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=2 case. To produce a wave function
+<p>Further explanation for the <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=2 case. To produce a wave function
 suitable for use as a CASINO trial wave function, certain ABINIT parameters
 must be set correctly. Primarily, CASINO (and QMC methods generally) can only
 take advantage of time-reversal symmetry, and not the full set of symmetries
@@ -1755,7 +1755,7 @@ the contents of the contents of the input array jdtset (defaults to
 Once the routine is incorporated into the ABINIT package it is anticipated
 that there will be an input variable to control whether or not a CASINO
 pwfn.data file is written.</p>
-<p>Other issues related to <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a>=2.<br />
+<p>Other issues related to <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a>=2.<br />
 The exporter does not currently work when ABINIT is used in parallel mode on
 multiple processors if k-point parallelism is chosen. ABINIT does not store
 the full wave function on each processor but rather splits the k-points
@@ -1778,13 +1778,13 @@ probably something set wrong in the input file.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a> == 1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a> == 1  </p>
 <p>If set to 1 in a ground-state calculation, the code will output another WFK
 file (with extension FULL_WFK) containing the wavefunctions in the full BZ as
 well as a text file with the tables used for the tetrahedron method. Note that
-prtwf_full requires <a class="wikilink" href="../../input_variables/varfil#prtwf">prtwf</a> == 1 and a ground-state calculation done on a
-homogeneous k-mesh (see <a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/varbas#shiftk">shiftk</a>). The tetrahedron table is
-produced only if the number of k-points in the irreducible zone (<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>) is
+prtwf_full requires <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a> == 1 and a ground-state calculation done on a
+homogeneous k-mesh (see <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/varbas/#shiftk">shiftk</a>). The tetrahedron table is
+produced only if the number of k-points in the irreducible zone (<a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a>) is
 greater than 3.</p>
 <h2 id="prtxml"><strong>prtxml</strong><a class="headerlink" href="#prtxml" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: PRinT an XML output<br />
@@ -1808,6 +1808,8 @@ implemented and this one is currently restricted to ground-state computations
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1835,6 +1837,7 @@ implemented and this one is currently restricted to ground-state computations
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

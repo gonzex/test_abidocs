@@ -447,37 +447,37 @@
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
 <p>This input variable defines whether the irreducible polarizability
 <script type="math/tex">\chi^{0}_{KS}</script> is evaluated taking advantage of time-reversal symmetry or
 not.</p>
 <ul>
 <li>0 =&gt; Use the &ldquo;standard&rdquo; Adler-Wiser expression without assuming time-reversal symmetry. In this case, the irreducible polarizability is calculated summing over all possible electronic transitions (both resonant and antiresonant). </li>
-<li>1 =&gt; Take advantage of time-reversal symmetry to halve the number of transitions to be explicitly considered. This method leads to a decrease in the CPU time by a factor two with respect to the <a class="wikilink" href="../../input_variables/vargw#awtr">awtr</a>=0 case. </li>
+<li>1 =&gt; Take advantage of time-reversal symmetry to halve the number of transitions to be explicitly considered. This method leads to a decrease in the CPU time by a factor two with respect to the <a class="wikilink" href="../../input_variables/vargw/#awtr">awtr</a>=0 case. </li>
 </ul>
-<p>Note that the parallel algorithm <a class="wikilink" href="../../input_variables/varpar#gwpara">gwpara</a>=2 is not compatible with the
-choice <a class="wikilink" href="../../input_variables/vargw#awtr">awtr</a>=0.</p>
+<p>Note that the parallel algorithm <a class="wikilink" href="../../input_variables/varpar/#gwpara">gwpara</a>=2 is not compatible with the
+choice <a class="wikilink" href="../../input_variables/vargw/#awtr">awtr</a>=0.</p>
 <h2 id="bdgw"><strong>bdgw</strong><a class="headerlink" href="#bdgw" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: BanDs for GW calculation<br />
 Variable type: integer<br />
-Dimensions: (2,<a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>,<a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>)<br />
+Dimensions: (2,<a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a>,<a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>)<br />
 Default value: *0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p>For each k-point with number ikptgw in the range (1:<a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>) and each spin
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p>For each k-point with number ikptgw in the range (1:<a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a>) and each spin
 index isppol, <strong> bdgw(1,ikptgw,isppol) </strong> is the number of the lowest band for
 which the <a class="wikilink" href="../../GW/">GW</a> computation must be done, and <strong> bdgw(2,ikptgw,isppol) </strong> is
 the number of the highest band for which the <a class="wikilink" href="../../GW/">GW</a> computation must be done.</p>
-<p>When <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> &gt;= 20, the quasiparticle wavefunctions are computed and
+<p>When <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> &gt;= 20, the quasiparticle wavefunctions are computed and
 represented as linear combination of Kohn-Sham wavefunctions. In this case
-<a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> designates the range of KS wavefunctions used as basis set. For each
+<a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a> designates the range of KS wavefunctions used as basis set. For each
 k-point, indeed, the quasiparticle wavefunctions are expanded considering only
 the KS states between <strong> bdgw(1,ikptgw,isppol) </strong> and <strong> bdgw(2,ikptgw,isppol)
 </strong> .</p>
 <p>Note that the initial values given in the input file might be changed inside
 the code so that all the degenerate states at a given k-point and spin are
-included. This might happen when <a class="wikilink" href="../../input_variables/vargw#symsigma">symsigma</a>=1 is used or in the case of
+included. This might happen when <a class="wikilink" href="../../input_variables/vargw/#symsigma">symsigma</a>=1 is used or in the case of
 self-consistent <a class="wikilink" href="../../GW/">GW</a> calculations.</p>
-<p>When <a class="wikilink" href="../../input_variables/vargw#symsigma">symsigma</a>=1, the diagonal matrix elements of the self-energy are
+<p>When <a class="wikilink" href="../../input_variables/vargw/#symsigma">symsigma</a>=1, the diagonal matrix elements of the self-energy are
 obtained by averaging the unsymmetrized results in the subspace spanned by the
 degenerate states.</p>
 <p>For self-consistent calculations, on the other hand, the basis set used to
@@ -489,25 +489,25 @@ the initial symmetries and energy degenerations are preserved.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a> lets the user define the grid points along the imaginary
+Only relevant if (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a> lets the user define the grid points along the imaginary
 axis by hand. Set this to the number of frequencies you want. The frequencies
-are specified with <a class="wikilink" href="../../input_variables/vargw#cd_imfrqs">cd_imfrqs</a>.</p>
+are specified with <a class="wikilink" href="../../input_variables/vargw/#cd_imfrqs">cd_imfrqs</a>.</p>
 <h2 id="cd_frqim_method"><strong>cd_frqim_method</strong><a class="headerlink" href="#cd_frqim_method" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Contour Deformation FReQuency integration on IMaginary axis Method<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_frqim_method">cd_frqim_method</a> defines the choice of integration method along the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_frqim_method">cd_frqim_method</a> defines the choice of integration method along the
 imaginary frequency axis for Contour Deformation calculations. The default
 method is very robust, fast and optimal for the vast majority of cases.
 However, for very accurate (&ldquo;paranoid level&rdquo;) convergence studies, ABINIT
 offers the possibility of a variety of methods and grids. Note that as one
 starts to change the defaults, one needs to carefully consider the grid used.
 Therefore we recommend that in addition to reading the information below, the
-user reads the description of the input variables <a class="wikilink" href="../../input_variables/vargw#freqim_alpha">freqim_alpha</a>,
-<a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>, <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>, <a class="wikilink" href="../../input_variables/vargw#gw_frqim_inzgrid">gw_frqim_inzgrid</a>.</p>
+user reads the description of the input variables <a class="wikilink" href="../../input_variables/vargw/#freqim_alpha">freqim_alpha</a>,
+<a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>, <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>, <a class="wikilink" href="../../input_variables/vargw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a>.</p>
 <p>The integration to be performed for each matrix element of the self energy
 along the imaginary axis is of the form:</p>
 <p><img alt="" src="../../vargw_img/self_energy_cd.png" /></p>
@@ -536,7 +536,7 @@ the code will issue a warning if a higher-order rule is recommended.</li>
 imaginary axis, so this is very much under the control of the user. The only
 requirement is that the grid be strictly increasing. The point at zero
 frequency is assumed to lie on the real axis, so the calculation of that point
-is controlled by <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> and corresponding variables. We highly recommend
+is controlled by <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> and corresponding variables. We highly recommend
 extracting various elements of the dielectric matrix from the _SCR file using
 the <strong> Mrgscr </strong> utility and plotting them for visual inspection.</p>
 <ul>
@@ -544,31 +544,31 @@ the <strong> Mrgscr </strong> utility and plotting them for visual inspection.</
 </ul>
 <p><img alt="" src="../../vargw_img/cd_default_grid.png" /></p>
 <p>Here  _ ω p  _ is the plasma frequency (by default determined by the average
-density of the system, but this can be overridden by setting <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>).  _ N
-_ is the total number of grid points (set by <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>).  _ α _ is a
+density of the system, but this can be overridden by setting <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>).  _ N
+_ is the total number of grid points (set by <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>).  _ α _ is a
 parameter which determines how far out the final grid point will lie. The
 final point will be at  _ α*ω p  _ (the default is  _ α = 5 _ , and was hard-
 coded in older versions of ABINIT). This grid is designed so that
 approximately half the grid points are always distributed to values lower than
 the plasma frequency, in order to resolve any peaked structure. If one seeks
-to increase the outermost reach by increasing <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> one must
-simultaneously take care to increase <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a> in order to have the
+to increase the outermost reach by increasing <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> one must
+simultaneously take care to increase <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a> in order to have the
 appropriate resolution for the low-frequency region. In more recent versions
 of ABINIT one can also simply adjust the parameter  _ α _ by using
-<a class="wikilink" href="../../input_variables/vargw#freqim_alpha">freqim_alpha</a>. This grid is optimised for speed and accurate results with
+<a class="wikilink" href="../../input_variables/vargw/#freqim_alpha">freqim_alpha</a>. This grid is optimised for speed and accurate results with
 few grid points for <strong> cd_frqim_method = 1 </strong> .</p>
 <ul>
-<li><strong> Inverse z transform </strong> - This grid is activated by the use of the variable <a class="wikilink" href="../../input_variables/vargw#gw_frqim_inzgrid">gw_frqim_inzgrid</a>. This is the standard  _ [0,∞[ -&gt; [0,1] _ transform using the formula: </li>
+<li><strong> Inverse z transform </strong> - This grid is activated by the use of the variable <a class="wikilink" href="../../input_variables/vargw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a>. This is the standard  _ [0,∞[ -&gt; [0,1] _ transform using the formula: </li>
 </ul>
 <p><img alt="" src="../../vargw_img/cd_inzgrid.png" /></p>
 <p>Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
-<a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>). The grid points are then picked by an equidistant grid (number of
-points set by <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>) in the interval  _ z ⊂ [0,1] _ . This grid can
-easily be uniquely converged by just increasing <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>. Again the points
+<a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>). The grid points are then picked by an equidistant grid (number of
+points set by <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>) in the interval  _ z ⊂ [0,1] _ . This grid can
+easily be uniquely converged by just increasing <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>. Again the points
 are distributed so that approximately half of them lie below the plasma
 frequency.</p>
 <ul>
-<li><strong> User defined </strong> - The user can also define their own grid using the variables <a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a> and <a class="wikilink" href="../../input_variables/vargw#cd_imfrqs">cd_imfrqs</a> . _ With great power comes great responsibility! _</li>
+<li><strong> User defined </strong> - The user can also define their own grid using the variables <a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a> and <a class="wikilink" href="../../input_variables/vargw/#cd_imfrqs">cd_imfrqs</a> . _ With great power comes great responsibility! _</li>
 </ul>
 <p>The <strong> Mrgscr </strong> utility is handy in optimising the numerical effort expended
 in convergence studies. By estimating the densest grid one can afford to
@@ -582,8 +582,8 @@ frequency sections.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_full_grid">cd_full_grid</a> enables the calculation of the screening [both chi0 and
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_full_grid">cd_full_grid</a> enables the calculation of the screening [both chi0 and
 epsilon^(-1)] on a grid in the first quadrant of the complex plane. The grid
 is determined by the (tensor) product of the grid in real frequency and the
 grid in imaginary frequency. In the SUS and SCR files the grid points are
@@ -608,45 +608,45 @@ the <strong> Mrgscr </strong> utility.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 100.0 eV<br />
-Only relevant if (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_halfway_freq">cd_halfway_freq</a> determines the frequency where half of the number of
-points defined in <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> are used up. The tangent transformed grid is
+Only relevant if (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_halfway_freq">cd_halfway_freq</a> determines the frequency where half of the number of
+points defined in <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> are used up. The tangent transformed grid is
 approximately linear up to this point. To be used in conjunction with
-<a class="wikilink" href="../../input_variables/vargw#gw_frqre_tangrid">gw_frqre_tangrid</a>.</p>
+<a class="wikilink" href="../../input_variables/vargw/#gw_frqre_tangrid">gw_frqre_tangrid</a>.</p>
 <h2 id="cd_imfrqs"><strong>cd_imfrqs</strong><a class="headerlink" href="#cd_imfrqs" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Contour Deformation IMaginary FReQuencieS<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a>)<br />
 Default value: None<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29] and <a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a> != 0  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_imfrqs">cd_imfrqs</a> specifies the grid points for the imaginary axis. The number of
-frequencies is set by the value of <a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a>. Example:</p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29] and <a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a> != 0  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_imfrqs">cd_imfrqs</a> specifies the grid points for the imaginary axis. The number of
+frequencies is set by the value of <a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a>. Example:</p>
 <div class="codehilite"><pre><span></span>cd_customnimfrqs   5
 nfreqim            5
 cd_imfrqs          0.1  0.2  0.5  1.0  5.0
 </pre></div>
 
 
-<p>If <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a> is not equal to <a class="wikilink" href="../../input_variables/vargw#cd_customnimfrqs">cd_customnimfrqs</a> a warning will be issued.</p>
-<p><strong> Use at own risk! </strong> The use of a custom grid makes it your responsibility that the SUS and SCR files are valid in self-energy (i.e. <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4) calculations, so caution is advised. Note that frequencies have to be strictly increasing, and the point at zero frequency is <strong> not </strong> considered to be part of the imaginary grid, but rather the grid along the real axis. The calculation of that point should be controlled by <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> and related variables. </p>
+<p>If <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a> is not equal to <a class="wikilink" href="../../input_variables/vargw/#cd_customnimfrqs">cd_customnimfrqs</a> a warning will be issued.</p>
+<p><strong> Use at own risk! </strong> The use of a custom grid makes it your responsibility that the SUS and SCR files are valid in self-energy (i.e. <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4) calculations, so caution is advised. Note that frequencies have to be strictly increasing, and the point at zero frequency is <strong> not </strong> considered to be part of the imaginary grid, but rather the grid along the real axis. The calculation of that point should be controlled by <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> and related variables. </p>
 <h2 id="cd_max_freq"><strong>cd_max_freq</strong><a class="headerlink" href="#cd_max_freq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Contour Deformation grid MAXimum FREQuency<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1000.0 eV<br />
-Only relevant if (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_max_freq">cd_max_freq</a> determines the frequency where all the points defined in
-<a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> are used up. To be used in conjunction with <a class="wikilink" href="../../input_variables/vargw#gw_frqre_tangrid">gw_frqre_tangrid</a>.</p>
+Only relevant if (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_max_freq">cd_max_freq</a> determines the frequency where all the points defined in
+<a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> are used up. To be used in conjunction with <a class="wikilink" href="../../input_variables/vargw/#gw_frqre_tangrid">gw_frqre_tangrid</a>.</p>
 <h2 id="cd_subset_freq"><strong>cd_subset_freq</strong><a class="headerlink" href="#cd_subset_freq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Contour Deformation grid calculate SUBSET of FREQuencies<br />
 Variable type: integer<br />
 Dimensions: (2)<br />
-Default value: [1, &lsquo;<a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>&rsquo;]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29] and  <a class="wikilink" href="../../input_variables/vargw#gw_frqre_tangrid">gw_frqre_tangrid</a>==0  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#cd_subset_freq">cd_subset_freq</a> Specifies that only a subset of the frequencies defined by
-<a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> are to be calculated. The first index is the start and the second
+Default value: [1, &lsquo;<a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>&rsquo;]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29] and  <a class="wikilink" href="../../input_variables/vargw/#gw_frqre_tangrid">gw_frqre_tangrid</a>==0  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#cd_subset_freq">cd_subset_freq</a> Specifies that only a subset of the frequencies defined by
+<a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> are to be calculated. The first index is the start and the second
 the end, with index number 1 always being the origin. For example a
-calculation with <strong> <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>=100 </strong> could be separated into two datasets
+calculation with <strong> <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>=100 </strong> could be separated into two datasets
 with:</p>
 <div class="codehilite"><pre><span></span>subset_freq1   1   50
 subset_freq2   51  100
@@ -660,14 +660,14 @@ merged with the <strong> mrgscr </strong> utility.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> determines the cut-off energy of the planewave set used to
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> determines the cut-off energy of the planewave set used to
 represent the independent-particle susceptibility <script type="math/tex">\chi^{0}_{KS}</script>, the
 dielectric matrix <script type="math/tex">\epsilon</script>, and its inverse.<br />
-It is not worth to take <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> bigger than four times <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, this
+It is not worth to take <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> bigger than four times <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>, this
 latter limit corresponding to the highest Fourier components of a wavefunction
-convoluted with itself. Usually, even twice the value of <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> might
-overkill. A value of <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> between 5 and 10 Hartree often (but not
+convoluted with itself. Usually, even twice the value of <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> might
+overkill. A value of <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> between 5 and 10 Hartree often (but not
 always) leads to converged results (at the level of 0.01 eV for the energy
 gap). In any case, a convergence study is worth.</p>
 <h2 id="ecutsigx"><strong>ecutsigx</strong><a class="headerlink" href="#ecutsigx" title="Permanent link">&para;</a></h2>
@@ -675,56 +675,56 @@ gap). In any case, a convergence study is worth.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a> determines the cut-off energy of the planewave set used to
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a> determines the cut-off energy of the planewave set used to
 generate the exchange part of the self-energy operator. For norm-conserving
-calculations, it is pointless to have <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a> bigger than 4*<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>,
-while for PAW calculations, the maximal useful value is <a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a>. Thus,
+calculations, it is pointless to have <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a> bigger than 4*<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>,
+while for PAW calculations, the maximal useful value is <a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a>. Thus,
 if you do not care about CPU time, please use these values. If you want to
-spare some CPU time, you might try to use a value between <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> and these
+spare some CPU time, you might try to use a value between <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> and these
 upper limits.</p>
 <h2 id="ecutwfn"><strong>ecutwfn</strong><a class="headerlink" href="#ecutwfn" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Energy CUT-off for WaveFunctioNs<br />
 Variable type: real<br />
 Dimensions: scalar<br />
-Default value: <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3, 4],
+Default value: <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3, 4],
 0.0 otherwise.</p>
-<p>Only relevant if  <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> determines the cut-off energy of the planewave set used to
+<p>Only relevant if  <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> determines the cut-off energy of the planewave set used to
 represent the wavefunctions in the formula that generates the independent-
-particle susceptibility <script type="math/tex">\chi^{0}_{KS}</script> (for <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3), or the self-
-energy (for <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4).<br />
-Usually, <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> is smaller than <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>, so that the wavefunctions are
+particle susceptibility <script type="math/tex">\chi^{0}_{KS}</script> (for <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3), or the self-
+energy (for <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4).<br />
+Usually, <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> is smaller than <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>, so that the wavefunctions are
 filtered, and some components are ignored. As a side effect, the wavefunctions
 are no more normalized, and also, no more orthogonal. Also, the set of plane
-waves can be much smaller for <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3, than for <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4,
+waves can be much smaller for <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3, than for <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4,
 although a convergence study is needed to choose correctly both values.</p>
-<p>The size of this set of planewaves is <a class="wikilink" href="../../input_variables/varint#npwwfn">npwwfn</a>.</p>
+<p>The size of this set of planewaves is <a class="wikilink" href="../../input_variables/varint/#npwwfn">npwwfn</a>.</p>
 <h2 id="fftgw"><strong>fftgw</strong><a class="headerlink" href="#fftgw" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: FFT for GW calculation<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 21<br />
-Only relevant if  <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
+Only relevant if  <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
 <p>The basic ingredients needed to perform both a screening and a sigma
 calculation are the so-called oscillator matrix elements defined as  </p>
 <p>&lt; <strong> k-q </strong> , b1 | e^{-i ( <strong> q+G </strong> ). <strong> r </strong> } | <strong> k </strong> b2 &gt;  </p>
 <p>In reciprocal space, this expression is evaluated by a convolution in which
 the number of reciprocal lattice vectors employed to describe the
-wavefunctions is given by <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>. In the case of screening calculations,
+wavefunctions is given by <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>. In the case of screening calculations,
 the number of <strong> G </strong> vectors in the above expression is defined by
-<a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>, while <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a> defined the number of <strong> G </strong> used in sigma
+<a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>, while <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a> defined the number of <strong> G </strong> used in sigma
 calculations. To improve the efficiency of the code, the oscillator matrix
-elements are evaluated in real space through FFT techniques, and the <a class="wikilink" href="../../input_variables/vargw#fftgw">fftgw</a>
+elements are evaluated in real space through FFT techniques, and the <a class="wikilink" href="../../input_variables/vargw/#fftgw">fftgw</a>
 input variable is used to select the FFT mesh to be used.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#fftgw">fftgw</a> is the concatenation of two digits, labelled (A) and (B) whose value
+<p><a class="wikilink" href="../../input_variables/vargw/#fftgw">fftgw</a> is the concatenation of two digits, labelled (A) and (B) whose value
 is internally used to define the value of <a href="../1:3">[ngfft]</a> (see the setmesh.F90
 routine).</p>
 <p>The first digit (A) defines the augmentation of the FFT grid. Possible values
 are 1, 2 and 3.</p>
 <ul>
 <li>0 =&gt; Use the FFT grid specified by the user through <a href="../1:3">[ngfft]</a> </li>
-<li>1 =&gt; Use a coarse FFT grid which encloses a sphere in reciprocal space whose radius depends on the largest value between <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> and <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> </li>
+<li>1 =&gt; Use a coarse FFT grid which encloses a sphere in reciprocal space whose radius depends on the largest value between <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> and <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> </li>
 <li>2 =&gt; Use a slightly augmented FFT which is sufficient for the correct treatment of the convolution </li>
 <li>3 =&gt; Doubled FFT grid (same mesh as that used for GS calculations). </li>
 </ul>
@@ -741,107 +741,107 @@ not:</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 5.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#freqim_alpha">freqim_alpha</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-
-energy (<a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
-<a class="wikilink" href="../../input_variables/vargw#freqim_alpha">freqim_alpha</a> determines the location of the maximum frequency point along
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#freqim_alpha">freqim_alpha</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-
+energy (<a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
+<a class="wikilink" href="../../input_variables/vargw/#freqim_alpha">freqim_alpha</a> determines the location of the maximum frequency point along
 the imaginary axis if the default grid is used in Contour Deformation
 (numerical integration) calculations. It is set as  _ α*ω p  _ , where  _ ω p
 _ is the plasma frequency determined by the average density of the system
-(this can be set by hand by using the variable <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>). See the section on
-grids in the descriptive text for <a class="wikilink" href="../../input_variables/vargw#cd_frqim_method">cd_frqim_method</a> for a detailed
+(this can be set by hand by using the variable <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>). See the section on
+grids in the descriptive text for <a class="wikilink" href="../../input_variables/vargw/#cd_frqim_method">cd_frqim_method</a> for a detailed
 description of the formula.</p>
 <h2 id="freqremax"><strong>freqremax</strong><a class="headerlink" href="#freqremax" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: FREQuencies along the Real axis MAXimum<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-energy
-(<a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
-<a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a> sets the maximum real frequency used to calculate the dielectric
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#freqremax">freqremax</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-energy
+(<a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
+<a class="wikilink" href="../../input_variables/vargw/#freqremax">freqremax</a> sets the maximum real frequency used to calculate the dielectric
 matrix in order to perform the numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-
-energy. <a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a>, <a class="wikilink" href="../../input_variables/vargw#freqremin">freqremin</a> and <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> define the spacing of the
+energy. <a class="wikilink" href="../../input_variables/vargw/#freqremax">freqremax</a>, <a class="wikilink" href="../../input_variables/vargw/#freqremin">freqremin</a> and <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> define the spacing of the
 frequency mesh along the real axis.</p>
 <h2 id="freqremin"><strong>freqremin</strong><a class="headerlink" href="#freqremin" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: FREQuencies along the Real axis MINimum<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#freqremin">freqremin</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-energy
-(<a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
-<a class="wikilink" href="../../input_variables/vargw#freqremin">freqremin</a> sets the minimum real frequency used to calculate the dielectric
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#freqremin">freqremin</a> is used only for numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-energy
+(<a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>= 2, 12, 22, 9, 19, 29).<br />
+<a class="wikilink" href="../../input_variables/vargw/#freqremin">freqremin</a> sets the minimum real frequency used to calculate the dielectric
 matrix in order to perform the numerical integration of the <a class="wikilink" href="../../GW/">GW</a> self-
-energy. <a class="wikilink" href="../../input_variables/vargw#freqremin">freqremin</a> can be used to split a wide frequency interval into
+energy. <a class="wikilink" href="../../input_variables/vargw/#freqremin">freqremin</a> can be used to split a wide frequency interval into
 smaller subintervals that can be calculated independently. The different
 subintervals can then be merged together with the <strong> Mrgscr </strong> utility thus
 obtaining a single screening file that can used for self-energy calculations.
-Note that <a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a>, <a class="wikilink" href="../../input_variables/vargw#freqremin">freqremin</a> and <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> define the spacing of
+Note that <a class="wikilink" href="../../input_variables/vargw/#freqremax">freqremax</a>, <a class="wikilink" href="../../input_variables/vargw/#freqremin">freqremin</a> and <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> define the spacing of
 the frequency mesh along the real axis.</p>
 <h2 id="freqspmax"><strong>freqspmax</strong><a class="headerlink" href="#freqspmax" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: FREQuencies for the SPectral function MAXimum<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a> sets the maximum real frequency used to calculate the spectral
-function from the <a class="wikilink" href="../../GW/">GW</a> Green&rsquo;s function. <a class="wikilink" href="../../input_variables/vargw#freqspmin">freqspmin</a>, <a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a> and
-<a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a> define the spacing of an equidistant frequency mesh along the real
-axis. Alternatively, the variables <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> and <a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a> can
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a> sets the maximum real frequency used to calculate the spectral
+function from the <a class="wikilink" href="../../GW/">GW</a> Green&rsquo;s function. <a class="wikilink" href="../../input_variables/vargw/#freqspmin">freqspmin</a>, <a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a> and
+<a class="wikilink" href="../../input_variables/vargw/#nfreqsp">nfreqsp</a> define the spacing of an equidistant frequency mesh along the real
+axis. Alternatively, the variables <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> and <a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a> can
 be used to make a user-defined grid.</p>
 <h2 id="freqspmin"><strong>freqspmin</strong><a class="headerlink" href="#freqspmin" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: FREQuencies for the SPectral function MINimum<br />
 Variable type: real<br />
 Dimensions: scalar<br />
-Default value: -<a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a><br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#freqspmin">freqspmin</a> sets the minimum real frequency used to calculate the spectral
-function from the <a class="wikilink" href="../../GW/">GW</a> Green&rsquo;s function. <a class="wikilink" href="../../input_variables/vargw#freqspmin">freqspmin</a> is set to
--<a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a> if left undefined. <a class="wikilink" href="../../input_variables/vargw#freqspmin">freqspmin</a>, <a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a>, and
-<a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a> define the spacing of an equidistant frequency mesh along the real
-axis. Alternatively, the variables <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> and <a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a> can
+Default value: -<a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a><br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#freqspmin">freqspmin</a> sets the minimum real frequency used to calculate the spectral
+function from the <a class="wikilink" href="../../GW/">GW</a> Green&rsquo;s function. <a class="wikilink" href="../../input_variables/vargw/#freqspmin">freqspmin</a> is set to
+-<a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a> if left undefined. <a class="wikilink" href="../../input_variables/vargw/#freqspmin">freqspmin</a>, <a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a>, and
+<a class="wikilink" href="../../input_variables/vargw/#nfreqsp">nfreqsp</a> define the spacing of an equidistant frequency mesh along the real
+axis. Alternatively, the variables <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> and <a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a> can
 be used to make a user-defined grid.</p>
 <h2 id="gw_customnfreqsp"><strong>gw_customnfreqsp</strong><a class="headerlink" href="#gw_customnfreqsp" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW CUSTOM FREQuencies for SPectral function<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> lets the user define the grid points along the real
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> lets the user define the grid points along the real
 frequency axis by hand for the calculation of the self-energy along the real
 axis. Set this to the number of frequencies you want. The frequencies are
-specified with <a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a>.</p>
+specified with <a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a>.</p>
 <h2 id="gw_freqsp"><strong>gw_freqsp</strong><a class="headerlink" href="#gw_freqsp" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW SPectral FREQuencies<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a>)<br />
-Default value: [1 .. <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a>]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> &gt; 0   </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a> specifies the grid points for the real frequency axis when the
+Dimensions: (<a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a>)<br />
+Default value: [1 .. <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a>]<br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> &gt; 0   </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a> specifies the grid points for the real frequency axis when the
 real and imaginary (spectral funtion) parts of sigma are calculated explicitly
-for post-processing or plotting. Only activated if <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> is not
+for post-processing or plotting. Only activated if <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> is not
 equal to 0. The number of frequencies is set by the value of
-<a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a>. Example:</p>
+<a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a>. Example:</p>
 <div class="codehilite"><pre><span></span>gw_customnfreqsp   5
 nfreqsp            5
 gw_freqsp         -0.5  -0.1  0.0  1.0  10.0 eV
 </pre></div>
 
 
-<p>If <a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a> is not equal to <a class="wikilink" href="../../input_variables/vargw#gw_customnfreqsp">gw_customnfreqsp</a> a warning will be issued.</p>
+<p>If <a class="wikilink" href="../../input_variables/vargw/#nfreqsp">nfreqsp</a> is not equal to <a class="wikilink" href="../../input_variables/vargw/#gw_customnfreqsp">gw_customnfreqsp</a> a warning will be issued.</p>
 <h2 id="gw_frqim_inzgrid"><strong>gw_frqim_inzgrid</strong><a class="headerlink" href="#gw_frqim_inzgrid" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_frqim_inzgrid">gw_frqim_inzgrid</a> creates gridpoints along the <strong> imaginary </strong> frequency
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a> creates gridpoints along the <strong> imaginary </strong> frequency
 axis by using an equidistant grid in the variable  _ z ⊂ [0,1] _ where the
 transform is:</p>
 <p><img alt="" src="../../vargw_img/cd_inzgrid.png" /></p>
 <p>Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
-<a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>). The equidistant grid in z is determined uniquely by <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>)
+<a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>). The equidistant grid in z is determined uniquely by <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>)
 and the points are distributed so that half of them lie below the plasma
 frequency.</p>
 <h2 id="gw_frqre_inzgrid"><strong>gw_frqre_inzgrid</strong><a class="headerlink" href="#gw_frqre_inzgrid" title="Permanent link">&para;</a></h2>
@@ -849,15 +849,15 @@ frequency.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_frqre_inzgrid">gw_frqre_inzgrid</a> creates grid points along the <strong> real </strong> frequency axis
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_frqre_inzgrid">gw_frqre_inzgrid</a> creates grid points along the <strong> real </strong> frequency axis
 by using an equidistant grid in the variable  _ z ⊂ [0,1] _ where the
 transform is:</p>
 <p><img alt="" src="../../vargw_img/cd_inzgrid_re.png" /></p>
 <p>Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
-<a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>). The equidistant grid in z is determined uniquely by <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> )
+<a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>). The equidistant grid in z is determined uniquely by <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> )
 and the points are distributed so that half of them lie below the plasma
-frequency. This is useful in conjuction with <a class="wikilink" href="../../input_variables/vargw#gw_frqim_inzgrid">gw_frqim_inzgrid</a> if one needs
+frequency. This is useful in conjuction with <a class="wikilink" href="../../input_variables/vargw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a> if one needs
 to use a grid which maps  _ [0,∞[ -&gt; [0,1] _ . Note that typically _ many _
 more points are needed along the real axis in order to properly resolve peak
 structures. In contrast, both the screening and self-energy are very smooth
@@ -871,51 +871,51 @@ during Contour Deformation sigma calculations.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_frqre_tangrid">gw_frqre_tangrid</a> defines a nonuniform grid to be used in frequency, with
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,9,12,19,22,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_frqre_tangrid">gw_frqre_tangrid</a> defines a nonuniform grid to be used in frequency, with
 stepsize increasing proportional to tan(x). This makes the grid approximately
 linear to start with, with a rapid increase towards the end. Also, this is the
 grid which gives equal importance to each point used in the integration of a
-function which decays as 1/x^2. To be used in conjunction with <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>,
-<a class="wikilink" href="../../input_variables/vargw#cd_max_freq">cd_max_freq</a> and <a class="wikilink" href="../../input_variables/vargw#cd_halfway_freq">cd_halfway_freq</a> which determine the parameters of the
+function which decays as 1/x^2. To be used in conjunction with <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>,
+<a class="wikilink" href="../../input_variables/vargw/#cd_max_freq">cd_max_freq</a> and <a class="wikilink" href="../../input_variables/vargw/#cd_halfway_freq">cd_halfway_freq</a> which determine the parameters of the
 transformed grid.</p>
 <h2 id="gw_invalid_freq"><strong>gw_invalid_freq</strong><a class="headerlink" href="#gw_invalid_freq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW treatment of INVALID FREQuency for Hybertsen-Louie PPM<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a> in [2]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_invalid_freq">gw_invalid_freq</a> sets the procedure to follow when a PPM frequency is
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a> in [2]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_invalid_freq">gw_invalid_freq</a> sets the procedure to follow when a PPM frequency is
 invalid (negative or imaginary).</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gw_invalid_freq">gw_invalid_freq</a>=0 : Drop them as proposed in Appendix B of PRB 34, 8, 5390, 1986. </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gw_invalid_freq">gw_invalid_freq</a>=1 : Set them to 1 hartree, as done for the PPM of Godby-Needs. </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gw_invalid_freq">gw_invalid_freq</a>=2 : Set them to infinity. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gw_invalid_freq">gw_invalid_freq</a>=0 : Drop them as proposed in Appendix B of PRB 34, 8, 5390, 1986. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gw_invalid_freq">gw_invalid_freq</a>=1 : Set them to 1 hartree, as done for the PPM of Godby-Needs. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gw_invalid_freq">gw_invalid_freq</a>=2 : Set them to infinity. </li>
 </ul>
 <h2 id="gw_nqlwl"><strong>gw_nqlwl</strong><a class="headerlink" href="#gw_nqlwl" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW, Number of Q-points for the Long Wave-Length Limit<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4,99]  </p>
-<p>Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3,4,99 that is, screening, sigma or
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4,99]  </p>
+<p>Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3,4,99 that is, screening, sigma or
 <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> calculations, although the actual meaning of the variable
 depends on the particular run-level (see discussion below).</p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_nqlwl">gw_nqlwl</a> defines the number of directions in reciprocal space used to
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_nqlwl">gw_nqlwl</a> defines the number of directions in reciprocal space used to
 describe the non-analytical behaviour of the heads (G = G&rsquo;=0) and the wings
 (G=0 or G&rsquo;=0) of the dielectric matrix in the optical limit (i.e. for q
 tending to zero). The number of directions is specified by the additional
-variable <a class="wikilink" href="../../input_variables/vargw#gw_qlwl">gw_qlwl</a>.</p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3, <a class="wikilink" href="../../input_variables/vargw#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> define the set of &ldquo;small&rdquo;
+variable <a class="wikilink" href="../../input_variables/vargw/#gw_qlwl">gw_qlwl</a>.</p>
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3, <a class="wikilink" href="../../input_variables/vargw/#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> define the set of &ldquo;small&rdquo;
 q that will be calculated and stored in the final SCR file. Therefore, the two
 variables can be used to analyze how the optical spectra depend on the
 direction of the incident phonon (useful especially in anisotropic systems).</p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4, <a class="wikilink" href="../../input_variables/vargw#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> can be used to specify
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4, <a class="wikilink" href="../../input_variables/vargw/#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> can be used to specify
 the heads and the wings to be used to perform the quadrature of the correlated
 part of the self-energy in the small region around the origin. (NB: not yet
 available, at present the quadrature is performed using a single direction in
 q-space)</p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=99, <a class="wikilink" href="../../input_variables/vargw#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> define the set of
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=99, <a class="wikilink" href="../../input_variables/vargw/#gw_nqlwl">gw_nqlwl</a> and <strong> gw_qlwl </strong> define the set of
 directions in q-space along which the macroscopic dielectric function is
 evaluated. By default the <a class="wikilink" href="../../BETHE_SALPETER/">BETHE_SALPETER</a> code calculates the macroscopic
 dielectric function using six different directions in q-space (the three basis
@@ -925,28 +925,28 @@ vectors of the reciprocal lattice and the three Cartesian axis).</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 30<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==8  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==8  </p>
 <p>Gives the maximum number of self-consistent <a class="wikilink" href="../../GW/">GW</a> cycles (or &ldquo;iterations&rdquo;).
 in which G and/or W will be updated until the quasi-particle energies are
-converged within <a class="wikilink" href="../../input_variables/vargw#gw_toldfeig">gw_toldfeig</a>. <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> and <a class="wikilink" href="../../input_variables/vargw#gw_sctype">gw_sctype</a> are used to
+converged within <a class="wikilink" href="../../input_variables/vargw/#gw_toldfeig">gw_toldfeig</a>. <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> and <a class="wikilink" href="../../input_variables/vargw/#gw_sctype">gw_sctype</a> are used to
 define the type of self-consistency.</p>
 <h2 id="gw_qlwl"><strong>gw_qlwl</strong><a class="headerlink" href="#gw_qlwl" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW, Q-points for the Long Wave-Length limit<br />
 Variable type: real<br />
-Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw#gw_nqlwl">gw_nqlwl</a>)<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw/#gw_nqlwl">gw_nqlwl</a>)<br />
 Default value: [1e-05, 2e-05, 3e-05]<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3, <a class="wikilink" href="../../input_variables/vargw#gw_qlwl">gw_qlwl</a> defines the set of q-points around Gamma
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3, <a class="wikilink" href="../../input_variables/vargw/#gw_qlwl">gw_qlwl</a> defines the set of q-points around Gamma
 that are considered during the evaluation of the non-analytical behaviour of
 the dielectric matrix. Optical spectra (with and without non-local field
-effects) are evaluated for each direction specified by <a class="wikilink" href="../../input_variables/vargw#gw_qlwl">gw_qlwl</a>.</p>
+effects) are evaluated for each direction specified by <a class="wikilink" href="../../input_variables/vargw/#gw_qlwl">gw_qlwl</a>.</p>
 <h2 id="gw_qprange"><strong>gw_qprange</strong><a class="headerlink" href="#gw_qprange" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW QuasiParticle RANGE policy<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_qprange">gw_qprange</a> is active only when <a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a> is equal to zero (default
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_qprange">gw_qprange</a> is active only when <a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a> is equal to zero (default
 value). This variable simplifies the specification of the list of kpoints and
 of the bands to be used for the computation of the quasi-particle corrections.
 The possible values are:</p>
@@ -965,23 +965,23 @@ LOMO and we want to investigate the effect of the <a class="wikilink" href="../.
 states close to the gap Negative values are usually used for self-consistent
 calculations Note that, in the case of self-consistency or symsigma=1, the
 code might change the bands range so that all the degenerate states are
-included. Note also that <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a>, and <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> are ignored when this options
+included. Note also that <a class="wikilink" href="../../input_variables/vargw/#kptgw">kptgw</a>, and <a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a> are ignored when this options
 is used. If you want to select manually the list of k-points and bands, you
-have to provide the three variables <a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>, <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a>, and <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a>.</p>
+have to provide the three variables <a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a>, <a class="wikilink" href="../../input_variables/vargw/#kptgw">kptgw</a>, and <a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a>.</p>
 <h2 id="gw_sctype"><strong>gw_sctype</strong><a class="headerlink" href="#gw_sctype" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW, Self-Consistency TYPE<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
 <p>This variable is used to partially define the kind of self-consistency for
-<a class="wikilink" href="../../GW/">GW</a> calculations. The other piece of information is given by <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>
+<a class="wikilink" href="../../GW/">GW</a> calculations. The other piece of information is given by <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>
 that defines the particular approximation for the self-energy operator as well
 as whether the wavefunctions have to replaced by quasi-particle amplitudes.</p>
-<p>If <a class="wikilink" href="../../input_variables/vargw#gw_sctype">gw_sctype</a> is specified in the input file, the code will perform an
+<p>If <a class="wikilink" href="../../input_variables/vargw/#gw_sctype">gw_sctype</a> is specified in the input file, the code will perform an
 iterative update of the quantities entering the <a class="wikilink" href="../../GW/">GW</a> equations until the
-quasi-particle energies are converged within <a class="wikilink" href="../../input_variables/vargw#gw_toldfeig">gw_toldfeig</a>. The maximum
-number of iterations is specified by <a class="wikilink" href="../../input_variables/vargw#gw_nstep">gw_nstep</a>. Possible values are:</p>
+quasi-particle energies are converged within <a class="wikilink" href="../../input_variables/vargw/#gw_toldfeig">gw_toldfeig</a>. The maximum
+number of iterations is specified by <a class="wikilink" href="../../input_variables/vargw/#gw_nstep">gw_nstep</a>. Possible values are:</p>
 <ul>
 <li>1 =&gt; standard one-shot method (one screening calculation followed by a single sigma run) </li>
 <li>2 =&gt; self-consistency only on W (iterative update of W followed by a sigma run in which G is approximated with the Kohn-Sham independent-particle Green&rsquo;s function G0) </li>
@@ -989,8 +989,8 @@ number of iterations is specified by <a class="wikilink" href="../../input_varia
 <li>4 =&gt; fully self-consistent algorithm (iterative update of both G and W) </li>
 </ul>
 <p>It is possible to initialize the self-consistent procedure by reading a
-previously calculated SCR or SUSC file via the variables <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> or
-<a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>, respectively. <a class="wikilink" href="../../input_variables/varfil#getqps">getqps</a> can be used to read a previous QPS
+previously calculated SCR or SUSC file via the variables <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> or
+<a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>, respectively. <a class="wikilink" href="../../input_variables/varfil/#getqps">getqps</a> can be used to read a previous QPS
 file thus initializing the Green functions to be used in the first self-
 consistent iteration.</p>
 <h2 id="gw_sigxcore"><strong>gw_sigxcore</strong><a class="headerlink" href="#gw_sigxcore" title="Permanent link">&para;</a></h2>
@@ -998,8 +998,8 @@ consistent iteration.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/varint#usepaw">usepaw</a>==1  </p>
-<p>Only available for PAW and relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4 that is, sigma
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/varint/#usepaw">usepaw</a>==1  </p>
+<p>Only available for PAW and relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4 that is, sigma
 calculations.</p>
 <p>Theoretical introduction: <a class="wikilink" href="../../GW/">GW</a> calculations performed on top of electronic
 calculations relying when the frozen-core approximation is used to separate
@@ -1015,18 +1015,18 @@ ingredients required for this more refined treatment are the wave functions of
 the core electrons in the reference atomic configuration that are calculated
 during the generation of the PAW setup. This is a good approximation provided
 that the core wave functions are strictly localized inside the PAW spheres.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#gw_sigxcore">gw_sigxcore</a> defines the approximation used to evaluate the core
+<p><a class="wikilink" href="../../input_variables/vargw/#gw_sigxcore">gw_sigxcore</a> defines the approximation used to evaluate the core
 contribution to sigma.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gw_sigxcore">gw_sigxcore</a> = 0, standard approach, the core contribution is approximated with vxc. </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gw_sigxcore">gw_sigxcore</a> = 1, the core term is approximated with the Fock operator inside the PAW spheres. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gw_sigxcore">gw_sigxcore</a> = 0, standard approach, the core contribution is approximated with vxc. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gw_sigxcore">gw_sigxcore</a> = 1, the core term is approximated with the Fock operator inside the PAW spheres. </li>
 </ul>
 <h2 id="gw_toldfeig"><strong>gw_toldfeig</strong><a class="headerlink" href="#gw_toldfeig" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW TOLerance on the DiFference of the EIGenvalues<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.1 eV<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==8  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==8  </p>
 <p>Sets a tolerance for absolute differences of QP energies that will cause one
 self-consistent <a class="wikilink" href="../../GW/">GW</a> cycle to stop.<br />
 Can be specified in Ha (the default), Ry, eV or Kelvin, since <strong> toldfe </strong> has
@@ -1036,43 +1036,43 @@ the &lsquo;<a class="wikilink" href="../../ENERGY/">ENERGY</a>&lsquo; characteri
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> governs the choice between the different capabilities of the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> governs the choice between the different capabilities of the
 <a class="wikilink" href="../../GW/">GW</a> code.</p>
 <ul>
-<li>0 &lt;= <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> &lt;= 9 : standard &ldquo;1 shot&rdquo; quasiparticle method </li>
-<li>10 &lt;= <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> &lt;= 19 : self-consistent quasiparticle method on energies only </li>
+<li>0 &lt;= <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> &lt;= 9 : standard &ldquo;1 shot&rdquo; quasiparticle method </li>
+<li>10 &lt;= <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> &lt;= 19 : self-consistent quasiparticle method on energies only </li>
 <li>
-<p>20 &lt;= <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> &lt;= 29 : self-consistent quasiparticle method on energies and wavefunctions </p>
+<p>20 &lt;= <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> &lt;= 29 : self-consistent quasiparticle method on energies and wavefunctions </p>
 </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 0, 10, or 20 : standard Plasmon-Pole model <a class="wikilink" href="../../GW/">GW</a> calculation </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 0, 10, or 20 : standard Plasmon-Pole model <a class="wikilink" href="../../GW/">GW</a> calculation </p>
 </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 1 : <a class="wikilink" href="../../GW/">GW</a> calculation where the self-energy along the real axis is obtained by performing the analytic continuation from the imaginary axis to the full complex plane via the Pade approximant. Only available for standard &ldquo;1 shot&rdquo; quasiparticle method. </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 2, 12, or 22 : <a class="wikilink" href="../../GW/">GW</a> calculation using numerical integration (contour deformation method, see e.g. S. Lebegue _ et al. _ PRB <strong> 67 </strong> , 155208 (2003).) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 5, 15, or 25 : Hartree-Fock calculation </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 6, 16, or 26 : Screened Exchange calculation </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 7, 17, or 27 : COHSEX calculation </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 8, 18, or 28 : model <a class="wikilink" href="../../GW/">GW</a> calculation following S. Faleev _ et al. _ PRL <strong> 93 </strong> , 126406 (2004) using a Plasmon-Pole model </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 9, 19, or 29 : model <a class="wikilink" href="../../GW/">GW</a> calculation following S. Faleev _ et al. _ PRL <strong> 93 </strong> , 126406 (2004) using numerical integration (contour deformation method) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 1 : <a class="wikilink" href="../../GW/">GW</a> calculation where the self-energy along the real axis is obtained by performing the analytic continuation from the imaginary axis to the full complex plane via the Pade approximant. Only available for standard &ldquo;1 shot&rdquo; quasiparticle method. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 2, 12, or 22 : <a class="wikilink" href="../../GW/">GW</a> calculation using numerical integration (contour deformation method, see e.g. S. Lebegue _ et al. _ PRB <strong> 67 </strong> , 155208 (2003).) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 5, 15, or 25 : Hartree-Fock calculation </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 6, 16, or 26 : Screened Exchange calculation </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 7, 17, or 27 : COHSEX calculation </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 8, 18, or 28 : model <a class="wikilink" href="../../GW/">GW</a> calculation following S. Faleev _ et al. _ PRL <strong> 93 </strong> , 126406 (2004) using a Plasmon-Pole model </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 9, 19, or 29 : model <a class="wikilink" href="../../GW/">GW</a> calculation following S. Faleev _ et al. _ PRL <strong> 93 </strong> , 126406 (2004) using numerical integration (contour deformation method) </li>
 </ul>
 <p>Also</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 105,125 : HSE06 calculations (1-shot and self-consistent) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 205,225 : PBE0 calculations (1-shot and self-consistent) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 305,325 : B3LYP calculations (1-shot and self-consistent) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 105,125 : HSE06 calculations (1-shot and self-consistent) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 205,225 : PBE0 calculations (1-shot and self-consistent) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 305,325 : B3LYP calculations (1-shot and self-consistent) </li>
 </ul>
 <h2 id="gwcomp"><strong>gwcomp</strong><a class="headerlink" href="#gwcomp" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW COMPleteness<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwcomp">gwcomp</a> governs the use of an extrapolar approximation. If <a class="wikilink" href="../../input_variables/vargw#gwcomp">gwcomp</a>==1,
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwcomp">gwcomp</a> governs the use of an extrapolar approximation. If <a class="wikilink" href="../../input_variables/vargw/#gwcomp">gwcomp</a>==1,
 one improves the completeness in a truncated sum over states. In practice,
 this permits one to reduce quite much the number of bands required in the
 calculation of the screening or of the self-energy. The energy parameter
-needed in the extrapolar approximation is set by <a class="wikilink" href="../../input_variables/vargw#gwencomp">gwencomp</a>. See F.
+needed in the extrapolar approximation is set by <a class="wikilink" href="../../input_variables/vargw/#gwencomp">gwencomp</a>. See F.
 Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of the
 methodology.</p>
 <h2 id="gwencomp"><strong>gwencomp</strong><a class="headerlink" href="#gwencomp" title="Permanent link">&para;</a></h2>
@@ -1080,8 +1080,8 @@ methodology.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 2.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw#gwcomp">gwcomp</a>==1  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwencomp">gwencomp</a> sets the energy parameter used in the extrapolar approximation
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4] and <a class="wikilink" href="../../input_variables/vargw/#gwcomp">gwcomp</a>==1  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwencomp">gwencomp</a> sets the energy parameter used in the extrapolar approximation
 used to improve completeness and make the convergence against the number of
 bands much faster.</p>
 <p>See F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of
@@ -1091,35 +1091,35 @@ the methodology.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.25<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4, <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> = 1x5 (HSE) or 2x5 (PBE0).  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4, <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> = 1x5 (HSE) or 2x5 (PBE0).  </p>
 <p>Mixing parameter of Fock exchange for PBE0 and HSE hybrid-functional
-calculations via the GW self-energy subroutine. <a class="wikilink" href="../../input_variables/vargw#gwfockmix">gwfockmix</a> ranges from 0
+calculations via the GW self-energy subroutine. <a class="wikilink" href="../../input_variables/vargw/#gwfockmix">gwfockmix</a> ranges from 0
 (essentially PBE) to 1.</p>
 <h2 id="gwgamma"><strong>gwgamma</strong><a class="headerlink" href="#gwgamma" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW GAMMA<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 or 4 (Sigma calculations)  </p>
-<p>If <a class="wikilink" href="../../input_variables/vargw#gwgamma">gwgamma</a> is 1, the vertex correction will be included leading to what is
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 or 4 (Sigma calculations)  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargw/#gwgamma">gwgamma</a> is 1, the vertex correction will be included leading to what is
 known as &ldquo;<a class="wikilink" href="../../GW/">GW</a>Gamma&rdquo; approximation. see R. Del Sole, L. Reining, and R. W.
 Godby, Phys. Rev. B 49, 8024 (1994). Note that, in order to include the vertex
 correction in W, one has to start the sigma calculation from the
-susceptibility file_SUSC instead of the _SCR file (see <a class="wikilink" href="../../input_variables/varfil#getsuscep">getsuscep</a>   and
-<a class="wikilink" href="../../input_variables/varfil#irdsuscep">irdsuscep</a>  ) Not available for PAW calculations.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwgamma">gwgamma</a>=-4 activates the bootstrap kernel of Sharma et al. [Phys. Rev.
+susceptibility file_SUSC instead of the _SCR file (see <a class="wikilink" href="../../input_variables/varfil/#getsuscep">getsuscep</a>   and
+<a class="wikilink" href="../../input_variables/varfil/#irdsuscep">irdsuscep</a>  ) Not available for PAW calculations.</p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwgamma">gwgamma</a>=-4 activates the bootstrap kernel of Sharma et al. [Phys. Rev.
 Lett. 107, 186401 (2011)] in the test-charge-test-charge dielectric function
 [cf. Chen and Pasquarello, Phys. Rev. B 92, 041115(R) (2015)]. A cheaper one-
-shot variant can be achieved with <a class="wikilink" href="../../input_variables/vargw#gwgamma">gwgamma</a>=-6 using only the head of the
+shot variant can be achieved with <a class="wikilink" href="../../input_variables/vargw/#gwgamma">gwgamma</a>=-6 using only the head of the
 kernel.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwgamma">gwgamma</a>=-8 uses the RPA bootstrap-like kernel (one-shot) [Phys. Rev. Lett.
+<p><a class="wikilink" href="../../input_variables/vargw/#gwgamma">gwgamma</a>=-8 uses the RPA bootstrap-like kernel (one-shot) [Phys. Rev. Lett.
 115, 137402 (2015), ibid. 114, 146402 (2015)].</p>
 <h2 id="gwls_band_index"><strong>gwls_band_index</strong><a class="headerlink" href="#gwls_band_index" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS BAND INDEX<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Governs the DFT eigenstate |e&gt; in which the self-energy will be evaluated, as
 shown in eq. (7) of Phys. Rev. B 91, 125120 (2015). That is, it is the state
 to be corrected in the G0W0 scheme.</p>
@@ -1128,20 +1128,20 @@ to be corrected in the G0W0 scheme.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 3<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Governs the use of a dielectric model (as explained in section V of Phys. Rev.
 B 91, 125120 (2015). and the use of the Lanczos scheme to solve eqs. (30) and
-(35) of the same reference at all external <a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a> and integration (as
-generated from <a class="wikilink" href="../../input_variables/vargw#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>) frequencies. The different choices
+(35) of the same reference at all external <a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a> and integration (as
+generated from <a class="wikilink" href="../../input_variables/vargw/#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>) frequencies. The different choices
 are:</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 1 : GWLS calculation WITH the dielectric model and WITHOUT the shift Lanczos technique, </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 2 : GWLS calculation WITHOUT the dielectric model and WITHOUT the shift Lanczos technique, </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 3 : GWLS calculation WITH the dielectric model and WITH the shift Lanczos technique, </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 4 : GWLS calculation WITHOUT the dielectric model and WITH the shift Lanczos technique, </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 5 : Not a GWLS calculation; just calculate and print the eigenvalues of the (static) dielectric matrix (for debugging purposes). </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 1 : GWLS calculation WITH the dielectric model and WITHOUT the shift Lanczos technique, </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 2 : GWLS calculation WITHOUT the dielectric model and WITHOUT the shift Lanczos technique, </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 3 : GWLS calculation WITH the dielectric model and WITH the shift Lanczos technique, </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 4 : GWLS calculation WITHOUT the dielectric model and WITH the shift Lanczos technique, </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 5 : Not a GWLS calculation; just calculate and print the eigenvalues of the (static) dielectric matrix (for debugging purposes). </li>
 </ul>
-<p>The default, (<a class="wikilink" href="../../input_variables/vargw#gwls_correlation">gwls_correlation</a> == 3), is the most performant option and
+<p>The default, (<a class="wikilink" href="../../input_variables/vargw/#gwls_correlation">gwls_correlation</a> == 3), is the most performant option and
 should be kept by the user. Option 1, 2 and 5 are deprecated and will be
 removed.</p>
 <h2 id="gwls_dielectric_model"><strong>gwls_dielectric_model</strong><a class="headerlink" href="#gwls_dielectric_model" title="Permanent link">&para;</a></h2>
@@ -1149,31 +1149,31 @@ removed.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 2<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Not used yet.</p>
 <h2 id="gwls_exchange"><strong>gwls_exchange</strong><a class="headerlink" href="#gwls_exchange" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS exact EXCHANGE<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Governs whether the exact exchange for the state to be corrected
-(<a class="wikilink" href="../../input_variables/vargw#gwls_band_index">gwls_band_index</a>) is calculated (<a class="wikilink" href="../../input_variables/vargw#gwls_exchange">gwls_exchange</a>==1) or not
-(<a class="wikilink" href="../../input_variables/vargw#gwls_exchange">gwls_exchange</a>==0).</p>
+(<a class="wikilink" href="../../input_variables/vargw/#gwls_band_index">gwls_band_index</a>) is calculated (<a class="wikilink" href="../../input_variables/vargw/#gwls_exchange">gwls_exchange</a>==1) or not
+(<a class="wikilink" href="../../input_variables/vargw/#gwls_exchange">gwls_exchange</a>==0).</p>
 <h2 id="gwls_first_seed"><strong>gwls_first_seed</strong><a class="headerlink" href="#gwls_first_seed" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS FIRST SEED vector<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
-Default value: <a class="wikilink" href="../../input_variables/vargw#gwls_band_index">gwls_band_index</a><br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Default value: <a class="wikilink" href="../../input_variables/vargw/#gwls_band_index">gwls_band_index</a><br />
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable sets the band index to be used to generate the first seed vector
 to be used in the construction of the Lanczos basis for the (static)
 dielectric matrix in a GWLS calculation. See section IV of Phys. Rev. B 91,
-125120 (2015). Together with <a class="wikilink" href="../../input_variables/vargw#gwls_nseeds">gwls_nseeds</a>, defines the seeds for the
+125120 (2015). Together with <a class="wikilink" href="../../input_variables/vargw/#gwls_nseeds">gwls_nseeds</a>, defines the seeds for the
 Lanczos procedure. That is, the states associated to band index
-<a class="wikilink" href="../../input_variables/vargw#gwls_first_seed">gwls_first_seed</a> to <a class="wikilink" href="../../input_variables/vargw#gwls_first_seed">gwls_first_seed</a>+<a class="wikilink" href="../../input_variables/vargw#gwls_nseeds">gwls_nseeds</a>-1 are used to
+<a class="wikilink" href="../../input_variables/vargw/#gwls_first_seed">gwls_first_seed</a> to <a class="wikilink" href="../../input_variables/vargw/#gwls_first_seed">gwls_first_seed</a>+<a class="wikilink" href="../../input_variables/vargw/#gwls_nseeds">gwls_nseeds</a>-1 are used to
 generate the seed vectors.</p>
-<p>The default <a class="wikilink" href="../../input_variables/vargw#gwls_first_seed">gwls_first_seed</a>==<a class="wikilink" href="../../input_variables/vargw#gwls_band_index">gwls_band_index</a> and <a class="wikilink" href="../../input_variables/vargw#gwls_nseeds">gwls_nseeds</a>==1
+<p>The default <a class="wikilink" href="../../input_variables/vargw/#gwls_first_seed">gwls_first_seed</a>==<a class="wikilink" href="../../input_variables/vargw/#gwls_band_index">gwls_band_index</a> and <a class="wikilink" href="../../input_variables/vargw/#gwls_nseeds">gwls_nseeds</a>==1
 has been touroughly tested and seems to be the most performant. Users should
 therefore keep the default value.</p>
 <h2 id="gwls_kmax_analytic"><strong>gwls_kmax_analytic</strong><a class="headerlink" href="#gwls_kmax_analytic" title="Permanent link">&para;</a></h2>
@@ -1181,17 +1181,17 @@ therefore keep the default value.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 8<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Governs the number of iterations to be done in the shift Lanczos solution of
 eq. (35) of Phys. Rev. B 91, 125120 (2015) to solve it at all external
-frequencies requested by the user (<a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a>). The default value is
+frequencies requested by the user (<a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a>). The default value is
 converged to a few 10s of meV for all molecules studied so far.</p>
 <h2 id="gwls_kmax_complement"><strong>gwls_kmax_complement</strong><a class="headerlink" href="#gwls_kmax_complement" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS KMAX for the COMPLEMENT space.<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>The G0W0 formalism involves the calculation of a summation conceptually linked
 to the trace of the dielectric matrix (see eq. (38) of Phys. Rev. B 91, 125120
 (2015). Since the eigenvalues spectrum of the dielectric matrix of formed by a
@@ -1201,8 +1201,8 @@ using the exact dielectric operator. It this becomes interesting to calculate
 the &lsquo;trace&rsquo; of the &lsquo;exact - model&rsquo; dielectric matrix in a small basis and add
 it to the &lsquo;trace&rsquo; of the &lsquo;model&rsquo; dielectric matrix obtained in a large bais.
 In the context where the model dielectric matrix is used in the calculations,
-<a class="wikilink" href="../../input_variables/vargw#gwls_sternheimer_kmax">gwls_sternheimer_kmax</a> determines the size of the &lsquo;small&rsquo; basis and
-<a class="wikilink" href="../../input_variables/vargw#gwls_kmax_complement">gwls_kmax_complement</a> determines the size of the &lsquo;large&rsquo; basis.</p>
+<a class="wikilink" href="../../input_variables/vargw/#gwls_sternheimer_kmax">gwls_sternheimer_kmax</a> determines the size of the &lsquo;small&rsquo; basis and
+<a class="wikilink" href="../../input_variables/vargw/#gwls_kmax_complement">gwls_kmax_complement</a> determines the size of the &lsquo;large&rsquo; basis.</p>
 <p>For more information on the exact role of these bases and on the model
 dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).</p>
 <h2 id="gwls_kmax_numeric"><strong>gwls_kmax_numeric</strong><a class="headerlink" href="#gwls_kmax_numeric" title="Permanent link">&para;</a></h2>
@@ -1210,22 +1210,22 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 16<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Governs the number of iterations to be done in the shift Lanczos solution of
 eq. (30) of Phys. Rev. B 91, 125120 (2015) to solve it simultaneously at all
 integration frequencies (generated automatically by the number of points
-<a class="wikilink" href="../../input_variables/vargw#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a> to use in the gaussian quadrature) and all external
-frequencies requested by the user (<a class="wikilink" href="../../input_variables/vargw#gw_freqsp">gw_freqsp</a>). The default value is
+<a class="wikilink" href="../../input_variables/vargw/#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a> to use in the gaussian quadrature) and all external
+frequencies requested by the user (<a class="wikilink" href="../../input_variables/vargw/#gw_freqsp">gw_freqsp</a>). The default value is
 converged to a few 10s of meV for all molecules studied so far.</p>
 <h2 id="gwls_kmax_poles"><strong>gwls_kmax_poles</strong><a class="headerlink" href="#gwls_kmax_poles" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS KMAX for the calculation of the POLES residue<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 4<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>The contour deformation technique, in the G0W0 context, will involve the
 calculation of pole residues associated to states lying between the one
-corrected (<a class="wikilink" href="../../input_variables/vargw#gwls_band_index">gwls_band_index</a>) and the fermi level. These residues take the
+corrected (<a class="wikilink" href="../../input_variables/vargw/#gwls_band_index">gwls_band_index</a>) and the fermi level. These residues take the
 form of a matrix element of the inverse dielectric matrix at a real frequency
 (see eq. (11) of Phys. Rev. B 91, 125120 (2015)). Therefore, the dielectric
 matrix must be constructed in some basis at these frequencies and inverted to
@@ -1238,22 +1238,22 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).</p>
 <h2 id="gwls_list_proj_freq"><strong>gwls_list_proj_freq</strong><a class="headerlink" href="#gwls_list_proj_freq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS LIST of the PROJection FREQuencies<br />
 Variable type: real<br />
-Dimensions: (<a class="wikilink" href="../../input_variables/vargw#gwls_n_proj_freq">gwls_n_proj_freq</a>)<br />
+Dimensions: (<a class="wikilink" href="../../input_variables/vargw/#gwls_n_proj_freq">gwls_n_proj_freq</a>)<br />
 Default value: *0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable sets the frequencies to be used to construct the basis in which
 the Hamiltonian is projected to accelerate the solution of the Sternheimer
 equations involved by the construction of the dielectric matrix at finite
 frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
-since the frequencies \Infty and (if <a class="wikilink" href="../../input_variables/vargw#gwls_recycle">gwls_recycle</a>&gt;0) 0.0 are used at no
-computational cost, <a class="wikilink" href="../../input_variables/vargw#gwls_n_proj_freq">gwls_n_proj_freq</a>==0 (which means no ADDITIONAL
+since the frequencies \Infty and (if <a class="wikilink" href="../../input_variables/vargw/#gwls_recycle">gwls_recycle</a>&gt;0) 0.0 are used at no
+computational cost, <a class="wikilink" href="../../input_variables/vargw/#gwls_n_proj_freq">gwls_n_proj_freq</a>==0 (which means no ADDITIONAL
 frequency is to be used) is fine and no frequencies need to be picked up.</p>
 <h2 id="gwls_model_parameter"><strong>gwls_model_parameter</strong><a class="headerlink" href="#gwls_model_parameter" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS MODEL PARAMETER<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This is the width of the lorentzian, in Ha, used to model the frequency
 dependence of the dielectric matrix in the GWLS calculation (see eqs. (12),
 (13), (14), (15), (16) and (34) of Phys. Rev. B 91, 125120 (2015)). More
@@ -1266,27 +1266,27 @@ Since the &lsquo;model&rsquo; part can be integrated analytically (see eqs. (15)
 the integration over frequencies in the G0W0 calculation. The value of the
 associated parameter has thus an impact on the convergence rate of the GWLS
 calculation with respect to the number of frequencies of integration
-(<a class="wikilink" href="../../input_variables/vargw#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>), but no impact on the converged result of the GWLS
-calculation. Typically, the default (<a class="wikilink" href="../../input_variables/vargw#gwls_model_parameter">gwls_model_parameter</a>==1.0) is
+(<a class="wikilink" href="../../input_variables/vargw/#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>), but no impact on the converged result of the GWLS
+calculation. Typically, the default (<a class="wikilink" href="../../input_variables/vargw/#gwls_model_parameter">gwls_model_parameter</a>==1.0) is
 optimal.</p>
 <h2 id="gwls_n_proj_freq"><strong>gwls_n_proj_freq</strong><a class="headerlink" href="#gwls_n_proj_freq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS Number of PROJection FREQuencies<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable sets the number of frequencies, on top of \Infty and (if
-<a class="wikilink" href="../../input_variables/vargw#gwls_recycle">gwls_recycle</a>&gt;0) 0.0, to be used for the construction of the basis in which
+<a class="wikilink" href="../../input_variables/vargw/#gwls_recycle">gwls_recycle</a>&gt;0) 0.0, to be used for the construction of the basis in which
 the hamiltonian is projected to accelerate the solution of the Sternheimer
 equations involved in the construction of the dielectric matrix at finite
 frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
-the default (<a class="wikilink" href="../../input_variables/vargw#gwls_n_proj_freq">gwls_n_proj_freq</a>==0) is fine.</p>
+the default (<a class="wikilink" href="../../input_variables/vargw/#gwls_n_proj_freq">gwls_n_proj_freq</a>==0) is fine.</p>
 <h2 id="gwls_npt_gauss_quad"><strong>gwls_npt_gauss_quad</strong><a class="headerlink" href="#gwls_npt_gauss_quad" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS Number of PoinTs to use for the GAUSSian QUADrature <br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 10<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable defines the number of points used for the numerical integration
 of the self-energy over frequencies in GWLS computations (see eq. (12) of
 Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.</p>
@@ -1295,17 +1295,17 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable sets the number of seed vectors to be used in the construction
 of the Lanczos basis for the (static) dielectric matrix in a GWLS calculation.
-See section IV of Phys. Rev. B 91, 125120 (2015). Only <a class="wikilink" href="../../input_variables/vargw#gwls_nseeds">gwls_nseeds</a>==1 has
+See section IV of Phys. Rev. B 91, 125120 (2015). Only <a class="wikilink" href="../../input_variables/vargw/#gwls_nseeds">gwls_nseeds</a>==1 has
 been tested for now and users should keep this value.</p>
 <h2 id="gwls_print_debug"><strong>gwls_print_debug</strong><a class="headerlink" href="#gwls_print_debug" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS PRINT level for DEBUGging<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Influences the level of verbosity for debugging purposes in a GWLS
 calculation. Users should keep its value at the default.</p>
 <h2 id="gwls_recycle"><strong>gwls_recycle</strong><a class="headerlink" href="#gwls_recycle" title="Permanent link">&para;</a></h2>
@@ -1313,20 +1313,20 @@ calculation. Users should keep its value at the default.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 2<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable let the user choose if and how he wants to recycle the solutions
 of the Sternheimer equations involved in the construction of the static
 dielectric matrix.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_recycle">gwls_recycle</a>==0 : No recycling of the solutions </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_recycle">gwls_recycle</a>==1 : Recycle the solutions. To do so, store them in RAM. </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwls_recycle">gwls_recycle</a>==2 : Recycle the solutions. To do so, store them on disk. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_recycle">gwls_recycle</a>==0 : No recycling of the solutions </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_recycle">gwls_recycle</a>==1 : Recycle the solutions. To do so, store them in RAM. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwls_recycle">gwls_recycle</a>==2 : Recycle the solutions. To do so, store them on disk. </li>
 </ul>
 <p>If the user choose to recycle the solutions, they are used to construct the
 basis in which the hamiltonian is projected for the solution of the
 Sternheimer equations involved by the calculation of the dielectric matrix at
 finite frequencies. The other solutions used will be those at \omega \to
-\Infty (alwyas used) and those at \omega=<a class="wikilink" href="../../input_variables/vargw#gwls_list_proj_freq">gwls_list_proj_freq</a>. For more
+\Infty (alwyas used) and those at \omega=<a class="wikilink" href="../../input_variables/vargw/#gwls_list_proj_freq">gwls_list_proj_freq</a>. For more
 information of the basis constructed, see section IV of Phys. Rev. B 91,
 125120 (2015).</p>
 <p>It is important to note that the solutions rapidly take much space to store.
@@ -1341,14 +1341,14 @@ construction of the basis.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>Not used yet.</p>
 <h2 id="gwls_sternheimer_kmax"><strong>gwls_sternheimer_kmax</strong><a class="headerlink" href="#gwls_sternheimer_kmax" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GWLS Kmax<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==66  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==66  </p>
 <p>This variable sets the dimension of the dielectric matrix used in a GWLS
 calculation (see section IV of Phys. Rev. B 91, 125120 (2015)). Typically
 converged at a value of a few hundreds to a few thousands for a convergence
@@ -1358,39 +1358,39 @@ criterion of 50meV on the eigenenergies.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 11<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> governs the memory strategy during a screening and/or a sigma run.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> governs the memory strategy during a screening and/or a sigma run.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = 1x , the screening matrix are read for all q-vectors and stored in the memory. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = 1x , the screening matrix are read for all q-vectors and stored in the memory. </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = 0x , the screening matrix are read just a q-vector after another.   </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = 0x , the screening matrix are read just a q-vector after another.   </p>
 </li>
 <li>
-<p><a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = x1 , the real-space wavefunctions are stored in the memory. </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = x1 , the real-space wavefunctions are stored in the memory. </p>
 </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = x0 , the real-space wavefunctions are not stored, but rather recalculated on-fly each abinit needs them using FFTs. </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = x0 , the real-space wavefunctions are not stored, but rather recalculated on-fly each abinit needs them using FFTs. </li>
 </ul>
-<p>The default is <a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = 11, which is the fastest, but also the most memory
-consuming. When experiencing memory shortage, one should try <a class="wikilink" href="../../input_variables/vargw#gwmem">gwmem</a> = 0.
+<p>The default is <a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = 11, which is the fastest, but also the most memory
+consuming. When experiencing memory shortage, one should try <a class="wikilink" href="../../input_variables/vargw/#gwmem">gwmem</a> = 0.
 The first digit is only meaningful when performing sigma calculations.</p>
 <h2 id="gwrpacorr"><strong>gwrpacorr</strong><a class="headerlink" href="#gwrpacorr" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GW RPA CORRelation energy<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [1,11,21]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#gwrpacorr">gwrpacorr</a> governs the calculation of the RPA correlation energy.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [1,11,21]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#gwrpacorr">gwrpacorr</a> governs the calculation of the RPA correlation energy.</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#gwrpacorr">gwrpacorr</a> = 0, no RPA correlation energy is calculated </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwrpacorr">gwrpacorr</a> = 1, the RPA correlation energy is calculated using an exact integration over the coupling constant: it requires one diagonalization of the polarizability matrix </li>
-<li><a class="wikilink" href="../../input_variables/vargw#gwrpacorr">gwrpacorr</a> = _ n _ &gt; 1, the RPA correlation energy is calculated using _ n _ values for the coupling constant: it requires _ n _ inversions of the polarizability matrix </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwrpacorr">gwrpacorr</a> = 0, no RPA correlation energy is calculated </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwrpacorr">gwrpacorr</a> = 1, the RPA correlation energy is calculated using an exact integration over the coupling constant: it requires one diagonalization of the polarizability matrix </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#gwrpacorr">gwrpacorr</a> = _ n _ &gt; 1, the RPA correlation energy is calculated using _ n _ values for the coupling constant: it requires _ n _ inversions of the polarizability matrix </li>
 </ul>
 <h2 id="icutcoul"><strong>icutcoul</strong><a class="headerlink" href="#icutcoul" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Integer that governs the CUT-off for COULomb interaction<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 6<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
 <p>Many-body calculations for isolated systems present a slow convergence with
 respect to the size of the supercell due to the long ranged Coulomb
 interaction and the high degree of non-locality of the operators involved. A
@@ -1399,10 +1399,10 @@ integrable Coulomb singularity at G=0 that hinders the convergence with
 respect to the number of q-points used to sample the Brillouin zone. The
 convergence can be accelerated by replacing the true bare Coulomb interaction
 with other expressions.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a> defines the particular expression to be used for the Coulomb term
-in reciprocal space. The choice of <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a> depends on the dimensionality
-of the system. Possible values of <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a> are from 0 to 6. The
-corresponding influential variables are <a class="wikilink" href="../../input_variables/vargw#vcutgeo">vcutgeo</a> and <a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a>.</p>
+<p><a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a> defines the particular expression to be used for the Coulomb term
+in reciprocal space. The choice of <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a> depends on the dimensionality
+of the system. Possible values of <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a> are from 0 to 6. The
+corresponding influential variables are <a class="wikilink" href="../../input_variables/vargw/#vcutgeo">vcutgeo</a> and <a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a>.</p>
 <ul>
 <li>0 =&gt; sphere (molecules but also 3D-crystals) </li>
 <li>1 =&gt; cylinder (nanowires, nanotubes) </li>
@@ -1416,47 +1416,47 @@ corresponding influential variables are <a class="wikilink" href="../../input_va
 <p>Note that Spencer and Alavi PRB <strong>77</strong>, 193110 (2008) showed that the
 spherical cutoff can efficiently be used also for 3D systems. In the latter
 case, use a negative value for the cutoff radius of the sphere
-(<a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a>&lt;0), which is automatically calculated so that the volume enclosed
+(<a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a>&lt;0), which is automatically calculated so that the volume enclosed
 in the sphere is equal to the volume of the solid.</p>
 <h2 id="inclvkb"><strong>inclvkb</strong><a class="headerlink" href="#inclvkb" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: INCLude VKB<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 2<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,99]  </p>
-<p>Possible values of <a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a> are 0,1,2. If <a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a> is 1 or 2, the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,99]  </p>
+<p>Possible values of <a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a> are 0,1,2. If <a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a> is 1 or 2, the
 commutator of the non-local part of the pseudopotential with the position
 operator is correctly included in the q =&gt; 0 contribution. This is
 unfortunately time-consuming and in particular when the old algorithm
 implemented by inclvkb==1 is used (inclvkb=2 is the recommended option). When
-<a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a> is 0, this contribution is incorrectly omitted, but the
+<a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a> is 0, this contribution is incorrectly omitted, but the
 computation is much faster.</p>
 <p>The importance of this contribution depends on the number of k points. Turning
-off <a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a> is let to the choice of the user.</p>
-<p>In general, the use of <a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a>=0 is fine for <a class="wikilink" href="../../GW/">GW</a> calculations in
+off <a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a> is let to the choice of the user.</p>
+<p>In general, the use of <a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a>=0 is fine for <a class="wikilink" href="../../GW/">GW</a> calculations in
 crystalline systems provided that the k-point sampling is sufficiently
 converged.</p>
-<p>The use of <a class="wikilink" href="../../input_variables/vargw#inclvkb">inclvkb</a>=2 is strongly recommended for the calculation of
+<p>The use of <a class="wikilink" href="../../input_variables/vargw/#inclvkb">inclvkb</a>=2 is strongly recommended for the calculation of
 optical properties.</p>
 <h2 id="kptgw"><strong>kptgw</strong><a class="headerlink" href="#kptgw" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: K-PoinTs for GW calculations<br />
 Variable type: real<br />
-Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>)<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a>)<br />
 Default value: *0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p>For each k-point with number igwpt in the range (1:<a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a>),
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p>For each k-point with number igwpt in the range (1:<a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a>),
 <a href="../1,igwpt">[kptgw]</a> is the reduced coordinate of the k-point where <a class="wikilink" href="../../GW/">GW</a>
-corrections are required. while <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> (1:2,igwpt) specifies the range of
+corrections are required. while <a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a> (1:2,igwpt) specifies the range of
 bands to be considered.</p>
 <p>At present, not all k-points are possible. Only those corresponding to the
-k-point grid defined with the same repetition parameters ( <a class="wikilink" href="../../input_variables/vargs#kptrlatt">kptrlatt</a>, or
-<a class="wikilink" href="../../input_variables/varbas#ngkpt">ngkpt</a> ) than the GS one, but WITHOUT any shift, are allowed.</p>
+k-point grid defined with the same repetition parameters ( <a class="wikilink" href="../../input_variables/vargs/#kptrlatt">kptrlatt</a>, or
+<a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> ) than the GS one, but WITHOUT any shift, are allowed.</p>
 <h2 id="mbpt_sciss"><strong>mbpt_sciss</strong><a class="headerlink" href="#mbpt_sciss" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Many Body Perturbation Theory SCISSor operator<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4,99]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4,99]  </p>
 <p>The Scissors operator energy added to the conductions states. In some cases,
 it mimics a second iteration self-consistent <a class="wikilink" href="../../GW/">GW</a> calculation.</p>
 <h2 id="mdf_epsinf"><strong>mdf_epsinf</strong><a class="headerlink" href="#mdf_epsinf" title="Permanent link">&para;</a></h2>
@@ -1464,8 +1464,8 @@ it mimics a second iteration self-consistent <a class="wikilink" href="../../GW/
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==99 and <a class="wikilink" href="../../input_variables/varbse#bs_coulomb_term">bs_coulomb_term</a> in [20,21] (Bethe-Salpeter calculas with a model dielectric function  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#mdf_epsinf">mdf_epsinf</a> specifies the value of the macroscopic dielectric function used
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==99 and <a class="wikilink" href="../../input_variables/varbse/#bs_coulomb_term">bs_coulomb_term</a> in [20,21] (Bethe-Salpeter calculas with a model dielectric function  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#mdf_epsinf">mdf_epsinf</a> specifies the value of the macroscopic dielectric function used
 to model the screening function (see Solid State Commun. <strong>84</strong>, 765 (1992)).
 The proper spatial symmetry of the screening W(r,r_prime) is enforced using
 Eq. (7) of Phys. Rev. B <strong>37</strong>, (1988)  </p>
@@ -1475,34 +1475,34 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>This input variable is used for the preparation of a <a class="wikilink" href="../../GW/">GW</a> calculation : it
-is used in a GS run (where <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=0) to generate a _KSS file. In this
-run, <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a> should be non-zero. The generated _KSS file can be
+is used in a GS run (where <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=0) to generate a _KSS file. In this
+run, <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a> should be non-zero. The generated _KSS file can be
 subsequently used to calculate the irreducible polarizabilty <script type="math/tex">\chi^{(0)}_{KS}</script>
-using <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 or to calculate <a class="wikilink" href="../../GW/">GW</a> corrections setting
-<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4.</p>
+using <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 or to calculate <a class="wikilink" href="../../GW/">GW</a> corrections setting
+<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4.</p>
 <ul>
-<li>If <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>=0, no _KSS file is created </li>
-<li>If <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>=-1, all the available eigenstates (energies and eigenfunctions) are stored in the abo_KSS file at the end of the ground state calculation. The number of states is forced to be the same for all k-points : it will be the minimum of the number of plane waves over all k-points. </li>
-<li>If <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a> is greater than 0, abinit stores (about) <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a> eigenstates in the abo_KSS file. This number of states is forced to be the same for all k-points. </li>
+<li>If <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>=0, no _KSS file is created </li>
+<li>If <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>=-1, all the available eigenstates (energies and eigenfunctions) are stored in the abo_KSS file at the end of the ground state calculation. The number of states is forced to be the same for all k-points : it will be the minimum of the number of plane waves over all k-points. </li>
+<li>If <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a> is greater than 0, abinit stores (about) <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a> eigenstates in the abo_KSS file. This number of states is forced to be the same for all k-points. </li>
 </ul>
-<p>See <a class="wikilink" href="../../input_variables/vargw#npwkss">npwkss</a> for the selection of the number of the planewave components of
+<p>See <a class="wikilink" href="../../input_variables/vargw/#npwkss">npwkss</a> for the selection of the number of the planewave components of
 the eigenstates to be stored.<br />
-The input variable <a class="wikilink" href="../../input_variables/vardev#iomode">iomode</a> can be used to read and write KSS files
-according to different fileformat (presently only <a class="wikilink" href="../../input_variables/vardev#iomode">iomode</a>=0 and 3 are
+The input variable <a class="wikilink" href="../../input_variables/vardev/#iomode">iomode</a> can be used to read and write KSS files
+according to different fileformat (presently only <a class="wikilink" href="../../input_variables/vardev/#iomode">iomode</a>=0 and 3 are
 available in the <a class="wikilink" href="../../GW/">GW</a> part).<br />
 The precision of the KSS file can be tuned through the input variable
-<a class="wikilink" href="../../input_variables/varfil#kssform">kssform</a>.<br />
+<a class="wikilink" href="../../input_variables/varfil/#kssform">kssform</a>.<br />
 For more details about the format of the abo_KSS file, see the routine
 outkss.F90.</p>
-<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a> must be 1 for all the k-points
+<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev/#istwfk">istwfk</a> must be 1 for all the k-points
 in order to generate a _KSS file.</p>
 <h2 id="nfreqim"><strong>nfreqim</strong><a class="headerlink" href="#nfreqim" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of FREQuencies along the IMaginary axis<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,12,22,9,19,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a> sets the number of pure imaginary frequencies used to calculate
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,12,22,9,19,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a> sets the number of pure imaginary frequencies used to calculate
 the dielectric matrix in order to perform the numerical integration of the
 <a class="wikilink" href="../../GW/">GW</a> self-energy.</p>
 <h2 id="nfreqmidm"><strong>nfreqmidm</strong><a class="headerlink" href="#nfreqmidm" title="Permanent link">&para;</a></h2>
@@ -1510,13 +1510,13 @@ the dielectric matrix in order to perform the numerical integration of the
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: None<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p>depending on the value of <a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a> will calculate the frequency moment of
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p>depending on the value of <a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a> will calculate the frequency moment of
 the Dielectric matrix or its inverse,</p>
 <ul>
-<li>if <a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a> is positive : calculate (nth=<a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a>) frequency moment of the Dielectric matrix</li>
-<li>if <a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a> is negative : calculate (nth=<a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a>) frequency moment of the inverse Dielectric matrix</li>
-<li>if <a class="wikilink" href="../../input_variables/vargw#nfreqmidm">nfreqmidm</a> = 0 : calculate first frequency moment of the full polarizability</li>
+<li>if <a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a> is positive : calculate (nth=<a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a>) frequency moment of the Dielectric matrix</li>
+<li>if <a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a> is negative : calculate (nth=<a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a>) frequency moment of the inverse Dielectric matrix</li>
+<li>if <a class="wikilink" href="../../input_variables/vargw/#nfreqmidm">nfreqmidm</a> = 0 : calculate first frequency moment of the full polarizability</li>
 </ul>
 <p>see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.</p>
 <h2 id="nfreqre"><strong>nfreqre</strong><a class="headerlink" href="#nfreqre" title="Permanent link">&para;</a></h2>
@@ -1524,18 +1524,18 @@ the Dielectric matrix or its inverse,</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> in [2,12,22,9,19,29]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a> sets the number of real frequencies used to calculate the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> in [2,12,22,9,19,29]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a> sets the number of real frequencies used to calculate the
 dielectric matrix in order to perform the numerical integration of the <a class="wikilink" href="../../GW/">GW</a>
 self-energy.</p>
 <p>It can be used also in case of <a class="wikilink" href="../../GW/">GW</a> calculations with plasmon-pole models, _
-i.e _ <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>&lt;10, to reduce the number of frequencies used to
+i.e _ <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>&lt;10, to reduce the number of frequencies used to
 evaluate the dielectric matrix from the (default) two to one frequency
-(omega=0) by setting <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>=1. This might be a good idea in case one is
+(omega=0) by setting <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>=1. This might be a good idea in case one is
 planning to use ppmodel&gt;1. This will force the calculation of the
 screening on a single frequency (omega=0) and hence reduce memory and disk
 space requirement. The only draw back is that the user will not be able to
-perform self energy calculation using <a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=1, since in the last case
+perform self energy calculation using <a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=1, since in the last case
 the dielectric matrix calculated on two frequencies is required. If the user
 is not sure which ppmodel to use, then s/he is not advised to use this input
 variable. Using the default values, one must be able to get a screening file
@@ -1545,49 +1545,49 @@ that can be used with any ppmodel.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a> defines the number of real frequencies used to calculate the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nfreqsp">nfreqsp</a> defines the number of real frequencies used to calculate the
 spectral function of the <a class="wikilink" href="../../GW/">GW</a> Green&rsquo;s function.</p>
 <h2 id="nkptgw"><strong>nkptgw</strong><a class="headerlink" href="#nkptgw" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of K-PoinTs for GW corrections<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a> gives the number of k-points for which the <a class="wikilink" href="../../GW/">GW</a> calculation must
-be done. It is used to dimension <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a></p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a> gives the number of k-points for which the <a class="wikilink" href="../../GW/">GW</a> calculation must
+be done. It is used to dimension <a class="wikilink" href="../../input_variables/vargw/#kptgw">kptgw</a></p>
 <h2 id="nomegasf"><strong>nomegasf</strong><a class="headerlink" href="#nomegasf" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of OMEGA to evaluate the Spectral Function<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a>!=0  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nomegasf">nomegasf</a> defines the number of real frequencies used to describe the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a>!=0  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nomegasf">nomegasf</a> defines the number of real frequencies used to describe the
 spectral function associated to the irreducible polarizability
 <script type="math/tex">\chi^{(0)}_{KS}</script>. The frequency mesh will cover the interval between 0 and
 the maximum (positive) transition energy between occupied and empty states.
 The delta function entering the expression defining the spectral function is
 approximated using two different methods according to the value of the
-<a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a> input variable.</p>
+<a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a> input variable.</p>
 <p>It is important to notice that an accurate description of the imaginary part
 of <script type="math/tex">\chi^{(0)}_{KS}</script> requires an extremely dense frequency mesh. It should be
 kept in mind, however, that the memory required grows fast with the value of
-<a class="wikilink" href="../../input_variables/vargw#nomegasf">nomegasf</a>.</p>
+<a class="wikilink" href="../../input_variables/vargw/#nomegasf">nomegasf</a>.</p>
 <h2 id="nomegasi"><strong>nomegasi</strong><a class="headerlink" href="#nomegasi" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of OMEGA(S) along the Imaginary axis<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 12<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>==1  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#nomegasi">nomegasi</a> defines the number of frequency points used to sample the self-
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>==1  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#nomegasi">nomegasi</a> defines the number of frequency points used to sample the self-
 energy along the imaginary axis. The frequency mesh is linear and covers the
-interval between OMEGASIMIN=0.01 Hartree and <a class="wikilink" href="../../input_variables/vargw#omegasimax">omegasimax</a>.</p>
+interval between OMEGASIMIN=0.01 Hartree and <a class="wikilink" href="../../input_variables/vargw/#omegasimax">omegasimax</a>.</p>
 <h2 id="nomegasrd"><strong>nomegasrd</strong><a class="headerlink" href="#nomegasrd" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of OMEGA to evaluate the Sigma Real axis Derivative<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 9<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
 <p>The number of real frequencies around the KS energy where the self-energy
 Sigma is evaluated. From these values, the derivative of Sigma at the KS
 energy is numerically estimated through linear interpolation.</p>
@@ -1596,13 +1596,13 @@ energy is numerically estimated through linear interpolation.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
 <p>In the context of the electronic stopping power of impinging ion in matter,
-<a class="wikilink" href="../../input_variables/vargw#npvel">npvel</a> sets the number of the ion velocities to be calculated via linear
+<a class="wikilink" href="../../input_variables/vargw/#npvel">npvel</a> sets the number of the ion velocities to be calculated via linear
 response.<br />
-When <a class="wikilink" href="../../input_variables/vargw#npvel">npvel</a>=0, no stopping power calculation is performed.<br />
+When <a class="wikilink" href="../../input_variables/vargw/#npvel">npvel</a>=0, no stopping power calculation is performed.<br />
 The direction and the velocity maximum are set with the input variable
-<a class="wikilink" href="../../input_variables/vargw#pvelmax">pvelmax</a>. Note that the results are output for a Z=1 impinging ion, i.e. a
+<a class="wikilink" href="../../input_variables/vargw/#pvelmax">pvelmax</a>. Note that the results are output for a Z=1 impinging ion, i.e. a
 proton.</p>
 <h2 id="npwkss"><strong>npwkss</strong><a class="headerlink" href="#npwkss" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of PlaneWaves in the KSS file<br />
@@ -1610,30 +1610,30 @@ Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0  </p>
 <p>This input variable is used for the preparation of a <a class="wikilink" href="../../GW/">GW</a> calculation: the
-GS run (where <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=1 and <strong> nbandkss </strong> /=0) should be followed with
-a run where <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3. Also, if <a class="wikilink" href="../../input_variables/vargw#nbandkss">nbandkss</a>=0, no use of <a class="wikilink" href="../../input_variables/vargw#npwkss">npwkss</a>.</p>
-<p><a class="wikilink" href="../../input_variables/vargw#npwkss">npwkss</a> defines the number of planewave components of the Kohn-Sham states
+GS run (where <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=1 and <strong> nbandkss </strong> /=0) should be followed with
+a run where <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3. Also, if <a class="wikilink" href="../../input_variables/vargw/#nbandkss">nbandkss</a>=0, no use of <a class="wikilink" href="../../input_variables/vargw/#npwkss">npwkss</a>.</p>
+<p><a class="wikilink" href="../../input_variables/vargw/#npwkss">npwkss</a> defines the number of planewave components of the Kohn-Sham states
 to build the Hamiltonian, in the routine outkss.F90, and so, the size of the
 matrix, the size of eigenvectors, and the number of available states, to be
 stored in the abo_KSS file. If it is set to 0, then, the planewave basis set
-defined by the usual Ground State input variable <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> is used to generate
+defined by the usual Ground State input variable <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is used to generate
 the superset of all planewaves used for all k-points. Note that this (large)
 planewave basis is the same for all k-points.</p>
-<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev#istwfk">istwfk</a> must be 1 for all the
+<p>Very important : for the time being, <a class="wikilink" href="../../input_variables/vardev/#istwfk">istwfk</a> must be 1 for all the
 k-points.</p>
 <h2 id="nqptdm"><strong>nqptdm</strong><a class="headerlink" href="#nqptdm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Number of Q-PoinTs for the Dielectric Matrix<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
-<p>If <a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a> is equal to 0, the set of q-points for computing the dielectric
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
+<p>If <a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a> is equal to 0, the set of q-points for computing the dielectric
 matrix is determined automatically considering all the possible differences
-between the k-points contained in the _KSS file. When <a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a> is non-zero,
-the list of q points is read from <a class="wikilink" href="../../input_variables/vargw#qptdm">qptdm</a>. This allows one to split the big
+between the k-points contained in the _KSS file. When <a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a> is non-zero,
+the list of q points is read from <a class="wikilink" href="../../input_variables/vargw/#qptdm">qptdm</a>. This allows one to split the big
 calculation of all the dielectric matrices into smaller calculations that can
 be performed independently. The _SCR files generated in different runs can be
-merged thanks to the <strong> Mrgscr </strong> utility. If <a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a> is equal to -1, the
+merged thanks to the <strong> Mrgscr </strong> utility. If <a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a> is equal to -1, the
 code reports the list of q-points in the log file (YAML format) and then
 stops.</p>
 <h2 id="omegasimax"><strong>omegasimax</strong><a class="headerlink" href="#omegasimax" title="Permanent link">&para;</a></h2>
@@ -1641,28 +1641,28 @@ stops.</p>
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 50 eV<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>==1  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#omegasimax">omegasimax</a> defines the maximum frequency along the imaginary the axis. In
-conjunction with <a class="wikilink" href="../../input_variables/vargw#nomegasi">nomegasi</a>, <a class="wikilink" href="../../input_variables/vargw#omegasimax">omegasimax</a> uniquely defines the linear mesh
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4 and <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>==1  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#omegasimax">omegasimax</a> defines the maximum frequency along the imaginary the axis. In
+conjunction with <a class="wikilink" href="../../input_variables/vargw/#nomegasi">nomegasi</a>, <a class="wikilink" href="../../input_variables/vargw/#omegasimax">omegasimax</a> uniquely defines the linear mesh
 employed to sample the self-energy along the imaginary axis.</p>
 <h2 id="omegasrdmax"><strong>omegasrdmax</strong><a class="headerlink" href="#omegasrdmax" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1.0 eV<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
 <p>The maximum distance from the KS energy where to evaluate Sigma. Sigma is
-evaluated at [KS_energy - <a class="wikilink" href="../../input_variables/vargw#omegasrdmax">omegasrdmax</a>, KS_energy + <a class="wikilink" href="../../input_variables/vargw#omegasrdmax">omegasrdmax</a>]
-sampled <a class="wikilink" href="../../input_variables/vargw#nomegasrd">nomegasrd</a> times.</p>
+evaluated at [KS_energy - <a class="wikilink" href="../../input_variables/vargw/#omegasrdmax">omegasrdmax</a>, KS_energy + <a class="wikilink" href="../../input_variables/vargw/#omegasrdmax">omegasrdmax</a>]
+sampled <a class="wikilink" href="../../input_variables/vargw/#nomegasrd">nomegasrd</a> times.</p>
 <h2 id="ppmfrq"><strong>ppmfrq</strong><a class="headerlink" href="#ppmfrq" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Plasmon Pole Model FReQuency<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0 Ha<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
 <p><strong> In plasmon-pole calculations </strong></p>
 <p>Usually only effective if <a class="wikilink" href="../../GW/">GW</a> corrections are evaluated using the plasmon-
-pole model of Godby-Needs (<a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>==1).  </p>
+pole model of Godby-Needs (<a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>==1).  </p>
 <p>In the present status of the <a class="wikilink" href="../../GW/">GW</a> code, the convolution in frequency space
 defining the self-energy operator can be evaluated using two different
 approaches: numerical integration and plasmon-pole models.<br />
@@ -1673,47 +1673,47 @@ of an increase in the CPU time required.<br />
 Alternatively, it is possible to approximate the dynamical behaviour of the
 screened interaction through simple analytical expressions, the so-called
 plasmon-pole models. In the plasmon-pole model proposed by Godby-Needs
-(<a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=1), the screening must be available at zero frequency, as well as
+(<a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=1), the screening must be available at zero frequency, as well as
 at another imaginary frequency, of the order of the plasmon frequency (the
 peak in the EELS spectrum). This information is used to model the behaviour of
 the dielectric matrix for all frequencies. During the calculation of the
-screening, <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> defines the imaginary frequency where the dielectric
+screening, <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> defines the imaginary frequency where the dielectric
 matrix is evaluated, in addition to the zero frequency. During the self-energy
-run, <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> can be used to define the second frequency to be used to
+run, <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> can be used to define the second frequency to be used to
 calculate the plasmon-pole parameters. This is particularly useful when the
 SCR file contains several frequencies along the imaginary axis. In this case
-the frequency whose value is the closest one to <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> will be selected.
+the frequency whose value is the closest one to <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> will be selected.
 Note that, if the plasmon-pole approximation is good, then, the choice of
-<a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> should have no influence on the final result. One should check
+<a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> should have no influence on the final result. One should check
 whether this is the case. In general, the plasmon frequencies of bulk solids
 are of the order of 0.5 Hartree.  </p>
 <p><strong> In Contour Deformation calculations </strong></p>
-<p><a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a> is here used to <strong> override </strong> the default value calculated from
+<p><a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a> is here used to <strong> override </strong> the default value calculated from
 the average electronic density per unit cell. This can affect the distribution
 of gridpoints along the imaginary and real frequency axes. See
-<a class="wikilink" href="../../input_variables/vargw#cd_frqim_method">cd_frqim_method</a>, <a class="wikilink" href="../../input_variables/vargw#gw_frqim_inzgrid">gw_frqim_inzgrid</a> and <a class="wikilink" href="../../input_variables/vargw#gw_frqre_inzgrid">gw_frqre_inzgrid</a> for more
+<a class="wikilink" href="../../input_variables/vargw/#cd_frqim_method">cd_frqim_method</a>, <a class="wikilink" href="../../input_variables/vargw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a> and <a class="wikilink" href="../../input_variables/vargw/#gw_frqre_inzgrid">gw_frqre_inzgrid</a> for more
 details.</p>
 <h2 id="ppmodel"><strong>ppmodel</strong><a class="headerlink" href="#ppmodel" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Plasmon Pole MODEL<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4]  </p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=1 : PP model of Godby and Needs, See Phys Rev Lett 62, 1169 (1989) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=2 : PP model of Hybertsen and Louie, See Phys Rev B 34, 5390 (1986) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=3 : PP model of W. von der Linden and P. Horsh see Phys Rev B 37, 8351 (1988) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=4 : PP model of Farid and Engel. See Phys Rev B47,15931 (1993) </li>
-<li><a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=0 : no PP model, numerical integration (contour deformation method, see e.g. S. Lebegue et al. PRB 67, 155208 (2003).) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=1 : PP model of Godby and Needs, See Phys Rev Lett 62, 1169 (1989) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=2 : PP model of Hybertsen and Louie, See Phys Rev B 34, 5390 (1986) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=3 : PP model of W. von der Linden and P. Horsh see Phys Rev B 37, 8351 (1988) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=4 : PP model of Farid and Engel. See Phys Rev B47,15931 (1993) </li>
+<li><a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=0 : no PP model, numerical integration (contour deformation method, see e.g. S. Lebegue et al. PRB 67, 155208 (2003).) </li>
 </ul>
-<p>Please note the difference between <a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a> 1 and <a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a> 2,3,4. In the
-first case (<a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>=1), the plasmon-pole parameters are determined in
+<p>Please note the difference between <a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a> 1 and <a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a> 2,3,4. In the
+first case (<a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>=1), the plasmon-pole parameters are determined in
 order to reproduce the behaviour of the dielectric matrix at two calculated
 frequencies: the static limit (omega=0) and the imaginary frequency defined by
-<a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>. In the last three cases, instead, the plasmon-pole parameters are
+<a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>. In the last three cases, instead, the plasmon-pole parameters are
 found by using the dielectric matrix calculated only at omega=0 and enforcing
-the so-called f-sum rule. See also <a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>.</p>
-<p>Please note also that in the case of <a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a> 4, the plasmon energies are
+the so-called f-sum rule. See also <a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>.</p>
+<p>Please note also that in the case of <a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a> 4, the plasmon energies are
 not simple mathematical parameters, but rather have a physical meaning (at
 least the lowest ones). Thus the calculated plasmon band structure (plasmon
 energy vs q vector) is reported in the output file for the lowest 10 bands.</p>
@@ -1722,72 +1722,72 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.</p>
 Variable type: real<br />
 Dimensions: (3)<br />
 Default value: 3*1.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
-<p>When <a class="wikilink" href="../../input_variables/vargw#npvel">npvel</a> is larger than 0, it performs electronic stopping power
-calculations on a velocity grid along the direction determined by <a class="wikilink" href="../../input_variables/vargw#pvelmax">pvelmax</a>.<br />
-The vector <a class="wikilink" href="../../input_variables/vargw#pvelmax">pvelmax</a> defines both the direction and the maximum velocity.
-<a class="wikilink" href="../../input_variables/vargw#pvelmax">pvelmax</a> is input in Cartesian coordinates.</p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
+<p>When <a class="wikilink" href="../../input_variables/vargw/#npvel">npvel</a> is larger than 0, it performs electronic stopping power
+calculations on a velocity grid along the direction determined by <a class="wikilink" href="../../input_variables/vargw/#pvelmax">pvelmax</a>.<br />
+The vector <a class="wikilink" href="../../input_variables/vargw/#pvelmax">pvelmax</a> defines both the direction and the maximum velocity.
+<a class="wikilink" href="../../input_variables/vargw/#pvelmax">pvelmax</a> is input in Cartesian coordinates.</p>
 <h2 id="qptdm"><strong>qptdm</strong><a class="headerlink" href="#qptdm" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Q-PoinTs for the Dielectric Matrix<br />
 Variable type: real<br />
-Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a>)<br />
+Dimensions: (3,<a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a>)<br />
 Default value: *0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a>!=0  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#qptdm">qptdm</a> contains the set of q-points used in the screening part of ABINIT,
-instead of the automatic generation of the q points when <a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a>=0. These q
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a>!=0  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#qptdm">qptdm</a> contains the set of q-points used in the screening part of ABINIT,
+instead of the automatic generation of the q points when <a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a>=0. These q
 points are given in terms of reciprocal space primitive translations (NOT in
 cartesian coordinates!). For further explanation, see the input variable
-<a class="wikilink" href="../../input_variables/vargw#nqptdm">nqptdm</a>.</p>
+<a class="wikilink" href="../../input_variables/vargw/#nqptdm">nqptdm</a>.</p>
 <h2 id="rcut"><strong>rcut</strong><a class="headerlink" href="#rcut" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: Radius of the CUT-off for coulomb interaction<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0  </p>
-<p>Truncation of the Coulomb interaction in real space. The meaning of <a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a>
-is governed by the cutoff shape option <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a>.</p>
-<p>If <a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a> is negative, the cutoff is automatically calculated so to enclose
+<p>Truncation of the Coulomb interaction in real space. The meaning of <a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a>
+is governed by the cutoff shape option <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a>.</p>
+<p>If <a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a> is negative, the cutoff is automatically calculated so to enclose
 the same volume inside the cutoff as the volume of the primitive cell.</p>
 <h2 id="rhoqpmix"><strong>rhoqpmix</strong><a class="headerlink" href="#rhoqpmix" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: RHO QuasiParticle MIXing<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 1.0  </p>
-<p>For self-consistent <a class="wikilink" href="../../GW/">GW</a> runs, <a class="wikilink" href="../../input_variables/vargw#rhoqpmix">rhoqpmix</a> sets the mixing coefficient
+<p>For self-consistent <a class="wikilink" href="../../GW/">GW</a> runs, <a class="wikilink" href="../../input_variables/vargw/#rhoqpmix">rhoqpmix</a> sets the mixing coefficient
 between the new and the previous electronic densities. This mixing damps the
 spurious oscillations in the Hartree potential when achieving self-
-consistency. <a class="wikilink" href="../../input_variables/vargw#rhoqpmix">rhoqpmix</a> is meaningful only when doing self-consistency on
-the wavefunctions with <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> &gt;= 20.</p>
+consistency. <a class="wikilink" href="../../input_variables/vargw/#rhoqpmix">rhoqpmix</a> is meaningful only when doing self-consistency on
+the wavefunctions with <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> &gt;= 20.</p>
 <h2 id="spbroad"><strong>spbroad</strong><a class="headerlink" href="#spbroad" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: SPectral BROADening<br />
 Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a>==2  </p>
-<p>When a screening calculation (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3) uses a spectral representation
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3 and <a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a>==2  </p>
+<p>When a screening calculation (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3) uses a spectral representation
 of the irreducible polarizability in which the delta function is replaced by
-the gaussian approximant (<a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a>==2), the standard deviation of the
-gaussian is given by <a class="wikilink" href="../../input_variables/vargw#spbroad">spbroad</a>.</p>
+the gaussian approximant (<a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a>==2), the standard deviation of the
+gaussian is given by <a class="wikilink" href="../../input_variables/vargw/#spbroad">spbroad</a>.</p>
 <h2 id="spmeth"><strong>spmeth</strong><a class="headerlink" href="#spmeth" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: SPectral METHod<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
-<p>The <a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a> input variable defines the method used to calculate the
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
+<p>The <a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a> input variable defines the method used to calculate the
 irreducible polarizability <script type="math/tex">\chi^{(0)}_{KS}</script>.</p>
 <p>By default <script type="math/tex">\chi^{(0)}_{KS}</script> is calculated employing the Adler-Wiser
-expression (<a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a>=0) with a CPU effort that scales linearly with the
+expression (<a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a>=0) with a CPU effort that scales linearly with the
 number of frequencies. This approach is convenient when few frequencies are
 required, and is usually used in conjunction with plasmon-pole models in which
 only one or two frequencies are calculated, according to the value of
-<a class="wikilink" href="../../input_variables/vargw#ppmodel">ppmodel</a>.<br />
+<a class="wikilink" href="../../input_variables/vargw/#ppmodel">ppmodel</a>.<br />
 Unfortunately a calculation based on the Adler-Wiser expression might be quite
 CPU demanding if the matrix elements of the self-energy operator are evaluated
 by performing numerically the convolution defining the self-energy. The
 integrand function, indeed, has poles above and below the real axis, and the
 screened interaction has to be evaluated on a dense frequency mesh in order to
 obtain accurate results.</p>
-<p>In the spectral method (<a class="wikilink" href="../../input_variables/vargw#spmeth">spmeth</a>=1 or 2) the irreducible polarizability is
+<p>In the spectral method (<a class="wikilink" href="../../input_variables/vargw/#spmeth">spmeth</a>=1 or 2) the irreducible polarizability is
 expressed as the Hilbert transform of the imaginary part. The advantage in
 using this approach consists in the fact that, once the spectral function is
 known, the irreducible polarizability for an arbitrary frequency can be easily
@@ -1808,13 +1808,13 @@ frequency grids.</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 1<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==3  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==3  </p>
 <p>The evaluation of the irreducible polarizability for a given q-point requires
 an integration over the Brillouin zone (BZ) which is approximated by a
 discrete sum over k-points. In principle the integrand function should be
 evaluated for each k-point in the BZ, however it is possible to reduce the
 number of points to be explicitly considered by taking advantage of symmetry
-properties. The development input variable <a class="wikilink" href="../../input_variables/vargw#symchi">symchi</a> is used to choose
+properties. The development input variable <a class="wikilink" href="../../input_variables/vargw/#symchi">symchi</a> is used to choose
 between these two equivalent methods:</p>
 <ul>
 <li>0=&gt; the summation over k-points is performed considering ALL the points in the BZ (useful for testing and debugging). </li>
@@ -1825,26 +1825,26 @@ between these two equivalent methods:</p>
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>==4  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>==4  </p>
 <p>This option is used to switch on the symmetrization of the self-energy matrix
-elements (<a class="wikilink" href="../../input_variables/vargw#symsigma">symsigma</a>=1). In this case the BZ integration defining the self-
+elements (<a class="wikilink" href="../../input_variables/vargw/#symsigma">symsigma</a>=1). In this case the BZ integration defining the self-
 energy matrix elements is reduced to an appropriate irreducible wedge defined
-by the point group of the wave-vector k specified in the <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a> list.</p>
+by the point group of the wave-vector k specified in the <a class="wikilink" href="../../input_variables/vargw/#kptgw">kptgw</a> list.</p>
 <p>The symmetrized expression leads to a considerable speedup of the run but,
 unfortunately, this option is not yet compatible with self-consistent <a class="wikilink" href="../../GW/">GW</a>
-calculations (see <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a>).</p>
-<p>The algorithm implemented in <a class="wikilink" href="../../input_variables/vargw#symsigma">symsigma</a>=1 constructs a symmetric invariant
+calculations (see <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a>).</p>
+<p>The algorithm implemented in <a class="wikilink" href="../../input_variables/vargw/#symsigma">symsigma</a>=1 constructs a symmetric invariant
 for the diagonal matrix elements of the self-energy by simply averaging the
 <a class="wikilink" href="../../GW/">GW</a> results within the degenerate subspace. Therefore particular care has
 to be taken in the presence of accidental degeneracies. since <a class="wikilink" href="../../GW/">GW</a>
-calculations performed with <a class="wikilink" href="../../input_variables/vargw#symsigma">symsigma</a>=1 will not be able to remove the
+calculations performed with <a class="wikilink" href="../../input_variables/vargw/#symsigma">symsigma</a>=1 will not be able to remove the
 initial accidental degeneracy.</p>
 <h2 id="ucrpa"><strong>ucrpa</strong><a class="headerlink" href="#ucrpa" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: calculation of the screened interaction U with the Constrained RPA method<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
 Default value: 0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> == 1  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a> == 1  </p>
 <p>When equal to one or two, this variable allows for the calculation of U with
 the cRPA method. An explicit test is shown in automatic tests v7/t23-t24-t25
 and in v7/t68-t69. The present implementation is parallelized (as for usual
@@ -1852,16 +1852,16 @@ and in v7/t68-t69. The present implementation is parallelized (as for usual
 involving one correlated atom, and can be use when correlated bands are
 entangled or not. The constrained calculation of the polarisability can be
 done by eliminating transition betweens correlated bands (and not orbitals)
-with the variable <a class="wikilink" href="../../input_variables/vargw#ucrpa_bands">ucrpa_bands</a>.</p>
-<p>For <a class="wikilink" href="../../input_variables/vargw#ucrpa">ucrpa</a> = 1, two solutions are possible. The first one is to specify
-(with the variable <a class="wikilink" href="../../input_variables/vargw#ucrpa_bands">ucrpa_bands</a>) the bands to exclude from the
+with the variable <a class="wikilink" href="../../input_variables/vargw/#ucrpa_bands">ucrpa_bands</a>.</p>
+<p>For <a class="wikilink" href="../../input_variables/vargw/#ucrpa">ucrpa</a> = 1, two solutions are possible. The first one is to specify
+(with the variable <a class="wikilink" href="../../input_variables/vargw/#ucrpa_bands">ucrpa_bands</a>) the bands to exclude from the
 polarisability calculation. The second solution is to provide an energy window
-(with the variable <a class="wikilink" href="../../input_variables/vargw#ucrpa_window">ucrpa_window</a>). The electronic transitions inside this
+(with the variable <a class="wikilink" href="../../input_variables/vargw/#ucrpa_window">ucrpa_window</a>). The electronic transitions inside this
 window will not be taken into account in the polarisability calculation.</p>
-<p>For <a class="wikilink" href="../../input_variables/vargw#ucrpa">ucrpa</a> = 2, the ucrpa_bands should be equal to the <a class="wikilink" href="../../input_variables/vardmft#dmftbandi">dmftbandi</a> and
-<a class="wikilink" href="../../input_variables/vardmft#dmftbandf">dmftbandf</a> values, and the polarisability of the correlated subspace is
+<p>For <a class="wikilink" href="../../input_variables/vargw/#ucrpa">ucrpa</a> = 2, the ucrpa_bands should be equal to the <a class="wikilink" href="../../input_variables/vardmft/#dmftbandi">dmftbandi</a> and
+<a class="wikilink" href="../../input_variables/vardmft/#dmftbandf">dmftbandf</a> values, and the polarisability of the correlated subspace is
 constructed with a band and k-point dependent weight.</p>
-<p>The implementation is restricted to the case of <a class="wikilink" href="../../input_variables/vargs#nspinor">nspinor</a> = 1 (collinear
+<p>The implementation is restricted to the case of <a class="wikilink" href="../../input_variables/vargs/#nspinor">nspinor</a> = 1 (collinear
 case).</p>
 <p>A short presentation of the method and some aspect of the implementation can
 be found in Section II and Appendix A of <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.125110"> B. Amadon, T. Applencourt and F.
@@ -1891,31 +1891,31 @@ numbers) with respect to the position of the Fermi level.</p>
 Variable type: real<br />
 Dimensions: (3)<br />
 Default value: 3*0.0<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a> in [1,2]  </p>
-<p><a class="wikilink" href="../../input_variables/vargw#vcutgeo">vcutgeo</a> is used in conjunction with <a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a> to specify the geometry
+Only relevant if <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a> in [1,2]  </p>
+<p><a class="wikilink" href="../../input_variables/vargw/#vcutgeo">vcutgeo</a> is used in conjunction with <a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a> to specify the geometry
 used to truncate the Coulomb interaction, as well as the particular approach
 to be used. It has a meaning only for the cylindrical symmetry
-(<a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a>=1) or in the case of surfaces (<a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a>=2). For each
+(<a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a>=1) or in the case of surfaces (<a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a>=2). For each
 geometry, two different definitions of the cutoff region are available (see
 Phys. Rev. B 73, 233103 and Phys. Rev. B 73, 205119 for a complete description
 of the methods)</p>
 <p>In Beigi method (Phys. Rev. B 73, 233103), the cutoff region is given by the
 Wigner-Seitz cell centered on the axis of the cylinder. The cutoff region is
 thus automatically defined by the unit cell and there is no need to specify
-When <a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a>.</p>
+When <a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a>.</p>
 <p>To define a cylinder along the z-axis use the following lines. icutcoul 1
 vcutgeo 0 0 1</p>
 <p>Please note that Beigi method is implemented only in the case if an
 orthorhombic Bravais lattic. For hexagonal lattices, one has to use the method
 of Rozzi (Phys. Rev. B 73, 205119) In this case, the interaction is truncated
 in a finite cylinder. Contrarily to the first approach, here one has to
-specify both the radius of the cylinder with <a class="wikilink" href="../../input_variables/vargw#rcut">rcut</a> as well as the length of
+specify both the radius of the cylinder with <a class="wikilink" href="../../input_variables/vargw/#rcut">rcut</a> as well as the length of
 the cylinder along the periodic dimension that should always be smaller than
 the extension of the Born von Karman box. The length of the cylinder is given
 in terms of the fraction of the primitive vector along the periodic direction.</p>
 <p>For example, in order to define a finite cylinder along z of radius 2.5 Bohr
 and length 3*R3 icutcoul 1 vcutgeo 0 0 -3.0 # note the minus sign rcut 2.5</p>
-<p>For surface calculations (<a class="wikilink" href="../../input_variables/vargw#icutcoul">icutcoul</a>=2), <a class="wikilink" href="../../input_variables/vargw#vcutgeo">vcutgeo</a> is used to define the
+<p>For surface calculations (<a class="wikilink" href="../../input_variables/vargw/#icutcoul">icutcoul</a>=2), <a class="wikilink" href="../../input_variables/vargw/#vcutgeo">vcutgeo</a> is used to define the
 two periodic directions defining the surface. Also in this case two different
 techniques are available. In the method of Beigi, the (positive) non-zero
 components of vcutgeo define the periodic directions of the infinite surface.
@@ -1930,22 +1930,22 @@ Variable type: real<br />
 Dimensions: scalar<br />
 Default value: 0.0036749326<br />
 Comment: 0.0036749326 Ha = 0.1 eV<br />
-Only relevant if <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a> in [3,4,99]  </p>
+Only relevant if <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a> in [3,4,99]  </p>
 <p>It is meant to avoid some divergencies that might occur during the evaluation
 of the Adler-Wiser expression of the irreducible polarizability
-(<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3) or during the numerical treatment of the integrals defining
-the contribution to the self-energy matrix elements (<a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4). If the
-denominator becomes smaller than <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a>, a small imaginary part (depending
-on <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a>) is added, in order to avoid the divergence.</p>
-<p>When <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=99, <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a> defines the small complex shift used to avoid
+(<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3) or during the numerical treatment of the integrals defining
+the contribution to the self-energy matrix elements (<a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4). If the
+denominator becomes smaller than <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a>, a small imaginary part (depending
+on <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a>) is added, in order to avoid the divergence.</p>
+<p>When <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=99, <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a> defines the small complex shift used to avoid
 divergences in the expression for the macroscopic dieletric function. It
 simulates the experimental uncertainty and the finite lifetime of the
 quasiparticles (although the true lifetime should be k- and band-dependent).
-The value of <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a> affects the number of iteration needed to achieve
-convergence in the Haydock iterative method. In this case, <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a> should be
+The value of <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a> affects the number of iteration needed to achieve
+convergence in the Haydock iterative method. In this case, <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a> should be
 larger than the typical distance between the eigenvalues of the exciton
 Hamiltonian.<br />
-Ideally, one should make a convergence study decreasing the value of <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a>
+Ideally, one should make a convergence study decreasing the value of <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a>
 for increasing number of k-points.</p></div>
         </div>
 
@@ -1960,6 +1960,8 @@ for increasing number of k-points.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1987,6 +1989,7 @@ for increasing number of k-points.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

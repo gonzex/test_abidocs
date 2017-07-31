@@ -481,10 +481,10 @@ minute. In the meantime, you should read the following.</p>
 <p>Perform a non self-consistent run to compute the Kohn-Sham eigenvalues and the eigenfunctions including several empty states. Note that, unlike standard band structure calculations, here the KS states must be computed on a regular grid of k-points. </p>
 </li>
 <li>
-<p>Use <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 to compute the independent-particle susceptibility (χ0) on a regular grid of <strong>q</strong>-points, for at least two frequencies (usually, ω=0 and a large purely imaginary frequency - of the order of the plasmon frequency, a dozen of eV). The inverse dielectric matrix (ε-1) is then obtained via matrix inversion and stored in an external file (SCR). The list of <strong>q</strong>-points is automatically defined by the k-mesh used to generate the KS states in the previous step. </p>
+<p>Use <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 to compute the independent-particle susceptibility (χ0) on a regular grid of <strong>q</strong>-points, for at least two frequencies (usually, ω=0 and a large purely imaginary frequency - of the order of the plasmon frequency, a dozen of eV). The inverse dielectric matrix (ε-1) is then obtained via matrix inversion and stored in an external file (SCR). The list of <strong>q</strong>-points is automatically defined by the k-mesh used to generate the KS states in the previous step. </p>
 </li>
 <li>
-<p>Use <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=4 to compute the self-energy (Σ) matrix element for a given set of k-points in order to obtain the GW quasiparticle energies Note that the k-point must belong to the k-mesh used to generate the WFK file in step 2. </p>
+<p>Use <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=4 to compute the self-energy (Σ) matrix element for a given set of k-points in order to obtain the GW quasiparticle energies Note that the k-point must belong to the k-mesh used to generate the WFK file in step 2. </p>
 </li>
 </ol>
 <p>The flowchart diagram of a standard one-shot run is depicted in the figure
@@ -536,12 +536,12 @@ tolwfr2  1.0d-18     # Will stop when this tolerance is achieved
 <h4 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <h4 id="1c-generating-the-screening-the-scr-file"><strong> 1.c Generating the screening: the SCR file.</strong><a class="headerlink" href="#1c-generating-the-screening-the-scr-file" title="Permanent link">&para;</a></h4>
 <p>In dataset 3, the calculation of the screening (susceptibility, dielectric
-matrix) is performed. We need to set <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 to do that:</p>
+matrix) is performed. We need to set <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 to do that:</p>
 <div class="codehilite"><pre><span></span>optdriver3  3        # Screening calculation
 </pre></div>
 
 
-<p>The <a class="wikilink" href="../../input_variables/varfil#getwfk">getwfk</a> input variable is similar to other &ldquo;get&rdquo; input variables of
+<p>The <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> input variable is similar to other &ldquo;get&rdquo; input variables of
 ABINIT:</p>
 <div class="codehilite"><pre><span></span>getwfk3     -1       # Obtain WFK file from previous dataset
 </pre></div>
@@ -560,10 +560,10 @@ ecuteps3    3.6      # Cut-off energy of the planewave set to represent the diel
 <script type="math/tex">\chi^{(0)}_{KS}</script>. A cut-off of 8 Hartree is used to represent the
 wavefunctions in the calculation of <script type="math/tex">\chi^{(0)}_{KS}</script>. The dimension of
 <script type="math/tex">\chi^{(0)}_{KS}</script>, as well as all the other matrices (<script type="math/tex">\chi</script>, <script type="math/tex">\epsilon</script>) is
-determined by <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>=3.6 Hartree, giving 169 planewaves.</p>
+determined by <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>=3.6 Hartree, giving 169 planewaves.</p>
 <p>Finally, we define the frequencies at which the screening must be evaluated:
 ω=0.0 eV and the imaginary frequency ω= i 16.7 eV. The latter is determined by
-the input variable <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a></p>
+the input variable <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a></p>
 <div class="codehilite"><pre><span></span>ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screening
 </pre></div>
 
@@ -585,7 +585,7 @@ getscr4    -1       # Obtain SCR file from previous dataset
 </pre></div>
 
 
-<p>The <a class="wikilink" href="../../input_variables/varfil#getscr">getscr</a> input variable is similar to other &ldquo;get&rdquo; input variables of
+<p>The <a class="wikilink" href="../../input_variables/varfil/#getscr">getscr</a> input variable is similar to other &ldquo;get&rdquo; input variables of
 ABINIT.</p>
 <p>Then, comes the definition of parameters needed to compute the self-energy. As
 for the computation of the susceptibility and dielectric matrices, one must
@@ -596,11 +596,11 @@ ecutsigx4   6.0      # Dimension of the G sum in Sigma_x
 </pre></div>
 
 
-<p>In this case, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> controls the number of bands used to calculate the
-correlation part of the Self-Energy. <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a> gives the number of
+<p>In this case, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> controls the number of bands used to calculate the
+correlation part of the Self-Energy. <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a> gives the number of
 planewaves used to calculate σx (the exchange part of the self-energy). The
 size of the planewave set used to compute Σc (the correlation part of the
-self-energy) is controlled by <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> (cannot be larger than the value
+self-energy) is controlled by <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> (cannot be larger than the value
 used to generate the SCR file). However, it is taken equal to the number of
 planewave of Σx if the latter is smaller than the one for Σc.</p>
 <p>Then, come the parameters defining the k-points and the band indices for which
@@ -612,15 +612,15 @@ bdgw4       4  5             # calculate GW corrections for bands from 4 to 5
 </pre></div>
 
 
-<p><a class="wikilink" href="../../input_variables/vargw#nkptgw">nkptgw</a> defines the number of k-points for which the GW corrections will be
-computed. The k-point reduced coordinates are specified in <a class="wikilink" href="../../input_variables/vargw#kptgw">kptgw</a>. At
+<p><a class="wikilink" href="../../input_variables/vargw/#nkptgw">nkptgw</a> defines the number of k-points for which the GW corrections will be
+computed. The k-point reduced coordinates are specified in <a class="wikilink" href="../../input_variables/vargw/#kptgw">kptgw</a>. At
 present, they MUST belong to the k-mesh used to generate the WFK file. Hence
 if you wish the GW correction in a particular k-point, you should choose a
 grid containing it. Usually this is done by taking the k-point grid where the
 convergence is achieved and shifting it such as at least one k-point is placed
-on the wished position in the Brillouin zone. <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> gives the
+on the wished position in the Brillouin zone. <a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a> gives the
 minimum/maximum band whose energies are calculated for the given k-point.</p>
-<p>There is an additional parameter, called <a class="wikilink" href="../../input_variables/vargw#zcut">zcut</a>, related to the self-energy
+<p>There is an additional parameter, called <a class="wikilink" href="../../input_variables/vargw/#zcut">zcut</a>, related to the self-energy
 computation. It is meant to avoid some divergences that might occur in the
 calculation due to integrable poles along the integration path.</p>
 <h4 id="_6"><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
@@ -644,12 +644,12 @@ the density in the unit cell.</p>
 <p>On the basis of the density, one can obtain the classical Drude plasmon
 frequency. The next lines calculate the average density of the system, and
 evaluate the r_s parameter, then compute the Drude plasmon frequency. This is
-the value used by default for <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>. It is in fact the second frequency
+the value used by default for <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>. It is in fact the second frequency
 where the code calculates the dielectric matrix to adjust the plasmon-pole
 model parameters. It has been found that Drude plasma frequency is a
 reasonable value where to adjust the model. The control over this parameter is
 however left to the user in order to check that the result does not change
-when changing <a class="wikilink" href="../../input_variables/vargw#ppmfrq">ppmfrq</a>. If it is the case, then the plasmon-pole model is
+when changing <a class="wikilink" href="../../input_variables/vargw/#ppmfrq">ppmfrq</a>. If it is the case, then the plasmon-pole model is
 not appropriated and one should go beyond by taking into account a full
 dynamical dependence in the screening (see later, the contour-deformation
 method). However, the plasmon-pole model has been found to work well for a
@@ -765,24 +765,24 @@ tgw1o_DS3_SCR to tgw1o_DS1_SCR.</p>
 parameters for a GW calculation. In principle, the following parameters might
 be used to decrease the CPU time and/or the memory requirements:
 <a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=3
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>. and for
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>. and for
 <a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=4,
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>.</p>
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>.</p>
 <p>Before 2008, the advice was indeed to check independently what was the best
 value for each of these. However, with the evolution of memory/disk space, as
 well as the advent of new techniques to diminish the number of bands that is
 needed (see e.g. F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008), and
-the input variable <a class="wikilink" href="../../input_variables/vargw#gwcomp">gwcomp</a>), standard calculations nowadays only need the
-tuning of <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>, simultaneously for
+the input variable <a class="wikilink" href="../../input_variables/vargw/#gwcomp">gwcomp</a>), standard calculations nowadays only need the
+tuning of <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>, simultaneously for
 <a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=3 and
-=4. Indeed, <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> and can have the default value of <a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a>, while
-<a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a> can have the default value of 4*<a class="wikilink" href="../../input_variables/varbas#ecut">ecut</a> for norm-conserving
-pseudopotentials, or <a class="wikilink" href="../../input_variables/varpaw#pawecutdg">pawecutdg</a> for PAW calculations. Actually, the present
+=4. Indeed, <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> and can have the default value of <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a>, while
+<a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a> can have the default value of 4*<a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> for norm-conserving
+pseudopotentials, or <a class="wikilink" href="../../input_variables/varpaw/#pawecutdg">pawecutdg</a> for PAW calculations. Actually, the present
 tutorial needs to be updated to account for the current practice.</p>
 <p>We begin by the convergence study on the three parameters needed in the self-
 energy calculation
 (<a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=4):
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>. This is because for these, we will not
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>. This is because for these, we will not
 need a double dataset loop to check this convergence, and we will rely on the
 previously determined SCR file.</p>
 <hr />
@@ -791,7 +791,7 @@ previously determined SCR file.</p>
 <p>The convergence study is done in the input file tgw1_3.in. First, we check the
 convergence on the number of planewaves used to describe the wavefunctions, in
 the calculation of the Self-Energy. This will be done by defining five
-datasets, with increasing <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>:</p>
+datasets, with increasing <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>:</p>
 <div class="codehilite"><pre><span></span>ndtset     5
 ecutwfn:  3.0
 ecutwfn+  1.0
@@ -844,19 +844,19 @@ the computation of the self-energy is mentioned in the fragments of output:</p>
 </pre></div>
 
 
-<p>So that <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>=5.0 (<a class="wikilink" href="../../input_variables/varint#npwwfn">npwwfn</a>=137) can be considered to lead to
+<p>So that <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>=5.0 (<a class="wikilink" href="../../input_variables/varint/#npwwfn">npwwfn</a>=137) can be considered to lead to
 eigenenergies converged within 0.01 eV.</p>
 <hr />
 <h3 id="_9"><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <p><strong>4 Convergence on the number of planewaves to calculate Σx (optional). </strong></p>
 <p>Second, we check the convergence on the number of planewaves in the
 calculation of Σx. This study in done in tgw1_4.in As mentioned in the
-documentation <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>, safe values exist for <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>, so that if you
+documentation <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>, safe values exist for <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>, so that if you
 do not want to squeeze the CPU time for your calculation (you might gain only
 a few percent in some cases &hellip;), you can impose these values, and skip the
 corresponding convergence study.</p>
 <p>In this lesson, this convergence study will be done by defining five datasets,
-with increasing <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>:</p>
+with increasing <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>:</p>
 <div class="codehilite"><pre><span></span>ndtset     7
 ecutsigx:  3.0
 ecutsigx+  1.0
@@ -934,7 +934,7 @@ convergence on the number of bands in the calculation of Σc. This convergence
 study is rather important, usually, BUT it can be done at the same time as the
 convergence study for the number of bands for the dielectric matrix.</p>
 <p>The convergence on the number of bands to calculate the Self-Energy will be
-done by defining five datasets, with increasing <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>:</p>
+done by defining five datasets, with increasing <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>:</p>
 <div class="codehilite"><pre><span></span>ndtset  5
 nband:  50
 nband+  50
@@ -985,12 +985,12 @@ mentioned in the fragments of output:</p>
 
 <p>So that nband=100 can be considered converged within 0.01 eV.</p>
 <p>At this stage, we know that for the self-energy computation, we need
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>=5.0 <a class="wikilink" href="../../input_variables/vargw#ecutsigx">ecutsigx</a>=6.0, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>=100 .</p>
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>=5.0 <a class="wikilink" href="../../input_variables/vargw/#ecutsigx">ecutsigx</a>=6.0, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>=100 .</p>
 <hr />
 <h3 id="_11"><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <p><strong>6 Convergence on the number of planewaves in the wavefunctions to calculate the screening (ε-1) (optional). </strong></p>
 <p>Now, we come back to the calculation of the screening. Adequate convergence
-studies will couple the change of parameters for <a class="wikilink" href="../../input_variables/vargs#optdriver">optdriver</a>=3 with a
+studies will couple the change of parameters for <a class="wikilink" href="../../input_variables/vargs/#optdriver">optdriver</a>=3 with a
 computation of the GW energy changes. One cannot rely on the convergence of
 the macroscopic dielectric constant to assess the convergence of the GW
 energies.</p>
@@ -1018,10 +1018,10 @@ optdriver?1  3
 
 
 <p>In this latter series, we will have to vary the three different parameters
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a> and <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>.</p>
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a> and <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>.</p>
 <p>First, we check the convergence on the number of planewaves to describe the
 wavefunctions, in the calculation of the screening. This will be done by
-defining five datasets, with increasing <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>:</p>
+defining five datasets, with increasing <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>:</p>
 <div class="codehilite"><pre><span></span>ecutwfn:?   3.0
 ecutwfn+?   1.0
 </pre></div>
@@ -1077,7 +1077,7 @@ planewave set, one gets:</p>
 </pre></div>
 
 
-<p>So that <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>=4.0 (<a class="wikilink" href="../../input_variables/varint#npwwfn">npwwfn</a>=113) can be considered to lead to
+<p>So that <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>=4.0 (<a class="wikilink" href="../../input_variables/varint/#npwwfn">npwwfn</a>=113) can be considered to lead to
 eigenenergies converged within 0.01 eV.</p>
 <hr />
 <h3 id="_12"><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
@@ -1086,10 +1086,10 @@ eigenenergies converged within 0.01 eV.</p>
 the convergence study for the number of bands for the self-energy. Note that
 the number of bands used to calculate both the screening and the self-energy
 can be lowered by a large amount by resorting to the extrapolar technique (see
-the input variable <a class="wikilink" href="../../input_variables/vargw#gwcomp">gwcomp</a>).</p>
+the input variable <a class="wikilink" href="../../input_variables/vargw/#gwcomp">gwcomp</a>).</p>
 <p>Second, we check the convergence on the number of bands in the calculation of
 the screening. This will be done by defining five datasets, with increasing
-<a class="wikilink" href="../../input_variables/varbas#nband">nband</a>:</p>
+<a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>:</p>
 <div class="codehilite"><pre><span></span>nband11  25
 nband21  50
 nband31  100
@@ -1156,7 +1156,7 @@ of bands, one gets:</p>
 <p><strong>8 Convergence on the dimension of the ε-1 matrix (important). </strong></p>
 <p>Third, we check the convergence on the number of plane waves in the
 calculation of the screening. This will be done by defining six datasets, with
-increasing <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>:</p>
+increasing <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>:</p>
 <div class="codehilite"><pre><span></span>ecuteps:?     3.0
 ecuteps+?     1.0
 </pre></div>
@@ -1218,7 +1218,7 @@ of bands, one gets:</p>
 
 <p>So that ecuteps=6.0 (npweps=169) can be considered converged within 0.01 eV.</p>
 <p>At this stage, we know that for the screening computation, we need
-<a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a>=4.0 <a class="wikilink" href="../../input_variables/vargw#ecuteps">ecuteps</a>=6.0, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a>=100.</p>
+<a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a>=4.0 <a class="wikilink" href="../../input_variables/vargw/#ecuteps">ecuteps</a>=6.0, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>=100.</p>
 <p>Of course, until now, we have skipped the most difficult part of the
 convergence tests: the convergence in the number of k-points. It is as
 important to check the convergence on this parameter, than on the other ones.
@@ -1270,8 +1270,8 @@ the Γ point, which allows us to tackle the computation of the band gap at this
 point.</p>
 <p>In dataset 3 we calculate the screening. The screening calculation is very
 time-consuming. So, we have decided to decrease a bit the parameters found in
-the previous convergence studies. Indeed, <a class="wikilink" href="../../input_variables/vargw#ecutwfn">ecutwfn</a> has been decreased from
-4.0 to 3.6. This is rather innocuous. Also, <a class="wikilink" href="../../input_variables/varbas#nband">nband</a> has been decreased from
+the previous convergence studies. Indeed, <a class="wikilink" href="../../input_variables/vargw/#ecutwfn">ecutwfn</a> has been decreased from
+4.0 to 3.6. This is rather innocuous. Also, <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a> has been decreased from
 100 to 25. This is a drastic change. The CPU time of this part is linear with
 respect to this parameter (or more exactly, with the number of conduction
 bands). Thus, the CPU time has been decreased by a factor of 4. Referring to
@@ -1356,34 +1356,34 @@ enclosed in the path.</p>
 <p>Consequently, it is better to evaluate the screening for imaginary frequencies
 (to perform the integration) and also for real frequencies (to evaluate the
 contributions of the residues that may enter into the path of integration).
-The number of imaginary frequencies is set by the input variable <a class="wikilink" href="../../input_variables/vargw#nfreqim">nfreqim</a>.
+The number of imaginary frequencies is set by the input variable <a class="wikilink" href="../../input_variables/vargw/#nfreqim">nfreqim</a>.
 The regular grid of real frequencies is determined by the input variables
-<a class="wikilink" href="../../input_variables/vargw#nfreqre">nfreqre</a>, which sets the number of real frequencies, and <a class="wikilink" href="../../input_variables/vargw#freqremax">freqremax</a>,
+<a class="wikilink" href="../../input_variables/vargw/#nfreqre">nfreqre</a>, which sets the number of real frequencies, and <a class="wikilink" href="../../input_variables/vargw/#freqremax">freqremax</a>,
 which indicates the maximum real frequency used.</p>
 <p>The method is particularly suited to output the spectral function (contained
 in file out.sig). The grid of real frequencies used to calculate the spectral
-function is set by the number of frequencies (input variable <a class="wikilink" href="../../input_variables/vargw#nfreqsp">nfreqsp</a>) and
-by the maximum frequency calculated (input variable <a class="wikilink" href="../../input_variables/vargw#freqspmax">freqspmax</a>).</p>
+function is set by the number of frequencies (input variable <a class="wikilink" href="../../input_variables/vargw/#nfreqsp">nfreqsp</a>) and
+by the maximum frequency calculated (input variable <a class="wikilink" href="../../input_variables/vargw/#freqspmax">freqspmax</a>).</p>
 <h4 id="self-consistent-calculations"><strong> Self-consistent calculations </strong><a class="headerlink" href="#self-consistent-calculations" title="Permanent link">&para;</a></h4>
 <p>The details in the implementation and the justification for the approximations
 retained can be found in F. Bruneval, N. Vast, and L. Reining, Phys. Rev. B
 <strong>74</strong>, 045102 (2006).<br />
-The only added input variables are <a class="wikilink" href="../../input_variables/varfil#getqps">getqps</a> and <a class="wikilink" href="../../input_variables/varfil#irdqps">irdqps</a>. These variables
+The only added input variables are <a class="wikilink" href="../../input_variables/varfil/#getqps">getqps</a> and <a class="wikilink" href="../../input_variables/varfil/#irdqps">irdqps</a>. These variables
 concerns the reading of the _QPS file, that contains the eigenvalues and the
 unitary transform matrices of a previous quasiparticle calculation. QPS stands
 for &ldquo;QuasiParticle Structure&rdquo;.<br />
 The only modified input variables for self-consistent calculations are
-<a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> and <a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a>.<br />
-When the variable <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> is in between 0 and 9, The code calculates the
+<a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> and <a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a>.<br />
+When the variable <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> is in between 0 and 9, The code calculates the
 quasiparticle energies only and does not output any QPS file (as in a standard
 GW run).<br />
-When the variable <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> is in between 10 and 19, the code calculates
+When the variable <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> is in between 10 and 19, the code calculates
 the quasiparticle energies only and outputs them in a QPS file.<br />
-When the variable <a class="wikilink" href="../../input_variables/vargw#gwcalctyp">gwcalctyp</a> is in between 20 and 29, the code calculates
+When the variable <a class="wikilink" href="../../input_variables/vargw/#gwcalctyp">gwcalctyp</a> is in between 20 and 29, the code calculates
 the quasiparticle energies and wavefunctions and outputs them in a QPS file.<br />
 For a full self-consistency calculation, the quasiparticle wavefunctions are
 expanded in the basis set of the Kohn-Sham wavefunctions. The variable
-<a class="wikilink" href="../../input_variables/vargw#bdgw">bdgw</a> now indicates the size of all matrices to be calculated and
+<a class="wikilink" href="../../input_variables/vargw/#bdgw">bdgw</a> now indicates the size of all matrices to be calculated and
 diagonalized. The quasiparticle wavefunctions are consequently linear
 combinations of the Kohn-Sham wavefunctions in between the min and max values
 of bdgw.</p>
@@ -1483,6 +1483,8 @@ complex:<br />
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -1510,6 +1512,7 @@ complex:<br />
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>

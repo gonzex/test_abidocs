@@ -581,7 +581,7 @@ them.</p>
 lead, which requires a large number of k-points if one wants to get an
 accurate description of the ground state. Examine this file. Note that the
 cut-off is realistic, as well as the grid of k-points (giving 60 k points in
-the irreducible Brillouin zone). However, the number of SCF steps, <a class="wikilink" href="../../input_variables/varbas#nstep">nstep</a>,
+the irreducible Brillouin zone). However, the number of SCF steps, <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>,
 has been set to 3 only. This is to keep the CPU time reasonable for this
 tutorial, without affecting the way parallelism on the k points will be able
 to increase the speed. Once done, your output files have likely been produced.
@@ -704,8 +704,8 @@ indeed work concurrently.</p>
 <h3 id="number-of-computing-cores-to-accomplish-a-task">Number of computing cores to accomplish a task<a class="headerlink" href="#number-of-computing-cores-to-accomplish-a-task" title="Permanent link">&para;</a></h3>
 <p>Balancing efficiently the load on the processors is not always
 straightforward. When using k-point- and spin-parallelism, the ideal numbers
-of processors to use are those that divide the product of <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a> by
-<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a> (e.g. for <a class="wikilink" href="../../input_variables/varbas#nsppol">nsppol</a>*<a class="wikilink" href="../../input_variables/varbas#nkpt">nkpt</a>, it is quite efficient to use 2, 3, 4,
+of processors to use are those that divide the product of <a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a> by
+<a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a> (e.g. for <a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a>*<a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a>, it is quite efficient to use 2, 3, 4,
 6 or 12 processors). ABINIT will nevertheless handle correctly other numbers
 of processors, albeit slightly less efficiently, as the final time will be
 determined by the processor that will have the biggest share of the work to
@@ -792,6 +792,8 @@ run.</p></div>
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
+
+      <!--
         <script>var base_url = '../..';</script>
         <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
         <script src="../../js/base.js"></script>
@@ -819,6 +821,7 @@ run.</p></div>
         </div>
     </div>
 </div>
+    -->
 
     </body>
 </html>
