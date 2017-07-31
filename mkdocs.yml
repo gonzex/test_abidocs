@@ -72,6 +72,7 @@ markdown_extensions:
      permalink: true
      #separator: "_"
   - markdown.extensions.admonition
+  - markdown.extensions.fenced_code 
   - markdown.extensions.codehilite
   - markdown.extensions.def_list
   - markdown.extensions.smarty

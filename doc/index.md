@@ -60,6 +60,17 @@ $$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 
 
 The propagator in Eq.\ref{eq:GreenDef} contains ...
 
+Can include videos with:
+
+```
+[![asciicast](https://asciinema.org/a/40324.png)](https://asciinema.org/a/40324)
+```
+
+The video below gives an overwiew of the command line options of `runtests.py`
+
+[![asciicast](https://asciinema.org/a/40324.png)](https://asciinema.org/a/40324)
+
+
 
 * * *
 
