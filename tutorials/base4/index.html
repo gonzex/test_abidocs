@@ -38,7 +38,47 @@
     <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
     -->
 
-    
+    <!--
+    -->
+        <!-- MathJax support -->
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+        <!--
+        Configure MathJax to produce automatic equation numbers
+        http://docs.mathjax.org/en/latest/tex.html
+        -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              TeX: {
+                  equationNumbers: { autoNumber: "all" },
+                  extensions: ["AMSmath.js"],
+                  Macros: {
+                      rr: "{\\bf r}",
+                      GG: "{\\bf G}",
+                      kk: "{\\bf k}",
+                      qq: "{\\bf q}"
+                  }
+              }
+          });
+        </script>
+
+        <!-- See http://docs.mathjax.org/en/latest/start.html 
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+            jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": { availableFonts: ["TeX"] }
+          });
+        </script>
+        -->
+
  
     </head>
 

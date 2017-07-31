@@ -38,7 +38,47 @@
     <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
     -->
 
-    
+    <!--
+    -->
+        <!-- MathJax support -->
+        <script type="text/javascript" async
+          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+        <!--
+        Configure MathJax to produce automatic equation numbers
+        http://docs.mathjax.org/en/latest/tex.html
+        -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+              TeX: {
+                  equationNumbers: { autoNumber: "all" },
+                  extensions: ["AMSmath.js"],
+                  Macros: {
+                      rr: "{\\bf r}",
+                      GG: "{\\bf G}",
+                      kk: "{\\bf k}",
+                      qq: "{\\bf q}"
+                  }
+              }
+          });
+        </script>
+
+        <!-- See http://docs.mathjax.org/en/latest/start.html 
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+            jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": { availableFonts: ["TeX"] }
+          });
+        </script>
+        -->
+
  
     </head>
 
@@ -367,6 +407,13 @@ central outcome is the main ABINIT application, delivered with many other
 files in the ABINIT package. The ABINIT project includes also resources
 provided on the <a href="http://www.abinit.org">ABINIT Web site</a> and the 
 <a href="https://github.com/abinit">ABINIT Github repository</a>.</p>
+<div class="codehilite"><pre><span></span>markdown admonition
+
+!!! warning
+    text
+</pre></div>
+
+
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Before reading the present file, and get some grasp about the main ABINIT
@@ -384,6 +431,122 @@ Cambridge University Press (2004) ISBN 0 521 78285 6.</p>
 </div>
 <p>After having gone through the present New User&rsquo;s Guide, you should follow the
 ABINIT tutorial (<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>).</p>
+<div class="codehilite"><pre><span></span>modal
+\{!tests/v1/Input/t01.in!\}
+</pre></div>
+
+
+<!-- Button trigger modal -->
+
+<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Open tests/v1/Input/t01.in
+</button></p>
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">tests/v1/Input/t01.in</h4>
+      </div>
+      <div class="modal-body">
+        <pre>#   FCC Al; 2 special points
+
+#nband 8
+#nspinor 2
+
+ acell 3*7.60
+ ecut 10
+ enunit 2
+ intxc 1
+ kptopt 0
+ kpt   1 1 1     1 2 2   kptnrm 4
+ natom  1
+ nband 4
+ nkpt  2
+ nline 3
+ nstep 8
+ nsym  24 ntypat  1
+ occopt  4  prtvol 10
+ rprim   0 .5 .5  .5 0 .5  .5 .5 0
+ symrel
+       1  0  0    0  1  0    0  0  1
+       0  1 -1    1  0 -1    0  0 -1
+      -1  0  0   -1  0  1   -1  1  0
+       0 -1  1    0 -1  0    1 -1  0
+      -1  0  1   -1  0  0   -1  1  0
+       0 -1  0    0 -1  1    1 -1  0
+       0 -1  1    1 -1  0    0 -1  0
+       0  1 -1    0  0 -1    1  0 -1
+       0  0 -1    1  0 -1    0  1 -1
+      -1  1  0   -1  0  1   -1  0  0
+       1  0 -1    0  1 -1    0  0 -1
+       1 -1  0    0 -1  0    0 -1  1
+      -1  0  0   -1  1  0   -1  0  1
+       0  1  0    1  0  0    0  0  1
+       0  0  1    0  1  0    1  0  0
+       1  0  0    0  0  1    0  1  0
+       0  0  1    1  0  0    0  1  0
+       0  1  0    0  0  1    1  0  0
+      -1  0  1   -1  1  0   -1  0  0
+       0  0 -1    0  1 -1    1  0 -1
+       1  0 -1    0  0 -1    0  1 -1
+       1 -1  0    0 -1  1    0 -1  0
+       0 -1  0    1 -1  0    0 -1  1
+      -1  1  0   -1  0  0   -1  0  1
+ tnons   72*0.0d0
+ tolwfr 1.0d-16
+ tsmear 0.05
+ typat  1
+ wtk   1 3
+ xred  0.0 0.0 0.0
+ znucl 13.0
+
+
+## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
+#%%<BEGIN TEST_INFO>
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0
+#%% psp_files=13al.pspgth
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% keywords = NC
+#%% description = 
+#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .
+#%%  Designed to test the treatment of metals, using the "cold smearing"
+#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
+#%%<END TEST_INFO>
+</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="codehilite"><pre><span></span>wiki links
+[[ecut]]
+</pre></div>
+
+
+<p>This is a link to the <a class="wikilink" href="./input_variables/varbas/#ecut">ecut</a> input variable.</p>
+<div class="codehilite"><pre><span></span>citations:
+[[Allen1976]]
+</pre></div>
+
+
+<p>Link to <a class="wikilink" href="./bibliography/#Allen1976">Allen1976</a> paper</p>
+<div class="codehilite"><pre><span></span>Mathjax support
+</pre></div>
+
+
+<p>
+<script type="math/tex; mode=display"> G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle
+\label{eq:GreenDef} </script>
+</p>
+<p>The propagator in Eq.\ref{eq:GreenDef} contains &hellip;</p>
 <hr />
 <h3 id="146-introduction"><strong>1. Introduction</strong><a class="headerlink" href="#146-introduction" title="Permanent link">&para;</a></h3>
 <p>ABINIT is a package whose main program allows to find the total energy, charge
@@ -688,5 +851,5 @@ been added (so likely, no additional bug!).</p>
 
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-07-31 12:40:31
+Build Date UTC : 2017-07-31 13:06:40
 -->
