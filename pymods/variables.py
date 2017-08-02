@@ -1,11 +1,123 @@
-#!/usr/bin/env python
+# coding: utf-8
+from __future__ import print_function, division, unicode_literals, absolute_import
 
 import os
+from html2text import html2text
 
 try:
     import yaml
 except ImportError:
     raise ImportError("pyyaml package is not installed. Install it with `pip install pyyaml`")
+
+
+def get_ax_fig_plt(ax=None):
+    """
+    Helper function used in plot functions supporting an optional Axes argument.
+    If ax is None, we build the `matplotlib` figure and create the Axes else
+    we return the current active figure.
+
+    Returns:
+        ax: :class:`Axes` object
+        figure: matplotlib figure
+        plt: matplotlib pyplot module.
+    """
+    import matplotlib.pyplot as plt
+    if ax is None:
+        fig = plt.figure()
+        ax = fig.add_subplot(1, 1, 1)
+    else:
+        fig = plt.gcf()
+
+    return ax, fig, plt
+
+
+def add_fig_kwargs(func):
+    """
+    Decorator that adds keyword arguments for functions returning matplotlib
+    figures.
+
+    The function should return either a matplotlib figure or None to signal
+    some sort of error/unexpected event.
+    See doc string below for the list of supported options.
+    """
+    from functools import wraps
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        # pop the kwds used by the decorator.
+        title = kwargs.pop("title", None)
+        size_kwargs = kwargs.pop("size_kwargs", None)
+        show = kwargs.pop("show", True)
+        savefig = kwargs.pop("savefig", None)
+        tight_layout = kwargs.pop("tight_layout", False)
+
+        # Call func and return immediately if None is returned.
+        fig = func(*args, **kwargs)
+        if fig is None:
+            return fig
+
+        # Operate on matplotlib figure.
+        if title is not None:
+            fig.suptitle(title)
+
+        if size_kwargs is not None:
+            fig.set_size_inches(size_kwargs.pop("w"), size_kwargs.pop("h"),
+                                **size_kwargs)
+
+        if savefig:
+            fig.savefig(savefig)
+        if tight_layout:
+            fig.tight_layout()
+        if show:
+            import matplotlib.pyplot as plt
+            plt.show()
+
+        return fig
+
+    # Add docstring to the decorated method.
+    s = "\n" + """\
+    keyword arguments controlling the display of the figure:
+
+    ================  ====================================================
+    kwargs            Meaning
+    ================  ====================================================
+    title             Title of the plot (Default: None).
+    show              True to show the figure (default: True).
+    savefig           'abc.png' or 'abc.eps' to save the figure to a file.
+    size_kwargs       Dictionary with options passed to fig.set_size_inches
+                      example: size_kwargs=dict(w=3, h=4)
+    tight_layout      True if to call fig.tight_layout (default: False)
+    ================  ===================================================="""
+
+    if wrapper.__doc__ is not None:
+        # Add s at the end of the docstring.
+        wrapper.__doc__ += "\n" + s
+    else:
+        # Use s
+        wrapper.__doc__ = s
+
+    return wrapper
+
+
+def format_dimensions(dimensions):
+
+  if dimensions is None:
+    s = ''
+  elif dimensions == "scalar":
+    s = 'scalar'
+  else:
+    #s = str(dimensions)
+    if isinstance(dimensions,list):
+      s = '('
+      for dim in dimensions:
+        s += str(dim) + ','
+
+      s = s[:-1]
+      s += ')'
+    else:
+      s = str(dimensions)
+
+  return s
 
 class literal(str): pass
 
@@ -74,6 +186,34 @@ class Variable(yaml.YAMLObject):
         return "Variable " + str(self.abivarname) + " (default = " + str(self.defaultval) + ")"
 
     # MG
+   # TODO: code should be included.
+    def __hash__(self):
+        return hash(self.abivarname)
+
+    def __eq__(self, other):
+        if other is None: return False
+        return self.abivarname == other.abivarname
+
+    def __ne__(self, other):
+        return not (self == other)
+
+    def get_parents(self):
+        import re
+        parents = []
+        WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
+        if isinstance(self.dimensions, (list, tuple)):
+            for dim in self.dimensions:
+                dim = str(dim)
+                m = re.match(WIKILINK_RE, dim)
+                if m:
+                    parents.append(m.group(1))
+
+        if self.requires is not None:
+            parents.extend([m.group(1) for m in re.finditer(WIKILINK_RE, self.requires) if m])
+
+        return set(parents)
+
+
     def website_ilink(self, label=None):
         """String with the URL of the web page."""
         label = self.abivarname if label is None else str(label)
@@ -81,7 +221,6 @@ class Variable(yaml.YAMLObject):
         return '<a href="%s" target="_blank">%s</a>' % (url, label)
 
     def to_md(self):
-        import html2text
         lines = []
         app = lines.append
 
@@ -137,7 +276,7 @@ class Variable(yaml.YAMLObject):
         #app("<br><font id=\"text\">\n")
         #app(str(var.text))
         if self.text is not None:
-            md_text = html2text.html2text(self.text)
+            md_text = html2text(self.text)
             app(2 * "\n")
             app(str(md_text))
         else:
@@ -316,6 +455,8 @@ class InputVariables(OrderedDict):
         # Build list of variables
         with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
             fh.write(self.get_vartabs_html())
+            for varfile in self.varfiles:
+                fh.write(self.get_plotly_networkx(varfile=varfile))
 
         # Build markdown
         for varfile in self.varfiles:
@@ -385,23 +526,214 @@ class InputVariables(OrderedDict):
 
         return html + "</div> </div>"
 
+    @add_fig_kwargs
+    def plot_networkx(self, mode="network", with_edge_labels=False, ax=None,
+                      node_size="num_cores", node_label="name_class", layout_type="spring", **kwargs):
+        """
+        Use networkx to draw the flow with the connections among the nodes and
+        the status of the tasks.
 
-def format_dimensions(dimensions):
+        Args:
+            mode: `networkx` to show connections, `status` to group tasks by status.
+            with_edge_labels: True to draw edge labels.
+            ax: matplotlib :class:`Axes` or None if a new figure should be created.
+            node_size: By default, the size of the node is proportional to the number of cores used.
+            node_label: By default, the task class is used to label node.
+            layout_type: Get positions for all nodes using `layout_type`. e.g. pos = nx.spring_layout(g)
 
-  if dimensions is None:
-    s = ''
-  elif dimensions == "scalar":
-    s = 'scalar'
-  else:
-    #s = str(dimensions)
-    if isinstance(dimensions,list):
-      s = '('
-      for dim in dimensions:
-        s += str(dim) + ','
+        .. warning::
 
-      s = s[:-1]
-      s += ')'
-    else:
-      s = str(dimensions)
+            Requires networkx package.
+        """
+        import networkx as nx
+        import collections
 
-  return s
+        # Build the graph
+        g, edge_labels = nx.Graph(), {}
+        counter = collections.Counter()
+        for i, (name, var) in enumerate(self.items()):
+            #if i == 5: break
+            if var.varfile != "varbas": continue
+            g.add_node(var, name=name)
+            counter[var] += 1
+            for parent in var.get_parents():
+                print(parent, "is parent of ", name)
+                parent = self[parent]
+                g.add_edge(parent, var)
+                counter[parent] += 1
+                counter[var] += 1
+
+                # TODO: Add getters! What about locked nodes!
+                #i = [dep.node for dep in child.deps].index(task)
+                #edge_labels[(task, child)] = " ".join(child.deps[i].exts)
+
+        # Get positions for all nodes using layout_type.
+        # e.g. pos = nx.spring_layout(g)
+        #pos = getattr(nx, layout_type + "_layout")(g) #, scale=100000, iterations=30)
+        #pos = nx.spring_layout(g, k=2)
+
+        # nlist (list of lists) – List of node lists for each shell.
+        nlist = []
+        vals = set(counter.values())
+        for c in vals:
+            nlist.append([var for var in g if counter[var] == c])
+        print(nlist)
+
+        pos = nx.shell_layout(g, nlist=nlist, dim=2, scale=1, center=None)
+
+        # Select function used to compute the size of the node
+        #make_node_size = dict(num_cores=lambda task: 300 * task.manager.num_cores)[node_size]
+        # Select function used to build the label
+        #make_node_label = dict(name_class=lambda task: task.pos_str + "\n" + task.__class__.__name__,)[node_label]
+
+        #labels = {var: make_node_label(var) for var in g.nodes()}
+        labels = {var: var.abivarname for var in g.nodes()}
+        ax, fig, plt = get_ax_fig_plt(ax=ax)
+
+        # Select plot type.
+        if mode == "network":
+            nx.draw_networkx(g, pos,
+                             labels=labels,
+                             #node_color=[task.color_rgb for task in g.nodes()],
+                             #node_size=[make_node_size(task) for task in g.nodes()],
+                             width=1, style="dotted", with_labels=True, ax=ax)
+
+            # Draw edge labels
+            #if with_edge_labels:
+            #    nx.draw_networkx_edge_labels(g, pos, edge_labels=edge_labels, ax=ax)
+
+        elif mode == "status":
+            # Group tasks by status.
+            for status in self.ALL_STATUS:
+                tasks = list(self.iflat_tasks(status=status))
+
+                # Draw nodes (color is given by status)
+                node_color = status.color_opts["color"]
+                if node_color is None: node_color = "black"
+                #print("num nodes %s with node_color %s" % (len(tasks), node_color))
+
+                nx.draw_networkx_nodes(g, pos,
+                                       nodelist=tasks,
+                                       node_color=node_color,
+                                       node_size=[make_node_size(task) for task in tasks],
+                                       alpha=0.5, ax=ax
+                                       #label=str(status),
+                                       )
+
+            # Draw edges.
+            nx.draw_networkx_edges(g, pos, width=2.0, alpha=0.5, arrows=True, ax=ax) # edge_color='r')
+
+            # Draw labels
+            nx.draw_networkx_labels(g, pos, labels, font_size=12, ax=ax)
+
+            # Draw edge labels
+            if with_edge_labels:
+                nx.draw_networkx_edge_labels(g, pos, edge_labels=edge_labels, ax=ax)
+                #label_pos=0.5, font_size=10, font_color='k', font_family='sans-serif', font_weight='normal',
+                # alpha=1.0, bbox=None, ax=None, rotate=True, **kwds)
+
+        else:
+            raise ValueError("Unknown value for mode: %s" % str(mode))
+
+        ax.axis("off")
+        return fig
+
+    def get_plotly_networkx(self, varfile="all", layout_type="spring"):
+        # https://plot.ly/python/network-graphs/
+        import networkx as nx
+
+        # Build the graph
+        g, edge_labels = nx.Graph(), {}
+        for i, (name, var) in enumerate(self.items()):
+            #if i == 5: break
+            if varfile != "all" and var.varfile != varfile: continue
+            g.add_node(var, name=name)
+            for parent in var.get_parents():
+                #print(parent, "is parent of ", name)
+                parent = self[parent]
+                g.add_edge(parent, var)
+
+                # TODO: Add getters! What about locked nodes!
+                #i = [dep.node for dep in child.deps].index(task)
+                #edge_labels[(task, child)] = " ".join(child.deps[i].exts)
+
+        # Get positions for all nodes using layout_type.
+        # e.g. pos = nx.spring_layout(g)
+        pos = getattr(nx, layout_type + "_layout")(g) #, scale=100000, iterations=30)
+        #pos = nx.spring_layout(g, k=2)
+
+        # Add edges as disconnected lines in a single trace and nodes as a scatter trace
+        import plotly
+        import plotly.graph_objs as go
+        from textwrap import fill
+        edge_trace = go.Scatter(
+            x=[],
+            y=[],
+            line=go.Line(width=2.0, color='#888', dash="dot"),
+            hoverinfo='none',
+            mode='lines',
+        )
+
+        for edge in g.edges():
+            x0, y0 = pos[edge[0]]
+            x1, y1 = pos[edge[1]]
+            edge_trace['x'] += [x0, x1, None]
+            edge_trace['y'] += [y0, y1, None]
+
+        node_trace = go.Scatter(
+            x=[],
+            y=[],
+            text=[v.abivarname for v in g],
+            textposition='bottom',
+            mode='markers+text',
+            hoverinfo='text',
+            #hovertext=[fill(html2text(v.text), width=90) for v in g.nodes()],
+            hovertext=[v.mnemonics for v in g.nodes()],
+            marker=go.Marker(
+                showscale=True,
+                # colorscale options
+                # 'Greys' | 'Greens' | 'Bluered' | 'Hot' | 'Picnic' | 'Portland' |
+                # Jet' | 'RdBu' | 'Blackbody' | 'Earth' | 'Electric' | 'YIOrRd' | 'YIGnBu'
+                colorscale='YIGnBu',
+                reversescale=True,
+                color=[],
+                size=20,
+                colorbar=dict(
+                    thickness=15,
+                    title='Node Connections',
+                    xanchor='left',
+                    titleside='right'
+                ),
+                line=dict(width=2)))
+
+        for node in g.nodes():
+            x, y = pos[node]
+            node_trace['x'].append(x)
+            node_trace['y'].append(y)
+
+        # Color node points by the number of connections.
+        for node, adjacencies in enumerate(g.adjacency_list()):
+            node_trace['marker']['color'].append(len(adjacencies))
+            node_info = '# of connections: '+str(len(adjacencies))
+            #node_trace['text'].append(node_info)
+
+        fig = go.Figure(data=go.Data([edge_trace, node_trace]),
+                     layout=go.Layout(
+                        title='<br>Network graph for varfile %s' % varfile,
+                        titlefont=dict(size=16),
+                        showlegend=False,
+                        hovermode='closest',
+                        margin=dict(b=20,l=5,r=5,t=40),
+                        annotations=[ dict(
+                            text="Network for varfile %s" % varfile,
+                            showarrow=False,
+                            xref="paper", yref="paper",
+                            x=0.005, y=-0.002 ) ],
+                        xaxis=go.XAxis(showgrid=False, zeroline=False, showticklabels=False),
+                        yaxis=go.YAxis(showgrid=False, zeroline=False, showticklabels=False)))
+
+        #py.iplot(fig, filename='networkx')
+        #plotly.offline.plot(fig)
+        s = plotly.offline.plot(fig, include_plotlyjs=True, output_type='div')
+        #print(s)
+        return s
