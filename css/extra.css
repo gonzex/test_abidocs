@@ -1,5 +1,9 @@
-#editor { 
-    height: 300px;
+/* Setting height is also important, otherwise editor wont showup 
+http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html
+*/
+
+.editor { 
+    height: 300px; 
     /*
     position: absolute;
     top: 0;
