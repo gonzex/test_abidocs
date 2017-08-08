@@ -1,458 +1,2113 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/input_variables/varfil/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>File-handling - abinit</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/extra.css" rel="stylesheet">
-        <link href="../../css/codehilite.css" rel="stylesheet">
+<html lang="en" class="no-js">
+  <head>
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Abinit documentation">
+      
+      
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varfil/">
+      
+      
+        <meta name="author" content="The Abinit group">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>File-handling - abinit</title>
+      
+    
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!--
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- Jquery from Google CDN 
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript
+    -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 
     <!--
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script> $( function() {$( "#abinit-tabs" ).tabs();} ); </script>
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
     -->
-
-    <!--
-    -->
-        <!-- MathJax support -->
-        <script type="text/javascript" async
-          src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
-
-        <!--
-        Configure MathJax to produce automatic equation numbers
-        http://docs.mathjax.org/en/latest/tex.html
-        -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-              TeX: {
-                  equationNumbers: { autoNumber: "all" },
-                  extensions: ["AMSmath.js"],
-                  Macros: {
-                      rr: "{\\bf r}",
-                      GG: "{\\bf G}",
-                      kk: "{\\bf k}",
-                      qq: "{\\bf q}"
-                  }
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
               }
-          });
-        </script>
+          }
+      });
+    </script>
 
-        <!-- See http://docs.mathjax.org/en/latest/start.html 
-        <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
-            jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
-            tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                processEscapes: true
-            },
-            "HTML-CSS": { availableFonts: ["TeX"] }
-          });
-        </script>
-        -->
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
 
- 
-    </head>
 
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/codehilite.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../..">abinit</a>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Input Variables
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Abinit
+                </span>
+              
+            
+            File-handling
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Start <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../..">Introduction</a>
-</li>
-                            
-<li >
-    <a href="../../installation/">Installation</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Topics</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../topics/crystal/">Crystalline Structure</a>
-</li>
-            
-<li >
-    <a href="../../topics/kpoints/">K-points</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="../varbas/">Basic</a>
-</li>
-            
-<li >
-    <a href="../varbse/">Bethe-Salpeter</a>
-</li>
-            
-<li >
-    <a href="../vardev/">Developers</a>
-</li>
-            
-<li >
-    <a href="../vardmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="../vareph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="../varff/">Varff</a>
-</li>
-            
-<li class="active">
-    <a href="./">File-handling</a>
-</li>
-            
-<li >
-    <a href="../vargeo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="../vargs/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="../vargw/">GW</a>
-</li>
-            
-<li >
-    <a href="../varint/">Internal</a>
-</li>
-            
-<li >
-    <a href="../varpar/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="../varpaw/">PAW</a>
-</li>
-            
-<li >
-    <a href="../varrf/">RF</a>
-</li>
-            
-<li >
-    <a href="../varrlx/">Relaxation</a>
-</li>
-            
-<li >
-    <a href="../varvdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="../varw90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="../../theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="../../bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="../../about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="../../about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../varff/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../vargeo/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#get1den">get1den</a></li>
-        <li class="main "><a href="#get1wf">get1wf</a></li>
-        <li class="main "><a href="#getbscoup">getbscoup</a></li>
-        <li class="main "><a href="#getbseig">getbseig</a></li>
-        <li class="main "><a href="#getbsreso">getbsreso</a></li>
-        <li class="main "><a href="#getddb">getddb</a></li>
-        <li class="main "><a href="#getddk">getddk</a></li>
-        <li class="main "><a href="#getden">getden</a></li>
-        <li class="main "><a href="#gethaydock">gethaydock</a></li>
-        <li class="main "><a href="#getocc">getocc</a></li>
-        <li class="main "><a href="#getqps">getqps</a></li>
-        <li class="main "><a href="#getscr">getscr</a></li>
-        <li class="main "><a href="#getsuscep">getsuscep</a></li>
-        <li class="main "><a href="#getwfk">getwfk</a></li>
-        <li class="main "><a href="#getwfq">getwfq</a></li>
-        <li class="main "><a href="#ird1den">ird1den</a></li>
-        <li class="main "><a href="#ird1wf">ird1wf</a></li>
-        <li class="main "><a href="#irdbscoup">irdbscoup</a></li>
-        <li class="main "><a href="#irdbseig">irdbseig</a></li>
-        <li class="main "><a href="#irdbsreso">irdbsreso</a></li>
-        <li class="main "><a href="#irdddb">irdddb</a></li>
-        <li class="main "><a href="#irdddk">irdddk</a></li>
-        <li class="main "><a href="#irdden">irdden</a></li>
-        <li class="main "><a href="#irdhaydock">irdhaydock</a></li>
-        <li class="main "><a href="#irdqps">irdqps</a></li>
-        <li class="main "><a href="#irdscr">irdscr</a></li>
-        <li class="main "><a href="#irdsuscep">irdsuscep</a></li>
-        <li class="main "><a href="#irdwfk">irdwfk</a></li>
-        <li class="main "><a href="#irdwfq">irdwfq</a></li>
-        <li class="main "><a href="#kssform">kssform</a></li>
-        <li class="main "><a href="#prt1dm">prt1dm</a></li>
-        <li class="main "><a href="#prtden">prtden</a></li>
-        <li class="main "><a href="#prtdos">prtdos</a></li>
-        <li class="main "><a href="#prtdosm">prtdosm</a></li>
-        <li class="main "><a href="#prteig">prteig</a></li>
-        <li class="main "><a href="#prtelf">prtelf</a></li>
-        <li class="main "><a href="#prtfsurf">prtfsurf</a></li>
-        <li class="main "><a href="#prtgden">prtgden</a></li>
-        <li class="main "><a href="#prtgeo">prtgeo</a></li>
-        <li class="main "><a href="#prtgkk">prtgkk</a></li>
-        <li class="main "><a href="#prtgsr">prtgsr</a></li>
-        <li class="main "><a href="#prtkden">prtkden</a></li>
-        <li class="main "><a href="#prtkpt">prtkpt</a></li>
-        <li class="main "><a href="#prtlden">prtlden</a></li>
-        <li class="main "><a href="#prtpot">prtpot</a></li>
-        <li class="main "><a href="#prtpsps">prtpsps</a></li>
-        <li class="main "><a href="#prtspcur">prtspcur</a></li>
-        <li class="main "><a href="#prtstm">prtstm</a></li>
-        <li class="main "><a href="#prtsuscep">prtsuscep</a></li>
-        <li class="main "><a href="#prtvclmb">prtvclmb</a></li>
-        <li class="main "><a href="#prtvha">prtvha</a></li>
-        <li class="main "><a href="#prtvhxc">prtvhxc</a></li>
-        <li class="main "><a href="#prtvol">prtvol</a></li>
-        <li class="main "><a href="#prtvolimg">prtvolimg</a></li>
-        <li class="main "><a href="#prtvpsp">prtvpsp</a></li>
-        <li class="main "><a href="#prtvxc">prtvxc</a></li>
-        <li class="main "><a href="#prtwant">prtwant</a></li>
-        <li class="main "><a href="#prtwf">prtwf</a></li>
-        <li class="main "><a href="#prtwf_full">prtwf_full</a></li>
-        <li class="main "><a href="#prtxml">prtxml</a></li>
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="Quick Start" class="md-tabs__link">
+          Quick Start
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../varlist_abinit/" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Tutorials" class="md-tabs__link">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    abinit
+  </label>
+  
+    <div class="md-nav__source">
+      
 
-<h2 id="get1den"><strong>get1den</strong><a class="headerlink" href="#get1den" title="Permanent link">&para;</a></h2>
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Quick Start
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Quick Start
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
+    
+    <label class="md-nav__link" for="nav-1-3">
+      Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-3">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/crystal/" title="Crystalline Structure" class="md-nav__link">
+      Crystalline Structure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/kpoints/" title="K-points" class="md-nav__link">
+      K-points
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+      Abinit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+      Mrgddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Input Variables
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Input Variables
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varlist_abinit/" title="All Variables" class="md-nav__link">
+      All Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varbas/" title="Basic" class="md-nav__link">
+      Basic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varbse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vardev/" title="Developers" class="md-nav__link">
+      Developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vardmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vareph/" title="Electron-Phonon" class="md-nav__link">
+      Electron-Phonon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varff/" title="Varff" class="md-nav__link">
+      Varff
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        File-handling
+      </label>
+    
+    <a href="./" title="File-handling" class="md-nav__link md-nav__link--active">
+      File-handling
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get1den" title="get1den" class="md-nav__link">
+    get1den
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get1wf" title="get1wf" class="md-nav__link">
+    get1wf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbscoup" title="getbscoup" class="md-nav__link">
+    getbscoup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbseig" title="getbseig" class="md-nav__link">
+    getbseig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbsreso" title="getbsreso" class="md-nav__link">
+    getbsreso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getddb" title="getddb" class="md-nav__link">
+    getddb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getddk" title="getddk" class="md-nav__link">
+    getddk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getden" title="getden" class="md-nav__link">
+    getden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gethaydock" title="gethaydock" class="md-nav__link">
+    gethaydock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getocc" title="getocc" class="md-nav__link">
+    getocc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getqps" title="getqps" class="md-nav__link">
+    getqps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getscr" title="getscr" class="md-nav__link">
+    getscr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getsuscep" title="getsuscep" class="md-nav__link">
+    getsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getwfk" title="getwfk" class="md-nav__link">
+    getwfk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getwfq" title="getwfq" class="md-nav__link">
+    getwfq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ird1den" title="ird1den" class="md-nav__link">
+    ird1den
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ird1wf" title="ird1wf" class="md-nav__link">
+    ird1wf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbscoup" title="irdbscoup" class="md-nav__link">
+    irdbscoup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbseig" title="irdbseig" class="md-nav__link">
+    irdbseig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbsreso" title="irdbsreso" class="md-nav__link">
+    irdbsreso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdddb" title="irdddb" class="md-nav__link">
+    irdddb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdddk" title="irdddk" class="md-nav__link">
+    irdddk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdden" title="irdden" class="md-nav__link">
+    irdden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdhaydock" title="irdhaydock" class="md-nav__link">
+    irdhaydock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdqps" title="irdqps" class="md-nav__link">
+    irdqps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdscr" title="irdscr" class="md-nav__link">
+    irdscr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdsuscep" title="irdsuscep" class="md-nav__link">
+    irdsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdwfk" title="irdwfk" class="md-nav__link">
+    irdwfk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdwfq" title="irdwfq" class="md-nav__link">
+    irdwfq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kssform" title="kssform" class="md-nav__link">
+    kssform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prt1dm" title="prt1dm" class="md-nav__link">
+    prt1dm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtden" title="prtden" class="md-nav__link">
+    prtden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtdos" title="prtdos" class="md-nav__link">
+    prtdos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtdosm" title="prtdosm" class="md-nav__link">
+    prtdosm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prteig" title="prteig" class="md-nav__link">
+    prteig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtelf" title="prtelf" class="md-nav__link">
+    prtelf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtfsurf" title="prtfsurf" class="md-nav__link">
+    prtfsurf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgden" title="prtgden" class="md-nav__link">
+    prtgden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgeo" title="prtgeo" class="md-nav__link">
+    prtgeo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgkk" title="prtgkk" class="md-nav__link">
+    prtgkk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgsr" title="prtgsr" class="md-nav__link">
+    prtgsr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtkden" title="prtkden" class="md-nav__link">
+    prtkden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtkpt" title="prtkpt" class="md-nav__link">
+    prtkpt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtlden" title="prtlden" class="md-nav__link">
+    prtlden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtpot" title="prtpot" class="md-nav__link">
+    prtpot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtpsps" title="prtpsps" class="md-nav__link">
+    prtpsps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtspcur" title="prtspcur" class="md-nav__link">
+    prtspcur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtstm" title="prtstm" class="md-nav__link">
+    prtstm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtsuscep" title="prtsuscep" class="md-nav__link">
+    prtsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvclmb" title="prtvclmb" class="md-nav__link">
+    prtvclmb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvha" title="prtvha" class="md-nav__link">
+    prtvha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvhxc" title="prtvhxc" class="md-nav__link">
+    prtvhxc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvol" title="prtvol" class="md-nav__link">
+    prtvol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvolimg" title="prtvolimg" class="md-nav__link">
+    prtvolimg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvpsp" title="prtvpsp" class="md-nav__link">
+    prtvpsp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvxc" title="prtvxc" class="md-nav__link">
+    prtvxc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwant" title="prtwant" class="md-nav__link">
+    prtwant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwf" title="prtwf" class="md-nav__link">
+    prtwf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwf_full" title="prtwf_full" class="md-nav__link">
+    prtwf_full
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtxml" title="prtxml" class="md-nav__link">
+    prtxml
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vargeo/" title="Geometry" class="md-nav__link">
+      Geometry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vargs/" title="Ground-State" class="md-nav__link">
+      Ground-State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vargw/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varint/" title="Internal" class="md-nav__link">
+      Internal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varpar/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varpaw/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varrf/" title="RF" class="md-nav__link">
+      RF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varrlx/" title="Relaxation" class="md-nav__link">
+      Relaxation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varvdw/" title="VdW" class="md-nav__link">
+      VdW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varw90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/welcome/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Base Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Base Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base1/" title="Base1" class="md-nav__link">
+      Base1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base2/" title="Base2" class="md-nav__link">
+      Base2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base3/" title="Base3" class="md-nav__link">
+      Base3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base4/" title="Base4" class="md-nav__link">
+      Base4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        DFPT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/rf1/" title="RF1" class="md-nav__link">
+      RF1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/rf2/" title="RF2" class="md-nav__link">
+      RF2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
+      EPH
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Many-Body
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Many-Body
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/gw1/" title="GW1" class="md-nav__link">
+      GW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/gw2/" title="GW2" class="md-nav__link">
+      GW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Parallelism
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Parallelism
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basepar/" title="Base" class="md-nav__link">
+      Base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
+      Many-Body
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Theory
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Theory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
+      MBPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
+      Additional Material
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+      Bibliography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get1den" title="get1den" class="md-nav__link">
+    get1den
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get1wf" title="get1wf" class="md-nav__link">
+    get1wf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbscoup" title="getbscoup" class="md-nav__link">
+    getbscoup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbseig" title="getbseig" class="md-nav__link">
+    getbseig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getbsreso" title="getbsreso" class="md-nav__link">
+    getbsreso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getddb" title="getddb" class="md-nav__link">
+    getddb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getddk" title="getddk" class="md-nav__link">
+    getddk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getden" title="getden" class="md-nav__link">
+    getden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gethaydock" title="gethaydock" class="md-nav__link">
+    gethaydock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getocc" title="getocc" class="md-nav__link">
+    getocc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getqps" title="getqps" class="md-nav__link">
+    getqps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getscr" title="getscr" class="md-nav__link">
+    getscr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getsuscep" title="getsuscep" class="md-nav__link">
+    getsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getwfk" title="getwfk" class="md-nav__link">
+    getwfk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getwfq" title="getwfq" class="md-nav__link">
+    getwfq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ird1den" title="ird1den" class="md-nav__link">
+    ird1den
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ird1wf" title="ird1wf" class="md-nav__link">
+    ird1wf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbscoup" title="irdbscoup" class="md-nav__link">
+    irdbscoup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbseig" title="irdbseig" class="md-nav__link">
+    irdbseig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdbsreso" title="irdbsreso" class="md-nav__link">
+    irdbsreso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdddb" title="irdddb" class="md-nav__link">
+    irdddb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdddk" title="irdddk" class="md-nav__link">
+    irdddk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdden" title="irdden" class="md-nav__link">
+    irdden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdhaydock" title="irdhaydock" class="md-nav__link">
+    irdhaydock
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdqps" title="irdqps" class="md-nav__link">
+    irdqps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdscr" title="irdscr" class="md-nav__link">
+    irdscr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdsuscep" title="irdsuscep" class="md-nav__link">
+    irdsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdwfk" title="irdwfk" class="md-nav__link">
+    irdwfk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#irdwfq" title="irdwfq" class="md-nav__link">
+    irdwfq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kssform" title="kssform" class="md-nav__link">
+    kssform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prt1dm" title="prt1dm" class="md-nav__link">
+    prt1dm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtden" title="prtden" class="md-nav__link">
+    prtden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtdos" title="prtdos" class="md-nav__link">
+    prtdos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtdosm" title="prtdosm" class="md-nav__link">
+    prtdosm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prteig" title="prteig" class="md-nav__link">
+    prteig
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtelf" title="prtelf" class="md-nav__link">
+    prtelf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtfsurf" title="prtfsurf" class="md-nav__link">
+    prtfsurf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgden" title="prtgden" class="md-nav__link">
+    prtgden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgeo" title="prtgeo" class="md-nav__link">
+    prtgeo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgkk" title="prtgkk" class="md-nav__link">
+    prtgkk
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtgsr" title="prtgsr" class="md-nav__link">
+    prtgsr
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtkden" title="prtkden" class="md-nav__link">
+    prtkden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtkpt" title="prtkpt" class="md-nav__link">
+    prtkpt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtlden" title="prtlden" class="md-nav__link">
+    prtlden
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtpot" title="prtpot" class="md-nav__link">
+    prtpot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtpsps" title="prtpsps" class="md-nav__link">
+    prtpsps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtspcur" title="prtspcur" class="md-nav__link">
+    prtspcur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtstm" title="prtstm" class="md-nav__link">
+    prtstm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtsuscep" title="prtsuscep" class="md-nav__link">
+    prtsuscep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvclmb" title="prtvclmb" class="md-nav__link">
+    prtvclmb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvha" title="prtvha" class="md-nav__link">
+    prtvha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvhxc" title="prtvhxc" class="md-nav__link">
+    prtvhxc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvol" title="prtvol" class="md-nav__link">
+    prtvol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvolimg" title="prtvolimg" class="md-nav__link">
+    prtvolimg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvpsp" title="prtvpsp" class="md-nav__link">
+    prtvpsp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtvxc" title="prtvxc" class="md-nav__link">
+    prtvxc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwant" title="prtwant" class="md-nav__link">
+    prtwant
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwf" title="prtwf" class="md-nav__link">
+    prtwf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtwf_full" title="prtwf_full" class="md-nav__link">
+    prtwf_full
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prtxml" title="prtxml" class="md-nav__link">
+    prtxml
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/abinit/abinit/edit/master/docs/input_variables/varfil.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                  <h1>File-handling</h1>
+                
+                <h2 id="get1den"><strong>get1den</strong><a class="headerlink" href="#get1den" title="Permanent link">&para;</a></h2>
 <p>Mnemonics: GET the first-order density from _1DEN file<br />
 Variable type: integer<br />
 Dimensions: scalar<br />
@@ -1834,10 +3489,19 @@ Default value: 0  </p>
 <p>Create an XML output with common values. The corresponding DTD is distributed
 in sources as extras/post_processing/abinitRun.dtd. All the DTD is not yet
 implemented and this one is currently restricted to ground-state computations
-(and derivative such as geometry optimisation).</p></div>
+(and derivative such as geometry optimisation).</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
         </div>
-
-        <footer class="col-md-12">
+      </main>
+      
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -1847,41 +3511,22 @@ implemented and this one is currently restricted to ground-state computations
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <!--
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        -->
-        <script src="../../js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="../../extra_javascript/abidocs.js"></script>
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-    <!--<div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
     </div>
-</div>
-    -->
-
-    </body>
+    
+      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      
+        <script src="../../extra_javascript/abidocs.js"></script>
+      
+    
+    
+      
+    
+  </body>
 </html>
