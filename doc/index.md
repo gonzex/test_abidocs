@@ -55,8 +55,7 @@ Link to [[Allen1976]] paper
 Mathjax support
 ```
 
-$$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle
-\label{eq:GreenDef} $$
+$$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef} $$
 
 The propagator in Eq.\ref{eq:GreenDef} contains ...
 
@@ -70,11 +69,118 @@ The video below gives an overwiew of the command line options of `runtests.py`
 
 [![asciicast](https://asciinema.org/a/40324.png)](https://asciinema.org/a/40324)
 
+Single editor
 
+{!editor!}
+
+Multi-tab editor
+
+{!editors!}
+
+Table
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
+<p>Here's a simple Plotly plot - <a href="https://bit.ly/1Or9igj">plotly.js documentation</a></p>
+
+<!-- Plots go in blank <div> elements. 
+    You can size them in the plot layout, or give the div a size as shown here.
+-->
+<div id="plotly_plot" style="width:90%;height:250px;"></div>
+
+<script>
+$(function() {
+    Plotly.plot(document.getElementById('plotly_plot'), [{
+        x: [1, 2, 3, 4, 5],
+        y: [1, 2, 4, 8, 16] }], 
+        {margin: {t: 0}} 
+    );
+});
+</script>
+
+
+<div class="plotly-graph-div" id="abinit_stats_plot" style="width:90%;height:750px;"></div>
+
+<script>
+$(function() {
+    Plotly.d3.json("statistics.json", function(stats) {
+        var mode = "lines+markers";
+        var x = stats.dates;
+        var trace1 = {x: x, y: stats.num_f90lines, mode: mode, name: "Number of F90 lines"};
+        var trace2 = {x: x, y: stats.num_f90files, mode: mode, name: "Number of F90 files", yaxis: 'y2'};
+        var trace3 = {x: x, y: stats.num_tests, mode: mode, name: "Number of tests", yaxis: 'y3'};
+        var trace4 = {x: x, y: stats.targz_sizes, mode: mode, name: "Tarball size [Mb]",  yaxis: 'y4'};
+        var data = [trace1, trace2, trace3, trace4];
+
+        var layout = {
+          //title: "Date released: date mentioned in the release notes",
+          //xaxis: {tickvals: stats.date, ticktex: stats.version},
+          legend: {traceorder: 'reversed'},
+          yaxis: {domain: [0, 0.25]},
+          yaxis2: {domain: [0.25, 0.5]},
+          yaxis3: {domain: [0.5, 0.75]},
+          yaxis4: {domain: [0.75, 1.0]}
+        };
+
+        Plotly.newPlot(document.getElementById('abinit_stats_plot'), data, layout, {showLink: false});
+    });
+});
+</script>
+
+
+<div id="d9605599-cb1c-4129-8b19-17ce6aba5726" style="height:480px;width:90%;" class="plotly-graph-div"></div>
+<script type="text/javascript">
+$(function() {
+window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("d9605599-cb1c-4129-8b19-17ce6aba5726", [{"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-9.535926813037863, -9.876226298320375, -10.502626380975554, -11.072275270653648, -11.500111086492925, -11.762235917752008, -11.855994211486859, -11.76251819341731, -11.504916691387299, -11.070253355567209, -10.472515698483473, -9.71204808431639, -8.806419420709936, -7.770857742644391], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-6.932409107339495, -6.434802934828302, -5.322605919575588, -3.9285157520893517, -2.3945043688503773, -0.8733724958309406, -0.00014030772164197458, -0.5571414588100456, -1.6673511132234293, -2.899043741948111, -4.183072223655675, -5.430789440546145, -6.638317765955847, -7.770857742385957], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-1.2052164496157305, -1.1554489594350494, -1.0092171418411153, -0.7665270717175385, -0.4528182065705968, -0.1428083923944694, -0.00014030759373184765, -0.3277545491196321, -0.9723569008401443, -1.6065630675314715, -2.136905062657105, -2.5280226397179906, -2.7655709939700346, -2.8450316563515354], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-1.205216449452264, -1.1554489592807489, -1.0092171416994509, -0.766527071585184, -0.4528182064492583, -0.14280839226344, -0.00014030753353200254, -0.3277545490275573, -0.9723569007113824, -1.606563067405498, -2.136905062531706, -2.5280226395887833, -2.7655709938391246, -2.8450316562198195], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [1.3452986249904786, 1.3958960083306966, 1.554143482033659, 1.8234355899681942, 2.1778240885941402, 2.4977796128290306, 2.5316876738983813, 2.319469275580544, 1.8326610232363585, 1.3141284521215777, 0.8826582161745025, 0.6005397907672814, 0.5241993687224857, 0.6740354382714466], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [3.3660083208212663, 3.412354076289877, 3.505815644595171, 3.4859551031061207, 3.180459228387515, 2.7429763968895218, 2.53168767399785, 2.973060435992415, 3.924172942325165, 3.566106899388532, 2.562611320842353, 1.690136780454158, 1.0555238517809453, 0.6740354390091046], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [3.3660083208735943, 3.412354076350133, 3.505815644666348, 3.485955103188201, 3.180459228480861, 2.7429763970025123, 2.531687674066167, 2.9730604361332746, 3.9241729424268685, 5.0785623964957916, 6.285164566512434, 7.570141740247583, 8.869464699917046, 9.764008865347613], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [7.486356378802683, 7.55668857436073, 7.557830014133407, 6.52220627429504, 5.08025478643014, 3.6442503425509143, 2.895269759022862, 3.4202361151243847, 4.0978111233925025, 5.078562399289727, 6.2851656462748275, 7.570142181409012, 8.869464784778696, 9.76406100597167], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}], {"width": 640, "height": 480, "autosize": false, "hovermode": "closest", "margin": {"l": 80, "r": 63, "t": 57, "b": 52, "pad": 0}, "xaxis1": {"anchor": "y1", "zeroline": false, "ticks": "inside", "type": "linear", "range": [0.0, 13.0], "showgrid": true, "domain": [0.0, 1.0], "side": "bottom", "tickfont": {"size": 12.0}, "tick0": 0, "dtick": 6, "tickmode": false, "mirror": "ticks", "showline": true}, "yaxis1": {"anchor": "x1", "zeroline": false, "ticks": "inside", "type": "linear", "range": [-12.936996972359786, 10.845063766844596], "showgrid": true, "domain": [0.0, 1.0], "side": "left", "tickfont": {"size": 10.0}, "nticks": 7, "mirror": "ticks", "showline": true, "title": "Energy [eV]", "titlefont": {"size": 10.0, "color": "#000000"}}, "showlegend": false}, {"showLink": true, "linkText": "Export to plot.ly"})
+});
+</script>
 
 * * *
 
 ### **1\. Introduction**
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
+      <div class="carousel-caption">
+        <h3>Unconverged BSE optical spectrum</h3>
+        <!-- <p>LA is always so much fun!</p> -->
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
+      <div class="carousel-caption">
+        <h3>Convergengeof BSE optical spectrum wrt k-point sampling</h3>
+        <!-- <p>Thank you, Chicago!</p> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 
 ABINIT is a package whose main program allows to find the total energy, charge
 density and electronic structure of systems made of electrons and nuclei
@@ -393,5 +499,3 @@ been added (so likely, no additional bug!).
 
 In order to start using ABINIT, please follow the tutorial
 ([[lesson_welcome]])
-
-

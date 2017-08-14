@@ -6,9 +6,6 @@ import sys
 import os
 import mkdocs.__main__
 
-#from collections import OrderedDict
-#from pymods.variables import Variable
-
 # We don't install with setup.py hence we have to add the directory [...]/abinit/tests to $PYTHONPATH
 pack_dir = os.path.dirname(os.path.abspath(__file__))
 print(pack_dir)

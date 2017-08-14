@@ -71,11 +71,12 @@ markdown_extensions:
   - markdown.extensions.toc:
      permalink: true
      #separator: "_"
-  - markdown.extensions.admonition
-  - markdown.extensions.fenced_code 
-  - markdown.extensions.codehilite
-  - markdown.extensions.def_list
-  - markdown.extensions.smarty
+  # - markdown.extensions.admonition
+  # - markdown.extensions.fenced_code 
+  # - markdown.extensions.codehilite
+  # - markdown.extensions.def_list
+  # - markdown.extensions.smarty
+  # - markdown.extensions.tables
   #- markdown_newtab
   #- markdown.extensions.wikilinks
   - pymods.extensions.wikilinks:
@@ -87,7 +88,6 @@ markdown_extensions:
 
 copyright: Copyright &copy; 2017 The Abinit Group
 #google_analytics: ['UA-27795084-5', 'abinit.org']
-#
 
 theme: mkdocs
 #theme: readthedocs
@@ -99,24 +99,25 @@ theme: mkdocs
 #theme: docSkimmer
 #theme: windmill
 #theme: journal
+#theme: simplex
 #theme: yeti
 #theme: united
 #theme: spacelab
 #theme: docSkimmer
 theme_dir: abinit_theme
+
 extra_css:
-    - css/extra.css
     - css/codehilite.css
+    - css/extra.css
 
 extra_javascript:
-    - extra_javascript/github_edit.js
-#extra_javascript: 
-    #- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    #- http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js
+    #- https://cdn.plot.ly/plotly-latest.min.js
+    - extra_javascript/abidocs.js
 
 extra:
     version: 8.5.4
     # For Material them
-    #logo: 'images/logo.svg
-    #feature:
-    #    tabs: true
+    #logo: "images/logo.svg"
+    feature:
+        tabs: true

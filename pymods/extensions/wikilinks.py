@@ -79,8 +79,17 @@ class WikiLinks(Pattern):
             a.set('href', url)
             if html_class:
                 a.set('class', html_class)
+
+            # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
+            if url.startswith("/bibliography/"):
+                a.set("data-toggle", "popover")
+                a.set("title", "Popover Header")
+                a.set("data-placement", "bottom")
+                a.set("data-trigger", "hover")
+                a.set("data-content", "Some content inside the popover")
         else:
             a = ''
+
         return a
 
     def _getMeta(self):

@@ -455,18 +455,16 @@ class InputVariables(OrderedDict):
         # Build list of variables
         with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
             fh.write(self.get_vartabs_html())
-            for varfile in self.varfiles:
-                fh.write(self.get_plotly_networkx(varfile=varfile))
+            for i, varfile in enumerate(["varbse", "vargw"]):
+                fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=(i==0)))
+                fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
 
         # Build markdown
         for varfile in self.varfiles:
             var_list = [v for v in self.values() if v.varfile == varfile]
             #print(varfile, var_list)
             with open(os.path.join(workdir, varfile + ".md"), "wt") as fh:
-                #head = "[TOC]\n"
-                #fh.write(head)
                 for var in var_list:
-                    #print(var.abivarname)
                     fh.write(var.to_md())
 
     def groupby_first_letter(self):
@@ -638,11 +636,10 @@ class InputVariables(OrderedDict):
         ax.axis("off")
         return fig
 
-    def get_plotly_networkx(self, varfile="all", layout_type="spring"):
+    def get_plotly_networkx(self, varfile="all", layout_type="spring", include_plotlyjs=False):
         # https://plot.ly/python/network-graphs/
-        import networkx as nx
-
         # Build the graph
+        import networkx as nx
         g, edge_labels = nx.Graph(), {}
         for i, (name, var) in enumerate(self.items()):
             #if i == 5: break
@@ -734,6 +731,109 @@ class InputVariables(OrderedDict):
 
         #py.iplot(fig, filename='networkx')
         #plotly.offline.plot(fig)
-        s = plotly.offline.plot(fig, include_plotlyjs=True, output_type='div')
+        s = plotly.offline.plot(fig, include_plotlyjs=include_plotlyjs, output_type='div')
         #print(s)
+        return s
+
+    def get_plotly_networkx_3d(self, varfile="all", include_plotlyjs=False):
+
+        import networkx as nx
+        g, edge_labels = nx.Graph(), {}
+        for i, (name, var) in enumerate(self.items()):
+            #if i == 5: break
+            if varfile != "all" and var.varfile != varfile: continue
+            g.add_node(var, name=name)
+            for parent in var.get_parents():
+                #print(parent, "is parent of ", name)
+                parent = self[parent]
+                g.add_edge(parent, var)
+
+                # TODO: Add getters! What about locked nodes!
+                #i = [dep.node for dep in child.deps].index(task)
+                #edge_labels[(task, child)] = " ".join(child.deps[i].exts)
+
+        # Get positions for all nodes using layout_type.
+        # e.g. pos = nx.spring_layout(g)
+        #pos = getattr(nx, layout_type + "_layout")(g) #, scale=100000, iterations=30)
+        pos = nx.spring_layout(g, dim=3)
+
+        import plotly.graph_objs as go
+        trace1 = go.Scatter3d(x=[],
+                              y=[],
+                              z=[],
+                              mode='lines',
+                              line=go.Line(width=2.0, color='#888'), #, dash="dot"),
+                              hoverinfo='none',
+                       )
+
+        for edge in g.edges():
+            x0, y0, z0 = pos[edge[0]]
+            x1, y1, z1 = pos[edge[1]]
+            trace1['x'] += [x0, x1, None]
+            trace1['y'] += [y0, y1, None]
+            trace1['z'] += [z0, z1, None]
+
+        trace2 = go.Scatter3d(
+                       x=[],
+                       y=[],
+                       z=[],
+                       name='variable',
+                       marker=go.Marker(symbol='dot',
+                                     size=10,
+                                     #color=group,
+                                     colorscale='Viridis',
+                                     line=go.Line(width=2)
+                                     ),
+                       text=[v.abivarname for v in g],
+                       textposition='center',
+                       mode='markers+text',
+                       hoverinfo='text',
+                       hovertext=[v.mnemonics for v in g.nodes()],
+                       )
+
+        for node in g.nodes():
+            x, y, z = pos[node]
+            trace2['x'].append(x)
+            trace2['y'].append(y)
+            trace2['z'].append(z)
+
+        axis=dict(showbackground=False,
+                  showline=False,
+                  zeroline=False,
+                  showgrid=False,
+                  showticklabels=False,
+                  title=''
+                  )
+
+        layout = go.Layout(
+            title="Abinit variables (3D visualization)",
+            width=1000,
+            height=1000,
+            showlegend=False,
+            scene=go.Scene(
+                xaxis=go.XAxis(axis),
+                yaxis=go.YAxis(axis),
+                zaxis=go.ZAxis(axis),
+            ),
+            margin=go.Margin(t=100),
+            hovermode='closest',
+            annotations=go.Annotations([go.Annotation(
+                showarrow=False,
+                #text="Data source: <a href='http://bost.ocks.org/mike/miserables/miserables.json'>[1]</a>",
+                text="Hello",
+                xref='paper',
+                yref='paper',
+                x=0,
+                y=0.1,
+                xanchor='left',
+                yanchor='bottom',
+                font=go.Font(size=14),
+                )]),
+            )
+
+        data = go.Data([trace1, trace2])
+        fig = go.Figure(data=data, layout=layout)
+
+        import plotly
+        s = plotly.offline.plot(fig, include_plotlyjs=include_plotlyjs, output_type='div')
         return s

@@ -39,6 +39,11 @@ class IncludePreprocessor(Preprocessor):
 
     def run(self, lines):
         new_lines = []
+
+        # Add return to top arrow. https://codepen.io/rdallaire/pen/apoyx
+        new_lines.append("""<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
+
         for line in lines:
             m = INC_SYNTAX.search(line)
             if not m:
@@ -46,13 +51,30 @@ class IncludePreprocessor(Preprocessor):
             else:
                 path = m.group(1)
                 print("path:", path)
-                new_lines.extend(modal_from_filename(path))
+                if path == "editor":
+                    new_lines.extend(editor_panel(path))
+                elif path == "editors":
+                    new_lines.extend(editor_tabs(path))
+                else:
+                    new_lines.extend(modal_from_filename(path))
 
         return new_lines
 
 
 def makeExtension(*args,**kwargs):
     return MarkdownInclude(kwargs)
+
+
+def escape(text):
+    # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
+    # html.escape() differs from cgi.escape() by its defaults to quote=True:
+    #return text
+    try:
+        import html
+        return html.escape(text)
+    except ImportError:
+        import cgi
+        return cgi.escape(text)
 
 
 def gen_id(n=1, pre="uuid-"):
@@ -71,7 +93,6 @@ def gen_id(n=1, pre="uuid-"):
 def modal_from_filename(path, title=None):
     # https://v4-alpha.getbootstrap.com/components/modal/#examples
     title = path if title is None else title
-    #text = "<p>Modal body text goes here.</p>"
     with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
         text = "<pre>" + fh.read() + "</pre>"
 
@@ -142,4 +163,56 @@ def modal_with_tabs(paths, title=None):
 
     s += 6 * " </div> "
 
+    return s.splitlines()
+
+
+def editor_panel(path, title=None):
+    title = "Editor" if title is None else str(title)
+
+    path = "tests/v1/Refs/t01.out"
+    with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
+        text = escape(fh.read())
+
+    s = """\
+<div class="panel panel-default">
+    <div class="panel-heading">{title}</div>
+    <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
+</div>""".format(**locals(), editor_id=gen_id())
+
+    return s.splitlines()
+
+
+def editor_tabs(path, title=None, footer=""):
+    title = "EditorTabs" if title is None else str(title)
+    paths = ["tests/v1/Refs/t01.out", "tests/v1/Refs/t02.out"]
+
+    text_list = []
+    for path in paths:
+        with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
+            text_list.append(escape(fh.read()))
+    tab_ids = gen_id(n=len(text_list))
+    editor_ids = gen_id(n=len(text_list))
+
+    # https://codepen.io/wizly/pen/BlKxo?editors=1000
+    s = """\
+<div><{title}</div>
+<div id="exTab1">
+<!-- Nav tabs -->
+<ul class="nav nav-pills nav-justified">""".format(title=title)
+
+    for i, (path, tid) in enumerate(zip(paths, tab_ids)):
+        s += """\
+                <li class="{li_class}">
+                <a href="{href}" data-toggle="pill">{path}</a>
+                </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+    s +=  """</ul>
+             <!-- Tab panes -->
+             <div class="tab-content clearfix">"""
+
+    for i, (text, tid, editor_id) in enumerate(zip(text_list, tab_ids, editor_ids)):
+        s += """<div class="tab-pane {active}" id="{tid}">
+            <div id="{editor_id}" class="editor" hidden>{text}</div></div>""".format(
+                active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
+
+    s +=  2 * "</div> "
     return s.splitlines()
