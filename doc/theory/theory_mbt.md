@@ -1,5 +1,4 @@
 ---
-htmltitle: Many-Body Theory in ABINIT
 authors: MG, MS
 ---
 
@@ -13,16 +12,8 @@ A much more consistent and rigorous introduction to the physical concept of Gree
 function and self-energy can be found in any standard textbook on Many-Body theory, 
 see for example {% cite Abrikosov %}, {% cite Fetter %} and {% cite Mattuck %} 
 
-<!--
-##### Copyright (C) 2000-2016 ABINIT group (MG,MS)  
-This file is distributed under the terms of the GNU General Public License,
-see ~abinit/COPYING or <http://www.gnu.org/copyleft/gpl.txt>
-For the initials of contributors, see ~abinit/doc/developers/contributors.txt.
--->
-
-[TOC]
-
 * * *
+
 ### Green's function and self-energy.
 
 The time-ordered Green's function $G(12)$, also called the propagator, defines
@@ -30,7 +21,7 @@ the probability amplitude for the propagation of an added or removed electron
 in a many-body system. Since the probability amplitude is simply given by the
 overlap between the final and the initial state, $G(12)$ can be expressed as
 
-$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef} $
+$$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef} $$
 
 where the matrix element is taken in the Heisenberg representation, $T$ is the
 time-ordering operator and the creation and annihilation field operators act

@@ -12,7 +12,6 @@ Original code Copyright [Waylan Limberg](http://achinghead.com/).
 All changes Copyright The Python Markdown Project
 
 License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
-
 '''
 
 from __future__ import absolute_import, unicode_literals, print_function
@@ -108,5 +107,4 @@ class WikiLinks(Pattern):
 
 
 def makeExtension(*args, **kwargs):
-    #raise ValueError("hello")
     return WikiLinkExtension(*args, **kwargs)

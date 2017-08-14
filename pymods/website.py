@@ -4,8 +4,8 @@ from __future__ import print_function, division, unicode_literals, absolute_impo
 import sys
 import os
 
-from pymods.variables import Variable
 from collections import OrderedDict
+from pymods.variables import Variable
 
 _WEBSITE = None
 
@@ -45,34 +45,31 @@ class Website(object):
     #    app = lines.append
     #    return "\n".join(lines)
 
-    def generate_markdown(self):
-        print("Generating markdown files ...")
-
+    def generate_markdown_files(self):
         workdir = os.path.join(self.top, "input_variables")
         for code, vardb in self.variables_code.items():
-            print("Writing variables for code:", code)
+            print("Generating markdown files with input variables for code: `%s`" % code)
             vardb.write_markdown_files(workdir)
 
-        print("Generating bibliography file ...")
+        print("Generating Markdown file with bibliographic entries...")
         with open(os.path.join(self.top, "bibliography.md"), "wt") as fh:
             for name, entry in self.bib_data.entries.items():
                 lines = []
-                app = lines.append
-                app("\n\n## **%s** \n\n" % name)
-                app(str(entry))
+                lines.append("\n\n## **%s** \n\n" % name)
+                lines.append(str(entry))
                 fh.write("\n".join(lines))
 
         #with open(os.path.join(self.top, "acknowledgments.md") as fh
 
     def analyze_pages(self):
-        print("Analyzing pages ...")
+        print("Analyzing markdown pages...")
         for root, dirs, files in os.walk(self.root):
-            if root == "site": continue
+            if root in ("site", "tests"): continue
             for f in files:
                 path = os.path.join(root, f)
                 if f.endswith(".md"):
                     self.pages.append(MarkdownPage(path))
-                elif f.endswith(".html"):
+                elif f.endswith(".html") or f.endswith(".htm"):
                     self.pages.append(HtmlPage(path))
 
 
@@ -82,31 +79,25 @@ class Page(object):
         self.filepath = os.path.abspath(filepath)
         self.links = []
         self.refs = []
-        #self.parents = []
-        #self.children = []
+        #with open(self.filepath, "rt") as fh:
+        #    self.lines = fh.readlines()
 
     #def __str__(self):
     #    lines = []
     #    app = lines.append
     #    return "\n".join(lines)
 
+    #def _find_links(self):
+
 
 class MarkdownPage(Page):
-
     def __init__(self, filepath):
         super(MarkdownPage, self).__init__(filepath)
-        self.md_meta = {}
-        #with open(self.filepath, "rt") as fh:
-        #    text = fh.read()
-
+        self.meta = {}
 
 class HtmlPage(Page):
-
     def __init__(self, filepath):
         super(HtmlPage, self).__init__(filepath)
-        #with open(self.filepath, "rt") as fh:
-        #    text = fh.read()
-
 
 
 class AbinitStats(object):

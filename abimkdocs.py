@@ -8,14 +8,18 @@ import mkdocs.__main__
 
 # We don't install with setup.py hence we have to add the directory [...]/abinit/tests to $PYTHONPATH
 pack_dir = os.path.dirname(os.path.abspath(__file__))
-print(pack_dir)
+#print(pack_dir)
 sys.path.insert(0, pack_dir)
+
+#sys.path.insert(0, os.path.join(pack_dir, "doc", "tests"))
+#from doc import tests
+#print(tests)
+#abitests = tests.abitests
 
 
 def validate_html_build(top):
     # https://bitbucket.org/nmb10/py_w3c
     # import HTML validator
-    import os
     from py_w3c.validators.html.validator import HTMLValidator
 
     # create validator instance
@@ -53,10 +57,10 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
         from pymods.website import build_website
         site = build_website("./doc")
-        site.generate_markdown()
+        site.generate_markdown_files()
         print(site)
-        #return 0
 
+    if "--dry-run" in sys.argv: return 0
     return mkdocs.__main__.cli()
 
 

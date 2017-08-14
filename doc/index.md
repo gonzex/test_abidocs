@@ -53,6 +53,10 @@ Link to [[Allen1976]] paper
 
 ```
 Mathjax support
+
+\begin{equation}
+G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef}
+\end{equation}
 ```
 
 $$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef} $$
@@ -79,6 +83,13 @@ Multi-tab editor
 
 Table
 
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
+
 First Header  | Second Header
 ------------- | -------------
 Content Cell  | Content Cell
@@ -94,7 +105,7 @@ Content Cell  | Content Cell
 
 <script>
 $(function() {
-    Plotly.plot(document.getElementById('plotly_plot'), [{
+    Plotly.plot(document.getElementById("plotly_plot"), [{
         x: [1, 2, 3, 4, 5],
         y: [1, 2, 4, 8, 16] }], 
         {margin: {t: 0}} 

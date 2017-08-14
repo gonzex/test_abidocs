@@ -228,29 +228,6 @@ class Variable(yaml.YAMLObject):
         app("## **%s** \n\n" % self.abivarname)
         # Mnemonics
         app(" Mnemonics: %s  " % str(self.mnemonics))
-        # Characteristics
-        #if var.characteristics is not None:
-        #  chars = ""
-        #  for chs in var.characteristics:
-        #    chars += chs+", "
-        #  chars = chars[:-2]
-        #  cur_content += "<br><font id=\"characteristic\">Characteristic: "+make_links(chars,var.abivarname,allowed_link_seeds,backlinks,backlink)+"</font>\n"
-        #else:
-        #  cur_content += "<br><font id=\"characteristic\">Characteristic: </font>\n"
-        # Topics
-        #try:
-        #  if var.topics is not None :
-        #    cur_content += "<br><font id=\"characteristic\">Mentioned in \"How to\": "
-        #    vartopics=var.topics
-        #    topics_name_tribe = vartopics.split(',')
-        #    for i, topic_name_tribe in enumerate(topics_name_tribe):
-        #      name_tribe = topic_name_tribe.split('_')
-        #      cur_content += '<a href="../../topics/generated_files/topic_'+name_tribe[0].strip()+'.html">'+name_tribe[0].strip()+'</a> '
-        #    cur_content += "</font>\n"
-        #except:
-        #  if debug==1 :
-        #    print(" No topic_tribe for abivarname "+var.abivarname)
-        # Variable type, including dimensions
         app("Variable type: %s  " % str(self.vartype))
         if self.dimensions is not None:
            app("Dimensions: %s  " % format_dimensions(self.dimensions))
@@ -455,9 +432,10 @@ class InputVariables(OrderedDict):
         # Build list of variables
         with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
             fh.write(self.get_vartabs_html())
-            for i, varfile in enumerate(["varbse", "vargw"]):
-                fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=(i==0)))
-                fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
+            # Add plotly figures.
+            #for i, varfile in enumerate(["varbse", "vargw"]):
+            #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=(i==0)))
+            #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
 
         # Build markdown
         for varfile in self.varfiles:
@@ -478,7 +456,6 @@ class InputVariables(OrderedDict):
 
     def get_vartabs_html(self):
         ch2vars = self.groupby_first_letter()
-
         # https://jqueryui.com/tabs/
         #idname = self.codename + "-tabs"
         #html = '<div id="%s"> <ul>' % idname
@@ -595,7 +572,6 @@ class InputVariables(OrderedDict):
                              #node_color=[task.color_rgb for task in g.nodes()],
                              #node_size=[make_node_size(task) for task in g.nodes()],
                              width=1, style="dotted", with_labels=True, ax=ax)
-
             # Draw edge labels
             #if with_edge_labels:
             #    nx.draw_networkx_edge_labels(g, pos, edge_labels=edge_labels, ax=ax)
@@ -736,7 +712,6 @@ class InputVariables(OrderedDict):
         return s
 
     def get_plotly_networkx_3d(self, varfile="all", include_plotlyjs=False):
-
         import networkx as nx
         g, edge_labels = nx.Graph(), {}
         for i, (name, var) in enumerate(self.items()):

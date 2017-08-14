@@ -10,14 +10,14 @@ pages:
 - Quick Start: 
     - Introduction: index.md
     - Installation:  installation.md
-    - Topics:
-        - Crystalline Structure: topics/crystal.md
-        - K-points: topics/kpoints.md
 - User Guide:
     - Overview: user-guide/help_what_ABINIT_does.md
     - Abinit: user-guide/help_abinit.md
     - Mrgddb: user-guide/help_mrgddb.md
     - Optic: user-guide/help_optic.md
+- Topics:
+    - Crystalline Structure: topics/crystal.md
+    - K-points: topics/kpoints.md
 - Input Variables:
     - Abinit:
         - All Variables: input_variables/varlist_abinit.md
@@ -119,5 +119,5 @@ extra:
     version: 8.5.4
     # For Material them
     #logo: "images/logo.svg"
-    feature:
-        tabs: true
+    #feature:
+    #    tabs: true

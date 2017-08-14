@@ -41,7 +41,8 @@ class IncludePreprocessor(Preprocessor):
         new_lines = []
 
         # Add return to top arrow. https://codepen.io/rdallaire/pen/apoyx
-        new_lines.append("""<!-- Return to Top -->
+        new_lines.append("""
+<!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
 
         for line in lines:
@@ -52,11 +53,11 @@ class IncludePreprocessor(Preprocessor):
                 path = m.group(1)
                 print("path:", path)
                 if path == "editor":
-                    new_lines.extend(editor_panel(path))
+                    new_lines.extend(editor_panel(path).splitlines())
                 elif path == "editors":
-                    new_lines.extend(editor_tabs(path))
+                    new_lines.extend(editor_tabs(path).splitlines())
                 else:
-                    new_lines.extend(modal_from_filename(path))
+                    new_lines.extend(modal_from_filename(path).splitlines())
 
         return new_lines
 
@@ -67,7 +68,7 @@ def makeExtension(*args,**kwargs):
 
 def escape(text):
     # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
-    # html.escape() differs from cgi.escape() by its defaults to quote=True:
+    # html.escape() differs from cgi.escape() by its defaults to quote=True
     #return text
     try:
         import html
@@ -116,10 +117,9 @@ def modal_from_filename(path, title=None):
     </div>
   </div>
 </div>""".format(**locals(), modal_id=gen_id(), modal_label_id=gen_id())
-
     s += " ".join(modal_with_tabs([]))
 
-    return s.splitlines()
+    return s
 
 
 def modal_with_tabs(paths, title=None):
@@ -179,7 +179,7 @@ def editor_panel(path, title=None):
     <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
 </div>""".format(**locals(), editor_id=gen_id())
 
-    return s.splitlines()
+    return s
 
 
 def editor_tabs(path, title=None, footer=""):
@@ -215,4 +215,4 @@ def editor_tabs(path, title=None, footer=""):
                 active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
 
     s +=  2 * "</div> "
-    return s.splitlines()
+    return s
