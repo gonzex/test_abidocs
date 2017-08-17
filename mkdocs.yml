@@ -68,6 +68,7 @@ pages:
     - License: about/license.md
 
 markdown_extensions:
+  - markdown.extensions.meta
   - markdown.extensions.toc:
      permalink: true
      #separator: "_"
@@ -77,8 +78,8 @@ markdown_extensions:
   # - markdown.extensions.def_list
   # - markdown.extensions.smarty
   # - markdown.extensions.tables
-  #- markdown_newtab
   #- markdown.extensions.wikilinks
+  #- markdown_newtab
   - pymods.extensions.wikilinks:
   - pymods.extensions.modal:
   - mdx_math:

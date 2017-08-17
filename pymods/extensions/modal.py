@@ -40,11 +40,6 @@ class IncludePreprocessor(Preprocessor):
     def run(self, lines):
         new_lines = []
 
-        # Add return to top arrow. https://codepen.io/rdallaire/pen/apoyx
-        new_lines.append("""
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
-
         for line in lines:
             m = INC_SYNTAX.search(line)
             if not m:
@@ -58,6 +53,18 @@ class IncludePreprocessor(Preprocessor):
                     new_lines.extend(editor_tabs(path).splitlines())
                 else:
                     new_lines.extend(modal_from_filename(path).splitlines())
+
+        # Add `return to top arrow` after meta section.
+        # Based on https://codepen.io/rdallaire/pen/apoyx
+        if len(new_lines) > 100:
+            i = 0
+            if new_lines[0].startswith("---"):
+                for i, l in enumerate(new_lines[1:]):
+                    if l.startswith("---"):
+                        i += 1
+                        break
+            new_lines.insert(i, """<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
 
         return new_lines
 

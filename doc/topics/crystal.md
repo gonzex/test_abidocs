@@ -5,8 +5,6 @@ title: Crystalline structure and symmetries
 
 This file gives hints on how to specify a crystal with the ABINIT package.
 
-[TOC]
-
 ### **1\. Introduction.**
 
 The cell may be orthogonal or non-orthogonal. Any kind of symmetries and

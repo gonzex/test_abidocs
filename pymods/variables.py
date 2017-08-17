@@ -151,7 +151,7 @@ class Variable(yaml.YAMLObject):
     excludes = None
     topics = None
 
-    yaml_tag = u'!variable'
+    yaml_tag = '!variable'
 
     def attrs(self):
         return ['vartype', 'characteristic', 'mnemonics', 'dimensions', 'defaultval', 'text',
@@ -173,6 +173,11 @@ class Variable(yaml.YAMLObject):
         self.commentdims = commentdims
         self.range = range
         self.topics = topics
+        #raise RuntimeError("hello")
+
+    @property
+    def name(self):
+        return self.abivarname
 
     @classmethod
     def from_array(cls, array):
@@ -183,7 +188,7 @@ class Variable(yaml.YAMLObject):
                         commentdims=array["commentdims"], topics=array["topics"])
 
     def __str__(self):
-        return "Variable " + str(self.abivarname) + " (default = " + str(self.defaultval) + ")"
+        return "Variable " + str(self.name) + " (default = " + str(self.defaultval) + ")"
 
     # MG
    # TODO: code should be included.
@@ -213,11 +218,10 @@ class Variable(yaml.YAMLObject):
 
         return set(parents)
 
-
     def website_ilink(self, label=None):
         """String with the URL of the web page."""
-        label = self.abivarname if label is None else str(label)
-        url = "/input_variables/%s/#%s" % (self.varfile, self.abivarname)
+        label = self.name if label is None else str(label)
+        url = "/input_variables/%s/#%s" % (self.varfile, self.name)
         return '<a href="%s" target="_blank">%s</a>' % (url, label)
 
     def to_md(self):
@@ -225,7 +229,7 @@ class Variable(yaml.YAMLObject):
         app = lines.append
 
         # Title
-        app("## **%s** \n\n" % self.abivarname)
+        app("## **%s** \n\n" % self.name)
         # Mnemonics
         app(" Mnemonics: %s  " % str(self.mnemonics))
         app("Variable type: %s  " % str(self.vartype))
@@ -233,22 +237,22 @@ class Variable(yaml.YAMLObject):
            app("Dimensions: %s  " % format_dimensions(self.dimensions))
         if self.commentdims is not None and self.commentdims != "":
             app("commentdims %s  " % self.commentdims)
-        #  cur_content += " (Comment: "+make_links(var.commentdims,var.abivarname,allowed_link_seeds,backlinks,backlink)+")"
+        #  cur_content += " (Comment: "+make_links(var.commentdims,var.name,allowed_link_seeds,backlinks,backlink)+")"
         ## Default
         app("Default value: %s  " % self.defaultval)
-        #cur_content += "<br><font id=\"default\">"+make_links(format_default(var.defaultval),var.abivarname,allowed_link_seeds,backlinks,backlink)
+        #cur_content += "<br><font id=\"default\">"+make_links(format_default(var.defaultval),var.name,allowed_link_seeds,backlinks,backlink)
         if self.commentdefault is not None and self.commentdefault != "":
             app("Comment: %s  " % self.commentdefault)
-        #  cur_content += " (Comment: "+make_links(var.commentdefault,var.abivarname,allowed_link_seeds,backlinks,backlink)+")"
+        #  cur_content += " (Comment: "+make_links(var.commentdefault,var.name,allowed_link_seeds,backlinks,backlink)+")"
         #cur_content += "</font>\n"
         # Requires
         if self.requires is not None and self.requires != "":
             app("Only relevant if %s  " % self.requires)
-        #  cur_content += "<br><br><font id=\"requires\">\nOnly relevant if "+doku2html(make_links(var.requires,var.abivarname,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
+        #  cur_content += "<br><br><font id=\"requires\">\nOnly relevant if "+doku2html(make_links(var.requires,var.name,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
         # Excludes
         if self.excludes is not None and self.excludes != "":
             app("The use of this variable forbids the use of %s  " % self.excludes)
-        #  cur_content += "<br><br><font id=\"excludes\">\nThe use of this variable forbids the use of "+doku2html(make_links(var.excludes,var.abivarname,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
+        #  cur_content += "<br><br><font id=\"excludes\">\nThe use of this variable forbids the use of "+doku2html(make_links(var.excludes,var.name,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
         # Text
         #app("<br><font id=\"text\">\n")
         #app(str(var.text))
@@ -257,8 +261,8 @@ class Variable(yaml.YAMLObject):
             app(2 * "\n")
             app(str(md_text))
         else:
-            print("Var:", self.abivarname, "with None text")
-        #cur_content += "<p>\n"+doku2html(make_links(var.text,var.abivarname,allowed_link_seeds,backlinks,backlink))+"\n"
+            print("Var:", self.name, "with None text")
+        #cur_content += "<p>\n"+doku2html(make_links(var.text,var.name,allowed_link_seeds,backlinks,backlink))+"\n"
         # End the section for one variable
         #app("</font>\n")
         app(2*"\n")
@@ -408,10 +412,19 @@ _VARS = None
 def get_variables_code():
     global _VARS
     if _VARS is None:
-        _VARS = {}
-        root = "/Users/gmatteo/git_repos/abidocs"
-        path = os.path.join(root, "doc", "input_variables", "abinit_vars.yml")
+        path = os.path.join(os.path.dirname(__file__), "..", "doc", "input_variables", "abinit_vars.yml")
+        _VARS = OrderedDict()
         _VARS["abinit"] = InputVariables.from_file(path, "abinit")
+
+        #codes = set()
+        #for v in vlist:
+        #    codes.update(e for e in v.executables)
+        #new = OrderedDict()
+        #for codename in sorted(codes):
+        #    items = [(v.name, v) for v in vlist if code in v.executables]
+        #    new[codename] = cls(sorted(items, key=lambda t: t[0]))
+        #    new.codename = codename
+        #    new[codename].varfiles = sorted(set(v.varfile for v in vlist))
 
     return _VARS
 
@@ -422,7 +435,7 @@ class InputVariables(OrderedDict):
     def from_file(cls, yaml_path, codename):
         with open(yaml_path, 'rt') as f:
             vlist = yaml.load(f)
-            items = [(v.abivarname, v) for v in vlist]
+            items = [(v.name, v) for v in vlist]
             new = cls(sorted(items, key=lambda t: t[0]))
             new.varfiles = sorted(set(v.varfile for v in vlist))
             new.codename = codename
@@ -466,7 +479,7 @@ class InputVariables(OrderedDict):
         #html += "</ul>"
         #for char, vlist in ch2vars.items():
         #    id_char = "%s-%s" % (idname, char)
-        #    p = " ".join(v.abivarname for v in vlist)
+        #    p = " ".join(v.name for v in vlist)
         #    html += '<div id="%s"><p>%s</p></div>' % (id_char, p)
         #html += "</div>"
 
@@ -562,7 +575,7 @@ class InputVariables(OrderedDict):
         #make_node_label = dict(name_class=lambda task: task.pos_str + "\n" + task.__class__.__name__,)[node_label]
 
         #labels = {var: make_node_label(var) for var in g.nodes()}
-        labels = {var: var.abivarname for var in g.nodes()}
+        labels = {var: var.name for var in g.nodes()}
         ax, fig, plt = get_ax_fig_plt(ax=ax)
 
         # Select plot type.
@@ -656,7 +669,7 @@ class InputVariables(OrderedDict):
         node_trace = go.Scatter(
             x=[],
             y=[],
-            text=[v.abivarname for v in g],
+            text=[v.name for v in g],
             textposition='bottom',
             mode='markers+text',
             hoverinfo='text',
@@ -759,7 +772,7 @@ class InputVariables(OrderedDict):
                                      colorscale='Viridis',
                                      line=go.Line(width=2)
                                      ),
-                       text=[v.abivarname for v in g],
+                       text=[v.name for v in g],
                        textposition='center',
                        mode='markers+text',
                        hoverinfo='text',

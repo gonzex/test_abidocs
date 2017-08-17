@@ -28,7 +28,7 @@ class Website(object):
     def __init__(self, top, verbose=0):
         self.top = os.path.abspath(top)
         self.verbose = verbose
-        self.pages = []
+
         from pymods.variables import get_variables_code
         self.variables_code = get_variables_code()
 
@@ -40,6 +40,16 @@ class Website(object):
         self.abinit_stats = AbinitStats(os.path.join(self.top, "statistics.txt"))
         self.abinit_stats.json_dump(os.path.join(self.top, "statistics.json"))
 
+        #sys.path.insert(0, os.path.join(pack_dir, "doc"))
+        #from doc import tests
+        #print(tests)
+        #abitests = tests.abitests.select_tests(suite_args=[])
+        #for test in abitests:
+        #    if hasattr(test, "description"):
+        #        print(test.description)
+        #    if hasattr(test, "topics"):
+        #        print(test.topics)
+
     #def __str__(self):
     #    lines = []
     #    app = lines.append
@@ -48,10 +58,10 @@ class Website(object):
     def generate_markdown_files(self):
         workdir = os.path.join(self.top, "input_variables")
         for code, vardb in self.variables_code.items():
-            print("Generating markdown files with input variables for code: `%s`" % code)
+            print("Generating markdown files with %s input variables ..." % code)
             vardb.write_markdown_files(workdir)
 
-        print("Generating Markdown file with bibliographic entries...")
+        print("Generating Markdown file with bibliographic entries ...")
         with open(os.path.join(self.top, "bibliography.md"), "wt") as fh:
             for name, entry in self.bib_data.entries.items():
                 lines = []
@@ -62,7 +72,8 @@ class Website(object):
         #with open(os.path.join(self.top, "acknowledgments.md") as fh
 
     def analyze_pages(self):
-        print("Analyzing markdown pages...")
+        self.pages = []
+        print("Analyzing markdown pages ...")
         for root, dirs, files in os.walk(self.root):
             if root in ("site", "tests"): continue
             for f in files:
@@ -72,6 +83,35 @@ class Website(object):
                 elif f.endswith(".html") or f.endswith(".htm"):
                     self.pages.append(HtmlPage(path))
 
+    def validate_html_build(self):
+        # https://bitbucket.org/nmb10/py_w3c
+        # import HTML validator and create validator instance
+        from py_w3c.validators.html.validator import HTMLValidator
+        vld = HTMLValidator()
+
+        from tidylib import tidy_document
+        top = os.path.join(os.path.dirname(self.top), "site")
+        from pprint import pprint
+
+        for root, dirs, files in os.walk(top):
+            for f in files:
+                if not (f.endswith(".html") or f.endswith(".htm")): continue
+                path = os.path.join(root, f)
+                print("Validating", path)
+
+                # validate file (Accept both - filename or file pointer.)
+                vld.validate_file(path)
+                # look for warnings
+                #print(vld.warnings)
+                # look for errors
+                for e in vld.errors:
+                    if e["message"] == "The “center” element is obsolete. Use CSS instead.":
+                        continue
+                    pprint(e)  # list with dicts
+
+                #with open(path, "rt") as fh:
+                #    document, errors = tidy_document(fh.read())
+                #    #print(errors)
 
 class Page(object):
 
