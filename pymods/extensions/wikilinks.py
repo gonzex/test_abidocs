@@ -33,7 +33,7 @@ def build_url(label, base, end):
 
     if clean_label in variables:
         var = variables[clean_label]
-        return "/input_variables/%s/#%s" % (var.varfile, var.name)
+        return "/input_variables/%s/#%s" % (var.varset, var.name)
 
     if clean_label in website.bib_data.entries:
         return "/bibliography/#%s" % clean_label
@@ -58,10 +58,13 @@ class WikiLinkExtension(Extension):
 
         # append to end of inline patterns
         #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
-        WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
+        #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
+        WIKILINK_RE = r'\[\[([^\[]+)\]\]'
         wikilinkPattern = WikiLinks(WIKILINK_RE, self.getConfigs())
         wikilinkPattern.md = md
-        md.inlinePatterns.add('wikilink', wikilinkPattern, "<not_strong")
+        #md.inlinePatterns.add('wikilink', wikilinkPattern, "<not_strong")
+        # This needed to treat [[ngfft]](1:3) before []() markdown syntax
+        md.inlinePatterns.add('wikilink', wikilinkPattern, "<link")
 
 
 class WikiLinks(Pattern):
@@ -85,16 +88,20 @@ class WikiLinks(Pattern):
                 token, text = token.split("|")
 
             if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
-                url = prefix
+                url = token
 
             elif ":" in token:
                 namespace, value = token.split(":")
-                print("namespace:" ,namespace, "value:", value)
+                #print("namespace:" ,namespace, "value:", value)
 
                 if namespace in website.variables_code:
                     # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
                     var = website.variables_code[namespace][value]
-                    url = "/input_variables/%s/#%s" % (var.varfile, var.name)
+                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    if text is None: text = var.name
+
+                elif namespace == "lesson":
+                    url = "/tutorials/%s" % value
 
                 #elif namespace == "input"
                 #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
@@ -104,7 +111,7 @@ class WikiLinks(Pattern):
 
             elif token.startswith("tests/"):
                 # Handle [[tests/tutorial/Refs/tbase1_2.out]]
-                print("In tests/ with token:", token)
+                #print("In tests/ with token:", token)
                 url = "/" + token
                 # Add popover with test description if input file.
                 if token in website.inrpath2test:
@@ -116,7 +123,7 @@ class WikiLinks(Pattern):
             elif token in website.variables_code["abinit"]:
                 # Handle link to Abinit variable e.g. [[ecut]]
                 var = website.variables_code["abinit"][token]
-                url = "/input_variables/%s/#%s" % (var.varfile, var.name)
+                url = "/input_variables/%s/#%s" % (var.varset, var.name)
 
             elif token in website.bib_data.entries:
                 # Handle citation

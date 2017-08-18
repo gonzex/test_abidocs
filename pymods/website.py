@@ -105,7 +105,7 @@ class Website(object):
         from pymods.variables import get_variables_code
         self.variables_code = get_variables_code()
 
-        # Get bibtex references and cast to MyEntry instances
+        # Get bibtex references and cast to MyEntry instance.
         self.bib_data = parse_file(os.path.join(self.root, "abiref.bib"), bib_format="bibtex")
         for entry in self.bib_data.entries.values():
             entry.__class__ = MyEntry
@@ -117,7 +117,6 @@ class Website(object):
         # Build AbinitTestSuite object.
         from doc import tests as tmod
         from doc.tests.pymods.testsuite import ChainOfTests
-        #print("tests module", tests)
         tests = []
         for t in tmod.abitests.select_tests(suite_args=[], regenerate=True):
             #if isinstance(t, ChainOfTests):  # FIXME?
@@ -126,31 +125,38 @@ class Website(object):
             else:
                 #print(type(t))
                 tests.append(t)
-        #if hasattr(test, "description"): print(test.description)
         #if hasattr(test, "topics"): print(test.topics)
+
         #self.inrpath2test = {os.path.relpath(t.inp_fname, self.root): t for t in tests}
         #self.inrpath2test = {t.inp_fname: t for t in tests}
-        #print(self.inrpath2test.keys())
-
         self.inrpath2test = {}
         for t in tests:
             toks = splitall(t.inp_fname)[-4:]
             key = os.path.join(*toks)
-            print(toks, key)
             self.inrpath2test[key] = t
+        #print(self.inrpath2test.keys())
 
+        def test_get_varnames(test, varnames):
+            """This should become a method of BaseTest."""
+            with open(test.inp_fname, "rt") as fh:
+                s = fh.read()
+            vused = [v for v in varnames if v in s] # TODO This can be improved.
+            return vused
 
-        #codes = list(self.variables_code.keys())
-        #for test in tests:
-        #    print(test, test.description, test.topics)
-        #    if test.executable in ("atompaw", "cut3d"): continue
-        #    d = self.variables_code[test.executable]
-        #    for vname in test.get_varnames(list(d.values())):
-        #        var = d[vname]
-        #        if not hasattr(var, "tests"): var.tests = []
-        #        var.tests.append(test)
-        #        ratio_all
-        #        ratio_in_tuto
+        # Find variables used in tests.
+        for od in self.variables_code.values():
+            for var in od.values():
+                assert not hasattr(var, "tests")
+                var.tests = []
+
+        for test in tests:
+            d = self.variables_code.get(test.executable, None) # FIXME Multibinit, conducti?
+            if d is None: continue
+            for vname in test_get_varnames(test, list(d.keys())):
+                var = d[vname]
+                var.tests.append(test)
+                #ratio_all
+                #ratio_in_tuto
 
     #def __str__(self):
     #    lines = []
@@ -160,8 +166,24 @@ class Website(object):
     def generate_markdown_files(self):
         workdir = os.path.join(self.root, "input_variables")
         for code, vardb in self.variables_code.items():
-            print("Generating markdown files with %s input variables ..." % code)
-            vardb.write_markdown_files(workdir)
+            vardb.write_markdown_files(workdir, with_varlist_page=code in ("abinit",))
+
+        #Input variables, statistics :
+        #occurrences in the input files provided with the package
+        #This document lists the input variables for ABINIT and three post-processors of ABINIT,
+        #in order of number of occurrence in the input files provided with the package.
+        from itertools import groupby
+        with open(os.path.join(workdir, "varset_stats.md"), "wt") as fh:
+            for codename, od in self.variables_code.items():
+                fh.write("\n\n# **%s** \n\n" % codename)
+                num_tests = len([test for test in self.inrpath2test.values() if test.executable == codename])
+                fh.write("%d tests\n\n" % num_tests)
+                # TODO The number of tests is smaller than ecut! Count Tutorial
+                # DSU sort
+                items = sorted([(len(v.tests), v) for v in od.values()], key=lambda t: t[0], reverse=True)
+                for count, group in groupby(items, key=lambda t: t[0]):
+                    vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
+                    fh.write("%s: %s<br><br>" % (count, ", ".join(v.website_ilink() for v in vlist)))
 
         print("Generating Markdown file with bibliographic entries ...")
         with open(os.path.join(self.root, "bibliography.md"), "wt") as fh:

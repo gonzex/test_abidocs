@@ -21,23 +21,27 @@ pages:
 - Input Variables:
     - Abinit:
         - All Variables: input_variables/varlist_abinit.md
-        - Basic: input_variables/varbas.md
-        - Bethe-Salpeter: input_variables/varbse.md
-        - Developers: input_variables/vardev.md
-        - DMFT: input_variables/vardmft.md
-        - Electron-Phonon: input_variables/vareph.md
-        - Varff: input_variables/varff.md
-        - File-handling: input_variables/varfil.md
-        - Geometry: input_variables/vargeo.md
-        - Ground-State: input_variables/vargs.md
-        - GW: input_variables/vargw.md
-        - Internal: input_variables/varint.md
-        - Parallelism: input_variables/varpar.md
-        - PAW: input_variables/varpaw.md
-        - RF: input_variables/varrf.md
-        - Relaxation: input_variables/varrlx.md
-        - VdW: input_variables/varvdw.md
-        - Wannier90: input_variables/varw90.md
+        - Basic: input_variables/basic.md
+        - Bethe-Salpeter: input_variables/bse.md
+        - Developers: input_variables/dev.md
+        - DMFT: input_variables/dmft.md
+        - Electron-Phonon: input_variables/eph.md
+        - Varff: input_variables/ffield.md
+        - File-handling: input_variables/files.md
+        - Geometry: input_variables/geo.md
+        - Ground-State: input_variables/gstate.md
+        - GW: input_variables/gw.md
+        - Internal: input_variables/internal.md
+        - Parallelism: input_variables/paral.md
+        - PAW: input_variables/paw.md
+        - DFPT: input_variables/dfpt.md
+        - Relaxation: input_variables/rlx.md
+        - VdW: input_variables/vdw.md
+        - Wannier90: input_variables/w90.md
+    - Anaddb: input_variables/anaddb.md
+    - Optic: input_variables/optic.md
+    - Aim: input_variables/aim.md
+    - Statistics: input_variables/varset_stats.md
 - Tutorials:
     - Overview: tutorials/welcome.md
     - Base Tutorials: 
@@ -62,6 +66,8 @@ pages:
     - MBPT: theory/theory_mbt.md
     - Additional Material: theory/additional_material.md
     - Bibliography: bibliography.md
+- Developers:
+    - How to write docs: developers/README.md
 - About:
     - Release Notes: about/release-notes.md
     - Contributing: about/contributing.md

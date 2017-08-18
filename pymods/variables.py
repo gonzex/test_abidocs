@@ -9,6 +9,8 @@ try:
 except ImportError:
     raise ImportError("pyyaml package is not installed. Install it with `pip install pyyaml`")
 
+from itertools import groupby
+
 
 def get_ax_fig_plt(ax=None):
     """
@@ -145,21 +147,22 @@ class Variable(yaml.YAMLObject):
     abivarname = None  # Name of the variable (str)
     commentdefault = None
     commentdims = None
-    section = None
+    varset = None
     range = None
     requires = None
     excludes = None
+    executables = None
     topics = None
 
-    yaml_tag = '!variable'
+    yaml_tag = u'!variable'
 
     def attrs(self):
         return ['vartype', 'characteristic', 'mnemonics', 'dimensions', 'defaultval', 'text',
-                'abivarname', 'section', 'topics']
+                'abivarname', 'varset', 'executables', 'topics']
 
     def __init__(self, vartype=None, characteristic=None,
                  mnemonics=None, dimensions=None, default=None,
-                 text=None, abivarname=None, section=None, range=None,
+                 text=None, abivarname=None, executables=None, varset=None, range=None,
                  commentdefault=None, commentdims=None, topics=None):
         self.vartype = vartype
         self.characteristic = characteristic
@@ -168,30 +171,40 @@ class Variable(yaml.YAMLObject):
         self.defaultval = default
         self.text = literal(text)
         self.abivarname = abivarname
-        self.section = section
+        self.varset = varset
+        self.executables = executables
         self.commentdefault = commentdefault
         self.commentdims = commentdims
         self.range = range
         self.topics = topics
-        #raise RuntimeError("hello")
 
     @property
     def name(self):
-        return self.abivarname
+        return self.abivarname if "@" not in self.abivarname else self.abivarname.split("@")[0]
+
+    @property
+    def code(self):
+        if "@" in self.abivarname:
+            code = self.abivarname.split("@")[1]
+            assert code == self.varset
+        else:
+            code = "abinit"
+        return code
 
     @classmethod
     def from_array(cls, array):
         return Variable(vartype=array["vartype"], characteristic=array["characteristic"],
                         mnemonics=array["mnemonics"], dimensions=array["dimensions"],
                         default=array["default"], text=array["text"], abivarname=array["abivarname"],
-                        section=array["section"], range=array["range"], commentdefault=array["commentdefault"],
+                        executables=array["executables"],
+                        varset=array["varset"], range=array["range"], commentdefault=array["commentdefault"],
                         commentdims=array["commentdims"], topics=array["topics"])
 
     def __str__(self):
-        return "Variable " + str(self.name) + " (default = " + str(self.defaultval) + ")"
+        return "Variable " + str(self.abivarname) + " (default = " + str(self.defaultval) + ")"
 
     # MG
-   # TODO: code should be included.
+   # TODO: assume abivarname is unique
     def __hash__(self):
         return hash(self.abivarname)
 
@@ -221,10 +234,10 @@ class Variable(yaml.YAMLObject):
     def website_ilink(self, label=None):
         """String with the URL of the web page."""
         label = self.name if label is None else str(label)
-        url = "/input_variables/%s/#%s" % (self.varfile, self.name)
+        url = "/input_variables/%s/#%s" % (self.varset, self.name)
         return '<a href="%s" target="_blank">%s</a>' % (url, label)
 
-    def to_md(self, with_tests=False):
+    def to_markdown(self):
         lines = []; app = lines.append
 
         app("## **%s** \n\n" % self.name)
@@ -232,7 +245,7 @@ class Variable(yaml.YAMLObject):
         #app("Executable: %s" % str(self.executables)
         if self.characteristic:
             app("*Characteristics:* %s  " % str(self.characteristic))
-        #app("Mentioned in topic(s):" %s  ",".join(self.topics))
+        app("*Mentioned in topic(s):* %s  " % str(self.topics))
         app("*Variable type:* %s  " % str(self.vartype))
         if self.dimensions:
            app("*Dimensions:* %s  " % format_dimensions(self.dimensions))
@@ -245,10 +258,21 @@ class Variable(yaml.YAMLObject):
             app("*Only relevant if:* %s  " % str(self.requires))
         if self.excludes:
             app("*The use of this variable forbids the use of:* %s  " % self.excludes)
+
         # Add links to tests.
-        #if with_tests:
-        #    Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136]. Test list {paral:[08],tutoparal:[string_03,string_04],v6:[22,24,25],v7:[08],v8:[05]}
-        #self.tests
+        if hasattr(self, "tests"):
+            # Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136].
+            # Test list {paral:[08],tutoparal:[string_03,string_04],v6:[22,24,25],v7:[08],v8:[05]}
+            if len(self.tests) <= 10:
+                #test.suite_name
+                app("Test list:\n")
+                for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
+                    ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
+                    #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
+                    s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
+                    app(s)
+                app("\n")
+
         # Add text with description.
         if self.text is not None:
             md_text = html2text(self.text)
@@ -398,55 +422,46 @@ _VARS = None
 def get_variables_code():
     global _VARS
     if _VARS is None:
-        path = os.path.join(os.path.dirname(__file__), "..", "doc", "input_variables", "abinit_vars.yml")
-        _VARS = OrderedDict()
-        _VARS["abinit"] = InputVariables.from_file(path, "abinit")
+        yaml_path = os.path.join(os.path.dirname(__file__), "..", "doc", "input_variables", "abinit_vars.yml")
+        with open(yaml_path, 'rt') as f:
+            vlist = yaml.load(f)
 
-        #codes = set()
-        #for v in vlist:
-        #    codes.update(e for e in v.executables)
-        #new = OrderedDict()
-        #for codename in sorted(codes):
-        #    items = [(v.name, v) for v in vlist if code in v.executables]
-        #    new[codename] = cls(sorted(items, key=lambda t: t[0]))
-        #    new.codename = codename
-        #    new[codename].varfiles = sorted(set(v.varfile for v in vlist))
+        _VARS = OrderedDict()
+        codes = set(v.code for v in vlist)
+        for codename in sorted(codes):
+            items = [(v.name, v) for v in vlist if v.code == codename]
+            new = InputVariables(sorted(items, key=lambda t: t[0]))
+            new.codename = codename
+            new.all_varset = sorted(set(v.varset for v in new.values()))
+            _VARS[codename] =  new
 
     return _VARS
 
 
 class InputVariables(OrderedDict):
 
-    @classmethod
-    def from_file(cls, yaml_path, codename):
-        with open(yaml_path, 'rt') as f:
-            vlist = yaml.load(f)
-            items = [(v.name, v) for v in vlist]
-            new = cls(sorted(items, key=lambda t: t[0]))
-            new.varfiles = sorted(set(v.varfile for v in vlist))
-            new.codename = codename
-            return new
+    def write_markdown_files(self, workdir, with_varlist_page=True):
 
-    def write_markdown_files(self, workdir):
-        # Write page with full list of variables.
-        with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
-            fh.write(self.get_vartabs_html())
-            # Add plotly figures.
-            #for i, varfile in enumerate(["varbse", "vargw"]):
-            #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=False)
-            #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
+        if with_varlist_page:
+            # Write page with full list of variables.
+            with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
+                fh.write(self.get_vartabs_html())
+                # Add plotly figures.
+                #for i, varfile in enumerate(["varbse", "vargw"]):
+                #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=False)
+                #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
 
         # Build markdown page for the different sets.
-        for varfile in self.varfiles:
-            var_list = [v for v in self.values() if v.varfile == varfile]
-            #print(varfile, var_list)
-            with open(os.path.join(workdir, varfile + ".md"), "wt") as fh:
+        print("Generating markdown files with %s input variables ..." % self.codename)
+        for varset in self.all_varset:
+            var_list = [v for v in self.values() if v.varset == varset]
+            #print(varset, var_list)
+            with open(os.path.join(workdir, varset + ".md"), "wt") as fh:
                 for var in var_list:
-                    fh.write(var.to_md())
+                    fh.write(var.to_markdown())
 
     def groupby_first_letter(self):
         keys = sorted(list(self.keys()))
-        from itertools import groupby
         od = OrderedDict()
         for char, names in groupby(keys, key=lambda n: n[0].lower()):
             #print(char, list(names))
@@ -527,7 +542,7 @@ class InputVariables(OrderedDict):
         counter = collections.Counter()
         for i, (name, var) in enumerate(self.items()):
             #if i == 5: break
-            if var.varfile != "varbas": continue
+            if var.varset != "varbas": continue
             g.add_node(var, name=name)
             counter[var] += 1
             for parent in var.get_parents():
@@ -611,14 +626,14 @@ class InputVariables(OrderedDict):
         ax.axis("off")
         return fig
 
-    def get_plotly_networkx(self, varfile="all", layout_type="spring", include_plotlyjs=False):
+    def get_plotly_networkx(self, varset="all", layout_type="spring", include_plotlyjs=False):
         # https://plot.ly/python/network-graphs/
         # Build the graph
         import networkx as nx
         g, edge_labels = nx.Graph(), {}
         for i, (name, var) in enumerate(self.items()):
             #if i == 5: break
-            if varfile != "all" and var.varfile != varfile: continue
+            if varset != "all" and var.varset != varset: continue
             g.add_node(var, name=name)
             for parent in var.get_parents():
                 #print(parent, "is parent of ", name)
@@ -691,13 +706,13 @@ class InputVariables(OrderedDict):
 
         fig = go.Figure(data=go.Data([edge_trace, node_trace]),
                      layout=go.Layout(
-                        title='<br>Network graph for varfile %s' % varfile,
+                        title='<br>Network graph for varset %s' % varset,
                         titlefont=dict(size=16),
                         showlegend=False,
                         hovermode='closest',
                         margin=dict(b=20,l=5,r=5,t=40),
                         annotations=[ dict(
-                            text="Network for varfile %s" % varfile,
+                            text="Network for varset %s" % varset,
                             showarrow=False,
                             xref="paper", yref="paper",
                             x=0.005, y=-0.002 ) ],
@@ -710,12 +725,12 @@ class InputVariables(OrderedDict):
         #print(s)
         return s
 
-    def get_plotly_networkx_3d(self, varfile="all", include_plotlyjs=False):
+    def get_plotly_networkx_3d(self, varset="all", include_plotlyjs=False):
         import networkx as nx
         g, edge_labels = nx.Graph(), {}
         for i, (name, var) in enumerate(self.items()):
             #if i == 5: break
-            if varfile != "all" and var.varfile != varfile: continue
+            if varset != "all" and var.varset != varset: continue
             g.add_node(var, name=name)
             for parent in var.get_parents():
                 #print(parent, "is parent of ", name)
@@ -811,3 +826,20 @@ class InputVariables(OrderedDict):
         import plotly
         s = plotly.offline.plot(fig, include_plotlyjs=include_plotlyjs, output_type='div')
         return s
+
+
+def splitall(path):
+    import os, sys
+    allparts = []
+    while True:
+        parts = os.path.split(path)
+        if parts[0] == path:  # sentinel for absolute paths
+            allparts.insert(0, parts[0])
+            break
+        elif parts[1] == path: # sentinel for relative paths
+            allparts.insert(0, parts[1])
+            break
+        else:
+            path = parts[0]
+            allparts.insert(0, parts[1])
+    return allparts
