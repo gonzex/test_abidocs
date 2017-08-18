@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal  
+*Mentioned in topic(s):* Susceptibility_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -26,6 +27,7 @@ choice [[awtr]]=0.
 
 
 *Mnemonics:* BanDs for GW calculation  
+*Mentioned in topic(s):* GW_basic, SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* (2,[[nkptgw]],[[nsppol]])  
 *Default value:* *0  
@@ -35,8 +37,8 @@ choice [[awtr]]=0.
 
 For each k-point with number ikptgw in the range (1:[[nkptgw]]) and each spin
 index isppol, ** bdgw(1,ikptgw,isppol) ** is the number of the lowest band for
-which the [[GW]] computation must be done, and ** bdgw(2,ikptgw,isppol) ** is
-the number of the highest band for which the [[GW]] computation must be done.
+which the GW computation must be done, and ** bdgw(2,ikptgw,isppol) ** is the
+number of the highest band for which the GW computation must be done.
 
 When [[gwcalctyp]] &gt;= 20, the quasiparticle wavefunctions are computed and
 represented as linear combination of Kohn-Sham wavefunctions. In this case
@@ -48,16 +50,16 @@ the KS states between ** bdgw(1,ikptgw,isppol) ** and ** bdgw(2,ikptgw,isppol)
 Note that the initial values given in the input file might be changed inside
 the code so that all the degenerate states at a given k-point and spin are
 included. This might happen when [[symsigma]]=1 is used or in the case of
-self-consistent [[GW]] calculations.
+self-consistent GW calculations.
 
 When [[symsigma]]=1, the diagonal matrix elements of the self-energy are
 obtained by averaging the unsymmetrized results in the subspace spanned by the
 degenerate states.
 
 For self-consistent calculations, on the other hand, the basis set used to
-expand the [[GW]] wavefunctions should include all the degenerate states
-belonging to the same irreducible representation. Only in this case, indeed,
-the initial symmetries and energy degenerations are preserved.
+expand the GW wavefunctions should include all the degenerate states belonging
+to the same irreducible representation. Only in this case, indeed, the initial
+symmetries and energy degenerations are preserved.
 
 
 * * *
@@ -66,10 +68,16 @@ the initial symmetries and energy degenerations are preserved.
 
 
 *Mnemonics:* Contour Deformation CUSTOM IMaginary FReQuencieS  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -84,10 +92,16 @@ are specified with [[cd_imfrqs]].
 
 
 *Mnemonics:* Contour Deformation FReQuency integration on IMaginary axis Method  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
+
 
 
 
@@ -181,10 +195,16 @@ frequency sections.
 
 
 *Mnemonics:* Contour Deformation FULL GRID in complex plane  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -218,10 +238,16 @@ the ** Mrgscr ** utility.
 
 
 *Mnemonics:* Contour Deformation tangent grid HALFWAY FREQuency  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -237,10 +263,16 @@ approximately linear up to this point. To be used in conjunction with
 
 
 *Mnemonics:* Contour Deformation IMaginary FReQuencieS  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* real  
 *Dimensions:* ([[cd_customnimfrqs]])  
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -265,10 +297,16 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 
 
 *Mnemonics:* Contour Deformation grid MAXimum FREQuency  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1000.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -282,10 +320,15 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 
 
 *Mnemonics:* Contour Deformation grid calculate SUBSET of FREQuencies  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, '[[nfreqre]]']  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
+Test list:
+
+
+
 
 
 
@@ -311,6 +354,7 @@ merged with the ** mrgscr ** utility.
 
 
 *Mnemonics:* Energy CUT-off for EPSilon (the dielectric matrix)  
+*Mentioned in topic(s):* Susceptibility_compulsory, RandStopPow_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -335,6 +379,7 @@ gap). In any case, a convergence study is worth.
 
 
 *Mnemonics:* Energy CUT-off for SIGma eXchange  
+*Mentioned in topic(s):* SelfEnergy_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -357,6 +402,7 @@ upper limits.
 
 
 *Mnemonics:* Energy CUT-off for WaveFunctioNs  
+*Mentioned in topic(s):* Susceptibility_compulsory, SelfEnergy_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[ecut]] if [[optdriver]] in [3, 4],
@@ -385,6 +431,7 @@ The size of this set of planewaves is [[npwwfn]].
 
 
 *Mnemonics:* FFT for GW calculation  
+*Mentioned in topic(s):* GW_expert, Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 21  
@@ -434,15 +481,21 @@ The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 
 
 *Mnemonics:* FREQuencies along the IMaginary axis ALPHA parameter  
+*Mentioned in topic(s):* SelfEnergy_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
 
 
 
-[[freqim_alpha]] is used only for numerical integration of the [[GW]] self-
-energy ([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
+
+
+[[freqim_alpha]] is used only for numerical integration of the GW self-energy
+([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
 [[freqim_alpha]] determines the location of the maximum frequency point along
 the imaginary axis if the default grid is used in Contour Deformation
 (numerical integration) calculations. It is set as  _ α*ω p  _ , where  _ ω p
@@ -458,6 +511,7 @@ description of the formula.
 
 
 *Mnemonics:* FREQuencies along the Real axis MAXimum  
+*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -465,11 +519,11 @@ description of the formula.
 
 
 
-[[freqremax]] is used only for numerical integration of the [[GW]] self-energy
+[[freqremax]] is used only for numerical integration of the GW self-energy
 ([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
 [[freqremax]] sets the maximum real frequency used to calculate the dielectric
-matrix in order to perform the numerical integration of the [[GW]] self-
-energy. [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
+matrix in order to perform the numerical integration of the GW self-energy.
+[[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
 frequency mesh along the real axis.
 
 
@@ -479,23 +533,31 @@ frequency mesh along the real axis.
 
 
 *Mnemonics:* FREQuencies along the Real axis MINimum  
+*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3  
+Test list:
+
+- v5:  [[tests/v5/Input/t71.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t37.in]]
+- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
 
 
 
-[[freqremin]] is used only for numerical integration of the [[GW]] self-energy
+
+
+[[freqremin]] is used only for numerical integration of the GW self-energy
 ([[gwcalctyp]]= 2, 12, 22, 9, 19, 29).  
 [[freqremin]] sets the minimum real frequency used to calculate the dielectric
-matrix in order to perform the numerical integration of the [[GW]] self-
-energy. [[freqremin]] can be used to split a wide frequency interval into
-smaller subintervals that can be calculated independently. The different
-subintervals can then be merged together with the ** Mrgscr ** utility thus
-obtaining a single screening file that can used for self-energy calculations.
-Note that [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of
-the frequency mesh along the real axis.
+matrix in order to perform the numerical integration of the GW self-energy.
+[[freqremin]] can be used to split a wide frequency interval into smaller
+subintervals that can be calculated independently. The different subintervals
+can then be merged together with the ** Mrgscr ** utility thus obtaining a
+single screening file that can used for self-energy calculations. Note that
+[[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
+frequency mesh along the real axis.
 
 
 * * *
@@ -504,15 +566,24 @@ the frequency mesh along the real axis.
 
 
 *Mnemonics:* FREQuencies for the SPectral function MAXimum  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
+- v4:  [[tests/v4/Input/t84.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
 [[freqspmax]] sets the maximum real frequency used to calculate the spectral
-function from the [[GW]] Green's function. [[freqspmin]], [[freqspmax]] and
+function from the GW Green's function. [[freqspmin]], [[freqspmax]] and
 [[nfreqsp]] define the spacing of an equidistant frequency mesh along the real
 axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
 be used to make a user-defined grid.
@@ -524,19 +595,26 @@ be used to make a user-defined grid.
 
 
 *Mnemonics:* FREQuencies for the SPectral function MINimum  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -[[freqspmax]]  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
 [[freqspmin]] sets the minimum real frequency used to calculate the spectral
-function from the [[GW]] Green's function. [[freqspmin]] is set to
--[[freqspmax]] if left undefined. [[freqspmin]], [[freqspmax]], and
-[[nfreqsp]] define the spacing of an equidistant frequency mesh along the real
-axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
-be used to make a user-defined grid.
+function from the GW Green's function. [[freqspmin]] is set to -[[freqspmax]]
+if left undefined. [[freqspmin]], [[freqspmax]], and [[nfreqsp]] define the
+spacing of an equidistant frequency mesh along the real axis. Alternatively,
+the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can be used to make a
+user-defined grid.
 
 
 * * *
@@ -545,10 +623,17 @@ be used to make a user-defined grid.
 
 
 *Mnemonics:* GW CUSTOM FREQuencies for SPectral function  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -564,10 +649,17 @@ specified with [[gw_freqsp]].
 
 
 *Mnemonics:* GW SPectral FREQuencies  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* real  
 *Dimensions:* ([[gw_customnfreqsp]])  
 *Default value:* [1 .. [[gw_customnfreqsp]]]  
 *Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -593,10 +685,16 @@ If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 
 
 *Mnemonics:* GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
+
 
 
 
@@ -618,10 +716,16 @@ frequency.
 
 
 *Mnemonics:* GW Contour Deformation FReQuencies on REal axis Inverse Z Grid  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
+
 
 
 
@@ -651,10 +755,16 @@ during Contour Deformation sigma calculations.
 
 
 *Mnemonics:* GW Contour Deformation FReQencies on REal axis - Use Tangent Grid  
+*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
+
 
 
 
@@ -673,10 +783,16 @@ transformed grid.
 
 
 *Mnemonics:* GW treatment of INVALID FREQuency for Hybertsen-Louie PPM  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t41.in]]
+
+
 
 
 
@@ -694,16 +810,22 @@ invalid (negative or imaginary).
 
 
 *Mnemonics:* GW, Number of Q-points for the Long Wave-Length Limit  
+*Mentioned in topic(s):* GW_expert, BSE_expert, Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
 
 
 
-Only relevant if [[optdriver]]=3,4,99 that is, screening, sigma or
-[[BETHE_SALPETER]] calculations, although the actual meaning of the variable
-depends on the particular run-level (see discussion below).
+
+
+Only relevant if [[optdriver]]=3,4,99 that is, screening, sigma or Bethe-
+Salpeter calculations, although the actual meaning of the variable depends on
+the particular run-level (see discussion below).
 
 [[gw_nqlwl]] defines the number of directions in reciprocal space used to
 describe the non-analytical behaviour of the heads (G = G'=0) and the wings
@@ -724,7 +846,7 @@ q-space)
 
 When [[optdriver]]=99, [[gw_nqlwl]] and ** gw_qlwl ** define the set of
 directions in q-space along which the macroscopic dielectric function is
-evaluated. By default the [[BETHE_SALPETER]] code calculates the macroscopic
+evaluated. By default the Bethe-Salpeter code calculates the macroscopic
 dielectric function using six different directions in q-space (the three basis
 vectors of the reciprocal lattice and the three Cartesian axis).
 
@@ -735,15 +857,20 @@ vectors of the reciprocal lattice and the three Cartesian axis).
 
 
 *Mnemonics:* GW Number of self-consistent STEPs  
+*Mentioned in topic(s):* GW_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
 *Only relevant if:* [[optdriver]]==8  
+Test list:
 
 
 
-Gives the maximum number of self-consistent [[GW]] cycles (or "iterations").
-in which G and/or W will be updated until the quasi-particle energies are
+
+
+
+Gives the maximum number of self-consistent GW cycles (or "iterations"). in
+which G and/or W will be updated until the quasi-particle energies are
 converged within [[gw_toldfeig]]. [[gwcalctyp]] and [[gw_sctype]] are used to
 define the type of self-consistency.
 
@@ -754,10 +881,16 @@ define the type of self-consistency.
 
 
 *Mnemonics:* GW, Q-points for the Long Wave-Length limit  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert, BSE_expert  
 *Variable type:* real  
 *Dimensions:* (3,[[gw_nqlwl]])  
 *Default value:* [1e-05, 2e-05, 3e-05]  
-*Only relevant if:* [[optdriver]]==3  
+*Only relevant if:* [[optdriver]] in [3,4,99]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
+
 
 
 
@@ -773,10 +906,17 @@ effects) are evaluated for each direction specified by [[gw_qlwl]].
 
 
 *Mnemonics:* GW QuasiParticle RANGE policy  
+*Mentioned in topic(s):* SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+- v8:  [[tests/v8/Input/t44.in]]
+
+
 
 
 
@@ -794,9 +934,9 @@ important to stress, however, that the position of the optical/fundamental
 gaps is deduced from the energies computed on the k-mesh used for the WFK
 file. Therefore the computed gaps might differ from the correct ones that can
 only be obtained with an appropriate sampling of the irreducible zone.
-Positive values are useful if we do not know the position of the [[GW]] HOMO,
-LOMO and we want to investigate the effect of the [[GW]] corrections on the
-states close to the gap Negative values are usually used for self-consistent
+Positive values are useful if we do not know the position of the GW HOMO, LOMO
+and we want to investigate the effect of the GW corrections on the states
+close to the gap Negative values are usually used for self-consistent
 calculations Note that, in the case of self-consistency or symsigma=1, the
 code might change the bands range so that all the degenerate states are
 included. Note also that [[kptgw]], and [[bdgw]] are ignored when this options
@@ -810,22 +950,27 @@ have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 
 
 *Mnemonics:* GW, Self-Consistency TYPE  
+*Mentioned in topic(s):* GW_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4]  
+Test list:
 
 
 
-This variable is used to partially define the kind of self-consistency for
-[[GW]] calculations. The other piece of information is given by [[gwcalctyp]]
-that defines the particular approximation for the self-energy operator as well
-as whether the wavefunctions have to replaced by quasi-particle amplitudes.
+
+
+
+This variable is used to partially define the kind of self-consistency for GW
+calculations. The other piece of information is given by [[gwcalctyp]] that
+defines the particular approximation for the self-energy operator as well as
+whether the wavefunctions have to replaced by quasi-particle amplitudes.
 
 If [[gw_sctype]] is specified in the input file, the code will perform an
-iterative update of the quantities entering the [[GW]] equations until the
-quasi-particle energies are converged within [[gw_toldfeig]]. The maximum
-number of iterations is specified by [[gw_nstep]]. Possible values are:
+iterative update of the quantities entering the GW equations until the quasi-
+particle energies are converged within [[gw_toldfeig]]. The maximum number of
+iterations is specified by [[gw_nstep]]. Possible values are:
 
   * 1 =&gt; standard one-shot method (one screening calculation followed by a single sigma run) 
   * 2 =&gt; self-consistency only on W (iterative update of W followed by a sigma run in which G is approximated with the Kohn-Sham independent-particle Green's function G0) 
@@ -845,23 +990,29 @@ consistent iteration.
 
 
 *Mnemonics:* GW, SIGma (self-energy) for the CORE contribution  
+*Mentioned in topic(s):* SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t66.in]]
+
+
 
 
 
 Only available for PAW and relevant if [[optdriver]]=4 that is, sigma
 calculations.
 
-Theoretical introduction: [[GW]] calculations performed on top of electronic
+Theoretical introduction: GW calculations performed on top of electronic
 calculations relying when the frozen-core approximation is used to separate
 inner-core electrons from valence electrons, only the contribution to the
 self-energy arising from valence electrons is explicitly accounted for. In the
 standard approach based on pseudopotentials the contribution to the self-
 energy due to core electrons is approximated by means of the KS exchange-
-correlation potential generated by the core density. In the case of [[GW]]
+correlation potential generated by the core density. In the case of GW
 calculations employing the PAW method, the core contribution to the self-
 energy can be more accurately estimated in terms of the Fock operator
 generated by the core wavefunctions. In the simplest approach, the only
@@ -883,15 +1034,20 @@ contribution to sigma.
 
 
 *Mnemonics:* GW TOLerance on the DiFference of the EIGenvalues  
+*Mentioned in topic(s):* GW_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1 eV  
 *Only relevant if:* [[optdriver]]==8  
+Test list:
+
+
+
 
 
 
 Sets a tolerance for absolute differences of QP energies that will cause one
-self-consistent [[GW]] cycle to stop.  
+self-consistent GW cycle to stop.  
 Can be specified in Ha (the default), Ry, eV or Kelvin, since ** toldfe ** has
 the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)  
 
@@ -902,6 +1058,7 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 
 
 *Mnemonics:* GW CALCulation TYPe  
+*Mentioned in topic(s):* GW_basic, SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -909,21 +1066,21 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 
 
 
-[[gwcalctyp]] governs the choice between the different capabilities of the
-[[GW]] code.
+[[gwcalctyp]] governs the choice between the different capabilities of the GW
+code.
 
   * 0 &lt;= [[gwcalctyp]] &lt;= 9 : standard "1 shot" quasiparticle method 
   * 10 &lt;= [[gwcalctyp]] &lt;= 19 : self-consistent quasiparticle method on energies only 
   * 20 &lt;= [[gwcalctyp]] &lt;= 29 : self-consistent quasiparticle method on energies and wavefunctions 
 
-  * [[gwcalctyp]] = 0, 10, or 20 : standard Plasmon-Pole model [[GW]] calculation 
-  * [[gwcalctyp]] = 1 : [[GW]] calculation where the self-energy along the real axis is obtained by performing the analytic continuation from the imaginary axis to the full complex plane via the Pade approximant. Only available for standard "1 shot" quasiparticle method. 
-  * [[gwcalctyp]] = 2, 12, or 22 : [[GW]] calculation using numerical integration (contour deformation method, see e.g. S. Lebegue _ et al. _ PRB ** 67 ** , 155208 (2003).) 
+  * [[gwcalctyp]] = 0, 10, or 20 : standard Plasmon-Pole model GW calculation 
+  * [[gwcalctyp]] = 1 : GW calculation where the self-energy along the real axis is obtained by performing the analytic continuation from the imaginary axis to the full complex plane via the Pade approximant. Only available for standard "1 shot" quasiparticle method. 
+  * [[gwcalctyp]] = 2, 12, or 22 : GW calculation using numerical integration (contour deformation method, see e.g. S. Lebegue _ et al. _ PRB ** 67 ** , 155208 (2003).) 
   * [[gwcalctyp]] = 5, 15, or 25 : Hartree-Fock calculation 
   * [[gwcalctyp]] = 6, 16, or 26 : Screened Exchange calculation 
   * [[gwcalctyp]] = 7, 17, or 27 : COHSEX calculation 
-  * [[gwcalctyp]] = 8, 18, or 28 : model [[GW]] calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using a Plasmon-Pole model 
-  * [[gwcalctyp]] = 9, 19, or 29 : model [[GW]] calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using numerical integration (contour deformation method) 
+  * [[gwcalctyp]] = 8, 18, or 28 : model GW calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using a Plasmon-Pole model 
+  * [[gwcalctyp]] = 9, 19, or 29 : model GW calculation following S. Faleev _ et al. _ PRL ** 93 ** , 126406 (2004) using numerical integration (contour deformation method) 
 
 Also
 
@@ -938,10 +1095,19 @@ Also
 
 
 *Mnemonics:* GW COMPleteness  
+*Mentioned in topic(s):* SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4]  
+Test list:
+
+- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -960,10 +1126,19 @@ methodology.
 
 
 *Mnemonics:* GW ENergy for COMPleteness  
+*Mentioned in topic(s):* SelfEnergy_useful, Susceptibility_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcomp]]==1  
+Test list:
+
+- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -981,10 +1156,16 @@ the methodology.
 
 
 *Mnemonics:* GW FOCK exchange MIXing parameter  
+*Mentioned in topic(s):* GW_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.25  
 *Only relevant if:* [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t43.in]]
+
+
 
 
 
@@ -999,15 +1180,22 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 
 
 *Mnemonics:* GW GAMMA  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]=3 or 4 (Sigma calculations)  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t36.in]]
+- v7:  [[tests/v7/Input/t16.in]]
+
+
 
 
 
 If [[gwgamma]] is 1, the vertex correction will be included leading to what is
-known as "[[GW]]Gamma" approximation. see R. Del Sole, L. Reining, and R. W.
+known as "GW-Gamma" approximation. see R. Del Sole, L. Reining, and R. W.
 Godby, Phys. Rev. B 49, 8024 (1994). Note that, in order to include the vertex
 correction in W, one has to start the sigma calculation from the
 susceptibility file_SUSC instead of the _SCR file (see [[getsuscep]]   and
@@ -1029,10 +1217,17 @@ kernel.
 
 
 *Mnemonics:* GWLS BAND INDEX  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1047,10 +1242,16 @@ to be corrected in the G0W0 scheme.
 
 
 *Mnemonics:* GWLS CORRELATION  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1073,14 +1274,20 @@ removed.
 
 * * *
 
-## **gwls_dielectric_model** 
+## **gwls_diel_model** 
 
 
 *Mnemonics:* GWLS dielectric model  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1093,10 +1300,16 @@ Not used yet.
 
 
 *Mnemonics:* GWLS exact EXCHANGE  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1111,10 +1324,16 @@ Governs whether the exact exchange for the state to be corrected
 
 
 *Mnemonics:* GWLS FIRST SEED vector  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[gwls_band_index]]  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1137,10 +1356,16 @@ therefore keep the default value.
 
 
 *Mnemonics:* GWLS KMAX for the ANALYTIC term  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 8  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1156,10 +1381,17 @@ converged to a few 10s of meV for all molecules studied so far.
 
 
 *Mnemonics:* GWLS KMAX for the COMPLEMENT space.  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1172,7 +1404,7 @@ using the exact dielectric operator. It this becomes interesting to calculate
 the 'trace' of the 'exact - model' dielectric matrix in a small basis and add
 it to the 'trace' of the 'model' dielectric matrix obtained in a large bais.
 In the context where the model dielectric matrix is used in the calculations,
-[[gwls_sternheimer_kmax]] determines the size of the 'small' basis and
+[[gwls_stern_kmax]] determines the size of the 'small' basis and
 [[gwls_kmax_complement]] determines the size of the 'large' basis.
 
 For more information on the exact role of these bases and on the model
@@ -1185,10 +1417,16 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 
 
 *Mnemonics:* GWLS KMAX for the NUMERIC term  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 16  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1206,10 +1444,16 @@ converged to a few 10s of meV for all molecules studied so far.
 
 
 *Mnemonics:* GWLS KMAX for the calculation of the POLES residue  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1234,10 +1478,16 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 
 
 *Mnemonics:* GWLS LIST of the PROJection FREQuencies  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* real  
 *Dimensions:* ([[gwls_n_proj_freq]])  
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1256,10 +1506,16 @@ frequency is to be used) is fine and no frequencies need to be picked up.
 
 
 *Mnemonics:* GWLS MODEL PARAMETER  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1287,10 +1543,16 @@ optimal.
 
 
 *Mnemonics:* GWLS Number of PROJection FREQuencies  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1308,10 +1570,16 @@ the default ([[gwls_n_proj_freq]]==0) is fine.
 
 
 *Mnemonics:* GWLS Number of PoinTs to use for the GAUSSian QUADrature   
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1326,10 +1594,16 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 
 
 *Mnemonics:* GWLS Number of SEED vectorS  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1345,10 +1619,16 @@ been tested for now and users should keep this value.
 
 
 *Mnemonics:* GWLS PRINT level for DEBUGging  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1362,10 +1642,17 @@ calculation. Users should keep its value at the default.
 
 
 *Mnemonics:* GWLS RECYCLE  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1396,30 +1683,21 @@ construction of the basis.
 
 * * *
 
-## **gwls_second_model_parameter** 
-
-
-*Mnemonics:* GWLS SECOND MODEL PARAMETER  
-*Variable type:* real  
-*Dimensions:* scalar  
-*Default value:* 0.0  
-*Only relevant if:* [[optdriver]]==66  
-
-
-
-Not used yet.
-
-
-* * *
-
-## **gwls_sternheimer_kmax** 
+## **gwls_stern_kmax** 
 
 
 *Mnemonics:* GWLS Kmax  
+*Mentioned in topic(s):* GWls_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
 
 
 
@@ -1435,10 +1713,18 @@ criterion of 50meV on the eigenenergies.
 
 
 *Mnemonics:* GW MEMory  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 11  
 *Only relevant if:* [[optdriver]] in [3,4]  
+Test list:
+
+- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t70.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t22.in]]
+
+
 
 
 
@@ -1461,10 +1747,16 @@ The first digit is only meaningful when performing sigma calculations.
 
 
 *Mnemonics:* GW RPA CORRelation energy  
+*Mentioned in topic(s):* RPACorrEn_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+
+
 
 
 
@@ -1481,6 +1773,7 @@ The first digit is only meaningful when performing sigma calculations.
 
 
 *Mnemonics:* Integer that governs the CUT-off for COULomb interaction  
+*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, Coulomb_useful, SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 6  
@@ -1524,6 +1817,7 @@ in the sphere is equal to the volume of the solid.
 
 
 *Mnemonics:* INCLude VKB  
+*Mentioned in topic(s):* Susceptibility_expert, BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -1542,7 +1836,7 @@ computation is much faster.
 The importance of this contribution depends on the number of k points. Turning
 off [[inclvkb]] is let to the choice of the user.
 
-In general, the use of [[inclvkb]]=0 is fine for [[GW]] calculations in
+In general, the use of [[inclvkb]]=0 is fine for GW calculations in
 crystalline systems provided that the k-point sampling is sufficiently
 converged.
 
@@ -1556,6 +1850,7 @@ optical properties.
 
 
 *Mnemonics:* K-PoinTs for GW calculations  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* (3,[[nkptgw]])  
 *Default value:* *0.0  
@@ -1564,7 +1859,7 @@ optical properties.
 
 
 For each k-point with number igwpt in the range (1:[[nkptgw]]),
-[[kptgw]](1,igwpt) is the reduced coordinate of the k-point where [[GW]]
+[[kptgw]](1,igwpt) is the reduced coordinate of the k-point where GW
 corrections are required. while [[bdgw]] (1:2,igwpt) specifies the range of
 bands to be considered.
 
@@ -1579,6 +1874,7 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 
 
 *Mnemonics:* Many Body Perturbation Theory SCISSor operator  
+*Mentioned in topic(s):* GW_useful, Susceptibility_useful, SelfEnergy_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1587,7 +1883,7 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 
 
 The Scissors operator energy added to the conductions states. In some cases,
-it mimics a second iteration self-consistent [[GW]] calculation.
+it mimics a second iteration self-consistent GW calculation.
 
 
 * * *
@@ -1596,6 +1892,7 @@ it mimics a second iteration self-consistent [[GW]] calculation.
 
 
 *Mnemonics:* Model Dielectric Function, EPSilon INFinity  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1615,18 +1912,24 @@ Eq. (7) of Phys. Rev. B **37**, (1988)
 
 
 *Mnemonics:* Number of BANDs in the KSS file  
+*Mentioned in topic(s):* GW_useful, Susceptibility_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- etsf_io:  [[tests/etsf_io/Input/t02.in]], [[tests/etsf_io/Input/t04.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
 
 
 
-This input variable is used for the preparation of a [[GW]] calculation : it
-is used in a GS run (where [[optdriver]]=0) to generate a _KSS file. In this
-run, [[nbandkss]] should be non-zero. The generated _KSS file can be
-subsequently used to calculate the irreducible polarizabilty $\chi^{(0)}_{KS}$
-using [[optdriver]]=3 or to calculate [[GW]] corrections setting
-[[optdriver]]=4.
+
+
+This input variable is used for the preparation of a GW calculation : it is
+used in a GS run (where [[optdriver]]=0) to generate a _KSS file. In this run,
+[[nbandkss]] should be non-zero. The generated _KSS file can be subsequently
+used to calculate the irreducible polarizabilty $\chi^{(0)}_{KS}$ using
+[[optdriver]]=3 or to calculate GW corrections setting [[optdriver]]=4.
 
   * If [[nbandkss]]=0, no _KSS file is created 
   * If [[nbandkss]]=-1, all the available eigenstates (energies and eigenfunctions) are stored in the abo_KSS file at the end of the ground state calculation. The number of states is forced to be the same for all k-points : it will be the minimum of the number of plane waves over all k-points. 
@@ -1636,7 +1939,7 @@ See [[npwkss]] for the selection of the number of the planewave components of
 the eigenstates to be stored.  
 The input variable [[iomode]] can be used to read and write KSS files
 according to different fileformat (presently only [[iomode]]=0 and 3 are
-available in the [[GW]] part).  
+available in the GW part).  
 The precision of the KSS file can be tuned through the input variable
 [[kssform]].  
 For more details about the format of the abo_KSS file, see the routine
@@ -1652,6 +1955,7 @@ in order to generate a _KSS file.
 
 
 *Mnemonics:* Number of FREQuencies along the IMaginary axis  
+*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1660,8 +1964,8 @@ in order to generate a _KSS file.
 
 
 [[nfreqim]] sets the number of pure imaginary frequencies used to calculate
-the dielectric matrix in order to perform the numerical integration of the
-[[GW]] self-energy.
+the dielectric matrix in order to perform the numerical integration of the GW
+self-energy.
 
 
 * * *
@@ -1670,10 +1974,15 @@ the dielectric matrix in order to perform the numerical integration of the
 
 
 *Mnemonics:* Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix  
+*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+
+
 
 
 
@@ -1693,6 +2002,7 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 
 
 *Mnemonics:* Number of FREQuencies along the REal axis  
+*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1701,21 +2011,21 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 
 
 [[nfreqre]] sets the number of real frequencies used to calculate the
-dielectric matrix in order to perform the numerical integration of the [[GW]]
+dielectric matrix in order to perform the numerical integration of the GW
 self-energy.
 
-It can be used also in case of [[GW]] calculations with plasmon-pole models, _
-i.e _ [[gwcalctyp]]&lt;10, to reduce the number of frequencies used to
-evaluate the dielectric matrix from the (default) two to one frequency
-(omega=0) by setting [[nfreqre]]=1. This might be a good idea in case one is
-planning to use ppmodel&gt;1\. This will force the calculation of the
-screening on a single frequency (omega=0) and hence reduce memory and disk
-space requirement. The only draw back is that the user will not be able to
-perform self energy calculation using [[ppmodel]]=1, since in the last case
-the dielectric matrix calculated on two frequencies is required. If the user
-is not sure which ppmodel to use, then s/he is not advised to use this input
-variable. Using the default values, one must be able to get a screening file
-that can be used with any ppmodel.
+It can be used also in case of GW calculations with plasmon-pole models, _ i.e
+_ [[gwcalctyp]]&lt;10, to reduce the number of frequencies used to evaluate
+the dielectric matrix from the (default) two to one frequency (omega=0) by
+setting [[nfreqre]]=1. This might be a good idea in case one is planning to
+use ppmodel&gt;1\. This will force the calculation of the screening on a
+single frequency (omega=0) and hence reduce memory and disk space requirement.
+The only draw back is that the user will not be able to perform self energy
+calculation using [[ppmodel]]=1, since in the last case the dielectric matrix
+calculated on two frequencies is required. If the user is not sure which
+ppmodel to use, then s/he is not advised to use this input variable. Using the
+default values, one must be able to get a screening file that can be used with
+any ppmodel.
 
 
 * * *
@@ -1724,15 +2034,25 @@ that can be used with any ppmodel.
 
 
 *Mnemonics:* Number of FREQuencies for the SPectral function  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- paral:  [[tests/paral/Input/t77.in]]
+- tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
+- v4:  [[tests/v4/Input/t84.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
 [[nfreqsp]] defines the number of real frequencies used to calculate the
-spectral function of the [[GW]] Green's function.
+spectral function of the GW Green's function.
 
 
 * * *
@@ -1741,6 +2061,7 @@ spectral function of the [[GW]] Green's function.
 
 
 *Mnemonics:* Number of K-PoinTs for GW corrections  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1748,8 +2069,8 @@ spectral function of the [[GW]] Green's function.
 
 
 
-[[nkptgw]] gives the number of k-points for which the [[GW]] calculation must
-be done. It is used to dimension [[kptgw]]
+[[nkptgw]] gives the number of k-points for which the GW calculation must be
+done. It is used to dimension [[kptgw]]
 
 
 * * *
@@ -1758,10 +2079,18 @@ be done. It is used to dimension [[kptgw]]
 
 
 *Mnemonics:* Number of OMEGA to evaluate the Spectral Function  
+*Mentioned in topic(s):* Susceptibility_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]!=0  
+Test list:
+
+- tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+- v5:  [[tests/v5/Input/t71.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+
+
 
 
 
@@ -1785,10 +2114,16 @@ kept in mind, however, that the memory required grows fast with the value of
 
 
 *Mnemonics:* Number of OMEGA(S) along the Imaginary axis  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 12  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
+
 
 
 
@@ -1803,10 +2138,16 @@ interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 
 
 *Mnemonics:* Number of OMEGA to evaluate the Sigma Real axis Derivative  
+*Mentioned in topic(s):* SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 9  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+
+
 
 
 
@@ -1821,10 +2162,16 @@ energy is numerically estimated through linear interpolation.
 
 
 *Mnemonics:* Number of Particle VELocities  
+*Mentioned in topic(s):* RandStopPow_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
+Test list:
+
+- v7:  [[tests/v7/Input/t16.in]]
+
+
 
 
 
@@ -1843,15 +2190,20 @@ proton.
 
 
 *Mnemonics:* Number of PlaneWaves in the KSS file  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
 
 
 
-This input variable is used for the preparation of a [[GW]] calculation: the
-GS run (where [[optdriver]]=1 and ** nbandkss ** /=0) should be followed with
-a run where [[optdriver]]=3. Also, if [[nbandkss]]=0, no use of [[npwkss]].
+
+
+
+This input variable is used for the preparation of a GW calculation: the GS
+run (where [[optdriver]]=1 and ** nbandkss ** /=0) should be followed with a
+run where [[optdriver]]=3. Also, if [[nbandkss]]=0, no use of [[npwkss]].
 
 [[npwkss]] defines the number of planewave components of the Kohn-Sham states
 to build the Hamiltonian, in the routine outkss.F90, and so, the size of the
@@ -1871,10 +2223,16 @@ k-points.
 
 
 *Mnemonics:* Number of Q-PoinTs for the Dielectric Matrix  
+*Mentioned in topic(s):* Susceptibility_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
+Test list:
+
+- v3:  [[tests/v3/Input/t87.in]]
+
+
 
 
 
@@ -1895,10 +2253,16 @@ stops.
 
 
 *Mnemonics:* OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 50 eV  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
+
 
 
 
@@ -1913,10 +2277,16 @@ employed to sample the self-energy along the imaginary axis.
 
 
 *Mnemonics:* OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0 eV  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+
+
 
 
 
@@ -1931,6 +2301,7 @@ sampled [[nomegasrd]] times.
 
 
 *Mnemonics:* Plasmon Pole Model FReQuency  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0 Ha  
@@ -1940,10 +2311,10 @@ sampled [[nomegasrd]] times.
 
 ** In plasmon-pole calculations **
 
-Usually only effective if [[GW]] corrections are evaluated using the plasmon-
-pole model of Godby-Needs ([[ppmodel]]==1).  
+Usually only effective if GW corrections are evaluated using the plasmon-pole
+model of Godby-Needs ([[ppmodel]]==1).  
   
-In the present status of the [[GW]] code, the convolution in frequency space
+In the present status of the GW code, the convolution in frequency space
 defining the self-energy operator can be evaluated using two different
 approaches: numerical integration and plasmon-pole models.  
 Methods based on the numerical integration (contour deformation, analytic
@@ -1983,6 +2354,7 @@ details.
 
 
 *Mnemonics:* Plasmon Pole MODEL  
+*Mentioned in topic(s):* SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2016,10 +2388,16 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.
 
 
 *Mnemonics:* Particle VELocity MAXimum  
+*Mentioned in topic(s):* RandStopPow_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*1.0  
 *Only relevant if:* [[optdriver]]==3  
+Test list:
+
+- v7:  [[tests/v7/Input/t16.in]]
+
+
 
 
 
@@ -2035,10 +2413,16 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 
 
 *Mnemonics:* Q-PoinTs for the Dielectric Matrix  
+*Mentioned in topic(s):* Susceptibility_useful  
 *Variable type:* real  
 *Dimensions:* (3,[[nqptdm]])  
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==3 and [[nqptdm]]!=0  
+Test list:
+
+- v3:  [[tests/v3/Input/t87.in]]
+
+
 
 
 
@@ -2055,6 +2439,7 @@ cartesian coordinates!). For further explanation, see the input variable
 
 
 *Mnemonics:* Radius of the CUT-off for coulomb interaction  
+*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2074,17 +2459,26 @@ the same volume inside the cutoff as the volume of the primitive cell.
 
 
 *Mnemonics:* RHO QuasiParticle MIXing  
+*Mentioned in topic(s):* GW_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
+Test list:
+
+- paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+- v4:  [[tests/v4/Input/t88.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
+- wannier90:  [[tests/wannier90/Input/t03.in]]
 
 
 
-For self-consistent [[GW]] runs, [[rhoqpmix]] sets the mixing coefficient
-between the new and the previous electronic densities. This mixing damps the
-spurious oscillations in the Hartree potential when achieving self-
-consistency. [[rhoqpmix]] is meaningful only when doing self-consistency on
-the wavefunctions with [[gwcalctyp]] &gt;= 20\.
+
+
+For self-consistent GW runs, [[rhoqpmix]] sets the mixing coefficient between
+the new and the previous electronic densities. This mixing damps the spurious
+oscillations in the Hartree potential when achieving self-consistency.
+[[rhoqpmix]] is meaningful only when doing self-consistency on the
+wavefunctions with [[gwcalctyp]] &gt;= 20\.
 
 
 * * *
@@ -2093,10 +2487,16 @@ the wavefunctions with [[gwcalctyp]] &gt;= 20\.
 
 
 *Mnemonics:* SPectral BROADening  
+*Mentioned in topic(s):* Susceptibility_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]==2  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
+
 
 
 
@@ -2112,10 +2512,18 @@ gaussian is given by [[spbroad]].
 
 
 *Mnemonics:* SPectral METHod  
+*Mentioned in topic(s):* Susceptibility_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
+Test list:
+
+- tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+- v5:  [[tests/v5/Input/t71.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+
+
 
 
 
@@ -2158,6 +2566,7 @@ Summarizing:
 
 
 *Mnemonics:* SYMmetryze \chi_o  
+*Mentioned in topic(s):* Susceptibility_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2183,6 +2592,7 @@ between these two equivalent methods:
 
 
 *Mnemonics:* SYMmetrization of SIGMA matrix elements  
+*Mentioned in topic(s):* SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2196,15 +2606,15 @@ energy matrix elements is reduced to an appropriate irreducible wedge defined
 by the point group of the wave-vector k specified in the [[kptgw]] list.
 
 The symmetrized expression leads to a considerable speedup of the run but,
-unfortunately, this option is not yet compatible with self-consistent [[GW]]
+unfortunately, this option is not yet compatible with self-consistent GW
 calculations (see [[gwcalctyp]]).
 
 The algorithm implemented in [[symsigma]]=1 constructs a symmetric invariant
-for the diagonal matrix elements of the self-energy by simply averaging the
-[[GW]] results within the degenerate subspace. Therefore particular care has
-to be taken in the presence of accidental degeneracies. since [[GW]]
-calculations performed with [[symsigma]]=1 will not be able to remove the
-initial accidental degeneracy.
+for the diagonal matrix elements of the self-energy by simply averaging the GW
+results within the degenerate subspace. Therefore particular care has to be
+taken in the presence of accidental degeneracies. since GW calculations
+performed with [[symsigma]]=1 will not be able to remove the initial
+accidental degeneracy.
 
 
 * * *
@@ -2213,21 +2623,27 @@ initial accidental degeneracy.
 
 
 *Mnemonics:* calculation of the screened interaction U with the Constrained RPA method  
+*Mentioned in topic(s):* CRPA_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[nspinor]] == 1  
+Test list:
+
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
 When equal to one or two, this variable allows for the calculation of U with
 the cRPA method. An explicit test is shown in automatic tests v7/t23-t24-t25
-and in v7/t68-t69. The present implementation is parallelized (as for usual
-[[GW]] calculations), use symetry over k-points only for calculations
-involving one correlated atom, and can be use when correlated bands are
-entangled or not. The constrained calculation of the polarisability can be
-done by eliminating transition betweens correlated bands (and not orbitals)
-with the variable [[ucrpa_bands]].
+and in v7/t68-t69. The present implementation is parallelized (as for usual GW
+calculations), use symetry over k-points only for calculations involving one
+correlated atom, and can be use when correlated bands are entangled or not.
+The constrained calculation of the polarisability can be done by eliminating
+transition betweens correlated bands (and not orbitals) with the variable
+[[ucrpa_bands]].
 
 For [[ucrpa]] = 1, two solutions are possible. The first one is to specify
 (with the variable [[ucrpa_bands]]) the bands to exclude from the
@@ -2254,10 +2670,16 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 
 
 *Mnemonics:* For the calculation of U with the Constrained RPA method, gives correlated BANDS  
+*Mentioned in topic(s):* CRPA_basic  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
 *Comment:* That is, the default includes no band.  
+Test list:
+
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]]
+
+
 
 
 
@@ -2271,10 +2693,16 @@ polarisability.
 
 
 *Mnemonics:* For the calculation of U with the Constrained RPA method, gives energy WINDOW  
+*Mentioned in topic(s):* CRPA_basic  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
 *Comment:* That is, the energy window is empty by default.  
+Test list:
+
+- v7:  [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -2292,10 +2720,16 @@ numbers) with respect to the position of the Fermi level.
 
 
 *Mnemonics:* V (potential) CUT-off GEOmetry  
+*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, SelfEnergy_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[icutcoul]] in [1,2]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
+
 
 
 
@@ -2344,6 +2778,7 @@ defines ....
 
 
 *Mnemonics:* Z-CUT  
+*Mentioned in topic(s):* Susceptibility_expert, BSE_expert, SelfEnergy_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0036749326  

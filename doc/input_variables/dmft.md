@@ -2,9 +2,18 @@
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Double Counting  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+- v6:  [[tests/v6/Input/t45.in]]
+- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -19,9 +28,16 @@ moment and is the FLL double counting.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: ENTROPY  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
+*Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_solv]]==5  
+Test list:
+
+- v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+
+
 
 
 
@@ -37,6 +53,7 @@ Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: number of ITERation  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -53,6 +70,7 @@ Number of iterations for the DMFT inner loop.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: MiXing parameter for the SelF energy  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.3  
@@ -69,10 +87,16 @@ Mixing parameter for the simple mixing of the self-energy.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Number of LAMBDA points  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 6  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_entropy]]==1  
+Test list:
+
+- v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+
+
 
 
 
@@ -87,6 +111,7 @@ Its value must be greater or equal to 3.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -103,6 +128,7 @@ Number of Matsubara frequencies (linear mesh)
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -119,6 +145,7 @@ Number of frequencies in the log mesh.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Read SeLF energy  
+*Mentioned in topic(s):* DMFT_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -135,6 +162,7 @@ at each DFT iteration.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: choice of SOLVer  
+*Mentioned in topic(s):* DMFT_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5  
@@ -178,9 +206,17 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: t2g orbitals  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- paral:  [[tests/paral/Input/t99.in]]
+- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -195,9 +231,16 @@ calculations only on t2g orbitals.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0001  
+Test list:
+
+- paral:  [[tests/paral/Input/t99.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -216,9 +259,15 @@ message is given.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-05  
+Test list:
+
+- v6:  [[tests/v6/Input/t45.in]]
+
+
 
 
 
@@ -236,6 +285,7 @@ criterion.
 
 
 *Mnemonics:* Dynamical Mean Field Theory: BAND: Final  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -255,6 +305,7 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 
 
 *Mnemonics:* Dynamical Mean Field Theory: BAND: Initial  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -274,6 +325,7 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: CHECKs  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -290,10 +342,17 @@ Only for developer purposes. (Introduced by B. Amadon, v6.1.0)
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -313,10 +372,17 @@ but robust methods. Should only be used for debugging.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -334,10 +400,17 @@ simulation. Slow down the simulation.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -353,10 +426,17 @@ try a global move. A value of 5000 means that a global move is tried every
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -374,10 +454,17 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -392,10 +479,17 @@ Example : 2 means the measure is perform every two sweeps.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -414,10 +508,17 @@ requires a lot of I/O band width.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -436,10 +537,17 @@ perform a fourier transform. The result can be plotted using the
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -456,10 +564,17 @@ result is written in the "Perturbation.dat" file.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
 *Only relevant if:* [[dmft_solv]]==6 or 7  
+Test list:
+
+- paral:  [[tests/paral/Input/t99.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -477,10 +592,19 @@ coefficients are given in file whose name ending is
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]>=4  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+- v6:  [[tests/v6/Input/t07.in]]
+- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -496,10 +620,19 @@ value.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[dmft_solv]]>=4  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+- v6:  [[tests/v6/Input/t07.in]]
+- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -513,10 +646,16 @@ Number of Monte Carlo sweeps. Should be at least 10^6.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo SEED  
+*Mentioned in topic(s):* DMFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[jdtset]]  
 *Only relevant if:* [[dmft_solv]]>=4  
+Test list:
+
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -534,10 +673,18 @@ the rank of the cpu in the MPI communicator.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1000  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 

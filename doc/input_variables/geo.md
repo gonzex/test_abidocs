@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* BRaVais LaTTice type  
+*Mentioned in topic(s):* UnitCell_useful, SmartSymm_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -52,10 +53,16 @@ For more details see the space group [ help file
 
 
 *Mnemonics:* spatially varying CHEMical POTential  
+*Mentioned in topic(s):* Artificial_expert  
 *Variable type:* real  
 *Dimensions:* (3,[['nzchempot']],[['ntype']])  
 *Default value:* 0.0  
 *Only relevant if:* [[nzchempot]]/=0  
+Test list:
+
+- v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+
+
 
 
 
@@ -90,9 +97,15 @@ atomic units).
 
 
 *Mnemonics:* GENerator of the translation for Anti-FerroMagnetic space group  
+*Mentioned in topic(s):* spinpolarisation_useful, SmartSymm_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
+Test list:
+
+- v3:  [[tests/v3/Input/t22.in]]
+
+
 
 
 
@@ -117,14 +130,15 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 
 
 *Mnemonics:* Number of AToms ReaD  
+*Mentioned in topic(s):* AtomManipulator_basic, SmartSymm_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
 
 
 
-Gives the number of atoms to be read from the input file, in the case the
-geometry builder or the symmetriser is used. In this case, [[natrd]] is also
+Gives the number of atoms to be read from the input file, in the case the atom
+manipulator or the smart symmetriser is used. In this case, [[natrd]] is also
 used to dimension the array [[typat]], and the arrays [[xred]], [[xangst]] and
 [[xcart]].  
 Must take into account the vacancies (see [[vacnum]] and [[vaclst]]).  
@@ -137,28 +151,34 @@ Despite possible vacancies, cannot be bigger than [[natom]].
 
 
 *Mnemonics:* Number of OBJects  
+*Mentioned in topic(s):* AtomManipulator_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-*Comment:* (no use of the geometry builder)  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
 
-Gives the number of 'objects' to be used by the geometry builder in order to
+
+
+Gives the number of 'objects' to be used by the atom manipulator in order to
 find the full set of atoms. At present, only one or two objects can be
 defined, identified as objects 'a' and 'b'.  
 Related variables for object 'a' are : [[objan]], [[objaat]], [[objarf]],
 [[objatr]], [[objaro]], [[objaax]]. Related variables for object 'b' are :
 [[objbn]] , [[objbat]] , [[objbrf]] , [[objbtr]] , [[objbro]] , [[objbax]] .  
-More detailed explanation : when the geometry builder is used (i.e. when
+
+More detailed explanation : when the atom manipulator is used (i.e. when
 [[nobj]]==1 or [[nobj]]==2), the code will be given a primitive set of atoms,
 from which it will have to deduce the full set of atoms.  
 An object will be specified by the number of atoms it includes ([[objan]] or
 [[objbn]] ), and the list of these atoms ([[objaat]] or [[objbat]] ).  
 Examples of physical realisation of an object can be a molecule, or a group of
-atom to be repeated, or a part of a molecule to be rotated. The geometry
-builder can indeed repeat these objects ([[objarf]] or [[objbrf]] ), rotate
-them ([[objaro]] or [[objbro]] ) with respect to an axis ([[objaax]] or
+atom to be repeated, or a part of a molecule to be rotated. The atom
+amnipulator can indeed repeat these objects ([[objarf]] or [[objbrf]] ),
+rotate them ([[objaro]] or [[objbro]] ) with respect to an axis ([[objaax]] or
 [[objbax]] ), and translate them ([[objatr]] or [[objbtr]] ). After having
 generated a geometry thanks to rotation, translation and repetition of
 objects, it is possible to remove some atoms, in order to create vacancies
@@ -178,8 +198,15 @@ for example.
 
 
 *Mnemonics:* Number of Z reduced coordinates that define the spatial CHEMical POTential  
+*Mentioned in topic(s):* Artificial_expert  
 *Variable type:* integer  
+*Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+- v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+
+
 
 
 
@@ -194,11 +221,17 @@ is the second dimension.
 
 
 *Mnemonics:* OBJect A : list of AToms  
+*Mentioned in topic(s):* AtomManipulator_basic  
 *Variable type:* integer  
 *Dimensions:* ([[objan]])  
 *Default value:* None  
 *Only relevant if:* '[[nobj]]==1'
   
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -217,10 +250,17 @@ Look at [[objarf]] for further explanations.
 
 
 *Mnemonics:* OBJect A : AXis  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (6)  
 *Default value:* None  
 *Comment:* [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -242,11 +282,17 @@ toward point 2 (coordinates 4:6).
 
 
 *Mnemonics:* OBJect A : Number of atoms  
+*Mentioned in topic(s):* AtomManipulator_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:*  [[objan]] MUST be provided if [[nobj]]==1.
  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -260,8 +306,15 @@ variables [[objaat]].
 
 
 *Mnemonics:* OBJect A : Repetition Factors  
+*Mentioned in topic(s):* AtomManipulator_basic  
 *Variable type:* integer  
+*Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -274,7 +327,7 @@ where 'nrep' is the 1D repetition factor.
 The initial rotation and translation of the object, as well as the increment
 of rotation or translation from one object to the next are specified by the
 variables [[objaro]] and [[objatr]], for object a,  
-Note that the geometry builder will generate the full set of atoms from the
+Note that the atom manipulator will generate the full set of atoms from the
 primitive set of atoms using the following order : it will process each atom
 in the primitive list one by one, determine whether it belongs to either
 object a or object b, and then repeat it taking into account the proper
@@ -283,7 +336,7 @@ first, then the second, then the third.
 In the final list of atoms, one will first find the atoms generated from atom
 1 in the primitive list, then those generated from atom 2 in the primitive
 list, and so on.  
-If the geometry builder is only used to rotate or translate an object, without
+If the atom manipulator is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
 
@@ -293,9 +346,16 @@ repeating it, simply use 1 1 1, which is also the Default value.
 
 
 *Mnemonics:* OBJect A : ROtations  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (4)  
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -318,9 +378,16 @@ with different rotation angles.
 
 
 *Mnemonics:* OBJect A : TRanslations  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (12)  
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -347,9 +414,16 @@ Not present in the dtset array (no internal).
 
 
 *Mnemonics:* OBJect B : list of AToms  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* integer  
+*Dimensions:* ([[objbn]])  
 *Default value:* None  
 *Only relevant if:* [[nobj]]==2  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -368,10 +442,17 @@ Look at [[objbrf]] for further explanations.
 
 
 *Mnemonics:* OBJect B : AXis  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (6)  
 *Default value:* None  
 *Comment:* [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
+Test list:
+
+- v1:  [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -393,10 +474,16 @@ toward point 2 (coordinates 4:6).
 
 
 *Mnemonics:* OBJect B : Number of atoms  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:*  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -410,8 +497,15 @@ the variables [[objbat]].
 
 
 *Mnemonics:* OBJect B : Repetition Factors  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* integer  
+*Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -423,7 +517,7 @@ nrep 1 1 &lt;r&gt; where nrep is the 1D repetition factor.
 The initial rotation and translation of the object, as well as the increment
 of rotation or translation from one object to the next are specified by the
 variables [[objbro]] and [[objbtr]], for object b.  
-Note that the geometry builder will generate the full set of atoms from the
+Note that the atom manipulator will generate the full set of atoms from the
 primitive set of atoms using the following order : it will process each atom
 in the primitive list one by one, determine whether it belongs to either
 object a or object b, and then repeat it taking into account the proper
@@ -432,7 +526,7 @@ first, then the second, then the third.
 In the final list of atoms, one will first find the atoms generated from atom
 1 in the primitive list, then those generated from atom 2 in the primitive
 list, and so on.  
-If the geometry builder is only used to rotate or translate an object, without
+If the atom manipulator is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
 
@@ -442,9 +536,16 @@ repeating it, simply use 1 1 1, which is also the Default value.
 
 
 *Mnemonics:* OBJect B : ROtations  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (4)  
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
+Test list:
+
+- v1:  [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -467,9 +568,16 @@ with different rotation angles.
 
 
 *Mnemonics:* OBJect B : TRanslations  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* real  
+*Dimensions:* (12)  
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
+Test list:
+
+- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
+
 
 
 
@@ -495,9 +603,14 @@ which case, only rotations are needed.
 
 
 *Mnemonics:* PoinT GROUP number for the MAgnetic space group  
+*Mentioned in topic(s):* spinpolarisation_internal, SmartSymm_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -523,9 +636,17 @@ Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 
 
 *Mnemonics:* SPace Group : AXes ORientation  
+*Mentioned in topic(s):* SmartSymm_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t96.in]]
+- v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t38.in]]
+- v4:  [[tests/v4/Input/t28.in]]
+
+
 
 
 
@@ -573,10 +694,16 @@ How to determine which spgaxor you need:
 
 
 *Mnemonics:* SPace Group : ORIGin  
+*Mentioned in topic(s):* SmartSymm_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[spgroup]]!=0  
+Test list:
+
+- v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t95.in]]
+
+
 
 
 
@@ -595,6 +722,7 @@ For details see the space group [ help file
 
 
 *Mnemonics:* SPace GROUP number  
+*Mentioned in topic(s):* crystal_useful, UnitCell_useful, SmartSymm_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -624,6 +752,7 @@ For details see the space group [ help file
 
 
 *Mnemonics:* SPace GROUP number defining a MAgnetic space group  
+*Mentioned in topic(s):* spinpolarisation_useful, SmartSymm_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -657,9 +786,16 @@ of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 
 
 *Mnemonics:* TOLERANCE for SYMmetries  
+*Mentioned in topic(s):* crystal_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-08  
+Test list:
+
+- v5:  [[tests/v5/Input/t78.in]]
+- v7:  [[tests/v7/Input/t13.in]]
+
+
 
 
 
@@ -681,9 +817,15 @@ operations that will have been found.
 
 
 *Mnemonics:* VACancies LiST  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* integer  
 *Dimensions:* ([[vacnum]])  
 *Default value:* None  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]]
+
+
 
 
 
@@ -699,9 +841,15 @@ Useful to created vacancies.
 
 
 *Mnemonics:* VACancies NUMber  
+*Mentioned in topic(s):* AtomManipulator_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t40.in]]
+
+
 
 
 
@@ -716,9 +864,15 @@ atoms is contained in [[vaclst]].
 
 
 *Mnemonics:* XYZ FILE input for geometry  
+*Mentioned in topic(s):* crystal_useful  
 *Variable type:* string  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+- v6:  [[tests/v6/Input/t10.in]]
+
+
 
 
 

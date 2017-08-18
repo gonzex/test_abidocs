@@ -2,10 +2,16 @@
 
 
 *Mnemonics:* BoX CuT-off MINimum for the Double Grid (PAW)  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v4:  [[tests/v4/Input/t17.in]]
+
+
 
 
 
@@ -30,6 +36,7 @@ required level of accuracy.
 
 
 *Mnemonics:* initial Density MATrix for PAW+U  
+*Mentioned in topic(s):* DFT+U_useful, ElecDOS_useful  
 *Variable type:* real  
 *Dimensions:* (2*max([[lpawu]])+1,2*max([[lpawu]])+1,max([[nsppol]], [[nspinor]]),[[natpawu]])  
 *Default value:* *-10.0  
@@ -46,13 +53,9 @@ atom types (or -1).
 The occupation matrix is in the basis of real spherical harmonics Slm (note
 that this differs from the choice made when [[prtdosm]]=1 , that is in the
 basis of complex spherical harmonics). Their are ordered by increasing m, and
-are defined e.g. in the article "Evaluation of the rotation matrices in the
-basis of real spherical harmonics", by Miguel A. Blancoa, M. Floreza, M.
-Bermejo, Journal of Molecular Structure (Theochem) 419, 19 (1997), that can be
-downloaded from [ the author Web site
-](http://azufre.quimica.uniovi.es/articles/Theochem419-19-ov-BF97-rotation-
-matrices.pdf) . For the case l=2 (d states), the five columns corresponds
-respectively to (the normalisation factor has been dropped)  
+are defined e.g. in [[Blancoa1997]]  . For the case l=2 (d states), the five
+columns corresponds respectively to (the normalisation factor has been
+dropped)  
 
   * m=-2, xy 
   * m=-1, yz 
@@ -110,6 +113,7 @@ one is ignored by the code.
 
 
 *Mnemonics:* Density MATrix for PAW+U OPTion  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -139,10 +143,16 @@ correlated subspace is a normalized atomic eigenfunction.
 
 
 *Mnemonics:* Density MATrix for paw+U, DIAGonalization  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[nspden]] != 4  
+Test list:
+
+- v5:  [[tests/v5/Input/t19.in]]
+
+
 
 
 
@@ -161,10 +171,18 @@ Relevant values are:
 
 
 *Mnemonics:* F4 Over F2 ratio of Slater integrals  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* ['0.625 for d electron', '0.6681 for f electron']  
 *Only relevant if:* [[usepaw]]==1 and ([[usepawu]]==1 or [[usedmft]]==1)  
+Test list:
+
+- paral:  [[tests/paral/Input/t99.in]]
+- v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+- v8:  [[tests/v8/Input/t01.in]]
+
+
 
 
 
@@ -179,10 +197,16 @@ interaction.
 
 
 *Mnemonics:* F6 Over F2 ratio of Slater integrals  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.4943  
 *Only relevant if:* ([[usepawu]]==1 or [[usedmft]]==1) and [[lpawu]]=3  
+Test list:
+
+- v7:  [[tests/v7/Input/t21.in]]
+
+
 
 
 
@@ -197,9 +221,15 @@ dependent screened coulomb interaction.
 
 
 *Mnemonics:* Integer governing the internal use of BOXCUT - not a very good choice of variable name  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v4:  [[tests/v4/Input/t17.in]]
+
+
 
 
 
@@ -216,6 +246,7 @@ conserving.
 
 
 *Mnemonics:* value of J for PAW+U  
+*Mentioned in topic(s):* DFT+U_compulsory  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -234,10 +265,16 @@ In the case where [[lpawu]] =-1, the value is not used.
 
 
 *Mnemonics:* value of angular momentum L for EXact EXCHange  
+*Mentioned in topic(s):* xc_useful  
 *Variable type:* integer  
 *Dimensions:* ([[ntypat]])  
 *Default value:* -1  
 *Only relevant if:* [[useexexch]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t18.in]]
+
+
 
 
 
@@ -251,6 +288,7 @@ are allowed) on which to apply the exact exchange correction.
 
 
 *Mnemonics:* value of angular momentum L for PAW+U  
+*Mentioned in topic(s):* DFT+U_compulsory  
 *Variable type:* integer  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *-1  
@@ -271,9 +309,16 @@ are allowed)  on which to apply the LDA+U correction.
 
 
 *Mnemonics:* Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3001  
+Test list:
+
+- v4:  [[tests/v4/Input/t17.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -288,6 +333,7 @@ the latter ... See also [[mqgrid]]
 
 
 *Mnemonics:* Number of Grid points for Fast Fourier Transform : Double Grid  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -306,12 +352,19 @@ used for PAW calculations.
 
 
 *Mnemonics:* PAW - use ComPleX rhoij OCCupancies  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2 if [[optdriver]]==0 and [[ionmov]]<6 and [[pawspnorb]]==1 and [[iscf]]>=10 and ([[kptopt]] !=1 or [[kptopt]]!=2) and [[usepaw]]==1,
 1 otherwise.
   
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t17.in]]
+- v7:  [[tests/v7/Input/t32.in]]
+
+
 
 
 
@@ -341,10 +394,15 @@ In order to save CPU time, when molecular dynamics is selected
 
 
 *Mnemonics:* PAW - add CROSS term in oscillator strengths  
+*Mentioned in topic(s):* DFPT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[usepaw]]==1  
+Test list:
+
+
+
 
 
 
@@ -360,6 +418,7 @@ longer assumed.
 
 
 *Mnemonics:* PAW - Energy CUToff for the Double Grid  
+*Mentioned in topic(s):* Planewaves_compulsory, PAW_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -1  
@@ -394,10 +453,17 @@ in the log file.
 
 
 *Mnemonics:* PAW: print band structure in the FAT-BaND representation  
+*Mentioned in topic(s):* PAW_useful, ElecBandStructure_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1   
+Test list:
+
+- v5:  [[tests/v5/Input/t20.in]]
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -423,10 +489,16 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
 
 
 *Mnemonics:* PAW - L angular momentum used to CUT the development in moments of the Densitites  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -448,10 +520,16 @@ charge inside spheres", a quantity written in the log file.
 
 
 *Mnemonics:* PAW - maximum L used in the spherical part MIXing  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -471,6 +549,7 @@ numerical accuracy of the results.
 
 
 *Mnemonics:* PAW - MIXing is done (or not) on the (fine) Double Grid  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[npfft]]==1,
@@ -508,10 +587,16 @@ In ** wavelet ** calculations [[usewvl]]=1:
 
 
 *Mnemonics:* PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -532,10 +617,16 @@ validity of this approximation before use.
 
 
 *Mnemonics:* PAW - Number of PHI angles used to discretize the sphere around each atom.  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 13  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -550,10 +641,16 @@ spheres. This discretization is completely defined by [[pawnphi]] and
 
 
 *Mnemonics:* PAW - Number of THETA angles used to discretize the sphere around each atom.  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 12  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -568,10 +665,16 @@ spheres. This discretization is completely defined by [[pawntheta]] and
 
 
 *Mnemonics:* PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -591,10 +694,18 @@ thus the first iteration is more cpu intensive)
 
 
 *Mnemonics:* PAW - OPTion for the MIXing of the spherical part  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
+- etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
+- v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]]
+
+
 
 
 
@@ -623,17 +734,24 @@ parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 
 
 *Mnemonics:* PAW - OPTion for the computation of the OSCillator matrix elements  
+*Mentioned in topic(s):* Susceptibility_expert, BSE_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t29.in]]
+- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
 
 
 
-Only relevant for [[GW]] or [[BETHE_SALPETER]] calculations with PAW.  
+
+
+Only relevant for GW or Bethe-Salpeter calculations with PAW.  
 This variable defines the approach used for the evaluation of the oscillator
 matrix elements within the PAW formalism. Possible values are 0,1,2.  
 If [[pawoptosc]]=0 the code uses its internal default value (2 for SCREENING
-calculations, 1 for SIGMA calculations, 2 for [[BETHE_SALPETER]])  
+calculations, 1 for SIGMA calculations, 2 for Bethe-Salpeter  
 If [[pawoptosc]]=1 the matrix elements are computed with the expression given
 by Arnaud and Alouani in PRB 62. 4464 The equation is exact provided that the
 set of PAW partial waves is complete.  
@@ -647,10 +765,19 @@ expression proposed by Shishkin and Kresse in PRB 74. 035101
 
 
 *Mnemonics:* PAW - spheres OVerLaP allowed (in percentage)  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+- v6:  [[tests/v6/Input/t89.in]]
+- v7:  [[tests/v7/Input/t08.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+- v8:  [[tests/v8/Input/t05.in]], [[tests/v8/Input/t31.in]]
+
+
 
 
 
@@ -677,10 +804,15 @@ than [[pawovlp]] %
 
 
 *Mnemonics:* PAW: PRinT total physical electron DENsity  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+
+
 
 
 
@@ -693,10 +825,18 @@ than [[pawovlp]] %
 
 
 *Mnemonics:* PAW: PRinT partial DOS contributions  
+*Mentioned in topic(s):* PAW_useful, ElecDOS_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[prtdos]]==3  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tpaw1_4.in]]
+- v5:  [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]]
+- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -729,6 +869,7 @@ radius.
 
 
 *Mnemonics:* PAW: PRinT VOLume  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -758,10 +899,16 @@ atoms are printed.
 
 
 *Mnemonics:* PAW: PRinT WaveFunctions  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- etsf_io:  [[tests/etsf_io/Input/t09.in]]
+
+
 
 
 
@@ -788,12 +935,24 @@ be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
 
 
 *Mnemonics:* PAW - option for SPiN-ORBit coupling  
+*Mentioned in topic(s):* PAW_useful, spinpolarisation_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[nspinor]]==2,
 0 otherwise.
   
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- gpu:  [[tests/gpu/Input/t03.in]]
+- mpiio:  [[tests/mpiio/Input/t28.in]]
+- paral:  [[tests/paral/Input/t28.in]]
+- tutorial:  [[tests/tutorial/Input/tspin_6.in]]
+- v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]]
+- v6:  [[tests/v6/Input/t49.in]]
+- v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t82.in]]
+
+
 
 
 
@@ -828,10 +987,16 @@ An artificial scaling of the spin-orbit can be introduced thanks to the
 
 
 *Mnemonics:* PAW - option for the STorage of G_l(r).YLM(r)  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]=1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -861,10 +1026,15 @@ Y_lm(r) are real spherical harmonics
 
 
 *Mnemonics:* PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[optdriver]]==0   
+Test list:
+
+
+
 
 
 
@@ -892,10 +1062,16 @@ computed.
 
 
 *Mnemonics:* PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
@@ -919,10 +1095,16 @@ For the time being, only activated for RF calculations.
 
 
 *Mnemonics:* PAW - choice for eXchange-Correlation DEVelopment (spherical part)  
+*Mentioned in topic(s):* PAW_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v7:  [[tests/v7/Input/t22.in]]
+
+
 
 
 
@@ -940,10 +1122,19 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 
 
 *Mnemonics:* PRint Electric Field Gradient  
+*Mentioned in topic(s):* printing_prngs, EFG_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1, [[quadmom]]  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t10.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
+- v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+
+
 
 
 
@@ -958,10 +1149,18 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* PRinT Fermi Contact term  
+*Mentioned in topic(s):* printing_prden, EFG_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t10.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v5:  [[tests/v5/Input/t34.in]], [[tests/v5/Input/t36.in]]
+
+
 
 
 
@@ -974,10 +1173,17 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* PRint NABLA  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v5:  [[tests/v5/Input/t09.in]]
+
+
 
 
 
@@ -990,10 +1196,16 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* PoinT CHARGEs  
+*Mentioned in topic(s):* EFG_basic  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=3   
+Test list:
+
+- v5:  [[tests/v5/Input/t35.in]]
+
+
 
 
 
@@ -1008,10 +1220,18 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* QUADrupole MOMents  
+*Mentioned in topic(s):* EFG_basic  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=1   
+Test list:
+
+- libxc:  [[tests/libxc/Input/t10.in]]
+- v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
+- v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+
+
 
 
 
@@ -1024,10 +1244,16 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* SPin-ORBit SCaLing  
+*Mentioned in topic(s):* PAW_useful, spinpolarisation_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
 *Only relevant if:* [[usepaw]]==1 and [[pawspnorb]]>= 1   
+Test list:
+
+- v5:  [[tests/v5/Input/t17.in]]
+
+
 
 
 
@@ -1043,6 +1269,7 @@ physical situation.
 
 
 *Mnemonics:* value of U for PAW+U  
+*Mentioned in topic(s):* DFT+U_compulsory  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -1053,33 +1280,33 @@ physical situation.
 Gives the value of the screened coulomb interaction between correlated
 electrons corresponding to [[lpawu]] for each species.  
 In the case where [[lpawu]] =-1, the value is not used.  
-In the case of a [[GW]] calculation, the U interaction defined by [[upawu]]
-will be REMOVED from the self energy. In particular, for G0 W0 calculations
+In the case of a GW calculation, the U interaction defined by [[upawu]] will
+be REMOVED from the self energy. In particular, for G0 W0 calculations
 (perturbative calculations), the energy eigenvalues obtained after an
 underlying DFT+U calculation will be  
-E_[[GW]] = E_DFT+U + &lt; phi | Self-energy - U | phi&gt;  
-Actually, in order to perform a [[GW]] @ DFT+U calculation, one should define
-the same value of U in the self-energy calculation, than the one defined in
-the DFT calculation. The easiest is actually to define the value of U for the
+E_GW = E_DFT+U + &lt; phi | Self-energy - U | phi&gt;  
+Actually, in order to perform a GW @ DFT+U calculation, one should define the
+same value of U in the self-energy calculation, than the one defined in the
+DFT calculation. The easiest is actually to define the value of U for the
 whole set of calculations (for the different datasets), including the
 screening, even if the U value does not play explicitly a role in the
 computation of the latter (well, the input wavefunctions will be different
 anyhow).  
-It is possible to perform calculations of the type [[GW]]+U_prime @ DFT+U , so
-keeping a U interaction (usually smaller than the initial U) in the [[GW]]
+It is possible to perform calculations of the type GW+U_prime @ DFT+U , so
+keeping a U interaction (usually smaller than the initial U) in the GW
 calculation, by defining a smaller U than the one used in the DFT calculation.
-This value will be subtracted in the [[GW]] correction calculation, as
-outlined above.  
+This value will be subtracted in the GW correction calculation, as outlined
+above.  
 Explicitly, in order to do a calculation of a material with a DFT U value of
-7.5 eV, followed by a [[GW]] calculation where there is a residual U value of
-2 eV, one has to define :
+7.5 eV, followed by a GW calculation where there is a residual U value of 2
+eV, one has to define :
 
     
     
-      uldau1   7.5 eV   ! This is for the DFT calculation
+      upawu1   7.5 eV   ! This is for the DFT calculation
     ...
     optdriver4  4
-    uldau4   5.5 eV   ! This is for the screening calculation
+    upawu4   5.5 eV   ! This is for the screening calculation
      
 
 
@@ -1089,6 +1316,7 @@ Explicitly, in order to do a calculation of a material with a DFT U value of
 
 
 *Mnemonics:* USE of an initial Density MATrix in Paw+U  
+*Mentioned in topic(s):* DFT+U_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1120,10 +1348,16 @@ step
 
 
 *Mnemonics:* USE of EXact EXCHange  
+*Mentioned in topic(s):* xc_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+Test list:
+
+- v5:  [[tests/v5/Input/t18.in]]
+
+
 
 
 
@@ -1138,6 +1372,7 @@ the ratio of exact exchange, see also [[exchmix]].
 
 
 *Mnemonics:* USE PAW+U (spherical part)  
+*Mentioned in topic(s):* DFT+U_compulsory, GW_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1145,7 +1380,7 @@ the ratio of exact exchange, see also [[exchmix]].
 
 
 
-Must be non-zero if a DFT+U calculation is done, or if a [[GW]] calculation
+Must be non-zero if a DFT+U calculation is done, or if a GW calculation
 following a DFT+U calculation is done (important !).
 
   * If set to 0, the LDA+U method is not used.   
@@ -1163,21 +1398,21 @@ The initial density matrix can be given in the input file (see [[usedmatpu]]).
 The expression of the density matrix is chosen thanks to [[dmatpuopt]]. See
 also [ How_to_use_LDA_plus_U.txt ](../../users/How_to_use_LDA_plus_U.txt) .
 for some informations.  
-In the case of a [[GW]] calculation on top of a DFT+U, the absence of
-definition of a U value in the self-energy will LEAVE the underlying U from
-the DFT calculation. Thus, the code will actually do a [[GW]]+U @ DFT+U
-calculation. Note that the screening calculation will not be affected by the
-presence/absence of a U value.  
-Actually, in order to perform a [[GW]] @ DFT+U calculation, one should define
-the same value of U in the self-energy calculation, than the one defined in
-the DFT calculation. The code will know that the interaction corresponding to
-that value has to be SUBTRACTED inside the self-energy. The easiest is
-actually to define the presence of U for the whole set of calculations (for
-the different datasets), including the screening, even if the U value does not
-play explicitly a role in the computation of the latter (well, the input
+In the case of a GW calculation on top of a DFT+U, the absence of definition
+of a U value in the self-energy will LEAVE the underlying U from the DFT
+calculation. Thus, the code will actually do a GW+U @ DFT+U calculation. Note
+that the screening calculation will not be affected by the presence/absence of
+a U value.  
+Actually, in order to perform a GW @ DFT+U calculation, one should define the
+same value of U in the self-energy calculation, than the one defined in the
+DFT calculation. The code will know that the interaction corresponding to that
+value has to be SUBTRACTED inside the self-energy. The easiest is actually to
+define the presence of U for the whole set of calculations (for the different
+datasets), including the screening, even if the U value does not play
+explicitly a role in the computation of the latter (well, the input
 wavefunctions will be different anyhow).  
-It is possible to perform calculations of the type [[GW]]+U_prime @ DFT+U , so
-keeping a smaller U interaction in the [[GW]] calculation, by subtracting a
+It is possible to perform calculations of the type GW+U_prime @ DFT+U , so
+keeping a smaller U interaction in the GW calculation, by subtracting a
 smaller U than the one used in the DFT calculation. See the description of the
 [[upawu]] input variable.  
 References:  
@@ -1197,9 +1432,15 @@ Suggested acknowledgment:
 
 
 *Mnemonics:* USE POTential ZERO  
+*Mentioned in topic(s):* Coulomb_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t26.in]]
+
+
 
 
 
@@ -1214,6 +1455,7 @@ Suggested acknowledgment:
 
 
 *Mnemonics:* USE eXchange-Correlation with NHAT (compensation charge density)  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* -1  

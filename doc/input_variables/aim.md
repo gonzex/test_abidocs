@@ -1,0 +1,989 @@
+## **atom** 
+
+
+*Mnemonics:* index of ATOM  
+*Mentioned in topic(s):* Bader_basic  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Index of the investigated atom.
+
+
+* * *
+
+## **atrad** 
+
+
+*Mnemonics:* bader ATomic RADius  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+A first estimation of the Bader radius (not too important - it is used only
+two times)
+
+
+* * *
+
+## **coff1** 
+
+
+*Mnemonics:* COeFFicient 1  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.98  
+Test list:
+
+
+
+
+
+
+See the input variable [[ratmin@aim]].
+
+
+* * *
+
+## **coff2** 
+
+
+*Mnemonics:* COeFFicient 2  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.95  
+Test list:
+
+
+
+
+
+
+See the input variable [[ratmin@aim]].
+
+
+* * *
+
+## **crit** 
+
+
+*Mnemonics:* computation of CRITical points  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Drives the computation of critical points.
+
+  * [0] not 
+  * [-1] reading from the file ``root''.crit 
+  * [1] calculated (simplified version) 
+  * [2] calculated (standard version - recommended) 
+  * [3] calculated (the original version) 
+
+The original version searches all critical points (CPs) starting from the
+center between two and three atoms (atom - neighbor(s)) by Newton-Raphson
+algorithm - without tests (not recommended) - don't use together with surface
+analysis !
+
+The simplified and standard versions search CP(3,-1) starting from the center
+of the pairs~atom-neighbor; then CP(3,1) from the center between two CP(3,-1)
+and finally CP(3,3) from the center between two CP(3,1). The robust
+Popeliers's algorithm is used. The difference between the two is based in the
+fact that the standard version makes the test if the CP is really on the Bader
+surface of the calculated atom for each CP, while the simplified version does
+this only for CP(3,-1). When CP analysis is rather fast (with respect to
+surface determination), 2 is recommended. In all cases the number of neighbors
+considered is limited by distance cutoff (variable [[maxatd@aim]])
+
+
+* * *
+
+## **denout** 
+
+
+*Mnemonics:* electronic DENsity OUTput  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+
+
+
+
+
+Output of the electronic density. The specification of the line (plane) in the
+real space must be given in the input variable [[vpts@aim]] and grid in
+[[ngrid@aim]]. It is also possible to get only the valence density or the core
+density (see [[dltyp@aim]]).
+
+  * 0, no output 
+  * 1, 1D distribution 
+  * 2, 2D distribution 
+
+
+* * *
+
+## **dltyp** 
+
+
+*Mnemonics:* Density or Laplacian TYP output  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+
+
+
+
+
+Specification of the contribution of the electronic density corresponding to
+the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
+
+  * 0, total electronic density 
+  * 1, only the valence density 
+  * 2, only the core density 
+
+
+* * *
+
+## **dpclim** 
+
+
+*Mnemonics:* DPCLIM  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.d-2  
+Test list:
+
+- v4:  [[tests/v4/Input/t33.in]]
+
+
+
+
+
+If two "numerically different" critical points are separated by less than
+**dpclim**, they are considered to be the same critical point. This often
+happens because of numerical inaccuracies : one CP might be "seen" by two
+different finite elements. The default should be OK when the ecut is quite
+large, on the order of 60 Hartree. For less accurate calculations of the
+density, increase the default value to 5.d-2, let's say.
+
+
+* * *
+
+## **foldep** 
+
+
+*Mnemonics:* FOLlow DEParture  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+Test list:
+
+
+
+
+
+
+Needed in the case [[aim:follow]]=1 only. Defines the starting point.
+
+
+* * *
+
+## **follow** 
+
+
+*Mnemonics:* FOLLOW the gradient path  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Follow the gradient path to the corresponding atom starting from the position
+specified in the input variable [[aim:foldep]].
+
+
+* * *
+
+## **folstp** 
+
+
+*Mnemonics:* FOLlow STeP  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.5  
+Test list:
+
+
+
+
+
+
+The first step for following the gradient path.
+
+
+* * *
+
+## **gpsurf** 
+
+
+*Mnemonics:* GraPhic output for the bader SURFace  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Drives the graphic output (gnuplot script) of the irreducible part of the
+calculated Bader surface.
+
+  * 0, not output 
+  * 1, output 
+
+
+* * *
+
+## **inpt** 
+
+
+*Mnemonics:* numer of INtegration PoinTs  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 100  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Number of radial points used for integration of the Bader charge (not too
+sensitive).
+
+
+* * *
+
+## **irho** 
+
+
+*Mnemonics:* Integration of the charge density RHO  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Drives the integration of the charge of the Bader atom.
+
+  * 0, not calculated 
+  * 1, calculated (usual mode) 
+
+
+* * *
+
+## **ivol** 
+
+
+*Mnemonics:* Integration of the VOLume  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Drives the integration of the volume of the Bader atom.
+
+  * 0, not calculated 
+  * 1, calculated 
+
+
+* * *
+
+## **lapout** 
+
+
+*Mnemonics:* electronic density LAPlacian OUTput  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+
+
+
+
+
+Output of the laplacian of electronic density. The specification of the line
+(plane) in the real space must be given in the input variable [[aim:vpts]] and
+grid in [[aim:ngrid]]. It is also possible to get only the valence density or
+the core density (see [[aim:dltyp]]).
+
+  * 0, no output 
+  * 1, 1D distribution 
+  * 2, 2D distribution 
+
+
+* * *
+
+## **lgrad** 
+
+
+*Mnemonics:* Low GRADient criterion  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.d-12  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+The search for one particular CP is decided to be successful when either the
+norm of the gradient of the electron density is smaller than **lgrad** or when
+the length of the planned search step is smaller than [[aim:lstep]]. If the
+number of search step becomes larger than an internal limit (presently set to
+100), one will allow a weaker criteria for satisfaction, based on
+[[aim:lgrad2]] and [[aim:lstep2]]. If the internal limit is reached, and the
+criteria on [[aim:lgrad2]] and [[aim:lstep2]] are not satisfied, then the
+searching procedure continues with the next seed.
+
+
+* * *
+
+## **lgrad2** 
+
+
+*Mnemonics:* Low GRADient criterion 2  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.d-5  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+Determines the criterion for deciding that a CP has been found. See
+[[aim:lgrad]] for more details.
+
+
+* * *
+
+## **lstep** 
+
+
+*Mnemonics:* Length of the planned search STEP  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.d-10  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+Determines the criterion for deciding a CP has been found. See [[aim:lgrad]]
+for more details.
+
+
+* * *
+
+## **lstep2** 
+
+
+*Mnemonics:* Length of the planned search STEP 2  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.d-5  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+Determines the criterion for deciding that a CP has been found. See
+[[aim:lgrad]] for more details.
+
+
+* * *
+
+## **maxatd** 
+
+
+*Mnemonics:* MAXimal ATomic Distance  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 10.0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Atoms within this maximal distance are considered in order to start the search
+of a CP.
+
+Note that the supercell, determined by [[aim:nsa]], [[aim:nsb]], and
+[[aim:nsc]] might be too small to actually lead to the consideration of all
+the desired atoms.
+
+
+* * *
+
+## **maxcpd** 
+
+
+*Mnemonics:* MAXimal CP Distance  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5.0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+The CPs are searched for within this maximal distance.
+
+Note that the supercell, determined by [[aim:nsa]], [[aim:nsb]], and
+[[aim:nsc]] might be too small to actually lead to the consideration of all
+the critical points.
+
+
+* * *
+
+## **ngrid** 
+
+
+*Mnemonics:* Number of GRID points  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* 2*30  
+Test list:
+
+
+
+
+
+
+Defines the grid in real space, for the density and laplacian outputs,
+governed by [[aim:denout]] and [[aim:lapout]].
+
+
+* * *
+
+## **nphi** 
+
+
+*Mnemonics:* Number of PHI angle  
+*Mentioned in topic(s):* Bader_basic  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 48  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+With [[aim:ntheta]], this variable defines the angular grid for the
+integration within the Bader volume, in particular, the number of phi angles,
+to be used between [[aim:phimin]] and [[aim:phimax]]. When the difference
+between these two variables is 2 pi, the recommended value of **nphi** is 48.
+When it is pi (for symmetry reasons), the recommended value is 32. When it is
+pi/2 (for symmetry reasons), the recommended value is 20.
+
+
+* * *
+
+## **nsa** 
+
+
+*Mnemonics:* Number of Supercell points in direction A  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+These variables define a "supercell", from the primitive cell repeated along
+each primitive direction. This supercell is build as follows :
+
+    
+    
+      do isa=-nsa,nsa
+       do isb=-nsb,nsb
+        do isc=-nsc,nsc
+          -> here, the cell is translated by the vector
+          -> (isa,isb,isc) in crystallographic coordinates
+          -> and accumulated, to give the supercell
+        enddo
+       enddo
+      enddo
+      
+
+
+* * *
+
+## **nsb** 
+
+
+*Mnemonics:* Number of Supercell points in direction B  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+These variables define a "supercell", from the primitive cell repeated along
+each primitive direction. This supercell is build as follows :
+
+    
+    
+      do isa=-nsa,nsa
+       do isb=-nsb,nsb
+        do isc=-nsc,nsc
+          -> here, the cell is translated by the vector
+          -> (isa,isb,isc) in crystallographic coordinates
+          -> and accumulated, to give the supercell
+        enddo
+       enddo
+      enddo
+      
+
+
+* * *
+
+## **nsc** 
+
+
+*Mnemonics:* Number of Supercell points in direction C  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+These variables define a "supercell", from the primitive cell repeated along
+each primitive direction. This supercell is build as follows :
+
+    
+    
+      do isa=-nsa,nsa
+       do isb=-nsb,nsb
+        do isc=-nsc,nsc
+          -> here, the cell is translated by the vector
+          -> (isa,isb,isc) in crystallographic coordinates
+          -> and accumulated, to give the supercell
+        enddo
+       enddo
+      enddo
+      
+
+
+* * *
+
+## **ntheta** 
+
+
+*Mnemonics:* Number of THETA angles  
+*Mentioned in topic(s):* Bader_basic  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 32  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+With [[aim:nphi]], this variable defines the angular grid for the integration
+within the Bader volume, in particular, the number of theta angles, to be used
+between [[aim:thetamin]] and [[aim:thetamax]]. When the difference between
+these two variables is pi, the recommended value of **ntheta** is 32. When it
+is pi/2 (for symmetry reasons), the recommended value is 20.
+
+
+* * *
+
+## **phimax** 
+
+
+*Mnemonics:* PHI MAXimal angle  
+*Mentioned in topic(s):* Bader_basic  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 2.0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+Angular limits of integration of the Bader volume for the phi variables. The
+number of integration points is given by [[aim:nphi]]. The range of
+integration can be decreased if there are symmetry reasons for doing this.
+
+
+* * *
+
+## **phimin** 
+
+
+*Mnemonics:* PHI MINimal angle  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+Test list:
+
+
+
+
+
+
+Angular limits of integration of the Bader volume for the phi variables. The
+number of integration points is given by [[aim:nphi]]. The range of
+integration can be decreased if there are symmetry reasons for doing this.
+
+
+* * *
+
+## **radstp** 
+
+
+*Mnemonics:* RADial STeP  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.05  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+The length of the first step in the search of the exact Bader radius.
+
+
+* * *
+
+## **ratmin** 
+
+
+*Mnemonics:* Radius Atomic MINimal  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+The first estimation of the smallest radius of the basin of the atom (the
+distance at which the procedure that follows the gradient path announces that
+the gradient path finishes in the corresponding atom) This parameter is very
+important for the speed of the calculation, but this first estimation is not
+usually used because the program makes a new one based on the knowledge of
+CPs. In fact after the CP analysis, the new estimation is done by the product
+of the ad hoc parameter [[aim:coff1]] (default 0.98) by the distance of the
+nearest bonding CP. If there is a problem later, [[aim:coff2]] (default 0.95)
+is used instead.
+
+
+* * *
+
+## **rsurdir** 
+
+
+*Mnemonics:* Radius SURface DIRection  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* 2*0.0  
+Test list:
+
+
+
+
+
+
+In the case [[aim:rsurf]]=1, gives the direction (angular coordinates
+theta,phi) along which the radius of the Bader surface is to be determined.
+
+
+* * *
+
+## **rsurf** 
+
+
+*Mnemonics:* computation of the Radius bader SURFace  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+
+
+
+
+
+Drive the computation of the radius of the Bader surface for the angles
+specified in the input variable [[aim:rsurdir]]
+
+  * 0, not calculated 
+  * 1, calculated 
+
+
+* * *
+
+## **scal** 
+
+
+*Mnemonics:* SCALing of the cartesian coordinates  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 1.0 1.0 1.0  
+Test list:
+
+
+
+* * *
+
+## **surf** 
+
+
+*Mnemonics:* computation of the bader SURFace  
+*Mentioned in topic(s):* Bader_compulsory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+- v6:  [[tests/v6/Input/t19.in]]
+
+
+
+
+
+Drive the computation of the full Bader surface.
+
+  * 0, not calculated 
+  * 1, calculated 
+
+
+* * *
+
+## **thetamax** 
+
+
+*Mnemonics:* THETA MAXimal angle  
+*Mentioned in topic(s):* Bader_basic  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* pi  
+Test list:
+
+- v3:  [[tests/v3/Input/t57.in]]
+- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
+
+
+
+
+Angular limits of integration of the Bader volume for the theta variables. The
+number of integration points is given by [[aim:ntheta]]. The range of
+integration can be decreased if there are symmetry reasons for doing this.
+
+
+* * *
+
+## **thetamin** 
+
+
+*Mnemonics:* THETA MINimal angle  
+*Mentioned in topic(s):* Bader_expert  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+Test list:
+
+
+
+
+
+
+Angular limits of integration of the Bader volume for the theta variables. The
+number of integration points is given by [[aim:ntheta]]. The range of
+integration can be decreased if there are symmetry reasons for doing this.
+
+
+* * *
+
+## **vpts** 
+
+
+*Mnemonics:* Vectors defining the PoinTS of the surface  
+*Mentioned in topic(s):* Bader_useful  
+*Variable type:* real  
+*Dimensions:* (6)  
+*commentdims:* 6 for 1D, 9 for 2D  
+*Default value:* 6*0.0  
+Test list:
+
+
+
+
+
+
+Basic vectors of the line or rectangle in real space, defining the points for
+which the density or laplacian will be computed, thanks to [[aim:denout]] or
+[[aim:lapout]]
+
+
+* * *
+

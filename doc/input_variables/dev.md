@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* BUIT-IN TEST number  
+*Mentioned in topic(s):* Control_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -24,11 +25,17 @@ tests/built-in/README .
 
 
 *Mnemonics:* Conjugate Gradient TYPe used for Hartree Fock exact exchange  
+*Mentioned in topic(s):* Hybrids_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2 if [[usefock]] == 1,
 0 otherwise.
   
+Test list:
+
+- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]]
+
+
 
 
 
@@ -46,6 +53,7 @@ direction) in the conjugate gradient
 
 
 *Mnemonics:* DENSity and FORces PREDictor  
+*Mentioned in topic(s):* SCFAlgorithms_expert, MolecularDynamics_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 6 if [[paral_kgb]]==1,
@@ -115,6 +123,7 @@ of the SCF cycle; Typically, vres2 (or nres2) has to be small enough (10  -4
 
 
 *Mnemonics:* initial DENSity for each TYpe of atom  
+*Mentioned in topic(s):* xc_expert  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* 0.0  
@@ -135,9 +144,17 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v6:  [[tests/v6/Input/t45.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -164,10 +181,17 @@ energy (see [[dmft_rslf]]).
 
 
 *Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS  
+*Mentioned in topic(s):* DMFT_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[dmft_solv]]==5  
+Test list:
+
+- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
+
 
 
 
@@ -181,19 +205,29 @@ Choose the basis to perform CTQMC calculation.
 
 * * *
 
-## **effmass** 
+## **effmass_free** 
 
 
-*Mnemonics:* EFFective MASS  
+*Mnemonics:* EFFective MASS for the FREE electron  
+*Mentioned in topic(s):* Artificial_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v1:  [[tests/v1/Input/t25.in]]
+- v6:  [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]]
 
 
 
-  
-This parameter allows to change the electron mass, with respect to its
+
+
+This parameter allows to change the free electron mass, with respect to its
 experimental value.
+
+The electron mass is simply changed in the Schrodinger equation.
+
+Only for testing purposes, of course.
 
 
 * * *
@@ -202,10 +236,16 @@ experimental value.
 
 
 *Mnemonics:* Energy SHIFT  
+*Mentioned in topic(s):* SCFAlgorithms_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[wfoptalg]]==3  
+Test list:
+
+- v3:  [[tests/v3/Input/t45.in]]
+
+
 
 
 
@@ -222,10 +262,16 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
 *Mnemonics:* EXCHange MIXing  
+*Mentioned in topic(s):* xc_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.25  
 *Only relevant if:* [[useexexch]] == 1  
+Test list:
+
+- v5:  [[tests/v5/Input/t18.in]]
+
+
 
 
 
@@ -239,9 +285,15 @@ used. The default value of 0.25 corresponds to PBE0.
 
 
 *Mnemonics:* EXCHange N2 and N3 Dimensions  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v4:  [[tests/v4/Input/t92.in]]
+
+
 
 
 
@@ -257,10 +309,16 @@ dimensions have been switched. This is to allow to be coherent with the
 
 
 *Mnemonics:* flag - EXTRAPolation of the Wave-Functions  
+*Mentioned in topic(s):* TuningSpeed_expert, MolecularDynamics_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[densfor_pred]]==5 or [[densfor_pred]]==6  
+Test list:
+
+- v7:  [[tests/v7/Input/t09.in]]
+
+
 
 
 
@@ -282,9 +340,16 @@ results.
 
 
 *Mnemonics:* FERMI Energy for printing the NESTing function  
+*Mentioned in topic(s):* printing_prfermi  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
+- v7:  [[tests/v7/Input/t90.in]]
+
+
 
 
 
@@ -298,6 +363,7 @@ relative to the calculated fermi energy.
 
 
 *Mnemonics:* Fast Fourier Transform ALGorithm  
+*Mentioned in topic(s):* TuningSpeed_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 312 if [[FFTW3]] and [[usedmft]]==0,
@@ -344,10 +410,16 @@ Internal representation as [[ngfft]](7).
 
 
 *Mnemonics:* Fast Fourier Transform CACHE size  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 16  
 *Comment:* todo: Not yet machine-dependent  
+Test list:
+
+- v6:  [[tests/v6/Input/t03.in]]
+
+
 
 
 
@@ -361,10 +433,16 @@ Internal representation as [[ngfft]](8).
 
 
 *Mnemonics:* GET the GAMma phonon data EIG2NKQ from dataset  
+*Mentioned in topic(s):* multidtset_useful, TDepES_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[ieig2rf]] != 0 and [[qpt]] != (0.0,0.0,0.0)  
+Test list:
+
+- v6:  [[tests/v6/Input/t37.in]], [[tests/v6/Input/t50.in]]
+
+
 
 
 
@@ -384,9 +462,16 @@ the calculation at Gamma was done, to the datasets for other wavevectors.
 
 
 *Mnemonics:* GET the fine grid wavefunctions from _WFK file  
+*Mentioned in topic(s):* multidtset_useful, DFPT_useful, TDepES_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+- v7:  [[tests/v7/Input/t50.in]], [[tests/v7/Input/t51.in]]
+
+
 
 
 
@@ -441,6 +526,7 @@ Bethe-Salpeter calculation :
 
 
 *Mnemonics:* INTerpolation for eXchange-Correlation  
+*Mentioned in topic(s):* xc_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -470,6 +556,7 @@ runs.
 
 
 *Mnemonics:* Input-Output MODE  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[MPI_IO]] and [[paral_kgb]]==1,
@@ -527,9 +614,15 @@ References:
 
 
 *Mnemonics:* Integer for PReConditioner of Force Constants  
+*Mentioned in topic(s):* GeoOpt_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t44.in]], [[tests/v1/Input/t45.in]], [[tests/v1/Input/t48.in]], [[tests/v1/Input/t49.in]]
+
+
 
 
 
@@ -554,9 +647,17 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* Integer for the choice of the RANDOM number generator  
+*Mentioned in topic(s):* PIMD_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
+Test list:
+
+- v6:  [[tests/v6/Input/t26.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -580,9 +681,15 @@ Supported values :
 
 
 *Mnemonics:* Integer that governs the ReaDing of the grid _WFK file on the FINE grid  
+*Mentioned in topic(s):* multidtset_useful, TDepES_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t51.in]]
+
+
 
 
 
@@ -616,9 +723,17 @@ Bethe-Salpeter calculation :
 
 
 *Mnemonics:* Integer for level of SECURity choice  
+*Mentioned in topic(s):* SCFAlgorithms_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- fast:  [[tests/fast/Input/t17.in]], [[tests/fast/Input/t19.in]]
+- v1:  [[tests/v1/Input/t08.in]], [[tests/v1/Input/t33.in]], [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]], [[tests/v1/Input/t98.in]], [[tests/v1/Input/t99.in]]
+- v2:  [[tests/v2/Input/t51.in]]
+
+
 
 
 
@@ -643,6 +758,7 @@ No meaning for RF calculations yet.
 
 
 *Mnemonics:* Integer for STATus file rate  
+*Mentioned in topic(s):* printing_prmisc  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -663,9 +779,15 @@ default).
 
 
 *Mnemonics:* Integer for STATus file SHiFT  
+*Mentioned in topic(s):* printing_prmisc  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v3:  [[tests/v3/Input/t45.in]]
+
+
 
 
 
@@ -682,6 +804,7 @@ call.
 
 
 *Mnemonics:* Integer for choice of STorage of WaveFunction at each k point  
+*Mentioned in topic(s):* k-points_useful, TuningSpeed_basic  
 *Variable type:* integer  
 *Dimensions:* ([[nkpt]])  
 *Default value:* *0  
@@ -724,9 +847,15 @@ used in the RF calculations.
 
 
 *Mnemonics:* LOTF CLASSIC model for glue model  
+*Mentioned in topic(s):* LOTF_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 5  
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -740,9 +869,15 @@ For the moment it is imposed to be 5.
 
 
 *Mnemonics:* LOTF Number of ITerations  
+*Mentioned in topic(s):* LOTF_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -755,9 +890,15 @@ Set the number of Molecular Dynamics iterations which are computed by LOTF.
 
 
 *Mnemonics:* LOTF max Number of NEIGhbours  
+*Mentioned in topic(s):* LOTF_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 5  
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -771,9 +912,15 @@ For the moment it is imposed to be 40.
 
 
 *Mnemonics:* LOTF VERSION of MD algorithm  
+*Mentioned in topic(s):* LOTF_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -787,9 +934,16 @@ For the moment it is imposed to be 2.
 
 
 *Mnemonics:* MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
+- v5:  [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]]
+
+
 
 
 
@@ -816,15 +970,22 @@ position).
 
 
 *Mnemonics:* MAXimum Number of SYMetries  
+*Mentioned in topic(s):* crystal_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 384  
+Test list:
+
+- v5:  [[tests/v5/Input/t06.in]]
+
+
 
 
 
 Gives the maximum number of spatial symetries allowed in the memory.  
-The default value is sufficient for most applications; it has to be increase
-in the case of the use of a supercell (unit cell identically repeated).
+The default value is sufficient for most applications. It might have to be
+increased in the case of the use of a supercell (unit cell identically
+repeated).
 
 
 * * *
@@ -833,9 +994,15 @@ in the case of the use of a supercell (unit cell identically repeated).
 
 
 *Mnemonics:* MEMory TEST  
+*Mentioned in topic(s):* Control_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- paral:  [[tests/paral/Input/t29.in]]
+
+
 
 
 
@@ -853,9 +1020,16 @@ values:
 
 
 *Mnemonics:* Maximum number of Q-space GRID points for pseudopotentials  
+*Mentioned in topic(s):* Planewaves_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3001  
+Test list:
+
+- v4:  [[tests/v4/Input/t17.in]], [[tests/v4/Input/t62.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
@@ -869,9 +1043,15 @@ pseudopotentials, in reciprocal space : potentials, or projector functions.
 
 
 *Mnemonics:* Number of BanDs in a BLOCK  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v4:  [[tests/v4/Input/t93.in]], [[tests/v4/Input/t94.in]]
+
+
 
 
 
@@ -887,6 +1067,7 @@ wavefunctions (that is, if [[wfoptalg]]=4):
 
 
 *Mnemonics:* Norm-Conserving pseudopotentials - use XC Core-Correction in G-SPACE  
+*Mentioned in topic(s):* Planewaves_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[usepaw]]==0,
@@ -894,6 +1075,11 @@ wavefunctions (that is, if [[wfoptalg]]=4):
 0 otherwise.
   
 *Comment:* 0 when [[usepaw]]=0, 1 when [[usepaw]]=1  
+Test list:
+
+- v7:  [[tests/v7/Input/t10.in]], [[tests/v7/Input/t45.in]]
+
+
 
 
 
@@ -917,9 +1103,16 @@ convergence studies with respect to ecut before using this option.
 
 
 *Mnemonics:* NetCdf TIME between output of molecular dynamics informations  
+*Mentioned in topic(s):* MolecularDynamics_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- etsf_io:  [[tests/etsf_io/Input/t21.in]]
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -963,9 +1156,16 @@ file :
 
 
 *Mnemonics:* Non LOCal ALGorithm  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
+Test list:
+
+- v2:  [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]]
+- v4:  [[tests/v4/Input/t20.in]], [[tests/v4/Input/t61.in]], [[tests/v4/Input/t62.in]]
+
+
 
 
 
@@ -992,11 +1192,17 @@ application.
 
 
 *Mnemonics:* Non LOCal MEMOry  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2 if [[usepaw]]==1,
 1 otherwise.
   
+Test list:
+
+- paral:  [[tests/paral/Input/t41.in]]
+
+
 
 
 
@@ -1025,6 +1231,7 @@ algorithm for the non-local operator application.
 
 
 *Mnemonics:* Number of Non-Self Consistent LOops  
+*Mentioned in topic(s):* SCFControl_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1049,11 +1256,17 @@ non-self consistent loops, then the next ones with 1 non-self consistent loop.
 
 
 *Mnemonics:* Number of Non-Self Consistent LOops for (Hartree)-Fock exact exchange  
+*Mentioned in topic(s):* Hybrids_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[usefock]]==1,
 0 otherwise.
   
+Test list:
+
+- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]]
+
+
 
 
 
@@ -1070,9 +1283,14 @@ consistent loop.
 
 
 *Mnemonics:* NORMalize atomic PAW+U projector  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* ([[ntypat]])  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -1089,6 +1307,7 @@ be renormalized to 1 within PAW sphere.
 
 
 *Mnemonics:* Number of PULAY ITerations for SC mixing  
+*Mentioned in topic(s):* SCFAlgorithms_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 7  
@@ -1106,6 +1325,7 @@ during electronic SC iterations).
 
 
 *Mnemonics:* Nth - SCaling Function ORDER  
+*Mentioned in topic(s):* Coulomb_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 16  
@@ -1125,6 +1345,7 @@ enough. Nonetheless, possible values are 8, 14, 16, 20, 24, 30, 40, 50, 60,
 
 
 *Mnemonics:* OPTions for the calculation of FORCES  
+*Mentioned in topic(s):* ForcesStresses_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[toldff]] or [[tolrff]] != 0,
@@ -1146,9 +1367,15 @@ Allows to choose options for the calculation of forces.
 
 
 *Mnemonics:* OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction  
+*Mentioned in topic(s):* xc_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v5:  [[tests/v5/Input/t45.in]]
+
+
 
 
 
@@ -1165,6 +1392,7 @@ present, only relevant for the FHI type of pseudopotentials, with pspcod=6 .
 
 
 *Mnemonics:* ORThogonalisation ALGorithm  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* -2 if [[wfoptalg]] >= 10 ,
@@ -1195,9 +1423,14 @@ platforms.
 
 
 *Mnemonics:* PAPI OPTion  
+*Mentioned in topic(s):* Control_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -1220,9 +1453,14 @@ calculation.
 
 
 *Mnemonics:* PAW PRinT band  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -1238,9 +1476,14 @@ for the lowest occupied band and goes up from there.
 
 
 *Mnemonics:* PAW PRinT K-point  
+*Mentioned in topic(s):* PAW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -1256,10 +1499,17 @@ of the internal variable ** kpt ** in the beginning of the run.
 
 
 *Mnemonics:* PAW+macro_UJ, ATom number  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Comment:*  i.e. the first atom treated with PAW+U.  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tudet_2.in]]
+- v5:  [[tests/v5/Input/t39.in]]
+
+
 
 
 
@@ -1273,9 +1523,16 @@ Determines the atom for which U (or J) should be determined. See also
 
 
 *Mnemonics:* PAW+macro_UJ, sphere RADius  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 20 a.u.  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tudet_2.in]]
+- v5:  [[tests/v5/Input/t39.in]]
+
+
 
 
 
@@ -1291,9 +1548,16 @@ corresponds to r_paw -&gt; ∞.
 
 
 *Mnemonics:* PAW+macro_UJ, potential shift (V)  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1 eV  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tudet_2.in]]
+- v5:  [[tests/v5/Input/t39.in]]
+
+
 
 
 
@@ -1307,9 +1571,15 @@ Amplitude of the potential shift for the determination of U (or J). See also
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions BAND Final  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1323,9 +1593,15 @@ Gives the upper band to include in the calculation of Wannier functions
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions BAND Initial  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1339,9 +1615,15 @@ Gives the lower band to include in the calculation of Wannier functions
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions COMPUTATION  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1369,9 +1651,15 @@ parallelized. (The calculation of projections is detailed in [ Phys. Rev. B
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions, Index of ATOM  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1386,9 +1674,15 @@ be done.
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  Index of Translation.  
+*Mentioned in topic(s):* Wannier_useful  
 *Variable type:* integer  
 *Dimensions:* (3,[[plowan_nt]])  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1406,9 +1700,15 @@ basis to compute the Hamiltonian.
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  L values to use for CALCulation  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* (sum([[plowan_nbl]]))  
 *Default value:* -1  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1423,9 +1723,15 @@ of the atoms as given in [[plowan_iatom]].
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions, Number of ATOMs  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1439,9 +1745,15 @@ Gives the number of atoms on which the projection will be done
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  NumBer of L values  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* ([[plowan_natom]])  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1457,9 +1769,15 @@ projections.
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
 energy are computed  
+*Mentioned in topic(s):* Wannier_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1475,9 +1793,15 @@ real space Wannier functions are used as a basis to compute the Hamiltonian.
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation  
+*Mentioned in topic(s):* Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* (sum([[plowan_nbl]]))  
 *Default value:* -1  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1493,9 +1817,15 @@ to the ith number on line orbitals of the PAW atomic data file.
 
 
 *Mnemonics:* Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.  
+*Mentioned in topic(s):* Wannier_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
+
 
 
 
@@ -1512,9 +1842,14 @@ Can take the following values:
 
 
 *Mnemonics:* PREPare Self-Consistent PHONon calculation  
+*Mentioned in topic(s):* printing_prngs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -1531,9 +1866,16 @@ is destined to someday bypass the use of anaddb for scphon calculations.
 
 
 *Mnemonics:* PRinT output for BoLTZTRaP code  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t11.in]]
+- v7:  [[tests/v7/Input/t88.in]]
+
+
 
 
 
@@ -1549,9 +1891,16 @@ by Georg Madsen.
 
 
 *Mnemonics:* PRinT Crystallographic Information File  
+*Mentioned in topic(s):* printing_prgeo  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorial:  [[tests/tutorial/Input/tfold2bloch_1.in]]
+- v6:  [[tests/v6/Input/t08.in]], [[tests/v6/Input/t09.in]]
+
+
 
 
 
@@ -1565,9 +1914,15 @@ present run (cell size shape and atomic positions).
 
 
 *Mnemonics:* PRinT DIPOLE  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t06.in]]
+
+
 
 
 
@@ -1581,9 +1936,16 @@ only. Under development.
 
 
 *Mnemonics:* PRinT NESTing function  
+*Mentioned in topic(s):* printing_prfermi  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
+- v7:  [[tests/v7/Input/t88.in]], [[tests/v7/Input/t90.in]]
+
+
 
 
 
@@ -1598,9 +1960,15 @@ an input as well.
 
 
 *Mnemonics:* PRinT POSCAR file  
+*Mentioned in topic(s):* printing_prgeo  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t01.in]]
+
+
 
 
 
@@ -1616,9 +1984,16 @@ interfacing with PHON, PHONOPY, etc...
 
 
 *Mnemonics:* RECursion - initial guess  of the FERMI Energy  
+*Mentioned in topic(s):* Recursion_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1632,9 +2007,15 @@ fixes the initial guess for the Fermi energy.
 
 
 *Mnemonics:* RECursion - Grid RATIO  
+*Mentioned in topic(s):* Recursion_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1654,9 +2035,16 @@ grid has to be compatible with the parallelization parameters.
 
 
 *Mnemonics:* RECursion - Number of point for PATH integral calculations  
+*Mentioned in topic(s):* Recursion_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 500  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1672,9 +2060,16 @@ energy. during the latest SFC cycles.
 
 
 *Mnemonics:* RECursion - Number of RECursions  
+*Mentioned in topic(s):* Recursion_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1690,9 +2085,16 @@ the recursion method automatically stops.
 
 
 *Mnemonics:* RECursion - TROTTer parameter  
+*Mentioned in topic(s):* Recursion_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1713,9 +2115,16 @@ the ngfft grid.
 
 
 *Mnemonics:* RECursion - CUTing Radius  
+*Mentioned in topic(s):* Recursion_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1731,9 +2140,15 @@ point will be computed with taking account only of a sphere of radius
 
 
 *Mnemonics:* RECursion - TEST on Electron Gas  
+*Mentioned in topic(s):* Recursion_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1747,10 +2162,17 @@ by putting the ion potential equal to zero.
 
 
 *Mnemonics:* RECursion - TOLerance on the difference of electronic DENsity  
+*Mentioned in topic(s):* Recursion_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Comment:* Default value to be changed.  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+
+
 
 
 
@@ -1767,6 +2189,7 @@ is computed).
 
 
 *Mnemonics:* SYMMORPHIc symmetry operation selection  
+*Mentioned in topic(s):* crystal_expert, GW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1781,11 +2204,11 @@ contrast, if the symmetry operations are to be determined automatically (if
 [[nsym]]=0), then the set of symmetries will not include the non-symmorphic
 operations.
 
-Note : this feature exist because in a previous status of the [[GW]]
-calculations, non-symmorphic symmetry operations could not be exploited. Thus,
-the k points were restricted to the IBZ. In order to prepare [[GW]]
-calculations, and to perform [[GW]] calculations, [[symmorphi]]=0 was to be
-used, together with [[nsym]]=0.
+Note : this feature exist because in a previous status of the GW calculations,
+non-symmorphic symmetry operations could not be exploited. Thus, the k points
+were restricted to the IBZ. In order to prepare GW calculations, and to
+perform GW calculations, [[symmorphi]]=0 was to be used, together with
+[[nsym]]=0.
 
 
 * * *
@@ -1794,9 +2217,18 @@ used, together with [[nsym]]=0.
 
 
 *Mnemonics:* Thomas-Fermi KINetic energy FUNCtional  
+*Mentioned in topic(s):* Recursion_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- v4:  [[tests/v4/Input/t97.in]]
+- v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+- v7:  [[tests/v7/Input/t11.in]]
+
+
 
 
 
@@ -1835,10 +2267,16 @@ In the recursion method the following variables are set to: [[useylm]]=1,
 
 
 *Mnemonics:* Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps  
+*Mentioned in topic(s):* Recursion_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0E-6 or [[toldfe]] is present  
 *Only relevant if:* [[tfkinfunc]]=11  
+Test list:
+
+- v7:  [[tests/v7/Input/t11.in]]
+
+
 
 
 
@@ -1857,9 +2295,16 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since it has the
 
 
 *Mnemonics:* TOLerance on the Relative Difference of Eigenenergies  
+*Mentioned in topic(s):* SCFControl_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.005  
+Test list:
+
+- atompaw:  [[tests/atompaw/Input/t04.in]]
+- tutoparal:  [[tests/tutoparal/Input/tdfpt_04.in]]
+
+
 
 
 
@@ -1880,10 +2325,16 @@ mentioned ratio, for historical reasons.
 
 
 *Mnemonics:* USE the GEMM routine for the application of the NON-Local OPerator  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Comment:* because it is not usually worth using it unless bandpp is large and it requires additional memory  
+Test list:
+
+- paral:  [[tests/paral/Input/t25.in]], [[tests/paral/Input/t30.in]]
+
+
 
 
 
@@ -1908,10 +2359,19 @@ nonlocal operator.
 
 
 *Mnemonics:* USE NON-SCF calculation of GKK matrix elements (electron phonon)  
+*Mentioned in topic(s):* ElPhonInt_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Comment:* Default is 0 for the moment. Do not use non-scf method.  
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/teph_1.in]]
+- v5:  [[tests/v5/Input/t85.in]]
+- v6:  [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
+- v7:  [[tests/v7/Input/t90.in]]
+
+
 
 
 
@@ -1941,6 +2401,7 @@ phonons go to 0 for acoustic modes at Gamma.
 
 
 *Mnemonics:* USE Dynamical Mean Field Theory  
+*Mentioned in topic(s):* DMFT_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2010,9 +2471,14 @@ screened interaction (see variable [[ucrpa]]).
 
 
 *Mnemonics:* USER Integer variable A  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -2030,9 +2496,14 @@ dtset%useria .
 
 
 *Mnemonics:* USER Integer variable B  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -2050,9 +2521,14 @@ dtset%useria .
 
 
 *Mnemonics:* USER Integer variable C  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -2070,9 +2546,14 @@ dtset%useria .
 
 
 *Mnemonics:* USER Integer variable D  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -2090,9 +2571,14 @@ dtset%useria .
 
 
 *Mnemonics:* USER Integer variable E  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -2110,9 +2596,14 @@ dtset%useria .
 
 
 *Mnemonics:* USER Real variable A  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+
+
 
 
 
@@ -2125,9 +2616,14 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 *Mnemonics:* USER Real variable B  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+
+
 
 
 
@@ -2140,9 +2636,14 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 *Mnemonics:* USER Real variable C  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+
+
 
 
 
@@ -2155,9 +2656,14 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 *Mnemonics:* USER Real variable D  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+
+
 
 
 
@@ -2170,9 +2676,14 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 *Mnemonics:* USER Real variable E  
+*Mentioned in topic(s):* Dev_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+
+
 
 
 
@@ -2185,12 +2696,20 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 *Mnemonics:* USE YLM (the spherical harmonics)  
+*Mentioned in topic(s):* TuningSpeed_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[tfkinfunc]]==1,
 1 if [[usepaw]]==1,
 0 otherwise.
   
+Test list:
+
+- built-in:  [[tests/built-in/Input/testin_wannier90.in]]
+- v4:  [[tests/v4/Input/t01.in]], [[tests/v4/Input/t02.in]], [[tests/v4/Input/t03.in]]
+- wannier90:  [[tests/wannier90/Input/t00.in]], [[tests/wannier90/Input/t01.in]], [[tests/wannier90/Input/t02.in]]
+
+
 
 
 
@@ -2212,6 +2731,7 @@ form.
 
 
 *Mnemonics:* WaveFunction OPTimisation ALGorithm  
+*Mentioned in topic(s):* SCFAlgorithms_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
@@ -2238,9 +2758,15 @@ The different possibilities are :
 
 
 *Mnemonics:* eXchange-Correlation - DENsity POSitivity value  
+*Mentioned in topic(s):* xc_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-14  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t13.in]]
+
+
 
 
 
@@ -2268,9 +2794,15 @@ one should play a bit with this value to avoid incorrect calculations.
 
 
 *Mnemonics:* Value of the c parameter in the eXchange-Correlation TB09 functional  
+*Mentioned in topic(s):* xc_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 99.99  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t13.in]]
+
+
 
 
 

@@ -2,9 +2,14 @@
 
 
 *Mnemonics:* K-PoinTs re-Normalized and Shifted  
+*Mentioned in topic(s):* k-points_internal  
 *Variable type:* real  
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -23,9 +28,14 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 
 
 *Mnemonics:* Maximum number of BANDs  
+*Mentioned in topic(s):* BandOcc_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -39,9 +49,14 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 
 
 *Mnemonics:* Maximum of nGFFT  
+*Mentioned in topic(s):* Planewaves_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -54,9 +69,14 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 
 
 *Mnemonics:* Maximum of nGFFT for the Double Grid  
+*Mentioned in topic(s):* Planewaves_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -69,9 +89,14 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 
 
 *Mnemonics:* Maximum number of Plane Waves  
+*Mentioned in topic(s):* Planewaves_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -86,10 +111,15 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 
 
 *Mnemonics:* Number of AToms on which PAW+U is applied  
+*Mentioned in topic(s):* DFT+U_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Only relevant if:* [[usepawu]]==1  
+Test list:
+
+
+
 
 
 
@@ -103,9 +133,14 @@ is applied. This value is determined from [[lpawu]].
 
 
 *Mnemonics:* Number of DYNamical IMAGEs  
+*Mentioned in topic(s):* PIMD_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -121,9 +156,14 @@ wavefunction array (cg), the density array (rho), etc .
 
 
 *Mnemonics:* Number of ELECTrons  
+*Mentioned in topic(s):* BandOcc_internal  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
+Test list:
+
+
+
 
 
 
@@ -140,9 +180,14 @@ the pseudopotential, where it is called "zion"), and the input variable
 
 
 *Mnemonics:* Number of FFT points  
+*Mentioned in topic(s):* Planewaves_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -163,9 +208,14 @@ which the space is shared.
 
 
 *Mnemonics:* Number of FFT points for the Double Grid  
+*Mentioned in topic(s):* Planewaves_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -186,9 +236,14 @@ which the space is shared.
 
 
 *Mnemonics:* Number of PlaneWaves for EPSilon (the dielectric matrix)  
+*Mentioned in topic(s):* Susceptibility_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -204,9 +259,14 @@ It is an internal variable, determined from [[ecuteps]].
 
 
 *Mnemonics:* Number of PlaneWaves for SIGma eXchange  
+*Mentioned in topic(s):* SelfEnergy_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -221,9 +281,14 @@ It is an internal variable, determed from [[ecutsigx]].
 
 
 *Mnemonics:* Number of PlaneWaves for WaveFunctioNs  
+*Mentioned in topic(s):* Susceptibility_internal, SelfEnergy_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -239,10 +304,16 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 
 
 *Mnemonics:* Q-PoinT re-Normalized  
+*Mentioned in topic(s):*  DFPT_internal  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
 *Only relevant if:* [[nqpt]]==1  
+Test list:
+
+- v3:  [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]]
+
+
 
 
 
@@ -271,9 +342,14 @@ code).
 
 
 *Mnemonics:* USE FOCK exact exchange  
+*Mentioned in topic(s):* Hybrids_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -290,6 +366,7 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 
 
 *Mnemonics:* USE Projector Augmented Waves method  
+*Mentioned in topic(s):* PAW_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
@@ -297,10 +374,10 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 
 
 This variable is determined by the pseudopotentials files. PAW calculations
-(see [ PAW variables ](varpaw.html) ) can only be performed with PAW atomic
-data input files, while pseudopotential calculations are performed in ABINIT
-with norm-conserving pseudopotential input files. Most functionalities in
-ABINIT are available with either type of calculation.
+(see [[lesson:paw1]]) can only be performed with PAW atomic data input files,
+while pseudopotential calculations are performed in ABINIT with norm-
+conserving pseudopotential input files. Most functionalities in ABINIT are
+available with either type of calculation.
 
 
 * * *
@@ -309,9 +386,14 @@ ABINIT are available with either type of calculation.
 
 
 *Mnemonics:* USE RECursion  
+*Mentioned in topic(s):* Recursion_internal  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -325,9 +407,14 @@ This internal variable is set to 1 when the recursion method is activated (see
 
 
 *Mnemonics:* eXchange Correlation functional LEVEL  
+*Mentioned in topic(s):* xc_internal, TDDFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -336,7 +423,7 @@ Automatically determined from the value of [[ixc]].
   * 0 =&gt; No XC contribution. 
   * 1 =&gt; LDA functional. 
   * 2 =&gt; GGA functional or hybrid functional based on GGA. 
-  * 3 =&gt; Functional for [[TDDFT]]. 
+  * 3 =&gt; Functional for TDDFT. 
 
 
 * * *
@@ -345,9 +432,14 @@ Automatically determined from the value of [[ixc]].
 
 
 *Mnemonics:* Z (charge) of the IONs for the different TYPes of AToms  
+*Mentioned in topic(s):* AtomTypes_internal, PseudosPAW_internal  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[AUTO_FROM_PSP]]  
+Test list:
+
+
+
 
 
 

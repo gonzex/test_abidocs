@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* ACCURACY  
+*Mentioned in topic(s):* Planewaves_basic, SCFControl_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -505,6 +506,7 @@ automatically tuned by [[accuracy]] will not be affected.
 
 
 *Mnemonics:* CELL lattice vector scaling  
+*Mentioned in topic(s):* UnitCell_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *commentdims:* represented internally as acell(3,[[nimage]])  
@@ -531,6 +533,7 @@ to scale the cartesian coordinates.
 
 
 *Mnemonics:* ANGles in DEGrees  
+*Mentioned in topic(s):* UnitCell_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* None  
@@ -576,6 +579,7 @@ others.
 
 
 *Mnemonics:* Energy CUToff  
+*Mentioned in topic(s):* Planewaves_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -615,9 +619,16 @@ needed to optimize unit cell parameters.
 
 
 *Mnemonics:* Electron bands INTERPolation  
+*Mentioned in topic(s):* ElecBandStructure_useful, SelfEnergy_expert  
 *Variable type:* real  
 *Dimensions:* (4)  
 *Default value:* [0, 0, 0, 0]  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t42.in]]
+- v8:  [[tests/v8/Input/t04.in]]
+
+
 
 
 
@@ -641,7 +652,7 @@ In the case of star-function interpolation:
 
   
 For B-spline interpolation: einterp(2:4): Order of B-spline for the three
-reduced directions. Cubic spline (3) is the recomended value.
+reduced directions. Cubic spline (3) is the recommended value.
 
 
 * * *
@@ -650,6 +661,7 @@ reduced directions. Cubic spline (3) is the recomended value.
 
 
 *Mnemonics:* Integer for Self-Consistent-Field cycles  
+*Mentioned in topic(s):* SCFAlgorithms_basic, TDDFT_compulsory, ElecBandStructure_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 17 if [[usepaw]]==1,
@@ -732,7 +744,7 @@ For GS, this option might be used to generate Density-of-states (thanks to
 [[prtdos]]), or to produce STM charge density map (thanks to [[prtstm]]).  
 For RF, this option is needed to compute the response to ddk perturbation.
 
-  * = -1 =&gt; like -2, but the non-self-consistent calculation is followed by the determination of excited states within [[TDDFT]]. This is only possible for [[nkpt]]=1, with [[kpt]]=0 0 0. Note that the oscillator strength needs to be defined with respect to an origin of coordinate, thanks to the input variable [[boxcenter]]. The maximal number of Kohn-Sham excitations to be used to build the excited state [[TDDFT]] matrix can be defined by [[td_mexcit]], or indirectly by the maximum Kohn-Sham excitation energy [[td_maxene]]. 
+  * = -1 =&gt; like -2, but the non-self-consistent calculation is followed by the determination of excited states within TDDFT. This is only possible for [[nkpt]]=1, with [[kpt]]=0 0 0. Note that the oscillator strength needs to be defined with respect to an origin of coordinate, thanks to the input variable [[boxcenter]]. The maximal number of Kohn-Sham excitations to be used to build the excited state TDDFT matrix can be defined by [[td_mexcit]], or indirectly by the maximum Kohn-Sham excitation energy [[td_maxene]]. 
 
 
 * * *
@@ -740,7 +752,8 @@ For RF, this option is needed to compute the response to ddk perturbation.
 ## **ixc** 
 
 
-*Mnemonics:* Integer for eXchange-Correlation choice  
+*Mnemonics:* Index of eXchange-Correlation functional  
+*Mentioned in topic(s):* xc_basic, Hybrids_compulsory, TDDFT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -796,9 +809,9 @@ The value [[ixc]]=10 is used internally : gives the difference between
   * 18=&gt; (NOT AVAILABLE : used internally for GGA BLYP pseudopotentials from M. Krack, see Theor. Chem. Acc. 114, 145 (2005), available from the [ CP2K repository ](https://github.com/cp2k/cp2k/tree/master/potentials/Goedecker/abinit/blyp) \- use the LibXC instead, with [[ixc]]=-106131. 
   * 19=&gt; (NOT AVAILABLE : used internally for GGA BP86 pseudopotentials from M. Krack, see Theor. Chem. Acc. 114, 145 (2005), available from the [ CP2K repository ](https://github.com/cp2k/cp2k/tree/master/potentials/Goedecker/abinit/bp) \- use the LibXC instead, with [[ixc]]=-106132. 
 
-  * 20=&gt; Fermi-Amaldi xc ( -1/N Hartree energy, where N is the number of electrons per cell ; G=0 is not taken into account however), for [[TDDFT]] tests. No spin-pol. Does not work for RF. 
-  * 21=&gt; same as 20, except that the xc-kernel is the LDA ([[ixc]]=1) one, for [[TDDFT]] tests. 
-  * 22=&gt; same as 20, except that the xc-kernel is the Burke-Petersilka-Gross hybrid, for [[TDDFT]] tests. 
+  * 20=&gt; Fermi-Amaldi xc ( -1/N Hartree energy, where N is the number of electrons per cell ; G=0 is not taken into account however), for TDDFT tests. No spin-pol. Does not work for RF. 
+  * 21=&gt; same as 20, except that the xc-kernel is the LDA ([[ixc]]=1) one, for TDDFT tests. 
+  * 22=&gt; same as 20, except that the xc-kernel is the Burke-Petersilka-Gross hybrid, for TDDFT tests. 
   * 23=&gt; GGA of Z. Wu and R.E. Cohen, Phys. Rev. 73, 235116 (2006). 
   * 24=&gt; GGA, C09x exchange of V. R. Cooper, PRB 81, 161104(R) (2010). 
   * 26=&gt; GGA, HTCH147 of A.D. Boese, N.L. Doltsinis, N.C. Handy, and M. Sprik, J. Chem. Phys 112, 1670 (1998). 
@@ -1018,6 +1031,7 @@ J. Chem. Phys. 125, 224106 (2006) ]
 
 
 *Mnemonics:* index -J- for DaTaSETs  
+*Mentioned in topic(s):* multidtset_basic  
 *Variable type:* integer  
 *Dimensions:* ([[ndtset]])  
 *Default value:* [1 .. [[ndtset]]]  
@@ -1044,6 +1058,7 @@ be used.
 
 
 *Mnemonics:* K - PoinTs  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* real  
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* [0, 0, 0]  
@@ -1079,6 +1094,7 @@ Not read if [[kptopt]]/=0 .
 
 
 *Mnemonics:* K - PoinTs NoRMalization  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1100,6 +1116,7 @@ It cannot be smaller than 1.0d0
 
 
 *Mnemonics:* KPoinTs OPTion  
+*Mentioned in topic(s):* k-points_basic, ElecBandStructure_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4 if [[nspden]]==4,
@@ -1149,6 +1166,7 @@ In the case of a grid of k points, the auxiliary variables [[kptrlen]],
 
 
 *Mnemonics:* Number of ATOMs  
+*Mentioned in topic(s):* crystal_basic, SmartSymm_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1169,6 +1187,7 @@ of atoms, use the symmetriser, see the input variable [[natrd]].
 
 
 *Mnemonics:* Number of BANDs  
+*Mentioned in topic(s):* BandOcc_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -1189,11 +1208,10 @@ The number of bands will be set up thanks to the use of the variable
 
 If [[nspinor]] is 2, nband must be even for each k point.
 
-In the case of a [[GW]] calculation ([[optdriver]]=3 or 4), [[nband]] gives
-the number of bands to be treated to generate the screening (susceptibility
-and dielectric matrix), as well as the self-energy. However, to generate the
-_KSS file (see [[kssform]]) the relevant number of bands is given by
-[[nbandkss]].
+In the case of a GW calculation ([[optdriver]]=3 or 4), [[nband]] gives the
+number of bands to be treated to generate the screening (susceptibility and
+dielectric matrix), as well as the self-energy. However, to generate the _KSS
+file (see [[kssform]]) the relevant number of bands is given by [[nbandkss]].
 
 
 * * *
@@ -1202,10 +1220,17 @@ _KSS file (see [[kssform]]) the relevant number of bands is given by
 
 
 *Mnemonics:* Number of BANDs for (Hartree)-Fock exact exchange  
+*Mentioned in topic(s):* Hybrids_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:* the estimated number of occupied bands (TODO : provide the mathematical formulation)  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t51.in]], [[tests/libxc/Input/t52.in]]
+- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]]
+
+
 
 
 
@@ -1219,6 +1244,7 @@ being computed for the wavefunctions.
 
 
 *Mnemonics:* Number of DaTaSETs  
+*Mentioned in topic(s):* multidtset_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1239,6 +1265,7 @@ dataset index are not allowed. Otherwise, [[ndtset]]=0 is equivalent to
 
 
 *Mnemonics:* Number of Grid points for K PoinTs generation  
+*Mentioned in topic(s):* k-points_basic  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -1273,9 +1300,16 @@ variable [[kptrlen]].
 
 
 *Mnemonics:* Number of K-points defining the PATH  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t42.in]]
+- v8:  [[tests/v8/Input/t04.in]]
+
+
 
 
 
@@ -1299,6 +1333,7 @@ unlike [[kptopt]], nkpath represents the total number of points in the
 
 
 *Mnemonics:* Number of K - Points  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[kptopt]]==0,
@@ -1339,10 +1374,17 @@ k points of the circuit will be 10+12+17+1(for the final point)=40.
 
 
 *Mnemonics:* Number of K - Points for (Hartree) Fock exact exchange  
+*Mentioned in topic(s):* Hybrids_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:*  the total number of k-point in the full Brillouin zone (TODO : provide the mathematical formulation)  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t51.in]], [[tests/libxc/Input/t52.in]]
+- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]]
+
+
 
 
 
@@ -1356,6 +1398,7 @@ for the Fock exact exchange contribution.
 
 
 *Mnemonics:* Number of SHIFTs for K point grids  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1374,6 +1417,7 @@ defined either from [[ngkpt]] or [[kptrlatt]]. The maximum allowed value of
 
 
 *Mnemonics:* Number of SPin POLarization  
+*Mentioned in topic(s):* spinpolarisation_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1411,6 +1455,7 @@ matrix with respect to the spin-polarization.
 
 
 *Mnemonics:* Number of (non-)self-consistent field STEPS  
+*Mentioned in topic(s):* SCFControl_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
@@ -1449,6 +1494,7 @@ The forces and stress tensor are computed with [[nstep]]=0.
 
 
 *Mnemonics:* Number of SYMmetry operations  
+*Mentioned in topic(s):* crystal_useful, GW_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1467,11 +1513,12 @@ Brillouin zone. After the response to the perturbations have been calculated,
 the symmetries are used to generate as many as possible elements of the 2DTE
 from those already computed.
 
-[[SYMMETRY_FINDER]] mode (Default mode). If [[nsym]] is 0, all the atomic
-coordinates must be explicitely given (one cannot use the geometry builder and
-the symmetrizer): the code will then find automatically the symmetry
-operations that leave the lattice and each atomic sublattice invariant. It
-also checks whether the cell is primitive (see [[chkprim]]).  
+**Symmetry finder mode** (Default mode).   
+If [[nsym]] is 0, all the atomic coordinates must be explicitely given (one
+cannot use the atom manipulator neither the smart symmetrizer): the code will
+then find automatically the symmetry operations that leave the lattice and
+each atomic sublattice invariant. It also checks whether the cell is primitive
+(see [[chkprim]]).  
 Note that the tolerance on symmetric atomic positions and lattice is rather
 stringent : for a symmetry operation to be admitted, the lattice and atomic
 positions must map on themselves within 1.0e-8 .
@@ -1486,12 +1533,11 @@ the primitive cell. A maximum limit of 384 symmetry operations is hard-coded.
 This corresponds to the maximum number of symmetry operations of a 2x2x2
 undistorted supercell. Going beyond that number will make the code stop very
 rapidly. If you want nevertheless, for testing purposes, to treat a larger
-number of symmetries, change the initialization of "msym" in the abinit.F90
-main routine, then recompile the code.
+number of symmetries, change [[maxnsym]].
 
-For [[GW]] calculation, the user might want to select only the symmetry
-operations whose non-symmorphic translation vector [[tnons]] is zero. This can
-be done with the help of the input variable [[symmorphi]]
+For GW calculation, the user might want to select only the symmetry operations
+whose non-symmorphic translation vector [[tnons]] is zero. This can be done
+with the help of the input variable [[symmorphi]]
 
 
 * * *
@@ -1500,16 +1546,22 @@ be done with the help of the input variable [[symmorphi]]
 
 
 *Mnemonics:* Number of TYPes of AToms  
+*Mentioned in topic(s):* AtomTypes_compulsory, PseudosPAW_compulsory, crystal_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 
 
 
-Gives the number of types of atoms. E.g. for a homopolar system (e.g. pure Si)
-[[ntypat]] is 1.  
-The code tries to read the same number of pseudopotential files.  
-The first pseudopotential is assigned type number 1, and so on ...
+Gives the number of types of atoms.  
+E.g. for a homopolar system (e.g. pure Si) [[ntypat]] is 1.
+
+The code tries to read the same number of pseudopotential files. The first
+pseudopotential is assigned type number 1, and so on ...
+
+There is an exception in the case of alchemical mixing of potentials, for
+which there is a different number of pseudopotentials atomic types. See
+[[mixalch]].
 
 
 * * *
@@ -1518,6 +1570,7 @@ The first pseudopotential is assigned type number 1, and so on ...
 
 
 *Mnemonics:* OCCupation OPTion  
+*Mentioned in topic(s):* BandOcc_basic, STM_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1608,6 +1661,7 @@ Fermi energy, and the bissection algorithm find one or the other.
 
 
 *Mnemonics:* Real space PRIMitive translations  
+*Mentioned in topic(s):* UnitCell_basic  
 *Variable type:* real  
 *Dimensions:* (3,3)  
 *commentdims:* Internally, it is represented as rprim(3,3,[[nimage]])  
@@ -1746,10 +1800,15 @@ file is not the value contained in the input file, but the value rescaled by
 
 
 *Mnemonics:* Real space PRIMitive translations, Dimensional  
+*Mentioned in topic(s):* UnitCell_internal  
 *Variable type:* real  
 *Dimensions:* (3,3)  
 *commentdims:* Internally, it is represented as rprimd(3,3,[[nimage]]).  
 *Default value:* None  
+Test list:
+
+
+
 
 
 
@@ -1770,9 +1829,15 @@ fixed.
 
 
 *Mnemonics:* SCALE CARTesian coordinates  
+*Mentioned in topic(s):* UnitCell_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*1  
+Test list:
+
+- v6:  [[tests/v6/Input/t16.in]]
+
+
 
 
 
@@ -1793,6 +1858,7 @@ to the default values. So, it will not be echoed.
 
 
 *Mnemonics:* SHIFT for K points  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* real  
 *Dimensions:* (3,[[nshiftk]])  
 *Default value:* None if [[nshiftk]]>1,
@@ -1891,6 +1957,7 @@ In rhombohedral axes, e.g. using [[angdeg]] 3*60., this corresponds to
 
 
 *Mnemonics:* SYMmetry in REaL space  
+*Mentioned in topic(s):* crystal_useful  
 *Variable type:* integer  
 *Dimensions:* (3,3,[[nsym]])  
 *Default value:* [[1, 0, 0], [0, 1, 0], [0, 0, 1]] if [[nsym]]==1,
@@ -1923,6 +1990,7 @@ automatically.
 
 
 *Mnemonics:* Translation NON-Symmorphic vectors  
+*Mentioned in topic(s):* crystal_useful  
 *Variable type:* real  
 *Dimensions:* (3,[[nsym]])  
 *Default value:* None  
@@ -1945,6 +2013,7 @@ automatically.
 
 
 *Mnemonics:* TOLerance on the DiFference of total Energy  
+*Mentioned in topic(s):* SCFControl_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1983,6 +2052,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on the DiFference of Forces  
+*Mentioned in topic(s):* SCFControl_basic, ForcesStresses_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2017,11 +2087,19 @@ generically.
 
 
 *Mnemonics:* TOLerance on the Relative diFference of Forces  
+*Mentioned in topic(s):* SCFControl_basic, ForcesStresses_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
 *The use of this variable forbids the use of:* specified([[tolwfr]]) or specified([[toldfe]]) or specified([[toldff]]) or specified([[tolvrs]])'  
+Test list:
+
+- bigdft:  [[tests/bigdft/Input/t22.in]]
+- v5:  [[tests/v5/Input/t41.in]]
+- v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+
+
 
 
 
@@ -2051,6 +2129,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on the potential V(r) ReSidual  
+*Mentioned in topic(s):* SCFControl_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2092,6 +2171,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on WaveFunction squared Residual  
+*Mentioned in topic(s):* SCFControl_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2152,6 +2232,7 @@ generically.
 
 
 *Mnemonics:* TYPe of AToms  
+*Mentioned in topic(s):* crystal_basic, AtomTypes_basic  
 *Variable type:* integer  
 *Dimensions:* [3, '[[natrd]]'] if [[natrd]]<[[natom]],
 [3, '[[natom]]'] otherwise.
@@ -2193,6 +2274,7 @@ keeping efficiency.
 
 
 *Mnemonics:* Upper limit on DaTa SETs  
+*Mentioned in topic(s):* multidtset_basic  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* None  
@@ -2229,6 +2311,7 @@ If [[udtset]] is used, the input variable [[jdtset]] cannot be used.
 
 
 *Mnemonics:* Use WaVeLet basis set  
+*Mentioned in topic(s):* Wavelets_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2255,6 +2338,7 @@ systems may be slow to converge.
 
 
 *Mnemonics:* WeighTs for K points  
+*Mentioned in topic(s):* k-points_useful  
 *Variable type:* real  
 *Dimensions:* ([[nkpt]])  
 *Default value:* [[nkpt]]*1.0  
@@ -2277,6 +2361,7 @@ weights such as 1/3.
 
 
 *Mnemonics:* WaVeLet H step GRID  
+*Mentioned in topic(s):* Wavelets_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.5  
@@ -2294,6 +2379,7 @@ wavelet computation. The value is a length in atomic units.
 
 
 *Mnemonics:* vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-  
+*Mentioned in topic(s):* crystal_compulsory  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *Default value:* None  
@@ -2320,6 +2406,7 @@ Atomic positions evolve if [[ionmov]]/=0 . In constrast with [[xred]] and
 
 
 *Mnemonics:* vectors (X) of atom positions in CARTesian coordinates  
+*Mentioned in topic(s):* crystal_compulsory  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *Default value:* None  
@@ -2345,6 +2432,7 @@ Atomic positions evolve if [[ionmov]]/=0 .
 
 
 *Mnemonics:* vectors (X) of atom positions in REDuced coordinates  
+*Mentioned in topic(s):* crystal_compulsory  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *commentdims:* represented internally as xred(3,[[natom]],[[nimage]])  
@@ -2373,6 +2461,7 @@ Atomic positions evolve if [[ionmov]]/=0 .
 
 
 *Mnemonics:* charge -Z- of the NUCLeus  
+*Mentioned in topic(s):* AtomTypes_compulsory, PseudosPAW_compulsory  
 *Variable type:* real  
 *Dimensions:* ([[npsp]])  
 *Default value:* None  

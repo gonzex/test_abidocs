@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* Bethe-Salpeter ALGORITHM  
+*Mentioned in topic(s):* BSE_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -23,6 +24,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
 
 
 *Mnemonics:* Bethe-Salpeter CALCulation TYPE  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -33,7 +35,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
 Possible values are 1,2,3.
 
   * 1 =&gt; use the KS eigenvalues and wave functions stored in the KSS file to construct the transition space 
-  * 2 =&gt; The transition space is constructed with Kohn-Sham orbitals but the energies are read from the external [[GW]] file 
+  * 2 =&gt; The transition space is constructed with Kohn-Sham orbitals but the energies are read from the external GW file 
   * 3 =&gt; QP amplitudes and energies will be read from the QPS file and used to construct H_ex. Not coded yet because &lt;\psi|r|\psj&gt;^QP should be calculated taking into account the non-locality of the self-energy in the commutator [H,r]. 
 
 
@@ -43,6 +45,7 @@ Possible values are 1,2,3.
 
 
 *Mnemonics:* Bethe-Salpeter COULOMB TERM  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 11  
@@ -51,9 +54,8 @@ Possible values are 1,2,3.
 
 
 This variable governs the choice among the different options that are
-available for the treatment of Coulomb term of the [[BETHE_SALPETER]]
-Hamiltonian. [[bs_coulomb_term]] is the concatenation of two digits, labelled
-(A) and (B).
+available for the treatment of Coulomb term of the Bethe-Salpeter Hamiltonian.
+[[bs_coulomb_term]] is the concatenation of two digits, labelled (A) and (B).
 
 The first digit (A) can assume the values 0,1,2:
 
@@ -73,6 +75,7 @@ The second digit (B) can assume the values 0,1:
 
 
 *Mnemonics:* Bethe-Salpeter COUPLING  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -81,7 +84,7 @@ The second digit (B) can assume the values 0,1:
 
 
 The [[bs_coupling]] input variable defines the treatment of the coupling block
-of the [[BETHE_SALPETER]] Hamiltonian. Possible values are 0,1.
+of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
 
   * 0 =&gt; The coupling block is neglected (the so-called Tamm-Dancoff approximation). The code runs faster and the Hamiltonian matrix requires less memory (factor 4). It is a good approximation for the absorption spectrum which only requires the knowledge of Im(\epsilon). The reliability of this approximation should be tested in the case of EELF calculations. 
   * 1 =&gt; The coupling term is included (non Tamm-Dancoff approxmation). 
@@ -93,10 +96,15 @@ of the [[BETHE_SALPETER]] Hamiltonian. Possible values are 0,1.
 
 
 *Mnemonics:* Bethe-Salpeter Electron-Hole CUTOFF  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [-inf, inf]  
 *Only relevant if:* [[optdriver]] == 99  
+Test list:
+
+
+
 
 
 
@@ -111,6 +119,7 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter EXCHANGE TERM  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -128,6 +137,7 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter FREQuency MESH  
+*Mentioned in topic(s):* BSE_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.01]  
@@ -148,10 +158,16 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter HAYdock TERMinator  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
@@ -169,6 +185,7 @@ by smoothing the oscillation in the high energy part of the spectrum
 
 
 *Mnemonics:* Bethe-Salpeter HAYDOCK Number of ITERations  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 100  
@@ -188,6 +205,7 @@ is less than [[bs_haydock_tol]].
 
 
 *Mnemonics:* Bethe-Salpeter HAYDOCK TOLerance  
+*Mentioned in topic(s):* BSE_expert  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [0.02, 0]  
@@ -217,10 +235,16 @@ entire frequency range (mild criterion).
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation K-point MULTiplication factors  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
@@ -235,9 +259,16 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation Method3 WIDTH  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* real  
+*Dimensions:* scalar  
 *Default value:* 1.0  
 *Only relevant if:* [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t34.in]]
+
+
 
 
 
@@ -251,9 +282,16 @@ interpolation
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation METHOD  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
+*Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
@@ -269,16 +307,22 @@ interpolation
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation MODE  
+*Mentioned in topic(s):* BSE_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
 [[bs_interp_mode]] selects the mode of interpolation:
 
-  * 0 =&gt; No interpolation. Standard [[BETHE_SALPETER]] computation is performed 
+  * 0 =&gt; No interpolation. Standard Bethe-Salpeter computation is performed 
   * 1 =&gt; Simple interpolation 
   * 2 =&gt; Treatment of the divergence on the whole set of dense k-points 
   * 3 =&gt; Treatment of the divergence along the diagonal in k-space and simple interpolation elsewhere. 
@@ -290,10 +334,16 @@ interpolation
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation PREParation  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t31.in]]
+
+
 
 
 
@@ -308,9 +358,16 @@ coefficients used for the interpolation.
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
+*Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
@@ -323,6 +380,7 @@ Gives the index of the neighbour that is used for Rohlfing & Louie method
 
 
 *Mnemonics:* Bethe-Salpeter Lowest Occupied BAND  
+*Mentioned in topic(s):* BSE_compulsory  
 *Variable type:* integer  
 *Dimensions:* ([[nsppol]])  
 *Default value:* 0  
@@ -343,10 +401,16 @@ variable.
 
 
 *Mnemonics:* Bethe-Salpeter Number of STATES  
+*Mentioned in topic(s):* BSE_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t50.in]]
+
+
 
 
 

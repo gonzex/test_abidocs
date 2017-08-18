@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* GET the first-order density from _1DEN file  
+*Mentioned in topic(s):* nonlinear_useful, ElPhonInt_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -31,6 +32,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the first-order wavefunctions from _1WF file   
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -85,9 +87,14 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the Bethe-Salpeter COUPling block from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -114,9 +121,15 @@ from a disk file, so that it is as if [[getbscoup]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the Bethe-Salpeter EIGenstates from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+
+
 
 
 
@@ -143,9 +156,15 @@ from a disk file, so that it is as if [[getbseig]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the Bethe-Salpeter RESOnant block from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+
+
 
 
 
@@ -172,9 +191,16 @@ from a disk file, so that it is as if [[getbsreso]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the DDB from ...  
+*Mentioned in topic(s):* ElPhonInt_expert, TDepES_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
+- v8:  [[tests/v8/Input/t44.in]]
+
+
 
 
 
@@ -212,6 +238,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the DDK wavefunctions from _1WF file  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -266,6 +293,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the DENsity from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -313,9 +341,14 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the HAYDOCK restart file from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -341,9 +374,16 @@ initialisation.
 
 
 *Mnemonics:* GET OCC parameters from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v2:  [[tests/v2/Input/t11.in]]
+- v3:  [[tests/v3/Input/t18.in]]
+
+
 
 
 
@@ -385,6 +425,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET QuasiParticle Structure  
+*Mentioned in topic(s):* multidtset_useful, GW_useful, Susceptibility_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -392,7 +433,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 Used when [[ndtset]]&gt;0 (multi-dataset mode) and [[optdriver]]=3, or 4
-(screening or sigma step of a [[GW]] calculation), to indicate that the
+(screening or sigma step of a GW calculation), to indicate that the
 eigenvalues and possibly the wavefunctions have to be taken from a previous
 quasiparticle calculation (instead of the usual LDA starting point). This is
 to achieve quasiparticle self-consistency. See also [[irdqps]]  
@@ -414,6 +455,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET SCReening (the inverse dielectric matrix) from ...  
+*Mentioned in topic(s):* multidtset_useful, GW_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -421,8 +463,8 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 Used when [[ndtset]]&gt;0 (multi-dataset mode) and [[optdriver]]=4 (sigma step
-of a [[GW]] calculation), to indicate that the dielectric matrix (_SCR file)
-is to be taken from the output of a previous dataset. It is used to chain the
+of a GW calculation), to indicate that the dielectric matrix (_SCR file) is to
+be taken from the output of a previous dataset. It is used to chain the
 calculations, since it describes from which dataset the OUTPUT dielectric
 matrix is to be taken, as INPUT of the present dataset.  
 If [[getscr]]==0, no such use of previously computed output _SCR file is done.  
@@ -452,24 +494,31 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET SUSCEPtibility (the irreducible polarizability) from ...  
+*Mentioned in topic(s):* multidtset_useful, GW_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t70.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
+
 
 
 
 Used when [[ndtset]]&gt;0 (multi-dataset mode) and [[optdriver]]=4 (sigma step
-of a [[GW]] calculation), to indicate that the irreducible polarizability
-(_SUSC file) is to be taken from the output of a previous dataset. It is used
-to chain the calculations, since it describes from which dataset the OUTPUT
+of a GW calculation), to indicate that the irreducible polarizability (_SUSC
+file) is to be taken from the output of a previous dataset. It is used to
+chain the calculations, since it describes from which dataset the OUTPUT
 susceptibility is to be taken, as INPUT of the present dataset. Performing a
-[[GW]] calculations starting from the _SUSC file instead of the _SCR file
-presents the advantage that starting from the irreducible polarizability, one
-can calculate the screened interaction using different expressions without
-having to perform a screening calculation from scratch. For example, it is
-possible to apply a cutoff to the Coulomb interaction in order to facilitate
-the convergence of the [[GW]] correction with respect to the size of the
-supercell (see [[vcutgeo]] and [[icutcoul]])  
+GW calculations starting from the _SUSC file instead of the _SCR file presents
+the advantage that starting from the irreducible polarizability, one can
+calculate the screened interaction using different expressions without having
+to perform a screening calculation from scratch. For example, it is possible
+to apply a cutoff to the Coulomb interaction in order to facilitate the
+convergence of the GW correction with respect to the size of the supercell
+(see [[vcutgeo]] and [[icutcoul]])  
 If [[getsuscep]]==0, no such use of previously computed output _SUSC file is
 done.  
 If [[getsuscep]] is positive, its value gives the index of the dataset from
@@ -498,6 +547,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the wavefunctions from _WFK file   
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -552,6 +602,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the wavefunctions from _WFQ file   
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -606,11 +657,17 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* Integer that governs the ReaDing of 1st-order DEN file  
+*Mentioned in topic(s):* nonlinear_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in]]
+
+
 
 
 
@@ -632,9 +689,16 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of _1WF files   
+*Mentioned in topic(s):* DFPT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in]]
+- v3:  [[tests/v3/Input/t77.in]]
+
+
 
 
 
@@ -668,9 +732,14 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of COUPling block  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -684,9 +753,15 @@ block produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of BS_EIG file  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]]
+
+
 
 
 
@@ -700,9 +775,15 @@ eigenvectors produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of RESOnant block  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
 
 
 
@@ -716,11 +797,17 @@ block produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of DDB file  
+*Mentioned in topic(s):* ElPhonInt_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
+Test list:
+
+- v7:  [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]]
+
+
 
 
 
@@ -745,9 +832,16 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of DDK wavefunctions, in _1WF files  
+*Mentioned in topic(s):* DFPT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]]
+- v5:  [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]]
+
+
 
 
 
@@ -781,11 +875,20 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of DEN file  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]]
+- tutorial:  [[tests/tutorial/Input/tudet_1.in]]
+- v5:  [[tests/v5/Input/t38.in]], [[tests/v5/Input/t40.in]]
+- wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
 
 
 
@@ -804,9 +907,14 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of the HAYDOCK restart file  
+*Mentioned in topic(s):* BSE_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -820,9 +928,16 @@ produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of QuasiParticle Structure  
+*Mentioned in topic(s):* GW_useful, multidtset_useful, Susceptibility_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
+- wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
 
 
 
@@ -837,9 +952,18 @@ achieve a self-consistent quasiparticle calculations. See also [[getqps]]
 
 
 *Mnemonics:* Integer that governs the ReaDing of the SCReening  
+*Mentioned in topic(s):* GW_useful, multidtset_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+- tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+
+
 
 
 
@@ -860,9 +984,15 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of the SUSCEPtibility  
+*Mentioned in topic(s):* GW_useful, multidtset_useful, SelfEnergy_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
+
+
 
 
 
@@ -883,6 +1013,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of _WFK files  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -919,9 +1050,16 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of _WFQ files  
+*Mentioned in topic(s):* DFPT_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- paral:  [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]]
+- v7:  [[tests/v7/Input/t51.in]]
+
+
 
 
 
@@ -955,15 +1093,22 @@ Response-function calculation :
 
 
 *Mnemonics:* Kohn Sham Structure file FORMat  
+*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- etsf_io:  [[tests/etsf_io/Input/t02.in]]
+- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
 
 
 
 Governs the choice of the format for the file that contains the Kohn-Sham
-electronic structure information, for use in [[GW]] calculations, see the
-input variables [[optdriver]] and [[nbandkss]].
+electronic structure information, for use in GW calculations, see the input
+variables [[optdriver]] and [[nbandkss]].
 
   * [[kssform]]=1, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through full diagonalization of the complete Hamiltonian matrix. The file has at the beginning the standard abinit header. 
   * [[kssform]]=3, a single file .kss (double precision) containing complete information on the Kohn Sham Structure (eigenstates and the pseudopotentials used) will be generated through the usual conjugate gradient algorithm (so, a restricted number of states). The file has at the beginning the standard abinit header. 
@@ -978,9 +1123,17 @@ k-points.
 
 
 *Mnemonics:* PRinT 1-DiMensional potential and density  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- fast:  [[tests/fast/Input/t30.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v7:  [[tests/v7/Input/t04.in]], [[tests/v7/Input/t05.in]]
+
+
 
 
 
@@ -995,6 +1148,7 @@ density on bi-dimensional slices of the FFT grid.
 
 
 *Mnemonics:* PRinT the DENsity  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]]>1,
@@ -1072,6 +1226,7 @@ to another, use the _DEN file for that.
 
 
 *Mnemonics:* PRinT the Density Of States  
+*Mentioned in topic(s):* printing_prdos, ElecDOS_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1158,9 +1313,15 @@ tetrahedron method (as [[prtdos]]=2).
 
 
 *Mnemonics:* PRinT the Density Of States with M decomposition  
+*Mentioned in topic(s):* printing_prdos, ElecDOS_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t40.in]]
+
+
 
 
 
@@ -1181,6 +1342,7 @@ spherical harmonics in the same basis as the LDA+U occupation matrix.
 
 
 *Mnemonics:* PRinT EIGenenergies  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]] > 1,
@@ -1199,9 +1361,16 @@ eigenvalues is printed.
 
 
 *Mnemonics:* PRinT Electron Localization Function (ELF)  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v5:  [[tests/v5/Input/t50.in]]
+
+
 
 
 
@@ -1234,9 +1403,16 @@ Please note that ELF is ** not ** yet implemented in the case of PAW
 
 
 *Mnemonics:* PRinT Fermi SURFace file  
+*Mentioned in topic(s):* printing_prfermi  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t14.in]]
+- v7:  [[tests/v7/Input/t88.in]]
+
+
 
 
 
@@ -1261,9 +1437,17 @@ Xcrysden)
 
 
 *Mnemonics:* PRinT the Gradient of electron DENsity  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v1:  [[tests/v1/Input/t21.in]]
+- v6:  [[tests/v6/Input/t12.in]]
+
+
 
 
 
@@ -1282,9 +1466,17 @@ unformatted output file is described below, see section 6).
 
 
 *Mnemonics:* PRinT the GEOmetry analysis  
+*Mentioned in topic(s):* printing_prgeo  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- fast:  [[tests/fast/Input/t27.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v6:  [[tests/v6/Input/t30.in]]
+
+
 
 
 
@@ -1314,9 +1506,18 @@ If [[prtgeo]]&gt;0, the maximum number of atoms ([[natom]]) is 9999.
 
 
 *Mnemonics:* PRinT the GKK matrix elements file  
+*Mentioned in topic(s):* printing_prngs, ElPhonInt_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/teph_1.in]]
+- v5:  [[tests/v5/Input/t85.in]]
+- v6:  [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
+- v7:  [[tests/v7/Input/t90.in]]
+
+
 
 
 
@@ -1334,9 +1535,15 @@ electron-phonon treatment in ABINIT is given in the tutorial
 
 
 *Mnemonics:* PRinT the GSR file  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* prtgsr = 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t30.in]]
+
+
 
 
 
@@ -1354,9 +1561,19 @@ Note that, by default, the GSR file contains the electronic density unless
 
 
 *Mnemonics:* PRinT the Kinetic energy DENsity  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t19.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v1:  [[tests/v1/Input/t21.in]]
+- v5:  [[tests/v5/Input/t51.in]]
+- v6:  [[tests/v6/Input/t12.in]], [[tests/v6/Input/t17.in]], [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]]
+
+
 
 
 
@@ -1379,6 +1596,7 @@ case of PAW ([[usepaw]]=1) calculations.
 
 
 *Mnemonics:* PRinT the K-PoinTs sets  
+*Mentioned in topic(s):* printing_prden, Output_useful, k-points_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1418,9 +1636,17 @@ corresponding weights is produced
 
 
 *Mnemonics:* PRinT the Laplacian of electron DENsity  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v1:  [[tests/v1/Input/t21.in]]
+- v6:  [[tests/v6/Input/t12.in]]
+
+
 
 
 
@@ -1439,6 +1665,7 @@ unformatted output file is described below (see [ section 6
 
 
 *Mnemonics:* PRinT total POTential  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1468,9 +1695,15 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRint the PSPS file  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v7:  [[tests/v7/Input/t10.in]]
+
+
 
 
 
@@ -1486,9 +1719,15 @@ exit after the output of the PSPS.nc file.
 
 
 *Mnemonics:* PRinT the SPin CURrent density  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t46.in]]
+
+
 
 
 
@@ -1504,9 +1743,16 @@ yet.
 
 
 *Mnemonics:* PRinT the STM density  
+*Mentioned in topic(s):* printing_prgs, STM_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+- v4:  [[tests/v4/Input/t46.in]]
+
+
 
 
 
@@ -1555,9 +1801,17 @@ No other printing variables for density or potentials should be activated
 
 
 *Mnemonics:* PRinT the SUSCEPtibility file (the irreducible polarizability)  
+*Mentioned in topic(s):* printing_prngs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t87.in]]
+- v5:  [[tests/v5/Input/t70.in]]
+- v67mbpt:  [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t37.in]]
+
+
 
 
 
@@ -1571,9 +1825,16 @@ only the _SCR file will be output.
 
 
 *Mnemonics:* PRinT V CouLoMB  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
+- v6:  [[tests/v6/Input/t04.in]]
+
+
 
 
 
@@ -1592,9 +1853,18 @@ If **prtvclmb=2**, only the smooth part of the Coulomb potential is output.
 
 
 *Mnemonics:* PRinT V_HArtree  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- fast:  [[tests/fast/Input/t30.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
+- v6:  [[tests/v6/Input/t04.in]]
+- v8:  [[tests/v8/Input/t02.in]]
+
+
 
 
 
@@ -1620,9 +1890,19 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT V_HXC  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- fast:  [[tests/fast/Input/t30.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
+- v4:  [[tests/v4/Input/t42.in]]
+- v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]]
+- v6:  [[tests/v6/Input/t04.in]]
+
+
 
 
 
@@ -1649,6 +1929,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT VOLume  
+*Mentioned in topic(s):* printing_prgs, Output_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1693,9 +1974,17 @@ This debugging feature is not yet activated in the RF routines. Note that
 
 
 *Mnemonics:* PRinT VOLume for IMaGes  
+*Mentioned in topic(s):* printing_prgs, Output_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+- v6:  [[tests/v6/Input/t21.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1716,9 +2005,16 @@ total energy and convergence residuals only.
 
 
 *Mnemonics:* PRinT V_PSeudoPotential  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
+- v6:  [[tests/v6/Input/t04.in]]
+
+
 
 
 
@@ -1744,9 +2040,18 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT V_XC  
+*Mentioned in topic(s):* printing_prpot  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- bigdft:  [[tests/bigdft/Input/t22.in]]
+- fast:  [[tests/fast/Input/t30.in]]
+- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
+- v8:  [[tests/v8/Input/t02.in]]
+
+
 
 
 
@@ -1772,6 +2077,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT WANT file  
+*Mentioned in topic(s):* printing_prgs, Wannier_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1829,9 +2135,9 @@ Notes:
 
     * The files that are created can also be used by Wannier90 in stand-alone mode. 
     * In order to use Wannier90 as a postprocessing program for ABINIT you might have to recompile it with the appropriate flags (see ABINIT makefile). You might use ./configure --enable-wannier90 
-    * There are some other variables related to the interface of Wannier90 and ABINIT. See, [ VARW90 ](varw90.html) . 
+    * There are some other variables related to the interface of Wannier90 and ABINIT. See [[varset:w90]]. 
 
-  * [[prtwant]]=3 =&gt; Use the ** ABINIT- Wannier90 ** interface after converting the input wavefunctions to ** [[GW]] quasiparticle ** wavefunctions. 
+  * [[prtwant]]=3 =&gt; Use the ** ABINIT- Wannier90 ** interface after converting the input wavefunctions to **quasiparticle** wavefunctions. 
 
 ABINIT will produce the input files required by Wannier90 and it will run
 Wannier90 to produce the Maximally-localized Wannier functions (see [
@@ -1839,10 +2145,10 @@ http://www.wannier.org ](http://www.wannier.org) ).
 
 Additional Notes:
 
-    * An input file of LDA wave functions is required which is completely consistent with the _KSS file used in the self-consistent [[GW]] calculation. This means that [[kssform]] 3 must be used to create the _KSS file and the output _WFK file from the same run must be used as input here. 
-    * Wannier90 requires [[nshiftk]]=1, and [[shiftk]]= 0 0 0 is recommended. The k-point set used for the [[GW]] calculation, typically the irreducible BZ set created using [[kptopt]]=1, and that for the Abinit- Wannier90 interface must be consistent. 
-    * Full-BZ wavefunctions should be generated in the run calling the interface by setting [[kptopt]]=3, [[iscf]]=-2, and [[nstep]]=3. This will simply use symmetry to transform the input IBZ wavefunctions to the full BZ set, still consistent with the [[GW]] _KSS input. 
-    * The final _QPS file created by the self-consistent [[GW]] run is required as input. 
+    * An input file of LDA wave functions is required which is completely consistent with the _KSS file used in the self-consistent GW calculation. This means that [[kssform]] 3 must be used to create the _KSS file and the output _WFK file from the same run must be used as input here. 
+    * Wannier90 requires [[nshiftk]]=1, and [[shiftk]]= 0 0 0 is recommended. The k-point set used for the GW calculation, typically the irreducible BZ set created using [[kptopt]]=1, and that for the Abinit- Wannier90 interface must be consistent. 
+    * Full-BZ wavefunctions should be generated in the run calling the interface by setting [[kptopt]]=3, [[iscf]]=-2, and [[nstep]]=3. This will simply use symmetry to transform the input IBZ wavefunctions to the full BZ set, still consistent with the GW _KSS input. 
+    * The final _QPS file created by the self-consistent GW run is required as input. 
     * Any value of [[gwcalctyp]] between between 20 and 29 should be suitable, so, for example, Hartree-Fock maximally-localized Wannier functions could be generated setting [[gwcalctyp]]=25. 
 
 
@@ -1852,6 +2158,7 @@ Additional Notes:
 
 
 *Mnemonics:* PRinT the WaveFunction  
+*Mentioned in topic(s):* printing_prden, vdw_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]] > 1,
@@ -1952,10 +2259,16 @@ probably something set wrong in the input file.
 
 
 *Mnemonics:* PRinT Wavefunction file on the FULL mesh  
+*Mentioned in topic(s):* printing_prden  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[prtwf]] == 1  
+Test list:
+
+- v7:  [[tests/v7/Input/t36.in]]
+
+
 
 
 
@@ -1974,9 +2287,15 @@ greater than 3.
 
 
 *Mnemonics:* PRinT an XML output  
+*Mentioned in topic(s):* printing_prgs  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t79.in]]
+
+
 
 
 

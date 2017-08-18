@@ -2,10 +2,16 @@
 
 
 *Mnemonics:* ADiabatic Path-Integral Molecular Dynamics  
+*Mentioned in topic(s):* PIMD_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[imgmov]]==9 or [[imgmov]]==13  
+Test list:
+
+- v7:  [[tests/v7/Input/t08.in]]
+
+
 
 
 
@@ -33,10 +39,16 @@ NOT YET USABLE
 
 
 *Mnemonics:* ADiabatic Path-Integral Molecular Dynamics: GAMMA factor  
+*Mentioned in topic(s):* PIMD_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[adpimd]]==1 and [[imgmov]] in [9,13]  
+Test list:
+
+- v7:  [[tests/v7/Input/t08.in]]
+
+
 
 
 
@@ -51,6 +63,7 @@ NOT YET USABLE
 
 
 *Mnemonics:* Atomic Mass Units  
+*Mentioned in topic(s):* PIMD_useful, Phonons_useful, AtomTypes_basic, Artificial_basic  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* None  
@@ -93,9 +106,15 @@ genetic algorithm (not coded in v7.0.0 though).
 
 
 *Mnemonics:* Barostat MASS  
+*Mentioned in topic(s):* MolecularDynamics_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10  
+Test list:
+
+- v5:  [[tests/v5/Input/t01.in]]
+
+
 
 
 
@@ -109,10 +128,16 @@ molecular dynamics)
 
 
 *Mnemonics:* Climbing-Image Nudged Elastic Band: STARTing iteration  
+*Mentioned in topic(s):* TransPath_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 7  
 *Only relevant if:* [[imgmov]]== 5 and [[neb_algo]]==2  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -131,9 +156,15 @@ _ See: J. Chem. Phys. 113, 9901 (2000). _
 
 
 *Mnemonics:* DELAY between trials to PERMUTE atoms  
+*Mentioned in topic(s):* MolecularDynamics_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
+
+
 
 
 
@@ -149,9 +180,14 @@ permutation trials.
 
 
 *Mnemonics:* Direct Inversion in the Iterative Subspace MEMORY  
+*Mentioned in topic(s):* MolecularDynamics_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 8  
+Test list:
+
+
+
 
 
 
@@ -166,6 +202,7 @@ zero-force and stress configurations.
 
 
 *Mnemonics:* lattice DILATation : MaXimal value  
+*Mentioned in topic(s):* GeoOpt_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -197,6 +234,7 @@ It is possible to use [[dilatmx]] when [[optcell]] =0, but a value larger than
 
 
 *Mnemonics:* Delta Time for IONs  
+*Mentioned in topic(s):* PIMD_compulsory, MolecularDynamics_compulsory  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100  
@@ -228,10 +266,19 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* DYNamics of the IMAGE  
+*Mentioned in topic(s):* PIMD_expert, TransPath_expert  
 *Variable type:* integer  
 *Dimensions:* ([[nimage]])  
 *Default value:* *1  
 *Comment:* if [[imgmov]] in [2,5] (String Method, NEB), <b>dynimage(1)</b>=0 and <b>dynimage([[nimage]])</b>=0.  
+Test list:
+
+- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+- v6:  [[tests/v6/Input/t22.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -254,6 +301,7 @@ In order to save CPU time, the computation of properties of static images
 
 
 *Mnemonics:* Energy CUToff SMearing  
+*Mentioned in topic(s):* Planewaves_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -294,9 +342,15 @@ likely that this value is OK as soon as [[ecut]] is larger than 4Ha.
 
 
 *Mnemonics:* internal FRICTION coefficient  
+*Mentioned in topic(s):* MolecularDynamics_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.001  
+Test list:
+
+- v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
+
+
 
 
 
@@ -318,9 +372,16 @@ units)/Bohr  2  . See J. Chelikowsky, J. Phys. D : Appl Phys. 33(2000)R33.
 
 
 *Mnemonics:* Forces to (X) CARTesian coordinates FACTOR  
+*Mentioned in topic(s):* TransPath_expert, GeoOpt_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1 (Bohr^2)/Hartree  
+Test list:
+
+- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+- v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
+
+
 
 
 
@@ -337,9 +398,14 @@ stopping criterion defined by [[tolmxf]] relates to these scaled stresses.
 
 
 *Mnemonics:* Genetic Algorithm - ALGOrithm selection  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+
+
 
 
 
@@ -354,9 +420,15 @@ Right now only value of 1 (enthalpy) works.
 
 
 *Mnemonics:* Genetic Algorithm FITNESS function selection  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v6:  [[tests/v6/Input/t27.in]]
+
+
 
 
 
@@ -377,9 +449,15 @@ of enthalpies
 
 
 *Mnemonics:* Genetic Algorithm Number of RULES  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v6:  [[tests/v6/Input/t27.in]]
+
+
 
 
 
@@ -393,9 +471,15 @@ choose between any of them. Right now we have 4 rules. See [[ga_rules]]
 
 
 *Mnemonics:* Genetic Algorithm OPTimal PERCENT  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.2  
+Test list:
+
+- v6:  [[tests/v6/Input/t27.in]]
+
+
 
 
 
@@ -409,9 +493,15 @@ the following iteration.
 
 
 *Mnemonics:* Genetic Algorithm RULES  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v6:  [[tests/v6/Input/t27.in]]
+
+
 
 
 
@@ -437,9 +527,17 @@ it is inverted.
 
 
 *Mnemonics:* GET CELL parameters from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- gpu:  [[tests/gpu/Input/t04.in]]
+- tutorespfn:  [[tests/tutorespfn/Input/telast_6.in]]
+- v1:  [[tests/v1/Input/t78.in]], [[tests/v1/Input/t80.in]]
+
+
 
 
 
@@ -466,9 +564,14 @@ equivalent to using a null get variable).
 
 
 *Mnemonics:* GET VEL from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+
+
 
 
 
@@ -500,9 +603,17 @@ is allowed, despite the different coordinate system.
 
 
 *Mnemonics:* GET XCART from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t61.in]], [[tests/v1/Input/t64.in]], [[tests/v1/Input/t65.in]], [[tests/v1/Input/t66.in]], [[tests/v1/Input/t74.in]], [[tests/v1/Input/t75.in]]
+- v3:  [[tests/v3/Input/t80.in]]
+- v6:  [[tests/v6/Input/t68.in]]
+
+
 
 
 
@@ -534,9 +645,18 @@ is allowed, despite the different coordinate system.
 
 
 *Mnemonics:* GET XRED from ...  
+*Mentioned in topic(s):* multidtset_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutorespfn:  [[tests/tutorespfn/Input/telast_1.in]]
+- v1:  [[tests/v1/Input/t60.in]], [[tests/v1/Input/t64.in]], [[tests/v1/Input/t74.in]], [[tests/v1/Input/t80.in]]
+- v2:  [[tests/v2/Input/t44.in]]
+- v6:  [[tests/v6/Input/t22.in]]
+
+
 
 
 
@@ -568,9 +688,15 @@ is allowed, despite the different coordinate system.
 
 
 *Mnemonics:* Geometry Optimization PRECONditioner equations  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t02.in]]
+
+
 
 
 
@@ -590,9 +716,15 @@ Set the kind of preconditioner to be used for Geometry Optimization
 
 
 *Mnemonics:* Geometry Optimization PREconditioner PaRaMeters equations  
+*Mentioned in topic(s):* GeoOpt_expert  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t02.in]]
+
+
 
 
 
@@ -607,9 +739,17 @@ Optimization
 
 
 *Mnemonics:* Indices of AToms in CONstraint equations  
+*Mentioned in topic(s):* GeoConstraints_useful  
 *Variable type:* integer  
 *Dimensions:* ([[natcon]],[[nconeq]])  
 *Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t40.in]]
+- v6:  [[tests/v6/Input/t22.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -626,6 +766,7 @@ this should be described)
 
 
 *Mnemonics:* Indices of AToms that are FIXed   
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* ([[natfix]])  
 *Default value:* None  
@@ -652,9 +793,9 @@ being 0 if the atom is not fixed along the direction, and 1 if the atom is
 fixed along the direction. When some atoms are fixed along 1 or 2 directions,
 the use of symmetries is restricted to symmetry operations whose (3x3)
 matrices [[symrel]] are diagonal.  
-If the geometry builder is used, [[iatfix]] will be related to the
-preprocessed set of atoms, generated by the geometry builder. The user must
-thus foresee the effect of this geometry builder (see [[objarf]]).
+If the atom manipulator is used, [[iatfix]] will be related to the
+preprocessed set of atoms, generated by the atom manipulator. The user must
+thus foresee the effect of this atom manipulator (see [[objarf]]).
 
 
 * * *
@@ -663,10 +804,17 @@ thus foresee the effect of this geometry builder (see [[objarf]]).
 
 
 *Mnemonics:* Indices of AToms that are FIXed along the X direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* ([[natfixx]])  
 *Default value:* None  
 *Only relevant if:* [[natfixx]] > 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]]
+- v6:  [[tests/v6/Input/t25.in]]
+
+
 
 
 
@@ -684,10 +832,16 @@ along x, y or z directions, or a combination of these. See the variable
 
 
 *Mnemonics:* Indices of AToms that are FIXed along the Y direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* ([[natfixy]])  
 *Default value:* None  
 *Only relevant if:* [[natfixy]] > 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
+
+
 
 
 
@@ -705,10 +859,16 @@ along x, y or z directions, or a combination of these. See the variable
 
 
 *Mnemonics:* Indices of AToms that are FIXed along the Z direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* ([[natfixz]])  
 *Default value:* None  
 *Only relevant if:* [[natfixz]] > 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
+
+
 
 
 
@@ -726,6 +886,7 @@ along x, y or z directions, or a combination of these. See the variable
 
 
 *Mnemonics:* IMaGe MOVEs  
+*Mentioned in topic(s):* PIMD_compulsory, TransPath_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -786,6 +947,7 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* IONic MOVEs  
+*Mentioned in topic(s):* MolecularDynamics_compulsory, GeoOpt_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -944,9 +1106,15 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* Integer governing the computation of STATic IMaGes  
+*Mentioned in topic(s):* PIMD_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
+
+
 
 
 
@@ -966,9 +1134,20 @@ If [[istatimg]]=1, the total energy of static images is computed.
 
 
 *Mnemonics:* Molecular Dynamics TEMPeratures  
+*Mentioned in topic(s):* PIMD_compulsory, MolecularDynamics_compulsory  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [300, 300]  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t42.in]]
+- paral:  [[tests/paral/Input/t41.in]]
+- v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
+- v5:  [[tests/v5/Input/t01.in]], [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -985,10 +1164,16 @@ at itime=1 to the final temperature ** mdtemp(2) ** at the end of the
 
 
 *Mnemonics:* Molecular Dynamics WALL location  
+*Mentioned in topic(s):* MolecularDynamics_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10000.0  
 *Comment:* the walls are extremely far away  
+Test list:
+
+- v2:  [[tests/v2/Input/t87.in]]
+
+
 
 
 
@@ -1008,11 +1193,17 @@ although Angstrom can be specified, if preferred, since [[mdwall]] has the
 
 
 *Mnemonics:* Minimal Energy Path search: MaXimum allowed STEP size  
+*Mentioned in topic(s):* TransPath_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.4 if [[imgmov]]==5,
 100.0 otherwise.
   
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -1032,9 +1223,15 @@ R_i)] _ where the _ R_i _ are the positions of the atoms in the cell.
 
 
 *Mnemonics:* Minimal Energy Path ordinary differential equation SOLVER  
+*Mentioned in topic(s):* TransPath_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -1084,9 +1281,17 @@ Elastic Band ([[imgmov]]=5).
 
 
 *Mnemonics:* Number of AToms in CONstraint equations  
+*Mentioned in topic(s):* GeoConstraints_useful  
 *Variable type:* integer  
 *Dimensions:* ([[nconeq]])  
 *Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t40.in]]
+- v6:  [[tests/v6/Input/t22.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1101,6 +1306,7 @@ molecular dynamics (see [[nconeq]] , [[iatcon]], and [[wtatcon]]).
 
 
 *Mnemonics:* Number of Atoms that are FIXed  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1120,9 +1326,16 @@ When [[natfix]] &gt; 0, [[natfix]] entries should be provided in array
 
 
 *Mnemonics:* Number of Atoms that are FIXed along the X direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]]
+- v6:  [[tests/v6/Input/t25.in]]
+
+
 
 
 
@@ -1138,9 +1351,15 @@ When [[natfixx]] &gt; 0, [[natfixx]] entries should be provided in array
 
 
 *Mnemonics:* Number of Atoms that are FIXed along the Y direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
+
+
 
 
 
@@ -1156,9 +1375,15 @@ When [[natfixy]] &gt; 0, [[natfixy]] entries should be provided in array
 
 
 *Mnemonics:* Number of Atoms that are FIXed along the Z direction  
+*Mentioned in topic(s):* GeoConstraints_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
+
+
 
 
 
@@ -1174,9 +1399,17 @@ When [[natfixz]] &gt; 0, [[natfixz]] entries should be provided in array
 
 
 *Mnemonics:* Number of CONstraint EQuations  
+*Mentioned in topic(s):* GeoConstraints_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t40.in]]
+- v6:  [[tests/v6/Input/t22.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1191,10 +1424,16 @@ during structural optimization or molecular dynamics (see [[natcon]] ,
 
 
 *Mnemonics:* Nudged Elastic Band ALGOrithm  
+*Mentioned in topic(s):* TransPath_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[imgmov]]==5  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -1236,12 +1475,18 @@ saddle point).
 
 
 *Mnemonics:* Nudged Elastic Band: SPRING constant  
+*Mentioned in topic(s):* TransPath_useful  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [0.02, 0.15] if [[neb_algo]]==2,
 [0.05, 0.05] otherwise.
   
 *Only relevant if:* [[imgmov]]==5  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -1259,6 +1504,7 @@ _ See: J. Chem. Phys. 113, 9901 (2000). _
 
 
 *Mnemonics:* Number of IMAGEs  
+*Mentioned in topic(s):* PIMD_compulsory, TransPath_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1325,9 +1571,16 @@ those of the second image.
 
 
 *Mnemonics:* Number of NOSe masses  
+*Mentioned in topic(s):* PIMD_basic, MolecularDynamics_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v5:  [[tests/v5/Input/t01.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+
+
 
 
 
@@ -1344,10 +1597,16 @@ The mass of these thermostats is given by [[qmass]].
 
 
 *Mnemonics:* NOSE thermostat INERTia factor  
+*Mentioned in topic(s):* MolecularDynamics_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100000  
 *Only relevant if:* [[ionmov]]==8  
+Test list:
+
+- v2:  [[tests/v2/Input/t87.in]]
+
+
 
 
 
@@ -1366,6 +1625,7 @@ temperature of the thermostat (see [[mdtemp]]).
 
 
 *Mnemonics:* Number of TIME steps  
+*Mentioned in topic(s):* MolecularDynamics_basic, GeoOpt_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1386,6 +1646,7 @@ initialisation of other [[ionmov]] values is only one SCF call.
 
 
 *Mnemonics:* Number of TIME steps for IMAGE propagation  
+*Mentioned in topic(s):* PIMD_compulsory, TransPath_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1407,6 +1668,7 @@ all images.
 
 
 *Mnemonics:* OPTimize the CELL shape and dimensions  
+*Mentioned in topic(s):* PIMD_basic, GeoOpt_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1448,10 +1710,17 @@ zero [[optcell]] value. There are still a few problems at that level.
 
 
 *Mnemonics:* Path Integral fictitious MASSes  
+*Mentioned in topic(s):* PIMD_useful  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[ntypat]]  
 *Only relevant if:* [[imgmov]]=9 or 13  
+Test list:
+
+- v6:  [[tests/v6/Input/t26.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+
+
 
 
 
@@ -1475,10 +1744,16 @@ value.
 
 
 *Mnemonics:* Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate  
+*Mentioned in topic(s):* PIMD_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[imgmov]]=9 or 13  
+Test list:
+
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1508,9 +1783,17 @@ Journal 7, 12-23 (2007)](http://doi.org/10.1273/cbij.7.12).
 
 
 *Mnemonics:* Path Integral coordinate TRANSFORMation  
+*Mentioned in topic(s):* PIMD_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t26.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1536,8 +1819,15 @@ If equal to 2, staging transformation.
 
 
 *Mnemonics:* PRinT by ATom LIST of ATom  
+*Mentioned in topic(s):* printing_prgeo, Output_useful  
 *Variable type:* integer  
+*Dimensions:* ([[natom]])  
 *Default value:* 0  
+Test list:
+
+- v4:  [[tests/v4/Input/t97.in]]
+
+
 
 
 
@@ -1556,9 +1846,16 @@ atoms.
 
 
 *Mnemonics:* Q thermostat MASS  
+*Mentioned in topic(s):* PIMD_basic, MolecularDynamics_basic  
 *Variable type:* real  
 *Dimensions:* ([[nnos]])  
 *Default value:* *10.0  
+Test list:
+
+- v5:  [[tests/v5/Input/t01.in]]
+- v7:  [[tests/v7/Input/t08.in]]
+
+
 
 
 
@@ -1580,9 +1877,15 @@ ensemble). In that case, [[optcell]]=2 iS NOT USABLE yet.
 
 
 *Mnemonics:* RANDOM ATomic POSitions  
+*Mentioned in topic(s):* crystal_expert, GeoOpt_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t27.in]]
+
+
 
 
 
@@ -1590,7 +1893,7 @@ Control the inner coordinates, which can be generated randomly by using 4
 different methods depending ont its value  
 (0) if zero, no random generation and xred are taken as they have been
 introduced by the user  
-(1) if one, particles are generated completly random within the unit cell.  
+(1) if one, particles are generated completely random within the unit cell.  
 (2) if two, particles are generated randomly but the inner particle distance
 is always larger than a factor of the sum of the covalent bonds between the
 atoms (note : this is incompatible with the definition of alchemical mixing,
@@ -1603,9 +1906,16 @@ in which [[ntypat]] differs from [[npsp]])
 
 
 *Mnemonics:* RESTART from (X,F) history  
+*Mentioned in topic(s):* PIMD_useful, MolecularDynamics_useful, GeoOpt_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- v1:  [[tests/v1/Input/t75.in]], [[tests/v1/Input/t80.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 
@@ -1643,9 +1953,15 @@ NOTES:
 
 
 *Mnemonics:* SIGN of PERMutation potential  
+*Mentioned in topic(s):* MolecularDynamics_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
+
+
 
 
 
@@ -1658,9 +1974,18 @@ NOTES:
 
 
 *Mnemonics:* STRess FACTor  
+*Mentioned in topic(s):* GeoOpt_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_123.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]]
+- tutorespfn:  [[tests/tutorespfn/Input/telast_1.in]], [[tests/tutorespfn/Input/telast_6.in]]
+- v1:  [[tests/v1/Input/t78.in]]
+- v5:  [[tests/v5/Input/t79.in]]
+
+
 
 
 
@@ -1676,9 +2001,15 @@ scaled stresses.
 
 
 *Mnemonics:* STRING method ALGOrithm  
+*Mentioned in topic(s):* TransPath_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- v6:  [[tests/v6/Input/t24.in]]
+
+
 
 
 
@@ -1714,9 +2045,17 @@ _
 
 
 *Mnemonics:* STRess PRECONditioner  
+*Mentioned in topic(s):* ForcesStresses_useful, GeoOpt_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
+Test list:
+
+- bigdft:  [[tests/bigdft/Input/t14.in]]
+- v5:  [[tests/v5/Input/t77.in]]
+- v6:  [[tests/v6/Input/t18.in]]
+
+
 
 
 
@@ -1731,9 +2070,17 @@ instability, decrease the default value, e.g. set it to 0.1 .
 
 
 *Mnemonics:* STRess TARGET  
+*Mentioned in topic(s):* ForcesStresses_useful, GeoOpt_useful  
 *Variable type:* real  
 *Dimensions:* (6)  
 *Default value:* [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
+Test list:
+
+- v1:  [[tests/v1/Input/t80.in]]
+- v5:  [[tests/v5/Input/t01.in]]
+- v6:  [[tests/v6/Input/t18.in]]
+
+
 
 
 
@@ -1750,9 +2097,16 @@ Not used if [[optcell]]==0.
 
 
 *Mnemonics:* TOLerance on the mean total energy for IMaGes  
+*Mentioned in topic(s):* TransPath_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5e-05  
+Test list:
+
+- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+- v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
+
+
 
 
 
@@ -1773,9 +2127,15 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* TOLerance on the MaXimal Difference in Energy  
+*Mentioned in topic(s):* GeoOpt_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
+Test list:
+
+- v7:  [[tests/v7/Input/t15.in]]
+
+
 
 
 
@@ -1792,6 +2152,7 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* TOLerance on the MaXimal Force  
+*Mentioned in topic(s):* GeoOpt_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5e-05  
@@ -1817,6 +2178,7 @@ No meaning for RF calculations.
 
 
 *Mnemonics:* VELocity  
+*Mentioned in topic(s):* PIMD_useful, MolecularDynamics_basic  
 *Variable type:* real  
 *Dimensions:* (3,[[natom]])  
 *commentdims:* It is represented internally as [[vel]](3,[[natom]],[[nimage]])  
@@ -1829,9 +2191,9 @@ Gives the starting velocities of atoms, in cartesian coordinates, in
 Bohr/atomic time units (atomic time units given where [[dtion]] is described).  
 For [[ionmov]]=8 (Nose thermostat), if [[vel]] is not initialized, a random
 initial velocity giving the right kinetic energy will be generated.  
-If the geometry builder is used, [[vel]] will be related to the preprocessed
-set of atoms, generated by the geometry builder. The user must thus foresee
-the effect of this geometry builder (see [[objarf]]).  
+If the atom manipulator is used, [[vel]] will be related to the preprocessed
+set of atoms, generated by the atom manipulator. The user must thus foresee
+the effect of this atom manipulator (see [[objarf]]).  
 Velocities evolve is [[ionmov]]==1.
 
 
@@ -1841,6 +2203,7 @@ Velocities evolve is [[ionmov]]==1.
 
 
 *Mnemonics:* VELocity of the CELL parameters  
+*Mentioned in topic(s):* PIMD_expert  
 *Variable type:* real  
 *Dimensions:* (3,3)  
 *commentdims:* It is represented internally as [[vel_cell]](3,3,[[nimage]])   
@@ -1848,6 +2211,11 @@ Velocities evolve is [[ionmov]]==1.
 *Only relevant if:* [[imgmov]] in [9,13] and [[optcell]] > 0
 (Path-Integral Molecular Dynamics
 with NPT algorithm)  
+Test list:
+
+- v6:  [[tests/v6/Input/t26.in]]
+
+
 
 
 
@@ -1863,6 +2231,7 @@ Bohr/atomic time units (atomic time units given where [[dtion]] is described).
 
 
 *Mnemonics:* VIScosity  
+*Mentioned in topic(s):* PIMD_basic,  MolecularDynamics_basic  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100  
@@ -1889,9 +2258,17 @@ Typical value range is 0.00001-0.001.
 
 
 *Mnemonics:* WeighTs for AToms in CONstraint equations  
+*Mentioned in topic(s):* GeoConstraints_useful  
 *Variable type:* real  
 *Dimensions:* (3,[[natcon]],[[nconeq]])  
 *Default value:* 0  
+Test list:
+
+- v3:  [[tests/v3/Input/t40.in]]
+- v6:  [[tests/v6/Input/t22.in]]
+- v8:  [[tests/v8/Input/t05.in]]
+
+
 
 
 

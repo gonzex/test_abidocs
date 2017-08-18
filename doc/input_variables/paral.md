@@ -2,6 +2,7 @@
 
 
 *Mnemonics:* AUTOmatisation of the PARALlelism  
+*Mentioned in topic(s):* parallelism_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -52,10 +53,18 @@ is. After having printed out the weights, the code stops.
 
 
 *Mnemonics:* BAND Per Processor  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]]
+- paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
+- tutoparal:  [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+
+
 
 
 
@@ -89,10 +98,16 @@ time spent in FFTs is divided by two).
 
 
 *Mnemonics:* GPU: choice of DEVICES on one node  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* (5)  
 *Default value:* [-1, -1, -1, -1, -1]  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
+Test list:
+
+- gpu:  [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+
+
 
 
 
@@ -126,10 +141,16 @@ GPU card are numbered starting from 0; to get the GPU devices list, type
 
 
 *Mnemonics:* GPU (Cuda): LINear ALGebra LIMIT  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2000000  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
+Test list:
+
+- gpu:  [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+
+
 
 
 
@@ -152,6 +173,7 @@ of the eigenstates.
 
 
 *Mnemonics:* GW PARAllelization level  
+*Mentioned in topic(s):* parallelism_useful, GW_basic, Susceptibility_basic, SelfEnergy_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -161,7 +183,7 @@ of the eigenstates.
 
 
 [[gwpara]] is used to choose between the two different parallelization levels
-available in the [[GW]] code. The available options are:
+available in the GW code. The available options are:
 
   * =1 =&gt; parallelisation on k points 
   * =2 =&gt; parallelisation on bands 
@@ -179,6 +201,7 @@ run, irrespectively of the number of CPUs used.
 
 
 *Mnemonics:* LOCAL ReaD WaveFunctions  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -187,7 +210,7 @@ run, irrespectively of the number of CPUs used.
 
 This input variable is used only when running abinit in parallel. If
 [[localrdwf]]=1, the input wavefunction disk file or the KSS/SCR file in case
-of [[GW]] calculations, is read locally by each processor, while if
+of GW calculations, is read locally by each processor, while if
 [[localrdwf]]=0, only one processor reads it, and broadcast the data to the
 other processors.
 
@@ -211,9 +234,15 @@ machine, the input wavefunction file must be available on all nodes if
 
 
 *Mnemonics:* MAXimum Number of CPUS  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- tutoparal:  [[tests/tutoparal/Input/tgspw_01.in]]
+
+
 
 
 
@@ -229,10 +258,16 @@ the code stops.
 
 
 *Mnemonics:* Number of mpi Processors used for ScaLapacK calls  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1000000  
 *Only relevant if:* [[optdriver]]==1 and [[paral_kgb]]==1 (Ground-state calculations with LOBPCG algorithm)  
+Test list:
+
+- paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t30.in]]
+
+
 
 
 
@@ -254,6 +289,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the BAND level  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -280,6 +316,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the FFT level  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -309,9 +346,17 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors for (Hartree)-Fock exact exchange  
+*Mentioned in topic(s):* Hybrids_useful, parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t53.in]]
+- paral:  [[tests/paral/Input/t93.in]], [[tests/paral/Input/t94.in]]
+- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]], [[tests/v7/Input/t70.in]]
+
+
 
 
 
@@ -332,9 +377,15 @@ have the better load-balancing and efficiency.
 
 
 *Mnemonics:* Number of Processors at the IMAGE level  
+*Mentioned in topic(s):* parallelism_useful, PIMD_useful, TransPath_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+
+
 
 
 
@@ -356,6 +407,7 @@ additional information on the use of k-point/band/FFT parallelisation. _
 
 
 *Mnemonics:* Number of Processors at the K-Point Level  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -385,10 +437,16 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the PERTurbation level  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_rf]]==1  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+
+
 
 
 
@@ -405,10 +463,17 @@ dataset.
 
 
 *Mnemonics:* Number of Processors at the SPINOR level  
+*Mentioned in topic(s):* parallelism_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t28.in]]
+- paral:  [[tests/paral/Input/t28.in]]
+
+
 
 
 
@@ -432,9 +497,19 @@ information on the use of band/FFT/k-point parallelisation._
 
 
 *Mnemonics:* activate PARALelization over (paw) ATOMic sites  
+*Mentioned in topic(s):* parallelism_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+Test list:
+
+- libxc:  [[tests/libxc/Input/t53.in]]
+- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]]
+- paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+- v5:  [[tests/v5/Input/t06.in]]
+- v7:  [[tests/v7/Input/t32.in]], [[tests/v7/Input/t70.in]]
+
+
 
 
 
@@ -450,6 +525,7 @@ Compatible with ground-state calculations and response function calculations
 
 
 *Mnemonics:* activate PARALelization over K-point, G-vectors and Bands  
+*Mentioned in topic(s):* parallelism_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -493,9 +569,15 @@ be optimal. To optimize the repartition use:
 
 
 *Mnemonics:* activate PARALlelization over Response Function perturbations  
+*Mentioned in topic(s):* parallelism_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+
+
 
 
 
@@ -519,10 +601,16 @@ stops.
 
 
 *Mnemonics:* Plane Wave UNBALancing: THRESHold for balancing procedure  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 40%  
 *Only relevant if:* [[paral_kgb]]==1  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t26.in]]
+
+
 
 
 
@@ -539,11 +627,18 @@ _pw_unbal_thresh_ %.
 
 
 *Mnemonics:* activate USE of GPU accelerators with CUDA (nvidia)  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[optdriver]]==0 and [[CUDA]],
 0 otherwise.
   
+Test list:
+
+- gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+- v5:  [[tests/v5/Input/t75.in]]
+
+
 
 
 
@@ -566,9 +661,16 @@ MAGMA is not used, ABINIT performances on GPUs can be poor.
 
 
 *Mnemonics:* USE ScaLapacK  
+*Mentioned in topic(s):* parallelism_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- mpiio:  [[tests/mpiio/Input/t27.in]]
+- paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
+
+
 
 
 

@@ -2,10 +2,16 @@
 
 
 *Mnemonics:* ATomic potential (V) energy SHIFTs  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* real  
 *Dimensions:* ([[natvshift]],[[nsppol]],[[natom]])  
 *Default value:* *0.0d0  
 *Only relevant if:* [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
+Test list:
+
+- v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+
+
 
 
 
@@ -27,10 +33,18 @@ sets of 7 numbers, corresponding to m=-3 to m=+3.
 
 
 *Mnemonics:* BanD limits for BERRY phase  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* integer  
 *Dimensions:* (4)  
 *Default value:* 4*0  
 *Only relevant if:* [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
+- tutorespfn:  [[tests/tutorespfn/Input/telast_5.in]]
+- v4:  [[tests/v4/Input/t66.in]]
+
+
 
 
 
@@ -54,6 +68,7 @@ will cause an early exit.
 
 
 *Mnemonics:* BERRY phase OPTions  
+*Mentioned in topic(s):* Berry_compulsory  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -113,9 +128,15 @@ In case of finite electric and displacement field calculations
 
 
 *Mnemonics:* BERRY SAVe  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_124.in]]
+
+
 
 
 
@@ -129,10 +150,16 @@ In case of finite electric and displacement field calculations
 
 
 *Mnemonics:* BERRY phase : multiple STEP  
+*Mentioned in topic(s):* Berry_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* 0 > [[berryopt]]  
+Test list:
+
+- v6:  [[tests/v6/Input/t20.in]]
+
+
 
 
 
@@ -157,9 +184,16 @@ gained with this procedure, the outlook is promising.
 
 
 *Mnemonics:* finite B FIELD calculation  
+*Mentioned in topic(s):* MagField_expert  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
+Test list:
+
+- paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+- v6:  [[tests/v6/Input/t43.in]]
+
+
 
 
 
@@ -173,10 +207,16 @@ Perform finite magnetic field calculation.
 
 
 *Mnemonics:* electric Displacement field DAMPing parameter  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1  
 *Only relevant if:* [[berryopt]] = 6 or 16  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+
+
 
 
 
@@ -198,10 +238,16 @@ calculations (berryopt=6,16,17).
 
 
 *Mnemonics:* Displacement FIELD  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 6, [[efield]]  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+
+
 
 
 
@@ -216,6 +262,7 @@ constraint during the calculation.
 
 
 *Mnemonics:* Electric FIELD  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
@@ -250,10 +297,16 @@ electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 
 
 *Mnemonics:* electric/displacement FIELD DIRection  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* 3*0  
 *Only relevant if:* [[berryopt]] = 17  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_125.in]]
+
+
 
 
 
@@ -283,10 +336,16 @@ have d_1,d_2, these are good guesses for b, c.
 
 
 *Mnemonics:* K wavevectors for BERRY phase computation  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* integer  
 *Dimensions:* (3,[[nberry]])  
 *Default value:* *0  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
+
+
 
 
 
@@ -318,10 +377,16 @@ initialize the [[kptopt]]=3 computation.
 
 
 *Mnemonics:* MAXimum Electric field STEP  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.005  
 *Only relevant if:* [[berryopt]] = 6, 16, or 17  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_126.in]]
+
+
 
 
 
@@ -337,10 +402,16 @@ in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 
 
 *Mnemonics:* Number of ATomic potential (V) energy SHIFTs (per atom)  
+*Mentioned in topic(s):* DFT+U_expert  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepawu]] /= 0, [[atvshift]]  
+Test list:
+
+- v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+
+
 
 
 
@@ -356,10 +427,16 @@ should define [[usepawu]], [[lpawu]] and [[atvshift]].
 
 
 *Mnemonics:* Number of BERRY phase computations  
+*Mentioned in topic(s):* Berry_basic  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]]
+
+
 
 
 
@@ -389,9 +466,15 @@ allowed, nor are parallel computations.
 
 
 *Mnemonics:* POLarization for CENtrosymmetric geometry  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_126.in]]
+
+
 
 
 
@@ -409,10 +492,16 @@ Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 
 
 *Mnemonics:* Q-wavevector of the PERTurbation  
+*Mentioned in topic(s):* Artificial_useful  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vprtrb]]  
+Test list:
+
+- v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+
+
 
 
 
@@ -427,10 +516,16 @@ explanation.
 
 
 *Mnemonics:* REDuced Displacement FIELD  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16, [[red_efield]]  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+
+
 
 
 
@@ -448,10 +543,16 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
 *Mnemonics:* REDuced Electric FIELD  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+
+
 
 
 
@@ -469,10 +570,16 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
 *Mnemonics:* REDuced Electric FIELD BAR  
+*Mentioned in topic(s):* Berry_useful  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 14  
+Test list:
+
+- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_125.in]]
+
+
 
 
 
@@ -490,6 +597,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
 *Mnemonics:* SPIN-MAGNetization TARGET  
+*Mentioned in topic(s):* spinpolarisation_useful  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -99.99  
@@ -525,10 +633,16 @@ spin up Fermi energy.
 
 
 *Mnemonics:* potential -V- for the PeRTuRBation  
+*Mentioned in topic(s):* Artificial_useful  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [0.0, 0.0]  
 *Only relevant if:* [[qprtrb]]  
+Test list:
+
+- v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+
+
 
 
 
@@ -548,9 +662,15 @@ of the perturbation, which is added to the local potential, is:
 
 
 *Mnemonics:* ZEEMAN FIELD  
+*Mentioned in topic(s):* MagField_basic  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 0  
+Test list:
+
+- v6:  [[tests/v6/Input/t17.in]]
+
+
 
 
 
