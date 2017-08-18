@@ -1,10 +1,10 @@
 ## **dmft_dc** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Double Counting  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Dynamical Mean Fied Theory: Double Counting  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -13,15 +13,15 @@ Value of double counting used for DMFT. Only value 1 is activated for the
 moment and is the FLL double counting.
 
 
-
+* * *
 
 ## **dmft_entropy** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: ENTROPY  
-Variable type: integer  
-Default value: 0  
-Only relevant if [[usedmft]]==1 and [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: ENTROPY  
+*Variable type:* integer  
+*Default value:* 0  
+*Only relevant if:* [[usedmft]]==1 and [[dmft_solv]]==5  
 
 
 
@@ -31,15 +31,15 @@ implementation, this is only possible with [[dmft_solv]]=5 (Continuous Time
 Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 
 
-
+* * *
 
 ## **dmft_iter** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: number of ITERation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: number of ITERation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -47,15 +47,15 @@ Default value: 0
 Number of iterations for the DMFT inner loop.
 
 
-
+* * *
 
 ## **dmft_mxsf** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: MiXing parameter for the SelF energy  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.3  
+*Mnemonics:* Dynamical Mean Fied Theory: MiXing parameter for the SelF energy  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.3  
 
 
 
@@ -63,16 +63,16 @@ Default value: 0.3
 Mixing parameter for the simple mixing of the self-energy.
 
 
-
+* * *
 
 ## **dmft_nlambda** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Number of LAMBDA points  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 6  
-Only relevant if [[usedmft]]==1 and [[dmft_entropy]]==1  
+*Mnemonics:* Dynamical Mean Fied Theory: Number of LAMBDA points  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 6  
+*Only relevant if:* [[usedmft]]==1 and [[dmft_entropy]]==1  
 
 
 
@@ -81,15 +81,15 @@ thermodynamical integration in case of free energy calculation within DMFT.
 Its value must be greater or equal to 3.
 
 
-
+* * *
 
 ## **dmft_nwli** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -97,15 +97,15 @@ Default value: 0
 Number of Matsubara frequencies (linear mesh)
 
 
-
+* * *
 
 ## **dmft_nwlo** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -113,15 +113,15 @@ Default value: 0
 Number of frequencies in the log mesh.
 
 
-
+* * *
 
 ## **dmft_rslf** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Read SeLF energy  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: Read SeLF energy  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -129,15 +129,15 @@ Flag to read/write Self-Energy. If put to one, self-energy is written and read
 at each DFT iteration.
 
 
-
+* * *
 
 ## **dmft_solv** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: choice of SOLVer  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5  
+*Mnemonics:* Dynamical Mean Fied Theory: choice of SOLVer  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5  
 
 
 
@@ -172,15 +172,15 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 [[dmftqmc_l]], [[dmftqmc_n]], [[dmftqmc_seed]], [[dmftqmc_therm]]
 
 
-
+* * *
 
 ## **dmft_t2g** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: t2g orbitals  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: t2g orbitals  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -189,15 +189,15 @@ Can be set to 1 only if in cubic symmetry. It enables one to carry a DFT+DMFT
 calculations only on t2g orbitals.
 
 
-
+* * *
 
 ## **dmft_tolfreq** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0001  
+*Mnemonics:* Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0001  
 
 
 
@@ -210,15 +210,15 @@ this difference is larger than dmft_tolfreq, then the code stops and an error
 message is given.
 
 
-
+* * *
 
 ## **dmft_tollc** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-05  
+*Mnemonics:* Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-05  
 
 
 
@@ -230,15 +230,15 @@ convergence of the DFT Loop, the DMFT Loop needs a better convergence
 criterion.
 
 
-
+* * *
 
 ## **dmftbandf** 
 
 
- Mnemonics: Dynamical Mean Field Theory: BAND: Final  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Field Theory: BAND: Final  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -249,15 +249,15 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)
 
 
-
+* * *
 
 ## **dmftbandi** 
 
 
- Mnemonics: Dynamical Mean Field Theory: BAND: Initial  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Field Theory: BAND: Initial  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -268,15 +268,15 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)
 
 
-
+* * *
 
 ## **dmftcheck** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: CHECKs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: CHECKs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -284,16 +284,16 @@ Default value: 0
 Only for developer purposes. (Introduced by B. Amadon, v6.1.0)
 
 
-
+* * *
 
 ## **dmftctqmc_check** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -307,16 +307,16 @@ but robust methods. Should only be used for debugging.
   * 3=&gt; Check both. 
 
 
-
+* * *
 
 ## **dmftctqmc_correl** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -328,16 +328,16 @@ simulation. Slow down the simulation.
   * 1=&gt; Calculations performed and written in "Correlation.dat" file 
 
 
-
+* * *
 
 ## **dmftctqmc_gmove** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -347,16 +347,16 @@ try a global move. A value of 5000 means that a global move is tried every
 5000 Monte Carlo sweep.
 
 
-
+* * *
 
 ## **dmftctqmc_grnns** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -368,16 +368,16 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
   * 1=&gt; Do it and write the noise in the "Gtau.dat" file. 
 
 
-
+* * *
 
 ## **dmftctqmc_meas** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -386,16 +386,16 @@ The modulo used to measure the interaction energy and the number of electrons.
 Example : 2 means the measure is perform every two sweeps.
 
 
-
+* * *
 
 ## **dmftctqmc_mov** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -408,16 +408,16 @@ requires a lot of I/O band width.
   * 1=&gt; Write the "Movie_id.dat" file where id is the MPI rank of each process 
 
 
-
+* * *
 
 ## **dmftctqmc_mrka** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -430,16 +430,16 @@ perform a fourier transform. The result can be plotted using the
   * 1=&gt; Do it and write the noise in the "Markov_id.dat" file where id is the rank of each MPI process. 
 
 
-
+* * *
 
 ## **dmftctqmc_order** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -450,16 +450,16 @@ means that we have the statistic distribution from 0 to 50 segments. The
 result is written in the "Perturbation.dat" file.
 
 
-
+* * *
 
 ## **dmftctqmc_triqs_nleg** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 30  
-Only relevant if [[dmft_solv]]==6 or 7  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 30  
+*Only relevant if:* [[dmft_solv]]==6 or 7  
 
 
 
@@ -471,16 +471,16 @@ coefficients are given in file whose name ending is
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.075145)
 
 
-
+* * *
 
 ## **dmftqmc_l** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[dmft_solv]]>=4  
+*Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[dmft_solv]]>=4  
 
 
 
@@ -490,16 +490,16 @@ should be carefully chosen according to Niquist frequency and the [[tsmear]]
 value.
 
 
-
+* * *
 
 ## **dmftqmc_n** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[dmft_solv]]>=4  
+*Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[dmft_solv]]>=4  
 
 
 
@@ -507,16 +507,16 @@ Only relevant if [[dmft_solv]]>=4
 Number of Monte Carlo sweeps. Should be at least 10^6.
 
 
-
+* * *
 
 ## **dmftqmc_seed** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Quantum Monte Carlo SEED  
-Variable type: integer  
-Dimensions: scalar  
-Default value: [[jdtset]]  
-Only relevant if [[dmft_solv]]>=4  
+*Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo SEED  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* [[jdtset]]  
+*Only relevant if:* [[dmft_solv]]>=4  
 
 
 
@@ -528,16 +528,16 @@ initializes its random number generator with dmftqmc_seed+rank where rank is
 the rank of the cpu in the MPI communicator.
 
 
-
+* * *
 
 ## **dmftqmc_therm** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1000  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1000  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -545,5 +545,5 @@ Only relevant if [[dmft_solv]]==5
 Number of Monte Carlo sweeps for the thermalization
 
 
-
+* * *
 

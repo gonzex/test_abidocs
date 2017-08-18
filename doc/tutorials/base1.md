@@ -123,6 +123,7 @@ output files have been created, including a `log` file and the output file
 `tbase1_1.out` with a reference file [[tests/tutorial/Refs/tbase1_1.out]]
 contained in the `~abinit/tests/tutorial/Refs` directory:
 
+
 ```shell
     $ diff tbase1_1.out ../../Refs/tbase1_1.out | less
 ```

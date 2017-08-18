@@ -1,11 +1,11 @@
 ## **brvltt** 
 
 
- Mnemonics: BRaVais LaTTice type  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[spgroup]] != 0  
+*Mnemonics:* BRaVais LaTTice type  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[spgroup]] != 0  
 
 
 
@@ -46,16 +46,16 @@ For more details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
 
-
+* * *
 
 ## **chempot** 
 
 
- Mnemonics: spatially varying CHEMical POTential  
-Variable type: real  
-Dimensions: (3,[['nzchempot']],[['ntype']])  
-Default value: 0.0  
-Only relevant if [[nzchempot]]/=0  
+*Mnemonics:* spatially varying CHEMical POTential  
+*Variable type:* real  
+*Dimensions:* (3,[['nzchempot']],[['ntype']])  
+*Default value:* 0.0  
+*Only relevant if:* [[nzchempot]]/=0  
 
 
 
@@ -84,15 +84,15 @@ definitions (i.e. the chemical potential is always to be input in Hartree
 atomic units).
 
 
-
+* * *
 
 ## **genafm** 
 
 
- Mnemonics: GENerator of the translation for Anti-FerroMagnetic space group  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0  
+*Mnemonics:* GENerator of the translation for Anti-FerroMagnetic space group  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0  
 
 
 
@@ -111,15 +111,15 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 [[tnons]] and [[symafm]]
 
 
-
+* * *
 
 ## **natrd** 
 
 
- Mnemonics: Number of AToms ReaD  
-Variable type: integer  
-Dimensions: scalar  
-Default value: [[natom]]  
+*Mnemonics:* Number of AToms ReaD  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* [[natom]]  
 
 
 
@@ -131,16 +131,16 @@ Must take into account the vacancies (see [[vacnum]] and [[vaclst]]).
 Despite possible vacancies, cannot be bigger than [[natom]].
 
 
-
+* * *
 
 ## **nobj** 
 
 
- Mnemonics: Number of OBJects  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: (no use of the geometry builder)  
+*Mnemonics:* Number of OBJects  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* (no use of the geometry builder)  
 
 
 
@@ -172,14 +172,14 @@ You should look at the other variables for more information. Go to [[objan]],
 for example.  
 
 
-
+* * *
 
 ## **nzchempot** 
 
 
- Mnemonics: Number of Z reduced coordinates that define the spatial CHEMical POTential  
-Variable type: integer  
-Default value: None  
+*Mnemonics:* Number of Z reduced coordinates that define the spatial CHEMical POTential  
+*Variable type:* integer  
+*Default value:* None  
 
 
 
@@ -188,16 +188,16 @@ chemical potential. See the input variable [[chempot]], of which [[nzchempot]]
 is the second dimension.
 
 
-
+* * *
 
 ## **objaat** 
 
 
- Mnemonics: OBJect A : list of AToms  
-Variable type: integer  
-Dimensions: ([[objan]])  
-Default value: None  
-Only relevant if '[[nobj]]==1'
+*Mnemonics:* OBJect A : list of AToms  
+*Variable type:* integer  
+*Dimensions:* ([[objan]])  
+*Default value:* None  
+*Only relevant if:* '[[nobj]]==1'
   
 
 
@@ -211,15 +211,15 @@ atoms.
 Look at [[objarf]] for further explanations.  
 
 
-
+* * *
 
 ## **objaax** 
 
 
- Mnemonics: OBJect A : AXis  
-Variable type: real  
-Default value: None  
-Comment: [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
+*Mnemonics:* OBJect A : AXis  
+*Variable type:* real  
+*Default value:* None  
+*Comment:* [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
 
@@ -236,16 +236,16 @@ clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
 toward point 2 (coordinates 4:6).  
 
 
-
+* * *
 
 ## **objan** 
 
 
- Mnemonics: OBJect A : Number of atoms  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Comment:  [[objan]] MUST be provided if [[nobj]]==1.
+*Mnemonics:* OBJect A : Number of atoms  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Comment:*  [[objan]] MUST be provided if [[nobj]]==1.
  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
 
@@ -254,14 +254,14 @@ Gives the number of atoms in object a. The list of atoms is given by the
 variables [[objaat]].  
 
 
-
+* * *
 
 ## **objarf** 
 
 
- Mnemonics: OBJect A : Repetition Factors  
-Variable type: integer  
-Default value: [1, 1, 1]  
+*Mnemonics:* OBJect A : Repetition Factors  
+*Variable type:* integer  
+*Default value:* [1, 1, 1]  
 
 
 
@@ -287,15 +287,15 @@ If the geometry builder is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
 
-
+* * *
 
 ## **objaro** 
 
 
- Mnemonics: OBJect A : ROtations  
-Variable type: real  
-Default value: 4*0.0d0  
-Comment: (no rotation)  
+*Mnemonics:* OBJect A : ROtations  
+*Variable type:* real  
+*Default value:* 4*0.0d0  
+*Comment:* (no rotation)  
 
 
 
@@ -312,15 +312,15 @@ repetition factor (resp.) . This allows to generate 3D arrays of molecules
 with different rotation angles.  
 
 
-
+* * *
 
 ## **objatr** 
 
 
- Mnemonics: OBJect A : TRanslations  
-Variable type: real  
-Default value: 12*0.0d0  
-Comment: (no translation)  
+*Mnemonics:* OBJect A : TRanslations  
+*Variable type:* real  
+*Default value:* 12*0.0d0  
+*Comment:* (no translation)  
 
 
 
@@ -341,15 +341,15 @@ which case, only rotations are needed.
 Not present in the dtset array (no internal).
 
 
-
+* * *
 
 ## **objbat** 
 
 
- Mnemonics: OBJect B : list of AToms  
-Variable type: integer  
-Default value: None  
-Only relevant if [[nobj]]==2  
+*Mnemonics:* OBJect B : list of AToms  
+*Variable type:* integer  
+*Default value:* None  
+*Only relevant if:* [[nobj]]==2  
 
 
 
@@ -362,15 +362,15 @@ atoms.
 Look at [[objbrf]] for further explanations.  
 
 
-
+* * *
 
 ## **objbax** 
 
 
- Mnemonics: OBJect B : AXis  
-Variable type: real  
-Default value: None  
-Comment: [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
+*Mnemonics:* OBJect B : AXis  
+*Variable type:* real  
+*Default value:* None  
+*Comment:* [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
 
@@ -387,16 +387,16 @@ clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
 toward point 2 (coordinates 4:6).  
 
 
-
+* * *
 
 ## **objbn** 
 
 
- Mnemonics: OBJect B : Number of atoms  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Comment:  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
+*Mnemonics:* OBJect B : Number of atoms  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Comment:*  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
 
 
@@ -404,14 +404,14 @@ Gives the number of atoms in either object b. The list of atoms is given by
 the variables [[objbat]].  
 
 
-
+* * *
 
 ## **objbrf** 
 
 
- Mnemonics: OBJect B : Repetition Factors  
-Variable type: integer  
-Default value: [1, 1, 1]  
+*Mnemonics:* OBJect B : Repetition Factors  
+*Variable type:* integer  
+*Default value:* [1, 1, 1]  
 
 
 
@@ -436,15 +436,15 @@ If the geometry builder is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
 
-
+* * *
 
 ## **objbro** 
 
 
- Mnemonics: OBJect B : ROtations  
-Variable type: real  
-Default value: 4*0.0d0  
-Comment: (no rotation)  
+*Mnemonics:* OBJect B : ROtations  
+*Variable type:* real  
+*Default value:* 4*0.0d0  
+*Comment:* (no rotation)  
 
 
 
@@ -461,15 +461,15 @@ repetition factor (resp.) . This allows to generate 3D arrays of molecules
 with different rotation angles.  
 
 
-
+* * *
 
 ## **objbtr** 
 
 
- Mnemonics: OBJect B : TRanslations  
-Variable type: real  
-Default value: 12*0.0d0  
-Comment: (no translation)  
+*Mnemonics:* OBJect B : TRanslations  
+*Variable type:* real  
+*Default value:* 12*0.0d0  
+*Comment:* (no translation)  
 
 
 
@@ -489,15 +489,15 @@ exception, one can have a set of molecules regularly spaced on a circle, in
 which case, only rotations are needed.  
 
 
-
+* * *
 
 ## **ptgroupma** 
 
 
- Mnemonics: PoinT GROUP number for the MAgnetic space group  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PoinT GROUP number for the MAgnetic space group  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -517,15 +517,15 @@ reference. Magnetic point groups are numbered from 1 to 58.
 Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 
 
-
+* * *
 
 ## **spgaxor** 
 
 
- Mnemonics: SPace Group : AXes ORientation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* SPace Group : AXes ORientation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -567,16 +567,16 @@ How to determine which spgaxor you need:
   3. in this case you need to swap the axes from the original abc order to a new order where the Bilbao axis (b) is in the first position. In this case you have 2 possibilities, spgaxor 3 or 5. If you have more than one highly symmetric coordinate you may have only a single possibility. 
 
 
-
+* * *
 
 ## **spgorig** 
 
 
- Mnemonics: SPace Group : ORIGin  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[spgroup]]!=0  
+*Mnemonics:* SPace Group : ORIGin  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[spgroup]]!=0  
 
 
 
@@ -589,15 +589,15 @@ For details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
 
-
+* * *
 
 ## **spgroup** 
 
 
- Mnemonics: SPace GROUP number  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* SPace GROUP number  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -618,15 +618,15 @@ For details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
 
-
+* * *
 
 ## **spgroupma** 
 
 
- Mnemonics: SPace GROUP number defining a MAgnetic space group  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* SPace GROUP number defining a MAgnetic space group  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -651,15 +651,15 @@ and [[genafm]]. For both the type III and IV, one might define by hand the set
 of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 
 
-
+* * *
 
 ## **tolsym** 
 
 
- Mnemonics: TOLERANCE for SYMmetries  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-08  
+*Mnemonics:* TOLERANCE for SYMmetries  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-08  
 
 
 
@@ -675,15 +675,15 @@ input atomic coordinates will be automatically symmetrized by the symmetry
 operations that will have been found.
 
 
-
+* * *
 
 ## **vaclst** 
 
 
- Mnemonics: VACancies LiST  
-Variable type: integer  
-Dimensions: ([[vacnum]])  
-Default value: None  
+*Mnemonics:* VACancies LiST  
+*Variable type:* integer  
+*Dimensions:* ([[vacnum]])  
+*Default value:* None  
 
 
 
@@ -693,15 +693,15 @@ objects.
 Useful to created vacancies.
 
 
-
+* * *
 
 ## **vacnum** 
 
 
- Mnemonics: VACancies NUMber  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* VACancies NUMber  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -710,15 +710,15 @@ rotations, translations and repetitions have been done. The list of these
 atoms is contained in [[vaclst]].
 
 
-
+* * *
 
 ## **xyzfile** 
 
 
- Mnemonics: XYZ FILE input for geometry  
-Variable type: string  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* XYZ FILE input for geometry  
+*Variable type:* string  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -732,5 +732,5 @@ a comment line, then one line per atom, with the element as a 2 letter symbol
 ("As" "O" or "Pu") and the three cartesian coordinates in Angstrom.
 
 
-
+* * *
 

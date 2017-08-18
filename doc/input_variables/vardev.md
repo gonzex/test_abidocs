@@ -1,10 +1,10 @@
 ## **builtintest** 
 
 
- Mnemonics: BUIT-IN TEST number  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* BUIT-IN TEST number  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -18,15 +18,15 @@ present, [[builtintest]]=1 ... 7 are allowed. See more information in
 tests/built-in/README .
 
 
-
+* * *
 
 ## **cgtyphf** 
 
 
- Mnemonics: Conjugate Gradient TYPe used for Hartree Fock exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2 if [[usefock]] == 1,
+*Mnemonics:* Conjugate Gradient TYPe used for Hartree Fock exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2 if [[usefock]] == 1,
 0 otherwise.
   
 
@@ -40,18 +40,18 @@ exact exchange contribution only for the initial guess (not for the gradient
 direction) in the conjugate gradient
 
 
-
+* * *
 
 ## **densfor_pred** 
 
 
- Mnemonics: DENSity and FORces PREDictor  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 6 if [[paral_kgb]]==1,
+*Mnemonics:* DENSity and FORces PREDictor  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 6 if [[paral_kgb]]==1,
 2 otherwise.
   
-Only relevant if [[iscf]] >0  
+*Only relevant if:* [[iscf]] >0  
 
 
 
@@ -109,15 +109,15 @@ of the SCF cycle; Typically, vres2 (or nres2) has to be small enough (10  -4
 ...10  -5  ).
 
 
-
+* * *
 
 ## **densty** 
 
 
- Mnemonics: initial DENSity for each TYpe of atom  
-Variable type: real  
-Dimensions: ([[ntypat]])  
-Default value: 0.0  
+*Mnemonics:* initial DENSity for each TYpe of atom  
+*Variable type:* real  
+*Dimensions:* ([[ntypat]])  
+*Default value:* 0.0  
 
 
 
@@ -129,15 +129,15 @@ generate a gaussian density. If set to 0.0d0, an optimized value is used.
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **dmft_read_occnd** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -158,16 +158,16 @@ the density file (obtained with [[prtden]]=1 or [[prtden]]=-1) and the self-
 energy (see [[dmft_rslf]]).
 
 
-
+* * *
 
 ## **dmftctqmc_basis** 
 
 
- Mnemonics: Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[dmft_solv]]==5  
+*Mnemonics:* Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[dmft_solv]]==5  
 
 
 
@@ -179,15 +179,15 @@ Choose the basis to perform CTQMC calculation.
   * 2=&gt; Diagonalise the local correlated occupation matrix. Can lead to non diagonal Hamiltonian that cannot be handled by CTQMC. This option should be thus avoided. 
 
 
-
+* * *
 
 ## **effmass** 
 
 
- Mnemonics: EFFective MASS  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* EFFective MASS  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -196,16 +196,16 @@ This parameter allows to change the electron mass, with respect to its
 experimental value.
 
 
-
+* * *
 
 ## **eshift** 
 
 
- Mnemonics: Energy SHIFT  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[wfoptalg]]==3  
+*Mnemonics:* Energy SHIFT  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[wfoptalg]]==3  
 
 
 
@@ -216,16 +216,16 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
-
+* * *
 
 ## **exchmix** 
 
 
- Mnemonics: EXCHange MIXing  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.25  
-Only relevant if [[useexexch]] == 1  
+*Mnemonics:* EXCHange MIXing  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.25  
+*Only relevant if:* [[useexexch]] == 1  
 
 
 
@@ -233,15 +233,15 @@ Only relevant if [[useexexch]] == 1
 used. The default value of 0.25 corresponds to PBE0.
 
 
-
+* * *
 
 ## **exchn2n3d** 
 
 
- Mnemonics: EXCHange N2 and N3 Dimensions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* EXCHange N2 and N3 Dimensions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -251,16 +251,16 @@ dimensions have been switched. This is to allow to be coherent with the
 [[exchn2n3d]]=4xx FFT treatment.
 
 
-
+* * *
 
 ## **extrapwf** 
 
 
- Mnemonics: flag - EXTRAPolation of the Wave-Functions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[densfor_pred]]==5 or [[densfor_pred]]==6  
+*Mnemonics:* flag - EXTRAPolation of the Wave-Functions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[densfor_pred]]==5 or [[densfor_pred]]==6  
 
 
 
@@ -276,15 +276,15 @@ ABINIT 7.10: this option is **under development** and might give wrong
 results.
 
 
-
+* * *
 
 ## **fermie_nest** 
 
 
- Mnemonics: FERMI Energy for printing the NESTing function  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* FERMI Energy for printing the NESTing function  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -292,15 +292,15 @@ This input variable is only effective when [[prtnest]]=1. The energy is
 relative to the calculated fermi energy.
 
 
-
+* * *
 
 ## **fftalg** 
 
 
- Mnemonics: Fast Fourier Transform ALGorithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 312 if [[FFTW3]] and [[usedmft]]==0,
+*Mnemonics:* Fast Fourier Transform ALGorithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 312 if [[FFTW3]] and [[usedmft]]==0,
 401 if [[paral_kgb]]==1,
 112 otherwise.
   
@@ -338,16 +338,16 @@ The third digit (C) is related to fourwf.f :
 Internal representation as [[ngfft]](7).
 
 
-
+* * *
 
 ## **fftcache** 
 
 
- Mnemonics: Fast Fourier Transform CACHE size  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 16  
-Comment: todo: Not yet machine-dependent  
+*Mnemonics:* Fast Fourier Transform CACHE size  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 16  
+*Comment:* todo: Not yet machine-dependent  
 
 
 
@@ -355,16 +355,16 @@ Gives the cache size of the current machine, in Kbytes.
 Internal representation as [[ngfft]](8).
 
 
-
+* * *
 
 ## **getgam_eig2nkq** 
 
 
- Mnemonics: GET the GAMma phonon data EIG2NKQ from dataset  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[ieig2rf]] != 0 and [[qpt]] != (0.0,0.0,0.0)  
+*Mnemonics:* GET the GAMma phonon data EIG2NKQ from dataset  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[ieig2rf]] != 0 and [[qpt]] != (0.0,0.0,0.0)  
 
 
 
@@ -378,15 +378,15 @@ second-order derivatives of the eigenvalues for q=Gamma from the dataset where
 the calculation at Gamma was done, to the datasets for other wavevectors.
 
 
-
+* * *
 
 ## **getwfkfine** 
 
 
- Mnemonics: GET the fine grid wavefunctions from _WFK file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the fine grid wavefunctions from _WFK file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -435,15 +435,15 @@ Bethe-Salpeter calculation :
 ** This variable is experimental. In development. **
 
 
-
+* * *
 
 ## **intxc** 
 
 
- Mnemonics: INTerpolation for eXchange-Correlation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* INTerpolation for eXchange-Correlation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -464,15 +464,15 @@ targets are prioritary... You will notice that many automatic tests use
 runs.
 
 
-
+* * *
 
 ## **iomode** 
 
 
- Mnemonics: Input-Output MODE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[MPI_IO]] and [[paral_kgb]]==1,
+*Mnemonics:* Input-Output MODE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[MPI_IO]] and [[paral_kgb]]==1,
 0 otherwise.
   
 
@@ -521,15 +521,15 @@ References:
   * see also [ http://www.etsf.eu/fileformats ](http://www.etsf.eu/fileformats) . 
 
 
-
+* * *
 
 ## **iprcfc** 
 
 
- Mnemonics: Integer for PReConditioner of Force Constants  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer for PReConditioner of Force Constants  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -548,15 +548,15 @@ Supported values :
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **irandom** 
 
 
- Mnemonics: Integer for the choice of the RANDOM number generator  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 3  
+*Mnemonics:* Integer for the choice of the RANDOM number generator  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
 
 
 
@@ -574,15 +574,15 @@ Supported values :
 (avoids bias).
 
 
-
+* * *
 
 ## **irdwfkfine** 
 
 
- Mnemonics: Integer that governs the ReaDing of the grid _WFK file on the FINE grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of the grid _WFK file on the FINE grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -610,15 +610,15 @@ Bethe-Salpeter calculation :
 ** This variable is experimental. In development. **
 
 
-
+* * *
 
 ## **isecur** 
 
 
- Mnemonics: Integer for level of SECURity choice  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer for level of SECURity choice  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -637,16 +637,16 @@ non-SCF computation per line minimisation.
 No meaning for RF calculations yet.
 
 
-
+* * *
 
 ## **istatr** 
 
 
- Mnemonics: Integer for STATus file rate  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: Values lower than 10 may not work on some machines.  
+*Mnemonics:* Integer for STATus file rate  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* Values lower than 10 may not work on some machines.  
 
 
 
@@ -657,15 +657,15 @@ When '[[istatr]]'=0, there is no writing of a status file (which is the
 default).
 
 
-
+* * *
 
 ## **istatshft** 
 
 
- Mnemonics: Integer for STATus file SHiFT  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Integer for STATus file SHiFT  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -676,16 +676,16 @@ call. There is also a writing for each of the 5 first calls, and the 10th
 call.
 
 
-
+* * *
 
 ## **istwfk** 
 
 
- Mnemonics: Integer for choice of STorage of WaveFunction at each k point  
-Variable type: integer  
-Dimensions: ([[nkpt]])  
-Default value: *0  
-Comment: For RF calculations, the Default is not used : <b>istwfk</b> is forced to be 1 deep inside the code, for all k points. For spin-orbit calculations ([[nspinor]]=2), <b>istwfk</b> is also forced to be 1, for all k points.  
+*Mnemonics:* Integer for choice of STorage of WaveFunction at each k point  
+*Variable type:* integer  
+*Dimensions:* ([[nkpt]])  
+*Default value:* *0  
+*Comment:* For RF calculations, the Default is not used : <b>istwfk</b> is forced to be 1 deep inside the code, for all k points. For spin-orbit calculations ([[nspinor]]=2), <b>istwfk</b> is also forced to be 1, for all k points.  
 
 
 
@@ -718,15 +718,15 @@ used in the RF calculations.
   * 0=&gt; (preprocessed) for each k point, choose automatically the appropriate time-reversal option when it is allowed, and chose [[istwfk]]=1 for all the other k points. 
 
 
-
+* * *
 
 ## **lotf_classic** 
 
 
- Mnemonics: LOTF CLASSIC model for glue model  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 5  
+*Mnemonics:* LOTF CLASSIC model for glue model  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 5  
 
 
 
@@ -734,30 +734,30 @@ Glue model used in LOTF.
 For the moment it is imposed to be 5.
 
 
-
+* * *
 
 ## **lotf_nitex** 
 
 
- Mnemonics: LOTF Number of ITerations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 10  
+*Mnemonics:* LOTF Number of ITerations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 10  
 
 
 
 Set the number of Molecular Dynamics iterations which are computed by LOTF.
 
 
-
+* * *
 
 ## **lotf_nneigx** 
 
 
- Mnemonics: LOTF max Number of NEIGhbours  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 5  
+*Mnemonics:* LOTF max Number of NEIGhbours  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 5  
 
 
 
@@ -765,15 +765,15 @@ Set the max number of Neighbours used in the LOTF method.
 For the moment it is imposed to be 40.
 
 
-
+* * *
 
 ## **lotf_version** 
 
 
- Mnemonics: LOTF VERSION of MD algorithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
+*Mnemonics:* LOTF VERSION of MD algorithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
 
 
 
@@ -781,15 +781,15 @@ Set the MD algorithm in the LOTF method.
 For the moment it is imposed to be 2.
 
 
-
+* * *
 
 ## **macro_uj** 
 
 
- Mnemonics: MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -810,15 +810,15 @@ concerned atom as a separate atomic species or shift concerned atom from ideal
 position).
 
 
-
+* * *
 
 ## **maxnsym** 
 
 
- Mnemonics: MAXimum Number of SYMetries  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 384  
+*Mnemonics:* MAXimum Number of SYMetries  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 384  
 
 
 
@@ -827,15 +827,15 @@ The default value is sufficient for most applications; it has to be increase
 in the case of the use of a supercell (unit cell identically repeated).
 
 
-
+* * *
 
 ## **mem_test** 
 
 
- Mnemonics: MEMory TEST  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* MEMory TEST  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -847,15 +847,15 @@ values:
   * 2 like 1, but before stopping, the routine will provide an estimation of the available memory. 
 
 
-
+* * *
 
 ## **mqgrid** 
 
 
- Mnemonics: Maximum number of Q-space GRID points for pseudopotentials  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 3001  
+*Mnemonics:* Maximum number of Q-space GRID points for pseudopotentials  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3001  
 
 
 
@@ -863,15 +863,15 @@ Govern the size of the one-dimensional information related to
 pseudopotentials, in reciprocal space : potentials, or projector functions.
 
 
-
+* * *
 
 ## **nbdblock** 
 
 
- Mnemonics: Number of BanDs in a BLOCK  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of BanDs in a BLOCK  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -881,19 +881,19 @@ wavefunctions (that is, if [[wfoptalg]]=4):
   * if [[wfoptalg]]=4, [[nbdblock]] defines the number of blocks (the number of bands in the block is then [[nband]]/[[nbdblock]] ). 
 
 
-
+* * *
 
 ## **nc_xccc_gspace** 
 
 
- Mnemonics: Norm-Conserving pseudopotentials - use XC Core-Correction in G-SPACE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0 if [[usepaw]]==0,
+*Mnemonics:* Norm-Conserving pseudopotentials - use XC Core-Correction in G-SPACE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0 if [[usepaw]]==0,
 1 if [[usepaw]]==1,
 0 otherwise.
   
-Comment: 0 when [[usepaw]]=0, 1 when [[usepaw]]=1  
+*Comment:* 0 when [[usepaw]]=0, 1 when [[usepaw]]=1  
 
 
 
@@ -911,15 +911,15 @@ for the G-space formalism and users are strongly invited to perform
 convergence studies with respect to ecut before using this option.
 
 
-
+* * *
 
 ## **nctime** 
 
 
- Mnemonics: NetCdf TIME between output of molecular dynamics informations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* NetCdf TIME between output of molecular dynamics informations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -957,15 +957,15 @@ file :
      
 
 
-
+* * *
 
 ## **nloc_alg** 
 
 
- Mnemonics: Non LOCal ALGorithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 4  
+*Mnemonics:* Non LOCal ALGorithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 4  
 
 
 
@@ -986,15 +986,15 @@ Note: internally, [[nloc_alg]] is stored in _ nloalg(1) _ . See also
 application.
 
 
-
+* * *
 
 ## **nloc_mem** 
 
 
- Mnemonics: Non LOCal MEMOry  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2 if [[usepaw]]==1,
+*Mnemonics:* Non LOCal MEMOry  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2 if [[usepaw]]==1,
 1 otherwise.
   
 
@@ -1019,15 +1019,15 @@ abs([[nloc_mem]])-1 is stored in _ nloalg(3) _ . See also [[nloc_alg]] for the
 algorithm for the non-local operator application.
 
 
-
+* * *
 
 ## **nnsclo** 
 
 
- Mnemonics: Number of Non-Self Consistent LOops  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of Non-Self Consistent LOops  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1043,15 +1043,15 @@ corresponds to make 2 steps with 3 non-self consistent loops , 2 steps with 2
 non-self consistent loops, then the next ones with 1 non-self consistent loop.
 
 
-
+* * *
 
 ## **nnsclohf** 
 
 
- Mnemonics: Number of Non-Self Consistent LOops for (Hartree)-Fock exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[usefock]]==1,
+*Mnemonics:* Number of Non-Self Consistent LOops for (Hartree)-Fock exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[usefock]]==1,
 0 otherwise.
   
 
@@ -1064,15 +1064,15 @@ The Default value is 0 when [[usefock]] = 0. Default value is 1 when
 consistent loop.
 
 
-
+* * *
 
 ## **normpawu** 
 
 
- Mnemonics: NORMalize atomic PAW+U projector  
-Variable type: integer  
-Dimensions: ([[ntypat]])  
-Default value: 0  
+*Mnemonics:* NORMalize atomic PAW+U projector  
+*Variable type:* integer  
+*Dimensions:* ([[ntypat]])  
+*Default value:* 0  
 
 
 
@@ -1083,16 +1083,16 @@ be renormalized to 1 within PAW sphere.
   * [[normpawu]]=1 : renormalize 
 
 
-
+* * *
 
 ## **npulayit** 
 
 
- Mnemonics: Number of PULAY ITerations for SC mixing  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 7  
-Only relevant if [[iscf]] in [7,17]  
+*Mnemonics:* Number of PULAY ITerations for SC mixing  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 7  
+*Only relevant if:* [[iscf]] in [7,17]  
 
 
 
@@ -1100,15 +1100,15 @@ Gives the number of previous iterations involved in Pulay mixing (mixing
 during electronic SC iterations).
 
 
-
+* * *
 
 ## **nscforder** 
 
 
- Mnemonics: Nth - SCaling Function ORDER  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 16  
+*Mnemonics:* Nth - SCaling Function ORDER  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 16  
 
 
 
@@ -1119,15 +1119,15 @@ enough. Nonetheless, possible values are 8, 14, 16, 20, 24, 30, 40, 50, 60,
 100. Values greater than 20 are included in ABINIT for test purposes only.
 
 
-
+* * *
 
 ## **optforces** 
 
 
- Mnemonics: OPTions for the calculation of FORCES  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[toldff]] or [[tolrff]] != 0,
+*Mnemonics:* OPTions for the calculation of FORCES  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[toldff]] or [[tolrff]] != 0,
 2 otherwise.
   
 
@@ -1140,15 +1140,15 @@ Allows to choose options for the calculation of forces.
   * [[optforces]]=2 : calculation of forces at the end of the SCF iterations (like the stresses) 
 
 
-
+* * *
 
 ## **optnlxccc** 
 
 
- Mnemonics: OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1159,15 +1159,15 @@ present, only relevant for the FHI type of pseudopotentials, with pspcod=6 .
   * [[optnlxccc]]=2 : consistent calculation derivatives, in the psp6cc_dhr.f routine from DHamann. 
 
 
-
+* * *
 
 ## **ortalg** 
 
 
- Mnemonics: ORThogonalisation ALGorithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: -2 if [[wfoptalg]] >= 10 ,
+*Mnemonics:* ORThogonalisation ALGorithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* -2 if [[wfoptalg]] >= 10 ,
 2 otherwise.
   
 
@@ -1189,15 +1189,15 @@ Tests have shown that [[ortalg]]=2 or -2 is suitable for use on the available
 platforms.
 
 
-
+* * *
 
 ## **papiopt** 
 
 
- Mnemonics: PAPI OPTion  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PAPI OPTion  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1214,15 +1214,15 @@ measurements are more accurate and give also access to the flops of the
 calculation.
 
 
-
+* * *
 
 ## **pawprt_b** 
 
 
- Mnemonics: PAW PRinT band  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PAW PRinT band  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1232,15 +1232,15 @@ be used in conjuction with: **
 for the lowest occupied band and goes up from there.
 
 
-
+* * *
 
 ## **pawprt_k** 
 
 
- Mnemonics: PAW PRinT K-point  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PAW PRinT K-point  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1250,16 +1250,16 @@ To be used in conjuction with: **
 of the internal variable ** kpt ** in the beginning of the run.
 
 
-
+* * *
 
 ## **pawujat** 
 
 
- Mnemonics: PAW+macro_UJ, ATom number  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Comment:  i.e. the first atom treated with PAW+U.  
+*Mnemonics:* PAW+macro_UJ, ATom number  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Comment:*  i.e. the first atom treated with PAW+U.  
 
 
 
@@ -1267,15 +1267,15 @@ Determines the atom for which U (or J) should be determined. See also
 [[macro_uj]].
 
 
-
+* * *
 
 ## **pawujrad** 
 
 
- Mnemonics: PAW+macro_UJ, sphere RADius  
-Variable type: real  
-Dimensions: scalar  
-Default value: 20 a.u.  
+*Mnemonics:* PAW+macro_UJ, sphere RADius  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 20 a.u.  
 
 
 
@@ -1285,15 +1285,15 @@ localized within r_paw to ≈80%, 20 a.u. contains ≈100% of the wavefunction a
 corresponds to r_paw -&gt; ∞.
 
 
-
+* * *
 
 ## **pawujv** 
 
 
- Mnemonics: PAW+macro_UJ, potential shift (V)  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.1 eV  
+*Mnemonics:* PAW+macro_UJ, potential shift (V)  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.1 eV  
 
 
 
@@ -1301,15 +1301,15 @@ Amplitude of the potential shift for the determination of U (or J). See also
 [[macro_uj]].
 
 
-
+* * *
 
 ## **plowan_bandf** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions BAND Final  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions BAND Final  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1317,15 +1317,15 @@ Default value: 0
 Gives the upper band to include in the calculation of Wannier functions
 
 
-
+* * *
 
 ## **plowan_bandi** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions BAND Initial  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions BAND Initial  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1333,15 +1333,15 @@ Default value: 0
 Gives the lower band to include in the calculation of Wannier functions
 
 
-
+* * *
 
 ## **plowan_compute** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions COMPUTATION  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions COMPUTATION  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1363,15 +1363,15 @@ parallelized. (The calculation of projections is detailed in [ Phys. Rev. B
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.205112) )
 
 
-
+* * *
 
 ## **plowan_iatom** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions, Index of ATOM  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions, Index of ATOM  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1380,15 +1380,15 @@ Gives the indices of the [[plowan_natom]] atoms on which the projections will
 be done.
 
 
-
+* * *
 
 ## **plowan_it** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  Index of Translation.  
-Variable type: integer  
-Dimensions: (3,[[plowan_nt]])  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions,  Index of Translation.  
+*Variable type:* integer  
+*Dimensions:* (3,[[plowan_nt]])  
+*Default value:* 0  
 
 
 
@@ -1400,15 +1400,15 @@ functions in real space. These real space Wannier functions are used as a
 basis to compute the Hamiltonian.
 
 
-
+* * *
 
 ## **plowan_lcalc** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  L values to use for CALCulation  
-Variable type: integer  
-Dimensions: (sum([[plowan_nbl]]))  
-Default value: -1  
+*Mnemonics:* Projected Local Orbital WANnier functions,  L values to use for CALCulation  
+*Variable type:* integer  
+*Dimensions:* (sum([[plowan_nbl]]))  
+*Default value:* -1  
 
 
 
@@ -1417,15 +1417,15 @@ Gives the [[plowan_nbl]] values of angular momenta for each atom, in the order
 of the atoms as given in [[plowan_iatom]].
 
 
-
+* * *
 
 ## **plowan_natom** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions, Number of ATOMs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions, Number of ATOMs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1433,15 +1433,15 @@ Default value: 0
 Gives the number of atoms on which the projection will be done
 
 
-
+* * *
 
 ## **plowan_nbl** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  NumBer of L values  
-Variable type: integer  
-Dimensions: ([[plowan_natom]])  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions,  NumBer of L values  
+*Variable type:* integer  
+*Dimensions:* ([[plowan_natom]])  
+*Default value:* 0  
 
 
 
@@ -1450,16 +1450,16 @@ Gives the total number of angular momenta (over all atoms) to compute the
 projections.
 
 
-
+* * *
 
 ## **plowan_nt** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
+*Mnemonics:* Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
 energy are computed  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1469,15 +1469,15 @@ atoms. These atoms are used to define Wannier functions in real space. These
 real space Wannier functions are used as a basis to compute the Hamiltonian.
 
 
-
+* * *
 
 ## **plowan_projcalc** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation  
-Variable type: integer  
-Dimensions: (sum([[plowan_nbl]]))  
-Default value: -1  
+*Mnemonics:* Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation  
+*Variable type:* integer  
+*Dimensions:* (sum([[plowan_nbl]]))  
+*Default value:* -1  
 
 
 
@@ -1487,15 +1487,15 @@ the atoms as given in [[plowan_iatom]]. The index i for the projectors refers
 to the ith number on line orbitals of the PAW atomic data file.
 
 
-
+* * *
 
 ## **plowan_realspace** 
 
 
- Mnemonics: Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1506,15 +1506,15 @@ Can take the following values:
   * 2=&gt; Do simple Wannier Interpolation for a given k points starting from real space Wannier function Hamiltonian computed in a preceding dataset. 
 
 
-
+* * *
 
 ## **prepscphon** 
 
 
- Mnemonics: PREPare Self-Consistent PHONon calculation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PREPare Self-Consistent PHONon calculation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1525,15 +1525,15 @@ use anaddb instead (with prtscphon input variable). The abinit input variable
 is destined to someday bypass the use of anaddb for scphon calculations.
 
 
-
+* * *
 
 ## **prtbltztrp** 
 
 
- Mnemonics: PRinT output for BoLTZTRaP code  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT output for BoLTZTRaP code  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1543,15 +1543,15 @@ code](https://www.imc.tuwien.ac.at/forschungsbereich_theoretische_chemie/forschu
 by Georg Madsen.
 
 
-
+* * *
 
 ## **prtcif** 
 
 
- Mnemonics: PRinT Crystallographic Information File  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT Crystallographic Information File  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1559,15 +1559,15 @@ If set to 1, a CIF file is output with the crystallographic data for the
 present run (cell size shape and atomic positions).
 
 
-
+* * *
 
 ## **prtdipole** 
 
 
- Mnemonics: PRinT DIPOLE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT DIPOLE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1575,15 +1575,15 @@ Print out dipole of unit cell, calculated in real space for the primitive cell
 only. Under development.
 
 
-
+* * *
 
 ## **prtnest** 
 
 
- Mnemonics: PRinT NESTing function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT NESTing function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1592,15 +1592,15 @@ moment the path in q space for the nesting function is fixed, but will become
 an input as well.
 
 
-
+* * *
 
 ## **prtposcar** 
 
 
- Mnemonics: PRinT POSCAR file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT POSCAR file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1610,15 +1610,15 @@ codes for frozen phonon calculations. See the associated script in
 interfacing with PHON, PHONOPY, etc...
 
 
-
+* * *
 
 ## **recefermi** 
 
 
- Mnemonics: RECursion - initial guess  of the FERMI Energy  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RECursion - initial guess  of the FERMI Energy  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1626,15 +1626,15 @@ Used in Recursion method ([[tfkinfunc]]=2). In the first SCF calculation it
 fixes the initial guess for the Fermi energy.
 
 
-
+* * *
 
 ## **recgratio** 
 
 
- Mnemonics: RECursion - Grid RATIO  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* RECursion - Grid RATIO  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1648,15 +1648,15 @@ FFT interpolation. Note that ngfft/recgratio=number of points of the coarse
 grid has to be compatible with the parallelization parameters.
 
 
-
+* * *
 
 ## **recnpath** 
 
 
- Mnemonics: RECursion - Number of point for PATH integral calculations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 500  
+*Mnemonics:* RECursion - Number of point for PATH integral calculations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 500  
 
 
 
@@ -1666,15 +1666,15 @@ those path integrals are used to compute the entropy and the eigenvalues
 energy. during the latest SFC cycles.
 
 
-
+* * *
 
 ## **recnrec** 
 
 
- Mnemonics: RECursion - Number of RECursions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 10  
+*Mnemonics:* RECursion - Number of RECursions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 10  
 
 
 
@@ -1684,15 +1684,15 @@ density. If the precision set by [[rectolden]] is reached before that order,
 the recursion method automatically stops.
 
 
-
+* * *
 
 ## **recptrott** 
 
 
- Mnemonics: RECursion - TROTTer parameter  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RECursion - TROTTer parameter  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1707,15 +1707,15 @@ the discretisation error of the green kernel exp((recptrott/beta*|r|^2)) on
 the ngfft grid.
 
 
-
+* * *
 
 ## **recrcut** 
 
 
- Mnemonics: RECursion - CUTing Radius  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RECursion - CUTing Radius  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1725,15 +1725,15 @@ point will be computed with taking account only of a sphere of radius
 [[recrcut]].
 
 
-
+* * *
 
 ## **rectesteg** 
 
 
- Mnemonics: RECursion - TEST on Electron Gas  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RECursion - TEST on Electron Gas  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1741,16 +1741,16 @@ Used in Recursion method ([[tfkinfunc]]=2). It is used to test an electron gas
 by putting the ion potential equal to zero.
 
 
-
+* * *
 
 ## **rectolden** 
 
 
- Mnemonics: RECursion - TOLerance on the difference of electronic DENsity  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: Default value to be changed.  
+*Mnemonics:* RECursion - TOLerance on the difference of electronic DENsity  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* Default value to be changed.  
 
 
 
@@ -1761,15 +1761,15 @@ norm (that is, it is computed point-by-point, and then the maximum difference
 is computed).
 
 
-
+* * *
 
 ## **symmorphi** 
 
 
- Mnemonics: SYMMORPHIc symmetry operation selection  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* SYMMORPHIc symmetry operation selection  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1788,15 +1788,15 @@ calculations, and to perform [[GW]] calculations, [[symmorphi]]=0 was to be
 used, together with [[nsym]]=0.
 
 
-
+* * *
 
 ## **tfkinfunc** 
 
 
- Mnemonics: Thomas-Fermi KINetic energy FUNCtional  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Thomas-Fermi KINetic energy FUNCtional  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1829,16 +1829,16 @@ In the recursion method the following variables are set to: [[useylm]]=1,
 [[userec]]=1.
 
 
-
+* * *
 
 ## **tfw_toldfe** 
 
 
- Mnemonics: Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0E-6 or [[toldfe]] is present  
-Only relevant if [[tfkinfunc]]=11  
+*Mnemonics:* Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0E-6 or [[toldfe]] is present  
+*Only relevant if:* [[tfkinfunc]]=11  
 
 
 
@@ -1851,15 +1851,15 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since it has the
 'ENERGY' characteristics.
 
 
-
+* * *
 
 ## **tolrde** 
 
 
- Mnemonics: TOLerance on the Relative Difference of Eigenenergies  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.005  
+*Mnemonics:* TOLerance on the Relative Difference of Eigenenergies  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.005  
 
 
 
@@ -1874,16 +1874,16 @@ calculations, [[tolrde]] is actually doubled before comparing with the above-
 mentioned ratio, for historical reasons.
 
 
-
+* * *
 
 ## **use_gemm_nonlop** 
 
 
- Mnemonics: USE the GEMM routine for the application of the NON-Local OPerator  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: because it is not usually worth using it unless bandpp is large and it requires additional memory  
+*Mnemonics:* USE the GEMM routine for the application of the NON-Local OPerator  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* because it is not usually worth using it unless bandpp is large and it requires additional memory  
 
 
 
@@ -1902,16 +1902,16 @@ the BLAS supports OpenMP, this option also yields very good scaling for the
 nonlocal operator.
 
 
-
+* * *
 
 ## **use_nonscf_gkk** 
 
 
- Mnemonics: USE NON-SCF calculation of GKK matrix elements (electron phonon)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: Default is 0 for the moment. Do not use non-scf method.  
+*Mnemonics:* USE NON-SCF calculation of GKK matrix elements (electron phonon)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* Default is 0 for the moment. Do not use non-scf method.  
 
 
 
@@ -1935,15 +1935,15 @@ or so is recommended everywhere. There may be problems using use_nonscf_gkk =
 phonons go to 0 for acoustic modes at Gamma.
 
 
-
+* * *
 
 ## **usedmft** 
 
 
- Mnemonics: USE Dynamical Mean Field Theory  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USE Dynamical Mean Field Theory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2004,15 +2004,15 @@ calculation. They can be used by an external code or used to compute the
 screened interaction (see variable [[ucrpa]]).
 
 
-
+* * *
 
 ## **useria** 
 
 
- Mnemonics: USER Integer variable A  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USER Integer variable A  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2024,15 +2024,15 @@ Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
 
-
+* * *
 
 ## **userib** 
 
 
- Mnemonics: USER Integer variable B  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USER Integer variable B  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2044,15 +2044,15 @@ Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
 
-
+* * *
 
 ## **useric** 
 
 
- Mnemonics: USER Integer variable C  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USER Integer variable C  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2064,15 +2064,15 @@ Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
 
-
+* * *
 
 ## **userid** 
 
 
- Mnemonics: USER Integer variable D  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USER Integer variable D  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2084,15 +2084,15 @@ Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
 
-
+* * *
 
 ## **userie** 
 
 
- Mnemonics: USER Integer variable E  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USER Integer variable E  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -2104,90 +2104,90 @@ Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
 
-
+* * *
 
 ## **userra** 
 
 
- Mnemonics: USER Real variable A  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* USER Real variable A  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
 
 
-
+* * *
 
 ## **userrb** 
 
 
- Mnemonics: USER Real variable B  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* USER Real variable B  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
 
 
-
+* * *
 
 ## **userrc** 
 
 
- Mnemonics: USER Real variable C  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* USER Real variable C  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
 
 
-
+* * *
 
 ## **userrd** 
 
 
- Mnemonics: USER Real variable D  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* USER Real variable D  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
 
 
-
+* * *
 
 ## **userre** 
 
 
- Mnemonics: USER Real variable E  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* USER Real variable E  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
 
 
-
+* * *
 
 ## **useylm** 
 
 
- Mnemonics: USE YLM (the spherical harmonics)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[tfkinfunc]]==1,
+*Mnemonics:* USE YLM (the spherical harmonics)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[tfkinfunc]]==1,
 1 if [[usepaw]]==1,
 0 otherwise.
   
@@ -2206,16 +2206,16 @@ When [[useylm]]=0, the sum over Y_lm can be reduced to a Legendre polynomial
 form.
 
 
-
+* * *
 
 ## **wfoptalg** 
 
 
- Mnemonics: WaveFunction OPTimisation ALGorithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: [[AUTO_FROM_PSP]]  
-Comment: 0 when [[usepaw]]=0 (norm-conserving pseudopotentials), 10 when [[usepaw]]=1 (PAW) ; 114 if [[paral_kgb]]=1.  
+*Mnemonics:* WaveFunction OPTimisation ALGorithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* [[AUTO_FROM_PSP]]  
+*Comment:* 0 when [[usepaw]]=0 (norm-conserving pseudopotentials), 10 when [[usepaw]]=1 (PAW) ; 114 if [[paral_kgb]]=1.  
 
 
 
@@ -2232,15 +2232,15 @@ The different possibilities are :
   * [[wfoptalg]]=1 : new algorithm based on Chebyshev filtering, designed for very large number of processors, in the regime where LOBPCG does not scale anymore. It is not able to use preconditionning and therefore might converge slower than other algorithms. By design, it will ** not ** converge the last bands: it is recommended to use slightly more bands than necessary. For usage with [[tolwfr]], it is imperative to use [[nbdbuf]]. For more performance, try [[use_gemm_nonlop]]. For more information, see the [ performance guide ](../../theory/howto_chebfi.pdf) and the [ paper ](https://arxiv.org/abs/1406.4350) by A. Levitt and M. Torrent. Status: experimental but usable. Questions and bug reports should be sent to antoine (dot) levitt (at) gmail.com. 
 
 
-
+* * *
 
 ## **xc_denpos** 
 
 
- Mnemonics: eXchange-Correlation - DENsity POSitivity value  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-14  
+*Mnemonics:* eXchange-Correlation - DENsity POSitivity value  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-14  
 
 
 
@@ -2262,15 +2262,15 @@ convergence. Of course, this will affect the numerical results somehow, and
 one should play a bit with this value to avoid incorrect calculations.
 
 
-
+* * *
 
 ## **xc_tb09_c** 
 
 
- Mnemonics: Value of the c parameter in the eXchange-Correlation TB09 functional  
-Variable type: real  
-Dimensions: scalar  
-Default value: 99.99  
+*Mnemonics:* Value of the c parameter in the eXchange-Correlation TB09 functional  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 99.99  
 
 
 
@@ -2293,5 +2293,5 @@ equal to the "magic" default value 99.99. The c parameter can also be fixed to
 some (property-optimized or material-optimized) value by using this variable.
 
 
-
+* * *
 

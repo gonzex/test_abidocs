@@ -1,12 +1,16 @@
 from __future__ import absolute_import, unicode_literals, print_function
+
 import re
 import os.path
 from codecs import open
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
-INC_SYNTAX = re.compile(r'\{!\s*(.+?)\s*!\}')
+from ..website import get_website
+website = get_website()
 
+
+INC_SYNTAX = re.compile(r'^\{%\s*(.+?)\s*%\}')
 
 class MarkdownInclude(Extension):
     def __init__(self, configs={}):
@@ -26,7 +30,7 @@ class MarkdownInclude(Extension):
 class IncludePreprocessor(Preprocessor):
     '''
     This provides an "include" function for Markdown, similar to that found in
-    LaTeX (also the C pre-processor and Fortran). The syntax is {!filename!},
+    LaTeX (also the C pre-processor and Fortran). The syntax is {% filename %},
     which will be replaced by the contents of filename. Any such statements in
     filename will also be replaced. This replacement is done prior to any other
     Markdown processing. All file-names are evaluated relative to the location
@@ -39,20 +43,31 @@ class IncludePreprocessor(Preprocessor):
 
     def run(self, lines):
         new_lines = []
-
         for line in lines:
             m = INC_SYNTAX.search(line)
             if not m:
                 new_lines.append(line)
             else:
-                path = m.group(1)
-                print("path:", path)
-                if path == "editor":
-                    new_lines.extend(editor_panel(path).splitlines())
-                elif path == "editors":
-                    new_lines.extend(editor_tabs(path).splitlines())
+                args = m.group(1).split()
+                action = args.pop(0)
+                print("Triggering action:", action, "with args:", str(args))
+                if action == "editor":
+                    if len(args) > 1:
+                        new_lines.extend(editor_tabs(args, title=None).splitlines())
+                    else:
+                        new_lines.extend(editor_panel(args[0], title=None).splitlines())
+                elif action == "modal":
+                    if len(args) > 1:
+                        new_lines.extend(modal_with_tabs(args).splitlines())
+                    else:
+                        new_lines.extend(modal_from_filename(args[0]).splitlines())
+
+                elif action == "cite":
+                    #new_lines.extend([str(website.get_citation_aelement(arg)) for arg in args])
+                    new_lines.extend(["[[" + arg + "]]" for arg in args])
+
                 else:
-                    new_lines.extend(modal_from_filename(path).splitlines())
+                    raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
 
         # Add `return to top arrow` after meta section.
         # Based on https://codepen.io/rdallaire/pen/apoyx
@@ -101,13 +116,13 @@ def gen_id(n=1, pre="uuid-"):
 def modal_from_filename(path, title=None):
     # https://v4-alpha.getbootstrap.com/components/modal/#examples
     title = path if title is None else title
-    with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
-        text = "<pre>" + fh.read() + "</pre>"
+    with open(os.path.join(website.root, path)) as fh:
+        text = "<pre>" + escape(fh.read()) + "</pre>"
 
     s = """\
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{modal_id}">
-  Open {path}
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
+  View {path}
 </button>
 
 <!-- Modal -->
@@ -124,21 +139,25 @@ def modal_from_filename(path, title=None):
     </div>
   </div>
 </div>""".format(**locals(), modal_id=gen_id(), modal_label_id=gen_id())
-    s += " ".join(modal_with_tabs([]))
 
     return s
 
 
 def modal_with_tabs(paths, title=None):
     # Based on http://jsfiddle.net/n__o/19rhfnqm/
-    title = "hello modal"
-    paths = ["hello_path", "bar_path"]
-    text_list = ["hello", "bar"]
+    title = title if title else ""
+    apaths = [os.path.join(website.root, p) for p in paths]
+    button_label = "View " + ", ".join(paths)
+
+    text_list = []
+    for p in apaths:
+        with open(p, "rt") as fh:
+            text_list.append("<pre>" + escape(fh.read()) + "</pre>")
     tab_ids = gen_id(n=len(text_list))
 
     s = """\
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#{modal_id}">Open files</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
 
 <!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}" aria-hidden="true">
@@ -152,7 +171,8 @@ def modal_with_tabs(paths, title=None):
             <div class="modal-body">
                 <div role="tabpanel">
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">""".format(title=title, modal_id=gen_id(), modal_label_id=gen_id())
+                    <ul class="nav nav-tabs" role="tablist">""".format(
+                            **locals(), modal_id=gen_id(), modal_label_id=gen_id())
 
     for i, (path, tid) in enumerate(zip(paths, tab_ids)):
         s += """\
@@ -170,14 +190,14 @@ def modal_with_tabs(paths, title=None):
 
     s += 6 * " </div> "
 
-    return s.splitlines()
+    return s
 
 
 def editor_panel(path, title=None):
-    title = "Editor" if title is None else str(title)
+    title = path if title is None else str(title)
 
-    path = "tests/v1/Refs/t01.out"
-    with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
+    path = os.path.join(website.root, path)
+    with open(os.path.join(path)) as fh:
         text = escape(fh.read())
 
     s = """\
@@ -189,13 +209,13 @@ def editor_panel(path, title=None):
     return s
 
 
-def editor_tabs(path, title=None, footer=""):
+def editor_tabs(paths, title=None):
     title = "EditorTabs" if title is None else str(title)
-    paths = ["tests/v1/Refs/t01.out", "tests/v1/Refs/t02.out"]
+    apaths = [os.path.join(website.root, p) for p in paths]
 
     text_list = []
-    for path in paths:
-        with open(os.path.join("/Users/gmatteo/git_repos/gitlab_trunk_abinit", path)) as fh:
+    for path in apaths:
+        with open(path, "rt") as fh:
             text_list.append(escape(fh.read()))
     tab_ids = gen_id(n=len(text_list))
     editor_ids = gen_id(n=len(text_list))

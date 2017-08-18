@@ -1,10 +1,10 @@
 ## **kptns** 
 
 
- Mnemonics: K-PoinTs re-Normalized and Shifted  
-Variable type: real  
-Dimensions: (3,[[nkpt]])  
-Default value: None  
+*Mnemonics:* K-PoinTs re-Normalized and Shifted  
+*Variable type:* real  
+*Dimensions:* (3,[[nkpt]])  
+*Default value:* None  
 
 
 
@@ -17,15 +17,15 @@ variable is derived from [[kpt]],[[kptnrm]] and [[qptn]] [[kptns]](1:3,:)=
 by [[kptnrm]], then shifted by [[qptn]](1:3).
 
 
-
+* * *
 
 ## **mband** 
 
 
- Mnemonics: Maximum number of BANDs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Maximum number of BANDs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -33,45 +33,45 @@ This internal variable derives the maximum number of bands over all k-points
 and spin-polarisation from [[nband]](1:nkpt*nsppol).
 
 
-
+* * *
 
 ## **mgfft** 
 
 
- Mnemonics: Maximum of nGFFT  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Maximum of nGFFT  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
 This internal variable contains the maximum of [[ngfft]](1:3).
 
 
-
+* * *
 
 ## **mgfftdg** 
 
 
- Mnemonics: Maximum of nGFFT for the Double Grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Maximum of nGFFT for the Double Grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
 This internal variable contains the maximum of [[ngfftdg]](1:3).
 
 
-
+* * *
 
 ## **mpw** 
 
 
- Mnemonics: Maximum number of Plane Waves  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Maximum number of Plane Waves  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -80,16 +80,16 @@ k-points. It is computed from [[ecut]] and the description of the cell,
 provided by [[acell]], [[rprim]], and/or [[angdeg]].
 
 
-
+* * *
 
 ## **natpawu** 
 
 
- Mnemonics: Number of AToms on which PAW+U is applied  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Only relevant if [[usepawu]]==1  
+*Mnemonics:* Number of AToms on which PAW+U is applied  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Only relevant if:* [[usepawu]]==1  
 
 
 
@@ -97,15 +97,15 @@ This internal variable gives the number of atoms on which the LDA/GGA+U method
 is applied. This value is determined from [[lpawu]].
 
 
-
+* * *
 
 ## **ndynimage** 
 
 
- Mnemonics: Number of DYNamical IMAGEs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of DYNamical IMAGEs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -115,15 +115,15 @@ to dimension many memory-consuming arrays (one copy for each image), e.g. the
 wavefunction array (cg), the density array (rho), etc .
 
 
-
+* * *
 
 ## **nelect** 
 
 
- Mnemonics: Number of ELECTrons  
-Variable type: real  
-Dimensions: scalar  
-Default value: [[AUTO_FROM_PSP]]  
+*Mnemonics:* Number of ELECTrons  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* [[AUTO_FROM_PSP]]  
 
 
 
@@ -134,15 +134,15 @@ the pseudopotential, where it is called "zion"), and the input variable
 [[nelect]]=zion-[[charge]].
 
 
-
+* * *
 
 ## **nfft** 
 
 
- Mnemonics: Number of FFT points  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of FFT points  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -157,15 +157,15 @@ a number usually close to this product divided by the number of processors on
 which the space is shared.
 
 
-
+* * *
 
 ## **nfftdg** 
 
 
- Mnemonics: Number of FFT points for the Double Grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of FFT points for the Double Grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -180,15 +180,15 @@ a number usually close to this product divided by the number of processors on
 which the space is shared.
 
 
-
+* * *
 
 ## **npweps** 
 
 
- Mnemonics: Number of PlaneWaves for EPSilon (the dielectric matrix)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of PlaneWaves for EPSilon (the dielectric matrix)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -198,15 +198,15 @@ $\epsilon$ and its inverse.
 It is an internal variable, determined from [[ecuteps]].
 
 
-
+* * *
 
 ## **npwsigx** 
 
 
- Mnemonics: Number of PlaneWaves for SIGma eXchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of PlaneWaves for SIGma eXchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -215,15 +215,15 @@ generate the exchange part of the self-energy operator.
 It is an internal variable, determed from [[ecutsigx]].
 
 
-
+* * *
 
 ## **npwwfn** 
 
 
- Mnemonics: Number of PlaneWaves for WaveFunctioNs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Number of PlaneWaves for WaveFunctioNs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -233,16 +233,16 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 [[ecutwfn]].
 
 
-
+* * *
 
 ## **qptn** 
 
 
- Mnemonics: Q-PoinT re-Normalized  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0  
-Only relevant if [[nqpt]]==1  
+*Mnemonics:* Q-PoinT re-Normalized  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0  
+*Only relevant if:* [[nqpt]]==1  
 
 
 
@@ -265,15 +265,15 @@ whether other q points might be allowed (perhaps with some modification of the
 code).
 
 
-
+* * *
 
 ## **usefock** 
 
 
- Mnemonics: USE FOCK exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USE FOCK exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -284,15 +284,15 @@ refers to an Hartree-Fock calculation or hybrid functionals.
   * 1 =&gt; exact exchange is required for the calculation. 
 
 
-
+* * *
 
 ## **usepaw** 
 
 
- Mnemonics: USE Projector Augmented Waves method  
-Variable type: integer  
-Dimensions: scalar  
-Default value: [[AUTO_FROM_PSP]]  
+*Mnemonics:* USE Projector Augmented Waves method  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* [[AUTO_FROM_PSP]]  
 
 
 
@@ -303,15 +303,15 @@ with norm-conserving pseudopotential input files. Most functionalities in
 ABINIT are available with either type of calculation.
 
 
-
+* * *
 
 ## **userec** 
 
 
- Mnemonics: USE RECursion  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USE RECursion  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -319,15 +319,15 @@ This internal variable is set to 1 when the recursion method is activated (see
 [[tfkinfunc]]).
 
 
-
+* * *
 
 ## **xclevel** 
 
 
- Mnemonics: eXchange Correlation functional LEVEL  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* eXchange Correlation functional LEVEL  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -339,15 +339,15 @@ Automatically determined from the value of [[ixc]].
   * 3 =&gt; Functional for [[TDDFT]]. 
 
 
-
+* * *
 
 ## **ziontypat** 
 
 
- Mnemonics: Z (charge) of the IONs for the different TYPes of AToms  
-Variable type: real  
-Dimensions: ([[ntypat]])  
-Default value: [[AUTO_FROM_PSP]]  
+*Mnemonics:* Z (charge) of the IONs for the different TYPes of AToms  
+*Variable type:* real  
+*Dimensions:* ([[ntypat]])  
+*Default value:* [[AUTO_FROM_PSP]]  
 
 
 
@@ -355,5 +355,5 @@ Charge of the pseudo-ion (=number of valence electrons that are needed to
 screen exactly the pseudopotential).
 
 
-
+* * *
 

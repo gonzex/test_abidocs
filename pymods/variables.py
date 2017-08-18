@@ -224,53 +224,39 @@ class Variable(yaml.YAMLObject):
         url = "/input_variables/%s/#%s" % (self.varfile, self.name)
         return '<a href="%s" target="_blank">%s</a>' % (url, label)
 
-    def to_md(self):
-        lines = []
-        app = lines.append
+    def to_md(self, with_tests=False):
+        lines = []; app = lines.append
 
-        # Title
         app("## **%s** \n\n" % self.name)
-        # Mnemonics
-        app(" Mnemonics: %s  " % str(self.mnemonics))
-        app("Variable type: %s  " % str(self.vartype))
-        if self.dimensions is not None:
-           app("Dimensions: %s  " % format_dimensions(self.dimensions))
-        if self.commentdims is not None and self.commentdims != "":
-            app("commentdims %s  " % self.commentdims)
-        #  cur_content += " (Comment: "+make_links(var.commentdims,var.name,allowed_link_seeds,backlinks,backlink)+")"
-        ## Default
-        app("Default value: %s  " % self.defaultval)
-        #cur_content += "<br><font id=\"default\">"+make_links(format_default(var.defaultval),var.name,allowed_link_seeds,backlinks,backlink)
-        if self.commentdefault is not None and self.commentdefault != "":
-            app("Comment: %s  " % self.commentdefault)
-        #  cur_content += " (Comment: "+make_links(var.commentdefault,var.name,allowed_link_seeds,backlinks,backlink)+")"
-        #cur_content += "</font>\n"
-        # Requires
-        if self.requires is not None and self.requires != "":
-            app("Only relevant if %s  " % self.requires)
-        #  cur_content += "<br><br><font id=\"requires\">\nOnly relevant if "+doku2html(make_links(var.requires,var.name,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
-        # Excludes
-        if self.excludes is not None and self.excludes != "":
-            app("The use of this variable forbids the use of %s  " % self.excludes)
-        #  cur_content += "<br><br><font id=\"excludes\">\nThe use of this variable forbids the use of "+doku2html(make_links(var.excludes,var.name,allowed_link_seeds,backlinks,backlink))+"\n</font>\n"
-        # Text
-        #app("<br><font id=\"text\">\n")
-        #app(str(var.text))
+        app("*Mnemonics:* %s  " % str(self.mnemonics))
+        #app("Executable: %s" % str(self.executables)
+        if self.characteristic:
+            app("*Characteristics:* %s  " % str(self.characteristic))
+        #app("Mentioned in topic(s):" %s  ",".join(self.topics))
+        app("*Variable type:* %s  " % str(self.vartype))
+        if self.dimensions:
+           app("*Dimensions:* %s  " % format_dimensions(self.dimensions))
+        if self.commentdims:
+            app("*commentdims:* %s  " % self.commentdims)
+        app("*Default value:* %s  " % self.defaultval)
+        if self.commentdefault:
+            app("*Comment:* %s  " % self.commentdefault)
+        if self.requires:
+            app("*Only relevant if:* %s  " % str(self.requires))
+        if self.excludes:
+            app("*The use of this variable forbids the use of:* %s  " % self.excludes)
+        # Add links to tests.
+        #if with_tests:
+        #    Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136]. Test list {paral:[08],tutoparal:[string_03,string_04],v6:[22,24,25],v7:[08],v8:[05]}
+        #self.tests
+        # Add text with description.
         if self.text is not None:
             md_text = html2text(self.text)
             app(2 * "\n")
             app(str(md_text))
         else:
-            print("Var:", self.name, "with None text")
-        #cur_content += "<p>\n"+doku2html(make_links(var.text,var.name,allowed_link_seeds,backlinks,backlink))+"\n"
-        # End the section for one variable
-        #app("</font>\n")
-        app(2*"\n")
-        #app("<br><br>")
-        #app("<br><br><a href=#top>Go to the top</a>")
-        #app("<B> | </B><a href=\"allvariables.html#top\">Complete list of input variables</a><hr>\n"
-        #
-        #all_contents[varfile] = all_contents[varfile] + cur_content + "\n\n"
+            print("WARNING: Variable:", self.name, "with None text")
+        app("* * *" + 2*"\n")
 
         return "\n".join(lines)
 
@@ -442,15 +428,15 @@ class InputVariables(OrderedDict):
             return new
 
     def write_markdown_files(self, workdir):
-        # Build list of variables
+        # Write page with full list of variables.
         with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
             fh.write(self.get_vartabs_html())
             # Add plotly figures.
             #for i, varfile in enumerate(["varbse", "vargw"]):
-            #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=(i==0)))
+            #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=False)
             #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
 
-        # Build markdown
+        # Build markdown page for the different sets.
         for varfile in self.varfiles:
             var_list = [v for v in self.values() if v.varfile == varfile]
             #print(varfile, var_list)

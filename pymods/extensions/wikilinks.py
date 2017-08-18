@@ -21,6 +21,7 @@ from markdown.util import etree
 import re
 
 from ..website import get_website
+website = get_website()
 
 
 def build_url(label, base, end):
@@ -28,12 +29,11 @@ def build_url(label, base, end):
     clean_label = re.sub(r'([ ]+_)|(_[ ]+)|([ ]+)', '_', label)
     #print(clean_label)
 
-    website = get_website()
     variables = website.variables_code["abinit"]
 
     if clean_label in variables:
         var = variables[clean_label]
-        return "/input_variables/%s/#%s" % (var.varfile, var.abivarname)
+        return "/input_variables/%s/#%s" % (var.varfile, var.name)
 
     if clean_label in website.bib_data.entries:
         return "/bibliography/#%s" % clean_label
@@ -57,7 +57,8 @@ class WikiLinkExtension(Extension):
         self.md = md
 
         # append to end of inline patterns
-        WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
+        #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
+        WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
         wikilinkPattern = WikiLinks(WIKILINK_RE, self.getConfigs())
         wikilinkPattern.md = md
         md.inlinePatterns.add('wikilink', wikilinkPattern, "<not_strong")
@@ -71,22 +72,65 @@ class WikiLinks(Pattern):
     def handleMatch(self, m):
         if m.group(2).strip():
             base_url, end_url, html_class = self._getMeta()
-            label = m.group(2).strip()
-            url = self.config['build_url'](label, base_url, end_url)
+            token = m.group(2).strip()
+            #url = self.config['build_url'](token, base_url, end_url)
+            #token = re.sub(r'([ ]+_)|(_[ ]+)|([ ]+)', '_', token)
+            #print(token)
             a = etree.Element('a')
-            a.text = label
-            a.set('href', url)
-            if html_class:
-                a.set('class', html_class)
+            if html_class: a.set('class', html_class)
 
-            # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
-            if url.startswith("/bibliography/"):
-                a.set("data-toggle", "popover")
-                a.set("title", "Popover Header")
-                a.set("data-placement", "bottom")
-                a.set("data-trigger", "hover")
-                a.set("data-content", "Some content inside the popover")
+            # [[namespace:name#section|text]]
+            text = None
+            if "|" in token:
+                token, text = token.split("|")
+
+            if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
+                url = prefix
+
+            elif ":" in token:
+                namespace, value = token.split(":")
+                print("namespace:" ,namespace, "value:", value)
+
+                if namespace in website.variables_code:
+                    # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
+                    var = website.variables_code[namespace][value]
+                    url = "/input_variables/%s/#%s" % (var.varfile, var.name)
+
+                #elif namespace == "input"
+                #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
+
+                else:
+                    raise ValueError("Don't know how to handle namespace `%s` with value `%s`" % (namespace, value))
+
+            elif token.startswith("tests/"):
+                # Handle [[tests/tutorial/Refs/tbase1_2.out]]
+                print("In tests/ with token:", token)
+                url = "/" + token
+                # Add popover with test description if input file.
+                if token in website.inrpath2test:
+                    a.set("data-toggle", "popover")
+                    a.set("title", website.inrpath2test[token].description)
+                    a.set("data-placement", "auto bottom")
+                    a.set("data-trigger", "hover")
+
+            elif token in website.variables_code["abinit"]:
+                # Handle link to Abinit variable e.g. [[ecut]]
+                var = website.variables_code["abinit"][token]
+                url = "/input_variables/%s/#%s" % (var.varfile, var.name)
+
+            elif token in website.bib_data.entries:
+                # Handle citation
+                return website.get_citation_aelement(token, html_class=html_class)
+
+            else:
+                #raise ValueError("Don't know how to handle token: `%s`" % token)
+                url = '%s%s%s' % (base_url, token, end_url)
+
+            a.set('href', url)
+            a.text = token if text is None else text
+
         else:
+            print("Warning: empty wikilink", m.group(0))
             a = ''
 
         return a

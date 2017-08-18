@@ -1,10 +1,10 @@
 ## **accuracy** 
 
 
- Mnemonics: ACCURACY  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* ACCURACY  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -499,16 +499,16 @@ automatically tuned by [[accuracy]] will not be affected.
 [[accuracy]]=0 means that this input variable is desactivated.
 
 
-
+* * *
 
 ## **acell** 
 
 
- Mnemonics: CELL lattice vector scaling  
-Variable type: real  
-Dimensions: (3)  
-commentdims represented internally as acell(3,[[nimage]])  
-Default value: 3*1  
+*Mnemonics:* CELL lattice vector scaling  
+*Variable type:* real  
+*Dimensions:* (3)  
+*commentdims:* represented internally as acell(3,[[nimage]])  
+*Default value:* 3*1  
 
 
 
@@ -525,16 +525,16 @@ vectors, but the scaling factors of the primitive vectors. Use [[scalecart]]
 to scale the cartesian coordinates.
 
 
-
+* * *
 
 ## **angdeg** 
 
 
- Mnemonics: ANGles in DEGrees  
-Variable type: real  
-Dimensions: (3)  
-Default value: None  
-Comment: deduced from '[[rprim]]'  
+*Mnemonics:* ANGles in DEGrees  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* None  
+*Comment:* deduced from '[[rprim]]'  
 
 
 
@@ -570,15 +570,15 @@ where each of the vectors is normalized, and form the desired angles with the
 others.
 
 
-
+* * *
 
 ## **ecut** 
 
 
- Mnemonics: Energy CUToff  
-Variable type: real  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Energy CUToff  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -609,15 +609,15 @@ See the input variable [[ecutsm]], for the smoothing of the kinetic energy,
 needed to optimize unit cell parameters.
 
 
-
+* * *
 
 ## **einterp** 
 
 
- Mnemonics: Electron bands INTERPolation  
-Variable type: real  
-Dimensions: (4)  
-Default value: [0, 0, 0, 0]  
+*Mnemonics:* Electron bands INTERPolation  
+*Variable type:* real  
+*Dimensions:* (4)  
+*Default value:* [0, 0, 0, 0]  
 
 
 
@@ -644,15 +644,15 @@ For B-spline interpolation: einterp(2:4): Order of B-spline for the three
 reduced directions. Cubic spline (3) is the recomended value.
 
 
-
+* * *
 
 ## **iscf** 
 
 
- Mnemonics: Integer for Self-Consistent-Field cycles  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 17 if [[usepaw]]==1,
+*Mnemonics:* Integer for Self-Consistent-Field cycles  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 17 if [[usepaw]]==1,
 0 if [[usewvl]]==1,
 7 otherwise.
   
@@ -735,16 +735,16 @@ For RF, this option is needed to compute the response to ddk perturbation.
   * = -1 =&gt; like -2, but the non-self-consistent calculation is followed by the determination of excited states within [[TDDFT]]. This is only possible for [[nkpt]]=1, with [[kpt]]=0 0 0. Note that the oscillator strength needs to be defined with respect to an origin of coordinate, thanks to the input variable [[boxcenter]]. The maximal number of Kohn-Sham excitations to be used to build the excited state [[TDDFT]] matrix can be defined by [[td_mexcit]], or indirectly by the maximum Kohn-Sham excitation energy [[td_maxene]]. 
 
 
-
+* * *
 
 ## **ixc** 
 
 
- Mnemonics: Integer for eXchange-Correlation choice  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Comment: Default corresponds to Teter parametrization. However, if all the pseudopotentials have the same value of pspxc, the initial value of ixc will be that common value  
+*Mnemonics:* Integer for eXchange-Correlation choice  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Comment:* Default corresponds to Teter parametrization. However, if all the pseudopotentials have the same value of pspxc, the initial value of ixc will be that common value  
 
 
 
@@ -1012,15 +1012,15 @@ J. Chem. Phys. 125, 224106 (2006) ]
   * 456=&gt; XC_HYB_GGA_XC_PBE0_13 ! PBE0-1/3 [P Cortona, J. Chem. Phys. 136, 086101 (2012) ] 
 
 
-
+* * *
 
 ## **jdtset** 
 
 
- Mnemonics: index -J- for DaTaSETs  
-Variable type: integer  
-Dimensions: ([[ndtset]])  
-Default value: [1 .. [[ndtset]]]  
+*Mnemonics:* index -J- for DaTaSETs  
+*Variable type:* integer  
+*Dimensions:* ([[ndtset]])  
+*Default value:* [1 .. [[ndtset]]]  
 
 
 
@@ -1038,16 +1038,16 @@ to the use of the input variable [[udtset]]. In this case, [[jdtset]] cannot
 be used.
 
 
-
+* * *
 
 ## **kpt** 
 
 
- Mnemonics: K - PoinTs  
-Variable type: real  
-Dimensions: (3,[[nkpt]])  
-Default value: [0, 0, 0]  
-Comment: Adequate for one molecule in a supercell  
+*Mnemonics:* K - PoinTs  
+*Variable type:* real  
+*Dimensions:* (3,[[nkpt]])  
+*Default value:* [0, 0, 0]  
+*Comment:* Adequate for one molecule in a supercell  
 
 
 
@@ -1073,15 +1073,15 @@ Note: a global shift can be provided by [[qptn]]
 Not read if [[kptopt]]/=0 .
 
 
-
+* * *
 
 ## **kptnrm** 
 
 
- Mnemonics: K - PoinTs NoRMalization  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* K - PoinTs NoRMalization  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1094,15 +1094,15 @@ representing numbers such as 1/3.
 It cannot be smaller than 1.0d0
 
 
-
+* * *
 
 ## **kptopt** 
 
 
- Mnemonics: KPoinTs OPTion  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 4 if [[nspden]]==4,
+*Mnemonics:* KPoinTs OPTion  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 4 if [[nspden]]==4,
 1 otherwise.
   
 
@@ -1143,15 +1143,15 @@ In the case of a grid of k points, the auxiliary variables [[kptrlen]],
 [[ngkpt]] and [[prtkpt]] might help you to select the optimal grid.
 
 
-
+* * *
 
 ## **natom** 
 
 
- Mnemonics: Number of ATOMs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of ATOMs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1163,16 +1163,16 @@ allows to recover all atoms). If you want to specify only the irreducible set
 of atoms, use the symmetriser, see the input variable [[natrd]].
 
 
-
+* * *
 
 ## **nband** 
 
 
- Mnemonics: Number of BANDs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Comment:  the estimated number of occupied bands +1 (TODO provide the mathematical formulation)  
+*Mnemonics:* Number of BANDs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Comment:*  the estimated number of occupied bands +1 (TODO provide the mathematical formulation)  
 
 
 
@@ -1196,16 +1196,16 @@ _KSS file (see [[kssform]]) the relevant number of bands is given by
 [[nbandkss]].
 
 
-
+* * *
 
 ## **nbandhf** 
 
 
- Mnemonics: Number of BANDs for (Hartree)-Fock exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Comment: the estimated number of occupied bands (TODO : provide the mathematical formulation)  
+*Mnemonics:* Number of BANDs for (Hartree)-Fock exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Comment:* the estimated number of occupied bands (TODO : provide the mathematical formulation)  
 
 
 
@@ -1213,15 +1213,15 @@ Gives the maximum number of occupied bands with which Fock exact exchange is
 being computed for the wavefunctions.
 
 
-
+* * *
 
 ## **ndtset** 
 
 
- Mnemonics: Number of DaTaSETs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of DaTaSETs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1233,17 +1233,17 @@ dataset index are not allowed. Otherwise, [[ndtset]]=0 is equivalent to
 [[ndtset]]=1.
 
 
-
+* * *
 
 ## **ngkpt** 
 
 
- Mnemonics: Number of Grid points for K PoinTs generation  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[kptopt]] >=0,   
-The use of this variable forbids the use of specified([[kptrlatt]])  
+*Mnemonics:* Number of Grid points for K PoinTs generation  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[kptopt]] >=0,   
+*The use of this variable forbids the use of:* specified([[kptrlatt]])  
 
 
 
@@ -1267,15 +1267,15 @@ integer numbers are even. For a measure of the efficiency, see the input
 variable [[kptrlen]].
 
 
-
+* * *
 
 ## **nkpath** 
 
 
- Mnemonics: Number of K-points defining the PATH  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of K-points defining the PATH  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1293,15 +1293,15 @@ unlike [[kptopt]], nkpath represents the total number of points in the
 [[kptbounds]] array.
 
 
-
+* * *
 
 ## **nkpt** 
 
 
- Mnemonics: Number of K - Points  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[kptopt]]==0,
+*Mnemonics:* Number of K - Points  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[kptopt]]==0,
 0 otherwise.
   
 
@@ -1333,16 +1333,16 @@ will have three segments; supposing [[ndivk]] is 10 12 17, the total number of
 k points of the circuit will be 10+12+17+1(for the final point)=40.
 
 
-
+* * *
 
 ## **nkpthf** 
 
 
- Mnemonics: Number of K - Points for (Hartree) Fock exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Comment:  the total number of k-point in the full Brillouin zone (TODO : provide the mathematical formulation)  
+*Mnemonics:* Number of K - Points for (Hartree) Fock exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Comment:*  the total number of k-point in the full Brillouin zone (TODO : provide the mathematical formulation)  
 
 
 
@@ -1350,15 +1350,15 @@ Comment:  the total number of k-point in the full Brillouin zone (TODO : provide
 for the Fock exact exchange contribution.
 
 
-
+* * *
 
 ## **nshiftk** 
 
 
- Mnemonics: Number of SHIFTs for K point grids  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of SHIFTs for K point grids  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1368,15 +1368,15 @@ defined either from [[ngkpt]] or [[kptrlatt]]. The maximum allowed value of
 [[nshiftk]] is 8. The values of the shifts are given by [[shiftk]].
 
 
-
+* * *
 
 ## **nsppol** 
 
 
- Mnemonics: Number of SPin POLarization  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of SPin POLarization  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1405,15 +1405,15 @@ See also the input variable [[nspden]] for the components of the density
 matrix with respect to the spin-polarization.
 
 
-
+* * *
 
 ## **nstep** 
 
 
- Mnemonics: Number of (non-)self-consistent field STEPS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 30  
+*Mnemonics:* Number of (non-)self-consistent field STEPS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 30  
 
 
 
@@ -1443,15 +1443,15 @@ One can output the density by using [[prtden]].
 The forces and stress tensor are computed with [[nstep]]=0.
 
 
-
+* * *
 
 ## **nsym** 
 
 
- Mnemonics: Number of SYMmetry operations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of SYMmetry operations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1494,15 +1494,15 @@ operations whose non-symmorphic translation vector [[tnons]] is zero. This can
 be done with the help of the input variable [[symmorphi]]
 
 
-
+* * *
 
 ## **ntypat** 
 
 
- Mnemonics: Number of TYPes of AToms  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of TYPes of AToms  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1512,15 +1512,15 @@ The code tries to read the same number of pseudopotential files.
 The first pseudopotential is assigned type number 1, and so on ...
 
 
-
+* * *
 
 ## **occopt** 
 
 
- Mnemonics: OCCupation OPTion  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* OCCupation OPTion  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1602,16 +1602,16 @@ total energy, because there might be two or even three possible values of the
 Fermi energy, and the bissection algorithm find one or the other.
 
 
-
+* * *
 
 ## **rprim** 
 
 
- Mnemonics: Real space PRIMitive translations  
-Variable type: real  
-Dimensions: (3,3)  
-commentdims Internally, it is represented as rprim(3,3,[[nimage]])  
-Default value: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]  
+*Mnemonics:* Real space PRIMitive translations  
+*Variable type:* real  
+*Dimensions:* (3,3)  
+*commentdims:* Internally, it is represented as rprim(3,3,[[nimage]])  
+*Default value:* [[1, 0, 0], [0, 1, 0], [0, 0, 1]]  
 
 
 
@@ -1740,16 +1740,16 @@ file is not the value contained in the input file, but the value rescaled by
 [[scalecart]].
 
 
-
+* * *
 
 ## **rprimd** 
 
 
- Mnemonics: Real space PRIMitive translations, Dimensional  
-Variable type: real  
-Dimensions: (3,3)  
-commentdims Internally, it is represented as rprimd(3,3,[[nimage]]).  
-Default value: None  
+*Mnemonics:* Real space PRIMitive translations, Dimensional  
+*Variable type:* real  
+*Dimensions:* (3,3)  
+*commentdims:* Internally, it is represented as rprimd(3,3,[[nimage]]).  
+*Default value:* None  
 
 
 
@@ -1764,15 +1764,15 @@ It is [[EVOLVING]] only if [[ionmov]]==2 and [[optcell]]/=0, otherwise it is
 fixed.  
 
 
-
+* * *
 
 ## **scalecart** 
 
 
- Mnemonics: SCALE CARTesian coordinates  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*1  
+*Mnemonics:* SCALE CARTesian coordinates  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*1  
 
 
 
@@ -1787,15 +1787,15 @@ immediately applied to rprim, at parsing time, and then scalecart will be set
 to the default values. So, it will not be echoed.
 
 
-
+* * *
 
 ## **shiftk** 
 
 
- Mnemonics: SHIFT for K points  
-Variable type: real  
-Dimensions: (3,[[nshiftk]])  
-Default value: None if [[nshiftk]]>1,
+*Mnemonics:* SHIFT for K points  
+*Variable type:* real  
+*Dimensions:* (3,[[nshiftk]])  
+*Default value:* None if [[nshiftk]]>1,
 [0.5, 0.5, 0.5] otherwise.
   
 
@@ -1885,15 +1885,15 @@ In rhombohedral axes, e.g. using [[angdeg]] 3*60., this corresponds to
 [[shiftk]] 0.5 0.5 0.5, to keep the shift along the symmetry axis.
 
 
-
+* * *
 
 ## **symrel** 
 
 
- Mnemonics: SYMmetry in REaL space  
-Variable type: integer  
-Dimensions: (3,3,[[nsym]])  
-Default value: [[1, 0, 0], [0, 1, 0], [0, 0, 1]] if [[nsym]]==1,
+*Mnemonics:* SYMmetry in REaL space  
+*Variable type:* integer  
+*Dimensions:* (3,3,[[nsym]])  
+*Default value:* [[1, 0, 0], [0, 1, 0], [0, 0, 1]] if [[nsym]]==1,
 None otherwise.
   
 
@@ -1917,15 +1917,15 @@ When the symmetry finder is used (see [[nsym]]), [[symrel]] will be computed
 automatically.
 
 
-
+* * *
 
 ## **tnons** 
 
 
- Mnemonics: Translation NON-Symmorphic vectors  
-Variable type: real  
-Dimensions: (3,[[nsym]])  
-Default value: None  
+*Mnemonics:* Translation NON-Symmorphic vectors  
+*Variable type:* real  
+*Dimensions:* (3,[[nsym]])  
+*Default value:* None  
 
 
 
@@ -1939,17 +1939,17 @@ When the symmetry finder is used (see [[nsym]]), [[tnons]] is computed
 automatically.
 
 
-
+* * *
 
 ## **toldfe** 
 
 
- Mnemonics: TOLerance on the DiFference of total Energy  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
-The use of this variable forbids the use of specified([[tolwfr]]) or specified([[toldff]]) or specified([[tolrff]]) or specified([[tolvrs]])  
+*Mnemonics:* TOLerance on the DiFference of total Energy  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
+*The use of this variable forbids the use of:* specified([[tolwfr]]) or specified([[toldff]]) or specified([[tolrff]]) or specified([[tolvrs]])  
 
 
 
@@ -1977,17 +1977,17 @@ will have precedence on the non-zero value for another input variable defined
 generically.
 
 
-
+* * *
 
 ## **toldff** 
 
 
- Mnemonics: TOLerance on the DiFference of Forces  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
-The use of this variable forbids the use of specified([[tolwfr]]) or specified([[toldfe]]) or specified([[tolrff]]) or specified([[tolvrs]])  
+*Mnemonics:* TOLerance on the DiFference of Forces  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
+*The use of this variable forbids the use of:* specified([[tolwfr]]) or specified([[toldfe]]) or specified([[tolrff]]) or specified([[tolvrs]])  
 
 
 
@@ -2011,17 +2011,17 @@ will have precedence on the non-zero value for another input variable defined
 generically.
 
 
-
+* * *
 
 ## **tolrff** 
 
 
- Mnemonics: TOLerance on the Relative diFference of Forces  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
-The use of this variable forbids the use of specified([[tolwfr]]) or specified([[toldfe]]) or specified([[toldff]]) or specified([[tolvrs]])'  
+*Mnemonics:* TOLerance on the Relative diFference of Forces  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
+*The use of this variable forbids the use of:* specified([[tolwfr]]) or specified([[toldfe]]) or specified([[toldff]]) or specified([[tolvrs]])'  
 
 
 
@@ -2045,17 +2045,17 @@ will have precedence on the non-zero value for another input variable defined
 generically.
 
 
-
+* * *
 
 ## **tolvrs** 
 
 
- Mnemonics: TOLerance on the potential V(r) ReSidual  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
-The use of this variable forbids the use of specified([[tolwfr]]) or specified([[toldfe]]) or specified([[toldff]]) or specified([[tolrff]])'  
+*Mnemonics:* TOLerance on the potential V(r) ReSidual  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
+*The use of this variable forbids the use of:* specified([[tolwfr]]) or specified([[toldfe]]) or specified([[toldff]]) or specified([[tolrff]])'  
 
 
 
@@ -2086,17 +2086,17 @@ will have precedence on the non-zero value for another input variable defined
 generically.
 
 
-
+* * *
 
 ## **tolwfr** 
 
 
- Mnemonics: TOLerance on WaveFunction squared Residual  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Comment: The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
-The use of this variable forbids the use of specified([[toldfe]]) or specified([[toldff]]) or specified([[tolrff]]) or specified([[tolvrs]])  
+*Mnemonics:* TOLerance on WaveFunction squared Residual  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Comment:* The default value implies that this stopping condition is ignored. For the SCF case, one and only one of the input tolerance criteria [[tolwfr]], [[toldff]], [[tolrff]], [[toldfe]] or [[tolvrs]] must differ from zero.  
+*The use of this variable forbids the use of:* specified([[toldfe]]) or specified([[toldff]]) or specified([[tolrff]]) or specified([[tolvrs]])  
 
 
 
@@ -2146,17 +2146,17 @@ will have precedence on the non-zero value for another input variable defined
 generically.
 
 
-
+* * *
 
 ## **typat** 
 
 
- Mnemonics: TYPe of AToms  
-Variable type: integer  
-Dimensions: [3, '[[natrd]]'] if [[natrd]]<[[natom]],
+*Mnemonics:* TYPe of AToms  
+*Variable type:* integer  
+*Dimensions:* [3, '[[natrd]]'] if [[natrd]]<[[natom]],
 [3, '[[natom]]'] otherwise.
   
-Default value: 1 if [[natom]]==1,
+*Default value:* 1 if [[natom]]==1,
 None otherwise.
   
 
@@ -2187,16 +2187,16 @@ the atoms of same type together. This should be transparent to the user, while
 keeping efficiency.
 
 
-
+* * *
 
 ## **udtset** 
 
 
- Mnemonics: Upper limit on DaTa SETs  
-Variable type: integer  
-Dimensions: (2)  
-Default value: None  
-Comment: It is not used when it is not defined  
+*Mnemonics:* Upper limit on DaTa SETs  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* None  
+*Comment:* It is not used when it is not defined  
 
 
 
@@ -2223,16 +2223,16 @@ between 1 and [[udtset]](2).
 If [[udtset]] is used, the input variable [[jdtset]] cannot be used.
 
 
-
+* * *
 
 ## **usewvl** 
 
 
- Mnemonics: Use WaVeLet basis set  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: use plane-wave basis set  
+*Mnemonics:* Use WaVeLet basis set  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* use plane-wave basis set  
 
 
 
@@ -2249,16 +2249,16 @@ The spin computation is not currently possible with wavelets and metalic
 systems may be slow to converge.
 
 
-
+* * *
 
 ## **wtk** 
 
 
- Mnemonics: WeighTs for K points  
-Variable type: real  
-Dimensions: ([[nkpt]])  
-Default value: [[nkpt]]*1.0  
-Comment: Except when [[kptopt]]/=0  
+*Mnemonics:* WeighTs for K points  
+*Variable type:* real  
+*Dimensions:* ([[nkpt]])  
+*Default value:* [[nkpt]]*1.0  
+*Comment:* Except when [[kptopt]]/=0  
 
 
 
@@ -2271,15 +2271,15 @@ weights such as 1/3.
 [[wtk]] is ignored if [[iscf]] is not positive, except if [[iscf]]=-3.
 
 
-
+* * *
 
 ## **wvl_hgrid** 
 
 
- Mnemonics: WaVeLet H step GRID  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.5  
+*Mnemonics:* WaVeLet H step GRID  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.5  
 
 
 
@@ -2288,15 +2288,15 @@ basis set. This value is highly responsible for the memory occupation in the
 wavelet computation. The value is a length in atomic units.
 
 
-
+* * *
 
 ## **xangst** 
 
 
- Mnemonics: vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-  
-Variable type: real  
-Dimensions: (3,min([[natom]],[[natrd]]))  
-Default value: None  
+*Mnemonics:* vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-  
+*Variable type:* real  
+*Dimensions:* (3,min([[natom]],[[natrd]]))  
+*Default value:* None  
 
 
 
@@ -2314,15 +2314,15 @@ Atomic positions evolve if [[ionmov]]/=0 . In constrast with [[xred]] and
 [[xcart]], [[xangst]] is not internal.
 
 
-
+* * *
 
 ## **xcart** 
 
 
- Mnemonics: vectors (X) of atom positions in CARTesian coordinates  
-Variable type: real  
-Dimensions: (3,min([[natom]],[[natrd]]))  
-Default value: None  
+*Mnemonics:* vectors (X) of atom positions in CARTesian coordinates  
+*Variable type:* real  
+*Dimensions:* (3,min([[natom]],[[natrd]]))  
+*Default value:* None  
 
 
 
@@ -2339,16 +2339,16 @@ One and only one of [[xred]], [[xcart]] and ** xangst ** must be provided.
 Atomic positions evolve if [[ionmov]]/=0 .
 
 
-
+* * *
 
 ## **xred** 
 
 
- Mnemonics: vectors (X) of atom positions in REDuced coordinates  
-Variable type: real  
-Dimensions: (3,min([[natom]],[[natrd]]))  
-commentdims represented internally as xred(3,[[natom]],[[nimage]])  
-Default value: *0.0  
+*Mnemonics:* vectors (X) of atom positions in REDuced coordinates  
+*Variable type:* real  
+*Dimensions:* (3,min([[natom]],[[natrd]]))  
+*commentdims:* represented internally as xred(3,[[natom]],[[nimage]])  
+*Default value:* *0.0  
 
 
 
@@ -2367,15 +2367,15 @@ One and only one of [[xred]], [[xcart]] and [[xangst]] must be provided.
 Atomic positions evolve if [[ionmov]]/=0 .
 
 
-
+* * *
 
 ## **znucl** 
 
 
- Mnemonics: charge -Z- of the NUCLeus  
-Variable type: real  
-Dimensions: ([[npsp]])  
-Default value: None  
+*Mnemonics:* charge -Z- of the NUCLeus  
+*Variable type:* real  
+*Dimensions:* ([[npsp]])  
+*Default value:* None  
 
 
 
@@ -2390,5 +2390,5 @@ with only a jellium surface, ABINIT sets arbitrarily the covalent radius to
 one.
 
 
-
+* * *
 

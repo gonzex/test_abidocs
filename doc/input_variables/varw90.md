@@ -1,11 +1,11 @@
 ## **w90iniprj** 
 
 
- Mnemonics: Wannier90- INItial PROJections  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[prtwant]]==2 or [[prtwant]]==3  
+*Mnemonics:* Wannier90- INItial PROJections  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[prtwant]]==2 or [[prtwant]]==3  
 
 
 
@@ -27,18 +27,18 @@ Information about how to define them can be found in the manual of Wannier90.
 See  [ www.wannier.org ](http://www.wannier.org)
 
 
-
+* * *
 
 ## **w90prtunk** 
 
 
- Mnemonics: Wannier90- PRINT UNKp.s file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: The default is set to zero because UNKp.s files occupy a lot of
+*Mnemonics:* Wannier90- PRINT UNKp.s file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* The default is set to zero because UNKp.s files occupy a lot of
 memory.  
-Only relevant if [[prtwant]]==2 or [[prtwant]]==3  
+*Only relevant if:* [[prtwant]]==2 or [[prtwant]]==3  
 
 
 
@@ -89,5 +89,5 @@ this does not produce an acceptable plot, prtunk can be set to 1 to output
 every grid point. (You should try spline interpolation in XCrysDen first.)
 
 
-
+* * *
 

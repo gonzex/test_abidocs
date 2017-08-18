@@ -1,11 +1,11 @@
 ## **adpimd** 
 
 
- Mnemonics: ADiabatic Path-Integral Molecular Dynamics  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[imgmov]]==9 or [[imgmov]]==13  
+*Mnemonics:* ADiabatic Path-Integral Molecular Dynamics  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[imgmov]]==9 or [[imgmov]]==13  
 
 
 
@@ -27,16 +27,16 @@ chains is equal to the normal mode mass divided by [[adpimd_gamma]]
 NOT YET USABLE
 
 
-
+* * *
 
 ## **adpimd_gamma** 
 
 
- Mnemonics: ADiabatic Path-Integral Molecular Dynamics: GAMMA factor  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[adpimd]]==1 and [[imgmov]] in [9,13]  
+*Mnemonics:* ADiabatic Path-Integral Molecular Dynamics: GAMMA factor  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[adpimd]]==1 and [[imgmov]] in [9,13]  
 
 
 
@@ -45,16 +45,16 @@ Dynamics.
 NOT YET USABLE
 
 
-
+* * *
 
 ## **amu** 
 
 
- Mnemonics: Atomic Mass Units  
-Variable type: real  
-Dimensions: ([[ntypat]])  
-Default value: None  
-Comment: provided by a database of atomic masses.  
+*Mnemonics:* Atomic Mass Units  
+*Variable type:* real  
+*Dimensions:* ([[ntypat]])  
+*Default value:* None  
+*Comment:* provided by a database of atomic masses.  
 
 
 
@@ -87,15 +87,15 @@ characteristics can thus be considered, and can be made to evolve, e.g. with a
 genetic algorithm (not coded in v7.0.0 though).
 
 
-
+* * *
 
 ## **bmass** 
 
 
- Mnemonics: Barostat MASS  
-Variable type: real  
-Dimensions: scalar  
-Default value: 10  
+*Mnemonics:* Barostat MASS  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 10  
 
 
 
@@ -103,16 +103,16 @@ bmass is the mass of the barostat when [[ionmov]]=13 (constant pressure
 molecular dynamics)
 
 
-
+* * *
 
 ## **cineb_start** 
 
 
- Mnemonics: Climbing-Image Nudged Elastic Band: STARTing iteration  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 7  
-Only relevant if [[imgmov]]== 5 and [[neb_algo]]==2  
+*Mnemonics:* Climbing-Image Nudged Elastic Band: STARTing iteration  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 7  
+*Only relevant if:* [[imgmov]]== 5 and [[neb_algo]]==2  
 
 
 
@@ -125,15 +125,15 @@ iteration.
 _ See: J. Chem. Phys. 113, 9901 (2000). _
 
 
-
+* * *
 
 ## **delayperm** 
 
 
- Mnemonics: DELAY between trials to PERMUTE atoms  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* DELAY between trials to PERMUTE atoms  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -143,15 +143,15 @@ moldyn.F90. See also [[signperm]]. When [[delayperm]] is zero, there is not
 permutation trials.
 
 
-
+* * *
 
 ## **diismemory** 
 
 
- Mnemonics: Direct Inversion in the Iterative Subspace MEMORY  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 8  
+*Mnemonics:* Direct Inversion in the Iterative Subspace MEMORY  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 8  
 
 
 
@@ -160,15 +160,15 @@ stored, and taken into account in the DIIS algorithm ([[ionmov]]=20) to find
 zero-force and stress configurations.
 
 
-
+* * *
 
 ## **dilatmx** 
 
 
- Mnemonics: lattice DILATation : MaXimal value  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0  
+*Mnemonics:* lattice DILATation : MaXimal value  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
 
 
 
@@ -191,15 +191,15 @@ It is possible to use [[dilatmx]] when [[optcell]] =0, but a value larger than
 1.0 will be a waste.
 
 
-
+* * *
 
 ## **dtion** 
 
 
- Mnemonics: Delta Time for IONs  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100  
+*Mnemonics:* Delta Time for IONs  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100  
 
 
 
@@ -222,16 +222,16 @@ example 200.
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **dynimage** 
 
 
- Mnemonics: DYNamics of the IMAGE  
-Variable type: integer  
-Dimensions: ([[nimage]])  
-Default value: *1  
-Comment: if [[imgmov]] in [2,5] (String Method, NEB), <b>dynimage(1)</b>=0 and <b>dynimage([[nimage]])</b>=0.  
+*Mnemonics:* DYNamics of the IMAGE  
+*Variable type:* integer  
+*Dimensions:* ([[nimage]])  
+*Default value:* *1  
+*Comment:* if [[imgmov]] in [2,5] (String Method, NEB), <b>dynimage(1)</b>=0 and <b>dynimage([[nimage]])</b>=0.  
 
 
 
@@ -248,15 +248,15 @@ In order to save CPU time, the computation of properties of static images
 ([[dynimage]](iimage)=0) can be avoided: see [[istatimg]] keyword.
 
 
-
+* * *
 
 ## **ecutsm** 
 
 
- Mnemonics: Energy CUToff SMearing  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* Energy CUToff SMearing  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
@@ -288,15 +288,15 @@ largely enough for [[ecut]] between 2Ha and 6Ha, to get smooth curves. It is
 likely that this value is OK as soon as [[ecut]] is larger than 4Ha.
 
 
-
+* * *
 
 ## **friction** 
 
 
- Mnemonics: internal FRICTION coefficient  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.001  
+*Mnemonics:* internal FRICTION coefficient  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.001  
 
 
 
@@ -312,15 +312,15 @@ The atomic unit of friction is hartrees*electronic mass*(atomic time
 units)/Bohr  2  . See J. Chelikowsky, J. Phys. D : Appl Phys. 33(2000)R33.
 
 
-
+* * *
 
 ## **fxcartfactor** 
 
 
- Mnemonics: Forces to (X) CARTesian coordinates FACTOR  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1 (Bohr^2)/Hartree  
+*Mnemonics:* Forces to (X) CARTesian coordinates FACTOR  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1 (Bohr^2)/Hartree  
 
 
 
@@ -331,15 +331,15 @@ TO BE UPDATED See ([[ionmov]]=2, non-zero [[optcell]]). For example, the
 stopping criterion defined by [[tolmxf]] relates to these scaled stresses.
 
 
-
+* * *
 
 ## **ga_algor** 
 
 
- Mnemonics: Genetic Algorithm - ALGOrithm selection  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Genetic Algorithm - ALGOrithm selection  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -348,15 +348,15 @@ but we plan to include, energy, electronic band gap and alchemical potentials.
 Right now only value of 1 (enthalpy) works.
 
 
-
+* * *
 
 ## **ga_fitness** 
 
 
- Mnemonics: Genetic Algorithm FITNESS function selection  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Genetic Algorithm FITNESS function selection  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -371,15 +371,15 @@ cases.
 of enthalpies
 
 
-
+* * *
 
 ## **ga_n_rules** 
 
 
- Mnemonics: Genetic Algorithm Number of RULES  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Genetic Algorithm Number of RULES  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -387,15 +387,15 @@ Different genetic rules have been implemented and the user has the change to
 choose between any of them. Right now we have 4 rules. See [[ga_rules]]
 
 
-
+* * *
 
 ## **ga_opt_percent** 
 
 
- Mnemonics: Genetic Algorithm OPTimal PERCENT  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.2  
+*Mnemonics:* Genetic Algorithm OPTimal PERCENT  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.2  
 
 
 
@@ -403,15 +403,15 @@ Percentage of the population that according to the fitness function passes to
 the following iteration.
 
 
-
+* * *
 
 ## **ga_rules** 
 
 
- Mnemonics: Genetic Algorithm RULES  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Genetic Algorithm RULES  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -431,15 +431,15 @@ it is inverted.
 4) Coordinates mutation of 1/4 of the whole coordinates.  
 
 
-
+* * *
 
 ## **getcell** 
 
 
- Mnemonics: GET CELL parameters from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET CELL parameters from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -460,15 +460,15 @@ to find the needed data (once again, going back beyond the first dataset is
 equivalent to using a null get variable).
 
 
-
+* * *
 
 ## **getvel** 
 
 
- Mnemonics: GET VEL from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET VEL from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -494,15 +494,15 @@ the same dataset. On the other hand the use of [[getvel]] with ** getxred **
 is allowed, despite the different coordinate system.
 
 
-
+* * *
 
 ## **getxcart** 
 
 
- Mnemonics: GET XCART from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET XCART from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -528,15 +528,15 @@ the same dataset. On the other hand the use of ** getvel ** with ** getxred **
 is allowed, despite the different coordinate system.
 
 
-
+* * *
 
 ## **getxred** 
 
 
- Mnemonics: GET XRED from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET XRED from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -562,15 +562,15 @@ the same dataset. On the other hand the use of ** getvel ** with [[getxred]]
 is allowed, despite the different coordinate system.
 
 
-
+* * *
 
 ## **goprecon** 
 
 
- Mnemonics: Geometry Optimization PRECONditioner equations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Geometry Optimization PRECONditioner equations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -584,15 +584,15 @@ Set the kind of preconditioner to be used for Geometry Optimization
   
 
 
-
+* * *
 
 ## **goprecprm** 
 
 
- Mnemonics: Geometry Optimization PREconditioner PaRaMeters equations  
-Variable type: real  
-Dimensions: (3)  
-Default value: 0  
+*Mnemonics:* Geometry Optimization PREconditioner PaRaMeters equations  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 0  
 
 
 
@@ -601,15 +601,15 @@ Optimization
 (Note : Under development now (2011.06.06))
 
 
-
+* * *
 
 ## **iatcon** 
 
 
- Mnemonics: Indices of AToms in CONstraint equations  
-Variable type: integer  
-Dimensions: ([[natcon]],[[nconeq]])  
-Default value: 0  
+*Mnemonics:* Indices of AToms in CONstraint equations  
+*Variable type:* integer  
+*Dimensions:* ([[natcon]],[[nconeq]])  
+*Default value:* 0  
 
 
 
@@ -620,16 +620,16 @@ molecular dynamics (see [[nconeq]] , [[natcon]], and [[wtatcon]]).
 this should be described)
 
 
-
+* * *
 
 ## **iatfix** 
 
 
- Mnemonics: Indices of AToms that are FIXed   
-Variable type: integer  
-Dimensions: ([[natfix]])  
-Default value: None  
-Only relevant if [[natfix]] > 0  
+*Mnemonics:* Indices of AToms that are FIXed   
+*Variable type:* integer  
+*Dimensions:* ([[natfix]])  
+*Default value:* None  
+*Only relevant if:* [[natfix]] > 0  
 
 
 
@@ -657,16 +657,16 @@ preprocessed set of atoms, generated by the geometry builder. The user must
 thus foresee the effect of this geometry builder (see [[objarf]]).
 
 
-
+* * *
 
 ## **iatfixx** 
 
 
- Mnemonics: Indices of AToms that are FIXed along the X direction  
-Variable type: integer  
-Dimensions: ([[natfixx]])  
-Default value: None  
-Only relevant if [[natfixx]] > 0  
+*Mnemonics:* Indices of AToms that are FIXed along the X direction  
+*Variable type:* integer  
+*Dimensions:* ([[natfixx]])  
+*Default value:* None  
+*Only relevant if:* [[natfixx]] > 0  
 
 
 
@@ -678,16 +678,16 @@ along x, y or z directions, or a combination of these. See the variable
 [[iatfix]] for more information.
 
 
-
+* * *
 
 ## **iatfixy** 
 
 
- Mnemonics: Indices of AToms that are FIXed along the Y direction  
-Variable type: integer  
-Dimensions: ([[natfixy]])  
-Default value: None  
-Only relevant if [[natfixy]] > 0  
+*Mnemonics:* Indices of AToms that are FIXed along the Y direction  
+*Variable type:* integer  
+*Dimensions:* ([[natfixy]])  
+*Default value:* None  
+*Only relevant if:* [[natfixy]] > 0  
 
 
 
@@ -699,16 +699,16 @@ along x, y or z directions, or a combination of these. See the variable
 [[iatfix]] for more information.
 
 
-
+* * *
 
 ## **iatfixz** 
 
 
- Mnemonics: Indices of AToms that are FIXed along the Z direction  
-Variable type: integer  
-Dimensions: ([[natfixz]])  
-Default value: None  
-Only relevant if [[natfixz]] > 0  
+*Mnemonics:* Indices of AToms that are FIXed along the Z direction  
+*Variable type:* integer  
+*Dimensions:* ([[natfixz]])  
+*Default value:* None  
+*Only relevant if:* [[natfixz]] > 0  
 
 
 
@@ -720,15 +720,15 @@ along x, y or z directions, or a combination of these. See the variable
 [[iatfix]] for more information.
 
 
-
+* * *
 
 ## **imgmov** 
 
 
- Mnemonics: IMaGe MOVEs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* IMaGe MOVEs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -780,15 +780,15 @@ variables, as well as with the parallelism (see input variable [[npimage]]).
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **ionmov** 
 
 
- Mnemonics: IONic MOVEs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* IONic MOVEs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -938,15 +938,15 @@ computation of the atomic forces and positions between t=0 and t=lotf_nitex.
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **istatimg** 
 
 
- Mnemonics: Integer governing the computation of STATic IMaGes  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Integer governing the computation of STATic IMaGes  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -960,15 +960,15 @@ to save CPU time.
 If [[istatimg]]=1, the total energy of static images is computed.
 
 
-
+* * *
 
 ## **mdtemp** 
 
 
- Mnemonics: Molecular Dynamics TEMPeratures  
-Variable type: real  
-Dimensions: (2)  
-Default value: [300, 300]  
+*Mnemonics:* Molecular Dynamics TEMPeratures  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* [300, 300]  
 
 
 
@@ -979,16 +979,16 @@ at itime=1 to the final temperature ** mdtemp(2) ** at the end of the
 [[ntime]] timesteps.
 
 
-
+* * *
 
 ## **mdwall** 
 
 
- Mnemonics: Molecular Dynamics WALL location  
-Variable type: real  
-Dimensions: scalar  
-Default value: 10000.0  
-Comment: the walls are extremely far away  
+*Mnemonics:* Molecular Dynamics WALL location  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 10000.0  
+*Comment:* the walls are extremely far away  
 
 
 
@@ -1002,15 +1002,15 @@ although Angstrom can be specified, if preferred, since [[mdwall]] has the
 '[[LENGTH]]' characteristics.
 
 
-
+* * *
 
 ## **mep_mxstep** 
 
 
- Mnemonics: Minimal Energy Path search: MaXimum allowed STEP size  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.4 if [[imgmov]]==5,
+*Mnemonics:* Minimal Energy Path search: MaXimum allowed STEP size  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.4 if [[imgmov]]==5,
 100.0 otherwise.
   
 
@@ -1026,15 +1026,15 @@ Note that the step size is defined for each image as _ step = SQRT[SUM(R_i dot
 R_i)] _ where the _ R_i _ are the positions of the atoms in the cell.
 
 
-
+* * *
 
 ## **mep_solver** 
 
 
- Mnemonics: Minimal Energy Path ordinary differential equation SOLVER  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
+*Mnemonics:* Minimal Energy Path ordinary differential equation SOLVER  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
 
 
 
@@ -1078,15 +1078,15 @@ each image; see [[mep_mxstep]]. This is by default the case of the Nudged
 Elastic Band ([[imgmov]]=5).
 
 
-
+* * *
 
 ## **natcon** 
 
 
- Mnemonics: Number of AToms in CONstraint equations  
-Variable type: integer  
-Dimensions: ([[nconeq]])  
-Default value: 0  
+*Mnemonics:* Number of AToms in CONstraint equations  
+*Variable type:* integer  
+*Dimensions:* ([[nconeq]])  
+*Default value:* 0  
 
 
 
@@ -1095,16 +1095,16 @@ equations constraining the motion of atoms during structural optimization or
 molecular dynamics (see [[nconeq]] , [[iatcon]], and [[wtatcon]]).
 
 
-
+* * *
 
 ## **natfix** 
 
 
- Mnemonics: Number of Atoms that are FIXed  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Comment: (no atoms held fixed)  
+*Mnemonics:* Number of Atoms that are FIXed  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Comment:* (no atoms held fixed)  
 
 
 
@@ -1114,15 +1114,15 @@ When [[natfix]] &gt; 0, [[natfix]] entries should be provided in array
 [[iatfix]] .
 
 
-
+* * *
 
 ## **natfixx** 
 
 
- Mnemonics: Number of Atoms that are FIXed along the X direction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of Atoms that are FIXed along the X direction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1132,15 +1132,15 @@ When [[natfixx]] &gt; 0, [[natfixx]] entries should be provided in array
 [[iatfixx]].
 
 
-
+* * *
 
 ## **natfixy** 
 
 
- Mnemonics: Number of Atoms that are FIXed along the Y direction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of Atoms that are FIXed along the Y direction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1150,15 +1150,15 @@ When [[natfixy]] &gt; 0, [[natfixy]] entries should be provided in array
 [[iatfixy]]
 
 
-
+* * *
 
 ## **natfixz** 
 
 
- Mnemonics: Number of Atoms that are FIXed along the Z direction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of Atoms that are FIXed along the Z direction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1168,15 +1168,15 @@ When [[natfixz]] &gt; 0, [[natfixz]] entries should be provided in array
 [[iatfixz]].
 
 
-
+* * *
 
 ## **nconeq** 
 
 
- Mnemonics: Number of CONstraint EQuations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of CONstraint EQuations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1185,16 +1185,16 @@ during structural optimization or molecular dynamics (see [[natcon]] ,
 [[iatcon]], and [[wtatcon]]).
 
 
-
+* * *
 
 ## **neb_algo** 
 
 
- Mnemonics: Nudged Elastic Band ALGOrithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[imgmov]]==5  
+*Mnemonics:* Nudged Elastic Band ALGOrithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[imgmov]]==5  
 
 
 
@@ -1230,18 +1230,18 @@ allowing it to vary between 2 values (to have higher resolution close to the
 saddle point).
 
 
-
+* * *
 
 ## **neb_spring** 
 
 
- Mnemonics: Nudged Elastic Band: SPRING constant  
-Variable type: real  
-Dimensions: (2)  
-Default value: [0.02, 0.15] if [[neb_algo]]==2,
+*Mnemonics:* Nudged Elastic Band: SPRING constant  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* [0.02, 0.15] if [[neb_algo]]==2,
 [0.05, 0.05] otherwise.
   
-Only relevant if [[imgmov]]==5  
+*Only relevant if:* [[imgmov]]==5  
 
 
 
@@ -1253,15 +1253,15 @@ point, it can be better to have stronger springs close to it.
 _ See: J. Chem. Phys. 113, 9901 (2000). _
 
 
-
+* * *
 
 ## **nimage** 
 
 
- Mnemonics: Number of IMAGEs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of IMAGEs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1319,15 +1319,15 @@ contrast, there is no problem if some other image has more symmetries than
 those of the second image.
 
 
-
+* * *
 
 ## **nnos** 
 
 
- Mnemonics: Number of NOSe masses  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of NOSe masses  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1338,16 +1338,16 @@ Dynamics (MD) ([[ionmov]]=13) or to perform Path Integral Molecular Dynamics
 The mass of these thermostats is given by [[qmass]].  
 
 
-
+* * *
 
 ## **noseinert** 
 
 
- Mnemonics: NOSE thermostat INERTia factor  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100000  
-Only relevant if [[ionmov]]==8  
+*Mnemonics:* NOSE thermostat INERTia factor  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100000  
+*Only relevant if:* [[ionmov]]==8  
 
 
 
@@ -1360,15 +1360,15 @@ each nucleus (see [[amu]]), RI is the coordinate of each nucleus (see
 temperature of the thermostat (see [[mdtemp]]).
 
 
-
+* * *
 
 ## **ntime** 
 
 
- Mnemonics: Number of TIME steps  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of TIME steps  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1380,15 +1380,15 @@ initialisation of other [[ionmov]] values is only one SCF call.
 [[ntime]] is ignored if [[ionmov]]=0.
 
 
-
+* * *
 
 ## **ntimimage** 
 
 
- Mnemonics: Number of TIME steps for IMAGE propagation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of TIME steps for IMAGE propagation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1401,15 +1401,15 @@ velocities for each image are determined from the set of results obtained for
 all images.
 
 
-
+* * *
 
 ## **optcell** 
 
 
- Mnemonics: OPTimize the CELL shape and dimensions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* OPTimize the CELL shape and dimensions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1442,16 +1442,16 @@ size optimization from the cell with relaxed ionic positions. Presently
 zero [[optcell]] value. There are still a few problems at that level.
 
 
-
+* * *
 
 ## **pimass** 
 
 
- Mnemonics: Path Integral fictitious MASSes  
-Variable type: real  
-Dimensions: ([[ntypat]])  
-Default value: [[ntypat]]  
-Only relevant if [[imgmov]]=9 or 13  
+*Mnemonics:* Path Integral fictitious MASSes  
+*Variable type:* real  
+*Dimensions:* ([[ntypat]])  
+*Default value:* [[ntypat]]  
+*Only relevant if:* [[imgmov]]=9 or 13  
 
 
 
@@ -1469,16 +1469,16 @@ If [[pitransform]]=1 (normal mode transformation), or [[pitransform]]=2
 value.  
 
 
-
+* * *
 
 ## **pimd_constraint** 
 
 
- Mnemonics: Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[imgmov]]=9 or 13  
+*Mnemonics:* Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[imgmov]]=9 or 13  
 
 
 
@@ -1502,15 +1502,15 @@ More details on the implementation in: [Y. Komeiji,Chem-Bio Informatics
 Journal 7, 12-23 (2007)](http://doi.org/10.1273/cbij.7.12).
 
 
-
+* * *
 
 ## **pitransform** 
 
 
- Mnemonics: Path Integral coordinate TRANSFORMation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Path Integral coordinate TRANSFORMation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1530,14 +1530,14 @@ absolutely EVEN).
 If equal to 2, staging transformation.
 
 
-
+* * *
 
 ## **prtatlist** 
 
 
- Mnemonics: PRinT by ATom LIST of ATom  
-Variable type: integer  
-Default value: 0  
+*Mnemonics:* PRinT by ATom LIST of ATom  
+*Variable type:* integer  
+*Default value:* 0  
 
 
 
@@ -1550,15 +1550,15 @@ numbers associated should be consistent with the list in [[xcart]] or
 atoms.
 
 
-
+* * *
 
 ## **qmass** 
 
 
- Mnemonics: Q thermostat MASS  
-Variable type: real  
-Dimensions: ([[nnos]])  
-Default value: *10.0  
+*Mnemonics:* Q thermostat MASS  
+*Variable type:* real  
+*Dimensions:* ([[nnos]])  
+*Default value:* *10.0  
 
 
 
@@ -1574,15 +1574,15 @@ can be used with  [[optcell]] =0 (NVT ensemble) or 2 (fully flexible NPT
 ensemble). In that case, [[optcell]]=2 iS NOT USABLE yet.
 
 
-
+* * *
 
 ## **random_atpos** 
 
 
- Mnemonics: RANDOM ATomic POSitions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RANDOM ATomic POSitions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1597,15 +1597,15 @@ atoms (note : this is incompatible with the definition of alchemical mixing,
 in which [[ntypat]] differs from [[npsp]])
 
 
-
+* * *
 
 ## **restartxf** 
 
 
- Mnemonics: RESTART from (X,F) history  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* RESTART from (X,F) history  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1637,30 +1637,30 @@ NOTES:
 * You can take advantage of the appropriate values of [[irdwfk]] or [[getwfk]] to get a good wave function to continue your job. 
 
 
-
+* * *
 
 ## **signperm** 
 
 
- Mnemonics: SIGN of PERMutation potential  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* SIGN of PERMutation potential  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
 +1 favors alternation of species -1 favors segregation
 
 
-
+* * *
 
 ## **strfact** 
 
 
- Mnemonics: STRess FACTor  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100  
+*Mnemonics:* STRess FACTor  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100  
 
 
 
@@ -1670,15 +1670,15 @@ For example, the stopping criterion defined by [[tolmxf]] relates to these
 scaled stresses.
 
 
-
+* * *
 
 ## **string_algo** 
 
 
- Mnemonics: STRING method ALGOrithm  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* STRING method ALGOrithm  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -1708,15 +1708,15 @@ _ See: J. Chem. Phys. 126, 164103 (2007) and J. Chem. Phys. 130, 244108 (2009)
 _
 
 
-
+* * *
 
 ## **strprecon** 
 
 
- Mnemonics: STRess PRECONditioner  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0  
+*Mnemonics:* STRess PRECONditioner  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
 
 
 
@@ -1725,15 +1725,15 @@ treatment of the stresses (optimisation of the unit cell). In case there is an
 instability, decrease the default value, e.g. set it to 0.1 .
 
 
-
+* * *
 
 ## **strtarget** 
 
 
- Mnemonics: STRess TARGET  
-Variable type: real  
-Dimensions: (6)  
-Default value: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
+*Mnemonics:* STRess TARGET  
+*Variable type:* real  
+*Dimensions:* (6)  
+*Default value:* [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
 
 
 
@@ -1744,15 +1744,15 @@ GPa.
 Not used if [[optcell]]==0.
 
 
-
+* * *
 
 ## **tolimg** 
 
 
- Mnemonics: TOLerance on the mean total energy for IMaGes  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5e-05  
+*Mnemonics:* TOLerance on the mean total energy for IMaGes  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5e-05  
 
 
 
@@ -1767,15 +1767,15 @@ about 3.7d-7 eV).
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **tolmxde** 
 
 
- Mnemonics: TOLerance on the MaXimal Difference in Energy  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* TOLerance on the MaXimal Difference in Energy  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
@@ -1786,15 +1786,15 @@ In order to use tolmxde, you should explicitly set tolmxf to 0.0.
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **tolmxf** 
 
 
- Mnemonics: TOLerance on the MaXimal Force  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5e-05  
+*Mnemonics:* TOLerance on the MaXimal Force  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5e-05  
 
 
 
@@ -1811,17 +1811,17 @@ to about 2.5d-3 eV/Angstrom).
 No meaning for RF calculations.
 
 
-
+* * *
 
 ## **vel** 
 
 
- Mnemonics: VELocity  
-Variable type: real  
-Dimensions: (3,[[natom]])  
-commentdims It is represented internally as [[vel]](3,[[natom]],[[nimage]])  
-Default value: *0  
-Only relevant if [[ionmov]] > 0  
+*Mnemonics:* VELocity  
+*Variable type:* real  
+*Dimensions:* (3,[[natom]])  
+*commentdims:* It is represented internally as [[vel]](3,[[natom]],[[nimage]])  
+*Default value:* *0  
+*Only relevant if:* [[ionmov]] > 0  
 
 
 
@@ -1835,17 +1835,17 @@ the effect of this geometry builder (see [[objarf]]).
 Velocities evolve is [[ionmov]]==1.
 
 
-
+* * *
 
 ## **vel_cell** 
 
 
- Mnemonics: VELocity of the CELL parameters  
-Variable type: real  
-Dimensions: (3,3)  
-commentdims It is represented internally as [[vel_cell]](3,3,[[nimage]])   
-Default value: *3  
-Only relevant if [[imgmov]] in [9,13] and [[optcell]] > 0
+*Mnemonics:* VELocity of the CELL parameters  
+*Variable type:* real  
+*Dimensions:* (3,3)  
+*commentdims:* It is represented internally as [[vel_cell]](3,3,[[nimage]])   
+*Default value:* *3  
+*Only relevant if:* [[imgmov]] in [9,13] and [[optcell]] > 0
 (Path-Integral Molecular Dynamics
 with NPT algorithm)  
 
@@ -1857,15 +1857,15 @@ Gives the starting velocities of the dimensional cell parameters in
 Bohr/atomic time units (atomic time units given where [[dtion]] is described).
 
 
-
+* * *
 
 ## **vis** 
 
 
- Mnemonics: VIScosity  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100  
+*Mnemonics:* VIScosity  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100  
 
 
 
@@ -1883,15 +1883,15 @@ In the case of Path-Integral Molecular Dynamics using the Langevin Thermostat
 Typical value range is 0.00001-0.001.
 
 
-
+* * *
 
 ## **wtatcon** 
 
 
- Mnemonics: WeighTs for AToms in CONstraint equations  
-Variable type: real  
-Dimensions: (3,[[natcon]],[[nconeq]])  
-Default value: 0  
+*Mnemonics:* WeighTs for AToms in CONstraint equations  
+*Variable type:* real  
+*Dimensions:* (3,[[natcon]],[[nconeq]])  
+*Default value:* 0  
 
 
 
@@ -1917,5 +1917,5 @@ atoms on a surface (assuming their masses are equal), since F'  z,1  \- F'
 z,2  = 0 implies z  1  \- z  2  = constant.
 
 
-
+* * *
 

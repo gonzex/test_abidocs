@@ -1,10 +1,10 @@
 ## **irdvdw** 
 
 
- Mnemonics: Integer that governs the ReaDing of _VDW files  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of _VDW files  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -15,209 +15,209 @@ Supported values:
   * 1 =&gt; read vdW-DF variables 
 
 
-
+* * *
 
 ## **prtvdw** 
 
 
- Mnemonics: PRinT Van Der Waals file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT Van Der Waals file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
 Print out a NetCDF file containing a vdW-DF kernel.
 
 
-
+* * *
 
 ## **vdw_df_acutmin** 
 
 
- Mnemonics: vdW-DF MINimum Angular CUT-off  
-Variable type: real  
-Dimensions: scalar  
-Default value: 10  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF MINimum Angular CUT-off  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 10  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_aratio** 
 
 
- Mnemonics: vdW-DF Angle RATIO between the highest and
+*Mnemonics:* vdW-DF Angle RATIO between the highest and
 lowest angles.  
-Variable type: real  
-Dimensions: scalar  
-Default value: 30  
-Only relevant if [[vdw_xc]]>0  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 30  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_damax** 
 
 
- Mnemonics: vdW-DF Delta for Angles, MAXimum   
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.5  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Delta for Angles, MAXimum   
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.5  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_damin** 
 
 
- Mnemonics: vdW-DF Delta for Angles, MINimum  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.01  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Delta for Angles, MINimum  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.01  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_dcut** 
 
 
- Mnemonics: vdW-DF D-mesh CUT-off  
-Variable type: real  
-Dimensions: scalar  
-Default value: 30  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF D-mesh CUT-off  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 30  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_dratio** 
 
 
- Mnemonics: vdW-DF, between the highest and
+*Mnemonics:* vdW-DF, between the highest and
 lowest D, RATIO.  
-Variable type: real  
-Dimensions: scalar  
-Default value: 20  
-Only relevant if [[vdw_xc]]>0  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 20  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_dsoft** 
 
 
- Mnemonics: vdW-DF Distance for SOFTening.  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Distance for SOFTening.  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_gcut** 
 
 
- Mnemonics: vdW-DF G-space CUT-off  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF G-space CUT-off  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to filter the vdW-DF kernel in reciprocal space.  
 
 
-
+* * *
 
 ## **vdw_df_ndpts** 
 
 
- Mnemonics: vdW-DF Number of D-mesh PoinTS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 20  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Number of D-mesh PoinTS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 20  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_ngpts** 
 
 
- Mnemonics: vdW-DF Number of G-mesh PoinTS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: -1  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Number of G-mesh PoinTS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* -1  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_nqpts** 
 
 
- Mnemonics: vdW-DF Number of Q-mesh PoinTS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 30  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Number of Q-mesh PoinTS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 30  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_nrpts** 
 
 
- Mnemonics: vdW-DF Number of R-PoinTS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2048  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Number of R-PoinTS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2048  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
@@ -225,112 +225,112 @@ Used when [[vdw_xc]]&gt;0, to define the sampling of the vdW-DF-kernel in
 real-space.  
 
 
-
+* * *
 
 ## **vdw_df_nsmooth** 
 
 
- Mnemonics: vdW-DF Number of SMOOTHening iterations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 12  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Number of SMOOTHening iterations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 12  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to exponentially smoothen q near q0.  
 
 
-
+* * *
 
 ## **vdw_df_phisoft** 
 
 
- Mnemonics: vdW-DF PHI value SOFTening.  
-Variable type: real  
-Dimensions: scalar  
-Default value: -1.0  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF PHI value SOFTening.  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* -1.0  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_qcut** 
 
 
- Mnemonics: vdW-DF Q-mesh CUT-off  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Q-mesh CUT-off  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_qratio** 
 
 
- Mnemonics: vdW-DF, between highest and lowest Q, RATIO .  
-Variable type: real  
-Dimensions: scalar  
-Default value: 20  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF, between highest and lowest Q, RATIO .  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 20  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, .  
 
 
-
+* * *
 
 ## **vdw_df_rcut** 
 
 
- Mnemonics: vdW-DF Real-space CUT-off  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF Real-space CUT-off  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to define the vdW-DF kernel cut-off radius.  
 
 
-
+* * *
 
 ## **vdw_df_rsoft** 
 
 
- Mnemonics: vdW-DF radius SOFTening.  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF radius SOFTening.  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_threshold** 
 
 
- Mnemonics: vdW-DF energy calculation THRESHOLD  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.01  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF energy calculation THRESHOLD  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.01  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
@@ -341,32 +341,32 @@ calculation. Too small values, as well as negative values, will result in the
 vdW-DF energy contributions never being calculated.
 
 
-
+* * *
 
 ## **vdw_df_tolerance** 
 
 
- Mnemonics: vdW-DF global TOLERANCE.  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-13  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF global TOLERANCE.  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-13  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 
 
-
+* * *
 
 ## **vdw_df_tweaks** 
 
 
- Mnemonics: vdW-DF TWEAKS.  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF TWEAKS.  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
@@ -374,16 +374,16 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 ** _ IMPORTANT NOTE: modifying this variable will likely transform the calculated energies and their gradients into garbage. You have been warned! _ **   
 
 
-
+* * *
 
 ## **vdw_df_zab** 
 
 
- Mnemonics: vdW-DF ZAB parameter  
-Variable type: real  
-Dimensions: scalar  
-Default value: -0.8491  
-Only relevant if [[vdw_xc]]>0  
+*Mnemonics:* vdW-DF ZAB parameter  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* -0.8491  
+*Only relevant if:* [[vdw_xc]]>0  
 
 
 
@@ -392,16 +392,16 @@ doi:10.1103/PhysRevLett.92.246401
 ](http://dx.doi.org/10.1103/PhysRevLett.92.246401) .  
 
 
-
+* * *
 
 ## **vdw_nfrag** 
 
 
- Mnemonics: Van Der Waals Number of interacting FRAGments  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[vdw_xc]] in [10,11]  
+*Mnemonics:* Van Der Waals Number of interacting FRAGments  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[vdw_xc]] in [10,11]  
 
 
 
@@ -414,16 +414,16 @@ by Wannier90. The later is usually correct if some atoms are located at the
 corners or at limiting faces of the unit cell.
 
 
-
+* * *
 
 ## **vdw_supercell** 
 
 
- Mnemonics: Van Der Waals correction from Wannier functions in SUPERCELL  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[vdw_xc]] in [10,11]  
+*Mnemonics:* Van Der Waals correction from Wannier functions in SUPERCELL  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[vdw_xc]] in [10,11]  
 
 
 
@@ -438,16 +438,16 @@ avoided. Both a negative or null value for one component of [[vdw_supercell]]
 will indicate that the corresponding direction is normal to the layers.
 
 
-
+* * *
 
 ## **vdw_tol** 
 
 
- Mnemonics: Van Der Waals TOLerance  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-10  
-Only relevant if [[vdw_xc]]==5  
+*Mnemonics:* Van Der Waals TOLerance  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-10  
+*Only relevant if:* [[vdw_xc]]==5  
 
 
 
@@ -457,17 +457,17 @@ the potential is necessarily limited. To be included in the potential a pair
 of atom must have contribution to the energy larger than [[vdw_tol]].
 
 
-
+* * *
 
 ## **vdw_tol_3bt** 
 
 
- Mnemonics: Van Der Waals TOLerance for 3-Body Term  
-Variable type: real  
-Dimensions: scalar  
-Default value: -1  
-Comment: Do include the 3-body term in the correction  
-Only relevant if [[vdw_xc]] == 6  
+*Mnemonics:* Van Der Waals TOLerance for 3-Body Term  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* -1  
+*Comment:* Do include the 3-body term in the correction  
+*Only relevant if:* [[vdw_xc]] == 6  
 
 
 
@@ -493,16 +493,16 @@ contribution to energy, to forces and to stress is available (not planned for
 elastic constants, dynamical matrix and internal strains)
 
 
-
+* * *
 
 ## **vdw_typfrag** 
 
 
- Mnemonics: Van Der Waals TYPe of FRAGment  
-Variable type: integer  
-Dimensions: ([[natom]])  
-Default value: 1*[[natom]]  
-Only relevant if [[vdw_xc]] in [10,11]  
+*Mnemonics:* Van Der Waals TYPe of FRAGment  
+*Variable type:* integer  
+*Dimensions:* ([[natom]])  
+*Default value:* 1*[[natom]]  
+*Only relevant if:* [[vdw_xc]] in [10,11]  
 
 
 
@@ -515,15 +515,15 @@ interacting fragment can be found in the output file in xyz format for easy
 visualization.
 
 
-
+* * *
 
 ## **vdw_xc** 
 
 
- Mnemonics: Van Der Waals eXchange-Correlation functional  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Van Der Waals eXchange-Correlation functional  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -577,5 +577,5 @@ devised in the article of Roman-Perez and Soler
 ([doi:10.1103/PhysRevLett.103.096102](https://dx.doi.org/10.1103/PhysRevLett.103.096102))
 
 
-
+* * *
 

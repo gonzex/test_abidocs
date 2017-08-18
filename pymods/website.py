@@ -10,10 +10,27 @@ from pymods.variables import Variable
 _WEBSITE = None
 
 
-def build_website(top, verbose=0):
+def splitall(path):
+    import os, sys
+    allparts = []
+    while True:
+        parts = os.path.split(path)
+        if parts[0] == path:  # sentinel for absolute paths
+            allparts.insert(0, parts[0])
+            break
+        elif parts[1] == path: # sentinel for relative paths
+            allparts.insert(0, parts[1])
+            break
+        else:
+            path = parts[0]
+            allparts.insert(0, parts[1])
+    return allparts
+
+
+def build_website(root, verbose=0):
     global _WEBSITE
     assert _WEBSITE is None
-    _WEBSITE = Website(top, verbose=verbose)
+    _WEBSITE = Website(root, verbose=verbose)
     return _WEBSITE
 
 
@@ -23,32 +40,117 @@ def get_website():
     return _WEBSITE
 
 
+from pybtex.database import Entry, parse_file
+class MyEntry(Entry):
+    """https://bitbucket.org/pybtex-devs/pybtex/"""
+
+    def to_markdown(self):
+        # Entry('article', fields=[('Title', 'Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra'), ('Year', '2016'), ('volume', '203C'), ('pages', '83-93'), ('Journal', 'Comput. Phys. Comm.'), ('Doi', '10.1016/j.cpc.2016.02.008'), ('Owner', 'yannick'), ('Timestamp', '2015.08.27')], persons=OrderedCaseInsensitiveDict([('Author', [Person('Gillet, Y.'), Person('Giantomassi, M.'), Person('Gonze, X.')])]))
+
+        # Entry('book', fields=[('title', 'Electrons and phonons'), ('publisher', 'Oxford University Press'), ('year', '1960')], persons=OrderedCaseInsensitiveDict([('author', [Person('Ziman, J. M.')])]))
+
+        fields = self.fields
+        title = fields["title"]
+
+        if self.type == "article":
+            authors = ", ".join(str(p) for p in self.persons["author"])
+            s = '{}  \n{}  \n'.format(authors, title)
+            if "eprint" in fields:
+                s += "{} **{}**, {} ({})".format(fields["journal"], fields.get("archivePrefix", ""), fields["eprint"], fields["year"])
+            else:
+                s += "{} **{}**, {} ({})".format(fields["journal"], fields["volume"], fields["pages"], fields["year"])
+
+        elif self.type in ("book", "incollection"): # FIXME Better treatment for incollection
+            authors = ", ".join(str(p) for p in self.persons["author"])
+            #editors = ", ".join(str(e) for e in self.persons["editor"]])
+            s = '{}  \n{}  \n'.format(authors, title)
+            s += "{} ({})".format(fields["publisher"], fields["year"])
+            if "isbn" in fields:
+                s += "isbn: %s" % fields["isbn"]
+
+        elif self.type in ("phdthesis", "mastersthesis"):
+            authors = ", ".join(str(p) for p in self.persons["author"])
+            s = '{}  \n{}  \n{} ({})'.format(authors, title, fields["school"], fields["year"])
+
+        elif self.type == "misc":
+            authors = ", ".join(str(p) for p in self.persons["author"])
+            s = '{}  \n{} ({})'.format(authors, title, fields["year"])
+
+        else:
+            raise TypeError("Don't know how to convert type: `%s` into markdown string" % self.type)
+
+        s += "  \n"
+        if "url" in fields:
+            s += 'URL: <a href={url} target="_black">{url}</a>'.format(url=fields["url"])
+        elif "doi" in fields:
+            doi = fields["doi"]
+            doi_root = "https://doi.org/"
+            if not doi.startswith(doi_root): doi = doi_root + doi
+            s += 'DOI: <a href={doi} target="_blank">{doi}</a>'.format(doi=doi)
+
+        return s
+
+    def to_html(self):
+        import markdown
+        return markdown.markdown(self.to_markdown())
+
+
 class Website(object):
 
-    def __init__(self, top, verbose=0):
-        self.top = os.path.abspath(top)
+    def __init__(self, root, verbose=0):
+        self.root = os.path.abspath(root)
         self.verbose = verbose
 
+        # Get database with input variables
         from pymods.variables import get_variables_code
         self.variables_code = get_variables_code()
 
-        from pybtex.database import parse_file
-        self.bib_data = parse_file(os.path.join(self.top, "abiref.bib"), bib_format="bibtex")
-        #for name, entry in self.bib_data.entries.items():
-        #   print(name, entry)
+        # Get bibtex references and cast to MyEntry instances
+        self.bib_data = parse_file(os.path.join(self.root, "abiref.bib"), bib_format="bibtex")
+        for entry in self.bib_data.entries.values():
+            entry.__class__ = MyEntry
 
-        self.abinit_stats = AbinitStats(os.path.join(self.top, "statistics.txt"))
-        self.abinit_stats.json_dump(os.path.join(self.top, "statistics.json"))
+        # Get code statistics
+        self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
+        self.abinit_stats.json_dump(os.path.join(self.root, "statistics.json"))
 
-        #sys.path.insert(0, os.path.join(pack_dir, "doc"))
-        #from doc import tests
-        #print(tests)
-        #abitests = tests.abitests.select_tests(suite_args=[])
-        #for test in abitests:
-        #    if hasattr(test, "description"):
-        #        print(test.description)
-        #    if hasattr(test, "topics"):
-        #        print(test.topics)
+        # Build AbinitTestSuite object.
+        from doc import tests as tmod
+        from doc.tests.pymods.testsuite import ChainOfTests
+        #print("tests module", tests)
+        tests = []
+        for t in tmod.abitests.select_tests(suite_args=[], regenerate=True):
+            #if isinstance(t, ChainOfTests):  # FIXME?
+            if hasattr(t, "tests"):
+                tests.extend(t.tests)
+            else:
+                #print(type(t))
+                tests.append(t)
+        #if hasattr(test, "description"): print(test.description)
+        #if hasattr(test, "topics"): print(test.topics)
+        #self.inrpath2test = {os.path.relpath(t.inp_fname, self.root): t for t in tests}
+        #self.inrpath2test = {t.inp_fname: t for t in tests}
+        #print(self.inrpath2test.keys())
+
+        self.inrpath2test = {}
+        for t in tests:
+            toks = splitall(t.inp_fname)[-4:]
+            key = os.path.join(*toks)
+            print(toks, key)
+            self.inrpath2test[key] = t
+
+
+        #codes = list(self.variables_code.keys())
+        #for test in tests:
+        #    print(test, test.description, test.topics)
+        #    if test.executable in ("atompaw", "cut3d"): continue
+        #    d = self.variables_code[test.executable]
+        #    for vname in test.get_varnames(list(d.values())):
+        #        var = d[vname]
+        #        if not hasattr(var, "tests"): var.tests = []
+        #        var.tests.append(test)
+        #        ratio_all
+        #        ratio_in_tuto
 
     #def __str__(self):
     #    lines = []
@@ -56,20 +158,21 @@ class Website(object):
     #    return "\n".join(lines)
 
     def generate_markdown_files(self):
-        workdir = os.path.join(self.top, "input_variables")
+        workdir = os.path.join(self.root, "input_variables")
         for code, vardb in self.variables_code.items():
             print("Generating markdown files with %s input variables ..." % code)
             vardb.write_markdown_files(workdir)
 
         print("Generating Markdown file with bibliographic entries ...")
-        with open(os.path.join(self.top, "bibliography.md"), "wt") as fh:
+        with open(os.path.join(self.root, "bibliography.md"), "wt") as fh:
             for name, entry in self.bib_data.entries.items():
                 lines = []
                 lines.append("\n\n## **%s** \n\n" % name)
-                lines.append(str(entry))
+                lines.append(entry.to_markdown())
+                lines.append("* * *")
                 fh.write("\n".join(lines))
 
-        #with open(os.path.join(self.top, "acknowledgments.md") as fh
+        #with open(os.path.join(self.root, "acknowledgments.md") as fh
 
     def analyze_pages(self):
         self.pages = []
@@ -83,6 +186,26 @@ class Website(object):
                 elif f.endswith(".html") or f.endswith(".htm"):
                     self.pages.append(HtmlPage(path))
 
+    def get_citation_aelement(self, key, html_class=None):
+        from markdown.util import etree
+        a = etree.Element('a')
+        # Handle citation
+        ref = self.bib_data.entries[key]
+        url = "/bibliography/#%s" % key
+        # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
+        a.set("data-toggle", "popover")
+        a.set("title", ref.fields["title"])
+        a.set("data-placement", "auto bottom")
+        a.set("data-trigger", "hover")
+        #a.set("data-content", "Some content inside the popover")
+        #a.set("data-content", str(ref))
+        #a.set("data-content", ref.to_html())
+        a.set('href', url)
+        a.text = key
+        if html_class:
+            a.set('class', html_class)
+        return a
+
     def validate_html_build(self):
         # https://bitbucket.org/nmb10/py_w3c
         # import HTML validator and create validator instance
@@ -90,10 +213,10 @@ class Website(object):
         vld = HTMLValidator()
 
         from tidylib import tidy_document
-        top = os.path.join(os.path.dirname(self.top), "site")
+        sitedir = os.path.join(os.path.dirname(self.root), "site")
         from pprint import pprint
 
-        for root, dirs, files in os.walk(top):
+        for root, dirs, files in os.walk(sitedir):
             for f in files:
                 if not (f.endswith(".html") or f.endswith(".htm")): continue
                 path = os.path.join(root, f)

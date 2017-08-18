@@ -1,11 +1,11 @@
 ## **atvshift** 
 
 
- Mnemonics: ATomic potential (V) energy SHIFTs  
-Variable type: real  
-Dimensions: ([[natvshift]],[[nsppol]],[[natom]])  
-Default value: *0.0d0  
-Only relevant if [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
+*Mnemonics:* ATomic potential (V) energy SHIFTs  
+*Variable type:* real  
+*Dimensions:* ([[natvshift]],[[nsppol]],[[natom]])  
+*Default value:* *0.0d0  
+*Only relevant if:* [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
 
 
 
@@ -21,16 +21,16 @@ sets of 7 numbers, corresponding to m=-3 to m=+3.
 [[usepawu]] should be non-zero, [[lpawu]] should be 2 or 3.
 
 
-
+* * *
 
 ## **bdberry** 
 
 
- Mnemonics: BanD limits for BERRY phase  
-Variable type: integer  
-Dimensions: (4)  
-Default value: 4*0  
-Only relevant if [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
+*Mnemonics:* BanD limits for BERRY phase  
+*Variable type:* integer  
+*Dimensions:* (4)  
+*Default value:* 4*0  
+*Only relevant if:* [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
 
 
 
@@ -48,15 +48,15 @@ phase calculation with [[berryopt]] = 1, 2, or 3: the above-mentioned default
 will cause an early exit.
 
 
-
+* * *
 
 ## **berryopt** 
 
 
- Mnemonics: BERRY phase OPTions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* BERRY phase OPTions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -107,15 +107,15 @@ In case of finite electric and displacement field calculations
 [[dfield]], [[red_dfield]], [[red_efield]], [[ddamp]]
 
 
-
+* * *
 
 ## **berrysav** 
 
 
- Mnemonics: BERRY SAVe  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* BERRY SAVe  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -123,16 +123,16 @@ Default value: 0
   * 1 =&gt; the polarization will be kept in the same branch on each iteration. At the end of the run, a file "POLSAVE" will be saved containing the reduced polarization in atomic units. Note: Make sure that "POLSAVE" is empty or it does not exist before the calculation, or else that it specifies the desired polarization branch. 
 
 
-
+* * *
 
 ## **berrystep** 
 
 
- Mnemonics: BERRY phase : multiple STEP  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if 0 > [[berryopt]]  
+*Mnemonics:* BERRY phase : multiple STEP  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* 0 > [[berryopt]]  
 
 
 
@@ -151,15 +151,15 @@ the single-step berry phase. Use with care: while experience is still to be
 gained with this procedure, the outlook is promising.
 
 
-
+* * *
 
 ## **bfield** 
 
 
- Mnemonics: finite B FIELD calculation  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
+*Mnemonics:* finite B FIELD calculation  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
 
 
 
@@ -167,16 +167,16 @@ Perform finite magnetic field calculation.
 **THIS CODE IS UNDER DEVELOPMENT AND IS NOT READY FOR USE.**
 
 
-
+* * *
 
 ## **ddamp** 
 
 
- Mnemonics: electric Displacement field DAMPing parameter  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.1  
-Only relevant if [[berryopt]] = 6 or 16  
+*Mnemonics:* electric Displacement field DAMPing parameter  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.1  
+*Only relevant if:* [[berryopt]] = 6 or 16  
 
 
 
@@ -192,16 +192,16 @@ maxestep. This parameter is used in finite electric displacement field
 calculations (berryopt=6,16,17).
 
 
-
+* * *
 
 ## **dfield** 
 
 
- Mnemonics: Displacement FIELD  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[berryopt]] = 6, [[efield]]  
+*Mnemonics:* Displacement FIELD  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[berryopt]] = 6, [[efield]]  
 
 
 
@@ -210,16 +210,16 @@ displacement field vector, in atomic units, that is to be imposed as a
 constraint during the calculation.
 
 
-
+* * *
 
 ## **efield** 
 
 
- Mnemonics: Electric FIELD  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[berryopt]] = 4 or 6  
+*Mnemonics:* Electric FIELD  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[berryopt]] = 4 or 6  
 
 
 
@@ -244,16 +244,16 @@ electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 (0.5291772108e-10).
 
 
-
+* * *
 
 ## **jfielddir** 
 
 
- Mnemonics: electric/displacement FIELD DIRection  
-Variable type: integer  
-Dimensions: (3)  
-Default value: 3*0  
-Only relevant if [[berryopt]] = 17  
+*Mnemonics:* electric/displacement FIELD DIRection  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* 3*0  
+*Only relevant if:* [[berryopt]] = 17  
 
 
 
@@ -277,16 +277,16 @@ ebar calculation ([[red_efieldbar]]=(0 0 0)), from the final results you will
 have d_1,d_2, these are good guesses for b, c.
 
 
-
+* * *
 
 ## **kberry** 
 
 
- Mnemonics: K wavevectors for BERRY phase computation  
-Variable type: integer  
-Dimensions: (3,[[nberry]])  
-Default value: *0  
-Only relevant if [[berryopt]] = 1, 2, or 3  
+*Mnemonics:* K wavevectors for BERRY phase computation  
+*Variable type:* integer  
+*Dimensions:* (3,[[nberry]])  
+*Default value:* *0  
+*Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
 
 
@@ -312,16 +312,16 @@ converged wavefunctions in the entire Brillouin zone, by reading them to
 initialize the [[kptopt]]=3 computation.
 
 
-
+* * *
 
 ## **maxestep** 
 
 
- Mnemonics: MAXimum Electric field STEP  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.005  
-Only relevant if [[berryopt]] = 6, 16, or 17  
+*Mnemonics:* MAXimum Electric field STEP  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.005  
+*Only relevant if:* [[berryopt]] = 6, 16, or 17  
 
 
 
@@ -331,16 +331,16 @@ converge, try reducing this value or reducing [[ddamp]]. This variable is used
 in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 
 
-
+* * *
 
 ## **natvshift** 
 
 
- Mnemonics: Number of ATomic potential (V) energy SHIFTs (per atom)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[usepawu]] /= 0, [[atvshift]]  
+*Mnemonics:* Number of ATomic potential (V) energy SHIFTs (per atom)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[usepawu]] /= 0, [[atvshift]]  
 
 
 
@@ -350,16 +350,16 @@ array [[atvshift]]. If non-zero, only two possibilities exist : 5 for d states
 should define [[usepawu]], [[lpawu]] and [[atvshift]].
 
 
-
+* * *
 
 ## **nberry** 
 
 
- Mnemonics: Number of BERRY phase computations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[berryopt]] = 1, 2, or 3  
+*Mnemonics:* Number of BERRY phase computations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
 
 
@@ -383,15 +383,15 @@ For the [[berryopt]] = 1, 2, and 3 cases, spinor wavefunctions are not
 allowed, nor are parallel computations.
 
 
-
+* * *
 
 ## **polcen** 
 
 
- Mnemonics: POLarization for CENtrosymmetric geometry  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0  
+*Mnemonics:* POLarization for CENtrosymmetric geometry  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0  
 
 
 
@@ -403,16 +403,16 @@ Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 (2009))
 
 
-
+* * *
 
 ## **qprtrb** 
 
 
- Mnemonics: Q-wavevector of the PERTurbation  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[vprtrb]]  
+*Mnemonics:* Q-wavevector of the PERTurbation  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[vprtrb]]  
 
 
 
@@ -421,16 +421,16 @@ of a perturbing potential of strength [[vprtrb]]. See [[vprtrb]] for more
 explanation.
 
 
-
+* * *
 
 ## **red_dfield** 
 
 
- Mnemonics: REDuced Displacement FIELD  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[berryopt]] = 16, [[red_efield]]  
+*Mnemonics:* REDuced Displacement FIELD  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[berryopt]] = 16, [[red_efield]]  
 
 
 
@@ -442,16 +442,16 @@ direction is determined by [[red_dfield]]. It must be given in atomic units.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
-
+* * *
 
 ## **red_efield** 
 
 
- Mnemonics: REDuced Electric FIELD  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[berryopt]] = 16  
+*Mnemonics:* REDuced Electric FIELD  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[berryopt]] = 16  
 
 
 
@@ -463,16 +463,16 @@ initial electric field used on the first iteration, in atomic units.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
-
+* * *
 
 ## **red_efieldbar** 
 
 
- Mnemonics: REDuced Electric FIELD BAR  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[berryopt]] = 14  
+*Mnemonics:* REDuced Electric FIELD BAR  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[berryopt]] = 14  
 
 
 
@@ -484,15 +484,15 @@ by red_efieldbar. It must be given in atomic units.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
 
-
+* * *
 
 ## **spinmagntarget** 
 
 
- Mnemonics: SPIN-MAGNetization TARGET  
-Variable type: real  
-Dimensions: scalar  
-Default value: -99.99  
+*Mnemonics:* SPIN-MAGNetization TARGET  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* -99.99  
 
 
 
@@ -519,16 +519,16 @@ the main output file. In the fixed magnetic moment case, it differs from the
 spin up Fermi energy.
 
 
-
+* * *
 
 ## **vprtrb** 
 
 
- Mnemonics: potential -V- for the PeRTuRBation  
-Variable type: real  
-Dimensions: (2)  
-Default value: [0.0, 0.0]  
-Only relevant if [[qprtrb]]  
+*Mnemonics:* potential -V- for the PeRTuRBation  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* [0.0, 0.0]  
+*Only relevant if:* [[qprtrb]]  
 
 
 
@@ -542,15 +542,15 @@ of the perturbation, which is added to the local potential, is:
   * ([[vprtrb]](1)-I*[[vprtrb]](2))/2 at G=-[[qprtrb]] (see [[qprtrb]] also). 
 
 
-
+* * *
 
 ## **zeemanfield** 
 
 
- Mnemonics: ZEEMAN FIELD  
-Variable type: real  
-Dimensions: (3)  
-Default value: 0  
+*Mnemonics:* ZEEMAN FIELD  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 0  
 
 
 
@@ -559,5 +559,5 @@ Note that Tesla are admitted. This sets the magnitude of mu_0*H, in Tesla,
 with H in Amperes/metre.
 
 
-
+* * *
 

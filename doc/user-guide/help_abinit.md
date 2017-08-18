@@ -10,8 +10,6 @@ additional documentation files, is not available on the Web, but is available
 in the package). For response-function calculations using abinit, the
 complementary [[help_respfn]] is needed.
 
-{!tests/v1/Input/t01.in!}
-
 ### **1. How to run the code**
 
 #### 1.1 Introducing the files file.

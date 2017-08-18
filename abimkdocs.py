@@ -11,15 +11,9 @@ pack_dir = os.path.dirname(__file__)
 #print(pack_dir)
 sys.path.insert(0, pack_dir)
 
-#sys.path.insert(0, os.path.join(pack_dir, "doc"))
-#from doc import tests
-#print(tests)
-#abitests = tests.abitests.select_tests(suite_args=[])
-#for test in abitests:
-#    if hasattr(test, "description"):
-#        print(test.description)
-#    if hasattr(test, "topics"):
-#        print(test.topics)
+# This needed to import doc.tests
+sys.path.insert(0, os.path.join(pack_dir, "doc"))
+
 
 def main():
     from pymods.website import build_website

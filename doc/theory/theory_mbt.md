@@ -541,7 +541,6 @@ condition. Unless otherwise specified, Hartree atomic units will be used through
 
 * * *
 ### References 
-{% bibliography --cited %}
 
 ### OLD
 
@@ -560,4 +559,3 @@ condition. Unless otherwise specified, Hartree atomic units will be used through
   13. T. Miyake, and F. Aryasetiawan. Phys. Rev. B, **61**, 7172 (2000) 
   14. M. Shishkin, and G. Kresse. Phys. Rev. B, **74**, 035101 (2006) 
   15. S. Lebegue, B. Arnaud, M. Alouani, and P.E. Bloechl. Phys. Rev. B, **67**, 155208 (2003) 
-

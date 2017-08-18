@@ -1,10 +1,10 @@
 ## **autoparal** 
 
 
- Mnemonics: AUTOmatisation of the PARALlelism  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* AUTOmatisation of the PARALlelism  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -46,16 +46,16 @@ each distribution and the higher this weight is the better the distribution
 is. After having printed out the weights, the code stops.
 
 
-
+* * *
 
 ## **bandpp** 
 
 
- Mnemonics: BAND Per Processor  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* BAND Per Processor  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -83,16 +83,16 @@ using [[bandpp]]*[[npband]]=[[nband]]. Put [[bandpp]]=2 when [[istwfk]]=2 (the
 time spent in FFTs is divided by two).
 
 
-
+* * *
 
 ## **gpu_devices** 
 
 
- Mnemonics: GPU: choice of DEVICES on one node  
-Variable type: integer  
-Dimensions: (5)  
-Default value: [-1, -1, -1, -1, -1]  
-Only relevant if [[use_gpu_cuda]]==1 (CUDA functionality)  
+*Mnemonics:* GPU: choice of DEVICES on one node  
+*Variable type:* integer  
+*Dimensions:* (5)  
+*Default value:* [-1, -1, -1, -1, -1]  
+*Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
 
 
 
@@ -120,16 +120,16 @@ GPU card are numbered starting from 0; to get the GPU devices list, type
 "nvidia-smi" or "lspci | grep -i nvidia".
 
 
-
+* * *
 
 ## **gpu_linalg_limit** 
 
 
- Mnemonics: GPU (Cuda): LINear ALGebra LIMIT  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2000000  
-Only relevant if [[use_gpu_cuda]]==1 (CUDA functionality)  
+*Mnemonics:* GPU (Cuda): LINear ALGebra LIMIT  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2000000  
+*Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
 
 
 
@@ -146,17 +146,17 @@ set to 14 which corresponds to the use of LOBPCG algorithm for the calculation
 of the eigenstates.
 
 
-
+* * *
 
 ## **gwpara** 
 
 
- Mnemonics: GW PARAllelization level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
-Comment: The default value has been changed in v8. From 1 to 2   
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* GW PARAllelization level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
+*Comment:* The default value has been changed in v8. From 1 to 2   
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -173,15 +173,15 @@ Using [[gwpara]]=1, indeed, requires the same amount of memory as a sequential
 run, irrespectively of the number of CPUs used.
 
 
-
+* * *
 
 ## **localrdwf** 
 
 
- Mnemonics: LOCAL ReaD WaveFunctions  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* LOCAL ReaD WaveFunctions  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -205,15 +205,15 @@ machine, the input wavefunction file must be available on all nodes if
 [[localrdwf]]=0.
 
 
-
+* * *
 
 ## **max_ncpus** 
 
 
- Mnemonics: MAXimum Number of CPUS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* MAXimum Number of CPUS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -223,16 +223,16 @@ processors from 2 to [[max_ncpus]]. After having printed out the efficiency,
 the code stops.
 
 
-
+* * *
 
 ## **np_slk** 
 
 
- Mnemonics: Number of mpi Processors used for ScaLapacK calls  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1000000  
-Only relevant if [[optdriver]]==1 and [[paral_kgb]]==1 (Ground-state calculations with LOBPCG algorithm)  
+*Mnemonics:* Number of mpi Processors used for ScaLapacK calls  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1000000  
+*Only relevant if:* [[optdriver]]==1 and [[paral_kgb]]==1 (Ground-state calculations with LOBPCG algorithm)  
 
 
 
@@ -248,16 +248,16 @@ Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
 
-
+* * *
 
 ## **npband** 
 
 
- Mnemonics: Number of Processors at the BAND level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* Number of Processors at the BAND level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -274,16 +274,16 @@ Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
 
-
+* * *
 
 ## **npfft** 
 
 
- Mnemonics: Number of Processors at the FFT level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* Number of Processors at the FFT level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -303,15 +303,15 @@ Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
 
-
+* * *
 
 ## **nphf** 
 
 
- Mnemonics: Number of Processors for (Hartree)-Fock exact exchange  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of Processors for (Hartree)-Fock exact exchange  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -326,15 +326,15 @@ the number of bands for exact exchange ([[nkpthf]]*[[nbandhf]]) in order to
 have the better load-balancing and efficiency.  
 
 
-
+* * *
 
 ## **npimage** 
 
 
- Mnemonics: Number of Processors at the IMAGE level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Number of Processors at the IMAGE level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -350,16 +350,16 @@ _See [[paral_kgb]], [[npkpt]], [[npband]], [[npfft]] and [[npspinor]] for the
 additional information on the use of k-point/band/FFT parallelisation. _
 
 
-
+* * *
 
 ## **npkpt** 
 
 
- Mnemonics: Number of Processors at the K-Point Level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* Number of Processors at the K-Point Level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -379,16 +379,16 @@ Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
 
-
+* * *
 
 ## **nppert** 
 
 
- Mnemonics: Number of Processors at the PERTurbation level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_rf]]==1  
+*Mnemonics:* Number of Processors at the PERTurbation level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_rf]]==1  
 
 
 
@@ -399,16 +399,16 @@ perturbation level is shared. It can even be specified separately for each
 dataset.
 
 
-
+* * *
 
 ## **npspinor** 
 
 
- Mnemonics: Number of Processors at the SPINOR level  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* Number of Processors at the SPINOR level  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -426,15 +426,15 @@ _See [[npkpt]], [[npband]], [[npfft]], and [[paral_kgb]] for the additional
 information on the use of band/FFT/k-point parallelisation._  
 
 
-
+* * *
 
 ## **paral_atom** 
 
 
- Mnemonics: activate PARALelization over (paw) ATOMic sites  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* activate PARALelization over (paw) ATOMic sites  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -444,15 +444,15 @@ Calculations are also distributed using the "kpt-band" communicator.
 Compatible with ground-state calculations and response function calculations  
 
 
-
+* * *
 
 ## **paral_kgb** 
 
 
- Mnemonics: activate PARALelization over K-point, G-vectors and Bands  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* activate PARALelization over K-point, G-vectors and Bands  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -487,15 +487,15 @@ be optimal. To optimize the repartition use:
 ** If paral_kgb=1 ** and ** max_ncpus = n /= 0 ** ABINIT will test automatically if all the processor numbers between 2 and n are convenient for a parallel calculation and print the possible values in the log file. A weight is attributed to each possible processors repartition. It is adviced to select a processor repartition for which the weight is high (as closed to the number of processors as possible). The code will then stop after the printing. This test can be done as well with a sequential as with a parallel version of the code. The user can then choose the adequate number of processor on which he can run his job. He must put again paral_kgb=1 in the input file and put the corresponding values for [[npkpt]], [[npfft]], [[npband]],[[bandpp]] and eventually [[npspinor]] in the input file. 
 
 
-
+* * *
 
 ## **paral_rf** 
 
 
- Mnemonics: activate PARALlelization over Response Function perturbations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* activate PARALlelization over Response Function perturbations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -513,16 +513,16 @@ stops.
 [[paral_rf]] can be specified separately for each dataset.
 
 
-
+* * *
 
 ## **pw_unbal_thresh** 
 
 
- Mnemonics: Plane Wave UNBALancing: THRESHold for balancing procedure  
-Variable type: real  
-Dimensions: scalar  
-Default value: 40%  
-Only relevant if [[paral_kgb]]==1  
+*Mnemonics:* Plane Wave UNBALancing: THRESHold for balancing procedure  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 40%  
+*Only relevant if:* [[paral_kgb]]==1  
 
 
 
@@ -533,15 +533,15 @@ waves treated by a processor and the ideal one is higher than
 _pw_unbal_thresh_ %.
 
 
-
+* * *
 
 ## **use_gpu_cuda** 
 
 
- Mnemonics: activate USE of GPU accelerators with CUDA (nvidia)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[optdriver]]==0 and [[CUDA]],
+*Mnemonics:* activate USE of GPU accelerators with CUDA (nvidia)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[optdriver]]==0 and [[CUDA]],
 0 otherwise.
   
 
@@ -560,20 +560,20 @@ compilation stage (see "configure" step of ABINIT compilation process). If
 MAGMA is not used, ABINIT performances on GPUs can be poor.
 
 
-
+* * *
 
 ## **use_slk** 
 
 
- Mnemonics: USE ScaLapacK  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* USE ScaLapacK  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
 If set to 1, enable the use of ScaLapack within LOBPCG.
 
 
-
+* * *
 

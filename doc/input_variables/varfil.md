@@ -1,10 +1,10 @@
 ## **get1den** 
 
 
- Mnemonics: GET the first-order density from _1DEN file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the first-order density from _1DEN file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -25,15 +25,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **get1wf** 
 
 
- Mnemonics: GET the first-order wavefunctions from _1WF file   
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the first-order wavefunctions from _1WF file   
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -79,15 +79,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getbscoup** 
 
 
- Mnemonics: GET the Bethe-Salpeter COUPling block from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the Bethe-Salpeter COUPling block from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -108,15 +108,15 @@ existent data set (prior to the first), the coupling block is not initialised
 from a disk file, so that it is as if [[getbscoup]]=0 for that initialisation.
 
 
-
+* * *
 
 ## **getbseig** 
 
 
- Mnemonics: GET the Bethe-Salpeter EIGenstates from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the Bethe-Salpeter EIGenstates from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -137,15 +137,15 @@ existent data set (prior to the first), the eigenstates are not initialised
 from a disk file, so that it is as if [[getbseig]]=0 for that initialisation.
 
 
-
+* * *
 
 ## **getbsreso** 
 
 
- Mnemonics: GET the Bethe-Salpeter RESOnant block from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the Bethe-Salpeter RESOnant block from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -166,15 +166,15 @@ existent data set (prior to the first), the resonant block is not initialised
 from a disk file, so that it is as if [[getbsreso]]=0 for that initialisation.
 
 
-
+* * *
 
 ## **getddb** 
 
 
- Mnemonics: GET the DDB from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the DDB from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -206,15 +206,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getddk** 
 
 
- Mnemonics: GET the DDK wavefunctions from _1WF file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the DDK wavefunctions from _1WF file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -260,15 +260,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getden** 
 
 
- Mnemonics: GET the DENsity from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the DENsity from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -307,15 +307,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **gethaydock** 
 
 
- Mnemonics: GET the HAYDOCK restart file from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the HAYDOCK restart file from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -335,15 +335,15 @@ from a disk file, so that it is as if [[gethaydock]]=0 for that
 initialisation.
 
 
-
+* * *
 
 ## **getocc** 
 
 
- Mnemonics: GET OCC parameters from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET OCC parameters from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -379,15 +379,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getqps** 
 
 
- Mnemonics: GET QuasiParticle Structure  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET QuasiParticle Structure  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -408,15 +408,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getscr** 
 
 
- Mnemonics: GET SCReening (the inverse dielectric matrix) from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET SCReening (the inverse dielectric matrix) from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -446,15 +446,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getsuscep** 
 
 
- Mnemonics: GET SUSCEPtibility (the irreducible polarizability) from ...  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET SUSCEPtibility (the irreducible polarizability) from ...  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -492,15 +492,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getwfk** 
 
 
- Mnemonics: GET the wavefunctions from _WFK file   
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the wavefunctions from _WFK file   
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -546,15 +546,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **getwfq** 
 
 
- Mnemonics: GET the wavefunctions from _WFQ file   
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* GET the wavefunctions from _WFQ file   
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -600,15 +600,15 @@ dataset to find the proper dataset. As an example :
 refers to dataset 2 when dataset 4 is initialized.
 
 
-
+* * *
 
 ## **ird1den** 
 
 
- Mnemonics: Integer that governs the ReaDing of 1st-order DEN file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[iscf]] < 0,
+*Mnemonics:* Integer that governs the ReaDing of 1st-order DEN file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
 
@@ -626,15 +626,15 @@ variables, see the [ section 4
 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]].  
 
 
-
+* * *
 
 ## **ird1wf** 
 
 
- Mnemonics: Integer that governs the ReaDing of _1WF files   
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of _1WF files   
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -662,15 +662,15 @@ Response-function calculation :
   * if ** irdddk ** = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the [ section 4 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]]). 
 
 
-
+* * *
 
 ## **irdbscoup** 
 
 
- Mnemonics: Integer that governs the ReaDing of COUPling block  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of COUPling block  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -678,15 +678,15 @@ Start the Bethe-Salpeter calculation from the BSC file containing the coupling
 block produced in a previous run.
 
 
-
+* * *
 
 ## **irdbseig** 
 
 
- Mnemonics: Integer that governs the ReaDing of BS_EIG file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of BS_EIG file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -694,15 +694,15 @@ Start the Bethe-Salpeter calculation from the BS_EIG contining the exciton
 eigenvectors produced in a previous run.
 
 
-
+* * *
 
 ## **irdbsreso** 
 
 
- Mnemonics: Integer that governs the ReaDing of RESOnant block  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of RESOnant block  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -710,15 +710,15 @@ Start the Bethe-Salpeter calculation from the BSR file containing the resonat
 block produced in a previous run.
 
 
-
+* * *
 
 ## **irdddb** 
 
 
- Mnemonics: Integer that governs the ReaDing of DDB file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[iscf]] < 0,
+*Mnemonics:* Integer that governs the ReaDing of DDB file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
 
@@ -739,15 +739,15 @@ variables, see the [ section 4
   
 
 
-
+* * *
 
 ## **irdddk** 
 
 
- Mnemonics: Integer that governs the ReaDing of DDK wavefunctions, in _1WF files  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of DDK wavefunctions, in _1WF files  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -775,15 +775,15 @@ Response-function calculation :
   * if [[irdddk]] = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the [ section 4 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]]). 
 
 
-
+* * *
 
 ## **irdden** 
 
 
- Mnemonics: Integer that governs the ReaDing of DEN file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1 if [[iscf]] < 0,
+*Mnemonics:* Integer that governs the ReaDing of DEN file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1 if [[iscf]] < 0,
 0 otherwise.
   
 
@@ -798,15 +798,15 @@ variables, see the [ section 4
   
 
 
-
+* * *
 
 ## **irdhaydock** 
 
 
- Mnemonics: Integer that governs the ReaDing of the HAYDOCK restart file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of the HAYDOCK restart file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -814,15 +814,15 @@ Used to re-start the Haydock iterative technique from the HAYDR_SAVE file
 produced in a previous run.
 
 
-
+* * *
 
 ## **irdqps** 
 
 
- Mnemonics: Integer that governs the ReaDing of QuasiParticle Structure  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of QuasiParticle Structure  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -831,15 +831,15 @@ eigenvalues and possibly the wavefunctions must be obtained, in order to
 achieve a self-consistent quasiparticle calculations. See also [[getqps]]
 
 
-
+* * *
 
 ## **irdscr** 
 
 
- Mnemonics: Integer that governs the ReaDing of the SCReening  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of the SCReening  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -854,15 +854,15 @@ variables, see the [ section 4
 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]].
 
 
-
+* * *
 
 ## **irdsuscep** 
 
 
- Mnemonics: Integer that governs the ReaDing of the SUSCEPtibility  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of the SUSCEPtibility  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -877,15 +877,15 @@ variables, see the [ section 4
 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]].
 
 
-
+* * *
 
 ## **irdwfk** 
 
 
- Mnemonics: Integer that governs the ReaDing of _WFK files  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of _WFK files  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -913,15 +913,15 @@ Response-function calculation :
   * if ** irdddk ** = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the [ section 4 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]]). 
 
 
-
+* * *
 
 ## **irdwfq** 
 
 
- Mnemonics: Integer that governs the ReaDing of _WFQ files  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer that governs the ReaDing of _WFQ files  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -949,15 +949,15 @@ Response-function calculation :
   * if ** irdddk ** = 1 : read first-order ddk wavefunctions from a disk file appended with _1WFx , produced in a previous response function calculation (see the [ section 4 ](../../users/generated_files/help_abinit.html#4) of the [[help_abinit]]). 
 
 
-
+* * *
 
 ## **kssform** 
 
 
- Mnemonics: Kohn Sham Structure file FORMat  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Kohn Sham Structure file FORMat  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -972,15 +972,15 @@ Very important : for the time being, [[istwfk]] must be 1 for all the
 k-points.
 
 
-
+* * *
 
 ## **prt1dm** 
 
 
- Mnemonics: PRinT 1-DiMensional potential and density  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT 1-DiMensional potential and density  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -989,15 +989,15 @@ for each of the three axis. This corresponds to averaging the potential or the
 density on bi-dimensional slices of the FFT grid.
 
 
-
+* * *
 
 ## **prtden** 
 
 
- Mnemonics: PRinT the DENsity  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0 if [[nimage]]>1,
+*Mnemonics:* PRinT the DENsity  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0 if [[nimage]]>1,
 1 otherwise.
   
 
@@ -1066,15 +1066,15 @@ by prtden &gt; 1 to chain the density output from one calculation as the input
 to another, use the _DEN file for that.
 
 
-
+* * *
 
 ## **prtdos** 
 
 
- Mnemonics: PRinT the Density Of States  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the Density Of States  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1152,15 +1152,15 @@ basis of a smearing approach (like [[prtdos]]=1)
 tetrahedron method (as [[prtdos]]=2).
 
 
-
+* * *
 
 ## **prtdosm** 
 
 
- Mnemonics: PRinT the Density Of States with M decomposition  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the Density Of States with M decomposition  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1175,15 +1175,15 @@ In this case, [[prtdosm]] computes the M-resolved partial dos for real
 spherical harmonics in the same basis as the LDA+U occupation matrix.
 
 
-
+* * *
 
 ## **prteig** 
 
 
- Mnemonics: PRinT EIGenenergies  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0 if [[nimage]] > 1,
+*Mnemonics:* PRinT EIGenenergies  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0 if [[nimage]] > 1,
 1 otherwise.
   
 
@@ -1193,15 +1193,15 @@ If set to 1, a file *_EIG, containing the k-points and one-electron
 eigenvalues is printed.
 
 
-
+* * *
 
 ## **prtelf** 
 
 
- Mnemonics: PRinT Electron Localization Function (ELF)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT Electron Localization Function (ELF)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1228,15 +1228,15 @@ Please note that ELF is ** not ** yet implemented in the case of PAW
 ([[usepaw]]=1) calculations.
 
 
-
+* * *
 
 ## **prtfsurf** 
 
 
- Mnemonics: PRinT Fermi SURFace file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT Fermi SURFace file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1255,15 +1255,15 @@ homogeneous and centered on gamma (multiple shifts are not supported by
 Xcrysden)
 
 
-
+* * *
 
 ## **prtgden** 
 
 
- Mnemonics: PRinT the Gradient of electron DENsity  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the Gradient of electron DENsity  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1276,15 +1276,15 @@ Like a _DEN file, it can be analyzed by cut3d. The file structure of the
 unformatted output file is described below, see section 6).
 
 
-
+* * *
 
 ## **prtgeo** 
 
 
- Mnemonics: PRinT the GEOmetry analysis  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the GEOmetry analysis  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1308,15 +1308,15 @@ No output is provided by [[prtgeo]] is lower than or equal to 0.
 If [[prtgeo]]&gt;0, the maximum number of atoms ([[natom]]) is 9999.
 
 
-
+* * *
 
 ## **prtgkk** 
 
 
- Mnemonics: PRinT the GKK matrix elements file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the GKK matrix elements file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1328,15 +1328,15 @@ electron-phonon treatment in ABINIT is given in the tutorial
 ~abinit/doc/tutorial/lesson_eph.html and in ~abinit/doc/users/elphon_manual.ps
 
 
-
+* * *
 
 ## **prtgsr** 
 
 
- Mnemonics: PRinT the GSR file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: prtgsr = 0  
+*Mnemonics:* PRinT the GSR file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* prtgsr = 0  
 
 
 
@@ -1348,15 +1348,15 @@ Note that, by default, the GSR file contains the electronic density unless
 [[prtden]] is set to 0.
 
 
-
+* * *
 
 ## **prtkden** 
 
 
- Mnemonics: PRinT the Kinetic energy DENsity  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the Kinetic energy DENsity  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1373,15 +1373,15 @@ Please note that kinetic energy density is ** not ** yet implemented in the
 case of PAW ([[usepaw]]=1) calculations.
 
 
-
+* * *
 
 ## **prtkpt** 
 
 
- Mnemonics: PRinT the K-PoinTs sets  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the K-PoinTs sets  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1412,15 +1412,15 @@ irreducible set and a file named kpts.nc with the list of the k-points and the
 corresponding weights is produced
 
 
-
+* * *
 
 ## **prtlden** 
 
 
- Mnemonics: PRinT the Laplacian of electron DENsity  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the Laplacian of electron DENsity  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1433,15 +1433,15 @@ unformatted output file is described below (see [ section 6
 ](../../users/generated_files/help_abinit.html#6)).
 
 
-
+* * *
 
 ## **prtpot** 
 
 
- Mnemonics: PRinT total POTential  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT total POTential  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1462,15 +1462,15 @@ The file structure of this unformatted output file is described in [ section
 [[help_abinit]]. No output is provided by a negative value of this variable.
 
 
-
+* * *
 
 ## **prtpsps** 
 
 
- Mnemonics: PRint the PSPS file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRint the PSPS file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1480,15 +1480,15 @@ The data can be visualized with AbiPy. if prtpsps is set to -1, the code will
 exit after the output of the PSPS.nc file.
 
 
-
+* * *
 
 ## **prtspcur** 
 
 
- Mnemonics: PRinT the SPin CURrent density  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the SPin CURrent density  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1498,15 +1498,15 @@ spinorial wave functions [[nspinor]] = 2. Experimental: this does not work
 yet.
 
 
-
+* * *
 
 ## **prtstm** 
 
 
- Mnemonics: PRinT the STM density  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the STM density  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1549,15 +1549,15 @@ No other printing variables for density or potentials should be activated
 (e.g. [[prtden]] has to be set to zero).
 
 
-
+* * *
 
 ## **prtsuscep** 
 
 
- Mnemonics: PRinT the SUSCEPtibility file (the irreducible polarizability)  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT the SUSCEPtibility file (the irreducible polarizability)  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1565,15 +1565,15 @@ If set to 0, no _SUSC file will be produced after the screening calculation,
 only the _SCR file will be output.
 
 
-
+* * *
 
 ## **prtvclmb** 
 
 
- Mnemonics: PRinT V CouLoMB  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT V CouLoMB  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1586,15 +1586,15 @@ is added for the Hartree part, with the on-site corrections vh1 - vht1.
 If **prtvclmb=2**, only the smooth part of the Coulomb potential is output.
 
 
-
+* * *
 
 ## **prtvha** 
 
 
- Mnemonics: PRinT V_HArtree  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT V_HArtree  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1614,15 +1614,15 @@ The file structure of this unformatted output file is described in [ section
 [[help_abinit]]. No output is provided by a negative value of this variable.
 
 
-
+* * *
 
 ## **prtvhxc** 
 
 
- Mnemonics: PRinT V_HXC  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT V_HXC  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1643,15 +1643,15 @@ The file structure of this unformatted output file is described in [ section
 [[help_abinit]]. No output is provided by a negative value of this variable.
 
 
-
+* * *
 
 ## **prtvol** 
 
 
- Mnemonics: PRinT VOLume  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT VOLume  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1687,15 +1687,15 @@ This debugging feature is not yet activated in the RF routines. Note that
 [[fftalg]] offers another option for debugging.
 
 
-
+* * *
 
 ## **prtvolimg** 
 
 
- Mnemonics: PRinT VOLume for IMaGes  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT VOLume for IMaGes  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1710,15 +1710,15 @@ Using ** prtvolimg=2 ** , the printing volume, for each image, is reduced to
 total energy and convergence residuals only.
 
 
-
+* * *
 
 ## **prtvpsp** 
 
 
- Mnemonics: PRinT V_PSeudoPotential  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT V_PSeudoPotential  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1738,15 +1738,15 @@ The file structure of this unformatted output file is described in [ section
 [[help_abinit]]. No output is provided by a negative value of this variable.
 
 
-
+* * *
 
 ## **prtvxc** 
 
 
- Mnemonics: PRinT V_XC  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT V_XC  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1766,15 +1766,15 @@ The file structure of this unformatted output file is described in [ section
 [[help_abinit]]. No output is provided by a negative value of this variable.
 
 
-
+* * *
 
 ## **prtwant** 
 
 
- Mnemonics: PRinT WANT file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT WANT file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1846,15 +1846,15 @@ Additional Notes:
     * Any value of [[gwcalctyp]] between between 20 and 29 should be suitable, so, for example, Hartree-Fock maximally-localized Wannier functions could be generated setting [[gwcalctyp]]=25. 
 
 
-
+* * *
 
 ## **prtwf** 
 
 
- Mnemonics: PRinT the WaveFunction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0 if [[nimage]] > 1,
+*Mnemonics:* PRinT the WaveFunction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0 if [[nimage]] > 1,
 1 otherwise.
   
 
@@ -1946,16 +1946,16 @@ incorrectly normalized orbitals or non-integer occupation numbers there is
 probably something set wrong in the input file.
 
 
-
+* * *
 
 ## **prtwf_full** 
 
 
- Mnemonics: PRinT Wavefunction file on the FULL mesh  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[prtwf]] == 1  
+*Mnemonics:* PRinT Wavefunction file on the FULL mesh  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[prtwf]] == 1  
 
 
 
@@ -1968,15 +1968,15 @@ produced only if the number of k-points in the irreducible zone ([[nkpt]]) is
 greater than 3.
 
 
-
+* * *
 
 ## **prtxml** 
 
 
- Mnemonics: PRinT an XML output  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT an XML output  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1986,5 +1986,5 @@ implemented and this one is currently restricted to ground-state computations
 (and derivative such as geometry optimisation).
 
 
-
+* * *
 

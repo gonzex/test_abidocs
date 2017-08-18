@@ -1,11 +1,11 @@
 ## **bs_algorithm** 
 
 
- Mnemonics: Bethe-Salpeter ALGORITHM  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter ALGORITHM  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -17,16 +17,16 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
   * 3 =&gt; Conjugate-gradient method. This method allows to find the few first excitonic eigenvalues. Only available for resonant calculations (Tamm-Dancoff approximation). 
 
 
-
+* * *
 
 ## **bs_calctype** 
 
 
- Mnemonics: Bethe-Salpeter CALCulation TYPE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter CALCulation TYPE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -37,16 +37,16 @@ Possible values are 1,2,3.
   * 3 =&gt; QP amplitudes and energies will be read from the QPS file and used to construct H_ex. Not coded yet because &lt;\psi|r|\psj&gt;^QP should be calculated taking into account the non-locality of the self-energy in the commutator [H,r]. 
 
 
-
+* * *
 
 ## **bs_coulomb_term** 
 
 
- Mnemonics: Bethe-Salpeter COULOMB TERM  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 11  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter COULOMB TERM  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 11  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -67,16 +67,16 @@ The second digit (B) can assume the values 0,1:
   * 1 =&gt; The Coulomb term is correctly evaluated using the truly non-local W(r,r'). 
 
 
-
+* * *
 
 ## **bs_coupling** 
 
 
- Mnemonics: Bethe-Salpeter COUPLING  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter COUPLING  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -87,16 +87,16 @@ of the [[BETHE_SALPETER]] Hamiltonian. Possible values are 0,1.
   * 1 =&gt; The coupling term is included (non Tamm-Dancoff approxmation). 
 
 
-
+* * *
 
 ## **bs_eh_cutoff** 
 
 
- Mnemonics: Bethe-Salpeter Electron-Hole CUTOFF  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [-inf, inf]  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter Electron-Hole CUTOFF  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [-inf, inf]  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -105,16 +105,16 @@ whose energy is between bs_eh_window(1) and bs_eh_window(2) will be considered
 during the construction of the e-h Hamiltonian.
 
 
-
+* * *
 
 ## **bs_exchange_term** 
 
 
- Mnemonics: Bethe-Salpeter EXCHANGE TERM  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter EXCHANGE TERM  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -122,16 +122,16 @@ Only relevant if [[optdriver]] == 99
   * 1 =&gt;The exchange term is calculated and added to the excitonic Hamiltonian. 
 
 
-
+* * *
 
 ## **bs_freq_mesh** 
 
 
- Mnemonics: Bethe-Salpeter FREQuency MESH  
-Variable type: real  
-Dimensions: (3)  
-Default value: [0.0, 0.0, 0.01]  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter FREQuency MESH  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* [0.0, 0.0, 0.01]  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -142,16 +142,16 @@ Only relevant if [[optdriver]] == 99
 **bs_freq_mesh(3)** gives the step of the linear mesh used for evaluating the macroscopic dielectric function. 
 
 
-
+* * *
 
 ## **bs_hayd_term** 
 
 
- Mnemonics: Bethe-Salpeter HAYdock TERMinator  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+*Mnemonics:* Bethe-Salpeter HAYdock TERMinator  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
 
 
@@ -163,16 +163,16 @@ by smoothing the oscillation in the high energy part of the spectrum
   * 1 =&gt; Use the terminator function. The particular expression depends on the type of calculation: In the resonant-only case, the a_i and b_i coefficients for i &gt; niter, are replaced by their values at i=niter. Even the coupling block is included, the terminator function described in D. Rocca, R. Gebauer, Y. Saad, S. Baroni, J. Chem. Phys. 128, 154105 (2008) is used. 
 
 
-
+* * *
 
 ## **bs_haydock_niter** 
 
 
- Mnemonics: Bethe-Salpeter HAYDOCK Number of ITERations  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 100  
-Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+*Mnemonics:* Bethe-Salpeter HAYDOCK Number of ITERations  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 100  
+*Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
 
 
@@ -182,16 +182,16 @@ when the difference between two consecutive evaluations of the optical spectra
 is less than [[bs_haydock_tol]].
 
 
-
+* * *
 
 ## **bs_haydock_tol** 
 
 
- Mnemonics: Bethe-Salpeter HAYDOCK TOLerance  
-Variable type: real  
-Dimensions: (2)  
-Default value: [0.02, 0]  
-Only relevant if [[optdriver]] == 99 and [[bs_algorithm]]==2  
+*Mnemonics:* Bethe-Salpeter HAYDOCK TOLerance  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* [0.02, 0]  
+*Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
 
 
@@ -211,16 +211,16 @@ entire frequency range (mild criterion).
   * 2 -&gt; only the imaginary part 
 
 
-
+* * *
 
 ## **bs_interp_kmult** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation K-point MULTiplication factors  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation K-point MULTiplication factors  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
 
 
@@ -229,15 +229,15 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 ** * [[ngkpt]] of the coarse mesh.
 
 
-
+* * *
 
 ## **bs_interp_m3_width** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation Method3 WIDTH  
-Variable type: real  
-Default value: 1.0  
-Only relevant if [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation Method3 WIDTH  
+*Variable type:* real  
+*Default value:* 1.0  
+*Only relevant if:* [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
 
 
@@ -245,15 +245,15 @@ Defines the width of the region where divergence treatment is applied for BSE
 interpolation
 
 
-
+* * *
 
 ## **bs_interp_method** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation METHOD  
-Variable type: integer  
-Default value: 1  
-Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation METHOD  
+*Variable type:* integer  
+*Default value:* 1  
+*Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
 
 
@@ -263,16 +263,16 @@ Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_couplin
   * 1 =&gt; Interpolation using Rohlfing & Louie technique (see above-mentioned article and Phys. Rev. B 62, 4927 (2000)) 
 
 
-
+* * *
 
 ## **bs_interp_mode** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation MODE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation MODE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
 
 
@@ -284,16 +284,16 @@ Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_couplin
   * 3 =&gt; Treatment of the divergence along the diagonal in k-space and simple interpolation elsewhere. 
 
 
-
+* * *
 
 ## **bs_interp_prep** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation PREParation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation PREParation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
 
 
@@ -302,31 +302,31 @@ method 2 or method 3. It generates the decomposition of BSR in a,b,c
 coefficients used for the interpolation.
 
 
-
+* * *
 
 ## **bs_interp_rl_nb** 
 
 
- Mnemonics: Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour  
-Variable type: integer  
-Default value: 1  
-Only relevant if [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
+*Mnemonics:* Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour  
+*Variable type:* integer  
+*Default value:* 1  
+*Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
 
 
 
 Gives the index of the neighbour that is used for Rohlfing & Louie method
 
 
-
+* * *
 
 ## **bs_loband** 
 
 
- Mnemonics: Bethe-Salpeter Lowest Occupied BAND  
-Variable type: integer  
-Dimensions: ([[nsppol]])  
-Default value: 0  
-Only relevant if [[optdriver]] == 99  
+*Mnemonics:* Bethe-Salpeter Lowest Occupied BAND  
+*Variable type:* integer  
+*Dimensions:* ([[nsppol]])  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] == 99  
 
 
 
@@ -337,16 +337,16 @@ additional cutoff energy can be applied by means of the bs_eh_window input
 variable.
 
 
-
+* * *
 
 ## **bs_nstates** 
 
 
- Mnemonics: Bethe-Salpeter Number of STATES  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
+*Mnemonics:* Bethe-Salpeter Number of STATES  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
 
 
 
@@ -357,5 +357,5 @@ correct description of the optical properties in the frequency range of
 interest.
 
 
-
+* * *
 

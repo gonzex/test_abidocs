@@ -1,11 +1,11 @@
 ## **bdeigrf** 
 
 
- Mnemonics: BanD for second-order EIGenvalues from Response-Function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: -1  
-Only relevant if [[ieig2rf]] in [1,2,3,4,5]  
+*Mnemonics:* BanD for second-order EIGenvalues from Response-Function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* -1  
+*Only relevant if:* [[ieig2rf]] in [1,2,3,4,5]  
 
 
 
@@ -20,16 +20,16 @@ If [[bdeigrf]] is set to -1, the code will automatically set [[bdeigrf]] equal
 to nband.
 
 
-
+* * *
 
 ## **d3e_pert1_atpol** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [1, 1]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [1, 1]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -40,16 +40,16 @@ May take values from 1 to [[natom]], with
 See [[rfatpol]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert1_dir** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: DIRections  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: DIRections  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -61,16 +61,16 @@ perturbation).
 See [[rfdir]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert1_elfd** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: ELectric FielD  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: ELectric FielD  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -81,16 +81,16 @@ electric field perturbation itself.
 See [[rfelfd]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert1_phon** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 1: PHONons  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: PHONons  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -99,16 +99,16 @@ perturbation.
 See [[rfphon]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert2_atpol** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [1, 1]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [1, 1]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -119,16 +119,16 @@ May take values from 1 to [[natom]], with
 See [[rfatpol]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert2_dir** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: DIRections  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: DIRections  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -140,16 +140,16 @@ perturbation).
 See [[rfdir]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert2_elfd** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: ELectric FielD  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: ELectric FielD  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -160,16 +160,16 @@ electric field perturbation itself.
 See [[rfelfd]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert2_phon** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 2: PHONons  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: PHONons  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -178,16 +178,16 @@ perturbation.
 See [[rfphon]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert3_atpol** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [1, 1]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [1, 1]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -198,16 +198,16 @@ May take values from 1 to [[natom]], with
 See [[rfatpol]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert3_dir** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: DIRections  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: DIRections  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -219,16 +219,16 @@ perturbation).
 See [[rfdir]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert3_elfd** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: ELectric FielD  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: ELectric FielD  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -239,16 +239,16 @@ electric field perturbation itself.
 See [[rfelfd]] for additional details.
 
 
-
+* * *
 
 ## **d3e_pert3_phon** 
 
 
- Mnemonics: 3rd Derivative of Energy, mixed PERTurbation 3: PHONons  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==5 (non-linear response computations)  
+*Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: PHONons  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
 
 
@@ -257,15 +257,15 @@ perturbation.
 See [[rfphon]] for additional details.
 
 
-
+* * *
 
 ## **dfpt_sciss** 
 
 
- Mnemonics: DFPT SCISSor operator  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* DFPT SCISSor operator  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -277,15 +277,15 @@ Typical use is for response to electric field ([[rfelfd]]=3), but NOT for d/dk
 ([[rfelfd]]=2) and phonon responses.
 
 
-
+* * *
 
 ## **efmas** 
 
 
- Mnemonics: EFfective MASs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* EFfective MASs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -303,16 +303,16 @@ calculations are NOT currently supported. Also, for both NC and PAW,
 [[nspden]]/=1 and [[nsppol]]/=1 are NOT supported.
 
 
-
+* * *
 
 ## **efmas_bands** 
 
 
- Mnemonics: EFfective MASs, BANDS to be treated.  
-Variable type: integer  
-Dimensions: (2,[[nkpt]])  
-Default value: The full range of band available in the calculation for each k-point.  
-Only relevant if [[efmas]]==1  
+*Mnemonics:* EFfective MASs, BANDS to be treated.  
+*Variable type:* integer  
+*Dimensions:* (2,[[nkpt]])  
+*Default value:* The full range of band available in the calculation for each k-point.  
+*Only relevant if:* [[efmas]]==1  
 
 
 
@@ -322,16 +322,16 @@ group will automatically be treated, even if they were not part of the user
 specified range.
 
 
-
+* * *
 
 ## **efmas_calc_dirs** 
 
 
- Mnemonics: EFfective MASs, CALCulate along DIRectionS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[efmas]]==1  
+*Mnemonics:* EFfective MASs, CALCulate along DIRectionS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[efmas]]==1  
 
 
 
@@ -353,16 +353,16 @@ per directions are read, whereas 3 real values are read in the two other
 cases.
 
 
-
+* * *
 
 ## **efmas_deg** 
 
 
- Mnemonics: EFfective MASs, activate DEGenerate formalism  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[efmas]]>0  
+*Mnemonics:* EFfective MASs, activate DEGenerate formalism  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[efmas]]>0  
 
 
 
@@ -371,16 +371,16 @@ criterion [[efmas_deg_tol]]) using the transport equivalent effective mass
 idea (see [PRB 89 155131 (2014)](https://doi.org/10.1103/PhysRevB.89.155131)).
 
 
-
+* * *
 
 ## **efmas_deg_tol** 
 
 
- Mnemonics: EFfective MASs, DEGeneracy TOLerance  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1e-05  
-Only relevant if [[efmas_deg]]==1  
+*Mnemonics:* EFfective MASs, DEGeneracy TOLerance  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1e-05  
+*Only relevant if:* [[efmas_deg]]==1  
 
 
 
@@ -389,16 +389,16 @@ using the formalism activated with [[efmas_deg]]==1). [[efmas_deg_tol]] has
 the '[[ENERGY]]' characteristics.
 
 
-
+* * *
 
 ## **efmas_dim** 
 
 
- Mnemonics: EFfective MASs, DIMension of the effective mass tensor  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 3  
-Only relevant if [[efmas]]==1  
+*Mnemonics:* EFfective MASs, DIMension of the effective mass tensor  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
+*Only relevant if:* [[efmas]]==1  
 
 
 
@@ -417,16 +417,16 @@ the 'transport equivatlent' effective mass tensor is output separately on the
 line immediately after the effective mass.
 
 
-
+* * *
 
 ## **efmas_dirs** 
 
 
- Mnemonics: EFfective MASs, DIRectionS to be calculated  
-Variable type: real  
-Dimensions: (3 or 2,[[efmas_n_dirs]])  
-Default value: 0  
-Only relevant if [[efmas_calc_dirs]]>0  
+*Mnemonics:* EFfective MASs, DIRectionS to be calculated  
+*Variable type:* real  
+*Dimensions:* (3 or 2,[[efmas_n_dirs]])  
+*Default value:* 0  
+*Only relevant if:* [[efmas_calc_dirs]]>0  
 
 
 
@@ -435,16 +435,16 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 [[efmas_calc_dirs]]==1 or 2 and by 2 real values if [[efmas_calc_dirs]]==3.
 
 
-
+* * *
 
 ## **efmas_n_dirs** 
 
 
- Mnemonics: EFfective MASs, Number of DIRectionS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[efmas_calc_dirs]]>0  
+*Mnemonics:* EFfective MASs, Number of DIRectionS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[efmas_calc_dirs]]>0  
 
 
 
@@ -452,16 +452,16 @@ Number of directions in [[efmas_dirs]], to be considered according to
 [[efmas_calc_dirs]].
 
 
-
+* * *
 
 ## **efmas_ntheta** 
 
 
- Mnemonics: EFfective MASs, Number of points for integration w/r to THETA  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1000  
-Only relevant if [[efmas]]==1 and [[efmas_bands]]==(degenerate band index)  
+*Mnemonics:* EFfective MASs, Number of points for integration w/r to THETA  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1000  
+*Only relevant if:* [[efmas]]==1 and [[efmas_bands]]==(degenerate band index)  
 
 
 
@@ -472,16 +472,16 @@ tensor. To obtain this tensor, an integration over the solid sphere is
 required. The default value gives a tensor accurate to the 4th decimal in Ge.
 
 
-
+* * *
 
 ## **elph2_imagden** 
 
 
- Mnemonics: ELectron-PHonon interaction at 2nd order : IMAGinary shift of the DENominator  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[ieig2rf]] != 0  
+*Mnemonics:* ELectron-PHonon interaction at 2nd order : IMAGinary shift of the DENominator  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[ieig2rf]] != 0  
 
 
 
@@ -496,15 +496,15 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
-
+* * *
 
 ## **eph_task** 
 
 
- Mnemonics: Electron-PHonon: Task  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Electron-PHonon: Task  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -513,16 +513,16 @@ When [[optdriver]]==7, select the task to be performed. The choice is among :
 [[eph_task]]=2 : electron-phonon coupling elements
 
 
-
+* * *
 
 ## **esmear** 
 
 
- Mnemonics: Eigenvalue SMEARing  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.01  
-Only relevant if [[smdelta]] != 0  
+*Mnemonics:* Eigenvalue SMEARing  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.01  
+*Only relevant if:* [[smdelta]] != 0  
 
 
 
@@ -537,15 +537,15 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
-
+* * *
 
 ## **frzfermi** 
 
 
- Mnemonics: FReeZe FERMI energy  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* FReeZe FERMI energy  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -555,15 +555,15 @@ in case of Response Function calculation for metals at Q=0. The input variable
 incorrect.
 
 
-
+* * *
 
 ## **ieig2rf** 
 
 
- Mnemonics: Integer for second-order EIGenvalues from Response-Function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Integer for second-order EIGenvalues from Response-Function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -599,15 +599,15 @@ Related variables :
 : [[bdeigrf]],[[elph2_imagden]],[[getgam_eig2nkq]],[[smdelta]]
 
 
-
+* * *
 
 ## **ph_ngqpt** 
 
 
- Mnemonics: PHonons: Number of Grid points for Q-PoinT mesh.  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [20, 20, 20]  
+*Mnemonics:* PHonons: Number of Grid points for Q-PoinT mesh.  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [20, 20, 20]  
 
 
 
@@ -616,16 +616,16 @@ Eliashberg function via Fourier interpolation. Related input variables:
 [[ph_qshift]] and [[ph_nqshift]].
 
 
-
+* * *
 
 ## **ph_qpath** 
 
 
- Mnemonics: Phonons: Q-PATH  
-Variable type: real  
-Dimensions: (3,ph_nqpath)  
-Default value: None  
-Only relevant if specified([[ph_nqpath]])  
+*Mnemonics:* Phonons: Q-PATH  
+*Variable type:* real  
+*Dimensions:* (3,ph_nqpath)  
+*Default value:* None  
+*Only relevant if:* specified([[ph_nqpath]])  
 
 
 
@@ -634,15 +634,15 @@ for phonon band structures and phonon linewidths. See also [[ph_nqpath]] and
 [[[ph_ndivsm]].
 
 
-
+* * *
 
 ## **prepanl** 
 
 
- Mnemonics: PREPAre Non-Linear response calculation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PREPAre Non-Linear response calculation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -663,15 +663,15 @@ compute the electric field perturbation along the three directions explicitly,
 and (ii) to keep the full number of k-points.
 
 
-
+* * *
 
 ## **prepgkk** 
 
 
- Mnemonics: PREPAre GKK calculation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PREPAre GKK calculation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -682,15 +682,15 @@ to reduce the number of perturbations, set [[prepgkk]] to 1. Use in
 conjunction with [[prtgkk]].
 
 
-
+* * *
 
 ## **prtbbb** 
 
 
- Mnemonics: PRinT Band-By-Band decomposition  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* PRinT Band-By-Band decomposition  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -699,15 +699,15 @@ charges and localization tensor, in case they are computed. See Ph. Ghosez and
 X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).
 
 
-
+* * *
 
 ## **rf2_dkdk** 
 
 
- Mnemonics: Response Function : 2nd Derivative of wavefunctions with respect to K  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function : 2nd Derivative of wavefunctions with respect to K  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -725,15 +725,15 @@ auxiliary quantity in the calculations of 3rd-order derivatives of the energy
   * 3=&gt;calculation along all directions (both natom+10 and natom+11 are activated) 
 
 
-
+* * *
 
 ## **rfasr** 
 
 
- Mnemonics: Response Function : Acoustic Sum Rule  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function : Acoustic Sum Rule  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -752,15 +752,15 @@ asr ](../../users/generated_files/help_anaddb.html#asr) and [ chneut
 ](../../users/generated_files/help_anaddb.html#chneut) .
 
 
-
+* * *
 
 ## **rfatpol** 
 
 
- Mnemonics: Response Function : ATomic POLarisation  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [1, 1]  
+*Mnemonics:* Response Function : ATomic POLarisation  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [1, 1]  
 
 
 
@@ -781,15 +781,15 @@ or stress type (see [ the response function help file
 ](../../users/generated_files/help_respfn.html) ).
 
 
-
+* * *
 
 ## **rfddk** 
 
 
- Mnemonics: Response Function with respect to Derivative with respect to K  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function with respect to Derivative with respect to K  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -802,15 +802,15 @@ The directions for the derivatives are determined by [[rfdir]].
   * 1=&gt;calculation of first derivatives of wavefunctions with respect to k points (d/dk calculation). The exact same functionality is provided by [[rfelfd]] = 2. 
 
 
-
+* * *
 
 ## **rfdir** 
 
 
- Mnemonics: Response Function : DIRections  
-Variable type: integer  
-Dimensions: (3)  
-Default value: [0, 0, 0]  
+*Mnemonics:* Response Function : DIRections  
+*Variable type:* integer  
+*Dimensions:* (3)  
+*Default value:* [0, 0, 0]  
 
 
 
@@ -828,15 +828,15 @@ If equal to 1, response functions, as defined by [[rfddk]], [[rfelfd]],
 corresponding direction. If 0, this direction should not be considered.
 
 
-
+* * *
 
 ## **rfelfd** 
 
 
- Mnemonics: Response Function with respect to the ELectric FielD  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function with respect to the ELectric FielD  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -857,15 +857,15 @@ The options 2 and 3 proves useful in that context ; also, in case a scissor
 shift is to be used, it is usually not applied for the d/dk response).
 
 
-
+* * *
 
 ## **rfmagn** 
 
 
- Mnemonics: Response Function with respect to MAGNetic B-field perturbation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function with respect to MAGNetic B-field perturbation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -874,15 +874,15 @@ external magnetic field. Currently, orbital magnetism is not taken into
 account and the perturbing potential has Zeeman form.
 
 
-
+* * *
 
 ## **rfmeth** 
 
 
- Mnemonics: Response Function METHod  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
+*Mnemonics:* Response Function METHod  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
 
 
 
@@ -890,30 +890,30 @@ Selects method used in response function calculations. Presently, only 1 is
 allowed.
 
 
-
+* * *
 
 ## **rfphon** 
 
 
- Mnemonics: Response Function with respect to PHONons  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function with respect to PHONons  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
 It must be equal to 1 to run phonon response function calculations.
 
 
-
+* * *
 
 ## **rfstrs** 
 
 
- Mnemonics: Response Function with respect to STRainS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function with respect to STRainS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -929,15 +929,15 @@ See the possible restrictions on the use of strain perturbations, in the [
 respfn help file ](../../users/generated_files/help_respfn.html#1) .
 
 
-
+* * *
 
 ## **rfuser** 
 
 
- Mnemonics: Response Function, USER-defined  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Response Function, USER-defined  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -960,15 +960,15 @@ array, defined in the routine respfn.F90 , as well as to the ipert local
 variable.
 
 
-
+* * *
 
 ## **smdelta** 
 
 
- Mnemonics: SMeared DELTA function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* SMeared DELTA function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -983,15 +983,15 @@ electronic lifetimes. The delta function is evaluated using:
   * when [[smdelta]] == 5, Gaussian smearing : 1.0d0*exp(-xx**2)/sqrt(pi) 
 
 
-
+* * *
 
 ## **td_maxene** 
 
 
- Mnemonics: Time-Dependent dft : MAXimal kohn-sham ENErgy difference  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* Time-Dependent dft : MAXimal kohn-sham ENErgy difference  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
@@ -1008,15 +1008,15 @@ pairs are taken into account.
 See [[td_mexcit]] for an alternative way to decrease N.
 
 
-
+* * *
 
 ## **td_mexcit** 
 
 
- Mnemonics: Time-Dependent dft : Maximal number of EXCITations  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Time-Dependent dft : Maximal number of EXCITations  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1033,5 +1033,5 @@ all pairs are allowed.
 See [[td_maxene]] for an alternative way to decrease N.
 
 
-
+* * *
 

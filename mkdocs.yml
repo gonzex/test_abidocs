@@ -70,20 +70,20 @@ pages:
 markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc:
-     permalink: true
+        permalink: true
      #separator: "_"
-  # - markdown.extensions.admonition
+  - markdown.extensions.admonition
   # - markdown.extensions.fenced_code 
   # - markdown.extensions.codehilite
   # - markdown.extensions.def_list
   # - markdown.extensions.smarty
   # - markdown.extensions.tables
-  #- markdown.extensions.wikilinks
   #- markdown_newtab
-  - pymods.extensions.wikilinks:
-  - pymods.extensions.modal:
   - mdx_math:
         enable_dollar_delimiter: True
+  # Abinit extensions.
+  - pymods.extensions.wikilinks:
+  - pymods.extensions.modal:
         
 #strict: true
 

@@ -1,11 +1,11 @@
 ## **awtr** 
 
 
- Mnemonics: evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -20,16 +20,16 @@ Note that the parallel algorithm [[gwpara]]=2 is not compatible with the
 choice [[awtr]]=0.
 
 
-
+* * *
 
 ## **bdgw** 
 
 
- Mnemonics: BanDs for GW calculation  
-Variable type: integer  
-Dimensions: (2,[[nkptgw]],[[nsppol]])  
-Default value: *0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* BanDs for GW calculation  
+*Variable type:* integer  
+*Dimensions:* (2,[[nkptgw]],[[nsppol]])  
+*Default value:* *0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -60,16 +60,16 @@ belonging to the same irreducible representation. Only in this case, indeed,
 the initial symmetries and energy degenerations are preserved.
 
 
-
+* * *
 
 ## **cd_customnimfrqs** 
 
 
- Mnemonics: Contour Deformation CUSTOM IMaginary FReQuencieS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* Contour Deformation CUSTOM IMaginary FReQuencieS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -78,16 +78,16 @@ axis by hand. Set this to the number of frequencies you want. The frequencies
 are specified with [[cd_imfrqs]].
 
 
-
+* * *
 
 ## **cd_frqim_method** 
 
 
- Mnemonics: Contour Deformation FReQuency integration on IMaginary axis Method  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* Contour Deformation FReQuency integration on IMaginary axis Method  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -175,16 +175,16 @@ the utility to merge independent screening calculations over q-points and
 frequency sections.
 
 
-
+* * *
 
 ## **cd_full_grid** 
 
 
- Mnemonics: Contour Deformation FULL GRID in complex plane  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* Contour Deformation FULL GRID in complex plane  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -212,16 +212,16 @@ SUS and SCR files can be extracted for visualisation and further analysis with
 the ** Mrgscr ** utility.
 
 
-
+* * *
 
 ## **cd_halfway_freq** 
 
 
- Mnemonics: Contour Deformation tangent grid HALFWAY FREQuency  
-Variable type: real  
-Dimensions: scalar  
-Default value: 100.0 eV  
-Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* Contour Deformation tangent grid HALFWAY FREQuency  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 100.0 eV  
+*Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -231,16 +231,16 @@ approximately linear up to this point. To be used in conjunction with
 [[gw_frqre_tangrid]].
 
 
-
+* * *
 
 ## **cd_imfrqs** 
 
 
- Mnemonics: Contour Deformation IMaginary FReQuencieS  
-Variable type: real  
-Dimensions: ([[cd_customnimfrqs]])  
-Default value: None  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
+*Mnemonics:* Contour Deformation IMaginary FReQuencieS  
+*Variable type:* real  
+*Dimensions:* ([[cd_customnimfrqs]])  
+*Default value:* None  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
 
 
 
@@ -259,16 +259,16 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 ** Use at own risk! ** The use of a custom grid makes it your responsibility that the SUS and SCR files are valid in self-energy (i.e. [[optdriver]]=4) calculations, so caution is advised. Note that frequencies have to be strictly increasing, and the point at zero frequency is ** not ** considered to be part of the imaginary grid, but rather the grid along the real axis. The calculation of that point should be controlled by [[nfreqre]] and related variables. 
 
 
-
+* * *
 
 ## **cd_max_freq** 
 
 
- Mnemonics: Contour Deformation grid MAXimum FREQuency  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1000.0 eV  
-Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* Contour Deformation grid MAXimum FREQuency  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1000.0 eV  
+*Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -276,16 +276,16 @@ Only relevant if ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,
 [[nfreqre]] are used up. To be used in conjunction with [[gw_frqre_tangrid]].
 
 
-
+* * *
 
 ## **cd_subset_freq** 
 
 
- Mnemonics: Contour Deformation grid calculate SUBSET of FREQuencies  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [1, '[[nfreqre]]']  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
+*Mnemonics:* Contour Deformation grid calculate SUBSET of FREQuencies  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [1, '[[nfreqre]]']  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
 
 
 
@@ -305,16 +305,16 @@ Any resulting susceptibility (_SUS) and screening (_SCR) files can then be
 merged with the ** mrgscr ** utility.
 
 
-
+* * *
 
 ## **ecuteps** 
 
 
- Mnemonics: Energy CUT-off for EPSilon (the dielectric matrix)  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==3 or [[optdriver]]==4  
+*Mnemonics:* Energy CUT-off for EPSilon (the dielectric matrix)  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==3 or [[optdriver]]==4  
 
 
 
@@ -329,16 +329,16 @@ always) leads to converged results (at the level of 0.01 eV for the energy
 gap). In any case, a convergence study is worth.
 
 
-
+* * *
 
 ## **ecutsigx** 
 
 
- Mnemonics: Energy CUT-off for SIGma eXchange  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* Energy CUT-off for SIGma eXchange  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -351,18 +351,18 @@ spare some CPU time, you might try to use a value between [[ecut]] and these
 upper limits.
 
 
-
+* * *
 
 ## **ecutwfn** 
 
 
- Mnemonics: Energy CUT-off for WaveFunctioNs  
-Variable type: real  
-Dimensions: scalar  
-Default value: [[ecut]] if [[optdriver]] in [3, 4],
+*Mnemonics:* Energy CUT-off for WaveFunctioNs  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* [[ecut]] if [[optdriver]] in [3, 4],
 0.0 otherwise.
   
-Only relevant if  [[optdriver]]==3 or [[optdriver]]==4  
+*Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
 
 
@@ -379,16 +379,16 @@ although a convergence study is needed to choose correctly both values.
 The size of this set of planewaves is [[npwwfn]].
 
 
-
+* * *
 
 ## **fftgw** 
 
 
- Mnemonics: FFT for GW calculation  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 21  
-Only relevant if  [[optdriver]]==3 or [[optdriver]]==4  
+*Mnemonics:* FFT for GW calculation  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 21  
+*Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
 
 
@@ -428,16 +428,16 @@ not:
 The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 
 
-
+* * *
 
 ## **freqim_alpha** 
 
 
- Mnemonics: FREQuencies along the IMaginary axis ALPHA parameter  
-Variable type: real  
-Dimensions: scalar  
-Default value: 5.0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* FREQuencies along the IMaginary axis ALPHA parameter  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 5.0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -452,16 +452,16 @@ grids in the descriptive text for [[cd_frqim_method]] for a detailed
 description of the formula.
 
 
-
+* * *
 
 ## **freqremax** 
 
 
- Mnemonics: FREQuencies along the Real axis MAXimum  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* FREQuencies along the Real axis MAXimum  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -473,16 +473,16 @@ energy. [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
 frequency mesh along the real axis.
 
 
-
+* * *
 
 ## **freqremin** 
 
 
- Mnemonics: FREQuencies along the Real axis MINimum  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* FREQuencies along the Real axis MINimum  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -498,16 +498,16 @@ Note that [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of
 the frequency mesh along the real axis.
 
 
-
+* * *
 
 ## **freqspmax** 
 
 
- Mnemonics: FREQuencies for the SPectral function MAXimum  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* FREQuencies for the SPectral function MAXimum  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -518,16 +518,16 @@ axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
 be used to make a user-defined grid.
 
 
-
+* * *
 
 ## **freqspmin** 
 
 
- Mnemonics: FREQuencies for the SPectral function MINimum  
-Variable type: real  
-Dimensions: scalar  
-Default value: -[[freqspmax]]  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* FREQuencies for the SPectral function MINimum  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* -[[freqspmax]]  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -539,16 +539,16 @@ axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
 be used to make a user-defined grid.
 
 
-
+* * *
 
 ## **gw_customnfreqsp** 
 
 
- Mnemonics: GW CUSTOM FREQuencies for SPectral function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* GW CUSTOM FREQuencies for SPectral function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -558,16 +558,16 @@ axis. Set this to the number of frequencies you want. The frequencies are
 specified with [[gw_freqsp]].
 
 
-
+* * *
 
 ## **gw_freqsp** 
 
 
- Mnemonics: GW SPectral FREQuencies  
-Variable type: real  
-Dimensions: ([[gw_customnfreqsp]])  
-Default value: [1 .. [[gw_customnfreqsp]]]  
-Only relevant if [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
+*Mnemonics:* GW SPectral FREQuencies  
+*Variable type:* real  
+*Dimensions:* ([[gw_customnfreqsp]])  
+*Default value:* [1 .. [[gw_customnfreqsp]]]  
+*Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
 
 
 
@@ -587,16 +587,16 @@ equal to 0. The number of frequencies is set by the value of
 If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 
 
-
+* * *
 
 ## **gw_frqim_inzgrid** 
 
 
- Mnemonics: GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -612,16 +612,16 @@ and the points are distributed so that half of them lie below the plasma
 frequency.
 
 
-
+* * *
 
 ## **gw_frqre_inzgrid** 
 
 
- Mnemonics: GW Contour Deformation FReQuencies on REal axis Inverse Z Grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* GW Contour Deformation FReQuencies on REal axis Inverse Z Grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -645,16 +645,16 @@ maximum value needed along the real frequency axis is output in the logfile
 during Contour Deformation sigma calculations.
 
 
-
+* * *
 
 ## **gw_frqre_tangrid** 
 
 
- Mnemonics: GW Contour Deformation FReQencies on REal axis - Use Tangent Grid  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
+*Mnemonics:* GW Contour Deformation FReQencies on REal axis - Use Tangent Grid  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 
 
@@ -667,16 +667,16 @@ function which decays as 1/x^2. To be used in conjunction with [[nfreqre]],
 transformed grid.
 
 
-
+* * *
 
 ## **gw_invalid_freq** 
 
 
- Mnemonics: GW treatment of INVALID FREQuency for Hybertsen-Louie PPM  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
+*Mnemonics:* GW treatment of INVALID FREQuency for Hybertsen-Louie PPM  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
 
 
 
@@ -688,16 +688,16 @@ invalid (negative or imaginary).
   * [[gw_invalid_freq]]=2 : Set them to infinity. 
 
 
-
+* * *
 
 ## **gw_nqlwl** 
 
 
- Mnemonics: GW, Number of Q-points for the Long Wave-Length Limit  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] in [3,4,99]  
+*Mnemonics:* GW, Number of Q-points for the Long Wave-Length Limit  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] in [3,4,99]  
 
 
 
@@ -729,16 +729,16 @@ dielectric function using six different directions in q-space (the three basis
 vectors of the reciprocal lattice and the three Cartesian axis).
 
 
-
+* * *
 
 ## **gw_nstep** 
 
 
- Mnemonics: GW Number of self-consistent STEPs  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 30  
-Only relevant if [[optdriver]]==8  
+*Mnemonics:* GW Number of self-consistent STEPs  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 30  
+*Only relevant if:* [[optdriver]]==8  
 
 
 
@@ -748,16 +748,16 @@ converged within [[gw_toldfeig]]. [[gwcalctyp]] and [[gw_sctype]] are used to
 define the type of self-consistency.
 
 
-
+* * *
 
 ## **gw_qlwl** 
 
 
- Mnemonics: GW, Q-points for the Long Wave-Length limit  
-Variable type: real  
-Dimensions: (3,[[gw_nqlwl]])  
-Default value: [1e-05, 2e-05, 3e-05]  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* GW, Q-points for the Long Wave-Length limit  
+*Variable type:* real  
+*Dimensions:* (3,[[gw_nqlwl]])  
+*Default value:* [1e-05, 2e-05, 3e-05]  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -767,16 +767,16 @@ the dielectric matrix. Optical spectra (with and without non-local field
 effects) are evaluated for each direction specified by [[gw_qlwl]].
 
 
-
+* * *
 
 ## **gw_qprange** 
 
 
- Mnemonics: GW QuasiParticle RANGE policy  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* GW QuasiParticle RANGE policy  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -804,16 +804,16 @@ is used. If you want to select manually the list of k-points and bands, you
 have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 
 
-
+* * *
 
 ## **gw_sctype** 
 
 
- Mnemonics: GW, Self-Consistency TYPE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* GW, Self-Consistency TYPE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -839,16 +839,16 @@ file thus initializing the Green functions to be used in the first self-
 consistent iteration.
 
 
-
+* * *
 
 ## **gw_sigxcore** 
 
 
- Mnemonics: GW, SIGma (self-energy) for the CORE contribution  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4 and [[usepaw]]==1  
+*Mnemonics:* GW, SIGma (self-energy) for the CORE contribution  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4 and [[usepaw]]==1  
 
 
 
@@ -877,16 +877,16 @@ contribution to sigma.
   * [[gw_sigxcore]] = 1, the core term is approximated with the Fock operator inside the PAW spheres. 
 
 
-
+* * *
 
 ## **gw_toldfeig** 
 
 
- Mnemonics: GW TOLerance on the DiFference of the EIGenvalues  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.1 eV  
-Only relevant if [[optdriver]]==8  
+*Mnemonics:* GW TOLerance on the DiFference of the EIGenvalues  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.1 eV  
+*Only relevant if:* [[optdriver]]==8  
 
 
 
@@ -896,16 +896,16 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since ** toldfe ** has
 the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)  
 
 
-
+* * *
 
 ## **gwcalctyp** 
 
 
- Mnemonics: GW CALCulation TYPe  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* GW CALCulation TYPe  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -932,16 +932,16 @@ Also
   * [[gwcalctyp]] = 305,325 : B3LYP calculations (1-shot and self-consistent) 
 
 
-
+* * *
 
 ## **gwcomp** 
 
 
- Mnemonics: GW COMPleteness  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* GW COMPleteness  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -954,16 +954,16 @@ Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of the
 methodology.
 
 
-
+* * *
 
 ## **gwencomp** 
 
 
- Mnemonics: GW ENergy for COMPleteness  
-Variable type: real  
-Dimensions: scalar  
-Default value: 2.0  
-Only relevant if [[optdriver]] in [3,4] and [[gwcomp]]==1  
+*Mnemonics:* GW ENergy for COMPleteness  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 2.0  
+*Only relevant if:* [[optdriver]] in [3,4] and [[gwcomp]]==1  
 
 
 
@@ -975,16 +975,16 @@ See F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of
 the methodology.
 
 
-
+* * *
 
 ## **gwfockmix** 
 
 
- Mnemonics: GW FOCK exchange MIXing parameter  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.25  
-Only relevant if [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
+*Mnemonics:* GW FOCK exchange MIXing parameter  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.25  
+*Only relevant if:* [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
 
 
 
@@ -993,16 +993,16 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 (essentially PBE) to 1.
 
 
-
+* * *
 
 ## **gwgamma** 
 
 
- Mnemonics: GW GAMMA  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]=3 or 4 (Sigma calculations)  
+*Mnemonics:* GW GAMMA  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]=3 or 4 (Sigma calculations)  
 
 
 
@@ -1023,16 +1023,16 @@ kernel.
 115, 137402 (2015), ibid. 114, 146402 (2015)].
 
 
-
+* * *
 
 ## **gwls_band_index** 
 
 
- Mnemonics: GWLS BAND INDEX  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS BAND INDEX  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1041,16 +1041,16 @@ shown in eq. (7) of Phys. Rev. B 91, 125120 (2015). That is, it is the state
 to be corrected in the G0W0 scheme.
 
 
-
+* * *
 
 ## **gwls_correlation** 
 
 
- Mnemonics: GWLS CORRELATION  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 3  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS CORRELATION  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 3  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1071,32 +1071,32 @@ should be kept by the user. Option 1, 2 and 5 are deprecated and will be
 removed.
 
 
-
+* * *
 
 ## **gwls_dielectric_model** 
 
 
- Mnemonics: GWLS dielectric model  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS dielectric model  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
 Not used yet.
 
 
-
+* * *
 
 ## **gwls_exchange** 
 
 
- Mnemonics: GWLS exact EXCHANGE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS exact EXCHANGE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1105,16 +1105,16 @@ Governs whether the exact exchange for the state to be corrected
 ([[gwls_exchange]]==0).
 
 
-
+* * *
 
 ## **gwls_first_seed** 
 
 
- Mnemonics: GWLS FIRST SEED vector  
-Variable type: integer  
-Dimensions: scalar  
-Default value: [[gwls_band_index]]  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS FIRST SEED vector  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* [[gwls_band_index]]  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1131,16 +1131,16 @@ has been touroughly tested and seems to be the most performant. Users should
 therefore keep the default value.
 
 
-
+* * *
 
 ## **gwls_kmax_analytic** 
 
 
- Mnemonics: GWLS KMAX for the ANALYTIC term  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 8  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS KMAX for the ANALYTIC term  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 8  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1150,16 +1150,16 @@ frequencies requested by the user ([[gw_freqsp]]). The default value is
 converged to a few 10s of meV for all molecules studied so far.
 
 
-
+* * *
 
 ## **gwls_kmax_complement** 
 
 
- Mnemonics: GWLS KMAX for the COMPLEMENT space.  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS KMAX for the COMPLEMENT space.  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1179,16 +1179,16 @@ For more information on the exact role of these bases and on the model
 dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 
 
-
+* * *
 
 ## **gwls_kmax_numeric** 
 
 
- Mnemonics: GWLS KMAX for the NUMERIC term  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 16  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS KMAX for the NUMERIC term  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 16  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1200,16 +1200,16 @@ frequencies requested by the user ([[gw_freqsp]]). The default value is
 converged to a few 10s of meV for all molecules studied so far.
 
 
-
+* * *
 
 ## **gwls_kmax_poles** 
 
 
- Mnemonics: GWLS KMAX for the calculation of the POLES residue  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 4  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS KMAX for the calculation of the POLES residue  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 4  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1228,16 +1228,16 @@ For more information on the Lanczos basis constructed for the calculation of
 the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 
 
-
+* * *
 
 ## **gwls_list_proj_freq** 
 
 
- Mnemonics: GWLS LIST of the PROJection FREQuencies  
-Variable type: real  
-Dimensions: ([[gwls_n_proj_freq]])  
-Default value: *0.0  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS LIST of the PROJection FREQuencies  
+*Variable type:* real  
+*Dimensions:* ([[gwls_n_proj_freq]])  
+*Default value:* *0.0  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1250,16 +1250,16 @@ computational cost, [[gwls_n_proj_freq]]==0 (which means no ADDITIONAL
 frequency is to be used) is fine and no frequencies need to be picked up.
 
 
-
+* * *
 
 ## **gwls_model_parameter** 
 
 
- Mnemonics: GWLS MODEL PARAMETER  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS MODEL PARAMETER  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1281,16 +1281,16 @@ calculation. Typically, the default ([[gwls_model_parameter]]==1.0) is
 optimal.
 
 
-
+* * *
 
 ## **gwls_n_proj_freq** 
 
 
- Mnemonics: GWLS Number of PROJection FREQuencies  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS Number of PROJection FREQuencies  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1302,16 +1302,16 @@ frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
 the default ([[gwls_n_proj_freq]]==0) is fine.
 
 
-
+* * *
 
 ## **gwls_npt_gauss_quad** 
 
 
- Mnemonics: GWLS Number of PoinTs to use for the GAUSSian QUADrature   
-Variable type: integer  
-Dimensions: scalar  
-Default value: 10  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS Number of PoinTs to use for the GAUSSian QUADrature   
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 10  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1320,16 +1320,16 @@ of the self-energy over frequencies in GWLS computations (see eq. (12) of
 Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 
 
-
+* * *
 
 ## **gwls_nseeds** 
 
 
- Mnemonics: GWLS Number of SEED vectorS  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS Number of SEED vectorS  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1339,16 +1339,16 @@ See section IV of Phys. Rev. B 91, 125120 (2015). Only [[gwls_nseeds]]==1 has
 been tested for now and users should keep this value.
 
 
-
+* * *
 
 ## **gwls_print_debug** 
 
 
- Mnemonics: GWLS PRINT level for DEBUGging  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS PRINT level for DEBUGging  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1356,16 +1356,16 @@ Influences the level of verbosity for debugging purposes in a GWLS
 calculation. Users should keep its value at the default.
 
 
-
+* * *
 
 ## **gwls_recycle** 
 
 
- Mnemonics: GWLS RECYCLE  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS RECYCLE  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1394,32 +1394,32 @@ calculations, since each processor need only his own solutions in the
 construction of the basis.
 
 
-
+* * *
 
 ## **gwls_second_model_parameter** 
 
 
- Mnemonics: GWLS SECOND MODEL PARAMETER  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS SECOND MODEL PARAMETER  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
 Not used yet.
 
 
-
+* * *
 
 ## **gwls_sternheimer_kmax** 
 
 
- Mnemonics: GWLS Kmax  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==66  
+*Mnemonics:* GWLS Kmax  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==66  
 
 
 
@@ -1429,16 +1429,16 @@ converged at a value of a few hundreds to a few thousands for a convergence
 criterion of 50meV on the eigenenergies.
 
 
-
+* * *
 
 ## **gwmem** 
 
 
- Mnemonics: GW MEMory  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 11  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* GW MEMory  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 11  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -1455,16 +1455,16 @@ consuming. When experiencing memory shortage, one should try [[gwmem]] = 0.
 The first digit is only meaningful when performing sigma calculations.
 
 
-
+* * *
 
 ## **gwrpacorr** 
 
 
- Mnemonics: GW RPA CORRelation energy  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
+*Mnemonics:* GW RPA CORRelation energy  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
 
 
 
@@ -1475,16 +1475,16 @@ Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]
   * [[gwrpacorr]] = _ n _ &gt; 1, the RPA correlation energy is calculated using _ n _ values for the coupling constant: it requires _ n _ inversions of the polarizability matrix 
 
 
-
+* * *
 
 ## **icutcoul** 
 
 
- Mnemonics: Integer that governs the CUT-off for COULomb interaction  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 6  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* Integer that governs the CUT-off for COULomb interaction  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 6  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -1518,16 +1518,16 @@ case, use a negative value for the cutoff radius of the sphere
 in the sphere is equal to the volume of the solid.
 
 
-
+* * *
 
 ## **inclvkb** 
 
 
- Mnemonics: INCLude VKB  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 2  
-Only relevant if [[optdriver]] in [3,99]  
+*Mnemonics:* INCLude VKB  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 2  
+*Only relevant if:* [[optdriver]] in [3,99]  
 
 
 
@@ -1550,16 +1550,16 @@ The use of [[inclvkb]]=2 is strongly recommended for the calculation of
 optical properties.
 
 
-
+* * *
 
 ## **kptgw** 
 
 
- Mnemonics: K-PoinTs for GW calculations  
-Variable type: real  
-Dimensions: (3,[[nkptgw]])  
-Default value: *0.0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* K-PoinTs for GW calculations  
+*Variable type:* real  
+*Dimensions:* (3,[[nkptgw]])  
+*Default value:* *0.0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1573,16 +1573,16 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 [[ngkpt]] ) than the GS one, but WITHOUT any shift, are allowed.
 
 
-
+* * *
 
 ## **mbpt_sciss** 
 
 
- Mnemonics: Many Body Perturbation Theory SCISSor operator  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]] in [3,4,99]  
+*Mnemonics:* Many Body Perturbation Theory SCISSor operator  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]] in [3,4,99]  
 
 
 
@@ -1590,16 +1590,16 @@ The Scissors operator energy added to the conductions states. In some cases,
 it mimics a second iteration self-consistent [[GW]] calculation.
 
 
-
+* * *
 
 ## **mdf_epsinf** 
 
 
- Mnemonics: Model Dielectric Function, EPSilon INFinity  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
+*Mnemonics:* Model Dielectric Function, EPSilon INFinity  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
 
 
 
@@ -1609,15 +1609,15 @@ The proper spatial symmetry of the screening W(r,r_prime) is enforced using
 Eq. (7) of Phys. Rev. B **37**, (1988)  
 
 
-
+* * *
 
 ## **nbandkss** 
 
 
- Mnemonics: Number of BANDs in the KSS file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of BANDs in the KSS file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1646,16 +1646,16 @@ Very important : for the time being, [[istwfk]] must be 1 for all the k-points
 in order to generate a _KSS file.
 
 
-
+* * *
 
 ## **nfreqim** 
 
 
- Mnemonics: Number of FREQuencies along the IMaginary axis  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
+*Mnemonics:* Number of FREQuencies along the IMaginary axis  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
 
 
@@ -1664,16 +1664,16 @@ the dielectric matrix in order to perform the numerical integration of the
 [[GW]] self-energy.
 
 
-
+* * *
 
 ## **nfreqmidm** 
 
 
- Mnemonics: Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix  
-Variable type: integer  
-Dimensions: scalar  
-Default value: None  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* None  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1687,16 +1687,16 @@ the Dielectric matrix or its inverse,
 see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 
 
-
+* * *
 
 ## **nfreqre** 
 
 
- Mnemonics: Number of FREQuencies along the REal axis  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
+*Mnemonics:* Number of FREQuencies along the REal axis  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
 
 
@@ -1718,16 +1718,16 @@ variable. Using the default values, one must be able to get a screening file
 that can be used with any ppmodel.
 
 
-
+* * *
 
 ## **nfreqsp** 
 
 
- Mnemonics: Number of FREQuencies for the SPectral function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* Number of FREQuencies for the SPectral function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1735,16 +1735,16 @@ Only relevant if [[optdriver]]==4
 spectral function of the [[GW]] Green's function.
 
 
-
+* * *
 
 ## **nkptgw** 
 
 
- Mnemonics: Number of K-PoinTs for GW corrections  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* Number of K-PoinTs for GW corrections  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1752,16 +1752,16 @@ Only relevant if [[optdriver]]==4
 be done. It is used to dimension [[kptgw]]
 
 
-
+* * *
 
 ## **nomegasf** 
 
 
- Mnemonics: Number of OMEGA to evaluate the Spectral Function  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3 and [[spmeth]]!=0  
+*Mnemonics:* Number of OMEGA to evaluate the Spectral Function  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3 and [[spmeth]]!=0  
 
 
 
@@ -1779,16 +1779,16 @@ kept in mind, however, that the memory required grows fast with the value of
 [[nomegasf]].
 
 
-
+* * *
 
 ## **nomegasi** 
 
 
- Mnemonics: Number of OMEGA(S) along the Imaginary axis  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 12  
-Only relevant if [[optdriver]]==4 and [[gwcalctyp]]==1  
+*Mnemonics:* Number of OMEGA(S) along the Imaginary axis  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 12  
+*Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
 
 
@@ -1797,16 +1797,16 @@ energy along the imaginary axis. The frequency mesh is linear and covers the
 interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 
 
-
+* * *
 
 ## **nomegasrd** 
 
 
- Mnemonics: Number of OMEGA to evaluate the Sigma Real axis Derivative  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 9  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* Number of OMEGA to evaluate the Sigma Real axis Derivative  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 9  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1815,16 +1815,16 @@ Sigma is evaluated. From these values, the derivative of Sigma at the KS
 energy is numerically estimated through linear interpolation.
 
 
-
+* * *
 
 ## **npvel** 
 
 
- Mnemonics: Number of Particle VELocities  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* Number of Particle VELocities  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -1837,15 +1837,15 @@ The direction and the velocity maximum are set with the input variable
 proton.
 
 
-
+* * *
 
 ## **npwkss** 
 
 
- Mnemonics: Number of PlaneWaves in the KSS file  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
+*Mnemonics:* Number of PlaneWaves in the KSS file  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
 
 
 
@@ -1865,16 +1865,16 @@ Very important : for the time being, [[istwfk]] must be 1 for all the
 k-points.
 
 
-
+* * *
 
 ## **nqptdm** 
 
 
- Mnemonics: Number of Q-PoinTs for the Dielectric Matrix  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* Number of Q-PoinTs for the Dielectric Matrix  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -1889,16 +1889,16 @@ code reports the list of q-points in the log file (YAML format) and then
 stops.
 
 
-
+* * *
 
 ## **omegasimax** 
 
 
- Mnemonics: OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value  
-Variable type: real  
-Dimensions: scalar  
-Default value: 50 eV  
-Only relevant if [[optdriver]]==4 and [[gwcalctyp]]==1  
+*Mnemonics:* OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 50 eV  
+*Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
 
 
@@ -1907,16 +1907,16 @@ conjunction with [[nomegasi]], [[omegasimax]] uniquely defines the linear mesh
 employed to sample the self-energy along the imaginary axis.
 
 
-
+* * *
 
 ## **omegasrdmax** 
 
 
- Mnemonics: OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0 eV  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0 eV  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -1925,16 +1925,16 @@ evaluated at [KS_energy - [[omegasrdmax]], KS_energy + [[omegasrdmax]]]
 sampled [[nomegasrd]] times.
 
 
-
+* * *
 
 ## **ppmfrq** 
 
 
- Mnemonics: Plasmon Pole Model FReQuency  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0 Ha  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* Plasmon Pole Model FReQuency  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0 Ha  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -1977,16 +1977,16 @@ of gridpoints along the imaginary and real frequency axes. See
 details.
 
 
-
+* * *
 
 ## **ppmodel** 
 
 
- Mnemonics: Plasmon Pole MODEL  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]] in [3,4]  
+*Mnemonics:* Plasmon Pole MODEL  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]] in [3,4]  
 
 
 
@@ -2010,16 +2010,16 @@ least the lowest ones). Thus the calculated plasmon band structure (plasmon
 energy vs q vector) is reported in the output file for the lowest 10 bands.
 
 
-
+* * *
 
 ## **pvelmax** 
 
 
- Mnemonics: Particle VELocity MAXimum  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*1.0  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* Particle VELocity MAXimum  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*1.0  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -2029,16 +2029,16 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 [[pvelmax]] is input in Cartesian coordinates.
 
 
-
+* * *
 
 ## **qptdm** 
 
 
- Mnemonics: Q-PoinTs for the Dielectric Matrix  
-Variable type: real  
-Dimensions: (3,[[nqptdm]])  
-Default value: *0.0  
-Only relevant if [[optdriver]]==3 and [[nqptdm]]!=0  
+*Mnemonics:* Q-PoinTs for the Dielectric Matrix  
+*Variable type:* real  
+*Dimensions:* (3,[[nqptdm]])  
+*Default value:* *0.0  
+*Only relevant if:* [[optdriver]]==3 and [[nqptdm]]!=0  
 
 
 
@@ -2049,15 +2049,15 @@ cartesian coordinates!). For further explanation, see the input variable
 [[nqptdm]].
 
 
-
+* * *
 
 ## **rcut** 
 
 
- Mnemonics: Radius of the CUT-off for coulomb interaction  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
+*Mnemonics:* Radius of the CUT-off for coulomb interaction  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
 
 
 
@@ -2068,15 +2068,15 @@ If [[rcut]] is negative, the cutoff is automatically calculated so to enclose
 the same volume inside the cutoff as the volume of the primitive cell.
 
 
-
+* * *
 
 ## **rhoqpmix** 
 
 
- Mnemonics: RHO QuasiParticle MIXing  
-Variable type: real  
-Dimensions: scalar  
-Default value: 1.0  
+*Mnemonics:* RHO QuasiParticle MIXing  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 1.0  
 
 
 
@@ -2087,16 +2087,16 @@ consistency. [[rhoqpmix]] is meaningful only when doing self-consistency on
 the wavefunctions with [[gwcalctyp]] &gt;= 20\.
 
 
-
+* * *
 
 ## **spbroad** 
 
 
- Mnemonics: SPectral BROADening  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0  
-Only relevant if [[optdriver]]==3 and [[spmeth]]==2  
+*Mnemonics:* SPectral BROADening  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0  
+*Only relevant if:* [[optdriver]]==3 and [[spmeth]]==2  
 
 
 
@@ -2106,16 +2106,16 @@ the gaussian approximant ([[spmeth]]==2), the standard deviation of the
 gaussian is given by [[spbroad]].
 
 
-
+* * *
 
 ## **spmeth** 
 
 
- Mnemonics: SPectral METHod  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* SPectral METHod  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -2152,16 +2152,16 @@ Summarizing:
   * 2 =&gt; use spectral method but approximating the delta function with a Taylor expansion of the exponential as proposed in ** REF TO BE ADDED **
 
 
-
+* * *
 
 ## **symchi** 
 
 
- Mnemonics: SYMmetryze \chi_o  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 1  
-Only relevant if [[optdriver]]==3  
+*Mnemonics:* SYMmetryze \chi_o  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 1  
+*Only relevant if:* [[optdriver]]==3  
 
 
 
@@ -2177,16 +2177,16 @@ between these two equivalent methods:
   * 1=&gt; the summation is restricted to the k-points belonging to the irreducible wedge defined by the little group associated to the external vector q. 
 
 
-
+* * *
 
 ## **symsigma** 
 
 
- Mnemonics: SYMmetrization of SIGMA matrix elements  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[optdriver]]==4  
+*Mnemonics:* SYMmetrization of SIGMA matrix elements  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[optdriver]]==4  
 
 
 
@@ -2207,16 +2207,16 @@ calculations performed with [[symsigma]]=1 will not be able to remove the
 initial accidental degeneracy.
 
 
-
+* * *
 
 ## **ucrpa** 
 
 
- Mnemonics: calculation of the screened interaction U with the Constrained RPA method  
-Variable type: integer  
-Dimensions: scalar  
-Default value: 0  
-Only relevant if [[nspinor]] == 1  
+*Mnemonics:* calculation of the screened interaction U with the Constrained RPA method  
+*Variable type:* integer  
+*Dimensions:* scalar  
+*Default value:* 0  
+*Only relevant if:* [[nspinor]] == 1  
 
 
 
@@ -2248,16 +2248,16 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.125110) .
 
 
-
+* * *
 
 ## **ucrpa_bands** 
 
 
- Mnemonics: For the calculation of U with the Constrained RPA method, gives correlated BANDS  
-Variable type: integer  
-Dimensions: (2)  
-Default value: [-1, -1]  
-Comment: That is, the default includes no band.  
+*Mnemonics:* For the calculation of U with the Constrained RPA method, gives correlated BANDS  
+*Variable type:* integer  
+*Dimensions:* (2)  
+*Default value:* [-1, -1]  
+*Comment:* That is, the default includes no band.  
 
 
 
@@ -2265,16 +2265,16 @@ Gives the first and last correlated bands for the cRPA calculation of the
 polarisability.
 
 
-
+* * *
 
 ## **ucrpa_window** 
 
 
- Mnemonics: For the calculation of U with the Constrained RPA method, gives energy WINDOW  
-Variable type: real  
-Dimensions: (2)  
-Default value: [-1, -1]  
-Comment: That is, the energy window is empty by default.  
+*Mnemonics:* For the calculation of U with the Constrained RPA method, gives energy WINDOW  
+*Variable type:* real  
+*Dimensions:* (2)  
+*Default value:* [-1, -1]  
+*Comment:* That is, the energy window is empty by default.  
 
 
 
@@ -2286,16 +2286,16 @@ The lower bound and the upper bound energies must be specified (two real
 numbers) with respect to the position of the Fermi level.
 
 
-
+* * *
 
 ## **vcutgeo** 
 
 
- Mnemonics: V (potential) CUT-off GEOmetry  
-Variable type: real  
-Dimensions: (3)  
-Default value: 3*0.0  
-Only relevant if [[icutcoul]] in [1,2]  
+*Mnemonics:* V (potential) CUT-off GEOmetry  
+*Variable type:* real  
+*Dimensions:* (3)  
+*Default value:* 3*0.0  
+*Only relevant if:* [[icutcoul]] in [1,2]  
 
 
 
@@ -2338,17 +2338,17 @@ surface by employing negative values For example: icutcoul 2 vcutgeo -3 -2 0
 defines ....
 
 
-
+* * *
 
 ## **zcut** 
 
 
- Mnemonics: Z-CUT  
-Variable type: real  
-Dimensions: scalar  
-Default value: 0.0036749326  
-Comment: 0.0036749326 Ha = 0.1 eV  
-Only relevant if [[optdriver]] in [3,4,99]  
+*Mnemonics:* Z-CUT  
+*Variable type:* real  
+*Dimensions:* scalar  
+*Default value:* 0.0036749326  
+*Comment:* 0.0036749326 Ha = 0.1 eV  
+*Only relevant if:* [[optdriver]] in [3,4,99]  
 
 
 
@@ -2371,5 +2371,5 @@ Ideally, one should make a convergence study decreasing the value of [[zcut]]
 for increasing number of k-points.
 
 
-
+* * *
 
