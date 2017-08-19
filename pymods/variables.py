@@ -191,6 +191,17 @@ class Variable(yaml.YAMLObject):
             code = "abinit"
         return code
 
+    @property
+    def topic_tribes(self):
+        """topic --> list of tribes"""
+        assert self.topics is not None
+        od = OrderedDict()
+        for tok in self.topics.split(","):
+            topic, tribe = [s.strip() for s in tok.split("_")]
+            if topic not in od: od[topic] = []
+            od[topic].append(tribe)
+        return od
+
     @classmethod
     def from_array(cls, array):
         return Variable(vartype=array["vartype"], characteristic=array["characteristic"],
@@ -242,7 +253,6 @@ class Variable(yaml.YAMLObject):
 
         app("## **%s** \n\n" % self.name)
         app("*Mnemonics:* %s  " % str(self.mnemonics))
-        #app("Executable: %s" % str(self.executables)
         if self.characteristic:
             app("*Characteristics:* %s  " % str(self.characteristic))
         app("*Mentioned in topic(s):* %s  " % str(self.topics))
@@ -280,8 +290,8 @@ class Variable(yaml.YAMLObject):
             app(str(md_text))
         else:
             print("WARNING: Variable:", self.name, "with None text")
-        app("* * *" + 2*"\n")
 
+        app("* * *" + 2*"\n")
         return "\n".join(lines)
 
 ####################################################################################################
@@ -423,19 +433,27 @@ def get_variables_code():
     global _VARS
     if _VARS is None:
         yaml_path = os.path.join(os.path.dirname(__file__), "..", "doc", "input_variables", "abinit_vars.yml")
+        _VARS = VarDatabase.from_file(yaml_path)
+    return _VARS
+
+
+class VarDatabase(OrderedDict):
+
+    @classmethod
+    def from_file(cls, yaml_path):
         with open(yaml_path, 'rt') as f:
             vlist = yaml.load(f)
 
-        _VARS = OrderedDict()
+        new = cls()
         codes = set(v.code for v in vlist)
         for codename in sorted(codes):
             items = [(v.name, v) for v in vlist if v.code == codename]
-            new = InputVariables(sorted(items, key=lambda t: t[0]))
-            new.codename = codename
-            new.all_varset = sorted(set(v.varset for v in new.values()))
-            _VARS[codename] =  new
+            vd = InputVariables(sorted(items, key=lambda t: t[0]))
+            vd.codename = codename
+            vd.all_varset = sorted(set(v.varset for v in vd.values()))
+            new[codename] =  vd
 
-    return _VARS
+        return new
 
 
 class InputVariables(OrderedDict):
@@ -464,7 +482,6 @@ class InputVariables(OrderedDict):
         keys = sorted(list(self.keys()))
         od = OrderedDict()
         for char, names in groupby(keys, key=lambda n: n[0].lower()):
-            #print(char, list(names))
             od[char] = [self[name] for name in names]
         return od
 

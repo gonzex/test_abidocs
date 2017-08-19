@@ -6,6 +6,7 @@ import os
 
 from collections import OrderedDict
 from pymods.variables import Variable
+from html2text import html2text
 
 _WEBSITE = None
 
@@ -144,17 +145,18 @@ class Website(object):
             return vused
 
         # Find variables used in tests.
-        for od in self.variables_code.values():
-            for var in od.values():
+        for vd in self.variables_code.values():
+            for var in vd.values():
                 assert not hasattr(var, "tests")
                 var.tests = []
 
         for test in tests:
-            d = self.variables_code.get(test.executable, None) # FIXME Multibinit, conducti?
-            if d is None: continue
-            for vname in test_get_varnames(test, list(d.keys())):
-                var = d[vname]
+            vd = self.variables_code.get(test.executable, None) # FIXME Multibinit, conducti?
+            if vd is None: continue
+            for vname in test_get_varnames(test, list(vd.keys())):
+                var = vd[vname]
                 var.tests.append(test)
+                # TODO
                 #ratio_all
                 #ratio_in_tuto
 
@@ -165,8 +167,8 @@ class Website(object):
 
     def generate_markdown_files(self):
         workdir = os.path.join(self.root, "input_variables")
-        for code, vardb in self.variables_code.items():
-            vardb.write_markdown_files(workdir, with_varlist_page=code in ("abinit",))
+        for code, vd in self.variables_code.items():
+            vd.write_markdown_files(workdir, with_varlist_page=code in ("abinit",))
 
         #Input variables, statistics :
         #occurrences in the input files provided with the package
@@ -174,13 +176,13 @@ class Website(object):
         #in order of number of occurrence in the input files provided with the package.
         from itertools import groupby
         with open(os.path.join(workdir, "varset_stats.md"), "wt") as fh:
-            for codename, od in self.variables_code.items():
-                fh.write("\n\n# **%s** \n\n" % codename)
-                num_tests = len([test for test in self.inrpath2test.values() if test.executable == codename])
+            for code, vd in self.variables_code.items():
+                fh.write("\n\n# **%s** \n\n" % code)
+                num_tests = len([test for test in self.inrpath2test.values() if test.executable == code])
                 fh.write("%d tests\n\n" % num_tests)
                 # TODO The number of tests is smaller than ecut! Count Tutorial
                 # DSU sort
-                items = sorted([(len(v.tests), v) for v in od.values()], key=lambda t: t[0], reverse=True)
+                items = sorted([(len(v.tests), v) for v in vd.values()], key=lambda t: t[0], reverse=True)
                 for count, group in groupby(items, key=lambda t: t[0]):
                     vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
                     fh.write("%s: %s<br><br>" % (count, ", ".join(v.website_ilink() for v in vlist)))
@@ -194,7 +196,34 @@ class Website(object):
                 lines.append("* * *")
                 fh.write("\n".join(lines))
 
-        #with open(os.path.join(self.root, "acknowledgments.md") as fh
+        print("Generating Markdown files with topics ...")
+        for code, vd in self.variables_code.items():
+            # Get list of topics for this code.
+            topics = set()
+            for var in vd.values():
+                topics.update(var.topic_tribes.keys())
+
+            # Read template and prepare markdown string
+            repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
+            import yaml
+            for topic in sorted(topics):
+                with open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt") as fh:
+                    tmpl = yaml.load(fh)[0]
+                    meta = """\
+---
+authors: {}
+---
+""".format(tmpl.authors)
+
+                    html = """
+{introduction}
+
+""".format(**tmpl.__dict__)
+
+                text = meta + html2text(html)
+                workdir = os.path.join(self.root, "topics")
+                with open(os.path.join(workdir, topic + ".md"), "wt") as fh:
+                    fh.write(text)
 
     def analyze_pages(self):
         self.pages = []
@@ -224,8 +253,7 @@ class Website(object):
         #a.set("data-content", ref.to_html())
         a.set('href', url)
         a.text = key
-        if html_class:
-            a.set('class', html_class)
+        if html_class: a.set('class', html_class)
         return a
 
     def validate_html_build(self):

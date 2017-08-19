@@ -16,8 +16,77 @@ pages:
     - Mrgddb: user-guide/help_mrgddb.md
     - Optic: user-guide/help_optic.md
 - Topics:
-    - Crystalline Structure: topics/crystal.md
-    - K-points: topics/kpoints.md
+    - topics/Artificial.md
+    - topics/AtomManipulator.md
+    - topics/AtomTypes.md
+    - topics/Bader.md
+    - topics/BandOcc.md
+    - topics/Berry.md
+    - topics/BSE.md
+    - topics/ConstrainedPol.md
+    - topics/Control.md
+    - topics/Coulomb.md
+    - topics/CRPA.md
+    - topics/crystal.md
+    - topics/Dev.md
+    - topics/DFPT.md
+    - topics/DFT+U.md
+    - topics/DMFT.md
+    - topics/EffMass.md
+    - topics/EFG.md
+    - topics/Elastic.md
+    - topics/ElecBandStructure.md
+    - topics/ElecDOS.md
+    - topics/ElPhonInt.md
+    - topics/ElPhonTransport.md
+    - topics/ForcesStresses.md
+    - topics/FrequencyMeshMBPT.md
+    - topics/GeoConstraints.md
+    - topics/GeoOpt.md
+    - topics/GW.md
+    - topics/GWls.md
+    - topics/Hybrids.md
+    - topics/index.md
+    - topics/k-points.md
+    - topics/LOTF.md
+    - topics/MagField.md
+    - topics/MagMom.md
+    - topics/MolecularDynamics.md
+    - topics/multidtset.md
+    - topics/nonlinear.md
+    - topics/Optic.md
+    - topics/Output.md
+    - topics/parallelism.md
+    - topics/PAW.md
+    - topics/PhononBands.md
+    - topics/Phonons.md
+    - topics/PhononWidth.md
+    - topics/PIMD.md
+    - topics/Planewaves.md
+    - topics/positron.md
+    - topics/printing.md
+    - topics/PseudosPAW.md
+    - topics/q-points.md
+    - topics/RandStopPow.md
+    - topics/Recursion.md
+    - topics/RPACorrEn.md
+    - topics/SCFAlgorithms.md
+    - topics/SCFControl.md
+    - topics/SelfEnergy.md
+    - topics/SmartSymm.md
+    - topics/spinpolarisation.md
+    - topics/STM.md
+    - topics/Susceptibility.md
+    - topics/TDDFT.md
+    - topics/TDepES.md
+    - topics/Temperature.md
+    - topics/TransPath.md
+    - topics/TuningSpeed.md
+    - topics/UnitCell.md
+    - topics/vdw.md
+    - topics/Wannier.md
+    - topics/Wavelets.md
+    - topics/xc.md
 - Input Variables:
     - Abinit:
         - All Variables: input_variables/varlist_abinit.md
@@ -42,7 +111,7 @@ pages:
     - Optic: input_variables/optic.md
     - Aim: input_variables/aim.md
     - Statistics: input_variables/varset_stats.md
-- Tutorials:
+- Lessons:
     - Overview: tutorials/welcome.md
     - Base Tutorials: 
         - Base1: tutorials/base1.md
@@ -96,19 +165,18 @@ markdown_extensions:
 copyright: Copyright &copy; 2017 The Abinit Group
 #google_analytics: ['UA-27795084-5', 'abinit.org']
 
-theme: mkdocs
+#theme: mkdocs
 #theme: readthedocs
-#theme: material   # Nice
+theme: material   # Nice
 #theme: bootstrap
-#theme: bootswatch
 #theme: flatly
 #theme: cinder
 #theme: docSkimmer
 #theme: windmill
 #theme: journal
+#theme: united
 #theme: simplex
 #theme: yeti
-#theme: united
 #theme: spacelab
 #theme: docSkimmer
 theme_dir: abinit_theme
@@ -126,5 +194,5 @@ extra:
     version: 8.5.4
     # For Material them
     #logo: "images/logo.svg"
-    #feature:
-    #    tabs: true
+    feature:
+        tabs: true

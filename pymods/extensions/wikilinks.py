@@ -103,11 +103,17 @@ class WikiLinks(Pattern):
                 elif namespace == "lesson":
                     url = "/tutorials/%s" % value
 
+                elif namespace == "topic":
+                    url = "/topics/%s" % value
+
                 #elif namespace == "input"
                 #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
 
                 else:
-                    raise ValueError("Don't know how to handle namespace `%s` with value `%s`" % (namespace, value))
+                    msg = "Don't know how to handle namespace `%s` with value `%s`" % (namespace, value)
+                    print("Warning", msg)
+                    url = "FAKE_URL"
+                    #raise ValueError(msg) # FIXME
 
             elif token.startswith("tests/"):
                 # Handle [[tests/tutorial/Refs/tbase1_2.out]]
