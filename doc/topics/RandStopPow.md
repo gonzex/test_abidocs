@@ -1,6 +1,9 @@
 ---
 authors: FB
 ---
+
+## ** Introduction **
+
 The slowing down of a swift charged particle inside condensed matter has been
 a subject of intense interest since the advent of quantum-mechanics. The
 Lindhard formula [[Lindhard1954]] that gives the polarizability of the free
@@ -37,4 +40,25 @@ the particle velocity.
 Note that the absolute convergence of the random electronic stopping power is
 a delicate matter that generally requires thousands of empty states together
 with large values of the energy cutoff.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:pvelmax]]  Particle VELocity MAXimum
+ 
+*compulsory:*
+
+- [[abinit:ecuteps]]  Energy CUT-off for EPSilon (the dielectric matrix)
+- [[abinit:npvel]]  Number of Particle VELocities
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t16.in]]
+ 
 

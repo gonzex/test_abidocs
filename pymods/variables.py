@@ -202,6 +202,14 @@ class Variable(yaml.YAMLObject):
             od[topic].append(tribe)
         return od
 
+    @property
+    def is_internal(self):
+        return self.characteristic is not None and '[[INTERNAL_ONLY]]' in self.characteristic
+
+    @property
+    def mdlink(self):
+        return "[[%s:%s]]" % (self.code, self.name)
+
     @classmethod
     def from_array(cls, array):
         return Variable(vartype=array["vartype"], characteristic=array["characteristic"],
@@ -255,7 +263,8 @@ class Variable(yaml.YAMLObject):
         app("*Mnemonics:* %s  " % str(self.mnemonics))
         if self.characteristic:
             app("*Characteristics:* %s  " % str(self.characteristic))
-        app("*Mentioned in topic(s):* %s  " % str(self.topics))
+        if self.topic_tribes:
+            app("*Mentioned in topic(s):* %s  " % ", ".join("[[topic:%s]]" % k for k in self.topic_tribes))
         app("*Variable type:* %s  " % str(self.vartype))
         if self.dimensions:
            app("*Dimensions:* %s  " % format_dimensions(self.dimensions))
@@ -470,7 +479,7 @@ class InputVariables(OrderedDict):
                 #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
 
         # Build markdown page for the different sets.
-        print("Generating markdown files with %s input variables ..." % self.codename)
+        print("Generating markdown files with input variables of code: `%s`..." % self.codename)
         for varset in self.all_varset:
             var_list = [v for v in self.values() if v.varset == varset]
             #print(varset, var_list)
@@ -479,7 +488,7 @@ class InputVariables(OrderedDict):
                     fh.write(var.to_markdown())
 
     def groupby_first_letter(self):
-        keys = sorted(list(self.keys()))
+        keys = sorted(self.keys(), key=lambda n: n[0].lower())
         od = OrderedDict()
         for char, names in groupby(keys, key=lambda n: n[0].lower()):
             od[char] = [self[name] for name in names]

@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 It is possible to use Thomas-Fermi kinetic functional (explicit functional of
 the density) or Thomas-Fermi-Weizsacker kinetic functional (with Gradient
 Corrections) instead of Kohn-Sham kinetic energy functional (implicit
@@ -13,4 +16,55 @@ efficient parallelization (almost perfect scalability).
 
 At present, it only works for local pseudopotentials, severely restricting the
 use of this method.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:rectolden]]  RECursion - TOLerance on the difference of electronic DENsity
+ 
+*compulsory:*
+
+- [[abinit:tfkinfunc]]  Thomas-Fermi KINetic energy FUNCtional
+ 
+*expert:*
+
+- [[abinit:recnpath]]  RECursion - Number of point for PATH integral calculations
+- [[abinit:recnrec]]  RECursion - Number of RECursions
+- [[abinit:recptrott]]  RECursion - TROTTer parameter
+- [[abinit:rectesteg]]  RECursion - TEST on Electron Gas
+ 
+*internal:*
+
+- [[abinit:userec]]  USE RECursion
+ 
+*useful:*
+
+- [[abinit:recefermi]]  RECursion - initial guess  of the FERMI Energy
+- [[abinit:recgratio]]  RECursion - Grid RATIO
+- [[abinit:recrcut]]  RECursion - CUTing Radius
+- [[abinit:tfw_toldfe]]  Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps
+ 
+
+## ** Selected Input Files **
+
+*mpiio:*
+
+- [[tests/mpiio/Input/t42.in]]
+ 
+*v4:*
+
+- [[tests/v4/Input/t97.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t75.in]]
+- [[tests/v5/Input/t76.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t11.in]]
+ 
 

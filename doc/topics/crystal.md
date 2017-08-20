@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 In addition to the [[topic:UnitCell|Specification of the unit cell]] and
 [[topic:AtomTypes|Atom types]], ABINIT must know the number of atoms inside
 the cell, their type, and position. This is described by [[natom]], [[typat]]
@@ -33,4 +36,51 @@ Atomic positions can also be generated at random, see [[random_atpos]].
 
 Details about the way the crystal structure is defined in ABINIT can be found
 [here](../documents/geometry.pdf).
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:natom]]  Number of ATOMs
+- [[abinit:ntypat]]  Number of TYPes of AToms
+- [[abinit:typat]]  TYPe of AToms
+ 
+*compulsory:*
+
+- [[abinit:xangst]]  vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-
+- [[abinit:xcart]]  vectors (X) of atom positions in CARTesian coordinates
+- [[abinit:xred]]  vectors (X) of atom positions in REDuced coordinates
+ 
+*expert:*
+
+- [[abinit:maxnsym]]  MAXimum Number of SYMetries
+- [[abinit:random_atpos]]  RANDOM ATomic POSitions
+- [[abinit:symmorphi]]  SYMMORPHIc symmetry operation selection
+ 
+*useful:*
+
+- [[abinit:chkprim]]  CHecK whether the cell is PRIMitive
+- [[abinit:nsym]]  Number of SYMmetry operations
+- [[abinit:spgroup]]  SPace GROUP number
+- [[abinit:spinat]]  SPIN for AToms
+- [[abinit:symrel]]  SYMmetry in REaL space
+- [[abinit:tnons]]  Translation NON-Symmorphic vectors
+- [[abinit:tolsym]]  TOLERANCE for SYMmetries
+- [[abinit:xyzfile]]  XYZ FILE input for geometry
+ 
+
+## ** Selected Input Files **
+
+*v3:*
+
+- [[tests/v3/Input/t21.in]]
+- [[tests/v3/Input/t23.in]]
+- [[tests/v3/Input/t39.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t14.in]]
+ 
 

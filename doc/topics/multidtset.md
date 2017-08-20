@@ -1,6 +1,9 @@
 ---
 authors: XG
 ---
+
+## ** Introduction **
+
 The simplest use of ABINIT corresponds to one task, with one set of data : for
 example, determination of the total energy for some geometry, with some set of
 plane waves and some set of k-points.
@@ -30,4 +33,55 @@ are [[getden]] for chaining a self-consistent determination of the density
 with a non-self-consistent calculation of the Kohn-Sham band structure, or
 [[getwfk]] for chaining a ground-state determination of wavefunctions with a
 DFPT or GW computation.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:jdtset]]  index -J- for DaTaSETs
+- [[abinit:udtset]]  Upper limit on DaTa SETs
+ 
+*compulsory:*
+
+- [[abinit:ndtset]]  Number of DaTaSETs
+ 
+*useful:*
+
+- [[abinit:get1wf]]  GET the first-order wavefunctions from _1WF file 
+- [[abinit:getbscoup]]  GET the Bethe-Salpeter COUPling block from ...
+- [[abinit:getbseig]]  GET the Bethe-Salpeter EIGenstates from ...
+- [[abinit:getbsreso]]  GET the Bethe-Salpeter RESOnant block from ...
+- [[abinit:getcell]]  GET CELL parameters from ...
+- [[abinit:getddk]]  GET the DDK wavefunctions from _1WF file
+- [[abinit:getden]]  GET the DENsity from ...
+- [[abinit:getgam_eig2nkq]]  GET the GAMma phonon data EIG2NKQ from dataset
+- [[abinit:gethaydock]]  GET the HAYDOCK restart file from ...
+- [[abinit:getocc]]  GET OCC parameters from ...
+- [[abinit:getqps]]  GET QuasiParticle Structure
+- [[abinit:getscr]]  GET SCReening (the inverse dielectric matrix) from ...
+- [[abinit:getsuscep]]  GET SUSCEPtibility (the irreducible polarizability) from ...
+- [[abinit:getvel]]  GET VEL from ...
+- [[abinit:getwfk]]  GET the wavefunctions from _WFK file 
+- [[abinit:getwfkfine]]  GET the fine grid wavefunctions from _WFK file
+- [[abinit:getwfq]]  GET the wavefunctions from _WFQ file 
+- [[abinit:getxcart]]  GET XCART from ...
+- [[abinit:getxred]]  GET XRED from ...
+- [[abinit:irdden]]  Integer that governs the ReaDing of DEN file
+- [[abinit:irdqps]]  Integer that governs the ReaDing of QuasiParticle Structure
+- [[abinit:irdscr]]  Integer that governs the ReaDing of the SCReening
+- [[abinit:irdsuscep]]  Integer that governs the ReaDing of the SUSCEPtibility
+- [[abinit:irdwfk]]  Integer that governs the ReaDing of _WFK files
+- [[abinit:irdwfkfine]]  Integer that governs the ReaDing of the grid _WFK file on the FINE grid
+ 
+
+## ** Selected Input Files **
+
+*v1:*
+
+- [[tests/v1/Input/t83.in]]
+- [[tests/v1/Input/t84.in]]
+- [[tests/v1/Input/t87.in]]
+ 
 

@@ -1,6 +1,9 @@
 ---
 authors: GG
 ---
+
+## ** Introduction **
+
 There are two mechanisms to put constraints on the atom positions in ABINIT.
 They can be used in [[topic_GeoOpt|geometry optimization]],
 [[topic:MolecularDynamics|molecular dynamics]] (including PIMD) or other
@@ -15,4 +18,31 @@ on linear combinations of atomic positions. Thanks to such constraint, the
 mean position of two atoms (or a fragment, like a molecule) can be fixed, or
 constrained to stay within an arbitrary plane. One can thus also sample
 different mean positions. See a complete description in [[wtatcon]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:iatfix]]  Indices of AToms that are FIXed 
+- [[abinit:iatfixx]]  Indices of AToms that are FIXed along the X direction
+- [[abinit:iatfixy]]  Indices of AToms that are FIXed along the Y direction
+- [[abinit:iatfixz]]  Indices of AToms that are FIXed along the Z direction
+- [[abinit:natfix]]  Number of Atoms that are FIXed
+- [[abinit:natfixx]]  Number of Atoms that are FIXed along the X direction
+- [[abinit:natfixy]]  Number of Atoms that are FIXed along the Y direction
+- [[abinit:natfixz]]  Number of Atoms that are FIXed along the Z direction
+ 
+*useful:*
+
+- [[abinit:iatcon]]  Indices of AToms in CONstraint equations
+- [[abinit:natcon]]  Number of AToms in CONstraint equations
+- [[abinit:nconeq]]  Number of CONstraint EQuations
+- [[abinit:wtatcon]]  WeighTs for AToms in CONstraint equations
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

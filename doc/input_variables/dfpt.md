@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* BanD for second-order EIGenvalues from Response-Function  
-*Mentioned in topic(s):* TDepES_basic  
+*Mentioned in topic(s):* [[topic:TDepES]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* -1  
@@ -27,7 +27,7 @@ to nband.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
@@ -48,7 +48,7 @@ See [[rfatpol]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: DIRections  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -70,7 +70,7 @@ See [[rfdir]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: ELectric FielD  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -91,7 +91,7 @@ See [[rfelfd]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 1: PHONons  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -110,7 +110,7 @@ See [[rfphon]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
@@ -136,7 +136,7 @@ See [[rfatpol]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: DIRections  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -158,7 +158,7 @@ See [[rfdir]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: ELectric FielD  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -179,7 +179,7 @@ See [[rfelfd]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 2: PHONons  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -203,7 +203,7 @@ See [[rfphon]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
@@ -229,7 +229,7 @@ See [[rfatpol]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: DIRections  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -251,7 +251,7 @@ See [[rfdir]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: ELectric FielD  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -272,7 +272,7 @@ See [[rfelfd]] for additional details.
 
 
 *Mnemonics:* 3rd Derivative of Energy, mixed PERTurbation 3: PHONons  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -296,7 +296,7 @@ See [[rfphon]] for additional details.
 
 
 *Mnemonics:* DFPT SCISSor operator  
-*Mentioned in topic(s):* DFPT_useful  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -322,7 +322,7 @@ Typical use is for response to electric field ([[rfelfd]]=3), but NOT for d/dk
 
 
 *Mnemonics:* EFfective MASs  
-*Mentioned in topic(s):* EffMass_compulsory  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -354,7 +354,7 @@ calculations are NOT currently supported. Also, for both NC and PAW,
 
 
 *Mnemonics:* EFfective MASs, BANDS to be treated.  
-*Mentioned in topic(s):* EffMass_useful  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* (2,[[nkpt]])  
 *Default value:* The full range of band available in the calculation for each k-point.  
@@ -379,7 +379,7 @@ specified range.
 
 
 *Mnemonics:* EFfective MASs, CALCulate along DIRectionS  
-*Mentioned in topic(s):* EffMass_useful  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -416,7 +416,7 @@ cases.
 
 
 *Mnemonics:* EFfective MASs, activate DEGenerate formalism  
-*Mentioned in topic(s):* EffMass_useful  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -440,7 +440,7 @@ idea (see [PRB 89 155131 (2014)](https://doi.org/10.1103/PhysRevB.89.155131)).
 
 
 *Mnemonics:* EFfective MASs, DEGeneracy TOLerance  
-*Mentioned in topic(s):* EffMass_useful  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-05  
@@ -464,7 +464,7 @@ the '[[ENERGY]]' characteristics.
 
 
 *Mnemonics:* EFfective MASs, DIMension of the effective mass tensor  
-*Mentioned in topic(s):* EffMass_useful  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
@@ -498,7 +498,7 @@ line immediately after the effective mass.
 
 
 *Mnemonics:* EFfective MASs, DIRectionS to be calculated  
-*Mentioned in topic(s):* EffMass_basic  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* real  
 *Dimensions:* (3 or 2,[[efmas_n_dirs]])  
 *Default value:* 0  
@@ -522,7 +522,7 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 
 
 *Mnemonics:* EFfective MASs, Number of DIRectionS  
-*Mentioned in topic(s):* EffMass_basic  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -545,7 +545,7 @@ Number of directions in [[efmas_dirs]], to be considered according to
 
 
 *Mnemonics:* EFfective MASs, Number of points for integration w/r to THETA  
-*Mentioned in topic(s):* EffMass_basic  
+*Mentioned in topic(s):* [[topic:EffMass]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1000  
@@ -571,7 +571,7 @@ required. The default value gives a tensor accurate to the 4th decimal in Ge.
 
 
 *Mnemonics:* ELectron-PHonon interaction at 2nd order : IMAGinary shift of the DENominator  
-*Mentioned in topic(s):* TDepES_basic  
+*Mentioned in topic(s):* [[topic:TDepES]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -596,7 +596,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
 *Mnemonics:* Electron-PHonon: Task  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -620,7 +620,7 @@ When [[optdriver]]==7, select the task to be performed. The choice is among :
 
 
 *Mnemonics:* Eigenvalue SMEARing  
-*Mentioned in topic(s):* TDepES_useful  
+*Mentioned in topic(s):* [[topic:TDepES]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01  
@@ -650,7 +650,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 
 *Mnemonics:* FReeZe FERMI energy  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -676,7 +676,7 @@ incorrect.
 
 
 *Mnemonics:* Integer for second-order EIGenvalues from Response-Function  
-*Mentioned in topic(s):* TDepES_compulsory  
+*Mentioned in topic(s):* [[topic:TDepES]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -720,7 +720,7 @@ Related variables :
 
 
 *Mnemonics:* PHonons: Number of Grid points for Q-PoinT mesh.  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [20, 20, 20]  
@@ -744,7 +744,7 @@ Eliashberg function via Fourier interpolation. Related input variables:
 
 
 *Mnemonics:* Phonons: Q-PATH  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* (3,ph_nqpath)  
 *Default value:* None  
@@ -769,7 +769,7 @@ for phonon band structures and phonon linewidths. See also [[ph_nqpath]] and
 
 
 *Mnemonics:* PREPAre Non-Linear response calculation  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -799,7 +799,7 @@ and (ii) to keep the full number of k-points.
 
 
 *Mnemonics:* PREPAre GKK calculation  
-*Mentioned in topic(s):* ElPhonInt_compulsory  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -827,7 +827,7 @@ conjunction with [[prtgkk]].
 
 
 *Mnemonics:* PRinT Band-By-Band decomposition  
-*Mentioned in topic(s):* printing_prngs, Output_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:Output]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -850,7 +850,7 @@ X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).
 
 
 *Mnemonics:* Response Function : 2nd Derivative of wavefunctions with respect to K  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -881,7 +881,7 @@ auxiliary quantity in the calculations of 3rd-order derivatives of the energy
 
 
 *Mnemonics:* Response Function : Acoustic Sum Rule  
-*Mentioned in topic(s):* Phonons_basic  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -915,7 +915,7 @@ at the level of the ANADDB utility, with the two independent input variables
 
 
 *Mnemonics:* Response Function : ATomic POLarisation  
-*Mentioned in topic(s):* DFPT_basic, Elastic_compulsory, Phonons_compulsory  
+*Mentioned in topic(s):* [[topic:DFPT]], [[topic:Elastic]], [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
@@ -945,7 +945,7 @@ or stress type (see [ the response function help file
 
 
 *Mnemonics:* Response Function with respect to Derivative with respect to K  
-*Mentioned in topic(s):* DFPT_basic  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -972,7 +972,7 @@ The directions for the derivatives are determined by [[rfdir]].
 
 
 *Mnemonics:* Response Function : DIRections  
-*Mentioned in topic(s):* DFPT_compulsory, Elastic_compulsory, Phonons_compulsory  
+*Mentioned in topic(s):* [[topic:DFPT]], [[topic:Elastic]], [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -999,7 +999,7 @@ corresponding direction. If 0, this direction should not be considered.
 
 
 *Mnemonics:* Response Function with respect to the ELectric FielD  
-*Mentioned in topic(s):* EffMass_compulsory, DFPT_basic  
+*Mentioned in topic(s):* [[topic:EffMass]], [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1029,7 +1029,7 @@ shift is to be used, it is usually not applied for the d/dk response).
 
 
 *Mnemonics:* Response Function with respect to MAGNetic B-field perturbation  
-*Mentioned in topic(s):* DFPT_basic  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1052,7 +1052,7 @@ account and the perturbing potential has Zeeman form.
 
 
 *Mnemonics:* Response Function METHod  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1073,7 +1073,7 @@ allowed.
 
 
 *Mnemonics:* Response Function with respect to PHONons  
-*Mentioned in topic(s):* DFPT_basic  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1089,7 +1089,7 @@ It must be equal to 1 to run phonon response function calculations.
 
 
 *Mnemonics:* Response Function with respect to STRainS  
-*Mentioned in topic(s):* DFPT_basic, Elastic_compulsory  
+*Mentioned in topic(s):* [[topic:DFPT]], [[topic:Elastic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1114,7 +1114,7 @@ respfn help file ](../../users/generated_files/help_respfn.html#1) .
 
 
 *Mnemonics:* Response Function, USER-defined  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1150,7 +1150,7 @@ variable.
 
 
 *Mnemonics:* SMeared DELTA function  
-*Mentioned in topic(s):* TDepES_compulsory  
+*Mentioned in topic(s):* [[topic:TDepES]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1174,7 +1174,7 @@ electronic lifetimes. The delta function is evaluated using:
 
 
 *Mnemonics:* Time-Dependent dft : MAXimal kohn-sham ENErgy difference  
-*Mentioned in topic(s):* TDDFT_useful  
+*Mentioned in topic(s):* [[topic:TDDFT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1205,7 +1205,7 @@ See [[td_mexcit]] for an alternative way to decrease N.
 
 
 *Mnemonics:* Time-Dependent dft : Maximal number of EXCITations  
-*Mentioned in topic(s):* TDDFT_useful  
+*Mentioned in topic(s):* [[topic:TDDFT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  

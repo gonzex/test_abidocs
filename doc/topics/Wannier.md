@@ -1,6 +1,9 @@
 ---
 authors: BAmadon
 ---
+
+## ** Introduction **
+
 There are two ways to obtain Wannier functions with ABINIT:
 
 * The first one is to use an internal implementation of Projected Local Orbital Wannier functions [[Amadon2008]], [[Amadon2015]] that can be activated with the input variable [[plowan_compute]]. The variables [[plowan_bandi]] and [[plowan_bandf]] specifies the Kohn Sham bands that are used to built Wannier functions, whereas variables [[plowan_natom]],[[plowan_iatom]],[[plowan_nbl]], [[plowan_lcalc]], and [[plowan_projcalc]] specify the atoms, angular momentum and projectors corresponding to the projected local Orbital Wannier functions. 
@@ -22,4 +25,50 @@ included as a library and ABINIT and the process is automatic, so that in a
 single run you can do both the ground state calculation and the computation of
 MLWFs. The input variables [[prtwant]], [[w90iniprj]] and [[w90prtunk]] are
 related to the use of the wannier90 librairy.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:w90iniprj]]  Wannier90- INItial PROJections
+- [[abinit:w90prtunk]]  Wannier90- PRINT UNKp.s file
+ 
+*compulsory:*
+
+- [[abinit:plowan_bandf]]  Projected Local Orbital WANnier functions BAND Final
+- [[abinit:plowan_bandi]]  Projected Local Orbital WANnier functions BAND Initial
+- [[abinit:plowan_compute]]  Projected Local Orbital WANnier functions COMPUTATION
+- [[abinit:plowan_iatom]]  Projected Local Orbital WANnier functions, Index of ATOM
+- [[abinit:plowan_lcalc]]  Projected Local Orbital WANnier functions,  L values to use for CALCulation
+- [[abinit:plowan_natom]]  Projected Local Orbital WANnier functions, Number of ATOMs
+- [[abinit:plowan_nbl]]  Projected Local Orbital WANnier functions,  NumBer of L values
+- [[abinit:plowan_projcalc]]  Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation
+- [[abinit:prtwant]]  PRinT WANT file
+ 
+*useful:*
+
+- [[abinit:plowan_it]]  Projected Local Orbital WANnier functions,  Index of Translation.
+- [[abinit:plowan_nt]]  Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
+energy are computed
+- [[abinit:plowan_realspace]]  Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t71.in]]
+- [[tests/v7/Input/t72.in]]
+ 
+*wannier90:*
+
+- [[tests/wannier90/Input/t01.in]]
+- [[tests/wannier90/Input/t02.in]]
+- [[tests/wannier90/Input/t03.in]]
+- [[tests/wannier90/Input/t11.in]]
+- [[tests/wannier90/Input/t12.in]]
+- [[tests/wannier90/Input/t13.in]]
+ 
 

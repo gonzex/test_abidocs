@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* index of ATOM  
-*Mentioned in topic(s):* Bader_basic  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -25,7 +25,7 @@ Index of the investigated atom.
 
 
 *Mnemonics:* bader ATomic RADius  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -48,7 +48,7 @@ two times)
 
 
 *Mnemonics:* COeFFicient 1  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.98  
@@ -68,7 +68,7 @@ See the input variable [[ratmin@aim]].
 
 
 *Mnemonics:* COeFFicient 2  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.95  
@@ -88,7 +88,7 @@ See the input variable [[ratmin@aim]].
 
 
 *Mnemonics:* computation of CRITical points  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -132,7 +132,7 @@ considered is limited by distance cutoff (variable [[maxatd@aim]])
 
 
 *Mnemonics:* electronic DENsity OUTput  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -159,7 +159,7 @@ density (see [[dltyp@aim]]).
 
 
 *Mnemonics:* Density or Laplacian TYP output  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -184,7 +184,7 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
 
 
 *Mnemonics:* DPCLIM  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-2  
@@ -210,7 +210,7 @@ density, increase the default value to 5.d-2, let's say.
 
 
 *Mnemonics:* FOLlow DEParture  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
@@ -230,7 +230,7 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 
 
 *Mnemonics:* FOLLOW the gradient path  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -254,7 +254,7 @@ specified in the input variable [[aim:foldep]].
 
 
 *Mnemonics:* FOLlow STeP  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.5  
@@ -274,7 +274,7 @@ The first step for following the gradient path.
 
 
 *Mnemonics:* GraPhic output for the bader SURFace  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -301,7 +301,7 @@ calculated Bader surface.
 
 
 *Mnemonics:* numer of INtegration PoinTs  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 100  
@@ -325,7 +325,7 @@ sensitive).
 
 
 *Mnemonics:* Integration of the charge density RHO  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -351,7 +351,7 @@ Drives the integration of the charge of the Bader atom.
 
 
 *Mnemonics:* Integration of the VOLume  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -375,7 +375,7 @@ Drives the integration of the volume of the Bader atom.
 
 
 *Mnemonics:* electronic density LAPlacian OUTput  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -402,7 +402,7 @@ the core density (see [[aim:dltyp]]).
 
 
 *Mnemonics:* Low GRADient criterion  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-12  
@@ -431,7 +431,7 @@ searching procedure continues with the next seed.
 
 
 *Mnemonics:* Low GRADient criterion 2  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
@@ -454,7 +454,7 @@ Determines the criterion for deciding that a CP has been found. See
 
 
 *Mnemonics:* Length of the planned search STEP  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-10  
@@ -477,7 +477,7 @@ for more details.
 
 
 *Mnemonics:* Length of the planned search STEP 2  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
@@ -500,7 +500,7 @@ Determines the criterion for deciding that a CP has been found. See
 
 
 *Mnemonics:* MAXimal ATomic Distance  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
@@ -528,7 +528,7 @@ the desired atoms.
 
 
 *Mnemonics:* MAXimal CP Distance  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
@@ -555,7 +555,7 @@ the critical points.
 
 
 *Mnemonics:* Number of GRID points  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* 2*30  
@@ -576,7 +576,7 @@ governed by [[aim:denout]] and [[aim:lapout]].
 
 
 *Mnemonics:* Number of PHI angle  
-*Mentioned in topic(s):* Bader_basic  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 48  
@@ -604,7 +604,7 @@ pi/2 (for symmetry reasons), the recommended value is 20.
 
 
 *Mnemonics:* Number of Supercell points in direction A  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
@@ -640,7 +640,7 @@ each primitive direction. This supercell is build as follows :
 
 
 *Mnemonics:* Number of Supercell points in direction B  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
@@ -676,7 +676,7 @@ each primitive direction. This supercell is build as follows :
 
 
 *Mnemonics:* Number of Supercell points in direction C  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
@@ -712,7 +712,7 @@ each primitive direction. This supercell is build as follows :
 
 
 *Mnemonics:* Number of THETA angles  
-*Mentioned in topic(s):* Bader_basic  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 32  
@@ -739,7 +739,7 @@ is pi/2 (for symmetry reasons), the recommended value is 20.
 
 
 *Mnemonics:* PHI MAXimal angle  
-*Mentioned in topic(s):* Bader_basic  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
@@ -763,7 +763,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 
 
 *Mnemonics:* PHI MINimal angle  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -785,7 +785,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 
 
 *Mnemonics:* RADial STeP  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
@@ -807,7 +807,7 @@ The length of the first step in the search of the exact Bader radius.
 
 
 *Mnemonics:* Radius Atomic MINimal  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -837,7 +837,7 @@ is used instead.
 
 
 *Mnemonics:* Radius SURface DIRection  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* 2*0.0  
@@ -858,7 +858,7 @@ theta,phi) along which the radius of the Bader surface is to be determined.
 
 
 *Mnemonics:* computation of the Radius bader SURFace  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -882,7 +882,7 @@ specified in the input variable [[aim:rsurdir]]
 
 
 *Mnemonics:* SCALing of the cartesian coordinates  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 1.0 1.0 1.0  
@@ -896,7 +896,7 @@ Test list:
 
 
 *Mnemonics:* computation of the bader SURFace  
-*Mentioned in topic(s):* Bader_compulsory  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -922,7 +922,7 @@ Drive the computation of the full Bader surface.
 
 
 *Mnemonics:* THETA MAXimal angle  
-*Mentioned in topic(s):* Bader_basic  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* pi  
@@ -946,7 +946,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 
 
 *Mnemonics:* THETA MINimal angle  
-*Mentioned in topic(s):* Bader_expert  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -968,7 +968,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 
 
 *Mnemonics:* Vectors defining the PoinTS of the surface  
-*Mentioned in topic(s):* Bader_useful  
+*Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* (6)  
 *commentdims:* 6 for 1D, 9 for 2D  

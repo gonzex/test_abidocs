@@ -1,6 +1,9 @@
 ---
 authors: MT,FJ
 ---
+
+## ** Introduction **
+
 * For ground-state calculations, the code has been parallelized (MPI-based parallelism) on the k-points, on the spins, on the spinor components, on the bands, and on the FFT grid and plane wave coefficients. For the k-point and spin parallelisations (using MPI), the communication load is generally very small. This allows it to be used on a cluster of workstations. However, the number of nodes that can be used in parallel might be small, and depends strongly on the physics of the problem. A combined FFT / band parallelisation (LOBPCG)is available [[Bottin2008]], and has shown very large speed up (>1000) on powerful computers with a large number of processors and high-speed interconnect. The combination of FFT / band / k point and spin parallelism is also available, and quite efficient for such computers. Available for norm-conserving as well as PAW cases. Automatic determination of the best combination of parallelism levels is available. Use of MPIIO is mandatory for the largest speed ups to be observed. 
 * Chebyshev filtering (Chebfi) is a method to solve the linear eigenvalue problem, and can be used as a SCF solver in Abinit. It is implemented in Abinit [[Levitt2015]]. The design goal is for Chebfi to replace LOBPCG as the solver of choice for large-scale computations in Abinit. By performing less orthogonalizations and diagonalizations than LOBPCG, scaling to higher processor counts is possible. A manual to use Chebfi is available [here](../documents/howto_chebfi.pdf). 
 * For ground-state calculations, with a set of images (e.g. nudged elastic band method, the string method, the path-integral molecular dynamics, the genetic algorithm), MPI-based parallelism is used. The work load for the different images has been distributed, and this parallelism can be combined with the parallelism described in point hereabove, leading to speed-up beyond 5000. 
@@ -15,4 +18,56 @@ authors: MT,FJ
   
 
 * Ground state, response function, and GW parallel calculations can be done also by using OpenMP parallelism, even combined with MPI parallelism. 
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:autoparal]]  AUTOmatisation of the PARALlelism
+- [[abinit:paral_atom]]  activate PARALelization over (paw) ATOMic sites
+- [[abinit:paral_kgb]]  activate PARALelization over K-point, G-vectors and Bands
+- [[abinit:paral_rf]]  activate PARALlelization over Response Function perturbations
+ 
+*expert:*
+
+- [[abinit:gpu_devices]]  GPU: choice of DEVICES on one node
+- [[abinit:gpu_linalg_limit]]  GPU (Cuda): LINear ALGebra LIMIT
+- [[abinit:iomode]]  Input-Output MODE
+- [[abinit:localrdwf]]  LOCAL ReaD WaveFunctions
+- [[abinit:np_slk]]  Number of mpi Processors used for ScaLapacK calls
+- [[abinit:pw_unbal_thresh]]  Plane Wave UNBALancing: THRESHold for balancing procedure
+- [[abinit:use_gemm_nonlop]]  USE the GEMM routine for the application of the NON-Local OPerator
+- [[abinit:use_gpu_cuda]]  activate USE of GPU accelerators with CUDA (nvidia)
+- [[abinit:use_slk]]  USE ScaLapacK
+ 
+*useful:*
+
+- [[abinit:bandpp]]  BAND Per Processor
+- [[abinit:gwpara]]  GW PARAllelization level
+- [[abinit:max_ncpus]]  MAXimum Number of CPUS
+- [[abinit:npband]]  Number of Processors at the BAND level
+- [[abinit:npfft]]  Number of Processors at the FFT level
+- [[abinit:nphf]]  Number of Processors for (Hartree)-Fock exact exchange
+- [[abinit:npimage]]  Number of Processors at the IMAGE level
+- [[abinit:npkpt]]  Number of Processors at the K-Point Level
+- [[abinit:nppert]]  Number of Processors at the PERTurbation level
+- [[abinit:npspinor]]  Number of Processors at the SPINOR level
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t08.in]]
+- [[tests/paral/Input/t21.in]]
+- [[tests/paral/Input/t22.in]]
+- [[tests/paral/Input/t24.in]]
+- [[tests/paral/Input/t25.in]]
+- [[tests/paral/Input/t26.in]]
+- [[tests/paral/Input/t29.in]]
+- [[tests/paral/Input/t30.in]]
+- [[tests/paral/Input/t51.in]]
+ 
 

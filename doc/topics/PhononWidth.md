@@ -1,6 +1,9 @@
 ---
 authors: MV
 ---
+
+## ** Introduction **
+
 This topic concerns metals only.
 
 After generating a GKK file (see [[topic_ElPhonInt]]), the Electron-Phonon
@@ -12,4 +15,65 @@ anaddb generates files containing the phonon linewidths (suffixed _LWD) and
 frequencies ωqj (suffixed _BST) along [[anaddb:qpath]]. One can calculate the
 nesting function n(q) = ∑kii' δ(εk,i) δ(εk+q,i') by setting [[anaddb:prtnest]]
 to 1 (output to _NEST).
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[anaddb:kptrlatt]]  K PoinT Reciprocal LATTice
+- [[anaddb:nqpath]]  Number of Q wavevectors defining a PATH
+- [[anaddb:qpath]]  Q wavevectors defining a PATH
+- [[anaddb:telphint]]  Technique for ELectron-PHonon INTegration
+ 
+*compulsory:*
+
+- [[anaddb:elphflag]]  ELectron-PHonon FLAG
+ 
+*expert:*
+
+- [[anaddb:qgrid_type]]  Q GRID TYPE
+- [[anaddb:use_k_fine]]  USE K-grid FINEr than the coarse k-grid
+ 
+*useful:*
+
+- [[anaddb:ep_int_gkk]]  Electron-Phonon INTerpolation of GKK
+- [[anaddb:ep_qptlist]]  Electron Phonon Q PoinT LIST
+- [[anaddb:ep_scalprod]]  DO SCALar PRODuct for gkk matrix elements
+- [[anaddb:ndivsm]]  Number of DIVisions for the SMallest segment
+- [[anaddb:prtnest]]  PRinT the NESTing function
+- [[anaddb:prtvol]]  PRinT VOLume
+ 
+
+## ** Selected Input Files **
+
+*tutorespfn:*
+
+- [[tests/tutorespfn/Input/teph_4.in]]
+- [[tests/tutorespfn/Input/teph_5.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t88.in]]
+- [[tests/v5/Input/t89.in]]
+- [[tests/v5/Input/t90.in]]
+- [[tests/v5/Input/t91.in]]
+- [[tests/v5/Input/t92.in]]
+- [[tests/v5/Input/t93.in]]
+- [[tests/v5/Input/t94.in]]
+- [[tests/v5/Input/t95.in]]
+- [[tests/v5/Input/t99.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t93.in]]
+- [[tests/v6/Input/t94.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t88.in]]
+- [[tests/v7/Input/t93.in]]
+- [[tests/v7/Input/t94.in]]
+ 
 

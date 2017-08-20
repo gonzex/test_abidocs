@@ -1,6 +1,9 @@
 ---
 authors: XG
 ---
+
+## ** Introduction **
+
 The eigenenergies along a set of segments can be computed (non-self-consistent
 calculations [[iscf]]=-2) using a negative value of [[kptopt]], with
 [[kptbounds]] defining the end points of the segments, and [[ndivsm]] (or
@@ -23,4 +26,45 @@ of electronic band structures from ABINIT. The most powerful is based on
 [[topic:Abipy]]. Simpler tools also exist, and can be found in
 ~abinit/scripts/post_processing, e.g. AbinitBandStructureMaker.py,
 plot_bandstructure.py or abinit_eignc_to_bandstructure.py.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:iscf]]  Integer for Self-Consistent-Field cycles
+- [[abinit:kptbounds]]  K PoinT BOUNDarieS
+- [[abinit:kptopt]]  KPoinTs OPTion
+- [[abinit:ndivsm]]  Number of DIVisions for the SMallest segment
+ 
+*useful:*
+
+- [[abinit:einterp]]  Electron bands INTERPolation
+- [[abinit:iatsph]]  Index for the ATomic SPHeres of the atom-projected density-of-states
+- [[abinit:natsph]]  Number of ATomic SPHeres for the atom-projected density-of-states
+- [[abinit:ndivk]]  Number of DIVisions of K lines
+- [[abinit:pawfatbnd]]  PAW: print band structure in the FAT-BaND representation
+- [[abinit:ratsph]]  Radii of the ATomic SPHere(s)
+ 
+
+## ** Selected Input Files **
+
+*v5:*
+
+- [[tests/v5/Input/t20.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t14.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t71.in]]
+- [[tests/v7/Input/t72.in]]
+ 
+*v8:*
+
+- [[tests/v8/Input/t04.in]]
+ 
 

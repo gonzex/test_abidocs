@@ -1,6 +1,9 @@
 ---
 authors: BAmadon
 ---
+
+## ** Introduction **
+
 DFT fails to describe the ground state and/or the excited states such as many
 lanthanides, actinides or transition metals. Indeed, exchange correlation
 functionals are not (yet) able to describe the strong repulsive Coulomb
@@ -70,4 +73,65 @@ of the perturbation orders during the simulation, [[dmftctqmc_gmove]]
 customizes the global move tries (mainly useful for systems with high/low spin
 configurations), and [[dmftctqmc_meas]] sets the frequency of measurement of
 quantities.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:dmft_rslf]]  Dynamical Mean Fied Theory: Read SeLF energy
+- [[abinit:dmft_solv]]  Dynamical Mean Fied Theory: choice of SOLVer
+ 
+*compulsory:*
+
+- [[abinit:dmft_iter]]  Dynamical Mean Fied Theory: number of ITERation
+- [[abinit:dmft_nwli]]  Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh
+- [[abinit:dmft_nwlo]]  Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh
+- [[abinit:dmftbandf]]  Dynamical Mean Field Theory: BAND: Final
+- [[abinit:dmftbandi]]  Dynamical Mean Field Theory: BAND: Initial
+- [[abinit:dmftqmc_l]]  Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices
+- [[abinit:dmftqmc_n]]  Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps
+- [[abinit:dmftqmc_therm]]  Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization
+- [[abinit:usedmft]]  USE Dynamical Mean Field Theory
+ 
+*expert:*
+
+- [[abinit:dmft_entropy]]  Dynamical Mean Fied Theory: ENTROPY
+- [[abinit:dmft_nlambda]]  Dynamical Mean Fied Theory: Number of LAMBDA points
+- [[abinit:dmft_read_occnd]]  Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)
+- [[abinit:dmft_t2g]]  Dynamical Mean Fied Theory: t2g orbitals
+- [[abinit:dmft_tolfreq]]  Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid
+- [[abinit:dmftctqmc_basis]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS
+- [[abinit:dmftctqmc_correl]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations
+- [[abinit:dmftctqmc_grnns]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe
+- [[abinit:dmftctqmc_meas]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements
+- [[abinit:dmftctqmc_mov]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie
+- [[abinit:dmftctqmc_mrka]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis
+- [[abinit:dmftctqmc_triqs_nleg]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials
+ 
+*useful:*
+
+- [[abinit:dmft_dc]]  Dynamical Mean Fied Theory: Double Counting
+- [[abinit:dmft_mxsf]]  Dynamical Mean Fied Theory: MiXing parameter for the SelF energy
+- [[abinit:dmft_tollc]]  Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop
+- [[abinit:dmftcheck]]  Dynamical Mean Fied Theory: CHECKs
+- [[abinit:dmftctqmc_check]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK
+- [[abinit:dmftctqmc_gmove]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs
+- [[abinit:dmftctqmc_order]]  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER
+- [[abinit:dmftqmc_seed]]  Dynamical Mean Fied Theory: Quantum Monte Carlo SEED
+ 
+
+## ** Selected Input Files **
+
+*v6:*
+
+- [[tests/v6/Input/t47.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t21.in]]
+- [[tests/v7/Input/t27.in]]
+- [[tests/v7/Input/t28.in]]
+ 
 

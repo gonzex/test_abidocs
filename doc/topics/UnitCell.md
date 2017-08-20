@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 ABINIT needs three dimensioned non-coplanar vectors, forming the unit cell, to
 set up the real space lattice.
 
@@ -26,4 +29,55 @@ the usual input variables [[rprim]], [[angdeg]], [[acell]] and/or
 [[scalecart]]. ABINIT will fold the conventional unit to the primitive cell,
 and also generate all the nuclei positions from the irreducible ones. See
 [[topic:SmartSymm]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:acell]]  CELL lattice vector scaling
+- [[abinit:rprim]]  Real space PRIMitive translations
+ 
+*internal:*
+
+- [[abinit:rprimd]]  Real space PRIMitive translations, Dimensional
+ 
+*useful:*
+
+- [[abinit:angdeg]]  ANGles in DEGrees
+- [[abinit:brvltt]]  BRaVais LaTTice type
+- [[abinit:chkprim]]  CHecK whether the cell is PRIMitive
+- [[abinit:scalecart]]  SCALE CARTesian coordinates
+- [[abinit:spgroup]]  SPace GROUP number
+ 
+
+## ** Selected Input Files **
+
+*tutorial:*
+
+- [[tests/tutorial/Input/tbase4_4.in]]
+ 
+*v1:*
+
+- [[tests/v1/Input/t96.in]]
+ 
+*v2:*
+
+- [[tests/v2/Input/t59.in]]
+- [[tests/v2/Input/t60.in]]
+ 
+*v3:*
+
+- [[tests/v3/Input/t23.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t77.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t16.in]]
+- [[tests/v6/Input/t30.in]]
+ 
 

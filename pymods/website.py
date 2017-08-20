@@ -5,6 +5,7 @@ import sys
 import os
 
 from collections import OrderedDict
+from itertools import groupby
 from pymods.variables import Variable
 from html2text import html2text
 
@@ -41,7 +42,7 @@ def get_website():
     return _WEBSITE
 
 
-from pybtex.database import Entry, parse_file
+from pybtex.database import Entry, BibliographyData, parse_file
 class MyEntry(Entry):
     """https://bitbucket.org/pybtex-devs/pybtex/"""
 
@@ -89,11 +90,48 @@ class MyEntry(Entry):
             if not doi.startswith(doi_root): doi = doi_root + doi
             s += 'DOI: <a href={doi} target="_blank">{doi}</a>'.format(doi=doi)
 
+        # Add modal with bibtex entry.
+        link, modal = self.get_bibtex_linkmodal()
+        s += link + modal
+
         return s
 
     def to_html(self):
         import markdown
         return markdown.markdown(self.to_markdown())
+
+    def to_bibtex(self):
+        """Return the data as a unicode string in the given format."""
+        return BibliographyData({self.key: self}).to_string("bibtex")
+
+    def get_bibtex_linkmodal(self):
+        # https://v4-alpha.getbootstrap.com/components/modal/#examples
+        # TODO
+        from pymods.extensions.modal import gen_id, escape
+        #text = "<pre>" + escape(fh.read()) + "</pre>"
+        text = "<pre>" + escape(self.to_bibtex()) + "</pre>"
+        modal_id=gen_id()
+
+        link = """<!-- Links -->
+<a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
+
+        modal = """\
+<!-- Modal -->
+<div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="{modal_label_id}">bibtex</h4>
+      </div>
+      <div class="modal-body">
+        {text}
+      </div>
+    </div>
+  </div>
+</div>""".format(**locals(), modal_label_id=gen_id())
+
+        return link, modal
 
 
 class Website(object):
@@ -110,6 +148,7 @@ class Website(object):
         self.bib_data = parse_file(os.path.join(self.root, "abiref.bib"), bib_format="bibtex")
         for entry in self.bib_data.entries.values():
             entry.__class__ = MyEntry
+            #print(entry.to_bibtex())
 
         # Get code statistics
         self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
@@ -128,14 +167,14 @@ class Website(object):
                 tests.append(t)
         #if hasattr(test, "topics"): print(test.topics)
 
-        #self.inrpath2test = {os.path.relpath(t.inp_fname, self.root): t for t in tests}
-        #self.inrpath2test = {t.inp_fname: t for t in tests}
-        self.inrpath2test = {}
+        #self.rpath2test = {os.path.relpath(t.inp_fname, self.root): t for t in tests}
+        #self.rpath2test = {t.inp_fname: t for t in tests}
+        self.rpath2test = {}
         for t in tests:
             toks = splitall(t.inp_fname)[-4:]
             key = os.path.join(*toks)
-            self.inrpath2test[key] = t
-        #print(self.inrpath2test.keys())
+            self.rpath2test[key] = t
+        #print(self.rpath2test.keys())
 
         def test_get_varnames(test, varnames):
             """This should become a method of BaseTest."""
@@ -174,11 +213,11 @@ class Website(object):
         #occurrences in the input files provided with the package
         #This document lists the input variables for ABINIT and three post-processors of ABINIT,
         #in order of number of occurrence in the input files provided with the package.
-        from itertools import groupby
+
         with open(os.path.join(workdir, "varset_stats.md"), "wt") as fh:
             for code, vd in self.variables_code.items():
                 fh.write("\n\n# **%s** \n\n" % code)
-                num_tests = len([test for test in self.inrpath2test.values() if test.executable == code])
+                num_tests = len([test for test in self.rpath2test.values() if test.executable == code])
                 fh.write("%d tests\n\n" % num_tests)
                 # TODO The number of tests is smaller than ecut! Count Tutorial
                 # DSU sort
@@ -189,16 +228,33 @@ class Website(object):
 
         print("Generating Markdown file with bibliographic entries ...")
         with open(os.path.join(self.root, "bibliography.md"), "wt") as fh:
-            for name, entry in self.bib_data.entries.items():
-                lines = []
+            lines = []
+            for name in sorted(self.bib_data.entries.keys()):
+                entry = self.bib_data.entries[name]
                 lines.append("\n\n## **%s** \n\n" % name)
                 lines.append(entry.to_markdown())
                 lines.append("* * *")
-                fh.write("\n".join(lines))
+            fh.write("\n".join(lines))
 
         print("Generating Markdown files with topics ...")
+        # FIXME: this won't find all topics e.g AbiPy
+        workdir = os.path.join(self.root, "topics")
+
+        all_topics = set()
         for code, vd in self.variables_code.items():
-            # Get list of topics for this code.
+            for var in vd.values():
+                all_topics.update(var.topic_tribes.keys())
+        all_topics = sorted(all_topics)
+        index_md = ["Alphabetical list of topics"]
+        for firstchar, group in groupby(all_topics, key=lambda t: t[0]):
+            index_md.append("## *%s*" % firstchar)
+            index_md.extend("- [[topic:%s]]" % topic for topic in group)
+
+        with open(os.path.join(workdir, "index.md"), "wt") as fh:
+            fh.write("\n".join(index_md))
+
+        for code, vd in self.variables_code.items():
+            # Get list of topics for this `code`.
             topics = set()
             for var in vd.values():
                 topics.update(var.topic_tribes.keys())
@@ -209,19 +265,59 @@ class Website(object):
             for topic in sorted(topics):
                 with open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt") as fh:
                     tmpl = yaml.load(fh)[0]
-                    meta = """\
+                    front = """\
 ---
 authors: {}
 ---
 """.format(tmpl.authors)
 
-                    html = """
+                    introduction = html2text(tmpl.introduction)
+
+                    # Find variables associated to this topic
+                    # Group vlist by tribes and write list with links.
+                    # TODO: Can we have multiple tribes with the same topic?
+                    vlist = [var for var in vd.values() if topic in var.topic_tribes]
+                    related_variables = "No variable associated to this topic."
+                    if vlist:
+                        lines = []
+                        items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: t[0])
+                        #print([item[0] for item in items])
+                        for tribe, group in groupby(items, key=lambda t: t[0]):
+                            lines.append("*%s:*\n" % tribe)
+                            lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
+                            lines.append(" ")
+                        related_variables = "\n".join(lines)
+
+                    # Find tests associated to this `topic`
+                    # Group tests by `suite_name` and write list with links.
+                    items = [(rpath, test) for (rpath, test) in self.rpath2test.items()
+                             if topic in test.topics]
+                    selected_input_files = "No input file associated to this topic."
+                    if items:
+                        items = sorted(items, key=lambda t: t[1].suite_name)
+                        lines = []
+                        for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
+                            lines.append("*%s:*\n" % suite_name)
+                            lines.extend("- [[%s]]" % rpath for (rpath, test) in group)
+                            lines.append(" ")
+                        selected_input_files = "\n".join(lines)
+
+                    # Build front + markdown content and write md file.
+                    text = front + """
+## ** Introduction **
+
 {introduction}
 
-""".format(**tmpl.__dict__)
+## ** Related Input Variables **
 
-                text = meta + html2text(html)
-                workdir = os.path.join(self.root, "topics")
+{related_variables}
+
+## ** Selected Input Files **
+
+{selected_input_files}
+
+""".format(**locals())
+
                 with open(os.path.join(workdir, topic + ".md"), "wt") as fh:
                     fh.write(text)
 
@@ -249,7 +345,6 @@ authors: {}
         a.set("data-placement", "auto bottom")
         a.set("data-trigger", "hover")
         #a.set("data-content", "Some content inside the popover")
-        #a.set("data-content", str(ref))
         #a.set("data-content", ref.to_html())
         a.set('href', url)
         a.text = key

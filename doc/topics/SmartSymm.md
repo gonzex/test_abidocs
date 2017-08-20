@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 Sometimes, the user knows the space group of the system, the conventional cell
 vectors, as well as the positions of atoms in the asymmetric (irreducible)
 part of the cell. From such data, ABINIT can generate the usual primitive cell
@@ -17,4 +20,44 @@ The specification of a magnetic space group is even possible
 (antiferromagnetic). See [[spgroupma]] and [[genafm]].
 
 See also the [[topic_UnitCell]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:brvltt]]  BRaVais LaTTice type
+- [[abinit:natom]]  Number of ATOMs
+- [[abinit:natrd]]  Number of AToms ReaD
+- [[abinit:spgroup]]  SPace GROUP number
+ 
+*internal:*
+
+- [[abinit:ptgroupma]]  PoinT GROUP number for the MAgnetic space group
+ 
+*useful:*
+
+- [[abinit:chkprim]]  CHecK whether the cell is PRIMitive
+- [[abinit:genafm]]  GENerator of the translation for Anti-FerroMagnetic space group
+- [[abinit:spgaxor]]  SPace Group : AXes ORientation
+- [[abinit:spgorig]]  SPace Group : ORIGin
+- [[abinit:spgroupma]]  SPace GROUP number defining a MAgnetic space group
+ 
+
+## ** Selected Input Files **
+
+*v2:*
+
+- [[tests/v2/Input/t59.in]]
+- [[tests/v2/Input/t60.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t77.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t30.in]]
+ 
 

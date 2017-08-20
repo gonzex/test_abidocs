@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal  
-*Mentioned in topic(s):* Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -27,7 +27,7 @@ choice [[awtr]]=0.
 
 
 *Mnemonics:* BanDs for GW calculation  
-*Mentioned in topic(s):* GW_basic, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* (2,[[nkptgw]],[[nsppol]])  
 *Default value:* *0  
@@ -68,7 +68,7 @@ symmetries and energy degenerations are preserved.
 
 
 *Mnemonics:* Contour Deformation CUSTOM IMaginary FReQuencieS  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -92,7 +92,7 @@ are specified with [[cd_imfrqs]].
 
 
 *Mnemonics:* Contour Deformation FReQuency integration on IMaginary axis Method  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -195,7 +195,7 @@ frequency sections.
 
 
 *Mnemonics:* Contour Deformation FULL GRID in complex plane  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -238,7 +238,7 @@ the ** Mrgscr ** utility.
 
 
 *Mnemonics:* Contour Deformation tangent grid HALFWAY FREQuency  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100.0 eV  
@@ -263,7 +263,7 @@ approximately linear up to this point. To be used in conjunction with
 
 
 *Mnemonics:* Contour Deformation IMaginary FReQuencieS  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* ([[cd_customnimfrqs]])  
 *Default value:* None  
@@ -297,7 +297,7 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 
 
 *Mnemonics:* Contour Deformation grid MAXimum FREQuency  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1000.0 eV  
@@ -320,7 +320,7 @@ Test list:
 
 
 *Mnemonics:* Contour Deformation grid calculate SUBSET of FREQuencies  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, '[[nfreqre]]']  
@@ -354,7 +354,7 @@ merged with the ** mrgscr ** utility.
 
 
 *Mnemonics:* Energy CUT-off for EPSilon (the dielectric matrix)  
-*Mentioned in topic(s):* Susceptibility_compulsory, RandStopPow_compulsory  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:RandStopPow]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -379,7 +379,7 @@ gap). In any case, a convergence study is worth.
 
 
 *Mnemonics:* Energy CUT-off for SIGma eXchange  
-*Mentioned in topic(s):* SelfEnergy_compulsory  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -402,7 +402,7 @@ upper limits.
 
 
 *Mnemonics:* Energy CUT-off for WaveFunctioNs  
-*Mentioned in topic(s):* Susceptibility_compulsory, SelfEnergy_compulsory  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[ecut]] if [[optdriver]] in [3, 4],
@@ -431,7 +431,7 @@ The size of this set of planewaves is [[npwwfn]].
 
 
 *Mnemonics:* FFT for GW calculation  
-*Mentioned in topic(s):* GW_expert, Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 21  
@@ -481,7 +481,7 @@ The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 
 
 *Mnemonics:* FREQuencies along the IMaginary axis ALPHA parameter  
-*Mentioned in topic(s):* SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
@@ -511,7 +511,7 @@ description of the formula.
 
 
 *Mnemonics:* FREQuencies along the Real axis MAXimum  
-*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -533,7 +533,7 @@ frequency mesh along the real axis.
 
 
 *Mnemonics:* FREQuencies along the Real axis MINimum  
-*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -566,7 +566,7 @@ frequency mesh along the real axis.
 
 
 *Mnemonics:* FREQuencies for the SPectral function MAXimum  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -595,7 +595,7 @@ be used to make a user-defined grid.
 
 
 *Mnemonics:* FREQuencies for the SPectral function MINimum  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -[[freqspmax]]  
@@ -623,7 +623,7 @@ user-defined grid.
 
 
 *Mnemonics:* GW CUSTOM FREQuencies for SPectral function  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -649,7 +649,7 @@ specified with [[gw_freqsp]].
 
 
 *Mnemonics:* GW SPectral FREQuencies  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* ([[gw_customnfreqsp]])  
 *Default value:* [1 .. [[gw_customnfreqsp]]]  
@@ -685,7 +685,7 @@ If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 
 
 *Mnemonics:* GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -716,7 +716,7 @@ frequency.
 
 
 *Mnemonics:* GW Contour Deformation FReQuencies on REal axis Inverse Z Grid  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -755,7 +755,7 @@ during Contour Deformation sigma calculations.
 
 
 *Mnemonics:* GW Contour Deformation FReQencies on REal axis - Use Tangent Grid  
-*Mentioned in topic(s):* FrequencyMeshMBPT_expert  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -783,7 +783,7 @@ transformed grid.
 
 
 *Mnemonics:* GW treatment of INVALID FREQuency for Hybertsen-Louie PPM  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -810,7 +810,7 @@ invalid (negative or imaginary).
 
 
 *Mnemonics:* GW, Number of Q-points for the Long Wave-Length Limit  
-*Mentioned in topic(s):* GW_expert, BSE_expert, Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:BSE]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -857,7 +857,7 @@ vectors of the reciprocal lattice and the three Cartesian axis).
 
 
 *Mnemonics:* GW Number of self-consistent STEPs  
-*Mentioned in topic(s):* GW_basic  
+*Mentioned in topic(s):* [[topic:GW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
@@ -881,7 +881,7 @@ define the type of self-consistency.
 
 
 *Mnemonics:* GW, Q-points for the Long Wave-Length limit  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert, BSE_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]], [[topic:BSE]]  
 *Variable type:* real  
 *Dimensions:* (3,[[gw_nqlwl]])  
 *Default value:* [1e-05, 2e-05, 3e-05]  
@@ -906,7 +906,7 @@ effects) are evaluated for each direction specified by [[gw_qlwl]].
 
 
 *Mnemonics:* GW QuasiParticle RANGE policy  
-*Mentioned in topic(s):* SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -950,7 +950,7 @@ have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 
 
 *Mnemonics:* GW, Self-Consistency TYPE  
-*Mentioned in topic(s):* GW_basic  
+*Mentioned in topic(s):* [[topic:GW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -990,7 +990,7 @@ consistent iteration.
 
 
 *Mnemonics:* GW, SIGma (self-energy) for the CORE contribution  
-*Mentioned in topic(s):* SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1034,7 +1034,7 @@ contribution to sigma.
 
 
 *Mnemonics:* GW TOLerance on the DiFference of the EIGenvalues  
-*Mentioned in topic(s):* GW_basic  
+*Mentioned in topic(s):* [[topic:GW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1 eV  
@@ -1058,7 +1058,7 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 
 
 *Mnemonics:* GW CALCulation TYPe  
-*Mentioned in topic(s):* GW_basic, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1095,7 +1095,7 @@ Also
 
 
 *Mnemonics:* GW COMPleteness  
-*Mentioned in topic(s):* SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1126,7 +1126,7 @@ methodology.
 
 
 *Mnemonics:* GW ENergy for COMPleteness  
-*Mentioned in topic(s):* SelfEnergy_useful, Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:SelfEnergy]], [[topic:Susceptibility]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
@@ -1156,7 +1156,7 @@ the methodology.
 
 
 *Mnemonics:* GW FOCK exchange MIXing parameter  
-*Mentioned in topic(s):* GW_useful  
+*Mentioned in topic(s):* [[topic:GW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.25  
@@ -1180,7 +1180,7 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 
 
 *Mnemonics:* GW GAMMA  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1217,7 +1217,7 @@ kernel.
 
 
 *Mnemonics:* GWLS BAND INDEX  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1242,7 +1242,7 @@ to be corrected in the G0W0 scheme.
 
 
 *Mnemonics:* GWLS CORRELATION  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
@@ -1278,7 +1278,7 @@ removed.
 
 
 *Mnemonics:* GWLS dielectric model  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -1300,7 +1300,7 @@ Not used yet.
 
 
 *Mnemonics:* GWLS exact EXCHANGE  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1324,7 +1324,7 @@ Governs whether the exact exchange for the state to be corrected
 
 
 *Mnemonics:* GWLS FIRST SEED vector  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[gwls_band_index]]  
@@ -1356,7 +1356,7 @@ therefore keep the default value.
 
 
 *Mnemonics:* GWLS KMAX for the ANALYTIC term  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 8  
@@ -1381,7 +1381,7 @@ converged to a few 10s of meV for all molecules studied so far.
 
 
 *Mnemonics:* GWLS KMAX for the COMPLEMENT space.  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1417,7 +1417,7 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 
 
 *Mnemonics:* GWLS KMAX for the NUMERIC term  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 16  
@@ -1444,7 +1444,7 @@ converged to a few 10s of meV for all molecules studied so far.
 
 
 *Mnemonics:* GWLS KMAX for the calculation of the POLES residue  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
@@ -1478,7 +1478,7 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 
 
 *Mnemonics:* GWLS LIST of the PROJection FREQuencies  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* real  
 *Dimensions:* ([[gwls_n_proj_freq]])  
 *Default value:* *0.0  
@@ -1506,7 +1506,7 @@ frequency is to be used) is fine and no frequencies need to be picked up.
 
 
 *Mnemonics:* GWLS MODEL PARAMETER  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -1543,7 +1543,7 @@ optimal.
 
 
 *Mnemonics:* GWLS Number of PROJection FREQuencies  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1570,7 +1570,7 @@ the default ([[gwls_n_proj_freq]]==0) is fine.
 
 
 *Mnemonics:* GWLS Number of PoinTs to use for the GAUSSian QUADrature   
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
@@ -1594,7 +1594,7 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 
 
 *Mnemonics:* GWLS Number of SEED vectorS  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1619,7 +1619,7 @@ been tested for now and users should keep this value.
 
 
 *Mnemonics:* GWLS PRINT level for DEBUGging  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1642,7 +1642,7 @@ calculation. Users should keep its value at the default.
 
 
 *Mnemonics:* GWLS RECYCLE  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -1687,7 +1687,7 @@ construction of the basis.
 
 
 *Mnemonics:* GWLS Kmax  
-*Mentioned in topic(s):* GWls_expert  
+*Mentioned in topic(s):* [[topic:GWls]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1713,7 +1713,7 @@ criterion of 50meV on the eigenenergies.
 
 
 *Mnemonics:* GW MEMory  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 11  
@@ -1747,7 +1747,7 @@ The first digit is only meaningful when performing sigma calculations.
 
 
 *Mnemonics:* GW RPA CORRelation energy  
-*Mentioned in topic(s):* RPACorrEn_expert  
+*Mentioned in topic(s):* [[topic:RPACorrEn]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1773,7 +1773,7 @@ Test list:
 
 
 *Mnemonics:* Integer that governs the CUT-off for COULomb interaction  
-*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, Coulomb_useful, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:GWls]], [[topic:Susceptibility]], [[topic:Coulomb]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 6  
@@ -1817,7 +1817,7 @@ in the sphere is equal to the volume of the solid.
 
 
 *Mnemonics:* INCLude VKB  
-*Mentioned in topic(s):* Susceptibility_expert, BSE_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -1850,7 +1850,7 @@ optical properties.
 
 
 *Mnemonics:* K-PoinTs for GW calculations  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nkptgw]])  
 *Default value:* *0.0  
@@ -1874,7 +1874,7 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 
 
 *Mnemonics:* Many Body Perturbation Theory SCISSor operator  
-*Mentioned in topic(s):* GW_useful, Susceptibility_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1892,7 +1892,7 @@ it mimics a second iteration self-consistent GW calculation.
 
 
 *Mnemonics:* Model Dielectric Function, EPSilon INFinity  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -1912,7 +1912,7 @@ Eq. (7) of Phys. Rev. B **37**, (1988)
 
 
 *Mnemonics:* Number of BANDs in the KSS file  
-*Mentioned in topic(s):* GW_useful, Susceptibility_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1955,7 +1955,7 @@ in order to generate a _KSS file.
 
 
 *Mnemonics:* Number of FREQuencies along the IMaginary axis  
-*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1974,7 +1974,7 @@ self-energy.
 
 
 *Mnemonics:* Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix  
-*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -2002,7 +2002,7 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 
 
 *Mnemonics:* Number of FREQuencies along the REal axis  
-*Mentioned in topic(s):* FrequencyMeshMBPT_basic  
+*Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2034,7 +2034,7 @@ any ppmodel.
 
 
 *Mnemonics:* Number of FREQuencies for the SPectral function  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2061,7 +2061,7 @@ spectral function of the GW Green's function.
 
 
 *Mnemonics:* Number of K-PoinTs for GW corrections  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2079,7 +2079,7 @@ done. It is used to dimension [[kptgw]]
 
 
 *Mnemonics:* Number of OMEGA to evaluate the Spectral Function  
-*Mentioned in topic(s):* Susceptibility_basic  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2114,7 +2114,7 @@ kept in mind, however, that the memory required grows fast with the value of
 
 
 *Mnemonics:* Number of OMEGA(S) along the Imaginary axis  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 12  
@@ -2138,7 +2138,7 @@ interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 
 
 *Mnemonics:* Number of OMEGA to evaluate the Sigma Real axis Derivative  
-*Mentioned in topic(s):* SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 9  
@@ -2162,7 +2162,7 @@ energy is numerically estimated through linear interpolation.
 
 
 *Mnemonics:* Number of Particle VELocities  
-*Mentioned in topic(s):* RandStopPow_compulsory  
+*Mentioned in topic(s):* [[topic:RandStopPow]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2190,7 +2190,7 @@ proton.
 
 
 *Mnemonics:* Number of PlaneWaves in the KSS file  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2223,7 +2223,7 @@ k-points.
 
 
 *Mnemonics:* Number of Q-PoinTs for the Dielectric Matrix  
-*Mentioned in topic(s):* Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2253,7 +2253,7 @@ stops.
 
 
 *Mnemonics:* OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 50 eV  
@@ -2277,7 +2277,7 @@ employed to sample the self-energy along the imaginary axis.
 
 
 *Mnemonics:* OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0 eV  
@@ -2301,7 +2301,7 @@ sampled [[nomegasrd]] times.
 
 
 *Mnemonics:* Plasmon Pole Model FReQuency  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0 Ha  
@@ -2354,7 +2354,7 @@ details.
 
 
 *Mnemonics:* Plasmon Pole MODEL  
-*Mentioned in topic(s):* SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2388,7 +2388,7 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.
 
 
 *Mnemonics:* Particle VELocity MAXimum  
-*Mentioned in topic(s):* RandStopPow_basic  
+*Mentioned in topic(s):* [[topic:RandStopPow]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*1.0  
@@ -2413,7 +2413,7 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 
 
 *Mnemonics:* Q-PoinTs for the Dielectric Matrix  
-*Mentioned in topic(s):* Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nqptdm]])  
 *Default value:* *0.0  
@@ -2439,7 +2439,7 @@ cartesian coordinates!). For further explanation, see the input variable
 
 
 *Mnemonics:* Radius of the CUT-off for coulomb interaction  
-*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:GWls]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2459,7 +2459,7 @@ the same volume inside the cutoff as the volume of the primitive cell.
 
 
 *Mnemonics:* RHO QuasiParticle MIXing  
-*Mentioned in topic(s):* GW_useful  
+*Mentioned in topic(s):* [[topic:GW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -2487,7 +2487,7 @@ wavefunctions with [[gwcalctyp]] &gt;= 20\.
 
 
 *Mnemonics:* SPectral BROADening  
-*Mentioned in topic(s):* Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2512,7 +2512,7 @@ gaussian is given by [[spbroad]].
 
 
 *Mnemonics:* SPectral METHod  
-*Mentioned in topic(s):* Susceptibility_useful  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2566,7 +2566,7 @@ Summarizing:
 
 
 *Mnemonics:* SYMmetryze \chi_o  
-*Mentioned in topic(s):* Susceptibility_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2592,7 +2592,7 @@ between these two equivalent methods:
 
 
 *Mnemonics:* SYMmetrization of SIGMA matrix elements  
-*Mentioned in topic(s):* SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2623,7 +2623,7 @@ accidental degeneracy.
 
 
 *Mnemonics:* calculation of the screened interaction U with the Constrained RPA method  
-*Mentioned in topic(s):* CRPA_compulsory  
+*Mentioned in topic(s):* [[topic:CRPA]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2670,7 +2670,7 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 
 
 *Mnemonics:* For the calculation of U with the Constrained RPA method, gives correlated BANDS  
-*Mentioned in topic(s):* CRPA_basic  
+*Mentioned in topic(s):* [[topic:CRPA]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
@@ -2693,7 +2693,7 @@ polarisability.
 
 
 *Mnemonics:* For the calculation of U with the Constrained RPA method, gives energy WINDOW  
-*Mentioned in topic(s):* CRPA_basic  
+*Mentioned in topic(s):* [[topic:CRPA]]  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
@@ -2720,7 +2720,7 @@ numbers) with respect to the position of the Fermi level.
 
 
 *Mnemonics:* V (potential) CUT-off GEOmetry  
-*Mentioned in topic(s):* GWls_compulsory, Susceptibility_basic, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:GWls]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
@@ -2778,7 +2778,7 @@ defines ....
 
 
 *Mnemonics:* Z-CUT  
-*Mentioned in topic(s):* Susceptibility_expert, BSE_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:BSE]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0036749326  

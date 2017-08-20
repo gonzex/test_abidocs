@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* Acoustic Sum Rule  
-*Mentioned in topic(s):* DFPT_useful  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -27,7 +27,7 @@ Same meaning as the corresponding anaddb variable.
 
 
 *Mnemonics:* CHarge NEUTrality treatment   
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -49,7 +49,7 @@ charges. Same meaning as the corresponding anaddb variable.
 
 
 *Mnemonics:* Derivative DataBase: Number of Grid points for Q-PoinTs  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -73,7 +73,7 @@ the description of the [[getddb]] input variable.
 
 
 *Mnemonics:* Derivative DataBase: SHIFT of the Q-points   
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.0]  
@@ -96,7 +96,7 @@ variable. See [[shiftk]] for more information on the definition.
 
 
 *Mnemonics:* DIPole-DIPole interaction   
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -118,7 +118,7 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 
 
 *Mnemonics:* Electron-PHonon: EXTRA ELectrons  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -133,7 +133,7 @@ Test list:
 
 
 *Mnemonics:* Electron-PHonon: FERMI Energy  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -156,7 +156,7 @@ has effect only if set to a non-zero value. See also [[eph_extrael]].
 
 
 *Mnemonics:* Electron-Phonon: Fermi Surface Energy WINdow  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
@@ -183,7 +183,7 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 
 
 *Mnemonics:* Electron-PHonon: Fermi surface SMEARing  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
@@ -206,7 +206,7 @@ the Fermi surface when [[eph_intmeth]] == 1.
 
 
 *Mnemonics:* Electron-Phonon: INTegration METHod  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -233,7 +233,7 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 
 
 *Mnemonics:* Electron-PHonon : MU STAR (electron-electron interaction strength)  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1  
@@ -255,7 +255,7 @@ superconducting Tc using Mc-Millan's formula.
 
 
 *Mnemonics:* Electron-PHonon : Number of Grid Q-PoinTs in FINE grid.  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -284,7 +284,7 @@ DDB file (default behavior).
 
 
 *Mnemonics:* Electron-PHonon: TRANSPORT flag  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -307,7 +307,7 @@ corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 
 
 *Mnemonics:* PHonons: INTegration METHod  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -336,7 +336,7 @@ q-points in the BZ)
 
 
 *Mnemonics:* PHonons: Number of DIVisions for sampling the SMallest segment  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
@@ -361,7 +361,7 @@ specified by [[ph_qpath]].
 
 
 *Mnemonics:* PHonons: Number of Q-points defining the PATH  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -383,7 +383,7 @@ This integer defines the number of points in the [[ph_qpath]] array.
 
 
 *Mnemonics:* PHonons: Number of Q-SHIFTs  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -407,7 +407,7 @@ code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 
 
 *Mnemonics:* PHonons: Q-SHIFTs for mesh.  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* (3,ph_nqshift)  
 *Default value:* [0, 0, 0]  
@@ -432,7 +432,7 @@ given, a Gamma-centered mesh is used.
 
 
 *Mnemonics:* PHonons: SMEARing factor  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.00002 Hartree  
@@ -456,7 +456,7 @@ Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 
 
 *Mnemonics:* PHonons: frequency(W)  STEP.  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1 meV  
@@ -480,7 +480,7 @@ the code.
 
 
 *Mnemonics:* PRinT PHonon BANDS  
-*Mentioned in topic(s):* printing_prngs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -506,7 +506,7 @@ Possible values:
 
 
 *Mnemonics:* PRinT the PHonon Density Of States  
-*Mentioned in topic(s):* printing_prngs, ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -528,7 +528,7 @@ Print the phonon density of states. It is activated by default when
 
 
 *Mnemonics:* PRinT PHonon iso-SURFace  
-*Mentioned in topic(s):* printing_prngs, ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -553,7 +553,7 @@ not supported by Xcrysden. This variable requires [[optdriver]]==7.
 
 
 *Mnemonics:* SYMmetrize the DYNamical MATrix  
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  

@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 ABINIT has some (non-graphical) capabilities to manipulate atoms and group of
 atoms, to help establishing the set of atomic positions in the input file when
 big cells are considered.
@@ -12,4 +15,43 @@ as entry point.
 
 The related input variables being used for preprocessing of the input file,
 they are not echoed in the output file ([[NO_INTERNAL]] characteristics).
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:natrd]]  Number of AToms ReaD
+- [[abinit:objaat]]  OBJect A : list of AToms
+- [[abinit:objan]]  OBJect A : Number of atoms
+- [[abinit:objarf]]  OBJect A : Repetition Factors
+ 
+*compulsory:*
+
+- [[abinit:nobj]]  Number of OBJects
+ 
+*useful:*
+
+- [[abinit:objaax]]  OBJect A : AXis
+- [[abinit:objaro]]  OBJect A : ROtations
+- [[abinit:objatr]]  OBJect A : TRanslations
+- [[abinit:objbat]]  OBJect B : list of AToms
+- [[abinit:objbax]]  OBJect B : AXis
+- [[abinit:objbn]]  OBJect B : Number of atoms
+- [[abinit:objbrf]]  OBJect B : Repetition Factors
+- [[abinit:objbro]]  OBJect B : ROtations
+- [[abinit:objbtr]]  OBJect B : TRanslations
+- [[abinit:vaclst]]  VACancies LiST
+- [[abinit:vacnum]]  VACancies NUMber
+ 
+
+## ** Selected Input Files **
+
+*v1:*
+
+- [[tests/v1/Input/t40.in]]
+- [[tests/v1/Input/t42.in]]
+- [[tests/v1/Input/t43.in]]
+ 
 

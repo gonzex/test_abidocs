@@ -1,9 +1,89 @@
 ---
 authors: PCasek,FF,XG
 ---
+
+## ** Introduction **
+
 The postprocessor of ABINIT, called AIM (Atom-In-Molecule), performs the Bader
 analysis on the basis of the charge density, norm-conserving pseudopotential
 cases only, complemented by the core charge densities provided in
 [[http://www.abinit.org/downloads/core_electron]]. There is a specific
 [[help_aim]] for this ABINIT postprocessor.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[aim:atom]]  index of ATOM
+- [[aim:nphi]]  Number of PHI angle
+- [[aim:ntheta]]  Number of THETA angles
+- [[aim:phimax]]  PHI MAXimal angle
+- [[aim:thetamax]]  THETA MAXimal angle
+ 
+*compulsory:*
+
+- [[aim:crit]]  computation of CRITical points
+- [[aim:denout]]  electronic DENsity OUTput
+- [[aim:dltyp]]  Density or Laplacian TYP output
+- [[aim:follow]]  FOLLOW the gradient path
+- [[aim:gpsurf]]  GraPhic output for the bader SURFace
+- [[aim:irho]]  Integration of the charge density RHO
+- [[aim:ivol]]  Integration of the VOLume
+- [[aim:lapout]]  electronic density LAPlacian OUTput
+- [[aim:rsurf]]  computation of the Radius bader SURFace
+- [[aim:surf]]  computation of the bader SURFace
+ 
+*expert:*
+
+- [[aim:atrad]]  bader ATomic RADius
+- [[aim:coff1]]  COeFFicient 1
+- [[aim:coff2]]  COeFFicient 2
+- [[aim:foldep]]  FOLlow DEParture
+- [[aim:folstp]]  FOLlow STeP
+- [[aim:inpt]]  numer of INtegration PoinTs
+- [[aim:ngrid]]  Number of GRID points
+- [[aim:nsa]]  Number of Supercell points in direction A
+- [[aim:nsb]]  Number of Supercell points in direction B
+- [[aim:nsc]]  Number of Supercell points in direction C
+- [[aim:phimin]]  PHI MINimal angle
+- [[aim:radstp]]  RADial STeP
+- [[aim:ratmin]]  Radius Atomic MINimal
+- [[aim:rsurdir]]  Radius SURface DIRection
+- [[aim:scal]]  SCALing of the cartesian coordinates
+- [[aim:thetamin]]  THETA MINimal angle
+ 
+*useful:*
+
+- [[aim:dpclim]]  DPCLIM
+- [[aim:lgrad]]  Low GRADient criterion
+- [[aim:lgrad2]]  Low GRADient criterion 2
+- [[aim:lstep]]  Length of the planned search STEP
+- [[aim:lstep2]]  Length of the planned search STEP 2
+- [[aim:maxatd]]  MAXimal ATomic Distance
+- [[aim:maxcpd]]  MAXimal CP Distance
+- [[aim:vpts]]  Vectors defining the PoinTS of the surface
+ 
+
+## ** Selected Input Files **
+
+*v3:*
+
+- [[tests/v3/Input/t56.in]]
+- [[tests/v3/Input/t57.in]]
+ 
+*v4:*
+
+- [[tests/v4/Input/t30.in]]
+- [[tests/v4/Input/t31.in]]
+- [[tests/v4/Input/t32.in]]
+- [[tests/v4/Input/t33.in]]
+- [[tests/v4/Input/t34.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t18.in]]
+- [[tests/v6/Input/t19.in]]
+ 
 

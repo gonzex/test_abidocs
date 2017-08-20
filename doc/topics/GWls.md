@@ -1,6 +1,9 @@
 ---
 authors: JL
 ---
+
+## ** Introduction **
+
 ** This functionality is not in production.**
 
 A high performance G0W0 implementation [[Janssen2015]] has been developed
@@ -37,4 +40,47 @@ results. Since only molecular systems are currently supported, the calculation
 also requires that the Coulomb potential be spherically truncated
 ([[icutcoul]]= 0) with a radius [[rcut]] that should be validated with a
 convergence study.
+
+
+
+## ** Related Input Variables **
+
+*compulsory:*
+
+- [[abinit:icutcoul]]  Integer that governs the CUT-off for COULomb interaction
+- [[abinit:optdriver]]  OPTions for the DRIVER
+- [[abinit:rcut]]  Radius of the CUT-off for coulomb interaction
+- [[abinit:vcutgeo]]  V (potential) CUT-off GEOmetry
+ 
+*expert:*
+
+- [[abinit:gwls_band_index]]  GWLS BAND INDEX
+- [[abinit:gwls_correlation]]  GWLS CORRELATION
+- [[abinit:gwls_diel_model]]  GWLS dielectric model
+- [[abinit:gwls_exchange]]  GWLS exact EXCHANGE
+- [[abinit:gwls_first_seed]]  GWLS FIRST SEED vector
+- [[abinit:gwls_kmax_analytic]]  GWLS KMAX for the ANALYTIC term
+- [[abinit:gwls_kmax_complement]]  GWLS KMAX for the COMPLEMENT space.
+- [[abinit:gwls_kmax_numeric]]  GWLS KMAX for the NUMERIC term
+- [[abinit:gwls_kmax_poles]]  GWLS KMAX for the calculation of the POLES residue
+- [[abinit:gwls_list_proj_freq]]  GWLS LIST of the PROJection FREQuencies
+- [[abinit:gwls_model_parameter]]  GWLS MODEL PARAMETER
+- [[abinit:gwls_n_proj_freq]]  GWLS Number of PROJection FREQuencies
+- [[abinit:gwls_npt_gauss_quad]]  GWLS Number of PoinTs to use for the GAUSSian QUADrature 
+- [[abinit:gwls_nseeds]]  GWLS Number of SEED vectorS
+- [[abinit:gwls_print_debug]]  GWLS PRINT level for DEBUGging
+- [[abinit:gwls_recycle]]  GWLS RECYCLE
+- [[abinit:gwls_stern_kmax]]  GWLS Kmax
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t77.in]]
+ 
+*v67mbpt:*
+
+- [[tests/v67mbpt/Input/t15.in]]
+ 
 

@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* K-PoinTs re-Normalized and Shifted  
-*Mentioned in topic(s):* k-points_internal  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* None  
@@ -28,7 +28,7 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 
 
 *Mnemonics:* Maximum number of BANDs  
-*Mentioned in topic(s):* BandOcc_internal  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -49,7 +49,7 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 
 
 *Mnemonics:* Maximum of nGFFT  
-*Mentioned in topic(s):* Planewaves_internal  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -69,7 +69,7 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 
 
 *Mnemonics:* Maximum of nGFFT for the Double Grid  
-*Mentioned in topic(s):* Planewaves_internal  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -89,7 +89,7 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 
 
 *Mnemonics:* Maximum number of Plane Waves  
-*Mentioned in topic(s):* Planewaves_internal  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -111,7 +111,7 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 
 
 *Mnemonics:* Number of AToms on which PAW+U is applied  
-*Mentioned in topic(s):* DFT+U_internal  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -133,7 +133,7 @@ is applied. This value is determined from [[lpawu]].
 
 
 *Mnemonics:* Number of DYNamical IMAGEs  
-*Mentioned in topic(s):* PIMD_internal  
+*Mentioned in topic(s):* [[topic:PIMD]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -156,7 +156,7 @@ wavefunction array (cg), the density array (rho), etc .
 
 
 *Mnemonics:* Number of ELECTrons  
-*Mentioned in topic(s):* BandOcc_internal  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
@@ -180,7 +180,7 @@ the pseudopotential, where it is called "zion"), and the input variable
 
 
 *Mnemonics:* Number of FFT points  
-*Mentioned in topic(s):* Planewaves_internal  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -208,7 +208,7 @@ which the space is shared.
 
 
 *Mnemonics:* Number of FFT points for the Double Grid  
-*Mentioned in topic(s):* Planewaves_internal  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -236,7 +236,7 @@ which the space is shared.
 
 
 *Mnemonics:* Number of PlaneWaves for EPSilon (the dielectric matrix)  
-*Mentioned in topic(s):* Susceptibility_internal  
+*Mentioned in topic(s):* [[topic:Susceptibility]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -259,7 +259,7 @@ It is an internal variable, determined from [[ecuteps]].
 
 
 *Mnemonics:* Number of PlaneWaves for SIGma eXchange  
-*Mentioned in topic(s):* SelfEnergy_internal  
+*Mentioned in topic(s):* [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -281,7 +281,7 @@ It is an internal variable, determed from [[ecutsigx]].
 
 
 *Mnemonics:* Number of PlaneWaves for WaveFunctioNs  
-*Mentioned in topic(s):* Susceptibility_internal, SelfEnergy_internal  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -304,7 +304,7 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 
 
 *Mnemonics:* Q-PoinT re-Normalized  
-*Mentioned in topic(s):*  DFPT_internal  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
@@ -342,7 +342,7 @@ code).
 
 
 *Mnemonics:* USE FOCK exact exchange  
-*Mentioned in topic(s):* Hybrids_internal  
+*Mentioned in topic(s):* [[topic:Hybrids]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -366,7 +366,7 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 
 
 *Mnemonics:* USE Projector Augmented Waves method  
-*Mentioned in topic(s):* PAW_internal  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
@@ -386,7 +386,7 @@ available with either type of calculation.
 
 
 *Mnemonics:* USE RECursion  
-*Mentioned in topic(s):* Recursion_internal  
+*Mentioned in topic(s):* [[topic:Recursion]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -407,7 +407,7 @@ This internal variable is set to 1 when the recursion method is activated (see
 
 
 *Mnemonics:* eXchange Correlation functional LEVEL  
-*Mentioned in topic(s):* xc_internal, TDDFT_useful  
+*Mentioned in topic(s):* [[topic:xc]], [[topic:TDDFT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -432,7 +432,7 @@ Automatically determined from the value of [[ixc]].
 
 
 *Mnemonics:* Z (charge) of the IONs for the different TYPes of AToms  
-*Mentioned in topic(s):* AtomTypes_internal, PseudosPAW_internal  
+*Mentioned in topic(s):* [[topic:AtomTypes]], [[topic:PseudosPAW]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[AUTO_FROM_PSP]]  

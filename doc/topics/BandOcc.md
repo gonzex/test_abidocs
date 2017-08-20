@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
   
 Metallic as well as insulating systems can be treated, depending on the value
 of [[occopt]]. The default value of [[occopt]] corresponds to an insulator (or
@@ -22,4 +25,40 @@ Finite temperatures can also be treated thanks to a smearing scheme
 It is possible to define manually the number of bands (input variable
 [[nband]]) as well as the occupation numbers (input variable [[occ]]). This
 might be useful to perform a Δ-SCF calculation for excited states.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:nband]]  Number of BANDs
+- [[abinit:occ]]  OCCupation numbers
+- [[abinit:occopt]]  OCCupation OPTion
+- [[abinit:tsmear]]  Temperature of SMEARing
+ 
+*internal:*
+
+- [[abinit:mband]]  Maximum number of BANDs
+- [[abinit:nelect]]  Number of ELECTrons
+ 
+*useful:*
+
+- [[abinit:fband]]  Factor for the number of BANDs
+- [[abinit:nbdbuf]]  Number of BanDs for the BUFfer
+- [[abinit:tphysel]]  Temperature (PHYSical) of the ELectrons
+ 
+
+## ** Selected Input Files **
+
+*v1:*
+
+- [[tests/v1/Input/t02.in]]
+- [[tests/v1/Input/t04.in]]
+ 
+*v2:*
+
+- [[tests/v2/Input/t45.in]]
+- [[tests/v2/Input/t46.in]]
+ 
 

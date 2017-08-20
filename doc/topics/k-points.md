@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 Since ABINIT is based on periodic boundary conditions, every wavefunction is
 characterized by a wavevector, usually denoted k-point.
 
@@ -53,4 +56,53 @@ beyond 500 for metals, depending on the value of the input variable tsmear. As
 soon as there is some vacuum in the system, the product natom * nkpt can be
 much smaller than this (for an isolated molecule in a sufficiently large
 supercell, one k-point is enough).
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:chksymbreak]]  CHecK SYMmetry BREAKing
+- [[abinit:kptopt]]  KPoinTs OPTion
+- [[abinit:ngkpt]]  Number of Grid points for K PoinTs generation
+ 
+*expert:*
+
+- [[abinit:vacuum]]  VACUUM identification
+- [[abinit:vacwidth]]  VACuum WIDTH
+ 
+*internal:*
+
+- [[abinit:kptns]]  K-PoinTs re-Normalized and Shifted
+ 
+*useful:*
+
+- [[abinit:istwfk]]  Integer for choice of STorage of WaveFunction at each k point
+- [[abinit:kpt]]  K - PoinTs
+- [[abinit:kptbounds]]  K PoinT BOUNDarieS
+- [[abinit:kptnrm]]  K - PoinTs NoRMalization
+- [[abinit:kptrlatt]]  K - PoinTs grid : Real space LATTice
+- [[abinit:kptrlen]]  K - PoinTs grid : Real space LENgth
+- [[abinit:ndivk]]  Number of DIVisions of K lines
+- [[abinit:ndivsm]]  Number of DIVisions for the SMallest segment
+- [[abinit:nkpath]]  Number of K-points defining the PATH
+- [[abinit:nkpt]]  Number of K - Points
+- [[abinit:nshiftk]]  Number of SHIFTs for K point grids
+- [[abinit:prtkpt]]  PRinT the K-PoinTs sets
+- [[abinit:shiftk]]  SHIFT for K points
+- [[abinit:wtk]]  WeighTs for K points
+ 
+
+## ** Selected Input Files **
+
+*v2:*
+
+- [[tests/v2/Input/t43.in]]
+- [[tests/v2/Input/t44.in]]
+- [[tests/v2/Input/t61.in]]
+- [[tests/v2/Input/t62.in]]
+- [[tests/v2/Input/t63.in]]
+- [[tests/v2/Input/t64.in]]
+ 
 

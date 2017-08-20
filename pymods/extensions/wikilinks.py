@@ -98,13 +98,19 @@ class WikiLinks(Pattern):
                     # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
                     var = website.variables_code[namespace][value]
                     url = "/input_variables/%s/#%s" % (var.varset, var.name)
-                    if text is None: text = var.name
+                    if text is None:
+                        text = var.name if not var.is_internal else "%%s" % var.name
 
                 elif namespace == "lesson":
                     url = "/tutorials/%s" % value
 
+                elif namespace == "help":
+                    url = "/user-guide/help_%s" % value
+                    #text = value
+
                 elif namespace == "topic":
                     url = "/topics/%s" % value
+                    text = value
 
                 #elif namespace == "input"
                 #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
@@ -120,9 +126,9 @@ class WikiLinks(Pattern):
                 #print("In tests/ with token:", token)
                 url = "/" + token
                 # Add popover with test description if input file.
-                if token in website.inrpath2test:
+                if token in website.rpath2test:
                     a.set("data-toggle", "popover")
-                    a.set("title", website.inrpath2test[token].description)
+                    a.set("title", website.rpath2test[token].description)
                     a.set("data-placement", "auto bottom")
                     a.set("data-trigger", "hover")
 

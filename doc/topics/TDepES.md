@@ -1,6 +1,9 @@
 ---
 authors: SP
 ---
+
+## ** Introduction **
+
 The electronic structure changes with temperature. In most materials, such
 changes are mainly driven by the electron-phonon interaction, which is also
 present at zero Kelvin, inducing the so-called zero-point motion
@@ -56,4 +59,56 @@ ABINIT to compute temperature-dependent optical properties for example.
 
 For the temperature dependence of the Fermi energy, see
 [[topic_ElPhonTransport]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:bdeigrf]]  BanD for second-order EIGenvalues from Response-Function
+- [[abinit:elph2_imagden]]  ELectron-PHonon interaction at 2nd order : IMAGinary shift of the DENominator
+ 
+*compulsory:*
+
+- [[abinit:ieig2rf]]  Integer for second-order EIGenvalues from Response-Function
+- [[abinit:smdelta]]  SMeared DELTA function
+ 
+*useful:*
+
+- [[abinit:esmear]]  Eigenvalue SMEARing
+- [[abinit:getddb]]  GET the DDB from ...
+- [[abinit:getgam_eig2nkq]]  GET the GAMma phonon data EIG2NKQ from dataset
+- [[abinit:getwfkfine]]  GET the fine grid wavefunctions from _WFK file
+- [[abinit:irdwfkfine]]  Integer that governs the ReaDing of the grid _WFK file on the FINE grid
+ 
+
+## ** Selected Input Files **
+
+*v5:*
+
+- [[tests/v5/Input/t28.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t37.in]]
+- [[tests/v6/Input/t40.in]]
+- [[tests/v6/Input/t50.in]]
+- [[tests/v6/Input/t53.in]]
+- [[tests/v6/Input/t57.in]]
+- [[tests/v6/Input/t59.in]]
+- [[tests/v6/Input/t69.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t50.in]]
+- [[tests/v7/Input/t51.in]]
+- [[tests/v7/Input/t52.in]]
+- [[tests/v7/Input/t53.in]]
+- [[tests/v7/Input/t54.in]]
+- [[tests/v7/Input/t55.in]]
+- [[tests/v7/Input/t57.in]]
+- [[tests/v7/Input/t58.in]]
+- [[tests/v7/Input/t59.in]]
+ 
 

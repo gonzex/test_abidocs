@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 Hellman-Feynman forces are computed from an analytical formula, and
 corresponds exactly to the limit of finite differences of energy for
 infinitesimally small atomic displacements when the ground-state calculation
@@ -23,4 +26,28 @@ The computation of forces and stresses is optional, see [[optforces]] and
 [[tolrff]]) or geometry optimization stopping criteria ([[tolmxf]]). For the
 geometry optimization, combined cell shape and atomic position optimization
 need a conversion scale, set by [[strprecon]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:optforces]]  OPTions for the calculation of FORCES
+- [[abinit:optstress]]  OPTion for the computation of STRESS
+- [[abinit:toldff]]  TOLerance on the DiFference of Forces
+- [[abinit:tolrff]]  TOLerance on the Relative diFference of Forces
+ 
+*useful:*
+
+- [[abinit:strprecon]]  STRess PRECONditioner
+- [[abinit:strtarget]]  STRess TARGET
+ 
+
+## ** Selected Input Files **
+
+*v2:*
+
+- [[tests/v2/Input/t50.in]]
+ 
 

@@ -1,6 +1,9 @@
 ---
 authors: EB
 ---
+
+## ** Introduction **
+
 A complementary magnetic constraint method has been implemented in the ABINIT
 code, wherein the magnetization around each atom is pushed to a desired
 (vectorial) value. The constraint can either be on the full vector quantity,
@@ -40,4 +43,23 @@ corresponding Lagrange penalty term is added to the total energy, and is
 printed to the log file, along with the effective magnetic field being
 applied. In an ideal case the energy penalty term should go to 0 (the
 constraint is fully satisfied).
+
+
+
+## ** Related Input Variables **
+
+*useful:*
+
+- [[abinit:magcon_lambda]]  MAGnetization CONstraint LAMBDA parameter
+- [[abinit:magconon]]  turn MAGnetization CONstraint ON
+- [[abinit:ratsph]]  Radii of the ATomic SPHere(s)
+- [[abinit:spinat]]  SPIN for AToms
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t05.in]]
+ 
 

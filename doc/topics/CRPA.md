@@ -1,6 +1,9 @@
 ---
 authors: BAmadon
 ---
+
+## ** Introduction **
+
 LDA+U as well as DFT+DMFT requires as input values the effective Coulomb
 interaction. Two ways to compute them are available in ABINIT.
 
@@ -26,4 +29,29 @@ implementation is not yet in production. The implementation in ABINIT takes
 into account the truncated atomic orbitals from PAW and therefore differs from
 the original work [[Cococcioni2005]] treating full atomic orbitals. In
 particular, considerably higher effective values for U are found.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:ucrpa_bands]]  For the calculation of U with the Constrained RPA method, gives correlated BANDS
+- [[abinit:ucrpa_window]]  For the calculation of U with the Constrained RPA method, gives energy WINDOW
+ 
+*compulsory:*
+
+- [[abinit:ucrpa]]  calculation of the screened interaction U with the Constrained RPA method
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t23.in]]
+- [[tests/v7/Input/t24.in]]
+- [[tests/v7/Input/t25.in]]
+- [[tests/v7/Input/t78.in]]
+- [[tests/v7/Input/t79.in]]
+ 
 

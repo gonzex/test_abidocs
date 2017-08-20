@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* GET the first-order density from _1DEN file  
-*Mentioned in topic(s):* nonlinear_useful, ElPhonInt_useful  
+*Mentioned in topic(s):* [[topic:nonlinear]], [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -32,7 +32,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the first-order wavefunctions from _1WF file   
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -87,7 +87,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the Bethe-Salpeter COUPling block from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -121,7 +121,7 @@ from a disk file, so that it is as if [[getbscoup]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the Bethe-Salpeter EIGenstates from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -156,7 +156,7 @@ from a disk file, so that it is as if [[getbseig]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the Bethe-Salpeter RESOnant block from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -191,7 +191,7 @@ from a disk file, so that it is as if [[getbsreso]]=0 for that initialisation.
 
 
 *Mnemonics:* GET the DDB from ...  
-*Mentioned in topic(s):* ElPhonInt_expert, TDepES_useful  
+*Mentioned in topic(s):* [[topic:ElPhonInt]], [[topic:TDepES]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -238,7 +238,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the DDK wavefunctions from _1WF file  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -293,7 +293,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the DENsity from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -341,7 +341,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the HAYDOCK restart file from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -374,7 +374,7 @@ initialisation.
 
 
 *Mnemonics:* GET OCC parameters from ...  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -425,7 +425,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET QuasiParticle Structure  
-*Mentioned in topic(s):* multidtset_useful, GW_useful, Susceptibility_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:multidtset]], [[topic:GW]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -455,7 +455,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET SCReening (the inverse dielectric matrix) from ...  
-*Mentioned in topic(s):* multidtset_useful, GW_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:multidtset]], [[topic:GW]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -494,7 +494,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET SUSCEPtibility (the irreducible polarizability) from ...  
-*Mentioned in topic(s):* multidtset_useful, GW_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:multidtset]], [[topic:GW]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -547,7 +547,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the wavefunctions from _WFK file   
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -602,7 +602,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* GET the wavefunctions from _WFQ file   
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -657,7 +657,7 @@ refers to dataset 2 when dataset 4 is initialized.
 
 
 *Mnemonics:* Integer that governs the ReaDing of 1st-order DEN file  
-*Mentioned in topic(s):* nonlinear_useful  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
@@ -689,7 +689,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of _1WF files   
-*Mentioned in topic(s):* DFPT_useful  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -732,7 +732,7 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of COUPling block  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -753,7 +753,7 @@ block produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of BS_EIG file  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -775,7 +775,7 @@ eigenvectors produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of RESOnant block  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -797,7 +797,7 @@ block produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of DDB file  
-*Mentioned in topic(s):* ElPhonInt_useful  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
@@ -832,7 +832,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of DDK wavefunctions, in _1WF files  
-*Mentioned in topic(s):* DFPT_useful  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -875,7 +875,7 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of DEN file  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[iscf]] < 0,
@@ -907,7 +907,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of the HAYDOCK restart file  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -928,7 +928,7 @@ produced in a previous run.
 
 
 *Mnemonics:* Integer that governs the ReaDing of QuasiParticle Structure  
-*Mentioned in topic(s):* GW_useful, multidtset_useful, Susceptibility_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:multidtset]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -952,7 +952,7 @@ achieve a self-consistent quasiparticle calculations. See also [[getqps]]
 
 
 *Mnemonics:* Integer that governs the ReaDing of the SCReening  
-*Mentioned in topic(s):* GW_useful, multidtset_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:multidtset]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -984,7 +984,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of the SUSCEPtibility  
-*Mentioned in topic(s):* GW_useful, multidtset_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:GW]], [[topic:multidtset]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1013,7 +1013,7 @@ variables, see the [ section 4
 
 
 *Mnemonics:* Integer that governs the ReaDing of _WFK files  
-*Mentioned in topic(s):* multidtset_useful  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1050,7 +1050,7 @@ Response-function calculation :
 
 
 *Mnemonics:* Integer that governs the ReaDing of _WFQ files  
-*Mentioned in topic(s):* DFPT_useful  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1093,7 +1093,7 @@ Response-function calculation :
 
 
 *Mnemonics:* Kohn Sham Structure file FORMat  
-*Mentioned in topic(s):* Susceptibility_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1123,7 +1123,7 @@ k-points.
 
 
 *Mnemonics:* PRinT 1-DiMensional potential and density  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1148,7 +1148,7 @@ density on bi-dimensional slices of the FFT grid.
 
 
 *Mnemonics:* PRinT the DENsity  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]]>1,
@@ -1226,7 +1226,7 @@ to another, use the _DEN file for that.
 
 
 *Mnemonics:* PRinT the Density Of States  
-*Mentioned in topic(s):* printing_prdos, ElecDOS_basic  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1313,7 +1313,7 @@ tetrahedron method (as [[prtdos]]=2).
 
 
 *Mnemonics:* PRinT the Density Of States with M decomposition  
-*Mentioned in topic(s):* printing_prdos, ElecDOS_basic  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1342,7 +1342,7 @@ spherical harmonics in the same basis as the LDA+U occupation matrix.
 
 
 *Mnemonics:* PRinT EIGenenergies  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]] > 1,
@@ -1361,7 +1361,7 @@ eigenvalues is printed.
 
 
 *Mnemonics:* PRinT Electron Localization Function (ELF)  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1403,7 +1403,7 @@ Please note that ELF is ** not ** yet implemented in the case of PAW
 
 
 *Mnemonics:* PRinT Fermi SURFace file  
-*Mentioned in topic(s):* printing_prfermi  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1437,7 +1437,7 @@ Xcrysden)
 
 
 *Mnemonics:* PRinT the Gradient of electron DENsity  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1466,7 +1466,7 @@ unformatted output file is described below, see section 6).
 
 
 *Mnemonics:* PRinT the GEOmetry analysis  
-*Mentioned in topic(s):* printing_prgeo  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1506,7 +1506,7 @@ If [[prtgeo]]&gt;0, the maximum number of atoms ([[natom]]) is 9999.
 
 
 *Mnemonics:* PRinT the GKK matrix elements file  
-*Mentioned in topic(s):* printing_prngs, ElPhonInt_compulsory  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1535,7 +1535,7 @@ electron-phonon treatment in ABINIT is given in the tutorial
 
 
 *Mnemonics:* PRinT the GSR file  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* prtgsr = 0  
@@ -1561,7 +1561,7 @@ Note that, by default, the GSR file contains the electronic density unless
 
 
 *Mnemonics:* PRinT the Kinetic energy DENsity  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1596,7 +1596,7 @@ case of PAW ([[usepaw]]=1) calculations.
 
 
 *Mnemonics:* PRinT the K-PoinTs sets  
-*Mentioned in topic(s):* printing_prden, Output_useful, k-points_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:Output]], [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1636,7 +1636,7 @@ corresponding weights is produced
 
 
 *Mnemonics:* PRinT the Laplacian of electron DENsity  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1665,7 +1665,7 @@ unformatted output file is described below (see [ section 6
 
 
 *Mnemonics:* PRinT total POTential  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1695,7 +1695,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRint the PSPS file  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1719,7 +1719,7 @@ exit after the output of the PSPS.nc file.
 
 
 *Mnemonics:* PRinT the SPin CURrent density  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1743,7 +1743,7 @@ yet.
 
 
 *Mnemonics:* PRinT the STM density  
-*Mentioned in topic(s):* printing_prgs, STM_compulsory  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:STM]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1801,7 +1801,7 @@ No other printing variables for density or potentials should be activated
 
 
 *Mnemonics:* PRinT the SUSCEPtibility file (the irreducible polarizability)  
-*Mentioned in topic(s):* printing_prngs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1825,7 +1825,7 @@ only the _SCR file will be output.
 
 
 *Mnemonics:* PRinT V CouLoMB  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1853,7 +1853,7 @@ If **prtvclmb=2**, only the smooth part of the Coulomb potential is output.
 
 
 *Mnemonics:* PRinT V_HArtree  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1890,7 +1890,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT V_HXC  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1929,7 +1929,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT VOLume  
-*Mentioned in topic(s):* printing_prgs, Output_basic  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:Output]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1974,7 +1974,7 @@ This debugging feature is not yet activated in the RF routines. Note that
 
 
 *Mnemonics:* PRinT VOLume for IMaGes  
-*Mentioned in topic(s):* printing_prgs, Output_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:Output]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2005,7 +2005,7 @@ total energy and convergence residuals only.
 
 
 *Mnemonics:* PRinT V_PSeudoPotential  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2040,7 +2040,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT V_XC  
-*Mentioned in topic(s):* printing_prpot  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2077,7 +2077,7 @@ The file structure of this unformatted output file is described in [ section
 
 
 *Mnemonics:* PRinT WANT file  
-*Mentioned in topic(s):* printing_prgs, Wannier_compulsory  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:Wannier]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2158,7 +2158,7 @@ Additional Notes:
 
 
 *Mnemonics:* PRinT the WaveFunction  
-*Mentioned in topic(s):* printing_prden, vdw_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:vdw]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]] > 1,
@@ -2259,7 +2259,7 @@ probably something set wrong in the input file.
 
 
 *Mnemonics:* PRinT Wavefunction file on the FULL mesh  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2287,7 +2287,7 @@ greater than 3.
 
 
 *Mnemonics:* PRinT an XML output  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  

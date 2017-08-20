@@ -1,6 +1,9 @@
 ---
 authors: XG
 ---
+
+## ** Introduction **
+
 ABINIT can read many different types of norm-conserving pseudopotentials and
 PAW atomic data. The names of the files to be used in an ABINIT run are to be
 provided in the [[help:abinit#intro1|"files" file]], one for each
@@ -58,4 +61,26 @@ and then used in ABINIT. There is also a dedicated tutorial to ATOMPAW/ABINIT.
 
 Norm-conserving pseudopotentials can be mixed, to generate "alchemical"
 pseudoatoms, see [[topic_AtomTypes]].
+
+
+
+## ** Related Input Variables **
+
+*compulsory:*
+
+- [[abinit:ntypat]]  Number of TYPes of AToms
+- [[abinit:znucl]]  charge -Z- of the NUCLeus
+ 
+*expert:*
+
+- [[abinit:npsp]]  Number of PSeudoPotentials
+ 
+*internal:*
+
+- [[abinit:ziontypat]]  Z (charge) of the IONs for the different TYPes of AToms
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

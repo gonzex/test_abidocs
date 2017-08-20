@@ -1,9 +1,102 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 Many quantities are computed, but not reported in the main ABINIT output file.  
 On demand, they can be printed thanks to the following
 prt&amp;langle;suffix&amp;rangle; input variables. Usually, a corresponding
 file suffixed with _&amp;langle;suffix&amp;rangle; will be printed. In other
 cases, the main output will be modified to contain the data.
+
+
+
+## ** Related Input Variables **
+
+*prden:*
+
+- [[abinit:prtden]]  PRinT the DENsity
+- [[abinit:prtdensph]]  PRinT integral of DENsity inside atomic SPHeres
+- [[abinit:prtebands]]  PRinT Electron BANDS
+- [[abinit:prteig]]  PRinT EIGenenergies
+- [[abinit:prtfc]]  PRinT Fermi Contact term
+- [[abinit:prtgden]]  PRinT the Gradient of electron DENsity
+- [[abinit:prtkden]]  PRinT the Kinetic energy DENsity
+- [[abinit:prtkpt]]  PRinT the K-PoinTs sets
+- [[abinit:prtlden]]  PRinT the Laplacian of electron DENsity
+- [[abinit:prtwf]]  PRinT the WaveFunction
+- [[abinit:prtwf_full]]  PRinT Wavefunction file on the FULL mesh
+ 
+*prdos:*
+
+- [[abinit:dosdeltae]]  DOS DELTA in Energy
+- [[abinit:iatsph]]  Index for the ATomic SPHeres of the atom-projected density-of-states
+- [[abinit:natsph]]  Number of ATomic SPHeres for the atom-projected density-of-states
+- [[abinit:natsph_extra]]  Number of ATomic SPHeres for the l-projected density-of-states in EXTRA set
+- [[abinit:prtdos]]  PRinT the Density Of States
+- [[abinit:prtdosm]]  PRinT the Density Of States with M decomposition
+- [[abinit:ratsph]]  Radii of the ATomic SPHere(s)
+- [[abinit:ratsph_extra]]  Radii of the ATomic SPHere(s) in the EXTRA set
+- [[abinit:xredsph_extra]]  X(position) in REDuced coordinates of the SPHeres for dos projection in the EXTRA set
+ 
+*prfermi:*
+
+- [[abinit:fermie_nest]]  FERMI Energy for printing the NESTing function
+- [[abinit:prtfsurf]]  PRinT Fermi SURFace file
+- [[abinit:prtnest]]  PRinT NESTing function
+ 
+*prgeo:*
+
+- [[abinit:prtatlist]]  PRinT by ATom LIST of ATom
+- [[abinit:prtcif]]  PRinT Crystallographic Information File
+- [[abinit:prtgeo]]  PRinT the GEOmetry analysis
+- [[abinit:prtposcar]]  PRinT POSCAR file
+ 
+*prgs:*
+
+- [[abinit:prt1dm]]  PRinT 1-DiMensional potential and density
+- [[abinit:prtbltztrp]]  PRinT output for BoLTZTRaP code
+- [[abinit:prtdipole]]  PRinT DIPOLE
+- [[abinit:prtelf]]  PRinT Electron Localization Function (ELF)
+- [[abinit:prtgsr]]  PRinT the GSR file
+- [[abinit:prtnabla]]  PRint NABLA
+- [[abinit:prtpsps]]  PRint the PSPS file
+- [[abinit:prtspcur]]  PRinT the SPin CURrent density
+- [[abinit:prtstm]]  PRinT the STM density
+- [[abinit:prtvdw]]  PRinT Van Der Waals file
+- [[abinit:prtvol]]  PRinT VOLume
+- [[abinit:prtvolimg]]  PRinT VOLume for IMaGes
+- [[abinit:prtwant]]  PRinT WANT file
+- [[abinit:prtxml]]  PRinT an XML output
+ 
+*prmisc:*
+
+- [[abinit:istatr]]  Integer for STATus file rate
+- [[abinit:istatshft]]  Integer for STATus file SHiFT
+ 
+*prngs:*
+
+- [[abinit:prepscphon]]  PREPare Self-Consistent PHONon calculation
+- [[abinit:prtbbb]]  PRinT Band-By-Band decomposition
+- [[abinit:prtefg]]  PRint Electric Field Gradient
+- [[abinit:prtgkk]]  PRinT the GKK matrix elements file
+- [[abinit:prtphbands]]  PRinT PHonon BANDS
+- [[abinit:prtphdos]]  PRinT the PHonon Density Of States
+- [[abinit:prtphsurf]]  PRinT PHonon iso-SURFace
+- [[abinit:prtsuscep]]  PRinT the SUSCEPtibility file (the irreducible polarizability)
+ 
+*prpot:*
+
+- [[abinit:prtpot]]  PRinT total POTential
+- [[abinit:prtvclmb]]  PRinT V CouLoMB
+- [[abinit:prtvha]]  PRinT V_HArtree
+- [[abinit:prtvhxc]]  PRinT V_HXC
+- [[abinit:prtvpsp]]  PRinT V_PSeudoPotential
+- [[abinit:prtvxc]]  PRinT V_XC
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

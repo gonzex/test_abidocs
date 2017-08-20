@@ -1,6 +1,9 @@
 ---
 authors: SS,XG,YG
 ---
+
+## ** Introduction **
+
 Optical and non-linear optical properties can be computed with different
 levels of approximation.
 
@@ -33,4 +36,43 @@ but provides electronic conductivity, dielectric tensor, index of refraction,
 reflectivity, absorption, the thermal conductivity, and the thermopower
 (electron transport, high temperature, Kubo-Greenwood formalism) real as well
 as imaginary part.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[optic:broadening]]  BROADENING
+- [[optic:ddkfile]]  DDK FILE
+- [[optic:domega]]  Delta OMEGA
+- [[optic:lin_comp]]  LINear COMPonents
+- [[optic:maxomega]]  MAXimum value of OMEGA
+- [[optic:nonlin_comp]]  NON-LINear COMPonents
+- [[optic:num_lin_comp]]  NUMber of LINear COMPonents
+- [[optic:num_nonlin_comp]]  NUMber of NON-LINear COMPonents
+- [[optic:scissor]]  SCISSOR operator
+- [[optic:tolerance]]  TOLERANCE
+- [[optic:wfkfile]]  WaveFunction K FILE
+ 
+
+## ** Selected Input Files **
+
+*v4:*
+
+- [[tests/v4/Input/t56.in]]
+- [[tests/v4/Input/t57.in]]
+ 
+*v67mbpt:*
+
+- [[tests/v67mbpt/Input/t52.in]]
+- [[tests/v67mbpt/Input/t53.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t41.in]]
+- [[tests/v7/Input/t42.in]]
+- [[tests/v7/Input/t47.in]]
+- [[tests/v7/Input/t48.in]]
+ 
 

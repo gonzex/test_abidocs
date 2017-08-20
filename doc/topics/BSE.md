@@ -1,6 +1,9 @@
 ---
 authors: MG
 ---
+
+## ** Introduction **
+
 Many-Body Perturbation Theory (MBPT [[Onida2002]]) defines a rigorous
 framework for the description of excited-state properties based on the Green's
 function formalism. Within MBPT, one can calculate charged excitations (i.e.
@@ -83,4 +86,70 @@ bs_interp_* input variables.
 
 In the non-spin-polarized case, spin-singlet as well as spin-triplet
 excitations are computed. Spin-polarized case is also available.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:bs_algorithm]]  Bethe-Salpeter ALGORITHM
+- [[abinit:bs_freq_mesh]]  Bethe-Salpeter FREQuency MESH
+- [[abinit:bs_interp_mode]]  Bethe-Salpeter INTERPolation MODE
+- [[abinit:bs_nstates]]  Bethe-Salpeter Number of STATES
+ 
+*compulsory:*
+
+- [[abinit:bs_loband]]  Bethe-Salpeter Lowest Occupied BAND
+- [[abinit:optdriver]]  OPTions for the DRIVER
+ 
+*expert:*
+
+- [[abinit:bs_calctype]]  Bethe-Salpeter CALCulation TYPE
+- [[abinit:bs_coulomb_term]]  Bethe-Salpeter COULOMB TERM
+- [[abinit:bs_eh_cutoff]]  Bethe-Salpeter Electron-Hole CUTOFF
+- [[abinit:bs_exchange_term]]  Bethe-Salpeter EXCHANGE TERM
+- [[abinit:bs_hayd_term]]  Bethe-Salpeter HAYdock TERMinator
+- [[abinit:bs_haydock_niter]]  Bethe-Salpeter HAYDOCK Number of ITERations
+- [[abinit:bs_haydock_tol]]  Bethe-Salpeter HAYDOCK TOLerance
+- [[abinit:gw_nqlwl]]  GW, Number of Q-points for the Long Wave-Length Limit
+- [[abinit:gw_qlwl]]  GW, Q-points for the Long Wave-Length limit
+- [[abinit:inclvkb]]  INCLude VKB
+- [[abinit:pawoptosc]]  PAW - OPTion for the computation of the OSCillator matrix elements
+- [[abinit:zcut]]  Z-CUT
+ 
+*useful:*
+
+- [[abinit:bs_coupling]]  Bethe-Salpeter COUPLING
+- [[abinit:bs_interp_kmult]]  Bethe-Salpeter INTERPolation K-point MULTiplication factors
+- [[abinit:bs_interp_m3_width]]  Bethe-Salpeter INTERPolation Method3 WIDTH
+- [[abinit:bs_interp_method]]  Bethe-Salpeter INTERPolation METHOD
+- [[abinit:bs_interp_prep]]  Bethe-Salpeter INTERPolation PREParation
+- [[abinit:bs_interp_rl_nb]]  Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour
+- [[abinit:irdbscoup]]  Integer that governs the ReaDing of COUPling block
+- [[abinit:irdbseig]]  Integer that governs the ReaDing of BS_EIG file
+- [[abinit:irdbsreso]]  Integer that governs the ReaDing of RESOnant block
+- [[abinit:irdhaydock]]  Integer that governs the ReaDing of the HAYDOCK restart file
+- [[abinit:mdf_epsinf]]  Model Dielectric Function, EPSilon INFinity
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t76.in]]
+ 
+*v67mbpt:*
+
+- [[tests/v67mbpt/Input/t11.in]]
+- [[tests/v67mbpt/Input/t14.in]]
+- [[tests/v67mbpt/Input/t15.in]]
+- [[tests/v67mbpt/Input/t16.in]]
+- [[tests/v67mbpt/Input/t29.in]]
+- [[tests/v67mbpt/Input/t31.in]]
+- [[tests/v67mbpt/Input/t32.in]]
+- [[tests/v67mbpt/Input/t33.in]]
+- [[tests/v67mbpt/Input/t34.in]]
+- [[tests/v67mbpt/Input/t35.in]]
+ 
 

@@ -1,6 +1,9 @@
 ---
 authors: BAmadon
 ---
+
+## ** Introduction **
+
 This feature is available only in PAW. The DFT+U framework is described in
 [[Anisimov1991]] and [[Liechtenstein1995]]. In ABINIT, the DFT+U approximation
 is implemented inside the PAW atomic spheres only. Two choices of double
@@ -27,4 +30,61 @@ SCF step in the log file: one can thus check the convergency of the
 calculation.
 
 Consistency between total energy and forces in DFT+U have been checked.
+
+
+
+## ** Related Input Variables **
+
+*compulsory:*
+
+- [[abinit:jpawu]]  value of J for PAW+U
+- [[abinit:lpawu]]  value of angular momentum L for PAW+U
+- [[abinit:upawu]]  value of U for PAW+U
+- [[abinit:usepawu]]  USE PAW+U (spherical part)
+ 
+*expert:*
+
+- [[abinit:atvshift]]  ATomic potential (V) energy SHIFTs
+- [[abinit:dmatpuopt]]  Density MATrix for PAW+U OPTion
+- [[abinit:dmatudiag]]  Density MATrix for paw+U, DIAGonalization
+- [[abinit:f4of2_sla]]  F4 Over F2 ratio of Slater integrals
+- [[abinit:f6of2_sla]]  F6 Over F2 ratio of Slater integrals
+- [[abinit:macro_uj]]  MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)
+- [[abinit:natvshift]]  Number of ATomic potential (V) energy SHIFTs (per atom)
+- [[abinit:normpawu]]  NORMalize atomic PAW+U projector
+- [[abinit:pawujat]]  PAW+macro_UJ, ATom number
+- [[abinit:pawujrad]]  PAW+macro_UJ, sphere RADius
+- [[abinit:pawujv]]  PAW+macro_UJ, potential shift (V)
+ 
+*internal:*
+
+- [[abinit:natpawu]]  Number of AToms on which PAW+U is applied
+ 
+*useful:*
+
+- [[abinit:dmatpawu]]  initial Density MATrix for PAW+U
+- [[abinit:usedmatpu]]  USE of an initial Density MATrix in Paw+U
+ 
+
+## ** Selected Input Files **
+
+*v5:*
+
+- [[tests/v5/Input/t08.in]]
+- [[tests/v5/Input/t14.in]]
+- [[tests/v5/Input/t15.in]]
+- [[tests/v5/Input/t16.in]]
+- [[tests/v5/Input/t19.in]]
+- [[tests/v5/Input/t20.in]]
+- [[tests/v5/Input/t33.in]]
+- [[tests/v5/Input/t37.in]]
+- [[tests/v5/Input/t38.in]]
+- [[tests/v5/Input/t39.in]]
+- [[tests/v5/Input/t40.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t21.in]]
+- [[tests/v7/Input/t22.in]]
+ 
 

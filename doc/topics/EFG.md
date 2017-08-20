@@ -1,6 +1,9 @@
 ---
 authors: JZ
 ---
+
+## ** Introduction **
+
 Because the PAW formalism provides a robust way to reconstruct the all-
 electron wavefunctions in the valence space, it is suitable for computing
 expectation values of observables localized even very close to the nuclei.
@@ -79,4 +82,33 @@ obtained by comparing the calculated values in several standards to experiment
 and then the computations can be used to interpret the measurements of new
 materials. In [[Zwanziger2009]] it is showed how to perform such studies on a
 variety of compounds.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:prtefg]]  PRint Electric Field Gradient
+- [[abinit:prtfc]]  PRinT Fermi Contact term
+- [[abinit:ptcharge]]  PoinT CHARGEs
+- [[abinit:quadmom]]  QUADrupole MOMents
+ 
+
+## ** Selected Input Files **
+
+*v5:*
+
+- [[tests/v5/Input/t31.in]]
+- [[tests/v5/Input/t32.in]]
+- [[tests/v5/Input/t33.in]]
+- [[tests/v5/Input/t34.in]]
+- [[tests/v5/Input/t35.in]]
+- [[tests/v5/Input/t36.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t44.in]]
+- [[tests/v6/Input/t49.in]]
+ 
 

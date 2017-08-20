@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* ACCURACY  
-*Mentioned in topic(s):* Planewaves_basic, SCFControl_basic  
+*Mentioned in topic(s):* [[topic:Planewaves]], [[topic:SCFControl]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -506,7 +506,7 @@ automatically tuned by [[accuracy]] will not be affected.
 
 
 *Mnemonics:* CELL lattice vector scaling  
-*Mentioned in topic(s):* UnitCell_basic  
+*Mentioned in topic(s):* [[topic:UnitCell]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *commentdims:* represented internally as acell(3,[[nimage]])  
@@ -533,7 +533,7 @@ to scale the cartesian coordinates.
 
 
 *Mnemonics:* ANGles in DEGrees  
-*Mentioned in topic(s):* UnitCell_useful  
+*Mentioned in topic(s):* [[topic:UnitCell]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* None  
@@ -579,7 +579,7 @@ others.
 
 
 *Mnemonics:* Energy CUToff  
-*Mentioned in topic(s):* Planewaves_compulsory  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -619,7 +619,7 @@ needed to optimize unit cell parameters.
 
 
 *Mnemonics:* Electron bands INTERPolation  
-*Mentioned in topic(s):* ElecBandStructure_useful, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:ElecBandStructure]], [[topic:SelfEnergy]]  
 *Variable type:* real  
 *Dimensions:* (4)  
 *Default value:* [0, 0, 0, 0]  
@@ -661,7 +661,7 @@ reduced directions. Cubic spline (3) is the recommended value.
 
 
 *Mnemonics:* Integer for Self-Consistent-Field cycles  
-*Mentioned in topic(s):* SCFAlgorithms_basic, TDDFT_compulsory, ElecBandStructure_basic  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]], [[topic:TDDFT]], [[topic:ElecBandStructure]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 17 if [[usepaw]]==1,
@@ -753,7 +753,7 @@ For RF, this option is needed to compute the response to ddk perturbation.
 
 
 *Mnemonics:* Index of eXchange-Correlation functional  
-*Mentioned in topic(s):* xc_basic, Hybrids_compulsory, TDDFT_useful  
+*Mentioned in topic(s):* [[topic:xc]], [[topic:Hybrids]], [[topic:TDDFT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1031,7 +1031,7 @@ J. Chem. Phys. 125, 224106 (2006) ]
 
 
 *Mnemonics:* index -J- for DaTaSETs  
-*Mentioned in topic(s):* multidtset_basic  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* ([[ndtset]])  
 *Default value:* [1 .. [[ndtset]]]  
@@ -1058,7 +1058,7 @@ be used.
 
 
 *Mnemonics:* K - PoinTs  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* [0, 0, 0]  
@@ -1094,7 +1094,7 @@ Not read if [[kptopt]]/=0 .
 
 
 *Mnemonics:* K - PoinTs NoRMalization  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1116,7 +1116,7 @@ It cannot be smaller than 1.0d0
 
 
 *Mnemonics:* KPoinTs OPTion  
-*Mentioned in topic(s):* k-points_basic, ElecBandStructure_basic  
+*Mentioned in topic(s):* [[topic:k-points]], [[topic:ElecBandStructure]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4 if [[nspden]]==4,
@@ -1166,7 +1166,7 @@ In the case of a grid of k points, the auxiliary variables [[kptrlen]],
 
 
 *Mnemonics:* Number of ATOMs  
-*Mentioned in topic(s):* crystal_basic, SmartSymm_basic  
+*Mentioned in topic(s):* [[topic:crystal]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1187,7 +1187,7 @@ of atoms, use the symmetriser, see the input variable [[natrd]].
 
 
 *Mnemonics:* Number of BANDs  
-*Mentioned in topic(s):* BandOcc_basic  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -1220,7 +1220,7 @@ file (see [[kssform]]) the relevant number of bands is given by [[nbandkss]].
 
 
 *Mnemonics:* Number of BANDs for (Hartree)-Fock exact exchange  
-*Mentioned in topic(s):* Hybrids_useful  
+*Mentioned in topic(s):* [[topic:Hybrids]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -1244,7 +1244,7 @@ being computed for the wavefunctions.
 
 
 *Mnemonics:* Number of DaTaSETs  
-*Mentioned in topic(s):* multidtset_compulsory  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1265,7 +1265,7 @@ dataset index are not allowed. Otherwise, [[ndtset]]=0 is equivalent to
 
 
 *Mnemonics:* Number of Grid points for K PoinTs generation  
-*Mentioned in topic(s):* k-points_basic  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -1300,7 +1300,7 @@ variable [[kptrlen]].
 
 
 *Mnemonics:* Number of K-points defining the PATH  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1333,7 +1333,7 @@ unlike [[kptopt]], nkpath represents the total number of points in the
 
 
 *Mnemonics:* Number of K - Points  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[kptopt]]==0,
@@ -1374,7 +1374,7 @@ k points of the circuit will be 10+12+17+1(for the final point)=40.
 
 
 *Mnemonics:* Number of K - Points for (Hartree) Fock exact exchange  
-*Mentioned in topic(s):* Hybrids_expert  
+*Mentioned in topic(s):* [[topic:Hybrids]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -1398,7 +1398,7 @@ for the Fock exact exchange contribution.
 
 
 *Mnemonics:* Number of SHIFTs for K point grids  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1417,7 +1417,7 @@ defined either from [[ngkpt]] or [[kptrlatt]]. The maximum allowed value of
 
 
 *Mnemonics:* Number of SPin POLarization  
-*Mentioned in topic(s):* spinpolarisation_basic  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1455,7 +1455,7 @@ matrix with respect to the spin-polarization.
 
 
 *Mnemonics:* Number of (non-)self-consistent field STEPS  
-*Mentioned in topic(s):* SCFControl_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
@@ -1494,7 +1494,7 @@ The forces and stress tensor are computed with [[nstep]]=0.
 
 
 *Mnemonics:* Number of SYMmetry operations  
-*Mentioned in topic(s):* crystal_useful, GW_useful  
+*Mentioned in topic(s):* [[topic:crystal]], [[topic:GW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1546,7 +1546,7 @@ with the help of the input variable [[symmorphi]]
 
 
 *Mnemonics:* Number of TYPes of AToms  
-*Mentioned in topic(s):* AtomTypes_compulsory, PseudosPAW_compulsory, crystal_basic  
+*Mentioned in topic(s):* [[topic:AtomTypes]], [[topic:PseudosPAW]], [[topic:crystal]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1570,7 +1570,7 @@ which there is a different number of pseudopotentials atomic types. See
 
 
 *Mnemonics:* OCCupation OPTion  
-*Mentioned in topic(s):* BandOcc_basic, STM_compulsory  
+*Mentioned in topic(s):* [[topic:BandOcc]], [[topic:STM]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1661,7 +1661,7 @@ Fermi energy, and the bissection algorithm find one or the other.
 
 
 *Mnemonics:* Real space PRIMitive translations  
-*Mentioned in topic(s):* UnitCell_basic  
+*Mentioned in topic(s):* [[topic:UnitCell]]  
 *Variable type:* real  
 *Dimensions:* (3,3)  
 *commentdims:* Internally, it is represented as rprim(3,3,[[nimage]])  
@@ -1800,7 +1800,7 @@ file is not the value contained in the input file, but the value rescaled by
 
 
 *Mnemonics:* Real space PRIMitive translations, Dimensional  
-*Mentioned in topic(s):* UnitCell_internal  
+*Mentioned in topic(s):* [[topic:UnitCell]]  
 *Variable type:* real  
 *Dimensions:* (3,3)  
 *commentdims:* Internally, it is represented as rprimd(3,3,[[nimage]]).  
@@ -1829,7 +1829,7 @@ fixed.
 
 
 *Mnemonics:* SCALE CARTesian coordinates  
-*Mentioned in topic(s):* UnitCell_useful  
+*Mentioned in topic(s):* [[topic:UnitCell]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*1  
@@ -1858,7 +1858,7 @@ to the default values. So, it will not be echoed.
 
 
 *Mnemonics:* SHIFT for K points  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nshiftk]])  
 *Default value:* None if [[nshiftk]]>1,
@@ -1957,7 +1957,7 @@ In rhombohedral axes, e.g. using [[angdeg]] 3*60., this corresponds to
 
 
 *Mnemonics:* SYMmetry in REaL space  
-*Mentioned in topic(s):* crystal_useful  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* integer  
 *Dimensions:* (3,3,[[nsym]])  
 *Default value:* [[1, 0, 0], [0, 1, 0], [0, 0, 1]] if [[nsym]]==1,
@@ -1990,7 +1990,7 @@ automatically.
 
 
 *Mnemonics:* Translation NON-Symmorphic vectors  
-*Mentioned in topic(s):* crystal_useful  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nsym]])  
 *Default value:* None  
@@ -2013,7 +2013,7 @@ automatically.
 
 
 *Mnemonics:* TOLerance on the DiFference of total Energy  
-*Mentioned in topic(s):* SCFControl_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2052,7 +2052,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on the DiFference of Forces  
-*Mentioned in topic(s):* SCFControl_basic, ForcesStresses_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]], [[topic:ForcesStresses]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2087,7 +2087,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on the Relative diFference of Forces  
-*Mentioned in topic(s):* SCFControl_basic, ForcesStresses_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]], [[topic:ForcesStresses]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2129,7 +2129,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on the potential V(r) ReSidual  
-*Mentioned in topic(s):* SCFControl_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2171,7 +2171,7 @@ generically.
 
 
 *Mnemonics:* TOLerance on WaveFunction squared Residual  
-*Mentioned in topic(s):* SCFControl_basic  
+*Mentioned in topic(s):* [[topic:SCFControl]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2232,7 +2232,7 @@ generically.
 
 
 *Mnemonics:* TYPe of AToms  
-*Mentioned in topic(s):* crystal_basic, AtomTypes_basic  
+*Mentioned in topic(s):* [[topic:crystal]], [[topic:AtomTypes]]  
 *Variable type:* integer  
 *Dimensions:* [3, '[[natrd]]'] if [[natrd]]<[[natom]],
 [3, '[[natom]]'] otherwise.
@@ -2274,7 +2274,7 @@ keeping efficiency.
 
 
 *Mnemonics:* Upper limit on DaTa SETs  
-*Mentioned in topic(s):* multidtset_basic  
+*Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* None  
@@ -2311,7 +2311,7 @@ If [[udtset]] is used, the input variable [[jdtset]] cannot be used.
 
 
 *Mnemonics:* Use WaVeLet basis set  
-*Mentioned in topic(s):* Wavelets_compulsory  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2338,7 +2338,7 @@ systems may be slow to converge.
 
 
 *Mnemonics:* WeighTs for K points  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* ([[nkpt]])  
 *Default value:* [[nkpt]]*1.0  
@@ -2361,7 +2361,7 @@ weights such as 1/3.
 
 
 *Mnemonics:* WaVeLet H step GRID  
-*Mentioned in topic(s):* Wavelets_basic  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.5  
@@ -2379,7 +2379,7 @@ wavelet computation. The value is a length in atomic units.
 
 
 *Mnemonics:* vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-  
-*Mentioned in topic(s):* crystal_compulsory  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *Default value:* None  
@@ -2406,7 +2406,7 @@ Atomic positions evolve if [[ionmov]]/=0 . In constrast with [[xred]] and
 
 
 *Mnemonics:* vectors (X) of atom positions in CARTesian coordinates  
-*Mentioned in topic(s):* crystal_compulsory  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *Default value:* None  
@@ -2432,7 +2432,7 @@ Atomic positions evolve if [[ionmov]]/=0 .
 
 
 *Mnemonics:* vectors (X) of atom positions in REDuced coordinates  
-*Mentioned in topic(s):* crystal_compulsory  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* real  
 *Dimensions:* (3,min([[natom]],[[natrd]]))  
 *commentdims:* represented internally as xred(3,[[natom]],[[nimage]])  
@@ -2461,7 +2461,7 @@ Atomic positions evolve if [[ionmov]]/=0 .
 
 
 *Mnemonics:* charge -Z- of the NUCLeus  
-*Mentioned in topic(s):* AtomTypes_compulsory, PseudosPAW_compulsory  
+*Mentioned in topic(s):* [[topic:AtomTypes]], [[topic:PseudosPAW]]  
 *Variable type:* real  
 *Dimensions:* ([[npsp]])  
 *Default value:* None  

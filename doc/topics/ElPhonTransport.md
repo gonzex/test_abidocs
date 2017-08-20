@@ -1,6 +1,9 @@
 ---
 authors: MV
 ---
+
+## ** Introduction **
+
 Warning : this topic concerns metals only.
 
 The calculation of bulk transport quantities (electrical and thermal
@@ -44,4 +47,66 @@ often expressed in cm-3) with [[anaddb:ep_extrael]].
 
 Some details about the calculation of electron-phonon quantities in ABINIT and
 ANADDB can be found [here](../documents/elphon_manual.pdf).
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[anaddb:ep_keepbands]]  Electron-Phonon KEEP dependence on electron BANDS
+- [[anaddb:ifltransport]]  IFLag for TRANSPORT
+- [[anaddb:kptrlatt]]  K PoinT Reciprocal LATTice
+- [[anaddb:telphint]]  Technique for ELectron-PHonon INTegration
+ 
+*compulsory:*
+
+- [[anaddb:elphflag]]  ELectron-PHonon FLAG
+ 
+*expert:*
+
+- [[anaddb:band_gap]]  BAND GAP
+- [[anaddb:ep_nqpt]]  Electron Phonon Number of Q PoinTs
+- [[anaddb:kptrlatt_fine]]  K PoinT Reciprocal LATTice for FINE grid
+ 
+*useful:*
+
+- [[anaddb:a2fsmear]]  Alpha2F SMEARing factor
+- [[anaddb:elph_fermie]]  ELectron-PHonon FERMI Energy
+- [[anaddb:elphsmear]]  ELectron-PHonon SMEARing factor
+- [[anaddb:ep_b_max]]  Electron Phonon integration Band MAXimum
+- [[anaddb:ep_b_min]]  Electron Phonon integration Band MINimum
+- [[anaddb:ep_extrael]]  Electron-Phonon EXTRA ELectrons
+- [[anaddb:ep_nspline]]  Electron Phonon Number for SPLINE interpolation
+- [[anaddb:mustar]]  MU STAR
+- [[anaddb:prtfsurf]]  PRinT the Fermi SURFace
+- [[anaddb:prtvol]]  PRinT VOLume
+ 
+
+## ** Selected Input Files **
+
+*v5:*
+
+- [[tests/v5/Input/t88.in]]
+- [[tests/v5/Input/t89.in]]
+- [[tests/v5/Input/t90.in]]
+- [[tests/v5/Input/t91.in]]
+- [[tests/v5/Input/t92.in]]
+- [[tests/v5/Input/t93.in]]
+- [[tests/v5/Input/t94.in]]
+- [[tests/v5/Input/t95.in]]
+- [[tests/v5/Input/t99.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t76.in]]
+- [[tests/v6/Input/t93.in]]
+- [[tests/v6/Input/t94.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t88.in]]
+- [[tests/v7/Input/t93.in]]
+- [[tests/v7/Input/t94.in]]
+ 
 

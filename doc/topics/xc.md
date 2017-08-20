@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 Total energy computation in ABINIT is done according to Density Functional
 Theory (DFT). Although formally exact, an approximate exchange-correlation
 (XC) functional must be chosen. This is governed by the input variable
@@ -53,4 +56,61 @@ variables [[exchmix]], [[lexexch]] and [[useexexch]].
   
 Several [Van der Waals functionals](topic_vdw.html) are available : Grimme
 (D2, D3, D3(Becke-Johnson)), Silvestrelli.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:ixc]]  Index of eXchange-Correlation functional
+ 
+*expert:*
+
+- [[abinit:densty]]  initial DENSity for each TYpe of atom
+- [[abinit:intxc]]  INTerpolation for eXchange-Correlation
+- [[abinit:optnlxccc]]  OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction
+- [[abinit:usekden]]  USE Kinetic energy DENsity
+- [[abinit:xc_denpos]]  eXchange-Correlation - DENsity POSitivity value
+- [[abinit:xc_tb09_c]]  Value of the c parameter in the eXchange-Correlation TB09 functional
+ 
+*internal:*
+
+- [[abinit:xclevel]]  eXchange Correlation functional LEVEL
+ 
+*useful:*
+
+- [[abinit:exchmix]]  EXCHange MIXing
+- [[abinit:lexexch]]  value of angular momentum L for EXact EXCHange
+- [[abinit:useexexch]]  USE of EXact EXCHange
+ 
+
+## ** Selected Input Files **
+
+*v1:*
+
+- [[tests/v1/Input/t10.in]]
+- [[tests/v1/Input/t11.in]]
+- [[tests/v1/Input/t12.in]]
+- [[tests/v1/Input/t13.in]]
+- [[tests/v1/Input/t14.in]]
+- [[tests/v1/Input/t15.in]]
+- [[tests/v1/Input/t16.in]]
+- [[tests/v1/Input/t17.in]]
+- [[tests/v1/Input/t18.in]]
+- [[tests/v1/Input/t19.in]]
+- [[tests/v1/Input/t20.in]]
+- [[tests/v1/Input/t21.in]]
+- [[tests/v1/Input/t22.in]]
+- [[tests/v1/Input/t23.in]]
+- [[tests/v1/Input/t24.in]]
+- [[tests/v1/Input/t25.in]]
+- [[tests/v1/Input/t28.in]]
+- [[tests/v1/Input/t29.in]]
+- [[tests/v1/Input/t30.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t18.in]]
+ 
 

@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* BROADENING  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
@@ -36,7 +36,7 @@ the spectrum.
 
 
 *Mnemonics:* DDK FILE  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* string  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -68,7 +68,7 @@ use as string with the filename: ddkfile_X, where X is the file number.
 
 
 *Mnemonics:* Delta OMEGA  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
@@ -95,7 +95,7 @@ grid. In order to go to higher frequency, increase the maximum.
 
 
 *Mnemonics:* LINear COMPonents  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* integer  
 *Dimensions:* (['num_lin_comp'])  
 *Default value:* 0  
@@ -122,7 +122,7 @@ z respectively. For example 11 would be xx and 32 would mean zy.
 
 
 *Mnemonics:* MAXimum value of OMEGA  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1 Ha  
@@ -149,7 +149,7 @@ grid. In order to go to higher frequency, increase the maximum.
 
 
 *Mnemonics:* NON-LINear COMPonents  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* integer  
 *Dimensions:* (['num_nonlin_comp'])  
 *Default value:* 0  
@@ -176,7 +176,7 @@ z respectively. For example 111 would be xxx and 321 would mean zyx.
 
 
 *Mnemonics:* NUMber of LINear COMPonents  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -204,7 +204,7 @@ Note that the directions are along the Cartesian axis.
 
 
 *Mnemonics:* NUMber of NON-LINear COMPonents  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -232,7 +232,7 @@ Note that the directions are along the Cartesian axis.
 
 
 *Mnemonics:* SCISSOR operator  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -265,7 +265,7 @@ opening of the gap due to the GW correction can be used as scissor shift.
 
 
 *Mnemonics:* TOLERANCE  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
@@ -290,7 +290,7 @@ from the sum.
 
 
 *Mnemonics:* WaveFunction K FILE  
-*Mentioned in topic(s):* Optic_basic  
+*Mentioned in topic(s):* [[topic:Optic]]  
 *Variable type:* string  
 *Dimensions:* scalar  
 *Default value:* None  

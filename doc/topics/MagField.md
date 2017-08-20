@@ -1,6 +1,9 @@
 ---
 authors: EB
 ---
+
+## ** Introduction **
+
 An applied external magnetic field has been implemented in ABINIT by
 considering the Zeeman spin response only (i.e., neglecting the orbital
 contribution).
@@ -25,4 +28,29 @@ In ABINIT, the finite Zeeman field is controlled by the keyword
 Such an applied Zeeman field allows one to calculate the spin contribution of
 the magnetic and magnetoelectric susceptibilities, and to observe phase
 transitions under finite magnetic field, if present.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:zeemanfield]]  ZEEMAN FIELD
+ 
+*expert:*
+
+- [[abinit:bfield]]  finite B FIELD calculation
+- [[abinit:nucdipmom]]  NUClear DIPole MOMents
+ 
+
+## ** Selected Input Files **
+
+*v6:*
+
+- [[tests/v6/Input/t17.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t32.in]]
+ 
 

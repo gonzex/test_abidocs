@@ -1,6 +1,9 @@
 ---
 authors: RC, XG
 ---
+
+## ** Introduction **
+
 In Raman experiments, the incident light, usually a polarized or unpolarized
 laser, is scattered by the sample, and the energy as well as polarization of
 the outgoing light is measured. A Raman spectrum, presenting the energy of the
@@ -65,4 +68,51 @@ ferroelectric ABO3 compounds [[Veithen2005a]].
 
 The implementation is available for norm-conserving pseudopotentials, in the
 LDA approximation. The extension to the PAW framework is in progress.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[anaddb:alphon]]  ALign PHONon mode eigendisplacements
+- [[anaddb:ramansr]]  RAMAN Sum-Rule
+ 
+*compulsory:*
+
+- [[anaddb:nlflag]]  Non-Linear FLAG
+ 
+*useful:*
+
+- [[anaddb:prtmbm]]  PRinT Mode-By-Mode decomposition of the electrooptic tensor
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t54.in]]
+ 
+*v3:*
+
+- [[tests/v3/Input/t83.in]]
+ 
+*v4:*
+
+- [[tests/v4/Input/t52.in]]
+- [[tests/v4/Input/t54.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t63.in]]
+- [[tests/v6/Input/t64.in]]
+- [[tests/v6/Input/t65.in]]
+- [[tests/v6/Input/t66.in]]
+- [[tests/v6/Input/t67.in]]
+ 
+*v8:*
+
+- [[tests/v8/Input/t49.in]]
+- [[tests/v8/Input/t50.in]]
+ 
 

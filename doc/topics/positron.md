@@ -1,6 +1,9 @@
 ---
 authors: MT
 ---
+
+## ** Introduction **
+
 The lifetime of positrons and their annihilation rate can be computed, using
 the self-consistent two-component DFT, including force and stress computation,
 LDA and GGA, norm-conserving as well as PAW [[Wiktor2015]]. Doppler broadening
@@ -10,4 +13,38 @@ is given in the description of the [[positron]] input variable, as well as in
 
 Examples can be found in [[Wiktor2013]],[[Wiktor2014]],[[Wiktor2014a]] and
 [[Wiktor2014b]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:ixcpositron]]  Integer for the eXchange-Correlation applied to the electron-POSITRON interaction
+- [[abinit:posdoppler]]  POSitron computation of DOPPLER broadening
+- [[abinit:posnstep]]  POSitron calculation: max. Number of STEPs for the two-component DFT
+- [[abinit:posocc]]  POSitron calculation: OCCupation number for the positron
+- [[abinit:postoldfe]]  POSitron calculation: TOLerance on the DiFference of total Energy
+- [[abinit:postoldff]]  POSitron calculation: TOLerance on the DiFference of Forces
+ 
+*compulsory:*
+
+- [[abinit:positron]]  POSITRON calculation
+ 
+
+## ** Selected Input Files **
+
+*v4:*
+
+- [[tests/v4/Input/t95.in]]
+- [[tests/v4/Input/t96.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t07.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t35.in]]
+ 
 

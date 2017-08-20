@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* Alpha2F SMEARing factor  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2e-05  
@@ -25,7 +25,7 @@ are replaced by Gaussians of width **a2fsmear** (by default in Hartree).
 
 
 *Mnemonics:* ALign PHONon mode eigendisplacements  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -53,7 +53,7 @@ of uniaxial crystals, the z-axis should be chosen along the optical axis.
 
 
 *Mnemonics:* Acoustic Sum Rule  
-*Mentioned in topic(s):* Phonons_basic, PhononBands_basic  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -121,7 +121,7 @@ present status of understanding, one should always use the **asr**=2 option ).
 
 
 *Mnemonics:* ATomic Temperature Factor TOLerance  
-*Mentioned in topic(s):* Temperature_expert  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
@@ -144,7 +144,7 @@ the next bigger is smaller than **wtol2**.
 
 
 *Mnemonics:* AToms for IFC analysis  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* (array '[[anaddb:natifc]]')  
 *Default value:* 0  
@@ -164,7 +164,7 @@ confusing, and should be taken away in one future version - sorry for this).
 
 
 *Mnemonics:* BAND GAP  
-*Mentioned in topic(s):* ElPhonTransport_expert  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 999.0  
@@ -189,7 +189,7 @@ the descirption is strange ...!
 
 
 *Mnemonics:* BRAVais  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -217,7 +217,7 @@ should be replaced by routines used by the main abinit code.
 
 
 *Mnemonics:* Integer for CHarge NEUTrality treatment  
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -244,7 +244,7 @@ effective charges.
 
 
 *Mnemonics:* DIElectric FLAG  
-*Mentioned in topic(s):* Phonons_basic  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -266,7 +266,7 @@ Integer. Frequency-dependent dielectric tensor flag.
 
 
 *Mnemonics:* DIPole-DIPole interaction  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -285,7 +285,7 @@ The abinit input variable [[dipdip]] has a similar meaning.
 
 
 *Mnemonics:* DOS DELTA in Energy  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 4.5E-06 Hartree = 1 cm<sup>-1</sup>  
@@ -306,7 +306,7 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 
 
 *Mnemonics:* DOS SMEARing value  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 4.5E-05 Hartree = 10 cm<sup>-1</sup>  
@@ -327,7 +327,7 @@ Test list:
 
 
 *Mnemonics:* DOS SUM  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -350,7 +350,7 @@ sum and different is reported in the output file **dossum**.
 
 
 *Mnemonics:* DOS TOLerance  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.25  
@@ -375,7 +375,7 @@ bigger is smaller than **dostol**.
 
 
 *Mnemonics:* EIgenVECtors  
-*Mentioned in topic(s):* Phonons_useful, PhononBands_useful  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -393,7 +393,7 @@ bigger is smaller than **dostol**.
 
 
 *Mnemonics:* ELAstic tensor FLAG  
-*Mentioned in topic(s):* Elastic_basic  
+*Mentioned in topic(s):* [[topic:Elastic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -422,7 +422,7 @@ Flag for calculation of elastic and compliance tensors
 
 
 *Mnemonics:* ELectron-PHonon FERMI Energy  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -447,7 +447,7 @@ and [[anaddb:ep_extrael]] should not be used at the same time.
 
 
 *Mnemonics:* ELectron-PHonon FLAG  
-*Mentioned in topic(s):* PhononWidth_compulsory, ElPhonTransport_compulsory  
+*Mentioned in topic(s):* [[topic:PhononWidth]], [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -464,7 +464,7 @@ coupling.
 
 
 *Mnemonics:* ELectron-PHonon SMEARing factor  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
@@ -485,7 +485,7 @@ Smearing width for the Fermi surface integration (in Hartree by default).
 
 
 *Mnemonics:* ENergy UNITs  
-*Mentioned in topic(s):* Phonons_useful, PhononBands_useful  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -506,7 +506,7 @@ the console log file, for which Hartree units are used).
 
 
 *Mnemonics:* Electron Phonon integration Band MAXimum  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -531,7 +531,7 @@ equal weight is given to all k-points, for all bands between
 
 
 *Mnemonics:* Electron Phonon integration Band MINimum  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -553,7 +553,7 @@ integration, instead of the upper bound. See also [[anaddb:telphint]].
 
 
 *Mnemonics:* Electron-Phonon EXTRA ELectrons  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -580,7 +580,7 @@ used at the same time. ([[anaddb:elphflag]]=1).
 
 
 *Mnemonics:* Electron-Phonon INTerpolation of GKK  
-*Mentioned in topic(s):* PhononWidth_useful  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -603,7 +603,7 @@ are treated symmetrically.
 
 
 *Mnemonics:* Electron-Phonon KEEP dependence on electron BANDS  
-*Mentioned in topic(s):* ElPhonTransport_basic  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -630,7 +630,7 @@ transport calculations **ep_keepbands** must be set to 1.
 
 
 *Mnemonics:* Electron Phonon Number of Q PoinTs  
-*Mentioned in topic(s):* ElPhonTransport_expert  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -654,7 +654,7 @@ anaddb input (ngqpt)
 
 
 *Mnemonics:* Electron Phonon Number for SPLINE interpolation  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
@@ -676,7 +676,7 @@ time approximation ([[anaddb:ifltransport]]=3).
 
 
 *Mnemonics:* Electron Phonon PRinTout YAMBO data  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -698,7 +698,7 @@ yambo code.
 
 
 *Mnemonics:* Electron Phonon Q PoinT LIST  
-*Mentioned in topic(s):* PhononWidth_useful  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* real  
 *Dimensions:* (3,[[anaddb:ep_nqpt]])  
 *Default value:* (3*[[anaddb:ep_nqpt]])*0  
@@ -722,7 +722,7 @@ q-points to be found in the GKK file, independently of the normal anaddb input
 
 
 *Mnemonics:* DO SCALar PRODuct for gkk matrix elements  
-*Mentioned in topic(s):* PhononWidth_useful  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -752,7 +752,7 @@ or high symmetry points. I do not know why...
 
 
 *Mnemonics:* FREEZE DISPLacement of phonons into supercells  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -780,7 +780,7 @@ phonon mode, then let it relax in abinit afterwards.
 
 
 *Mnemonics:* FRequency MAXimum  
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
@@ -803,7 +803,7 @@ in Hartree.
 
 
 *Mnemonics:* FRequency MINimum  
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -826,7 +826,7 @@ in Hartree.
 
 
 *Mnemonics:* GKk for input Q grid to be WRITtEn to disk  
-*Mentioned in topic(s):* ElPhonInt_useful  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -848,7 +848,7 @@ gkqfile. This reduces strongly the memory needed for an electron-phonon run.
 
 
 *Mnemonics:* GRUNeiSen DDBS  
-*Mentioned in topic(s):* Temperature_useful  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* string  
 *Dimensions:* ([[anaddb:gruns_nddbs]])  
 *Default value:* Empty  
@@ -877,7 +877,7 @@ finite difference.
 
 
 *Mnemonics:* GRUNeiSen Number of DDB files  
-*Mentioned in topic(s):* Temperature_basic  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -899,7 +899,7 @@ This variable defines the number of DDB files (read from
 
 
 *Mnemonics:* Indices of the AToms that are FIXed  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:natfix]])  
 *Default value:* 0  
@@ -920,7 +920,7 @@ constrained polarization. See [[anaddb:polflag]].
 
 
 *Mnemonics:* Indices of the AToms for the PRoJection of the phonon Band Structure  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:natprj_bs]])  
 *Default value:* 0*'[[anaddb:natprj_bs]]'  
@@ -943,7 +943,7 @@ eigenvectors, giving a weighted phonon band structure file.
 
 
 *Mnemonics:* IFC ANAlysis  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -972,7 +972,7 @@ the matrix in local coordinates).
 
 
 *Mnemonics:* Interatomic Force Constants FLAG  
-*Mentioned in topic(s):* PhononBands_compulsory  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1002,7 +1002,7 @@ for checking purpose, and if there is not enough information in the DDB.
 
 
 *Mnemonics:* IFC OUTput  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1021,7 +1021,7 @@ distance with respect to the generic atom.
 
 
 *Mnemonics:* IFLag for TRANSPORT  
-*Mentioned in topic(s):* ElPhonTransport_basic  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1048,7 +1048,7 @@ calculates the k-dependent relaxation time. (needs[[anaddb:elphflag]] = 1)
 
 
 *Mnemonics:* INternal STRain FLAG  
-*Mentioned in topic(s):* Elastic_basic  
+*Mentioned in topic(s):* [[topic:Elastic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1073,7 +1073,7 @@ Internal strain tensor flag.
 
 
 *Mnemonics:* Index of STRain FIXed  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:nstrfix]])  
 *Default value:* 0  
@@ -1104,7 +1104,7 @@ See [[anaddb:polflag]].
 
 
 *Mnemonics:* K PoinT Reciprocal LATTice  
-*Mentioned in topic(s):* ElPhonTransport_basic, PhononWidth_basic  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]], [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
@@ -1129,7 +1129,7 @@ phonon calculations using nesting functions or tetrahedron integration.
 
 
 *Mnemonics:* K PoinT Reciprocal LATTice for FINE grid  
-*Mentioned in topic(s):* ElPhonTransport_expert  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
@@ -1150,7 +1150,7 @@ not work yet, as of June 2010.
 
 
 *Mnemonics:* MU STAR  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1  
@@ -1167,7 +1167,7 @@ superconducting Tc using Mc-Millan's formula.
 
 
 *Mnemonics:* Number of AToms FIXed  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1188,7 +1188,7 @@ polarization. See [[anaddb:polflag]].
 
 
 *Mnemonics:* Number of AToms for IFC analysis  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1205,7 +1205,7 @@ The list of these atoms is provided by [[anaddb:atifc]].
 
 
 *Mnemonics:* Number of AToms for PRoJection of the Band Structure  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1228,7 +1228,7 @@ will be output. The list of these atoms is provided by [[iatprj_bs@anaddb]].
 
 
 *Mnemonics:* Number of CHANnels  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 800  
@@ -1255,7 +1255,7 @@ frequency sampled. The first channel begins at 0.
 
 
 *Mnemonics:* Number of DIVisions for the SMallest segment  
-*Mentioned in topic(s):* PhononBands_basic, PhononWidth_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]], [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
@@ -1279,7 +1279,7 @@ along the path using the coordinates given in the array [[anaddb:qpath]].
 
 
 *Mnemonics:* Number of FREQuencies  
-*Mentioned in topic(s):* Phonons_useful  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1303,7 +1303,7 @@ equidistant values from [[anaddb:frmin]] to [[anaddb:frmax]].
 
 
 *Mnemonics:* Number of Grids points for Q PoinTs (grid 2)  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* 3*0  
@@ -1322,7 +1322,7 @@ distribution) or for the DOS.
 
 
 *Mnemonics:* Number of Grids points for Q PoinTs  
-*Mentioned in topic(s):* Phonons_basic, PhononBands_basic  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* 3*0  
@@ -1339,7 +1339,7 @@ The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
 
 
 *Mnemonics:* Number of GRIDS  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
@@ -1368,7 +1368,7 @@ ngqpt_igrid(ii)=(ng2qpt(ii)*igrid)/**ngrids**
 
 
 *Mnemonics:* Non-Linear FLAG  
-*Mentioned in topic(s):* nonlinear_compulsory  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1396,7 +1396,7 @@ Non-linear properties flag.
 
 
 *Mnemonics:* Number of PHonons in List 1  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1417,7 +1417,7 @@ the corresponding eigenfrequencies will be printed.
 
 
 *Mnemonics:* Number of PHonons in List 2  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1447,7 +1447,7 @@ without non-analyticities.
 
 
 *Mnemonics:* Number of Q wavevectors defining a PATH  
-*Mentioned in topic(s):* PhononBands_basic, PhononWidth_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]], [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1464,7 +1464,7 @@ the phonon band structure and phonon linewidths are interpolated.
 
 
 *Mnemonics:* Number of Q SHiFTs  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1484,7 +1484,7 @@ sampling (Warning: not BCC lattice, BCC *sampling*), and 4 for FCC sampling
 
 
 *Mnemonics:* Number of atoms in SPHERe  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1522,7 +1522,7 @@ Transform.
 
 
 *Mnemonics:* Number of STRain components FIXed  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1544,7 +1544,7 @@ constrained polarization. See [[anaddb:polflag]].
 
 
 *Mnemonics:* Number of TEMPERatures  
-*Mentioned in topic(s):* Temperature_basic  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
@@ -1568,7 +1568,7 @@ temperature.
 
 
 *Mnemonics:* Number of Widths of CHANnels  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
@@ -1597,7 +1597,7 @@ converged when the convergence criterion based on [[anaddb:dostol]] and
 
 
 *Mnemonics:* OUTput files for BOLTZTRAP code  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1620,7 +1620,7 @@ velocities. The output file will be appended _BTRAP
 
 
 *Mnemonics:* OUTput files for Self Consistent PHONons  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1643,7 +1643,7 @@ for Primitive Cell INFOrmation.
 
 
 *Mnemonics:* PIEZOelectric tensor FLAG  
-*Mentioned in topic(s):* Elastic_basic  
+*Mentioned in topic(s):* [[topic:Elastic]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1674,7 +1674,7 @@ Flag for calculation of piezoelectric tensors
 
 
 *Mnemonics:* POLarization FLAG  
-*Mentioned in topic(s):* ConstrainedPol_compulsory  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1719,7 +1719,7 @@ calculation of the effective charges and the piezoelectric tensor.
 
 
 *Mnemonics:* PRinT the Interatomic Force Constants  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1744,7 +1744,7 @@ available options are:
 
 
 *Mnemonics:* PRinT input files for BoLTZTRaP code.  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1765,7 +1765,7 @@ Test list:
 
 
 *Mnemonics:* PRinT the Derivative DataBase files  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1792,7 +1792,7 @@ The available options are:
 
 
 *Mnemonics:* PRinT the phonon Density Of States  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1826,7 +1826,7 @@ through the input variable [[anaddb:dosdeltae]].
 
 
 *Mnemonics:* PRinT the Fermi SURFace  
-*Mentioned in topic(s):* ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1861,7 +1861,7 @@ this array must be zero.
 
 
 *Mnemonics:* PRinT Mode-By-Mode decomposition of the electrooptic tensor  
-*Mentioned in topic(s):* nonlinear_useful  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1885,7 +1885,7 @@ Test list:
 
 
 *Mnemonics:* PRinT the NESTing function  
-*Mentioned in topic(s):* PhononWidth_useful  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1925,7 +1925,7 @@ reciprocal space, moreover off-diagonal elements are not allowed, i.e kptrlatt
 
 
 *Mnemonics:* PRinT PHonon BANDS  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1950,7 +1950,7 @@ phonon band structure. Possible values:
 
 
 *Mnemonics:* PRinT the Short-Range/Long-Range decomposition of phonon FREQuencies  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1976,7 +1976,7 @@ For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 
 
 *Mnemonics:* PRinT VOLume  
-*Mentioned in topic(s):* Phonons_useful, PhononBands_useful, Temperature_useful, PhononWidth_useful, ElPhonTransport_useful  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]], [[topic:Temperature]], [[topic:PhononWidth]], [[topic:ElPhonTransport]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1997,7 +1997,7 @@ Control the volume of printed output.
 
 
 *Mnemonics:* Q shifts for the grid number 1  
-*Mentioned in topic(s):* Phonons_useful, PhononBands_useful  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* ([[anaddb:nqshft]])  
 *Default value:* 0  
@@ -2054,7 +2054,7 @@ For a FCC lattice, it is possible to sample only the Gamma point by using a
 
 
 *Mnemonics:* Q points SHiFTs for the grids 2  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3* 0  
@@ -2079,7 +2079,7 @@ Note that [[anaddb:nqshft]] for this series of grids corresponds to 1.
 
 
 *Mnemonics:* Q GRID TYPE  
-*Mentioned in topic(s):* PhononWidth_expert  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2103,7 +2103,7 @@ to a regular grid as in the rest of anaddb (using [[anaddb:ngqpt]]).
 
 
 *Mnemonics:* Q wavevectors defining a PATH  
-*Mentioned in topic(s):* PhononBands_basic, PhononWidth_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]], [[topic:PhononWidth]]  
 *Variable type:* real  
 *Dimensions:* (3,[[anaddb:nqpath]])  
 *Default value:* 0.0  
@@ -2124,7 +2124,7 @@ for the output of the nesting function if [[anaddb:prtnest]]=1.
 
 
 *Mnemonics:* Q for PHonon List 1  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* (4,[[anaddb:nph1l]])  
 *Default value:* 0  
@@ -2149,7 +2149,7 @@ fourth is stored in the array qnrml1(nph1l).
 
 
 *Mnemonics:* PHonon List 2  
-*Mentioned in topic(s):* PhononBands_basic  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* (4,[[anaddb:nph2l]])  
 *Default value:* 0  
@@ -2182,7 +2182,7 @@ fourth is stored in the array qnrml2(nph2l).
 
 
 *Mnemonics:* Q-point REFINEment order (experimental)  
-*Mentioned in topic(s):* PhononBands_expert  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* 0  
@@ -2209,7 +2209,7 @@ Should implement Gaal-Nagy's algorithm in PRB **73** 014117.
 
 
 *Mnemonics:* RAMAN Sum-Rule  
-*Mentioned in topic(s):* nonlinear_basic  
+*Mentioned in topic(s):* [[topic:nonlinear]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2243,7 +2243,7 @@ For the time being, **ramansr**=1 is the preferred choice.
 
 
 *Mnemonics:* RELAXation of AToms  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2265,7 +2265,7 @@ constrained polarization. See [[anaddb:polflag]].
 
 
 *Mnemonics:* RELAXation of STRain  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2287,7 +2287,7 @@ relaxation at constrained polarization. See [[anaddb:polflag]].
 
 
 *Mnemonics:* Response-Function METHod  
-*Mentioned in topic(s):* Phonons_expert  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2318,7 +2318,7 @@ is less accurate.
 
 
 *Mnemonics:* Radius of the Interatomic Force Constant SPHere  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* zero  
@@ -2345,7 +2345,7 @@ not be put to zero.
 
 
 *Mnemonics:* SeLECT Z  
-*Mentioned in topic(s):* Phonons_expert  
+*Mentioned in topic(s):* [[topic:Phonons]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2379,7 +2379,7 @@ The result with non-zero **selectz** are unphysical.
 
 
 *Mnemonics:* SYMmetrize the DYNamical MATrix  
-*Mentioned in topic(s):* Phonons_useful, PhononBands_useful  
+*Mentioned in topic(s):* [[topic:Phonons]], [[topic:PhononBands]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2404,7 +2404,7 @@ additional symmetrization.
 
 
 *Mnemonics:* SYMmetrize the GKk matrix elements for each Q  
-*Mentioned in topic(s):* ElPhonInt_expert  
+*Mentioned in topic(s):* [[topic:ElPhonInt]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2427,7 +2427,7 @@ should always be used, except for debugging or test purposes.
 
 
 *Mnemonics:* TARGET POLarization  
-*Mentioned in topic(s):* ConstrainedPol_useful  
+*Mentioned in topic(s):* [[topic:ConstrainedPol]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 0.0  
@@ -2449,7 +2449,7 @@ Target value of the polarization in cartesian coordinates and in C/m^2. See
 
 
 *Mnemonics:* Technique for ELectron-PHonon INTegration  
-*Mentioned in topic(s):* ElPhonTransport_basic, PhononWidth_basic  
+*Mentioned in topic(s):* [[topic:ElPhonTransport]], [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2477,7 +2477,7 @@ phonon quantities.
 
 
 *Mnemonics:* TEMPERature INCrease  
-*Mentioned in topic(s):* Temperature_basic  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100.0  
@@ -2500,7 +2500,7 @@ temperature.
 
 
 *Mnemonics:* TEMPERature MINimum  
-*Mentioned in topic(s):* Temperature_basic  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100.0  
@@ -2524,7 +2524,7 @@ anharmonic effects might be important already at room temperature.
 
 
 *Mnemonics:* THerMal FLAG  
-*Mentioned in topic(s):* Temperature_compulsory  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2560,7 +2560,7 @@ Input variables that may be needed if this flag is activated:
 
 
 *Mnemonics:* THerModynamic TOLerance  
-*Mentioned in topic(s):* Temperature_useful  
+*Mentioned in topic(s):* [[topic:Temperature]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
@@ -2588,7 +2588,7 @@ the next bigger is smaller than **thmtol**.
 
 
 *Mnemonics:* USE K-grid FINEr than the coarse k-grid  
-*Mentioned in topic(s):* PhononWidth_expert  
+*Mentioned in topic(s):* [[topic:PhononWidth]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2611,7 +2611,7 @@ needed. Note that the coarse k-grid must be a subset of the fine k-grid.
 
 
 *Mnemonics:* Speed of Sound Q-radius, TOLerance KiloMeter/Second  
-*Mentioned in topic(s):* PhononBands_useful  
+*Mentioned in topic(s):* [[topic:PhononBands]]  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* 2*0.0d0  

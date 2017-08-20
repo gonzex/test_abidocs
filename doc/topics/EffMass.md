@@ -1,6 +1,9 @@
 ---
 authors: JLaflamme
 ---
+
+## ** Introduction **
+
 The direct estimation of effective masses from DFT band curvature using
 [[topic:DFPT]] has been implemented within the linear response part of ABINIT
 [[Laflamme2016]]. This method avoids the use of finite differences to estimate
@@ -33,4 +36,36 @@ structure (which are the most relevant in any case).
 
 By the way, the first derivative of the eigenenergies is also computed and
 printed during a d/dk calculation, and corresponds to the electronic velocity.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:efmas_dirs]]  EFfective MASs, DIRectionS to be calculated
+- [[abinit:efmas_n_dirs]]  EFfective MASs, Number of DIRectionS
+- [[abinit:efmas_ntheta]]  EFfective MASs, Number of points for integration w/r to THETA
+ 
+*compulsory:*
+
+- [[abinit:efmas]]  EFfective MASs
+- [[abinit:rfelfd]]  Response Function with respect to the ELectric FielD
+ 
+*useful:*
+
+- [[abinit:efmas_bands]]  EFfective MASs, BANDS to be treated.
+- [[abinit:efmas_calc_dirs]]  EFfective MASs, CALCulate along DIRectionS
+- [[abinit:efmas_deg]]  EFfective MASs, activate DEGenerate formalism
+- [[abinit:efmas_deg_tol]]  EFfective MASs, DEGeneracy TOLerance
+- [[abinit:efmas_dim]]  EFfective MASs, DIMension of the effective mass tensor
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t80.in]]
+- [[tests/v7/Input/t81.in]]
+ 
 

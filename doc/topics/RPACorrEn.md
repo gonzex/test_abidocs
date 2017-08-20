@@ -1,6 +1,9 @@
 ---
 authors: FB
 ---
+
+## ** Introduction **
+
 In the adiabatic-connection fluctuation-dissipation framework, the correlation
 energy of an electronic system can be related to the density-density
 correlation function, also known as the reducible polarizability. When further
@@ -28,4 +31,20 @@ The convergence versus empty states and energy cutoff is generally very slow.
 
 It requires a careful convergence study. The situation can be improved with
 the use of an extrapolation scheme ([[Bruneval2008]],[[Harl2010]]).
+
+
+
+## ** Related Input Variables **
+
+*expert:*
+
+- [[abinit:gwrpacorr]]  GW RPA CORRelation energy
+ 
+
+## ** Selected Input Files **
+
+*v67mbpt:*
+
+- [[tests/v67mbpt/Input/t19.in]]
+ 
 

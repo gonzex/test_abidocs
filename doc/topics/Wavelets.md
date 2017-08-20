@@ -1,6 +1,9 @@
 ---
 authors: MT
 ---
+
+## ** Introduction **
+
 A wavelet basis (instead of a plane wave basis) can be used in ABINIT. With a
 wavelet basis, one can perform basic static DFT calculations with selected
 norm-conserving pseudopotentials (HGH or GTH pseudopotentials
@@ -11,4 +14,61 @@ Molecular dynamic is also available for test purposes.
 
 However, DFPT or excited-state calculations (except Δ-SCF) cannot be
 performed.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:wvl_crmult]]  WaVeLet Coarse grid Radius MULTiplier
+- [[abinit:wvl_frmult]]  WaVeLet Fine grid Radius MULTiplier
+- [[abinit:wvl_hgrid]]  WaVeLet H step GRID
+ 
+*compulsory:*
+
+- [[abinit:usewvl]]  Use WaVeLet basis set
+ 
+*expert:*
+
+- [[abinit:tl_nprccg]]  TaiL maximum Number of PReConditionner Conjugate Gradient iterations
+- [[abinit:wvl_bigdft_comp]]  WaVeLet BigDFT Comparison
+- [[abinit:wvl_ngauss]]  WaVeLet Number of GAUSSians
+- [[abinit:wvl_nprccg]]  WaVeLet maximum Number of PReConditionner Conjugate Gradient iterations
+ 
+*useful:*
+
+- [[abinit:nwfshist]]  Number of WaveFunctionS HISTory
+- [[abinit:tl_radius]]  TaiL expansion RADIUS
+ 
+
+## ** Selected Input Files **
+
+*bigdft:*
+
+- [[tests/bigdft/Input/t01.in]]
+- [[tests/bigdft/Input/t02.in]]
+- [[tests/bigdft/Input/t03.in]]
+- [[tests/bigdft/Input/t04.in]]
+- [[tests/bigdft/Input/t05.in]]
+- [[tests/bigdft/Input/t06.in]]
+- [[tests/bigdft/Input/t07.in]]
+- [[tests/bigdft/Input/t09.in]]
+- [[tests/bigdft/Input/t10.in]]
+- [[tests/bigdft/Input/t11.in]]
+- [[tests/bigdft/Input/t12.in]]
+- [[tests/bigdft/Input/t14.in]]
+- [[tests/bigdft/Input/t16.in]]
+- [[tests/bigdft/Input/t17.in]]
+- [[tests/bigdft/Input/t18.in]]
+- [[tests/bigdft/Input/t31.in]]
+- [[tests/bigdft/Input/t32.in]]
+- [[tests/bigdft/Input/t33.in]]
+- [[tests/bigdft/Input/t34.in]]
+ 
+*bigdft_paral:*
+
+- [[tests/bigdft_paral/Input/t01.in]]
+- [[tests/bigdft_paral/Input/t02.in]]
+ 
 

@@ -1,6 +1,9 @@
 ---
 authors: YPouillon, BVanTroeye
 ---
+
+## ** Introduction **
+
 It is well known that long range correlations responsible of van der Waals
 interactions are out of reach for both LDA and GGA approximations to the
 exchange-correlation energy in DFT. In recent years several methods have been
@@ -59,4 +62,72 @@ directions of the corresponding primitive vector. This is useful for studying
 the spacial convergency of the vdW energy. It should be noticed that the user
 must set the variables associated to the calculation of MLWFs and that the
 resulting vdW energies strongly depend on the obtained Wannier functions.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:vdw_nfrag]]  Van Der Waals Number of interacting FRAGments
+- [[abinit:vdw_supercell]]  Van Der Waals correction from Wannier functions in SUPERCELL
+- [[abinit:vdw_tol_3bt]]  Van Der Waals TOLerance for 3-Body Term
+- [[abinit:vdw_typfrag]]  Van Der Waals TYPe of FRAGment
+ 
+*compulsory:*
+
+- [[abinit:vdw_tol]]  Van Der Waals TOLerance
+- [[abinit:vdw_xc]]  Van Der Waals eXchange-Correlation functional
+ 
+*expert:*
+
+- [[abinit:vdw_df_acutmin]]  vdW-DF MINimum Angular CUT-off
+- [[abinit:vdw_df_aratio]]  vdW-DF Angle RATIO between the highest and
+lowest angles.
+- [[abinit:vdw_df_damax]]  vdW-DF Delta for Angles, MAXimum 
+- [[abinit:vdw_df_damin]]  vdW-DF Delta for Angles, MINimum
+- [[abinit:vdw_df_dcut]]  vdW-DF D-mesh CUT-off
+- [[abinit:vdw_df_dratio]]  vdW-DF, between the highest and
+lowest D, RATIO.
+- [[abinit:vdw_df_dsoft]]  vdW-DF Distance for SOFTening.
+- [[abinit:vdw_df_gcut]]  vdW-DF G-space CUT-off
+- [[abinit:vdw_df_ndpts]]  vdW-DF Number of D-mesh PoinTS
+- [[abinit:vdw_df_ngpts]]  vdW-DF Number of G-mesh PoinTS
+- [[abinit:vdw_df_nqpts]]  vdW-DF Number of Q-mesh PoinTS
+- [[abinit:vdw_df_nrpts]]  vdW-DF Number of R-PoinTS
+- [[abinit:vdw_df_nsmooth]]  vdW-DF Number of SMOOTHening iterations
+- [[abinit:vdw_df_phisoft]]  vdW-DF PHI value SOFTening.
+- [[abinit:vdw_df_qcut]]  vdW-DF Q-mesh CUT-off
+- [[abinit:vdw_df_qratio]]  vdW-DF, between highest and lowest Q, RATIO .
+- [[abinit:vdw_df_rcut]]  vdW-DF Real-space CUT-off
+- [[abinit:vdw_df_rsoft]]  vdW-DF radius SOFTening.
+- [[abinit:vdw_df_threshold]]  vdW-DF energy calculation THRESHOLD
+- [[abinit:vdw_df_tolerance]]  vdW-DF global TOLERANCE.
+- [[abinit:vdw_df_tweaks]]  vdW-DF TWEAKS.
+- [[abinit:vdw_df_zab]]  vdW-DF ZAB parameter
+ 
+*useful:*
+
+- [[abinit:irdvdw]]  Integer that governs the ReaDing of _VDW files
+- [[abinit:prtwf]]  PRinT the WaveFunction
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t97.in]]
+- [[tests/v7/Input/t98.in]]
+- [[tests/v7/Input/t99.in]]
+ 
+*vdwxc:*
+
+- [[tests/vdwxc/Input/t10.in]]
+ 
+*wannier90:*
+
+- [[tests/wannier90/Input/t11.in]]
+- [[tests/wannier90/Input/t12.in]]
+- [[tests/wannier90/Input/t13.in]]
+ 
 

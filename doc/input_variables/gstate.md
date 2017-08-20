@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* ALGorithm for generating ALCHemical pseudopotentials  
-*Mentioned in topic(s):* AtomTypes_expert  
+*Mentioned in topic(s):* [[topic:AtomTypes]]  
 *Variable type:* integer  
 *Dimensions:* ([[ntypalch]])  
 *Default value:* *1  
@@ -40,7 +40,7 @@ Note that alchemical mixing cannot be used with PAW.
 
 
 *Mnemonics:* BOX CENTER  
-*Mentioned in topic(s):* TDDFT_basic  
+*Mentioned in topic(s):* [[topic:TDDFT]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0.5, 0.5, 0.5]  
@@ -62,7 +62,7 @@ cluster or molecule is close to the origin, it is better to take
 
 
 *Mnemonics:* BOX CUT-off MINimum  
-*Mentioned in topic(s):* Planewaves_useful, TuningSpeed_basic  
+*Mentioned in topic(s):* [[topic:Planewaves]], [[topic:TuningSpeed]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
@@ -94,7 +94,7 @@ starting response function calculation.
 
 
 *Mnemonics:* CHARGE  
-*Mentioned in topic(s):* Coulomb_basic  
+*Mentioned in topic(s):* [[topic:Coulomb]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -122,7 +122,7 @@ To treat a neutral system, which is desired in nearly all cases, one must use
 
 
 *Mnemonics:* CHecK whether the user want to EXIT  
-*Mentioned in topic(s):* Control_useful  
+*Mentioned in topic(s):* [[topic:Control]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -156,7 +156,7 @@ In all cases, the check is performed at most every 2 seconds of CPU time.
 
 
 *Mnemonics:* CHecK whether the cell is PRIMitive  
-*Mentioned in topic(s):* crystal_useful, UnitCell_useful, SmartSymm_useful  
+*Mentioned in topic(s):* [[topic:crystal]], [[topic:UnitCell]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -177,7 +177,7 @@ might generate a PRIMITIVE cell using [[brvltt]]=-1 .
 
 
 *Mnemonics:* CHecK SYMmetry BREAKing  
-*Mentioned in topic(s):* k-points_basic  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -231,7 +231,7 @@ symmetric point ; or ignore the problem, and set [[chksymbreak]]=0 .
 
 
 *Mnemonics:* CPU time limit in Hours  
-*Mentioned in topic(s):* Control_useful  
+*Mentioned in topic(s):* [[topic:Control]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -258,7 +258,7 @@ A zero value has no action of the job.
 
 
 *Mnemonics:* CPU time limit in Minutes  
-*Mentioned in topic(s):* Control_useful  
+*Mentioned in topic(s):* [[topic:Control]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -285,7 +285,7 @@ A zero value has no action of the job.
 
 
 *Mnemonics:* CPU time limit in seconds  
-*Mentioned in topic(s):* Control_useful  
+*Mentioned in topic(s):* [[topic:Control]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -315,7 +315,7 @@ A zero value has no action of the job.
 
 
 *Mnemonics:* DIElectric matrix energy CUToff  
-*Mentioned in topic(s):* SCFAlgorithms_expert  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.2  
@@ -343,7 +343,7 @@ No meaning for RF calculations yet.
 
 
 *Mnemonics:* DIElectric matrix GAP  
-*Mentioned in topic(s):* SCFAlgorithms_expert  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1  
@@ -371,7 +371,7 @@ No meaning for RF calculations yet.
 
 
 *Mnemonics:* DIElectric matrix LAMbda  
-*Mentioned in topic(s):* SCFAlgorithms_expert  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.5  
@@ -398,7 +398,7 @@ No meaning for RF calculations yet.
 
 
 *Mnemonics:* model DIElectric screening LeNGth  
-*Mentioned in topic(s):* SCFAlgorithms_useful  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0774841d0  
@@ -445,7 +445,7 @@ This works for GS and RF calculations.
 
 
 *Mnemonics:* model DIElectric MACroscopic constant  
-*Mentioned in topic(s):* SCFAlgorithms_useful  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1000000.0  
@@ -484,7 +484,7 @@ the wavevector.
 
 
 *Mnemonics:* model DIElectric MIXing factor  
-*Mentioned in topic(s):* SCFAlgorithms_useful  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0 if [[usepaw]]==0 or [[iprcel]] !=0,
@@ -516,7 +516,7 @@ Also note that a different value of diemix can be used for the magnetization
 
 
 *Mnemonics:* model DIElectric MIXing factor for the MAGgnetization  
-*Mentioned in topic(s):* spinpolarisation_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[diemix]] if 70 < [[iprcel]] and [[iprcel]] < 80,
@@ -555,7 +555,7 @@ preconditionner on magnetization).
 
 
 *Mnemonics:* DOS DELTA in Energy  
-*Mentioned in topic(s):* printing_prdos, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElecDOS]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -583,7 +583,7 @@ from the tetrahedron method, [[prtdos]]=2, is rapidly varying.
 
 
 *Mnemonics:* ENergy UNITs  
-*Mentioned in topic(s):* Output_useful  
+*Mentioned in topic(s):* [[topic:Output]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -610,7 +610,7 @@ If phonon frequencies are to be computed :
 
 
 *Mnemonics:* Factor for the number of BANDs  
-*Mentioned in topic(s):* BandOcc_useful  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.125 if [[occopt]]==1,
@@ -654,7 +654,7 @@ this, so a fixed default value has been chosen.
 
 
 *Mnemonics:* Index for the ATomic SPHeres of the atom-projected density-of-states  
-*Mentioned in topic(s):* printing_prdos, ElecBandStructure_useful, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElecBandStructure]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* ([[natsph]])  
 *Default value:* [1 .. [[natsph]]]  
@@ -684,7 +684,7 @@ which atom-projected band structure will be built.
 
 
 *Mnemonics:* Index for the Coulomb TReaTMenT  
-*Mentioned in topic(s):* Coulomb_useful  
+*Mentioned in topic(s):* [[topic:Coulomb]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -704,7 +704,7 @@ pseudo-potential and ion-ion interaction:
 
 
 *Mnemonics:* Integer for PReConditioning of ELectron response  
-*Mentioned in topic(s):* SCFAlgorithms_expert  
+*Mentioned in topic(s):* [[topic:SCFAlgorithms]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -752,7 +752,7 @@ NOTES:
 
 
 *Mnemonics:* Index for QPoinT generation  
-*Mentioned in topic(s):* q-points_basic  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -785,7 +785,7 @@ increasing it by one for each dataset (thanks to ** iqpt+ ** ).
 
 
 *Mnemonics:* Integer for the eXchange-Correlation applied to the electron-POSITRON interaction  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -836,7 +836,7 @@ References:  ** [1] ** J. Arponen and E. Pajanne, Ann. Phys. (N.Y.) 121, 343
 
 
 *Mnemonics:* include a JELLium SLAB in the cell  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -868,7 +868,7 @@ the input variables [[slabzbeg]] and [[slabzend]].
 
 
 *Mnemonics:* K PoinT BOUNDarieS  
-*Mentioned in topic(s):* k-points_useful, ElecBandStructure_basic  
+*Mentioned in topic(s):* [[topic:k-points]], [[topic:ElecBandStructure]]  
 *Variable type:* real  
 *Dimensions:* (3,abs([[kptopt]])+1))  
 *Default value:* None  
@@ -1111,7 +1111,7 @@ l(L-Gamma)=sqrt(4/(a^2)+1/(c^2))/3 l(Gamma-X)=sqrt(1/(a^2)+1/(c^2))*2/3
 
 
 *Mnemonics:* K - PoinTs grid : Real space LATTice  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* *0  
@@ -1142,7 +1142,7 @@ procedure.
 
 
 *Mnemonics:* K - PoinTs grid : Real space LENgth  
-*Mentioned in topic(s):* k-points_useful  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 30.0  
@@ -1189,7 +1189,7 @@ only generate the Gamma point.
 
 
 *Mnemonics:* MAGnetization CONstraint LAMBDA parameter  
-*Mentioned in topic(s):* MagMom_useful  
+*Mentioned in topic(s):* [[topic:MagMom]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
@@ -1215,7 +1215,7 @@ The constraint will be weak and the magnetization will not be close to
 
 
 *Mnemonics:* turn MAGnetization CONstraint ON  
-*Mentioned in topic(s):* MagMom_useful  
+*Mentioned in topic(s):* [[topic:MagMom]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1242,7 +1242,7 @@ convergence) nor too small (no effect).
 
 
 *Mnemonics:* MIXing coefficients for ALCHemical potentials  
-*Mentioned in topic(s):* AtomTypes_useful  
+*Mentioned in topic(s):* [[topic:AtomTypes]]  
 *Variable type:* real  
 *Dimensions:* ([[npspalch]],[[ntypalch]])  
 *Default value:* None  
@@ -1327,7 +1327,7 @@ should be identical.
 
 
 *Mnemonics:* Number of ATomic SPHeres for the atom-projected density-of-states  
-*Mentioned in topic(s):* printing_prdos, ElecBandStructure_useful, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:ElecBandStructure]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
@@ -1359,7 +1359,7 @@ by [[iatsph]]).
 
 
 *Mnemonics:* Number of ATomic SPHeres for the l-projected density-of-states in EXTRA set  
-*Mentioned in topic(s):* printing_prdos  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1388,7 +1388,7 @@ The position of the spheres is given by the [[xredsph_extra]] variable.
 
 
 *Mnemonics:* Number of BanDs for the BUFfer  
-*Mentioned in topic(s):* SCFControl_useful, BandOcc_useful  
+*Mentioned in topic(s):* [[topic:SCFControl]], [[topic:BandOcc]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2*[[nspinor]] if [[optdriver]]==0 and [[iscf]]<0,
@@ -1443,7 +1443,7 @@ irrespective of the value of [[nbdbuf]].
 
 
 *Mnemonics:* Number of DIVisions of K lines  
-*Mentioned in topic(s):* k-points_useful, ElecBandStructure_useful  
+*Mentioned in topic(s):* [[topic:k-points]], [[topic:ElecBandStructure]]  
 *Variable type:* integer  
 *Dimensions:* (abs([[kptopt]]))  
 *Default value:* None  
@@ -1494,7 +1494,7 @@ related input variable [[ndivsm]].
 
 
 *Mnemonics:* Number of DIVisions for the SMallest segment  
-*Mentioned in topic(s):* k-points_useful, ElecBandStructure_basic  
+*Mentioned in topic(s):* [[topic:k-points]], [[topic:ElecBandStructure]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -1527,7 +1527,7 @@ only when [[kptopt]] is negative. In this case, the absolute value of
 
 
 *Mnemonics:* Number of Grid points for Fast Fourier Transform  
-*Mentioned in topic(s):* Planewaves_useful  
+*Mentioned in topic(s):* [[topic:Planewaves]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -1581,7 +1581,7 @@ while in reciprocal space, it is n1*n2proc*n3.
 
 
 *Mnemonics:* Number of Grid pointsfor Q PoinTs generation  
-*Mentioned in topic(s):* q-points_basic  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -1615,7 +1615,7 @@ For more information on Monkhorst-Pack grids, see [[ngkpt]].
 
 
 *Mnemonics:* Number of LINE minimisations  
-*Mentioned in topic(s):* SCFControl_expert  
+*Mentioned in topic(s):* [[topic:SCFControl]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
@@ -1638,7 +1638,7 @@ subspace spanned by the input wavefunctions.
 
 
 *Mnemonics:* Number of PSeudoPotentials  
-*Mentioned in topic(s):* AtomTypes_useful, PseudosPAW_expert  
+*Mentioned in topic(s):* [[topic:AtomTypes]], [[topic:PseudosPAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[ntypat]]  
@@ -1665,7 +1665,7 @@ potentials in ABINIT.
 
 
 *Mnemonics:* Number of PSeudoPotentials that are "ALCHemical"  
-*Mentioned in topic(s):* AtomTypes_internal  
+*Mentioned in topic(s):* [[topic:AtomTypes]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[npsp]]-[[ntyppure]]  
@@ -1689,7 +1689,7 @@ Gives the number of pseudopotentials that are used for alchemical mixing (when
 
 
 *Mnemonics:* Number of Q - POINTs  
-*Mentioned in topic(s):* q-points_basic  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1711,7 +1711,7 @@ if 1 and a RF calculation is done, defines the wavevector of the perturbation.
 
 
 *Mnemonics:* Number of SHIFTs for Q point grids  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1737,7 +1737,7 @@ defined either from [[ngqpt]] or [[qptrlatt]]. The maximum allowed value of
 
 
 *Mnemonics:* Number of SPin-DENsity components  
-*Mentioned in topic(s):* spinpolarisation_basic  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[nsppol]]  
@@ -1772,7 +1772,7 @@ magnetization.
 
 
 *Mnemonics:* Number of SPINORial components of the wavefunctions  
-*Mentioned in topic(s):* spinpolarisation_basic  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2 if [[pawspnorb]]==1,
@@ -1797,7 +1797,7 @@ Also, the number of bands, for each k-point, should be even.
 
 
 *Mnemonics:* Number of TYPe of atoms that are "ALCHemical"  
-*Mentioned in topic(s):* AtomTypes_useful  
+*Mentioned in topic(s):* [[topic:AtomTypes]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1832,7 +1832,7 @@ potentials in ABINIT.
 
 
 *Mnemonics:* Number of TYPe of atoms that are "PURe"  
-*Mentioned in topic(s):* AtomTypes_internal  
+*Mentioned in topic(s):* [[topic:AtomTypes]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[ntypat]]-[[ntypalch]]  
@@ -1855,7 +1855,7 @@ used ([[ntypalch]] /= 0) :
 
 
 *Mnemonics:* NUClear DIPole MOMents  
-*Mentioned in topic(s):* MagField_expert  
+*Mentioned in topic(s):* [[topic:MagField]]  
 *Variable type:* real  
 *Dimensions:* (3,[[natom]])  
 *Default value:* 0.0  
@@ -1880,7 +1880,7 @@ dipoles breaks time reversal symmetry and lowers the overall spatial symmetry.
 
 
 *Mnemonics:* Number of WaveFunctionS HISTory  
-*Mentioned in topic(s):* Wavelets_useful  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1907,7 +1907,7 @@ wavefunctions are stored during the electronic minimisation.
 
 
 *Mnemonics:* OCCupation numbers  
-*Mentioned in topic(s):* BandOcc_basic  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* real  
 *Dimensions:* ([[nband]])  
 *Default value:* *0  
@@ -1938,7 +1938,7 @@ The occupation numbers evolve only for metallic occupations, that is,
 
 
 *Mnemonics:* OPTions for the DRIVER  
-*Mentioned in topic(s):* nonlinear_compulsory, GWls_compulsory, ElPhonInt_compulsory, GW_compulsory, BSE_compulsory, DFPT_compulsory, Susceptibility_compulsory, SelfEnergy_compulsory  
+*Mentioned in topic(s):* [[topic:nonlinear]], [[topic:GWls]], [[topic:ElPhonInt]], [[topic:GW]], [[topic:BSE]], [[topic:DFPT]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1976,7 +1976,7 @@ and [[rfstrs]]) must be zero if [[optdriver]] is not set to 1.
 
 
 *Mnemonics:* OPTion for the computation of STRESS  
-*Mentioned in topic(s):* ForcesStresses_basic  
+*Mentioned in topic(s):* [[topic:ForcesStresses]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1997,7 +1997,7 @@ for some PAW calculations.
 
 
 *Mnemonics:* POSitron computation of DOPPLER broadening  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2029,7 +2029,7 @@ type). Core WF files can be obtained with the atompaw tool by the use of
 
 
 *Mnemonics:* POSITRON calculation  
-*Mentioned in topic(s):* positron_compulsory  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2176,7 +2176,7 @@ References:
 
 
 *Mnemonics:* POSitron calculation: max. Number of STEPs for the two-component DFT  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 50  
@@ -2206,7 +2206,7 @@ number of electronic/positronic steps is [[posnstep]].
 
 
 *Mnemonics:* POSitron calculation: OCCupation number for the positron  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -2234,7 +2234,7 @@ crystal.
 
 
 *Mnemonics:* POSitron calculation: TOLerance on the DiFference of total Energy  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-06 if [[postoldff]]=0,
@@ -2267,7 +2267,7 @@ Only one and only one of [[postoldfe]] or [[postoldff]] can be set.
 
 
 *Mnemonics:* POSitron calculation: TOLerance on the DiFference of Forces  
-*Mentioned in topic(s):* positron_basic  
+*Mentioned in topic(s):* [[topic:positron]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2293,7 +2293,7 @@ Only one and only one of [[postoldfe]] or [[postoldff]] can be set.
 
 
 *Mnemonics:* PRinT integral of DENsity inside atomic SPHeres  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 otherwise.
@@ -2331,7 +2331,7 @@ density within a sphere, you should use the cut3d postprocessor.
 
 
 *Mnemonics:* PRinT Electron BANDS  
-*Mentioned in topic(s):* printing_prden  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[nimage]] > 1,
@@ -2360,7 +2360,7 @@ This option activates the output of the electron eigenvalues. Possible values:
 
 
 *Mnemonics:* Q PoinT  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -2382,7 +2382,7 @@ used to echo the value of [[qptn]](1:3), with renormalisation factor one.
 
 
 *Mnemonics:* Q PoinTs NoRMalization  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -2406,7 +2406,7 @@ vector (renormalized) is [[qptn]](1:3)= [[qpt]](1:3)/[[qptnrm]].
 
 
 *Mnemonics:* QPoinTs OPTion  
-*Mentioned in topic(s):* q-points_basic  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -2455,7 +2455,7 @@ to the case of the K point grid.
 
 
 *Mnemonics:* Q - PoinTs grid : Real space LATTice  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* *0  
@@ -2491,7 +2491,7 @@ procedure.
 
 
 *Mnemonics:* Radii of the ATomic SPHere(s)  
-*Mentioned in topic(s):* printing_prdos, MagMom_useful, ElecBandStructure_useful, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:MagMom]], [[topic:ElecBandStructure]], [[topic:ElecDOS]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* [['AUTO_FROM_PSP']] if usepaw==1,
@@ -2548,7 +2548,7 @@ r_paw).
 
 
 *Mnemonics:* Radii of the ATomic SPHere(s) in the EXTRA set  
-*Mentioned in topic(s):* printing_prdos  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0 Bohr  
@@ -2570,7 +2570,7 @@ Radius for extra spheres the DOS is projected into. See [[natsph_extra]] and
 
 
 *Mnemonics:* Self Consistent PHONon SUPERCELL  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
@@ -2595,7 +2595,7 @@ consistent phonon calculations, David Waroquiers 090831
 
 
 *Mnemonics:* Self Consistent PHONon TEMPerature  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2618,7 +2618,7 @@ Experimental.
 
 
 *Mnemonics:* SHIFT for Q points  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* (3,[[nshiftq]])  
 *Default value:* None if [[nshiftq]]>1,
@@ -2649,7 +2649,7 @@ values for these shifts.
 
 
 *Mnemonics:* jellium SLAB Wigner-Seitz RADius  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2687,7 +2687,7 @@ By default, given in Bohr atomic units (1 Bohr=0.5291772108 Angstroms).
 
 
 *Mnemonics:* jellium SLAB BEGinning edge along the Z direction  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [0.0, 0.0]  
@@ -2731,7 +2731,7 @@ electrostatic potential generated by it.
 
 
 *Mnemonics:* jellium SLAB ENDing edge along the Z direction  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [0.0, 0.0]  
@@ -2775,7 +2775,7 @@ electrostatic potential generated by it.
 
 
 *Mnemonics:* Spin-Orbit treatment for each PSeudoPotential  
-*Mentioned in topic(s):* spinpolarisation_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* ([[npsp]])  
 *Default value:* [[npsp]]*1  
@@ -2816,7 +2816,7 @@ and so_typat, it was dangerous to continue to allow the use of so_typat.
 
 
 *Mnemonics:* SPIN for AToms  
-*Mentioned in topic(s):* spinpolarisation_basic, crystal_useful, MagMom_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]], [[topic:crystal]], [[topic:MagMom]]  
 *Variable type:* real  
 *Dimensions:* [3, '[[natrd]]'] if [[natrd]]<[[natom]],
 [3, '[[natom]]'] otherwise.
@@ -2868,7 +2868,7 @@ then recommended to put [[nsym]]=1.
 
 
 *Mnemonics:* Scanning Tunneling Microscopy BIAS voltage  
-*Mentioned in topic(s):* STM_compulsory  
+*Mentioned in topic(s):* [[topic:STM]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -2900,7 +2900,7 @@ With [[occopt]]=7, one has also to specify an independent broadening
 
 
 *Mnemonics:* SYMmetries, Anti-FerroMagnetic characteristics  
-*Mentioned in topic(s):* spinpolarisation_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* ([[nsym]])  
 *Default value:* [[nsym]]*1  
@@ -2936,7 +2936,7 @@ In other cases they are not used.
 
 
 *Mnemonics:* TIMing OPTion  
-*Mentioned in topic(s):* Control_expert  
+*Mentioned in topic(s):* [[topic:Control]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[SEQUENTIAL]],
@@ -2977,7 +2977,7 @@ timer is timed. The sum of the independent parts is closer to 100% than for
 
 
 *Mnemonics:* TaiL maximum Number of PReConditionner Conjugate Gradient iterations  
-*Mentioned in topic(s):* Wavelets_expert  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 30  
@@ -3001,7 +3001,7 @@ Waroquiers 090831.
 
 
 *Mnemonics:* TaiL expansion RADIUS  
-*Mentioned in topic(s):* Wavelets_useful  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -3028,7 +3028,7 @@ exponential decay around the grid.
 
 
 *Mnemonics:* Temperature (PHYSical) of the ELectrons  
-*Mentioned in topic(s):* BandOcc_useful  
+*Mentioned in topic(s):* [[topic:BandOcc]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
@@ -3058,7 +3058,7 @@ define the entropy contribution to the free energy.
 
 
 *Mnemonics:* Temperature of SMEARing  
-*Mentioned in topic(s):* BandOcc_basic, STM_basic  
+*Mentioned in topic(s):* [[topic:BandOcc]], [[topic:STM]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01  
@@ -3089,7 +3089,7 @@ X. Gonze, Phys. Rev. B (2002).
 
 
 *Mnemonics:* USE Kinetic energy DENsity  
-*Mentioned in topic(s):* xc_expert  
+*Mentioned in topic(s):* [[topic:xc]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -3109,7 +3109,7 @@ consistency loop.
 
 
 *Mnemonics:* VACUUM identification  
-*Mentioned in topic(s):* k-points_expert  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* None  
@@ -3137,7 +3137,7 @@ have the presence or absence of vacuum.
 
 
 *Mnemonics:* VACuum WIDTH  
-*Mentioned in topic(s):* k-points_expert  
+*Mentioned in topic(s):* [[topic:k-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
@@ -3165,7 +3165,7 @@ empty of atoms.
 
 
 *Mnemonics:* WeighTs for the current Q-points  
-*Mentioned in topic(s):* q-points_useful  
+*Mentioned in topic(s):* [[topic:q-points]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -3187,7 +3187,7 @@ Gives the current q-point weight.
 
 
 *Mnemonics:* WaVeLet BigDFT Comparison  
-*Mentioned in topic(s):* Wavelets_expert  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -3207,7 +3207,7 @@ the two codes.
 
 
 *Mnemonics:* WaVeLet Coarse grid Radius MULTiplier  
-*Mentioned in topic(s):* Wavelets_basic  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 6.0  
@@ -3229,7 +3229,7 @@ This factor is responsible for the amount of used memory (see also
 
 
 *Mnemonics:* WaVeLet Fine grid Radius MULTiplier  
-*Mentioned in topic(s):* Wavelets_basic  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
@@ -3253,7 +3253,7 @@ This factor is responsible for the amount of used memory (see also
 
 
 *Mnemonics:* WaVeLet Number of GAUSSians  
-*Mentioned in topic(s):* Wavelets_expert  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [1, 100]  
@@ -3277,7 +3277,7 @@ to wvl_ngauss(2) Gaussians.
 
 
 *Mnemonics:* WaVeLet maximum Number of PReConditionner Conjugate Gradient iterations  
-*Mentioned in topic(s):* Wavelets_expert  
+*Mentioned in topic(s):* [[topic:Wavelets]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 5  
@@ -3296,7 +3296,7 @@ conjugate gradient iterations on each wavefunction convergence step.
 
 
 *Mnemonics:* X(position) in REDuced coordinates of the SPHeres for dos projection in the EXTRA set  
-*Mentioned in topic(s):* printing_prdos  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* real  
 *Dimensions:* (3,[[natsph_extra]])  
 *Default value:* *0.0  

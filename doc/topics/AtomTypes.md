@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 ABINIT needs to know the different types of atoms that form the system.
 
 The atoms assembled in a molecule or a solid are physically specified by their
@@ -34,4 +37,55 @@ present, and whose specific chemical properties are not crucial for the
 property of interest. Usually it is done only for isovalent species, and ions
 of quite similar radii. It is a reasonable interpolation technique for the
 electronic properties.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:amu]]  Atomic Mass Units
+- [[abinit:typat]]  TYPe of AToms
+ 
+*compulsory:*
+
+- [[abinit:ntypat]]  Number of TYPes of AToms
+- [[abinit:znucl]]  charge -Z- of the NUCLeus
+ 
+*expert:*
+
+- [[abinit:algalch]]  ALGorithm for generating ALCHemical pseudopotentials
+ 
+*internal:*
+
+- [[abinit:npspalch]]  Number of PSeudoPotentials that are "ALCHemical"
+- [[abinit:ntyppure]]  Number of TYPe of atoms that are "PURe"
+- [[abinit:ziontypat]]  Z (charge) of the IONs for the different TYPes of AToms
+ 
+*useful:*
+
+- [[abinit:mixalch]]  MIXing coefficients for ALCHemical potentials
+- [[abinit:npsp]]  Number of PSeudoPotentials
+- [[abinit:ntypalch]]  Number of TYPe of atoms that are "ALCHemical"
+ 
+
+## ** Selected Input Files **
+
+*v3:*
+
+- [[tests/v3/Input/t92.in]]
+- [[tests/v3/Input/t93.in]]
+- [[tests/v3/Input/t94.in]]
+- [[tests/v3/Input/t95.in]]
+- [[tests/v3/Input/t96.in]]
+- [[tests/v3/Input/t97.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t44.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t28.in]]
+ 
 

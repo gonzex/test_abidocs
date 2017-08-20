@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* BoX CuT-off MINimum for the Double Grid (PAW)  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
@@ -36,7 +36,7 @@ required level of accuracy.
 
 
 *Mnemonics:* initial Density MATrix for PAW+U  
-*Mentioned in topic(s):* DFT+U_useful, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:DFT+U]], [[topic:ElecDOS]]  
 *Variable type:* real  
 *Dimensions:* (2*max([[lpawu]])+1,2*max([[lpawu]])+1,max([[nsppol]], [[nspinor]]),[[natpawu]])  
 *Default value:* *-10.0  
@@ -113,7 +113,7 @@ one is ignored by the code.
 
 
 *Mnemonics:* Density MATrix for PAW+U OPTion  
-*Mentioned in topic(s):* DFT+U_expert  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -143,7 +143,7 @@ correlated subspace is a normalized atomic eigenfunction.
 
 
 *Mnemonics:* Density MATrix for paw+U, DIAGonalization  
-*Mentioned in topic(s):* DFT+U_expert  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -171,7 +171,7 @@ Relevant values are:
 
 
 *Mnemonics:* F4 Over F2 ratio of Slater integrals  
-*Mentioned in topic(s):* DFT+U_expert  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* ['0.625 for d electron', '0.6681 for f electron']  
@@ -197,7 +197,7 @@ interaction.
 
 
 *Mnemonics:* F6 Over F2 ratio of Slater integrals  
-*Mentioned in topic(s):* DFT+U_expert  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.4943  
@@ -221,7 +221,7 @@ dependent screened coulomb interaction.
 
 
 *Mnemonics:* Integer governing the internal use of BOXCUT - not a very good choice of variable name  
-*Mentioned in topic(s):* TuningSpeed_expert  
+*Mentioned in topic(s):* [[topic:TuningSpeed]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -246,7 +246,7 @@ conserving.
 
 
 *Mnemonics:* value of J for PAW+U  
-*Mentioned in topic(s):* DFT+U_compulsory  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -265,7 +265,7 @@ In the case where [[lpawu]] =-1, the value is not used.
 
 
 *Mnemonics:* value of angular momentum L for EXact EXCHange  
-*Mentioned in topic(s):* xc_useful  
+*Mentioned in topic(s):* [[topic:xc]]  
 *Variable type:* integer  
 *Dimensions:* ([[ntypat]])  
 *Default value:* -1  
@@ -288,7 +288,7 @@ are allowed) on which to apply the exact exchange correction.
 
 
 *Mnemonics:* value of angular momentum L for PAW+U  
-*Mentioned in topic(s):* DFT+U_compulsory  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* integer  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *-1  
@@ -309,7 +309,7 @@ are allowed)  on which to apply the LDA+U correction.
 
 
 *Mnemonics:* Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3001  
@@ -333,7 +333,7 @@ the latter ... See also [[mqgrid]]
 
 
 *Mnemonics:* Number of Grid points for Fast Fourier Transform : Double Grid  
-*Mentioned in topic(s):* PAW_useful  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -352,7 +352,7 @@ used for PAW calculations.
 
 
 *Mnemonics:* PAW - use ComPleX rhoij OCCupancies  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2 if [[optdriver]]==0 and [[ionmov]]<6 and [[pawspnorb]]==1 and [[iscf]]>=10 and ([[kptopt]] !=1 or [[kptopt]]!=2) and [[usepaw]]==1,
@@ -394,7 +394,7 @@ In order to save CPU time, when molecular dynamics is selected
 
 
 *Mnemonics:* PAW - add CROSS term in oscillator strengths  
-*Mentioned in topic(s):* DFPT_expert  
+*Mentioned in topic(s):* [[topic:DFPT]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -418,7 +418,7 @@ longer assumed.
 
 
 *Mnemonics:* PAW - Energy CUToff for the Double Grid  
-*Mentioned in topic(s):* Planewaves_compulsory, PAW_compulsory  
+*Mentioned in topic(s):* [[topic:Planewaves]], [[topic:PAW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -1  
@@ -453,7 +453,7 @@ in the log file.
 
 
 *Mnemonics:* PAW: print band structure in the FAT-BaND representation  
-*Mentioned in topic(s):* PAW_useful, ElecBandStructure_useful  
+*Mentioned in topic(s):* [[topic:PAW]], [[topic:ElecBandStructure]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -489,7 +489,7 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
 
 
 *Mnemonics:* PAW - L angular momentum used to CUT the development in moments of the Densitites  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
@@ -520,7 +520,7 @@ charge inside spheres", a quantity written in the log file.
 
 
 *Mnemonics:* PAW - maximum L used in the spherical part MIXing  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
@@ -549,7 +549,7 @@ numerical accuracy of the results.
 
 
 *Mnemonics:* PAW - MIXing is done (or not) on the (fine) Double Grid  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0 if [[npfft]]==1,
@@ -587,7 +587,7 @@ In ** wavelet ** calculations [[usewvl]]=1:
 
 
 *Mnemonics:* PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -617,7 +617,7 @@ validity of this approximation before use.
 
 
 *Mnemonics:* PAW - Number of PHI angles used to discretize the sphere around each atom.  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 13  
@@ -641,7 +641,7 @@ spheres. This discretization is completely defined by [[pawnphi]] and
 
 
 *Mnemonics:* PAW - Number of THETA angles used to discretize the sphere around each atom.  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 12  
@@ -665,7 +665,7 @@ spheres. This discretization is completely defined by [[pawntheta]] and
 
 
 *Mnemonics:* PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -694,7 +694,7 @@ thus the first iteration is more cpu intensive)
 
 
 *Mnemonics:* PAW - OPTion for the MIXing of the spherical part  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -734,7 +734,7 @@ parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 
 
 *Mnemonics:* PAW - OPTion for the computation of the OSCillator matrix elements  
-*Mentioned in topic(s):* Susceptibility_expert, BSE_expert, SelfEnergy_expert  
+*Mentioned in topic(s):* [[topic:Susceptibility]], [[topic:BSE]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -765,7 +765,7 @@ expression proposed by Shishkin and Kresse in PRB 74. 035101
 
 
 *Mnemonics:* PAW - spheres OVerLaP allowed (in percentage)  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
@@ -804,7 +804,7 @@ than [[pawovlp]] %
 
 
 *Mnemonics:* PAW: PRinT total physical electron DENsity  
-*Mentioned in topic(s):* PAW_useful  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -825,7 +825,7 @@ Test list:
 
 
 *Mnemonics:* PAW: PRinT partial DOS contributions  
-*Mentioned in topic(s):* PAW_useful, ElecDOS_useful  
+*Mentioned in topic(s):* [[topic:PAW]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -869,7 +869,7 @@ radius.
 
 
 *Mnemonics:* PAW: PRinT VOLume  
-*Mentioned in topic(s):* PAW_useful  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -899,7 +899,7 @@ atoms are printed.
 
 
 *Mnemonics:* PAW: PRinT WaveFunctions  
-*Mentioned in topic(s):* PAW_useful  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -935,7 +935,7 @@ be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
 
 
 *Mnemonics:* PAW - option for SPiN-ORBit coupling  
-*Mentioned in topic(s):* PAW_useful, spinpolarisation_useful  
+*Mentioned in topic(s):* [[topic:PAW]], [[topic:spinpolarisation]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[nspinor]]==2,
@@ -987,7 +987,7 @@ An artificial scaling of the spin-orbit can be introduced thanks to the
 
 
 *Mnemonics:* PAW - option for the STorage of G_l(r).YLM(r)  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1026,7 +1026,7 @@ Y_lm(r) are real spherical harmonics
 
 
 *Mnemonics:* PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1062,7 +1062,7 @@ computed.
 
 
 *Mnemonics:* PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1095,7 +1095,7 @@ For the time being, only activated for RF calculations.
 
 
 *Mnemonics:* PAW - choice for eXchange-Correlation DEVelopment (spherical part)  
-*Mentioned in topic(s):* PAW_expert  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -1122,7 +1122,7 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 
 
 *Mnemonics:* PRint Electric Field Gradient  
-*Mentioned in topic(s):* printing_prngs, EFG_basic  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:EFG]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1149,7 +1149,7 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
 *Mnemonics:* PRinT Fermi Contact term  
-*Mentioned in topic(s):* printing_prden, EFG_basic  
+*Mentioned in topic(s):* [[topic:printing]], [[topic:EFG]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1173,7 +1173,7 @@ Test list:
 
 
 *Mnemonics:* PRint NABLA  
-*Mentioned in topic(s):* printing_prgs  
+*Mentioned in topic(s):* [[topic:printing]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1196,7 +1196,7 @@ Test list:
 
 
 *Mnemonics:* PoinT CHARGEs  
-*Mentioned in topic(s):* EFG_basic  
+*Mentioned in topic(s):* [[topic:EFG]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -1220,7 +1220,7 @@ Test list:
 
 
 *Mnemonics:* QUADrupole MOMents  
-*Mentioned in topic(s):* EFG_basic  
+*Mentioned in topic(s):* [[topic:EFG]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -1244,7 +1244,7 @@ Test list:
 
 
 *Mnemonics:* SPin-ORBit SCaLing  
-*Mentioned in topic(s):* PAW_useful, spinpolarisation_useful  
+*Mentioned in topic(s):* [[topic:PAW]], [[topic:spinpolarisation]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -1269,7 +1269,7 @@ physical situation.
 
 
 *Mnemonics:* value of U for PAW+U  
-*Mentioned in topic(s):* DFT+U_compulsory  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
@@ -1316,7 +1316,7 @@ eV, one has to define :
 
 
 *Mnemonics:* USE of an initial Density MATrix in Paw+U  
-*Mentioned in topic(s):* DFT+U_useful  
+*Mentioned in topic(s):* [[topic:DFT+U]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1348,7 +1348,7 @@ step
 
 
 *Mnemonics:* USE of EXact EXCHange  
-*Mentioned in topic(s):* xc_useful  
+*Mentioned in topic(s):* [[topic:xc]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1372,7 +1372,7 @@ the ratio of exact exchange, see also [[exchmix]].
 
 
 *Mnemonics:* USE PAW+U (spherical part)  
-*Mentioned in topic(s):* DFT+U_compulsory, GW_useful, SelfEnergy_useful  
+*Mentioned in topic(s):* [[topic:DFT+U]], [[topic:GW]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1432,7 +1432,7 @@ Suggested acknowledgment:
 
 
 *Mnemonics:* USE POTential ZERO  
-*Mentioned in topic(s):* Coulomb_useful  
+*Mentioned in topic(s):* [[topic:Coulomb]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -1455,7 +1455,7 @@ Test list:
 
 
 *Mnemonics:* USE eXchange-Correlation with NHAT (compensation charge density)  
-*Mentioned in topic(s):* PAW_useful  
+*Mentioned in topic(s):* [[topic:PAW]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* -1  

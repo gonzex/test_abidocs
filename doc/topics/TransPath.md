@@ -1,6 +1,9 @@
 ---
 authors: GG
 ---
+
+## ** Introduction **
+
 Similarly to the PIMD, finding minimum energy paths and in particular
 transition states for chemical transformations is of great importance in many
 different fields. In ABINIT we have implemented two different flavours based
@@ -42,4 +45,46 @@ requested parallelization mode is set with the keyword [[npimage]].
 
 Specified lattice parameters, or angles, or atomic positions, can be kept
 fixed if needed, see [[topic_GeoConstraints]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:mep_solver]]  Minimal Energy Path ordinary differential equation SOLVER
+- [[abinit:tolimg]]  TOLerance on the mean total energy for IMaGes
+ 
+*compulsory:*
+
+- [[abinit:imgmov]]  IMaGe MOVEs
+- [[abinit:nimage]]  Number of IMAGEs
+- [[abinit:ntimimage]]  Number of TIME steps for IMAGE propagation
+ 
+*expert:*
+
+- [[abinit:cineb_start]]  Climbing-Image Nudged Elastic Band: STARTing iteration
+- [[abinit:dynimage]]  DYNamics of the IMAGE
+- [[abinit:fxcartfactor]]  Forces to (X) CARTesian coordinates FACTOR
+ 
+*useful:*
+
+- [[abinit:mep_mxstep]]  Minimal Energy Path search: MaXimum allowed STEP size
+- [[abinit:neb_algo]]  Nudged Elastic Band ALGOrithm
+- [[abinit:neb_spring]]  Nudged Elastic Band: SPRING constant
+- [[abinit:npimage]]  Number of Processors at the IMAGE level
+- [[abinit:string_algo]]  STRING method ALGOrithm
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t08.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t24.in]]
+- [[tests/v6/Input/t25.in]]
+ 
 

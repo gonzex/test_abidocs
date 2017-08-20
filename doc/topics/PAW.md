@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 The PAW atomic data can be used with plane waves as well as with wavelets.
 Specificities of PAW for use with planewaves are presented here. See
 [[topic_Wavelets]] for its use with wavelets.
@@ -16,4 +19,66 @@ norm-conserving one, except that the variable [[pawecutdg]] must be specified
 variable [[pawecutdg]] is automatically used.  
 Some physical functionalities are available only in the PAW framework: DFT+U,
 DMFT, local exact exchange,...
+
+
+
+## ** Related Input Variables **
+
+*compulsory:*
+
+- [[abinit:pawecutdg]]  PAW - Energy CUToff for the Double Grid
+ 
+*expert:*
+
+- [[abinit:bxctmindg]]  BoX CuT-off MINimum for the Double Grid (PAW)
+- [[abinit:mqgriddg]]  Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW
+- [[abinit:pawcpxocc]]  PAW - use ComPleX rhoij OCCupancies
+- [[abinit:pawlcutd]]  PAW - L angular momentum used to CUT the development in moments of the Densitites
+- [[abinit:pawlmix]]  PAW - maximum L used in the spherical part MIXing
+- [[abinit:pawmixdg]]  PAW - MIXing is done (or not) on the (fine) Double Grid
+- [[abinit:pawnhatxc]]  PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.
+- [[abinit:pawnphi]]  PAW - Number of PHI angles used to discretize the sphere around each atom.
+- [[abinit:pawntheta]]  PAW - Number of THETA angles used to discretize the sphere around each atom.
+- [[abinit:pawnzlm]]  PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres
+- [[abinit:pawoptmix]]  PAW - OPTion for the MIXing of the spherical part
+- [[abinit:pawovlp]]  PAW - spheres OVerLaP allowed (in percentage)
+- [[abinit:pawstgylm]]  PAW - option for the STorage of G_l(r).YLM(r)
+- [[abinit:pawsushat]]  PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution
+- [[abinit:pawusecp]]  PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)
+- [[abinit:pawxcdev]]  PAW - choice for eXchange-Correlation DEVelopment (spherical part)
+ 
+*internal:*
+
+- [[abinit:usepaw]]  USE Projector Augmented Waves method
+ 
+*useful:*
+
+- [[abinit:ngfftdg]]  Number of Grid points for Fast Fourier Transform : Double Grid
+- [[abinit:pawfatbnd]]  PAW: print band structure in the FAT-BaND representation
+- [[abinit:pawprt_b]]  PAW PRinT band
+- [[abinit:pawprt_k]]  PAW PRinT K-point
+- [[abinit:pawprtden]]  PAW: PRinT total physical electron DENsity
+- [[abinit:pawprtdos]]  PAW: PRinT partial DOS contributions
+- [[abinit:pawprtvol]]  PAW: PRinT VOLume
+- [[abinit:pawprtwf]]  PAW: PRinT WaveFunctions
+- [[abinit:pawspnorb]]  PAW - option for SPiN-ORBit coupling
+- [[abinit:spnorbscl]]  SPin-ORBit SCaLing
+- [[abinit:usexcnhat]]  USE eXchange-Correlation with NHAT (compensation charge density)
+ 
+
+## ** Selected Input Files **
+
+*v4:*
+
+- [[tests/v4/Input/t06.in]]
+- [[tests/v4/Input/t08.in]]
+- [[tests/v4/Input/t17.in]]
+- [[tests/v4/Input/t94.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t06.in]]
+- [[tests/v5/Input/t11.in]]
+- [[tests/v5/Input/t17.in]]
+ 
 

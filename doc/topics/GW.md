@@ -1,6 +1,9 @@
 ---
 authors: MG
 ---
+
+## ** Introduction **
+
 DFT performs reasonably well for the determination of structural properties,
 but fails to predict accurate band gaps. A more rigorous framework for the
 description of excited states is provided by many-body perturbation theory
@@ -29,4 +32,62 @@ The computation of the screened interaction is described in
 described in [[topic_SelfEnergy]]. The frequency meshes, used e.g. for
 integration along the real and imaginary axes are described in
 [[topic_FrequencyMeshMBPT]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:bdgw]]  BanDs for GW calculation
+- [[abinit:gw_nstep]]  GW Number of self-consistent STEPs
+- [[abinit:gw_sctype]]  GW, Self-Consistency TYPE
+- [[abinit:gw_toldfeig]]  GW TOLerance on the DiFference of the EIGenvalues
+- [[abinit:gwcalctyp]]  GW CALCulation TYPe
+- [[abinit:gwpara]]  GW PARAllelization level
+ 
+*compulsory:*
+
+- [[abinit:optdriver]]  OPTions for the DRIVER
+ 
+*expert:*
+
+- [[abinit:fftgw]]  FFT for GW calculation
+- [[abinit:gw_nqlwl]]  GW, Number of Q-points for the Long Wave-Length Limit
+ 
+*useful:*
+
+- [[abinit:getqps]]  GET QuasiParticle Structure
+- [[abinit:getscr]]  GET SCReening (the inverse dielectric matrix) from ...
+- [[abinit:getsuscep]]  GET SUSCEPtibility (the irreducible polarizability) from ...
+- [[abinit:gwfockmix]]  GW FOCK exchange MIXing parameter
+- [[abinit:irdqps]]  Integer that governs the ReaDing of QuasiParticle Structure
+- [[abinit:irdscr]]  Integer that governs the ReaDing of the SCReening
+- [[abinit:irdsuscep]]  Integer that governs the ReaDing of the SUSCEPtibility
+- [[abinit:mbpt_sciss]]  Many Body Perturbation Theory SCISSor operator
+- [[abinit:nbandkss]]  Number of BANDs in the KSS file
+- [[abinit:nsym]]  Number of SYMmetry operations
+- [[abinit:rhoqpmix]]  RHO QuasiParticle MIXing
+- [[abinit:symmorphi]]  SYMMORPHIc symmetry operation selection
+- [[abinit:usepawu]]  USE PAW+U (spherical part)
+ 
+
+## ** Selected Input Files **
+
+*v3:*
+
+- [[tests/v3/Input/t30.in]]
+- [[tests/v3/Input/t31.in]]
+ 
+*v4:*
+
+- [[tests/v4/Input/t84.in]]
+- [[tests/v4/Input/t85.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t65.in]]
+- [[tests/v5/Input/t66.in]]
+- [[tests/v5/Input/t69.in]]
+ 
 

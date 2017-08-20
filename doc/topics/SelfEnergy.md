@@ -1,6 +1,9 @@
 ---
 authors: MG
 ---
+
+## ** Introduction **
+
 In principle, the exact self-energy can be obtained by solving self-
 consistently the set of coupled integro-differential equations proposed by
 Hedin [[Hedin1965]]. The fundamental building blocks of Hedin's equations are,
@@ -63,4 +66,76 @@ to usual implementations of GW, thanks to the "extrapolar" method.
 
 The frequency meshes, used e.g. for integration along the real and imaginary
 axes are described in [[topic_FrequencyMeshMBPT]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:bdgw]]  BanDs for GW calculation
+- [[abinit:freqspmax]]  FREQuencies for the SPectral function MAXimum
+- [[abinit:freqspmin]]  FREQuencies for the SPectral function MINimum
+- [[abinit:gwcalctyp]]  GW CALCulation TYPe
+- [[abinit:gwpara]]  GW PARAllelization level
+- [[abinit:icutcoul]]  Integer that governs the CUT-off for COULomb interaction
+- [[abinit:kptgw]]  K-PoinTs for GW calculations
+- [[abinit:nfreqsp]]  Number of FREQuencies for the SPectral function
+- [[abinit:nkptgw]]  Number of K-PoinTs for GW corrections
+- [[abinit:nomegasi]]  Number of OMEGA(S) along the Imaginary axis
+- [[abinit:omegasimax]]  OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value
+- [[abinit:omegasrdmax]]  OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value
+- [[abinit:ppmfrq]]  Plasmon Pole Model FReQuency
+- [[abinit:ppmodel]]  Plasmon Pole MODEL
+- [[abinit:rcut]]  Radius of the CUT-off for coulomb interaction
+- [[abinit:vcutgeo]]  V (potential) CUT-off GEOmetry
+ 
+*compulsory:*
+
+- [[abinit:ecutsigx]]  Energy CUT-off for SIGma eXchange
+- [[abinit:ecutwfn]]  Energy CUT-off for WaveFunctioNs
+- [[abinit:optdriver]]  OPTions for the DRIVER
+ 
+*expert:*
+
+- [[abinit:einterp]]  Electron bands INTERPolation
+- [[abinit:fftgw]]  FFT for GW calculation
+- [[abinit:freqim_alpha]]  FREQuencies along the IMaginary axis ALPHA parameter
+- [[abinit:gw_invalid_freq]]  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM
+- [[abinit:gw_nqlwl]]  GW, Number of Q-points for the Long Wave-Length Limit
+- [[abinit:gw_qlwl]]  GW, Q-points for the Long Wave-Length limit
+- [[abinit:gw_sigxcore]]  GW, SIGma (self-energy) for the CORE contribution
+- [[abinit:gwgamma]]  GW GAMMA
+- [[abinit:gwmem]]  GW MEMory
+- [[abinit:kssform]]  Kohn Sham Structure file FORMat
+- [[abinit:npwkss]]  Number of PlaneWaves in the KSS file
+- [[abinit:pawoptosc]]  PAW - OPTion for the computation of the OSCillator matrix elements
+- [[abinit:symsigma]]  SYMmetrization of SIGMA matrix elements
+- [[abinit:zcut]]  Z-CUT
+ 
+*internal:*
+
+- [[abinit:npwsigx]]  Number of PlaneWaves for SIGma eXchange
+- [[abinit:npwwfn]]  Number of PlaneWaves for WaveFunctioNs
+ 
+*useful:*
+
+- [[abinit:getqps]]  GET QuasiParticle Structure
+- [[abinit:getscr]]  GET SCReening (the inverse dielectric matrix) from ...
+- [[abinit:getsuscep]]  GET SUSCEPtibility (the irreducible polarizability) from ...
+- [[abinit:gw_qprange]]  GW QuasiParticle RANGE policy
+- [[abinit:gwcomp]]  GW COMPleteness
+- [[abinit:gwencomp]]  GW ENergy for COMPleteness
+- [[abinit:irdqps]]  Integer that governs the ReaDing of QuasiParticle Structure
+- [[abinit:irdscr]]  Integer that governs the ReaDing of the SCReening
+- [[abinit:irdsuscep]]  Integer that governs the ReaDing of the SUSCEPtibility
+- [[abinit:mbpt_sciss]]  Many Body Perturbation Theory SCISSor operator
+- [[abinit:nbandkss]]  Number of BANDs in the KSS file
+- [[abinit:nomegasrd]]  Number of OMEGA to evaluate the Sigma Real axis Derivative
+- [[abinit:usepawu]]  USE PAW+U (spherical part)
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

@@ -1,6 +1,9 @@
 ---
 authors: MT
 ---
+
+## ** Introduction **
+
 In the independent-particle approximation, the frequency-dependent
 susceptibility matrix, and related screened interaction matrix, and inverse
 dielectric matrix can be computed.
@@ -11,4 +14,60 @@ This is a prerequisite to many-body perturbation theory calculations, see
 The frequency meshes, used e.g. for integration along the real and imaginary
 axes, on which the susceptibility matrices (and related matrices) have to be
 computed are described in [[topic_FrequencyMeshMBPT]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:gwpara]]  GW PARAllelization level
+- [[abinit:icutcoul]]  Integer that governs the CUT-off for COULomb interaction
+- [[abinit:nomegasf]]  Number of OMEGA to evaluate the Spectral Function
+- [[abinit:rcut]]  Radius of the CUT-off for coulomb interaction
+- [[abinit:vcutgeo]]  V (potential) CUT-off GEOmetry
+ 
+*compulsory:*
+
+- [[abinit:ecuteps]]  Energy CUT-off for EPSilon (the dielectric matrix)
+- [[abinit:ecutwfn]]  Energy CUT-off for WaveFunctioNs
+- [[abinit:optdriver]]  OPTions for the DRIVER
+ 
+*expert:*
+
+- [[abinit:fftgw]]  FFT for GW calculation
+- [[abinit:gw_invalid_freq]]  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM
+- [[abinit:gw_nqlwl]]  GW, Number of Q-points for the Long Wave-Length Limit
+- [[abinit:gw_qlwl]]  GW, Q-points for the Long Wave-Length limit
+- [[abinit:gwgamma]]  GW GAMMA
+- [[abinit:gwmem]]  GW MEMory
+- [[abinit:inclvkb]]  INCLude VKB
+- [[abinit:kssform]]  Kohn Sham Structure file FORMat
+- [[abinit:npwkss]]  Number of PlaneWaves in the KSS file
+- [[abinit:pawoptosc]]  PAW - OPTion for the computation of the OSCillator matrix elements
+- [[abinit:symchi]]  SYMmetryze \chi_o
+- [[abinit:zcut]]  Z-CUT
+ 
+*internal:*
+
+- [[abinit:npweps]]  Number of PlaneWaves for EPSilon (the dielectric matrix)
+- [[abinit:npwwfn]]  Number of PlaneWaves for WaveFunctioNs
+ 
+*useful:*
+
+- [[abinit:awtr]]  evaluate the Adler-Wiser expression of $\chi^{0}_{KS}$ assuming Time-Reversal
+- [[abinit:getqps]]  GET QuasiParticle Structure
+- [[abinit:gwencomp]]  GW ENergy for COMPleteness
+- [[abinit:irdqps]]  Integer that governs the ReaDing of QuasiParticle Structure
+- [[abinit:mbpt_sciss]]  Many Body Perturbation Theory SCISSor operator
+- [[abinit:nbandkss]]  Number of BANDs in the KSS file
+- [[abinit:nqptdm]]  Number of Q-PoinTs for the Dielectric Matrix
+- [[abinit:qptdm]]  Q-PoinTs for the Dielectric Matrix
+- [[abinit:spbroad]]  SPectral BROADening
+- [[abinit:spmeth]]  SPectral METHod
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

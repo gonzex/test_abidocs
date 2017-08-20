@@ -1,9 +1,44 @@
 ---
 authors: MG
 ---
+
+## ** Introduction **
+
 In the contour deformation technique, and other cases, one has to define a set
 of frequencies on which different numerical operations will be performed
 (computation of susceptibility matrices, integration along the real+imaginary
 axes). In the present topic, the input variables connected to such definitions
 are gathered.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:freqremax]]  FREQuencies along the Real axis MAXimum
+- [[abinit:freqremin]]  FREQuencies along the Real axis MINimum
+- [[abinit:nfreqim]]  Number of FREQuencies along the IMaginary axis
+- [[abinit:nfreqmidm]]  Nth FREQuency Moment of the Imaginary part of the Dielectric Matrix
+- [[abinit:nfreqre]]  Number of FREQuencies along the REal axis
+ 
+*expert:*
+
+- [[abinit:cd_customnimfrqs]]  Contour Deformation CUSTOM IMaginary FReQuencieS
+- [[abinit:cd_frqim_method]]  Contour Deformation FReQuency integration on IMaginary axis Method
+- [[abinit:cd_full_grid]]  Contour Deformation FULL GRID in complex plane
+- [[abinit:cd_halfway_freq]]  Contour Deformation tangent grid HALFWAY FREQuency
+- [[abinit:cd_imfrqs]]  Contour Deformation IMaginary FReQuencieS
+- [[abinit:cd_max_freq]]  Contour Deformation grid MAXimum FREQuency
+- [[abinit:cd_subset_freq]]  Contour Deformation grid calculate SUBSET of FREQuencies
+- [[abinit:gw_customnfreqsp]]  GW CUSTOM FREQuencies for SPectral function
+- [[abinit:gw_freqsp]]  GW SPectral FREQuencies
+- [[abinit:gw_frqim_inzgrid]]  GW Contour Deformation FReQuencies on IMaginary axis Inverse Z Grid
+- [[abinit:gw_frqre_inzgrid]]  GW Contour Deformation FReQuencies on REal axis Inverse Z Grid
+- [[abinit:gw_frqre_tangrid]]  GW Contour Deformation FReQencies on REal axis - Use Tangent Grid
+ 
+
+## ** Selected Input Files **
+
+No input file associated to this topic.
 

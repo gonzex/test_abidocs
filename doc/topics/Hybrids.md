@@ -1,6 +1,9 @@
 ---
 authors: FJ
 ---
+
+## ** Introduction **
+
 The Fock exchange term has been implemented in ABINIT, both in the norm-
 conserving pseudopotential framework and in the PAW one. Some details about
 the implementation in ABINIT can be found
@@ -21,4 +24,41 @@ The spin polarised case has not been extensively tested for the moment.
 Use [[istwfk]]=1, [[iscf]]=2, [[paral_kgb]]=0, [[paral_atom]]=0.  
 The efficiency of the calculation is not optimal. Work is in progress
 concerning this point.
+
+
+
+## ** Related Input Variables **
+
+*compulsory:*
+
+- [[abinit:ixc]]  Index of eXchange-Correlation functional
+ 
+*expert:*
+
+- [[abinit:cgtyphf]]  Conjugate Gradient TYPe used for Hartree Fock exact exchange
+- [[abinit:nkpthf]]  Number of K - Points for (Hartree) Fock exact exchange
+- [[abinit:nnsclohf]]  Number of Non-Self Consistent LOops for (Hartree)-Fock exact exchange
+ 
+*internal:*
+
+- [[abinit:usefock]]  USE FOCK exact exchange
+ 
+*useful:*
+
+- [[abinit:nbandhf]]  Number of BANDs for (Hartree)-Fock exact exchange
+- [[abinit:nphf]]  Number of Processors for (Hartree)-Fock exact exchange
+ 
+
+## ** Selected Input Files **
+
+*paral:*
+
+- [[tests/paral/Input/t93.in]]
+- [[tests/paral/Input/t94.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t65.in]]
+- [[tests/v7/Input/t66.in]]
+ 
 

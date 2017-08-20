@@ -1,6 +1,9 @@
 ---
 authors: MT
 ---
+
+## ** Introduction **
+
 The computation of the second-order derivative of the total energy with
 respect to atomic displacements at an arbitrary wavevector, using
 [[topic:DFPT]], opens the possibility to compute the dynamical matrix at that
@@ -39,4 +42,47 @@ through the [[lesson_rf1]] of the tutorial.
 See [[topic_DFPT]] for the general information about DFPT, [[topic_q-points]]
 for the specification of q-points, and [[topic_PhononBands]] for the
 computation of full phonon bands.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[anaddb:asr]]  Acoustic Sum Rule
+- [[anaddb:dieflag]]  DIElectric FLAG
+- [[anaddb:ngqpt]]  Number of Grids points for Q PoinTs
+ 
+*expert:*
+
+- [[anaddb:rfmeth]]  Response-Function METHod
+- [[anaddb:selectz]]  SeLECT Z
+ 
+*useful:*
+
+- [[anaddb:chneut]]  Integer for CHarge NEUTrality treatment
+- [[anaddb:eivec]]  EIgenVECtors
+- [[anaddb:enunit]]  ENergy UNITs
+- [[anaddb:frmax]]  FRequency MAXimum
+- [[anaddb:frmin]]  FRequency MINimum
+- [[anaddb:nfreq]]  Number of FREQuencies
+- [[anaddb:prtvol]]  PRinT VOLume
+- [[anaddb:q1shft]]  Q shifts for the grid number 1
+- [[anaddb:symdynmat]]  SYMmetrize the DYNamical MATrix
+ 
+
+## ** Selected Input Files **
+
+*v2:*
+
+- [[tests/v2/Input/t13.in]]
+- [[tests/v2/Input/t15.in]]
+- [[tests/v2/Input/t16.in]]
+- [[tests/v2/Input/t17.in]]
+- [[tests/v2/Input/t18.in]]
+- [[tests/v2/Input/t19.in]]
+- [[tests/v2/Input/t20.in]]
+- [[tests/v2/Input/t21.in]]
+- [[tests/v2/Input/t39.in]]
+ 
 

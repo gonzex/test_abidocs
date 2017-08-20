@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* Bethe-Salpeter ALGORITHM  
-*Mentioned in topic(s):* BSE_basic  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -24,7 +24,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
 
 
 *Mnemonics:* Bethe-Salpeter CALCulation TYPE  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -45,7 +45,7 @@ Possible values are 1,2,3.
 
 
 *Mnemonics:* Bethe-Salpeter COULOMB TERM  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 11  
@@ -75,7 +75,7 @@ The second digit (B) can assume the values 0,1:
 
 
 *Mnemonics:* Bethe-Salpeter COUPLING  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -96,7 +96,7 @@ of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
 
 
 *Mnemonics:* Bethe-Salpeter Electron-Hole CUTOFF  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* [-inf, inf]  
@@ -119,7 +119,7 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter EXCHANGE TERM  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -137,7 +137,7 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter FREQuency MESH  
-*Mentioned in topic(s):* BSE_basic  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.01]  
@@ -158,7 +158,7 @@ during the construction of the e-h Hamiltonian.
 
 
 *Mnemonics:* Bethe-Salpeter HAYdock TERMinator  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -185,7 +185,7 @@ by smoothing the oscillation in the high energy part of the spectrum
 
 
 *Mnemonics:* Bethe-Salpeter HAYDOCK Number of ITERations  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 100  
@@ -205,7 +205,7 @@ is less than [[bs_haydock_tol]].
 
 
 *Mnemonics:* Bethe-Salpeter HAYDOCK TOLerance  
-*Mentioned in topic(s):* BSE_expert  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* [0.02, 0]  
@@ -235,7 +235,7 @@ entire frequency range (mild criterion).
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation K-point MULTiplication factors  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
@@ -259,7 +259,7 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation Method3 WIDTH  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
@@ -282,7 +282,7 @@ interpolation
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation METHOD  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -307,7 +307,7 @@ Test list:
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation MODE  
-*Mentioned in topic(s):* BSE_basic  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -334,7 +334,7 @@ Test list:
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation PREParation  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -358,7 +358,7 @@ coefficients used for the interpolation.
 
 
 *Mnemonics:* Bethe-Salpeter INTERPolation Rohlfing & Louie NeighBour  
-*Mentioned in topic(s):* BSE_useful  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -380,7 +380,7 @@ Gives the index of the neighbour that is used for Rohlfing & Louie method
 
 
 *Mnemonics:* Bethe-Salpeter Lowest Occupied BAND  
-*Mentioned in topic(s):* BSE_compulsory  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* ([[nsppol]])  
 *Default value:* 0  
@@ -401,7 +401,7 @@ variable.
 
 
 *Mnemonics:* Bethe-Salpeter Number of STATES  
-*Mentioned in topic(s):* BSE_basic  
+*Mentioned in topic(s):* [[topic:BSE]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  

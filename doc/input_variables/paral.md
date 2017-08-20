@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* AUTOmatisation of the PARALlelism  
-*Mentioned in topic(s):* parallelism_basic  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -53,7 +53,7 @@ is. After having printed out the weights, the code stops.
 
 
 *Mnemonics:* BAND Per Processor  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -98,7 +98,7 @@ time spent in FFTs is divided by two).
 
 
 *Mnemonics:* GPU: choice of DEVICES on one node  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* (5)  
 *Default value:* [-1, -1, -1, -1, -1]  
@@ -141,7 +141,7 @@ GPU card are numbered starting from 0; to get the GPU devices list, type
 
 
 *Mnemonics:* GPU (Cuda): LINear ALGebra LIMIT  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2000000  
@@ -173,7 +173,7 @@ of the eigenstates.
 
 
 *Mnemonics:* GW PARAllelization level  
-*Mentioned in topic(s):* parallelism_useful, GW_basic, Susceptibility_basic, SelfEnergy_basic  
+*Mentioned in topic(s):* [[topic:parallelism]], [[topic:GW]], [[topic:Susceptibility]], [[topic:SelfEnergy]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
@@ -201,7 +201,7 @@ run, irrespectively of the number of CPUs used.
 
 
 *Mnemonics:* LOCAL ReaD WaveFunctions  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -234,7 +234,7 @@ machine, the input wavefunction file must be available on all nodes if
 
 
 *Mnemonics:* MAXimum Number of CPUS  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -258,7 +258,7 @@ the code stops.
 
 
 *Mnemonics:* Number of mpi Processors used for ScaLapacK calls  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1000000  
@@ -289,7 +289,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the BAND level  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -316,7 +316,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the FFT level  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -346,7 +346,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors for (Hartree)-Fock exact exchange  
-*Mentioned in topic(s):* Hybrids_useful, parallelism_useful  
+*Mentioned in topic(s):* [[topic:Hybrids]], [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -377,7 +377,7 @@ have the better load-balancing and efficiency.
 
 
 *Mnemonics:* Number of Processors at the IMAGE level  
-*Mentioned in topic(s):* parallelism_useful, PIMD_useful, TransPath_useful  
+*Mentioned in topic(s):* [[topic:parallelism]], [[topic:PIMD]], [[topic:TransPath]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -407,7 +407,7 @@ additional information on the use of k-point/band/FFT parallelisation. _
 
 
 *Mnemonics:* Number of Processors at the K-Point Level  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -437,7 +437,7 @@ the [[autoparal]] input keyword.
 
 
 *Mnemonics:* Number of Processors at the PERTurbation level  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -463,7 +463,7 @@ dataset.
 
 
 *Mnemonics:* Number of Processors at the SPINOR level  
-*Mentioned in topic(s):* parallelism_useful  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -497,7 +497,7 @@ information on the use of band/FFT/k-point parallelisation._
 
 
 *Mnemonics:* activate PARALelization over (paw) ATOMic sites  
-*Mentioned in topic(s):* parallelism_basic  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -525,7 +525,7 @@ Compatible with ground-state calculations and response function calculations
 
 
 *Mnemonics:* activate PARALelization over K-point, G-vectors and Bands  
-*Mentioned in topic(s):* parallelism_basic  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -569,7 +569,7 @@ be optimal. To optimize the repartition use:
 
 
 *Mnemonics:* activate PARALlelization over Response Function perturbations  
-*Mentioned in topic(s):* parallelism_basic  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -601,7 +601,7 @@ stops.
 
 
 *Mnemonics:* Plane Wave UNBALancing: THRESHold for balancing procedure  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 40%  
@@ -627,7 +627,7 @@ _pw_unbal_thresh_ %.
 
 
 *Mnemonics:* activate USE of GPU accelerators with CUDA (nvidia)  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1 if [[optdriver]]==0 and [[CUDA]],
@@ -661,7 +661,7 @@ MAGMA is not used, ABINIT performances on GPUs can be poor.
 
 
 *Mnemonics:* USE ScaLapacK  
-*Mentioned in topic(s):* parallelism_expert  
+*Mentioned in topic(s):* [[topic:parallelism]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  

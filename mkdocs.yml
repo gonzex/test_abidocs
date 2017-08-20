@@ -7,15 +7,16 @@ docs_dir: doc
 repo_url: https://github.com/abinit/abinit/
 
 pages:
-- Quick Start: 
+#- Quick Start: 
+- User Guide:
     - Introduction: index.md
     - Installation:  installation.md
-- User Guide:
     - Overview: user-guide/help_what_ABINIT_does.md
     - Abinit: user-guide/help_abinit.md
     - Mrgddb: user-guide/help_mrgddb.md
     - Optic: user-guide/help_optic.md
 - Topics:
+    - Complete List: topics/index.md
     - topics/Artificial.md
     - topics/AtomManipulator.md
     - topics/AtomTypes.md
@@ -165,9 +166,9 @@ markdown_extensions:
 copyright: Copyright &copy; 2017 The Abinit Group
 #google_analytics: ['UA-27795084-5', 'abinit.org']
 
-#theme: mkdocs
+theme: mkdocs
 #theme: readthedocs
-theme: material   # Nice
+#theme: material   # Nice
 #theme: bootstrap
 #theme: flatly
 #theme: cinder

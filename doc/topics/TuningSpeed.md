@@ -1,6 +1,9 @@
 ---
 authors: XG
 ---
+
+## ** Introduction **
+
 The major factors governing the speed of an ABINIT run, for a given physical
 system, are:
 
@@ -34,4 +37,37 @@ parts. This allows halving the memory needs, as well as the CPU time. See
 
 Other input variables related to tuning the speed or the memory usage are for
 expert users only.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:boxcutmin]]  BOX CUT-off MINimum
+- [[abinit:istwfk]]  Integer for choice of STorage of WaveFunction at each k point
+ 
+*expert:*
+
+- [[abinit:exchn2n3d]]  EXCHange N2 and N3 Dimensions
+- [[abinit:extrapwf]]  flag - EXTRAPolation of the Wave-Functions
+- [[abinit:fftcache]]  Fast Fourier Transform CACHE size
+- [[abinit:iboxcut]]  Integer governing the internal use of BOXCUT - not a very good choice of variable name
+- [[abinit:nbdblock]]  Number of BanDs in a BLOCK
+- [[abinit:nloc_alg]]  Non LOCal ALGorithm
+- [[abinit:nloc_mem]]  Non LOCal MEMOry
+- [[abinit:ortalg]]  ORThogonalisation ALGorithm
+- [[abinit:useylm]]  USE YLM (the spherical harmonics)
+ 
+*useful:*
+
+- [[abinit:fftalg]]  Fast Fourier Transform ALGorithm
+ 
+
+## ** Selected Input Files **
+
+*v3:*
+
+- [[tests/v3/Input/t43.in]]
+ 
 

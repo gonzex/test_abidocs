@@ -1,6 +1,9 @@
 ---
 authors: GG
 ---
+
+## ** Introduction **
+
 Path-Integral Molecular Dynamics (PIMD) is a technique allowing to simulate
 the quantum fluctuations of the nuclei at thermodynamic equilibrium
 [[Marx1996]]. It is implemented in ABINIT in the NVT ensemble since v7.8.2.
@@ -50,4 +53,54 @@ phase transition between phase I and phase II of dense hydrogen
 [[Geneste2012]], and also some aspects of diffusion at low and room
 temperature in proton-conducting oxides for fuel cells [[Geneste2015]]. PIMD
 in the NPT ensemble is not available yet.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:nnos]]  Number of NOSe masses
+- [[abinit:optcell]]  OPTimize the CELL shape and dimensions
+- [[abinit:qmass]]  Q thermostat MASS
+- [[abinit:vis]]  VIScosity
+ 
+*compulsory:*
+
+- [[abinit:dtion]]  Delta Time for IONs
+- [[abinit:imgmov]]  IMaGe MOVEs
+- [[abinit:mdtemp]]  Molecular Dynamics TEMPeratures
+- [[abinit:nimage]]  Number of IMAGEs
+- [[abinit:ntimimage]]  Number of TIME steps for IMAGE propagation
+ 
+*expert:*
+
+- [[abinit:adpimd]]  ADiabatic Path-Integral Molecular Dynamics
+- [[abinit:adpimd_gamma]]  ADiabatic Path-Integral Molecular Dynamics: GAMMA factor
+- [[abinit:dynimage]]  DYNamics of the IMAGE
+- [[abinit:irandom]]  Integer for the choice of the RANDOM number generator
+- [[abinit:istatimg]]  Integer governing the computation of STATic IMaGes
+- [[abinit:vel_cell]]  VELocity of the CELL parameters
+ 
+*internal:*
+
+- [[abinit:ndynimage]]  Number of DYNamical IMAGEs
+ 
+*useful:*
+
+- [[abinit:amu]]  Atomic Mass Units
+- [[abinit:npimage]]  Number of Processors at the IMAGE level
+- [[abinit:pimass]]  Path Integral fictitious MASSes
+- [[abinit:pimd_constraint]]  Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate
+- [[abinit:pitransform]]  Path Integral coordinate TRANSFORMation
+- [[abinit:restartxf]]  RESTART from (X,F) history
+- [[abinit:vel]]  VELocity
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t08.in]]
+ 
 

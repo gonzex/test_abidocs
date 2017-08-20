@@ -2,7 +2,7 @@
 
 
 *Mnemonics:* BRaVais LaTTice type  
-*Mentioned in topic(s):* UnitCell_useful, SmartSymm_basic  
+*Mentioned in topic(s):* [[topic:UnitCell]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -53,7 +53,7 @@ For more details see the space group [ help file
 
 
 *Mnemonics:* spatially varying CHEMical POTential  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* real  
 *Dimensions:* (3,[['nzchempot']],[['ntype']])  
 *Default value:* 0.0  
@@ -97,7 +97,7 @@ atomic units).
 
 
 *Mnemonics:* GENerator of the translation for Anti-FerroMagnetic space group  
-*Mentioned in topic(s):* spinpolarisation_useful, SmartSymm_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]], [[topic:SmartSymm]]  
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
@@ -130,7 +130,7 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 
 
 *Mnemonics:* Number of AToms ReaD  
-*Mentioned in topic(s):* AtomManipulator_basic, SmartSymm_basic  
+*Mentioned in topic(s):* [[topic:AtomManipulator]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
@@ -151,7 +151,7 @@ Despite possible vacancies, cannot be bigger than [[natom]].
 
 
 *Mnemonics:* Number of OBJects  
-*Mentioned in topic(s):* AtomManipulator_compulsory  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -198,7 +198,7 @@ for example.
 
 
 *Mnemonics:* Number of Z reduced coordinates that define the spatial CHEMical POTential  
-*Mentioned in topic(s):* Artificial_expert  
+*Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -221,7 +221,7 @@ is the second dimension.
 
 
 *Mnemonics:* OBJect A : list of AToms  
-*Mentioned in topic(s):* AtomManipulator_basic  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* ([[objan]])  
 *Default value:* None  
@@ -250,7 +250,7 @@ Look at [[objarf]] for further explanations.
 
 
 *Mnemonics:* OBJect A : AXis  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (6)  
 *Default value:* None  
@@ -282,7 +282,7 @@ toward point 2 (coordinates 4:6).
 
 
 *Mnemonics:* OBJect A : Number of atoms  
-*Mentioned in topic(s):* AtomManipulator_basic  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -306,7 +306,7 @@ variables [[objaat]].
 
 
 *Mnemonics:* OBJect A : Repetition Factors  
-*Mentioned in topic(s):* AtomManipulator_basic  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
@@ -346,7 +346,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 
 
 *Mnemonics:* OBJect A : ROtations  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (4)  
 *Default value:* 4*0.0d0  
@@ -378,7 +378,7 @@ with different rotation angles.
 
 
 *Mnemonics:* OBJect A : TRanslations  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (12)  
 *Default value:* 12*0.0d0  
@@ -414,7 +414,7 @@ Not present in the dtset array (no internal).
 
 
 *Mnemonics:* OBJect B : list of AToms  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* ([[objbn]])  
 *Default value:* None  
@@ -442,7 +442,7 @@ Look at [[objbrf]] for further explanations.
 
 
 *Mnemonics:* OBJect B : AXis  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (6)  
 *Default value:* None  
@@ -474,7 +474,7 @@ toward point 2 (coordinates 4:6).
 
 
 *Mnemonics:* OBJect B : Number of atoms  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
@@ -497,7 +497,7 @@ the variables [[objbat]].
 
 
 *Mnemonics:* OBJect B : Repetition Factors  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
@@ -536,7 +536,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 
 
 *Mnemonics:* OBJect B : ROtations  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (4)  
 *Default value:* 4*0.0d0  
@@ -568,7 +568,7 @@ with different rotation angles.
 
 
 *Mnemonics:* OBJect B : TRanslations  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* real  
 *Dimensions:* (12)  
 *Default value:* 12*0.0d0  
@@ -603,7 +603,7 @@ which case, only rotations are needed.
 
 
 *Mnemonics:* PoinT GROUP number for the MAgnetic space group  
-*Mentioned in topic(s):* spinpolarisation_internal, SmartSymm_internal  
+*Mentioned in topic(s):* [[topic:spinpolarisation]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -636,7 +636,7 @@ Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 
 
 *Mnemonics:* SPace Group : AXes ORientation  
-*Mentioned in topic(s):* SmartSymm_useful  
+*Mentioned in topic(s):* [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -694,7 +694,7 @@ How to determine which spgaxor you need:
 
 
 *Mnemonics:* SPace Group : ORIGin  
-*Mentioned in topic(s):* SmartSymm_useful  
+*Mentioned in topic(s):* [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
@@ -722,7 +722,7 @@ For details see the space group [ help file
 
 
 *Mnemonics:* SPace GROUP number  
-*Mentioned in topic(s):* crystal_useful, UnitCell_useful, SmartSymm_basic  
+*Mentioned in topic(s):* [[topic:crystal]], [[topic:UnitCell]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -752,7 +752,7 @@ For details see the space group [ help file
 
 
 *Mnemonics:* SPace GROUP number defining a MAgnetic space group  
-*Mentioned in topic(s):* spinpolarisation_useful, SmartSymm_useful  
+*Mentioned in topic(s):* [[topic:spinpolarisation]], [[topic:SmartSymm]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -786,7 +786,7 @@ of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 
 
 *Mnemonics:* TOLERANCE for SYMmetries  
-*Mentioned in topic(s):* crystal_useful  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-08  
@@ -817,7 +817,7 @@ operations that will have been found.
 
 
 *Mnemonics:* VACancies LiST  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* ([[vacnum]])  
 *Default value:* None  
@@ -841,7 +841,7 @@ Useful to created vacancies.
 
 
 *Mnemonics:* VACancies NUMber  
-*Mentioned in topic(s):* AtomManipulator_useful  
+*Mentioned in topic(s):* [[topic:AtomManipulator]]  
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
@@ -864,7 +864,7 @@ atoms is contained in [[vaclst]].
 
 
 *Mnemonics:* XYZ FILE input for geometry  
-*Mentioned in topic(s):* crystal_useful  
+*Mentioned in topic(s):* [[topic:crystal]]  
 *Variable type:* string  
 *Dimensions:* scalar  
 *Default value:* None  

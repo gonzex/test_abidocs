@@ -1,6 +1,9 @@
 ---
 authors: FB
 ---
+
+## ** Introduction **
+
 ABINIT can treat charged systems (e.g. either for molecules, or for dopants in
 a supercell), using the [[charge]] input variable. A careful convergence study
 with respect to the cell size must however be done.
@@ -34,4 +37,30 @@ Only options 1 and 3 are valid for the NCPP case.
 None of these conventions is intrinsically more correct than the other ones.
 This is just an arbitrary choice, but ABINIT now permits a straight comparison
 to the other codes.
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:charge]]  CHARGE
+ 
+*expert:*
+
+- [[abinit:nscforder]]  Nth - SCaling Function ORDER
+ 
+*useful:*
+
+- [[abinit:icoulomb]]  Index for the Coulomb TReaTMenT
+- [[abinit:icutcoul]]  Integer that governs the CUT-off for COULomb interaction
+- [[abinit:usepotzero]]  USE POTential ZERO
+ 
+
+## ** Selected Input Files **
+
+*v7:*
+
+- [[tests/v7/Input/t26.in]]
+ 
 

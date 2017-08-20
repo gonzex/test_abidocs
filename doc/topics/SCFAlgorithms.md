@@ -1,6 +1,9 @@
 ---
 authors: XG
 ---
+
+## ** Introduction **
+
 Self-Consistent Field calculations allow to determine the solution of the
 Kohn-Sham equations, ending with converged "self-consistent" wavefunctions,
 density, and Kohn-Sham potentials. Different algorithms can be chosen to
@@ -25,4 +28,38 @@ filtering for massive parallel runs.
 
 Inner electronic eigenvalues can be computed thanks to the minimisation of the
 residual with respect to a target energy value, see [[eshift]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:iscf]]  Integer for Self-Consistent-Field cycles
+- [[abinit:wfoptalg]]  WaveFunction OPTimisation ALGorithm
+ 
+*expert:*
+
+- [[abinit:densfor_pred]]  DENSity and FORces PREDictor
+- [[abinit:diecut]]  DIElectric matrix energy CUToff
+- [[abinit:diegap]]  DIElectric matrix GAP
+- [[abinit:dielam]]  DIElectric matrix LAMbda
+- [[abinit:eshift]]  Energy SHIFT
+- [[abinit:iprcel]]  Integer for PReConditioning of ELectron response
+- [[abinit:isecur]]  Integer for level of SECURity choice
+ 
+*useful:*
+
+- [[abinit:dielng]]  model DIElectric screening LeNGth
+- [[abinit:diemac]]  model DIElectric MACroscopic constant
+- [[abinit:diemix]]  model DIElectric MIXing factor
+- [[abinit:npulayit]]  Number of PULAY ITerations for SC mixing
+ 
+
+## ** Selected Input Files **
+
+*v2:*
+
+- [[tests/v2/Input/t51.in]]
+ 
 

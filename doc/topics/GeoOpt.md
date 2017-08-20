@@ -1,6 +1,9 @@
 ---
 authors: GG
 ---
+
+## ** Introduction **
+
 Different algorithms (Broyden; modified Broyden; Verlet with sudden stop of
 atoms) allows to find the equilibrium configuration of the nuclei, for which
 the forces vanish, see [[ionmov]]. The cell parameters can also be optimized
@@ -12,4 +15,77 @@ fixed if needed, see [[topic_GeoConstraints]].
 
 A genetic algorithm has been coded, for global optimisation. Not in production
 yet. See [[ga_rules]].
+
+
+
+## ** Related Input Variables **
+
+*basic:*
+
+- [[abinit:dilatmx]]  lattice DILATation : MaXimal value
+- [[abinit:ntime]]  Number of TIME steps
+- [[abinit:strfact]]  STRess FACTor
+- [[abinit:tolmxde]]  TOLerance on the MaXimal Difference in Energy
+- [[abinit:tolmxf]]  TOLerance on the MaXimal Force
+ 
+*compulsory:*
+
+- [[abinit:ionmov]]  IONic MOVEs
+- [[abinit:optcell]]  OPTimize the CELL shape and dimensions
+ 
+*expert:*
+
+- [[abinit:fxcartfactor]]  Forces to (X) CARTesian coordinates FACTOR
+- [[abinit:ga_algor]]  Genetic Algorithm - ALGOrithm selection
+- [[abinit:ga_fitness]]  Genetic Algorithm FITNESS function selection
+- [[abinit:ga_n_rules]]  Genetic Algorithm Number of RULES
+- [[abinit:ga_opt_percent]]  Genetic Algorithm OPTimal PERCENT
+- [[abinit:ga_rules]]  Genetic Algorithm RULES
+- [[abinit:goprecon]]  Geometry Optimization PRECONditioner equations
+- [[abinit:goprecprm]]  Geometry Optimization PREconditioner PaRaMeters equations
+- [[abinit:random_atpos]]  RANDOM ATomic POSitions
+ 
+*useful:*
+
+- [[abinit:iprcfc]]  Integer for PReConditioner of Force Constants
+- [[abinit:restartxf]]  RESTART from (X,F) history
+- [[abinit:strprecon]]  STRess PRECONditioner
+- [[abinit:strtarget]]  STRess TARGET
+ 
+
+## ** Selected Input Files **
+
+*v1:*
+
+- [[tests/v1/Input/t78.in]]
+- [[tests/v1/Input/t79.in]]
+- [[tests/v1/Input/t80.in]]
+- [[tests/v1/Input/t81.in]]
+- [[tests/v1/Input/t82.in]]
+ 
+*v2:*
+
+- [[tests/v2/Input/t44.in]]
+- [[tests/v2/Input/t48.in]]
+- [[tests/v2/Input/t88.in]]
+ 
+*v3:*
+
+- [[tests/v3/Input/t40.in]]
+- [[tests/v3/Input/t42.in]]
+ 
+*v5:*
+
+- [[tests/v5/Input/t02.in]]
+- [[tests/v5/Input/t77.in]]
+- [[tests/v5/Input/t79.in]]
+ 
+*v6:*
+
+- [[tests/v6/Input/t27.in]]
+ 
+*v7:*
+
+- [[tests/v7/Input/t10.in]]
+ 
 
