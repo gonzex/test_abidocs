@@ -1,54 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="author" content="The Abinit group">
-    <link rel="canonical" href="http://www.abinit.org/input_variables/varset_stats/">
-    <link rel="shortcut icon" href="../../img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Statistics - abinit</title>
-    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="../../css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/highlight.css">
-    <link href="../../css/codehilite.css" rel="stylesheet">
-    <link href="../../css/extra.css" rel="stylesheet">
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
 
-    <script src="../../js/jquery-3.2.1.min.js"></script>
-    <script src="../../js/bootstrap-3.3.7.min.js"></script>
-    <script src="../../js/highlight.pack.js"></script>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
     
-    <base target="_top">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Abinit documentation">
+      
+      
+        <link rel="canonical" href="http://www.abinit.org/input_variables/varset_stats/">
+      
+      
+        <meta name="author" content="The Abinit group">
+      
+      
+        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+    
+    
+      
+        <title>Statistics - abinit</title>
+      
+    
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
+    -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    -->
+
     <!-- Optional theme
-
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    -->
-    <!-- Latest compiled and minified JavaScript
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript
     -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
     <script type="text/javascript" async
@@ -95,62 +94,2071 @@
     -->
 
 
-    <script>
-      var base_url = '../..';
-      var is_top_frame = false;
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+    
+    
+      
         
-        var pageToc = [
-          {title: "abinit", url: "#abinit", children: [
-          ]},
-          {title: "aim", url: "#aim", children: [
-          ]},
-          {title: "anaddb", url: "#anaddb", children: [
-          ]},
-          {title: "optic", url: "#optic", children: [
-          ]},
-        ];
-
-    </script>
-    <script src="../../js/base.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      <script src="../../extra_javascript/abidocs.js"></script> 
-</head>
-
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
-
-
-
-<div class="container-fluid wm-page-content">
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
-    <div class="wm-article-nav pull-right">
-      <a href="../../tutorials/welcome/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../../tutorials/welcome/" class="btn btn-xs btn-link">
-        Overview
-      </a>
+      <link rel="stylesheet" href="../../css/codehilite.css">
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Input Variables
+                </span>
+              
+            
+            Statistics
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
     </div>
-    
-    <div class="wm-article-nav">
-      <a href="../aim/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../aim/" class="btn btn-xs btn-link">
-        Aim
-      </a>
-    </div>
-    
   </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../varlist_abinit/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    abinit
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+      Abinit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+      Mrgddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
 
     
+      
+      
+      
 
-    <h1 id="abinit"><strong>abinit</strong><a class="headerlink" href="#abinit" title="Permanent link">&para;</a></h1>
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/" title="Complete List" class="md-nav__link">
+      Complete List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Artificial/" title="Artificial" class="md-nav__link">
+      Artificial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/AtomManipulator/" title="AtomManipulator" class="md-nav__link">
+      AtomManipulator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/AtomTypes/" title="AtomTypes" class="md-nav__link">
+      AtomTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Bader/" title="Bader" class="md-nav__link">
+      Bader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
+      Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BSE/" title="BSE" class="md-nav__link">
+      BSE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ConstrainedPol/" title="ConstrainedPol" class="md-nav__link">
+      ConstrainedPol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Control/" title="Control" class="md-nav__link">
+      Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Coulomb/" title="Coulomb" class="md-nav__link">
+      Coulomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/CRPA/" title="CRPA" class="md-nav__link">
+      CRPA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/crystal/" title="Crystal" class="md-nav__link">
+      Crystal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
+      Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DMFT/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/EffMass/" title="EffMass" class="md-nav__link">
+      EffMass
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/EFG/" title="EFG" class="md-nav__link">
+      EFG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElecDOS/" title="ElecDOS" class="md-nav__link">
+      ElecDOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ForcesStresses/" title="ForcesStresses" class="md-nav__link">
+      ForcesStresses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/FrequencyMeshMBPT/" title="FrequencyMeshMBPT" class="md-nav__link">
+      FrequencyMeshMBPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GeoConstraints/" title="GeoConstraints" class="md-nav__link">
+      GeoConstraints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GeoOpt/" title="GeoOpt" class="md-nav__link">
+      GeoOpt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GW/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GWls/" title="GWls" class="md-nav__link">
+      GWls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
+      Hybrids
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/k-points/" title="K points" class="md-nav__link">
+      K points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/LOTF/" title="LOTF" class="md-nav__link">
+      LOTF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MagField/" title="MagField" class="md-nav__link">
+      MagField
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MagMom/" title="MagMom" class="md-nav__link">
+      MagMom
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MolecularDynamics/" title="MolecularDynamics" class="md-nav__link">
+      MolecularDynamics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/multidtset/" title="Multidtset" class="md-nav__link">
+      Multidtset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/nonlinear/" title="Nonlinear" class="md-nav__link">
+      Nonlinear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Output/" title="Output" class="md-nav__link">
+      Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/parallelism/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PAW/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
+      PhononWidth
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/printing/" title="Printing" class="md-nav__link">
+      Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PseudosPAW/" title="PseudosPAW" class="md-nav__link">
+      PseudosPAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/q-points/" title="Q points" class="md-nav__link">
+      Q points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/RandStopPow/" title="RandStopPow" class="md-nav__link">
+      RandStopPow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Recursion/" title="Recursion" class="md-nav__link">
+      Recursion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/RPACorrEn/" title="RPACorrEn" class="md-nav__link">
+      RPACorrEn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SelfEnergy/" title="SelfEnergy" class="md-nav__link">
+      SelfEnergy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SmartSymm/" title="SmartSymm" class="md-nav__link">
+      SmartSymm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/spinpolarisation/" title="Spinpolarisation" class="md-nav__link">
+      Spinpolarisation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/STM/" title="STM" class="md-nav__link">
+      STM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Susceptibility/" title="Susceptibility" class="md-nav__link">
+      Susceptibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TDDFT/" title="TDDFT" class="md-nav__link">
+      TDDFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TDepES/" title="TDepES" class="md-nav__link">
+      TDepES
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Temperature/" title="Temperature" class="md-nav__link">
+      Temperature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TransPath/" title="TransPath" class="md-nav__link">
+      TransPath
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TuningSpeed/" title="TuningSpeed" class="md-nav__link">
+      TuningSpeed
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
+      UnitCell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
+      Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Wannier/" title="Wannier" class="md-nav__link">
+      Wannier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Wavelets/" title="Wavelets" class="md-nav__link">
+      Wavelets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/xc/" title="Xc" class="md-nav__link">
+      Xc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Input Variables
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Input Variables
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../varlist_abinit/" title="All Variables" class="md-nav__link">
+      All Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic/" title="Basic" class="md-nav__link">
+      Basic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev/" title="Developers" class="md-nav__link">
+      Developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Electron-Phonon" class="md-nav__link">
+      Electron-Phonon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ffield/" title="Varff" class="md-nav__link">
+      Varff
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../files/" title="File-handling" class="md-nav__link">
+      File-handling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geo/" title="Geometry" class="md-nav__link">
+      Geometry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gstate/" title="Ground-State" class="md-nav__link">
+      Ground-State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gw/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../internal/" title="Internal" class="md-nav__link">
+      Internal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rlx/" title="Relaxation" class="md-nav__link">
+      Relaxation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vdw/" title="VdW" class="md-nav__link">
+      VdW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../w90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Statistics" class="md-nav__link md-nav__link--active">
+      Statistics
+    </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Lessons
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Lessons
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/welcome/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Base Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Base Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base1/" title="Base1" class="md-nav__link">
+      Base1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base2/" title="Base2" class="md-nav__link">
+      Base2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base3/" title="Base3" class="md-nav__link">
+      Base3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/base4/" title="Base4" class="md-nav__link">
+      Base4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        DFPT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/rf1/" title="RF1" class="md-nav__link">
+      RF1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/rf2/" title="RF2" class="md-nav__link">
+      RF2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
+      EPH
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      Many-Body
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        Many-Body
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/gw1/" title="GW1" class="md-nav__link">
+      GW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/gw2/" title="GW2" class="md-nav__link">
+      GW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Parallelism
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Parallelism
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/basepar/" title="Base" class="md-nav__link">
+      Base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
+      Many-Body
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Theory
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Theory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
+      MBPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
+      Additional Material
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+      Bibliography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
+      How to write docs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/abinit/abinit/edit/master/docs/input_variables/varset_stats.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                <h1 id="abinit"><strong>abinit</strong><a class="headerlink" href="#abinit" title="Permanent link">&para;</a></h1>
 <p>844 tests</p>
 <p>918: <a href="/input_variables/basic/#ecut" target="_blank">ecut</a>, <a href="/input_variables/basic/#natom" target="_blank">natom</a>, <a href="/input_variables/basic/#typat" target="_blank">typat</a>, <a href="/input_variables/basic/#znucl" target="_blank">znucl</a><br><br>917: <a href="/input_variables/basic/#acell" target="_blank">acell</a><br><br>915: <a href="/input_variables/gstate/#nline" target="_blank">nline</a><br><br>914: <a href="/input_variables/basic/#kpt" target="_blank">kpt</a><br><br>908: <a href="/input_variables/basic/#ntypat" target="_blank">ntypat</a><br><br>877: <a href="/input_variables/basic/#nstep" target="_blank">nstep</a><br><br>805: <a href="/input_variables/basic/#nband" target="_blank">nband</a><br><br>759: <a href="/input_variables/basic/#xred" target="_blank">xred</a><br><br>757: <a href="/input_variables/basic/#kptopt" target="_blank">kptopt</a><br><br>749: <a href="/input_variables/basic/#rprim" target="_blank">rprim</a><br><br>620: <a href="/input_variables/basic/#ndtset" target="_blank">ndtset</a><br><br>529: <a href="/input_variables/gstate/#occ" target="_blank">occ</a><br><br>504: <a href="/input_variables/basic/#occopt" target="_blank">occopt</a><br><br>495: <a href="/input_variables/basic/#ngkpt" target="_blank">ngkpt</a><br><br>488: <a href="/input_variables/basic/#nkpt" target="_blank">nkpt</a><br><br>469: <a href="/input_variables/basic/#shiftk" target="_blank">shiftk</a><br><br>462: <a href="/input_variables/gstate/#diemac" target="_blank">diemac</a><br><br>439: <a href="/input_variables/basic/#tolwfr" target="_blank">tolwfr</a><br><br>435: <a href="/input_variables/basic/#nshiftk" target="_blank">nshiftk</a><br><br>434: <a href="/input_variables/files/#getwfk" target="_blank">getwfk</a><br><br>343: <a href="/input_variables/basic/#nsym" target="_blank">nsym</a><br><br>331: <a href="/input_variables/basic/#ixc" target="_blank">ixc</a><br><br>300: <a href="/input_variables/files/#prtden" target="_blank">prtden</a><br><br>288: <a href="/input_variables/basic/#tolvrs" target="_blank">tolvrs</a><br><br>284: <a href="/input_variables/basic/#toldfe" target="_blank">toldfe</a><br><br>276: <a href="/input_variables/basic/#iscf" target="_blank">iscf</a><br><br>244: <a href="/input_variables/gstate/#tsmear" target="_blank">tsmear</a><br><br>237: <a href="/input_variables/basic/#wtk" target="_blank">wtk</a><br><br>231: <a href="/input_variables/dev/#istwfk" target="_blank">istwfk</a><br><br>228: <a href="/input_variables/gstate/#enunit" target="_blank">enunit</a><br><br>215: <a href="/input_variables/dfpt/#rfdir" target="_blank">rfdir</a><br><br>208: <a href="/input_variables/gstate/#diemix" target="_blank">diemix</a><br><br>204: <a href="/input_variables/files/#getden" target="_blank">getden</a><br><br>199: <a href="/input_variables/files/#prtvol" target="_blank">prtvol</a><br><br>184: <a href="/input_variables/basic/#symrel" target="_blank">symrel</a><br><br>179: <a href="/input_variables/gstate/#nbdbuf" target="_blank">nbdbuf</a><br><br>176: <a href="/input_variables/gstate/#qpt" target="_blank">qpt</a><br><br>174: <a href="/input_variables/gstate/#nqpt" target="_blank">nqpt</a><br><br>165: <a href="/input_variables/basic/#tnons" target="_blank">tnons</a><br><br>163: <a href="/input_variables/files/#prtwf" target="_blank">prtwf</a>, <a href="/input_variables/dfpt/#rfphon" target="_blank">rfphon</a><br><br>162: <a href="/input_variables/dfpt/#rfatpol" target="_blank">rfatpol</a><br><br>160: <a href="/input_variables/basic/#nsppol" target="_blank">nsppol</a><br><br>158: <a href="/input_variables/paw/#pawecutdg" target="_blank">pawecutdg</a><br><br>151: <a href="/input_variables/basic/#xcart" target="_blank">xcart</a><br><br>148: <a href="/input_variables/dev/#intxc" target="_blank">intxc</a><br><br>124: <a href="/input_variables/paral/#paral_kgb" target="_blank">paral_kgb</a><br><br>121: <a href="/input_variables/gstate/#optdriver" target="_blank">optdriver</a><br><br>120: <a href="/input_variables/rlx/#ntime" target="_blank">ntime</a><br><br>113: <a href="/input_variables/rlx/#ecutsm" target="_blank">ecutsm</a><br><br>111: <a href="/input_variables/rlx/#ionmov" target="_blank">ionmov</a><br><br>109: <a href="/input_variables/basic/#kptnrm" target="_blank">kptnrm</a><br><br>105: <a href="/input_variables/gstate/#spinat" target="_blank">spinat</a><br><br>103: <a href="/input_variables/files/#prteig" target="_blank">prteig</a><br><br>93: <a href="/input_variables/gw/#ecutwfn" target="_blank">ecutwfn</a><br><br>92: <a href="/input_variables/basic/#toldff" target="_blank">toldff</a><br><br>87: <a href="/input_variables/gw/#ecuteps" target="_blank">ecuteps</a><br><br>85: <a href="/input_variables/basic/#jdtset" target="_blank">jdtset</a>, <a href="/input_variables/dfpt/#rfelfd" target="_blank">rfelfd</a><br><br>82: <a href="/input_variables/files/#irdwfk" target="_blank">irdwfk</a>, <a href="/input_variables/rlx/#vel" target="_blank">vel</a><br><br>81: <a href="/input_variables/rlx/#amu" target="_blank">amu</a><br><br>80: <a href="/input_variables/gstate/#timopt" target="_blank">timopt</a><br><br>76: <a href="/input_variables/gstate/#chksymbreak" target="_blank">chksymbreak</a>, <a href="/input_variables/rlx/#tolmxf" target="_blank">tolmxf</a><br><br>69: <a href="/input_variables/gw/#ecutsigx" target="_blank">ecutsigx</a><br><br>68: <a href="/input_variables/gw/#icutcoul" target="_blank">icutcoul</a>, <a href="/input_variables/gw/#kptgw" target="_blank">kptgw</a>, <a href="/input_variables/gw/#nkptgw" target="_blank">nkptgw</a><br><br>67: <a href="/input_variables/files/#getscr" target="_blank">getscr</a><br><br>66: <a href="/input_variables/rlx/#dilatmx" target="_blank">dilatmx</a><br><br>65: <a href="/input_variables/files/#getddk" target="_blank">getddk</a>, <a href="/input_variables/gstate/#ngfft" target="_blank">ngfft</a><br><br>64: <a href="/input_variables/gstate/#nspden" target="_blank">nspden</a><br><br>63: <a href="/input_variables/gw/#bdgw" target="_blank">bdgw</a><br><br>60: <a href="/input_variables/gstate/#kptrlatt" target="_blank">kptrlatt</a><br><br>58: <a href="/input_variables/basic/#angdeg" target="_blank">angdeg</a>, <a href="/input_variables/gw/#inclvkb" target="_blank">inclvkb</a><br><br>57: <a href="/input_variables/gstate/#dielng" target="_blank">dielng</a><br><br>55: <a href="/input_variables/gstate/#nspinor" target="_blank">nspinor</a><br><br>54: <a href="/input_variables/rlx/#optcell" target="_blank">optcell</a><br><br>51: <a href="/input_variables/paral/#gwpara" target="_blank">gwpara</a><br><br>49: <a href="/input_variables/dev/#optforces" target="_blank">optforces</a><br><br>45: <a href="/input_variables/gstate/#chkprim" target="_blank">chkprim</a>, <a href="/input_variables/geo/#natrd" target="_blank">natrd</a><br><br>44: <a href="/input_variables/gstate/#charge" target="_blank">charge</a>, <a href="/input_variables/paw/#lpawu" target="_blank">lpawu</a>, <a href="/input_variables/internal/#usepaw" target="_blank">usepaw</a>, <a href="/input_variables/paw/#usepawu" target="_blank">usepawu</a><br><br>42: <a href="/input_variables/gw/#gwcalctyp" target="_blank">gwcalctyp</a>, <a href="/input_variables/basic/#udtset" target="_blank">udtset</a><br><br>41: <a href="/input_variables/paral/#localrdwf" target="_blank">localrdwf</a><br><br>40: <a href="/input_variables/ffield/#berryopt" target="_blank">berryopt</a><br><br>39: <a href="/input_variables/dev/#nnsclo" target="_blank">nnsclo</a><br><br>38: <a href="/input_variables/gstate/#optstress" target="_blank">optstress</a>, <a href="/input_variables/files/#prtdos" target="_blank">prtdos</a><br><br>37: <a href="/input_variables/paw/#jpawu" target="_blank">jpawu</a>, <a href="/input_variables/paw/#upawu" target="_blank">upawu</a><br><br>36: <a href="/input_variables/paw/#dmatpuopt" target="_blank">dmatpuopt</a>, <a href="/input_variables/files/#getwfq" target="_blank">getwfq</a>, <a href="/input_variables/geo/#spgroup" target="_blank">spgroup</a><br><br>35: <a href="/input_variables/dev/#densfor_pred" target="_blank">densfor_pred</a><br><br>34: <a href="/input_variables/dev/#fftalg" target="_blank">fftalg</a><br><br>33: <a href="/input_variables/dev/#densty" target="_blank">densty</a>, <a href="/input_variables/gw/#ppmfrq" target="_blank">ppmfrq</a>, <a href="/input_variables/ffield/#spinmagntarget" target="_blank">spinmagntarget</a><br><br>32: <a href="/input_variables/paral/#npkpt" target="_blank">npkpt</a><br><br>31: <a href="/input_variables/gw/#awtr" target="_blank">awtr</a><br><br>29: <a href="/input_variables/geo/#brvltt" target="_blank">brvltt</a>, <a href="/input_variables/gstate/#icoulomb" target="_blank">icoulomb</a>, <a href="/input_variables/paral/#npband" target="_blank">npband</a>, <a href="/input_variables/gw/#symchi" target="_blank">symchi</a><br><br>28: <a href="/input_variables/dev/#iomode" target="_blank">iomode</a>, <a href="/input_variables/paral/#npfft" target="_blank">npfft</a>, <a href="/input_variables/dev/#symmorphi" target="_blank">symmorphi</a><br><br>27: <a href="/input_variables/gstate/#iprcel" target="_blank">iprcel</a>, <a href="/input_variables/basic/#xangst" target="_blank">xangst</a><br><br>26: <a href="/input_variables/dfpt/#rfstrs" target="_blank">rfstrs</a><br><br>25: <a href="/input_variables/dfpt/#ieig2rf" target="_blank">ieig2rf</a>, <a href="/input_variables/gw/#nfreqim" target="_blank">nfreqim</a>, <a href="/input_variables/dfpt/#smdelta" target="_blank">smdelta</a>, <a href="/input_variables/gstate/#so_psp" target="_blank">so_psp</a><br><br>24: <a href="/input_variables/paw/#pawprtvol" target="_blank">pawprtvol</a><br><br>23: <a href="/input_variables/dmft/#dmftbandf" target="_blank">dmftbandf</a>, <a href="/input_variables/dmft/#dmftbandi" target="_blank">dmftbandi</a>, <a href="/input_variables/files/#get1den" target="_blank">get1den</a>, <a href="/input_variables/gw/#nfreqre" target="_blank">nfreqre</a>, <a href="/input_variables/dev/#usedmft" target="_blank">usedmft</a>, <a href="/input_variables/basic/#usewvl" target="_blank">usewvl</a>, <a href="/input_variables/gstate/#wvl_bigdft_comp" target="_blank">wvl_bigdft_comp</a>, <a href="/input_variables/basic/#wvl_hgrid" target="_blank">wvl_hgrid</a><br><br>22: <a href="/input_variables/dmft/#dmft_iter" target="_blank">dmft_iter</a>, <a href="/input_variables/dmft/#dmft_nwli" target="_blank">dmft_nwli</a>, <a href="/input_variables/dmft/#dmft_nwlo" target="_blank">dmft_nwlo</a>, <a href="/input_variables/ffield/#efield" target="_blank">efield</a>, <a href="/input_variables/gstate/#npsp" target="_blank">npsp</a>, <a href="/input_variables/dev/#nscforder" target="_blank">nscforder</a>, <a href="/input_variables/gstate/#vacuum" target="_blank">vacuum</a>, <a href="/input_variables/gstate/#wvl_nprccg" target="_blank">wvl_nprccg</a><br><br>21: <a href="/input_variables/dmft/#dmft_solv" target="_blank">dmft_solv</a>, <a href="/input_variables/files/#get1wf" target="_blank">get1wf</a><br><br>20: <a href="/input_variables/geo/#spgroupma" target="_blank">spgroupma</a>, <a href="/input_variables/gw/#symsigma" target="_blank">symsigma</a>, <a href="/input_variables/rlx/#vis" target="_blank">vis</a><br><br>19: <a href="/input_variables/gw/#ppmodel" target="_blank">ppmodel</a><br><br>18: <a href="/input_variables/dfpt/#d3e_pert1_atpol" target="_blank">d3e_pert1_atpol</a>, <a href="/input_variables/dfpt/#d3e_pert1_dir" target="_blank">d3e_pert1_dir</a>, <a href="/input_variables/dfpt/#d3e_pert1_elfd" target="_blank">d3e_pert1_elfd</a>, <a href="/input_variables/dfpt/#d3e_pert1_phon" target="_blank">d3e_pert1_phon</a>, <a href="/input_variables/dfpt/#d3e_pert2_dir" target="_blank">d3e_pert2_dir</a>, <a href="/input_variables/dfpt/#d3e_pert2_elfd" target="_blank">d3e_pert2_elfd</a>, <a href="/input_variables/dfpt/#d3e_pert3_dir" target="_blank">d3e_pert3_dir</a>, <a href="/input_variables/dfpt/#d3e_pert3_elfd" target="_blank">d3e_pert3_elfd</a>, <a href="/input_variables/dmft/#dmftcheck" target="_blank">dmftcheck</a>, <a href="/input_variables/rlx/#dtion" target="_blank">dtion</a>, <a href="/input_variables/dfpt/#elph2_imagden" target="_blank">elph2_imagden</a>, <a href="/input_variables/gw/#mbpt_sciss" target="_blank">mbpt_sciss</a>, <a href="/input_variables/gw/#zcut" target="_blank">zcut</a><br><br>17: <a href="/input_variables/bse/#bs_algorithm" target="_blank">bs_algorithm</a>, <a href="/input_variables/bse/#bs_calctype" target="_blank">bs_calctype</a>, <a href="/input_variables/bse/#bs_coulomb_term" target="_blank">bs_coulomb_term</a>, <a href="/input_variables/bse/#bs_coupling" target="_blank">bs_coupling</a>, <a href="/input_variables/bse/#bs_exchange_term" target="_blank">bs_exchange_term</a>, <a href="/input_variables/bse/#bs_loband" target="_blank">bs_loband</a>, <a href="/input_variables/dmft/#dmft_mxsf" target="_blank">dmft_mxsf</a>, <a href="/input_variables/dmft/#dmft_rslf" target="_blank">dmft_rslf</a>, <a href="/input_variables/gstate/#kptrlen" target="_blank">kptrlen</a>, <a href="/input_variables/rlx/#natfix" target="_blank">natfix</a>, <a href="/input_variables/dfpt/#prepanl" target="_blank">prepanl</a><br><br>16: <a href="/input_variables/basic/#accuracy" target="_blank">accuracy</a>, <a href="/input_variables/bse/#bs_freq_mesh" target="_blank">bs_freq_mesh</a>, <a href="/input_variables/rlx/#iatfix" target="_blank">iatfix</a>, <a href="/input_variables/files/#prtkpt" target="_blank">prtkpt</a>, <a href="/input_variables/gw/#rcut" target="_blank">rcut</a>, <a href="/input_variables/dev/#wfoptalg" target="_blank">wfoptalg</a>, <a href="/input_variables/gstate/#wvl_crmult" target="_blank">wvl_crmult</a>, <a href="/input_variables/gstate/#wvl_frmult" target="_blank">wvl_frmult</a><br><br>15: <a href="/input_variables/dfpt/#bdeigrf" target="_blank">bdeigrf</a>, <a href="/input_variables/paw/#pawmixdg" target="_blank">pawmixdg</a><br><br>14: <a href="/input_variables/bse/#bs_haydock_niter" target="_blank">bs_haydock_niter</a>, <a href="/input_variables/bse/#bs_haydock_tol" target="_blank">bs_haydock_tol</a>, <a href="/input_variables/dev/#builtintest" target="_blank">builtintest</a>, <a href="/input_variables/gw/#fftgw" target="_blank">fftgw</a>, <a href="/input_variables/dev/#istatr" target="_blank">istatr</a>, <a href="/input_variables/files/#prtpot" target="_blank">prtpot</a><br><br>13: <a href="/input_variables/gstate/#diecut" target="_blank">diecut</a>, <a href="/input_variables/paw/#dmatpawu" target="_blank">dmatpawu</a>, <a href="/input_variables/gw/#freqremax" target="_blank">freqremax</a>, <a href="/input_variables/gstate/#kptbounds" target="_blank">kptbounds</a>, <a href="/input_variables/files/#prtwant" target="_blank">prtwant</a>, <a href="/input_variables/paw/#usedmatpu" target="_blank">usedmatpu</a><br><br>12: <a href="/input_variables/files/#getqps" target="_blank">getqps</a>, <a href="/input_variables/paw/#ngfftdg" target="_blank">ngfftdg</a>, <a href="/input_variables/rlx/#nimage" target="_blank">nimage</a>, <a href="/input_variables/dev/#npulayit" target="_blank">npulayit</a>, <a href="/input_variables/dev/#ortalg" target="_blank">ortalg</a>, <a href="/input_variables/paw/#usexcnhat" target="_blank">usexcnhat</a><br><br>11: <a href="/input_variables/paral/#autoparal" target="_blank">autoparal</a>, <a href="/input_variables/gstate/#boxcenter" target="_blank">boxcenter</a>, <a href="/input_variables/rlx/#imgmov" target="_blank">imgmov</a>, <a href="/input_variables/gw/#mdf_epsinf" target="_blank">mdf_epsinf</a>, <a href="/input_variables/rlx/#ntimimage" target="_blank">ntimimage</a>, <a href="/input_variables/gstate/#positron" target="_blank">positron</a>, <a href="/input_variables/gstate/#qptopt" target="_blank">qptopt</a>, <a href="/input_variables/gstate/#usekden" target="_blank">usekden</a><br><br>10: <a href="/input_variables/dmft/#dmft_dc" target="_blank">dmft_dc</a>, <a href="/input_variables/dmft/#dmftqmc_l" target="_blank">dmftqmc_l</a>, <a href="/input_variables/dmft/#dmftqmc_n" target="_blank">dmftqmc_n</a>, <a href="/input_variables/gw/#gwcomp" target="_blank">gwcomp</a>, <a href="/input_variables/gw/#gwencomp" target="_blank">gwencomp</a>, <a href="/input_variables/gstate/#iqpt" target="_blank">iqpt</a>, <a href="/input_variables/gstate/#ixcpositron" target="_blank">ixcpositron</a>, <a href="/input_variables/gw/#nfreqsp" target="_blank">nfreqsp</a>, <a href="/input_variables/gstate/#ngqpt" target="_blank">ngqpt</a>, <a href="/input_variables/gstate/#nwfshist" target="_blank">nwfshist</a>, <a href="/input_variables/files/#prtvhxc" target="_blank">prtvhxc</a><br><br>9: <a href="/input_variables/dmft/#dmftqmc_therm" target="_blank">dmftqmc_therm</a>, <a href="/input_variables/rlx/#dynimage" target="_blank">dynimage</a>, <a href="/input_variables/paw/#f4of2_sla" target="_blank">f4of2_sla</a>, <a href="/input_variables/gstate/#iatsph" target="_blank">iatsph</a>, <a href="/input_variables/files/#irdscr" target="_blank">irdscr</a>, <a href="/input_variables/dev/#isecur" target="_blank">isecur</a>, <a href="/input_variables/rlx/#mdtemp" target="_blank">mdtemp</a>, <a href="/input_variables/gw/#nbandkss" target="_blank">nbandkss</a>, <a href="/input_variables/gstate/#ndivk" target="_blank">ndivk</a>, <a href="/input_variables/paral/#paral_atom" target="_blank">paral_atom</a>, <a href="/input_variables/paw/#pawspnorb" target="_blank">pawspnorb</a>, <a href="/input_variables/gstate/#posocc" target="_blank">posocc</a>, <a href="/input_variables/paw/#prtefg" target="_blank">prtefg</a>, <a href="/input_variables/files/#prtkden" target="_blank">prtkden</a>, <a href="/input_variables/gw/#rhoqpmix" target="_blank">rhoqpmix</a>, <a href="/input_variables/rlx/#strfact" target="_blank">strfact</a><br><br>8: <a href="/input_variables/gstate/#diegap" target="_blank">diegap</a>, <a href="/input_variables/gstate/#dielam" target="_blank">dielam</a>, <a href="/input_variables/gw/#freqspmax" target="_blank">freqspmax</a>, <a href="/input_variables/rlx/#getxcart" target="_blank">getxcart</a>, <a href="/input_variables/gw/#gwmem" target="_blank">gwmem</a>, <a href="/input_variables/files/#irdden" target="_blank">irdden</a>, <a href="/input_variables/files/#kssform" target="_blank">kssform</a>, <a href="/input_variables/gstate/#mixalch" target="_blank">mixalch</a>, <a href="/input_variables/gstate/#natsph" target="_blank">natsph</a>, <a href="/input_variables/gstate/#ntypalch" target="_blank">ntypalch</a>, <a href="/input_variables/geo/#spgaxor" target="_blank">spgaxor</a>, <a href="/input_variables/w90/#w90iniprj" target="_blank">w90iniprj</a>, <a href="/input_variables/w90/#w90prtunk" target="_blank">w90prtunk</a><br><br>7: <a href="/input_variables/paral/#bandpp" target="_blank">bandpp</a>, <a href="/input_variables/ffield/#bdberry" target="_blank">bdberry</a>, <a href="/input_variables/bse/#bs_hayd_term" target="_blank">bs_hayd_term</a>, <a href="/input_variables/rlx/#fxcartfactor" target="_blank">fxcartfactor</a>, <a href="/input_variables/rlx/#getxred" target="_blank">getxred</a>, <a href="/input_variables/dev/#mqgrid" target="_blank">mqgrid</a>, <a href="/input_variables/paw/#pawoptmix" target="_blank">pawoptmix</a>, <a href="/input_variables/paw/#pawovlp" target="_blank">pawovlp</a>, <a href="/input_variables/paw/#quadmom" target="_blank">quadmom</a>, <a href="/input_variables/gstate/#ratsph" target="_blank">ratsph</a>, <a href="/input_variables/gstate/#shiftq" target="_blank">shiftq</a>, <a href="/input_variables/rlx/#tolimg" target="_blank">tolimg</a>, <a href="/input_variables/paral/#use_gpu_cuda" target="_blank">use_gpu_cuda</a>, <a href="/input_variables/dev/#useylm" target="_blank">useylm</a>, <a href="/input_variables/vdw/#vdw_xc" target="_blank">vdw_xc</a>, <a href="/input_variables/gstate/#wvl_ngauss" target="_blank">wvl_ngauss</a><br><br>6: <a href="/input_variables/eph/#asr" target="_blank">asr</a>, <a href="/input_variables/gstate/#boxcutmin" target="_blank">boxcutmin</a>, <a href="/input_variables/gw/#freqspmin" target="_blank">freqspmin</a>, <a href="/input_variables/dev/#getwfkfine" target="_blank">getwfkfine</a>, <a href="/input_variables/paw/#mqgriddg" target="_blank">mqgriddg</a>, <a href="/input_variables/gstate/#ndivsm" target="_blank">ndivsm</a>, <a href="/input_variables/paral/#nphf" target="_blank">nphf</a>, <a href="/input_variables/gstate/#nshiftq" target="_blank">nshiftq</a>, <a href="/input_variables/gstate/#posnstep" target="_blank">posnstep</a>, <a href="/input_variables/files/#prtgeo" target="_blank">prtgeo</a>, <a href="/input_variables/files/#prtvha" target="_blank">prtvha</a>, <a href="/input_variables/files/#prtvolimg" target="_blank">prtvolimg</a>, <a href="/input_variables/files/#prtvxc" target="_blank">prtvxc</a><br><br>5: <a href="/input_variables/bse/#bs_interp_mode" target="_blank">bs_interp_mode</a>, <a href="/input_variables/ffield/#ddamp" target="_blank">ddamp</a>, <a href="/input_variables/dev/#dmft_read_occnd" target="_blank">dmft_read_occnd</a>, <a href="/input_variables/dmft/#dmft_t2g" target="_blank">dmft_t2g</a>, <a href="/input_variables/files/#getddb" target="_blank">getddb</a>, <a href="/input_variables/files/#irdwfq" target="_blank">irdwfq</a>, <a href="/input_variables/ffield/#kberry" target="_blank">kberry</a>, <a href="/input_variables/dev/#nloc_alg" target="_blank">nloc_alg</a>, <a href="/input_variables/gw/#nomegasf" target="_blank">nomegasf</a>, <a href="/input_variables/paw/#pawprtdos" target="_blank">pawprtdos</a>, <a href="/input_variables/dfpt/#prepgkk" target="_blank">prepgkk</a>, <a href="/input_variables/files/#prt1dm" target="_blank">prt1dm</a>, <a href="/input_variables/paw/#prtfc" target="_blank">prtfc</a>, <a href="/input_variables/files/#prtgkk" target="_blank">prtgkk</a>, <a href="/input_variables/files/#prtsuscep" target="_blank">prtsuscep</a>, <a href="/input_variables/gw/#spmeth" target="_blank">spmeth</a>, <a href="/input_variables/dev/#tfkinfunc" target="_blank">tfkinfunc</a>, <a href="/input_variables/gw/#ucrpa" target="_blank">ucrpa</a>, <a href="/input_variables/dev/#use_nonscf_gkk" target="_blank">use_nonscf_gkk</a><br><br>4: <a href="/input_variables/ffield/#bfield" target="_blank">bfield</a>, <a href="/input_variables/bse/#bs_interp_kmult" target="_blank">bs_interp_kmult</a>, <a href="/input_variables/bse/#bs_interp_method" target="_blank">bs_interp_method</a>, <a href="/input_variables/bse/#bs_nstates" target="_blank">bs_nstates</a>, <a href="/input_variables/ffield/#dfield" target="_blank">dfield</a>, <a href="/input_variables/gstate/#diemixmag" target="_blank">diemixmag</a>, <a href="/input_variables/dev/#dmftctqmc_basis" target="_blank">dmftctqmc_basis</a>, <a href="/input_variables/dmft/#dmftctqmc_check" target="_blank">dmftctqmc_check</a>, <a href="/input_variables/dmft/#dmftctqmc_correl" target="_blank">dmftctqmc_correl</a>, <a href="/input_variables/dmft/#dmftctqmc_gmove" target="_blank">dmftctqmc_gmove</a>, <a href="/input_variables/dmft/#dmftctqmc_grnns" target="_blank">dmftctqmc_grnns</a>, <a href="/input_variables/dmft/#dmftctqmc_meas" target="_blank">dmftctqmc_meas</a>, <a href="/input_variables/dmft/#dmftctqmc_mov" target="_blank">dmftctqmc_mov</a>, <a href="/input_variables/dmft/#dmftctqmc_mrka" target="_blank">dmftctqmc_mrka</a>, <a href="/input_variables/dmft/#dmftctqmc_order" target="_blank">dmftctqmc_order</a>, <a href="/input_variables/gstate/#fband" target="_blank">fband</a>, <a href="/input_variables/gw/#freqremin" target="_blank">freqremin</a>, <a href="/input_variables/files/#getbseig" target="_blank">getbseig</a>, <a href="/input_variables/files/#getbsreso" target="_blank">getbsreso</a>, <a href="/input_variables/rlx/#getcell" target="_blank">getcell</a>, <a href="/input_variables/paral/#gpu_linalg_limit" target="_blank">gpu_linalg_limit</a>, <a href="/input_variables/gw/#gwgamma" target="_blank">gwgamma</a>, <a href="/input_variables/dev/#iprcfc" target="_blank">iprcfc</a>, <a href="/input_variables/files/#irdbsreso" target="_blank">irdbsreso</a>, <a href="/input_variables/files/#irdddk" target="_blank">irdddk</a>, <a href="/input_variables/gstate/#jellslab" target="_blank">jellslab</a>, <a href="/input_variables/dev/#macro_uj" target="_blank">macro_uj</a>, <a href="/input_variables/basic/#nbandhf" target="_blank">nbandhf</a>, <a href="/input_variables/ffield/#nberry" target="_blank">nberry</a>, <a href="/input_variables/basic/#nkpthf" target="_blank">nkpthf</a>, <a href="/input_variables/paral/#npimage" target="_blank">npimage</a>, <a href="/input_variables/paral/#nppert" target="_blank">nppert</a>, <a href="/input_variables/paral/#paral_rf" target="_blank">paral_rf</a>, <a href="/input_variables/gstate/#postoldfe" target="_blank">postoldfe</a>, <a href="/input_variables/files/#prtgden" target="_blank">prtgden</a>, <a href="/input_variables/files/#prtlden" target="_blank">prtlden</a>, <a href="/input_variables/dev/#prtnest" target="_blank">prtnest</a>, <a href="/input_variables/files/#prtvclmb" target="_blank">prtvclmb</a>, <a href="/input_variables/files/#prtvpsp" target="_blank">prtvpsp</a>, <a href="/input_variables/dfpt/#rfasr" target="_blank">rfasr</a>, <a href="/input_variables/gstate/#slabwsrad" target="_blank">slabwsrad</a>, <a href="/input_variables/gstate/#slabzbeg" target="_blank">slabzbeg</a>, <a href="/input_variables/gstate/#slabzend" target="_blank">slabzend</a>, <a href="/input_variables/basic/#tolrff" target="_blank">tolrff</a>, <a href="/input_variables/gw/#ucrpa_bands" target="_blank">ucrpa_bands</a>, <a href="/input_variables/paral/#use_slk" target="_blank">use_slk</a>, <a href="/input_variables/vdw/#vdw_tol" target="_blank">vdw_tol</a><br><br>3: <a href="/input_variables/gstate/#cpus" target="_blank">cpus</a>, <a href="/input_variables/eph/#ddb_ngqpt" target="_blank">ddb_ngqpt</a>, <a href="/input_variables/dmft/#dmft_entropy" target="_blank">dmft_entropy</a>, <a href="/input_variables/dmft/#dmft_nlambda" target="_blank">dmft_nlambda</a>, <a href="/input_variables/dev/#effmass_free" target="_blank">effmass_free</a>, <a href="/input_variables/dfpt/#efmas" target="_blank">efmas</a>, <a href="/input_variables/dfpt/#efmas_bands" target="_blank">efmas_bands</a>, <a href="/input_variables/dfpt/#efmas_ntheta" target="_blank">efmas_ntheta</a>, <a href="/input_variables/dev/#fermie_nest" target="_blank">fermie_nest</a>, <a href="/input_variables/dfpt/#frzfermi" target="_blank">frzfermi</a>, <a href="/input_variables/paral/#gpu_devices" target="_blank">gpu_devices</a>, <a href="/input_variables/gw/#gw_customnfreqsp" target="_blank">gw_customnfreqsp</a>, <a href="/input_variables/gw/#gw_freqsp" target="_blank">gw_freqsp</a>, <a href="/input_variables/gw/#gw_qprange" target="_blank">gw_qprange</a>, <a href="/input_variables/rlx/#iatcon" target="_blank">iatcon</a>, <a href="/input_variables/dev/#irandom" target="_blank">irandom</a>, <a href="/input_variables/files/#irdqps" target="_blank">irdqps</a>, <a href="/input_variables/rlx/#natcon" target="_blank">natcon</a>, <a href="/input_variables/rlx/#nconeq" target="_blank">nconeq</a>, <a href="/input_variables/geo/#nobj" target="_blank">nobj</a>, <a href="/input_variables/geo/#objaat" target="_blank">objaat</a>, <a href="/input_variables/geo/#objan" target="_blank">objan</a>, <a href="/input_variables/geo/#objarf" target="_blank">objarf</a>, <a href="/input_variables/geo/#objatr" target="_blank">objatr</a>, <a href="/input_variables/paw/#pawfatbnd" target="_blank">pawfatbnd</a>, <a href="/input_variables/paw/#pawoptosc" target="_blank">pawoptosc</a>, <a href="/input_variables/rlx/#pitransform" target="_blank">pitransform</a>, <a href="/input_variables/gstate/#posdoppler" target="_blank">posdoppler</a>, <a href="/input_variables/dev/#prtcif" target="_blank">prtcif</a>, <a href="/input_variables/gstate/#prtdensph" target="_blank">prtdensph</a>, <a href="/input_variables/gstate/#prtebands" target="_blank">prtebands</a>, <a href="/input_variables/files/#prtelf" target="_blank">prtelf</a>, <a href="/input_variables/paw/#prtnabla" target="_blank">prtnabla</a>, <a href="/input_variables/files/#prtstm" target="_blank">prtstm</a>, <a href="/input_variables/dev/#recefermi" target="_blank">recefermi</a>, <a href="/input_variables/dev/#recnpath" target="_blank">recnpath</a>, <a href="/input_variables/dev/#recnrec" target="_blank">recnrec</a>, <a href="/input_variables/dev/#recptrott" target="_blank">recptrott</a>, <a href="/input_variables/dev/#recrcut" target="_blank">recrcut</a>, <a href="/input_variables/dev/#rectolden" target="_blank">rectolden</a>, <a href="/input_variables/ffield/#red_efield" target="_blank">red_efield</a>, <a href="/input_variables/rlx/#restartxf" target="_blank">restartxf</a>, <a href="/input_variables/geo/#spgorig" target="_blank">spgorig</a>, <a href="/input_variables/rlx/#strprecon" target="_blank">strprecon</a>, <a href="/input_variables/rlx/#strtarget" target="_blank">strtarget</a>, <a href="/input_variables/vdw/#vdw_nfrag" target="_blank">vdw_nfrag</a>, <a href="/input_variables/vdw/#vdw_supercell" target="_blank">vdw_supercell</a>, <a href="/input_variables/vdw/#vdw_typfrag" target="_blank">vdw_typfrag</a>, <a href="/input_variables/rlx/#wtatcon" target="_blank">wtatcon</a><br><br>2: <a href="/input_variables/ffield/#atvshift" target="_blank">atvshift</a>, <a href="/input_variables/dev/#cgtyphf" target="_blank">cgtyphf</a>, <a href="/input_variables/geo/#chempot" target="_blank">chempot</a>, <a href="/input_variables/gstate/#chkexit" target="_blank">chkexit</a>, <a href="/input_variables/rlx/#delayperm" target="_blank">delayperm</a>, <a href="/input_variables/dmft/#dmft_tolfreq" target="_blank">dmft_tolfreq</a>, <a href="/input_variables/dmft/#dmftctqmc_triqs_nleg" target="_blank">dmftctqmc_triqs_nleg</a>, <a href="/input_variables/dmft/#dmftqmc_seed" target="_blank">dmftqmc_seed</a>, <a href="/input_variables/gstate/#dosdeltae" target="_blank">dosdeltae</a>, <a href="/input_variables/dfpt/#efmas_calc_dirs" target="_blank">efmas_calc_dirs</a>, <a href="/input_variables/dfpt/#efmas_dirs" target="_blank">efmas_dirs</a>, <a href="/input_variables/dfpt/#efmas_n_dirs" target="_blank">efmas_n_dirs</a>, <a href="/input_variables/basic/#einterp" target="_blank">einterp</a>, <a href="/input_variables/eph/#eph_ngqpt_fine" target="_blank">eph_ngqpt_fine</a>, <a href="/input_variables/dfpt/#eph_task" target="_blank">eph_task</a>, <a href="/input_variables/rlx/#friction" target="_blank">friction</a>, <a href="/input_variables/dev/#getgam_eig2nkq" target="_blank">getgam_eig2nkq</a>, <a href="/input_variables/files/#getocc" target="_blank">getocc</a>, <a href="/input_variables/files/#getsuscep" target="_blank">getsuscep</a>, <a href="/input_variables/gw/#gwls_band_index" target="_blank">gwls_band_index</a>, <a href="/input_variables/gw/#gwls_kmax_complement" target="_blank">gwls_kmax_complement</a>, <a href="/input_variables/gw/#gwls_recycle" target="_blank">gwls_recycle</a>, <a href="/input_variables/gw/#gwls_stern_kmax" target="_blank">gwls_stern_kmax</a>, <a href="/input_variables/rlx/#iatfixx" target="_blank">iatfixx</a>, <a href="/input_variables/rlx/#iatfixy" target="_blank">iatfixy</a>, <a href="/input_variables/rlx/#iatfixz" target="_blank">iatfixz</a>, <a href="/input_variables/files/#ird1wf" target="_blank">ird1wf</a>, <a href="/input_variables/files/#irdbseig" target="_blank">irdbseig</a>, <a href="/input_variables/files/#irdddb" target="_blank">irdddb</a>, <a href="/input_variables/files/#irdsuscep" target="_blank">irdsuscep</a>, <a href="/input_variables/rlx/#istatimg" target="_blank">istatimg</a>, <a href="/input_variables/ffield/#maxestep" target="_blank">maxestep</a>, <a href="/input_variables/rlx/#natfixx" target="_blank">natfixx</a>, <a href="/input_variables/rlx/#natfixy" target="_blank">natfixy</a>, <a href="/input_variables/rlx/#natfixz" target="_blank">natfixz</a>, <a href="/input_variables/ffield/#natvshift" target="_blank">natvshift</a>, <a href="/input_variables/dev/#nbdblock" target="_blank">nbdblock</a>, <a href="/input_variables/dev/#nc_xccc_gspace" target="_blank">nc_xccc_gspace</a>, <a href="/input_variables/dev/#nctime" target="_blank">nctime</a>, <a href="/input_variables/basic/#nkpath" target="_blank">nkpath</a>, <a href="/input_variables/rlx/#nnos" target="_blank">nnos</a>, <a href="/input_variables/dev/#nnsclohf" target="_blank">nnsclohf</a>, <a href="/input_variables/paral/#np_slk" target="_blank">np_slk</a>, <a href="/input_variables/paral/#npspinor" target="_blank">npspinor</a>, <a href="/input_variables/geo/#nzchempot" target="_blank">nzchempot</a>, <a href="/input_variables/geo/#objaax" target="_blank">objaax</a>, <a href="/input_variables/geo/#objaro" target="_blank">objaro</a>, <a href="/input_variables/geo/#objbat" target="_blank">objbat</a>, <a href="/input_variables/geo/#objbn" target="_blank">objbn</a>, <a href="/input_variables/geo/#objbrf" target="_blank">objbrf</a>, <a href="/input_variables/geo/#objbtr" target="_blank">objbtr</a>, <a href="/input_variables/paw/#pawcpxocc" target="_blank">pawcpxocc</a>, <a href="/input_variables/dev/#pawujat" target="_blank">pawujat</a>, <a href="/input_variables/dev/#pawujrad" target="_blank">pawujrad</a>, <a href="/input_variables/dev/#pawujv" target="_blank">pawujv</a>, <a href="/input_variables/eph/#ph_intmeth" target="_blank">ph_intmeth</a>, <a href="/input_variables/eph/#ph_ndivsm" target="_blank">ph_ndivsm</a>, <a href="/input_variables/dfpt/#ph_ngqpt" target="_blank">ph_ngqpt</a>, <a href="/input_variables/eph/#ph_nqpath" target="_blank">ph_nqpath</a>, <a href="/input_variables/eph/#ph_nqshift" target="_blank">ph_nqshift</a>, <a href="/input_variables/dfpt/#ph_qpath" target="_blank">ph_qpath</a>, <a href="/input_variables/eph/#ph_qshift" target="_blank">ph_qshift</a>, <a href="/input_variables/eph/#ph_smear" target="_blank">ph_smear</a>, <a href="/input_variables/eph/#ph_wstep" target="_blank">ph_wstep</a>, <a href="/input_variables/rlx/#pimass" target="_blank">pimass</a>, <a href="/input_variables/dev/#plowan_bandf" target="_blank">plowan_bandf</a>, <a href="/input_variables/dev/#plowan_bandi" target="_blank">plowan_bandi</a>, <a href="/input_variables/dev/#plowan_compute" target="_blank">plowan_compute</a>, <a href="/input_variables/dev/#plowan_iatom" target="_blank">plowan_iatom</a>, <a href="/input_variables/dev/#plowan_it" target="_blank">plowan_it</a>, <a href="/input_variables/dev/#plowan_lcalc" target="_blank">plowan_lcalc</a>, <a href="/input_variables/dev/#plowan_natom" target="_blank">plowan_natom</a>, <a href="/input_variables/dev/#plowan_nbl" target="_blank">plowan_nbl</a>, <a href="/input_variables/dev/#plowan_nt" target="_blank">plowan_nt</a>, <a href="/input_variables/dev/#plowan_projcalc" target="_blank">plowan_projcalc</a>, <a href="/input_variables/dev/#plowan_realspace" target="_blank">plowan_realspace</a>, <a href="/input_variables/dev/#prtbltztrp" target="_blank">prtbltztrp</a>, <a href="/input_variables/files/#prtfsurf" target="_blank">prtfsurf</a>, <a href="/input_variables/rlx/#qmass" target="_blank">qmass</a>, <a href="/input_variables/ffield/#qprtrb" target="_blank">qprtrb</a>, <a href="/input_variables/internal/#qptn" target="_blank">qptn</a>, <a href="/input_variables/gstate/#qptnrm" target="_blank">qptnrm</a>, <a href="/input_variables/dev/#recgratio" target="_blank">recgratio</a>, <a href="/input_variables/ffield/#red_dfield" target="_blank">red_dfield</a>, <a href="/input_variables/ffield/#red_efieldbar" target="_blank">red_efieldbar</a>, <a href="/input_variables/rlx/#signperm" target="_blank">signperm</a>, <a href="/input_variables/dev/#tolrde" target="_blank">tolrde</a>, <a href="/input_variables/geo/#tolsym" target="_blank">tolsym</a>, <a href="/input_variables/dev/#use_gemm_nonlop" target="_blank">use_gemm_nonlop</a>, <a href="/input_variables/ffield/#vprtrb" target="_blank">vprtrb</a><br><br>1: <a href="/input_variables/rlx/#adpimd" target="_blank">adpimd</a>, <a href="/input_variables/rlx/#adpimd_gamma" target="_blank">adpimd_gamma</a>, <a href="/input_variables/gstate/#algalch" target="_blank">algalch</a>, <a href="/input_variables/ffield/#berrysav" target="_blank">berrysav</a>, <a href="/input_variables/ffield/#berrystep" target="_blank">berrystep</a>, <a href="/input_variables/rlx/#bmass" target="_blank">bmass</a>, <a href="/input_variables/bse/#bs_interp_m3_width" target="_blank">bs_interp_m3_width</a>, <a href="/input_variables/bse/#bs_interp_prep" target="_blank">bs_interp_prep</a>, <a href="/input_variables/bse/#bs_interp_rl_nb" target="_blank">bs_interp_rl_nb</a>, <a href="/input_variables/paw/#bxctmindg" target="_blank">bxctmindg</a>, <a href="/input_variables/gw/#cd_customnimfrqs" target="_blank">cd_customnimfrqs</a>, <a href="/input_variables/gw/#cd_frqim_method" target="_blank">cd_frqim_method</a>, <a href="/input_variables/gw/#cd_full_grid" target="_blank">cd_full_grid</a>, <a href="/input_variables/gw/#cd_halfway_freq" target="_blank">cd_halfway_freq</a>, <a href="/input_variables/gw/#cd_imfrqs" target="_blank">cd_imfrqs</a>, <a href="/input_variables/gw/#cd_max_freq" target="_blank">cd_max_freq</a>, <a href="/input_variables/eph/#chneut" target="_blank">chneut</a>, <a href="/input_variables/rlx/#cineb_start" target="_blank">cineb_start</a>, <a href="/input_variables/dfpt/#d3e_pert2_atpol" target="_blank">d3e_pert2_atpol</a>, <a href="/input_variables/dfpt/#d3e_pert2_phon" target="_blank">d3e_pert2_phon</a>, <a href="/input_variables/dfpt/#d3e_pert3_atpol" target="_blank">d3e_pert3_atpol</a>, <a href="/input_variables/dfpt/#d3e_pert3_phon" target="_blank">d3e_pert3_phon</a>, <a href="/input_variables/eph/#ddb_shiftq" target="_blank">ddb_shiftq</a>, <a href="/input_variables/dfpt/#dfpt_sciss" target="_blank">dfpt_sciss</a>, <a href="/input_variables/eph/#dipdip" target="_blank">dipdip</a>, <a href="/input_variables/paw/#dmatudiag" target="_blank">dmatudiag</a>, <a href="/input_variables/dmft/#dmft_tollc" target="_blank">dmft_tollc</a>, <a href="/input_variables/dfpt/#efmas_deg" target="_blank">efmas_deg</a>, <a href="/input_variables/dfpt/#efmas_deg_tol" target="_blank">efmas_deg_tol</a>, <a href="/input_variables/dfpt/#efmas_dim" target="_blank">efmas_dim</a>, <a href="/input_variables/eph/#eph_extrael" target="_blank">eph_extrael</a>, <a href="/input_variables/eph/#eph_fermie" target="_blank">eph_fermie</a>, <a href="/input_variables/eph/#eph_fsewin" target="_blank">eph_fsewin</a>, <a href="/input_variables/eph/#eph_fsmear" target="_blank">eph_fsmear</a>, <a href="/input_variables/eph/#eph_intmeth" target="_blank">eph_intmeth</a>, <a href="/input_variables/eph/#eph_mustar" target="_blank">eph_mustar</a>, <a href="/input_variables/eph/#eph_transport" target="_blank">eph_transport</a>, <a href="/input_variables/dev/#eshift" target="_blank">eshift</a>, <a href="/input_variables/dfpt/#esmear" target="_blank">esmear</a>, <a href="/input_variables/dev/#exchmix" target="_blank">exchmix</a>, <a href="/input_variables/dev/#exchn2n3d" target="_blank">exchn2n3d</a>, <a href="/input_variables/dev/#extrapwf" target="_blank">extrapwf</a>, <a href="/input_variables/paw/#f6of2_sla" target="_blank">f6of2_sla</a>, <a href="/input_variables/dev/#fftcache" target="_blank">fftcache</a>, <a href="/input_variables/gw/#freqim_alpha" target="_blank">freqim_alpha</a>, <a href="/input_variables/rlx/#ga_fitness" target="_blank">ga_fitness</a>, <a href="/input_variables/rlx/#ga_n_rules" target="_blank">ga_n_rules</a>, <a href="/input_variables/rlx/#ga_opt_percent" target="_blank">ga_opt_percent</a>, <a href="/input_variables/rlx/#ga_rules" target="_blank">ga_rules</a>, <a href="/input_variables/geo/#genafm" target="_blank">genafm</a>, <a href="/input_variables/rlx/#goprecon" target="_blank">goprecon</a>, <a href="/input_variables/rlx/#goprecprm" target="_blank">goprecprm</a>, <a href="/input_variables/gw/#gw_frqim_inzgrid" target="_blank">gw_frqim_inzgrid</a>, <a href="/input_variables/gw/#gw_frqre_inzgrid" target="_blank">gw_frqre_inzgrid</a>, <a href="/input_variables/gw/#gw_frqre_tangrid" target="_blank">gw_frqre_tangrid</a>, <a href="/input_variables/gw/#gw_invalid_freq" target="_blank">gw_invalid_freq</a>, <a href="/input_variables/gw/#gw_nqlwl" target="_blank">gw_nqlwl</a>, <a href="/input_variables/gw/#gw_qlwl" target="_blank">gw_qlwl</a>, <a href="/input_variables/gw/#gw_sigxcore" target="_blank">gw_sigxcore</a>, <a href="/input_variables/gw/#gwfockmix" target="_blank">gwfockmix</a>, <a href="/input_variables/gw/#gwls_correlation" target="_blank">gwls_correlation</a>, <a href="/input_variables/gw/#gwls_diel_model" target="_blank">gwls_diel_model</a>, <a href="/input_variables/gw/#gwls_exchange" target="_blank">gwls_exchange</a>, <a href="/input_variables/gw/#gwls_first_seed" target="_blank">gwls_first_seed</a>, <a href="/input_variables/gw/#gwls_kmax_analytic" target="_blank">gwls_kmax_analytic</a>, <a href="/input_variables/gw/#gwls_kmax_numeric" target="_blank">gwls_kmax_numeric</a>, <a href="/input_variables/gw/#gwls_kmax_poles" target="_blank">gwls_kmax_poles</a>, <a href="/input_variables/gw/#gwls_list_proj_freq" target="_blank">gwls_list_proj_freq</a>, <a href="/input_variables/gw/#gwls_model_parameter" target="_blank">gwls_model_parameter</a>, <a href="/input_variables/gw/#gwls_n_proj_freq" target="_blank">gwls_n_proj_freq</a>, <a href="/input_variables/gw/#gwls_npt_gauss_quad" target="_blank">gwls_npt_gauss_quad</a>, <a href="/input_variables/gw/#gwls_nseeds" target="_blank">gwls_nseeds</a>, <a href="/input_variables/gw/#gwls_print_debug" target="_blank">gwls_print_debug</a>, <a href="/input_variables/gw/#gwrpacorr" target="_blank">gwrpacorr</a>, <a href="/input_variables/paw/#iboxcut" target="_blank">iboxcut</a>, <a href="/input_variables/files/#ird1den" target="_blank">ird1den</a>, <a href="/input_variables/dev/#irdwfkfine" target="_blank">irdwfkfine</a>, <a href="/input_variables/dev/#istatshft" target="_blank">istatshft</a>, <a href="/input_variables/ffield/#jfielddir" target="_blank">jfielddir</a>, <a href="/input_variables/paw/#lexexch" target="_blank">lexexch</a>, <a href="/input_variables/dev/#lotf_classic" target="_blank">lotf_classic</a>, <a href="/input_variables/dev/#lotf_nitex" target="_blank">lotf_nitex</a>, <a href="/input_variables/dev/#lotf_nneigx" target="_blank">lotf_nneigx</a>, <a href="/input_variables/dev/#lotf_version" target="_blank">lotf_version</a>, <a href="/input_variables/gstate/#magcon_lambda" target="_blank">magcon_lambda</a>, <a href="/input_variables/gstate/#magconon" target="_blank">magconon</a>, <a href="/input_variables/paral/#max_ncpus" target="_blank">max_ncpus</a>, <a href="/input_variables/dev/#maxnsym" target="_blank">maxnsym</a>, <a href="/input_variables/rlx/#mdwall" target="_blank">mdwall</a>, <a href="/input_variables/dev/#mem_test" target="_blank">mem_test</a>, <a href="/input_variables/rlx/#mep_mxstep" target="_blank">mep_mxstep</a>, <a href="/input_variables/rlx/#mep_solver" target="_blank">mep_solver</a>, <a href="/input_variables/gstate/#natsph_extra" target="_blank">natsph_extra</a>, <a href="/input_variables/rlx/#neb_algo" target="_blank">neb_algo</a>, <a href="/input_variables/rlx/#neb_spring" target="_blank">neb_spring</a>, <a href="/input_variables/dev/#nloc_mem" target="_blank">nloc_mem</a>, <a href="/input_variables/gw/#nomegasi" target="_blank">nomegasi</a>, <a href="/input_variables/gw/#nomegasrd" target="_blank">nomegasrd</a>, <a href="/input_variables/rlx/#noseinert" target="_blank">noseinert</a>, <a href="/input_variables/gw/#npvel" target="_blank">npvel</a>, <a href="/input_variables/gw/#nqptdm" target="_blank">nqptdm</a>, <a href="/input_variables/gstate/#nucdipmom" target="_blank">nucdipmom</a>, <a href="/input_variables/geo/#objbax" target="_blank">objbax</a>, <a href="/input_variables/geo/#objbro" target="_blank">objbro</a>, <a href="/input_variables/gw/#omegasimax" target="_blank">omegasimax</a>, <a href="/input_variables/gw/#omegasrdmax" target="_blank">omegasrdmax</a>, <a href="/input_variables/dev/#optnlxccc" target="_blank">optnlxccc</a>, <a href="/input_variables/paw/#pawlcutd" target="_blank">pawlcutd</a>, <a href="/input_variables/paw/#pawlmix" target="_blank">pawlmix</a>, <a href="/input_variables/paw/#pawnhatxc" target="_blank">pawnhatxc</a>, <a href="/input_variables/paw/#pawnphi" target="_blank">pawnphi</a>, <a href="/input_variables/paw/#pawntheta" target="_blank">pawntheta</a>, <a href="/input_variables/paw/#pawnzlm" target="_blank">pawnzlm</a>, <a href="/input_variables/paw/#pawprtwf" target="_blank">pawprtwf</a>, <a href="/input_variables/paw/#pawstgylm" target="_blank">pawstgylm</a>, <a href="/input_variables/paw/#pawusecp" target="_blank">pawusecp</a>, <a href="/input_variables/paw/#pawxcdev" target="_blank">pawxcdev</a>, <a href="/input_variables/rlx/#pimd_constraint" target="_blank">pimd_constraint</a>, <a href="/input_variables/ffield/#polcen" target="_blank">polcen</a>, <a href="/input_variables/gstate/#postoldff" target="_blank">postoldff</a>, <a href="/input_variables/rlx/#prtatlist" target="_blank">prtatlist</a>, <a href="/input_variables/dfpt/#prtbbb" target="_blank">prtbbb</a>, <a href="/input_variables/dev/#prtdipole" target="_blank">prtdipole</a>, <a href="/input_variables/files/#prtdosm" target="_blank">prtdosm</a>, <a href="/input_variables/files/#prtgsr" target="_blank">prtgsr</a>, <a href="/input_variables/eph/#prtphbands" target="_blank">prtphbands</a>, <a href="/input_variables/eph/#prtphdos" target="_blank">prtphdos</a>, <a href="/input_variables/eph/#prtphsurf" target="_blank">prtphsurf</a>, <a href="/input_variables/dev/#prtposcar" target="_blank">prtposcar</a>, <a href="/input_variables/files/#prtpsps" target="_blank">prtpsps</a>, <a href="/input_variables/files/#prtspcur" target="_blank">prtspcur</a>, <a href="/input_variables/files/#prtwf_full" target="_blank">prtwf_full</a>, <a href="/input_variables/files/#prtxml" target="_blank">prtxml</a>, <a href="/input_variables/paw/#ptcharge" target="_blank">ptcharge</a>, <a href="/input_variables/gw/#pvelmax" target="_blank">pvelmax</a>, <a href="/input_variables/paral/#pw_unbal_thresh" target="_blank">pw_unbal_thresh</a>, <a href="/input_variables/gw/#qptdm" target="_blank">qptdm</a>, <a href="/input_variables/gstate/#qptrlatt" target="_blank">qptrlatt</a>, <a href="/input_variables/rlx/#random_atpos" target="_blank">random_atpos</a>, <a href="/input_variables/gstate/#ratsph_extra" target="_blank">ratsph_extra</a>, <a href="/input_variables/dev/#rectesteg" target="_blank">rectesteg</a>, <a href="/input_variables/dfpt/#rfddk" target="_blank">rfddk</a>, <a href="/input_variables/dfpt/#rfmagn" target="_blank">rfmagn</a>, <a href="/input_variables/basic/#scalecart" target="_blank">scalecart</a>, <a href="/input_variables/gw/#spbroad" target="_blank">spbroad</a>, <a href="/input_variables/paw/#spnorbscl" target="_blank">spnorbscl</a>, <a href="/input_variables/gstate/#stmbias" target="_blank">stmbias</a>, <a href="/input_variables/rlx/#string_algo" target="_blank">string_algo</a>, <a href="/input_variables/gstate/#symafm" target="_blank">symafm</a>, <a href="/input_variables/dfpt/#td_maxene" target="_blank">td_maxene</a>, <a href="/input_variables/dfpt/#td_mexcit" target="_blank">td_mexcit</a>, <a href="/input_variables/dev/#tfw_toldfe" target="_blank">tfw_toldfe</a>, <a href="/input_variables/gstate/#tl_nprccg" target="_blank">tl_nprccg</a>, <a href="/input_variables/gstate/#tl_radius" target="_blank">tl_radius</a>, <a href="/input_variables/rlx/#tolmxde" target="_blank">tolmxde</a>, <a href="/input_variables/gstate/#tphysel" target="_blank">tphysel</a>, <a href="/input_variables/gw/#ucrpa_window" target="_blank">ucrpa_window</a>, <a href="/input_variables/paw/#useexexch" target="_blank">useexexch</a>, <a href="/input_variables/paw/#usepotzero" target="_blank">usepotzero</a>, <a href="/input_variables/geo/#vaclst" target="_blank">vaclst</a>, <a href="/input_variables/geo/#vacnum" target="_blank">vacnum</a>, <a href="/input_variables/gstate/#vacwidth" target="_blank">vacwidth</a>, <a href="/input_variables/gw/#vcutgeo" target="_blank">vcutgeo</a>, <a href="/input_variables/vdw/#vdw_tol_3bt" target="_blank">vdw_tol_3bt</a>, <a href="/input_variables/rlx/#vel_cell" target="_blank">vel_cell</a>, <a href="/input_variables/gstate/#wtq" target="_blank">wtq</a>, <a href="/input_variables/dev/#xc_denpos" target="_blank">xc_denpos</a>, <a href="/input_variables/dev/#xc_tb09_c" target="_blank">xc_tb09_c</a>, <a href="/input_variables/gstate/#xredsph_extra" target="_blank">xredsph_extra</a>, <a href="/input_variables/geo/#xyzfile" target="_blank">xyzfile</a>, <a href="/input_variables/ffield/#zeemanfield" target="_blank">zeemanfield</a><br><br>0: <a href="/input_variables/bse/#bs_eh_cutoff" target="_blank">bs_eh_cutoff</a>, <a href="/input_variables/gw/#cd_subset_freq" target="_blank">cd_subset_freq</a>, <a href="/input_variables/gstate/#cpuh" target="_blank">cpuh</a>, <a href="/input_variables/gstate/#cpum" target="_blank">cpum</a>, <a href="/input_variables/rlx/#diismemory" target="_blank">diismemory</a>, <a href="/input_variables/rlx/#ga_algor" target="_blank">ga_algor</a>, <a href="/input_variables/files/#getbscoup" target="_blank">getbscoup</a>, <a href="/input_variables/files/#gethaydock" target="_blank">gethaydock</a>, <a href="/input_variables/rlx/#getvel" target="_blank">getvel</a>, <a href="/input_variables/gw/#gw_nstep" target="_blank">gw_nstep</a>, <a href="/input_variables/gw/#gw_sctype" target="_blank">gw_sctype</a>, <a href="/input_variables/gw/#gw_toldfeig" target="_blank">gw_toldfeig</a>, <a href="/input_variables/files/#irdbscoup" target="_blank">irdbscoup</a>, <a href="/input_variables/files/#irdhaydock" target="_blank">irdhaydock</a>, <a href="/input_variables/vdw/#irdvdw" target="_blank">irdvdw</a>, <a href="/input_variables/internal/#kptns" target="_blank">kptns</a>, <a href="/input_variables/internal/#mband" target="_blank">mband</a>, <a href="/input_variables/internal/#mgfft" target="_blank">mgfft</a>, <a href="/input_variables/internal/#mgfftdg" target="_blank">mgfftdg</a>, <a href="/input_variables/internal/#mpw" target="_blank">mpw</a>, <a href="/input_variables/internal/#natpawu" target="_blank">natpawu</a>, <a href="/input_variables/internal/#ndynimage" target="_blank">ndynimage</a>, <a href="/input_variables/internal/#nelect" target="_blank">nelect</a>, <a href="/input_variables/internal/#nfft" target="_blank">nfft</a>, <a href="/input_variables/internal/#nfftdg" target="_blank">nfftdg</a>, <a href="/input_variables/gw/#nfreqmidm" target="_blank">nfreqmidm</a>, <a href="/input_variables/dev/#normpawu" target="_blank">normpawu</a>, <a href="/input_variables/gstate/#npspalch" target="_blank">npspalch</a>, <a href="/input_variables/internal/#npweps" target="_blank">npweps</a>, <a href="/input_variables/gw/#npwkss" target="_blank">npwkss</a>, <a href="/input_variables/internal/#npwsigx" target="_blank">npwsigx</a>, <a href="/input_variables/internal/#npwwfn" target="_blank">npwwfn</a>, <a href="/input_variables/gstate/#ntyppure" target="_blank">ntyppure</a>, <a href="/input_variables/dev/#papiopt" target="_blank">papiopt</a>, <a href="/input_variables/paw/#pawcross" target="_blank">pawcross</a>, <a href="/input_variables/dev/#pawprt_b" target="_blank">pawprt_b</a>, <a href="/input_variables/dev/#pawprt_k" target="_blank">pawprt_k</a>, <a href="/input_variables/paw/#pawprtden" target="_blank">pawprtden</a>, <a href="/input_variables/paw/#pawsushat" target="_blank">pawsushat</a>, <a href="/input_variables/dev/#prepscphon" target="_blank">prepscphon</a>, <a href="/input_variables/vdw/#prtvdw" target="_blank">prtvdw</a>, <a href="/input_variables/geo/#ptgroupma" target="_blank">ptgroupma</a>, <a href="/input_variables/dfpt/#rf2_dkdk" target="_blank">rf2_dkdk</a>, <a href="/input_variables/dfpt/#rfmeth" target="_blank">rfmeth</a>, <a href="/input_variables/dfpt/#rfuser" target="_blank">rfuser</a>, <a href="/input_variables/basic/#rprimd" target="_blank">rprimd</a>, <a href="/input_variables/gstate/#scphon_supercell" target="_blank">scphon_supercell</a>, <a href="/input_variables/gstate/#scphon_temp" target="_blank">scphon_temp</a>, <a href="/input_variables/eph/#symdynmat" target="_blank">symdynmat</a>, <a href="/input_variables/internal/#usefock" target="_blank">usefock</a>, <a href="/input_variables/internal/#userec" target="_blank">userec</a>, <a href="/input_variables/dev/#useria" target="_blank">useria</a>, <a href="/input_variables/dev/#userib" target="_blank">userib</a>, <a href="/input_variables/dev/#useric" target="_blank">useric</a>, <a href="/input_variables/dev/#userid" target="_blank">userid</a>, <a href="/input_variables/dev/#userie" target="_blank">userie</a>, <a href="/input_variables/dev/#userra" target="_blank">userra</a>, <a href="/input_variables/dev/#userrb" target="_blank">userrb</a>, <a href="/input_variables/dev/#userrc" target="_blank">userrc</a>, <a href="/input_variables/dev/#userrd" target="_blank">userrd</a>, <a href="/input_variables/dev/#userre" target="_blank">userre</a>, <a href="/input_variables/vdw/#vdw_df_acutmin" target="_blank">vdw_df_acutmin</a>, <a href="/input_variables/vdw/#vdw_df_aratio" target="_blank">vdw_df_aratio</a>, <a href="/input_variables/vdw/#vdw_df_damax" target="_blank">vdw_df_damax</a>, <a href="/input_variables/vdw/#vdw_df_damin" target="_blank">vdw_df_damin</a>, <a href="/input_variables/vdw/#vdw_df_dcut" target="_blank">vdw_df_dcut</a>, <a href="/input_variables/vdw/#vdw_df_dratio" target="_blank">vdw_df_dratio</a>, <a href="/input_variables/vdw/#vdw_df_dsoft" target="_blank">vdw_df_dsoft</a>, <a href="/input_variables/vdw/#vdw_df_gcut" target="_blank">vdw_df_gcut</a>, <a href="/input_variables/vdw/#vdw_df_ndpts" target="_blank">vdw_df_ndpts</a>, <a href="/input_variables/vdw/#vdw_df_ngpts" target="_blank">vdw_df_ngpts</a>, <a href="/input_variables/vdw/#vdw_df_nqpts" target="_blank">vdw_df_nqpts</a>, <a href="/input_variables/vdw/#vdw_df_nrpts" target="_blank">vdw_df_nrpts</a>, <a href="/input_variables/vdw/#vdw_df_nsmooth" target="_blank">vdw_df_nsmooth</a>, <a href="/input_variables/vdw/#vdw_df_phisoft" target="_blank">vdw_df_phisoft</a>, <a href="/input_variables/vdw/#vdw_df_qcut" target="_blank">vdw_df_qcut</a>, <a href="/input_variables/vdw/#vdw_df_qratio" target="_blank">vdw_df_qratio</a>, <a href="/input_variables/vdw/#vdw_df_rcut" target="_blank">vdw_df_rcut</a>, <a href="/input_variables/vdw/#vdw_df_rsoft" target="_blank">vdw_df_rsoft</a>, <a href="/input_variables/vdw/#vdw_df_threshold" target="_blank">vdw_df_threshold</a>, <a href="/input_variables/vdw/#vdw_df_tolerance" target="_blank">vdw_df_tolerance</a>, <a href="/input_variables/vdw/#vdw_df_tweaks" target="_blank">vdw_df_tweaks</a>, <a href="/input_variables/vdw/#vdw_df_zab" target="_blank">vdw_df_zab</a>, <a href="/input_variables/internal/#xclevel" target="_blank">xclevel</a>, <a href="/input_variables/internal/#ziontypat" target="_blank">ziontypat</a><br><br></p>
 <h1 id="aim"><strong>aim</strong><a class="headerlink" href="#aim" title="Permanent link">&para;</a></h1>
@@ -162,36 +2170,18 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <h1 id="optic"><strong>optic</strong><a class="headerlink" href="#optic" title="Permanent link">&para;</a></h1>
 <p>6 tests</p>
 <p>6: <a href="/input_variables/optic/#broadening" target="_blank">broadening</a>, <a href="/input_variables/optic/#ddkfile" target="_blank">ddkfile</a>, <a href="/input_variables/optic/#domega" target="_blank">domega</a>, <a href="/input_variables/optic/#lin_comp" target="_blank">lin_comp</a>, <a href="/input_variables/optic/#maxomega" target="_blank">maxomega</a>, <a href="/input_variables/optic/#nonlin_comp" target="_blank">nonlin_comp</a>, <a href="/input_variables/optic/#num_lin_comp" target="_blank">num_lin_comp</a>, <a href="/input_variables/optic/#num_nonlin_comp" target="_blank">num_nonlin_comp</a>, <a href="/input_variables/optic/#scissor" target="_blank">scissor</a>, <a href="/input_variables/optic/#tolerance" target="_blank">tolerance</a>, <a href="/input_variables/optic/#wfkfile" target="_blank">wfkfile</a><br><br></p>
-
-  <br>
-    
-
-  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
-    
-    <div class="wm-article-nav pull-right">
-      <a href="../../tutorials/welcome/" class="btn btn-xs btn-default pull-right">
-        Next
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
-      </a>
-      <a href="../../tutorials/welcome/" class="btn btn-xs btn-link">
-        Overview
-      </a>
-    </div>
-    
-    <div class="wm-article-nav">
-      <a href="../aim/" class="btn btn-xs btn-default pull-left">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../aim/" class="btn btn-xs btn-link">
-        Aim
-      </a>
-    </div>
-    
-  </div>
-
-    <br>
-</div>
-
-<footer class="col-md-12 wm-page-content">
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -201,7 +2191,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-</footer>
-
-</body>
+    </div>
+    
+      <script src="../../assets/javascripts/application-6940329b9f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      
+        <script src="../../extra_javascript/abidocs.js"></script>
+      
+    
+    
+      
+    
+  </body>
 </html>
