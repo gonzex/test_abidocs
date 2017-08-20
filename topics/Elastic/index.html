@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/topics/Elastic/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Elastic - abinit</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/codehilite.css" rel="stylesheet">
-        <link href="../../css/extra.css" rel="stylesheet">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+    <meta name="author" content="The Abinit group">
+    <link rel="canonical" href="http://www.abinit.org/topics/Elastic/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Elastic - abinit</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/codehilite.css" rel="stylesheet">
+    <link href="../../css/extra.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
@@ -89,622 +94,61 @@
     </script>
     -->
 
- 
-    </head>
 
-    <body>
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Introduction", url: "#introduction", children: [
+          ]},
+          {title: "Related Input Variables", url: "#related-input-variables", children: [
+          ]},
+          {title: "Selected Input Files", url: "#selected-input-files", children: [
+          ]},
+        ];
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      <script src="../../extra_javascript/abidocs.js"></script> 
+</head>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../..">abinit</a>
-        </div>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../..">Introduction</a>
-</li>
-                            
-<li >
-    <a href="../../installation/">Installation</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../">Complete List</a>
-</li>
-                            
-<li >
-    <a href="../Artificial/">Artificial</a>
-</li>
-                            
-<li >
-    <a href="../AtomManipulator/">AtomManipulator</a>
-</li>
-                            
-<li >
-    <a href="../AtomTypes/">AtomTypes</a>
-</li>
-                            
-<li >
-    <a href="../Bader/">Bader</a>
-</li>
-                            
-<li >
-    <a href="../BandOcc/">BandOcc</a>
-</li>
-                            
-<li >
-    <a href="../Berry/">Berry</a>
-</li>
-                            
-<li >
-    <a href="../BSE/">BSE</a>
-</li>
-                            
-<li >
-    <a href="../ConstrainedPol/">ConstrainedPol</a>
-</li>
-                            
-<li >
-    <a href="../Control/">Control</a>
-</li>
-                            
-<li >
-    <a href="../Coulomb/">Coulomb</a>
-</li>
-                            
-<li >
-    <a href="../CRPA/">CRPA</a>
-</li>
-                            
-<li >
-    <a href="../crystal/">Crystal</a>
-</li>
-                            
-<li >
-    <a href="../Dev/">Dev</a>
-</li>
-                            
-<li >
-    <a href="../DFPT/">DFPT</a>
-</li>
-                            
-<li >
-    <a href="../DFT+U/">DFT+U</a>
-</li>
-                            
-<li >
-    <a href="../DMFT/">DMFT</a>
-</li>
-                            
-<li >
-    <a href="../EffMass/">EffMass</a>
-</li>
-                            
-<li >
-    <a href="../EFG/">EFG</a>
-</li>
-                            
-<li class="active">
-    <a href="./">Elastic</a>
-</li>
-                            
-<li >
-    <a href="../ElecBandStructure/">ElecBandStructure</a>
-</li>
-                            
-<li >
-    <a href="../ElecDOS/">ElecDOS</a>
-</li>
-                            
-<li >
-    <a href="../ElPhonInt/">ElPhonInt</a>
-</li>
-                            
-<li >
-    <a href="../ElPhonTransport/">ElPhonTransport</a>
-</li>
-                            
-<li >
-    <a href="../ForcesStresses/">ForcesStresses</a>
-</li>
-                            
-<li >
-    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
-</li>
-                            
-<li >
-    <a href="../GeoConstraints/">GeoConstraints</a>
-</li>
-                            
-<li >
-    <a href="../GeoOpt/">GeoOpt</a>
-</li>
-                            
-<li >
-    <a href="../GW/">GW</a>
-</li>
-                            
-<li >
-    <a href="../GWls/">GWls</a>
-</li>
-                            
-<li >
-    <a href="../Hybrids/">Hybrids</a>
-</li>
-                            
-<li >
-    <a href="../">Home</a>
-</li>
-                            
-<li >
-    <a href="../k-points/">K points</a>
-</li>
-                            
-<li >
-    <a href="../LOTF/">LOTF</a>
-</li>
-                            
-<li >
-    <a href="../MagField/">MagField</a>
-</li>
-                            
-<li >
-    <a href="../MagMom/">MagMom</a>
-</li>
-                            
-<li >
-    <a href="../MolecularDynamics/">MolecularDynamics</a>
-</li>
-                            
-<li >
-    <a href="../multidtset/">Multidtset</a>
-</li>
-                            
-<li >
-    <a href="../nonlinear/">Nonlinear</a>
-</li>
-                            
-<li >
-    <a href="../Optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../Output/">Output</a>
-</li>
-                            
-<li >
-    <a href="../parallelism/">Parallelism</a>
-</li>
-                            
-<li >
-    <a href="../PAW/">PAW</a>
-</li>
-                            
-<li >
-    <a href="../PhononBands/">PhononBands</a>
-</li>
-                            
-<li >
-    <a href="../Phonons/">Phonons</a>
-</li>
-                            
-<li >
-    <a href="../PhononWidth/">PhononWidth</a>
-</li>
-                            
-<li >
-    <a href="../PIMD/">PIMD</a>
-</li>
-                            
-<li >
-    <a href="../Planewaves/">Planewaves</a>
-</li>
-                            
-<li >
-    <a href="../positron/">Positron</a>
-</li>
-                            
-<li >
-    <a href="../printing/">Printing</a>
-</li>
-                            
-<li >
-    <a href="../PseudosPAW/">PseudosPAW</a>
-</li>
-                            
-<li >
-    <a href="../q-points/">Q points</a>
-</li>
-                            
-<li >
-    <a href="../RandStopPow/">RandStopPow</a>
-</li>
-                            
-<li >
-    <a href="../Recursion/">Recursion</a>
-</li>
-                            
-<li >
-    <a href="../RPACorrEn/">RPACorrEn</a>
-</li>
-                            
-<li >
-    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
-</li>
-                            
-<li >
-    <a href="../SCFControl/">SCFControl</a>
-</li>
-                            
-<li >
-    <a href="../SelfEnergy/">SelfEnergy</a>
-</li>
-                            
-<li >
-    <a href="../SmartSymm/">SmartSymm</a>
-</li>
-                            
-<li >
-    <a href="../spinpolarisation/">Spinpolarisation</a>
-</li>
-                            
-<li >
-    <a href="../STM/">STM</a>
-</li>
-                            
-<li >
-    <a href="../Susceptibility/">Susceptibility</a>
-</li>
-                            
-<li >
-    <a href="../TDDFT/">TDDFT</a>
-</li>
-                            
-<li >
-    <a href="../TDepES/">TDepES</a>
-</li>
-                            
-<li >
-    <a href="../Temperature/">Temperature</a>
-</li>
-                            
-<li >
-    <a href="../TransPath/">TransPath</a>
-</li>
-                            
-<li >
-    <a href="../TuningSpeed/">TuningSpeed</a>
-</li>
-                            
-<li >
-    <a href="../UnitCell/">UnitCell</a>
-</li>
-                            
-<li >
-    <a href="../vdw/">Vdw</a>
-</li>
-                            
-<li >
-    <a href="../Wannier/">Wannier</a>
-</li>
-                            
-<li >
-    <a href="../Wavelets/">Wavelets</a>
-</li>
-                            
-<li >
-    <a href="../xc/">Xc</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../input_variables/varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/basic/">Basic</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/dev/">Developers</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/dmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/eph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/ffield/">Varff</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/files/">File-handling</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/geo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/gstate/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/gw/">GW</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/internal/">Internal</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/paral/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/paw/">PAW</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/dfpt/">DFPT</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/rlx/">Relaxation</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/vdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="../../input_variables/w90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../input_variables/anaddb/">Anaddb</a>
-</li>
-                            
-<li >
-    <a href="../../input_variables/optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../../input_variables/aim/">Aim</a>
-</li>
-                            
-<li >
-    <a href="../../input_variables/varset_stats/">Statistics</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="../../theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="../../bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../developers/README/">How to write docs</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="../../about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="../../about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../EFG/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../ElecBandStructure/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ElecBandStructure/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ElecBandStructure/" class="btn btn-xs btn-link">
+        ElecBandStructure
+      </a>
     </div>
-</div>
+    
+    <div class="wm-article-nav">
+      <a href="../EFG/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../EFG/" class="btn btn-xs btn-link">
+        EFG
+      </a>
+    </div>
+    
+  </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#introduction">Introduction</a></li>
-        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
-        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    
 
-<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+    <h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The DFPT theory to compute the elastic, piezoelectric and internal strain
 tensors is presented in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Hamann2005" title="Metric tensor formulation of strain in density-functional perturbation theory">Hamann2005</a>.</p>
 <p>See the <a class="wikilink" href="../../topics/DFPT">DFPT</a> as well as the tutorial
@@ -729,10 +173,37 @@ for ANADDB, see <a class="wikilink" href="../../input_variables/anaddb/#elaflag"
 <ul>
 <li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t95.in" title="Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. Finite-difference runs with strain component 1 (1def) is computed DFPT is computed Comparaison with Finite Diferrences give excellent agreement ~1e-5% DFPT is computed with usexcnhat==0 (Just for test)">tests/v7/Input/t95.in</a></li>
 <li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t96.in" title="MG Note that this test fails with np=4,  wrong results or SIGSEV (np=2 is ok). Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. Finite-difference runs with strain direction 1   is computed Finite-difference runs with atom displacement 1  is computed DFPT is computed Comparaison with Finite Diferrences give excellent agreement DFPT is computed with usexcnhat==0 (Just for test)">tests/v7/Input/t96.in</a></li>
-</ul></div>
-        </div>
+</ul>
 
-        <footer class="col-md-12">
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../ElecBandStructure/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../ElecBandStructure/" class="btn btn-xs btn-link">
+        ElecBandStructure
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../EFG/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../EFG/" class="btn btn-xs btn-link">
+        EFG
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -742,28 +213,7 @@ for ANADDB, see <a class="wikilink" href="../../input_variables/anaddb/#elaflag"
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <!--
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        -->
-        <script src="../../js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="../../extra_javascript/abidocs.js"></script>
+</footer>
 
-    <!--<script>var base_url = '../..';</script>
-<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-
-<h1 id="search">Search Results</h1>
-
-<form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
-</form>
-
-<div id="mkdocs-search-results">
-  Sorry, page not found.
-</div>
-    -->
-
-    </body>
+</body>
 </html>

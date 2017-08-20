@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Abinit documentation">
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/">
-        <link rel="shortcut icon" href="./img/favicon.ico">
-        <title>abinit</title>
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
-        <link href="./css/codehilite.css" rel="stylesheet">
-        <link href="./css/extra.css" rel="stylesheet">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abinit documentation">
+    <meta name="author" content="The Abinit group">
+    <link rel="canonical" href="http://www.abinit.org/">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>abinit</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="./css/codehilite.css" rel="stylesheet">
+    <link href="./css/extra.css" rel="stylesheet">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
     <!-- <script src="./js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
@@ -89,627 +96,452 @@
     </script>
     -->
 
- 
-    </head>
 
-    <body class="homepage">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "0. Foreword", url: "#046-foreword", children: [
+          ]},
+          {title: "2. The ABINIT executable : abinit.", url: "#246-the-abinit-executable-abinit", children: [
+          ]},
+          {title: "3. Other programs in the ABINIT package.", url: "#346-other-programs-in-the-abinit-package", children: [
+          ]},
+          {title: "4. Other resources outside the ABINIT package.", url: "#446-other-resources-outside-the-abinit-package", children: [
+          ]},
+          {title: "5. Input variables to abinit.", url: "#546-input-variables-to-abinit", children: [
+          ]},
+          {title: "6. Output files.", url: "#646-output-files", children: [
+          ]},
+          {title: "7. What does the code do?", url: "#746-what-does-the-code-do", children: [
+          ]},
+          {title: "8. Versioning logic.", url: "#846-versioning-logic", children: [
+          ]},
+        ];
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    </script>
+    <script src="./js/base.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      <script src="./extra_javascript/abidocs.js"></script> 
+</head>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href=".">abinit</a>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
         </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li class="active">
-    <a href=".">Introduction</a>
-</li>
-                            
-<li >
-    <a href="installation/">Installation</a>
-</li>
-                            
-<li >
-    <a href="user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="topics/">Complete List</a>
-</li>
-                            
-<li >
-    <a href="topics/Artificial/">Artificial</a>
-</li>
-                            
-<li >
-    <a href="topics/AtomManipulator/">AtomManipulator</a>
-</li>
-                            
-<li >
-    <a href="topics/AtomTypes/">AtomTypes</a>
-</li>
-                            
-<li >
-    <a href="topics/Bader/">Bader</a>
-</li>
-                            
-<li >
-    <a href="topics/BandOcc/">BandOcc</a>
-</li>
-                            
-<li >
-    <a href="topics/Berry/">Berry</a>
-</li>
-                            
-<li >
-    <a href="topics/BSE/">BSE</a>
-</li>
-                            
-<li >
-    <a href="topics/ConstrainedPol/">ConstrainedPol</a>
-</li>
-                            
-<li >
-    <a href="topics/Control/">Control</a>
-</li>
-                            
-<li >
-    <a href="topics/Coulomb/">Coulomb</a>
-</li>
-                            
-<li >
-    <a href="topics/CRPA/">CRPA</a>
-</li>
-                            
-<li >
-    <a href="topics/crystal/">Crystal</a>
-</li>
-                            
-<li >
-    <a href="topics/Dev/">Dev</a>
-</li>
-                            
-<li >
-    <a href="topics/DFPT/">DFPT</a>
-</li>
-                            
-<li >
-    <a href="topics/DFT+U/">DFT+U</a>
-</li>
-                            
-<li >
-    <a href="topics/DMFT/">DMFT</a>
-</li>
-                            
-<li >
-    <a href="topics/EffMass/">EffMass</a>
-</li>
-                            
-<li >
-    <a href="topics/EFG/">EFG</a>
-</li>
-                            
-<li >
-    <a href="topics/Elastic/">Elastic</a>
-</li>
-                            
-<li >
-    <a href="topics/ElecBandStructure/">ElecBandStructure</a>
-</li>
-                            
-<li >
-    <a href="topics/ElecDOS/">ElecDOS</a>
-</li>
-                            
-<li >
-    <a href="topics/ElPhonInt/">ElPhonInt</a>
-</li>
-                            
-<li >
-    <a href="topics/ElPhonTransport/">ElPhonTransport</a>
-</li>
-                            
-<li >
-    <a href="topics/ForcesStresses/">ForcesStresses</a>
-</li>
-                            
-<li >
-    <a href="topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
-</li>
-                            
-<li >
-    <a href="topics/GeoConstraints/">GeoConstraints</a>
-</li>
-                            
-<li >
-    <a href="topics/GeoOpt/">GeoOpt</a>
-</li>
-                            
-<li >
-    <a href="topics/GW/">GW</a>
-</li>
-                            
-<li >
-    <a href="topics/GWls/">GWls</a>
-</li>
-                            
-<li >
-    <a href="topics/Hybrids/">Hybrids</a>
-</li>
-                            
-<li >
-    <a href="topics/">Home</a>
-</li>
-                            
-<li >
-    <a href="topics/k-points/">K points</a>
-</li>
-                            
-<li >
-    <a href="topics/LOTF/">LOTF</a>
-</li>
-                            
-<li >
-    <a href="topics/MagField/">MagField</a>
-</li>
-                            
-<li >
-    <a href="topics/MagMom/">MagMom</a>
-</li>
-                            
-<li >
-    <a href="topics/MolecularDynamics/">MolecularDynamics</a>
-</li>
-                            
-<li >
-    <a href="topics/multidtset/">Multidtset</a>
-</li>
-                            
-<li >
-    <a href="topics/nonlinear/">Nonlinear</a>
-</li>
-                            
-<li >
-    <a href="topics/Optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="topics/Output/">Output</a>
-</li>
-                            
-<li >
-    <a href="topics/parallelism/">Parallelism</a>
-</li>
-                            
-<li >
-    <a href="topics/PAW/">PAW</a>
-</li>
-                            
-<li >
-    <a href="topics/PhononBands/">PhononBands</a>
-</li>
-                            
-<li >
-    <a href="topics/Phonons/">Phonons</a>
-</li>
-                            
-<li >
-    <a href="topics/PhononWidth/">PhononWidth</a>
-</li>
-                            
-<li >
-    <a href="topics/PIMD/">PIMD</a>
-</li>
-                            
-<li >
-    <a href="topics/Planewaves/">Planewaves</a>
-</li>
-                            
-<li >
-    <a href="topics/positron/">Positron</a>
-</li>
-                            
-<li >
-    <a href="topics/printing/">Printing</a>
-</li>
-                            
-<li >
-    <a href="topics/PseudosPAW/">PseudosPAW</a>
-</li>
-                            
-<li >
-    <a href="topics/q-points/">Q points</a>
-</li>
-                            
-<li >
-    <a href="topics/RandStopPow/">RandStopPow</a>
-</li>
-                            
-<li >
-    <a href="topics/Recursion/">Recursion</a>
-</li>
-                            
-<li >
-    <a href="topics/RPACorrEn/">RPACorrEn</a>
-</li>
-                            
-<li >
-    <a href="topics/SCFAlgorithms/">SCFAlgorithms</a>
-</li>
-                            
-<li >
-    <a href="topics/SCFControl/">SCFControl</a>
-</li>
-                            
-<li >
-    <a href="topics/SelfEnergy/">SelfEnergy</a>
-</li>
-                            
-<li >
-    <a href="topics/SmartSymm/">SmartSymm</a>
-</li>
-                            
-<li >
-    <a href="topics/spinpolarisation/">Spinpolarisation</a>
-</li>
-                            
-<li >
-    <a href="topics/STM/">STM</a>
-</li>
-                            
-<li >
-    <a href="topics/Susceptibility/">Susceptibility</a>
-</li>
-                            
-<li >
-    <a href="topics/TDDFT/">TDDFT</a>
-</li>
-                            
-<li >
-    <a href="topics/TDepES/">TDepES</a>
-</li>
-                            
-<li >
-    <a href="topics/Temperature/">Temperature</a>
-</li>
-                            
-<li >
-    <a href="topics/TransPath/">TransPath</a>
-</li>
-                            
-<li >
-    <a href="topics/TuningSpeed/">TuningSpeed</a>
-</li>
-                            
-<li >
-    <a href="topics/UnitCell/">UnitCell</a>
-</li>
-                            
-<li >
-    <a href="topics/vdw/">Vdw</a>
-</li>
-                            
-<li >
-    <a href="topics/Wannier/">Wannier</a>
-</li>
-                            
-<li >
-    <a href="topics/Wavelets/">Wavelets</a>
-</li>
-                            
-<li >
-    <a href="topics/xc/">Xc</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="input_variables/varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="input_variables/basic/">Basic</a>
-</li>
-            
-<li >
-    <a href="input_variables/bse/">Bethe-Salpeter</a>
-</li>
-            
-<li >
-    <a href="input_variables/dev/">Developers</a>
-</li>
-            
-<li >
-    <a href="input_variables/dmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="input_variables/eph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="input_variables/ffield/">Varff</a>
-</li>
-            
-<li >
-    <a href="input_variables/files/">File-handling</a>
-</li>
-            
-<li >
-    <a href="input_variables/geo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="input_variables/gstate/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="input_variables/gw/">GW</a>
-</li>
-            
-<li >
-    <a href="input_variables/internal/">Internal</a>
-</li>
-            
-<li >
-    <a href="input_variables/paral/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="input_variables/paw/">PAW</a>
-</li>
-            
-<li >
-    <a href="input_variables/dfpt/">DFPT</a>
-</li>
-            
-<li >
-    <a href="input_variables/rlx/">Relaxation</a>
-</li>
-            
-<li >
-    <a href="input_variables/vdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="input_variables/w90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="input_variables/anaddb/">Anaddb</a>
-</li>
-                            
-<li >
-    <a href="input_variables/optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="input_variables/aim/">Aim</a>
-</li>
-                            
-<li >
-    <a href="input_variables/varset_stats/">Statistics</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="developers/README/">How to write docs</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li class="disabled">
-                        <a rel="next" >
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="installation/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+      </form>
     </div>
-</div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#046-foreword">0. Foreword</a></li>
-        <li class="main "><a href="#246-the-abinit-executable-abinit">2. The ABINIT executable : abinit.</a></li>
-        <li class="main "><a href="#346-other-programs-in-the-abinit-package">3. Other programs in the ABINIT package.</a></li>
-        <li class="main "><a href="#446-other-resources-outside-the-abinit-package">4. Other resources outside the ABINIT package.</a></li>
-        <li class="main "><a href="#546-input-variables-to-abinit">5. Input variables to abinit.</a></li>
-        <li class="main "><a href="#646-output-files">6. Output files.</a></li>
-        <li class="main "><a href="#746-what-does-the-code-do">7. What does the code do?</a></li>
-        <li class="main "><a href="#846-versioning-logic">8. Versioning logic.</a></li>
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        abinit<br>
+        
+          <span class="wm-top-version">v8.5.4</span>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/abinit/abinit/">
+        <i class="fa fa-github"></i>
+        GitHub
+      </a>
+      </li>
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">User Guide</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="." class="wm-article-link wm-toc-text">Introduction</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="installation/" class="wm-article-link wm-toc-text">Installation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="user-guide/help_what_ABINIT_does/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="user-guide/help_abinit/" class="wm-article-link wm-toc-text">Abinit</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="user-guide/help_mrgddb/" class="wm-article-link wm-toc-text">Mrgddb</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="user-guide/help_optic/" class="wm-article-link wm-toc-text">Optic</a>
+</li>
+  </ul>
+</li>
 
-<!-- Return to Top -->
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Topics</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/" class="wm-article-link wm-toc-text">Complete List</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Artificial/" class="wm-article-link wm-toc-text">Artificial</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/AtomManipulator/" class="wm-article-link wm-toc-text">AtomManipulator</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/AtomTypes/" class="wm-article-link wm-toc-text">AtomTypes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Bader/" class="wm-article-link wm-toc-text">Bader</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/BandOcc/" class="wm-article-link wm-toc-text">BandOcc</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Berry/" class="wm-article-link wm-toc-text">Berry</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/BSE/" class="wm-article-link wm-toc-text">BSE</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ConstrainedPol/" class="wm-article-link wm-toc-text">ConstrainedPol</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Control/" class="wm-article-link wm-toc-text">Control</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Coulomb/" class="wm-article-link wm-toc-text">Coulomb</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/CRPA/" class="wm-article-link wm-toc-text">CRPA</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/crystal/" class="wm-article-link wm-toc-text">Crystal</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Dev/" class="wm-article-link wm-toc-text">Dev</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/DFPT/" class="wm-article-link wm-toc-text">DFPT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/DFT+U/" class="wm-article-link wm-toc-text">DFT+U</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/DMFT/" class="wm-article-link wm-toc-text">DMFT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/EffMass/" class="wm-article-link wm-toc-text">EffMass</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/EFG/" class="wm-article-link wm-toc-text">EFG</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Elastic/" class="wm-article-link wm-toc-text">Elastic</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ElecBandStructure/" class="wm-article-link wm-toc-text">ElecBandStructure</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ElecDOS/" class="wm-article-link wm-toc-text">ElecDOS</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ElPhonInt/" class="wm-article-link wm-toc-text">ElPhonInt</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ElPhonTransport/" class="wm-article-link wm-toc-text">ElPhonTransport</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/ForcesStresses/" class="wm-article-link wm-toc-text">ForcesStresses</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/FrequencyMeshMBPT/" class="wm-article-link wm-toc-text">FrequencyMeshMBPT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/GeoConstraints/" class="wm-article-link wm-toc-text">GeoConstraints</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/GeoOpt/" class="wm-article-link wm-toc-text">GeoOpt</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/GW/" class="wm-article-link wm-toc-text">GW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/GWls/" class="wm-article-link wm-toc-text">GWls</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Hybrids/" class="wm-article-link wm-toc-text">Hybrids</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/" class="wm-article-link wm-toc-text">Home</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/k-points/" class="wm-article-link wm-toc-text">K points</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/LOTF/" class="wm-article-link wm-toc-text">LOTF</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/MagField/" class="wm-article-link wm-toc-text">MagField</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/MagMom/" class="wm-article-link wm-toc-text">MagMom</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/MolecularDynamics/" class="wm-article-link wm-toc-text">MolecularDynamics</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/multidtset/" class="wm-article-link wm-toc-text">Multidtset</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/nonlinear/" class="wm-article-link wm-toc-text">Nonlinear</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Optic/" class="wm-article-link wm-toc-text">Optic</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Output/" class="wm-article-link wm-toc-text">Output</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/parallelism/" class="wm-article-link wm-toc-text">Parallelism</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/PAW/" class="wm-article-link wm-toc-text">PAW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/PhononBands/" class="wm-article-link wm-toc-text">PhononBands</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Phonons/" class="wm-article-link wm-toc-text">Phonons</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/PhononWidth/" class="wm-article-link wm-toc-text">PhononWidth</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/PIMD/" class="wm-article-link wm-toc-text">PIMD</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Planewaves/" class="wm-article-link wm-toc-text">Planewaves</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/positron/" class="wm-article-link wm-toc-text">Positron</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/printing/" class="wm-article-link wm-toc-text">Printing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/PseudosPAW/" class="wm-article-link wm-toc-text">PseudosPAW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/q-points/" class="wm-article-link wm-toc-text">Q points</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/RandStopPow/" class="wm-article-link wm-toc-text">RandStopPow</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Recursion/" class="wm-article-link wm-toc-text">Recursion</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/RPACorrEn/" class="wm-article-link wm-toc-text">RPACorrEn</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/SCFAlgorithms/" class="wm-article-link wm-toc-text">SCFAlgorithms</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/SCFControl/" class="wm-article-link wm-toc-text">SCFControl</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/SelfEnergy/" class="wm-article-link wm-toc-text">SelfEnergy</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/SmartSymm/" class="wm-article-link wm-toc-text">SmartSymm</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/spinpolarisation/" class="wm-article-link wm-toc-text">Spinpolarisation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/STM/" class="wm-article-link wm-toc-text">STM</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Susceptibility/" class="wm-article-link wm-toc-text">Susceptibility</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/TDDFT/" class="wm-article-link wm-toc-text">TDDFT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/TDepES/" class="wm-article-link wm-toc-text">TDepES</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Temperature/" class="wm-article-link wm-toc-text">Temperature</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/TransPath/" class="wm-article-link wm-toc-text">TransPath</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/TuningSpeed/" class="wm-article-link wm-toc-text">TuningSpeed</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/UnitCell/" class="wm-article-link wm-toc-text">UnitCell</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/vdw/" class="wm-article-link wm-toc-text">Vdw</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Wannier/" class="wm-article-link wm-toc-text">Wannier</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/Wavelets/" class="wm-article-link wm-toc-text">Wavelets</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="topics/xc/" class="wm-article-link wm-toc-text">Xc</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Input Variables</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Abinit</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/varlist_abinit/" class="wm-article-link wm-toc-text">All Variables</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/basic/" class="wm-article-link wm-toc-text">Basic</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/bse/" class="wm-article-link wm-toc-text">Bethe-Salpeter</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/dev/" class="wm-article-link wm-toc-text">Developers</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/dmft/" class="wm-article-link wm-toc-text">DMFT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/eph/" class="wm-article-link wm-toc-text">Electron-Phonon</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/ffield/" class="wm-article-link wm-toc-text">Varff</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/files/" class="wm-article-link wm-toc-text">File-handling</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/geo/" class="wm-article-link wm-toc-text">Geometry</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/gstate/" class="wm-article-link wm-toc-text">Ground-State</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/gw/" class="wm-article-link wm-toc-text">GW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/internal/" class="wm-article-link wm-toc-text">Internal</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/paral/" class="wm-article-link wm-toc-text">Parallelism</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/paw/" class="wm-article-link wm-toc-text">PAW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/dfpt/" class="wm-article-link wm-toc-text">DFPT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/rlx/" class="wm-article-link wm-toc-text">Relaxation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/vdw/" class="wm-article-link wm-toc-text">VdW</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="input_variables/w90/" class="wm-article-link wm-toc-text">Wannier90</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 "><a href="input_variables/anaddb/" class="wm-article-link wm-toc-text">Anaddb</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="input_variables/optic/" class="wm-article-link wm-toc-text">Optic</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="input_variables/aim/" class="wm-article-link wm-toc-text">Aim</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="input_variables/varset_stats/" class="wm-article-link wm-toc-text">Statistics</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Lessons</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tutorials/welcome/" class="wm-article-link wm-toc-text">Overview</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Base Tutorials</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/base1/" class="wm-article-link wm-toc-text">Base1</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/base2/" class="wm-article-link wm-toc-text">Base2</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/base3/" class="wm-article-link wm-toc-text">Base3</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/base4/" class="wm-article-link wm-toc-text">Base4</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">DFPT</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/rf1/" class="wm-article-link wm-toc-text">RF1</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/rf2/" class="wm-article-link wm-toc-text">RF2</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/elastic/" class="wm-article-link wm-toc-text">Elastic</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/eph/" class="wm-article-link wm-toc-text">EPH</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 "><a href="tutorials/dmft/" class="wm-article-link wm-toc-text">DMFT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Many-Body</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/gw1/" class="wm-article-link wm-toc-text">GW1</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/gw2/" class="wm-article-link wm-toc-text">GW2</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/bse/" class="wm-article-link wm-toc-text">Bethe-Salpeter</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Parallelism</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/basepar/" class="wm-article-link wm-toc-text">Base</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="tutorials/paral_mbt/" class="wm-article-link wm-toc-text">Many-Body</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Theory</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="theory/theory_mbt/" class="wm-article-link wm-toc-text">MBPT</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="theory/additional_material/" class="wm-article-link wm-toc-text">Additional Material</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="bibliography/" class="wm-article-link wm-toc-text">Bibliography</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Developers</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="developers/README/" class="wm-article-link wm-toc-text">How to write docs</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">About</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about/release-notes/" class="wm-article-link wm-toc-text">Release Notes</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about/contributing/" class="wm-article-link wm-toc-text">Contributing</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="about/license/" class="wm-article-link wm-toc-text">License</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="installation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="installation/" class="btn btn-xs btn-link">
+        Installation
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <h3 id="046-foreword"><strong>0. Foreword</strong><a class="headerlink" href="#046-foreword" title="Permanent link">&para;</a></h3>
@@ -962,10 +794,29 @@ the other : version 8.4.1 is more debugged than 8.4.0, but no new features has
 been added (so likely, no additional bug!).</p>
 <hr />
 <p>In order to start using ABINIT, please follow the tutorial
-(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>)</p></div>
-        </div>
+(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>)</p>
 
-        <footer class="col-md-12">
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="installation/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="installation/" class="btn btn-xs btn-link">
+        Installation
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -975,33 +826,11 @@ been added (so likely, no additional bug!).</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '.';</script>
-        <!--
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        -->
-        <script src="./js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="./extra_javascript/abidocs.js"></script>
+</footer>
 
-    <!--<script>var base_url = '.';</script>
-<script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-
-<h1 id="search">Search Results</h1>
-
-<form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
-</form>
-
-<div id="mkdocs-search-results">
-  Sorry, page not found.
-</div>
-    -->
-
-    </body>
+</body>
 </html>
-
 <!--
 MkDocs version : 0.16.3
-Build Date UTC : 2017-08-20 15:22:24
+Build Date UTC : 2017-08-20 16:09:42
 -->

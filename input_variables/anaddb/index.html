@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/input_variables/anaddb/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Anaddb - abinit</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/codehilite.css" rel="stylesheet">
-        <link href="../../css/extra.css" rel="stylesheet">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+    <meta name="author" content="The Abinit group">
+    <link rel="canonical" href="http://www.abinit.org/input_variables/anaddb/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Anaddb - abinit</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/codehilite.css" rel="stylesheet">
+    <link href="../../css/extra.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
@@ -89,721 +94,259 @@
     </script>
     -->
 
- 
-    </head>
 
-    <body>
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "a2fsmear", url: "#a2fsmear", children: [
+          ]},
+          {title: "alphon", url: "#alphon", children: [
+          ]},
+          {title: "asr", url: "#asr", children: [
+          ]},
+          {title: "atftol", url: "#atftol", children: [
+          ]},
+          {title: "atifc", url: "#atifc", children: [
+          ]},
+          {title: "band_gap", url: "#band_gap", children: [
+          ]},
+          {title: "brav", url: "#brav", children: [
+          ]},
+          {title: "chneut", url: "#chneut", children: [
+          ]},
+          {title: "dieflag", url: "#dieflag", children: [
+          ]},
+          {title: "dipdip", url: "#dipdip", children: [
+          ]},
+          {title: "dosdeltae", url: "#dosdeltae", children: [
+          ]},
+          {title: "dossmear", url: "#dossmear", children: [
+          ]},
+          {title: "dossum", url: "#dossum", children: [
+          ]},
+          {title: "dostol", url: "#dostol", children: [
+          ]},
+          {title: "eivec", url: "#eivec", children: [
+          ]},
+          {title: "elaflag", url: "#elaflag", children: [
+          ]},
+          {title: "elph_fermie", url: "#elph_fermie", children: [
+          ]},
+          {title: "elphflag", url: "#elphflag", children: [
+          ]},
+          {title: "elphsmear", url: "#elphsmear", children: [
+          ]},
+          {title: "enunit", url: "#enunit", children: [
+          ]},
+          {title: "ep_b_max", url: "#ep_b_max", children: [
+          ]},
+          {title: "ep_b_min", url: "#ep_b_min", children: [
+          ]},
+          {title: "ep_extrael", url: "#ep_extrael", children: [
+          ]},
+          {title: "ep_int_gkk", url: "#ep_int_gkk", children: [
+          ]},
+          {title: "ep_keepbands", url: "#ep_keepbands", children: [
+          ]},
+          {title: "ep_nqpt", url: "#ep_nqpt", children: [
+          ]},
+          {title: "ep_nspline", url: "#ep_nspline", children: [
+          ]},
+          {title: "ep_prt_yambo", url: "#ep_prt_yambo", children: [
+          ]},
+          {title: "ep_qptlist", url: "#ep_qptlist", children: [
+          ]},
+          {title: "ep_scalprod", url: "#ep_scalprod", children: [
+          ]},
+          {title: "freeze_displ", url: "#freeze_displ", children: [
+          ]},
+          {title: "frmax", url: "#frmax", children: [
+          ]},
+          {title: "frmin", url: "#frmin", children: [
+          ]},
+          {title: "gkqwrite", url: "#gkqwrite", children: [
+          ]},
+          {title: "gruns_ddbs", url: "#gruns_ddbs", children: [
+          ]},
+          {title: "gruns_nddbs", url: "#gruns_nddbs", children: [
+          ]},
+          {title: "iatfix", url: "#iatfix", children: [
+          ]},
+          {title: "iatprj_bs", url: "#iatprj_bs", children: [
+          ]},
+          {title: "ifcana", url: "#ifcana", children: [
+          ]},
+          {title: "ifcflag", url: "#ifcflag", children: [
+          ]},
+          {title: "ifcout", url: "#ifcout", children: [
+          ]},
+          {title: "ifltransport", url: "#ifltransport", children: [
+          ]},
+          {title: "instrflag", url: "#instrflag", children: [
+          ]},
+          {title: "istrfix", url: "#istrfix", children: [
+          ]},
+          {title: "kptrlatt", url: "#kptrlatt", children: [
+          ]},
+          {title: "kptrlatt_fine", url: "#kptrlatt_fine", children: [
+          ]},
+          {title: "mustar", url: "#mustar", children: [
+          ]},
+          {title: "natfix", url: "#natfix", children: [
+          ]},
+          {title: "natifc", url: "#natifc", children: [
+          ]},
+          {title: "natprj_bs", url: "#natprj_bs", children: [
+          ]},
+          {title: "nchan", url: "#nchan", children: [
+          ]},
+          {title: "ndivsm", url: "#ndivsm", children: [
+          ]},
+          {title: "nfreq", url: "#nfreq", children: [
+          ]},
+          {title: "ng2qpt", url: "#ng2qpt", children: [
+          ]},
+          {title: "ngqpt", url: "#ngqpt", children: [
+          ]},
+          {title: "ngrids", url: "#ngrids", children: [
+          ]},
+          {title: "nlflag", url: "#nlflag", children: [
+          ]},
+          {title: "nph1l", url: "#nph1l", children: [
+          ]},
+          {title: "nph2l", url: "#nph2l", children: [
+          ]},
+          {title: "nqpath", url: "#nqpath", children: [
+          ]},
+          {title: "nqshft", url: "#nqshft", children: [
+          ]},
+          {title: "nsphere", url: "#nsphere", children: [
+          ]},
+          {title: "nstrfix", url: "#nstrfix", children: [
+          ]},
+          {title: "ntemper", url: "#ntemper", children: [
+          ]},
+          {title: "nwchan", url: "#nwchan", children: [
+          ]},
+          {title: "outboltztrap", url: "#outboltztrap", children: [
+          ]},
+          {title: "outscphon", url: "#outscphon", children: [
+          ]},
+          {title: "piezoflag", url: "#piezoflag", children: [
+          ]},
+          {title: "polflag", url: "#polflag", children: [
+          ]},
+          {title: "prt_ifc", url: "#prt_ifc", children: [
+          ]},
+          {title: "prtbltztrp", url: "#prtbltztrp", children: [
+          ]},
+          {title: "prtddb", url: "#prtddb", children: [
+          ]},
+          {title: "prtdos", url: "#prtdos", children: [
+          ]},
+          {title: "prtfsurf", url: "#prtfsurf", children: [
+          ]},
+          {title: "prtmbm", url: "#prtmbm", children: [
+          ]},
+          {title: "prtnest", url: "#prtnest", children: [
+          ]},
+          {title: "prtphbands", url: "#prtphbands", children: [
+          ]},
+          {title: "prtsrlr", url: "#prtsrlr", children: [
+          ]},
+          {title: "prtvol", url: "#prtvol", children: [
+          ]},
+          {title: "q1shft", url: "#q1shft", children: [
+          ]},
+          {title: "q2shft", url: "#q2shft", children: [
+          ]},
+          {title: "qgrid_type", url: "#qgrid_type", children: [
+          ]},
+          {title: "qpath", url: "#qpath", children: [
+          ]},
+          {title: "qph1l", url: "#qph1l", children: [
+          ]},
+          {title: "qph2l", url: "#qph2l", children: [
+          ]},
+          {title: "qrefine", url: "#qrefine", children: [
+          ]},
+          {title: "ramansr", url: "#ramansr", children: [
+          ]},
+          {title: "relaxat", url: "#relaxat", children: [
+          ]},
+          {title: "relaxstr", url: "#relaxstr", children: [
+          ]},
+          {title: "rfmeth", url: "#rfmeth", children: [
+          ]},
+          {title: "rifcsph", url: "#rifcsph", children: [
+          ]},
+          {title: "selectz", url: "#selectz", children: [
+          ]},
+          {title: "symdynmat", url: "#symdynmat", children: [
+          ]},
+          {title: "symgkq", url: "#symgkq", children: [
+          ]},
+          {title: "targetpol", url: "#targetpol", children: [
+          ]},
+          {title: "telphint", url: "#telphint", children: [
+          ]},
+          {title: "temperinc", url: "#temperinc", children: [
+          ]},
+          {title: "tempermin", url: "#tempermin", children: [
+          ]},
+          {title: "thmflag", url: "#thmflag", children: [
+          ]},
+          {title: "thmtol", url: "#thmtol", children: [
+          ]},
+          {title: "use_k_fine", url: "#use_k_fine", children: [
+          ]},
+          {title: "vs_qrad_tolkms", url: "#vs_qrad_tolkms", children: [
+          ]},
+        ];
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      <script src="../../extra_javascript/abidocs.js"></script> 
+</head>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../..">abinit</a>
-        </div>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../..">Introduction</a>
-</li>
-                            
-<li >
-    <a href="../../installation/">Installation</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../topics/">Complete List</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Artificial/">Artificial</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomTypes/">AtomTypes</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Bader/">Bader</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BandOcc/">BandOcc</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Berry/">Berry</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BSE/">BSE</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Control/">Control</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Coulomb/">Coulomb</a>
-</li>
-                            
-<li >
-    <a href="../../topics/CRPA/">CRPA</a>
-</li>
-                            
-<li >
-    <a href="../../topics/crystal/">Crystal</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Dev/">Dev</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFPT/">DFPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFT+U/">DFT+U</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DMFT/">DMFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EffMass/">EffMass</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EFG/">EFG</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Elastic/">Elastic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecDOS/">ElecDOS</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
-</li>
-                            
-<li >
-    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoOpt/">GeoOpt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GW/">GW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GWls/">GWls</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Hybrids/">Hybrids</a>
-</li>
-                            
-<li >
-    <a href="../../topics/">Home</a>
-</li>
-                            
-<li >
-    <a href="../../topics/k-points/">K points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/LOTF/">LOTF</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagField/">MagField</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagMom/">MagMom</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
-</li>
-                            
-<li >
-    <a href="../../topics/multidtset/">Multidtset</a>
-</li>
-                            
-<li >
-    <a href="../../topics/nonlinear/">Nonlinear</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Output/">Output</a>
-</li>
-                            
-<li >
-    <a href="../../topics/parallelism/">Parallelism</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PAW/">PAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononBands/">PhononBands</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Phonons/">Phonons</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononWidth/">PhononWidth</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PIMD/">PIMD</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Planewaves/">Planewaves</a>
-</li>
-                            
-<li >
-    <a href="../../topics/positron/">Positron</a>
-</li>
-                            
-<li >
-    <a href="../../topics/printing/">Printing</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/q-points/">Q points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RandStopPow/">RandStopPow</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Recursion/">Recursion</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFControl/">SCFControl</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SmartSymm/">SmartSymm</a>
-</li>
-                            
-<li >
-    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
-</li>
-                            
-<li >
-    <a href="../../topics/STM/">STM</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Susceptibility/">Susceptibility</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDDFT/">TDDFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDepES/">TDepES</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Temperature/">Temperature</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TransPath/">TransPath</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
-</li>
-                            
-<li >
-    <a href="../../topics/UnitCell/">UnitCell</a>
-</li>
-                            
-<li >
-    <a href="../../topics/vdw/">Vdw</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wannier/">Wannier</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wavelets/">Wavelets</a>
-</li>
-                            
-<li >
-    <a href="../../topics/xc/">Xc</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="../basic/">Basic</a>
-</li>
-            
-<li >
-    <a href="../bse/">Bethe-Salpeter</a>
-</li>
-            
-<li >
-    <a href="../dev/">Developers</a>
-</li>
-            
-<li >
-    <a href="../dmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="../eph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="../ffield/">Varff</a>
-</li>
-            
-<li >
-    <a href="../files/">File-handling</a>
-</li>
-            
-<li >
-    <a href="../geo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="../gstate/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="../gw/">GW</a>
-</li>
-            
-<li >
-    <a href="../internal/">Internal</a>
-</li>
-            
-<li >
-    <a href="../paral/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="../paw/">PAW</a>
-</li>
-            
-<li >
-    <a href="../dfpt/">DFPT</a>
-</li>
-            
-<li >
-    <a href="../rlx/">Relaxation</a>
-</li>
-            
-<li >
-    <a href="../vdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="../w90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                            
-<li class="active">
-    <a href="./">Anaddb</a>
-</li>
-                            
-<li >
-    <a href="../optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../aim/">Aim</a>
-</li>
-                            
-<li >
-    <a href="../varset_stats/">Statistics</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="../../theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="../../bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../developers/README/">How to write docs</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="../../about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="../../about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../w90/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../optic/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../optic/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../optic/" class="btn btn-xs btn-link">
+        Optic
+      </a>
     </div>
-</div>
+    
+    <div class="wm-article-nav">
+      <a href="../w90/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../w90/" class="btn btn-xs btn-link">
+        Wannier90
+      </a>
+    </div>
+    
+  </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#a2fsmear">a2fsmear</a></li>
-        <li class="main "><a href="#alphon">alphon</a></li>
-        <li class="main "><a href="#asr">asr</a></li>
-        <li class="main "><a href="#atftol">atftol</a></li>
-        <li class="main "><a href="#atifc">atifc</a></li>
-        <li class="main "><a href="#band_gap">band_gap</a></li>
-        <li class="main "><a href="#brav">brav</a></li>
-        <li class="main "><a href="#chneut">chneut</a></li>
-        <li class="main "><a href="#dieflag">dieflag</a></li>
-        <li class="main "><a href="#dipdip">dipdip</a></li>
-        <li class="main "><a href="#dosdeltae">dosdeltae</a></li>
-        <li class="main "><a href="#dossmear">dossmear</a></li>
-        <li class="main "><a href="#dossum">dossum</a></li>
-        <li class="main "><a href="#dostol">dostol</a></li>
-        <li class="main "><a href="#eivec">eivec</a></li>
-        <li class="main "><a href="#elaflag">elaflag</a></li>
-        <li class="main "><a href="#elph_fermie">elph_fermie</a></li>
-        <li class="main "><a href="#elphflag">elphflag</a></li>
-        <li class="main "><a href="#elphsmear">elphsmear</a></li>
-        <li class="main "><a href="#enunit">enunit</a></li>
-        <li class="main "><a href="#ep_b_max">ep_b_max</a></li>
-        <li class="main "><a href="#ep_b_min">ep_b_min</a></li>
-        <li class="main "><a href="#ep_extrael">ep_extrael</a></li>
-        <li class="main "><a href="#ep_int_gkk">ep_int_gkk</a></li>
-        <li class="main "><a href="#ep_keepbands">ep_keepbands</a></li>
-        <li class="main "><a href="#ep_nqpt">ep_nqpt</a></li>
-        <li class="main "><a href="#ep_nspline">ep_nspline</a></li>
-        <li class="main "><a href="#ep_prt_yambo">ep_prt_yambo</a></li>
-        <li class="main "><a href="#ep_qptlist">ep_qptlist</a></li>
-        <li class="main "><a href="#ep_scalprod">ep_scalprod</a></li>
-        <li class="main "><a href="#freeze_displ">freeze_displ</a></li>
-        <li class="main "><a href="#frmax">frmax</a></li>
-        <li class="main "><a href="#frmin">frmin</a></li>
-        <li class="main "><a href="#gkqwrite">gkqwrite</a></li>
-        <li class="main "><a href="#gruns_ddbs">gruns_ddbs</a></li>
-        <li class="main "><a href="#gruns_nddbs">gruns_nddbs</a></li>
-        <li class="main "><a href="#iatfix">iatfix</a></li>
-        <li class="main "><a href="#iatprj_bs">iatprj_bs</a></li>
-        <li class="main "><a href="#ifcana">ifcana</a></li>
-        <li class="main "><a href="#ifcflag">ifcflag</a></li>
-        <li class="main "><a href="#ifcout">ifcout</a></li>
-        <li class="main "><a href="#ifltransport">ifltransport</a></li>
-        <li class="main "><a href="#instrflag">instrflag</a></li>
-        <li class="main "><a href="#istrfix">istrfix</a></li>
-        <li class="main "><a href="#kptrlatt">kptrlatt</a></li>
-        <li class="main "><a href="#kptrlatt_fine">kptrlatt_fine</a></li>
-        <li class="main "><a href="#mustar">mustar</a></li>
-        <li class="main "><a href="#natfix">natfix</a></li>
-        <li class="main "><a href="#natifc">natifc</a></li>
-        <li class="main "><a href="#natprj_bs">natprj_bs</a></li>
-        <li class="main "><a href="#nchan">nchan</a></li>
-        <li class="main "><a href="#ndivsm">ndivsm</a></li>
-        <li class="main "><a href="#nfreq">nfreq</a></li>
-        <li class="main "><a href="#ng2qpt">ng2qpt</a></li>
-        <li class="main "><a href="#ngqpt">ngqpt</a></li>
-        <li class="main "><a href="#ngrids">ngrids</a></li>
-        <li class="main "><a href="#nlflag">nlflag</a></li>
-        <li class="main "><a href="#nph1l">nph1l</a></li>
-        <li class="main "><a href="#nph2l">nph2l</a></li>
-        <li class="main "><a href="#nqpath">nqpath</a></li>
-        <li class="main "><a href="#nqshft">nqshft</a></li>
-        <li class="main "><a href="#nsphere">nsphere</a></li>
-        <li class="main "><a href="#nstrfix">nstrfix</a></li>
-        <li class="main "><a href="#ntemper">ntemper</a></li>
-        <li class="main "><a href="#nwchan">nwchan</a></li>
-        <li class="main "><a href="#outboltztrap">outboltztrap</a></li>
-        <li class="main "><a href="#outscphon">outscphon</a></li>
-        <li class="main "><a href="#piezoflag">piezoflag</a></li>
-        <li class="main "><a href="#polflag">polflag</a></li>
-        <li class="main "><a href="#prt_ifc">prt_ifc</a></li>
-        <li class="main "><a href="#prtbltztrp">prtbltztrp</a></li>
-        <li class="main "><a href="#prtddb">prtddb</a></li>
-        <li class="main "><a href="#prtdos">prtdos</a></li>
-        <li class="main "><a href="#prtfsurf">prtfsurf</a></li>
-        <li class="main "><a href="#prtmbm">prtmbm</a></li>
-        <li class="main "><a href="#prtnest">prtnest</a></li>
-        <li class="main "><a href="#prtphbands">prtphbands</a></li>
-        <li class="main "><a href="#prtsrlr">prtsrlr</a></li>
-        <li class="main "><a href="#prtvol">prtvol</a></li>
-        <li class="main "><a href="#q1shft">q1shft</a></li>
-        <li class="main "><a href="#q2shft">q2shft</a></li>
-        <li class="main "><a href="#qgrid_type">qgrid_type</a></li>
-        <li class="main "><a href="#qpath">qpath</a></li>
-        <li class="main "><a href="#qph1l">qph1l</a></li>
-        <li class="main "><a href="#qph2l">qph2l</a></li>
-        <li class="main "><a href="#qrefine">qrefine</a></li>
-        <li class="main "><a href="#ramansr">ramansr</a></li>
-        <li class="main "><a href="#relaxat">relaxat</a></li>
-        <li class="main "><a href="#relaxstr">relaxstr</a></li>
-        <li class="main "><a href="#rfmeth">rfmeth</a></li>
-        <li class="main "><a href="#rifcsph">rifcsph</a></li>
-        <li class="main "><a href="#selectz">selectz</a></li>
-        <li class="main "><a href="#symdynmat">symdynmat</a></li>
-        <li class="main "><a href="#symgkq">symgkq</a></li>
-        <li class="main "><a href="#targetpol">targetpol</a></li>
-        <li class="main "><a href="#telphint">telphint</a></li>
-        <li class="main "><a href="#temperinc">temperinc</a></li>
-        <li class="main "><a href="#tempermin">tempermin</a></li>
-        <li class="main "><a href="#thmflag">thmflag</a></li>
-        <li class="main "><a href="#thmtol">thmtol</a></li>
-        <li class="main "><a href="#use_k_fine">use_k_fine</a></li>
-        <li class="main "><a href="#vs_qrad_tolkms">vs_qrad_tolkms</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    
 
-<!-- Return to Top -->
+    <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <h2 id="a2fsmear"><strong>a2fsmear</strong><a class="headerlink" href="#a2fsmear" title="Permanent link">&para;</a></h2>
@@ -2528,10 +2071,37 @@ performing a spherical average on the small sphere using Lebedev-Laikov grids
 increased until the integration converges twice withing the tolerance
 specified by the user (typical values for tolkms: 0.05 km/s).</p>
 <p>The default values will not work.</p>
-<hr /></div>
-        </div>
+<hr />
 
-        <footer class="col-md-12">
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../optic/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../optic/" class="btn btn-xs btn-link">
+        Optic
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../w90/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../w90/" class="btn btn-xs btn-link">
+        Wannier90
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -2541,28 +2111,7 @@ specified by the user (typical values for tolkms: 0.05 km/s).</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <!--
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        -->
-        <script src="../../js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="../../extra_javascript/abidocs.js"></script>
+</footer>
 
-    <!--<script>var base_url = '../..';</script>
-<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-
-<h1 id="search">Search Results</h1>
-
-<form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
-</form>
-
-<div id="mkdocs-search-results">
-  Sorry, page not found.
-</div>
-    -->
-
-    </body>
+</body>
 </html>

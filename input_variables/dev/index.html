@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/input_variables/dev/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Developers - abinit</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/codehilite.css" rel="stylesheet">
-        <link href="../../css/extra.css" rel="stylesheet">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+    <meta name="author" content="The Abinit group">
+    <link rel="canonical" href="http://www.abinit.org/input_variables/dev/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Developers - abinit</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/codehilite.css" rel="stylesheet">
+    <link href="../../css/extra.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
@@ -89,717 +94,251 @@
     </script>
     -->
 
- 
-    </head>
 
-    <body>
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "builtintest", url: "#builtintest", children: [
+          ]},
+          {title: "cgtyphf", url: "#cgtyphf", children: [
+          ]},
+          {title: "densfor_pred", url: "#densfor_pred", children: [
+          ]},
+          {title: "densty", url: "#densty", children: [
+          ]},
+          {title: "dmft_read_occnd", url: "#dmft_read_occnd", children: [
+          ]},
+          {title: "dmftctqmc_basis", url: "#dmftctqmc_basis", children: [
+          ]},
+          {title: "effmass_free", url: "#effmass_free", children: [
+          ]},
+          {title: "eshift", url: "#eshift", children: [
+          ]},
+          {title: "exchmix", url: "#exchmix", children: [
+          ]},
+          {title: "exchn2n3d", url: "#exchn2n3d", children: [
+          ]},
+          {title: "extrapwf", url: "#extrapwf", children: [
+          ]},
+          {title: "fermie_nest", url: "#fermie_nest", children: [
+          ]},
+          {title: "fftalg", url: "#fftalg", children: [
+          ]},
+          {title: "fftcache", url: "#fftcache", children: [
+          ]},
+          {title: "getgam_eig2nkq", url: "#getgam_eig2nkq", children: [
+          ]},
+          {title: "getwfkfine", url: "#getwfkfine", children: [
+          ]},
+          {title: "intxc", url: "#intxc", children: [
+          ]},
+          {title: "iomode", url: "#iomode", children: [
+          ]},
+          {title: "iprcfc", url: "#iprcfc", children: [
+          ]},
+          {title: "irandom", url: "#irandom", children: [
+          ]},
+          {title: "irdwfkfine", url: "#irdwfkfine", children: [
+          ]},
+          {title: "isecur", url: "#isecur", children: [
+          ]},
+          {title: "istatr", url: "#istatr", children: [
+          ]},
+          {title: "istatshft", url: "#istatshft", children: [
+          ]},
+          {title: "istwfk", url: "#istwfk", children: [
+          ]},
+          {title: "lotf_classic", url: "#lotf_classic", children: [
+          ]},
+          {title: "lotf_nitex", url: "#lotf_nitex", children: [
+          ]},
+          {title: "lotf_nneigx", url: "#lotf_nneigx", children: [
+          ]},
+          {title: "lotf_version", url: "#lotf_version", children: [
+          ]},
+          {title: "macro_uj", url: "#macro_uj", children: [
+          ]},
+          {title: "maxnsym", url: "#maxnsym", children: [
+          ]},
+          {title: "mem_test", url: "#mem_test", children: [
+          ]},
+          {title: "mqgrid", url: "#mqgrid", children: [
+          ]},
+          {title: "nbdblock", url: "#nbdblock", children: [
+          ]},
+          {title: "nc_xccc_gspace", url: "#nc_xccc_gspace", children: [
+          ]},
+          {title: "nctime", url: "#nctime", children: [
+          ]},
+          {title: "nloc_alg", url: "#nloc_alg", children: [
+          ]},
+          {title: "nloc_mem", url: "#nloc_mem", children: [
+          ]},
+          {title: "nnsclo", url: "#nnsclo", children: [
+          ]},
+          {title: "nnsclohf", url: "#nnsclohf", children: [
+          ]},
+          {title: "normpawu", url: "#normpawu", children: [
+          ]},
+          {title: "npulayit", url: "#npulayit", children: [
+          ]},
+          {title: "nscforder", url: "#nscforder", children: [
+          ]},
+          {title: "optforces", url: "#optforces", children: [
+          ]},
+          {title: "optnlxccc", url: "#optnlxccc", children: [
+          ]},
+          {title: "ortalg", url: "#ortalg", children: [
+          ]},
+          {title: "papiopt", url: "#papiopt", children: [
+          ]},
+          {title: "pawprt_b", url: "#pawprt_b", children: [
+          ]},
+          {title: "pawprt_k", url: "#pawprt_k", children: [
+          ]},
+          {title: "pawujat", url: "#pawujat", children: [
+          ]},
+          {title: "pawujrad", url: "#pawujrad", children: [
+          ]},
+          {title: "pawujv", url: "#pawujv", children: [
+          ]},
+          {title: "plowan_bandf", url: "#plowan_bandf", children: [
+          ]},
+          {title: "plowan_bandi", url: "#plowan_bandi", children: [
+          ]},
+          {title: "plowan_compute", url: "#plowan_compute", children: [
+          ]},
+          {title: "plowan_iatom", url: "#plowan_iatom", children: [
+          ]},
+          {title: "plowan_it", url: "#plowan_it", children: [
+          ]},
+          {title: "plowan_lcalc", url: "#plowan_lcalc", children: [
+          ]},
+          {title: "plowan_natom", url: "#plowan_natom", children: [
+          ]},
+          {title: "plowan_nbl", url: "#plowan_nbl", children: [
+          ]},
+          {title: "plowan_nt", url: "#plowan_nt", children: [
+          ]},
+          {title: "plowan_projcalc", url: "#plowan_projcalc", children: [
+          ]},
+          {title: "plowan_realspace", url: "#plowan_realspace", children: [
+          ]},
+          {title: "prepscphon", url: "#prepscphon", children: [
+          ]},
+          {title: "prtbltztrp", url: "#prtbltztrp", children: [
+          ]},
+          {title: "prtcif", url: "#prtcif", children: [
+          ]},
+          {title: "prtdipole", url: "#prtdipole", children: [
+          ]},
+          {title: "prtnest", url: "#prtnest", children: [
+          ]},
+          {title: "prtposcar", url: "#prtposcar", children: [
+          ]},
+          {title: "recefermi", url: "#recefermi", children: [
+          ]},
+          {title: "recgratio", url: "#recgratio", children: [
+          ]},
+          {title: "recnpath", url: "#recnpath", children: [
+          ]},
+          {title: "recnrec", url: "#recnrec", children: [
+          ]},
+          {title: "recptrott", url: "#recptrott", children: [
+          ]},
+          {title: "recrcut", url: "#recrcut", children: [
+          ]},
+          {title: "rectesteg", url: "#rectesteg", children: [
+          ]},
+          {title: "rectolden", url: "#rectolden", children: [
+          ]},
+          {title: "symmorphi", url: "#symmorphi", children: [
+          ]},
+          {title: "tfkinfunc", url: "#tfkinfunc", children: [
+          ]},
+          {title: "tfw_toldfe", url: "#tfw_toldfe", children: [
+          ]},
+          {title: "tolrde", url: "#tolrde", children: [
+          ]},
+          {title: "use_gemm_nonlop", url: "#use_gemm_nonlop", children: [
+          ]},
+          {title: "use_nonscf_gkk", url: "#use_nonscf_gkk", children: [
+          ]},
+          {title: "usedmft", url: "#usedmft", children: [
+          ]},
+          {title: "useria", url: "#useria", children: [
+          ]},
+          {title: "userib", url: "#userib", children: [
+          ]},
+          {title: "useric", url: "#useric", children: [
+          ]},
+          {title: "userid", url: "#userid", children: [
+          ]},
+          {title: "userie", url: "#userie", children: [
+          ]},
+          {title: "userra", url: "#userra", children: [
+          ]},
+          {title: "userrb", url: "#userrb", children: [
+          ]},
+          {title: "userrc", url: "#userrc", children: [
+          ]},
+          {title: "userrd", url: "#userrd", children: [
+          ]},
+          {title: "userre", url: "#userre", children: [
+          ]},
+          {title: "useylm", url: "#useylm", children: [
+          ]},
+          {title: "wfoptalg", url: "#wfoptalg", children: [
+          ]},
+          {title: "xc_denpos", url: "#xc_denpos", children: [
+          ]},
+          {title: "xc_tb09_c", url: "#xc_tb09_c", children: [
+          ]},
+        ];
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      <script src="../../extra_javascript/abidocs.js"></script> 
+</head>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../..">abinit</a>
-        </div>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../..">Introduction</a>
-</li>
-                            
-<li >
-    <a href="../../installation/">Installation</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../topics/">Complete List</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Artificial/">Artificial</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomTypes/">AtomTypes</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Bader/">Bader</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BandOcc/">BandOcc</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Berry/">Berry</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BSE/">BSE</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Control/">Control</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Coulomb/">Coulomb</a>
-</li>
-                            
-<li >
-    <a href="../../topics/CRPA/">CRPA</a>
-</li>
-                            
-<li >
-    <a href="../../topics/crystal/">Crystal</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Dev/">Dev</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFPT/">DFPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFT+U/">DFT+U</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DMFT/">DMFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EffMass/">EffMass</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EFG/">EFG</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Elastic/">Elastic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecDOS/">ElecDOS</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
-</li>
-                            
-<li >
-    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoOpt/">GeoOpt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GW/">GW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GWls/">GWls</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Hybrids/">Hybrids</a>
-</li>
-                            
-<li >
-    <a href="../../topics/">Home</a>
-</li>
-                            
-<li >
-    <a href="../../topics/k-points/">K points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/LOTF/">LOTF</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagField/">MagField</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagMom/">MagMom</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
-</li>
-                            
-<li >
-    <a href="../../topics/multidtset/">Multidtset</a>
-</li>
-                            
-<li >
-    <a href="../../topics/nonlinear/">Nonlinear</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Output/">Output</a>
-</li>
-                            
-<li >
-    <a href="../../topics/parallelism/">Parallelism</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PAW/">PAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononBands/">PhononBands</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Phonons/">Phonons</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononWidth/">PhononWidth</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PIMD/">PIMD</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Planewaves/">Planewaves</a>
-</li>
-                            
-<li >
-    <a href="../../topics/positron/">Positron</a>
-</li>
-                            
-<li >
-    <a href="../../topics/printing/">Printing</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/q-points/">Q points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RandStopPow/">RandStopPow</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Recursion/">Recursion</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFControl/">SCFControl</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SmartSymm/">SmartSymm</a>
-</li>
-                            
-<li >
-    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
-</li>
-                            
-<li >
-    <a href="../../topics/STM/">STM</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Susceptibility/">Susceptibility</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDDFT/">TDDFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDepES/">TDepES</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Temperature/">Temperature</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TransPath/">TransPath</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
-</li>
-                            
-<li >
-    <a href="../../topics/UnitCell/">UnitCell</a>
-</li>
-                            
-<li >
-    <a href="../../topics/vdw/">Vdw</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wannier/">Wannier</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wavelets/">Wavelets</a>
-</li>
-                            
-<li >
-    <a href="../../topics/xc/">Xc</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="../basic/">Basic</a>
-</li>
-            
-<li >
-    <a href="../bse/">Bethe-Salpeter</a>
-</li>
-            
-<li class="active">
-    <a href="./">Developers</a>
-</li>
-            
-<li >
-    <a href="../dmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="../eph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="../ffield/">Varff</a>
-</li>
-            
-<li >
-    <a href="../files/">File-handling</a>
-</li>
-            
-<li >
-    <a href="../geo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="../gstate/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="../gw/">GW</a>
-</li>
-            
-<li >
-    <a href="../internal/">Internal</a>
-</li>
-            
-<li >
-    <a href="../paral/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="../paw/">PAW</a>
-</li>
-            
-<li >
-    <a href="../dfpt/">DFPT</a>
-</li>
-            
-<li >
-    <a href="../rlx/">Relaxation</a>
-</li>
-            
-<li >
-    <a href="../vdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="../w90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../anaddb/">Anaddb</a>
-</li>
-                            
-<li >
-    <a href="../optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../aim/">Aim</a>
-</li>
-                            
-<li >
-    <a href="../varset_stats/">Statistics</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="../../theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="../../bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../developers/README/">How to write docs</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="../../about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="../../about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../bse/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../dmft/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../dmft/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../dmft/" class="btn btn-xs btn-link">
+        DMFT
+      </a>
     </div>
-</div>
+    
+    <div class="wm-article-nav">
+      <a href="../bse/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../bse/" class="btn btn-xs btn-link">
+        Bethe-Salpeter
+      </a>
+    </div>
+    
+  </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#builtintest">builtintest</a></li>
-        <li class="main "><a href="#cgtyphf">cgtyphf</a></li>
-        <li class="main "><a href="#densfor_pred">densfor_pred</a></li>
-        <li class="main "><a href="#densty">densty</a></li>
-        <li class="main "><a href="#dmft_read_occnd">dmft_read_occnd</a></li>
-        <li class="main "><a href="#dmftctqmc_basis">dmftctqmc_basis</a></li>
-        <li class="main "><a href="#effmass_free">effmass_free</a></li>
-        <li class="main "><a href="#eshift">eshift</a></li>
-        <li class="main "><a href="#exchmix">exchmix</a></li>
-        <li class="main "><a href="#exchn2n3d">exchn2n3d</a></li>
-        <li class="main "><a href="#extrapwf">extrapwf</a></li>
-        <li class="main "><a href="#fermie_nest">fermie_nest</a></li>
-        <li class="main "><a href="#fftalg">fftalg</a></li>
-        <li class="main "><a href="#fftcache">fftcache</a></li>
-        <li class="main "><a href="#getgam_eig2nkq">getgam_eig2nkq</a></li>
-        <li class="main "><a href="#getwfkfine">getwfkfine</a></li>
-        <li class="main "><a href="#intxc">intxc</a></li>
-        <li class="main "><a href="#iomode">iomode</a></li>
-        <li class="main "><a href="#iprcfc">iprcfc</a></li>
-        <li class="main "><a href="#irandom">irandom</a></li>
-        <li class="main "><a href="#irdwfkfine">irdwfkfine</a></li>
-        <li class="main "><a href="#isecur">isecur</a></li>
-        <li class="main "><a href="#istatr">istatr</a></li>
-        <li class="main "><a href="#istatshft">istatshft</a></li>
-        <li class="main "><a href="#istwfk">istwfk</a></li>
-        <li class="main "><a href="#lotf_classic">lotf_classic</a></li>
-        <li class="main "><a href="#lotf_nitex">lotf_nitex</a></li>
-        <li class="main "><a href="#lotf_nneigx">lotf_nneigx</a></li>
-        <li class="main "><a href="#lotf_version">lotf_version</a></li>
-        <li class="main "><a href="#macro_uj">macro_uj</a></li>
-        <li class="main "><a href="#maxnsym">maxnsym</a></li>
-        <li class="main "><a href="#mem_test">mem_test</a></li>
-        <li class="main "><a href="#mqgrid">mqgrid</a></li>
-        <li class="main "><a href="#nbdblock">nbdblock</a></li>
-        <li class="main "><a href="#nc_xccc_gspace">nc_xccc_gspace</a></li>
-        <li class="main "><a href="#nctime">nctime</a></li>
-        <li class="main "><a href="#nloc_alg">nloc_alg</a></li>
-        <li class="main "><a href="#nloc_mem">nloc_mem</a></li>
-        <li class="main "><a href="#nnsclo">nnsclo</a></li>
-        <li class="main "><a href="#nnsclohf">nnsclohf</a></li>
-        <li class="main "><a href="#normpawu">normpawu</a></li>
-        <li class="main "><a href="#npulayit">npulayit</a></li>
-        <li class="main "><a href="#nscforder">nscforder</a></li>
-        <li class="main "><a href="#optforces">optforces</a></li>
-        <li class="main "><a href="#optnlxccc">optnlxccc</a></li>
-        <li class="main "><a href="#ortalg">ortalg</a></li>
-        <li class="main "><a href="#papiopt">papiopt</a></li>
-        <li class="main "><a href="#pawprt_b">pawprt_b</a></li>
-        <li class="main "><a href="#pawprt_k">pawprt_k</a></li>
-        <li class="main "><a href="#pawujat">pawujat</a></li>
-        <li class="main "><a href="#pawujrad">pawujrad</a></li>
-        <li class="main "><a href="#pawujv">pawujv</a></li>
-        <li class="main "><a href="#plowan_bandf">plowan_bandf</a></li>
-        <li class="main "><a href="#plowan_bandi">plowan_bandi</a></li>
-        <li class="main "><a href="#plowan_compute">plowan_compute</a></li>
-        <li class="main "><a href="#plowan_iatom">plowan_iatom</a></li>
-        <li class="main "><a href="#plowan_it">plowan_it</a></li>
-        <li class="main "><a href="#plowan_lcalc">plowan_lcalc</a></li>
-        <li class="main "><a href="#plowan_natom">plowan_natom</a></li>
-        <li class="main "><a href="#plowan_nbl">plowan_nbl</a></li>
-        <li class="main "><a href="#plowan_nt">plowan_nt</a></li>
-        <li class="main "><a href="#plowan_projcalc">plowan_projcalc</a></li>
-        <li class="main "><a href="#plowan_realspace">plowan_realspace</a></li>
-        <li class="main "><a href="#prepscphon">prepscphon</a></li>
-        <li class="main "><a href="#prtbltztrp">prtbltztrp</a></li>
-        <li class="main "><a href="#prtcif">prtcif</a></li>
-        <li class="main "><a href="#prtdipole">prtdipole</a></li>
-        <li class="main "><a href="#prtnest">prtnest</a></li>
-        <li class="main "><a href="#prtposcar">prtposcar</a></li>
-        <li class="main "><a href="#recefermi">recefermi</a></li>
-        <li class="main "><a href="#recgratio">recgratio</a></li>
-        <li class="main "><a href="#recnpath">recnpath</a></li>
-        <li class="main "><a href="#recnrec">recnrec</a></li>
-        <li class="main "><a href="#recptrott">recptrott</a></li>
-        <li class="main "><a href="#recrcut">recrcut</a></li>
-        <li class="main "><a href="#rectesteg">rectesteg</a></li>
-        <li class="main "><a href="#rectolden">rectolden</a></li>
-        <li class="main "><a href="#symmorphi">symmorphi</a></li>
-        <li class="main "><a href="#tfkinfunc">tfkinfunc</a></li>
-        <li class="main "><a href="#tfw_toldfe">tfw_toldfe</a></li>
-        <li class="main "><a href="#tolrde">tolrde</a></li>
-        <li class="main "><a href="#use_gemm_nonlop">use_gemm_nonlop</a></li>
-        <li class="main "><a href="#use_nonscf_gkk">use_nonscf_gkk</a></li>
-        <li class="main "><a href="#usedmft">usedmft</a></li>
-        <li class="main "><a href="#useria">useria</a></li>
-        <li class="main "><a href="#userib">userib</a></li>
-        <li class="main "><a href="#useric">useric</a></li>
-        <li class="main "><a href="#userid">userid</a></li>
-        <li class="main "><a href="#userie">userie</a></li>
-        <li class="main "><a href="#userra">userra</a></li>
-        <li class="main "><a href="#userrb">userrb</a></li>
-        <li class="main "><a href="#userrc">userrc</a></li>
-        <li class="main "><a href="#userrd">userrd</a></li>
-        <li class="main "><a href="#userre">userre</a></li>
-        <li class="main "><a href="#useylm">useylm</a></li>
-        <li class="main "><a href="#wfoptalg">wfoptalg</a></li>
-        <li class="main "><a href="#xc_denpos">xc_denpos</a></li>
-        <li class="main "><a href="#xc_tb09_c">xc_tb09_c</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    
 
-<!-- Return to Top -->
+    <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <h2 id="builtintest"><strong>builtintest</strong><a class="headerlink" href="#builtintest" title="Permanent link">&para;</a></h2>
@@ -2677,10 +2216,37 @@ d3r)</p>
 <p>The c parameter is evaluated thanks to the previous equation when xc_tb09_c is
 equal to the "magic" default value 99.99. The c parameter can also be fixed to
 some (property-optimized or material-optimized) value by using this variable.</p>
-<hr /></div>
-        </div>
+<hr />
 
-        <footer class="col-md-12">
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../dmft/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../dmft/" class="btn btn-xs btn-link">
+        DMFT
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../bse/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../bse/" class="btn btn-xs btn-link">
+        Bethe-Salpeter
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -2690,28 +2256,7 @@ some (property-optimized or material-optimized) value by using this variable.</p
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <!--
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        -->
-        <script src="../../js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="../../extra_javascript/abidocs.js"></script>
+</footer>
 
-    <!--<script>var base_url = '../..';</script>
-<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-
-<h1 id="search">Search Results</h1>
-
-<form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
-</form>
-
-<div id="mkdocs-search-results">
-  Sorry, page not found.
-</div>
-    -->
-
-    </body>
+</body>
 </html>

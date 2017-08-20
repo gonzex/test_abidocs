@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="The Abinit group">
-        <link rel="canonical" href="http://www.abinit.org/input_variables/rlx/">
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Relaxation - abinit</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
-        <link href="../../css/codehilite.css" rel="stylesheet">
-        <link href="../../css/extra.css" rel="stylesheet">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-	
-	<script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
+    <meta name="author" content="The Abinit group">
+    <link rel="canonical" href="http://www.abinit.org/input_variables/rlx/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Relaxation - abinit</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <link href="../../css/codehilite.css" rel="stylesheet">
+    <link href="../../css/extra.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
@@ -89,688 +94,193 @@
     </script>
     -->
 
- 
-    </head>
 
-    <body>
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "adpimd", url: "#adpimd", children: [
+          ]},
+          {title: "adpimd_gamma", url: "#adpimd_gamma", children: [
+          ]},
+          {title: "amu", url: "#amu", children: [
+          ]},
+          {title: "bmass", url: "#bmass", children: [
+          ]},
+          {title: "cineb_start", url: "#cineb_start", children: [
+          ]},
+          {title: "delayperm", url: "#delayperm", children: [
+          ]},
+          {title: "diismemory", url: "#diismemory", children: [
+          ]},
+          {title: "dilatmx", url: "#dilatmx", children: [
+          ]},
+          {title: "dtion", url: "#dtion", children: [
+          ]},
+          {title: "dynimage", url: "#dynimage", children: [
+          ]},
+          {title: "ecutsm", url: "#ecutsm", children: [
+          ]},
+          {title: "friction", url: "#friction", children: [
+          ]},
+          {title: "fxcartfactor", url: "#fxcartfactor", children: [
+          ]},
+          {title: "ga_algor", url: "#ga_algor", children: [
+          ]},
+          {title: "ga_fitness", url: "#ga_fitness", children: [
+          ]},
+          {title: "ga_n_rules", url: "#ga_n_rules", children: [
+          ]},
+          {title: "ga_opt_percent", url: "#ga_opt_percent", children: [
+          ]},
+          {title: "ga_rules", url: "#ga_rules", children: [
+          ]},
+          {title: "getcell", url: "#getcell", children: [
+          ]},
+          {title: "getvel", url: "#getvel", children: [
+          ]},
+          {title: "getxcart", url: "#getxcart", children: [
+          ]},
+          {title: "getxred", url: "#getxred", children: [
+          ]},
+          {title: "goprecon", url: "#goprecon", children: [
+          ]},
+          {title: "goprecprm", url: "#goprecprm", children: [
+          ]},
+          {title: "iatcon", url: "#iatcon", children: [
+          ]},
+          {title: "iatfix", url: "#iatfix", children: [
+          ]},
+          {title: "iatfixx", url: "#iatfixx", children: [
+          ]},
+          {title: "iatfixy", url: "#iatfixy", children: [
+          ]},
+          {title: "iatfixz", url: "#iatfixz", children: [
+          ]},
+          {title: "imgmov", url: "#imgmov", children: [
+          ]},
+          {title: "ionmov", url: "#ionmov", children: [
+          ]},
+          {title: "istatimg", url: "#istatimg", children: [
+          ]},
+          {title: "mdtemp", url: "#mdtemp", children: [
+          ]},
+          {title: "mdwall", url: "#mdwall", children: [
+          ]},
+          {title: "mep_mxstep", url: "#mep_mxstep", children: [
+          ]},
+          {title: "mep_solver", url: "#mep_solver", children: [
+          ]},
+          {title: "natcon", url: "#natcon", children: [
+          ]},
+          {title: "natfix", url: "#natfix", children: [
+          ]},
+          {title: "natfixx", url: "#natfixx", children: [
+          ]},
+          {title: "natfixy", url: "#natfixy", children: [
+          ]},
+          {title: "natfixz", url: "#natfixz", children: [
+          ]},
+          {title: "nconeq", url: "#nconeq", children: [
+          ]},
+          {title: "neb_algo", url: "#neb_algo", children: [
+          ]},
+          {title: "neb_spring", url: "#neb_spring", children: [
+          ]},
+          {title: "nimage", url: "#nimage", children: [
+          ]},
+          {title: "nnos", url: "#nnos", children: [
+          ]},
+          {title: "noseinert", url: "#noseinert", children: [
+          ]},
+          {title: "ntime", url: "#ntime", children: [
+          ]},
+          {title: "ntimimage", url: "#ntimimage", children: [
+          ]},
+          {title: "optcell", url: "#optcell", children: [
+          ]},
+          {title: "pimass", url: "#pimass", children: [
+          ]},
+          {title: "pimd_constraint", url: "#pimd_constraint", children: [
+          ]},
+          {title: "pitransform", url: "#pitransform", children: [
+          ]},
+          {title: "prtatlist", url: "#prtatlist", children: [
+          ]},
+          {title: "qmass", url: "#qmass", children: [
+          ]},
+          {title: "random_atpos", url: "#random_atpos", children: [
+          ]},
+          {title: "restartxf", url: "#restartxf", children: [
+          ]},
+          {title: "signperm", url: "#signperm", children: [
+          ]},
+          {title: "strfact", url: "#strfact", children: [
+          ]},
+          {title: "string_algo", url: "#string_algo", children: [
+          ]},
+          {title: "strprecon", url: "#strprecon", children: [
+          ]},
+          {title: "strtarget", url: "#strtarget", children: [
+          ]},
+          {title: "tolimg", url: "#tolimg", children: [
+          ]},
+          {title: "tolmxde", url: "#tolmxde", children: [
+          ]},
+          {title: "tolmxf", url: "#tolmxf", children: [
+          ]},
+          {title: "vel", url: "#vel", children: [
+          ]},
+          {title: "vel_cell", url: "#vel_cell", children: [
+          ]},
+          {title: "vis", url: "#vis", children: [
+          ]},
+          {title: "wtatcon", url: "#wtatcon", children: [
+          ]},
+        ];
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      <script src="../../extra_javascript/abidocs.js"></script> 
+</head>
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="../..">abinit</a>
-        </div>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../..">Introduction</a>
-</li>
-                            
-<li >
-    <a href="../../installation/">Installation</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_abinit/">Abinit</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
-</li>
-                            
-<li >
-    <a href="../../user-guide/help_optic/">Optic</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../topics/">Complete List</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Artificial/">Artificial</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
-</li>
-                            
-<li >
-    <a href="../../topics/AtomTypes/">AtomTypes</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Bader/">Bader</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BandOcc/">BandOcc</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Berry/">Berry</a>
-</li>
-                            
-<li >
-    <a href="../../topics/BSE/">BSE</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Control/">Control</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Coulomb/">Coulomb</a>
-</li>
-                            
-<li >
-    <a href="../../topics/CRPA/">CRPA</a>
-</li>
-                            
-<li >
-    <a href="../../topics/crystal/">Crystal</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Dev/">Dev</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFPT/">DFPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DFT+U/">DFT+U</a>
-</li>
-                            
-<li >
-    <a href="../../topics/DMFT/">DMFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EffMass/">EffMass</a>
-</li>
-                            
-<li >
-    <a href="../../topics/EFG/">EFG</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Elastic/">Elastic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElecDOS/">ElecDOS</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
-</li>
-                            
-<li >
-    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
-</li>
-                            
-<li >
-    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GeoOpt/">GeoOpt</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GW/">GW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/GWls/">GWls</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Hybrids/">Hybrids</a>
-</li>
-                            
-<li >
-    <a href="../../topics/">Home</a>
-</li>
-                            
-<li >
-    <a href="../../topics/k-points/">K points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/LOTF/">LOTF</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagField/">MagField</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MagMom/">MagMom</a>
-</li>
-                            
-<li >
-    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
-</li>
-                            
-<li >
-    <a href="../../topics/multidtset/">Multidtset</a>
-</li>
-                            
-<li >
-    <a href="../../topics/nonlinear/">Nonlinear</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Output/">Output</a>
-</li>
-                            
-<li >
-    <a href="../../topics/parallelism/">Parallelism</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PAW/">PAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononBands/">PhononBands</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Phonons/">Phonons</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PhononWidth/">PhononWidth</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PIMD/">PIMD</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Planewaves/">Planewaves</a>
-</li>
-                            
-<li >
-    <a href="../../topics/positron/">Positron</a>
-</li>
-                            
-<li >
-    <a href="../../topics/printing/">Printing</a>
-</li>
-                            
-<li >
-    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
-</li>
-                            
-<li >
-    <a href="../../topics/q-points/">Q points</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RandStopPow/">RandStopPow</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Recursion/">Recursion</a>
-</li>
-                            
-<li >
-    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SCFControl/">SCFControl</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
-</li>
-                            
-<li >
-    <a href="../../topics/SmartSymm/">SmartSymm</a>
-</li>
-                            
-<li >
-    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
-</li>
-                            
-<li >
-    <a href="../../topics/STM/">STM</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Susceptibility/">Susceptibility</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDDFT/">TDDFT</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TDepES/">TDepES</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Temperature/">Temperature</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TransPath/">TransPath</a>
-</li>
-                            
-<li >
-    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
-</li>
-                            
-<li >
-    <a href="../../topics/UnitCell/">UnitCell</a>
-</li>
-                            
-<li >
-    <a href="../../topics/vdw/">Vdw</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wannier/">Wannier</a>
-</li>
-                            
-<li >
-    <a href="../../topics/Wavelets/">Wavelets</a>
-</li>
-                            
-<li >
-    <a href="../../topics/xc/">Xc</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Abinit</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../varlist_abinit/">All Variables</a>
-</li>
-            
-<li >
-    <a href="../basic/">Basic</a>
-</li>
-            
-<li >
-    <a href="../bse/">Bethe-Salpeter</a>
-</li>
-            
-<li >
-    <a href="../dev/">Developers</a>
-</li>
-            
-<li >
-    <a href="../dmft/">DMFT</a>
-</li>
-            
-<li >
-    <a href="../eph/">Electron-Phonon</a>
-</li>
-            
-<li >
-    <a href="../ffield/">Varff</a>
-</li>
-            
-<li >
-    <a href="../files/">File-handling</a>
-</li>
-            
-<li >
-    <a href="../geo/">Geometry</a>
-</li>
-            
-<li >
-    <a href="../gstate/">Ground-State</a>
-</li>
-            
-<li >
-    <a href="../gw/">GW</a>
-</li>
-            
-<li >
-    <a href="../internal/">Internal</a>
-</li>
-            
-<li >
-    <a href="../paral/">Parallelism</a>
-</li>
-            
-<li >
-    <a href="../paw/">PAW</a>
-</li>
-            
-<li >
-    <a href="../dfpt/">DFPT</a>
-</li>
-            
-<li class="active">
-    <a href="./">Relaxation</a>
-</li>
-            
-<li >
-    <a href="../vdw/">VdW</a>
-</li>
-            
-<li >
-    <a href="../w90/">Wannier90</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../anaddb/">Anaddb</a>
-</li>
-                            
-<li >
-    <a href="../optic/">Optic</a>
-</li>
-                            
-<li >
-    <a href="../aim/">Aim</a>
-</li>
-                            
-<li >
-    <a href="../varset_stats/">Statistics</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../tutorials/welcome/">Overview</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Base Tutorials</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/base1/">Base1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base2/">Base2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base3/">Base3</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/base4/">Base4</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">DFPT</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/rf1/">RF1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/rf2/">RF2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/elastic/">Elastic</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/eph/">EPH</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../../tutorials/dmft/">DMFT</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Many-Body</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/gw1/">GW1</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/gw2/">GW2</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
-</li>
-    </ul>
-  </li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Parallelism</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../tutorials/basepar/">Base</a>
-</li>
-            
-<li >
-    <a href="../../tutorials/paral_mbt/">Many-Body</a>
-</li>
-    </ul>
-  </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../theory/theory_mbt/">MBPT</a>
-</li>
-                            
-<li >
-    <a href="../../theory/additional_material/">Additional Material</a>
-</li>
-                            
-<li >
-    <a href="../../bibliography/">Bibliography</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../developers/README/">How to write docs</a>
-</li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            
-<li >
-    <a href="../../about/release-notes/">Release Notes</a>
-</li>
-                            
-<li >
-    <a href="../../about/contributing/">Contributing</a>
-</li>
-                            
-<li >
-    <a href="../../about/license/">License</a>
-</li>
-                        </ul>
-                    </li>
-                </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                    <li >
-                        <a rel="next" href="../dfpt/">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../vdw/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abinit/abinit/">
-                                <i class="fa fa-github"></i>GitHub
-                        </a>
-                    </li>
-            </ul>
-        </div>
+
+<div class="container-fluid wm-page-content">
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../vdw/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../vdw/" class="btn btn-xs btn-link">
+        VdW
+      </a>
     </div>
-</div>
+    
+    <div class="wm-article-nav">
+      <a href="../dfpt/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dfpt/" class="btn btn-xs btn-link">
+        DFPT
+      </a>
+    </div>
+    
+  </div>
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#adpimd">adpimd</a></li>
-        <li class="main "><a href="#adpimd_gamma">adpimd_gamma</a></li>
-        <li class="main "><a href="#amu">amu</a></li>
-        <li class="main "><a href="#bmass">bmass</a></li>
-        <li class="main "><a href="#cineb_start">cineb_start</a></li>
-        <li class="main "><a href="#delayperm">delayperm</a></li>
-        <li class="main "><a href="#diismemory">diismemory</a></li>
-        <li class="main "><a href="#dilatmx">dilatmx</a></li>
-        <li class="main "><a href="#dtion">dtion</a></li>
-        <li class="main "><a href="#dynimage">dynimage</a></li>
-        <li class="main "><a href="#ecutsm">ecutsm</a></li>
-        <li class="main "><a href="#friction">friction</a></li>
-        <li class="main "><a href="#fxcartfactor">fxcartfactor</a></li>
-        <li class="main "><a href="#ga_algor">ga_algor</a></li>
-        <li class="main "><a href="#ga_fitness">ga_fitness</a></li>
-        <li class="main "><a href="#ga_n_rules">ga_n_rules</a></li>
-        <li class="main "><a href="#ga_opt_percent">ga_opt_percent</a></li>
-        <li class="main "><a href="#ga_rules">ga_rules</a></li>
-        <li class="main "><a href="#getcell">getcell</a></li>
-        <li class="main "><a href="#getvel">getvel</a></li>
-        <li class="main "><a href="#getxcart">getxcart</a></li>
-        <li class="main "><a href="#getxred">getxred</a></li>
-        <li class="main "><a href="#goprecon">goprecon</a></li>
-        <li class="main "><a href="#goprecprm">goprecprm</a></li>
-        <li class="main "><a href="#iatcon">iatcon</a></li>
-        <li class="main "><a href="#iatfix">iatfix</a></li>
-        <li class="main "><a href="#iatfixx">iatfixx</a></li>
-        <li class="main "><a href="#iatfixy">iatfixy</a></li>
-        <li class="main "><a href="#iatfixz">iatfixz</a></li>
-        <li class="main "><a href="#imgmov">imgmov</a></li>
-        <li class="main "><a href="#ionmov">ionmov</a></li>
-        <li class="main "><a href="#istatimg">istatimg</a></li>
-        <li class="main "><a href="#mdtemp">mdtemp</a></li>
-        <li class="main "><a href="#mdwall">mdwall</a></li>
-        <li class="main "><a href="#mep_mxstep">mep_mxstep</a></li>
-        <li class="main "><a href="#mep_solver">mep_solver</a></li>
-        <li class="main "><a href="#natcon">natcon</a></li>
-        <li class="main "><a href="#natfix">natfix</a></li>
-        <li class="main "><a href="#natfixx">natfixx</a></li>
-        <li class="main "><a href="#natfixy">natfixy</a></li>
-        <li class="main "><a href="#natfixz">natfixz</a></li>
-        <li class="main "><a href="#nconeq">nconeq</a></li>
-        <li class="main "><a href="#neb_algo">neb_algo</a></li>
-        <li class="main "><a href="#neb_spring">neb_spring</a></li>
-        <li class="main "><a href="#nimage">nimage</a></li>
-        <li class="main "><a href="#nnos">nnos</a></li>
-        <li class="main "><a href="#noseinert">noseinert</a></li>
-        <li class="main "><a href="#ntime">ntime</a></li>
-        <li class="main "><a href="#ntimimage">ntimimage</a></li>
-        <li class="main "><a href="#optcell">optcell</a></li>
-        <li class="main "><a href="#pimass">pimass</a></li>
-        <li class="main "><a href="#pimd_constraint">pimd_constraint</a></li>
-        <li class="main "><a href="#pitransform">pitransform</a></li>
-        <li class="main "><a href="#prtatlist">prtatlist</a></li>
-        <li class="main "><a href="#qmass">qmass</a></li>
-        <li class="main "><a href="#random_atpos">random_atpos</a></li>
-        <li class="main "><a href="#restartxf">restartxf</a></li>
-        <li class="main "><a href="#signperm">signperm</a></li>
-        <li class="main "><a href="#strfact">strfact</a></li>
-        <li class="main "><a href="#string_algo">string_algo</a></li>
-        <li class="main "><a href="#strprecon">strprecon</a></li>
-        <li class="main "><a href="#strtarget">strtarget</a></li>
-        <li class="main "><a href="#tolimg">tolimg</a></li>
-        <li class="main "><a href="#tolmxde">tolmxde</a></li>
-        <li class="main "><a href="#tolmxf">tolmxf</a></li>
-        <li class="main "><a href="#vel">vel</a></li>
-        <li class="main "><a href="#vel_cell">vel_cell</a></li>
-        <li class="main "><a href="#vis">vis</a></li>
-        <li class="main "><a href="#wtatcon">wtatcon</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    
 
-<!-- Return to Top -->
+    <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <h2 id="adpimd"><strong>adpimd</strong><a class="headerlink" href="#adpimd" title="Permanent link">&para;</a></h2>
@@ -2426,10 +1936,37 @@ example,  </p>
 <p>could be used to constrain the relative height difference of two adsorbate
 atoms on a surface (assuming their masses are equal), since F'  z,1  - F'
 z,2  = 0 implies z  1  - z  2  = constant.</p>
-<hr /></div>
-        </div>
+<hr />
 
-        <footer class="col-md-12">
+  <br>
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../vdw/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../vdw/" class="btn btn-xs btn-link">
+        VdW
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../dfpt/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../dfpt/" class="btn btn-xs btn-link">
+        DFPT
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -2439,28 +1976,7 @@ z,2  = 0 implies z  1  - z  2  = constant.</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-        </footer>
-        <script>var base_url = '../..';</script>
-        <!--
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        -->
-        <script src="../../js/base.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-        <script src="../../extra_javascript/abidocs.js"></script>
+</footer>
 
-    <!--<script>var base_url = '../..';</script>
-<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-
-<h1 id="search">Search Results</h1>
-
-<form action="search.html">
-  <input name="q" id="mkdocs-search-query" type="text" >
-</form>
-
-<div id="mkdocs-search-results">
-  Sorry, page not found.
-</div>
-    -->
-
-    </body>
+</body>
 </html>
