@@ -1,56 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-        <meta name="description" content="Abinit documentation">
-      
-      
-        <link rel="canonical" href="http://www.abinit.org/tutorials/base1/">
-      
-      
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <meta name="author" content="The Abinit group">
-      
-      
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
-    
-    
-      
+        <link rel="canonical" href="http://www.abinit.org/tutorials/base1/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Base1 - abinit</title>
-      
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
     
-    
-    
-      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    -->
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
     <!-- Optional theme
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript
     -->
+    <!-- Latest compiled and minified JavaScript
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
 
     <!-- MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers
@@ -86,1272 +89,628 @@
     </script>
     -->
 
+ 
+    </head>
 
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
-      <link rel="stylesheet" href="../../css/extra.css">
-    
-    
-  </head>
-  
-  
-  
-  
     <body>
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
-          
-            
-              
-                <span class="md-header-nav__parent">
-                  Tutorials
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  Base Tutorials
-                </span>
-              
-            
-            Base1
-          
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-          
-<div class="md-search" data-md-component="search">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
         </div>
-      </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../welcome/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../base2/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
 
-
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-      
-        
-
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../.." title="Quick Start" class="md-tabs__link">
-          Quick Start
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
-          User Guide
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    
-    
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
-          Input Variables
-        </a>
-      
-    </li>
-  
-
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../welcome/" title="Tutorials" class="md-tabs__link md-tabs__link--active">
-          Tutorials
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
-          Theory
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#11-the-first-step-the-most-important-and-the-most-difficult">1.1. The first step (the most important, and the most difficult !):</a></li>
+        <li class="main "><a href="#12-computation-of-the-interatomic-distance-method-1">1.2. Computation of the interatomic distance (method 1).</a></li>
+        <li class="main "><a href="#13-computation-of-the-interatomic-distance-method-2">1.3 Computation of the interatomic distance (method 2).</a></li>
+        <li class="main "><a href="#14-computation-of-the-charge-density">1.4. Computation of the charge density.</a></li>
+        <li class="main "><a href="#15-computation-of-the-atomisation-energy">1.5. Computation of the atomisation energy.</a></li>
+        <li class="main "><a href="#answers-to-the-questions">Answers to the questions</a></li>
     </ul>
-  </div>
-</nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    abinit
-  </label>
-  
-    <div class="md-nav__source">
-      
+</div></div>
+                <div class="col-md-9" role="main">
 
+<!-- Return to Top -->
 
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
-    
-    <label class="md-nav__link" for="nav-1">
-      Quick Start
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../installation/" title="Installation" class="md-nav__link">
-      Installation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
-    
-    <label class="md-nav__link" for="nav-1-3">
-      Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
-        Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/crystal/" title="Crystalline Structure" class="md-nav__link">
-      Crystalline Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/kpoints/" title="K-points" class="md-nav__link">
-      K-points
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      User Guide
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        User Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
-      Abinit
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
-      Mrgddb
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
-      Optic
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Input Variables
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Input Variables
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbas/" title="Basic" class="md-nav__link">
-      Basic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardev/" title="Developers" class="md-nav__link">
-      Developers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vareph/" title="Electron-Phonon" class="md-nav__link">
-      Electron-Phonon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varff/" title="Varff" class="md-nav__link">
-      Varff
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varfil/" title="File-handling" class="md-nav__link">
-      File-handling
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargeo/" title="Geometry" class="md-nav__link">
-      Geometry
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargs/" title="Ground-State" class="md-nav__link">
-      Ground-State
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargw/" title="GW" class="md-nav__link">
-      GW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varint/" title="Internal" class="md-nav__link">
-      Internal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpar/" title="Parallelism" class="md-nav__link">
-      Parallelism
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpaw/" title="PAW" class="md-nav__link">
-      PAW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrf/" title="RF" class="md-nav__link">
-      RF
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrlx/" title="Relaxation" class="md-nav__link">
-      Relaxation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varvdw/" title="VdW" class="md-nav__link">
-      VdW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varw90/" title="Wannier90" class="md-nav__link">
-      Wannier90
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../welcome/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
-    
-    <label class="md-nav__link" for="nav-4-2">
-      Base Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
-        Base Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Base1
-      </label>
-    
-    <a href="./" title="Base1" class="md-nav__link md-nav__link--active">
-      Base1
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#11-the-first-step-the-most-important-and-the-most-difficult" title="1.1. The first step (the most important, and the most difficult !):" class="md-nav__link">
-    1.1. The first step (the most important, and the most difficult !):
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-computation-of-the-interatomic-distance-method-1" title="1.2. Computation of the interatomic distance (method 1)." class="md-nav__link">
-    1.2. Computation of the interatomic distance (method 1).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-computation-of-the-interatomic-distance-method-2" title="1.3 Computation of the interatomic distance (method 2)." class="md-nav__link">
-    1.3 Computation of the interatomic distance (method 2).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-computation-of-the-charge-density" title="1.4. Computation of the charge density." class="md-nav__link">
-    1.4. Computation of the charge density.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-computation-of-the-atomisation-energy" title="1.5. Computation of the atomisation energy." class="md-nav__link">
-    1.5. Computation of the atomisation energy.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answers-to-the-questions" title="Answers to the questions" class="md-nav__link">
-    Answers to the questions
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base2/" title="Base2" class="md-nav__link">
-      Base2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base3/" title="Base3" class="md-nav__link">
-      Base3
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base4/" title="Base4" class="md-nav__link">
-      Base4
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
-    
-    <label class="md-nav__link" for="nav-4-3">
-      DFPT
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        DFPT
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf1/" title="RF1" class="md-nav__link">
-      RF1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf2/" title="RF2" class="md-nav__link">
-      RF2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../elastic/" title="Elastic" class="md-nav__link">
-      Elastic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../dmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
-    
-    <label class="md-nav__link" for="nav-4-5">
-      Many-Body
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
-        Many-Body
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw1/" title="GW1" class="md-nav__link">
-      GW1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw2/" title="GW2" class="md-nav__link">
-      GW2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
-    
-    <label class="md-nav__link" for="nav-4-6">
-      Parallelism
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
-        Parallelism
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../basepar/" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
-      Many-Body
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Theory
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Theory
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
-      Additional Material
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
-      Bibliography
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/license/" title="License" class="md-nav__link">
-      License
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#11-the-first-step-the-most-important-and-the-most-difficult" title="1.1. The first step (the most important, and the most difficult !):" class="md-nav__link">
-    1.1. The first step (the most important, and the most difficult !):
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-computation-of-the-interatomic-distance-method-1" title="1.2. Computation of the interatomic distance (method 1)." class="md-nav__link">
-    1.2. Computation of the interatomic distance (method 1).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#13-computation-of-the-interatomic-distance-method-2" title="1.3 Computation of the interatomic distance (method 2)." class="md-nav__link">
-    1.3 Computation of the interatomic distance (method 2).
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#14-computation-of-the-charge-density" title="1.4. Computation of the charge density." class="md-nav__link">
-    1.4. Computation of the charge density.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#15-computation-of-the-atomisation-energy" title="1.5. Computation of the atomisation energy." class="md-nav__link">
-    1.5. Computation of the atomisation energy.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#answers-to-the-questions" title="Answers to the questions" class="md-nav__link">
-    Answers to the questions
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/base1.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Base1</h1>
-                
-                <p>This lesson aims at showing how to get the following physical properties:</p>
+<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to get the following physical properties:</p>
 <ul>
 <li>the (pseudo)total energy </li>
 <li>the bond length </li>
@@ -1364,17 +723,20 @@ You will also learn about the two output files as well as the density file.</p>
 <p>This first lesson covers the sections 1, 3, 4 and 6 of the <a class="wikilink" href="../../help_abinit/">help_abinit</a>.</p>
 <p>The very first step is a detailed tour of the input and output files: you are
 like a tourist, and you discover a town in a coach. You will have a bit more
-freedom after that first step &hellip;<br />
+freedom after that first step ...<br />
 It is supposed that you have some good knowledge of UNIX/Linux.</p>
 <p>This lesson should take about 2 hours.</p>
 <div class="toc">
 <ul>
+<li><a href="#_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></a><ul>
 <li><a href="#11-the-first-step-the-most-important-and-the-most-difficult">1.1. The first step (the most important, and the most difficult !):</a></li>
 <li><a href="#12-computation-of-the-interatomic-distance-method-1">1.2. Computation of the interatomic distance (method 1).</a></li>
 <li><a href="#13-computation-of-the-interatomic-distance-method-2">1.3 Computation of the interatomic distance (method 2).</a></li>
 <li><a href="#14-computation-of-the-charge-density">1.4. Computation of the charge density.</a></li>
 <li><a href="#15-computation-of-the-atomisation-energy">1.5. Computation of the atomisation energy.</a></li>
 <li><a href="#answers-to-the-questions">Answers to the questions</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
@@ -1384,47 +746,41 @@ It is supposed that you have some good knowledge of UNIX/Linux.</p>
 visualize the text of the tutorial (the present window), a second to run the
 code, a third to visualize sections of the <a class="wikilink" href="../../help_abinit/">help_abinit</a> (that will open
 automatically), and a fourth one for the description of input variables (that
-will also open automatically). Try to manage adequately these four windows &hellip;</p>
+will also open automatically). Try to manage adequately these four windows ...</p>
 <p><strong>1.1.a</strong> In addition to the present window, open the second window. 
 Go to the Tutorial directory (that we refer as ~abinit/tests/tutorial/Input). </p>
-<div class="codehilite"><pre><span></span>    $ <span class="nb">cd</span> ~abinit/tests/tutorial/Input
-</pre></div>
-
+<pre><code class="bash">    $ cd ~abinit/tests/tutorial/Input
+</code></pre>
 
 <p>In that directory, you will find the necessary input files to run the examples
 related to this tutorial. Take a few seconds to read the names of the files
 already present in <code>~abinit/tests/tutorial/Input</code>. 
 Compare with the lessons mentioned in the index of the <a href="../lesson_welcome.html"><strong>Tutorial home page</strong></a>.
 You will find other input files, specific for the Density Functional
-Perturbation Theory (&ldquo;Response functions&rdquo;) capabilities of ABINIT in the
+Perturbation Theory ("Response functions") capabilities of ABINIT in the
 directory <code>~abinit/tests/tutorespfn/Input</code>.  </p>
 <p><strong>1.1.b </strong>You also need a working directory. So, you should create a subdirectory of this directory, 
-whose name might be &ldquo;Work&rdquo; (so ~abinit/tests/tutorial/Input/Work). Change the working directory of windows 2 to &ldquo;Work&rdquo;: </p>
-<div class="codehilite"><pre><span></span>    $ mkdir Work
-    $ <span class="nb">cd</span> Work
-</pre></div>
-
+whose name might be "Work" (so ~abinit/tests/tutorial/Input/Work). Change the working directory of windows 2 to "Work": </p>
+<pre><code class="sh">    $ mkdir Work
+    $ cd Work
+</code></pre>
 
 <p>You will do most of the actions of this tutorial in this working directory.
-Copy the file tbase1_x.files in &ldquo;Work&rdquo;:</p>
-<div class="codehilite"><pre><span></span>    $ cp ../tbase1_x.files .
-</pre></div>
+Copy the file tbase1_x.files in "Work":</p>
+<pre><code class="terminal">    $ cp ../tbase1_x.files .
+</code></pre>
 
-
-<p><strong>1.1.c</strong> Edit the tbase1_x.files. It is not very long (only 6 lines). It gives the information needed for the code to build other file names &hellip; You will discover more about this file in the <a href="../../../users/generated_files/help_abinit.html#intro1">section 1.1</a> of the abinit_help file. Please, read it now (it will take one minute or so). </p>
+<p><strong>1.1.c</strong> Edit the tbase1_x.files. It is not very long (only 6 lines). It gives the information needed for the code to build other file names ... You will discover more about this file in the <a href="../../../users/generated_files/help_abinit.html#intro1">section 1.1</a> of the abinit_help file. Please, read it now (it will take one minute or so). </p>
 <p><strong>1.1.d</strong> Modify the first and second lines of tbase1_x.files file, so that they read:  </p>
-<div class="codehilite"><pre><span></span>tbase1_1.in  
+<pre><code>tbase1_1.in  
 tbase1_1.out
-</pre></div>
-
-
+</code></pre>
 <p>Later, you will again modify these lines, to treat more cases. Make sure that
 the last line, gives the correct location of the pseudopotential. Close the
-tbase1_x.files file. Then, copy the file [[tests/tutorial/Input/tbase1_1.in]]
-in &ldquo;Work&rdquo;:  </p>
-<div class="codehilite"><pre><span></span>    $ cp ../tbase1_1.in .
-</pre></div>
-
+tbase1_x.files file. Then, copy the file <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in" title="H2 molecule in a big box">tests/tutorial/Input/tbase1_1.in</a>
+in "Work":  </p>
+<pre><code class="bash">    $ cp ../tbase1_1.in .
+</code></pre>
 
 <p>Also later, we will look at this file, and learn about its content. For now,
 you will try to run the code. Its name is <code>abinit</code>. The place where it can be
@@ -1439,36 +795,32 @@ simply typing <code>abinit</code>, even if the actual command must be something 
 an alias with <code>ln -s</code>, or copy the abinit executable, or declare the path with
 the shell command <code>export PATH=~abinit/src/98_main:$PATH</code>).</p>
 <p>So, in the Work directory, type:  </p>
-<div class="codehilite"><pre><span></span>    $ abinit &lt; tbase1_x.files &gt;<span class="p">&amp;</span> log
-</pre></div>
+<pre><code class="bash">    $ abinit &lt; tbase1_x.files &gt;&amp; log
+</code></pre>
 
-
-<p>Wait a few seconds &hellip; it&rsquo;s done ! You can look at the content of the Work directory.</p>
-<div class="codehilite"><pre><span></span>    $ ls
-</pre></div>
-
+<p>Wait a few seconds ... it's done ! You can look at the content of the Work directory.</p>
+<pre><code class="bash">    $ ls
+</code></pre>
 
 <p>You should get something like</p>
-<div class="codehilite"><pre><span></span>    abinit  log  tbase1_1.in  tbase1_1.out  tbase1_x.files  tbase1_xo_DDB  tbase1_xo_DEN  
+<pre><code class="shell">    abinit  log  tbase1_1.in  tbase1_1.out  tbase1_x.files  tbase1_xo_DDB  tbase1_xo_DEN  
     tbase1_xo_EIG.nc  tbase1_xo_GSR.nc  tbase1_xo_OUT.nc  tbase1_xo_WFK
-</pre></div>
-
+</code></pre>
 
 <p>(if you declared the path, you will not find <code>abinit</code> in the list) Different
 output files have been created, including a <code>log</code> file and the output file
 <code>tbase1_1.out</code>. To check that everything is correct, you can make a diff of
-<code>tbase1_1.out</code> with a reference file [[tests/tutorial/Refs/tbase1_1.out]]
+<code>tbase1_1.out</code> with a reference file <a class="wikilink" href="../../tests/tutorial/Refs/tbase1_1.out">tests/tutorial/Refs/tbase1_1.out</a>
 contained in the <code>~abinit/tests/tutorial/Refs</code> directory:</p>
-<div class="codehilite"><pre><span></span>    $ diff tbase1_1.out ../../Refs/tbase1_1.out <span class="p">|</span> less
-</pre></div>
-
+<pre><code class="shell">    $ diff tbase1_1.out ../../Refs/tbase1_1.out | less
+</code></pre>
 
 <p>(Perhaps you will need to ignore the blanks, with the command <code>diff -b</code>
 instead of <code>diff</code>)</p>
 <p>That reference file uses slightly different file names. You should get some
 difference, but rather inoffensive ones, like differences in the name of input
 files or timing differences, e.g.:</p>
-<div class="codehilite"><pre><span></span>    2,3c2,3
+<pre><code class="diff">    2,3c2,3
     &lt; .Version 8.0.8 of ABINIT
     &lt; .(MPI version, prepared for a x86_64_linux_gnu5.4 computer)
     ---
@@ -1503,10 +855,9 @@ files or timing differences, e.g.:</p>
     ---
     &gt; - Total cpu        time (s,m,h):          4.6        0.08      0.001
     221,229c221,228
-</pre></div>
+</code></pre>
 
-
-<p>(&hellip; and what comes after that is related only to timing &hellip;).</p>
+<p>(... and what comes after that is related only to timing ...).</p>
 <p>If you do not run on a PC under Linux with GNU Fortran compiler, e.g. the
 Intel compiler, you might also have small numerical differences, on the order
 of 1.0d-10 at most. You might also have other differences in the paths of
@@ -1514,13 +865,13 @@ files. Finally, it might also be that the default FFT algorithm differs from
 the one of the reference machine, in which case the line mentioning fftalg
 will differ (ifftalg will not be 312). If you get something else, you should
 ask for help!</p>
-<p>In this part of the output file, note the dash &ldquo;-&rdquo; that is inserted in the
+<p>In this part of the output file, note the dash "-" that is inserted in the
 first column. This is not important for the user: it is used to post-process
 the output file using some automatic tool. As a rule, you should ignore
 symbols placed in the first column of the ABINIT output file.</p>
 <p>Supposing everything went well, we will now detail the different steps that
-took place: how to run the code, what is in the &ldquo;tbase1_1.in&rdquo; input file, and,
-later, what is in the &ldquo;tbase1_1.out&rdquo; and &ldquo;log&rdquo; output files.</p>
+took place: how to run the code, what is in the "tbase1_1.in" input file, and,
+later, what is in the "tbase1_1.out" and "log" output files.</p>
 <p><strong>1.1.e</strong> Running the code is described in the <a href="../../../users/generated_files/help_abinit.html#exec">section 1.2</a> of the abinit_help file. Please, read it now (it will take 30 seconds or less).</p>
 <p><strong>1.1.f</strong> It is now time to edit the tbase1_1.in file. You can have a first glance at it. It is not very long: about 50 lines, mostly comments. Do not try to understand everything immediately. After having gone through it, you should read general explanation about its content, and the format of such input files in the <a href="../../../users/generated_files/help_abinit.html#intro3">section 3.1</a> of the abinit_help file. </p>
 <p><strong>1.1.g</strong> You might now examine in more details some input variables. An alphabetically ordered <a href="../../../input_variables/generated_files/allvariables.html">index of all variables</a> is provided, and their description is found in different files (non-exhaustive list): </p>
@@ -1543,66 +894,65 @@ for the few input variables that you find in tbase1_1.in . These are
 particularly important input variables. So, take a few minutes to have a look
 at the input variables of tbase1_1.in:</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varbas/#acell">acell</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#ntypat">ntypat</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#znucl">znucl</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#natom">natom</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#typat">typat</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#nkpt">nkpt</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a></li>
-<li><a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a></li>
-<li><a class="wikilink" href="../../input_variables/vargs/#diemac">diemac</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#acell">acell</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#znucl">znucl</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#natom">natom</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#typat">typat</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a></li>
+<li><a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a></li>
+<li><a class="wikilink" href="../../input_variables/gstate/#diemac">diemac</a></li>
 </ul>
-<p>Have also a look at <a class="wikilink" href="../../input_variables/varbas/#kpt">kpt</a> and <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>.</p>
+<p>Have also a look at <a class="wikilink" href="../../input_variables/basic/#kpt">kpt</a> and <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>.</p>
 <p>It is now time to have a look at the two output files of the run.</p>
-<p><strong>1.1.h</strong> First, open the &ldquo;log&rdquo; file. You can begin to read it. It is nasty. Jump to its end. You will find there the number of WARNINGS and COMMENTS that were issued by the code during execution. You might try to find them in the file (localize the keywords &ldquo;WARNING&rdquo; or &ldquo;COMMENT&rdquo; in this file). Some of them are for the experienced user. For the present time, we will ignore them. You can find more information about messages in the log file in the <a href="../../../users/generated_files/help_abinit.html#logfile">section 6.1</a> of the abinit_help file.</p>
-<p><strong>1.1.i</strong> Then, open the [[tests/tutorial/Refs/tbase1_1.out]] file. You find some general information about the output file in <a href="../../../users/generated_files/help_abinit.html#outputfile"> section 6.2</a> of the abinit_help file. You should also: </p>
+<p><strong>1.1.h</strong> First, open the "log" file. You can begin to read it. It is nasty. Jump to its end. You will find there the number of WARNINGS and COMMENTS that were issued by the code during execution. You might try to find them in the file (localize the keywords "WARNING" or "COMMENT" in this file). Some of them are for the experienced user. For the present time, we will ignore them. You can find more information about messages in the log file in the <a href="../../../users/generated_files/help_abinit.html#logfile">section 6.1</a> of the abinit_help file.</p>
+<p><strong>1.1.i</strong> Then, open the <a class="wikilink" href="../../tests/tutorial/Refs/tbase1_1.out">tests/tutorial/Refs/tbase1_1.out</a> file. You find some general information about the output file in <a href="../../../users/generated_files/help_abinit.html#outputfile"> section 6.2</a> of the abinit_help file. You should also: </p>
 <ul>
-<li>examine the header of &ldquo;tbase1_1.out&rdquo; </li>
+<li>examine the header of "tbase1_1.out" </li>
 <li>examine the report on memory needs (do not read each value of parameters) </li>
 <li>examine the echo of preprocessed input data, </li>
 </ul>
 <p>until you reach the message:  </p>
-<div class="codehilite"><pre><span></span><span class="n">chkinp</span><span class="o">:</span> <span class="n">Checking</span> <span class="n">input</span> <span class="n">parameters</span> <span class="k">for</span> <span class="n">consistency</span><span class="o">.</span>
-</pre></div>
-
+<pre><code>chkinp: Checking input parameters for consistency.
+</code></pre>
 
 <p>If the code does not stop there, the input parameters are consistent. At this
 stage, many default values have been provided, and the preprocessing is
 finished.</p>
 <p>It is worth to come back to the echo of preprocessed input data. You should
-first examine the &ldquo;tbase1_1.in&rdquo; file in more details, and read the meaning of
+first examine the "tbase1_1.in" file in more details, and read the meaning of
 each of its variables in the corresponding input variables file, if it has not
 yet been done. Then, you should examine some variables that were NOT defined
-in the input file, but that appear in the echo written in &ldquo;tbase1_1.out&rdquo;:  </p>
-<p>- <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>: its value is 2.<br />
+in the input file, but that appear in the echo written in "tbase1_1.out":  </p>
+<p>- <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>: its value is 2.<br />
 It is the number of electronic states that will be treated by the code. It has
 been computed by counting the number of valence electrons in the unit cell
 (summing the valence electrons brought by each pseudopotential) then occupying
-the lowest states (look at the <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a> variable), and adding some states (at
+the lowest states (look at the <a class="wikilink" href="../../input_variables/gstate/#occ">occ</a> variable), and adding some states (at
 least one, maybe more, depending on the size of the system).  </p>
-<p>- <a class="wikilink" href="../../input_variables/vargs/#ngfft">ngfft</a>: its value is 30 30 30 .<br />
+<p>- <a class="wikilink" href="../../input_variables/gstate/#ngfft">ngfft</a>: its value is 30 30 30 .<br />
 It is the number of points of the three-dimensional FFT grid. It has been
-derived from <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> and the dimension of the cell (<a class="wikilink" href="../../input_variables/varbas/#acell">acell</a>).  </p>
-<p>The maximal number of plane waves &ldquo;<strong>mpw</strong>&rdquo; is mentioned in the memory
+derived from <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> and the dimension of the cell (<a class="wikilink" href="../../input_variables/basic/#acell">acell</a>).  </p>
+<p>The maximal number of plane waves "<strong>mpw</strong>" is mentioned in the memory
 evaluation section: it is <strong>752</strong>.<br />
 Well, this is not completely right, as the code took advantage of the time-
 reversal symmetry, valid for the k-point (0 0 0), to decrease the number of
 planewave by about a factor of two.<br />
-The full set of plane waves is <strong>1503</strong> (see later in the &ldquo;tbase1_1.out&rdquo;
+The full set of plane waves is <strong>1503</strong> (see later in the "tbase1_1.out"
 file).<br />
-The code indicates the time-reversal symmetry by a value of <a class="wikilink" href="../../input_variables/vardev/#istwfk">istwfk</a>=2 ,
-instead of the usual <a class="wikilink" href="../../input_variables/vardev/#istwfk">istwfk</a>=1 default.  </p>
-<p>- <a class="wikilink" href="../../input_variables/varbas/#nsym">nsym</a>: its value is 16.<br />
-It is the number of symmetries of the system. The 3x3 matrices <a class="wikilink" href="../../input_variables/varbas/#symrel">symrel</a>
+The code indicates the time-reversal symmetry by a value of <a class="wikilink" href="../../input_variables/dev/#istwfk">istwfk</a>=2 ,
+instead of the usual <a class="wikilink" href="../../input_variables/dev/#istwfk">istwfk</a>=1 default.  </p>
+<p>- <a class="wikilink" href="../../input_variables/basic/#nsym">nsym</a>: its value is 16.<br />
+It is the number of symmetries of the system. The 3x3 matrices <a class="wikilink" href="../../input_variables/basic/#symrel">symrel</a>
 define the symmetries operation. In this case, none of the symmetries is
-accompanied by a translation, that would appear in the variable <a class="wikilink" href="../../input_variables/varbas/#tnons">tnons</a>. The
+accompanied by a translation, that would appear in the variable <a class="wikilink" href="../../input_variables/basic/#tnons">tnons</a>. The
 code did an automatic analysis of symmetries.<br />
 They could alternatively be set by hand, or using the symmetry builder (to be
 described later).  </p>
-<p>- <a class="wikilink" href="../../input_variables/varbas/#xangst">xangst</a> and <a class="wikilink" href="../../input_variables/varbas/#xred">xred</a> are alternative ways to <a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a> to specify the
+<p>- <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> and <a class="wikilink" href="../../input_variables/basic/#xred">xred</a> are alternative ways to <a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a> to specify the
 positions of atoms within the primitive cell.</p>
 <p>Now, you can start reading the description of the remaining of the
 tbase1_1.out file, in the <a href="../../../users/generated_files/help_abinit.html#6.3"> section 6.3
@@ -1611,11 +961,11 @@ Look at the tbase1_1.out file at the same time.</p>
 <p><strong> 1.1.j  </strong> You have read completely an output file! </p>
 <p>Could you answer the following questions?</p>
 <ul>
-<li>Q1. How many SCF cycles were needed to have the <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a> criterion satisfied? </li>
-<li>Q2. Is the energy likely more converged than <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>? </li>
+<li>Q1. How many SCF cycles were needed to have the <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a> criterion satisfied? </li>
+<li>Q2. Is the energy likely more converged than <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a>? </li>
 <li>Q3. What is the value of the force on each atom, in Ha/Bohr? </li>
 <li>Q4. What is the difference of eigenenergies between the two electronic states? </li>
-<li>Q5. Can you insert &lsquo;<a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a> 2&rsquo; in the input file, run again abinit, and find where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
+<li>Q5. Can you insert '<a class="wikilink" href="../../input_variables/files/#prtvol">prtvol</a> 2' in the input file, run again abinit, and find where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
 </ul>
 <p>(answers are given at the end of the present file)</p>
 <hr />
@@ -1624,7 +974,7 @@ Look at the tbase1_1.out file at the same time.</p>
 <p>We will now complete the description of the meaning of each term: there are
 still a few indications that you should be aware of, even if you will not use
 them in the tutorial. These might appear in the description of some input
-variables &hellip; For this, you should read the <a href="../../../users/generated_files/help_abinit.html#parameters"> section
+variables ... For this, you should read the <a href="../../../users/generated_files/help_abinit.html#parameters"> section
 3.2</a> of the
 abinit_help file.</p>
 <p><strong>1.2.b</strong> There are three methodologies to compute the optimal distance between the two Hydrogen atoms: </p>
@@ -1640,7 +990,7 @@ multiple datasets.</li>
 decide to examine the interatomic distances from 1.0 Bohr to 2.0 Bohr, by
 steps of 0.05 Bohr. That is, 21 calculations.<br />
 If you are a UNIX guru, it will be easy for you to write a script that will
-drive these 21 calculations, changing automatically the variable <a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a> in
+drive these 21 calculations, changing automatically the variable <a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a> in
 the input file, and then gather all the data, in a convenient form to be
 plotted.<br />
 Well, are you a UNIX guru? If not, there is an easier path, all within ABINIT!</p>
@@ -1650,21 +1000,21 @@ sections <a href="../../../users/generated_files/help_abinit.html#multidataset">
 <a href="../../../users/generated_files/help_abinit.html#loop">3.5</a> and
 <a href="../../../users/generated_files/help_abinit.html#3.6">3.6</a>, of the abinit_help
 file.</p>
-<p><strong>1.2.c</strong> Now, can you write an input file that will do the computation described above (interatomic distances from 1.0 Bohr to 2.0 Bohr, by steps of 0.05 Bohr)? You might start from tbase1_1.in. Try to define a series, and to use the <a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> input variable (the latter will make the computation much faster). </p>
-<p>You should likely have a look at the section that describes the <a class="wikilink" href="../../input_variables/varfil/#irdwfk">irdwfk</a> and
-<a class="wikilink" href="../../input_variables/varfil/#getwfk">getwfk</a> input variables: in particular, look at the meaning of <em><strong>getwfk
+<p><strong>1.2.c</strong> Now, can you write an input file that will do the computation described above (interatomic distances from 1.0 Bohr to 2.0 Bohr, by steps of 0.05 Bohr)? You might start from tbase1_1.in. Try to define a series, and to use the <a class="wikilink" href="../../input_variables/files/#getwfk">getwfk</a> input variable (the latter will make the computation much faster). </p>
+<p>You should likely have a look at the section that describes the <a class="wikilink" href="../../input_variables/files/#irdwfk">irdwfk</a> and
+<a class="wikilink" href="../../input_variables/files/#getwfk">getwfk</a> input variables: in particular, look at the meaning of <em><strong>getwfk
 -1</strong></em></p>
-<p>Also, define explicitly the number of states (or supercell &ldquo;bands&rdquo;) to be one,
-using the input variable <a class="wikilink" href="../../input_variables/varbas/#nband">nband</a>. The input file
-[[tests/tutorial/Input/tbase1_2.in]] is an example of file that will do the
-job, while [[tests/tutorial/Refs/tbase1_2.out]] is an example of output file.
+<p>Also, define explicitly the number of states (or supercell "bands") to be one,
+using the input variable <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>. The input file
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_2.in" title="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
+job, while <a class="wikilink" href="../../tests/tutorial/Refs/tbase1_2.out">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.
 If you decide to use the ~abinit/tests/tutorial/Input/tbase1_2.in file, do not
-forget to change the file names in the &ldquo;tbase1_x.files&rdquo; file &hellip;</p>
+forget to change the file names in the "tbase1_x.files" file ...</p>
 <p>So, you run the code with your input file (this might take fifteen seconds or
 so on a PC at 3 GHz), examine the output file quickly (there are many
 repetition of sections, for the different datasets), and get the output
 energies gathered in the final echo of variables:</p>
-<div class="codehilite"><pre><span></span>        etotal1  -1.0368223891E+00
+<pre><code class="text">        etotal1  -1.0368223891E+00
         etotal2  -1.0538645433E+00
         etotal3  -1.0674504851E+00
         etotal4  -1.0781904896E+00
@@ -1685,28 +1035,24 @@ energies gathered in the final echo of variables:</p>
         etotal19 -1.0929800578E+00
         etotal20 -1.0899835224E+00
         etotal21 -1.0867972868E+00
-</pre></div>
-
+</code></pre>
 
 <p>You might try to plot these data. </p>
 <p><img alt="" src="../base1_assets/Plot1.jpg" /> </p>
 <p>The minimum of energy in the above list is clearly between dataset 11 and 12, that is:</p>
-<div class="codehilite"><pre><span></span>         xcart11 -7.5000000000E-01  0.0000000000E+00  0.0000000000E+00
+<pre><code>         xcart11 -7.5000000000E-01  0.0000000000E+00  0.0000000000E+00
                   7.5000000000E-01  0.0000000000E+00  0.0000000000E+00
          xcart12 -7.7500000000E-01  0.0000000000E+00  0.0000000000E+00
                   7.7500000000E-01  0.0000000000E+00  0.0000000000E+00
-</pre></div>
-
+</code></pre>
 
 <p>corresponding to a distance of H atoms between 1.5 Bohr and 1.55 Bohr. The
 forces vanish also between 1.5 Bohr and 1.55 Bohr:</p>
-<div class="codehilite"><pre><span></span>     fcart11 -5.4945071285E-03  0.0000000000E+00  0.0000000000E+00
+<pre><code>     fcart11 -5.4945071285E-03  0.0000000000E+00  0.0000000000E+00
               5.4945071285E-03  0.0000000000E+00  0.0000000000E+00
      fcart12  6.9603067838E-03  0.0000000000E+00  0.0000000000E+00
              -6.9603067838E-03  0.0000000000E+00  0.0000000000E+00
-</pre></div>
-
-
+</code></pre>
 <p>From these two values, using a linear interpolation, one get the optimal value
 of 1.522 Bohr .<br />
 Note that <em>the number of SCF cycles drops from 6 to 5 when the wavefunctions
@@ -1714,38 +1060,36 @@ are read from the previous dataset.</em></p>
 <hr />
 <h3 id="13-computation-of-the-interatomic-distance-method-2"><strong>1.3 Computation of the interatomic distance (method 2). </strong><a class="headerlink" href="#13-computation-of-the-interatomic-distance-method-2" title="Permanent link">&para;</a></h3>
 <p><strong>1.3.a</strong> The other methodology is based on an automatic computation of the minimum. <br />
-There are different algorithms to do that. See the input variable <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a>,
+There are different algorithms to do that. See the input variable <a class="wikilink" href="../../input_variables/rlx/#ionmov">ionmov</a>,
 with values 2 and 7. In the present case, with only one degree of freedom to
-be optimized, the best choice is <a class="wikilink" href="../../input_variables/varrlx/#ionmov">ionmov</a> 2 .</p>
+be optimized, the best choice is <a class="wikilink" href="../../input_variables/rlx/#ionmov">ionmov</a> 2 .</p>
 <p>You have also to define the maximal number of timesteps for this optimization.
-Set the input variable <a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a> to 10, it will be largely enough. For the
-stopping criterion <a class="wikilink" href="../../input_variables/varrlx/#tolmxf">tolmxf</a>, use the reasonable value of 5.0d-4 Ha/Bohr.
+Set the input variable <a class="wikilink" href="../../input_variables/rlx/#ntime">ntime</a> to 10, it will be largely enough. For the
+stopping criterion <a class="wikilink" href="../../input_variables/rlx/#tolmxf">tolmxf</a>, use the reasonable value of 5.0d-4 Ha/Bohr.
 This defines the force threshold to consider that the geometry is converged.
 The code will stop if the residual forces are below that value before reaching
-<a class="wikilink" href="../../input_variables/varrlx/#ntime">ntime</a>.</p>
+<a class="wikilink" href="../../input_variables/rlx/#ntime">ntime</a>.</p>
 <p>It is also worth to change the stopping criterion for the SCF cycle, in order
 to be sure that the forces generated for each trial interatomic distance are
-sufficiently converged. Indeed, the value used for <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>, namely 1.0d-6,
+sufficiently converged. Indeed, the value used for <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a>, namely 1.0d-6,
 might be sufficient for total energy calculations, but definitely not for the
-accurate computation of other properties. So, change <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a> in <a class="wikilink" href="../../input_variables/varbas/#toldff">toldff</a>,
-and set the latter input variable to ten times smaller than <a class="wikilink" href="../../input_variables/varrlx/#tolmxf">tolmxf</a>. The
-input file [[tests/tutorial/Input/tbase1_3.in]] is an example of file that
-will do the job, while [[tests/tutorial/Refs/tbase1_3.out]] is an example of
+accurate computation of other properties. So, change <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a> in <a class="wikilink" href="../../input_variables/basic/#toldff">toldff</a>,
+and set the latter input variable to ten times smaller than <a class="wikilink" href="../../input_variables/rlx/#tolmxf">tolmxf</a>. The
+input file <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_3.in" title="H2 molecule in a big box This file will optimize automatically the interatomic distance">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
+will do the job, while <a class="wikilink" href="../../tests/tutorial/Refs/tbase1_3.out">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. If you decide to use these files, do not forget to change the
-file names in the &ldquo;tbase1_x.files&rdquo; file &hellip; So, you run the code with your
+file names in the "tbase1_x.files" file ... So, you run the code with your
 input file (a few seconds), examine quietly this file (which is much smaller
 than the tbase1_2.out file), and get some significant output data gathered in
 the final echo of variables:</p>
-<div class="codehilite"><pre><span></span>    etotal   -1.1058360644E+00
+<pre><code>    etotal   -1.1058360644E+00
      fcart    1.8270533893E-04  0.0000000000E+00  0.0000000000E+00
              -1.8270533893E-04  0.0000000000E+00  0.0000000000E+00
       ...
      xcart   -7.6091015760E-01  0.0000000000E+00  0.0000000000E+00
               7.6091015760E-01  0.0000000000E+00  0.0000000000E+00
-</pre></div>
-
-
-<p>According to these data (see <a class="wikilink" href="../../input_variables/varbas/#xcart">xcart</a>), the optimal interatomic distance is
+</code></pre>
+<p>According to these data (see <a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>), the optimal interatomic distance is
 about 1.522 Bohr, in good agreement with the estimation of tbase1_2.out . If
 you have time (this is to be done at home), you might try to change the
 stopping criteria, and redo the calculation, to see the level of convergence
@@ -1759,9 +1103,9 @@ same computation is done on different platforms.</p>
 <h3 id="14-computation-of-the-charge-density"><strong>1.4. Computation of the charge density.</strong><a class="headerlink" href="#14-computation-of-the-charge-density" title="Permanent link">&para;</a></h3>
 <p>The charge density has already been computed, for all geometries, in the
 above-mentioned runs. Here, we will print this quantity.</p>
-<p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink" href="../../input_variables/varfil/#prtden">prtden</a> description, it is worth to read a much more detailed description of the &ldquo;files&rdquo; file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
-<p><strong>1.4.b</strong> The input file [[tests/tutorial/Input/tbase1_4.in]] is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
-<p>The density will be output in the <strong>tbase1_xo_DEN</strong> file. Try to edit it &hellip;
+<p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink" href="../../input_variables/files/#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink" href="../../input_variables/files/#prtden">prtden</a> description, it is worth to read a much more detailed description of the "files" file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
+<p><strong>1.4.b</strong> The input file <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_4.in" title="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance.">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
+<p>The density will be output in the <strong>tbase1_xo_DEN</strong> file. Try to edit it ...
 No luck ! This file is unformatted, not written using the ASCII code. Even if
 you cannot read it, its description is provided in the abinit_help. It
 contains first a header, then the density numbers. The description of the
@@ -1774,7 +1118,7 @@ wavefunctions files, as these files contain the same header as the density
 file, see sections
 <a href="../../../users/generated_files/help_abinit.html#localpotfile">6.6</a> and
 <a href="../../../users/generated_files/help_abinit.html#wavefctfile">6.7</a></p>
-<p><strong>1.4.c</strong> Such a density file can be read by ABINIT, to restart a calculation (see the input variable <a class="wikilink" href="../../input_variables/varbas/#iscf">iscf</a>, when its value is -2), but more usually, by an utility called &ldquo;cut3d&rdquo;. This utility is available in the ABINIT package. You might try to use it now, to generate two-dimensional cuts in the density, and visualize the charge density contours. <br />
+<p><strong>1.4.c</strong> Such a density file can be read by ABINIT, to restart a calculation (see the input variable <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>, when its value is -2), but more usually, by an utility called "cut3d". This utility is available in the ABINIT package. You might try to use it now, to generate two-dimensional cuts in the density, and visualize the charge density contours. <br />
 Read the corresponding <a href="../../../users/generated_files/help_cut3d.html">Cut3D help
 file</a>. Then, try to run cut3d to
 analyse <strong>tbase1_xo_DEN</strong>. You should first try to translate the unformatted
@@ -1795,20 +1139,20 @@ hydrogen atom. The atomisation energy will be the difference between the total
 energy of H2 and twice the total energy of H.<br />
 There are some subtleties in the calculation of an isolated atom.</p>
 <ul>
-<li>in many cases, the ground state of an isolated atom is spin-polarized, see the variables <a class="wikilink" href="../../input_variables/varbas/#nsppol">nsppol</a> and <a class="wikilink" href="../../input_variables/vargs/#spinat">spinat</a> ; </li>
+<li>in many cases, the ground state of an isolated atom is spin-polarized, see the variables <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a> and <a class="wikilink" href="../../input_variables/gstate/#spinat">spinat</a> ; </li>
 <li>the highest occupied level might be degenerate with the lowest unoccupied level of the same spin, in which case the techniques usually appropriate for metals are to be used (see <a href="../lesson_base4.html">lesson_base4</a>) </li>
-<li>also often, the symmetry of the ground-state charge density will NOT be spherical, so that the automatic determination of symmetries by the code, based on the atomic coordinates, should be disabled, see the input variable <a class="wikilink" href="../../input_variables/varbas/#nsym">nsym</a>, to be set to 1 in this case. </li>
+<li>also often, the symmetry of the ground-state charge density will NOT be spherical, so that the automatic determination of symmetries by the code, based on the atomic coordinates, should be disabled, see the input variable <a class="wikilink" href="../../input_variables/basic/#nsym">nsym</a>, to be set to 1 in this case. </li>
 </ul>
 <p>For Hydrogen, we are lucky that the ground state is spherical (1s orbital),
 and that the highest occupied level and lowest unoccupied level, although
 degenerate, have a different spin. We will define by hand the occupation of
-each spin, see the input variables <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a> (to be set to 2), and <a class="wikilink" href="../../input_variables/vargs/#occ">occ</a> .<br />
+each spin, see the input variables <a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a> (to be set to 2), and <a class="wikilink" href="../../input_variables/gstate/#occ">occ</a> .<br />
 Finally, in order to make numerical errors cancel, it is important to compute
 the above-mentioned difference in the same box, for the same cut-off, and even
 for a location in the box that is similar to the molecule case (although the
 latter might not be so important).</p>
-<p>The input file [[tests/tutorial/Input/tbase1_5.in]] is an example of file that
-will do the job, while [[tests/tutorial/Refs/tbase1_5.out]] is an example of
+<p>The input file <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_5.in" title="H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used.">tests/tutorial/Input/tbase1_5.in</a> is an example of file that
+will do the job, while <a class="wikilink" href="../../tests/tutorial/Refs/tbase1_5.out">tests/tutorial/Refs/tbase1_5.out</a> is an example of
 output file. If you decide to use the tbase1_5.in file, do not forget to
 change the file names in the tbase1_x.files file. The run lasts a few seconds.</p>
 <p>You should read the output file, and note the tiny differences related with
@@ -1816,19 +1160,18 @@ the spin-polarisation:</p>
 <ul>
 <li>the electronic eigenvalues are now given for both spin up and spin down cases: </li>
 </ul>
-<div class="codehilite"><pre><span></span>         Eigenvalues (hartree) for nkpt=   1  k points, SPIN UP:
+<pre><code class="text">         Eigenvalues (hartree) for nkpt=   1  k points, SPIN UP:
      kpt#   1, nband=  1, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.26414
      Eigenvalues (hartree) for nkpt=   1  k points, SPIN DOWN:
      kpt#   1, nband=  1, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.11112
-</pre></div>
-
+</code></pre>
 
 <ul>
-<li>If you run again, while having inserted in the input file &lsquo;<a class="wikilink" href="../../input_variables/varfil/#prtvol">prtvol</a> 2&rsquo;, because <a class="wikilink" href="../../input_variables/varbas/#occopt">occopt</a>, the charge density and spin polarisation at each point of the FFT grid is also analyzed: </li>
+<li>If you run again, while having inserted in the input file '<a class="wikilink" href="../../input_variables/files/#prtvol">prtvol</a> 2', because <a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a>, the charge density and spin polarisation at each point of the FFT grid is also analyzed: </li>
 </ul>
-<div class="codehilite"><pre><span></span>         Total charge density [el/Bohr^3]
+<pre><code class="text">         Total charge density [el/Bohr^3]
           Maximum=    1.4053E-01  at reduced coord.    0.0000    0.0000    0.0000
      Next maximum=    1.2019E-01  at reduced coord.    0.0000    0.0000    0.9667
           Minimum=    3.4544E-06  at reduced coord.    0.4667    0.4333    0.4333
@@ -1853,26 +1196,21 @@ the spin-polarisation:</p>
      Next maximum=    1.0000E+00  at reduced coord.    0.9333    0.9667    0.9667
           Minimum=    1.0000E+00  at reduced coord.    0.0000    0.0000    0.0000
      Next minimum=    1.0000E+00  at reduced coord.    0.0333    0.0000    0.0000
-</pre></div>
-
+</code></pre>
 
 <p>The <strong>zeta</strong> variable is the ratio between the spin-density difference and the
 charge density. It varies between +1 and -1. In the present case of Hydrogen,
 there is no spin down density, so the zeta variable is +1.<br />
-(Comment: in this part of the output file, note the comma &ldquo;,&rdquo; that is inserted
+(Comment: in this part of the output file, note the comma "," that is inserted
 in the first column. This is not important for the user: it is used to post-
 process the output file using some automatic tool. As a rule, you should
 ignore symbols placed in the first column of the ABINIT output file.)</p>
 <p>The total energy is</p>
-<div class="codehilite"><pre><span></span>    etotal   -4.7010531489E-01
-</pre></div>
-
-
+<pre><code>    etotal   -4.7010531489E-01
+</code></pre>
 <p>while the total energy of the H2 molecule is (see test 13):</p>
-<div class="codehilite"><pre><span></span>    etotal   -1.1058360644E+00
-</pre></div>
-
-
+<pre><code>    etotal   -1.1058360644E+00
+</code></pre>
 <p>The atomisation energy is thus 0.1656 Ha (The difference between the total
 energy of the H2 molecule and twice the energy of an isolated Hydrogen atom).</p>
 <p>At this stage, we can compare our results:</p>
@@ -1892,10 +1230,10 @@ especially p.225)</p>
 Well, are you sure that the input parameters that we did not discuss are correct? 
 These are:</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> (the plane-wave kinetic energy cut-off) </li>
-<li><a class="wikilink" href="../../input_variables/varbas/#acell">acell</a> (the supercell size) </li>
-<li><a class="wikilink" href="../../input_variables/varbas/#ixc">ixc</a> (not even mentioned until now, this input variable specifies what kind of 
-    exchange-correlation functional is to be used &hellip;) </li>
+<li><a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> (the plane-wave kinetic energy cut-off) </li>
+<li><a class="wikilink" href="../../input_variables/basic/#acell">acell</a> (the supercell size) </li>
+<li><a class="wikilink" href="../../input_variables/basic/#ixc">ixc</a> (not even mentioned until now, this input variable specifies what kind of 
+    exchange-correlation functional is to be used ...) </li>
 <li>the pseudopotential </li>
 </ul>
 <p>We used 10 Ha as cut-off energy, a 10x10x10 Bohr^3 supercell, the local-
@@ -1907,8 +1245,8 @@ of these parameters (except the pseudopotential).</p>
 <hr />
 <h3 id="answers-to-the-questions">Answers to the questions<a class="headerlink" href="#answers-to-the-questions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Q1. How many SCF cycles were needed to have the <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a> criterion satisfied? </li>
-<li>Q2. Is the energy likely more converged than <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>? </li>
+<li>Q1. How many SCF cycles were needed to have the <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a> criterion satisfied? </li>
+<li>Q2. Is the energy likely more converged than <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a>? </li>
 <li>Q3. What is the value of the force on each atom, in Ha/Bohr? </li>
 <li>Q4. What is the difference of eigenenergies between the two electronic states? </li>
 <li>Q5. Where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
@@ -1916,7 +1254,7 @@ of these parameters (except the pseudopotential).</p>
 <p>NOTE: <em>there might be numerical differences, from platform to platform, in the
 quoted results !</em></p>
 <p><strong>Q1.</strong> 6 SCF cycles were needed: </p>
-<div class="codehilite"><pre><span></span>         iter   Etot(hartree)      deltaE(h)  residm     vres2
+<pre><code class="text">         iter   Etot(hartree)      deltaE(h)  residm     vres2
      ETOT  1  -1.1013391225242    -1.101E+00 4.220E-04 8.396E+00
      ETOT  2  -1.1036939626391    -2.355E-03 7.374E-09 2.840E-01
      ETOT  3  -1.1037170965209    -2.313E-05 7.389E-08 1.549E-02
@@ -1926,38 +1264,35 @@ quoted results !</em></p>
 
      At SCF step    6, etot is converged :
       for the second time, diff in etot=  9.038E-11 &lt; toldfe=  1.000E-06
-</pre></div>
+</code></pre>
 
-
-<p>Note that the number of steps that were allowed, <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a>=10, is larger than
+<p>Note that the number of steps that were allowed, <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>=10, is larger than
 the number of steps effectively needed to reach the stopping criterion. As a
 rule, you should always check that the number of steps that you allowed was
 sufficient to reach the target tolerance. You might now play a bit with nstep,
 as e.g. set it to 5, to see how ABINIT reacts.</p>
-<p>Side note: in most of the tutorial examples, <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> will be enough to reach
-the target tolerance, defined by one of the &ldquo;tolXXX&rdquo; input variables. However,
+<p>Side note: in most of the tutorial examples, <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a> will be enough to reach
+the target tolerance, defined by one of the "tolXXX" input variables. However,
 this is not always the case (e.g. the test case 1 of the <a href="../lesson_rf1.html">lesson response-
 function 1</a>), because of some portability problems, that
 could only be solved by stopping the SCF cycles before the required tolerance.</p>
-<p><strong>Q2.</strong> The information is contained in the same piece of the output file. Yes, the energy is more converged than <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a>, since the stopping criterion asked for the difference between successive evaluations of the energy to be smaller than <a class="wikilink" href="../../input_variables/varbas/#toldfe">toldfe</a> twice in a row, while the evolution of the energy is nice, and always decreasing by smaller and smaller amounts. </p>
+<p><strong>Q2.</strong> The information is contained in the same piece of the output file. Yes, the energy is more converged than <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a>, since the stopping criterion asked for the difference between successive evaluations of the energy to be smaller than <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a> twice in a row, while the evolution of the energy is nice, and always decreasing by smaller and smaller amounts. </p>
 <p><strong>Q3.</strong> These values are: </p>
-<div class="codehilite"><pre><span></span>     cartesian forces (hartree/bohr) at end:
+<pre><code class="text">     cartesian forces (hartree/bohr) at end:
         1     -0.03740558871217     0.00000000000000     0.00000000000000
         2      0.03740558871217     0.00000000000000     0.00000000000000
      frms,max,avg= 2.1596127E-02 3.7405589E-02   0.000E+00  0.000E+00  0.000E+00 h/b
-</pre></div>
-
+</code></pre>
 
 <p>On the first atom (located at -0.7 0 0 in cartesian coordinates, in Bohr), the
 force vector is pointing in the minus x direction, and in the plus x direction
 for the second atom located at +0.7 0 0 .<br />
-The H2 molecule would like to expand &hellip;</p>
+The H2 molecule would like to expand ...</p>
 <p><strong>Q4.</strong> The eigenvalues (in Hartree) are mentioned at the lines </p>
-<div class="codehilite"><pre><span></span>     Eigenvalues (hartree) for nkpt=   1  k points:
+<pre><code class="text">     Eigenvalues (hartree) for nkpt=   1  k points:
      kpt#   1, nband=  2, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.36525  -0.01379
-</pre></div>
-
+</code></pre>
 
 <p>As mentioned in the
 <a href="../../../users/generated_files/help_abinit.html#averagepot">abinit_help</a> file,
@@ -1966,23 +1301,14 @@ eigenenergies, as well as differences with the potential.<br />
 The difference is 0.35147 Hartree, that is 9.564 eV .<br />
 Moreover, remember that Kohn-Sham eigenenergies are formally NOT connected to
 experimental excitation energies !<br />
-(Well, more is to be said later about this &hellip;).</p>
+(Well, more is to be said later about this ...).</p>
 <p><strong>Q5.</strong> The maximum electronic density in electron per Bohr cube is reached at the mid-point between the two H atoms : </p>
-<div class="codehilite"><pre><span></span>     Total charge density [el/Bohr^3]
+<pre><code class="text">     Total charge density [el/Bohr^3]
     ,     Maximum=    2.6907E-01  at reduced coord.    0.0000    0.0000    0.0000
-</pre></div>
-                
-                  
-                
-              
-              
-                
-              
-            </article>
-          </div>
+</code></pre></div>
         </div>
-      </main>
-      
+
+        <footer class="col-md-12">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -1992,22 +1318,28 @@ experimental excitation energies !<br />
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-    </div>
-    
-      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
-      
-      
-      <script>app.initialize({url:{base:"../.."}})</script>
-      
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      
         <script src="../../extra_javascript/abidocs.js"></script>
-      
-    
-    
-      
-    
-  </body>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
 </html>

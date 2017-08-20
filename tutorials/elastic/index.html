@@ -1,56 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-        <meta name="description" content="Abinit documentation">
-      
-      
-        <link rel="canonical" href="http://www.abinit.org/tutorials/elastic/">
-      
-      
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <meta name="author" content="The Abinit group">
-      
-      
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
-    
-    
-      
+        <link rel="canonical" href="http://www.abinit.org/tutorials/elastic/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Elastic - abinit</title>
-      
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
     
-    
-    
-      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    -->
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
     <!-- Optional theme
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript
     -->
+    <!-- Latest compiled and minified JavaScript
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
 
     <!-- MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers
@@ -86,1286 +89,629 @@
     </script>
     -->
 
+ 
+    </head>
 
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
-      <link rel="stylesheet" href="../../css/extra.css">
-    
-    
-  </head>
-  
-  
-  
-  
     <body>
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
-          
-            
-              
-                <span class="md-header-nav__parent">
-                  Tutorials
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  DFPT
-                </span>
-              
-            
-            Elastic
-          
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-          
-<div class="md-search" data-md-component="search">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
         </div>
-      </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li class="active">
+    <a href="./">Elastic</a>
+</li>
+            
+<li >
+    <a href="../eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../rf2/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../eph/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
 
-
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-      
-        
-
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../.." title="Quick Start" class="md-tabs__link">
-          Quick Start
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
-          User Guide
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    
-    
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
-          Input Variables
-        </a>
-      
-    </li>
-  
-
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../welcome/" title="Tutorials" class="md-tabs__link md-tabs__link--active">
-          Tutorials
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
-          Theory
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-the-ground-state-geometry-of-hypothetical-wurtzite-alas">1. The ground-state geometry of (hypothetical) wurtzite AlAs.</a></li>
+        <li class="main "><a href="#246-response-function-calculations-of-several-second-derivatives-of-the">**2. Response-function calculations of several second derivatives of the</a></li>
+        <li class="main "><a href="#346-anaddb-calculation-of-atom-relaxation-effects">3. anaddb calculation of atom-relaxation effects.</a></li>
+        <li class="main "><a href="#446-finite-difference-calculation-of-elastic-and-piezoelectric">**4. Finite-difference calculation of elastic and piezoelectric</a></li>
+        <li class="main "><a href="#546-alternative-response-function-calculation-of-some-piezoelectric">**5. Alternative response-function calculation of some piezoelectric</a></li>
+        <li class="main "><a href="#646-response-function-calculation-of-the-elastic-constants-of-al">**6. Response-function calculation of the elastic constants of Al</a></li>
+        <li class="main "><a href="#comment-on-symmetry">Comment on symmetry</a></li>
     </ul>
-  </div>
-</nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    abinit
-  </label>
-  
-    <div class="md-nav__source">
-      
+</div></div>
+                <div class="col-md-9" role="main">
 
+<!-- Return to Top -->
 
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
-    
-    <label class="md-nav__link" for="nav-1">
-      Quick Start
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../installation/" title="Installation" class="md-nav__link">
-      Installation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
-    
-    <label class="md-nav__link" for="nav-1-3">
-      Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
-        Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/crystal/" title="Crystalline Structure" class="md-nav__link">
-      Crystalline Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/kpoints/" title="K-points" class="md-nav__link">
-      K-points
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      User Guide
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        User Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
-      Abinit
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
-      Mrgddb
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
-      Optic
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Input Variables
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Input Variables
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbas/" title="Basic" class="md-nav__link">
-      Basic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardev/" title="Developers" class="md-nav__link">
-      Developers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vareph/" title="Electron-Phonon" class="md-nav__link">
-      Electron-Phonon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varff/" title="Varff" class="md-nav__link">
-      Varff
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varfil/" title="File-handling" class="md-nav__link">
-      File-handling
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargeo/" title="Geometry" class="md-nav__link">
-      Geometry
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargs/" title="Ground-State" class="md-nav__link">
-      Ground-State
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargw/" title="GW" class="md-nav__link">
-      GW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varint/" title="Internal" class="md-nav__link">
-      Internal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpar/" title="Parallelism" class="md-nav__link">
-      Parallelism
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpaw/" title="PAW" class="md-nav__link">
-      PAW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrf/" title="RF" class="md-nav__link">
-      RF
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrlx/" title="Relaxation" class="md-nav__link">
-      Relaxation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varvdw/" title="VdW" class="md-nav__link">
-      VdW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varw90/" title="Wannier90" class="md-nav__link">
-      Wannier90
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../welcome/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
-    
-    <label class="md-nav__link" for="nav-4-2">
-      Base Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
-        Base Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base1/" title="Base1" class="md-nav__link">
-      Base1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base2/" title="Base2" class="md-nav__link">
-      Base2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base3/" title="Base3" class="md-nav__link">
-      Base3
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base4/" title="Base4" class="md-nav__link">
-      Base4
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
-    
-    <label class="md-nav__link" for="nav-4-3">
-      DFPT
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        DFPT
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf1/" title="RF1" class="md-nav__link">
-      RF1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf2/" title="RF2" class="md-nav__link">
-      RF2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Elastic
-      </label>
-    
-    <a href="./" title="Elastic" class="md-nav__link md-nav__link--active">
-      Elastic
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-the-ground-state-geometry-of-hypothetical-wurtzite-alas" title="1. The ground-state geometry of (hypothetical) wurtzite AlAs." class="md-nav__link">
-    1. The ground-state geometry of (hypothetical) wurtzite AlAs.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-response-function-calculations-of-several-second-derivatives-of-the" title="**2. Response-function calculations of several second derivatives of the" class="md-nav__link">
-    **2. Response-function calculations of several second derivatives of the
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-anaddb-calculation-of-atom-relaxation-effects" title="3. anaddb calculation of atom-relaxation effects." class="md-nav__link">
-    3. anaddb calculation of atom-relaxation effects.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-finite-difference-calculation-of-elastic-and-piezoelectric" title="**4. Finite-difference calculation of elastic and piezoelectric" class="md-nav__link">
-    **4. Finite-difference calculation of elastic and piezoelectric
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-alternative-response-function-calculation-of-some-piezoelectric" title="**5. Alternative response-function calculation of some piezoelectric" class="md-nav__link">
-    **5. Alternative response-function calculation of some piezoelectric
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-response-function-calculation-of-the-elastic-constants-of-al" title="**6. Response-function calculation of the elastic constants of Al" class="md-nav__link">
-    **6. Response-function calculation of the elastic constants of Al
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comment-on-symmetry" title="Comment on symmetry" class="md-nav__link">
-    Comment on symmetry
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../dmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
-    
-    <label class="md-nav__link" for="nav-4-5">
-      Many-Body
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
-        Many-Body
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw1/" title="GW1" class="md-nav__link">
-      GW1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw2/" title="GW2" class="md-nav__link">
-      GW2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
-    
-    <label class="md-nav__link" for="nav-4-6">
-      Parallelism
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
-        Parallelism
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../basepar/" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
-      Many-Body
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Theory
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Theory
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
-      Additional Material
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
-      Bibliography
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/license/" title="License" class="md-nav__link">
-      License
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-the-ground-state-geometry-of-hypothetical-wurtzite-alas" title="1. The ground-state geometry of (hypothetical) wurtzite AlAs." class="md-nav__link">
-    1. The ground-state geometry of (hypothetical) wurtzite AlAs.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-response-function-calculations-of-several-second-derivatives-of-the" title="**2. Response-function calculations of several second derivatives of the" class="md-nav__link">
-    **2. Response-function calculations of several second derivatives of the
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-anaddb-calculation-of-atom-relaxation-effects" title="3. anaddb calculation of atom-relaxation effects." class="md-nav__link">
-    3. anaddb calculation of atom-relaxation effects.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-finite-difference-calculation-of-elastic-and-piezoelectric" title="**4. Finite-difference calculation of elastic and piezoelectric" class="md-nav__link">
-    **4. Finite-difference calculation of elastic and piezoelectric
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-alternative-response-function-calculation-of-some-piezoelectric" title="**5. Alternative response-function calculation of some piezoelectric" class="md-nav__link">
-    **5. Alternative response-function calculation of some piezoelectric
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-response-function-calculation-of-the-elastic-constants-of-al" title="**6. Response-function calculation of the elastic constants of Al" class="md-nav__link">
-    **6. Response-function calculation of the elastic constants of Al
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comment-on-symmetry" title="Comment on symmetry" class="md-nav__link">
-    Comment on symmetry
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/elastic.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Elastic</h1>
-                
-                <p>This lesson shows how to calculate physical properties related to strain, for
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+This lesson shows how to calculate physical properties related to strain, for
 an insulator and a metal :</p>
 <ul>
 <li>the rigid-atom elastic tensor </li>
@@ -1389,7 +735,7 @@ and to use relevant parts of the associated codes Mrgddb and Anaddb.</p>
 <hr />
 <h3 id="146-the-ground-state-geometry-of-hypothetical-wurtzite-alas"><strong>1. The ground-state geometry of (hypothetical) wurtzite AlAs.</strong><a class="headerlink" href="#146-the-ground-state-geometry-of-hypothetical-wurtzite-alas" title="Permanent link">&para;</a></h3>
 <p>_Before beginning, you might consider working in a different subdirectory as
-for the other lessons. Why not create &ldquo;Work_elast&rdquo; in
+for the other lessons. Why not create "Work_elast" in
 ~abinit/tests/tutorespfn/Input ? _  </p>
 <p>You should copy the files ~abinit/tests/tutorespfn/Input/telast_1.files and
 telast_1.in into Work_elast. You may wish to start the calculation (less than
@@ -1407,7 +753,7 @@ new features here, and you should look at the following new input variables
 which will be discussed below:  </p>
 <ul>
 <li><a href="../../../input_variables/generated_files/varrlx.html#getxred"> getxred</a></li>
-<li><a class="wikilink" href="../../input_variables/varrlx/#iatfix">iatfix</a> </li>
+<li><a class="wikilink" href="../../input_variables/rlx/#iatfix">iatfix</a> </li>
 <li><a href="../../../input_variables/generated_files/varrlx.html#natfix"> natfix</a></li>
 <li><a href="../../../input_variables/generated_files/varrlx.html#strfact"> strfact</a>   </li>
 </ul>
@@ -1468,66 +814,58 @@ related by symmetry) by introducing <a href="../../../input_variables/generated_
 natfix</a> and <a href="../../../input_variables/generated_files/varrlx.html#iatfix">
 iatfix</a> to constrain
 the structural optimization. This is really just for cosmetic purposes, since
-letting them all slide an arbitrary amount (as they otherwise would) won&rsquo;t
-change any results. However, you probably wouldn&rsquo;t want to publish the results
+letting them all slide an arbitrary amount (as they otherwise would) won't
+change any results. However, you probably wouldn't want to publish the results
 that way, so we may as well develop good habits.  </p>
 <p>Now we shall examine the results of the structural optimization run. As
 always, we should first examine the log file to make sure the run has
 terminated cleanly. There are a number of warnings, but none of them are
 apparently serious. Next, let us edit the output file, telast_1.out. The first
 thing to look for is to see whether Abinit recognized the symmetry of the
-system. In setting up a new data file, it&rsquo;s easy to make mistakes, so this is
+system. In setting up a new data file, it's easy to make mistakes, so this is
 a valuable check. We see</p>
-<div class="codehilite"><pre><span></span>DATASET    1 : space group P6_3 m c (#186); Bravais hP (primitive hexag.)
-</pre></div>
-
-
+<pre><code>DATASET    1 : space group P6_3 m c (#186); Bravais hP (primitive hexag.)
+</code></pre>
 <p>which is correct. Next, we confirm that the structural optimization converged.
 The following lines from dataset 1 and dataset2 tell us that things are OK:</p>
-<div class="codehilite"><pre><span></span>At Broyd/MD step   4, gradients are converged :
+<pre><code>At Broyd/MD step   4, gradients are converged :
  max grad (force/stress) = 1.0670E-08 &lt; tolmxf= 1.0000E-06 ha/bohr (free atoms)
 
 At Broyd/MD step  11, gradients are converged :
  max grad (force/stress) = 7.8147E-08 &lt; tolmxf= 1.0000E-06 ha/bohr (free atoms)
-</pre></div>
-
-
+</code></pre>
 <p>We can also confirm that the stresses are relaxed:</p>
-<div class="codehilite"><pre><span></span>Cartesian components of stress tensor (hartree/bohr^3)
+<pre><code>Cartesian components of stress tensor (hartree/bohr^3)
  sigma(1 1)= -3.76811543E-10  sigma(3 2)=  0.00000000E+00
  sigma(2 2)= -3.76811542E-10  sigma(3 1)=  0.00000000E+00
  sigma(3 3)=  7.81471561E-10  sigma(2 1)=  0.00000000E+00
-</pre></div>
-
-
+</code></pre>
 <p>Now would be a good time to copy telast_2.in and telast_2.files into your
 working directory, since we will use the present output to start the next run.
 Locate the optimized lattice parameters and reduced atomic coordinates near
 the end of telast_1.out:</p>
-<div class="codehilite"><pre><span></span>     acell2   7.5389647789E+00  7.5389647789E+00  1.2277795511E+01 Bohr
+<pre><code>     acell2   7.5389647789E+00  7.5389647789E+00  1.2277795511E+01 Bohr
 
       xred2   3.3333333333E-01  6.6666666667E-01  0.0000000000E+00
               6.6666666667E-01  3.3333333333E-01  5.0000000000E-01
               3.3333333333E-01  6.6666666667E-01  3.7608587611E-01
               6.6666666667E-01  3.3333333333E-01  8.7608587611E-01
-</pre></div>
-
-
+</code></pre>
 <p>With your editor, copy and paste these into telast_2.in at the indicated
-places in the &ldquo;Common input data&rdquo; area. Be sure to change acell2 and xred2 to
+places in the "Common input data" area. Be sure to change acell2 and xred2 to
 acell and xred since these common values will apply to all datasets in the
 next set of calculations.  </p>
 <hr />
 <h3 id="246-response-function-calculations-of-several-second-derivatives-of-the">**2. Response-function calculations of several second derivatives of the<a class="headerlink" href="#246-response-function-calculations-of-several-second-derivatives-of-the" title="Permanent link">&para;</a></h3>
 <p>total energy.**</p>
-<p>We will now compute second derivatives of the total energy (2DTE&rsquo;s) with
+<p>We will now compute second derivatives of the total energy (2DTE's) with
 respect to all the perturbations we need to compute elastic and piezoelectric
 properties. You may want to review <a href="../../../users/generated_files/help_respfn.html#0"> sections 0 and the first paragraph of
 section 1</a> of the respfn_help
 file which you studied in lesson RF1. We will introduce only one new input
 variable for the strain perturbation,</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varrf/#rfstrs">rfstrs</a>   </li>
+<li><a class="wikilink" href="../../input_variables/dfpt/#rfstrs">rfstrs</a>   </li>
 </ul>
 <p>The treatment of strain as a perturbation has some subtle aspects. It would be
 a good idea to read  Metric tensor formulation of strain in density-functional
@@ -1540,7 +878,7 @@ with strain, so you should review the variables</p>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfphon"> rfphon</a></li>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfatpol"> rfatpol</a></li>
 <li><a href="../../../input_variables/generated_files/varrf.html#rfdir"> rfdir</a></li>
-<li><a class="wikilink" href="../../input_variables/varrf/#rfelfd">rfelfd</a>   </li>
+<li><a class="wikilink" href="../../input_variables/dfpt/#rfelfd">rfelfd</a>   </li>
 </ul>
 <p>It would be a good idea to copy telast_2.files into Work_elast and start the
 calculation while you read (less than 2 minutes on a standard 3GHz machine).
@@ -1579,7 +917,7 @@ rfdir</a> = 1 1 1. Since
 there is no potential self-consistency in the ddk calculations, we must
 specify convergence in terms of the wave function residuals using <a href="../../../input_variables/generated_files/varbas.html#tolwfr">
 tolwfr</a> .  </p>
-<p>Finally, dataset 3 performs the actual calculations of the needed 2DTE&rsquo;s for
+<p>Finally, dataset 3 performs the actual calculations of the needed 2DTE's for
 the elastic and piezoelectric tensors. Setting <a href="../../../input_variables/generated_files/varrf.html#rfphon">
 rfphon</a> = 1 turns on
 the atomic displacement perturbation, which we need for all atoms (<a href="../../../input_variables/generated_files/varrf.html#rfatpol">
@@ -1587,20 +925,20 @@ rfatpol</a> = 1 4) and
 all directions (<a href="../../../input_variables/generated_files/varrf.html#rfdir">
 rfdir</a> = 1 1 1).
 Abinit will calculate first-order wave functions for each atom and direction
-in turn, and use those to calculate 2DTE&rsquo;s with respect to all pairs of atomic
+in turn, and use those to calculate 2DTE's with respect to all pairs of atomic
 displacements and with respect to one atomic displacement and one component of
 electric field. These quantities, the interatomic force constants (at gamma)
 and the Born effective charges will be used later to compute the atomic
 relaxation contribution to the elastic and piezoelectric tensor.</p>
 <p>First-order wave functions for the strain perturbation are computed next.
-Setting <a class="wikilink" href="../../input_variables/varrf/#rfstrs">rfstrs</a> = 3 specifies that we want both uniaxial and shear strains
+Setting <a class="wikilink" href="../../input_variables/dfpt/#rfstrs">rfstrs</a> = 3 specifies that we want both uniaxial and shear strains
 to be treated, and <a href="../../../input_variables/generated_files/varrf.html#rfdir">
 rfdir</a> = 1 1 1 cycles
 through strains xx, yy, and zz for uniaxial and yz, xz, and xy for shear. We
 note that while other perturbations in Abinit are treated in reduced
 coordinates, strain is better dealt with in Cartesian coordinates for reasons
 discussed in the reference cited above. These wave functions are used to
-compute three types of 2DTE&rsquo;s. Derivatives with respect to two strain
+compute three types of 2DTE's. Derivatives with respect to two strain
 components give us the so-called rigid-ion elastic tensor. Derivatives with
 respect to one strain and one electric field component give us the rigid-ion
 piezoelectric tensor. Finally, derivatives with respect to one strain and one
@@ -1628,18 +966,18 @@ undertake in the next section. Finally, the various wave function binary files
 are primarily of use for subsequent calculations, where they could cut the
 number of needed iterations in, for example, convergence testing. We take note
 of a few conventions in the file names. The root output file name telast_2o is
-from the 4th line of the &ldquo;files&rdquo; file. The dataset producing the file is next.
-Finally, the first-order wave function 1WF files have a final &ldquo;pertcase&rdquo;
+from the 4th line of the "files" file. The dataset producing the file is next.
+Finally, the first-order wave function 1WF files have a final "pertcase"
 number described in <a href="../../../users/generated_files/help_respfn.html#1"> section
 1</a> of the respfn_help file.
 While telast_2.in specifies all atomic displacements, only the symmetry-
-inequivalent perturbations are treated, so the &ldquo;pertcase&rdquo; list is incomplete.
+inequivalent perturbations are treated, so the "pertcase" list is incomplete.
 All cases specified in the input data are treated for the strain perturbation.  </p>
 <p>First, take a look at the end of the telast_2.log file to make sure the run
-has completed without error. You might wish to take a look at the WARNING&rsquo;s,
+has completed without error. You might wish to take a look at the WARNING's,
 but they all appear to be harmless. Next, edit your telast_2.out file.
 Searching backwards for ETOT you will find</p>
-<div class="codehilite"><pre><span></span>     iter   2DEtotal(Ha)       deltaE(Ha) residm    vres2
+<pre><code>     iter   2DEtotal(Ha)       deltaE(Ha) residm    vres2
 -ETOT  1   2.3955208361366     -6.519E+00 6.313E-01 4.126E+02
  ETOT  2   1.3040286462220     -1.091E+00 4.926E-04 4.735E+00
  ETOT  3   1.2898966738702     -1.413E-02 1.857E-05 3.504E-01
@@ -1651,21 +989,19 @@ Searching backwards for ETOT you will find</p>
  ETOT  9   1.2891780791827     -2.006E-12 9.086E-16 4.128E-12
 
  At SCF step    9       vres2   =  4.13E-12 &lt; tolvrs=  1.00E-10 =&gt;converged.
-</pre></div>
-
-
+</code></pre>
 <p>Abinit is solving a set of Schroedinger-like equations for the first-order
 wave functions, and these functions minimize a variational expression for the
 2DTE.  (Technically, they are called self-consistent Sternheimer equations.)
 The  energy  convergence looks similar to that of GS calculations.  The fact
 that vres2, the residual of the self-consistent first-order potential, has
 reached <a href="../../../input_variables/generated_files/varbas.html#tolvrs"> tolvrs</a>
-well within <a class="wikilink" href="../../input_variables/varbas/#nstep">nstep</a> (40) iterations indicates that the 2DTE calculation for
+well within <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a> (40) iterations indicates that the 2DTE calculation for
 this perturbation (xy strain) has converged . It would pay to examine a few
 more cases for different perturbations (unless you have looked through all the
 warnings in the log).</p>
 <p>Another convergence item to examine in your .out file is</p>
-<div class="codehilite"><pre><span></span> Seventeen components of 2nd-order total energy (hartree) are
+<pre><code> Seventeen components of 2nd-order total energy (hartree) are
  1,2,3: 0th-order hamiltonian combined with 1st-order wavefunctions
      kin0=   9.10477366E+00 eigvalue=   3.11026184E-01  local=  -3.66858410E+00
  4,5,6,7: 1st-order hamiltonian combined with 1st and 0th-order wfs
@@ -1685,11 +1021,9 @@ warnings in the log).</p>
  2DEtotal=    0.1289178079E+01 Ha. Also 2DEtotal=    0.350803195765E+02 eV
     (2DErelax=   -7.6252195073E+00 Ha. 2DEnonrelax=    8.9143975865E+00 Ha)
     (  non-var. 2DEtotal :    1.2891781360E+00 Ha)
-</pre></div>
-
-
+</code></pre>
 <p>This detailed breakdown of the contributions to 2DTE is probably of limited
-interest, but you should compare &ldquo;2DEtotal&rdquo; and &ldquo;non-var. 2DEtotal&rdquo; from the
+interest, but you should compare "2DEtotal" and "non-var. 2DEtotal" from the
 last three lines. While the first-order wave function for the present
 perturbation minimizes a variational  expression for the second derivative
 with respect to this perturbation as we just saw, the various 2DTE given as
@@ -1706,9 +1040,9 @@ accuracy of the latter and perhaps indicate the need for tighter convergence
 tolerances for both the GS and RF wave functions.  This is discussed in  X.
 Gonze and C. Lee, Phys. Rev. B 55, 10355 (1997) , Sec. II.  For an atomic-
 displacement perturbation, the corresponding breakdown of the 2DTE is headed
-&ldquo;Thirteen components.&rdquo;</p>
-<p>Now let us take a look at the results we want, the various 2DTE&rsquo;s. They begin</p>
-<div class="codehilite"><pre><span></span> ==&gt; Compute Derivative Database &lt;==
+"Thirteen components."</p>
+<p>Now let us take a look at the results we want, the various 2DTE's. They begin</p>
+<pre><code> ==&gt; Compute Derivative Database &lt;==
 
   2nd-order matrix (non-cartesian coordinates, masses not included,
    asr not included )
@@ -1721,17 +1055,15 @@ displacement perturbation, the corresponding breakdown of the 2DTE is headed
    1    1   2    1        -2.7254334227         0.0000000000
    1    1   3    1         0.0000000000         0.0000000000
             .....
-</pre></div>
-
-
-<p>These are the &ldquo;raw&rdquo; 2DTE&rsquo;s, in reduced coordinates for atom-displacement and
+</code></pre>
+<p>These are the "raw" 2DTE's, in reduced coordinates for atom-displacement and
 electric-field perturbations, but Cartesian coordinates for strain
 perturbations. This same results with the same organization appear in the file
 telast_2_DS3_DDB which will be used later as input for automated analysis and
 converted to more useful notation and units by anaddb. A breakout of various
-types of 2DTE&rsquo;s follows (all converted to Cartesian coordinates and in atomic
+types of 2DTE's follows (all converted to Cartesian coordinates and in atomic
 units):  </p>
-<div class="codehilite"><pre><span></span>  Dynamical matrix, in cartesian coordinates,
+<pre><code>  Dynamical matrix, in cartesian coordinates,
     if specified in the inputs, asr has been imposed
      j1       j2                   matrix element
   dir pert dir pert          real part        imaginary part
@@ -1740,14 +1072,12 @@ units):  </p>
    1    1   2    1         0.0000000000         0.0000000000
    1    1   3    1         0.0000000000         0.0000000000
             .....
-</pre></div>
-
-
+</code></pre>
 <p>This contains the interatomic force constant data that will be used later to
-include atomic relaxation effects.  &ldquo;asr&rdquo; refers to the acoustic sum rule,
+include atomic relaxation effects.  "asr" refers to the acoustic sum rule,
 which basically is a way of making sure that forces sum to zero when an atom
 is displaced.</p>
-<div class="codehilite"><pre><span></span>  Effective charges, in cartesian coordinates,
+<pre><code>  Effective charges, in cartesian coordinates,
     (from phonon response)
     if specified in the inputs, asr has been imposed
      j1       j2                   matrix element
@@ -1757,12 +1087,10 @@ is displaced.</p>
    2    6   1    1         0.0000000000         0.0000000000
    3    6   1    1         0.0000000000         0.0000000000
             .....
-</pre></div>
-
-
+</code></pre>
 <p>The Born effective charges will be used to find the atomic relaxation
 contributions of the piezoelectric tensor.</p>
-<div class="codehilite"><pre><span></span>  Rigid-atom elastic tensor , in cartesian coordinates,
+<pre><code>  Rigid-atom elastic tensor , in cartesian coordinates,
      j1       j2                   matrix element
   dir pert dir pert          real part        imaginary part
 
@@ -1770,13 +1098,11 @@ contributions of the piezoelectric tensor.</p>
    1    7   2    7         0.0013753710         0.0000000000
    1    7   3    7         0.0007168444         0.0000000000
             .....
-</pre></div>
-
-
+</code></pre>
 <p>The rigid-atom elastic tensor is the 2DTE with respect to a pair of strains.
-We recall that &ldquo;pert&rdquo; = natom+3 and natom+4 for unaxial and shear strains,
+We recall that "pert" = natom+3 and natom+4 for unaxial and shear strains,
 respectively.</p>
-<div class="codehilite"><pre><span></span>  Internal strain coupling parameters, in cartesian coordinates,
+<pre><code>  Internal strain coupling parameters, in cartesian coordinates,
     zero average net force deriv. has been imposed
      j1       j2                   matrix element
   dir pert dir pert          real part        imaginary part
@@ -1785,16 +1111,14 @@ respectively.</p>
    1    1   2    7        -0.1249319273         0.0000000000
    1    1   3    7         0.0000000000         0.0000000000
             .....
-</pre></div>
-
-
-<p>These 2DTE&rsquo;s with respect to one strain and one atomic displacement are needed
+</code></pre>
+<p>These 2DTE's with respect to one strain and one atomic displacement are needed
 for atomic relaxation corrections to both the elastic tensor and piezoelectric
 tensor. While this set of parameters is of limited direct interest, it should
 be examined in cases when you think that high symmetry may eliminate the need
 for these corrections. You are probably wrong, and any non-zero term indicates
 a correction.</p>
-<div class="codehilite"><pre><span></span>  Rigid-atom proper piezoelectric tensor, in cartesian coordinates,
+<pre><code>  Rigid-atom proper piezoelectric tensor, in cartesian coordinates,
      j1       j2                   matrix element
   dir pert dir pert          real part        imaginary part
 
@@ -1803,9 +1127,7 @@ a correction.</p>
    1    1   2    7        -0.1249319211         0.0000000000
 
    1    1   3    7         0.0000000000         0.0000000000
-</pre></div>
-
-
+</code></pre>
 <p>Finally, we have the piezoelectric tensor, the 2DTE with respect to one strain
 and one uniform electric field component.  (Yes, there are non-zero elements.)  </p>
 <hr />
@@ -1856,13 +1178,13 @@ the same way as you are now used to for abinit:  </p>
 <p>This calculation should only take a few seconds. You should edit the log file,
 go to the end, and make sure the calculation terminated without error. Next,
 examine telast_3.out. After some header information, we come to tables giving
-the &ldquo;force-response&rdquo; and &ldquo;displacement-response&rdquo; internal strain tensors.
+the "force-response" and "displacement-response" internal strain tensors.
 These represent, respectively, the force on each atom and the displacement of
 each atom in response to a unit strain of the specified type. These numbers
 are of limited interest to us, but represent important intermediate quantities
 in the treatment of atomic relaxation (see the X. Wu paper cited above).  </p>
 <p>Next, we come to the elastic tensor output:  </p>
-<div class="codehilite"><pre><span></span> Elastic Tensor(clamped ion)(unit:10^2GP):
+<pre><code> Elastic Tensor(clamped ion)(unit:10^2GP):
 
    1.6598859   0.4046480   0.2109029   0.0000000   0.0000000   0.0000000
    0.4046480   1.6598859   0.2109029   0.0000000  -0.0000000   0.0000000
@@ -1880,29 +1202,27 @@ in the treatment of atomic relaxation (see the X. Wu paper cited above).  </p>
   -0.0000000   0.0000000   0.0000000   0.3055071  -0.0000000   0.0000000
    0.0000000  -0.0000000  -0.0000000  -0.0000000   0.3055071   0.0000000
   -0.0000000   0.0000000  -0.0000000   0.0000000   0.0000000   0.4040588
-</pre></div>
-
-
+</code></pre>
 <p>While not labeled, the rows and columns 1-6 here represent xx, yy, zz, yz, xz,
 xy strains and stresses in the conventional Voigt notation.<br />
 The clamped-ion results were calculated in the telast_2 RF run, and are simply
-converted to standard GPa units by anaddb (the terms &ldquo;clamped ion,&rdquo; &ldquo;clamped
-atom,&rdquo; and &ldquo;rigid atom&rdquo; used in various places are interchangeable, similarly
-for &ldquo;relaxed.&rdquo;)<br />
-The relaxed-ion result was calculated by anaddb by combining 2DTE&rsquo;s for
+converted to standard GPa units by anaddb (the terms "clamped ion," "clamped
+atom," and "rigid atom" used in various places are interchangeable, similarly
+for "relaxed.")<br />
+The relaxed-ion result was calculated by anaddb by combining 2DTE's for
 internal strain and interatomic force constants which are stored in the input
 DDB file. Comparing the clamped and relaxed results, we see that all the
 diagonal elastic constants have decreased in value.<br />
 This is plausible, since allowing the internal degrees of freedom to relax
 should make a material less stiff. These tensors should be symmetric, and
 certain tensor elements should be zero or identical by symmetry.<br />
-It&rsquo;s a good idea to check these properties against a standard text such as  J.
+It's a good idea to check these properties against a standard text such as  J.
 F. Nye, Physical Properties of Crystals (Oxford U. P., Oxford 1985).
 Departures from expected symmetries (there are a few in the last decimal place
 here) are due to either convergence errors or, if large, incorrectly specified
 geometry (however, see the final comments on symmetry  below).  </p>
 <p>Next in telast_3.out we find the piezoelectric tensor results:  </p>
-<div class="codehilite"><pre><span></span> Proper piezoelectric constants(clamped ion)(unit:c/m^2)
+<pre><code> Proper piezoelectric constants(clamped ion)(unit:c/m^2)
 
       0.00000000      0.00000000      0.38490079
       0.00000000      0.00000000      0.38490075
@@ -1918,13 +1238,11 @@ geometry (however, see the final comments on symmetry  below).  </p>
      -0.00000000      0.00000000      0.06462779
      -0.00000000     -0.04828847     -0.00000000
      -0.04828832     -0.00000000      0.00000000
-</pre></div>
-
-
+</code></pre>
 <p>The 3 columns here represent x, y, and z electric polarization, and the 6 rows
 the Voigt strains. The clamped-ion result was calculated in the telast_2 RF
 run, and is simply scaled to conventional units by anaddb. The ion relaxation
-contributions are based on 2DTE&rsquo;s for internal strain, interatomic force
+contributions are based on 2DTE's for internal strain, interatomic force
 constants, and Born effective charges, and typically constitute much larger
 corrections to the piezoelectric tensor than to the elastic tensor. Once
 again, symmetries should be checked. (The slight discrepancies seen here can
@@ -1950,7 +1268,7 @@ telast_1.out have already been included. Datasets 1 and 3 do the self-
 consistent convergence of the GS wave functions for the strained lattices and
 compute the stress. Datasets 2 and 4 introduce a new variable.  </p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/varff/#berryopt">berryopt</a> </li>
+<li><a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> </li>
 </ul>
 <p>Electric polarization in solids is a subtle topic which has only recently been
 rigorously resolved. It is now understood to be a bulk property, and to be
@@ -1964,7 +1282,7 @@ ddk wave functions used in RF calculations in  2 and introduced in <a href="../l
 RF1, section 5</a> . We will use <a href="../../../input_variables/generated_files/varff.html#berryopt">
 berryopt</a> = -1,
 which utilizes an improved coding of the calculation, and must specify
-<a class="wikilink" href="../../input_variables/varrf/#rfdir">rfdir</a> = 1 1 1 so that the Cartesian components of the polarization are
+<a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a> = 1 1 1 so that the Cartesian components of the polarization are
 computed.  </p>
 <p>Now, run the telast_4 calculation, which should only take a minute or two, and
 edit telast_4.out. To calculate the elastic constants, we need to find the
@@ -1973,24 +1291,20 @@ have stress results, but that there are slight differences between those from,
 for example dataset 1 and dataset 2, which should be identical. Despite our
 tight limit, this is still a convergence issue. Look at the following
 convergence results,  </p>
-<div class="codehilite"><pre><span></span>Dataset 1:
+<pre><code>Dataset 1:
  At SCF step   13       vres2   =  6.24E-21 &lt; tolvrs=  1.00E-18 =&gt;converged.
 
 Dataset 2:
  At SCF step    1       vres2   =  5.08E-21 &lt; tolvrs=  1.00E-18 =&gt;converged.
-</pre></div>
-
-
+</code></pre>
 <p>Since dataset 2 has better convergence, we will use this and the dataset 4
 results, choosing those in GPa units,</p>
-<div class="codehilite"><pre><span></span>- sigma(1 1)= -2.11918835E-03  sigma(3 2)=  0.00000000E+00
+<pre><code>- sigma(1 1)= -2.11918835E-03  sigma(3 2)=  0.00000000E+00
 - sigma(3 3)= -1.82392050E-02  sigma(2 1)=  0.00000000E+00
 
 - sigma(1 1)=  2.09886408E-03  sigma(3 2)=  0.00000000E+00
 - sigma(3 3)=  1.82778679E-02  sigma(2 1)=  0.00000000E+00
-</pre></div>
-
-
+</code></pre>
 <p>Let us now compute the numerical derivative of  sigma(3 3)and compare to our
 RF result. Recalling that our dimensionless strains were ±0.0001, we find
 182.5853 GPa. This compares very well with the value  182.58575 GPa, the 3,3
@@ -2007,16 +1321,14 @@ derivative comparisons for the relaxed-ion results are extremely challenging
 since they require relaxing atomic forces to exceedingly small limits.</p>
 <p>Now let us examine the electric polarizations found in datasets 2 and 4,
 focusing on the C/m^2 results,</p>
-<div class="codehilite"><pre><span></span>           Polarization    -1.578272218E-11 C/m^2
+<pre><code>           Polarization    -1.578272218E-11 C/m^2
            Polarization     1.578207434E-11 C/m^2
            Polarization    -2.979936062E-01 C/m^2
 
            Polarization    -1.577757536E-11 C/m^2
            Polarization     1.577753205E-11 C/m^2
            Polarization    -2.981427239E-01 C/m^2
-</pre></div>
-
-
+</code></pre>
 <p>While not labeled as such, these are the Cartesian x, y, and z components,
 respectively, and the x and y components are zero within numerical accuracy as
 they must be from symmetry. Numerical differentiation of the z component
@@ -2045,7 +1357,7 @@ noted previously in connection with the calculation of Born effective charges
 by Na Sai, K. M. Rabe, and D. Vanderbilt, Phys. Rev. B 66, 104108 (2002) ,
 Abinit has incorporated the ability to use finite-difference ddk wave
 functions from GS calculations in RF calculations of electric-field-related
-2DTE&rsquo;s. Copy telast_5.in and telast_5.files into Work_elast, and edit
+2DTE's. Copy telast_5.in and telast_5.files into Work_elast, and edit
 telast_5.in.</p>
 <p>You should compare this with our previous RF data, telast_2.in, and note that
 dataset1 and the Common data (after entering relaxed structural results) are
@@ -2061,15 +1373,13 @@ we are only interested in the 3,3 piezoelectric constant. Now compare dataset
 Run the telast_5 calculation, which will only take about a minute with our
 simplifications.</p>
 <p>Now edit telast_5.out, looking for the piezoelectric tensor,</p>
-<div class="codehilite"><pre><span></span>  Rigid-atom proper piezoelectric tensor, in cartesian coordinates,
+<pre><code>  Rigid-atom proper piezoelectric tensor, in cartesian coordinates,
      j1       j2                   matrix element
   dir pert dir pert          real part        imaginary part
 
    3    6   3    7        -0.0130314050         0.0000000000
-</pre></div>
-
-
-<p>We immediately see a problem &ndash; this output, like most of the .out file, is in
+</code></pre>
+<p>We immediately see a problem -- this output, like most of the .out file, is in
 atomic units, while we computed our numerical derivative in conventional C/m^2
 units. While you might think to simply run anaddb to do the conversion as
 before, its present version is not happy with such an incomplete DDB file as
@@ -2083,7 +1393,7 @@ agreement is now excellent!</p>
 <p>The fully RF calculation in 2 in fact will converge much more rapidly with <strong>
 k</strong> sample than the partial-finite-difference method introduced here.  Is it
 worthwhile to have learned how to do this? We believe that is always pays to
-have alternative ways to test results, and besides, this didn&rsquo;t take much
+have alternative ways to test results, and besides, this didn't take much
 time. (Have you found the conversion factor on your own yet?)  </p>
 <hr />
 <h3 id="646-response-function-calculation-of-the-elastic-constants-of-al">**6. Response-function calculation of the elastic constants of Al<a class="headerlink" href="#646-response-function-calculation-of-the-elastic-constants-of-al" title="Permanent link">&para;</a></h3>
@@ -2120,7 +1430,7 @@ telast_1.in.  Inner-loop dataset 2 is a bit of a hack.  We need the density
 for inner-loop dataset 3, and while we could set <a href="../../../input_variables/generated_files/varfil.html#prtden">
 prtden</a> = 1 in
 dataset 1, this would produce a separate density file for every step in the
-structural optimization, and it isn&rsquo;t clear how to automatically pick out the
+structural optimization, and it isn't clear how to automatically pick out the
 last one.  So, dataset 2 picks up the wave functions from dataset 1 (only one
 file of these is produced, for the optimized structure), does one more
 iteration with fixed geometry, and writes a density file.  </p>
@@ -2134,13 +1444,13 @@ energy by more than a few times<a href="../../../input_variables/generated_files
 tsmear</a> , will have
 very little effect on the self-consistent potential, so the <a href="../../../input_variables/generated_files/varbas.html#tolvrs">
 tolvrs</a> test in
-dataset 1 doesn&rsquo;t ensure their convergence.  Using <a href="../../../input_variables/generated_files/varbas.html#tolwfr">
+dataset 1 doesn't ensure their convergence.  Using <a href="../../../input_variables/generated_files/varbas.html#tolwfr">
 tolwfr</a> in inner-
 loop dataset 3 does.  Partially-occupied or unoccupied bands up to <a href="../../../input_variables/generated_files/varbas.html#nband">
 nband</a>   play a
 different role in constructing the first-order wave functions than do the many
 unoccupied bands beyond <a href="../../../input_variables/generated_files/varbas.html#nband">
-nband</a> which aren&rsquo;t
+nband</a> which aren't
 explicitly treated in Abinit, as discussed in  S. de Gironcoli, Phys. Rev. B
 51, 6773 (1995).  By setting <a href="../../../input_variables/generated_files/varbas.html#nband">
 nband</a> exactly equal
@@ -2174,24 +1484,22 @@ nband</a> or decrease <a href="../../../input_variables/generated_files/vargs.ht
 tsmear</a> .  Now, use
 your newly perfected knowledge of the Abinit perturbation indexing conventions
 to scan through telast_6.out and find C 11 , C12 , and C 44 for each of the
-three <strong>k</strong>-sample choices, which will be  under the &rdquo; Rigid-atom elastic
-tensor&rdquo; heading.  Also find the lattice constants for each case, whose
+three <strong>k</strong>-sample choices, which will be  under the " Rigid-atom elastic
+tensor" heading.  Also find the lattice constants for each case, whose
 convergence you studied in lesson 4.  You should be able to cut-and-paste
 these into a table like the following,  </p>
-<div class="codehilite"><pre><span></span>            C_11           C_12           C_44           acell
+<pre><code>            C_11           C_12           C_44           acell
 ngkpt=3*6   0.0037773556   0.0022583541   0.0013453692   7.5710952266
 ngkpt=3*8   0.0042004431   0.0020423388   0.0013076763   7.5693986665
 ngkpt=3*10  0.0042034396   0.0020343437   0.0012956768   7.5694820855
-</pre></div>
-
-
+</code></pre>
 <p>We can immediately see that the lattice constant converges considerably more
 rapidly with <strong>k</strong> sample than the elastic constants.  For <a href="../../../input_variables/generated_files/varbas.html#ngkpt">
 ngkpt</a> =3<em>6, acell is
-converged to 0.02%, while the C&rsquo;s have 5-10% errors.  For <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> =3</em>8, the
-C&rsquo;s are converged to better than 1%, much better for the largest, C11, which
+converged to 0.02%, while the C's have 5-10% errors.  For <a class="wikilink" href="../../input_variables/basic/#ngkpt">ngkpt</a> =3</em>8, the
+C's are converged to better than 1%, much better for the largest, C11, which
 should be acceptable.</p>
-<p>As in lesson 4, the <a class="wikilink" href="../../input_variables/varbas/#ngkpt">ngkpt</a> convergence is controlled by <a href="../../../input_variables/generated_files/vargs.html#tsmear">
+<p>As in lesson 4, the <a class="wikilink" href="../../input_variables/basic/#ngkpt">ngkpt</a> convergence is controlled by <a href="../../../input_variables/generated_files/vargs.html#tsmear">
 tsmear</a> .  The
 smaller the broadening, the denser the <strong>k</strong> sample that is needed to get a
 smooth variation of occupancy, and presumably stress, with strain.  While we
@@ -2201,21 +1509,19 @@ in this lesson, you may wish to do so on your own.  We believe that the value
 <a href="../../../input_variables/generated_files/vargs.html#tsmear"> tsmear</a> = 0.02  in
 telast_6.in gives results within 1% of the fully-converged small-broadening
 limit.</p>
-<p><strong>We find that</strong> <strong><a href="../../../input_variables/generated_files/varbas.html#occopt"> occopt</a> <strong><em>*=3, standard Fermi-Dirac broadening</em></strong>*, gives _ much better_ convergence of the C&rsquo;s than &ldquo;cold smearing.&rdquo;</strong>  Changing <a href="../../../input_variables/generated_files/varbas.html#occopt"> occopt</a> to 4 in telast_6.in, the option used in lesson 4, the C&rsquo;s show no sign of convergence.  At ngkpt=3*16, errors are still ~5%.  The reasons that this supposedly superior smoothing function performs so poorly in this context is a future research topic.  The main thing to be learned is that checking convergence with respect to all relevant parameters is <strong> always</strong> the user&rsquo;s responsibility.  Simple systems that include the main physical features of a complex system of interest will usually suffice for this testing.  Don&rsquo;t get caught publishing a result that another researcher refutes on convergence grounds, and don&rsquo;t blame such a mistake on Abinit!</p>
-<p>Now we make a comparison with experiment.  Converting the C&rsquo;s to standard
+<p><strong>We find that</strong> <strong><a href="../../../input_variables/generated_files/varbas.html#occopt"> occopt</a> <strong><em>*=3, standard Fermi-Dirac broadening</em></strong>*, gives _ much better_ convergence of the C's than "cold smearing."</strong>  Changing <a href="../../../input_variables/generated_files/varbas.html#occopt"> occopt</a> to 4 in telast_6.in, the option used in lesson 4, the C's show no sign of convergence.  At ngkpt=3*16, errors are still ~5%.  The reasons that this supposedly superior smoothing function performs so poorly in this context is a future research topic.  The main thing to be learned is that checking convergence with respect to all relevant parameters is <strong> always</strong> the user's responsibility.  Simple systems that include the main physical features of a complex system of interest will usually suffice for this testing.  Don't get caught publishing a result that another researcher refutes on convergence grounds, and don't blame such a mistake on Abinit!</p>
+<p>Now we make a comparison with experiment.  Converting the C's to standard
 units (Ha/Bohr^3 = 2.94210119E+04 GPa) and using zero-temperature extrapolated
 experimental results from P. M. Sutton, Phys. Rev. 91, 816 (1953), we find  </p>
-<div class="codehilite"><pre><span></span>                     C_11(GPa)  C_12(GPa)  C_44(GPa)
+<pre><code>                     C_11(GPa)  C_12(GPa)  C_44(GPa)
      Calculated        123.7      59.9       38.1
      Experiment (T=0)  123.0      70.8       30.9
-</pre></div>
-
-
-<p>Is this good agreement?  There isn&rsquo;t much literature on DFT calculations of
+</code></pre>
+<p>Is this good agreement?  There isn't much literature on DFT calculations of
 full sets of elastic constants.  Many calculations of the bulk modulus
 (K=(C11+2C 12 )/3 in the cubic case) typically are within 10% of experiment
 for the LDA.  Running telast_6 with ixc=11, the Perdew-Burke-Enzerhof GGA,
-increases the calculated C&rsquo;s by 1-2%, and wouldn&rsquo;t be expected to make a large
+increases the calculated C's by 1-2%, and wouldn't be expected to make a large
 difference for a nearly-free-electron metal.  </p>
 <h3 id="comment-on-symmetry"><strong>Comment on symmetry</strong><a class="headerlink" href="#comment-on-symmetry" title="Permanent link">&para;</a></h3>
 <p>It is important to bear in mind that the way a tensor like the elastic tensor
@@ -2223,38 +1529,29 @@ appears is a function of the frame used. Thus for the aluminum fcc case
 considered above, the nonzero elements are <em>C11</em>, <em>C12</em>, and <em>C44</em>, _ provided
 that the crystal axes are aligned with the laboratory frame. _ For an
 arbitrary alignment of the crystal axes, many more <em>Cij</em> elements will be non-
-zero, and this can be confusing. It&rsquo;s easy to see why this happens if you
+zero, and this can be confusing. It's easy to see why this happens if you
 imagine actually measuring the elastic tensor elements. If you start with the
 conventional cubic cell, and apply pressure to one face, you can measure
-<em>C11</em>. But if you turn the cell to some random angle, you&rsquo;ll measure a
+<em>C11</em>. But if you turn the cell to some random angle, you'll measure a
 response that is a mixture of <em>C11</em> and <em>C12</em>. Within ABINIT, if the aluminum
-fcc cell is described using <a class="wikilink" href="../../input_variables/varbas/#angdeg">angdeg</a> and
+fcc cell is described using <a class="wikilink" href="../../input_variables/basic/#angdeg">angdeg</a> and
 <a href="../../../input_variables/generated_files/varbas.html#angdeg">acell</a>, then an
 axis of the primitive cell will be aligned along the laboratory <em>z</em> axis but
 this will not lead to a (conventional) cell alignment with the laboratory
 frame. The resulting elastic tensor will be correct but will appear to be more
 complicated than in the illustration above. It can be rotated back to a simple
 frame by hand (bearing in mind that all four indices of the fourth-rank
-elastic tensor have to be rotated!) but it&rsquo;s easier to start with a more
+elastic tensor have to be rotated!) but it's easier to start with a more
 conventional alignment of the unit cell. If you use a standard text like
 Bradley and Cracknell, The Mathematical Theory of Symmetry in Solids, Oxford
 you can find the standard primitive cell descriptions for the Bravais lattice
 types and these are aligned as much as possible with a standard laboratory
 frame.</p>
 <hr />
-<p>This ABINIT lesson is now finished&hellip;</p>
-                
-                  
-                
-              
-              
-                
-              
-            </article>
-          </div>
+<p>This ABINIT lesson is now finished...</p></div>
         </div>
-      </main>
-      
+
+        <footer class="col-md-12">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -2264,22 +1561,28 @@ frame.</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-    </div>
-    
-      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
-      
-      
-      <script>app.initialize({url:{base:"../.."}})</script>
-      
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      
         <script src="../../extra_javascript/abidocs.js"></script>
-      
-    
-    
-      
-    
-  </body>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
 </html>

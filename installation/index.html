@@ -1,56 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-        <meta name="description" content="Abinit documentation">
-      
-      
-        <link rel="canonical" href="http://www.abinit.org/installation/">
-      
-      
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <meta name="author" content="The Abinit group">
-      
-      
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
-    
-    
-      
+        <link rel="canonical" href="http://www.abinit.org/installation/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <title>Installation - abinit</title>
-      
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/codehilite.css" rel="stylesheet">
+        <link href="../css/extra.css" rel="stylesheet">
     
-    
-    
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
     <!-- <script src="../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    -->
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
     <!-- Optional theme
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript
     -->
+    <!-- Latest compiled and minified JavaScript
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
 
     <!-- MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers
@@ -86,1398 +89,636 @@
     </script>
     -->
 
+ 
+    </head>
 
-    
-      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-      <link rel="stylesheet" href="../css/codehilite.css">
-    
-      <link rel="stylesheet" href="../css/extra.css">
-    
-    
-  </head>
-  
-  
-  
-  
     <body>
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
-          
-            
-              
-                <span class="md-header-nav__parent">
-                  Quick Start
-                </span>
-              
-            
-            Installation
-          
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-          
-<div class="md-search" data-md-component="search">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">abinit</a>
         </div>
-      </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Introduction</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Installation</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../user-guide/help_what_ABINIT_does/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
 
-
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-      
-        
-
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href=".." title="Quick Start" class="md-tabs__link md-tabs__link--active">
-          Quick Start
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
-          User Guide
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    
-    
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
-          Input Variables
-        </a>
-      
-    </li>
-  
-
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../tutorials/welcome/" title="Tutorials" class="md-tabs__link">
-          Tutorials
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../theory/theory_mbt/" title="Theory" class="md-tabs__link">
-          Theory
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../about/release-notes/" title="About" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#installation-notes-for-abinit-v84">Installation notes for ABINIT v8.4</a></li>
+            <li><a href="#046-short-how-to">0. Short how to ...</a></li>
+            <li><a href="#146-how-to-get-a-version-of-abinit">1. How to get a version of ABINIT?</a></li>
+            <li><a href="#246-how-to-make-the-executables-how-to-compile-the-executables">2. How to make the executables? (=How to compile the executables?)</a></li>
+            <li><a href="#346-how-to-make-the-internal-tests">3. How to make the internal tests?</a></li>
+            <li><a href="#546-how-to-make-the-other-tests">5. How to make the other tests?</a></li>
+            <li><a href="#646-things-that-are-not-in-the-installation-packages">6. Things that are NOT in the installation packages.</a></li>
+            <li><a href="#746-for-developers-how-to-modify-the-code">7. For developers: how to modify the code?</a></li>
     </ul>
-  </div>
-</nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    abinit
-  </label>
-  
-    <div class="md-nav__source">
-      
+</div></div>
+                <div class="col-md-9" role="main">
 
+<!-- Return to Top -->
 
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
-    
-    <label class="md-nav__link" for="nav-1">
-      Quick Start
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href=".." title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Installation
-      </label>
-    
-    <a href="./" title="Installation" class="md-nav__link md-nav__link--active">
-      Installation
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#046-short-how-to" title="0. Short how to ..." class="md-nav__link">
-    0. Short how to ...
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#146-how-to-get-a-version-of-abinit" title="1. How to get a version of ABINIT?" class="md-nav__link">
-    1. How to get a version of ABINIT?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1a-expert-user-of-developer" title="1.A. Expert user of developer" class="md-nav__link">
-    1.A. Expert user of developer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#1b-normal-user" title="1.B. Normal user" class="md-nav__link">
-    1.B. Normal user
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-how-to-make-the-executables-how-to-compile-the-executables" title="2. How to make the executables? (=How to compile the executables?)" class="md-nav__link">
-    2. How to make the executables? (=How to compile the executables?)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-how-to-make-the-internal-tests" title="3. How to make the internal tests?" class="md-nav__link">
-    3. How to make the internal tests?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-how-to-make-the-other-tests" title="5. How to make the other tests?" class="md-nav__link">
-    5. How to make the other tests?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-things-that-are-not-in-the-installation-packages" title="6. Things that are NOT in the installation packages." class="md-nav__link">
-    6. Things that are NOT in the installation packages.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-for-developers-how-to-modify-the-code" title="7. For developers: how to modify the code?" class="md-nav__link">
-    7. For developers: how to modify the code?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#71-to-modify-a-file-arguments-unchanged" title="7.1. To modify a file (arguments unchanged)." class="md-nav__link">
-    7.1. To modify a file (arguments unchanged).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#72-to-modify-a-file-arguments-changed" title="7.2. To modify a file (arguments changed)." class="md-nav__link">
-    7.2. To modify a file (arguments changed).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#73-to-add-a-fortran-file" title="7.3. To add a Fortran file." class="md-nav__link">
-    7.3. To add a Fortran file.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#74-to-generate-the-source-package" title="7.4. To generate the source package." class="md-nav__link">
-    7.4. To generate the source package.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
-    
-    <label class="md-nav__link" for="nav-1-3">
-      Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
-        Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../topics/crystal/" title="Crystalline Structure" class="md-nav__link">
-      Crystalline Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../topics/kpoints/" title="K-points" class="md-nav__link">
-      K-points
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      User Guide
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        User Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
-      Abinit
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
-      Mrgddb
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../user-guide/help_optic/" title="Optic" class="md-nav__link">
-      Optic
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Input Variables
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Input Variables
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varbas/" title="Basic" class="md-nav__link">
-      Basic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varbse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vardev/" title="Developers" class="md-nav__link">
-      Developers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vardmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vareph/" title="Electron-Phonon" class="md-nav__link">
-      Electron-Phonon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varff/" title="Varff" class="md-nav__link">
-      Varff
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varfil/" title="File-handling" class="md-nav__link">
-      File-handling
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vargeo/" title="Geometry" class="md-nav__link">
-      Geometry
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vargs/" title="Ground-State" class="md-nav__link">
-      Ground-State
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/vargw/" title="GW" class="md-nav__link">
-      GW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varint/" title="Internal" class="md-nav__link">
-      Internal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varpar/" title="Parallelism" class="md-nav__link">
-      Parallelism
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varpaw/" title="PAW" class="md-nav__link">
-      PAW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varrf/" title="RF" class="md-nav__link">
-      RF
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varrlx/" title="Relaxation" class="md-nav__link">
-      Relaxation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varvdw/" title="VdW" class="md-nav__link">
-      VdW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../input_variables/varw90/" title="Wannier90" class="md-nav__link">
-      Wannier90
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/welcome/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
-    
-    <label class="md-nav__link" for="nav-4-2">
-      Base Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
-        Base Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/base1/" title="Base1" class="md-nav__link">
-      Base1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/base2/" title="Base2" class="md-nav__link">
-      Base2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/base3/" title="Base3" class="md-nav__link">
-      Base3
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/base4/" title="Base4" class="md-nav__link">
-      Base4
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
-    
-    <label class="md-nav__link" for="nav-4-3">
-      DFPT
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        DFPT
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/rf1/" title="RF1" class="md-nav__link">
-      RF1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/rf2/" title="RF2" class="md-nav__link">
-      RF2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/elastic/" title="Elastic" class="md-nav__link">
-      Elastic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/dmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
-    
-    <label class="md-nav__link" for="nav-4-5">
-      Many-Body
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
-        Many-Body
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/gw1/" title="GW1" class="md-nav__link">
-      GW1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/gw2/" title="GW2" class="md-nav__link">
-      GW2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/bse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
-    
-    <label class="md-nav__link" for="nav-4-6">
-      Parallelism
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
-        Parallelism
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/basepar/" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
-      Many-Body
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Theory
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Theory
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../theory/additional_material/" title="Additional Material" class="md-nav__link">
-      Additional Material
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bibliography/" title="Bibliography" class="md-nav__link">
-      Bibliography
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../about/release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../about/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../about/license/" title="License" class="md-nav__link">
-      License
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#046-short-how-to" title="0. Short how to ..." class="md-nav__link">
-    0. Short how to ...
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#146-how-to-get-a-version-of-abinit" title="1. How to get a version of ABINIT?" class="md-nav__link">
-    1. How to get a version of ABINIT?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1a-expert-user-of-developer" title="1.A. Expert user of developer" class="md-nav__link">
-    1.A. Expert user of developer
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#1b-normal-user" title="1.B. Normal user" class="md-nav__link">
-    1.B. Normal user
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-how-to-make-the-executables-how-to-compile-the-executables" title="2. How to make the executables? (=How to compile the executables?)" class="md-nav__link">
-    2. How to make the executables? (=How to compile the executables?)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-how-to-make-the-internal-tests" title="3. How to make the internal tests?" class="md-nav__link">
-    3. How to make the internal tests?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-how-to-make-the-other-tests" title="5. How to make the other tests?" class="md-nav__link">
-    5. How to make the other tests?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-things-that-are-not-in-the-installation-packages" title="6. Things that are NOT in the installation packages." class="md-nav__link">
-    6. Things that are NOT in the installation packages.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-for-developers-how-to-modify-the-code" title="7. For developers: how to modify the code?" class="md-nav__link">
-    7. For developers: how to modify the code?
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#71-to-modify-a-file-arguments-unchanged" title="7.1. To modify a file (arguments unchanged)." class="md-nav__link">
-    7.1. To modify a file (arguments unchanged).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#72-to-modify-a-file-arguments-changed" title="7.2. To modify a file (arguments changed)." class="md-nav__link">
-    7.2. To modify a file (arguments changed).
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#73-to-add-a-fortran-file" title="7.3. To add a Fortran file." class="md-nav__link">
-    7.3. To add a Fortran file.
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#74-to-generate-the-source-package" title="7.4. To generate the source package." class="md-nav__link">
-    7.4. To generate the source package.
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/installation.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                <hr />
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
 <h1 id="installation-notes-for-abinit-v84">Installation notes for ABINIT v8.4<a class="headerlink" href="#installation-notes-for-abinit-v84" title="Permanent link">&para;</a></h1>
 <hr />
 <p>This file provides a description of the operations needed to install the
 ABINIT package, to generate the executable and to make the tests. It provides
 also the description of simple modifications of the package, for developers.</p>
-<p>See a recent version of the <a href="../../users/new_user_guide.html">new user&rsquo;s guide</a>,
+<p>See a recent version of the <a href="../../users/new_user_guide.html">new user's guide</a>,
 for an introduction to the abinit package. See a recent version of the <a href="../../users/abinit_help.html">abinit
 help</a> file for learning how to use the code. Both
 of them can be found either on the Web, or in the doc subdirectory of the
@@ -1487,7 +728,7 @@ contact the ABINIT group (http://forum.abinit.org/).</p>
 <div class="toc">
 <ul>
 <li><a href="#installation-notes-for-abinit-v84">Installation notes for ABINIT v8.4</a><ul>
-<li><a href="#046-short-how-to">0. Short how to &hellip;</a></li>
+<li><a href="#046-short-how-to">0. Short how to ...</a></li>
 <li><a href="#146-how-to-get-a-version-of-abinit">1. How to get a version of ABINIT?</a><ul>
 <li><a href="#1a-expert-user-of-developer">1.A. Expert user of developer</a></li>
 <li><a href="#1b-normal-user">1.B. Normal user</a></li>
@@ -1509,22 +750,21 @@ contact the ABINIT group (http://forum.abinit.org/).</p>
 </ul>
 </div>
 <hr />
-<h2 id="046-short-how-to">0. Short how to &hellip;<a class="headerlink" href="#046-short-how-to" title="Permanent link">&para;</a></h2>
+<h2 id="046-short-how-to">0. Short how to ...<a class="headerlink" href="#046-short-how-to" title="Permanent link">&para;</a></h2>
 <p>For the vast majority of people willing to use ABINIT (Unix/Linux, not developers, but users), 
 here follows a short list of instructions needed to install it:</p>
 <ol>
 <li>Download, gunzip and untar the <a href="http://www.abinit.org/downloads/abinit-packages">latest version of the ABINIT package</a> (abinit-x.y.z.tar.gz) from the abinit Web site, then change the current directory to the top of the directory that was created. If you do not know what all this means, go to <strong>1. How to get a version of ABINIT? (Section 1B Normal users)</strong></li>
 <li>Issue configure or ./configure (or first create a tmp directory, then cd tmp, then ../configure)</li>
-<li>Issue make (or make mj4 , or make multi multi_nprocs=n for using &ldquo;n&rdquo; processors on a SMP machine where you have to replace &ldquo;n&rdquo; by its value) </li>
-<li>Issue (optionally) &ldquo;make install&rdquo;</li>
+<li>Issue make (or make mj4 , or make multi multi_nprocs=n for using "n" processors on a SMP machine where you have to replace "n" by its value) </li>
+<li>Issue (optionally) "make install"</li>
 </ol>
 <p>Well, it might also be that information on the Fortran compiler is needed, in
 which case something like:</p>
-<div class="codehilite"><pre><span></span>     $ ./configure <span class="nv">FC</span><span class="o">=</span>your_F90_compiler 
-</pre></div>
+<pre><code class="sh">     $ ./configure FC=your_F90_compiler 
+</code></pre>
 
-
-<p>instead of the bare &ldquo;configure&rdquo;, might work, where &ldquo;your_F90_compiler&rdquo; has to
+<p>instead of the bare "configure", might work, where "your_F90_compiler" has to
 be replaced by the location of your F90 compiler, such as
 /usr/local/gcc472/bin/gfortran.</p>
 <p>If you succeeded to download, gunzip and untar the ABINIT package, but failed
@@ -1541,17 +781,17 @@ Running all tests will require more than 2.5 GBytes.</p>
 <h2 id="146-how-to-get-a-version-of-abinit">1. How to get a version of ABINIT?<a class="headerlink" href="#146-how-to-get-a-version-of-abinit" title="Permanent link">&para;</a></h2>
 <p>We will distinguish two cases:</p>
 <ul>
-<li>1.A. Expert user or developer. You have a F90 compiler under UNIX/Linux or MacOS X, as well as (free) <strong>software applications like git, automake, autoconf, libtool, perl, python, and you want to have a full handle</strong> on the package (compilation, modification of files, writing of scripts &hellip; this is the preferred case for developers). This is also needed if you download ABINIT from the primary ABINIT GitLab repository or its GitHub mirror. We will sometimes refer to this case as the &ldquo;autotools working mode&rdquo;.</li>
-<li>1.B. Normal user. You have a F90 compiler under UNIX/Linux or MacOS X and you want <strong>simply to compile the source code</strong>, and, from time to time, <strong>modify and/or add a new file</strong> (this is the case of most users, system managers, and also occasional developers). We will sometimes refer to this case as being &ldquo;without autotools&rdquo;.</li>
+<li>1.A. Expert user or developer. You have a F90 compiler under UNIX/Linux or MacOS X, as well as (free) <strong>software applications like git, automake, autoconf, libtool, perl, python, and you want to have a full handle</strong> on the package (compilation, modification of files, writing of scripts ... this is the preferred case for developers). This is also needed if you download ABINIT from the primary ABINIT GitLab repository or its GitHub mirror. We will sometimes refer to this case as the "autotools working mode".</li>
+<li>1.B. Normal user. You have a F90 compiler under UNIX/Linux or MacOS X and you want <strong>simply to compile the source code</strong>, and, from time to time, <strong>modify and/or add a new file</strong> (this is the case of most users, system managers, and also occasional developers). We will sometimes refer to this case as being "without autotools".</li>
 </ul>
 <p>You should read only the appropriate section (you can safely ignore the other
-one &hellip;).</p>
+one ...).</p>
 <h3 id="1a-expert-user-of-developer">1.A. Expert user of developer<a class="headerlink" href="#1a-expert-user-of-developer" title="Permanent link">&para;</a></h3>
 <p>You have a F90 compiler under UNIX/Linux or MacOS X, as well as (free)
 software like git, automake, autoconf, libtool, perl, python, and you want to
 have a full handle on the package (compilation, modification of files, writing
-of scripts). This is the preferred case for developers&hellip; We will sometimes
-refer to this case as the &ldquo;autotools development mode&rdquo;.</p>
+of scripts). This is the preferred case for developers... We will sometimes
+refer to this case as the "autotools development mode".</p>
 <p>If you do not have these tools, and would like to have them, please consult
 your local computer guru, and the following pages:</p>
 <ul>
@@ -1565,13 +805,11 @@ If it is only very occasional, you might as well rely on the <a href="https://gi
 <p>It is strongly advised to subscribe to the <a href="http://forum.abinit.org/">ABINIT
 forum</a> if you want to be able to get the latest
 information concerning the autotools development mode.</p>
-<dl>
-<dt>After having installed git, and obtained a branch on the ABINIT worldwide</dt>
-<dt>repository, create an automomous copy of the source code, on top of which you</dt>
-<dt>have to make your development. This is explained in the ABINIT wiki [git(lab)</dt>
-<dd>ABINIT
-specificities](https://wiki.abinit.org/doku.php?id=developers:specificities_git_abinit)</dd>
-</dl>
+<p>After having installed git, and obtained a branch on the ABINIT worldwide
+repository, create an automomous copy of the source code, on top of which you
+have to make your development. This is explained in the ABINIT wiki <a href="https://wiki.abinit.org/doku.php?id=developers:specificities_git_abinit">git(lab)
+: ABINIT
+specificities</a></p>
 <p>For your branches on the ABINIT worldwide repository, you will have the
 permission not only to clone/fetch/pull, but also to commit/push your
 modifications. You might alternatively download other branches of the
@@ -1585,9 +823,8 @@ work (you will be able to create new branches). One big advantage of this
 technique is that people working with a laptop can develop and commit safely
 without a network connection.</p>
 <p>Now, cd to the newly created abinit directory, and issue :</p>
-<div class="codehilite"><pre><span></span>    $ ./config/scripts/makemake
-</pre></div>
-
+<pre><code class="bash">    $ ./config/scripts/makemake
+</code></pre>
 
 <p>This command initializes a whole set of files and scripts, needed for the
 autotools, as well as for the global work on ABINIT sources. This
@@ -1604,22 +841,21 @@ section. In what follows, <em>x.y.z</em> represents the ABINIT version.</p>
 <p>In order to get the ABINIT package, you have first to download the file
 <strong>abinit-<em>x.y.z</em>.tar.gz</strong> from the ABINIT Web site, see <a href="http://www.abinit.org/downloads/abinit-packages">the following
 page</a> then issue :</p>
-<div class="codehilite"><pre><span></span>    gunzip **abinit-_x.y.z_.tar.gz** <span class="p">|</span> tar -xvf -
-</pre></div>
+<pre><code class="bash">    gunzip **abinit-_x.y.z_.tar.gz** | tar -xvf -
+</code></pre>
 
-
-<p>That&rsquo;s it.</p>
+<p>That's it.</p>
 <p>The <strong>abinit-<em>x.y.z</em>.tar.gz</strong> gzipped tar file contains all the needed files, including:</p>
 <ul>
-<li>the sources of the abinit code (also, the files needed for generating the blas and lapack libraries), in the directories &ldquo;src&rdquo; and &ldquo;lib&rdquo;;</li>
-<li>the documentation, in the directory &ldquo;doc&rdquo;;</li>
-<li>the complete set of tests, and the pseudopotentials needed for the tests, in the directory &ldquo;tests&rdquo;;</li>
-<li>all the scripts and information needed to produce makefiles, in other directories, especially &ldquo;config&rdquo;.</li>
+<li>the sources of the abinit code (also, the files needed for generating the blas and lapack libraries), in the directories "src" and "lib";</li>
+<li>the documentation, in the directory "doc";</li>
+<li>the complete set of tests, and the pseudopotentials needed for the tests, in the directory "tests";</li>
+<li>all the scripts and information needed to produce makefiles, in other directories, especially "config".</li>
 </ul>
 <p>The package does not contain the object files and the binary executable files.</p>
 <p>You can go to the next section, to generate the executable files, if this
 worked.</p>
-<p>If this did not work, here are more detailed explanations &hellip;</p>
+<p>If this did not work, here are more detailed explanations ...</p>
 <p>So, execute the following actions:</p>
 <ul>
 <li>under mac os x, open a terminal session, so you can work as if it were a unix platform.</li>
@@ -1629,13 +865,13 @@ you should have about 250 mb of disk space to install the code, maybe more,
 depending on the version, and the number of tests that you will do.</p>
 </li>
 <li>
-<p>gunzip (on some machine you need gzip -d) and untar the file &lsquo;<strong>abinit-<em>x.y.z</em>.tar.gz</strong>&rsquo;:<br />
+<p>gunzip (on some machine you need gzip -d) and untar the file '<strong>abinit-<em>x.y.z</em>.tar.gz</strong>':<br />
 gunzip <strong>abinit-<em>x.y.z</em>.tar.gz</strong> | tar -xvf -</p>
 </li>
 </ul>
 <p>If correctly done, a main directory, denoted ~abinit in the present document
 (usually, its real name will be <strong>abinit-<em>x.y.z</em></strong>) and a whole set of
-subdirectories should have been created. One of them is called &lsquo;doc/&rsquo;. It
+subdirectories should have been created. One of them is called 'doc/'. It
 contains many important informations. many of the files it contains are .html
 files, that are placed on the web site. However, many other files are not
 available in .html format, and are not found on the web site. In the future,
@@ -1650,7 +886,7 @@ section.</p>
 <h2 id="246-how-to-make-the-executables-how-to-compile-the-executables">2. How to make the executables? (=How to compile the executables?)<a class="headerlink" href="#246-how-to-make-the-executables-how-to-compile-the-executables" title="Permanent link">&para;</a></h2>
 <p>We now suppose that you have a F90 compiler and you want to compile the source
 files.</p>
-<p>In most cases, you will have to provide to the &lsquo;make&rsquo; utility some
+<p>In most cases, you will have to provide to the 'make' utility some
 information: the location of the F90 compiler (and sometimes even the C
 compiler) on your machine, the adequate compiler options, and, if you want to
 produce the parallel binaries, the location of the MPI library on your
@@ -1664,7 +900,7 @@ slowly, or with downgraded capabilities.</p>
 find all the information, then the build of ABINIT is very simple. Issue:</p>
 <ul>
 <li>configure or ./configure (or first create a tmp directory, then cd tmp, then ../configure)</li>
-<li>make (or make mj4 , or make multi multi_nprocs=n for using &ldquo;n&rdquo; processors on a SMP machine where you have to replace &ldquo;n&rdquo; by its value) </li>
+<li>make (or make mj4 , or make multi multi_nprocs=n for using "n" processors on a SMP machine where you have to replace "n" by its value) </li>
 <li>(optionally) make install</li>
 </ul>
 <p>Well, it might also be that only one additional information is needed, in
@@ -1673,11 +909,11 @@ which case something like:</p>
 <li>configure FC=gcc</li>
 <li>make </li>
 </ul>
-<p>might work. In both cases, let&rsquo;s explain a bit what is done, and the further
+<p>might work. In both cases, let's explain a bit what is done, and the further
 possibilities.</p>
-<p>The &lsquo;configure&rsquo; step produces the set of Makefile files (among other things),
+<p>The 'configure' step produces the set of Makefile files (among other things),
 taking into account information about your machine and the hostname.ac file.
-It takes three minute long, or less. The &lsquo;make&rsquo; step compiles everything,
+It takes three minute long, or less. The 'make' step compiles everything,
 according to the Makefile files produced in the prior step. The time to make
 everything is highly dependent on the compiler and platform. On a 2.8 GHz
 quad-proc machine (using make mj4), the whole compilation is about 5 minutes.
@@ -1686,51 +922,43 @@ hour.</p>
 <p>The executables will be located in the subdirectory ~abinit/src/98_main, if
 you have chosen to issue ./configure in the ~abinit directory. If you have
 issued ./configure in another directory, it will be placed accordingly.</p>
-<p>The &lsquo;make&rsquo; command can also be used in many different ways, by mentioning one
+<p>The 'make' command can also be used in many different ways, by mentioning one
 or more targets. A (partial) list of targets for users can be obtained by
 typing:</p>
-<div class="codehilite"><pre><span></span>    make <span class="nb">help</span>
-</pre></div>
-
+<pre><code class="sh">    make help
+</code></pre>
 
 <p>Additional targets, for developers, can be obtained by typing:</p>
-<div class="codehilite"><pre><span></span>    make help_dev
-</pre></div>
-
+<pre><code class="sh">    make help_dev
+</code></pre>
 
 <p>It is possible to compile only one of the executable, just after the configure
 step by typing:</p>
-<div class="codehilite"><pre><span></span>    make name_of_the_binary
-</pre></div>
+<pre><code class="sh">    make name_of_the_binary
+</code></pre>
 
-
-<p>(where name_of_the_binary can be abinit, cut3d, anaddb, &hellip;).</p>
+<p>(where name_of_the_binary can be abinit, cut3d, anaddb, ...).</p>
 <p>These are only a tiny fraction of the things that you can realize thanks to
-&lsquo;make&rsquo;. Moreover, there are also &lsquo;Makefile&rsquo; files in most of the
+'make'. Moreover, there are also 'Makefile' files in most of the
 subdirectories of ABINIT, with often their own (partial) list of targets for
 users (and also sometimes for developers). To obtain these lists, go to the
 directory, and type:</p>
-<div class="codehilite"><pre><span></span>    make <span class="nb">help</span>
-</pre></div>
-
+<pre><code class="sh">    make help
+</code></pre>
 
 <p>or</p>
-<div class="codehilite"><pre><span></span>make help_dev
-</pre></div>
-
-
+<pre><code>make help_dev
+</code></pre>
 <p>Finally,</p>
-<div class="codehilite"><pre><span></span>make install
-</pre></div>
-
-
+<pre><code>make install
+</code></pre>
 <p>will install abinit in the /usr/local directory.</p>
 <p>In case you want to go further, please consult files in ~abinit/doc/build .</p>
-<p>Let&rsquo;s come back to the case where the build system needs some more
+<p>Let's come back to the case where the build system needs some more
 information. This information should be stored in a file named hostname.ac,
-where &ldquo;hostname&rdquo; is the result of executing the command <code>hostname</code> on your
-machine, e.g. abiref.pcpm.ucl.ac.be or my_machine &hellip; , and taking the first
-word of the returned chain of character, e.g. abiref or my_machine &hellip;</p>
+where "hostname" is the result of executing the command <code>hostname</code> on your
+machine, e.g. abiref.pcpm.ucl.ac.be or my_machine ... , and taking the first
+word of the returned chain of character, e.g. abiref or my_machine ...</p>
 <p>There is a template for such a file, located in ~abinit/doc/config/. Its name
 is config-template.ac. Examples of such files, that have been used for testing
 the package, can be found in ~abinit/doc/build/config-examples/. By the way,
@@ -1740,9 +968,9 @@ indicated at the beginning of this file.</p>
 <p>Most of the examples provided in the ~abinit/doc/build/config-examples/
 directory contain about five definitions: F90 and C locations, F90 and C
 options, MPI library location (or the indication that MPI is not enabled). On
-the other hand, there are many other possible control flags (&ldquo;with_XYZ&rdquo;),
+the other hand, there are many other possible control flags ("with_XYZ"),
 needed for advanced use. In case you have trouble with some library (LibXC,
-WANNIER90, ETSF_IO &hellip;), you may disable its build.</p>
+WANNIER90, ETSF_IO ...), you may disable its build.</p>
 <p>Your hostname.ac file might be placed in your home directory in a new
 directory that you will name ~/.abinit/build/. At that location, everytime you
 install a new version of ABINIT, the needed information will be found by
@@ -1774,49 +1002,44 @@ directory:</p>
 <hr />
 <h2 id="346-how-to-make-the-internal-tests">3. How to make the internal tests?<a class="headerlink" href="#346-how-to-make-the-internal-tests" title="Permanent link">&para;</a></h2>
 <p>In case you are running under Unix (Linux or another flavour), the abinit code
-has several small internal tests (three basic ones, called &ldquo;fast&rdquo;, &ldquo;v1&rdquo; and
-&ldquo;v5&rdquo;, and then one for each of the libraries &ldquo;bigdft&rdquo;, &ldquo;etsf_io&rdquo;, &ldquo;libxc&rdquo;,
-&ldquo;wannier90&rdquo;), that can be issued automatically, and that check themselves
+has several small internal tests (three basic ones, called "fast", "v1" and
+"v5", and then one for each of the libraries "bigdft", "etsf_io", "libxc",
+"wannier90"), that can be issued automatically, and that check themselves
 whether the results that have been obtained are right or wrong. These tests
 are available whether you have got the package from the Web or from the ABINIT
 archive. Of course, you need to have compiled abinit in order to run the
 internal tests. Moreover, the simple implementation procedure assumes that the
 executable is located in ~abinit/src/98_main (the standard location after
-issuing &ldquo;make&rdquo;).</p>
-<p>You can begin with the test &ldquo;fast&rdquo;. Simply issue the command:</p>
-<div class="codehilite"><pre><span></span>**make test_fast**
-</pre></div>
-
-
+issuing "make").</p>
+<p>You can begin with the test "fast". Simply issue the command:</p>
+<pre><code>**make test_fast**
+</code></pre>
 <p>It will run during a few seconds. It should print:</p>
-<div class="codehilite"><pre><span></span>Status file, reporting on built-in test fast
+<pre><code class="text">Status file, reporting on built-in test fast
 
 ==&gt; The run finished cleanly.
     Moreover, comparison of the total energy, and other (few) relevant quantities with reference values has been successful.
     This does not mean that no problem is present, however.
     Please run the complete set of ABINIT tests to gain a better confidence in your installation.
-</pre></div>
+</code></pre>
 
-
-<p>This means that the internal test &ldquo;fast&rdquo; ran successfully. If you do not get
+<p>This means that the internal test "fast" ran successfully. If you do not get
 this message, then the executables were not properly generated, or there is a
 problem with the makefile that drives the internal test. In this case, after
 having tried to solve the problem by yourself, you should contact somebody in
 the ABINIT group.</p>
 <p>In addition to this small message, you can have access to all generated files,
 that are located inside the tests/built-in/Input subdirectory.</p>
-<p>Supposing test &ldquo;fast&rdquo; was OK, then you might issue the command:</p>
-<div class="codehilite"><pre><span></span>**make tests_in**
-</pre></div>
-
-
-<p>The test &ldquo;fast&rdquo; will be done once more, followed by the other internal tests.
+<p>Supposing test "fast" was OK, then you might issue the command:</p>
+<pre><code>**make tests_in**
+</code></pre>
+<p>The test "fast" will be done once more, followed by the other internal tests.
 Again, we hope that you will get the positive diagnostics for the other tests.
-Of course, the &ldquo;bigdft&rdquo;, &ldquo;etsf_io&rdquo;, &ldquo;libxc&rdquo;, and &ldquo;wannier90&rdquo; needs the
+Of course, the "bigdft", "etsf_io", "libxc", and "wannier90" needs the
 appropriate library to be installed in order to work properly.</p>
 <p>For further information on these internal tests, see the ~abinit/tests/built-
 in/README file.</p>
-<p>You might now read the <a href="../../users/new_user_guide.html">new user&rsquo;s guide</a>, in
+<p>You might now read the <a href="../../users/new_user_guide.html">new user's guide</a>, in
 order to learn how to use the code, and then to follow the four basic
 tutorials, see the <a href="../../tutorial/welcome.html">entry page for the tutorials</a>.
 This is useful if you consider that the installation has been successful. Or
@@ -1827,26 +1050,20 @@ tests, as well as the other tests.</p>
 <p>Although it is possible to make the other tests without knowing really how to
 use the code (since all steps involved - the run and subsequent analysis - are
 done automatically), for the other tests, it is recommended to read the <a href="../../users/new_user_guide.html">new
-user&rsquo;s guide</a>, and then to follow the four basic
+user's guide</a>, and then to follow the four basic
 tutorials, see the <a href="../../tutorial/welcome.html">entry page for the tutorials</a>.</p>
 <p>Let us pursue with the testing procedure. Go to the ~abinit/tests directory,
 and issue:</p>
-<div class="codehilite"><pre><span></span>**make help**
-</pre></div>
-
-
+<pre><code>**make help**
+</code></pre>
 <p>The workhorse script to run the tests is called runtests.py . It is very
-flexible. A reasonable set of tests (those contained in the fast and v&rdquo;x&rdquo;
+flexible. A reasonable set of tests (those contained in the fast and v"x"
 directories), can be run automatically by:</p>
-<div class="codehilite"><pre><span></span>**./runtests.py **
-</pre></div>
-
-
+<pre><code>**./runtests.py **
+</code></pre>
 <p>or e.g.</p>
-<div class="codehilite"><pre><span></span>**./runtests.py -j4**
-</pre></div>
-
-
+<pre><code>**./runtests.py -j4**
+</code></pre>
 <p>(if you have 4 cores on your computer)</p>
 <p>This is the recommended procedure for developers. In order to execute these
 tests, you will need a larger disk space than for the simple installation of
@@ -1859,7 +1076,7 @@ detail below. For tests of the parallel version see the directory
 tests/paral/, as well as the ~abinit/doc/users/paral_use text file. For tests
 of the response function features of abinit, and for tests of mrgddb and
 anaddb, see the subdirectories tests/v2. The other directories tests/v3,
-tests/v4, &hellip; presents further tests of recently implemented features of
+tests/v4, ... presents further tests of recently implemented features of
 ABINIT.</p>
 <p><strong>1) tests/fast/</strong> (for the sequential version only)</p>
 <p>This subdirectory contains a basic set of tests of the code, aimed at testing
@@ -1877,23 +1094,21 @@ reference output files, the author of the test, and a brief description of the
 test.</p>
 <p>To run only the tests in this directory, simply issue, in the ~abinit/tests/
 directory:</p>
-<div class="codehilite"><pre><span></span>**./runtests.py fast**
-</pre></div>
-
-
+<pre><code>**./runtests.py fast**
+</code></pre>
 <p>It will create a directory named Test_suite. All the results will be in that
-directory. The output files will be automatically compared, thanks to a &lsquo;diff&rsquo;
+directory. The output files will be automatically compared, thanks to a 'diff'
 command, to a set of reference files (in ~abinit/tests/fast/Refs/). The
-corresponding difference files are prefixed by &lsquo;diff.&rsquo;.</p>
-<p>In addition to &lsquo;diff&rsquo;, there are two other levels of automatic analysis: one
-based on a comparing tool called &lsquo;fldiff&rsquo;, producing &lsquo;fldiff.report&rsquo; files,
-and another where the output of &lsquo;fldiff&rsquo; is further analyzed, and produce a
-brief report called &lsquo;report&rsquo;. The latter step is only performed in case all
+corresponding difference files are prefixed by 'diff.'.</p>
+<p>In addition to 'diff', there are two other levels of automatic analysis: one
+based on a comparing tool called 'fldiff', producing 'fldiff.report' files,
+and another where the output of 'fldiff' is further analyzed, and produce a
+brief report called 'report'. The latter step is only performed in case all
 the tests cases of one directory are performed (including the case where tests
 of different directories are performed)</p>
 <p>The one-line summaries produced by fldiff (see later) are compared with the
 tolerances indicated in the input file (metadata added at the end of the input
-file). This procedure produces a file called &ldquo;report&rdquo;, in which there is a one
+file). This procedure produces a file called "report", in which there is a one
 line assessment of the behaviour of each test: succeeded (everything is OK),
 passed (the test is OK for users in production), passed marginally (the test
 is within 1.5 of the usually accepted deviation, which is likely OK for most
@@ -1905,24 +1120,22 @@ used by the developer team in Louvain-la-neuve. Some problems are mentioned in
 the file ~abinit/KNOWN_PROBLEMS , Additionally, there might be specific
 problems for some test case for some platforms, also mentioned in
 ~abinit/KNOWN_PROBLEMS. So, apart of the known problems, mentioned in this
-file, the &ldquo;report&rdquo; file should mention, for each test case, only &ldquo;succeeded&rdquo;
-or &ldquo;passed&rdquo;.</p>
-<p>The comparing tool &lsquo;fldiff&rsquo; -for &lsquo;floating diff&rsquo;- performs in a more detailed
+file, the "report" file should mention, for each test case, only "succeeded"
+or "passed".</p>
+<p>The comparing tool 'fldiff' -for 'floating diff'- performs in a more detailed
 way the comparison of floating numbers between the output files and the
-reference files than in the case of a &lsquo;diff&rsquo; command. As used presently, for
-each run inside one directory, one single file, called &lsquo;fldiff.report&rsquo;, will
+reference files than in the case of a 'diff' command. As used presently, for
+each run inside one directory, one single file, called 'fldiff.report', will
 be produced, and gather the analysis for all tests in that directory.</p>
 <p>If for one test case, the two files differ by the number of lines, the
-&lsquo;fldiff.report&rsquo; file will report that it cannot compare the two files. Usually
-this problem will be seen at the level of &lsquo;command signs&rsquo; appearing sometimes
+'fldiff.report' file will report that it cannot compare the two files. Usually
+this problem will be seen at the level of 'command signs' appearing sometimes
 in the first column of the output files, so a typical error message
 (announcing something went wrong) will be:</p>
-<div class="codehilite"><pre><span></span>Case_1
+<pre><code>Case_1
 22
 The diff analysis cannot be pursued: the command sign differ.
-</pre></div>
-
-
+</code></pre>
 <p>By contrast, it will identify the floating numbers and ignore their
 differences if they are within some prescribed tolerance, or if the difference
 is not relevant. For example, it is able to ignore the differences in timings.
@@ -1936,7 +1149,7 @@ differences in:</p>
 </ul>
 <p>So, a successful execution of one test case may be announced as follows in the
 fldiff.report file:</p>
-<div class="codehilite"><pre><span></span>Case_1
+<pre><code>Case_1
 2
 &lt;  Version 8.0.6  of ABINIT
 &gt;  Version 8.0.3  of ABINIT
@@ -1947,9 +1160,7 @@ fldiff.report file:</p>
 &lt; +overall time at end (sec): cpu=          7.1  wall=          8.0
 &gt; +Overall time at end (sec): cpu=          7.3  wall=          8.0
 Summary Case_1: no significant difference has been found
-</pre></div>
-
-
+</code></pre>
 <p>The fldiff.report file will have one such section for each test_case that was
 run. It begins with the number of the test case, then includes a few blocks of
 three lines: the number of the line where something is happening, followed by
@@ -1964,7 +1175,7 @@ treatment of metals, the GGA, the new pseudopotentials, the multi-dataset
 mode, the cell parameters optimization, and the spatial symmetry groups
 database. These were developed during the development time of the version 1 of
 ABINIT. Of course, the automatic difference procedure only compares to recent
-runs of the ABINIT code. As for the &lsquo;fast&rsquo; test cases, the fldiff.report and
+runs of the ABINIT code. As for the 'fast' test cases, the fldiff.report and
 report files are also available. 64 MB of memory should be enough for these
 tests.</p>
 <p><strong>3) tests/v2</strong></p>
@@ -1972,16 +1183,16 @@ tests.</p>
 tests/fast/ or tests/v1 directory, but that exercise features not present in
 version 1 of the ABINIT package, mainly the response function features, and
 the use of the mrgddb and anaddb codes. Again, the automatic difference
-procedure only compares to recent runs of the ABINIT code. As for the &lsquo;fast&rsquo;
+procedure only compares to recent runs of the ABINIT code. As for the 'fast'
 test cases, the fldiff.report and report files are also available. 64 MB of
 memory should be enough for these tests.</p>
 <p><strong>4) tests/v3, tests/v4, tests/v5, tests/v6, tests/v67mbpt, tests/v7, tests/v8, tests/bigdft, tests/etsf_io, tests/libxc, tests/wannier90</strong></p>
 <p>These directories contain tests built in the same spirit as those in the
 tests/fast/ directory, but that exercise features not present in the
 Plane_Wave code, nor in version 1 or 2 of the ABINIT package, noticeably the
-use of the GW code, the utilities Cut3d, AIM, .., the PAW &hellip; . Or the
+use of the GW code, the utilities Cut3d, AIM, .., the PAW ... . Or the
 interfacing with fallbacks. Again, the automatic difference procedure only
-compares to recent runs of the ABINIT code. As for the &lsquo;fast&rsquo; test cases, the
+compares to recent runs of the ABINIT code. As for the 'fast' test cases, the
 fldiff.report and report files are also available. 64 MB of memory should be
 enough for these tests.</p>
 <p><strong>5) tests/paral/ and tests/mpiio/</strong> (need MPI support)</p>
@@ -1999,20 +1210,18 @@ fldiff.report and report files are produced automatically.</p>
 cpu time, either on progressively finer real space grids, or on progressively
 bigger unit cells. Please read the README file of this directory. Also for
 this suite of tests is activated with:</p>
-<div class="codehilite"><pre><span></span>**make tests_cpu**
-</pre></div>
-
-
+<pre><code>**make tests_cpu**
+</code></pre>
 <p>Unlike in the previous case, many directories will be created (more than 10 in
 the present version). Their name begins with the test name (A1, A2, A3, A4,
 B1, B2, B3, B4, C3, D3), and is followed by the machine name and the date.
-Inside these directories, many runs are done. There is a &lsquo;report&rsquo; file that
-summarizes the timing of the different runs, and there is a &lsquo;diff&rsquo; file, that
+Inside these directories, many runs are done. There is a 'report' file that
+summarizes the timing of the different runs, and there is a 'diff' file, that
 compares these timings with the reference (output files from a PIV at 2.8 MHz,
 usually).</p>
 <p>The structure of these tests is more complex than that of the test/fast/ and
-test/v1/ directories. The tools used are the &lsquo;serie&rsquo; scripts (serieA,serieB,
-serieC and serieD) as well as the &lsquo;getrep&rsquo; script. For an explanation, contact
+test/v1/ directories. The tools used are the 'serie' scripts (serieA,serieB,
+serieC and serieD) as well as the 'getrep' script. For an explanation, contact
 the ABINIT group. For the largest tests (B and D series), up to 200MB of
 central memory are required.</p>
 <hr />
@@ -2028,9 +1237,9 @@ pseudopotentials have been generated by many different users, and might be
 shared, but you might have to contact them.</p>
 </li>
 <li>
-<p>The &ldquo;fallbacks&rdquo; are <strong>not</strong> in the installation package. They are downloaded from the Web automatically at configure time. If you do not have the command &ldquo;wget&rdquo; install on your machine, or if you do not have an access to the internet, you should disable all the fallbacks. </p>
+<p>The "fallbacks" are <strong>not</strong> in the installation package. They are downloaded from the Web automatically at configure time. If you do not have the command "wget" install on your machine, or if you do not have an access to the internet, you should disable all the fallbacks. </p>
 </li>
-<li>The Web site <a href="http://www.abinit.org">http://www.abinit.org</a> contains many other things, including links to the forum, the mailing list, the ABINIT events, &hellip;  </li>
+<li>The Web site <a href="http://www.abinit.org">http://www.abinit.org</a> contains many other things, including links to the forum, the mailing list, the ABINIT events, ...  </li>
 </ul>
 <hr />
 <h2 id="746-for-developers-how-to-modify-the-code">7. For developers: how to modify the code?<a class="headerlink" href="#746-for-developers-how-to-modify-the-code" title="Permanent link">&para;</a></h2>
@@ -2039,20 +1248,16 @@ shared, but you might have to contact them.</p>
 Fortran files, located in one of the src/* directories), without changing its
 list of arguments, and recompile the code, the procedure is quite simple.
 Modify that file, and reissue:</p>
-<div class="codehilite"><pre><span></span>**make**
-</pre></div>
-
-
+<pre><code>**make**
+</code></pre>
 <p>in ~abinit.</p>
 <h3 id="72-to-modify-a-file-arguments-changed">7.2. To modify a file (arguments changed).<a class="headerlink" href="#72-to-modify-a-file-arguments-changed" title="Permanent link">&para;</a></h3>
 <p>If you want to modify the content of an existing Fortran file as well as the
 list of arguments, and recompile the code, the procedure is to modify that
 file, and then issue, in the ~abinit directory:</p>
-<div class="codehilite"><pre><span></span>***/abilint . .**  
+<pre><code>***/abilint . .**  
 **make**
-</pre></div>
-
-
+</code></pre>
 <p>Do not forget the two dots in the abilint command.</p>
 <h3 id="73-to-add-a-fortran-file">7.3. To add a Fortran file.<a class="headerlink" href="#73-to-add-a-fortran-file" title="Permanent link">&para;</a></h3>
 <p>If you want to add a new Fortran file, there is a difference whether you work
@@ -2068,45 +1273,30 @@ the called routines are in the same directory), and smaller than all the
 directories that call your routine (except for routines that are in the same
 directory as yours).</p>
 <p>If you work with the autotools, you have now to reissue:</p>
-<div class="codehilite"><pre><span></span>***/*/makemake**
+<pre><code>***/*/makemake**
 **./configure**
 **make**
-</pre></div>
-
-
+</code></pre>
 <p>(see the section 2).</p>
 <p>If you work without the autotools, <strong>you must also modify by hand</strong> (i.e. find
 the places where the Fortran files are listed, and complete the list) the
 Makefile.in of the directory where the new file has been added (e.g.
 ~abinit/src/65_nonlocal/Makefile.in).</p>
 <p>Then issue:</p>
-<div class="codehilite"><pre><span></span>***/abilint . . **
+<pre><code>***/abilint . . **
 **make**
-</pre></div>
-
-
+</code></pre>
 <p>in ~abinit/.</p>
 <h3 id="74-to-generate-the-source-package">7.4. To generate the source package.<a class="headerlink" href="#74-to-generate-the-source-package" title="Permanent link">&para;</a></h3>
 <p>If you want to produce the source package abinit-<em>x.y.z</em>.tar.gz, type:</p>
-<div class="codehilite"><pre><span></span>**make dist**
-</pre></div>
-
-
+<pre><code>**make dist**
+</code></pre>
 <p>in ~abinit/.</p>
 <p>Do not forget to change its name (e.g. add your name after <em><strong>x.y.z</strong></em>, to
-identify that this is a modified version of ABINIT).</p>
-                
-                  
-                
-              
-              
-                
-              
-            </article>
-          </div>
+identify that this is a modified version of ABINIT).</p></div>
         </div>
-      </main>
-      
+
+        <footer class="col-md-12">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -2116,22 +1306,28 @@ identify that this is a modified version of ABINIT).</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-    </div>
-    
-      <script src="../assets/javascripts/application-c35428f87f.js"></script>
-      
-      
-      <script>app.initialize({url:{base:".."}})</script>
-      
+        </footer>
+        <script>var base_url = '..';</script>
+        <!--
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        -->
+        <script src="../js/base.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      
         <script src="../extra_javascript/abidocs.js"></script>
-      
-    
-    
-      
-    
-  </body>
+
+    <!--<script>var base_url = '..';</script>
+<script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
 </html>

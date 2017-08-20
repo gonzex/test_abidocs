@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/TDepES/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>TDepES - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../TDDFT/">TDDFT</a>
+</li>
+                            
+<li class="active">
+    <a href="./">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../TDDFT/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Temperature/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
+        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The electronic structure changes with temperature. In most materials, such
+changes are mainly driven by the electron-phonon interaction, which is also
+present at zero Kelvin, inducing the so-called zero-point motion
+renormalization (ZPR) of the eigenvalues. These effects can be computed thanks
+to the Allen-Heine-Cardona (AHC) theory
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Allen1976" title="Theory of the temperature dependence of electronic band structures">Allen1976</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Allen1981" title="Theory of the temperature dependence of the direct gap of germanium">Allen1981</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Allen1983" title="Temperature dependence of the direct gap of {S}i and {G}e">Allen1983</a>, which is based on diagrammatic
+method of many-body perturbation theory. An extension to the standard AHC
+theory also gives access to the electronic lifetime and decay rates. These
+physical properties are available from ABINIT since v7.10.4.</p>
+<p>The AHC formalism and the implemented equations can be found in
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Ponce2014a" title="Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation">Ponce2014a</a>. An extended verification and validation study (also versus
+other first-principle codes) of the ABINIT implementation can be found in
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Ponce2014" title="Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo">Ponce2014</a>. The AHC implementation can be used with any XC functional
+working with the response-function (RF) part of the code, and requires the use
+of norm-conserving pseudopotentials. NetCDF support is mandatory.</p>
+<p>The AHC implementation in ABINIT is built on a Sternheimer approach to
+efficiently compute the sum over highly energetic bands appearing in the AHC
+equations <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gonze2011" title="Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.">Gonze2011</a>. Such behavior is controlled by the input variable
+<a class="wikilink" href="../../input_variables/dfpt/#ieig2rf">ieig2rf</a>.</p>
+<p>The <strong>k</strong>-point convergence can be strongly improved by restoring the charge
+neutrality through the reading of the Born effective charge and dielectric
+tensor (controlled by the input variable <a class="wikilink" href="../../input_variables/files/#getddb">getddb</a>). More information on the
+importance of charge neutrality fulfillment can be found in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Ponce2015" title="Temperature dependence of the electronic structure of semiconductors and insulators">Ponce2015</a>. The
+value of <a class="wikilink" href="../../input_variables/dfpt/#elph2_imagden">elph2_imagden</a> sets the imaginary shifts used to smooth numerical
+instabilities in the denominator of the sum-over-states expression.</p>
+<p>We have checked that the implementation correctly holds for arbitrarily small
+<a class="wikilink" href="../../input_variables/dfpt/#elph2_imagden">elph2_imagden</a> parameters, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Ponce2015" title="Temperature dependence of the electronic structure of semiconductors and insulators">Ponce2015</a>. The input variable <a class="wikilink" href="../../input_variables/dfpt/#smdelta">smdelta</a>
+triggers the calculation of the electronic lifetime and the value of the
+smearing delta function can be specified through <a class="wikilink" href="../../input_variables/dfpt/#esmear">esmear</a>.</p>
+<p>A double grid can be used to speed-up the calculations with <a class="wikilink" href="../../input_variables/dev/#getwfkfine">getwfkfine</a> or
+<a class="wikilink" href="../../input_variables/dev/#irdwfkfine">irdwfkfine</a>. The variable <a class="wikilink" href="../../input_variables/dev/#getgam_eig2nkq">getgam_eig2nkq</a> gives the contribution at Γ so
+that the Debye-Waller term can be computed. This variable is only relevant for
+calculations of AHC using the abinit program only. It is nonetheless
+recommended to use the provided python post-processing script
+temperature_para.py with its module rf_mods.py in the directory
+scripts/post_processing/ to allow for more flexibility. The python scripts
+support multi-threading.</p>
+<p>The following steps are required to perform an AHC calculation:</p>
+<ul>
+<li>Perform a response function calculation at <strong>q</strong>=Γ with electric field perturbation.</li>
+<li>Perform phonon calculations and produce the EPC for a large set of wavevectors <strong>q</strong>, reading the Born effective charge and dielectric tensor with <a class="wikilink" href="../../input_variables/files/#getddb">getddb</a>.</li>
+<li>Gather and compute the impact of the electron-phonon coupling on the electronic eigenenergies using the temperature_para.py python script.</li>
+</ul>
+<p>The outputs of the script are provided in text and NetCDF format to allow for
+later reading inside ABINIT. This could be used in the future developments of
+ABINIT to compute temperature-dependent optical properties for example.</p>
+<p>For the temperature dependence of the Fermi energy, see
+<a class="wikilink" href="../../topic_ElPhonTransport/">topic_ElPhonTransport</a>.</p>
+<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<p><em>basic:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dfpt/#bdeigrf">bdeigrf</a>  BanD for second-order EIGenvalues from Response-Function</li>
+<li><a class="wikilink" href="../../input_variables/dfpt/#elph2_imagden">elph2_imagden</a>  ELectron-PHonon interaction at 2nd order : IMAGinary shift of the DENominator</li>
+</ul>
+<p><em>compulsory:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dfpt/#ieig2rf">ieig2rf</a>  Integer for second-order EIGenvalues from Response-Function</li>
+<li><a class="wikilink" href="../../input_variables/dfpt/#smdelta">smdelta</a>  SMeared DELTA function</li>
+</ul>
+<p><em>useful:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dfpt/#esmear">esmear</a>  Eigenvalue SMEARing</li>
+<li><a class="wikilink" href="../../input_variables/files/#getddb">getddb</a>  GET the DDB from ...</li>
+<li><a class="wikilink" href="../../input_variables/dev/#getgam_eig2nkq">getgam_eig2nkq</a>  GET the GAMma phonon data EIG2NKQ from dataset</li>
+<li><a class="wikilink" href="../../input_variables/dev/#getwfkfine">getwfkfine</a>  GET the fine grid wavefunctions from _WFK file</li>
+<li><a class="wikilink" href="../../input_variables/dev/#irdwfkfine">irdwfkfine</a>  Integer that governs the ReaDing of the grid _WFK file on the FINE grid</li>
+</ul>
+<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<p><em>v5:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t28.in" title="Crystalline Silicon Test the computation of the thermal eigenvalue corrections using anaddb and the merged second order eigenvalue file,  from test 27. NOTE : the DDB is actually taken from the Input directory,  not from the test 26. - I find this a bit misleading,  XG -.">tests/v5/Input/t28.in</a></li>
+</ul>
+<p><em>v6:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t37.in" title="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . Warning : only valid for Gamma,  AND the temperature-dependent shifts must be averaged over degenerate states.">tests/v6/Input/t37.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t40.in" title="Use anaddb to compute the T-dependent correction.">tests/v6/Input/t40.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t50.in" title="He BCC primitive cell. Fake smooth pseudopotential. For testing the electron-phonon modification of the electronic structure. To be compared with the results of tests 51 to 59. Use a 2x2x2 grid of k (shifted) and q (non-shifted) points. No imaginary frequences for the phonons with this choice. Computation of the electronic eigenvalues as well as phonon eigenfrequencies, and corresponding ingredients for the computation of the electron-phonon effect,  in the next tests 51-53.">tests/v6/Input/t50.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t53.in" title="He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 50. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 57 and 59. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775400E-03  (kpt 2,  band 1) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970638E-03  (kpt 1,  band 1) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291344E-03  (kpt 1,  bands 2 to 4) Note that the k point grid is shifted,  but not the q point grid.">tests/v6/Input/t53.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t57.in" title="He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 54. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 53 and 59. Agreement at the level of the sixth digit. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775406E-03  (kpt 1,  bands 1 and 2) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970635E-03  (kpt 4,  bands 1 and 2) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291346E-03  (kpt 1,  bands 3 to 8)">tests/v6/Input/t57.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t59.in" title="He BCC 8-atom supercell. Fake smooth pseudopotential. Follow-up of test 58. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 53 and 57. Agreement at the level of the sixth digit. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775401E-03  (bands 1 to 6) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970636E-03  (bands 7 and 8) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291344E-03  (bands 9 to 14)">tests/v6/Input/t59.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t69.in" title="H2 molecule in a reasonably large box Analysis of the test 68 results,  using anaddb.">tests/v6/Input/t69.in</a></li>
+</ul>
+<p><em>v7:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t50.in" title="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . The temperature-dependent shifts must be averaged over degenerate states. This temperature-dependent calculation make use of a k-point interpolation to speed up the convergence study with respect to the q-points integration. Two q-points are computed.">tests/v7/Input/t50.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t51.in" title="This tests make use of the irdwfkfine variable instead of the getwfkfine variable used in the previous test. The third q-point is computed here.">tests/v7/Input/t51.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t52.in" title="Merge the EIGR2D files from test 50 and 51.">tests/v7/Input/t52.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t53.in" title="Merge the EIGR2D files from test 50 and 51.">tests/v7/Input/t53.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t54.in" title="Use anaddb to compute the T-dependent correction of electronic structure.">tests/v7/Input/t54.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t55.in" title="Diamond. Diamond dynamical temperature-dependent of the electronic structure. Three q-points are computed.">tests/v7/Input/t55.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t57.in" title="Diamond. The wtq variable is introduced to be able to reproduce the q-point weight obtained with ngqpt and qptopt. The main reason being that the initialization of large q-point (same for k-point) grid is extremely slow. Inputing manually the qpt and wtq in the input file avoid such inefficient initialization.">tests/v7/Input/t57.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t58.in" title="Diamond. Test the getddb variable that cancels the divergence in el-ph for small q-points Such divergence is induced by a residual electric field. Note: The Fan terms in DATASET 6 should be different (renormalized) from the one of DATASET 5.">tests/v7/Input/t58.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t59.in" title="Diamond. Test the getddb variable that cancels the divergence in el-ph for small q-points Such divergence is induced by a residual electric field. Note: DATASET 7 test the irdddb that should behave exactly as getddb.">tests/v7/Input/t59.in</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (SP)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

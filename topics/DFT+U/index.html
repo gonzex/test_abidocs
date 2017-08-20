@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/DFT+U/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>DFT+U - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../DFPT/">DFPT</a>
+</li>
+                            
+<li class="active">
+    <a href="./">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../DFPT/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../DMFT/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
+        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This feature is available only in PAW. The DFT+U framework is described in
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Anisimov1991" title="Density-functional calculation of effective Coulomb interactions in metals">Anisimov1991</a> and <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Liechtenstein1995" title="Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators">Liechtenstein1995</a>. In ABINIT, the DFT+U approximation
+is implemented inside the PAW atomic spheres only. Two choices of double
+counting are provided: the Full Localized limit and the Around Mean Field
+approximation. Our implementation is described in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008a" title="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters">Amadon2008a</a>. It follows
+the main lines of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bengone2000" title="Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}">Bengone2000</a>. See als <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Czyzyk1994" title="Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$">Czyzyk1994</a>. Forces and stress
+are implemented. For details on keywords
+(<a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>,<a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a>,<a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a>,<a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>,<a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>,<a class="wikilink" href="../../input_variables/paw/#dmatudiag">dmatudiag</a>) see
+keyword <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a> in input variables.</p>
+<p>In both the output and log files, we can find:</p>
+<p>- The DFT+U contribution of energy which is contained inside the PAW
+Spherical terms in the output file.</p>
+<p>- The Decomposition of the LDA+U energy is given (Interaction energy, Double
+counting term, and sum of the two) in the log file.</p>
+<p>- The orbital density matrix (n_{m,m'}^{\sigma}), also called occupation
+matrix (corresponding to Eq.(9) of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bengone2000" title="Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}">Bengone2000</a> and Eq.(1) of
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Liechtenstein1995" title="Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators">Liechtenstein1995</a>, see also [5] and variable <a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>) is also given
+for each atom in the basis of real spherical harmonics. It is given at each
+SCF step in the log file: one can thus check the convergency of the
+calculation.</p>
+<p>Consistency between total energy and forces in DFT+U have been checked.</p>
+<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<p><em>compulsory:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a>  value of J for PAW+U</li>
+<li><a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>  value of angular momentum L for PAW+U</li>
+<li><a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a>  value of U for PAW+U</li>
+<li><a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>  USE PAW+U (spherical part)</li>
+</ul>
+<p><em>expert:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/ffield/#atvshift">atvshift</a>  ATomic potential (V) energy SHIFTs</li>
+<li><a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>  Density MATrix for PAW+U OPTion</li>
+<li><a class="wikilink" href="../../input_variables/paw/#dmatudiag">dmatudiag</a>  Density MATrix for paw+U, DIAGonalization</li>
+<li><a class="wikilink" href="../../input_variables/paw/#f4of2_sla">f4of2_sla</a>  F4 Over F2 ratio of Slater integrals</li>
+<li><a class="wikilink" href="../../input_variables/paw/#f6of2_sla">f6of2_sla</a>  F6 Over F2 ratio of Slater integrals</li>
+<li><a class="wikilink" href="../../input_variables/dev/#macro_uj">macro_uj</a>  MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)</li>
+<li><a class="wikilink" href="../../input_variables/ffield/#natvshift">natvshift</a>  Number of ATomic potential (V) energy SHIFTs (per atom)</li>
+<li><a class="wikilink" href="../../input_variables/dev/#normpawu">normpawu</a>  NORMalize atomic PAW+U projector</li>
+<li><a class="wikilink" href="../../input_variables/dev/#pawujat">pawujat</a>  PAW+macro_UJ, ATom number</li>
+<li><a class="wikilink" href="../../input_variables/dev/#pawujrad">pawujrad</a>  PAW+macro_UJ, sphere RADius</li>
+<li><a class="wikilink" href="../../input_variables/dev/#pawujv">pawujv</a>  PAW+macro_UJ, potential shift (V)</li>
+</ul>
+<p><em>internal:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/internal/#natpawu">natpawu</a>  Number of AToms on which PAW+U is applied</li>
+</ul>
+<p><em>useful:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a>  initial Density MATrix for PAW+U</li>
+<li><a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>  USE of an initial Density MATrix in Paw+U</li>
+</ul>
+<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<p><em>v5:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t08.in" title="Simple test for LDA+U implementation. no forces,  2 Ni and 2 O atoms in an fcc supercell. The cut-off is unrealistic. This test tests the following part of the code : * paw LDA+U (pawpupot,  pawpuenergy,  pawpuinit)">tests/v5/Input/t08.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t14.in" title="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals.">tests/v5/Input/t14.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t15.in" title="Ni molecule in a big box. Test the use of the atvshift variable First dataset : no shift,  the ten states number 9 to 18 come from the 3d atomic states,  the state number 19 is a bonding 4s state. States number 16 and 17 are degenerate 3d pi antibonding states (m=1 and -1). State number 18 is a 3d sigma antibonding state (m=0). Second dataset : add a 0.001 atomic shift to the m=0 potential. Most of the levels change by less than 0.0002 (and their energy decrease),  except state number 9 (a 3d sigma bonding state (m=0)),  that goes from -0.24020 to -0.23982 (+0.0004) and state number 18,  that goes from -0.15439 to 0.15399 (+0.0004). Third dataset : add a 0.001 atomic shift to the m=1 and m=-1 potentials. All the levels are affected (likely the m=1 and -1 orbitals adjust,  and cause modification of the potential),  but the states 10,  11,  16,  and 17 increase their energy,  while the other state see their energy decrease. Acting separately on the m=1 potential or the m=-1 cause (correctly) the breaking of the degeneracy. This test was not easy to make portable. The problem lies in the fact that when the density becomes negative,  due to Bragg oscillations,  the xc kernel can be extremely large,  and when use for the prediction of the residual of the forces,  the differences between machines can be extremely large. IN order to see this effect,  put ecut 7 and npulayit 7 (its default value).">tests/v5/Input/t15.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t16.in" title="NiO: 2 Ni and 2 O atoms in an fcc supercell. Different combinations of nsppol/nspden/nspinor/pawspnorb are tested in the PAW+U formalism: 1- non-magnetic                     nsppol/nspden/nspinor=1/1/1 2- non-magnetic LDA+U               nsppol/nspden/nspinor=1/1/1 3- ferro-magnetic LDA+U             nsppol/nspden/nspinor=2/2/1 4- antiferro-magnetic LDA+U         nsppol/nspden/nspinor=1/2/1 5- non-collinear magnetism          nsppol/nspden/nspinor=1/4/2 6- non-collinear magnetism LDA+U    nsppol/nspden/nspinor=1/4/2 7- non-collinear magnetism LDA+U+SO nsppol/nspden/nspinor=1/4/2 8- non-magnetic LDA+U+SO            nsppol/nspden/nspinor=1/1/2 Cut-off and k-points are unrealistic.">tests/v5/Input/t16.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t19.in" title="FCC Gadolinium. PAW + U calculation Test the imposition of the density matrix (10 first steps) and related variables. Test of partial DOS is also done (through the diff of DOS_AT0001)">tests/v5/Input/t19.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t20.in" title="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)">tests/v5/Input/t20.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t33.in" title="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases.">tests/v5/Input/t33.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t37.in" title="Simple test for LDA+U features. 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Antiferromagnetism and PAW+U * Use of an initial and constant density matrix during the first SCF iterations">tests/v5/Input/t37.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t38.in" title="Preliminary step for test 40: bcc Fe ferromagnetic structure. Relatively low cut-offs and few k-points. This test is done within GGA and magnetism in PAW formalism. Wavefunction printed to be used in v5#39  test. Density is printed out to prepare v5#40 test.">tests/v5/Input/t38.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t39.in" title="Compute U in bcc Fe in 2 atomic supercell.">tests/v5/Input/t39.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t40.in" title="Density from test 38 is read;  then a non self-consistent calculation is done and the m-decomposed LDOS on the first atom is printed out.">tests/v5/Input/t40.in</a></li>
+</ul>
+<p><em>v7:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in" title="(Apparently the documentation section of this test has been lost)">tests/v7/Input/t21.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t22.in" title="EuO rock salt structure. 27-electron PAW pseudo (4f and 5d are explicitly treated : 4d10 4f7 5s2 5p6 (5d0) 6s2 ) Test of initialisation using occopt=1 (the default) with non-zero spinmagntarget, and also metallic occopt. Also test pawxcdev=0">tests/v7/Input/t22.in</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (BAmadon)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/ffield/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Varff - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../eph/">Electron-Phonon</a>
+</li>
+            
+<li class="active">
+    <a href="./">Varff</a>
+</li>
+            
+<li >
+    <a href="../files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../eph/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../files/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#atvshift">atvshift</a></li>
+        <li class="main "><a href="#bdberry">bdberry</a></li>
+        <li class="main "><a href="#berryopt">berryopt</a></li>
+        <li class="main "><a href="#berrysav">berrysav</a></li>
+        <li class="main "><a href="#berrystep">berrystep</a></li>
+        <li class="main "><a href="#bfield">bfield</a></li>
+        <li class="main "><a href="#ddamp">ddamp</a></li>
+        <li class="main "><a href="#dfield">dfield</a></li>
+        <li class="main "><a href="#efield">efield</a></li>
+        <li class="main "><a href="#jfielddir">jfielddir</a></li>
+        <li class="main "><a href="#kberry">kberry</a></li>
+        <li class="main "><a href="#maxestep">maxestep</a></li>
+        <li class="main "><a href="#natvshift">natvshift</a></li>
+        <li class="main "><a href="#nberry">nberry</a></li>
+        <li class="main "><a href="#polcen">polcen</a></li>
+        <li class="main "><a href="#qprtrb">qprtrb</a></li>
+        <li class="main "><a href="#red_dfield">red_dfield</a></li>
+        <li class="main "><a href="#red_efield">red_efield</a></li>
+        <li class="main "><a href="#red_efieldbar">red_efieldbar</a></li>
+        <li class="main "><a href="#spinmagntarget">spinmagntarget</a></li>
+        <li class="main "><a href="#vprtrb">vprtrb</a></li>
+        <li class="main "><a href="#zeemanfield">zeemanfield</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<h2 id="atvshift"><strong>atvshift</strong><a class="headerlink" href="#atvshift" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> ATomic potential (V) energy SHIFTs<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/ffield/#natvshift">natvshift</a>,<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>,<a class="wikilink" href="../../input_variables/basic/#natom">natom</a>)<br />
+<em>Default value:</em> <em>0.0d0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a> /= 0 and <a class="wikilink" href="../../input_variables/ffield/#natvshift">natvshift</a> in [5,7]<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t14.in" title="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals.">tests/v5/Input/t14.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t15.in" title="Ni molecule in a big box. Test the use of the atvshift variable First dataset : no shift,  the ten states number 9 to 18 come from the 3d atomic states,  the state number 19 is a bonding 4s state. States number 16 and 17 are degenerate 3d pi antibonding states (m=1 and -1). State number 18 is a 3d sigma antibonding state (m=0). Second dataset : add a 0.001 atomic shift to the m=0 potential. Most of the levels change by less than 0.0002 (and their energy decrease),  except state number 9 (a 3d sigma bonding state (m=0)),  that goes from -0.24020 to -0.23982 (+0.0004) and state number 18,  that goes from -0.15439 to 0.15399 (+0.0004). Third dataset : add a 0.001 atomic shift to the m=1 and m=-1 potentials. All the levels are affected (likely the m=1 and -1 orbitals adjust,  and cause modification of the potential),  but the states 10,  11,  16,  and 17 increase their energy,  while the other state see their energy decrease. Acting separately on the m=1 potential or the m=-1 cause (correctly) the breaking of the degeneracy. This test was not easy to make portable. The problem lies in the fact that when the density becomes negative,  due to Bragg oscillations,  the xc kernel can be extremely large,  and when use for the prediction of the residual of the forces,  the differences between machines can be extremely large. IN order to see this effect,  put ecut 7 and npulayit 7 (its default value).">tests/v5/Input/t15.in</a></li>
+</ul>
+<p>Defines for each atom and each spin channel (at present, can only be used with
+<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=1 or 2, like the +U scheme), a possible potential shift, for the d
+(with <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>=2, <a class="wikilink" href="../../input_variables/ffield/#natvshift">natvshift</a>=5), or f states (with <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>=3,
+<a class="wikilink" href="../../input_variables/ffield/#natvshift">natvshift</a>=7). In the case of d states, and 2 spin channels, a set of 10
+numbers for each atom must be defined. The first set of 5 numbers corresponds
+to real spherical harmonics m=-2 to m=+2 for the spin-up channel, the second
+set of 5 numbers corresponds to real spherical harmonics m=-2 to m=+2 for the
+spin-down channel. In the case of f states, the same ordering applies, for
+sets of 7 numbers, corresponding to m=-3 to m=+3.<br />
+<a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a> should be non-zero, <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> should be 2 or 3.</p>
+<hr />
+<h2 id="bdberry"><strong>bdberry</strong><a class="headerlink" href="#bdberry" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> BanD limits for BERRY phase<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (4)<br />
+<em>Default value:</em> 4<em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> in [1, 2, 3] and <a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a> &gt; 0<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_81.in" title="81. Nitrogen atom in a big box,  spin-polarized. Compute Berry phase for atom at different positions.">tests/seq/Input/tsv2_81.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_82.in" title="GaAs,  zinc-blende structure. Compute Berry phase along 0 0 1,  using a 4x4x10 sampling.">tests/seq/Input/tsv2_82.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_03.in" title="Zinc-blende GaAs (2 atoms per unit cell), using HGH psps. Test the computation of the Berry phase. Grid sampling is very rough,  for speed. 8 dataset,  testing all combinations of location of wfs (memory or disk),  spin polarisation, use (or non-use) of time-reversal symmetry.">tests/seq/Input/tsv3_03.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_04.in" title="Zinc-blende GaAs (2 atoms per unit cell), using old,  rather inaccurate psps. Computation of the Berry phase. Test the doubling of the step of the sampling.">tests/seq/Input/tsv3_04.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_05.in" title="Si in diamond structure;  2 special points;  low ecut. With a 4x4x4 k point grid (!only one shift,  but OK because symmetry is imposed),  compute the dielectric constant by two different techniques">tests/seq/Input/tsv3_05.in</a></li>
+<li>tutorespfn:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/telast_5.in" title="AlAs in hypothetical wurzite (hexagonal) structure Alternative response function calculation for some rigid-atom piezoelectric tensor elements.">tests/tutorespfn/Input/telast_5.in</a></li>
+<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t66.in" title="Test of the strain perturbation for the rigid-ion piezoelectric tensor.  Rhombohedrally distorted AlP as in the previous test,  but using a ground-state finite- difference calculation of the d/dk wave functions.  Such calculations were used extensively to test the response function piezoelectric tensor by comparison to numerical derivatives of the ground-state polarization.  Using the same k sample in the ground state and response function calculations,  excellent agreement has been obtained in a variety of cases (including a better-converged version of this one).  Results using the finite- diffrence d/dk and the analytic d/dk as in the preceeding test agree in the limit of large k sample. The analytic form converges much more rapidly,  and is consistent with the slowly converging polarization numerical derivatives. The present version of this calculation uses berryopt = -2 to utilize the routine berryphase_new.f The ground-state polarization calculations used to compute the numerical derivatives in such tests should also be computed using berryphase_new.f setting berryopt = -1 and rfdir = 1 1 1 so that the cartesian polarization is automatically generated. This eliminates several issues that needed special attention using berryopt = 1 and the original berryphase.f routine. The resulting cartesian polarization derivatives represent the &quot;improper&quot; piezoelectric tensor,  and have to be corrected to yield the &quot;proper&quot; tensor as described in D. Vanderbilt,  J. Phys. Chem. Solids 61,  147 (2000),  using Eq.(15).  The response-function calculation gives the proper piezoelectric tensor.  Only the electron response,  and not the strain-induced movement of the rigid ions contributes to the proper tensor.">tests/v4/Input/t66.in</a></li>
+</ul>
+<p>Give the lower band and the upper band of the set of bands for which the Berry
+phase must be computed. Irrelevant if <a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a> is not positive. When
+<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a> is 1 (no spin-polarisation), only the two first numbers, giving the
+lower and highest bands, are significant. Their occupation number is assumed
+to be 2. When <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a> is 2 (spin-polarized calculation), the two first
+numbers give the lowest and highest bands for spin up, and the third and
+fourth numbers give the lowest and highest bands for spin down. Their
+occupation number is assumed to be 1 .</p>
+<p>Presently, <a class="wikilink" href="../../input_variables/ffield/#bdberry">bdberry</a> MUST be initialized by the user in case of a Berry
+phase calculation with <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 1, 2, or 3: the above-mentioned default
+will cause an early exit.</p>
+<hr />
+<h2 id="berryopt"><strong>berryopt</strong><a class="headerlink" href="#berryopt" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> BERRY phase OPTions<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0  </p>
+<p>Specifies the use of Berry phase for the computation of either the
+polarization, the derivatives with respect to the wavevector, or finite
+electric field calculations.</p>
+<ul>
+<li>0 =&gt; no computation of expressions relying on a Berry phase (default) </li>
+<li>1 =&gt; the computation of Berry phases is activated (berryphase routine) </li>
+<li>2 =&gt; the computation of derivatives with respect to the wavevector, thanks to the Berry phase finite-difference formula, is activated (uderiv routine) </li>
+<li>3 =&gt; same as option 1 and 2 together 
+<strong>Note that options 1 to 3 require the use of a serial build of Abinit.</strong></li>
+<li>-1 =&gt; alternative computation of Berry phases (berryphase_new routine) </li>
+<li>-2 =&gt; alternative computation of derivatives with respect to the wavevector, thanks to the Berry phase finite-difference formula (berryphase_new routine) </li>
+<li>-3 =&gt; same as option -1 and -2 together 
+<strong>Options -1 to -3 permit use of a parallel build and will be preferred by most users.</strong></li>
+<li>4 =&gt; finite electric field calculation (unreduced E-field) </li>
+<li>6 =&gt; finite electric displacement field calculation (unreduced D-field) </li>
+<li>14 =&gt; finite reduced electric field calculation </li>
+<li>16 =&gt; finite electric displacement field calculation </li>
+<li>17 =&gt; mixed electric boundary condition: finite reduced electric field in some directions, finite reduced electric displacement field along other directions. See variable <a class="wikilink" href="../../input_variables/ffield/#jfielddir">jfielddir</a> for more details. </li>
+</ul>
+<p>Other related input variables are :</p>
+<ul>
+<li>in case of <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=1,2, or 3 : <a class="wikilink" href="../../input_variables/ffield/#bdberry">bdberry</a> and <a class="wikilink" href="../../input_variables/ffield/#kberry">kberry</a>; also, <a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a> must be larger than 0; </li>
+<li>in case of <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=-1,-2, or -3 : the variable <a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a> must be used to specify the primitive vector along which the projection of the polarization or the ddk will be computed. For example if <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=-1 and <a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a>=1 0 0, the projection of the polarization along the reciprocal lattice vector G_1 is computed. In case <a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a>=1 1 1, ABINIT computes the projection of P along G_1, G_2 and G_3 and transforms the results to cartesian coordinates; </li>
+<li>in cases where <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> is negative, <a class="wikilink" href="../../input_variables/ffield/#berrystep">berrystep</a> allow a computation of multiple-step Berry phase in order to accelerate the convergence. </li>
+<li><a class="wikilink" href="../../input_variables/ffield/#efield">efield</a> and <a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a> in case of <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=4 ; </li>
+</ul>
+<p>The cases <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=-1,-2,-3, 4, 6, 7, 14, 16, and 17 have to be used with
+<a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a>=1.</p>
+<p>The cases <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=-1 and 4, 6, 7, 14, 16, 17 are compatible with PAW,
+howevever, if in these cases one uses <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>/=3, one must also use only
+symmorphic symmetries (either because the space group is symmorphic or the
+variable <a class="wikilink" href="../../input_variables/dev/#symmorphi">symmorphi</a> is set to zero).</p>
+<p>For a phonon calculation under a finite electric field, respect the following
+procedure.</p>
+<ul>
+<li>1. Run a scf ground-state calculation at zero electric field to get wavefunctions to initialize the ground-state calculation in finite electric fields. </li>
+<li>2. Run a scf ground-state calculation in finite electric field. The electric field is controlled by the input variable <a class="wikilink" href="../../input_variables/ffield/#efield">efield</a>. <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> should be 4. The input variable <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> should be set to be 2. </li>
+<li>3. Based on the wave functions obtained in step (2), perform phonon calculation by setting <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=4, <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=3 and The same value of <a class="wikilink" href="../../input_variables/ffield/#efield">efield</a> than in step 2. <a class="wikilink" href="../../input_variables/basic/#nsym">nsym</a> should be set to 1 currently but this restriction may be removed later . The other parameters are the same as phonon calculation at zero electric field. </li>
+<li>Note : the choice of k-point sampling N x N x N should be the same in the three runs and N should be an even number. </li>
+</ul>
+<p>In case of finite electric and displacement field calculations
+(<a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=4,6,7,14,16,17), see also the input variables <a class="wikilink" href="../../input_variables/ffield/#berrysav">berrysav</a>,
+<a class="wikilink" href="../../input_variables/ffield/#dfield">dfield</a>, <a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a>, <a class="wikilink" href="../../input_variables/ffield/#red_efield">red_efield</a>, <a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a></p>
+<hr />
+<h2 id="berrysav"><strong>berrysav</strong><a class="headerlink" href="#berrysav" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> BERRY SAVe<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>
+<p>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_124.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=6 (finite electric displacement field calculation, relaxing cell perameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_124.in</a></p>
+</li>
+<li>
+<p>0 =&gt; for finite electric field calculation (<a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=4/14), the polarization branch will be chosen on each iteration from (-pi, pi); for finite electric displacement field calculation(<a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=6/7/16/17), the polarization will be chosen to minimize the internal energy. </p>
+</li>
+<li>1 =&gt; the polarization will be kept in the same branch on each iteration. At the end of the run, a file "POLSAVE" will be saved containing the reduced polarization in atomic units. Note: Make sure that "POLSAVE" is empty or it does not exist before the calculation, or else that it specifies the desired polarization branch. </li>
+</ul>
+<hr />
+<h2 id="berrystep"><strong>berrystep</strong><a class="headerlink" href="#berrystep" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> BERRY phase : multiple STEP<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> 0 &gt; <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a><br />
+Test list:</p>
+<ul>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t20.in" title="Test of berrystep Al-As cristal,  zinc-blende structure Compute the polarization along strings of k-points parallel to the primitive vectors of the reciprocal lattice,  and using multiple step berry phase calculation. (Tests 21-30 are related to geometry optimization,  molecular dynamics,  etc) Cannot be executed in parallel: chkint_prt: ERROR - Context : the value of the variable nproc is 2. The value of the input variable berrystep is 5,  while it must be equal to 1">tests/v6/Input/t20.in</a></li>
+</ul>
+<p>If <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> is negative, this variable is used to compute berry phases
+using multiple discrete steps, in order to accelerate convergence. The single-
+step berry phase is the standard calculation using strings of k-points based
+on overlap of Bloch function separated by dk, while the two-step berry phase
+use strings use overlaps based on dk and 2<em>dk, the three-step use overlaps
+based on dk, 2</em>dk and 3*dk...</p>
+<p>The default value of this variable is 1, meaning that only the single-step
+berry phase calculation is done. If a larger value is set, ABINIT will compute
+all the multiple-step berry phase from the single-step to the
+<a class="wikilink" href="../../input_variables/ffield/#berrystep">berrystep</a>-step, and use the large-step values of berry phase to correct
+the single-step berry phase. Use with care: while experience is still to be
+gained with this procedure, the outlook is promising.</p>
+<hr />
+<h2 id="bfield"><strong>bfield</strong><a class="headerlink" href="#bfield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> finite B FIELD calculation<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/MagField">MagField</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3*0.0<br />
+Test list:</p>
+<ul>
+<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t07.in" title="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ...">tests/paral/Input/t07.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t07.in" title="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ...">tests/paral/Input/t07.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t07.in" title="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ...">tests/paral/Input/t07.in</a></li>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t43.in" title="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial.) Cannot be executed with more than 1 MPI node.">tests/v6/Input/t43.in</a></li>
+</ul>
+<p>Perform finite magnetic field calculation.<br />
+<strong>THIS CODE IS UNDER DEVELOPMENT AND IS NOT READY FOR USE.</strong></p>
+<hr />
+<h2 id="ddamp"><strong>ddamp</strong><a class="headerlink" href="#ddamp" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> electric Displacement field DAMPing parameter<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 6 or 16<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_121.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=14 (finite reduced electric field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_121.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_122.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_122.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_124.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=6 (finite electric displacement field calculation, relaxing cell perameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_124.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_126.in" title="AlAs case,  to test the &quot;polcen&quot; in finite reduced electric field calculation. (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_126.in</a></li>
+</ul>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=6, the electric field is updated after each SCF iteration
+according to E_{n+1}= <a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a><em>(D - 4</em>pi<em>P_{n}) + (1-<a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a>)</em>E_{n} where
+P_{n} and E_{n} are the polarization and electric field after nth SCF
+iteration. <a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a> is a damping parameter used to control the convergence
+speed.<br />
+In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=16, the electric field is updated after each SCF
+iteration according to e_{n+1}= <a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a><em>(d - p_{n}) + (1-<a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a>)</em>e_{n}<br />
+If you have difficulty getting convergence, try to reduce this value or reduce
+maxestep. This parameter is used in finite electric displacement field
+calculations (berryopt=6,16,17).</p>
+<hr />
+<h2 id="dfield"><strong>dfield</strong><a class="headerlink" href="#dfield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Displacement FIELD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 6, <a class="wikilink" href="../../input_variables/ffield/#efield">efield</a><br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_122.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_122.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_124.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=6 (finite electric displacement field calculation, relaxing cell perameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_124.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_126.in" title="AlAs case,  to test the &quot;polcen&quot; in finite reduced electric field calculation. (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_126.in</a></li>
+</ul>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=6, <a class="wikilink" href="../../input_variables/ffield/#dfield">dfield</a> specifies the (unreduced) finite electric
+displacement field vector, in atomic units, that is to be imposed as a
+constraint during the calculation.</p>
+<hr />
+<h2 id="efield"><strong>efield</strong><a class="headerlink" href="#efield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Electric FIELD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 4 or 6  </p>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=4, a finite electric field calculation is performed. The
+value of this electric field, and its direction is determined by <a class="wikilink" href="../../input_variables/ffield/#efield">efield</a>.
+It must be given in atomic units (1 a.u. of electric field= 514220624373.482
+V/m, see note below), in cartesian coordinates.</p>
+<p>References for the calculation under electric field (based on multi k point
+Berry phase) :</p>
+<ul>
+<li>Nunes and Vanderbilt, PRL 73, 712 (1994) : real-space version of the finite-field Hamiltonian </li>
+<li>Nunes and Gonze, PRB 63, 155107 (2001) : reciprocal-space version of the finite-field Hamiltonian (the one presently implemented), and extensive theoretical analysis </li>
+<li>Souza, Iniguez and Vanderbilt, PRL 89, 117602 (2003) : implementation of the finite-field Hamiltonian (reciprocal-space version) </li>
+<li>Zwanziger, Galbraith, Kipouros, Torrent, Giantomassi and Gonze, Comp. Mater. Sci. 58, 113 (2012) : extension to PAW formalism </li>
+</ul>
+<p>See also Umari, Gonze, Pasquarello, PRL 90, 027401 (2003).</p>
+<p>The atomic unit of electric field strength is : e_Cb/(4 pi eps0 a0**2), where
+e_Cb is the electronic charge in Coulomb (1.60217653e-19), eps0 is the
+electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
+(0.5291772108e-10).</p>
+<hr />
+<h2 id="jfielddir"><strong>jfielddir</strong><a class="headerlink" href="#jfielddir" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> electric/displacement FIELD DIRection<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 17<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a></li>
+</ul>
+<p>When specifying mixed electric field boundary conditions ( <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=17),
+jfielddir controls whether reduced electric field (<a class="wikilink" href="../../input_variables/ffield/#jfielddir">jfielddir</a>=1) or reduced
+electric displacement field (<a class="wikilink" href="../../input_variables/ffield/#jfielddir">jfielddir</a>=2) is chosen to be fixed, in each
+of the three lattice directions (i.e., in the reduced, not the Cartesian,
+frame). For example, <a class="wikilink" href="../../input_variables/ffield/#jfielddir">jfielddir</a>=(1 1 2) tells the code to use fixed ebar_1
+and ebar_2 along the first two lattice directions and fixed d_3 along the
+third.<br />
+For the case of mixed electric field boundary conditions, <a class="wikilink" href="../../input_variables/ffield/#red_efieldbar">red_efieldbar</a>
+and <a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a> are used to control ebar and d, respectively. For example,
+for electric boundary conditions corresponding to a material in a parallel-
+plate capacitor, if you want to control d_3=d0, while fixing ebar_1=ebar_2=0,
+then the input files should have <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=17, <a class="wikilink" href="../../input_variables/ffield/#jfielddir">jfielddir</a>=(1 1 2),
+<a class="wikilink" href="../../input_variables/ffield/#red_efieldbar">red_efieldbar</a>=(0.0 0.0 a), and <a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a>=(b c d0). Here a, b, and c
+are the starting values. They can be chosen in this way: do a single run for
+fixed d calculation (<a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a>=0,0,d0), from the final results you will
+have ebar_3, which is a good guess for a. Then do another single run for fixed
+ebar calculation (<a class="wikilink" href="../../input_variables/ffield/#red_efieldbar">red_efieldbar</a>=(0 0 0)), from the final results you will
+have d_1,d_2, these are good guesses for b, c.</p>
+<hr />
+<h2 id="kberry"><strong>kberry</strong><a class="headerlink" href="#kberry" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> K wavevectors for BERRY phase computation<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (3,<a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a>)<br />
+<em>Default value:</em> <em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 1, 2, or 3<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_81.in" title="81. Nitrogen atom in a big box,  spin-polarized. Compute Berry phase for atom at different positions.">tests/seq/Input/tsv2_81.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_82.in" title="GaAs,  zinc-blende structure. Compute Berry phase along 0 0 1,  using a 4x4x10 sampling.">tests/seq/Input/tsv2_82.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_03.in" title="Zinc-blende GaAs (2 atoms per unit cell), using HGH psps. Test the computation of the Berry phase. Grid sampling is very rough,  for speed. 8 dataset,  testing all combinations of location of wfs (memory or disk),  spin polarisation, use (or non-use) of time-reversal symmetry.">tests/seq/Input/tsv3_03.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_04.in" title="Zinc-blende GaAs (2 atoms per unit cell), using old,  rather inaccurate psps. Computation of the Berry phase. Test the doubling of the step of the sampling.">tests/seq/Input/tsv3_04.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_05.in" title="Si in diamond structure;  2 special points;  low ecut. With a 4x4x4 k point grid (!only one shift,  but OK because symmetry is imposed),  compute the dielectric constant by two different techniques">tests/seq/Input/tsv3_05.in</a></li>
+</ul>
+<p>Used for values of <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 1, 2, or 3.</p>
+<p>This array defines, for each Berry phase calculation (the number of such
+calculations is defined by <a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a>), the difference of wavevector between k
+points for which the overlap matrix must be computed. The polarisation vector
+will be projected on the direction of that wavevector, and the result of the
+computation will be the magnitude of this projection. Doing more than one
+wavevector, with different independent direction, allows to find the full
+polarisation vector. However, note that converged results need oriented grids,
+denser along the difference wavevector than usual Monkhorst-Pack grids.</p>
+<p>The difference of wavevector is computed in the coordinate system defined by
+the k-points grid (see <a class="wikilink" href="../../input_variables/basic/#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/gstate/#kptrlatt">kptrlatt</a>), so that the values of
+<a class="wikilink" href="../../input_variables/ffield/#kberry">kberry</a> are integers. Of course, such a k point grid must exist, and all
+the corresponding wavefunctions must be available, so that the computation is
+allowed only when <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> is equal to 3. In order to save computing time,
+it is suggested to make a preliminary calculation of the wavefunctions on the
+irreducible part of the grid, with <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> equal to 1, and then use these
+converged wavefunctions in the entire Brillouin zone, by reading them to
+initialize the <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=3 computation.</p>
+<hr />
+<h2 id="maxestep"><strong>maxestep</strong><a class="headerlink" href="#maxestep" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> MAXimum Electric field STEP<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.005<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 6, 16, or 17<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_122.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_122.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_126.in" title="AlAs case,  to test the &quot;polcen&quot; in finite reduced electric field calculation. (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_126.in</a></li>
+</ul>
+<p>This variable controls the maximum change of electric field when updating the
+electric field after each SCF iteration. When the calculation is difficult to
+converge, try reducing this value or reducing <a class="wikilink" href="../../input_variables/ffield/#ddamp">ddamp</a>. This variable is used
+in finite electric displacement field calculations (<a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=6,16,17).</p>
+<hr />
+<h2 id="natvshift"><strong>natvshift</strong><a class="headerlink" href="#natvshift" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Number of ATomic potential (V) energy SHIFTs (per atom)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a> /= 0, <a class="wikilink" href="../../input_variables/ffield/#atvshift">atvshift</a><br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t14.in" title="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals.">tests/v5/Input/t14.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t15.in" title="Ni molecule in a big box. Test the use of the atvshift variable First dataset : no shift,  the ten states number 9 to 18 come from the 3d atomic states,  the state number 19 is a bonding 4s state. States number 16 and 17 are degenerate 3d pi antibonding states (m=1 and -1). State number 18 is a 3d sigma antibonding state (m=0). Second dataset : add a 0.001 atomic shift to the m=0 potential. Most of the levels change by less than 0.0002 (and their energy decrease),  except state number 9 (a 3d sigma bonding state (m=0)),  that goes from -0.24020 to -0.23982 (+0.0004) and state number 18,  that goes from -0.15439 to 0.15399 (+0.0004). Third dataset : add a 0.001 atomic shift to the m=1 and m=-1 potentials. All the levels are affected (likely the m=1 and -1 orbitals adjust,  and cause modification of the potential),  but the states 10,  11,  16,  and 17 increase their energy,  while the other state see their energy decrease. Acting separately on the m=1 potential or the m=-1 cause (correctly) the breaking of the degeneracy. This test was not easy to make portable. The problem lies in the fact that when the density becomes negative,  due to Bragg oscillations,  the xc kernel can be extremely large,  and when use for the prediction of the residual of the forces,  the differences between machines can be extremely large. IN order to see this effect,  put ecut 7 and npulayit 7 (its default value).">tests/v5/Input/t15.in</a></li>
+</ul>
+<p>Number of atomic potential energy shifts (per atom), to be used to define the
+array <a class="wikilink" href="../../input_variables/ffield/#atvshift">atvshift</a>. If non-zero, only two possibilities exist : 5 for d states
+(with <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>=2), and 7 for f states (with <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>=3). If non-zero, one
+should define <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>, <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> and <a class="wikilink" href="../../input_variables/ffield/#atvshift">atvshift</a>.</p>
+<hr />
+<h2 id="nberry"><strong>nberry</strong><a class="headerlink" href="#nberry" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Number of BERRY phase computations<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 1, 2, or 3<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_81.in" title="81. Nitrogen atom in a big box,  spin-polarized. Compute Berry phase for atom at different positions.">tests/seq/Input/tsv2_81.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv2_82.in" title="GaAs,  zinc-blende structure. Compute Berry phase along 0 0 1,  using a 4x4x10 sampling.">tests/seq/Input/tsv2_82.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_03.in" title="Zinc-blende GaAs (2 atoms per unit cell), using HGH psps. Test the computation of the Berry phase. Grid sampling is very rough,  for speed. 8 dataset,  testing all combinations of location of wfs (memory or disk),  spin polarisation, use (or non-use) of time-reversal symmetry.">tests/seq/Input/tsv3_03.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv3_04.in" title="Zinc-blende GaAs (2 atoms per unit cell), using old,  rather inaccurate psps. Computation of the Berry phase. Test the doubling of the step of the sampling.">tests/seq/Input/tsv3_04.in</a></li>
+</ul>
+<p>Gives the number of Berry phase computations of polarisation, or finite-
+difference estimations of the derivative of wavefunctions with respect to the
+wavevector, each of which might be characterized by a different change of
+wavevector <a class="wikilink" href="../../input_variables/ffield/#kberry">kberry</a>.</p>
+<p>When equal to 0, no Berry phase calculation of polarisation is performed. The
+maximal value of <a class="wikilink" href="../../input_variables/ffield/#nberry">nberry</a> is 20.</p>
+<p>Note that the computation of the polarisation for a set of bands having
+different occupation numbers is meaningless (although in the case of spin-
+polarized calculations, the spin up bands might have an identical occupation
+number, that might differ from the identical occupation number of spin down
+bands). Although meaningless, ABINIT will perform such computation, if
+required by the user. The input variable <a class="wikilink" href="../../input_variables/ffield/#bdberry">bdberry</a> governs the set of bands
+for which a Berry phase is computed.</p>
+<p>For the <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 1, 2, and 3 cases, spinor wavefunctions are not
+allowed, nor are parallel computations.</p>
+<hr />
+<h2 id="polcen"><strong>polcen</strong><a class="headerlink" href="#polcen" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> POLarization for CENtrosymmetric geometry<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3*0<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_126.in" title="AlAs case,  to test the &quot;polcen&quot; in finite reduced electric field calculation. (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_126.in</a></li>
+</ul>
+<p>When doing a finite electric displacement field calculation, if the structure
+is centrosymmetric but the polarization is non-zero (such as for AlAs), this
+non-zero polarization should be specified as <a class="wikilink" href="../../input_variables/ffield/#polcen">polcen</a> (in REDUCED
+coordinates, in atomic units) in the input file. See Eq.(24) in the Suppl. of
+Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
+(2009))</p>
+<hr />
+<h2 id="qprtrb"><strong>qprtrb</strong><a class="headerlink" href="#qprtrb" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Q-wavevector of the PERTurbation<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Artificial">Artificial</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> [0, 0, 0]<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a><br />
+Test list:</p>
+<ul>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t01.in" title="Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. This should be linked with the computation of the dielectric constant, test v2#05,  that uses directly the RF capabilities of ABINIT, for one diatomic molecule. For dataset 1,  one reproduces the results obtained in Tv2#05,  multiplied by 4. The total energy is consistent up to more than 10 digits : -6.6499924738006 Ha for Tv2#05,  -26.599969895203 Ha for the present calculation. For dataset 2,  the perturbation qprtrb 0 0 1 is frozen in,  with vprtrb 100. The total energy is -26.600317638775 Ha. The difference wrt the unperturbed situation is 0.000348743572 Ha. For dataset 3,  a much smaller perturbation (10 times smaller) is taken, giving total energy -26.599973367786 Ha. The difference wrt the unperturbed situation is 0.3472583 microHa. For dataset 4,  an even smaller perturbation (100 times smaller) is taken, giving total energy -26.599969929928 Ha. The difference wrt the unperturbed situation is 0.000034725 microHa. With datasets 3 and 4,  we are in the linear regime. The previous amplitude is better for such studies. Dataset 5 is the same as 3,  with reversed amplitude. Results are similar to dataset 3. I had no sufficient time to analyze these data correctly and make the connection with the results of Tv2#05,  unfortunately. The following (also test 02 below) gives some more data,  and raise questions. There might be some problem with the use of qprtrb and vprtrb. For dataset 2,  the group of the four lowest eigenenergies (each corresponding to a different molecule) is : -0.47198  -0.46381  -0.46091  -0.45266,  whose spread is 0.01932 Ha. One might think that the maximum and minimum of the potential are separated roughly by 0.02 Ha. The value vprtrb 100 corresponds to a cosine wave whose amplitude is 100,  divided by the volume of the cell,  that is 5000 Bohr^3 : 0.02 Ha. The maximum and minimum of the potential should thus be separated by 0.04 Ha. There seems to be a factor of 2 off.">tests/v6/Input/t01.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t02.in" title="Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. Compute the dielectric constant. Similar to test v6#01, but uses a more symmetric geometry,  to examine invariance of the response with respect to shifts of potential,  and also a shorter wavelength. I do not understand why vprtrb 0 10.0 leads to no response. Such a sine wave should cause similar response as for the cosine wave. No time presently to investigate this problem (XG090909)">tests/v6/Input/t02.in</a></li>
+</ul>
+<p>Gives the wavevector, in units of reciprocal lattice primitive translations,
+of a perturbing potential of strength <a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a>. See <a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a> for more
+explanation.</p>
+<hr />
+<h2 id="red_dfield"><strong>red_dfield</strong><a class="headerlink" href="#red_dfield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> REDuced Displacement FIELD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 16, <a class="wikilink" href="../../input_variables/ffield/#red_efield">red_efield</a><br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_122.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_122.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a></li>
+</ul>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=16, a reduced finite electric displacement field
+calculation is performed. The value of this displacement field, and its
+direction is determined by <a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a>. It must be given in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/ffield/#red_dfield">red_dfield</a> is defined via Eq.(26) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<hr />
+<h2 id="red_efield"><strong>red_efield</strong><a class="headerlink" href="#red_efield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> REDuced Electric FIELD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 16<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_121.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=14 (finite reduced electric field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_121.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_122.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_122.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a></li>
+</ul>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=16, a reduced finite electric displacement field
+calculation is performed. In this case, the parameter red_efield specifies the
+initial electric field used on the first iteration, in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/ffield/#red_efield">red_efield</a> is defined via Eq.(25) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<hr />
+<h2 id="red_efieldbar"><strong>red_efieldbar</strong><a class="headerlink" href="#red_efieldbar" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> REDuced Electric FIELD BAR<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Berry">Berry</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 3<em>0.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a> = 14<br />
+Test list:</p>
+<ul>
+<li>seq:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_121.in" title="PbTiO3 in the tetragonal geometry. Test berryopt=14 (finite reduced electric field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_121.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv6_125.in" title="Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)">tests/seq/Input/tsv6_125.in</a></li>
+</ul>
+<p>In case <a class="wikilink" href="../../input_variables/ffield/#berryopt">berryopt</a>=14, a reduced finite electric field calculation is
+performed. The magnitude and direction of this electric field are determined
+by red_efieldbar. It must be given in atomic units.</p>
+<p><a class="wikilink" href="../../input_variables/ffield/#red_efieldbar">red_efieldbar</a> is defined via Eq.(28) in the Supplement of M. Stengel, N.A.
+Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).</p>
+<hr />
+<h2 id="spinmagntarget"><strong>spinmagntarget</strong><a class="headerlink" href="#spinmagntarget" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> SPIN-MAGNetization TARGET<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -99.99  </p>
+<p>This input variable is active only in the <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=2 case. If
+<a class="wikilink" href="../../input_variables/ffield/#spinmagntarget">spinmagntarget</a> is not the "magic" value of -99.99d0, the spin-
+magnetization of the primitive cell will be fixed (or optimized, if it is not
+possible to impose it) to the value of <a class="wikilink" href="../../input_variables/ffield/#spinmagntarget">spinmagntarget</a>, in Bohr magneton
+units, e.g. for an Hydrogen atom, it is 1.<br />
+If <a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a> is a metallic one, the Fermi energies for spin up and spin down
+are adjusted to give the target spin-polarisation (this is equivalent to an
+exchange splitting). If <a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a>=1 and <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=2, the occupation numbers
+for spin up and spin down will be adjusted to give the required spin-
+magnetization (occupation numbers are identical for all k-points, with
+<a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a>=1). The definition of <a class="wikilink" href="../../input_variables/ffield/#spinmagntarget">spinmagntarget</a> is actually requested in
+this case, except for the single isolated Hydrogen atom.<br />
+If <a class="wikilink" href="../../input_variables/ffield/#spinmagntarget">spinmagntarget</a> is the default one, the spin-magnetization will not be
+constrained, and will be determined self-consistently, by having the same spin
+up and spin down Fermi energy in the metallic case, while for the other cases,
+there will be no spin-magnetization, except for an odd number of electrons if
+<a class="wikilink" href="../../input_variables/basic/#occopt">occopt</a>=1 and <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=2.</p>
+<p>Note : for the time being, only the spin down Fermi energy is written out in
+the main output file. In the fixed magnetic moment case, it differs from the
+spin up Fermi energy.</p>
+<hr />
+<h2 id="vprtrb"><strong>vprtrb</strong><a class="headerlink" href="#vprtrb" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> potential -V- for the PeRTuRBation<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Artificial">Artificial</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (2)<br />
+<em>Default value:</em> [0.0, 0.0]<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/ffield/#qprtrb">qprtrb</a><br />
+Test list:</p>
+<ul>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t01.in" title="Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. This should be linked with the computation of the dielectric constant, test v2#05,  that uses directly the RF capabilities of ABINIT, for one diatomic molecule. For dataset 1,  one reproduces the results obtained in Tv2#05,  multiplied by 4. The total energy is consistent up to more than 10 digits : -6.6499924738006 Ha for Tv2#05,  -26.599969895203 Ha for the present calculation. For dataset 2,  the perturbation qprtrb 0 0 1 is frozen in,  with vprtrb 100. The total energy is -26.600317638775 Ha. The difference wrt the unperturbed situation is 0.000348743572 Ha. For dataset 3,  a much smaller perturbation (10 times smaller) is taken, giving total energy -26.599973367786 Ha. The difference wrt the unperturbed situation is 0.3472583 microHa. For dataset 4,  an even smaller perturbation (100 times smaller) is taken, giving total energy -26.599969929928 Ha. The difference wrt the unperturbed situation is 0.000034725 microHa. With datasets 3 and 4,  we are in the linear regime. The previous amplitude is better for such studies. Dataset 5 is the same as 3,  with reversed amplitude. Results are similar to dataset 3. I had no sufficient time to analyze these data correctly and make the connection with the results of Tv2#05,  unfortunately. The following (also test 02 below) gives some more data,  and raise questions. There might be some problem with the use of qprtrb and vprtrb. For dataset 2,  the group of the four lowest eigenenergies (each corresponding to a different molecule) is : -0.47198  -0.46381  -0.46091  -0.45266,  whose spread is 0.01932 Ha. One might think that the maximum and minimum of the potential are separated roughly by 0.02 Ha. The value vprtrb 100 corresponds to a cosine wave whose amplitude is 100,  divided by the volume of the cell,  that is 5000 Bohr^3 : 0.02 Ha. The maximum and minimum of the potential should thus be separated by 0.04 Ha. There seems to be a factor of 2 off.">tests/v6/Input/t01.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t02.in" title="Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. Compute the dielectric constant. Similar to test v6#01, but uses a more symmetric geometry,  to examine invariance of the response with respect to shifts of potential,  and also a shorter wavelength. I do not understand why vprtrb 0 10.0 leads to no response. Such a sine wave should cause similar response as for the cosine wave. No time presently to investigate this problem (XG090909)">tests/v6/Input/t02.in</a></li>
+</ul>
+<p>Gives the real and imaginary parts of a scalar potential perturbation. Can be
+specified in Ha (the default), Ry, eV or Kelvin, since <a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a> has the
+'<a class="wikilink" href="../../ENERGY/">ENERGY</a>' characteristics.<br />
+This is made available for testing responses to such perturbations. The form
+of the perturbation, which is added to the local potential, is:</p>
+<ul>
+<li>(<a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a>(1)+I*<a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a>(2))/2 at G=<a class="wikilink" href="../../input_variables/ffield/#qprtrb">qprtrb</a> and </li>
+<li>(<a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a>(1)-I*<a class="wikilink" href="../../input_variables/ffield/#vprtrb">vprtrb</a>(2))/2 at G=-<a class="wikilink" href="../../input_variables/ffield/#qprtrb">qprtrb</a> (see <a class="wikilink" href="../../input_variables/ffield/#qprtrb">qprtrb</a> also). </li>
+</ul>
+<hr />
+<h2 id="zeemanfield"><strong>zeemanfield</strong><a class="headerlink" href="#zeemanfield" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> ZEEMAN FIELD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/MagField">MagField</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t17.in" title="Bi atom in a big supercell. Test the application of a Zeeman field.">tests/v6/Input/t17.in</a></li>
+</ul>
+<p>Give the value of the Zeeman field, H, acting on the spinorial wavefunctions.
+Note that Tesla are admitted. This sets the magnitude of mu_0*H, in Tesla,
+with H in Amperes/metre.</p>
+<hr /></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

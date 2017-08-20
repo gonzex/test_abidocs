@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/DMFT/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>DMFT - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../DFT+U/">DFT+U</a>
+</li>
+                            
+<li class="active">
+    <a href="./">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../DFT+U/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../EffMass/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
+        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>DFT fails to describe the ground state and/or the excited states such as many
+lanthanides, actinides or transition metals. Indeed, exchange correlation
+functionals are not (yet) able to describe the strong repulsive Coulomb
+interactions occurring among electrons in partly filled localized d or f
+orbitals.</p>
+<p>A way to improve the description of strongly correlated systems is to
+explicitly include the strong repulsive Coulomb interactions in the
+Hamiltonian. Solving it in the static mean field approximation, gives the
+DFT+U method (<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Anisimov1991" title="Density-functional calculation of effective Coulomb interactions in metals">Anisimov1991</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Liechtenstein1995" title="Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators">Liechtenstein1995</a>), implemented in ABINIT
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008a" title="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters">Amadon2008a</a>. The Dynamical Mean Field Theory <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Georges1996" title="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions">Georges1996</a> (DMFT), goes
+beyond, by solving exactly the local correlations for an atom in an effective
+field (i.e., an Anderson model). The effective field reproduces the effect of
+the surrounding correlated atoms and is thus self-consistently related to the
+solution of the Anderson model <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Georges1996" title="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions">Georges1996</a>.</p>
+<p>The combination of DFT with DMFT <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Georges2004" title="Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure">Georges2004</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Kotliar2006" title="Electronic structure calculations with dynamical mean-field theory">Kotliar2006</a> <a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>=
+1}) relies on :</p>
+<ul>
+<li>The definition of correlated orbitals. In ABINIT, we use Wannier functions built using projected local orbitals <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band indices <a class="wikilink" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a> and <a class="wikilink" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>. As empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a class="wikilink" href="../../input_variables/dev/#nnsclo">nnsclo</a> and <a class="wikilink" href="../../input_variables/gstate/#nline">nline</a>. In order to make a first rough estimation of the orbital character of KS bands and choose the band index, the band structure with highlighted atomic orbital character (so called <em>fatbands</em>) can be plotted, using the <a class="wikilink" href="../../input_variables/paw/#pawfatbnd">pawfatbnd</a> variable. Band structures obtained from projected orbitals Wannier functions can also be plotted using <a class="wikilink" href="../../input_variables/dev/#plowan_compute">plowan_compute</a> and related variables. </li>
+<li>The choice of the screened Coulomb interaction U (<a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a>) and J (<a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a>). Note that up to version 7.10.5 (but not in later versions) <a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a>= 0 is required if the density matrix in the correlated subspace is not diagonal.</li>
+<li>The choice of the double counting correction <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>. The current default choice in ABINIT is <a class="wikilink" href="../../input_variables/dmft/#dmft_dc">dmft_dc</a>= 1} which corresponds to the full localized limit.</li>
+<li>The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a> (<a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>= 2), the Continuous time Quantum Monte Carlo (CTQMC) method <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bieder2014" title="Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles">Bieder2014</a> (<a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>= 5) or the static mean field method (<a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>= 1}, equivalent to usual DFT+U <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>).</li>
+</ul>
+<p>The practical solution of the DFT+DMFT scheme is usually presented as a double
+loop over, first, the local Green's function, and second the electronic local
+density <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>. The number of iterations of the two loops are
+determined by <a class="wikilink" href="../../input_variables/dmft/#dmft_iter">dmft_iter</a> and <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>. However, in the general case, the
+most efficient way to carry out fully consistent DFT+DMFT calculations is to
+keep only the loop governed by <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>, while <a class="wikilink" href="../../input_variables/dmft/#dmft_iter">dmft_iter</a>=1
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bieder2014" title="Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles">Bieder2014</a>, <a class="wikilink" href="../../input_variables/dmft/#dmft_rslf">dmft_rslf</a>= 1 (to read the self-energy file at each step of
+the DFT loop) and <a class="wikilink" href="../../input_variables/files/#prtden">prtden</a>= -1 (to be able to restart the calculation of
+each step of the DFT loop from the density file). Lastly, one linear and one
+logarithmic grid are used for Matsubara frequencies <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Kotliar2006" title="Electronic structure calculations with dynamical mean-field theory">Kotliar2006</a> determined
+by <a class="wikilink" href="../../input_variables/dmft/#dmft_nwli">dmft_nwli</a> and <a class="wikilink" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a> (Typical values are 10000 and 100, but
+convergence should be studied). More information can be obtained in the log
+file by setting <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=3.</p>
+<p>The main output of the calculations are the imaginary time Green's function ,
+from which spectral functions can be obtained using an external maximum
+entropy code <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bergeron2015" title="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation">Bergeron2015</a>, self-energies, from which quasiparticle
+renormalization weight can be extracted, the density matrix of correlated
+orbitals, and the internal energies <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2006" title="The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven">Amadon2006</a>. The electronic entropic
+contribution to the free energy can also be obtained using <a class="wikilink" href="../../input_variables/dmft/#dmft_entropy">dmft_entropy</a>
+and <a class="wikilink" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a>.</p>
+<p>The efficient CTQMC code in ABINIT, which is the most time consuming part of
+DMFT, uses the hybridization expansion <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Werner2006" title="Continuous-Time Solver for Quantum Impurity Models">Werner2006</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a> with a
+<em>density-density</em> multiorbital interaction <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a>. Moreover, the
+hybridization function <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a> is assumed to be diagonal in the orbital
+(or flavor) index. This is exact for cubic symmetry without spin orbit
+coupling but, in general, one should always check that the off-diagonal terms
+are much smaller than the diagonal ones. The non diagonal hybridization and
+coupling to the exact rotationally invariant interaction <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a> is not
+available in version 7.10.5.</p>
+<p>As the CTQMC solver uses a Fourier transform, the time grid <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a> in
+imaginary space must be chosen so that the Nyquist frequency, defined by
+π<em><a class="wikilink" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a></em><a class="wikilink" href="../../input_variables/gstate/#tsmear">tsmear</a>, is around 2 or 3 Ha. A convergence study should be
+performed on this variable. Moreover, the number of imaginary frequencies
+(<a class="wikilink" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a>) has to be set to at least twice the value of <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a>.
+Typical numbers of steps for the thermalization (<a class="wikilink" href="../../input_variables/dmft/#dmftqmc_therm">dmftqmc_therm</a>) and for
+the Monte carlo runs (<a class="wikilink" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>) are 106 and 109 respectively. The random
+number generator can be initialized with the variable <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_seed">dmftqmc_seed</a>.
+Several other variables are available. <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a> gives a histogram
+of the perturbation orders during the simulation, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_gmove">dmftctqmc_gmove</a>
+customizes the global move tries (mainly useful for systems with high/low spin
+configurations), and <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_meas">dmftctqmc_meas</a> sets the frequency of measurement of
+quantities.</p>
+<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<p><em>basic:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_rslf">dmft_rslf</a>  Dynamical Mean Fied Theory: Read SeLF energy</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>  Dynamical Mean Fied Theory: choice of SOLVer</li>
+</ul>
+<p><em>compulsory:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_iter">dmft_iter</a>  Dynamical Mean Fied Theory: number of ITERation</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_nwli">dmft_nwli</a>  Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a>  Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>  Dynamical Mean Field Theory: BAND: Final</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>  Dynamical Mean Field Theory: BAND: Initial</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a>  Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>  Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftqmc_therm">dmftqmc_therm</a>  Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization</li>
+<li><a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>  USE Dynamical Mean Field Theory</li>
+</ul>
+<p><em>expert:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_entropy">dmft_entropy</a>  Dynamical Mean Fied Theory: ENTROPY</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a>  Dynamical Mean Fied Theory: Number of LAMBDA points</li>
+<li><a class="wikilink" href="../../input_variables/dev/#dmft_read_occnd">dmft_read_occnd</a>  Dynamical Mean Fied Theory: READ OCCupations (Non Diagonal)</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_t2g">dmft_t2g</a>  Dynamical Mean Fied Theory: t2g orbitals</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_tolfreq">dmft_tolfreq</a>  Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid</li>
+<li><a class="wikilink" href="../../input_variables/dev/#dmftctqmc_basis">dmftctqmc_basis</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo BASIS</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_correl">dmftctqmc_correl</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_grnns">dmftctqmc_grnns</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_meas">dmftctqmc_meas</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_mov">dmftctqmc_mov</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_mrka">dmftctqmc_mrka</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_triqs_nleg">dmftctqmc_triqs_nleg</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials</li>
+</ul>
+<p><em>useful:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_dc">dmft_dc</a>  Dynamical Mean Fied Theory: Double Counting</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_mxsf">dmft_mxsf</a>  Dynamical Mean Fied Theory: MiXing parameter for the SelF energy</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmft_tollc">dmft_tollc</a>  Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftcheck">dmftcheck</a>  Dynamical Mean Fied Theory: CHECKs</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_check">dmftctqmc_check</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_gmove">dmftctqmc_gmove</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a>  Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER</li>
+<li><a class="wikilink" href="../../input_variables/dmft/#dmftqmc_seed">dmftqmc_seed</a>  Dynamical Mean Fied Theory: Quantum Monte Carlo SEED</li>
+</ul>
+<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<p><em>v6:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in" title="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy.">tests/v6/Input/t47.in</a></li>
+</ul>
+<p><em>v7:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in" title="(Apparently the documentation section of this test has been lost)">tests/v7/Input/t21.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (BAmadon)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

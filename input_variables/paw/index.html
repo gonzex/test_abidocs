@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/paw/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>PAW - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../paral/">Parallelism</a>
+</li>
+            
+<li class="active">
+    <a href="./">PAW</a>
+</li>
+            
+<li >
+    <a href="../dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../paral/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../dfpt/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#bxctmindg">bxctmindg</a></li>
+        <li class="main "><a href="#dmatpawu">dmatpawu</a></li>
+        <li class="main "><a href="#dmatpuopt">dmatpuopt</a></li>
+        <li class="main "><a href="#dmatudiag">dmatudiag</a></li>
+        <li class="main "><a href="#f4of2_sla">f4of2_sla</a></li>
+        <li class="main "><a href="#f6of2_sla">f6of2_sla</a></li>
+        <li class="main "><a href="#iboxcut">iboxcut</a></li>
+        <li class="main "><a href="#jpawu">jpawu</a></li>
+        <li class="main "><a href="#lexexch">lexexch</a></li>
+        <li class="main "><a href="#lpawu">lpawu</a></li>
+        <li class="main "><a href="#mqgriddg">mqgriddg</a></li>
+        <li class="main "><a href="#ngfftdg">ngfftdg</a></li>
+        <li class="main "><a href="#pawcpxocc">pawcpxocc</a></li>
+        <li class="main "><a href="#pawcross">pawcross</a></li>
+        <li class="main "><a href="#pawecutdg">pawecutdg</a></li>
+        <li class="main "><a href="#pawfatbnd">pawfatbnd</a></li>
+        <li class="main "><a href="#pawlcutd">pawlcutd</a></li>
+        <li class="main "><a href="#pawlmix">pawlmix</a></li>
+        <li class="main "><a href="#pawmixdg">pawmixdg</a></li>
+        <li class="main "><a href="#pawnhatxc">pawnhatxc</a></li>
+        <li class="main "><a href="#pawnphi">pawnphi</a></li>
+        <li class="main "><a href="#pawntheta">pawntheta</a></li>
+        <li class="main "><a href="#pawnzlm">pawnzlm</a></li>
+        <li class="main "><a href="#pawoptmix">pawoptmix</a></li>
+        <li class="main "><a href="#pawoptosc">pawoptosc</a></li>
+        <li class="main "><a href="#pawovlp">pawovlp</a></li>
+        <li class="main "><a href="#pawprtden">pawprtden</a></li>
+        <li class="main "><a href="#pawprtdos">pawprtdos</a></li>
+        <li class="main "><a href="#pawprtvol">pawprtvol</a></li>
+        <li class="main "><a href="#pawprtwf">pawprtwf</a></li>
+        <li class="main "><a href="#pawspnorb">pawspnorb</a></li>
+        <li class="main "><a href="#pawstgylm">pawstgylm</a></li>
+        <li class="main "><a href="#pawsushat">pawsushat</a></li>
+        <li class="main "><a href="#pawusecp">pawusecp</a></li>
+        <li class="main "><a href="#pawxcdev">pawxcdev</a></li>
+        <li class="main "><a href="#prtefg">prtefg</a></li>
+        <li class="main "><a href="#prtfc">prtfc</a></li>
+        <li class="main "><a href="#prtnabla">prtnabla</a></li>
+        <li class="main "><a href="#ptcharge">ptcharge</a></li>
+        <li class="main "><a href="#quadmom">quadmom</a></li>
+        <li class="main "><a href="#spnorbscl">spnorbscl</a></li>
+        <li class="main "><a href="#upawu">upawu</a></li>
+        <li class="main "><a href="#usedmatpu">usedmatpu</a></li>
+        <li class="main "><a href="#useexexch">useexexch</a></li>
+        <li class="main "><a href="#usepawu">usepawu</a></li>
+        <li class="main "><a href="#usepotzero">usepotzero</a></li>
+        <li class="main "><a href="#usexcnhat">usexcnhat</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<h2 id="bxctmindg"><strong>bxctmindg</strong><a class="headerlink" href="#bxctmindg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> BoX CuT-off MINimum for the Double Grid (PAW)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 2.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t17.in" title="PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off">tests/v4/Input/t17.in</a></li>
+</ul>
+<p>The box cut-off ratio is the ratio between the wavefunction plane wave sphere
+radius, and the radius of the sphere that can be inserted in the FFT box, in
+reciprocal space.<br />
+If the density was generated only from wavefunctions, this ratio should be at
+least two in order for the density to be exact. If one uses a smaller ratio,
+one will gain speed, at the expense of accuracy. In case of pure ground state
+calculation (e.g. for the determination of geometries), this is sensible.
+However, the wavefunctions that are obtained CANNOT be used for starting
+response function calculation.<br />
+However, some augmentation charge is always added in PAW, and even with the
+box cut-off ratio larger than two, the density is never exact. Sometimes, this
+ratio must be much larger than two for the computation to be converged at the
+required level of accuracy.</p>
+<hr />
+<h2 id="dmatpawu"><strong>dmatpawu</strong><a class="headerlink" href="#dmatpawu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> initial Density MATrix for PAW+U<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a>, <a class="wikilink" href="../../topics/ElecDOS">ElecDOS</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (2<em>max(<a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>)+1,2</em>max(<a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>)+1,max(<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>),<a class="wikilink" href="../../input_variables/internal/#natpawu">natpawu</a>)<br />
+<em>Default value:</em> <em>-10.0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>!=0  </p>
+<p>For Ground state calculations only.<br />
+Gives the value of an initial density matrix used in LDA+U and kept fixed
+during the first abs(<a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>) SCF iterations.<br />
+Only components corresponding to <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> angular momentum are requested.<br />
+Restriction: In order to use dmatpawu, <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> must be identical for all
+atom types (or -1).<br />
+The occupation matrix is in the basis of real spherical harmonics Slm (note
+that this differs from the choice made when <a class="wikilink" href="../../input_variables/files/#prtdosm">prtdosm</a>=1 , that is in the
+basis of complex spherical harmonics). Their are ordered by increasing m, and
+are defined e.g. in <a class="wikilink" href="../../Blancoa1997/">Blancoa1997</a>  . For the case l=2 (d states), the five
+columns corresponds respectively to (the normalisation factor has been
+dropped)  </p>
+<ul>
+<li>m=-2, xy </li>
+<li>m=-1, yz </li>
+<li>m=0, 3z^2-r^2 </li>
+<li>m=1, xz </li>
+<li>m=2, x^2-y^2 </li>
+</ul>
+<p><a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> must always be given as a "spin-up" occupation matrix (and
+eventually a "spin-down" matrix). Be aware that its physical meaning depends
+on the magnetic properties imposed to the system (with <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>,
+<a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>):  </p>
+<ul>
+<li>
+<p><strong> Non-magnetic system </strong> (<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=1): <br />
+One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> matrix is given for each atom on which
++U is applied.<br />
+It contains the "spin-up" occupations.</p>
+</li>
+<li>
+<p><strong> Ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=2, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=2): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
+which +U is applied.<br />
+They contain the "spin-up" and "spin-down" occupations.</p>
+</li>
+<li>
+<p><strong> Anti-ferromagnetic spin-polarized (collinear) system </strong> (<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=2): <br />
+One (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> matrix is given for each atom on which
++U is applied.<br />
+It contains the "spin-up" occupations.</p>
+</li>
+<li>
+<p><strong> Non-collinear magnetic system </strong> (<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=4): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
+which +U is applied.<br />
+They contains the "spin-up" and "spin-down" occupations (defined as
+n_up=(n+|m|)/2 and n_dn=(n-|m|)/2), where m is the integrated magnetization
+vector).<br />
+The direction of the magnetization (which is also the direction of n_up and
+n_dn) is given by <a class="wikilink" href="../../input_variables/gstate/#spinat">spinat</a>.<br />
+_ Warning: unlike collinear case, atoms having the same magnetization
+magnitude with different directions must be given the same occupation matrix;<br />
+the magnetization will be oriented by the value of <a class="wikilink" href="../../input_variables/gstate/#spinat">spinat</a> (this is the
+case for antiferro-magnetism). _</p>
+</li>
+<li>
+<p><strong> Non-collinear magnetic system with zero magnetization </strong> (<a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>=1, <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=2, <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=1): <br />
+Two (2lpawu+1)x(2lpawu+1) <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a> matrices are given for each atom on
+which +U is applied.<br />
+They contain the "spin-up" and "spin-down" occupations;<br />
+But, as "spin-up" and "spin-down" are constrained identical, the "spin-down"
+one is ignored by the code.</p>
+</li>
+</ul>
+<hr />
+<h2 id="dmatpuopt"><strong>dmatpuopt</strong><a class="headerlink" href="#dmatpuopt" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Density MATrix for PAW+U OPTion<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 2<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1  </p>
+<p>This option governs the way occupations of localized atomic levels are
+computed:  </p>
+<ul>
+<li>
+<p><a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=1: atomic occupations are projections on atomic orbitals (Eq. (6) of PRB 77, 155104 (2008)).   </p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=2: atomic occupations are integrated values in PAW spheres of angular-momentum-decomposed charge densities (Eq. (7) of PRB 77, 155104 (2008)).   </p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=3: only for tests   </p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=4: Extrapolations of occupancies outside the PAW-sphere. This Definition gives normalized operator for occupation.   </p>
+</li>
+</ul>
+<p>In the general case <a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=2 is suitable. The use of <a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>=1 is
+restricted to PAW datasets in which the first atomic wavefunction of the
+correlated subspace is a normalized atomic eigenfunction.</p>
+<hr />
+<h2 id="dmatudiag"><strong>dmatudiag</strong><a class="headerlink" href="#dmatudiag" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Density MATrix for paw+U, DIAGonalization<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1 and <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a> != 4<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t19.in" title="FCC Gadolinium. PAW + U calculation Test the imposition of the density matrix (10 first steps) and related variables. Test of partial DOS is also done (through the diff of DOS_AT0001)">tests/v5/Input/t19.in</a></li>
+</ul>
+<p>Relevant only for Ground-State calculations.<br />
+This option can be used to diagonalize the occupation matrix Nocc_{m,m_prime}.<br />
+Relevant values are:  </p>
+<ul>
+<li>0: desactivated. </li>
+<li>1: occupation matrix is diagonalized and printed in log file at each SCF cycle (eigenvectors are also given in the log file). </li>
+<li>2: for testing purpose. </li>
+</ul>
+<hr />
+<h2 id="f4of2_sla"><strong>f4of2_sla</strong><a class="headerlink" href="#f4of2_sla" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> F4 Over F2 ratio of Slater integrals<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> ['0.625 for d electron', '0.6681 for f electron']<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and (<a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>==1)<br />
+Test list:</p>
+<ul>
+<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in" title="(Apparently the documentation section of this test has been lost)">tests/v7/Input/t21.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in" title="For SrVO3,  compute density,  WFC and KSS files.">tests/v7/Input/t23.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in" title="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23">tests/v7/Input/t24.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in" title="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24.">tests/v7/Input/t25.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
+<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
+</ul>
+<p>This gives the ratio of Slater Integrals F4 and F2. It is used in DFT+U or
+DFT+DMFT for the calculation of the orbital dependent screened coulomb
+interaction.</p>
+<hr />
+<h2 id="f6of2_sla"><strong>f6of2_sla</strong><a class="headerlink" href="#f6of2_sla" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> F6 Over F2 ratio of Slater integrals<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.4943<br />
+<em>Only relevant if:</em> (<a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>==1) and <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>=3<br />
+Test list:</p>
+<ul>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in" title="(Apparently the documentation section of this test has been lost)">tests/v7/Input/t21.in</a></li>
+</ul>
+<p>Gives the ratio of Slater Integrals F6 and F2. It is used with
+<a class="wikilink" href="../../input_variables/paw/#f4of2_sla">f4of2_sla</a>==3 in DFT+U or DFT+DMFT for the calculation of the orbital
+dependent screened coulomb interaction.</p>
+<hr />
+<h2 id="iboxcut"><strong>iboxcut</strong><a class="headerlink" href="#iboxcut" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Integer governing the internal use of BOXCUT - not a very good choice of variable name<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/TuningSpeed">TuningSpeed</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t17.in" title="PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off">tests/v4/Input/t17.in</a></li>
+</ul>
+<p>Concern all summations in the reciprocal space and is allowed in PAW and norm-
+conserving.</p>
+<ul>
+<li>if set to 0 all reciprocal space summations are done in a sphere contained in the FFT box. </li>
+<li>if set to 1 all reciprocal space summations are done in the whole FFT box (useful for tests). </li>
+</ul>
+<hr />
+<h2 id="jpawu"><strong>jpawu</strong><a class="headerlink" href="#jpawu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> value of J for PAW+U<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> <em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1  </p>
+<p>Gives the value of the screened exchange interaction between correlated
+electrons corresponding to <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> for each species.<br />
+In the case where <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> =-1, the value is not used.</p>
+<hr />
+<h2 id="lexexch"><strong>lexexch</strong><a class="headerlink" href="#lexexch" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> value of angular momentum L for EXact EXCHange<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/xc">xc</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> -1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/paw/#useexexch">useexexch</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t18.in" title="NiO with 4 atoms per cell Test computation of the local exact exchange (PBE0) in PAW.">tests/v5/Input/t18.in</a></li>
+</ul>
+<p>Give for each species the value of the angular momentum (only values 2 or 3
+are allowed) on which to apply the exact exchange correction.</p>
+<hr />
+<h2 id="lpawu"><strong>lpawu</strong><a class="headerlink" href="#lpawu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> value of angular momentum L for PAW+U<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> <em>-1<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1 or <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>== 2  </p>
+<p>Give for each species the value of the angular momentum (only values 2 or 3
+are allowed)  on which to apply the LDA+U correction.  </p>
+<ul>
+<li>If equal to 2 (d-orbitals)  or 3 (f-orbitals), values of <a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a> and  <a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a> are used in the calculation. </li>
+<li>If equal to -1: do not apply LDA+U correction on the species. </li>
+</ul>
+<hr />
+<h2 id="mqgriddg"><strong>mqgriddg</strong><a class="headerlink" href="#mqgriddg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 3001<br />
+Test list:</p>
+<ul>
+<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t17.in" title="PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off">tests/v4/Input/t17.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in" title="For SrVO3,  compute density,  WFC and KSS files.">tests/v7/Input/t23.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in" title="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23">tests/v7/Input/t24.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in" title="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24.">tests/v7/Input/t25.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in" title="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model">tests/v7/Input/t78.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in" title="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon">tests/v7/Input/t79.in</a></li>
+</ul>
+<p>Maximum number of wavevectors used to sample the local part of the potential,
+in PAW. Actually referred to as mqgrid_vl internally. Should change name to
+the latter ... See also <a class="wikilink" href="../../input_variables/dev/#mqgrid">mqgrid</a></p>
+<hr />
+<h2 id="ngfftdg"><strong>ngfftdg</strong><a class="headerlink" href="#ngfftdg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Number of Grid points for Fast Fourier Transform : Double Grid<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> [0, 0, 0]<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>This variable has the same meaning as ngfft (gives the size of fast Fourier
+transform (fft) grid in three dimensions) but concerns the "double grid" only
+used for PAW calculations.</p>
+<hr />
+<h2 id="pawcpxocc"><strong>pawcpxocc</strong><a class="headerlink" href="#pawcpxocc" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - use ComPleX rhoij OCCupancies<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 2 if <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>==0 and <a class="wikilink" href="../../input_variables/rlx/#ionmov">ionmov</a>&lt;6 and <a class="wikilink" href="../../input_variables/paw/#pawspnorb">pawspnorb</a>==1 and <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>&gt;=10 and (<a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> !=1 or <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>!=2) and <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1,
+1 otherwise.</p>
+<p><em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t17.in" title="Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users.">tests/v5/Input/t17.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t32.in" title="Test presence of nuclear magnetic dipole moments on atomic sites">tests/v7/Input/t32.in</a></li>
+</ul>
+<p>The only possible values for <a class="wikilink" href="../../input_variables/paw/#pawcpxocc">pawcpxocc</a> are 1 or 2.<br />
+When <strong> <a class="wikilink" href="../../input_variables/paw/#pawcpxocc">pawcpxocc</a>==1 </strong> , "direct" decomposition of total energy cannot be
+printed out.<br />
+When <strong> <a class="wikilink" href="../../input_variables/paw/#pawcpxocc">pawcpxocc</a>==2 </strong> , PAW augmentation occupancies are treated as
+COMPLEX; else they are considered as REAL.<br />
+This is needed when time-reversal symmetry is broken (typically when spin-
+orbit coupling is activated).  </p>
+<p>Note for ground-state calculations (<a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>=0):<br />
+The imaginary part of PAW augmentation occupancies is only used for the
+computation of the total energy by "direct scheme"; this is only necessary
+when SCF mixing on potential is chosen (<a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>&lt;10).<br />
+When SCF mixing on density is chosen (<a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>&gt;=10), the "direct"
+decomposition of energy is only printed out without being used. It is thus
+possible to use <a class="wikilink" href="../../input_variables/paw/#pawcpxocc">pawcpxocc</a>=1 in the latter case.<br />
+In order to save CPU time, when molecular dynamics is selected
+(<a class="wikilink" href="../../input_variables/rlx/#ionmov">ionmov</a>&gt;=6) and SCF mixing done on density (<a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>&gt;=10),
+<a class="wikilink" href="../../input_variables/paw/#pawcpxocc">pawcpxocc</a>=2 is (by default) set to <strong> 1 </strong></p>
+<hr />
+<h2 id="pawcross"><strong>pawcross</strong><a class="headerlink" href="#pawcross" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - add CROSS term in oscillator strengths<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFPT">DFPT</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> (<a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>==3 or <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>==4) and <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<p>When <strong> pawcross=1 </strong> , the overlap between the plane-wave part of one band
+and the on-site part of an other is taken into account in the computation of
+the oscillator strengths. Hence, the completeness of the on-site basis is no
+longer assumed.</p>
+<hr />
+<h2 id="pawecutdg"><strong>pawecutdg</strong><a class="headerlink" href="#pawecutdg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - Energy CUToff for the Double Grid<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Planewaves">Planewaves</a>, <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -1<br />
+<em>Comment:</em> pawecutdg MUST be specified for PAW calculations.<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>Define the energy cut-off for the fine FFT grid (the "double grid", that
+allows to transfer data from the normal, coarse, FFT grid to the spherical
+grid around each atom).<br />
+<a class="wikilink" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> must be larger or equal to <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>. If it is equal to it, then
+no fine grid is used. The results are not very accurate, but the computations
+proceed quite fast.<br />
+For typical PAW computations, where <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> is on the order of 15 Ha,
+<a class="wikilink" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> must be tested according to what you want to do. For
+calculations that do not require a high accuracy (molecular dynamics for
+instance) a value of 20 Ha is enough. For calculations that require a high
+accuracy (response fonctions for instance) it should be on the order of 30 Ha.
+Choosing a larger value should not increase the accuracy, but does not slow
+down the computation either, only the memory. The choice made for this
+variable DOES have a bearing on the numerical accuracy of the results, and, as
+such, should be the object of a convergence study. The convergence test might
+be made on the total energy or derived quantities, like forces, but also on
+the two values of the "Compensation charge inside spheres", a quantity written
+in the log file.</p>
+<hr />
+<h2 id="pawfatbnd"><strong>pawfatbnd</strong><a class="headerlink" href="#pawfatbnd" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW: print band structure in the FAT-BaND representation<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a>, <a class="wikilink" href="../../topics/ElecBandStructure">ElecBandStructure</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 <br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t20.in" title="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)">tests/v5/Input/t20.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t71.in" title="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis">tests/v7/Input/t71.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t72.in" title="Calculation of Projected Wannier functions and compute a simplified interpolated band structure">tests/v7/Input/t72.in</a></li>
+</ul>
+<p>For Ground-State calculations and non self-consistent calculations only.<br />
+This option can be used to plot band structure. For each atom (specified by
+<a class="wikilink" href="../../input_variables/gstate/#natsph">natsph</a> and <a class="wikilink" href="../../input_variables/gstate/#iatsph">iatsph</a>), each angular momentum, and each spin polarisation,
+the band structure is written in files (such as e.g.
+FATBANDS_at0001_Ni_is2_l2_m-1). Each file contains the eigenvalue, and the
+contribution of angular momentum L, and projection of angular momentum M, (for
+the corresponding wavefunction) to the PAW density inside the PAW sphere as a
+function of the index of the k-point. The output can be readily plotted with
+the software <a href="http://plasma-gate.weizmann.ac.il/Grace/"> xmgrace </a> (e.g
+xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:  </p>
+<ul>
+<li>0: desactivated. </li>
+<li>1: The fatbands are only resolved in L. </li>
+<li>2: The fatbands are resolved in L and M. </li>
+</ul>
+<hr />
+<h2 id="pawlcutd"><strong>pawlcutd</strong><a class="headerlink" href="#pawlcutd" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - L angular momentum used to CUT the development in moments of the Densitites<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 10<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>The expansion of the densities in angular momenta is performed up to
+l=<a class="wikilink" href="../../input_variables/paw/#pawlcutd">pawlcutd</a>.<br />
+Note that, for a given system, the maximum value of <a class="wikilink" href="../../input_variables/paw/#pawlcutd">pawlcutd</a> is <strong> 2*l_max
+</strong> , where l_max is the maximum l of the PAW partial waves basis.  </p>
+<p>The choice made for this variable DOES have a bearing on the numerical
+accuracy of the results, and, as such, should be the object of a convergence
+study. The convergence test might be made on the total energy or derived
+quantities, like forces, but also on the two values of the "Compensation
+charge inside spheres", a quantity written in the log file.</p>
+<hr />
+<h2 id="pawlmix"><strong>pawlmix</strong><a class="headerlink" href="#pawlmix" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - maximum L used in the spherical part MIXing<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 10<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>The choice made for this variable determine how the spherical part of the
+density is mixed during electronic iterations.  </p>
+<p>Only parts of rhoij quantities associated with l angular momenta up to
+l=pawlmix are mixed. Other parts of augmentation occupancies are not included
+in the mixing process.<br />
+This option is useful to save CPU time but DOES have a bearing on the
+numerical accuracy of the results.</p>
+<hr />
+<h2 id="pawmixdg"><strong>pawmixdg</strong><a class="headerlink" href="#pawmixdg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - MIXing is done (or not) on the (fine) Double Grid<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0 if <a class="wikilink" href="../../input_variables/paral/#npfft">npfft</a>==1,
+1 otherwise.</p>
+<p><em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>The choice made for this variable determines the grid on which the density (or
+potential) is mixed during the SCF cycle.  </p>
+<p>- If <strong> pawmixdg=1 </strong> the density/potential is mixed in REAL space using the
+fine FFT grid (defined by <a class="wikilink" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> or <a class="wikilink" href="../../input_variables/paw/#ngfftdg">ngfftdg</a>).<br />
+- If <strong> pawmixdg=0 </strong> the density/potential is mixed in RECIPROCAL space
+using the coarse FFT grid (defined by <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> or <a class="wikilink" href="../../input_variables/gstate/#ngfft">ngfft</a>). Only components
+of the coarse grid are mixed using the scheme defined by <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>; other
+components are only precondionned by <a class="wikilink" href="../../input_variables/gstate/#diemix">diemix</a> and simply mixed.<br />
+This option is useful to save memory and does not affect numerical accuracy of
+converged results. If <strong> pawmixdg=1 </strong> , density and corresponding residual
+are stored for previous iterations and are REAL arrays of size <a class="wikilink" href="../../input_variables/internal/#nfftdg">nfftdg</a>. If
+<strong> pawmixdg=0 </strong> , density and corresponding residual are stored for previous
+iterations and are COMPLEX arrays of size <a class="wikilink" href="../../input_variables/internal/#nfft">nfft</a>. The memory saving is
+particularly efficient when using the Pulay mixing (<a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>=7 or 17).  </p>
+<p>In <strong> wavelet </strong> calculations <a class="wikilink" href="../../input_variables/basic/#usewvl">usewvl</a>=1:<br />
+- pawmixdg is set to 1 by default.<br />
+- A value of 0 is not allowed.<br />
+- Density/potential is mixed in REAL space (Here only one grid is used).</p>
+<hr />
+<h2 id="pawnhatxc"><strong>pawnhatxc</strong><a class="headerlink" href="#pawnhatxc" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>Relevant only when a GGA exchange-correlation functional is used.<br />
+When this flag is activated, the gradients of compensation charge density
+(n_hat) are exactly computed (i.e. analytically); when it is deactivated, they
+are computed with a numerical scheme in reciprocal space (which can produce
+inaccurate results if the compensation charge density is highly localized).<br />
+As analytical treatment of compensation charge density gradients is CPU time
+demanding, it is possible to bypass it with <a class="wikilink" href="../../input_variables/paw/#pawnhatxc">pawnhatxc</a>=0; but the numerical
+accuracy can be affected by this choice. It is recommended to test the
+validity of this approximation before use.</p>
+<hr />
+<h2 id="pawnphi"><strong>pawnphi</strong><a class="headerlink" href="#pawnphi" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - Number of PHI angles used to discretize the sphere around each atom.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 13<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>Number of phi angles (longitude) used to discretize the data on the atomic
+spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/paw/#pawnphi">pawnphi</a> and
+<a class="wikilink" href="../../input_variables/paw/#pawntheta">pawntheta</a>.</p>
+<hr />
+<h2 id="pawntheta"><strong>pawntheta</strong><a class="headerlink" href="#pawntheta" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - Number of THETA angles used to discretize the sphere around each atom.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 12<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>Number of theta angles (latitude) used to discretize the data on the atomic
+spheres. This discretization is completely defined by <a class="wikilink" href="../../input_variables/paw/#pawntheta">pawntheta</a> and
+<a class="wikilink" href="../../input_variables/paw/#pawnphi">pawnphi</a>.</p>
+<hr />
+<h2 id="pawnzlm"><strong>pawnzlm</strong><a class="headerlink" href="#pawnzlm" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>Concerns the computation of the contributions to the density from the spheres
+(named rho_1 - rho_tild_1).<br />
+If set to 0, all lm-moments of the sphere contributions to the density are
+computed at each electronic iteration.<br />
+If set to 1, only non-zero lm-moments of the sphere contributions to the
+density are computed at each electronic iteration (they are all computed at
+the first iteration then only those found to be non-zero will be computed ;
+thus the first iteration is more cpu intensive)</p>
+<hr />
+<h2 id="pawoptmix"><strong>pawoptmix</strong><a class="headerlink" href="#pawoptmix" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - OPTion for the MIXing of the spherical part<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>built-in:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/built-in/Input/testin_etsf_io.in" title="Ca atom with PAW,  writing a ETSF_IO wavefunction file.">tests/built-in/Input/testin_etsf_io.in</a></li>
+<li>etsf_io:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/etsf_io/Input/t00.in" title="Ca atom with PAW,  writing a ETSF_IO wavefunction file. Very quick built-in test,  to check that ETSF_IO is installed.">tests/etsf_io/Input/t00.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/etsf_io/Input/t09.in" title="Ca atom in PAW. Test the output of density in PAW formalism with ETSF_IO. Also test the output of the wavefunctions in PAW formalism with ETSF_IO.">tests/etsf_io/Input/t09.in</a></li>
+<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t04.in" title="Ca in orthorhombic structure. 1 k point,  low ecut. Perform a test of GS total energy computation,  using an experimental PAW pseudopotential (pspcod=7).">tests/v4/Input/t04.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t05.in" title="O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to verify that different values of input variable 'ortalg' give the same results for total energy. 'ortalg' is use in the conjugate gradient algorithm which solves,  in the case of PAW calculations, a generalized eigenproblem (H.|Psi&gt;=Lambda.S|Psi&gt;). Three datasets are perfomed;  they must give the same total energies values (when converged).">tests/v4/Input/t05.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t06.in" title="O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to mesure the convergence of the total energy versus the variable 'ecut'. 6 datasets are performed with ecut varying from 8 Ha to 18 Ha Cut-off for the fine grid (used to transfer data from spherical meshes to FFt meshes) remain constant.">tests/v4/Input/t06.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t07.in" title="O in arbitrary structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to test the differents mixing scheme in PAW formalism. Different values of iscf,  pawmixdg and pawoptmix are choosen. Features tested: - mixing on density or potential (mod(iscf, 10)) - different mixing schemes (iscf) - inclusion of spherical part in residual (pawoptmix) - mixing on coarse or fine grid (pawmixdg) - mixing factor for spherical part (pawsphmix) All mixing schemes give the same total energy.">tests/v4/Input/t07.in</a></li>
+</ul>
+<p>In the case of PAW computations, during the self-consistent cycle, ABINIT
+mixes the density ρ(r)= ∼ρ(r) +∧ρ(r) and the occupancy matrix ρij. (∼ρ(r) is
+the pseudo density, ∧ρ(r) is the compensation charge density). It can be
+redundant as ρij is contained in ∧ρ(r).  </p>
+<ul>
+<li>
+<p>If <strong>pawoptmix</strong>=0:<br />
+ABINIT mixes ρ(r) and ρij but the residual used to control the mixing
+algorithm is only based on ρ(r).</p>
+</li>
+<li>
+<p>If <strong>pawoptmix</strong>=1:<br />
+ABINIT mixes ρ(r) and ρij and the residual used to control the mixing
+algorithm is based on ρ(r) and ρij.</p>
+</li>
+</ul>
+<p>This has only an influence on the efficiency of the mixing algorithm.<br />
+In cas of mixing problems, the first suggestion is to increase the size of the
+history (see <a class="wikilink" href="../../input_variables/dev/#npulayit">npulayit</a>). Then it is also possible to play with the
+parameters of the Kerker mixing: <a class="wikilink" href="../../input_variables/gstate/#diemix">diemix</a>, <a class="wikilink" href="../../input_variables/gstate/#diemac">diemac</a>, etc...</p>
+<hr />
+<h2 id="pawoptosc"><strong>pawoptosc</strong><a class="headerlink" href="#pawoptosc" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - OPTion for the computation of the OSCillator matrix elements<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Susceptibility">Susceptibility</a>, <a class="wikilink" href="../../topics/BSE">BSE</a>, <a class="wikilink" href="../../topics/SelfEnergy">SelfEnergy</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>v67mbpt:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t29.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with PAW and nsppol = 2. Use model dielectric function computed from AE PAW density (denfgr.F90).">tests/v67mbpt/Input/t29.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in" title="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model">tests/v7/Input/t78.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in" title="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon">tests/v7/Input/t79.in</a></li>
+</ul>
+<p>Only relevant for GW or Bethe-Salpeter calculations with PAW.<br />
+This variable defines the approach used for the evaluation of the oscillator
+matrix elements within the PAW formalism. Possible values are 0,1,2.<br />
+If <a class="wikilink" href="../../input_variables/paw/#pawoptosc">pawoptosc</a>=0 the code uses its internal default value (2 for SCREENING
+calculations, 1 for SIGMA calculations, 2 for Bethe-Salpeter<br />
+If <a class="wikilink" href="../../input_variables/paw/#pawoptosc">pawoptosc</a>=1 the matrix elements are computed with the expression given
+by Arnaud and Alouani in PRB 62. 4464 The equation is exact provided that the
+set of PAW partial waves is complete.<br />
+If <a class="wikilink" href="../../input_variables/paw/#pawoptosc">pawoptosc</a>=2 the matrix elements are computed with the approximated
+expression proposed by Shishkin and Kresse in PRB 74. 035101</p>
+<hr />
+<h2 id="pawovlp"><strong>pawovlp</strong><a class="headerlink" href="#pawovlp" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - spheres OVerLaP allowed (in percentage)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 5.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t41.in" title="Gold,  8 atom supercell,  with PAW. Test lotf_nitex,  lotf_classic,  lotf_version,  lotf_nneigx. These variables,  concerning LOTF method,  are taken into account only if the enable_lotf=&quot;yes&quot; is used in configuration.">tests/paral/Input/t41.in</a></li>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t89.in" title="Computation of phonons frequencies for metallic occupations at q=0 0 0 within PAW O2 (nsppol=1);  this test is directly inspired by test v3#75. In datasets 1-3,  one computes the total energy and forces,  without symmetries, as it should be for accurate finite-difference tests. From the reduced gradients with respect to displacements,  one can deduce a 2DTE of 149.9614 Ha. In dataset 4,  RF is computed with the Fermi energy correction, and the agreement with finite-differences of datasets 1 and 3 is good : one gets 149.9612 Ha. In dataset 5,  RF is computed with frozen Fermi energy and the disagreement with finite-differences of datasets 1 and 3 is large: one gets 124.9787 Ha.">tests/v6/Input/t89.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t08.in" title="Hydrogen molecule: Test the Path-Integral Molecular Dynamics (PIMD) implementation in (N, V, T) ensemble. THe two thermostats (Nose-Hoover chains and Langevin) are tested together with the three coordinate systems (primitive,  normal mode,  staging). NOTE: MPI run with 2 procs is ok but fldiff comparison fails due to an extra section with --- Pseudopotential description --">tests/v7/Input/t08.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t71.in" title="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis">tests/v7/Input/t71.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t72.in" title="Calculation of Projected Wannier functions and compute a simplified interpolated band structure">tests/v7/Input/t72.in</a></li>
+<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t05.in" title="H2 molecule: PIMD simulation with Langevin thermostat. Test of restart with HIST.nc file. Test of linear constraint.">tests/v8/Input/t05.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t31.in" title="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly.">tests/v8/Input/t31.in</a></li>
+</ul>
+<p>When PAW is activated, a localized atomic basis is added to describe wave
+functions. Spheres around atoms are defined and they are IN PRINCIPLE not
+allowed to overlap. However, a small overlap can be allowed without
+compromising the accuracy of results. Be aware that too high overlaps can lead
+to unphysical results.<br />
+With the <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a> variable, the user can control the (voluminal) overlap
+percentage allowed without stopping the execution.<br />
+<a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a> is the value (in percentage: 0...100%) obtained by dividing the
+volume of the overlap of two spheres by the volume of the smallest sphere.<br />
+The following values are permitted for <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a>:  </p>
+<p>- <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a>&lt;0. : overlap is always allowed<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a>=0. : no overlap is allowed<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a>&gt;0. and &lt;100. : overlap is allowed only if it is less
+than <a class="wikilink" href="../../input_variables/paw/#pawovlp">pawovlp</a> %</p>
+<hr />
+<h2 id="pawprtden"><strong>pawprtden</strong><a class="headerlink" href="#pawprtden" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW: PRinT total physical electron DENsity<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<p><strong> Deprecated : </strong> See the <a class="wikilink" href="../../input_variables/files/#prtden">prtden</a>. </p>
+<hr />
+<h2 id="pawprtdos"><strong>pawprtdos</strong><a class="headerlink" href="#pawprtdos" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW: PRinT partial DOS contributions<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a>, <a class="wikilink" href="../../topics/ElecDOS">ElecDOS</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/files/#prtdos">prtdos</a>==3<br />
+Test list:</p>
+<ul>
+<li>tutorial:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tpaw1_4.in" title="Input for PAW1 tutorial Diamond at experimental volume">tests/tutorial/Input/tpaw1_4.in</a></li>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t19.in" title="FCC Gadolinium. PAW + U calculation Test the imposition of the density matrix (10 first steps) and related variables. Test of partial DOS is also done (through the diff of DOS_AT0001)">tests/v5/Input/t19.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t20.in" title="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)">tests/v5/Input/t20.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in" title="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model">tests/v7/Input/t78.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in" title="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon">tests/v7/Input/t79.in</a></li>
+</ul>
+<p>This input variable controls the computation and/or printing of contributions
+to the PAW partial DOS in _DOS file(s):  </p>
+<p>+ Plane-waves contribution<br />
++ "on-site" all-electron contribution (phi)<br />
+- "on-site" pseudo contribution (phi_tild).  </p>
+<p>If <strong> pawprtdos=0: </strong><br />
+- The 3 contributions are computed; only the total partial DOS is output in
+_DOS file.<br />
+If <strong> pawprtdos=1: </strong><br />
+- The 3 contributions are computed and output in _DOS file.<br />
+- In that case, integrated DOS is not output.<br />
+If <strong> pawprtdos=2: </strong><br />
+- Only "on-site" all-electron contribution is computed and output in _DOS
+file.<br />
+- This a (very) good approximation of total DOS, provided that (1) the PAW
+local basis is complete, (2) the electronic charge is mostly contained in PAW
+spheres.<br />
+- In that case, the <a class="wikilink" href="../../input_variables/gstate/#ratsph">ratsph</a> variable is automatically set to the PAW
+radius.</p>
+<hr />
+<h2 id="pawprtvol"><strong>pawprtvol</strong><a class="headerlink" href="#pawprtvol" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW: PRinT VOLume<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>Control print volume and debugging output for PAW in log file or standard
+output. If set to 0, the print volume is at its minimum.<br />
+<a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a> can have values from -3 to 3:<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=-1 or 1: matrices rho_ij (atomic occupancies) and D_ij (psp
+strength) are printed at each SCF cycle with details about their
+contributions.<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=-2 or 2: like -1 or 1 plus additional printing: moments of
+"on-site" densities, details about local exact exchange.<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=-3 or 3: like -2 or 2 plus additional printing: details about
+PAW+U, rotation matrices of sphercal harmonics.<br />
+When <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>&gt;=0, up to 12 components of rho_ij and D_ij matrices for
+the 1st and last atom are printed.<br />
+When <a class="wikilink" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>&lt;0, all components of rho_ij and D_ij matrices for all
+atoms are printed.  </p>
+<hr />
+<h2 id="pawprtwf"><strong>pawprtwf</strong><a class="headerlink" href="#pawprtwf" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW: PRinT WaveFunctions<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>etsf_io:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/etsf_io/Input/t09.in" title="Ca atom in PAW. Test the output of density in PAW formalism with ETSF_IO. Also test the output of the wavefunctions in PAW formalism with ETSF_IO.">tests/etsf_io/Input/t09.in</a></li>
+</ul>
+<p>This input variable controls the output of the full PAW wave functions
+including the on-site contribution inside each PAW sphere needed to
+reconstruct the correct nodal shape in the augmentation region. <strong> pawprtwf=1
+</strong> causes the generation of a file _AE_WFK that contains the full
+wavefunctions in real space on the fine FFT grid defined by <a class="wikilink" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> or
+<a class="wikilink" href="../../input_variables/paw/#ngfftdg">ngfftdg</a>. Limitations: At present (v6.0), <strong> pawprtwf=1 </strong> is not
+compatible neither with the k-point parallelism nor with the parallelism over
+G-vectors. Therefore the output of the _AE_WFK has to be done in sequential.
+Moreover, in order to use this feature, one has to enable the support for
+ETSF-IO at configure-time as the _AW_WFK file is written using the NETCDF file
+format following the ETSF-IO specification for wavefunctions in real space. If
+the code is run entirely in serial, additional output is made of various
+contributions to the all-electron wavefunction. By default the full available
+set of bands and k-points are ouput, but a single band and k-point index can
+be requested by using the variables <a class="wikilink" href="../../input_variables/dev/#pawprt_b">pawprt_b</a> and <a class="wikilink" href="../../input_variables/dev/#pawprt_k">pawprt_k</a>.</p>
+<hr />
+<h2 id="pawspnorb"><strong>pawspnorb</strong><a class="headerlink" href="#pawspnorb" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - option for SPiN-ORBit coupling<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a>, <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1 if <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>==2,
+0 otherwise.</p>
+<p><em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>gpu:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/gpu/Input/t03.in" title="NiO - LDA+U - fcc structure Test the use of GPU within Projector Augmented-Wave formalism. Test ferromagnetic and non-collinear magnetism. ABINIT v7.0: GPU is not used when nspinor=2">tests/gpu/Input/t03.in</a></li>
+<li>mpiio:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t28.in" title="GaAs with PAW and spin-orbit coupling. 2x2x2 K grid;  low cut-off for test Test paral_kgb==1 with MPI-FFT/spinor parallelization,  the IO of the WFK file, the output of potential files and the calculation of PJDOS in parallel (PW term + on-site contributions)">tests/mpiio/Input/t28.in</a></li>
+<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t28.in" title="Test the parallelization over spinorial components of WF Bi A7 structure (2 atoms,  treated as semi-conductor), using PAW,  within LDA and spin-orbit coupling. - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2)">tests/paral/Input/t28.in</a></li>
+<li>tutorial:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tspin_6.in" title="Bismuth atom,  isolated,  in a supercell - with and without spin-orbit coupling.">tests/tutorial/Input/tspin_6.in</a></li>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t16.in" title="NiO: 2 Ni and 2 O atoms in an fcc supercell. Different combinations of nsppol/nspden/nspinor/pawspnorb are tested in the PAW+U formalism: 1- non-magnetic                     nsppol/nspden/nspinor=1/1/1 2- non-magnetic LDA+U               nsppol/nspden/nspinor=1/1/1 3- ferro-magnetic LDA+U             nsppol/nspden/nspinor=2/2/1 4- antiferro-magnetic LDA+U         nsppol/nspden/nspinor=1/2/1 5- non-collinear magnetism          nsppol/nspden/nspinor=1/4/2 6- non-collinear magnetism LDA+U    nsppol/nspden/nspinor=1/4/2 7- non-collinear magnetism LDA+U+SO nsppol/nspden/nspinor=1/4/2 8- non-magnetic LDA+U+SO            nsppol/nspden/nspinor=1/1/2 Cut-off and k-points are unrealistic.">tests/v5/Input/t16.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t17.in" title="Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users.">tests/v5/Input/t17.in</a></li>
+<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t49.in" title="Electric field gradients in ICl molecule,  with and without spin orbit coupling.">tests/v6/Input/t49.in</a></li>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in" title="(Apparently the documentation section of this test has been lost)">tests/v7/Input/t21.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t82.in" title="Silicon. Silicon effective mass tensor in PAW with Spin-Orbit coupling.">tests/v7/Input/t82.in</a></li>
+</ul>
+<p>When PAW is activated, the <strong> spin-orbit coupling </strong> can be added without the
+use of specific PAW datasets (pseudopotentials).<br />
+If <a class="wikilink" href="../../input_variables/paw/#pawspnorb">pawspnorb</a>=1, spin-orbit will be added.<br />
+If the wavefunction is spinorial (that is, if <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=2), there is no
+reason not to include the spin-orbit interaction, so that the default value of
+<a class="wikilink" href="../../input_variables/paw/#pawspnorb">pawspnorb</a> becomes 1 when <a class="wikilink" href="../../input_variables/gstate/#nspinor">nspinor</a>=2.<br />
+Note that only the all-electron "on-site" contribution to the Hamiltonian is
+taken into account; this is a very good approximation but requires the
+following conditions to be fullfilled:  </p>
+<p>1- the  ~  φ i  basis is complete enough<br />
+2- the electronic density is mainly contained in the PAW sphere  </p>
+<p>Also note that, when spin-orbit coupling is activated and there is some
+magnetization <a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>=4, the time-reversal symmetry is broken.<br />
+The use of <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=1 or <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=2 is thus forbidden. It is advised to
+use <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=3 (no symmetry used to generate k-points) or <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=4 (only
+spatial symmetries used to generate k-points).<br />
+Be careful if you choose to use <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=0 (k-points given by hand); Time-
+reversal symmetry has to be avoided.<br />
+An artificial scaling of the spin-orbit can be introduced thanks to the
+<a class="wikilink" href="../../input_variables/paw/#spnorbscl">spnorbscl</a> input variable.</p>
+<hr />
+<h2 id="pawstgylm"><strong>pawstgylm</strong><a class="headerlink" href="#pawstgylm" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - option for the STorage of G_l(r).YLM(r)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>=1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>When PAW is activated, the computation of compensation charge density (so
+called "hat" density) requires the computation of g_l(r).Y_lm(r) factors (and
+cartesian derivatives) at each point of real space contained in PAW spheres.
+The number of atoms, of (l,m) quantum numbers and the sharpness of the real
+FFT grid can lead to a very big {g_l.Y_lm} datastructure. One can save memory
+by putting <a class="wikilink" href="../../input_variables/paw/#pawstgylm">pawstgylm</a>=0; but, in that case, g_l(r).Y_lm(r) factors a re-
+computed each time they are needed and CPU time increases.  </p>
+<p>Possible choices:<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawstgylm">pawstgylm</a>=0 : g_l(r).Y_lm(r) are not stored in memory and recomputed.<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawstgylm">pawstgylm</a>=1 : g_l(r).Y_lm(r) are stored in memory.  </p>
+<p>Note:<br />
+g_l(r) are shape functions (analytically known)<br />
+Y_lm(r) are real spherical harmonics</p>
+<hr />
+<h2 id="pawsushat"><strong>pawsushat</strong><a class="headerlink" href="#pawsushat" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>==0 <br />
+Test list:</p>
+<p>Ground-State calculation only.<br />
+When a sophisticated preconditioning scheme is selected for the SCF cycle of a
+Ground-State calculation (<a class="wikilink" href="../../input_variables/gstate/#iprcel">iprcel</a>&gt;0), the computation of the
+susceptibility matrix is required several times during the cycle. This
+computation is computer time consuming, especially -- within PAW -- because
+of the inclusion of additional terms due to the compensation charge density.
+As only a crude valuation of the susceptibilty matrix is needed (to evaluate a
+preconditioning matrix), the compensation charge contribution can be neglected
+to save CPU time (select <a class="wikilink" href="../../input_variables/paw/#pawsushat">pawsushat</a>=0). This approximation could be
+unfavourable in some cases; in the latter, we advise to put <a class="wikilink" href="../../input_variables/paw/#pawsushat">pawsushat</a>=1.  </p>
+<p>Possible choices:<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawsushat">pawsushat</a>=0 : only plane-wave contribution to suscep. matrix is
+computed.<br />
+- <a class="wikilink" href="../../input_variables/paw/#pawsushat">pawsushat</a>=1 : the whole suscep. matrix (PW + PAW on-site) is computed.  </p>
+<hr />
+<h2 id="pawusecp"><strong>pawusecp</strong><a class="headerlink" href="#pawusecp" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in" title="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.">tests/v5/Input/t06.in</a></li>
+</ul>
+<p>When PAW is activated, the computation of cprj arrays is memory and time
+consuming.<br />
+When <a class="wikilink" href="../../input_variables/paw/#pawusecp">pawusecp</a>=0, then the cprj are never kept in memory, they are
+recomputed when needed (this is CPU-time consuming). When <a class="wikilink" href="../../input_variables/paw/#pawusecp">pawusecp</a>=1, then
+the cprj are computed once and then kept in memory.<br />
+Change the value of the keyword only if you are an experienced user
+(developper).<br />
+Remember: cprj = (WF_n .dot. p_i) (WF_n=wave function, p_i=non-local
+projector).  </p>
+<p>For the time being, only activated for RF calculations.  </p>
+<hr />
+<h2 id="pawxcdev"><strong>pawxcdev</strong><a class="headerlink" href="#pawxcdev" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PAW - choice for eXchange-Correlation DEVelopment (spherical part)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>
+<p>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t22.in" title="EuO rock salt structure. 27-electron PAW pseudo (4f and 5d are explicitly treated : 4d10 4f7 5s2 5p6 (5d0) 6s2 ) Test of initialisation using occopt=1 (the default) with non-zero spinmagntarget, and also metallic occopt. Also test pawxcdev=0">tests/v7/Input/t22.in</a></p>
+</li>
+<li>
+<p>If set to 0, the exchange-correlation term in the spherical part of energy is totally computed on the angular mesh </p>
+</li>
+<li>If set to 1, the exchange-correlation term in the spherical part of energy is developed onto lm-moments at order 1 </li>
+<li>If set to 2, the exchange-correlation term in the spherical part of energy is developed onto lm-moments at order 2 (can be memory/CPU consuming) </li>
+</ul>
+<p>Be careful: GGA requires <a class="wikilink" href="../../input_variables/paw/#pawxcdev">pawxcdev</a> &gt; 0</p>
+<hr />
+<h2 id="prtefg"><strong>prtefg</strong><a class="headerlink" href="#prtefg" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PRint Electric Field Gradient<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/printing">printing</a>, <a class="wikilink" href="../../topics/EFG">EFG</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1, <a class="wikilink" href="../../input_variables/paw/#quadmom">quadmom</a><br />
+Test list:</p>
+<ul>
+<li>libxc:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/libxc/Input/t10.in" title="Stishovite (a polymorph of SiO2) Test PBEsol in the PAW formalism,  using PAW datasets created with atompaw linked with libxc. Note that the value of ixc is not present in the input file,  but it is present in the ATOMPAW dataset (pspxc = -116133)">tests/libxc/Input/t10.in</a></li>
+<li>mpiio:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t26.in" title="C-diamond,  Bulk,  2 atoms,  with PAW. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test the plane wave load balancing procedure (pw_unbal_thresh). Test also the computation of PJDOS.">tests/mpiio/Input/t26.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t27.in" title="C-diamond,  Bulk,  2 atoms,  with NC pseudo generated with oncvps-3.2.3. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test also prtdos (PJDOS) in parallel with MPI-FFT. Similar to t26.in">tests/mpiio/Input/t27.in</a></li>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t31.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003). Coded by J. Zwanziger and M. Torrent.">tests/v5/Input/t31.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t32.in" title="Stishovite,  high-pressure polymorph of SiO2. GGA (PBE). Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003).">tests/v5/Input/t32.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t33.in" title="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases.">tests/v5/Input/t33.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t35.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger.">tests/v5/Input/t35.in</a></li>
+<li>
+<p>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t44.in" title="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case.">tests/v6/Input/t44.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t49.in" title="Electric field gradients in ICl molecule,  with and without spin orbit coupling.">tests/v6/Input/t49.in</a></p>
+</li>
+<li>
+<p>If nonzero, calculate the electric field gradient at each atomic site in the unit cell. Using this option requires <a class="wikilink" href="../../input_variables/paw/#quadmom">quadmom</a> to be set as well. Values will be written to main output file (search for Electric Field Gradient). If prtefg=1, only the quadrupole coupling in MHz and asymmetry are reported. If prtefg=2, the full electric field gradient tensors in atomic units are also given, showing separate contributions from the valence electrons, the ion cores, and the PAW reconstruction. If prtefg=3, then in addition to the prtefg=2 output, the EFGs are computed using an ionic point charge model. This is useful for comparing the accurate PAW-based results to those of simple ion-only models. Use of prtefg=3 requires that the variable <a class="wikilink" href="../../input_variables/paw/#ptcharge">ptcharge</a> be set as well. <br />
+The option prtefg is compatible with spin polarized calculations (see
+<a class="wikilink" href="../../input_variables/gstate/#nspden">nspden</a>) and also LDA+U (see <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>).</p>
+</li>
+</ul>
+<hr />
+<h2 id="prtfc"><strong>prtfc</strong><a class="headerlink" href="#prtfc" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PRinT Fermi Contact term<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/printing">printing</a>, <a class="wikilink" href="../../topics/EFG">EFG</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>libxc:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/libxc/Input/t10.in" title="Stishovite (a polymorph of SiO2) Test PBEsol in the PAW formalism,  using PAW datasets created with atompaw linked with libxc. Note that the value of ixc is not present in the input file,  but it is present in the ATOMPAW dataset (pspxc = -116133)">tests/libxc/Input/t10.in</a></li>
+<li>mpiio:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t26.in" title="C-diamond,  Bulk,  2 atoms,  with PAW. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test the plane wave load balancing procedure (pw_unbal_thresh). Test also the computation of PJDOS.">tests/mpiio/Input/t26.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t27.in" title="C-diamond,  Bulk,  2 atoms,  with NC pseudo generated with oncvps-3.2.3. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test also prtdos (PJDOS) in parallel with MPI-FFT. Similar to t26.in">tests/mpiio/Input/t27.in</a></li>
+<li>
+<p>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t34.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the Fermi contact term at each atomic site. Coded and contributed by J. Zwanziger.">tests/v5/Input/t34.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t36.in" title="BCC iron,  ferromagnetic,  computation of Fermi contact term with two spin densities. Coded and contributed by J. Zwanziger.">tests/v5/Input/t36.in</a></p>
+</li>
+<li>
+<p>If set to 1, print the Fermi contact interaction at each nuclear site, that is, the electron density at each site. The result appears in the main output file (search for FC). Note that this calculation is different than what is done by cut3d, because it also computes the PAW on-site corrections in addition to the contribution from the valence pseudo-wavefunctions. </p>
+</li>
+</ul>
+<hr />
+<h2 id="prtnabla"><strong>prtnabla</strong><a class="headerlink" href="#prtnabla" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PRint NABLA<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/printing">printing</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>mpiio:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t26.in" title="C-diamond,  Bulk,  2 atoms,  with PAW. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test the plane wave load balancing procedure (pw_unbal_thresh). Test also the computation of PJDOS.">tests/mpiio/Input/t26.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t27.in" title="C-diamond,  Bulk,  2 atoms,  with NC pseudo generated with oncvps-3.2.3. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test also prtdos (PJDOS) in parallel with MPI-FFT. Similar to t26.in">tests/mpiio/Input/t27.in</a></li>
+<li>
+<p>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t09.in" title="Test to prepare a conductivity calculation (test v5#t10) Ground state calculation for 4 Al atoms The number of bands is unrealistic. This test produces files that are inputs for test 10. It tests the following parts of the code: optic_paw,  optic_paw_core Note that,  in addition to the psp file,  the core wave functions file is needed.">tests/v5/Input/t09.in</a></p>
+</li>
+<li>
+<p>If set to 1, calculate the matrix elements &lt;Psi_n|-inabla|Psi_m&gt; and write it in file _OPT to be read by the code conducti. </p>
+</li>
+</ul>
+<hr />
+<h2 id="ptcharge"><strong>ptcharge</strong><a class="headerlink" href="#ptcharge" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PoinT CHARGEs<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/EFG">EFG</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> <em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a>&gt;=3 <br />
+Test list:</p>
+<ul>
+<li>
+<p>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t35.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger.">tests/v5/Input/t35.in</a></p>
+</li>
+<li>
+<p>Array of point charges, in atomic units, of the nuclei. In the normal computation of electric field gradients (see <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a>) the ionic contribution is calculated from the core charges of the atomic sites. Thus for example in a PAW data set for oxygen where the core is 1s2, the core charge is +6 (total nuclear charge minus core electron charge). In point charge models, which are much less accurate than PAW calculations, all atomic sites are treated as ions with charges determined by their valence states. In such a case oxygen almost always would have a point charge of -2. The present variable taken together with <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a> performs a full PAW computation of the electric field gradient and also a simple point charge computation. The user inputs whatever point charges he/she wishes for each atom type. </p>
+</li>
+</ul>
+<hr />
+<h2 id="quadmom"><strong>quadmom</strong><a class="headerlink" href="#quadmom" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> QUADrupole MOMents<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/EFG">EFG</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> <em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a>&gt;=1 <br />
+Test list:</p>
+<ul>
+<li>libxc:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/libxc/Input/t10.in" title="Stishovite (a polymorph of SiO2) Test PBEsol in the PAW formalism,  using PAW datasets created with atompaw linked with libxc. Note that the value of ixc is not present in the input file,  but it is present in the ATOMPAW dataset (pspxc = -116133)">tests/libxc/Input/t10.in</a></li>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t31.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003). Coded by J. Zwanziger and M. Torrent.">tests/v5/Input/t31.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t32.in" title="Stishovite,  high-pressure polymorph of SiO2. GGA (PBE). Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003).">tests/v5/Input/t32.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t33.in" title="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases.">tests/v5/Input/t33.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t35.in" title="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger.">tests/v5/Input/t35.in</a></li>
+<li>
+<p>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t44.in" title="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case.">tests/v6/Input/t44.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t49.in" title="Electric field gradients in ICl molecule,  with and without spin orbit coupling.">tests/v6/Input/t49.in</a></p>
+</li>
+<li>
+<p>Array of quadrupole moments, in barns, of the nuclei. These values are used in conjunction with the electric field gradients computed with <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a> to calculate the quadrupole couplings in MHz, as well as the asymmetries. Note that the electric field gradient at a nuclear site is independent of the nuclear quadrupole moment, thus the quadrupole moment of a nucleus can be input as 0, and the option <a class="wikilink" href="../../input_variables/paw/#prtefg">prtefg</a>=2 used to determine the electric field gradient at the site. </p>
+</li>
+</ul>
+<hr />
+<h2 id="spnorbscl"><strong>spnorbscl</strong><a class="headerlink" href="#spnorbscl" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> SPin-ORBit SCaLing<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a>, <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#pawspnorb">pawspnorb</a>&gt;= 1 <br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t17.in" title="Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users.">tests/v5/Input/t17.in</a></li>
+</ul>
+<p>Scaling of the spin-orbit interaction. The default values gives the first-
+principles value, while other values are used for the analysis of the effect
+of the spin-orbit interaction, but are not expected to correspond to any
+physical situation.</p>
+<hr />
+<h2 id="upawu"><strong>upawu</strong><a class="headerlink" href="#upawu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> value of U for PAW+U<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
+<em>Default value:</em> <em>0<br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1  </p>
+<p>Gives the value of the screened coulomb interaction between correlated
+electrons corresponding to <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> for each species.<br />
+In the case where <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a> =-1, the value is not used.<br />
+In the case of a GW calculation, the U interaction defined by <a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a> will
+be REMOVED from the self energy. In particular, for G0 W0 calculations
+(perturbative calculations), the energy eigenvalues obtained after an
+underlying DFT+U calculation will be<br />
+E_GW = E_DFT+U + &lt; phi | Self-energy - U | phi&gt;<br />
+Actually, in order to perform a GW @ DFT+U calculation, one should define the
+same value of U in the self-energy calculation, than the one defined in the
+DFT calculation. The easiest is actually to define the value of U for the
+whole set of calculations (for the different datasets), including the
+screening, even if the U value does not play explicitly a role in the
+computation of the latter (well, the input wavefunctions will be different
+anyhow).<br />
+It is possible to perform calculations of the type GW+U_prime @ DFT+U , so
+keeping a U interaction (usually smaller than the initial U) in the GW
+calculation, by defining a smaller U than the one used in the DFT calculation.
+This value will be subtracted in the GW correction calculation, as outlined
+above.<br />
+Explicitly, in order to do a calculation of a material with a DFT U value of
+7.5 eV, followed by a GW calculation where there is a residual U value of 2
+eV, one has to define :</p>
+<pre><code>  upawu1   7.5 eV   ! This is for the DFT calculation
+...
+optdriver4  4
+upawu4   5.5 eV   ! This is for the screening calculation
+</code></pre>
+<hr />
+<h2 id="usedmatpu"><strong>usedmatpu</strong><a class="headerlink" href="#usedmatpu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> USE of an initial Density MATrix in Paw+U<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1 and <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>==1  </p>
+<p>When <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>/=0, an initial density matrix (given by <a class="wikilink" href="../../input_variables/paw/#dmatpawu">dmatpawu</a>
+keyword) is used and kept fixed during the first ABS(<a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>) SCF steps.<br />
+This starting value of the density matrix can be useful to find the correct
+ground state. Within LDA+U formalism, finding the minimal energy of the system
+is tricky; thus it is advised to test several values of the initial density
+matrix.<br />
+Note also that the density matrix has to respect some symmetry rules
+determined by the space group. If the symmetry is not respected in the input,
+the matrix is however automatically symmetrised.  </p>
+<p>The sign of <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a> has influence only when <a class="wikilink" href="../../input_variables/rlx/#ionmov">ionmov</a>/=0 (dynamics or
+relaxation):<br />
+- When <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>&gt;0, the density matrix is kept constant only at first
+ionic step<br />
+- When <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>&lt;0, the density matrix is kept constant at each ionic
+step  </p>
+<hr />
+<h2 id="useexexch"><strong>useexexch</strong><a class="headerlink" href="#useexexch" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> USE of EXact EXCHange<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/xc">xc</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1<br />
+Test list:</p>
+<ul>
+<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t18.in" title="NiO with 4 atoms per cell Test computation of the local exact exchange (PBE0) in PAW.">tests/v5/Input/t18.in</a></li>
+</ul>
+<p>When <a class="wikilink" href="../../input_variables/paw/#useexexch">useexexch</a>=1, the hybrid functional PBE0 is used in PAW, inside PAW
+spheres only, and only for correlated orbitals given by <a class="wikilink" href="../../input_variables/paw/#lexexch">lexexch</a>. To change
+the ratio of exact exchange, see also <a class="wikilink" href="../../input_variables/dev/#exchmix">exchmix</a>.</p>
+<hr />
+<h2 id="usepawu"><strong>usepawu</strong><a class="headerlink" href="#usepawu" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> USE PAW+U (spherical part)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DFT+U">DFT+U</a>, <a class="wikilink" href="../../topics/GW">GW</a>, <a class="wikilink" href="../../topics/SelfEnergy">SelfEnergy</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>Must be non-zero if a DFT+U calculation is done, or if a GW calculation
+following a DFT+U calculation is done (important !).</p>
+<ul>
+<li>
+<p>If set to 0, the LDA+U method is not used.   </p>
+</li>
+<li>
+<p>If set to 1 or 2, the LDA+U method (cf [1]) is used. The full rotationally invariant formulation is used (see Eq. (3) of Ref [2]) for the interaction term of the energy. Two choices are allowed concerning the double counting term:   </p>
+<ul>
+<li>
+<p>If <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>=1, the Full Localized Limit (FLL) (or Atomic limit) double counting is used (cf Eq. (4) of Ref.[2] or Eq. (8) of Ref[3]).   </p>
+</li>
+<li>
+<p>If <a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>=2, the Around Mean Field (AMF) double counting is used (cf Eq. (7) of Ref [3]). Not valid if nspinor=2.   </p>
+</li>
+</ul>
+</li>
+</ul>
+<p>If LDA+U is activated (<a class="wikilink" href="../../input_variables/paw/#usepawu">usepawu</a>=1 or 2), the <a class="wikilink" href="../../input_variables/paw/#lpawu">lpawu</a>, <a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a> and
+<a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a> input variables are read.<br />
+The implementation is done inside PAW augmentation regions only (cf Ref [4]).
+The initial density matrix can be given in the input file (see <a class="wikilink" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>).
+The expression of the density matrix is chosen thanks to <a class="wikilink" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>. See
+also <a href="../../../users/How_to_use_LDA_plus_U.txt"> How_to_use_LDA_plus_U.txt </a> .
+for some informations.<br />
+In the case of a GW calculation on top of a DFT+U, the absence of definition
+of a U value in the self-energy will LEAVE the underlying U from the DFT
+calculation. Thus, the code will actually do a GW+U @ DFT+U calculation. Note
+that the screening calculation will not be affected by the presence/absence of
+a U value.<br />
+Actually, in order to perform a GW @ DFT+U calculation, one should define the
+same value of U in the self-energy calculation, than the one defined in the
+DFT calculation. The code will know that the interaction corresponding to that
+value has to be SUBTRACTED inside the self-energy. The easiest is actually to
+define the presence of U for the whole set of calculations (for the different
+datasets), including the screening, even if the U value does not play
+explicitly a role in the computation of the latter (well, the input
+wavefunctions will be different anyhow).<br />
+It is possible to perform calculations of the type GW+U_prime @ DFT+U , so
+keeping a smaller U interaction in the GW calculation, by subtracting a
+smaller U than the one used in the DFT calculation. See the description of the
+<a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a> input variable.<br />
+References:<br />
+[1] V. I. Anisimov, J. Zaanen, and O. K. Andersen PRB 44, 943 (1991)<br />
+[2] A.I. Lichtenstein, V.I. Anisimov and J. Zaanen PRB 52, 5467 (1995)<br />
+[3] M. T. Czyzyk and G. A. Sawatzky PRB 49, 14211 (1994)<br />
+[4] O. Bengone, M. Alouani, P. Blochl, and J. Hugel PRB 62, 16392 (2000)  </p>
+<p>Suggested acknowledgment:<br />
+- B. Amadon, F. Jollet and M. Torrent, Phys. Rev. B 77, 155104 (2008).  </p>
+<hr />
+<h2 id="usepotzero"><strong>usepotzero</strong><a class="headerlink" href="#usepotzero" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> USE POTential ZERO<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Coulomb">Coulomb</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>
+<p>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t26.in" title="LiH rocksalt structure with a negative lithium vacancy test thee potential alignement usepotzero=0, 1">tests/v7/Input/t26.in</a></p>
+</li>
+<li>
+<p><a class="wikilink" href="../../input_variables/paw/#usepotzero">usepotzero</a>=0, the usual convention: the smooth potential is set to zero averarage value. </p>
+</li>
+<li><a class="wikilink" href="../../input_variables/paw/#usepotzero">usepotzero</a>=1, the new convention: the physical potential is set to zero average value. </li>
+<li><a class="wikilink" href="../../input_variables/paw/#usepotzero">usepotzero</a>=2, the PWscf convention: the potential of equivalent point charges is set to zero average value (convention also valid for NC pseudopotentials). </li>
+</ul>
+<hr />
+<h2 id="usexcnhat"><strong>usexcnhat</strong><a class="headerlink" href="#usexcnhat" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> USE eXchange-Correlation with NHAT (compensation charge density)<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/PAW">PAW</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/internal/#usepaw">usepaw</a>==1  </p>
+<p>This flag determines how the exchange-correlation terms are computed for the
+pseudo-density.<br />
+When <a class="wikilink" href="../../input_variables/paw/#usexcnhat">usexcnhat</a>=0, exchange-correlation potential does not include the
+compensation charge density, i.e. Vxc=Vxc(tild_Ncore + tild_Nvalence).<br />
+When <a class="wikilink" href="../../input_variables/paw/#usexcnhat">usexcnhat</a>=1, exchange-correlation potential includes the compensation
+charge density, i.e. Vxc=Vxc(tild_Ncore + tild_Nvalence + hat_N).<br />
+When <a class="wikilink" href="../../input_variables/paw/#usexcnhat">usexcnhat</a>=-1,the value of <a class="wikilink" href="../../input_variables/paw/#usexcnhat">usexcnhat</a> is determined from the
+reading of the PAW dataset file (pseudopotential file). When PAW datasets with
+different treatment of Vxc are used in the same run, the code stops.</p>
+<hr /></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

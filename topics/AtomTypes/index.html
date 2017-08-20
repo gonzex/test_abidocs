@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/AtomTypes/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>AtomTypes - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li class="active">
+    <a href="./">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../AtomManipulator/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../Bader/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
+        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>ABINIT needs to know the different types of atoms that form the system.</p>
+<p>The atoms assembled in a molecule or a solid are physically specified by their
+nuclear charge (and their mass for dynamical properties).</p>
+<p>However, in a pseudopotential or PAW approach, the knowledge of the nuclear
+charge does not define the potential felt by the electron, only the atomic
+data file (pseudopotential or PAW) defines it. Thus, in addition to the number
+of types of atoms <a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>, and their nuclear charge <a class="wikilink" href="../../input_variables/basic/#znucl">znucl</a>, ABINIT
+requires to know the pseudopotential/PAW to use for each type of atom. The
+latters are specified in the <a class="wikilink" href="../../user-guide/help_abinit#intro1">"files" file</a>. Unless
+alchemical potentials are used (see later), the number of pseudopotentials to
+be read, <a class="wikilink" href="../../input_variables/gstate/#npsp">npsp</a>, is the same as <a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>. Note that one cannot mix norm-
+conserving pseudopotentials with PAW atomic data files in a single ABINIT run,
+even for different datasets. One has to stick either to norm-conserving
+pseudopotentials or to PAW.<br />
+More on the pseudos/PAW in <a class="wikilink" href="../../topics/PseudosPAW">PseudosPAW</a>.</p>
+<p>ABINIT also has a default table of the atomic masses, but this can be
+superceded by specifying <a class="wikilink" href="../../input_variables/rlx/#amu">amu</a>.</p>
+<p><strong>Alchemical potentials</strong></p>
+<p>For norm-conserving pseudopotentials, ABINIT can mix the pseudopotentials, as
+described in <a class="wikilink" href="../../TOBEPROVIDED/">TOBEPROVIDED</a>, to create so-called "alchemical potentials",
+see <a class="wikilink" href="../../input_variables/gstate/#mixalch">mixalch</a>.<br />
+In this case, the number of pseudopotentials to be given, <a class="wikilink" href="../../input_variables/gstate/#npsp">npsp</a>, will
+usually be larger than the number of types of atoms, <a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>. Using
+alchemical potentials makes sense to treat alloys in which similar ions are
+present, and whose specific chemical properties are not crucial for the
+property of interest. Usually it is done only for isovalent species, and ions
+of quite similar radii. It is a reasonable interpolation technique for the
+electronic properties.</p>
+<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<p><em>basic:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/rlx/#amu">amu</a>  Atomic Mass Units</li>
+<li><a class="wikilink" href="../../input_variables/basic/#typat">typat</a>  TYPe of AToms</li>
+</ul>
+<p><em>compulsory:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>  Number of TYPes of AToms</li>
+<li><a class="wikilink" href="../../input_variables/basic/#znucl">znucl</a>  charge -Z- of the NUCLeus</li>
+</ul>
+<p><em>expert:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/gstate/#algalch">algalch</a>  ALGorithm for generating ALCHemical pseudopotentials</li>
+</ul>
+<p><em>internal:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/gstate/#npspalch">npspalch</a>  Number of PSeudoPotentials that are "ALCHemical"</li>
+<li><a class="wikilink" href="../../input_variables/gstate/#ntyppure">ntyppure</a>  Number of TYPe of atoms that are "PURe"</li>
+<li><a class="wikilink" href="../../input_variables/internal/#ziontypat">ziontypat</a>  Z (charge) of the IONs for the different TYPes of AToms</li>
+</ul>
+<p><em>useful:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/gstate/#mixalch">mixalch</a>  MIXing coefficients for ALCHemical potentials</li>
+<li><a class="wikilink" href="../../input_variables/gstate/#npsp">npsp</a>  Number of PSeudoPotentials</li>
+<li><a class="wikilink" href="../../input_variables/gstate/#ntypalch">ntypalch</a>  Number of TYPe of atoms that are "ALCHemical"</li>
+</ul>
+<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<p><em>v3:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t92.in" title="Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms (well,  with no mixing,  just for a test) Computation of the second derivative of the total energy with respect to a atomic displacement perpendicular to the chain,  with q(0 0 1/2) wavevector. The first psp is Si,  the second one is Ge,  but the mixing coefficients are 1.0 and 0.0 . See test 4 of v2,  except with alchemy.">tests/v3/Input/t92.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t93.in" title="Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Ge,  the second one is Si,  but the mixing coefficients are 0.0 and 1.0 . See previous test,  except GS only,  and the two atoms are switched.">tests/v3/Input/t93.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t94.in" title="Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Si,  the mixing coefficients are 0.2 and 0.8,  then,  in a second dataset,  they are 0.5 and 0.5 . Should give same numerical results as the previous test.">tests/v3/Input/t94.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t95.in" title="Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Ge,  the mixing coefficients are 0.2 and 0.8,  then 0.5 and 0.5,  then 0.001 and 0.999 .">tests/v3/Input/t95.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t96.in" title="Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Ge,  the mixing coefficients are 0.5 and 0.5 . The pseudopotentials differ from the ones of test #93 .">tests/v3/Input/t96.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t97.in" title="Fake MoSixO(1-x) molecule along the diagonal of a cube, using alchemical pseudopotentials. Si and O are not isovalent,  so might not be physically meaningful. 4 pairs of mixing coefficients are studied,  including one for which the occupation numbers becomes fractionary.">tests/v3/Input/t97.in</a></li>
+</ul>
+<p><em>v5:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t44.in" title="Bismuth atom,  isolated,  in a supercell. Try alchemical pseudopotentials with spin-orbit. Spinor calculation (nspinor=2,  nspden=1,  nsppol=1) Metallic occupations. Also compare the halved spin-orbit interaction alchemical mixing with a pseudopotential directly prepared with halved spin-orbit interaction. The agreement is perfect.">tests/v5/Input/t44.in</a></li>
+</ul>
+<p><em>v6:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t28.in" title="Ga Al(1-x) Asx Test of alchemical calculations with images. Mostly checking the treatment of input variables and their echo. (Tests 30-36 are more slots for testing the ground state)">tests/v6/Input/t28.in</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (FJ)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

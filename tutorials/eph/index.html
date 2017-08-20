@@ -1,56 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-        <meta name="description" content="Abinit documentation">
-      
-      
-        <link rel="canonical" href="http://www.abinit.org/tutorials/eph/">
-      
-      
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <meta name="author" content="The Abinit group">
-      
-      
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
-    
-    
-      
+        <link rel="canonical" href="http://www.abinit.org/tutorials/eph/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>EPH - abinit</title>
-      
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
     
-    
-    
-      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
     <!-- <script src="../../js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    -->
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
     <!-- Optional theme
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript
     -->
+    <!-- Latest compiled and minified JavaScript
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
 
     <!-- MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers
@@ -86,1314 +89,631 @@
     </script>
     -->
 
+ 
+    </head>
 
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
-      <link rel="stylesheet" href="../../css/extra.css">
-    
-    
-  </head>
-  
-  
-  
-  
     <body>
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
-          
-            
-              
-                <span class="md-header-nav__parent">
-                  Tutorials
-                </span>
-              
-                <span class="md-header-nav__parent">
-                  DFPT
-                </span>
-              
-            
-            EPH
-          
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-          
-<div class="md-search" data-md-component="search">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
         </div>
-      </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../elastic/">Elastic</a>
+</li>
+            
+<li class="active">
+    <a href="./">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../elastic/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../dmft/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
 
-
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-      
-        
-
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../.." title="Quick Start" class="md-tabs__link">
-          Quick Start
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
-          User Guide
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    
-    
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
-          Input Variables
-        </a>
-      
-    </li>
-  
-
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../welcome/" title="Tutorials" class="md-tabs__link md-tabs__link--active">
-          Tutorials
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
-          Theory
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#146-calculation-of-the-ground-state-and-phonon-structure-of-fcc-al">1. Calculation of the ground state and phonon structure of fcc Al.</a></li>
+        <li class="main "><a href="#dataset-structure-and-flow">Dataset Structure and Flow</a></li>
+        <li class="main "><a href="#convergence">Convergence</a></li>
+        <li class="main "><a href="#execution">Execution</a></li>
+        <li class="main "><a href="#246-merging-of-the-2dte-_ddb-files-using-mrgddb">2. Merging of the 2DTE _DDB files using MRGDDB.</a></li>
+        <li class="main "><a href="#346-extraction-and-merging-of-the-electron-phonon-matrix-elements-using">**3. Extraction and merging of the electron-phonon matrix elements using</a></li>
+        <li class="main "><a href="#446-basic-anaddb-calculation-of-electron-phonon-quantities">4. Basic ANADDB calculation of electron-phonon quantities.</a></li>
+        <li class="main "><a href="#546-convergence-tests-of-the-integration-techniques">5. Convergence tests of the integration techniques.</a></li>
+        <li class="main "><a href="#646-transport-quantities-within-boltzmann-theory">6. Transport quantities within Boltzmann theory.</a></li>
     </ul>
-  </div>
-</nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    abinit
-  </label>
-  
-    <div class="md-nav__source">
-      
+</div></div>
+                <div class="col-md-9" role="main">
 
+<!-- Return to Top -->
 
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
-    
-    <label class="md-nav__link" for="nav-1">
-      Quick Start
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../.." title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../installation/" title="Installation" class="md-nav__link">
-      Installation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
-    
-    <label class="md-nav__link" for="nav-1-3">
-      Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
-        Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/crystal/" title="Crystalline Structure" class="md-nav__link">
-      Crystalline Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/kpoints/" title="K-points" class="md-nav__link">
-      K-points
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      User Guide
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        User Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
-      Abinit
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
-      Mrgddb
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
-      Optic
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Input Variables
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Input Variables
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbas/" title="Basic" class="md-nav__link">
-      Basic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varbse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardev/" title="Developers" class="md-nav__link">
-      Developers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vardmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vareph/" title="Electron-Phonon" class="md-nav__link">
-      Electron-Phonon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varff/" title="Varff" class="md-nav__link">
-      Varff
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varfil/" title="File-handling" class="md-nav__link">
-      File-handling
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargeo/" title="Geometry" class="md-nav__link">
-      Geometry
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargs/" title="Ground-State" class="md-nav__link">
-      Ground-State
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/vargw/" title="GW" class="md-nav__link">
-      GW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varint/" title="Internal" class="md-nav__link">
-      Internal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpar/" title="Parallelism" class="md-nav__link">
-      Parallelism
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varpaw/" title="PAW" class="md-nav__link">
-      PAW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrf/" title="RF" class="md-nav__link">
-      RF
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varrlx/" title="Relaxation" class="md-nav__link">
-      Relaxation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varvdw/" title="VdW" class="md-nav__link">
-      VdW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../input_variables/varw90/" title="Wannier90" class="md-nav__link">
-      Wannier90
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../welcome/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
-    
-    <label class="md-nav__link" for="nav-4-2">
-      Base Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
-        Base Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base1/" title="Base1" class="md-nav__link">
-      Base1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base2/" title="Base2" class="md-nav__link">
-      Base2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base3/" title="Base3" class="md-nav__link">
-      Base3
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../base4/" title="Base4" class="md-nav__link">
-      Base4
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
-    
-    <label class="md-nav__link" for="nav-4-3">
-      DFPT
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        DFPT
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf1/" title="RF1" class="md-nav__link">
-      RF1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../rf2/" title="RF2" class="md-nav__link">
-      RF2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../elastic/" title="Elastic" class="md-nav__link">
-      Elastic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        EPH
-      </label>
-    
-    <a href="./" title="EPH" class="md-nav__link md-nav__link--active">
-      EPH
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-calculation-of-the-ground-state-and-phonon-structure-of-fcc-al" title="1. Calculation of the ground state and phonon structure of fcc Al." class="md-nav__link">
-    1. Calculation of the ground state and phonon structure of fcc Al.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-structure-and-flow" title="Dataset Structure and Flow" class="md-nav__link">
-    Dataset Structure and Flow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#convergence" title="Convergence" class="md-nav__link">
-    Convergence
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execution" title="Execution" class="md-nav__link">
-    Execution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-merging-of-the-2dte-_ddb-files-using-mrgddb" title="2. Merging of the 2DTE _DDB files using MRGDDB." class="md-nav__link">
-    2. Merging of the 2DTE _DDB files using MRGDDB.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-extraction-and-merging-of-the-electron-phonon-matrix-elements-using" title="**3. Extraction and merging of the electron-phonon matrix elements using" class="md-nav__link">
-    **3. Extraction and merging of the electron-phonon matrix elements using
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-basic-anaddb-calculation-of-electron-phonon-quantities" title="4. Basic ANADDB calculation of electron-phonon quantities." class="md-nav__link">
-    4. Basic ANADDB calculation of electron-phonon quantities.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-convergence-tests-of-the-integration-techniques" title="5. Convergence tests of the integration techniques." class="md-nav__link">
-    5. Convergence tests of the integration techniques.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-transport-quantities-within-boltzmann-theory" title="6. Transport quantities within Boltzmann theory." class="md-nav__link">
-    6. Transport quantities within Boltzmann theory.
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../dmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
-    
-    <label class="md-nav__link" for="nav-4-5">
-      Many-Body
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
-        Many-Body
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw1/" title="GW1" class="md-nav__link">
-      GW1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../gw2/" title="GW2" class="md-nav__link">
-      GW2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
-    
-    <label class="md-nav__link" for="nav-4-6">
-      Parallelism
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
-        Parallelism
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../basepar/" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
-      Many-Body
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Theory
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Theory
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
-      Additional Material
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
-      Bibliography
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../about/license/" title="License" class="md-nav__link">
-      License
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-calculation-of-the-ground-state-and-phonon-structure-of-fcc-al" title="1. Calculation of the ground state and phonon structure of fcc Al." class="md-nav__link">
-    1. Calculation of the ground state and phonon structure of fcc Al.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dataset-structure-and-flow" title="Dataset Structure and Flow" class="md-nav__link">
-    Dataset Structure and Flow
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#convergence" title="Convergence" class="md-nav__link">
-    Convergence
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execution" title="Execution" class="md-nav__link">
-    Execution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-merging-of-the-2dte-_ddb-files-using-mrgddb" title="2. Merging of the 2DTE _DDB files using MRGDDB." class="md-nav__link">
-    2. Merging of the 2DTE _DDB files using MRGDDB.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-extraction-and-merging-of-the-electron-phonon-matrix-elements-using" title="**3. Extraction and merging of the electron-phonon matrix elements using" class="md-nav__link">
-    **3. Extraction and merging of the electron-phonon matrix elements using
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-basic-anaddb-calculation-of-electron-phonon-quantities" title="4. Basic ANADDB calculation of electron-phonon quantities." class="md-nav__link">
-    4. Basic ANADDB calculation of electron-phonon quantities.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-convergence-tests-of-the-integration-techniques" title="5. Convergence tests of the integration techniques." class="md-nav__link">
-    5. Convergence tests of the integration techniques.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-transport-quantities-within-boltzmann-theory" title="6. Transport quantities within Boltzmann theory." class="md-nav__link">
-    6. Transport quantities within Boltzmann theory.
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/eph.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>EPH</h1>
-                
-                <p>This lesson demonstrates how to obtain the following physical properties, for
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+This lesson demonstrates how to obtain the following physical properties, for
 a metal :</p>
 <ul>
 <li>the phonon linewidths (inverse lifetimes) due to the electron-phonon interaction</li>
@@ -1419,7 +739,7 @@ phonon calculation, which will be reviewed succinctly.</p>
 <h3 id="146-calculation-of-the-ground-state-and-phonon-structure-of-fcc-al"><strong>1. Calculation of the ground state and phonon structure of fcc Al.</strong><a class="headerlink" href="#146-calculation-of-the-ground-state-and-phonon-structure-of-fcc-al" title="Permanent link">&para;</a></h3>
 <h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>_Before beginning, you might consider making a different subdirectory to work
-in. Why not create &ldquo;Work_eph&rdquo; in ~abinit/tests/tutorespfn/Input ? _  </p>
+in. Why not create "Work_eph" in ~abinit/tests/tutorespfn/Input ? _  </p>
 <p>It is presumed that the user has already followed the Tutorials
 <a href="../lesson_rf1.html">RF1</a> and <a href="../lesson_rf2.html">RF2</a>, and understands the
 calculation of ground state and response function (phonon) properties with
@@ -1434,11 +754,9 @@ your input file.</p>
 <li>_cp ../teph_1.in . _</li>
 </ul>
 <p>You can immediately start this run - the input files will be examined later
-&hellip;</p>
-<div class="codehilite"><pre><span></span><span class="cp">../../abinit &lt; teph_1.files &gt; tmp-log &amp;</span>
-</pre></div>
-
-
+...</p>
+<pre><code>../../abinit &lt; teph_1.files &gt; tmp-log &amp;
+</code></pre>
 <h3 id="dataset-structure-and-flow">Dataset Structure and Flow<a class="headerlink" href="#dataset-structure-and-flow" title="Permanent link">&para;</a></h3>
 <p>The teph_1.in file contains a number of datasets (DS). These will perform the
 ground state (DS 1), then the phonon perturbations (DS 2-4), for a cell of FCC
@@ -1455,14 +773,14 @@ calculated, for the electron-phonon coupling and for the DDK
 (position/momentum matrix elements), on the dense and complete grid of
 k-points from DS 6. Note that the separation of the matrix element calculation
 is new from version 7.6.</p>
-<p>The important variable for electron-phonon coupling calculations is <a class="wikilink" href="../../input_variables/varfil/#prtgkk">prtgkk</a>
+<p>The important variable for electron-phonon coupling calculations is <a class="wikilink" href="../../input_variables/files/#prtgkk">prtgkk</a>
 This prints out files suffixed GKK, which contain the electron-phonon matrix
 elements. The matrix elements only depend on the self-consistent perturbed
 density (files suffixed 1DENx), which we get from DS 2-4 (linked by variable
-<a class="wikilink" href="../../input_variables/varfil/#get1den">get1den</a>). These can therefore be calculated on arbitrarily dense k-point
+<a class="wikilink" href="../../input_variables/files/#get1den">get1den</a>). These can therefore be calculated on arbitrarily dense k-point
 meshes. Even better, only a single step is needed, since no self-consistency
 is required. To enforce the calculation of all the matrix elements on all
-k-points, symmetries are disabled when <a class="wikilink" href="../../input_variables/varfil/#prtgkk">prtgkk</a> is set to 1, so be sure not
+k-points, symmetries are disabled when <a class="wikilink" href="../../input_variables/files/#prtgkk">prtgkk</a> is set to 1, so be sure not
 to use it during the normal self-consistent phonon runs DS 2-4. Again this is
 very different from versions before 7.6.</p>
 <h3 id="convergence">Convergence<a class="headerlink" href="#convergence" title="Permanent link">&para;</a></h3>
@@ -1472,7 +790,7 @@ will be completely unconverged, but by the end of the lesson you should know
 how to run a full electron phonon calculation, and be able to improve the
 convergence on your own.</p>
 <p>Edit the file teph_1.in. We now examine several variables. The kinetic energy
-cutoff <a class="wikilink" href="../../input_variables/varbas/#ecut">ecut</a> is a bit low, and the number of k-points (determined by
+cutoff <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> is a bit low, and the number of k-points (determined by
 <a href="../../../input_variables/generated_files/varbas.html#ngkpt">ngkpt</a>) is much too
 low. Electron-phonon calculations require a very precise determination of the
 Fermi surface of the metal. This implies a very dense k-point mesh, and the
@@ -1481,25 +799,23 @@ convergence of the grid must be checked. In our case, for Al, we will use a
 16x16x16 points. This will be re-considered in section 5. The q-point grid
 will be 2x2x2. It must be a sub-grid of the full k-point grid, and must
 contain the Γ point.</p>
-<p>The value of <a class="wikilink" href="../../input_variables/varbas/#acell">acell</a> is fixed to a rounded value from experiment. It, too,
+<p>The value of <a class="wikilink" href="../../input_variables/basic/#acell">acell</a> is fixed to a rounded value from experiment. It, too,
 should be converged to get physical results (see <a href="../lesson_base3.html"> Tutorial
 3</a>).</p>
-<p>Note that the value of 1.0E-14 for <a class="wikilink" href="../../input_variables/varbas/#tolwfr">tolwfr</a> is tight, and should be even
+<p>Note that the value of 1.0E-14 for <a class="wikilink" href="../../input_variables/basic/#tolwfr">tolwfr</a> is tight, and should be even
 lower (down to 1.0E-20 or even 1.0E-22). This is because the wavefunctions
 will be used later explicitly in the matrix elements for ANADDB, as opposed to
 only energy values or densities, which are averages of the wavefunctions and
 eigenenergies over k-points and bands. Electron-phonon quantities are delicate
 sums of a few of these small matrix elements (those near the Fermi surface),
-so each matrix element must be accurate. You can however set <a class="wikilink" href="../../input_variables/varfil/#prtwf">prtwf</a> to 0 in
+so each matrix element must be accurate. You can however set <a class="wikilink" href="../../input_variables/files/#prtwf">prtwf</a> to 0 in
 the phonon calculations, and avoid saving huge perturbed wavefunction files to
 disk (you only need to keep the ground state wave functions, with prtwf1 1).</p>
 <h3 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h3>
 <p>Run the first input (a few seconds on a recent PC), and you should obtain a
 value of</p>
-<div class="codehilite"><pre><span></span> etotal -2.0828579336121 Ha
-</pre></div>
-
-
+<pre><code> etotal -2.0828579336121 Ha
+</code></pre>
 <p>for the energy at the end of DATASET 1. The following datasets calculate the
 second order energy variations under atomic displacement in the three reduced
 directions of the fcc unit cell. This is done for three different phonons,
@@ -1510,10 +826,8 @@ vectors.). The whole calculation follows the same lines as <a href="../lesson_rf
 RF1</a>. As an example, DATASET 3 calculates the perturbed
 wavefunctions at k+q, for k in the ground state k-point mesh, and q=(1/2,0,0).
 Then, DATASET 3 calculates</p>
-<div class="codehilite"><pre><span></span> 2DTE 0.80951882353353
-</pre></div>
-
-
+<pre><code> 2DTE 0.80951882353353
+</code></pre>
 <p>for the second-order energy variation for movement of the (unique) atom along
 the first reduced direction for q=(1/2,0,0). The main differences with <a href="../lesson_rf1.html">
 Tutorial RF1</a> are that Given we are dealing with a metal, no
@@ -1535,15 +849,13 @@ contain the 2DTE for the different phonons wavevectors q.</p>
 <h3 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>You can copy the following content to a file teph_2.in within your working
 directory:</p>
-<div class="codehilite"><pre><span></span>teph_2.ddb.out
+<pre><code>teph_2.ddb.out
 Total ddb for Al FCC system
 3
 teph_1o_DS2_DDB
 teph_1o_DS3_DDB
 teph_1o_DS4_DDB
-</pre></div>
-
-
+</code></pre>
 <p>This is your input file for the
 <a href="../../../users/generated_files/help_mrgddb.html">MRGDDB</a> utility, which will
 take the different _DDB files and merge them into a single one which ANADDB
@@ -1551,10 +863,8 @@ will use to determine the phonon frequencies and eigenvectors. teph_2.in
 contains the name of the final file, a comment line, then the number of _DDB
 files to be merged and their names.</p>
 <p><a href="../../../users/generated_files/help_mrgddb.html">MRGDDB</a> is run with the command</p>
-<div class="codehilite"><pre><span></span> mrgddb &lt; teph_2.in
-</pre></div>
-
-
+<pre><code> mrgddb &lt; teph_2.in
+</code></pre>
 <p>It runs in a few seconds.</p>
 <hr />
 <h3 id="346-extraction-and-merging-of-the-electron-phonon-matrix-elements-using">**3. Extraction and merging of the electron-phonon matrix elements using<a class="headerlink" href="#346-extraction-and-merging-of-the-electron-phonon-matrix-elements-using" title="Permanent link">&para;</a></h3>
@@ -1563,16 +873,14 @@ files to be merged and their names.</p>
 <p>A merge similar to that in the last section must be carried out for the
 electron-phonon matrix elements. This is done using the MRGGKK utility, and
 its input file is ~abinit/tests/tutorespfn/Input/teph_3.in, shown below</p>
-<div class="codehilite"><pre><span></span>teph_3o_GKK.bin   # Name of output file
+<pre><code>teph_3o_GKK.bin   # Name of output file
 0                    # binary (0) or ascii (1) output
 teph_1o_DS1_WFK   # GS wavefunction file
 0  9 9               # number of 1WF files, of GKK files, and of perturbations in the GKK files
 teph_1o_DS2_GKK1  # names of the 1WF then the (eventual) GKK files
 teph_1o_DS2_GKK2
 ...
-</pre></div>
-
-
+</code></pre>
 <p>The matrix element sections of all the _GKK files will be extracted and
 concatenated into one (binary) file, here named teph_3o_GKK.bin. The following
 lines in teph_3.in give the output format (0 for binary or 1 for ascii), then
@@ -1603,7 +911,7 @@ ddb, and gkk files, and what to name the output, thermodynamical output, and
 electron phonon output files. ~abinit/tests/tutorespfn/Input/teph_4.files is
 your files file for ANADDB. You can edit it now.</p>
 <p>The new variables are at the head of the file:</p>
-<div class="codehilite"><pre><span></span># turn on calculation of the electron-phonon quantities
+<pre><code># turn on calculation of the electron-phonon quantities
 elphflag 1
 
 # Path in reciprocal space along which the phonon linewidths
@@ -1620,9 +928,7 @@ qpath
 
 # Coulomb pseudopotential parameter
 mustar 0.136
-</pre></div>
-
-
+</code></pre>
 <p><a href="../../../users/generated_files/help_anaddb.html#elphflag"> elphflag</a> is a flag
 to turn on the calculation of the electron-phonon quantities. The first
 quantities which will be calculated are the phonon linewidths along a path in
@@ -1641,12 +947,12 @@ still depend on the phonon wavevector q. The other electron-phonon
 calculations which are presently implemented in ANADDB, in particular for
 superconductivity, determine isotropic quantities, which are averaged over the
 Fermi surface and summed over q-points. Integrating the coupling over
-reciprocal space, but keeping the resolution in the phonon mode&rsquo;s energy, one
+reciprocal space, but keeping the resolution in the phonon mode's energy, one
 calculates the Eliashberg spectral function α²F. The α²F function is similar
 to the density of states of the phonons, but is weighted according to the
 coupling of the phonons to the electrons. It is output to a file with suffix
 <em>A2F, which is ready to be represented using any graphical software (Xmgr,
-matlab, OpenDX&hellip;). The first inverse moment of α²F gives the global coupling
+matlab, OpenDX...). The first inverse moment of α²F gives the global coupling
 strength, or mass renormalization factor, λ. From λ, using the McMillan
 formula (_Phys. Rev. <strong>167</strong> 331-344 (1968)</em>) as modified by Allen and Dynes
 (<em>Phys. Rev. B <strong>12</strong> 905 (1975)</em>), ANADDB calculates the critical temperature
@@ -1655,7 +961,7 @@ approximates the effect of Coulomb interactions, and is given by the input
 variable <a href="../../../users/generated_files/help_anaddb.html#mustar">mustar</a>. For Al
 with the k-point grid given and a value of μ=0.136 the ANADDB output file
 shows the following values</p>
-<div class="codehilite"><pre><span></span> mka2f: lambda &lt;omega^2&gt; =     8.891284E-07
+<pre><code> mka2f: lambda &lt;omega^2&gt; =     8.891284E-07
  mka2f: lambda &lt;omega^3&gt; =     7.757272E-10
  mka2f: lambda &lt;omega^4&gt; =     8.715049E-13
  mka2f: lambda &lt;omega^5&gt; =     1.108658E-15
@@ -1663,9 +969,7 @@ shows the following values</p>
  mka2f: omegalog  =     1.769558E-04 (Ha)     5.587816E+01 (Kelvin)
  mka2f: input mustar =     1.360000E-01
 -mka2f: MacMillan Tc =     4.038730E-05 (Ha)     1.275329E+01 (Kelvin)
-</pre></div>
-
-
+</code></pre>
 <p>As expected, this is a fairly bad estimation of the experimental value of 1.2
 K. The coupling strength is severely overestimated (experiment gives 0.44),
 and the logarithmic average frequency is too low, but not nearly enough to
@@ -1706,11 +1010,11 @@ to observe the differences in convergence.</p>
 normal metals and related phenomena. Even in a perfect crystal, interaction
 with phonons will limit electron life times (and vice versa). This can be
 calculated fairly simply using the Boltzmann theory of transport with first
-order scattering by phonons (see, e.g., &ldquo;Electrons and Phonons&rdquo; by Ziman).</p>
+order scattering by phonons (see, e.g., "Electrons and Phonons" by Ziman).</p>
 <p>The additional ingredient needed to calculate transport quantities (electrical
 resistivity, heat conductivity limited by electron-phonon coupling) is the
 Fermi velocity, i.e. the group velocity of a wavepacket of electrons placed at
-the Fermi surface. This is the &ldquo;true&rdquo; velocity the charge will move at, once
+the Fermi surface. This is the "true" velocity the charge will move at, once
 you have displaced the Fermi sphere a little bit in k space (see, e.g.
 Ashcroft and Mermin as well). The velocity can be related simply to a
 commutator of the position, which is also used for dielectric response, using
@@ -1721,47 +1025,39 @@ phonons should be negligible), but we need an additional dataset to calculate
 the 3 DDK files along the 3 primitive directions of the unit cell. To be more
 precise, just as for the el-ph matrix elements, we do not need the perturbed
 wavefunctions, only the perturbed eigenvalues. Calculating the DDK derivatives
-with <a class="wikilink" href="../../input_variables/varfil/#prtgkk">prtgkk</a> set to 1 will output files named _GKKxx (xx=3<em>natom+1 to
+with <a class="wikilink" href="../../input_variables/files/#prtgkk">prtgkk</a> set to 1 will output files named _GKKxx (xx=3<em>natom+1 to
 3</em>natom+3) containing the matrix elements of the ddk perturbation (these are
 basically the first part of the normal DDK files for E field perturbation,
 without the wave function coefficients).</p>
-<p>The anaddb &ldquo;files&rdquo; file must specify where the ddk files are, so anaddb can
+<p>The anaddb "files" file must specify where the ddk files are, so anaddb can
 calculate the Fermi velocities. It actually reads:</p>
-<div class="codehilite"><pre><span></span>teph_6.in
+<pre><code>teph_6.in
 teph_6.out
 teph_2.ddb.out
 moldyn
 teph_3o_GKK.bin
 teph.ep
 teph_6.ddk
-</pre></div>
-
-
+</code></pre>
 <p>where the last line is the name of a small file listing the 3 DDK files to be
 used:</p>
-<div class="codehilite"><pre><span></span>teph_1_DS5_GKK4
+<pre><code>teph_1_DS5_GKK4
 teph_1_DS5_GKK5
 teph_1_DS5_GKK6
-</pre></div>
-
-
+</code></pre>
 <p>The abinit input file teph_1.in already obtained the DDK files from the
 additional dataset, DS5, with the following lines of teph_1.in:</p>
-<div class="codehilite"><pre><span></span>tolwfr5 1.0d-14
+<pre><code>tolwfr5 1.0d-14
 qpt5 0 0 0
 rfphon5 0
 rfelfd5 2
-</pre></div>
-
-
+</code></pre>
 <p>Copy the additional .ddk file from the tests/tutorespfn/Inputs directory, and
-run anaddb with the new &ldquo;files&rdquo; file. The input for teph_6 has added to
+run anaddb with the new "files" file. The input for teph_6 has added to
 teph_5.in the following 2 lines:</p>
-<div class="codehilite"><pre><span></span>ifltransport 1
+<pre><code>ifltransport 1
 ep_keepbands 1
-</pre></div>
-
-
+</code></pre>
 <p>and has produced a number of additional files:</p>
 <ul>
 <li><em>_A2F_TR</em> contain the equivalent Eliashberg spectral functions with Fermi speed factors (how many phonons do we have at a given energy, how much do they couple with the electrons, and how fast are these electrons going). Integrating with appropriate functions of the phonon energy, one gets:</li>
@@ -1780,19 +1076,10 @@ q- point grids.</p>
 components, for the resistivity tensor (2 1 = y x or the current response
 along y when you apply an electric field along x). In most systems the tensor
 should be diagonal by symmetry, and the value of off-diagonal terms gives an
-estimate of the numerical error.</p>
-                
-                  
-                
-              
-              
-                
-              
-            </article>
-          </div>
+estimate of the numerical error.</p></div>
         </div>
-      </main>
-      
+
+        <footer class="col-md-12">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -1802,22 +1089,28 @@ estimate of the numerical error.</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-    </div>
-    
-      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
-      
-      
-      <script>app.initialize({url:{base:"../.."}})</script>
-      
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      
         <script src="../../extra_javascript/abidocs.js"></script>
-      
-    
-    
-      
-    
-  </body>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
 </html>

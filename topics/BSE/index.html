@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/topics/BSE/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>BSE - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../Berry/">Berry</a>
+</li>
+                            
+<li class="active">
+    <a href="./">BSE</a>
+</li>
+                            
+<li >
+    <a href="../ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../">Home</a>
+</li>
+                            
+<li >
+    <a href="../k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="../../input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../../input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../Berry/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../ConstrainedPol/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#related-input-variables">Related Input Variables</a></li>
+        <li class="main "><a href="#selected-input-files">Selected Input Files</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Many-Body Perturbation Theory (MBPT <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Onida2002" title="Electronic excitations: density-functional versus many-body Green's-function approaches">Onida2002</a>) defines a rigorous
+framework for the description of excited-state properties based on the Green's
+function formalism. Within MBPT, one can calculate charged excitations (i.e.
+electron addition and removal energies), using for example Hedin's GW
+approximation <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Hedin1965" title="New Method for Calculating the One-Particle Green's Function with Application to the Electron-Gas Problem">Hedin1965</a> for the electron self-energy. In the same
+framework, neutral excitations (experimentally related to optical absorption
+spectra) are also well described through the solution of the Bethe-Salpeter
+equation (BSE <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Onida2002" title="Electronic excitations: density-functional versus many-body Green's-function approaches">Onida2002</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Albrecht1998" title="Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors">Albrecht1998</a>). At present, the BSE represents
+the most accurate approach for the ab initio study of neutral excitations in
+crystalline systems as it includes the attractive interaction between
+electrons and holes thus going beyond the random-phase approximation (RPA)
+employed in the GW approximation.</p>
+<p>The BSE implementation in ABINIT is discussed in the review article
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Giantomassi2011" title="{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}">Giantomassi2011</a>.</p>
+<p>BSE calculations are activated by setting <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>= 99. The number of
+valence and conduction states in the e-h basis set is controlled by the
+variables <a class="wikilink" href="../../input_variables/bse/#bs_loband">bs_loband</a> and <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>, respectively. By default, the code
+solves the BSE in the so-called Tamm-Dancoff approximation (TDA) in which the
+coupling between resonant and anti-resonant transitions is ignored. A full BSE
+calculation including the coupling term can be done by setting
+<a class="wikilink" href="../../input_variables/bse/#bs_coupling">bs_coupling</a>= 1 in the input file. The variable <a class="wikilink" href="../../input_variables/bse/#bs_coulomb_term">bs_coulomb_term</a>
+specifies the treatment of the screened interaction in the BSE kernel. By
+default, the code reads the W matrix from the SCR file generated by the GW
+code (<a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>= 3). Alternatively, one can model the spatial dependency
+of W with the model dielectric function proposed by Cappellini
+<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Cappellini1993" title="Model dielectric function for semiconductors">Cappellini1993</a>. This option requires the specification of
+<a class="wikilink" href="../../input_variables/bse/#bs_coulomb_term">bs_coulomb_term</a>= 21 and <a class="wikilink" href="../../input_variables/gw/#mdf_epsinf">mdf_epsinf</a>. The contribution due to the
+exchange term can be optionally excluded by using <a class="wikilink" href="../../input_variables/bse/#bs_exchange_term">bs_exchange_term</a>= 0.
+This is equivalent to computing the macroscopic dielectric function without
+local field effects. The frequency mesh for the macroscopic dielectric
+function is specified by <a class="wikilink" href="../../input_variables/bse/#bs_freq_mesh">bs_freq_mesh</a> while <a class="wikilink" href="../../input_variables/gw/#zcut">zcut</a> defines the complex
+shift to avoid the divergences due to the presence of poles along the real
+axis (from a physical standpoint, this parameter is related to the electron
+lifetimes). In addition, a scissor operator of energy <a class="wikilink" href="../../input_variables/gw/#mbpt_sciss">mbpt_sciss</a> can be
+used to correct the initial band energies and mimic the opening of the KS gap
+introduced by the GW approximation.</p>
+<p>Three different algorithms for the solution of the BSE are implemented:</p>
+<ul>
+<li>(1) Direct diagonalization,</li>
+<li>(2) Haydock recursive algorithm,</li>
+<li>(3) Conjugate gradient eigensolver.
+The <a class="wikilink" href="../../input_variables/bse/#bs_algorithm">bs_algorithm</a> input variable allows the user to choose among them. The
+Haydock algorithm <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Haydock1980" title="The recursive solution of the {S}chr\&quot;{o}dinger equation">Haydock1980</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Benedict1998" title="Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation">Benedict1998</a> is the recommended approach
+for the computation of optical spectra. The variables <a class="wikilink" href="../../input_variables/bse/#bs_haydock_niter">bs_haydock_niter</a> and
+<a class="wikilink" href="../../input_variables/bse/#bs_haydock_tol">bs_haydock_tol</a> control the Haydock iterative method.</li>
+</ul>
+<p>Unfortunately, the Haydock solver does not give direct access to the
+eigenstates of the Hamiltonian, hence it cannot be used for the study of the
+excitonic wavefunctions. The conjugate gradient (CG) method employs standard
+iterative techniques <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Payne1992" title="Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients">Payne1992</a> to compute the lowest eigenstates of the
+BSE Hamiltonian. This solver is more memory demanding than the Haydock
+approach since the eigenstates must be stored in memory, but it gives direct
+access to the excitonic states.</p>
+<p>The CG algorithm should be preferred over the direct diagonalization
+especially when the number of eigenstates is much smaller than the size of the
+BSE Hamiltonian.</p>
+<p>Note, however, that CG has been implemented only for TDA calculations
+(Hermitian matrices).</p>
+<p>The most important results of the calculation are saved in five different
+files. The BSR file stores the upper triangle of the BSE resonant block in
+Fortran binary format (BSC for the coupling matrix). The HAYDR_SAVE file
+contains the coefficients of the tridiagonal matrix and the three vectors
+employed in the iterative algorithm. This file can be used to restart the
+calculation if convergence has not been achieved (related input variables
+<a class="wikilink" href="../../input_variables/files/#gethaydock">gethaydock</a> and <a class="wikilink" href="../../input_variables/files/#irdhaydock">irdhaydock</a>). Finally, the macroscopic dielectric
+function with excitonic effects is reported in the EXC_MDF file while
+RPA_NLF_MDF and GW_NLF_MDF contain the RPA spectrum without local field
+effects obtained with KS energies and the GW energies, respectively.</p>
+<p>Different schemes with different degrees of accuracy and computational load
+are available in ABINIT <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gillet2015" title="Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra">Gillet2015</a> in order to improve the convergence
+rate of BSE calculations. They are are available in ABINITv8 with the
+bs_interp_* input variables.</p>
+<p>In the non-spin-polarized case, spin-singlet as well as spin-triplet
+excitations are computed. Spin-polarized case is also available.</p>
+<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<p><em>basic:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_algorithm">bs_algorithm</a>  Bethe-Salpeter ALGORITHM</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_freq_mesh">bs_freq_mesh</a>  Bethe-Salpeter FREQuency MESH</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_mode">bs_interp_mode</a>  Bethe-Salpeter INTERPolation MODE</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_nstates">bs_nstates</a>  Bethe-Salpeter Number of STATES</li>
+</ul>
+<p><em>compulsory:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_loband">bs_loband</a>  Bethe-Salpeter Lowest Occupied BAND</li>
+<li><a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+</ul>
+<p><em>expert:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_calctype">bs_calctype</a>  Bethe-Salpeter CALCulation TYPE</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_coulomb_term">bs_coulomb_term</a>  Bethe-Salpeter COULOMB TERM</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_eh_cutoff">bs_eh_cutoff</a>  Bethe-Salpeter Electron-Hole CUTOFF</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_exchange_term">bs_exchange_term</a>  Bethe-Salpeter EXCHANGE TERM</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_hayd_term">bs_hayd_term</a>  Bethe-Salpeter HAYdock TERMinator</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_haydock_niter">bs_haydock_niter</a>  Bethe-Salpeter HAYDOCK Number of ITERations</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_haydock_tol">bs_haydock_tol</a>  Bethe-Salpeter HAYDOCK TOLerance</li>
+<li><a class="wikilink" href="../../input_variables/gw/#gw_nqlwl">gw_nqlwl</a>  GW, Number of Q-points for the Long Wave-Length Limit</li>
+<li><a class="wikilink" href="../../input_variables/gw/#gw_qlwl">gw_qlwl</a>  GW, Q-points for the Long Wave-Length limit</li>
+<li><a class="wikilink" href="../../input_variables/gw/#inclvkb">inclvkb</a>  INCLude VKB</li>
+<li><a class="wikilink" href="../../input_variables/paw/#pawoptosc">pawoptosc</a>  PAW - OPTion for the computation of the OSCillator matrix elements</li>
+<li><a class="wikilink" href="../../input_variables/gw/#zcut">zcut</a>  Z-CUT</li>
+</ul>
+<p><em>useful:</em></p>
+<ul>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_coupling">bs_coupling</a>  Bethe-Salpeter COUPLING</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_kmult">bs_interp_kmult</a>  Bethe-Salpeter INTERPolation K-point MULTiplication factors</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_m3_width">bs_interp_m3_width</a>  Bethe-Salpeter INTERPolation Method3 WIDTH</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_method">bs_interp_method</a>  Bethe-Salpeter INTERPolation METHOD</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_prep">bs_interp_prep</a>  Bethe-Salpeter INTERPolation PREParation</li>
+<li><a class="wikilink" href="../../input_variables/bse/#bs_interp_rl_nb">bs_interp_rl_nb</a>  Bethe-Salpeter INTERPolation Rohlfing &amp; Louie NeighBour</li>
+<li><a class="wikilink" href="../../input_variables/files/#irdbscoup">irdbscoup</a>  Integer that governs the ReaDing of COUPling block</li>
+<li><a class="wikilink" href="../../input_variables/files/#irdbseig">irdbseig</a>  Integer that governs the ReaDing of BS_EIG file</li>
+<li><a class="wikilink" href="../../input_variables/files/#irdbsreso">irdbsreso</a>  Integer that governs the ReaDing of RESOnant block</li>
+<li><a class="wikilink" href="../../input_variables/files/#irdhaydock">irdhaydock</a>  Integer that governs the ReaDing of the HAYDOCK restart file</li>
+<li><a class="wikilink" href="../../input_variables/gw/#mdf_epsinf">mdf_epsinf</a>  Model Dielectric Function, EPSilon INFinity</li>
+</ul>
+<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<p><em>paral:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t76.in" title="Bethe-Salpeter equation (BSE) with norm-conserving pseudopotentials.">tests/paral/Input/t76.in</a></li>
+</ul>
+<p><em>v67mbpt:</em></p>
+<ul>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t11.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with norm-conserving pseudopotentials. W is calculated at the RPA level while the scissors operator is used to open the gap by 0.8 eV. First the BSE is solved with the direct diagonalization of the two-particle Hamiltonian,  then the Haydock iterative method is employed to calculate the macroscopic dielectric function. The last dataset solves the BSE problem including the coupling between resonant and anti-resonant transition via brute force diagonalization. Shiva is disabled because the coupling part is unstable on this machine">tests/v67mbpt/Input/t11.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t14.in" title="LiF. Optical properties within BSE and PAW (Haydock method).">tests/v67mbpt/Input/t14.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t15.in" title="Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)">tests/v67mbpt/Input/t15.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t16.in" title="Silicon: Computation of the excitonic levels with the Bethe-Salpeter equation. Dataset3 uses the band-by-band conjugate gradient method to compute the lowest 10 states Dataset4 performs the same task with partial direct diagonalization (Lapack)">tests/v67mbpt/Input/t16.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t29.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with PAW and nsppol = 2. Use model dielectric function computed from AE PAW density (denfgr.F90).">tests/v67mbpt/Input/t29.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t31.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie">tests/v67mbpt/Input/t31.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t32.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie">tests/v67mbpt/Input/t32.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t33.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie">tests/v67mbpt/Input/t33.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t34.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie">tests/v67mbpt/Input/t34.in</a></li>
+<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t35.in" title="Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie">tests/v67mbpt/Input/t35.in</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+<center>Copyright &copy; 2017 The Abinit Group (MG)</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>

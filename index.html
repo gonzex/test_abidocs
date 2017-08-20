@@ -1,56 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Abinit documentation">
-      
-      
-        <link rel="canonical" href="http://www.abinit.org/">
-      
-      
         <meta name="author" content="The Abinit group">
-      
-      
-        <link rel="shortcut icon" href="./assets/images/favicon.png">
-      
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
-    
-    
-      
+        <link rel="canonical" href="http://www.abinit.org/">
+        <link rel="shortcut icon" href="./img/favicon.ico">
         <title>abinit</title>
-      
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="./css/codehilite.css" rel="stylesheet">
+        <link href="./css/extra.css" rel="stylesheet">
     
-    
-    
-      <script src="./assets/javascripts/modernizr-1df76c4e58.js"></script>
-    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
     <!-- <script src="./js/somelib.js"></script> -->
 
     <!-- Jquery from Google CDN 
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    -->
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS 
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
     <!-- Optional theme
-    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript
     -->
+    <!-- Latest compiled and minified JavaScript
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
 
     <!-- MathJax support -->
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers
@@ -86,3223 +89,637 @@
     </script>
     -->
 
+ 
+    </head>
 
-    
-      <link rel="stylesheet" href="./assets/stylesheets/application-769c285a91.css">
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    
-      <link rel="stylesheet" href="./css/codehilite.css">
-    
-      <link rel="stylesheet" href="./css/extra.css">
-    
-    
-  </head>
-  
-  
-  
-  
-    <body>
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
-    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
-          
-            
-              
-                <span class="md-header-nav__parent">
-                  Quick Start
-                </span>
-              
-            
-            Introduction
-          
-        </span>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-          
-<div class="md-search" data-md-component="search">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
-          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href=".">abinit</a>
         </div>
-      </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href=".">Introduction</a>
+</li>
+                            
+<li >
+    <a href="installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="input_variables/varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="input_variables/basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="input_variables/bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="input_variables/dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="input_variables/dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="input_variables/eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="input_variables/ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="input_variables/files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="input_variables/geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="input_variables/gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="input_variables/gw/">GW</a>
+</li>
+            
+<li >
+    <a href="input_variables/internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="input_variables/paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="input_variables/paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="input_variables/dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="input_variables/rlx/">Relaxation</a>
+</li>
+            
+<li >
+    <a href="input_variables/vdw/">VdW</a>
+</li>
+            
+<li >
+    <a href="input_variables/w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="input_variables/anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="input_variables/optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="input_variables/aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="input_variables/varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="installation/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
-        
-      </div>
-      
-        <div class="md-flex__cell md-flex__cell--shrink">
-          <div class="md-header-nav__source">
-            
 
-
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-          </div>
-        </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-      
-        
-
-  
-
-<nav class="md-tabs md-tabs--active" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="." title="Quick Start" class="md-tabs__link md-tabs__link--active">
-          Quick Start
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="user-guide/help_what_ABINIT_does/" title="User Guide" class="md-tabs__link">
-          User Guide
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    
-    
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
-          Input Variables
-        </a>
-      
-    </li>
-  
-
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="tutorials/welcome/" title="Tutorials" class="md-tabs__link">
-          Tutorials
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="theory/theory_mbt/" title="Theory" class="md-tabs__link">
-          Theory
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="about/release-notes/" title="About" class="md-tabs__link">
-          About
-        </a>
-      
-    </li>
-  
-
-      
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#046-foreword">0. Foreword</a></li>
+        <li class="main "><a href="#246-the-abinit-executable-abinit">2. The ABINIT executable : abinit.</a></li>
+        <li class="main "><a href="#346-other-programs-in-the-abinit-package">3. Other programs in the ABINIT package.</a></li>
+        <li class="main "><a href="#446-other-resources-outside-the-abinit-package">4. Other resources outside the ABINIT package.</a></li>
+        <li class="main "><a href="#546-input-variables-to-abinit">5. Input variables to abinit.</a></li>
+        <li class="main "><a href="#646-output-files">6. Output files.</a></li>
+        <li class="main "><a href="#746-what-does-the-code-do">7. What does the code do?</a></li>
+        <li class="main "><a href="#846-versioning-logic">8. Versioning logic.</a></li>
     </ul>
-  </div>
-</nav>
-      
-      <main class="md-main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    abinit
-  </label>
-  
-    <div class="md-nav__source">
-      
+</div></div>
+                <div class="col-md-9" role="main">
 
+<!-- Return to Top -->
 
-  
-
-
-  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      GitHub
-    </div>
-  </a>
-
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
-    
-    <label class="md-nav__link" for="nav-1">
-      Quick Start
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-1">
-        Quick Start
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Introduction
-      </label>
-    
-    <a href="." title="Introduction" class="md-nav__link md-nav__link--active">
-      Introduction
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#046-foreword" title="0. Foreword" class="md-nav__link">
-    0. Foreword
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#146-introduction" title="1. Introduction" class="md-nav__link">
-    1. Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-the-abinit-executable-abinit" title="2. The ABINIT executable : abinit." class="md-nav__link">
-    2. The ABINIT executable : abinit.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-other-programs-in-the-abinit-package" title="3. Other programs in the ABINIT package." class="md-nav__link">
-    3. Other programs in the ABINIT package.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-other-resources-outside-the-abinit-package" title="4. Other resources outside the ABINIT package." class="md-nav__link">
-    4. Other resources outside the ABINIT package.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-input-variables-to-abinit" title="5. Input variables to abinit." class="md-nav__link">
-    5. Input variables to abinit.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-output-files" title="6. Output files." class="md-nav__link">
-    6. Output files.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-what-does-the-code-do" title="7. What does the code do?" class="md-nav__link">
-    7. What does the code do?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#846-versioning-logic" title="8. Versioning logic." class="md-nav__link">
-    8. Versioning logic.
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="installation/" title="Installation" class="md-nav__link">
-      Installation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
-    
-    <label class="md-nav__link" for="nav-1-3">
-      Topics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-1-3">
-        Topics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/crystal/" title="Crystalline Structure" class="md-nav__link">
-      Crystalline Structure
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/kpoints/" title="K-points" class="md-nav__link">
-      K-points
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      User Guide
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        User Guide
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="user-guide/help_abinit/" title="Abinit" class="md-nav__link">
-      Abinit
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
-      Mrgddb
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="user-guide/help_optic/" title="Optic" class="md-nav__link">
-      Optic
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Input Variables
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Input Variables
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varbas/" title="Basic" class="md-nav__link">
-      Basic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varbse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vardev/" title="Developers" class="md-nav__link">
-      Developers
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vardmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vareph/" title="Electron-Phonon" class="md-nav__link">
-      Electron-Phonon
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varff/" title="Varff" class="md-nav__link">
-      Varff
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varfil/" title="File-handling" class="md-nav__link">
-      File-handling
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vargeo/" title="Geometry" class="md-nav__link">
-      Geometry
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vargs/" title="Ground-State" class="md-nav__link">
-      Ground-State
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/vargw/" title="GW" class="md-nav__link">
-      GW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varint/" title="Internal" class="md-nav__link">
-      Internal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varpar/" title="Parallelism" class="md-nav__link">
-      Parallelism
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varpaw/" title="PAW" class="md-nav__link">
-      PAW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varrf/" title="RF" class="md-nav__link">
-      RF
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varrlx/" title="Relaxation" class="md-nav__link">
-      Relaxation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varvdw/" title="VdW" class="md-nav__link">
-      VdW
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="input_variables/varw90/" title="Wannier90" class="md-nav__link">
-      Wannier90
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/welcome/" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
-    
-    <label class="md-nav__link" for="nav-4-2">
-      Base Tutorials
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
-        Base Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/base1/" title="Base1" class="md-nav__link">
-      Base1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/base2/" title="Base2" class="md-nav__link">
-      Base2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/base3/" title="Base3" class="md-nav__link">
-      Base3
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/base4/" title="Base4" class="md-nav__link">
-      Base4
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
-    
-    <label class="md-nav__link" for="nav-4-3">
-      DFPT
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        DFPT
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/rf1/" title="RF1" class="md-nav__link">
-      RF1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/rf2/" title="RF2" class="md-nav__link">
-      RF2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/elastic/" title="Elastic" class="md-nav__link">
-      Elastic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/dmft/" title="DMFT" class="md-nav__link">
-      DMFT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
-    
-    <label class="md-nav__link" for="nav-4-5">
-      Many-Body
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
-        Many-Body
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/gw1/" title="GW1" class="md-nav__link">
-      GW1
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/gw2/" title="GW2" class="md-nav__link">
-      GW2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/bse/" title="Bethe-Salpeter" class="md-nav__link">
-      Bethe-Salpeter
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
-    
-    <label class="md-nav__link" for="nav-4-6">
-      Parallelism
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
-        Parallelism
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/basepar/" title="Base" class="md-nav__link">
-      Base
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
-      Many-Body
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Theory
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Theory
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="theory/additional_material/" title="Additional Material" class="md-nav__link">
-      Additional Material
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="bibliography/" title="Bibliography" class="md-nav__link">
-      Bibliography
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      About
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        About
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="about/release-notes/" title="Release Notes" class="md-nav__link">
-      Release Notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="about/contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="about/license/" title="License" class="md-nav__link">
-      License
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#046-foreword" title="0. Foreword" class="md-nav__link">
-    0. Foreword
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#146-introduction" title="1. Introduction" class="md-nav__link">
-    1. Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-the-abinit-executable-abinit" title="2. The ABINIT executable : abinit." class="md-nav__link">
-    2. The ABINIT executable : abinit.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-other-programs-in-the-abinit-package" title="3. Other programs in the ABINIT package." class="md-nav__link">
-    3. Other programs in the ABINIT package.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-other-resources-outside-the-abinit-package" title="4. Other resources outside the ABINIT package." class="md-nav__link">
-    4. Other resources outside the ABINIT package.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#546-input-variables-to-abinit" title="5. Input variables to abinit." class="md-nav__link">
-    5. Input variables to abinit.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#646-output-files" title="6. Output files." class="md-nav__link">
-    6. Output files.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-what-does-the-code-do" title="7. What does the code do?" class="md-nav__link">
-    7. What does the code do?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#846-versioning-logic" title="8. Versioning logic." class="md-nav__link">
-    8. Versioning logic.
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                <h3 id="046-foreword"><strong>0. Foreword</strong><a class="headerlink" href="#046-foreword" title="Permanent link">&para;</a></h3>
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<h3 id="046-foreword"><strong>0. Foreword</strong><a class="headerlink" href="#046-foreword" title="Permanent link">&para;</a></h3>
 <p>The ABINIT project is a group effort of dozens of people worldwide, whose
 central outcome is the main ABINIT application, delivered with many other
 files in the ABINIT package. The ABINIT project includes also resources
 provided on the <a href="http://www.abinit.org">ABINIT Web site</a> and the 
 <a href="https://github.com/abinit">ABINIT Github repository</a>.</p>
-<div class="codehilite"><pre><span></span>markdown admonition
-
-!!! warning
-    text
-</pre></div>
-
-
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Before reading the present file, and get some grasp about the main ABINIT
-application, you should get some theoretical background. In case you have
-already used another electronic structure code, or a quantum chemistry code,
-it might be sufficient to read the introduction of the paper ``Iterative
-minimization techniques for ab initio total-energy calculations: molecular
-dynamics and conjugate gradients&rsquo;&lsquo; M. C. Payne, M. P. Teter, D. C. Allan, T.
-A. Arias, and J. D. Joannopoulos, Rev. Mod. Phys. 64, 1045-1097 (1992).
-If you have never used another electronic structure code or a Quantum
-Chemistry package, you should complete such reading by going (at your own
-pace) through the Chaps. 1 to 13 , and appendices L and M of the book
-Electronic Structure. Basic Theory and Practical Methods. R. M. Martin.
-Cambridge University Press (2004) ISBN 0 521 78285 6.</p>
-</div>
-<p>After having gone through the present New User&rsquo;s Guide, you should follow the
+<p>After having gone through the present New User's Guide, you should follow the
 ABINIT tutorial (<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>).</p>
-<div class="codehilite"><pre><span></span>modal
-\{!tests/v1/Input/t01.in!\}
-</pre></div>
-
-
-<!-- Button trigger modal -->
-
-<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#uuid-856db904-ad31-4fcf-8c57-b25a0862375b">
-  Open tests/v1/Input/t01.in
-</button></p>
-<!-- Modal -->
-
-<div class="modal fade" id="uuid-856db904-ad31-4fcf-8c57-b25a0862375b" tabindex="-1" role="dialog" aria-labelledby="uuid-75a4c724-ffe4-4753-870b-0e2ec22d7678">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-75a4c724-ffe4-4753-870b-0e2ec22d7678">tests/v1/Input/t01.in</h4>
-      </div>
-      <div class="modal-body">
-        <pre>#   FCC Al; 2 special points
-
-#nband 8
-#nspinor 2
-
- acell 3*7.60
- ecut 10
- enunit 2
- intxc 1
- kptopt 0
- kpt   1 1 1     1 2 2   kptnrm 4
- natom  1
- nband 4
- nkpt  2
- nline 3
- nstep 8
- nsym  24 ntypat  1
- occopt  4  prtvol 10
- rprim   0 .5 .5  .5 0 .5  .5 .5 0
- symrel
-       1  0  0    0  1  0    0  0  1
-       0  1 -1    1  0 -1    0  0 -1
-      -1  0  0   -1  0  1   -1  1  0
-       0 -1  1    0 -1  0    1 -1  0
-      -1  0  1   -1  0  0   -1  1  0
-       0 -1  0    0 -1  1    1 -1  0
-       0 -1  1    1 -1  0    0 -1  0
-       0  1 -1    0  0 -1    1  0 -1
-       0  0 -1    1  0 -1    0  1 -1
-      -1  1  0   -1  0  1   -1  0  0
-       1  0 -1    0  1 -1    0  0 -1
-       1 -1  0    0 -1  0    0 -1  1
-      -1  0  0   -1  1  0   -1  0  1
-       0  1  0    1  0  0    0  0  1
-       0  0  1    0  1  0    1  0  0
-       1  0  0    0  0  1    0  1  0
-       0  0  1    1  0  0    0  1  0
-       0  1  0    0  0  1    1  0  0
-      -1  0  1   -1  1  0   -1  0  0
-       0  0 -1    0  1 -1    1  0 -1
-       1  0 -1    0  0 -1    0  1 -1
-       1 -1  0    0 -1  1    0 -1  0
-       0 -1  0    1 -1  0    0 -1  1
-      -1  1  0   -1  0  0   -1  0  1
- tnons   72*0.0d0
- tolwfr 1.0d-16
- tsmear 0.05
- typat  1
- wtk   1 3
- xred  0.0 0.0 0.0
- znucl 13.0
-
-
-## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
-#%%<BEGIN TEST_INFO>
-#%% [setup]
-#%% executable = abinit
-#%% [files]
-#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0
-#%% psp_files=13al.pspgth
-#%% [paral_info]
-#%% max_nprocs = 2
-#%% [extra_info]
-#%% keywords = NC
-#%% description = 
-#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .
-#%%  Designed to test the treatment of metals, using the "cold smearing"
-#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
-#%%<END TEST_INFO>
-</pre>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-
-<p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#uuid-682e1414-c4a8-49ac-beb5-4bc1638bff1e">Open files</button>  <!-- Modal --> <div class="modal fade" id="uuid-682e1414-c4a8-49ac-beb5-4bc1638bff1e" tabindex="-1" role="dialog" aria-labelledby="uuid-861f9041-f256-49e5-a7aa-380fba0264d4" aria-hidden="true">     <div class="modal-dialog modal-lg">         <div class="modal-content">             <div class="modal-header">                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>                 </button>                  <h4 class="modal-title" id="uuid-861f9041-f256-49e5-a7aa-380fba0264d4">hello modal</h4>             </div>             <div class="modal-body">                 <div role="tabpanel">                     <!-- Nav tabs -->                     <ul class="nav nav-tabs" role="tablist">                <li role="presentation" class="active">                 <a href="#uuid-748f8907-62a6-42e3-9744-59de19ccd3db" aria-controls="uploadTab" role="tab" data-toggle="tab">hello_path</a>                 </li>                 <li role="presentation" class=" ">                 <a href="#uuid-45397689-6fe1-4b6b-93c2-652537a5daca" aria-controls="uploadTab" role="tab" data-toggle="tab">bar_path</a>                 </li> </ul>              <!-- Tab panes -->              <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-748f8907-62a6-42e3-9744-59de19ccd3db">hello</div><div role="tabpanel" class="tab-pane  " id="uuid-45397689-6fe1-4b6b-93c2-652537a5daca">bar</div> </div>  </div>  </div>  </div>  </div>  </div> </p>
-<div class="codehilite"><pre><span></span>wiki links
-[[ecut]]
-</pre></div>
-
-
-<p>This is a link to the <a class="wikilink" href="./input_variables/varbas/#ecut">ecut</a> input variable.</p>
-<div class="codehilite"><pre><span></span>citations:
-[[Allen1976]]
-</pre></div>
-
-
-<p>Link to <a class="wikilink" href="./bibliography/#Allen1976">Allen1976</a> paper</p>
-<div class="codehilite"><pre><span></span>Mathjax support
-</pre></div>
-
-
-<p>
-<script type="math/tex; mode=display"> G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle
-\label{eq:GreenDef} </script>
-</p>
-<p>The propagator in Eq.\ref{eq:GreenDef} contains &hellip;</p>
-<p>Can include videos with:</p>
-<div class="codehilite"><pre><span></span>[![asciicast](https://asciinema.org/a/40324.png)](https://asciinema.org/a/40324)
-</pre></div>
-
-
-<p>The video below gives an overwiew of the command line options of <code>runtests.py</code></p>
-<p><a href="https://asciinema.org/a/40324"><img alt="asciicast" src="https://asciinema.org/a/40324.png" /></a></p>
-<p>Single editor</p>
-<div>
-    <div class="panel panel-default">
-        <div class="panel-heading"><h3 class="panel-title">Editor</h3></div>
-        <div class="panel-body"><div class="editor" id="uuid-f98c1966-1061-486c-b9be-b4850c250708">
-.Version 8.0.3 of ABINIT 
-.(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
-
-.Copyright (C) 1998-2017 ABINIT group . 
- ABINIT comes with ABSOLUTELY NO WARRANTY.
- It is free software, and you are welcome to redistribute it
- under certain conditions (GNU General Public License,
- see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
-
- ABINIT is a project of the Universite Catholique de Louvain,
- Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
- Please read ~abinit/doc/users/acknowledgments.html for suggested
- acknowledgments of the ABINIT effort.
- For more information, see http://www.abinit.org .
-
-.Starting date : Mon  4 Apr 2016.
-- ( at 06h19 )
-
-- input  file    -&gt; t01.in
-- output file    -&gt; t01.out
-- root for input  files -&gt; t01i
-- root for output files -&gt; t01o
-
-
- Symmetries : space group F-4 3 m (#216); Bravais cF (face-center cubic)
-================================================================================
- Values of the parameters that define the memory need of the present run
-     intxc =       1    ionmov =       0      iscf =       7    lmnmax =       3
-     lnmax =       3     mgfft =      16  mpssoang =       2    mqgrid =    3001
-     natom =       1  nloc_mem =       1    nspden =       1   nspinor =       1
-    nsppol =       1      nsym =      24    n1xccc =       0    ntypat =       1
-    occopt =       4   xclevel =       1
--    mband =           4        mffmem =           1         mkmem =           2
-       mpw =         171          nfft =        4096          nkpt =           2
-================================================================================
-P This job should need less than                       2.392 Mbytes of memory.
-P Max. in main chain + fourwf.f
-P            9 blocks of mpw  integer numbers, for      0.006 Mbytes.
-P           57 blocks of mpw  real(dp)  numbers, for      0.074 Mbytes.
-P            2 blocks of nfft integer numbers, for      0.031 Mbytes.
-P           34 blocks of nfft real(dp)  numbers, for      1.063 Mbytes.
-P              Additional     real(dp)  numbers, for      0.249 Mbytes.
-P              With residue estimated to be             0.969 Mbytes.
-P
-P Comparison of the memory needs of different chains
-P Main chain + fourwf.f                 2.392 Mbytes.
-P Main chain + nonlop.f + opernl.f      2.320 Mbytes.
-P XC chain                              2.295 Mbytes.
-P mkrho chain                           2.216 Mbytes.
-P fourdp chain                          2.178 Mbytes.
-- parallel k-point chain                2.100 Mbytes.
-P newvtr chain                          2.162 Mbytes.
-  Rough estimation (10% accuracy) of disk space for files :
-_ WF disk file :      0.023 Mbytes ; DEN or POT disk file :      0.033 Mbytes.
-================================================================================
-
---------------------------------------------------------------------------------
-------------- Echo of variables that govern the present computation ------------
---------------------------------------------------------------------------------
--
-- outvars: echo of selected default values                                      
--   accesswff0 =  0 , fftalg0 =312 , wfoptalg0 =  0
--
-- outvars: echo of global parameters not present in the input file              
--  max_nthreads =    0
--
- -outvars: echo values of preprocessed input variables --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  1.000000  0.000000  0.000000
-                       2.000000  1.000000  0.000000  0.000000
-           occopt           4
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
- chkinp: Checking input parameters for consistency.
-
-================================================================================
-== DATASET  1 ==================================================================
--   nproc =    1
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  0.0000000  3.8000000  3.8000000  G(1)= -0.1315789  0.1315789  0.1315789
- R(2)=  3.8000000  0.0000000  3.8000000  G(2)=  0.1315789 -0.1315789  0.1315789
- R(3)=  3.8000000  3.8000000  0.0000000  G(3)=  0.1315789  0.1315789 -0.1315789
- Unit cell volume ucvol=  1.0974400E+02 bohr^3
- Angles (23,13,12)=  6.00000000E+01  6.00000000E+01  6.00000000E+01 degrees
-
- getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  16  16  16
-         ecut(hartree)=     10.000   =&gt; boxcut(ratio)=   2.09149
-
---- Pseudopotential description ------------------------------------------------
-- pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- Goedecker-Teter-Hutter  Tue May 28 09:24:05 EDT 1996
-- 13.00000   3.00000    960528                znucl, zion, pspdat
-    2    1    1    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
- rloc=   0.4500000
-  cc1=  -6.8340578; cc2=   0.0000000; cc3=   0.0000000; cc4=   0.0000000
-  rrs=   0.4654363; h1s=   2.8140777; h2s=   1.9395165
-  rrp=   0.5462433; h1p=   1.9160118
--  Local part computed in reciprocal space.
-
- pspatm : COMMENT -
-  the projectors are not normalized,
-  so that the KB energies are not consistent with 
-  definition in PRB44, 8503 (1991). 
-  However, this does not influence the results obtained hereafter.
- pspatm: epsatm=   -5.99108991
-         --- l  ekb(1:nproj) --&gt;
-             0    1.005823    0.184862
-             1    0.220213
- pspatm: atomic psp has been read  and splines computed
-
-  -1.79732697E+01                                ecore*ucvol(ha*bohr**3)
---------------------------------------------------------------------------------
-
-P newkpt: treating      4 bands with npw=     162 for ikpt=   1 by node    0
-P newkpt: treating      4 bands with npw=     171 for ikpt=   2 by node    0
-_setup2: Arith. and geom. avg. npw (full set) are     168.750     168.704
-
-================================================================================
-
-     iter   Etot(hartree)      deltaE(h)  residm     vres2
-
- ETOT  1  -2.0922134658456    -2.092E+00 2.467E-02 7.984E-01
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33282   Average Vxc (hartree)=  -0.34518
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00409    0.47540    0.75394    0.76724
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15864    0.31874    0.48330    0.61039
-      occupation numbers for kpt#   2
-   2.00003    1.33307    0.00014    0.00000
- Fermi (or HOMO) energy (eV) =   9.05662   Average Vxc (eV)=  -9.39275
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.11120   12.93623   20.51566   20.87769
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31684    8.67326   13.15134   16.60948
-
- ETOT  2  -2.0930826964006    -8.692E-04 1.292E-05 1.729E-02
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33257   Average Vxc (hartree)=  -0.34514
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00444    0.47492    0.75140    0.75140
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15873    0.31848    0.48264    0.60545
-      occupation numbers for kpt#   2
-   2.00003    1.33306    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04974   Average Vxc (eV)=  -9.39180
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12075   12.92332   20.44656   20.44660
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31931    8.66639   13.13321   16.47505
-
- ETOT  3  -2.0930883388875    -5.642E-06 1.356E-06 2.218E-05
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33231   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00467    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15851    0.31822    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04267   Average Vxc (eV)=  -9.39148
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12697   12.91495   20.42873   20.42873
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31332    8.65931   13.12398   16.45908
-
- ETOT  4  -2.0930883521554    -1.327E-08 4.874E-08 2.237E-07
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12680   12.91501   20.42863   20.42863
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31347    8.65941   13.12416   16.45898
-
- ETOT  5  -2.0930883522591    -1.037E-10 4.143E-09 3.512E-09
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  6  -2.0930883522610    -1.917E-12 1.830E-10 1.589E-11
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  7  -2.0930883522610     3.109E-15 1.440E-11 4.171E-14
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  8  -2.0930883522610    -8.882E-15 6.632E-13 6.050E-16
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.42398349E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.42398349E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.42398349E-05  sigma(2 1)=  0.00000000E+00
-
-
- scprqt:  WARNING -
-  nstep=    8 was not enough SCF cycles to converge;
-  maximum residual=  6.632E-13 exceeds tolwfr=  1.000E-16
-
- Integrated electronic density in atomic spheres:
- ------------------------------------------------
- Atom  Sphere_radius  Integrated_density
-    1        2.00000          0.91127927
-================================================================================
-
- ----iterations are completed or convergence reached----
-
- Mean square residual over all n,k,spin=   8.2932E-14; max=  6.6321E-13
-   0.2500  0.2500  0.2500    1  6.66046E-17 kpt; spin; max resid(k); each band:
-  6.66E-17 3.86E-17 6.25E-17 4.33E-17
-   0.2500  0.5000  0.5000    1  6.63214E-13 kpt; spin; max resid(k); each band:
-  6.33E-18 1.31E-17 1.37E-17 6.63E-13
- reduced coordinates (array xred) for    1 atoms
-       0.000000000000      0.000000000000      0.000000000000
- rms dE/dt=  0.0000E+00; max dE/dt=  0.0000E+00; dE/dt below (all hartree)
-    1       0.000000000000      0.000000000000      0.000000000000
-
- cartesian coordinates (angstrom) at end:
-    1      0.00000000000000     0.00000000000000     0.00000000000000
-
- cartesian forces (hartree/bohr) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 h/b
-
- cartesian forces (eV/Angstrom) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 e/A
- length scales=  7.600000000000  7.600000000000  7.600000000000 bohr
-              =  4.021746785284  4.021746785284  4.021746785284 angstroms
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
- Total charge density [el/Bohr^3]
-      Maximum=    3.2763E-02  at reduced coord.    0.0625    0.2500    0.6250
- Next maximum=    3.2763E-02  at reduced coord.    0.2500    0.0625    0.6250
-      Minimum=    7.7325E-05  at reduced coord.    0.0000    0.0000    0.0000
- Next minimum=    1.0522E-03  at reduced coord.    0.0625    0.0000    0.0000
-   Integrated=    3.0000E+00
-
---------------------------------------------------------------------------------
- Components of total free energy (in Hartree) :
-
-    Kinetic energy  =  8.94053741272370E-01
-    Hartree energy  =  4.31041103875311E-03
-    XC energy       = -8.05667739263073E-01
-    Ewald energy    = -2.71472096493581E+00
-    PspCore energy  = -1.63774509167489E-01
-    Loc. psp. energy=  3.24099114855843E-01
-    NL   psp  energy=  3.76609941656077E-01
-    &gt;&gt;&gt;&gt;&gt; Internal E= -2.08509000454333E+00
-
-    -kT*entropy     = -7.99834771766221E-03
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -2.09308835226099E+00
-
- Other information on the energy :
-    Total energy(eV)= -5.69558306062687E+01 ; Band energy (Ha)=   5.5370053523E-01
---------------------------------------------------------------------------------
-
-          ===&gt; extra information on forces &lt;===
- ewald contribution to reduced grads
-    1       0.000000000000      0.000000000000     -0.000000000000
- nonlocal contribution to red. grads
-    1      -0.000000000000     -0.000000000000     -0.000000000000
- local psp contribution to red. grads
-    1      -0.000000000000     -0.000000000000     -0.000000000000
- residual contribution to red. grads
-    1       0.000000000000      0.000000000000      0.000000000000
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.42398349E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.42398349E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.42398349E-05  sigma(2 1)=  0.00000000E+00
-
--Cartesian components of stress tensor (GPa)         [Pressure=  4.1895E-01 GPa]
-- sigma(1 1)= -4.18950338E-01  sigma(3 2)=  0.00000000E+00
-- sigma(2 2)= -4.18950338E-01  sigma(3 1)=  0.00000000E+00
-- sigma(3 3)= -4.18950338E-01  sigma(2 1)=  0.00000000E+00
-
-== END DATASET(S) ==============================================================
-================================================================================
-
- -outvars: echo values of variables after computation  --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
-           etotal     -2.0930883523E+00
-            fcart     -0.0000000000E+00 -0.0000000000E+00 -0.0000000000E+00
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  0.000303  0.000000  0.000000
-                       2.000031  1.333055  0.000147  0.000000
-           occopt           4
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           strten     -1.4239834937E-05 -1.4239834937E-05 -1.4239834937E-05
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
-
-- Timing analysis has been suppressed with timopt=0
-
-
-
-================================================================================
-
- Suggested references for the acknowledgment of ABINIT usage.
-
- The users of ABINIT have little formal obligations with respect to the ABINIT group
- (those specified in the GNU General Public License, http://www.gnu.org/copyleft/gpl.txt).
- However, it is common practice in the scientific literature,
- to acknowledge the efforts of people that have made the research possible.
- In this spirit, please find below suggested citations of work written by ABINIT developers,
- corresponding to implementations inside of ABINIT that you have used in the present run.
- Note also that it will be of great value to readers of publications presenting these results,
- to read papers enabling them to understand the theoretical formalism and details
- of the ABINIT implementation.
- For information on why they are suggested, see also http://www.abinit.org/about/?text=acknowledgments.
--
-- [1] ABINIT : First-principles approach of materials and nanosystem properties.
-- X. Gonze, B. Amadon, P.-M. Anglade, J.-M. Beuken, F. Bottin, P. Boulanger, F. Bruneval,
-- D. Caliste, R. Caracas, M. Cote, T. Deutsch, L. Genovese, Ph. Ghosez, M. Giantomassi
-- S. Goedecker, D.R. Hamann, P. Hermet, F. Jollet, G. Jomard, S. Leroux, M. Mancini, S. Mazevet,
-- M.J.T. Oliveira, G. Onida, Y. Pouillon, T. Rangel, G.-M. Rignanese, D. Sangalli, R. Shaltaf,
-- M. Torrent, M.J. Verstraete, G. Zerah, J.W. Zwanziger
-- Computer Phys. Comm. 180, 2582-2615 (2009).
-- Comment : the third generic paper describing the ABINIT project.
-- Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
-- is available at http://www.abinit.org/about/ABINIT_CPC_v10.pdf .
-- The licence allows the authors to put it on the Web.
--
-- [2] A brief introduction to the ABINIT software package.
-- X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet,
-- M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval,
-- L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan.
-- Z. Kristallogr. 220, 558-562 (2005).
-- Comment : the second generic paper describing the ABINIT project. Note that this paper
-- should be cited especially if you are using the GW part of ABINIT, as several authors
-- of this part are not in the list of authors of the first or third paper.
-- The .pdf of the latter paper is available at http://www.abinit.org/about/zfk_0505-06_558-562.pdf.
-- Note that it should not redistributed (Copyright by Oldenburg Wissenshaftverlag,
-- the licence allows the authors to put it on the Web).
--
-- And optionally:
--
-- [3] First-principles computation of material properties : the ABINIT software project. 
-- X. Gonze, J.-M. Beuken, R. Caracas, F. Detraux, M. Fuchs, G.-M. Rignanese, L. Sindic,
-- M. Verstraete, G. Zerah, F. Jollet, M. Torrent, A. Roy, M. Mikami, Ph. Ghosez, J.-Y. Raty, D.C. Allan.
-- Computational Materials Science 25, 478-492 (2002). http://dx.doi.org/10.1016/S0927-0256(02)00325-7
-- Comment : the original paper describing the ABINIT project.
--
-- [4] Fast radix 2, 3, 4 and 5 kernels for Fast Fourier Transformations
-- on computers with overlapping multiply-add instructions.
-- S. Goedecker, SIAM J. on Scientific Computing 18, 1605 (1997).
--
-- Proc.   0 individual time (sec): cpu=          0.6  wall=          0.3
-
-================================================================================
-
- Calculation completed.
-.Delivered   1 WARNINGs and   2 COMMENTs to log file.
-+Overall time at end (sec) : cpu=          0.6  wall=          0.3
-</div></div>
-    </div>
-    <div class="panel-footer"></div>
-</div>
-
-<p>Multi-tab editor</p>
-<div><h1>Bootstrap tab panel example (using nav-pills)</h1></div>
-
-<div id="exTab1">
-<!-- Nav tabs -->
-<ul class="nav nav-pills">
-                    <li class="active">
-                <a href="#uuid-6de06e6b-01e9-4029-83a2-9d911e857845" data-toggle="tab">tests/v1/Refs/t01.out</a>
-                </li>                 <li class=" ">
-                <a href="#uuid-97986006-da44-4b25-a8c6-182b346c8707" data-toggle="tab">tests/v1/Refs/t02.out</a>
-                </li> </ul>
-             <!-- Tab panes -->
-             <div class="tab-content clearfix"><div class="tab-pane active" id="uuid-6de06e6b-01e9-4029-83a2-9d911e857845">
-            <div id="uuid-d57a572b-c4ca-43c5-b7d1-5cdc40719972" class="editor">
-.Version 8.0.3 of ABINIT 
-.(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
-
-.Copyright (C) 1998-2017 ABINIT group . 
- ABINIT comes with ABSOLUTELY NO WARRANTY.
- It is free software, and you are welcome to redistribute it
- under certain conditions (GNU General Public License,
- see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
-
- ABINIT is a project of the Universite Catholique de Louvain,
- Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
- Please read ~abinit/doc/users/acknowledgments.html for suggested
- acknowledgments of the ABINIT effort.
- For more information, see http://www.abinit.org .
-
-.Starting date : Mon  4 Apr 2016.
-- ( at 06h19 )
-
-- input  file    -&gt; t01.in
-- output file    -&gt; t01.out
-- root for input  files -&gt; t01i
-- root for output files -&gt; t01o
-
-
- Symmetries : space group F-4 3 m (#216); Bravais cF (face-center cubic)
-================================================================================
- Values of the parameters that define the memory need of the present run
-     intxc =       1    ionmov =       0      iscf =       7    lmnmax =       3
-     lnmax =       3     mgfft =      16  mpssoang =       2    mqgrid =    3001
-     natom =       1  nloc_mem =       1    nspden =       1   nspinor =       1
-    nsppol =       1      nsym =      24    n1xccc =       0    ntypat =       1
-    occopt =       4   xclevel =       1
--    mband =           4        mffmem =           1         mkmem =           2
-       mpw =         171          nfft =        4096          nkpt =           2
-================================================================================
-P This job should need less than                       2.392 Mbytes of memory.
-P Max. in main chain + fourwf.f
-P            9 blocks of mpw  integer numbers, for      0.006 Mbytes.
-P           57 blocks of mpw  real(dp)  numbers, for      0.074 Mbytes.
-P            2 blocks of nfft integer numbers, for      0.031 Mbytes.
-P           34 blocks of nfft real(dp)  numbers, for      1.063 Mbytes.
-P              Additional     real(dp)  numbers, for      0.249 Mbytes.
-P              With residue estimated to be             0.969 Mbytes.
-P
-P Comparison of the memory needs of different chains
-P Main chain + fourwf.f                 2.392 Mbytes.
-P Main chain + nonlop.f + opernl.f      2.320 Mbytes.
-P XC chain                              2.295 Mbytes.
-P mkrho chain                           2.216 Mbytes.
-P fourdp chain                          2.178 Mbytes.
-- parallel k-point chain                2.100 Mbytes.
-P newvtr chain                          2.162 Mbytes.
-  Rough estimation (10% accuracy) of disk space for files :
-_ WF disk file :      0.023 Mbytes ; DEN or POT disk file :      0.033 Mbytes.
-================================================================================
-
---------------------------------------------------------------------------------
-------------- Echo of variables that govern the present computation ------------
---------------------------------------------------------------------------------
--
-- outvars: echo of selected default values                                      
--   accesswff0 =  0 , fftalg0 =312 , wfoptalg0 =  0
--
-- outvars: echo of global parameters not present in the input file              
--  max_nthreads =    0
--
- -outvars: echo values of preprocessed input variables --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  1.000000  0.000000  0.000000
-                       2.000000  1.000000  0.000000  0.000000
-           occopt           4
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
- chkinp: Checking input parameters for consistency.
-
-================================================================================
-== DATASET  1 ==================================================================
--   nproc =    1
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  0.0000000  3.8000000  3.8000000  G(1)= -0.1315789  0.1315789  0.1315789
- R(2)=  3.8000000  0.0000000  3.8000000  G(2)=  0.1315789 -0.1315789  0.1315789
- R(3)=  3.8000000  3.8000000  0.0000000  G(3)=  0.1315789  0.1315789 -0.1315789
- Unit cell volume ucvol=  1.0974400E+02 bohr^3
- Angles (23,13,12)=  6.00000000E+01  6.00000000E+01  6.00000000E+01 degrees
-
- getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  16  16  16
-         ecut(hartree)=     10.000   =&gt; boxcut(ratio)=   2.09149
-
---- Pseudopotential description ------------------------------------------------
-- pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- Goedecker-Teter-Hutter  Tue May 28 09:24:05 EDT 1996
-- 13.00000   3.00000    960528                znucl, zion, pspdat
-    2    1    1    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
- rloc=   0.4500000
-  cc1=  -6.8340578; cc2=   0.0000000; cc3=   0.0000000; cc4=   0.0000000
-  rrs=   0.4654363; h1s=   2.8140777; h2s=   1.9395165
-  rrp=   0.5462433; h1p=   1.9160118
--  Local part computed in reciprocal space.
-
- pspatm : COMMENT -
-  the projectors are not normalized,
-  so that the KB energies are not consistent with 
-  definition in PRB44, 8503 (1991). 
-  However, this does not influence the results obtained hereafter.
- pspatm: epsatm=   -5.99108991
-         --- l  ekb(1:nproj) --&gt;
-             0    1.005823    0.184862
-             1    0.220213
- pspatm: atomic psp has been read  and splines computed
-
-  -1.79732697E+01                                ecore*ucvol(ha*bohr**3)
---------------------------------------------------------------------------------
-
-P newkpt: treating      4 bands with npw=     162 for ikpt=   1 by node    0
-P newkpt: treating      4 bands with npw=     171 for ikpt=   2 by node    0
-_setup2: Arith. and geom. avg. npw (full set) are     168.750     168.704
-
-================================================================================
-
-     iter   Etot(hartree)      deltaE(h)  residm     vres2
-
- ETOT  1  -2.0922134658456    -2.092E+00 2.467E-02 7.984E-01
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33282   Average Vxc (hartree)=  -0.34518
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00409    0.47540    0.75394    0.76724
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15864    0.31874    0.48330    0.61039
-      occupation numbers for kpt#   2
-   2.00003    1.33307    0.00014    0.00000
- Fermi (or HOMO) energy (eV) =   9.05662   Average Vxc (eV)=  -9.39275
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.11120   12.93623   20.51566   20.87769
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31684    8.67326   13.15134   16.60948
-
- ETOT  2  -2.0930826964006    -8.692E-04 1.292E-05 1.729E-02
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33257   Average Vxc (hartree)=  -0.34514
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00444    0.47492    0.75140    0.75140
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15873    0.31848    0.48264    0.60545
-      occupation numbers for kpt#   2
-   2.00003    1.33306    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04974   Average Vxc (eV)=  -9.39180
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12075   12.92332   20.44656   20.44660
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31931    8.66639   13.13321   16.47505
-
- ETOT  3  -2.0930883388875    -5.642E-06 1.356E-06 2.218E-05
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33231   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00467    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15851    0.31822    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04267   Average Vxc (eV)=  -9.39148
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12697   12.91495   20.42873   20.42873
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31332    8.65931   13.12398   16.45908
-
- ETOT  4  -2.0930883521554    -1.327E-08 4.874E-08 2.237E-07
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12680   12.91501   20.42863   20.42863
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31347    8.65941   13.12416   16.45898
-
- ETOT  5  -2.0930883522591    -1.037E-10 4.143E-09 3.512E-09
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  6  -2.0930883522610    -1.917E-12 1.830E-10 1.589E-11
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  7  -2.0930883522610     3.109E-15 1.440E-11 4.171E-14
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- ETOT  8  -2.0930883522610    -8.882E-15 6.632E-13 6.050E-16
-
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.42398349E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.42398349E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.42398349E-05  sigma(2 1)=  0.00000000E+00
-
-
- scprqt:  WARNING -
-  nstep=    8 was not enough SCF cycles to converge;
-  maximum residual=  6.632E-13 exceeds tolwfr=  1.000E-16
-
- Integrated electronic density in atomic spheres:
- ------------------------------------------------
- Atom  Sphere_radius  Integrated_density
-    1        2.00000          0.91127927
-================================================================================
-
- ----iterations are completed or convergence reached----
-
- Mean square residual over all n,k,spin=   8.2932E-14; max=  6.6321E-13
-   0.2500  0.2500  0.2500    1  6.66046E-17 kpt; spin; max resid(k); each band:
-  6.66E-17 3.86E-17 6.25E-17 4.33E-17
-   0.2500  0.5000  0.5000    1  6.63214E-13 kpt; spin; max resid(k); each band:
-  6.33E-18 1.31E-17 1.37E-17 6.63E-13
- reduced coordinates (array xred) for    1 atoms
-       0.000000000000      0.000000000000      0.000000000000
- rms dE/dt=  0.0000E+00; max dE/dt=  0.0000E+00; dE/dt below (all hartree)
-    1       0.000000000000      0.000000000000      0.000000000000
-
- cartesian coordinates (angstrom) at end:
-    1      0.00000000000000     0.00000000000000     0.00000000000000
-
- cartesian forces (hartree/bohr) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 h/b
-
- cartesian forces (eV/Angstrom) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 e/A
- length scales=  7.600000000000  7.600000000000  7.600000000000 bohr
-              =  4.021746785284  4.021746785284  4.021746785284 angstroms
- prteigrs : about to open file t01o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33232   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00030    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33305    0.00015    0.00000
- Fermi (or HOMO) energy (eV) =   9.04277   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91501   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65942   13.12417   16.45897
- Total charge density [el/Bohr^3]
-      Maximum=    3.2763E-02  at reduced coord.    0.0625    0.2500    0.6250
- Next maximum=    3.2763E-02  at reduced coord.    0.2500    0.0625    0.6250
-      Minimum=    7.7325E-05  at reduced coord.    0.0000    0.0000    0.0000
- Next minimum=    1.0522E-03  at reduced coord.    0.0625    0.0000    0.0000
-   Integrated=    3.0000E+00
-
---------------------------------------------------------------------------------
- Components of total free energy (in Hartree) :
-
-    Kinetic energy  =  8.94053741272370E-01
-    Hartree energy  =  4.31041103875311E-03
-    XC energy       = -8.05667739263073E-01
-    Ewald energy    = -2.71472096493581E+00
-    PspCore energy  = -1.63774509167489E-01
-    Loc. psp. energy=  3.24099114855843E-01
-    NL   psp  energy=  3.76609941656077E-01
-    &gt;&gt;&gt;&gt;&gt; Internal E= -2.08509000454333E+00
-
-    -kT*entropy     = -7.99834771766221E-03
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -2.09308835226099E+00
-
- Other information on the energy :
-    Total energy(eV)= -5.69558306062687E+01 ; Band energy (Ha)=   5.5370053523E-01
---------------------------------------------------------------------------------
-
-          ===&gt; extra information on forces &lt;===
- ewald contribution to reduced grads
-    1       0.000000000000      0.000000000000     -0.000000000000
- nonlocal contribution to red. grads
-    1      -0.000000000000     -0.000000000000     -0.000000000000
- local psp contribution to red. grads
-    1      -0.000000000000     -0.000000000000     -0.000000000000
- residual contribution to red. grads
-    1       0.000000000000      0.000000000000      0.000000000000
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.42398349E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.42398349E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.42398349E-05  sigma(2 1)=  0.00000000E+00
-
--Cartesian components of stress tensor (GPa)         [Pressure=  4.1895E-01 GPa]
-- sigma(1 1)= -4.18950338E-01  sigma(3 2)=  0.00000000E+00
-- sigma(2 2)= -4.18950338E-01  sigma(3 1)=  0.00000000E+00
-- sigma(3 3)= -4.18950338E-01  sigma(2 1)=  0.00000000E+00
-
-== END DATASET(S) ==============================================================
-================================================================================
-
- -outvars: echo values of variables after computation  --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
-           etotal     -2.0930883523E+00
-            fcart     -0.0000000000E+00 -0.0000000000E+00 -0.0000000000E+00
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  0.000303  0.000000  0.000000
-                       2.000031  1.333055  0.000147  0.000000
-           occopt           4
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           strten     -1.4239834937E-05 -1.4239834937E-05 -1.4239834937E-05
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
-
-- Timing analysis has been suppressed with timopt=0
-
-
-
-================================================================================
-
- Suggested references for the acknowledgment of ABINIT usage.
-
- The users of ABINIT have little formal obligations with respect to the ABINIT group
- (those specified in the GNU General Public License, http://www.gnu.org/copyleft/gpl.txt).
- However, it is common practice in the scientific literature,
- to acknowledge the efforts of people that have made the research possible.
- In this spirit, please find below suggested citations of work written by ABINIT developers,
- corresponding to implementations inside of ABINIT that you have used in the present run.
- Note also that it will be of great value to readers of publications presenting these results,
- to read papers enabling them to understand the theoretical formalism and details
- of the ABINIT implementation.
- For information on why they are suggested, see also http://www.abinit.org/about/?text=acknowledgments.
--
-- [1] ABINIT : First-principles approach of materials and nanosystem properties.
-- X. Gonze, B. Amadon, P.-M. Anglade, J.-M. Beuken, F. Bottin, P. Boulanger, F. Bruneval,
-- D. Caliste, R. Caracas, M. Cote, T. Deutsch, L. Genovese, Ph. Ghosez, M. Giantomassi
-- S. Goedecker, D.R. Hamann, P. Hermet, F. Jollet, G. Jomard, S. Leroux, M. Mancini, S. Mazevet,
-- M.J.T. Oliveira, G. Onida, Y. Pouillon, T. Rangel, G.-M. Rignanese, D. Sangalli, R. Shaltaf,
-- M. Torrent, M.J. Verstraete, G. Zerah, J.W. Zwanziger
-- Computer Phys. Comm. 180, 2582-2615 (2009).
-- Comment : the third generic paper describing the ABINIT project.
-- Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
-- is available at http://www.abinit.org/about/ABINIT_CPC_v10.pdf .
-- The licence allows the authors to put it on the Web.
--
-- [2] A brief introduction to the ABINIT software package.
-- X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet,
-- M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval,
-- L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan.
-- Z. Kristallogr. 220, 558-562 (2005).
-- Comment : the second generic paper describing the ABINIT project. Note that this paper
-- should be cited especially if you are using the GW part of ABINIT, as several authors
-- of this part are not in the list of authors of the first or third paper.
-- The .pdf of the latter paper is available at http://www.abinit.org/about/zfk_0505-06_558-562.pdf.
-- Note that it should not redistributed (Copyright by Oldenburg Wissenshaftverlag,
-- the licence allows the authors to put it on the Web).
--
-- And optionally:
--
-- [3] First-principles computation of material properties : the ABINIT software project. 
-- X. Gonze, J.-M. Beuken, R. Caracas, F. Detraux, M. Fuchs, G.-M. Rignanese, L. Sindic,
-- M. Verstraete, G. Zerah, F. Jollet, M. Torrent, A. Roy, M. Mikami, Ph. Ghosez, J.-Y. Raty, D.C. Allan.
-- Computational Materials Science 25, 478-492 (2002). http://dx.doi.org/10.1016/S0927-0256(02)00325-7
-- Comment : the original paper describing the ABINIT project.
--
-- [4] Fast radix 2, 3, 4 and 5 kernels for Fast Fourier Transformations
-- on computers with overlapping multiply-add instructions.
-- S. Goedecker, SIAM J. on Scientific Computing 18, 1605 (1997).
--
-- Proc.   0 individual time (sec): cpu=          0.6  wall=          0.3
-
-================================================================================
-
- Calculation completed.
-.Delivered   1 WARNINGs and   2 COMMENTs to log file.
-+Overall time at end (sec) : cpu=          0.6  wall=          0.3
-</div></div><div class="tab-pane  " id="uuid-97986006-da44-4b25-a8c6-182b346c8707">
-            <div id="uuid-79e73bcc-e19f-4571-9dcd-ab3a884783c4" class="editor">
-.Version 8.0.3 of ABINIT 
-.(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
-
-.Copyright (C) 1998-2017 ABINIT group . 
- ABINIT comes with ABSOLUTELY NO WARRANTY.
- It is free software, and you are welcome to redistribute it
- under certain conditions (GNU General Public License,
- see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
-
- ABINIT is a project of the Universite Catholique de Louvain,
- Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
- Please read ~abinit/doc/users/acknowledgments.html for suggested
- acknowledgments of the ABINIT effort.
- For more information, see http://www.abinit.org .
-
-.Starting date : Mon  4 Apr 2016.
-- ( at 06h19 )
-
-- input  file    -&gt; t02.in
-- output file    -&gt; t02.out
-- root for input  files -&gt; t02i
-- root for output files -&gt; t02o
-
-
- Symmetries : space group F-4 3 m (#216); Bravais cF (face-center cubic)
-================================================================================
- Values of the parameters that define the memory need of the present run
-     intxc =       1    ionmov =       0      iscf =       7    lmnmax =       3
-     lnmax =       3     mgfft =      16  mpssoang =       2    mqgrid =    3001
-     natom =       1  nloc_mem =       1    nspden =       1   nspinor =       1
-    nsppol =       1      nsym =      24    n1xccc =       0    ntypat =       1
-    occopt =       5   xclevel =       1
--    mband =           4        mffmem =           1         mkmem =           2
-       mpw =         171          nfft =        4096          nkpt =           2
-================================================================================
-P This job should need less than                       2.392 Mbytes of memory.
-P Max. in main chain + fourwf.f
-P            9 blocks of mpw  integer numbers, for      0.006 Mbytes.
-P           57 blocks of mpw  real(dp)  numbers, for      0.074 Mbytes.
-P            2 blocks of nfft integer numbers, for      0.031 Mbytes.
-P           34 blocks of nfft real(dp)  numbers, for      1.063 Mbytes.
-P              Additional     real(dp)  numbers, for      0.249 Mbytes.
-P              With residue estimated to be             0.969 Mbytes.
-P
-P Comparison of the memory needs of different chains
-P Main chain + fourwf.f                 2.392 Mbytes.
-P Main chain + nonlop.f + opernl.f      2.320 Mbytes.
-P XC chain                              2.295 Mbytes.
-P mkrho chain                           2.216 Mbytes.
-P fourdp chain                          2.178 Mbytes.
-- parallel k-point chain                2.100 Mbytes.
-P newvtr chain                          2.162 Mbytes.
-  Rough estimation (10% accuracy) of disk space for files :
-_ WF disk file :      0.023 Mbytes ; DEN or POT disk file :      0.033 Mbytes.
-================================================================================
-
---------------------------------------------------------------------------------
-------------- Echo of variables that govern the present computation ------------
---------------------------------------------------------------------------------
--
-- outvars: echo of selected default values                                      
--   accesswff0 =  0 , fftalg0 =312 , wfoptalg0 =  0
--
-- outvars: echo of global parameters not present in the input file              
--  max_nthreads =    0
--
- -outvars: echo values of preprocessed input variables --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  1.000000  0.000000  0.000000
-                       2.000000  1.000000  0.000000  0.000000
-           occopt           5
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
- chkinp: Checking input parameters for consistency.
-
-================================================================================
-== DATASET  1 ==================================================================
--   nproc =    1
-
- Exchange-correlation functional for the present dataset will be:
-  LDA: new Teter (4/93) with spin-polarized option - ixc=1
- Citation for XC functional:
-  S. Goedecker, M. Teter, J. Huetter, PRB 54, 1703 (1996)
-
- Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
- R(1)=  0.0000000  3.8000000  3.8000000  G(1)= -0.1315789  0.1315789  0.1315789
- R(2)=  3.8000000  0.0000000  3.8000000  G(2)=  0.1315789 -0.1315789  0.1315789
- R(3)=  3.8000000  3.8000000  0.0000000  G(3)=  0.1315789  0.1315789 -0.1315789
- Unit cell volume ucvol=  1.0974400E+02 bohr^3
- Angles (23,13,12)=  6.00000000E+01  6.00000000E+01  6.00000000E+01 degrees
-
- getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  16  16  16
-         ecut(hartree)=     10.000   =&gt; boxcut(ratio)=   2.09149
-
---- Pseudopotential description ------------------------------------------------
-- pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.3/gonze/8.0.3-private/tests/Psps_for_tests/13al.pspgth
-- Goedecker-Teter-Hutter  Tue May 28 09:24:05 EDT 1996
-- 13.00000   3.00000    960528                znucl, zion, pspdat
-    2    1    1    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
- rloc=   0.4500000
-  cc1=  -6.8340578; cc2=   0.0000000; cc3=   0.0000000; cc4=   0.0000000
-  rrs=   0.4654363; h1s=   2.8140777; h2s=   1.9395165
-  rrp=   0.5462433; h1p=   1.9160118
--  Local part computed in reciprocal space.
-
- pspatm : COMMENT -
-  the projectors are not normalized,
-  so that the KB energies are not consistent with 
-  definition in PRB44, 8503 (1991). 
-  However, this does not influence the results obtained hereafter.
- pspatm: epsatm=   -5.99108991
-         --- l  ekb(1:nproj) --&gt;
-             0    1.005823    0.184862
-             1    0.220213
- pspatm: atomic psp has been read  and splines computed
-
-  -1.79732697E+01                                ecore*ucvol(ha*bohr**3)
---------------------------------------------------------------------------------
-
-P newkpt: treating      4 bands with npw=     162 for ikpt=   1 by node    0
-P newkpt: treating      4 bands with npw=     171 for ikpt=   2 by node    0
-_setup2: Arith. and geom. avg. npw (full set) are     168.750     168.704
-
-================================================================================
-
-     iter   Etot(hartree)      deltaE(h)  residm     vres2
-
- ETOT  1  -2.0914869216722    -2.091E+00 2.467E-02 7.984E-01
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33435   Average Vxc (hartree)=  -0.34518
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00409    0.47540    0.75394    0.76724
-      occupation numbers for kpt#   1
-   2.00000    0.00071    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15864    0.31874    0.48330    0.61039
-      occupation numbers for kpt#   2
-   2.00003    1.33274    0.00033    0.00000
- Fermi (or HOMO) energy (eV) =   9.09803   Average Vxc (eV)=  -9.39276
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.11120   12.93623   20.51566   20.87769
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31684    8.67326   13.15134   16.60948
-
- ETOT  2  -2.0923561480786    -8.692E-04 1.292E-05 1.729E-02
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33409   Average Vxc (hartree)=  -0.34514
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00444    0.47492    0.75140    0.75140
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15873    0.31848    0.48264    0.60545
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00034    0.00000
- Fermi (or HOMO) energy (eV) =   9.09114   Average Vxc (eV)=  -9.39180
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12075   12.92332   20.44656   20.44659
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31931    8.66639   13.13321   16.47505
-
- ETOT  3  -2.0923617905078    -5.642E-06 1.356E-06 2.218E-05
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33383   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00467    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15851    0.31822    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08406   Average Vxc (eV)=  -9.39148
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12697   12.91495   20.42873   20.42873
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31332    8.65931   13.12398   16.45908
-
- ETOT  4  -2.0923618037753    -1.327E-08 4.874E-08 2.236E-07
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08416   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12680   12.91501   20.42863   20.42863
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31347    8.65941   13.12416   16.45898
-
- ETOT  5  -2.0923618038789    -1.036E-10 4.143E-09 3.511E-09
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08417   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91500   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65941   13.12417   16.45897
-
- ETOT  6  -2.0923618038809    -1.932E-12 1.830E-10 1.588E-11
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08417   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91500   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65941   13.12417   16.45897
-
- ETOT  7  -2.0923618038809    -1.110E-14 1.440E-11 4.164E-14
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08417   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91500   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65941   13.12417   16.45897
-
- ETOT  8  -2.0923618038809     1.643E-14 6.632E-13 6.037E-16
-
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08417   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91500   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65941   13.12417   16.45897
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.44934159E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.44934159E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.44934159E-05  sigma(2 1)=  0.00000000E+00
-
-
- scprqt:  WARNING -
-  nstep=    8 was not enough SCF cycles to converge;
-  maximum residual=  6.632E-13 exceeds tolwfr=  1.000E-16
-
- Integrated electronic density in atomic spheres:
- ------------------------------------------------
- Atom  Sphere_radius  Integrated_density
-    1        2.00000          0.91128568
-================================================================================
-
- ----iterations are completed or convergence reached----
-
- Mean square residual over all n,k,spin=   8.2934E-14; max=  6.6323E-13
-   0.2500  0.2500  0.2500    1  6.65690E-17 kpt; spin; max resid(k); each band:
-  6.66E-17 3.85E-17 6.25E-17 4.33E-17
-   0.2500  0.5000  0.5000    1  6.63231E-13 kpt; spin; max resid(k); each band:
-  6.32E-18 1.31E-17 1.37E-17 6.63E-13
- reduced coordinates (array xred) for    1 atoms
-       0.000000000000      0.000000000000      0.000000000000
- rms dE/dt=  0.0000E+00; max dE/dt=  0.0000E+00; dE/dt below (all hartree)
-    1       0.000000000000      0.000000000000      0.000000000000
-
- cartesian coordinates (angstrom) at end:
-    1      0.00000000000000     0.00000000000000     0.00000000000000
-
- cartesian forces (hartree/bohr) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 h/b
-
- cartesian forces (eV/Angstrom) at end:
-    1     -0.00000000000000    -0.00000000000000    -0.00000000000000
- frms,max,avg= 0.0000000E+00 0.0000000E+00   0.000E+00  0.000E+00  0.000E+00 e/A
- length scales=  7.600000000000  7.600000000000  7.600000000000 bohr
-              =  4.021746785284  4.021746785284  4.021746785284 angstroms
- prteigrs : about to open file t02o_EIG
- Fermi (or HOMO) energy (hartree) =   0.33384   Average Vxc (hartree)=  -0.34513
- Eigenvalues (hartree) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.00466    0.47462    0.75074    0.75074
-      occupation numbers for kpt#   1
-   2.00000    0.00073    0.00000    0.00000
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   0.15852    0.31823    0.48230    0.60486
-      occupation numbers for kpt#   2
-   2.00003    1.33271    0.00035    0.00000
- Fermi (or HOMO) energy (eV) =   9.08417   Average Vxc (eV)=  -9.39145
- Eigenvalues (   eV  ) for nkpt=   2  k points:
- kpt#   1, nband=  4, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
-  -0.12679   12.91500   20.42861   20.42861
- kpt#   2, nband=  4, wtk=  0.75000, kpt=  0.2500  0.5000  0.5000 (reduced coord)
-   4.31348    8.65941   13.12417   16.45897
- Total charge density [el/Bohr^3]
-      Maximum=    3.2763E-02  at reduced coord.    0.0625    0.2500    0.6250
- Next maximum=    3.2763E-02  at reduced coord.    0.2500    0.0625    0.6250
-      Minimum=    7.7376E-05  at reduced coord.    0.0000    0.0000    0.0000
- Next minimum=    1.0523E-03  at reduced coord.    0.0625    0.0000    0.0000
-   Integrated=    3.0000E+00
-
---------------------------------------------------------------------------------
- Components of total free energy (in Hartree) :
-
-    Kinetic energy  =  8.94098131543713E-01
-    Hartree energy  =  4.31013128046287E-03
-    XC energy       = -8.05667528453190E-01
-    Ewald energy    = -2.71472096493581E+00
-    PspCore energy  = -1.63774509167489E-01
-    Loc. psp. energy=  3.24091354018835E-01
-    NL   psp  energy=  3.76614345530259E-01
-    &gt;&gt;&gt;&gt;&gt; Internal E= -2.08504904018322E+00
-
-    -kT*entropy     = -7.31276369764228E-03
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -2.09236180388086E+00
-
- Other information on the energy :
-    Total energy(eV)= -5.69360602194042E+01 ; Band energy (Ha)=   5.5374128613E-01
---------------------------------------------------------------------------------
-
-          ===&gt; extra information on forces &lt;===
- ewald contribution to reduced grads
-    1       0.000000000000      0.000000000000     -0.000000000000
- nonlocal contribution to red. grads
-    1      -0.000000000000     -0.000000000000      0.000000000000
- local psp contribution to red. grads
-    1      -0.000000000000     -0.000000000000      0.000000000000
- residual contribution to red. grads
-    1       0.000000000000      0.000000000000      0.000000000000
-
- Cartesian components of stress tensor (hartree/bohr^3)
-  sigma(1 1)= -1.44934159E-05  sigma(3 2)=  0.00000000E+00
-  sigma(2 2)= -1.44934159E-05  sigma(3 1)=  0.00000000E+00
-  sigma(3 3)= -1.44934159E-05  sigma(2 1)=  0.00000000E+00
-
--Cartesian components of stress tensor (GPa)         [Pressure=  4.2641E-01 GPa]
-- sigma(1 1)= -4.26410946E-01  sigma(3 2)=  0.00000000E+00
-- sigma(2 2)= -4.26410946E-01  sigma(3 1)=  0.00000000E+00
-- sigma(3 3)= -4.26410946E-01  sigma(2 1)=  0.00000000E+00
-
-== END DATASET(S) ==============================================================
-================================================================================
-
- -outvars: echo values of variables after computation  --------
-            acell      7.6000000000E+00  7.6000000000E+00  7.6000000000E+00 Bohr
-              amu      2.69815390E+01
-             ecut      1.00000000E+01 Hartree
-           enunit           2
-           etotal     -2.0923618039E+00
-            fcart     -0.0000000000E+00 -0.0000000000E+00 -0.0000000000E+00
--          fftalg         312
-            intxc           1
-              kpt      1.00000000E+00  1.00000000E+00  1.00000000E+00
-                       1.00000000E+00  2.00000000E+00  2.00000000E+00
-           kptnrm      4.00000000E+00
-           kptopt           0
-P           mkmem           2
-            natom           1
-            nband           4
-            ngfft          16      16      16
-             nkpt           2
-            nline           3
-            nstep           8
-             nsym          24
-           ntypat           1
-              occ      2.000000  0.000729  0.000000  0.000000
-                       2.000033  1.332711  0.000346  0.000000
-           occopt           5
-           prtvol          10
-            rprim      0.0000000000E+00  5.0000000000E-01  5.0000000000E-01
-                       5.0000000000E-01  0.0000000000E+00  5.0000000000E-01
-                       5.0000000000E-01  5.0000000000E-01  0.0000000000E+00
-          spgroup         216
-           strten     -1.4493415911E-05 -1.4493415911E-05 -1.4493415911E-05
-                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-           symrel      1  0  0   0  1  0   0  0  1       0  1 -1   1  0 -1   0  0 -1
-                      -1  0  0  -1  0  1  -1  1  0       0 -1  1   0 -1  0   1 -1  0
-                      -1  0  1  -1  0  0  -1  1  0       0 -1  0   0 -1  1   1 -1  0
-                       0 -1  1   1 -1  0   0 -1  0       0  1 -1   0  0 -1   1  0 -1
-                       0  0 -1   1  0 -1   0  1 -1      -1  1  0  -1  0  1  -1  0  0
-                       1  0 -1   0  1 -1   0  0 -1       1 -1  0   0 -1  0   0 -1  1
-                      -1  0  0  -1  1  0  -1  0  1       0  1  0   1  0  0   0  0  1
-                       0  0  1   0  1  0   1  0  0       1  0  0   0  0  1   0  1  0
-                       0  0  1   1  0  0   0  1  0       0  1  0   0  0  1   1  0  0
-                      -1  0  1  -1  1  0  -1  0  0       0  0 -1   0  1 -1   1  0 -1
-                       1  0 -1   0  0 -1   0  1 -1       1 -1  0   0 -1  1   0 -1  0
-                       0 -1  0   1 -1  0   0 -1  1      -1  1  0  -1  0  0  -1  0  1
-           tolwfr      1.00000000E-16
-           tsmear      5.00000000E-02 Hartree
-            typat      1
-              wtk        0.25000    0.75000
-            znucl       13.00000
-
-================================================================================
-
-
-- Timing analysis has been suppressed with timopt=0
-
-
-
-================================================================================
-
- Suggested references for the acknowledgment of ABINIT usage.
-
- The users of ABINIT have little formal obligations with respect to the ABINIT group
- (those specified in the GNU General Public License, http://www.gnu.org/copyleft/gpl.txt).
- However, it is common practice in the scientific literature,
- to acknowledge the efforts of people that have made the research possible.
- In this spirit, please find below suggested citations of work written by ABINIT developers,
- corresponding to implementations inside of ABINIT that you have used in the present run.
- Note also that it will be of great value to readers of publications presenting these results,
- to read papers enabling them to understand the theoretical formalism and details
- of the ABINIT implementation.
- For information on why they are suggested, see also http://www.abinit.org/about/?text=acknowledgments.
--
-- [1] ABINIT : First-principles approach of materials and nanosystem properties.
-- X. Gonze, B. Amadon, P.-M. Anglade, J.-M. Beuken, F. Bottin, P. Boulanger, F. Bruneval,
-- D. Caliste, R. Caracas, M. Cote, T. Deutsch, L. Genovese, Ph. Ghosez, M. Giantomassi
-- S. Goedecker, D.R. Hamann, P. Hermet, F. Jollet, G. Jomard, S. Leroux, M. Mancini, S. Mazevet,
-- M.J.T. Oliveira, G. Onida, Y. Pouillon, T. Rangel, G.-M. Rignanese, D. Sangalli, R. Shaltaf,
-- M. Torrent, M.J. Verstraete, G. Zerah, J.W. Zwanziger
-- Computer Phys. Comm. 180, 2582-2615 (2009).
-- Comment : the third generic paper describing the ABINIT project.
-- Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
-- is available at http://www.abinit.org/about/ABINIT_CPC_v10.pdf .
-- The licence allows the authors to put it on the Web.
--
-- [2] A brief introduction to the ABINIT software package.
-- X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet,
-- M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval,
-- L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan.
-- Z. Kristallogr. 220, 558-562 (2005).
-- Comment : the second generic paper describing the ABINIT project. Note that this paper
-- should be cited especially if you are using the GW part of ABINIT, as several authors
-- of this part are not in the list of authors of the first or third paper.
-- The .pdf of the latter paper is available at http://www.abinit.org/about/zfk_0505-06_558-562.pdf.
-- Note that it should not redistributed (Copyright by Oldenburg Wissenshaftverlag,
-- the licence allows the authors to put it on the Web).
--
-- And optionally:
--
-- [3] First-principles computation of material properties : the ABINIT software project. 
-- X. Gonze, J.-M. Beuken, R. Caracas, F. Detraux, M. Fuchs, G.-M. Rignanese, L. Sindic,
-- M. Verstraete, G. Zerah, F. Jollet, M. Torrent, A. Roy, M. Mikami, Ph. Ghosez, J.-Y. Raty, D.C. Allan.
-- Computational Materials Science 25, 478-492 (2002). http://dx.doi.org/10.1016/S0927-0256(02)00325-7
-- Comment : the original paper describing the ABINIT project.
--
-- [4] Fast radix 2, 3, 4 and 5 kernels for Fast Fourier Transformations
-- on computers with overlapping multiply-add instructions.
-- S. Goedecker, SIAM J. on Scientific Computing 18, 1605 (1997).
--
-- Proc.   0 individual time (sec): cpu=          0.7  wall=          0.3
-
-================================================================================
-
- Calculation completed.
-.Delivered   1 WARNINGs and   2 COMMENTs to log file.
-+Overall time at end (sec) : cpu=          0.7  wall=          0.3
-</div></div></div> </div>
-
-<p>Table</p>
-<table>
-<thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-<tr>
-<td>Content Cell</td>
-<td>Content Cell</td>
-</tr>
-</tbody>
-</table>
-<p>Here's a simple Plotly plot - <a href="https://bit.ly/1Or9igj">plotly.js documentation</a></p>
-
-<!-- Plots go in blank <div> elements. 
-    You can size them in the plot layout, or give the div a size as shown here.
--->
-
-<div id="plotly_plot" style="width:90%;height:250px;"></div>
-
-<script>
-$(function() {
-    Plotly.plot(document.getElementById('plotly_plot'), [{
-        x: [1, 2, 3, 4, 5],
-        y: [1, 2, 4, 8, 16] }], 
-        {margin: {t: 0}} 
-    );
-});
-</script>
-
-<div id="d9605599-cb1c-4129-8b19-17ce6aba5726" style="height: 480px; width: 640px;" class="plotly-graph-div"></div>
-
-<script type="text/javascript">
-$(function() {
-window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("d9605599-cb1c-4129-8b19-17ce6aba5726", [{"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-9.535926813037863, -9.876226298320375, -10.502626380975554, -11.072275270653648, -11.500111086492925, -11.762235917752008, -11.855994211486859, -11.76251819341731, -11.504916691387299, -11.070253355567209, -10.472515698483473, -9.71204808431639, -8.806419420709936, -7.770857742644391], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-6.932409107339495, -6.434802934828302, -5.322605919575588, -3.9285157520893517, -2.3945043688503773, -0.8733724958309406, -0.00014030772164197458, -0.5571414588100456, -1.6673511132234293, -2.899043741948111, -4.183072223655675, -5.430789440546145, -6.638317765955847, -7.770857742385957], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-1.2052164496157305, -1.1554489594350494, -1.0092171418411153, -0.7665270717175385, -0.4528182065705968, -0.1428083923944694, -0.00014030759373184765, -0.3277545491196321, -0.9723569008401443, -1.6065630675314715, -2.136905062657105, -2.5280226397179906, -2.7655709939700346, -2.8450316563515354], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [-1.205216449452264, -1.1554489592807489, -1.0092171416994509, -0.766527071585184, -0.4528182064492583, -0.14280839226344, -0.00014030753353200254, -0.3277545490275573, -0.9723569007113824, -1.606563067405498, -2.136905062531706, -2.5280226395887833, -2.7655709938391246, -2.8450316562198195], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [1.3452986249904786, 1.3958960083306966, 1.554143482033659, 1.8234355899681942, 2.1778240885941402, 2.4977796128290306, 2.5316876738983813, 2.319469275580544, 1.8326610232363585, 1.3141284521215777, 0.8826582161745025, 0.6005397907672814, 0.5241993687224857, 0.6740354382714466], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [3.3660083208212663, 3.412354076289877, 3.505815644595171, 3.4859551031061207, 3.180459228387515, 2.7429763968895218, 2.53168767399785, 2.973060435992415, 3.924172942325165, 3.566106899388532, 2.562611320842353, 1.690136780454158, 1.0555238517809453, 0.6740354390091046], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [3.3660083208735943, 3.412354076350133, 3.505815644666348, 3.485955103188201, 3.180459228480861, 2.7429763970025123, 2.531687674066167, 2.9730604361332746, 3.9241729424268685, 5.0785623964957916, 6.285164566512434, 7.570141740247583, 8.869464699917046, 9.764008865347613], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}, {"type": "scatter", "mode": "lines", "name": "_no_legend_", "x": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0], "y": [7.486356378802683, 7.55668857436073, 7.557830014133407, 6.52220627429504, 5.08025478643014, 3.6442503425509143, 2.895269759022862, 3.4202361151243847, 4.0978111233925025, 5.078562399289727, 6.2851656462748275, 7.570142181409012, 8.869464784778696, 9.76406100597167], "xaxis": "x1", "yaxis": "y1", "line": {"color": "rgba (0, 0, 0, 1)", "width": 2.0, "dash": "solid"}}], {"width": 640, "height": 480, "autosize": false, "hovermode": "closest", "margin": {"l": 80, "r": 63, "t": 57, "b": 52, "pad": 0}, "xaxis1": {"anchor": "y1", "zeroline": false, "ticks": "inside", "type": "linear", "range": [0.0, 13.0], "showgrid": true, "domain": [0.0, 1.0], "side": "bottom", "tickfont": {"size": 12.0}, "tick0": 0, "dtick": 6, "tickmode": false, "mirror": "ticks", "showline": true}, "yaxis1": {"anchor": "x1", "zeroline": false, "ticks": "inside", "type": "linear", "range": [-12.936996972359786, 10.845063766844596], "showgrid": true, "domain": [0.0, 1.0], "side": "left", "tickfont": {"size": 10.0}, "nticks": 7, "mirror": "ticks", "showline": true, "title": "Energy [eV]", "titlefont": {"size": 10.0, "color": "#000000"}}, "showlegend": false}, {"showLink": true, "linkText": "Export to plot.ly"})
-});
-</script>
-
-<hr />
-<h3 id="146-introduction"><strong>1. Introduction</strong><a class="headerlink" href="#146-introduction" title="Permanent link">&para;</a></h3>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
-      <div class="carousel-caption">
-        <h3>Unconverged BSE optical spectrum</h3>
-        <!-- <p>LA is always so much fun!</p> -->
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
-      <div class="carousel-caption">
-        <h3>Convergengeof BSE optical spectrum wrt k-point sampling</h3>
-        <!-- <p>Thank you, Chicago!</p> -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
 <p>ABINIT is a package whose main program allows to find the total energy, charge
 density and electronic structure of systems made of electrons and nuclei
 (molecules and periodic solids) within Density Functional Theory, using
@@ -3322,7 +739,7 @@ unpacked it and installed it. If not, you might nevertheless continue reading
 the present Web page, just to get an overview, but it might prove more
 fruitful to have first downloaded the ABINIT package and at least unpacked it,
 see the <a href="http://www.abinit.org/installation">installation notes</a>.</p>
-<p>We will use the name &ldquo;~abinit&rdquo; to refer to the directory that contains the
+<p>We will use the name "~abinit" to refer to the directory that contains the
 ABINIT package after download. In practice, a version number is appended to
 this name, to give for example : abinit-8.4.0 . The ABINIT package versioning
 scheme is explained later in this file.</p>
@@ -3344,7 +761,7 @@ installation).</p>
 <p>With these items a job can be run.</p>
 <p>The full list of input variables, all of which are provided in the single
 input file, is given in the ABINIT <a class="wikilink" href="./allvariables/">allvariables</a>.<br />
-The detailed description of input variables is given in many &ldquo;VAR*&rdquo; files,
+The detailed description of input variables is given in many "VAR*" files,
 including:</p>
 <ul>
 <li>Basic variables, <a class="wikilink" href="./varbas/">varbas</a></li>
@@ -3353,13 +770,13 @@ including:</p>
 <li>Files handling variables, <a class="wikilink" href="./varfil/">varfil</a></li>
 <li>Parallelisation variables, <a class="wikilink" href="./varpar/">varpar</a></li>
 <li>Response Function variables, <a class="wikilink" href="./varrf/">varrf</a></li>
-<li>&hellip; </li>
+<li>... </li>
 </ul>
 <p>A set of examples aimed at guiding the beginner is available in the tutorial
 (<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>).</p>
 <p>Other test cases (more than 800 input files) can be found in the ~abinit/test
-subdirectories, e.g. &ldquo;fast&rdquo;, the &ldquo;vX&rdquo; series (v1, v2, &hellip; v67mbpt, v7, v8),
-&ldquo;libxc&rdquo;, &ldquo;paral&rdquo;, the &ldquo;tutoX&rdquo; series &hellip;</p>
+subdirectories, e.g. "fast", the "vX" series (v1, v2, ... v67mbpt, v7, v8),
+"libxc", "paral", the "tutoX" series ...</p>
 <p>Many different sorts of pseudopotentials can be used with ABINIT. Most of them
 can be found on the <a href="http://www.abinit.org/downloads/atomic-data-files">atomic data
 files</a> page of the ABINIT
@@ -3377,10 +794,10 @@ package.</p>
 their sources is also in ~abinit/src/98_main .<br />
 These include : <strong>mrgddb</strong>, <strong>anaddb</strong>, <strong>aim</strong>, <strong>conducti</strong>, <strong>optics</strong>,
 <strong>mrgscr</strong>, <strong>cut3d</strong>, and <strong>fold2Bloch</strong>.</p>
-<p><strong>mrgddb</strong> and <strong>anaddb</strong> allow to post-process responses to atomic displacements and/or to homogeneous electric field, and/or to strain perturbation, as generated by abinit, to produce full phonon band structures, thermodynamical functions, piezoelectric properties, superconducting properties, to name a few. &ldquo;mrgddb&rdquo; is for &ldquo;Merge of Derivative DataBases&rdquo;, while &ldquo;anaddb&rdquo; is for &ldquo;Analysis of Derivative DataBases&rdquo;. </p>
-<p><strong>cut3d</strong> can be used to post-process the three-dimensional density (or potential) files generated by abinit. It allows one to deduce charge density in selected planes (for isodensity plots), along selected lines, or at selected points. It allows one also to make the Hirshfeld decomposition of the charge density in &ldquo;atomic&rdquo; contributions. </p>
+<p><strong>mrgddb</strong> and <strong>anaddb</strong> allow to post-process responses to atomic displacements and/or to homogeneous electric field, and/or to strain perturbation, as generated by abinit, to produce full phonon band structures, thermodynamical functions, piezoelectric properties, superconducting properties, to name a few. "mrgddb" is for "Merge of Derivative DataBases", while "anaddb" is for "Analysis of Derivative DataBases". </p>
+<p><strong>cut3d</strong> can be used to post-process the three-dimensional density (or potential) files generated by abinit. It allows one to deduce charge density in selected planes (for isodensity plots), along selected lines, or at selected points. It allows one also to make the Hirshfeld decomposition of the charge density in "atomic" contributions. </p>
 <p><strong>fold2Bloch</strong> is used for unfolding of first-principle electronic band structure obtained with ABINIT code. </p>
-<p><strong>aim</strong> is also a post-processor of the three-dimensional density files generated by abinit. It performs the Bader Atom-In-Molecule decomposition of the charge density in &ldquo;atomic&rdquo; contributions. </p>
+<p><strong>aim</strong> is also a post-processor of the three-dimensional density files generated by abinit. It performs the Bader Atom-In-Molecule decomposition of the charge density in "atomic" contributions. </p>
 <p><strong>conducti</strong> allows one to compute the frequency-dependent optical conductivity. </p>
 <p>Some utility programs are not written in F90, but in Python. They are
 contained in ~abinit/scripts, where post-processing (numerous tools) and pre-
@@ -3406,82 +823,72 @@ community through the ABINIT packages, portal and Github, many ABINIT-
 independent commercial or free applications can be used to visualize ABINIT
 outputs or interact with ABINIT. We provide a (not very well maintained) list
 of links in <a href="http://www.abinit.org/community/links">http://www.abinit.org/community/links</a>. Of course, you might get
-more by browsing the Web&hellip;</p>
+more by browsing the Web...</p>
 <hr />
 <h3 id="546-input-variables-to-abinit"><strong>5. Input variables to abinit.</strong><a class="headerlink" href="#546-input-variables-to-abinit" title="Permanent link">&para;</a></h3>
 <p>As an overview, the most important input variables, to be provided in the
 input file, are listed below:</p>
 <p>Specification of the geometry of the problem, and types of atoms :</p>
-<dl>
-<dt><a class="wikilink" href="./input_variables/varbas/#natom">natom</a></dt>
-<dd>total number of atoms in unit cell</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#ntypat">ntypat</a></dt>
-<dd>number of types of atoms</dd>
-</dl>
+<p><a class="wikilink" href="./input_variables/basic/#natom">natom</a>
+: total number of atoms in unit cell</p>
+<p><a class="wikilink" href="./input_variables/basic/#ntypat">ntypat</a>
+: number of types of atoms</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>the atomic coordinates (<a class="wikilink" href="./input_variables/varbas/#xangst">xangst</a>, <a class="wikilink" href="./input_variables/varbas/#xcart">xcart</a> or <a class="wikilink" href="./input_variables/varbas/#xred">xred</a>)
+<p>the atomic coordinates (<a class="wikilink" href="./input_variables/basic/#xangst">xangst</a>, <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> or <a class="wikilink" href="./input_variables/basic/#xred">xred</a>)
 must be specified in the same order</p>
 </div>
-<dl>
-<dt><a class="wikilink" href="./input_variables/varbas/#rprim">rprim</a> (3,3)</dt>
-<dd>unscaled primitive translations of periodic cell;
-  each COLUMN of this array is one primitive translation</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#xangst">xangst</a> (3,<a class="wikilink" href="./input_variables/varbas/#natom">natom</a>)</dt>
-<dd>cartesian coordinates (Angstrom) of atoms in unit cell
-  NOTE: only used when <a class="wikilink" href="./input_variables/varbas/#xred">xred</a> and <a class="wikilink" href="./input_variables/varbas/#xcart">xcart</a> are absent</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#xcart">xcart</a> (3,<a class="wikilink" href="./input_variables/varbas/#natom">natom</a>)</dt>
-<dd>cartesian coordinates (Bohr) of atoms in unit cell
-  NOTE: only used when <a class="wikilink" href="./input_variables/varbas/#xred">xred</a> and <a class="wikilink" href="./input_variables/varbas/#xangst">xangst</a> are absent</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#xred">xred</a> (3,<a class="wikilink" href="./input_variables/varbas/#natom">natom</a>)</dt>
-<dd>fractional coordinates for atomic locations;
-  NOTE: leave out if <a class="wikilink" href="./input_variables/varbas/#xangst">xangst</a> or <a class="wikilink" href="./input_variables/varbas/#xcart">xcart</a> is used</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#znucl">znucl</a> (<a class="wikilink" href="./input_variables/varbas/#ntypat">ntypat</a>)</dt>
-<dd>Nuclear charge of each type of element; must agree with
-  nuclear charge found in psp file.</dd>
-</dl>
+<p><a class="wikilink" href="./input_variables/basic/#rprim">rprim</a> (3,3)
+: unscaled primitive translations of periodic cell;
+  each COLUMN of this array is one primitive translation</p>
+<p><a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+: cartesian coordinates (Angstrom) of atoms in unit cell
+  NOTE: only used when <a class="wikilink" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> are absent</p>
+<p><a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+: cartesian coordinates (Bohr) of atoms in unit cell
+  NOTE: only used when <a class="wikilink" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> are absent</p>
+<p><a class="wikilink" href="./input_variables/basic/#xred">xred</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+: fractional coordinates for atomic locations;
+  NOTE: leave out if <a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> or <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> is used</p>
+<p><a class="wikilink" href="./input_variables/basic/#znucl">znucl</a> (<a class="wikilink" href="./input_variables/basic/#ntypat">ntypat</a>)
+: Nuclear charge of each type of element; must agree with
+  nuclear charge found in psp file.</p>
 <p>Specification of the planewave basis set, Brillouin zone wavevector sampling, and occupation of the bands:</p>
-<dl>
-<dt><a class="wikilink" href="./input_variables/varbas/#ecut">ecut</a></dt>
-<dd>planewave kinetic energy cutoff in Hartree</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#kptopt">kptopt</a></dt>
-<dd>option for specifying the k-point grid
-  if <a class="wikilink" href="./input_variables/varbas/#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
-  (for the latter, see the <a href="./help_abinit.html">help_abinit</a> file)</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#ngkpt">ngkpt</a> (3)</dt>
-<dd>dimensions of the three-dimensional grid of k-points</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#occopt">occopt</a></dt>
-<dd>set the occupation of electronic levels:
-=1 for semiconductors
-=3 &hellip; 7  for metals</dd>
-</dl>
+<p><a class="wikilink" href="./input_variables/basic/#ecut">ecut</a>
+: planewave kinetic energy cutoff in Hartree</p>
+<p><a class="wikilink" href="./input_variables/basic/#kptopt">kptopt</a>
+: option for specifying the k-point grid
+  if <a class="wikilink" href="./input_variables/basic/#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
+  (for the latter, see the <a href="./help_abinit.html">help_abinit</a> file)</p>
+<p><a class="wikilink" href="./input_variables/basic/#ngkpt">ngkpt</a> (3)
+: dimensions of the three-dimensional grid of k-points</p>
+<p><a class="wikilink" href="./input_variables/basic/#occopt">occopt</a>
+: set the occupation of electronic levels:
+    =1 for semiconductors
+    =3 ... 7  for metals</p>
 <p>Specification of the type of calculation to be done:</p>
-<dl>
-<dt><a class="wikilink" href="./input_variables/varrlx/#ionmov">ionmov</a></dt>
-<dd>when <a class="wikilink" href="./input_variables/varrlx/#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
-              = 2 : search for the equilibrium geometry
-              = 6 : molecular dynamics</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#iscf">iscf</a></dt>
-<dd>either a positive number for defining self-consistent
-  algorithm (usual), or -2 for band structure in fixed potential</dd>
-<dt><a class="wikilink" href="./input_variables/vargs/#optdriver">optdriver</a></dt>
-<dd>when == 3 and 4 : will do GW calculations (many-body perturbation theory)</dd>
-<dt><a class="wikilink" href="./input_variables/varrf/#rfelfd">rfelfd</a></dt>
-<dd>when /= 0 : will do response calculation to electric field</dd>
-<dt><a class="wikilink" href="./input_variables/varrf/#rfphon">rfphon</a></dt>
-<dd>when = 1 : will do response calculation to atomic displacements</dd>
-</dl>
+<p><a class="wikilink" href="./input_variables/rlx/#ionmov">ionmov</a>
+: when <a class="wikilink" href="./input_variables/rlx/#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
+                  = 2 : search for the equilibrium geometry
+                  = 6 : molecular dynamics</p>
+<p><a class="wikilink" href="./input_variables/basic/#iscf">iscf</a>
+: either a positive number for defining self-consistent
+  algorithm (usual), or -2 for band structure in fixed potential</p>
+<p><a class="wikilink" href="./input_variables/gstate/#optdriver">optdriver</a>
+: when == 3 and 4 : will do GW calculations (many-body perturbation theory)</p>
+<p><a class="wikilink" href="./input_variables/dfpt/#rfelfd">rfelfd</a>
+: when /= 0 : will do response calculation to electric field</p>
+<p><a class="wikilink" href="./input_variables/dfpt/#rfphon">rfphon</a>
+: when = 1 : will do response calculation to atomic displacements</p>
 <p>Specification of the numerical convergency of the calculation:</p>
-<dl>
-<dt><a class="wikilink" href="./input_variables/varbas/#nstep">nstep</a></dt>
-<dd>maximal number of self-consistent cycles (on the order of 20)</dd>
-<dt><a class="wikilink" href="./input_variables/varbas/#tolvrs">tolvrs</a></dt>
-<dd>tolerance on self-consistent convergence</dd>
-<dt><a class="wikilink" href="./input_variables/varrlx/#ntime">ntime</a></dt>
-<dd>number of molecular dynamics or relaxation steps</dd>
-<dt><a class="wikilink" href="./input_variables/varrlx/#tolmxf">tolmxf</a></dt>
-<dd>force tolerance for structural relaxation in Hartree/Bohr</dd>
-</dl>
+<p><a class="wikilink" href="./input_variables/basic/#nstep">nstep</a>
+: maximal number of self-consistent cycles (on the order of 20)</p>
+<p><a class="wikilink" href="./input_variables/basic/#tolvrs">tolvrs</a>
+: tolerance on self-consistent convergence</p>
+<p><a class="wikilink" href="./input_variables/rlx/#ntime">ntime</a>
+: number of molecular dynamics or relaxation steps</p>
+<p><a class="wikilink" href="./input_variables/rlx/#tolmxf">tolmxf</a>
+: force tolerance for structural relaxation in Hartree/Bohr</p>
 <hr />
 <h3 id="646-output-files"><strong> 6. Output files.</strong><a class="headerlink" href="#646-output-files" title="Permanent link">&para;</a></h3>
 <p>Output from an abinit run shows up in several files and in the standard
@@ -3489,7 +896,7 @@ output. Usually one runs the command with a pipe of standard output to a log
 file, which can be inspected for warnings or error messages if anything goes
 wrong or otherwise can be discarded at the end of a run. The more easily
 readable formatted output goes to the output file whose name is given in the
-&ldquo;files&rdquo; file, i.e. you provide the name of the formatted output file. No error
+"files" file, i.e. you provide the name of the formatted output file. No error
 message is reported in the latter file. On the other hand, this is the file
 that is usually kept for archival purposes.</p>
 <p>In addition, wavefunctions can be input (starting point) or output (result of
@@ -3499,13 +906,13 @@ unformatted files.<br />
 The Density Of States (DOS) can also be an output as a formatted (readable)
 file.<br />
 An analysis of geometry can also be provided (GEO file)<br />
-The name of these files is constructed from a &ldquo;root&rdquo; name, that must be
+The name of these files is constructed from a "root" name, that must be
 different for input files and output files, and that is provided by the user,
 to which the code will append a descriptor, like WFK for wavefunctions, DEN
-for the density, POT for the potential, DOS for the density of states &hellip;</p>
-<p>There are also different temporary files. A &ldquo;root&rdquo; name should be provided by
+for the density, POT for the potential, DOS for the density of states ...</p>
+<p>There are also different temporary files. A "root" name should be provided by
 the user, from which the code generates a full name. Amongst these files,
-there is a &ldquo;status&rdquo; file, summarizing the current status of advancement of the
+there is a "status" file, summarizing the current status of advancement of the
 code, in long jobs. The <a href="./help_abinit.html">ABINIT help file</a> contains more details.</p>
 <hr />
 <h3 id="746-what-does-the-code-do"><strong> 7. What does the code do?</strong><a class="headerlink" href="#746-what-does-the-code-do" title="Permanent link">&para;</a></h3>
@@ -3525,49 +932,40 @@ code can optionally adjust atomic positions to move the forces toward zero and
 adjust unit cell parameters to move toward zero stress. It can performs
 molecular dynamics. It can also be used to find responses to atomic
 displacements and homogeneous electric field, so that the full phonon band
-structure can be constructed&hellip;</p>
+structure can be constructed...</p>
 <hr />
 <h3 id="846-versioning-logic"><strong> 8. Versioning logic.</strong><a class="headerlink" href="#846-versioning-logic" title="Permanent link">&para;</a></h3>
-<p>We finish this &ldquo;new user guide&rdquo; with a brief explanation of the logic of
+<p>We finish this "new user guide" with a brief explanation of the logic of
 ABINIT version releases.</p>
 <p>The full name of a version has three digits (for example, 8.4.0). The first
 digit is the slowly varying one (in average, it is changed after two or three
 years). It indicates the major efforts and trends in that version. At the
 level of 1.x.y ABINIT (before 2000 !), the major effort was placed on the
-&ldquo;ground-state&rdquo; properties (total energy, forces, geometry optimisation,
-molecular dynamics &hellip;). With version 2.x.y , response-function features
+"ground-state" properties (total energy, forces, geometry optimisation,
+molecular dynamics ...). With version 2.x.y , response-function features
 (phonons, dielectric response, effective charges, interatomic force constants
-&hellip;) were included. The main additional characteristics of version 3.x.y were
+...) were included. The main additional characteristics of version 3.x.y were
 the distribution under the GNU General Public Licence, the set-up of the
 documentation and help to the user through the Web site in html format, and
 the availability of GW capabilities. The version 4.x.y put a lot of effort in
 the speed of ABINIT (e.g. PAW), and its parallelisation. These historical
-developments explain why the tests are gathered in directories &ldquo;v1&rdquo;, &ldquo;v2&rdquo;,
-&ldquo;v3&rdquo;, etc. Every 4 to 8 months, we release a &ldquo;production version&rdquo; of ABINIT in
+developments explain why the tests are gathered in directories "v1", "v2",
+"v3", etc. Every 4 to 8 months, we release a "production version" of ABINIT in
 which the second digit, an even number, is incremented, which usually goes
 with additional features. A release notes document is issued, with the list of
 additional capabilities, and other information with respect to modifications
 with the previous release. The odd second digits are used for internal
-management only, so-called &ldquo;development versions&rdquo; of ABINIT (for example
+management only, so-called "development versions" of ABINIT (for example
 8.5.0). Two versions differing by the last (third) digit have the same
 capabilities, but the one with the largest last digit is more debugged than
 the other : version 8.4.1 is more debugged than 8.4.0, but no new features has
 been added (so likely, no additional bug!).</p>
 <hr />
 <p>In order to start using ABINIT, please follow the tutorial
-(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>)</p>
-                
-                  
-                
-              
-              
-                
-              
-            </article>
-          </div>
+(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>)</p></div>
         </div>
-      </main>
-      
+
+        <footer class="col-md-12">
 <hr>
 
     <center>Abinit version 8.5.4</center>
@@ -3577,22 +975,33 @@ been added (so likely, no additional bug!).</p>
 
 
 <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
-    </div>
-    
-      <script src="./assets/javascripts/application-c35428f87f.js"></script>
-      
-      
-      <script>app.initialize({url:{base:"."}})</script>
-      
+        </footer>
+        <script>var base_url = '.';</script>
+        <!--
+        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+        -->
+        <script src="./js/base.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
-      
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      
         <script src="./extra_javascript/abidocs.js"></script>
-      
-    
-    
-      
-    
-  </body>
+
+    <!--<script>var base_url = '.';</script>
+<script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
 </html>
+
+<!--
+MkDocs version : 0.16.3
+Build Date UTC : 2017-08-20 15:22:24
+-->

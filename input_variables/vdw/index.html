@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="The Abinit group">
+        <link rel="canonical" href="http://www.abinit.org/input_variables/vdw/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>VdW - abinit</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/codehilite.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    -->
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <!-- Optional theme
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified JavaScript
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers
+    http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+ 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">abinit</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_what_ABINIT_does/">Overview</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_abinit/">Abinit</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_mrgddb/">Mrgddb</a>
+</li>
+                            
+<li >
+    <a href="../../user-guide/help_optic/">Optic</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../topics/">Complete List</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Artificial/">Artificial</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomManipulator/">AtomManipulator</a>
+</li>
+                            
+<li >
+    <a href="../../topics/AtomTypes/">AtomTypes</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Bader/">Bader</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BandOcc/">BandOcc</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Berry/">Berry</a>
+</li>
+                            
+<li >
+    <a href="../../topics/BSE/">BSE</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ConstrainedPol/">ConstrainedPol</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Control/">Control</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Coulomb/">Coulomb</a>
+</li>
+                            
+<li >
+    <a href="../../topics/CRPA/">CRPA</a>
+</li>
+                            
+<li >
+    <a href="../../topics/crystal/">Crystal</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Dev/">Dev</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFPT/">DFPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DFT+U/">DFT+U</a>
+</li>
+                            
+<li >
+    <a href="../../topics/DMFT/">DMFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EffMass/">EffMass</a>
+</li>
+                            
+<li >
+    <a href="../../topics/EFG/">EFG</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Elastic/">Elastic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecBandStructure/">ElecBandStructure</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElecDOS/">ElecDOS</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonInt/">ElPhonInt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ElPhonTransport/">ElPhonTransport</a>
+</li>
+                            
+<li >
+    <a href="../../topics/ForcesStresses/">ForcesStresses</a>
+</li>
+                            
+<li >
+    <a href="../../topics/FrequencyMeshMBPT/">FrequencyMeshMBPT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoConstraints/">GeoConstraints</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GeoOpt/">GeoOpt</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GW/">GW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/GWls/">GWls</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Hybrids/">Hybrids</a>
+</li>
+                            
+<li >
+    <a href="../../topics/">Home</a>
+</li>
+                            
+<li >
+    <a href="../../topics/k-points/">K points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/LOTF/">LOTF</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagField/">MagField</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MagMom/">MagMom</a>
+</li>
+                            
+<li >
+    <a href="../../topics/MolecularDynamics/">MolecularDynamics</a>
+</li>
+                            
+<li >
+    <a href="../../topics/multidtset/">Multidtset</a>
+</li>
+                            
+<li >
+    <a href="../../topics/nonlinear/">Nonlinear</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Output/">Output</a>
+</li>
+                            
+<li >
+    <a href="../../topics/parallelism/">Parallelism</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PAW/">PAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononBands/">PhononBands</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Phonons/">Phonons</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PhononWidth/">PhononWidth</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PIMD/">PIMD</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Planewaves/">Planewaves</a>
+</li>
+                            
+<li >
+    <a href="../../topics/positron/">Positron</a>
+</li>
+                            
+<li >
+    <a href="../../topics/printing/">Printing</a>
+</li>
+                            
+<li >
+    <a href="../../topics/PseudosPAW/">PseudosPAW</a>
+</li>
+                            
+<li >
+    <a href="../../topics/q-points/">Q points</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RandStopPow/">RandStopPow</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Recursion/">Recursion</a>
+</li>
+                            
+<li >
+    <a href="../../topics/RPACorrEn/">RPACorrEn</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFAlgorithms/">SCFAlgorithms</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SCFControl/">SCFControl</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SelfEnergy/">SelfEnergy</a>
+</li>
+                            
+<li >
+    <a href="../../topics/SmartSymm/">SmartSymm</a>
+</li>
+                            
+<li >
+    <a href="../../topics/spinpolarisation/">Spinpolarisation</a>
+</li>
+                            
+<li >
+    <a href="../../topics/STM/">STM</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Susceptibility/">Susceptibility</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDDFT/">TDDFT</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TDepES/">TDepES</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Temperature/">Temperature</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TransPath/">TransPath</a>
+</li>
+                            
+<li >
+    <a href="../../topics/TuningSpeed/">TuningSpeed</a>
+</li>
+                            
+<li >
+    <a href="../../topics/UnitCell/">UnitCell</a>
+</li>
+                            
+<li >
+    <a href="../../topics/vdw/">Vdw</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wannier/">Wannier</a>
+</li>
+                            
+<li >
+    <a href="../../topics/Wavelets/">Wavelets</a>
+</li>
+                            
+<li >
+    <a href="../../topics/xc/">Xc</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Input Variables <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Abinit</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../varlist_abinit/">All Variables</a>
+</li>
+            
+<li >
+    <a href="../basic/">Basic</a>
+</li>
+            
+<li >
+    <a href="../bse/">Bethe-Salpeter</a>
+</li>
+            
+<li >
+    <a href="../dev/">Developers</a>
+</li>
+            
+<li >
+    <a href="../dmft/">DMFT</a>
+</li>
+            
+<li >
+    <a href="../eph/">Electron-Phonon</a>
+</li>
+            
+<li >
+    <a href="../ffield/">Varff</a>
+</li>
+            
+<li >
+    <a href="../files/">File-handling</a>
+</li>
+            
+<li >
+    <a href="../geo/">Geometry</a>
+</li>
+            
+<li >
+    <a href="../gstate/">Ground-State</a>
+</li>
+            
+<li >
+    <a href="../gw/">GW</a>
+</li>
+            
+<li >
+    <a href="../internal/">Internal</a>
+</li>
+            
+<li >
+    <a href="../paral/">Parallelism</a>
+</li>
+            
+<li >
+    <a href="../paw/">PAW</a>
+</li>
+            
+<li >
+    <a href="../dfpt/">DFPT</a>
+</li>
+            
+<li >
+    <a href="../rlx/">Relaxation</a>
+</li>
+            
+<li class="active">
+    <a href="./">VdW</a>
+</li>
+            
+<li >
+    <a href="../w90/">Wannier90</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../anaddb/">Anaddb</a>
+</li>
+                            
+<li >
+    <a href="../optic/">Optic</a>
+</li>
+                            
+<li >
+    <a href="../aim/">Aim</a>
+</li>
+                            
+<li >
+    <a href="../varset_stats/">Statistics</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lessons <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../tutorials/welcome/">Overview</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Base Tutorials</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/base1/">Base1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base2/">Base2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base3/">Base3</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/base4/">Base4</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">DFPT</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/rf1/">RF1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/rf2/">RF2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/elastic/">Elastic</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/eph/">EPH</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../../tutorials/dmft/">DMFT</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Many-Body</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/gw1/">GW1</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/gw2/">GW2</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/bse/">Bethe-Salpeter</a>
+</li>
+    </ul>
+  </li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Parallelism</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../tutorials/basepar/">Base</a>
+</li>
+            
+<li >
+    <a href="../../tutorials/paral_mbt/">Many-Body</a>
+</li>
+    </ul>
+  </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../theory/theory_mbt/">MBPT</a>
+</li>
+                            
+<li >
+    <a href="../../theory/additional_material/">Additional Material</a>
+</li>
+                            
+<li >
+    <a href="../../bibliography/">Bibliography</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../developers/README/">How to write docs</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about/release-notes/">Release Notes</a>
+</li>
+                            
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+                            
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../rlx/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../w90/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/abinit/abinit/">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#irdvdw">irdvdw</a></li>
+        <li class="main "><a href="#prtvdw">prtvdw</a></li>
+        <li class="main "><a href="#vdw_df_acutmin">vdw_df_acutmin</a></li>
+        <li class="main "><a href="#vdw_df_aratio">vdw_df_aratio</a></li>
+        <li class="main "><a href="#vdw_df_damax">vdw_df_damax</a></li>
+        <li class="main "><a href="#vdw_df_damin">vdw_df_damin</a></li>
+        <li class="main "><a href="#vdw_df_dcut">vdw_df_dcut</a></li>
+        <li class="main "><a href="#vdw_df_dratio">vdw_df_dratio</a></li>
+        <li class="main "><a href="#vdw_df_dsoft">vdw_df_dsoft</a></li>
+        <li class="main "><a href="#vdw_df_gcut">vdw_df_gcut</a></li>
+        <li class="main "><a href="#vdw_df_ndpts">vdw_df_ndpts</a></li>
+        <li class="main "><a href="#vdw_df_ngpts">vdw_df_ngpts</a></li>
+        <li class="main "><a href="#vdw_df_nqpts">vdw_df_nqpts</a></li>
+        <li class="main "><a href="#vdw_df_nrpts">vdw_df_nrpts</a></li>
+        <li class="main "><a href="#vdw_df_nsmooth">vdw_df_nsmooth</a></li>
+        <li class="main "><a href="#vdw_df_phisoft">vdw_df_phisoft</a></li>
+        <li class="main "><a href="#vdw_df_qcut">vdw_df_qcut</a></li>
+        <li class="main "><a href="#vdw_df_qratio">vdw_df_qratio</a></li>
+        <li class="main "><a href="#vdw_df_rcut">vdw_df_rcut</a></li>
+        <li class="main "><a href="#vdw_df_rsoft">vdw_df_rsoft</a></li>
+        <li class="main "><a href="#vdw_df_threshold">vdw_df_threshold</a></li>
+        <li class="main "><a href="#vdw_df_tolerance">vdw_df_tolerance</a></li>
+        <li class="main "><a href="#vdw_df_tweaks">vdw_df_tweaks</a></li>
+        <li class="main "><a href="#vdw_df_zab">vdw_df_zab</a></li>
+        <li class="main "><a href="#vdw_nfrag">vdw_nfrag</a></li>
+        <li class="main "><a href="#vdw_supercell">vdw_supercell</a></li>
+        <li class="main "><a href="#vdw_tol">vdw_tol</a></li>
+        <li class="main "><a href="#vdw_tol_3bt">vdw_tol_3bt</a></li>
+        <li class="main "><a href="#vdw_typfrag">vdw_typfrag</a></li>
+        <li class="main "><a href="#vdw_xc">vdw_xc</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<h2 id="irdvdw"><strong>irdvdw</strong><a class="headerlink" href="#irdvdw" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Integer that governs the ReaDing of _VDW files<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to read previously calculated vdW-DF variables.<br />
+Supported values:</p>
+<ul>
+<li>0 =&gt; do not read vdW-DF variables </li>
+<li>1 =&gt; read vdW-DF variables </li>
+</ul>
+<hr />
+<h2 id="prtvdw"><strong>prtvdw</strong><a class="headerlink" href="#prtvdw" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> PRinT Van Der Waals file<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/printing">printing</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<p>Print out a NetCDF file containing a vdW-DF kernel.</p>
+<hr />
+<h2 id="vdw_df_acutmin"><strong>vdw_df_acutmin</strong><a class="headerlink" href="#vdw_df_acutmin" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF MINimum Angular CUT-off<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 10<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_aratio"><strong>vdw_df_aratio</strong><a class="headerlink" href="#vdw_df_aratio" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Angle RATIO between the highest and
+lowest angles.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 30<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_damax"><strong>vdw_df_damax</strong><a class="headerlink" href="#vdw_df_damax" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Delta for Angles, MAXimum <br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.5<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_damin"><strong>vdw_df_damin</strong><a class="headerlink" href="#vdw_df_damin" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Delta for Angles, MINimum<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.01<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_dcut"><strong>vdw_df_dcut</strong><a class="headerlink" href="#vdw_df_dcut" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF D-mesh CUT-off<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 30<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_dratio"><strong>vdw_df_dratio</strong><a class="headerlink" href="#vdw_df_dratio" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF, between the highest and
+lowest D, RATIO.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 20<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_dsoft"><strong>vdw_df_dsoft</strong><a class="headerlink" href="#vdw_df_dsoft" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Distance for SOFTening.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_gcut"><strong>vdw_df_gcut</strong><a class="headerlink" href="#vdw_df_gcut" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF G-space CUT-off<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 5<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to filter the vdW-DF kernel in reciprocal space.  </p>
+<hr />
+<h2 id="vdw_df_ndpts"><strong>vdw_df_ndpts</strong><a class="headerlink" href="#vdw_df_ndpts" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Number of D-mesh PoinTS<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 20<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_ngpts"><strong>vdw_df_ngpts</strong><a class="headerlink" href="#vdw_df_ngpts" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Number of G-mesh PoinTS<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_nqpts"><strong>vdw_df_nqpts</strong><a class="headerlink" href="#vdw_df_nqpts" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Number of Q-mesh PoinTS<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 30<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_nrpts"><strong>vdw_df_nrpts</strong><a class="headerlink" href="#vdw_df_nrpts" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Number of R-PoinTS<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 2048<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to define the sampling of the vdW-DF-kernel in
+real-space.  </p>
+<hr />
+<h2 id="vdw_df_nsmooth"><strong>vdw_df_nsmooth</strong><a class="headerlink" href="#vdw_df_nsmooth" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Number of SMOOTHening iterations<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 12<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to exponentially smoothen q near q0.  </p>
+<hr />
+<h2 id="vdw_df_phisoft"><strong>vdw_df_phisoft</strong><a class="headerlink" href="#vdw_df_phisoft" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF PHI value SOFTening.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -1.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_qcut"><strong>vdw_df_qcut</strong><a class="headerlink" href="#vdw_df_qcut" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Q-mesh CUT-off<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 5<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_qratio"><strong>vdw_df_qratio</strong><a class="headerlink" href="#vdw_df_qratio" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF, between highest and lowest Q, RATIO .<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 20<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, .  </p>
+<hr />
+<h2 id="vdw_df_rcut"><strong>vdw_df_rcut</strong><a class="headerlink" href="#vdw_df_rcut" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF Real-space CUT-off<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 100<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to define the vdW-DF kernel cut-off radius.  </p>
+<hr />
+<h2 id="vdw_df_rsoft"><strong>vdw_df_rsoft</strong><a class="headerlink" href="#vdw_df_rsoft" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF radius SOFTening.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_threshold"><strong>vdw_df_threshold</strong><a class="headerlink" href="#vdw_df_threshold" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF energy calculation THRESHOLD<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0.01<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Sets a threshold for the energy gradient that, when reached, will cause the
+vdW-DF interactions to be calculated.<br />
+Adjust it to a big value (e.g. 1e12) to enable it all along the SCF
+calculation. Too small values, as well as negative values, will result in the
+vdW-DF energy contributions never being calculated.</p>
+<hr />
+<h2 id="vdw_df_tolerance"><strong>vdw_df_tolerance</strong><a class="headerlink" href="#vdw_df_tolerance" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF global TOLERANCE.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1e-13<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<hr />
+<h2 id="vdw_df_tweaks"><strong>vdw_df_tweaks</strong><a class="headerlink" href="#vdw_df_tweaks" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF TWEAKS.<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.<br />
+<strong> _ IMPORTANT NOTE: modifying this variable will likely transform the calculated energies and their gradients into garbage. You have been warned! _ </strong>   </p>
+<hr />
+<h2 id="vdw_df_zab"><strong>vdw_df_zab</strong><a class="headerlink" href="#vdw_df_zab" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> vdW-DF ZAB parameter<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -0.8491<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0<br />
+Test list:</p>
+<p>Used when <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>&gt;0, as introduced in <a href="http://dx.doi.org/10.1103/PhysRevLett.92.246401">
+doi:10.1103/PhysRevLett.92.246401
+</a> .  </p>
+<hr />
+<h2 id="vdw_nfrag"><strong>vdw_nfrag</strong><a class="headerlink" href="#vdw_nfrag" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals Number of interacting FRAGments<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> in [10,11]<br />
+Test list:</p>
+<ul>
+<li>wannier90:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in" title="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.">tests/wannier90/Input/t11.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in" title="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.">tests/wannier90/Input/t12.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in" title="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.">tests/wannier90/Input/t13.in</a></li>
+</ul>
+<p>The absolute value of vdw_nfrag is the number of vdW interacting fragments in
+the unit cell. As wannierization takes place in reciprocal space, the MLWF
+center positions could be translated by some lattice vector from the cell
+where atoms are placed. If <a class="wikilink" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a> &gt;= 1 then MLWFs are translated to
+the original unit cell, otherwise the program will keep the positions obtained
+by Wannier90. The later is usually correct if some atoms are located at the
+corners or at limiting faces of the unit cell.</p>
+<hr />
+<h2 id="vdw_supercell"><strong>vdw_supercell</strong><a class="headerlink" href="#vdw_supercell" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals correction from Wannier functions in SUPERCELL<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (3)<br />
+<em>Default value:</em> [0, 0, 0]<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> in [10,11]<br />
+Test list:</p>
+<ul>
+<li>wannier90:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in" title="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.">tests/wannier90/Input/t11.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in" title="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.">tests/wannier90/Input/t12.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in" title="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.">tests/wannier90/Input/t13.in</a></li>
+</ul>
+<p>Set of dimensionless positive numbers which define the maximum multiples of
+the primitive translations (<a class="wikilink" href="../../input_variables/basic/#rprimd">rprimd</a>) in the supercell construction. Each
+component of vdw_supercell indicates the maximum number of cells along both
+positive or negative directions of the corresponding primitive vector i.e. the
+components of <a class="wikilink" href="../../input_variables/basic/#rprimd">rprimd</a>. In the case of layered systems for which vdW
+interactions occur between layers made of tightly bound atoms, the evaluation
+of vdW corrections coming from MLWFs in the same layer (fragment) must be
+avoided. Both a negative or null value for one component of <a class="wikilink" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>
+will indicate that the corresponding direction is normal to the layers.</p>
+<hr />
+<h2 id="vdw_tol"><strong>vdw_tol</strong><a class="headerlink" href="#vdw_tol" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals TOLerance<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 1e-10<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>==5<br />
+Test list:</p>
+<ul>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in" title="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term">tests/v7/Input/t97.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in" title="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix">tests/v7/Input/t98.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in" title="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains">tests/v7/Input/t99.in</a></li>
+<li>vdwxc:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in" title="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.">tests/vdwxc/Input/t10.in</a></li>
+</ul>
+<p>The DFT-D methods (S. Grimme approach) dispersion potentials, <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>==5 or
+6 or 7, include a pair potential. The number of pairs of atoms contributing to
+the potential is necessarily limited. To be included in the potential a pair
+of atom must have contribution to the energy larger than <a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>.</p>
+<hr />
+<h2 id="vdw_tol_3bt"><strong>vdw_tol_3bt</strong><a class="headerlink" href="#vdw_tol_3bt" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals TOLerance for 3-Body Term<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> real<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> -1<br />
+<em>Comment:</em> Do include the 3-body term in the correction<br />
+<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> == 6<br />
+Test list:</p>
+<ul>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in" title="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term">tests/v7/Input/t97.in</a></li>
+</ul>
+<p>Control the computation of the 3-body correction inside DFT-D3 dispersion
+correction (Grimme approach) to the total energy:<br />
+-If <strong> vdw_tol_3bt</strong>&lt;0, no 3-body correction. <br />
+-If <strong> vdw_tol_3bt</strong>&gt;0, the 3-body term is included with a tolerance = <strong>vdw_tol_3bt</strong>   </p>
+<p>DFT-D3 as proposed by S. Grimme adds two contributions to the total energy in
+order to take into account of the dispersion:  </p>
+<ul>
+<li>
+<p>A pair-wise potential for which the tolerance is controlled by <a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> </p>
+</li>
+<li>
+<p>A 3-body term which is obtained by summing over all triplets of atoms. Each individual contribution depends of the distances and angles between the three atoms. As it is impossible to sum over all the triplets in a periodic system, one has to define a stopping criterium which is here that an additional contribution to the energy must be higher than <strong>vdw_tol_3bt</strong></p>
+</li>
+</ul>
+<p>The last term has been predicted to have an important effect for large
+molecules (see for e.g. _ Grimme S., J. Chem. Phys. 132, 154104 (2010) <em>). It
+is however quite costly in computational time for periodic systems and seems
+to lead to an overestimation of lattice parameters for weakly bound systems
+(see for e.g. _ Reckien W., J. Chem. Phys. 132, 154104(2010) </em>). Still, its
+contribution to energy, to forces and to stress is available (not planned for
+elastic constants, dynamical matrix and internal strains)</p>
+<hr />
+<h2 id="vdw_typfrag"><strong>vdw_typfrag</strong><a class="headerlink" href="#vdw_typfrag" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals TYPe of FRAGment<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/basic/#natom">natom</a>)<br />
+<em>Default value:</em> 1<em><a class="wikilink" href="../../input_variables/basic/#natom">natom</a><br />
+</em>Only relevant if:* <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> in [10,11]<br />
+Test list:</p>
+<ul>
+<li>wannier90:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in" title="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.">tests/wannier90/Input/t11.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in" title="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.">tests/wannier90/Input/t12.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in" title="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.">tests/wannier90/Input/t13.in</a></li>
+</ul>
+<p>This array defines the interacting fragments by assigning to each atom an
+integer index from 1 to <strong> vdw_nfrag </strong> . The ordering of <a class="wikilink" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a> is
+the same as <a class="wikilink" href="../../input_variables/basic/#typat">typat</a> or <a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>. Internally each MLWF is assigned to a
+given fragment by computing the distance to the atoms. MLWFs belong to the
+same fragment as their nearest atom. The resulting set of MLWFs in each
+interacting fragment can be found in the output file in xyz format for easy
+visualization.</p>
+<hr />
+<h2 id="vdw_xc"><strong>vdw_xc</strong><a class="headerlink" href="#vdw_xc" title="Permanent link">&para;</a></h2>
+<p><em>Mnemonics:</em> Van Der Waals eXchange-Correlation functional<br />
+<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/vdw">vdw</a><br />
+<em>Variable type:</em> integer<br />
+<em>Dimensions:</em> scalar<br />
+<em>Default value:</em> 0<br />
+Test list:</p>
+<ul>
+<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in" title="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term">tests/v7/Input/t97.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in" title="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix">tests/v7/Input/t98.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in" title="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains">tests/v7/Input/t99.in</a></li>
+<li>vdwxc:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in" title="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.">tests/vdwxc/Input/t10.in</a></li>
+<li>wannier90:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in" title="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.">tests/wannier90/Input/t11.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in" title="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.">tests/wannier90/Input/t12.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in" title="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.">tests/wannier90/Input/t13.in</a></li>
+</ul>
+<p>Selects a van-der-Waals density functional to apply the corresponding
+correction to the exchange-correlation energy. If set to zero, no correction
+will be applied.<br />
+Possible values are:</p>
+<ul>
+<li>0: no correction. </li>
+<li>
+<p>1: apply vdW-DF1 (DRSLL) from Dion _ et al. _ <br />
+_ doi:10.1103/PhysRevLett.92.246401 _</p>
+</li>
+<li>
+<p>2: apply vdw-DF2 (LMKLL) from Lee _ et al. _ <br />
+_ arXiv:1003.5255v1 _</p>
+</li>
+<li>
+<p>5: apply vdw-DFT-D2 as proposed by S. Grimme (adding a semi-empirical dispersion potential) <br />
+Available only for ground-state calculations and response functions; see
+<a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> variable to control convergency<br />
+_ J. Comp. Chem. 27, 1787 (2006) _</p>
+</li>
+<li>
+<p>6: apply vdw-DFT-D3 as proposed by S. Grimme (refined version of DFT-D2) <br />
+Available only for ground-state calculations and response functions; see
+<a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> variable to control convergency and <a class="wikilink" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a> variable to
+include 3-body corrections<br />
+_ J. Chem. Phys. 132, 154104 (2010) _</p>
+</li>
+<li>
+<p>7: apply vdw-DFT-D3(BJ) as proposed by Grimme (based on Becke-Jonhson method J. Chem. Phys. 2004-2006) <br />
+Available only for ground-state calculations and response functions; see
+<a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> variable to control convergency<br />
+_ J. Comput. Chem. 32, 1456 (2011) _</p>
+</li>
+<li>
+<p>10: evaluate the vdW correlation energy from maximally localized Wannier functions, as proposed by P. L. Silvestrelli, also known as vdW-WF1 method. <br />
+<em> doi:10.1103/PhysRevLett.100.053002. _ For details on this implementation
+please check: _ doi:10.1016/j.cpc.2011.11.003 </em><br />
+The improvements introduced by Andrinopoulos _ et al. _ in _ J. Chem. Phys.
+135, 154105 (2011) _ namely the amalgamation procedure, splitting of p-like
+MLWFs into<br />
+two s-like Wannier functions and fractional occupation of MLWFs are performed
+automatically.  </p>
+</li>
+<li>
+<p>11: evaluate the vdW correlation energy from maximally localized Wannier functions, as proposed by A. Ambrosetti and P. L. Silvestrelli, also known as vdW-WF2 method. <br />
+_ doi:10.1103/PhysRevB.85.073101 _</p>
+</li>
+<li>
+<p>14: apply DFT/vdW-QHO-WF method as proposed by Silvestrelli, which combines the quantum harmonic oscillator-model with localized Wannier functions. <br />
+<em> J. Chem. Phys. 139, 054106 (2013) </em><br />
+For periodic systems a supercell approach has to be used since <strong>
+vdw_supercell </strong> is not enabled in this case.</p>
+</li>
+</ul>
+<p>For <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>=1 and <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>=2, the implementation follows the strategy
+devised in the article of Roman-Perez and Soler
+(<a href="https://dx.doi.org/10.1103/PhysRevLett.103.096102">doi:10.1103/PhysRevLett.103.096102</a>)</p>
+<hr /></div>
+        </div>
+
+        <footer class="col-md-12">
+<hr>
+
+    <center>Abinit version 8.5.4</center>
+
+
+    <center>Copyright &copy; 2017 The Abinit Group</center>
+
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <!--
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        -->
+        <script src="../../js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+        <script src="../../extra_javascript/abidocs.js"></script>
+
+    <!--<script>var base_url = '../..';</script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+
+<h1 id="search">Search Results</h1>
+
+<form action="search.html">
+  <input name="q" id="mkdocs-search-query" type="text" >
+</form>
+
+<div id="mkdocs-search-results">
+  Sorry, page not found.
+</div>
+    -->
+
+    </body>
+</html>
