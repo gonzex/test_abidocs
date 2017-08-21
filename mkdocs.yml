@@ -149,11 +149,11 @@ markdown_extensions:
         permalink: true
      #separator: "_"
   - markdown.extensions.admonition
-  # - markdown.extensions.fenced_code 
-  # - markdown.extensions.codehilite
+  - markdown.extensions.fenced_code 
+  - markdown.extensions.codehilite
+  - markdown.extensions.smarty
+  - markdown.extensions.tables
   # - markdown.extensions.def_list
-  # - markdown.extensions.smarty
-  # - markdown.extensions.tables
   #- markdown_newtab
   - mdx_math:
         enable_dollar_delimiter: True
@@ -169,11 +169,12 @@ copyright: Copyright &copy; 2017 The Abinit Group
 theme: mkdocs
 #theme: readthedocs
 #theme: material   # Nice
+#theme: windmill  # Nice nav-bar
 #theme: bootstrap
 #theme: flatly
 #theme: cinder
+#theme: psinder
 #theme: docSkimmer
-#theme: windmill
 #theme: journal
 #theme: united
 #theme: simplex
@@ -195,5 +196,5 @@ extra:
     version: 8.5.4
     # For Material them
     #logo: "images/logo.svg"
-    feature:
-        tabs: true
+    #feature:
+    #    tabs: true

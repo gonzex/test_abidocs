@@ -16,7 +16,8 @@ sys.path.insert(0, os.path.join(pack_dir, "doc"))
 
 def main():
     from pymods.website import build_website
-    website = build_website("./doc")
+    if len(sys.argv) > 1:
+        website = build_website("./doc")
 
     if len(sys.argv) > 1 and sys.argv[1] == "validate":
         return website.validate_html_build()

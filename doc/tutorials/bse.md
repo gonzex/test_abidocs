@@ -1,6 +1,6 @@
 ---
-authors : MG, MS
-htmltitle: Lesson on Bethe-Salpeter calculations
+authors: MG, MS
+title: Lesson on Bethe-Salpeter calculations
 ---
 
 # Lesson on Bethe-Salpeter calculations
@@ -15,22 +15,18 @@ first lesson of the GW tutorial, see the [tutorial home page](lesson_welcome.htm
 
 This lesson should take about one hour to be completed.
 
-  * 1. Preparatory steps (generating the WFK and the SCR file) 
-  * 2. Computing the absorption spectrum with different approximations 
-  * 3. Convergence with respect to the number of bands in the transition space 
-  * 4. Convergence with respect to the number of planewaves in the screening 
-  * 5. Convergence with respect to the number of k-points 
-  * 6. Additional exercises (optional) 
-  * 7. Notes on the MPI implementation 
+---
 
 ### ** 1\. Preparatory steps (generating the WFK and the SCR file).**
 
-_Before beginning, you might consider to work in a different subdirectory as
-for the other lessons. Why not "Work_bs" ?_
+!!! note
 
-In the directory ~abinit/tests/tutorial/Input/Work_bs, copy the files file
-~abinit/tests/tutorial/Input/tbs_1.files. Now run immediately the calculation
-with the command:
+    Before beginning, you might consider to work in a different subdirectory as
+    for the other lessons. Why not **Work_bs**?
+
+In the directory `~abinit/tests/tutorial/Input/Work_bs`, copy the files file
+[[~abinit/tests/tutorial/Input/tbs_1.files]]. 
+Now run immediately the calculation with the command:
 
 ```sh
     $ abinit < tbs_1.files >& tbs_1.log &
@@ -38,7 +34,7 @@ with the command:
 
 so that we can analyze the input file while the code is running.
 
-The input file is located in ~abinit/tests/tutorial/Input/tbs_1.in. The header
+The input file is located in [[~abinit/tests/tutorial/Input/tbs_1.in]]. The header
 reports a brief description of the calculation so read it carefully. Don't
 worry if some parts are not clear to you as we are going to discuss the
 calculation in step by step fashion.
@@ -139,7 +135,7 @@ construct the transition space.
 
 This section is intended to show how to perform a standard excitonic
 calculation within the Tamm-Dancoff approximation (TDA) using the Haydock
-iterative technique. The input file is ~abinit/tests/tutorial/Input/tbs_2.in.
+iterative technique. The input file is in [[~abinit/tests/tutorial/Input/tbs_2.in]]
 
 Before running the job, we have to connect this calculation with the output
 results produced in tbs_1.in.

@@ -6,17 +6,16 @@
 Albrecht, S., Reining, L., Del Sole, R., Onida, G.  
 Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors  
 Phys. Rev. Lett. **80**, 4510--4513 (1998)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.80.4510 target="_blank">https://doi.org/10.1103/PhysRevLett.80.4510</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-f89174ae-6d00-4df7-9acf-bb9180622e2f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f89174ae-6d00-4df7-9acf-bb9180622e2f" tabindex="-1" role="dialog" aria-labelledby="uuid-9c77da72-627b-49b7-9e8d-86c6329cdb36">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.80.4510" target="_blank">https://doi.org/10.1103/PhysRevLett.80.4510</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-62bf7b56-3ec4-4952-9d33-484f0969ceff">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-62bf7b56-3ec4-4952-9d33-484f0969ceff" tabindex="-1" role="dialog" aria-labelledby="uuid-9e9a492b-ec58-4210-8ffe-c326f712b229">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-9c77da72-627b-49b7-9e8d-86c6329cdb36">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9e9a492b-ec58-4210-8ffe-c326f712b229">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Albrecht1998,
+      <div class="modal-body"> <pre>@article{Albrecht1998,
     author = &quot;Albrecht, S. and Reining, L. and Del Sole, R. and Onida, G.&quot;,
     title = &quot;Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -27,11 +26,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.80.4510 target="_blank">https:/
     numpages = &quot;3&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -42,16 +41,15 @@ Allen, P. B., Heine, V.
 Theory of the temperature dependence of electronic band structures  
 J. of Phys. C: Solid State Physics **9**, 2305 (1976)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-c05ce3e8-3b51-4cd3-8dad-dbddfaa93a2f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c05ce3e8-3b51-4cd3-8dad-dbddfaa93a2f" tabindex="-1" role="dialog" aria-labelledby="uuid-1630fd39-c108-4c46-b50a-632981bc7b1a">
+<a data-toggle="modal" href="#uuid-fb523499-bcbb-4fab-9150-520d2de3a886">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-fb523499-bcbb-4fab-9150-520d2de3a886" tabindex="-1" role="dialog" aria-labelledby="uuid-0252116a-9de4-4fe7-bdf3-d9a50152c19c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1630fd39-c108-4c46-b50a-632981bc7b1a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0252116a-9de4-4fe7-bdf3-d9a50152c19c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Allen1976,
+      <div class="modal-body"> <pre>@article{Allen1976,
     author = &quot;Allen, P. B. and Heine, V.&quot;,
     title = &quot;Theory of the temperature dependence of electronic band structures&quot;,
     journal = &quot;J. of Phys. C: Solid State Physics&quot;,
@@ -59,11 +57,11 @@ J. of Phys. C: Solid State Physics **9**, 2305 (1976)
     volume = &quot;9&quot;,
     pages = &quot;2305&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/developers/README"> /developers/README </a>, <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -74,16 +72,15 @@ Allen, P. B.
 New method for solving Boltzmann's equation for electrons in metals  
 Phys. Rev. B **17**, 3725--3734 (1978)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-9e963475-a4d9-487a-be3d-67457c59f5d2">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-9e963475-a4d9-487a-be3d-67457c59f5d2" tabindex="-1" role="dialog" aria-labelledby="uuid-26e9660b-88eb-4bf4-b4ed-3b5a268e9209">
+<a data-toggle="modal" href="#uuid-bb964140-6415-4dd3-ad09-fd6032489565">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-bb964140-6415-4dd3-ad09-fd6032489565" tabindex="-1" role="dialog" aria-labelledby="uuid-20468351-a625-4ad0-9087-94be183d39ea">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-26e9660b-88eb-4bf4-b4ed-3b5a268e9209">bibtex</h4>
+        <h4 class="modal-title" id="uuid-20468351-a625-4ad0-9087-94be183d39ea">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Allen1978,
+      <div class="modal-body"> <pre>@article{Allen1978,
     author = &quot;Allen, P. B.&quot;,
     title = &quot;New method for solving Boltzmann&#x27;s equation for electrons in metals&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -94,8 +91,7 @@ Phys. Rev. B **17**, 3725--3734 (1978)
     issue = &quot;10&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -109,16 +105,15 @@ Allen, P. B., Cardona, M.
 Theory of the temperature dependence of the direct gap of germanium  
 Phys. Rev. B **23**, 1495--1505 (1981)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-277c115a-487d-4d4c-80e2-044c127fd961">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-277c115a-487d-4d4c-80e2-044c127fd961" tabindex="-1" role="dialog" aria-labelledby="uuid-446621ee-e546-4096-88c7-e41282ecb65c">
+<a data-toggle="modal" href="#uuid-812e6dc8-d5cf-4ece-b928-8fdcdc676d68">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-812e6dc8-d5cf-4ece-b928-8fdcdc676d68" tabindex="-1" role="dialog" aria-labelledby="uuid-9193b736-076b-4c7c-a954-042d8b059f0b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-446621ee-e546-4096-88c7-e41282ecb65c">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9193b736-076b-4c7c-a954-042d8b059f0b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Allen1981,
+      <div class="modal-body"> <pre>@article{Allen1981,
     author = &quot;Allen, P. B. and Cardona, M.&quot;,
     title = &quot;Theory of the temperature dependence of the direct gap of germanium&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -126,11 +121,11 @@ Phys. Rev. B **23**, 1495--1505 (1981)
     volume = &quot;23&quot;,
     pages = &quot;1495--1505&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -141,16 +136,15 @@ Allen, P. B., Cardona, M.
 Temperature dependence of the direct gap of {S}i and {G}e  
 Phys. Rev. B **27**, 4760--4769 (1983)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-7035f839-d1d1-43eb-b740-a2af0327bafa">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-7035f839-d1d1-43eb-b740-a2af0327bafa" tabindex="-1" role="dialog" aria-labelledby="uuid-93ec7493-dd88-4969-962e-c84261f01985">
+<a data-toggle="modal" href="#uuid-ff06d255-4702-4ec6-ab0e-3dfb10232c96">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ff06d255-4702-4ec6-ab0e-3dfb10232c96" tabindex="-1" role="dialog" aria-labelledby="uuid-55c5b22b-5453-4cfc-b5f2-12405ec4b2ef">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-93ec7493-dd88-4969-962e-c84261f01985">bibtex</h4>
+        <h4 class="modal-title" id="uuid-55c5b22b-5453-4cfc-b5f2-12405ec4b2ef">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Allen1983,
+      <div class="modal-body"> <pre>@article{Allen1983,
     author = &quot;Allen, P. B. and Cardona, M.&quot;,
     title = &quot;Temperature dependence of the direct gap of {S}i and {G}e&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -158,11 +152,11 @@ Phys. Rev. B **27**, 4760--4769 (1983)
     volume = &quot;27&quot;,
     pages = &quot;4760--4769&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -173,16 +167,15 @@ Allen, P. B.
 Boltzmann Theory and Resistivity of Metals  
 Kl{\"u}wer (1996)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-6c81f54c-4ad1-45d5-b8f6-d598f3dc6ac3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6c81f54c-4ad1-45d5-b8f6-d598f3dc6ac3" tabindex="-1" role="dialog" aria-labelledby="uuid-bb25082b-86a1-4ee5-95f8-a1be67cde145">
+<a data-toggle="modal" href="#uuid-e2d13d50-d0bb-48e5-acd1-fd82ced94f3e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e2d13d50-d0bb-48e5-acd1-fd82ced94f3e" tabindex="-1" role="dialog" aria-labelledby="uuid-cf06903f-bc22-4650-8f18-f49e0e72359e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bb25082b-86a1-4ee5-95f8-a1be67cde145">bibtex</h4>
+        <h4 class="modal-title" id="uuid-cf06903f-bc22-4650-8f18-f49e0e72359e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@incollection{Allen1996,
+      <div class="modal-body"> <pre>@incollection{Allen1996,
     AUTHOR = &quot;Allen, P. B.&quot;,
     EDITOR = &quot;Chelikowsky, J. R. and Louie, S. G.&quot;,
     TITLE = &quot;Boltzmann Theory and Resistivity of Metals&quot;,
@@ -192,8 +185,7 @@ Kl{\"u}wer (1996)
     PAGES = &quot;219-250&quot;,
     YEAR = &quot;1996&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -207,16 +199,15 @@ Allen, P. B., Berlijn, T., Casavant, D. A., Soler, J. M.
 Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs  
 Phys. Rev. B **87**, 085322 (2013)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-851318f6-d763-48fd-adb7-9140d4e4424d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-851318f6-d763-48fd-adb7-9140d4e4424d" tabindex="-1" role="dialog" aria-labelledby="uuid-3e822caa-bf51-4d5d-8be8-9c4288c8eb77">
+<a data-toggle="modal" href="#uuid-d33b57be-935b-4dd0-8bfe-52a35c283dcb">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d33b57be-935b-4dd0-8bfe-52a35c283dcb" tabindex="-1" role="dialog" aria-labelledby="uuid-5c804ee5-32ab-4aa0-8d98-b6597b824661">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3e822caa-bf51-4d5d-8be8-9c4288c8eb77">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5c804ee5-32ab-4aa0-8d98-b6597b824661">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Allen2013,
+      <div class="modal-body"> <pre>@article{Allen2013,
     Author = &quot;Allen, P. B. and Berlijn, T. and Casavant, D. A. and Soler, J. M.&quot;,
     Title = &quot;Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -224,8 +215,7 @@ Phys. Rev. B **87**, 085322 (2013)
     Pages = &quot;085322&quot;,
     Volume = &quot;87&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -238,17 +228,16 @@ Phys. Rev. B **87**, 085322 (2013)
 Amadon, B., Biermann, S., Georges, A., Aryasetiawan, F.  
 The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven  
 Phys. Rev. Lett. **96**, 066402 (2006)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.96.066402 target="_blank">https://doi.org/10.1103/PhysRevLett.96.066402</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-e7ac2fd1-0720-49a6-a99c-7178a153dbe5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-e7ac2fd1-0720-49a6-a99c-7178a153dbe5" tabindex="-1" role="dialog" aria-labelledby="uuid-7b1deaf4-bbaa-4bf1-a8d1-98ad45dab3ad">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.96.066402" target="_blank">https://doi.org/10.1103/PhysRevLett.96.066402</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-b4e83308-e729-4a61-b867-b17998ae0b2c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b4e83308-e729-4a61-b867-b17998ae0b2c" tabindex="-1" role="dialog" aria-labelledby="uuid-ae0d4330-f0f7-4332-b827-4c9406ae471c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7b1deaf4-bbaa-4bf1-a8d1-98ad45dab3ad">bibtex</h4>
+        <h4 class="modal-title" id="uuid-ae0d4330-f0f7-4332-b827-4c9406ae471c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2006,
+      <div class="modal-body"> <pre>@article{Amadon2006,
     author = &quot;Amadon, B. and Biermann, S. and Georges, A. and Aryasetiawan, F.&quot;,
     title = &quot;The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -261,11 +250,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.96.066402 target="_blank">https
     numpages = &quot;4&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -275,17 +264,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.96.066402 target="_blank">https
 Amadon, B., Lechermann, F., Georges, A., Jollet, F., Wehling, T. O., Liechtenstein, A. I.  
 Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals  
 Phys. Rev. B **77**, 205112 (2008)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.77.205112 target="_blank">https://doi.org/10.1103/PhysRevB.77.205112</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-beb0577d-659a-4521-8c53-4d685f5f92d3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-beb0577d-659a-4521-8c53-4d685f5f92d3" tabindex="-1" role="dialog" aria-labelledby="uuid-d3852fad-7728-4ffd-8da0-1e999e36dbed">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.77.205112" target="_blank">https://doi.org/10.1103/PhysRevB.77.205112</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-1acc55e3-9085-4e87-914b-504cb1a80c03">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1acc55e3-9085-4e87-914b-504cb1a80c03" tabindex="-1" role="dialog" aria-labelledby="uuid-d61775c4-a6e3-493d-a242-ecc5b7542207">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d3852fad-7728-4ffd-8da0-1e999e36dbed">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d61775c4-a6e3-493d-a242-ecc5b7542207">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2008,
+      <div class="modal-body"> <pre>@article{Amadon2008,
     author = &quot;Amadon, B. and Lechermann, F. and Georges, A. and Jollet, F. and Wehling, T. O. and Liechtenstein, A. I.&quot;,
     title = &quot;Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -300,11 +288,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.77.205112 target="_blank">https://
     timestamp = &quot;2012.08.08&quot;,
     doi = &quot;10.1103/PhysRevB.77.205112&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/topics/Wannier"> /topics/Wannier </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -314,17 +302,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.77.205112 target="_blank">https://
 Amadon, B., Jollet, F., Torrent, M.  
 $\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters  
 Phys. Rev. B **77**, 155104 (2008)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.77.155104 target="_blank">https://doi.org/10.1103/PhysRevB.77.155104</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-dcce01dd-70f8-4d09-92ca-b4ce3d517c8b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-dcce01dd-70f8-4d09-92ca-b4ce3d517c8b" tabindex="-1" role="dialog" aria-labelledby="uuid-ed6f7194-e6e2-4a87-a183-322d29719154">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.77.155104" target="_blank">https://doi.org/10.1103/PhysRevB.77.155104</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-21db0626-dbf1-467c-8f84-324a0d50bb88">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-21db0626-dbf1-467c-8f84-324a0d50bb88" tabindex="-1" role="dialog" aria-labelledby="uuid-275bf484-7cd0-413d-be6e-737a01ff1ab8">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-ed6f7194-e6e2-4a87-a183-322d29719154">bibtex</h4>
+        <h4 class="modal-title" id="uuid-275bf484-7cd0-413d-be6e-737a01ff1ab8">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2008a,
+      <div class="modal-body"> <pre>@article{Amadon2008a,
     author = &quot;Amadon, B. and Jollet, F. and Torrent, M.&quot;,
     title = &quot;$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -337,11 +324,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.77.155104 target="_blank">https://
     numpages = &quot;10&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DFT+U"> /topics/DFT+U </a>, <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -351,17 +338,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.77.155104 target="_blank">https://
 Amadon, B.  
 A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}  
 J. Phys.: Cond. Matt. **24**, 075604 (2012)  
-URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604 target="_black">http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-67e93acd-03a4-4e05-9b38-0eac264579f9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-67e93acd-03a4-4e05-9b38-0eac264579f9" tabindex="-1" role="dialog" aria-labelledby="uuid-7042c281-5364-479b-9294-4d3f7bfb36fe">
+URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604" target="_blank">http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-5fd51b11-e7f6-4601-9a72-719905e724f2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-5fd51b11-e7f6-4601-9a72-719905e724f2" tabindex="-1" role="dialog" aria-labelledby="uuid-17a16280-b131-4b99-b44b-2c3541892f95">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7042c281-5364-479b-9294-4d3f7bfb36fe">bibtex</h4>
+        <h4 class="modal-title" id="uuid-17a16280-b131-4b99-b44b-2c3541892f95">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2012,
+      <div class="modal-body"> <pre>@article{Amadon2012,
     author = &quot;Amadon, B.&quot;,
     title = &quot;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}&quot;,
     journal = &quot;J. Phys.: Cond. Matt.&quot;,
@@ -375,11 +361,11 @@ URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604 tar
     timestamp = &quot;2012.08.08&quot;,
     url = &quot;http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>, <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -389,17 +375,16 @@ URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604 tar
 Amadon, B., Applencourt, T., Bruneval, F.  
 Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium  
 Phys. Rev. B **89**, 125110 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.89.125110 target="_blank">https://doi.org/10.1103/PhysRevB.89.125110</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-aae570b6-77bf-4252-8e3a-227bf58010de">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-aae570b6-77bf-4252-8e3a-227bf58010de" tabindex="-1" role="dialog" aria-labelledby="uuid-a8c8baa9-b7b8-4792-a92c-db55ad9ce441">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.89.125110" target="_blank">https://doi.org/10.1103/PhysRevB.89.125110</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-9f9338be-e184-4010-8d56-3c93bef8666d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-9f9338be-e184-4010-8d56-3c93bef8666d" tabindex="-1" role="dialog" aria-labelledby="uuid-b8165806-da9c-4dee-a6c3-e32f1ce365dc">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a8c8baa9-b7b8-4792-a92c-db55ad9ce441">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b8165806-da9c-4dee-a6c3-e32f1ce365dc">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2014,
+      <div class="modal-body"> <pre>@article{Amadon2014,
     author = &quot;Amadon, B. and Applencourt, T. and Bruneval, F.&quot;,
     title = &quot;Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -411,11 +396,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.125110 target="_blank">https://
     numpages = &quot;10&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>
 * * *
 
 
@@ -425,17 +410,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.125110 target="_blank">https://
 Amadon, B., Gerossier, A.  
 Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals  
 Phys. Rev. B **91**, 161103 (2015)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.91.161103 target="_blank">https://doi.org/10.1103/PhysRevB.91.161103</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-15745323-0b16-4626-b8c3-b9503c79f891">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-15745323-0b16-4626-b8c3-b9503c79f891" tabindex="-1" role="dialog" aria-labelledby="uuid-d34918ae-207c-48dd-ad87-dae3c4712849">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.91.161103" target="_blank">https://doi.org/10.1103/PhysRevB.91.161103</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-16b4c639-1f3e-4044-a12b-b871cc6676c5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-16b4c639-1f3e-4044-a12b-b871cc6676c5" tabindex="-1" role="dialog" aria-labelledby="uuid-12da63ad-754b-4533-98d4-6f91f3da72b2">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d34918ae-207c-48dd-ad87-dae3c4712849">bibtex</h4>
+        <h4 class="modal-title" id="uuid-12da63ad-754b-4533-98d4-6f91f3da72b2">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Amadon2015,
+      <div class="modal-body"> <pre>@article{Amadon2015,
     author = &quot;Amadon, B. and Gerossier, A.&quot;,
     title = &quot;Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -447,11 +431,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.91.161103 target="_blank">https://
     numpages = &quot;5&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Wannier"> /topics/Wannier </a>
 * * *
 
 
@@ -462,16 +446,15 @@ Ambrosetti, A., Silvestrelli, P. L.
 van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach  
 Phys. Rev. B **85**, 073101 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-4defe782-e30a-49b0-b431-1a6111714096">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-4defe782-e30a-49b0-b431-1a6111714096" tabindex="-1" role="dialog" aria-labelledby="uuid-a629b3f5-0e59-4474-b3e5-af84423283b8">
+<a data-toggle="modal" href="#uuid-49184d4f-f016-4ffd-a79c-3046c951a7bf">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-49184d4f-f016-4ffd-a79c-3046c951a7bf" tabindex="-1" role="dialog" aria-labelledby="uuid-b2be80a4-7fcd-4414-95e4-2bc91ed8321b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a629b3f5-0e59-4474-b3e5-af84423283b8">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b2be80a4-7fcd-4414-95e4-2bc91ed8321b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ambrosetti2012,
+      <div class="modal-body"> <pre>@article{Ambrosetti2012,
     author = &quot;Ambrosetti, A. and Silvestrelli, P. L.&quot;,
     title = &quot;van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -479,11 +462,11 @@ Phys. Rev. B **85**, 073101 (2012)
     volume = &quot;85&quot;,
     pages = &quot;073101&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -493,17 +476,16 @@ Phys. Rev. B **85**, 073101 (2012)
 Anisimov, V. I., Gunnarsson, O.  
 Density-functional calculation of effective Coulomb interactions in metals  
 Phys. Rev. B **43**, 7570--7574 (1991)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.43.7570 target="_blank">https://doi.org/10.1103/PhysRevB.43.7570</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-dba20701-9e9a-4700-a8e2-2b64a0a43ef9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-dba20701-9e9a-4700-a8e2-2b64a0a43ef9" tabindex="-1" role="dialog" aria-labelledby="uuid-cd0ca513-bcfe-446e-867e-6f9014b4abcb">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.43.7570" target="_blank">https://doi.org/10.1103/PhysRevB.43.7570</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-0186c695-58aa-4327-9a81-819b40ce042d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0186c695-58aa-4327-9a81-819b40ce042d" tabindex="-1" role="dialog" aria-labelledby="uuid-fe5fa9cc-25a4-466f-8b1a-cbedd7b19afb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-cd0ca513-bcfe-446e-867e-6f9014b4abcb">bibtex</h4>
+        <h4 class="modal-title" id="uuid-fe5fa9cc-25a4-466f-8b1a-cbedd7b19afb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Anisimov1991,
+      <div class="modal-body"> <pre>@article{Anisimov1991,
     author = &quot;Anisimov, V. I. and Gunnarsson, O.&quot;,
     title = &quot;Density-functional calculation of effective Coulomb interactions in metals&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -517,11 +499,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.43.7570 target="_blank">https://do
     timestamp = &quot;2013.07.03&quot;,
     doi = &quot;10.1103/PhysRevB.43.7570&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DFT+U"> /topics/DFT+U </a>, <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -532,16 +514,15 @@ Antonius, G., Ponc\'e, S., Boulanger, P., C\^ot\'e, M., Gonze, X.
 Many-Body Effects on the Zero-Point Renormalization of the Band Structure  
 Phys. Rev. Lett. **112**, 215501 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-fcf9c56b-dbb6-427f-9987-e9d7805ee14d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-fcf9c56b-dbb6-427f-9987-e9d7805ee14d" tabindex="-1" role="dialog" aria-labelledby="uuid-f9174473-e087-4c5e-bd21-507de35992bc">
+<a data-toggle="modal" href="#uuid-9aa54658-6320-4edd-82b7-3214d392ee81">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-9aa54658-6320-4edd-82b7-3214d392ee81" tabindex="-1" role="dialog" aria-labelledby="uuid-38f281e1-b14c-460d-97ea-bf584b68914a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-f9174473-e087-4c5e-bd21-507de35992bc">bibtex</h4>
+        <h4 class="modal-title" id="uuid-38f281e1-b14c-460d-97ea-bf584b68914a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Antonius2014,
+      <div class="modal-body"> <pre>@article{Antonius2014,
     author = &quot;Antonius, G. and Ponc\&#x27;e, S. and Boulanger, P. and C\^ot\&#x27;e, M. and Gonze, X.&quot;,
     title = &quot;Many-Body Effects on the Zero-Point Renormalization of the Band Structure&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -549,8 +530,7 @@ Phys. Rev. Lett. **112**, 215501 (2014)
     volume = &quot;112&quot;,
     pages = &quot;215501&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -564,16 +544,15 @@ Antonius, G., Ponc\'e, S., Lantagne-Hurtubise, E., Auclair, G., Gonze, X., C\^ot
 Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure  
 Phys. Rev. B **92**, 085137 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-82403625-ba23-42e4-8dc6-c8a47ab9979a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-82403625-ba23-42e4-8dc6-c8a47ab9979a" tabindex="-1" role="dialog" aria-labelledby="uuid-cef009a3-dc94-4536-af34-6ffe8e839ea3">
+<a data-toggle="modal" href="#uuid-0d568368-e0a1-4d9a-a2ba-89a3b6aa7bbb">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0d568368-e0a1-4d9a-a2ba-89a3b6aa7bbb" tabindex="-1" role="dialog" aria-labelledby="uuid-98b24cd0-a8a5-4c70-8a24-2377802a0d7d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-cef009a3-dc94-4536-af34-6ffe8e839ea3">bibtex</h4>
+        <h4 class="modal-title" id="uuid-98b24cd0-a8a5-4c70-8a24-2377802a0d7d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Antonius2015,
+      <div class="modal-body"> <pre>@article{Antonius2015,
     author = &quot;Antonius, G. and Ponc\&#x27;e, S. and Lantagne-Hurtubise, E. and Auclair, G. and Gonze, X. and C\^ot\&#x27;e, M.&quot;,
     title = &quot;Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -581,8 +560,7 @@ Phys. Rev. B **92**, 085137 (2015)
     volume = &quot;92&quot;,
     pages = &quot;085137&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -595,17 +573,16 @@ Phys. Rev. B **92**, 085137 (2015)
 Arponen, J., Pajanne, E.  
 Angular correlation in positron annihilation  
 J. Phys. F **9**, 2359 (1979)  
-DOI: <a href=https://doi.org/10.1088/0305-4608/9/12/009 target="_blank">https://doi.org/10.1088/0305-4608/9/12/009</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2825714a-cd17-4659-a927-4dabaa72a147">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2825714a-cd17-4659-a927-4dabaa72a147" tabindex="-1" role="dialog" aria-labelledby="uuid-7b10a292-3d8b-4f43-8dfe-15e1683db51e">
+DOI: <a href="https://doi.org/10.1088/0305-4608/9/12/009" target="_blank">https://doi.org/10.1088/0305-4608/9/12/009</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-08a0b718-0353-42cf-a4ab-af7aa89eb58d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-08a0b718-0353-42cf-a4ab-af7aa89eb58d" tabindex="-1" role="dialog" aria-labelledby="uuid-c0b5a004-8ae2-427a-a75f-85da46c898aa">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7b10a292-3d8b-4f43-8dfe-15e1683db51e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-c0b5a004-8ae2-427a-a75f-85da46c898aa">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Arponen1979,
+      <div class="modal-body"> <pre>@article{Arponen1979,
     author = &quot;Arponen, J. and Pajanne, E.&quot;,
     title = &quot;Angular correlation in positron annihilation&quot;,
     doi = &quot;10.1088/0305-4608/9/12/009&quot;,
@@ -614,8 +591,7 @@ DOI: <a href=https://doi.org/10.1088/0305-4608/9/12/009 target="_blank">https://
     pages = &quot;2359&quot;,
     year = &quot;1979&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -628,17 +604,16 @@ DOI: <a href=https://doi.org/10.1088/0305-4608/9/12/009 target="_blank">https://
 Aryasetiawan, F., Imada, M., Georges, A., Kotliar, G., Biermann, S., Liechtenstein, A. I.  
 Frequency-dependent local interactions and low-energy effective models from electronic structure calculations  
 Phys. Rev. B **70**, 195104-- (2004)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.70.195104 target="_blank">https://doi.org/10.1103/PhysRevB.70.195104</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-8053e123-cd79-451c-a689-c5b5a5dde2c5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-8053e123-cd79-451c-a689-c5b5a5dde2c5" tabindex="-1" role="dialog" aria-labelledby="uuid-727c1e38-ed87-43a6-a721-f76c7d5a3f7a">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.70.195104" target="_blank">https://doi.org/10.1103/PhysRevB.70.195104</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-be0a6fc3-8259-459a-85b0-1ac49a8bbc82">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-be0a6fc3-8259-459a-85b0-1ac49a8bbc82" tabindex="-1" role="dialog" aria-labelledby="uuid-8685b0ea-01c3-470c-a494-0d45bd0fadc7">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-727c1e38-ed87-43a6-a721-f76c7d5a3f7a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-8685b0ea-01c3-470c-a494-0d45bd0fadc7">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Aryasetiawan2004,
+      <div class="modal-body"> <pre>@article{Aryasetiawan2004,
     author = &quot;Aryasetiawan, F. and Imada, M. and Georges, A. and Kotliar, G. and Biermann, S. and Liechtenstein, A. I.&quot;,
     title = &quot;Frequency-dependent local interactions and low-energy effective models from electronic structure calculations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -653,11 +628,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.70.195104 target="_blank">https://
     timestamp = &quot;2013.03.15&quot;,
     doi = &quot;10.1103/PhysRevB.70.195104&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>
 * * *
 
 
@@ -668,16 +643,15 @@ Audouze, C., Jollet, F., Torrent, M., Gonze, X.
 Projector augmented-wave approach to density-functional perturbation theory  
 Phys. Rev. B **73**, 235101 (2006)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-6b22a0fa-084e-43c8-a4b6-bce844675ac6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6b22a0fa-084e-43c8-a4b6-bce844675ac6" tabindex="-1" role="dialog" aria-labelledby="uuid-41a571eb-5757-41e5-8841-3b38597baab4">
+<a data-toggle="modal" href="#uuid-05dec0f0-a90b-4f1a-8655-fa5a1d68d404">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-05dec0f0-a90b-4f1a-8655-fa5a1d68d404" tabindex="-1" role="dialog" aria-labelledby="uuid-59e7f570-74fb-48f8-985d-53be64d0913a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-41a571eb-5757-41e5-8841-3b38597baab4">bibtex</h4>
+        <h4 class="modal-title" id="uuid-59e7f570-74fb-48f8-985d-53be64d0913a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Audouze2006,
+      <div class="modal-body"> <pre>@article{Audouze2006,
     author = &quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;,
     journal = &quot;Phys. Rev. B&quot;,
     volume = &quot;73&quot;,
@@ -685,8 +659,7 @@ Phys. Rev. B **73**, 235101 (2006)
     year = &quot;2006&quot;,
     title = &quot;Projector augmented-wave approach to density-functional perturbation theory&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -700,16 +673,15 @@ Audouze, C., Jollet, F., Torrent, M., Gonze, X.
 Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level  
 Phys. Rev. B **78**, 035105 (2008)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b92b0a73-32ef-4c83-b4c9-75d6562d5b19">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b92b0a73-32ef-4c83-b4c9-75d6562d5b19" tabindex="-1" role="dialog" aria-labelledby="uuid-2e7a01c9-8550-4164-9667-3e0f73407757">
+<a data-toggle="modal" href="#uuid-94313138-687b-47af-b621-87c2dd88c316">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-94313138-687b-47af-b621-87c2dd88c316" tabindex="-1" role="dialog" aria-labelledby="uuid-2d932491-1271-4cdb-aa93-e0e36d1207d4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2e7a01c9-8550-4164-9667-3e0f73407757">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2d932491-1271-4cdb-aa93-e0e36d1207d4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Audouze2008,
+      <div class="modal-body"> <pre>@article{Audouze2008,
     author = &quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;,
     journal = &quot;Phys. Rev. B&quot;,
     volume = &quot;78&quot;,
@@ -717,8 +689,7 @@ Phys. Rev. B **78**, 035105 (2008)
     year = &quot;2008&quot;,
     title = &quot;Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -731,17 +702,16 @@ Phys. Rev. B **78**, 035105 (2008)
 Bachelet, G.B., Hamann, D.R., Schl\"uter, M.  
 Pseudopotentials that work: From {H} to {P}u  
 Phys. Rev. B **26**, 4199--4228 (1982)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.26.4199 target="_blank">https://doi.org/10.1103/PhysRevB.26.4199</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-6cb8cecd-1997-432c-947b-94a1f297b190">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6cb8cecd-1997-432c-947b-94a1f297b190" tabindex="-1" role="dialog" aria-labelledby="uuid-13fd6ae0-9b82-490a-bacd-ba88be38b6d7">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.26.4199" target="_blank">https://doi.org/10.1103/PhysRevB.26.4199</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-00b47ac4-9189-433e-85c8-dfce8eac2bdd">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-00b47ac4-9189-433e-85c8-dfce8eac2bdd" tabindex="-1" role="dialog" aria-labelledby="uuid-11ae04b6-0060-44a9-8b77-e7a2271766c8">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-13fd6ae0-9b82-490a-bacd-ba88be38b6d7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-11ae04b6-0060-44a9-8b77-e7a2271766c8">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bachelet1982,
+      <div class="modal-body"> <pre>@article{Bachelet1982,
     author = {Bachelet, G.B. and Hamann, D.R. and Schl\&quot;uter, M.},
     title = &quot;Pseudopotentials that work: From {H} to {P}u&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -752,8 +722,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.26.4199 target="_blank">https://do
     numpages = &quot;29&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -766,17 +735,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.26.4199 target="_blank">https://do
 Bader, R. F. W.  
 Atoms in Molecules: A Quantum Theory  
 Oxford University Press. **ISBN 978-0-19-855865-1**,  (1994)  
-URL: <a href= target="_black"></a><!-- Links -->
-<a data-toggle="modal" href="#uuid-1d38a6a7-2a19-40fe-8dc5-7baa3862e69f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-1d38a6a7-2a19-40fe-8dc5-7baa3862e69f" tabindex="-1" role="dialog" aria-labelledby="uuid-beb1e246-fef0-4757-9868-2c0e58b7a8b0">
+URL: <a href="" target="_blank"></a><!-- Links -->
+<a data-toggle="modal" href="#uuid-a12e1878-7629-47d8-96af-58a6a63edd57">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a12e1878-7629-47d8-96af-58a6a63edd57" tabindex="-1" role="dialog" aria-labelledby="uuid-4a96aa80-1b96-484e-84ca-5120edecb506">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-beb1e246-fef0-4757-9868-2c0e58b7a8b0">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4a96aa80-1b96-484e-84ca-5120edecb506">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bader1994,
+      <div class="modal-body"> <pre>@article{Bader1994,
     author = &quot;Bader, R. F. W.&quot;,
     title = &quot;Atoms in Molecules: A Quantum Theory&quot;,
     journal = &quot;Oxford University Press.&quot;,
@@ -787,8 +755,7 @@ URL: <a href= target="_black"></a><!-- Links -->
     url = &quot;&quot;,
     doi = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -801,17 +768,16 @@ URL: <a href= target="_black"></a><!-- Links -->
 Barbiellini, B., Puska, M. J., Korhonen, T., Harju, A., Torsti, T., Nieminen, R. M.  
 Calculation of positron states and annihilation in solids: A density-gradient-correction scheme  
 Phys. Rev. B **53**, 16201 (1996)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.53.16201 target="_blank">https://doi.org/10.1103/PhysRevB.53.16201</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-54abdce7-4279-4b1e-9b09-12d2aec80cb9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-54abdce7-4279-4b1e-9b09-12d2aec80cb9" tabindex="-1" role="dialog" aria-labelledby="uuid-190a1ae1-9efe-4877-a8c4-55c1f438eea2">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.53.16201" target="_blank">https://doi.org/10.1103/PhysRevB.53.16201</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-97a0996b-f0b5-45eb-8039-f497a624b3b4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-97a0996b-f0b5-45eb-8039-f497a624b3b4" tabindex="-1" role="dialog" aria-labelledby="uuid-6a6206b9-f1cd-450e-8537-ed42a434f72f">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-190a1ae1-9efe-4877-a8c4-55c1f438eea2">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6a6206b9-f1cd-450e-8537-ed42a434f72f">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Barbiellini1996,
+      <div class="modal-body"> <pre>@article{Barbiellini1996,
     author = &quot;Barbiellini, B. and Puska, M. J. and Korhonen, T. and Harju, A. and Torsti, T. and Nieminen, R. M.&quot;,
     title = &quot;Calculation of positron states and annihilation in solids: A density-gradient-correction scheme&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -822,8 +788,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.53.16201 target="_blank">https://d
     doi = &quot;10.1103/PhysRevB.53.16201&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -837,16 +802,15 @@ Baroni, S., Giannozzi, P., Testa, A.
 Green's-function approach to linear response in solids  
 Phys. Rev. Lett. **58**, 1861--1864 (1987)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ae4f83a2-6973-4e14-bbe0-c186faa3db7b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ae4f83a2-6973-4e14-bbe0-c186faa3db7b" tabindex="-1" role="dialog" aria-labelledby="uuid-d519deca-d4d0-46ae-8151-01ff7ec9b52c">
+<a data-toggle="modal" href="#uuid-5efeff17-b727-4414-a40c-6122bda953de">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-5efeff17-b727-4414-a40c-6122bda953de" tabindex="-1" role="dialog" aria-labelledby="uuid-36986eae-96dc-4c34-85ff-46a43551184a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d519deca-d4d0-46ae-8151-01ff7ec9b52c">bibtex</h4>
+        <h4 class="modal-title" id="uuid-36986eae-96dc-4c34-85ff-46a43551184a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Baroni1987,
+      <div class="modal-body"> <pre>@article{Baroni1987,
     author = &quot;Baroni, S. and Giannozzi, P. and Testa, A.&quot;,
     title = &quot;Green&#x27;s-function approach to linear response in solids&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -854,8 +818,7 @@ Phys. Rev. Lett. **58**, 1861--1864 (1987)
     volume = &quot;58&quot;,
     pages = &quot;1861--1864&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -868,17 +831,16 @@ Phys. Rev. Lett. **58**, 1861--1864 (1987)
 Becke, A. D., Edgecombe, K. E.  
 A simple measure of electron localization in atomic and molecular systems  
 J. Chem. Phys. **92**, 5397-5403 (1990)  
-URL: <a href=http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517 target="_black">http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ecf3882b-b34f-4cda-966d-e1c51b50eeae">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ecf3882b-b34f-4cda-966d-e1c51b50eeae" tabindex="-1" role="dialog" aria-labelledby="uuid-0ab11e21-e96a-4a98-9265-5a46a8eda64b">
+URL: <a href="http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517" target="_blank">http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-24a2dc07-04e4-4080-8921-8cfe492ebbee">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-24a2dc07-04e4-4080-8921-8cfe492ebbee" tabindex="-1" role="dialog" aria-labelledby="uuid-d185acda-2813-4712-bffd-c45a35dfb861">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-0ab11e21-e96a-4a98-9265-5a46a8eda64b">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d185acda-2813-4712-bffd-c45a35dfb861">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Becke1990,
+      <div class="modal-body"> <pre>@article{Becke1990,
     author = &quot;Becke, A. D. and Edgecombe, K. E.&quot;,
     title = &quot;A simple measure of electron localization in atomic and molecular systems&quot;,
     journal = &quot;J. Chem. Phys.&quot;,
@@ -889,8 +851,7 @@ URL: <a href=http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458
     url = &quot;http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517&quot;,
     doi = &quot;10.1063/1.458517&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -903,17 +864,16 @@ URL: <a href=http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458
 Benedict, L. X., Shirley, E. L., Bohn, R. B.  
 Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation  
 Phys. Rev. Lett. **80**, 4514--4517 (1998)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.80.4514 target="_blank">https://doi.org/10.1103/PhysRevLett.80.4514</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-3d8ac732-4d57-4c92-afc1-f915a88dcc5e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3d8ac732-4d57-4c92-afc1-f915a88dcc5e" tabindex="-1" role="dialog" aria-labelledby="uuid-f77382b5-f62a-42f4-bb92-58f0a1e4e9a8">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.80.4514" target="_blank">https://doi.org/10.1103/PhysRevLett.80.4514</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-c179ad87-a70d-460e-a88e-d95891e412e0">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-c179ad87-a70d-460e-a88e-d95891e412e0" tabindex="-1" role="dialog" aria-labelledby="uuid-b07e7d86-1d60-4766-8a35-4ea6d9cf4be7">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-f77382b5-f62a-42f4-bb92-58f0a1e4e9a8">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b07e7d86-1d60-4766-8a35-4ea6d9cf4be7">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Benedict1998,
+      <div class="modal-body"> <pre>@article{Benedict1998,
     author = &quot;Benedict, L. X. and Shirley, E. L. and Bohn, R. B.&quot;,
     title = &quot;Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -925,11 +885,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.80.4514 target="_blank">https:/
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevLett.80.4514&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -940,16 +900,15 @@ O. Bengone, M. Alouani, P. Bl\"ochl,, Hugel, J.
 Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}  
 Phys. Rev. B **62**, 16392 (1994)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-f4f8d1e8-7590-4082-91d4-fa41c3b65254">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f4f8d1e8-7590-4082-91d4-fa41c3b65254" tabindex="-1" role="dialog" aria-labelledby="uuid-931dcffb-a348-421e-b399-62fdeb463880">
+<a data-toggle="modal" href="#uuid-ea36d4aa-274f-4559-aadd-3a67eef17314">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ea36d4aa-274f-4559-aadd-3a67eef17314" tabindex="-1" role="dialog" aria-labelledby="uuid-c65f8b2d-e666-45c9-b03c-c4cfbe52c41c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-931dcffb-a348-421e-b399-62fdeb463880">bibtex</h4>
+        <h4 class="modal-title" id="uuid-c65f8b2d-e666-45c9-b03c-c4cfbe52c41c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bengone2000,
+      <div class="modal-body"> <pre>@article{Bengone2000,
     author = {O. Bengone, M. Alouani, P. Bl\&quot;ochl, and Hugel, J.},
     title = &quot;Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -957,11 +916,11 @@ Phys. Rev. B **62**, 16392 (1994)
     pages = &quot;16392&quot;,
     year = &quot;1994&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DFT+U"> /topics/DFT+U </a>
 * * *
 
 
@@ -972,16 +931,15 @@ Bergeron, D., Tremblay, A.-M. S.
 Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation  
 arXiv e-prints **arXiv:cond-mat.str-el**, 1507.01012 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ea43f3ba-3504-488c-8cb9-e9336d9fe223">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ea43f3ba-3504-488c-8cb9-e9336d9fe223" tabindex="-1" role="dialog" aria-labelledby="uuid-b8b718e8-242d-4200-af67-bd95f9849797">
+<a data-toggle="modal" href="#uuid-5ef6e4b3-9165-45b6-84cb-4c3837910cce">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-5ef6e4b3-9165-45b6-84cb-4c3837910cce" tabindex="-1" role="dialog" aria-labelledby="uuid-78ef36b1-6e1c-4d61-8dee-a40c85cdb5e1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b8b718e8-242d-4200-af67-bd95f9849797">bibtex</h4>
+        <h4 class="modal-title" id="uuid-78ef36b1-6e1c-4d61-8dee-a40c85cdb5e1">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bergeron2015,
+      <div class="modal-body"> <pre>@article{Bergeron2015,
     author = &quot;Bergeron, D. and Tremblay, A.-M. S.&quot;,
     title = &quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;,
     journal = &quot;arXiv e-prints&quot;,
@@ -992,11 +950,11 @@ arXiv e-prints **arXiv:cond-mat.str-el**, 1507.01012 (2015)
     adsurl = &quot;http://adsabs.harvard.edu/abs/2015arXiv150701012B&quot;,
     adsnote = &quot;Provided by the SAO/NASA Astrophysics Data System&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -1007,16 +965,15 @@ Bergeron, D., Tremblay, A.-M.S.
 Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation  
 Phys. Rev. E **94**, 023303 (2016)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-930bb42c-d09e-4087-bf60-b77387c8bf53">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-930bb42c-d09e-4087-bf60-b77387c8bf53" tabindex="-1" role="dialog" aria-labelledby="uuid-17986d25-89d2-4be0-a613-c2fe930cf923">
+<a data-toggle="modal" href="#uuid-cc4f16ed-d5d6-4e1b-a9b4-371a65580569">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-cc4f16ed-d5d6-4e1b-a9b4-371a65580569" tabindex="-1" role="dialog" aria-labelledby="uuid-57518bab-a4ad-4677-aa48-d95abea2d00a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-17986d25-89d2-4be0-a613-c2fe930cf923">bibtex</h4>
+        <h4 class="modal-title" id="uuid-57518bab-a4ad-4677-aa48-d95abea2d00a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bergeron2016,
+      <div class="modal-body"> <pre>@article{Bergeron2016,
     author = &quot;Bergeron, D. and Tremblay, A.-M.S.&quot;,
     title = &quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;,
     journal = &quot;Phys. Rev. E&quot;,
@@ -1024,11 +981,11 @@ Phys. Rev. E **94**, 023303 (2016)
     pages = &quot;023303&quot;,
     year = &quot;2016&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -1038,17 +995,16 @@ Phys. Rev. E **94**, 023303 (2016)
 Bieder, J., Amadon, B.  
 Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles  
 Phys. Rev. B **89**, 195132 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.89.195132 target="_blank">https://doi.org/10.1103/PhysRevB.89.195132</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-5497e827-1e46-425c-b42a-588b476e700b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-5497e827-1e46-425c-b42a-588b476e700b" tabindex="-1" role="dialog" aria-labelledby="uuid-7213d5f6-88d7-4e46-ad2d-e1011cde61c9">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.89.195132" target="_blank">https://doi.org/10.1103/PhysRevB.89.195132</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-a6bbd372-58d8-4b42-9246-8155695ef1b1">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a6bbd372-58d8-4b42-9246-8155695ef1b1" tabindex="-1" role="dialog" aria-labelledby="uuid-62e6544f-9692-463e-8fd7-4956e99393f7">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7213d5f6-88d7-4e46-ad2d-e1011cde61c9">bibtex</h4>
+        <h4 class="modal-title" id="uuid-62e6544f-9692-463e-8fd7-4956e99393f7">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bieder2014,
+      <div class="modal-body"> <pre>@article{Bieder2014,
     author = &quot;Bieder, J. and Amadon, B.&quot;,
     title = &quot;Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1060,11 +1016,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.195132 target="_blank">https://
     numpages = &quot;7&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -1074,17 +1030,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.195132 target="_blank">https://
 Bl\"{o}chl, P.E.  
 Projector augmented-wave method  
 Phys. Rev. B **50**, 17953-17979 (1994)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.50.17953 target="_blank">https://doi.org/10.1103/PhysRevB.50.17953</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2265135f-f840-44f3-b80f-8c6b90a07480">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2265135f-f840-44f3-b80f-8c6b90a07480" tabindex="-1" role="dialog" aria-labelledby="uuid-965e5a15-0808-4845-9cca-71c7418469c2">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.50.17953" target="_blank">https://doi.org/10.1103/PhysRevB.50.17953</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-2da4f8fb-f9e8-4d8a-91f5-a27167cfeb35">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2da4f8fb-f9e8-4d8a-91f5-a27167cfeb35" tabindex="-1" role="dialog" aria-labelledby="uuid-18166c34-d850-4920-b47e-bc719e5b5694">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-965e5a15-0808-4845-9cca-71c7418469c2">bibtex</h4>
+        <h4 class="modal-title" id="uuid-18166c34-d850-4920-b47e-bc719e5b5694">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bloechl1994,
+      <div class="modal-body"> <pre>@article{Bloechl1994,
     author = {Bl\&quot;{o}chl, P.E.},
     title = &quot;Projector augmented-wave method&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1093,8 +1048,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.50.17953 target="_blank">https://d
     pages = &quot;17953-17979&quot;,
     doi = &quot;10.1103/PhysRevB.50.17953&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1108,16 +1062,15 @@ Bockstedte, M., Kley, A., Neugebauer, J., Scheffler, M.
 Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics  
 Comp. Phys. Comm. **107**, 187 (1997)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-e9b73292-d94e-4a8d-b465-fce10580fba8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-e9b73292-d94e-4a8d-b465-fce10580fba8" tabindex="-1" role="dialog" aria-labelledby="uuid-c5a8fe0d-afad-44e8-bbf4-c3bd9ff2bae1">
+<a data-toggle="modal" href="#uuid-2eb2078b-3934-41ff-913c-b74a2ef8030d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2eb2078b-3934-41ff-913c-b74a2ef8030d" tabindex="-1" role="dialog" aria-labelledby="uuid-2059807c-0c44-4d30-8a82-3e30e34201b3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c5a8fe0d-afad-44e8-bbf4-c3bd9ff2bae1">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2059807c-0c44-4d30-8a82-3e30e34201b3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bockstedte1997,
+      <div class="modal-body"> <pre>@article{Bockstedte1997,
     Author = &quot;Bockstedte, M. and Kley, A. and Neugebauer, J. and Scheffler, M.&quot;,
     title = &quot;Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics&quot;,
     Journal = &quot;Comp. Phys. Comm.&quot;,
@@ -1125,8 +1078,7 @@ Comp. Phys. Comm. **107**, 187 (1997)
     Pages = &quot;187&quot;,
     Year = &quot;1997&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1139,17 +1091,16 @@ Comp. Phys. Comm. **107**, 187 (1997)
 Boro\'nski, E., Nieminen, R. M.  
 Electron-positron density-functional theory  
 Phys. Rev. B **34**, 3820 (1986)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.34.3820 target="_blank">https://doi.org/10.1103/PhysRevB.34.3820</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-812975bd-61fe-4d94-9c08-d03fd17f2bfa">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-812975bd-61fe-4d94-9c08-d03fd17f2bfa" tabindex="-1" role="dialog" aria-labelledby="uuid-bffc349f-1d42-4b1a-aac7-010010771811">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.34.3820" target="_blank">https://doi.org/10.1103/PhysRevB.34.3820</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-30964e82-4610-4d1f-a906-3e63887fc7bd">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-30964e82-4610-4d1f-a906-3e63887fc7bd" tabindex="-1" role="dialog" aria-labelledby="uuid-f57111bf-2659-4e1b-b8fb-07ca26e5e56c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bffc349f-1d42-4b1a-aac7-010010771811">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f57111bf-2659-4e1b-b8fb-07ca26e5e56c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Boronski1986,
+      <div class="modal-body"> <pre>@article{Boronski1986,
     author = &quot;Boro\&#x27;nski, E. and Nieminen, R. M.&quot;,
     title = &quot;Electron-positron density-functional theory&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1160,8 +1111,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.34.3820 target="_blank">https://do
     doi = &quot;10.1103/PhysRevB.34.3820&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1175,16 +1125,15 @@ Bottin, F., Leroux, S., Knyazev, A., Z{\'e}rah, G.
 Large-scale ab initio calculations based on three levels of parallelization  
 Comp. Mat. Sci. **42**, 329--336 (2008)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-7730f2b4-f307-4d25-9725-842b30d4767b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-7730f2b4-f307-4d25-9725-842b30d4767b" tabindex="-1" role="dialog" aria-labelledby="uuid-79f3e527-8427-4c8a-8bf5-98e3b8ad41c7">
+<a data-toggle="modal" href="#uuid-4242af44-1bf1-4ee0-845b-51d537c1a0ef">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4242af44-1bf1-4ee0-845b-51d537c1a0ef" tabindex="-1" role="dialog" aria-labelledby="uuid-53f3bc5f-8506-408a-9376-36cb103da19e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-79f3e527-8427-4c8a-8bf5-98e3b8ad41c7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-53f3bc5f-8506-408a-9376-36cb103da19e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bottin2008,
+      <div class="modal-body"> <pre>@article{Bottin2008,
     author = &quot;Bottin, F. and Leroux, S. and Knyazev, A. and Z{\&#x27;e}rah, G.&quot;,
     title = &quot;Large-scale ab initio calculations based on three levels of parallelization&quot;,
     journal = &quot;Comp. Mat. Sci.&quot;,
@@ -1194,11 +1143,11 @@ Comp. Mat. Sci. **42**, 329--336 (2008)
     year = &quot;2008&quot;,
     publisher = &quot;Elsevier&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/GWls"> /topics/GWls </a>, <a href="/topics/parallelism"> /topics/parallelism </a>
 * * *
 
 
@@ -1208,17 +1157,16 @@ Comp. Mat. Sci. **42**, 329--336 (2008)
 Bousquet, E., Spaldin, N. A., Delaney, K. T.  
 Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity  
 Phys. Rev. Lett. **106**, 107202 (2011)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.106.107202 target="_blank">https://doi.org/10.1103/PhysRevLett.106.107202</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-749ceec8-45cd-425f-9e02-df11ed1c1609">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-749ceec8-45cd-425f-9e02-df11ed1c1609" tabindex="-1" role="dialog" aria-labelledby="uuid-3a250231-bc83-4a8a-9bb7-c3abea82774f">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.106.107202" target="_blank">https://doi.org/10.1103/PhysRevLett.106.107202</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-06607d90-5ca8-4ebc-81bb-b14f4026653a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-06607d90-5ca8-4ebc-81bb-b14f4026653a" tabindex="-1" role="dialog" aria-labelledby="uuid-4cb55ed6-24a1-40fc-9f61-4fe91898bc64">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3a250231-bc83-4a8a-9bb7-c3abea82774f">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4cb55ed6-24a1-40fc-9f61-4fe91898bc64">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bousquet2011,
+      <div class="modal-body"> <pre>@article{Bousquet2011,
     author = &quot;Bousquet, E. and Spaldin, N. A. and Delaney, K. T.&quot;,
     title = &quot;Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -1227,11 +1175,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.106.107202 target="_blank">http
     year = &quot;2011&quot;,
     doi = &quot;10.1103/PhysRevLett.106.107202&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/MagField"> /topics/MagField </a>
 * * *
 
 
@@ -1242,16 +1190,15 @@ Bruneval, F., Vast, N., Reining, L.
 Effect of self-consistency on quasiparticles in solids  
 Phys. Rev. B **74**, 045102 (2006)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-20da8088-fbe1-4c69-b489-ef4f720d694d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-20da8088-fbe1-4c69-b489-ef4f720d694d" tabindex="-1" role="dialog" aria-labelledby="uuid-4db43b64-eade-4bc4-8e06-51d8ddeebfec">
+<a data-toggle="modal" href="#uuid-0ef53238-803f-4894-8047-db1ebd2beae1">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0ef53238-803f-4894-8047-db1ebd2beae1" tabindex="-1" role="dialog" aria-labelledby="uuid-d2915c79-96fe-4a21-aa3b-c0df807fd5f6">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4db43b64-eade-4bc4-8e06-51d8ddeebfec">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d2915c79-96fe-4a21-aa3b-c0df807fd5f6">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bruneval2006,
+      <div class="modal-body"> <pre>@article{Bruneval2006,
     author = &quot;Bruneval, F. and Vast, N. and Reining, L.&quot;,
     title = &quot;Effect of self-consistency on quasiparticles in solids&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1259,8 +1206,7 @@ Phys. Rev. B **74**, 045102 (2006)
     pages = &quot;045102&quot;,
     year = &quot;2006&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1273,17 +1219,16 @@ Phys. Rev. B **74**, 045102 (2006)
 Bruneval, F., Gonze, X.  
 Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems  
 Phys. Rev. B **78**, 085125 (2008)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.78.085125 target="_blank">https://doi.org/10.1103/PhysRevB.78.085125</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-aa9c6d22-06cd-4652-952e-0cd7fe2b5c0a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-aa9c6d22-06cd-4652-952e-0cd7fe2b5c0a" tabindex="-1" role="dialog" aria-labelledby="uuid-7c08f53f-9332-46c8-98f5-d54d7e4e3167">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.78.085125" target="_blank">https://doi.org/10.1103/PhysRevB.78.085125</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-88a38d19-bf2b-401c-941b-339f11a9fbf3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-88a38d19-bf2b-401c-941b-339f11a9fbf3" tabindex="-1" role="dialog" aria-labelledby="uuid-0203ab8f-fbe8-4300-9dd8-7dff5e8a5f72">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7c08f53f-9332-46c8-98f5-d54d7e4e3167">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0203ab8f-fbe8-4300-9dd8-7dff5e8a5f72">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bruneval2008,
+      <div class="modal-body"> <pre>@article{Bruneval2008,
     author = &quot;Bruneval, F. and Gonze, X.&quot;,
     title = &quot;Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1295,11 +1240,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.78.085125 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.78.085125&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
 * * *
 
 
@@ -1309,17 +1254,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.78.085125 target="_blank">https://
 Bruneval, F.  
 Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects  
 Phys. Rev. Lett. **108**, 256403 (2012)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.108.256403 target="_blank">https://doi.org/10.1103/PhysRevLett.108.256403</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-af797b08-31f8-4e8e-80ab-1b90c9fac44c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-af797b08-31f8-4e8e-80ab-1b90c9fac44c" tabindex="-1" role="dialog" aria-labelledby="uuid-68e9bda5-0a95-48ff-a403-686515ce5e90">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.108.256403" target="_blank">https://doi.org/10.1103/PhysRevLett.108.256403</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-84dcc5ff-9fcf-4454-a427-a7b43c04e61e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-84dcc5ff-9fcf-4454-a427-a7b43c04e61e" tabindex="-1" role="dialog" aria-labelledby="uuid-d8eed2ed-ee9c-4223-b669-902d143fe73e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-68e9bda5-0a95-48ff-a403-686515ce5e90">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d8eed2ed-ee9c-4223-b669-902d143fe73e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bruneval2012,
+      <div class="modal-body"> <pre>@article{Bruneval2012,
     author = &quot;Bruneval, F.&quot;,
     title = &quot;Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -1331,11 +1275,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.108.256403 target="_blank">http
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevLett.108.256403&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
 * * *
 
 
@@ -1345,17 +1289,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.108.256403 target="_blank">http
 Bruneval, F., Crocombette, J.-P., Gonze, X., Dorado, B., Torrent, M., Jollet, F.  
 Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited  
 Phys. Rev. B **89**, 045116 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.89.045116 target="_blank">https://doi.org/10.1103/PhysRevB.89.045116</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-d756fb62-a949-4be5-9bb5-237bae937cd1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d756fb62-a949-4be5-9bb5-237bae937cd1" tabindex="-1" role="dialog" aria-labelledby="uuid-b82635cf-38ed-488a-9e9f-8c4366df2269">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.89.045116" target="_blank">https://doi.org/10.1103/PhysRevB.89.045116</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-2a4d081f-b635-43a6-9820-e3cd1809912d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2a4d081f-b635-43a6-9820-e3cd1809912d" tabindex="-1" role="dialog" aria-labelledby="uuid-32a85ba1-5328-4d90-8bdd-604a807623ef">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b82635cf-38ed-488a-9e9f-8c4366df2269">bibtex</h4>
+        <h4 class="modal-title" id="uuid-32a85ba1-5328-4d90-8bdd-604a807623ef">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Bruneval2014,
+      <div class="modal-body"> <pre>@article{Bruneval2014,
     author = &quot;Bruneval, F. and Crocombette, J.-P. and Gonze, X. and Dorado, B. and Torrent, M. and Jollet, F.&quot;,
     title = &quot;Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1367,11 +1310,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.045116 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.89.045116&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Coulomb"> /topics/Coulomb </a>
 * * *
 
 
@@ -1382,16 +1325,15 @@ Calloni, A., Dupasquier, A., Ferragut, R., Folegati, P., Iglesias, M.M., Makkone
 Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study  
 Phys. Rev. B **72**, 054112 (2005)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-894f682e-e03e-4894-8206-c1352fd36573">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-894f682e-e03e-4894-8206-c1352fd36573" tabindex="-1" role="dialog" aria-labelledby="uuid-bcf69b3a-b88a-4e15-9f5f-a2776ddc8658">
+<a data-toggle="modal" href="#uuid-f627f5c6-7be9-48d8-bca0-5bb2374298dd">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f627f5c6-7be9-48d8-bca0-5bb2374298dd" tabindex="-1" role="dialog" aria-labelledby="uuid-7ed952d0-a936-4b02-80ba-c12395a7f578">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bcf69b3a-b88a-4e15-9f5f-a2776ddc8658">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7ed952d0-a936-4b02-80ba-c12395a7f578">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Calloni2005,
+      <div class="modal-body"> <pre>@article{Calloni2005,
     author = &quot;Calloni, A. and Dupasquier, A. and Ferragut, R. and Folegati, P. and Iglesias, M.M. and Makkonen, I. and Puska, M.J.&quot;,
     title = &quot;Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1401,8 +1343,7 @@ Phys. Rev. B **72**, 054112 (2005)
     year = &quot;2005&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1415,17 +1356,16 @@ Phys. Rev. B **72**, 054112 (2005)
 Campillo, I., Pitarke, J. M., Eguiluz, A. G.  
 Electronic stopping power of aluminum crystal  
 Phys. Rev. B **58**, 10307 - 10314 (1998)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.58.10307 target="_blank">https://doi.org/10.1103/PhysRevB.58.10307</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-38d6d7cb-6c42-4cfb-a0e2-f8e2adaf4c52">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-38d6d7cb-6c42-4cfb-a0e2-f8e2adaf4c52" tabindex="-1" role="dialog" aria-labelledby="uuid-c77f6df2-243c-4c4c-9487-91af5e2a6862">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.58.10307" target="_blank">https://doi.org/10.1103/PhysRevB.58.10307</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-dd213454-e8e4-4f5e-9544-70cd50e2f16c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-dd213454-e8e4-4f5e-9544-70cd50e2f16c" tabindex="-1" role="dialog" aria-labelledby="uuid-1ed8ceb1-e73f-496c-923c-befebc27b434">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c77f6df2-243c-4c4c-9487-91af5e2a6862">bibtex</h4>
+        <h4 class="modal-title" id="uuid-1ed8ceb1-e73f-496c-923c-befebc27b434">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Campillo1998,
+      <div class="modal-body"> <pre>@article{Campillo1998,
     author = &quot;Campillo, I. and Pitarke, J. M. and Eguiluz, A. G.&quot;,
     title = &quot;Electronic stopping power of aluminum crystal&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1435,11 +1375,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.58.10307 target="_blank">https://d
     year = &quot;1998&quot;,
     doi = &quot;10.1103/PhysRevB.58.10307&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RandStopPow"> /topics/RandStopPow </a>
 * * *
 
 
@@ -1449,17 +1389,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.58.10307 target="_blank">https://d
 Cappellini, G., Del Sole, R., Reining, L., Bechstedt, F.  
 Model dielectric function for semiconductors  
 Phys. Rev. B **47**, 9892--9895 (1993)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.47.9892 target="_blank">https://doi.org/10.1103/PhysRevB.47.9892</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-3096d1e7-90c3-47fb-9ddc-51e9bb70372a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3096d1e7-90c3-47fb-9ddc-51e9bb70372a" tabindex="-1" role="dialog" aria-labelledby="uuid-e2f5a4dc-4df1-4944-8763-5cfc1d527e67">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.47.9892" target="_blank">https://doi.org/10.1103/PhysRevB.47.9892</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-658d845f-cf1f-459a-9a52-61ef5aaa7b2b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-658d845f-cf1f-459a-9a52-61ef5aaa7b2b" tabindex="-1" role="dialog" aria-labelledby="uuid-e47927ed-3761-4c7e-baca-2b544c612fed">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e2f5a4dc-4df1-4944-8763-5cfc1d527e67">bibtex</h4>
+        <h4 class="modal-title" id="uuid-e47927ed-3761-4c7e-baca-2b544c612fed">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Cappellini1993,
+      <div class="modal-body"> <pre>@article{Cappellini1993,
     author = &quot;Cappellini, G. and Del Sole, R. and Reining, L. and Bechstedt, F.&quot;,
     title = &quot;Model dielectric function for semiconductors&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1472,11 +1411,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.47.9892 target="_blank">https://do
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.47.9892&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -1486,17 +1425,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.47.9892 target="_blank">https://do
 Caracas, R., Cohen, R.E.  
 Prediction of polar ordered oxynitride perovskites  
 J. Appl. Phys. Lett. **91**, 092902 (2007)  
-DOI: <a href=https://doi.org/10.1063/1.2776370 target="_blank">https://doi.org/10.1063/1.2776370</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-550685e0-1d4b-419a-8c7f-e65f0de4e7e5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-550685e0-1d4b-419a-8c7f-e65f0de4e7e5" tabindex="-1" role="dialog" aria-labelledby="uuid-7444cf44-f934-485b-8632-9b99b6c3a03e">
+DOI: <a href="https://doi.org/10.1063/1.2776370" target="_blank">https://doi.org/10.1063/1.2776370</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-ed898921-c6d5-4e13-9bb1-079a2ae9bb17">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ed898921-c6d5-4e13-9bb1-079a2ae9bb17" tabindex="-1" role="dialog" aria-labelledby="uuid-5299df57-759a-418d-9d1f-a3668d51e0ac">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7444cf44-f934-485b-8632-9b99b6c3a03e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5299df57-759a-418d-9d1f-a3668d51e0ac">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Caracas2007,
+      <div class="modal-body"> <pre>@article{Caracas2007,
     author = &quot;Caracas, R. and Cohen, R.E.&quot;,
     title = &quot;Prediction of polar ordered oxynitride perovskites&quot;,
     journal = &quot;J. Appl. Phys. Lett.&quot;,
@@ -1507,11 +1445,11 @@ DOI: <a href=https://doi.org/10.1063/1.2776370 target="_blank">https://doi.org/1
     doi = &quot;10.1063/1.2776370&quot;,
     publisher = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -1521,17 +1459,16 @@ DOI: <a href=https://doi.org/10.1063/1.2776370 target="_blank">https://doi.org/1
 Caracas, R., Cohen, R.E.  
 Post-perovskite phase in selected sesquioxides from density-functional calculations  
 Phys. Rev. B **76**, 184101 (2007)  
-DOI: <a href=https://doi.org/ target="_blank">https://doi.org/</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ea56afb4-ccf2-4b20-9391-f8d3c5866a5f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ea56afb4-ccf2-4b20-9391-f8d3c5866a5f" tabindex="-1" role="dialog" aria-labelledby="uuid-499334c8-6070-4fdd-be70-137c2be28cfb">
+DOI: <a href="https://doi.org/" target="_blank">https://doi.org/</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-71e326ca-1095-40c5-9bc4-492c80b1e05e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-71e326ca-1095-40c5-9bc4-492c80b1e05e" tabindex="-1" role="dialog" aria-labelledby="uuid-6079db09-a739-4fd3-b8e2-d21e62901276">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-499334c8-6070-4fdd-be70-137c2be28cfb">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6079db09-a739-4fd3-b8e2-d21e62901276">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Caracas2007a,
+      <div class="modal-body"> <pre>@article{Caracas2007a,
     author = &quot;Caracas, R. and Cohen, R.E.&quot;,
     title = &quot;Post-perovskite phase in selected sesquioxides from density-functional calculations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1542,11 +1479,11 @@ DOI: <a href=https://doi.org/ target="_blank">https://doi.org/</a><!-- Links -->
     doi = &quot;&quot;,
     publisher = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -1556,17 +1493,16 @@ DOI: <a href=https://doi.org/ target="_blank">https://doi.org/</a><!-- Links -->
 Caracas, R.  
 Dynamical Instabilities of Ice X  
 Phys. Rev. Lett. **101**, 085502 (2008)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.101.085502 target="_blank">https://doi.org/10.1103/PhysRevLett.101.085502</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-799eaccd-284b-41e9-a382-51a494ed192a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-799eaccd-284b-41e9-a382-51a494ed192a" tabindex="-1" role="dialog" aria-labelledby="uuid-88b76bc0-f80a-44b9-ac1e-840bc7df8a04">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.101.085502" target="_blank">https://doi.org/10.1103/PhysRevLett.101.085502</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-20b52501-149f-4ba0-97d1-c1e30f25d3b5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-20b52501-149f-4ba0-97d1-c1e30f25d3b5" tabindex="-1" role="dialog" aria-labelledby="uuid-f3e056ab-24e3-46c4-9a0f-8d03f20efb27">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-88b76bc0-f80a-44b9-ac1e-840bc7df8a04">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f3e056ab-24e3-46c4-9a0f-8d03f20efb27">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Caracas2008,
+      <div class="modal-body"> <pre>@article{Caracas2008,
     author = &quot;Caracas, R.&quot;,
     title = &quot;Dynamical Instabilities of Ice X&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -1577,11 +1513,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.101.085502 target="_blank">http
     doi = &quot;10.1103/PhysRevLett.101.085502&quot;,
     publisher = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -1591,17 +1527,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.101.085502 target="_blank">http
 Cococcioni, M., de Gironcoli, S.  
 Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method  
 Phys. Rev. B **71**, 035105 (2005)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.71.035105 target="_blank">https://doi.org/10.1103/PhysRevB.71.035105</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-a836493c-d70b-4ca2-b477-201c7fc80a36">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a836493c-d70b-4ca2-b477-201c7fc80a36" tabindex="-1" role="dialog" aria-labelledby="uuid-7d40bd3a-83a7-44cd-bc68-75f2d4ad6a58">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.71.035105" target="_blank">https://doi.org/10.1103/PhysRevB.71.035105</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-8dae9d12-6b67-47fc-b206-21e0e834c323">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8dae9d12-6b67-47fc-b206-21e0e834c323" tabindex="-1" role="dialog" aria-labelledby="uuid-52e9b311-57f9-4e04-b46c-1e7a1665ac5a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7d40bd3a-83a7-44cd-bc68-75f2d4ad6a58">bibtex</h4>
+        <h4 class="modal-title" id="uuid-52e9b311-57f9-4e04-b46c-1e7a1665ac5a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Cococcioni2005,
+      <div class="modal-body"> <pre>@article{Cococcioni2005,
     author = &quot;Cococcioni, M. and de Gironcoli, S.&quot;,
     title = &quot;Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1617,11 +1552,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.71.035105 target="_blank">https://
     timestamp = &quot;2012.06.21&quot;,
     doi = &quot;10.1103/PhysRevB.71.035105&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>
 * * *
 
 
@@ -1632,26 +1567,25 @@ Coleman, Piers
 Introduction to Many-Body Physics  
 Cambridge University Press (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-1f1faf10-744b-48fc-9f1b-42fbb9d815ab">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-1f1faf10-744b-48fc-9f1b-42fbb9d815ab" tabindex="-1" role="dialog" aria-labelledby="uuid-b36f4f3c-3899-46e9-ab47-8a67726dcbba">
+<a data-toggle="modal" href="#uuid-d82cd68c-81db-4f80-9324-125932f13988">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d82cd68c-81db-4f80-9324-125932f13988" tabindex="-1" role="dialog" aria-labelledby="uuid-05499adc-55e0-4315-9a62-a6efd79ed917">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b36f4f3c-3899-46e9-ab47-8a67726dcbba">bibtex</h4>
+        <h4 class="modal-title" id="uuid-05499adc-55e0-4315-9a62-a6efd79ed917">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@book{Coleman2015,
+      <div class="modal-body"> <pre>@book{Coleman2015,
     author = &quot;Coleman, Piers&quot;,
     title = &quot;Introduction to Many-Body Physics&quot;,
     publisher = &quot;Cambridge University Press&quot;,
     year = &quot;2015&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -1662,16 +1596,15 @@ Czyzyk, M. T., Sawatzky, G. A.
 Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$  
 Phys. Rev. B **49**, 14211 (1994)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-013a5fb2-20d7-42dc-8550-64ab647d7d98">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-013a5fb2-20d7-42dc-8550-64ab647d7d98" tabindex="-1" role="dialog" aria-labelledby="uuid-2322cf58-6a12-4f0c-95e5-f6ce1a9256df">
+<a data-toggle="modal" href="#uuid-576ab0d0-ae09-469c-8c1d-0e4630ec8a3f">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-576ab0d0-ae09-469c-8c1d-0e4630ec8a3f" tabindex="-1" role="dialog" aria-labelledby="uuid-4c2b554f-5903-410d-bcb8-ead7fcf51a71">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2322cf58-6a12-4f0c-95e5-f6ce1a9256df">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4c2b554f-5903-410d-bcb8-ead7fcf51a71">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Czyzyk1994,
+      <div class="modal-body"> <pre>@article{Czyzyk1994,
     author = &quot;Czyzyk, M. T. and Sawatzky, G. A.&quot;,
     title = &quot;Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1679,11 +1612,11 @@ Phys. Rev. B **49**, 14211 (1994)
     pages = &quot;14211&quot;,
     year = &quot;1994&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DFT+U"> /topics/DFT+U </a>
 * * *
 
 
@@ -1694,16 +1627,15 @@ Daubechies, I.
 10 Lectures on Wavelets  
 Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104) (1992)isbn: 9780898712742  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-d6f08504-1c8f-4b0b-8d78-66078eddef65">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d6f08504-1c8f-4b0b-8d78-66078eddef65" tabindex="-1" role="dialog" aria-labelledby="uuid-bb6b79ec-d42f-4013-bd48-4ee9e6412d75">
+<a data-toggle="modal" href="#uuid-353beaf0-7a0a-4190-9fb9-2545884ff3e7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-353beaf0-7a0a-4190-9fb9-2545884ff3e7" tabindex="-1" role="dialog" aria-labelledby="uuid-49fb77f5-17db-4db8-b7a9-bae77ec8518d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bb6b79ec-d42f-4013-bd48-4ee9e6412d75">bibtex</h4>
+        <h4 class="modal-title" id="uuid-49fb77f5-17db-4db8-b7a9-bae77ec8518d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@book{Daubechies1992,
+      <div class="modal-body"> <pre>@book{Daubechies1992,
     author = &quot;Daubechies, I.&quot;,
     title = &quot;10 Lectures on Wavelets&quot;,
     publisher = &quot;Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104)&quot;,
@@ -1712,8 +1644,7 @@ Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, 
     keywords = &quot;Mathematics / General, Mathematics / Infinity, Mathematics / Mathematical Analysis, Science / Waves \&amp; Wave Mechanics, Technology \&amp; Engineering / General&quot;,
     language = &quot;en&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1726,17 +1657,16 @@ Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, 
 Dion, M., Rydberg, H., Schr\"oder, E., Langreth, D. C., Lundqvist, B. I.  
 Van der Waals Density Functional for General Geometries  
 Phys. Rev. Lett. **92**, 246401 (2004)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.92.246401 target="_blank">https://doi.org/10.1103/PhysRevLett.92.246401</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-c7c8a5ad-99a5-4cca-9b7a-b1c774ca3ed0">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c7c8a5ad-99a5-4cca-9b7a-b1c774ca3ed0" tabindex="-1" role="dialog" aria-labelledby="uuid-1a2bd668-71b7-45b9-b8e0-b3451703b3c3">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.92.246401" target="_blank">https://doi.org/10.1103/PhysRevLett.92.246401</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-8870a40c-4f4a-4936-a390-01f18e0953c6">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8870a40c-4f4a-4936-a390-01f18e0953c6" tabindex="-1" role="dialog" aria-labelledby="uuid-481af8e2-3c96-4182-bcb6-fffa61b494fe">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1a2bd668-71b7-45b9-b8e0-b3451703b3c3">bibtex</h4>
+        <h4 class="modal-title" id="uuid-481af8e2-3c96-4182-bcb6-fffa61b494fe">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Dion2004,
+      <div class="modal-body"> <pre>@article{Dion2004,
     author = {Dion, M. and Rydberg, H. and Schr\&quot;oder, E. and Langreth, D. C. and Lundqvist, B. I.},
     title = &quot;Van der Waals Density Functional for General Geometries&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -1746,11 +1676,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.92.246401 target="_blank">https
     doi = &quot;10.1103/PhysRevLett.92.246401&quot;,
     note = &quot;Erratum: DOI:10.1103/PhysRevLett.95.109902&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -1761,16 +1691,15 @@ Espejo, C., Rangel, T., Pouillon, Y., Romero, A. H., Gonze, X.
 Wannier functions approach to van der Waals interactions in {ABINIT}  
 Comp. Phys. Comm. **183**, 480 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-f657b6d8-d98c-4350-a14a-975b8bb27a56">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f657b6d8-d98c-4350-a14a-975b8bb27a56" tabindex="-1" role="dialog" aria-labelledby="uuid-2c402572-0123-47cc-9ac0-8ac35acbe0cc">
+<a data-toggle="modal" href="#uuid-a42a0e23-f4c2-45e6-94b7-63ce52cb4744">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a42a0e23-f4c2-45e6-94b7-63ce52cb4744" tabindex="-1" role="dialog" aria-labelledby="uuid-ab0d9190-9745-4c7e-90bc-f1fbba52d8d0">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2c402572-0123-47cc-9ac0-8ac35acbe0cc">bibtex</h4>
+        <h4 class="modal-title" id="uuid-ab0d9190-9745-4c7e-90bc-f1fbba52d8d0">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Espejo2012,
+      <div class="modal-body"> <pre>@article{Espejo2012,
     author = &quot;Espejo, C. and Rangel, T. and Pouillon, Y. and Romero, A. H. and Gonze, X.&quot;,
     title = &quot;Wannier functions approach to van der Waals interactions in {ABINIT}&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -1778,11 +1707,11 @@ Comp. Phys. Comm. **183**, 480 (2012)
     pages = &quot;480&quot;,
     year = &quot;2012&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -1793,16 +1722,15 @@ Folegati, P., Makkonen, I., Ferragut, R., Puska, M.J.
 Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations  
 Phys. Rev. B **75**, 054201 (2007)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-51c0bc19-77e8-42fe-bd07-ab91a99d683d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-51c0bc19-77e8-42fe-bd07-ab91a99d683d" tabindex="-1" role="dialog" aria-labelledby="uuid-18af7114-2ae6-4e70-8ec0-dc32977bc451">
+<a data-toggle="modal" href="#uuid-4ad87b7d-1e94-44db-9f15-7a6c02a5cf7e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4ad87b7d-1e94-44db-9f15-7a6c02a5cf7e" tabindex="-1" role="dialog" aria-labelledby="uuid-5701c608-3b61-44cb-91cf-348ca81b4083">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-18af7114-2ae6-4e70-8ec0-dc32977bc451">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5701c608-3b61-44cb-91cf-348ca81b4083">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Folegati2007,
+      <div class="modal-body"> <pre>@article{Folegati2007,
     author = &quot;Folegati, P. and Makkonen, I. and Ferragut, R. and Puska, M.J.&quot;,
     title = &quot;Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1812,8 +1740,7 @@ Phys. Rev. B **75**, 054201 (2007)
     year = &quot;2007&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1827,16 +1754,15 @@ Fr\'esard, Raymond, Kotliar, Gabriel
 Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model  
 Phys. Rev. B **56**, 12909 (1997)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-5c498e72-ba15-454c-bcfe-aeecee6917c8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-5c498e72-ba15-454c-bcfe-aeecee6917c8" tabindex="-1" role="dialog" aria-labelledby="uuid-7f1e155f-2c10-47a4-a696-737f935f53ac">
+<a data-toggle="modal" href="#uuid-d226afca-80ab-475d-826a-a4028bc12818">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d226afca-80ab-475d-826a-a4028bc12818" tabindex="-1" role="dialog" aria-labelledby="uuid-c69efd23-9253-44f9-a930-0ec5a088afcb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7f1e155f-2c10-47a4-a696-737f935f53ac">bibtex</h4>
+        <h4 class="modal-title" id="uuid-c69efd23-9253-44f9-a930-0ec5a088afcb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Fresard1997,
+      <div class="modal-body"> <pre>@article{Fresard1997,
     author = &quot;Fr\&#x27;esard, Raymond and Kotliar, Gabriel&quot;,
     title = &quot;Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -1844,11 +1770,11 @@ Phys. Rev. B **56**, 12909 (1997)
     pages = &quot;12909&quot;,
     year = &quot;1997&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -1858,17 +1784,16 @@ Phys. Rev. B **56**, 12909 (1997)
 Freund, R. W., Nachtigal, N. M.  
 Software for simplified {L}anczos and {QMR} algorithms  
 Applied Numerical Mathematics **19**, 319 (1995)  
-DOI: <a href=https://doi.org/10.1016/0168-9274(95)00089-5 target="_blank">https://doi.org/10.1016/0168-9274(95)00089-5</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-c4b7d3fa-20bc-4395-b3a8-741d81bb7201">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c4b7d3fa-20bc-4395-b3a8-741d81bb7201" tabindex="-1" role="dialog" aria-labelledby="uuid-22d3fa69-db73-4dc7-bbd0-d3d25fa7e8d7">
+DOI: <a href="https://doi.org/10.1016/0168-9274(95)00089-5" target="_blank">https://doi.org/10.1016/0168-9274(95)00089-5</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-c66e8674-af5d-43dc-9e2d-d42cb7b53ae3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-c66e8674-af5d-43dc-9e2d-d42cb7b53ae3" tabindex="-1" role="dialog" aria-labelledby="uuid-04b039b9-90a6-4eac-88ca-19049e90de6e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-22d3fa69-db73-4dc7-bbd0-d3d25fa7e8d7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-04b039b9-90a6-4eac-88ca-19049e90de6e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Freund1995,
+      <div class="modal-body"> <pre>@article{Freund1995,
     author = &quot;Freund, R. W. and Nachtigal, N. M.&quot;,
     title = &quot;Software for simplified {L}anczos and {QMR} algorithms&quot;,
     journal = &quot;Applied Numerical Mathematics&quot;,
@@ -1877,11 +1802,11 @@ DOI: <a href=https://doi.org/10.1016/0168-9274(95)00089-5 target="_blank">https:
     pages = &quot;319&quot;,
     doi = &quot;10.1016/0168-9274(95)00089-5&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -1891,17 +1816,16 @@ DOI: <a href=https://doi.org/10.1016/0168-9274(95)00089-5 target="_blank">https:
 Fuchs, M., Scheffler, M.  
 Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory  
 Comp. Phys. Comm. **119**, 67 - 98 (1999)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/S001046559800201X target="_black">http://www.sciencedirect.com/science/article/pii/S001046559800201X</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-e21f8a30-328e-431b-b348-7f4b70ccebd8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-e21f8a30-328e-431b-b348-7f4b70ccebd8" tabindex="-1" role="dialog" aria-labelledby="uuid-0be98891-9274-4222-b762-c9fc9c1b3f3b">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S001046559800201X" target="_blank">http://www.sciencedirect.com/science/article/pii/S001046559800201X</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-f4b4780d-4051-45e9-ae38-0cc95f876b97">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f4b4780d-4051-45e9-ae38-0cc95f876b97" tabindex="-1" role="dialog" aria-labelledby="uuid-4ca38daa-6a77-4f6a-bc90-c3d6e24bfc6d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-0be98891-9274-4222-b762-c9fc9c1b3f3b">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4ca38daa-6a77-4f6a-bc90-c3d6e24bfc6d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Fuchs1999,
+      <div class="modal-body"> <pre>@article{Fuchs1999,
     author = &quot;Fuchs, M. and Scheffler, M.&quot;,
     title = &quot;Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -1914,8 +1838,7 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S001046559800201X 
     doi = &quot;10.1016/S0010-4655(98)00201-X&quot;,
     url = &quot;http://www.sciencedirect.com/science/article/pii/S001046559800201X&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1928,17 +1851,16 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S001046559800201X 
 Garrity, K.F., Bennett, J.W., Rabe, K.M., Vanderbilt, D.  
 Pseudopotentials for high-throughput {DFT} calculations  
 Comp. Mat. Sci. **81**, 446 - 452 (2014)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025613005077 target="_black">http://www.sciencedirect.com/science/article/pii/S0927025613005077</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-77203155-9db8-4524-9158-473ecc6863e3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-77203155-9db8-4524-9158-473ecc6863e3" tabindex="-1" role="dialog" aria-labelledby="uuid-284faf67-82eb-4045-9dc8-ceadc4b7f99e">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025613005077" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025613005077</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-8bb0542d-0824-47e7-8600-91e6054dbd7b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8bb0542d-0824-47e7-8600-91e6054dbd7b" tabindex="-1" role="dialog" aria-labelledby="uuid-b8ded720-f296-4a59-aece-de99fbd47aea">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-284faf67-82eb-4045-9dc8-ceadc4b7f99e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b8ded720-f296-4a59-aece-de99fbd47aea">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Garrity2014,
+      <div class="modal-body"> <pre>@article{Garrity2014,
     author = &quot;Garrity, K.F. and Bennett, J.W. and Rabe, K.M. and Vanderbilt, D.&quot;,
     title = &quot;Pseudopotentials for high-throughput {DFT} calculations&quot;,
     journal = &quot;Comp. Mat. Sci.&quot;,
@@ -1952,8 +1874,7 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025613005077 
     url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025613005077&quot;,
     keywords = &quot;Density functional theory&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -1967,16 +1888,15 @@ Geneste, G., Torrent, M., Bottin, F., Loubeyre, P.
 Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium  
 Phys. Rev. Lett. **109**, 155303 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-6f526535-2483-43bc-99b1-b0a6b78b592e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6f526535-2483-43bc-99b1-b0a6b78b592e" tabindex="-1" role="dialog" aria-labelledby="uuid-dd9a4de3-051e-4d43-b080-2b2ff35ef2ae">
+<a data-toggle="modal" href="#uuid-7924f8a7-8b2d-4ada-b201-dbdd83f77090">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-7924f8a7-8b2d-4ada-b201-dbdd83f77090" tabindex="-1" role="dialog" aria-labelledby="uuid-50d4d0cd-ffa9-49a5-b94c-9862d63d9fa3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-dd9a4de3-051e-4d43-b080-2b2ff35ef2ae">bibtex</h4>
+        <h4 class="modal-title" id="uuid-50d4d0cd-ffa9-49a5-b94c-9862d63d9fa3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Geneste2012,
+      <div class="modal-body"> <pre>@article{Geneste2012,
     Author = &quot;Geneste, G. and Torrent, M. and Bottin, F. and Loubeyre, P.&quot;,
     Title = &quot;Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium&quot;,
     Journal = &quot;Phys. Rev. Lett.&quot;,
@@ -1984,11 +1904,11 @@ Phys. Rev. Lett. **109**, 155303 (2012)
     Pages = &quot;155303&quot;,
     year = &quot;2012&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PIMD"> /topics/PIMD </a>
 * * *
 
 
@@ -1999,16 +1919,15 @@ Geneste, G., Ottochian, A., Hermet, J., Dezanneau, G.
 Proton transport in barium stannate: classical, semi-classical and quantum regimes  
 Phys. Chem. Chem. Phys. **17**, 19104 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-15f010a2-a790-47ab-b592-f746a6e2edcc">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-15f010a2-a790-47ab-b592-f746a6e2edcc" tabindex="-1" role="dialog" aria-labelledby="uuid-28263006-f0bb-4d1b-ae67-17300ce939c3">
+<a data-toggle="modal" href="#uuid-6e25bae8-a30d-438b-be73-ee0782eed69a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6e25bae8-a30d-438b-be73-ee0782eed69a" tabindex="-1" role="dialog" aria-labelledby="uuid-eed8ba7e-2ec0-4735-a132-12ea722db5de">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-28263006-f0bb-4d1b-ae67-17300ce939c3">bibtex</h4>
+        <h4 class="modal-title" id="uuid-eed8ba7e-2ec0-4735-a132-12ea722db5de">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Geneste2015,
+      <div class="modal-body"> <pre>@article{Geneste2015,
     Author = &quot;Geneste, G. and Ottochian, A. and Hermet, J. and Dezanneau, G.&quot;,
     Title = &quot;Proton transport in barium stannate: classical, semi-classical and quantum regimes&quot;,
     Journal = &quot;Phys. Chem. Chem. Phys.&quot;,
@@ -2016,11 +1935,11 @@ Phys. Chem. Chem. Phys. **17**, 19104 (2015)
     Pages = &quot;19104&quot;,
     year = &quot;2015&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PIMD"> /topics/PIMD </a>
 * * *
 
 
@@ -2031,16 +1950,15 @@ Genovese, L., Neelov, L., Goedecker, S., Deutsch, T., Alireza Ghasemi, S., Willa
 Daubechies wavelets as a basis set for density functional pseudopotential calculations  
 J. Chem. Phys. **129**, 014109 (2008)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-7295c2a1-3e25-474a-8f9c-553f883e6ad6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-7295c2a1-3e25-474a-8f9c-553f883e6ad6" tabindex="-1" role="dialog" aria-labelledby="uuid-52ae9123-f13d-4a06-8d46-4c4edb8b864e">
+<a data-toggle="modal" href="#uuid-a6e7c23f-c7a3-4f0c-bf26-f43df25b095a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a6e7c23f-c7a3-4f0c-bf26-f43df25b095a" tabindex="-1" role="dialog" aria-labelledby="uuid-7e2f7175-2f19-429a-9839-273e6f8e76ba">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-52ae9123-f13d-4a06-8d46-4c4edb8b864e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7e2f7175-2f19-429a-9839-273e6f8e76ba">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Genovese2008,
+      <div class="modal-body"> <pre>@article{Genovese2008,
     author = &quot;Genovese, L. and Neelov, L. and Goedecker, S. and Deutsch, T. and Alireza Ghasemi, S. and Willand, A. and Caliste, D. and Zilberberg, O. and Rayson, M. and Bergman, A. and Schneider, R.&quot;,
     title = &quot;Daubechies wavelets as a basis set for density functional pseudopotential calculations&quot;,
     journal = &quot;J. Chem. Phys.&quot;,
@@ -2048,11 +1966,11 @@ J. Chem. Phys. **129**, 014109 (2008)
     volume = &quot;129&quot;,
     pages = &quot;014109&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Wavelets"> /topics/Wavelets </a>
 * * *
 
 
@@ -2063,16 +1981,15 @@ Genovese, L., Ospici, M., Deutsch, T., M\'ehaut, J.-F., Neelov, A., Goedecker, S
 Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture  
 J. Chem. Phys. **131**, 034103 (2009)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-cb87c7d2-3771-4891-ba74-0794e2527b13">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-cb87c7d2-3771-4891-ba74-0794e2527b13" tabindex="-1" role="dialog" aria-labelledby="uuid-35607b0a-27d8-44f8-8410-5a92a38f75e6">
+<a data-toggle="modal" href="#uuid-60dedc50-0511-440e-90fe-0073ce7b3ea4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-60dedc50-0511-440e-90fe-0073ce7b3ea4" tabindex="-1" role="dialog" aria-labelledby="uuid-9537ed8c-af3d-46b6-a6dc-4826030f555d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-35607b0a-27d8-44f8-8410-5a92a38f75e6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9537ed8c-af3d-46b6-a6dc-4826030f555d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Genovese2009,
+      <div class="modal-body"> <pre>@article{Genovese2009,
     author = &quot;Genovese, L. and Ospici, M. and Deutsch, T. and M\&#x27;ehaut, J.-F. and Neelov, A. and Goedecker, S.&quot;,
     title = &quot;Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture&quot;,
     journal = &quot;J. Chem. Phys.&quot;,
@@ -2081,8 +1998,7 @@ J. Chem. Phys. **131**, 034103 (2009)
     pages = &quot;034103&quot;,
     year = &quot;2009&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2095,17 +2011,16 @@ J. Chem. Phys. **131**, 034103 (2009)
 Georges, A., Kotliar, G., Krauth, W., Rozenberg, M.J.  
 Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions  
 Rev. Mod. Phys. **68**, 13--125 (1996)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.68.13 target="_blank">https://doi.org/10.1103/RevModPhys.68.13</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ba0fc48b-fa9f-4f5d-95f8-b90fc5393206">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ba0fc48b-fa9f-4f5d-95f8-b90fc5393206" tabindex="-1" role="dialog" aria-labelledby="uuid-48a9e541-20ea-4a85-aba0-574c7bd7ea2e">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.68.13" target="_blank">https://doi.org/10.1103/RevModPhys.68.13</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-d7d9ee67-6597-4e3b-b921-f6bd6d367cc9">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d7d9ee67-6597-4e3b-b921-f6bd6d367cc9" tabindex="-1" role="dialog" aria-labelledby="uuid-d1b820de-44d7-4268-a862-ec9d91eaca7c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-48a9e541-20ea-4a85-aba0-574c7bd7ea2e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d1b820de-44d7-4268-a862-ec9d91eaca7c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Georges1996,
+      <div class="modal-body"> <pre>@article{Georges1996,
     author = &quot;Georges, A. and Kotliar, G. and Krauth, W. and Rozenberg, M.J.&quot;,
     title = &quot;Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -2116,11 +2031,11 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.68.13 target="_blank">https://do
     issue = &quot;1&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -2130,17 +2045,16 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.68.13 target="_blank">https://do
 Georges, A.  
 Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure  
 {AIP} {C}onf. {P}roc. **715**, 3--74 (2004)  
-DOI: <a href=https://doi.org/10.1063/1.1800733 target="_blank">https://doi.org/10.1063/1.1800733</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-6e0861f4-1b4a-4447-ae84-b1fe03185ff2">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6e0861f4-1b4a-4447-ae84-b1fe03185ff2" tabindex="-1" role="dialog" aria-labelledby="uuid-54b277a2-5c6e-436f-9ff7-e6560aafc285">
+DOI: <a href="https://doi.org/10.1063/1.1800733" target="_blank">https://doi.org/10.1063/1.1800733</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-69125a56-9750-422f-adb1-17109471c4b4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-69125a56-9750-422f-adb1-17109471c4b4" tabindex="-1" role="dialog" aria-labelledby="uuid-5c452e5a-2051-4cd1-a716-28b491c7d85d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-54b277a2-5c6e-436f-9ff7-e6560aafc285">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5c452e5a-2051-4cd1-a716-28b491c7d85d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Georges2004,
+      <div class="modal-body"> <pre>@article{Georges2004,
     author = &quot;Georges, A.&quot;,
     title = &quot;Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure&quot;,
     journal = &quot;{AIP} {C}onf. {P}roc.&quot;,
@@ -2155,11 +2069,11 @@ DOI: <a href=https://doi.org/10.1063/1.1800733 target="_blank">https://doi.org/1
     timestamp = &quot;2012.10.18&quot;,
     doi = &quot;10.1063/1.1800733&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -2169,17 +2083,16 @@ DOI: <a href=https://doi.org/10.1063/1.1800733 target="_blank">https://doi.org/1
 Giannozzi, P., Baroni, S., Bonini, N., Calandra, M., Car, R., Cavazzoni, C., Ceresoli, D., Chiarotti, G.L., Cococcioni, M., Dabo, I., Dal Corso, A., de Gironcoli, S., Fabris, S., Fratesi, G., Gebauer, R., Gerstmann, U., Gougoussis, C., Kokalj, A., Lazzeri, M., Martin-Samos, L., Marzari, N., Mauri, F., Mazzarello, R., Paolini, S., Pasquarello, A., Paulatto, L., Sbraccia, C., Scandolo, S., Sclauzero, G., Seitsonen, A.P., Smogunov, A., Umari, P., Wentzcovitch, R.M.  
 {QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials  
 J. Phys.: Cond. Matt. **21**, 395502 (2009)  
-URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502 target="_black">http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2435b3d8-7c13-4bc9-a601-d8e117a50950">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2435b3d8-7c13-4bc9-a601-d8e117a50950" tabindex="-1" role="dialog" aria-labelledby="uuid-7efea7ea-3fdb-4e57-b601-1d8c711aa9fe">
+URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502" target="_blank">http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-7dcb66af-34e5-4905-b7e2-a7f2eae421fa">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-7dcb66af-34e5-4905-b7e2-a7f2eae421fa" tabindex="-1" role="dialog" aria-labelledby="uuid-d19b91d3-c4dc-4354-b9fb-e282909db225">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7efea7ea-3fdb-4e57-b601-1d8c711aa9fe">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d19b91d3-c4dc-4354-b9fb-e282909db225">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Giannozzi2009,
+      <div class="modal-body"> <pre>@article{Giannozzi2009,
     author = &quot;Giannozzi, P. and Baroni, S. and Bonini, N. and Calandra, M. and Car, R. and Cavazzoni, C. and Ceresoli, D. and Chiarotti, G.L. and Cococcioni, M. and Dabo, I. and Dal Corso, A. and de Gironcoli, S. and Fabris, S. and Fratesi, G. and Gebauer, R. and Gerstmann, U. and Gougoussis, C. and Kokalj, A. and Lazzeri, M. and Martin-Samos, L. and Marzari, N. and Mauri, F. and Mazzarello, R. and Paolini, S. and Pasquarello, A. and Paulatto, L. and Sbraccia, C. and Scandolo, S. and Sclauzero, G. and Seitsonen, A.P. and Smogunov, A. and Umari, P. and Wentzcovitch, R.M.&quot;,
     title = &quot;{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials&quot;,
     journal = &quot;J. Phys.: Cond. Matt.&quot;,
@@ -2189,11 +2102,11 @@ URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502 ta
     url = &quot;http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502&quot;,
     year = &quot;2009&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Coulomb"> /topics/Coulomb </a>
 * * *
 
 
@@ -2203,17 +2116,16 @@ URL: <a href=http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502 ta
 Giantomassi, M., Stankovski, M., Shaltaf, R., Gruning, M., Bruneval, F., Rinke, P., Rignanese, G.M.  
 {Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}  
 Physica Status Solidi B **248**, 275--289 (2011)  
-DOI: <a href=https://doi.org/10.1002/pssb.201046094 target="_blank">https://doi.org/10.1002/pssb.201046094</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-def3441d-cbbd-4314-9159-93ba73fd72c7">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-def3441d-cbbd-4314-9159-93ba73fd72c7" tabindex="-1" role="dialog" aria-labelledby="uuid-c951adb7-eacb-4f46-b979-132482966031">
+DOI: <a href="https://doi.org/10.1002/pssb.201046094" target="_blank">https://doi.org/10.1002/pssb.201046094</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-76016fc0-4109-48a1-8af1-ffe5aa76ccce">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-76016fc0-4109-48a1-8af1-ffe5aa76ccce" tabindex="-1" role="dialog" aria-labelledby="uuid-b6d6f45a-6f0b-46a4-bb19-df4e5f40795d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c951adb7-eacb-4f46-b979-132482966031">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b6d6f45a-6f0b-46a4-bb19-df4e5f40795d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Giantomassi2011,
+      <div class="modal-body"> <pre>@article{Giantomassi2011,
     author = &quot;Giantomassi, M. and Stankovski, M. and Shaltaf, R. and Gruning, M. and Bruneval, F. and Rinke, P. and Rignanese, G.M.&quot;,
     title = &quot;{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}&quot;,
     journal = &quot;Physica Status Solidi B&quot;,
@@ -2223,11 +2135,11 @@ DOI: <a href=https://doi.org/10.1002/pssb.201046094 target="_blank">https://doi.
     pages = &quot;275--289&quot;,
     doi = &quot;10.1002/pssb.201046094&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>, <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -2237,17 +2149,16 @@ DOI: <a href=https://doi.org/10.1002/pssb.201046094 target="_blank">https://doi.
 Gillet, Y., Giantomassi, M., Gonze, X.  
 First-principles study of excitonic effects in Raman intensities  
 Phys. Rev. B **88**, 094305 (2013)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.88.094305 target="_black">http://link.aps.org/doi/10.1103/PhysRevB.88.094305</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-bc72f012-5caa-4083-a9a3-d86dc45061e8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-bc72f012-5caa-4083-a9a3-d86dc45061e8" tabindex="-1" role="dialog" aria-labelledby="uuid-f0826bf5-2c75-49a0-ae8a-3ba6d182794e">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.88.094305" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.88.094305</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-e3df7717-c1cd-4b83-9ae2-15b148d80b2f">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e3df7717-c1cd-4b83-9ae2-15b148d80b2f" tabindex="-1" role="dialog" aria-labelledby="uuid-709164da-c16b-494f-a27d-6ad60556e53d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-f0826bf5-2c75-49a0-ae8a-3ba6d182794e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-709164da-c16b-494f-a27d-6ad60556e53d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gillet2013,
+      <div class="modal-body"> <pre>@article{Gillet2013,
     Author = &quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;,
     Title = &quot;First-principles study of excitonic effects in Raman intensities&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -2261,11 +2172,11 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.88.094305 target="_black">
     Publisher = &quot;American Physical Society&quot;,
     Url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.88.094305&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -2275,17 +2186,16 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.88.094305 target="_black">
 Gillet, Y., Giantomassi, M., Gonze, X.  
 Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra  
 Comput. Phys. Comm. **203C**, 83-93 (2016)  
-DOI: <a href=https://doi.org/10.1016/j.cpc.2016.02.008 target="_blank">https://doi.org/10.1016/j.cpc.2016.02.008</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-635dd208-b247-46c4-b106-5f33eb09121a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-635dd208-b247-46c4-b106-5f33eb09121a" tabindex="-1" role="dialog" aria-labelledby="uuid-057aaa21-5e27-4354-a5f3-7e9390832ebe">
+DOI: <a href="https://doi.org/10.1016/j.cpc.2016.02.008" target="_blank">https://doi.org/10.1016/j.cpc.2016.02.008</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-76fdcd18-c700-466f-a556-3ab6f1713d02">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-76fdcd18-c700-466f-a556-3ab6f1713d02" tabindex="-1" role="dialog" aria-labelledby="uuid-2966e3c2-f217-401c-9bce-e78c21375abb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-057aaa21-5e27-4354-a5f3-7e9390832ebe">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2966e3c2-f217-401c-9bce-e78c21375abb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gillet2015,
+      <div class="modal-body"> <pre>@article{Gillet2015,
     Author = &quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;,
     Title = &quot;Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra&quot;,
     Year = &quot;2016&quot;,
@@ -2296,11 +2206,11 @@ DOI: <a href=https://doi.org/10.1016/j.cpc.2016.02.008 target="_blank">https://d
     Owner = &quot;yannick&quot;,
     Timestamp = &quot;2015.08.27&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -2311,16 +2221,15 @@ Goedecker, S., Teter, M., H\"utter, J.
 Separable dual-space Gaussian pseudopotentials  
 Phys. Rev. B **54**, 1703--1710 (1996)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b803fb6f-65f6-4c93-a5af-6d98752ed234">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b803fb6f-65f6-4c93-a5af-6d98752ed234" tabindex="-1" role="dialog" aria-labelledby="uuid-bbba9f7e-4d5d-42ac-806b-102867d5013a">
+<a data-toggle="modal" href="#uuid-a06e5756-9e90-47f4-8e12-65f45b9e1af0">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a06e5756-9e90-47f4-8e12-65f45b9e1af0" tabindex="-1" role="dialog" aria-labelledby="uuid-b0e0aa21-935f-462e-9f50-521562e26263">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bbba9f7e-4d5d-42ac-806b-102867d5013a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b0e0aa21-935f-462e-9f50-521562e26263">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Goedecker1996,
+      <div class="modal-body"> <pre>@article{Goedecker1996,
     author = {Goedecker, S. and Teter, M. and H\&quot;utter, J.},
     title = &quot;Separable dual-space Gaussian pseudopotentials&quot;,
     volume = &quot;54&quot;,
@@ -2329,11 +2238,11 @@ Phys. Rev. B **54**, 1703--1710 (1996)
     year = &quot;1996&quot;,
     pages = &quot;1703--1710&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/input_variables/basic"> /input_variables/basic </a>
 * * *
 
 
@@ -2343,17 +2252,16 @@ Phys. Rev. B **54**, 1703--1710 (1996)
 Gonze, X., Stumpf, R., Scheffler, M.  
 Analysis of separable potentials  
 Phys. Rev. B **44**, 8503--8513 (1991)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.44.8503 target="_blank">https://doi.org/10.1103/PhysRevB.44.8503</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-d5080a15-bf32-4461-94eb-87f92bc08c7c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d5080a15-bf32-4461-94eb-87f92bc08c7c" tabindex="-1" role="dialog" aria-labelledby="uuid-2248c938-a13e-4bcc-bd1f-e356566e461d">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.44.8503" target="_blank">https://doi.org/10.1103/PhysRevB.44.8503</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-976440d2-700d-4d5b-b3ea-3c8b249cedf0">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-976440d2-700d-4d5b-b3ea-3c8b249cedf0" tabindex="-1" role="dialog" aria-labelledby="uuid-932c2e5f-4585-498e-8570-c25b71a287ee">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2248c938-a13e-4bcc-bd1f-e356566e461d">bibtex</h4>
+        <h4 class="modal-title" id="uuid-932c2e5f-4585-498e-8570-c25b71a287ee">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze1991,
+      <div class="modal-body"> <pre>@article{Gonze1991,
     author = &quot;Gonze, X. and Stumpf, R. and Scheffler, M.&quot;,
     title = &quot;Analysis of separable potentials&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -2365,8 +2273,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.44.8503 target="_blank">https://do
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.44.8503&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2379,17 +2286,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.44.8503 target="_blank">https://do
 Gonze, X.  
 Adiabatic density-functional perturbation theory  
 Phys. Rev. A **52**, 1096--1114 (1995)  
-DOI: <a href=https://doi.org/10.1103/PhysRevA.52.1096 target="_blank">https://doi.org/10.1103/PhysRevA.52.1096</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ac994333-414f-495c-afa5-04395bea7952">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ac994333-414f-495c-afa5-04395bea7952" tabindex="-1" role="dialog" aria-labelledby="uuid-daa8f39c-62fb-4c08-8581-d42cb71d58ce">
+DOI: <a href="https://doi.org/10.1103/PhysRevA.52.1096" target="_blank">https://doi.org/10.1103/PhysRevA.52.1096</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-220f9d57-c044-4917-8915-da83f7a67233">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-220f9d57-c044-4917-8915-da83f7a67233" tabindex="-1" role="dialog" aria-labelledby="uuid-403f3ff8-4e46-4bd6-b11f-6588a39e76db">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-daa8f39c-62fb-4c08-8581-d42cb71d58ce">bibtex</h4>
+        <h4 class="modal-title" id="uuid-403f3ff8-4e46-4bd6-b11f-6588a39e76db">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze1995,
+      <div class="modal-body"> <pre>@article{Gonze1995,
     author = &quot;Gonze, X.&quot;,
     title = &quot;Adiabatic density-functional perturbation theory&quot;,
     journal = &quot;Phys. Rev. A&quot;,
@@ -2399,8 +2305,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevA.52.1096 target="_blank">https://do
     pages = &quot;1096--1114&quot;,
     doi = &quot;10.1103/PhysRevA.52.1096&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2414,16 +2319,15 @@ Gonze, X.
 First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm  
 Phys. Rev. B **55**, 10337--10354 (1997)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-dd0c95eb-4337-42fc-a9fe-2c6f57181f08">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-dd0c95eb-4337-42fc-a9fe-2c6f57181f08" tabindex="-1" role="dialog" aria-labelledby="uuid-bb527f02-7898-4955-b0f8-c22c2394f4ee">
+<a data-toggle="modal" href="#uuid-a69009c4-7a5a-4e8f-af86-acad3ab2eb19">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-a69009c4-7a5a-4e8f-af86-acad3ab2eb19" tabindex="-1" role="dialog" aria-labelledby="uuid-38fe1848-68a7-4e67-9ca9-70188071dee6">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bb527f02-7898-4955-b0f8-c22c2394f4ee">bibtex</h4>
+        <h4 class="modal-title" id="uuid-38fe1848-68a7-4e67-9ca9-70188071dee6">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze1997,
+      <div class="modal-body"> <pre>@article{Gonze1997,
     author = &quot;Gonze, X.&quot;,
     title = &quot;First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -2431,8 +2335,7 @@ Phys. Rev. B **55**, 10337--10354 (1997)
     volume = &quot;55&quot;,
     pages = &quot;10337--10354&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2446,16 +2349,15 @@ Gonze, X., Lee, C.
 Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory  
 Phys. Rev. B **55**, 10355 (1997)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-1b4d11cb-206a-4feb-8198-cb560484e4b1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-1b4d11cb-206a-4feb-8198-cb560484e4b1" tabindex="-1" role="dialog" aria-labelledby="uuid-8751cfff-8c1c-49e2-bf0a-dede5bbdf79d">
+<a data-toggle="modal" href="#uuid-cf33ed3b-8f97-45ab-abd3-0d5966be8283">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-cf33ed3b-8f97-45ab-abd3-0d5966be8283" tabindex="-1" role="dialog" aria-labelledby="uuid-dbbd9f7d-d700-4890-932b-79207b0690a0">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-8751cfff-8c1c-49e2-bf0a-dede5bbdf79d">bibtex</h4>
+        <h4 class="modal-title" id="uuid-dbbd9f7d-d700-4890-932b-79207b0690a0">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze1997a,
+      <div class="modal-body"> <pre>@article{Gonze1997a,
     author = &quot;Gonze, X. and Lee, C.&quot;,
     journal = &quot;Phys. Rev. B&quot;,
     volume = &quot;55&quot;,
@@ -2463,11 +2365,11 @@ Phys. Rev. B **55**, 10355 (1997)
     year = &quot;1997&quot;,
     title = &quot;Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Phonons"> /topics/Phonons </a>
 * * *
 
 
@@ -2478,16 +2380,15 @@ Gonze, X., Beuken, J.-M., Caracas, R., Detraux, F., Fuchs, M., Rignanese, G.-M.,
 First-principles computation of material properties : the ABINIT software project  
 Comp. Mat. Science **25**, 478--492 (2002)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-cbec60b4-600d-45b8-a5cc-88e738b3248c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-cbec60b4-600d-45b8-a5cc-88e738b3248c" tabindex="-1" role="dialog" aria-labelledby="uuid-d1baa6c7-93a5-4240-a6dc-54bb9aaa46c1">
+<a data-toggle="modal" href="#uuid-810d986e-91a7-4f67-8721-77e45a2fcaa4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-810d986e-91a7-4f67-8721-77e45a2fcaa4" tabindex="-1" role="dialog" aria-labelledby="uuid-4cfb8086-d4c0-44ff-a811-f0ae08355971">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d1baa6c7-93a5-4240-a6dc-54bb9aaa46c1">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4cfb8086-d4c0-44ff-a811-f0ae08355971">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze2002,
+      <div class="modal-body"> <pre>@article{Gonze2002,
     author = &quot;Gonze, X. and Beuken, J.-M. and Caracas, R. and Detraux, F. and Fuchs, M. and Rignanese, G.-M. and Sindic, L. and Verstraete, M. and Zerah, G. and Jollet, F. and Torrent, M. and Roy, A. and Mikami, M. and Ghosez, Ph. and Raty, J.-Y. and Allan, D.C.&quot;,
     journal = &quot;Comp. Mat. Science&quot;,
     volume = &quot;25&quot;,
@@ -2495,8 +2396,7 @@ Comp. Mat. Science **25**, 478--492 (2002)
     year = &quot;2002&quot;,
     title = &quot;First-principles computation of material properties : the ABINIT software project&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2510,16 +2410,15 @@ Gonze, X., Rignanese, G.-M., Verstraete, M., Beuken, J.-M., Pouillon, Y., Caraca
 A brief introduction to the ABINIT software package  
 Zeit. Kristallogr **220**, 558-562 (2005)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-5a026cbb-577c-4014-aacb-2eaa9d130937">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-5a026cbb-577c-4014-aacb-2eaa9d130937" tabindex="-1" role="dialog" aria-labelledby="uuid-b2f9d23b-4866-4e27-b5b9-414d6f293300">
+<a data-toggle="modal" href="#uuid-b920fb48-c782-42fb-8f18-94ca81d1f28d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b920fb48-c782-42fb-8f18-94ca81d1f28d" tabindex="-1" role="dialog" aria-labelledby="uuid-41de9352-2e2f-45e8-a9fc-e56ac1b4b4e3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b2f9d23b-4866-4e27-b5b9-414d6f293300">bibtex</h4>
+        <h4 class="modal-title" id="uuid-41de9352-2e2f-45e8-a9fc-e56ac1b4b4e3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze2005,
+      <div class="modal-body"> <pre>@article{Gonze2005,
     author = &quot;Gonze, X. and Rignanese, G.-M. and Verstraete, M. and Beuken, J.-M. and Pouillon, Y. and Caracas, R. and Jollet, F. and Torrent, M. and Zerah, G. and Mikami, M. and Ghosez, Ph. and Veithen, M. and Raty, J.-Y. and Olevano, V. and Bruneval, F. and Reining, L. and Godby, R. and Onida, G. and an D.C. Allan, D.R. Hamann&quot;,
     journal = &quot;Zeit. Kristallogr&quot;,
     volume = &quot;220&quot;,
@@ -2527,8 +2426,7 @@ Zeit. Kristallogr **220**, 558-562 (2005)
     year = &quot;2005&quot;,
     title = &quot;A brief introduction to the ABINIT software package&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2542,16 +2440,15 @@ Gonze, X., Amadon, B., Anglade, P.-M., Beuken, J.-M., Bottin, F., Boulanger, P.,
 {ABINIT}: First-Principle approach to material and nanosystem properties  
 Comp. Phys. Comm. **180**, 2582-2615 (2009)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-0e91980b-28f1-48e1-a83c-5ffd3c311b8f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0e91980b-28f1-48e1-a83c-5ffd3c311b8f" tabindex="-1" role="dialog" aria-labelledby="uuid-991114db-b58b-4b4b-81bf-3c1d302c2c89">
+<a data-toggle="modal" href="#uuid-d4d3799b-28ef-4cd2-8ebc-f769a23aec82">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d4d3799b-28ef-4cd2-8ebc-f769a23aec82" tabindex="-1" role="dialog" aria-labelledby="uuid-367b9ef6-e15c-455b-b1b8-23a1b5a636e8">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-991114db-b58b-4b4b-81bf-3c1d302c2c89">bibtex</h4>
+        <h4 class="modal-title" id="uuid-367b9ef6-e15c-455b-b1b8-23a1b5a636e8">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze2009,
+      <div class="modal-body"> <pre>@article{Gonze2009,
     author = &quot;Gonze, X. and Amadon, B. and Anglade, P.-M. and Beuken, J.-M. and Bottin, F. and Boulanger, P. and Bruneval, F. and Caliste, D. and Caracas, R. and C\^{o}t\&#x27;{e}, M. and Deutsch, T. and Genovese, L. and Ghosez, Ph. and Giantomassi, M. and Goedecker, S. and Hamann, D.R. and Hermet, P. and Jollet, F. and Jomard, G. and Leroux, S. and Mancini, M. and Mazevet, S. and Oliveira, M.J.T. and Onida, G. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Sangalli, D. and Shaltaf, R. and Torrent, M. and Verstraete, M.J. and Zerah, G. and Zwanziger, J.W.&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
     volume = &quot;180&quot;,
@@ -2559,11 +2456,11 @@ Comp. Phys. Comm. **180**, 2582-2615 (2009)
     year = &quot;2009&quot;,
     title = &quot;{ABINIT}: First-Principle approach to material and nanosystem properties&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -2574,16 +2471,15 @@ Gonze, X., Boulanger, P., C\^ot\'e, M.
 Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.  
 Annalen der Physik **523**, 168 (2011)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a2e1f62c-7dcd-4c09-abb2-e9fe2c640099">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a2e1f62c-7dcd-4c09-abb2-e9fe2c640099" tabindex="-1" role="dialog" aria-labelledby="uuid-f5490d4b-2ac3-4560-9cb0-14414261a106">
+<a data-toggle="modal" href="#uuid-28d76313-988a-47f5-8196-091183324e03">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-28d76313-988a-47f5-8196-091183324e03" tabindex="-1" role="dialog" aria-labelledby="uuid-f8cc8c82-62b6-4d1c-836f-c2783c037b9e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-f5490d4b-2ac3-4560-9cb0-14414261a106">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f8cc8c82-62b6-4d1c-836f-c2783c037b9e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze2011,
+      <div class="modal-body"> <pre>@article{Gonze2011,
     author = &quot;Gonze, X. and Boulanger, P. and C\^ot\&#x27;e, M.&quot;,
     title = &quot;Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.&quot;,
     journal = &quot;Annalen der Physik&quot;,
@@ -2591,11 +2487,11 @@ Annalen der Physik **523**, 168 (2011)
     volume = &quot;523&quot;,
     pages = &quot;168&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -2605,17 +2501,16 @@ Annalen der Physik **523**, 168 (2011)
 Gonze, X., Jollet, F., Araujo, F. Abreu, Adams, D., Amadon, B., Applencourt, T., Audouze, C., Beuken, J.-M., Bieder, J., Bokhanchuk, A., Bousquet, E., Bruneval, F., Caliste, D., C\^ot\'e, M., Dahm, F., Pieve, F. Da, Delaveau, M., Gennaro, M. Di, Dorado, B., Espejo, C., Geneste, G., Genovese, L., Gerossier, A., Giantomassi, M., Gillet, Y., Hamann, D.R., He, L., Jomard, G., Janssen, J. Laflamme, Roux, S. Le, Levitt, A., Lherbier, A., Liu, F., Lukacevic, I., Martin, A., Martins, C., Oliveira, M.J.T., Ponc\'e, S., Pouillon, Y., Rangel, T., Rignanese, G.-M., Romero, A.H., Rousseau, B., Rubel, O., Shukri, A.A., Stankovski, M., Torrent, M., Setten, M.J. Van, troeye, B. Van, Verstraete, M.J., Waroquier, D., Wiktor, J., Xue, B., Zhou, A., Zwanziger, J.W.  
 Recent developments in the {ABINIT} software package  
 Computer Physics Communications **205**, 106 (2016)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/S0010465516300923 target="_black">http://www.sciencedirect.com/science/article/pii/S0010465516300923</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-98bab77b-add0-4896-99a0-885150499469">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-98bab77b-add0-4896-99a0-885150499469" tabindex="-1" role="dialog" aria-labelledby="uuid-fddd37ba-f673-428d-8f00-1a5f8ce72f4b">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0010465516300923" target="_blank">http://www.sciencedirect.com/science/article/pii/S0010465516300923</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-8783db0a-32e1-4754-a6f1-b1dbe666476c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8783db0a-32e1-4754-a6f1-b1dbe666476c" tabindex="-1" role="dialog" aria-labelledby="uuid-ff8f0598-b53e-4035-86d0-3e018ae3c8d2">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-fddd37ba-f673-428d-8f00-1a5f8ce72f4b">bibtex</h4>
+        <h4 class="modal-title" id="uuid-ff8f0598-b53e-4035-86d0-3e018ae3c8d2">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gonze2016,
+      <div class="modal-body"> <pre>@article{Gonze2016,
     author = &quot;Gonze, X. and Jollet, F. and Araujo, F. Abreu and Adams, D. and Amadon, B. and Applencourt, T. and Audouze, C. and Beuken, J.-M. and Bieder, J. and Bokhanchuk, A. and Bousquet, E. and Bruneval, F. and Caliste, D. and C\^ot\&#x27;e, M. and Dahm, F. and Pieve, F. Da and Delaveau, M. and Gennaro, M. Di and Dorado, B. and Espejo, C. and Geneste, G. and Genovese, L. and Gerossier, A. and Giantomassi, M. and Gillet, Y. and Hamann, D.R. and He, L. and Jomard, G. and Janssen, J. Laflamme and Roux, S. Le and Levitt, A. and Lherbier, A. and Liu, F. and Lukacevic, I. and Martin, A. and Martins, C. and Oliveira, M.J.T. and Ponc\&#x27;e, S. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Romero, A.H. and Rousseau, B. and Rubel, O. and Shukri, A.A. and Stankovski, M. and Torrent, M. and Setten, M.J. Van and troeye, B. Van and Verstraete, M.J. and Waroquier, D. and Wiktor, J. and Xue, B. and Zhou, A. and Zwanziger, J.W.&quot;,
     title = &quot;Recent developments in the {ABINIT} software package&quot;,
     journal = &quot;Computer Physics Communications&quot;,
@@ -2627,11 +2522,11 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0010465516300923 
     url = &quot;http://www.sciencedirect.com/science/article/pii/S0010465516300923&quot;,
     keywords = &quot;Many-Body Perturbation Theory&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -2642,16 +2537,15 @@ Grimme, S.
 Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction  
 J. Comput. Chem. **27**, 1787 (2006)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-baa4f0ce-6a18-427b-9ff4-2f4adc5e72c2">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-baa4f0ce-6a18-427b-9ff4-2f4adc5e72c2" tabindex="-1" role="dialog" aria-labelledby="uuid-085ef765-7bde-43c0-97d9-4273d508a4af">
+<a data-toggle="modal" href="#uuid-987be862-caab-46fa-91fd-251b45ada67d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-987be862-caab-46fa-91fd-251b45ada67d" tabindex="-1" role="dialog" aria-labelledby="uuid-2b26affc-11e3-4abf-a8b3-055cb5f74cf4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-085ef765-7bde-43c0-97d9-4273d508a4af">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2b26affc-11e3-4abf-a8b3-055cb5f74cf4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Grimme2006,
+      <div class="modal-body"> <pre>@article{Grimme2006,
     Author = &quot;Grimme, S.&quot;,
     Title = &quot;Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction&quot;,
     Journal = &quot;J. Comput. Chem.&quot;,
@@ -2659,11 +2553,11 @@ J. Comput. Chem. **27**, 1787 (2006)
     Pages = &quot;1787&quot;,
     year = &quot;2006&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -2674,16 +2568,15 @@ Grimme, S., Anthony, J., Ehrlich, S., Krieg, H.
 A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu  
 J. Chem. Phys. **132**, 154104 (2010)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a330b3ce-0414-4db9-962d-d62a4405015c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a330b3ce-0414-4db9-962d-d62a4405015c" tabindex="-1" role="dialog" aria-labelledby="uuid-39d7dd59-bfc1-4c4e-831b-06314ab8e613">
+<a data-toggle="modal" href="#uuid-8c8d6e4b-3e40-482a-8615-73f7e9cdef97">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8c8d6e4b-3e40-482a-8615-73f7e9cdef97" tabindex="-1" role="dialog" aria-labelledby="uuid-b0876119-d64d-40df-8648-63f6d7a03440">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-39d7dd59-bfc1-4c4e-831b-06314ab8e613">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b0876119-d64d-40df-8648-63f6d7a03440">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Grimme2010,
+      <div class="modal-body"> <pre>@article{Grimme2010,
     Author = &quot;Grimme, S. and Anthony, J. and Ehrlich, S. and Krieg, H.&quot;,
     Title = &quot;A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu&quot;,
     Journal = &quot;J. Chem. Phys.&quot;,
@@ -2691,11 +2584,11 @@ J. Chem. Phys. **132**, 154104 (2010)
     Pages = &quot;154104&quot;,
     year = &quot;2010&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -2706,16 +2599,15 @@ Grimme, S., Ehrlich, S., Goerigk, L.
 Effect of the Damping Function in Dispersion Corrected Density Functional Theory  
 J. Comput. Chem. **32**, 1456-1465 (2011)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-77a5a816-f223-4df4-a165-8c09697deffb">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-77a5a816-f223-4df4-a165-8c09697deffb" tabindex="-1" role="dialog" aria-labelledby="uuid-ba5e27a8-672b-426a-8f22-6ce12a7d0fda">
+<a data-toggle="modal" href="#uuid-89a3f1f9-96bd-4779-9f20-6bf16cd4e19e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-89a3f1f9-96bd-4779-9f20-6bf16cd4e19e" tabindex="-1" role="dialog" aria-labelledby="uuid-8df5b121-ded6-4bdb-a9e9-648d8314d289">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-ba5e27a8-672b-426a-8f22-6ce12a7d0fda">bibtex</h4>
+        <h4 class="modal-title" id="uuid-8df5b121-ded6-4bdb-a9e9-648d8314d289">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Grimme2010a,
+      <div class="modal-body"> <pre>@article{Grimme2010a,
     Author = &quot;Grimme, S. and Ehrlich, S. and Goerigk, L.&quot;,
     Title = &quot;Effect of the Damping Function in Dispersion Corrected Density Functional Theory&quot;,
     Journal = &quot;J. Comput. Chem.&quot;,
@@ -2723,11 +2615,11 @@ J. Comput. Chem. **32**, 1456-1465 (2011)
     Pages = &quot;1456-1465&quot;,
     year = &quot;2011&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -2738,24 +2630,22 @@ Grimvall, G.
 The electron phonon interaction in metals  
 North-Holland (1981)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-31f3e112-0333-4eae-bedd-52e08b3a27b0">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-31f3e112-0333-4eae-bedd-52e08b3a27b0" tabindex="-1" role="dialog" aria-labelledby="uuid-608191ba-95e1-4682-8108-1746b321c460">
+<a data-toggle="modal" href="#uuid-f48a41cb-8dfb-45f0-8a05-957e083bb8eb">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f48a41cb-8dfb-45f0-8a05-957e083bb8eb" tabindex="-1" role="dialog" aria-labelledby="uuid-4bbb5b31-bdb4-4399-8e5b-beee3311161d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-608191ba-95e1-4682-8108-1746b321c460">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4bbb5b31-bdb4-4399-8e5b-beee3311161d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@book{Grimvall1981,
+      <div class="modal-body"> <pre>@book{Grimvall1981,
     AUTHOR = &quot;Grimvall, G.&quot;,
     YEAR = &quot;1981&quot;,
     TITLE = &quot;The electron phonon interaction in metals&quot;,
     ADDRESS = &quot;Amsterdam&quot;,
     PUBLISHER = &quot;North-Holland&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2768,17 +2658,16 @@ North-Holland (1981)
 Gull, E., Millis, A.J., Liechtenstein, A. I., Rubtsov, A.N., Troyer, M., Werner, P.  
 Continuous-time Monte Carlo methods for quantum impurity models  
 Rev. Mod. Phys. **83**, 349--404 (2011)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.83.349 target="_blank">https://doi.org/10.1103/RevModPhys.83.349</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-6d4cda46-9535-4361-b9ef-c389437519fd">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6d4cda46-9535-4361-b9ef-c389437519fd" tabindex="-1" role="dialog" aria-labelledby="uuid-d97569f3-f479-442b-8f5a-03e93586c7ce">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.83.349" target="_blank">https://doi.org/10.1103/RevModPhys.83.349</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-14791aa6-472b-4ad0-8be9-398ef70be0b8">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-14791aa6-472b-4ad0-8be9-398ef70be0b8" tabindex="-1" role="dialog" aria-labelledby="uuid-a534a2c6-ab65-4342-9970-d3ea05d7f5ff">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d97569f3-f479-442b-8f5a-03e93586c7ce">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a534a2c6-ab65-4342-9970-d3ea05d7f5ff">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Gull2011,
+      <div class="modal-body"> <pre>@article{Gull2011,
     author = &quot;Gull, E. and Millis, A.J. and Liechtenstein, A. I. and Rubtsov, A.N. and Troyer, M. and Werner, P.&quot;,
     title = &quot;Continuous-time Monte Carlo methods for quantum impurity models&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -2794,11 +2683,11 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.83.349 target="_blank">https://d
     timestamp = &quot;2012.06.22&quot;,
     doi = &quot;10.1103/RevModPhys.83.349&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -2808,17 +2697,16 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.83.349 target="_blank">https://d
 Hamann, D.R., Schl\"uter, M., Chiang, C.  
 Norm-Conserving Pseudopotentials  
 Phys. Rev. Lett. **43**, 1494--1497 (1979)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.43.1494 target="_blank">https://doi.org/10.1103/PhysRevLett.43.1494</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-0af41be5-f017-4724-86ec-927694401028">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0af41be5-f017-4724-86ec-927694401028" tabindex="-1" role="dialog" aria-labelledby="uuid-e1c65474-dad7-4215-ab5e-211242200c1e">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.43.1494" target="_blank">https://doi.org/10.1103/PhysRevLett.43.1494</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-0ab5be0d-e18b-494f-b215-3257876855e2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0ab5be0d-e18b-494f-b215-3257876855e2" tabindex="-1" role="dialog" aria-labelledby="uuid-c98f20cf-5b73-4321-aee6-b740f013c6d8">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e1c65474-dad7-4215-ab5e-211242200c1e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-c98f20cf-5b73-4321-aee6-b740f013c6d8">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hamann1979,
+      <div class="modal-body"> <pre>@article{Hamann1979,
     author = {Hamann, D.R. and Schl\&quot;uter, M. and Chiang, C.},
     title = &quot;Norm-Conserving Pseudopotentials&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -2829,8 +2717,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.43.1494 target="_blank">https:/
     numpages = &quot;3&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2843,17 +2730,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.43.1494 target="_blank">https:/
 Hamann, D. R.  
 Generalized norm-conserving pseudopotentials  
 Phys. Rev. B **40**, 2980--2987 (1989)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.40.2980 target="_blank">https://doi.org/10.1103/PhysRevB.40.2980</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-f173bf7f-e48c-4d27-899d-350d7f96fd53">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f173bf7f-e48c-4d27-899d-350d7f96fd53" tabindex="-1" role="dialog" aria-labelledby="uuid-a70f29fe-a56b-4330-8928-8a0f6c1c7563">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.40.2980" target="_blank">https://doi.org/10.1103/PhysRevB.40.2980</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-e8d5db7c-0226-43fc-9a71-4f2787772b49">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e8d5db7c-0226-43fc-9a71-4f2787772b49" tabindex="-1" role="dialog" aria-labelledby="uuid-36a1dd09-7cfd-4128-89e8-88a0218ca884">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a70f29fe-a56b-4330-8928-8a0f6c1c7563">bibtex</h4>
+        <h4 class="modal-title" id="uuid-36a1dd09-7cfd-4128-89e8-88a0218ca884">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hamann1989,
+      <div class="modal-body"> <pre>@article{Hamann1989,
     author = &quot;Hamann, D. R.&quot;,
     title = &quot;Generalized norm-conserving pseudopotentials&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -2865,8 +2751,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.40.2980 target="_blank">https://do
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.40.2980&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2880,16 +2765,15 @@ Hamann, D. R., Wu, X., Rabe, K. M., Vanderbilt, D.
 Metric tensor formulation of strain in density-functional perturbation theory  
 Phys. Rev. B **71**, 035117 (2005)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-27d18af3-b8b3-4c48-bd6f-e97a56b6a723">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-27d18af3-b8b3-4c48-bd6f-e97a56b6a723" tabindex="-1" role="dialog" aria-labelledby="uuid-66577b65-e8a0-4d5f-be09-24200406876f">
+<a data-toggle="modal" href="#uuid-0cac0660-8d56-41be-83d5-d61e70788bcf">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0cac0660-8d56-41be-83d5-d61e70788bcf" tabindex="-1" role="dialog" aria-labelledby="uuid-118b2b55-0a96-4831-9720-77176a8d5414">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-66577b65-e8a0-4d5f-be09-24200406876f">bibtex</h4>
+        <h4 class="modal-title" id="uuid-118b2b55-0a96-4831-9720-77176a8d5414">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hamann2005,
+      <div class="modal-body"> <pre>@article{Hamann2005,
     author = &quot;Hamann, D. R. and Wu, X. and Rabe, K. M. and Vanderbilt, D.&quot;,
     title = &quot;Metric tensor formulation of strain in density-functional perturbation theory&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -2897,11 +2781,11 @@ Phys. Rev. B **71**, 035117 (2005)
     pages = &quot;035117&quot;,
     year = &quot;2005&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Elastic"> /topics/Elastic </a>
 * * *
 
 
@@ -2911,17 +2795,16 @@ Phys. Rev. B **71**, 035117 (2005)
 Hamann, D. R.  
 Optimized norm-conserving Vanderbilt pseudopotentials  
 Phys. Rev. B **88**, 085117 (2013)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.88.085117 target="_blank">https://doi.org/10.1103/PhysRevB.88.085117</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-89bde67b-9839-4b3d-9b6d-64b466557617">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-89bde67b-9839-4b3d-9b6d-64b466557617" tabindex="-1" role="dialog" aria-labelledby="uuid-73302360-17a4-4792-b95f-71f237cb1a2d">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.88.085117" target="_blank">https://doi.org/10.1103/PhysRevB.88.085117</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-12168d61-4f17-4fa4-955b-ff8747ece107">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-12168d61-4f17-4fa4-955b-ff8747ece107" tabindex="-1" role="dialog" aria-labelledby="uuid-08fe68e2-f9f9-410f-b43f-1e0cb1362378">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-73302360-17a4-4792-b95f-71f237cb1a2d">bibtex</h4>
+        <h4 class="modal-title" id="uuid-08fe68e2-f9f9-410f-b43f-1e0cb1362378">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hamann2013,
+      <div class="modal-body"> <pre>@article{Hamann2013,
     author = &quot;Hamann, D. R.&quot;,
     title = &quot;Optimized norm-conserving Vanderbilt pseudopotentials&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -2933,8 +2816,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.88.085117 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.88.085117&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2948,16 +2830,15 @@ Harju, A., Siro, T., Federici Canova, F., Hakala, S., Rantalaiho, T.
 Computational Physics on Graphics Processing Units  
 Lecture Notes in Computer Science **7782**, 3--26 (2013)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-4c9f6de8-a9cb-446c-b8b8-f98679b87ae9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-4c9f6de8-a9cb-446c-b8b8-f98679b87ae9" tabindex="-1" role="dialog" aria-labelledby="uuid-b366d747-070a-4c67-8620-5276bd878245">
+<a data-toggle="modal" href="#uuid-febf7dc1-d236-458e-b183-c1b7ff065980">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-febf7dc1-d236-458e-b183-c1b7ff065980" tabindex="-1" role="dialog" aria-labelledby="uuid-0c87a8fe-8e6a-4a6b-8076-ecc937a7b8a6">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b366d747-070a-4c67-8620-5276bd878245">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0c87a8fe-8e6a-4a6b-8076-ecc937a7b8a6">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Harju2013,
+      <div class="modal-body"> <pre>@article{Harju2013,
     author = &quot;Harju, A. and Siro, T. and Federici Canova, F. and Hakala, S. and Rantalaiho, T.&quot;,
     title = &quot;Computational Physics on Graphics Processing Units&quot;,
     journal = &quot;Lecture Notes in Computer Science&quot;,
@@ -2966,8 +2847,7 @@ Lecture Notes in Computer Science **7782**, 3--26 (2013)
     pages = &quot;3--26&quot;,
     year = &quot;2013&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -2980,17 +2860,16 @@ Lecture Notes in Computer Science **7782**, 3--26 (2013)
 Harl, J., Schimka, L., Kresse, G.  
 Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids  
 Phys. Rev. B **81**, 115126 (2010)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.81.115126 target="_blank">https://doi.org/10.1103/PhysRevB.81.115126</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-38ef1828-0b70-49e9-a1bf-7e794d00d292">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-38ef1828-0b70-49e9-a1bf-7e794d00d292" tabindex="-1" role="dialog" aria-labelledby="uuid-5c5ce569-3ea0-4b22-ab68-56eeef9516dc">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.81.115126" target="_blank">https://doi.org/10.1103/PhysRevB.81.115126</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-2ae12ad4-74f9-4d9a-9b6e-95ba41979da2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2ae12ad4-74f9-4d9a-9b6e-95ba41979da2" tabindex="-1" role="dialog" aria-labelledby="uuid-09ece61c-6e9e-4150-8fe3-f01d15a5114d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-5c5ce569-3ea0-4b22-ab68-56eeef9516dc">bibtex</h4>
+        <h4 class="modal-title" id="uuid-09ece61c-6e9e-4150-8fe3-f01d15a5114d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Harl2010,
+      <div class="modal-body"> <pre>@article{Harl2010,
     author = &quot;Harl, J. and Schimka, L. and Kresse, G.&quot;,
     title = &quot;Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3002,11 +2881,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.81.115126 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.81.115126&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
 * * *
 
 
@@ -3017,16 +2896,15 @@ Hartwigsen, C., Goedecker, S., H\"utter, J.
 Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n  
 Phys. Rev. B **58**, 3641--3662 (1998)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-c43567d4-b7fb-40a0-adcd-c8f9e8d1548e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c43567d4-b7fb-40a0-adcd-c8f9e8d1548e" tabindex="-1" role="dialog" aria-labelledby="uuid-de0ab63e-2fc7-4283-af37-dcaad82971ee">
+<a data-toggle="modal" href="#uuid-6323da53-0060-47b6-b45e-4025f814f77f">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6323da53-0060-47b6-b45e-4025f814f77f" tabindex="-1" role="dialog" aria-labelledby="uuid-afaf5600-ecd3-4dec-839b-7d9b7560f556">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-de0ab63e-2fc7-4283-af37-dcaad82971ee">bibtex</h4>
+        <h4 class="modal-title" id="uuid-afaf5600-ecd3-4dec-839b-7d9b7560f556">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hartwigsen1998,
+      <div class="modal-body"> <pre>@article{Hartwigsen1998,
     author = {Hartwigsen, C. and Goedecker, S. and H\&quot;utter, J.},
     title = &quot;Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n&quot;,
     volume = &quot;58&quot;,
@@ -3035,8 +2913,7 @@ Phys. Rev. B **58**, 3641--3662 (1998)
     year = &quot;1998&quot;,
     pages = &quot;3641--3662&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3049,17 +2926,16 @@ Phys. Rev. B **58**, 3641--3662 (1998)
 Haydock, R.  
 The recursive solution of the {S}chr\"{o}dinger equation  
 Comp. Phys. Comm. **20**, 11 - 16 (1980)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/0010465580901010 target="_black">http://www.sciencedirect.com/science/article/pii/0010465580901010</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ee2a010b-7136-42a9-a943-74ddb6e5611d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ee2a010b-7136-42a9-a943-74ddb6e5611d" tabindex="-1" role="dialog" aria-labelledby="uuid-b471af61-0bfc-4b82-8e26-ddbc018d853d">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/0010465580901010" target="_blank">http://www.sciencedirect.com/science/article/pii/0010465580901010</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-71e572e8-c4db-456a-9328-a2ca88cc8106">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-71e572e8-c4db-456a-9328-a2ca88cc8106" tabindex="-1" role="dialog" aria-labelledby="uuid-6cd237e5-f0d7-4df4-80b9-ef4f0a47e441">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b471af61-0bfc-4b82-8e26-ddbc018d853d">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6cd237e5-f0d7-4df4-80b9-ef4f0a47e441">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Haydock1980,
+      <div class="modal-body"> <pre>@article{Haydock1980,
     author = &quot;Haydock, R.&quot;,
     title = {The recursive solution of the {S}chr\&quot;{o}dinger equation},
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -3072,11 +2948,11 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/0010465580901010 t
     doi = &quot;10.1016/0010-4655(80)90101-0&quot;,
     url = &quot;http://www.sciencedirect.com/science/article/pii/0010465580901010&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -3086,17 +2962,16 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/0010465580901010 t
 He, L., Liu, F., Hautier, G., Oliveira, M. J. T., Marques, M. A. L., Vila, F. D., Rehr, J. J., Rignanese, G.-M., Zhou, A.  
 Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations  
 Phys. Rev. B **89**, 064305 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.89.064305 target="_blank">https://doi.org/10.1103/PhysRevB.89.064305</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-7c24b809-fb9c-4fb6-a1ed-e7229d67b68f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-7c24b809-fb9c-4fb6-a1ed-e7229d67b68f" tabindex="-1" role="dialog" aria-labelledby="uuid-6ac4a86b-e109-4579-a82b-6e0273004e45">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.89.064305" target="_blank">https://doi.org/10.1103/PhysRevB.89.064305</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-60696cf1-7bca-4f7b-814f-fe87ed5d9488">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-60696cf1-7bca-4f7b-814f-fe87ed5d9488" tabindex="-1" role="dialog" aria-labelledby="uuid-6a19baba-a363-467d-ab00-4896ca3bd26b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6ac4a86b-e109-4579-a82b-6e0273004e45">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6a19baba-a363-467d-ab00-4896ca3bd26b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{He2014,
+      <div class="modal-body"> <pre>@article{He2014,
     Author = &quot;He, L. and Liu, F. and Hautier, G. and Oliveira, M. J. T. and Marques, M. A. L. and Vila, F. D. and Rehr, J. J. and Rignanese, G.-M. and Zhou, A.&quot;,
     Title = &quot;Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -3105,8 +2980,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.064305 target="_blank">https://
     Volume = &quot;89&quot;,
     Year = &quot;2014&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3120,16 +2994,15 @@ Hedin, L.
 New Method for Calculating the One-Particle Green's Function with Application to the Electron-Gas Problem  
 Phys. Rev. A **139**, 796 (1965)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-502d06d5-026f-4133-9562-d337b50dcf16">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-502d06d5-026f-4133-9562-d337b50dcf16" tabindex="-1" role="dialog" aria-labelledby="uuid-e4a4033b-5550-4bc9-8787-2267285af06a">
+<a data-toggle="modal" href="#uuid-c2ca7d3b-29e8-4702-b444-bc2cb53b8d39">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-c2ca7d3b-29e8-4702-b444-bc2cb53b8d39" tabindex="-1" role="dialog" aria-labelledby="uuid-1be708e8-6138-4be5-9990-b40ad830e1eb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e4a4033b-5550-4bc9-8787-2267285af06a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-1be708e8-6138-4be5-9990-b40ad830e1eb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hedin1965,
+      <div class="modal-body"> <pre>@article{Hedin1965,
     author = &quot;Hedin, L.&quot;,
     title = &quot;New Method for Calculating the One-Particle Green&#x27;s Function with Application to the Electron-Gas Problem&quot;,
     journal = &quot;Phys. Rev. A&quot;,
@@ -3137,11 +3010,11 @@ Phys. Rev. A **139**, 796 (1965)
     pages = &quot;796&quot;,
     year = &quot;1965&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>, <a href="/topics/SelfEnergy"> /topics/SelfEnergy </a>
 * * *
 
 
@@ -3152,16 +3025,15 @@ Hellwege, K.-H., Olsen, J.L. (Eds.)
 Electrical Resistivity, Thermoelectrical Power and Optical Properties  
 Springer (1985)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-cf69841e-8ab3-4920-894d-4b119fc2274a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-cf69841e-8ab3-4920-894d-4b119fc2274a" tabindex="-1" role="dialog" aria-labelledby="uuid-b0ce2144-6bff-4625-b62b-453a3d57f864">
+<a data-toggle="modal" href="#uuid-1a8ab13e-5305-44b0-940d-d9700fe038b6">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1a8ab13e-5305-44b0-940d-d9700fe038b6" tabindex="-1" role="dialog" aria-labelledby="uuid-33fc4a68-cd1a-4365-803b-e81206bf6c38">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b0ce2144-6bff-4625-b62b-453a3d57f864">bibtex</h4>
+        <h4 class="modal-title" id="uuid-33fc4a68-cd1a-4365-803b-e81206bf6c38">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@book{Hellwege1985,
+      <div class="modal-body"> <pre>@book{Hellwege1985,
     Author = &quot;Hellwege, K.-H. and Olsen, J.L. (Eds.)&quot;,
     Date-Added = &quot;2014-02-21 11:07:18 +0000&quot;,
     Date-Modified = &quot;2014-03-04 10:21:33 +0000&quot;,
@@ -3171,8 +3043,7 @@ Springer (1985)
     Volume = &quot;15b&quot;,
     Year = &quot;1985&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3186,16 +3057,15 @@ Henkelman, G., J{\'o}nsson, H.
 Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points  
 The Journal of chemical physics **113**, 9978--9985 (2000)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-9fca5a82-2e76-4be1-ad40-8c9552a1865a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-9fca5a82-2e76-4be1-ad40-8c9552a1865a" tabindex="-1" role="dialog" aria-labelledby="uuid-33f8fc8e-b6e3-41ae-bf6f-03747b79b130">
+<a data-toggle="modal" href="#uuid-b93df571-7c14-4202-9f88-82638c8e08c2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b93df571-7c14-4202-9f88-82638c8e08c2" tabindex="-1" role="dialog" aria-labelledby="uuid-99e47a48-32ff-4eab-8956-2408337d129d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-33f8fc8e-b6e3-41ae-bf6f-03747b79b130">bibtex</h4>
+        <h4 class="modal-title" id="uuid-99e47a48-32ff-4eab-8956-2408337d129d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Henkelman2000,
+      <div class="modal-body"> <pre>@article{Henkelman2000,
     author = &quot;Henkelman, G. and J{\&#x27;o}nsson, H.&quot;,
     title = &quot;Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points&quot;,
     journal = &quot;The Journal of chemical physics&quot;,
@@ -3205,11 +3075,11 @@ The Journal of chemical physics **113**, 9978--9985 (2000)
     year = &quot;2000&quot;,
     publisher = &quot;AIP Publishing&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TransPath"> /topics/TransPath </a>
 * * *
 
 
@@ -3219,17 +3089,16 @@ The Journal of chemical physics **113**, 9978--9985 (2000)
 Hermet, P., Veithen, M., Ghosez, P.  
 Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.  
 J. Phys. : Condens. Matter **21**, 215901 (2009)  
-DOI: <a href=https://doi.org/10.1088/0953-8984/21/21/215901 target="_blank">https://doi.org/10.1088/0953-8984/21/21/215901</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-d881aedc-7639-4c4f-81fd-d3dcb721d2ed">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d881aedc-7639-4c4f-81fd-d3dcb721d2ed" tabindex="-1" role="dialog" aria-labelledby="uuid-dd5798fe-2a73-416f-a08e-c44d60044e05">
+DOI: <a href="https://doi.org/10.1088/0953-8984/21/21/215901" target="_blank">https://doi.org/10.1088/0953-8984/21/21/215901</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-1c9a593c-f02e-43e4-bd54-7ca486b56da0">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1c9a593c-f02e-43e4-bd54-7ca486b56da0" tabindex="-1" role="dialog" aria-labelledby="uuid-7f425d40-99f7-4c37-b434-5d5cd9cd5d01">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-dd5798fe-2a73-416f-a08e-c44d60044e05">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7f425d40-99f7-4c37-b434-5d5cd9cd5d01">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hermet2009,
+      <div class="modal-body"> <pre>@article{Hermet2009,
     author = &quot;Hermet, P. and Veithen, M. and Ghosez, P.&quot;,
     title = &quot;Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.&quot;,
     journal = &quot;J. Phys. : Condens. Matter&quot;,
@@ -3240,11 +3109,11 @@ DOI: <a href=https://doi.org/10.1088/0953-8984/21/21/215901 target="_blank">http
     doi = &quot;10.1088/0953-8984/21/21/215901&quot;,
     publisher = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -3254,17 +3123,16 @@ DOI: <a href=https://doi.org/10.1088/0953-8984/21/21/215901 target="_blank">http
 Hohenberg, P., Kohn, W.  
 Inhomogeneous Electron Gas  
 Phys. Rev. **136**, B864--B871 (1964)  
-DOI: <a href=https://doi.org/10.1103/PhysRev.136.B864 target="_blank">https://doi.org/10.1103/PhysRev.136.B864</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-cbb6a946-41d8-48b1-9e96-3894093067d7">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-cbb6a946-41d8-48b1-9e96-3894093067d7" tabindex="-1" role="dialog" aria-labelledby="uuid-1af45ebd-9a38-4266-911e-f424ab54abad">
+DOI: <a href="https://doi.org/10.1103/PhysRev.136.B864" target="_blank">https://doi.org/10.1103/PhysRev.136.B864</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-2f2b2f70-b757-4387-965c-13354f160cd3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2f2b2f70-b757-4387-965c-13354f160cd3" tabindex="-1" role="dialog" aria-labelledby="uuid-b906c6a6-0b2d-4168-b710-963acbb45e90">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1af45ebd-9a38-4266-911e-f424ab54abad">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b906c6a6-0b2d-4168-b710-963acbb45e90">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hohenberg1964,
+      <div class="modal-body"> <pre>@article{Hohenberg1964,
     author = &quot;Hohenberg, P. and Kohn, W.&quot;,
     title = &quot;Inhomogeneous Electron Gas&quot;,
     journal = &quot;Phys. Rev.&quot;,
@@ -3275,8 +3143,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRev.136.B864 target="_blank">https://do
     doi = &quot;10.1103/PhysRev.136.B864&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3290,16 +3157,15 @@ Holzwarth, N.A.W., Tackett, A.R., Matthews, G.E.
 A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions  
 Comp. Phys. Comm. **135**, 329 (2001)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-85c8eed2-fde3-4fbc-afcd-97114c0dcdf4">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-85c8eed2-fde3-4fbc-afcd-97114c0dcdf4" tabindex="-1" role="dialog" aria-labelledby="uuid-7837a231-8959-48a7-a79c-b60667ad9018">
+<a data-toggle="modal" href="#uuid-97e01f37-66e9-4208-a5cf-f221e55691e1">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-97e01f37-66e9-4208-a5cf-f221e55691e1" tabindex="-1" role="dialog" aria-labelledby="uuid-a5b45cce-0e34-4873-aa36-82b34cc0549e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-7837a231-8959-48a7-a79c-b60667ad9018">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a5b45cce-0e34-4873-aa36-82b34cc0549e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Holzwarth2001,
+      <div class="modal-body"> <pre>@article{Holzwarth2001,
     Author = &quot;Holzwarth, N.A.W. and Tackett, A.R. and Matthews, G.E.&quot;,
     Title = &quot;A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions&quot;,
     Journal = &quot;Comp. Phys. Comm.&quot;,
@@ -3307,8 +3173,7 @@ Comp. Phys. Comm. **135**, 329 (2001)
     Pages = &quot;329&quot;,
     year = &quot;2001&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3321,17 +3186,16 @@ Comp. Phys. Comm. **135**, 329 (2001)
 Hughes, J. L. P., Sipe, J. E.  
 Calculation of second-order optical response in semiconductors  
 Phys. Rev. B **53**, 10751--10763 (1996)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.53.10751 target="_blank">https://doi.org/10.1103/PhysRevB.53.10751</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-40f8f753-1e91-4bd4-bf27-2eaeca795280">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-40f8f753-1e91-4bd4-bf27-2eaeca795280" tabindex="-1" role="dialog" aria-labelledby="uuid-aa0a34b5-5019-4fda-94b0-1bfd8cc66870">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.53.10751" target="_blank">https://doi.org/10.1103/PhysRevB.53.10751</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-4003be0c-7793-4371-bd0a-92e630fd59d0">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4003be0c-7793-4371-bd0a-92e630fd59d0" tabindex="-1" role="dialog" aria-labelledby="uuid-92916b11-d3aa-404c-802e-9822a91dc51d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-aa0a34b5-5019-4fda-94b0-1bfd8cc66870">bibtex</h4>
+        <h4 class="modal-title" id="uuid-92916b11-d3aa-404c-802e-9822a91dc51d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Hughes1996,
+      <div class="modal-body"> <pre>@article{Hughes1996,
     Author = &quot;Hughes, J. L. P. and Sipe, J. E.&quot;,
     Title = &quot;Calculation of second-order optical response in semiconductors&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -3344,8 +3208,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.53.10751 target="_blank">https://d
     Publisher = &quot;American Physical Society&quot;,
     Timestamp = &quot;2015.11.12&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3358,17 +3221,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.53.10751 target="_blank">https://d
 Laflamme Janssen, J., Rousseau, B., C{\^o}t{\'e}, M.  
 Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations  
 Phys. Rev. B **91**, 125120 (2015)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.91.125120 target="_blank">https://doi.org/10.1103/PhysRevB.91.125120</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-757bb65a-70b4-4934-8994-246d53154cbe">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-757bb65a-70b4-4934-8994-246d53154cbe" tabindex="-1" role="dialog" aria-labelledby="uuid-4302a03a-ab8b-4046-9954-352a6f7a5bef">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.91.125120" target="_blank">https://doi.org/10.1103/PhysRevB.91.125120</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-47ef7a73-c2df-4465-a794-5f9b13e6ef26">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-47ef7a73-c2df-4465-a794-5f9b13e6ef26" tabindex="-1" role="dialog" aria-labelledby="uuid-25d71ee3-86fe-4033-8297-7330d106fb01">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4302a03a-ab8b-4046-9954-352a6f7a5bef">bibtex</h4>
+        <h4 class="modal-title" id="uuid-25d71ee3-86fe-4033-8297-7330d106fb01">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Janssen2015,
+      <div class="modal-body"> <pre>@article{Janssen2015,
     author = &quot;Laflamme Janssen, J. and Rousseau, B. and C{\^o}t{\&#x27;e}, M.&quot;,
     title = &quot;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3378,11 +3240,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.91.125120 target="_blank">https://
     pages = &quot;125120&quot;,
     doi = &quot;10.1103/PhysRevB.91.125120&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -3393,16 +3255,15 @@ Jollet, F., Jomard, G., Amadon, B., Crocombette, J.P., Torumba, D.
 Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides  
 Phys. Rev. B **80**, 235109 (2009)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a3d26169-111c-44ae-8a93-e75ec93493f6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a3d26169-111c-44ae-8a93-e75ec93493f6" tabindex="-1" role="dialog" aria-labelledby="uuid-b6d8b273-c1a3-4462-a1fe-0dfb581e2d56">
+<a data-toggle="modal" href="#uuid-fda1bc49-c4f8-4986-a66a-d57e9d88da29">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-fda1bc49-c4f8-4986-a66a-d57e9d88da29" tabindex="-1" role="dialog" aria-labelledby="uuid-62d11c30-99ad-4e2e-b131-6db0b1969252">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b6d8b273-c1a3-4462-a1fe-0dfb581e2d56">bibtex</h4>
+        <h4 class="modal-title" id="uuid-62d11c30-99ad-4e2e-b131-6db0b1969252">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Jollet2009,
+      <div class="modal-body"> <pre>@article{Jollet2009,
     author = &quot;Jollet, F. and Jomard, G. and Amadon, B. and Crocombette, J.P. and Torumba, D.&quot;,
     journal = &quot;Phys. Rev. B&quot;,
     volume = &quot;80&quot;,
@@ -3410,11 +3271,11 @@ Phys. Rev. B **80**, 235109 (2009)
     year = &quot;2009&quot;,
     title = &quot;Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/xc"> /topics/xc </a>
 * * *
 
 
@@ -3425,16 +3286,15 @@ Jollet, F., Torrent, M., Holzwarth, N.
 Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format  
 Comp. Phys. Comm. **185**, 1246-1254 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-32485834-851c-4f2e-99bf-c48b4a2dd6bb">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-32485834-851c-4f2e-99bf-c48b4a2dd6bb" tabindex="-1" role="dialog" aria-labelledby="uuid-6cbb0541-9c84-4ab3-b503-1fb5327f0047">
+<a data-toggle="modal" href="#uuid-b23bb974-f8a8-4496-aafe-c8be1e481f97">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b23bb974-f8a8-4496-aafe-c8be1e481f97" tabindex="-1" role="dialog" aria-labelledby="uuid-eadf0676-3444-4797-ba1b-2819057537a9">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6cbb0541-9c84-4ab3-b503-1fb5327f0047">bibtex</h4>
+        <h4 class="modal-title" id="uuid-eadf0676-3444-4797-ba1b-2819057537a9">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Jollet2014,
+      <div class="modal-body"> <pre>@article{Jollet2014,
     author = &quot;Jollet, F. and Torrent, M. and Holzwarth, N.&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
     volume = &quot;185&quot;,
@@ -3442,11 +3302,11 @@ Comp. Phys. Comm. **185**, 1246-1254 (2014)
     year = &quot;2014&quot;,
     title = &quot;Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PAW"> /topics/PAW </a>
 * * *
 
 
@@ -3457,16 +3317,15 @@ Kawasuso, A., Yoshikawa, M., Itoh, H., Chiba, T., Higuchi, T., Betsuyaku, K., Re
 Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}  
 Phys. Rev. B **72**, 045204 (2005)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-16462d60-1de2-4081-baf5-4f3c8504d605">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-16462d60-1de2-4081-baf5-4f3c8504d605" tabindex="-1" role="dialog" aria-labelledby="uuid-5b35c693-d0c9-491e-828d-da82c1a61eaa">
+<a data-toggle="modal" href="#uuid-90f3ff6d-9d8c-4b4d-96ae-20d38859034c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-90f3ff6d-9d8c-4b4d-96ae-20d38859034c" tabindex="-1" role="dialog" aria-labelledby="uuid-d9810f7f-9345-4d4e-a33f-1add141cea2e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-5b35c693-d0c9-491e-828d-da82c1a61eaa">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d9810f7f-9345-4d4e-a33f-1add141cea2e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Kawasuso2005,
+      <div class="modal-body"> <pre>@article{Kawasuso2005,
     author = &quot;Kawasuso, A. and Yoshikawa, M. and Itoh, H. and Chiba, T. and Higuchi, T. and Betsuyaku, K. and Redmann, F. and Krause-Rehberg, R.&quot;,
     title = &quot;Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3476,8 +3335,7 @@ Phys. Rev. B **72**, 045204 (2005)
     year = &quot;2005&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3491,16 +3349,15 @@ King-Smith, R. D., Vanderbilt, D.
 Theory of polarization of crystalline solids  
 Phys. rev. B **47**, 1651--1654 (1993)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-0889e8c9-ee0f-42c0-a31e-bc35c370d8e1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0889e8c9-ee0f-42c0-a31e-bc35c370d8e1" tabindex="-1" role="dialog" aria-labelledby="uuid-d6c564bd-b747-4d8b-81fb-3076c4800841">
+<a data-toggle="modal" href="#uuid-acae9f5c-ff83-4d18-9fd7-4a36dfbc65b2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-acae9f5c-ff83-4d18-9fd7-4a36dfbc65b2" tabindex="-1" role="dialog" aria-labelledby="uuid-a783ea72-fa3c-4cca-83dc-69bc304602ba">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d6c564bd-b747-4d8b-81fb-3076c4800841">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a783ea72-fa3c-4cca-83dc-69bc304602ba">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Kingsmith1993,
+      <div class="modal-body"> <pre>@article{Kingsmith1993,
     author = &quot;King-Smith, R. D. and Vanderbilt, D.&quot;,
     title = &quot;Theory of polarization of crystalline solids&quot;,
     journal = &quot;Phys. rev. B&quot;,
@@ -3509,8 +3366,7 @@ Phys. rev. B **47**, 1651--1654 (1993)
     pages = &quot;1651--1654&quot;,
     year = &quot;1993&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3523,17 +3379,16 @@ Phys. rev. B **47**, 1651--1654 (1993)
 Kohn, W., Sham, L. J.  
 Self-Consistent Equations Including Exchange and Correlation Effects  
 Phys. Rev. **140**, A1133--A1138 (1965)  
-DOI: <a href=https://doi.org/10.1103/PhysRev.140.A1133 target="_blank">https://doi.org/10.1103/PhysRev.140.A1133</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-4c3b95d3-6f4a-47ba-97bc-f86b1b122442">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-4c3b95d3-6f4a-47ba-97bc-f86b1b122442" tabindex="-1" role="dialog" aria-labelledby="uuid-9702c986-002a-443b-817f-5c398c5ed9c4">
+DOI: <a href="https://doi.org/10.1103/PhysRev.140.A1133" target="_blank">https://doi.org/10.1103/PhysRev.140.A1133</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-606c9620-131a-45fc-b59a-7dea39d30337">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-606c9620-131a-45fc-b59a-7dea39d30337" tabindex="-1" role="dialog" aria-labelledby="uuid-e9b0ed4c-a63d-4bc9-8b3a-aec881e743c5">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-9702c986-002a-443b-817f-5c398c5ed9c4">bibtex</h4>
+        <h4 class="modal-title" id="uuid-e9b0ed4c-a63d-4bc9-8b3a-aec881e743c5">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Kohn1965,
+      <div class="modal-body"> <pre>@article{Kohn1965,
     author = &quot;Kohn, W. and Sham, L. J.&quot;,
     title = &quot;Self-Consistent Equations Including Exchange and Correlation Effects&quot;,
     journal = &quot;Phys. Rev.&quot;,
@@ -3544,8 +3399,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRev.140.A1133 target="_blank">https://d
     doi = &quot;10.1103/PhysRev.140.A1133&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3559,16 +3413,15 @@ Kolos, W., Roothaan, C.C.J.
 Accurate Electronic Wave Functions for the H$_2$ Molecule  
 Rev. Mod. Phys. **32**, 219 (1960)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-056bad3d-dc6c-4a5f-9667-4d8650569012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-056bad3d-dc6c-4a5f-9667-4d8650569012" tabindex="-1" role="dialog" aria-labelledby="uuid-a993b868-cf5c-4be3-b643-a601b98d3d9b">
+<a data-toggle="modal" href="#uuid-8c41bdc5-f0a1-4af6-abd9-ebd9c53f8332">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8c41bdc5-f0a1-4af6-abd9-ebd9c53f8332" tabindex="-1" role="dialog" aria-labelledby="uuid-eaa36040-ae87-49da-a66c-777c0e3cc226">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a993b868-cf5c-4be3-b643-a601b98d3d9b">bibtex</h4>
+        <h4 class="modal-title" id="uuid-eaa36040-ae87-49da-a66c-777c0e3cc226">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Kolos1960,
+      <div class="modal-body"> <pre>@article{Kolos1960,
     author = &quot;Kolos, W. and Roothaan, C.C.J.&quot;,
     title = &quot;Accurate Electronic Wave Functions for the H$_2$ Molecule&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -3576,8 +3429,7 @@ Rev. Mod. Phys. **32**, 219 (1960)
     pages = &quot;219&quot;,
     year = &quot;1960&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3590,17 +3442,16 @@ Rev. Mod. Phys. **32**, 219 (1960)
 Kotliar, G., Savrasov, S. Y., Haule, K., Oudovenko, V. S., Parcollet, O., Marianetti, C. A.  
 Electronic structure calculations with dynamical mean-field theory  
 Rev. Mod. Phys. **78**, 865--951 (2006)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.78.865 target="_blank">https://doi.org/10.1103/RevModPhys.78.865</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-c8f21f53-7cc4-4414-98aa-f316741738a1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c8f21f53-7cc4-4414-98aa-f316741738a1" tabindex="-1" role="dialog" aria-labelledby="uuid-b2dba453-a6a0-40ae-be3f-05da8fe5c4ee">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.78.865" target="_blank">https://doi.org/10.1103/RevModPhys.78.865</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-fb2b2dc1-eaa7-4d5a-8f49-648691d3e5c7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-fb2b2dc1-eaa7-4d5a-8f49-648691d3e5c7" tabindex="-1" role="dialog" aria-labelledby="uuid-deb8ab0f-a219-4127-9465-8b86d6ff3644">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b2dba453-a6a0-40ae-be3f-05da8fe5c4ee">bibtex</h4>
+        <h4 class="modal-title" id="uuid-deb8ab0f-a219-4127-9465-8b86d6ff3644">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Kotliar2006,
+      <div class="modal-body"> <pre>@article{Kotliar2006,
     author = &quot;Kotliar, G. and Savrasov, S. Y. and Haule, K. and Oudovenko, V. S. and Parcollet, O. and Marianetti, C. A.&quot;,
     title = &quot;Electronic structure calculations with dynamical mean-field theory&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -3615,11 +3466,11 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.78.865 target="_blank">https://d
     timestamp = &quot;2012.07.13&quot;,
     doi = &quot;10.1103/RevModPhys.78.865&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -3630,16 +3481,15 @@ Laflamme Janssen, J., Gillet, Y., Ponc\'e, S., Martin, A., Torrent, M., Gonze, X
 Precise Effective Masses from Density Functional Perturbation Theory  
 Phys. Rev. B **93**, 205147 (2016)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b0c1ec14-7fd4-4466-84fb-28ba7957db29">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b0c1ec14-7fd4-4466-84fb-28ba7957db29" tabindex="-1" role="dialog" aria-labelledby="uuid-92cf832a-4d0e-4cfa-9451-66dbd2fa06d4">
+<a data-toggle="modal" href="#uuid-8131f9d9-1e7b-49af-b552-ae2756319cb6">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-8131f9d9-1e7b-49af-b552-ae2756319cb6" tabindex="-1" role="dialog" aria-labelledby="uuid-205d5b87-065d-4975-a2d5-772e56745d89">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-92cf832a-4d0e-4cfa-9451-66dbd2fa06d4">bibtex</h4>
+        <h4 class="modal-title" id="uuid-205d5b87-065d-4975-a2d5-772e56745d89">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Laflamme2016,
+      <div class="modal-body"> <pre>@article{Laflamme2016,
     author = &quot;Laflamme Janssen, J. and Gillet, Y. and Ponc\&#x27;e, S. and Martin, A. and Torrent, M. and Gonze, X.&quot;,
     journal = &quot;Phys. Rev. B&quot;,
     Title = &quot;Precise Effective Masses from Density Functional Perturbation Theory&quot;,
@@ -3647,11 +3497,11 @@ Phys. Rev. B **93**, 205147 (2016)
     pages = &quot;205147&quot;,
     volume = &quot;93&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/EffMass"> /topics/EffMass </a>
 * * *
 
 
@@ -3662,16 +3512,15 @@ Leb\`egue, S., Harl, J., Gould, T., \'Angy\'an, J. G., Kresse, G., Dobson, J. F.
 Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation  
 Phys. Rev. Lett. **105**, 196401 (2010)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-2909f183-6d51-4e9a-b372-3d66a18961ae">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2909f183-6d51-4e9a-b372-3d66a18961ae" tabindex="-1" role="dialog" aria-labelledby="uuid-508e41ea-82ba-4519-aa27-7e4dea92ec88">
+<a data-toggle="modal" href="#uuid-321f4191-e9b1-45e7-80c3-246848345bbe">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-321f4191-e9b1-45e7-80c3-246848345bbe" tabindex="-1" role="dialog" aria-labelledby="uuid-321b3154-f406-46dc-a8c7-16bb642a615c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-508e41ea-82ba-4519-aa27-7e4dea92ec88">bibtex</h4>
+        <h4 class="modal-title" id="uuid-321b3154-f406-46dc-a8c7-16bb642a615c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Lebegue2010,
+      <div class="modal-body"> <pre>@article{Lebegue2010,
     author = &quot;Leb\`egue, S. and Harl, J. and Gould, T. and \&#x27;Angy\&#x27;an, J. G. and Kresse, G. and Dobson, J. F.&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
     Title = &quot;Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation&quot;,
@@ -3679,11 +3528,11 @@ Phys. Rev. Lett. **105**, 196401 (2010)
     pages = &quot;196401&quot;,
     volume = &quot;105&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
 * * *
 
 
@@ -3694,16 +3543,15 @@ Lechermann, F., Georges, A., Poteryaev, S., Biermann, S., Posternak, M., Yamasak
 Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials  
 Phys. Rev. B **74**, 125120 (2006)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-64346d52-d42c-43ac-a32e-0ec0a77080db">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-64346d52-d42c-43ac-a32e-0ec0a77080db" tabindex="-1" role="dialog" aria-labelledby="uuid-a671dd73-4fab-4970-b72c-c1bb95184e8b">
+<a data-toggle="modal" href="#uuid-044e2d45-6471-47e0-8e8c-bc0c38adaeb7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-044e2d45-6471-47e0-8e8c-bc0c38adaeb7" tabindex="-1" role="dialog" aria-labelledby="uuid-1fc41f96-263f-40eb-8737-bd12516362d4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a671dd73-4fab-4970-b72c-c1bb95184e8b">bibtex</h4>
+        <h4 class="modal-title" id="uuid-1fc41f96-263f-40eb-8737-bd12516362d4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Lechermann2006,
+      <div class="modal-body"> <pre>@article{Lechermann2006,
     author = &quot;Lechermann, F. and Georges, A. and Poteryaev, S. and Biermann, S. and Posternak, M. and Yamasaki, A. and Andersen, O. K.&quot;,
     title = &quot;Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3711,11 +3559,11 @@ Phys. Rev. B **74**, 125120 (2006)
     pages = &quot;125120&quot;,
     year = &quot;2006&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -3726,16 +3574,15 @@ Lee, C., Gonze, X.
 Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite  
 Phys. Rev. B **51**, 8610 (1995)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-e5b51ef7-0243-437c-8799-163eab35268c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-e5b51ef7-0243-437c-8799-163eab35268c" tabindex="-1" role="dialog" aria-labelledby="uuid-44ba51b0-4bee-4f15-beb8-b0c98c6a3c3f">
+<a data-toggle="modal" href="#uuid-709bbd35-4b68-4eea-93b8-b75dae35a709">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-709bbd35-4b68-4eea-93b8-b75dae35a709" tabindex="-1" role="dialog" aria-labelledby="uuid-fd45130e-d2c4-4b83-9dd5-cf66e8e92907">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-44ba51b0-4bee-4f15-beb8-b0c98c6a3c3f">bibtex</h4>
+        <h4 class="modal-title" id="uuid-fd45130e-d2c4-4b83-9dd5-cf66e8e92907">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Lee1995,
+      <div class="modal-body"> <pre>@article{Lee1995,
     author = &quot;Lee, C. and Gonze, X.&quot;,
     title = &quot;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3743,11 +3590,11 @@ Phys. Rev. B **51**, 8610 (1995)
     pages = &quot;8610&quot;,
     year = &quot;1995&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Temperature"> /topics/Temperature </a>
 * * *
 
 
@@ -3758,16 +3605,15 @@ Lejaeghere, K., {V}an {S}peybroeck, V., {V}an {O}ost, G., Cottenier, S.
 Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals  
 Crit. Rev. Solid State Mater. Sci. **39**, 1 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-f154500f-7563-4754-aa75-066aedd61235">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f154500f-7563-4754-aa75-066aedd61235" tabindex="-1" role="dialog" aria-labelledby="uuid-78e25b25-25c5-47bf-a7d4-bcf10cb77081">
+<a data-toggle="modal" href="#uuid-f866137c-f4a0-4bc2-bf72-a430922c5e80">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f866137c-f4a0-4bc2-bf72-a430922c5e80" tabindex="-1" role="dialog" aria-labelledby="uuid-b534de47-69a4-4c85-84f5-6c51544c0cbc">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-78e25b25-25c5-47bf-a7d4-bcf10cb77081">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b534de47-69a4-4c85-84f5-6c51544c0cbc">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Lejaeghere2014,
+      <div class="modal-body"> <pre>@article{Lejaeghere2014,
     Author = &quot;Lejaeghere, K. and {V}an {S}peybroeck, V. and {V}an {O}ost, G. and Cottenier, S.&quot;,
     Title = &quot;Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals&quot;,
     Journal = &quot;Crit. Rev. Solid State Mater. Sci.&quot;,
@@ -3775,8 +3621,7 @@ Crit. Rev. Solid State Mater. Sci. **39**, 1 (2014)
     Pages = &quot;1&quot;,
     year = &quot;2014&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3790,16 +3635,15 @@ Levitt, A., Torrent, M.
 Parallel eigensolvers in plane-wave Density Functional Theory  
 Comp. Phys. Comm. **187**, 98--105 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ca39e40a-6b25-40c3-be8d-5f019c2d6c1f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ca39e40a-6b25-40c3-be8d-5f019c2d6c1f" tabindex="-1" role="dialog" aria-labelledby="uuid-88d71cc4-f236-4ab0-a9d4-48a99ee8eb8a">
+<a data-toggle="modal" href="#uuid-2b900510-9818-47e5-a430-cffe6f2dbc94">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2b900510-9818-47e5-a430-cffe6f2dbc94" tabindex="-1" role="dialog" aria-labelledby="uuid-2578331b-3158-4f4b-b519-82268be61e2d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-88d71cc4-f236-4ab0-a9d4-48a99ee8eb8a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2578331b-3158-4f4b-b519-82268be61e2d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Levitt2015,
+      <div class="modal-body"> <pre>@article{Levitt2015,
     author = &quot;Levitt, A. and Torrent, M.&quot;,
     title = &quot;Parallel eigensolvers in plane-wave Density Functional Theory&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -3808,11 +3652,11 @@ Comp. Phys. Comm. **187**, 98--105 (2015)
     pages = &quot;98--105&quot;,
     year = &quot;2015&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/parallelism"> /topics/parallelism </a>
 * * *
 
 
@@ -3822,17 +3666,16 @@ Comp. Phys. Comm. **187**, 98--105 (2015)
 Liechtenstein, A. I., Anisimov, V. I., Zaanen, J.  
 Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators  
 Phys. Rev. B **52**, R5467--R5470 (1995)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.52.R5467 target="_blank">https://doi.org/10.1103/PhysRevB.52.R5467</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-ce23ad14-0644-4a30-9dbc-2a05e38ac979">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ce23ad14-0644-4a30-9dbc-2a05e38ac979" tabindex="-1" role="dialog" aria-labelledby="uuid-3f04d023-516b-4594-b448-1b1ea5714754">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.52.R5467" target="_blank">https://doi.org/10.1103/PhysRevB.52.R5467</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-3fd9b81a-b9e5-4b1a-a5e8-53fbf5abd3ba">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-3fd9b81a-b9e5-4b1a-a5e8-53fbf5abd3ba" tabindex="-1" role="dialog" aria-labelledby="uuid-91316a42-4ee0-434a-8eef-543816fbcb88">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3f04d023-516b-4594-b448-1b1ea5714754">bibtex</h4>
+        <h4 class="modal-title" id="uuid-91316a42-4ee0-434a-8eef-543816fbcb88">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Liechtenstein1995,
+      <div class="modal-body"> <pre>@article{Liechtenstein1995,
     author = &quot;Liechtenstein, A. I. and Anisimov, V. I. and Zaanen, J.&quot;,
     title = &quot;Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3848,11 +3691,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.52.R5467 target="_blank">https://d
     timestamp = &quot;2012.06.14&quot;,
     doi = &quot;10.1103/PhysRevB.52.R5467&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DFT+U"> /topics/DFT+U </a>, <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -3863,16 +3706,15 @@ Lindhard, J.
 On the properties of a gas of charged particles  
 Mat. Fys. Medd. Dan. Vid. Selsk. **28**, 8 (1954)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-1f08d9f6-7bcb-4bac-bef4-5c3b5bdd1494">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-1f08d9f6-7bcb-4bac-bef4-5c3b5bdd1494" tabindex="-1" role="dialog" aria-labelledby="uuid-bfcbeb4c-32d6-4e97-97e0-e2fcf6713434">
+<a data-toggle="modal" href="#uuid-f736d6c8-a370-46c1-be48-a38b3f3bdb4b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f736d6c8-a370-46c1-be48-a38b3f3bdb4b" tabindex="-1" role="dialog" aria-labelledby="uuid-5477c7c9-f6ab-4272-a8d4-75cf84430782">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bfcbeb4c-32d6-4e97-97e0-e2fcf6713434">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5477c7c9-f6ab-4272-a8d4-75cf84430782">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Lindhard1954,
+      <div class="modal-body"> <pre>@article{Lindhard1954,
     author = &quot;Lindhard, J.&quot;,
     title = &quot;On the properties of a gas of charged particles&quot;,
     journal = &quot;Mat. Fys. Medd. Dan. Vid. Selsk.&quot;,
@@ -3880,11 +3722,11 @@ Mat. Fys. Medd. Dan. Vid. Selsk. **28**, 8 (1954)
     volume = &quot;28&quot;,
     pages = &quot;8&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/RandStopPow"> /topics/RandStopPow </a>
 * * *
 
 
@@ -3894,17 +3736,16 @@ Mat. Fys. Medd. Dan. Vid. Selsk. **28**, 8 (1954)
 Luttinger, J.M., Kohn, W.  
 {Motion of Electrons and Holes in Perturbed Periodic Fields}  
 Phys. Rev. **97**, 869--883 (1955)  
-DOI: <a href=https://doi.org/10.1103/PhysRev.97.869 target="_blank">https://doi.org/10.1103/PhysRev.97.869</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-8d6f7bb1-3666-42b3-beb0-ff80a4f6d979">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-8d6f7bb1-3666-42b3-beb0-ff80a4f6d979" tabindex="-1" role="dialog" aria-labelledby="uuid-3fcf32e3-a4c4-4464-8765-ff3ea44d5270">
+DOI: <a href="https://doi.org/10.1103/PhysRev.97.869" target="_blank">https://doi.org/10.1103/PhysRev.97.869</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-4de3fc5a-5681-4525-9ea2-196e770bfc7d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4de3fc5a-5681-4525-9ea2-196e770bfc7d" tabindex="-1" role="dialog" aria-labelledby="uuid-f516a9e0-3489-460f-b8d8-cbcb289ef695">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3fcf32e3-a4c4-4464-8765-ff3ea44d5270">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f516a9e0-3489-460f-b8d8-cbcb289ef695">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Luttinger1955,
+      <div class="modal-body"> <pre>@article{Luttinger1955,
     author = &quot;Luttinger, J.M. and Kohn, W.&quot;,
     title = &quot;{Motion of Electrons and Holes in Perturbed Periodic Fields}&quot;,
     journal = &quot;Phys. Rev.&quot;,
@@ -3914,11 +3755,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRev.97.869 target="_blank">https://doi.
     pages = &quot;869--883&quot;,
     doi = &quot;10.1103/PhysRev.97.869&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/EffMass"> /topics/EffMass </a>
 * * *
 
 
@@ -3929,16 +3770,15 @@ Ma, Pui-Wai, Dudarev, S. L.
 Constrained density functional for noncollinear magnetism  
 Phys. Rev. B **91**, 054420 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-d459dfcb-ae70-40db-8543-ebfe8dd2be5a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d459dfcb-ae70-40db-8543-ebfe8dd2be5a" tabindex="-1" role="dialog" aria-labelledby="uuid-1c2bae8a-9419-45a9-a58b-67f730be867e">
+<a data-toggle="modal" href="#uuid-571f83b4-413f-4d2b-b7b1-aae3c9e162ed">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-571f83b4-413f-4d2b-b7b1-aae3c9e162ed" tabindex="-1" role="dialog" aria-labelledby="uuid-89bfaf61-1b08-4d44-a217-a35dcf42af76">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1c2bae8a-9419-45a9-a58b-67f730be867e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-89bfaf61-1b08-4d44-a217-a35dcf42af76">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ma2015,
+      <div class="modal-body"> <pre>@article{Ma2015,
     author = &quot;Ma, Pui-Wai and Dudarev, S. L.&quot;,
     title = &quot;Constrained density functional for noncollinear magnetism&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -3948,11 +3788,11 @@ Phys. Rev. B **91**, 054420 (2015)
     numpages = &quot;11&quot;,
     year = &quot;2015&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/MagMom"> /topics/MagMom </a>
 * * *
 
 
@@ -3963,16 +3803,15 @@ Maintz, S., Eck, B., Dronskowski, R.
 Speeding up plane-wave electronic-structure calculations using graphics-processing units  
 Comp. Phys. Comm. **182**, 1421--1427 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-845948c6-966b-4bda-b907-a8db04548407">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-845948c6-966b-4bda-b907-a8db04548407" tabindex="-1" role="dialog" aria-labelledby="uuid-cce56c5b-aff5-458b-b8bf-e9ff57fb2974">
+<a data-toggle="modal" href="#uuid-51c4ae70-f53e-4703-83e2-cca7baf2d119">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-51c4ae70-f53e-4703-83e2-cca7baf2d119" tabindex="-1" role="dialog" aria-labelledby="uuid-96aed46a-3862-4796-8ded-c40b12bf40bf">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-cce56c5b-aff5-458b-b8bf-e9ff57fb2974">bibtex</h4>
+        <h4 class="modal-title" id="uuid-96aed46a-3862-4796-8ded-c40b12bf40bf">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Maintz2012,
+      <div class="modal-body"> <pre>@article{Maintz2012,
     author = &quot;Maintz, S. and Eck, B. and Dronskowski, R.&quot;,
     title = &quot;Speeding up plane-wave electronic-structure calculations using graphics-processing units&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -3981,8 +3820,7 @@ Comp. Phys. Comm. **182**, 1421--1427 (2012)
     pages = &quot;1421--1427&quot;,
     year = &quot;2012&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -3996,16 +3834,15 @@ Marek, A., Blum, V., Johanni, R., Havu, V., Lang, B., Auckenthaler, T., Heinecke
 The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science  
 J. Phys.: Cond. Matt. **26**, 1--15 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-2b9a9af8-9b48-4c0f-9309-3cf8b349d495">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2b9a9af8-9b48-4c0f-9309-3cf8b349d495" tabindex="-1" role="dialog" aria-labelledby="uuid-4f685948-96a5-40ad-b1d1-ed3fdd4e3c02">
+<a data-toggle="modal" href="#uuid-1867d0ef-3be0-4793-bc15-48f373822354">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1867d0ef-3be0-4793-bc15-48f373822354" tabindex="-1" role="dialog" aria-labelledby="uuid-dc6b7bc1-f8a4-447c-9f21-b9a35b23d404">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4f685948-96a5-40ad-b1d1-ed3fdd4e3c02">bibtex</h4>
+        <h4 class="modal-title" id="uuid-dc6b7bc1-f8a4-447c-9f21-b9a35b23d404">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Marek2014,
+      <div class="modal-body"> <pre>@article{Marek2014,
     author = &quot;Marek, A. and Blum, V. and Johanni, R. and Havu, V. and Lang, B. and Auckenthaler, T. and Heinecke, A. and Bungartz, H.-J. and Lederer, H.&quot;,
     title = &quot;The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science&quot;,
     journal = &quot;J. Phys.: Cond. Matt.&quot;,
@@ -4014,8 +3851,7 @@ J. Phys.: Cond. Matt. **26**, 1--15 (2014)
     pages = &quot;1--15&quot;,
     year = &quot;2014&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4028,17 +3864,16 @@ J. Phys.: Cond. Matt. **26**, 1--15 (2014)
 Marques, M. A. L., Oliveira, M. J. T., Burnus, T.  
 {Libxc: A library of exchange and correlation functionals for density functional theory}  
 Comput. Phys. Commun. **183**, 2272--2281 (2012)  
-DOI: <a href=https://doi.org/10.1016/j.cpc.2012.05.007 target="_blank">https://doi.org/10.1016/j.cpc.2012.05.007</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-653df329-a749-45cc-896f-5def2fac5403">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-653df329-a749-45cc-896f-5def2fac5403" tabindex="-1" role="dialog" aria-labelledby="uuid-6e517cda-e836-4af9-8a22-b5ad6c828454">
+DOI: <a href="https://doi.org/10.1016/j.cpc.2012.05.007" target="_blank">https://doi.org/10.1016/j.cpc.2012.05.007</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-e7d6ae87-1372-428a-b75f-9549ff05513d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e7d6ae87-1372-428a-b75f-9549ff05513d" tabindex="-1" role="dialog" aria-labelledby="uuid-48219bea-a8b9-4089-8fe5-cc9f805b307b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6e517cda-e836-4af9-8a22-b5ad6c828454">bibtex</h4>
+        <h4 class="modal-title" id="uuid-48219bea-a8b9-4089-8fe5-cc9f805b307b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Marques2012,
+      <div class="modal-body"> <pre>@article{Marques2012,
     author = &quot;Marques, M. A. L. and Oliveira, M. J. T. and Burnus, T.&quot;,
     doi = &quot;10.1016/j.cpc.2012.05.007&quot;,
     issn = &quot;00104655&quot;,
@@ -4048,8 +3883,7 @@ DOI: <a href=https://doi.org/10.1016/j.cpc.2012.05.007 target="_blank">https://d
     volume = &quot;183&quot;,
     year = &quot;2012&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4063,16 +3897,15 @@ Marx, D., Parrinello, M.
 Ab initio path integral molecular dynamics: Basic ideas  
 J. Chem. Phys. **104**, 4077 (1996)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-17f77767-3c19-46a1-8765-4c078ba8c29e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-17f77767-3c19-46a1-8765-4c078ba8c29e" tabindex="-1" role="dialog" aria-labelledby="uuid-a0d91d5f-1be4-487b-9a93-680d903cac65">
+<a data-toggle="modal" href="#uuid-1397ac4d-e5dc-4eea-aa13-8e3620c2074a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1397ac4d-e5dc-4eea-aa13-8e3620c2074a" tabindex="-1" role="dialog" aria-labelledby="uuid-002b8c2f-f717-410b-908b-0e084ab96846">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a0d91d5f-1be4-487b-9a93-680d903cac65">bibtex</h4>
+        <h4 class="modal-title" id="uuid-002b8c2f-f717-410b-908b-0e084ab96846">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Marx1996,
+      <div class="modal-body"> <pre>@article{Marx1996,
     Author = &quot;Marx, D. and Parrinello, M.&quot;,
     Title = &quot;Ab initio path integral molecular dynamics: Basic ideas&quot;,
     Journal = &quot;J. Chem. Phys.&quot;,
@@ -4080,11 +3913,11 @@ J. Chem. Phys. **104**, 4077 (1996)
     Pages = &quot;4077&quot;,
     year = &quot;1996&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PIMD"> /topics/PIMD </a>
 * * *
 
 
@@ -4094,17 +3927,16 @@ J. Chem. Phys. **104**, 4077 (1996)
 Mecholsky, N.A., Resca, L., Pegg, I.L., Fornari, M.  
 {Theory of band warping and its effects on thermoelectronic transport properties}  
 Phys. Rev. B **89**, 155131 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.89.155131 target="_blank">https://doi.org/10.1103/PhysRevB.89.155131</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-f91ee9c1-5da2-458d-9144-86b728ee625a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-f91ee9c1-5da2-458d-9144-86b728ee625a" tabindex="-1" role="dialog" aria-labelledby="uuid-1bc44a20-960e-42cd-826a-01290e4e32b6">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.89.155131" target="_blank">https://doi.org/10.1103/PhysRevB.89.155131</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-f437630a-45e4-4670-9f47-10ef55da391a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f437630a-45e4-4670-9f47-10ef55da391a" tabindex="-1" role="dialog" aria-labelledby="uuid-6f1830c8-56da-4d69-9ed4-500611a27b1f">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1bc44a20-960e-42cd-826a-01290e4e32b6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6f1830c8-56da-4d69-9ed4-500611a27b1f">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Mecholsky2014,
+      <div class="modal-body"> <pre>@article{Mecholsky2014,
     author = &quot;Mecholsky, N.A. and Resca, L. and Pegg, I.L. and Fornari, M.&quot;,
     title = &quot;{Theory of band warping and its effects on thermoelectronic transport properties}&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4114,11 +3946,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.89.155131 target="_blank">https://
     pages = &quot;155131&quot;,
     doi = &quot;10.1103/PhysRevB.89.155131&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/EffMass"> /topics/EffMass </a>
 * * *
 
 
@@ -4129,16 +3961,15 @@ Medeiros, Paulo V. C., Stafstr\"om, Sven, Bj\"ork, Jonas
 Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding  
 Phys. Rev. B **89**, 041407 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ed979812-0c6e-469b-a980-fbbc4e095295">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ed979812-0c6e-469b-a980-fbbc4e095295" tabindex="-1" role="dialog" aria-labelledby="uuid-4761f6f8-9c59-4da5-a1e5-97bda9d47608">
+<a data-toggle="modal" href="#uuid-e7b985f7-aca3-4271-93f1-cff0f2cd0219">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e7b985f7-aca3-4271-93f1-cff0f2cd0219" tabindex="-1" role="dialog" aria-labelledby="uuid-a284702c-bc74-4fc5-94e0-42687cb8118b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4761f6f8-9c59-4da5-a1e5-97bda9d47608">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a284702c-bc74-4fc5-94e0-42687cb8118b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Medeiros2014,
+      <div class="modal-body"> <pre>@article{Medeiros2014,
     Author = {Medeiros, Paulo V. C. and Stafstr\&quot;om, Sven and Bj\&quot;ork, Jonas},
     Title = &quot;Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -4146,8 +3977,7 @@ Phys. Rev. B **89**, 041407 (2014)
     Pages = &quot;041407&quot;,
     Volume = &quot;89&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4161,16 +3991,15 @@ Methfessel, M., Paxton, T.
 High-precision sampling for Brillouin-Zone integration in metals  
 Phys. Rev. B **40**, 3616 (1989)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-6e152844-eb52-443b-bc77-29e30d8c1e05">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6e152844-eb52-443b-bc77-29e30d8c1e05" tabindex="-1" role="dialog" aria-labelledby="uuid-5a37f011-8027-403b-a3b9-3f98c82bbbc9">
+<a data-toggle="modal" href="#uuid-cbc9d4e5-8786-4dbe-803d-2957c981b444">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-cbc9d4e5-8786-4dbe-803d-2957c981b444" tabindex="-1" role="dialog" aria-labelledby="uuid-f97f26c1-bcca-485f-b821-487f4c1e97f4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-5a37f011-8027-403b-a3b9-3f98c82bbbc9">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f97f26c1-bcca-485f-b821-487f4c1e97f4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Methfessel1989,
+      <div class="modal-body"> <pre>@article{Methfessel1989,
     author = &quot;Methfessel, M. and Paxton, T.&quot;,
     title = &quot;High-precision sampling for Brillouin-Zone integration in metals&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4178,11 +4007,11 @@ Phys. Rev. B **40**, 3616 (1989)
     pages = &quot;3616&quot;,
     year = &quot;1989&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/input_variables/basic"> /input_variables/basic </a>
 * * *
 
 
@@ -4193,16 +4022,15 @@ Mills, G., J{\'o}nsson, H.
 Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems  
 Phys. Rev. Lett. **72**, 1124 (1994)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-731eff83-2b82-4ec9-a50c-8b9ac0ee2228">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-731eff83-2b82-4ec9-a50c-8b9ac0ee2228" tabindex="-1" role="dialog" aria-labelledby="uuid-19d996c9-5fd4-48ac-9cb4-dc7c301e6dcc">
+<a data-toggle="modal" href="#uuid-5cd7e249-568c-4bac-ac46-77067a896774">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-5cd7e249-568c-4bac-ac46-77067a896774" tabindex="-1" role="dialog" aria-labelledby="uuid-711a1d47-a4d1-4687-ae09-5a3b7c78153e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-19d996c9-5fd4-48ac-9cb4-dc7c301e6dcc">bibtex</h4>
+        <h4 class="modal-title" id="uuid-711a1d47-a4d1-4687-ae09-5a3b7c78153e">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Mills1994,
+      <div class="modal-body"> <pre>@article{Mills1994,
     author = &quot;Mills, G. and J{\&#x27;o}nsson, H.&quot;,
     title = &quot;Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -4212,11 +4040,11 @@ Phys. Rev. Lett. **72**, 1124 (1994)
     year = &quot;1994&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TransPath"> /topics/TransPath </a>
 * * *
 
 
@@ -4227,16 +4055,15 @@ Momma, K., Izumi, F.
 {VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data  
 J. Appl. Crystallogr. **44**, 1272--1276 (2011)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-0094ebf3-8cdd-45a4-b91d-3796dcc71849">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0094ebf3-8cdd-45a4-b91d-3796dcc71849" tabindex="-1" role="dialog" aria-labelledby="uuid-32668ebe-135b-493f-8947-5dcd79719665">
+<a data-toggle="modal" href="#uuid-0e8696c2-68a7-4f2e-a7d9-30cba5612963">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0e8696c2-68a7-4f2e-a7d9-30cba5612963" tabindex="-1" role="dialog" aria-labelledby="uuid-91d40866-6f1f-4e15-a135-d714a8750f52">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-32668ebe-135b-493f-8947-5dcd79719665">bibtex</h4>
+        <h4 class="modal-title" id="uuid-91d40866-6f1f-4e15-a135-d714a8750f52">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Momma2011,
+      <div class="modal-body"> <pre>@article{Momma2011,
     Author = &quot;Momma, K. and Izumi, F.&quot;,
     Title = &quot;{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data&quot;,
     Journal = &quot;J. Appl. Crystallogr.&quot;,
@@ -4245,8 +4072,7 @@ J. Appl. Crystallogr. **44**, 1272--1276 (2011)
     Pages = &quot;1272--1276&quot;,
     Volume = &quot;44&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4260,16 +4086,15 @@ Mosca Conte, A.
 Quantum mechanical modeling of nano magnetism  
 SISSA (2007)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-68d3df82-edd0-4344-92f7-32f608ffe53e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-68d3df82-edd0-4344-92f7-32f608ffe53e" tabindex="-1" role="dialog" aria-labelledby="uuid-290b5b58-4381-46c4-b2ae-6374a161c03e">
+<a data-toggle="modal" href="#uuid-e11af5b8-8717-4482-8107-960b771ef136">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e11af5b8-8717-4482-8107-960b771ef136" tabindex="-1" role="dialog" aria-labelledby="uuid-6da361c5-fe0c-4b25-b30e-33e5b07f4ef5">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-290b5b58-4381-46c4-b2ae-6374a161c03e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-6da361c5-fe0c-4b25-b30e-33e5b07f4ef5">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@phdthesis{Moscaconte2007,
+      <div class="modal-body"> <pre>@phdthesis{Moscaconte2007,
     author = &quot;Mosca Conte, A.&quot;,
     title = &quot;Quantum mechanical modeling of nano magnetism&quot;,
     school = &quot;SISSA&quot;,
@@ -4277,11 +4102,11 @@ SISSA (2007)
     address = &quot;Trieste Italy&quot;,
     optURI = &quot;http://hdl.handle.net/20.500.11767/3935&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/MagMom"> /topics/MagMom </a>
 * * *
 
 
@@ -4291,17 +4116,16 @@ SISSA (2007)
 Nieminen, R. M., Boro\'nski, E., Lantto, L. J.  
 Two-component density-functional theory: Application to positron states  
 Phys. Rev. B **32**, 1377 (1985)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.32.1377 target="_blank">https://doi.org/10.1103/PhysRevB.32.1377</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-0293a4e8-7075-41be-8235-61ac37579a79">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0293a4e8-7075-41be-8235-61ac37579a79" tabindex="-1" role="dialog" aria-labelledby="uuid-0a0ba72b-4afa-4511-8f2e-aa276670caea">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.32.1377" target="_blank">https://doi.org/10.1103/PhysRevB.32.1377</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-377bff77-b752-422b-8b4b-ff42693241b3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-377bff77-b752-422b-8b4b-ff42693241b3" tabindex="-1" role="dialog" aria-labelledby="uuid-3b1c6a01-e94d-4144-bf37-d6b72f10103f">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-0a0ba72b-4afa-4511-8f2e-aa276670caea">bibtex</h4>
+        <h4 class="modal-title" id="uuid-3b1c6a01-e94d-4144-bf37-d6b72f10103f">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Nieminen1985,
+      <div class="modal-body"> <pre>@article{Nieminen1985,
     author = &quot;Nieminen, R. M. and Boro\&#x27;nski, E. and Lantto, L. J.&quot;,
     title = &quot;Two-component density-functional theory: Application to positron states&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4312,8 +4136,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.32.1377 target="_blank">https://do
     doi = &quot;10.1103/PhysRevB.32.1377&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4327,16 +4150,15 @@ Nunes, R. W., Gonze, X.
 Berry-phase treatment of the homogeneous electric field perturbation in insulators  
 Phys. Rev. B **63**, 155107 (2001)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b6a30b57-217d-4ca5-b639-70fee01b5ac3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b6a30b57-217d-4ca5-b639-70fee01b5ac3" tabindex="-1" role="dialog" aria-labelledby="uuid-3c40c5d5-292e-4d05-b16d-f910653a37f6">
+<a data-toggle="modal" href="#uuid-6ca27b90-73a1-4c78-91f7-abd3b7dc6760">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6ca27b90-73a1-4c78-91f7-abd3b7dc6760" tabindex="-1" role="dialog" aria-labelledby="uuid-4219f368-9906-4513-bb43-8602f492595d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3c40c5d5-292e-4d05-b16d-f910653a37f6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4219f368-9906-4513-bb43-8602f492595d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Nunes2001,
+      <div class="modal-body"> <pre>@article{Nunes2001,
     author = &quot;Nunes, R. W. and Gonze, X.&quot;,
     title = &quot;Berry-phase treatment of the homogeneous electric field perturbation in insulators&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4345,11 +4167,11 @@ Phys. Rev. B **63**, 155107 (2001)
     pages = &quot;155107&quot;,
     year = &quot;2001&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Berry"> /topics/Berry </a>
 * * *
 
 
@@ -4359,17 +4181,16 @@ Phys. Rev. B **63**, 155107 (2001)
 Ong, S.P., Richards, W.D., Jain, A., Hautier, G., Kocher, M., Cholia, S., Gunter, D., Chevrier, V.L., Persson, K.A., Ceder, G.  
 Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis  
 Comp. Mat. Sci. **68**, 314 - 319 (2013)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025612006295 target="_black">http://www.sciencedirect.com/science/article/pii/S0927025612006295</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-dbd39f29-0db8-49bd-982e-51bd5058adcb">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-dbd39f29-0db8-49bd-982e-51bd5058adcb" tabindex="-1" role="dialog" aria-labelledby="uuid-cb022730-c5cf-403a-8df0-8232aa29b319">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025612006295" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025612006295</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-dba80440-9d64-448c-b8b1-435e616c4e35">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-dba80440-9d64-448c-b8b1-435e616c4e35" tabindex="-1" role="dialog" aria-labelledby="uuid-d689d041-ef53-4f3b-beaa-19a9863d04fe">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-cb022730-c5cf-403a-8df0-8232aa29b319">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d689d041-ef53-4f3b-beaa-19a9863d04fe">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ong2013,
+      <div class="modal-body"> <pre>@article{Ong2013,
     author = &quot;Ong, S.P. and Richards, W.D. and Jain, A. and Hautier, G. and Kocher, M. and Cholia, S. and Gunter, D. and Chevrier, V.L. and Persson, K.A. and Ceder, G.&quot;,
     title = &quot;Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis&quot;,
     journal = &quot;Comp. Mat. Sci.&quot;,
@@ -4383,8 +4204,7 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025612006295 
     url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025612006295&quot;,
     keywords = &quot;High-throughput&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4397,17 +4217,16 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025612006295 
 Onida, G., Reining, L., Rubio, A.  
 Electronic excitations: density-functional versus many-body Green's-function approaches  
 Rev. Mod. Phys. **74**, 601--659 (2002)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.74.601 target="_blank">https://doi.org/10.1103/RevModPhys.74.601</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-3f66e0ae-a9f2-4ab3-b298-b6c0c7d82ec6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3f66e0ae-a9f2-4ab3-b298-b6c0c7d82ec6" tabindex="-1" role="dialog" aria-labelledby="uuid-3ddd6f76-3ae9-4506-9b0d-3a621e34a780">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.74.601" target="_blank">https://doi.org/10.1103/RevModPhys.74.601</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-2da5414d-71ab-4e1c-92dc-dccc358692d5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2da5414d-71ab-4e1c-92dc-dccc358692d5" tabindex="-1" role="dialog" aria-labelledby="uuid-0c9929b2-450d-4f98-bfca-161864ba8d38">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3ddd6f76-3ae9-4506-9b0d-3a621e34a780">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0c9929b2-450d-4f98-bfca-161864ba8d38">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Onida2002,
+      <div class="modal-body"> <pre>@article{Onida2002,
     author = &quot;Onida, G. and Reining, L. and Rubio, A.&quot;,
     title = &quot;Electronic excitations: density-functional versus many-body Green&#x27;s-function approaches&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -4418,11 +4237,11 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.74.601 target="_blank">https://d
     numpages = &quot;58&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>, <a href="/topics/GW"> /topics/GW </a>
 * * *
 
 
@@ -4432,17 +4251,16 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.74.601 target="_blank">https://d
 Payne, M. C., Teter, M. P., Allan, D. C., Arias, T. A., Joannopoulos, J. D.  
 Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients  
 Rev. Mod. Phys. **64**, 1045--1097 (1992)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.64.1045 target="_blank">https://doi.org/10.1103/RevModPhys.64.1045</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-65f3d384-9c02-4be4-971e-901e341c719f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-65f3d384-9c02-4be4-971e-901e341c719f" tabindex="-1" role="dialog" aria-labelledby="uuid-e62749fd-02a0-470e-b88f-fe4c642c5002">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.64.1045" target="_blank">https://doi.org/10.1103/RevModPhys.64.1045</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-cabf7b85-3ecf-46ad-96f0-0fa2e4a655cd">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-cabf7b85-3ecf-46ad-96f0-0fa2e4a655cd" tabindex="-1" role="dialog" aria-labelledby="uuid-2c9982ff-f469-4d43-95cb-c8ec38857ad1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e62749fd-02a0-470e-b88f-fe4c642c5002">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2c9982ff-f469-4d43-95cb-c8ec38857ad1">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Payne1992,
+      <div class="modal-body"> <pre>@article{Payne1992,
     author = &quot;Payne, M. C. and Teter, M. P. and Allan, D. C. and Arias, T. A. and Joannopoulos, J. D.&quot;,
     title = &quot;Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -4454,11 +4272,11 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.64.1045 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/RevModPhys.64.1045&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/BSE"> /topics/BSE </a>
 * * *
 
 
@@ -4469,16 +4287,15 @@ Perdew, J.P., Zunger, A.
 Self-interaction correction to density-functional approximations for many-electron systems  
 Phys. Rev. B **23**, 5048 (1981)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ff088884-a235-4c62-b5df-e89efb46b892">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ff088884-a235-4c62-b5df-e89efb46b892" tabindex="-1" role="dialog" aria-labelledby="uuid-07c315f2-d5e4-49fe-aab0-5f0fa937bcad">
+<a data-toggle="modal" href="#uuid-ac4f5f3f-38f3-476a-8d53-4f538bd3d429">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ac4f5f3f-38f3-476a-8d53-4f538bd3d429" tabindex="-1" role="dialog" aria-labelledby="uuid-503ceb8f-6760-4081-9a3e-c1014498cebc">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-07c315f2-d5e4-49fe-aab0-5f0fa937bcad">bibtex</h4>
+        <h4 class="modal-title" id="uuid-503ceb8f-6760-4081-9a3e-c1014498cebc">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Perdew1981,
+      <div class="modal-body"> <pre>@article{Perdew1981,
     author = &quot;Perdew, J.P. and Zunger, A.&quot;,
     title = &quot;Self-interaction correction to density-functional approximations for many-electron systems&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4486,11 +4303,11 @@ Phys. Rev. B **23**, 5048 (1981)
     pages = &quot;5048&quot;,
     year = &quot;1981&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/input_variables/basic"> /input_variables/basic </a>
 * * *
 
 
@@ -4501,16 +4318,15 @@ Perrot, F.
 Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations  
 Phys. Rev. A **20**, 586-594 (1979)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-3e47737e-06fc-4d99-b3ef-7b865a2c843d">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3e47737e-06fc-4d99-b3ef-7b865a2c843d" tabindex="-1" role="dialog" aria-labelledby="uuid-b952a324-193a-49e3-91cc-96f98de8d4fe">
+<a data-toggle="modal" href="#uuid-b7716a39-3810-4dfa-800f-0eacab59a705">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b7716a39-3810-4dfa-800f-0eacab59a705" tabindex="-1" role="dialog" aria-labelledby="uuid-d0ef71a4-0e9b-49ba-abd1-6eac6b93a0d7">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b952a324-193a-49e3-91cc-96f98de8d4fe">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d0ef71a4-0e9b-49ba-abd1-6eac6b93a0d7">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Perrot1979,
+      <div class="modal-body"> <pre>@article{Perrot1979,
     author = &quot;Perrot, F.&quot;,
     title = &quot;Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations&quot;,
     journal = &quot;Phys. Rev. A&quot;,
@@ -4518,11 +4334,11 @@ Phys. Rev. A **20**, 586-594 (1979)
     pages = &quot;586-594&quot;,
     year = &quot;1979&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Recursion"> /topics/Recursion </a>
 * * *
 
 
@@ -4533,16 +4349,15 @@ Warren E. Pickett, Henry Krakauer,, Allen, Philip B.
 Smooth Fourier interpolation of periodic functions  
 Phys. Rev. B **38**, 2721 (1988)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-4274aaf3-bd02-425d-9d68-1d09caea652e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-4274aaf3-bd02-425d-9d68-1d09caea652e" tabindex="-1" role="dialog" aria-labelledby="uuid-65ef0826-c8bc-425b-b769-2fca97539577">
+<a data-toggle="modal" href="#uuid-5e38db7b-bcc3-49cc-948a-bb34727db3c8">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-5e38db7b-bcc3-49cc-948a-bb34727db3c8" tabindex="-1" role="dialog" aria-labelledby="uuid-078751d5-6c4e-412f-992a-2a58a8e3b465">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-65ef0826-c8bc-425b-b769-2fca97539577">bibtex</h4>
+        <h4 class="modal-title" id="uuid-078751d5-6c4e-412f-992a-2a58a8e3b465">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Pickett1988,
+      <div class="modal-body"> <pre>@article{Pickett1988,
     author = &quot;Warren E. Pickett, Henry Krakauer, and Allen, Philip B.&quot;,
     title = &quot;Smooth Fourier interpolation of periodic functions&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4550,11 +4365,11 @@ Phys. Rev. B **38**, 2721 (1988)
     pages = &quot;2721&quot;,
     year = &quot;1988&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/input_variables/basic"> /input_variables/basic </a>
 * * *
 
 
@@ -4565,16 +4380,15 @@ Ponc\'e, S., Antonius, G., Boulanger, P., Cannuccia, E., Marini, A., C\^ot\'e, M
 Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo  
 Comp. Mat. Sci. **83**, 341 - 348 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-adc7e35c-b969-41dd-956d-87e87a8b8fab">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-adc7e35c-b969-41dd-956d-87e87a8b8fab" tabindex="-1" role="dialog" aria-labelledby="uuid-983f442a-ef46-401c-8b16-9d91a1c01d65">
+<a data-toggle="modal" href="#uuid-6b796a87-5892-4c62-9743-37c1380b45c1">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6b796a87-5892-4c62-9743-37c1380b45c1" tabindex="-1" role="dialog" aria-labelledby="uuid-1eb18f31-01ba-4263-9547-8b32ebc70a05">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-983f442a-ef46-401c-8b16-9d91a1c01d65">bibtex</h4>
+        <h4 class="modal-title" id="uuid-1eb18f31-01ba-4263-9547-8b32ebc70a05">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ponce2014,
+      <div class="modal-body"> <pre>@article{Ponce2014,
     author = &quot;Ponc\&#x27;e, S. and Antonius, G. and Boulanger, P. and Cannuccia, E. and Marini, A. and C\^ot\&#x27;e, M. and Gonze, X.&quot;,
     title = &quot;Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo&quot;,
     journal = &quot;Comp. Mat. Sci.&quot;,
@@ -4582,11 +4396,11 @@ Comp. Mat. Sci. **83**, 341 - 348 (2014)
     volume = &quot;83&quot;,
     pages = &quot;341 - 348&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -4597,16 +4411,15 @@ Ponc\'e, S., Antonius, G., Gillet, Y., Boulanger, P., Laflamme Janssen, J., Mari
 Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation  
 Phys. Rev. B **90**, 214304 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ae36f563-0e9d-4368-acdd-7c3ba5b5d1a3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ae36f563-0e9d-4368-acdd-7c3ba5b5d1a3" tabindex="-1" role="dialog" aria-labelledby="uuid-a8c9c95d-8779-438c-91ba-88559a9fcaf6">
+<a data-toggle="modal" href="#uuid-1e3e8f6e-dd39-43cd-ac5f-54f6d935e63a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1e3e8f6e-dd39-43cd-ac5f-54f6d935e63a" tabindex="-1" role="dialog" aria-labelledby="uuid-749c4384-813c-40c6-837b-df2c58332b27">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a8c9c95d-8779-438c-91ba-88559a9fcaf6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-749c4384-813c-40c6-837b-df2c58332b27">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ponce2014a,
+      <div class="modal-body"> <pre>@article{Ponce2014a,
     author = &quot;Ponc\&#x27;e, S. and Antonius, G. and Gillet, Y. and Boulanger, P. and Laflamme Janssen, J. and Marini, A. and C\^ot\&#x27;e, M. and Gonze, X.&quot;,
     title = &quot;Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4614,11 +4427,11 @@ Phys. Rev. B **90**, 214304 (2014)
     volume = &quot;90&quot;,
     pages = &quot;214304&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -4629,16 +4442,15 @@ Ponc\'e, S., Gillet, Y., Laflamme Janssen, J., Marini, A., Verstraete, M., Gonze
 Temperature dependence of the electronic structure of semiconductors and insulators  
 J. Chem. Phys. **143**, 102813 (2015)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b710ccb4-c35d-4a29-b900-339b596b5d63">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b710ccb4-c35d-4a29-b900-339b596b5d63" tabindex="-1" role="dialog" aria-labelledby="uuid-53f55c2d-9b48-4335-a529-23c3f5e612f2">
+<a data-toggle="modal" href="#uuid-74c0de56-5ac2-4090-adc6-4f396e38374d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-74c0de56-5ac2-4090-adc6-4f396e38374d" tabindex="-1" role="dialog" aria-labelledby="uuid-b0b47ba9-dad0-4276-9aa8-3f29395cc3fa">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-53f55c2d-9b48-4335-a529-23c3f5e612f2">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b0b47ba9-dad0-4276-9aa8-3f29395cc3fa">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Ponce2015,
+      <div class="modal-body"> <pre>@article{Ponce2015,
     author = &quot;Ponc\&#x27;e, S. and Gillet, Y. and Laflamme Janssen, J. and Marini, A. and Verstraete, M. and Gonze, X.&quot;,
     title = &quot;Temperature dependence of the electronic structure of semiconductors and insulators&quot;,
     journal = &quot;J. Chem. Phys.&quot;,
@@ -4646,11 +4458,11 @@ J. Chem. Phys. **143**, 102813 (2015)
     volume = &quot;143&quot;,
     pages = &quot;102813&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>
 * * *
 
 
@@ -4661,16 +4473,15 @@ Popescu, V., Zunger, A.
 Effective Band Structure of Random Alloys  
 Phys. Rev. Lett. **104**, 236403 (2010)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-12d55ec2-c8eb-40c2-86db-55cb9f03ffa8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-12d55ec2-c8eb-40c2-86db-55cb9f03ffa8" tabindex="-1" role="dialog" aria-labelledby="uuid-6007b3b0-ba8c-40ba-a29d-554b7bb537a7">
+<a data-toggle="modal" href="#uuid-292d5bff-3e6b-4e92-8ba2-acf9abdb5c9b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-292d5bff-3e6b-4e92-8ba2-acf9abdb5c9b" tabindex="-1" role="dialog" aria-labelledby="uuid-9f888161-6dee-4b3a-bb2f-82a038e1b11c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6007b3b0-ba8c-40ba-a29d-554b7bb537a7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9f888161-6dee-4b3a-bb2f-82a038e1b11c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Popescu2010,
+      <div class="modal-body"> <pre>@article{Popescu2010,
     Author = &quot;Popescu, V. and Zunger, A.&quot;,
     Title = &quot;Effective Band Structure of Random Alloys&quot;,
     Journal = &quot;Phys. Rev. Lett.&quot;,
@@ -4678,8 +4489,7 @@ Phys. Rev. Lett. **104**, 236403 (2010)
     Pages = &quot;236403&quot;,
     Volume = &quot;104&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4693,16 +4503,15 @@ Popescu, V., Zunger, A.
 Extracting E versus k effective band structure from supercell calculations on alloys and impurities  
 Phys. Rev. B **85**, 085201 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-6d32a4fc-0664-4592-980c-0bd8bceebb51">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6d32a4fc-0664-4592-980c-0bd8bceebb51" tabindex="-1" role="dialog" aria-labelledby="uuid-3620e197-6737-4d3b-a2ee-d71104210adf">
+<a data-toggle="modal" href="#uuid-6a361391-005a-493a-9eeb-73e4b72f0f95">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6a361391-005a-493a-9eeb-73e4b72f0f95" tabindex="-1" role="dialog" aria-labelledby="uuid-d29a85a6-d893-44b9-9d75-278eeff4260c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3620e197-6737-4d3b-a2ee-d71104210adf">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d29a85a6-d893-44b9-9d75-278eeff4260c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Popescu2012,
+      <div class="modal-body"> <pre>@article{Popescu2012,
     Author = &quot;Popescu, V. and Zunger, A.&quot;,
     Title = &quot;Extracting E versus k effective band structure from supercell calculations on alloys and impurities&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -4710,8 +4519,7 @@ Phys. Rev. B **85**, 085201 (2012)
     Pages = &quot;085201&quot;,
     Volume = &quot;85&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4725,16 +4533,15 @@ Pouillon, Y., Beuken, J. -M., Deutsch, T., Torrent, M., Gonze, X.
 Organizing software growth and distributed development: the case of {ABINIT}  
 Comput. Sci. Eng. **13**, 62 (2011)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a6ce70f3-1761-4fe8-9602-005e2c1a800c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a6ce70f3-1761-4fe8-9602-005e2c1a800c" tabindex="-1" role="dialog" aria-labelledby="uuid-d03d2b63-4319-4c81-8955-9378cd0d7997">
+<a data-toggle="modal" href="#uuid-17f698a1-1cc9-48d6-a45f-8466d74b39b3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-17f698a1-1cc9-48d6-a45f-8466d74b39b3" tabindex="-1" role="dialog" aria-labelledby="uuid-b0617b26-03f7-4c61-8170-ff35048c2ca1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d03d2b63-4319-4c81-8955-9378cd0d7997">bibtex</h4>
+        <h4 class="modal-title" id="uuid-b0617b26-03f7-4c61-8170-ff35048c2ca1">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Pouillon2011,
+      <div class="modal-body"> <pre>@article{Pouillon2011,
     Author = &quot;Pouillon, Y. and Beuken, J. -M. and Deutsch, T. and Torrent, M. and Gonze, X.&quot;,
     Title = &quot;Organizing software growth and distributed development: the case of {ABINIT}&quot;,
     Journal = &quot;Comput. Sci. Eng.&quot;,
@@ -4742,8 +4549,7 @@ Comput. Sci. Eng. **13**, 62 (2011)
     Pages = &quot;62&quot;,
     year = &quot;2011&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4756,17 +4562,16 @@ Comput. Sci. Eng. **13**, 62 (2011)
 Puska, M. J., Nieminen, R. M.  
 Theory of positrons in solids and on solid surfaces  
 Rev. Mod. Phys. **66**, 841 (1994)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.66.841 target="_blank">https://doi.org/10.1103/RevModPhys.66.841</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-bb71ee3e-895d-4286-ab9e-3a58e2cc328f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-bb71ee3e-895d-4286-ab9e-3a58e2cc328f" tabindex="-1" role="dialog" aria-labelledby="uuid-d9e64eaa-b8cd-4e1c-964e-31138049a25d">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.66.841" target="_blank">https://doi.org/10.1103/RevModPhys.66.841</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-80283e1b-7486-4bf6-b0af-0faef65b27dc">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-80283e1b-7486-4bf6-b0af-0faef65b27dc" tabindex="-1" role="dialog" aria-labelledby="uuid-e419f137-dcdc-4ad8-bd76-ce211ffcbf0c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d9e64eaa-b8cd-4e1c-964e-31138049a25d">bibtex</h4>
+        <h4 class="modal-title" id="uuid-e419f137-dcdc-4ad8-bd76-ce211ffcbf0c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Puska1994,
+      <div class="modal-body"> <pre>@article{Puska1994,
     author = &quot;Puska, M. J. and Nieminen, R. M.&quot;,
     title = &quot;Theory of positrons in solids and on solid surfaces&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -4777,8 +4582,7 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.66.841 target="_blank">https://d
     doi = &quot;10.1103/RevModPhys.66.841&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4791,17 +4595,16 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.66.841 target="_blank">https://d
 Puska, M. J., Seitsonen, A. P., Nieminen, R. M.  
 Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations  
 Phys. Rev. B **52**, 10947 (1995)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.52.10947 target="_blank">https://doi.org/10.1103/PhysRevB.52.10947</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-413c02a1-8dc9-49ee-a42a-5ef41336c68c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-413c02a1-8dc9-49ee-a42a-5ef41336c68c" tabindex="-1" role="dialog" aria-labelledby="uuid-b58b9b0e-4464-4316-a4c1-9b56d44d2b14">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.52.10947" target="_blank">https://doi.org/10.1103/PhysRevB.52.10947</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-92006be5-d1dc-4012-b140-900c88192f8c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-92006be5-d1dc-4012-b140-900c88192f8c" tabindex="-1" role="dialog" aria-labelledby="uuid-37803d1f-e59e-49b0-9791-eb99dce1bf76">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b58b9b0e-4464-4316-a4c1-9b56d44d2b14">bibtex</h4>
+        <h4 class="modal-title" id="uuid-37803d1f-e59e-49b0-9791-eb99dce1bf76">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Puska1995,
+      <div class="modal-body"> <pre>@article{Puska1995,
     author = &quot;Puska, M. J. and Seitsonen, A. P. and Nieminen, R. M.&quot;,
     title = &quot;Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4812,8 +4615,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.52.10947 target="_blank">https://d
     doi = &quot;10.1103/PhysRevB.52.10947&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4827,16 +4629,15 @@ Rangel, T., Caliste, D., Genovese, L., Torrent, M.
 A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set  
 Computer Physics Communication **208**, 1-8 (2016)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-12f60b1e-48ee-4dc9-8597-cad2a7e4cbd4">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-12f60b1e-48ee-4dc9-8597-cad2a7e4cbd4" tabindex="-1" role="dialog" aria-labelledby="uuid-bad8b7b7-4476-4071-a9f0-5405b87b0efb">
+<a data-toggle="modal" href="#uuid-e0b77eda-8acd-408c-9100-425b6d2affee">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-e0b77eda-8acd-408c-9100-425b6d2affee" tabindex="-1" role="dialog" aria-labelledby="uuid-c7dc6182-a671-4469-aaa7-3551955ac755">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bad8b7b7-4476-4071-a9f0-5405b87b0efb">bibtex</h4>
+        <h4 class="modal-title" id="uuid-c7dc6182-a671-4469-aaa7-3551955ac755">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rangel2016,
+      <div class="modal-body"> <pre>@article{Rangel2016,
     author = &quot;Rangel, T. and Caliste, D. and Genovese, L. and Torrent, M.&quot;,
     title = &quot;A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set&quot;,
     volume = &quot;208&quot;,
@@ -4845,11 +4646,11 @@ Computer Physics Communication **208**, 1-8 (2016)
     year = &quot;2016&quot;,
     pages = &quot;1-8&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Wavelets"> /topics/Wavelets </a>
 * * *
 
 
@@ -4859,17 +4660,16 @@ Computer Physics Communication **208**, 1-8 (2016)
 Rappe, A.M., Rabe, K.M., Kaxiras, E.S., Joannopoulos, J.D.  
 Optimized pseudopotentials  
 Phys. Rev. B **41**, 1227--1230 (1990)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.41.1227 target="_blank">https://doi.org/10.1103/PhysRevB.41.1227</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-75d77cfd-0f4b-4101-9d00-3bb38cd82a62">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-75d77cfd-0f4b-4101-9d00-3bb38cd82a62" tabindex="-1" role="dialog" aria-labelledby="uuid-fb342fc6-2244-4ecf-9d3d-422f6c941fbd">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.41.1227" target="_blank">https://doi.org/10.1103/PhysRevB.41.1227</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-1f44aa04-2a11-4575-8edf-2a85467ff8c5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-1f44aa04-2a11-4575-8edf-2a85467ff8c5" tabindex="-1" role="dialog" aria-labelledby="uuid-45d01e24-b267-4f93-9316-7ecbf51a5a70">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-fb342fc6-2244-4ecf-9d3d-422f6c941fbd">bibtex</h4>
+        <h4 class="modal-title" id="uuid-45d01e24-b267-4f93-9316-7ecbf51a5a70">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rappe1990,
+      <div class="modal-body"> <pre>@article{Rappe1990,
     author = &quot;Rappe, A.M. and Rabe, K.M. and Kaxiras, E.S. and Joannopoulos, J.D.&quot;,
     title = &quot;Optimized pseudopotentials&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4881,8 +4681,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.41.1227 target="_blank">https://do
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/PhysRevB.41.1227&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4896,16 +4695,15 @@ Rauch, C., Makkonen, I., Tuomisto, F.
 Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}  
 Phys. Rev. B **84**, 125201 (2011)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-1296cfa0-ed6c-4fa2-8749-bee0d8c81cd8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-1296cfa0-ed6c-4fa2-8749-bee0d8c81cd8" tabindex="-1" role="dialog" aria-labelledby="uuid-c171ab7a-70c2-4785-b919-0aa213e320d5">
+<a data-toggle="modal" href="#uuid-0d621052-ae64-48ac-820c-594312ce044a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0d621052-ae64-48ac-820c-594312ce044a" tabindex="-1" role="dialog" aria-labelledby="uuid-dfc25146-f609-4cf0-8f49-a7c23bae1738">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c171ab7a-70c2-4785-b919-0aa213e320d5">bibtex</h4>
+        <h4 class="modal-title" id="uuid-dfc25146-f609-4cf0-8f49-a7c23bae1738">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rauch2011,
+      <div class="modal-body"> <pre>@article{Rauch2011,
     author = &quot;Rauch, C. and Makkonen, I. and Tuomisto, F.&quot;,
     title = &quot;Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -4915,8 +4713,7 @@ Phys. Rev. B **84**, 125201 (2011)
     year = &quot;2011&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4930,16 +4727,15 @@ Resta, R.
 Macroscopic polarization in crystalline dielectrics: the geometric phase approach  
 Rev. Mod. Phys. **66**, 899--915 (1994)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a5ea2832-2adf-4815-a688-6652f3d351e6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a5ea2832-2adf-4815-a688-6652f3d351e6" tabindex="-1" role="dialog" aria-labelledby="uuid-094f91c7-c819-49d4-8734-ba06ac0a992f">
+<a data-toggle="modal" href="#uuid-4d9bd3bc-5d27-4c94-8ffc-4a25b3506fb7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4d9bd3bc-5d27-4c94-8ffc-4a25b3506fb7" tabindex="-1" role="dialog" aria-labelledby="uuid-9d92552e-8b15-4d24-9eea-b7791f6610dd">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-094f91c7-c819-49d4-8734-ba06ac0a992f">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9d92552e-8b15-4d24-9eea-b7791f6610dd">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Resta1994,
+      <div class="modal-body"> <pre>@article{Resta1994,
     author = &quot;Resta, R.&quot;,
     title = &quot;Macroscopic polarization in crystalline dielectrics: the geometric phase approach&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -4947,11 +4743,11 @@ Rev. Mod. Phys. **66**, 899--915 (1994)
     pages = &quot;899--915&quot;,
     year = &quot;1994&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Berry"> /topics/Berry </a>
 * * *
 
 
@@ -4961,17 +4757,16 @@ Rev. Mod. Phys. **66**, 899--915 (1994)
 Restrepo, O. D., Varga, K., Pantelides, S. T.  
 First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering  
 App. Phys. Lett. **94**,  (2009)  
-URL: <a href=http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189 target="_black">http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-645b764b-3946-4909-9db6-81f3b69e8e13">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-645b764b-3946-4909-9db6-81f3b69e8e13" tabindex="-1" role="dialog" aria-labelledby="uuid-882e7b6f-f82c-43a9-ad3b-e6e9d4722eeb">
+URL: <a href="http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189" target="_blank">http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-420cc1b5-643c-469f-9ca8-c38eadb90493">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-420cc1b5-643c-469f-9ca8-c38eadb90493" tabindex="-1" role="dialog" aria-labelledby="uuid-da01b739-1ec8-4a80-923e-2752091de446">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-882e7b6f-f82c-43a9-ad3b-e6e9d4722eeb">bibtex</h4>
+        <h4 class="modal-title" id="uuid-da01b739-1ec8-4a80-923e-2752091de446">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Restrepo2009,
+      <div class="modal-body"> <pre>@article{Restrepo2009,
     author = &quot;Restrepo, O. D. and Varga, K. and Pantelides, S. T.&quot;,
     title = &quot;First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering&quot;,
     journal = &quot;App. Phys. Lett.&quot;,
@@ -4983,8 +4778,7 @@ URL: <a href=http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.31
     url = &quot;http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189&quot;,
     doi = &quot;10.1063/1.3147189&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -4997,17 +4791,16 @@ URL: <a href=http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.31
 Rieger, M., Steinbeck, L., White, I. D., Rojas, H. N., Godby, R. W.  
 The {GW} space-time method for the self-energy of large systems  
 Comp. Phys. Comm. **117**, 211--228 (1999)  
-DOI: <a href=https://doi.org/10.1016/S0010-4655(98)00174-X target="_blank">https://doi.org/10.1016/S0010-4655(98)00174-X</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-8f9e3bed-65fc-4428-8e18-67ac1279b1fb">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-8f9e3bed-65fc-4428-8e18-67ac1279b1fb" tabindex="-1" role="dialog" aria-labelledby="uuid-558341b3-ed34-4c9d-ada8-7eefef8efdd7">
+DOI: <a href="https://doi.org/10.1016/S0010-4655(98)00174-X" target="_blank">https://doi.org/10.1016/S0010-4655(98)00174-X</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-b409efd1-8041-43a9-8d25-3de872813630">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b409efd1-8041-43a9-8d25-3de872813630" tabindex="-1" role="dialog" aria-labelledby="uuid-e07d743c-c224-4b6b-a6a2-ab27b299d818">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-558341b3-ed34-4c9d-ada8-7eefef8efdd7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-e07d743c-c224-4b6b-a6a2-ab27b299d818">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rieger1999,
+      <div class="modal-body"> <pre>@article{Rieger1999,
     author = &quot;Rieger, M. and Steinbeck, L. and White, I. D. and Rojas, H. N. and Godby, R. W.&quot;,
     title = &quot;The {GW} space-time method for the self-energy of large systems&quot;,
     journal = &quot;Comp. Phys. Comm.&quot;,
@@ -5017,11 +4810,11 @@ DOI: <a href=https://doi.org/10.1016/S0010-4655(98)00174-X target="_blank">https
     pages = &quot;211--228&quot;,
     doi = &quot;10.1016/S0010-4655(98)00174-X&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -5031,17 +4824,16 @@ DOI: <a href=https://doi.org/10.1016/S0010-4655(98)00174-X target="_blank">https
 Rohlfing, M., Louie, S.G.  
 Electron-hole excitations and optical spectra from first principles  
 Phys. Rev. B **62**, 4927--4944 (2000)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.62.4927 target="_blank">https://doi.org/10.1103/PhysRevB.62.4927</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-83714fd2-ab55-46d5-987c-2add828f85b8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-83714fd2-ab55-46d5-987c-2add828f85b8" tabindex="-1" role="dialog" aria-labelledby="uuid-9654595a-b450-4463-853e-796c0153e6d5">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.62.4927" target="_blank">https://doi.org/10.1103/PhysRevB.62.4927</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-79218bd7-bd3c-449a-aa31-1684b18dadcd">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-79218bd7-bd3c-449a-aa31-1684b18dadcd" tabindex="-1" role="dialog" aria-labelledby="uuid-fcb93c32-fef7-4a30-975b-082bda766cdb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-9654595a-b450-4463-853e-796c0153e6d5">bibtex</h4>
+        <h4 class="modal-title" id="uuid-fcb93c32-fef7-4a30-975b-082bda766cdb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rohlfing2000,
+      <div class="modal-body"> <pre>@article{Rohlfing2000,
     Author = &quot;Rohlfing, M. and Louie, S.G.&quot;,
     Title = &quot;Electron-hole excitations and optical spectra from first principles&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -5053,8 +4845,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.62.4927 target="_blank">https://do
     Issue = &quot;8&quot;,
     Publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5067,17 +4858,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.62.4927 target="_blank">https://do
 Rom\'an-P\'erez, G., Soler, J.M.  
 Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes  
 Phys. Rev. Lett. **103**, 096102 (2009)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.103.096102 target="_blank">https://doi.org/10.1103/PhysRevLett.103.096102</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-d1ae7efa-8b83-48c2-ba5d-74b33e0fef27">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-d1ae7efa-8b83-48c2-ba5d-74b33e0fef27" tabindex="-1" role="dialog" aria-labelledby="uuid-611adedd-237b-49da-b6f1-45ed0aeed630">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.103.096102" target="_blank">https://doi.org/10.1103/PhysRevLett.103.096102</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-90d1b083-bfaf-4572-8814-6a5fe93b1701">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-90d1b083-bfaf-4572-8814-6a5fe93b1701" tabindex="-1" role="dialog" aria-labelledby="uuid-a792ede6-cedb-433b-a93f-2760559412e4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-611adedd-237b-49da-b6f1-45ed0aeed630">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a792ede6-cedb-433b-a93f-2760559412e4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Romanperez2009,
+      <div class="modal-body"> <pre>@article{Romanperez2009,
     author = &quot;Rom\&#x27;an-P\&#x27;erez, G. and Soler, J.M.&quot;,
     title = &quot;Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -5086,11 +4876,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.103.096102 target="_blank">http
     year = &quot;2009&quot;,
     doi = &quot;10.1103/PhysRevLett.103.096102&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -5100,17 +4890,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.103.096102 target="_blank">http
 Rostgaard, C.  
 Exact exchange in density functional calculations  
 Technical University of Denmark (2006)  
-URL: <a href=https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf target="_black">https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-9a08876b-15af-4bdb-8fa9-7e9c740f6ddc">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-9a08876b-15af-4bdb-8fa9-7e9c740f6ddc" tabindex="-1" role="dialog" aria-labelledby="uuid-3523aff8-4d28-44eb-86ac-052749eef660">
+URL: <a href="https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf" target="_blank">https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-be80db27-bf3c-4f2c-a043-668e5603dd84">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-be80db27-bf3c-4f2c-a043-668e5603dd84" tabindex="-1" role="dialog" aria-labelledby="uuid-2fada283-8663-4abe-8075-ba46862e1496">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3523aff8-4d28-44eb-86ac-052749eef660">bibtex</h4>
+        <h4 class="modal-title" id="uuid-2fada283-8663-4abe-8075-ba46862e1496">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@mastersthesis{Rostgaard2006,
+      <div class="modal-body"> <pre>@mastersthesis{Rostgaard2006,
     Author = &quot;Rostgaard, C.&quot;,
     Title = &quot;Exact exchange in density functional calculations&quot;,
     School = &quot;Technical University of Denmark&quot;,
@@ -5118,8 +4907,7 @@ URL: <a href=https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf targ
     year = &quot;2006&quot;,
     url = &quot;https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5133,16 +4921,15 @@ Rubel, O., Bokhanchuk, A., Ahmed, S. J., Assmann, E.
 Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions  
 Phys. Rev. B **90**, 115202 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-8ec3693b-4b24-40a0-ac6b-4059ef3c0d3b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-8ec3693b-4b24-40a0-ac6b-4059ef3c0d3b" tabindex="-1" role="dialog" aria-labelledby="uuid-66e988b9-53dc-4ef0-adae-1dec0e3d4ee4">
+<a data-toggle="modal" href="#uuid-9de44882-9ffd-4d2e-a764-03b392a3b9b4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-9de44882-9ffd-4d2e-a764-03b392a3b9b4" tabindex="-1" role="dialog" aria-labelledby="uuid-0915d3d3-8082-4a7e-87f0-761cb99864a4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-66e988b9-53dc-4ef0-adae-1dec0e3d4ee4">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0915d3d3-8082-4a7e-87f0-761cb99864a4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rubel2014,
+      <div class="modal-body"> <pre>@article{Rubel2014,
     Author = &quot;Rubel, O. and Bokhanchuk, A. and Ahmed, S. J. and Assmann, E.&quot;,
     Title = &quot;Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -5150,8 +4937,7 @@ Phys. Rev. B **90**, 115202 (2014)
     Pages = &quot;115202&quot;,
     Volume = &quot;90&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5165,16 +4951,15 @@ Rutishauser, H.
 Simultaneous iteration method for symmetric matrices  
 Numerische Mathematik **16**, 205--223 (1970)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-85d99b01-43da-4033-8c28-0f7c553b4ac1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-85d99b01-43da-4033-8c28-0f7c553b4ac1" tabindex="-1" role="dialog" aria-labelledby="uuid-8126465f-2106-4f7a-9395-ef88043a9beb">
+<a data-toggle="modal" href="#uuid-d2e22160-82cc-47fc-a2dd-575790f15494">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-d2e22160-82cc-47fc-a2dd-575790f15494" tabindex="-1" role="dialog" aria-labelledby="uuid-7012d699-d601-46e1-a309-c643fdcf39f1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-8126465f-2106-4f7a-9395-ef88043a9beb">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7012d699-d601-46e1-a309-c643fdcf39f1">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Rutishauser1970,
+      <div class="modal-body"> <pre>@article{Rutishauser1970,
     author = &quot;Rutishauser, H.&quot;,
     title = &quot;Simultaneous iteration method for symmetric matrices&quot;,
     journal = &quot;Numerische Mathematik&quot;,
@@ -5184,8 +4969,7 @@ Numerische Mathematik **16**, 205--223 (1970)
     year = &quot;1970&quot;,
     publisher = &quot;Springer&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5198,17 +4982,16 @@ Numerische Mathematik **16**, 205--223 (1970)
 Sakuma, R., Aryasetiawan, F.  
 First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)  
 Phys. Rev. B **87**, 165118 (2013)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.87.165118 target="_blank">https://doi.org/10.1103/PhysRevB.87.165118</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-16a5f613-d1a3-4be4-910c-3a1548918bc3">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-16a5f613-d1a3-4be4-910c-3a1548918bc3" tabindex="-1" role="dialog" aria-labelledby="uuid-9cc60091-38c4-45cc-8438-6353c98f4b8e">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.87.165118" target="_blank">https://doi.org/10.1103/PhysRevB.87.165118</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-7b3365f4-78f3-4fcd-9520-1217cb75fded">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-7b3365f4-78f3-4fcd-9520-1217cb75fded" tabindex="-1" role="dialog" aria-labelledby="uuid-1eb96e16-1d51-4fff-96f7-9bcf87e40979">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-9cc60091-38c4-45cc-8438-6353c98f4b8e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-1eb96e16-1d51-4fff-96f7-9bcf87e40979">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Sakuma2013,
+      <div class="modal-body"> <pre>@article{Sakuma2013,
     author = &quot;Sakuma, R. and Aryasetiawan, F.&quot;,
     title = &quot;First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5224,11 +5007,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.87.165118 target="_blank">https://
     timestamp = &quot;2013.06.04&quot;,
     doi = &quot;10.1103/PhysRevB.87.165118&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>
 * * *
 
 
@@ -5238,17 +5021,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.87.165118 target="_blank">https://
 Savin, A., Jepsen, O., Flad, J., Andersen, O. K., Preuss, H., von Schnering, H. G.  
 Electron Localization in Solid-State Structures of the Elements: the Diamond Structure  
 Angewandte Chemie International Edition in English **31**, 187--188 (1992)  
-DOI: <a href=https://doi.org/10.1002/anie.199201871 target="_blank">https://doi.org/10.1002/anie.199201871</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-e0e84b60-6a1a-4301-8cd7-608baa112835">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-e0e84b60-6a1a-4301-8cd7-608baa112835" tabindex="-1" role="dialog" aria-labelledby="uuid-80bc1fb3-c65e-4379-b491-4a7cadced9f6">
+DOI: <a href="https://doi.org/10.1002/anie.199201871" target="_blank">https://doi.org/10.1002/anie.199201871</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-84741595-2c4d-4122-a773-a8048655f2fb">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-84741595-2c4d-4122-a773-a8048655f2fb" tabindex="-1" role="dialog" aria-labelledby="uuid-9d75c68f-695e-4220-8f23-18d6fdb586a3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-80bc1fb3-c65e-4379-b491-4a7cadced9f6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9d75c68f-695e-4220-8f23-18d6fdb586a3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Savin1992,
+      <div class="modal-body"> <pre>@article{Savin1992,
     author = &quot;Savin, A. and Jepsen, O. and Flad, J. and Andersen, O. K. and Preuss, H. and von Schnering, H. G.&quot;,
     title = &quot;Electron Localization in Solid-State Structures of the Elements: the Diamond Structure&quot;,
     journal = &quot;Angewandte Chemie International Edition in English&quot;,
@@ -5258,8 +5040,7 @@ DOI: <a href=https://doi.org/10.1002/anie.199201871 target="_blank">https://doi.
     pages = &quot;187--188&quot;,
     year = &quot;1992&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5273,16 +5054,15 @@ Savrasov, S.Y., Savrasov, D.Y.
 Electron-phonon interactions and related physical properties of metals from linear-response theory  
 Phys. Rev. B **54**, 16487 (1996)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a7250686-b907-4f51-992c-dc5f1822449b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a7250686-b907-4f51-992c-dc5f1822449b" tabindex="-1" role="dialog" aria-labelledby="uuid-84201623-fcd4-4f2d-a9c0-45aa7eb5d2d6">
+<a data-toggle="modal" href="#uuid-55824c30-68dd-424e-8604-894c396a0e5a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-55824c30-68dd-424e-8604-894c396a0e5a" tabindex="-1" role="dialog" aria-labelledby="uuid-63b9873c-dfd0-473e-a36f-b5272c6b411b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-84201623-fcd4-4f2d-a9c0-45aa7eb5d2d6">bibtex</h4>
+        <h4 class="modal-title" id="uuid-63b9873c-dfd0-473e-a36f-b5272c6b411b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Savrasov1996,
+      <div class="modal-body"> <pre>@article{Savrasov1996,
     AUTHOR = &quot;Savrasov, S.Y. and Savrasov, D.Y.&quot;,
     PAGES = &quot;16487&quot;,
     YEAR = &quot;1996&quot;,
@@ -5290,8 +5070,7 @@ Phys. Rev. B **54**, 16487 (1996)
     VOLUME = &quot;54&quot;,
     JOURNAL = &quot;Phys. Rev. B&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5304,17 +5083,16 @@ Phys. Rev. B **54**, 16487 (1996)
 Sharma, S., Dewhurst, J. K., Ambrosch-Draxl, C.  
 Linear and second-order optical response of {III}-{V} monolayer superlattices  
 Phys. Rev. B **67**, 165332 (2003)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.67.165332 target="_black">http://link.aps.org/doi/10.1103/PhysRevB.67.165332</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2320a3fa-a11e-4ea6-9247-4832140d0b62">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2320a3fa-a11e-4ea6-9247-4832140d0b62" tabindex="-1" role="dialog" aria-labelledby="uuid-11eec167-fbe2-40b0-8aab-1e9cfc3f7281">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.67.165332" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.67.165332</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-ae926bbe-b460-4f13-8f1f-4a9bcba30cd5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ae926bbe-b460-4f13-8f1f-4a9bcba30cd5" tabindex="-1" role="dialog" aria-labelledby="uuid-dea3fa60-f95f-4258-af9a-1b3435e236cb">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-11eec167-fbe2-40b0-8aab-1e9cfc3f7281">bibtex</h4>
+        <h4 class="modal-title" id="uuid-dea3fa60-f95f-4258-af9a-1b3435e236cb">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Sharma2003,
+      <div class="modal-body"> <pre>@article{Sharma2003,
     Author = &quot;Sharma, S. and Dewhurst, J. K. and Ambrosch-Draxl, C.&quot;,
     Title = &quot;Linear and second-order optical response of {III}-{V} monolayer superlattices&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -5325,8 +5103,7 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.67.165332 target="_black">
     Issue = &quot;16&quot;,
     Url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.67.165332&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5339,17 +5116,16 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.67.165332 target="_black">
 Sharma, S., {A}mbrosch-{D}raxl, C.  
 {S}econd-{H}armonic Optical Response from First Principles  
 Phys. Scripta **2004**, 128 (2004)  
-URL: <a href=http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128 target="_black">http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-a202a923-3732-4f2f-8cf6-36359436d378">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a202a923-3732-4f2f-8cf6-36359436d378" tabindex="-1" role="dialog" aria-labelledby="uuid-6e9344d9-1a2d-4efd-a683-f7de3cdeab1a">
+URL: <a href="http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128" target="_blank">http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-9e9fef96-5584-4140-8f8d-34de6ae8d92a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-9e9fef96-5584-4140-8f8d-34de6ae8d92a" tabindex="-1" role="dialog" aria-labelledby="uuid-a14919e1-e059-4767-ae14-4abdcfb489f3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6e9344d9-1a2d-4efd-a683-f7de3cdeab1a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a14919e1-e059-4767-ae14-4abdcfb489f3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Sharma2004,
+      <div class="modal-body"> <pre>@article{Sharma2004,
     Author = &quot;Sharma, S. and {A}mbrosch-{D}raxl, C.&quot;,
     Title = &quot;{S}econd-{H}armonic Optical Response from First Principles&quot;,
     Journal = &quot;Phys. Scripta&quot;,
@@ -5358,8 +5134,7 @@ URL: <a href=http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128
     Volume = &quot;2004&quot;,
     Url = &quot;http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5372,17 +5147,16 @@ URL: <a href=http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128
 Shih, B.-C., Zhang, Y., Zhang, W., Zhang, P.  
 Screened Coulomb interaction of localized electrons in solids from first principles  
 Phys. Rev. B **85**, 045132 (2012)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.85.045132 target="_black">http://link.aps.org/doi/10.1103/PhysRevB.85.045132</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-25b1e7ef-9d75-4d1d-947d-72f7c9488f12">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-25b1e7ef-9d75-4d1d-947d-72f7c9488f12" tabindex="-1" role="dialog" aria-labelledby="uuid-979f291d-4147-41f2-9bec-168297d14502">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.85.045132" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.85.045132</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-cb8e15d6-ff0b-4611-9614-e13c0ae9d7ac">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-cb8e15d6-ff0b-4611-9614-e13c0ae9d7ac" tabindex="-1" role="dialog" aria-labelledby="uuid-30656046-1d5f-47e4-806a-97799d6b5627">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-979f291d-4147-41f2-9bec-168297d14502">bibtex</h4>
+        <h4 class="modal-title" id="uuid-30656046-1d5f-47e4-806a-97799d6b5627">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Shih2012,
+      <div class="modal-body"> <pre>@article{Shih2012,
     author = &quot;Shih, B.-C. and Zhang, Y. and Zhang, W. and Zhang, P.&quot;,
     title = &quot;Screened Coulomb interaction of localized electrons in solids from first principles&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5398,11 +5172,11 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.85.045132 target="_black">
     timestamp = &quot;2012.06.19&quot;,
     url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.85.045132&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/CRPA"> /topics/CRPA </a>
 * * *
 
 
@@ -5413,16 +5187,15 @@ Silvestrelli, P. L.
 van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions  
 Phys. Rev. Lett. **100**, 053002 (2008)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-5c2bd76b-b8ee-4e73-ae9c-d662c4ce46f5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-5c2bd76b-b8ee-4e73-ae9c-d662c4ce46f5" tabindex="-1" role="dialog" aria-labelledby="uuid-20d7ed17-39ef-4696-a4e9-b04bff5c75b8">
+<a data-toggle="modal" href="#uuid-ee481c33-e7ea-482c-b326-a8dd516f42d9">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ee481c33-e7ea-482c-b326-a8dd516f42d9" tabindex="-1" role="dialog" aria-labelledby="uuid-884d1c62-5f09-4cb6-bf0c-9c0ad9af0ab2">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-20d7ed17-39ef-4696-a4e9-b04bff5c75b8">bibtex</h4>
+        <h4 class="modal-title" id="uuid-884d1c62-5f09-4cb6-bf0c-9c0ad9af0ab2">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Silvestrelli2008,
+      <div class="modal-body"> <pre>@article{Silvestrelli2008,
     author = &quot;Silvestrelli, P. L.&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
     number = &quot;&quot;,
@@ -5431,11 +5204,11 @@ Phys. Rev. Lett. **100**, 053002 (2008)
     volume = &quot;100&quot;,
     year = &quot;2008&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -5446,16 +5219,15 @@ Silvestrelli, P. L.
 van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions  
 J. Phys. Chem. A **113**, 5224 (2009)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-980b3abf-d516-4a95-b40e-2972fe231df9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-980b3abf-d516-4a95-b40e-2972fe231df9" tabindex="-1" role="dialog" aria-labelledby="uuid-54ee153d-8b7e-4bbd-ac3a-49c35e4ada12">
+<a data-toggle="modal" href="#uuid-09329c72-24eb-492c-afdd-0c1549c8269a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-09329c72-24eb-492c-afdd-0c1549c8269a" tabindex="-1" role="dialog" aria-labelledby="uuid-61e83dbf-3589-4974-b131-25d5b6419aaf">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-54ee153d-8b7e-4bbd-ac3a-49c35e4ada12">bibtex</h4>
+        <h4 class="modal-title" id="uuid-61e83dbf-3589-4974-b131-25d5b6419aaf">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Silvestrelli2009,
+      <div class="modal-body"> <pre>@article{Silvestrelli2009,
     author = &quot;Silvestrelli, P. L.&quot;,
     journal = &quot;J. Phys. Chem. A&quot;,
     number = &quot;&quot;,
@@ -5464,11 +5236,11 @@ J. Phys. Chem. A **113**, 5224 (2009)
     volume = &quot;113&quot;,
     year = &quot;2009&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -5479,16 +5251,15 @@ Silvestrelli, P. L.
 van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions  
 J. Chem. Phys. **139**, 054106 (2013)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-4ff1c249-9bae-4ff6-b51d-b71f4d3a30f1">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-4ff1c249-9bae-4ff6-b51d-b71f4d3a30f1" tabindex="-1" role="dialog" aria-labelledby="uuid-3226b673-f2f2-4dfe-a75c-6211e92f9aa3">
+<a data-toggle="modal" href="#uuid-2575160c-af6d-4e53-b8c5-a6f123f7e17a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-2575160c-af6d-4e53-b8c5-a6f123f7e17a" tabindex="-1" role="dialog" aria-labelledby="uuid-98a743b7-76a6-40d8-9961-007f8f16f39b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3226b673-f2f2-4dfe-a75c-6211e92f9aa3">bibtex</h4>
+        <h4 class="modal-title" id="uuid-98a743b7-76a6-40d8-9961-007f8f16f39b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Silvestrelli2013,
+      <div class="modal-body"> <pre>@article{Silvestrelli2013,
     author = &quot;Silvestrelli, P. L.&quot;,
     journal = &quot;J. Chem. Phys.&quot;,
     number = &quot;&quot;,
@@ -5497,11 +5268,11 @@ J. Chem. Phys. **139**, 054106 (2013)
     volume = &quot;139&quot;,
     year = &quot;2013&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/vdw"> /topics/vdw </a>
 * * *
 
 
@@ -5511,17 +5282,16 @@ J. Chem. Phys. **139**, 054106 (2013)
 Sipe, J. E., Ghahramani, E.  
 Nonlinear optical response of semiconductors in the independent-particle approximation  
 Phys. Rev. B **48**, 11705--11722 (1993)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.48.11705 target="_black">http://link.aps.org/doi/10.1103/PhysRevB.48.11705</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-c676778a-51c6-41ee-beda-86a2fada76fd">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c676778a-51c6-41ee-beda-86a2fada76fd" tabindex="-1" role="dialog" aria-labelledby="uuid-2de655a9-301b-48c9-8121-ad52fc2b5af4">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.48.11705" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.48.11705</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-42555284-d2de-4c37-bdb5-2205beab4080">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-42555284-d2de-4c37-bdb5-2205beab4080" tabindex="-1" role="dialog" aria-labelledby="uuid-3457b39c-dae8-4e6e-a835-86861c21a5ef">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2de655a9-301b-48c9-8121-ad52fc2b5af4">bibtex</h4>
+        <h4 class="modal-title" id="uuid-3457b39c-dae8-4e6e-a835-86861c21a5ef">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Sipe1993,
+      <div class="modal-body"> <pre>@article{Sipe1993,
     Author = &quot;Sipe, J. E. and Ghahramani, E.&quot;,
     Title = &quot;Nonlinear optical response of semiconductors in the independent-particle approximation&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
@@ -5532,8 +5302,7 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.48.11705 target="_black">h
     Issue = &quot;16&quot;,
     Url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.48.11705&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5547,16 +5316,15 @@ Snyder, G. J., Toberer, E. S.
 Complex thermoelectric materials  
 Nature Materials **7**, 105--114 (2008)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-7376be17-d98b-4773-8535-5e6d1d92e45b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-7376be17-d98b-4773-8535-5e6d1d92e45b" tabindex="-1" role="dialog" aria-labelledby="uuid-4030f1a4-922c-4a8d-a9c4-b587a21e4b70">
+<a data-toggle="modal" href="#uuid-f53d311c-a75f-4b34-b66e-99fe531446f3">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f53d311c-a75f-4b34-b66e-99fe531446f3" tabindex="-1" role="dialog" aria-labelledby="uuid-7a61f2c6-6eb4-48f4-91ce-50936d2c694f">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4030f1a4-922c-4a8d-a9c4-b587a21e4b70">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7a61f2c6-6eb4-48f4-91ce-50936d2c694f">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Snyder2008,
+      <div class="modal-body"> <pre>@article{Snyder2008,
     author = &quot;Snyder, G. J. and Toberer, E. S.&quot;,
     journal = &quot;Nature Materials&quot;,
     number = &quot;2&quot;,
@@ -5565,8 +5333,7 @@ Nature Materials **7**, 105--114 (2008)
     volume = &quot;7&quot;,
     year = &quot;2008&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5580,16 +5347,15 @@ Souza, I., \'I\ niguez, J., Vanderbilt, D.
 First-Principles Approach to Insulators in Finite Electric Fields  
 Phys. Rev. Lett. **89**, 117602 (2002)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-17de2c95-4663-471d-9160-6e28ea4d8518">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-17de2c95-4663-471d-9160-6e28ea4d8518" tabindex="-1" role="dialog" aria-labelledby="uuid-9f2981d8-b078-4c11-a895-9a247b646a80">
+<a data-toggle="modal" href="#uuid-400f37f5-0814-432f-bf5d-1f877afb1b9c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-400f37f5-0814-432f-bf5d-1f877afb1b9c" tabindex="-1" role="dialog" aria-labelledby="uuid-0006b06f-782b-4755-ac79-ee6788a7898a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-9f2981d8-b078-4c11-a895-9a247b646a80">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0006b06f-782b-4755-ac79-ee6788a7898a">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Souza2002,
+      <div class="modal-body"> <pre>@article{Souza2002,
     author = &quot;Souza, I. and \&#x27;I\ niguez, J. and Vanderbilt, D.&quot;,
     title = &quot;First-Principles Approach to Insulators in Finite Electric Fields&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -5597,11 +5363,11 @@ Phys. Rev. Lett. **89**, 117602 (2002)
     pages = &quot;117602&quot;,
     year = &quot;2002&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Berry"> /topics/Berry </a>
 * * *
 
 
@@ -5612,16 +5378,15 @@ Sterne, P.A., Kaiser, J.H.
 First-principles calculation of positron lifetimes in solids  
 Phys. Rev. B **43**, 13892 (1991)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-31046c54-6e9e-4904-a7db-69f92032eb14">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-31046c54-6e9e-4904-a7db-69f92032eb14" tabindex="-1" role="dialog" aria-labelledby="uuid-380a7248-be91-4d4a-864c-120dd59f7f71">
+<a data-toggle="modal" href="#uuid-25cedfd2-aaf4-4ac6-9251-6982da8e0322">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-25cedfd2-aaf4-4ac6-9251-6982da8e0322" tabindex="-1" role="dialog" aria-labelledby="uuid-d692a5dd-0153-4bc2-81b4-b3fde24d5584">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-380a7248-be91-4d4a-864c-120dd59f7f71">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d692a5dd-0153-4bc2-81b4-b3fde24d5584">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Sterne1991,
+      <div class="modal-body"> <pre>@article{Sterne1991,
     author = &quot;Sterne, P.A. and Kaiser, J.H.&quot;,
     title = &quot;First-principles calculation of positron lifetimes in solids&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5631,8 +5396,7 @@ Phys. Rev. B **43**, 13892 (1991)
     year = &quot;1991&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5645,17 +5409,16 @@ Phys. Rev. B **43**, 13892 (1991)
 Torrent, Marc, Jollet, Fran\c{c}ois, Bottin, Fran\c{c}ois, Z\'erah, Gilles, Gonze, Xavier  
 Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure  
 Computational Materials Science **42**, 337 - 351 (2008)  
-URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025607002108 target="_black">http://www.sciencedirect.com/science/article/pii/S0927025607002108</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-5946bc41-79db-4f46-b9aa-52f0deef99f5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-5946bc41-79db-4f46-b9aa-52f0deef99f5" tabindex="-1" role="dialog" aria-labelledby="uuid-5f70af89-9d2c-4b86-8335-06bce6b1e36c">
+URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025607002108" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025607002108</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-ed52e8e9-b172-4e15-9006-8f12a9fc99e7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ed52e8e9-b172-4e15-9006-8f12a9fc99e7" tabindex="-1" role="dialog" aria-labelledby="uuid-00ef071b-387c-498a-ac91-93b15ba2873c">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-5f70af89-9d2c-4b86-8335-06bce6b1e36c">bibtex</h4>
+        <h4 class="modal-title" id="uuid-00ef071b-387c-498a-ac91-93b15ba2873c">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Torrent2008,
+      <div class="modal-body"> <pre>@article{Torrent2008,
     author = &quot;Torrent, Marc and Jollet, Fran\c{c}ois and Bottin, Fran\c{c}ois and Z\&#x27;erah, Gilles and Gonze, Xavier&quot;,
     title = &quot;Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure&quot;,
     journal = &quot;Computational Materials Science&quot;,
@@ -5669,11 +5432,11 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025607002108 
     url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025607002108&quot;,
     keywords = &quot;Iron under pressure&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PAW"> /topics/PAW </a>
 * * *
 
 
@@ -5683,17 +5446,16 @@ URL: <a href=http://www.sciencedirect.com/science/article/pii/S0927025607002108 
 Tran, F., Blaha, P.  
 Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential  
 Phys. Rev. Lett. **102**, 226401 (2009)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.102.226401 target="_black">http://link.aps.org/doi/10.1103/PhysRevLett.102.226401</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-3ff80506-892f-4a7e-9d69-c6809eb2e859">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3ff80506-892f-4a7e-9d69-c6809eb2e859" tabindex="-1" role="dialog" aria-labelledby="uuid-a9a57e8d-d4a2-4bf1-a2b9-0cebf45c8da5">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevLett.102.226401" target="_blank">http://link.aps.org/doi/10.1103/PhysRevLett.102.226401</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-37304912-ec1c-40de-a1f1-b6127df0cf0b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-37304912-ec1c-40de-a1f1-b6127df0cf0b" tabindex="-1" role="dialog" aria-labelledby="uuid-46431af9-fc2d-49b9-86fd-d8fe6120a424">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a9a57e8d-d4a2-4bf1-a2b9-0cebf45c8da5">bibtex</h4>
+        <h4 class="modal-title" id="uuid-46431af9-fc2d-49b9-86fd-d8fe6120a424">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Tran2009,
+      <div class="modal-body"> <pre>@article{Tran2009,
     author = &quot;Tran, F. and Blaha, P.&quot;,
     title = &quot;Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -5706,8 +5468,7 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.102.226401 target="_bla
     doi = &quot;10.1103/PhysRevLett.102.226401&quot;,
     url = &quot;http://link.aps.org/doi/10.1103/PhysRevLett.102.226401&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5719,17 +5480,16 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.102.226401 target="_bla
 
 Tremblay, Andr\'e-Marie  
 Probl\`eme \`a N-corps (2017)  
-URL: <a href=https://www.physique.usherbrooke.ca/pages/en/node/3436 target="_black">https://www.physique.usherbrooke.ca/pages/en/node/3436</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-9fc596b5-47a0-4ed4-86a6-b9006a9bbd94">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-9fc596b5-47a0-4ed4-86a6-b9006a9bbd94" tabindex="-1" role="dialog" aria-labelledby="uuid-d416b71d-e982-41f1-bcd9-4a6c1e72fb67">
+URL: <a href="https://www.physique.usherbrooke.ca/pages/en/node/3436" target="_blank">https://www.physique.usherbrooke.ca/pages/en/node/3436</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-7d115e0b-8ee5-43e3-9b87-8ca264f96f64">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-7d115e0b-8ee5-43e3-9b87-8ca264f96f64" tabindex="-1" role="dialog" aria-labelledby="uuid-48082b92-0737-4733-95f5-44d3cfc1ba13">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-d416b71d-e982-41f1-bcd9-4a6c1e72fb67">bibtex</h4>
+        <h4 class="modal-title" id="uuid-48082b92-0737-4733-95f5-44d3cfc1ba13">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@misc{Tremblay2017,
+      <div class="modal-body"> <pre>@misc{Tremblay2017,
     author = &quot;Tremblay, Andr\&#x27;e-Marie&quot;,
     title = &quot;Probl\`eme \`a N-corps&quot;,
     note = &quot;Notes de cours&quot;,
@@ -5737,11 +5497,11 @@ URL: <a href=https://www.physique.usherbrooke.ca/pages/en/node/3436 target="_bla
     url = &quot;https://www.physique.usherbrooke.ca/pages/en/node/3436&quot;,
     year = &quot;2017&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -5752,16 +5512,15 @@ Troullier, N., Martins, J.L.
 Efficient pseudopotentials for plane-wave calculation  
 Phys. Rev. B **43**, 1993 (1991)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-bc942e0a-7a2e-4ebc-8a18-b50f84023e80">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-bc942e0a-7a2e-4ebc-8a18-b50f84023e80" tabindex="-1" role="dialog" aria-labelledby="uuid-51790687-c0f7-44a9-bef5-5a5a7d4b9a96">
+<a data-toggle="modal" href="#uuid-94aaa26c-bc3a-42b5-85f7-b51f228f794a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-94aaa26c-bc3a-42b5-85f7-b51f228f794a" tabindex="-1" role="dialog" aria-labelledby="uuid-d1685029-e0f4-4086-b87f-7e77416d802b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-51790687-c0f7-44a9-bef5-5a5a7d4b9a96">bibtex</h4>
+        <h4 class="modal-title" id="uuid-d1685029-e0f4-4086-b87f-7e77416d802b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Troullier1991,
+      <div class="modal-body"> <pre>@article{Troullier1991,
     Author = &quot;Troullier, N. and Martins, J.L.&quot;,
     Journal = &quot;Phys. Rev. B&quot;,
     Pages = &quot;1993&quot;,
@@ -5769,8 +5528,7 @@ Phys. Rev. B **43**, 1993 (1991)
     Volume = &quot;43&quot;,
     Year = &quot;1991&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5784,16 +5542,15 @@ Tuckerman, M. E., Marx, D., Klein, M. L., Parrinello, M.
 Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics  
 J. Chem. Phys. **104**, 5579 (1996)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-3375da25-3339-4d31-a30e-46d9764387ec">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3375da25-3339-4d31-a30e-46d9764387ec" tabindex="-1" role="dialog" aria-labelledby="uuid-543a81d4-8c5c-408c-b75a-db6c1d35231f">
+<a data-toggle="modal" href="#uuid-eec77962-8849-4eca-a6ad-3c691fdaf4f2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-eec77962-8849-4eca-a6ad-3c691fdaf4f2" tabindex="-1" role="dialog" aria-labelledby="uuid-616d1ce2-e199-4734-bbb1-338844c5b4a4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-543a81d4-8c5c-408c-b75a-db6c1d35231f">bibtex</h4>
+        <h4 class="modal-title" id="uuid-616d1ce2-e199-4734-bbb1-338844c5b4a4">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Tuckerman1996,
+      <div class="modal-body"> <pre>@article{Tuckerman1996,
     Author = &quot;Tuckerman, M. E. and Marx, D. and Klein, M. L. and Parrinello, M.&quot;,
     Title = &quot;Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics&quot;,
     Journal = &quot;J. Chem. Phys.&quot;,
@@ -5801,11 +5558,11 @@ J. Chem. Phys. **104**, 5579 (1996)
     Pages = &quot;5579&quot;,
     year = &quot;1996&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/PIMD"> /topics/PIMD </a>
 * * *
 
 
@@ -5815,17 +5572,16 @@ J. Chem. Phys. **104**, 5579 (1996)
 Tuomisto, F., Makkonen, I.  
 Defect identification in semiconductors with positron annihilation: Experiment and theory  
 Rev. Mod. Phys. **85**, 1583 (2013)  
-DOI: <a href=https://doi.org/10.1103/RevModPhys.85.1583 target="_blank">https://doi.org/10.1103/RevModPhys.85.1583</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-3cd04d45-74d0-4775-ba26-5ecbe1555f75">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3cd04d45-74d0-4775-ba26-5ecbe1555f75" tabindex="-1" role="dialog" aria-labelledby="uuid-de36f486-5ac1-4b18-bc53-3f58731a97ef">
+DOI: <a href="https://doi.org/10.1103/RevModPhys.85.1583" target="_blank">https://doi.org/10.1103/RevModPhys.85.1583</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-66ea6451-04d3-4b6f-b592-7640865aa31d">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-66ea6451-04d3-4b6f-b592-7640865aa31d" tabindex="-1" role="dialog" aria-labelledby="uuid-05aaa198-e5b1-43fe-967a-5c7f956839f0">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-de36f486-5ac1-4b18-bc53-3f58731a97ef">bibtex</h4>
+        <h4 class="modal-title" id="uuid-05aaa198-e5b1-43fe-967a-5c7f956839f0">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Tuomisto2013,
+      <div class="modal-body"> <pre>@article{Tuomisto2013,
     author = &quot;Tuomisto, F. and Makkonen, I.&quot;,
     title = &quot;Defect identification in semiconductors with positron annihilation: Experiment and theory&quot;,
     journal = &quot;Rev. Mod. Phys.&quot;,
@@ -5837,8 +5593,7 @@ DOI: <a href=https://doi.org/10.1103/RevModPhys.85.1583 target="_blank">https://
     publisher = &quot;American Physical Society&quot;,
     doi = &quot;10.1103/RevModPhys.85.1583&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5852,16 +5607,15 @@ Uehara, Kentaro, Tse, John S.
 Calculations of transport properties with the linearized augmented plane-wave method  
 Phys. Rev. B **61**, 1639 (2000)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-a438d822-7b63-40c7-ad49-d4cf239a2816">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-a438d822-7b63-40c7-ad49-d4cf239a2816" tabindex="-1" role="dialog" aria-labelledby="uuid-c9059000-8b74-472e-904c-711bdf67e4b0">
+<a data-toggle="modal" href="#uuid-62782a59-0604-4c16-8faa-60ca9e08996c">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-62782a59-0604-4c16-8faa-60ca9e08996c" tabindex="-1" role="dialog" aria-labelledby="uuid-abb00bb5-5e98-4e11-9aa5-612f3425eecd">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c9059000-8b74-472e-904c-711bdf67e4b0">bibtex</h4>
+        <h4 class="modal-title" id="uuid-abb00bb5-5e98-4e11-9aa5-612f3425eecd">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Uehara2000,
+      <div class="modal-body"> <pre>@article{Uehara2000,
     author = &quot;Uehara, Kentaro and Tse, John S.&quot;,
     title = &quot;Calculations of transport properties with the linearized augmented plane-wave method&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5869,11 +5623,11 @@ Phys. Rev. B **61**, 1639 (2000)
     pages = &quot;1639&quot;,
     year = &quot;2000&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/input_variables/basic"> /input_variables/basic </a>
 * * *
 
 
@@ -5883,17 +5637,16 @@ Phys. Rev. B **61**, 1639 (2000)
 Vanderbilt, D., {K}ing-{S}mith, R. D.  
 Electronic polarization in the ultrasoft pseudopotential formalism  
 arXiv/cond-mat ****, 9801177 (1998)  
-URL: <a href=https://arxiv.org/abs/cond-mat/9801177 target="_black">https://arxiv.org/abs/cond-mat/9801177</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2ecf49a6-c1e0-42ea-a227-e0536b933ef5">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2ecf49a6-c1e0-42ea-a227-e0536b933ef5" tabindex="-1" role="dialog" aria-labelledby="uuid-e618edfa-6d15-4648-ac65-51c89e18a1d9">
+URL: <a href="https://arxiv.org/abs/cond-mat/9801177" target="_blank">https://arxiv.org/abs/cond-mat/9801177</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-b6eb77e0-6e81-4e62-8c82-316e00467d6a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b6eb77e0-6e81-4e62-8c82-316e00467d6a" tabindex="-1" role="dialog" aria-labelledby="uuid-05a18d82-036e-4297-8e96-1e66b70be891">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e618edfa-6d15-4648-ac65-51c89e18a1d9">bibtex</h4>
+        <h4 class="modal-title" id="uuid-05a18d82-036e-4297-8e96-1e66b70be891">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Vanderbilt1998,
+      <div class="modal-body"> <pre>@article{Vanderbilt1998,
     author = &quot;Vanderbilt, D. and {K}ing-{S}mith, R. D.&quot;,
     title = &quot;Electronic polarization in the ultrasoft pseudopotential formalism&quot;,
     journal = &quot;arXiv/cond-mat&quot;,
@@ -5901,8 +5654,7 @@ URL: <a href=https://arxiv.org/abs/cond-mat/9801177 target="_black">https://arxi
     url = &quot;https://arxiv.org/abs/cond-mat/9801177&quot;,
     year = &quot;1998&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5916,16 +5668,15 @@ Troeye, B. Van, Torrent, M., Gonze, X.
 Interatomic force constants including the DFT-D dispersion contribution  
 Phys. Rev. B **93**, 144304 (2016)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-97682c70-c58a-40f5-b51f-5838b02ced28">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-97682c70-c58a-40f5-b51f-5838b02ced28" tabindex="-1" role="dialog" aria-labelledby="uuid-03c6ff47-ea55-46ba-8021-8742a9306078">
+<a data-toggle="modal" href="#uuid-9eb142e2-8e7e-437f-9814-100fca55894e">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-9eb142e2-8e7e-437f-9814-100fca55894e" tabindex="-1" role="dialog" aria-labelledby="uuid-980f5b68-d47c-474f-9c0a-0024a86270bf">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-03c6ff47-ea55-46ba-8021-8742a9306078">bibtex</h4>
+        <h4 class="modal-title" id="uuid-980f5b68-d47c-474f-9c0a-0024a86270bf">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Vantroeye2016,
+      <div class="modal-body"> <pre>@article{Vantroeye2016,
     author = &quot;Troeye, B. Van and Torrent, M. and Gonze, X.&quot;,
     title = &quot;Interatomic force constants including the DFT-D dispersion contribution&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5933,8 +5684,7 @@ Phys. Rev. B **93**, 144304 (2016)
     pages = &quot;144304&quot;,
     year = &quot;2016&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -5947,17 +5697,16 @@ Phys. Rev. B **93**, 144304 (2016)
 Veithen, M., Gonze, X., Ghosez, Ph.  
 Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory  
 Phys. Rev. B **71**, 125107 (2005)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.71.125107 target="_blank">https://doi.org/10.1103/PhysRevB.71.125107</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-2d121c9b-c872-4f02-baa2-08dd4d99f11b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2d121c9b-c872-4f02-baa2-08dd4d99f11b" tabindex="-1" role="dialog" aria-labelledby="uuid-1aec8c12-ad05-40b1-8209-caa16a603986">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.71.125107" target="_blank">https://doi.org/10.1103/PhysRevB.71.125107</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-0c7e2a6c-8641-4081-bf4a-c807e755fa41">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0c7e2a6c-8641-4081-bf4a-c807e755fa41" tabindex="-1" role="dialog" aria-labelledby="uuid-956a324a-26d2-4406-b20e-db1dcda5bbe7">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-1aec8c12-ad05-40b1-8209-caa16a603986">bibtex</h4>
+        <h4 class="modal-title" id="uuid-956a324a-26d2-4406-b20e-db1dcda5bbe7">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Veithen2005,
+      <div class="modal-body"> <pre>@article{Veithen2005,
     author = &quot;Veithen, M. and Gonze, X. and Ghosez, Ph.&quot;,
     title = &quot;Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5966,11 +5715,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.71.125107 target="_blank">https://
     year = &quot;2005&quot;,
     doi = &quot;10.1103/PhysRevB.71.125107&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -5980,17 +5729,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.71.125107 target="_blank">https://
 Veithen, M., Ghosez, Ph.  
 Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles  
 Phys. Rev. B **71**, 132101 (2005)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.71.132101 target="_blank">https://doi.org/10.1103/PhysRevB.71.132101</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-30aa155f-6fc3-4408-96ce-0edb629ec785">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-30aa155f-6fc3-4408-96ce-0edb629ec785" tabindex="-1" role="dialog" aria-labelledby="uuid-ba47113c-d394-4599-9a3d-3ce3b73cd7d7">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.71.132101" target="_blank">https://doi.org/10.1103/PhysRevB.71.132101</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-6371e9c3-5a27-4e89-9ab9-1e562716e5ca">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-6371e9c3-5a27-4e89-9ab9-1e562716e5ca" tabindex="-1" role="dialog" aria-labelledby="uuid-68960dda-ae01-4d70-b8a7-9a45eeb6df08">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-ba47113c-d394-4599-9a3d-3ce3b73cd7d7">bibtex</h4>
+        <h4 class="modal-title" id="uuid-68960dda-ae01-4d70-b8a7-9a45eeb6df08">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Veithen2005a,
+      <div class="modal-body"> <pre>@article{Veithen2005a,
     author = &quot;Veithen, M. and Ghosez, Ph.&quot;,
     title = &quot;Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -5999,11 +5747,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.71.132101 target="_blank">https://
     year = &quot;2005&quot;,
     doi = &quot;10.1103/PhysRevB.71.132101&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
@@ -6014,16 +5762,15 @@ Wang, L.-W., Bellaiche, L., Wei, S.-H., Zunger, A.
 Majority Representation of Alloy Electronic States  
 Phys. Rev. Lett. **80**, 4725 (1998)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-c19f03f7-4117-4deb-90da-14ec923f9467">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c19f03f7-4117-4deb-90da-14ec923f9467" tabindex="-1" role="dialog" aria-labelledby="uuid-e4e9cfdb-12b9-4bc3-875a-aef913d631ac">
+<a data-toggle="modal" href="#uuid-071cac8f-3d6d-4fdc-bfe4-1deb40f33f6b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-071cac8f-3d6d-4fdc-bfe4-1deb40f33f6b" tabindex="-1" role="dialog" aria-labelledby="uuid-5edd1dd5-8519-46d0-9a09-dc70be9e88b5">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-e4e9cfdb-12b9-4bc3-875a-aef913d631ac">bibtex</h4>
+        <h4 class="modal-title" id="uuid-5edd1dd5-8519-46d0-9a09-dc70be9e88b5">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wang1998,
+      <div class="modal-body"> <pre>@article{Wang1998,
     Author = &quot;Wang, L.-W. and Bellaiche, L. and Wei, S.-H. and Zunger, A.&quot;,
     Title = &quot;Majority Representation of Alloy Electronic States&quot;,
     Journal = &quot;Phys. Rev. Lett.&quot;,
@@ -6031,8 +5778,7 @@ Phys. Rev. Lett. **80**, 4725 (1998)
     Pages = &quot;4725&quot;,
     Volume = &quot;80&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6046,16 +5792,15 @@ Wang, H., LaLonde, A. D., Pei, Y., Snyder, G. J.
 The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions  
 Adv. Funct. Mater. **23**, 1586--1596 (2013)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-68ad84c7-9c3b-4392-b170-27d0bdd38cd6">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-68ad84c7-9c3b-4392-b170-27d0bdd38cd6" tabindex="-1" role="dialog" aria-labelledby="uuid-4898a346-6a83-4585-8e17-7402d52eacba">
+<a data-toggle="modal" href="#uuid-b784cb78-ccc7-457e-ab93-b31d923c060b">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b784cb78-ccc7-457e-ab93-b31d923c060b" tabindex="-1" role="dialog" aria-labelledby="uuid-22154fda-d08d-4400-9f1b-3031bda85f49">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-4898a346-6a83-4585-8e17-7402d52eacba">bibtex</h4>
+        <h4 class="modal-title" id="uuid-22154fda-d08d-4400-9f1b-3031bda85f49">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wang2013,
+      <div class="modal-body"> <pre>@article{Wang2013,
     Author = &quot;Wang, H. and LaLonde, A. D. and Pei, Y. and Snyder, G. J.&quot;,
     Title = &quot;The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions&quot;,
     Journal = &quot;Adv. Funct. Mater.&quot;,
@@ -6064,8 +5809,7 @@ Adv. Funct. Mater. **23**, 1586--1596 (2013)
     Pages = &quot;1586--1596&quot;,
     Volume = &quot;23&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6078,17 +5822,16 @@ Adv. Funct. Mater. **23**, 1586--1596 (2013)
 Waroquiers, D., Lherbier, A., Miglio, A., Stankovski, M., Ponc\'e, S., Oliveira, M.J.T., Giantomassi, M., Rignanese, G.-M., Gonze, X.  
 Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory  
 Phys. Rev. B **87**, 075121 (2013)  
-DOI: <a href=https://doi.org/ target="_blank">https://doi.org/</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-37791b9d-ad23-4ea4-9101-5d07f5cc712c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-37791b9d-ad23-4ea4-9101-5d07f5cc712c" tabindex="-1" role="dialog" aria-labelledby="uuid-19f2eab7-7ee7-4a98-a320-a3daa22e81a0">
+DOI: <a href="https://doi.org/" target="_blank">https://doi.org/</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-43261b80-c922-4359-962f-d3101141fd8a">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-43261b80-c922-4359-962f-d3101141fd8a" tabindex="-1" role="dialog" aria-labelledby="uuid-9769d6ad-db23-4469-957b-31e9555188c8">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-19f2eab7-7ee7-4a98-a320-a3daa22e81a0">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9769d6ad-db23-4469-957b-31e9555188c8">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Waroquiers2013,
+      <div class="modal-body"> <pre>@article{Waroquiers2013,
     author = &quot;Waroquiers, D. and Lherbier, A. and Miglio, A. and Stankovski, M. and Ponc\&#x27;e, S. and Oliveira, M.J.T. and Giantomassi, M. and Rignanese, G.-M. and Gonze, X.&quot;,
     title = &quot;Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -6097,8 +5840,7 @@ DOI: <a href=https://doi.org/ target="_blank">https://doi.org/</a><!-- Links -->
     pages = &quot;075121&quot;,
     doi = &quot;&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6112,16 +5854,15 @@ Weinan, E., Ren, W., Vanden-Eijnden, E.
 Simplified and improved string method for computing the minimum energy paths in barrier-crossing events  
 The Journal of Chemical Physics **126**, 164103 (2007)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-b015dec5-dd54-4b5e-9d3c-70b06aa4675f">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-b015dec5-dd54-4b5e-9d3c-70b06aa4675f" tabindex="-1" role="dialog" aria-labelledby="uuid-eea4fd00-b222-4aee-a441-f0c8cde8b5d5">
+<a data-toggle="modal" href="#uuid-4fa91c00-aeb7-47d4-83bf-8c09c3a819e2">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4fa91c00-aeb7-47d4-83bf-8c09c3a819e2" tabindex="-1" role="dialog" aria-labelledby="uuid-99acd77c-dd95-4dfb-8d49-446c07be5067">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-eea4fd00-b222-4aee-a441-f0c8cde8b5d5">bibtex</h4>
+        <h4 class="modal-title" id="uuid-99acd77c-dd95-4dfb-8d49-446c07be5067">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Weinan2007,
+      <div class="modal-body"> <pre>@article{Weinan2007,
     author = &quot;Weinan, E. and Ren, W. and Vanden-Eijnden, E.&quot;,
     title = &quot;Simplified and improved string method for computing the minimum energy paths in barrier-crossing events&quot;,
     journal = &quot;The Journal of Chemical Physics&quot;,
@@ -6131,11 +5872,11 @@ The Journal of Chemical Physics **126**, 164103 (2007)
     year = &quot;2007&quot;,
     publisher = &quot;AIP Publishing&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/TransPath"> /topics/TransPath </a>
 * * *
 
 
@@ -6145,17 +5886,16 @@ The Journal of Chemical Physics **126**, 164103 (2007)
 Werner, P., Comanac, A., de Medici, L., Troyer, M., Millis, A.J.  
 Continuous-Time Solver for Quantum Impurity Models  
 Phys. Rev. Lett. **97**, 076405 (2006)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.97.076405 target="_black">http://link.aps.org/doi/10.1103/PhysRevLett.97.076405</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-99cb67d1-3863-4d1c-9e60-1e717a8dd74e">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-99cb67d1-3863-4d1c-9e60-1e717a8dd74e" tabindex="-1" role="dialog" aria-labelledby="uuid-c5d7e76b-71a7-4df9-96bb-2848764985e9">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevLett.97.076405" target="_blank">http://link.aps.org/doi/10.1103/PhysRevLett.97.076405</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-527c663d-02cb-4c86-9801-763fbea65595">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-527c663d-02cb-4c86-9801-763fbea65595" tabindex="-1" role="dialog" aria-labelledby="uuid-e15139f1-0daa-43b4-8b94-53fbac492e79">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-c5d7e76b-71a7-4df9-96bb-2848764985e9">bibtex</h4>
+        <h4 class="modal-title" id="uuid-e15139f1-0daa-43b4-8b94-53fbac492e79">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Werner2006,
+      <div class="modal-body"> <pre>@article{Werner2006,
     author = &quot;Werner, P. and Comanac, A. and de Medici, L. and Troyer, M. and Millis, A.J.&quot;,
     title = &quot;Continuous-Time Solver for Quantum Impurity Models&quot;,
     journal = &quot;Phys. Rev. Lett.&quot;,
@@ -6169,11 +5909,11 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.97.076405 target="_blac
     timestamp = &quot;2013.05.22&quot;,
     url = &quot;http://link.aps.org/doi/10.1103/PhysRevLett.97.076405&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/DMFT"> /topics/DMFT </a>
 * * *
 
 
@@ -6183,17 +5923,16 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevLett.97.076405 target="_blac
 Wiktor, J., Jomard, G., Torrent, M., Bertolus, M.  
 Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}  
 Phys. Rev. B **87**, 235207 (2013)  
-DOI: <a href=https://doi.org/10.1103/PhysRevB.87.235207 target="_blank">https://doi.org/10.1103/PhysRevB.87.235207</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-6eb060b5-f469-459b-afdd-6f7218b07a3c">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-6eb060b5-f469-459b-afdd-6f7218b07a3c" tabindex="-1" role="dialog" aria-labelledby="uuid-3beba158-22a6-4edc-add3-1e72e4f92150">
+DOI: <a href="https://doi.org/10.1103/PhysRevB.87.235207" target="_blank">https://doi.org/10.1103/PhysRevB.87.235207</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-b2d98e94-ae08-4ba3-8b66-526d6a399481">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-b2d98e94-ae08-4ba3-8b66-526d6a399481" tabindex="-1" role="dialog" aria-labelledby="uuid-a448f979-87ae-45a0-87e9-0c04b0255b33">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-3beba158-22a6-4edc-add3-1e72e4f92150">bibtex</h4>
+        <h4 class="modal-title" id="uuid-a448f979-87ae-45a0-87e9-0c04b0255b33">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wiktor2013,
+      <div class="modal-body"> <pre>@article{Wiktor2013,
     author = &quot;Wiktor, J. and Jomard, G. and Torrent, M. and Bertolus, M.&quot;,
     title = &quot;Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -6204,11 +5943,11 @@ DOI: <a href=https://doi.org/10.1103/PhysRevB.87.235207 target="_blank">https://
     doi = &quot;10.1103/PhysRevB.87.235207&quot;,
     publisher = &quot;American Physical Society&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/positron"> /topics/positron </a>
 * * *
 
 
@@ -6219,16 +5958,15 @@ Wiktor, J., Kerbiriou, X., Jomard, G., Esnouf, S., Barthe, M.-F., Bertolus, M.
 Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations  
 Phys. Rev. B **89**, 155203 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-3398bc4d-88b8-4de7-9a65-f6a3caac6af9">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-3398bc4d-88b8-4de7-9a65-f6a3caac6af9" tabindex="-1" role="dialog" aria-labelledby="uuid-76629613-508c-46d2-a772-a890dc853c85">
+<a data-toggle="modal" href="#uuid-3c09ade0-36cf-4b7b-a5b1-9aac6e074587">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-3c09ade0-36cf-4b7b-a5b1-9aac6e074587" tabindex="-1" role="dialog" aria-labelledby="uuid-72c1b7b6-2bc3-419d-b7e9-02173b4563b3">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-76629613-508c-46d2-a772-a890dc853c85">bibtex</h4>
+        <h4 class="modal-title" id="uuid-72c1b7b6-2bc3-419d-b7e9-02173b4563b3">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wiktor2014,
+      <div class="modal-body"> <pre>@article{Wiktor2014,
     author = &quot;Wiktor, J. and Kerbiriou, X. and Jomard, G. and Esnouf, S. and Barthe, M.-F. and Bertolus, M.&quot;,
     title = &quot;Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -6238,11 +5976,11 @@ Phys. Rev. B **89**, 155203 (2014)
     year = &quot;2014&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/positron"> /topics/positron </a>
 * * *
 
 
@@ -6253,16 +5991,15 @@ Wiktor, J., Barthe, M.-F., Jomard, G., Torrent, M., Freyss, M., Bertolus, M.
 Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$  
 Phys. Rev. B **90**, 184101 (2014)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-442532b0-251f-4740-9863-2f9634e8a3ba">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-442532b0-251f-4740-9863-2f9634e8a3ba" tabindex="-1" role="dialog" aria-labelledby="uuid-bd60f0fc-fff1-4329-8491-7d43339a9d6a">
+<a data-toggle="modal" href="#uuid-771779de-4f81-4784-ab9f-0b33ad3f72ce">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-771779de-4f81-4784-ab9f-0b33ad3f72ce" tabindex="-1" role="dialog" aria-labelledby="uuid-01979d1c-e98e-4467-8a47-b581034570dc">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-bd60f0fc-fff1-4329-8491-7d43339a9d6a">bibtex</h4>
+        <h4 class="modal-title" id="uuid-01979d1c-e98e-4467-8a47-b581034570dc">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wiktor2014a,
+      <div class="modal-body"> <pre>@article{Wiktor2014a,
     author = &quot;Wiktor, J. and Barthe, M.-F. and Jomard, G. and Torrent, M. and Freyss, M. and Bertolus, M.&quot;,
     title = &quot;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -6272,11 +6009,11 @@ Phys. Rev. B **90**, 184101 (2014)
     year = &quot;2014&quot;,
     publisher = &quot;APS&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/positron"> /topics/positron </a>
 * * *
 
 
@@ -6286,17 +6023,16 @@ Phys. Rev. B **90**, 184101 (2014)
 Wiktor, J., Jomard, G., Bertolus, M.  
 Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect  
 Nucl. Instrum. Meth. **327**, 63 (2014)  
-DOI: <a href=https://doi.org/10.1016/j.nimb.2013.09.050 target="_blank">https://doi.org/10.1016/j.nimb.2013.09.050</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-0d51c67e-f279-4929-9bde-100da1d256dd">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-0d51c67e-f279-4929-9bde-100da1d256dd" tabindex="-1" role="dialog" aria-labelledby="uuid-0c1b143c-d50c-4ca9-b1b7-e9ecae4fb648">
+DOI: <a href="https://doi.org/10.1016/j.nimb.2013.09.050" target="_blank">https://doi.org/10.1016/j.nimb.2013.09.050</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-4c836bc2-23d9-44f2-ad4b-f57e1a347cac">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4c836bc2-23d9-44f2-ad4b-f57e1a347cac" tabindex="-1" role="dialog" aria-labelledby="uuid-0ead9b21-67fa-4039-9e61-d444566c3000">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-0c1b143c-d50c-4ca9-b1b7-e9ecae4fb648">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0ead9b21-67fa-4039-9e61-d444566c3000">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wiktor2014b,
+      <div class="modal-body"> <pre>@article{Wiktor2014b,
     author = &quot;Wiktor, J. and Jomard, G. and Bertolus, M.&quot;,
     title = &quot;Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect&quot;,
     journal = &quot;Nucl. Instrum. Meth.&quot;,
@@ -6306,11 +6042,11 @@ DOI: <a href=https://doi.org/10.1016/j.nimb.2013.09.050 target="_blank">https://
     doi = &quot;10.1016/j.nimb.2013.09.050&quot;,
     publisher = &quot;Elsevier&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/positron"> /topics/positron </a>
 * * *
 
 
@@ -6320,17 +6056,16 @@ DOI: <a href=https://doi.org/10.1016/j.nimb.2013.09.050 target="_blank">https://
 Wiktor, J., Jomard, G., Torrent, M.  
 Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions  
 Phys. Rev. B **92**, 125113 (2015)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.92.125113 target="_black">http://link.aps.org/doi/10.1103/PhysRevB.92.125113</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-196845f5-2dcf-49d4-a377-ac18b39b555b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-196845f5-2dcf-49d4-a377-ac18b39b555b" tabindex="-1" role="dialog" aria-labelledby="uuid-dd62851f-2bb6-4c34-9cbd-e2d9024b15ae">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.92.125113" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.92.125113</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-f2ab9baf-e23b-4a99-bd66-a92466829cd5">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-f2ab9baf-e23b-4a99-bd66-a92466829cd5" tabindex="-1" role="dialog" aria-labelledby="uuid-9474511f-0b28-4c5a-8031-c98cbc3e829b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-dd62851f-2bb6-4c34-9cbd-e2d9024b15ae">bibtex</h4>
+        <h4 class="modal-title" id="uuid-9474511f-0b28-4c5a-8031-c98cbc3e829b">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Wiktor2015,
+      <div class="modal-body"> <pre>@article{Wiktor2015,
     author = &quot;Wiktor, J. and Jomard, G. and Torrent, M.&quot;,
     title = &quot;Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions&quot;,
     journal = &quot;Phys. Rev. B&quot;,
@@ -6344,11 +6079,11 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.92.125113 target="_black">
     doi = &quot;10.1103/PhysRevB.92.125113&quot;,
     url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.92.125113&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/positron"> /topics/positron </a>
 * * *
 
 
@@ -6358,17 +6093,16 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevB.92.125113 target="_black">
 Xu, B., Verstraete, M. J.  
 First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium  
 Phys. Rev. Lett. **112**, 196603 (2014)  
-DOI: <a href=https://doi.org/10.1103/PhysRevLett.112.196603 target="_blank">https://doi.org/10.1103/PhysRevLett.112.196603</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-c4d06d3c-eae0-4b03-a60b-cb46820d4a72">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-c4d06d3c-eae0-4b03-a60b-cb46820d4a72" tabindex="-1" role="dialog" aria-labelledby="uuid-33b519bc-176a-459d-9efc-303b58e20782">
+DOI: <a href="https://doi.org/10.1103/PhysRevLett.112.196603" target="_blank">https://doi.org/10.1103/PhysRevLett.112.196603</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-853b312e-5f95-48ee-af4c-53ebe3319864">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-853b312e-5f95-48ee-af4c-53ebe3319864" tabindex="-1" role="dialog" aria-labelledby="uuid-7d6e2278-b41d-40ac-b3bb-7bb4efebf1f2">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-33b519bc-176a-459d-9efc-303b58e20782">bibtex</h4>
+        <h4 class="modal-title" id="uuid-7d6e2278-b41d-40ac-b3bb-7bb4efebf1f2">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Xu2014,
+      <div class="modal-body"> <pre>@article{Xu2014,
     Author = &quot;Xu, B. and Verstraete, M. J.&quot;,
     Doi = &quot;10.1103/PhysRevLett.112.196603&quot;,
     Issue = &quot;19&quot;,
@@ -6380,8 +6114,7 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.112.196603 target="_blank">http
     Volume = &quot;112&quot;,
     Year = &quot;2014&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6394,17 +6127,16 @@ DOI: <a href=https://doi.org/10.1103/PhysRevLett.112.196603 target="_blank">http
 Zhou, Y., Saad, Y., Tiago, M.L., Chelikowsky, J.R.  
 Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration  
 Phys. Rev. E **74**, 066704 (2006)  
-URL: <a href=http://link.aps.org/doi/10.1103/PhysRevE.74.066704 target="_black">http://link.aps.org/doi/10.1103/PhysRevE.74.066704</a><!-- Links -->
-<a data-toggle="modal" href="#uuid-65918700-158e-49b1-bec2-3ff5d90ad832">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-65918700-158e-49b1-bec2-3ff5d90ad832" tabindex="-1" role="dialog" aria-labelledby="uuid-6131fe9a-fa7f-433f-9db2-ef0fb34395ce">
+URL: <a href="http://link.aps.org/doi/10.1103/PhysRevE.74.066704" target="_blank">http://link.aps.org/doi/10.1103/PhysRevE.74.066704</a><!-- Links -->
+<a data-toggle="modal" href="#uuid-ec3dc18c-f055-4cf4-ab9f-8522472f2534">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-ec3dc18c-f055-4cf4-ab9f-8522472f2534" tabindex="-1" role="dialog" aria-labelledby="uuid-322e38c3-b86b-4693-b16f-7d630cee2e38">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-6131fe9a-fa7f-433f-9db2-ef0fb34395ce">bibtex</h4>
+        <h4 class="modal-title" id="uuid-322e38c3-b86b-4693-b16f-7d630cee2e38">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Zhou2006,
+      <div class="modal-body"> <pre>@article{Zhou2006,
     author = &quot;Zhou, Y. and Saad, Y. and Tiago, M.L. and Chelikowsky, J.R.&quot;,
     title = &quot;Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration&quot;,
     journal = &quot;Phys. Rev. E&quot;,
@@ -6417,8 +6149,7 @@ URL: <a href=http://link.aps.org/doi/10.1103/PhysRevE.74.066704 target="_black">
     doi = &quot;10.1103/PhysRevE.74.066704&quot;,
     url = &quot;http://link.aps.org/doi/10.1103/PhysRevE.74.066704&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6432,16 +6163,15 @@ Zhou, Y., Saad, Y., Tiago, M.L, Chelikowsky, J. R.
 Self-consistent-field calculations using Chebyshev-filtered subspace iteration  
 J. Comp. Phys. **219**, 172--184 (2006)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-2bbe5f1f-b5d6-4d7c-8234-4defa12ebbac">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2bbe5f1f-b5d6-4d7c-8234-4defa12ebbac" tabindex="-1" role="dialog" aria-labelledby="uuid-70f514eb-7821-430b-8c7c-6378508f0b50">
+<a data-toggle="modal" href="#uuid-4cf287d2-0455-4913-ac8a-1b449f4b17d7">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-4cf287d2-0455-4913-ac8a-1b449f4b17d7" tabindex="-1" role="dialog" aria-labelledby="uuid-4ca5e69b-f9ee-464c-b3e2-d1a4649d3c02">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-70f514eb-7821-430b-8c7c-6378508f0b50">bibtex</h4>
+        <h4 class="modal-title" id="uuid-4ca5e69b-f9ee-464c-b3e2-d1a4649d3c02">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Zhou2006a,
+      <div class="modal-body"> <pre>@article{Zhou2006a,
     author = &quot;Zhou, Y. and Saad, Y. and Tiago, M.L and Chelikowsky, J. R.&quot;,
     title = &quot;Self-consistent-field calculations using Chebyshev-filtered subspace iteration&quot;,
     journal = &quot;J. Comp. Phys.&quot;,
@@ -6451,8 +6181,7 @@ J. Comp. Phys. **219**, 172--184 (2006)
     year = &quot;2006&quot;,
     publisher = &quot;Elsevier&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6466,23 +6195,21 @@ Ziman, J. M.
 Electrons and phonons  
 Oxford University Press (1960)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-ba572d9a-e5a7-44e4-84d0-360c99cf49f8">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-ba572d9a-e5a7-44e4-84d0-360c99cf49f8" tabindex="-1" role="dialog" aria-labelledby="uuid-61d8a2cc-b86f-4832-b7e1-c6ade5f4e8aa">
+<a data-toggle="modal" href="#uuid-20802f8b-b383-4336-ba11-4e9ba9591ec4">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-20802f8b-b383-4336-ba11-4e9ba9591ec4" tabindex="-1" role="dialog" aria-labelledby="uuid-0c1b8f53-8b8c-41a8-88b8-b6f2fb0342cc">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-61d8a2cc-b86f-4832-b7e1-c6ade5f4e8aa">bibtex</h4>
+        <h4 class="modal-title" id="uuid-0c1b8f53-8b8c-41a8-88b8-b6f2fb0342cc">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@book{Ziman1960,
+      <div class="modal-body"> <pre>@book{Ziman1960,
     author = &quot;Ziman, J. M.&quot;,
     title = &quot;Electrons and phonons&quot;,
     publisher = &quot;Oxford University Press&quot;,
     year = &quot;1960&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
@@ -6496,16 +6223,15 @@ Zwanziger, J.W., Galbraith, J., Kipouros, Y., Torrent, M., Giantomassi, M., Gonz
 Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response  
 Comput. Mater. Sci. **58**, 113--118 (2012)  
 <!-- Links -->
-<a data-toggle="modal" href="#uuid-2c1c6354-1195-4e0c-b890-80e4b9ff2239">bibtex</a><!-- Modal -->
-<div class="modal fade" id="uuid-2c1c6354-1195-4e0c-b890-80e4b9ff2239" tabindex="-1" role="dialog" aria-labelledby="uuid-b700e560-746c-42c3-9d66-39fb0ce8be0e">
+<a data-toggle="modal" href="#uuid-0207dc2f-e2d2-492c-a665-044412fb3bf6">bibtex</a><!-- Modal -->
+<div class="modal fade" id="uuid-0207dc2f-e2d2-492c-a665-044412fb3bf6" tabindex="-1" role="dialog" aria-labelledby="uuid-f4080b36-3e5e-4a66-b2ca-4c9b197b0f7d">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b700e560-746c-42c3-9d66-39fb0ce8be0e">bibtex</h4>
+        <h4 class="modal-title" id="uuid-f4080b36-3e5e-4a66-b2ca-4c9b197b0f7d">bibtex</h4>
       </div>
-      <div class="modal-body">
-        <pre>@article{Zwanziger2012,
+      <div class="modal-body"> <pre>@article{Zwanziger2012,
     author = &quot;Zwanziger, J.W. and Galbraith, J. and Kipouros, Y. and Torrent, M. and Giantomassi, M. and Gonze, X.&quot;,
     title = &quot;Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response&quot;,
     journal = &quot;Comput. Mater. Sci.&quot;,
@@ -6513,9 +6239,9 @@ Comput. Mater. Sci. **58**, 113--118 (2012)
     pages = &quot;113--118&quot;,
     year = &quot;2012&quot;
 }
-</pre>
-      </div>
+</pre> </div>
     </div>
   </div>
 </div>
+Referred to in: <a href="/topics/Berry"> /topics/Berry </a>
 * * *

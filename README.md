@@ -1,6 +1,10 @@
-**Proof of concept** website available at <https://gmatteo.github.io/test_abidocs/>
+---
+authors: MG
+---
 
-### ** Main features **
+# ** Main features **
+
+**Proof of concept** website available at <https://gmatteo.github.io/test_abidocs/>
 
 The documentation is mainly written in [markdown](https://en.wikipedia.org/wiki/Markdown)
 a lightweight markup language with plain text formatting
@@ -8,8 +12,7 @@ a lightweight markup language with plain text formatting
 The website is automatically generated with [MkDocs](http://www.mkdocs.org/)
 starting from a single YAML configuration file (`mkdocs.yml`).
 
-`MkDocs` uses [Python-Markdown](https://pythonhosted.org/Markdown)
-to parse the Markdown documentation.
+`MkDocs` uses [Python-Markdown](https://pythonhosted.org/Markdown) to parse the Markdown documentation.
 In addition to the basic markdown syntax, we add extensions for
 the automatic generation of internal links, bibliographic citations and the
 rendering of Latex equations with [MathJax](https://www.mathjax.org/)
@@ -60,7 +63,6 @@ Markdown extensions available
 
 ### ** Internal links and citations **
 
-
 To add a link to an Abinit input variable use:
 
 ```text
@@ -77,11 +79,13 @@ This is a link to the [[ecut]] input variable.
 
 citations:
 
-```[[Allen1976]]```
+```
+[[Allen1976]]
+```
 
 Link to [[Allen1976]] paper
 
-## Markdown 
+## ** Markdown **
 
 Markdown Table
 
@@ -111,7 +115,7 @@ The video below gives an overwiew of the command line options of `runtests.py`
 [![asciicast](https://asciinema.org/a/40324.png)](https://asciinema.org/a/40324)
 
 
-## Markdown extensions
+## ** Markdown extensions **
 
 modal window
 
@@ -179,7 +183,7 @@ The propagator in Eq.\ref{eq:GreenDef} contains ...
 
 <!-- Plots go in blank <div> elements. 
     You can size them in the plot layout, or give the div a size as shown here.
--->
+
 <div id="plotly_plot" style="width:90%;height:250px;"></div>
 <script>
 $(function() {
@@ -190,6 +194,7 @@ $(function() {
     );
 });
 </script>
+-->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -201,7 +206,7 @@ $(function() {
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="../tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
+      <img src="/tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
       <div class="carousel-caption">
         <h3>Unconverged BSE optical spectrum</h3>
         <!-- <p>LA is always so much fun!</p> -->
@@ -209,9 +214,9 @@ $(function() {
     </div>
 
     <div class="item">
-      <img src="../tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
+      <img src="/tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
       <div class="carousel-caption">
-        <h3>Convergengeof BSE optical spectrum wrt k-point sampling</h3>
+        <h3>Convergenge of BSE optical spectrum wrt k-point sampling</h3>
         <!-- <p>Thank you, Chicago!</p> -->
       </div>
     </div>
@@ -227,3 +232,28 @@ $(function() {
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+## Front matter
+
+Front matter is the first section of the markdown file and must take the form of valid YAML 
+document enclosed between triple-dashed lines. Here is a basic example:
+
+```yaml
+---
+title: Blogging Like a Hacker
+authors: MG
+---
+```
+
+Between these triple-dashed lines, you can set predefined variables (see below for a reference) 
+or even create custom ones of your own. 
+These variables will then be available to you to access using Liquid tags both further down in the 
+file and also in any layouts or includes that the page or post in question relies on.
+
+
+## Permalinks
+
+Permalinks refer to the URLs (excluding the domain name or directory folder) for your pages.
+Jekyll supports a flexible way to build permalinks, allowing you to leverage various template variables 
+or choose built-in permalink styles (such as date) that automatically use a template-variable pattern.

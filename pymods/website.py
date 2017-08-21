@@ -3,11 +3,14 @@ from __future__ import print_function, division, unicode_literals, absolute_impo
 
 import sys
 import os
+import io
+import re
+import yaml
 
-from collections import OrderedDict
+from collections import OrderedDict, defaultdict
 from itertools import groupby
-from pymods.variables import Variable
 from html2text import html2text
+from pymods.variables import Variable
 
 _WEBSITE = None
 
@@ -54,8 +57,12 @@ class MyEntry(Entry):
         fields = self.fields
         title = fields["title"]
 
-        if self.type == "article":
+        if sys.version[0:3] <= '2.7':
+            authors = ", ".join(unicode(p) for p in self.persons["author"])
+        else:
             authors = ", ".join(str(p) for p in self.persons["author"])
+
+        if self.type == "article":
             s = '{}  \n{}  \n'.format(authors, title)
             if "eprint" in fields:
                 s += "{} **{}**, {} ({})".format(fields["journal"], fields.get("archivePrefix", ""), fields["eprint"], fields["year"])
@@ -63,7 +70,6 @@ class MyEntry(Entry):
                 s += "{} **{}**, {} ({})".format(fields["journal"], fields["volume"], fields["pages"], fields["year"])
 
         elif self.type in ("book", "incollection"): # FIXME Better treatment for incollection
-            authors = ", ".join(str(p) for p in self.persons["author"])
             #editors = ", ".join(str(e) for e in self.persons["editor"]])
             s = '{}  \n{}  \n'.format(authors, title)
             s += "{} ({})".format(fields["publisher"], fields["year"])
@@ -71,11 +77,9 @@ class MyEntry(Entry):
                 s += "isbn: %s" % fields["isbn"]
 
         elif self.type in ("phdthesis", "mastersthesis"):
-            authors = ", ".join(str(p) for p in self.persons["author"])
             s = '{}  \n{}  \n{} ({})'.format(authors, title, fields["school"], fields["year"])
 
         elif self.type == "misc":
-            authors = ", ".join(str(p) for p in self.persons["author"])
             s = '{}  \n{} ({})'.format(authors, title, fields["year"])
 
         else:
@@ -83,12 +87,12 @@ class MyEntry(Entry):
 
         s += "  \n"
         if "url" in fields:
-            s += 'URL: <a href={url} target="_black">{url}</a>'.format(url=fields["url"])
+            s += 'URL: <a href="{url}" target="_blank">{url}</a>'.format(url=fields["url"])
         elif "doi" in fields:
             doi = fields["doi"]
             doi_root = "https://doi.org/"
             if not doi.startswith(doi_root): doi = doi_root + doi
-            s += 'DOI: <a href={doi} target="_blank">{doi}</a>'.format(doi=doi)
+            s += 'DOI: <a href="{doi}" target="_blank">{doi}</a>'.format(doi=doi)
 
         # Add modal with bibtex entry.
         link, modal = self.get_bibtex_linkmodal()
@@ -108,9 +112,8 @@ class MyEntry(Entry):
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
         # TODO
         from pymods.extensions.modal import gen_id, escape
-        #text = "<pre>" + escape(fh.read()) + "</pre>"
         text = "<pre>" + escape(self.to_bibtex()) + "</pre>"
-        modal_id=gen_id()
+        modal_id = gen_id()
 
         link = """<!-- Links -->
 <a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
@@ -124,12 +127,10 @@ class MyEntry(Entry):
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="{modal_label_id}">bibtex</h4>
       </div>
-      <div class="modal-body">
-        {text}
-      </div>
+      <div class="modal-body"> {text} </div>
     </div>
   </div>
-</div>""".format(**locals(), modal_label_id=gen_id())
+</div>""".format(modal_label_id=gen_id(), **locals())
 
         return link, modal
 
@@ -140,6 +141,10 @@ class Website(object):
         self.root = os.path.abspath(root)
         self.verbose = verbose
 
+        # Read mkdocs configuration file.
+        with io.open(os.path.join(self.root, "../", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
+            self.config = yaml.load(fh)
+
         # Get database with input variables
         from pymods.variables import get_variables_code
         self.variables_code = get_variables_code()
@@ -148,7 +153,6 @@ class Website(object):
         self.bib_data = parse_file(os.path.join(self.root, "abiref.bib"), bib_format="bibtex")
         for entry in self.bib_data.entries.values():
             entry.__class__ = MyEntry
-            #print(entry.to_bibtex())
 
         # Get code statistics
         self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
@@ -178,7 +182,7 @@ class Website(object):
 
         def test_get_varnames(test, varnames):
             """This should become a method of BaseTest."""
-            with open(test.inp_fname, "rt") as fh:
+            with io.open(test.inp_fname, "rt", encoding="utf-8") as fh:
                 s = fh.read()
             vused = [v for v in varnames if v in s] # TODO This can be improved.
             return vused
@@ -205,6 +209,8 @@ class Website(object):
     #    return "\n".join(lines)
 
     def generate_markdown_files(self):
+
+        # Write files with the description of the input variables.
         workdir = os.path.join(self.root, "input_variables")
         for code, vd in self.variables_code.items():
             vd.write_markdown_files(workdir, with_varlist_page=code in ("abinit",))
@@ -214,27 +220,29 @@ class Website(object):
         #This document lists the input variables for ABINIT and three post-processors of ABINIT,
         #in order of number of occurrence in the input files provided with the package.
 
-        with open(os.path.join(workdir, "varset_stats.md"), "wt") as fh:
+        with io.open(os.path.join(workdir, "varset_stats.md"), "wt", encoding="utf-8") as fh:
             for code, vd in self.variables_code.items():
-                fh.write("\n\n# **%s** \n\n" % code)
                 num_tests = len([test for test in self.rpath2test.values() if test.executable == code])
+                fh.write("\n\n# **%s** \n\n" % code)
                 fh.write("%d tests\n\n" % num_tests)
                 # TODO The number of tests is smaller than ecut! Count Tutorial
-                # DSU sort
                 items = sorted([(len(v.tests), v) for v in vd.values()], key=lambda t: t[0], reverse=True)
+                # https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp
+                lines = ['<ul class="list-group">']
                 for count, group in groupby(items, key=lambda t: t[0]):
                     vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
-                    fh.write("%s: %s<br><br>" % (count, ", ".join(v.website_ilink() for v in vlist)))
+                    s = ", ".join(v.website_ilink() for v in vlist)
+                    # Set color depending on coverage.
+                    ratio = 100 * count / num_tests
+                    if ratio > 50:
+                        cls = "list-group-item-success"
+                    elif ratio > 10:
+                        cls = "list-group-item-warning"
+                    else:
+                        cls = "list-group-item-danger"
+                    lines.append('<li class="list-group-item %s"> %s <span class="badge"> %d </span></li>' % (cls, s, count))
 
-        print("Generating Markdown file with bibliographic entries ...")
-        with open(os.path.join(self.root, "bibliography.md"), "wt") as fh:
-            lines = []
-            for name in sorted(self.bib_data.entries.keys()):
-                entry = self.bib_data.entries[name]
-                lines.append("\n\n## **%s** \n\n" % name)
-                lines.append(entry.to_markdown())
-                lines.append("* * *")
-            fh.write("\n".join(lines))
+                fh.write("\n".join(lines) + "</ul>")
 
         print("Generating Markdown files with topics ...")
         # FIXME: this won't find all topics e.g AbiPy
@@ -245,12 +253,13 @@ class Website(object):
             for var in vd.values():
                 all_topics.update(var.topic_tribes.keys())
         all_topics = sorted(all_topics)
+
         index_md = ["Alphabetical list of topics"]
         for firstchar, group in groupby(all_topics, key=lambda t: t[0]):
             index_md.append("## *%s*" % firstchar)
             index_md.extend("- [[topic:%s]]" % topic for topic in group)
 
-        with open(os.path.join(workdir, "index.md"), "wt") as fh:
+        with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
             fh.write("\n".join(index_md))
 
         for code, vd in self.variables_code.items():
@@ -261,9 +270,8 @@ class Website(object):
 
             # Read template and prepare markdown string
             repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
-            import yaml
             for topic in sorted(topics):
-                with open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt") as fh:
+                with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
                     tmpl = yaml.load(fh)[0]
                     front = """\
 ---
@@ -290,8 +298,7 @@ authors: {}
 
                     # Find tests associated to this `topic`
                     # Group tests by `suite_name` and write list with links.
-                    items = [(rpath, test) for (rpath, test) in self.rpath2test.items()
-                             if topic in test.topics]
+                    items = [(rpath, test) for (rpath, test) in self.rpath2test.items() if topic in test.topics]
                     selected_input_files = "No input file associated to this topic."
                     if items:
                         items = sorted(items, key=lambda t: t[1].suite_name)
@@ -302,7 +309,7 @@ authors: {}
                             lines.append(" ")
                         selected_input_files = "\n".join(lines)
 
-                    # Build front + markdown content and write md file.
+                    # Build front + markdown and write md file.
                     text = front + """
 ## ** Introduction **
 
@@ -318,27 +325,51 @@ authors: {}
 
 """.format(**locals())
 
-                with open(os.path.join(workdir, topic + ".md"), "wt") as fh:
+                with io.open(os.path.join(workdir, topic + ".md"), "wt", encoding="utf-8") as fh:
                     fh.write(text)
 
+        # All markdown files have been generated.
+        # Now find all wikilinks in particular the bibliographic references
+        # needed to generate the backlinks
+        self.analyze_pages()
+
+        print("Generating Markdown file with bibliographic entries ...")
+        citation2pages = defaultdict(list)
+        for page in self.md_pages:
+            for citation in page.citations:
+                citation2pages[citation].append(page)
+
+        with io.open(os.path.join(self.root, "bibliography.md"), "wt", encoding="utf-8") as fh:
+            lines = []
+            for name in sorted(self.bib_data.entries.keys()):
+                entry = self.bib_data.entries[name]
+                lines.append("\n\n## **%s** \n\n" % name)
+                lines.append(entry.to_markdown())
+                if citation2pages[name]:
+                    lines.append("Referred to in: %s" % ", ".join('<a href="{url}"> {url} </a>'.format(url=page.url)
+                        for page in citation2pages[name]))
+                lines.append("* * *")
+            fh.write("\n".join(lines))
+
     def analyze_pages(self):
-        self.pages = []
         print("Analyzing markdown pages ...")
+        self.md_pages, self.html_pages = [], []
         for root, dirs, files in os.walk(self.root):
             if root in ("site", "tests"): continue
             for f in files:
+                if f.startswith("_"): continue
                 path = os.path.join(root, f)
                 if f.endswith(".md"):
-                    self.pages.append(MarkdownPage(path))
+                    self.md_pages.append(MarkdownPage(path, self))
                 elif f.endswith(".html") or f.endswith(".htm"):
-                    self.pages.append(HtmlPage(path))
+                    self.html_pages.append(HtmlPage(path, self))
 
     def get_citation_aelement(self, key, html_class=None):
         from markdown.util import etree
         a = etree.Element('a')
         # Handle citation
         ref = self.bib_data.entries[key]
-        url = "/bibliography/#%s" % key
+        url = "/bibliography/#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
         a.set("data-toggle", "popover")
         a.set("title", ref.fields["title"])
@@ -350,6 +381,11 @@ authors: {}
         a.text = key
         if html_class: a.set('class', html_class)
         return a
+
+    def slugify(self, value):
+        """ Slugify a string, to make it URL friendly. """
+        from markdown.extensions.toc import slugify
+        return slugify(value, separator="-")
 
     def validate_html_build(self):
         # https://bitbucket.org/nmb10/py_w3c
@@ -366,7 +402,6 @@ authors: {}
                 if not (f.endswith(".html") or f.endswith(".htm")): continue
                 path = os.path.join(root, f)
                 print("Validating", path)
-
                 # validate file (Accept both - filename or file pointer.)
                 vld.validate_file(path)
                 # look for warnings
@@ -377,41 +412,63 @@ authors: {}
                         continue
                     pprint(e)  # list with dicts
 
-                #with open(path, "rt") as fh:
+                #with io.open(path, "rt", encoding="utf-8") as fh:
                 #    document, errors = tidy_document(fh.read())
                 #    #print(errors)
 
+
 class Page(object):
 
-    def __init__(self, filepath):
-        self.filepath = os.path.abspath(filepath)
-        self.links = []
-        self.refs = []
-        #with open(self.filepath, "rt") as fh:
-        #    self.lines = fh.readlines()
+    def __init__(self, path, website):
+        self.path = os.path.abspath(path)
+        self.website = website
+        self.html_links = []
+        self.wiki_links = []
+        self.citations = set()
 
-    #def __str__(self):
-    #    lines = []
-    #    app = lines.append
-    #    return "\n".join(lines)
+    @property
+    def relpath(self):
+        return os.path.relpath(self.path, self.website.root)
 
-    #def _find_links(self):
+    @property
+    def url(self):
+        return ("/" + self.relpath).replace(".md", "")
+
+    def __str__(self):
+        lines = ["Page: %s" % self.relpath]
+        if self.wiki_links:
+            lines.extend("wiki_links: %s" % wl for wl in self.wiki_links)
+
+        return "\n".join(lines)
 
 
 class MarkdownPage(Page):
-    def __init__(self, filepath):
-        super(MarkdownPage, self).__init__(filepath)
+
+    def __init__(self, path, website):
+        super(MarkdownPage, self).__init__(path, website)
         self.meta = {}
+        with io.open(self.path, "rt", encoding="utf-8") as fh:
+           string = fh.read()
+
+        WIKILINK_RE = r'\[\[([^\[]+)\]\]'
+        for m in re.finditer(WIKILINK_RE, string):
+            token = m.group(1).strip()
+            if token in self.website.bib_data.entries:
+                self.wiki_links.append(token)
+                self.citations.add(token)
+
+        print(self)
+
 
 class HtmlPage(Page):
-    def __init__(self, filepath):
-        super(HtmlPage, self).__init__(filepath)
+    def __init__(self, path, websiste):
+        super(HtmlPage, self).__init__(path, website)
 
 
 class AbinitStats(object):
 
-    def __init__(self, filepath):
-        self.filepath = os.path.abspath(filepath)
+    def __init__(self, path):
+        self.path = os.path.abspath(path)
 
         """
         =====================================================================
@@ -424,7 +481,7 @@ class AbinitStats(object):
         keys = ("versions", "dates", "targz_sizes", "num_f90files", "num_f90lines", "num_tests")
         self.data = OrderedDict([(k, []) for k in keys])
 
-        with open(self.filepath, "rt") as fh:
+        with io.open(self.path, "rt", encoding="utf-8") as fh:
             indata = False
             for line in fh:
                 indata = indata or line.startswith("4.3")
@@ -442,7 +499,7 @@ class AbinitStats(object):
         Number of F90 lines : cat src/*/*.F90 | wc
         Number of tests     : ls tests/*/Input/t*in | wc
         """
-        root = os.path.join(os.path.dirnname(self.filepath), "..", "..")
+        root = os.path.join(os.path.dirnname(self.path), "..", "..")
         src_dir = os.path.join(root, "src")
         if not os.path.isdir(src_dir):
             raise RuntimeError("Cannot find Abinit src directory. Someone moved statistics.txt file!")

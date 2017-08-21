@@ -13,11 +13,12 @@ All changes Copyright The Python Markdown Project
 
 License: [BSD](http://www.opensource.org/licenses/bsd-license.php)
 '''
-
 from __future__ import absolute_import, unicode_literals, print_function
+
 from markdown import Extension
 from markdown.inlinepatterns import Pattern
 from markdown.util import etree
+
 import re
 
 from ..website import get_website
@@ -121,9 +122,11 @@ class WikiLinks(Pattern):
                     url = "FAKE_URL"
                     #raise ValueError(msg) # FIXME
 
-            elif token.startswith("tests/"):
+            elif token.startswith("tests/") or token.startswith("~abinit/tests/"):
                 # Handle [[tests/tutorial/Refs/tbase1_2.out]]
                 #print("In tests/ with token:", token)
+                text = token
+                token = token.replace("~abinit/", "")
                 url = "/" + token
                 # Add popover with test description if input file.
                 if token in website.rpath2test:

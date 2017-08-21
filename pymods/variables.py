@@ -2,6 +2,8 @@
 from __future__ import print_function, division, unicode_literals, absolute_import
 
 import os
+import io
+
 from html2text import html2text
 
 try:
@@ -296,7 +298,7 @@ class Variable(yaml.YAMLObject):
         if self.text is not None:
             md_text = html2text(self.text)
             app(2 * "\n")
-            app(str(md_text))
+            app(md_text)
         else:
             print("WARNING: Variable:", self.name, "with None text")
 
@@ -450,7 +452,7 @@ class VarDatabase(OrderedDict):
 
     @classmethod
     def from_file(cls, yaml_path):
-        with open(yaml_path, 'rt') as f:
+        with io.open(yaml_path, 'rt', encoding="utf-8") as f:
             vlist = yaml.load(f)
 
         new = cls()
@@ -471,7 +473,7 @@ class InputVariables(OrderedDict):
 
         if with_varlist_page:
             # Write page with full list of variables.
-            with open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt") as fh:
+            with io.open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt", encoding="utf-8") as fh:
                 fh.write(self.get_vartabs_html())
                 # Add plotly figures.
                 #for i, varfile in enumerate(["varbse", "vargw"]):
@@ -483,7 +485,7 @@ class InputVariables(OrderedDict):
         for varset in self.all_varset:
             var_list = [v for v in self.values() if v.varset == varset]
             #print(varset, var_list)
-            with open(os.path.join(workdir, varset + ".md"), "wt") as fh:
+            with io.open(os.path.join(workdir, varset + ".md"), "wt", encoding="utf-8") as fh:
                 for var in var_list:
                     fh.write(var.to_markdown())
 

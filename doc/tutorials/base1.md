@@ -2,8 +2,10 @@
 name: base1
 keyword: First (basic) lesson 
 authors: XG, RC
-htmltitle: The H<sub>2</sub> molecule, without convergence studies.
+title: The H<sub>2</sub> molecule, without convergence studies
 ---
+
+# The H<sub>2</sub> molecule, without convergence studies
 
 This lesson aims at showing how to get the following physical properties:
 
@@ -25,9 +27,7 @@ It is supposed that you have some good knowledge of UNIX/Linux.
 
 This lesson should take about 2 hours.
 
-[TOC]
-
-* * *
+---
 
 ### 1.1. The first step (the most important, and the most difficult !):  
 

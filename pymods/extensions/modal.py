@@ -1,8 +1,9 @@
 from __future__ import absolute_import, unicode_literals, print_function
 
 import re
+import io
+
 import os.path
-from codecs import open
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
@@ -116,7 +117,7 @@ def gen_id(n=1, pre="uuid-"):
 def modal_from_filename(path, title=None):
     # https://v4-alpha.getbootstrap.com/components/modal/#examples
     title = path if title is None else title
-    with open(os.path.join(website.root, path)) as fh:
+    with io.open(os.path.join(website.root, path), "rt", encoding="utf-8") as fh:
         text = "<pre>" + escape(fh.read()) + "</pre>"
 
     s = """\
@@ -138,7 +139,7 @@ def modal_from_filename(path, title=None):
       </div>
     </div>
   </div>
-</div>""".format(**locals(), modal_id=gen_id(), modal_label_id=gen_id())
+</div>""".format(modal_id=gen_id(), modal_label_id=gen_id(), **locals())
 
     return s
 
@@ -151,7 +152,7 @@ def modal_with_tabs(paths, title=None):
 
     text_list = []
     for p in apaths:
-        with open(p, "rt") as fh:
+        with io.open(p, "rt", encoding="utf-8") as fh:
             text_list.append("<pre>" + escape(fh.read()) + "</pre>")
     tab_ids = gen_id(n=len(text_list))
 
@@ -172,7 +173,7 @@ def modal_with_tabs(paths, title=None):
                 <div role="tabpanel">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">""".format(
-                            **locals(), modal_id=gen_id(), modal_label_id=gen_id())
+                            modal_id=gen_id(), modal_label_id=gen_id(), **locals())
 
     for i, (path, tid) in enumerate(zip(paths, tab_ids)):
         s += """\
@@ -197,14 +198,14 @@ def editor_panel(path, title=None):
     title = path if title is None else str(title)
 
     path = os.path.join(website.root, path)
-    with open(os.path.join(path)) as fh:
+    with io.open(os.path.join(path), "rt", encoding="utf-8") as fh:
         text = escape(fh.read())
 
     s = """\
 <div class="panel panel-default">
     <div class="panel-heading">{title}</div>
     <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
-</div>""".format(**locals(), editor_id=gen_id())
+</div>""".format(editor_id=gen_id(), **locals())
 
     return s
 
@@ -215,7 +216,7 @@ def editor_tabs(paths, title=None):
 
     text_list = []
     for path in apaths:
-        with open(path, "rt") as fh:
+        with io.open(path, "rt", encoding="utf-8") as fh:
             text_list.append(escape(fh.read()))
     tab_ids = gen_id(n=len(text_list))
     editor_ids = gen_id(n=len(text_list))
