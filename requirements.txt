@@ -1,0 +1,9 @@
+html2text
+mkdocs 
+mkdocs-bootswatch
+python-markdown-math
+pyyaml>=3.11
+#matplotlib>=1.5
+#seaborn
+pytest
+pygments

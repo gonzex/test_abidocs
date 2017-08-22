@@ -72,7 +72,7 @@ class IncludePreprocessor(Preprocessor):
 
         # Add `return to top arrow` after meta section.
         # Based on https://codepen.io/rdallaire/pen/apoyx
-        if len(new_lines) > 100:
+        if len(new_lines) > 50:
             i = 0
             if new_lines[0].startswith("---"):
                 for i, l in enumerate(new_lines[1:]):

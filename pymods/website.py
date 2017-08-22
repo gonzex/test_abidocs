@@ -212,8 +212,25 @@ class Website(object):
 
         # Write files with the description of the input variables.
         workdir = os.path.join(self.root, "input_variables")
+
+        with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
+            for code, vd in self.variables_code.items():
+                fh.write("## All %s variables   \n\n" % code)
+                fh.write(vd.get_vartabs_html())
+                fh.write(2*"\n" + "* * *\n")
+
+        # Add plotly figures.
+        with io.open(os.path.join(workdir, "connections.md"), "wt", encoding="utf-8") as fh:
+            fh.write("---\nplotly: true\n---")
+            for code, vd in self.variables_code.items():
+                for varset in vd.all_varset:
+                    fh.write("## Code %s, varset: %s  \n\n" % (code, varset)
+                    fh.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False)
+                    #fh.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
+                    fh.write(2*"\n" + "* * *\n")
+
         for code, vd in self.variables_code.items():
-            vd.write_markdown_files(workdir, with_varlist_page=code in ("abinit",))
+            vd.write_markdown_files(workdir)
 
         #Input variables, statistics :
         #occurrences in the input files provided with the package

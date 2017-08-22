@@ -2,8 +2,10 @@ site_name: abinit
 site_url: http://www.abinit.org
 site_description: Abinit documentation
 site_author: The Abinit group
+site_favicon: images/favicon.ico
 docs_dir: doc
 
+repo_name: github-abinit
 repo_url: https://github.com/abinit/abinit/
 
 pages:
@@ -16,7 +18,7 @@ pages:
     - Mrgddb: user-guide/help_mrgddb.md
     - Optic: user-guide/help_optic.md
 - Topics:
-    - Complete List: topics/index.md
+    - Topic List: topics/index.md
     - topics/Artificial.md
     - topics/AtomManipulator.md
     - topics/AtomTypes.md
@@ -89,8 +91,8 @@ pages:
     - topics/Wavelets.md
     - topics/xc.md
 - Input Variables:
+    - All Variables: input_variables/index.md
     - Abinit:
-        - All Variables: input_variables/varlist_abinit.md
         - Basic: input_variables/basic.md
         - Bethe-Salpeter: input_variables/bse.md
         - Developers: input_variables/dev.md
@@ -112,6 +114,7 @@ pages:
     - Optic: input_variables/optic.md
     - Aim: input_variables/aim.md
     - Statistics: input_variables/varset_stats.md
+    - Connections: input_variables/connections.md
 - Lessons:
     - Overview: tutorials/welcome.md
     - Base Tutorials: 
@@ -137,7 +140,7 @@ pages:
     - Additional Material: theory/additional_material.md
     - Bibliography: bibliography.md
 - Developers:
-    - How to write docs: developers/README.md
+    - How to write docs: developers/doc_howto.md
 - About:
     - Release Notes: about/release-notes.md
     - Contributing: about/contributing.md
@@ -157,18 +160,31 @@ markdown_extensions:
   #- markdown_newtab
   - mdx_math:
         enable_dollar_delimiter: True
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  #- pymdownx.emoji:
+  #-   emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
   # Abinit extensions.
   - pymods.extensions.wikilinks:
   - pymods.extensions.modal:
         
 #strict: true
 
-copyright: Copyright &copy; 2017 The Abinit Group
-#google_analytics: ['UA-27795084-5', 'abinit.org']
 
-theme: mkdocs
+
+
+#theme: mkdocs
 #theme: readthedocs
-#theme: material   # Nice
+theme: material   # Nice
 #theme: windmill  # Nice nav-bar
 #theme: bootstrap
 #theme: flatly
@@ -195,6 +211,29 @@ extra_javascript:
 extra:
     version: 8.5.4
     # For Material them
-    #logo: "images/logo.svg"
-    #feature:
-    #    tabs: true
+    logo: images/abinit_logo.png
+    feature:
+        tabs: true
+    palette:
+        primary: indigo
+        accent: indigo
+    #font:
+        #fonttext: 'Ubuntu'
+        #fontcode: 'Ubuntu Mono'
+    social:
+        - type: github-alt
+          link: https://github.com/abinit/abinit
+        - type: twitter
+          link: https://twitter.com/hashtag/abinit
+        - type: facebook
+          link: http://www.facebook.com/abinit.org
+        - type: youtube
+          link: https://www.youtube.com/watch?v=gcbfb_Mteo4
+
+copyright: Copyright &copy; 2017 The Abinit Group
+
+# Google Analytics
+#google_analytics:
+#google_analytics: ['UA-27795084-5', 'abinit.org']
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+#  - auto

@@ -1,3 +1,5 @@
+## All abinit variables   
+
 <div>
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">
@@ -101,3 +103,202 @@
 <a href="/input_variables/gw/#zcut" target="_blank">zcut</a> <a href="/input_variables/ffield/#zeemanfield" target="_blank">zeemanfield</a> <a href="/input_variables/internal/#ziontypat" target="_blank">ziontypat</a> <a href="/input_variables/basic/#znucl" target="_blank">znucl</a>
 </div>
 </div> </div>
+
+* * *
+## All aim variables   
+
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#aim-tabs-a" aria-controls="home" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#aim-tabs-c" aria-controls="home" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#aim-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#aim-tabs-f" aria-controls="home" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#aim-tabs-g" aria-controls="home" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#aim-tabs-i" aria-controls="home" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#aim-tabs-l" aria-controls="home" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#aim-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#aim-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#aim-tabs-p" aria-controls="home" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#aim-tabs-r" aria-controls="home" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#aim-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#aim-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#aim-tabs-v" aria-controls="home" role="tab"                         data-toggle="tab">v</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="aim-tabs-a">
+<a href="/input_variables/aim/#atom" target="_blank">atom</a> <a href="/input_variables/aim/#atrad" target="_blank">atrad</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-c">
+<a href="/input_variables/aim/#coff1" target="_blank">coff1</a> <a href="/input_variables/aim/#coff2" target="_blank">coff2</a> <a href="/input_variables/aim/#crit" target="_blank">crit</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-d">
+<a href="/input_variables/aim/#denout" target="_blank">denout</a> <a href="/input_variables/aim/#dltyp" target="_blank">dltyp</a> <a href="/input_variables/aim/#dpclim" target="_blank">dpclim</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-f">
+<a href="/input_variables/aim/#foldep" target="_blank">foldep</a> <a href="/input_variables/aim/#follow" target="_blank">follow</a> <a href="/input_variables/aim/#folstp" target="_blank">folstp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-g">
+<a href="/input_variables/aim/#gpsurf" target="_blank">gpsurf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-i">
+<a href="/input_variables/aim/#inpt" target="_blank">inpt</a> <a href="/input_variables/aim/#irho" target="_blank">irho</a> <a href="/input_variables/aim/#ivol" target="_blank">ivol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-l">
+<a href="/input_variables/aim/#lapout" target="_blank">lapout</a> <a href="/input_variables/aim/#lgrad" target="_blank">lgrad</a> <a href="/input_variables/aim/#lgrad2" target="_blank">lgrad2</a> <a href="/input_variables/aim/#lstep" target="_blank">lstep</a> <a href="/input_variables/aim/#lstep2" target="_blank">lstep2</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-m">
+<a href="/input_variables/aim/#maxatd" target="_blank">maxatd</a> <a href="/input_variables/aim/#maxcpd" target="_blank">maxcpd</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-n">
+<a href="/input_variables/aim/#ngrid" target="_blank">ngrid</a> <a href="/input_variables/aim/#nphi" target="_blank">nphi</a> <a href="/input_variables/aim/#nsa" target="_blank">nsa</a> <a href="/input_variables/aim/#nsb" target="_blank">nsb</a> <a href="/input_variables/aim/#nsc" target="_blank">nsc</a> <a href="/input_variables/aim/#ntheta" target="_blank">ntheta</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-p">
+<a href="/input_variables/aim/#phimax" target="_blank">phimax</a> <a href="/input_variables/aim/#phimin" target="_blank">phimin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-r">
+<a href="/input_variables/aim/#radstp" target="_blank">radstp</a> <a href="/input_variables/aim/#ratmin" target="_blank">ratmin</a> <a href="/input_variables/aim/#rsurdir" target="_blank">rsurdir</a> <a href="/input_variables/aim/#rsurf" target="_blank">rsurf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-s">
+<a href="/input_variables/aim/#scal" target="_blank">scal</a> <a href="/input_variables/aim/#surf" target="_blank">surf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-t">
+<a href="/input_variables/aim/#thetamax" target="_blank">thetamax</a> <a href="/input_variables/aim/#thetamin" target="_blank">thetamin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-v">
+<a href="/input_variables/aim/#vpts" target="_blank">vpts</a>
+</div>
+</div> </div>
+
+* * *
+## All anaddb variables   
+
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#anaddb-tabs-a" aria-controls="home" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#anaddb-tabs-b" aria-controls="home" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#anaddb-tabs-c" aria-controls="home" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#anaddb-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#anaddb-tabs-e" aria-controls="home" role="tab"                         data-toggle="tab">e</a></li>
+<li role="presentation"><a href="#anaddb-tabs-f" aria-controls="home" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#anaddb-tabs-g" aria-controls="home" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#anaddb-tabs-i" aria-controls="home" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#anaddb-tabs-k" aria-controls="home" role="tab"                         data-toggle="tab">k</a></li>
+<li role="presentation"><a href="#anaddb-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#anaddb-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#anaddb-tabs-o" aria-controls="home" role="tab"                         data-toggle="tab">o</a></li>
+<li role="presentation"><a href="#anaddb-tabs-p" aria-controls="home" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#anaddb-tabs-q" aria-controls="home" role="tab"                         data-toggle="tab">q</a></li>
+<li role="presentation"><a href="#anaddb-tabs-r" aria-controls="home" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#anaddb-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#anaddb-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#anaddb-tabs-u" aria-controls="home" role="tab"                         data-toggle="tab">u</a></li>
+<li role="presentation"><a href="#anaddb-tabs-v" aria-controls="home" role="tab"                         data-toggle="tab">v</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="anaddb-tabs-a">
+<a href="/input_variables/anaddb/#a2fsmear" target="_blank">a2fsmear</a> <a href="/input_variables/anaddb/#alphon" target="_blank">alphon</a> <a href="/input_variables/anaddb/#asr" target="_blank">asr</a> <a href="/input_variables/anaddb/#atftol" target="_blank">atftol</a> <a href="/input_variables/anaddb/#atifc" target="_blank">atifc</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-b">
+<a href="/input_variables/anaddb/#band_gap" target="_blank">band_gap</a> <a href="/input_variables/anaddb/#brav" target="_blank">brav</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-c">
+<a href="/input_variables/anaddb/#chneut" target="_blank">chneut</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-d">
+<a href="/input_variables/anaddb/#dieflag" target="_blank">dieflag</a> <a href="/input_variables/anaddb/#dipdip" target="_blank">dipdip</a> <a href="/input_variables/anaddb/#dosdeltae" target="_blank">dosdeltae</a> <a href="/input_variables/anaddb/#dossmear" target="_blank">dossmear</a> <a href="/input_variables/anaddb/#dossum" target="_blank">dossum</a> <a href="/input_variables/anaddb/#dostol" target="_blank">dostol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-e">
+<a href="/input_variables/anaddb/#eivec" target="_blank">eivec</a> <a href="/input_variables/anaddb/#elaflag" target="_blank">elaflag</a> <a href="/input_variables/anaddb/#elph_fermie" target="_blank">elph_fermie</a> <a href="/input_variables/anaddb/#elphflag" target="_blank">elphflag</a> <a href="/input_variables/anaddb/#elphsmear" target="_blank">elphsmear</a> <a href="/input_variables/anaddb/#enunit" target="_blank">enunit</a> <a href="/input_variables/anaddb/#ep_b_max" target="_blank">ep_b_max</a> <a href="/input_variables/anaddb/#ep_b_min" target="_blank">ep_b_min</a> <a href="/input_variables/anaddb/#ep_extrael" target="_blank">ep_extrael</a> <a href="/input_variables/anaddb/#ep_int_gkk" target="_blank">ep_int_gkk</a> <a href="/input_variables/anaddb/#ep_keepbands" target="_blank">ep_keepbands</a> <a href="/input_variables/anaddb/#ep_nqpt" target="_blank">ep_nqpt</a> <a href="/input_variables/anaddb/#ep_nspline" target="_blank">ep_nspline</a> <a href="/input_variables/anaddb/#ep_prt_yambo" target="_blank">ep_prt_yambo</a> <a href="/input_variables/anaddb/#ep_qptlist" target="_blank">ep_qptlist</a> <a href="/input_variables/anaddb/#ep_scalprod" target="_blank">ep_scalprod</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-f">
+<a href="/input_variables/anaddb/#freeze_displ" target="_blank">freeze_displ</a> <a href="/input_variables/anaddb/#frmax" target="_blank">frmax</a> <a href="/input_variables/anaddb/#frmin" target="_blank">frmin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-g">
+<a href="/input_variables/anaddb/#gkqwrite" target="_blank">gkqwrite</a> <a href="/input_variables/anaddb/#gruns_ddbs" target="_blank">gruns_ddbs</a> <a href="/input_variables/anaddb/#gruns_nddbs" target="_blank">gruns_nddbs</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-i">
+<a href="/input_variables/anaddb/#iatfix" target="_blank">iatfix</a> <a href="/input_variables/anaddb/#iatprj_bs" target="_blank">iatprj_bs</a> <a href="/input_variables/anaddb/#ifcana" target="_blank">ifcana</a> <a href="/input_variables/anaddb/#ifcflag" target="_blank">ifcflag</a> <a href="/input_variables/anaddb/#ifcout" target="_blank">ifcout</a> <a href="/input_variables/anaddb/#ifltransport" target="_blank">ifltransport</a> <a href="/input_variables/anaddb/#instrflag" target="_blank">instrflag</a> <a href="/input_variables/anaddb/#istrfix" target="_blank">istrfix</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-k">
+<a href="/input_variables/anaddb/#kptrlatt" target="_blank">kptrlatt</a> <a href="/input_variables/anaddb/#kptrlatt_fine" target="_blank">kptrlatt_fine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-m">
+<a href="/input_variables/anaddb/#mustar" target="_blank">mustar</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-n">
+<a href="/input_variables/anaddb/#natfix" target="_blank">natfix</a> <a href="/input_variables/anaddb/#natifc" target="_blank">natifc</a> <a href="/input_variables/anaddb/#natprj_bs" target="_blank">natprj_bs</a> <a href="/input_variables/anaddb/#nchan" target="_blank">nchan</a> <a href="/input_variables/anaddb/#ndivsm" target="_blank">ndivsm</a> <a href="/input_variables/anaddb/#nfreq" target="_blank">nfreq</a> <a href="/input_variables/anaddb/#ng2qpt" target="_blank">ng2qpt</a> <a href="/input_variables/anaddb/#ngqpt" target="_blank">ngqpt</a> <a href="/input_variables/anaddb/#ngrids" target="_blank">ngrids</a> <a href="/input_variables/anaddb/#nlflag" target="_blank">nlflag</a> <a href="/input_variables/anaddb/#nph1l" target="_blank">nph1l</a> <a href="/input_variables/anaddb/#nph2l" target="_blank">nph2l</a> <a href="/input_variables/anaddb/#nqpath" target="_blank">nqpath</a> <a href="/input_variables/anaddb/#nqshft" target="_blank">nqshft</a> <a href="/input_variables/anaddb/#nsphere" target="_blank">nsphere</a> <a href="/input_variables/anaddb/#nstrfix" target="_blank">nstrfix</a> <a href="/input_variables/anaddb/#ntemper" target="_blank">ntemper</a> <a href="/input_variables/anaddb/#nwchan" target="_blank">nwchan</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-o">
+<a href="/input_variables/anaddb/#outboltztrap" target="_blank">outboltztrap</a> <a href="/input_variables/anaddb/#outscphon" target="_blank">outscphon</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-p">
+<a href="/input_variables/anaddb/#piezoflag" target="_blank">piezoflag</a> <a href="/input_variables/anaddb/#polflag" target="_blank">polflag</a> <a href="/input_variables/anaddb/#prt_ifc" target="_blank">prt_ifc</a> <a href="/input_variables/anaddb/#prtbltztrp" target="_blank">prtbltztrp</a> <a href="/input_variables/anaddb/#prtddb" target="_blank">prtddb</a> <a href="/input_variables/anaddb/#prtdos" target="_blank">prtdos</a> <a href="/input_variables/anaddb/#prtfsurf" target="_blank">prtfsurf</a> <a href="/input_variables/anaddb/#prtmbm" target="_blank">prtmbm</a> <a href="/input_variables/anaddb/#prtnest" target="_blank">prtnest</a> <a href="/input_variables/anaddb/#prtphbands" target="_blank">prtphbands</a> <a href="/input_variables/anaddb/#prtsrlr" target="_blank">prtsrlr</a> <a href="/input_variables/anaddb/#prtvol" target="_blank">prtvol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-q">
+<a href="/input_variables/anaddb/#q1shft" target="_blank">q1shft</a> <a href="/input_variables/anaddb/#q2shft" target="_blank">q2shft</a> <a href="/input_variables/anaddb/#qgrid_type" target="_blank">qgrid_type</a> <a href="/input_variables/anaddb/#qpath" target="_blank">qpath</a> <a href="/input_variables/anaddb/#qph1l" target="_blank">qph1l</a> <a href="/input_variables/anaddb/#qph2l" target="_blank">qph2l</a> <a href="/input_variables/anaddb/#qrefine" target="_blank">qrefine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-r">
+<a href="/input_variables/anaddb/#ramansr" target="_blank">ramansr</a> <a href="/input_variables/anaddb/#relaxat" target="_blank">relaxat</a> <a href="/input_variables/anaddb/#relaxstr" target="_blank">relaxstr</a> <a href="/input_variables/anaddb/#rfmeth" target="_blank">rfmeth</a> <a href="/input_variables/anaddb/#rifcsph" target="_blank">rifcsph</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-s">
+<a href="/input_variables/anaddb/#selectz" target="_blank">selectz</a> <a href="/input_variables/anaddb/#symdynmat" target="_blank">symdynmat</a> <a href="/input_variables/anaddb/#symgkq" target="_blank">symgkq</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-t">
+<a href="/input_variables/anaddb/#targetpol" target="_blank">targetpol</a> <a href="/input_variables/anaddb/#telphint" target="_blank">telphint</a> <a href="/input_variables/anaddb/#temperinc" target="_blank">temperinc</a> <a href="/input_variables/anaddb/#tempermin" target="_blank">tempermin</a> <a href="/input_variables/anaddb/#thmflag" target="_blank">thmflag</a> <a href="/input_variables/anaddb/#thmtol" target="_blank">thmtol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-u">
+<a href="/input_variables/anaddb/#use_k_fine" target="_blank">use_k_fine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-v">
+<a href="/input_variables/anaddb/#vs_qrad_tolkms" target="_blank">vs_qrad_tolkms</a>
+</div>
+</div> </div>
+
+* * *
+## All optic variables   
+
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#optic-tabs-b" aria-controls="home" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#optic-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#optic-tabs-l" aria-controls="home" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#optic-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#optic-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#optic-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#optic-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#optic-tabs-w" aria-controls="home" role="tab"                         data-toggle="tab">w</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="optic-tabs-b">
+<a href="/input_variables/optic/#broadening" target="_blank">broadening</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-d">
+<a href="/input_variables/optic/#ddkfile" target="_blank">ddkfile</a> <a href="/input_variables/optic/#domega" target="_blank">domega</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-l">
+<a href="/input_variables/optic/#lin_comp" target="_blank">lin_comp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-m">
+<a href="/input_variables/optic/#maxomega" target="_blank">maxomega</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-n">
+<a href="/input_variables/optic/#nonlin_comp" target="_blank">nonlin_comp</a> <a href="/input_variables/optic/#num_lin_comp" target="_blank">num_lin_comp</a> <a href="/input_variables/optic/#num_nonlin_comp" target="_blank">num_nonlin_comp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-s">
+<a href="/input_variables/optic/#scissor" target="_blank">scissor</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-t">
+<a href="/input_variables/optic/#tolerance" target="_blank">tolerance</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-w">
+<a href="/input_variables/optic/#wfkfile" target="_blank">wfkfile</a>
+</div>
+</div> </div>
+
+* * *

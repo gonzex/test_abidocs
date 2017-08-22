@@ -4,24 +4,32 @@
     {{ super() }}
     <!-- <script src="{{ base_url }}/js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN -->
+    <!-- Jquery from Google CDN 
+    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS 
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
+
+    <!-- Optional theme
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
+
+    <!-- Latest compiled and minified JavaScript
+    -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
@@ -58,14 +66,18 @@
     </script>
     -->
 
-    {% if page.meta and page.meta.plotly %}
-        <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js">
-        </script> 
-    {% endif %}
-
 {% endblock %}
 
-<!--
-MkDocs version : {{ mkdocs_version }}
-Build Date UTC : {{ build_date_utc }}
--->
+{%- block footer %}
+<hr>
+{% if config.extra.version %}
+    <center>Abinit version {{ config.extra.version }}</center>
+{% endif %}
+{% if config.copyright and page.meta.authors %}
+<center>{{ config.copyright }} ({{ page.meta.authors | join(", ") }})</center>
+{% elif config.copyright %}
+    <center>{{ config.copyright }}</center>
+{% endif %}
+
+<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+{%- endblock %}

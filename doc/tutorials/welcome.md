@@ -1,7 +1,3 @@
----
-template: nosidebar.html
----
-
 The lessons of this tutorial are aimed at teaching the use of ABINIT, in the
 UNIX/Linux OS and its variants (Mac OS X, AIX ...). They might be used for
 other operating systems, but the commands have to be adapted.

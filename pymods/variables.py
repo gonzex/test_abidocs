@@ -469,16 +469,16 @@ class VarDatabase(OrderedDict):
 
 class InputVariables(OrderedDict):
 
-    def write_markdown_files(self, workdir, with_varlist_page=True):
+    def write_markdown_files(self, workdir):
 
-        if with_varlist_page:
+        #if with_varlist_page:
             # Write page with full list of variables.
-            with io.open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt", encoding="utf-8") as fh:
-                fh.write(self.get_vartabs_html())
+            #with io.open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt", encoding="utf-8") as fh:
+                #fh.write(self.get_vartabs_html())
                 # Add plotly figures.
-                #for i, varfile in enumerate(["varbse", "vargw"]):
-                #    fh.write(self.get_plotly_networkx(varfile=varfile, include_plotlyjs=False)
-                #    fh.write(self.get_plotly_networkx_3d(varfile=varfile, include_plotlyjs=False))
+                #for i, varset in enumerate(["varbse", "vargw"]):
+                #    fh.write(self.get_plotly_networkx(varset=varset, include_plotlyjs=False)
+                #    fh.write(self.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
 
         # Build markdown page for the different sets.
         print("Generating markdown files with input variables of code: `%s`..." % self.codename)
