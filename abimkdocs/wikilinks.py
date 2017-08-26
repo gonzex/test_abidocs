@@ -17,11 +17,10 @@ from __future__ import absolute_import, unicode_literals, print_function
 
 from markdown import Extension
 from markdown.inlinepatterns import Pattern
-from markdown.util import etree
 
 import re
 
-from ..website import get_website
+from abimkdocs.website import get_website
 website = get_website()
 
 
@@ -58,10 +57,7 @@ class WikiLinkExtension(Extension):
         self.md = md
 
         # append to end of inline patterns
-        #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
-        #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
-        WIKILINK_RE = r'\[\[([^\[]+)\]\]'
-        wikilinkPattern = WikiLinks(WIKILINK_RE, self.getConfigs())
+        wikilinkPattern = WikiLinks(website.WIKILINK_RE, self.getConfigs())
         wikilinkPattern.md = md
         #md.inlinePatterns.add('wikilink', wikilinkPattern, "<not_strong")
         # This needed to treat [[ngfft]](1:3) before []() markdown syntax

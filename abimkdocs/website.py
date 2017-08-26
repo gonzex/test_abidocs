@@ -4,6 +4,7 @@ from __future__ import print_function, division, unicode_literals, absolute_impo
 import sys
 import os
 import io
+import time
 import re
 import yaml
 import markdown
@@ -12,9 +13,33 @@ from collections import OrderedDict, defaultdict
 from itertools import groupby
 from html2text import html2text
 from markdown.util import etree
-from pymods.variables import Variable
+from abimkdocs.variables import Variable
 
 _WEBSITE = None
+
+def escape(text):
+    # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
+    # html.escape() differs from cgi.escape() by its defaults to quote=True
+    #return text
+    try:
+        import html
+        return html.escape(text)
+    except ImportError:
+        import cgi
+        return cgi.escape(text)
+
+
+def gen_id(n=1, pre="uuid-"):
+    # The HTML4 spec says:
+    # ID and NAME tokens must begin with a letter ([A-Za-z]) and may be followed by any number of letters,
+    # digits ([0-9]), hyphens ("-"), underscores ("_"), colons (":"), and periods (".").
+    import uuid
+    if n == 1:
+        return pre + str(uuid.uuid4())
+    elif n > 1:
+        return [pre + str(uuid.uuid4()) for i in range(n)]
+    else:
+        raise ValueError("n must be > 0 but got %s" % str(n))
 
 
 def splitall(path):
@@ -111,8 +136,6 @@ class MyEntry(Entry):
 
     def get_bibtex_linkmodal(self):
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
-        # TODO
-        from pymods.extensions.modal import gen_id, escape
         text = "<pre>" + escape(self.to_bibtex()) + "</pre>"
         modal_id = gen_id()
 
@@ -138,7 +161,12 @@ class MyEntry(Entry):
 
 class Website(object):
 
+    #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
+    #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
+    WIKILINK_RE = r'\[\[([^\[]+)\]\]'
+
     def __init__(self, root, verbose=0):
+        start = time.time()
         self.root = os.path.abspath(root)
         self.verbose = verbose
 
@@ -147,7 +175,7 @@ class Website(object):
             self.config = yaml.load(fh)
 
         # Get database with input variables
-        from pymods.variables import get_variables_code
+        from abimkdocs.variables import get_variables_code
         self.variables_code = get_variables_code()
 
         # Get bibtex references and cast to MyEntry instance.
@@ -204,12 +232,15 @@ class Website(object):
                 #ratio_all
                 #ratio_in_tuto
 
+        print("Initial website generation completed in %.2f [s]" % (time.time() - start))
+
     #def __str__(self):
     #    lines = []
     #    app = lines.append
     #    return "\n".join(lines)
 
     def generate_markdown_files(self):
+        start = time.time()
 
         # Write files with the description of the input variables.
         workdir = os.path.join(self.root, "input_variables")
@@ -391,7 +422,10 @@ authors: {}
                 lines.append("* * *")
             fh.write("\n".join(lines))
 
+        print("Markdown files generation completed in %.2f [s]" % (time.time() - start))
+
     def analyze_pages(self):
+        start = time.time()
         print("Analyzing markdown pages ...")
         self.md_pages, self.html_pages = [], []
         for root, dirs, files in os.walk(self.root):
@@ -403,6 +437,8 @@ authors: {}
                     self.md_pages.append(MarkdownPage(path, self))
                 elif f.endswith(".html") or f.endswith(".htm"):
                     self.html_pages.append(HtmlPage(path, self))
+
+        print("Completed in %.2f [s]" % (time.time() - start))
 
     def get_citation_aelement(self, key, text=None, html_class=None):
         from markdown.util import etree
@@ -426,6 +462,50 @@ authors: {}
         """ Slugify a string, to make it URL friendly. """
         from markdown.extensions.toc import slugify
         return slugify(value, separator="-")
+
+    def preprocess_mdlines(self, lines):
+        INC_SYNTAX = re.compile(r'^\{%\s*(.+?)\s*%\}')
+        new_lines = []
+        for line in lines:
+            m = INC_SYNTAX.search(line)
+            if not m:
+                new_lines.append(line)
+            else:
+                args = m.group(1).split()
+                action = args.pop(0)
+                if self.verbose:
+                    print("Triggering action:", action, "with args:", str(args))
+                if action == "editor":
+                    if len(args) > 1:
+                        new_lines.extend(self.editor_tabs(args, title=None).splitlines())
+                    else:
+                        new_lines.extend(self.editor_panel(args[0], title=None).splitlines())
+                elif action == "modal":
+                    if len(args) > 1:
+                        new_lines.extend(self.modal_with_tabs(args).splitlines())
+                    else:
+                        new_lines.extend(self.modal_from_filename(args[0]).splitlines())
+
+                elif action == "cite":
+                    #new_lines.extend([str(website.get_citation_aelement(arg)) for arg in args])
+                    new_lines.extend(["[[" + arg + "]]" for arg in args])
+
+                else:
+                    raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
+
+        # Add `return to top arrow` after meta section.
+        # Based on https://codepen.io/rdallaire/pen/apoyx
+        if len(new_lines) > 50:
+            i = 0
+            if new_lines[0].startswith("---"):
+                for i, l in enumerate(new_lines[1:]):
+                    if l.startswith("---"):
+                        i += 1
+                        break
+            new_lines.insert(i, """<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
+
+        return new_lines
 
     @staticmethod
     def _parse_wikilink(token):
@@ -572,6 +652,7 @@ authors: {}
         return a
 
     def validate_html_build(self):
+        print("Validating website build")
         # https://bitbucket.org/nmb10/py_w3c
         # import HTML validator and create validator instance
         from py_w3c.validators.html.validator import HTMLValidator
@@ -599,6 +680,135 @@ authors: {}
                 #with io.open(path, "rt", encoding="utf-8") as fh:
                 #    document, errors = tidy_document(fh.read())
                 #    #print(errors)
+
+    def modal_from_filename(self, path, title=None):
+        # https://v4-alpha.getbootstrap.com/components/modal/#examples
+        title = path if title is None else title
+        with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
+            text = "<pre>" + escape(fh.read()) + "</pre>"
+
+        s = """\
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
+  View {path}
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="{modal_label_id}">{title}</h4>
+      </div>
+      <div class="modal-body">
+        {text}
+      </div>
+    </div>
+  </div>
+</div>""".format(modal_id=gen_id(), modal_label_id=gen_id(), **locals())
+
+        return s
+
+
+    def modal_with_tabs(self, paths, title=None):
+        # Based on http://jsfiddle.net/n__o/19rhfnqm/
+        title = title if title else ""
+        apaths = [os.path.join(self.root, p) for p in paths]
+        button_label = "View " + ", ".join(paths)
+
+        text_list = []
+        for p in apaths:
+            with io.open(p, "rt", encoding="utf-8") as fh:
+                text_list.append("<pre>" + escape(fh.read()) + "</pre>")
+        tab_ids = gen_id(n=len(text_list))
+
+        s = """\
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
+
+<!-- Modal -->
+<div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                 <h4 class="modal-title" id="{modal_label_id}">{title}</h4>
+            </div>
+            <div class="modal-body">
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">""".format(
+                            modal_id=gen_id(), modal_label_id=gen_id(), **locals())
+
+        for i, (path, tid) in enumerate(zip(paths, tab_ids)):
+            s += """\
+                    <li role="presentation" class="{li_class}">
+                    <a href="{href}" aria-controls="uploadTab" role="tab" data-toggle="tab">{path}</a>
+                    </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+
+        s +=  """</ul>
+                 <!-- Tab panes -->
+                 <div class="tab-content">"""
+
+        for i, (text, tid) in enumerate(zip(text_list, tab_ids)):
+            s += """<div role="tabpanel" class="tab-pane {active}" id="{tid}">{text}</div>""".format(
+                    active="active" if i == 0 else " ", tid=tid, text=text)
+
+        s += 6 * " </div> "
+
+        return s
+
+    def editor_panel(self, path, title=None):
+        title = path if title is None else str(title)
+
+        path = os.path.join(self.root, path)
+        with io.open(os.path.join(path), "rt", encoding="utf-8") as fh:
+            text = escape(fh.read())
+
+        s = """\
+<div class="panel panel-default">
+    <div class="panel-heading">{title}</div>
+    <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
+</div>""".format(editor_id=gen_id(), **locals())
+
+        return s
+
+    def editor_tabs(self, paths, title=None):
+        title = "EditorTabs" if title is None else str(title)
+        apaths = [os.path.join(self.root, p) for p in paths]
+
+        text_list = []
+        for path in apaths:
+            with io.open(path, "rt", encoding="utf-8") as fh:
+                text_list.append(escape(fh.read()))
+        tab_ids = gen_id(n=len(text_list))
+        editor_ids = gen_id(n=len(text_list))
+
+        # https://codepen.io/wizly/pen/BlKxo?editors=1000
+        s = """\
+<div><{title}</div>
+<div id="exTab1">
+<!-- Nav tabs -->
+<ul class="nav nav-pills nav-justified">""".format(title=title)
+
+        for i, (path, tid) in enumerate(zip(paths, tab_ids)):
+            s += """\
+                    <li class="{li_class}">
+                    <a href="{href}" data-toggle="pill">{path}</a>
+                    </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+        s +=  """</ul>
+                 <!-- Tab panes -->
+                 <div class="tab-content clearfix">"""
+
+        for i, (text, tid, editor_id) in enumerate(zip(text_list, tab_ids, editor_ids)):
+            s += """<div class="tab-pane {active}" id="{tid}">
+                <div id="{editor_id}" class="editor" hidden>{text}</div></div>""".format(
+                    active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
+
+        s +=  2 * "</div> "
+        return s
 
 
 class Page(object):
@@ -634,8 +844,7 @@ class MarkdownPage(Page):
         with io.open(self.path, "rt", encoding="utf-8") as fh:
            string = fh.read()
 
-        WIKILINK_RE = r'\[\[([^\[]+)\]\]'
-        for m in re.finditer(WIKILINK_RE, string):
+        for m in re.finditer(website.WIKILINK_RE, string):
             token = m.group(1).strip()
             if token in self.website.bib_data.entries:
                 self.wiki_links.append(token)

@@ -187,8 +187,8 @@ markdown_extensions:
   #- pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
   # Abinit extensions.
-  - pymods.extensions.wikilinks:
-  - pymods.extensions.modal:
+  - abimkdocs.wikilinks:
+  - abimkdocs.modal:
         
 #strict: true
 

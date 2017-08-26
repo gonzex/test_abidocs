@@ -4,7 +4,6 @@ from __future__ import print_function, division, unicode_literals, absolute_impo
 
 import sys
 import os
-import time
 import mkdocs.__main__
 
 # We don't install with setup.py hence we have to add the directory [...]/abinit/tests to $PYTHONPATH
@@ -20,20 +19,15 @@ def main():
     if "--help" in sys.argv or "-h" in sys.argv:
         return mkdocs.__main__.cli()
 
-    from pymods.website import build_website
+    from abimkdocs.website import build_website
     if len(sys.argv) > 1 and ("--help" not in sys.argv or "-h" not in sys.argv):
-        start = time.time()
         website = build_website("./doc", verbose=verbose)
-        print("Initial website generation completed in %.2f [s]" % (time.time() - start))
 
     if len(sys.argv) > 1 and sys.argv[1] == "validate":
-        print("Validating website build")
         return website.validate_html_build()
 
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
-        start = time.time()
         website.generate_markdown_files()
-        print("Markdown files generation completed in %.2f [s]" % (time.time() - start))
         print(website)
 
     if "--dry-run" in sys.argv: return 0
