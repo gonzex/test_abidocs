@@ -23,12 +23,12 @@ def main():
     if len(sys.argv) > 1 and ("--help" not in sys.argv or "-h" not in sys.argv):
         website = build_website("./doc", verbose=verbose)
 
-    if len(sys.argv) > 1 and sys.argv[1] == "validate":
-        return website.validate_html_build()
-
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
         website.generate_markdown_files()
         print(website)
+
+    if len(sys.argv) > 1 and sys.argv[1] == "validate":
+        return website.validate_html_build()
 
     if "--dry-run" in sys.argv: return 0
     return mkdocs.__main__.cli()

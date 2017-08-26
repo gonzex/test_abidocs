@@ -12,15 +12,14 @@ import markdown
 from collections import OrderedDict, defaultdict
 from itertools import groupby
 from html2text import html2text
+from pybtex.database import Entry, BibliographyData, parse_file
 from markdown.util import etree
 from abimkdocs.variables import Variable
 
-_WEBSITE = None
 
 def escape(text):
     # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
     # html.escape() differs from cgi.escape() by its defaults to quote=True
-    #return text
     try:
         import html
         return html.escape(text)
@@ -59,6 +58,8 @@ def splitall(path):
     return allparts
 
 
+_WEBSITE = None
+
 def build_website(root, verbose=0):
     global _WEBSITE
     assert _WEBSITE is None
@@ -72,13 +73,11 @@ def get_website():
     return _WEBSITE
 
 
-from pybtex.database import Entry, BibliographyData, parse_file
 class MyEntry(Entry):
     """https://bitbucket.org/pybtex-devs/pybtex/"""
 
     def to_markdown(self):
         # Entry('article', fields=[('Title', 'Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra'), ('Year', '2016'), ('volume', '203C'), ('pages', '83-93'), ('Journal', 'Comput. Phys. Comm.'), ('Doi', '10.1016/j.cpc.2016.02.008'), ('Owner', 'yannick'), ('Timestamp', '2015.08.27')], persons=OrderedCaseInsensitiveDict([('Author', [Person('Gillet, Y.'), Person('Giantomassi, M.'), Person('Gonze, X.')])]))
-
         # Entry('book', fields=[('title', 'Electrons and phonons'), ('publisher', 'Oxford University Press'), ('year', '1960')], persons=OrderedCaseInsensitiveDict([('author', [Person('Ziman, J. M.')])]))
 
         fields = self.fields
@@ -121,7 +120,7 @@ class MyEntry(Entry):
             if not doi.startswith(doi_root): doi = doi_root + doi
             s += 'DOI: <a href="{doi}" target="_blank">{doi}</a>'.format(doi=doi)
 
-        # Add modal with bibtex entry.
+        # Add modal window with bibtex entry.
         link, modal = self.get_bibtex_linkmodal()
         s += link + modal
 
@@ -137,7 +136,8 @@ class MyEntry(Entry):
     def get_bibtex_linkmodal(self):
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
         text = "<pre>" + escape(self.to_bibtex()) + "</pre>"
-        modal_id = gen_id()
+        # Construct ids from self.key as they are unique.
+        modal_id, modal_label_id = "modal-id-%s" % self.key, "modal-label-id-%s" % self.key
 
         link = """<!-- Links -->
 <a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
@@ -154,7 +154,7 @@ class MyEntry(Entry):
       <div class="modal-body"> {text} </div>
     </div>
   </div>
-</div>""".format(modal_label_id=gen_id(), **locals())
+</div>""".format(**locals())
 
         return link, modal
 
@@ -174,7 +174,7 @@ class Website(object):
         with io.open(os.path.join(self.root, "../", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
             self.config = yaml.load(fh)
 
-        # Get database with input variables
+        # Build database with Abinit input variables
         from abimkdocs.variables import get_variables_code
         self.variables_code = get_variables_code()
 
@@ -183,7 +183,7 @@ class Website(object):
         for entry in self.bib_data.entries.values():
             entry.__class__ = MyEntry
 
-        # Get code statistics
+        # Get code statistics.
         self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
         self.abinit_stats.json_dump(os.path.join(self.root, "data", "statistics.json"))
 
@@ -425,8 +425,8 @@ authors: {}
         print("Markdown files generation completed in %.2f [s]" % (time.time() - start))
 
     def analyze_pages(self):
-        start = time.time()
         print("Analyzing markdown pages ...")
+        start = time.time()
         self.md_pages, self.html_pages = [], []
         for root, dirs, files in os.walk(self.root):
             if root in ("site", "tests"): continue
@@ -441,12 +441,11 @@ authors: {}
         print("Completed in %.2f [s]" % (time.time() - start))
 
     def get_citation_aelement(self, key, text=None, html_class=None):
-        from markdown.util import etree
-        a = etree.Element('a')
         # Handle citation
         ref = self.bib_data.entries[key]
         url = "/bibliography/#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
+        a = etree.Element('a')
         a.set("data-toggle", "popover")
         a.set("title", ref.fields["title"])
         a.set("data-placement", "auto bottom")

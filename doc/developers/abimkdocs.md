@@ -51,10 +51,11 @@ $ pip install -r requirements.txt
 
 MkDocs comes with a built-in dev-server that lets you preview your documentation as you work on it. 
 Make sure you are in `~abinit/docs`, and then start *our customized* server 
-by running the abimkdocs serve command:
+by running the `mksite.py` serve command:
 
 ```console
-$ abimkdocs serve
+$ cd ~abinit/docs
+$ ./mksite.py serve
 Regenerating database...
 Saving database to /Users/gmatteo/git_repos/abidocs/doc/tests/test_suite.cpkl
 Initial website generation completed in 9.17 [s]
@@ -71,7 +72,7 @@ INFO    -  Cleaning site directory
 Open up `http://127.0.0.1:8000/` in your browser, and you'll see the default home page being displayed.
 
 !!! tip
-    Use `abimkdocs serve --dirtyreload` to enable the live reloading in the development server, 
+    Use `mksite.py serve --dirtyreload` to enable the live reloading in the development server, 
     but only re-build files that have changed. 
     This option is designed for site development purposes and is **much faster** than the default live reloading.
 
@@ -84,7 +85,7 @@ and these files under git control).
 
 List of variables, lessons of the tutorial, help files, ABINIT topics, bibliography, theory documents 
 are all important documentation files, posted on the Web, to help the users. 
-The `~abinit/doc/abimkdocs` script generates most of these files by converting markdown files to HTML.
+The `~abinit/doc/mksite.py` script generates most of these files by converting markdown files to HTML.
 
 This script:
 
@@ -147,7 +148,7 @@ It is a standard bibtex file.
 Note that the ID must be of the form "FirstauthornameYEAR", e.g. "Amadon2008" 
 (start with an uppercase letter, then lower case, then four-digit year). 
 Possibly, a letter might be added in case of ambiguity: e.g. there exists also `Amadon2008a`
-Then, build the HTML using `abimkdocs`.
+Then, build the HTML using `mksite.py`.
 
 ## Topics: how to add/modify?
 
@@ -192,7 +193,7 @@ The different components are used by the script generate_doc.py as follows:
 * `tutorials`: see above
 * `end`: final tags, take the default
 
-Then, build the HTML using `abimkdocs`.
+Then, build the HTML using `mksite.py`.
 
 ## Lessons of the tutorial: how to add/modify?
 
@@ -217,7 +218,7 @@ The "text" lines in lesson_NAME.yml must be indented by at least two blanks.
 In order to add a new lesson, introduce a new section in lessons.yml, and create a new 
 ~abinit/doc/topics/origin_files/lesson_NAME.yml .
 
-Then, build the HTML using `abimkdocs`.
+Then, build the HTML using `mksite.py`.
 
 ## Help files: how to add/modify?
 
