@@ -6,11 +6,12 @@
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -29,10 +30,11 @@ Index of the investigated atom.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -52,7 +54,8 @@ two times)
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.98  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -72,7 +75,8 @@ See the input variable [[ratmin@aim]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.95  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -92,11 +96,12 @@ See the input variable [[ratmin@aim]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -136,7 +141,8 @@ considered is limited by distance cutoff (variable [[maxatd@aim]])
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -163,7 +169,8 @@ density (see [[dltyp@aim]]).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -188,9 +195,10 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-2  
-Test list:
 
-- v4:  [[tests/v4/Input/t33.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t33.in]]
+
 
 
 
@@ -214,7 +222,8 @@ density, increase the default value to 5.d-2, let's say.
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -234,11 +243,12 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -258,7 +268,8 @@ specified in the input variable [[aim:foldep]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.5  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -278,11 +289,12 @@ The first step for following the gradient path.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -305,11 +317,12 @@ calculated Bader surface.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 100  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -329,11 +342,12 @@ sensitive).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -355,9 +369,10 @@ Drives the integration of the charge of the Bader atom.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -379,7 +394,8 @@ Drives the integration of the volume of the Bader atom.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -406,10 +422,11 @@ the core density (see [[aim:dltyp]]).
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-12  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -435,10 +452,11 @@ searching procedure continues with the next seed.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -458,10 +476,11 @@ Determines the criterion for deciding that a CP has been found. See
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-10  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -481,10 +500,11 @@ for more details.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -504,11 +524,12 @@ Determines the criterion for deciding that a CP has been found. See
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -532,11 +553,12 @@ the desired atoms.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5.0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -559,7 +581,8 @@ the critical points.
 *Variable type:* integer  
 *Dimensions:* (2)  
 *Default value:* 2*30  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -580,11 +603,12 @@ governed by [[aim:denout]] and [[aim:lapout]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 48  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -608,10 +632,11 @@ pi/2 (for symmetry reasons), the recommended value is 20.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -644,10 +669,11 @@ each primitive direction. This supercell is build as follows :
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -680,10 +706,11 @@ each primitive direction. This supercell is build as follows :
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -716,11 +743,12 @@ each primitive direction. This supercell is build as follows :
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 32  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -743,10 +771,11 @@ is pi/2 (for symmetry reasons), the recommended value is 20.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2.0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -767,7 +796,8 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -789,10 +819,11 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -811,10 +842,11 @@ The length of the first step in the search of the exact Bader radius.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -841,7 +873,8 @@ is used instead.
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* 2*0.0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -862,7 +895,8 @@ theta,phi) along which the radius of the Bader surface is to be determined.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -886,7 +920,8 @@ specified in the input variable [[aim:rsurdir]]
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 1.0 1.0 1.0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -900,11 +935,12 @@ Test list:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-- v6:  [[tests/v6/Input/t19.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v6:  [[tests/v6/Input/t19.in]]
+
 
 
 
@@ -926,10 +962,11 @@ Drive the computation of the full Bader surface.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* pi  
-Test list:
 
-- v3:  [[tests/v3/Input/t57.in]]
-- v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t57.in]]
+    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+
 
 
 
@@ -950,7 +987,8 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -973,7 +1011,8 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* (6)  
 *commentdims:* 6 for 1D, 9 for 2D  
 *Default value:* 6*0.0  
-Test list:
+
+??? note "Test list"
 
 
 

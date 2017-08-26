@@ -1,6 +1,8 @@
 html2text
 mkdocs 
 mkdocs-bootswatch
+mkdocs-material
+pymdown-extensions
 python-markdown-math
 pyyaml>=3.11
 #matplotlib>=1.5

@@ -7,6 +7,15 @@
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+    - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t26.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
+
+
+
+
 
 
 This input variable is used only when running ABINIT in parallel and for
@@ -58,11 +67,12 @@ is. After having printed out the weights, the code stops.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]]
-- paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
-- tutoparal:  [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]]
+    - paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+
 
 
 
@@ -103,9 +113,10 @@ time spent in FFTs is divided by two).
 *Dimensions:* (5)  
 *Default value:* [-1, -1, -1, -1, -1]  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
-Test list:
 
-- gpu:  [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+
 
 
 
@@ -146,9 +157,10 @@ GPU card are numbered starting from 0; to get the GPU devices list, type
 *Dimensions:* scalar  
 *Default value:* 2000000  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
-Test list:
 
-- gpu:  [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+
 
 
 
@@ -180,6 +192,21 @@ of the eigenstates.
 *Comment:* The default value has been changed in v8. From 1 to 2   
 *Only relevant if:* [[optdriver]] in [3,4]  
 
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 [[gwpara]] is used to choose between the two different parallelization levels
@@ -205,6 +232,13 @@ run, irrespectively of the number of CPUs used.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t01.in]], [[tests/mpiio/Input/t01.in]], [[tests/mpiio/Input/t01.in]]
+    - paral:  [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+
+
+
 
 
 
@@ -238,9 +272,10 @@ machine, the input wavefunction file must be available on all nodes if
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutoparal:  [[tests/tutoparal/Input/tgspw_01.in]]
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in]]
+
 
 
 
@@ -263,9 +298,10 @@ the code stops.
 *Dimensions:* scalar  
 *Default value:* 1000000  
 *Only relevant if:* [[optdriver]]==1 and [[paral_kgb]]==1 (Ground-state calculations with LOBPCG algorithm)  
-Test list:
 
-- paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t30.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t30.in]]
+
 
 
 
@@ -295,6 +331,15 @@ the [[autoparal]] input keyword.
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t21.in]], [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t42.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t51.in]], [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t21.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t28.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t41.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t77.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in]], [[tests/tutoparal/Input/tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
+
+
 
 
 Relevant only for the band/FFT parallelisation (see the [[paral_kgb]] input
@@ -321,6 +366,15 @@ the [[autoparal]] input keyword.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t21.in]], [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t42.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t51.in]], [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t21.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t41.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t77.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in]], [[tests/tutoparal/Input/tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
+
+
 
 
 
@@ -350,11 +404,12 @@ the [[autoparal]] input keyword.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t53.in]]
-- paral:  [[tests/paral/Input/t93.in]], [[tests/paral/Input/t94.in]]
-- v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]], [[tests/v7/Input/t70.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t53.in]]
+    - paral:  [[tests/paral/Input/t93.in]], [[tests/paral/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]], [[tests/v7/Input/t70.in]]
+
 
 
 
@@ -381,9 +436,10 @@ have the better load-balancing and efficiency.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
+
 
 
 
@@ -412,6 +468,16 @@ additional information on the use of k-point/band/FFT parallelisation. _
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t53.in]]
+    - mpiio:  [[tests/mpiio/Input/t21.in]], [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t42.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t51.in]], [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t21.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t93.in]], [[tests/paral/Input/t94.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in]]
+    - v7:  [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]], [[tests/v7/Input/t70.in]]
+
+
+
 
 
 
@@ -442,9 +508,10 @@ the [[autoparal]] input keyword.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_rf]]==1  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+
 
 
 
@@ -468,10 +535,11 @@ dataset.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t28.in]]
-- paral:  [[tests/paral/Input/t28.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t28.in]]
+    - paral:  [[tests/paral/Input/t28.in]]
+
 
 
 
@@ -501,13 +569,14 @@ information on the use of band/FFT/k-point parallelisation._
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t53.in]]
-- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]]
-- paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
-- v5:  [[tests/v5/Input/t06.in]]
-- v7:  [[tests/v7/Input/t32.in]], [[tests/v7/Input/t70.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t53.in]]
+    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]]
+    - paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+    - v5:  [[tests/v5/Input/t06.in]]
+    - v7:  [[tests/v7/Input/t32.in]], [[tests/v7/Input/t70.in]]
+
 
 
 
@@ -529,6 +598,18 @@ Compatible with ground-state calculations and response function calculations
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t02.in]]
+    - mpiio:  [[tests/mpiio/Input/t01.in]], [[tests/mpiio/Input/t01.in]], [[tests/mpiio/Input/t01.in]], [[tests/mpiio/Input/t21.in]], [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t42.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t51.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t01.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t02.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t21.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]], [[tests/paral/Input/t28.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t41.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t77.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in]], [[tests/tutoparal/Input/tgspw_01.in]], [[tests/tutoparal/Input/tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
+    - v5:  [[tests/v5/Input/t76.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
 
 
 
@@ -573,9 +654,10 @@ be optimal. To optimize the repartition use:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
+
 
 
 
@@ -606,9 +688,10 @@ stops.
 *Dimensions:* scalar  
 *Default value:* 40%  
 *Only relevant if:* [[paral_kgb]]==1  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t26.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t26.in]]
+
 
 
 
@@ -633,10 +716,11 @@ _pw_unbal_thresh_ %.
 *Default value:* 1 if [[optdriver]]==0 and [[CUDA]],
 0 otherwise.
   
-Test list:
 
-- gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
-- v5:  [[tests/v5/Input/t75.in]]
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - v5:  [[tests/v5/Input/t75.in]]
+
 
 
 
@@ -665,10 +749,11 @@ MAGMA is not used, ABINIT performances on GPUs can be poor.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t27.in]]
-- paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t27.in]]
+    - paral:  [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t29.in]]
+
 
 
 

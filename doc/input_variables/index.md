@@ -1,32 +1,32 @@
-## All abinit variables   
+## **abinit** variables   
 
 <div>
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">
-<li role="presentation" class="active"><a href="#abinit-tabs-a" aria-controls="home" role="tab"                         data-toggle="tab">a</a></li>
-<li role="presentation"><a href="#abinit-tabs-b" aria-controls="home" role="tab"                         data-toggle="tab">b</a></li>
-<li role="presentation"><a href="#abinit-tabs-c" aria-controls="home" role="tab"                         data-toggle="tab">c</a></li>
-<li role="presentation"><a href="#abinit-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
-<li role="presentation"><a href="#abinit-tabs-e" aria-controls="home" role="tab"                         data-toggle="tab">e</a></li>
-<li role="presentation"><a href="#abinit-tabs-f" aria-controls="home" role="tab"                         data-toggle="tab">f</a></li>
-<li role="presentation"><a href="#abinit-tabs-g" aria-controls="home" role="tab"                         data-toggle="tab">g</a></li>
-<li role="presentation"><a href="#abinit-tabs-i" aria-controls="home" role="tab"                         data-toggle="tab">i</a></li>
-<li role="presentation"><a href="#abinit-tabs-j" aria-controls="home" role="tab"                         data-toggle="tab">j</a></li>
-<li role="presentation"><a href="#abinit-tabs-k" aria-controls="home" role="tab"                         data-toggle="tab">k</a></li>
-<li role="presentation"><a href="#abinit-tabs-l" aria-controls="home" role="tab"                         data-toggle="tab">l</a></li>
-<li role="presentation"><a href="#abinit-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
-<li role="presentation"><a href="#abinit-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
-<li role="presentation"><a href="#abinit-tabs-o" aria-controls="home" role="tab"                         data-toggle="tab">o</a></li>
-<li role="presentation"><a href="#abinit-tabs-p" aria-controls="home" role="tab"                         data-toggle="tab">p</a></li>
-<li role="presentation"><a href="#abinit-tabs-q" aria-controls="home" role="tab"                         data-toggle="tab">q</a></li>
-<li role="presentation"><a href="#abinit-tabs-r" aria-controls="home" role="tab"                         data-toggle="tab">r</a></li>
-<li role="presentation"><a href="#abinit-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
-<li role="presentation"><a href="#abinit-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
-<li role="presentation"><a href="#abinit-tabs-u" aria-controls="home" role="tab"                         data-toggle="tab">u</a></li>
-<li role="presentation"><a href="#abinit-tabs-v" aria-controls="home" role="tab"                         data-toggle="tab">v</a></li>
-<li role="presentation"><a href="#abinit-tabs-w" aria-controls="home" role="tab"                         data-toggle="tab">w</a></li>
-<li role="presentation"><a href="#abinit-tabs-x" aria-controls="home" role="tab"                         data-toggle="tab">x</a></li>
-<li role="presentation"><a href="#abinit-tabs-z" aria-controls="home" role="tab"                         data-toggle="tab">z</a></li>
+<li role="presentation" class="active"><a href="#abinit-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#abinit-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#abinit-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#abinit-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#abinit-tabs-e" role="tab"                         data-toggle="tab">e</a></li>
+<li role="presentation"><a href="#abinit-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#abinit-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#abinit-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#abinit-tabs-j" role="tab"                         data-toggle="tab">j</a></li>
+<li role="presentation"><a href="#abinit-tabs-k" role="tab"                         data-toggle="tab">k</a></li>
+<li role="presentation"><a href="#abinit-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#abinit-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#abinit-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#abinit-tabs-o" role="tab"                         data-toggle="tab">o</a></li>
+<li role="presentation"><a href="#abinit-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#abinit-tabs-q" role="tab"                         data-toggle="tab">q</a></li>
+<li role="presentation"><a href="#abinit-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#abinit-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#abinit-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#abinit-tabs-u" role="tab"                         data-toggle="tab">u</a></li>
+<li role="presentation"><a href="#abinit-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
+<li role="presentation"><a href="#abinit-tabs-w" role="tab"                         data-toggle="tab">w</a></li>
+<li role="presentation"><a href="#abinit-tabs-x" role="tab"                         data-toggle="tab">x</a></li>
+<li role="presentation"><a href="#abinit-tabs-z" role="tab"                         data-toggle="tab">z</a></li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
@@ -105,25 +105,25 @@
 </div> </div>
 
 * * *
-## All aim variables   
+## **aim** variables   
 
 <div>
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">
-<li role="presentation" class="active"><a href="#aim-tabs-a" aria-controls="home" role="tab"                         data-toggle="tab">a</a></li>
-<li role="presentation"><a href="#aim-tabs-c" aria-controls="home" role="tab"                         data-toggle="tab">c</a></li>
-<li role="presentation"><a href="#aim-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
-<li role="presentation"><a href="#aim-tabs-f" aria-controls="home" role="tab"                         data-toggle="tab">f</a></li>
-<li role="presentation"><a href="#aim-tabs-g" aria-controls="home" role="tab"                         data-toggle="tab">g</a></li>
-<li role="presentation"><a href="#aim-tabs-i" aria-controls="home" role="tab"                         data-toggle="tab">i</a></li>
-<li role="presentation"><a href="#aim-tabs-l" aria-controls="home" role="tab"                         data-toggle="tab">l</a></li>
-<li role="presentation"><a href="#aim-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
-<li role="presentation"><a href="#aim-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
-<li role="presentation"><a href="#aim-tabs-p" aria-controls="home" role="tab"                         data-toggle="tab">p</a></li>
-<li role="presentation"><a href="#aim-tabs-r" aria-controls="home" role="tab"                         data-toggle="tab">r</a></li>
-<li role="presentation"><a href="#aim-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
-<li role="presentation"><a href="#aim-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
-<li role="presentation"><a href="#aim-tabs-v" aria-controls="home" role="tab"                         data-toggle="tab">v</a></li>
+<li role="presentation" class="active"><a href="#aim-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#aim-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#aim-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#aim-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#aim-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#aim-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#aim-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#aim-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#aim-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#aim-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#aim-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#aim-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#aim-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#aim-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
@@ -172,30 +172,30 @@
 </div> </div>
 
 * * *
-## All anaddb variables   
+## **anaddb** variables   
 
 <div>
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">
-<li role="presentation" class="active"><a href="#anaddb-tabs-a" aria-controls="home" role="tab"                         data-toggle="tab">a</a></li>
-<li role="presentation"><a href="#anaddb-tabs-b" aria-controls="home" role="tab"                         data-toggle="tab">b</a></li>
-<li role="presentation"><a href="#anaddb-tabs-c" aria-controls="home" role="tab"                         data-toggle="tab">c</a></li>
-<li role="presentation"><a href="#anaddb-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
-<li role="presentation"><a href="#anaddb-tabs-e" aria-controls="home" role="tab"                         data-toggle="tab">e</a></li>
-<li role="presentation"><a href="#anaddb-tabs-f" aria-controls="home" role="tab"                         data-toggle="tab">f</a></li>
-<li role="presentation"><a href="#anaddb-tabs-g" aria-controls="home" role="tab"                         data-toggle="tab">g</a></li>
-<li role="presentation"><a href="#anaddb-tabs-i" aria-controls="home" role="tab"                         data-toggle="tab">i</a></li>
-<li role="presentation"><a href="#anaddb-tabs-k" aria-controls="home" role="tab"                         data-toggle="tab">k</a></li>
-<li role="presentation"><a href="#anaddb-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
-<li role="presentation"><a href="#anaddb-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
-<li role="presentation"><a href="#anaddb-tabs-o" aria-controls="home" role="tab"                         data-toggle="tab">o</a></li>
-<li role="presentation"><a href="#anaddb-tabs-p" aria-controls="home" role="tab"                         data-toggle="tab">p</a></li>
-<li role="presentation"><a href="#anaddb-tabs-q" aria-controls="home" role="tab"                         data-toggle="tab">q</a></li>
-<li role="presentation"><a href="#anaddb-tabs-r" aria-controls="home" role="tab"                         data-toggle="tab">r</a></li>
-<li role="presentation"><a href="#anaddb-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
-<li role="presentation"><a href="#anaddb-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
-<li role="presentation"><a href="#anaddb-tabs-u" aria-controls="home" role="tab"                         data-toggle="tab">u</a></li>
-<li role="presentation"><a href="#anaddb-tabs-v" aria-controls="home" role="tab"                         data-toggle="tab">v</a></li>
+<li role="presentation" class="active"><a href="#anaddb-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#anaddb-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#anaddb-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#anaddb-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#anaddb-tabs-e" role="tab"                         data-toggle="tab">e</a></li>
+<li role="presentation"><a href="#anaddb-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#anaddb-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#anaddb-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#anaddb-tabs-k" role="tab"                         data-toggle="tab">k</a></li>
+<li role="presentation"><a href="#anaddb-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#anaddb-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#anaddb-tabs-o" role="tab"                         data-toggle="tab">o</a></li>
+<li role="presentation"><a href="#anaddb-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#anaddb-tabs-q" role="tab"                         data-toggle="tab">q</a></li>
+<li role="presentation"><a href="#anaddb-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#anaddb-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#anaddb-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#anaddb-tabs-u" role="tab"                         data-toggle="tab">u</a></li>
+<li role="presentation"><a href="#anaddb-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
@@ -259,19 +259,19 @@
 </div> </div>
 
 * * *
-## All optic variables   
+## **optic** variables   
 
 <div>
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">
-<li role="presentation" class="active"><a href="#optic-tabs-b" aria-controls="home" role="tab"                         data-toggle="tab">b</a></li>
-<li role="presentation"><a href="#optic-tabs-d" aria-controls="home" role="tab"                         data-toggle="tab">d</a></li>
-<li role="presentation"><a href="#optic-tabs-l" aria-controls="home" role="tab"                         data-toggle="tab">l</a></li>
-<li role="presentation"><a href="#optic-tabs-m" aria-controls="home" role="tab"                         data-toggle="tab">m</a></li>
-<li role="presentation"><a href="#optic-tabs-n" aria-controls="home" role="tab"                         data-toggle="tab">n</a></li>
-<li role="presentation"><a href="#optic-tabs-s" aria-controls="home" role="tab"                         data-toggle="tab">s</a></li>
-<li role="presentation"><a href="#optic-tabs-t" aria-controls="home" role="tab"                         data-toggle="tab">t</a></li>
-<li role="presentation"><a href="#optic-tabs-w" aria-controls="home" role="tab"                         data-toggle="tab">w</a></li>
+<li role="presentation" class="active"><a href="#optic-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#optic-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#optic-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#optic-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#optic-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#optic-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#optic-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#optic-tabs-w" role="tab"                         data-toggle="tab">w</a></li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">

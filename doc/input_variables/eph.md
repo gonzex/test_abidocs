@@ -6,12 +6,13 @@
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v5:  [[tests/v5/Input/t24.in]]
-- v6:  [[tests/v6/Input/t37.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
-- v7:  [[tests/v7/Input/t50.in]], [[tests/v7/Input/t51.in]], [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t24.in]]
+    - v6:  [[tests/v6/Input/t37.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+    - v7:  [[tests/v7/Input/t50.in]], [[tests/v7/Input/t51.in]], [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -31,9 +32,10 @@ Same meaning as the corresponding anaddb variable.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -53,10 +55,11 @@ charges. Same meaning as the corresponding anaddb variable.
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -77,9 +80,10 @@ the description of the [[getddb]] input variable.
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.0]  
-Test list:
 
-- v7:  [[tests/v7/Input/t89.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t89.in]]
+
 
 
 
@@ -100,9 +104,10 @@ variable. See [[shiftk]] for more information on the definition.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -122,9 +127,10 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 * * *
@@ -137,9 +143,10 @@ Test list:
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -160,9 +167,10 @@ has effect only if set to a non-zero value. See also [[eph_extrael]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -188,9 +196,10 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
 *Only relevant if:* [[eph_intmeth]] == 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -210,9 +219,10 @@ the Fermi surface when [[eph_intmeth]] == 1.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -237,9 +247,10 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -259,10 +270,11 @@ superconducting Tc using Mc-Millan's formula.
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -288,9 +300,10 @@ DDB file (default behavior).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -311,10 +324,11 @@ corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 2  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -340,10 +354,11 @@ q-points in the BZ)
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -365,10 +380,11 @@ specified by [[ph_qpath]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -387,10 +403,11 @@ This integer defines the number of points in the [[ph_qpath]] array.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -412,10 +429,11 @@ code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 *Dimensions:* (3,ph_nqshift)  
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[ph_nqshift]]  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -437,10 +455,11 @@ given, a Gamma-centered mesh is used.
 *Dimensions:* scalar  
 *Default value:* 0.00002 Hartree  
 *Only relevant if:* [[ph_intmeth]]==1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -460,10 +479,11 @@ Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.1 meV  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -484,9 +504,10 @@ the code.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -510,9 +531,10 @@ Possible values:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t89.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t89.in]]
+
 
 
 
@@ -532,9 +554,10 @@ Print the phonon density of states. It is activated by default when
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v7:  [[tests/v7/Input/t88.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t88.in]]
+
 
 
 
@@ -557,7 +580,8 @@ not supported by Xcrysden. This variable requires [[optdriver]]==7.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
+
+??? note "Test list"
 
 
 

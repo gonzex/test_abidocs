@@ -6,17 +6,19 @@ import os
 import io
 import re
 import yaml
+import markdown
 
 from collections import OrderedDict, defaultdict
 from itertools import groupby
 from html2text import html2text
+from markdown.util import etree
 from pymods.variables import Variable
 
 _WEBSITE = None
 
 
 def splitall(path):
-    import os, sys
+    """Return list with the components of a `path`."""
     allparts = []
     while True:
         parts = os.path.split(path)
@@ -101,7 +103,6 @@ class MyEntry(Entry):
         return s
 
     def to_html(self):
-        import markdown
         return markdown.markdown(self.to_markdown())
 
     def to_bibtex(self):
@@ -156,7 +157,7 @@ class Website(object):
 
         # Get code statistics
         self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
-        self.abinit_stats.json_dump(os.path.join(self.root, "statistics.json"))
+        self.abinit_stats.json_dump(os.path.join(self.root, "data", "statistics.json"))
 
         # Build AbinitTestSuite object.
         from doc import tests as tmod
@@ -215,17 +216,17 @@ class Website(object):
 
         with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
             for code, vd in self.variables_code.items():
-                fh.write("## All %s variables   \n\n" % code)
+                fh.write("## **%s** variables   \n\n" % code)
                 fh.write(vd.get_vartabs_html())
                 fh.write(2*"\n" + "* * *\n")
 
         # Add plotly figures.
         with io.open(os.path.join(workdir, "connections.md"), "wt", encoding="utf-8") as fh:
-            fh.write("---\nplotly: true\n---")
+            fh.write("---\nplotly: true\n---\n\n")
             for code, vd in self.variables_code.items():
                 for varset in vd.all_varset:
-                    fh.write("## Code %s, varset: %s  \n\n" % (code, varset)
-                    fh.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False)
+                    fh.write("## %s, varset: %s  \n\n" % (code, varset))
+                    fh.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
                     #fh.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
                     fh.write(2*"\n" + "* * *\n")
 
@@ -251,9 +252,9 @@ class Website(object):
                     s = ", ".join(v.website_ilink() for v in vlist)
                     # Set color depending on coverage.
                     ratio = 100 * count / num_tests
-                    if ratio > 50:
+                    if ratio > 40:
                         cls = "list-group-item-success"
-                    elif ratio > 10:
+                    elif ratio > 2:
                         cls = "list-group-item-warning"
                     else:
                         cls = "list-group-item-danger"
@@ -262,9 +263,9 @@ class Website(object):
                 fh.write("\n".join(lines) + "</ul>")
 
         print("Generating Markdown files with topics ...")
-        # FIXME: this won't find all topics e.g AbiPy
         workdir = os.path.join(self.root, "topics")
 
+        # FIXME: this won't find all topics e.g AbiPy
         all_topics = set()
         for code, vd in self.variables_code.items():
             for var in vd.values():
@@ -345,9 +346,31 @@ authors: {}
                 with io.open(os.path.join(workdir, topic + ".md"), "wt", encoding="utf-8") as fh:
                     fh.write(text)
 
+        # Build page with full list of tests grouped by `suite_name`.
+        print("Generating Markdown file with tests ...")
+        items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
+        items = sorted(items, key=lambda t: t[1].suite_name)
+        workdir = os.path.join(self.root, "developers")
+        with io.open(os.path.join(workdir, "testsuite.md"), "wt", encoding="utf-8") as fh:
+            for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
+                fh.write('##  %s  \n\n' % suite_name)
+                for rpath, test in group:
+                    fh.write('###  <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
+                    #fh.write(test.listoftests())
+                    fh.write(test.description)
+                    fh.write("\n\n")
+                    fh.write("Executable: %s   \n" % test.executable)
+                    if test.keywords:
+                        fh.write("Keywords(s): %s   \n" % ", ".join(k for k in test.keywords))
+                    if test.topics:
+                        fh.write("Topic(s): %s  \n" % ", ".join("[[topic:%s]]" % t for t in test.topics))
+                    if test.authors and "Unknown" not in test.authors:
+                        fh.write("Author(s): %s  \n" % ", ".join(a for a in test.authors))
+                    fh.write("\n\n* * *\n\n")
+
         # All markdown files have been generated.
-        # Now find all wikilinks in particular the bibliographic references
-        # needed to generate the backlinks
+        # Now find all wikilinks, in particular the
+        # bibliographic references needed to generate backlinks.
         self.analyze_pages()
 
         print("Generating Markdown file with bibliographic entries ...")
@@ -381,7 +404,7 @@ authors: {}
                 elif f.endswith(".html") or f.endswith(".htm"):
                     self.html_pages.append(HtmlPage(path, self))
 
-    def get_citation_aelement(self, key, html_class=None):
+    def get_citation_aelement(self, key, text=None, html_class=None):
         from markdown.util import etree
         a = etree.Element('a')
         # Handle citation
@@ -395,7 +418,7 @@ authors: {}
         #a.set("data-content", "Some content inside the popover")
         #a.set("data-content", ref.to_html())
         a.set('href', url)
-        a.text = key
+        a.text = key if text is None else text
         if html_class: a.set('class', html_class)
         return a
 
@@ -403,6 +426,150 @@ authors: {}
         """ Slugify a string, to make it URL friendly. """
         from markdown.extensions.toc import slugify
         return slugify(value, separator="-")
+
+    @staticmethod
+    def _parse_wikilink(token):
+        # namespace:name#section|text
+        # where namespace, section and text are optional
+        text = None
+        if "|" in token:
+            token, text = token.split("|")
+            text = text.strip()
+
+        section = None
+        if "#" in token:
+            token, section = token.split("#")
+            section = section.strip()
+
+        namespace = None
+        if ":" in token:
+            namespace, name = token.split(":")
+            namespace, name = namespace.strip(), name.strip()
+        else:
+            name = token.strip()
+
+        return namespace, name, section, text
+
+    def anchor_from_wikilink(self, token):
+        a = etree.Element('a')
+        html_class = "wikilink"
+        if html_class: a.set('class', html_class)
+        #token = token.strip()
+        #if not token:
+        #    print("Warning: empty wikilink", m.group(0))
+        #    a = ''
+
+        #namespace, name, section, text = self._parse_token(token)
+
+        # [[lesson_gw1]
+        if token.startswith("lesson_"):
+            text = token
+            value = token.replace("lesson_" , " ", 1).strip()
+            url = "/tutorials/%s" % value
+
+        # [[#notations|this section]]
+        if token.startswith("#"):
+            try:
+                token, text = token.split("#")
+            except ValueError:
+                raise ValueError("Invalid token %s" % token)
+            url = token
+            a.set('href', url)
+            a.text = text
+            return a
+
+        # [[namespace:name#section|text]]
+        text = None
+        if "|" in token:
+            token, text = token.split("|")
+        elif "@" in token:
+            # [[dipdip@anaddb]]
+            text = token
+            vname, code = token.split("@")
+            token = "%s:%s" % (code, vname)
+
+        token = token.strip()
+        if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
+            url = token
+
+        elif ":" in token:
+            namespace, value = token.split(":")
+            #print("namespace:" ,namespace, "value:", value)
+
+            if namespace in self.variables_code:
+                # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
+                var = self.variables_code[namespace][value]
+                url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                if text is None:
+                    text = var.name if not var.is_internal else "%%s" % var.name
+
+            elif namespace == "lesson":
+                url = "/tutorials/%s" % value
+                if text is None: text = value
+
+            elif namespace == "help":
+                url = "/user-guide/help_%s" % value
+                # %%[[help_codename]]%% is echoed "codename help file" :
+                if text is None: text = "%s help file" % value
+
+            elif namespace == "topic":
+                url = "/topics/%s" % value
+                text = value
+
+            elif namespace == "bib":
+                # [[bib:Amadon2008]]
+                return self.get_citation_aelement(value, text=text, html_class=html_class)
+
+            elif namespace == "theorydoc":
+                url = "/topics/%s" % value
+                text = value
+
+            elif namespace == "varset":
+                url = "/input_variables/%s" % value
+                text = "%s varset" % value
+
+            #elif namespace == "input"
+            #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
+
+            else:
+                msg = "Don't know how to handle namespace `%s` with value `%s`" % (namespace, value)
+                print("Warning", msg)
+                url = "FAKE_URL"
+                #raise ValueError(msg) # FIXME
+
+        elif token.startswith("tests/") or token.startswith("~abinit/tests/"):
+            # Handle [[tests/tutorial/Refs/tbase1_2.out]]
+            #print("In tests/ with token:", token)
+            text = token
+            #if not text.startswith("~abinit/"): text = "~abinit/" + text
+            token = token.replace("~abinit/", "")
+            url = "/" + token
+            # Add popover with test description if input file.
+            if token in self.rpath2test:
+                a.set("data-toggle", "popover")
+                a.set("title", self.rpath2test[token].description)
+                a.set("data-placement", "auto bottom")
+                a.set("data-trigger", "hover")
+
+        elif token in self.variables_code["abinit"]:
+            # Handle link to Abinit variable e.g. [[ecut]]
+            var = self.variables_code["abinit"][token]
+            url = "/input_variables/%s/#%s" % (var.varset, var.name)
+
+        elif token in self.bib_data.entries:
+            # Handle citation
+            return self.get_citation_aelement(token, text=text, html_class=html_class)
+
+        else:
+            msg = "WARNING: Don't know how to handle token: `%s`" % token
+            print(msg)
+            #raise ValueError(msg)
+            #url = '%s%s%s' % (base_url, token, end_url)
+            url = "FAKE_URL"
+
+        a.set('href', url)
+        a.text = token if text is None else text
+        return a
 
     def validate_html_build(self):
         # https://bitbucket.org/nmb10/py_w3c
@@ -474,7 +641,7 @@ class MarkdownPage(Page):
                 self.wiki_links.append(token)
                 self.citations.add(token)
 
-        print(self)
+        #print(self)
 
 
 class HtmlPage(Page):

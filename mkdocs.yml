@@ -8,6 +8,12 @@ docs_dir: doc
 repo_name: github-abinit
 repo_url: https://github.com/abinit/abinit/
 
+# If `True`, use `<page_name>/index.hmtl` style files with hyperlinks to
+# the directory. If `False`, use `<page_name>.html style file with hyperlinks to the file.
+# True generates nicer URLs, but False is useful if browsing the output on
+# a filesystem.
+use_directory_urls: True
+
 pages:
 #- Quick Start: 
 - User Guide:
@@ -140,7 +146,10 @@ pages:
     - Additional Material: theory/additional_material.md
     - Bibliography: bibliography.md
 - Developers:
-    - How to write docs: developers/doc_howto.md
+    - Abimkdocs: developers/abimkdocs.md
+    - Markdown: developers/markdown.md
+    - Test Suite: developers/testsuite.md
+    - Code stats: developers/codestats.md
 - About:
     - Release Notes: about/release-notes.md
     - Contributing: about/contributing.md
@@ -150,37 +159,38 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc:
         permalink: true
-     #separator: "_"
+        #separator: "_"
   - markdown.extensions.admonition
   - markdown.extensions.fenced_code 
   - markdown.extensions.codehilite
   - markdown.extensions.smarty
   - markdown.extensions.tables
-  # - markdown.extensions.def_list
+  #- markdown.extensions.def_list
   #- markdown_newtab
   - mdx_math:
         enable_dollar_delimiter: True
-  - pymdownx.arithmatex
+  #- pymdownx.arithmatex:
+        #inline_syntax: ['dollar']
+        #block_syntax:  ['dollar', 'begin']
+        #insert_as_script: True
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
   - pymdownx.critic
-  #- pymdownx.emoji:
-  #-   emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
+  - pymdownx.magiclink:
+      base_repo_url: https://github.com/abinit/abinit
+      repo_url_shortener: true
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist(custom_checkbox=true)
+  #- pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
   # Abinit extensions.
   - pymods.extensions.wikilinks:
   - pymods.extensions.modal:
         
 #strict: true
-
-
-
 
 #theme: mkdocs
 #theme: readthedocs
@@ -200,7 +210,7 @@ theme: material   # Nice
 theme_dir: abinit_theme
 
 extra_css:
-    - css/codehilite.css
+    #- css/my_codehilite.css
     - css/extra.css
 
 extra_javascript:

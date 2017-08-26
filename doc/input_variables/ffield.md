@@ -7,9 +7,10 @@
 *Dimensions:* ([[natvshift]],[[nsppol]],[[natom]])  
 *Default value:* *0.0d0  
 *Only relevant if:* [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
-Test list:
 
-- v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+
 
 
 
@@ -38,11 +39,12 @@ sets of 7 numbers, corresponding to m=-3 to m=+3.
 *Dimensions:* (4)  
 *Default value:* 4*0  
 *Only relevant if:* [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
-- tutorespfn:  [[tests/tutorespfn/Input/telast_5.in]]
-- v4:  [[tests/v4/Input/t66.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_5.in]]
+    - v4:  [[tests/v4/Input/t66.in]]
+
 
 
 
@@ -72,6 +74,18 @@ will cause an early exit.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]], [[tests/seq/Input/tsv4_55.in]], [[tests/seq/Input/tsv4_78.in]], [[tests/seq/Input/tsv4_80.in]], [[tests/seq/Input/tsv5_112.in]], [[tests/seq/Input/tsv5_113.in]], [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_123.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]], [[tests/seq/Input/tsv7_70.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_4.in]], [[tests/tutorespfn/Input/telast_5.in]], [[tests/tutorespfn/Input/tffield_1.in]], [[tests/tutorespfn/Input/tffield_2.in]], [[tests/tutorespfn/Input/tffield_4.in]], [[tests/tutorespfn/Input/tffield_5.in]], [[tests/tutorespfn/Input/tffield_6.in]]
+    - v4:  [[tests/v4/Input/t66.in]], [[tests/v4/Input/t72.in]], [[tests/v4/Input/t75.in]]
+    - v5:  [[tests/v5/Input/t23.in]]
+    - v6:  [[tests/v6/Input/t06.in]], [[tests/v6/Input/t20.in]], [[tests/v6/Input/t42.in]], [[tests/v6/Input/t43.in]]
+    - v7:  [[tests/v7/Input/t03.in]]
+
+
+
 
 
 
@@ -132,9 +146,10 @@ In case of finite electric and displacement field calculations
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_124.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_124.in]]
+
 
 
 
@@ -155,9 +170,10 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* 0 > [[berryopt]]  
-Test list:
 
-- v6:  [[tests/v6/Input/t20.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t20.in]]
+
 
 
 
@@ -188,10 +204,11 @@ gained with this procedure, the outlook is promising.
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
-Test list:
 
-- paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
-- v6:  [[tests/v6/Input/t43.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+    - v6:  [[tests/v6/Input/t43.in]]
+
 
 
 
@@ -212,9 +229,10 @@ Perform finite magnetic field calculation.
 *Dimensions:* scalar  
 *Default value:* 0.1  
 *Only relevant if:* [[berryopt]] = 6 or 16  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+
 
 
 
@@ -243,9 +261,10 @@ calculations (berryopt=6,16,17).
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 6, [[efield]]  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]]
+
 
 
 
@@ -267,6 +286,17 @@ constraint during the calculation.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 4 or 6  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]]
+    - seq:  [[tests/seq/Input/tsv4_55.in]], [[tests/seq/Input/tsv4_78.in]], [[tests/seq/Input/tsv4_80.in]], [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_123.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]], [[tests/seq/Input/tsv6_126.in]], [[tests/seq/Input/tsv7_70.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tffield_6.in]]
+    - v5:  [[tests/v5/Input/t23.in]]
+    - v6:  [[tests/v6/Input/t42.in]], [[tests/v6/Input/t43.in]]
+    - v7:  [[tests/v7/Input/t03.in]]
+
+
+
 
 
 
@@ -302,9 +332,10 @@ electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 *Dimensions:* (3)  
 *Default value:* 3*0  
 *Only relevant if:* [[berryopt]] = 17  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_125.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_125.in]]
+
 
 
 
@@ -341,9 +372,10 @@ have d_1,d_2, these are good guesses for b, c.
 *Dimensions:* (3,[[nberry]])  
 *Default value:* *0  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
+
 
 
 
@@ -382,9 +414,10 @@ initialize the [[kptopt]]=3 computation.
 *Dimensions:* scalar  
 *Default value:* 0.005  
 *Only relevant if:* [[berryopt]] = 6, 16, or 17  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_126.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_126.in]]
+
 
 
 
@@ -407,9 +440,10 @@ in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepawu]] /= 0, [[atvshift]]  
-Test list:
 
-- v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]]
+
 
 
 
@@ -432,9 +466,10 @@ should define [[usepawu]], [[lpawu]] and [[atvshift]].
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]]
+
 
 
 
@@ -470,9 +505,10 @@ allowed, nor are parallel computations.
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_126.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_126.in]]
+
 
 
 
@@ -497,9 +533,10 @@ Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vprtrb]]  
-Test list:
 
-- v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+
 
 
 
@@ -521,9 +558,10 @@ explanation.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16, [[red_efield]]  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+
 
 
 
@@ -548,9 +586,10 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_125.in]]
+
 
 
 
@@ -575,9 +614,10 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 14  
-Test list:
 
-- seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_125.in]]
+??? note "Test list"
+    - seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_125.in]]
+
 
 
 
@@ -601,6 +641,21 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* -99.99  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t25.in]]
+    - paral:  [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t94.in]]
+    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv4_90.in]]
+    - v1:  [[tests/v1/Input/t39.in]]
+    - v2:  [[tests/v2/Input/t76.in]]
+    - v3:  [[tests/v3/Input/t12.in]], [[tests/v3/Input/t20.in]], [[tests/v3/Input/t51.in]], [[tests/v3/Input/t58.in]], [[tests/v3/Input/t86.in]]
+    - v5:  [[tests/v5/Input/t33.in]], [[tests/v5/Input/t61.in]], [[tests/v5/Input/t62.in]], [[tests/v5/Input/t63.in]]
+    - v6:  [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]], [[tests/v6/Input/t63.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t29.in]]
+    - v7:  [[tests/v7/Input/t22.in]], [[tests/v7/Input/t66.in]]
+
+
+
 
 
 
@@ -638,9 +693,10 @@ spin up Fermi energy.
 *Dimensions:* (2)  
 *Default value:* [0.0, 0.0]  
 *Only relevant if:* [[qprtrb]]  
-Test list:
 
-- v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]]
+
 
 
 
@@ -666,9 +722,10 @@ of the perturbation, which is added to the local potential, is:
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 0  
-Test list:
 
-- v6:  [[tests/v6/Input/t17.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t17.in]]
+
 
 
 

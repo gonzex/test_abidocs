@@ -8,6 +8,19 @@
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==3  
 
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 This input variable defines whether the irreducible polarizability
@@ -32,6 +45,21 @@ choice [[awtr]]=0.
 *Dimensions:* (2,[[nkptgw]],[[nsppol]])  
 *Default value:* *0  
 *Only relevant if:* [[optdriver]]==4  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
 
 
 
@@ -73,9 +101,10 @@ symmetries and energy degenerations are preserved.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -97,9 +126,10 @@ are specified with [[cd_imfrqs]].
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
 
 
 
@@ -200,9 +230,10 @@ frequency sections.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -243,9 +274,10 @@ the ** Mrgscr ** utility.
 *Dimensions:* scalar  
 *Default value:* 100.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -268,9 +300,10 @@ approximately linear up to this point. To be used in conjunction with
 *Dimensions:* ([[cd_customnimfrqs]])  
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -302,9 +335,10 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 *Dimensions:* scalar  
 *Default value:* 1000.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -325,7 +359,8 @@ Test list:
 *Dimensions:* (2)  
 *Default value:* [1, '[[nfreqre]]']  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -360,6 +395,20 @@ merged with the ** mrgscr ** utility.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3 or [[optdriver]]==4  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 [[ecuteps]] determines the cut-off energy of the planewave set used to
@@ -385,6 +434,21 @@ gap). In any case, a convergence study is worth.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==4  
 
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 [[ecutsigx]] determines the cut-off energy of the planewave set used to
@@ -409,6 +473,21 @@ upper limits.
 0.0 otherwise.
   
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
 
 
 
@@ -436,6 +515,14 @@ The size of this set of planewaves is [[npwwfn]].
 *Dimensions:* scalar  
 *Default value:* 21  
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
+
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t19.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+
+
+
 
 
 
@@ -486,9 +573,10 @@ The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 *Dimensions:* scalar  
 *Default value:* 5.0  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
 
 
 
@@ -517,6 +605,18 @@ description of the formula.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
+
 
 
 [[freqremax]] is used only for numerical integration of the GW self-energy
@@ -538,11 +638,12 @@ frequency mesh along the real axis.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3  
-Test list:
 
-- v5:  [[tests/v5/Input/t71.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t37.in]]
-- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t37.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -571,12 +672,13 @@ frequency mesh along the real axis.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
-- v4:  [[tests/v4/Input/t84.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -600,10 +702,11 @@ be used to make a user-defined grid.
 *Dimensions:* scalar  
 *Default value:* -[[freqspmax]]  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -628,10 +731,11 @@ user-defined grid.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -654,10 +758,11 @@ specified with [[gw_freqsp]].
 *Dimensions:* ([[gw_customnfreqsp]])  
 *Default value:* [1 .. [[gw_customnfreqsp]]]  
 *Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -690,9 +795,10 @@ If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
 
 
 
@@ -721,9 +827,10 @@ frequency.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+
 
 
 
@@ -760,9 +867,10 @@ during Contour Deformation sigma calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+
 
 
 
@@ -788,9 +896,10 @@ transformed grid.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t41.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t41.in]]
+
 
 
 
@@ -815,9 +924,10 @@ invalid (negative or imaginary).
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
 
 
 
@@ -862,7 +972,8 @@ vectors of the reciprocal lattice and the three Cartesian axis).
 *Dimensions:* scalar  
 *Default value:* 30  
 *Only relevant if:* [[optdriver]]==8  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -886,9 +997,10 @@ define the type of self-consistency.
 *Dimensions:* (3,[[gw_nqlwl]])  
 *Default value:* [1e-05, 2e-05, 3e-05]  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
 
 
 
@@ -911,10 +1023,11 @@ effects) are evaluated for each direction specified by [[gw_qlwl]].
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-- v8:  [[tests/v8/Input/t44.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
 
 
 
@@ -955,7 +1068,8 @@ have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4]  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -995,9 +1109,10 @@ consistent iteration.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t66.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t66.in]]
+
 
 
 
@@ -1039,7 +1154,8 @@ contribution to sigma.
 *Dimensions:* scalar  
 *Default value:* 0.1 eV  
 *Only relevant if:* [[optdriver]]==8  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1063,6 +1179,20 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4]  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
 
 
 
@@ -1100,12 +1230,13 @@ Also
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4]  
-Test list:
 
-- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
-- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -1131,12 +1262,13 @@ methodology.
 *Dimensions:* scalar  
 *Default value:* 2.0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcomp]]==1  
-Test list:
 
-- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
-- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -1161,9 +1293,10 @@ the methodology.
 *Dimensions:* scalar  
 *Default value:* 0.25  
 *Only relevant if:* [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t43.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t43.in]]
+
 
 
 
@@ -1185,10 +1318,11 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]=3 or 4 (Sigma calculations)  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t36.in]]
-- v7:  [[tests/v7/Input/t16.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t36.in]]
+    - v7:  [[tests/v7/Input/t16.in]]
+
 
 
 
@@ -1222,10 +1356,11 @@ kernel.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1247,9 +1382,10 @@ to be corrected in the G0W0 scheme.
 *Dimensions:* scalar  
 *Default value:* 3  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1283,9 +1419,10 @@ removed.
 *Dimensions:* scalar  
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1305,9 +1442,10 @@ Not used yet.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1329,9 +1467,10 @@ Governs whether the exact exchange for the state to be corrected
 *Dimensions:* scalar  
 *Default value:* [[gwls_band_index]]  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1361,9 +1500,10 @@ therefore keep the default value.
 *Dimensions:* scalar  
 *Default value:* 8  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1386,10 +1526,11 @@ converged to a few 10s of meV for all molecules studied so far.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1422,9 +1563,10 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 *Dimensions:* scalar  
 *Default value:* 16  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1449,9 +1591,10 @@ converged to a few 10s of meV for all molecules studied so far.
 *Dimensions:* scalar  
 *Default value:* 4  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1483,9 +1626,10 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 *Dimensions:* ([[gwls_n_proj_freq]])  
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1511,9 +1655,10 @@ frequency is to be used) is fine and no frequencies need to be picked up.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1548,9 +1693,10 @@ optimal.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1575,9 +1721,10 @@ the default ([[gwls_n_proj_freq]]==0) is fine.
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1599,9 +1746,10 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1624,9 +1772,10 @@ been tested for now and users should keep this value.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1647,10 +1796,11 @@ calculation. Users should keep its value at the default.
 *Dimensions:* scalar  
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1692,10 +1842,11 @@ construction of the basis.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+
 
 
 
@@ -1718,11 +1869,12 @@ criterion of 50meV on the eigenenergies.
 *Dimensions:* scalar  
 *Default value:* 11  
 *Only relevant if:* [[optdriver]] in [3,4]  
-Test list:
 
-- paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-- v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t70.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t22.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t22.in]]
+
 
 
 
@@ -1752,9 +1904,10 @@ The first digit is only meaningful when performing sigma calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+
 
 
 
@@ -1778,6 +1931,21 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* 6  
 *Only relevant if:* [[optdriver]] in [3,4]  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t36.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
 
 
 
@@ -1823,6 +1991,17 @@ in the sphere is equal to the volume of the solid.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]] in [3,99]  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+
+
+
+
 
 
 Possible values of [[inclvkb]] are 0,1,2. If [[inclvkb]] is 1 or 2, the
@@ -1856,6 +2035,22 @@ optical properties.
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==4  
 
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 For each k-point with number igwpt in the range (1:[[nkptgw]]),
@@ -1880,6 +2075,15 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
+    - v5:  [[tests/v5/Input/t67.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+
+
+
+
 
 
 The Scissors operator energy added to the conductions states. In some cases,
@@ -1897,6 +2101,13 @@ it mimics a second iteration self-consistent GW calculation.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+
+
+
 
 
 
@@ -1916,10 +2127,11 @@ Eq. (7) of Phys. Rev. B **37**, (1988)
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- etsf_io:  [[tests/etsf_io/Input/t02.in]], [[tests/etsf_io/Input/t04.in]]
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - etsf_io:  [[tests/etsf_io/Input/t02.in]], [[tests/etsf_io/Input/t04.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -1961,6 +2173,18 @@ in order to generate a _KSS file.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
+
 
 
 [[nfreqim]] sets the number of pure imaginary frequencies used to calculate
@@ -1979,7 +2203,8 @@ self-energy.
 *Dimensions:* scalar  
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -2007,6 +2232,18 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
 
 
 
@@ -2039,13 +2276,14 @@ any ppmodel.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- paral:  [[tests/paral/Input/t77.in]]
-- tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
-- v4:  [[tests/v4/Input/t84.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t77.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -2067,6 +2305,22 @@ spectral function of the GW Green's function.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]]
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
+
+
+
 
 
 [[nkptgw]] gives the number of k-points for which the GW calculation must be
@@ -2084,11 +2338,12 @@ done. It is used to dimension [[kptgw]]
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]!=0  
-Test list:
 
-- tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-- v5:  [[tests/v5/Input/t71.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+
 
 
 
@@ -2119,9 +2374,10 @@ kept in mind, however, that the memory required grows fast with the value of
 *Dimensions:* scalar  
 *Default value:* 12  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
 
 
 
@@ -2143,9 +2399,10 @@ interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 *Dimensions:* scalar  
 *Default value:* 9  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+
 
 
 
@@ -2167,9 +2424,10 @@ energy is numerically estimated through linear interpolation.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
-Test list:
 
-- v7:  [[tests/v7/Input/t16.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t16.in]]
+
 
 
 
@@ -2194,7 +2452,8 @@ proton.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -2228,9 +2487,10 @@ k-points.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
-Test list:
 
-- v3:  [[tests/v3/Input/t87.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t87.in]]
+
 
 
 
@@ -2258,9 +2518,10 @@ stops.
 *Dimensions:* scalar  
 *Default value:* 50 eV  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
 
 
 
@@ -2282,9 +2543,10 @@ employed to sample the self-energy along the imaginary axis.
 *Dimensions:* scalar  
 *Default value:* 1.0 eV  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+
 
 
 
@@ -2306,6 +2568,17 @@ sampled [[nomegasrd]] times.
 *Dimensions:* scalar  
 *Default value:* 0.0 Ha  
 *Only relevant if:* [[optdriver]] in [3,4]  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
+    - v5:  [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+
+
+
 
 
 
@@ -2360,6 +2633,16 @@ details.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
+
 
 
   * [[ppmodel]]=1 : PP model of Godby and Needs, See Phys Rev Lett 62, 1169 (1989) 
@@ -2393,9 +2676,10 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.
 *Dimensions:* (3)  
 *Default value:* 3*1.0  
 *Only relevant if:* [[optdriver]]==3  
-Test list:
 
-- v7:  [[tests/v7/Input/t16.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t16.in]]
+
 
 
 
@@ -2418,9 +2702,10 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 *Dimensions:* (3,[[nqptdm]])  
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==3 and [[nqptdm]]!=0  
-Test list:
 
-- v3:  [[tests/v3/Input/t87.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t87.in]]
+
 
 
 
@@ -2444,6 +2729,16 @@ cartesian coordinates!). For further explanation, see the input variable
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
+    - mpiio:  [[tests/mpiio/Input/t42.in]]
+    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]]
+    - v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t29.in]]
+
+
+
+
 
 
 Truncation of the Coulomb interaction in real space. The meaning of [[rcut]]
@@ -2463,12 +2758,13 @@ the same volume inside the cutoff as the volume of the primitive cell.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.0  
-Test list:
 
-- paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
-- v4:  [[tests/v4/Input/t88.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
-- wannier90:  [[tests/wannier90/Input/t03.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
+    - v4:  [[tests/v4/Input/t88.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in]]
+
 
 
 
@@ -2492,9 +2788,10 @@ wavefunctions with [[gwcalctyp]] &gt;= 20\.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]==2  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+
 
 
 
@@ -2517,11 +2814,12 @@ gaussian is given by [[spbroad]].
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
-Test list:
 
-- tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-- v5:  [[tests/v5/Input/t71.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
+    - v5:  [[tests/v5/Input/t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+
 
 
 
@@ -2572,6 +2870,18 @@ Summarizing:
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==3  
 
+??? note "Test list"
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
+
+
+
 
 
 The evaluation of the irreducible polarizability for a given q-point requires
@@ -2597,6 +2907,16 @@ between these two equivalent methods:
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
+
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t41.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
+    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
+    - v8:  [[tests/v8/Input/t44.in]]
+
+
+
 
 
 
@@ -2628,9 +2948,10 @@ accidental degeneracy.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[nspinor]] == 1  
-Test list:
 
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -2675,9 +2996,10 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
 *Comment:* That is, the default includes no band.  
-Test list:
 
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]]
+
 
 
 
@@ -2698,9 +3020,10 @@ polarisability.
 *Dimensions:* (2)  
 *Default value:* [-1, -1]  
 *Comment:* That is, the energy window is empty by default.  
-Test list:
 
-- v7:  [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -2725,9 +3048,10 @@ numbers) with respect to the position of the Fermi level.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 *Only relevant if:* [[icutcoul]] in [1,2]  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+
 
 
 
@@ -2784,6 +3108,17 @@ defines ....
 *Default value:* 0.0036749326  
 *Comment:* 0.0036749326 Ha = 0.1 eV  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
+    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
+    - v5:  [[tests/v5/Input/t64.in]], [[tests/v5/Input/t67.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v7:  [[tests/v7/Input/t16.in]]
+
+
+
 
 
 

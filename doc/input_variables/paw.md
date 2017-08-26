@@ -7,9 +7,10 @@
 *Dimensions:* scalar  
 *Default value:* 2.0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v4:  [[tests/v4/Input/t17.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t17.in]]
+
 
 
 
@@ -41,6 +42,16 @@ required level of accuracy.
 *Dimensions:* (2*max([[lpawu]])+1,2*max([[lpawu]])+1,max([[nsppol]], [[nspinor]]),[[natpawu]])  
 *Default value:* *-10.0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[usedmatpu]]!=0  
+
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
+    - v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t37.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]]
+
+
+
 
 
 
@@ -119,6 +130,18 @@ one is ignored by the code.
 *Default value:* 2  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t40.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 This option governs the way occupations of localized atomic levels are
@@ -148,9 +171,10 @@ correlated subspace is a normalized atomic eigenfunction.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[nspden]] != 4  
-Test list:
 
-- v5:  [[tests/v5/Input/t19.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t19.in]]
+
 
 
 
@@ -176,11 +200,12 @@ Relevant values are:
 *Dimensions:* scalar  
 *Default value:* ['0.625 for d electron', '0.6681 for f electron']  
 *Only relevant if:* [[usepaw]]==1 and ([[usepawu]]==1 or [[usedmft]]==1)  
-Test list:
 
-- paral:  [[tests/paral/Input/t99.in]]
-- v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t99.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -202,9 +227,10 @@ interaction.
 *Dimensions:* scalar  
 *Default value:* 0.4943  
 *Only relevant if:* ([[usepawu]]==1 or [[usedmft]]==1) and [[lpawu]]=3  
-Test list:
 
-- v7:  [[tests/v7/Input/t21.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t21.in]]
+
 
 
 
@@ -225,9 +251,10 @@ dependent screened coulomb interaction.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t17.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t17.in]]
+
 
 
 
@@ -252,6 +279,19 @@ conserving.
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 Gives the value of the screened exchange interaction between correlated
@@ -270,9 +310,10 @@ In the case where [[lpawu]] =-1, the value is not used.
 *Dimensions:* ([[ntypat]])  
 *Default value:* -1  
 *Only relevant if:* [[useexexch]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t18.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t18.in]]
+
 
 
 
@@ -294,6 +335,19 @@ are allowed) on which to apply the exact exchange correction.
 *Default value:* *-1  
 *Only relevant if:* [[usepawu]]==1 or [[usepawu]]== 2  
 
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 Give for each species the value of the angular momentum (only values 2 or 3
@@ -313,10 +367,11 @@ are allowed)  on which to apply the LDA+U correction.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 3001  
-Test list:
 
-- v4:  [[tests/v4/Input/t17.in]]
-- v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t17.in]]
+    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -339,6 +394,13 @@ the latter ... See also [[mqgrid]]
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[usepaw]]==1  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+    - paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]]
+
+
+
+
 
 
 This variable has the same meaning as ngfft (gives the size of fast Fourier
@@ -359,10 +421,11 @@ used for PAW calculations.
 1 otherwise.
   
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t17.in]]
-- v7:  [[tests/v7/Input/t32.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t17.in]]
+    - v7:  [[tests/v7/Input/t32.in]]
+
 
 
 
@@ -399,7 +462,8 @@ In order to save CPU time, when molecular dynamics is selected
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[usepaw]]==1  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -424,6 +488,31 @@ longer assumed.
 *Default value:* -1  
 *Comment:* pawecutdg MUST be specified for PAW calculations.  
 *Only relevant if:* [[usepaw]]==1  
+
+??? note "Test list"
+    - atompaw:  [[tests/atompaw/Input/t02.in]], [[tests/atompaw/Input/t04.in]]
+    - bigdft:  [[tests/bigdft/Input/t23.in]]
+    - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - libxc:  [[tests/libxc/Input/t10.in]], [[tests/libxc/Input/t53.in]], [[tests/libxc/Input/t82.in]]
+    - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]], [[tests/paral/Input/t28.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]], [[tests/paral/Input/t41.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t99.in]]
+    - seq:  [[tests/seq/Input/tsv5_112.in]], [[tests/seq/Input/tsv5_113.in]], [[tests/seq/Input/tsv7_70.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tstring_01.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_2.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_1.in]], [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]], [[tests/tutorial/Input/tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in]], [[tests/tutorial/Input/tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in]], [[tests/tutorial/Input/tpositron_3.in]], [[tests/tutorial/Input/tpositron_4.in]], [[tests/tutorial/Input/tpositron_5.in]], [[tests/tutorial/Input/tpositron_6.in]], [[tests/tutorial/Input/tpositron_7.in]], [[tests/tutorial/Input/tspin_6.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]], [[tests/tutorial/Input/tfold2bloch_1.in]]
+    - v3:  [[tests/v3/Input/t22.in]]
+    - v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]], [[tests/v4/Input/t08.in]], [[tests/v4/Input/t09.in]], [[tests/v4/Input/t17.in]], [[tests/v4/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t05.in]], [[tests/v5/Input/t06.in]], [[tests/v5/Input/t07.in]], [[tests/v5/Input/t08.in]], [[tests/v5/Input/t09.in]], [[tests/v5/Input/t11.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]], [[tests/v5/Input/t18.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t30.in]], [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]], [[tests/v5/Input/t36.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t77.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t42.in]], [[tests/v6/Input/t43.in]], [[tests/v6/Input/t44.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]], [[tests/v6/Input/t49.in]], [[tests/v6/Input/t62.in]], [[tests/v6/Input/t89.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t29.in]]
+    - v7:  [[tests/v7/Input/t02.in]], [[tests/v7/Input/t08.in]], [[tests/v7/Input/t09.in]], [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t26.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t35.in]], [[tests/v7/Input/t36.in]], [[tests/v7/Input/t43.in]], [[tests/v7/Input/t60.in]], [[tests/v7/Input/t61.in]], [[tests/v7/Input/t62.in]], [[tests/v7/Input/t63.in]], [[tests/v7/Input/t64.in]], [[tests/v7/Input/t70.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]], [[tests/v7/Input/t81.in]], [[tests/v7/Input/t82.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]]
+    - v8:  [[tests/v8/Input/t01.in]], [[tests/v8/Input/t05.in]], [[tests/v8/Input/t07.in]]
+    - wannier90:  [[tests/wannier90/Input/t00.in]], [[tests/wannier90/Input/t01.in]], [[tests/wannier90/Input/t02.in]]
+
+
+
 
 
 
@@ -458,10 +547,11 @@ in the log file.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1   
-Test list:
 
-- v5:  [[tests/v5/Input/t20.in]]
-- v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t20.in]]
+    - v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+
 
 
 
@@ -494,9 +584,10 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -525,9 +616,10 @@ charge inside spheres", a quantity written in the log file.
 *Dimensions:* scalar  
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -556,6 +648,17 @@ numerical accuracy of the results.
 1 otherwise.
   
 *Only relevant if:* [[usepaw]]==1  
+
+??? note "Test list"
+    - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
+    - paral:  [[tests/paral/Input/t27.in]]
+    - v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]], [[tests/v4/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]]
+    - v7:  [[tests/v7/Input/t60.in]], [[tests/v7/Input/t61.in]], [[tests/v7/Input/t62.in]]
+
+
+
 
 
 
@@ -592,9 +695,10 @@ In ** wavelet ** calculations [[usewvl]]=1:
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -622,9 +726,10 @@ validity of this approximation before use.
 *Dimensions:* scalar  
 *Default value:* 13  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -646,9 +751,10 @@ spheres. This discretization is completely defined by [[pawnphi]] and
 *Dimensions:* scalar  
 *Default value:* 12  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -670,9 +776,10 @@ spheres. This discretization is completely defined by [[pawntheta]] and
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -699,11 +806,12 @@ thus the first iteration is more cpu intensive)
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
-- etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
-- v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]]
+??? note "Test list"
+    - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
+    - v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]]
+
 
 
 
@@ -738,10 +846,11 @@ parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v67mbpt:  [[tests/v67mbpt/Input/t29.in]]
-- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - v67mbpt:  [[tests/v67mbpt/Input/t29.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -770,12 +879,13 @@ expression proposed by Shishkin and Kresse in PRB 74. 035101
 *Dimensions:* scalar  
 *Default value:* 5.0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- paral:  [[tests/paral/Input/t41.in]]
-- v6:  [[tests/v6/Input/t89.in]]
-- v7:  [[tests/v7/Input/t08.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
-- v8:  [[tests/v8/Input/t05.in]], [[tests/v8/Input/t31.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t41.in]]
+    - v6:  [[tests/v6/Input/t89.in]]
+    - v7:  [[tests/v7/Input/t08.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
+    - v8:  [[tests/v8/Input/t05.in]], [[tests/v8/Input/t31.in]]
+
 
 
 
@@ -809,7 +919,8 @@ than [[pawovlp]] %
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -830,11 +941,12 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[prtdos]]==3  
-Test list:
 
-- tutorial:  [[tests/tutorial/Input/tpaw1_4.in]]
-- v5:  [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]]
-- v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+??? note "Test list"
+    - tutorial:  [[tests/tutorial/Input/tpaw1_4.in]]
+    - v5:  [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]]
+    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+
 
 
 
@@ -875,6 +987,17 @@ radius.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t66.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 Control print volume and debugging output for PAW in log file or standard
@@ -904,9 +1027,10 @@ atoms are printed.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- etsf_io:  [[tests/etsf_io/Input/t09.in]]
+??? note "Test list"
+    - etsf_io:  [[tests/etsf_io/Input/t09.in]]
+
 
 
 
@@ -942,15 +1066,16 @@ be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
 0 otherwise.
   
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- gpu:  [[tests/gpu/Input/t03.in]]
-- mpiio:  [[tests/mpiio/Input/t28.in]]
-- paral:  [[tests/paral/Input/t28.in]]
-- tutorial:  [[tests/tutorial/Input/tspin_6.in]]
-- v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]]
-- v6:  [[tests/v6/Input/t49.in]]
-- v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t82.in]]
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]]
+    - mpiio:  [[tests/mpiio/Input/t28.in]]
+    - paral:  [[tests/paral/Input/t28.in]]
+    - tutorial:  [[tests/tutorial/Input/tspin_6.in]]
+    - v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]]
+    - v6:  [[tests/v6/Input/t49.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t82.in]]
+
 
 
 
@@ -992,9 +1117,10 @@ An artificial scaling of the spin-orbit can be introduced thanks to the
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]=1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -1031,7 +1157,8 @@ Y_lm(r) are real spherical harmonics
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[optdriver]]==0   
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1067,9 +1194,10 @@ computed.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t06.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t06.in]]
+
 
 
 
@@ -1100,9 +1228,10 @@ For the time being, only activated for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v7:  [[tests/v7/Input/t22.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t22.in]]
+
 
 
 
@@ -1127,12 +1256,13 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1, [[quadmom]]  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t10.in]]
-- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-- v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
-- v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t10.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+    - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
+    - v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+
 
 
 
@@ -1154,11 +1284,12 @@ The option prtefg is compatible with spin polarized calculations (see
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- libxc:  [[tests/libxc/Input/t10.in]]
-- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-- v5:  [[tests/v5/Input/t34.in]], [[tests/v5/Input/t36.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t10.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+    - v5:  [[tests/v5/Input/t34.in]], [[tests/v5/Input/t36.in]]
+
 
 
 
@@ -1178,10 +1309,11 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-- v5:  [[tests/v5/Input/t09.in]]
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
+    - v5:  [[tests/v5/Input/t09.in]]
+
 
 
 
@@ -1201,9 +1333,10 @@ Test list:
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=3   
-Test list:
 
-- v5:  [[tests/v5/Input/t35.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t35.in]]
+
 
 
 
@@ -1225,11 +1358,12 @@ Test list:
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=1   
-Test list:
 
-- libxc:  [[tests/libxc/Input/t10.in]]
-- v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
-- v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+??? note "Test list"
+    - libxc:  [[tests/libxc/Input/t10.in]]
+    - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
+    - v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
+
 
 
 
@@ -1249,9 +1383,10 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* 1.0  
 *Only relevant if:* [[usepaw]]==1 and [[pawspnorb]]>= 1   
-Test list:
 
-- v5:  [[tests/v5/Input/t17.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t17.in]]
+
 
 
 
@@ -1274,6 +1409,19 @@ physical situation.
 *Dimensions:* ([[ntypat]])  
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
+
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -1322,6 +1470,16 @@ eV, one has to define :
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
+    - v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t37.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]]
+
+
+
+
 
 
 When [[usedmatpu]]/=0, an initial density matrix (given by [[dmatpawu]]
@@ -1353,9 +1511,10 @@ step
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
-Test list:
 
-- v5:  [[tests/v5/Input/t18.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t18.in]]
+
 
 
 
@@ -1377,6 +1536,19 @@ the ratio of exact exchange, see also [[exchmix]].
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
+
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -1436,9 +1608,10 @@ Suggested acknowledgment:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v7:  [[tests/v7/Input/t26.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t26.in]]
+
 
 
 
@@ -1460,6 +1633,15 @@ Test list:
 *Dimensions:* scalar  
 *Default value:* -1  
 *Only relevant if:* [[usepaw]]==1  
+
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
+    - v5:  [[tests/v5/Input/t06.in]]
+    - v7:  [[tests/v7/Input/t32.in]], [[tests/v7/Input/t60.in]], [[tests/v7/Input/t61.in]], [[tests/v7/Input/t62.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]]
+    - v8:  [[tests/v8/Input/t07.in]]
+
+
+
 
 
 

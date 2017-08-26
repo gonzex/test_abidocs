@@ -70,19 +70,61 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     color: #FFFFFF; 
     font-size: 28px;
     */
+    font-size: 1vw;
     text-align:center;
 }
 
-/* Popover Body 
+/* Popover Body */
 .popover-content {
+    font-size: 1vw;
+    /*
     background-color: coral;
     color: #FFFFFF;
     padding: 25px;
+    */
 }
-*/
 
 /* Popover Arrow
 .arrow {
     border-right-color: red !important;
 } 
 */
+
+
+/* https://facelessuser.github.io/pymdown-extensions/extensions/details/ */
+details {
+  display: block;
+}
+
+details[open] > summary::before {
+  content: "\25BC";
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details summary::before {
+  content: "\25B6";
+  padding-right: 0.5em;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Attach the "no-details" class to details tags
+   in browsers that do not support them to get
+   open/show functionality. */
+details.no-details:not([open]) > * {
+  display: none;
+}
+
+details.no-details:not([open]) summary {
+  display: block;
+}

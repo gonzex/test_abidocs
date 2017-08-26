@@ -284,15 +284,16 @@ class Variable(yaml.YAMLObject):
         if hasattr(self, "tests"):
             # Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136].
             # Test list {paral:[08],tutoparal:[string_03,string_04],v6:[22,24,25],v7:[08],v8:[05]}
-            if len(self.tests) <= 10:
-                #test.suite_name
-                app("Test list:\n")
-                for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
-                    ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
-                    #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
-                    s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
-                    app(s)
-                app("\n")
+            #if len(self.tests) <= 10:
+            #app("Test list:\n")
+            # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
+            app('\n??? note "Test list"')
+            for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
+                ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
+                #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
+                s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
+                app("    " + s)
+            app("\n\n")
 
         # Add text with description.
         if self.text is not None:
@@ -471,15 +472,6 @@ class InputVariables(OrderedDict):
 
     def write_markdown_files(self, workdir):
 
-        #if with_varlist_page:
-            # Write page with full list of variables.
-            #with io.open(os.path.join(workdir, "varlist_" + self.codename + ".md"), "wt", encoding="utf-8") as fh:
-                #fh.write(self.get_vartabs_html())
-                # Add plotly figures.
-                #for i, varset in enumerate(["varbse", "vargw"]):
-                #    fh.write(self.get_plotly_networkx(varset=varset, include_plotlyjs=False)
-                #    fh.write(self.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
-
         # Build markdown page for the different sets.
         print("Generating markdown files with input variables of code: `%s`..." % self.codename)
         for varset in self.all_varset:
@@ -492,26 +484,12 @@ class InputVariables(OrderedDict):
     def groupby_first_letter(self):
         keys = sorted(self.keys(), key=lambda n: n[0].lower())
         od = OrderedDict()
-        for char, names in groupby(keys, key=lambda n: n[0].lower()):
-            od[char] = [self[name] for name in names]
+        for char, group in groupby(keys, key=lambda n: n[0].lower()):
+            od[char] = [self[name] for name in group]
         return od
 
     def get_vartabs_html(self):
         ch2vars = self.groupby_first_letter()
-        # https://jqueryui.com/tabs/
-        #idname = self.codename + "-tabs"
-        #html = '<div id="%s"> <ul>' % idname
-        #for char in ch2vars:
-        #    #html += "<li><a href="#tabs-1">Nunc tincidunt</a></li>"
-        #    id_char = "#%s-%s" % (idname, char)
-        #    html += '<li><a href="%s">%s</a></li>' % (id_char, char)
-        #html += "</ul>"
-        #for char, vlist in ch2vars.items():
-        #    id_char = "%s-%s" % (idname, char)
-        #    p = " ".join(v.name for v in vlist)
-        #    html += '<div id="%s"><p>%s</p></div>' % (id_char, p)
-        #html += "</div>"
-
         # http://getbootstrap.com/javascript/#tabs
         html = """\
 <div>
@@ -522,10 +500,10 @@ class InputVariables(OrderedDict):
         for i, char in enumerate(ch2vars):
             id_char = "#%s-%s" % (idname, char)
             if i == 0:
-                html += '<li role="presentation" class="active"><a href="%s" aria-controls="home" role="tab"\
+                html += '<li role="presentation" class="active"><a href="%s" role="tab"\
                          data-toggle="tab">%s</a></li>\n' % (id_char, char)
             else:
-                html += '<li role="presentation"><a href="%s" aria-controls="home" role="tab"\
+                html += '<li role="presentation"><a href="%s" role="tab"\
                          data-toggle="tab">%s</a></li>\n' % (id_char, char)
         html += """\
 </ul>
@@ -660,10 +638,11 @@ class InputVariables(OrderedDict):
         import networkx as nx
         g, edge_labels = nx.Graph(), {}
         for i, (name, var) in enumerate(self.items()):
-            #if i == 5: break
             if varset != "all" and var.varset != varset: continue
+            parents = var.get_parents()
+            if not parents: continue
             g.add_node(var, name=name)
-            for parent in var.get_parents():
+            for parent in parents:
                 #print(parent, "is parent of ", name)
                 parent = self[parent]
                 g.add_edge(parent, var)
@@ -673,9 +652,9 @@ class InputVariables(OrderedDict):
                 #edge_labels[(task, child)] = " ".join(child.deps[i].exts)
 
         # Get positions for all nodes using layout_type.
-        # e.g. pos = nx.spring_layout(g)
+        # e.g. pos = nx.spring_layout(g, iterations=80)
         pos = getattr(nx, layout_type + "_layout")(g) #, scale=100000, iterations=30)
-        #pos = nx.spring_layout(g, k=2)
+        #pos = nx.spring_layout(g, k=2, iterations=100)
 
         # Add edges as disconnected lines in a single trace and nodes as a scatter trace
         import plotly

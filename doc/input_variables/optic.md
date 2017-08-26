@@ -6,12 +6,13 @@
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -41,12 +42,13 @@ the spectrum.
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:* no default  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -72,12 +74,13 @@ use as string with the filename: ddkfile_X, where X is the file number.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -99,12 +102,13 @@ grid. In order to go to higher frequency, increase the maximum.
 *Variable type:* integer  
 *Dimensions:* (['num_lin_comp'])  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -126,12 +130,13 @@ z respectively. For example 11 would be xx and 32 would mean zy.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1 Ha  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -153,12 +158,13 @@ grid. In order to go to higher frequency, increase the maximum.
 *Variable type:* integer  
 *Dimensions:* (['num_nonlin_comp'])  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -180,12 +186,13 @@ z respectively. For example 111 would be xxx and 321 would mean zyx.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -208,12 +215,13 @@ Note that the directions are along the Cartesian axis.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -237,12 +245,13 @@ Note that the directions are along the Cartesian axis.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Comment:* in Ha  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -269,12 +278,13 @@ opening of the gap due to the GW correction can be used as scissor shift.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 
@@ -295,12 +305,13 @@ from the sum.
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:* no default  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-- v4:  [[tests/v4/Input/t57.in]]
-- v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-- v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
+    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+
 
 
 

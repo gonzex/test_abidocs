@@ -136,41 +136,41 @@ difference, but rather inoffensive ones, like differences in the name of input
 files or timing differences, e.g.:
 
 ```diff
-    2,3c2,3
-    < .Version 8.0.8 of ABINIT
-    < .(MPI version, prepared for a x86_64_linux_gnu5.4 computer)
-    ---
-    > .Version 8.0.7  of ABINIT
-    > .(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
-    17c17
-    < .Starting date : Fri 27 May 2016.
-    ---
-    > .Starting date : Thu 26 May 2016.
-    27c27
-    < - input  file    -> tbase1_1.in
-    ---
-    > - input  file    -> ../tbase1_1.in
-    29,30c29,30
-    < - root for input  files -> tbase1_xi
-    < - root for output files -> tbase1_xo
-    ---
-    > - root for input  files -> tbase1_1i
-    > - root for output files -> tbase1_1o
-    92,93c92,93
-    < - pspini: atom type   1  psp file is ../../../Psps_for_tests/01h.pspgth
-    < - pspatm: opening atomic psp file    ../../../Psps_for_tests/01h.pspgth
-    ---
-    > - pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
-    > - pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
-    166c166
-    <  prteigrs : about to open file tbase1_xo_EIG
-    ---
-    >  prteigrs : about to open file tbase1_1o_EIG
-    214c214
-    < - Total cpu        time (s,m,h):          4.7        0.08      0.001
-    ---
-    > - Total cpu        time (s,m,h):          4.6        0.08      0.001
-    221,229c221,228
+2,3c2,3
+< .Version 8.0.8 of ABINIT
+< .(MPI version, prepared for a x86_64_linux_gnu5.4 computer)
+---
+> .Version 8.0.7  of ABINIT
+> .(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
+17c17
+< .Starting date : Fri 27 May 2016.
+---
+> .Starting date : Thu 26 May 2016.
+27c27
+< - input  file    -> tbase1_1.in
+---
+> - input  file    -> ../tbase1_1.in
+29,30c29,30
+< - root for input  files -> tbase1_xi
+< - root for output files -> tbase1_xo
+---
+> - root for input  files -> tbase1_1i
+> - root for output files -> tbase1_1o
+92,93c92,93
+< - pspini: atom type   1  psp file is ../../../Psps_for_tests/01h.pspgth
+< - pspatm: opening atomic psp file    ../../../Psps_for_tests/01h.pspgth
+---
+> - pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
+> - pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
+166c166
+<  prteigrs : about to open file tbase1_xo_EIG
+---
+>  prteigrs : about to open file tbase1_1o_EIG
+214c214
+< - Total cpu        time (s,m,h):          4.7        0.08      0.001
+---
+> - Total cpu        time (s,m,h):          4.6        0.08      0.001
+221,229c221,228
 ```
 
 (... and what comes after that is related only to timing ...).

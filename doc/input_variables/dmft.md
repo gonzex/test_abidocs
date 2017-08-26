@@ -6,12 +6,13 @@
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
-- v6:  [[tests/v6/Input/t45.in]]
-- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]]
+    - v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -33,9 +34,10 @@ moment and is the FLL double counting.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_solv]]==5  
-Test list:
 
-- v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+
 
 
 
@@ -58,6 +60,16 @@ Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
   
@@ -74,6 +86,16 @@ Number of iterations for the DMFT inner loop.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.3  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -92,9 +114,10 @@ Mixing parameter for the simple mixing of the self-energy.
 *Dimensions:* scalar  
 *Default value:* 6  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_entropy]]==1  
-Test list:
 
-- v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+
 
 
 
@@ -116,6 +139,16 @@ Its value must be greater or equal to 3.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
   
@@ -132,6 +165,16 @@ Number of Matsubara frequencies (linear mesh)
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -150,6 +193,16 @@ Number of frequencies in the log mesh.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 Flag to read/write Self-Energy. If put to one, self-energy is written and read
@@ -166,6 +219,16 @@ at each DFT iteration.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 5  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -210,11 +273,12 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- paral:  [[tests/paral/Input/t99.in]]
-- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t99.in]]
+    - v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -235,10 +299,11 @@ calculations only on t2g orbitals.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0001  
-Test list:
 
-- paral:  [[tests/paral/Input/t99.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t99.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -263,9 +328,10 @@ message is given.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-05  
-Test list:
 
-- v6:  [[tests/v6/Input/t45.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t45.in]]
+
 
 
 
@@ -290,6 +356,16 @@ criterion.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 [[dmftbandf]] is the last band taken into account in the Projected Local
@@ -309,6 +385,16 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
 
 
 
@@ -330,6 +416,16 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
   
@@ -347,10 +443,11 @@ Only for developer purposes. (Introduced by B. Amadon, v6.1.0)
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -377,10 +474,11 @@ but robust methods. Should only be used for debugging.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -405,10 +503,11 @@ simulation. Slow down the simulation.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -431,10 +530,11 @@ try a global move. A value of 5000 means that a global move is tried every
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -459,10 +559,11 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -484,10 +585,11 @@ Example : 2 means the measure is perform every two sweeps.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -513,10 +615,11 @@ requires a lot of I/O band width.
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -542,10 +645,11 @@ perform a fourier transform. The result can be plotted using the
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]]
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -569,10 +673,11 @@ result is written in the "Perturbation.dat" file.
 *Dimensions:* scalar  
 *Default value:* 30  
 *Only relevant if:* [[dmft_solv]]==6 or 7  
-Test list:
 
-- paral:  [[tests/paral/Input/t99.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t99.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -597,12 +702,13 @@ coefficients are given in file whose name ending is
 *Dimensions:* scalar  
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]>=4  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
-- v6:  [[tests/v6/Input/t07.in]]
-- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]]
+    - v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -625,12 +731,13 @@ value.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 *Only relevant if:* [[dmft_solv]]>=4  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
-- v6:  [[tests/v6/Input/t07.in]]
-- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t07.in]]
+    - v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 
@@ -651,9 +758,10 @@ Number of Monte Carlo sweeps. Should be at least 10^6.
 *Dimensions:* scalar  
 *Default value:* [[jdtset]]  
 *Only relevant if:* [[dmft_solv]]>=4  
-Test list:
 
-- v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+??? note "Test list"
+    - v7:  [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]]
+
 
 
 
@@ -678,11 +786,12 @@ the rank of the cpu in the MPI communicator.
 *Dimensions:* scalar  
 *Default value:* 1000  
 *Only relevant if:* [[dmft_solv]]==5  
-Test list:
 
-- paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
-- v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
-- v8:  [[tests/v8/Input/t01.in]]
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - v7:  [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
 
 
 

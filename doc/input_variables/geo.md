@@ -8,6 +8,16 @@
 *Default value:* 0  
 *Only relevant if:* [[spgroup]] != 0  
 
+??? note "Test list"
+    - v2:  [[tests/v2/Input/t59.in]], [[tests/v2/Input/t60.in]]
+    - v3:  [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
+    - v5:  [[tests/v5/Input/t77.in]]
+    - v6:  [[tests/v6/Input/t30.in]], [[tests/v6/Input/t44.in]]
+
+
+
+
 
 
 Set the type of Bravais lattice. The cell defined by [[acell]] and [[rprim]]
@@ -58,9 +68,10 @@ For more details see the space group [ help file
 *Dimensions:* (3,[['nzchempot']],[['ntype']])  
 *Default value:* 0.0  
 *Only relevant if:* [[nzchempot]]/=0  
-Test list:
 
-- v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+
 
 
 
@@ -101,9 +112,10 @@ atomic units).
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3*0  
-Test list:
 
-- v3:  [[tests/v3/Input/t22.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t22.in]]
+
 
 
 
@@ -135,6 +147,19 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
 
+??? note "Test list"
+    - paral:  [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]]
+    - seq:  [[tests/seq/Input/tsv4_55.in]]
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]], [[tests/v1/Input/t90.in]], [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t94.in]], [[tests/v1/Input/t95.in]], [[tests/v1/Input/t96.in]]
+    - v2:  [[tests/v2/Input/t59.in]], [[tests/v2/Input/t60.in]]
+    - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
+    - v5:  [[tests/v5/Input/t33.in]], [[tests/v5/Input/t77.in]]
+    - v6:  [[tests/v6/Input/t30.in]]
+
+
+
+
 
 
 Gives the number of atoms to be read from the input file, in the case the atom
@@ -155,9 +180,10 @@ Despite possible vacancies, cannot be bigger than [[natom]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -202,9 +228,10 @@ for example.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
 
-- v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
+
 
 
 
@@ -227,9 +254,10 @@ is the second dimension.
 *Default value:* None  
 *Only relevant if:* '[[nobj]]==1'
   
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -256,9 +284,10 @@ Look at [[objarf]] for further explanations.
 *Default value:* None  
 *Comment:* [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -288,9 +317,10 @@ toward point 2 (coordinates 4:6).
 *Default value:* None  
 *Comment:*  [[objan]] MUST be provided if [[nobj]]==1.
  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -310,9 +340,10 @@ variables [[objaat]].
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -351,9 +382,10 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Dimensions:* (4)  
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -383,9 +415,10 @@ with different rotation angles.
 *Dimensions:* (12)  
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -419,9 +452,10 @@ Not present in the dtset array (no internal).
 *Dimensions:* ([[objbn]])  
 *Default value:* None  
 *Only relevant if:* [[nobj]]==2  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -448,9 +482,10 @@ Look at [[objbrf]] for further explanations.
 *Default value:* None  
 *Comment:* [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
-Test list:
 
-- v1:  [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -479,9 +514,10 @@ toward point 2 (coordinates 4:6).
 *Dimensions:* scalar  
 *Default value:* None  
 *Comment:*  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -501,9 +537,10 @@ the variables [[objbat]].
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -541,9 +578,10 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Dimensions:* (4)  
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
-Test list:
 
-- v1:  [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -573,9 +611,10 @@ with different rotation angles.
 *Dimensions:* (12)  
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
-Test list:
 
-- v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
+
 
 
 
@@ -607,7 +646,8 @@ which case, only rotations are needed.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -640,11 +680,12 @@ Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t96.in]]
-- v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t38.in]]
-- v4:  [[tests/v4/Input/t28.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t96.in]]
+    - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t38.in]]
+    - v4:  [[tests/v4/Input/t28.in]]
+
 
 
 
@@ -699,9 +740,10 @@ How to determine which spgaxor you need:
 *Dimensions:* scalar  
 *Default value:* 1  
 *Only relevant if:* [[spgroup]]!=0  
-Test list:
 
-- v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t95.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t95.in]]
+
 
 
 
@@ -726,6 +768,17 @@ For details see the space group [ help file
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t94.in]], [[tests/v1/Input/t95.in]], [[tests/v1/Input/t96.in]]
+    - v2:  [[tests/v2/Input/t59.in]], [[tests/v2/Input/t60.in]]
+    - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
+    - v5:  [[tests/v5/Input/t77.in]]
+    - v6:  [[tests/v6/Input/t30.in]], [[tests/v6/Input/t44.in]]
+
+
+
 
 
 
@@ -756,6 +809,13 @@ For details see the space group [ help file
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
+
+
+
 
 
 
@@ -790,10 +850,11 @@ of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 1e-08  
-Test list:
 
-- v5:  [[tests/v5/Input/t78.in]]
-- v7:  [[tests/v7/Input/t13.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t78.in]]
+    - v7:  [[tests/v7/Input/t13.in]]
+
 
 
 
@@ -821,9 +882,10 @@ operations that will have been found.
 *Variable type:* integer  
 *Dimensions:* ([[vacnum]])  
 *Default value:* None  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]]
+
 
 
 
@@ -845,9 +907,10 @@ Useful to created vacancies.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v1:  [[tests/v1/Input/t40.in]]
+??? note "Test list"
+    - v1:  [[tests/v1/Input/t40.in]]
+
 
 
 
@@ -868,9 +931,10 @@ atoms is contained in [[vaclst]].
 *Variable type:* string  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
 
-- v6:  [[tests/v6/Input/t10.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t10.in]]
+
 
 
 

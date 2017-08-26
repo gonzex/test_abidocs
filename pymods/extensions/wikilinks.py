@@ -74,88 +74,14 @@ class WikiLinks(Pattern):
         self.config = config
 
     def handleMatch(self, m):
-        if m.group(2).strip():
+        token = m.group(2).strip()
+        if token:
             base_url, end_url, html_class = self._getMeta()
-            token = m.group(2).strip()
             #url = self.config['build_url'](token, base_url, end_url)
-            #token = re.sub(r'([ ]+_)|(_[ ]+)|([ ]+)', '_', token)
-            #print(token)
-            a = etree.Element('a')
-            if html_class: a.set('class', html_class)
-
-            # [[namespace:name#section|text]]
-            text = None
-            if "|" in token:
-                token, text = token.split("|")
-
-            if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
-                url = token
-
-            elif ":" in token:
-                namespace, value = token.split(":")
-                #print("namespace:" ,namespace, "value:", value)
-
-                if namespace in website.variables_code:
-                    # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
-                    var = website.variables_code[namespace][value]
-                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
-                    if text is None:
-                        text = var.name if not var.is_internal else "%%s" % var.name
-
-                elif namespace == "lesson":
-                    url = "/tutorials/%s" % value
-
-                elif namespace == "help":
-                    url = "/user-guide/help_%s" % value
-                    #text = value
-
-                elif namespace == "topic":
-                    url = "/topics/%s" % value
-                    text = value
-
-                #elif namespace == "input"
-                #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
-
-                else:
-                    msg = "Don't know how to handle namespace `%s` with value `%s`" % (namespace, value)
-                    print("Warning", msg)
-                    url = "FAKE_URL"
-                    #raise ValueError(msg) # FIXME
-
-            elif token.startswith("tests/") or token.startswith("~abinit/tests/"):
-                # Handle [[tests/tutorial/Refs/tbase1_2.out]]
-                #print("In tests/ with token:", token)
-                text = token
-                token = token.replace("~abinit/", "")
-                url = "/" + token
-                # Add popover with test description if input file.
-                if token in website.rpath2test:
-                    a.set("data-toggle", "popover")
-                    a.set("title", website.rpath2test[token].description)
-                    a.set("data-placement", "auto bottom")
-                    a.set("data-trigger", "hover")
-
-            elif token in website.variables_code["abinit"]:
-                # Handle link to Abinit variable e.g. [[ecut]]
-                var = website.variables_code["abinit"][token]
-                url = "/input_variables/%s/#%s" % (var.varset, var.name)
-
-            elif token in website.bib_data.entries:
-                # Handle citation
-                return website.get_citation_aelement(token, html_class=html_class)
-
-            else:
-                #raise ValueError("Don't know how to handle token: `%s`" % token)
-                url = '%s%s%s' % (base_url, token, end_url)
-
-            a.set('href', url)
-            a.text = token if text is None else text
-
+            return website.anchor_from_wikilink(token)
         else:
             print("Warning: empty wikilink", m.group(0))
-            a = ''
-
-        return a
+            return ''
 
     def _getMeta(self):
         """ Return meta data or config data. """

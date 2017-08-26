@@ -6,7 +6,8 @@
 *Variable type:* real  
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -32,7 +33,8 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -53,7 +55,8 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -73,7 +76,8 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -93,7 +97,8 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -116,7 +121,8 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 *Dimensions:* scalar  
 *Default value:* None  
 *Only relevant if:* [[usepawu]]==1  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -137,7 +143,8 @@ is applied. This value is determined from [[lpawu]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -160,7 +167,8 @@ wavefunction array (cg), the density array (rho), etc .
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -184,7 +192,8 @@ the pseudopotential, where it is called "zion"), and the input variable
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -212,7 +221,8 @@ which the space is shared.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -240,7 +250,8 @@ which the space is shared.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -263,7 +274,8 @@ It is an internal variable, determined from [[ecuteps]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -285,7 +297,8 @@ It is an internal variable, determed from [[ecutsigx]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* None  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -309,9 +322,10 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 *Dimensions:* (3)  
 *Default value:* 3*0  
 *Only relevant if:* [[nqpt]]==1  
-Test list:
 
-- v3:  [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]]
+??? note "Test list"
+    - v3:  [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]]
+
 
 
 
@@ -346,7 +360,8 @@ code).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -371,6 +386,19 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
 
+??? note "Test list"
+    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in]]
+    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
+    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]]
+    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
+    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v8:  [[tests/v8/Input/t01.in]]
+
+
+
+
 
 
 This variable is determined by the pseudopotentials files. PAW calculations
@@ -390,7 +418,8 @@ available with either type of calculation.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -411,7 +440,8 @@ This internal variable is set to 1 when the recursion method is activated (see
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -436,7 +466,8 @@ Automatically determined from the value of [[ixc]].
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[AUTO_FROM_PSP]]  
-Test list:
+
+??? note "Test list"
 
 
 

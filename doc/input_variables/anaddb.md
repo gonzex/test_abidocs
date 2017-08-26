@@ -6,9 +6,10 @@
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 2e-05  
-Test list:
 
-- v5:  [[tests/v5/Input/t91.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t91.in]]
+
 
 
 
@@ -29,11 +30,12 @@ are replaced by Gaussians of width **a2fsmear** (by default in Hartree).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -58,6 +60,16 @@ of uniaxial crystals, the z-axis should be chosen along the optical axis.
 *Dimensions:* scalar  
 *Default value:* 1  
 *Comment:* was 0 before v5.3  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v2:  [[tests/v2/Input/t24.in]]
+    - v5:  [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+
+
+
 
 
 
@@ -125,7 +137,8 @@ present status of understanding, one should always use the **asr**=2 option ).
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -149,6 +162,18 @@ the next bigger is smaller than **wtol2**.
 *Dimensions:* (array '[[anaddb:natifc]]')  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
 The actual numbers of the atoms for which the interatomic force constant have
@@ -168,10 +193,11 @@ confusing, and should be taken away in one future version - sorry for this).
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 999.0  
-Test list:
 
-- v6:  [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -193,6 +219,18 @@ the descirption is strange ...!
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -222,6 +260,18 @@ should be replaced by routines used by the main abinit code.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
+    - v7:  [[tests/v7/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
+
 
 
 Set the treatment of the Charge Neutrality requirement for the effective
@@ -249,6 +299,18 @@ effective charges.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
+
 
 
 Integer. Frequency-dependent dielectric tensor flag.  
@@ -271,6 +333,18 @@ Integer. Frequency-dependent dielectric tensor flag.
 *Dimensions:* scalar  
 *Default value:* 1  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
   * 0 => the dipole-dipole interaction is not handled separately in the treatment of the interatomic forces. This option is available for testing purposes or if effective charge and/or dielectric tensor is not available in the derivative database. It gives results much less accurate than **dipdip**=1.
@@ -289,7 +363,8 @@ The abinit input variable [[dipdip]] has a similar meaning.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 4.5E-06 Hartree = 1 cm<sup>-1</sup>  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -310,9 +385,10 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 4.5E-05 Hartree = 10 cm<sup>-1</sup>  
-Test list:
 
-- v5:  [[tests/v5/Input/t91.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t91.in]]
+
 
 
 
@@ -331,9 +407,10 @@ Test list:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v2:  [[tests/v2/Input/t15.in]]
+??? note "Test list"
+    - v2:  [[tests/v2/Input/t15.in]]
+
 
 
 
@@ -354,10 +431,11 @@ sum and different is reported in the output file **dossum**.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.25  
-Test list:
 
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -380,6 +458,18 @@ bigger is smaller than **dostol**.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
+    - v2:  [[tests/v2/Input/t17.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v5:  [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
+
 
 
   * 0 => do not write the phonon eigenvectors;
@@ -397,10 +487,11 @@ bigger is smaller than **dostol**.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+
 
 
 
@@ -426,10 +517,11 @@ Flag for calculation of elastic and compliance tensors
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v5:  [[tests/v5/Input/t93.in]]
-- v6:  [[tests/v6/Input/t93.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t93.in]]
+    - v6:  [[tests/v6/Input/t93.in]]
+
 
 
 
@@ -452,6 +544,15 @@ and [[anaddb:ep_extrael]] should not be used at the same time.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
+
+
+
 
 
 If **elphflag** is 1, anaddb performs an analysis of the electron-phonon
@@ -468,9 +569,10 @@ coupling.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+
 
 
 
@@ -489,6 +591,16 @@ Smearing width for the Fermi surface integration (in Hartree by default).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v2:  [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v6:  [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -510,9 +622,10 @@ the console log file, for which Hartree units are used).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t92.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t92.in]]
+
 
 
 
@@ -535,9 +648,10 @@ equal weight is given to all k-points, for all bands between
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t92.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t92.in]]
+
 
 
 
@@ -557,10 +671,11 @@ integration, instead of the upper bound. See also [[anaddb:telphint]].
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v6:  [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -584,7 +699,8 @@ used at the same time. ([[anaddb:elphflag]]=1).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -607,12 +723,13 @@ are treated symmetrically.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
-- v5:  [[tests/v5/Input/t89.in]]
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -634,9 +751,10 @@ transport calculations **ep_keepbands** must be set to 1.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t94.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t94.in]]
+
 
 
 
@@ -658,9 +776,10 @@ anaddb input (ngqpt)
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
-Test list:
 
-- v6:  [[tests/v6/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t94.in]]
+
 
 
 
@@ -680,9 +799,10 @@ time approximation ([[anaddb:ifltransport]]=3).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t91.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t91.in]]
+
 
 
 
@@ -702,9 +822,10 @@ yambo code.
 *Variable type:* real  
 *Dimensions:* (3,[[anaddb:ep_nqpt]])  
 *Default value:* (3*[[anaddb:ep_nqpt]])*0  
-Test list:
 
-- v5:  [[tests/v5/Input/t94.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t94.in]]
+
 
 
 
@@ -726,11 +847,12 @@ q-points to be found in the GKK file, independently of the normal anaddb input
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t89.in]]
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -756,10 +878,11 @@ or high symmetry points. I do not know why...
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -784,10 +907,11 @@ phonon mode, then let it relax in abinit afterwards.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 10.0  
-Test list:
 
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -807,10 +931,11 @@ in Hartree.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.0  
-Test list:
 
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -830,9 +955,10 @@ in Hartree.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t91.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t91.in]]
+
 
 
 
@@ -852,9 +978,10 @@ gkqfile. This reduces strongly the memory needed for an electron-phonon run.
 *Variable type:* string  
 *Dimensions:* ([[anaddb:gruns_nddbs]])  
 *Default value:* Empty  
-Test list:
 
-- v8:  [[tests/v8/Input/t45.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t45.in]]
+
 
 
 
@@ -881,9 +1008,10 @@ finite difference.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v8:  [[tests/v8/Input/t45.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t45.in]]
+
 
 
 
@@ -903,7 +1031,8 @@ This variable defines the number of DDB files (read from
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:natfix]])  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -924,10 +1053,11 @@ constrained polarization. See [[anaddb:polflag]].
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:natprj_bs]])  
 *Default value:* 0*'[[anaddb:natprj_bs]]'  
-Test list:
 
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -947,6 +1077,18 @@ eigenvectors, giving a weighted phonon band structure file.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
 
 
 
@@ -976,6 +1118,18 @@ the matrix in local coordinates).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -1007,6 +1161,18 @@ for checking purpose, and if there is not enough information in the DDB.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
 For each atom in the list [[anaddb:atifc]] (generic atoms), **ifcout** give
@@ -1025,12 +1191,13 @@ distance with respect to the generic atom.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
-- v5:  [[tests/v5/Input/t89.in]]
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -1052,10 +1219,11 @@ calculates the k-dependent relaxation time. (needs[[anaddb:elphflag]] = 1)
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+
 
 
 
@@ -1077,9 +1245,10 @@ Internal strain tensor flag.
 *Variable type:* integer  
 *Dimensions:* ([[anaddb:nstrfix]])  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]]
+
 
 
 
@@ -1108,11 +1277,12 @@ See [[anaddb:polflag]].
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -1133,7 +1303,8 @@ phonon calculations using nesting functions or tetrahedron integration.
 *Variable type:* integer  
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1155,6 +1326,15 @@ not work yet, as of June 2010.
 *Dimensions:* scalar  
 *Default value:* 0.1  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
+
+
+
 
 
 Average electron-electron interaction strength, for the computation of the
@@ -1171,7 +1351,8 @@ superconducting Tc using Mc-Millan's formula.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1193,6 +1374,18 @@ polarization. See [[anaddb:polflag]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
 Give the number of atoms for which IFCs are written and eventually analysed.
@@ -1209,10 +1402,11 @@ The list of these atoms is provided by [[anaddb:atifc]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -1232,13 +1426,14 @@ will be output. The list of these atoms is provided by [[iatprj_bs@anaddb]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 800  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-- v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v5:  [[tests/v5/Input/t22.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1259,9 +1454,10 @@ frequency sampled. The first channel begins at 0.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 20  
-Test list:
 
-- v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+
 
 
 
@@ -1283,10 +1479,11 @@ along the path using the coordinates given in the array [[anaddb:qpath]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1309,6 +1506,17 @@ equidistant values from [[anaddb:frmin]] to [[anaddb:frmax]].
 *Default value:* 3*0  
 *Comment:* (will not work)  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
+    - v6:  [[tests/v6/Input/t76.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
 The Monkhorst-Pack grid linear dimensions, for the finer of the series of fine
@@ -1328,6 +1536,18 @@ distribution) or for the DOS.
 *Default value:* 3*0  
 *Comment:* (will not work)  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
+
 
 
 The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
@@ -1343,13 +1563,14 @@ The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 4  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-- v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v5:  [[tests/v5/Input/t22.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1372,11 +1593,12 @@ ngqpt_igrid(ii)=(ng2qpt(ii)*igrid)/**ngrids**
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]]
-- v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
 
 
 
@@ -1401,6 +1623,18 @@ Non-linear properties flag.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
+
 
 
 The number of wavevectors in phonon list 1, used for interpolation of the
@@ -1421,6 +1655,17 @@ the corresponding eigenfrequencies will be printed.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
+    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
 
 
 
@@ -1452,6 +1697,16 @@ without non-analyticities.
 *Dimensions:* scalar  
 *Default value:* 0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+
+
+
+
 
 
 Number of q-points in the array [[anaddb:qpath]] defining the path along which
@@ -1468,6 +1723,18 @@ the phonon band structure and phonon linewidths are interpolated.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -1488,11 +1755,12 @@ sampling (Warning: not BCC lattice, BCC *sampling*), and 4 for FCC sampling
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v2:  [[tests/v2/Input/t17.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v8:  [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - v2:  [[tests/v2/Input/t17.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1526,9 +1794,10 @@ Transform.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]]
+
 
 
 
@@ -1548,6 +1817,18 @@ constrained polarization. See [[anaddb:polflag]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
 
 
 
@@ -1572,13 +1853,14 @@ temperature.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 10  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-- v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v5:  [[tests/v5/Input/t22.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1601,9 +1883,10 @@ converged when the convergence criterion based on [[anaddb:dostol]] and
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v6:  [[tests/v6/Input/t76.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t76.in]]
+
 
 
 
@@ -1624,7 +1907,8 @@ velocities. The output file will be appended _BTRAP
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1647,10 +1931,11 @@ for Primitive Cell INFOrmation.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]]
+
 
 
 
@@ -1678,9 +1963,10 @@ Flag for calculation of piezoelectric tensors
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+
 
 
 
@@ -1723,9 +2009,10 @@ calculation of the effective charges and the piezoelectric tensor.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v2:  [[tests/v2/Input/t15.in]]
+??? note "Test list"
+    - v2:  [[tests/v2/Input/t15.in]]
+
 
 
 
@@ -1748,7 +2035,8 @@ available options are:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1769,9 +2057,10 @@ Test list:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v8:  [[tests/v8/Input/t51.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t51.in]]
+
 
 
 
@@ -1796,10 +2085,11 @@ The available options are:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
-- v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+
 
 
 
@@ -1830,7 +2120,8 @@ through the input variable [[anaddb:dosdeltae]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1865,11 +2156,12 @@ this array must be zero.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -1889,11 +2181,12 @@ Test list:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-- v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-- v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+
 
 
 
@@ -1929,9 +2222,10 @@ reciprocal space, moreover off-diagonal elements are not allowed, i.e kptrlatt
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v8:  [[tests/v8/Input/t46.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t46.in]]
+
 
 
 
@@ -1954,7 +2248,8 @@ phonon band structure. Possible values:
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -1980,9 +2275,10 @@ For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v8:  [[tests/v8/Input/t45.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t45.in]]
+
 
 
 
@@ -2001,6 +2297,18 @@ Control the volume of printed output.
 *Variable type:* real  
 *Dimensions:* ([[anaddb:nqshft]])  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -2058,11 +2366,12 @@ For a FCC lattice, it is possible to sample only the Gamma point by using a
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 3* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-- v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-- v5:  [[tests/v5/Input/t22.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v5:  [[tests/v5/Input/t22.in]]
+
 
 
 
@@ -2083,9 +2392,10 @@ Note that [[anaddb:nqshft]] for this series of grids corresponds to 1.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v5:  [[tests/v5/Input/t94.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t94.in]]
+
 
 
 
@@ -2108,6 +2418,16 @@ to a regular grid as in the rest of anaddb (using [[anaddb:ngqpt]]).
 *Dimensions:* (3,[[anaddb:nqpath]])  
 *Default value:* 0.0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+
+
+
+
 
 
 It is used to generate the path along which the phonon band structure and
@@ -2128,6 +2448,18 @@ for the output of the nesting function if [[anaddb:prtnest]]=1.
 *Variable type:* real  
 *Dimensions:* (4,[[anaddb:nph1l]])  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -2153,6 +2485,17 @@ fourth is stored in the array qnrml1(nph1l).
 *Variable type:* real  
 *Dimensions:* (4,[[anaddb:nph2l]])  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]]
+    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
+    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
 
 
 
@@ -2186,9 +2529,10 @@ fourth is stored in the array qnrml2(nph2l).
 *Variable type:* integer  
 *Dimensions:* (3)  
 *Default value:* 0  
-Test list:
 
-- v6:  [[tests/v6/Input/t81.in]]
+??? note "Test list"
+    - v6:  [[tests/v6/Input/t81.in]]
+
 
 
 
@@ -2213,11 +2557,12 @@ Should implement Gaal-Nagy's algorithm in PRB **73** 014117.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -2247,9 +2592,10 @@ For the time being, **ramansr**=1 is the preferred choice.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+
 
 
 
@@ -2269,9 +2615,10 @@ constrained polarization. See [[anaddb:polflag]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+
 
 
 
@@ -2291,11 +2638,12 @@ relaxation at constrained polarization. See [[anaddb:polflag]].
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-- v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
 
 
 
@@ -2322,9 +2670,10 @@ is less accurate.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* zero  
-Test list:
 
-- v5:  [[tests/v5/Input/t95.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t95.in]]
+
 
 
 
@@ -2349,11 +2698,12 @@ not be put to zero.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-- v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
 
 
 
@@ -2385,6 +2735,13 @@ The result with non-zero **selectz** are unphysical.
 *Default value:* 1  
 *Comment:* (was 0 before v5.3)  
 
+??? note "Test list"
+    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t39.in]]
+    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
+
+
+
+
 
 
 If **symdynmat** is equal to 1, the dynamical matrix is symmetrized before the
@@ -2408,9 +2765,10 @@ additional symmetrization.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- v5:  [[tests/v5/Input/t90.in]]
+??? note "Test list"
+    - v5:  [[tests/v5/Input/t90.in]]
+
 
 
 
@@ -2431,9 +2789,10 @@ should always be used, except for debugging or test purposes.
 *Variable type:* real  
 *Dimensions:* (3)  
 *Default value:* 0.0  
-Test list:
 
-- v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+??? note "Test list"
+    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+
 
 
 
@@ -2453,11 +2812,12 @@ Target value of the polarization in cartesian coordinates and in C/m^2. See
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 1  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-- v5:  [[tests/v5/Input/t92.in]]
-- v6:  [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - v5:  [[tests/v5/Input/t92.in]]
+    - v6:  [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]]
+
 
 
 
@@ -2482,6 +2842,18 @@ phonon quantities.
 *Dimensions:* scalar  
 *Default value:* 100.0  
 
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
+
 
 
 Increment of the temperature in Kelvin, for thermodynamical and el-phon
@@ -2504,6 +2876,18 @@ temperature.
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 100.0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t89.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
+    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
+
+
 
 
 
@@ -2528,6 +2912,18 @@ anharmonic effects might be important already at room temperature.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
+
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
+    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]]
+    - v7:  [[tests/v7/Input/t54.in]]
+    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t51.in]]
+
+
+
 
 
 
@@ -2564,13 +2960,14 @@ Input variables that may be needed if this flag is activated:
 *Variable type:* real  
 *Dimensions:* scalar  
 *Default value:* 0.05  
-Test list:
 
-- tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-- v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-- v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-- v5:  [[tests/v5/Input/t22.in]]
-- v8:  [[tests/v8/Input/t49.in]]
+??? note "Test list"
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
+    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
+    - v5:  [[tests/v5/Input/t22.in]]
+    - v8:  [[tests/v8/Input/t49.in]]
+
 
 
 
@@ -2592,7 +2989,8 @@ the next bigger is smaller than **thmtol**.
 *Variable type:* integer  
 *Dimensions:* scalar  
 *Default value:* 0  
-Test list:
+
+??? note "Test list"
 
 
 
@@ -2615,9 +3013,10 @@ needed. Note that the coarse k-grid must be a subset of the fine k-grid.
 *Variable type:* real  
 *Dimensions:* (2)  
 *Default value:* 2*0.0d0  
-Test list:
 
-- v8:  [[tests/v8/Input/t45.in]]
+??? note "Test list"
+    - v8:  [[tests/v8/Input/t45.in]]
+
 
 
 

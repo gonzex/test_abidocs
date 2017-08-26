@@ -1,4 +1,4 @@
-# v8.4
+## v8.4
 
 Many thanks to the contributors to the ABINIT project between
 January 2017 and May 2017. 
@@ -186,7 +186,7 @@ D.19 Numerous miscellaneous additional bug fixes and improvements of documentati
 
 * * *
 
-# v8.2
+## v8.2
     
 Many thanks to the contributors to the ABINIT project between
 June 2016 and January 2017. These release notes

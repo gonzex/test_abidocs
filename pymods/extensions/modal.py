@@ -51,7 +51,8 @@ class IncludePreprocessor(Preprocessor):
             else:
                 args = m.group(1).split()
                 action = args.pop(0)
-                print("Triggering action:", action, "with args:", str(args))
+                if website.verbose:
+                    print("Triggering action:", action, "with args:", str(args))
                 if action == "editor":
                     if len(args) > 1:
                         new_lines.extend(editor_tabs(args, title=None).splitlines())
