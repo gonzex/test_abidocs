@@ -64,30 +64,23 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
 } 
 */
 
-/* Popover Header */
+/* Popover Header 
 .popover-title {
-    /* background-color: #73AD21;
-    color: #FFFFFF; 
-    font-size: 28px;
-    */
+    //background-color: #73AD21;
+    //color: #FFFFFF; 
+    //font-size: 28px;
     font-size: 1vw;
     text-align:center;
 }
+*/
 
-/* Popover Body */
+/* Popover Body 
 .popover-content {
     font-size: 1vw;
-    /*
-    background-color: coral;
-    color: #FFFFFF;
-    padding: 25px;
-    */
+    //background-color: coral;
+    //color: #FFFFFF;
+    //padding: 25px;
 }
-
-/* Popover Arrow
-.arrow {
-    border-right-color: red !important;
-} 
 */
 
 

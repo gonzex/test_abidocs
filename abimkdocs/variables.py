@@ -240,6 +240,10 @@ class Variable(yaml.YAMLObject):
         import re
         parents = []
         WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
+        # TODO
+        #    parent = self[parent]
+        # KeyError: "'nzchempot'
+        #WIKILINK_RE = r'\[\[([^\[]+)\]\]'
         if isinstance(self.dimensions, (list, tuple)):
             for dim in self.dimensions:
                 dim = str(dim)
@@ -457,6 +461,14 @@ class VarDatabase(OrderedDict):
             vlist = yaml.load(f)
 
         new = cls()
+        # Read list of strings with possible character of variables.
+        with io.open(os.path.join(os.path.dirname(yaml_path), "characteristics.yml"), "rt", encoding="utf-8") as f:
+            new.characteristics = yaml.load(f)
+
+        # Read list of `external_vars` and convert to dict {name --> description}
+        with io.open(os.path.join(os.path.dirname(yaml_path), "list_externalvars.yml"), "rt", encoding="utf-8") as f:
+            new.external_vars = {k: v for k, v in yaml.load(f)}
+
         codes = set(v.code for v in vlist)
         for codename in sorted(codes):
             items = [(v.name, v) for v in vlist if v.code == codename]
@@ -470,7 +482,7 @@ class VarDatabase(OrderedDict):
 
 class InputVariables(OrderedDict):
 
-    def write_markdown_files(self, workdir):
+    def write_markdown_files(self, workdir, comment=None):
 
         # Build markdown page for the different sets.
         print("Generating markdown files with input variables of code: `%s`..." % self.codename)
@@ -478,6 +490,7 @@ class InputVariables(OrderedDict):
             var_list = [v for v in self.values() if v.varset == varset]
             #print(varset, var_list)
             with io.open(os.path.join(workdir, varset + ".md"), "wt", encoding="utf-8") as fh:
+                if comment: fh.write(comment)
                 for var in var_list:
                     fh.write(var.to_markdown())
 
