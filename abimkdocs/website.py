@@ -294,87 +294,98 @@ class Website(object):
 
         print("Generating Markdown files with topics ...")
         workdir = os.path.join(self.root, "topics")
+        repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
+
+        with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
+            all_topics = sorted(yaml.load(fh))
 
         # FIXME: this won't find all topics e.g AbiPy
-        all_topics = set()
-        for code, vd in self.variables_code.items():
-            for var in vd.values():
-                all_topics.update(var.topic_tribes.keys())
-        all_topics = sorted(all_topics)
+        #all_topics = set()
+        #for code, vd in self.variables_code.items():
+        #    for var in vd.values():
+        #        all_topics.update(var.topic_tribes.keys())
+        #all_topics = sorted(all_topics)
 
+        # Write index.md
         index_md = ["Alphabetical list of topics"]
         for firstchar, group in groupby(all_topics, key=lambda t: t[0]):
-            index_md.append("## *%s*" % firstchar)
+            index_md.append("## %s" % firstchar)
             index_md.extend("- [[topic:%s]]" % topic for topic in group)
-
         with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
             fh.write("\n".join(index_md))
 
-        for code, vd in self.variables_code.items():
+        #for code, vd in self.variables_code.items():
             # Get list of topics for this `code`.
-            topics = set()
-            for var in vd.values():
-                topics.update(var.topic_tribes.keys())
+            #topics = set()
+            #for var in vd.values():
+            #    topics.update(var.topic_tribes.keys())
 
+        for topic in all_topics:
             # Read template and prepare markdown string
-            repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
-            for topic in sorted(topics):
-                with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
-                    tmpl = yaml.load(fh)[0]
-                    front = """\
+            with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
+                tmpl = yaml.load(fh)[0]
+
+            front = """\
 ---
 authors: {}
 ---
 """.format(tmpl.authors)
 
-                    introduction = html2text(tmpl.introduction)
+            introduction = html2text(tmpl.introduction)
 
-                    # Find variables associated to this topic
-                    # Group vlist by tribes and write list with links.
-                    # TODO: Can we have multiple tribes with the same topic?
-                    vlist = [var for var in vd.values() if topic in var.topic_tribes]
-                    related_variables = "No variable associated to this topic."
-                    if vlist:
-                        lines = []
-                        items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: t[0])
-                        #print([item[0] for item in items])
-                        for tribe, group in groupby(items, key=lambda t: t[0]):
-                            lines.append("*%s:*\n" % tribe)
-                            lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
-                            lines.append(" ")
-                        related_variables = "\n".join(lines)
+            # Find list of variables associated to this topic
+            # Group vlist by tribes and write list with links.
+            # TODO: Can we have multiple tribes with the same topic?
 
-                    # Find tests associated to this `topic`
-                    # Group tests by `suite_name` and write list with links.
-                    items = [(rpath, test) for (rpath, test) in self.rpath2test.items() if topic in test.topics]
-                    selected_input_files = "No input file associated to this topic."
-                    if items:
-                        items = sorted(items, key=lambda t: t[1].suite_name)
-                        lines = []
-                        for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
-                            lines.append("*%s:*\n" % suite_name)
-                            lines.extend("- [[%s]]" % rpath for (rpath, test) in group)
-                            lines.append(" ")
-                        selected_input_files = "\n".join(lines)
+            # Get list of topics for this `code`.
+            vlist = []
+            for code, vd in self.variables_code.items():
+                for var in vd.values():
+                    if topic in var.topic_tribes:
+                        vlist.append(var)
 
-                    # Build front + markdown and write md file.
-                    text = front + """
-## ** Introduction **
+            related_variables = "No variable associated to this topic."
+            if vlist:
+                lines = []
+                items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: t[0])
+                #print([item[0] for item in items])
+                for tribe, group in groupby(items, key=lambda t: t[0]):
+                    lines.append("*%s:*\n" % tribe)
+                    lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
+                    lines.append(" ")
+                related_variables = "\n".join(lines)
+
+            # Find tests associated to this `topic`
+            # Group tests by `suite_name` and write list with links.
+            items = [(rpath, test) for (rpath, test) in self.rpath2test.items() if topic in test.topics]
+            selected_input_files = "No input file associated to this topic."
+            if items:
+                items = sorted(items, key=lambda t: t[1].suite_name)
+                lines = []
+                for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
+                    lines.append("*%s:*\n" % suite_name)
+                    lines.extend("- [[%s]]" % rpath for (rpath, test) in group)
+                    lines.append(" ")
+                selected_input_files = "\n".join(lines)
+
+            # Build front + markdown and write md file.
+            text = front + """
+## Introduction
 
 {introduction}
 
-## ** Related Input Variables **
+## Related Input Variables
 
 {related_variables}
 
-## ** Selected Input Files **
+## Selected Input Files
 
 {selected_input_files}
 
 """.format(**locals())
 
-                with io.open(os.path.join(workdir, topic + ".md"), "wt", encoding="utf-8") as fh:
-                    fh.write(text)
+            with io.open(os.path.join(workdir, topic + ".md"), "wt", encoding="utf-8") as fh:
+                fh.write(text)
 
         # Build page with full list of tests grouped by `suite_name`.
         print("Generating Markdown file with tests ...")
