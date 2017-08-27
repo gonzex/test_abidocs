@@ -144,7 +144,7 @@ pages:
 - Theory:
     - MBPT: theory/theory_mbt.md
     - Additional Material: theory/additional_material.md
-    - Bibliography: bibliography.md
+    - Bibliography: theory/bibliography.md
 - Developers:
     - Abimkdocs: developers/abimkdocs.md
     - Markdown: developers/markdown.md
@@ -175,7 +175,7 @@ markdown_extensions:
         #insert_as_script: True
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
-  - pymdownx.critic
+  #- pymdownx.critic
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.magiclink:
@@ -188,7 +188,7 @@ markdown_extensions:
   - pymdownx.tilde
   # Abinit extensions.
   - abimkdocs.wikilinks:
-  - abimkdocs.modal:
+  - abimkdocs.preprocessor:
         
 #strict: true
 

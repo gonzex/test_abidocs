@@ -4,6 +4,9 @@ authors: MG, XG
 
 *Proof of concept* website available at <https://gmatteo.github.io/test_abidocs/>
 
+
+List of variables, lessons of the tutorial, help files, ABINIT topics, bibliography, theory documents 
+are all important documentation files, posted on the Web, to help the users. 
 This page describes the details of the documentation system of Abinit and how to contribute. 
 We also have a more basic overview on how to contribute to this guide or the user guide.
 
@@ -76,34 +79,76 @@ Open up `http://127.0.0.1:8000/` in your browser, and you'll see the default hom
     but only re-build files that have changed. 
     This option is designed for site development purposes and is **much faster** than the default live reloading.
 
-Note that the HTML files will be produced in a temporary directory and therefore are **not** under revision control
-(the real source is represented by the `.md` files and the other `.yml` files that can be changed by the developers
-and these files under git control).
+Note that the HTML files are be produced in a temporary directory and therefore they are **not** under revision control.
+The real source is represented by the `.md` files and the other `.yml` files, these are the files that can be 
+changed by the developers and are therefore under revision control).
 
-
-## The ABINIT HTML doc
-
-List of variables, lessons of the tutorial, help files, ABINIT topics, bibliography, theory documents 
-are all important documentation files, posted on the Web, to help the users. 
 The `~abinit/doc/mksite.py` script generates most of these files by converting markdown files to HTML.
-
 This script:
 
-- Reads information from: 
-    - (i) a set of YAML files, 
-    - (ii) a bibtex file, 
-    - (iii) input files contained in tests/*/Input. Files (i) and (ii) are contained in subdirectories */origin_files.
-- Performs some checks.
-- Establishes intermediate dictionaries and databases.
-- Expands special strings, of the form %%"[[tag]]"%%, to create HTML links.
-- Creates the needed HMTL files 
+* Starts by creating python objects databases using the information reported in 
+    - the `abivars.yml file` for the input variables,
+    - the `abiref.bib` for the list of Bibliographic references,
+    - a set of YAML files, 
+    - the input files contained in `tests/*/Input`. 
+* Performs some checks.
+* Generate markdown files 
+* Invoke `mkdocs` to parse the markdown files declared in `mkdocs.yml`
+* Expands special strings, of the form `[[namespace:name#section|text]]` to create HTML links.
+* Creates the needed HMTL files 
 
-The expansion of special strings is documented in [[developers:link_shortcuts]]. 
+The expansion of special strings is documented in the [links section](/docs/developers/markdown#links). 
 It can be used in all the YAML files mentioned below. 
 For equations/formulas, [Mathjax](http://docs.mathjax.org/en/latest/mathjax.html) is activated, and allows
 to process and visualize LaTeX formulas, see also [[developers:link_shortcuts]].
 
-## Front matter
+## Website organization
+
+The markdown files are stored inside the `doc` directory according to the following structure:
+
+```console
+├── doc
+│   ├── about
+│   ├── css
+│   ├── data
+│   ├── developers
+│   ├── extra_javascript
+│   ├── images
+│   ├── input_variables
+│   ├── tests
+│   ├── theory
+│   ├── topics
+│   ├── tutorials
+│   └── user-guide
+```
+
+* about: Files with release notes, license
+* *css*: Extra CSS files used by the website
+* *data*: 
+* developers: Documentation for developers (website, git, coding rules...)
+* *extra_javascript*: Extra javascript code used by the website
+* *images*: logos and favicon
+* input_variables: files with input variables (automatically generated).
+* *tests*: symbolic links to the `~abinit/tests` directory.
+* theory: files with 
+* topics: files with Abinit topics
+* tutorials: official Abinit lessons
+* user-guide: help files for main executables
+
+The directory in *italic* are mainly used to build the website and are not visible outside.
+The other directories contain markdown files, each directory is associated to an 
+entry in the website menu (see `pages` in `mkdocs.yml`).
+Each directory has `index.md` file that is supposed to give an overview 
+
+`lessons/lesson_bse.html` becomes `lesson/bse.md`
+
+images and additional material associated to the lesson are stored in the `lesson/bse_assets`
+
+!!! note
+
+
+
+### Front matter
 
 Front matter is the first section of the markdown file and must take the form of valid YAML 
 document enclosed between triple-dashed lines. Here is a basic example:
@@ -121,10 +166,11 @@ These variables will then be available to you to access using Liquid tags both f
 file and also in any layouts or includes that the page or post in question relies on.
 For instance, the list of authors is reported in the HTML page footer.
 
+## How to add/modify?
 
-## Input variables: How to add/modify?
+### Input variables
 
-Edit the file `~abinit/doc/input_variables/origin_files/abinit_vars.yml` using the Abivars.jar GUI:
+Edit the file `abinit_vars.yml` with the Abivars.jar GUI:
 
     $ java -jar Abivars.jar
   
@@ -141,18 +187,18 @@ Just editing one input variable and saving the changes will only go to some inte
 NOT saving your modifications in the YAML storage file.
 Then, build the HTML using generate_doc.py.
 
-## Bibliographic reference: how to add/modify?
+### Bibliographic reference
 
-Edit the file `~abinit/doc/bibliography/origin_files/abiref.bib` with your preferred editor. 
+Edit the file `~abinit/doc/abiref.bib` with your preferred editor. 
 It is a standard bibtex file.
 Note that the ID must be of the form "FirstauthornameYEAR", e.g. "Amadon2008" 
 (start with an uppercase letter, then lower case, then four-digit year). 
 Possibly, a letter might be added in case of ambiguity: e.g. there exists also `Amadon2008a`
 Then, build the HTML using `mksite.py`.
 
-## Topics: how to add/modify?
+### Topics
 
-The topic HTML files are assembled by generate_doc.py from different sources.
+The topic HTML files are assembled by `mksite.py` from different sources.
 
 The high-level information is contained in ~abinit/doc/topics/origin_files/topic_NAME.yml,
 where NAME is the name of the topic. The first section ("introduction") is also found in this file,
@@ -167,20 +213,20 @@ is assembled from the information in each of these input files (add a line "#%% 
 The bibliography list is assembled from the references cited in the "introduction" section, 
 that use [[developers:link_shortcuts|Shortcuts for Web links]].
 
-Note the file default_topic.yml, whose components are used in case they are not specified explicitly 
-in the more specific file topic_NAME.yml.
+Note the file `default_topic.yml`, whose components are used in case they are not specified explicitly 
+in the more specific file `topic_NAME.yml`.
 
-The list of topics is found in the file ~abinit/doc/topics/origin_files/list_of_topics.yml .
+The list of topics is found in the file `~abinit/doc/topics/origin_files/list_of_topics.yml`.
 
 Thus, if you want to a modify "topic" Web page, the "introduction" and "tutorial" sections as well as 
-the name and some other high level info can be modified by editing ~abinit/doc/topics/origin_files/topic_NAME.yml, 
+the name and some other high level info can be modified by editing `~abinit/doc/topics/origin_files/topic_NAME.yml`, 
 while you have to edit the relevant input variables and input files to modify the next sections. 
 You can modify the bibliography section only through a modification of the "introduction" and "tutorial" sections. 
 
-To add a new topic, add the name in list_of_topics.yml, and then create a corresponding topic_NAME.yml file.
+To add a new topic, add the name in `list_of_topics.yml`, and then create a corresponding `topic_NAME.yml` file.
 The different components are used by the script generate_doc.py as follows:
 
-* `name`: must be the name of the topics, also used in the name of file (topic_name.yml)
+* `name`: must be the name of the topics, also used in the name of file (`topic_name.yml`)
 * `keyword`: will be inserted in the HTML header to create the Web name of the HTML page, if the default header is used
 * `authors`: will be inserted in the copyright, if the default copyright is used
 * `howto`: will be inserted in the subtitle of the Web page "How to ... ?" if the default subtitle is ised
@@ -195,50 +241,50 @@ The different components are used by the script generate_doc.py as follows:
 
 Then, build the HTML using `mksite.py`.
 
-## Lessons of the tutorial: how to add/modify?
+### Lessons
 
-The major part of each lesson HTML file comes from ~abinit/doc/topics/origin_files/lesson_NAME.yml,
+The major part of each lesson HTML file comes from `~abinit/doc/topics/origin_files/lesson_NAME.yml`,
 although selected high-level information (name, keyword, author and subtitle) 
-is contained in ~abinit/doc/topics/origin_files/lessons.yml. 
+is contained in `~abinit/doc/topics/origin_files/lessons.yml`. 
 Note the last section of the latter file, that gives a default value for each component of a lesson file 
-that would not have been specified in either lesson_NAME.yml or the specific section of lessons.yml.
+that would not have been specified in either `lesson_NAME.yml` or the specific section of `lessons.yml`.
 
-The content of ~abinit/doc/topics/origin_files/lesson_NAME.yml is either:
+The content of `~abinit/doc/topics/origin_files/lesson_NAME.yml` is either:
 
 * an "intro" section and a "body" section,
 * or (this is preferred), an "intro" section and a list of sections, each having a "title" and a "body".
 
 In the latter case, a table of content is automatically generated by generate_doc.py .
-The latter structure can be seen in lesson_dmft.yml.
+The latter structure can be seen in `lesson_dmft.yml`.
 
 The "text" content of these section is in plain HTML.
 Note that the indentation is important in YAML. 
-The "text" lines in lesson_NAME.yml must be indented by at least two blanks.
+The "text" lines in `lesson_NAME.yml` must be indented by at least two blanks.
 
-In order to add a new lesson, introduce a new section in lessons.yml, and create a new 
-~abinit/doc/topics/origin_files/lesson_NAME.yml .
+In order to add a new lesson, introduce a new section in `lessons.yml`, and create a new 
+`~abinit/doc/topics/origin_files/lesson_NAME.yml`.
 
 Then, build the HTML using `mksite.py`.
 
-## Help files: how to add/modify?
+### Help files
 
 The structuration for help files is very similar to the one for the lessons of the tutorial.
-The major part of comes from ~abinit/doc/users/origin_files/help_NAME.yml,
+The major part of comes from `~abinit/doc/users/origin_files/help_NAME.yml`,
 although selected high-level information (name, keyword, author and subtitle) 
-is contained in ~abinit/doc/topics/origin_files/helps.yml.
+is contained in `~abinit/doc/topics/origin_files/helps.yml`.
 
 Do not forget to build the HTML using generate_doc.py.
 
-## Theory documents: how to add/modify?
+### Theory documents
 
 The structuration for theory documents is very similar to the one for the lessons of the tutorial.
-The major part of comes from ~abinit/doc/users/origin_files/theorydoc_NAME.yml,
+The major part of comes from `~abinit/doc/users/origin_files/theorydoc_NAME.yml`,
 although selected high-level information (name, keyword, author and subtitle) 
-is contained in ~abinit/doc/topics/origin_files/theorydocs.yml.
+is contained in `~abinit/doc/topics/origin_files/theorydocs.yml`.
 
 Do not forget to build the HTML using generate_doc.py.
 
-## Topics and tribes
+### Topics and tribes
 
 Since the beginning of the ABINIT HTML documentation, every input variable 
 has been required to belong to a **varset** (set of variables, e.g. `varbas`, `varfil`).
@@ -246,7 +292,7 @@ However, starting in Summer 2017, we require every input variable to be also men
 documentation "topics" and, for such topic, to be characterized by a "tribe".
 
 The allowed list of tribes (a generic list, irrespective of the topic) is contained in
-~abinit/doc/topics/origin_files/list_tribes.yml. 
+`~abinit/doc/topics/origin_files/list_tribes.yml`. 
 Standard names are:
 
 - `compulsory` (when such input variable **must** be present in the input file when the "feature" of the topic is activated)
@@ -258,7 +304,7 @@ Other tribe names have been allowed for specific topics, in which such a classif
 (compulsory/basic/useful/expert) is not a relevant one.
 
 In order to specify the (possibly several) combinations of topic+tribe to which an input variable is attached,
-the field "topics" is used inside the ~abinit/doc/input_variables/generated_doc/abinit_vars.yml file
+the field "topics" is used inside the `~abinit/doc/input_variables/generated_doc/abinit_vars.yml` file
 (and can be filled thanks to the use of the Abivars.jar GUI).
 
 Some examples:
@@ -272,11 +318,11 @@ for topic "parallelism" and topic "GW".
 
 ## Specifications for the abinit_vars.yml file
 
-As values in the ~abinit/doc/input_variables/origin_files/abinit_vars.yml file, 
+As values in the `~abinit/doc/input_variables/origin_files/abinit_vars.yml` file, 
 you can specify numbers, string, arrays, following the standard specification of YAML:
 
-* [[http://en.wikipedia.org/wiki/YAML| Wikipedia YAML page]]
-* [[http://www.yaml.org/|The official YAML page]]
+* [Wikipedia YAML page]([http://en.wikipedia.org/wiki/YAML)
+* [The official YAML page](http://www.yaml.org/)
 
 Several "types" are defined to allow sufficient flexibility in the specifications, as follows.
 
@@ -287,7 +333,7 @@ It is the type that contains the other fields.
 * `abivarname`: the name of the variable. Note that the name for input variables 
    of the executables anaddb, aim and optic is always finished with @anaddb, @aim or @optic.
 * `characteristics`: possibly, a specific characteristics of the input variable. 
-   To be chosen among the names in ~abinit/doc/input_variables/origin_files/characteristics.yml .
+   To be chosen among the names in `~abinit/doc/input_variables/origin_files/characteristics.yml`.
 * `commentdefault`: possibly, some comment about a default value.
 * `commentdims`: possibly, some comment about the dimension of an array.
 * `defaultval`: must be an integer or real value, possibly specified using the types presented below (e.g. !multiplevalue)
@@ -298,7 +344,7 @@ It is the type that contains the other fields.
 * `text`: free text describing the input variable
 * `topics`: a string, specified in [[developers:topics_and_tribes]]
 * `varset`: a unique "set of variables" to which the variable belong. 
-   To be chosen among the names in ~abinit/doc/input_variables/origin_files/varsets.yml .
+   To be chosen among the names in `~abinit/doc/input_variables/origin_files/varsets.yml`.
 * `vartype`: to be chosen among integer, real or string
    If there is no information of a type for a specific variable, its value must be "null".
 
@@ -328,7 +374,7 @@ If X is null, it means that you want to do *Y (all Y)
      stop: N
 ```
 
-As a default value, it means that the default value is 1,2, ... N
+As a default value, it means that the default value is 1, 2, ... N
 
 ### !valuewithconditions
 
@@ -347,7 +393,7 @@ As condition, please use strings with the most basic expressions,
 containing <, < =, >, >=, ==, !=, +, -, *, /, etc to allow for further simple parsing !
 
 As a convention, we use "pythonic" way for expressions, so you can use "or", "and" and "in" 
-also as %%[[varname]]%% in [1,2,5] for example ...
+also as `[[varname]] in [1,2,5]` for example ...
 
 ### !valuewithunit
 
@@ -375,5 +421,5 @@ the CONDITION to be fulfilled.
 
 Pay attention to strings. If it is recognized as string directly, you don't need ticks (' ').
 Otherwise, you need to put ticks. 
-For example, if you want to use a link as a value, use a link shortcut like <nowiki>[[abivarname]]</nowiki>. 
+For example, if you want to use a link as a value, use a link shortcut like `[[abivarname]]`. 
 See the doc about link shortcuts at [[developers:link_shortcuts]]. 

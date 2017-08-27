@@ -74,7 +74,11 @@ class WikiLinks(Pattern):
         if token:
             base_url, end_url, html_class = self._getMeta()
             #url = self.config['build_url'](token, base_url, end_url)
-            return website.anchor_from_wikilink(token)
+            try:
+                return website.anchor_from_wikilink(token)
+            except Exception as exc:
+                print("Exception while trying to handle wikilink `%s`" % token)
+                raise
         else:
             print("Warning: empty wikilink", m.group(0))
             return ''

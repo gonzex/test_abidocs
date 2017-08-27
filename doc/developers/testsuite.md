@@ -1,6 +1,6 @@
 ##  atompaw  
 
-###  <a href="/tests/atompaw/Input/t01.in">tests/atompaw/Input/t01.in</a>   
+### <a href="/tests/atompaw/Input/t01.in">tests/atompaw/Input/t01.in</a>   
 
 Generation of an atomic data file (pseudopotential file) from ATOMPAW for Carbon
 
@@ -11,7 +11,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/atompaw/Input/t02.in">tests/atompaw/Input/t02.in</a>   
+### <a href="/tests/atompaw/Input/t02.in">tests/atompaw/Input/t02.in</a>   
 
 Bulk diamond,  using the atomic data file generated in test 01
 
@@ -22,7 +22,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/atompaw/Input/t03.in">tests/atompaw/Input/t03.in</a>   
+### <a href="/tests/atompaw/Input/t03.in">tests/atompaw/Input/t03.in</a>   
 
 Generation of an atomic data file (pseudopotential file) from ATOMPAW for Nickel Same file as the one used in tutorial#paw2,  Bloechl's flavor. One difference : the number of points is 2000 here,  while it is 495 in the file Ni.GGA-PBE-paw.abinit.bloechl . This is coherent with the content of the lessons ...
 
@@ -33,7 +33,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/atompaw/Input/t04.in">tests/atompaw/Input/t04.in</a>   
+### <a href="/tests/atompaw/Input/t04.in">tests/atompaw/Input/t04.in</a>   
 
 Bulk Nickel,  using the atomic data file generated in test 03
 
@@ -46,18 +46,18 @@ Author(s): M. Torrent
 
 ##  bigdft  
 
-###  <a href="/tests/bigdft/Input/t00.in">tests/bigdft/Input/t00.in</a>   
+### <a href="/tests/bigdft/Input/t00.in">tests/bigdft/Input/t00.in</a>   
 
 H atom within BigDFT. Very quick built-in test,  to check that BigDFT is installed.
 
 Executable: abinit   
-Keywords(s): WVL, bigdft, abinit   
+Keywords(s): WVL, abinit, bigdft   
 Author(s): D. Caliste  
 
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t01.in">tests/bigdft/Input/t01.in</a>   
+### <a href="/tests/bigdft/Input/t01.in">tests/bigdft/Input/t01.in</a>   
 
 H2 molecule with default parameters. No forces are computed,  with steepest decent for the direct minimisation of the wavefunctions.
 
@@ -69,7 +69,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t02.in">tests/bigdft/Input/t02.in</a>   
+### <a href="/tests/bigdft/Input/t02.in">tests/bigdft/Input/t02.in</a>   
 
 H2 molecule with default parameters. No forces are computed,  with DIIS for the direct minimisation of the wavefunctions.
 
@@ -81,7 +81,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t03.in">tests/bigdft/Input/t03.in</a>   
+### <a href="/tests/bigdft/Input/t03.in">tests/bigdft/Input/t03.in</a>   
 
 H2 molecule with default parameters. Forces are computed.
 
@@ -93,7 +93,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t04.in">tests/bigdft/Input/t04.in</a>   
+### <a href="/tests/bigdft/Input/t04.in">tests/bigdft/Input/t04.in</a>   
 
 SiH4 molecule with default parameters. This routine tests the program with several different atoms.
 
@@ -105,7 +105,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t05.in">tests/bigdft/Input/t05.in</a>   
+### <a href="/tests/bigdft/Input/t05.in">tests/bigdft/Input/t05.in</a>   
 
 5. Galaborane molecule to test the HGH pseudo-potentials.
 
@@ -117,7 +117,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t06.in">tests/bigdft/Input/t06.in</a>   
+### <a href="/tests/bigdft/Input/t06.in">tests/bigdft/Input/t06.in</a>   
 
 Water molecule in a big box
 
@@ -129,7 +129,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t07.in">tests/bigdft/Input/t07.in</a>   
+### <a href="/tests/bigdft/Input/t07.in">tests/bigdft/Input/t07.in</a>   
 
 Graphene. Test wavelet run on surface
 
@@ -141,7 +141,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t09.in">tests/bigdft/Input/t09.in</a>   
+### <a href="/tests/bigdft/Input/t09.in">tests/bigdft/Input/t09.in</a>   
 
 SiH4 molecule with truncated convergence to test the computation of the tail correction (see the tl_radius) parameter in the input file.
 
@@ -153,7 +153,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t10.in">tests/bigdft/Input/t10.in</a>   
+### <a href="/tests/bigdft/Input/t10.in">tests/bigdft/Input/t10.in</a>   
 
 H2 molecule with geometry optimisation using BFGS (test the reformating part of the code).
 
@@ -165,7 +165,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t11.in">tests/bigdft/Input/t11.in</a>   
+### <a href="/tests/bigdft/Input/t11.in">tests/bigdft/Input/t11.in</a>   
 
 Si single atom with fractional occupation.
 
@@ -177,7 +177,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t12.in">tests/bigdft/Input/t12.in</a>   
+### <a href="/tests/bigdft/Input/t12.in">tests/bigdft/Input/t12.in</a>   
 
 Pt single atom with semi-core electrons,  Krack pseudopotentials (pspcod = 10), and colinear spin polarisation (GGA functional).
 
@@ -189,7 +189,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t14.in">tests/bigdft/Input/t14.in</a>   
+### <a href="/tests/bigdft/Input/t14.in">tests/bigdft/Input/t14.in</a>   
 
 Hypothetical NaTi molecule. Test the diagonalisation scheme with wavelets
 
@@ -201,7 +201,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t16.in">tests/bigdft/Input/t16.in</a>   
+### <a href="/tests/bigdft/Input/t16.in">tests/bigdft/Input/t16.in</a>   
 
 CO molecule to test the ETSF writing of wavefunctions (need compilation with --enable-bigdft).
 
@@ -213,7 +213,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t17.in">tests/bigdft/Input/t17.in</a>   
+### <a href="/tests/bigdft/Input/t17.in">tests/bigdft/Input/t17.in</a>   
 
 CO molecule to test the ETSF restart on wavefunctions,  without wavefunction reformating (same parameters,  still need compilation with --enable-bigdft).
 
@@ -225,19 +225,19 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t18.in">tests/bigdft/Input/t18.in</a>   
+### <a href="/tests/bigdft/Input/t18.in">tests/bigdft/Input/t18.in</a>   
 
 CO molecule to test the ETSF restart inside several datasets,  also test the reformating of wavelets after wvl_hgrid changed (need compilation with --enable-bigdft).
 
 Executable: abinit   
-Keywords(s): WVL, ETSF_IO, abinit   
+Keywords(s): WVL, abinit, ETSF_IO   
 Topic(s): [[topic:Wavelets]]  
 Author(s): D. Caliste  
 
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t20.in">tests/bigdft/Input/t20.in</a>   
+### <a href="/tests/bigdft/Input/t20.in">tests/bigdft/Input/t20.in</a>   
 
 Simple test for real space computation (using a wavelet based poisson solver), no forces,  just an H atom in an empty box. The cut-off is unrealistic. This test tests the following part of the code : * psp spline generation for real space; * local part of potential from pseudo; * ion-ion interaction computation (instead of Ewald); * Hartree potential with Poisson's solver.
 
@@ -248,7 +248,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t21.in">tests/bigdft/Input/t21.in</a>   
+### <a href="/tests/bigdft/Input/t21.in">tests/bigdft/Input/t21.in</a>   
 
 H in isolated boundary conditions (plane waves,  NC). Similar to t20.in but check that non cubic boxs can be used with equivalent x,  y and z directions.
 
@@ -259,7 +259,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t22.in">tests/bigdft/Input/t22.in</a>   
+### <a href="/tests/bigdft/Input/t22.in">tests/bigdft/Input/t22.in</a>   
 
 H2O in isolated boundary conditions (plane waves,  NC),  try tu use Damiens Poisson cutoff. Water molecule with HGH pseudo-potentials. This checks that a negative value in rhor will not make the Poisson solver crashes on XC computation.
 
@@ -270,7 +270,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t23.in">tests/bigdft/Input/t23.in</a>   
+### <a href="/tests/bigdft/Input/t23.in">tests/bigdft/Input/t23.in</a>   
 
 H in isolated boundary conditions (plane waves,  PAW). Tests free boundary conditions Poisson solver for PAW.
 
@@ -281,7 +281,7 @@ Author(s): T. Rangel
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t31.in">tests/bigdft/Input/t31.in</a>   
+### <a href="/tests/bigdft/Input/t31.in">tests/bigdft/Input/t31.in</a>   
 
 H in a box (PAW). PAW projectors are fitted to Gaussians.
 
@@ -293,7 +293,7 @@ Author(s): T. Rangel
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t32.in">tests/bigdft/Input/t32.in</a>   
+### <a href="/tests/bigdft/Input/t32.in">tests/bigdft/Input/t32.in</a>   
 
 H in a box (PAW). PAW projectors are fitted to Gaussians.
 
@@ -305,7 +305,7 @@ Author(s): T. Rangel
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t33.in">tests/bigdft/Input/t33.in</a>   
+### <a href="/tests/bigdft/Input/t33.in">tests/bigdft/Input/t33.in</a>   
 
 O2 in a box (NC). ABINIT routines are used (wvl_bigdft_comp=0) Test: DIIS,  potential/density mixing
 
@@ -317,7 +317,7 @@ Author(s): T. Rangel
 
 * * *
 
-###  <a href="/tests/bigdft/Input/t34.in">tests/bigdft/Input/t34.in</a>   
+### <a href="/tests/bigdft/Input/t34.in">tests/bigdft/Input/t34.in</a>   
 
 CO2 in a box (PAW). ABINIT routines are used (wvl_bigdft_comp=0) Test: DIIS mixing.
 
@@ -331,33 +331,33 @@ Author(s): T. Rangel
 
 ##  bigdft_paral  
 
-###  <a href="/tests/bigdft_paral/Input/t01.in">tests/bigdft_paral/Input/t01.in</a>   
+### <a href="/tests/bigdft_paral/Input/t01.in">tests/bigdft_paral/Input/t01.in</a>   
 
 O2 in a box (NC). ABINIT routines are used (wvl_bigdft_comp=0) Test: DIIS,  potential/density mixing and parallelism
 
 Executable: abinit   
-Keywords(s): abinit, WVL, NC   
+Keywords(s): WVL, abinit, NC   
 Topic(s): [[topic:Wavelets]]  
-Author(s): T. Rangel, M. Torrent  
+Author(s): M. Torrent, T. Rangel  
 
 
 * * *
 
-###  <a href="/tests/bigdft_paral/Input/t02.in">tests/bigdft_paral/Input/t02.in</a>   
+### <a href="/tests/bigdft_paral/Input/t02.in">tests/bigdft_paral/Input/t02.in</a>   
 
 CO2 in a box (PAW). ABINIT routines are used (wvl_bigdft_comp=0) Test: DIIS,  density mixing
 
 Executable: abinit   
-Keywords(s): abinit, WVL, PAW   
+Keywords(s): WVL, abinit, PAW   
 Topic(s): [[topic:Wavelets]]  
-Author(s): T. Rangel, M. Torrent  
+Author(s): M. Torrent, T. Rangel  
 
 
 * * *
 
 ##  built-in  
 
-###  <a href="/tests/built-in/Input/testin_fast.in">tests/built-in/Input/testin_fast.in</a>   
+### <a href="/tests/built-in/Input/testin_fast.in">tests/built-in/Input/testin_fast.in</a>   
 
 H2 molecule,  determination of the H-H distance by the Broyden algorithm.
 
@@ -367,7 +367,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_v1.in">tests/built-in/Input/testin_v1.in</a>   
+### <a href="/tests/built-in/Input/testin_v1.in">tests/built-in/Input/testin_v1.in</a>   
 
 Yb cristal,  self-consistent
 
@@ -377,7 +377,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_v5.in">tests/built-in/Input/testin_v5.in</a>   
+### <a href="/tests/built-in/Input/testin_v5.in">tests/built-in/Input/testin_v5.in</a>   
 
 HBe molecule,  spin-polarized,  determination of forces
 
@@ -387,17 +387,17 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_bigdft.in">tests/built-in/Input/testin_bigdft.in</a>   
+### <a href="/tests/built-in/Input/testin_bigdft.in">tests/built-in/Input/testin_bigdft.in</a>   
 
 H atom within BigDFT
 
 Executable: abinit   
-Keywords(s): bigdft, abinit   
+Keywords(s): abinit, bigdft   
 
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_etsf_io.in">tests/built-in/Input/testin_etsf_io.in</a>   
+### <a href="/tests/built-in/Input/testin_etsf_io.in">tests/built-in/Input/testin_etsf_io.in</a>   
 
 Ca atom with PAW,  writing a ETSF_IO wavefunction file.
 
@@ -407,7 +407,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_libxc.in">tests/built-in/Input/testin_libxc.in</a>   
+### <a href="/tests/built-in/Input/testin_libxc.in">tests/built-in/Input/testin_libxc.in</a>   
 
 Bi atom with PAW,  GGA PBE from LibXC
 
@@ -417,19 +417,19 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/built-in/Input/testin_wannier90.in">tests/built-in/Input/testin_wannier90.in</a>   
+### <a href="/tests/built-in/Input/testin_wannier90.in">tests/built-in/Input/testin_wannier90.in</a>   
 
 GaAs crystal with few bands.
 
 Executable: abinit   
-Keywords(s): bigdft, abinit   
+Keywords(s): abinit, bigdft   
 
 
 * * *
 
 ##  etsf_io  
 
-###  <a href="/tests/etsf_io/Input/t00.in">tests/etsf_io/Input/t00.in</a>   
+### <a href="/tests/etsf_io/Input/t00.in">tests/etsf_io/Input/t00.in</a>   
 
 Ca atom with PAW,  writing a ETSF_IO wavefunction file. Very quick built-in test,  to check that ETSF_IO is installed.
 
@@ -440,7 +440,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t01.in">tests/etsf_io/Input/t01.in</a>   
+### <a href="/tests/etsf_io/Input/t01.in">tests/etsf_io/Input/t01.in</a>   
 
 Bulk water ice 1h,  made-up with 8 water molecules. Density is exported using the ETSF I/O file format. Should be a nice system to look at with visualisation tools.
 
@@ -451,7 +451,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t03.in">tests/etsf_io/Input/t03.in</a>   
+### <a href="/tests/etsf_io/Input/t03.in">tests/etsf_io/Input/t03.in</a>   
 
 Read the density from test #1 and plot it along [1 1 1] direction using cut3d. This tests the reading part of cut3d with ETSF support.
 
@@ -462,29 +462,29 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t02.in">tests/etsf_io/Input/t02.in</a>   
+### <a href="/tests/etsf_io/Input/t02.in">tests/etsf_io/Input/t02.in</a>   
 
 Simple Li-F structure with KSS output. This is a two data set run, the first dataset being a ground state calculation and the second put nbandkss to non-null value to compute the Kohn-Sham structure. The KSS file is generated by ETSF-IO. The density of the first dataset also use ETSF-IO and dataset two is a good test for density restart.
 
 Executable: abinit   
-Keywords(s): abinit, netcdf, GW   
+Keywords(s): GW, abinit, netcdf   
 Author(s): D. Caliste  
 
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t04.in">tests/etsf_io/Input/t04.in</a>   
+### <a href="/tests/etsf_io/Input/t04.in">tests/etsf_io/Input/t04.in</a>   
 
 KSS file generation for silicon with a different number of bands in the KSS computation compared to ground-state.
 
 Executable: abinit   
-Keywords(s): abinit, netcdf, GW   
+Keywords(s): GW, abinit, netcdf   
 Author(s): D. Caliste  
 
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t09.in">tests/etsf_io/Input/t09.in</a>   
+### <a href="/tests/etsf_io/Input/t09.in">tests/etsf_io/Input/t09.in</a>   
 
 Ca atom in PAW. Test the output of density in PAW formalism with ETSF_IO. Also test the output of the wavefunctions in PAW formalism with ETSF_IO.
 
@@ -495,7 +495,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t21.in">tests/etsf_io/Input/t21.in</a>   
+### <a href="/tests/etsf_io/Input/t21.in">tests/etsf_io/Input/t21.in</a>   
 
 Si2 molecule,  static,  spin-polarized. Same system as test 49 of v2,  except that nctime is non-zero. Test ionmov=6 (Verlet) as well as ionmov=7.
 
@@ -506,7 +506,7 @@ Author(s): D. Caliste
 
 * * *
 
-###  <a href="/tests/etsf_io/Input/t22.in">tests/etsf_io/Input/t22.in</a>   
+### <a href="/tests/etsf_io/Input/t22.in">tests/etsf_io/Input/t22.in</a>   
 
 Single H atom in a box.. Test of prtvol = -2,  so stop after init,  and echo in a NETCDF file.
 
@@ -519,7 +519,7 @@ Author(s): D. Caliste
 
 ##  fast  
 
-###  <a href="/tests/fast/Input/t00.in">tests/fast/Input/t00.in</a>   
+### <a href="/tests/fast/Input/t00.in">tests/fast/Input/t00.in</a>   
 
 H2 molecule,  determination of the H-H distance by the Broyden algorithm. Very quick built-in test,  to check that ABINIT is working.
 
@@ -529,7 +529,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/fast/Input/t01.in">tests/fast/Input/t01.in</a>   
+### <a href="/tests/fast/Input/t01.in">tests/fast/Input/t01.in</a>   
 
 Single H atom in box.  Uses local psp,  which makes initialization time much shorter.  This calculation is iterated to convergence. This test case is a good choice for running alone just to get something working fast.
 
@@ -539,7 +539,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t02.in">tests/fast/Input/t02.in</a>   
+### <a href="/tests/fast/Input/t02.in">tests/fast/Input/t02.in</a>   
 
 H2 diatomic molecule,  static,  to check accurate forces.
 
@@ -549,7 +549,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t03.in">tests/fast/Input/t03.in</a>   
+### <a href="/tests/fast/Input/t03.in">tests/fast/Input/t03.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell.  Uses symmetry. mkmem=mkpt,  mffmem=1 ("in core" solution), This calculation is also iterated to convergence.  ecut too small. Uses original Teter extended norm conserving psp 14si.psp.
 
@@ -559,7 +559,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t05.in">tests/fast/Input/t05.in</a>   
+### <a href="/tests/fast/Input/t05.in">tests/fast/Input/t05.in</a>   
 
 Same as 03 but run with newer Troullier-Martins psp with core density 14si.pspnc.  Start from wf.03 and run irdwfk=1. Also iterated to convergence.
 
@@ -569,7 +569,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t06.in">tests/fast/Input/t06.in</a>   
+### <a href="/tests/fast/Input/t06.in">tests/fast/Input/t06.in</a>   
 
 Restart 05 with wf.05 (irdwfk=1).  Instant convergence.
 
@@ -579,7 +579,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t07.in">tests/fast/Input/t07.in</a>   
+### <a href="/tests/fast/Input/t07.in">tests/fast/Input/t07.in</a>   
 
 Restart 05 again,  but use ALL 48 cubic symmetries (the above tests don't bother with the nonsymmorphic ones) to test nonsymmorphic symmetrization.
 
@@ -589,7 +589,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t08.in">tests/fast/Input/t08.in</a>   
+### <a href="/tests/fast/Input/t08.in">tests/fast/Input/t08.in</a>   
 
 Run with frozen wf (wf.05 again)--irdwfk=1,  nstep=0.  Use same job to produce density file t08o_DEN using prtden=1.  Note that energy and stresses should agree among 05,  06,  and 08.  Slightly different result for stress in case 06 shows evidence of the sensitivity of stress to convergence.
 
@@ -599,7 +599,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t09.in">tests/fast/Input/t09.in</a>   
+### <a href="/tests/fast/Input/t09.in">tests/fast/Input/t09.in</a>   
 
 Run non-scf (iscf=-2) on 2 special points by reading t5o_DEN. Eigenvalues should now agree among 05,  06,  and 08,  except that 08 will include some unoccupied bands.
 
@@ -609,7 +609,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t11.in">tests/fast/Input/t11.in</a>   
+### <a href="/tests/fast/Input/t11.in">tests/fast/Input/t11.in</a>   
 
 Run non-scf (iscf=-2) for Gamma,  X,  L band structure for Si.
 
@@ -619,7 +619,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t12.in">tests/fast/Input/t12.in</a>   
+### <a href="/tests/fast/Input/t12.in">tests/fast/Input/t12.in</a>   
 
 Same as 11 but with mkmem = 0,  mffmem=0 (out-of-core).
 
@@ -629,7 +629,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t14.in">tests/fast/Input/t14.in</a>   
+### <a href="/tests/fast/Input/t14.in">tests/fast/Input/t14.in</a>   
 
 Same as 05 but with ecut raised,  reading wf.13 to start. Tests boxcut<2.
 
@@ -639,7 +639,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t16.in">tests/fast/Input/t16.in</a>   
+### <a href="/tests/fast/Input/t16.in">tests/fast/Input/t16.in</a>   
 
 Same as 03 but with slightly larger acell.  Again has boxcut<2.
 
@@ -649,7 +649,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t04.in">tests/fast/Input/t04.in</a>   
+### <a href="/tests/fast/Input/t04.in">tests/fast/Input/t04.in</a>   
 
 Same as case03,  but with mkmem = 0,  and mffmem=0 (out-of-core).
 
@@ -659,7 +659,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t17.in">tests/fast/Input/t17.in</a>   
+### <a href="/tests/fast/Input/t17.in">tests/fast/Input/t17.in</a>   
 
 Si2 molecule,  static,  spin-polarized.  Write t17o_DEN (prtden=1).
 
@@ -669,7 +669,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t19.in">tests/fast/Input/t19.in</a>   
+### <a href="/tests/fast/Input/t19.in">tests/fast/Input/t19.in</a>   
 
 Re-run 17 but in slightly larger box,  same ecut,  larger ng. (Box is still too small for proper model of Si2.)
 
@@ -679,7 +679,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t20.in">tests/fast/Input/t20.in</a>   
+### <a href="/tests/fast/Input/t20.in">tests/fast/Input/t20.in</a>   
 
 Conduct relaxation of molecule starting from wf.19,  using ionmov=2. (Broyden method).
 
@@ -689,7 +689,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t21.in">tests/fast/Input/t21.in</a>   
+### <a href="/tests/fast/Input/t21.in">tests/fast/Input/t21.in</a>   
 
 21. Conduct same relaxation but use ionmov=1 (molecular dynamics).
 
@@ -700,7 +700,7 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/fast/Input/t23.in">tests/fast/Input/t23.in</a>   
+### <a href="/tests/fast/Input/t23.in">tests/fast/Input/t23.in</a>   
 
 23. Compute a few unoccupied state eigenvalues for case 17,  at two k points. Also checks reading of a density file (t17o_DEN) which was created with a different number of k points (perfectly ok). (Shows inadequacy of this box for Si2 molecule--note enormous dispersion in eigenvalues from k=0 to BZ boundary.)
 
@@ -710,7 +710,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t24.in">tests/fast/Input/t24.in</a>   
+### <a href="/tests/fast/Input/t24.in">tests/fast/Input/t24.in</a>   
 
 Test an ionic system: KCl.  2 sp k-points.
 
@@ -720,7 +720,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t25.in">tests/fast/Input/t25.in</a>   
+### <a href="/tests/fast/Input/t25.in">tests/fast/Input/t25.in</a>   
 
 Same as 24 but with mkmem = 0,  mffmem=0.
 
@@ -730,7 +730,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t26.in">tests/fast/Input/t26.in</a>   
+### <a href="/tests/fast/Input/t26.in">tests/fast/Input/t26.in</a>   
 
 Test an f-electron system: fcc Yb (Z=70).  2 sp
 
@@ -740,7 +740,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t27.in">tests/fast/Input/t27.in</a>   
+### <a href="/tests/fast/Input/t27.in">tests/fast/Input/t27.in</a>   
 
 8-atom Si cube to set up brdmin and MD runs with natfix. Output also DEN,  POT and GEO files
 
@@ -750,7 +750,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t28.in">tests/fast/Input/t28.in</a>   
+### <a href="/tests/fast/Input/t28.in">tests/fast/Input/t28.in</a>   
 
 brdmin with natfix. Output also DEN,  POT and GEO files
 
@@ -760,7 +760,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/fast/Input/t29.in">tests/fast/Input/t29.in</a>   
+### <a href="/tests/fast/Input/t29.in">tests/fast/Input/t29.in</a>   
 
 move with natfix. Output also GEO files
 
@@ -771,7 +771,7 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/fast/Input/t30.in">tests/fast/Input/t30.in</a>   
+### <a href="/tests/fast/Input/t30.in">tests/fast/Input/t30.in</a>   
 
 This test is due to Z. Levine. It is a run on Si with the bond center at the origin. Also write density and potential with prtden=9 and prtpot=2 .
 
@@ -783,7 +783,7 @@ Keywords(s): abinit
 
 ##  gpu  
 
-###  <a href="/tests/gpu/Input/t01.in">tests/gpu/Input/t01.in</a>   
+### <a href="/tests/gpu/Input/t01.in">tests/gpu/Input/t01.in</a>   
 
 GaAs phonons calculation - norm-conserving psp Test the automatic detection of the GPU and the automatic setting of use_gpu_cuda keyword according to the requested calculation. Ground-states calculations should be run with use_gpu_cuda activated (except if set to 0 in input file) while response fonction calculations should be run with use_gpu_cuda deactivated (at present : ABINIT v7.0).
 
@@ -794,7 +794,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/gpu/Input/t02.in">tests/gpu/Input/t02.in</a>   
+### <a href="/tests/gpu/Input/t02.in">tests/gpu/Input/t02.in</a>   
 
 hcp iron - non magnetic - 2 atoms (metal) Test the use of GPU within Norm-Conserving PseupoPotential formalism. Test multidataset mode with different use_gpu_cuda values. paral_kgb is activated.
 
@@ -805,7 +805,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/gpu/Input/t03.in">tests/gpu/Input/t03.in</a>   
+### <a href="/tests/gpu/Input/t03.in">tests/gpu/Input/t03.in</a>   
 
 NiO - LDA+U - fcc structure Test the use of GPU within Projector Augmented-Wave formalism. Test ferromagnetic and non-collinear magnetism. ABINIT v7.0: GPU is not used when nspinor=2
 
@@ -816,7 +816,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/gpu/Input/t04.in">tests/gpu/Input/t04.in</a>   
+### <a href="/tests/gpu/Input/t04.in">tests/gpu/Input/t04.in</a>   
 
 Silicon - diamond structure - PAW - volume relaxation Test the use of GPU within Projector Augmented-Wave formalism. Test structure relaxation (multiple calls to gstate routine).
 
@@ -827,7 +827,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/gpu/Input/t05.in">tests/gpu/Input/t05.in</a>   
+### <a href="/tests/gpu/Input/t05.in">tests/gpu/Input/t05.in</a>   
 
 NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU
 
@@ -840,7 +840,7 @@ Author(s): M. Torrent
 
 ##  libxc  
 
-###  <a href="/tests/libxc/Input/t00.in">tests/libxc/Input/t00.in</a>   
+### <a href="/tests/libxc/Input/t00.in">tests/libxc/Input/t00.in</a>   
 
 Bi atom with PAW,  GGA PBE from LibXC Very quick built-in test,  to check that LibXC is installed.
 
@@ -850,7 +850,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t01.in">tests/libxc/Input/t01.in</a>   
+### <a href="/tests/libxc/Input/t01.in">tests/libxc/Input/t01.in</a>   
 
 Isolated Helium atom Compare the results using the native XC library and the corresponding ones of LibXC,  in the non-spin-polarized case : 5 LDAs (Teter93,  Perdew-Zunger,  Wigner,  Hedin-Ludqvist,  PW92) 7 GGAs (PBE,  RPBE,  HCTH93,  HCTH120,  HCTH147,  HCTH407,  WuCohen) Results are excellent (better than 10 microHa).
 
@@ -860,7 +860,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t02.in">tests/libxc/Input/t02.in</a>   
+### <a href="/tests/libxc/Input/t02.in">tests/libxc/Input/t02.in</a>   
 
 Isolated Bismuth atom Compare the results using the native XC library and the corresponding ones of LibXC,  in the spin-polarized case : 2 LDAs (Teter93,  PW92) 7 GGAs (PBE,  RPBE,  HCTH93,  HCTH120,  HCTH147,  HCTH407,  WuCohen) Results are excellent (better than 10 microHa),  except for Wu Cohen (must be a bug somewhere).
 
@@ -870,7 +870,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t03.in">tests/libxc/Input/t03.in</a>   
+### <a href="/tests/libxc/Input/t03.in">tests/libxc/Input/t03.in</a>   
 
 Isolated Oxygen atom Test a few functionals for which HGH pseudopotentials are available (from M. Krack), that are present also in the lib XC,  but not in the native ABINIT set of functionals.
 
@@ -880,7 +880,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t04.in">tests/libxc/Input/t04.in</a>   
+### <a href="/tests/libxc/Input/t04.in">tests/libxc/Input/t04.in</a>   
 
 Isolated Helium atom Test functionals from libXC that were present in ABINITv5 (LDAs and GGAs). This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 15 secs to test 45 functionals ...
 
@@ -890,7 +890,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t05.in">tests/libxc/Input/t05.in</a>   
+### <a href="/tests/libxc/Input/t05.in">tests/libxc/Input/t05.in</a>   
 
 Isolated Bismuth atom Test functionals from libXC that were present in ABINITv5 (LDAs and GGAs). This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 20 secs to test 45 functionals ...
 
@@ -900,7 +900,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t06.in">tests/libxc/Input/t06.in</a>   
+### <a href="/tests/libxc/Input/t06.in">tests/libxc/Input/t06.in</a>   
 
 Isolated Helium atom Test functionals from libXC that have been added in ABINITv6 or were untested in ABINITv5 (LDAs and GGAs). This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 15 secs to test 22 functionals ...
 
@@ -910,7 +910,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t07.in">tests/libxc/Input/t07.in</a>   
+### <a href="/tests/libxc/Input/t07.in">tests/libxc/Input/t07.in</a>   
 
 Isolated Bismuth atom Test functionals from libXC that have been added in ABINITv6 or were untested in ABINITv5 (LDAs and GGAs). Spin-polarized case. This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 20 secs to test 22 functionals ...
 
@@ -920,7 +920,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t08.in">tests/libxc/Input/t08.in</a>   
+### <a href="/tests/libxc/Input/t08.in">tests/libxc/Input/t08.in</a>   
 
 Isolated Carbon atom Test the Becke-Johnson mGGA functional,  generating directly XC potentials. Convergence parameters are quite high,  and the test is reasonably portable.
 
@@ -931,7 +931,7 @@ Author(s): M. Oliveira
 
 * * *
 
-###  <a href="/tests/libxc/Input/t09.in">tests/libxc/Input/t09.in</a>   
+### <a href="/tests/libxc/Input/t09.in">tests/libxc/Input/t09.in</a>   
 
 Diamond. Test the mGGA functional from Tran and Blaha (correction to Becke-Johnson).
 
@@ -941,7 +941,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t10.in">tests/libxc/Input/t10.in</a>   
+### <a href="/tests/libxc/Input/t10.in">tests/libxc/Input/t10.in</a>   
 
 Stishovite (a polymorph of SiO2) Test PBEsol in the PAW formalism,  using PAW datasets created with atompaw linked with libxc. Note that the value of ixc is not present in the input file,  but it is present in the ATOMPAW dataset (pspxc = -116133)
 
@@ -952,7 +952,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/libxc/Input/t13.in">tests/libxc/Input/t13.in</a>   
+### <a href="/tests/libxc/Input/t13.in">tests/libxc/Input/t13.in</a>   
 
 Isolated Carbon atom Test the mGGA functionals generating directly XC potentials. Similar to test 08,  but with smaller acell and ecut. Without the use of a "large" xc_denpos,  Tran-Blaha is hard to converge. Hypothesis : there is a strong non-linear region,  preventing the Anderson method to work effectively. Note that the default iscf (=7) does not allow to converge with the default xc_denpos ! By contrast,  things are much better behaved with xc_denpos on the order of 1.0e-7 .
 
@@ -962,7 +962,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t17.in">tests/libxc/Input/t17.in</a>   
+### <a href="/tests/libxc/Input/t17.in">tests/libxc/Input/t17.in</a>   
 
 Isolated Helium atom Test functionals from libXC 1.1 that were untested before ABINIT v6.12 (libxc 1.0.0.1 was used). This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 15 secs to test 19 functionals ...
 
@@ -972,7 +972,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t18.in">tests/libxc/Input/t18.in</a>   
+### <a href="/tests/libxc/Input/t18.in">tests/libxc/Input/t18.in</a>   
 
 Isolated Bismuth atom Test functionals from libXC that were untested before ABINIT v6.12 (libxc 1.0.0.1 was used). Spin-polarized case. This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 20 secs to test 19 functionals ...
 
@@ -982,7 +982,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t19.in">tests/libxc/Input/t19.in</a>   
+### <a href="/tests/libxc/Input/t19.in">tests/libxc/Input/t19.in</a>   
 
 Argon solid,  experimental lattice parameter. Realistic parameters are used (ecut=20,  ngkpt=2x2x2 shifted 4 times,  but centered on Gamma). Test the mGGA functional from Tran and Blaha (correction to Becke-Johnson). The LDA gap is observed at Gamma : 8.071 eV,  is in reasonable agreement with the gap from the TB paper PRL 102,  226401 (2009), where it is mentioned to be 8.16 eV. The mGGa gap is 14.688 eV. The TB paper mentions 13.91 eV. The experimental value is 14.20 eV. The reading of the kinetic energy density,  to start a non-SCF calculation is not yet implemented, as of ABINITv6.12.0 . This test was used to examine the speed of the convergence in case of elongated cells,  up to 16 atoms. The mGGA convergence was found to be similar to the LDA convergence. Also,  test non-self-consistent mGGA calculation,  with reading of the previously produced _DEN and _KDEN files.
 
@@ -992,7 +992,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t20.in">tests/libxc/Input/t20.in</a>   
+### <a href="/tests/libxc/Input/t20.in">tests/libxc/Input/t20.in</a>   
 
 Isolated Helium atom Test functionals from libXC 2.0.1 that were untested before ABINIT v7.2 (libxc 1.1 was used). This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 15 secs to test 19 functionals ...
 
@@ -1002,7 +1002,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t21.in">tests/libxc/Input/t21.in</a>   
+### <a href="/tests/libxc/Input/t21.in">tests/libxc/Input/t21.in</a>   
 
 Isolated Bismuth atom Test functionals from libXC 2.0.1 that were untested before ABINIT v7.2 (libxc 1.1 was used). Spin-polarized case. This is to check the portability for different platform. Extremely quick (nstep=1,  nline=1). Less than 20 secs to test 19 functionals ...
 
@@ -1012,73 +1012,73 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/libxc/Input/t41.in">tests/libxc/Input/t41.in</a>   
+### <a href="/tests/libxc/Input/t41.in">tests/libxc/Input/t41.in</a>   
 
 Diamond: hybrid functional calculation with the GW code Perturbative approach to the HSE06,  PBE0,  and B3LYP band gaps HSE06 and PBE0 tests temporarily disabled,  waiting for the next version of the libxc)
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t42.in">tests/libxc/Input/t42.in</a>   
+### <a href="/tests/libxc/Input/t42.in">tests/libxc/Input/t42.in</a>   
 
 Diamond: hybrid functional calculation with the GW code Self-consistent approach to the HSE06 band structure based on a unitary transform of a subset of LDA wavefunctions
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t43.in">tests/libxc/Input/t43.in</a>   
+### <a href="/tests/libxc/Input/t43.in">tests/libxc/Input/t43.in</a>   
 
 Diamond: hybrid functional calculation HSE with the GW code. The Fock exchange mixing parameter is tunable.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): W. Chen, F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t51.in">tests/libxc/Input/t51.in</a>   
+### <a href="/tests/libxc/Input/t51.in">tests/libxc/Input/t51.in</a>   
 
 Test of PBE0 in sequential case,  norm conserving,  from LibXC
 
 Executable: abinit   
-Keywords(s): HF, abinit, PBE0, FAILS_IFMPI   
+Keywords(s): abinit, PBE0, HF, FAILS_IFMPI   
 Author(s): C. Martins, X. Gonze  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t52.in">tests/libxc/Input/t52.in</a>   
+### <a href="/tests/libxc/Input/t52.in">tests/libxc/Input/t52.in</a>   
 
 Test of HSE06 and HSE03 in sequential case,  norm conserving,  from LibXC XG170501 : I would have expected HSE06 and HSE03 total energies to be quite close to each other,  which is not true, as LDA gives -7.867332Ha,  HSE06 gives -7.887495 Ha and HSE03 gives -7.963222 Ha . Might be a problem ?
 
 Executable: abinit   
-Keywords(s): HF, abinit, FAILS_IFMPI   
+Keywords(s): abinit, HF, FAILS_IFMPI   
 Author(s): C. Martins, X. Gonze  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t53.in">tests/libxc/Input/t53.in</a>   
+### <a href="/tests/libxc/Input/t53.in">tests/libxc/Input/t53.in</a>   
 
 Test of HSE06 in PAW
 
 Executable: abinit   
-Keywords(s): HF, abinit   
+Keywords(s): abinit, HF   
 Author(s): F. Jollet  
 
 
 * * *
 
-###  <a href="/tests/libxc/Input/t81.in">tests/libxc/Input/t81.in</a>   
+### <a href="/tests/libxc/Input/t81.in">tests/libxc/Input/t81.in</a>   
 
 Silicon Test the equivalence between the internal and LibXC implementations of various XC functionals for the response functions (thus,  the XC kernel is also tested). The test includes 3 different functionals: 1) Perdew-Zunger: ixc=2 and ixc=-001009 2) PBE: ixc=11 and ixc=-101130 3) Perdew-Wang92: ixc=7,  ixc=-001012,  and ixc=-001013 The results for PBE and Perdew-Wang92 (ixc=-001013) are not equivalent unless some constants are changed in 56_xc/xcpbe.F90 by uncommenting some lines indicated by GMR. Note that the underlying FFT grid does not have the symmetry of the lattice.
 
@@ -1089,7 +1089,7 @@ Author(s): G.-M. Rignanese
 
 * * *
 
-###  <a href="/tests/libxc/Input/t82.in">tests/libxc/Input/t82.in</a>   
+### <a href="/tests/libxc/Input/t82.in">tests/libxc/Input/t82.in</a>   
 
 Silicon Test the equivalence between the internal and LibXC implementations of the Perdew-Zunger XC functionals for the response functions (thus,  the XC kernel is also tested) in PAW.
 
@@ -1102,7 +1102,7 @@ Author(s): G.-M. Rignanese
 
 ##  mpiio  
 
-###  <a href="/tests/mpiio/Input/t01.in">tests/mpiio/Input/t01.in</a>   
+### <a href="/tests/mpiio/Input/t01.in">tests/mpiio/Input/t01.in</a>   
 
 Si in diamond structure;  60 special points in core;  low ecut. Test localrdwf=1
 
@@ -1112,7 +1112,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t21.in">tests/mpiio/Input/t21.in</a>   
+### <a href="/tests/mpiio/Input/t21.in">tests/mpiio/Input/t21.in</a>   
 
 Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs.
 
@@ -1123,7 +1123,7 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t22.in">tests/mpiio/Input/t22.in</a>   
+### <a href="/tests/mpiio/Input/t22.in">tests/mpiio/Input/t22.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs.
 
@@ -1134,7 +1134,7 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t24.in">tests/mpiio/Input/t24.in</a>   
+### <a href="/tests/mpiio/Input/t24.in">tests/mpiio/Input/t24.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over FFT and kpoints: npband*npfft*npkpt=1*2*2=4 processors. In test tY.in we check other distributions for guarantee.
 
@@ -1144,7 +1144,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t25.in">tests/mpiio/Input/t25.in</a>   
+### <a href="/tests/mpiio/Input/t25.in">tests/mpiio/Input/t25.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables.
 
@@ -1154,7 +1154,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t26.in">tests/mpiio/Input/t26.in</a>   
+### <a href="/tests/mpiio/Input/t26.in">tests/mpiio/Input/t26.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  with PAW. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test the plane wave load balancing procedure (pw_unbal_thresh). Test also the computation of PJDOS.
 
@@ -1165,7 +1165,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t27.in">tests/mpiio/Input/t27.in</a>   
+### <a href="/tests/mpiio/Input/t27.in">tests/mpiio/Input/t27.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  with NC pseudo generated with oncvps-3.2.3. Test the IO routines with paral_kgb in [1,  0] and different combinations of parameters (npfft,  npband,  npkpt). Test also prtdos (PJDOS) in parallel with MPI-FFT. Similar to t26.in
 
@@ -1176,7 +1176,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t28.in">tests/mpiio/Input/t28.in</a>   
+### <a href="/tests/mpiio/Input/t28.in">tests/mpiio/Input/t28.in</a>   
 
 GaAs with PAW and spin-orbit coupling. 2x2x2 K grid;  low cut-off for test Test paral_kgb==1 with MPI-FFT/spinor parallelization,  the IO of the WFK file, the output of potential files and the calculation of PJDOS in parallel (PW term + on-site contributions)
 
@@ -1187,7 +1187,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t42.in">tests/mpiio/Input/t42.in</a>   
+### <a href="/tests/mpiio/Input/t42.in">tests/mpiio/Input/t42.in</a>   
 
 He FCC solid in conventional cell (4 atoms). Test the recursion algorithm (for high-temperature calculations). Only with 0 and 4 procs.
 
@@ -1198,7 +1198,7 @@ Topic(s): [[topic:Recursion]]
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t49.in">tests/mpiio/Input/t49.in</a>   
+### <a href="/tests/mpiio/Input/t49.in">tests/mpiio/Input/t49.in</a>   
 
 Si,  Bulk,  2 atoms,  parallel IO. Test of ground state Only with 4 procs,  no sequential version (tests accesswf 1)
 
@@ -1208,7 +1208,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t51.in">tests/mpiio/Input/t51.in</a>   
+### <a href="/tests/mpiio/Input/t51.in">tests/mpiio/Input/t51.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  NC pseudos. Test the IO routines for a typical DFPT calculation
 
@@ -1219,18 +1219,18 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t62.in">tests/mpiio/Input/t62.in</a>   
+### <a href="/tests/mpiio/Input/t62.in">tests/mpiio/Input/t62.in</a>   
 
 This test check the parallelization over atomic sites both for the ground state and response function features (within PAW formalism),  together with parallelization over perturbations. Computation of phonons and response to electric field within PAW (both q=0 and q/=0) Test on AlAs structure inspired by v6/t62. Ground state,  DDK,  effective charges and dielectric tensor are computed. Phonon modes at q=0 are computed. Phonon modes at q=(1/4, 0, 0) and q=(-1/4, 1/2/1/4) are computed. Note: Charge neutrality is not achieved with the present dataset, but can be easily reached by increasing some parameters;  for instance: (ngkpt 8 8 8,  ecut 15.,  pawecutdg 30.) gives Z(Al)=2.1184310,  Z(As)=-2.1184804
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, PAW   
-Author(s): M. Torrent, M. Delaveau  
+Keywords(s): DDK, abinit, DFPT, PAW   
+Author(s): M. Delaveau, M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t69.in">tests/mpiio/Input/t69.in</a>   
+### <a href="/tests/mpiio/Input/t69.in">tests/mpiio/Input/t69.in</a>   
 
 GaAs linear response with NC. Test the parallelisation on perturbations
 
@@ -1240,12 +1240,12 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a>   
+### <a href="/tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a>   
 
 NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, PAW   
+Keywords(s): abinit, PAW, DMFT   
 Author(s): B. Amadon  
 
 
@@ -1253,7 +1253,7 @@ Author(s): B. Amadon
 
 ##  paral  
 
-###  <a href="/tests/paral/Input/t01.in">tests/paral/Input/t01.in</a>   
+### <a href="/tests/paral/Input/t01.in">tests/paral/Input/t01.in</a>   
 
 Si in diamond structure;  60 special points in core;  low ecut.
 
@@ -1263,7 +1263,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t02.in">tests/paral/Input/t02.in</a>   
+### <a href="/tests/paral/Input/t02.in">tests/paral/Input/t02.in</a>   
 
 Si in diamond structure;  60 special points,  not in core;  low ecut.
 
@@ -1273,7 +1273,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t03.in">tests/paral/Input/t03.in</a>   
+### <a href="/tests/paral/Input/t03.in">tests/paral/Input/t03.in</a>   
 
 Molybdenum slab (5 atoms+3 vacuum),  with ixc=1. 4 k-points,  in core. Use iprcel=45 for SCF cycle.
 
@@ -1283,7 +1283,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t05.in">tests/paral/Input/t05.in</a>   
+### <a href="/tests/paral/Input/t05.in">tests/paral/Input/t05.in</a>   
 
 N2 molecule Test TDDFT in parallel,  with nsppol=2 even if the molecule is non spin-polarized
 
@@ -1294,18 +1294,18 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t06.in">tests/paral/Input/t06.in</a>   
+### <a href="/tests/paral/Input/t06.in">tests/paral/Input/t06.in</a>   
 
 LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen,  then modified by DHamann) Test parallelism of the Berry phase calculation,  and finite electric field calculation.
 
 Executable: abinit   
 Keywords(s): abinit, DFPT, NC   
-Author(s): M. Veithen, D.R. Hamann  
+Author(s): D.R. Hamann, M. Veithen  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t07.in">tests/paral/Input/t07.in</a>   
+### <a href="/tests/paral/Input/t07.in">tests/paral/Input/t07.in</a>   
 
 PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ...
 
@@ -1317,19 +1317,19 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/paral/Input/t08.in">tests/paral/Input/t08.in</a>   
+### <a href="/tests/paral/Input/t08.in">tests/paral/Input/t08.in</a>   
 
 Test the string method within parallelization over images Inspired by test v6#22. Hydrogen diatomic molecule in a cell,  close to BCC 7 images,  exploring the transition path. Three datasets,  testing each value of prtvolimg. Processors distribution automatically determined:
 
 Executable: abinit   
-Keywords(s): IMAGES, abinit, PAW   
+Keywords(s): abinit, PAW, IMAGES   
 Topic(s): [[topic:parallelism]], [[topic:TransPath]]  
 Author(s): M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t21.in">tests/paral/Input/t21.in</a>   
+### <a href="/tests/paral/Input/t21.in">tests/paral/Input/t21.in</a>   
 
 Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs.
 
@@ -1340,7 +1340,7 @@ Topic(s): [[topic:parallelism]], [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t22.in">tests/paral/Input/t22.in</a>   
+### <a href="/tests/paral/Input/t22.in">tests/paral/Input/t22.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs.
 
@@ -1351,7 +1351,7 @@ Topic(s): [[topic:parallelism]], [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t24.in">tests/paral/Input/t24.in</a>   
+### <a href="/tests/paral/Input/t24.in">tests/paral/Input/t24.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over FFT and kpoints: npband*npfft*npkpt=1*2*2=4 processors. In test tY.in we check other distributions for guarantee.
 
@@ -1362,7 +1362,7 @@ Topic(s): [[topic:parallelism]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t25.in">tests/paral/Input/t25.in</a>   
+### <a href="/tests/paral/Input/t25.in">tests/paral/Input/t25.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables.
 
@@ -1374,7 +1374,7 @@ Author(s): A. Levitt
 
 * * *
 
-###  <a href="/tests/paral/Input/t26.in">tests/paral/Input/t26.in</a>   
+### <a href="/tests/paral/Input/t26.in">tests/paral/Input/t26.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 4 procs. Same of test R:test the automatic parallelisation
 
@@ -1385,7 +1385,7 @@ Topic(s): [[topic:parallelism]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t27.in">tests/paral/Input/t27.in</a>   
+### <a href="/tests/paral/Input/t27.in">tests/paral/Input/t27.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 4 procs. test the automatic parallelisation when a processor is unoccupied.
 
@@ -1395,7 +1395,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/paral/Input/t28.in">tests/paral/Input/t28.in</a>   
+### <a href="/tests/paral/Input/t28.in">tests/paral/Input/t28.in</a>   
 
 Test the parallelization over spinorial components of WF Bi A7 structure (2 atoms,  treated as semi-conductor), using PAW,  within LDA and spin-orbit coupling. - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2)
 
@@ -1406,7 +1406,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/paral/Input/t29.in">tests/paral/Input/t29.in</a>   
+### <a href="/tests/paral/Input/t29.in">tests/paral/Input/t29.in</a>   
 
 C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test MPI-FFT with 2 processors,  istwfk=2 and bandpp 2
 
@@ -1418,7 +1418,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/paral/Input/t30.in">tests/paral/Input/t30.in</a>   
+### <a href="/tests/paral/Input/t30.in">tests/paral/Input/t30.in</a>   
 
 Chebyshev,  C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Also test gemm_nonlop
 
@@ -1430,18 +1430,18 @@ Author(s): A. Levitt
 
 * * *
 
-###  <a href="/tests/paral/Input/t41.in">tests/paral/Input/t41.in</a>   
+### <a href="/tests/paral/Input/t41.in">tests/paral/Input/t41.in</a>   
 
 Gold,  8 atom supercell,  with PAW. Test lotf_nitex,  lotf_classic,  lotf_version,  lotf_nneigx. These variables,  concerning LOTF method,  are taken into account only if the enable_lotf="yes" is used in configuration.
 
 Executable: abinit   
 Keywords(s): abinit, PAW   
-Author(s): M. Mancini, S. Mazevet  
+Author(s): S. Mazevet, M. Mancini  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t51.in">tests/paral/Input/t51.in</a>   
+### <a href="/tests/paral/Input/t51.in">tests/paral/Input/t51.in</a>   
 
 FCC Al metallic;  10 special points
 
@@ -1452,7 +1452,7 @@ Topic(s): [[topic:parallelism]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t52.in">tests/paral/Input/t52.in</a>   
+### <a href="/tests/paral/Input/t52.in">tests/paral/Input/t52.in</a>   
 
 FCC Al;  non-selfconsistent computation of wavefunctions
 
@@ -1462,7 +1462,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t53.in">tests/paral/Input/t53.in</a>   
+### <a href="/tests/paral/Input/t53.in">tests/paral/Input/t53.in</a>   
 
 FCC Al metallic;  10 phonon at 1/4 1/8 1/8
 
@@ -1472,7 +1472,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t54.in">tests/paral/Input/t54.in</a>   
+### <a href="/tests/paral/Input/t54.in">tests/paral/Input/t54.in</a>   
 
 GaAs in zinc-blende structure;  GS and RF calculation (similar to test v2 #30,  except that only two q points are considered) the 5-th dataset compute 3DTE. localrdwf=1 Also check parallelism for Raman calculations.
 
@@ -1483,7 +1483,7 @@ Topic(s): [[topic:nonlinear]]
 
 * * *
 
-###  <a href="/tests/paral/Input/t55.in">tests/paral/Input/t55.in</a>   
+### <a href="/tests/paral/Input/t55.in">tests/paral/Input/t55.in</a>   
 
 GaAs in zinc-blende structure;  GS and RF calculation (similar to set E,  except that localrdwf=0)
 
@@ -1493,7 +1493,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t56.in">tests/paral/Input/t56.in</a>   
+### <a href="/tests/paral/Input/t56.in">tests/paral/Input/t56.in</a>   
 
 Fe in FCC structure;  GS and RF calculation (RF at q=0 0 0) Test the parallelism on both spin and k points
 
@@ -1503,7 +1503,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t57.in">tests/paral/Input/t57.in</a>   
+### <a href="/tests/paral/Input/t57.in">tests/paral/Input/t57.in</a>   
 
 GaAs in zinc-blende structure;  GS and RF calculation (similar to set E,  except that mkmem, mkqmem, mk1mem=0)
 
@@ -1513,28 +1513,28 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/paral/Input/t59.in">tests/paral/Input/t59.in</a>   
+### <a href="/tests/paral/Input/t59.in">tests/paral/Input/t59.in</a>   
 
 Calculation of the electron-phonon band structure renormalisation for Diamond, due to the phonon at the Gamma point. The computation with ecut=20 Ha and elph2_imagden 0.0 gives 24.482 meV for the HOMO shift at Gamma,  while the finite-difference of phonon frequencies gives 28.975 meV,  in excellent agreement with frozen-phonon changes of HOMO eigenenergy. The difference is due to the Non-Site-Diagonal Debye-Waller contribution,  that was explicitly obtained by a finite-difference approach.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t60.in">tests/paral/Input/t60.in</a>   
+### <a href="/tests/paral/Input/t60.in">tests/paral/Input/t60.in</a>   
 
 Diamond. Diamond dynamical temperature-dependent of the electronic structure. Three q-points are computed. Test of the parallelization. Must be compared with v7/Refs/t55.out
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t62.in">tests/paral/Input/t62.in</a>   
+### <a href="/tests/paral/Input/t62.in">tests/paral/Input/t62.in</a>   
 
 Test paral_kgb 0 eigensolver and IO routines with idle processors.
 
@@ -1545,214 +1545,214 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/paral/Input/t71.in">tests/paral/Input/t71.in</a>   
+### <a href="/tests/paral/Input/t71.in">tests/paral/Input/t71.in</a>   
 
 Si,  Bulk,  2 atoms,  one-shot GW calculation,  parallelism over k points.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): R. Shaltaf  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t72.in">tests/paral/Input/t72.in</a>   
+### <a href="/tests/paral/Input/t72.in">tests/paral/Input/t72.in</a>   
 
 Si,  Bulk,  2 atoms,  one-shot GW calculation,  parallelism over bands
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t73.in">tests/paral/Input/t73.in</a>   
+### <a href="/tests/paral/Input/t73.in">tests/paral/Input/t73.in</a>   
 
 Si,  Bulk,  2 atoms,  qp-SC calculation,  parallelism over k points
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t74.in">tests/paral/Input/t74.in</a>   
+### <a href="/tests/paral/Input/t74.in">tests/paral/Input/t74.in</a>   
 
 Si,  Bulk,  2 atoms,  parallelism over k-points for the WFK file creation parallelism over bands for GW without PPM
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t75.in">tests/paral/Input/t75.in</a>   
+### <a href="/tests/paral/Input/t75.in">tests/paral/Input/t75.in</a>   
 
 Na2,  Molecule,  2 atoms,  parallelism over bands for scfGW with a cutoffed interaction
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t76.in">tests/paral/Input/t76.in</a>   
+### <a href="/tests/paral/Input/t76.in">tests/paral/Input/t76.in</a>   
 
 Bethe-Salpeter equation (BSE) with norm-conserving pseudopotentials.
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t77.in">tests/paral/Input/t77.in</a>   
+### <a href="/tests/paral/Input/t77.in">tests/paral/Input/t77.in</a>   
 
 Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)
 
 Executable: abinit   
-Keywords(s): abinit, GW, GWLS   
+Keywords(s): GW, abinit, GWLS   
 Topic(s): [[topic:GWls]]  
 Author(s): J. Laflamme Janssen  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>   
+### <a href="/tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>   
 
 Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, PAW   
+Keywords(s): abinit, PAW, DMFT   
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>   
+### <a href="/tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>   
 
 Test CT-QMC parallelism
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC   
+Keywords(s): CTQMC, abinit, DMFT   
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t93.in">tests/paral/Input/t93.in</a>   
+### <a href="/tests/paral/Input/t93.in">tests/paral/Input/t93.in</a>   
 
 Test of HF in parallel. NB: HF does not support MPI-IO. gmatteo will add support for HDF5 when this test will succeed with MPI-IO. For the time being,  this test is disabled when we are in netcdf mode.
 
 Executable: abinit   
-Keywords(s): HF, abinit   
+Keywords(s): abinit, HF   
 Topic(s): [[topic:Hybrids]]  
 Author(s): C. Martins  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t94.in">tests/paral/Input/t94.in</a>   
+### <a href="/tests/paral/Input/t94.in">tests/paral/Input/t94.in</a>   
 
 Test of PBE0-1/3 in parallel NB: HF does not support MPI-IO. gmatteo will add support for HDF5 when this test will succeed with MPI-IO. For the time being,  this test is disabled when we are in netcdf mode.
 
 Executable: abinit   
-Keywords(s): HF, abinit, PBE0   
+Keywords(s): abinit, PBE0, HF   
 Topic(s): [[topic:Hybrids]]  
 Author(s): C. Martins  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t95.in">tests/paral/Input/t95.in</a>   
+### <a href="/tests/paral/Input/t95.in">tests/paral/Input/t95.in</a>   
 
 Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. DFPT is computed
 
 Executable: abinit   
-Keywords(s): abinit, ELASTIC, DFPT, PAW   
+Keywords(s): abinit, DFPT, ELASTIC, PAW   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t96.in">tests/paral/Input/t96.in</a>   
+### <a href="/tests/paral/Input/t96.in">tests/paral/Input/t96.in</a>   
 
 reed ddb and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t97.in">tests/paral/Input/t97.in</a>   
+### <a href="/tests/paral/Input/t97.in">tests/paral/Input/t97.in</a>   
 
 read xml and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t98.in">tests/paral/Input/t98.in</a>   
+### <a href="/tests/paral/Input/t98.in">tests/paral/Input/t98.in</a>   
 
 read xml and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t99.in">tests/paral/Input/t99.in</a>   
+### <a href="/tests/paral/Input/t99.in">tests/paral/Input/t99.in</a>   
 
 Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density
 
 Executable: abinit   
-Keywords(s): PAW, TRIQS, DMFT, CTQMC, abinit   
-Author(s): V. Planes, B. Amadon  
+Keywords(s): abinit, DMFT, CTQMC, PAW, TRIQS   
+Author(s): B. Amadon, V. Planes  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t100.in">tests/paral/Input/t100.in</a>   
+### <a href="/tests/paral/Input/t100.in">tests/paral/Input/t100.in</a>   
 
 read xml and generate effective potential in XML file and run NPT MD
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t101.in">tests/paral/Input/t101.in</a>   
+### <a href="/tests/paral/Input/t101.in">tests/paral/Input/t101.in</a>   
 
 read ddb and HIST,  fit the anharmonic part and generate effective potential
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/paral/Input/t102.in">tests/paral/Input/t102.in</a>   
+### <a href="/tests/paral/Input/t102.in">tests/paral/Input/t102.in</a>   
 
 read ddb and HIST,  fit the anharmonic part and generate effective potential
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
@@ -1760,7 +1760,7 @@ Author(s): A. MARTIN
 
 ##  psml  
 
-###  <a href="/tests/psml/Input/t01.in">tests/psml/Input/t01.in</a>   
+### <a href="/tests/psml/Input/t01.in">tests/psml/Input/t01.in</a>   
 
 Bulk silicon,  in the diamond structure
 
@@ -1771,7 +1771,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/psml/Input/t02.in">tests/psml/Input/t02.in</a>   
+### <a href="/tests/psml/Input/t02.in">tests/psml/Input/t02.in</a>   
 
 Bulk iron,  with and without spin-polarization
 
@@ -1784,7 +1784,7 @@ Author(s): M. Verstraete
 
 ##  seq  
 
-###  <a href="/tests/seq/Input/tsv2_81.in">tests/seq/Input/tsv2_81.in</a>   
+### <a href="/tests/seq/Input/tsv2_81.in">tests/seq/Input/tsv2_81.in</a>   
 
 81. Nitrogen atom in a big box,  spin-polarized. Compute Berry phase for atom at different positions.
 
@@ -1794,7 +1794,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv2_82.in">tests/seq/Input/tsv2_82.in</a>   
+### <a href="/tests/seq/Input/tsv2_82.in">tests/seq/Input/tsv2_82.in</a>   
 
 GaAs,  zinc-blende structure. Compute Berry phase along 0 0 1,  using a 4x4x10 sampling.
 
@@ -1804,7 +1804,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv3_03.in">tests/seq/Input/tsv3_03.in</a>   
+### <a href="/tests/seq/Input/tsv3_03.in">tests/seq/Input/tsv3_03.in</a>   
 
 Zinc-blende GaAs (2 atoms per unit cell), using HGH psps. Test the computation of the Berry phase. Grid sampling is very rough,  for speed. 8 dataset,  testing all combinations of location of wfs (memory or disk),  spin polarisation, use (or non-use) of time-reversal symmetry.
 
@@ -1815,7 +1815,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv3_04.in">tests/seq/Input/tsv3_04.in</a>   
+### <a href="/tests/seq/Input/tsv3_04.in">tests/seq/Input/tsv3_04.in</a>   
 
 Zinc-blende GaAs (2 atoms per unit cell), using old,  rather inaccurate psps. Computation of the Berry phase. Test the doubling of the step of the sampling.
 
@@ -1825,7 +1825,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv3_05.in">tests/seq/Input/tsv3_05.in</a>   
+### <a href="/tests/seq/Input/tsv3_05.in">tests/seq/Input/tsv3_05.in</a>   
 
 Si in diamond structure;  2 special points;  low ecut. With a 4x4x4 k point grid (!only one shift,  but OK because symmetry is imposed),  compute the dielectric constant by two different techniques
 
@@ -1835,7 +1835,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv4_55.in">tests/seq/Input/tsv4_55.in</a>   
+### <a href="/tests/seq/Input/tsv4_55.in">tests/seq/Input/tsv4_55.in</a>   
 
 LiNbO3,  rhombohedral. Test finite electric field Check the corectness of the symmetry operations with non-zero tnons.
 
@@ -1846,7 +1846,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv4_78.in">tests/seq/Input/tsv4_78.in</a>   
+### <a href="/tests/seq/Input/tsv4_78.in">tests/seq/Input/tsv4_78.in</a>   
 
 AlAs,  zinc-blende structure. Finite electric field calculation In order to perform a first-principles calculation in an electric field,  the wavefunctions must be initialized properly. Therefore, I do first a GS calculation to obtain the WF in the whole BZ under zero electric field. Then,  I increase the electric field slowly in successive datasets. The calculation for each dataset is initialized using the WF of a previous one. I consider both positive and negative electric fields. WARNING : HAS BEEN TRANSFERRED TO tests/seq
 
@@ -1857,7 +1857,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv4_80.in">tests/seq/Input/tsv4_80.in</a>   
+### <a href="/tests/seq/Input/tsv4_80.in">tests/seq/Input/tsv4_80.in</a>   
 
 CrystallIne AlAs first three runs are for calculation of ground state at finite electric field the fourth run gets the gs wavefunction and then do response calculation the wavevector q is commensurate with lattice so gs wfs at q+k are not needed.
 
@@ -1867,7 +1867,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv4_90.in">tests/seq/Input/tsv4_90.in</a>   
+### <a href="/tests/seq/Input/tsv4_90.in">tests/seq/Input/tsv4_90.in</a>   
 
 Crystalline silicon : print the pwfn.data file, for use in a subsequent run of the CASINO code.
 
@@ -1877,7 +1877,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv5_112.in">tests/seq/Input/tsv5_112.in</a>   
+### <a href="/tests/seq/Input/tsv5_112.in">tests/seq/Input/tsv5_112.in</a>   
 
 NaF Sodium Fluoride FCC (rocksalt structure) with 2 atoms per cell. Test computation of the Berry phase in PAW.
 
@@ -1888,7 +1888,7 @@ Author(s): P. Hermet
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv5_113.in">tests/seq/Input/tsv5_113.in</a>   
+### <a href="/tests/seq/Input/tsv5_113.in">tests/seq/Input/tsv5_113.in</a>   
 
 GaAs with 2 atoms per cell. Test computation of the Berry phase in PAW,  with GGA functional. WARNING : HAS BEEN TRANSFERRED TO tests/seq
 
@@ -1899,7 +1899,7 @@ Author(s): P. Hermet
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_121.in">tests/seq/Input/tsv6_121.in</a>   
+### <a href="/tests/seq/Input/tsv6_121.in">tests/seq/Input/tsv6_121.in</a>   
 
 PbTiO3 in the tetragonal geometry. Test berryopt=14 (finite reduced electric field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)
 
@@ -1909,7 +1909,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_122.in">tests/seq/Input/tsv6_122.in</a>   
+### <a href="/tests/seq/Input/tsv6_122.in">tests/seq/Input/tsv6_122.in</a>   
 
 PbTiO3 in the tetragonal geometry. Test berryopt=16 (finite reduced electric displacement field calculation, relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)
 
@@ -1919,7 +1919,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_123.in">tests/seq/Input/tsv6_123.in</a>   
+### <a href="/tests/seq/Input/tsv6_123.in">tests/seq/Input/tsv6_123.in</a>   
 
 PbTiO3 in the tetragonal geometry. Test berryopt=4 (finite electric field calculation,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)
 
@@ -1929,7 +1929,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_124.in">tests/seq/Input/tsv6_124.in</a>   
+### <a href="/tests/seq/Input/tsv6_124.in">tests/seq/Input/tsv6_124.in</a>   
 
 PbTiO3 in the tetragonal geometry. Test berryopt=6 (finite electric displacement field calculation, relaxing cell perameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)
 
@@ -1939,7 +1939,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_125.in">tests/seq/Input/tsv6_125.in</a>   
+### <a href="/tests/seq/Input/tsv6_125.in">tests/seq/Input/tsv6_125.in</a>   
 
 Test berryopt=17 (mixed finite electric field and electric displacement field boundary condition,  relaxing cell parameters,  e.g. optcell=2) (XG120616 : tranferred to tests/seq)
 
@@ -1949,7 +1949,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv6_126.in">tests/seq/Input/tsv6_126.in</a>   
+### <a href="/tests/seq/Input/tsv6_126.in">tests/seq/Input/tsv6_126.in</a>   
 
 AlAs case,  to test the "polcen" in finite reduced electric field calculation. (XG120616 : tranferred to tests/seq)
 
@@ -1959,7 +1959,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/seq/Input/tsv7_70.in">tests/seq/Input/tsv7_70.in</a>   
+### <a href="/tests/seq/Input/tsv7_70.in">tests/seq/Input/tsv7_70.in</a>   
 
 PAW Berrys Phase calculation of forces in finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial.) Cannot be executed with more than 1 MPI node.
 
@@ -1972,7 +1972,7 @@ Author(s): J. Zwanziger
 
 ##  tutoparal  
 
-###  <a href="/tests/tutoparal/Input/tdfpt_03.in">tests/tutoparal/Input/tdfpt_03.in</a>   
+### <a href="/tests/tutoparal/Input/tdfpt_03.in">tests/tutoparal/Input/tdfpt_03.in</a>   
 
 BaTiO3 linear response calculation
 
@@ -1982,7 +1982,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tdfpt_04.in">tests/tutoparal/Input/tdfpt_04.in</a>   
+### <a href="/tests/tutoparal/Input/tdfpt_04.in">tests/tutoparal/Input/tdfpt_04.in</a>   
 
 BaTiO3 linear response calculation
 
@@ -1992,7 +1992,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tgspw_01.in">tests/tutoparal/Input/tgspw_01.in</a>   
+### <a href="/tests/tutoparal/Input/tgspw_01.in">tests/tutoparal/Input/tgspw_01.in</a>   
 
 Gold with one vacancy (107 atoms of gold).
 
@@ -2003,7 +2003,7 @@ Author(s): F. Bottin
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tgspw_02.in">tests/tutoparal/Input/tgspw_02.in</a>   
+### <a href="/tests/tutoparal/Input/tgspw_02.in">tests/tutoparal/Input/tgspw_02.in</a>   
 
 
 
@@ -2014,7 +2014,7 @@ Author(s): F. Bottin
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tgspw_03.in">tests/tutoparal/Input/tgspw_03.in</a>   
+### <a href="/tests/tutoparal/Input/tgspw_03.in">tests/tutoparal/Input/tgspw_03.in</a>   
 
 
 
@@ -2025,51 +2025,51 @@ Author(s): F. Bottin
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tmbt_1.in">tests/tutoparal/Input/tmbt_1.in</a>   
+### <a href="/tests/tutoparal/Input/tmbt_1.in">tests/tutoparal/Input/tmbt_1.in</a>   
 
 GW calculation for crystalline alpha-quartz. Preparatory GS run.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tmbt_2.in">tests/tutoparal/Input/tmbt_2.in</a>   
+### <a href="/tests/tutoparal/Input/tmbt_2.in">tests/tutoparal/Input/tmbt_2.in</a>   
 
 GW calculation for crystalline alpha-quartz. Screening calculation
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tmbt_3.in">tests/tutoparal/Input/tmbt_3.in</a>   
+### <a href="/tests/tutoparal/Input/tmbt_3.in">tests/tutoparal/Input/tmbt_3.in</a>   
 
 GW calculation for crystalline alpha-quartz. Screening calculation with Hilbert transform
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tmbt_4.in">tests/tutoparal/Input/tmbt_4.in</a>   
+### <a href="/tests/tutoparal/Input/tmbt_4.in">tests/tutoparal/Input/tmbt_4.in</a>   
 
 GW calculation for crystalline alpha-quartz. Sigma calculation
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutoparal/Input/tstring_01.in">tests/tutoparal/Input/tstring_01.in</a>   
+### <a href="/tests/tutoparal/Input/tstring_01.in">tests/tutoparal/Input/tstring_01.in</a>   
 
 Hydronium ion + NH3 molecule Ground state calculation keeping O and H atoms fixed
 
@@ -2081,7 +2081,7 @@ Keywords(s): abinit
 
 ##  tutoplugs  
 
-###  <a href="/tests/tutoplugs/Input/tw90_1.in">tests/tutoplugs/Input/tw90_1.in</a>   
+### <a href="/tests/tutoplugs/Input/tw90_1.in">tests/tutoplugs/Input/tw90_1.in</a>   
 
 Test interface with Wannier90 (NC pseudos)
 
@@ -2091,7 +2091,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutoplugs/Input/tw90_2.in">tests/tutoplugs/Input/tw90_2.in</a>   
+### <a href="/tests/tutoplugs/Input/tw90_2.in">tests/tutoplugs/Input/tw90_2.in</a>   
 
 Test interface with Wannier90 (PAW calculation)
 
@@ -2101,7 +2101,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/tutoplugs/Input/tw90_3.in">tests/tutoplugs/Input/tw90_3.in</a>   
+### <a href="/tests/tutoplugs/Input/tw90_3.in">tests/tutoplugs/Input/tw90_3.in</a>   
 
 Silane SiH4. Generation of Wannier functions via Wannier90 code.
 
@@ -2111,7 +2111,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutoplugs/Input/tw90_4.in">tests/tutoplugs/Input/tw90_4.in</a>   
+### <a href="/tests/tutoplugs/Input/tw90_4.in">tests/tutoplugs/Input/tw90_4.in</a>   
 
 Test Wannier90 interface with NC pseudos
 
@@ -2123,51 +2123,51 @@ Keywords(s): abinit, NC
 
 ##  tutorespfn  
 
-###  <a href="/tests/tutorespfn/Input/tdepes_1.in">tests/tutorespfn/Input/tdepes_1.in</a>   
+### <a href="/tests/tutorespfn/Input/tdepes_1.in">tests/tutorespfn/Input/tdepes_1.in</a>   
 
 Temperature dependence calculation of diamond.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tdepes_2.in">tests/tutorespfn/Input/tdepes_2.in</a>   
+### <a href="/tests/tutorespfn/Input/tdepes_2.in">tests/tutorespfn/Input/tdepes_2.in</a>   
 
 Input file for the anaddb code. Analysis of the C DDB
 
 Executable: anaddb   
-Keywords(s): EPH, anaddb, DFPT, NC   
+Keywords(s): anaddb, EPH, DFPT, NC   
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tdepes_3.in">tests/tutorespfn/Input/tdepes_3.in</a>   
+### <a href="/tests/tutorespfn/Input/tdepes_3.in">tests/tutorespfn/Input/tdepes_3.in</a>   
 
 Temperature dependence calculation of diamond.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tdepes_4.in">tests/tutorespfn/Input/tdepes_4.in</a>   
+### <a href="/tests/tutorespfn/Input/tdepes_4.in">tests/tutorespfn/Input/tdepes_4.in</a>   
 
 Temperature dependence calculation of diamond.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_1.in">tests/tutorespfn/Input/telast_1.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_1.in">tests/tutorespfn/Input/telast_1.in</a>   
 
 AlAs in hypothetical wurzite (hexagonal) structure Structural optimization run
 
@@ -2177,7 +2177,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_2.in">tests/tutorespfn/Input/telast_2.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_2.in">tests/tutorespfn/Input/telast_2.in</a>   
 
 AlAs in hypothetical wurzite (hexagonal) structure Response function calculation for: * rigid-atom elastic tensor * rigid-atom piezoelectric tensor * interatomic force constants at gamma * Born effective charges
 
@@ -2187,7 +2187,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_3.in">tests/tutorespfn/Input/telast_3.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_3.in">tests/tutorespfn/Input/telast_3.in</a>   
 
 The input file for the anaddb code
 
@@ -2197,7 +2197,7 @@ Keywords(s): anaddb, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_4.in">tests/tutorespfn/Input/telast_4.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_4.in">tests/tutorespfn/Input/telast_4.in</a>   
 
 AlAs in hypothetical wurzite (hexagonal) structure Finite-difference calculation for c-axis strain increment +/- 0.0001
 
@@ -2207,7 +2207,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_5.in">tests/tutorespfn/Input/telast_5.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_5.in">tests/tutorespfn/Input/telast_5.in</a>   
 
 AlAs in hypothetical wurzite (hexagonal) structure Alternative response function calculation for some rigid-atom piezoelectric tensor elements.
 
@@ -2217,7 +2217,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/telast_6.in">tests/tutorespfn/Input/telast_6.in</a>   
+### <a href="/tests/tutorespfn/Input/telast_6.in">tests/tutorespfn/Input/telast_6.in</a>   
 
 Al fcc metal - elastic constant calculation
 
@@ -2227,40 +2227,40 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_1.in">tests/tutorespfn/Input/teph_1.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_1.in">tests/tutorespfn/Input/teph_1.in</a>   
 
 the sequence of datasets makes the ground states and all of the explicit perturbations of the single Al atom in all directions,  for the irreducible qpoints in a 2x2x2 grid. Note that the q-point grid must be a sub-grid of the k-point grid (here 4x4x4)
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): M. Verstraete  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_2.in">tests/tutorespfn/Input/teph_2.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_2.in">tests/tutorespfn/Input/teph_2.in</a>   
 
 Input file for anaddb
 
 Executable: mrgddb   
-Keywords(s): EPH, DFPT, mrgddb, NC   
+Keywords(s): EPH, DFPT, NC, mrgddb   
 Author(s): M. Verstraete  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_3.in">tests/tutorespfn/Input/teph_3.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_3.in">tests/tutorespfn/Input/teph_3.in</a>   
 
 Input file for mrggkk
 
 Executable: mrggkk   
-Keywords(s): EPH, mrggkk, DFPT, NC   
+Keywords(s): mrggkk, EPH, DFPT, NC   
 Author(s): M. Verstraete  
 
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_4.in">tests/tutorespfn/Input/teph_4.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_4.in">tests/tutorespfn/Input/teph_4.in</a>   
 
 anaddb input file for electron-phonon calculation.
 
@@ -2272,7 +2272,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_5.in">tests/tutorespfn/Input/teph_5.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_5.in">tests/tutorespfn/Input/teph_5.in</a>   
 
 anaddb Input file for electron-phonon calculations.
 
@@ -2284,7 +2284,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/teph_6.in">tests/tutorespfn/Input/teph_6.in</a>   
+### <a href="/tests/tutorespfn/Input/teph_6.in">tests/tutorespfn/Input/teph_6.in</a>   
 
 anaddb input file for electron phonon calculations.
 
@@ -2295,7 +2295,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_1.in">tests/tutorespfn/Input/tffield_1.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_1.in">tests/tutorespfn/Input/tffield_1.in</a>   
 
 Finite difference calculation of the Born effective charges of AlAs
 
@@ -2306,7 +2306,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_2.in">tests/tutorespfn/Input/tffield_2.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_2.in">tests/tutorespfn/Input/tffield_2.in</a>   
 
 Linear response calculation for AlAs Perturbation: atomic displacements & strains Finite difference calculation of the ddk
 
@@ -2317,7 +2317,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_3.in">tests/tutorespfn/Input/tffield_3.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_3.in">tests/tutorespfn/Input/tffield_3.in</a>   
 
 Anaddb input file.
 
@@ -2327,7 +2327,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_4.in">tests/tutorespfn/Input/tffield_4.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_4.in">tests/tutorespfn/Input/tffield_4.in</a>   
 
 Finite difference calculation of the clamped-ion piezoelectric constants of AlAs
 
@@ -2338,7 +2338,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_5.in">tests/tutorespfn/Input/tffield_5.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_5.in">tests/tutorespfn/Input/tffield_5.in</a>   
 
 Finite difference calculation of the clamped-ion piezoelectric constants of AlAs
 
@@ -2349,7 +2349,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tffield_6.in">tests/tutorespfn/Input/tffield_6.in</a>   
+### <a href="/tests/tutorespfn/Input/tffield_6.in">tests/tutorespfn/Input/tffield_6.in</a>   
 
 Finite electric field calculation of alas at clamped atomic positions
 
@@ -2360,7 +2360,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_1.in">tests/tutorespfn/Input/tnlo_1.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_1.in">tests/tutorespfn/Input/tnlo_1.in</a>   
 
 Structural optimisation
 
@@ -2370,7 +2370,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_2.in">tests/tutorespfn/Input/tnlo_2.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_2.in">tests/tutorespfn/Input/tnlo_2.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements
 
@@ -2381,7 +2381,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_3.in">tests/tutorespfn/Input/tnlo_3.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_3.in">tests/tutorespfn/Input/tnlo_3.in</a>   
 
 Linear response calculation for AlAs Perturbation: strain
 
@@ -2392,7 +2392,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_4.in">tests/tutorespfn/Input/tnlo_4.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_4.in">tests/tutorespfn/Input/tnlo_4.in</a>   
 
 Anaddb Input file
 
@@ -2402,7 +2402,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_5.in">tests/tutorespfn/Input/tnlo_5.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_5.in">tests/tutorespfn/Input/tnlo_5.in</a>   
 
 anaddb input file.
 
@@ -2412,7 +2412,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_6.in">tests/tutorespfn/Input/tnlo_6.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_6.in">tests/tutorespfn/Input/tnlo_6.in</a>   
 
 Finite difference calculation of d chi / d tau of AlAs
 
@@ -2423,7 +2423,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_7.in">tests/tutorespfn/Input/tnlo_7.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_7.in">tests/tutorespfn/Input/tnlo_7.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements adapted for single data set mode by JWZ,  05.05.2011
 
@@ -2434,7 +2434,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_8.in">tests/tutorespfn/Input/tnlo_8.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_8.in">tests/tutorespfn/Input/tnlo_8.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements adapted for single data set mode by JWZ,  05.05.2011
 
@@ -2445,7 +2445,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_9.in">tests/tutorespfn/Input/tnlo_9.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_9.in">tests/tutorespfn/Input/tnlo_9.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements adapted for single data set mode by JWZ,  05.05.2011
 
@@ -2456,7 +2456,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_10.in">tests/tutorespfn/Input/tnlo_10.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_10.in">tests/tutorespfn/Input/tnlo_10.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements adapted for single data set mode by JWZ,  05.05.2011
 
@@ -2467,7 +2467,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/tnlo_11.in">tests/tutorespfn/Input/tnlo_11.in</a>   
+### <a href="/tests/tutorespfn/Input/tnlo_11.in">tests/tutorespfn/Input/tnlo_11.in</a>   
 
 Linear and nonlinear response calculation for AlAs Perturbations: electric fields & atomic displacements adapted for single data set mode by JWZ,  05.05.2011
 
@@ -2478,7 +2478,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/toptic_1.in">tests/tutorespfn/Input/toptic_1.in</a>   
+### <a href="/tests/tutorespfn/Input/toptic_1.in">tests/tutorespfn/Input/toptic_1.in</a>   
 
 Prepare the computation of linear and non-linear optic properties of GaAs crystal : ground-state with few bands, then non-SCF with a larger number of bands,  then ddk for different directions Note that the k point sampling shoud be finer for significant results. The cut-off energy is also too low.
 
@@ -2488,7 +2488,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/toptic_2.in">tests/tutorespfn/Input/toptic_2.in</a>   
+### <a href="/tests/tutorespfn/Input/toptic_2.in">tests/tutorespfn/Input/toptic_2.in</a>   
 
 Input file for optic code.
 
@@ -2498,7 +2498,7 @@ Keywords(s): optic
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/toptic_3.in">tests/tutorespfn/Input/toptic_3.in</a>   
+### <a href="/tests/tutorespfn/Input/toptic_3.in">tests/tutorespfn/Input/toptic_3.in</a>   
 
 Prepare the computation of linear optic properties (for the imaginary spectrum only) of GaAs crystal : ground-state with few bands, then non-SCF with a larger number of bands,  then ddk for different directions Note that the k point sampling shoud be finer for significant results. The cut-off energy is also too low.
 
@@ -2508,7 +2508,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/toptic_4.in">tests/tutorespfn/Input/toptic_4.in</a>   
+### <a href="/tests/tutorespfn/Input/toptic_4.in">tests/tutorespfn/Input/toptic_4.in</a>   
 
 Input file for optic code.
 
@@ -2518,7 +2518,7 @@ Keywords(s): optic
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_1.in">tests/tutorespfn/Input/trf1_1.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_1.in">tests/tutorespfn/Input/trf1_1.in</a>   
 
 Crystalline AlAs : computation of the total energy
 
@@ -2528,7 +2528,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_2.in">tests/tutorespfn/Input/trf1_2.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_2.in">tests/tutorespfn/Input/trf1_2.in</a>   
 
 Crystalline AlAs : computation of the total energy and forces in a distorted geometry
 
@@ -2538,7 +2538,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_3.in">tests/tutorespfn/Input/trf1_3.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_3.in">tests/tutorespfn/Input/trf1_3.in</a>   
 
 Crystalline AlAs : computation of the second derivative of the total energy
 
@@ -2548,7 +2548,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_4.in">tests/tutorespfn/Input/trf1_4.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_4.in">tests/tutorespfn/Input/trf1_4.in</a>   
 
 Crystalline AlAs : computation of the dynamical matrix at Gamma
 
@@ -2558,7 +2558,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_5.in">tests/tutorespfn/Input/trf1_5.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_5.in">tests/tutorespfn/Input/trf1_5.in</a>   
 
 Crystalline AlAs : computation of the response to homogeneous electric field and atomic displacements,  at q=0
 
@@ -2568,7 +2568,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf1_6.in">tests/tutorespfn/Input/trf1_6.in</a>   
+### <a href="/tests/tutorespfn/Input/trf1_6.in">tests/tutorespfn/Input/trf1_6.in</a>   
 
 Crystalline AlAs : computation of the response to homogeneous electric field and atomic displacements,  at q=X,  q=L and an acoustic mode close to q=Gamma
 
@@ -2578,7 +2578,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_1.in">tests/tutorespfn/Input/trf2_1.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_1.in">tests/tutorespfn/Input/trf2_1.in</a>   
 
 Crystalline AlAs : computation of the phonon spectrum
 
@@ -2588,7 +2588,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_3.in">tests/tutorespfn/Input/trf2_3.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_3.in">tests/tutorespfn/Input/trf2_3.in</a>   
 
 Input file for anaddb
 
@@ -2598,7 +2598,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_4.in">tests/tutorespfn/Input/trf2_4.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_4.in">tests/tutorespfn/Input/trf2_4.in</a>   
 
 !Input file for the anaddb code. Analysis of the AlAs DDB
 
@@ -2608,7 +2608,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_5.in">tests/tutorespfn/Input/trf2_5.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_5.in">tests/tutorespfn/Input/trf2_5.in</a>   
 
 Input file for the anaddb code. Analysis of the SiO2 DDB
 
@@ -2618,7 +2618,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_6.in">tests/tutorespfn/Input/trf2_6.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_6.in">tests/tutorespfn/Input/trf2_6.in</a>   
 
 Input file for 'band2eps.' This data layout must be used,  line-by-line.
 
@@ -2628,7 +2628,7 @@ Keywords(s): band2eps
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_7.in">tests/tutorespfn/Input/trf2_7.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_7.in">tests/tutorespfn/Input/trf2_7.in</a>   
 
 Input file for the anaddb code. Analysis of the SiO2 DDB
 
@@ -2638,7 +2638,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/tutorespfn/Input/trf2_2.in">tests/tutorespfn/Input/trf2_2.in</a>   
+### <a href="/tests/tutorespfn/Input/trf2_2.in">tests/tutorespfn/Input/trf2_2.in</a>   
 
 Crystalline AlAs : computation of the set of q point needed for the Fourier interpolation
 
@@ -2650,7 +2650,7 @@ Keywords(s): abinit
 
 ##  tutorial  
 
-###  <a href="/tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a>   
+### <a href="/tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a>   
 
 H2 molecule in a big box
 
@@ -2660,7 +2660,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a>   
+### <a href="/tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a>   
 
 H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance
 
@@ -2670,7 +2670,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a>   
+### <a href="/tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a>   
 
 H2 molecule in a big box This file will optimize automatically the interatomic distance
 
@@ -2680,7 +2680,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a>   
+### <a href="/tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a>   
 
 H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance.
 
@@ -2690,7 +2690,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase1_5.in">tests/tutorial/Input/tbase1_5.in</a>   
+### <a href="/tests/tutorial/Input/tbase1_5.in">tests/tutorial/Input/tbase1_5.in</a>   
 
 H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used.
 
@@ -2700,7 +2700,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase2_1.in">tests/tutorial/Input/tbase2_1.in</a>   
+### <a href="/tests/tutorial/Input/tbase2_1.in">tests/tutorial/Input/tbase2_1.in</a>   
 
 H2 molecule in a big box This file to optimize the H2 bond length,  compute the associated total energy,  then to compute the total energy of the isolated H atom.
 
@@ -2710,7 +2710,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase2_2.in">tests/tutorial/Input/tbase2_2.in</a>   
+### <a href="/tests/tutorial/Input/tbase2_2.in">tests/tutorial/Input/tbase2_2.in</a>   
 
 H2 molecule in a big box This file to optimize the H2 bond length,  compute the associated total energy,  then to compute the total energy of the isolated H atom. Here,  a double loop has been used.
 
@@ -2720,7 +2720,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase2_3.in">tests/tutorial/Input/tbase2_3.in</a>   
+### <a href="/tests/tutorial/Input/tbase2_3.in">tests/tutorial/Input/tbase2_3.in</a>   
 
 H2 molecule in a big box This file to optimize the H2 bond length,  compute the associated total energy,  then to compute the total energy of the isolated H atom. Here,  a double loop has been used.
 
@@ -2730,7 +2730,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase2_4.in">tests/tutorial/Input/tbase2_4.in</a>   
+### <a href="/tests/tutorial/Input/tbase2_4.in">tests/tutorial/Input/tbase2_4.in</a>   
 
 H2 molecule in a big box This file to optimize the H2 bond length,  compute the associated total energy,  then to compute the total energy of the isolated H atom. Here,  the ecut and acell are fixed : the double loop reduces effectively to a single loop.
 
@@ -2740,7 +2740,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase2_5.in">tests/tutorial/Input/tbase2_5.in</a>   
+### <a href="/tests/tutorial/Input/tbase2_5.in">tests/tutorial/Input/tbase2_5.in</a>   
 
 H2 molecule in a big box Like t24.in,  except that GGA is used instead of LDA.
 
@@ -2750,7 +2750,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase3_1.in">tests/tutorial/Input/tbase3_1.in</a>   
+### <a href="/tests/tutorial/Input/tbase3_1.in">tests/tutorial/Input/tbase3_1.in</a>   
 
 Crystalline silicon: computation of the total energy
 
@@ -2760,7 +2760,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase3_2.in">tests/tutorial/Input/tbase3_2.in</a>   
+### <a href="/tests/tutorial/Input/tbase3_2.in">tests/tutorial/Input/tbase3_2.in</a>   
 
 Crystalline silicon : computation of the total energy This input file will NOT work : nkpt does not agree with ngkpt and shiftk. The error message will be given in the "log" file.
 
@@ -2770,7 +2770,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase3_3.in">tests/tutorial/Input/tbase3_3.in</a>   
+### <a href="/tests/tutorial/Input/tbase3_3.in">tests/tutorial/Input/tbase3_3.in</a>   
 
 Crystalline silicon : computation of the total energy Convergence with respect to the number of k points.
 
@@ -2780,7 +2780,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase3_4.in">tests/tutorial/Input/tbase3_4.in</a>   
+### <a href="/tests/tutorial/Input/tbase3_4.in">tests/tutorial/Input/tbase3_4.in</a>   
 
 Crystalline silicon : computation of the optimal lattice parameter Convergence with respect to the number of k points.
 
@@ -2790,7 +2790,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase3_5.in">tests/tutorial/Input/tbase3_5.in</a>   
+### <a href="/tests/tutorial/Input/tbase3_5.in">tests/tutorial/Input/tbase3_5.in</a>   
 
 Crystalline silicon Computation of the band structure. First,  a SCF density computation,  then a non-SCF band structure calculation.
 
@@ -2800,7 +2800,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_1.in">tests/tutorial/Input/tbase4_1.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_1.in">tests/tutorial/Input/tbase4_1.in</a>   
 
 Crystalline aluminum : optimization of the lattice parameter at fixed number of k points and broadening.
 
@@ -2810,7 +2810,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_2.in">tests/tutorial/Input/tbase4_2.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_2.in">tests/tutorial/Input/tbase4_2.in</a>   
 
 Crystalline aluminum : optimization of the lattice parameter Convergence with respect to k points.
 
@@ -2820,7 +2820,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_3.in">tests/tutorial/Input/tbase4_3.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_3.in">tests/tutorial/Input/tbase4_3.in</a>   
 
 Crystalline aluminum : computation of the total energy Convergence with respect to k points
 
@@ -2830,7 +2830,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_4.in">tests/tutorial/Input/tbase4_4.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_4.in">tests/tutorial/Input/tbase4_4.in</a>   
 
 Crystalline aluminum A first step in the determination of the surface energy of aluminum : changing the orientation of the cell.
 
@@ -2841,7 +2841,7 @@ Topic(s): [[topic:UnitCell]]
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_5.in">tests/tutorial/Input/tbase4_5.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_5.in">tests/tutorial/Input/tbase4_5.in</a>   
 
 Crystalline aluminum Determination of the surface energy of aluminum : a minimal slab.
 
@@ -2851,7 +2851,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_6.in">tests/tutorial/Input/tbase4_6.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_6.in">tests/tutorial/Input/tbase4_6.in</a>   
 
 Crystalline aluminum : computation of the total energy Determination of the surface energy of aluminum : convergence with respect to the number of vacuum layers.
 
@@ -2861,7 +2861,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_7.in">tests/tutorial/Input/tbase4_7.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_7.in">tests/tutorial/Input/tbase4_7.in</a>   
 
 Crystalline aluminum : computation of the total energy Determination of the surface energy of aluminum : convergence with respect to the number of vacuum layers.
 
@@ -2871,7 +2871,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbase4_8.in">tests/tutorial/Input/tbase4_8.in</a>   
+### <a href="/tests/tutorial/Input/tbase4_8.in">tests/tutorial/Input/tbase4_8.in</a>   
 
 Crystalline aluminum : computation of the total energy Determination of the surface energy of aluminum : convergence with respect to the number of vacuum layers.
 
@@ -2881,7 +2881,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbasepar_1.in">tests/tutorial/Input/tbasepar_1.in</a>   
+### <a href="/tests/tutorial/Input/tbasepar_1.in">tests/tutorial/Input/tbasepar_1.in</a>   
 
 Lead crystal. Parallelism over k-points
 
@@ -2891,7 +2891,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbasepar_2.in">tests/tutorial/Input/tbasepar_2.in</a>   
+### <a href="/tests/tutorial/Input/tbasepar_2.in">tests/tutorial/Input/tbasepar_2.in</a>   
 
 FCC Fe (ferromagnetic for fun) with four atoms per cell Distorted with a A1 phonon,  so as to keep the symmetry ... Only one k point in the IBZ Test the parallelism over the spins
 
@@ -2901,51 +2901,51 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbs_1.in">tests/tutorial/Input/tbs_1.in</a>   
+### <a href="/tests/tutorial/Input/tbs_1.in">tests/tutorial/Input/tbs_1.in</a>   
 
 Crystalline silicon Preparatory run for BS calculations There are four datasets specified in this input: 1) Ground-state calculation to get the density. 2) NSCF run to generate the WFK file on a symmetric k-mesh (4x4x4,  gamma-centered) 3) NSCF run to generate another WFK file on a shifted 4x4x4 k-mesh that breaks the symmetry of the BZ sampling 4) SCR calculation with the WFK file generated in the second dataset
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit   
+Keywords(s): GW, BSE, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbs_2.in">tests/tutorial/Input/tbs_2.in</a>   
+### <a href="/tests/tutorial/Input/tbs_2.in">tests/tutorial/Input/tbs_2.in</a>   
 
 Crystalline silicon BS run: Tamm-Dancoff approximation solved with the Haydock algorithm.
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit   
+Keywords(s): GW, BSE, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbs_3.in">tests/tutorial/Input/tbs_3.in</a>   
+### <a href="/tests/tutorial/Input/tbs_3.in">tests/tutorial/Input/tbs_3.in</a>   
 
 Crystalline silicon Convergence of the number of bands in the transition space.
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit   
+Keywords(s): GW, BSE, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tbs_4.in">tests/tutorial/Input/tbs_4.in</a>   
+### <a href="/tests/tutorial/Input/tbs_4.in">tests/tutorial/Input/tbs_4.in</a>   
 
 Crystalline silicon BS run: convergence in ecuteps
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit   
+Keywords(s): GW, BSE, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tdftu_1.in">tests/tutorial/Input/tdftu_1.in</a>   
+### <a href="/tests/tutorial/Input/tdftu_1.in">tests/tutorial/Input/tdftu_1.in</a>   
 
 first lesson of the LDA+U tutorial
 
@@ -2955,7 +2955,7 @@ Keywords(s): LDAU, abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tdftu_2.in">tests/tutorial/Input/tdftu_2.in</a>   
+### <a href="/tests/tutorial/Input/tdftu_2.in">tests/tutorial/Input/tdftu_2.in</a>   
 
 second lesson of the LDA+U tutorial
 
@@ -2965,7 +2965,7 @@ Keywords(s): LDAU, abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tdftu_3.in">tests/tutorial/Input/tdftu_3.in</a>   
+### <a href="/tests/tutorial/Input/tdftu_3.in">tests/tutorial/Input/tdftu_3.in</a>   
 
 third lesson of the LDA+U tutorial
 
@@ -2975,7 +2975,7 @@ Keywords(s): LDAU, abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tdftu_4.in">tests/tutorial/Input/tdftu_4.in</a>   
+### <a href="/tests/tutorial/Input/tdftu_4.in">tests/tutorial/Input/tdftu_4.in</a>   
 
 Fourth lesson of the LDA+U tutorial
 
@@ -2985,141 +2985,141 @@ Keywords(s): LDAU, abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_1.in">tests/tutorial/Input/tgw1_1.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_1.in">tests/tutorial/Input/tgw1_1.in</a>   
 
 Crystalline silicon Calculation of the GW corrections Dataset 1: ground state calculation and calculation of the WFK file for 10 k-points in IBZ Dataset 2: calculation of the screening (epsilon^-1 matrix for W) Dataset 3: calculation of the Self-Energy matrix elements (GW corrections)
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_2.in">tests/tutorial/Input/tgw1_2.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_2.in">tests/tutorial/Input/tgw1_2.in</a>   
 
 Crystalline silicon Calculation of the GW corrections Dataset 1: ground state calculation Dataset 2: calculation of the WFK file for only Gamma point Dataset 3: calculation of the screening (epsilon^-1 matrix for W)
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_3.in">tests/tutorial/Input/tgw1_3.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_3.in">tests/tutorial/Input/tgw1_3.in</a>   
 
 Crystalline silicon Calculation of the GW corrections
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_4.in">tests/tutorial/Input/tgw1_4.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_4.in">tests/tutorial/Input/tgw1_4.in</a>   
 
 Crystalline silicon Calculation of the GW corrections Convergence with respect to the number of planewaves in the sum to calculate SigmaX
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_5.in">tests/tutorial/Input/tgw1_5.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_5.in">tests/tutorial/Input/tgw1_5.in</a>   
 
 Crystalline silicon Calculation of the GW corrections
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_6.in">tests/tutorial/Input/tgw1_6.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_6.in">tests/tutorial/Input/tgw1_6.in</a>   
 
 Crystalline silicon Calculation of the GW corrections
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_7.in">tests/tutorial/Input/tgw1_7.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_7.in">tests/tutorial/Input/tgw1_7.in</a>   
 
 Crystalline silicon Calculation of the GW corrections
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_8.in">tests/tutorial/Input/tgw1_8.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_8.in">tests/tutorial/Input/tgw1_8.in</a>   
 
 Crystalline silicon Calculation of the GW corrections
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw1_9.in">tests/tutorial/Input/tgw1_9.in</a>   
+### <a href="/tests/tutorial/Input/tgw1_9.in">tests/tutorial/Input/tgw1_9.in</a>   
 
 Crystalline silicon Calculation of the GW correction to the direct band gap in Gamma Dataset 1: ground state calculation Dataset 2: calculation of the WFK file Dataset 3: calculation of the screening (epsilon^-1 matrix for W) Dataset 4: calculation of the Self-Energy matrix elements (GW corrections)
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw2_1.in">tests/tutorial/Input/tgw2_1.in</a>   
+### <a href="/tests/tutorial/Input/tgw2_1.in">tests/tutorial/Input/tgw2_1.in</a>   
 
 Crystalline aluminum Create the WFK file for the GW calculation.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw2_2.in">tests/tutorial/Input/tgw2_2.in</a>   
+### <a href="/tests/tutorial/Input/tgw2_2.in">tests/tutorial/Input/tgw2_2.in</a>   
 
 Crystalline aluminum: create the screening file
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw2_3.in">tests/tutorial/Input/tgw2_3.in</a>   
+### <a href="/tests/tutorial/Input/tgw2_3.in">tests/tutorial/Input/tgw2_3.in</a>   
 
 Crystalline aluminum: calculation of the quasi-particle Fermi energy
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tgw2_4.in">tests/tutorial/Input/tgw2_4.in</a>   
+### <a href="/tests/tutorial/Input/tgw2_4.in">tests/tutorial/Input/tgw2_4.in</a>   
 
 Crystalline aluminum : perform the GW calculation at the bottom of the valence band Obtain the corresponding spectral function
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw1_1.in">tests/tutorial/Input/tpaw1_1.in</a>   
+### <a href="/tests/tutorial/Input/tpaw1_1.in">tests/tutorial/Input/tpaw1_1.in</a>   
 
 Input for PAW1 tutorial Diamond at experimental volume
 
@@ -3130,7 +3130,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw1_2.in">tests/tutorial/Input/tpaw1_2.in</a>   
+### <a href="/tests/tutorial/Input/tpaw1_2.in">tests/tutorial/Input/tpaw1_2.in</a>   
 
 Input for PAW1 tutorial Diamond at experimental volume
 
@@ -3141,7 +3141,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw1_3.in">tests/tutorial/Input/tpaw1_3.in</a>   
+### <a href="/tests/tutorial/Input/tpaw1_3.in">tests/tutorial/Input/tpaw1_3.in</a>   
 
 Input for PAW1 tutorial Diamond at experimental volume
 
@@ -3152,7 +3152,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw1_4.in">tests/tutorial/Input/tpaw1_4.in</a>   
+### <a href="/tests/tutorial/Input/tpaw1_4.in">tests/tutorial/Input/tpaw1_4.in</a>   
 
 Input for PAW1 tutorial Diamond at experimental volume
 
@@ -3163,7 +3163,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw1_5.in">tests/tutorial/Input/tpaw1_5.in</a>   
+### <a href="/tests/tutorial/Input/tpaw1_5.in">tests/tutorial/Input/tpaw1_5.in</a>   
 
 Input for PAW1 tutorial Diamond: etotal vs acell curve around equilibrium
 
@@ -3174,7 +3174,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw2_1.in">tests/tutorial/Input/tpaw2_1.in</a>   
+### <a href="/tests/tutorial/Input/tpaw2_1.in">tests/tutorial/Input/tpaw2_1.in</a>   
 
 Nickel ferromagnetic fcc structure for testing ecut convergence
 
@@ -3185,7 +3185,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpaw2_2.in">tests/tutorial/Input/tpaw2_2.in</a>   
+### <a href="/tests/tutorial/Input/tpaw2_2.in">tests/tutorial/Input/tpaw2_2.in</a>   
 
 Nickel ferromagnetic fcc structure for testing ecut convergence
 
@@ -3196,84 +3196,84 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_1.in">tests/tutorial/Input/tpositron_1.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_1.in">tests/tutorial/Input/tpositron_1.in</a>   
 
 First step of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_2.in">tests/tutorial/Input/tpositron_2.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_2.in">tests/tutorial/Input/tpositron_2.in</a>   
 
 Second step of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_3.in">tests/tutorial/Input/tpositron_3.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_3.in">tests/tutorial/Input/tpositron_3.in</a>   
 
 Third step of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_4.in">tests/tutorial/Input/tpositron_4.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_4.in">tests/tutorial/Input/tpositron_4.in</a>   
 
 Fourth step of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_5.in">tests/tutorial/Input/tpositron_5.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_5.in">tests/tutorial/Input/tpositron_5.in</a>   
 
 Fifth step of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_6.in">tests/tutorial/Input/tpositron_6.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_6.in">tests/tutorial/Input/tpositron_6.in</a>   
 
 Sixth step (part 1) of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tpositron_7.in">tests/tutorial/Input/tpositron_7.in</a>   
+### <a href="/tests/tutorial/Input/tpositron_7.in">tests/tutorial/Input/tpositron_7.in</a>   
 
 Sixth step (part 2) of the tutorial on electron-positron annihilation
 
 Executable: abinit   
-Keywords(s): abinit, PAW, POSITRON   
+Keywords(s): POSITRON, abinit, PAW   
 Author(s): J. Wiktor  
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tspin_1.in">tests/tutorial/Input/tspin_1.in</a>   
+### <a href="/tests/tutorial/Input/tspin_1.in">tests/tutorial/Input/tspin_1.in</a>   
 
 Fe normal bcc structure for test of a ferromagnetic calculation The first dataset is without magnetization for comparison
 
@@ -3283,7 +3283,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tspin_2.in">tests/tutorial/Input/tspin_2.in</a>   
+### <a href="/tests/tutorial/Input/tspin_2.in">tests/tutorial/Input/tspin_2.in</a>   
 
 Fe fcc structure with two atoms per unit cell for test of antiferromagnetic This is the simplest fcc structure compatible with a X point spiral
 
@@ -3293,7 +3293,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tspin_3.in">tests/tutorial/Input/tspin_3.in</a>   
+### <a href="/tests/tutorial/Input/tspin_3.in">tests/tutorial/Input/tspin_3.in</a>   
 
 Fe fcc structure with two atoms per unit cell for test of antiferromagnetic This is the simplest fcc structure compatible with a X point spiral
 
@@ -3304,7 +3304,7 @@ Topic(s): [[topic:ElecDOS]]
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tspin_5.in">tests/tutorial/Input/tspin_5.in</a>   
+### <a href="/tests/tutorial/Input/tspin_5.in">tests/tutorial/Input/tspin_5.in</a>   
 
 Single Ta atom in a big box (BCC),  treated with spin-orbit coupling.
 
@@ -3314,7 +3314,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tspin_6.in">tests/tutorial/Input/tspin_6.in</a>   
+### <a href="/tests/tutorial/Input/tspin_6.in">tests/tutorial/Input/tspin_6.in</a>   
 
 Bismuth atom,  isolated,  in a supercell - with and without spin-orbit coupling.
 
@@ -3324,17 +3324,17 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/tutorial/Input/ttddft_1.in">tests/tutorial/Input/ttddft_1.in</a>   
+### <a href="/tests/tutorial/Input/ttddft_1.in">tests/tutorial/Input/ttddft_1.in</a>   
 
 N2 system. Excited state computation,  using LDA/TDLDA
 
 Executable: abinit   
-Keywords(s): TDDFT, abinit   
+Keywords(s): abinit, TDDFT   
 
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tudet_1.in">tests/tutorial/Input/tudet_1.in</a>   
+### <a href="/tests/tutorial/Input/tudet_1.in">tests/tutorial/Input/tudet_1.in</a>   
 
 Fe bcc 2 atomic supercell - ferromag.- PAW DJA 2010 & MT 2009 Prelimirary step for test v5#39 (macro_uj) and v5#40 (testirdden)
 
@@ -3345,7 +3345,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tudet_2.in">tests/tutorial/Input/tudet_2.in</a>   
+### <a href="/tests/tutorial/Input/tudet_2.in">tests/tutorial/Input/tudet_2.in</a>   
 
 Fe bcc structure - ferromagnetic PAW determine U from change of occupation on atoms upon potential shift on atom 1
 
@@ -3356,7 +3356,7 @@ Author(s): D.J. Adams
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tudet_3.in">tests/tutorial/Input/tudet_3.in</a>   
+### <a href="/tests/tutorial/Input/tudet_3.in">tests/tutorial/Input/tudet_3.in</a>   
 
 input for ujdet,  cut it using 'sed -n "/MARK/, /MARK/p" abi.out > ujdet.in '-------
 
@@ -3367,7 +3367,7 @@ Author(s): D.J. Adams
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tfold2bloch_1.in">tests/tutorial/Input/tfold2bloch_1.in</a>   
+### <a href="/tests/tutorial/Input/tfold2bloch_1.in">tests/tutorial/Input/tfold2bloch_1.in</a>   
 
 H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:3 (x:y:z) Produce WFK file to be analyzed with fold2bloch
 
@@ -3378,12 +3378,12 @@ Author(s): O. Rubel
 
 * * *
 
-###  <a href="/tests/tutorial/Input/tfold2bloch_2.in">tests/tutorial/Input/tfold2bloch_2.in</a>   
+### <a href="/tests/tutorial/Input/tfold2bloch_2.in">tests/tutorial/Input/tfold2bloch_2.in</a>   
 
 H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:3 (x:y:z) Produce WFK file to be analyzed with fold2bloch
 
 Executable: fold2Bloch   
-Keywords(s): fold2Bloch, FOLD2BLOCH   
+Keywords(s): FOLD2BLOCH, fold2Bloch   
 Author(s): O. Rubel  
 
 
@@ -3391,7 +3391,7 @@ Author(s): O. Rubel
 
 ##  unitary  
 
-###  <a href="/tests/unitary/Input/tfftsg_01.in">tests/unitary/Input/tfftsg_01.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_01.in">tests/unitary/Input/tfftsg_01.in</a>   
 
 Unit tests for Goedecker routines (fftalg=112,  ndat=1,  nthreads=1)
 
@@ -3402,7 +3402,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftsg_02.in">tests/unitary/Input/tfftsg_02.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_02.in">tests/unitary/Input/tfftsg_02.in</a>   
 
 Unit tests for Goedecker routines (fftalg=112,  ndat=4,  nthreads=1)
 
@@ -3413,7 +3413,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftsg_03.in">tests/unitary/Input/tfftsg_03.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_03.in">tests/unitary/Input/tfftsg_03.in</a>   
 
 Unit tests for Goedecker routines (fftalg=112,  ndat=1,  nthreads=4)
 
@@ -3424,7 +3424,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftsg_04.in">tests/unitary/Input/tfftsg_04.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_04.in">tests/unitary/Input/tfftsg_04.in</a>   
 
 Unit tests for Goedecker routines (fftalg=112,  ndat=4,  nthreads=4)
 
@@ -3435,29 +3435,29 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftsg_05.in">tests/unitary/Input/tfftsg_05.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_05.in">tests/unitary/Input/tfftsg_05.in</a>   
 
 Test SG2002 MPI-FFT library with ndat=1.
 
 Executable: fftprof   
-Keywords(s): fftprof, MPI_FFT   
+Keywords(s): MPI_FFT, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftsg_06.in">tests/unitary/Input/tfftsg_06.in</a>   
+### <a href="/tests/unitary/Input/tfftsg_06.in">tests/unitary/Input/tfftsg_06.in</a>   
 
 Test SG2002 MPI-FFT library with ndat=3.
 
 Executable: fftprof   
-Keywords(s): fftprof, MPI_FFT   
+Keywords(s): MPI_FFT, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_01.in">tests/unitary/Input/tfftfftw3_01.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_01.in">tests/unitary/Input/tfftfftw3_01.in</a>   
 
 Unit tests for FFTW3 routines (fftalg=312,  ndat=1,  nthreads=1)
 
@@ -3468,7 +3468,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_02.in">tests/unitary/Input/tfftfftw3_02.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_02.in">tests/unitary/Input/tfftfftw3_02.in</a>   
 
 Unit tests for FFTW3 routines (fftalg=312,  ndat=4,  nthreads=1)
 
@@ -3479,7 +3479,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_03.in">tests/unitary/Input/tfftfftw3_03.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_03.in">tests/unitary/Input/tfftfftw3_03.in</a>   
 
 Unit tests for FFTW3 routines (fftalg=312,  ndat=1,  nthreads=4)
 
@@ -3490,7 +3490,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_04.in">tests/unitary/Input/tfftfftw3_04.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_04.in">tests/unitary/Input/tfftfftw3_04.in</a>   
 
 Unit tests for FFTW3 routines (fftalg=112,  ndat=4,  nthreads=4)
 
@@ -3501,29 +3501,29 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_05.in">tests/unitary/Input/tfftfftw3_05.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_05.in">tests/unitary/Input/tfftfftw3_05.in</a>   
 
 Unit tests for MPI-FFTW3 routines (fftalg=312,  ndat=1,  nthreads=0)
 
 Executable: fftprof   
-Keywords(s): fftprof, MPI_FFT   
+Keywords(s): MPI_FFT, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftfftw3_06.in">tests/unitary/Input/tfftfftw3_06.in</a>   
+### <a href="/tests/unitary/Input/tfftfftw3_06.in">tests/unitary/Input/tfftfftw3_06.in</a>   
 
 Unit tests for MPI-FFTW3 routines (fftalg=312,  ndat=3,  nthreads=0)
 
 Executable: fftprof   
-Keywords(s): fftprof, MPI_FFT   
+Keywords(s): MPI_FFT, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftmkl_01.in">tests/unitary/Input/tfftmkl_01.in</a>   
+### <a href="/tests/unitary/Input/tfftmkl_01.in">tests/unitary/Input/tfftmkl_01.in</a>   
 
 Unit tests for DFTI-MKL routines (fftalg=512,  ndat=1,  nthreads=1)
 
@@ -3534,7 +3534,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftmkl_02.in">tests/unitary/Input/tfftmkl_02.in</a>   
+### <a href="/tests/unitary/Input/tfftmkl_02.in">tests/unitary/Input/tfftmkl_02.in</a>   
 
 Unit tests for DFTI-MKL routines (fftalg=512,  ndat=4,  nthreads=1)
 
@@ -3545,7 +3545,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftmkl_03.in">tests/unitary/Input/tfftmkl_03.in</a>   
+### <a href="/tests/unitary/Input/tfftmkl_03.in">tests/unitary/Input/tfftmkl_03.in</a>   
 
 Unit tests for MKL-DFTI routines (fftalg=512,  ndat=1,  nthreads=4)
 
@@ -3556,7 +3556,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftmkl_04.in">tests/unitary/Input/tfftmkl_04.in</a>   
+### <a href="/tests/unitary/Input/tfftmkl_04.in">tests/unitary/Input/tfftmkl_04.in</a>   
 
 Unit tests for MKL-DFTI routines (fftalg=112,  ndat=4,  nthreads=4)
 
@@ -3567,40 +3567,40 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftgw_01.in">tests/unitary/Input/tfftgw_01.in</a>   
+### <a href="/tests/unitary/Input/tfftgw_01.in">tests/unitary/Input/tfftgw_01.in</a>   
 
 Test the FFT routines used in the GW code with (complex arguments,  no threads).
 
 Executable: fftprof   
-Keywords(s): fftprof, GW   
+Keywords(s): GW, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftgw_02.in">tests/unitary/Input/tfftgw_02.in</a>   
+### <a href="/tests/unitary/Input/tfftgw_02.in">tests/unitary/Input/tfftgw_02.in</a>   
 
 Test the FFT routines used in the GW code with (complex arguments,  up to 4 threads).
 
 Executable: fftprof   
-Keywords(s): fftprof, GW   
+Keywords(s): GW, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfftgw_03.in">tests/unitary/Input/tfftgw_03.in</a>   
+### <a href="/tests/unitary/Input/tfftgw_03.in">tests/unitary/Input/tfftgw_03.in</a>   
 
 Test the FFT routines used in the GW code with complex arguments,  ndat=4,  up to 4 threads.
 
 Executable: fftprof   
-Keywords(s): fftprof, GW   
+Keywords(s): GW, fftprof   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourdp_01.in">tests/unitary/Input/tfourdp_01.in</a>   
+### <a href="/tests/unitary/Input/tfourdp_01.in">tests/unitary/Input/tfourdp_01.in</a>   
 
 Test fourdp with 1 thread and ndat=1
 
@@ -3611,7 +3611,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourdp_02.in">tests/unitary/Input/tfourdp_02.in</a>   
+### <a href="/tests/unitary/Input/tfourdp_02.in">tests/unitary/Input/tfourdp_02.in</a>   
 
 Test fourdp up to 4 threads (ndat=1)
 
@@ -3622,7 +3622,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_01.in">tests/unitary/Input/tfourwf_01.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_01.in">tests/unitary/Input/tfourwf_01.in</a>   
 
 Test fourwf with 1 thread,  ndat=1 and istwfk = 1
 
@@ -3633,7 +3633,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_02.in">tests/unitary/Input/tfourwf_02.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_02.in">tests/unitary/Input/tfourwf_02.in</a>   
 
 Test fourwf with 1 thread,  ndat=1 and istwfk = 2
 
@@ -3644,7 +3644,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_03.in">tests/unitary/Input/tfourwf_03.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_03.in">tests/unitary/Input/tfourwf_03.in</a>   
 
 Test fourwf up to 4 threads,  ndat=1 and istwfk = 1
 
@@ -3655,7 +3655,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_04.in">tests/unitary/Input/tfourwf_04.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_04.in">tests/unitary/Input/tfourwf_04.in</a>   
 
 Test fourwf with ndat=4,  nthreads=1 and istwfk = 1 TODO: fftalg 410 is still buggy when ndat > 1.
 
@@ -3666,7 +3666,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_05.in">tests/unitary/Input/tfourwf_05.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_05.in">tests/unitary/Input/tfourwf_05.in</a>   
 
 Test fourwf with ndat=4,  up to nthreads=4 and istwfk = 1 TODO: fftalg 410 is still buggy when ndat > 1.
 
@@ -3677,7 +3677,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_06.in">tests/unitary/Input/tfourwf_06.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_06.in">tests/unitary/Input/tfourwf_06.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 2
 
@@ -3688,7 +3688,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_07.in">tests/unitary/Input/tfourwf_07.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_07.in">tests/unitary/Input/tfourwf_07.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 3 TODO: 411,  412 are buggy
 
@@ -3699,7 +3699,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_08.in">tests/unitary/Input/tfourwf_08.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_08.in">tests/unitary/Input/tfourwf_08.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 4 TODO: 411,  412 are buggy
 
@@ -3710,7 +3710,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_09.in">tests/unitary/Input/tfourwf_09.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_09.in">tests/unitary/Input/tfourwf_09.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 5 TODO: 411,  412 are buggy
 
@@ -3721,7 +3721,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_10.in">tests/unitary/Input/tfourwf_10.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_10.in">tests/unitary/Input/tfourwf_10.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 6 TODO: 411,  412 are buggy
 
@@ -3732,7 +3732,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_11.in">tests/unitary/Input/tfourwf_11.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_11.in">tests/unitary/Input/tfourwf_11.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 7 TODO: 411,  412 are buggy
 
@@ -3743,7 +3743,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_12.in">tests/unitary/Input/tfourwf_12.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_12.in">tests/unitary/Input/tfourwf_12.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 8 TODO: 411,  412 are buggy
 
@@ -3754,7 +3754,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/unitary/Input/tfourwf_13.in">tests/unitary/Input/tfourwf_13.in</a>   
+### <a href="/tests/unitary/Input/tfourwf_13.in">tests/unitary/Input/tfourwf_13.in</a>   
 
 Test fourwf with ndat=1 and istwfk = 9 TODO: 411,  412 are buggy
 
@@ -3767,7 +3767,7 @@ Author(s): M. Giantomassi
 
 ##  v1  
 
-###  <a href="/tests/v1/Input/t00.in">tests/v1/Input/t00.in</a>   
+### <a href="/tests/v1/Input/t00.in">tests/v1/Input/t00.in</a>   
 
 Yb cristal,  self-consistent Very quick built-in test,  to check that ABINIT works.
 
@@ -3777,7 +3777,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t01.in">tests/v1/Input/t01.in</a>   
+### <a href="/tests/v1/Input/t01.in">tests/v1/Input/t01.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=4 and tsmear=0.05 . Designed to test the treatment of metals,  using the "cold smearing" of N. Marzari,  with a=-.5634 (minimization of the bump).
 
@@ -3787,7 +3787,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t02.in">tests/v1/Input/t02.in</a>   
+### <a href="/tests/v1/Input/t02.in">tests/v1/Input/t02.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=5 and tsmear=0.05. Designed to test the treatment of metals,  using the "cold smearing" of N. Marzari,  with a=-.8165 (monotonic function in the tail).
 
@@ -3798,7 +3798,7 @@ Topic(s): [[topic:BandOcc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t03.in">tests/v1/Input/t03.in</a>   
+### <a href="/tests/v1/Input/t03.in">tests/v1/Input/t03.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=6 and tsmear=0.05. Designed to test the treatment of metals, with the Gaussian-Hermite smearing of Methfessel and Paxton. Also test the use of fband instead of nband.
 
@@ -3808,7 +3808,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t04.in">tests/v1/Input/t04.in</a>   
+### <a href="/tests/v1/Input/t04.in">tests/v1/Input/t04.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=7 and tsmear=0.05. Designed to test the treatment of metals,  with the Gaussian smearing
 
@@ -3819,7 +3819,7 @@ Topic(s): [[topic:BandOcc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t07.in">tests/v1/Input/t07.in</a>   
+### <a href="/tests/v1/Input/t07.in">tests/v1/Input/t07.in</a>   
 
 Bulk Aluminium,  FCC,  with 10 special points,  occopt=7 and tsmear=0.05 . Start from the wavefunctions of case 4,  reformatted by case 6. Ask to compute the DOS. See the WARNING described in case 6. Cannot use more that 2 processors due to t04.in
 
@@ -3830,7 +3830,7 @@ Topic(s): [[topic:ElecDOS]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t05.in">tests/v1/Input/t05.in</a>   
+### <a href="/tests/v1/Input/t05.in">tests/v1/Input/t05.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=3 and tsmear=0.02. Designed to test the treatment of metals,  with a finite temperature corresponding to about 6300 Kelvin. Use fftalg=400
 
@@ -3840,7 +3840,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t08.in">tests/v1/Input/t08.in</a>   
+### <a href="/tests/v1/Input/t08.in">tests/v1/Input/t08.in</a>   
 
 O2 molecule,  treated like a metal (there is a degeneracy at the Fermi level), occopt=4 and tsmear=0.04,  with nsppol=2 . Use spinat to polarize the molecule at start. Gives total energy of -32.09317 Hartree This test can be used to check the accuracy of stresses in the spin-polarized case. Setting acell(1:2) to 7.005 and 6.995 gives ETOT -32.090846193972 and -32.095501753750, ucvol  441.63023 and 440.37023 so that the estimation of stress by d(Etot)/d(Vol) gives 3.6948887E-03, to be compared with sigma(1)=3.6949713786E-03 and sigma(2)=3.6949681083E-03 from the present test (the degeneracy is slightly lifted because of incomplete convergence, using tolvrs 1.0d-12 instead of toldfe gives at least 8 identical digits for both sigma values).
 
@@ -3850,7 +3850,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t09.in">tests/v1/Input/t09.in</a>   
+### <a href="/tests/v1/Input/t09.in">tests/v1/Input/t09.in</a>   
 
 O2 molecule,  treated as a spin-polarized molecule,  with fixed occupation numbers (occopt=2),  with nsppol=2 . Gives total energy of -32.09792 Hartree
 
@@ -3860,7 +3860,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t10.in">tests/v1/Input/t10.in</a>   
+### <a href="/tests/v1/Input/t10.in">tests/v1/Input/t10.in</a>   
 
 Isolated Helium atom (see below). Treated without any XC energy (ixc=0). The total energy is -1.9442 Ha. 10.-20. Isolated Helium atom tests. These tests exercise different xc functionals,  in the spin-unpolarized case. The helium atom is isolated in a box of size 5x5x5,  with one special point (1/4 1/4 1/4),  200 Ha cut-off,  used with a potential close to the bare He potential (erfc with 0.001 bohr decay length). Errors due to the smallness of the supercell size are on the order of 1 mHa,  as well as those due to the representation of the Coulomb potential by a erfc function. The remaining is due to finiteness of the basis set. The estimation of the latter errors is presented in the test_cases 17 and 18. In all these tests,  intxc=0.
 
@@ -3871,7 +3871,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t11.in">tests/v1/Input/t11.in</a>   
+### <a href="/tests/v1/Input/t11.in">tests/v1/Input/t11.in</a>   
 
 Isolated Helium atom. Treated with LDA,  Teter rational polynomial parametrization (4/93) (ixc=1). The total energy is -2.8275 Ha.
 
@@ -3882,7 +3882,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t12.in">tests/v1/Input/t12.in</a>   
+### <a href="/tests/v1/Input/t12.in">tests/v1/Input/t12.in</a>   
 
 Isolated Helium atom. Treated with LDA,  Perdew-Zunger-Ceperley-Alder (ixc=2). The total energy is -2.8278 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3893,7 +3893,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t13.in">tests/v1/Input/t13.in</a>   
+### <a href="/tests/v1/Input/t13.in">tests/v1/Input/t13.in</a>   
 
 Isolated Helium atom. Treated with LDA,  old Teter rational polynomial parametrization (4/91) (ixc=3). The total energy is -2.8279 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3904,7 +3904,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t14.in">tests/v1/Input/t14.in</a>   
+### <a href="/tests/v1/Input/t14.in">tests/v1/Input/t14.in</a>   
 
 Isolated Helium atom Treated with LDA,  Wigner functional (ixc=4). The total energy is -2.8126 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3915,7 +3915,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t15.in">tests/v1/Input/t15.in</a>   
+### <a href="/tests/v1/Input/t15.in">tests/v1/Input/t15.in</a>   
 
 Isolated Helium atom (see above). Treated with LDA,  Hedin-Lundqvist functional (ixc=5). The total energy is -2.8335 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3926,7 +3926,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t16.in">tests/v1/Input/t16.in</a>   
+### <a href="/tests/v1/Input/t16.in">tests/v1/Input/t16.in</a>   
 
 Isolated Helium atom (see above). Treated with LDA,  "X-alpha" functional (ixc=6). The total energy is -2.7172 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3937,7 +3937,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t17.in">tests/v1/Input/t17.in</a>   
+### <a href="/tests/v1/Input/t17.in">tests/v1/Input/t17.in</a>   
 
 Isolated Helium atom (see above) Treated with LDA,  Perdew-Wang 92 (ixc=7). The one dimensional treatment of this He in the LDA gives the total energy of -2.834 Ha (atom0 code). Here,  the answer is -2.8280 Ha. Going to 250 Ha cut-off gives -2.8302 Ha. Going to 300 Ha cut-off gives -2.8316 Ha. Going to 350 Ha cut-off gives -2.8325 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3948,7 +3948,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t18.in">tests/v1/Input/t18.in</a>   
+### <a href="/tests/v1/Input/t18.in">tests/v1/Input/t18.in</a>   
 
 Isolated Helium atom (see above) Treated with the exchange-only part of Perdew-Wang 92 (ixc=8). For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3959,7 +3959,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t19.in">tests/v1/Input/t19.in</a>   
+### <a href="/tests/v1/Input/t19.in">tests/v1/Input/t19.in</a>   
 
 Isolated Helium atom (see above). Treated with PBE GGA (ixc=11). The one dimensional treatment of this He in the PBE GGA gives the total energy of -2.893 Ha see Y. Zhang,  W. Yang,  Phys. Rev. Lett. 80,  890 (1998). Here,  the answer is -2.8853 Ha. Going to 250 Ha cut-off gives -2.8877 Ha. Going to 300 Ha cut-off gives -2.8892 Ha. Going to 350 Ha cut-off gives -2.8901 Ha. For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3970,7 +3970,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t20.in">tests/v1/Input/t20.in</a>   
+### <a href="/tests/v1/Input/t20.in">tests/v1/Input/t20.in</a>   
 
 Isolated Helium atom (see above). Treated with the exchange-only part of PBE (ixc=12). For speed-up,  it begins with the wavefunctions from test 11.
 
@@ -3981,7 +3981,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t21.in">tests/v1/Input/t21.in</a>   
+### <a href="/tests/v1/Input/t21.in">tests/v1/Input/t21.in</a>   
 
 Isolated Hydrogen atom (see above) Treated with LSD,  Teter rational polynomial parametrization (4/93) (ixc=1). The total energy is -0.4792 Ha. Also additional tests concerning the kinetic energy density calculation, the gradient of electronic density calculation and the Laplacian of electronic density calculation are performed.
 
@@ -3992,7 +3992,7 @@ Topic(s): [[topic:spinpolarisation]], [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t22.in">tests/v1/Input/t22.in</a>   
+### <a href="/tests/v1/Input/t22.in">tests/v1/Input/t22.in</a>   
 
 Isolated Hydrogen atom (see above) Treated with LSD,  Perdew-Wang 92 (ixc=7). The one dimensional treatment of H in the LSD gives the total energy of -13.00 eV,  that is -0.478 Ha see J.P. Perdew et al,  Phys. Rev. B 46,  6671 (1992) (maybe not very accurate!) Here,  the answer is -0.4792 Ha. Going to 100 Ha cut-off gives -0.4795 Ha. Going to 150 Ha cut-off gives -0.4798 Ha. Keeping 70 Ha cut-off,  but going to 0.002 bohr decay length gives a lowering in energy on the order of 0.00003 Ha. Increasing the cell size to 8x8x8,  while keeping ecut to 70 Ha cut-off and 0.005 bohr decay length gives -0.4783 Ha. For speed-up,  it begins with the wavefunctions from test 21.
 
@@ -4003,7 +4003,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t23.in">tests/v1/Input/t23.in</a>   
+### <a href="/tests/v1/Input/t23.in">tests/v1/Input/t23.in</a>   
 
 Isolated Hydrogen atom (see above) Treated with PBE GGA (ixc=11). The one dimensional treatment of H in the PW91 GGA-II gives the total energy of -13.63 eV, that is -0.501 Ha see J.P. Perdew et al,  Phys. Rev. B 46,  6671 (1992) (maybe not very accurate!) Here,  the answer is -0.499583 Ha. Going to 100 Ha cut-off gives -0.5001 Ha. Going to 150 Ha cut-off gives -0.5002 Ha. For speed-up,  it begins with the wavefunctions from test 21.
 
@@ -4014,7 +4014,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t24.in">tests/v1/Input/t24.in</a>   
+### <a href="/tests/v1/Input/t24.in">tests/v1/Input/t24.in</a>   
 
 Isolated Hydrogen atom (see above) Treated with PBE GGA (ixc=11),  with intxc=1. The total energy is -0.499588 Ha For speed-up,  it begins with the wavefunctions from test 23.
 
@@ -4025,7 +4025,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t25.in">tests/v1/Input/t25.in</a>   
+### <a href="/tests/v1/Input/t25.in">tests/v1/Input/t25.in</a>   
 
 Isolated Hydrogen atom. Treated with the Fermi-Amaldi correction (ixc=20),  so that this corresponds to exact cancellation of the Hartree and XC contributions, as it should for Hydrogen atom. Examine the 1s-2s splitting,  that should be equal to 0.375 Ha, and is obtained at 0.368 Ha (so within 2%),  with the chosen ecut and acell. This quantity converges much faster to the correct value than either the total energy or the 1s eigenenergy. Also test effmass_free. A value 10 times bigger than the usual electron mass leads to a 10-fold contraction of the system. The 1s-2s splitting is multiplied by 10 exactly,  provided ecut,  acell and the smearing of the potential at origin are scaled appropriately.
 
@@ -4036,7 +4036,7 @@ Topic(s): [[topic:xc]], [[topic:Artificial]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t28.in">tests/v1/Input/t28.in</a>   
+### <a href="/tests/v1/Input/t28.in">tests/v1/Input/t28.in</a>   
 
 Helium FCC solid,  using bare potential,  but a relatively low cut-off. Cell parameter is 6.505 Bohr,  2 k points are used.  PBE GGA. Combined with test 29,  it is used to test the accuracy of the stress calculation. Output of the code are as follows : Energy=-2.835212586 Ha,  volume=68.814809 Bohr^3, stress=6.03381838E-04 Ha/Bohr^3
 
@@ -4047,7 +4047,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t29.in">tests/v1/Input/t29.in</a>   
+### <a href="/tests/v1/Input/t29.in">tests/v1/Input/t29.in</a>   
 
 Helium FCC solid,  treated like tests 28,  but with slightly different acell. Cell parameter is 3* 6.495 Bohr. Output of the code are as follows : Energy=-2.835403622 Ha,  volume=68.497934 Bohr^3, stress=6.02356634E-04 Ha/Bohr^3 Now,  we combine test 28 and 29,  to get estimation of the stress at cell parameter 6.500 Bohr. From the energy and volume,  the stress is evaluated by a finite difference formula ( stress=d(Etot)/d(Vol) ), giving 6.0287495E-04 Ha/Bohr^3 . From the stresses,  the interpolation is 6.0286924E-04 Ha/Bohr^3 .
 
@@ -4058,7 +4058,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t30.in">tests/v1/Input/t30.in</a>   
+### <a href="/tests/v1/Input/t30.in">tests/v1/Input/t30.in</a>   
 
 Helium atom in a box,  with Fermi-Amaldi correction (ixc=20),  that for Z=2,  is equivalent to OEP or Hartree-Fock. Otherwise,  similar to test 11.
 
@@ -4069,7 +4069,7 @@ Topic(s): [[topic:xc]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t31.in">tests/v1/Input/t31.in</a>   
+### <a href="/tests/v1/Input/t31.in">tests/v1/Input/t31.in</a>   
 
 Isolated tin atom,  with 50sn.pspnc pseudopotential (Troullier-Martins), to be compared with the result of test 32. The size of the box is 12x12x12,  One k-point (1/4 1/4 1/4) is used. 8 elements of symmetry are present. The cut-off is 14 Hartree. The energy levels (eV) are found at -7.162,  -0.273 and -0.228 (two-fold deg) The difference between these energy levels is 6.889 and 0.045. Going to larger unit cells decrease the latter difference (14x14x14 makes it 0.010).
 
@@ -4079,7 +4079,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t32.in">tests/v1/Input/t32.in</a>   
+### <a href="/tests/v1/Input/t32.in">tests/v1/Input/t32.in</a>   
 
 Isolated tin atom,  with 50sn.psphgh pseudopotential (Hartwigsen-Goedecker-Hutter), to be compared with the result of test 31. Same geometry,  same cut-off. The energy levels (eV) are found at -7.019,  -0.131,  and -0.085 (two-fold deg) The difference between these energy levels is 6.888 and 0.046. For speed-up,  it begins with the wavefunctions from test 31.
 
@@ -4089,7 +4089,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t33.in">tests/v1/Input/t33.in</a>   
+### <a href="/tests/v1/Input/t33.in">tests/v1/Input/t33.in</a>   
 
 Isolated carbon atom,  with 6c.pspnc pseudopotential Test a non-spherical,  spin-polarized atom,  with nsym=2. In order to have a fast computation,  the cut-off,  19Ha, is not large enough for good convergence,  as well as the box size 9x9x9. With better convergence parameters,  it can be used to find the atomization energy of carbon-containing molecules.
 
@@ -4099,7 +4099,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t34.in">tests/v1/Input/t34.in</a>   
+### <a href="/tests/v1/Input/t34.in">tests/v1/Input/t34.in</a>   
 
 Isolated lead atom,  with pseudopotential generated in LLN,  from the code of Mike Teter. 6 6 6 box and 5 Ha,  for speed. Spherically symmetric,  without spin-polarization. ixc=3.
 
@@ -4109,7 +4109,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t35.in">tests/v1/Input/t35.in</a>   
+### <a href="/tests/v1/Input/t35.in">tests/v1/Input/t35.in</a>   
 
 Isolated silicon atom,  with phoney pseudopotential (back in 1991 !). 6 6 6 box and 5 Ha,  for speed. Spherically symmetric,  without spin-polarization. ixc=3.
 
@@ -4119,7 +4119,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t36.in">tests/v1/Input/t36.in</a>   
+### <a href="/tests/v1/Input/t36.in">tests/v1/Input/t36.in</a>   
 
 Isolated oxygen atom,  with pspnc pseudopotential. 6 6 6 box and 15 Ha,  for speed. Spherically symmetric,  without spin-polarization. ixc=1. It has non-linear core correction,  but because of an insufficient cut-off, and the use of intxc=1,  the density is slightly negative at few points. The present test makes sure that this is properly handled.
 
@@ -4129,7 +4129,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t37.in">tests/v1/Input/t37.in</a>   
+### <a href="/tests/v1/Input/t37.in">tests/v1/Input/t37.in</a>   
 
 Isolated aluminum atom,  with fhi pseudopotential. kpt=1/4 1/4 1/4 Spherically symmetric,  without spin-polarisation. ixc=7 (CA Perdew Wang). Here,  computed with a 12x12x12 box,  and ecut=13.5,  one gets a minimum sp separation of 4.959 eV,  and a p-degeneracy lifting of 0.090 eV. The sp separation from an atomic code is 5.046 eV. Computed in ABINIT with a 16x16x16 box,  and ecut=20,  one gets a minimum sp separation of 5.039 eV,  and a p-degeneracy lifting of 0.008 eV.
 
@@ -4139,7 +4139,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t38.in">tests/v1/Input/t38.in</a>   
+### <a href="/tests/v1/Input/t38.in">tests/v1/Input/t38.in</a>   
 
 Ytterbium,  fcc structure,  one atom per primitive cell, similar to test #4 of built-in,  except that nstep=1,  and the pseudopotential differs : format 5,  translated from 70yb.pspnc (format 1). The translation slightly changes the result,  at the level of 2 microHa.
 
@@ -4150,7 +4150,7 @@ Author(s): G. Zerah
 
 * * *
 
-###  <a href="/tests/v1/Input/t39.in">tests/v1/Input/t39.in</a>   
+### <a href="/tests/v1/Input/t39.in">tests/v1/Input/t39.in</a>   
 
 3H2 molecule with distant atoms : probe the use of the spinat variable Use spin-polarized mode,  spinor mode,  as well as antiferromagnetic mode. Even consider an initialization with reather crazy,  nearly ferromagnetic spinat. Use 01h.pspgth,  in a 8 8 16 box,  with 15 Ha cut-off. Separation is 4 bohr. Consider anti-parallel spin configuration,   which is the favoured one for this distance. Get total energy of -0.981 839  Ha . Note that the spin-polarization is not complete. Non-spin -polarized configuration (nsppol=1) gives -0.976 126  Ha .
 
@@ -4161,7 +4161,7 @@ Topic(s): [[topic:spinpolarisation]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>   
+### <a href="/tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>   
 
 Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.
 
@@ -4172,7 +4172,7 @@ Topic(s): [[topic:AtomManipulator]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t41.in">tests/v1/Input/t41.in</a>   
+### <a href="/tests/v1/Input/t41.in">tests/v1/Input/t41.in</a>   
 
 Mo surface,  with 10 atom per cell. Not very large,  but the number of bands make it a medium-size problem : 36 bands.
 
@@ -4182,7 +4182,7 @@ Keywords(s): abinit, CML, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>   
+### <a href="/tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>   
 
 Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).
 
@@ -4193,7 +4193,7 @@ Topic(s): [[topic:AtomManipulator]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t43.in">tests/v1/Input/t43.in</a>   
+### <a href="/tests/v1/Input/t43.in">tests/v1/Input/t43.in</a>   
 
 Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.
 
@@ -4204,7 +4204,7 @@ Topic(s): [[topic:AtomManipulator]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t44.in">tests/v1/Input/t44.in</a>   
+### <a href="/tests/v1/Input/t44.in">tests/v1/Input/t44.in</a>   
 
 Test the option ionmov=4. 8-atom Si cube,  non spin-polarized. Same test as number 22a of fast,  except for the change of ionmov,  no reading of wavefunctions,  iscf to 2,  and different
 
@@ -4215,7 +4215,7 @@ Topic(s): [[topic:GeoOpt tolerance criteria.]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t45.in">tests/v1/Input/t45.in</a>   
+### <a href="/tests/v1/Input/t45.in">tests/v1/Input/t45.in</a>   
 
 Test the option ionmov=4. Si2 molecule,  spin-polarized. Same test as number 16 of fast,  except for the change of ionmov,  no reading of wavefunctions,  iscf to 2,  and different tolerance criteria. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4225,7 +4225,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t46.in">tests/v1/Input/t46.in</a>   
+### <a href="/tests/v1/Input/t46.in">tests/v1/Input/t46.in</a>   
 
 Si2 molecule,  spin-polarized. Take the wavefunctions from test 45, and converge them further for initialisation of test 47. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4235,7 +4235,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t47.in">tests/v1/Input/t47.in</a>   
+### <a href="/tests/v1/Input/t47.in">tests/v1/Input/t47.in</a>   
 
 Si2 molecule,  spin-polarized. Test the option iscf=1 (eigenvalues of the SCF cycle). Start from the wavefunctions of test 46. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4245,7 +4245,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t48.in">tests/v1/Input/t48.in</a>   
+### <a href="/tests/v1/Input/t48.in">tests/v1/Input/t48.in</a>   
 
 Si2 molecule,  spin-polarized Same as test 45,  but use ithe default densfor_pred=2 instead of densfor_pred=1. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4255,7 +4255,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t49.in">tests/v1/Input/t49.in</a>   
+### <a href="/tests/v1/Input/t49.in">tests/v1/Input/t49.in</a>   
 
 Si2 molecule,  spin-polarized. Same as test 45,  but use densfor_pred=3 instead of densfor_pred=1. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4265,7 +4265,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t50.in">tests/v1/Input/t50.in</a>   
+### <a href="/tests/v1/Input/t50.in">tests/v1/Input/t50.in</a>   
 
 Si2 molecule,  spin-polarized Same as test 45,  but use densfor_pred=3 instead of densfor_pred=1,  and iscf=7 instead of iscf=2. Si2 molecule,  spin-polarized. Same as test 45,  but use densfor_pred=3 instead of densfor_pred=1. Cannot be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -4275,7 +4275,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t51.in">tests/v1/Input/t51.in</a>   
+### <a href="/tests/v1/Input/t51.in">tests/v1/Input/t51.in</a>   
 
 Al2 molecule,  inversion point shifted from the origin,  ixc=0, kpt=1/4 1/4 1/4,  nsym=4. Large number of bands (20 instead of 3). 8 first SCF steps with simple mixing algorithm,  mixing factor 1/5. Slow convergence. Computation of the hermitian dielectric matrix at the 8th step. The inverse of the dielectric matrix is then used as preconditioning. A factor of 20 is gained on each step. Largest eigenvalue value of the dielectric matrix is 5.712 (a mixing factor of 1/3 would have been enough,  but 1/5 is faster). A second eigenvalue is close : 5.531 .
 
@@ -4285,7 +4285,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t52.in">tests/v1/Input/t52.in</a>   
+### <a href="/tests/v1/Input/t52.in">tests/v1/Input/t52.in</a>   
 
 Same system as for case 51. Determination of the largest SCF eigenvalue by brute force : iscf=1 . Get 5.647 . The symmetries make the largest eigenvalue of the Hermitian TC dielectric matrix not appear here,  so that this value is to be compared with 5.531.
 
@@ -4295,7 +4295,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t53.in">tests/v1/Input/t53.in</a>   
+### <a href="/tests/v1/Input/t53.in">tests/v1/Input/t53.in</a>   
 
 Si2 molecule,  spin-polarized. ixc=0. 7 states for each spin. First,  converge using mixing factor,  then evaluate RPA dielectric matrix,  and use it for convergence.
 
@@ -4305,7 +4305,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v1/Input/t54.in">tests/v1/Input/t54.in</a>   
+### <a href="/tests/v1/Input/t54.in">tests/v1/Input/t54.in</a>   
 
 Same as case 53,  but exchange-correlation included. The convergence is not as good as in case 53,  but still much better than simple mixing.
 
@@ -4315,7 +4315,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t55.in">tests/v1/Input/t55.in</a>   
+### <a href="/tests/v1/Input/t55.in">tests/v1/Input/t55.in</a>   
 
 Molybdenum slab : 5 layers of Mo + 3 layers of vacuum,  ixc=0 . Central layer is slightly displaced,  to break the symmetry. Metallic occupation numbers. Only 20 bands,  while at least 15 are needed. Use iscf=2,  start with default metallic preconditioner, damped (diemix=0.5d0). A factor of 2 is gained at each iteration. Then evaluate RPA matrix eigenvalues using the extrapolation,  and including the metallic correction. Largest are 3.2541E+01  1.2089E+01  6.1305E+00 . Then,  uses the dielectric matrix preconditioning to converge. No damping is needed. A factor of about 10 is gained at each iteration on average.
 
@@ -4325,7 +4325,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t56.in">tests/v1/Input/t56.in</a>   
+### <a href="/tests/v1/Input/t56.in">tests/v1/Input/t56.in</a>   
 
 Same system as for case 55. Evaluate eigenvalue of the standard SCF cycle. Find -2.68. This explains the damping needed in case 55.
 
@@ -4335,7 +4335,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t57.in">tests/v1/Input/t57.in</a>   
+### <a href="/tests/v1/Input/t57.in">tests/v1/Input/t57.in</a>   
 
 Again Molybdenum slab,  with ixc=1. 3 k-points. 20 bands. Use iprcel=45 for SCF cycle. toldff=5.0d-5 is reached in only 8 cycles. With iscf=5,  it is reached in 10 cycles.
 
@@ -4345,7 +4345,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t58.in">tests/v1/Input/t58.in</a>   
+### <a href="/tests/v1/Input/t58.in">tests/v1/Input/t58.in</a>   
 
 Same as test 57,  but with mkmem=0.
 
@@ -4355,7 +4355,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t59.in">tests/v1/Input/t59.in</a>   
+### <a href="/tests/v1/Input/t59.in">tests/v1/Input/t59.in</a>   
 
 Test multi-dataset mode. Si diamond. 2 datasets,  with index 2 and 57 (!). No advanced features like get variables. Rather fast.
 
@@ -4365,7 +4365,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t60.in">tests/v1/Input/t60.in</a>   
+### <a href="/tests/v1/Input/t60.in">tests/v1/Input/t60.in</a>   
 
 Test multi-dataset mode. H2 molecule in a box (psp 1h.pspnc). acell constant,  small (7 5 5). 10 different values of ecut (convergence study). Use getxred=-1.
 
@@ -4375,7 +4375,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t61.in">tests/v1/Input/t61.in</a>   
+### <a href="/tests/v1/Input/t61.in">tests/v1/Input/t61.in</a>   
 
 Test multi-dataset mode. H2 molecule in a box of increasing size. Use ecut=12 (see previous test). 5 different values of acell (convergence study). Use getxcart=-1.
 
@@ -4385,7 +4385,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t62.in">tests/v1/Input/t62.in</a>   
+### <a href="/tests/v1/Input/t62.in">tests/v1/Input/t62.in</a>   
 
 Test multi-dataset mode. Al metal,  10 k points. Vary tsmear (0.08;  0.08;  0.04;  0.02). Start from the output wfs of the previous dataset.
 
@@ -4395,7 +4395,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t63.in">tests/v1/Input/t63.in</a>   
+### <a href="/tests/v1/Input/t63.in">tests/v1/Input/t63.in</a>   
 
 Test multi-dataset mode. Al metal,  10 k points. Start from the output wfs of the previous dataset. Compute tsmear=0.01. Test the idea of using one input file for different runs. The input file is the same as for test 63,  except for the addition of one dataset.
 
@@ -4405,7 +4405,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t64.in">tests/v1/Input/t64.in</a>   
+### <a href="/tests/v1/Input/t64.in">tests/v1/Input/t64.in</a>   
 
 Test multi-dataset mode. H2 molecule in a box of increasing size. Same as test 61,  except that it reads previous wavefunctions (use getxcart=-1 and getwfk=-1). mkmem/=0 .
 
@@ -4415,7 +4415,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t65.in">tests/v1/Input/t65.in</a>   
+### <a href="/tests/v1/Input/t65.in">tests/v1/Input/t65.in</a>   
 
 Test multi-dataset mode. H2 molecule with 1 and 4 k points. (use getxcart=-1 and getwfk=-1). Convergence study with k points.
 
@@ -4425,7 +4425,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t66.in">tests/v1/Input/t66.in</a>   
+### <a href="/tests/v1/Input/t66.in">tests/v1/Input/t66.in</a>   
 
 Test multi-dataset mode. H2 molecule with 1 k points. Use getxcart=-1 and getwfk=-1 : first perform a geometry optimization, with minimal number of bands,  then compute more bands at fixed geometry, with an increased ecut.
 
@@ -4435,7 +4435,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t67.in">tests/v1/Input/t67.in</a>   
+### <a href="/tests/v1/Input/t67.in">tests/v1/Input/t67.in</a>   
 
 Compute an optimal densty parameter for N. Atomic computation, using multi-dataset mode.
 
@@ -4445,7 +4445,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t68.in">tests/v1/Input/t68.in</a>   
+### <a href="/tests/v1/Input/t68.in">tests/v1/Input/t68.in</a>   
 
 Compute an optimal densty parameter for N2. Molecular computation, using multi-dataset mode.
 
@@ -4455,7 +4455,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t69.in">tests/v1/Input/t69.in</a>   
+### <a href="/tests/v1/Input/t69.in">tests/v1/Input/t69.in</a>   
 
 Excited states of the Mg atom,  with (ixc=1,  spin-polarized Teter functional). Use the multi-dataset mode. Can be compared with the results in Vasiliev et al,  PRL 82,  1919 (1999). With the values acell 18,  ecut 3.5,  nband2 10,  the present test generates KS diff=3.46eV,  TDLDA(1S1P)=4.48eV,  TDLDA(1S3P)=2.81eV With the values acell 22,  ecut 3.5,  nband2 22,  ABINIT generates KS diff=3.40eV,  TDLDA(1S1P)=4.35eV,  TDLDA(1S3P)=2.77eV Vasiliev gets KS diff=3.39eV,  TDLDA(1S1P)=4.34eV,  TDLDA(1S3P)=2.79eV
 
@@ -4466,7 +4466,7 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t70.in">tests/v1/Input/t70.in</a>   
+### <a href="/tests/v1/Input/t70.in">tests/v1/Input/t70.in</a>   
 
 Same as test 69,  but with another xc functional (ixc=7,  PW92 LSD) With the values acell 18,  ecut 3.5,  nband2 10,  the present test generates KS diff=3.46eV,  TDLDA(1S1P)=4.45eV,  TDLDA(1S3P)=2.84eV
 
@@ -4477,7 +4477,7 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t71.in">tests/v1/Input/t71.in</a>   
+### <a href="/tests/v1/Input/t71.in">tests/v1/Input/t71.in</a>   
 
 Same as test 57,  but with iprcel=55 (RPA dielectric matrix)
 
@@ -4487,7 +4487,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t72.in">tests/v1/Input/t72.in</a>   
+### <a href="/tests/v1/Input/t72.in">tests/v1/Input/t72.in</a>   
 
 Same as test 57,  but with ixc=1,  and iprcel=65 (electronic dielectric matrix)
 
@@ -4497,7 +4497,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t73.in">tests/v1/Input/t73.in</a>   
+### <a href="/tests/v1/Input/t73.in">tests/v1/Input/t73.in</a>   
 
 Same as test 57,  but with ixc=7,  and iprcel=65 (electronic dielectric matrix)
 
@@ -4507,7 +4507,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t74.in">tests/v1/Input/t74.in</a>   
+### <a href="/tests/v1/Input/t74.in">tests/v1/Input/t74.in</a>   
 
 Test multi-dataset mode. H2 molecule with 1 k points. Convergence study,  using a geometric series for ecut.
 
@@ -4517,7 +4517,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t75.in">tests/v1/Input/t75.in</a>   
+### <a href="/tests/v1/Input/t75.in">tests/v1/Input/t75.in</a>   
 
 Same as test 66,  H2 molecule with 1 k points,  but uses the restartxf=-1 option to test the output of the HIST.nc file. Note that HIST.nc is not read since one should introduce a getrestartxf variable.
 
@@ -4527,7 +4527,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v1/Input/t76.in">tests/v1/Input/t76.in</a>   
+### <a href="/tests/v1/Input/t76.in">tests/v1/Input/t76.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell. Test ecutsm. Determine a smooth etot vs acel curve (one can try with ecutsm=0.0d0 to see the difference !) Stress is correct. For example, at acell=10.10 (volume=2.5757525E+02),  one obtains etotal=-8.7850566628 at acell=10.12 (volume=2.5910843E+02),  one obtains etotal=-8.7851433215, giving a finite-difference estimate of the stress ( d(etotal)/d(volume) ) at 10.11 to be -5.6522d-5,  while the code gives -5.6582015717E-05
 
@@ -4537,7 +4537,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t77.in">tests/v1/Input/t77.in</a>   
+### <a href="/tests/v1/Input/t77.in">tests/v1/Input/t77.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell. Test dilatmx. Increase it,  the number of planewaves increases,  but the total energy stays practically the same. The small fluctuations (-8.7967199088907, -8.7967198524822, -8.7967198520954 ) come from varying the FFT grid size,  with effect on the xc functional. It has been checked that using exactly the same FFT grid for the three cases gives the same energy. It has been checked also that larger fluctuations arise with intxc=0.
 
@@ -4547,7 +4547,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t78.in">tests/v1/Input/t78.in</a>   
+### <a href="/tests/v1/Input/t78.in">tests/v1/Input/t78.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell. Optimization of unit cell volume (optcell=1). Use 2 datasets,  and the variable getcell.
 
@@ -4558,7 +4558,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t79.in">tests/v1/Input/t79.in</a>   
+### <a href="/tests/v1/Input/t79.in">tests/v1/Input/t79.in</a>   
 
 H2 molecule in a cell of variable size along the H2 chain => H polymer. Optimization of cell size and atomic distances (optcell=4).
 
@@ -4569,7 +4569,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t80.in">tests/v1/Input/t80.in</a>   
+### <a href="/tests/v1/Input/t80.in">tests/v1/Input/t80.in</a>   
 
 Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC (optcell=2). Also test the output of the HIST.nc file (restartxf==-1)
 
@@ -4580,7 +4580,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t81.in">tests/v1/Input/t81.in</a>   
+### <a href="/tests/v1/Input/t81.in">tests/v1/Input/t81.in</a>   
 
 Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC,  with conservation of volume (optcell=3).
 
@@ -4591,7 +4591,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t82.in">tests/v1/Input/t82.in</a>   
+### <a href="/tests/v1/Input/t82.in">tests/v1/Input/t82.in</a>   
 
 Mg bi-dimensional layer,  1 atom per unit cell. Start with deformed 2D hexagonal lattice, optimize the lattice towards hexagonal, with conservation of inter-layer distance (optcell=7).
 
@@ -4602,7 +4602,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t83.in">tests/v1/Input/t83.in</a>   
+### <a href="/tests/v1/Input/t83.in">tests/v1/Input/t83.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using series
 
@@ -4613,7 +4613,7 @@ Topic(s): [[topic:multidtset]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t84.in">tests/v1/Input/t84.in</a>   
+### <a href="/tests/v1/Input/t84.in">tests/v1/Input/t84.in</a>   
 
 2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using metacharacters only.
 
@@ -4624,7 +4624,7 @@ Topic(s): [[topic:multidtset]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t85.in">tests/v1/Input/t85.in</a>   
+### <a href="/tests/v1/Input/t85.in">tests/v1/Input/t85.in</a>   
 
 SiH4 : optimize the geometry with partially constrained atomic positions. 1 special k-point,  in a box 8x8x8 (too small),  and 8Ha cut-off. Test ionmov=2 Permutes the three axes x, y, z in three datasets. Since the initialization is different,  the three datasets deliver slightly different results,  though quite close to each others. Should be identical at convergence.
 
@@ -4634,7 +4634,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t86.in">tests/v1/Input/t86.in</a>   
+### <a href="/tests/v1/Input/t86.in">tests/v1/Input/t86.in</a>   
 
 SiH4 : molecular dynamics with partially constrained atomic positions. 1 special k-point,  in a box 8x8x8 (too small),  and 8Ha cut-off. Test ionmov=1
 
@@ -4644,7 +4644,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t87.in">tests/v1/Input/t87.in</a>   
+### <a href="/tests/v1/Input/t87.in">tests/v1/Input/t87.in</a>   
 
 H atom (spin-unpolarized in a medium size cubic box,  k=0 0 0 similar to test 1 of fast) Using multi-dataset mode,  examine the following combinations of fftalg and istwfk : (112, 2), (112, 1), (111, 1), (111, 2), (110, 2), (110, 1), (100, 1),  then compute the energy with nstep=0 for (112, 2) and (112, 1). Then again SCF test for (400, 1),  (401, 1),  (402, 1). For the second dataset,  reads the wavefunctions of the first dataset.
 
@@ -4655,7 +4655,7 @@ Topic(s): [[topic:multidtset]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t88.in">tests/v1/Input/t88.in</a>   
+### <a href="/tests/v1/Input/t88.in">tests/v1/Input/t88.in</a>   
 
 H atom,  similar to test 87,  except that the box is not cubic, but only parallelipipedic (not even a rectangle parallelipiped). However,  the primitive vectors describe the same lattice as in case 87,  so that the results must be identical to those of test 87,  even if a different FFT grid is used. That is what is observed.
 
@@ -4665,7 +4665,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t89.in">tests/v1/Input/t89.in</a>   
+### <a href="/tests/v1/Input/t89.in">tests/v1/Input/t89.in</a>   
 
 Mg atom,  in a big box,  displaced from the center, test different k points with time-reversal symmetry,  and different fftalg values.
 
@@ -4675,7 +4675,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t90.in">tests/v1/Input/t90.in</a>   
+### <a href="/tests/v1/Input/t90.in">tests/v1/Input/t90.in</a>   
 
 Si 8-atom cube. Test the symmetrizer : generate the full set of atoms from the symmetry operations and an irreducible set of atoms.
 
@@ -4685,7 +4685,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>   
+### <a href="/tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>   
 
 Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed.
 
@@ -4695,7 +4695,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t92.in">tests/v1/Input/t92.in</a>   
+### <a href="/tests/v1/Input/t92.in">tests/v1/Input/t92.in</a>   
 
 Crazy 8-atom Si cell. Test the symmetrizer: Fast test for the same orthorhombic group,  uses different orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ.
 
@@ -4705,7 +4705,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>   
+### <a href="/tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>   
 
 Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ.
 
@@ -4715,7 +4715,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t94.in">tests/v1/Input/t94.in</a>   
+### <a href="/tests/v1/Input/t94.in">tests/v1/Input/t94.in</a>   
 
 Crazy tetragonal Si cell with 8 atoms. Test the symmetrizer. Used to test the generation of symmetry matrices from input spatial group,  P42/mnm Dataset 1 : Full set of atoms Dataset 2 : Irreducible unit cell.
 
@@ -4725,7 +4725,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t95.in">tests/v1/Input/t95.in</a>   
+### <a href="/tests/v1/Input/t95.in">tests/v1/Input/t95.in</a>   
 
 Crazy cubic Si cell with 4 atoms. Test the symmetrizer. Test for cubic space group with two possible origin choices: Dataset 1 and 2 : first origin choice Dataset 1 : Irreducible unit cell and space group Dataset 2 : Full set of atoms and space group Dataset 3 and 4 : second origin choice Dataset 3 : Irreducible unit cell and space group Dataset 4 : Full set of atoms and full set of symmetry.
 
@@ -4735,7 +4735,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t96.in">tests/v1/Input/t96.in</a>   
+### <a href="/tests/v1/Input/t96.in">tests/v1/Input/t96.in</a>   
 
 Al2O3 cell in rhombohedric cell with different axes. Dataset 1 : Rhombohedral axes;  full set of symmetries and full set of atoms Dataset 2 : Rhombohedral axes;  irreducible unit cell and space group Dataset 3 : Hexagonal axes;  irreducible unit cell and space group Dataset 4 : Hexagonal axes;  full unit cell and space group The results are equivalent for Dataset 1 and 2 and Dataset 3 and 4.
 
@@ -4746,7 +4746,7 @@ Topic(s): [[topic:UnitCell]]
 
 * * *
 
-###  <a href="/tests/v1/Input/t97.in">tests/v1/Input/t97.in</a>   
+### <a href="/tests/v1/Input/t97.in">tests/v1/Input/t97.in</a>   
 
 8-atom Si cube,  fixed geometry,  with a large cut-off. The exit file is created. The job should stop after having initialized the wavefunctions.
 
@@ -4756,7 +4756,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t98.in">tests/v1/Input/t98.in</a>   
+### <a href="/tests/v1/Input/t98.in">tests/v1/Input/t98.in</a>   
 
 8-atom Si cube,  fixed geometry,  with a large cut-off. A CPU time limit of 20 sec is required. The whole job would be 200 sec on a PPro at 200 MHz. Afterwards,  the job is restarted in run 99.
 
@@ -4766,7 +4766,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v1/Input/t99.in">tests/v1/Input/t99.in</a>   
+### <a href="/tests/v1/Input/t99.in">tests/v1/Input/t99.in</a>   
 
 Same job as 98,  starting from the wavefunctions that were generated then.
 
@@ -4778,7 +4778,7 @@ Keywords(s): abinit, NC
 
 ##  v2  
 
-###  <a href="/tests/v2/Input/t01.in">tests/v2/Input/t01.in</a>   
+### <a href="/tests/v2/Input/t01.in">tests/v2/Input/t01.in</a>   
 
 Linear chain of Ge2 molecules (2 atoms per unit cell), using a local (Starkloff-Joannopoulos) pseudopotential, and no exchange-correlation (ixc=0). Uses 4 k-points. Computation of the second derivative of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector. (see test.ge.xc0 of RESPFN)
 
@@ -4788,7 +4788,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t02.in">tests/v2/Input/t02.in</a>   
+### <a href="/tests/v2/Input/t02.in">tests/v2/Input/t02.in</a>   
 
 Linear chain of Ge2 molecules (2 atoms per unit cell), using a local (Starkloff-Joannopoulos) pseudopotential, with exchange-correlation (ixc=3). Uses 2 k-points. Computation of the second derivative of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector. Same as test 1,  except ixc and the k-points,  and except that it doesn't uses multi-data mode,  so GS and RF calculations are separated. (see test.ge.xc5 of RESPFN)
 
@@ -4798,7 +4798,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t03.in">tests/v2/Input/t03.in</a>   
+### <a href="/tests/v2/Input/t03.in">tests/v2/Input/t03.in</a>   
 
 Linear chain of Ge2 molecules (2 atoms per unit cell), using a local (Starkloff-Joannopoulos) pseudopotential, with exchange-correlation (ixc=3). Uses 2 k-points. Computation of the second derivative of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector. Same as test 1,  except ixc and the k-points,  and except that it doesn't uses multi-data mode,  so GS and RF calculations are separated. (see test.ge.xc5 of RESPFN)
 
@@ -4808,7 +4808,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t04.in">tests/v2/Input/t04.in</a>   
+### <a href="/tests/v2/Input/t04.in">tests/v2/Input/t04.in</a>   
 
 Linear chain of Si2 molecules (2 atoms per unit cell), using a separable pseudopotential,  with ixc=3. Computation of the second derivative of the total energy with respect to a atomic displacement perpendicular to the chain,  with q(0 0 1/2) wavevector. (see test.si.chain of RESPFN)
 
@@ -4818,7 +4818,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t05.in">tests/v2/Input/t05.in</a>   
+### <a href="/tests/v2/Input/t05.in">tests/v2/Input/t05.in</a>   
 
 Linear chain of Si2 molecules (2 atoms per unit cell), using a separable pseudopotential,  with ixc=3. Computation of the second derivatives of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector,  as well as to an homogeneous electric field. The computed derivatives include the mixed derivative wrt the two perturbations. (see test.si.elfd of RESPFN)
 
@@ -4828,7 +4828,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t06.in">tests/v2/Input/t06.in</a>   
+### <a href="/tests/v2/Input/t06.in">tests/v2/Input/t06.in</a>   
 
 Si crystal (diamond structure),  2 atoms per unit cell. Computation of responses to atomic displacements and homogeneous electric field at Gamma, giving access to the dynamical matrix at q(0 0 0),  including its non-analytical behaviour (effective charges do not vanish completely due to lack of convergence), the associated phonon frequencies,  and the macroscopic dielectric constant. (see test.si.gamma of RESPFN)
 
@@ -4838,7 +4838,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t07.in">tests/v2/Input/t07.in</a>   
+### <a href="/tests/v2/Input/t07.in">tests/v2/Input/t07.in</a>   
 
 GaAs crystal (zinc-blende structure),  2 atoms per unit cell. Computation of responses to atomic displacements with X-point wavevector,  giving the dynamical matrix and the associated phonon frequencies. Can be compared to the test gaas.x of RESPFN,  provided the cut-off energy is changed (here 3Ha,  in RESPFN,  6Ha).
 
@@ -4848,7 +4848,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t08.in">tests/v2/Input/t08.in</a>   
+### <a href="/tests/v2/Input/t08.in">tests/v2/Input/t08.in</a>   
 
 Linear chain of Si2 molecules (2 atoms per unit cell), using a separable pseudopotential,  with ixc=5 and non-linear XC core correction. Computation of the second derivatives of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector. (see test.si.core0 of RESPFN)
 
@@ -4858,7 +4858,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t09.in">tests/v2/Input/t09.in</a>   
+### <a href="/tests/v2/Input/t09.in">tests/v2/Input/t09.in</a>   
 
 Same as test 2-3 (Germanium linear chain,  with a local psp), but at non-zero 0 : q=(0 0 0.5). Similar to test4,  actually,  with Si changed to Ge.
 
@@ -4868,7 +4868,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t11.in">tests/v2/Input/t11.in</a>   
+### <a href="/tests/v2/Input/t11.in">tests/v2/Input/t11.in</a>   
 
 Orthorhombic Al system,  q(1/2 0 0),  partial occupation numbers. Compares with frozen-phonon calculations. Examine two cases: varying occupation numbers,  and fixed occupation numbers. A. Varying occupation numbers (occopt=4): RF calculation in dataset 5 gives 2DE equal to -3.812577 Ha,  while finite difference of "TOTAL" energy (datasets 6 and 7,  including entropy term) gives -3.812230 Ha (the agreement could be better with better finite difference) B. Fixed occupation numbers (occopt=2): RF calculation in dataset 8 gives 2DE equal to +5.431807 Ha,  while finite difference of total energy (no entropy term is present with occopt=2) gives +5.431857 Ha (the agreement could be better with better finite difference)
 
@@ -4878,7 +4878,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t12.in">tests/v2/Input/t12.in</a>   
+### <a href="/tests/v2/Input/t12.in">tests/v2/Input/t12.in</a>   
 
 BCC Helium q close to Gamma,  along Gamma-H There is a problem with kptopt=1 or 3 for the NSC step.
 
@@ -4888,7 +4888,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t13.in">tests/v2/Input/t13.in</a>   
+### <a href="/tests/v2/Input/t13.in">tests/v2/Input/t13.in</a>   
 
 Analyze a simple DDB for quartz,  but do not test interatomic force constants (see test 15 for this). Compute phonon frequencies at gamma with and without LO-TO splitting.
 
@@ -4899,7 +4899,7 @@ Topic(s): [[topic:Phonons]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t14.in">tests/v2/Input/t14.in</a>   
+### <a href="/tests/v2/Input/t14.in">tests/v2/Input/t14.in</a>   
 
 Generates a DDB for quartz containing the 2DTEs at three q-points : (0 0 0),  (0 0 1/4) and (1/2 0 1/4). This is a standalone test of MRGDDB.
 
@@ -4909,7 +4909,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v2/Input/t15.in">tests/v2/Input/t15.in</a>   
+### <a href="/tests/v2/Input/t15.in">tests/v2/Input/t15.in</a>   
 
 Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization).
 
@@ -4920,7 +4920,7 @@ Topic(s): [[topic:PhononBands]], [[topic:Phonons]], [[topic:Temperature]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t16.in">tests/v2/Input/t16.in</a>   
+### <a href="/tests/v2/Input/t16.in">tests/v2/Input/t16.in</a>   
 
 Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore.
 
@@ -4931,7 +4931,7 @@ Topic(s): [[topic:Phonons]], [[topic:PhononBands]], [[topic:Temperature]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t17.in">tests/v2/Input/t17.in</a>   
+### <a href="/tests/v2/Input/t17.in">tests/v2/Input/t17.in</a>   
 
 Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. IFCs are computed as in test 16,  but by limiting artificially the number of allowed interacting shells to 2. The total number of atoms to be taken into account is 17 (1 for the shell 0, 4 for the shell 1,  and 12 for the shell 2). The frequencies at X and L points are again computed. They can be compared with those provided in TABLE II (TA(X) mode at 161.684 cm-1) and TABLE III (TA(L) mode at 127.508 cm-1) in the above-mentioned paper. The number are close,  with small differences at the level of 0.001 cm-1 .
 
@@ -4942,7 +4942,7 @@ Topic(s): [[topic:Phonons]], [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t18.in">tests/v2/Input/t18.in</a>   
+### <a href="/tests/v2/Input/t18.in">tests/v2/Input/t18.in</a>   
 
 Analyze a DDB for BaTiO3 (see also tests 19 and 20). Here, no use of IFCs is done. Phonon frequencies at the Gamma,  X,  M,  R and along the Gamma-R line are obtained directly from the DDB. They are to be compared with the data in the TABLE II of Ghosez et al,  Ferroelectrics, 206-207,  205 (1998),  as well as FIGURE I. At q(1/8 1/8 1/8),  the lowest frequency is  i 136.7 cm-1 .
 
@@ -4953,7 +4953,7 @@ Topic(s): [[topic:Phonons]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t19.in">tests/v2/Input/t19.in</a>   
+### <a href="/tests/v2/Input/t19.in">tests/v2/Input/t19.in</a>   
 
 Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 non-shifted grid (referred to as M1 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest frequency is  i 178.8 cm-1 .
 
@@ -4964,7 +4964,7 @@ Topic(s): [[topic:Phonons]], [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t20.in">tests/v2/Input/t20.in</a>   
+### <a href="/tests/v2/Input/t20.in">tests/v2/Input/t20.in</a>   
 
 Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 BCC grid (referred to as M2 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest mode is  i 153.5 cm-1 . The error,  compared with the reference result of test 18, is still 10%,  but much less than with the grid of test 19. Also,  the IFCs are obtained and can be compared with those provided in TABLE III-V of the Ghosez et al paper. Note the decomposition between dipole-dipole contribution and short-ranged contribution.
 
@@ -4975,7 +4975,7 @@ Topic(s): [[topic:Phonons]], [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t21.in">tests/v2/Input/t21.in</a>   
+### <a href="/tests/v2/Input/t21.in">tests/v2/Input/t21.in</a>   
 
 Analyze a DDB for BaTiO3,  same as test18. Compute the phonon frequencies at Gamma,  and also output the corresponing eigenvectors. These data can be compared with those published by Ghosez et al,  Ferroelectrics 194,  39 (1997), TABLE II,  although the normalisation factor is different. For example,  the z displacement of mode 1 given by the code is ( .25d-4,  .158d-2,  -.261d-2,  -.118d-2,  -.118d-2 ),  that multiplied by -60.54 and rounded to the third digit, gives values that appear in the first line of that TABLE II : ( -0.002,  -0.096,  0.158,  0.071,  0.071 )
 
@@ -4986,7 +4986,7 @@ Topic(s): [[topic:Phonons]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t22.in">tests/v2/Input/t22.in</a>   
+### <a href="/tests/v2/Input/t22.in">tests/v2/Input/t22.in</a>   
 
 Analyze a DDB for ZrO2,  containing only the dynamical matrices at Gamma,  X and L. Generate the IFC using a rough sampling,  based on Gamma and X only,  then produces the phonon band structure along Gamma-X, as well as in L. The degeneracies can be compared with those of Detraux et al,  Phys. Rev. Lett. 81,  3297 (1998). The errors produced with this sampling are still large,  as can be judged from the comparison at L. The frequencies (in cm-1) from the DDB are 128.8 (2-deg),  271.4,  413.7 (2-deg),  518.2,  521.8 (2-deg),  598.1; while from the IFCs,  using the interpolation,  they are 152.5 (2-deg),  290.8,  429.6 (2-deg),  434.6 (2-deg),  551.9,  576.0 . The same DDB allows to generate a slightly better sampling,  by using nqshft=2 and two shifts (0.0 0.0 0.0) and (0.5 0.5 0.5). In this case,  the L point is used for the interpolation. The comparison can be done at the level of the mid-point between Gamma and X : from the GX grid,  one gets 107.0 (2-deg),  260.3,  295.5 (2-deg),  394.3,  577.0 (2-deg),  682.1; from the GXL grid,  one gets 106.3 (2-deg),  262.6,  302.7 (2-deg),  403.8,  582.5 (2-deg),  684.2; while directly from the ABINIT code,  one gets 106.3 (2-deg),  270.0,  277.9 (2-deg),  443.2,  581.6 (2-deg),  681.6  . This is not yet satisfactory. More points are needed for better results,  the next interesting grid being obtained by changing ngqpt from 2 2 2 to 4 4 4 in the t22.in file. Two additional dynamical matrices are then needed.
 
@@ -4998,7 +4998,7 @@ Author(s): F. Detraux
 
 * * *
 
-###  <a href="/tests/v2/Input/t23.in">tests/v2/Input/t23.in</a>   
+### <a href="/tests/v2/Input/t23.in">tests/v2/Input/t23.in</a>   
 
 Generates a DDB for BaTiO3 containing only the 2DTEs at the (0 0 0) and (1/2 0 0) q-points. This is a standalone test of MRGDDB.
 
@@ -5008,7 +5008,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v2/Input/t24.in">tests/v2/Input/t24.in</a>   
+### <a href="/tests/v2/Input/t24.in">tests/v2/Input/t24.in</a>   
 
 Analyze the DDB of test23. Uses asr=0. If asr is set to 1,  the results of test 18 are recovered. The effect of asr choice is important in the case of BaTiO3,  with the pseudopotentials that were used, see Ph. Ghosez's thesis. The option asr is shown to work on both Gamma and X points : the correction is obtained at Gamma,  and transferred to X. Note that a DDB MUST include the Gamma point.
 
@@ -5018,7 +5018,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v2/Input/t25.in">tests/v2/Input/t25.in</a>   
+### <a href="/tests/v2/Input/t25.in">tests/v2/Input/t25.in</a>   
 
 Analyze a DDB for PbZrO3. It is also a ABO3 compound,  like BaTiO3 (see tests 18 to 21),  but the DDB contains the q-wavevectors on a 2x2x2 FCC grid,  finer than those tested for BaTiO3. Output : analysis of IFCs,  as well as a few phonon frequencies.
 
@@ -5029,7 +5029,7 @@ Topic(s): [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t26.in">tests/v2/Input/t26.in</a>   
+### <a href="/tests/v2/Input/t26.in">tests/v2/Input/t26.in</a>   
 
 Generate first-order responses for FCC Aluminum. Very low cut-off,  to keep CPU the lowest possible Aim at a regular sampling of phonon wavevectors,  needed to interpolate the dynamical matrix over the whole Brillouin Zone, in test 28. The chosen grid (too coarse,  though) is (0 0 0),  (1/4 1/4 0),  (1/2 1/2 0),  (1/2 0 0), (1/2 1/4 1/4),  (1/2 -1/4 1/4)  (in reduced coordinates). The ecut and nkpt parameters are really too low (see test 28), but parameters suitable for physical results (see test 29) are also provided in the input files.
 
@@ -5039,7 +5039,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t27.in">tests/v2/Input/t27.in</a>   
+### <a href="/tests/v2/Input/t27.in">tests/v2/Input/t27.in</a>   
 
 Combines the DDBs of test 26.
 
@@ -5049,7 +5049,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v2/Input/t28.in">tests/v2/Input/t28.in</a>   
+### <a href="/tests/v2/Input/t28.in">tests/v2/Input/t28.in</a>   
 
 Phonon band structure of Al,  from DDB of test 27. The parameters were really too low in test 26,  so that some phonon unstabilities are present close to Gamma. These do not appear anymore in test 29.
 
@@ -5060,7 +5060,7 @@ Topic(s): [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t29.in">tests/v2/Input/t29.in</a>   
+### <a href="/tests/v2/Input/t29.in">tests/v2/Input/t29.in</a>   
 
 Phonon band structure of Al. Similar to test 28, except that the DDB was generated with parameters much better than those of test 26,  the better parameters are mentioned in the t26.in file,  for information. The convergence is not complete though,  but the frequencies compare already rather well with those in Quong and Klein,  PRB 46,  10734 (1992),  except close to Gamma (still,  no instability is observed,  unlike in test 28).
 
@@ -5071,7 +5071,7 @@ Topic(s): [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t30.in">tests/v2/Input/t30.in</a>   
+### <a href="/tests/v2/Input/t30.in">tests/v2/Input/t30.in</a>   
 
 Generate first-order responses for GaAs (zinc-blende). Aim at a regular sampling of phonon wavevectors,  needed to interpolate the dynamical matrix over the whole Brillouin Zone, in test 32. The chosen grid (too coarse,  though) has only two special q points : 1/4 1/4 1/4 and 1/4 1/2 1/2 (in reduced coordinates). The Gamma point is also needed,  especially for the computation of dielectric matric and effective charges,  needed to get the asymptotic behaviour of the interatomic force constants. To generate the different responses,  the following steps are followed, with each of them corresponding to a different dataset (the multi-dataset mode allows to have only one input file) : 1) ground state calculation,  with a k-point sampling in the irreducible Brillouin zone only; 2) using the density of 1),  computation of the wavefunctions for the grid of k-points in the full Brillouin zone;  (not really needed in v3.0) 3) computation of the ddk response,  in preparation to the electric field response; 4) computation of the dynamical matrix at Gamma,  as well as the Born effective charges,  and the dielectric tensor; 5) using the density of 1),  computation of the GS wavefunctions at k+q where q is 1/4 1/4 1/4; 6) computation of the dynamical matrix at 1/4 1/4 1/4; 7) using the density of 1),  computation of the GS wavefunctions at k+q where q is 1/4 1/2 1/2; 8) computation of the dynamical matrix at 1/4 1/2 1/2 .
 
@@ -5081,7 +5081,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t31.in">tests/v2/Input/t31.in</a>   
+### <a href="/tests/v2/Input/t31.in">tests/v2/Input/t31.in</a>   
 
 mrgddb input file.
 
@@ -5091,7 +5091,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v2/Input/t32.in">tests/v2/Input/t32.in</a>   
+### <a href="/tests/v2/Input/t32.in">tests/v2/Input/t32.in</a>   
 
 The derivative database generated by case 31 is now analyzed,  and serves to compute a phonon band structure. There is a very small breaking of the symmetry-induced degeneracy of modes along the (x x x) direction. This is due to an incomplete convergence. Indeed,  if one makes tolwfr more stringent for response calculations (from 1.0d-16 to 1.0d-20),  the lowest acoustic modes at (0.1 0.1 0.1),  that are 4.042cm-1 and 4.067cm-1,  becomes 4.05398 cm-1 and 4.05400 cm-1 . Of course,  this effect cannot be seen for other modes,  since only the acoustic modes are sensitive to that level of accuracy !
 
@@ -5102,7 +5102,7 @@ Topic(s): [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t33.in">tests/v2/Input/t33.in</a>   
+### <a href="/tests/v2/Input/t33.in">tests/v2/Input/t33.in</a>   
 
 H2 molecule in a big box : compute VERY accurately the derivatives of the energy,  by both symmetric finite-differences and direct computation of forces and 2DTE. Also test the interplay between istwfk/=1 in the GS calculation and istwfk==1 in the RF calculation (istwfk/=1 is not yet-991020- allowed for RF,  which is a shame) 1) Computation of the first-order derivative of the total energy With delta(xred)=0.0002,  one gets delta(etot)/delta(xred)=-3.145846551 With delta(xred)=0.0001,  one gets delta(etot)/delta(xred)=-3.145836932 The combination of both results,  in a higher-order finite difference formula gives -3.145833726 . The direct computation of forces at the target geometry gives -3.145833725869 . The agreement is perfect, taking into account the "limited" number of digits (10) of the finite-difference result. 2) Computation of the second-order derivative of the total energy With delta(xred)=0.0002,  one gets delta(dedt)/delta(xred)=188.73875 With delta(xred)=0.0001,  one gets delta(dedt)/delta(xred)=188.73837 The combination of both results,  in a higher-order finite difference formula gives 188.73824613 . The direct computation of 2DTE at the target geometry gives 188.73824613046 . The agreement at the level of 11 digits is also perfect.
 
@@ -5112,7 +5112,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t34.in">tests/v2/Input/t34.in</a>   
+### <a href="/tests/v2/Input/t34.in">tests/v2/Input/t34.in</a>   
 
 Again H2 molecule in a big box (like test 33). With the same configuration and parameters as test 33, investigate the treatment of unoccupied states : use nband 2 and occopt 1,  causing occ 2.0 1.0 . The same results as with test 33 are obtained.
 
@@ -5122,7 +5122,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t35.in">tests/v2/Input/t35.in</a>   
+### <a href="/tests/v2/Input/t35.in">tests/v2/Input/t35.in</a>   
 
 Al2 molecule in a big box. Treat 8 bands,  with some of them partially occupied. The occupation numbers are fixed,  with occopt 0 . Computation of the second-order derivative of the total energy. With delta(xred)=0.0001,  one gets delta(etot)/delta(xred)=3.32914893 The direct computation of 2DTE at the target geometry gives 3.3291477145164 . The agreement is good,  and can be improved if a higher-order finite difference estimation is used.
 
@@ -5132,7 +5132,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t36.in">tests/v2/Input/t36.in</a>   
+### <a href="/tests/v2/Input/t36.in">tests/v2/Input/t36.in</a>   
 
 Al2 molecule in a big box. Treat 8 bands,  occupied using occopt=4. For a metallic occopt,  the frozen-phonon (finite-difference) approach is strictly equivalent to the RF approach only at q/=Gamma. Here,  computes the result at q=(0 0 1/2). With delta(xred)=0.0001 (DATASET 5),  one gets delta(etot)/delta(xred)=0.42807994 . The direct computation of 2DTE at the target geometry gives 0.428080350 .
 
@@ -5142,7 +5142,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t37.in">tests/v2/Input/t37.in</a>   
+### <a href="/tests/v2/Input/t37.in">tests/v2/Input/t37.in</a>   
 
 MgO FCC crystal,  with very low cut-off,  and 32 k points. Pseudopotentials WITHOUT a non-linear core correction. Compute the dynamical matrices at q(0.25 0.5 0.498) and q(0.25 0.5 0.5). The results should be very close to each other,  but were not in pre v2.1 versions,  because the symmetry was not treated correctly for the highest-symmetry q vector q(0.25 0.5 0.5) (test case found by PTepesch).
 
@@ -5153,7 +5153,7 @@ Author(s): P. Tepesch
 
 * * *
 
-###  <a href="/tests/v2/Input/t38.in">tests/v2/Input/t38.in</a>   
+### <a href="/tests/v2/Input/t38.in">tests/v2/Input/t38.in</a>   
 
 MgO FCC crystal,  with very low cut-off,  and 32 k points. Pseudopotentials WITH a non-linear core correction. Compute the dynamical matrix at q(0.5 0.5 0.5) . Also test the non-type-ordering of atoms.
 
@@ -5163,7 +5163,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t39.in">tests/v2/Input/t39.in</a>   
+### <a href="/tests/v2/Input/t39.in">tests/v2/Input/t39.in</a>   
 
 BaSr(TiO3)2 FCC unit cell. Show how to use only the q Gamma point to obtain symmetric IFCs using Anaddb.
 
@@ -5174,7 +5174,7 @@ Topic(s): [[topic:Phonons]], [[topic:PhononBands]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t40.in">tests/v2/Input/t40.in</a>   
+### <a href="/tests/v2/Input/t40.in">tests/v2/Input/t40.in</a>   
 
 O2 (non-spin-polarized,  non-linear XC core correction,  GGA) Computation of forces in the GGA,  and comparison with a finite difference of energy. The direct computation of force (dataset 2) gives 0.627251486 Ha/Bohr A simple finite-difference estimation (dataset 1 and 3) gives 0.627251265 Ha/Bohr. The agreement can be improved if a better finite-difference estimation is used.
 
@@ -5184,7 +5184,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t41.in">tests/v2/Input/t41.in</a>   
+### <a href="/tests/v2/Input/t41.in">tests/v2/Input/t41.in</a>   
 
 O2 (non-spin-polarized,  non-linear XC core correction,  GGA) Computation of uniaxial stresses in the GGA, and comparison with a finite difference of energy. The direct computation of sigma(zz) stress (dataset 2) gives 0.964267876d-3 Ha/Bohr**3 A simple finite-difference estimation (dataset 1 and 3) gives a difference in total energy of 0.085048409d-3 Ha, for a difference of volume of 0.0882 Bohr**3 leading to a stress estimation of 0.96426768d-3 Ha/Bohr**3 The agreement can be improved if a better finite-difference estimation is used.
 
@@ -5194,7 +5194,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t42.in">tests/v2/Input/t42.in</a>   
+### <a href="/tests/v2/Input/t42.in">tests/v2/Input/t42.in</a>   
 
 (HeH)+ in a big box. Computation of excitation energies in TDDFT, in the following approximations : TDxOEP/xOEP,  TDLDA/xOEP, BPG hybrid/xOEP.
 
@@ -5205,7 +5205,7 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t43.in">tests/v2/Input/t43.in</a>   
+### <a href="/tests/v2/Input/t43.in">tests/v2/Input/t43.in</a>   
 
 BCC Molybdenum. Test the k point generator : Monkhorst-Pack grid,  then band structure.
 
@@ -5216,7 +5216,7 @@ Topic(s): [[topic:k-points]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t44.in">tests/v2/Input/t44.in</a>   
+### <a href="/tests/v2/Input/t44.in">tests/v2/Input/t44.in</a>   
 
 Arsenic in rhombohedral structure. Optimization of unit cell size and shape. With 4x4x4 k point grid,  ecut 3.0,  occopt 4 and tsmear 0.06d0, one get acell 3*7.325  angdeg 3*57.36 and xred 0.2277 These input parameters are too small,  but still give a realistic geometry,  since with the much better parameters 12x12x12 k point grid,  ecut 12.0,  occopt 4 and tsmear 0.04d0, one gets acell 3*7.633  angdeg 3*54.95 and xred 0.2296,  while the experimental values are acell 3*7.751   angdeg 3*54.554 and xred 0.2276
 
@@ -5227,7 +5227,7 @@ Topic(s): [[topic:k-points]], [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t45.in">tests/v2/Input/t45.in</a>   
+### <a href="/tests/v2/Input/t45.in">tests/v2/Input/t45.in</a>   
 
 Aluminum in FCC structure. For occopt=4, 5, 6, 7,  determination of the total energy at slightly different tsmear values,  and check of the dE/d(tsmear)=-kT.entropy relationship. For example,  for occopt=4,  the difference between tsmear=0.101 and tsmear=0.099 is -11.149450d-6 Ha,  while the value of -kT.entropy is -5.574709d-4Ha,  that is about 500 larger,  as expected.
 
@@ -5238,7 +5238,7 @@ Topic(s): [[topic:BandOcc]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t46.in">tests/v2/Input/t46.in</a>   
+### <a href="/tests/v2/Input/t46.in">tests/v2/Input/t46.in</a>   
 
 Aluminum in FCC structure. At fixed tsmear (=0.04),  check the convergence with respect to the number of k points,  for different occopt. The grids that are tested have respectively 10,  28,  and 60 k points in the IZB (ngkpt values are 4 4 4 4,  6 6 6 4 and 8 8 8 4 For occopt=4,  the total energy (or the enthalpy) is -2.079770 Ha,  -2.080534 Ha,  -2.080672 Ha; for occopt=5,  it is -2.079787 Ha,  -2.080563 Ha,  -2.080693 Ha; for occopt=7,  it is -2.084211 Ha,  -2.084861 Ha,  -2.084916 Ha. The latter values can be corrected by computing the mean of the total energy and the internal energy,  as described in Marzari's thesis,  for example. Thanks to this procedure,  one gets : -2.079732 Ha,  -2.080470 Ha,  and -2.080626 Ha. For information,  with a 12 12 12 4 grid (182 k points) and occopt=4,  one gets -2.080648 Ha.
 
@@ -5249,7 +5249,7 @@ Topic(s): [[topic:BandOcc]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t47.in">tests/v2/Input/t47.in</a>   
+### <a href="/tests/v2/Input/t47.in">tests/v2/Input/t47.in</a>   
 
 Si in diamond structure. 2 k points,  low ecut. Output the SCF density,  then partial densities that correspond to the 1st,  2nd,  3rd and 4th valence bands, then the density that corresponds to the 1st conduction band, then the density of the lowest conduction state at 1/4 1/4 1/4,  then the density of the highest valence state at 0 0 0 . Also test the symmetry finder.
 
@@ -5259,7 +5259,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t48.in">tests/v2/Input/t48.in</a>   
+### <a href="/tests/v2/Input/t48.in">tests/v2/Input/t48.in</a>   
 
 H2 molecule in a big box. Comparison of the modified Broyden algorithm (ionmov=3) with the original one (ionmov=2). Start with different values of xcart,  from 0.6 to 1.1,  by step of 0.1 . The number of Broyden steps needed to reach acceptable residual forces with the ionmov=3 algorithm are : 3,  2,  2,  3,  3,  4,  while with the ionmov=2 algorithms,  one get : 4,  3,  2,  5,  and then, either the algorithm does not converge within 8 steps,  or it converges to a saddle point of the energy ! This test was hard to make portable. This is why the tolerance for fldiff is very large.
 
@@ -5270,7 +5270,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t49.in">tests/v2/Input/t49.in</a>   
+### <a href="/tests/v2/Input/t49.in">tests/v2/Input/t49.in</a>   
 
 Si2 molecule,  static,  spin-polarized. Same system as test 17 of fast,  except lower ecut. Test ionmov=6 (Verlet) as well as ionmov=7. Cannote be executed in parallel: --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181
 
@@ -5280,7 +5280,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t50.in">tests/v2/Input/t50.in</a>   
+### <a href="/tests/v2/Input/t50.in">tests/v2/Input/t50.in</a>   
 
 O2 (nsppol=2,  non-linear XC core correction,  GGA) Some similarities with test 41,  except that nsppol=2 instead of 1. Computation of uniaxial stresses in the GGA, and comparison with a finite difference of energy. The estimation of sigma(zz) stress  at acell(3)=9.0 from acell(3)=8.9991 and 9.0009 gives 1.62867d-3 Ha/Bohr**3 A simple finite-difference estimation gives a difference in total energy of 0.123861d-3 Ha, for a difference of volume of 0.07605 Bohr**3 leading to a stress estimation of 1.62867d-3 Ha/Bohr**3
 
@@ -5291,7 +5291,7 @@ Topic(s): [[topic:ForcesStresses]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t51.in">tests/v2/Input/t51.in</a>   
+### <a href="/tests/v2/Input/t51.in">tests/v2/Input/t51.in</a>   
 
 O2 (nsppol=2,  non-linear XC core correction,  GGA) Similar to test50,  except use iscf=6 .
 
@@ -5302,7 +5302,7 @@ Topic(s): [[topic:SCFAlgorithms]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t52.in">tests/v2/Input/t52.in</a>   
+### <a href="/tests/v2/Input/t52.in">tests/v2/Input/t52.in</a>   
 
 Test the symmetry finder for all the Bravais lattices, with different input formats (rprim or angdeg),  and for non-conventional choices of axes as well. Uses only one atom,  placed at (0 0 0)
 
@@ -5312,7 +5312,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t53.in">tests/v2/Input/t53.in</a>   
+### <a href="/tests/v2/Input/t53.in">tests/v2/Input/t53.in</a>   
 
 Test the symmetry finder for all the Bravais lattices, with different input formats (rprim or angdeg),  and for non-conventional choices of axes as well. Uses two different atoms,  placed at (0 0 0) and (0.1 0 0),  thus breaking many symmetries.
 
@@ -5322,7 +5322,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t54.in">tests/v2/Input/t54.in</a>   
+### <a href="/tests/v2/Input/t54.in">tests/v2/Input/t54.in</a>   
 
 Test the symmetry finder for all the Bravais lattices, with different input formats (rprim or angdeg),  and for non-conventional choices of axes as well. Uses two atoms of the same type,  placed at (0 0 0) and (0.1 0 0),  thus breaking many symmetries,  while the inversion needs a non-symmorphic translation.
 
@@ -5332,7 +5332,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t55.in">tests/v2/Input/t55.in</a>   
+### <a href="/tests/v2/Input/t55.in">tests/v2/Input/t55.in</a>   
 
 Test different additional features of the symmetry finder : - handling non-primitive cells - handling glide planes - handling screw axes
 
@@ -5342,7 +5342,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t56.in">tests/v2/Input/t56.in</a>   
+### <a href="/tests/v2/Input/t56.in">tests/v2/Input/t56.in</a>   
 
 Test a FHI pseudopotential for Chromium,  with non-linear XC core correction. The ecut is too low,  the box is too small. Use metallic occupation numbers. The convergence is not enough to make finite-difference of energy.
 
@@ -5352,7 +5352,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t58.in">tests/v2/Input/t58.in</a>   
+### <a href="/tests/v2/Input/t58.in">tests/v2/Input/t58.in</a>   
 
 Test the mechanism for checking the presence of vacuum. Use H2 molecule,  placed in a big box.
 
@@ -5362,7 +5362,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t59.in">tests/v2/Input/t59.in</a>   
+### <a href="/tests/v2/Input/t59.in">tests/v2/Input/t59.in</a>   
 
 Space group number 225 : FCC Aluminum,  in both conventional and primitive unit cells.
 
@@ -5373,7 +5373,7 @@ Topic(s): [[topic:UnitCell]], [[topic:SmartSymm]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t60.in">tests/v2/Input/t60.in</a>   
+### <a href="/tests/v2/Input/t60.in">tests/v2/Input/t60.in</a>   
 
 Space group number 139 : elongated aluminum,  BCT
 
@@ -5384,7 +5384,7 @@ Topic(s): [[topic:UnitCell]], [[topic:SmartSymm]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t61.in">tests/v2/Input/t61.in</a>   
+### <a href="/tests/v2/Input/t61.in">tests/v2/Input/t61.in</a>   
 
 2D hexagonal lattice: test the sets of k points generated automatically
 
@@ -5395,7 +5395,7 @@ Topic(s): [[topic:k-points]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t62.in">tests/v2/Input/t62.in</a>   
+### <a href="/tests/v2/Input/t62.in">tests/v2/Input/t62.in</a>   
 
 2D square lattice: test the sets of k points generated automatically
 
@@ -5406,7 +5406,7 @@ Topic(s): [[topic:k-points]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t63.in">tests/v2/Input/t63.in</a>   
+### <a href="/tests/v2/Input/t63.in">tests/v2/Input/t63.in</a>   
 
 2D 4 point symmetry: test the sets of k points generated automatically
 
@@ -5417,7 +5417,7 @@ Topic(s): [[topic:k-points]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t64.in">tests/v2/Input/t64.in</a>   
+### <a href="/tests/v2/Input/t64.in">tests/v2/Input/t64.in</a>   
 
 2D rectangular lattice: test the sets of k points generated automatically
 
@@ -5428,7 +5428,7 @@ Topic(s): [[topic:k-points]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t65.in">tests/v2/Input/t65.in</a>   
+### <a href="/tests/v2/Input/t65.in">tests/v2/Input/t65.in</a>   
 
 2D centered lattice: test the sets of k points generated automatically
 
@@ -5438,7 +5438,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t66.in">tests/v2/Input/t66.in</a>   
+### <a href="/tests/v2/Input/t66.in">tests/v2/Input/t66.in</a>   
 
 2D oblique lattice: test the sets of k points generated automatically
 
@@ -5448,7 +5448,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t67.in">tests/v2/Input/t67.in</a>   
+### <a href="/tests/v2/Input/t67.in">tests/v2/Input/t67.in</a>   
 
 3D cP lattice: test the sets of k points generated automatically
 
@@ -5458,7 +5458,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t68.in">tests/v2/Input/t68.in</a>   
+### <a href="/tests/v2/Input/t68.in">tests/v2/Input/t68.in</a>   
 
 3D cF lattice: test the sets of k points generated automatically
 
@@ -5468,7 +5468,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t69.in">tests/v2/Input/t69.in</a>   
+### <a href="/tests/v2/Input/t69.in">tests/v2/Input/t69.in</a>   
 
 3D cI lattice: test the sets of k points generated automatically
 
@@ -5478,7 +5478,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t70.in">tests/v2/Input/t70.in</a>   
+### <a href="/tests/v2/Input/t70.in">tests/v2/Input/t70.in</a>   
 
 3D tP lattice: test the sets of k points generated automatically
 
@@ -5488,7 +5488,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t71.in">tests/v2/Input/t71.in</a>   
+### <a href="/tests/v2/Input/t71.in">tests/v2/Input/t71.in</a>   
 
 3D tI lattice: test the sets of k points generated automatically
 
@@ -5498,7 +5498,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t72.in">tests/v2/Input/t72.in</a>   
+### <a href="/tests/v2/Input/t72.in">tests/v2/Input/t72.in</a>   
 
 3D hR lattice: test the sets of k points generated automatically
 
@@ -5508,7 +5508,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t73.in">tests/v2/Input/t73.in</a>   
+### <a href="/tests/v2/Input/t73.in">tests/v2/Input/t73.in</a>   
 
 3D hP lattice: test the sets of k points generated automatically
 
@@ -5518,7 +5518,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t74.in">tests/v2/Input/t74.in</a>   
+### <a href="/tests/v2/Input/t74.in">tests/v2/Input/t74.in</a>   
 
 Tin in the diamond structure,  with 2 special points Test the effect of spin-orbit coupling,  especially the electronic structure. Degeneracies at Gamma are correct ! (note that ecut and nkpt are too low for quantitative accuracy) Without spin-orbit (in eV),  dataset 4: -8.82682  1.26955 (x3) 1.30262 3.45296 (x3) With spin-orbit (in eV),  dataset 6: -8.82682  0.75225      1.30262 1.50965 (x2) 3.07128 3.62556 (x2)
 
@@ -5529,7 +5529,7 @@ Topic(s): [[topic:spinpolarisation]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t75.in">tests/v2/Input/t75.in</a>   
+### <a href="/tests/v2/Input/t75.in">tests/v2/Input/t75.in</a>   
 
 Bismuth,  treated as a metal,  with 2 special points Test the effect of spin-orbit coupling,  especially the forces. The dataset 1 to 3 are related to the nspinor=1 case. The forces are computed from finite differences of energy : abs(etotal3-etotal1)=0.00090461 Ha abs(xcart3-xcart1)=0.089970092 (taking into account both atoms) Their ratio is 0.01005456 Ha/Bohr,  to be compared with fcart2=1.0049850156E-02 Ha/Bohr The dataset 4 checks the case nspinor=2,  pspso=1 (no spin-orbit yet) The dataset 5 to 7 try to reproduce the comparison of forces with spin-orbit : abs(etotal7-etotal5)=0.000445155 Ha abs(xcart7-xcart5)=0.089970092 (taking into account both atoms) Their ratio is 3.83633E-03 Ha/Bohr ... A better finite-difference scheme incorporating also data from half-displacement,  lead to 3.81832E-03 Ha/Bohr. This is in excellent agreement with fcart6=3.8183150850E-03 Ha/Bohr
 
@@ -5540,7 +5540,7 @@ Topic(s): [[topic:spinpolarisation]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t76.in">tests/v2/Input/t76.in</a>   
+### <a href="/tests/v2/Input/t76.in">tests/v2/Input/t76.in</a>   
 
 Silicon,  diamond structure. Test the ability to read an input wavefunction and to generate from it any other wavefunction,  changing different parameters. One of the _DEN file is also used as starting point of the cut3D tests.
 
@@ -5550,7 +5550,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t77.in">tests/v2/Input/t77.in</a>   
+### <a href="/tests/v2/Input/t77.in">tests/v2/Input/t77.in</a>   
 
 Cut3d code. Silicon,  diamond structure. Using the unformatted density file generated in test #76, compute the density along the diagonal of the primitive cell, accross more than one cell. Also generate a formatted density file,  to be read in the next run.
 
@@ -5560,7 +5560,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v2/Input/t83.in">tests/v2/Input/t83.in</a>   
+### <a href="/tests/v2/Input/t83.in">tests/v2/Input/t83.in</a>   
 
 Ni,  FCC structure. Ferromagnetic phase,  compute the magnetic moment in GGA. Check the convergence,  and make a restart. Note that the pseudopotential is NOT a GGA psp.
 
@@ -5570,7 +5570,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t84.in">tests/v2/Input/t84.in</a>   
+### <a href="/tests/v2/Input/t84.in">tests/v2/Input/t84.in</a>   
 
 Ta,  single atom in a box (1k point). HGH pseudopotential Ecut and acell are NOT realistic. One would need 20 Ha and a 20x20x20 box,  while here we have 5 Ha and a 12x12x12 box. The small box size changes the degeneracy of levels. The all-electron values derived from another code,  for comparison,  are level  degeneracy       energy (Ha)  spin-orbit splitting 6s      2               -0.194573 5d3/2   4               -0.141779 5d5/2   6               -0.119933       0.0218 6p1/2   2               -0.050542 6p3/2   4               -0.031281       0.0193
 
@@ -5581,7 +5581,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v2/Input/t85.in">tests/v2/Input/t85.in</a>   
+### <a href="/tests/v2/Input/t85.in">tests/v2/Input/t85.in</a>   
 
 Ta,  single atom in a box (1k point). Same test as t84,  but with a different pseudopotential. HGH semi-core pseudopotential (so more bands than test 84) Ecut (5Ha) and acell (12 Bohr) are NOT realistic. The all-electron values derived from another code,  for comparison,  are level  degeneracy       energy (Ha)  spin-orbit splitting 5s      2               -2.673078 5p1/2   2               -1.676933 5p3/2   4               -1.352138       0.3248 6s      2               -0.194573 5d3/2   4               -0.141779 5d5/2   6               -0.119933       0.0218 6p1/2   2               -0.050542 6p3/2   4               -0.031281       0.0193
 
@@ -5592,7 +5592,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v2/Input/t86.in">tests/v2/Input/t86.in</a>   
+### <a href="/tests/v2/Input/t86.in">tests/v2/Input/t86.in</a>   
 
 Ta,  single atom in a box (1k point). Same test as t84,  but with a different pseudopotential. Troullier pseudopotential. Same number of bands as test 84. Ecut (5Ha) and acell (12 Bohr) are NOT realistic.
 
@@ -5603,7 +5603,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v2/Input/t87.in">tests/v2/Input/t87.in</a>   
+### <a href="/tests/v2/Input/t87.in">tests/v2/Input/t87.in</a>   
 
 Ge liquid. Test of Nose and Langevin dynamics. 2 atoms in a cell. Allows 10 time steps.
 
@@ -5614,7 +5614,7 @@ Author(s): J.Y. Raty
 
 * * *
 
-###  <a href="/tests/v2/Input/t88.in">tests/v2/Input/t88.in</a>   
+### <a href="/tests/v2/Input/t88.in">tests/v2/Input/t88.in</a>   
 
 Basic test of geometry optimization for water First computing the ground state of a close configuration Uses 5 different methods to find the relaxed positions
 
@@ -5625,7 +5625,7 @@ Topic(s): [[topic:MolecularDynamics]], [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v2/Input/t90.in">tests/v2/Input/t90.in</a>   
+### <a href="/tests/v2/Input/t90.in">tests/v2/Input/t90.in</a>   
 
 H,  compressed simple cubic,  to test accurately RF in the metallic case. No linear XC core correction. The total energy of the 1-atom cell is -.559361014386 Ha The 2DTE with respect to a q(0 0 0) phonon is 4.6E-10 . The 2DTE with respect to a transverse q(1/2 0 0) phonon is 1.75340771040435E-02. The 2DTE with respect to a transverse q(1/4 0 0) phonon is 9.38555654208462E-03.
 
@@ -5635,7 +5635,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t91.in">tests/v2/Input/t91.in</a>   
+### <a href="/tests/v2/Input/t91.in">tests/v2/Input/t91.in</a>   
 
 H,  compressed simple cubic,  frozen-phonon calculations corresponding to test 90. No linear XC core correction. The total energy of the quadruple cell is -2.237444057546 Ha, in excellent agreement with the result of test 90. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/2 0 0) case gives 1.7535588d-2 . A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives 1.7534196d-2. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/4 0 0) case gives 9.386061d-3 . A better finite-difference scheme,  using a half displacement to cancel the finite-difference error,  gives 9.385565d-3 .
 
@@ -5645,7 +5645,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t92.in">tests/v2/Input/t92.in</a>   
+### <a href="/tests/v2/Input/t92.in">tests/v2/Input/t92.in</a>   
 
 Li,  simple cubic,  to test accurately RF in the metallic case. With non-linear XC core correction. The total energy of the 1-atom cell is -.29350020247929 Ha The 2DTE with respect to a q(0 0 0) phonon is 1.557063518d-7 . The 2DTE with respect to a transverse q(1/2 0 0) phonon is -0.1426599618 Ha. The 2DTE with respect to a transverse q(1/4 0 0) phonon is -0.6978404630E-01 Ha.
 
@@ -5655,7 +5655,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t93.in">tests/v2/Input/t93.in</a>   
+### <a href="/tests/v2/Input/t93.in">tests/v2/Input/t93.in</a>   
 
 Li,  simple cubic,  frozen-phonon calculations corresponding to test 92. The total energy of the quadruple cell is -1.1740008099174 Ha, in excellent agreement with the result of test 92. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/2 0 0) case gives -0.142648808 Ha . A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives -0.142653130 Ha . This is a bit better,  but not sufficiently. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/4 0 0) case gives -6.9781822d-2 Ha. A better finite-difference scheme,  using a half displacement to cancel the finite-difference error,  gives -6.9783661d-2 Ha.
 
@@ -5665,7 +5665,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t94.in">tests/v2/Input/t94.in</a>   
+### <a href="/tests/v2/Input/t94.in">tests/v2/Input/t94.in</a>   
 
 Ni,  simple cubic,  with a 4x4x4 grid,  many bands test RF in the metallic case. With non-linear XC core correction. q(1/2 0 0) The total energy of the 1-atom cell is -41.644007152348 Ha . The 2DTE with respect to a longitudinal q(1/2 0 0) phonon is 1.90867182 Ha .
 
@@ -5675,7 +5675,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t95.in">tests/v2/Input/t95.in</a>   
+### <a href="/tests/v2/Input/t95.in">tests/v2/Input/t95.in</a>   
 
 Ni,  supercell of simple cubic,  corresponding to test 94. The total energy of the double cell is -83.288014304694 Ha, in excellent agreement with the result of test 94. The frozen-phonon (from energies) calculation of the 2DTE for the q(1/2 0 0) case gives 1.903623 Ha . A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives 1.908658 Ha . The frozen-phonon (from forces) calculation of the 2DTE gives 1.8985 Ha. A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives 1.9086 Ha . The agreement is excellent.
 
@@ -5685,7 +5685,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t96.in">tests/v2/Input/t96.in</a>   
+### <a href="/tests/v2/Input/t96.in">tests/v2/Input/t96.in</a>   
 
 Li,  simple cubic,  to test accurately RF in the metallic case. With non-linear XC core correction and non-zero ecutsm and dilatmx. Similar to test 92,  except ecutsm and dilatmx,  and no q(1/4 0 0). The total energy of the 1-atom cell is -.29337493523588 Ha The 2DTE with respect to a q(0 0 0) phonon is 5.5619d-8 . The 2DTE with respect to a transverse q(1/2 0 0) phonon is -0.12068188927 Ha.
 
@@ -5695,7 +5695,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t97.in">tests/v2/Input/t97.in</a>   
+### <a href="/tests/v2/Input/t97.in">tests/v2/Input/t97.in</a>   
 
 Li,  simple cubic,  frozen-phonon calculations corresponding to test 96 (with non-zero ecutsm and dilatmx). The total energy of the double cell is -0.58674987047187 Ha, in excellent agreement with the result of test 96. The frozen-phonon (from energy) calculation of the 2DTE for the q(1/2 0 0) case gives -0.1206807 Ha . The frozen-phonon (from forces) calculation of the 2DTE for the q(1/2 0 0) case gives -0.1206794 Ha . Both are in rather good agreement with the result of test 96.
 
@@ -5705,7 +5705,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v2/Input/t98.in">tests/v2/Input/t98.in</a>   
+### <a href="/tests/v2/Input/t98.in">tests/v2/Input/t98.in</a>   
 
 Generate first-order responses for GaAs (zinc-blende). Compute responses at Gamma,  in the presence of a non-zero ecutsm and dilatmx. 1) ground state calculation,  with a k-point sampling in the irreducible Brillouin zone only; 2) computation of the ddk response,  in preparation to the electric field response; 3) computation of the dynamical matrix at Gamma,  as well as the Born effective charges,  and the dielectric tensor;
 
@@ -5715,7 +5715,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v2/Input/t99.in">tests/v2/Input/t99.in</a>   
+### <a href="/tests/v2/Input/t99.in">tests/v2/Input/t99.in</a>   
 
 Nb BCC along the Gamma-H direction Remnant of the bug search of winter 2000-2001.
 
@@ -5727,7 +5727,7 @@ Keywords(s): abinit, DFPT, NC
 
 ##  v3  
 
-###  <a href="/tests/v3/Input/t01.in">tests/v3/Input/t01.in</a>   
+### <a href="/tests/v3/Input/t01.in">tests/v3/Input/t01.in</a>   
 
 BCC Tantalum (1 atoms per unit cell), using the HGH pseudopotential,  within LDA. Fixed cell dimensions: 2 slightly different cell sizes. Use only one k point. Test whether the stress is correctly given,  even with spin-orbit coupling. Difference of total energies : 0.0000588977 Ha Difference of unit cell volume : 0.05861 Bohr^3 Stress from finite difference : 1.0049 Ha/Bohr^3 Average stress : 1.0062 Ha/Bohr^3
 
@@ -5738,7 +5738,7 @@ Author(s): M. Torrent, F. Jollet.
 
 * * *
 
-###  <a href="/tests/v3/Input/t02.in">tests/v3/Input/t02.in</a>   
+### <a href="/tests/v3/Input/t02.in">tests/v3/Input/t02.in</a>   
 
 Bi A7 structure (2 atoms per unit cell), using the HGH pseudopotential,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the response to atomic displacements, with and without spin-orbit. Perform first computation without spin-orbit. Datasets 1-3 : frozen-phonon,  without SO Datasets 4 : RF,  without SO the comparison between frozen-phonon from dataset 1 and 3 (2DTE=2.35465660) and RF from dataset 4(2DTE=2.35465792) is excellent. Dataset 5 : GS,  with nspinor=2,  but no spin-orbit yet. Dataset 6 : RF,  with nspinor=2,  but no spin-orbit yet. The agreement with nspinor=1 RF is excellent. Dataset 7-9 : frozen-phonon with spin-orbit Dataset 10 : RF with spin-orbit. The agreement is as good as without spin-orbit ! Frozen-phonon 2DTE=2.48156, RF 2DTE=2.48156 . NOTE : the old t02.in file,  which was giving troubles in v3.1.2 is now called t02a.in
 
@@ -5748,7 +5748,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t06.in">tests/v3/Input/t06.in</a>   
+### <a href="/tests/v3/Input/t06.in">tests/v3/Input/t06.in</a>   
 
 Linear chain of Ge2 molecules (2 atoms per unit cell), using a local (Starkloff-Joannopoulos) pseudopotential, and no exchange-correlation (ixc=0). Uses 4 k-points. Computation of the second derivative of the total energy with respect to a atomic displacement along the chain, with q(0 0 0) wavevector. Similar to test v2 #1,  except that it uses dilatmx=1.1 .
 
@@ -5758,7 +5758,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t07.in">tests/v3/Input/t07.in</a>   
+### <a href="/tests/v3/Input/t07.in">tests/v3/Input/t07.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and GGA. Similar to test 33 of v2. Use the x-only PBE functional. Compute the interatomic force constant for the displacement of the second atom along x. RF calculation of the 2DTE gives 189.10691 Ha while finite differences gives : with delta(xred)=0.0002,  189.10790 Ha with delta(xred)=0.0001,  189.10703 Ha . Combining the results gives 189.10675 Ha. The agreement is quite good,  and might likely be improved by increasing tolvrs.
 
@@ -5768,7 +5768,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t08.in">tests/v3/Input/t08.in</a>   
+### <a href="/tests/v3/Input/t08.in">tests/v3/Input/t08.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and GGA. Similar to test 33 of v2,  and preceeding test, but use the full XC PBE functional. Also,  tolvrs is better. Compute the interatomic force constant for the displacement of the second atom along x. RF calculation of the 2DTE gives 188.81162533 Ha while finite differences gives : with delta(xred)=0.0002,  188.81213804 Ha with delta(xred)=0.0001,  188.81175352 Ha . Combining the results gives 188.81162525 Ha.
 
@@ -5778,7 +5778,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t09.in">tests/v3/Input/t09.in</a>   
+### <a href="/tests/v3/Input/t09.in">tests/v3/Input/t09.in</a>   
 
 FCC Yb (1 atom per unit cell), using a l=3 psp with s local part. Crazy cut-off and number of k points. Shows that the derivative of the eigenenergies with respect to the wavevector can be obtained both by finite differences and analytical means (from a preliminary computation in the treatment of the ddk perturbation). For the (0.25, 0.25, 0.25) k point, the tenth band eigenvalue is -3.01209 eV. Going to the (0.251, 0.251, 0.251) k point it becomes -3.00562 eV,  with finite-difference estimation of the derivative with respect to ONE wavevector change (all three components changed) being 0.00647 eV/0.001/3=2.157 eV This value is unchanged when using the data at the (0.253, 0.253, 0.253) k point. The analytical value is 2.15566 eV.
 
@@ -5788,7 +5788,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t10.in">tests/v3/Input/t10.in</a>   
+### <a href="/tests/v3/Input/t10.in">tests/v3/Input/t10.in</a>   
 
 Si2 diatomic molecule. Spin-polarized (ferromagnetic). Test phonon RF for spin-polarized case. ixc=1 (Teter LSDA) From dataset 2 and 3,  one gets the derivatives with respect to the atomic displacement along x. The simple finite-difference formula gives the 2DTE 10.88934274 Ha,  while the direct computation, in dataset 4 gives 10.88933963 Ha . Cannot be executed in parallel chkinp: Checking input parameters for consistency,  jdtset= 3. --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -5798,7 +5798,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t11.in">tests/v3/Input/t11.in</a>   
+### <a href="/tests/v3/Input/t11.in">tests/v3/Input/t11.in</a>   
 
 Si2 diatomic molecule. Spin-polarized (ferromagnetic). Test phonon RF for spin-polarized case. ixc=7 (Perdew-Wang 92 LSDA) From dataset 2 and 3,  one gets the derivatives with respect to the atomic displacement along x. The simple finite-difference formula gives the 2DTE 10.88283478 Ha,  while the direct computation, in dataset 4 gives 10.882832 Ha . Cannot be executed in parallel --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -5808,7 +5808,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t12.in">tests/v3/Input/t12.in</a>   
+### <a href="/tests/v3/Input/t12.in">tests/v3/Input/t12.in</a>   
 
 H2 diatomic molecule. Spin-polarized (anti-ferromagnetic). Test phonon RF for spin-polarized case. ixc=1 (Teter LSDA) From datasets 3 and 4,  one gets the derivatives with respect to the atomic displacement along x. The simple finite-difference formula gives the 2DTE 6.283100652 Ha,  while the direct computation, without using Shubnikov symmetries,  gives 6.282967527 Ha.
 
@@ -5818,7 +5818,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t13.in">tests/v3/Input/t13.in</a>   
+### <a href="/tests/v3/Input/t13.in">tests/v3/Input/t13.in</a>   
 
 Bi A7 structure (2 atoms per unit cell), using the HGH pseudopotential,  within LDA. Fixed cell dimensions. Treated as a semi-conductor First dataset : compute the density Second dataset : compute the spinor wfs at one k point, non-self consistently Third dataset : use the spinor wfs of the previous dataset to restart computations at symmetric k points.
 
@@ -5828,7 +5828,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t14.in">tests/v3/Input/t14.in</a>   
+### <a href="/tests/v3/Input/t14.in">tests/v3/Input/t14.in</a>   
 
 Bi A7 structure (2 atoms per unit cell), using the HGH pseudopotential,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the response to atomic displacements, with spin-orbit. Should give the same answer than test 2,  except that the k point grid is now defined automatically. Dataset 8 : frozen-phonon with spin-orbit Dataset 10 : RF with spin-orbit. The agreement is as good as without spin-orbit ! Frozen-phonon 2DTE=2.48156, RF 2DTE=2.48156 . Warning : the output file of this test is machine-dependent,  although the final result is not. This is because the degeneracy of the GS wavefunctions with different spin orientation has not been broken.
 
@@ -5838,7 +5838,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t15.in">tests/v3/Input/t15.in</a>   
+### <a href="/tests/v3/Input/t15.in">tests/v3/Input/t15.in</a>   
 
 Fe FCC,  spin-polarized (ferro),  with only the Gamma point. Test spin-polarized GS and RF calculation,  at varying occupation number (occopt=4). Check acoustic sum rule.
 
@@ -5848,7 +5848,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t16.in">tests/v3/Input/t16.in</a>   
+### <a href="/tests/v3/Input/t16.in">tests/v3/Input/t16.in</a>   
 
 Si crystal. GGA + non-linear XC core correction. Compute the interatomic force constant for the displacement of the second atom along (111). RF calculation of the 2DTE gives 7.51663417 Ha while finite differences gives: with delta(xred)=0.0001,  7.15663267 Ha. The agreement is quite good,  and might likely be improved by combining finite differences. Also compute the ddk and electric field responses. The number of k points is much too small to obtain physical values,  but are quite comparable to the result of test v2 #6
 
@@ -5858,7 +5858,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t17.in">tests/v3/Input/t17.in</a>   
+### <a href="/tests/v3/Input/t17.in">tests/v3/Input/t17.in</a>   
 
 Si2 diatomic molecule. Spin-polarized (ferromagnetic). Test phonon RF for spin-polarized case. ixc=11 (PBE GGA) From dataset 2 and 3,  one gets the derivatives with respect to the atomic displacement along x. The simple finite-difference formula gives the 2DTE 10.56548267 Ha,  while the direct computation, in dataset 4 gives 10.565831 Ha . The difference is quite small,  but does NOT go away when a better finite-difference formula is used. TO BE EXAMINED ... Cannot be executed in parellel --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -5868,7 +5868,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t18.in">tests/v3/Input/t18.in</a>   
+### <a href="/tests/v3/Input/t18.in">tests/v3/Input/t18.in</a>   
 
 Orthorhombic Al system,  q(1/2 0 0),  partial occupation numbers. Compares with frozen-phonon calculations. Similar to test v2 #11,  except use of PBE GGA. Examine two cases: varying occupation numbers,  and fixed occupation numbers. A. Varying occupation numbers (occopt=4): RF calculation in dataset 5 gives 2DE equal to -4.053115 Ha,  while finite difference of "TOTAL" energy (datasets 6 and 7,  including entropy term) gives -4.0475002 Ha. This is fair,  BUT it does not improve with a better finite-difference,  so there is a problem. B. Fixed occupation numbers (occopt=2): RF calculation in dataset 8 gives 2DE equal to +5.394365 Ha,  while finite difference of total energy (no entropy term is present with occopt=2) gives +5.3998556 Ha This is fair,  BUT it does not improve with a better finite-difference,  so there is a problem. Then,  in dataset 11,  compute phonon frequencies at Gamma of the doubled cell. The 2DTE is 10.7997781 Ha,  which corresponds to 5.3998890 Ha,  so in much better agreement with the frozen-phonon calculation. TO BE UNDERSTOOD ...
 
@@ -5878,7 +5878,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t19.in">tests/v3/Input/t19.in</a>   
+### <a href="/tests/v3/Input/t19.in">tests/v3/Input/t19.in</a>   
 
 Fe,  one atom in a big box. Test spin-polarized GS and RF calculation,  at fixed occupation number. Check acoustic sum rule. The ecut is 18 Hartree. It seems quite low,  but gives phonon frequency of 3.83i cm-1,  which is quite small, while increasing it to 22 Ha or 26 Ha,  respectively, gives 4.73i cm-1 and 1.32i cm-1,  respectively.
 
@@ -5888,7 +5888,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t20.in">tests/v3/Input/t20.in</a>   
+### <a href="/tests/v3/Input/t20.in">tests/v3/Input/t20.in</a>   
 
 H diatomic molecule in the antiferromagnetic regime. Different data sets. Test Shubnikov symmetries.
 
@@ -5898,7 +5898,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t21.in">tests/v3/Input/t21.in</a>   
+### <a href="/tests/v3/Input/t21.in">tests/v3/Input/t21.in</a>   
 
 H based fake crystals. Test the recognition of several enantiomorph space groups : 76,  151,  152,  178 and 180.
 
@@ -5909,7 +5909,7 @@ Topic(s): [[topic:crystal]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>   
+### <a href="/tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>   
 
 Test different ways to obtain the NiO antiferromagnetic structure
 
@@ -5920,7 +5920,7 @@ Topic(s): [[topic:spinpolarisation]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>   
+### <a href="/tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups
 
@@ -5931,7 +5931,7 @@ Topic(s): [[topic:crystal]], [[topic:spinpolarisation]], [[topic:UnitCell]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>   
+### <a href="/tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the cubic space groups
 
@@ -5941,7 +5941,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t25.in">tests/v3/Input/t25.in</a>   
+### <a href="/tests/v3/Input/t25.in">tests/v3/Input/t25.in</a>   
 
 H based fake crystals. Test the generation and recognition of the triclinic and monoclinic space groups,  from spgroup 1 to 15.
 
@@ -5951,7 +5951,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t26.in">tests/v3/Input/t26.in</a>   
+### <a href="/tests/v3/Input/t26.in">tests/v3/Input/t26.in</a>   
 
 H based fake crystals. Test the generation and recognition of the orthorhombic space groups,  from spgroup 16 to 74.
 
@@ -5961,7 +5961,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t27.in">tests/v3/Input/t27.in</a>   
+### <a href="/tests/v3/Input/t27.in">tests/v3/Input/t27.in</a>   
 
 H based fake crystals. Test the generation and recognition of the tetragonal space groups,  from spgroup 75 to 142.
 
@@ -5971,7 +5971,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>   
+### <a href="/tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>   
 
 H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194.
 
@@ -5981,7 +5981,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t29.in">tests/v3/Input/t29.in</a>   
+### <a href="/tests/v3/Input/t29.in">tests/v3/Input/t29.in</a>   
 
 H based fake crystals. Test the generation and recognition of the cubic space groups,  from spgroup 195 to 230.
 
@@ -5991,29 +5991,29 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t30.in">tests/v3/Input/t30.in</a>   
+### <a href="/tests/v3/Input/t30.in">tests/v3/Input/t30.in</a>   
 
 Si in 2-atom diamond unit cell (nkpt 2;  ecut 6) In dataset 1,  ABINIT finds the ground state KS wavefunctions (tolwfr 1.0d-16). the eigenvectors necessary for the GW calculation being stored in _WFK. In dataset 2,  ABINIT computes the eps^-1 matrix (optdriver 3) nband 10) for the GW calculation and stores it in _SCR. In dataset 3-6,  ABINIT computes the GW correction for bands 4 and 5 with different plasmon-pole models.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:GW]]  
 
 
 * * *
 
-###  <a href="/tests/v3/Input/t31.in">tests/v3/Input/t31.in</a>   
+### <a href="/tests/v3/Input/t31.in">tests/v3/Input/t31.in</a>   
 
 SiC in zinc-blende structure (nkpt 2;  ecut 6) In dataset 1,  ABINIT finds the ground state wavefunctions (tolwfr 1.0d-16) the eigenvectors necessary for the GW calculation being stored in _WFK. In dataset 2,  ABINIT computes the eps^-1 matrix (optdriver 3,  nband 10) for the GW calculation and stores it in _SCR. In dataset 3,  ABINIT computes the GW correction for bands 4 and 5
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:GW]]  
 
 
 * * *
 
-###  <a href="/tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>   
+### <a href="/tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the triclinic and monoclinic space groups
 
@@ -6023,7 +6023,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>   
+### <a href="/tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part I)
 
@@ -6033,7 +6033,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>   
+### <a href="/tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part II)
 
@@ -6043,7 +6043,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>   
+### <a href="/tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part III)
 
@@ -6053,7 +6053,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>   
+### <a href="/tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part I)
 
@@ -6063,7 +6063,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>   
+### <a href="/tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part II)
 
@@ -6073,7 +6073,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>   
+### <a href="/tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups
 
@@ -6083,7 +6083,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t39.in">tests/v3/Input/t39.in</a>   
+### <a href="/tests/v3/Input/t39.in">tests/v3/Input/t39.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups
 
@@ -6094,7 +6094,7 @@ Topic(s): [[topic:crystal]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t40.in">tests/v3/Input/t40.in</a>   
+### <a href="/tests/v3/Input/t40.in">tests/v3/Input/t40.in</a>   
 
 8 atoms of Si in an elongated box. 4 of them are fixed,  while atoms 5 and 6 and 7 and 8 are grouped by pair,  such as the sum of their relative separations along y is constrained to 8.0 . This is a crazy constraint,  just to show that it can be done !
 
@@ -6106,7 +6106,7 @@ Author(s): S. Erwin
 
 * * *
 
-###  <a href="/tests/v3/Input/t42.in">tests/v3/Input/t42.in</a>   
+### <a href="/tests/v3/Input/t42.in">tests/v3/Input/t42.in</a>   
 
 Magnesium HCP. Optimize the cell volume and shape using different constraints. Checks whether the stresses are symmetric,  and whether the optimisation algorithm does not break the symmetry.
 
@@ -6117,7 +6117,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t43.in">tests/v3/Input/t43.in</a>   
+### <a href="/tests/v3/Input/t43.in">tests/v3/Input/t43.in</a>   
 
 No description available
 
@@ -6128,7 +6128,7 @@ Topic(s): [[topic:TuningSpeed]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t45.in">tests/v3/Input/t45.in</a>   
+### <a href="/tests/v3/Input/t45.in">tests/v3/Input/t45.in</a>   
 
 8 Silicon atoms + 1 interstitial Mg atom. Try to get the inner bands (close to the Fermi energy), not the lower ones,  thanks to wfoptalg=2. It works,  but it does not seem very efficient. Still subject of study.
 
@@ -6138,7 +6138,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t46.in">tests/v3/Input/t46.in</a>   
+### <a href="/tests/v3/Input/t46.in">tests/v3/Input/t46.in</a>   
 
 2 Silicon atoms,  in a diamond structure. Test the computation of the DOS,  using the linear tetrahedron method.
 
@@ -6149,7 +6149,7 @@ Topic(s): [[topic:ElecDOS]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t47.in">tests/v3/Input/t47.in</a>   
+### <a href="/tests/v3/Input/t47.in">tests/v3/Input/t47.in</a>   
 
 Fe2 dimer in a big box,  treated with non-collinear magnetism. First dataset is the metallic treatment,  second dataset is a fixed occupation number treatment. Dataset 3 to 5 start from other initial magnetization direction Only 5 or 2 steps. The run is not invariant against changing the initial magnetization direction. If the wavefunctions were completely optimized in the first fixed potential,  the run should be invariant ...
 
@@ -6160,7 +6160,7 @@ Author(s): G. Zerah
 
 * * *
 
-###  <a href="/tests/v3/Input/t48.in">tests/v3/Input/t48.in</a>   
+### <a href="/tests/v3/Input/t48.in">tests/v3/Input/t48.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and the HTCH GGA. Compute the total energy and force as a displacement of the second atom along x. Direct calculation of the gradient with respect to reduced coordinates gives -2.927435141005 Ha while finite differences gives : with delta(xred)=0.0002,  -2.9274480325 Ha with delta(xred)=0.0001,  -2.9274332229 Ha . Combining the results gives -2.9274351408 Ha. Excellent.
 
@@ -6170,7 +6170,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t49.in">tests/v3/Input/t49.in</a>   
+### <a href="/tests/v3/Input/t49.in">tests/v3/Input/t49.in</a>   
 
 Si2 diatomic molecule. Spin-polarized (ferromagnetic). Test the HTCH GGA functional. Direct calculation of the gradient with respect to reduced coordinates gives  0.244706637148 Ha while finite differences gives : with delta(xred)=0.002,  -0.2447071033 Ha Better finite-difference estimation leads to better agreement. Cannot be executed in parallel. --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -6180,7 +6180,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t50.in">tests/v3/Input/t50.in</a>   
+### <a href="/tests/v3/Input/t50.in">tests/v3/Input/t50.in</a>   
 
 Mg atom,  in a big box,  displaced from the center, test different k points with time-reversal symmetry,  and different fftalg values (4xx) corresponding to the 2002 FFT of SGoedecker.
 
@@ -6190,7 +6190,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t51.in">tests/v3/Input/t51.in</a>   
+### <a href="/tests/v3/Input/t51.in">tests/v3/Input/t51.in</a>   
 
 Fe BCC crystal. Constraint the magnetic moment,  using the input variable spinmagntarget.
 
@@ -6201,7 +6201,7 @@ Topic(s): [[topic:spinpolarisation]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t52.in">tests/v3/Input/t52.in</a>   
+### <a href="/tests/v3/Input/t52.in">tests/v3/Input/t52.in</a>   
 
 Bulk Aluminium,  FCC,  with 2 special points,  occopt=4 and tsmear=0.05 . Same as test v1 #1,  except use different energy and length units. Test the use of dimensional input variables.
 
@@ -6211,7 +6211,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t53.in">tests/v3/Input/t53.in</a>   
+### <a href="/tests/v3/Input/t53.in">tests/v3/Input/t53.in</a>   
 
 O2 molecule,  treated like a metal (there is a degeneracy at the Fermi level),  occopt=4 and tsmear=0.04,  with nsppol=2 . Use spinat to polarize the molecule at start. Same as test v1 #8,  except use different energy and length units. Test the use of dimensional and logical input variables.
 
@@ -6221,7 +6221,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t54.in">tests/v3/Input/t54.in</a>   
+### <a href="/tests/v3/Input/t54.in">tests/v3/Input/t54.in</a>   
 
 (HeH)+ in a big box. Computation of oscillator strengths, in the TDxOEP/xOEP approximation. Use a different geometry than in test 42 of test/v2. The Thomas-Reiche-Kuhn sum rule (sum of oscillator strengths should be the number of electrons,  that is,  two in this case) should be valid,  since we are using local pseudopotentials. However,  the number of bands needed to get it is huge : nbands     sum rule 20         1.34   (present case) 30         1.45 40         1.61 60         1.68 80         1.74 100        1.77 120        1.82 160        1.88 200        1.90 240        1.92
 
@@ -6231,7 +6231,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t55.in">tests/v3/Input/t55.in</a>   
+### <a href="/tests/v3/Input/t55.in">tests/v3/Input/t55.in</a>   
 
 N2 molecule non-spin-polarized,  in a big box. Compute excitation energies,  as well as Cauchy coefficients. The Cauchy (-2) coefficient is the low-frequency optical polarisability. The present test uses a small box (6x5x5 Angstrom), a small energy cut-off (25 Ha),  and only 12 states. Two different exchange-correlation functionals are treated : ixc=1 (Teter93), and ixc=7 (PW92). Experimental values are taken from Goerling at al, J. Chem. Phys. 110,  2785 (1999)). Experimental values for the singlet excitation energies are : 1pi_g 9.31eV  1sig_u- 9.92eV  1del_u 10.27eV The present test gives 1pi_g 9.47eV  1sig_u- 9.91eV  1del_u 10.45eV With a larger box (8x7x7) 1pi_g 9.33eV  1sig_u- 9.84eV  1del_u 10.38eV With a larger cutoff (60Ha) 1pi_g 9.38eV  1sig_u- 9.77eV  1del_u 10.31eV With a larger number of states (30) 1pi_g 9.44eV  1sig_u- 9.91eV  1del_u 10.45eV Experimental values for the Cauchy coefficients are: (These values should be updated,  the real ones are smaller by a few percent,  because a buffer has been introduced in tddft.f) (-2) 11.74au,  (-4) 30.11au,  (-6) 101.8au The present test gives (-2) 8.012au,  (-4) 27.83au,  (-6) 108.4au With a larger box (8x7x7) (-2) 7.112au,  (-4) 25.51au,  (-6) 102.2au With a larger cutoff (60Ha) (-2) 7.717au,  (-4) 26.87au,  (-6) 104.6au With a larger number of states (30) (-2) 11.70au,  (-4) 34.56au,  (-6) 123.3au (The larger number of states is important to give reasonable values ...) Experimental values for the triplet excitation energies are : 3pi_g 7.75eV  3sig_u+ 8.04eV  3del_u 8.88eV 3sig_u- 9.67eV 3pi_u 11.19eV The present test gives 3pi_g 7.83eV  3sig_u+ 8.11eV  3del_u 9.06eV 3sig_u- 9.91eV 3pi_u 10.91eV With a larger box (8x7x7) 3pi_g 7.70eV  3sig_u+ 8.13eV  3del_u 9.04eV 3sig_u- 9.85eV 3pi_u 10.71eV With a larger cutoff (60Ha) 3pi_g 7.73eV  3sig_u+ 7.88eV  3del_u 8.88eV 3sig_u- 9.77eV 3pi_u 10.44eV With a larger number of states (30) 3pi_g 7.83eV  3sig_u+ 8.04eV  3del_u 9.04eV 3sig_u- 9.91eV 3pi_u 10.90eV Note that the use of the PW92 functional instead of the Teter93 functional does not affect the singlet values, but have some effects on the triplet values: they change from 3pi_g 7.83eV  3sig_u+ 8.11eV  3del_u 9.06eV 3sig_u- 9.91eV 3pi_u 10.91eV to 3pi_g 7.85eV  3sig_u+ 8.16eV  3del_u 9.08eV 3sig_u- 9.91eV 3pi_u 10.93eV In the Goerling paper,  still another functional was used, the Vosko-Wilk-Nussair one, whose spin dependence is not very accurate,  hence the large differences for the triplet states. When this functional will be coded in ABINIT,  it will be worth to complete the present test.
 
@@ -6242,7 +6242,7 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t56.in">tests/v3/Input/t56.in</a>   
+### <a href="/tests/v3/Input/t56.in">tests/v3/Input/t56.in</a>   
 
 MgO FCC crystal,  with low cut-off,  and 32 k points. Pseudopotentials WITHOUT a non-linear core correction. Prepare the Bader density analysis
 
@@ -6253,7 +6253,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t57.in">tests/v3/Input/t57.in</a>   
+### <a href="/tests/v3/Input/t57.in">tests/v3/Input/t57.in</a>   
 
 MgO FCC crystal,  Bader analysis. Examine the Oxygen atom only. Determine correctly 18 bonding critical points, 24 ring critical points,  and 8 cage critical points. (In agreement with Euler's relation : #BCP-#RCP+#CCP=2) The bonding critical points are quite accurate, while for the ring critical points,  the criteria defined by the input variables lstep and lgrad are not fulfilled for all the CP. The coordinates are rather inaccurate. In particular,  the symmetry between RCP is broken. This is seen the most clearly at the level of the laplacian eigenvalues. This breaking of symmetry naturally originates from the fact that the FFT grid is not symmetric (the lattice was chosen primitive FCC), so that the finite elements used for the interpolation are also not symmetric. This cannot be improved by just tuning the numerical parameters. Instead,  one should consider the Bader analysis in a FCC conventional cell,  instead of the primitive one. Get 2 core electrons,  7.6796 valence electrons. The nucleus charge is +8. The Oxygen atom-in-molecule has a net charge of -1.6796.
 
@@ -6264,7 +6264,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t58.in">tests/v3/Input/t58.in</a>   
+### <a href="/tests/v3/Input/t58.in">tests/v3/Input/t58.in</a>   
 
 Diamond Si in an orthorhombic cell,  in preparation of cut3d analysis,  see test 59.
 
@@ -6275,7 +6275,7 @@ Author(s): JF. Briere
 
 * * *
 
-###  <a href="/tests/v3/Input/t59.in">tests/v3/Input/t59.in</a>   
+### <a href="/tests/v3/Input/t59.in">tests/v3/Input/t59.in</a>   
 
 Analysis of the output WF of the preceeding test by cut3d : output the wavefunction for second k point,  third band.
 
@@ -6286,7 +6286,7 @@ Author(s): JF. Briere
 
 * * *
 
-###  <a href="/tests/v3/Input/t60.in">tests/v3/Input/t60.in</a>   
+### <a href="/tests/v3/Input/t60.in">tests/v3/Input/t60.in</a>   
 
 NaCl FCC crystal,  with low cut-off,  and 32 k points. Prepare the Hirshfeld density analysis.
 
@@ -6296,7 +6296,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t61.in">tests/v3/Input/t61.in</a>   
+### <a href="/tests/v3/Input/t61.in">tests/v3/Input/t61.in</a>   
 
 NaCl FCC crystal. Perform Hirshfeld analysis of the density file generated by test 60.
 
@@ -6306,7 +6306,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v3/Input/t62.in">tests/v3/Input/t62.in</a>   
+### <a href="/tests/v3/Input/t62.in">tests/v3/Input/t62.in</a>   
 
 Si diamond. Usual geometry,  psps. Low ecut (3 Ha) With a 4x4x4 k point grid (!only one shift,  but OK because symmetry is imposed). Then,  non-self-consistent calculation for k points that have special istwfk values,  for further analysis by cut3d in the next tests.
 
@@ -6316,7 +6316,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t63.in">tests/v3/Input/t63.in</a>   
+### <a href="/tests/v3/Input/t63.in">tests/v3/Input/t63.in</a>   
 
 Analysis of the output WF of the preceeding test by cut3d : output the wavefunction for 0 0 0),  1st band
 
@@ -6326,7 +6326,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v3/Input/t64.in">tests/v3/Input/t64.in</a>   
+### <a href="/tests/v3/Input/t64.in">tests/v3/Input/t64.in</a>   
 
 Analysis of the output WF of the preceeding test by cut3d : output the wavefunction for (1/2 0 0),  2nd band
 
@@ -6336,7 +6336,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v3/Input/t65.in">tests/v3/Input/t65.in</a>   
+### <a href="/tests/v3/Input/t65.in">tests/v3/Input/t65.in</a>   
 
 One aluminum atom in a big box. For further analysis by cut3d in the next tests.
 
@@ -6346,7 +6346,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t66.in">tests/v3/Input/t66.in</a>   
+### <a href="/tests/v3/Input/t66.in">tests/v3/Input/t66.in</a>   
 
 Analysis of the output WFs of the preceeding test by cut3d : angular analysis. istwfk=1
 
@@ -6356,7 +6356,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v3/Input/t67.in">tests/v3/Input/t67.in</a>   
+### <a href="/tests/v3/Input/t67.in">tests/v3/Input/t67.in</a>   
 
 Analysis of the output WFs of the test#66 by cut3d : angular analysis. istwfk/=1
 
@@ -6366,7 +6366,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v3/Input/t70.in">tests/v3/Input/t70.in</a>   
+### <a href="/tests/v3/Input/t70.in">tests/v3/Input/t70.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and GGA. Similar to test 8 of v3 but use the revPBE XC functional. Compute the interatomic force constant for the displacement of the second atom along x. RF calculation of the 2DTE gives 188.66748730880 Ha while finite differences gives : with delta(xred)=0.0002,  188.66799915 Ha with delta(xred)=0.0001,  188.66761529 Ha . Combining the results gives 188.66748734 Ha. Excellent.
 
@@ -6376,7 +6376,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t71.in">tests/v3/Input/t71.in</a>   
+### <a href="/tests/v3/Input/t71.in">tests/v3/Input/t71.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and GGA. Similar to test 8 of v3 but use the RPBE XC functional. Compute the interatomic force constant for the displacement of the second atom along x. RF calculation of the 2DTE gives 188.92567363225 Ha while finite differences gives : with delta(xred)=0.0002,  188.92618485 Ha with delta(xred)=0.0001,  188.92580145 Ha Combining the results gives 188.92567365 Ha Excellent
 
@@ -6386,7 +6386,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t72.in">tests/v3/Input/t72.in</a>   
+### <a href="/tests/v3/Input/t72.in">tests/v3/Input/t72.in</a>   
 
 H,  compressed simple cubic,  to test accurately RF in the GGA with non-zero q. Similar to Tv2#90,  except for GGA. No linear XC core correction. The total energy of the 1-atom cell is -0.56144810109 Ha The 2DTE with respect to a q(0 0 0) phonon is 4.3E-6 . The 2DTE with respect to a transverse q(1/2 0 0) phonon is  2.076817E-02 . The 2DTE with respect to a transverse q(1/4 0 0) phonon is 1.105266E-02.
 
@@ -6396,7 +6396,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t73.in">tests/v3/Input/t73.in</a>   
+### <a href="/tests/v3/Input/t73.in">tests/v3/Input/t73.in</a>   
 
 H,  compressed simple cubic,  frozen-phonon calculations corresponding to test 72. No linear XC core correction. The total energy of the quadruple cell is -2.2457924013451 Ha, in excellent agreement with the result of test 72. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/2 0 0) case gives 2.0769790d-2 . A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives 2.076834d-2. The frozen-phonon (from forces) calculation of the 2DTE for the q(1/4 0 0) case gives 1.105321d-2 . A better finite-difference scheme,  using a doubled displacement to cancel the finite-difference error,  gives 1.105275d-2 .
 
@@ -6406,7 +6406,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v3/Input/t74.in">tests/v3/Input/t74.in</a>   
+### <a href="/tests/v3/Input/t74.in">tests/v3/Input/t74.in</a>   
 
 O2 (non-spin-polarized,  non-linear XC core correction,  LDA) Fixed occupation numbers This is to demonstrate a subtlety of the analysis of finite differences : the effect of the symmetrization. In dataset 1-3,  one computes the total energy and forces, with automatic computation of symmetries,  including symmetrization of the forces (or reduced gradients). The reduced gradients with respect to displacements of the first atom along z in datasets 1 and 3 are -5.705435136802 Ha and -5.692472863816 Ha,  giving the 2DTE of 129.62 Ha. In dataset 4,  the RF 2DTE is computed,  and the agreement with finite-differences of datasets 1 and 3 is quite bad: 127.90998027 Ha,  1.5% error ! However,  the agreement with the finite differences of forces in datasets 5 and 6 (-5.705349696912 Ha and -5.692558689744 Ha),  where the symmetrization of forces is not done,  is excellent : the finite-difference gives 127.91007168 Ha,  less than 0.0001 Ha error. Explanation : forces in the geometry of datasets 1, 3, 5 and 6 are not really symmetric,  because of the underlying FFT grid, used for the evaluation of the XC functional ! This can be seen in the fulfillment of the acoustic sum rule. With the present low-cutoff,  the frequency of the acoustic mode is 264i cm-1,  a strong breaking of the sum rule. With 20Ha, the frequency is 43.18 cm-1,  much better. Other values : 25 Ha,  19.03i cm-1, 30 Ha,  21.02i cm-1, 35 Ha,  20.14i cm-1, 50 Ha,   3.57  cm-1 Note the (misleading) plateau between 25 Ha and 35 Ha : the convergence towards 0 cm-1 start again only beyond 35 Ha. The influence of the FFT grid depends strongly on the pseudopotential.
 
@@ -6416,7 +6416,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t75.in">tests/v3/Input/t75.in</a>   
+### <a href="/tests/v3/Input/t75.in">tests/v3/Input/t75.in</a>   
 
 O2 (non-spin-polarized,  non-linear XC core correction,  LDA) Metallic occupation numbers. For metallic occupation numbers, RF computation of 2DTE at Gamma,  when taking Fermi energy changes (frzfermi=0),  will give the same answer than finite-difference of GS computations. However,  prior to v4.4,  the change of Fermi energy due to the perturbation was not computed. This corresponds to calculations performed with frzfermi=1 (should be used only for testing purposes). In dataset 1-3,  one computes the total energy and forces, without symmetries,  as it should be for accurate finite-difference tests. The reduced gradients with respect to displacements of the first atom along z in datasets 1 and 3 are -5.705344113253 Ha and -5.692553418498 Ha,  giving the 2DTE of 127.90 Ha. In dataset 4,  RF is computed with the Fermi energy correction, and the agreement with finite-differences of datasets 1 and 3 is good : one gets 127.9068 Ha . In dataset 5,  RF is computed with frozen Fermi energy and the disagreement with finite-differences of datasets 1 and 3 is large: one gets 100.9991668 Ha .
 
@@ -6426,7 +6426,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t76.in">tests/v3/Input/t76.in</a>   
+### <a href="/tests/v3/Input/t76.in">tests/v3/Input/t76.in</a>   
 
 Al2 molecule in a big box. Treat 8 bands,  occupied using occopt=4. Similar to test 36 of v2,  except use PBE GGA. For a metallic occopt,  the frozen-phonon (finite-difference) approach is strictly equivalent to the RF approach only at q/=Gamma. Here,  computes the result at q=(0 0 1/2). With delta(xred)=0.0001 (DATASET 5),  one gets delta(etot)/delta(xred)=0.41050702 . The direct computation of 2DTE at the target geometry gives 0.410506 .
 
@@ -6436,7 +6436,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t77.in">tests/v3/Input/t77.in</a>   
+### <a href="/tests/v3/Input/t77.in">tests/v3/Input/t77.in</a>   
 
 BaO crystal. Computation of band-by-band decomposition of Born effective charges. Also,  computation of the electronic localization tensor, and its band-by-band decomposition.
 
@@ -6447,7 +6447,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v3/Input/t78.in">tests/v3/Input/t78.in</a>   
+### <a href="/tests/v3/Input/t78.in">tests/v3/Input/t78.in</a>   
 
 Aluminum FCC. Only one k point. Preparation of the conductivity test number 79. Of course,  1 k point is much to small to allow to get the correct conductivity, but it is for testing purposes only.
 
@@ -6458,18 +6458,18 @@ Author(s): V. Recoules
 
 * * *
 
-###  <a href="/tests/v3/Input/t79.in">tests/v3/Input/t79.in</a>   
+### <a href="/tests/v3/Input/t79.in">tests/v3/Input/t79.in</a>   
 
 Aluminum FCC : test the conductivity. Only for testing purposes : no physical meaning !!
 
 Executable: conducti   
-Keywords(s): conducti, NC   
+Keywords(s): NC, conducti   
 Author(s): V. Recoules  
 
 
 * * *
 
-###  <a href="/tests/v3/Input/t80.in">tests/v3/Input/t80.in</a>   
+### <a href="/tests/v3/Input/t80.in">tests/v3/Input/t80.in</a>   
 
 H2 molecule : examine the rotational freedom. The present test produces the following vibrational frequencies (with degeneracies indicated): 56.89 i cm-1 (2) 0.41   cm-1 (2) 1.05   cm-1 3800    cm-1 The large frequency corresponds to the stretching mode,  and has the right order of magnitude. The frequencies close to 1 cm-1 corresponds to translation modes,  and are small enough for usual applications. The  56.89 i cm-1 mode corresponds to rotation of the H2 molecule. The magnitude of this frequency might seem quite large. Here are the results of tests made to understand this phenomenon. First,  note that ecut 12  acell 3*14 Increasing the value of ecut to 25 decreases the magnitude of the frequency to 36.8 cm-1 . However,  in order to continue to make it smaller, the cell size must be increased,  and an oscillatory behaviour is observed : 3*16   45.6 i cm-1 3*18   22.7   cm-1 3*20   19.1 i cm-1 3*22   15.7 i cm-1 3*24   13.7   cm-1 Many other tests have been set up. In particular, it was observed that the frequency of the oscillatory behaviour changes with the ecut,  and also that using the Gamma point,  instead of the 1/4 1/4 1/4 k point (used in this test) degrades the convergence. The overall picture is as follows. There are different reasons for the translation and rotation modes to acquire a non-zero frequency when plane waves and supercells are used. Still,  as concerns translations,  only the existence of a discretization of the XC grid is important. For rotations,  supercell effects are also present : - alignement of dipole or quadrupoles - interaction between tails of wavefunctions,  accross cells Since the convergence in supercell size is oscillatory,  we infer that the breaking of the rotational invariance is mostly due to interaction between wavefunction tails. This will be checked by confining the system in a spherical well,  in a forthcoming test.
 
@@ -6479,7 +6479,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t81.in">tests/v3/Input/t81.in</a>   
+### <a href="/tests/v3/Input/t81.in">tests/v3/Input/t81.in</a>   
 
 Ice VIII (H2O centered tetragonal),  with only the Gamma point,  and a low ecut,  and small number of steps. Test GS and RF (only one perturbation). This is to check that local and non-local (so,  varying number of projectors) psps can be merged LDA
 
@@ -6490,7 +6490,7 @@ Author(s): D. Klug
 
 * * *
 
-###  <a href="/tests/v3/Input/t82.in">tests/v3/Input/t82.in</a>   
+### <a href="/tests/v3/Input/t82.in">tests/v3/Input/t82.in</a>   
 
 Ice VIII (H2O centered tetragonal),  with only the Gamma point,  and a low ecut,  and small number of steps. Test GS and RF (only one perturbation). This is to check that local and non-local (so,  varying number of projectors) psps can be merged. Same as test 81,  except GGA. Note that the underlying FFT grid does not respect the symmetry of the lattice. Contirbuted by
 
@@ -6501,7 +6501,7 @@ Author(s): D. Klug
 
 * * *
 
-###  <a href="/tests/v3/Input/t83.in">tests/v3/Input/t83.in</a>   
+### <a href="/tests/v3/Input/t83.in">tests/v3/Input/t83.in</a>   
 
 AlAs (zinc-blende structure). Compute different response functions,  then perform a computation of 3rd derivative of total energy. (to be described in more detail)
 
@@ -6512,7 +6512,7 @@ Topic(s): [[topic:nonlinear]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t84.in">tests/v3/Input/t84.in</a>   
+### <a href="/tests/v3/Input/t84.in">tests/v3/Input/t84.in</a>   
 
 Bi A7 structure (2 atoms per unit cell),  using the HGH pseudopotential,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the response to atomic displacements,  and electric field,  without spin-orbit. Check the invariance with respect to cartesian coordinates. Datasets 1-3 : GS,  ddk,  phonon+ elfd with the trigonal axis aligned with z Datasets 4-6 : GS,  ddk,  phonon+ elfd with the trigonal axis aligned with (111) In v3.3 and previous,  there was an error of sign in cart29.f,  for the off-diagonal elements of the dielectric tensor. The present dielectric tensor gives (z dir)    perp     5.998365  parallel  5.606745 (111 dir)  diagonal 5.867825  off-diag -0.130540 This is coherent: perp=diagonal-off-diag,  para=diagonal+2*off-diag
 
@@ -6522,7 +6522,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v3/Input/t85.in">tests/v3/Input/t85.in</a>   
+### <a href="/tests/v3/Input/t85.in">tests/v3/Input/t85.in</a>   
 
 NiTi simple cubic (RockSalt) Metallic. Different mems are zero. The second perturbation does not converge well ! Should be improved.
 
@@ -6533,7 +6533,7 @@ Author(s): M. Tijssens
 
 * * *
 
-###  <a href="/tests/v3/Input/t86.in">tests/v3/Input/t86.in</a>   
+### <a href="/tests/v3/Input/t86.in">tests/v3/Input/t86.in</a>   
 
 Si diamond Spin-polarized calculation (nspden=2) RF phonon with q=0.5 0 0
 
@@ -6544,18 +6544,18 @@ Author(s): T. Hasegawa
 
 * * *
 
-###  <a href="/tests/v3/Input/t87.in">tests/v3/Input/t87.in</a>   
+### <a href="/tests/v3/Input/t87.in">tests/v3/Input/t87.in</a>   
 
 Test on splitting screening calculation using nqptdm and qptdm Si in 2-atom diamond unit cell (nkpt 2;  ecut 6) In dataset 1,  ABINIT finds the ground state (tolwfr 1.0d-16) the eigenvectors necessary for the GW calculation being stored in _WFK. In datasets 2-4,  ABINIT computes the eps^-1 matrix for 1 qpt,  2 qpts,  3qpts respectively
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): R. Shaltaf  
 
 
 * * *
 
-###  <a href="/tests/v3/Input/t88.in">tests/v3/Input/t88.in</a>   
+### <a href="/tests/v3/Input/t88.in">tests/v3/Input/t88.in</a>   
 
 Test of mrgscr utility Merging the screening files already generated in the test 87 in a single file.
 
@@ -6566,7 +6566,7 @@ Author(s): R. Shaltaf
 
 * * *
 
-###  <a href="/tests/v3/Input/t89.in">tests/v3/Input/t89.in</a>   
+### <a href="/tests/v3/Input/t89.in">tests/v3/Input/t89.in</a>   
 
 Test of mrgscr utility mrgscr is used here to check the status of screening file (from test 88), what is there and what is needed.
 
@@ -6577,7 +6577,7 @@ Author(s): R. Shaltaf
 
 * * *
 
-###  <a href="/tests/v3/Input/t90.in">tests/v3/Input/t90.in</a>   
+### <a href="/tests/v3/Input/t90.in">tests/v3/Input/t90.in</a>   
 
 Test of mrgscr utility. Option for q-point recovery
 
@@ -6588,7 +6588,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v3/Input/t91.in">tests/v3/Input/t91.in</a>   
+### <a href="/tests/v3/Input/t91.in">tests/v3/Input/t91.in</a>   
 
 Test of mrgscr utility Merging the screening files already generated in the test 87 in a single file.
 
@@ -6599,7 +6599,7 @@ Author(s): R. Shaltaf
 
 * * *
 
-###  <a href="/tests/v3/Input/t92.in">tests/v3/Input/t92.in</a>   
+### <a href="/tests/v3/Input/t92.in">tests/v3/Input/t92.in</a>   
 
 Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms (well,  with no mixing,  just for a test) Computation of the second derivative of the total energy with respect to a atomic displacement perpendicular to the chain,  with q(0 0 1/2) wavevector. The first psp is Si,  the second one is Ge,  but the mixing coefficients are 1.0 and 0.0 . See test 4 of v2,  except with alchemy.
 
@@ -6610,7 +6610,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t93.in">tests/v3/Input/t93.in</a>   
+### <a href="/tests/v3/Input/t93.in">tests/v3/Input/t93.in</a>   
 
 Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Ge,  the second one is Si,  but the mixing coefficients are 0.0 and 1.0 . See previous test,  except GS only,  and the two atoms are switched.
 
@@ -6621,7 +6621,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t94.in">tests/v3/Input/t94.in</a>   
+### <a href="/tests/v3/Input/t94.in">tests/v3/Input/t94.in</a>   
 
 Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Si,  the mixing coefficients are 0.2 and 0.8,  then,  in a second dataset,  they are 0.5 and 0.5 . Should give same numerical results as the previous test.
 
@@ -6632,7 +6632,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t95.in">tests/v3/Input/t95.in</a>   
+### <a href="/tests/v3/Input/t95.in">tests/v3/Input/t95.in</a>   
 
 Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Ge,  the mixing coefficients are 0.2 and 0.8,  then 0.5 and 0.5,  then 0.001 and 0.999 .
 
@@ -6643,7 +6643,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t96.in">tests/v3/Input/t96.in</a>   
+### <a href="/tests/v3/Input/t96.in">tests/v3/Input/t96.in</a>   
 
 Linear chain of X2 molecules (2 atoms per unit cell), using alchemical atoms,  GS only. The first psp is Si,  the second one is Ge,  the mixing coefficients are 0.5 and 0.5 . The pseudopotentials differ from the ones of test #93 .
 
@@ -6654,7 +6654,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v3/Input/t97.in">tests/v3/Input/t97.in</a>   
+### <a href="/tests/v3/Input/t97.in">tests/v3/Input/t97.in</a>   
 
 Fake MoSixO(1-x) molecule along the diagonal of a cube, using alchemical pseudopotentials. Si and O are not isovalent,  so might not be physically meaningful. 4 pairs of mixing coefficients are studied,  including one for which the occupation numbers becomes fractionary.
 
@@ -6667,7 +6667,7 @@ Topic(s): [[topic:AtomTypes]]
 
 ##  v4  
 
-###  <a href="/tests/v4/Input/t01.in">tests/v4/Input/t01.in</a>   
+### <a href="/tests/v4/Input/t01.in">tests/v4/Input/t01.in</a>   
 
 1. Si diamond. Usual geometry,  k points,  psps. One of the two atoms is displaced in order to have non-zeroforces. Test whether energy and forces (and soon stresses) are correctly given,  even with use of spherical harmonics. Perform first computation with the use of Legendre polynomials; Then perform a computation with the use of spherical harmonics. Both must give the same results.
 
@@ -6677,7 +6677,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t02.in">tests/v4/Input/t02.in</a>   
+### <a href="/tests/v4/Input/t02.in">tests/v4/Input/t02.in</a>   
 
 2. Generate first-order responses for GaAs (zinc-blende) (from test v2 #98). Compute responses at Gamma: 1) Ground state calculation,  with a k-point sampling in the IBZ only; 2) Computation of the ddk response; 3) Computation of the dynamical matrix at Gamma,  as well as the Born effective charges,  and the dielectric tensor; Perform five datasets: * First dataset is the ground state calculation, * Second dataset compute ddk perturbation with the use of Legendre Polynomials for the nl operator, * Third dataset compute phonon and elec. field perturbation with the use of Legendre Polynomials for the nl operator, * Fourth dataset compute ddk perturbation with the use of spherical harmonics for the nl operator, * Fifth dataset compute phonon and elec. field perturbation with the use of spherical harmonics for the nl operator. Datasets 2 and 3 must give the same results as 4 and 5.
 
@@ -6687,7 +6687,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t03.in">tests/v4/Input/t03.in</a>   
+### <a href="/tests/v4/Input/t03.in">tests/v4/Input/t03.in</a>   
 
 Si in diamond structure. 2 k points,  low ecut. Perform a test of "Phoney pseudopotential with Hamann grid", using spherical harmonics in the computation of the nonlocal operator. Perform two datasets: First dataset with the use of Legendre Polynomials, Second dataset with the use of spherical harmonics (useylm=1). Both datasets must give the same results.
 
@@ -6697,7 +6697,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t04.in">tests/v4/Input/t04.in</a>   
+### <a href="/tests/v4/Input/t04.in">tests/v4/Input/t04.in</a>   
 
 Ca in orthorhombic structure. 1 k point,  low ecut. Perform a test of GS total energy computation,  using an experimental PAW pseudopotential (pspcod=7).
 
@@ -6707,7 +6707,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/v4/Input/t05.in">tests/v4/Input/t05.in</a>   
+### <a href="/tests/v4/Input/t05.in">tests/v4/Input/t05.in</a>   
 
 O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to verify that different values of input variable 'ortalg' give the same results for total energy. 'ortalg' is use in the conjugate gradient algorithm which solves,  in the case of PAW calculations, a generalized eigenproblem (H.|Psi>=Lambda.S|Psi>). Three datasets are perfomed;  they must give the same total energies values (when converged).
 
@@ -6717,7 +6717,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/v4/Input/t06.in">tests/v4/Input/t06.in</a>   
+### <a href="/tests/v4/Input/t06.in">tests/v4/Input/t06.in</a>   
 
 O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to mesure the convergence of the total energy versus the variable 'ecut'. 6 datasets are performed with ecut varying from 8 Ha to 18 Ha Cut-off for the fine grid (used to transfer data from spherical meshes to FFt meshes) remain constant.
 
@@ -6728,7 +6728,7 @@ Topic(s): [[topic:PAW]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t07.in">tests/v4/Input/t07.in</a>   
+### <a href="/tests/v4/Input/t07.in">tests/v4/Input/t07.in</a>   
 
 O in arbitrary structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to test the differents mixing scheme in PAW formalism. Different values of iscf,  pawmixdg and pawoptmix are choosen. Features tested: - mixing on density or potential (mod(iscf, 10)) - different mixing schemes (iscf) - inclusion of spherical part in residual (pawoptmix) - mixing on coarse or fine grid (pawmixdg) - mixing factor for spherical part (pawsphmix) All mixing schemes give the same total energy.
 
@@ -6738,7 +6738,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/v4/Input/t08.in">tests/v4/Input/t08.in</a>   
+### <a href="/tests/v4/Input/t08.in">tests/v4/Input/t08.in</a>   
 
 Fe in BCC structure. Low cut-offs and few k-points. This test is done within GGA and (ferro-)magnetism in PAW formalism. The same job is done twice with two differents PAW datasets. First PAW dataset is Fe with a "Bessel" compensation charge shape function expressed analytically. SecondPAW dataset is Fe with a "Bessel" compensation charge shape function expressed numerically.
 
@@ -6749,7 +6749,7 @@ Topic(s): [[topic:PAW]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t09.in">tests/v4/Input/t09.in</a>   
+### <a href="/tests/v4/Input/t09.in">tests/v4/Input/t09.in</a>   
 
 Fe in HCP structure. Low cut-offs and few k-points. This test is done within GGA and no magnetism in PAW formalism. The same job is done twice with two differents values of mkmem.
 
@@ -6759,7 +6759,7 @@ Keywords(s): abinit, PAW
 
 * * *
 
-###  <a href="/tests/v4/Input/t17.in">tests/v4/Input/t17.in</a>   
+### <a href="/tests/v4/Input/t17.in">tests/v4/Input/t17.in</a>   
 
 PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off
 
@@ -6771,7 +6771,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v4/Input/t20.in">tests/v4/Input/t20.in</a>   
+### <a href="/tests/v4/Input/t20.in">tests/v4/Input/t20.in</a>   
 
 Test of the pspcod=8 input format (contributed by D.R. Hamann) This format is primarily intended to offer a flexible platform for those who wish to experiment with their own features in norm-conserving pseudopotentials.  A full description and discussion is given in Infos/Psp_infos/psp8.info.  This test case,  CaO,  is an example of self-interaction-corrected pseudopotentials in the style of D. Vogel,  P. Krueger,  and J. Pollmann,  Phys. Rev. B 52, 14 316 (1995).  The bandgap (direct) in the test example,  11.2eV, is in excellent agreement with experiment,  but is rather strongly dependent on the radius at which the self-interaction-correction of Ca is (smoothly) cut off.  The sic pseudopotentials used in this test should not be considered anything but early-stage experiments and should not be used for any other purpose.
 
@@ -6782,7 +6782,7 @@ Author(s): D.R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>   
+### <a href="/tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part I : spgroup 16 to 46)
 
@@ -6792,7 +6792,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>   
+### <a href="/tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part II : spgroup 47 to 62)
 
@@ -6802,7 +6802,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>   
+### <a href="/tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part III : spgroup 63 to 74)
 
@@ -6812,7 +6812,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>   
+### <a href="/tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part I : spgroup 75 to 98)
 
@@ -6822,7 +6822,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>   
+### <a href="/tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part II : spgroup 99 to 122)
 
@@ -6832,7 +6832,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>   
+### <a href="/tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part III : spgroup 123 to 130)
 
@@ -6842,7 +6842,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>   
+### <a href="/tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part IV : spgroup 131 to 142)
 
@@ -6852,7 +6852,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>   
+### <a href="/tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)
 
@@ -6862,7 +6862,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t29.in">tests/v4/Input/t29.in</a>   
+### <a href="/tests/v4/Input/t29.in">tests/v4/Input/t29.in</a>   
 
 H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the hexagonal sub system (spgroup 168 to 194)
 
@@ -6872,7 +6872,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t30.in">tests/v4/Input/t30.in</a>   
+### <a href="/tests/v4/Input/t30.in">tests/v4/Input/t30.in</a>   
 
 Simple cubic lattice of Mg atoms,  with low cut-off. Pseudopotentials WITHOUT a non-linear core correction. Prepare the Bader density analysis
 
@@ -6883,7 +6883,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t31.in">tests/v4/Input/t31.in</a>   
+### <a href="/tests/v4/Input/t31.in">tests/v4/Input/t31.in</a>   
 
 Simple cubic lattice of Mg atoms,  Bader analysis. Determine correctly 6 bonding critical points, 12 ring critical points,  and 8 cage critical points. (In agreement with Euler's relation : #BCP-#RCP+#CCP=2) The positions are very accurate (and fully coherent with symmetries). The eigenvalues of laplacian also fulfill the requirements symmetry. Bader charge is 12.0357,  while it should be exactly 12 (10 core electrons and 2 valence electrons). The error is mostly due to insufficient angular sampling (only 5 theta and 5 phi in an octant). Going to (10, 10) gives 11.9928, and (20, 20) gives 11.9980. But in the latter case, the CPU time required is multiplied by about 10 when compared to the present setting.
 
@@ -6894,7 +6894,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t32.in">tests/v4/Input/t32.in</a>   
+### <a href="/tests/v4/Input/t32.in">tests/v4/Input/t32.in</a>   
 
 MgO molecule,  with low cut-off,  in a big box,  and one k point. Pseudopotentials WITHOUT a non-linear core correction. Prepare the Bader density analysis
 
@@ -6905,7 +6905,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t33.in">tests/v4/Input/t33.in</a>   
+### <a href="/tests/v4/Input/t33.in">tests/v4/Input/t33.in</a>   
 
 MgO molecule,  Bader analysis. Examine the Oxygen atom only. Determine 2 bonding critical points (only !), 8 ring critical points,  and 8 cage critical points. (In agreement with Euler's relation : #BCP-#RCP+#CCP=2) The ecut that was used in test case 32 is quite low,  so that the accuracy of the critical points is not too good. Especially,  symmetries are broken at the level of 0.0003. Get 2 core electrons,  6.8043 valence electrons. The nucleus charge is +8. The Oxygen atom-in-molecule has a net charge of -0.8043. Additional explanation about the weak number of BCP for oxygen. One might expect the O atom to be connected through the other O atoms in neighbouring cells (x and y directions - hence 4 BCPs in these directions),  but one sees that the only existing BCPs are towards the Mg atoms. This is surprising,  but correct ! Indeed, the density at the middle of the segment between two O atoms along x (or y) is LOWER than the density at the middle of the segment between two Mg atoms along x (or y). Indeed,  although the O atoms attract electrons from the Mg atoms,  they become negatively charged,  and the potential, in DISTANT regions of the molecule,  is lower (so more attractive) on the side of the Mg atoms than on the side of the O atoms ! This means that the tail of the density extends further in the x-y plane containing the Mg atoms,  than in the x-y plane containing the O atoms. So,  the middle of the segment connecting the O atoms actually belongs to the Mg basin of attraction,  and is close to a Cage Critical Point shared by Oxygen and Magnesium atoms. By contrast,  the middle of the segment connecting the Mg atoms is,  as expected, close to a Bond Critical Point.
 
@@ -6916,7 +6916,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t34.in">tests/v4/Input/t34.in</a>   
+### <a href="/tests/v4/Input/t34.in">tests/v4/Input/t34.in</a>   
 
 MgO molecule,  Bader analysis. Examine the Magnesium atom only. This is a pathological case for the currently implemented algorithm : the Bader volume is not convex ! Determine correctly 6 bonding critical points, but only finds 4 ring critical points,  and not even one cage critical point ! (Euler's relation #BCP-#RCP+#CCP=2 is fulfilled,  but the number of RCP or CCP is not right) Despite that fact that the critical points are not all found,  one can proceed with the other steps of the Bader approach : the CP are only used to get an estimation of the minimal and maximal radii of the Bader surface ! Get 9.8533 core electrons,  1.3388 valence electrons, for a total of 11.1922 electrons. The nucleus charge is +12. The Magnesium atom-in-molecule has a net charge of -0.8078 . Comparing with case 33,  one sees that the charge neutrality is violated at the level of 0.0035 electron charge. This is quite good,  but a bit lucky. For a better charge neutrality,  one has to integrate better on the angles phi and theta (increase nphi and ntheta),  and also to increase the ecut of the preliminary abinit run. In any case,  with the pathology of the Mg Bader volume (being not convex),  one will miss some charge. It should be pretty small,  and might even be neglected for all practical purposes (the Bader analysis is just a trend analysis,  anyhow) Nevertheless,  in this particular case of the MgO molecule,  there is a fundamental limit of this algorithm...
 
@@ -6927,7 +6927,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t35.in">tests/v4/Input/t35.in</a>   
+### <a href="/tests/v4/Input/t35.in">tests/v4/Input/t35.in</a>   
 
 One He atom in a big simple cubic box Compute the DOS using the tetrahedron method. Also compute the partial DOS. There is a quite surprising feature of this very simple DOS, that might seem to be due to a bug,  but is NOT one. Indeed,  the obtained DOS is not continuous (vizualize the result of DATASET 2):  at two energies,  there is a small,  but sizeable jump. This feature is associated with a rather sparse sampling of the Brillouin zone. Indeed,  some of the tetrahedra have three corners with perfectly identical energies. Such a set of corners belong to two different tetrahedra. If there is not an equal slope of energy when moving away from each sides of the triangles,  in the different tetrahedra, the DOS is discontinuous at the energy of the three shared corners. (explanation found by M. Verstraete)
 
@@ -6937,7 +6937,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t36.in">tests/v4/Input/t36.in</a>   
+### <a href="/tests/v4/Input/t36.in">tests/v4/Input/t36.in</a>   
 
 Ta,  single atom in a box (1k point). Same as test v2 #84 HGH pseudopotential Ecut and acell are NOT realistic. One would need 20 Ha and a 20x20x20 box,  while here we have 5 Ha and a 12x12x12 box. Prepare the analysis of next test level  degeneracy       energy (Ha)  spin-orbit splitting 6s      2               -0.194573 5d3/2   4               -0.141779 5d5/2   6               -0.119933       0.0218 6p1/2   2               -0.050542 6p3/2   4               -0.031281       0.0193
 
@@ -6947,7 +6947,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t38.in">tests/v4/Input/t38.in</a>   
+### <a href="/tests/v4/Input/t38.in">tests/v4/Input/t38.in</a>   
 
 Test the computation of the partial DOS,  using the linear tetrahedron method. 2 Silicon atoms,  in a diamond structure.
 
@@ -6957,7 +6957,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t39.in">tests/v4/Input/t39.in</a>   
+### <a href="/tests/v4/Input/t39.in">tests/v4/Input/t39.in</a>   
 
 Analysis of the angular momentum content of the wavefunctions of the previous test (Silicon),  at Gamma,  X and L,  using cut3d .
 
@@ -6967,7 +6967,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v4/Input/t40.in">tests/v4/Input/t40.in</a>   
+### <a href="/tests/v4/Input/t40.in">tests/v4/Input/t40.in</a>   
 
 8-atom Si cube with one atom displaced from the equilibrium position,  to set up DEN file for next test.
 
@@ -6977,7 +6977,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t41.in">tests/v4/Input/t41.in</a>   
+### <a href="/tests/v4/Input/t41.in">tests/v4/Input/t41.in</a>   
 
 Test of macroave,  on the basis of the density of the previous run.
 
@@ -6987,7 +6987,7 @@ Keywords(s): macroave, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t42.in">tests/v4/Input/t42.in</a>   
+### <a href="/tests/v4/Input/t42.in">tests/v4/Input/t42.in</a>   
 
 Si/Ge heterojunction : 4 layer each. Output the density and potential. Prepare the macroaverage analysis,  see next tests.
 
@@ -6997,7 +6997,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t43.in">tests/v4/Input/t43.in</a>   
+### <a href="/tests/v4/Input/t43.in">tests/v4/Input/t43.in</a>   
 
 Si/Ge heterojunction,  see test 42 Analyze the Hartree and XC potential : one filter function, using the average width of a layer,  and spline interpolation.
 
@@ -7007,7 +7007,7 @@ Keywords(s): macroave, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t44.in">tests/v4/Input/t44.in</a>   
+### <a href="/tests/v4/Input/t44.in">tests/v4/Input/t44.in</a>   
 
 Si/Ge heterojunction,  see test 42 Analyze the Hartree and XC potential : two filter functions, using two distinct values (on the order of the average layer width,  but otherwise arbitrary),  and spline interpolation.
 
@@ -7017,7 +7017,7 @@ Keywords(s): macroave, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t45.in">tests/v4/Input/t45.in</a>   
+### <a href="/tests/v4/Input/t45.in">tests/v4/Input/t45.in</a>   
 
 Si/Ge heterojunction,  see test 42 Analyze the charge density : one filter function, using the average width of a layer,  and linear interpolation.
 
@@ -7027,7 +7027,7 @@ Keywords(s): macroave, NC
 
 * * *
 
-###  <a href="/tests/v4/Input/t46.in">tests/v4/Input/t46.in</a>   
+### <a href="/tests/v4/Input/t46.in">tests/v4/Input/t46.in</a>   
 
 5-atom Al slab,  with three vacuum layers. First,  converge the wavefunctions,  then compute the STM charge density below and above the Fermi energy,  within a 2eV range.
 
@@ -7038,7 +7038,7 @@ Topic(s): [[topic:STM]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t50.in">tests/v4/Input/t50.in</a>   
+### <a href="/tests/v4/Input/t50.in">tests/v4/Input/t50.in</a>   
 
 BaTiO3,  cubic structure. Test the use of eivec=4,  to produces files from which the phonon band structure can be plotted (test 51). However,  due to problems of portability,  the output files of this tests are NOT used for the next one. Rather,  files produced on one specific platforms have been fixed as input of the next test,  and are present as t51_band2eps.displ and t51_band2eps.freq.
 
@@ -7049,7 +7049,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t51.in">tests/v4/Input/t51.in</a>   
+### <a href="/tests/v4/Input/t51.in">tests/v4/Input/t51.in</a>   
 
 Code band2eps: Produce the phonon band structure,  in a eps file. BaTiO3,  cubic structure.
 
@@ -7060,7 +7060,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t52.in">tests/v4/Input/t52.in</a>   
+### <a href="/tests/v4/Input/t52.in">tests/v4/Input/t52.in</a>   
 
 AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 53 and 54.
 
@@ -7072,7 +7072,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t53.in">tests/v4/Input/t53.in</a>   
+### <a href="/tests/v4/Input/t53.in">tests/v4/Input/t53.in</a>   
 
 AlAs,  zinc-blende structure. Code mrgddb Merge the two DDBs generated by test 52,  for further use in test 54.
 
@@ -7083,7 +7083,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t54.in">tests/v4/Input/t54.in</a>   
+### <a href="/tests/v4/Input/t54.in">tests/v4/Input/t54.in</a>   
 
 AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 53,  for the generation of the electro-optic tensor,  and Raman susceptibility coefficients.
 
@@ -7095,7 +7095,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t56.in">tests/v4/Input/t56.in</a>   
+### <a href="/tests/v4/Input/t56.in">tests/v4/Input/t56.in</a>   
 
 GaAs,  zinc-blende structure. Generate the data for optic (linear and non-linear coefficients). to be analysed in the test 57.
 
@@ -7106,7 +7106,7 @@ Topic(s): [[topic:Optic]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t57.in">tests/v4/Input/t57.in</a>   
+### <a href="/tests/v4/Input/t57.in">tests/v4/Input/t57.in</a>   
 
 GaAs,  zinc-blende structure. Code optic.
 
@@ -7117,7 +7117,7 @@ Topic(s): [[topic:Optic]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t58.in">tests/v4/Input/t58.in</a>   
+### <a href="/tests/v4/Input/t58.in">tests/v4/Input/t58.in</a>   
 
 Test of the strain perturbation with the GGA Note that this test and the following one,  59, address more advanced features of strain perturbation than the ones going with number 60 to 79,  and were developed later,  but were placed here for convenience). AlAs in the zincblende structure,  with a choice of pseudopotenials that include model core charges.  In the LDA,  the strain perturbation simply introduces perturbing charge densities leading to perturbing first-order potentials in a straightforward manner.  (This perturbation does act differently on the valence and model core charges.)   The GGA is a non-trivial extension, since strain perturbs the gradient operator itself.  This test is a symmetrized and stripped-down version of a test case used in development which yielded agreement between such RF calculations and numerical derivatives of GS stresses and forces to 1.e-8 to 1.e-9 atomic units for the elastic tensor and intenal strain coupling parameters.  Acheiving this agreement does require forcing a considerably more dense fft grid than the default which is accepted here. (ngfft= 50 50 50 was used.)  While only the PBE GGA is tested here,  all forms present in Abinit should give comparably accurate results.
 
@@ -7128,7 +7128,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t59.in">tests/v4/Input/t59.in</a>   
+### <a href="/tests/v4/Input/t59.in">tests/v4/Input/t59.in</a>   
 
 Test of the strain perturbation with GGA  and spin polarization This is the same as t79,  bcc Fe, but with the PBE GGA.  This calculation is restricted to one unaxial strain,  which adequately tests the polarization-dependent parts of the strain GGA code.
 
@@ -7139,7 +7139,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t60.in">tests/v4/Input/t60.in</a>   
+### <a href="/tests/v4/Input/t60.in">tests/v4/Input/t60.in</a>   
 
 Test of the the effect of the first-order Fermi energy on a Q=0 phonon calculation in metals. The example is for a hypothetical intermetallic compound MgAl2, in a structure which can be thought of as fcc Al with every third (111) layer replaced by Mg.  Technically,  this is the hexagonal CdI2 structure,  space group #164,  P-3 m 1.  For this case,  neglect of this contribution yields approximately a 2% error in the largest interatomic force constants.  Its effect on many force constants for this system cancels because of symmetry.  This calculation is not particularly well converged,  especially with respect to k sample.  A well-converged version is in excellent agreement with interatomic force constants calculated by numerical differentiation of ground-state forces.
 
@@ -7150,7 +7150,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t61.in">tests/v4/Input/t61.in</a>   
+### <a href="/tests/v4/Input/t61.in">tests/v4/Input/t61.in</a>   
 
 Test of the strain perturbation. Si in the usual diamond structrure using a Troullier-Martins potential including a model core charge.  The datasets include an initial ground state run,  2 pairs of 5 ground state runs with incrementally strained lattice vectors rprim (xx and yz strains -0.00004,  -0.00002,  0,  0.00002,  0.00004), and one response function run for the strain 2nd derivatives. This set is illustrative of the kind of testing used extensively in developing the strain perturbation portions of the code. The numerical 2nd derivatives of the energy wrt strains were computed by applying a 5-point derivative formula to ucvol*sigma(i, j), where the sigmas are the stresses calculated in the series of ground state calculations.  These agree with the analytic 2nd derivatives calculated in the response function run to ~1.E-7 for the data given here.  The cartesian internal strain (mixed second derivative wrt strain and atomic coordinate) agrees to ~1E-8. Note that such numerical tests of the internal strain are only valid if the forces are zero (relaxed or by symmetry).  Otherwise,  the reduced-coordinate 2nd derivatives must be used for such tests because the conversion to cartesian coordinates is itself strain- dependent and will introduce changes in the computed derivatives. In the actual development tests,  stricter converence criteria were used (tolvrs=1.E-24) as well as larger cutoffs,  and agreement was obtained at the 1.E-9 level.  The model core charge contributes the largest component of the error. ADDITIONAL NOTE : It should be noted that numerical derivative tests of the internal strain should be done by comparing the "2nd-order matrix" with numerical strain derivatives of the gradients wrt reduced atomic coordinates. These are not normally part of the GS output,  but can be obtained by uncommenting the DEBUG section at the end of prtxf.F90. Comparisons between numerical strain derivatives of the cartesian forces and the cartesian internal strain tensor will be incorrect unless the coordinates have been relaxed and the forces are zero within a tight tolerance.
 
@@ -7161,7 +7161,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t62.in">tests/v4/Input/t62.in</a>   
+### <a href="/tests/v4/Input/t62.in">tests/v4/Input/t62.in</a>   
 
 Test of the strain perturbation. LaAs in a randomly distorted version of its normal rocksalt structure using a non-standard norm conserving potential produced by DRH for this test.  Distorted structures were used for most development work so that no components of the strain 2nd derivatives would be zero by symmetry.  A La compound was chosen because its f nonlocal potential makes a significant contribution to the result (10% for a well-converged result although only 1% for the low value of ecut used here),  so it tests that the very complex routines for the strain derivatives of the nonlocal energy are behaving properly.  (Choices in constructing this La potential were restricted by current limitations of the treatment of fhi- format potentials,  and it should not be used for physics results.)
 
@@ -7172,7 +7172,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t63.in">tests/v4/Input/t63.in</a>   
+### <a href="/tests/v4/Input/t63.in">tests/v4/Input/t63.in</a>   
 
 Test of the strain perturbation. GaAs in a hypothetical wurzite (hexagonal) strucure,  using HGH potentials.  The main point here is to test the strain derivatives in a hexagonal symmetry situation.  The indexing of the strain components is pert=natom+3 for 3 uniaxial components,  and pert=natom+4 for 3 shear components,  translating in this case to (dir,  pert,  cartesian strain) triplets 1 7 xx          1 8 yz 2 7 yy          2 8 xz 3 7 zz          3 8 xy We see that the cartesian 2nd-order matrix has the expected symmetry despite the lack of any x<->y symmetry operations in this space group. A curious user might wish to extend this test to all strain components (rfstrs2  3;  rfdir2 1 1 1) and observe an unexpected symmetry among the cartesian internal strain terms.  In particular, certain diagonal and shear terms are identical,  such as 1 1 1 7 (x,  xx) and 2 1 3 8 (y,  xy) where (., .) means (force,  strain).
 
@@ -7184,7 +7184,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t64.in">tests/v4/Input/t64.in</a>   
+### <a href="/tests/v4/Input/t64.in">tests/v4/Input/t64.in</a>   
 
 Test of the strain perturbation for metals. Al in the standard fcc structure using the gth potential. An issue with metals is that the fermi energy has a non-zero derivative wrt at least some of the strain perturbations. Modifications of the "active space" content restored to the first-order wavefunction (in vtowfk3.f) were implemented to reflect the resulting strain contributions.  The fermi energy derivative (itself a 1st-order quantity) depends on the self- consistent first-order potential,  and thus plays a role in the response-function self-consistency loop. As of 4.4.x,  a new treatment of the first-order fermi energy significantly improves the rate of convergence and allows all self-consistency algorithms. The results here are in very good agreement with numerical derivatives of ground state calculations with the same input parameters.  However, the kpt sample is far from converged and completely inadequate for real calculations.
 
@@ -7195,7 +7195,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t65.in">tests/v4/Input/t65.in</a>   
+### <a href="/tests/v4/Input/t65.in">tests/v4/Input/t65.in</a>   
 
 Test of the strain perturbation for the rigid-ion piezoelectric tensor.  AlP in the zincblende structure but incorporating a rhombohedral distortion of the unit cell to make more tensor components non-zero.  The values of ecut and ngkpt are much too small for convergence,  and tolwfs should be set smaller,  probably 1.E-18 to 1.E-24. A full calculation of the set of d/dk wave functions in dataset 2 is needed,  idir2 = 1 1 1,  even though idir3 = 1 0 0 in dataset 3, since all d/dk components are needed to compute the cartesian piezoelectric tensor.  The only execptions to this are primitive orthorhombic,  tetragonal,  or cubic lattices with their primitive lattice vectors aligned with the cartesian axes.
 
@@ -7206,7 +7206,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t66.in">tests/v4/Input/t66.in</a>   
+### <a href="/tests/v4/Input/t66.in">tests/v4/Input/t66.in</a>   
 
 Test of the strain perturbation for the rigid-ion piezoelectric tensor.  Rhombohedrally distorted AlP as in the previous test,  but using a ground-state finite- difference calculation of the d/dk wave functions.  Such calculations were used extensively to test the response function piezoelectric tensor by comparison to numerical derivatives of the ground-state polarization.  Using the same k sample in the ground state and response function calculations,  excellent agreement has been obtained in a variety of cases (including a better-converged version of this one).  Results using the finite- diffrence d/dk and the analytic d/dk as in the preceeding test agree in the limit of large k sample. The analytic form converges much more rapidly,  and is consistent with the slowly converging polarization numerical derivatives. The present version of this calculation uses berryopt = -2 to utilize the routine berryphase_new.f The ground-state polarization calculations used to compute the numerical derivatives in such tests should also be computed using berryphase_new.f setting berryopt = -1 and rfdir = 1 1 1 so that the cartesian polarization is automatically generated. This eliminates several issues that needed special attention using berryopt = 1 and the original berryphase.f routine. The resulting cartesian polarization derivatives represent the "improper" piezoelectric tensor,  and have to be corrected to yield the "proper" tensor as described in D. Vanderbilt,  J. Phys. Chem. Solids 61,  147 (2000),  using Eq.(15).  The response-function calculation gives the proper piezoelectric tensor.  Only the electron response,  and not the strain-induced movement of the rigid ions contributes to the proper tensor.
 
@@ -7218,7 +7218,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t67.in">tests/v4/Input/t67.in</a>   
+### <a href="/tests/v4/Input/t67.in">tests/v4/Input/t67.in</a>   
 
 This is a DDB file generating run which prepares for the calculation #68. The material is GaAs in hypothetical wurzite (hexagonal) structure,  with ecut=5 Hartree,  kpoint sampling=2, 2, 2. The response function calculations are with respect to electric field,  strain,  and displacement. Notice that the result has not converged yet,  due to the low cutoff and k point grid.
 
@@ -7229,7 +7229,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t68.in">tests/v4/Input/t68.in</a>   
+### <a href="/tests/v4/Input/t68.in">tests/v4/Input/t68.in</a>   
 
 This is the anaddb calculation for the case #67, which uses DDB file generated by previous calculation. In this run,  several tensors under different boundary conditions are computed. They are respectly: relaxed ion dielectric tensor,  free-stress dielectric tensor;  relaxed ion elastic (and compliance) tensors under fixed-electric and under fixed- displacement field boundary conditions;  internal strain tensors ( force response and displacement response);  relaxed ion  piezoelectric tensors of several different definations (e,  d,  g,  h tensors). Please refer to doc/theory/vanderbilt-anaddb-notes.pdf for details. In the previous version,  only relaxed(clamped) ion dielectric,  piezoelectric, elastic tensors and internal strain tensors were computed. In this new version, piezoelectric (d,  g,  h tensors),  free-stress dielectric tensor,  elastic tensors at fixed displacement filed and elastic tensor with stress correction are the new abilities of anaddb.
 
@@ -7241,7 +7241,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t69.in">tests/v4/Input/t69.in</a>   
+### <a href="/tests/v4/Input/t69.in">tests/v4/Input/t69.in</a>   
 
 This is a DDB file generating run which prepares for the calculation #70. The material is Crystalline AlAs (face-center cubic),  with ecut=3 Hartree. Response function calculations are with respect to electric field,  strain, and displacement.
 
@@ -7252,7 +7252,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t70.in">tests/v4/Input/t70.in</a>   
+### <a href="/tests/v4/Input/t70.in">tests/v4/Input/t70.in</a>   
 
 This is the anaddb calculation for the case #69,  which uses DDB file generated by previous calculation. In this run,  several tensors under different boundary conditions are computed. They are respectly: relaxed ion dielectric tensor,  free-stress dielectric tensor;  relaxed ion elastic (and compliance) tensors under fixed-electric and under fixed- displacement field boundary conditions;  internal strain tensors ( force response and displacement response);  relaxed ion  piezoelectric tensors of several different definations (e,  d,  g,  h tensors). Please refer to Infos/Theory/vanderbilt-anaddb-notes.pdf for details. In the previous version,  only relaxed(clamped) ion dielectric,  piezoelectric, elastic tensors and internal strain tensors were computed. In this new version, piezoelectric (d,  g,  h tensors),  free-stress dielectric tensor,  elastic tensors at fixed displacement filed and elastic tensor with stress correction are the new abilities of anaddb.
 
@@ -7264,7 +7264,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t71.in">tests/v4/Input/t71.in</a>   
+### <a href="/tests/v4/Input/t71.in">tests/v4/Input/t71.in</a>   
 
 Tetragonal PbTiO3. Use ANADDB to impose a polarization with fixed in-plane lattice constant
 
@@ -7276,7 +7276,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t72.in">tests/v4/Input/t72.in</a>   
+### <a href="/tests/v4/Input/t72.in">tests/v4/Input/t72.in</a>   
 
 AlAs,  zinc-blende structure Compute the polarization along strings of k-points parallel to the primitive vectors of the reciprocal lattice. The Berry phase calculations are performed in three different datasets. For each datatset,  ABINIT writes the polarization in reduced coordinates to a DDB.
 
@@ -7288,7 +7288,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t73.in">tests/v4/Input/t73.in</a>   
+### <a href="/tests/v4/Input/t73.in">tests/v4/Input/t73.in</a>   
 
 Merge the DDB obtained in the previous test
 
@@ -7299,7 +7299,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t74.in">tests/v4/Input/t74.in</a>   
+### <a href="/tests/v4/Input/t74.in">tests/v4/Input/t74.in</a>   
 
 AlAs,  zinc-blende structure. Use ANADDB to compute the polarization of the previous two tests in cartesian coordinates.
 
@@ -7311,7 +7311,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t75.in">tests/v4/Input/t75.in</a>   
+### <a href="/tests/v4/Input/t75.in">tests/v4/Input/t75.in</a>   
 
 AlAs,  zinc-blende structure (Test of Na Sai's technique) To compute the polarization,  the finite difference expression of the ddk and the second-order energy derivatives.
 
@@ -7323,7 +7323,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t76.in">tests/v4/Input/t76.in</a>   
+### <a href="/tests/v4/Input/t76.in">tests/v4/Input/t76.in</a>   
 
 Test of Na Sai's technique). Merge the DDB obtained in the previous test.
 
@@ -7334,7 +7334,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t77.in">tests/v4/Input/t77.in</a>   
+### <a href="/tests/v4/Input/t77.in">tests/v4/Input/t77.in</a>   
 
 AlAs,  zinc-blende structure. (Test of Na Sai's technique) To impose a polarization on AlAs: compute new values of the cell parameters and atomic positions. (in practical calculations,  these operations must be repeated until convergence is reached)
 
@@ -7346,7 +7346,7 @@ Author(s): M. Veithen
 
 * * *
 
-###  <a href="/tests/v4/Input/t79.in">tests/v4/Input/t79.in</a>   
+### <a href="/tests/v4/Input/t79.in">tests/v4/Input/t79.in</a>   
 
 Test of the strain perturbation with spin polarization and metallic occupation of states Fe in the bcc structure.  This tests both the introduction of spin polarization into strain response function calculations and an improved treatment of the first-order fermi energy for Q=0 metallic calculations.  Similar data (with much larger cutoffs,  tighter convergence tolerances,  and larger k sample) was used test the elastic tensor in comparison with numerical derivatives of the stress from GS calculations.
 
@@ -7357,7 +7357,7 @@ Author(s): D. R. Hamann
 
 * * *
 
-###  <a href="/tests/v4/Input/t81.in">tests/v4/Input/t81.in</a>   
+### <a href="/tests/v4/Input/t81.in">tests/v4/Input/t81.in</a>   
 
 Highly Strained Si (diamond) structure. Self-consistent and response function calculations with respect to strains and displacements in 3 direction are computed. The structure is obtained from relaxing atoms only,  after 5% strains eta_3 and eta_6 were applied on purpose. In this run,  two DDB files are generated, which are first order and second order derivative data base respectively.
 
@@ -7368,7 +7368,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t82.in">tests/v4/Input/t82.in</a>   
+### <a href="/tests/v4/Input/t82.in">tests/v4/Input/t82.in</a>   
 
 Highly Strained Si (diamond) structure. Two DDB files generated by test1 are merged into one DDB file.
 
@@ -7379,7 +7379,7 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t83.in">tests/v4/Input/t83.in</a>   
+### <a href="/tests/v4/Input/t83.in">tests/v4/Input/t83.in</a>   
 
 Highly Strained Si (diamond) structure. Using the DDB file merged by test2,  this test computed the elastic constant (relaxed ion) considering the correction from remaining stresses in the unit cell. Voigt symmetry will be broken. Please refer to: doc/theory/elasticity-oganov.pdf.
 
@@ -7391,75 +7391,75 @@ Author(s): X. Wu
 
 * * *
 
-###  <a href="/tests/v4/Input/t84.in">tests/v4/Input/t84.in</a>   
+### <a href="/tests/v4/Input/t84.in">tests/v4/Input/t84.in</a>   
 
 Si FCC,  in primitive cell (2 atoms/cell). Test GW calculation with and without plasmon-pole model.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:GW]]  
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t85.in">tests/v4/Input/t85.in</a>   
+### <a href="/tests/v4/Input/t85.in">tests/v4/Input/t85.in</a>   
 
 Al FCC,  in primitive cell (1 atom/cell). Test GW calculation with and without plasmon-pole model for a metal.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:GW]]  
 Author(s): F. Bruneval.  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t86.in">tests/v4/Input/t86.in</a>   
+### <a href="/tests/v4/Input/t86.in">tests/v4/Input/t86.in</a>   
 
 Si FCC,  in primitive cell (2 atoms/cell). Test HF,  SEX,  and COHSEX calculations.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval.  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t87.in">tests/v4/Input/t87.in</a>   
+### <a href="/tests/v4/Input/t87.in">tests/v4/Input/t87.in</a>   
 
 Si FCC,  in primitive cell (2 atoms/cell). Test self-consistent HF (3 iterations).
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t88.in">tests/v4/Input/t88.in</a>   
+### <a href="/tests/v4/Input/t88.in">tests/v4/Input/t88.in</a>   
 
 Si FCC,  in primitive cell (2 atoms/cell). Test self-consistent model GW (2 iterations) following Faleev et al. [PRL 93,  126406 (2004)].
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t89.in">tests/v4/Input/t89.in</a>   
+### <a href="/tests/v4/Input/t89.in">tests/v4/Input/t89.in</a>   
 
 Au linear chain. Test the output of a launch.dat file for WanT Note: the file that is produced is not tested, Only the usual output file of ABINIT. Want output does not support MPI with ncpus > 1.
 
 Executable: abinit   
-Keywords(s): abinit, WanT   
+Keywords(s): WanT, abinit   
 Author(s): C. Morari  
 
 
 * * *
 
-###  <a href="/tests/v4/Input/t91.in">tests/v4/Input/t91.in</a>   
+### <a href="/tests/v4/Input/t91.in">tests/v4/Input/t91.in</a>   
 
 Test of Mg2 molecule chains,  in a slab supercell geometry. Symmetries are broken. k point (1/4 1/4 1/4) Use of default values of fftalg and exchn2n3 Reference for test #92.
 
@@ -7469,7 +7469,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t92.in">tests/v4/Input/t92.in</a>   
+### <a href="/tests/v4/Input/t92.in">tests/v4/Input/t92.in</a>   
 
 Test of Mg2 molecule chains,  in a slab supercell geometry. Symmetries are broken. k point (1/4 1/4 1/4) Use fftalg 412 and exchn2n3 1. Suitable for tests of space parallelisation.
 
@@ -7479,7 +7479,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t93.in">tests/v4/Input/t93.in</a>   
+### <a href="/tests/v4/Input/t93.in">tests/v4/Input/t93.in</a>   
 
 Test of Ca,  simple cubic,  2  k-point. Testing GS  energy and lobpcg algorithm.
 
@@ -7489,7 +7489,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v4/Input/t94.in">tests/v4/Input/t94.in</a>   
+### <a href="/tests/v4/Input/t94.in">tests/v4/Input/t94.in</a>   
 
 Test of Ca,  simple cubic,  2  k-point. Testing GS  PAW  energy and lobpcg algorithm.
 
@@ -7500,7 +7500,7 @@ Topic(s): [[topic:PAW]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t95.in">tests/v4/Input/t95.in</a>   
+### <a href="/tests/v4/Input/t95.in">tests/v4/Input/t95.in</a>   
 
 Al FCC,  in conventional cell (4 atoms/cell). Preparation of the positron calculation,  test#96.
 
@@ -7511,7 +7511,7 @@ Topic(s): [[topic:positron]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t96.in">tests/v4/Input/t96.in</a>   
+### <a href="/tests/v4/Input/t96.in">tests/v4/Input/t96.in</a>   
 
 Al FCC,  in conventional cell (4 atoms/cell). Positron calculation : lifetime and decay rate.
 
@@ -7522,7 +7522,7 @@ Topic(s): [[topic:positron]]
 
 * * *
 
-###  <a href="/tests/v4/Input/t97.in">tests/v4/Input/t97.in</a>   
+### <a href="/tests/v4/Input/t97.in">tests/v4/Input/t97.in</a>   
 
 Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on the Thomas-Fermi functional (very fast,  even with 32 atoms).
 
@@ -7534,7 +7534,7 @@ Author(s): L. Kazandjian, JF. Danel
 
 * * *
 
-###  <a href="/tests/v4/Input/t98.in">tests/v4/Input/t98.in</a>   
+### <a href="/tests/v4/Input/t98.in">tests/v4/Input/t98.in</a>   
 
 Test a fake H system,  with Cm symmetry,  that ABINIT is unable to recognize as such (it finds Pm). The problem comes from the very high symmetry of the cell, coupled with the very low symmetry of the atomic positions. Contributed by N. Choudhury (see the mail of 7 Jan 2005).
 
@@ -7545,7 +7545,7 @@ Author(s): N. Choudhury
 
 * * *
 
-###  <a href="/tests/v4/Input/t99.in">tests/v4/Input/t99.in</a>   
+### <a href="/tests/v4/Input/t99.in">tests/v4/Input/t99.in</a>   
 
 Test a fake antiferromagnetic Fe crystal : recognition of symmetries when there is a small set of non-magnetic atoms,  and a larger set of antiferromagnetic atoms. There was a bug in pre-4.5.3 versions.
 
@@ -7558,7 +7558,7 @@ Author(s): A. Dick
 
 ##  v5  
 
-###  <a href="/tests/v5/Input/t00.in">tests/v5/Input/t00.in</a>   
+### <a href="/tests/v5/Input/t00.in">tests/v5/Input/t00.in</a>   
 
 HBe molecule,  spin-polarized,  determination of forces Very quick built-in test,  to check that ABINIT is working.
 
@@ -7568,7 +7568,7 @@ Keywords(s): abinit, NC
 
 * * *
 
-###  <a href="/tests/v5/Input/t01.in">tests/v5/Input/t01.in</a>   
+### <a href="/tests/v5/Input/t01.in">tests/v5/Input/t01.in</a>   
 
 This is a test,  in the norm conserving case,  of the Molecular Dynamics flag ionmov==13. With the values of optcell=0,  1,  2 (isothermal (0),  isothermal/isenthalpic with homogeneous cell deformations (1) or full cell deformations (2).) This is the reversible integrator of Martyna,  Tuckerman,  Tobias and Klein. (Mol. Phys.,  1996,  p 1117). XG20090912 : Why is the result of dataset 1 and dataset 4 equivalent,  while the bmass varies by a factor of 2 ?
 
@@ -7579,7 +7579,7 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t02.in">tests/v5/Input/t02.in</a>   
+### <a href="/tests/v5/Input/t02.in">tests/v5/Input/t02.in</a>   
 
 Test of geometry optimization using using ionmov=1, 4, 5 and 7 Hydrogen molecule inside a box of 12 Bohr This test was created to test ionmov=5
 
@@ -7590,7 +7590,7 @@ Topic(s): [[topic:GeoOpt]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t03.in">tests/v5/Input/t03.in</a>   
+### <a href="/tests/v5/Input/t03.in">tests/v5/Input/t03.in</a>   
 
 uses ionmov 14 : a 14-step time integration by Blanes and Moan.
 
@@ -7601,19 +7601,19 @@ Topic(s): [[topic:MolecularDynamics]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t05.in">tests/v5/Input/t05.in</a>   
+### <a href="/tests/v5/Input/t05.in">tests/v5/Input/t05.in</a>   
 
 PAW response function calculation of derivative of wavefunction (DDK) Si with PAW dataset generated from uspp code. Computes derivative with DFPT formalism,  and also computes energies with displaced k+q so that energies can be checked by finite differences.
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, PAW   
+Keywords(s): DDK, abinit, DFPT, PAW   
 Topic(s): [[topic:DFPT]]  
 Author(s): J. Zwanziger  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t06.in">tests/v5/Input/t06.in</a>   
+### <a href="/tests/v5/Input/t06.in">tests/v5/Input/t06.in</a>   
 
 PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword.
 
@@ -7625,19 +7625,19 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v5/Input/t07.in">tests/v5/Input/t07.in</a>   
+### <a href="/tests/v5/Input/t07.in">tests/v5/Input/t07.in</a>   
 
 Test of the computation of the positron lifetime (using the two-component DFT) within PAW. A cubic box with 4 Al atoms at experimental volume. Low cut-offs,  few k-points. Datasets 2 to 3 use ixcpositron=2 i.e. LDA electron-positron correlation provided by Puska, Seitsonen,  and Nieminen (PRB 52,  10947). Datasets 4 to 5 use ixcpositron=11 i.e. LDA zero positron density limit parametrized by Arponen and Pajanne and fitted by Sterne and Kaiser (PRB 43,  13892). Dataset 1 performs a simple electronic GS calculation and store the density. Dataset 2 performs a positronic GS calculation in presence of the electronic density computed by dataset 1 (positron=1). Dataset 3 performs an electronic GS calculation in presence of the positronic density computed by dataset 2 (positron=2). Dataset 4 performs an automatic electronic/positronic GS calculation without storage of the wave-functions (positron=-1). Dataset 5 performs an automatic electronic/positronic GS calculation with storage of the wave-functions (positron=-10). Each dataset computes the positron lifetime and annihilation rate after the SCF iterations.
 
 Executable: abinit   
-Keywords(s): abinit, PAW, positron   
+Keywords(s): positron, abinit, PAW   
 Topic(s): [[topic:positron]]  
 Author(s): M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t08.in">tests/v5/Input/t08.in</a>   
+### <a href="/tests/v5/Input/t08.in">tests/v5/Input/t08.in</a>   
 
 Simple test for LDA+U implementation. no forces,  2 Ni and 2 O atoms in an fcc supercell. The cut-off is unrealistic. This test tests the following part of the code : * paw LDA+U (pawpupot,  pawpuenergy,  pawpuinit)
 
@@ -7649,29 +7649,29 @@ Author(s): B. Amadon
 
 * * *
 
-###  <a href="/tests/v5/Input/t09.in">tests/v5/Input/t09.in</a>   
+### <a href="/tests/v5/Input/t09.in">tests/v5/Input/t09.in</a>   
 
 Test to prepare a conductivity calculation (test v5#t10) Ground state calculation for 4 Al atoms The number of bands is unrealistic. This test produces files that are inputs for test 10. It tests the following parts of the code: optic_paw,  optic_paw_core Note that,  in addition to the psp file,  the core wave functions file is needed.
 
 Executable: abinit   
 Keywords(s): abinit   
-Author(s): S. Mazevet, M. Torrent  
+Author(s): M. Torrent, S. Mazevet  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t10.in">tests/v5/Input/t10.in</a>   
+### <a href="/tests/v5/Input/t10.in">tests/v5/Input/t10.in</a>   
 
 Tests a PAW conductivity calculation. It tests the following parts of the code: conducti,  conducti_paw,  conducti_paw_core,  emispec_paw
 
 Executable: conducti   
 Keywords(s): conducti   
-Author(s): S. Mazevet, M. Torrent  
+Author(s): M. Torrent, S. Mazevet  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t11.in">tests/v5/Input/t11.in</a>   
+### <a href="/tests/v5/Input/t11.in">tests/v5/Input/t11.in</a>   
 
 Generate both DEN and PAWDEN files for silicon. Note that in the PAW case,  DEN files include the valence density and compensation charge,  while PAWDEN files include the valence and on-site corrections,  but not the compensation charge. Therefore,  DEN files are needed for further computations,  while PAWDEN files are useful for visualization,  AIM,  and other post-processing of the density. PAW AE DEN not compatible with parallelization over atoms.
 
@@ -7683,7 +7683,7 @@ Author(s): M. Stankovski
 
 * * *
 
-###  <a href="/tests/v5/Input/t12.in">tests/v5/Input/t12.in</a>   
+### <a href="/tests/v5/Input/t12.in">tests/v5/Input/t12.in</a>   
 
 cut3d treatment of DEN file from 11. Checks that DEN is properly generated.
 
@@ -7693,7 +7693,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v5/Input/t13.in">tests/v5/Input/t13.in</a>   
+### <a href="/tests/v5/Input/t13.in">tests/v5/Input/t13.in</a>   
 
 cut3d treatment of PAWDEN file from 11. Checks that PAWDEN is properly generated.
 
@@ -7703,7 +7703,7 @@ Keywords(s): cut3d, PAW
 
 * * *
 
-###  <a href="/tests/v5/Input/t14.in">tests/v5/Input/t14.in</a>   
+### <a href="/tests/v5/Input/t14.in">tests/v5/Input/t14.in</a>   
 
 Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals.
 
@@ -7715,7 +7715,7 @@ Author(s): X. Gonze
 
 * * *
 
-###  <a href="/tests/v5/Input/t15.in">tests/v5/Input/t15.in</a>   
+### <a href="/tests/v5/Input/t15.in">tests/v5/Input/t15.in</a>   
 
 Ni molecule in a big box. Test the use of the atvshift variable First dataset : no shift,  the ten states number 9 to 18 come from the 3d atomic states,  the state number 19 is a bonding 4s state. States number 16 and 17 are degenerate 3d pi antibonding states (m=1 and -1). State number 18 is a 3d sigma antibonding state (m=0). Second dataset : add a 0.001 atomic shift to the m=0 potential. Most of the levels change by less than 0.0002 (and their energy decrease),  except state number 9 (a 3d sigma bonding state (m=0)),  that goes from -0.24020 to -0.23982 (+0.0004) and state number 18,  that goes from -0.15439 to 0.15399 (+0.0004). Third dataset : add a 0.001 atomic shift to the m=1 and m=-1 potentials. All the levels are affected (likely the m=1 and -1 orbitals adjust,  and cause modification of the potential),  but the states 10,  11,  16,  and 17 increase their energy,  while the other state see their energy decrease. Acting separately on the m=1 potential or the m=-1 cause (correctly) the breaking of the degeneracy. This test was not easy to make portable. The problem lies in the fact that when the density becomes negative,  due to Bragg oscillations,  the xc kernel can be extremely large,  and when use for the prediction of the residual of the forces,  the differences between machines can be extremely large. IN order to see this effect,  put ecut 7 and npulayit 7 (its default value).
 
@@ -7727,7 +7727,7 @@ Author(s): X. Gonze
 
 * * *
 
-###  <a href="/tests/v5/Input/t16.in">tests/v5/Input/t16.in</a>   
+### <a href="/tests/v5/Input/t16.in">tests/v5/Input/t16.in</a>   
 
 NiO: 2 Ni and 2 O atoms in an fcc supercell. Different combinations of nsppol/nspden/nspinor/pawspnorb are tested in the PAW+U formalism: 1- non-magnetic                     nsppol/nspden/nspinor=1/1/1 2- non-magnetic LDA+U               nsppol/nspden/nspinor=1/1/1 3- ferro-magnetic LDA+U             nsppol/nspden/nspinor=2/2/1 4- antiferro-magnetic LDA+U         nsppol/nspden/nspinor=1/2/1 5- non-collinear magnetism          nsppol/nspden/nspinor=1/4/2 6- non-collinear magnetism LDA+U    nsppol/nspden/nspinor=1/4/2 7- non-collinear magnetism LDA+U+SO nsppol/nspden/nspinor=1/4/2 8- non-magnetic LDA+U+SO            nsppol/nspden/nspinor=1/1/2 Cut-off and k-points are unrealistic.
 
@@ -7739,7 +7739,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v5/Input/t17.in">tests/v5/Input/t17.in</a>   
+### <a href="/tests/v5/Input/t17.in">tests/v5/Input/t17.in</a>   
 
 Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users.
 
@@ -7751,7 +7751,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v5/Input/t18.in">tests/v5/Input/t18.in</a>   
+### <a href="/tests/v5/Input/t18.in">tests/v5/Input/t18.in</a>   
 
 NiO with 4 atoms per cell Test computation of the local exact exchange (PBE0) in PAW.
 
@@ -7763,7 +7763,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v5/Input/t19.in">tests/v5/Input/t19.in</a>   
+### <a href="/tests/v5/Input/t19.in">tests/v5/Input/t19.in</a>   
 
 FCC Gadolinium. PAW + U calculation Test the imposition of the density matrix (10 first steps) and related variables. Test of partial DOS is also done (through the diff of DOS_AT0001)
 
@@ -7775,7 +7775,7 @@ Author(s): B. Amadon
 
 * * *
 
-###  <a href="/tests/v5/Input/t20.in">tests/v5/Input/t20.in</a>   
+### <a href="/tests/v5/Input/t20.in">tests/v5/Input/t20.in</a>   
 
 NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)
 
@@ -7787,7 +7787,7 @@ Author(s): B. Amadon
 
 * * *
 
-###  <a href="/tests/v5/Input/t21.in">tests/v5/Input/t21.in</a>   
+### <a href="/tests/v5/Input/t21.in">tests/v5/Input/t21.in</a>   
 
 PbFCl in the matlockite structure P4/nmm. 6 atoms per cell. Compute a set of matrix elements of the dynamical matrix, for q wavevector 0.5 0.5 0.5 . In this test case,  the symmetry operations have an important non-symmorphic character. There was a bug in the treatment of this material,  prior to v5.2.4 .
 
@@ -7797,7 +7797,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v5/Input/t22.in">tests/v5/Input/t22.in</a>   
+### <a href="/tests/v5/Input/t22.in">tests/v5/Input/t22.in</a>   
 
 SiO2 alpha-quartz with 9 atoms per cell. Compute the atomic temperature factors.
 
@@ -7808,19 +7808,19 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v5/Input/t23.in">tests/v5/Input/t23.in</a>   
+### <a href="/tests/v5/Input/t23.in">tests/v5/Input/t23.in</a>   
 
 AlAs in Zincblende structure. Test calculation of the Born effective charge and dielectric constant tensor at finite electric fields. The first dataset is for normal ground-state calculation at zero electric field. The second dataset is for ground-state calculation at finite electric field. The final datasetis the linear-response calculation at finite electric field.
 
 Executable: abinit   
-Keywords(s): abinit, DFPT, FAILS_IFMPI, NC   
+Keywords(s): abinit, DFPT, NC, FAILS_IFMPI   
 Topic(s): [[topic:Berry]]  
 Author(s): X. Wang  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t24.in">tests/v5/Input/t24.in</a>   
+### <a href="/tests/v5/Input/t24.in">tests/v5/Input/t24.in</a>   
 
 GeTe in rhombohedral structure Test the computation of phonons,  dielectric tensor and Born effective charges,  with and without spin-orbit coupling.
 
@@ -7830,17 +7830,17 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v5/Input/t25.in">tests/v5/Input/t25.in</a>   
+### <a href="/tests/v5/Input/t25.in">tests/v5/Input/t25.in</a>   
 
 PbTe in rocksalt structure Test the computation of phonons,  dielectric tensor and Born effective charges,  with and without spin-obit coupling. BUG : even without spin-orbit coupling,  with ngkpt 2 2 2 the Born effective charges are not symmetric,  why ?? BUG : even with only Gamma point,  the dynamical matrix is not symmetric : 3    2   1    1        -0.0488343140         0.0000000000
 
 Executable: abinit   
-Keywords(s): SOC, DFPT, abinit, NC   
+Keywords(s): SOC, abinit, DFPT, NC   
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t26.in">tests/v5/Input/t26.in</a>   
+### <a href="/tests/v5/Input/t26.in">tests/v5/Input/t26.in</a>   
 
 Crystalline Silicon Test the computation of second order eigenvalues for two qpoints,  (0 0 0) and (1/2 0 0),  contained in the EIGR2D files. Parameters are far from convergence,  nband=5 and nkpt=16.
 
@@ -7851,7 +7851,7 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v5/Input/t27.in">tests/v5/Input/t27.in</a>   
+### <a href="/tests/v5/Input/t27.in">tests/v5/Input/t27.in</a>   
 
 Crystalline Silicon Test the merging,  with mrgddb,  of the two second order eigenvalues files, _EIGR2D files,  produced in test 26.
 
@@ -7862,7 +7862,7 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v5/Input/t28.in">tests/v5/Input/t28.in</a>   
+### <a href="/tests/v5/Input/t28.in">tests/v5/Input/t28.in</a>   
 
 Crystalline Silicon Test the computation of the thermal eigenvalue corrections using anaddb and the merged second order eigenvalue file,  from test 27. NOTE : the DDB is actually taken from the Input directory,  not from the test 26. - I find this a bit misleading,  XG -.
 
@@ -7874,7 +7874,7 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v5/Input/t29.in">tests/v5/Input/t29.in</a>   
+### <a href="/tests/v5/Input/t29.in">tests/v5/Input/t29.in</a>   
 
 H2 molecule,  using a local pseudopotential,  and Wu-Cohen GGA. Similar to test v3#08 Compute the interatomic force constant for the displacement of the second atom along x. RF calculation of the 2DTE gives 189.49410411 Ha while finite differences gives : with delta(xred)=0.0002,  189.4945677  Ha with delta(xred)=0.0001,  189.49422003  Ha . Combining the results gives 189.4941041 Ha. Perfect !
 
@@ -7884,19 +7884,19 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v5/Input/t30.in">tests/v5/Input/t30.in</a>   
+### <a href="/tests/v5/Input/t30.in">tests/v5/Input/t30.in</a>   
 
 Compute DDK response in PAW formalism for two different but equivalent input variables: rfddk 1,  rfelfd 2
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, PAW   
+Keywords(s): DDK, abinit, DFPT, PAW   
 Topic(s): [[topic:DFPT]]  
 Author(s): J. Zwanziger  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t31.in">tests/v5/Input/t31.in</a>   
+### <a href="/tests/v5/Input/t31.in">tests/v5/Input/t31.in</a>   
 
 Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003). Coded by J. Zwanziger and M. Torrent.
 
@@ -7908,7 +7908,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v5/Input/t32.in">tests/v5/Input/t32.in</a>   
+### <a href="/tests/v5/Input/t32.in">tests/v5/Input/t32.in</a>   
 
 Stishovite,  high-pressure polymorph of SiO2. GGA (PBE). Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003).
 
@@ -7920,7 +7920,7 @@ Author(s): J. Zwanziger.
 
 * * *
 
-###  <a href="/tests/v5/Input/t33.in">tests/v5/Input/t33.in</a>   
+### <a href="/tests/v5/Input/t33.in">tests/v5/Input/t33.in</a>   
 
 Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases.
 
@@ -7931,7 +7931,7 @@ Topic(s): [[topic:DFT+U]], [[topic:EFG]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t34.in">tests/v5/Input/t34.in</a>   
+### <a href="/tests/v5/Input/t34.in">tests/v5/Input/t34.in</a>   
 
 Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the Fermi contact term at each atomic site. Coded and contributed by J. Zwanziger.
 
@@ -7943,7 +7943,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v5/Input/t35.in">tests/v5/Input/t35.in</a>   
+### <a href="/tests/v5/Input/t35.in">tests/v5/Input/t35.in</a>   
 
 Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger.
 
@@ -7955,7 +7955,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v5/Input/t36.in">tests/v5/Input/t36.in</a>   
+### <a href="/tests/v5/Input/t36.in">tests/v5/Input/t36.in</a>   
 
 BCC iron,  ferromagnetic,  computation of Fermi contact term with two spin densities. Coded and contributed by J. Zwanziger.
 
@@ -7967,7 +7967,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v5/Input/t37.in">tests/v5/Input/t37.in</a>   
+### <a href="/tests/v5/Input/t37.in">tests/v5/Input/t37.in</a>   
 
 Simple test for LDA+U features. 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Antiferromagnetism and PAW+U * Use of an initial and constant density matrix during the first SCF iterations
 
@@ -7979,31 +7979,31 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v5/Input/t38.in">tests/v5/Input/t38.in</a>   
+### <a href="/tests/v5/Input/t38.in">tests/v5/Input/t38.in</a>   
 
 Preliminary step for test 40: bcc Fe ferromagnetic structure. Relatively low cut-offs and few k-points. This test is done within GGA and magnetism in PAW formalism. Wavefunction printed to be used in v5#39  test. Density is printed out to prepare v5#40 test.
 
 Executable: abinit   
 Keywords(s): abinit, PAW   
 Topic(s): [[topic:DFT+U]]  
-Author(s): D.J. Adams, M. Torrent  
+Author(s): M. Torrent, D.J. Adams  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t39.in">tests/v5/Input/t39.in</a>   
+### <a href="/tests/v5/Input/t39.in">tests/v5/Input/t39.in</a>   
 
 Compute U in bcc Fe in 2 atomic supercell.
 
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:DFT+U]]  
-Author(s): D.J. Adams, M. Torrent  
+Author(s): M. Torrent, D.J. Adams  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t40.in">tests/v5/Input/t40.in</a>   
+### <a href="/tests/v5/Input/t40.in">tests/v5/Input/t40.in</a>   
 
 Density from test 38 is read;  then a non self-consistent calculation is done and the m-decomposed LDOS on the first atom is printed out.
 
@@ -8015,7 +8015,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v5/Input/t41.in">tests/v5/Input/t41.in</a>   
+### <a href="/tests/v5/Input/t41.in">tests/v5/Input/t41.in</a>   
 
 Al2 molecule in a big box. Treat 8 bands,  occupied using occopt=4. Compare tolrff and toldff stopping criteria
 
@@ -8026,7 +8026,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v5/Input/t42.in">tests/v5/Input/t42.in</a>   
+### <a href="/tests/v5/Input/t42.in">tests/v5/Input/t42.in</a>   
 
 NH3 and NH2-CH3 molecules,  supercell geometry Show the computations needed to obtain the differential pseudopotentials 7n.pspnc (just usual atomic configuration) and 7n.1s_psp.mod (with a hole in state 1s). The differential core-level shift is obtained by comparing difference in the total energies of the NH3 molecule with both pseudopotentials with the one of the NH2CH3 molecule : 0.41522 Ha for the NH3 molecule 0.41768 Ha for the NH2-CH3 molecule,  making for a shift of 2.46 mHa=0.0669 eV due to the replacement of one H atom of the NH3 molecule by a CH3 group. Note that these are completely non converged values. Parameters like ecut and acell should be the subject of a convergence study. For applications of this technique,  see Rignanese GM et al,  Phys. Rev. Lett. 79,  5174 (1997), or Travaly Y et al,  Phys. Rev. B 61,  7716 (2000).
 
@@ -8037,7 +8037,7 @@ Author(s): G.-M. Rignanese.
 
 * * *
 
-###  <a href="/tests/v5/Input/t43.in">tests/v5/Input/t43.in</a>   
+### <a href="/tests/v5/Input/t43.in">tests/v5/Input/t43.in</a>   
 
 H atom,  non-spin-polarized. Test a very large grid in x direction.
 
@@ -8047,7 +8047,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v5/Input/t44.in">tests/v5/Input/t44.in</a>   
+### <a href="/tests/v5/Input/t44.in">tests/v5/Input/t44.in</a>   
 
 Bismuth atom,  isolated,  in a supercell. Try alchemical pseudopotentials with spin-orbit. Spinor calculation (nspinor=2,  nspden=1,  nsppol=1) Metallic occupations. Also compare the halved spin-orbit interaction alchemical mixing with a pseudopotential directly prepared with halved spin-orbit interaction. The agreement is perfect.
 
@@ -8058,7 +8058,7 @@ Topic(s): [[topic:AtomTypes]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t45.in">tests/v5/Input/t45.in</a>   
+### <a href="/tests/v5/Input/t45.in">tests/v5/Input/t45.in</a>   
 
 diamond Si. Compare 2 pseudopotentials made with the APE code,  in fhi and UPF formats.
 
@@ -8069,7 +8069,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v5/Input/t46.in">tests/v5/Input/t46.in</a>   
+### <a href="/tests/v5/Input/t46.in">tests/v5/Input/t46.in</a>   
 
 preliminary spin current output test: output x y z- spin current density in x, y, z directions
 
@@ -8080,7 +8080,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v5/Input/t48.in">tests/v5/Input/t48.in</a>   
+### <a href="/tests/v5/Input/t48.in">tests/v5/Input/t48.in</a>   
 
 H2 molecule,  using a local pseudopotential, and the Wu-Cohen GGA. Similar to Test v3#48 Compute the total energy and force as a displacement of the second atom along x. Direct calculation of the gradient with respect to reduced coordinates gives -3.469435369425Ha while finite differences gives : with delta(xred)=0.0002,  -3.4694479488 Ha with delta(xred)=0.0001,  -3.4694385143 Ha . Combining the results gives -3.4694353695 Ha. Excellent.
 
@@ -8090,7 +8090,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v5/Input/t49.in">tests/v5/Input/t49.in</a>   
+### <a href="/tests/v5/Input/t49.in">tests/v5/Input/t49.in</a>   
 
 Si2 diatomic molecule. Spin-polarized (ferromagnetic). Test the Wu-Cohen GGA functional. Similar to Test v3#49 Direct calculation of the gradient with respect to reduced coordinates gives  0.344935232634 Ha while finite differences gives : with delta(xred)=0.002,   0.34493521   Ha Cannot be executed in parallel --- !ERROR message: | the number of bands in the spin up case must be equal to the number of bands in the spin down case. This is not the case for the k point number : 1 The number of bands spin up and down are : 5 3 Action : change nband,  or use the sequential version of ABINIT. src_file: chkinp.F90 src_line: 1181 ...
 
@@ -8100,7 +8100,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v5/Input/t50.in">tests/v5/Input/t50.in</a>   
+### <a href="/tests/v5/Input/t50.in">tests/v5/Input/t50.in</a>   
 
 Lithium atom,  isolated,  in a supercell. Test all current ELF output in different cases - no spin - spin-polarized collinear (nspinor=1,  nspden=2,  nsppol=2,  no spin-orbit) Both with fixed occupation numbers.
 
@@ -8110,19 +8110,19 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v5/Input/t51.in">tests/v5/Input/t51.in</a>   
+### <a href="/tests/v5/Input/t51.in">tests/v5/Input/t51.in</a>   
 
 Bismuth atom,  isolated,  in a supercell. Compares different spin treatments : - spin-polarized collinear (nspinor=1,  nspden=2,  nsppol=2,  no spin-orbit) - spinor (nspinor=2,  nspden=4,  nsppol=1,  no spin-orbit) Both with fixed occupation numbers and metallic occupations. This test has been contributed by L.E. Diaz. Additional test added for kinetic energy density by A. Lherbier
 
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:spinpolarisation]]  
-Author(s): A. Lherbier, L.E. Diaz  
+Author(s): L.E. Diaz, A. Lherbier  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t52.in">tests/v5/Input/t52.in</a>   
+### <a href="/tests/v5/Input/t52.in">tests/v5/Input/t52.in</a>   
 
 Bismuth atom,  isolated,  in a supercell. Analyse the collinear spin-density obtained in test 51,  using cut3d
 
@@ -8132,7 +8132,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v5/Input/t53.in">tests/v5/Input/t53.in</a>   
+### <a href="/tests/v5/Input/t53.in">tests/v5/Input/t53.in</a>   
 
 Bismuth atom,  isolated,  in a supercell. Analyse the non-collinear spin-density obtained in test 51,  using cut3d
 
@@ -8142,7 +8142,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v5/Input/t54.in">tests/v5/Input/t54.in</a>   
+### <a href="/tests/v5/Input/t54.in">tests/v5/Input/t54.in</a>   
 
 Crystalline Silicon to test the CP2K pseudopotential implementation with the new pseudo type: pspcod 10 (same formalism as HGH pseudos,  pspcod 3). Same input file as t35.in of tests/tutorial,  the only difference is that in the test the used pseudo is taken from the CP2K library. (http://cvs.berlios.de/cgi-bin/viewcvs.cgi/cp2k/potentials/Goedecker/abinit/) The bandstructure is in agreement with that calculated in the tutorial example with the pspcod=1 pseudopotential.
 
@@ -8153,7 +8153,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t55.in">tests/v5/Input/t55.in</a>   
+### <a href="/tests/v5/Input/t55.in">tests/v5/Input/t55.in</a>   
 
 Crystalline rhombohedral Antimonium. CP2K PBE pseudopotential. Optimization of the atomic positions with ionmov 2. In the input file several datasets are defined but actually only one of them is chosen for the calculation. The provided xred (one for each dataset) are already the equilibrium position,  so the calculation should use only one optimization step per dataset.
 
@@ -8164,7 +8164,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t56.in">tests/v5/Input/t56.in</a>   
+### <a href="/tests/v5/Input/t56.in">tests/v5/Input/t56.in</a>   
 
 Bulk jellium (the slab fills up the entire cell): computation of the total energy. Tested 3 Wigner-Seitz radii: 1.5,  2 (~aluminum),  4. For each Wigner-Seitz radius the energy per particle agrees with that analytically calculated using the Teter-Pade functional form. The number of k points has been much reduced,  for the purpose of the automatic testing.
 
@@ -8175,7 +8175,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t57.in">tests/v5/Input/t57.in</a>   
+### <a href="/tests/v5/Input/t57.in">tests/v5/Input/t57.in</a>   
 
 Jellium slab (50 jellium/ 50 vacuum) with Wigner-Seitz radius=4. Computation of the total energy The number of k points has been much reduced
 
@@ -8186,7 +8186,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t58.in">tests/v5/Input/t58.in</a>   
+### <a href="/tests/v5/Input/t58.in">tests/v5/Input/t58.in</a>   
 
 Jellium thin slab with Wigner-Seitz radius=2.56 (~copper) + 1 Na adatom. Computation of the total energy and force on the Na atom. Its position with respect to the slab already is the equilibrium position so the calculation should use only one optimization step.
 
@@ -8197,7 +8197,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t59.in">tests/v5/Input/t59.in</a>   
+### <a href="/tests/v5/Input/t59.in">tests/v5/Input/t59.in</a>   
 
 Jellium thin slab with Wigner-Seitz radius=2.56 (~copper) + 1 Na adatom. Computation of the total energy at the Na equilibrium distance from the jellium edge and two other ones,  slightly farther and slightly closer. The total energies should indicate as more stable the equilibrium distance. The number of k points has been much reduced
 
@@ -8208,7 +8208,7 @@ Author(s): S. Caravati
 
 * * *
 
-###  <a href="/tests/v5/Input/t60.in">tests/v5/Input/t60.in</a>   
+### <a href="/tests/v5/Input/t60.in">tests/v5/Input/t60.in</a>   
 
 Crystalline Silicon Computation of the non-self-consistent kinetic energy at fixed density.
 
@@ -8218,7 +8218,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v5/Input/t61.in">tests/v5/Input/t61.in</a>   
+### <a href="/tests/v5/Input/t61.in">tests/v5/Input/t61.in</a>   
 
 N2 molecule non-spin-polarized,  but treated with nsppol=2,  in a big box. Similar to test 55 of tests/v3. There should be only small numerical differences with respect to datasets 1 and 2 of this test, due to the fact that the tetragonal symmetry was here slightly broken for sake of portability of the automatic test. Note however that the singlet and triplet states cannot be disentagled, so one gets a big list of excitations,  the merge of singlet and triplet excitations.
 
@@ -8229,7 +8229,7 @@ Topic(s): [[topic:TDDFT]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t62.in">tests/v5/Input/t62.in</a>   
+### <a href="/tests/v5/Input/t62.in">tests/v5/Input/t62.in</a>   
 
 BeH spin-polarized,  in a supercell Test the spin-polarized TDDFT implementation. nband 20,  ecut 8,  acell 14 14 14 . For the first two excitations,  one finds : 2.40967E+00 eV,  doubly degenerate  (Pi excitation) 3.94165E+00 eV  (Sigma+ excitation) They come mainly from the 2nd occupied Kohn-Sham state,  spin up. The third excitation,  at 5.11592E+00 eV (Sigma+ excitation) comes mainly from the 1st occupied Kohn-Sham state,  spin down. Then,  come excitations that are in the continuum,  or close to it (depending on the parameters of the calculation),  so,  harder to converge, In order to have a calculation converged at the level of 0.1 eV,  one needs parameters like nband 40,  ecut 10,  acell 30. In that case,  the three above-mentioned excitations become 2.388 eV (Pi),  4.432 eV (Sigma+),  5.357 eV (Sigma+). In this case,  the latter is no more the third excitation,  as other ones, coupled to the vacuum have a lower energy. These numbers can be compared to the values given by J. Guan,  ME Casida,  DR Salahub,  J. of Mol. Structure - Theochem 527, 229,  Sp. Iss. SI (2000) : 2.391 eV (1Pi),  4.593 eV (2Sigma+),  5.418 eV (5Sigma+), and to the experimental values (see the above paper) 2.56 eV/2.484 eV,  5.51 eV,  6.71 eV.
 
@@ -8241,120 +8241,120 @@ Author(s): D. Sangalli
 
 * * *
 
-###  <a href="/tests/v5/Input/t63.in">tests/v5/Input/t63.in</a>   
+### <a href="/tests/v5/Input/t63.in">tests/v5/Input/t63.in</a>   
 
 Bcc Hydrogen,  r_s=2.6 a.u AF Check the GW+spin calculation with and without symmetries
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t64.in">tests/v5/Input/t64.in</a>   
+### <a href="/tests/v5/Input/t64.in">tests/v5/Input/t64.in</a>   
 
 Crystalline alpha-quartz Calculation of the GW corrections with and without non-symmorphic operations
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t65.in">tests/v5/Input/t65.in</a>   
+### <a href="/tests/v5/Input/t65.in">tests/v5/Input/t65.in</a>   
 
 Beta-SiC Calculation of the GW corrections with out-of-core solutions and extrapolar approximation.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:GW]]  
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t66.in">tests/v5/Input/t66.in</a>   
+### <a href="/tests/v5/Input/t66.in">tests/v5/Input/t66.in</a>   
 
 Silicon One-shot GW calculations within the PAW formalism
 
 Executable: abinit   
-Keywords(s): abinit, GW, PAW   
+Keywords(s): GW, abinit, PAW   
 Topic(s): [[topic:GW]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t67.in">tests/v5/Input/t67.in</a>   
+### <a href="/tests/v5/Input/t67.in">tests/v5/Input/t67.in</a>   
 
 SiC in zinc-blende structure G0W0 calculation updating G and W by a scissor operator
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): R. Shaltaf  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t68.in">tests/v5/Input/t68.in</a>   
+### <a href="/tests/v5/Input/t68.in">tests/v5/Input/t68.in</a>   
 
 Bcc Hydrogen,  r_s=2.6 a.u AF To check a G0W0+spin calculation with AFM symmetries (same as test t63 but only spin up wavefunctions,  non-symmorphic symmetries are obviously included)
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t69.in">tests/v5/Input/t69.in</a>   
+### <a href="/tests/v5/Input/t69.in">tests/v5/Input/t69.in</a>   
 
 Beta-SiC Calculation of the GW corrections with extrapolar approximation and in-core solution. Similar to t65,  the main difference is that symmetries are used both in chi0 and sigma and also the extrapolar term is symmetrized. Using a larger G-sphere for wavefunctions wrt t65 in order to reduce the number of G1-G2 vectors falling outside the "ecutwfn" sphere (see completchi0_deltapart.F90).
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Topic(s): [[topic:GW]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t70.in">tests/v5/Input/t70.in</a>   
+### <a href="/tests/v5/Input/t70.in">tests/v5/Input/t70.in</a>   
 
 Silicon One-shot GW calculation starting either from the SCR file or from the SUSC file. In the later case both the in-core solution and the out-of-core solution for the storage of the inverse dielectric matrix are tested.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t71.in">tests/v5/Input/t71.in</a>   
+### <a href="/tests/v5/Input/t71.in">tests/v5/Input/t71.in</a>   
 
 Silicon One-shot GW with contour deformation. Hilbert transform is used to calculate the irreducible polarizability starting from the imaginary part. The delta distribution is approximated by means of a triangular function as in PRB 74,  035101 (2006).
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t72.in">tests/v5/Input/t72.in</a>   
+### <a href="/tests/v5/Input/t72.in">tests/v5/Input/t72.in</a>   
 
 Extrapolar approximation for GW calculations on metals. Norm-conserving. PRB 78,  085125 (2008)
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): T. Rangel  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t73.in">tests/v5/Input/t73.in</a>   
+### <a href="/tests/v5/Input/t73.in">tests/v5/Input/t73.in</a>   
 
 Simple test for rsprc preconditionner (not already effective) simple scf calculation following part of the code are tested: 04rsprc/prcrscgres.F90 01cg/*
 
@@ -8365,7 +8365,7 @@ Author(s): PM. Anglade
 
 * * *
 
-###  <a href="/tests/v5/Input/t74.in">tests/v5/Input/t74.in</a>   
+### <a href="/tests/v5/Input/t74.in">tests/v5/Input/t74.in</a>   
 
 Simple test for rsprc preconditionner (not already effective) simple scf calculation following part of the code are tested: 04rsprc/prcrscgres2.F90 01cg/*
 
@@ -8376,7 +8376,7 @@ Author(s): PM. Anglade
 
 * * *
 
-###  <a href="/tests/v5/Input/t75.in">tests/v5/Input/t75.in</a>   
+### <a href="/tests/v5/Input/t75.in">tests/v5/Input/t75.in</a>   
 
 Simple test for double grid (fine/coarse) system,  the cutting radius and the initial fermi energy in recursion method Corresponding variables: recgratio,  recrcut, recefermi respectively Corresponding code: 68_recursion Other test: paral/tT, v5/t76
 
@@ -8388,7 +8388,7 @@ Author(s): M. Mancini
 
 * * *
 
-###  <a href="/tests/v5/Input/t76.in">tests/v5/Input/t76.in</a>   
+### <a href="/tests/v5/Input/t76.in">tests/v5/Input/t76.in</a>   
 
 Test for an electron gas by recursion method (Vtrial is set to zero) Corresponding variable: rectesteg Corresponding code: 68_recursion Other test: paral/tT, v5/t76
 
@@ -8400,7 +8400,7 @@ Author(s): M. Mancini
 
 * * *
 
-###  <a href="/tests/v5/Input/t77.in">tests/v5/Input/t77.in</a>   
+### <a href="/tests/v5/Input/t77.in">tests/v5/Input/t77.in</a>   
 
 White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger.
 
@@ -8412,7 +8412,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v5/Input/t78.in">tests/v5/Input/t78.in</a>   
+### <a href="/tests/v5/Input/t78.in">tests/v5/Input/t78.in</a>   
 
 FeCO3,  rhombohedral. This test checks the capability of ABINIT to identify a numerically broken symmetry, using the tolsym input variables.
 
@@ -8422,18 +8422,18 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v5/Input/t79.in">tests/v5/Input/t79.in</a>   
+### <a href="/tests/v5/Input/t79.in">tests/v5/Input/t79.in</a>   
 
 Make a simple geometry relaxation and validate the XML output (testing prtxml).
 
 Executable: abinit   
-Keywords(s): XML, abinit, NC   
+Keywords(s): abinit, NC, XML   
 Topic(s): [[topic:GeoOpt]]  
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t80.in">tests/v5/Input/t80.in</a>   
+### <a href="/tests/v5/Input/t80.in">tests/v5/Input/t80.in</a>   
 
 Test tphysel input,  which convolutes a physical temperature (tphysel) dependence with an artificial cold-smearing (Marzari) to further improve k-point convergence. Physical T dependence should be preserved,  while k-point convergence is sped up.
 
@@ -8444,27 +8444,27 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v5/Input/t81.in">tests/v5/Input/t81.in</a>   
+### <a href="/tests/v5/Input/t81.in">tests/v5/Input/t81.in</a>   
 
 Compute silicon GS and DDK files,  in preparation for reading in next test using irdwfk and irdddk.
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, NC   
+Keywords(s): DDK, abinit, DFPT, NC   
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t82.in">tests/v5/Input/t82.in</a>   
+### <a href="/tests/v5/Input/t82.in">tests/v5/Input/t82.in</a>   
 
 Compute silicon electric field perturbation,  using WFK and DDK files produced in previous test.
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, NC   
+Keywords(s): DDK, abinit, DFPT, NC   
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t83.in">tests/v5/Input/t83.in</a>   
+### <a href="/tests/v5/Input/t83.in">tests/v5/Input/t83.in</a>   
 
 Tests asr=3,  1D - rotational invariance for anaddb. This algorithm has never been finalized.
 
@@ -8474,7 +8474,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v5/Input/t84.in">tests/v5/Input/t84.in</a>   
+### <a href="/tests/v5/Input/t84.in">tests/v5/Input/t84.in</a>   
 
 Tests asr=4,  0D - rotational invariance for anaddb. NOTE : This algorithm has never been finalized.
 
@@ -8484,17 +8484,17 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v5/Input/t85.in">tests/v5/Input/t85.in</a>   
+### <a href="/tests/v5/Input/t85.in">tests/v5/Input/t85.in</a>   
 
 FCC Aluminium - get phonons and ddk in preparation for an electron-phonon coupling run. a few extra features are used compared to the tutorial.
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, NC   
+Keywords(s): DDK, abinit, DFPT, NC   
 
 
 * * *
 
-###  <a href="/tests/v5/Input/t86.in">tests/v5/Input/t86.in</a>   
+### <a href="/tests/v5/Input/t86.in">tests/v5/Input/t86.in</a>   
 
 mrggkk: merge the 1WF files from t85
 
@@ -8504,7 +8504,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v5/Input/t87.in">tests/v5/Input/t87.in</a>   
+### <a href="/tests/v5/Input/t87.in">tests/v5/Input/t87.in</a>   
 
 mrggkk: merge the 1WF files from t85
 
@@ -8514,7 +8514,7 @@ Keywords(s): mrggkk
 
 * * *
 
-###  <a href="/tests/v5/Input/t88.in">tests/v5/Input/t88.in</a>   
+### <a href="/tests/v5/Input/t88.in">tests/v5/Input/t88.in</a>   
 
 anaddb run for Al,  from t85 t86 t87. Calculate e-p coupling
 
@@ -8525,7 +8525,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t89.in">tests/v5/Input/t89.in</a>   
+### <a href="/tests/v5/Input/t89.in">tests/v5/Input/t89.in</a>   
 
 anaddb electron-phonon run with transport
 
@@ -8536,7 +8536,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t90.in">tests/v5/Input/t90.in</a>   
+### <a href="/tests/v5/Input/t90.in">tests/v5/Input/t90.in</a>   
 
 anaddb electron-phonon run: no symmetrization of e-p matrix elements
 
@@ -8547,7 +8547,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t91.in">tests/v5/Input/t91.in</a>   
+### <a href="/tests/v5/Input/t91.in">tests/v5/Input/t91.in</a>   
 
 anaddb electron-phonon run: output auxiliary files and change default smearings
 
@@ -8558,7 +8558,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t92.in">tests/v5/Input/t92.in</a>   
+### <a href="/tests/v5/Input/t92.in">tests/v5/Input/t92.in</a>   
 
 anaddb electron-phonon run: integrate over window of bands instead of energies
 
@@ -8569,7 +8569,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t93.in">tests/v5/Input/t93.in</a>   
+### <a href="/tests/v5/Input/t93.in">tests/v5/Input/t93.in</a>   
 
 anaddb electron-phonon run: change Fermi energy reference to probe e-p coupling of unocc states
 
@@ -8580,7 +8580,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t94.in">tests/v5/Input/t94.in</a>   
+### <a href="/tests/v5/Input/t94.in">tests/v5/Input/t94.in</a>   
 
 anaddb electron-phonon run: instead of using uniform grid of q-points,  treat only a given list
 
@@ -8591,7 +8591,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t95.in">tests/v5/Input/t95.in</a>   
+### <a href="/tests/v5/Input/t95.in">tests/v5/Input/t95.in</a>   
 
 Test rifcsph cutoff radius for IFC Fourier transform. Use output from t85-87
 
@@ -8602,7 +8602,7 @@ Topic(s): [[topic:PhononBands]], [[topic:PhononWidth]], [[topic:ElPhonTransport]
 
 * * *
 
-###  <a href="/tests/v5/Input/t96.in">tests/v5/Input/t96.in</a>   
+### <a href="/tests/v5/Input/t96.in">tests/v5/Input/t96.in</a>   
 
 FCC Ni - get phonons and ddk in preparation for an electron-phonon coupling run. a few extra features are used compared to the tutorial.
 
@@ -8613,7 +8613,7 @@ Topic(s): [[topic:ElPhonInt]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t97.in">tests/v5/Input/t97.in</a>   
+### <a href="/tests/v5/Input/t97.in">tests/v5/Input/t97.in</a>   
 
 mrgddb: merge the ddb files from t96
 
@@ -8624,7 +8624,7 @@ Topic(s): [[topic:ElPhonInt]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t98.in">tests/v5/Input/t98.in</a>   
+### <a href="/tests/v5/Input/t98.in">tests/v5/Input/t98.in</a>   
 
 mrggkk: merge the 1WF files from t96
 
@@ -8635,7 +8635,7 @@ Topic(s): [[topic:ElPhonInt]]
 
 * * *
 
-###  <a href="/tests/v5/Input/t99.in">tests/v5/Input/t99.in</a>   
+### <a href="/tests/v5/Input/t99.in">tests/v5/Input/t99.in</a>   
 
 anaddb run for Ni,  from t96 t97 t98. Calculate e-p coupling
 
@@ -8648,7 +8648,7 @@ Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]
 
 ##  v6  
 
-###  <a href="/tests/v6/Input/t01.in">tests/v6/Input/t01.in</a>   
+### <a href="/tests/v6/Input/t01.in">tests/v6/Input/t01.in</a>   
 
 Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. This should be linked with the computation of the dielectric constant, test v2#05,  that uses directly the RF capabilities of ABINIT, for one diatomic molecule. For dataset 1,  one reproduces the results obtained in Tv2#05,  multiplied by 4. The total energy is consistent up to more than 10 digits : -6.6499924738006 Ha for Tv2#05,  -26.599969895203 Ha for the present calculation. For dataset 2,  the perturbation qprtrb 0 0 1 is frozen in,  with vprtrb 100. The total energy is -26.600317638775 Ha. The difference wrt the unperturbed situation is 0.000348743572 Ha. For dataset 3,  a much smaller perturbation (10 times smaller) is taken, giving total energy -26.599973367786 Ha. The difference wrt the unperturbed situation is 0.3472583 microHa. For dataset 4,  an even smaller perturbation (100 times smaller) is taken, giving total energy -26.599969929928 Ha. The difference wrt the unperturbed situation is 0.000034725 microHa. With datasets 3 and 4,  we are in the linear regime. The previous amplitude is better for such studies. Dataset 5 is the same as 3,  with reversed amplitude. Results are similar to dataset 3. I had no sufficient time to analyze these data correctly and make the connection with the results of Tv2#05,  unfortunately. The following (also test 02 below) gives some more data,  and raise questions. There might be some problem with the use of qprtrb and vprtrb. For dataset 2,  the group of the four lowest eigenenergies (each corresponding to a different molecule) is : -0.47198  -0.46381  -0.46091  -0.45266,  whose spread is 0.01932 Ha. One might think that the maximum and minimum of the potential are separated roughly by 0.02 Ha. The value vprtrb 100 corresponds to a cosine wave whose amplitude is 100,  divided by the volume of the cell,  that is 5000 Bohr^3 : 0.02 Ha. The maximum and minimum of the potential should thus be separated by 0.04 Ha. There seems to be a factor of 2 off.
 
@@ -8658,7 +8658,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t02.in">tests/v6/Input/t02.in</a>   
+### <a href="/tests/v6/Input/t02.in">tests/v6/Input/t02.in</a>   
 
 Chain of Silicon diatomic molecules (4 Si2 molecules in the cell) Freeze oscillatory perturbations with different wavelengths and intensities, thanks to the qprtrb and vprtrb input variables. Compute the dielectric constant. Similar to test v6#01, but uses a more symmetric geometry,  to examine invariance of the response with respect to shifts of potential,  and also a shorter wavelength. I do not understand why vprtrb 0 10.0 leads to no response. Such a sine wave should cause similar response as for the cosine wave. No time presently to investigate this problem (XG090909)
 
@@ -8669,7 +8669,7 @@ Author(s): X. Gonze
 
 * * *
 
-###  <a href="/tests/v6/Input/t03.in">tests/v6/Input/t03.in</a>   
+### <a href="/tests/v6/Input/t03.in">tests/v6/Input/t03.in</a>   
 
 Chain of Silicon diatomic molecules (1 Si2 molecule in the cell) Uses different values of fftcache. Test similar to B3 of the cpu series (case with ecut=112 and ngfft=3*96). The default fftcache=16 seems OK : With fftcache=1,  the tcpu/ncalls/ndata is 0.028 on testf (the reference machine,  20090912) With fftcache=16 (the default),  the tcpu/ncalls/ndata is 0.021 With fftcache=128,  the tcpu/ncalls/ndata is 0.021
 
@@ -8679,7 +8679,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t04.in">tests/v6/Input/t04.in</a>   
+### <a href="/tests/v6/Input/t04.in">tests/v6/Input/t04.in</a>   
 
 Hydrogen dimer in a big cell. Produce different files (_DEN,  _POT,  _VHXC,  _VHA),  for subsequent analysis by CUT3D (see next run). Note the following values,  that will allow to check the correctness of the subsequent analysis : Kinetic energy  =  1.02998395409183E+00 Hartree energy  =  8.05073794254872E-01 Loc. psp. energy= -2.53949740885919E+00 Band energy (Ha)=  -7.2732761066E-01 Also,  the mean of the Vxc potential is announced to be Average Vxc (hartree)=  -0.05293
 
@@ -8689,7 +8689,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t05.in">tests/v6/Input/t05.in</a>   
+### <a href="/tests/v6/Input/t05.in">tests/v6/Input/t05.in</a>   
 
 Hydrogen dimer in a big cell. Read the previously generated files,  and analyze them separately,  as well as jointly. Remarkable values of the separate analysis : - the integral of the charge density over the volume of the unit cell is 2.0 - the mean of the Hartree potential vanishes (G=0) component - the mean of the Kohn-Sham and XC potentials are the same (as their difference would come from non-zero G=0 contributions from the local potential and Hartree potential),  that is Sum of values,  mean,  mean times cell volume=   -6.859211E+03   -5.292601E-02   -7.938901E+01 - the mean of the XC potential -5.292601E-02 is in perfect agreement with the one from the previous run. Remarkable values of the joint analysis : - the integral of the product of charge density and Hartree potential over the volume of the unit cell is 1.610148E+00,  correctly twice the Hartree energy. - the integral of the product of charge density and Kohn-Sham potential over the volume of the unit cell is -1.757312E+00,  correctly,  the difference between the band energy and kinetic energy.
 
@@ -8699,7 +8699,7 @@ Keywords(s): cut3d
 
 * * *
 
-###  <a href="/tests/v6/Input/t06.in">tests/v6/Input/t06.in</a>   
+### <a href="/tests/v6/Input/t06.in">tests/v6/Input/t06.in</a>   
 
 NaCl molecule in a big box. Test of the computation of the polarisation with the routine berryphase_new, for different k-point grids : only 1 k-point,  a line of k-points,  and a full mesh of k-points. Results with acell 20 10 10 are : -9.727 C/m^2,  -9.975 C/m^2,  -9.503 C/m^2 multiplied by the volume (in a.u.),  gives -19454,  -19950,  -19006 Test provided by S. Leroux Going to bigger cells make these results converge to the same value : Results with acell 30 20 20 are : -1.771 C/m^2,  -1.746 C/m^2,  -1.747 C/m^2 multiplied by the volume (in a.u.),  gives -21252,  -20952,  -20964 Results with acell 40 20 20 are : -1.3167C/m^2,  -1.3057C/m^2,  -1.3062C/m^2 multiplied by the volume (in a.u.),  gives -21067,  -20891,  -20899 Results with acell 50 20 20 are : -1.0502C/m^2,  -1.0444C/m^2,  -1.0450C/m^2 multiplied by the volume (in a.u.),  gives -21004,  -20888,  -20900
 
@@ -8709,17 +8709,17 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>   
+### <a href="/tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>   
 
 NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1).
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, PAW   
+Keywords(s): abinit, PAW, DMFT   
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t08.in">tests/v6/Input/t08.in</a>   
+### <a href="/tests/v6/Input/t08.in">tests/v6/Input/t08.in</a>   
 
 Print out CIF file for titanium bulk crystal prtcif variable. Hexagonal close packed Ti unit cell
 
@@ -8730,7 +8730,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t09.in">tests/v6/Input/t09.in</a>   
+### <a href="/tests/v6/Input/t09.in">tests/v6/Input/t09.in</a>   
 
 Print out CIF file for simple cubic Ti crystal,  for reference purposes (conventional = primitive unit cell for symmetry ops)
 
@@ -8741,7 +8741,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t10.in">tests/v6/Input/t10.in</a>   
+### <a href="/tests/v6/Input/t10.in">tests/v6/Input/t10.in</a>   
 
 Read in Silane positions and znucl from an .xyz format file t10.in.xyz Demonstrates the use of the xyzfile input variable
 
@@ -8752,7 +8752,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t11.in">tests/v6/Input/t11.in</a>   
+### <a href="/tests/v6/Input/t11.in">tests/v6/Input/t11.in</a>   
 
 Print out geometry and eigenvalue files for analysis by the BoltzTraP code,  for transport coefficients, Seebeck,  etc... Tests the prtbltztrp input variable
 
@@ -8763,7 +8763,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t12.in">tests/v6/Input/t12.in</a>   
+### <a href="/tests/v6/Input/t12.in">tests/v6/Input/t12.in</a>   
 
 Isolated Hydrogen atom. Treated with GGA C09x exchange functional (ixc=24). The total energy is -0.429523 Ha. Also additional tests concerning the kinetic energy density calculation, the gradient of electronic density calculation and the Laplacian of electronic density calculation are performed. Test taken from v1/t21.in.
 
@@ -8773,7 +8773,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t13.in">tests/v6/Input/t13.in</a>   
+### <a href="/tests/v6/Input/t13.in">tests/v6/Input/t13.in</a>   
 
 Isolated Helium atom. Treated with GGA C09x exchange functional (ixc=24). The total energy is -2.7881 Ha. Test taken from v1/t10.in.
 
@@ -8783,7 +8783,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t14.in">tests/v6/Input/t14.in</a>   
+### <a href="/tests/v6/Input/t14.in">tests/v6/Input/t14.in</a>   
 
 MgB2,  space group P6/m m m (#191);  Bravais hP (primitive hexag.) GS calculation followed by a band structure calculation in which the k-path is automatically defined via the ndivsm input variable. The third dataset tests the calculation and the output of the Fermi surface (prtfsurf=1) in the Xcrysden format.
 
@@ -8795,7 +8795,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v6/Input/t15.in">tests/v6/Input/t15.in</a>   
+### <a href="/tests/v6/Input/t15.in">tests/v6/Input/t15.in</a>   
 
 Test the symmetry finder for all the Bravais lattices, with different input formats (rprim or angdeg),  and for non-conventional choices of axes as well. Uses only one atom,  placed at (0.6 0 0) Similar to test v2#52,  except for the choice of the location
 
@@ -8805,7 +8805,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t16.in">tests/v6/Input/t16.in</a>   
+### <a href="/tests/v6/Input/t16.in">tests/v6/Input/t16.in</a>   
 
 Set of Hydrogen atoms in a body-centered,  or face-centered tetragonal,  of body-centered orthorhombic lattice. This is to test the scalecart input variable.
 
@@ -8816,7 +8816,7 @@ Topic(s): [[topic:UnitCell]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t17.in">tests/v6/Input/t17.in</a>   
+### <a href="/tests/v6/Input/t17.in">tests/v6/Input/t17.in</a>   
 
 Bi atom in a big supercell. Test the application of a Zeeman field.
 
@@ -8827,7 +8827,7 @@ Topic(s): [[topic:MagField]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t18.in">tests/v6/Input/t18.in</a>   
+### <a href="/tests/v6/Input/t18.in">tests/v6/Input/t18.in</a>   
 
 HI 8 molecule per cell,  the cell is triclinic. Prepare the density for the next Bader analysis.
 
@@ -8838,7 +8838,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t19.in">tests/v6/Input/t19.in</a>   
+### <a href="/tests/v6/Input/t19.in">tests/v6/Input/t19.in</a>   
 
 HI 8 molecule per cell,  the cell is triclinic. Bader analysis for the first atom. Previously,  there was a bug,  not active when the cell has symmetric axes.
 
@@ -8849,7 +8849,7 @@ Topic(s): [[topic:Bader]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t20.in">tests/v6/Input/t20.in</a>   
+### <a href="/tests/v6/Input/t20.in">tests/v6/Input/t20.in</a>   
 
 Test of berrystep Al-As cristal,  zinc-blende structure Compute the polarization along strings of k-points parallel to the primitive vectors of the reciprocal lattice,  and using multiple step berry phase calculation. (Tests 21-30 are related to geometry optimization,  molecular dynamics,  etc) Cannot be executed in parallel: chkint_prt: ERROR - Context : the value of the variable nproc is 2. The value of the input variable berrystep is 5,  while it must be equal to 1
 
@@ -8859,7 +8859,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t21.in">tests/v6/Input/t21.in</a>   
+### <a href="/tests/v6/Input/t21.in">tests/v6/Input/t21.in</a>   
 
 Bismuth,  rhombohedral,  two atoms per unit cell Scalar relativistic. Relax four different images,  using the steepest descent algorithm.
 
@@ -8869,7 +8869,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t22.in">tests/v6/Input/t22.in</a>   
+### <a href="/tests/v6/Input/t22.in">tests/v6/Input/t22.in</a>   
 
 Hydrogen diatomic molecule in a cell,  close to BCC. One hydrogen atom is at the origin. The other lies initially along the 1 1 1 direction,  at a distance close to the one of the free dimer distance. The final position is the mirror with respect to the plane perpendicular to x,  passing at 1/2 0 0 . The cell parameter is less than twice the H2 interatomic distance,  so that the transition path come close to the x axis,  although it never reaches it (the closest being in the mirror plane). Test the images : 6 images,  exploring the transition path by a simple algorithm. MG: Does it work in parallel. I tried 2 CPUs and the run get stuck!
 
@@ -8879,7 +8879,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t23.in">tests/v6/Input/t23.in</a>   
+### <a href="/tests/v6/Input/t23.in">tests/v6/Input/t23.in</a>   
 
 Delocalized internals test. Si diamond bulk with displaced atom Unconverged in all variables
 
@@ -8890,61 +8890,61 @@ Author(s): MJ. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t24.in">tests/v6/Input/t24.in</a>   
+### <a href="/tests/v6/Input/t24.in">tests/v6/Input/t24.in</a>   
 
 Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path. Similar to test 22 (but with string).
 
 Executable: abinit   
-Keywords(s): STRING, abinit   
+Keywords(s): abinit, STRING   
 Topic(s): [[topic:TransPath]]  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t25.in">tests/v6/Input/t25.in</a>   
+### <a href="/tests/v6/Input/t25.in">tests/v6/Input/t25.in</a>   
 
 Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path but keeping X coordinated fixed. Similar to test 24
 
 Executable: abinit   
-Keywords(s): STRING, abinit   
+Keywords(s): abinit, STRING   
 Topic(s): [[topic:TransPath]]  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t26.in">tests/v6/Input/t26.in</a>   
+### <a href="/tests/v6/Input/t26.in">tests/v6/Input/t26.in</a>   
 
 (TO BE MODIFIED BY GREGORY) Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path but keeping X coordinated fixed. Similar to test 24
 
 Executable: abinit   
-Keywords(s): STRING, abinit   
+Keywords(s): abinit, STRING   
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t27.in">tests/v6/Input/t27.in</a>   
+### <a href="/tests/v6/Input/t27.in">tests/v6/Input/t27.in</a>   
 
 Genetic algorithm structure random search. Hydrogen has been used as an example. No physical meaning. Number of images is only 10 but experience shows that at least 20 are fine.
 
 Executable: abinit   
-Keywords(s): STRING, abinit   
+Keywords(s): abinit, STRING   
 Topic(s): [[topic:GeoOpt]]  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t28.in">tests/v6/Input/t28.in</a>   
+### <a href="/tests/v6/Input/t28.in">tests/v6/Input/t28.in</a>   
 
 Ga Al(1-x) Asx Test of alchemical calculations with images. Mostly checking the treatment of input variables and their echo. (Tests 30-36 are more slots for testing the ground state)
 
 Executable: abinit   
-Keywords(s): STRING, abinit   
+Keywords(s): abinit, STRING   
 Topic(s): [[topic:AtomTypes]]  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t30.in">tests/v6/Input/t30.in</a>   
+### <a href="/tests/v6/Input/t30.in">tests/v6/Input/t30.in</a>   
 
 Hydrure of Lithium-Boron,  in a face-centered monoclinic cell. Test the recognition of the space group (C2/c (# 15)). Was lacking a case before Dec 2011.
 
@@ -8956,7 +8956,7 @@ Author(s): D. Klug
 
 * * *
 
-###  <a href="/tests/v6/Input/t31.in">tests/v6/Input/t31.in</a>   
+### <a href="/tests/v6/Input/t31.in">tests/v6/Input/t31.in</a>   
 
 Tests series for the mGGA implementation (from 31 to 33) Silicon bulk. Two datasets are run. One (classic) LDA calculation with ixc 7. One with a fake native mGGA (fake1,  i.e. ixc 31) and using effmass_free=1.01. Both calculation should give the same total energy (change in kinetic energy due to effmass_free is compensated by the fake mGGA using kinetic energy density: taur). (Two other datasets are also run for spin polarized case)
 
@@ -8966,7 +8966,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t32.in">tests/v6/Input/t32.in</a>   
+### <a href="/tests/v6/Input/t32.in">tests/v6/Input/t32.in</a>   
 
 Test the mGGA implementation. Silicon bulk. Two datasets are run. One with a fake native mGGA (fake2,  i.e. ixc 32) involving laplacian of the density. One with a fake native mGGA (fake3,  i.e. ixc 33) involving gradient of the density. Both calculation should give the same total and exchange-correlation energies. (Two other datasets are also run for spin polarized case)
 
@@ -8976,7 +8976,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t33.in">tests/v6/Input/t33.in</a>   
+### <a href="/tests/v6/Input/t33.in">tests/v6/Input/t33.in</a>   
 
 Test the mGGA implementation. Isolated Hydrogen atom. Two datasets are run. One with a fake native mGGA (fake3,  i.e. ixc 33) involving gradient of the density. One with a fake native mGGA (fake4,  i.e. ixc 34) involving kinetic energy density (and its gradient). Both calculation should give the same total and exchange-correlation energies. (Two other datasets are also run for spin polarized case)
 
@@ -8986,7 +8986,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t34.in">tests/v6/Input/t34.in</a>   
+### <a href="/tests/v6/Input/t34.in">tests/v6/Input/t34.in</a>   
 
 Crystalline silicon. Diamond structure. Quick test of the use of datasets with a numbering beyond 1000 (the last one is 1022). (Tests 35-40 are for response-function)
 
@@ -8996,7 +8996,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v6/Input/t35.in">tests/v6/Input/t35.in</a>   
+### <a href="/tests/v6/Input/t35.in">tests/v6/Input/t35.in</a>   
 
 Generate first-order responses for FCC Aluminum. Very low cut-off,  to keep CPU the lowest possible Aim at a regular sampling of phonon wavevectors,  needed to interpolate the dynamical matrix over the whole Brillouin Zone. Use the definition through qptrlatt. Otherwise,  similar to Tv2#26 and Tv6#78.
 
@@ -9006,7 +9006,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t36.in">tests/v6/Input/t36.in</a>   
+### <a href="/tests/v6/Input/t36.in">tests/v6/Input/t36.in</a>   
 
 ZrO2 FCC (fluorite structure). Compute the phonon frequencies at the X point. This worked correctly before 5.2.4,  but then,  an erroneous bug fix (correcting v5#21) was introduced. Final (correct) fixing in v6.0.4. (Contributed by I. Lukacevic,  trying to reproduce results by Detraux et al 1997)
 
@@ -9017,7 +9017,7 @@ Author(s): I. Lukacevic
 
 * * *
 
-###  <a href="/tests/v6/Input/t37.in">tests/v6/Input/t37.in</a>   
+### <a href="/tests/v6/Input/t37.in">tests/v6/Input/t37.in</a>   
 
 Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . Warning : only valid for Gamma,  AND the temperature-dependent shifts must be averaged over degenerate states.
 
@@ -9028,7 +9028,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t38.in">tests/v6/Input/t38.in</a>   
+### <a href="/tests/v6/Input/t38.in">tests/v6/Input/t38.in</a>   
 
 Merge the DDB from test 37
 
@@ -9038,7 +9038,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t39.in">tests/v6/Input/t39.in</a>   
+### <a href="/tests/v6/Input/t39.in">tests/v6/Input/t39.in</a>   
 
 Merge the EIGR2D files from test 37
 
@@ -9048,7 +9048,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t40.in">tests/v6/Input/t40.in</a>   
+### <a href="/tests/v6/Input/t40.in">tests/v6/Input/t40.in</a>   
 
 Use anaddb to compute the T-dependent correction.
 
@@ -9059,7 +9059,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t41.in">tests/v6/Input/t41.in</a>   
+### <a href="/tests/v6/Input/t41.in">tests/v6/Input/t41.in</a>   
 
 Compute U in cells containing 2,  16 and 128 atoms. Cannot be executed in parallel,  random errors At line 111 of file ujdet.F90 (unit = 7,  file = ...) Fortran runtime error: File 'ujdet.out' already exists
 
@@ -9070,7 +9070,7 @@ Author(s): D.J. Adams
 
 * * *
 
-###  <a href="/tests/v6/Input/t42.in">tests/v6/Input/t42.in</a>   
+### <a href="/tests/v6/Input/t42.in">tests/v6/Input/t42.in</a>   
 
 PAW Berrys Phase calculation of Born effective charge in AlAs by finite differences (contributed by J. Zwanziger,  adapted from efield tutorial). MG: Very problematic in parallel (run get stuck!)
 
@@ -9081,7 +9081,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v6/Input/t43.in">tests/v6/Input/t43.in</a>   
+### <a href="/tests/v6/Input/t43.in">tests/v6/Input/t43.in</a>   
 
 PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial.) Cannot be executed with more than 1 MPI node.
 
@@ -9093,7 +9093,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v6/Input/t44.in">tests/v6/Input/t44.in</a>   
+### <a href="/tests/v6/Input/t44.in">tests/v6/Input/t44.in</a>   
 
 Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case.
 
@@ -9105,41 +9105,41 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>   
+### <a href="/tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>   
 
 DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy.
 
 Executable: abinit   
-Keywords(s): DMFT, abinit   
+Keywords(s): abinit, DMFT   
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>   
+### <a href="/tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>   
 
 DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy.
 
 Executable: abinit   
-Keywords(s): DMFT, abinit   
+Keywords(s): abinit, DMFT   
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t47.in">tests/v6/Input/t47.in</a>   
+### <a href="/tests/v6/Input/t47.in">tests/v6/Input/t47.in</a>   
 
 DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy.
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, PAW   
+Keywords(s): abinit, PAW, DMFT   
 Topic(s): [[topic:DMFT]]  
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t49.in">tests/v6/Input/t49.in</a>   
+### <a href="/tests/v6/Input/t49.in">tests/v6/Input/t49.in</a>   
 
 Electric field gradients in ICl molecule,  with and without spin orbit coupling.
 
@@ -9151,7 +9151,7 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v6/Input/t50.in">tests/v6/Input/t50.in</a>   
+### <a href="/tests/v6/Input/t50.in">tests/v6/Input/t50.in</a>   
 
 He BCC primitive cell. Fake smooth pseudopotential. For testing the electron-phonon modification of the electronic structure. To be compared with the results of tests 51 to 59. Use a 2x2x2 grid of k (shifted) and q (non-shifted) points. No imaginary frequences for the phonons with this choice. Computation of the electronic eigenvalues as well as phonon eigenfrequencies, and corresponding ingredients for the computation of the electron-phonon effect,  in the next tests 51-53.
 
@@ -9162,7 +9162,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t51.in">tests/v6/Input/t51.in</a>   
+### <a href="/tests/v6/Input/t51.in">tests/v6/Input/t51.in</a>   
 
 He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 50. Merge the DDB files.
 
@@ -9172,7 +9172,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t52.in">tests/v6/Input/t52.in</a>   
+### <a href="/tests/v6/Input/t52.in">tests/v6/Input/t52.in</a>   
 
 He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 50. Merge the EIGR2D files.
 
@@ -9182,7 +9182,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t53.in">tests/v6/Input/t53.in</a>   
+### <a href="/tests/v6/Input/t53.in">tests/v6/Input/t53.in</a>   
 
 He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 50. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 57 and 59. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775400E-03  (kpt 2,  band 1) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970638E-03  (kpt 1,  band 1) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291344E-03  (kpt 1,  bands 2 to 4) Note that the k point grid is shifted,  but not the q point grid.
 
@@ -9193,7 +9193,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t54.in">tests/v6/Input/t54.in</a>   
+### <a href="/tests/v6/Input/t54.in">tests/v6/Input/t54.in</a>   
 
 He BCC conventional cell. Fake smooth pseudopotential. For testing the electron-phonon modification of the electronic structure. To be compared with the results of tests 50 to 59. Use a FCC grid of k (shifted) and q (non-shifted) points. No imaginary frequences for the phonons with this choice. Computation of the electronic eigenvalues as well as phonon eigenfrequencies, and corresponding ingredients for the computation of the electron-phonon effect,  in the next tests 55-57.
 
@@ -9203,7 +9203,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t55.in">tests/v6/Input/t55.in</a>   
+### <a href="/tests/v6/Input/t55.in">tests/v6/Input/t55.in</a>   
 
 He BCC conventional cell. Fake smooth pseudopotential. Follow-up of test 54. Merge the DDB files.
 
@@ -9213,7 +9213,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t56.in">tests/v6/Input/t56.in</a>   
+### <a href="/tests/v6/Input/t56.in">tests/v6/Input/t56.in</a>   
 
 He BCC conventional cell. Fake smooth pseudopotential. Follow-up of test 54. Merge the EIGR2D files.
 
@@ -9223,7 +9223,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t57.in">tests/v6/Input/t57.in</a>   
+### <a href="/tests/v6/Input/t57.in">tests/v6/Input/t57.in</a>   
 
 He BCC primitive cell. Fake smooth pseudopotential. Follow-up of test 54. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 53 and 59. Agreement at the level of the sixth digit. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775406E-03  (kpt 1,  bands 1 and 2) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970635E-03  (kpt 4,  bands 1 and 2) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291346E-03  (kpt 1,  bands 3 to 8)
 
@@ -9234,7 +9234,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t58.in">tests/v6/Input/t58.in</a>   
+### <a href="/tests/v6/Input/t58.in">tests/v6/Input/t58.in</a>   
 
 He BCC 8-atom supercell. Fake smooth pseudopotential. For testing the electron-phonon modification of the electronic structure. To be compared with the results of tests 50 to 59. Use 1/2 1/2 1/2 for electronice wavevector and Gamma point for phonon wavevector Computation of the electronic eigenvalues as well as phonon eigenfrequencies, and corresponding ingredients for the computation of the electron-phonon effect,  in the next test 59 (no need of mrgddb with only one q point.
 
@@ -9244,7 +9244,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t59.in">tests/v6/Input/t59.in</a>   
+### <a href="/tests/v6/Input/t59.in">tests/v6/Input/t59.in</a>   
 
 He BCC 8-atom supercell. Fake smooth pseudopotential. Follow-up of test 58. Analyse (anaddb) the DDB and EIGR2D files. Compute the electron-phonon modifications of the electronic structure. Result to be compared with test 53 and 57. Agreement at the level of the sixth digit. For the lowest eigenenergy,  with -0.19671 Ha,  ZP correction is -1.775401E-03  (bands 1 to 6) For the HOMO,                with  0.09747 Ha,  ZP correction is  1.970636E-03  (bands 7 and 8) For the LUMO,                with  0.46242 Ha,  ZP correction is -3.291344E-03  (bands 9 to 14)
 
@@ -9255,7 +9255,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t60.in">tests/v6/Input/t60.in</a>   
+### <a href="/tests/v6/Input/t60.in">tests/v6/Input/t60.in</a>   
 
 Crystalline Silicon Test the smearing parameter ESMEAR of the imaginary second order eigenvalues for Q-point (0 0 0),  contained in the EIGI2D files. Parameters are far from convergence,  nband=5 and nkpt=16.
 
@@ -9266,7 +9266,7 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v6/Input/t61.in">tests/v6/Input/t61.in</a>   
+### <a href="/tests/v6/Input/t61.in">tests/v6/Input/t61.in</a>   
 
 H2 Molecule in a small box Second-order eigenvalue calculation using a small number of bands,  testing bdeigrf.
 
@@ -9277,19 +9277,19 @@ Author(s): P. Boulanger
 
 * * *
 
-###  <a href="/tests/v6/Input/t62.in">tests/v6/Input/t62.in</a>   
+### <a href="/tests/v6/Input/t62.in">tests/v6/Input/t62.in</a>   
 
 Computation of phonons and response to electric field within PAW (both q=0 and q/=0) Test on AlAs structure inspired by tutorespfn/trf2 tutorial. Ground state is computed. DDK is computed. Dielectric tensor is computed. Phonon modes at q=0 are computed. Phonons modes at q=(1/4, 0, 0) and q=(-1/4, 1/2/1/4) are computed. Note: Charge neutrality is not achieved with the present dataset, but can be easily reached by increasing some parameters;  for instance: (ngkpt 8 8 8,  ecut 15.,  pawecutdg 30.) gives Z(Al)=2.1184310,  Z(As)=-2.1184804
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, PAW   
+Keywords(s): DDK, abinit, DFPT, PAW   
 Topic(s): [[topic:DFPT]]  
 Author(s): M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/v6/Input/t63.in">tests/v6/Input/t63.in</a>   
+### <a href="/tests/v6/Input/t63.in">tests/v6/Input/t63.in</a>   
 
 Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized. However nsppol=2 for testing purposes. Over 1200 WARNINGS. This test must give the same results of the test 64 non-linear response with nsppol=1 does not support MPI with nprocs > 1
 
@@ -9301,7 +9301,7 @@ Author(s): F. Da Pieve
 
 * * *
 
-###  <a href="/tests/v6/Input/t64.in">tests/v6/Input/t64.in</a>   
+### <a href="/tests/v6/Input/t64.in">tests/v6/Input/t64.in</a>   
 
 Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized Over 1200 WARNINGS. This test must give the same results of the test 63
 
@@ -9313,7 +9313,7 @@ Author(s): F. Da Pieve
 
 * * *
 
-###  <a href="/tests/v6/Input/t65.in">tests/v6/Input/t65.in</a>   
+### <a href="/tests/v6/Input/t65.in">tests/v6/Input/t65.in</a>   
 
 NaCl Molecule in a big box 3DTE calculation with only one k-point
 
@@ -9325,7 +9325,7 @@ Author(s): S. Le Roux
 
 * * *
 
-###  <a href="/tests/v6/Input/t66.in">tests/v6/Input/t66.in</a>   
+### <a href="/tests/v6/Input/t66.in">tests/v6/Input/t66.in</a>   
 
 He dimer,  with bare pseudopotential ixc=0 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  giving DFPT: 0.039868 Finite-differences: 1.6318415296 - 1.6216781815 = 0.0101633077 to be divided by 0.02 (the difference in xcart) and 4pi => 0.040439 Going to ngkpt 80 1 1,  gives: DFPT: 0.040052 Finite-differences: 0.040054 The DFPT with ngkpt 320 1 1 gives 0.040055.
 
@@ -9336,7 +9336,7 @@ Topic(s): [[topic:nonlinear]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t67.in">tests/v6/Input/t67.in</a>   
+### <a href="/tests/v6/Input/t67.in">tests/v6/Input/t67.in</a>   
 
 Charged (He dimer)+,  with bare pseudopotential. ixc=7 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  like the previous one. Going to ngkpt 80 1 1 gives Finite-differences: 0.022275 The DFPT with ngkpt 320 1 1 gives 0.022279 . (To obtain the finite-difference results,  one has to reactivate the dtset 15 case) Cannot be executed on more that 1 MPI proc due to different values of nband_k
 
@@ -9347,7 +9347,7 @@ Topic(s): [[topic:nonlinear]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t68.in">tests/v6/Input/t68.in</a>   
+### <a href="/tests/v6/Input/t68.in">tests/v6/Input/t68.in</a>   
 
 H2 molecule in a reasonably large box Compute the Fan and Diagonal Debye-Waller corrections to the eigenenergies.
 
@@ -9357,7 +9357,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t69.in">tests/v6/Input/t69.in</a>   
+### <a href="/tests/v6/Input/t69.in">tests/v6/Input/t69.in</a>   
 
 H2 molecule in a reasonably large box Analysis of the test 68 results,  using anaddb.
 
@@ -9368,7 +9368,7 @@ Topic(s): [[topic:TDepES]]
 
 * * *
 
-###  <a href="/tests/v6/Input/t70.in">tests/v6/Input/t70.in</a>   
+### <a href="/tests/v6/Input/t70.in">tests/v6/Input/t70.in</a>   
 
 VN in FCC. Phonon analysis using ANADDB.
 
@@ -9378,7 +9378,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t71.in">tests/v6/Input/t71.in</a>   
+### <a href="/tests/v6/Input/t71.in">tests/v6/Input/t71.in</a>   
 
 VN in FCC. Phonon analysis using ANADDB. Differs from test 70 by the modification of acell and rprim inside the DDB.
 
@@ -9388,7 +9388,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t72.in">tests/v6/Input/t72.in</a>   
+### <a href="/tests/v6/Input/t72.in">tests/v6/Input/t72.in</a>   
 
 Ground state and phonons of hcp TiNb alloy
 
@@ -9399,7 +9399,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t73.in">tests/v6/Input/t73.in</a>   
+### <a href="/tests/v6/Input/t73.in">tests/v6/Input/t73.in</a>   
 
 mrgddb of test 72
 
@@ -9410,7 +9410,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t74.in">tests/v6/Input/t74.in</a>   
+### <a href="/tests/v6/Input/t74.in">tests/v6/Input/t74.in</a>   
 
 mrggkk of test 72
 
@@ -9421,7 +9421,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t75.in">tests/v6/Input/t75.in</a>   
+### <a href="/tests/v6/Input/t75.in">tests/v6/Input/t75.in</a>   
 
 75. mrggkk of test 72 to make auxiliary file finegrid_GKK
 
@@ -9432,7 +9432,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t76.in">tests/v6/Input/t76.in</a>   
+### <a href="/tests/v6/Input/t76.in">tests/v6/Input/t76.in</a>   
 
 anaddb run using standard integration method also tests the *atprj_bs variables,  for atomic projections of the phonon band structure
 
@@ -9444,7 +9444,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t78.in">tests/v6/Input/t78.in</a>   
+### <a href="/tests/v6/Input/t78.in">tests/v6/Input/t78.in</a>   
 
 Generate first-order responses for FCC Aluminum. Very low cut-off,  to keep CPU the lowest possible Aim at a regular sampling of phonon wavevectors,  needed to interpolate the dynamical matrix over the whole Brillouin Zone. Use the definition through ngqpt and nshiftq. Otherwise,  similar to Tv2#26
 
@@ -9454,7 +9454,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v6/Input/t79.in">tests/v6/Input/t79.in</a>   
+### <a href="/tests/v6/Input/t79.in">tests/v6/Input/t79.in</a>   
 
 Combines the DDBs of test 78.
 
@@ -9464,7 +9464,7 @@ Keywords(s): mrgddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t80.in">tests/v6/Input/t80.in</a>   
+### <a href="/tests/v6/Input/t80.in">tests/v6/Input/t80.in</a>   
 
 Phonon band structure of Al,  from DDB of test 78. The parameters were really too low in test 78,  so that some phonon unstabilities are present close to Gamma. Similar to Tv2#28
 
@@ -9474,7 +9474,7 @@ Keywords(s): anaddb
 
 * * *
 
-###  <a href="/tests/v6/Input/t81.in">tests/v6/Input/t81.in</a>   
+### <a href="/tests/v6/Input/t81.in">tests/v6/Input/t81.in</a>   
 
 Use output from t78 to test qrefine: trivially start with 1x1x1 q-point grid and add the 2x2x2 q-points after the method of Gaal Nagy. Not working yet.
 
@@ -9485,7 +9485,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t89.in">tests/v6/Input/t89.in</a>   
+### <a href="/tests/v6/Input/t89.in">tests/v6/Input/t89.in</a>   
 
 Computation of phonons frequencies for metallic occupations at q=0 0 0 within PAW O2 (nsppol=1);  this test is directly inspired by test v3#75. In datasets 1-3,  one computes the total energy and forces,  without symmetries, as it should be for accurate finite-difference tests. From the reduced gradients with respect to displacements,  one can deduce a 2DTE of 149.9614 Ha. In dataset 4,  RF is computed with the Fermi energy correction, and the agreement with finite-differences of datasets 1 and 3 is good : one gets 149.9612 Ha. In dataset 5,  RF is computed with frozen Fermi energy and the disagreement with finite-differences of datasets 1 and 3 is large: one gets 124.9787 Ha.
 
@@ -9497,7 +9497,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v6/Input/t90.in">tests/v6/Input/t90.in</a>   
+### <a href="/tests/v6/Input/t90.in">tests/v6/Input/t90.in</a>   
 
 Ground state and phonons of hcp Ti (similar to test 72,  but grid 2 2 4)
 
@@ -9508,7 +9508,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t91.in">tests/v6/Input/t91.in</a>   
+### <a href="/tests/v6/Input/t91.in">tests/v6/Input/t91.in</a>   
 
 mrgddb of test 90
 
@@ -9519,7 +9519,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t92.in">tests/v6/Input/t92.in</a>   
+### <a href="/tests/v6/Input/t92.in">tests/v6/Input/t92.in</a>   
 
 mrggkk of test 90
 
@@ -9530,7 +9530,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v6/Input/t93.in">tests/v6/Input/t93.in</a>   
+### <a href="/tests/v6/Input/t93.in">tests/v6/Input/t93.in</a>   
 
 anaddb test electron phonon coupling with shifted fermi level of hcp Ti
 
@@ -9542,7 +9542,7 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v6/Input/t94.in">tests/v6/Input/t94.in</a>   
+### <a href="/tests/v6/Input/t94.in">tests/v6/Input/t94.in</a>   
 
 anaddb test electron phonon coupling with extra number of electons of hcp Ti
 
@@ -9556,304 +9556,304 @@ Author(s): B. Xu
 
 ##  v67mbpt  
 
-###  <a href="/tests/v67mbpt/Input/t01.in">tests/v67mbpt/Input/t01.in</a>   
+### <a href="/tests/v67mbpt/Input/t01.in">tests/v67mbpt/Input/t01.in</a>   
 
 SiC in zinc-blende structure Calculation of the GW corrections with 4 different plasmon-pole models. The following variables are tested: inclvkb=2,  nomegasrd and omegasrd.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t02.in">tests/v67mbpt/Input/t02.in</a>   
+### <a href="/tests/v67mbpt/Input/t02.in">tests/v67mbpt/Input/t02.in</a>   
 
 GW calculation in Si: Hilbert transform method for the irreducible polarizability (gaussian approximant) and analytic continuation of sigma from imaginary- to real-axis. The spectral function is also obtained via Pade extrapolation. The following variables are tested spmeth=2,  spbroad, nomegasi,  and omegasimax
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t03.in">tests/v67mbpt/Input/t03.in</a>   
+### <a href="/tests/v67mbpt/Input/t03.in">tests/v67mbpt/Input/t03.in</a>   
 
 Isolated H chain: GW calculation with cylindrical cutoff in the Coulomb interaction in order to speed up the convergence wrt the size of the super cell. The following variables are tested icutcoul=1,  rcut,  vcutgeo,  gw_nqlwl and gw_qlwl.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t04.in">tests/v67mbpt/Input/t04.in</a>   
+### <a href="/tests/v67mbpt/Input/t04.in">tests/v67mbpt/Input/t04.in</a>   
 
 Carbon in diamond structure. Chained GW calculation: The first run produces the WFK,  the SCR,  the SUSC and the QPS file. These file are subsequently read and used in t537 using irdwfk,  irdscr,  irdsuscep and irdqps In the second dataset of t85,  the screened interaction W is approximated using the test-electron expression with the TDDFT ALDA kernel (gwgamma==1).
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t05.in">tests/v67mbpt/Input/t05.in</a>   
+### <a href="/tests/v67mbpt/Input/t05.in">tests/v67mbpt/Input/t05.in</a>   
 
 Carbon in diamond structure. Chained GW calculation: The first run produces the KSS,  the SCR,  the SUSC and the QPS file. These file are subsequently read and used in t537 using irdwfk,  irdscr,  irdsuscep and irdqps In the second dataset of t85,  the screened interaction W is approximated using the test-electron expression with the TDDFT ALDA kernel (gwgamma==1).
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t06.in">tests/v67mbpt/Input/t06.in</a>   
+### <a href="/tests/v67mbpt/Input/t06.in">tests/v67mbpt/Input/t06.in</a>   
 
 Crystalline alpha-quartz Calculation of the GW corrections with non-symmorphic operations,  PAW case. but with a set of translated atoms. PAW case. Ordered set of atoms; non-ordered set of atoms; translated atoms. Similar to v5#64,  for PAW.
 
 Executable: abinit   
-Keywords(s): abinit, GW, PAW   
+Keywords(s): GW, abinit, PAW   
 Author(s): X. Gonze  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t07.in">tests/v67mbpt/Input/t07.in</a>   
+### <a href="/tests/v67mbpt/Input/t07.in">tests/v67mbpt/Input/t07.in</a>   
 
 Crystalline alpha-quartz Calculation of the GW corrections with non-symmorphic operations, but with a non-ordered set of atoms. Norm-conserving case. Similar to v6#97.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): X. Gonze  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t08.in">tests/v67mbpt/Input/t08.in</a>   
+### <a href="/tests/v67mbpt/Input/t08.in">tests/v67mbpt/Input/t08.in</a>   
 
 Crystalline alpha-quartz Calculation of the GW corrections with non-symmorphic operations, but with a set of translated atoms. Norm-conserving case. Similar to v6#97.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): X. Gonze  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t09.in">tests/v67mbpt/Input/t09.in</a>   
+### <a href="/tests/v67mbpt/Input/t09.in">tests/v67mbpt/Input/t09.in</a>   
 
 Isolated hydrogen atom Calculation of the HF levels with different ways to integrate the Coulomb divergence
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t11.in">tests/v67mbpt/Input/t11.in</a>   
+### <a href="/tests/v67mbpt/Input/t11.in">tests/v67mbpt/Input/t11.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with norm-conserving pseudopotentials. W is calculated at the RPA level while the scissors operator is used to open the gap by 0.8 eV. First the BSE is solved with the direct diagonalization of the two-particle Hamiltonian,  then the Haydock iterative method is employed to calculate the macroscopic dielectric function. The last dataset solves the BSE problem including the coupling between resonant and anti-resonant transition via brute force diagonalization. Shiva is disabled because the coupling part is unstable on this machine
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t12.in">tests/v67mbpt/Input/t12.in</a>   
+### <a href="/tests/v67mbpt/Input/t12.in">tests/v67mbpt/Input/t12.in</a>   
 
 FCC Argon QPscGW calculation (only 1 iteration) meant to prepare the following cut3d analysis
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t13.in">tests/v67mbpt/Input/t13.in</a>   
+### <a href="/tests/v67mbpt/Input/t13.in">tests/v67mbpt/Input/t13.in</a>   
 
 FCC Argon cut3d analysis and output of a cube file of a QPscGW conduction state. The previous WFK and QPS files are read.
 
 Executable: cut3d   
-Keywords(s): cut3d, GW   
+Keywords(s): GW, cut3d   
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t14.in">tests/v67mbpt/Input/t14.in</a>   
+### <a href="/tests/v67mbpt/Input/t14.in">tests/v67mbpt/Input/t14.in</a>   
 
 LiF. Optical properties within BSE and PAW (Haydock method).
 
 Executable: abinit   
-Keywords(s): BSE, abinit, GW, PAW   
+Keywords(s): GW, BSE, abinit, PAW   
 Topic(s): [[topic:BSE]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t15.in">tests/v67mbpt/Input/t15.in</a>   
+### <a href="/tests/v67mbpt/Input/t15.in">tests/v67mbpt/Input/t15.in</a>   
 
 Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)
 
 Executable: abinit   
-Keywords(s): abinit, GW, GWLS   
+Keywords(s): GW, abinit, GWLS   
 Topic(s): [[topic:GWls]], [[topic:BSE]]  
 Author(s): J. Laflamme Janssen  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t16.in">tests/v67mbpt/Input/t16.in</a>   
+### <a href="/tests/v67mbpt/Input/t16.in">tests/v67mbpt/Input/t16.in</a>   
 
 Silicon: Computation of the excitonic levels with the Bethe-Salpeter equation. Dataset3 uses the band-by-band conjugate gradient method to compute the lowest 10 states Dataset4 performs the same task with partial direct diagonalization (Lapack)
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t19.in">tests/v67mbpt/Input/t19.in</a>   
+### <a href="/tests/v67mbpt/Input/t19.in">tests/v67mbpt/Input/t19.in</a>   
 
 RPA correlation energy calculation in Si: using exact or numerication integration over the coupling constant,  using extrapolar trick or not, using the full or long-range only Coulomb interaction
 
 Executable: abinit   
-Keywords(s): abinit, GW, FAILS_IFMPI   
+Keywords(s): GW, abinit, FAILS_IFMPI   
 Topic(s): [[topic:RPACorrEn]]  
 Author(s): F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t21.in">tests/v67mbpt/Input/t21.in</a>   
+### <a href="/tests/v67mbpt/Input/t21.in">tests/v67mbpt/Input/t21.in</a>   
 
 Test the cd_custom_imfrq,  cd_imfrqs and cd_full_grid options
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Stankovski  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t22.in">tests/v67mbpt/Input/t22.in</a>   
+### <a href="/tests/v67mbpt/Input/t22.in">tests/v67mbpt/Input/t22.in</a>   
 
 Test new integration method and grid options for the integral along the imaginary axis in contour deformation calculations.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): M. Stankovski  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t29.in">tests/v67mbpt/Input/t29.in</a>   
+### <a href="/tests/v67mbpt/Input/t29.in">tests/v67mbpt/Input/t29.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with PAW and nsppol = 2. Use model dielectric function computed from AE PAW density (denfgr.F90).
 
 Executable: abinit   
-Keywords(s): BSE, abinit, GW, PAW   
+Keywords(s): GW, BSE, abinit, PAW   
 Topic(s): [[topic:BSE]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t31.in">tests/v67mbpt/Input/t31.in</a>   
+### <a href="/tests/v67mbpt/Input/t31.in">tests/v67mbpt/Input/t31.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t32.in">tests/v67mbpt/Input/t32.in</a>   
+### <a href="/tests/v67mbpt/Input/t32.in">tests/v67mbpt/Input/t32.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t33.in">tests/v67mbpt/Input/t33.in</a>   
+### <a href="/tests/v67mbpt/Input/t33.in">tests/v67mbpt/Input/t33.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t34.in">tests/v67mbpt/Input/t34.in</a>   
+### <a href="/tests/v67mbpt/Input/t34.in">tests/v67mbpt/Input/t34.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t35.in">tests/v67mbpt/Input/t35.in</a>   
+### <a href="/tests/v67mbpt/Input/t35.in">tests/v67mbpt/Input/t35.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with the interpolation technique In t31,  preparation,  BSE equation with Model dielectric function and Haydock (only resonant + W + v),  then full BSE In t32,  bs_interp_mode 1 In t33,  bs_interp_mode 2 In t34,  bs_interp_mode 3 In t35,  Rohlfing-Louie
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Topic(s): [[topic:BSE]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t36.in">tests/v67mbpt/Input/t36.in</a>   
+### <a href="/tests/v67mbpt/Input/t36.in">tests/v67mbpt/Input/t36.in</a>   
 
 Diamond: GW band gap with vertex corrections in W;  Gygi-Baldereschi aux function
 
 Executable: abinit   
-Keywords(s): GWGamma, abinit, GW, NC   
+Keywords(s): GW, GWGamma, abinit, NC   
 Author(s): W. Chen  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t37.in">tests/v67mbpt/Input/t37.in</a>   
+### <a href="/tests/v67mbpt/Input/t37.in">tests/v67mbpt/Input/t37.in</a>   
 
 LiF. Hilbert transform for chi0. Use nfreqre and freqremin,  freqremax to split the calculation along the real axis. The SCR files produced in dataset 3 and 4 are then merged my mrgscr in the next test.
 
 Executable: abinit   
-Keywords(s): abinit, GW, NC   
+Keywords(s): GW, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t38.in">tests/v67mbpt/Input/t38.in</a>   
+### <a href="/tests/v67mbpt/Input/t38.in">tests/v67mbpt/Input/t38.in</a>   
 
 Test of mrgscr utility. Option for merging frequency points.
 
@@ -9864,7 +9864,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t39.in">tests/v67mbpt/Input/t39.in</a>   
+### <a href="/tests/v67mbpt/Input/t39.in">tests/v67mbpt/Input/t39.in</a>   
 
 Test of mrgscr utility. Option for removing frequency points.
 
@@ -9875,68 +9875,68 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t40.in">tests/v67mbpt/Input/t40.in</a>   
+### <a href="/tests/v67mbpt/Input/t40.in">tests/v67mbpt/Input/t40.in</a>   
 
 Crystalline alpha-quartz GW calculations with istwfk /= 1 and NC pseudos with multiple projectors.
 
 Executable: abinit   
-Keywords(s): abinit, GW, psp8, NC   
+Keywords(s): GW, psp8, abinit, NC   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t41.in">tests/v67mbpt/Input/t41.in</a>   
+### <a href="/tests/v67mbpt/Input/t41.in">tests/v67mbpt/Input/t41.in</a>   
 
 TiO2 GW calculations with PPM-HL treating invalid frequencies in different ways.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Author(s): T. Rangel  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t50.in">tests/v67mbpt/Input/t50.in</a>   
+### <a href="/tests/v67mbpt/Input/t50.in">tests/v67mbpt/Input/t50.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with temperature-dependent renormalization WARNING: This feature is still under testing,  files and variables could change in the next versions
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t51.in">tests/v67mbpt/Input/t51.in</a>   
+### <a href="/tests/v67mbpt/Input/t51.in">tests/v67mbpt/Input/t51.in</a>   
 
 Silicon: Solution of the Bethe-Salpeter equation (BSE) with temperature-dependent renormalization WARNING: This feature is still under testing,  files and variables could change in the next versions
 
 Executable: abinit   
-Keywords(s): BSE, GW, abinit, NC   
+Keywords(s): GW, BSE, abinit, NC   
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t52.in">tests/v67mbpt/Input/t52.in</a>   
+### <a href="/tests/v67mbpt/Input/t52.in">tests/v67mbpt/Input/t52.in</a>   
 
 Silicon: Solution of optic with temperature-dependent renormalization WARNING: This feature is still under testing,  files and variables could change in the next versions
 
 Executable: abinit   
-Keywords(s): abinit, optic, NC   
+Keywords(s): abinit, NC, optic   
 Topic(s): [[topic:Optic]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v67mbpt/Input/t53.in">tests/v67mbpt/Input/t53.in</a>   
+### <a href="/tests/v67mbpt/Input/t53.in">tests/v67mbpt/Input/t53.in</a>   
 
 Silicon: Solution of optic with temperature-dependent renormalization WARNING: This feature is still under testing,  files and variables could change in the next versions
 
 Executable: optic   
-Keywords(s): optic, NC   
+Keywords(s): NC, optic   
 Topic(s): [[topic:Optic]]  
 Author(s): Y. Gillet  
 
@@ -9945,7 +9945,7 @@ Author(s): Y. Gillet
 
 ##  v7  
 
-###  <a href="/tests/v7/Input/t01.in">tests/v7/Input/t01.in</a>   
+### <a href="/tests/v7/Input/t01.in">tests/v7/Input/t01.in</a>   
 
 Test prtposcar input variable. For simple SiO2 with 1 displaced atom,   output POSCAR and FORCES files.
 
@@ -9956,7 +9956,7 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v7/Input/t02.in">tests/v7/Input/t02.in</a>   
+### <a href="/tests/v7/Input/t02.in">tests/v7/Input/t02.in</a>   
 
 Test the possibility to include a file into an input file Diamond silicon with few k-points and low cut-off The set of k-points is included in input file from another file
 
@@ -9967,7 +9967,7 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v7/Input/t03.in">tests/v7/Input/t03.in</a>   
+### <a href="/tests/v7/Input/t03.in">tests/v7/Input/t03.in</a>   
 
 Test berryopt -1 and berryopt 4,  with NCPP,  with spinors and spin-orbit coupling. This test computes the polarization of GaAs in zero and finite electric field,  in three cases: nspinor 1,  nspinor 2,  and nspinor 2 with spin-orbit coupling (so_psp). HGH norm-conserving pseudopotentials are used.
 
@@ -9979,18 +9979,18 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v7/Input/t04.in">tests/v7/Input/t04.in</a>   
+### <a href="/tests/v7/Input/t04.in">tests/v7/Input/t04.in</a>   
 
 Test natsph_extra,  ratsph_extra,  and xredsph_extra for STS calculation. Al (111) surface slab with very low ecut and ngkpt in the plane.
 
 Executable: abinit   
-Keywords(s): DOS, abinit, STS   
+Keywords(s): STS, abinit, DOS   
 Author(s): M. Verstraete  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t05.in">tests/v7/Input/t05.in</a>   
+### <a href="/tests/v7/Input/t05.in">tests/v7/Input/t05.in</a>   
 
 Test magnetic constraint code. Variables magconon and magcon_lambda. BCC iron with low cutoff and kpts,  non collinear spin case with nspden=4 imposed. First normal case then constrain direction only (DS2) and full value of vector (DS3)
 
@@ -10002,19 +10002,19 @@ Author(s): M. Verstraete
 
 * * *
 
-###  <a href="/tests/v7/Input/t06.in">tests/v7/Input/t06.in</a>   
+### <a href="/tests/v7/Input/t06.in">tests/v7/Input/t06.in</a>   
 
 test partial dos calculation with spinors (previously not enabled) and spin polarization while we are at it
 
 Executable: abinit   
-Keywords(s): PARTIAL_DOS, abinit   
+Keywords(s): abinit, PARTIAL_DOS   
 Topic(s): [[topic:spinpolarisation]]  
 Author(s): M. Verstraete  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t07.in">tests/v7/Input/t07.in</a>   
+### <a href="/tests/v7/Input/t07.in">tests/v7/Input/t07.in</a>   
 
 Test of the extension of the pspcod=8 input format to include spin-orbit coupling with multiple non-local projectors.  The band structure of fcc Pt is computed at Gamma,  X,  and L. The pseudopotential used in the test is generated by the open-source ONCVPSP code,  which is available at www.mat-simresearch.com,  and described in D. R. Hamann,  Phys. Rev. B 88,  085177 (2013). The relativistic extension is documented in the code package. The Pt 5s and 5p semi-cores are treated as valence,  and the band structure is well-converged at the ecut used in the test (20 Ha). A complete description of the input format is avaiable in doc/psp_infos/psp8_info.txt.
 
@@ -10026,19 +10026,19 @@ Author(s): D.R. Hamann
 
 * * *
 
-###  <a href="/tests/v7/Input/t08.in">tests/v7/Input/t08.in</a>   
+### <a href="/tests/v7/Input/t08.in">tests/v7/Input/t08.in</a>   
 
 Hydrogen molecule: Test the Path-Integral Molecular Dynamics (PIMD) implementation in (N, V, T) ensemble. THe two thermostats (Nose-Hoover chains and Langevin) are tested together with the three coordinate systems (primitive,  normal mode,  staging). NOTE: MPI run with 2 procs is ok but fldiff comparison fails due to an extra section with --- Pseudopotential description --
 
 Executable: abinit   
-Keywords(s): PIMD, abinit, NVT   
+Keywords(s): NVT, PIMD, abinit   
 Topic(s): [[topic:PIMD]]  
 Author(s): G. Geneste  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t09.in">tests/v7/Input/t09.in</a>   
+### <a href="/tests/v7/Input/t09.in">tests/v7/Input/t09.in</a>   
 
 Test the extrapolation of then wave functions from one structural relaxation (time) step to the other: extrapwf=1 WARNING: this feature is stil experimental and probably buggy. Si,  Bulk,  2 atoms
 
@@ -10049,31 +10049,31 @@ Author(s): M. Torrent
 
 * * *
 
-###  <a href="/tests/v7/Input/t10.in">tests/v7/Input/t10.in</a>   
+### <a href="/tests/v7/Input/t10.in">tests/v7/Input/t10.in</a>   
 
 Nickel ferromagnetic fcc structure with an ONCVPSP pseudo containing valence density. We test several improvements that are available when the NC file contains the PS valence charge. More specifically,  we test the initialization of the density from atomic quantities (initro.F90), the correction to the forces due to the residuals and the extrapolation of the density for structural relaxations (well,  xred is fixed by symmetry). We also test the treatment of the core charge in G-space in the case of GS calculations By default,  abinit handles XCCC in real space,  here we use nc_xccc_gspace==1 to treat it in G-space using the same approach as the one used in PAW.
 
 Executable: abinit   
-Keywords(s): abinit, psp8, NC   
+Keywords(s): psp8, abinit, NC   
 Topic(s): [[topic:GeoOpt]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t11.in">tests/v7/Input/t11.in</a>   
+### <a href="/tests/v7/Input/t11.in">tests/v7/Input/t11.in</a>   
 
 Boron,  32 atoms - Thomas-Fermi method (without orbitals) Test the temperature-dependent XC functional (ixc=50) (Ichimaru et al Phys. Rep. 149,  91-205 (1987) Test the von Weizsacker gradient correction (tfkinfunc=11 or 12)
 
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:Recursion]]  
-Author(s): M. Torrent, JF. Danel  
+Author(s): JF. Danel, M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t12.in">tests/v7/Input/t12.in</a>   
+### <a href="/tests/v7/Input/t12.in">tests/v7/Input/t12.in</a>   
 
 Similar to v7[07]. Here we test optdriver 8 (WFK post-processing) with NC and SO. More specifically,  we reconstruct the wavefunctions in the full BZ in dataset 2 and we use this WFK to restart the calculation in dataset 3 with the full k-mesh (kptopt 3). The SCF cycle should exit at the first iteration since the wavefunctions are already converged.
 
@@ -10084,7 +10084,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v7/Input/t13.in">tests/v7/Input/t13.in</a>   
+### <a href="/tests/v7/Input/t13.in">tests/v7/Input/t13.in</a>   
 
 Fake body-centered tetragonal crystal This test checks the capability of ABINIT to identify and correct inaccurate primitive vectors using the tolsym input variable.
 
@@ -10094,7 +10094,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v7/Input/t14.in">tests/v7/Input/t14.in</a>   
+### <a href="/tests/v7/Input/t14.in">tests/v7/Input/t14.in</a>   
 
 Fake c-face-centered orthorhombic lattice This test checks the capability of ABINIT to treat homogeneous sets of shiftk values,  and to recover the correct kptrlen value
 
@@ -10104,7 +10104,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/v7/Input/t15.in">tests/v7/Input/t15.in</a>   
+### <a href="/tests/v7/Input/t15.in">tests/v7/Input/t15.in</a>   
 
 Test tolmxde input variable. For silicon supercell with atomic positions randomly displaced
 
@@ -10115,19 +10115,19 @@ Author(s): D. Waroquiers
 
 * * *
 
-###  <a href="/tests/v7/Input/t16.in">tests/v7/Input/t16.in</a>   
+### <a href="/tests/v7/Input/t16.in">tests/v7/Input/t16.in</a>   
 
 Random stopping power within RPA and TD-LDA
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:RandStopPow]]  
-Author(s): F. Bruneval, A. Shukri  
+Author(s): A. Shukri, F. Bruneval  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t17.in">tests/v7/Input/t17.in</a>   
+### <a href="/tests/v7/Input/t17.in">tests/v7/Input/t17.in</a>   
 
 Test of the extension of the pspcod=8 input format to include spin-orbit coupling with multiple non-local projectors and pseudized valence charge density The relativistic extension is documented in the code package. The Pt 5s and 5p semi-cores are treated as valence. A complete description of the input format is avaiable in  doc/psp_infos/psp8_info.txt.
 
@@ -10139,19 +10139,19 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>   
+### <a href="/tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>   
 
 (Apparently the documentation section of this test has been lost)
 
 Executable: abinit   
-Keywords(s): DMFT, abinit   
+Keywords(s): abinit, DMFT   
 Topic(s): [[topic:DFT+U]], [[topic:DMFT]]  
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t22.in">tests/v7/Input/t22.in</a>   
+### <a href="/tests/v7/Input/t22.in">tests/v7/Input/t22.in</a>   
 
 EuO rock salt structure. 27-electron PAW pseudo (4f and 5d are explicitly treated : 4d10 4f7 5s2 5p6 (5d0) 6s2 ) Test of initialisation using occopt=1 (the default) with non-zero spinmagntarget, and also metallic occopt. Also test pawxcdev=0
 
@@ -10163,43 +10163,43 @@ Author(s): B. Amadon
 
 * * *
 
-###  <a href="/tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>   
+### <a href="/tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>   
 
 For SrVO3,  compute density,  WFC and KSS files.
 
 Executable: abinit   
-Keywords(s): FAILS_IFMPI, cRPA, DMFT, abinit, GW   
+Keywords(s): abinit, FAILS_IFMPI, cRPA, DMFT, GW   
 Topic(s): [[topic:CRPA]]  
 Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>   
+### <a href="/tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>   
 
 Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, GW, cRPA   
+Keywords(s): GW, abinit, cRPA, DMFT   
 Topic(s): [[topic:CRPA]]  
 Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>   
+### <a href="/tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>   
 
 Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24.
 
 Executable: abinit   
-Keywords(s): FAILS_IFMPI, cRPA, DMFT, abinit, GW   
+Keywords(s): abinit, FAILS_IFMPI, cRPA, DMFT, GW   
 Topic(s): [[topic:CRPA]]  
 Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t26.in">tests/v7/Input/t26.in</a>   
+### <a href="/tests/v7/Input/t26.in">tests/v7/Input/t26.in</a>   
 
 LiH rocksalt structure with a negative lithium vacancy test thee potential alignement usepotzero=0, 1
 
@@ -10211,64 +10211,64 @@ Author(s): F. Bruneval
 
 * * *
 
-###  <a href="/tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>   
+### <a href="/tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>   
 
 Test CT-QMC within DMFT for VSrO3 NSCF over density
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, FAILS_IFMPI   
+Keywords(s): CTQMC, abinit, FAILS_IFMPI, DMFT   
 Topic(s): [[topic:DMFT]]  
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>   
+### <a href="/tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>   
 
 Test CT-QMC options only. Not realistic
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, FAILS_IFMPI   
+Keywords(s): CTQMC, abinit, FAILS_IFMPI, DMFT   
 Topic(s): [[topic:DMFT]]  
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>   
+### <a href="/tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>   
 
 Test CT-QMC options only. Not realistic
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, FAILS_IFMPI   
+Keywords(s): CTQMC, abinit, FAILS_IFMPI, DMFT   
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>   
+### <a href="/tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>   
 
 Test entropy calculation for SrVO3 within DMFT
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, FAILS_IFMPI   
+Keywords(s): CTQMC, abinit, FAILS_IFMPI, DMFT   
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>   
+### <a href="/tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>   
 
 Test restart of entropy calculation for SrVO3 within DMFT
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, FAILS_IFMPI   
+Keywords(s): CTQMC, abinit, FAILS_IFMPI, DMFT   
 Author(s): B. Amadon, J. Bieder  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t32.in">tests/v7/Input/t32.in</a>   
+### <a href="/tests/v7/Input/t32.in">tests/v7/Input/t32.in</a>   
 
 Test presence of nuclear magnetic dipole moments on atomic sites
 
@@ -10280,42 +10280,42 @@ Author(s): J. Zwanziger
 
 * * *
 
-###  <a href="/tests/v7/Input/t35.in">tests/v7/Input/t35.in</a>   
+### <a href="/tests/v7/Input/t35.in">tests/v7/Input/t35.in</a>   
 
 Test of the computation of the electron-positron Doppler broadening (using the two-component DFT) within PAW. A cubic box with 4 Al atoms at experimental volume. Low cut-offs,  few k-points. Computes the positron lifetime and well as the electron-positron pairs momentum distributions,  after the SCF iterations.
 
 Executable: abinit   
-Keywords(s): abinit, PAW, positron   
+Keywords(s): positron, abinit, PAW   
 Topic(s): [[topic:positron]]  
 Author(s): M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t36.in">tests/v7/Input/t36.in</a>   
+### <a href="/tests/v7/Input/t36.in">tests/v7/Input/t36.in</a>   
 
 Si in diamond structure. Test ABINIT --> LOBSTER converter. The first dataset performs a standard SCF run with symmetries. The second dataset calls the converter to generate a new WFK in the full BZ with istwfk==1. The third dataset reads the WFK in the full BZ and it's expected to exit after the first iteration since wavefunctions are already converged.
 
 Executable: abinit   
-Keywords(s): LOBSTER, abinit, PAW   
+Keywords(s): abinit, LOBSTER, PAW   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t41.in">tests/v7/Input/t41.in</a>   
+### <a href="/tests/v7/Input/t41.in">tests/v7/Input/t41.in</a>   
 
 Silicon,  DDK computation to prepare 'optic'
 
 Executable: abinit   
-Keywords(s): abinit, DDK, DFPT, NC   
+Keywords(s): DDK, abinit, DFPT, NC   
 Topic(s): [[topic:Optic]]  
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t42.in">tests/v7/Input/t42.in</a>   
+### <a href="/tests/v7/Input/t42.in">tests/v7/Input/t42.in</a>   
 
 Silicon,  'optic' test with scissor
 
@@ -10327,7 +10327,7 @@ Author(s): Y. Gillet
 
 * * *
 
-###  <a href="/tests/v7/Input/t43.in">tests/v7/Input/t43.in</a>   
+### <a href="/tests/v7/Input/t43.in">tests/v7/Input/t43.in</a>   
 
 EuO rock salt structure. 20-electron PAW pseudo (4f in the core,  but 4d10 as semi-core : 4d10 5s2 5p6 (5d0) 6s2 ) Test of computation of dielectric tensor,  Born effective charges,  dynamical matrix. To keep the CPU time to a reasonable level,  the responses are computed with minimal parameters (nstep and the kpoint grid are too small, ecut might be increased,  and also pawecutdg). Note: Charge neutrality is not achieved with the present dataset for Born Effective Charges, but can be easily reached by increasing some parameters;  for instance: (ngkpt 6 6 6,   ecut 40. pawecutdg 40.) gives Z(Eu)=2.5085,  Z(O)=-2.4982
 
@@ -10338,19 +10338,19 @@ Topic(s): [[topic:DFPT]]
 
 * * *
 
-###  <a href="/tests/v7/Input/t45.in">tests/v7/Input/t45.in</a>   
+### <a href="/tests/v7/Input/t45.in">tests/v7/Input/t45.in</a>   
 
 This tests uses psps8 files with model core charges and valence charge densities. We test the initialization of rhor1,  rhog1 from atomic quantities and the treatment of the non-linear core correction in G-space (nc_xccc_gspace).
 
 Executable: abinit   
-Keywords(s): abinit, DFPT, psp8, NC   
+Keywords(s): psp8, abinit, DFPT, NC   
 Topic(s): [[topic:DFPT]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t46.in">tests/v7/Input/t46.in</a>   
+### <a href="/tests/v7/Input/t46.in">tests/v7/Input/t46.in</a>   
 
 Si in diamond structure;  2 special points;  low ecut. With a 4x4x4 k point grid (!only one shift,  but OK because symmetry is imposed),  compute the dielectric constant with a scissor . Note that the fulfilment of the charge neutrality sum rule,  already broken without a scissor operator,  is strongly affected by a scissor
 
@@ -10360,7 +10360,7 @@ Keywords(s): abinit, DFPT, NC
 
 * * *
 
-###  <a href="/tests/v7/Input/t47.in">tests/v7/Input/t47.in</a>   
+### <a href="/tests/v7/Input/t47.in">tests/v7/Input/t47.in</a>   
 
 GaAs,  zinc-blende structure. Generate the data for optic (linear and non-linear coefficients). to be analysed in the test 48.
 
@@ -10372,7 +10372,7 @@ Author(s): Y. Gillet
 
 * * *
 
-###  <a href="/tests/v7/Input/t48.in">tests/v7/Input/t48.in</a>   
+### <a href="/tests/v7/Input/t48.in">tests/v7/Input/t48.in</a>   
 
 GaAs,  zinc-blende structure. Code optic.
 
@@ -10384,31 +10384,31 @@ Author(s): Y. Gillet
 
 * * *
 
-###  <a href="/tests/v7/Input/t50.in">tests/v7/Input/t50.in</a>   
+### <a href="/tests/v7/Input/t50.in">tests/v7/Input/t50.in</a>   
 
 Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . The temperature-dependent shifts must be averaged over degenerate states. This temperature-dependent calculation make use of a k-point interpolation to speed up the convergence study with respect to the q-points integration. Two q-points are computed.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t51.in">tests/v7/Input/t51.in</a>   
+### <a href="/tests/v7/Input/t51.in">tests/v7/Input/t51.in</a>   
 
 This tests make use of the irdwfkfine variable instead of the getwfkfine variable used in the previous test. The third q-point is computed here.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t52.in">tests/v7/Input/t52.in</a>   
+### <a href="/tests/v7/Input/t52.in">tests/v7/Input/t52.in</a>   
 
 Merge the EIGR2D files from test 50 and 51.
 
@@ -10420,7 +10420,7 @@ Author(s): S. Ponc\'e
 
 * * *
 
-###  <a href="/tests/v7/Input/t53.in">tests/v7/Input/t53.in</a>   
+### <a href="/tests/v7/Input/t53.in">tests/v7/Input/t53.in</a>   
 
 Merge the EIGR2D files from test 50 and 51.
 
@@ -10432,7 +10432,7 @@ Author(s): S. Ponc\'e
 
 * * *
 
-###  <a href="/tests/v7/Input/t54.in">tests/v7/Input/t54.in</a>   
+### <a href="/tests/v7/Input/t54.in">tests/v7/Input/t54.in</a>   
 
 Use anaddb to compute the T-dependent correction of electronic structure.
 
@@ -10444,55 +10444,55 @@ Author(s): S. Ponc\'e
 
 * * *
 
-###  <a href="/tests/v7/Input/t55.in">tests/v7/Input/t55.in</a>   
+### <a href="/tests/v7/Input/t55.in">tests/v7/Input/t55.in</a>   
 
 Diamond. Diamond dynamical temperature-dependent of the electronic structure. Three q-points are computed.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t57.in">tests/v7/Input/t57.in</a>   
+### <a href="/tests/v7/Input/t57.in">tests/v7/Input/t57.in</a>   
 
 Diamond. The wtq variable is introduced to be able to reproduce the q-point weight obtained with ngqpt and qptopt. The main reason being that the initialization of large q-point (same for k-point) grid is extremely slow. Inputing manually the qpt and wtq in the input file avoid such inefficient initialization.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t58.in">tests/v7/Input/t58.in</a>   
+### <a href="/tests/v7/Input/t58.in">tests/v7/Input/t58.in</a>   
 
 Diamond. Test the getddb variable that cancels the divergence in el-ph for small q-points Such divergence is induced by a residual electric field. Note: The Fan terms in DATASET 6 should be different (renormalized) from the one of DATASET 5.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t59.in">tests/v7/Input/t59.in</a>   
+### <a href="/tests/v7/Input/t59.in">tests/v7/Input/t59.in</a>   
 
 Diamond. Test the getddb variable that cancels the divergence in el-ph for small q-points Such divergence is induced by a residual electric field. Note: DATASET 7 test the irdddb that should behave exactly as getddb.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:TDepES]]  
 Author(s): S. Ponc\'e  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t60.in">tests/v7/Input/t60.in</a>   
+### <a href="/tests/v7/Input/t60.in">tests/v7/Input/t60.in</a>   
 
 Bulk aluminum,  with and without PAW XML data (FJollet)
 
@@ -10503,7 +10503,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v7/Input/t61.in">tests/v7/Input/t61.in</a>   
+### <a href="/tests/v7/Input/t61.in">tests/v7/Input/t61.in</a>   
 
 Bulk aluminum,  with PAW XML data designed for PWPAW (F Jollet)
 
@@ -10514,7 +10514,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v7/Input/t62.in">tests/v7/Input/t62.in</a>   
+### <a href="/tests/v7/Input/t62.in">tests/v7/Input/t62.in</a>   
 
 Bulk aluminum,  with PAW XML data designed for GPAW (F Jollet)
 
@@ -10525,7 +10525,7 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v7/Input/t63.in">tests/v7/Input/t63.in</a>   
+### <a href="/tests/v7/Input/t63.in">tests/v7/Input/t63.in</a>   
 
 Fe bcc structure (ferromagnetic metal),  with numerical shape function with and without PAW XML data.
 
@@ -10536,101 +10536,101 @@ Author(s): F. Jollet
 
 * * *
 
-###  <a href="/tests/v7/Input/t64.in">tests/v7/Input/t64.in</a>   
+### <a href="/tests/v7/Input/t64.in">tests/v7/Input/t64.in</a>   
 
 Test of input variable "accuracy" (F. Jollet)
 
 Executable: abinit   
-Keywords(s): XML, abinit   
+Keywords(s): abinit, XML   
 Author(s): F. Jollet  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t65.in">tests/v7/Input/t65.in</a>   
+### <a href="/tests/v7/Input/t65.in">tests/v7/Input/t65.in</a>   
 
 Test of PBE0 in sequential case
 
 Executable: abinit   
-Keywords(s): HF, abinit, PBE0, FAILS_IFMPI   
+Keywords(s): abinit, PBE0, HF, FAILS_IFMPI   
 Topic(s): [[topic:Hybrids]]  
 Author(s): C. Martins  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t66.in">tests/v7/Input/t66.in</a>   
+### <a href="/tests/v7/Input/t66.in">tests/v7/Input/t66.in</a>   
 
 Test of PBE0 in sequential case
 
 Executable: abinit   
-Keywords(s): HF, abinit, PBE0, FAILS_IFMPI   
+Keywords(s): abinit, PBE0, HF, FAILS_IFMPI   
 Topic(s): [[topic:Hybrids]]  
 Author(s): C. Martins  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t70.in">tests/v7/Input/t70.in</a>   
+### <a href="/tests/v7/Input/t70.in">tests/v7/Input/t70.in</a>   
 
 Test of HF in PAW
 
 Executable: abinit   
-Keywords(s): HF, abinit   
+Keywords(s): abinit, HF   
 Author(s): F. Jollet  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t71.in">tests/v7/Input/t71.in</a>   
+### <a href="/tests/v7/Input/t71.in">tests/v7/Input/t71.in</a>   
 
 Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis
 
 Executable: abinit   
-Keywords(s): Projected_Wannier, abinit, PAW   
+Keywords(s): abinit, Projected_Wannier, PAW   
 Topic(s): [[topic:Wannier]], [[topic:ElecBandStructure]]  
 Author(s): A. Gerossier, B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t72.in">tests/v7/Input/t72.in</a>   
+### <a href="/tests/v7/Input/t72.in">tests/v7/Input/t72.in</a>   
 
 Calculation of Projected Wannier functions and compute a simplified interpolated band structure
 
 Executable: abinit   
-Keywords(s): Projected_Wannier, abinit, PAW   
+Keywords(s): abinit, Projected_Wannier, PAW   
 Topic(s): [[topic:Wannier]], [[topic:ElecBandStructure]]  
 Author(s): A. Gerossier and B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>   
+### <a href="/tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>   
 
 For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, GW, cRPA   
+Keywords(s): GW, abinit, cRPA, DMFT   
 Topic(s): [[topic:CRPA]]  
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t79.in">tests/v7/Input/t79.in</a>   
+### <a href="/tests/v7/Input/t79.in">tests/v7/Input/t79.in</a>   
 
 For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, GW, cRPA   
+Keywords(s): GW, abinit, cRPA, DMFT   
 Topic(s): [[topic:CRPA]]  
 Author(s): B. Amadon  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t80.in">tests/v7/Input/t80.in</a>   
+### <a href="/tests/v7/Input/t80.in">tests/v7/Input/t80.in</a>   
 
 Germanium. Germanium effective mass tensor at \Gamma and 0.25 0.00 0.00.
 
@@ -10642,7 +10642,7 @@ Author(s): J. Laflamme Janssen
 
 * * *
 
-###  <a href="/tests/v7/Input/t81.in">tests/v7/Input/t81.in</a>   
+### <a href="/tests/v7/Input/t81.in">tests/v7/Input/t81.in</a>   
 
 Silicon. Silicon effective mass tensor in PAW for multiple bands and k-points.
 
@@ -10654,7 +10654,7 @@ Author(s): J. Laflamme Janssen
 
 * * *
 
-###  <a href="/tests/v7/Input/t82.in">tests/v7/Input/t82.in</a>   
+### <a href="/tests/v7/Input/t82.in">tests/v7/Input/t82.in</a>   
 
 Silicon. Silicon effective mass tensor in PAW with Spin-Orbit coupling.
 
@@ -10665,40 +10665,40 @@ Author(s): J. Laflamme Janssen
 
 * * *
 
-###  <a href="/tests/v7/Input/t83.in">tests/v7/Input/t83.in</a>   
+### <a href="/tests/v7/Input/t83.in">tests/v7/Input/t83.in</a>   
 
 O2 Oxygen spin-temperature-dependent of the band energies
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): Y. Gillet  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t85.in">tests/v7/Input/t85.in</a>   
+### <a href="/tests/v7/Input/t85.in">tests/v7/Input/t85.in</a>   
 
 Preparatory run for E-PH calculations. The sequence of datasets makes the ground states and all of the independent perturbations of the single Al atom for the irreducible qpoints in a 4x4x4 grid. Note that the q-point grid must be a sub-grid of the k-point grid (here 8x8x8)
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t86.in">tests/v7/Input/t86.in</a>   
+### <a href="/tests/v7/Input/t86.in">tests/v7/Input/t86.in</a>   
 
 Merge the DDB files for Al produced on a 4x4x4 q-mesh.
 
 Executable: mrgddb   
-Keywords(s): EPH, DFPT, mrgddb, NC   
+Keywords(s): EPH, DFPT, NC, mrgddb   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t87.in">tests/v7/Input/t87.in</a>   
+### <a href="/tests/v7/Input/t87.in">tests/v7/Input/t87.in</a>   
 
 Merge the DFPT POT files for Al produced on a 4x4x4 q-mesh.
 
@@ -10709,31 +10709,31 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v7/Input/t88.in">tests/v7/Input/t88.in</a>   
+### <a href="/tests/v7/Input/t88.in">tests/v7/Input/t88.in</a>   
 
 Calculation of phonon linewidths and e-ph coupling parameter lambda.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]  
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t89.in">tests/v7/Input/t89.in</a>   
+### <a href="/tests/v7/Input/t89.in">tests/v7/Input/t89.in</a>   
 
 Calculation of e-ph coupling matrix elements
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Topic(s): [[topic:ElPhonInt]]  
 Author(s): G. Antonius  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t90.in">tests/v7/Input/t90.in</a>   
+### <a href="/tests/v7/Input/t90.in">tests/v7/Input/t90.in</a>   
 
 Ground state and phonons of bcc Li
 
@@ -10745,7 +10745,7 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v7/Input/t91.in">tests/v7/Input/t91.in</a>   
+### <a href="/tests/v7/Input/t91.in">tests/v7/Input/t91.in</a>   
 
 mrgddb of test 90
 
@@ -10757,7 +10757,7 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v7/Input/t92.in">tests/v7/Input/t92.in</a>   
+### <a href="/tests/v7/Input/t92.in">tests/v7/Input/t92.in</a>   
 
 mrggkk of test 90
 
@@ -10769,7 +10769,7 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v7/Input/t93.in">tests/v7/Input/t93.in</a>   
+### <a href="/tests/v7/Input/t93.in">tests/v7/Input/t93.in</a>   
 
 anaddb test electron phonon coupling transport in inelastic Variational Approximation,  on bcc Li
 
@@ -10781,7 +10781,7 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v7/Input/t94.in">tests/v7/Input/t94.in</a>   
+### <a href="/tests/v7/Input/t94.in">tests/v7/Input/t94.in</a>   
 
 anaddb test electron phonon coupling electron lifetime calculation,  on bcc Li
 
@@ -10793,31 +10793,31 @@ Author(s): B. Xu
 
 * * *
 
-###  <a href="/tests/v7/Input/t95.in">tests/v7/Input/t95.in</a>   
+### <a href="/tests/v7/Input/t95.in">tests/v7/Input/t95.in</a>   
 
 Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. Finite-difference runs with strain component 1 (1def) is computed DFPT is computed Comparaison with Finite Diferrences give excellent agreement ~1e-5% DFPT is computed with usexcnhat==0 (Just for test)
 
 Executable: abinit   
-Keywords(s): abinit, ELASTIC, DFPT, PAW   
+Keywords(s): abinit, DFPT, ELASTIC, PAW   
 Topic(s): [[topic:Elastic]]  
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t96.in">tests/v7/Input/t96.in</a>   
+### <a href="/tests/v7/Input/t96.in">tests/v7/Input/t96.in</a>   
 
 MG Note that this test fails with np=4,  wrong results or SIGSEV (np=2 is ok). Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. Finite-difference runs with strain direction 1   is computed Finite-difference runs with atom displacement 1  is computed DFPT is computed Comparaison with Finite Diferrences give excellent agreement DFPT is computed with usexcnhat==0 (Just for test)
 
 Executable: abinit   
-Keywords(s): DFPT, FAILS_IFMPI, ELASTIC, PAW, INTERNAL_STRAIN, abinit   
+Keywords(s): DFPT, INTERNAL_STRAIN, ELASTIC, abinit, FAILS_IFMPI, PAW   
 Topic(s): [[topic:Elastic]]  
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t97.in">tests/v7/Input/t97.in</a>   
+### <a href="/tests/v7/Input/t97.in">tests/v7/Input/t97.in</a>   
 
 Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term
 
@@ -10829,24 +10829,24 @@ Author(s): B. VAN TROEYE
 
 * * *
 
-###  <a href="/tests/v7/Input/t98.in">tests/v7/Input/t98.in</a>   
+### <a href="/tests/v7/Input/t98.in">tests/v7/Input/t98.in</a>   
 
 Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix
 
 Executable: abinit   
-Keywords(s): abinit, DFPT, DFT-D3(BJ), VDW   
+Keywords(s): DFT-D3(BJ), VDW, DFPT, abinit   
 Topic(s): [[topic:vdw]]  
 Author(s): B. VAN TROEYE  
 
 
 * * *
 
-###  <a href="/tests/v7/Input/t99.in">tests/v7/Input/t99.in</a>   
+### <a href="/tests/v7/Input/t99.in">tests/v7/Input/t99.in</a>   
 
 Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains
 
 Executable: abinit   
-Keywords(s): DFPT, ELASTIC, VDW, abinit, DFT-D3(BJ)   
+Keywords(s): VDW, DFPT, ELASTIC, DFT-D3(BJ), abinit   
 Topic(s): [[topic:vdw]]  
 Author(s): B. VAN TROEYE  
 
@@ -10855,18 +10855,18 @@ Author(s): B. VAN TROEYE
 
 ##  v8  
 
-###  <a href="/tests/v8/Input/t01.in">tests/v8/Input/t01.in</a>   
+### <a href="/tests/v8/Input/t01.in">tests/v8/Input/t01.in</a>   
 
 Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density
 
 Executable: abinit   
-Keywords(s): DMFT, abinit, CTQMC, TRIQS   
-Author(s): V. Planes, B. Amadon  
+Keywords(s): CTQMC, abinit, TRIQS, DMFT   
+Author(s): B. Amadon, V. Planes  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t02.in">tests/v8/Input/t02.in</a>   
+### <a href="/tests/v8/Input/t02.in">tests/v8/Input/t02.in</a>   
 
 Geometry optimization with LBFGS
 
@@ -10877,7 +10877,7 @@ Author(s): F. Bruneval
 
 * * *
 
-###  <a href="/tests/v8/Input/t03.in">tests/v8/Input/t03.in</a>   
+### <a href="/tests/v8/Input/t03.in">tests/v8/Input/t03.in</a>   
 
 Test generation of k-point mesh with kptrlatt and shiftk. version 8.0.8b was stopping at the level of the parser.
 
@@ -10888,7 +10888,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v8/Input/t04.in">tests/v8/Input/t04.in</a>   
+### <a href="/tests/v8/Input/t04.in">tests/v8/Input/t04.in</a>   
 
 Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)
 
@@ -10900,41 +10900,41 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v8/Input/t05.in">tests/v8/Input/t05.in</a>   
+### <a href="/tests/v8/Input/t05.in">tests/v8/Input/t05.in</a>   
 
 H2 molecule: PIMD simulation with Langevin thermostat. Test of restart with HIST.nc file. Test of linear constraint.
 
 Executable: abinit   
-Keywords(s): PIMD, abinit, PAW   
+Keywords(s): abinit, PIMD, PAW   
 Author(s): M. Torrent  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t06.in">tests/v8/Input/t06.in</a>   
+### <a href="/tests/v8/Input/t06.in">tests/v8/Input/t06.in</a>   
 
 read xml and generate effective potential and run NPT simulation
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t07.in">tests/v8/Input/t07.in</a>   
+### <a href="/tests/v8/Input/t07.in">tests/v8/Input/t07.in</a>   
 
 Computation of elastic tensor and internal strain in DFPT+PAW Ground state is computed. DFPT is computed
 
 Executable: abinit   
-Keywords(s): abinit, ELASTIC, DFPT, PAW   
+Keywords(s): abinit, DFPT, ELASTIC, PAW   
 Topic(s): [[topic:DFPT]]  
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t08.in">tests/v8/Input/t08.in</a>   
+### <a href="/tests/v8/Input/t08.in">tests/v8/Input/t08.in</a>   
 
 mrgddb
 
@@ -10945,40 +10945,40 @@ Author(s): A. Martin
 
 * * *
 
-###  <a href="/tests/v8/Input/t09.in">tests/v8/Input/t09.in</a>   
+### <a href="/tests/v8/Input/t09.in">tests/v8/Input/t09.in</a>   
 
 read ddb and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t10.in">tests/v8/Input/t10.in</a>   
+### <a href="/tests/v8/Input/t10.in">tests/v8/Input/t10.in</a>   
 
 read xml and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t11.in">tests/v8/Input/t11.in</a>   
+### <a href="/tests/v8/Input/t11.in">tests/v8/Input/t11.in</a>   
 
 read xml and generate effective potential in XML file
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t12.in">tests/v8/Input/t12.in</a>   
+### <a href="/tests/v8/Input/t12.in">tests/v8/Input/t12.in</a>   
 
 Simple test of velocity verlet integrator
 
@@ -10990,29 +10990,29 @@ Author(s): S. PROKHORENKO
 
 * * *
 
-###  <a href="/tests/v8/Input/t13.in">tests/v8/Input/t13.in</a>   
+### <a href="/tests/v8/Input/t13.in">tests/v8/Input/t13.in</a>   
 
 read ddb and HIST,  fit the anharmonic part and generate effective potential
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t14.in">tests/v8/Input/t14.in</a>   
+### <a href="/tests/v8/Input/t14.in">tests/v8/Input/t14.in</a>   
 
 read ddb and HIST,  fit the anharmonic part and generate effective potential
 
 Executable: multibinit   
-Keywords(s): Effective potential, multibinit   
+Keywords(s): multibinit, Effective potential   
 Author(s): A. MARTIN  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t20.in">tests/v8/Input/t20.in</a>   
+### <a href="/tests/v8/Input/t20.in">tests/v8/Input/t20.in</a>   
 
 Response of magnetic metal to external magnetic field. First,  ground state wf is computed,  then dfpt calculation.
 
@@ -11024,7 +11024,7 @@ Author(s): S. PROKHORENKO
 
 * * *
 
-###  <a href="/tests/v8/Input/t30.in">tests/v8/Input/t30.in</a>   
+### <a href="/tests/v8/Input/t30.in">tests/v8/Input/t30.in</a>   
 
 LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus. The z coordinate of the molecule is changed from 0 to 5 Bohr. There is a linear part to the chemical potential. The energy and force should be the same in datasets 11 to 15 (without chemical potentiel). One sees that this is not completely the case. The force along z vanishes in these cases,  because the translational invariance is imposed by ABINIT. In datasets 21 to 23,  the energy should increase linearly,  and the force along z should be non-zero and constant. Small fluctuations are observed. Dataset 24 and 25 corresponds to the cubic part of the chemical potential. Dataset 26 places the molecule at a symmetric value of z. The total energy should be the same as with dataset 11,  16,  or 21.
 
@@ -11035,7 +11035,7 @@ Author(s): X. Gonze
 
 * * *
 
-###  <a href="/tests/v8/Input/t31.in">tests/v8/Input/t31.in</a>   
+### <a href="/tests/v8/Input/t31.in">tests/v8/Input/t31.in</a>   
 
 LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly.
 
@@ -11046,29 +11046,29 @@ Author(s): X. Gonze
 
 * * *
 
-###  <a href="/tests/v8/Input/t41.in">tests/v8/Input/t41.in</a>   
+### <a href="/tests/v8/Input/t41.in">tests/v8/Input/t41.in</a>   
 
 WARNING: This code is still under development. Use at your own risk! Preparatory run for the calculation of the Fan-Migdal + Debye-Waller self-energy C in diamond structure. Very rough 2x2x2 q-point grid (3 qpoints);  low ecut.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t42.in">tests/v8/Input/t42.in</a>   
+### <a href="/tests/v8/Input/t42.in">tests/v8/Input/t42.in</a>   
 
 Merge the DDB files produced in t41.in
 
 Executable: mrgddb   
-Keywords(s): EPH, DFPT, mrgddb, NC   
+Keywords(s): EPH, DFPT, NC, mrgddb   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t43.in">tests/v8/Input/t43.in</a>   
+### <a href="/tests/v8/Input/t43.in">tests/v8/Input/t43.in</a>   
 
 Merge the DFPT POT files produced in t41.in
 
@@ -11079,18 +11079,18 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v8/Input/t44.in">tests/v8/Input/t44.in</a>   
+### <a href="/tests/v8/Input/t44.in">tests/v8/Input/t44.in</a>   
 
 WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements.
 
 Executable: abinit   
-Keywords(s): EPH, DFPT, abinit, NC   
+Keywords(s): EPH, DFPT, NC, abinit   
 Author(s): M. Giantomassi  
 
 
 * * *
 
-###  <a href="/tests/v8/Input/t45.in">tests/v8/Input/t45.in</a>   
+### <a href="/tests/v8/Input/t45.in">tests/v8/Input/t45.in</a>   
 
 Calculation of Gruneisen parameters.
 
@@ -11101,7 +11101,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v8/Input/t46.in">tests/v8/Input/t46.in</a>   
+### <a href="/tests/v8/Input/t46.in">tests/v8/Input/t46.in</a>   
 
 Test cutoff of IFCs with nsphere - 1. The vibrational spectrum obtained without cutoff shows instabilities around Gamma and unphysical oscillation due to the long-range behavior. A cutoff is needed in order to recover the linear dispersion of the acoustic modes and nsphere -1 gives the first value of nsphere that does not lead to vibrational instabilites.
 
@@ -11112,7 +11112,7 @@ Author(s): M. Giantomassi
 
 * * *
 
-###  <a href="/tests/v8/Input/t47.in">tests/v8/Input/t47.in</a>   
+### <a href="/tests/v8/Input/t47.in">tests/v8/Input/t47.in</a>   
 
 AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 48,  49 and 50.
 
@@ -11123,7 +11123,7 @@ Author(s): F. Naccarato
 
 * * *
 
-###  <a href="/tests/v8/Input/t48.in">tests/v8/Input/t48.in</a>   
+### <a href="/tests/v8/Input/t48.in">tests/v8/Input/t48.in</a>   
 
 AlAs,  zinc-blende structure. Code mrgddb Merge the two DDBs generated by test 47,  for further use in test 49 and 50.
 
@@ -11134,7 +11134,7 @@ Author(s): F. Naccarato
 
 * * *
 
-###  <a href="/tests/v8/Input/t49.in">tests/v8/Input/t49.in</a>   
+### <a href="/tests/v8/Input/t49.in">tests/v8/Input/t49.in</a>   
 
 AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test t48,  for the generation of the nonlinear coefficients and the first order change of the dielectric tensor.
 
@@ -11146,7 +11146,7 @@ Author(s): F. Naccarato
 
 * * *
 
-###  <a href="/tests/v8/Input/t50.in">tests/v8/Input/t50.in</a>   
+### <a href="/tests/v8/Input/t50.in">tests/v8/Input/t50.in</a>   
 
 AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 48,  for the generation of the nonlinear coefficients only.
 
@@ -11158,7 +11158,7 @@ Author(s): F. Naccarato
 
 * * *
 
-###  <a href="/tests/v8/Input/t51.in">tests/v8/Input/t51.in</a>   
+### <a href="/tests/v8/Input/t51.in">tests/v8/Input/t51.in</a>   
 
 Diamond structure. Interpolation of the DDB onto arbitrary q-points using the interatomic force constants.
 
@@ -11171,7 +11171,7 @@ Author(s): G. Antonius
 
 ##  vdwxc  
 
-###  <a href="/tests/vdwxc/Input/t10.in">tests/vdwxc/Input/t10.in</a>   
+### <a href="/tests/vdwxc/Input/t10.in">tests/vdwxc/Input/t10.in</a>   
 
 Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.
 
@@ -11185,7 +11185,7 @@ Author(s): M. Torrent
 
 ##  wannier90  
 
-###  <a href="/tests/wannier90/Input/t00.in">tests/wannier90/Input/t00.in</a>   
+### <a href="/tests/wannier90/Input/t00.in">tests/wannier90/Input/t00.in</a>   
 
 GaAs crystal with few bands. Very quick built-in test,  to check that Wannier90 is installed.
 
@@ -11195,7 +11195,7 @@ Keywords(s): abinit
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t01.in">tests/wannier90/Input/t01.in</a>   
+### <a href="/tests/wannier90/Input/t01.in">tests/wannier90/Input/t01.in</a>   
 
 Gallium Arsenide,  zinc-blende. 8 bands. prtwant=2 Should still be completed by the call to wannier90,  and subsequent fldiff use...
 
@@ -11206,7 +11206,7 @@ Topic(s): [[topic:Wannier]]
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t02.in">tests/wannier90/Input/t02.in</a>   
+### <a href="/tests/wannier90/Input/t02.in">tests/wannier90/Input/t02.in</a>   
 
 The same as in 01 but using PAW.
 
@@ -11217,18 +11217,18 @@ Topic(s): [[topic:Wannier]]
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t03.in">tests/wannier90/Input/t03.in</a>   
+### <a href="/tests/wannier90/Input/t03.in">tests/wannier90/Input/t03.in</a>   
 
 Cannot be executed in parallel (mlwfovl_qp) Si fcc,  in primitive cell (2 atoms/cell) Test of self-consistent model GW (2 iterations) following Faleev et al., [PRL 93,  126406 (2004)] followed by construction of quasiparticle maximally-localized wannier functions [Hamann & Vanderbilt, arXiv:0810.3616v1 (cond-mat.mtrl-sci)].  Cutoffs are set for test- acceptable speed,  and the results are poorly converged.  The input file is sufficiently annotated to serve as a model.  Note that well- converged GW calculations are extremely time consuming,  and in general it is advisable to run the SCGW part separately on a parallel system, and then run a separate serial job modeled on the last dataset, substituting "irdwfk" and "irdqps" for "getwfk" and "getqps, " with appropriate links to the files produced in the serial run.  Note that the _DEN file from the first dataset is also needed as input,  although the discontinued "irdden" input variable is not needed or supported. Note that acceptable names for the secondary input file needed by the wannier90 library are wannier90.win,  w90.win,  abo_DSn_w90.win (ndtset >0) and abo_w90.win (ndtset=0),  where abo is the 4th line of the .files file and n is the wannier dataset.
 
 Executable: abinit   
-Keywords(s): abinit, GW   
+Keywords(s): GW, abinit   
 Topic(s): [[topic:Wannier]]  
 
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t11.in">tests/wannier90/Input/t11.in</a>   
+### <a href="/tests/wannier90/Input/t11.in">tests/wannier90/Input/t11.in</a>   
 
 Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.
 
@@ -11240,7 +11240,7 @@ Author(s): C. Espejo, Y. Pouillon
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t12.in">tests/wannier90/Input/t12.in</a>   
+### <a href="/tests/wannier90/Input/t12.in">tests/wannier90/Input/t12.in</a>   
 
 Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.
 
@@ -11252,7 +11252,7 @@ Author(s): C. Espejo, Y. Pouillon
 
 * * *
 
-###  <a href="/tests/wannier90/Input/t13.in">tests/wannier90/Input/t13.in</a>   
+### <a href="/tests/wannier90/Input/t13.in">tests/wannier90/Input/t13.in</a>   
 
 Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.
 

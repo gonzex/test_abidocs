@@ -12,9 +12,9 @@ import markdown
 from collections import OrderedDict, defaultdict
 from itertools import groupby
 from html2text import html2text
-from pybtex.database import Entry, BibliographyData, parse_file
+from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
-from abimkdocs.variables import Variable
+from .variables import Variable
 
 
 def escape(text):
@@ -56,21 +56,6 @@ def splitall(path):
             path = parts[0]
             allparts.insert(0, parts[1])
     return allparts
-
-
-_WEBSITE = None
-
-def build_website(root, verbose=0):
-    global _WEBSITE
-    assert _WEBSITE is None
-    _WEBSITE = Website(root, verbose=verbose)
-    return _WEBSITE
-
-
-def get_website():
-    global _WEBSITE
-    assert _WEBSITE is not None
-    return _WEBSITE
 
 
 class MyEntry(Entry):
@@ -126,8 +111,8 @@ class MyEntry(Entry):
 
         return s
 
-    def to_html(self):
-        return markdown.markdown(self.to_markdown())
+    #def to_html(self):
+    #    return markdown.markdown(self.to_markdown())
 
     def to_bibtex(self):
         """Return the data as a unicode string in the given format."""
@@ -159,6 +144,21 @@ class MyEntry(Entry):
         return link, modal
 
 
+_WEBSITE = None
+
+def build_website(root, verbose=0):
+    global _WEBSITE
+    assert _WEBSITE is None
+    _WEBSITE = Website(root, verbose=verbose)
+    return _WEBSITE
+
+
+def get_website():
+    global _WEBSITE
+    assert _WEBSITE is not None
+    return _WEBSITE
+
+
 class Website(object):
 
     #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
@@ -175,7 +175,7 @@ class Website(object):
             self.config = yaml.load(fh)
 
         # Build database with Abinit input variables
-        from abimkdocs.variables import get_variables_code
+        from .variables import get_variables_code
         self.variables_code = get_variables_code()
 
         # Get bibtex references and cast to MyEntry instance.
@@ -244,12 +244,14 @@ class Website(object):
 
         # Write files with the description of the input variables.
         workdir = os.path.join(self.root, "input_variables")
-
         with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
             for code, vd in self.variables_code.items():
                 fh.write("## **%s** variables   \n\n" % code)
                 fh.write(vd.get_vartabs_html())
                 fh.write(2*"\n" + "* * *\n")
+
+        for code, vd in self.variables_code.items():
+            vd.write_markdown_files(workdir)
 
         # Add plotly figures.
         with io.open(os.path.join(workdir, "connections.md"), "wt", encoding="utf-8") as fh:
@@ -261,10 +263,7 @@ class Website(object):
                     #fh.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
                     fh.write(2*"\n" + "* * *\n")
 
-        for code, vd in self.variables_code.items():
-            vd.write_markdown_files(workdir)
-
-        #Input variables, statistics :
+        #Input variables, statistics:
         #occurrences in the input files provided with the package
         #This document lists the input variables for ABINIT and three post-processors of ABINIT,
         #in order of number of occurrence in the input files provided with the package.
@@ -386,7 +385,7 @@ authors: {}
             for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
                 fh.write('##  %s  \n\n' % suite_name)
                 for rpath, test in group:
-                    fh.write('###  <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
+                    fh.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
                     #fh.write(test.listoftests())
                     fh.write(test.description)
                     fh.write("\n\n")
@@ -404,18 +403,22 @@ authors: {}
         # bibliographic references needed to generate backlinks.
         self.analyze_pages()
 
+        # Now generate page with bibliography
         print("Generating Markdown file with bibliographic entries ...")
         citation2pages = defaultdict(list)
         for page in self.md_pages:
             for citation in page.citations:
                 citation2pages[citation].append(page)
 
-        with io.open(os.path.join(self.root, "bibliography.md"), "wt", encoding="utf-8") as fh:
+        with io.open(os.path.join(self.root, "theory", "bibliography.md"), "wt", encoding="utf-8") as fh:
             lines = []
             for name in sorted(self.bib_data.entries.keys()):
                 entry = self.bib_data.entries[name]
                 lines.append("\n\n## **%s** \n\n" % name)
-                lines.append(entry.to_markdown())
+                try:
+                    lines.append(entry.to_markdown())
+                except Exception as exc:
+                    raise ValueError("Exception while trying to convert bibtex entry `%s`\n%s\n" % (name, str(exc)))
                 if citation2pages[name]:
                     lines.append("Referred to in: %s" % ", ".join('<a href="{url}"> {url} </a>'.format(url=page.url)
                         for page in citation2pages[name]))
@@ -443,14 +446,13 @@ authors: {}
     def get_citation_aelement(self, key, text=None, html_class=None):
         # Handle citation
         ref = self.bib_data.entries[key]
-        url = "/bibliography/#%s" % self.slugify(key)
+        url = "/theory/bibliography/#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
         a = etree.Element('a')
         a.set("data-toggle", "popover")
         a.set("title", ref.fields["title"])
         a.set("data-placement", "auto bottom")
         a.set("data-trigger", "hover")
-        #a.set("data-content", "Some content inside the popover")
         #a.set("data-content", ref.to_html())
         a.set('href', url)
         a.text = key if text is None else text
@@ -526,128 +528,149 @@ authors: {}
             namespace, name = namespace.strip(), name.strip()
         else:
             name = token.strip()
+            if not name: name = None
 
         return namespace, name, section, text
 
     def anchor_from_wikilink(self, token):
-        a = etree.Element('a')
-        html_class = "wikilink"
-        if html_class: a.set('class', html_class)
         #token = token.strip()
         #if not token:
-        #    print("Warning: empty wikilink", m.group(0))
-        #    a = ''
+        #    print("Warning: empty wikilink", token)
+        #    return ""
 
-        #namespace, name, section, text = self._parse_token(token)
+        html_class = "wikilink"
+        a = etree.Element("a")
+        a.set("class", html_class)
 
-        # [[lesson_gw1]
-        if token.startswith("lesson_"):
-            text = token
-            value = token.replace("lesson_" , " ", 1).strip()
-            url = "/tutorials/%s" % value
-
-        # [[#notations|this section]]
-        if token.startswith("#"):
-            try:
-                token, text = token.split("#")
-            except ValueError:
-                raise ValueError("Invalid token %s" % token)
-            url = token
+        if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
+            # Handle [[www.google.com|text]]
+            url, text = token, token
+            if "|" in token:
+                url, text = token.split("|")
             a.set('href', url)
             a.text = text
             return a
 
         # [[namespace:name#section|text]]
-        text = None
-        if "|" in token:
-            token, text = token.split("|")
-        elif "@" in token:
-            # [[dipdip@anaddb]]
-            text = token
-            vname, code = token.split("@")
-            token = "%s:%s" % (code, vname)
+        try:
+            namespace, name, section, text = self._parse_wikilink(token)
+        except ValueError:
+            raise ValueError("Cannot parse wikilink token `%s`" % token)
 
-        token = token.strip()
-        if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
-            url = token
+        if namespace is not None and name is None:
+            raise ValueError("Wrong wikilink token: `%s`. namespace is not None and name is None" % token)
 
-        elif ":" in token:
-            namespace, value = token.split(":")
-            #print("namespace:" ,namespace, "value:", value)
+        # Find url and text
+        if namespace is None:
+            if name is None:
+                # Handle [[#internal_link|text]]
+                assert section is not None
+                url = ""
+                if text is None: text = section
+            else:
+                if name.startswith("lesson_"):
+                    # Handle [[lesson_gw1|text]]
+                    url = "/tutorials/%s" % name.replace("lesson_" , " ", 1).strip()
+                    if text is None: text = name
 
+                elif name.startswith("topic_"):
+                    # Handle [[topic_SelfEnergy|text]]
+                    url = "/topics/%s" % name.replace("topic_" , " ", 1).strip()
+                    if text is None: text = name
+
+                elif name.startswith("help_"):
+                    # Handle [[help_abinit|text]]
+                    code = name.replace("help_" , " ", 1).strip()
+                    url = "/user-guide/%s" % code
+                    if text is None: text = "%s help file" % code
+
+                elif "@" in name:
+                    # Handle [[dipdip@anaddb|text]]
+                    vname, code = name.split("@")
+                    var = self.variables_code[code][vname]
+                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    if text is None: text = name
+
+                elif name in self.variables_code["abinit"]:
+                    # Handle link to Abinit variable e.g. [[ecut|text]]
+                    var = self.variables_code["abinit"][name]
+                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    if text is None:
+                        text = var.name if not var.is_internal else "%%s" % var.name
+
+                elif name in self.bib_data.entries:
+                    # Handle citation
+                    return self.get_citation_aelement(name, text=text, html_class=html_class)
+
+                elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
+                    # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
+                    assert section is None
+                    text = name if text is None else text
+                    #if not text.startswith("~abinit/"): text = "~abinit/" + text
+                    nm = name.replace("~abinit/", "")
+                    url = "/" + nm
+                    # Add popover with test description if input file.
+                    if nm in self.rpath2test:
+                        a.set("data-toggle", "popover")
+                        a.set("title", self.rpath2test[nm].description)
+                        a.set("data-placement", "auto bottom")
+                        a.set("data-trigger", "hover")
+                else:
+                    msg = "Don't know how to handle wikilink token `%s`" % token
+                    print("WARNING:", msg)
+                    url, text = "FAKE_URL", "FAKE_URL"
+                    #raise ValueError(msg)
+
+        else:
+            # namespace is defined
             if namespace in self.variables_code:
-                # Handle link to input variable e.g. [[anaddb:asr]] or [[abinit:ecut]]
-                var = self.variables_code[namespace][value]
+                # Handle [[anaddb:asr|text]] or [[abinit:ecut|text]]
+                assert section is None
+                var = self.variables_code[namespace][name]
                 url = "/input_variables/%s/#%s" % (var.varset, var.name)
                 if text is None:
                     text = var.name if not var.is_internal else "%%s" % var.name
 
             elif namespace == "lesson":
-                url = "/tutorials/%s" % value
-                if text is None: text = value
+                # Handle [[lesson:wannier90|text]]
+                url = "/tutorials/%s" % name
+                if text is None: text = "%s %s" % (name, namespace)
 
             elif namespace == "help":
-                url = "/user-guide/help_%s" % value
+                # [[help:optic|text]
                 # %%[[help_codename]]%% is echoed "codename help file" :
-                if text is None: text = "%s help file" % value
+                url = "/user-guide/help_%s" % name
+                if text is None: text = "%s help file" % name
 
             elif namespace == "topic":
-                url = "/topics/%s" % value
-                text = value
+                # Handle [[topic:BSE|text]]
+                url = "/topics/%s" % name
+                if text is None: text = "%s_%s" % (namespace, name)
 
             elif namespace == "bib":
-                # [[bib:Amadon2008]]
-                return self.get_citation_aelement(value, text=text, html_class=html_class)
+                # Handle [[bib:Amadon2008]]
+                return self.get_citation_aelement(name, text=text, html_class=html_class)
 
             elif namespace == "theorydoc":
-                url = "/topics/%s" % value
-                text = value
+                # Handle [[theorydoc:mbpt|text]]
+                url = "/theory/%s" % name
+                if text is None: text = name
 
             elif namespace == "varset":
-                url = "/input_variables/%s" % value
-                text = "%s varset" % value
-
-            #elif namespace == "input"
-            #    # Handle link to input e.g. [[input:tests/v1/Input/t01.in]]
+                # Handle [[varset:BSE|text]]
+                assert section is None
+                url = "/input_variables/%s" % name
+                if text is None: text = "%s varset" % name
 
             else:
-                msg = "Don't know how to handle namespace `%s` with value `%s`" % (namespace, value)
-                print("Warning", msg)
-                url = "FAKE_URL"
-                #raise ValueError(msg) # FIXME
+                msg = "Don't know how to handle wikilink token `%s`" % token
+                #raise ValueError(msg)
+                print("WARNING:", msg)
+                url, text = "FAKE_URL", "FAKE_URL"
 
-        elif token.startswith("tests/") or token.startswith("~abinit/tests/"):
-            # Handle [[tests/tutorial/Refs/tbase1_2.out]]
-            #print("In tests/ with token:", token)
-            text = token
-            #if not text.startswith("~abinit/"): text = "~abinit/" + text
-            token = token.replace("~abinit/", "")
-            url = "/" + token
-            # Add popover with test description if input file.
-            if token in self.rpath2test:
-                a.set("data-toggle", "popover")
-                a.set("title", self.rpath2test[token].description)
-                a.set("data-placement", "auto bottom")
-                a.set("data-trigger", "hover")
-
-        elif token in self.variables_code["abinit"]:
-            # Handle link to Abinit variable e.g. [[ecut]]
-            var = self.variables_code["abinit"][token]
-            url = "/input_variables/%s/#%s" % (var.varset, var.name)
-
-        elif token in self.bib_data.entries:
-            # Handle citation
-            return self.get_citation_aelement(token, text=text, html_class=html_class)
-
-        else:
-            msg = "WARNING: Don't know how to handle token: `%s`" % token
-            print(msg)
-            #raise ValueError(msg)
-            #url = '%s%s%s' % (base_url, token, end_url)
-            url = "FAKE_URL"
-
+        if section is not None: url = "%s/#%s" % (url, section)
         a.set('href', url)
-        a.text = token if text is None else text
+        a.text = text
         return a
 
     def validate_html_build(self):
