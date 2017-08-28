@@ -206,7 +206,7 @@ class Variable(yaml.YAMLObject):
 
     @property
     def is_internal(self):
-        return self.characteristic is not None and '[[INTERNAL_ONLY]]' in self.characteristic
+        return self.characteristics is not None and '[[INTERNAL_ONLY]]' in self.characteristics
 
     @property
     def mdlink(self):
@@ -267,8 +267,8 @@ class Variable(yaml.YAMLObject):
 
         app("## **%s** \n\n" % self.name)
         app("*Mnemonics:* %s  " % str(self.mnemonics))
-        if self.characteristic:
-            app("*Characteristics:* %s  " % str(self.characteristic))
+        if self.characteristics:
+            app("*Characteristics:* %s  " % ", ".join(self.characteristics))
         if self.topic_tribes:
             app("*Mentioned in topic(s):* %s  " % ", ".join("[[topic:%s]]" % k for k in self.topic_tribes))
         app("*Variable type:* %s  " % str(self.vartype))
@@ -286,12 +286,25 @@ class Variable(yaml.YAMLObject):
 
         # Add links to tests.
         if hasattr(self, "tests"):
+            # Constitutes an usage report e.g.
             # Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136].
-            # Test list {paral:[08],tutoparal:[string_03,string_04],v6:[22,24,25],v7:[08],v8:[05]}
-            #if len(self.tests) <= 10:
-            #app("Test list:\n")
+            assert hasattr(self, "tests_info")
+            tests_info = self.tests_info
+            ratio_all = len(self.tests) / tests_info["num_all_tests"]
+            frequency = "Rarely used"
+            if ratio_all > 0.5:
+                frequency = "Very frequently used"
+            elif ratio_all > 0.01:
+                frequency = "Moderately used"
+
+            info = "%s, [%d/%d] in all tests, [%d/%d] in tutorials." % (
+                frequency, len(self.tests), tests_info["num_all_tests"],
+                tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"])
+
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
-            app('\n??? note "Test list"')
+            # TODO?
+            #if len(self.tests) <= 10:
+            app('\n??? note "Test list (%s)"' % info)
             for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
                 #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
@@ -465,9 +478,11 @@ class VarDatabase(OrderedDict):
         with io.open(os.path.join(os.path.dirname(yaml_path), "characteristics.yml"), "rt", encoding="utf-8") as f:
             new.characteristics = yaml.load(f)
 
-        # Read list of `external_vars` and convert to dict {name --> description}
+        # Read list of `external_params` i.e. external parameters that are not input variables,
+        # but that are used in the documentation of other variables
+        # then convert to dict {name --> description}
         with io.open(os.path.join(os.path.dirname(yaml_path), "list_externalvars.yml"), "rt", encoding="utf-8") as f:
-            new.external_vars = {k: v for k, v in yaml.load(f)}
+            new.external_params = {k: v for k, v in yaml.load(f)}
 
         codes = set(v.code for v in vlist)
         for codename in sorted(codes):
@@ -479,6 +494,11 @@ class VarDatabase(OrderedDict):
 
         return new
 
+    #def iter_allvars(self):
+    #    for vd in self.values():
+    #        for var in vd.values():
+    #            yield var
+
 
 class InputVariables(OrderedDict):
 
@@ -488,9 +508,16 @@ class InputVariables(OrderedDict):
         print("Generating markdown files with input variables of code: `%s`..." % self.codename)
         for varset in self.all_varset:
             var_list = [v for v in self.values() if v.varset == varset]
-            #print(varset, var_list)
             with io.open(os.path.join(workdir, varset + ".md"), "wt", encoding="utf-8") as fh:
                 if comment: fh.write(comment)
+                fh.write("""\
+# {varset} input variables
+
+This document lists and provides the description of the name (keywords) of the
+{varset} input variables to be used in the input file for the {codename} executable.
+
+""".format(varset=varset, codename=self.codename))
+
                 for var in var_list:
                     fh.write(var.to_markdown())
 
