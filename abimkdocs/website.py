@@ -594,6 +594,10 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         if html_class: a.set('class', html_class)
         return a
 
+    #def get_pages_citing(self, page_rurl):
+    #    for page in self.md_pages:
+    #        for link in page.wikilinks:
+
     def slugify(self, value):
         """ Slugify a string, to make it URL friendly. """
         from markdown.extensions.toc import slugify
@@ -634,8 +638,12 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     if l.startswith("---"):
                         i += 1
                         break
-            new_lines.insert(i, """<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>""")
+                else:
+                    raise RuntimeError("Cannot find second `---` marker")
+            new_lines.insert(i, """\
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+""")
 
         return new_lines
 
@@ -1070,19 +1078,19 @@ class MarkdownPage(Page):
                 self.topics.add(token) # Should be name
 
         # Add rpath to meta (useful to give the origin of errors in markdown extensions)
-        #lines = string.split("\n")
-        #if len(lines) > 1 and lines[0].startswith("---"):
-        #    for i, l in enumerate(lines[1:]):
-        #        if l.startswith("---"): break
-        #    else:
-        #        raise RuntimeError("Cannot find second `---` marker in %s" % path)
-        #    d = yaml.loads("\n".join(lines[1:i]))
-        #    rpath = os.path.relpath(path, website.root)
-        #    if "rpath" not in d or d["rpath"] != rpath:
-        #        d["rpath"] = rpath
-        #        d = OrderedDict([(k, d[k]) for k in sorted(d.keys()))
-        #        del lines[1:i]
-        #        lines.insert(1, yaml.dumps(d))
+        lines = string.split("\n")
+        if len(lines) > 1 and lines[0].startswith("---"):
+            for i, l in enumerate(lines[1:]):
+                if l.startswith("---"): break
+            else:
+                raise RuntimeError("Cannot find second `---` marker in %s" % path)
+            d = yaml.loads("\n".join(lines[1:i]))
+            rpath = os.path.relpath(path, website.root)
+            if "rpath" not in d or d["rpath"] != rpath:
+                d["rpath"] = rpath
+                d = OrderedDict([(k, d[k]) for k in sorted(d.keys()))
+                del lines[1:i]
+                lines.insert(1, yaml.dumps(d))
 
         #print(self)
 

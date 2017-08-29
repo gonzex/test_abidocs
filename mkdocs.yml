@@ -260,6 +260,7 @@ theme_dir: abinit_theme
 extra_css:
     #- css/my_codehilite.css
     - css/extra.css
+    - css/auto_numbering.css
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js

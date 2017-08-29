@@ -1055,7 +1055,7 @@ Test of PBE0 in sequential case,  norm conserving,  from LibXC
 
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, HF, PBE0, abinit   
-Author(s): C. Martins, X. Gonze  
+Author(s): X. Gonze, C. Martins  
 
 
 * * *
@@ -1066,7 +1066,7 @@ Test of HSE06 and HSE03 in sequential case,  norm conserving,  from LibXC XG1705
 
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, HF, abinit   
-Author(s): C. Martins, X. Gonze  
+Author(s): X. Gonze, C. Martins  
 
 
 * * *
@@ -1304,7 +1304,7 @@ LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen, 
 
 Executable: abinit   
 Keywords(s): DFPT, NC, abinit   
-Author(s): D.R. Hamann, M. Veithen  
+Author(s): M. Veithen, D.R. Hamann  
 
 
 * * *
@@ -5737,7 +5737,7 @@ BCC Tantalum (1 atoms per unit cell), using the HGH pseudopotential,  within LDA
 
 Executable: abinit   
 Keywords(s): abinit   
-Author(s): M. Torrent, F. Jollet.  
+Author(s): F. Jollet., M. Torrent  
 
 
 * * *
@@ -7533,7 +7533,7 @@ Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on th
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:Recursion]]  
-Author(s): L. Kazandjian, JF. Danel  
+Author(s): JF. Danel, L. Kazandjian  
 
 
 * * *
@@ -10126,7 +10126,7 @@ Random stopping power within RPA and TD-LDA
 Executable: abinit   
 Keywords(s): GW, abinit   
 Topic(s): [[topic:RandStopPow]]  
-Author(s): A. Shukri, F. Bruneval  
+Author(s): F. Bruneval, A. Shukri  
 
 
 * * *
