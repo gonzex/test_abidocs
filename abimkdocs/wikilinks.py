@@ -74,13 +74,22 @@ class WikiLinks(Pattern):
         if token:
             base_url, end_url, html_class = self._getMeta()
             #url = self.config['build_url'](token, base_url, end_url)
+            rpath = "??"
+            if hasattr(self.md, 'Meta') and "rpath" in self.md.Meta:
+                rpath = self.md.Meta["rpath"][0]
+
             try:
-                return website.get_wikilink(token)
+                a = website.get_wikilink(token)
+                if a.get("href") == "FAKE_URL":
+                    print("Invalid wikilink `%s` in rpath `%s`" % (token, rpath))
+                return a
             except Exception as exc:
-                print("Exception while trying to handle wikilink `%s`" % token)
+                print("Exception while trying to handle wikilink `%s` in rpath `%s`" % (token, rpath))
+                return ""
+
                 raise
         else:
-            print("Warning: empty wikilink", m.group(0))
+            print("Warning: empty wikilink in rpath `%s`", (m.group(0), rpath))
             return ''
 
     def _getMeta(self):

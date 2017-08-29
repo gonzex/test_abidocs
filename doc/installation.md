@@ -1,3 +1,8 @@
+---
+rpath: /installation.md
+---
+
+
 * * *
 
 # Installation notes for ABINIT v8.4

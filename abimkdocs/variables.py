@@ -503,11 +503,10 @@ class VarDatabase(OrderedDict):
 class InputVariables(OrderedDict):
 
     def write_markdown_files(self, workdir, comment=None):
-
         # Build markdown page for the different sets.
-        print("Generating markdown files with input variables of code: `%s`..." % self.codename)
-        for varset in self.all_varset:
-            var_list = [v for v in self.values() if v.varset == varset]
+        print("Generating markdown files with input variables of code: `%s`..." % vd.codename)
+        for varset in vd.all_varset:
+            var_list = [v for v in vd.values() if v.varset == varset]
             with io.open(os.path.join(workdir, varset + ".md"), "wt", encoding="utf-8") as fh:
                 if comment: fh.write(comment)
                 fh.write("""\
