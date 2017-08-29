@@ -1,3 +1,11 @@
+---
+authors: XG, RC
+---
+
+# Third (basic) lesson  
+
+## Crystalline silicon.  
+
 This lesson aims at showing you how to get the following physical properties,
 for an insulator:
 
@@ -9,20 +17,11 @@ plane-wave kinetic energy cut-off.
 
 This lesson should take about 1 hour.
 
-  * 3.1 Computing the total energy of silicon at fixed number of k points.
-  * 3.2 Starting the convergence study with respect to k points
-  * 3.3 Actually performing the convergence study with respect to k points
-  * 3.4 Determination of the lattice parameters
-  * 3.5 Computing the band structure
+
+## 1 Computing the total energy of silicon at fixed number of k points
 
   
 
-* * *
-
-
-
-### ** 3.1. Computing the total energy of silicon at fixed number of k points.
-**
 
 _Before beginning, you might consider to work in a different subdirectory as
 for lesson_base1 or lesson_base2 . Why not "Work3" ?_
@@ -54,11 +53,12 @@ Then, read the output file, and note the total energy.
        etotal   -8.8662238960E+00
     
 
-* * *
 
 
+## 2 Starting the convergence study with respect to k points
 
-### ** 3.2. Starting the convergence study with respect to k points **
+  
+
 
 There is of course a convergence study associated with the sampling of the
 Brillouin zone. You should examine different grids, of increasing resolution.
@@ -141,12 +141,12 @@ points in the irreducible Brillouin zone, as well as one that will fold to 2 k
 points in the irreducible Brillouin zone. The latter is clearly to be
 preferred !
 
-* * *
 
 
+## 3 Actually performing the convergence study with respect to k points
 
-### ** 3.3. Actually performing the convergence study with respect to k points
-**
+  
+
 
 In order to understand k-point grids, you should read the Monkhorst and Pack
 paper, Phys. Rev. B 13, 5188 (1976) ... Well, maybe not immediately ... In the
@@ -174,11 +174,12 @@ dataset 2 gives an accuracy of about 0.0001 Ha
 So, our converged value for the total energy, at fixed [[acell]], fixed
 [[ecut]], is -8.8726 Ha .
 
-* * *
 
 
+## 4 Determination of the lattice parameters
 
-### ** 3.4. Determination of the lattice parameters. **
+  
+
 
 The input variable [[optcell]] governs the automatic optimisation of cell
 shape and volume.  
@@ -233,11 +234,12 @@ So, our converged LDA value for Silicon, with the 14si.pspnc pseudopotential
 Celsius`, see R.W.G. Wyckoff, Crystal structures Ed. Wiley and sons, New-York
 (1963).
 
-* * *
 
 
+## 5 Computing the band structure
 
-### **3.5. Computing the band structure**
+  
+
 
 We fix the parameters [[acell]] to the theoretical value of 3*10.216, and we
 fix also the grid of k points (the 4x4x4 FCC grid, equivalent to a 8x8x8
@@ -367,5 +369,6 @@ present case, 6 bands have been converged with a residual better than
 for graphical representation of the band structure). In order to achieve the
 same convergence for all 8 bands, it is advised to use [[nband]]=10 (that is,
 8 + 2).
+
 
 

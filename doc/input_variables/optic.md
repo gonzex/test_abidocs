@@ -16,7 +16,7 @@ optic input variables to be used in the input file for the optic executable.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -52,7 +52,7 @@ the spectrum.
 *Default value:* None  
 *Comment:* no default  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -84,7 +84,7 @@ use as string with the filename: ddkfile_X, where X is the file number.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -112,7 +112,7 @@ grid. In order to go to higher frequency, increase the maximum.
 *Dimensions:* (['num_lin_comp'])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -140,7 +140,7 @@ z respectively. For example 11 would be xx and 32 would mean zy.
 *Dimensions:* scalar  
 *Default value:* 1 Ha  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -168,7 +168,7 @@ grid. In order to go to higher frequency, increase the maximum.
 *Dimensions:* (['num_nonlin_comp'])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -196,7 +196,7 @@ z respectively. For example 111 would be xxx and 321 would mean zyx.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -225,7 +225,7 @@ Note that the directions are along the Cartesian axis.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -255,7 +255,7 @@ Note that the directions are along the Cartesian axis.
 *Default value:* 0.0  
 *Comment:* in Ha  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -288,7 +288,7 @@ opening of the gap due to the GW correction can be used as scissor shift.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
@@ -315,7 +315,7 @@ from the sum.
 *Default value:* None  
 *Comment:* no default  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [2/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]

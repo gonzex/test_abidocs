@@ -1,3 +1,11 @@
+---
+authors: DRH
+---
+
+# Lesson on elastic properties  
+
+## Elastic and piezoelectric properties.  
+
 This lesson shows how to calculate physical properties related to strain, for
 an insulator and a metal :
 
@@ -7,25 +15,17 @@ an insulator and a metal :
   * the atomic relaxation corrections to the elastic and piezoelectric tensor 
 
 You should complete lessons [RF1](lesson_rf1.html) and [RF2](lesson_rf2.html)
-to introduce the response-function features of ABINIT before starting this
-lesson. You will learn to use additional response-function features of ABINIT,
-and to use relevant parts of the associated codes Mrgddb and Anaddb.
+to introduce the density-functional perturbation theory (DFPT) features of
+ABINIT before starting this lesson. You will learn to use additional DFPT
+features of ABINIT, and to use relevant parts of the associated codes Mrgddb
+and Anaddb.
 
 This lesson should take about two hours.
 
-  * 1 The ground-state geometry of (hypothetical) wurtzite AlAs.
-  * 2 Response-function calculation of several second derivatives of the total energy.
-  * 3 anaddb calculation to incorporate atom-relaxation effects.
-  * 4 Finite-difference calculation of elastic and piezoelectric constants.
-  * 5 Alternative response-function calculation of some piezoelectric constants.
-  * 6 Response-function calculation of the elastic constants for Al metal.
 
-* * *
+## 1 The ground-state geometry of (hypothetical) wurtzite AlAs
 
   
-
-### **1\. The ground-state geometry of (hypothetical) wurtzite AlAs.**
-
 _Before beginning, you might consider working in a different subdirectory as
 for the other lessons. Why not create "Work_elast" in
 ~abinit/tests/tutorespfn/Input ? _  
@@ -40,77 +40,60 @@ The hypothetical wurtzite structure for AlAs retains the tetrahedral
 coordination of the atoms of the actual zincblende structure of AlAs, but has
 a hexagonal lattice. It was chosen for this lesson because the atomic
 positions are not completely determined by symmetry. Both the atomic positions
-and the lattice constants should be optimized before beginning response-
-function calculations, especially those related to strain properties. While GS
+and the lattice constants should be optimized before beginning DFPT
+calculations, especially those related to strain properties. While GS
 structural optimization was treated in lessons 1-3, we are introducing a few
 new features here, and you should look at the following new input variables
 which will be discussed below:  
 
-  * [ getxred](../../input_variables/generated_files/varrlx.html#getxred)
+  * [[getxred]] 
   * [[iatfix]] 
-  * [ natfix](../../input_variables/generated_files/varrlx.html#natfix)
-  * [ strfact](../../input_variables/generated_files/varrlx.html#strfact)   
+  * [[natfix]] 
+  * [[strfact]]   
 
 There are two datasets specified in telast_1.in. First, let us examine the
-common input data. We specify a starting guess for [
-acell](../../input_variables/generated_files/varbas.html#acell) , and give an
-accurate decimal specification for [
-rprim](../../input_variables/generated_files/varbas.html#rprim) . The
-definition of the atom types and atoms follows [lesson RF1](lesson_rf1.html) .
-The reduced atomic positions [
-xred](../../input_variables/generated_files/varbas.html#xred) are a starting
-approximation, and will be replaced by our converged results in the remaining
-input files, as will [
-acell](../../input_variables/generated_files/varbas.html#acell) .
+common input data. We specify a starting guess for [[acell]], and give an
+accurate decimal specification for [[rprim]] . The definition of the atom
+types and atoms follows [lesson RF1](lesson_rf1.html) . The reduced atomic
+positions [[xred]] are a starting approximation, and will be replaced by our
+converged results in the remaining input files, as will [[acell]].
 
-We will work with a fixed plane wave cutoff [
-ecut](../../input_variables/generated_files/varbas.html#ecut) (=6 Ha), but
-introduce [ ecutsm](../../input_variables/generated_files/varrlx.html#ecutsm)
-(=0.5 Ha)as in [ lesson 3](lesson_base3.html) to smear the cutoff, which
-produces smoothly varying stresses as the lattice parameters are optimized. We
-will keep the same value of [
-ecutsm](../../input_variables/generated_files/varrlx.html#ecutsm) for the
-response-function calculations as well, since changing it from the
-optimization run value could reintroduce non-zero forces and stresses. For the
-k-point grid, we must explicitly specify [
-shiftk](../../input_variables/generated_files/varbas.html#shiftk) since the
-default value results in a grid shifted so as to break hexagonal symmetry. The
-RF strain calculations check this, and will exit with an error message if the
-grid does not have the proper symmetry. The self-consistency procedures follow
-[lesson RF1](lesson_rf1.html) .
+We will work with a fixed plane wave cutoff [[ecut]] (=6 Ha), but introduce
+[[ecutsm]] (=0.5 Ha)as in [lesson 3](lesson_base3.html) to smear the cutoff,
+which produces smoothly varying stresses as the lattice parameters are
+optimized. We will keep the same value of [[ecutsm]] for the DFPTcalculations
+as well, since changing it from the optimization run value could reintroduce
+non-zero forces and stresses. For the k-point grid, we must explicitly specify
+[[shiftk]] since the default value results in a grid shifted so as to break
+hexagonal symmetry. The RF strain calculations check this, and will exit with
+an error message if the grid does not have the proper symmetry. The self-
+consistency procedures follow [lesson RF1](lesson_rf1.html) .
 
 Dataset 1 optimizes the atomic positions keeping the lattice parameters fixed,
-setting [ ionmov](../../input_variables/generated_files/varrlx.html#ionmov) =2
-as in [lesson 1](lesson_base1.html) . The optimization steps proceed until the
-maximum force component on any atom is less than [
-tolmxf](../../input_variables/generated_files/varrlx.html#tolmxf) . It is
-always advised to relax the forces before beginning the lattice parameter
-optimization. Dataset 2 optimizes the lattice parameters with [
-optcell](../../input_variables/generated_files/varrlx.html#optcell) =2 as in
-[lesson 3](lesson_base3.html) . However, lesson 3 treated cubic Si, and the
-atom positions in reduced coordinates remained fixed. In the present, more
-general case, the reduced atomic coordinates must be reoptimized as the
-lattice parameters are optimized. Note that it is necessary to include [
-getxred](../../input_variables/generated_files/varrlx.html#getxred) = -1 so
-that the second dataset is initialized with the relaxed coordinates .
-Coordinate and lattice parameter optimizations actually take place
-simultaneously, with the computed stresses at each step acting as forces on
-the lattice parameters. We have introduced [
-strfact](../../input_variables/generated_files/varrlx.html#strfact) which
-scales the stresses so that they may be compared with the same [
-tolmxf](../../input_variables/generated_files/varrlx.html#tolmxf) convergence
-test that is applied to the forces. The default value of 100 is probably a
-good choice for many systems, but you should be aware of what is happening.
+setting [[ionmov]]=2 as in [lesson 1](lesson_base1.html) . The optimization
+steps proceed until the maximum force component on any atom is less than
+[[tolmxf]]. It is always advised to relax the forces before beginning the
+lattice parameter optimization. Dataset 2 optimizes the lattice parameters
+with [[optcell]]=2 as in [lesson 3](lesson_base3.html) . However, lesson 3
+treated cubic Si, and the atom positions in reduced coordinates remained
+fixed. In the present, more general case, the reduced atomic coordinates must
+be reoptimized as the lattice parameters are optimized. Note that it is
+necessary to include [[getxred]] = -1 so that the second dataset is
+initialized with the relaxed coordinates . Coordinate and lattice parameter
+optimizations actually take place simultaneously, with the computed stresses
+at each step acting as forces on the lattice parameters. We have introduced
+[[strfact]] which scales the stresses so that they may be compared with the
+same [[tolmxf]] convergence test that is applied to the forces. The default
+value of 100 is probably a good choice for many systems, but you should be
+aware of what is happening.
 
 From the hexagonal symmetry, we know that the positions of the atoms in the
 a-b basal plane are fixed. However, a uniform translation along the c axis of
 all the atoms leaves the structure invariant. Only the relative displacement
 of the Al and As planes along the c axis is physically relevant. We will fix
 the Al positions to be at reduced c-axis coordinates 0 and 1/2 (these are
-related by symmetry) by introducing [
-natfix](../../input_variables/generated_files/varrlx.html#natfix) and [
-iatfix](../../input_variables/generated_files/varrlx.html#iatfix) to constrain
-the structural optimization. This is really just for cosmetic purposes, since
+related by symmetry) by introducing [[natfix]] and [[iatfix]] to constrain the
+structural optimization. This is really just for cosmetic purposes, since
 letting them all slide an arbitrary amount (as they otherwise would) won't
 change any results. However, you probably wouldn't want to publish the results
 that way, so we may as well develop good habits.  
@@ -170,13 +153,12 @@ places in the "Common input data" area. Be sure to change acell2 and xred2 to
 acell and xred since these common values will apply to all datasets in the
 next set of calculations.  
 
-* * *
+
+
+## 2 Response-function calculations of several second derivatives of the total
+energy
 
   
-
-### **2\. Response-function calculations of several second derivatives of the
-total energy.**
-
 We will now compute second derivatives of the total energy (2DTE's) with
 respect to all the perturbations we need to compute elastic and piezoelectric
 properties. You may want to review [ sections 0 and the first paragraph of
@@ -194,9 +176,9 @@ Vanderbilt, [Phys. Rev. B 71, 035117
 Sec. IV. We will do all the RF calculations you learned in lesson RF1 together
 with strain, so you should review the variables
 
-  * [ rfphon](../../input_variables/generated_files/varrf.html#rfphon)
-  * [ rfatpol](../../input_variables/generated_files/varrf.html#rfatpol)
-  * [ rfdir](../../input_variables/generated_files/varrf.html#rfdir)
+  * [[rfphon]] 
+  * [[rfatpol]] 
+  * [[rfdir]] 
   * [[rfelfd]]   
 
 It would be a good idea to copy telast_2.files into Work_elast and start the
@@ -206,18 +188,15 @@ that you have copied acell and xred as discussed in the last section.
 
 This has been set up as a self-contained calculation with three datasets. The
 first is simply a GS run to obtain the GS wave functions we will need for the
-response function (RF) calculations. We have removed the convergence test from
-the common input data to remind ourselves that different tests are needed for
-different datasets. We set a tight limit on the convergence of the self-
-consistent potential with [
-tolvrs](../../input_variables/generated_files/varbas.html#tolvrs) . Since we
-have specified [
-nband](../../input_variables/generated_files/varbas.html#nband) =8, all the
-bands are occupied and the potential test also assures us that all the wave
-functions are well converged. This issue will come up again in section 6 . We
-could have used the output wave functions telast_1o_DS2_WFK as input for our
-RF calculations and skipped dataset 1, but redoing the GS calculation takes
-relatively little time for this simple system .
+DFPT calculations. We have removed the convergence test from the common input
+data to remind ourselves that different tests are needed for different
+datasets. We set a tight limit on the convergence of the self-consistent
+potential with [[tolvrs]]. Since we have specified [[nband]]=8, all the bands
+are occupied and the potential test also assures us that all the wave
+functions are well converged. This issue will come up again in the section on
+metals . We could have used the output wave functions telast_1o_DS2_WFK as
+input for our RF calculations and skipped dataset 1, but redoing the GS
+calculation takes relatively little time for this simple system .
 
 Dataset 2 involves the calculation of the derivatives of the wave functions
 with respect to the Brillouin-zone wave vector, the so-called ddk wave
@@ -226,51 +205,41 @@ response to the[ electric field perturbation](lesson_rf1.html#5) and
 introduced in lesson RF1 . It would be a good idea to review the relevant
 parts of [ section 1](../../users/generated_files/help_respfn.html#1) of the
 respfn_help file. Examining this section of telast_2.in, note that electric
-field as well as strain are uniform perturbations, only are defined for [
-qpt](../../input_variables/generated_files/vargs.html#qpt) = 0 0 0. [
-rfelfd](../../input_variables/generated_files/varrf.html#rfelfd) = 2 specifies
-that we want the ddk calculation to be performed, which requires [
-iscf](../../input_variables/generated_files/varbas.html#iscf) = -3. The ddk
-wave functions will be used to calculate both the piezoelectric tensor and the
-Born effective charges, and in general we need them for ** k** derivatives in
-all three (reduced) directions, [
-rfdir](../../input_variables/generated_files/varrf.html#rfdir) = 1 1 1. Since
-there is no potential self-consistency in the ddk calculations, we must
-specify convergence in terms of the wave function residuals using [
-tolwfr](../../input_variables/generated_files/varbas.html#tolwfr) .  
+field as well as strain are uniform perturbations, only are defined for
+[[qpt]]= 0 0 0. [[rfelfd]]= 2 specifies that we want the ddk calculation to be
+performed, which requires [[iscf]]= -3. The ddk wave functions will be used to
+calculate both the piezoelectric tensor and the Born effective charges, and in
+general we need them for ** k** derivatives in all three (reduced) directions,
+[[rfdir]]= 1 1 1. Since there is no potential self-consistency in the ddk
+calculations, we must specify convergence in terms of the wave function
+residuals using [[tolwfr]].  
 
 Finally, dataset 3 performs the actual calculations of the needed 2DTE's for
-the elastic and piezoelectric tensors. Setting [
-rfphon](../../input_variables/generated_files/varrf.html#rfphon) = 1 turns on
-the atomic displacement perturbation, which we need for all atoms ([
-rfatpol](../../input_variables/generated_files/varrf.html#rfatpol) = 1 4) and
-all directions ([
-rfdir](../../input_variables/generated_files/varrf.html#rfdir) = 1 1 1).
-Abinit will calculate first-order wave functions for each atom and direction
-in turn, and use those to calculate 2DTE's with respect to all pairs of atomic
-displacements and with respect to one atomic displacement and one component of
-electric field. These quantities, the interatomic force constants (at gamma)
-and the Born effective charges will be used later to compute the atomic
-relaxation contribution to the elastic and piezoelectric tensor.
+the elastic and piezoelectric tensors. Setting [[rfphon]]=1 turns on the
+atomic displacement perturbation, which we need for all atoms ([[rfatpol]]= 1
+4) and all directions ([[rfdir]]= 1 1 1). Abinit will calculate first-order
+wave functions for each atom and direction in turn, and use those to calculate
+2DTE's with respect to all pairs of atomic displacements and with respect to
+one atomic displacement and one component of electric field. These quantities,
+the interatomic force constants (at gamma) and the Born effective charges will
+be used later to compute the atomic relaxation contribution to the elastic and
+piezoelectric tensor.
 
 First-order wave functions for the strain perturbation are computed next.
 Setting [[rfstrs]] = 3 specifies that we want both uniaxial and shear strains
-to be treated, and [
-rfdir](../../input_variables/generated_files/varrf.html#rfdir) = 1 1 1 cycles
-through strains xx, yy, and zz for uniaxial and yz, xz, and xy for shear. We
-note that while other perturbations in Abinit are treated in reduced
-coordinates, strain is better dealt with in Cartesian coordinates for reasons
-discussed in the reference cited above. These wave functions are used to
-compute three types of 2DTE's. Derivatives with respect to two strain
-components give us the so-called rigid-ion elastic tensor. Derivatives with
-respect to one strain and one electric field component give us the rigid-ion
-piezoelectric tensor. Finally, derivatives with respect to one strain and one
-atomic displacement yield the internal-strain force-response tensor, an
-intermediate quantity that will be necessary to compute the atomic relaxation
-corrections to the rigid-ion quantities. As in lesson RF1, we specify
-convergence in terms of the residual of the potential (here the first-order
-potential) using [
-tolvrs](../../input_variables/generated_files/varbas.html#tolvrs) .
+to be treated, and [[rfdir]]= 1 1 1 cycles through strains xx, yy, and zz for
+uniaxial and yz, xz, and xy for shear. We note that while other perturbations
+in Abinit are treated in reduced coordinates, strain is better dealt with in
+Cartesian coordinates for reasons discussed in the reference cited above.
+These wave functions are used to compute three types of 2DTE's. Derivatives
+with respect to two strain components give us the so-called rigid-ion elastic
+tensor. Derivatives with respect to one strain and one electric field
+component give us the rigid-ion piezoelectric tensor. Finally, derivatives
+with respect to one strain and one atomic displacement yield the internal-
+strain force-response tensor, an intermediate quantity that will be necessary
+to compute the atomic relaxation corrections to the rigid-ion quantities. As
+in lesson RF1, we specify convergence in terms of the residual of the
+potential (here the first-order potential) using tolvrs .
 
 Your run should have completed by now. Abinit should have created quite a few
 files.
@@ -324,11 +293,10 @@ wave functions, and these functions minimize a variational expression for the
 2DTE.  (Technically, they are called self-consistent Sternheimer equations.)
 The  energy  convergence looks similar to that of GS calculations.  The fact
 that vres2, the residual of the self-consistent first-order potential, has
-reached [ tolvrs](../../input_variables/generated_files/varbas.html#tolvrs)
-well within [[nstep]] (40) iterations indicates that the 2DTE calculation for
-this perturbation (xy strain) has converged . It would pay to examine a few
-more cases for different perturbations (unless you have looked through all the
-warnings in the log).
+reached [[tolvrs]] well within [[nstep]] (40) iterations indicates that the
+2DTE calculation for this perturbation (xy strain) has converged . It would
+pay to examine a few more cases for different perturbations (unless you have
+looked through all the warnings in the log).
 
 Another convergence item to examine in your .out file is
 
@@ -491,24 +459,22 @@ a correction.
 Finally, we have the piezoelectric tensor, the 2DTE with respect to one strain
 and one uniform electric field component.  (Yes, there are non-zero elements.)  
 
-* * *
+
+
+## 3 ANADDB calculation of atom-relaxation effects
 
   
-
-### **3\. anaddb calculation of atom-relaxation effects.**
-
 In this section, we will run the program anaddb, which analyzes DDB files
 generated in prior RF calculations. You should copy telast_3.in and
-telast_3.files in your Work_elast directory. You should now go to the [ anaddb
+telast_3.files in your Work_elast directory. You should now go to the [anaddb
 help file](../../users/generated_files/help_anaddb.html) , and read the short
 introduction. The bulk of the material in this help file is contained in the
 description of the variables. You should read the descriptions of  
 
-  * [elaflag](../../users/generated_files/help_anaddb.html#elaflag)
-  * [piezoflag](../../users/generated_files/help_anaddb.html#piezoflag)
-  * [instrflag](../../users/generated_files/help_anaddb.html#instrflag)   
-
-  * [chneut](../../users/generated_files/help_anaddb.html#chneut)
+  * [[anaddb:elaflag]],
+  * [[anaddb:piezoflag]],
+  * [[anaddb:instrflag]],
+  * [[anaddb:chneut]].
 
 For the theory underlying the incorporation of atom-relaxation corrections, it
 is recommended you see  X. Wu, D. Vanderbilt, and D. R. Hamann, [Phys. Rev, B
@@ -635,26 +601,20 @@ Since we are dealing with a hypothetical material, there is no experimental
 data with which to compare our results. In the next section, we will calculate
 a few of these numbers by a finite-difference method to gain confidence in the
 RF approach.  
+
+
+
+## 4 Finite-difference calculation of elastic and piezoelectric constants
+
   
-
-* * *
-
-  
-
-### **4\. Finite-difference calculation of elastic and piezoelectric
-constants.**
-
 You should copy telast_4.in and telast_4.files into your Work_elast directory.
 Editing telast_4.in, you will see that it has four datasets, the first two
 with the c-axis contracted 0.01% and the second two with it expanded 0.01%,
-which we specified by changing the third row of [
-rprim](../../input_variables/generated_files/varbas.html#rprim) . The common
-data is essentially the same as telast_2.in, and the relaxed [
-acell](../../input_variables/generated_files/varbas.html#acell) values and [
-xred](../../input_variables/generated_files/varbas.html#xred) from
-telast_1.out have already been included. Datasets 1 and 3 do the self-
-consistent convergence of the GS wave functions for the strained lattices and
-compute the stress. Datasets 2 and 4 introduce a new variable.  
+which we specified by changing the third row of [[rprim]]. The common data is
+essentially the same as telast_2.in, and the relaxed [[acell]] values and
+[[xred]] from telast_1.out have already been included. Datasets 1 and 3 do the
+self-consistent convergence of the GS wave functions for the strained lattices
+and compute the stress. Datasets 2 and 4 introduce a new variable.  
 
   * [[berryopt]] 
 
@@ -666,9 +626,8 @@ calculated in a GS calculation by integrating the gradient with respect to
 **k** of the GS wave functions over the Brillouin zone. In GS calculations,
 the gradients are approximated by finite-difference expressions constructed
 from neighboring points in the **k** mesh. These are closely related to the
-ddk wave functions used in RF calculations in  2 and introduced in [ lesson
-RF1, section 5](lesson_rf1.html#5) . We will use [
-berryopt](../../input_variables/generated_files/varff.html#berryopt) = -1,
+ddk wave functions used in RF calculations in section 2 and introduced in [
+lesson RF1, section 5](lesson_rf1.html#5) . We will use [[berryopt]] = -1,
 which utilizes an improved coding of the calculation, and must specify
 [[rfdir]] = 1 1 1 so that the Cartesian components of the polarization are
 computed.  
@@ -707,9 +666,9 @@ Let us now compute the numerical derivative of  sigma(3 3)and compare to our
 RF result. Recalling that our dimensionless strains were ±0.0001, we find
 182.5853 GPa. This compares very well with the value  182.58575 GPa, the 3,3
 element of the Rigid-ion elastic tensor we found from our anaddb calculation
-in  3 . (Recall that our strain and stress were both 3 3 or z z or Voigt 3.)
-Similarly, the numerical derivative of  sigma(1 1)is 21.09026 GPa, compared to
-21.09029 GPa, the 3,1 elastic-tensor element.
+in section 3. (Recall that our strain and stress were both 3 3 or z z or Voigt
+3.) Similarly, the numerical derivative of  sigma(1 1)is 21.09026 GPa,
+compared to  21.09029 GPa, the 3,1 elastic-tensor element.
 
 The good agreement we found from this simple numerical differentiation
 required that we had accurately relaxed the lattice so that the stress of the
@@ -737,8 +696,8 @@ While not labeled as such, these are the Cartesian x, y, and z components,
 respectively, and the x and y components are zero within numerical accuracy as
 they must be from symmetry. Numerical differentiation of the z component
 yields -0.745589 C/m^2. This is to be compared with the z,3 element of our
-rigid-ion piezoelectric tensor from 3, -0.73943025 C/m^2, and the two results
-do not compare as well as we might wish.
+rigid-ion piezoelectric tensor from section 3, -0.73943025 C/m^2, and the two
+results do not compare as well as we might wish.
 
 What is wrong? There are two possibilities. The first is that the RF
 calculation produces the proper piezoelectric tensor, while numerical
@@ -749,41 +708,32 @@ only effects certain tensor elements, however, and for our particular
 combination of crystal symmetry and choice of strain there is no correction.
 The second possibility is the subject of the next section.
 
+
+
+## 5 Alternative DFPT calculation of some piezoelectric constants
+
   
-
-* * *
-
-  
-
-### **5\. Alternative response-function calculation of some piezoelectric
-constants.**
-
-Our GS calculation of the polarization in 4 used, in effect, a finite-
+Our GS calculation of the polarization in section 4 used, in effect, a finite-
 difference approximation to ddk wave functions, while our RF calculations in
-2 used analytic results based on the RF approach. Since the ** k** grid
-determined by [
-ngkpt](../../input_variables/generated_files/varbas.html#ngkpt) = 4 4 4 and [
-nshiftk](../../input_variables/generated_files/varbas.html#nshiftk) = 1 is
-rather coarse, this is a probable source of discrepancy. Since this issue was
-noted previously in connection with the calculation of Born effective charges
-by Na Sai, K. M. Rabe, and D. Vanderbilt, Phys. Rev. B 66, 104108 (2002) ,
-Abinit has incorporated the ability to use finite-difference ddk wave
-functions from GS calculations in RF calculations of electric-field-related
-2DTE's. Copy telast_5.in and telast_5.files into Work_elast, and edit
-telast_5.in.
+section 2 used analytic results based on the RF approach. Since the **k** grid
+determined by [[ngkpt]] = 4 4 4 and [[nshiftk]] = 1 is rather coarse, this is
+a probable source of discrepancy. Since this issue was noted previously in
+connection with the calculation of Born effective charges by Na Sai, K. M.
+Rabe, and D. Vanderbilt, Phys. Rev. B 66, 104108 (2002) , Abinit has
+incorporated the ability to use finite-difference ddk wave functions from GS
+calculations in RF calculations of electric-field-related 2DTE's. Copy
+telast_5.in and telast_5.files into Work_elast, and edit telast_5.in.
 
 You should compare this with our previous RF data, telast_2.in, and note that
 dataset1 and the Common data (after entering relaxed structural results) are
 essentially identical. Dataset 2 has been replaced by a non-self-consistent GS
-calculation with [
-berryopt](../../input_variables/generated_files/varff.html#berryopt) = -2
-specified to perform the finite-difference ddk wave function calculation. (The
-finite-difference first-order wave functions are implicit but not actually
-calculated in the GS polarization calculation.) We have restricted [
-rfdir](../../input_variables/generated_files/varrf.html#rfdir) to 0 0 1 since
-we are only interested in the 3,3 piezoelectric constant. Now compare dataset
-3 with that in telast_2.in. Can you figure out what we have dropped and why?
-Run the telast_5 calculation, which will only take about a minute with our
+calculation with [[berryopt]] = -2 specified to perform the finite-difference
+ddk wave function calculation. (The finite-difference first-order wave
+functions are implicit but not actually calculated in the GS polarization
+calculation.) We have restricted [[rfdir]] to 0 0 1 since we are only
+interested in the 3,3 piezoelectric constant. Now compare dataset 3 with that
+in telast_2.in. Can you figure out what we have dropped and why? Run the
+telast_5 calculation, which will only take about a minute with our
 simplifications.
 
 Now edit telast_5.out, looking for the piezoelectric tensor,
@@ -807,24 +757,20 @@ should be left as an exercise to the student to dig the conversion factor out
 of the literature, or better yet out of the source code, we will cheat and
 tell you that 1a.u.=57.2147606 C/m^2 Thus the new RF result for the 3,3 rigid-
 ion piezoelectric constant is -0.7455887 C/m^2 compared to the result found in
-4 by a completely-GS finite difference calculation, -0.745589 C/m^2. The
-agreement is now excellent!
+section 4 by a completely-GS finite difference calculation, -0.745589 C/m^2.
+The agreement is now excellent!
 
-The fully RF calculation in 2 in fact will converge much more rapidly with **
-k** sample than the partial-finite-difference method introduced here.  Is it
-worthwhile to have learned how to do this? We believe that is always pays to
-have alternative ways to test results, and besides, this didn't take much
-time. (Have you found the conversion factor on your own yet?)  
+The fully RF calculation in section 2 in fact will converge much more rapidly
+with ** k** sample than the partial-finite-difference method introduced here.
+Is it worthwhile to have learned how to do this? We believe that is always
+pays to have alternative ways to test results, and besides, this didn't take
+much time. (Have you found the conversion factor on your own yet?)  
+
+
+
+## 6 Response-function calculation of the elastic constants of Al metal
 
   
-
-* * *
-
-  
-
-### **6\. Response-function calculation of the elastic constants of Al
-metal.**
-
 For metals, the existence of partially occupied bands is a complicating
 feature for RF as well as GS calculations.  Now would be a good time to review
 [lesson 4](lesson_base4.html) which dealt in detail with the interplay between
@@ -833,93 +779,76 @@ feature for RF as well as GS calculations.  Now would be a good time to review
 into Work_elast, and begin your run while you read on, since it involves a
 convergence study with multiple datasets and may take about two minutes.  
   
-While the run is in progress, edit telast_6.in.  As in t43.in, we will set [
-udtset](../../input_variables/generated_files/varbas.html#udtset) to specify a
-double loop.  In the present case, however, the outer loop will be over 3
-successively larger meshes of **k** points, while the inner loop will be
-successively  
+While the run is in progress, edit telast_6.in.  As in t43.in, we will set
+[[udtset]] to specify a double loop.  In the present case, however, the outer
+loop will be over 3 successively larger meshes of **k** points, while the
+inner loop will be successively  
 
   1. GS self-consistent runs with optimization of acell.
   2. GS density-generating run for the next step.
   3. Non-self-consistent GS run to converge unoccupied or slightly-occupied bands.
   4. RF run for symmetry-inequivalent elastic constants.
 
-In Section 1 , we did a separate GS structural optimization run and
-transferred the results by hand to RF  run 2 .  Because we are doing a
-convergence test here, we have combined these steps, and use [
-getcell](../../input_variables/generated_files/varrlx.html#getcell) to
+In Sectionsection 1 , we did a separate GS structural optimization run and
+transferred the results by hand to RF  run section 2 .  Because we are doing a
+convergence test here, we have combined these steps, and use [[getcell]] to
 transfer the optimized coordinates from the first dataset of the inner loop
 forward to the rest.  If we were doing a more complicated structure with
 internal coordinates that were also optimized, we would need to use both this
-and [ getxred](../../input_variables/generated_files/varrlx.html#getxred) to
-transfer these, as in telast_1.in.  
+and [[getxred]] to transfer these, as in telast_1.in.  
   
 The specific data for inner-loop dataset 1 is very similar to that for
 telast_1.in.  Inner-loop dataset 2 is a bit of a hack.  We need the density
-for inner-loop dataset 3, and while we could set [
-prtden](../../input_variables/generated_files/varfil.html#prtden) = 1 in
-dataset 1, this would produce a separate density file for every step in the
-structural optimization, and it isn't clear how to automatically pick out the
-last one.  So, dataset 2 picks up the wave functions from dataset 1 (only one
-file of these is produced, for the optimized structure), does one more
-iteration with fixed geometry, and writes a density file.  
+for inner-loop dataset 3, and while we could set [[prtden]] = 1 in dataset 1,
+this would produce a separate density file for every step in the structural
+optimization, and it isn't clear how to automatically pick out the last one.
+So, dataset 2 picks up the wave functions from dataset 1 (only one file of
+these is produced, for the optimized structure), does one more iteration with
+fixed geometry, and writes a density file.  
   
  Inner-loop dataset 3 is a non-self-consistent run whose purpose is to ensure
-that all the wave functions specified by [
-nband](../../input_variables/generated_files/varbas.html#nband) are well
-converged. For metals, we have to specify enough bands to make sure that the
-Fermi surface is properly calculated.  Bands above the  Fermi level which have
-small occupancy or near-zero occupancy if their energies exceed the Fermi
-energy by more than a few times[
-tsmear](../../input_variables/generated_files/vargs.html#tsmear) , will have
-very little effect on the self-consistent potential, so the [
-tolvrs](../../input_variables/generated_files/varbas.html#tolvrs) test in
-dataset 1 doesn't ensure their convergence.  Using [
-tolwfr](../../input_variables/generated_files/varbas.html#tolwfr) in inner-
-loop dataset 3 does.  Partially-occupied or unoccupied bands up to [
-nband](../../input_variables/generated_files/varbas.html#nband)   play a
-different role in constructing the first-order wave functions than do the many
-unoccupied bands beyond [
-nband](../../input_variables/generated_files/varbas.html#nband) which aren't
-explicitly treated in Abinit, as discussed in  S. de Gironcoli, Phys. Rev. B
-51, 6773 (1995).  By setting [
-nband](../../input_variables/generated_files/varbas.html#nband) exactly equal
-to the number of occupied bands for RF calculations for semiconductors and
-insulators, we avoid having to deal with the issue of converging unoccupied
-bands.  Could we avoid the extra steps by simply using [
-tolwfr](../../input_variables/generated_files/varbas.html#tolwfr) instead of [
-tolvrs](../../input_variables/generated_files/varbas.html#tolvrs) in dataset
-1?  Perhaps, but experience has shown that this does not necessarily lead to
-as well-converged a potential, and it is not recommended.  These same
-considerations apply to phonon calculations for metals, or in particular to [
-qpt](../../input_variables/generated_files/vargs.html#qpt) = 0 0 0 phonon
-calculations for the interatomic force constants needed to find atom-
-relaxation contributions to the elastic constants for non-trivial structures
-as in 2 and 3 .  
+that all the wave functions specified by [[nband]] are well converged. For
+metals, we have to specify enough bands to make sure that the Fermi surface is
+properly calculated.  Bands above the  Fermi level which have small occupancy
+or near-zero occupancy if their energies exceed the Fermi energy by more than
+a few times [[tsmear]], will have very little effect on the self-consistent
+potential, so the [[tolvrs]] test in dataset 1 doesn't ensure their
+convergence.  Using [[tolwfr]] in inner-loop dataset 3 does.  Partially-
+occupied or unoccupied bands up to [[nband]]   play a different role in
+constructing the first-order wave functions than do the many unoccupied bands
+beyond [[nband]] which aren't explicitly treated in Abinit, as discussed in
+S. de Gironcoli, Phys. Rev. B 51, 6773 (1995).  By setting [[nband]] exactly
+equal to the number of occupied bands for RF calculations for semiconductors
+and insulators, we avoid having to deal with the issue of converging
+unoccupied bands.  Could we avoid the extra steps by simply using [[tolwfr]]
+instead of [[tolvrs]] in dataset 1?  Perhaps, but experience has shown that
+this does not necessarily lead to as well-converged a potential, and it is not
+recommended.  These same considerations apply to phonon calculations for
+metals, or in particular to [[qpt]]= 0 0 0 phonon calculations for the
+interatomic force constants needed to find atom-relaxation contributions to
+the elastic constants for non-trivial structures as in section 2 and section 3
+.  
   
 The data specific to the elastic-tensor RF calculation in inner-loop dataset 4
 should by now be familiar.  We take advantage of the fact that for cubic
 symmetry the only symmetry-inequivalent elastic constants are C 11, C 12 , and
 C 44 .  Abinit, unfortunately, does not do this analysis automatically, so we
-specify [ rfdir](../../input_variables/generated_files/varrf.html#rfdir) =1 0
-0 to avoid duplicate calculations.  (Note that if atom relaxation is to be
-taken into account  for a more complex structure, the full set of directions
-must be used.)  
+specify [[rfdir]]=1 0 0 to avoid duplicate calculations.  (Note that if atom
+relaxation is to be taken into account  for a more complex structure, the full
+set of directions must be used.)  
   
 When the telast_6 calculations finish, first look at telast_6.log as usual to
 make sure they have run to completion without error.  Next, it would be a good
 idea to look at the band occupancies occ?? (where ?? is a dual-loop dataset
 index) reported at the end (following  ==END DATASET(S)==).  The highest band,
 the fourth in this case, should have zero or very small occupation, or you
-need to increase [
-nband](../../input_variables/generated_files/varbas.html#nband) or decrease [
-tsmear](../../input_variables/generated_files/vargs.html#tsmear) .  Now, use
-your newly perfected knowledge of the Abinit perturbation indexing conventions
-to scan through telast_6.out and find C 11 , C12 , and C 44 for each of the
-three **k**-sample choices, which will be  under the " Rigid-atom elastic
-tensor" heading.  Also find the lattice constants for each case, whose
-convergence you studied in lesson 4.  You should be able to cut-and-paste
-these into a table like the following,  
+need to increase [[nband]] or decrease [[tsmear]] .  Now, use your newly
+perfected knowledge of the Abinit perturbation indexing conventions to scan
+through telast_6.out and find C 11 , C12 , and C 44 for each of the three
+**k**-sample choices, which will be  under the " Rigid-atom elastic tensor"
+heading.  Also find the lattice constants for each case, whose convergence you
+studied in lesson 4.  You should be able to cut-and-paste these into a table
+like the following,  
 
     
     
@@ -930,24 +859,19 @@ these into a table like the following,
     
 
 We can immediately see that the lattice constant converges considerably more
-rapidly with **k** sample than the elastic constants.  For [
-ngkpt](../../input_variables/generated_files/varbas.html#ngkpt) =3*6, acell is
-converged to 0.02%, while the C's have 5-10% errors.  For [[ngkpt]] =3*8, the
-C's are converged to better than 1%, much better for the largest, C11, which
-should be acceptable.
+rapidly with **k** sample than the elastic constants.  For [[ngkpt]] =3*6,
+acell is converged to 0.02%, while the C's have 5-10% errors.  For [[ngkpt]]
+=3*8, the C's are converged to better than 1%, much better for the largest,
+C11, which should be acceptable.
 
-As in lesson 4, the [[ngkpt]] convergence is controlled by [
-tsmear](../../input_variables/generated_files/vargs.html#tsmear) .  The
+As in lesson 4, the [[ngkpt]] convergence is controlled by [[tsmear]].  The
 smaller the broadening, the denser the **k** sample that is needed to get a
 smooth variation of occupancy, and presumably stress, with strain.  While we
-will not explore [
-tsmear](../../input_variables/generated_files/vargs.html#tsmear) convergence
-in this lesson, you may wish to do so on your own.  We believe that the value
-[ tsmear](../../input_variables/generated_files/vargs.html#tsmear) = 0.02  in
-telast_6.in gives results within 1% of the fully-converged small-broadening
-limit.
+will not explore [[tsmear]] convergence in this lesson, you may wish to do so
+on your own.  We believe that the value [[tsmear]] = 0.02  in telast_6.in
+gives results within 1% of the fully-converged small-broadening limit.
 
-**We find that** **[ occopt](../../input_variables/generated_files/varbas.html#occopt) ****=3, standard Fermi-Dirac broadening****, gives _ much better_ convergence of the C's than "cold smearing."**  Changing [ occopt](../../input_variables/generated_files/varbas.html#occopt) to 4 in telast_6.in, the option used in lesson 4, the C's show no sign of convergence.  At ngkpt=3*16, errors are still ~5%.  The reasons that this supposedly superior smoothing function performs so poorly in this context is a future research topic.  The main thing to be learned is that checking convergence with respect to all relevant parameters is ** always** the user's responsibility.  Simple systems that include the main physical features of a complex system of interest will usually suffice for this testing.  Don't get caught publishing a result that another researcher refutes on convergence grounds, and don't blame such a mistake on Abinit!
+**We find that[[occopt]] ****=3, standard Fermi-Dirac broadening****, gives _ much better_ convergence of the C's than "cold smearing."**  Changing [[occopt]] to 4 in telast_6.in, the option used in lesson 4, the C's show no sign of convergence.  At ngkpt=3*16, errors are still ~5%.  The reasons that this supposedly superior smoothing function performs so poorly in this context is a future research topic.  The main thing to be learned is that checking convergence with respect to all relevant parameters is ** always** the user's responsibility.  Simple systems that include the main physical features of a complex system of interest will usually suffice for this testing.  Don't get caught publishing a result that another researcher refutes on convergence grounds, and don't blame such a mistake on Abinit!
 
 Now we make a comparison with experiment.  Converting the C's to standard
 units (Ha/Bohr^3 = 2.94210119E+04 GPa) and using zero-temperature extrapolated
@@ -979,11 +903,10 @@ imagine actually measuring the elastic tensor elements. If you start with the
 conventional cubic cell, and apply pressure to one face, you can measure
 _C11_. But if you turn the cell to some random angle, you'll measure a
 response that is a mixture of _C11_ and _C12_. Within ABINIT, if the aluminum
-fcc cell is described using [[angdeg]] and
-[acell](../../input_variables/generated_files/varbas.html#angdeg), then an
-axis of the primitive cell will be aligned along the laboratory _z_ axis but
-this will not lead to a (conventional) cell alignment with the laboratory
-frame. The resulting elastic tensor will be correct but will appear to be more
+fcc cell is described using [[angdeg]] and [[acell]], then an axis of the
+primitive cell will be aligned along the laboratory _z_ axis but this will not
+lead to a (conventional) cell alignment with the laboratory frame. The
+resulting elastic tensor will be correct but will appear to be more
 complicated than in the illustration above. It can be rotated back to a simple
 frame by hand (bearing in mind that all four indices of the fourth-rank
 elastic tensor have to be rotated!) but it's easier to start with a more
@@ -997,5 +920,6 @@ frame.
 
     
 This ABINIT lesson is now finished...
+
 
 

@@ -75,7 +75,7 @@ class WikiLinks(Pattern):
             base_url, end_url, html_class = self._getMeta()
             #url = self.config['build_url'](token, base_url, end_url)
             try:
-                return website.anchor_from_wikilink(token)
+                return website.get_wikilink(token)
             except Exception as exc:
                 print("Exception while trying to handle wikilink `%s`" % token)
                 raise

@@ -17,7 +17,7 @@ internal input variables to be used in the input file for the abinit executable.
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -45,7 +45,7 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -68,7 +68,7 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -90,7 +90,7 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -112,7 +112,7 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -137,7 +137,7 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 *Default value:* None  
 *Only relevant if:* [[usepawu]]==1  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -160,7 +160,7 @@ is applied. This value is determined from [[lpawu]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -185,7 +185,7 @@ wavefunction array (cg), the density array (rho), etc .
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -211,7 +211,7 @@ the pseudopotential, where it is called "zion"), and the input variable
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -241,7 +241,7 @@ which the space is shared.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -271,7 +271,7 @@ which the space is shared.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -296,7 +296,7 @@ It is an internal variable, determined from [[ecuteps]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -320,7 +320,7 @@ It is an internal variable, determed from [[ecutsigx]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -346,7 +346,7 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 *Default value:* 3*0  
 *Only relevant if:* [[nqpt]]==1  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]]
 
 
@@ -385,7 +385,7 @@ code).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -411,7 +411,7 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -445,7 +445,7 @@ available with either type of calculation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -468,7 +468,7 @@ This internal variable is set to 1 when the recursion method is activated (see
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -495,7 +495,7 @@ Automatically determined from the value of [[ixc]].
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 

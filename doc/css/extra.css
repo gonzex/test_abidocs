@@ -1,3 +1,11 @@
+/* Links 
+a.citation-link {
+   font-style: italic;
+   color: red;
+}
+*/
+
+
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */
 
@@ -121,3 +129,41 @@ details.no-details:not([open]) > * {
 details.no-details:not([open]) summary {
   display: block;
 }
+
+/* https://stackoverflow.com/questions/19999696/are-numbered-headings-in-markdown-rdiscount-possible 
+body {
+    counter-reset: h1
+}
+
+h1 {
+    counter-reset: h2
+}
+
+h2 {
+    counter-reset: h3
+}
+
+h3 {
+    counter-reset: h4
+}
+
+h1:before {
+    counter-increment: h1;
+    content: counter(h1) ". "
+}
+
+h2:before {
+    counter-increment: h2;
+    content: counter(h1) "." counter(h2) ". "
+}
+
+h3:before {
+    counter-increment: h3;
+    content: counter(h1) "." counter(h2) "." counter(h3) ". "
+}
+
+h4:before {
+    counter-increment: h4;
+    content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "
+}
+*/

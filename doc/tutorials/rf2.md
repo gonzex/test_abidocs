@@ -1,3 +1,11 @@
+---
+authors: XG
+---
+
+# Second lesson on DFPT  
+
+## Phonon band structures, thermodynamical properties.  
+
 This lesson aims at showing how to get the following physical properties, for
 periodic solids :
 
@@ -5,8 +13,15 @@ periodic solids :
   * Phonon band structures 
   * Thermodynamical properties 
 
+The calculations will be based on density-functional perturbation theory
+(DFPT).
+
 This lesson should take about 1 hour.
 
+
+## 0 To be filled
+
+  
   * 1. Generation of a derivative database 
   * 2. Manipulation of the derivative databases (the MRGDDB utility) 
   * 3. Analysis of the derivative databases (the ANADDB utility) 
@@ -18,8 +33,9 @@ This lesson should take about 1 hour.
 
 
 
-### ** 1\. Generation of the derivative databases **
+## 1 Generation of a derivative database
 
+  
 _Before beginning, you might consider to work in a different subdirectory as
 for the other lessons. Why not create "Work_rf2" in
 ~abinit/tests/tutorespfn/Input ? _
@@ -39,8 +55,8 @@ In order to do interatomic force constant calculations, and to compute
 associated phonon band structure and thermodynamical properties, you should
 first have some theoretical background.  
 Let us assume that you have read the litterature relative to the [first lesson
-on response functions](lesson_rf1.html). You might find additional material,
-related to the present section, in the following references:  
+on DFPT](lesson_rf1.html). You might find additional material, related to the
+present section, in the following references:  
   
 X. Gonze and C. Lee, Phys. Rev. B55, 10355 (1997), especially section IX  
 C. Lee, X. Gonze, Phys. Rev. B 51, 8610 (1995)  
@@ -56,10 +72,9 @@ elaborate Fourier interpolation, so that only few dynamical matrices need to
 be computed directly. Others will be computed by interpolation.
 
 Let us have a look at the input file trf2_1.in . The calculation is done for
-AlAs, the same crystalline material as for the previous lesson on response
-functions. Many input parameters are also quite similar, both at the level of
-the description of the unit cell, as for the choice of cut-off energy and k
-point grid.
+AlAs, the same crystalline material as for the previous lesson on DFPT. Many
+input parameters are also quite similar, both at the level of the description
+of the unit cell, as for the choice of cut-off energy and k point grid.
 
 Still, this input file is rather complex : in one single run, one produces the
 (Derivative Databases) DDBs needed for the rest of this tutorial. So, it
@@ -129,12 +144,11 @@ from the section 2. Copy this file to the present directory, then go to
 section section 3 of this tutorial. You might come back to section 2
 afterwards.
 
-* * *
 
 
+## 2 Manipulation of the derivative databases (the MRGDDB utility)
 
-### ** 2\. Manipulation of the derivative databases (the MRGDDB utility) **
-
+  
 The use of the MRGDDB utility is described in its [help
 file](../../users/generated_files/help_mrgddb.html). Please, read it carefully
 now.
@@ -158,12 +172,11 @@ follows :
 
 It takes less than one second on a typical PC.
 
-* * *
 
 
+## 3 Analysis of the derivative databases (the ANADDB utility)
 
-### ** 3\. Analysis of the derivative databases (the ANADDB utility) **
-
+  
 An introduction to the use of the ANADDB utility is described in its [help
 file](../../users/generated_files/help_anaddb.html). Please, read it carefully
 now.
@@ -173,41 +186,38 @@ a selected set of input variables, with also some input variables common to
 many of the different tasks. The list of tasks to be done in one run is
 governed by different flags. Here is the list of flags :
 
-  * [dieflag](../../users/generated_files/help_anaddb.html#dieflag)
-  * [elaflag](../../users/generated_files/help_anaddb.html#elaflag)
-  * [elphflag](../../users/generated_files/help_anaddb.html#elphflag)
-  * [ifcflag](../../users/generated_files/help_anaddb.html#ifcflag)
-  * [instrflag](../../users/generated_files/help_anaddb.html#instrflag)
-  * [nlflag](../../users/generated_files/help_anaddb.html#nlflag)
-  * [piezoflag](../../users/generated_files/help_anaddb.html#piezoflag)
-  * [polflag](../../users/generated_files/help_anaddb.html#polflag)
-  * [thmflag](../../users/generated_files/help_anaddb.html#thmflag)
+  * [[anaddb:dieflag]] 
+  * [[anaddb:elaflag]] 
+  * [[anaddb:elphflag]] 
+  * [[anaddb:ifcflag]] 
+  * [[anaddb:instrflag]] 
+  * [[anaddb:nlflag]] 
+  * [[anaddb:piezoflag]] 
+  * [[anaddb:polflag]] 
+  * [[anaddb:thmflag]] 
 
 Please, take some time to read the description of each of these flags. Note
 that some of these flags might be required to allow to run another task.
 
-In this tutorial, we will focus on the flags
-[ifcflag](../../users/generated_files/help_anaddb.html#ifcflag) and
-[thmflag](../../users/generated_files/help_anaddb.html#thmflag)
-
-* * *
+In this tutorial, we will focus on the flags [[anaddb:ifcflag]] and
+[[anaddb:thmflag]].
 
 
 
-### ** 4\. The computation of interatomic force constants **
+## 4 The computation of interatomic force constants
 
+  
 You can copy the files ~abinit/tests/tutorespfn/Input/trf2_4.in and
 ~abinit/tests/tutorespfn/Input/trf2_4.files to the Work_rf2 directory.  
-Edit the file trf2_4.in . Note that
-[ifcflag](../../users/generated_files/help_anaddb.html#ifcflag) is activated.
-Related input variables can be split in three groups.
+Edit the file trf2_4.in . Note that [[anaddb:ifcflag]] is activated. Related
+input variables can be split in three groups.
 
 The first group of variables define the grid of q wavevectors :
 
-  * [brav](../../users/generated_files/help_anaddb.html#brav)
-  * [nqgpt](../../users/generated_files/help_anaddb.html#ngqpt)
-  * [nqshft](../../users/generated_files/help_anaddb.html#nqshft)
-  * [q1shft](../../users/generated_files/help_anaddb.html#q1shft)
+  * [[anaddb:brav]]
+  * [[anaddb:ngqpt]]
+  * [[anaddb:nqshft]]
+  * [[anaddb:q1shft]]
 
 Unfortunately, the names of input variables and their meaning is not exactly
 the same as the names used to generate the k points in ABINIT. This is a
@@ -218,19 +228,19 @@ The second group of variables allows to impose some known constraint on the
 dynamical matrices and Born effective charges before proceeding with the
 analysis :
 
-  * [asr](../../users/generated_files/help_anaddb.html#asr)
-  * [chneut](../../users/generated_files/help_anaddb.html#chneut)
+  * [[anaddb:asr]]
+  * [[anaddb:chneut]]
 
 Please, read carefully the explanation for these input variables.
 
 Finally, a third group of variables is related specifically to the analysis of
 the Interatomic Force Constants :
 
-  * [dipdip](../../users/generated_files/help_anaddb.html#dipdip)
-  * [ifcana](../../users/generated_files/help_anaddb.html#ifcana)
-  * [ifcout](../../users/generated_files/help_anaddb.html#ifcout)
-  * [natifc](../../users/generated_files/help_anaddb.html#natifc)
-  * [atifc](../../users/generated_files/help_anaddb.html#atifc)
+  * [[anaddb:dipdip]]
+  * [[anaddb:ifcana]]
+  * [[anaddb:ifcout]]
+  * [[anaddb:natifc]]
+  * [[anaddb:atifc]]
 
 Here also, spend some time to read the associated documentation.
 
@@ -263,40 +273,41 @@ Try to find the following paragraph :
     
 
 The interatomic force constants are output for the nuclei specified by the
-input variable [atifc](../../users/generated_files/help_anaddb.html#atifc).
-Here, only atom 1 is considered. The IFCs with respect to the other nuclei is
-given, by order of increasing distance. For each pair of nuclei involving atom
-1, there is first the output of the IFCs in cartesian coordinates, as well as
-their decomposition into an Ewald and a short-range part, then, the analysis
-with respect to a local system of coordinate. The latter is chosen such as to
-diagonalize the IFC tensor, in case of the self-force constant, and in the
-other cases, the first vector is the vector joining the two nuclei, in order
-to decompose the IFC into a longitudinal and a transverse component.
-
-* * *
+input variable [[anaddb:atifc]]. Here, only atom 1 is considered. The IFCs
+with respect to the other nuclei is given, by order of increasing distance.
+For each pair of nuclei involving atom 1, there is first the output of the
+IFCs in cartesian coordinates, as well as their decomposition into an Ewald
+and a short-range part, then, the analysis with respect to a local system of
+coordinate. The latter is chosen such as to diagonalize the IFC tensor, in
+case of the self-force constant, and in the other cases, the first vector is
+the vector joining the two nuclei, in order to decompose the IFC into a
+longitudinal and a transverse component.
 
 
 
-### ** 5\. The efficient computation of phonon band structures **
+## 5 The efficient computation of phonon band structures
 
+  
 You can copy the files ~abinit/tests/tutorespfn/Input/trf2_5.in and
 ~abinit/tests/tutorespfn/Input/trf2_5.files to the Work_rf2 directory.  
-Edit the file trf2_5.in . Note that
-[ifcflag](../../users/generated_files/help_anaddb.html#ifcflag) is again
-activated. Indeed, in order to compute a phonon band structure using the
-Fourier interpolation, the IFCs are required. This is why the two first groups
-of variables, needed to generate the IFCs are still defined. The third group
-of variables is now restricted to
-[dipdip](../../users/generated_files/help_anaddb.html#dipdip) only.
+Edit the file trf2_5.in . Note that [[anaddb:ifcflag]] is again activated.
+Indeed, in order to compute a phonon band structure using the Fourier
+interpolation, the IFCs are required. This is why the two first groups of
+variables, needed to generate the IFCs are still defined. The third group of
+variables is now restricted to [[anaddb:dipdip]] only.
 
 Then, come the input variables needed to define the list of q wavevectors in
 the band structure :
 
-  * [eivec](../../users/generated_files/help_anaddb.html#eivec): flag to turn on the analysis of phonon eigenvectors
-  * [nph1l](../../users/generated_files/help_anaddb.html#nph1l) number of q-points for phonon interpolation
-  * [qph1l](../../users/generated_files/help_anaddb.html#qph1l) list of q-points for phonon interpolation
-  * [nph2l](../../users/generated_files/help_anaddb.html#nph2l) number of q-directions for LO-TO correction
-  * [qph2l](../../users/generated_files/help_anaddb.html#qph2l) list of q-directions for LO-TO correction
+[[anaddb:eivec]]: flag to turn on the analysis of phonon eigenvectors
+
+[[anaddb:nph1l]] number of q-points for phonon interpolation
+
+[[anaddb:qph1l]] list of q-points for phonon interpolation
+
+[[anaddb:nph2l]] number of q-directions for LO-TO correction
+
+[[anaddb:qph2l]] list of q-directions for LO-TO correction
 
 Now, you should issue :
 
@@ -371,12 +382,11 @@ Of course, one should make a convergence study, on the k and q point grids
 (separately !), as well as on the energy cut-off, and also test LDA and GGA
 ... But this is left to the user !
 
-* * *
 
 
+## 6 Thermodynamical properties
 
-### ** 6\. Thermodynamical properties. **
-
+  
 We will give only a very short example of the use of ANADDB to compute
 thermodynamical properties. This is because this part of ANADDB is likely the
 farthest from a clean, stable, usage. By exploring the input variables, the
@@ -390,16 +400,16 @@ have a look at them.
 The same DDB as for trf2_4 and trf2_5 is used, namely trf2_3.ddb.out. The
 following additional input variables are present :
 
-  * [thmflag](../../users/generated_files/help_anaddb.html#thmflag)
-  * [ng2qpt](../../users/generated_files/help_anaddb.html#ng2qpt)
-  * [ngrids](../../users/generated_files/help_anaddb.html#ngrids)
-  * [q2shft](../../users/generated_files/help_anaddb.html#q2shft)
-  * [nchan](../../users/generated_files/help_anaddb.html#nchan)
-  * [nwchan](../../users/generated_files/help_anaddb.html#nwchan)
-  * [thmtol](../../users/generated_files/help_anaddb.html#thmtol)
-  * [ntemper](../../users/generated_files/help_anaddb.html#ntemper)
-  * [temperinc](../../users/generated_files/help_anaddb.html#temperinc)
-  * [tempermin](../../users/generated_files/help_anaddb.html#tempermin)
+  * [[anaddb:thmflag]]
+  * [[anaddb:ng2qpt]]
+  * [[anaddb:ngrids]]
+  * [[anaddb:q2shft]]
+  * [[anaddb:nchan]]
+  * [[anaddb:nwchan]]
+  * [[anaddb:thmtol]]
+  * [[anaddb:ntemper]]
+  * [[anaddb:temperinc]]
+  * [[anaddb:tempermin]]
 
 Examine the input file, the input variables, then run anaddb (as usual ...).
 Then, edit the output file. You should be able to find the crucial section :
@@ -429,5 +439,6 @@ temperature, anharmonic effects will have a sizeable contributions.
 
 The atomic temperature factors can also be computed. An example is presented
 in tests/v5 , test 22 .
+
 
 

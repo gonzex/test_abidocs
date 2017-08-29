@@ -97,10 +97,10 @@ This script:
 * Expands special strings, of the form `[[namespace:name#section|text]]` to create HTML links.
 * Creates the needed HMTL files 
 
-The expansion of special strings is documented in the [links section](/docs/developers/markdown#links). 
+The expansion of special strings is documented in the [links section](markdown#links). 
 It can be used in all the YAML files mentioned below. 
 For equations/formulas, [Mathjax](http://docs.mathjax.org/en/latest/mathjax.html) is activated, and allows
-to process and visualize LaTeX formulas, see also [[developers:link_shortcuts]].
+to process and visualize LaTeX formulas, see also [our MathJax section](markdown#MathJax).
 
 ## Website organization
 
@@ -181,7 +181,8 @@ Note that input variables for the executables other than the main abinit (e.g. a
 denoted `input_variable_name@executable`, e.g. `dipdip@anaddb` 
 (this allows to waive the ambiguity with the dipdip input variable for the main abinit).
 
-After having edited the info related to one input variable (see the infos at [[developers:abivars.yml|Specs for abivars.yml]]), 
+After having edited the info related to one input variable (see the infos at 
+[Specs for abivars.yml](specifications-for-the-abinit_varsyml-file)
 you must still **save the entire file** (click on "File" (upper right) then "Save"). 
 Just editing one input variable and saving the changes will only go to some internal variable, and this is 
 NOT saving your modifications in the YAML storage file.
@@ -207,11 +208,11 @@ The "text" content of the "introduction" section is in plain HTML.
 
 At variance, the other sections of the topic_NAME.html are created from other sources. 
 The list of input variables that are relevant to this topics is assembled from the information
-given for these input variables, see [[#input variableshow_to_add_modify|Input variables : how_to_add_modify]], 
-as well as [[developers:topics_and_tribes]], while the list of relevant input files
+given for these input variables, see [Input variables: how_to_add_modify](#how-to-addmodify)
+as well as [Topics and tribes](topics-and-tribes), while the list of relevant input files
 is assembled from the information in each of these input files (add a line "#%% topics = " in the last section of the input file.). 
 The bibliography list is assembled from the references cited in the "introduction" section, 
-that use [[developers:link_shortcuts|Shortcuts for Web links]].
+that use [Shortcuts for Web links](markdown#links).
 
 Note the file `default_topic.yml`, whose components are used in case they are not specified explicitly 
 in the more specific file `topic_NAME.yml`.
@@ -342,7 +343,7 @@ It is the type that contains the other fields.
 * `mnemonics`: a longer description of the variable role, in a few words
 * `requires`: the input variable is relevant only if this condition is fulfilled
 * `text`: free text describing the input variable
-* `topics`: a string, specified in [[developers:topics_and_tribes]]
+* `topics`: a string, specified in [topics_and_tribes](#topics-and-tribes)
 * `varset`: a unique "set of variables" to which the variable belong. 
    To be chosen among the names in `~abinit/doc/input_variables/origin_files/varsets.yml`.
 * `vartype`: to be chosen among integer, real or string
@@ -422,4 +423,4 @@ the CONDITION to be fulfilled.
 Pay attention to strings. If it is recognized as string directly, you don't need ticks (' ').
 Otherwise, you need to put ticks. 
 For example, if you want to use a link as a value, use a link shortcut like `[[abivarname]]`. 
-See the doc about link shortcuts at [[developers:link_shortcuts]]. 
+See the doc about link shortcuts at [links shortcuts](markdown#links). 

@@ -304,7 +304,7 @@ class Variable(yaml.YAMLObject):
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
             # TODO?
             #if len(self.tests) <= 10:
-            app('\n??? note "Test list (%s)"' % info)
+            app('\n??? note "Test list (click to open) (%s)"' % info)
             for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
                 #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))

@@ -1,36 +1,52 @@
-The new user is advised to read first the [[help_new_user]], before reading
-the present file. It will be easier to discover the present file with the help
-of the [[lesson_welcome]] file.
+---
+authors: DCA,  XG
+---
+
+# ABINIT, the main code  
+
+## This document explains the i/o parameters and format needed for the main code (abinit) in the ABINIT package.  
+
+The new user is advised to read first the [[help:new_user|new user helpfile]],
+before reading the present file. It will be easier to discover the present
+file with the help of the [[lesson:welcome|tutorial]].
 
 It is worthwhile to print this help file, for ease of reading.
 
 When the user will be sufficiently familiarized with ABINIT, reading the
 ~abinit/doc/users/tuning.txt file might be useful (this file, as many
 additional documentation files, is not available on the Web, but is available
-in the package). For response-function calculations using abinit, the
+in the package). For calculating response properties using abinit, the
 complementary [[help_respfn]] is needed.
 
-### **1. How to run the code**
 
-#### 1.1 Introducing the files file.
+## 1 How to run the code?
 
+  
+
+
+### 1.1 Introducing the 'files' file
+
+  
 Given an input file (parameters described below) and the required
 pseudopotential files, the user must create a "files" file which lists names
 for the files the job will require, including the main input file, the main
-output file, root names for other input, output, or temporary files, and
-different pseudopotential file names.
+output file, root names for other input, output, or temporary files, and the
+names of different pseudopotential or PAW atomic data files (one per line).
 
 The files file (called for example ab.files) could look like:
+
     
-        ab_in
-        ab_out
-        abi
-        abo
-        tmp
-        14si.psp
+    
+       ab_in
+       ab_out
+       abi
+       abo
+       tmp
+       Si-GGA.psp8
+       O-GGA.psp8
+     
 
 In this example:  
-
 \- The main input file is called "ab_in".  
 \- The main output will be put into the file called "ab_out".  
 \- The name of input wavefunctions (if any) will be built from the root "abi"
@@ -39,30 +55,31 @@ In this example:
 might be build from this root.  
 \- The temporary files will have a name that use the root "tmp". (for example
 tmp_STATUS).  
-\- The pseudopotential needed for this job is "14si.psp".  
+\- The pseudopotentials needed for this job are "Si-GGA.psp8" and
+"O-GGA.psp8".  
   
 Other examples are given in the subdirectories of the ~abinit/tests directory.
 The maximal length of names for the main input or output files is presently
 132 characters. It is 112 characters for the root strings, since they will be
 supplemented by different character strings.
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### 1.2. Running the code
 
+
+### 1.2 Running the code
+
+  
 The main executable file is called abinit. Supposing that the "files" file is
 called ab.files, and that the executable is placed in your working directory,
 abinit is run interactively (in Unix) with the command
 
-```sh
-    $ abinit < ab.files >& log
-```
+  * _abinit < ab.files >& log _
+
   
 or, in the background, with the command
 
-```sh
-    $ abinit < ab.files >& log &
-```
+  * _abinit < ab.files >& log & _
 
 where standard out and standard error are piped to the log file called "log"
 (piping the standard error, thanks to the '&' sign placed after '>' is
@@ -72,14 +89,14 @@ specify any names he/she wishes for any of these files. Variations of the
 above commands could be needed, depending on the flavor of UNIX that is used
 on the platform that is considered for running the code.  
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-* * *
 
-### **2\. The underlying theoretical framework and algorithms**
 
-See the "[bibliography](../../bibliography/generated_files/bibliography.html)"
-file.
+## 2 The underlying theoretical framework and algorithms
+
+  
+See the [[bib:biblio|bibliography]] file.
 
 The methods employed in this computer code to solve the electronic structure
 problem are described in part in different review papers as well as research
@@ -108,7 +125,7 @@ dynamics and conjugate gradients'', M. C. Payne, M. P. Teter, D. C. Allan, T.
 A. Arias, and J. D. Joannopoulos, Rev. Mod. Phys. 64, 1045-1097 (1992).  
 This paper does NOT reflect the present status of the code. ABINIT is closer
 in spirit to the paper of of Kresse and Furthmuller, see the
-[bibliography](../../bibliography/generated_files/bibliography.html) list.
+[[bib:biblio|bibliography]] list.
 
 If you have never used another electronic structure code or a Quantum
 Chemistry package, you should browse through the Chaps. 1 to 13 , and
@@ -116,12 +133,16 @@ appendices L and M of the book Electronic Structure. Basic Theory and
 Practical Methods. R. M. Martin. Cambridge University Press (2004) ISBN 0 521
 78285 6.
 
-* * *
 
-###  3\. The input file
 
-#### 3.1. Format of the input file.
+## 3 The input file
 
+  
+
+
+### 3.1 Format of the input file
+
+  
 Note that this input file was called ab_in in the example of  section 1.1 .  
 We first explain the content of the input file without use of the "multi-
 dataset" possibility (that will be explained in section 3.3).
@@ -139,16 +160,17 @@ of numbers separated by spaces are taken as the values for the array.
   * Do NOT use tabs. 
   * NOTE THAT NO LINE OF THE INPUT FILE MAY EXCEED 132 CHARACTERS. That is, only the first 132 characters of each line of the input file will be read and parsed for input variables and their values. 
 
-The names of all the parameters can be found in the [[allvariables]]. The list
-of input variables present in the latter file links them to their definitions,
-contained in different files, of which some are listed here:
+The names of all the parameters can be found in the [[varset:allvars|input
+variable database]]. The list of input variables present in the latter file
+links them to their definitions, contained in different "variable set" files,
+some of which are listed here:
 
-  * Basic variables, [[varbas]]
-  * Files handling variables, [[varfil]]
-  * Ground-state calculation variables, [[vargs]]
-  * GW variables, [[vargw]]
-  * Parallelisation variables, [[varpar]]
-  * Response Function variables, [[varrf]]
+  * Basic variables, [[varset:basic]]
+  * Files handling variables, [[varset:files]]
+  * Ground-state calculation variables, [[varset:gstate]]
+  * GW variables, [[varset:gw]]
+  * Parallelisation variables, [[varset:paral]]
+  * Density Functional Perturbation Theory variables, [[varset:dfpt]]
 
 In the actual input file, these parameters may be given in any desired order,
 and more than one may be given per line. Spaces are used to separate values
@@ -158,7 +180,7 @@ and is an array [[acell]](3) for the lengths of the primitive translations in
 Bohr atomic units. To input a typical Si diamond lattice one would have the
 line
 
-`acell 10.25311 10.25311 10.25311`
+` acell 10.25311 10.25311 10.25311`
 
 in the input file. This may equivalently be written
 
@@ -203,88 +225,29 @@ code stops.
 
 _If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### **3.2. More about ABINIT input variables.**
 
+
+### 3.2 More about ABINIT input variables
+
+  
 In each section of the ABINIT input variables files, a generic information on
-the input variable is given : a mnemonics, some "characteristics", the
-variable type, and the default. Then, follows the description of the variable.
+the input variable is given : a **mnemonics**, possibly some
+**characteristics**, the **variable type** (integer, real, string), and the
+**default value**. Then, follows the description of the variable.
 
-The **mnemonics** is indicated when available.
+The **characteristics** can be one of the following : **DEVELOP**, **NO
+MULTI**, **INTERNAL_ONLY**, **INPUT_ONLY**, **EVOLVING**, **ENERGY**,
+**LENGTH**, **MAGNETIC FIELD**, as described now.
 
-The "characteristics" can be of different types : **DEVELOP**, **RESPFN**,
-**NONLINEAR**, **GW**, **BETHE_SALPETER**, **TDDFT**, **GEOMETRY_BUILDER**,
-**SYMMETRISER**, **SYMMETRY_FINDER**, **NO MULTI**, **INTERNAL_ONLY**,
-**INPUT_ONLY**, **EVOLVING**, **ENERGY**, **LENGTH**, **MAGNETIC FIELD**. We
-now explain each of these classes.
+**
 
-'**DEVELOP**' refers to input variables that are not used in production runs,
-but only during development time. For non developers, it is strongly advised
-to skip them.
+#### Physical information
 
-Some input variables are related to response function features, or non-linear
-features, and are indicated '**RESPFN**' and '**NONLINEAR**'. Detailed
-explanations related to response function and non linear features are to be
-found in the complementary [[help_respfn]]. The initials RF are used for
-'response function', and non-response-function are often referred to as GS
-(for ground-state), although this latter designation is not really
-satisfactory.
+**
 
-Some input variables are related to excited state calculations, and are
-indicated '**GW**', '**BETHE_SALPETER**', or '**TDDFT**'. No complementary
-help file is yet provided for such calculations. Please refer to the tutorial
-([[lesson_gw1]], [[lesson_gw2]], [[lesson_tddft]], and [[lesson_bse]]).
-
-There are also parameters related to the geometry builder, a preprocessor of
-the input file, aimed at easing the work of the user when there are molecules
-to be manipulated (rotation and translation), or group of atoms to be
-repeated. The indication '**GEOMETRY_BUILDER**' is given for them. These can
-also be skipped for the first few steps in the use of the code.  
-Indeed, it should be _easy to set up the geometry of systems with less than
-20-40 atoms without this geometry builder_. Even for larger systems, its
-functionalities could eventually be of no help. For a step-to-step description
-of this geometry builder, look at the variable '[[nobj]]'. The related input
-variables being used for preprocessing of the input file, they are not echoed
-in the output file.
-
-Alternatively to the geometry builder, there is also a symmetriser. It allows
-to generate the full set of atoms in the primitive cell from the knowledge of
-the symmetry operations and the atoms in the asymmetric cell. It also allows
-to generate the symmetry operations from the knowledge of the number of the
-space group according to the international crystallographic tables. The
-indication '**SYMMETRISER**' is given for the variables related to its use.
-Look at the variable '[[spgroup]]'.  
-You may find in the space group [help file](../spacegrouphelpfile.html) the
-crystallographic equivalence of the parameters belonging to the symmetriser.
-The related input variables being used for preprocessing of the input file,
-they are not echoed in the output file.
-
-Still as an alternative to the geometry builder and the symmetriser, if all
-the coordinates of the atoms are given, the code is able to deduce all
-symmetry operations leaving the lattice and atomic sublattices invariant, see
-'**SYMMETRY_FINDER**'. Note that the default tolerance on the coordinates that
-are provided by the user, for a symmetry to be recognized, is on the order of
-1.e-8 . If the provided coordinates are rather inaccurate, ABINIT will not
-recognize the symmetry, unless the input variable [[tolsym]] is changed.
-
-Most of the variables can be used in the multi-dataset mode (see section 3.3),
-but those that must have a unique value throughout all the datasets are
-signaled with the indication '**NO_MULTI**'
-
-Some of the input variables, with characteristics '**INPUT_ONLY**' are only
-used by the parser, to initialize other input variables, but are not
-transmitted inside the code, beyond the parser. In particular, they are not
-echoed in the output file.
-
-At variance, some internal variables, with characteristics '**INTERNAL_ONLY**'
-are documented in the help files, but are not accessible as input variables.
-The documentation is provided because such variables are sometimes mentioned
-in the output file.
-
-Most of the input variables do not change while a run is performed. Some of
-them, by contrast, may evolve, like the atomic positions, the atomic
-velocities, the cell shape, and the occupation numbers. Their echo, after the
-run has proceeded, will of course differ from their input value. They are
-signaled by the indication '**EVOLVING**'.
+The **ENERGY**, **LENGTH** and **MAGNETIC FIELD** characteristics indicate
+that the physical meaning of the variable is known by ABINIT, so that ABINIT
+can treat its physical dimensions with some units.
 
 The use of the atomic unit system (e.g. the Hartree for energy, about 27.211
 eV, and the Bohr for lengths about 0.529 Angstroms) is strictly enforced
@@ -311,27 +274,65 @@ Except in the case of 'Angstr', the abbreviation must be used (i.e. 'Rydberg'
 will not be recognized presently). Other character chains, like "au" (for
 atomic units) or "Hartree", or "Bohr" are not recognized, but make the parser
 choose (by default) atomic units, which is the correct behaviour. Example :
+
     
-         acell 8 8 8 angstrom
-         ecut 8 Ry
-         tsmear 1000 K
-      
+    
+        acell 8 8 8 angstrom
+        ecut 8 Ry
+        tsmear 1000 K
+     
 
 or
+
     
-          acell 3*10 Bohr  ecut 270 eV  tsmear 0.01
+    
+         acell 3*10 Bohr  ecut 270 eV  tsmear 0.01
+     
 
 The use of the atomic units is mandatory for other dimensioned input
 variables, like the tolerance on forces ([[toldff]]), parameters that define
-an 'object' ([objaax, objbax](../../input_variables/generated_files/vargeo.html#objaax), 
-[objatr, objbtr](../../input_variables/generated_files/vargeo.html#objatr)), and the
+an 'object' ([[objaax|objaax, objbax]], [[objatr|objatr, objbtr]]), and the
 initial velocity of atoms ([[vel]] \- if needed).
 
 The initial atomic positions can be input in Bohr or Angstrom through
 '[[xcart]]', but also, independently, in Angstrom through '[[xangst]]', or
-even in reduced coordinates, through '[[xred]]'. Reduced cartesian coordinates
-must be used for the eventual translations accompanying symmetry operations
-([[tnons]]).
+even in reduced coordinates, through '[[xred]]'.
+
+**
+
+#### Flow information
+
+**
+
+Most of the variables can be used in the multi-dataset mode (see section 3.3),
+but those that must have a unique value throughout all the datasets are
+signaled with the indication '**NO_MULTI**'.
+
+Some of the input variables, with characteristics '**INPUT_ONLY**' are only
+used by the parser, to initialize other input variables, but are not
+transmitted inside the code, beyond the parser. In particular, they are not
+echoed in the output file.
+
+At variance, some internal variables, with characteristics '**INTERNAL_ONLY**'
+are documented in the help files, but are not accessible as input variables.
+The documentation is provided because such variables are sometimes mentioned
+in the output file.
+
+Most of the input variables do not change while a run is performed. Some of
+them, by contrast, may evolve, like the atomic positions, the atomic
+velocities, the cell shape, and the occupation numbers. Their echo, after the
+run has proceeded, will of course differ from their input value. They are
+signaled by the indication '**EVOLVING**'.
+
+**
+
+#### Other information
+
+**
+
+'**DEVELOP**' refers to input variables that are not used in production runs,
+but have been introduced during development time, of a feature that is likely
+not finalized. For non ABINIT developers, it is strongly advised to skip them.
 
 In addition to giving the input variables, the input file can be useful for
 another purpose : placing the word "**exit**" on the top line will cause the
@@ -348,10 +349,13 @@ both cases, the stop is not immediate. It can take a significant fraction
 (about 20% at most) of one SCF step to execute properly the instruction still
 needed.
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### **3.3. The multi-dataset mode.**
 
+
+### 3.3 The multi-dataset mode
+
+  
 Until now, we have assumed that the user wants to make computations
 corresponding to one set of data : for example, determination of the total
 energy for some geometry, with some set of plane waves and some set of
@@ -379,15 +383,17 @@ understand when one looks at examples, see below) :
   * (2) If this modified variable name does not exist, it will look whether a metacharacter, a series or a double-loop data set has been defined, see sections 3.4 or 3.5.
   * (3) If the variable name appended with the index of the dataset does not exist, and if there is no series nor double-loop dataset for this keyword, it looks for an occurrence of the variable name without any index appended, and take the corresponding data. (This corresponds to the single dataset mode)
   * (4) If such occurrences do not exist, it takes the default value. (Also, similar to the single dataset mode)
+
     
-         ---------------
     
-         1st example.
+        ---------------
     
-         ndtset   2
-          acell   8 8 8
-           ecut1  10
-           ecut2  15
+        1st example.
+    
+        ndtset   2
+         acell   8 8 8
+          ecut1  10
+          ecut2  15
     
 
 means that there are 2 datasets : a first in which
@@ -406,19 +412,19 @@ has to be used.
 
     
     
-         ------------------
+        ------------------
     
-         2nd example
+        2nd example
     
-         ndtset 2     jdtset 4 5
+        ndtset 2     jdtset 4 5
     
-         acell   8 8 8
-         acell5 10 10 10
-         ecut1  10
-         ecut2  15
-         ecut3  20
-         ecut4  25
-         ecut5  30
+        acell   8 8 8
+        acell5 10 10 10
+        ecut1  10
+        ecut2  15
+        ecut3  20
+        ecut4  25
+        ecut5  30
     
 
 this means that there are still two datasets, but now characterized by the
@@ -438,8 +444,11 @@ and the second run will use "acell5" and "ecut5" :
 
 Note that ecut1, ecut2 and ecut3 are not used.
 
-#### 3.4. Defining a series.
 
+
+### 3.4 Defining a series
+
+  
 Rule (2) is split in three parts : (2a), (2b) and (2c).  
 Series relate with (2b):
 
@@ -460,28 +469,38 @@ geometric series is defined by the keyword appended with a times (e.g.
 If the index of the dataset is 1, the first term of the series is used, while
 for index N , the appropriate input data is obtained by considering the Nth
 term of the series.
+
     
-      ------------------
     
-      3rd example
+     ------------------
     
-        ndtset 6
-        ecut1 10
-        ecut2 15
-        ecut3 20
-        ecut4 25
-        ecut5 30
-        ecut6 35
+     3rd example
+    
+       ndtset 6
+       ecut1 10
+       ecut2 15
+       ecut3 20
+       ecut4 25
+       ecut5 30
+       ecut6 35
     
 
 is equivalent to
+
+    
     
         ndtset 6 ecut: 10 ecut+ 5
+    
 
 In both cases, there are six datasets, with increasing values of [[ecut]].
 
-#### 3.5. Defining a double loop dataset
+####  
 
+
+
+### 3.5 Defining a double loop dataset
+
+  
 To define a double loop dataset, one has first to define the upper limit of
 two loop counters, thanks to the variable [[udtset]]. The inner loop will
 execute from 1 to [[udtset]](2), and the outer loop will execute from 1 to
@@ -520,40 +539,47 @@ can be a colon, a plus or a times, as in the case of the series defined in
 Rule (1) has precedence over them, they have precedence over rules (3) or (4),
 rule (2a) has precedence over rules (2b) or (2c) and the two latter cannot be
 used simultaneously for the same variable.
+
     
-         ------------------
     
-         4th example
-         ndtset 6    udtset 2 3
-         acell1?  10 10 10
-         acell2?  15 15 15
-         ecut?: 5    ecut?+ 1
+        ------------------
     
+        4th example
+        ndtset 6    udtset 2 3
+        acell1?  10 10 10
+        acell2?  15 15 15
+        ecut?: 5    ecut?+ 1
+     
 
 is equivalent to
+
     
-         ndtset 6     jdtset 11 12 13  21 22 23
-         acell11  10 10 10     ecut11 5
-         acell12  10 10 10     ecut12 6
-         acell13  10 10 10     ecut13 7
-         acell21  15 15 15     ecut21 5
-         acell22  15 15 15     ecut22 6
-         acell23  15 15 15     ecut23 7
     
+        ndtset 6     jdtset 11 12 13  21 22 23
+        acell11  10 10 10     ecut11 5
+        acell12  10 10 10     ecut12 6
+        acell13  10 10 10     ecut13 7
+        acell21  15 15 15     ecut21 5
+        acell22  15 15 15     ecut22 6
+        acell23  15 15 15     ecut23 7
+     
 
 _More examples can be found in the directory ~abinit/tests/v1, cases 59 and
 later._
 
-#### 3.6. File names in the multi-dataset mode.
 
+
+### 3.6 File names in the multi-dataset mode
+
+  
 The root names for input and output files (potential, density, wavefunctions
 and so on) will receive an appendix : '**_DS**' followed by the index of the
 dataset. See section 4.
 
 The '**get**' variables can be used to chain the calculations.
 
-Until now, there are eight of them : [[getwfk]], [[getwfq]], [[getddk]],
-[[get1wf]], [[getden]], [[getcell]], [[getxred]] and [[getxcart]].
+Let us mention a few of them : [[getwfk]], [[getwfq]], [[getddk]], [[get1wf]],
+[[getden]], [[getcell]], [[getxred]] and [[getxcart]].
 
   * [[getwfk]] allows to take the output wavefunctions of a previous dataset and use them as input wavefunctions 
   * [[getwfq]], [[getddk]] and [[get1wf]] do similar things for response function calculations 
@@ -569,19 +595,21 @@ conventions :
   * **fcart** (cartesian forces) 
   * **strten** (the stress tensor). 
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-* * *
 
-### 4\. The "files" file
 
-Note: _This "files" file is called ab.files in section 1.1 ._
+## 4 More detailed presentation of the 'files' file
 
-Contains the file names or root names needed to build file names. These are
-listed below : there are 5 names or root names for input, output and
-temporaries, and then a list of pseudopotentials. These names may be provided
-from unit 05 interactively during the run but are more typically provided by
-piping from a file in Unix (the "files" file).
+  
+Note: _This "files" file is called _ab.files_ in section 1 ._
+
+As mentioned in section 1 (you might read it again if needed), the "files"
+file contains the file names or root names needed to build file names. These
+are listed below : there are 5 names or root names for input, output and
+temporaries, and then a list of pseudopotentials (one per line). These names
+may be provided from unit 05 interactively during the run but are more
+typically provided by piping from a file in Unix (the "files" file).
 
 **ab_in**   
 Filename of file containing the input data, described in the preceding
@@ -736,37 +764,50 @@ there are types of atoms in the system, and the order in which the names are
 given establishes the identity of the atoms in the unit cell. (psp2, psp3, ...
 )
 
+
+
 _If you follow the tutorial, you should go back to the tutorial window now. _
 
-* * *
 
-### **5\. The pseudopotential files**
 
-Actually, no real understanding of these files is needed to run the code, but
-for different other reasons, it might be useful to be able to understand the
-file structures. Different format are possible (labelled 1 to 7 presently) The
-associated internal variable is called pspcod. Examples of use are found in
-~abinit/test/v1 . Information on the file structure can be found in the
-~abinit/doc/psp_infos directory.
+## 5 The pseudopotential files and PAW atomic data files
 
-  * pspcod=1 : Troullier-Martins pseudopotentials, generated by DC Allan and A Khein, see ~abinit/doc/psp_infos/psp1_info.txt ; 
-  * pspcod=2 : Goedecker-Teter-Hutter (GTH) pseudopotentials. See Phys. Rev. B 54, 1703 (1996) if needed ; 
-  * pspcod=3 : Hartwigsen-Goedecker-Hutter pseudopotentials. See Phys. Rev. B 58, 3641 (1998) if needed, and the file ~abinit/doc/psp_infos/psp3_info.txt ; 
-  * pspcod=4 or 5 : old format pseudopotentials, see ~abinit/doc/psp_infos/psp45_info.txt ; 
-  * pspcod=6 : pseudopotentials from the fhi98pp code, see ~abinit/doc/psp_infos/psp6_info.txt ; 
-  * pspcod=7 : pseudo atomic data for PAW ; 
-  * pspcod=8 : pseudopotential file format from Don Hamann, providing additional flexibility. 
+  
+Actually, no real understanding of these files is needed to run the code. The
+recommended pseudopotentials can be downloaded from the ABINIT Web site at
+[[http://www.abinit.org/downloads/atomic-data-files]]. Documentation is
+provided there as well as in the dedicated [[topic_PseudosPAW]]. Note that it
+is not possible to mix norm-conserving pseudopotentials and PAW atomic data
+sets in the same run. Also, every such file has been generated for a
+particular choice of the exchange-correlation functional [[ixc]]. It is in
+principle incorrect to use a pseudopotential (or PAW data) with another
+exchange-correlation functional than the one it has been generated for, but
+ABINIT will only send a warning.
 
-* * *
+For different other reasons, it might nevertheless be useful to be able to
+grasp some information from the file. For norm-conserving pseudopotentials
+different format are possible (labelled 1 to 8 presently). The associated
+internal variable is called pspcod. Information on the header of these
+pseudopotential files can be found in the abinit wiki at
+[[https://wiki.abinit.org/doku.php?id=developers:pseudos]], that you should
+read now (do not pursue with the description of each format, though).
 
-### **6\. The different output files**
 
+
+## 6 The different output files
+
+  
 Explanation of the output from the code
 
 Output from the code goes to several places listed below.
 
-#### **6.1. The log file**
 
+
+
+
+### 6.1 The log file
+
+  
 The "log" file (this is the standard UNIX output file, and corresponds to
 Fortran unit number 06) : a file which echoes the values of the input
 parameters and describes various steps of the calculation, typically in much
@@ -790,10 +831,13 @@ Also, the code gives the number of **WARNING** or **COMMENT** it issued. It is
 advised to read at least the **WARNING** messages, during the first month of
 ABINIT use.
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### **6.2. The main output file **
 
+
+### 6.2 The main output file
+
+  
 The **main output file** is a formatted output file to be kept as the
 permanent record of the run.
 
@@ -815,10 +859,15 @@ Then, for each dataset, it reports the point symmetry group and Bravais
 lattice, and the expected memory needs. It echoes the input data, and report
 on checks of data consistency for each dataset.
 
-If you follow the tutorial, you should go back to the tutorial window now.
+_If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### **6.3. More on the main output file **
 
+
+
+
+### 6.3 More on the main output file
+
+  
 Then, for each dataset, the real computation is done, and the code will report
 on some initialisations, the SCF convergence, and the final analysis of
 results for this dataset. Each of these phases is now described in more
@@ -871,8 +920,8 @@ of [[ntime]], the code output more information:
   * Also are given the rms force (**frms**) and the maximum absolute value of any force component (**max**). 
   * Next are the length scales of the unit cell in Bohr and in Angstroms. 
   * Next are the eigenvalues of each band for each k point, in eV or Hartree or both depending on the choice of [[enunit]].   
-
-NOTE that the average electrostatic potential of a periodically repeated cell is UNDEFINED.  
+NOTE  that the average electrostatic potential of a periodically repeated cell
+is UNDEFINED.  
 In the present implementation, the average Hartree potential and local
 potential are imposed to be zero, but not the average exchange-correlation
 potential. This definition gives some meaning to the absolute values of
@@ -902,8 +951,7 @@ for Etot=total energy per unit cell and
 **a**,**b** are **x**, **y**, or **z** components of strain.   
 The stress tensor is given in cartesian coordinates in Hartree/Bohr3 and GPa.  
 The basics of the stress tensor are described in O. H. Nielsen and Richard M.
-Martin, see the
-[bibliography](../../bibliography/generated_files/bibliography.html) file.
+Martin, see the [[bib:biblio|bibliography]] file.
 
 Having finished all the calculations for the different datasets, the code
 echoes the parameters listed in the input file, using the latest values e.g.
@@ -954,10 +1002,15 @@ at fixed atomic positions, these subroutines are
   * (7) **cgwf** : optimize one wavefunction in a fixed potential 
   * (8) **getghc**: computes < G | H | C >, that is, applies the Hamiltonian operator to an input vector. 
 
-If you follow the tutorial, you should go back to the tutorial window now.
 
-#### **6.4. The header**
 
+_If you follow the tutorial, you should go back to the tutorial window now. _
+
+
+
+### 6.4 The header
+
+  
 The **wavefunction files**, **density files**, and **potential files** all
 begin with the same records, called the "header".  
 This header is treated using a hdr_type datastructure inside ABINIT. There are
@@ -969,53 +1022,52 @@ header datastructure.
 The header is made of 4+[[ntypat]] unformatted records, obtained by the
 following Fortran90 instructions (format 5.7):
 
-```fortran
- write(unit=header) codvsn,headform,fform
- write(unit=header) bantot,date,intxc,ixc,natom,ngfft(1:3),&
-    nkpt,nspden,nspinor,nsppol,nsym,npsp,ntypat,occopt,pertcase,usepaw,&
-    ecut,ecutdg,ecutsm,ecut_eff,qptn(1:3),rprimd(1:3,1:3),stmbias,tphysel,tsmear,usewvl
-
- write(unit=header) istwfk(1:nkpt),nband(1:nkpt*nsppol),&
-    npwarr(1:nkpt),so_psp(1:npsp),symafm(1:nsym),symrel(1:3,1:3,1:nsym),typat(1:natom),&
-    kpt(1:3,1:nkpt),occ(1:bantot),tnons(1:3,1:nsym),znucltypat(1:ntypat),wtk(1:nkpt)
- do ipsp=1,npsp
-! (npsp lines, 1 for each pseudopotential ; npsp=ntypat, except if alchemical pseudo-atoms)
-  write(unit=unit) title,znuclpsp,zionpsp,pspso,pspdat,pspcod,pspxc,lmn_size
- enddo
-!(in case of usepaw==0, final record: residm, coordinates, total energy, Fermi energy)
- write(unit=unit) residm,xred(1:3,1:natom),etotal,fermie
-!(in case of usepaw==1, there are some additional records)
- if (usepaw==1)then
-  write(unit=unit)( pawrhoij(iatom)%nrhoijsel(1:nspden),iatom=1,natom), cplex, nspden
-  write(unit=unit)((pawrhoij(iatom)%rhoijselect(1:      nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom),&
-                  ((pawrhoij(iatom)%rhoijp     (1:cplex*nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom)
- endif
-```
+    
+    
+     write(unit=header) codvsn,headform,fform
+     write(unit=header) bantot,date,intxc,ixc,natom,ngfft(1:3),&
+    & nkpt,nspden,nspinor,nsppol,nsym,npsp,ntypat,occopt,pertcase,usepaw,&
+    & ecut,ecutdg,ecutsm,ecut_eff,qptn(1:3),rprimd(1:3,1:3),stmbias,tphysel,tsmear,usewvl
+    
+     write(unit=header) istwfk(1:nkpt),nband(1:nkpt*nsppol),&
+    & npwarr(1:nkpt),so_psp(1:npsp),symafm(1:nsym),symrel(1:3,1:3,1:nsym),typat(1:natom),&
+    & kpt(1:3,1:nkpt),occ(1:bantot),tnons(1:3,1:nsym),znucltypat(1:ntypat),wtk(1:nkpt)
+     do ipsp=1,npsp
+    ! (npsp lines, 1 for each pseudopotential ; npsp=ntypat, except if alchemical pseudo-atoms)
+      write(unit=unit) title,znuclpsp,zionpsp,pspso,pspdat,pspcod,pspxc,lmn_size
+     enddo
+    !(in case of usepaw==0, final record: residm, coordinates, total energy, Fermi energy)
+     write(unit=unit) residm,xred(1:3,1:natom),etotal,fermie
+    !(in case of usepaw==1, there are some additional records)
+     if (usepaw==1)then
+      write(unit=unit)( pawrhoij(iatom)%nrhoijsel(1:nspden),iatom=1,natom), cplex, nspden
+      write(unit=unit)((pawrhoij(iatom)%rhoijselect(1:      nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom),&
+    &                 ((pawrhoij(iatom)%rhoijp     (1:cplex*nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom)
+     endif
+    
 
 where the type of the different variables is :
+
     
-```fortran    
-character*6 :: codvsn
-integer :: headform,fform
-integer :: bantot,date,intxc,ixc,natom,ngfft(3),nkpt,npsp,
-nspden,nspinor,nsppol,nsym,ntypat,occopt,pertcase,usepaw
-integer :: usewvl, cplex, nspden
-double precision :: acell(3),ecut,ecutdg,ecutsm,ecut_eff,qptn(3),rprimd(3,3),stmbias,tphysel,tsmear
-integer :: istwfk(nkpt),nband(nkpt*nsppol),npwarr(nkpt),so_psp(npsp),&
-& symafm(nsym),symrel(3,3,nsym),typat(natom),nrhoijsel(nspden),rhoijselect(*,nspden)
-double precision :: kpt(3,nkpt),occ(bantot),tnons(3,nsym),znucltypat(ntypat),wtk(nkpt)
-character*132 :: title
-double precision :: znuclpsp,zionpsp
-integer :: pspso,pspdat,pspcod,pspxc,lmax,lloc,mmax=integers
-double precision :: residm,xred(3,natom),etotal,fermie,rhoij(*,nspden)
-```
+    
+    character*6 :: codvsn
+    integer :: headform,fform
+    integer :: bantot,date,intxc,ixc,natom,ngfft(3),nkpt,npsp,
+     nspden,nspinor,nsppol,nsym,ntypat,occopt,pertcase,usepaw
+     integer :: usewvl, cplex, nspden
+    double precision :: acell(3),ecut,ecutdg,ecutsm,ecut_eff,qptn(3),rprimd(3,3),stmbias,tphysel,tsmear
+    integer :: istwfk(nkpt),nband(nkpt*nsppol),npwarr(nkpt),so_psp(npsp),&
+    & symafm(nsym),symrel(3,3,nsym),typat(natom),nrhoijsel(nspden),rhoijselect(*,nspden)
+    double precision :: kpt(3,nkpt),occ(bantot),tnons(3,nsym),znucltypat(ntypat),wtk(nkpt)
+    character*132 :: title
+    double precision :: znuclpsp,zionpsp
+    integer :: pspso,pspdat,pspcod,pspxc,lmax,lloc,mmax=integers
+    double precision :: residm,xred(3,natom),etotal,fermie,rhoij(*,nspden)
     
 
 NOTE : _etotal is set to its true value only for density and potential files.
 For other files, it is set to 1.0d20_  
-NOTE : _ecut_eff=
-[ecut](../../input_variables/generated_files/varbas.html#ecut)*
-[dilatmx](../../input_variables/generated_files/varrlx.html#dilatmx)2_  
+NOTE : _ecut_eff= [[ecut]]* [[dilatmx]]2_  
 NOTE : _For all cases where occupation numbers are defined (that is, positive
 iscf, and iscf=-3), and for non-metallic occupation numbers, the Fermi energy
 is set to the highest occupied eigenenergy. This might not correspond to the
@@ -1025,45 +1077,48 @@ band structure)_
 The header might differ for different versions of ABINIT. One pre-v5.3 format
 is described below. Note however, that the current version of ABINIT should be
 able to read all the previous formats (not to write them), with the exception
-of wavefunction files for which the
-[ecutsm](../../input_variables/generated_files/varrlx.html#ecutsm) value was
-non-zero (there has been a change of definition of the smearing function in
-v4.4).
+of wavefunction files for which the [[ecutsm]] value was non-zero (there has
+been a change of definition of the smearing function in v4.4).
 
 The format for version 4.4, 4.5, 4.6, 5.0, 5.1 and 5.2 was :
+
     
-```fortran
- write(unit=header) codvsn,headform,fform
- write(unit=header) bantot,date,intxc,ixc,natom,ngfft(1:3),&
-& nkpt,nspden,nspinor,nsppol,nsym,npsp,ntypat,occopt,pertcase,usepaw,&
-& ecut,ecutdg,ecutsm,ecut_eff,qptn(1:3),rprimd(1:3,1:3),stmbias,tphysel,tsmear
- write(unit=header) istwfk(1:nkpt),nband(1:nkpt*nsppol),&
-& npwarr(1:nkpt),so_typat(1:ntypat),symafm(1:nsym),symrel(1:3,1:3,1:nsym),typat(1:natom),&
-& kpt(1:3,1:nkpt),occ(1:bantot),tnons(1:3,1:nsym),znucltypat(1:ntypat)
- do ipsp=1,npsp
-! (npsp lines, 1 for each pseudopotential ; npsp=ntypat, except if alchemical pseudo-atoms)
-  write(unit=unit) title,znuclpsp,zionpsp,pspso,pspdat,pspcod,pspxc,lmn_size
- enddo
-!(in case of usepaw==0, final record: residm, coordinates, total energy, Fermi energy)
- write(unit=unit) residm,xred(1:3,1:natom),etotal,fermie
-!(in case of usepaw==1, there are some additional records)
- if (usepaw==1)then
-  write(unit=unit)(pawrhoij(iatom)%nrhoijsel(1:nspden),iatom=1,natom)
-  write(unit=unit)((pawrhoij(iatom)%rhoijselect(1:nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom),&
-&                 ((pawrhoij(iatom)%rhoijp     (1:nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom)
- endif
-```
+    
+     write(unit=header) codvsn,headform,fform
+     write(unit=header) bantot,date,intxc,ixc,natom,ngfft(1:3),&
+    & nkpt,nspden,nspinor,nsppol,nsym,npsp,ntypat,occopt,pertcase,usepaw,&
+    & ecut,ecutdg,ecutsm,ecut_eff,qptn(1:3),rprimd(1:3,1:3),stmbias,tphysel,tsmear
+     write(unit=header) istwfk(1:nkpt),nband(1:nkpt*nsppol),&
+    & npwarr(1:nkpt),so_typat(1:ntypat),symafm(1:nsym),symrel(1:3,1:3,1:nsym),typat(1:natom),&
+    & kpt(1:3,1:nkpt),occ(1:bantot),tnons(1:3,1:nsym),znucltypat(1:ntypat)
+     do ipsp=1,npsp
+    ! (npsp lines, 1 for each pseudopotential ; npsp=ntypat, except if alchemical pseudo-atoms)
+      write(unit=unit) title,znuclpsp,zionpsp,pspso,pspdat,pspcod,pspxc,lmn_size
+     enddo
+    !(in case of usepaw==0, final record: residm, coordinates, total energy, Fermi energy)
+     write(unit=unit) residm,xred(1:3,1:natom),etotal,fermie
+    !(in case of usepaw==1, there are some additional records)
+     if (usepaw==1)then
+      write(unit=unit)(pawrhoij(iatom)%nrhoijsel(1:nspden),iatom=1,natom)
+      write(unit=unit)((pawrhoij(iatom)%rhoijselect(1:nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom),&
+    &                 ((pawrhoij(iatom)%rhoijp     (1:nrhoijsel(ispden),ispden),ispden=1,nspden),iatom=1,natom)
+     endif
+    
 
-#### **6.5. The density output file**
 
+
+### 6.5 The density output file
+
+  
 This is an unformatted data file containing the electron density on the real
 space FFT grid. It consists of the header records followed by
+
     
-```fortran
-do ispden=1,nspden
- write(unit) (rhor(ir),ir=1,cplex*ngfft(1)*ngfft(2)*ngfft(3))
-enddo
-```
+    
+    do ispden=1,nspden
+     write(unit) (rhor(ir),ir=1,cplex*ngfft(1)*ngfft(2)*ngfft(3))
+    enddo
+    
 
 where **rhor** is the electron density in electrons/Bohr^3, and cplex is the
 number of complex components of the density (cplex=1 for GS calculations -the
@@ -1098,16 +1153,21 @@ by 1/ngfft(3), and so forth until ir varies all the way from 1 to
 diagonally opposite from the origin, or right alongside the origin if the
 whole grid is viewed as being periodically repeated.
 
-### ** 6.6. The potential files **
 
+
+
+
+### 6.6 The potential files
+
+  
 Also unformatted files consisting of the header records and
-   
-```fortran
-do ispden=1,nspden
- write(unit) (potential(ir),ir=1,cplex*ngfft(1)*ngfft(2)*ngfft(3))
-enddo
-```
+
     
+    
+    do ispden=1,nspden
+     write(unit) (potential(ir),ir=1,cplex*ngfft(1)*ngfft(2)*ngfft(3))
+    enddo
+     
 
 where **potential** can be either the sum of the Hartree potential, exchange-
 correlation and local pseudopotential (see [[prtpot]]), the Hartree potential
@@ -1122,8 +1182,7 @@ potential. Note that the Hartree potential is NOT spin-dependent, but in order
 to use the same format as for the other potential files, the spin-independent
 array is written twice, once for spin-up and one for spin-down.
 
-
-#### **6.7. The wavefunction output file **
+**6.7. The wavefunction output file **
 
 This is an unformatted data file containing the planewaves coefficients of all
 the wavefunctions, and different supplementary data.
@@ -1131,44 +1190,46 @@ the wavefunctions, and different supplementary data.
 The **ground-state** wf file consists of the header records, and data written
 with the following lines of FORTRAN (version 4.0 and more recent versions):
 
-```fortran 
-bantot=0                                    <-- counts over all bands
-index=0                                     <-- index for the wavefunction location
-do isppol=1,nsppol
- do ikpt=1,nkpt
-  write(unit) npw,nspinor,nband                    <-- for each k point
-  write(unit) kg(1:3,1:npw)                        <-- plane wave reduced coordinates
-  write(unit) eigen(1+bantot:nband+bantot),        <-- eigenvalues for this k point
-              occ(1+bantot:nband+bantot)           <-- occupation numbers for this k point
-  do iband=1,nband
-   write(unit) (cg(ii+index),ii=1,2*npw*nspinor)   <-- wavefunction coefficients
-  enddo                                            for a single band and k point
-  bantot=bantot+nband
-  index=index+2*npw*nspinor*nband
- enddo
-enddo
-```
+    
+    
+          bantot=0                                    <-- counts over all bands
+          index=0                                     <-- index for the wavefunction location
+          do isppol=1,nsppol
+           do ikpt=1,nkpt
+            write(unit) npw,nspinor,nband                    <-- for each k point
+            write(unit) kg(1:3,1:npw)                        <-- plane wave reduced coordinates
+            write(unit) eigen(1+bantot:nband+bantot),        <-- eigenvalues for this k point
+                        occ(1+bantot:nband+bantot)           <-- occupation numbers for this k point
+            do iband=1,nband
+             write(unit) (cg(ii+index),ii=1,2*npw*nspinor)   <-- wavefunction coefficients
+            enddo                                            for a single band and k point
+            bantot=bantot+nband
+            index=index+2*npw*nspinor*nband
+           enddo
+          enddo
+     
 
 If the job ended without problem, a few supplementary lines are added, in
 order to give the history of atomic positions and corresponding forces. The
 integer nxfh gives the number of pairs (x,f) of positions and forces in
 reduced coordinates :
 
-```fortran    
- write(unit)nxfh
- do ixfh=1,nxfh
-  write(unit) xred(1:3,1:natom,ixfh),dummy(1:3,1:4),&
-&             fred(1:3,1:natom,ixfh),dummy(1:3,1:4)
- enddo
-```
+    
+    
+     write(unit)nxfh
+     do ixfh=1,nxfh
+      write(unit) xred(1:3,1:natom,ixfh),dummy(1:3,1:4),&
+    &             fred(1:3,1:natom,ixfh),dummy(1:3,1:4)
+     enddo
+     
 
 The dummy variables might contain, in the future, the description of the unit
 cell, and the stresses. The type of the different variables is :
+
     
-```fortran    
-integer :: kg,nband,npw,nspinor,nxfh
-double precision :: cg,dummy,eigen,fred,occ,xred
-```
+    
+    integer :: kg,nband,npw,nspinor,nxfh
+    double precision :: cg,dummy,eigen,fred,occ,xred
     
 
 The **response-function** wf file consists of the header records, and data
@@ -1176,26 +1237,26 @@ written with the following lines of FORTRAN (version 4.0 and more recent
 versions):
 
     
-```fortran  
-bantot=0                                    <-- counts over all bands
-do isppol=1,nsppol
- do ikpt=1,nkpt
-  write(unit) npw,nspinor,nband                    <-- for each k point
-  write(unit) kg(1:3,1:npw)                        <-- plane wave reduced coordinates
-  do iband=1,nband
-   write(unit) (eigen(jband+(iband-1)*nband+bantot),jband=1,2*nband)  <-- column of eigenvalue matrix
-   write(unit) (cg(ii+index),ii=1,2*npw*nspinor)     <-- wavefunction coefficients
-  enddo                                            for a single band and k point
-  bantot=bantot+nband
- enddo
-enddo
-```
+    
+    bantot=0                                    <-- counts over all bands
+    do isppol=1,nsppol
+     do ikpt=1,nkpt
+      write(unit) npw,nspinor,nband                    <-- for each k point
+      write(unit) kg(1:3,1:npw)                        <-- plane wave reduced coordinates
+      do iband=1,nband
+       write(unit) (eigen(jband+(iband-1)*nband+bantot),jband=1,2*nband)  <-- column of eigenvalue matrix
+       write(unit) (cg(ii+index),ii=1,2*npw*nspinor)     <-- wavefunction coefficients
+      enddo                                            for a single band and k point
+      bantot=bantot+nband
+     enddo
+    enddo
+    
 
 In version previous to 4.0 , npw and nspinor were combined :
 
-```fortran
-write(unit) npw*nspinor,nband
-```
+    
+    
+    write(unit) npw*nspinor,nband
     
 
 while the planewave coordinate record was not present (in both GS and RF
@@ -1204,22 +1265,32 @@ cases).
 Note that there is an alternative format (_KSS) for the output of the
 wavefunction coefficients, activated by a non-zero value of [[nbandkss]].
 
-#### **6.8. Other output files.**
 
+
+### 6.8 Other output files
+
+  
 There are many other output files, optionally written, all formatted files at
 present. Their use is usually governed by a specific input variable. Please
 consult the description of this input variable, in order to have more
 information on such files :
 
-  * [prtdos](../../input_variables/generated_files/varfil.html#prtdos) to print a file with the electronic Density-Of-States
-  * [prteig](../../input_variables/generated_files/varfil.html#prteig) to print a file with the list of k points and eigenenergies
-  * [prtgeo](../../input_variables/generated_files/varfil.html#prtgeo) to print a file with a geometrical analysis (bond lengths and bond angles), that also contains an XMOL section
-  * [prt1dm](../../input_variables/generated_files/varfil.html#prt1dm) to print a one-dimensional projection of potential and density, for the three axes.
+  * [[prtdos]] to print a file with the electronic Density-Of-States
+  * [[prteig]] to print a file with the list of k points and eigenenergies
+  * [[prtgeo]] to print a file with a geometrical analysis (bond lengths and bond angles), that also contains an XMOL section
+  * [[prt1dm]] to print a one-dimensional projection of potential and density, for the three axes.
+
+
+
+###  
 
 _If you follow the tutorial, you should go back to the tutorial window now. _
 
-#### **6.9. Control of output in the parallel case.**
 
+
+### 6.9 Control of output in the parallel case
+
+  
 For massively parallel runs, one cannot afford to have some of the output
 files that are usually created. Explicitly, the log file and also the status
 file become problematic. By default, with less than N processors, they are
@@ -1240,10 +1311,11 @@ to 2. It can be changed "by hand", though : modify NPROC_NO_EXTRA_LOG in
 src/10_defs/defs_basis.F90 and recompile. See src/95_drive/iofn1.F90 for more
 explanation.
 
-* * *
 
-### 7\. Numerical quality of the calculations
 
+## 7 Numerical quality of the calculations
+
+  
 The following section describes various parameters which affect convergence
 and the numerical quality of calculations.
 
@@ -1368,13 +1440,15 @@ system size.
 
 _If you follow the tutorial, you should go back to the tutorial window now. _
 
-* * *
 
-### **8\. Final remarks**
 
+## 8 Final remarks
+
+  
 The ABINIT package is developed by the ABINIT group. The status of this
 package and the ABINIT group are explained in the file
 ~abinit/doc/users/context.txt and ~abinit/doc/developers/planning.txt , or
 some recent version of them.
+
 
 

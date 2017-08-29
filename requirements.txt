@@ -5,7 +5,8 @@ mkdocs-material
 pymdown-extensions
 python-markdown-math
 pyyaml>=3.11
-#matplotlib>=1.5
-#seaborn
 pytest
 pygments
+networkx
+plotly
+#matplotlib>=1.5

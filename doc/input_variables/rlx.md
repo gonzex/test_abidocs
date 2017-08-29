@@ -17,7 +17,7 @@ rlx input variables to be used in the input file for the abinit executable.
 *Default value:* 0  
 *Only relevant if:* [[imgmov]]==9 or [[imgmov]]==13  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t08.in]]
 
 
@@ -55,7 +55,7 @@ NOT YET USABLE
 *Default value:* 1  
 *Only relevant if:* [[adpimd]]==1 and [[imgmov]] in [9,13]  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t08.in]]
 
 
@@ -81,7 +81,7 @@ NOT YET USABLE
 *Default value:* None  
 *Comment:* provided by a database of atomic masses.  
 
-??? note "Test list (Moderately used, [81/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [81/1132] in all tests, [2/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t23.in]], [[tests/bigdft/Input/t31.in]], [[tests/bigdft/Input/t32.in]], [[tests/bigdft/Input/t33.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t01.in]]
     - built-in:  [[tests/built-in/Input/testin_wannier90.in]]
@@ -147,7 +147,7 @@ genetic algorithm (not coded in v7.0.0 though).
 *Dimensions:* scalar  
 *Default value:* 10  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t01.in]]
 
 
@@ -171,7 +171,7 @@ molecular dynamics)
 *Default value:* 7  
 *Only relevant if:* [[imgmov]]== 5 and [[neb_algo]]==2  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -199,7 +199,7 @@ _ See: J. Chem. Phys. 113, 9901 (2000). _
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
 
 
@@ -224,7 +224,7 @@ permutation trials.
 *Dimensions:* scalar  
 *Default value:* 8  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -247,7 +247,7 @@ zero-force and stress configurations.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (Moderately used, [66/1132] in all tests, [20/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [66/1132] in all tests, [20/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t04.in]]
     - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]]
     - paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]]
@@ -298,7 +298,7 @@ It is possible to use [[dilatmx]] when [[optcell]] =0, but a value larger than
 *Dimensions:* scalar  
 *Default value:* 100  
 
-??? note "Test list (Moderately used, [18/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/1132] in all tests, [0/135] in tutorials.)"
     - etsf_io:  [[tests/etsf_io/Input/t21.in]]
     - fast:  [[tests/fast/Input/t21.in]], [[tests/fast/Input/t29.in]]
     - mpiio:  [[tests/mpiio/Input/t42.in]]
@@ -346,7 +346,7 @@ No meaning for RF calculations.
 *Default value:* *1  
 *Comment:* if [[imgmov]] in [2,5] (String Method, NEB), <b>dynimage(1)</b>=0 and <b>dynimage([[nimage]])</b>=0.  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t22.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
     - v7:  [[tests/v7/Input/t08.in]]
@@ -382,7 +382,7 @@ In order to save CPU time, the computation of properties of static images
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (Moderately used, [113/1132] in all tests, [29/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [113/1132] in all tests, [29/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t04.in]]
     - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]]
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
@@ -445,7 +445,7 @@ likely that this value is OK as soon as [[ecut]] is larger than 4Ha.
 *Dimensions:* scalar  
 *Default value:* 0.001  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
 
 
@@ -476,7 +476,7 @@ units)/Bohr  2  . See J. Chelikowsky, J. Phys. D : Appl Phys. 33(2000)R33.
 *Dimensions:* scalar  
 *Default value:* 1 (Bohr^2)/Hartree  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
 
@@ -503,7 +503,7 @@ stopping criterion defined by [[tolmxf]] relates to these scaled stresses.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -526,7 +526,7 @@ Right now only value of 1 (enthalpy) works.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t27.in]]
 
 
@@ -556,7 +556,7 @@ of enthalpies
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t27.in]]
 
 
@@ -579,7 +579,7 @@ choose between any of them. Right now we have 4 rules. See [[ga_rules]]
 *Dimensions:* scalar  
 *Default value:* 0.2  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t27.in]]
 
 
@@ -602,7 +602,7 @@ the following iteration.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t27.in]]
 
 
@@ -637,7 +637,7 @@ it is inverted.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [1/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [1/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t04.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_6.in]]
     - v1:  [[tests/v1/Input/t78.in]], [[tests/v1/Input/t80.in]]
@@ -675,7 +675,7 @@ equivalent to using a null get variable).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -715,7 +715,7 @@ is allowed, despite the different coordinate system.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [8/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [8/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t61.in]], [[tests/v1/Input/t64.in]], [[tests/v1/Input/t65.in]], [[tests/v1/Input/t66.in]], [[tests/v1/Input/t74.in]], [[tests/v1/Input/t75.in]]
     - v3:  [[tests/v3/Input/t80.in]]
     - v6:  [[tests/v6/Input/t68.in]]
@@ -758,7 +758,7 @@ is allowed, despite the different coordinate system.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [1/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [1/135] in tutorials.)"
     - tutorespfn:  [[tests/tutorespfn/Input/telast_1.in]]
     - v1:  [[tests/v1/Input/t60.in]], [[tests/v1/Input/t64.in]], [[tests/v1/Input/t74.in]], [[tests/v1/Input/t80.in]]
     - v2:  [[tests/v2/Input/t44.in]]
@@ -802,7 +802,7 @@ is allowed, despite the different coordinate system.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t02.in]]
 
 
@@ -831,7 +831,7 @@ Set the kind of preconditioner to be used for Geometry Optimization
 *Dimensions:* (3)  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t02.in]]
 
 
@@ -856,7 +856,7 @@ Optimization
 *Dimensions:* ([[natcon]],[[nconeq]])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t40.in]]
     - v6:  [[tests/v6/Input/t22.in]]
     - v8:  [[tests/v8/Input/t05.in]]
@@ -885,7 +885,7 @@ this should be described)
 *Default value:* None  
 *Only relevant if:* [[natfix]] > 0  
 
-??? note "Test list (Moderately used, [16/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [16/1132] in all tests, [2/135] in tutorials.)"
     - fast:  [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - tutoparal:  [[tests/tutoparal/Input/tstring_01.in]]
@@ -937,7 +937,7 @@ thus foresee the effect of this atom manipulator (see [[objarf]]).
 *Default value:* None  
 *Only relevant if:* [[natfixx]] > 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]]
     - v6:  [[tests/v6/Input/t25.in]]
 
@@ -967,7 +967,7 @@ along x, y or z directions, or a combination of these. See the variable
 *Default value:* None  
 *Only relevant if:* [[natfixy]] > 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
 
 
@@ -996,7 +996,7 @@ along x, y or z directions, or a combination of these. See the variable
 *Default value:* None  
 *Only relevant if:* [[natfixz]] > 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
 
 
@@ -1023,7 +1023,7 @@ along x, y or z directions, or a combination of these. See the variable
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [11/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [11/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]], [[tests/v6/Input/t26.in]], [[tests/v6/Input/t27.in]]
     - v7:  [[tests/v7/Input/t08.in]]
@@ -1093,7 +1093,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Moderately used, [111/1132] in all tests, [19/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [111/1132] in all tests, [19/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t22.in]]
     - built-in:  [[tests/built-in/Input/testin_fast.in]], [[tests/built-in/Input/testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]], [[tests/etsf_io/Input/t21.in]]
@@ -1277,7 +1277,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
 
 
@@ -1306,7 +1306,7 @@ If [[istatimg]]=1, the total energy of static images is computed.
 *Dimensions:* (2)  
 *Default value:* [300, 300]  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
     - mpiio:  [[tests/mpiio/Input/t42.in]]
     - paral:  [[tests/paral/Input/t41.in]]
     - v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
@@ -1338,7 +1338,7 @@ at itime=1 to the final temperature ** mdtemp(2) ** at the end of the
 *Default value:* 10000.0  
 *Comment:* the walls are extremely far away  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t87.in]]
 
 
@@ -1370,7 +1370,7 @@ although Angstrom can be specified, if preferred, since [[mdwall]] has the
 100.0 otherwise.
   
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -1399,7 +1399,7 @@ R_i)] _ where the _ R_i _ are the positions of the atoms in the cell.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -1459,7 +1459,7 @@ Elastic Band ([[imgmov]]=5).
 *Dimensions:* ([[nconeq]])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t40.in]]
     - v6:  [[tests/v6/Input/t22.in]]
     - v8:  [[tests/v8/Input/t05.in]]
@@ -1487,7 +1487,7 @@ molecular dynamics (see [[nconeq]] , [[iatcon]], and [[wtatcon]]).
 *Default value:* 0  
 *Comment:* (no atoms held fixed)  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [2/135] in tutorials.)"
     - fast:  [[tests/fast/Input/t27.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - tutoparal:  [[tests/tutoparal/Input/tstring_01.in]]
@@ -1520,7 +1520,7 @@ When [[natfix]] &gt; 0, [[natfix]] entries should be provided in array
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]]
     - v6:  [[tests/v6/Input/t25.in]]
 
@@ -1547,7 +1547,7 @@ When [[natfixx]] &gt; 0, [[natfixx]] entries should be provided in array
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
 
 
@@ -1573,7 +1573,7 @@ When [[natfixy]] &gt; 0, [[natfixy]] entries should be provided in array
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t85.in]], [[tests/v1/Input/t86.in]]
 
 
@@ -1599,7 +1599,7 @@ When [[natfixz]] &gt; 0, [[natfixz]] entries should be provided in array
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t40.in]]
     - v6:  [[tests/v6/Input/t22.in]]
     - v8:  [[tests/v8/Input/t05.in]]
@@ -1626,7 +1626,7 @@ during structural optimization or molecular dynamics (see [[natcon]] ,
 *Default value:* 1  
 *Only relevant if:* [[imgmov]]==5  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -1680,7 +1680,7 @@ saddle point).
   
 *Only relevant if:* [[imgmov]]==5  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -1707,7 +1707,7 @@ _ See: J. Chem. Phys. 113, 9901 (2000). _
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t22.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]], [[tests/v6/Input/t27.in]], [[tests/v6/Input/t28.in]]
     - v7:  [[tests/v7/Input/t08.in]]
@@ -1783,7 +1783,7 @@ those of the second image.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t01.in]]
     - v7:  [[tests/v7/Input/t08.in]]
 
@@ -1811,7 +1811,7 @@ The mass of these thermostats is given by [[qmass]].
 *Default value:* 100000  
 *Only relevant if:* [[ionmov]]==8  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t87.in]]
 
 
@@ -1839,7 +1839,7 @@ temperature of the thermostat (see [[mdtemp]]).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Moderately used, [120/1132] in all tests, [19/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [120/1132] in all tests, [19/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t22.in]]
     - built-in:  [[tests/built-in/Input/testin_fast.in]], [[tests/built-in/Input/testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]], [[tests/etsf_io/Input/t21.in]]
@@ -1885,7 +1885,7 @@ initialisation of other [[ionmov]] values is only one SCF call.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [11/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [11/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]], [[tests/v6/Input/t27.in]], [[tests/v6/Input/t28.in]]
     - v7:  [[tests/v7/Input/t08.in]]
@@ -1916,7 +1916,7 @@ all images.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Moderately used, [54/1132] in all tests, [9/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [54/1132] in all tests, [9/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t22.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
@@ -1982,7 +1982,7 @@ zero [[optcell]] value. There are still a few problems at that level.
 *Default value:* [[ntypat]]  
 *Only relevant if:* [[imgmov]]=9 or 13  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t26.in]]
     - v7:  [[tests/v7/Input/t08.in]]
 
@@ -2017,7 +2017,7 @@ value.
 *Default value:* 0  
 *Only relevant if:* [[imgmov]]=9 or 13  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v8:  [[tests/v8/Input/t05.in]]
 
 
@@ -2056,7 +2056,7 @@ Journal 7, 12-23 (2007)](http://doi.org/10.1273/cbij.7.12).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t26.in]]
     - v7:  [[tests/v7/Input/t08.in]]
     - v8:  [[tests/v8/Input/t05.in]]
@@ -2094,7 +2094,7 @@ If equal to 2, staging transformation.
 *Dimensions:* ([[natom]])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v4:  [[tests/v4/Input/t97.in]]
 
 
@@ -2122,7 +2122,7 @@ atoms.
 *Dimensions:* ([[nnos]])  
 *Default value:* *10.0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t01.in]]
     - v7:  [[tests/v7/Input/t08.in]]
 
@@ -2154,7 +2154,7 @@ ensemble). In that case, [[optcell]]=2 iS NOT USABLE yet.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t27.in]]
 
 
@@ -2184,7 +2184,7 @@ in which [[ntypat]] differs from [[npsp]])
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t75.in]], [[tests/v1/Input/t80.in]]
     - v8:  [[tests/v8/Input/t05.in]]
 
@@ -2232,7 +2232,7 @@ NOTES:
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]]
 
 
@@ -2254,7 +2254,7 @@ NOTES:
 *Dimensions:* scalar  
 *Default value:* 100  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [2/135] in tutorials.)"
     - seq:  [[tests/seq/Input/tsv6_121.in]], [[tests/seq/Input/tsv6_122.in]], [[tests/seq/Input/tsv6_123.in]], [[tests/seq/Input/tsv6_124.in]], [[tests/seq/Input/tsv6_125.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_1.in]], [[tests/tutorespfn/Input/telast_6.in]]
     - v1:  [[tests/v1/Input/t78.in]]
@@ -2282,7 +2282,7 @@ scaled stresses.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t24.in]]
 
 
@@ -2327,7 +2327,7 @@ _
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t14.in]]
     - v5:  [[tests/v5/Input/t77.in]]
     - v6:  [[tests/v6/Input/t18.in]]
@@ -2353,7 +2353,7 @@ instability, decrease the default value, e.g. set it to 0.1 .
 *Dimensions:* (6)  
 *Default value:* [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t80.in]]
     - v5:  [[tests/v5/Input/t01.in]]
     - v6:  [[tests/v6/Input/t18.in]]
@@ -2382,7 +2382,7 @@ Not used if [[optcell]]==0.
 *Dimensions:* scalar  
 *Default value:* 5e-05  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
     - v6:  [[tests/v6/Input/t21.in]], [[tests/v6/Input/t24.in]], [[tests/v6/Input/t25.in]]
 
@@ -2414,7 +2414,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t15.in]]
 
 
@@ -2440,7 +2440,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 5e-05  
 
-??? note "Test list (Moderately used, [76/1132] in all tests, [14/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [76/1132] in all tests, [14/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t22.in]]
     - built-in:  [[tests/built-in/Input/testin_fast.in]]
     - fast:  [[tests/fast/Input/t00.in]], [[tests/fast/Input/t02.in]], [[tests/fast/Input/t03.in]], [[tests/fast/Input/t05.in]], [[tests/fast/Input/t04.in]], [[tests/fast/Input/t20.in]], [[tests/fast/Input/t21.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
@@ -2491,7 +2491,7 @@ No meaning for RF calculations.
 *Default value:* *0  
 *Only relevant if:* [[ionmov]] > 0  
 
-??? note "Test list (Moderately used, [82/1132] in all tests, [5/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [82/1132] in all tests, [5/135] in tutorials.)"
     - bigdft:  [[tests/bigdft/Input/t01.in]], [[tests/bigdft/Input/t02.in]], [[tests/bigdft/Input/t03.in]], [[tests/bigdft/Input/t04.in]], [[tests/bigdft/Input/t05.in]], [[tests/bigdft/Input/t06.in]], [[tests/bigdft/Input/t07.in]], [[tests/bigdft/Input/t09.in]], [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t11.in]], [[tests/bigdft/Input/t12.in]], [[tests/bigdft/Input/t14.in]], [[tests/bigdft/Input/t16.in]], [[tests/bigdft/Input/t17.in]], [[tests/bigdft/Input/t18.in]], [[tests/bigdft/Input/t20.in]], [[tests/bigdft/Input/t31.in]], [[tests/bigdft/Input/t32.in]], [[tests/bigdft/Input/t33.in]], [[tests/bigdft/Input/t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t02.in]], [[tests/bigdft_paral/Input/t02.in]]
     - libxc:  [[tests/libxc/Input/t13.in]]
@@ -2541,7 +2541,7 @@ Velocities evolve is [[ionmov]]==1.
 (Path-Integral Molecular Dynamics
 with NPT algorithm)  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t26.in]]
 
 
@@ -2566,7 +2566,7 @@ Bohr/atomic time units (atomic time units given where [[dtion]] is described).
 *Dimensions:* scalar  
 *Default value:* 100  
 
-??? note "Test list (Moderately used, [20/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [20/1132] in all tests, [2/135] in tutorials.)"
     - etsf_io:  [[tests/etsf_io/Input/t01.in]]
     - fast:  [[tests/fast/Input/t21.in]], [[tests/fast/Input/t29.in]]
     - libxc:  [[tests/libxc/Input/t01.in]]
@@ -2611,7 +2611,7 @@ Typical value range is 0.00001-0.001.
 *Dimensions:* (3,[[natcon]],[[nconeq]])  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t40.in]]
     - v6:  [[tests/v6/Input/t22.in]]
     - v8:  [[tests/v8/Input/t05.in]]

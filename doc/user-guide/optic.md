@@ -1,3 +1,11 @@
+---
+authors: SS, XG, YG
+---
+
+# the Optic utility  
+
+## Frequency dependent linear optical dielectric function and second order nonlinear optical susceptibility.  
+
 This file explains the i/o parameters needed for the calculation of the
 frequency dependent linear optical dielectric function and second order
 nonlinear optical susceptibility, in the RPA approximation (sum over states
@@ -14,15 +22,14 @@ perturbation (respfn) should NOT be requested in order to use Optic, but with
 the present ordering of the help files and tutorial, this is not obvious. In a
 future version, the tutorials and help files will be reorder and modified.
 
-It will be easier to discover the present file with the help of the tutorial ([[lesson_optic]]).  
+It will be easier to discover the present file with the help of the tutorial
+([[lesson_optic]]).  
 It is worthwhile to print this help file, for ease of reading.
 
-[TOC]
 
-* * *
+## 1 Introduction
 
-### **1\. Introduction **
-
+  
 Optic allows to compute the frequency dependent linear optical dielectric
 function and second order nonlinear optical susceptibility. An introduction to
 such computations is given in the following paper :
@@ -46,15 +53,17 @@ then use Eq. 46 in Ref. 1 to determine the linear and Eqs. 49, 50 and 51 in
 Ref. 1 to determine the nonlinear optical response of the material under
 investigation.
 
-* * *
 
-### **2\. How to run Optic ? **
 
+## 2 How to run Optic ?
+
+  
 The use of Optic is quite simple :
 
-```sh
-    $ optic < optic.files > optic.log
-```
+    
+    
+    optic < optic.files > optic.log
+    
 
 where the optic.files file contains three information : the name of the input
 file, the name of an output file (actually unused), and the root name for all
@@ -102,192 +111,56 @@ explicitly ground-state wavefunctions are computed at the very beginning of
 the abinit(respfn) run. It is not worth to make a full calculation of the
 modification of the wavefunctions due to a change of wavevector.
 
-* * *
 
-### **3\. Optic input file and input variables **
 
+## 3 Optic input file and input variables
+
+  
 A typical optic.files file is presented below :
 
-```text
+    
+    
     optic.in     ! Name of input file
     optic.out    ! Unused
     optic        ! Root name for all files that will be produced
-```
+    
 
 Please note that the format of input files for Optic has changed from Abinit
 v8.0 Since very few input parameters are required for Optic, the optic.in file
 contains them with the namelist format. The order of the three parts, namely
 FILES, PARAMETERS and COMPUTATIONS must be kept unaltered.
 
-```text
+    
+    
     &FILES
-     ddkfile_1 = 'toptic_1o_DS4_1WF7',
-     ddkfile_2 = 'toptic_1o_DS5_1WF8',
-     ddkfile_3 = 'toptic_1o_DS6_1WF9',
-     wfkfile = 'toptic_1o_DS3_WFK'
+     [[optic:ddkfile]]_1 = 'toptic_1o_DS4_1WF7',
+     [[optic:ddkfile]]_2 = 'toptic_1o_DS5_1WF8',
+     [[optic:ddkfile]]_3 = 'toptic_1o_DS6_1WF9',
+     [[optic:wfkfile]] = 'toptic_1o_DS3_WFK'
     /
     &PARAMETERS
-     broadening = 0.002,
-     domega = 0.0003,
-     maxomega = 0.3,
-     scissor = 0.000,
-     tolerance = 0.002
+     [[optic:broadening]] = 0.002,
+     [[optic:domega]] = 0.0003,
+     [[optic:maxomega]] = 0.3,
+     [[optic:scissor]] = 0.000,
+     [[optic:tolerance]] = 0.002
     /
     &COMPUTATIONS
-     num_lin_comp = 1,
-     lin_comp = 11,
-     num_nonlin_comp = 2,
-     nonlin_comp = 123,222,
+     [[optic:num_lin_comp]] = 1,
+     [[optic:lin_comp]] = 11,
+     [[optic:num_nonlin_comp]] = 2,
+     [[optic:nonlin_comp]] = 123,222,
     /
-```
+    
 
-* * *
+The list of input variables for the optic input file is presented in [Optic
+input variables](../../topics/generated_files/topic_Optic.html).
 
-ddkfile_X : name of the ddk file on the direction X (no default)  
-Variable type: string with the filename  
+
+
+## 4 Optic output files
+
   
-Specify the filename that has been produced by the preparatory Abinit run.
-This file must contain the matrix elements of the d/dk operator along
-direction X. It must not contain the first-order wavefunctions and may be
-generated using prtwf 3.  
-You should make sure that the number of bands, of spin channels and of
-k-points are the same in all the files.  
-  
-Go to the top
-
-* * *
-
-wfkfile : name of the wfk file (no default)  
-Variable type: string with the filename  
-  
-Specify the filename that has been produced by the preparatory Abinit run.
-This file must contain the eigenenergies on the set of k-points and bands to
-be included in the calculation.  
-You should make sure that the number of bands, of spin channels and of
-k-points are the same in all the files.  
-  
-Go to the top
-
-* * *
-
-broadening (default = 1.0d-3 Ha)  
-Variable type: real parameter, given in Hartree  
-  
-In Eq. 46 of Ref. 1, it is clear that when ever wnm(k) is equal to w, there is
-a resonance. Numerically this would lead to an infinity. In order to avoid
-this one could do two things. You could change the sum over k-points to
-integration and then use linear tetrahedron method (see Ref. 2 for details).
-Another way to get around the problem is, like we do in the present case,
-avoid this singularity by adding a small complex number to the denominator.
-This prevents the denominator from ever going to 0 and acts as a broadening to
-the spectrum. The broadening should not be too large as this would wash out
-the features in the spectrum.  
-  
-Go to the top
-
-* * *
-
-domega : Frequency grid step (default = 1.0d-3 Ha)  
-Variable type: two real parameters, given in Hartree  
-  
-The step and maximum sets your energy grid for the calculation using the
-formula number of energy mesh points=maximum/step (zero excluded). So in order
-to capture more features you can decrease the step size to get a finer energy
-grid. In order to go to higher frequency, increase the maximum.  
-  
-Go to the top
-
-* * *
-
-maxomega : Maximum of frequency grid (default = 1 Ha)  
-Variable type: two real parameters, given in Hartree  
-  
-The step and maximum sets your energy grid for the calculation using the
-formula number of energy mesh points=maximum/step (zero excluded). So in order
-to capture more features you can decrease the step size to get a finer energy
-grid. In order to go to higher frequency, increase the maximum.  
-  
-Go to the top
-
-* * *
-
-scissor : Scissors shift (default = 0.0 [ no scissor ])  
-Variable type: real parameter, given in Hartree  
-  
-LDA/GGA are well known to underestimate the band-gap by up to 100%. In order
-to get the optical spectrum and make a realistic comparison with experiments
-one needs to correct for this. This can be achieved in two ways. The scissors
-shift is normally chosen to be the difference between the experimental and
-theoretical band-gap and is used to shift the conduction bands only. Another
-way in which you do not have to rely on experimental data is to determine the
-self energy using the [GW
-approach](../../tutorial/generated_files/lesson_gw1.html). In this case the
-opening of the gap due to the GW correction can be used as scissor shift.  
-  
-Go to the top
-
-* * *
-
-tolerance (default = 1.0d-3 Ha)  
-Variable type: real parameter, given in Hartree  
-  
-When energy denominators are smaller than tolerance, the term is discarded
-from the sum.  
-  
-Go to the top
-
-* * *
-
-num_lin_comp: Number of components for linear response  
-Variable type: integer  
-  
-How many components out of 9 of the linear optical dielectric tensor do you
-want to calculate. Most of these are either equal or zero depending upon the
-symmetry of the material (for detail see Ref. 3).  
-Note that the directions are along the Cartesian axis.  
-  
-Go to the top
-
-* * *
-
-lin_comp: Components of the linear response  
-Variable type: integers(num_lin_comp)  
-  
-This tells which component of the dielectric tensor you want to calculate.
-These numbers are called a and b Eqs. 46 in Ref. 1. 1 2 3 represent x y and z
-respectively. For example 11 would be xx and 32 would mean zy.  
-  
-Go to the top
-
-* * *
-
-num_nonlin_comp: Number of components for nonlinear response  
-Variable type: integer  
-  
-How many components out of 27 of the non-linear optical dielectric tensor do
-you want to calculate. Most of these are either equal or zero depending upon
-the symmetry of the material (for detail see Ref. 3).  
-Note that the directions are along the Cartesian axis.  
-  
-Go to the top
-
-* * *
-
-nonlin_comp: Components of the nonlinear response  
-Variable type: integers(num_nonlin_comp)  
-  
-This tells which component of the dielectric tensor you want to calculate.
-These numbers are called a, b and c in Ref. 1. 1 2 3 represent x y and z
-respectively. For example 111 would be xxx and 321 would mean zyx.  
-  
-Go to the top
-
-* * *
-
-* * *
-
-### **4\. Optic output files **
-
 #### **4.1. Linear optical response data files**
 
 Name: case_a_b-linopt.out  
@@ -323,10 +196,11 @@ above files you can find information about the calculation. Some results of
 nonlinear optical spectrum for GaAs(LiF???) are presented in this document to
 show what can be expected.
 
-* * *
 
-### **5\. Trouble shooting **
 
+## 5 Trouble shooting
+
+  
 1) All I get is zeros in my *-linopt.out file. Why?
 
 There are several possibilities.  
@@ -343,4 +217,5 @@ Two most common mistakes are:
   * (i) You are calculating the second order response for material with inversion symmetry in this case all the components will be correctly zero or very small like 10-15.
   * (ii) Most components out of the 27 are zero due to the symmetry of the crystal. Please calculate a different component.
 
-* * *
+
+

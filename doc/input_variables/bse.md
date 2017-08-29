@@ -17,7 +17,7 @@ bse input variables to be used in the input file for the abinit executable.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -47,7 +47,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -76,7 +76,7 @@ Possible values are 1,2,3.
 *Default value:* 11  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -114,7 +114,7 @@ The second digit (B) can assume the values 0,1:
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -143,7 +143,7 @@ of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
 *Default value:* [-inf, inf]  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -167,7 +167,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -194,7 +194,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* [0.0, 0.0, 0.01]  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [16/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [16/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -223,7 +223,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
 
 
@@ -251,7 +251,7 @@ by smoothing the oscillation in the high energy part of the spectrum
 *Default value:* 100  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (Moderately used, [14/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [14/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -279,7 +279,7 @@ is less than [[bs_haydock_tol]].
 *Default value:* [0.02, 0]  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (Moderately used, [14/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [14/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -317,7 +317,7 @@ entire frequency range (mild criterion).
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
 
 
@@ -342,7 +342,7 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 *Default value:* 1.0  
 *Only relevant if:* [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t34.in]]
 
 
@@ -366,7 +366,7 @@ interpolation
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
 
 
@@ -392,7 +392,7 @@ interpolation
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
 
 
@@ -420,7 +420,7 @@ interpolation
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t31.in]]
 
 
@@ -445,7 +445,7 @@ coefficients used for the interpolation.
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t35.in]]
 
 
@@ -468,7 +468,7 @@ Gives the index of the neighbour that is used for Rohlfing & Louie method
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/1132] in all tests, [3/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
@@ -497,7 +497,7 @@ variable.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t50.in]]
 
 

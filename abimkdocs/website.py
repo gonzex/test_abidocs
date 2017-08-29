@@ -14,8 +14,61 @@ from itertools import groupby
 from html2text import html2text
 from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
+from doc.tests.pymods.termcolor import cprint
 from .variables import Variable
 
+
+class lazy_property(object):
+    """
+    lazy_property descriptor
+
+    Used as a decorator to create lazy attributes. Lazy attributes
+    are evaluated on first use.
+    """
+
+    def __init__(self, func):
+        self.__func = func
+        from functools import wraps
+        wraps(self.__func)(self)
+
+    def __get__(self, inst, inst_cls):
+        if inst is None:
+            return self
+
+        if not hasattr(inst, '__dict__'):
+            raise AttributeError("'%s' object has no attribute '__dict__'"
+                                 % (inst_cls.__name__,))
+
+        name = self.__name__
+        if name.startswith('__') and not name.endswith('__'):
+            name = '_%s%s' % (inst_cls.__name__, name)
+
+        value = self.__func(inst)
+        inst.__dict__[name] = value
+        return value
+
+    @classmethod
+    def invalidate(cls, inst, name):
+        """Invalidate a lazy attribute.
+
+        This obviously violates the lazy contract. A subclass of lazy
+        may however have a contract where invalidation is appropriate.
+        """
+        inst_cls = inst.__class__
+
+        if not hasattr(inst, '__dict__'):
+            raise AttributeError("'%s' object has no attribute '__dict__'"
+                                 % (inst_cls.__name__,))
+
+        if name.startswith('__') and not name.endswith('__'):
+            name = '_%s%s' % (inst_cls.__name__, name)
+
+        if not isinstance(getattr(inst_cls, name), cls):
+            raise AttributeError("'%s.%s' is not a %s attribute"
+                                 % (inst_cls.__name__, name, cls.__name__))
+
+        if name in inst.__dict__:
+            del inst.__dict__[name]
 
 def escape(text):
     # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
@@ -98,12 +151,12 @@ class MyEntry(Entry):
 
         s += "  \n"
         if "url" in fields:
-            s += 'URL: <a href="{url}" target="_blank">{url}</a>'.format(url=fields["url"])
+            s += 'URL: <a href="{url}" target="_blank">{url}</a><br>'.format(url=fields["url"])
         elif "doi" in fields:
             doi = fields["doi"]
             doi_root = "https://doi.org/"
             if not doi.startswith(doi_root): doi = doi_root + doi
-            s += 'DOI: <a href="{doi}" target="_blank">{doi}</a>'.format(doi=doi)
+            s += 'DOI: <a href="{doi}" target="_blank">{doi}</a><br>'.format(doi=doi)
 
         # Add modal window with bibtex entry.
         link, modal = self.get_bibtex_linkmodal()
@@ -237,7 +290,7 @@ class Website(object):
                 var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
                 var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
 
-        print("Initial website generation completed in %.2f [s]" % (time.time() - start))
+        cprint("Initial website generation completed in %.2f [s]" % (time.time() - start), "green")
 
     #def __str__(self):
     #    lines = []
@@ -307,7 +360,7 @@ in order of number of occurrence in the input files provided with the package.
 
                 fh.write("\n".join(lines) + "</ul>")
 
-        print("Generating Markdown files with topics ...")
+        cprint("Generating Markdown files with topics ...", "green")
         workdir = os.path.join(self.root, "topics")
         repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
 
@@ -320,7 +373,7 @@ in order of number of occurrence in the input files provided with the package.
 
         # datastructures needed for topics index.md
         index_md = ["Alphabetical list of topics"]
-        howto_topic = {}
+        self.howto_topic = {}
 
         for topic in all_topics:
             # Read template and prepare markdown string
@@ -330,7 +383,7 @@ in order of number of occurrence in the input files provided with the package.
             title = html2text(top.title)
             introduction = html2text(top.introduction)
             howto = html2text(top.howto).strip()
-            howto_topic[topic] = "How to " + howto
+            self.howto_topic[topic] = "How to " + howto
             tutorials = top.tutorials.strip()
 
             front = """\
@@ -403,14 +456,14 @@ This page gives hints on how to {howto} with the ABINIT package.
         # Now we can write topics index.md (sorted by first character)
         for firstchar, group in groupby(all_topics, key=lambda t: t[0].upper()):
             index_md.append("## %s" % firstchar)
-            index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, howto_topic[topic]) for topic in group)
+            index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, self.howto_topic[topic]) for topic in group)
 
         with io.open(os.path.join(workdir, "index.md"), "wt", encoding="utf-8") as fh:
             fh.write(do_not_edit_comment)
             fh.write("\n".join(index_md))
 
         # Build page with full list of tests grouped by `suite_name`.
-        print("Generating Markdown file with tests ...")
+        cprint("Generating Markdown file with tests ...", "green")
         items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
         items = sorted(items, key=lambda t: t[1].suite_name)
         workdir = os.path.join(self.root, "developers")
@@ -425,7 +478,7 @@ This page gives hints on how to {howto} with the ABINIT package.
                     fh.write("\n\n")
                     fh.write("Executable: %s   \n" % test.executable)
                     if test.keywords:
-                        fh.write("Keywords(s): %s   \n" % ", ".join(k for k in test.keywords))
+                        fh.write("Keywords(s): %s   \n" % ", ".join(k for k in sorted(test.keywords)))
                     if test.topics:
                         fh.write("Topic(s): %s  \n" % ", ".join("[[topic:%s]]" % t for t in test.topics))
                     if test.authors and "Unknown" not in test.authors:
@@ -438,7 +491,7 @@ This page gives hints on how to {howto} with the ABINIT package.
         self.analyze_pages()
 
         # Now generate page with bibliography
-        print("Generating Markdown file with bibliographic entries ...")
+        cprint("Generating Markdown file with bibliographic entries ...", "green")
         citation2pages = defaultdict(list)
         for page in self.md_pages:
             for citation in page.citations:
@@ -466,14 +519,19 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 lines.append("* * *")
             fh.write("\n".join(lines))
 
-        print("Markdown files generation completed in %.2f [s]" % (time.time() - start))
+        cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
 
     def analyze_pages(self):
-        print("Analyzing markdown pages ...")
+        cprint("Analyzing markdown pages ...", "green")
         start = time.time()
         self.md_pages, self.html_pages = [], []
-        for root, dirs, files in os.walk(self.root):
-            if root in ("site", "tests"): continue
+        excludes = [os.path.join(self.root, f) for f in
+                ("site", os.path.join("doc", "tests"))]
+        for root, dirs, files in os.walk(self.root, topdown=True):
+            if any(root.startswith(e) for e in excludes):
+                dirs[:] = []
+                continue
+            #print(root)
             for f in files:
                 if f.startswith("_"): continue
                 path = os.path.join(root, f)
@@ -482,22 +540,55 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 elif f.endswith(".html") or f.endswith(".htm"):
                     self.html_pages.append(HtmlPage(path, self))
 
-        print("Completed in %.2f [s]" % (time.time() - start))
+        self.find_unreferenced_mds()
+        cprint("Completed in %.2f [s]" % (time.time() - start), "green")
+
+    def find_unreferenced_mds(self):
+
+        def find_mds(obj):
+            md_files = []
+            if isinstance(obj, list):
+                for item in obj:
+                    md_files.extend(find_mds(item))
+            elif isinstance(obj, dict):
+                for key, value in obj.items():
+                    md_files.extend(find_mds(value))
+            elif hasattr(obj, "endswith"):
+                # Assume string
+                assert obj.endswith(".md")
+                md_files.append(obj)
+            else:
+                raise TypeError("Don't know how to hande type %s\n%s" % (type(obj), str(obj)))
+
+            return md_files
+
+        pages_in_toolbar = []
+        for entry in self.config["pages"]:
+            pages_in_toolbar.extend(find_mds(entry))
+        #for p in pages_in_toolbar: print(p)
+
+        pages_in_toolbar = set(pages_in_toolbar)
+        pages_on_disk = set(p.relpath for p in self.md_pages)
+
+        # Find elements in pages_on_disk not in pages_in_toolbar
+        diff = pages_on_disk.difference(pages_in_toolbar)
+        if diff:
+            cprint("WARNING: Found markdown files on disk not included in mkdocs.py", "yellow")
+            for item in diff: print(item)
+        diff = pages_in_toolbar.difference(pages_on_disk)
+        if diff:
+            cprint("WARNING: Found markdown files in mkdocs.py not present in directories", "yellow")
+            for item in diff: print(item)
 
     def get_citation_aelement(self, key, text=None, html_class=None):
+        if html_class is None: html_class = " ".join(["wikilink", "citation-link"])
         # Handle citation
         ref = self.bib_data.entries[key]
         url = "/theory/bibliography/#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
-        a = etree.Element('a')
-        a.set("data-toggle", "popover")
-        #a.set("title", ref.authors)
-        a.set("data-placement", "right")
-        a.set("data-trigger", "hover")
+        a = WikiLink('a')
         content = ref.fields["title"] #+ "\n\n" + ref.authors
-        #a.set("html", "true")
-        a.set("data-content", content)
-        #a.set("data-content", ref.to_html())
+        a.add_popover(content=content)
         a.set('href', url)
         a.text = "[%s]" % key if text is None else text
         if html_class: a.set('class', html_class)
@@ -549,7 +640,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         return new_lines
 
     @staticmethod
-    def _parse_wikilink(token):
+    def parse_wikilink_token(token):
         # namespace:name#section|text
         # where namespace, section and text are optional
         text = None
@@ -572,14 +663,14 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         return namespace, name, section, text
 
-    def anchor_from_wikilink(self, token):
+    def get_wikilink(self, token):
         #token = token.strip()
         #if not token:
         #    print("Warning: empty wikilink", token)
         #    return ""
 
-        html_class = "wikilink"
-        a = etree.Element("a")
+        html_classes = ["wikilink"]
+        a = WikiLink("a")
 
         if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
             # Handle [[www.google.com|text]]
@@ -592,7 +683,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         # [[namespace:name#section|text]]
         try:
-            namespace, name, section, text = self._parse_wikilink(token)
+            namespace, name, section, text = self.parse_wikilink_token(token)
         except ValueError:
             raise ValueError("Cannot parse wikilink token `%s`" % token)
 
@@ -611,18 +702,22 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     # Handle [[lesson_gw1|text]]
                     url = "/tutorials/%s" % name.replace("lesson_" , " ", 1).strip()
                     if text is None: text = name
+                    html_classes.append("lesson-link")
 
                 elif name.startswith("topic_"):
                     # Handle [[topic_SelfEnergy|text]]
-                    topic_name = name.replace("topic_" , " ", 1).strip()
-                    url = "/topics/%s" % topic_name
-                    if text is None: text = "%s topic" % topic_name
+                    name = name.replace("topic_" , " ", 1).strip()
+                    url = "/topics/%s" % name
+                    if text is None: text = "%s topic" % name
+                    html_classes.append("topic-link")
+                    a.add_popover(content=self.howto_topic[name])
 
                 elif name.startswith("help_"):
                     # Handle [[help_abinit|text]]
                     code = name.replace("help_" , " ", 1).strip()
                     url = "/user-guide/%s" % code
                     if text is None: text = "%s help file" % code
+                    html_classes.append("user-guide-link")
 
                 elif "@" in name:
                     # Handle [[dipdip@anaddb|text]]
@@ -630,17 +725,19 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     var = self.variables_code[code][vname]
                     url = "/input_variables/%s/#%s" % (var.varset, var.name)
                     if text is None: text = name
+                    html_classes.append("codevar-link")
 
                 elif name in self.variables_code["abinit"]:
                     # Handle link to Abinit variable e.g. [[ecut|text]]
                     var = self.variables_code["abinit"][name]
                     url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    html_classes.append("codevar-link")
                     if text is None:
                         text = var.name if not var.is_internal else "%%%s" % var.name
 
                 elif name in self.bib_data.entries:
                     # Handle citation
-                    return self.get_citation_aelement(name, text=text, html_class=html_class)
+                    return self.get_citation_aelement(name, text=text)
 
                 elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
                     # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
@@ -649,16 +746,12 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     #if not text.startswith("~abinit/"): text = "~abinit/" + text
                     nm = name.replace("~abinit/", "")
                     url = "/" + nm
+                    html_classes.append("test-link")
                     # Add popover with test description if input file.
                     if nm in self.rpath2test:
                         test = self.rpath2test[nm]
-                        a.set("data-toggle", "popover")
-                        #a.set("title", test.description)
-                        a.set("data-placement", "right")
                         content = test.description # + "\n\n" + ", ".join(test.authors)
-                        a.set("html", "true")
-                        a.set("data-content", content)
-                        a.set("data-trigger", "hover")
+                        a.add_popover(content=content)
 
                 elif name in self.variables_code.characteristics:
                     # TODO
@@ -666,7 +759,6 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     url, text = "FAKE_URL", name
 
                 elif name in self.variables_code.external_params:
-                    # TODO
                     # handle [[AUTO_FROM_PSP]] by building popover instead of link
                     # i.e. external parameters that are not input variables,
                     # but that are used in the documentation of other variables
@@ -674,15 +766,11 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
                     url, text = "FAKE_URL", name
-                    a.set("data-toggle", "popover")
-                    a.set("data-placement", "right")
-                    a.set("data-trigger", "hover")
-                    a.set("data-content", content)
-                    a.set("title", self.variables_code.external_params[name])
+                    a.add_popover(title=self.variables_code.external_params[name], content=content)
 
                 else:
                     msg = "Don't know how to handle wikilink token `%s`" % token
-                    print("WARNING:", msg)
+                    cprint("WARNING: %s" % msg, "yellow")
                     url, text = "FAKE_URL", "FAKE_URL"
                     #raise ValueError(msg)
 
@@ -693,6 +781,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 assert section is None
                 var = self.variables_code[namespace][name]
                 url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                html_classes.append("codevar-link")
                 if text is None:
                     text = var.name if not var.is_internal else "%%%s" % var.name
 
@@ -700,57 +789,73 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 # Handle [[lesson:wannier90|text]]
                 url = "/tutorials/%s" % name
                 if text is None: text = "%s %s" % (name, namespace)
+                html_classes.append("lesson-link")
 
             elif namespace == "help":
                 # [[help:optic|text]
                 # %%[[help_codename]]%% is echoed "codename help file" :
                 url = "/user-guide/help_%s" % name
                 if text is None: text = "%s help file" % name
+                html_classes.append("user-guide-link")
 
             elif namespace == "topic":
                 # Handle [[topic:BSE|text]]
                 url = "/topics/%s" % name
+                html_classes.append("topic-link")
                 if text is None: text = "%s_%s" % (namespace, name)
+                a.add_popover(content=self.howto_topic[name])
 
             elif namespace == "bib":
-                # Handle [[bib:Amadon2008]]
-                return self.get_citation_aelement(name, text=text, html_class=html_class)
+                # Handle [[bib:biblio|bibliography]]
+                if name == "biblio":
+                    url = "/theory/bibliography/"
+                    if text is None: text = "bibliography"
+                else:
+                    # Handle [[bib:Amadon2008]]
+                    try:
+                        return self.get_citation_aelement(name, text=text)
+                    except Exception as exc:
+                        cprint("WARNING: %s" % str(exc), "yellow")
+                        url, text = "FAKE_URL", "FAKE_URL"
 
             elif namespace == "theorydoc":
                 # Handle [[theorydoc:mbpt|text]]
                 url = "/theory/%s" % name
+                html_classes.append("theory-link")
                 if text is None: text = name
 
             elif namespace == "varset":
                 # Handle [[varset:BSE|text]]
                 assert section is None
-                url = "/input_variables/%s" % name
+                if name == "allvars":
+                    url = "/input_variables/index/"
+                else:
+                    url = "/input_variables/%s" % name
                 if text is None: text = "%s varset" % name
 
             else:
                 msg = "Don't know how to handle wikilink token `%s`" % token
                 #raise ValueError(msg)
-                print("WARNING:", msg)
+                cprint("WARNING: %s" % msg, "yellow")
                 url, text = "FAKE_URL", "FAKE_URL"
 
         if section is not None: url = "%s/#%s" % (url, section)
         a.set('href', url)
+        html_class = " ".join(html_classes)
         a.set("class", html_class)
         a.text = text
         return a
 
     def validate_html_build(self):
-        print("Validating website build")
+        cprint("Validating website build", "green")
         # https://bitbucket.org/nmb10/py_w3c
         # import HTML validator and create validator instance
         from py_w3c.validators.html.validator import HTMLValidator
         vld = HTMLValidator()
 
         from tidylib import tidy_document
-        sitedir = os.path.join(os.path.dirname(self.root), "site")
         from pprint import pprint
-
-        for root, dirs, files in os.walk(sitedir):
+        for root, dirs, files in os.walk(os.path.join(os.path.dirname(self.root), "site")):
             for f in files:
                 if not (f.endswith(".html") or f.endswith(".htm")): continue
                 path = os.path.join(root, f)
@@ -904,6 +1009,7 @@ class Page(object):
         self.path = os.path.abspath(path)
         self.website = website
         self.citations = set()
+        self.topics = set()
 
     @property
     def relpath(self):
@@ -918,6 +1024,28 @@ class Page(object):
     #    return "\n".join(lines)
 
 
+class WikiLink(etree.Element):
+
+    #def __init__(self, tag, attrib={}, **extra)
+    #    super(Wikilink, self).__init__(tag, attrib={}, **extra)
+    #    self.abidata = {
+    #        token=None,
+    #        namespace=None
+    #        name=None
+    #        section=None,
+    #        text=None,
+    #    }
+    #def set_abidata(self)
+
+    def add_popover(self, title=None, content=None):
+       self.set("data-toggle", "popover")
+       if title: self.set("title", title)
+       self.set("data-placement", "right")
+       self.set("data-trigger", "hover")
+       if content: self.set("data-content", content)
+       #a.set("html", "true")
+
+
 class MarkdownPage(Page):
 
     def __init__(self, path, website):
@@ -929,9 +1057,32 @@ class MarkdownPage(Page):
         # Note: this logic is able to detect backlinks only if wikilinks syntax is used.
         for m in re.finditer(website.WIKILINK_RE, string):
             token = m.group(1).strip()
-            #a = self.website.anchor_from_wikilink(token)
-            if token in self.website.bib_data.entries:
-                self.citations.add(token)
+            try:
+                link = website.get_wikilink(token)
+            except Exception as exc:
+                print("Exception while trying to handle wikilink `%s`" % token)
+                continue
+
+            link_class = link.get("class", "")
+            if "citation-link" in link_class:
+                self.citations.add(token)  # Should be name
+            elif "topic-link" in link_class:
+                self.topics.add(token) # Should be name
+
+        # Add rpath to meta (useful to give the origin of errors in markdown extensions)
+        #lines = string.split("\n")
+        #if len(lines) > 1 and lines[0].startswith("---"):
+        #    for i, l in enumerate(lines[1:]):
+        #        if l.startswith("---"): break
+        #    else:
+        #        raise RuntimeError("Cannot find second `---` marker in %s" % path)
+        #    d = yaml.loads("\n".join(lines[1:i]))
+        #    rpath = os.path.relpath(path, website.root)
+        #    if "rpath" not in d or d["rpath"] != rpath:
+        #        d["rpath"] = rpath
+        #        d = OrderedDict([(k, d[k]) for k in sorted(d.keys()))
+        #        del lines[1:i]
+        #        lines.insert(1, yaml.dumps(d))
 
         #print(self)
 

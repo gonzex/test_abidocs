@@ -1,3 +1,11 @@
+---
+authors: MG, MS
+---
+
+# Parallelism for many-body calculations  
+
+## G<sub>0</sub>W<sub>0</sub> corrections in &alpha;-quartz SiO<sub>2</sub>.  
+
 This lesson aims at showing how to perform parallel calculations with the GW
 part of ABINIT. We will discuss the approaches used to parallelize the
 different steps of a typical G0W0 calculation, and how to setup the parameters
@@ -25,27 +33,19 @@ the computer you are using. This can be for instance:
 
 or the use of a specific submission file.
 
-  * 1 Generating the WFK file in parallel. 
-  * 2 Computing the screening in parallel using the Adler-Wiser expression 
-  * 3 Computing the screening in parallel using the Hilbert transform method 
-  * 4 Computing the one-shot GW corrections in parallel 
-  * 5 Basic rules for efficient parallel calculations 
 
-* * *
+## 1 Generating the WFK file in parallel
 
-** The input files necessary to run the examples related to this tutorial are located in the directory ~abinit/tests/tutoparal/Input. 
+  
+The input files necessary to run the examples related to this tutorial are
+located in the directory ~abinit/tests/tutoparal/Input.
 
 Before beginning, you should create a working directory whose name might be
 "Work_mbt" (so ~abinit/tests/tutoparal/Input/Work_mbt).
 
-We will do most of the actions of this tutorial in this working directory.
-
-  
-
-### **1 Generating the WFK file in parallel.**
-
-In the [first lesson](lesson_gw1.html) of the GW tutorial, we have learned how
-to generate the WFK file with the sequential version of the code. Now we will
+We will do most of the actions of this tutorial in this working directory. In
+the [first lesson](lesson_gw1.html) of the GW tutorial, we have learned how to
+generate the WFK file with the sequential version of the code. Now we will
 perform a similar calculation taking advantage of the k-point parallelism
 implemented in the ground-state part.
 
@@ -54,8 +54,8 @@ directory Work_mbt:
 
     
     
-    $ cd Work_mbt
-    $ cp ../tmbt_1.files . 
+    >>> cd Work_mbt
+    >>> cp ../tmbt_1.files . 
     
 
 The abinit files files is described in [section
@@ -107,7 +107,7 @@ With three nodes, the wall clock time is around 1.5 minutes.
 
     
     
-    $ tail tmbt_1.out
+    >>> tail tmbt_1.out
     
     -
     - Proc.   0 individual time (sec): cpu=        209.0  wall=        209.0
@@ -125,12 +125,11 @@ tmbt_1.out.
 Note that 150 bands are not enough to obtain converged GW results, you might
 increase the number of bands in proportion to your computing resources.
 
-* * *
+
+
+## 2 Computing the screening in parallel using the Adler-Wiser expression
 
   
-
-### 2\. Computing the screening in parallel using the Adler-Wiser expression**
-
 In this part of the tutorial, we will compute the RPA polarizability with the
 Adler-Wiser approach. The basic equations are discussed in this
 [section](../../theory/generated_files/theorydoc_mbt.html#RPA_Fourier_space)
@@ -141,7 +140,7 @@ symbolic link pointing to the WFK file we have generated in the previous step:
 
     
     
-    $ ln -s tmbt_1o_DS2_WFK tmbt_2i_WFK
+    >>> ln -s tmbt_1o_DS2_WFK tmbt_2i_WFK
     
 
 Now open the input file ~abinit/tests/tutoparal/Input/tmbt_2.in so that we can
@@ -276,25 +275,23 @@ log file. For a calculation in sequential, we have:
 
     
     
-    $ grep "Memory needed" tmbt_2.log
+    >>> grep "Memory needed" tmbt_2.log
     
       Memory needed for storing ug=         29.5 [Mb]
       Memory needed for storing ur=        180.2 [Mb]
     
 
 _ug_ denotes the internal buffer used to store the Fourier components of the
-orbitals whose size scales linearly with
-[npwwfn](../../input_variables/generated_files/varint.html#npwwfn). _ur_ is
-the array storing the orbitals on the real space FFT mesh. Keep in mind that
-the size of _ur_ scales linearly with the total number of points in the FFT
-box, number that is usually much larger than the number of planewaves
-([npwwfn](../../input_variables/generated_files/varint.html#npwwfn)). The
-number of FFT divisions used in the GW code can be extracted from the main
-output file using
+orbitals whose size scales linearly with [[npwwfn]]. _ur_ is the array storing
+the orbitals on the real space FFT mesh. Keep in mind that the size of _ur_
+scales linearly with the total number of points in the FFT box, number that is
+usually much larger than the number of planewaves ([[npwwfn]]). The number of
+FFT divisions used in the GW code can be extracted from the main output file
+using
 
     
     
-    $ grep setmesh tmbt_2.out  -A 1
+    >>> grep setmesh tmbt_2.out  -A 1
      setmesh: FFT mesh size selected  =  27x 27x 36
               total number of points  =    26244
     
@@ -329,11 +326,11 @@ q-points into several independent runs using the variables [[nqptdm]] and
 of the **mrgscr** utility (see also the automatic tests v3/t87, v3/t88 and
 v3/t89).
 
-* * *
 
-### 3\. Computing the screening in parallel using the Hilbert transform
-method**
 
+## 3 Computing the screening in parallel using the Hilbert transform method
+
+  
 As discussed in the
 [GW_notes](../../theory/generated_files/theorydoc_mbt.html#RPA_Fourier_space),
 the algorithm based on the Adler-Wiser expression is not optimal when many
@@ -348,7 +345,7 @@ and then create a symbolic link pointing to the WFK file.
 
     
     
-    $ ln -s tmbt_1o_DS2_WFK tmbt_3i_WFK
+    >>> ln -s tmbt_1o_DS2_WFK tmbt_3i_WFK
     
 
 The input file is ~abinit/tests/tutoparal/Input/tmbt_3.in. Open it so that we
@@ -403,7 +400,7 @@ The memory needed to store the spectral function is reported in the log file:
 
     
     
-    $ grep "sf_chi0q0" tmbt_3.log
+    >>> grep "sf_chi0q0" tmbt_3.log
      memory required by sf_chi0q0:           1.0036 [Gb]
     
 
@@ -416,12 +413,11 @@ a much denser k-sampling is required to achieve convergence).
 
 ![](../documents/lesson_paral_mbt/comp-AW-spect.png)
 
-* * *
+
+
+## 4 Computing the one-shot GW corrections in parallel
 
   
-
-### 4\. Computing the one-shot GW corrections in parallel**
-
 In this last paragraph, we discuss how to calculate G0W0 corrections in
 parallel with [[gwpara]]=2. The basic equations used to compute the self-
 energy matrix elements are discussed in [this
@@ -548,10 +544,11 @@ this tutorial).
 
 ![](../documents/lesson_paral_mbt/SiO2_KSG0W0_PPM1.png)
 
-* * *
 
-### **5\. Basic rules for efficient parallel calculations:**
 
+## 5 Basic rules for efficient parallel calculations
+
+  
   1. Remember that "Anything that can possibly go wrong, does" so, when writing your input file, try to "Keep It Short and Simple". 
   
 
@@ -574,9 +571,7 @@ separated input files when [[gwpara]]=2 is used.
   4. Less is more:   
 Split big calculations into smaller runs whenever possible. For example,
 screening calculations can be split over q-points. The calculation of the
-self-energy can be easily split over
-[kptgw](../../input_variables/generated_files/vargw.html#kptgw) and
-[bdgw](../../input_variables/generated_files/vargw.html#bdgw).
+self-energy can be easily split over [[kptgw]] and [[bdgw]].
 
   
 
@@ -585,5 +580,6 @@ Use the converge tests to estimate how the CPU-time and the memory
 requirements depend on the parameter that is tested. Having an estimate of the
 computing resources is very helpful when one has to launch the final
 calculation with converged parameters.
+
 
 

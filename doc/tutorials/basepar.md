@@ -1,3 +1,11 @@
+---
+authors: YP, XG
+---
+
+# Lesson on basic parallelism  
+
+## Parallelism in ABINIT, generalities and environments.  
+
 There are many situations where a sequential code is not enough, often because
 it would take too much time to get a result. There are also cases where you
 just want things to go as fast as your computational resources allow it. By
@@ -18,28 +26,10 @@ that rationalizes the fact that, beyond some number of processors, the
 inherently sequential parts will dominate parallel parts, and give a
 limitation to the maximal speed-up that can be achieved.
 
-  * 1. Generalities
-  * 2. Parallel environments 
-    * Generalities
-    * MPI
-    * OpenMP
-    * Scalapack
-    * Fast/slow communications
-  * 3. What parts of ABINIT are parallel?
-  * 4. A simple example of parallelism in ABINIT 
-    * Running a job
-    * Parallelism over the k-points
-    * Parallelism over the spins
-    * Number of computing cores to accomplish a task
-    * Evidencing overhead
-  * 5. Details of the implementation 
-    * The MPI toolbox in ABINIT
-    * How to parallelize a routine: some hints
 
-* * *
+## 1 Generalities
 
-## 1\. Generalities
-
+  
 With the broad availability of multi-core processors, everybody now has a
 parallel machine at hand. ABINIT will be able to take advantage of the
 availability of several cores for most of its capabilities, be it ground-state
@@ -69,12 +59,11 @@ and that you are familiar with the peculiarities of your system. Please
 remember that, as there is no standard way of setting up a parallel
 environment, we are not able to provide you with support beyond ABINIT itself.
 
-* * *
 
-## 2\. Characteristics of parallel environments
 
-### Generalities
+## 2 Characteristics of parallel environments
 
+  
 Different software solutions can be used to benefit from parallelism. Most of
 ABINIT parallelism is based on MPI, but some additional speed-up (or a better
 distribution of data, allowing to run bigger calculations) is based on OpenMP.
@@ -155,10 +144,11 @@ then, you might not be able to benefit from the speed-up announced in the
 tutorials. You have to perform some tests on your actual machine to gain
 knowledge of it.
 
-* * *
 
-## 3\. What parts of ABINIT are parallel?
 
+## 3 What parts of ABINIT are parallel?
+
+  
 Parallelizing a code is a very delicate and complicated task, thus do not
 expect that things will systematically go faster just because you are using a
 parallel version of ABINIT. Please keep also in mind that in some situations,
@@ -168,8 +158,8 @@ that have been parallelized, and for which a tutorial is available, include:
   * [ground state with plane waves](lesson_paral_gspw.html),
   * [ground state with wavelets](lesson_paral_gswvl.html),
   * [molecular dynamics](lesson_paral_moldyn.html),
-  * [parallelism on "images"](lesson_paral_string.html),
-  * [response functions](lesson_paral_dfpt.html),
+  * [parallelism on "images"](lesson_paral_images.html),
+  * [density-functional perturbation theory (DFPT)](lesson_paral_dfpt.html),
   * [Many-Body Perturbation Theory](lesson_paral_mbt.html).
 
 Note that the tutorial on [ground state with plane
@@ -181,15 +171,16 @@ several hundreds of processors.
 Actually, the two levels based on
 
   * the treatment of k-points in reciprocal space;
-  * the treatment of spins, for spin-polarized collinear situations (when [nsppol](../../input_variables/generated_files/varbas.html#nsppol)=2);
+  * the treatment of spins, for spin-polarized collinear situations [[nsppol]]=2);
 
 are, on the contrary, quite easy to use. An example of such parallelism will
 be given in the next section.
 
-* * *
 
-## 4\. A simple example of parallelism in ABINIT
 
+## 4 A simple example of parallelism in ABINIT
+
+  
 ### Running a job
 
 _Before starting, you might consider working in a different subdirectory as
@@ -374,9 +365,8 @@ k-point 1, while node 1 is taking care of the down state for k-point 1. The
 timing analysis is very similar to the k-point parallelism case.
 
 If you have more than 2 processors at hand, you might increase the value of
-[ngkpt](../../input_variables/generated_files/varbas.html#ngkpt), so that more
-than one k-point is available, and see that the k-point and spin parallelism
-indeed work concurrently.
+[[ngkpt]], so that more than one k-point is available, and see that the
+k-point and spin parallelism indeed work concurrently.
 
 ### Number of computing cores to accomplish a task
 
@@ -397,10 +387,11 @@ resulting from the increasing amount of communication between the processors.
 The loss of efficiency is highly dependent on the implementation and linked to
 the decreasing charge on each processor too.
 
-* * *
 
-## 5\. Details of the implementation
 
+## 5 Details of the implementation
+
+  
 ### The MPI toolbox in ABINIT
 
 The ABINIT-specific MPI routines are located in different subdirectories of
@@ -474,5 +465,6 @@ and closing of MPI stuff is done in a central part of abinit at the end of the
 run.
 
   
+
 
 

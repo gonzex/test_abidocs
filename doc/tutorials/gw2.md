@@ -1,3 +1,11 @@
+---
+authors: FBruneval, XG
+---
+
+# Second lesson on GW  
+
+## Treatment of metals.  
+
 This lesson aims at showing how to obtain self-energy corrections to the DFT
 Kohn-Sham eigenvalues within the GW approximation, in the metallic case,
 without the use of a plasmon-pole model. The band width and Fermi energy of
@@ -20,10 +28,9 @@ Bruneval[2006] and the Lebegue[2003] papers.
 A brief description of the equations implemented in the code can be found in
 the [GW_notes](../../theory/generated_files/theorydoc_mbt.html).
 
-Also, it is suggested to [acknowledge the efforts of developers of the GW part
-of ABINIT, by citing
-
-  * X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R. Caracas, F. Jollet, M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen, J.-Y. Raty, V. Olevano, F. Bruneval, L. Reining, R. Godby, G. Onida, D.R. Hamann, and D.C. Allan. Zeit. Kristallogr. 220, 558-562 (2005). 
+Also, it is suggested to [[bib:acknow#b|acknowledge]] the efforts of
+developers of the GW part of ABINIT, by citing [[Gonze2005|2005 ABINIT
+publication]].
 
 The user should be familiarized with the four basic lessons of ABINIT, see the
 [tutorial home page](lesson_welcome.html), as well as the [first lesson on
@@ -32,17 +39,10 @@ GW](lesson_gw1.html).
 This lesson should take about one hour to be completed (also including the
 reading of Bruneval[2006] and Lebegue[2003]).
 
-  * 1. The preliminary Kohn-Sham band structure calculation. 
-  * 2. Calculation of the screening file. 
-  * 3. Finding the Fermi energy and the bottom of the valence band. 
-  * 4. Computing a GW spectral function, and the plasmon satellite of Aluminum. 
 
-* * *
+## 1 The preliminary Kohn-Sham band structure calculation
 
-####
-
-### ** 1\. The preliminary Kohn-Sham band structure calculation. **
-
+  
 _Before beginning, you might consider to work in a different subdirectory as
 for the other lessons. Why not "Work_gw2" ?_
 
@@ -94,10 +94,11 @@ Bruneval[2006]).
 
 * * *
 
-###
 
-**2. Calculation of the screening file. **
 
+## 2 Calculation of the screening file
+
+  
 In order not to lose time, let us start the calculation of the screening file
 before the examination of the corresponding input file. So, copy the file
 tgw2_2.in, and modify the tgw2_x.files file as usual (replace occurrences of
@@ -138,10 +139,11 @@ the real axis set with the variable [[nfreqre]] is usually larger.
 
 * * *
 
-###
 
-**3. Finding the Fermi energy and the bottom of the valence band. **
 
+## 3 Finding the Fermi energy and the bottom of the valence band
+
+  
 In order not to lose time, let us start the calculation of the band width
 before the study of the input file. So, copy the file tgw2_3.in, and modify
 the tgw3_x.files file as usual (replace occurrences of twg2_x by tgw2_3).
@@ -201,10 +203,11 @@ experimental value of 10.6 eV.
 
 * * *
 
-###
 
-**4. Computing a GW spectral function, and the plasmon satellite of Aluminum. **
 
+## 4 Computing a GW spectral function, and the plasmon satellite of Aluminum
+
+  
 The access to the non-plasmon-pole-model self-energy (real and imaginary part)
 has additional benefit, e.g. an accurate spectral function can be computed,
 see Lebegue[2003]. You may be interested to see the plasmon satellite of
@@ -241,7 +244,7 @@ You can visualize it using your preferred software. For instance, issue
 
     
     
-    $ gnuplot
+    >>> gnuplot
     gnuplot>  p'tgw2_4o_SIG' u 1:4 w l
     
 
@@ -254,5 +257,6 @@ used for the subsequent calculation of excitonic effects by the EXC code
 (usually available at http://theory.polytechnique.fr/codes/exc ; if not, see
 the [ETSF software page](http://www.etsf.eu/resources/software/codes) and
 further links).
+
 
 

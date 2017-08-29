@@ -16,7 +16,7 @@ aim input variables to be used in the input file for the aim executable.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -40,7 +40,7 @@ Index of the investigated atom.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v6:  [[tests/v6/Input/t19.in]]
 
@@ -64,7 +64,7 @@ two times)
 *Dimensions:* scalar  
 *Default value:* 0.98  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -85,7 +85,7 @@ See the input variable [[ratmin@aim]].
 *Dimensions:* scalar  
 *Default value:* 0.95  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -106,7 +106,7 @@ See the input variable [[ratmin@aim]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -151,7 +151,7 @@ considered is limited by distance cutoff (variable [[maxatd@aim]])
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -179,7 +179,7 @@ density (see [[dltyp@aim]]).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -205,7 +205,7 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
 *Dimensions:* scalar  
 *Default value:* 1.d-2  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v4:  [[tests/v4/Input/t33.in]]
 
 
@@ -232,7 +232,7 @@ density, increase the default value to 5.d-2, let's say.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -253,7 +253,7 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -278,7 +278,7 @@ specified in the input variable [[aim:foldep]].
 *Dimensions:* scalar  
 *Default value:* 0.5  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -299,7 +299,7 @@ The first step for following the gradient path.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -327,7 +327,7 @@ calculated Bader surface.
 *Dimensions:* scalar  
 *Default value:* 100  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -352,7 +352,7 @@ sensitive).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -379,7 +379,7 @@ Drives the integration of the charge of the Bader atom.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t19.in]]
 
 
@@ -404,7 +404,7 @@ Drives the integration of the volume of the Bader atom.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -432,7 +432,7 @@ the core density (see [[aim:dltyp]]).
 *Dimensions:* scalar  
 *Default value:* 1.d-12  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -462,7 +462,7 @@ searching procedure continues with the next seed.
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -486,7 +486,7 @@ Determines the criterion for deciding that a CP has been found. See
 *Dimensions:* scalar  
 *Default value:* 1.d-10  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -510,7 +510,7 @@ for more details.
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -534,7 +534,7 @@ Determines the criterion for deciding that a CP has been found. See
 *Dimensions:* scalar  
 *Default value:* 10.0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -563,7 +563,7 @@ the desired atoms.
 *Dimensions:* scalar  
 *Default value:* 5.0  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -591,7 +591,7 @@ the critical points.
 *Dimensions:* (2)  
 *Default value:* 2*30  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -613,7 +613,7 @@ governed by [[aim:denout]] and [[aim:lapout]].
 *Dimensions:* scalar  
 *Default value:* 48  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -642,7 +642,7 @@ pi/2 (for symmetry reasons), the recommended value is 20.
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -679,7 +679,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -716,7 +716,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -753,7 +753,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 32  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -781,7 +781,7 @@ is pi/2 (for symmetry reasons), the recommended value is 20.
 *Dimensions:* scalar  
 *Default value:* 2.0  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -806,7 +806,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -829,7 +829,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.05  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v6:  [[tests/v6/Input/t19.in]]
 
@@ -852,7 +852,7 @@ The length of the first step in the search of the exact Bader radius.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v6:  [[tests/v6/Input/t19.in]]
 
@@ -883,7 +883,7 @@ is used instead.
 *Dimensions:* (2)  
 *Default value:* 2*0.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -905,7 +905,7 @@ theta,phi) along which the radius of the Bader surface is to be determined.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -930,7 +930,7 @@ specified in the input variable [[aim:rsurdir]]
 *Dimensions:* (3)  
 *Default value:* 1.0 1.0 1.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -945,7 +945,7 @@ specified in the input variable [[aim:rsurdir]]
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
     - v6:  [[tests/v6/Input/t19.in]]
@@ -972,7 +972,7 @@ Drive the computation of the full Bader surface.
 *Dimensions:* scalar  
 *Default value:* pi  
 
-??? note "Test list (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t57.in]]
     - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
 
@@ -997,7 +997,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -1021,7 +1021,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *commentdims:* 6 for 1D, 9 for 2D  
 *Default value:* 6*0.0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 

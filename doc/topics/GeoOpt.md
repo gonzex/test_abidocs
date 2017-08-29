@@ -63,6 +63,7 @@ yet. See [[ga_rules]].
 
 *v1:*
 
+- [[tests/v1/Input/t44.in]]
 - [[tests/v1/Input/t78.in]]
 - [[tests/v1/Input/t79.in]]
 - [[tests/v1/Input/t80.in]]

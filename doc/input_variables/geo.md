@@ -17,7 +17,7 @@ geo input variables to be used in the input file for the abinit executable.
 *Default value:* 0  
 *Only relevant if:* [[spgroup]] != 0  
 
-??? note "Test list (Moderately used, [29/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [29/1132] in all tests, [0/135] in tutorials.)"
     - v2:  [[tests/v2/Input/t59.in]], [[tests/v2/Input/t60.in]]
     - v3:  [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
     - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
@@ -78,7 +78,7 @@ For more details see the space group [ help file
 *Default value:* 0.0  
 *Only relevant if:* [[nzchempot]]/=0  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
 
 
@@ -122,7 +122,7 @@ atomic units).
 *Dimensions:* (3)  
 *Default value:* 3*0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t22.in]]
 
 
@@ -156,7 +156,7 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
 
-??? note "Test list (Moderately used, [45/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [45/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]]
     - seq:  [[tests/seq/Input/tsv4_55.in]]
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]], [[tests/v1/Input/t90.in]], [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t94.in]], [[tests/v1/Input/t95.in]], [[tests/v1/Input/t96.in]]
@@ -191,7 +191,7 @@ Despite possible vacancies, cannot be bigger than [[natom]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -239,7 +239,7 @@ for example.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v8:  [[tests/v8/Input/t30.in]], [[tests/v8/Input/t31.in]]
 
 
@@ -266,7 +266,7 @@ is the second dimension.
 *Only relevant if:* '[[nobj]]==1'
   
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -297,7 +297,7 @@ Look at [[objarf]] for further explanations.
 *Comment:* [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -331,7 +331,7 @@ toward point 2 (coordinates 4:6).
 *Comment:*  [[objan]] MUST be provided if [[nobj]]==1.
  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -355,7 +355,7 @@ variables [[objaat]].
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -398,7 +398,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -432,7 +432,7 @@ with different rotation angles.
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -470,7 +470,7 @@ Not present in the dtset array (no internal).
 *Default value:* None  
 *Only relevant if:* [[nobj]]==2  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -501,7 +501,7 @@ Look at [[objbrf]] for further explanations.
 *Comment:* [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t43.in]]
 
 
@@ -534,7 +534,7 @@ toward point 2 (coordinates 4:6).
 *Default value:* None  
 *Comment:*  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -558,7 +558,7 @@ the variables [[objbat]].
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -600,7 +600,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t43.in]]
 
 
@@ -634,7 +634,7 @@ with different rotation angles.
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]]
 
 
@@ -670,7 +670,7 @@ which case, only rotations are needed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -704,7 +704,7 @@ Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (Rarely used, [8/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [8/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t96.in]]
     - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t38.in]]
     - v4:  [[tests/v4/Input/t28.in]]
@@ -764,7 +764,7 @@ How to determine which spgaxor you need:
 *Default value:* 1  
 *Only relevant if:* [[spgroup]]!=0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t95.in]]
 
 
@@ -792,7 +792,7 @@ For details see the space group [ help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Moderately used, [36/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [36/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t94.in]], [[tests/v1/Input/t95.in]], [[tests/v1/Input/t96.in]]
     - v2:  [[tests/v2/Input/t59.in]], [[tests/v2/Input/t60.in]]
     - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
@@ -834,7 +834,7 @@ For details see the space group [ help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Moderately used, [20/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [20/1132] in all tests, [0/135] in tutorials.)"
     - v3:  [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]]
     - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]]
 
@@ -875,7 +875,7 @@ of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 *Dimensions:* scalar  
 *Default value:* 1e-08  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t78.in]]
     - v7:  [[tests/v7/Input/t13.in]]
 
@@ -908,7 +908,7 @@ operations that will have been found.
 *Dimensions:* ([[vacnum]])  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]]
 
 
@@ -933,7 +933,7 @@ Useful to created vacancies.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v1:  [[tests/v1/Input/t40.in]]
 
 
@@ -958,7 +958,7 @@ atoms is contained in [[vaclst]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v6:  [[tests/v6/Input/t10.in]]
 
 

@@ -1,3 +1,11 @@
+---
+authors: XG, RC
+---
+
+# Second (basic) lesson  
+
+## The H<sub>2</sub> molecule, with convergence studies.  
+
 This lesson aims at showing how to get converged values for the following
 physical properties:
 
@@ -12,19 +20,10 @@ You will also finish to read the abinit_help file.
 
 This lesson should take about 1 hour.
 
-  * 2.0 Summary of the previous lesson
-  * 2.1 The convergence in [[ecut]]
-  * 2.2 The convergence in [[ecut]]
-  * 2.3 The convergence in [[acell]]
-  * 2.4 The final calculation in Local (Spin) Density Approximation.
-  * 2.5 The use of the Generalized Gradient Approximation.
 
-* * *
+## 1 Summary of the previous lesson
 
-####
-
-### **2.0. Summary of the previous lesson.**
-
+  
 We studied the H2 molecule in a big box. We used 10 Ha as cut-off energy, a
 10x10x10 Bohr^3 supercell, the local-density approximation (as well as the
 local-spin-density approximation) in the Teter parametrization ([[ixc]]=1, the
@@ -44,13 +43,12 @@ accurate technique than DFT)
 The bond length is awful (nearly 10% off), and the atomisation energy is a bit
 too low, 5 % off.
 
-###  
 
-* * *
+
+## 2 The convergence in ecut (I)
 
   
 
-### **2.1 and 2.2 The convergence in ecut**
 
 **2.1.a**** Computing the bond length and corresponding atomisation energy in one run.**
 
@@ -91,8 +89,7 @@ and
 These are similar to those determined in [lesson 1](lesson_base1.html),
 although they have been obtained in one run. You can also check that the
 residual forces are lower than `5.0d-4`. Convergence issues are discussed in
-[section 7](../../users/generated_files/help_abinit.html#7) of the abinit_help
-file.  
+[[help:abinit#7|section 7]] of the abinit help file.  
 You should read it. By the way, you have read many parts of the abinit_help
 file! You are missing the sections
 [2](../../users/generated_files/help_abinit.html#2),
@@ -109,6 +106,11 @@ will come in the long run.
   * the boxcut value is automatically chosen larger than 2 by ABINIT, see the determination of the input variable [[ngfft]] by preprocessing
   * we are using [[ionmov]]=2 for the determination of the geometry.
 
+
+
+## 3 The convergence in ecut (II)
+
+  
 For the check of convergence with respect to [[ecut]], you have the choice
 between doing different runs of the tbase2_1.in file with different values of
 [[ecut]], or doing a double loop of datasets, as proposed in
@@ -176,12 +178,11 @@ this value for the final run.
 Well, 30 Ha is a large kinetic energy cut-off! The pseudopotential that we are
 using for Hydrogen is rather "hard" ...
 
-* * *
 
-###
 
-**2.3 The convergence in acell**
+## 4 The convergence in acell
 
+  
 The same technique as for [[ecut]] should be now used for the convergence in
 [[acell]]. We will explore [[acell]] starting from `8 8 8` to `18 18 18`, by
 step of `2 2 2`. We keep [[ecut]] 10 for this study. Indeed, it is a rather
@@ -314,10 +315,11 @@ pseudopotential, turns out to be not really easy. Of course, the number of
 states to be treated is minimal! This allows to have reasonable CPU time
 still.
 
-* * *
 
-### **2.4 The final calculation in Local (Spin) Density Approximation.**
 
+## 5 The final calculation in Local (Spin) Density Approximation
+
+  
 We now use the correct values of both [[ecut]] and [[acell]]. Well, you should
 modify the tbase2_3.in file to make a calculation with `acell 12 12 12` and
 `ecut 30`. You can still use the double loop feature with `[[udtset]] 1 2`
@@ -354,10 +356,11 @@ calculations.
 Other possibilities `[[ixc]]=4, 5, 6` are older local density functionals,
 that could not rely on these data.
 
-* * *
 
-### **2.5 The use of the Generalized Gradient Approximation.**
 
+## 6 The use of the Generalized Gradient Approximation
+
+  
 We will use the Perdew-Burke-Ernzerhof functional, proposed in Phys. Rev.
 Lett. 77, 3865 (1996).
 
@@ -400,5 +403,6 @@ bond length, and within 2% of the experimental atomisation energy.
 
 _Do not forget that the typical accuracy of LDA and GGA varies with the class
 of materials studied..._
+
 
 

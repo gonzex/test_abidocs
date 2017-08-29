@@ -175,11 +175,6 @@ that produces:
 
 {% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
 
-``` 
-[[#notations|this section]] becomes <a href="#notations">this section</a>
-```
-
-
 ### Internal links with namespace
 
 Other internal links can be recognized thanks to the namespace. 
@@ -308,9 +303,8 @@ For instance `#!latex $|\Phi\rangle$` produces $|\Phi\rangle$ while `#!latex $$\
 
 $$\Phi_\kq(\rr)$$ 
 
-```latex
-$$ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef} $$
-```
+Equations enclosed by `$$...$$` or `\begin{equation}...\end{equation}` markers are automatically numbered 
+and can be referenced inside the Markdown text using the standard Latex syntax:
 
 ```latex
 \begin{equation}
@@ -318,10 +312,9 @@ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \ra
 \end{equation}
 ```
 
-$$G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle  \label{eq:GreenDef}$$
-
-Equations enclosed by `$$...$$` or `\begin{equation}...\end{equation}` markers are automatically numbered 
-and can be referenced inside the Markdown text using the standard Latex syntax:
+\begin{equation}
+G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef}
+\end{equation}
 
     The propagator in Eq.\ref{eq:GreenDef}
 
@@ -536,7 +529,7 @@ that produces: Fix https://github.com/abinit/abinit/issues/1
     This extension is useful to generate nice changelogs and release notes.
 
 
-## Media
+## Media Content
 
 Links to videos can be included with the standard Markdown syntax:
 

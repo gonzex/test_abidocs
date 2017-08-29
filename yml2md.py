@@ -12,6 +12,8 @@ sys.path.insert(0, pack_dir)
 
 from abimkdocs.variables import Components
 
+NUMBERED_SECTIONS = True
+
 
 class Yaml2Md(object):
     def __init__(self, abidoc_root, mkdocs_root=None):
@@ -53,37 +55,41 @@ class Yaml2Md(object):
                 workdir = os.path.join(self.mkdocs_root, dest)
                 mdpath = os.path.join(workdir, comp.name + ".md")
                 print("Writing markdown file to", mdpath)
-                #with io.open(mdpath, "wt", encoding="utf-8") as f:
-                #    f.write(md)
+                with io.open(mdpath, "wt", encoding="utf-8") as f:
+                    f.write(md)
 
 
 def md_from_comp(comp):
-    md = "---\nauthors: %s\n---\n" % comp.authors
-    md += "# %s  " % comp.keyword
-    md += "## %s  " % comp.subtitle
+    md = "---\nauthors: %s\n---\n\n" % ", ".join(comp.authors.split(","))
+    md += "# %s  \n\n" % comp.keyword
+    md += "## %s  \n\n" % comp.subtitle
     return md
 
 
 def order_sections(d):
-    items = [(k, float(k.replace("sec", ""))) for k in d if k.startswith("sec")]
-    return [item[0] for item in sorted(items, key=lambda t: t[1])]
+    # (key, secnum as string)
+    items = [(k, k.replace("sec", ""), float(k.replace("sec", ""))) for k in d if k.startswith("sec")]
+    if NUMBERED_SECTIONS:
+        return [item[0:2] for item in sorted(items, key=lambda t: t[2])]
+    else:
+        return [(item[0], "") for item in sorted(items, key=lambda t: t[2])]
 
 
 def text_from_d(data):
-    md = html2text(data.pop("intro"))
+    md = html2text(data.pop("intro")) + "\n"
     appendix = data.pop("secAppendix", None)
-    for sec in order_sections(data):
+    for sec, sec_name in order_sections(data):
         d = data.pop(sec)
         #print(sec)
-        md += "## %s  \n" % html2text(d.pop("title"))
+        md += "## %s %s  \n" % (sec_name, html2text(d.pop("title")))
         if "body" in d:
             md += html2text(d.pop("body"))
         md += "\n\n"
         d.pop("tag")
         if d:
-            for sub in order_sections(d):
+            for sub, sub_name in order_sections(d):
                 sd = d.pop(sub)
-                md += "### %s  \n" % html2text(sd.pop("title"))
+                md += "### %s %s  \n" % (sub_name, html2text(sd.pop("title")))
                 md += html2text(sd.pop("body"))
                 md += "\n\n"
                 sd.pop("tag")

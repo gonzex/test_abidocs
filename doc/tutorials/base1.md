@@ -1,11 +1,10 @@
 ---
-name: base1
-keyword: First (basic) lesson 
 authors: XG, RC
-title: The H<sub>2</sub> molecule, without convergence studies
 ---
 
-# The H<sub>2</sub> molecule, without convergence studies
+# First (basic) lesson  
+
+## The H<sub>2</sub> molecule, without convergence studies.  
 
 This lesson aims at showing how to get the following physical properties:
 
@@ -13,10 +12,10 @@ This lesson aims at showing how to get the following physical properties:
   * the bond length 
   * the charge density 
   * the atomisation energy 
-
 You will learn about the two input files, the basic input variables, the
-existence of defaults, the actions of the parser, and the use of the multi-dataset feature. 
-You will also learn about the two output files as well as the density file.
+existence of defaults, the actions of the parser, and the use of the multi-
+dataset feature. You will also learn about the two output files as well as the
+density file.
 
 This first lesson covers the sections 1, 3, 4 and 6 of the [[help_abinit]].
 
@@ -27,11 +26,11 @@ It is supposed that you have some good knowledge of UNIX/Linux.
 
 This lesson should take about 2 hours.
 
----
 
-### 1.1. The first step (the most important, and the most difficult !):  
+## 1 Computing the (pseudo) total energy, and some associated quantities
 
-Computing the (pseudo) total energy, and some associated quantities.
+  
+The first step (the most important, and the most difficult !).
 
 Note that the present tutorial will use four different windows: one to
 visualize the text of the tutorial (the present window), a second to run the
@@ -39,139 +38,123 @@ code, a third to visualize sections of the [[help_abinit]] (that will open
 automatically), and a fourth one for the description of input variables (that
 will also open automatically). Try to manage adequately these four windows ...
 
-**1.1.a** In addition to the present window, open the second window. 
-Go to the Tutorial directory (that we refer as ~abinit/tests/tutorial/Input). 
-
-```bash
-    $ cd ~abinit/tests/tutorial/Input
-```
+**1.1.a** In addition to the present window, open the second window. Go to the Tutorial directory (that we refer as ~abinit/tests/tutorial/Input). 
+* _cd ~abinit/tests/tutorial/Input_
   
 In that directory, you will find the necessary input files to run the examples
 related to this tutorial. Take a few seconds to read the names of the files
-already present in `~abinit/tests/tutorial/Input`. 
-Compare with the lessons mentioned in the index of the [**Tutorial home page**](lesson_welcome.html).
+already present in ~abinit/tests/tutorial/Input. Compare with the lessons
+mentioned in the index of the [**Tutorial home page**](lesson_welcome.html).
 You will find other input files, specific for the Density Functional
 Perturbation Theory ("Response functions") capabilities of ABINIT in the
-directory `~abinit/tests/tutorespfn/Input`.  
+directory _~abinit/tests/tutorespfn/Input_.  
 
-**1.1.b **You also need a working directory. So, you should create a subdirectory of this directory, 
-whose name might be "Work" (so ~abinit/tests/tutorial/Input/Work). Change the working directory of windows 2 to "Work": 
-
-```sh
-    $ mkdir Work
-    $ cd Work
-```
+**1.1.b **You also need a working directory. So, you should create a subdirectory of this directory, whose name might be "Work" (so ~abinit/tests/tutorial/Input/Work). Change the working directory of windows 2 to "Work": 
+* _mkdir Work_
+* _cd Work_
 
 You will do most of the actions of this tutorial in this working directory.
 Copy the file tbase1_x.files in "Work":
 
-```terminal
-    $ cp ../tbase1_x.files .
-```
+* _cp ../tbase1_x.files . _
 
 **1.1.c** Edit the tbase1_x.files. It is not very long (only 6 lines). It gives the information needed for the code to build other file names ... You will discover more about this file in the [section 1.1](../../users/generated_files/help_abinit.html#intro1) of the abinit_help file. Please, read it now (it will take one minute or so). 
 
 **1.1.d** Modify the first and second lines of tbase1_x.files file, so that they read:  
-
-    tbase1_1.in  
-    tbase1_1.out  
-
+tbase1_1.in  
+tbase1_1.out  
 Later, you will again modify these lines, to treat more cases. Make sure that
 the last line, gives the correct location of the pseudopotential. Close the
 tbase1_x.files file. Then, copy the file [[tests/tutorial/Input/tbase1_1.in]]
 in "Work":  
 
-```bash
-    $ cp ../tbase1_1.in .
-```
+* _ cp ../tbase1_1.in . _
 
 Also later, we will look at this file, and learn about its content. For now,
-you will try to run the code. Its name is `abinit`. The place where it can be
+you will try to run the code. Its name is 'abinit'. The place where it can be
 found varies, according to the installation procedure. We will denote the
-directory where you have installed the package `~abinit`. Supposing that you
-dumped the binaries from the Web site, then `abinit` is to be found in the
-package, with location `~abinit/opt`. If you dumped the sources from the Web
-site, and issued `./configure` in the ~abinit directory, then it is located in
-`~abinit/src/98_main`. In what follows, we will suppose that you can call it by
-simply typing `abinit`, even if the actual command must be something like
-`../../../../opt/abinit` or `../../../../src/98_main/abinit`. (Suggestion: create
-an alias with `ln -s`, or copy the abinit executable, or declare the path with
-the shell command `export PATH=~abinit/src/98_main:$PATH`).
+directory where you have installed the package ~abinit. Supposing that you
+dumped the binaries from the Web site, then 'abinit' is to be found in the
+package, with location ~abinit/opt . If you dumped the sources from the Web
+site, and issued ./configure in the ~abinit directory, then it is located in
+~abinit/src/98_main . In what follows, we will suppose that you can call it by
+simply typing "abinit", even if the actual command must be something like
+../../../../opt/abinit or ../../../../src/98_main/abinit.  
+To ease your life, you might copy the abinit executable, or create an alias
+with `ln -s`, or declare the path with the shell command
+
+* _ export PATH=~abinit/src/98_main:$PATH _
+where ~abinit is the absolute path to your abinit top directory.
 
 So, in the Work directory, type:  
 
-```bash
-    $ abinit < tbase1_x.files >& log
-```
+* _ abinit < tbase1_x.files >& log _
   
-Wait a few seconds ... it's done ! You can look at the content of the Work directory.
+Wait a few seconds ... it's done ! You can look at the content of the Work
+directory.
 
-```bash
-    $ ls
-```
+* _ ls _
   
 You should get something like
 
-```shell
-    abinit  log  tbase1_1.in  tbase1_1.out  tbase1_x.files  tbase1_xo_DDB  tbase1_xo_DEN  
-    tbase1_xo_EIG.nc  tbase1_xo_GSR.nc  tbase1_xo_OUT.nc  tbase1_xo_WFK
-```
+    
+    
+      abinit  log  tbase1_1.in  tbase1_1.out  tbase1_x.files  tbase1_xo_DDB  tbase1_xo_DEN  tbase1_xo_EIG.nc  tbase1_xo_GSR.nc  tbase1_xo_OUT.nc  tbase1_xo_WFK
+      
 
-(if you declared the path, you will not find `abinit` in the list) Different
-output files have been created, including a `log` file and the output file
-`tbase1_1.out`. To check that everything is correct, you can make a diff of
-`tbase1_1.out` with a reference file [[tests/tutorial/Refs/tbase1_1.out]]
-contained in the `~abinit/tests/tutorial/Refs` directory:
+(if you declared the path, you will not find 'abinit' in the list). Different
+output files have been created, including a "log" file and the output file
+"tbase1_1.out". To check that everything is correct, you can make a diff of
+tbase1_1.out with a reference file [[tests/tutorial/Refs/tbase1_1.out]]
+contained in the ~abinit/tests/tutorial/Refs directory:
 
+* _diff tbase1_1.out ../../Refs/tbase1_1.out | more_
 
-```shell
-    $ diff tbase1_1.out ../../Refs/tbase1_1.out | less
-```
-
-(Perhaps you will need to ignore the blanks, with the command `diff -b`
-instead of `diff`)
+(Perhaps you will need to ignore the blanks, with the command "diff -b"
+instead of "diff")
 
 That reference file uses slightly different file names. You should get some
 difference, but rather inoffensive ones, like differences in the name of input
 files or timing differences, e.g.:
 
-```diff
-2,3c2,3
-< .Version 8.0.8 of ABINIT
-< .(MPI version, prepared for a x86_64_linux_gnu5.4 computer)
----
-> .Version 8.0.7  of ABINIT
-> .(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
-17c17
-< .Starting date : Fri 27 May 2016.
----
-> .Starting date : Thu 26 May 2016.
-27c27
-< - input  file    -> tbase1_1.in
----
-> - input  file    -> ../tbase1_1.in
-29,30c29,30
-< - root for input  files -> tbase1_xi
-< - root for output files -> tbase1_xo
----
-> - root for input  files -> tbase1_1i
-> - root for output files -> tbase1_1o
-92,93c92,93
-< - pspini: atom type   1  psp file is ../../../Psps_for_tests/01h.pspgth
-< - pspatm: opening atomic psp file    ../../../Psps_for_tests/01h.pspgth
----
-> - pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
-> - pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
-166c166
-<  prteigrs : about to open file tbase1_xo_EIG
----
->  prteigrs : about to open file tbase1_1o_EIG
-214c214
-< - Total cpu        time (s,m,h):          4.7        0.08      0.001
----
-> - Total cpu        time (s,m,h):          4.6        0.08      0.001
-221,229c221,228
-```
+    
+    
+    2,3c2,3
+    < .Version 8.0.8 of ABINIT
+    < .(MPI version, prepared for a x86_64_linux_gnu5.4 computer)
+    ---
+    > .Version 8.0.7  of ABINIT
+    > .(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
+    17c17
+    < .Starting date : Fri 27 May 2016.
+    ---
+    > .Starting date : Thu 26 May 2016.
+    27c27
+    < - input  file    -> tbase1_1.in
+    ---
+    > - input  file    -> ../tbase1_1.in
+    29,30c29,30
+    < - root for input  files -> tbase1_xi
+    < - root for output files -> tbase1_xo
+    ---
+    > - root for input  files -> tbase1_1i
+    > - root for output files -> tbase1_1o
+    92,93c92,93
+    < - pspini: atom type   1  psp file is ../../../Psps_for_tests/01h.pspgth
+    < - pspatm: opening atomic psp file    ../../../Psps_for_tests/01h.pspgth
+    ---
+    > - pspini: atom type   1  psp file is /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
+    > - pspatm: opening atomic psp file    /home/gonze/ABINIT/ABINITv8.0.7/trunk/8.0.7-private/tests/Psps_for_tests/01h.pspgth
+    166c166
+    <  prteigrs : about to open file tbase1_xo_EIG
+    ---
+    >  prteigrs : about to open file tbase1_1o_EIG
+    214c214
+    < - Total cpu        time (s,m,h):          4.7        0.08      0.001
+    ---
+    > - Total cpu        time (s,m,h):          4.6        0.08      0.001
+    221,229c221,228
+    
 
 (... and what comes after that is related only to timing ...).
 
@@ -196,14 +179,14 @@ later, what is in the "tbase1_1.out" and "log" output files.
 
 **1.1.f** It is now time to edit the tbase1_1.in file. You can have a first glance at it. It is not very long: about 50 lines, mostly comments. Do not try to understand everything immediately. After having gone through it, you should read general explanation about its content, and the format of such input files in the [section 3.1](../../users/generated_files/help_abinit.html#intro3) of the abinit_help file. 
 
-**1.1.g** You might now examine in more details some input variables. An alphabetically ordered [index of all variables](../../input_variables/generated_files/allvariables.html) is provided, and their description is found in different files (non-exhaustive list): 
+**1.1.g** You might now examine in more details some input variables. An alphabetically ordered [[varset:allvars|index of all variables]] is provided, and their description is found in different files (non-exhaustive list): 
 
-  * Basic variables, [VARBAS](../../input_variables/generated_files/varbas.html)
-  * Files handling variables, [VARFIL](../../input_variables/generated_files/varfil.html)
-  * Ground-state calculation variables, [VARGS](../../input_variables/generated_files/vargs.html)
-  * GW variables, [VARGW](../../input_variables/generated_files/vargw.html)
-  * Parallelisation variables, [VARPAR](../../input_variables/generated_files/varpar.html)
-  * Response Function variables, [VARRF](../../input_variables/generated_files/varrf.html)
+  * Basic variables, varset_[[varset:basic]]
+  * Files handling variables, varset_[[varset:files]]
+  * Ground-state calculation variables, varset_[[varset:gstate]]
+  * GW variables, varset_[[varset:GW]]
+  * Parallelisation variables, varset_[[varset:paral]]
+  * Density Functional Perturbation Theory (DFPT) variables, varset_[[varset:DFPT]]
 
 However, the number of such variables is rather large! Note that a dozen of
 input variables were needed to run the first test case. This is possible
@@ -239,12 +222,8 @@ It is now time to have a look at the two output files of the run.
   * examine the header of "tbase1_1.out" 
   * examine the report on memory needs (do not read each value of parameters) 
   * examine the echo of preprocessed input data, 
-
-until you reach the message:  
-
-```
-chkinp: Checking input parameters for consistency.
-```
+until you reach the message: **  
+chkinp **: Checking input parameters for consistency.
 
 If the code does not stop there, the input parameters are consistent. At this
 stage, many default values have been provided, and the preprocessing is
@@ -305,10 +284,11 @@ Could you answer the following questions?
 
 (answers are given at the end of the present file)
 
-* * *
 
-### **1.2. Computation of the interatomic distance (method 1). **
 
+## 2 Computation of the interatomic distance (method 1)
+
+  
 **1.2.a** _Starting from now, everytime a new input variable is mentioned, you should read the corresponding descriptive section in the ABINIT help._
 
 We will now complete the description of the meaning of each term: there are
@@ -361,7 +341,8 @@ so on a PC at 3 GHz), examine the output file quickly (there are many
 repetition of sections, for the different datasets), and get the output
 energies gathered in the final echo of variables:
 
-```text
+    
+    
         etotal1  -1.0368223891E+00
         etotal2  -1.0538645433E+00
         etotal3  -1.0674504851E+00
@@ -383,20 +364,19 @@ energies gathered in the final echo of variables:
         etotal19 -1.0929800578E+00
         etotal20 -1.0899835224E+00
         etotal21 -1.0867972868E+00
-```
+    
 
-You might try to plot these data. 
+You might try to [plot](../documents/lesson_base1/Plot1.jpg) these data. The
+minimum of energy in the above list is clearly between dataset 11 and 12, that
+is:
 
-![](base1_assets/Plot1.jpg) 
-
-The minimum of energy in the above list is clearly between dataset 11 and 12, that is:
-
-```
+    
+    
          xcart11 -7.5000000000E-01  0.0000000000E+00  0.0000000000E+00
                   7.5000000000E-01  0.0000000000E+00  0.0000000000E+00
          xcart12 -7.7500000000E-01  0.0000000000E+00  0.0000000000E+00
                   7.7500000000E-01  0.0000000000E+00  0.0000000000E+00
-```
+    
 
 corresponding to a distance of H atoms between 1.5 Bohr and 1.55 Bohr. The
 forces vanish also between 1.5 Bohr and 1.55 Bohr:
@@ -414,9 +394,9 @@ of 1.522 Bohr .
 Note that _the number of SCF cycles drops from 6 to 5 when the wavefunctions
 are read from the previous dataset._
 
-* * *
 
-### **1.3 Computation of the interatomic distance (method 2). **
+
+## 3 Computation of the interatomic distance (method 2)
 
   
 **1.3.a** The other methodology is based on an automatic computation of the minimum.   
@@ -467,10 +447,11 @@ often observed for a value converging to zero (remember, we ask the code to
 determine the equilibrium geometry, that is, forces should be zero) when the
 same computation is done on different platforms.
 
-* * *
 
-### **1.4. Computation of the charge density.**
 
+## 4 Computation of the charge density
+
+  
 The charge density has already been computed, for all geometries, in the
 above-mentioned runs. Here, we will print this quantity.
 
@@ -506,10 +487,11 @@ present in ~abinit/doc/tutorial/documents/lesson_base1 to visualize the
 3-Dimensional isosurfaces. Another option might be to use the XCrysDen
 software, for which you need to use option 9.
 
-* * *
 
-### **1.5. Computation of the atomisation energy.**
 
+## 5 Computation of the atomisation energy
+
+  
 **1.5.a** The atomisation energy is the energy needed to separate a molecule in its constituent atoms, each being neutral.   
 In the present case, one must compute first the total energy of an isolated
 hydrogen atom. The atomisation energy will be the difference between the total
@@ -539,18 +521,16 @@ the spin-polarisation:
 
   * the electronic eigenvalues are now given for both spin up and spin down cases: 
     
-```text
          Eigenvalues (hartree) for nkpt=   1  k points, SPIN UP:
      kpt#   1, nband=  1, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.26414
      Eigenvalues (hartree) for nkpt=   1  k points, SPIN DOWN:
      kpt#   1, nband=  1, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.11112
-```
+    
 
   * If you run again, while having inserted in the input file '[[prtvol]] 2', because [[occopt]], the charge density and spin polarisation at each point of the FFT grid is also analyzed: 
     
-```text
          Total charge density [el/Bohr^3]
           Maximum=    1.4053E-01  at reduced coord.    0.0000    0.0000    0.0000
      Next maximum=    1.2019E-01  at reduced coord.    0.0000    0.0000    0.9667
@@ -576,7 +556,8 @@ the spin-polarisation:
      Next maximum=    1.0000E+00  at reduced coord.    0.9333    0.9667    0.9667
           Minimum=    1.0000E+00  at reduced coord.    0.0000    0.0000    0.0000
      Next minimum=    1.0000E+00  at reduced coord.    0.0333    0.0000    0.0000
-```
+    
+
   
 The **zeta** variable is the ratio between the spin-density difference and the
 charge density. It varies between +1 and -1. In the present case of Hydrogen,
@@ -587,10 +568,15 @@ process the output file using some automatic tool. As a rule, you should
 ignore symbols placed in the first column of the ABINIT output file.)
 
 The total energy is
+
+    
     
         etotal   -4.7010531489E-01
+    
 
 while the total energy of the H2 molecule is (see test 13):
+
+    
     
         etotal   -1.1058360644E+00
     
@@ -602,7 +588,6 @@ At this stage, we can compare our results:
 
   * bond length: 1.522 Bohr 
   * atomisation energy at that bond length: 0.1656 Ha = 4.506 eV 
-
 with the experimental data as well as theoretical data using a much more
 accurate technique (see Kolos and Roothaan, Rev. Mod. Phys. 32, 219 (1960),
 especially p.225)
@@ -610,16 +595,16 @@ especially p.225)
   * bond length: 1.401 Bohr 
   * atomisation energy: 4.747 eV 
   
-The bond length is awful (nearly 10% off), and the atomisation energy is a bit too low, 5 % off.
+The bond length is awful (nearly 10% off), and the atomisation energy is a bit
+too low, 5 % off.
 
 What is wrong??  
-Well, are you sure that the input parameters that we did not discuss are correct? 
-These are:
+Well, are you sure that the input parameters that we did not discuss are
+correct? These are:
 
   * [[ecut]] (the plane-wave kinetic energy cut-off) 
   * [[acell]] (the supercell size) 
-  * [[ixc]] (not even mentioned until now, this input variable specifies what kind of 
-    exchange-correlation functional is to be used ...) 
+  * [[ixc]] (not even mentioned until now, this input variable specifies what kind of exchange-correlation functional is to be used ...) 
   * the pseudopotential 
   
 We used 10 Ha as cut-off energy, a 10x10x10 Bohr^3 supercell, the local-
@@ -630,9 +615,14 @@ table (Phys. Rev. B 54, 1703 (1996)).
 We will see in the [next lesson](lesson_base2.html) how to address the choice
 of these parameters (except the pseudopotential).
 
-* * *
 
-### Answers to the questions 
+
+## 6 Answers to the questions
+
+  
+
+
+**Answers to the questions, section 1.1.j  **: 
 
   * Q1. How many SCF cycles were needed to have the [[toldfe]] criterion satisfied? 
   * Q2. Is the energy likely more converged than [[toldfe]]? 
@@ -643,10 +633,11 @@ of these parameters (except the pseudopotential).
 NOTE: _there might be numerical differences, from platform to platform, in the
 quoted results !_
 
+  
 
 **Q1.** 6 SCF cycles were needed: 
     
-```text    
+    
          iter   Etot(hartree)      deltaE(h)  residm     vres2
      ETOT  1  -1.1013391225242    -1.101E+00 4.220E-04 8.396E+00
      ETOT  2  -1.1036939626391    -2.355E-03 7.374E-09 2.840E-01
@@ -657,7 +648,6 @@ quoted results !_
     
      At SCF step    6, etot is converged :
       for the second time, diff in etot=  9.038E-11 < toldfe=  1.000E-06
-```
     
 
 Note that the number of steps that were allowed, [[nstep]]=10, is larger than
@@ -668,9 +658,9 @@ as e.g. set it to 5, to see how ABINIT reacts.
 
 Side note: in most of the tutorial examples, [[nstep]] will be enough to reach
 the target tolerance, defined by one of the "tolXXX" input variables. However,
-this is not always the case (e.g. the test case 1 of the [lesson response-
-function 1](lesson_rf1.html)), because of some portability problems, that
-could only be solved by stopping the SCF cycles before the required tolerance.
+this is not always the case (e.g. the test case 1 of the [lesson DFPT
+1](lesson_rf1.html)), because of some portability problems, that could only be
+solved by stopping the SCF cycles before the required tolerance.
 
   
 
@@ -679,26 +669,30 @@ could only be solved by stopping the SCF cycles before the required tolerance.
   
 
 **Q3.** These values are: 
-
-```text
+    
+    
      cartesian forces (hartree/bohr) at end:
         1     -0.03740558871217     0.00000000000000     0.00000000000000
         2      0.03740558871217     0.00000000000000     0.00000000000000
      frms,max,avg= 2.1596127E-02 3.7405589E-02   0.000E+00  0.000E+00  0.000E+00 h/b
-```
+    
+
   
 On the first atom (located at -0.7 0 0 in cartesian coordinates, in Bohr), the
 force vector is pointing in the minus x direction, and in the plus x direction
 for the second atom located at +0.7 0 0 .  
 The H2 molecule would like to expand ...
 
-**Q4.** The eigenvalues (in Hartree) are mentioned at the lines 
 
-```text
+
+**Q4.** The eigenvalues (in Hartree) are mentioned at the lines 
+    
+    
      Eigenvalues (hartree) for nkpt=   1  k points:
      kpt#   1, nband=  2, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
       -0.36525  -0.01379
-```
+    
+
   
 As mentioned in the
 [abinit_help](../../users/generated_files/help_abinit.html#averagepot) file,
@@ -710,9 +704,13 @@ experimental excitation energies !
 (Well, more is to be said later about this ...).
 
 
+
 **Q5.** The maximum electronic density in electron per Bohr cube is reached at the mid-point between the two H atoms : 
     
-```text    
+    
      Total charge density [el/Bohr^3]
     ,     Maximum=    2.6907E-01  at reduced coord.    0.0000    0.0000    0.0000
-```
+    
+
+
+

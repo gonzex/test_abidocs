@@ -1,3 +1,11 @@
+---
+authors: MVer
+---
+
+# Electron-phonon lesson  
+
+## Electron-Phonon interaction and superconducting properties of Al.  
+
 This lesson demonstrates how to obtain the following physical properties, for
 a metal :
 
@@ -14,28 +22,17 @@ phonon calculation, which will be reviewed succinctly.
 
 This lesson should take about 1 hour.
 
-  * 1 Calculation of the ground state and phonon structure of fcc Al.
-  * 2 Merging of the 2DTE DDB files using MRGDDB.
-  * 3 Merging of the electron-phonon matrix elements using MRGGKK.
-  * 4 Basic ANADDB calculation of electron-phonon quantities.
-  * 5 Convergence tests of the integration techniques.
-  * 6 Transport quantities within Boltzmann theory.
 
-* * *
+## 1 Calculation of the ground state and phonon structure of fcc Al
 
   
-
-### **1\. Calculation of the ground state and phonon structure of fcc Al.**
-
-###  
-
 _Before beginning, you might consider making a different subdirectory to work
 in. Why not create "Work_eph" in ~abinit/tests/tutorespfn/Input ? _  
 
 It is presumed that the user has already followed the Tutorials
 [RF1](lesson_rf1.html) and [RF2](lesson_rf2.html), and understands the
-calculation of ground state and response function (phonon) properties with
-ABINIT.
+calculation of ground state and response (phonon using density-functional
+perturbation theory (DFPT)) properties with ABINIT.
 
 The file ~abinit/tests/tutorespfn/Input/teph_1.files lists the file names and
 root names for the first run (GS+perturbations). You can copy it to the
@@ -62,16 +59,14 @@ aluminium. The DDK perturbation (DS 5) is also calculated, and will be used to
 obtain the Fermi velocities for the transport calculations in Section 6.
 
 Once these are done, abinit calculates the wave functions on the full grid of
-k-points (using [kptopt
-3](../../input_variables/generated_files/varbas.html#kptopt)) in DS 6: these
-will be used to calculate the electron-phonon matrix elements. In a full
-calculation the density of k-points should be increased significantly here and
-for the following datasets. For DS 1-5 only the normal convergence of the
-phonon frequencies should be ensured. In DS 7-10 only the matrix elements are
-calculated, for the electron-phonon coupling and for the DDK
-(position/momentum matrix elements), on the dense and complete grid of
-k-points from DS 6. Note that the separation of the matrix element calculation
-is new from version 7.6.
+k-points (using [[kptopt]]=3) in DS 6: these will be used to calculate the
+electron-phonon matrix elements. In a full calculation the density of k-points
+should be increased significantly here and for the following datasets. For DS
+1-5 only the normal convergence of the phonon frequencies should be ensured.
+In DS 7-10 only the matrix elements are calculated, for the electron-phonon
+coupling and for the DDK (position/momentum matrix elements), on the dense and
+complete grid of k-points from DS 6. Note that the separation of the matrix
+element calculation is new from version 7.6.
 
 The important variable for electron-phonon coupling calculations is [[prtgkk]]
 This prints out files suffixed GKK, which contain the electron-phonon matrix
@@ -94,14 +89,13 @@ convergence on your own.
 
 Edit the file teph_1.in. We now examine several variables. The kinetic energy
 cutoff [[ecut]] is a bit low, and the number of k-points (determined by
-[ngkpt](../../input_variables/generated_files/varbas.html#ngkpt)) is much too
-low. Electron-phonon calculations require a very precise determination of the
-Fermi surface of the metal. This implies a very dense k-point mesh, and the
-convergence of the grid must be checked. In our case, for Al, we will use a
-(non-shifted) 4x4x4 k-point grid, but a converged calculation needs more than
-16x16x16 points. This will be re-considered in section 5. The q-point grid
-will be 2x2x2. It must be a sub-grid of the full k-point grid, and must
-contain the Γ point.
+[[ngkpt]]) is much too low. Electron-phonon calculations require a very
+precise determination of the Fermi surface of the metal. This implies a very
+dense k-point mesh, and the convergence of the grid must be checked. In our
+case, for Al, we will use a (non-shifted) 4x4x4 k-point grid, but a converged
+calculation needs more than 16x16x16 points. This will be re-considered in
+section 5. The q-point grid will be 2x2x2. It must be a sub-grid of the full
+k-point grid, and must contain the Γ point.
 
 The value of [[acell]] is fixed to a rounded value from experiment. It, too,
 should be converged to get physical results (see [ Tutorial
@@ -159,14 +153,11 @@ electron-phonon interaction, which we will extract and use in the following.
 Besides the _GKK files there are the _DDB files for each perturbation which
 contain the 2DTE for the different phonons wavevectors q.
 
-* * *
+
+
+## 2 Merging of the 2DTE _DDB files using MRGDDB
 
   
-
-### **2\. Merging of the 2DTE _DDB files using MRGDDB.**
-
-###  
-
 You can copy the following content to a file teph_2.in within your working
 directory:
 
@@ -195,15 +186,11 @@ files to be merged and their names.
 
 It runs in a few seconds.
 
-* * *
+
+
+## 3 Extraction and merging of the electron-phonon matrix elements using MRGGKK
 
   
-
-### **3\. Extraction and merging of the electron-phonon matrix elements using
-MRGGKK.**
-
-###  
-
 A merge similar to that in the last section must be carried out for the
 electron-phonon matrix elements. This is done using the MRGGKK utility, and
 its input file is ~abinit/tests/tutorespfn/Input/teph_3.in, shown below
@@ -234,14 +221,11 @@ MRGGKK will run on this example in a few seconds. In more general cases, the
 runtime will depend on the size of the system, and for a large number of bands
 or k-points can extend up to 20 minutes or more.
 
-* * *
+
+
+## 4 Basic ANADDB calculation of electron-phonon quantities
 
   
-
-### **4\. Basic ANADDB calculation of electron-phonon quantities.**
-
-###  
-
 The general theory of electron-phonon coupling and Eliashberg
 superconductivity is reviewed in _Theory of Superconducting Tc, P.B. Allen and
 B. Mitrovic in Sol. State Phys. **37** (1982) ed. Ehrenreich, Seitz, and
@@ -278,19 +262,16 @@ The new variables are at the head of the file:
     # Coulomb pseudopotential parameter
     mustar 0.136
 
-[ elphflag](../../users/generated_files/help_anaddb.html#elphflag) is a flag
-to turn on the calculation of the electron-phonon quantities. The first
-quantities which will be calculated are the phonon linewidths along a path in
-reciprocal space (exactly like the band structure in [Lesson
-3.5](lesson_base3.html#35)). The path is specified by the variable
-[qpath](../../users/generated_files/help_anaddb.html#qpath) giving the apexes
-of the path in reciprocal space, which are usually special points of high
-symmetry. The number of points is given by
-[nqpath](../../users/generated_files/help_anaddb.html#nqpath). Note that qpath
-can be used in normal phonon band structure calculations as well, provided
-that [q1phl](../../users/generated_files/help_anaddb.html#qpath) is omitted
-from the input file (the latter overrides qpath). The phonon linewidths are
-printed to a file suffixed _LWD.
+[[anaddb:elphflag]] is a flag to turn on the calculation of the electron-
+phonon quantities. The first quantities which will be calculated are the
+phonon linewidths along a path in reciprocal space (exactly like the band
+structure in [Lesson 3.5](lesson_base3.html#35)). The path is specified by the
+variable [[anaddb:qpath]] giving the apexes of the path in reciprocal space,
+which are usually special points of high symmetry. The number of points is
+given by [[anaddb:nqpath]]. Note that qpath can be used in normal phonon band
+structure calculations as well, provided that [[anaddb:qph1l]] is omitted from
+the input file (the latter overrides qpath). The phonon linewidths are printed
+to a file suffixed _LWD.
 
 The phonon linewidths are proportional to the electron phonon coupling, and
 still depend on the phonon wavevector q. The other electron-phonon
@@ -308,9 +289,8 @@ formula (_Phys. Rev. **167** 331-344 (1968)_) as modified by Allen and Dynes
 (_Phys. Rev. B **12** 905 (1975)_), ANADDB calculates the critical temperature
 for superconductivity. The formula contains an adjustable parameter μ* which
 approximates the effect of Coulomb interactions, and is given by the input
-variable [mustar](../../users/generated_files/help_anaddb.html#mustar). For Al
-with the k-point grid given and a value of μ=0.136 the ANADDB output file
-shows the following values
+variable [[anaddb:mustar]]. For Al with the k-point grid given and a value of
+μ=0.136 the ANADDB output file shows the following values
 
     
     
@@ -330,35 +310,29 @@ and the logarithmic average frequency is too low, but not nearly enough to
 compensate λ. Aluminum is a good case in which things can be improved, easily
 because its Fermi surface is isotropic and the coupling is weak.
 
-* * *
+
+
+## 5 Convergence tests of the integration techniques
 
   
-
-### **5\. Convergence tests of the integration techniques.**
-
-###  
-
 In section 4, we used the default method for integration on the Fermi surface,
 which employs a smearing of the DOS and attributes Gaussian weights to each
 k-point as a function of its distance from the Fermi surface. Another
 efficient method of integration in k-space is the tetrahedron method, which is
-also implemented in ANADDB, and can be used by setting
-[telphint](../../users/generated_files/help_anaddb.html#telphint) = 0. In this
-case the k-point grid must be specified explicitly in the input, repeating the
-variable [kptrlatt](../../users/generated_files/help_anaddb.html#kptrlatt)
-from the ABINIT output, so that ANADDB can re-construct the different
-tetrahedra which fill the reciprocal unit cell. In the Gaussian case, the
-width of the smearing can be controlled using the input variable
-[elphsmear](../../users/generated_files/help_anaddb.html#elphsmear).
+also implemented in ANADDB, and can be used by setting [[anaddb:telphint]] =
+0. In this case the k-point grid must be specified explicitly in the input,
+repeating the variable [[anaddb:kptrlatt]] from the ABINIT output, so that
+ANADDB can re-construct the different tetrahedra which fill the reciprocal
+unit cell. In the Gaussian case, the width of the smearing can be controlled
+using the input variable [[anaddb:elphsmear]].
 
 To test our calculations, they should be re-done with a denser k-point grid
 and a denser q-point grid, until the results (α²F or λ) are converged. The
-value of [elphsmear](../../users/generated_files/help_anaddb.html#elphsmear)
-should also be checked, to make sure that it does not affect results.
-Normally, the limit for a very small
-[elphsmear](../../users/generated_files/help_anaddb.html#elphsmear) and a very
-dense k-point grid is the same as the value obtained with the tetrahedron
-method (which usually converges with a sparser k-point grid).
+value of [[anaddb:elphsmear]] should also be checked, to make sure that it
+does not affect results. Normally, the limit for a very small
+[[anaddb:elphsmear]] and a very dense k-point grid is the same as the value
+obtained with the tetrahedron method (which usually converges with a sparser
+k-point grid).
 
 Edit input file ~abinit/tests/tutorespfn/Input/teph_5.in and you will see the
 main difference with teph_4.in is the choice of the tetrahedron integration
@@ -366,14 +340,11 @@ method. If you are patient, save the output _LWD and _A2F files and run the
 full lesson again with a denser k-point grid (say, 6x6x6) and you will be able
 to observe the differences in convergence.
 
-* * *
+
+
+## 6 Transport quantities within Boltzmann theory
 
   
-
-### **6\. Transport quantities within Boltzmann theory.**
-
-###  
-
 The electron-phonon interaction is also responsible for the resistivity of
 normal metals and related phenomena. Even in a perfect crystal, interaction
 with phonons will limit electron life times (and vice versa). This can be
@@ -468,5 +439,6 @@ estimate of the numerical error.
 
   
   
+
 
 

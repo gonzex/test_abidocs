@@ -17,7 +17,7 @@ paw input variables to be used in the input file for the abinit executable.
 *Default value:* 2.0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v4:  [[tests/v4/Input/t17.in]]
 
 
@@ -52,7 +52,7 @@ required level of accuracy.
 *Default value:* *-10.0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[usedmatpu]]!=0  
 
-??? note "Test list (Moderately used, [13/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [13/1132] in all tests, [2/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - tutorial:  [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
     - v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t37.in]]
@@ -139,7 +139,7 @@ one is ignored by the code.
 *Default value:* 2  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (Moderately used, [36/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [36/1132] in all tests, [0/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -181,7 +181,7 @@ correlated subspace is a normalized atomic eigenfunction.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[nspden]] != 4  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t19.in]]
 
 
@@ -210,7 +210,7 @@ Relevant values are:
 *Default value:* ['0.625 for d electron', '0.6681 for f electron']  
 *Only relevant if:* [[usepaw]]==1 and ([[usepawu]]==1 or [[usedmft]]==1)  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t99.in]]
     - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]]
     - v8:  [[tests/v8/Input/t01.in]]
@@ -237,7 +237,7 @@ interaction.
 *Default value:* 0.4943  
 *Only relevant if:* ([[usepawu]]==1 or [[usedmft]]==1) and [[lpawu]]=3  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t21.in]]
 
 
@@ -261,7 +261,7 @@ dependent screened coulomb interaction.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v4:  [[tests/v4/Input/t17.in]]
 
 
@@ -289,7 +289,7 @@ conserving.
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (Moderately used, [37/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [37/1132] in all tests, [3/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -321,7 +321,7 @@ In the case where [[lpawu]] =-1, the value is not used.
 *Default value:* -1  
 *Only relevant if:* [[useexexch]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t18.in]]
 
 
@@ -345,7 +345,7 @@ are allowed) on which to apply the exact exchange correction.
 *Default value:* *-1  
 *Only relevant if:* [[usepawu]]==1 or [[usepawu]]== 2  
 
-??? note "Test list (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -379,7 +379,7 @@ are allowed)  on which to apply the LDA+U correction.
 *Dimensions:* scalar  
 *Default value:* 3001  
 
-??? note "Test list (Rarely used, [6/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/1132] in all tests, [0/135] in tutorials.)"
     - v4:  [[tests/v4/Input/t17.in]]
     - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
 
@@ -405,7 +405,7 @@ the latter ... See also [[mqgrid]]
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
     - mpiio:  [[tests/mpiio/Input/t22.in]], [[tests/mpiio/Input/t24.in]], [[tests/mpiio/Input/t25.in]], [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
     - paral:  [[tests/paral/Input/t22.in]], [[tests/paral/Input/t24.in]], [[tests/paral/Input/t25.in]], [[tests/paral/Input/t26.in]], [[tests/paral/Input/t27.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t30.in]]
 
@@ -433,7 +433,7 @@ used for PAW calculations.
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t17.in]]
     - v7:  [[tests/v7/Input/t32.in]]
 
@@ -474,7 +474,7 @@ In order to save CPU time, when molecular dynamics is selected
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -501,7 +501,7 @@ longer assumed.
 *Comment:* pawecutdg MUST be specified for PAW calculations.  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [158/1132] in all tests, [23/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [158/1132] in all tests, [23/135] in tutorials.)"
     - atompaw:  [[tests/atompaw/Input/t02.in]], [[tests/atompaw/Input/t04.in]]
     - bigdft:  [[tests/bigdft/Input/t23.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
@@ -560,7 +560,7 @@ in the log file.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1   
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t20.in]]
     - v7:  [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
 
@@ -597,7 +597,7 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -629,7 +629,7 @@ charge inside spheres", a quantity written in the log file.
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -661,7 +661,7 @@ numerical accuracy of the results.
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [15/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [15/1132] in all tests, [0/135] in tutorials.)"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
     - paral:  [[tests/paral/Input/t27.in]]
@@ -708,7 +708,7 @@ In ** wavelet ** calculations [[usewvl]]=1:
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -739,7 +739,7 @@ validity of this approximation before use.
 *Default value:* 13  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -764,7 +764,7 @@ spheres. This discretization is completely defined by [[pawnphi]] and
 *Default value:* 12  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -789,7 +789,7 @@ spheres. This discretization is completely defined by [[pawntheta]] and
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -819,7 +819,7 @@ thus the first iteration is more cpu intensive)
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
     - v4:  [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]]
@@ -859,7 +859,7 @@ parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - v67mbpt:  [[tests/v67mbpt/Input/t29.in]]
     - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
 
@@ -892,7 +892,7 @@ expression proposed by Shishkin and Kresse in PRB 74. 035101
 *Default value:* 5.0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t41.in]]
     - v6:  [[tests/v6/Input/t89.in]]
     - v7:  [[tests/v7/Input/t08.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]]
@@ -932,7 +932,7 @@ than [[pawovlp]] %
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -954,7 +954,7 @@ than [[pawovlp]] %
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[prtdos]]==3  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [1/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [1/135] in tutorials.)"
     - tutorial:  [[tests/tutorial/Input/tpaw1_4.in]]
     - v5:  [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]]
     - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
@@ -999,7 +999,7 @@ radius.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [24/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [24/1132] in all tests, [0/135] in tutorials.)"
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
     - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t66.in]]
@@ -1040,7 +1040,7 @@ atoms are printed.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - etsf_io:  [[tests/etsf_io/Input/t09.in]]
 
 
@@ -1079,7 +1079,7 @@ be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [1/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [1/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]]
     - mpiio:  [[tests/mpiio/Input/t28.in]]
     - paral:  [[tests/paral/Input/t28.in]]
@@ -1130,7 +1130,7 @@ An artificial scaling of the spin-orbit can be introduced thanks to the
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]=1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -1170,7 +1170,7 @@ Y_lm(r) are real spherical harmonics
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[optdriver]]==0   
 
-??? note "Test list (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)"
 
 
 
@@ -1207,7 +1207,7 @@ computed.
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t06.in]]
 
 
@@ -1241,7 +1241,7 @@ For the time being, only activated for RF calculations.
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t22.in]]
 
 
@@ -1269,7 +1269,7 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1, [[quadmom]]  
 
-??? note "Test list (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)"
     - libxc:  [[tests/libxc/Input/t10.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
     - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
@@ -1297,7 +1297,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)"
     - libxc:  [[tests/libxc/Input/t10.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
     - v5:  [[tests/v5/Input/t34.in]], [[tests/v5/Input/t36.in]]
@@ -1322,7 +1322,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"
     - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
     - v5:  [[tests/v5/Input/t09.in]]
 
@@ -1346,7 +1346,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=3   
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t35.in]]
 
 
@@ -1371,7 +1371,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=1   
 
-??? note "Test list (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/1132] in all tests, [0/135] in tutorials.)"
     - libxc:  [[tests/libxc/Input/t10.in]]
     - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t35.in]]
     - v6:  [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
@@ -1396,7 +1396,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 1.0  
 *Only relevant if:* [[usepaw]]==1 and [[pawspnorb]]>= 1   
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t17.in]]
 
 
@@ -1423,7 +1423,7 @@ physical situation.
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (Moderately used, [37/1132] in all tests, [3/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [37/1132] in all tests, [3/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -1483,7 +1483,7 @@ eV, one has to define :
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (Moderately used, [13/1132] in all tests, [2/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [13/1132] in all tests, [2/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - tutorial:  [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]]
     - v5:  [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t37.in]]
@@ -1525,7 +1525,7 @@ step
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v5:  [[tests/v5/Input/t18.in]]
 
 
@@ -1550,7 +1550,7 @@ the ratio of exact exchange, see also [[exchmix]].
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [44/1132] in all tests, [5/135] in tutorials.)"
     - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in]]
     - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
@@ -1622,7 +1622,7 @@ Suggested acknowledgment:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)"
     - v7:  [[tests/v7/Input/t26.in]]
 
 
@@ -1647,7 +1647,7 @@ Suggested acknowledgment:
 *Default value:* -1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Moderately used, [12/1132] in all tests, [0/135] in tutorials.)"
     - paral:  [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
     - v5:  [[tests/v5/Input/t06.in]]
     - v7:  [[tests/v7/Input/t32.in]], [[tests/v7/Input/t60.in]], [[tests/v7/Input/t61.in]], [[tests/v7/Input/t62.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]]

@@ -1,3 +1,11 @@
+---
+authors: VOlevano, XG
+---
+
+# First lesson on GW  
+
+## The quasi-particle band structure of Silicon, in the GW approximation.  
+
 This lesson aims at showing how to calculate self-energy corrections to the
 DFT Kohn-Sham eigenvalues in the GW approximation.
 
@@ -17,13 +25,8 @@ in Solid State Physics 54, 1-218 (2000),
 also available at [
 http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2](http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2)
 
-It is suggested to
-[acknowledge](../../bibliography/generated_files/acknowledgments.html) the
-efforts of developers of the GW part of ABINIT, by citing  
-X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R.
-Caracas, F. Jollet, M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen,
-J.-Y. Raty, V. Olevano, F. Bruneval, L. Reining, R. Godby, G. Onida, D.R.
-Hamann, and D.C. Allan. Zeit. Kristallogr. 220, 558-562 (2005).  
+It is suggested to [[bib:acknow#b|acknowledge]] the efforts of developers of
+the GW part of ABINIT, by citing the [[Gonze2005|2005 ABINIT publication]].
 
 The user should be familiarized with the four basic lessons of ABINIT, see the
 [tutorial home page](lesson_welcome.html).
@@ -33,24 +36,10 @@ GW](lesson_gw2.html).
 
 This lesson should take about 2 hours.
 
-  * 1. General example of well converged GW calculation. 
-  * 2. Calculation of the WFK and of the screening (SCR file). 
-  * 3. Convergence on the number of planewaves in the wavefunctions to calculate the Self-Energy. 
-  * 4. Convergence on the number of planewaves to calculate Σx. 
-  * 5. Convergence on the number of bands to calculate Σc. 
-  * 6. Convergence on the number of planewaves in the wavefunctions to calculate ε-1. 
-  * 7. Convergence on the number of bands to calculate ε-1. 
-  * 8. Convergence on the dimension of the ε-1 matrix. 
-  * 9. Calculation of the GW corrections for the band gap in Γ. 
-  * 10. Advanced features: calculations without plasmon-pole models, and self-consistency. 
 
-* * *
+## 1 General example of well converged GW calculation
 
-####
-
-### ** 1\. Computation of the Silicon band gap at Γ, using a GW calculation.
-**
-
+  
 _Before beginning, you might consider to work in a different subdirectory as
 for the other lessons. Why not "Work_gw1" ?_
 
@@ -402,12 +391,12 @@ is much larger than for state 4. On the whole, the difference between Kohn-
 Sham and GW energies is not very large, but nevertheless, it is quite
 important when compared with the size of the gap.
 
-* * *
 
-###
 
-**2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening (SCR file). **
+## 2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening
+(SCR file)
 
+  
 In the following sections, we will perform different convergence studies. In
 order to keep the CPU time at a reasonable level, we will use fake WFK and SCR
 data. Moreover we will only consider the correction at the Γ point only. In
@@ -434,9 +423,7 @@ tgw1o_DS3_SCR to tgw1o_DS1_SCR.
 The next sections are intended to show you how to find the converged
 parameters for a GW calculation. In principle, the following parameters might
 be used to decrease the CPU time and/or the memory requirements:
-[optdriver](../../input_variables/generated_files/vargs.html#optdriver)=3
-[[ecutwfn]], [[ecuteps]], [[nband]]. and for
-[optdriver](../../input_variables/generated_files/vargs.html#optdriver)=4,
+[[optdriver]]=3 [[ecutwfn]], [[ecuteps]], [[nband]]. and for [[optdriver]]=4,
 [[ecutwfn]], [[ecutsigx]], [[nband]].
 
 Before 2008, the advice was indeed to check independently what was the best
@@ -444,26 +431,23 @@ value for each of these. However, with the evolution of memory/disk space, as
 well as the advent of new techniques to diminish the number of bands that is
 needed (see e.g. F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008), and
 the input variable [[gwcomp]]), standard calculations nowadays only need the
-tuning of [[nband]] [[ecuteps]], simultaneously for
-[optdriver](../../input_variables/generated_files/vargs.html#optdriver)=3 and
-=4. Indeed, [[ecutwfn]] and can have the default value of [[ecut]], while
+tuning of [[nband]] [[ecuteps]], simultaneously for [[optdriver]]=3 and =4.
+Indeed, [[ecutwfn]] and can have the default value of [[ecut]], while
 [[ecutsigx]] can have the default value of 4*[[ecut]] for norm-conserving
 pseudopotentials, or [[pawecutdg]] for PAW calculations. Actually, the present
 tutorial needs to be updated to account for the current practice.
 
 We begin by the convergence study on the three parameters needed in the self-
-energy calculation
-([optdriver](../../input_variables/generated_files/vargs.html#optdriver)=4):
-[[ecutwfn]], [[ecutsigx]], [[nband]]. This is because for these, we will not
-need a double dataset loop to check this convergence, and we will rely on the
-previously determined SCR file.
+energy calculation ([[optdriver]]=4): [[ecutwfn]], [[ecutsigx]], [[nband]].
+This is because for these, we will not need a double dataset loop to check
+this convergence, and we will rely on the previously determined SCR file.
 
-* * *
 
-###
 
-**3 Convergence on the number of planewaves in the wavefunctions to calculate the Self-Energy (optional). **
+## 3 Convergence on the number of planewaves in the wavefunctions to calculate the
+Self-Energy (optional)
 
+  
 The convergence study is done in the input file tgw1_3.in. First, we check the
 convergence on the number of planewaves used to describe the wavefunctions, in
 the calculation of the Self-Energy. This will be done by defining five
@@ -532,12 +516,11 @@ Gathering the GW energies for each planewave set, one gets:
 So that [[ecutwfn]]=5.0 ([[npwwfn]]=137) can be considered to lead to
 eigenenergies converged within 0.01 eV.
 
-* * *
 
-###
 
-**4 Convergence on the number of planewaves to calculate Σx (optional). **
+## 4 Convergence on the number of planewaves to calculate Σx (optional)
 
+  
 Second, we check the convergence on the number of planewaves in the
 calculation of Σx. This study in done in tgw1_4.in As mentioned in the
 documentation [[ecutsigx]], safe values exist for [[ecutsigx]], so that if you
@@ -626,12 +609,11 @@ Gathering the GW energies for each planewave set, one gets:
 
 So that ecutsigx=6.0 (npwsigx=169) can be considered converged within 0.01 eV.
 
-* * *
 
-###
 
-**5 Convergence on the number of bands to calculate Σc (important). **
+## 5 Convergence on the number of bands to calculate Σc (important)
 
+  
 At last, as concerns the computation of the self-energy, we check the
 convergence on the number of bands in the calculation of Σc. This convergence
 study is rather important, usually, BUT it can be done at the same time as the
@@ -700,12 +682,12 @@ So that nband=100 can be considered converged within 0.01 eV.
 At this stage, we know that for the self-energy computation, we need
 [[ecutwfn]]=5.0 [[ecutsigx]]=6.0, [[nband]]=100 .
 
-* * *
 
-###
 
-**6 Convergence on the number of planewaves in the wavefunctions to calculate the screening (ε-1) (optional). **
+## 6 Convergence on the number of planewaves in the wavefunctions to calculate the
+screening (ε-1) (optional)
 
+  
 Now, we come back to the calculation of the screening. Adequate convergence
 studies will couple the change of parameters for [[optdriver]]=3 with a
 computation of the GW energy changes. One cannot rely on the convergence of
@@ -813,12 +795,12 @@ planewave set, one gets:
 So that [[ecutwfn]]=4.0 ([[npwwfn]]=113) can be considered to lead to
 eigenenergies converged within 0.01 eV.
 
-* * *
 
-###
 
-**7 Convergence on the number of bands to calculate the screening (important). **
+## 7 Convergence on the number of bands to calculate the screening (ε-1)
+(important)
 
+  
 This convergence study is rather important. It can be done at the same time as
 the convergence study for the number of bands for the self-energy. Note that
 the number of bands used to calculate both the screening and the self-energy
@@ -899,12 +881,11 @@ of bands, one gets:
 So that the computation using 100 bands can be considered converged within
 0.01 eV.
 
-* * *
 
-###
 
-**8 Convergence on the dimension of the ε-1 matrix (important). **
+## 8 Convergence on the dimension of the screening ε-1 matrix (important)
 
+  
 Third, we check the convergence on the number of plane waves in the
 calculation of the screening. This will be done by defining six datasets, with
 increasing [[ecuteps]]:
@@ -990,12 +971,11 @@ increase very rapidly from one possible grid to the next denser one. This is
 why we will leave this out of the present tutorial, and consider that we
 already know a sufficient k-point grid, for the last calculation.
 
-* * *
 
-###
 
-**9 Calculation of the GW corrections for the band gap in Γ. **
+## 9 Calculation of the GW corrections for the band gap in Γ
 
+  
 Now we try to perform a GW calculation for a real problem: the calculation of
 the GW corrections for the direct band gap of bulk Silicon in Γ.
 
@@ -1128,10 +1108,11 @@ the Kohn-Sham band structure at any point, by using a GW correction for the
 k-points where it has not been calculated explicitly, using a fit of the GW
 correction at a sparse set of points.
 
-* * *
 
-### **10 Advanced features in the GW code **
 
+## Advanced features in the GW code
+
+   
 The user might switch to the [second GW tutorial](lesson_gw2.html) before
 coming back to the present section.
 
@@ -1262,5 +1243,4 @@ The columns are
   
 
   * **E(N)_diago**: QP energy as obtained by the full diagonalization 
-
 
