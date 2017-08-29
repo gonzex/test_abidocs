@@ -777,7 +777,7 @@ specified with [[gw_freqsp]].
 *Mentioned in topic(s):* [[topic:FrequencyMeshMBPT]]  
 *Variable type:* real  
 *Dimensions:* ([[gw_customnfreqsp]])  
-*Default value:* [1 .. [[gw_customnfreqsp]]]  
+*Default value:* [ 1 ... [[gw_customnfreqsp]] ]  
 *Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
 
 ??? note "Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)"

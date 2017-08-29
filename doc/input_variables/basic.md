@@ -1198,7 +1198,7 @@ J. Chem. Phys. 125, 224106 (2006) ]
 *Mentioned in topic(s):* [[topic:multidtset]]  
 *Variable type:* integer  
 *Dimensions:* ([[ndtset]])  
-*Default value:* [1 .. [[ndtset]]]  
+*Default value:* [ 1 ... [[ndtset]] ]  
 
 ??? note "Test list (click to open) (Moderately used, [85/1132] in all tests, [11/135] in tutorials.)"
     - libxc:  [[tests/libxc/Input/t02.in]], [[tests/libxc/Input/t06.in]], [[tests/libxc/Input/t07.in]], [[tests/libxc/Input/t18.in]], [[tests/libxc/Input/t20.in]], [[tests/libxc/Input/t21.in]]

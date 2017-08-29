@@ -409,12 +409,14 @@ class Range(yaml.YAMLObject):
         return str(self)
 
     def __repr__(self):
+        # Add whitespace after `[` or before `]` to avoid [[[ and ]]] pattersn
+        # that enter into conflict with wikiling syntax [[...]]
         if self.start is not None and self.stop is not None:
-            return "[" + str(self.start) + " .. " + str(self.stop) + "]"
+            return "[ " + str(self.start) + " ... " + str(self.stop) + " ]"
         if self.start is not None:
-            return "[" + str(self.start) + "; ->"
+            return "[ " + str(self.start) + "; ->"
         if self.stop is not None:
-            return "<-;" + str(self.stop) + "]"
+            return "<-;" + str(self.stop) + " ]"
         else:
             return None
 
@@ -501,24 +503,6 @@ class VarDatabase(OrderedDict):
 
 
 class InputVariables(OrderedDict):
-
-    def write_markdown_files(self, workdir, comment=None):
-        # Build markdown page for the different sets.
-        print("Generating markdown files with input variables of code: `%s`..." % vd.codename)
-        for varset in vd.all_varset:
-            var_list = [v for v in vd.values() if v.varset == varset]
-            with io.open(os.path.join(workdir, varset + ".md"), "wt", encoding="utf-8") as fh:
-                if comment: fh.write(comment)
-                fh.write("""\
-# {varset} input variables
-
-This document lists and provides the description of the name (keywords) of the
-{varset} input variables to be used in the input file for the {codename} executable.
-
-""".format(varset=varset, codename=self.codename))
-
-                for var in var_list:
-                    fh.write(var.to_markdown())
 
     def groupby_first_letter(self):
         keys = sorted(self.keys(), key=lambda n: n[0].lower())

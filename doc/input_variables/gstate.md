@@ -859,7 +859,7 @@ this, so a fixed default value has been chosen.
 *Mentioned in topic(s):* [[topic:printing]], [[topic:ElecBandStructure]], [[topic:ElecDOS]]  
 *Variable type:* integer  
 *Dimensions:* ([[natsph]])  
-*Default value:* [1 .. [[natsph]]]  
+*Default value:* [ 1 ... [[natsph]] ]  
 *Only relevant if:* [[prtdos]] == 3 or [[pawfatbnd]] in [1,2]  
 
 ??? note "Test list (click to open) (Rarely used, [9/1132] in all tests, [2/135] in tutorials.)"

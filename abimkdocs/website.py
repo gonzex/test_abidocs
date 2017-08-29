@@ -325,11 +325,9 @@ Change the input yaml files or the python code
                 fh.write(vd.get_vartabs_html())
                 fh.write(2*"\n" + "* * *\n")
 
+	# Build markdown page for the different sets.
         for code, vd in self.variables_code.items():
-            #vd.write_markdown_files(workdir, comment=self.do_not_edit_comment)
-
-	    # Build markdown page for the different sets.
-            print("Generating markdown files with input variables of code: `%s`..." % vd.codename)
+            cprint("Generating markdown files with input variables of code: `%s`..." % vd.codename, "green")
             for varset in vd.all_varset:
                 var_list = [v for v in vd.values() if v.varset == varset]
                 with self.new_mdfile(os.path.join(workdir, varset + ".md")) as fh:
@@ -781,7 +779,8 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 elif name in self.variables_code.characteristics:
                     # TODO
                     #print("WARNING: got characteristics", name)
-                    url, text = "FAKE_URL", name
+                    #url, text = "FAKE_URL", name
+                    url, text = "FAKE_CHARACTERISTIC", name
 
                 elif name in self.variables_code.external_params:
                     # handle [[AUTO_FROM_PSP]] by building popover instead of link
@@ -1051,8 +1050,8 @@ class Page(object):
 
 class WikiLink(etree.Element):
 
-    #def __init__(self, tag, attrib={}, **extra)
-    #    super(Wikilink, self).__init__(tag, attrib={}, **extra)
+    #def __init__(self, attrib={}, **extra)
+    #    super(Wikilink, self).__init__("a", attrib={}, **extra)
     #    self.abidata = {
     #        token=None,
     #        namespace=None
@@ -1090,9 +1089,9 @@ class MarkdownPage(Page):
 
             link_class = link.get("class", "")
             if "citation-link" in link_class:
-                self.citations.add(token)  # Should be name
+                self.citations.add(token)  # TODO Should be name
             elif "topic-link" in link_class:
-                self.topics.add(token) # Should be name
+                self.topics.add(token) # TODO: Should be name
 
         # Add rpath to meta (useful to give the origin of errors in markdown extensions)
         lines = string.split("\n")
