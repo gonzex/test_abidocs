@@ -482,7 +482,7 @@ This page gives hints on how to {howto} with the ABINIT package.
                     if test.topics:
                         fh.write("Topic(s): %s  \n" % ", ".join("[[topic:%s]]" % t for t in test.topics))
                     if test.authors and "Unknown" not in test.authors:
-                        fh.write("Author(s): %s  \n" % ", ".join(a for a in test.authors))
+                        fh.write("Author(s): %s  \n" % ", ".join(a for a in sorted(test.authors)))
                     fh.write("\n\n* * *\n\n")
 
         # All markdown files have been generated.
@@ -1081,16 +1081,21 @@ class MarkdownPage(Page):
         lines = string.split("\n")
         if len(lines) > 1 and lines[0].startswith("---"):
             for i, l in enumerate(lines[1:]):
-                if l.startswith("---"): break
+                if l.startswith("---"):
+                    i += 1
+                    break
             else:
                 raise RuntimeError("Cannot find second `---` marker in %s" % path)
-            d = yaml.loads("\n".join(lines[1:i]))
+            d = yaml.load("\n".join(lines[1:i]))
+            #print(self.path, "\n".join(lines[1:i]))
             rpath = os.path.relpath(path, website.root)
             if "rpath" not in d or d["rpath"] != rpath:
                 d["rpath"] = rpath
-                d = OrderedDict([(k, d[k]) for k in sorted(d.keys()))
+                d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
                 del lines[1:i]
-                lines.insert(1, yaml.dumps(d))
+                lines.insert(1, yaml.dump(d))
+                with io.open(self.path, "wt", encoding="utf-8") as fh:
+                    fh.writelines(lines)
 
         #print(self)
 

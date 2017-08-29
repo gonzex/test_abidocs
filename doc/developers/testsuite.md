@@ -1044,7 +1044,7 @@ Diamond: hybrid functional calculation HSE with the GW code. The Fock exchange m
 
 Executable: abinit   
 Keywords(s): GW, abinit   
-Author(s): F. Bruneval, W. Chen  
+Author(s): W. Chen, F. Bruneval  
 
 
 * * *
@@ -1229,7 +1229,7 @@ This test check the parallelization over atomic sites both for the ground state 
 
 Executable: abinit   
 Keywords(s): DDK, DFPT, PAW, abinit   
-Author(s): M. Torrent, M. Delaveau  
+Author(s): M. Delaveau, M. Torrent  
 
 
 * * *
@@ -1304,7 +1304,7 @@ LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen, 
 
 Executable: abinit   
 Keywords(s): DFPT, NC, abinit   
-Author(s): M. Veithen, D.R. Hamann  
+Author(s): D.R. Hamann, M. Veithen  
 
 
 * * *
@@ -1645,7 +1645,7 @@ Test CT-QMC parallelism
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, abinit   
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -1724,7 +1724,7 @@ Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over 
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, PAW, TRIQS, abinit   
-Author(s): V. Planes, B. Amadon  
+Author(s): B. Amadon, V. Planes  
 
 
 * * *
@@ -7533,7 +7533,7 @@ Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on th
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:Recursion]]  
-Author(s): JF. Danel, L. Kazandjian  
+Author(s): L. Kazandjian, JF. Danel  
 
 
 * * *
@@ -7659,7 +7659,7 @@ Test to prepare a conductivity calculation (test v5#t10) Ground state calculatio
 
 Executable: abinit   
 Keywords(s): abinit   
-Author(s): M. Torrent, S. Mazevet  
+Author(s): S. Mazevet, M. Torrent  
 
 
 * * *
@@ -7670,7 +7670,7 @@ Tests a PAW conductivity calculation. It tests the following parts of the code: 
 
 Executable: conducti   
 Keywords(s): conducti   
-Author(s): M. Torrent, S. Mazevet  
+Author(s): S. Mazevet, M. Torrent  
 
 
 * * *
@@ -8121,7 +8121,7 @@ Bismuth atom,  isolated,  in a supercell. Compares different spin treatments : -
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:spinpolarisation]]  
-Author(s): A. Lherbier, L.E. Diaz  
+Author(s): L.E. Diaz, A. Lherbier  
 
 
 * * *
@@ -10126,7 +10126,7 @@ Random stopping power within RPA and TD-LDA
 Executable: abinit   
 Keywords(s): GW, abinit   
 Topic(s): [[topic:RandStopPow]]  
-Author(s): F. Bruneval, A. Shukri  
+Author(s): A. Shukri, F. Bruneval  
 
 
 * * *
@@ -10174,7 +10174,7 @@ For SrVO3,  compute density,  WFC and KSS files.
 Executable: abinit   
 Keywords(s): DMFT, FAILS_IFMPI, GW, abinit, cRPA   
 Topic(s): [[topic:CRPA]]  
-Author(s): T. Applencourt, B. Amadon  
+Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
@@ -10186,7 +10186,7 @@ Test the calculation of dielectric function in constrained RPA for SrVO3. Uses K
 Executable: abinit   
 Keywords(s): DMFT, GW, abinit, cRPA   
 Topic(s): [[topic:CRPA]]  
-Author(s): T. Applencourt, B. Amadon  
+Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
@@ -10198,7 +10198,7 @@ Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS an
 Executable: abinit   
 Keywords(s): DMFT, FAILS_IFMPI, GW, abinit, cRPA   
 Topic(s): [[topic:CRPA]]  
-Author(s): T. Applencourt, B. Amadon  
+Author(s): B. Amadon, T. Applencourt  
 
 
 * * *
@@ -10222,7 +10222,7 @@ Test CT-QMC within DMFT for VSrO3 NSCF over density
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, FAILS_IFMPI, abinit   
 Topic(s): [[topic:DMFT]]  
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -10234,7 +10234,7 @@ Test CT-QMC options only. Not realistic
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, FAILS_IFMPI, abinit   
 Topic(s): [[topic:DMFT]]  
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -10245,7 +10245,7 @@ Test CT-QMC options only. Not realistic
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, FAILS_IFMPI, abinit   
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -10256,7 +10256,7 @@ Test entropy calculation for SrVO3 within DMFT
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, FAILS_IFMPI, abinit   
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -10267,7 +10267,7 @@ Test restart of entropy calculation for SrVO3 within DMFT
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, FAILS_IFMPI, abinit   
-Author(s): J. Bieder, B. Amadon  
+Author(s): B. Amadon, J. Bieder  
 
 
 * * *
@@ -10593,7 +10593,7 @@ Calculation of Projected Wannier functions and compute band structure in the d o
 Executable: abinit   
 Keywords(s): PAW, Projected_Wannier, abinit   
 Topic(s): [[topic:Wannier]], [[topic:ElecBandStructure]]  
-Author(s): A. Gerossier, B. Amadon  
+Author(s): B. Amadon, A. Gerossier  
 
 
 * * *
@@ -10865,7 +10865,7 @@ Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over 
 
 Executable: abinit   
 Keywords(s): CTQMC, DMFT, TRIQS, abinit   
-Author(s): V. Planes, B. Amadon  
+Author(s): B. Amadon, V. Planes  
 
 
 * * *
@@ -11239,7 +11239,7 @@ Argon FCC. Test the approach of Silvestrelli to access van der Waals interaction
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:vdw]], [[topic:Wannier]]  
-Author(s): Y. Pouillon, C. Espejo  
+Author(s): C. Espejo, Y. Pouillon  
 
 
 * * *
@@ -11251,7 +11251,7 @@ Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waa
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, abinit   
 Topic(s): [[topic:vdw]], [[topic:Wannier]]  
-Author(s): Y. Pouillon, C. Espejo  
+Author(s): C. Espejo, Y. Pouillon  
 
 
 * * *
@@ -11263,7 +11263,7 @@ Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, abinit   
 Topic(s): [[topic:vdw]], [[topic:Wannier]]  
-Author(s): Y. Pouillon, C. Espejo  
+Author(s): C. Espejo, Y. Pouillon  
 
 
 * * *
