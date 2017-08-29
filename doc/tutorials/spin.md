@@ -1,5 +1,7 @@
 ---
 authors: GZ, MT
+rpath: tutorials/spin.md
+
 ---
 
 # Lesson about the spin  

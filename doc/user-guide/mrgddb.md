@@ -1,5 +1,7 @@
 ---
 authors: XG, DCA
+rpath: user-guide/mrgddb.md
+
 ---
 
 # the Mrgddb utility  

@@ -1,5 +1,7 @@
 ---
 authors: JWZ, XG
+rpath: tutorials/nuc.md
+
 ---
 
 # Lesson on properties at the nuclei  

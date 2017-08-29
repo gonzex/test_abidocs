@@ -1,5 +1,7 @@
 ---
 authors: VOlevano, XG
+rpath: tutorials/gw1.md
+
 ---
 
 # First lesson on GW  

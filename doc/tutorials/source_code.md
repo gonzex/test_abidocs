@@ -1,5 +1,7 @@
 ---
 authors: YP
+rpath: tutorials/source_code.md
+
 ---
 
 # Developing for ABINIT  

@@ -1,5 +1,7 @@
 ---
 authors: SS, XG
+rpath: tutorials/fold2bloch.md
+
 ---
 
 # Lesson on fold2bloch  

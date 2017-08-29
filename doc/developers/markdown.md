@@ -1,7 +1,9 @@
 ---
 authors: MG, XG
-title: Writing Documentation
 plotly: true
+rpath: developers/markdown.md
+title: Writing Documentation
+
 ---
 
 This page is intended as a quick reference to the Markdown syntax used to write the Abinit documentation.

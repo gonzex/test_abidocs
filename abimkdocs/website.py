@@ -297,6 +297,13 @@ class Website(object):
     #    app = lines.append
     #    return "\n".join(lines)
 
+    def new_mdfile(self, path):
+	rpath = "/" + path
+        fh = io.open(path, "wt", encoding="utf-8")
+	fh.write("---\nrpath=%s\n---\n" % rpath)
+        fh.write(do_not_edit_comment)
+	return fh
+
     def generate_markdown_files(self):
         start = time.time()
 
@@ -1091,11 +1098,11 @@ class MarkdownPage(Page):
             rpath = os.path.relpath(path, website.root)
             if "rpath" not in d or d["rpath"] != rpath:
                 d["rpath"] = rpath
-                d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
+                #d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
                 del lines[1:i]
-                lines.insert(1, yaml.dump(d))
+                lines.insert(1, yaml.dump(d, indent=4, default_flow_style=False).strip())
                 with io.open(self.path, "wt", encoding="utf-8") as fh:
-                    fh.writelines(lines)
+                    fh.write("\n".join(lines))
 
         #print(self)
 

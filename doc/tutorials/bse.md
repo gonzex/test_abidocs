@@ -1,5 +1,7 @@
 ---
 authors: MG, MS
+rpath: tutorials/bse.md
+
 ---
 
 # Lesson on Bethe-Salpeter calculations  

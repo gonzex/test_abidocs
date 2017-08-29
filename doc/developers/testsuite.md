@@ -1044,7 +1044,7 @@ Diamond: hybrid functional calculation HSE with the GW code. The Fock exchange m
 
 Executable: abinit   
 Keywords(s): GW, abinit   
-Author(s): W. Chen, F. Bruneval  
+Author(s): F. Bruneval, W. Chen  
 
 
 * * *
@@ -1055,7 +1055,7 @@ Test of PBE0 in sequential case,  norm conserving,  from LibXC
 
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, HF, PBE0, abinit   
-Author(s): X. Gonze, C. Martins  
+Author(s): C. Martins, X. Gonze  
 
 
 * * *
@@ -1066,7 +1066,7 @@ Test of HSE06 and HSE03 in sequential case,  norm conserving,  from LibXC XG1705
 
 Executable: abinit   
 Keywords(s): FAILS_IFMPI, HF, abinit   
-Author(s): X. Gonze, C. Martins  
+Author(s): C. Martins, X. Gonze  
 
 
 * * *
@@ -7533,7 +7533,7 @@ Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on th
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:Recursion]]  
-Author(s): L. Kazandjian, JF. Danel  
+Author(s): JF. Danel, L. Kazandjian  
 
 
 * * *
@@ -7659,7 +7659,7 @@ Test to prepare a conductivity calculation (test v5#t10) Ground state calculatio
 
 Executable: abinit   
 Keywords(s): abinit   
-Author(s): S. Mazevet, M. Torrent  
+Author(s): M. Torrent, S. Mazevet  
 
 
 * * *
@@ -7670,7 +7670,7 @@ Tests a PAW conductivity calculation. It tests the following parts of the code: 
 
 Executable: conducti   
 Keywords(s): conducti   
-Author(s): S. Mazevet, M. Torrent  
+Author(s): M. Torrent, S. Mazevet  
 
 
 * * *
@@ -7990,7 +7990,7 @@ Preliminary step for test 40: bcc Fe ferromagnetic structure. Relatively low cut
 Executable: abinit   
 Keywords(s): PAW, abinit   
 Topic(s): [[topic:DFT+U]]  
-Author(s): M. Torrent, D.J. Adams  
+Author(s): D.J. Adams, M. Torrent  
 
 
 * * *
@@ -8002,7 +8002,7 @@ Compute U in bcc Fe in 2 atomic supercell.
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:DFT+U]]  
-Author(s): M. Torrent, D.J. Adams  
+Author(s): D.J. Adams, M. Torrent  
 
 
 * * *
@@ -8121,7 +8121,7 @@ Bismuth atom,  isolated,  in a supercell. Compares different spin treatments : -
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:spinpolarisation]]  
-Author(s): L.E. Diaz, A. Lherbier  
+Author(s): A. Lherbier, L.E. Diaz  
 
 
 * * *
@@ -10072,7 +10072,7 @@ Boron,  32 atoms - Thomas-Fermi method (without orbitals) Test the temperature-d
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:Recursion]]  
-Author(s): M. Torrent, JF. Danel  
+Author(s): JF. Danel, M. Torrent  
 
 
 * * *
@@ -10593,7 +10593,7 @@ Calculation of Projected Wannier functions and compute band structure in the d o
 Executable: abinit   
 Keywords(s): PAW, Projected_Wannier, abinit   
 Topic(s): [[topic:Wannier]], [[topic:ElecBandStructure]]  
-Author(s): B. Amadon, A. Gerossier  
+Author(s): A. Gerossier, B. Amadon  
 
 
 * * *

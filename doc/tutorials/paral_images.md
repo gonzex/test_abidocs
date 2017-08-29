@@ -1,5 +1,7 @@
 ---
 authors: MT, GG
+rpath: tutorials/paral_images.md
+
 ---
 
 # Parallelism on images, the string method  

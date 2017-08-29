@@ -1,5 +1,7 @@
 ---
 authors: MG, MS
+rpath: theory/mbt.md
+
 ---
 
 # Many-Body Theory in ABINIT  

@@ -1,5 +1,7 @@
 ---
 authors: MC, SP
+rpath: tutorials/analysis_tools.md
+
 ---
 
 # Lesson on analysis tools  

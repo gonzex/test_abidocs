@@ -1,5 +1,7 @@
 ---
 authors: PCasek, FF, XG
+rpath: user-guide/aim.md
+
 ---
 
 # the AIM utility  

@@ -1,5 +1,7 @@
 ---
 authors: XG, RC
+rpath: tutorials/base3.md
+
 ---
 
 # Third (basic) lesson  

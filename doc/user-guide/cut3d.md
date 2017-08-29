@@ -1,5 +1,7 @@
 ---
 authors: XG, RC, GMR, JFB, MCote
+rpath: user-guide/cut3d.md
+
 ---
 
 # the Cut3D utility  

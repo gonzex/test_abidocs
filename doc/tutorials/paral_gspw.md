@@ -1,5 +1,7 @@
 ---
 authors: FB
+rpath: tutorials/paral_gspw.md
+
 ---
 
 # Parallelism for the ground state  

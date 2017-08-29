@@ -1,5 +1,7 @@
 ---
 authors: SPesant, MCote, XG, BAmadon
+rpath: tutorials/dftu.md
+
 ---
 
 # Lesson on DFT+U  

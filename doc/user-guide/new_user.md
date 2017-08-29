@@ -1,5 +1,7 @@
 ---
 authors: DCA, XG, RC
+rpath: user-guide/new_user.md
+
 ---
 
 # new user help file  

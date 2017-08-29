@@ -1,5 +1,7 @@
 ---
 authors: MVer
+rpath: tutorials/eph.md
+
 ---
 
 # Electron-phonon lesson  
