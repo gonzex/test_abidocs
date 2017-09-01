@@ -2864,9 +2864,9 @@ Change the input yaml files or the python code
 system, are:</p>
 <ul>
 <li>the size of the planewave basis set , see <a class="wikilink topic-link" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../Planewaves">Planewaves topic</a>;</li>
-<li>the size of the wavevector grid sampling, see <a class="wikilink topic-link" data-content="How to set parameters related to the electronic wavevectors (k-points)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../k-points">k-points topic</a>;</li>
-<li>and the parallelism, see <a class="wikilink topic-link" data-content="How to set parameters for a parallel calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../parallelism">parallelism topic</a>.</li>
+augmented waves and pseudopotentials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../Planewaves">Planewaves topic</a>;</li>
+<li>the size of the wavevector grid sampling, see <a class="wikilink topic-link" data-content="How to set parameters related to the electronic wavevectors (k-points)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../k-points">k-points topic</a>;</li>
+<li>and the parallelism, see <a class="wikilink topic-link" data-content="How to set parameters for a parallel calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../parallelism">parallelism topic</a>.</li>
 </ul>
 <p>For the two first factors, there is a trade-off between CPU time and precision
 of the computation, while for the third factor, there is some limit on the
@@ -2880,41 +2880,41 @@ planewave basis set. They might possibly be less accurate as well &hellip;</p>
 also get some speed up by using a real-space representation of density and
 potential on a real space FFT grid that does not allow their fine details to
 be taken into account (actually, filtering such quantities). This is achieved
-by lowering <a class="wikilink codevar-link" href="../../../input_variables/gstate#boxcutmin">boxcutmin</a> below its theoretically needed value of 2.0 .</p>
-<p>The choice of the FFT algorithm implementation, see <a class="wikilink codevar-link" href="../../../input_variables/dev#fftalg">fftalg</a> might also lead
+by lowering <a class="wikilink codevar-link" href="../../input_variables/gstate#boxcutmin">boxcutmin</a> below its theoretically needed value of 2.0 .</p>
+<p>The choice of the FFT algorithm implementation, see <a class="wikilink codevar-link" href="../../input_variables/dev#fftalg">fftalg</a> might also lead
 to significant speed up, on specific machines.</p>
 <p>For specific k-points, time-reversal symmetry can be used to represent the
 wavefunctions with their real part, instead of both their real and complex
 parts. This allows halving the memory needs, as well as the CPU time. See
-<a class="wikilink codevar-link" href="../../../input_variables/dev#istwfk">istwfk</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/dev#istwfk">istwfk</a>.</p>
 <p>Other input variables related to tuning the speed or the memory usage are for
 expert users only.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#boxcutmin">boxcutmin</a>  BOX CUT-off MINimum</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#istwfk">istwfk</a>  Integer for choice of STorage of WaveFunction at each k point</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#boxcutmin">boxcutmin</a>  BOX CUT-off MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#istwfk">istwfk</a>  Integer for choice of STorage of WaveFunction at each k point</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#exchn2n3d">exchn2n3d</a>  EXCHange N2 and N3 Dimensions</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#extrapwf">extrapwf</a>  flag - EXTRAPolation of the Wave-Functions</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#fftcache">fftcache</a>  Fast Fourier Transform CACHE size</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/paw#iboxcut">iboxcut</a>  Integer governing the internal use of BOXCUT - not a very good choice of variable name</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#nbdblock">nbdblock</a>  Number of BanDs in a BLOCK</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#nloc_alg">nloc_alg</a>  Non LOCal ALGorithm</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#nloc_mem">nloc_mem</a>  Non LOCal MEMOry</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#ortalg">ortalg</a>  ORThogonalisation ALGorithm</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#useylm">useylm</a>  USE YLM (the spherical harmonics)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#exchn2n3d">exchn2n3d</a>  EXCHange N2 and N3 Dimensions</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#extrapwf">extrapwf</a>  flag - EXTRAPolation of the Wave-Functions</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#fftcache">fftcache</a>  Fast Fourier Transform CACHE size</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#iboxcut">iboxcut</a>  Integer governing the internal use of BOXCUT - not a very good choice of variable name</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#nbdblock">nbdblock</a>  Number of BanDs in a BLOCK</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#nloc_alg">nloc_alg</a>  Non LOCal ALGorithm</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#nloc_mem">nloc_mem</a>  Non LOCal MEMOry</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#ortalg">ortalg</a>  ORThogonalisation ALGorithm</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#useylm">useylm</a>  USE YLM (the spherical harmonics)</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#fftalg">fftalg</a>  Fast Fourier Transform ALGorithm</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#fftalg">fftalg</a>  Fast Fourier Transform ALGorithm</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="No description available" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v3/Input/t43.in">tests/v3/Input/t43.in</a></li>
+<li><a class="wikilink test-link" data-content="No description available" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t43.in">tests/v3/Input/t43.in</a></li>
 </ul>
                 
                   

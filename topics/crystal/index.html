@@ -2874,71 +2874,71 @@ Change the input yaml files or the python code
 
 <p>This page gives hints on how to to specify a crystal, with atomic positions and symmetries with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>In addition to the <a class="wikilink topic-link" data-content="How to specify the unit cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../UnitCell">Specification of the unit cell</a> and
-<a class="wikilink topic-link" data-content="How to specify the types of atoms that form the system" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../AtomTypes">Atom types</a>, ABINIT must know the number of atoms inside
-the cell, their type, and position. This is described by <a class="wikilink codevar-link" href="../../../input_variables/basic#natom">natom</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#typat">typat</a>
-and one of <a class="wikilink codevar-link" href="../../../input_variables/basic#xred">xred</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#xcart">xcart</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#xangst">xangst</a>.</p>
+<p>In addition to the <a class="wikilink topic-link" data-content="How to specify the unit cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../UnitCell">Specification of the unit cell</a> and
+<a class="wikilink topic-link" data-content="How to specify the types of atoms that form the system" data-placement="right" data-toggle="popover" data-trigger="hover" href="../AtomTypes">Atom types</a>, ABINIT must know the number of atoms inside
+the cell, their type, and position. This is described by <a class="wikilink codevar-link" href="../../input_variables/basic#natom">natom</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a>
+and one of <a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#xangst">xangst</a>.</p>
 <p>ABINIT can automatically detect the Bravais lattice and space group, and
-generate symmetries (e.g. <a class="wikilink codevar-link" href="../../../input_variables/basic#nsym">nsym</a>,<a class="wikilink codevar-link" href="../../../input_variables/basic#symrel">symrel</a>,<a class="wikilink codevar-link" href="../../../input_variables/basic#tnons">tnons</a>), from the primitive
+generate symmetries (e.g. <a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>,<a class="wikilink codevar-link" href="../../input_variables/basic#symrel">symrel</a>,<a class="wikilink codevar-link" href="../../input_variables/basic#tnons">tnons</a>), from the primitive
 cell and the position of atoms (provided they are not too inaccurate, see
-<a class="wikilink codevar-link" href="../../../input_variables/geo#tolsym">tolsym</a>). For this purpose, in the magnetic case, ABINIT will also take
-into account the input atomic spin, through the knowledge of <a class="wikilink codevar-link" href="../../../input_variables/gstate#spinat">spinat</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/geo#tolsym">tolsym</a>). For this purpose, in the magnetic case, ABINIT will also take
+into account the input atomic spin, through the knowledge of <a class="wikilink codevar-link" href="../../input_variables/gstate#spinat">spinat</a>.</p>
 <p>Alternatively, ABINIT can start from the specification of symmetries (either
-from <a class="wikilink codevar-link" href="../../../input_variables/geo#spgroup">spgroup</a> or from the list of symmetries -
-<a class="wikilink codevar-link" href="../../../input_variables/basic#nsym">nsym</a>,<a class="wikilink codevar-link" href="../../../input_variables/basic#symrel">symrel</a>,<a class="wikilink codevar-link" href="../../../input_variables/basic#tnons">tnons</a>) and generate the atomic positions from the
+from <a class="wikilink codevar-link" href="../../input_variables/geo#spgroup">spgroup</a> or from the list of symmetries -
+<a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>,<a class="wikilink codevar-link" href="../../input_variables/basic#symrel">symrel</a>,<a class="wikilink codevar-link" href="../../input_variables/basic#tnons">tnons</a>) and generate the atomic positions from the
 asymmetric (irreducible) part of the primitive cell. This is described in the
 <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
-the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../SmartSymm">Smart Symmetrizer</a> topic.</p>
-<p>ABINIT can treat antiferromagnetic symmetry operations, see <a class="wikilink codevar-link" href="../../../input_variables/gstate#symafm">symafm</a>.</p>
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../SmartSymm">Smart Symmetrizer</a> topic.</p>
+<p>ABINIT can treat antiferromagnetic symmetry operations, see <a class="wikilink codevar-link" href="../../input_variables/gstate#symafm">symafm</a>.</p>
 <p>In ABINIT, a database with the 230 spatial groups of symmetry (see
-<a class="wikilink codevar-link" href="../../../input_variables/geo#spgroup">spgroup</a>) and the 1191 Shubnikov anti-ferromagnetic space groups is present
-(see also <a class="wikilink codevar-link" href="../../../input_variables/geo#spgroupma">spgroupma</a> and <a class="wikilink codevar-link" href="../../../input_variables/geo#genafm">genafm</a>).</p>
+<a class="wikilink codevar-link" href="../../input_variables/geo#spgroup">spgroup</a>) and the 1191 Shubnikov anti-ferromagnetic space groups is present
+(see also <a class="wikilink codevar-link" href="../../input_variables/geo#spgroupma">spgroupma</a> and <a class="wikilink codevar-link" href="../../input_variables/geo#genafm">genafm</a>).</p>
 <p>There is also a (non-graphical) atom manipulator in ABINIT, see
-<a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../AtomManipulator">topic_AtomManipulator</a>.</p>
-<p>ABINIT can read XYZ files, see <a class="wikilink codevar-link" href="../../../input_variables/geo#xyzfile">xyzfile</a>.</p>
-<p>Atomic positions can also be generated at random, see <a class="wikilink codevar-link" href="../../../input_variables/rlx#random_atpos">random_atpos</a>.</p>
+<a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../AtomManipulator">topic_AtomManipulator</a>.</p>
+<p>ABINIT can read XYZ files, see <a class="wikilink codevar-link" href="../../input_variables/geo#xyzfile">xyzfile</a>.</p>
+<p>Atomic positions can also be generated at random, see <a class="wikilink codevar-link" href="../../input_variables/rlx#random_atpos">random_atpos</a>.</p>
 <p>Details about the way the crystal structure is defined in ABINIT can be found
 <a href="../../documents/geometry.pdf">here</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#natom">natom</a>  Number of ATOMs</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#ntypat">ntypat</a>  Number of TYPes of AToms</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#typat">typat</a>  TYPe of AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#natom">natom</a>  Number of ATOMs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>  Number of TYPes of AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a>  TYPe of AToms</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#xangst">xangst</a>  vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#xcart">xcart</a>  vectors (X) of atom positions in CARTesian coordinates</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#xred">xred</a>  vectors (X) of atom positions in REDuced coordinates</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#xangst">xangst</a>  vectors (X) of atom positions in cartesian coordinates -length in ANGSTrom-</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a>  vectors (X) of atom positions in CARTesian coordinates</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a>  vectors (X) of atom positions in REDuced coordinates</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#maxnsym">maxnsym</a>  MAXimum Number of SYMetries</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/rlx#random_atpos">random_atpos</a>  RANDOM ATomic POSitions</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#symmorphi">symmorphi</a>  SYMMORPHIc symmetry operation selection</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#maxnsym">maxnsym</a>  MAXimum Number of SYMetries</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/rlx#random_atpos">random_atpos</a>  RANDOM ATomic POSitions</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#symmorphi">symmorphi</a>  SYMMORPHIc symmetry operation selection</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#chkprim">chkprim</a>  CHecK whether the cell is PRIMitive</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#nsym">nsym</a>  Number of SYMmetry operations</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/geo#spgroup">spgroup</a>  SPace GROUP number</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#spinat">spinat</a>  SPIN for AToms</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#symrel">symrel</a>  SYMmetry in REaL space</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#tnons">tnons</a>  Translation NON-Symmorphic vectors</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/geo#tolsym">tolsym</a>  TOLERANCE for SYMmetries</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/geo#xyzfile">xyzfile</a>  XYZ FILE input for geometry</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#chkprim">chkprim</a>  CHecK whether the cell is PRIMitive</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>  Number of SYMmetry operations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/geo#spgroup">spgroup</a>  SPace GROUP number</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#spinat">spinat</a>  SPIN for AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#symrel">symrel</a>  SYMmetry in REaL space</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#tnons">tnons</a>  Translation NON-Symmorphic vectors</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/geo#tolsym">tolsym</a>  TOLERANCE for SYMmetries</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/geo#xyzfile">xyzfile</a>  XYZ FILE input for geometry</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="H based fake crystals. Test the recognition of several enantiomorph space groups : 76,  151,  152,  178 and 180." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v3/Input/t21.in">tests/v3/Input/t21.in</a></li>
-<li><a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a></li>
-<li><a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li>
+<li><a class="wikilink test-link" data-content="H based fake crystals. Test the recognition of several enantiomorph space groups : 76,  151,  152,  178 and 180." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t21.in">tests/v3/Input/t21.in</a></li>
+<li><a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a></li>
+<li><a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t14.in">tests/v5/Input/t14.in</a></li>
+<li><a class="wikilink test-link" data-content="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t14.in">tests/v5/Input/t14.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

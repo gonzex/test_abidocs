@@ -2878,43 +2878,43 @@ well as atomic temperature factors with the ABINIT package.</p>
 <p>When the phonon band structure and corresponding eigenvectors are known over
 the whole Brillouin Zone, thanks fo Fourier interpolation (see
 <a class="wikilink topic-link" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
-velocity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../PhononBands">topic_PhononBands</a>), integrals can be performed, allowing to obtain a
+velocity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../PhononBands">topic_PhononBands</a>), integrals can be performed, allowing to obtain a
 wealth of properties, like free energy, entropy, specific heat, as well as
 atomic temperature factors. For applications of this technique, see
 <a class="wikilink citation-link" data-content="Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#lee1995">[Lee1995]</a>.</p>
 <p>Moreover, knowing such information for different volumes allows one to compute
-the thermal expansion, see <a class="wikilink codevar-link" href="../../../input_variables/anaddb#gruns_ddbs">gruns_ddbs</a>.</p>
+the thermal expansion, see <a class="wikilink codevar-link" href="../../input_variables/anaddb#gruns_ddbs">gruns_ddbs</a>.</p>
 <p>The input variables needed to perform the interpolation over the Brillouin
 Zone are described in <a class="wikilink topic-link" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
-velocity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../PhononBands">topic_PhononBands</a> and are not listed again in the
+velocity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../PhononBands">topic_PhononBands</a> and are not listed again in the
 present topic.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#gruns_nddbs">gruns_nddbs</a>  GRUNeiSen Number of DDB files</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#ntemper">ntemper</a>  Number of TEMPERatures</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#temperinc">temperinc</a>  TEMPERature INCrease</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#tempermin">tempermin</a>  TEMPERature MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#gruns_nddbs">gruns_nddbs</a>  GRUNeiSen Number of DDB files</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ntemper">ntemper</a>  Number of TEMPERatures</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#temperinc">temperinc</a>  TEMPERature INCrease</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#tempermin">tempermin</a>  TEMPERature MINimum</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#thmflag">thmflag</a>  THerMal FLAG</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#thmflag">thmflag</a>  THerMal FLAG</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#atftol">atftol</a>  ATomic Temperature Factor TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#atftol">atftol</a>  ATomic Temperature Factor TOLerance</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#gruns_ddbs">gruns_ddbs</a>  GRUNeiSen DDBS</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/anaddb#thmtol">thmtol</a>  THerModynamic TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#gruns_ddbs">gruns_ddbs</a>  GRUNeiSen DDBS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#thmtol">thmtol</a>  THerModynamic TOLerance</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v2/Input/t15.in">tests/v2/Input/t15.in</a></li>
-<li><a class="wikilink test-link" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v2/Input/t16.in">tests/v2/Input/t16.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t15.in">tests/v2/Input/t15.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t16.in">tests/v2/Input/t16.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

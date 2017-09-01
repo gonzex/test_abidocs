@@ -2861,57 +2861,57 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to generate the electronic band structure related topics with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The eigenenergies along a set of segments can be computed (non-self-consistent
-calculations <a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a>=-2) using a negative value of <a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a>, with
-<a class="wikilink codevar-link" href="../../../input_variables/gstate#kptbounds">kptbounds</a> defining the end points of the segments, and <a class="wikilink codevar-link" href="../../../input_variables/gstate#ndivsm">ndivsm</a> (or
-<a class="wikilink codevar-link" href="../../../input_variables/gstate#ndivk">ndivk</a>) defining the sampling.</p>
+calculations <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>=-2) using a negative value of <a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>, with
+<a class="wikilink codevar-link" href="../../input_variables/gstate#kptbounds">kptbounds</a> defining the end points of the segments, and <a class="wikilink codevar-link" href="../../input_variables/gstate#ndivsm">ndivsm</a> (or
+<a class="wikilink codevar-link" href="../../input_variables/gstate#ndivk">ndivk</a>) defining the sampling.</p>
 <p>A band structure can even be represented using weights proportional to the
 orbital content (so-called &ldquo;Fat Bands&rdquo;), in case of PAW calculation, see
-<a class="wikilink codevar-link" href="../../../input_variables/paw#pawfatbnd">pawfatbnd</a>, and related variables.</p>
+<a class="wikilink codevar-link" href="../../input_variables/paw#pawfatbnd">pawfatbnd</a>, and related variables.</p>
 <p>Different interpolation schemes for the band energies can be defined thanks to
-<a class="wikilink codevar-link" href="../../../input_variables/basic#einterp">einterp</a>. The Wannier interpolation is also available through the use of
-the <a class="wikilink lesson-link" href="../../../tutorials/wannier90">wannier90 lesson</a> post-processor.</p>
+<a class="wikilink codevar-link" href="../../input_variables/basic#einterp">einterp</a>. The Wannier interpolation is also available through the use of
+the <a class="wikilink lesson-link" href="../../tutorials/wannier90">wannier90 lesson</a> post-processor.</p>
 <p>The band structure from a supercell calculation can be unfolded to the (large)
-Brillouin zone of the (small) primitive cell thanks to the <a class="wikilink user-guide-link" href="../../../user-guide/help_fold2bloch">fold2bloch help file</a>
-post-processor. See the related <a class="wikilink topic-link" data-content="How to unfold supercell band structures" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../Unfolding">Unfolding topic</a>.</p>
+Brillouin zone of the (small) primitive cell thanks to the <a class="wikilink user-guide-link" href="../../user-guide/help_fold2bloch">fold2bloch help file</a>
+post-processor. See the related <a class="wikilink topic-link" data-content="How to unfold supercell band structures" data-placement="right" data-toggle="popover" data-trigger="hover" href="../Unfolding">Unfolding topic</a>.</p>
 <p>Different plotting postprocessors exist to produce graphical representations
 of electronic band structures from ABINIT. The most powerful is based on
-<a class="wikilink topic-link" data-content="How to use the Abipy ABINIT post-processor" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../Abipy">topic_Abipy</a>. Simpler tools also exist, and can be found in
+<a class="wikilink topic-link" data-content="How to use the Abipy ABINIT post-processor" data-placement="right" data-toggle="popover" data-trigger="hover" href="../Abipy">topic_Abipy</a>. Simpler tools also exist, and can be found in
 ~abinit/scripts/post_processing, e.g. AbinitBandStructureMaker.py,
 plot_bandstructure.py or abinit_eignc_to_bandstructure.py.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a>  KPoinTs OPTion</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>  KPoinTs OPTion</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#einterp">einterp</a>  Electron bands INTERPolation</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#iatsph">iatsph</a>  Index for the ATomic SPHeres of the atom-projected density-of-states</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#natsph">natsph</a>  Number of ATomic SPHeres for the atom-projected density-of-states</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#einterp">einterp</a>  Electron bands INTERPolation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#iatsph">iatsph</a>  Index for the ATomic SPHeres of the atom-projected density-of-states</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#natsph">natsph</a>  Number of ATomic SPHeres for the atom-projected density-of-states</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t20.in">tests/v5/Input/t20.in</a></li>
+<li><a class="wikilink test-link" data-content="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t20.in">tests/v5/Input/t20.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="MgB2,  space group P6/m m m (#191);  Bravais hP (primitive hexag.) GS calculation followed by a band structure calculation in which the k-path is automatically defined via the ndivsm input variable. The third dataset tests the calculation and the output of the Fermi surface (prtfsurf=1) in the Xcrysden format." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v6/Input/t14.in">tests/v6/Input/t14.in</a></li>
+<li><a class="wikilink test-link" data-content="MgB2,  space group P6/m m m (#191);  Bravais hP (primitive hexag.) GS calculation followed by a band structure calculation in which the k-path is automatically defined via the ndivsm input variable. The third dataset tests the calculation and the output of the Fermi surface (prtfsurf=1) in the Xcrysden format." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t14.in">tests/v6/Input/t14.in</a></li>
 </ul>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t71.in">tests/v7/Input/t71.in</a></li>
-<li><a class="wikilink test-link" data-content="Calculation of Projected Wannier functions and compute a simplified interpolated band structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t72.in">tests/v7/Input/t72.in</a></li>
+<li><a class="wikilink test-link" data-content="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t71.in">tests/v7/Input/t71.in</a></li>
+<li><a class="wikilink test-link" data-content="Calculation of Projected Wannier functions and compute a simplified interpolated band structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t72.in">tests/v7/Input/t72.in</a></li>
 </ul>
 <p><em>v8:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v8/Input/t04.in">tests/v8/Input/t04.in</a></li>
+<li><a class="wikilink test-link" data-content="Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t04.in">tests/v8/Input/t04.in</a></li>
 </ul>
                 
                   

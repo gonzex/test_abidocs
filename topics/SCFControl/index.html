@@ -2877,42 +2877,42 @@ Change the input yaml files or the python code
 <p>The numerical precision of the calculations depends on many settings, among
 which the precision in solving the Kohn-Sham self-consistent equation.</p>
 <p>Several parameters govern the SCF loop. The maximum number of cycles is given
-by <a class="wikilink codevar-link" href="../../../input_variables/basic#nstep">nstep</a>, but the iterative procedure might be stopped earlier, as soon as
+by <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a>, but the iterative procedure might be stopped earlier, as soon as
 the criterion chosen by the user is fulfilled. The user is asked to give a
 tolerance on some measure of the convergence. The user must choose among
-<a class="wikilink codevar-link" href="../../../input_variables/basic#toldfe">toldfe</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#toldff">toldff</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#tolrff">tolrff</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#tolvrs">tolvrs</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#toldff">toldff</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#tolrff">tolrff</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#tolvrs">tolvrs</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a>.</p>
 <ul>
-<li>The most theoretically justified for the density/potential self-consistency is <a class="wikilink codevar-link" href="../../../input_variables/basic#tolvrs">tolvrs</a>.</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a> is interesting for non-self-consistent calculations.</li>
-<li>For molecular dynamics (which rely on the accuracy of forces), one might prefer <a class="wikilink codevar-link" href="../../../input_variables/basic#tolrff">tolrff</a>.</li>
+<li>The most theoretically justified for the density/potential self-consistency is <a class="wikilink codevar-link" href="../../input_variables/basic#tolvrs">tolvrs</a>.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a> is interesting for non-self-consistent calculations.</li>
+<li>For molecular dynamics (which rely on the accuracy of forces), one might prefer <a class="wikilink codevar-link" href="../../input_variables/basic#tolrff">tolrff</a>.</li>
 </ul>
 <p>Some input variables relate to the solution of the Schrodinger equation.
 However, usually the related iterative techniques are well-tuned, so that
-these input variables (<a class="wikilink codevar-link" href="../../../input_variables/gstate#nline">nline</a> and <a class="wikilink codevar-link" href="../../../input_variables/dev#tolrde">tolrde</a>) are usually used only by
+these input variables (<a class="wikilink codevar-link" href="../../input_variables/gstate#nline">nline</a> and <a class="wikilink codevar-link" href="../../input_variables/dev#tolrde">tolrde</a>) are usually used only by
 experts. However, in cases where the convergence is difficult, it might be
-interesting to test improving them, as well as modifying <a class="wikilink codevar-link" href="../../../input_variables/dev#nnsclo">nnsclo</a>.</p>
-<p>The <a class="wikilink codevar-link" href="../../../input_variables/basic#accuracy">accuracy</a> variable enables to tune the accuracy of a calculation by
+interesting to test improving them, as well as modifying <a class="wikilink codevar-link" href="../../input_variables/dev#nnsclo">nnsclo</a>.</p>
+<p>The <a class="wikilink codevar-link" href="../../input_variables/basic#accuracy">accuracy</a> variable enables to tune the accuracy of a calculation by
 setting automatically up to seventeen variables.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#accuracy">accuracy</a>  ACCURACY</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#nstep">nstep</a>  Number of (non-)self-consistent field STEPS</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#toldfe">toldfe</a>  TOLerance on the DiFference of total Energy</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#toldff">toldff</a>  TOLerance on the DiFference of Forces</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#tolrff">tolrff</a>  TOLerance on the Relative diFference of Forces</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#tolvrs">tolvrs</a>  TOLerance on the potential V(r) ReSidual</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a>  TOLerance on WaveFunction squared Residual</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#accuracy">accuracy</a>  ACCURACY</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a>  Number of (non-)self-consistent field STEPS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>  TOLerance on the DiFference of total Energy</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#toldff">toldff</a>  TOLerance on the DiFference of Forces</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#tolrff">tolrff</a>  TOLerance on the Relative diFference of Forces</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#tolvrs">tolvrs</a>  TOLerance on the potential V(r) ReSidual</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a>  TOLerance on WaveFunction squared Residual</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#nline">nline</a>  Number of LINE minimisations</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#nnsclo">nnsclo</a>  Number of Non-Self Consistent LOops</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/dev#tolrde">tolrde</a>  TOLerance on the Relative Difference of Eigenenergies</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#nline">nline</a>  Number of LINE minimisations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#nnsclo">nnsclo</a>  Number of Non-Self Consistent LOops</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#tolrde">tolrde</a>  TOLerance on the Relative Difference of Eigenenergies</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#nbdbuf">nbdbuf</a>  Number of BanDs for the BUFfer</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#nbdbuf">nbdbuf</a>  Number of BanDs for the BUFfer</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p>No input file associated to this topic.</p>

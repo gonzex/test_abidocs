@@ -2878,7 +2878,7 @@ field with the ABINIT package.</p>
 <p>The effect of an homogeneous static electric field on an insulator may be
 treated in ABINIT from two perspectives. One is perturbative, and yields the
 susceptibility in the form of the second derivative of the total energy with
-respect to the electric field, at zero field strength (see <a class="wikilink topic-link" data-content="How to generically perform DFPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../DFPT">topic_DFPT</a>).</p>
+respect to the electric field, at zero field strength (see <a class="wikilink topic-link" data-content="How to generically perform DFPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../DFPT">topic_DFPT</a>).</p>
 <p>ABINIT can also be used to compute the effect of an electric field of finite
 amplitude, using techniques from the Modern Theory of Polarization
 <a class="wikilink citation-link" data-content="Macroscopic polarization in crystalline dielectrics: the geometric phase approach" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#resta1994">[Resta1994]</a>,<a class="wikilink citation-link" data-content="Berry-phase treatment of the homogeneous electric field perturbation in insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#nunes2001">[Nunes2001]</a>,<a class="wikilink citation-link" data-content="First-Principles Approach to Insulators in Finite Electric Fields" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#souza2002">[Souza2002]</a>. The latter is based on the notion
@@ -2900,59 +2900,59 @@ stresses terms arise <a class="wikilink citation-link" data-content="Finite homo
 available, as described in M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat.
 Phys. 5,304 (2009).</p>
 <p>The polarization and finite electric field calculation in ABINIT is accessed
-through the variables <a class="wikilink codevar-link" href="../../../input_variables/ffield#berryopt">berryopt</a> and <a class="wikilink codevar-link" href="../../../input_variables/ffield#efield">efield</a>. In addition, displacement
+through the variables <a class="wikilink codevar-link" href="../../input_variables/ffield#berryopt">berryopt</a> and <a class="wikilink codevar-link" href="../../input_variables/ffield#efield">efield</a>. In addition, displacement
 fields and mixed boundary conditions (a mix of electric field and displacement
 field) can be computed as well.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#bdberry">bdberry</a>  BanD limits for BERRY phase</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#dfield">dfield</a>  Displacement FIELD</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#efield">efield</a>  Electric FIELD</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#jfielddir">jfielddir</a>  electric/displacement FIELD DIRection</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#kberry">kberry</a>  K wavevectors for BERRY phase computation</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#nberry">nberry</a>  Number of BERRY phase computations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#bdberry">bdberry</a>  BanD limits for BERRY phase</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#dfield">dfield</a>  Displacement FIELD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#efield">efield</a>  Electric FIELD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#jfielddir">jfielddir</a>  electric/displacement FIELD DIRection</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#kberry">kberry</a>  K wavevectors for BERRY phase computation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#nberry">nberry</a>  Number of BERRY phase computations</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#berryopt">berryopt</a>  BERRY phase OPTions</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#berryopt">berryopt</a>  BERRY phase OPTions</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#berrystep">berrystep</a>  BERRY phase : multiple STEP</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#berrystep">berrystep</a>  BERRY phase : multiple STEP</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#berrysav">berrysav</a>  BERRY SAVe</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#ddamp">ddamp</a>  electric Displacement field DAMPing parameter</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#maxestep">maxestep</a>  MAXimum Electric field STEP</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#polcen">polcen</a>  POLarization for CENtrosymmetric geometry</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#red_dfield">red_dfield</a>  REDuced Displacement FIELD</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#red_efield">red_efield</a>  REDuced Electric FIELD</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/ffield#red_efieldbar">red_efieldbar</a>  REDuced Electric FIELD BAR</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#berrysav">berrysav</a>  BERRY SAVe</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#ddamp">ddamp</a>  electric Displacement field DAMPing parameter</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#maxestep">maxestep</a>  MAXimum Electric field STEP</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#polcen">polcen</a>  POLarization for CENtrosymmetric geometry</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#red_dfield">red_dfield</a>  REDuced Displacement FIELD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#red_efield">red_efield</a>  REDuced Electric FIELD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#red_efieldbar">red_efieldbar</a>  REDuced Electric FIELD BAR</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/paral/Input/t07.in">tests/paral/Input/t07.in</a></li>
+<li><a class="wikilink test-link" data-content="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial). The need to have the number of points a multiple of the number of processor is not convenient ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t07.in">tests/paral/Input/t07.in</a></li>
 </ul>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Test of the strain perturbation for the rigid-ion piezoelectric tensor.  Rhombohedrally distorted AlP as in the previous test,  but using a ground-state finite- difference calculation of the d/dk wave functions.  Such calculations were used extensively to test the response function piezoelectric tensor by comparison to numerical derivatives of the ground-state polarization.  Using the same k sample in the ground state and response function calculations,  excellent agreement has been obtained in a variety of cases (including a better-converged version of this one).  Results using the finite- diffrence d/dk and the analytic d/dk as in the preceeding test agree in the limit of large k sample. The analytic form converges much more rapidly,  and is consistent with the slowly converging polarization numerical derivatives. The present version of this calculation uses berryopt = -2 to utilize the routine berryphase_new.f The ground-state polarization calculations used to compute the numerical derivatives in such tests should also be computed using berryphase_new.f setting berryopt = -1 and rfdir = 1 1 1 so that the cartesian polarization is automatically generated. This eliminates several issues that needed special attention using berryopt = 1 and the original berryphase.f routine. The resulting cartesian polarization derivatives represent the &quot;improper&quot; piezoelectric tensor,  and have to be corrected to yield the &quot;proper&quot; tensor as described in D. Vanderbilt,  J. Phys. Chem. Solids 61,  147 (2000),  using Eq.(15).  The response-function calculation gives the proper piezoelectric tensor.  Only the electron response,  and not the strain-induced movement of the rigid ions contributes to the proper tensor." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t66.in">tests/v4/Input/t66.in</a></li>
-<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure Compute the polarization along strings of k-points parallel to the primitive vectors of the reciprocal lattice. The Berry phase calculations are performed in three different datasets. For each datatset,  ABINIT writes the polarization in reduced coordinates to a DDB." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t72.in">tests/v4/Input/t72.in</a></li>
-<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure (Test of Na Sai's technique) To compute the polarization,  the finite difference expression of the ddk and the second-order energy derivatives." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t75.in">tests/v4/Input/t75.in</a></li>
+<li><a class="wikilink test-link" data-content="Test of the strain perturbation for the rigid-ion piezoelectric tensor.  Rhombohedrally distorted AlP as in the previous test,  but using a ground-state finite- difference calculation of the d/dk wave functions.  Such calculations were used extensively to test the response function piezoelectric tensor by comparison to numerical derivatives of the ground-state polarization.  Using the same k sample in the ground state and response function calculations,  excellent agreement has been obtained in a variety of cases (including a better-converged version of this one).  Results using the finite- diffrence d/dk and the analytic d/dk as in the preceeding test agree in the limit of large k sample. The analytic form converges much more rapidly,  and is consistent with the slowly converging polarization numerical derivatives. The present version of this calculation uses berryopt = -2 to utilize the routine berryphase_new.f The ground-state polarization calculations used to compute the numerical derivatives in such tests should also be computed using berryphase_new.f setting berryopt = -1 and rfdir = 1 1 1 so that the cartesian polarization is automatically generated. This eliminates several issues that needed special attention using berryopt = 1 and the original berryphase.f routine. The resulting cartesian polarization derivatives represent the &quot;improper&quot; piezoelectric tensor,  and have to be corrected to yield the &quot;proper&quot; tensor as described in D. Vanderbilt,  J. Phys. Chem. Solids 61,  147 (2000),  using Eq.(15).  The response-function calculation gives the proper piezoelectric tensor.  Only the electron response,  and not the strain-induced movement of the rigid ions contributes to the proper tensor." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t66.in">tests/v4/Input/t66.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure Compute the polarization along strings of k-points parallel to the primitive vectors of the reciprocal lattice. The Berry phase calculations are performed in three different datasets. For each datatset,  ABINIT writes the polarization in reduced coordinates to a DDB." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t72.in">tests/v4/Input/t72.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure (Test of Na Sai's technique) To compute the polarization,  the finite difference expression of the ddk and the second-order energy derivatives." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t75.in">tests/v4/Input/t75.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="AlAs in Zincblende structure. Test calculation of the Born effective charge and dielectric constant tensor at finite electric fields. The first dataset is for normal ground-state calculation at zero electric field. The second dataset is for ground-state calculation at finite electric field. The final datasetis the linear-response calculation at finite electric field." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t23.in">tests/v5/Input/t23.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs in Zincblende structure. Test calculation of the Born effective charge and dielectric constant tensor at finite electric fields. The first dataset is for normal ground-state calculation at zero electric field. The second dataset is for ground-state calculation at finite electric field. The final datasetis the linear-response calculation at finite electric field." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t23.in">tests/v5/Input/t23.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial.) Cannot be executed with more than 1 MPI node." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v6/Input/t43.in">tests/v6/Input/t43.in</a></li>
+<li><a class="wikilink test-link" data-content="PAW Berrys Phase calculation of Born effective charge in AlAs by finite electric fields (contributed by J. Zwanziger,  adapted from efield tutorial.) Cannot be executed with more than 1 MPI node." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t43.in">tests/v6/Input/t43.in</a></li>
 </ul>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Test berryopt -1 and berryopt 4,  with NCPP,  with spinors and spin-orbit coupling. This test computes the polarization of GaAs in zero and finite electric field,  in three cases: nspinor 1,  nspinor 2,  and nspinor 2 with spin-orbit coupling (so_psp). HGH norm-conserving pseudopotentials are used." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t03.in">tests/v7/Input/t03.in</a></li>
+<li><a class="wikilink test-link" data-content="Test berryopt -1 and berryopt 4,  with NCPP,  with spinors and spin-orbit coupling. This test computes the polarization of GaAs in zero and finite electric field,  in three cases: nspinor 1,  nspinor 2,  and nspinor 2 with spin-orbit coupling (so_psp). HGH norm-conserving pseudopotentials are used." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t03.in">tests/v7/Input/t03.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

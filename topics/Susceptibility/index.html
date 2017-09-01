@@ -2865,58 +2865,58 @@ interaction matrix, and inverse dielectric marix with the ABINIT package.</p>
 susceptibility matrix, and related screened interaction matrix, and inverse
 dielectric matrix can be computed.</p>
 <p>This is a prerequisite to many-body perturbation theory calculations, see
-<a class="wikilink topic-link" data-content="How to perform a GW calculation, including self-consistency" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../GW">GW topic</a> and <a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
-dielectric function" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../BSE">BSE topic</a>, to which we refer.</p>
+<a class="wikilink topic-link" data-content="How to perform a GW calculation, including self-consistency" data-placement="right" data-toggle="popover" data-trigger="hover" href="../GW">GW topic</a> and <a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
+dielectric function" data-placement="right" data-toggle="popover" data-trigger="hover" href="../BSE">BSE topic</a>, to which we refer.</p>
 <p>The frequency meshes, used e.g. for integration along the real and imaginary
 axes, on which the susceptibility matrices (and related matrices) have to be
-computed are described in <a class="wikilink topic-link" data-content="How to define frequency meshes (on the imaginary and real axes) for MBPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../FrequencyMeshMBPT">FrequencyMeshMBPT topic</a>.</p>
+computed are described in <a class="wikilink topic-link" data-content="How to define frequency meshes (on the imaginary and real axes) for MBPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../FrequencyMeshMBPT">FrequencyMeshMBPT topic</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/paral#gwpara">gwpara</a>  GW PARAllelization level</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#nomegasf">nomegasf</a>  Number of OMEGA to evaluate the Spectral Function</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>  GW PARAllelization level</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nomegasf">nomegasf</a>  Number of OMEGA to evaluate the Spectral Function</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>  Energy CUT-off for EPSilon (the dielectric matrix)</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a>  Energy CUT-off for WaveFunctioNs</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>  Energy CUT-off for EPSilon (the dielectric matrix)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a>  Energy CUT-off for WaveFunctioNs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#fftgw">fftgw</a>  FFT for GW calculation</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gw_invalid_freq">gw_invalid_freq</a>  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gw_nqlwl">gw_nqlwl</a>  GW, Number of Q-points for the Long Wave-Length Limit</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gw_qlwl">gw_qlwl</a>  GW, Q-points for the Long Wave-Length limit</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gwgamma">gwgamma</a>  GW GAMMA</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gwmem">gwmem</a>  GW MEMory</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#inclvkb">inclvkb</a>  INCLude VKB</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/files#kssform">kssform</a>  Kohn Sham Structure file FORMat</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#npwkss">npwkss</a>  Number of PlaneWaves in the KSS file</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawoptosc">pawoptosc</a>  PAW - OPTion for the computation of the OSCillator matrix elements</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#symchi">symchi</a>  SYMmetryze \chi_o</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a>  Z-CUT</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#fftgw">fftgw</a>  FFT for GW calculation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_invalid_freq">gw_invalid_freq</a>  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_nqlwl">gw_nqlwl</a>  GW, Number of Q-points for the Long Wave-Length Limit</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_qlwl">gw_qlwl</a>  GW, Q-points for the Long Wave-Length limit</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwgamma">gwgamma</a>  GW GAMMA</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>  GW MEMory</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#inclvkb">inclvkb</a>  INCLude VKB</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#kssform">kssform</a>  Kohn Sham Structure file FORMat</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#npwkss">npwkss</a>  Number of PlaneWaves in the KSS file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawoptosc">pawoptosc</a>  PAW - OPTion for the computation of the OSCillator matrix elements</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#symchi">symchi</a>  SYMmetryze \chi_o</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a>  Z-CUT</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/internal#npweps">%npweps</a>  Number of PlaneWaves for EPSilon (the dielectric matrix)</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/internal#npwwfn">%npwwfn</a>  Number of PlaneWaves for WaveFunctioNs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#npweps">%npweps</a>  Number of PlaneWaves for EPSilon (the dielectric matrix)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#npwwfn">%npwwfn</a>  Number of PlaneWaves for WaveFunctioNs</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#awtr">awtr</a>  evaluate the Adler-Wiser expression of <script type="math/tex">\chi^{0}_{KS}</script> assuming Time-Reversal</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/files#getqps">getqps</a>  GET QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gwencomp">gwencomp</a>  GW ENergy for COMPleteness</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/files#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#mbpt_sciss">mbpt_sciss</a>  Many Body Perturbation Theory SCISSor operator</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#nbandkss">nbandkss</a>  Number of BANDs in the KSS file</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#nqptdm">nqptdm</a>  Number of Q-PoinTs for the Dielectric Matrix</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#qptdm">qptdm</a>  Q-PoinTs for the Dielectric Matrix</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#spbroad">spbroad</a>  SPectral BROADening</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#spmeth">spmeth</a>  SPectral METHod</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#awtr">awtr</a>  evaluate the Adler-Wiser expression of <script type="math/tex">\chi^{0}_{KS}</script> assuming Time-Reversal</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#getqps">getqps</a>  GET QuasiParticle Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwencomp">gwencomp</a>  GW ENergy for COMPleteness</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#mbpt_sciss">mbpt_sciss</a>  Many Body Perturbation Theory SCISSor operator</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nbandkss">nbandkss</a>  Number of BANDs in the KSS file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nqptdm">nqptdm</a>  Number of Q-PoinTs for the Dielectric Matrix</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#qptdm">qptdm</a>  Q-PoinTs for the Dielectric Matrix</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#spbroad">spbroad</a>  SPectral BROADening</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#spmeth">spmeth</a>  SPectral METHod</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p>No input file associated to this topic.</p>

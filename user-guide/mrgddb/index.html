@@ -2873,7 +2873,7 @@
 <hr />
 <h1 id="the-mrgddb-utility">the Mrgddb utility<a class="headerlink" href="#the-mrgddb-utility" title="Permanent link">&para;</a></h1>
 <h2 id="this-file-explains-the-io-parameters-needed-for-the-derivative-database-ddb-merging-code-mrgddb">This file explains the i/o parameters needed for the derivative database (DDB) merging code (MRGDDB).<a class="headerlink" href="#this-file-explains-the-io-parameters-needed-for-the-derivative-database-ddb-merging-code-mrgddb" title="Permanent link">&para;</a></h2>
-<p>The user is advised to be familiar with the main <a class="wikilink user-guide-link" href="../../help_abinit">abinit help file</a> help file
+<p>The user is advised to be familiar with the main <a class="wikilink user-guide-link" href="../help_abinit">abinit help file</a> help file
 before reading the present file. It is important to read also the <a href="../help_anaddb.html"><strong>Analysis
 of Derivative DataBase code (Anaddb) help file</strong></a> to
 complement the present reading.</p>
@@ -2897,13 +2897,13 @@ if they are produced independently on different machines.</p>
 <p>The DDBs are made of two parts. The first part is a list of the parameters
 that were used to make the DDB, and the second part lists the 2DTEs and 3DTEs.
 The merging code will check if the following variables are exactly the same in
-the different input DDB : natom, <a class="wikilink codevar-link" href="../../../input_variables/basic#ntypat">ntypat</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>, <a class="wikilink codevar-link" href="../../../input_variables/rlx#amu">amu</a>,
-<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#ixc">ixc</a>, lloc, <a class="wikilink codevar-link" href="../../../input_variables/gstate#ngfft">ngfft</a>, <a class="wikilink codevar-link" href="../../../input_variables/gstate#occ">occ</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#typat">typat</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#xred">xred</a>,
-zion. For <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> and <a class="wikilink codevar-link" href="../../../input_variables/gstate#occ">occ</a>, the value of <a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a> is taken into account
+the different input DDB : natom, <a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#amu">amu</a>,
+<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>, lloc, <a class="wikilink codevar-link" href="../../input_variables/gstate#ngfft">ngfft</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a>,
+zion. For <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>, the value of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> is taken into account
 (see abinit help file). If possible, MRGDDB will produce a DDB with occopt=0.
 In case of two different data sets, the code will print an error message and
 stop. The code cannot merge two DDB that have been generated using two
-different geometries or convergence (<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, &hellip;) parameters. The only
+different geometries or convergence (<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, &hellip;) parameters. The only
 exception is connected to the possibility to use Time-reversal symmetry to
 decrease the number of special k points when the wavevector of the
 perturbation is Gamma. In that case, the code will merge the DDBs and put the

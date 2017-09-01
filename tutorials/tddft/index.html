@@ -2994,17 +2994,17 @@ calculation, with only occupied bands. The density and wavefunctions are
 written, for use in the second data set. The second dataset is the one where
 the TDDFT calculation is done. Moreover, the non-self-consistent calculation
 of the occupied eigenfunctions and corresponding eigenenergies is also
-accomplished. This is obtained by setting <a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a> to -1. Please, take now
-some time to read the information about this value of <a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a>, and the few
+accomplished. This is obtained by setting <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a> to -1. Please, take now
+some time to read the information about this value of <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>, and the few
 input variables that acquire some meaning in this context (namely,
-<a class="wikilink codevar-link" href="../../../input_variables/gstate#boxcenter">boxcenter</a>, <a class="wikilink codevar-link" href="../../../input_variables/dfpt#td_mexcit">td_mexcit</a>, and <a class="wikilink codevar-link" href="../../../input_variables/dfpt#td_maxene">td_maxene</a>). Actually, this is most of
+<a class="wikilink codevar-link" href="../../input_variables/gstate#boxcenter">boxcenter</a>, <a class="wikilink codevar-link" href="../../input_variables/dfpt#td_mexcit">td_mexcit</a>, and <a class="wikilink codevar-link" href="../../input_variables/dfpt#td_maxene">td_maxene</a>). Actually, this is most of
 the information that should be known to use the TDDFT in ABINIT !<br />
 You will note that we have 5 occupied bands (defined for dataset 1), and that
 we add 7 unoccupied bands in the dataset 2, to obtain a total of 12 bands. The
 box is not very large (6x5x5 Angstrom), the cutoff is quite reasonable, 25
 Hartree), and as requested for the Casida&rsquo;s formalism, only one k point is
 used. We have chosen the Perdew-Wang 92 LDA functional for both the self-
-consistent and non-self-consistent calculations (<a class="wikilink codevar-link" href="../../../input_variables/basic#ixc">ixc</a>=7).</p>
+consistent and non-self-consistent calculations (<a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>=7).</p>
 <p>We can now examine the output file ttddft_1.out.<br />
 One can jump to the second dataset section, and skip a few non-interesting
 information, in order to reach the following information :</p>

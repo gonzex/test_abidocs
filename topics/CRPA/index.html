@@ -2877,12 +2877,12 @@ Change the input yaml files or the python code
 <p>LDA+U as well as DFT+DMFT requires as input values the effective Coulomb
 interaction. Two ways to compute them are available in ABINIT.</p>
 <p>Firstly, the constrained Random Phase Approximation <a class="wikilink citation-link" data-content="Frequency-dependent local interactions and low-energy effective models from electronic structure calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#aryasetiawan2004">[Aryasetiawan2004]</a>
-<a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa">ucrpa</a> allows one to take into account the screening of the Coulomb
+<a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa">ucrpa</a> allows one to take into account the screening of the Coulomb
 interaction between correlated electrons, by non-interacting electrons. For
-non-entangled bands (<a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa">ucrpa</a>= 1), the bands excluded from the polarisability
-can be specified either by a band index (<a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa_bands">ucrpa_bands</a>) or an energy window
-(<a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa_window">ucrpa_window</a>) <a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a>.</p>
-<p>For entangled bands (<a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa">ucrpa</a>= 2}), the scheme used in ABINIT
+non-entangled bands (<a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa">ucrpa</a>= 1), the bands excluded from the polarisability
+can be specified either by a band index (<a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa_bands">ucrpa_bands</a>) or an energy window
+(<a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa_window">ucrpa_window</a>) <a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a>.</p>
+<p>For entangled bands (<a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa">ucrpa</a>= 2}), the scheme used in ABINIT
 <a class="wikilink citation-link" data-content="Screened Coulomb interaction of localized electrons in solids from first principles" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#shih2012">[Shih2012]</a>,<a class="wikilink citation-link" data-content="First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#sakuma2013">[Sakuma2013]</a>,<a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a> uses a band and k-point dependent
 weight to define the polarisability, using Wannier orbitals as correlated
 orbitals.</p>
@@ -2898,21 +2898,21 @@ particular, considerably higher effective values for U are found.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa_bands">ucrpa_bands</a>  For the calculation of U with the Constrained RPA method, gives correlated BANDS</li>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa_window">ucrpa_window</a>  For the calculation of U with the Constrained RPA method, gives energy WINDOW</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa_bands">ucrpa_bands</a>  For the calculation of U with the Constrained RPA method, gives correlated BANDS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa_window">ucrpa_window</a>  For the calculation of U with the Constrained RPA method, gives energy WINDOW</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ucrpa">ucrpa</a>  calculation of the screened interaction U with the Constrained RPA method</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ucrpa">ucrpa</a>  calculation of the screened interaction U with the Constrained RPA method</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a></li>
-<li><a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a></li>
-<li><a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a></li>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a></li>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li>
+<li><a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a></li>
+<li><a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a></li>
+<li><a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a></li>
+<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a></li>
+<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

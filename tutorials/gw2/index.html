@@ -2916,7 +2916,7 @@ Bruneval[2006] and the Lebegue[2003] papers.</p>
 </ul>
 <p>A brief description of the equations implemented in the code can be found in
 the <a href="../../../theory/generated_files/theorydoc_mbt.html">GW_notes</a>.</p>
-<p>Also, it is suggested to <a class="wikilink" href="../../../Users/gmatteo/git_repos/abidocs/FAKE_URL#b">FAKE_URL</a> the efforts of
+<p>Also, it is suggested to <a class="wikilink" href="../../Users/gmatteo/git_repos/abidocs/FAKE_URL#b">FAKE_URL</a> the efforts of
 developers of the GW part of ABINIT, by citing <a class="wikilink citation-link" data-content="A brief introduction to the ABINIT software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2005">2005 ABINIT
 publication</a>.</p>
 <p>The user should be familiarized with the four basic lessons of ABINIT, see the
@@ -2942,10 +2942,10 @@ Then (supposing abinit is the proper alias), issue:</p>
 
 <p>This run generates the WFK file for the subsequent GW computation and also
 provides the band width of Aluminum. Note that the simple Fermi-Dirac smearing
-functional is used (<a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a>=3), with a large smearing (<a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>=0.05 Ha).
+functional is used (<a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a>=3), with a large smearing (<a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>=0.05 Ha).
 The k point grid is quite rough, an unshifted 4x4x4 Monkhorst-Pack grid (64 k
 points in the full Brillouin Zone, folding to 8 k points in the Irreducible
-wedge, <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a>=4 4 4). Converged results would need a 4x4x4 grid with 4
+wedge, <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a>=4 4 4). Converged results would need a 4x4x4 grid with 4
 shifts (256 k points in the full Brillouin zone). This grid contains the Gamma
 point, at which the valence band structure reaches its minimum.</p>
 <p>The output file presents the Fermi energy</p>
@@ -2990,16 +2990,16 @@ new contour of integration. The method is extensively described in
 Lebegue[2003].</p>
 <p>Examine the input file tgw2_2.in . The ten first lines contain the important
 information. There, you find some input variables that you are already
-familiarized with, like <a class="wikilink codevar-link" href="../../../input_variables/gstate#optdriver">optdriver</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a>, but also new
-input variables: <a class="wikilink codevar-link" href="../../../input_variables/gw#gwcalctyp">gwcalctyp</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#nfreqim">nfreqim</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#nfreqre">nfreqre</a>, and <a class="wikilink codevar-link" href="../../../input_variables/gw#freqremax">freqremax</a>.
+familiarized with, like <a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a>, but also new
+input variables: <a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqim">nfreqim</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqre">nfreqre</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw#freqremax">freqremax</a>.
 The purpose of this run is simply to generate the screening matrices. Unlike
 for the plasmon-pole models, one needs to compute these at many different
 frequencies. This is the purpose of the new input variables. The main variable
-<a class="wikilink codevar-link" href="../../../input_variables/gw#gwcalctyp">gwcalctyp</a> is set to 2 in order to specify a <em>non</em> plasmon-pole model
+<a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a> is set to 2 in order to specify a <em>non</em> plasmon-pole model
 calculation. Note that the number of frequencies along the imaginary axis
-governed by <a class="wikilink codevar-link" href="../../../input_variables/gw#nfreqim">nfreqim</a> can be chosen quite small, since all functions are
+governed by <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqim">nfreqim</a> can be chosen quite small, since all functions are
 smooth in this direction. In contrast, the number of frequencies needed along
-the real axis set with the variable <a class="wikilink codevar-link" href="../../../input_variables/gw#nfreqre">nfreqre</a> is usually larger.</p>
+the real axis set with the variable <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqre">nfreqre</a> is usually larger.</p>
 <hr />
 <h2 id="3-finding-the-fermi-energy-and-the-bottom-of-the-valence-band">3 Finding the Fermi energy and the bottom of the valence band<a class="headerlink" href="#3-finding-the-fermi-energy-and-the-bottom-of-the-valence-band" title="Permanent link">&para;</a></h2>
 <p>In order not to lose time, let us start the calculation of the band width
@@ -3016,14 +3016,14 @@ then determine the Fermi energy. This is actually the first step towards a
 self-consistency!</p>
 <p>Examine the input file tgw2_3.in. The first thirty lines contain the important
 information. There, you find some input variables with values that you are
-already familiarized with, like <a class="wikilink codevar-link" href="../../../input_variables/gstate#optdriver">optdriver</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#ecutsigx">ecutsigx</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a>.
-Then, comes the input variable <a class="wikilink codevar-link" href="../../../input_variables/gw#gwcalctyp">gwcalctyp</a>=12. The value <em>x2</em> corresponds to
+already familiarized with, like <a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#ecutsigx">ecutsigx</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a>.
+Then, comes the input variable <a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a>=12. The value <em>x2</em> corresponds to
 a contour integration. The value <em>1x</em> corresponds to a self-consistent
 calculation with update of the energies only. Then, one finds the list of k
 points and bands for which a quasi-particle correction will be computed:
-<a class="wikilink codevar-link" href="../../../input_variables/gw#nkptgw">nkptgw</a>, <a class="wikilink codevar-link" href="../../../input_variables/gw#kptgw">kptgw</a>, and <a class="wikilink codevar-link" href="../../../input_variables/gw#bdgw">bdgw</a>. The number and list of k points is simply
-the same as <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#kpt">kpt</a>. One might have specified less k points,
-though (only those needing an update). The list of band ranges <a class="wikilink codevar-link" href="../../../input_variables/gw#bdgw">bdgw</a> has
+<a class="wikilink codevar-link" href="../../input_variables/gw#nkptgw">nkptgw</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#kptgw">kptgw</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a>. The number and list of k points is simply
+the same as <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#kpt">kpt</a>. One might have specified less k points,
+though (only those needing an update). The list of band ranges <a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a> has
 been generated on the basis of the LDA eigenenergies. We considered only the
 bands in the vicinity of the Fermi level: bands much below or much above are
 likely to remain much or much above the Fermi region. In the present run, we
@@ -3045,7 +3045,7 @@ mentioned:</p>
 </pre></div>
 
 
-<p>The last information is not printed in case of <a class="wikilink codevar-link" href="../../../input_variables/gw#gwcalctyp">gwcalctyp</a> lower than 10.</p>
+<p>The last information is not printed in case of <a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a> lower than 10.</p>
 <p>Combining the quasi-particle energy at Gamma and the Fermi energy, gives the
 band width, 10.404 eV. Using converged parameters, the band width will be
 10.54 eV (see Bruneval[2006]). This is in excellent agreement with the
@@ -3076,7 +3076,7 @@ copy the WFK file (tgw2_1o_WFK) to tgw2_4i_WFK, and the screening file
 (tgw2_2o_SCR) to tgw2_4i_SCR. Then run the calculation (it should take about 2
 minutes on a 3 GHz PC).</p>
 <p>Compared to the previous file (tgw2_3.in), the input file contains two
-additional keywords: <a class="wikilink codevar-link" href="../../../input_variables/gw#nfreqsp">nfreqsp</a>, and <a class="wikilink codevar-link" href="../../../input_variables/gw#freqspmax">freqspmax</a>. Also, the computation of
+additional keywords: <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqsp">nfreqsp</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw#freqspmax">freqspmax</a>. Also, the computation of
 the GW self-energy is done only at the Gamma point.</p>
 <p>The spectral function is written in the file tgw2_4o_SIG. It is a simple text
 file. It contains, as a function of the frequency (eV), the real part of the
