@@ -259,8 +259,8 @@ class Variable(yaml.YAMLObject):
     def website_ilink(self, label=None):
         """String with the URL of the web page."""
         label = self.name if label is None else str(label)
-        url = "/input_variables/%s/#%s" % (self.varset, self.name)
-        return '<a href="%s" target="_blank">%s</a>' % (url, label)
+        url = "/input_variables/%s#%s" % (self.varset, self.name)
+        return '<a href="%s">%s</a>' % (url, label)
 
     def to_markdown(self):
         lines = []; app = lines.append
@@ -543,7 +543,7 @@ class InputVariables(OrderedDict):
             else:
                 html += '<div role="tabpanel" class="tab-pane" id="%s">\n%s\n</div>\n' % (id_char, p)
 
-        return html + "</div> </div>"
+        return html + "</div></div>"
 
     @add_fig_kwargs
     def plot_networkx(self, mode="network", with_edge_labels=False, ax=None,

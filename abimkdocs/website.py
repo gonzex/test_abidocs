@@ -763,14 +763,14 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     # Handle [[dipdip@anaddb|text]]
                     vname, code = name.split("@")
                     var = self.variables_code[code][vname]
-                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    url = "/input_variables/%s#%s" % (var.varset, var.name)
                     if text is None: text = name
                     html_classes.append("codevar-link")
 
                 elif name in self.variables_code["abinit"]:
                     # Handle link to Abinit variable e.g. [[ecut|text]]
                     var = self.variables_code["abinit"][name]
-                    url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                    url = "/input_variables/%s#%s" % (var.varset, var.name)
                     html_classes.append("codevar-link")
                     if text is None:
                         text = var.name if not var.is_internal else "%%%s" % var.name
@@ -804,7 +804,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     content = ("This is an external parameter\n"
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
-                    url, text = "/input_variables/external_parameters/#%s", name
+                    url, text = "/input_variables/external_parameters#%s", name
                     a.add_popover(title=self.variables_code.external_params[name], content=content)
 
                 else:
@@ -819,7 +819,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 # Handle [[anaddb:asr|text]] or [[abinit:ecut|text]]
                 assert section is None
                 var = self.variables_code[namespace][name]
-                url = "/input_variables/%s/#%s" % (var.varset, var.name)
+                url = "/input_variables/%s#%s" % (var.varset, var.name)
                 html_classes.append("codevar-link")
                 if text is None:
                     text = var.name if not var.is_internal else "%%%s" % var.name
@@ -867,7 +867,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 # Handle [[varset:BSE|text]]
                 assert section is None
                 if name == "allvars":
-                    url = "/input_variables/index/"
+                    url = "/input_variables/index"
                 else:
                     url = "/input_variables/%s" % name
                 if text is None: text = "%s varset" % name
@@ -1181,5 +1181,5 @@ class AbinitStats(object):
 
     def json_dump(self, path):
         import json
-        with open(path, "wt") as fh:
+        with io.open(path, "wt", encoding="utf-8") as fh:
             json.dump(self.data, fh)
