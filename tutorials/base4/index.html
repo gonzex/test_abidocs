@@ -2955,12 +2955,12 @@ You can also copy the file ~abinit/tests/tutorial/Input/tbase4_1.in in Work4.
 This is your input file. You should edit it, read it carefully, and have a
 look at the following &ldquo;new&rdquo; input variables, and their explanation:</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> 
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a> 
 Note also the following:<br />
-1) You will work at fixed <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> (=6Ha). It is implicit that in &ldquo;real life&rdquo;,
-you should do a convergence test with respect to <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> &hellip; Here, a suitable
-<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> is given to you. It will allow to obtain 0.2% relative accuracy on
+1) You will work at fixed <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> (=6Ha). It is implicit that in &ldquo;real life&rdquo;,
+you should do a convergence test with respect to <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> &hellip; Here, a suitable
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> is given to you. It will allow to obtain 0.2% relative accuracy on
 lattice parameters. Note that this is the softer pseudopotential of those that
 we have used until now: the 01h.pspgth for H needed 30 Ha (it was rather
 hard), the 14si.pspnc for Si needed 8 Ha.<br />
@@ -3013,7 +3013,7 @@ You might try the following series of grids:</p>
 </pre></div>
 
 
-<p>with the associated <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a>:</p>
+<p>with the associated <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a>:</p>
 <div class="codehilite"><pre><span></span>  nkpt1  2
   nkpt2 10
   nkpt3 28
@@ -3024,8 +3024,8 @@ You might try the following series of grids:</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase4_2.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase4_2.out is a reference output file. The run
 might take about thirty seconds on a PC 3 GHz.</p>
-<p>You will see that, FOR THE PARTICULAR VALUE OF <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>=0.05 Ha, the lattice
-parameter is already converged with <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a>=10 :</p>
+<p>You will see that, FOR THE PARTICULAR VALUE OF <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>=0.05 Ha, the lattice
+parameter is already converged with <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a>=10 :</p>
 <div class="codehilite"><pre><span></span>            acell1     7.5588968086E+00  7.5588968086E+00  7.5588968086E+00 Bohr
             acell2     7.5070431499E+00  7.5070431499E+00  7.5070431499E+00 Bohr
             acell3     7.5016877756E+00  7.5016877756E+00  7.5016877756E+00 Bohr
@@ -3034,25 +3034,25 @@ parameter is already converged with <a class="wikilink codevar-link" href="../..
 
 
 <p>Note that there is usually a STRONG cross-convergence effect between the
-number of k points and the value of the broadening, <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>.<br />
-The right procedure is: for each value of <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>, to get the convergence
+number of k points and the value of the broadening, <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>.<br />
+The right procedure is: for each value of <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>, to get the convergence
 with respect to the number of k points, then to compare the k-point converged
-values for different values of <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>.</p>
-<p>In what follows, we will restrict ourselves to the grids with <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a>=2, 10
+values for different values of <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>.</p>
+<p>In what follows, we will restrict ourselves to the grids with <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a>=2, 10
 and 28.</p>
 <h2 id="3-the-convergence-study-with-respect-to-both-number-of-k-points-and-broadening">3 The convergence study with respect to both number of k points AND broadening<a class="headerlink" href="#3-the-convergence-study-with-respect-to-both-number-of-k-points-and-broadening" title="Permanent link">&para;</a></h2>
 <p>factor (tsmear)</p>
-<p>The theoretical convergence rate for <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> ending to 0, in the case of
-<a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a>=4, is quartic. This is obtained in the hypothesis of infinitely
-dense k point grid. We will check the evolution of <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> as a function of
-<a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>, for the following values of <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> : 0.01, 0.02, 0.03 and
+<p>The theoretical convergence rate for <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a> ending to 0, in the case of
+<a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a>=4, is quartic. This is obtained in the hypothesis of infinitely
+dense k point grid. We will check the evolution of <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> as a function of
+<a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>, for the following values of <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a> : 0.01, 0.02, 0.03 and
 0.04. Use the double-loop capability of the multi-dataset mode, with the
-<a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> changes in the INNER loop. This will saves CPU time, as the
+<a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a> changes in the INNER loop. This will saves CPU time, as the
 wavefunctions of the previous dataset will be excellent (no transfer to
 different k points).</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase4_3.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase4_3.out is a reference output file.</p>
-<p>From the output file, here is the evolution of <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> :</p>
+<p>From the output file, here is the evolution of <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> :</p>
 <div class="codehilite"><pre><span></span>            acell11    7.5587661702E+00  7.5587661702E+00  7.5587661702E+00 Bohr
             acell12    7.5587696944E+00  7.5587696944E+00  7.5587696944E+00 Bohr
             acell13    7.5587696871E+00  7.5587696871E+00  7.5587696871E+00 Bohr
@@ -3069,24 +3069,24 @@ different k points).</p>
 
 
 <p>These data should be analyzed properly.</p>
-<p>For <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>=0.01, the converged value, contained in acell31, must be
+<p>For <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>=0.01, the converged value, contained in acell31, must be
 compared to acell11 and acell21: between acell21 and acell31, the difference
 is below 0.2%. acell31 can be considered to be converged with respect to the
-number of k-points, at fixed <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>.<br />
+number of k-points, at fixed <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>.<br />
 This tsmear being the lowest one, it is usually the most difficult to
 converge, and the values acell31,32,33 and 34 are indeed well-converged with
 respect to the k-point number.<br />
-The use of the largest <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>(=0.04), giving acell34, induces only a small
-error in the lattice parameter. For that particular value of <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>, one
+The use of the largest <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>(=0.04), giving acell34, induces only a small
+error in the lattice parameter. For that particular value of <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>, one
 can use the second k-point grid, giving acell24.</p>
 <p>So to <strong>summarize</strong>:<br />
 we can choose to work with a 10 k-point grid in the irreducible Brillouin
-zone, and the associated <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>=0.04, with less than 0.1% error on the
+zone, and the associated <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>=0.04, with less than 0.1% error on the
 lattice parameter.<br />
 NOTE that this error due to the Brillouin zone sampling could add to the error
-due to the choice of <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> (that was mentioned previously to be on the
+due to the choice of <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> (that was mentioned previously to be on the
 order of 0.2%).</p>
-<p>In what follows, we will stick to these values of <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>, and
+<p>In what follows, we will stick to these values of <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>, and
 try to use k-point grids with a similar resolution.</p>
 <p>Our final value for the aluminum lattice parameter, in the LDA, using the
 13al.981214.fhi pseudopotential, is thus 7.5041 Bohr. Note: for historical
@@ -3121,7 +3121,7 @@ aluminum based on these vectors, but a doubled cell. We will first compute the
 total energy associated with this doubled cell. This is not strictly needed,
 but it is a valuable intermediate step towards the study of the surface.</p>
 <p>You might start from tbase4_3.in.<br />
-You have to change <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>. Still, try to keep <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> at the values of
+You have to change <a class="wikilink codevar-link" href="../../../input_variables/basic#rprim">rprim</a>. Still, try to keep <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> at the values of
 bulk aluminum that were determined previously. But it is not all: the most
 difficult part in the passage to this doubled cell is the definition of the
 k-point grid. Of course, one could just take a homogeneous simple cubic grid
@@ -3140,7 +3140,7 @@ of atoms in the cell. For example, the corresponding product for the usual 10
 k-point grid is <code class="codehilite">4x4x4 x 4 x 1 = 256</code> . In the file tbase4_4.in, one has
 <code class="codehilite">4x4x4 x 2 x 2 = 256</code> . The grids of k points should not be too anisotropic
 for this rough estimation to be valid.</p>
-<p>Note also the input variables <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate#chkprim">chkprim</a> in this input file.</p>
+<p>Note also the input variables <a class="wikilink codevar-link" href="../../../input_variables/basic#rprim">rprim</a> and <a class="wikilink codevar-link" href="../../../input_variables/gstate#chkprim">chkprim</a> in this input file.</p>
 <p>So, you run tbase4_4.in (only a few seconds, the reference file is
 ~abinit/tests/tutorial/Refs/tbase4_4.out), and you find the following total
 energy:</p>
@@ -3171,7 +3171,7 @@ double of the previous cell (that had two layers of Aluminum atoms along the
 important contribution to the total energy.</li>
 </ul>
 <p>You should start from tbase4_4.in .<br />
-You have to modify <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a> (double the cell along <code class="codehilite">[0 0 1]</code>), the atomic
+You have to modify <a class="wikilink codevar-link" href="../../../input_variables/basic#rprim">rprim</a> (double the cell along <code class="codehilite">[0 0 1]</code>), the atomic
 positions, as well as the k point mesh. For the latter, it is supposed that
 the electrons cannot propagate from one slab to its image in the <code class="codehilite">[0 0 1]</code>
 direction, so that the k_z component of the special k points can be taken 0:
@@ -3229,10 +3229,10 @@ file. The run is on the order of thirty seconds on a PC 3 GHz.</p>
 </pre></div>
 
 
-<p>The input variable <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a> was intentionally set to the rather low value of
+<p>The input variable <a class="wikilink codevar-link" href="../../../input_variables/basic#nstep">nstep</a> was intentionally set to the rather low value of
 6, to warn you about possible convergence difficulties. The SCF convergence
 might indeed get more and more difficult with cell size. This is because the
-default preconditioner (see the notice of the input variable <a class="wikilink codevar-link" href="../../input_variables/gstate#dielng">dielng</a>) is
+default preconditioner (see the notice of the input variable <a class="wikilink codevar-link" href="../../../input_variables/gstate#dielng">dielng</a>) is
 not very good for the metal+vacuum case.<br />
 For the interpretation of the present run, this is not critical, as the
 convergence criterion was close of being fulfilled, but one should keep this
@@ -3285,7 +3285,7 @@ straightforward to set up, but will also change the preconditioner. One could
 use an effective dielectric constant of about 3 or 5, with a rather small
 mixing coefficient, on the order of 0.2. However, there is also another
 possibility, using an estimation of the dielectric matrix governed by
-<a class="wikilink codevar-link" href="../../input_variables/gstate#iprcel">iprcel</a>=45 . For comparison with the previous treatment of SCF, one can
+<a class="wikilink codevar-link" href="../../../input_variables/gstate#iprcel">iprcel</a>=45 . For comparison with the previous treatment of SCF, one can
 recompute the result with 3 aluminum layers.</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase4_7.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase4_7.out is a reference output file. This run

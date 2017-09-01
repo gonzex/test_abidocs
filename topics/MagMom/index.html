@@ -2866,7 +2866,7 @@ code, wherein the magnetization around each atom is pushed to a desired
 <script type="math/tex">\vec{m}</script>, or only on the direction <strong>m</strong>. This is mainly useful for non
 collinear systems, where the direction and amplitude of the magnetic moment
 can change. The method follows that used in the Quantum Espresso
-<a class="wikilink citation-link" data-content="Quantum mechanical modeling of nano magnetism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#moscaconte2007">[Moscaconte2007]</a> and VASP <a class="wikilink citation-link" data-content="Constrained density functional for noncollinear magnetism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#ma2015">[Ma2015]</a> codes: a Lagrangian constraint is
+<a class="wikilink citation-link" data-content="Quantum mechanical modeling of nano magnetism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#moscaconte2007">[Moscaconte2007]</a> and VASP <a class="wikilink citation-link" data-content="Constrained density functional for noncollinear magnetism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ma2015">[Ma2015]</a> codes: a Lagrangian constraint is
 applied to the energy, and works through a resulting term in the potential,
 which acts on the different spin components. The magnetization in a sphere Ωi
 around atom i at position **R**i is calculated as:</p>
@@ -2877,14 +2877,14 @@ around atom i at position **R**i is calculated as:</p>
 near the edge of the sphere around <strong>R**i, over a thickness rs (by default
 0.05 bohr, and f is set to 0 for | **r</strong>-**R**i|&gt; rs). This minimizes
 discontinuous variations of the potential from iteration to iteration.</p>
-<p>The constraint is managed by the keyword <a class="wikilink codevar-link" href="../../input_variables/gstate#magconon">magconon</a>. Value 1 gives a
+<p>The constraint is managed by the keyword <a class="wikilink codevar-link" href="../../../input_variables/gstate#magconon">magconon</a>. Value 1 gives a
 constraint on the direction (<strong>c</strong> = <strong>m</strong> - <strong>s**i (**s**i.**m</strong>), value 2
 gives a full constraint on the vector (<strong>c</strong> = <strong>m</strong> - **s**i), with respect
-to the keyword <a class="wikilink codevar-link" href="../../input_variables/gstate#spinat">spinat</a> (**s**i above), giving a 3-vector for each atom. The
+to the keyword <a class="wikilink codevar-link" href="../../../input_variables/gstate#spinat">spinat</a> (**s**i above), giving a 3-vector for each atom. The
 latter is quite a stringent constraint, and often may not converge. The former
 value usually works, provided sufficient precision is given for the
 calculation of the magnetic moment (kinetic energy cutoff in particular).</p>
-<p>The strength of the constraint is given by the keyword <a class="wikilink codevar-link" href="../../input_variables/gstate#magcon_lambda">magcon_lambda</a> (λ
+<p>The strength of the constraint is given by the keyword <a class="wikilink codevar-link" href="../../../input_variables/gstate#magcon_lambda">magcon_lambda</a> (λ
 above - real valued). Typical values are 10-2 but vary strongly with system
 type: this value should be started small (here the constraint may not be
 enforced fully) and increased. A too large value leads to oscillations of the
@@ -2896,15 +2896,15 @@ constraint is fully satisfied).</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#magcon_lambda">magcon_lambda</a>  MAGnetization CONstraint LAMBDA parameter</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#magconon">magconon</a>  turn MAGnetization CONstraint ON</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#spinat">spinat</a>  SPIN for AToms</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#magcon_lambda">magcon_lambda</a>  MAGnetization CONstraint LAMBDA parameter</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#magconon">magconon</a>  turn MAGnetization CONstraint ON</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#spinat">spinat</a>  SPIN for AToms</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Test magnetic constraint code. Variables magconon and magcon_lambda. BCC iron with low cutoff and kpts,  non collinear spin case with nspden=4 imposed. First normal case then constrain direction only (DS2) and full value of vector (DS3)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t05.in">tests/v7/Input/t05.in</a></li>
+<li><a class="wikilink test-link" data-content="Test magnetic constraint code. Variables magconon and magcon_lambda. BCC iron with low cutoff and kpts,  non collinear spin case with nspden=4 imposed. First normal case then constrain direction only (DS2) and full value of vector (DS3)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t05.in">tests/v7/Input/t05.in</a></li>
 </ul>
                 
                   

@@ -3018,7 +3018,7 @@
 <p>This lesson discusses how to calculate the macroscopic dielectric function
 including excitonic effects within the Bethe-Salpeter (BS) approach.
 Crystalline silicon is used as test case. A brief description of the formalism
-can be found in the Bether-Salpeter noted (<a class="wikilink" href="../FAKE_URL">FAKE_URL</a>).</p>
+can be found in the Bether-Salpeter noted (<a class="wikilink" href="../../../Users/gmatteo/git_repos/abidocs/FAKE_URL">FAKE_URL</a>).</p>
 <p>The user should be familiarized with the four basic lessons of ABINIT and the
 first lesson of the GW tutorial, see the <a href="../lesson_welcome.html">tutorial home
 page</a>.</p>
@@ -3061,13 +3061,13 @@ files!</p>
 <p>Indeed this approach strongly differs from the one we followed in the GW
 tutorials, but there is a good reason for doing so. It is anticipated that
 optical spectra converge slowly with the Brillouin zone sampling, and that
-symmetry-breaking k-meshes lead to faster convergence in <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a> than the
+symmetry-breaking k-meshes lead to faster convergence in <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a> than the
 standard symmetric k-meshes commonly used for ground-state or GW calculations.</p>
 <p>This explains the bizarre shift but still why two WFK files? Why don&rsquo;t we
 simply use the WFK file on the shifted k-mesh to compute the screening?</p>
 <p>The reason is that a screening calculation done with many empty bands on the
 shifted k-mesh would be very memory demanding as the code should allocate a
-huge portion of memory whose size scales with (<a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> * <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a>), and no
+huge portion of memory whose size scales with (<a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> * <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a>), and no
 symmetry can be used to reduce the number of k-points.</p>
 <p>To summarize: the WFK with the symmetric k-point sampling and 100 bands will
 be used to compute the screening, while the WFK file with the shifted k-mesh
@@ -3081,7 +3081,7 @@ constructed with the shifted k-mesh.</p>
 <p>After this lengthy discussion needed to clarify this rather technical point,
 we can finally proceed to analyze the screening computation performed in the
 last dataset of tbs_1.in.</p>
-<p>The SCR file is calculated in dataset 4 using <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=100 and <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>
+<p>The SCR file is calculated in dataset 4 using <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=100 and <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>
 6.0 Ha. In the <a href="../lesson_gw1.html">first lesson</a> of the GW tutorial, these
 values were found to give QP energies converged within 0.01 eV, so we are
 confident that our SCR file is well converged and it can be safely used for
@@ -3097,7 +3097,7 @@ static limit of the screened interaction is needed to construct the Coulomb
 term of the BS Hamiltonian. Using a single frequency allows us to save some
 CPU time in the screening part, but keep in mind that this SCR file can only
 be used either for Bethe-Salpeter computations or for GW calculations
-employing the plasmon-pole models corresponding to <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=3,4.</p>
+employing the plasmon-pole models corresponding to <a class="wikilink codevar-link" href="../../../input_variables/gw#ppmodel">ppmodel</a>=3,4.</p>
 <p>At this point the calculation should have completed, but there&rsquo;s still one
 thing that we have to do before moving to the next paragraph.</p>
 <p>As we said, we will need the WFK file on the shifted k-mesh and the SCR file
@@ -3142,12 +3142,12 @@ to the next section where we discuss the most important variables governing a
 typical BS computation.</p>
 <h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <h4 id="2a-the-structure-of-the-input-file">** 2.a The structure of the input file.**<a class="headerlink" href="#2a-the-structure-of-the-input-file" title="Permanent link">&para;</a></h4>
-<p>First we need to set <a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>=99 to call the BSE routines</p>
+<p>First we need to set <a class="wikilink codevar-link" href="../../../input_variables/gstate#optdriver">optdriver</a>=99 to call the BSE routines</p>
 <div class="codehilite"><pre><span></span>optdriver  99        # BS calculation
 </pre></div>
 
 
-<p>The variables <a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../input_variables/files#irdscr">irdscr</a> are similar to other &ldquo;ird&rdquo; variables
+<p>The variables <a class="wikilink codevar-link" href="../../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../../input_variables/files#irdscr">irdscr</a> are similar to other &ldquo;ird&rdquo; variables
 of ABINIT and are used to read the files produced in the previous paragraph</p>
 <div class="codehilite"><pre><span></span>irdwfk  1     # Read the WFK file produced in tbs_1 
 irdscr  1     # Read the SCR file produced in tbs_1
@@ -3169,22 +3169,22 @@ bs_coupling       0       # Tamm-Dancoff approximation.
 </pre></div>
 
 
-<p>The value <a class="wikilink codevar-link" href="../../input_variables/bse#bs_calctype">bs_calctype</a>=1 specifies that the independent-particle
+<p>The value <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_calctype">bs_calctype</a>=1 specifies that the independent-particle
 polarizability should be costructed with the Kohn-Sham orbitals and energies
 read from the WFK file. To simulate the self-energy correction, the KS
-energies are corrected with a scissors operator of energy <a class="wikilink codevar-link" href="../../input_variables/gw#mbpt_sciss">mbpt_sciss</a>= 0.8
+energies are corrected with a scissors operator of energy <a class="wikilink codevar-link" href="../../../input_variables/gw#mbpt_sciss">mbpt_sciss</a>= 0.8
 eV. This permits us to avoid a cumbersome GW calculation for each state
 included in our transition space. The use of the scissors operator is a
 reasonable approximation for silicon but it might fail in more complicated
 systems in which the GW corrections cannot be simulated in terms of a simple
 rigid shift of the initial KS bands structure.</p>
 <p>The remaining three variables specify how to construct the excitonic
-Hamiltonian. <a class="wikilink codevar-link" href="../../input_variables/bse#bs_exchange_term">bs_exchange_term</a>=1 tells the program to calculate the exchage
+Hamiltonian. <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_exchange_term">bs_exchange_term</a>=1 tells the program to calculate the exchage
 part of the kernel, hence this calculation includes local-field effects. The
-variable <a class="wikilink codevar-link" href="../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a> is used to select among different options that
+variable <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a> is used to select among different options that
 are available for the Coulomb term (please take some time to read the
 description of the variable and the relevant equations in the Bethe-Salpeter
-notes (<a class="wikilink" href="../FAKE_URL">FAKE_URL</a>). Finally <a class="wikilink codevar-link" href="../../input_variables/bse#bs_coupling">bs_coupling</a>=0 specifies that the off-
+notes (<a class="wikilink" href="../../../Users/gmatteo/git_repos/abidocs/FAKE_URL">FAKE_URL</a>). Finally <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coupling">bs_coupling</a>=0 specifies that the off-
 diagonal coupling blocks should be neglected (Tamm-Dancoff approximation).
 This particular combination of parameters thus corresponds to a Bethe-Salpeter
 calculation within the Tamm-Dancoff approximation with local field effects
@@ -3199,7 +3199,7 @@ nband             8
 <p>In this case all the bands around the gap whose index is between 2 and 8 are
 included in the basis set.</p>
 <p>The frequency mesh for the macroscopic dielectric function is specified
-through <a class="wikilink codevar-link" href="../../input_variables/bse#bs_freq_mesh">bs_freq_mesh</a></p>
+through <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_freq_mesh">bs_freq_mesh</a></p>
 <div class="codehilite"><pre><span></span>bs_freq_mesh 0 6 0.02 eV  # Frequency mesh.
 </pre></div>
 
@@ -3209,7 +3209,7 @@ eV with a step of 0.02 eV. The number of frequency points in the mesh does not
 have any significant effect on the CPU time, but it is important to stress
 that the number of bands included in the transition space defines, in
 conjunction with the number of k-points, the frequency range that can be
-described. As a consequence <a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> should be subject to
+described. As a consequence <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> should be subject to
 an accurate converge study.</p>
 <p>Then we have the parameters that define and control the algorithm employed to
 calculate the macroscopic dielectric function</p>
@@ -3220,17 +3220,17 @@ zcut               0.15 eV # Complex shift to avoid divergences in the continued
 </pre></div>
 
 
-<p><a class="wikilink codevar-link" href="../../input_variables/bse#bs_algorithm">bs_algorithm</a> specifies the algorithm used to calculate the macroscopic
+<p><a class="wikilink codevar-link" href="../../../input_variables/bse#bs_algorithm">bs_algorithm</a> specifies the algorithm used to calculate the macroscopic
 dielectric function. In this case we use the iterative Haydock technique whose
-maximum number of iterations is given by <a class="wikilink codevar-link" href="../../input_variables/bse#bs_haydock_niter">bs_haydock_niter</a>. The iterative
+maximum number of iterations is given by <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_haydock_niter">bs_haydock_niter</a>. The iterative
 algorithm stops when the difference between two consecutive evaluations of the
-optical spectra is less than <a class="wikilink codevar-link" href="../../input_variables/bse#bs_haydock_tol">bs_haydock_tol</a>. The input variable <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a>
+optical spectra is less than <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_haydock_tol">bs_haydock_tol</a>. The input variable <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a>
 gives the complex shift to avoid divergences in the continued fraction. From a
 physical point of view, this parameters mimics the experimental broadening of
 the absorption peaks. In this test, due to the coarseness of the k-mesh, we
 have to use a value slightly larger than the default one (0.1 eV) in order to
 facilitate the convergence of the Haydock algorithm. Ideally, one should make
-a convergence study decreasing the value of <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> for increasing number of
+a convergence study decreasing the value of <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a> for increasing number of
 k-points.</p>
 <p>The k-point sampling is specified by the set of variables.</p>
 <div class="codehilite"><pre><span></span># Definition of the k-point grid
@@ -3242,8 +3242,8 @@ chksymbreak 0             # Mandatory for using symmetry-breaking k-meshes in th
 </pre></div>
 
 
-<p>The values of <a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#nshiftk">nshiftk</a>, and <a class="wikilink codevar-link" href="../../input_variables/basic#shiftk">shiftk</a> MUST equal
-the ones used to specify the grid for the WFK file. <a class="wikilink codevar-link" href="../../input_variables/gstate#chksymbreak">chksymbreak</a>=0 is used
+<p>The values of <a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#nshiftk">nshiftk</a>, and <a class="wikilink codevar-link" href="../../../input_variables/basic#shiftk">shiftk</a> MUST equal
+the ones used to specify the grid for the WFK file. <a class="wikilink codevar-link" href="../../../input_variables/gstate#chksymbreak">chksymbreak</a>=0 is used
 to bypass the check on symmetry breaking that, otherwise, would make the code
 stop.</p>
 <p>The last section of the input file</p>
@@ -3258,7 +3258,7 @@ matrix elements of the dipole operator. We have already encountered these
 variables in the <a href="../lesson_gw1.html">first lesson</a> of the GW tutorial so their
 meaning is (hopefully) familiar to you. A more detailed discussion of the role
 played by these variables in the BS code can be found in the Bether-Salpeter
-notes<a class="wikilink" href="../FAKE_URL">FAKE_URL</a>.</p>
+notes<a class="wikilink" href="../../../Users/gmatteo/git_repos/abidocs/FAKE_URL">FAKE_URL</a>.</p>
 <h4 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <h4 id="2c-output-files">** 2.c Output files.**<a class="headerlink" href="#2c-output-files" title="Permanent link">&para;</a></h4>
 <p>The output file, tbs_2.out, reports the basic parameters of the calculation
@@ -3290,10 +3290,10 @@ content of each output file.</p>
 <p>This binary file stores the upper triangle of the resonant block (the matrix
 is Hermitian hence only the non-redundant part is computed and saved on file).
 The BSR file can be used to restart the run from a previous computation using
-the variables <a class="wikilink codevar-link" href="../../input_variables/files#getbsreso">getbsreso</a> or <a class="wikilink codevar-link" href="../../input_variables/files#irdbsreso">irdbsreso</a>. This restart capability is
+the variables <a class="wikilink codevar-link" href="../../../input_variables/files#getbsreso">getbsreso</a> or <a class="wikilink codevar-link" href="../../../input_variables/files#irdbsreso">irdbsreso</a>. This restart capability is
 useful for restarting the Haydock method if convergence was not achieved or to
-execute Haydock computations with different values of <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a>. <a class="wikilink codevar-link" href="../../input_variables/files#getbsreso">getbsreso</a>
-and <a class="wikilink codevar-link" href="../../input_variables/files#irdbsreso">irdbsreso</a> are also handy if one wants to include the coupling on top
+execute Haydock computations with different values of <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a>. <a class="wikilink codevar-link" href="../../../input_variables/files#getbsreso">getbsreso</a>
+and <a class="wikilink codevar-link" href="../../../input_variables/files#irdbsreso">irdbsreso</a> are also handy if one wants to include the coupling on top
 of a pre-existing TDA calculation since the code uses two different files to
 store the resonant and the coupling block (BSC is the prefix used for the
 files storing the coupling term).</p>
@@ -3304,7 +3304,7 @@ files storing the coupling term).</p>
 coefficient of the tridiagonal matrix and the three vectors employed in the
 iterative algorithm. It is usually used to restart the algorithm if
 convergence has not been achieved (see the related input variables
-<a class="wikilink codevar-link" href="../../input_variables/files#gethaydock">gethaydock</a> and <a class="wikilink codevar-link" href="../../input_variables/files#irdhaydock">irdhaydock</a>).</p>
+<a class="wikilink codevar-link" href="../../../input_variables/files#gethaydock">gethaydock</a> and <a class="wikilink codevar-link" href="../../../input_variables/files#irdhaydock">irdhaydock</a>).</p>
 <ul>
 <li>tbs_2o_RPA_NLF_MDF and tbs_2o_GW_NLF_MDF </li>
 </ul>
@@ -3348,7 +3348,7 @@ calculation it is worth spending some time to discuss its format.</p>
 <p>By default the code calculates the macroscopic dielectric function considering
 six different directions in q-space (the three basis vectors of the reciprocal
 lattice and the three Cartesian axis). It is possible to specify custom
-directions using the input variables <a class="wikilink codevar-link" href="../../input_variables/gw#gw_nqlwl">gw_nqlwl</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#gw_qlwl">gw_qlwl</a>.</p>
+directions using the input variables <a class="wikilink codevar-link" href="../../../input_variables/gw#gw_nqlwl">gw_nqlwl</a> and <a class="wikilink codevar-link" href="../../../input_variables/gw#gw_qlwl">gw_qlwl</a>.</p>
 <p>Then comes the section with the real and the imaginary part of the macroscopic
 dielectric as a function of frequency for the different directions:</p>
 <div class="codehilite"><pre><span></span># omega [eV]    RE(eps(q=1)) IM(eps(q=1) RE(eps(q=2) ) ... 
@@ -3388,7 +3388,7 @@ The final result is reported in the figure below.</p>
 the well know band gap problem of DFT. Most importantly, the amplitude of the
 first peak is underestimated, a problem than is not solved when local-field
 effects are correctly included in the calculation.</p>
-<p>The RPA-GW results with QP corrections simulated with <a class="wikilink codevar-link" href="../../input_variables/gw#mbpt_sciss">mbpt_sciss</a> does not
+<p>The RPA-GW results with QP corrections simulated with <a class="wikilink codevar-link" href="../../../input_variables/gw#mbpt_sciss">mbpt_sciss</a> does not
 show any significant improvement over RPA-KS: the RPA-GW spectrum is just
 shifted towards higher frequencies due to opening of the gap, but the shape of
 the two spectra is very similar, in particular the amplitude of the first peak
@@ -3403,22 +3403,22 @@ is already able to capture the most important physics.</p>
 <h4 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <h4 id="2c-optional-exercises">** 2.c Optional Exercises.**<a class="headerlink" href="#2c-optional-exercises" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Change the value of the Lorentzian broadening <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> used to avoid divergences in the continued fraction. Then restart the Haydock algorithm from the _BSR and _HAYDR_SAVE files using the appropriate variables. What is the main effect of the broadening on the final spectrum. Does the number of iterations needed to converge depend on the broadening? </li>
-<li>Use the appropriate values for <a class="wikilink codevar-link" href="../../input_variables/bse#bs_exchange_term">bs_exchange_term</a> and <a class="wikilink codevar-link" href="../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a> to calculate the BS spectrum without local field effects. Compare the results obtained with and without local field effects. </li>
-<li>Modify the input file tbs_2.in so that the code reads in the resonant block produced in the previous run and calculates the spectrum employing the method based on the direct diagonalization (use <a class="wikilink codevar-link" href="../../input_variables/files#irdbsreso">irdbsreso</a> to restart the run but remember to rename the file with the resonant block). Compare the CPU time needed by the two algorithms as a function of the number of transitions in the transition space. Which one has the best scaling? </li>
+<li>Change the value of the Lorentzian broadening <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a> used to avoid divergences in the continued fraction. Then restart the Haydock algorithm from the _BSR and _HAYDR_SAVE files using the appropriate variables. What is the main effect of the broadening on the final spectrum. Does the number of iterations needed to converge depend on the broadening? </li>
+<li>Use the appropriate values for <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_exchange_term">bs_exchange_term</a> and <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a> to calculate the BS spectrum without local field effects. Compare the results obtained with and without local field effects. </li>
+<li>Modify the input file tbs_2.in so that the code reads in the resonant block produced in the previous run and calculates the spectrum employing the method based on the direct diagonalization (use <a class="wikilink codevar-link" href="../../../input_variables/files#irdbsreso">irdbsreso</a> to restart the run but remember to rename the file with the resonant block). Compare the CPU time needed by the two algorithms as a function of the number of transitions in the transition space. Which one has the best scaling? </li>
 </ul>
 <h4 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <p>**2.d Preliminary discussion about convergence studies **</p>
 <p>Converging the excitonic spectrum requires a careful analysis of many
 different parameters:</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#nshiftk">nshiftk</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#shiftk">shiftk</a> 
+<li><a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#nshiftk">nshiftk</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#shiftk">shiftk</a> 
 Since the memory requirements scale quadratically with the number of k-points
 in the <em><strong>full</strong></em> Brillouin zone <em><strong>times</strong></em> the number of valence bands
 <em><strong>times</strong></em> the number of conduction bands included in the transition space,
@@ -3431,17 +3431,17 @@ that have to be included in the transition space. The optical spectrum is
 expected to converge faster in the number of bands than the GW corrections
 since only those transitions whose energy is &ldquo;close&rdquo; to the frequency range
 under investigation are expected to contribute.</p>
-<p><a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a> usually plays a secondary role since it only affects the accuracy
+<p><a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a> usually plays a secondary role since it only affects the accuracy
 of the oscillator matrix elements. We suggest avoiding any truncation of the
-initial basis set by setting <a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a> to a value slightly larger than the
-value of <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> used to generate the WFK file. One should truncate the
+initial basis set by setting <a class="wikilink codevar-link" href="../../../input_variables/gw#ecutwfn">ecutwfn</a> to a value slightly larger than the
+value of <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> used to generate the WFK file. One should truncate the
 initial planewave basis set only when experiencing memory problems although
 this kind of problems can be usually solved by just increasing the number of
-processors or, alternatively, with an appropriate choice of <a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>.</p>
-<p>The value of <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> affects the accuracy of the matrix elements of the
+processors or, alternatively, with an appropriate choice of <a class="wikilink codevar-link" href="../../../input_variables/gw#gwmem">gwmem</a>.</p>
+<p>The value of <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> affects the accuracy of the matrix elements of the
 Coulomb term, the fundamental term that drives the creation of the excitons.
-As a consequence <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> should be subject to an accurate convergence
-test. As a rule of thumb, <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> can be chosen equal or, sometimes, even
+As a consequence <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> should be subject to an accurate convergence
+test. As a rule of thumb, <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> can be chosen equal or, sometimes, even
 smaller than the value needed to converge the GW corrections.</p>
 <p>As already stated: optical spectra converge slowly with the Brillouin zone
 sampling. The convergence in the number of k-points thus represents the most
@@ -3450,11 +3450,11 @@ study should be done once converged values for the other parameters have been
 already found.</p>
 <h2 id="3-convergence-with-respect-to-the-number-of-bands-in-the-transition-space">3 Convergence with respect to the number of bands in the transition space<a class="headerlink" href="#3-convergence-with-respect-to-the-number-of-bands-in-the-transition-space" title="Permanent link">&para;</a></h2>
 <p>In this section we take advantage of the multi-dataset capabilities of ABINIT
-to perform calculations with different values for <a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a></p>
+to perform calculations with different values for <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a></p>
 <p>Before running the test take some time to read the input file
 ~abinit/tests/tutorial/Input/tbs_3.in.</p>
 <p>The convergence in the number of transitions is performed by defining five
-datasets with different values for <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> and <a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a></p>
+datasets with different values for <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> and <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a></p>
 <div class="codehilite"><pre><span></span>ndtset     5
 bs_loband1  4 nband1  5
 bs_loband2  3 nband2  6
@@ -3466,7 +3466,7 @@ bs_loband5  1 nband5  8
 
 <p>The parameters defining how to build the excitonic Hamiltonian are similar to
 the ones used in tbs_2.in. The only difference is in the value used for
-<a class="wikilink codevar-link" href="../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a>, i.e.</p>
+<a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a>, i.e.</p>
 <div class="codehilite"><pre><span></span>bs_coulomb_term      10 # Coulomb term evaluated within the diagonal approximation.
 </pre></div>
 
@@ -3475,7 +3475,7 @@ the ones used in tbs_2.in. The only difference is in the value used for
 term.</p>
 <p>Also in this case, before running the test, we have to connect tbs_3.in to the
 WFK and the SCR file produced in the first step. Note that tbs_3.in uses
-<a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../input_variables/files#irdscr">irdscr</a> to read the external files, hence we have to create
+<a class="wikilink codevar-link" href="../../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../../input_variables/files#irdscr">irdscr</a> to read the external files, hence we have to create
 symbolic links for each dataset:</p>
 <div class="codehilite"><pre><span></span>ln -s 444_SCR tbs_3i_DS1_SCR
 ln -s 444_SCR tbs_3i_DS2_SCR
@@ -3511,26 +3511,26 @@ gnuplot&gt; rep &quot;tbs_3o_DS5_EXC_MDF&quot; u 1:3 w l
 <p>to plot on the same graphic the absorption spectrum obtained with different
 transition spaces. You should obtain a graphic similar to this one:</p>
 <p><img alt="" src="../../documents/lesson_bse/tbs3.png" /></p>
-<p>The results obtained with (<a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a>=4, <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=5) are clearly
+<p>The results obtained with (<a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a>=4, <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=5) are clearly
 unconverged as the basis set contains too few transitions that are not able to
 describe the frequency-dependence of the polarizability in the energy range
 under investigation. For a well converged spectrum, we have to include the
 three higher occupied states and the first four conduction bands (the blue
-curve corresponding to <a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a>=2, and <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=8).</p>
+curve corresponding to <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a>=2, and <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=8).</p>
 <p>Note that adding the first occupied band, curve (1-8), gives results that are
 almost on top of (2,8). This is due to the fact that, in silicon, the bottom
 of the first band is located at around 12 eV from the top of the conduction
 band therefore its inclusion does not lead to any significant improvement of
 the transition space in the frequency range [0,8] eV. For completeness, we
 also report the results obtained in a separate calculation done with
-<a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a>=2 <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=9 to show that four empty states are enough to
+<a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a>=2 <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=9 to show that four empty states are enough to
 converge the spectrum.</p>
 <p>We therefore fix the number of bands for the transition space using the
-converged values <a class="wikilink codevar-link" href="../../input_variables/bse#bs_loband">bs_loband</a>=2, <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=8, and we proceed to analyse the
+converged values <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_loband">bs_loband</a>=2, <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=8, and we proceed to analyse the
 convergence of the spectrum with respect to the number of planewaves in the
 screening.</p>
 <h4 id="for-expert-users">For expert users:<a class="headerlink" href="#for-expert-users" title="Permanent link">&para;</a></h4>
-<p>The use of <a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../input_variables/files#irdscr">irdscr</a> is not handy when we have several
+<p>The use of <a class="wikilink codevar-link" href="../../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../../input_variables/files#irdscr">irdscr</a> is not handy when we have several
 datasets that are reading the SAME external file as we are forced to use
 different names for the input of each dataset. To work around this annoyance,
 one can introduce a fictitious dataset (say dataset 99), and let the code use
@@ -3542,7 +3542,7 @@ ln -s 444_SCR         tbs_3o_DS99_SCR
 </pre></div>
 
 
-<p>provided that, in the input file, we replace <a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../input_variables/files#irdscr">irdscr</a> with</p>
+<p>provided that, in the input file, we replace <a class="wikilink codevar-link" href="../../../input_variables/files#irdwfk">irdwfk</a> and <a class="wikilink codevar-link" href="../../../input_variables/files#irdscr">irdscr</a> with</p>
 <div class="codehilite"><pre><span></span>getwfk  99              # Trick to read the same file tbs_o3_DS99_WFK in each dataset
 getscr  99              # Same trick for the SCR file
 </pre></div>
@@ -3561,14 +3561,14 @@ bs_coulomb_term 11
 
 
 <p>that instructs the code to execute four calculations where the direct term is
-constructed using different value of <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>. We also relax the diagonal-
-only approximation for the screening by setting <a class="wikilink codevar-link" href="../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a>=11 so that
+constructed using different value of <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>. We also relax the diagonal-
+only approximation for the screening by setting <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coulomb_term">bs_coulomb_term</a>=11 so that
 the non-locality of W(r,r&rsquo;) is correctly taken into account.</p>
 <p>It is important to stress that it is not necessary to recalculate the SCR file
-from scratch just to modify the value of <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> used in the BS run. The
+from scratch just to modify the value of <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> used in the BS run. The
 SCR file calculated in the preparatory step contains G-vectors whose energy
 extends up to ecuteps=6.0 Ha. This is the MAXIMUM cutoff energy that can be
-used in our convergence tests. If the value of <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> specified in the
+used in our convergence tests. If the value of <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> specified in the
 input file is smaller than the one stored on disk, the code will read a sub-
 block of the initial matrix. A WARNING message is issued if the value
 specified in the input file is larger than the one available in the SCR file.</p>
@@ -3594,7 +3594,7 @@ ln -s 444_shifted_WFK tbs_4i_DS4_WFK
 
 <p>to execute the test (it should take around 2 minutes).</p>
 <p>Once the calculation is completed, plot the spectra obtained with different
-<a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> using</p>
+<a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> using</p>
 <div class="codehilite"><pre><span></span>&gt;&gt;&gt; gnuplot
 gnuplot&gt;  p &quot;tbs_4o_DS1_EXC_MDF&quot; u 1:3 w l
 gnuplot&gt;  p &quot;tbs_4o_DS2_EXC_MDF&quot; u 1:3 w l
@@ -3604,9 +3604,9 @@ gnuplot&gt;  p &quot;tbs_4o_DS4_EXC_MDF&quot; u 1:3 w l
 
 
 <p><img alt="" src="../../documents/lesson_bse/tbs4.png" /></p>
-<p>The spectrum is found to converge quickly in <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>. The curves obtained
-with <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>=3 and 4 Ha are almost indistinguishable from each other. Our
-final estimate for <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> is therefore 3 Ha.</p>
+<p>The spectrum is found to converge quickly in <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>. The curves obtained
+with <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>=3 and 4 Ha are almost indistinguishable from each other. Our
+final estimate for <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a> is therefore 3 Ha.</p>
 <p>Note that this value is smaller than the one required to converge the QP
 corrections within 0.01 eV (in the <a href="../lesson_gw1.html">first lesson</a> of the GW
 tutorial we obtained 6.0 Ha). This is a general behavior, in the sense that
@@ -3615,7 +3615,7 @@ to truncations in the planewave expansion of W. Reasonable BS spectra are
 obtained even when W is treated within the diagonal approximation or,
 alternatively, with model dielectric functions.</p>
 <p>Note also how the two peaks are affected in a different way by the change of
-<a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>, with the first peak affected the most. This behavior is
+<a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>, with the first peak affected the most. This behavior is
 consistent with our affirmation that the first peak of silicon has a strong
 excitonic character.</p>
 <h2 id="5-convergence-with-respect-to-the-number-of-k-points">5 Convergence with respect to the number of k-points<a class="headerlink" href="#5-convergence-with-respect-to-the-number-of-k-points" title="Permanent link">&para;</a></h2>
@@ -3627,7 +3627,7 @@ q-points in the screening must be consistent with each other).</p>
 <p>The file ~abinit/tests/tutorial/Input/tbs_5.in gathers the different steps of
 a standard BS calculation (generation of two WFK file, screening calculation,
 BS run) into a single input. The calculation is done with the converged
-parameters found in the previous studies, only <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a> has been
+parameters found in the previous studies, only <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a> has been
 intentionally left undefined.</p>
 <p>Use tbs_5.in as a template for performing BS calculations with different
 k-meshes. For example, you might try to compare the three meshes 4x4x4, 5x5x5,
@@ -3661,15 +3661,15 @@ description of the spectrum at higher energies would require the inclusion of
 more k-point and, possibly, more bands so that the band dispersion is
 correctly taken into account (even the RPA spectrum does not coverge at high
 frequencies when 12x12x12 is used).</p>
-<p>It should be stressed that <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> plays a very important role in these
+<p>It should be stressed that <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a> plays a very important role in these
 converge tests. For example, the results obtained with the 8x8x8 or the
 10x10x10 k-mesh can be brought closer to the 12x12x12 by just increasing the
 Lorentzian broadening. When comparing theory with experiments, it is common to
-treat <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> as an <em>a posteriori</em> parameter chosen to produce the best
+treat <a class="wikilink codevar-link" href="../../../input_variables/gw#zcut">zcut</a> as an <em>a posteriori</em> parameter chosen to produce the best
 agreement with the experiment.</p>
 <h2 id="6-additional-exercises-optional">6 Additional exercises (optional)<a class="headerlink" href="#6-additional-exercises-optional" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Use <a class="wikilink codevar-link" href="../../input_variables/bse#bs_coupling">bs_coupling</a>=1 to perform an excitonic calculation for silicon including the coupling term. Compare the imaginary part of the macroscopic dielectric function obtained with and without coupling. Do you find significant differences? (Caveat: calculations with coupling cannot use the Haydock method and are much more CPU demanding. You might have to decrease some input parameters to have results in reasonable time.) </li>
+<li>Use <a class="wikilink codevar-link" href="../../../input_variables/bse#bs_coupling">bs_coupling</a>=1 to perform an excitonic calculation for silicon including the coupling term. Compare the imaginary part of the macroscopic dielectric function obtained with and without coupling. Do you find significant differences? (Caveat: calculations with coupling cannot use the Haydock method and are much more CPU demanding. You might have to decrease some input parameters to have results in reasonable time.) </li>
 <li>Calculate the one-shot GW corrections for silicon following the <a href="../lesson_gw1.html">first lesson</a> of the GW tutorial. Then use the _GW file produced by the code to calculate the absorption spectrum. </li>
 </ul>
 <h2 id="7-notes-on-the-mpi-implementation">7 Notes on the MPI implementation<a class="headerlink" href="#7-notes-on-the-mpi-implementation" title="Permanent link">&para;</a></h2>
@@ -3688,7 +3688,7 @@ intermediate quantities needed at run-time.</p>
 scale with the number of processors. However, for very memory demanding
 calculations, the real space orbitals can be calculated on the fly with an
 increase in computational time instead. This option is controlled by the
-second digit of the input variable <a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>.</p>
+second digit of the input variable <a class="wikilink codevar-link" href="../../../input_variables/gw#gwmem">gwmem</a>.</p>
 <p>When discussing the MPI parallelization of the Bethe-Salpeter routines, we
 have to consider the two steps separately.</p>
 <p>In the first step, the upper triangle of the resonant (coupling) block is

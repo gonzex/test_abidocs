@@ -2942,9 +2942,9 @@ ABINIT:</p>
 
 <p>In the meantime, you can read the input file and see that this is a usual
 DFT+U calculation, with U=0. This setting allows us to read the occupations of
-the Fe 3d orbitals (<a class="wikilink codevar-link" href="../../input_variables/paw#lpawu">lpawu</a> 2). The cell contains 2 atoms. This is the
+the Fe 3d orbitals (<a class="wikilink codevar-link" href="../../../input_variables/paw#lpawu">lpawu</a> 2). The cell contains 2 atoms. This is the
 minimum to get reasonable response matrices. We converge the electronic
-structure to a high accuracy (<a class="wikilink codevar-link" href="../../input_variables/basic#tolvrs">tolvrs</a> 10d-12), which usually allows to
+structure to a high accuracy (<a class="wikilink codevar-link" href="../../../input_variables/basic#tolvrs">tolvrs</a> 10d-12), which usually allows to
 determine occupations with a precision of 10d-10. The ecut is chosen very low,
 in order to accelerate calculations.<br />
 We do not suppress the writing of the _WFK file, because this is the input for
@@ -2979,18 +2979,18 @@ separately on the atoms surrounding the atom on which you apply the
 perturbation.</p>
 <p>You can generate these symmetries, in a separate run, where you specify the
 atom where the perturbation is done as a different species. From the output
-you read the number of symmetries (<a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>), the symmetry relations
-(<a class="wikilink codevar-link" href="../../input_variables/basic#symrel">symrel</a>) and the non-symmorphic vectors (<a class="wikilink codevar-link" href="../../input_variables/basic#tnons">tnons</a>tnons). This is already
+you read the number of symmetries (<a class="wikilink codevar-link" href="../../../input_variables/basic#nsym">nsym</a>), the symmetry relations
+(<a class="wikilink codevar-link" href="../../../input_variables/basic#symrel">symrel</a>) and the non-symmorphic vectors (<a class="wikilink codevar-link" href="../../../input_variables/basic#tnons">tnons</a>tnons). This is already
 done here and inserted in the tudet_2.in file. Note that you can alternatively
-just break all the symmetries (<a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>=1), or break specific symmetries by
+just break all the symmetries (<a class="wikilink codevar-link" href="../../../input_variables/basic#nsym">nsym</a>=1), or break specific symmetries by
 displacing the impurity atom in the preliminary run. However, for the
 determination of U, the positions should be the ideal positions and only the
 symmetry should be reduced.</p>
-<p>For the rest, usually it is enough to set &ldquo;<a class="wikilink codevar-link" href="../../input_variables/dev#macro_uj">macro_uj</a> 1&rdquo; to run the
-calculation of U. Note also, that the &ldquo;<a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> 1&rdquo; and the &ldquo;<a class="wikilink codevar-link" href="../../input_variables/basic#tolvrs">tolvrs</a> 1d-8&rdquo;
-need not be set explicitly, because they are the defaults with <a class="wikilink codevar-link" href="../../input_variables/dev#macro_uj">macro_uj</a> 1.</p>
+<p>For the rest, usually it is enough to set &ldquo;<a class="wikilink codevar-link" href="../../../input_variables/dev#macro_uj">macro_uj</a> 1&rdquo; to run the
+calculation of U. Note also, that the &ldquo;<a class="wikilink codevar-link" href="../../../input_variables/files#irdwfk">irdwfk</a> 1&rdquo; and the &ldquo;<a class="wikilink codevar-link" href="../../../input_variables/basic#tolvrs">tolvrs</a> 1d-8&rdquo;
+need not be set explicitly, because they are the defaults with <a class="wikilink codevar-link" href="../../../input_variables/dev#macro_uj">macro_uj</a> 1.</p>
 <p>Once the calculation tudet_2 is converged, you can have look at the output.
-You can see, that the atomic shift (<a class="wikilink codevar-link" href="../../input_variables/ffield#atvshift">atvshift</a>) is automatically set:</p>
+You can see, that the atomic shift (<a class="wikilink codevar-link" href="../../../input_variables/ffield#atvshift">atvshift</a>) is automatically set:</p>
 <div class="codehilite"><pre><span></span>         atvshift      0.00367    0.00367    0.00367    0.00367    0.00367
                        0.00367    0.00367    0.00367    0.00367    0.00367
                        0.00000    0.00000    0.00000    0.00000    0.00000
@@ -3022,11 +3022,11 @@ impurity atoms in that supercell. The column U indicates the actual U you
 calculated and should use in your further calculations. U_ASA is an estimate
 of U for more extended projectors and U_\inf is the estimate for a projector
 extended even further.</p>
-<p>Although it is enough to set &ldquo;<a class="wikilink codevar-link" href="../../input_variables/dev#macro_uj">macro_uj</a> 1&rdquo;, you can further tune your runs.
+<p>Although it is enough to set &ldquo;<a class="wikilink codevar-link" href="../../../input_variables/dev#macro_uj">macro_uj</a> 1&rdquo;, you can further tune your runs.
 As a standard, the potential shift to the 1<sup>st</sup> atom treated in DFT+U, with a
 potential shift of 0.1 eV. If you wish to determine U on the second atom you
-put &ldquo;<a class="wikilink codevar-link" href="../../input_variables/dev#pawujat">pawujat</a> 2&rdquo;. To change the size of the potential shift use e.g.
-&ldquo;<a class="wikilink codevar-link" href="../../input_variables/dev#pawujv">pawujv</a> 0.05 eV&rdquo;. Our tests show that 0.1 eV is the optimal value, but the
+put &ldquo;<a class="wikilink codevar-link" href="../../../input_variables/dev#pawujat">pawujat</a> 2&rdquo;. To change the size of the potential shift use e.g.
+&ldquo;<a class="wikilink codevar-link" href="../../../input_variables/dev#pawujv">pawujv</a> 0.05 eV&rdquo;. Our tests show that 0.1 eV is the optimal value, but the
 linear response is linear in a wide range (1-0.001 eV).</p>
 <h2 id="3-the-ujdet-utility">3 The ujdet utility<a class="headerlink" href="#3-the-ujdet-utility" title="Permanent link">&para;</a></h2>
 <p>In general the calculation of U with abinit as described above is sufficient.
@@ -3076,7 +3076,7 @@ grep URES ujdet.out
 atoms.</p>
 <p>The value of U depends strongly on the extension of the projectors used in the
 calculation. If you want to use U in LMTO-ASA calculations you can use the
-keyword <a class="wikilink codevar-link" href="../../input_variables/dev#pawujrad">pawujrad</a> in the ujdet.in file to get grips of the U you want to
+keyword <a class="wikilink codevar-link" href="../../../input_variables/dev#pawujrad">pawujrad</a> in the ujdet.in file to get grips of the U you want to
 use there. Just uncomment the line and add the ASA-radius of the specific atom
 e.g.</p>
 <div class="codehilite"><pre><span></span>  pawujrad 2.5

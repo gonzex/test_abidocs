@@ -2936,7 +2936,7 @@ problems related to the use of different pseudopotential are not examined.</li>
 <h2 id="1-summary-of-the-previous-lesson">1 Summary of the previous lesson<a class="headerlink" href="#1-summary-of-the-previous-lesson" title="Permanent link">&para;</a></h2>
 <p>We studied the H2 molecule in a big box. We used 10 Ha as cut-off energy, a
 10x10x10 Bohr^3 supercell, the local-density approximation (as well as the
-local-spin-density approximation) in the Teter parametrization (<a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>=1, the
+local-spin-density approximation) in the Teter parametrization (<a class="wikilink codevar-link" href="../../../input_variables/basic#ixc">ixc</a>=1, the
 default), and a pseudopotential from the Goedecker-Hutter-Teter table.</p>
 <p>At this stage, we compared our results:</p>
 <ul>
@@ -2983,7 +2983,7 @@ minute.</p>
 <p>These are similar to those determined in <a href="../lesson_base1.html">lesson 1</a>,
 although they have been obtained in one run. You can also check that the
 residual forces are lower than <code class="codehilite">5.0d-4</code>. Convergence issues are discussed in
-<a class="wikilink user-guide-link" href="../../user-guide/help_abinit/#7">section 7</a> of the abinit help file.<br />
+<a class="wikilink user-guide-link" href="../../../user-guide/help_abinit#7">section 7</a> of the abinit help file.<br />
 You should read it. By the way, you have read many parts of the abinit_help
 file! You are missing the sections
 <a href="../../../users/generated_files/help_abinit.html#2">2</a>,
@@ -2992,18 +2992,18 @@ file! You are missing the sections
 description of many input variables. We suggest that you finish reading
 entirely the abinit_help file now, while the knowledge of the input variables
 will come in the long run.</p>
-<p><strong>2.1.b</strong> Many convergence parameters have already been identified. We will focus only on <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>. This is because </p>
+<p><strong>2.1.b</strong> Many convergence parameters have already been identified. We will focus only on <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>. This is because </p>
 <ul>
-<li>the convergence of the SCF cycle and geometry determination are well under control thanks to <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#toldff">toldff</a> and <a class="wikilink codevar-link" href="../../input_variables/rlx#tolmxf">tolmxf</a> (this might not be the case for other physical properties)</li>
+<li>the convergence of the SCF cycle and geometry determination are well under control thanks to <a class="wikilink codevar-link" href="../../../input_variables/basic#toldfe">toldfe</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#toldff">toldff</a> and <a class="wikilink codevar-link" href="../../../input_variables/rlx#tolmxf">tolmxf</a> (this might not be the case for other physical properties)</li>
 <li>there is no k point convergence study to be done for an isolated system in a big box: no additional information is gained by adding a k-point beyond one</li>
-<li>the boxcut value is automatically chosen larger than 2 by ABINIT, see the determination of the input variable <a class="wikilink codevar-link" href="../../input_variables/gstate#ngfft">ngfft</a> by preprocessing</li>
-<li>we are using <a class="wikilink codevar-link" href="../../input_variables/rlx#ionmov">ionmov</a>=2 for the determination of the geometry.</li>
+<li>the boxcut value is automatically chosen larger than 2 by ABINIT, see the determination of the input variable <a class="wikilink codevar-link" href="../../../input_variables/gstate#ngfft">ngfft</a> by preprocessing</li>
+<li>we are using <a class="wikilink codevar-link" href="../../../input_variables/rlx#ionmov">ionmov</a>=2 for the determination of the geometry.</li>
 </ul>
 <h2 id="3-the-convergence-in-ecut-ii">3 The convergence in ecut (II)<a class="headerlink" href="#3-the-convergence-in-ecut-ii" title="Permanent link">&para;</a></h2>
-<p>For the check of convergence with respect to <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, you have the choice
+<p>For the check of convergence with respect to <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, you have the choice
 between doing different runs of the tbase2_1.in file with different values of
-<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, or doing a double loop of datasets, as proposed in
-~abinit/tests/tutorial/Input/tbase2_2.in . The values of <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> have been
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, or doing a double loop of datasets, as proposed in
+~abinit/tests/tutorial/Input/tbase2_2.in . The values of <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> have been
 chosen between 10Ha and 35Ha, by step of 5 Ha. If you want to make a double
 loop, you might benefit of reading again the <a href="../../../users/generated_files/help_abinit.html#loop">double-loop
 section</a> of the abinit_help
@@ -3062,11 +3062,11 @@ this value for the final run.</p>
 <p>Well, 30 Ha is a large kinetic energy cut-off! The pseudopotential that we are
 using for Hydrogen is rather &ldquo;hard&rdquo; &hellip;</p>
 <h2 id="4-the-convergence-in-acell">4 The convergence in acell<a class="headerlink" href="#4-the-convergence-in-acell" title="Permanent link">&para;</a></h2>
-<p>The same technique as for <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> should be now used for the convergence in
-<a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>. We will explore <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> starting from <code class="codehilite">8 8 8</code> to <code class="codehilite">18 18 18</code>, by
-step of <code class="codehilite">2 2 2</code>. We keep <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> 10 for this study. Indeed, it is a rather
+<p>The same technique as for <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> should be now used for the convergence in
+<a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>. We will explore <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> starting from <code class="codehilite">8 8 8</code> to <code class="codehilite">18 18 18</code>, by
+step of <code class="codehilite">2 2 2</code>. We keep <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> 10 for this study. Indeed, it is a rather
 general rule that there is little cross-influence between the convergence of
-<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> and the convergence of <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>. The file
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> and the convergence of <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>. The file
 ~abinit/tests/tutorial/Input/tbase2_3.in can be used as an example. The output
 data (~abinit/tests/tutorial/Refs/tbase2_3.out) are as follows:</p>
 <div class="codehilite"><pre><span></span>    etotal11   -1.1188124709E+00
@@ -3153,14 +3153,14 @@ pseudopotential, turns out to be not really easy. Of course, the number of
 states to be treated is minimal! This allows to have reasonable CPU time
 still.</p>
 <h2 id="5-the-final-calculation-in-local-spin-density-approximation">5 The final calculation in Local (Spin) Density Approximation<a class="headerlink" href="#5-the-final-calculation-in-local-spin-density-approximation" title="Permanent link">&para;</a></h2>
-<p>We now use the correct values of both <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>. Well, you should
+<p>We now use the correct values of both <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>. Well, you should
 modify the tbase2_3.in file to make a calculation with <code class="codehilite">acell 12 12 12</code> and
 <code class="codehilite">ecut 30</code>. You can still use the double loop feature with <code class="codehilite">[[udtset]] 1 2</code>
 (which reduces to a single loop), to minimize the modifications to the file.
 The file ~abinit/tests/tutorial/Input/tbase2_4.in can be taken as an example
 of input file, and ~abinit/tests/tutorial/Refs/tbase2_4.out as an example of
 output file.</p>
-<p>Since we are doing the calculation at a single (<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>) pair, the
+<p>Since we are doing the calculation at a single (<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>) pair, the
 total CPU time is not as much as for the previous determinations of optimal
 values through series calculations. However, the memory needs have still
 increased a bit.</p>
@@ -3194,11 +3194,11 @@ However, for the special case of Hydrogen, and in general pseudopotentials
 with a very small core (including only the 1s orbital), pseudopotentials
 issued from the LDA and from the GGA are very similar.</p>
 <p>So, we will not change our pseudopotential. This will save us lot of time, as
-we should not redo an <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> convergence test (ecut is often characteristic
+we should not redo an <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> convergence test (ecut is often characteristic
 of the pseudopotentials that are used in a calculation).</p>
-<p>Independently of the pseudopotential, an <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> convergence test should not
+<p>Independently of the pseudopotential, an <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> convergence test should not
 be done again, since the vacuum is treated similarly in LDA or GGA.</p>
-<p>So, our final values within GGA will be easily obtained, by setting <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a> to
+<p>So, our final values within GGA will be easily obtained, by setting <a class="wikilink codevar-link" href="../../../input_variables/basic#ixc">ixc</a> to
 11 in the input file tbase2_4.in. See ~abinit/tests/tutorial/Input/tbase2_5.in
 for an example.</p>
 <div class="codehilite"><pre><span></span>    etotal11 -1.1621428376E+00

@@ -2927,15 +2927,15 @@ for the tbase1_x.files and tbase2_x.files files. You can also copy the file
 You should edit it, read it carefully, have a look at the following &ldquo;new&rdquo;
 input variables, and their explanation :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a> </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a> (used instead of xcart) </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#nshiftk">nshiftk</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#shiftk">shiftk</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate#kptrlatt">kptrlatt</a>, (not easy &hellip; take your time !) </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#diemac">diemac</a> (compared to isolated molecules, another value is used, while <a class="wikilink codevar-link" href="../../input_variables/gstate#diemix">diemix</a> has been suppressed). </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#rprim">rprim</a> </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#xred">xred</a> (used instead of xcart) </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#nshiftk">nshiftk</a>, <a class="wikilink codevar-link" href="../../../input_variables/basic#shiftk">shiftk</a>, <a class="wikilink codevar-link" href="../../../input_variables/gstate#kptrlatt">kptrlatt</a>, (not easy &hellip; take your time !) </li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#diemac">diemac</a> (compared to isolated molecules, another value is used, while <a class="wikilink codevar-link" href="../../../input_variables/gstate#diemix">diemix</a> has been suppressed). </li>
 </ul>
-<p>Note also the following: you will work at fixed <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> (=8Ha). It is
+<p>Note also the following: you will work at fixed <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> (=8Ha). It is
 implicit that in &ldquo;real life&rdquo;, you should do a convergence test with respect to
-<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> &hellip;<br />
-Here, a suitable <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> is given to you. It will allow to obtain 0.2%
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> &hellip;<br />
+Here, a suitable <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a> is given to you. It will allow to obtain 0.2%
 relative accuracy on lattice parameters.</p>
 <p>When you have read the input file, you can run the code, as usual (it will run
 for a few seconds).<br />
@@ -2993,17 +2993,17 @@ src_line: 415
 <p>This is a typical ABINIT error message. It states what is the problem that
 causes the stop of ABINIT, then suggests that it might be due to an error in
 the input file, namely, an erroneous value of nkpt. The expected value,
-<a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a> 10. is mentioned before the notice that the input file might be
+<a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a> 10. is mentioned before the notice that the input file might be
 erroneous. Then, the file at which the problem occured is mentioned, as well
 as the number of the line in that file.</p>
-<p>As the computation of <a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a> for specific grids of k points is not an easy
+<p>As the computation of <a class="wikilink codevar-link" href="../../../input_variables/basic#nkpt">nkpt</a> for specific grids of k points is not an easy
 task, while the even more important selection of specific economical grids
 (the best ratio between the accuracy of the integration in the Brillouin zone
 and the number of k-points) is more difficult, some help to the user is
 provided by ABINIT. ABINIT is able to examine automatically different k point
 grids, and to propose the best grids for integration. This is described in the
-abinit_help file, see the input variable <a class="wikilink codevar-link" href="../../input_variables/files#prtkpt">prtkpt</a>, and the associated
-characterisation of the integral accuracy, described in <a class="wikilink codevar-link" href="../../input_variables/gstate#kptrlen">kptrlen</a>. The
+abinit_help file, see the input variable <a class="wikilink codevar-link" href="../../../input_variables/files#prtkpt">prtkpt</a>, and the associated
+characterisation of the integral accuracy, described in <a class="wikilink codevar-link" href="../../../input_variables/gstate#kptrlen">kptrlen</a>. The
 generation of lists of k-point sets is done in different test cases, in the
 directory ~abinit/tests/v2 . You can directly have a look at the output files
 in ~abinit/tests/v2/Refs , the output files for the tests 61 to 73.</p>
@@ -3013,7 +3013,7 @@ for the k point convergence study. Do not forget that the CPU time will be
 linearly proportional to the number of k points to be treated: using 10 k
 points will take five more time than using 2 k points. Even for a similar
 accuracy of the Brillouin zone integration (about the same value of
-<a class="wikilink codevar-link" href="../../input_variables/gstate#kptrlen">kptrlen</a>), it might be easy to generate a grid that will fold to 10 k
+<a class="wikilink codevar-link" href="../../../input_variables/gstate#kptrlen">kptrlen</a>), it might be easy to generate a grid that will fold to 10 k
 points in the irreducible Brillouin zone, as well as one that will fold to 2 k
 points in the irreducible Brillouin zone. The latter is clearly to be
 preferred !</p>
@@ -3024,9 +3024,9 @@ meantime, you can try the above-mentioned convergence study.</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_3.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_3.out is a reference output file. In this
 output file, you should have a look at the echo of input variables. As you
-know, these are preprocessed, and, in particular, <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#shiftk">shiftk</a> are
-used to generate the list of k points (<a class="wikilink codevar-link" href="../../input_variables/basic#kpt">kpt</a>) and their weights (<a class="wikilink codevar-link" href="../../input_variables/basic#wtk">wtk</a>).
-You should read the information about <a class="wikilink codevar-link" href="../../input_variables/basic#kpt">kpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#wtk">wtk</a>.</p>
+know, these are preprocessed, and, in particular, <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#shiftk">shiftk</a> are
+used to generate the list of k points (<a class="wikilink codevar-link" href="../../../input_variables/basic#kpt">kpt</a>) and their weights (<a class="wikilink codevar-link" href="../../../input_variables/basic#wtk">wtk</a>).
+You should read the information about <a class="wikilink codevar-link" href="../../../input_variables/basic#kpt">kpt</a> and <a class="wikilink codevar-link" href="../../../input_variables/basic#wtk">wtk</a>.</p>
 <p>From the output file, here is the evolution of total energy per unit cell:</p>
 <div class="codehilite"><pre><span></span>    etotal1  -8.8662238960E+00
     etotal2  -8.8724909739E+00
@@ -3037,10 +3037,10 @@ You should read the information about <a class="wikilink codevar-link" href="../
 
 <p>The difference between dataset 3 and dataset 4 is rather small. Even the
 dataset 2 gives an accuracy of about 0.0001 Ha<br />
-So, our converged value for the total energy, at fixed <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>, fixed
-<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, is -8.8726 Ha .</p>
+So, our converged value for the total energy, at fixed <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>, fixed
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, is -8.8726 Ha .</p>
 <h2 id="4-determination-of-the-lattice-parameters">4 Determination of the lattice parameters<a class="headerlink" href="#4-determination-of-the-lattice-parameters" title="Permanent link">&para;</a></h2>
-<p>The input variable <a class="wikilink codevar-link" href="../../input_variables/rlx#optcell">optcell</a> governs the automatic optimisation of cell
+<p>The input variable <a class="wikilink codevar-link" href="../../../input_variables/rlx#optcell">optcell</a> governs the automatic optimisation of cell
 shape and volume.<br />
 For the automatic optimisation of cell volume, use:</p>
 <div class="codehilite"><pre><span></span>optcell 1
@@ -3051,7 +3051,7 @@ ecutsm 0.5
 </pre></div>
 
 
-<p>You should read the indications about <a class="wikilink codevar-link" href="../../input_variables/rlx#dilatmx">dilatmx</a> and <a class="wikilink codevar-link" href="../../input_variables/rlx#ecutsm">ecutsm</a>.<br />
+<p>You should read the indications about <a class="wikilink codevar-link" href="../../../input_variables/rlx#dilatmx">dilatmx</a> and <a class="wikilink codevar-link" href="../../../input_variables/rlx#ecutsm">ecutsm</a>.<br />
 Do not test all the k point grids, only those with nkpt 2 and 10.</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_4.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_4.out is a reference output file.  </p>
@@ -3076,13 +3076,13 @@ is</p>
 </pre></div>
 
 
-<p>There is only a 0.13% relative difference between <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>1 and <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>2 .<br />
+<p>There is only a 0.13% relative difference between <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>1 and <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a>2 .<br />
 So, our converged LDA value for Silicon, with the 14si.pspnc pseudopotential
 (see the tbase3_x.files file) is 10.216 Bohr (actually 10.21644&hellip;), that is
 5.406 Angstrom. The experimental value is <code class="codehilite">5.431 Angstrom at 25 degreeCelsius</code>, see R.W.G. Wyckoff, Crystal structures Ed. Wiley and sons, New-York
 (1963).</p>
 <h2 id="5-computing-the-band-structure">5 Computing the band structure<a class="headerlink" href="#5-computing-the-band-structure" title="Permanent link">&para;</a></h2>
-<p>We fix the parameters <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> to the theoretical value of 3*10.216, and we
+<p>We fix the parameters <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> to the theoretical value of 3*10.216, and we
 fix also the grid of k points (the 4x4x4 FCC grid, equivalent to a 8x8x8
 Monkhorst-pack grid)<br />
 We will ask for 8 bands (4 valence and 4 conduction).</p>
@@ -3111,16 +3111,16 @@ Gamma (1 1 1)
 </ol>
 <p>_</p>
 <p>So, you should set up in your input file, for the first dataset, a usual SCF
-calculation in which you output the density (<a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a> 1), and, for the
+calculation in which you output the density (<a class="wikilink codevar-link" href="../../../input_variables/files#prtden">prtden</a> 1), and, for the
 second dataset:</p>
 <ul>
-<li>fix <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a> to -2, to make a non-self-consistent calculation ; </li>
-<li>define <a class="wikilink codevar-link" href="../../input_variables/files#getden">getden</a> -1, to take the output density of dataset 1 ; </li>
-<li>set <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> to 8 ; </li>
-<li>set <a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a> to -3, to define three segments in the brillouin Zone ; </li>
-<li>set <a class="wikilink codevar-link" href="../../input_variables/gstate#ndivk">ndivk</a> to 10 12 17 (this means a circuit defined by 4 points, with 10 divisions of the first segment, 12 divisions of the second, 17 divisions of the third) </li>
+<li>fix <a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a> to -2, to make a non-self-consistent calculation ; </li>
+<li>define <a class="wikilink codevar-link" href="../../../input_variables/files#getden">getden</a> -1, to take the output density of dataset 1 ; </li>
+<li>set <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a> to 8 ; </li>
+<li>set <a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a> to -3, to define three segments in the brillouin Zone ; </li>
+<li>set <a class="wikilink codevar-link" href="../../../input_variables/gstate#ndivk">ndivk</a> to 10 12 17 (this means a circuit defined by 4 points, with 10 divisions of the first segment, 12 divisions of the second, 17 divisions of the third) </li>
 <li>
-<p>set <a class="wikilink codevar-link" href="../../input_variables/gstate#kptbounds">kptbounds</a> to </p>
+<p>set <a class="wikilink codevar-link" href="../../../input_variables/gstate#kptbounds">kptbounds</a> to </p>
 <div class="codehilite"><pre><span></span>                0.5  0.0  0.0 # L point
             0.0  0.0  0.0 # Gamma point
             0.0  0.5  0.5 # X point
@@ -3130,9 +3130,9 @@ second dataset:</p>
 
 </li>
 <li>
-<p>set <a class="wikilink codevar-link" href="../../input_variables/gstate#enunit">enunit</a> to 1, in order to have eigenenergies in eV </p>
+<p>set <a class="wikilink codevar-link" href="../../../input_variables/gstate#enunit">enunit</a> to 1, in order to have eigenenergies in eV </p>
 </li>
-<li>the only tolerance criterion admitted for non-self-consistent calculations is <a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a>. You should set it to 1.0d-10 (or so), and suppress <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>. </li>
+<li>the only tolerance criterion admitted for non-self-consistent calculations is <a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a>. You should set it to 1.0d-10 (or so), and suppress <a class="wikilink codevar-link" href="../../../input_variables/basic#toldfe">toldfe</a>. </li>
 </ul>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_5.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_5.out is a reference output file.</p>
@@ -3152,7 +3152,7 @@ second dataset:</p>
 
 <p>One needs a graphical tool to represent all these data &hellip; (For the MAPR 2451
 lecture: try with MATLAB). In a separate file (_EIG), you will find the list
-of k-points and eigenenergies (the input variable <a class="wikilink codevar-link" href="../../input_variables/files#prteig">prteig</a> is set by default
+of k-points and eigenenergies (the input variable <a class="wikilink codevar-link" href="../../../input_variables/files#prteig">prteig</a> is set by default
 to 1).</p>
 <p>Even without a graphical tool we will have a quick look at the values at L,
 Gamma, X and Gamma again:</p>
@@ -3188,17 +3188,17 @@ Electronic structure and optical properties of semiconductors<br />
 Springer-Verlag New-York (1988).</p>
 <p>There is a subtlety that is worth to comment about. In non-self-consistent
 calculations, like those performed in the present band structure calculation,
-with <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>=-2, not all bands are converged within the tolerance <a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a>.
+with <a class="wikilink codevar-link" href="../../../input_variables/basic#iscf">iscf</a>=-2, not all bands are converged within the tolerance <a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a>.
 Indeed, the two upper bands (by default) have not been taken into account to
 apply this convergence criterion: they constitute a &ldquo;buffer&rdquo;. The number of
-such &ldquo;buffer&rdquo; bands is governed by the input variable <a class="wikilink codevar-link" href="../../input_variables/gstate#nbdbuf">nbdbuf</a>.</p>
+such &ldquo;buffer&rdquo; bands is governed by the input variable <a class="wikilink codevar-link" href="../../../input_variables/gstate#nbdbuf">nbdbuf</a>.</p>
 <p>It can happen that the highest (or two highest) band(s), if not separated by a
 gap from non-treated bands, can exhibit a very slow convergence rate. This
 buffer allows to achieve convergence of &ldquo;important&rdquo;, non-buffer bands. In the
 present case, 6 bands have been converged with a residual better than
-<a class="wikilink codevar-link" href="../../input_variables/basic#tolwfr">tolwfr</a>, while the two upper bands are less converged (still sufficiently
+<a class="wikilink codevar-link" href="../../../input_variables/basic#tolwfr">tolwfr</a>, while the two upper bands are less converged (still sufficiently
 for graphical representation of the band structure). In order to achieve the
-same convergence for all 8 bands, it is advised to use <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>=10 (that is,
+same convergence for all 8 bands, it is advised to use <a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>=10 (that is,
 8 + 2).</p>
                 
                   

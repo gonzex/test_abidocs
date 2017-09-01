@@ -2942,19 +2942,19 @@ properties)</p>
 </pre></div>
 
 
-<p>In principle, the <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> to be used should be the one corresponding to the
-optimized structure at the <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, and <a class="wikilink codevar-link" href="../../input_variables/basic#ngkpt">ngkpt</a> combined with <a class="wikilink codevar-link" href="../../input_variables/basic#nshiftk">nshiftk</a>
-and <a class="wikilink codevar-link" href="../../input_variables/basic#shiftk">shiftk</a>, chosen for the calculations. Unfortunately, for the purpose of
+<p>In principle, the <a class="wikilink codevar-link" href="../../../input_variables/basic#acell">acell</a> to be used should be the one corresponding to the
+optimized structure at the <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>, and <a class="wikilink codevar-link" href="../../../input_variables/basic#ngkpt">ngkpt</a> combined with <a class="wikilink codevar-link" href="../../../input_variables/basic#nshiftk">nshiftk</a>
+and <a class="wikilink codevar-link" href="../../../input_variables/basic#shiftk">shiftk</a>, chosen for the calculations. Unfortunately, for the purpose of
 this tutorial, in order to limit the duration of the runs, we have to work at
 an unusually low cutoff of 2.8 Ha for which the optimized lattice constant is
 unrealistic and equal to 7.45 Bohr (instead of the converged value of 10.64).
 In what follows, the lattice constant has been arbitrarily fixed to 10.53
-Bohr. For comparison, results with <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>=5 are also reported and, in that
+Bohr. For comparison, results with <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>=5 are also reported and, in that
 case, were obtained at the optimized lattice constant of 10.64 Bohr. For those
 who would like to try later, convergence tests and structural optimizations
 can be done using the file ~abinit/tests/tutorespfn/Input/tnlo_1.in. Before
 going further, you might refresh your mind concerning the other variables :
-<a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#ecutsm">ecutsm</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#dilatmx">dilatmx</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate#nbdbuf">nbdbuf</a>.</p>
+<a class="wikilink codevar-link" href="../../../input_variables/basic#ixc">ixc</a>, <a class="wikilink codevar-link" href="../../../input_variables/rlx#ecutsm">ecutsm</a>, <a class="wikilink codevar-link" href="../../../input_variables/rlx#dilatmx">dilatmx</a>, <a class="wikilink codevar-link" href="../../../input_variables/gstate#nbdbuf">nbdbuf</a>.</p>
 <h2 id="2-linear-and-non-linear-responses-from-density-functional-perturbation-theory">2 Linear and non-linear responses from density functional perturbation theory<a class="headerlink" href="#2-linear-and-non-linear-responses-from-density-functional-perturbation-theory" title="Permanent link">&para;</a></h2>
 <p>(DFPT)</p>
 <p>As a theoretical support to this section of the tutorial, you might consider
@@ -3003,13 +3003,13 @@ specify :</p>
 </pre></div>
 
 
-<p>Also, in dataset 4, it is required to impose <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a>, and <a class="wikilink codevar-link" href="../../input_variables/dfpt#prepanl">prepanl</a></p>
+<p>Also, in dataset 4, it is required to impose <a class="wikilink codevar-link" href="../../../input_variables/files#prtden">prtden</a>, and <a class="wikilink codevar-link" href="../../../input_variables/dfpt#prepanl">prepanl</a></p>
 <div class="codehilite"><pre><span></span>        prtden4    1
         prepanl4   1
 </pre></div>
 
 
-<p>The purpose for this is (i) to constrain <a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a> = 2 even in the
+<p>The purpose for this is (i) to constrain <a class="wikilink codevar-link" href="../../../input_variables/basic#kptopt">kptopt</a> = 2 even in the
 computation of phonons where ABINIT usually take advantages of symmetry
 irrespective of kptopt and (ii) compute the electric field derivatives in the
 3 directions of space, irrespective of the symmetry.</p>
@@ -3053,8 +3053,8 @@ ANADDB previously. It is located in ~abinit/src/98_main or another (build)
 directory. You might copy it, or make an alias. The present input is in
 principle very similar to the one you have used for the analysis of dynamical
 and dielectric responses except that some new flags need to be activated.</p>
-<p>For the strain perturbation you need to specify <a class="wikilink codevar-link" href="../../input_variables/anaddb#elaflag">elaflag</a>,
-<a class="wikilink codevar-link" href="../../input_variables/anaddb#piezoflag">piezoflag</a>, and <a class="wikilink codevar-link" href="../../input_variables/anaddb#instrflag">instrflag</a> :</p>
+<p>For the strain perturbation you need to specify <a class="wikilink codevar-link" href="../../../input_variables/anaddb#elaflag">elaflag</a>,
+<a class="wikilink codevar-link" href="../../../input_variables/anaddb#piezoflag">piezoflag</a>, and <a class="wikilink codevar-link" href="../../../input_variables/anaddb#instrflag">instrflag</a> :</p>
 <div class="codehilite"><pre><span></span>        elaflag 3
         piezoflag  3
         instrflag  1
@@ -3069,20 +3069,20 @@ and dielectric responses except that some new flags need to be activated.</p>
 </pre></div>
 
 
-<p><a class="wikilink codevar-link" href="../../input_variables/anaddb#nlflag">nlflag</a>=1 activates the non-linear response.</p>
-<p><a class="wikilink codevar-link" href="../../input_variables/anaddb#ramansr">ramansr</a>=1 will impose the sum rule on the first-order change of the
+<p><a class="wikilink codevar-link" href="../../../input_variables/anaddb#nlflag">nlflag</a>=1 activates the non-linear response.</p>
+<p><a class="wikilink codevar-link" href="../../../input_variables/anaddb#ramansr">ramansr</a>=1 will impose the sum rule on the first-order change of the
 electronic dielectric susceptibility under atomic displacement, hereafter
 referred to as dchi/dtau . It is a condition of invariance of chi under
 translation of the whole crystal, similar to the acoustic sum rules for
 phonons at Gamma or the charge neutrality sum rule on Z*.</p>
-<p><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtmbm">prtmbm</a>=1 will allow to get the mode by mode phonon contributions of
+<p><a class="wikilink codevar-link" href="../../../input_variables/anaddb#prtmbm">prtmbm</a>=1 will allow to get the mode by mode phonon contributions of
 the ions to the electro-optic coefficients.</p>
-<p><a class="wikilink codevar-link" href="../../input_variables/anaddb#alphon">alphon</a>=1 will allow to get the previous mode by mode contribution
+<p><a class="wikilink codevar-link" href="../../../input_variables/anaddb#alphon">alphon</a>=1 will allow to get the previous mode by mode contribution
 when aligning the eigenvectors with the cartesian axis of coordinates (in the
 input, the principal axis should always be aligned with z for a convenient
 analysis of the results).</p>
-<p>Finally, the second list of phonon, specified with <a class="wikilink codevar-link" href="../../input_variables/anaddb#nph2l">nph2l</a> and
-<a class="wikilink codevar-link" href="../../input_variables/anaddb#qph2l">qph2l</a>, must also be explicitely considered to obtain the Raman
+<p>Finally, the second list of phonon, specified with <a class="wikilink codevar-link" href="../../../input_variables/anaddb#nph2l">nph2l</a> and
+<a class="wikilink codevar-link" href="../../../input_variables/anaddb#qph2l">qph2l</a>, must also be explicitely considered to obtain the Raman
 efficiencies of longitudinal modes (in a way similar to the computation of
 frequencies of longitudinal mode frequencies at Gamma):</p>
 <div class="codehilite"><pre><span></span>        # Wave vector list no. 2
@@ -3207,7 +3207,7 @@ This is done with the file ~abinit/tests/tutorespfn/Input/tnlo_6.in, however
 with the unrealistic cutoff of 2.8 Ha. The calculation is about 2 or 3 minutes
 on a PC 3 GHz). For those who want to do it you anyway, you can copy
 ~abinit/tests/tutorespfn/Input/tnlo_6.in in your working directory. If you
-have time, you should modify the cutoff to <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>=5 Ha, in order to obtain
+have time, you should modify the cutoff to <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>=5 Ha, in order to obtain
 realistic results. So, you might as well start the run after this modification
 (the run is about two times more time-consuming than with 2.8 Ha).</p>
 <p>You can have a look at this input file. It contains 8 datasets. We need to
@@ -3291,7 +3291,7 @@ and some very small numerical noise):</p>
 </pre></div>
 
 
-<p>This value is close to that obtained at <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>=5 from DFPT (-0.099889084).
+<p>This value is close to that obtained at <a class="wikilink codevar-link" href="../../../input_variables/basic#ecut">ecut</a>=5 from DFPT (-0.099889084).
 When convergence is reached (beware, the k point convergence is extremely
 slow, much slower than for other properties), both approaches allow to get the
 right answer. You might therefore ask which approach is the most convenient

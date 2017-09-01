@@ -2875,52 +2875,52 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to to specify bands and occupation numbers, for metals or insulators with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Metallic as well as insulating systems can be treated, depending on the value
-of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a>. The default value of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> corresponds to an insulator (or
+of <a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a>. The default value of <a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a> corresponds to an insulator (or
 finite molecule): the number of bands (or states for a molecule) is deduced
 from the number of electrons brought by each pseudopotential ion, and then all
 the bands are occupied (by two electrons in case of a non-spin-polarized
 system, or by 1 electron in the cas of a spin-polarized system), and a small
 number of empty bands are added, e.g. to obtain the band gap.</p>
-<p>For a metallic system, use a value of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> between 3 and 7. ABINIT will
+<p>For a metallic system, use a value of <a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a> between 3 and 7. ABINIT will
 compute a default number of bands, including some nearly unoccupied ones, and
-find the occupation numbers. The different values of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> correspond to
-different smearing schemes (smearning defined by <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> for defining the
+find the occupation numbers. The different values of <a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a> correspond to
+different smearing schemes (smearning defined by <a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a> for defining the
 occupation numbers, e.g. Fermi broadening, the Gaussian broadening, the
 Gaussian-Hermite broadening, as well as the modifications proposed by Marzari.
 Finite temperatures can also be treated thanks to a smearing scheme
-(Verstraete scheme) using <a class="wikilink codevar-link" href="../../input_variables/gstate#tphysel">tphysel</a>.</p>
+(Verstraete scheme) using <a class="wikilink codevar-link" href="../../../input_variables/gstate#tphysel">tphysel</a>.</p>
 <p>It is possible to define manually the number of bands (input variable
-<a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>) as well as the occupation numbers (input variable <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>). This
+<a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>) as well as the occupation numbers (input variable <a class="wikilink codevar-link" href="../../../input_variables/gstate#occ">occ</a>). This
 might be useful to perform a Δ-SCF calculation for excited states.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>  Number of BANDs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>  OCCupation numbers</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a>  OCCupation OPTion</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a>  Temperature of SMEARing</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#nband">nband</a>  Number of BANDs</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#occ">occ</a>  OCCupation numbers</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/basic#occopt">occopt</a>  OCCupation OPTion</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#tsmear">tsmear</a>  Temperature of SMEARing</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal#mband">%mband</a>  Maximum number of BANDs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal#nelect">%nelect</a>  Number of ELECTrons</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/internal#mband">%mband</a>  Maximum number of BANDs</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/internal#nelect">%nelect</a>  Number of ELECTrons</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#fband">fband</a>  Factor for the number of BANDs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#nbdbuf">nbdbuf</a>  Number of BanDs for the BUFfer</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate#tphysel">tphysel</a>  Temperature (PHYSical) of the ELectrons</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#fband">fband</a>  Factor for the number of BANDs</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#nbdbuf">nbdbuf</a>  Number of BanDs for the BUFfer</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gstate#tphysel">tphysel</a>  Temperature (PHYSical) of the ELectrons</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v1:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=5 and tsmear=0.05. Designed to test the treatment of metals,  using the &quot;cold smearing&quot; of N. Marzari,  with a=-.8165 (monotonic function in the tail)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t02.in">tests/v1/Input/t02.in</a></li>
-<li><a class="wikilink test-link" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=7 and tsmear=0.05. Designed to test the treatment of metals,  with the Gaussian smearing" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t04.in">tests/v1/Input/t04.in</a></li>
+<li><a class="wikilink test-link" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=5 and tsmear=0.05. Designed to test the treatment of metals,  using the &quot;cold smearing&quot; of N. Marzari,  with a=-.8165 (monotonic function in the tail)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v1/Input/t02.in">tests/v1/Input/t02.in</a></li>
+<li><a class="wikilink test-link" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=7 and tsmear=0.05. Designed to test the treatment of metals,  with the Gaussian smearing" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v1/Input/t04.in">tests/v1/Input/t04.in</a></li>
 </ul>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Aluminum in FCC structure. For occopt=4, 5, 6, 7,  determination of the total energy at slightly different tsmear values,  and check of the dE/d(tsmear)=-kT.entropy relationship. For example,  for occopt=4,  the difference between tsmear=0.101 and tsmear=0.099 is -11.149450d-6 Ha,  while the value of -kT.entropy is -5.574709d-4Ha,  that is about 500 larger,  as expected." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t45.in">tests/v2/Input/t45.in</a></li>
-<li><a class="wikilink test-link" data-content="Aluminum in FCC structure. At fixed tsmear (=0.04),  check the convergence with respect to the number of k points,  for different occopt. The grids that are tested have respectively 10,  28,  and 60 k points in the IZB (ngkpt values are 4 4 4 4,  6 6 6 4 and 8 8 8 4 For occopt=4,  the total energy (or the enthalpy) is -2.079770 Ha,  -2.080534 Ha,  -2.080672 Ha; for occopt=5,  it is -2.079787 Ha,  -2.080563 Ha,  -2.080693 Ha; for occopt=7,  it is -2.084211 Ha,  -2.084861 Ha,  -2.084916 Ha. The latter values can be corrected by computing the mean of the total energy and the internal energy,  as described in Marzari's thesis,  for example. Thanks to this procedure,  one gets : -2.079732 Ha,  -2.080470 Ha,  and -2.080626 Ha. For information,  with a 12 12 12 4 grid (182 k points) and occopt=4,  one gets -2.080648 Ha." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t46.in">tests/v2/Input/t46.in</a></li>
+<li><a class="wikilink test-link" data-content="Aluminum in FCC structure. For occopt=4, 5, 6, 7,  determination of the total energy at slightly different tsmear values,  and check of the dE/d(tsmear)=-kT.entropy relationship. For example,  for occopt=4,  the difference between tsmear=0.101 and tsmear=0.099 is -11.149450d-6 Ha,  while the value of -kT.entropy is -5.574709d-4Ha,  that is about 500 larger,  as expected." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v2/Input/t45.in">tests/v2/Input/t45.in</a></li>
+<li><a class="wikilink test-link" data-content="Aluminum in FCC structure. At fixed tsmear (=0.04),  check the convergence with respect to the number of k points,  for different occopt. The grids that are tested have respectively 10,  28,  and 60 k points in the IZB (ngkpt values are 4 4 4 4,  6 6 6 4 and 8 8 8 4 For occopt=4,  the total energy (or the enthalpy) is -2.079770 Ha,  -2.080534 Ha,  -2.080672 Ha; for occopt=5,  it is -2.079787 Ha,  -2.080563 Ha,  -2.080693 Ha; for occopt=7,  it is -2.084211 Ha,  -2.084861 Ha,  -2.084916 Ha. The latter values can be corrected by computing the mean of the total energy and the internal energy,  as described in Marzari's thesis,  for example. Thanks to this procedure,  one gets : -2.079732 Ha,  -2.080470 Ha,  and -2.080626 Ha. For information,  with a 12 12 12 4 grid (182 k points) and occopt=4,  one gets -2.080648 Ha." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v2/Input/t46.in">tests/v2/Input/t46.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

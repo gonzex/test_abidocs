@@ -2869,28 +2869,28 @@ This expression for the correlation energy can alternatively be derived from
 many-body perturbation theory. In this context, the RPA correlation energy
 corresponds to the GW total energy.</p>
 <p>The RPA correlation energy can be expressed as an integral function of the
-dielectric matrix (see <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gonze2016">[Gonze2016]</a>). The integral over the frequencies is
+dielectric matrix (see <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">[Gonze2016]</a>). The integral over the frequencies is
 performed along the imaginary axis, where the integrand function is very
 smooth. Only a few sampling frequencies are then necessary. In ABINIT, the RPA
-correlation energy is triggered by setting the keyword <a class="wikilink codevar-link" href="../../input_variables/gw#gwrpacorr">gwrpacorr</a> to 1.</p>
+correlation energy is triggered by setting the keyword <a class="wikilink codevar-link" href="../../../input_variables/gw#gwrpacorr">gwrpacorr</a> to 1.</p>
 <p>The RPA correlation energy is a post-processed quantity from the GW module of
 ABINIT, which takes care of evaluating the dielectric matrix for several
 imaginary frequencies.</p>
 <p>The RPA correlation has been shown to capture the weak van der Waals
-interactions <a class="wikilink citation-link" data-content="Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#lebegue2010">[Lebegue2010]</a> and to drastically improve defect formation
-energies <a class="wikilink citation-link" data-content="Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bruneval2012">[Bruneval2012]</a>.</p>
+interactions <a class="wikilink citation-link" data-content="Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#lebegue2010">[Lebegue2010]</a> and to drastically improve defect formation
+energies <a class="wikilink citation-link" data-content="Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bruneval2012">[Bruneval2012]</a>.</p>
 <p>The convergence versus empty states and energy cutoff is generally very slow.</p>
 <p>It requires a careful convergence study. The situation can be improved with
-the use of an extrapolation scheme (<a class="wikilink citation-link" data-content="Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bruneval2008">[Bruneval2008]</a>,<a class="wikilink citation-link" data-content="Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#harl2010">[Harl2010]</a>).</p>
+the use of an extrapolation scheme (<a class="wikilink citation-link" data-content="Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bruneval2008">[Bruneval2008]</a>,<a class="wikilink citation-link" data-content="Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#harl2010">[Harl2010]</a>).</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwrpacorr">gwrpacorr</a>  GW RPA CORRelation energy</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#gwrpacorr">gwrpacorr</a>  GW RPA CORRelation energy</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v67mbpt:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="RPA correlation energy calculation in Si: using exact or numerication integration over the coupling constant,  using extrapolar trick or not, using the full or long-range only Coulomb interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t19.in">tests/v67mbpt/Input/t19.in</a></li>
+<li><a class="wikilink test-link" data-content="RPA correlation energy calculation in Si: using exact or numerication integration over the coupling constant,  using extrapolar trick or not, using the full or long-range only Coulomb interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v67mbpt/Input/t19.in">tests/v67mbpt/Input/t19.in</a></li>
 </ul>
                 
                   

@@ -2862,7 +2862,7 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The slowing down of a swift charged particle inside condensed matter has been
 a subject of intense interest since the advent of quantum-mechanics. The
-Lindhard formula <a class="wikilink citation-link" data-content="On the properties of a gas of charged particles" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#lindhard1954">[Lindhard1954]</a> that gives the polarizability of the free
+Lindhard formula <a class="wikilink citation-link" data-content="On the properties of a gas of charged particles" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#lindhard1954">[Lindhard1954]</a> that gives the polarizability of the free
 electron gas has been developed specifically for this purpose. The kinetic
 energy lost by the impinging particle by unit of path length is named the
 stopping power. For large velocities, the stopping power is dominated by its
@@ -2879,13 +2879,13 @@ impinging particle, Ω is the unit cell volume, N**q** is the number of
 <strong>q</strong>-points in the first Brillouin zone, and <strong>G</strong> are reciprocal lattice
 vectors.</p>
 <p>Apart from an overall factor of 2, this equation is identical to the formula
-published <a class="wikilink citation-link" data-content="Electronic stopping power of aluminum crystal" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#campillo1998">[Campillo1998]</a>.</p>
+published <a class="wikilink citation-link" data-content="Electronic stopping power of aluminum crystal" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#campillo1998">[Campillo1998]</a>.</p>
 <p>The GW module of ABINIT gives access to the full inverse dielectric function
 for a grid of frequencies ω. Then, the implementation of the above equation is
 a post-processing employing a spline interpolation of the inverse dielectric
 function in order to evaluate it at ω=<strong>v.</strong>(<strong>q</strong>+<strong>G</strong>). The energy cutoff
-on <strong>G</strong> is governed by the <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>, as in the GW module. The integer
-<a class="wikilink codevar-link" href="../../input_variables/gw#npvel">npvel</a> and the cartesian vector <a class="wikilink codevar-link" href="../../input_variables/gw#pvelmax">pvelmax</a> control the discretization of
+on <strong>G</strong> is governed by the <a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>, as in the GW module. The integer
+<a class="wikilink codevar-link" href="../../../input_variables/gw#npvel">npvel</a> and the cartesian vector <a class="wikilink codevar-link" href="../../../input_variables/gw#pvelmax">pvelmax</a> control the discretization of
 the particle velocity.</p>
 <p>Note that the absolute convergence of the random electronic stopping power is
 a delicate matter that generally requires thousands of empty states together
@@ -2893,17 +2893,17 @@ with large values of the energy cutoff.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#pvelmax">pvelmax</a>  Particle VELocity MAXimum</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#pvelmax">pvelmax</a>  Particle VELocity MAXimum</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>  Energy CUT-off for EPSilon (the dielectric matrix)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw#npvel">npvel</a>  Number of Particle VELocities</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#ecuteps">ecuteps</a>  Energy CUT-off for EPSilon (the dielectric matrix)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/gw#npvel">npvel</a>  Number of Particle VELocities</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Random stopping power within RPA and TD-LDA" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t16.in">tests/v7/Input/t16.in</a></li>
+<li><a class="wikilink test-link" data-content="Random stopping power within RPA and TD-LDA" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v7/Input/t16.in">tests/v7/Input/t16.in</a></li>
 </ul>
                 
                   

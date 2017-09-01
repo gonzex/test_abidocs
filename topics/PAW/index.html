@@ -2876,74 +2876,74 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The PAW atomic data can be used with plane waves as well as with wavelets.
 Specificities of PAW for use with planewaves are presented here. See
-<a class="wikilink topic-link" data-content="How to perform calculations on a wavelet basis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/Wavelets">Wavelets topic</a> for its use with wavelets.</p>
+<a class="wikilink topic-link" data-content="How to perform calculations on a wavelet basis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../Wavelets">Wavelets topic</a> for its use with wavelets.</p>
 <p>The way the PAW method is implemented with planewaves in ABINIT is described
-in <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#torrent2008">[Torrent2008]</a>.<br />
+in <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#torrent2008">[Torrent2008]</a>.<br />
 The use of PAW atomic data (equivalent to pseudopotential file for the norm-
 conserving case) automatically launch a PAW calculation. ABINIT is provided
-with the JTH <a class="wikilink citation-link" data-content="Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#jollet2014">[Jollet2014]</a> PAW atomic data table on the ABINIT web site.<br />
+with the JTH <a class="wikilink citation-link" data-content="Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#jollet2014">[Jollet2014]</a> PAW atomic data table on the ABINIT web site.<br />
 To perform a standard PAW calculation, the input file is the same than for a
-norm-conserving one, except that the variable <a class="wikilink codevar-link" href="../../input_variables/paw#pawecutdg">pawecutdg</a> must be specified
-(see below). In the case the input variable <a class="wikilink codevar-link" href="../../input_variables/basic#accuracy">accuracy</a> is used, the input
-variable <a class="wikilink codevar-link" href="../../input_variables/paw#pawecutdg">pawecutdg</a> is automatically used.<br />
+norm-conserving one, except that the variable <a class="wikilink codevar-link" href="../../../input_variables/paw#pawecutdg">pawecutdg</a> must be specified
+(see below). In the case the input variable <a class="wikilink codevar-link" href="../../../input_variables/basic#accuracy">accuracy</a> is used, the input
+variable <a class="wikilink codevar-link" href="../../../input_variables/paw#pawecutdg">pawecutdg</a> is automatically used.<br />
 Some physical functionalities are available only in the PAW framework: DFT+U,
 DMFT, local exact exchange,&hellip;</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawecutdg">pawecutdg</a>  PAW - Energy CUToff for the Double Grid</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawecutdg">pawecutdg</a>  PAW - Energy CUToff for the Double Grid</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#bxctmindg">bxctmindg</a>  BoX CuT-off MINimum for the Double Grid (PAW)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#mqgriddg">mqgriddg</a>  Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawcpxocc">pawcpxocc</a>  PAW - use ComPleX rhoij OCCupancies</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawlcutd">pawlcutd</a>  PAW - L angular momentum used to CUT the development in moments of the Densitites</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawlmix">pawlmix</a>  PAW - maximum L used in the spherical part MIXing</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawmixdg">pawmixdg</a>  PAW - MIXing is done (or not) on the (fine) Double Grid</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawnhatxc">pawnhatxc</a>  PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawnphi">pawnphi</a>  PAW - Number of PHI angles used to discretize the sphere around each atom.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawntheta">pawntheta</a>  PAW - Number of THETA angles used to discretize the sphere around each atom.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawnzlm">pawnzlm</a>  PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawoptmix">pawoptmix</a>  PAW - OPTion for the MIXing of the spherical part</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawovlp">pawovlp</a>  PAW - spheres OVerLaP allowed (in percentage)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawstgylm">pawstgylm</a>  PAW - option for the STorage of G_l(r).YLM(r)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawsushat">pawsushat</a>  PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawusecp">pawusecp</a>  PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawxcdev">pawxcdev</a>  PAW - choice for eXchange-Correlation DEVelopment (spherical part)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#bxctmindg">bxctmindg</a>  BoX CuT-off MINimum for the Double Grid (PAW)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#mqgriddg">mqgriddg</a>  Maximum number of Q-wavevectors for the 1-dimensional GRID  for the Double Grid in PAW</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawcpxocc">pawcpxocc</a>  PAW - use ComPleX rhoij OCCupancies</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawlcutd">pawlcutd</a>  PAW - L angular momentum used to CUT the development in moments of the Densitites</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawlmix">pawlmix</a>  PAW - maximum L used in the spherical part MIXing</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawmixdg">pawmixdg</a>  PAW - MIXing is done (or not) on the (fine) Double Grid</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawnhatxc">pawnhatxc</a>  PAW - Flag for exact computation of gradients of NHAT density in eXchange-Correlation.</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawnphi">pawnphi</a>  PAW - Number of PHI angles used to discretize the sphere around each atom.</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawntheta">pawntheta</a>  PAW - Number of THETA angles used to discretize the sphere around each atom.</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawnzlm">pawnzlm</a>  PAW - only compute Non-Zero LM-moments of the contributions to the density from the spheres</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawoptmix">pawoptmix</a>  PAW - OPTion for the MIXing of the spherical part</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawovlp">pawovlp</a>  PAW - spheres OVerLaP allowed (in percentage)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawstgylm">pawstgylm</a>  PAW - option for the STorage of G_l(r).YLM(r)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawsushat">pawsushat</a>  PAW - SUSceptibility, inclusion of HAT (compensation charge) contribution</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawusecp">pawusecp</a>  PAW - option for the USE of CPrj in memory (cprj=WF projected with NL projector)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawxcdev">pawxcdev</a>  PAW - choice for eXchange-Correlation DEVelopment (spherical part)</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal#usepaw">%usepaw</a>  USE Projector Augmented Waves method</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/internal#usepaw">%usepaw</a>  USE Projector Augmented Waves method</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#ngfftdg">ngfftdg</a>  Number of Grid points for Fast Fourier Transform : Double Grid</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev#pawprt_b">pawprt_b</a>  PAW PRinT band</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev#pawprt_k">pawprt_k</a>  PAW PRinT K-point</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawprtden">pawprtden</a>  PAW: PRinT total physical electron DENsity</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawprtdos">pawprtdos</a>  PAW: PRinT partial DOS contributions</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawprtvol">pawprtvol</a>  PAW: PRinT VOLume</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawprtwf">pawprtwf</a>  PAW: PRinT WaveFunctions</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawspnorb">pawspnorb</a>  PAW - option for SPiN-ORBit coupling</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#spnorbscl">spnorbscl</a>  SPin-ORBit SCaLing</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw#usexcnhat">usexcnhat</a>  USE eXchange-Correlation with NHAT (compensation charge density)</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#ngfftdg">ngfftdg</a>  Number of Grid points for Fast Fourier Transform : Double Grid</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/dev#pawprt_b">pawprt_b</a>  PAW PRinT band</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/dev#pawprt_k">pawprt_k</a>  PAW PRinT K-point</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawprtden">pawprtden</a>  PAW: PRinT total physical electron DENsity</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawprtdos">pawprtdos</a>  PAW: PRinT partial DOS contributions</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawprtvol">pawprtvol</a>  PAW: PRinT VOLume</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawprtwf">pawprtwf</a>  PAW: PRinT WaveFunctions</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#pawspnorb">pawspnorb</a>  PAW - option for SPiN-ORBit coupling</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#spnorbscl">spnorbscl</a>  SPin-ORBit SCaLing</li>
+<li><a class="wikilink codevar-link" href="../../../input_variables/paw#usexcnhat">usexcnhat</a>  USE eXchange-Correlation with NHAT (compensation charge density)</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to mesure the convergence of the total energy versus the variable 'ecut'. 6 datasets are performed with ecut varying from 8 Ha to 18 Ha Cut-off for the fine grid (used to transfer data from spherical meshes to FFt meshes) remain constant." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t06.in">tests/v4/Input/t06.in</a></li>
-<li><a class="wikilink test-link" data-content="Fe in BCC structure. Low cut-offs and few k-points. This test is done within GGA and (ferro-)magnetism in PAW formalism. The same job is done twice with two differents PAW datasets. First PAW dataset is Fe with a &quot;Bessel&quot; compensation charge shape function expressed analytically. SecondPAW dataset is Fe with a &quot;Bessel&quot; compensation charge shape function expressed numerically." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t08.in">tests/v4/Input/t08.in</a></li>
-<li><a class="wikilink test-link" data-content="PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t17.in">tests/v4/Input/t17.in</a></li>
-<li><a class="wikilink test-link" data-content="Test of Ca,  simple cubic,  2  k-point. Testing GS  PAW  energy and lobpcg algorithm." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t94.in">tests/v4/Input/t94.in</a></li>
+<li><a class="wikilink test-link" data-content="O in orthorhombic structure. 1 k point,  low ecut. Experimental PAW pseudopotential. The aim of this test is to mesure the convergence of the total energy versus the variable 'ecut'. 6 datasets are performed with ecut varying from 8 Ha to 18 Ha Cut-off for the fine grid (used to transfer data from spherical meshes to FFt meshes) remain constant." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t06.in">tests/v4/Input/t06.in</a></li>
+<li><a class="wikilink test-link" data-content="Fe in BCC structure. Low cut-offs and few k-points. This test is done within GGA and (ferro-)magnetism in PAW formalism. The same job is done twice with two differents PAW datasets. First PAW dataset is Fe with a &quot;Bessel&quot; compensation charge shape function expressed analytically. SecondPAW dataset is Fe with a &quot;Bessel&quot; compensation charge shape function expressed numerically." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t08.in">tests/v4/Input/t08.in</a></li>
+<li><a class="wikilink test-link" data-content="PAW: test of some variables reserved to experienced users Silicon with few k-points and low cut-off" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t17.in">tests/v4/Input/t17.in</a></li>
+<li><a class="wikilink test-link" data-content="Test of Ca,  simple cubic,  2  k-point. Testing GS  PAW  energy and lobpcg algorithm." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v4/Input/t94.in">tests/v4/Input/t94.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t06.in">tests/v5/Input/t06.in</a></li>
-<li><a class="wikilink test-link" data-content="Generate both DEN and PAWDEN files for silicon. Note that in the PAW case,  DEN files include the valence density and compensation charge,  while PAWDEN files include the valence and on-site corrections,  but not the compensation charge. Therefore,  DEN files are needed for further computations,  while PAWDEN files are useful for visualization,  AIM,  and other post-processing of the density. PAW AE DEN not compatible with parallelization over atoms." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t11.in">tests/v5/Input/t11.in</a></li>
-<li><a class="wikilink test-link" data-content="Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t17.in">tests/v5/Input/t17.in</a></li>
-<li><a class="wikilink test-link" data-content="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t20.in">tests/v5/Input/t20.in</a></li>
+<li><a class="wikilink test-link" data-content="PAW: test of some variables reserved to experienced users or developers BCC iron,  ferromagnetic,  GGA,  PAW. Also tests maxnsym keyword." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t06.in">tests/v5/Input/t06.in</a></li>
+<li><a class="wikilink test-link" data-content="Generate both DEN and PAWDEN files for silicon. Note that in the PAW case,  DEN files include the valence density and compensation charge,  while PAWDEN files include the valence and on-site corrections,  but not the compensation charge. Therefore,  DEN files are needed for further computations,  while PAWDEN files are useful for visualization,  AIM,  and other post-processing of the density. PAW AE DEN not compatible with parallelization over atoms." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t11.in">tests/v5/Input/t11.in</a></li>
+<li><a class="wikilink test-link" data-content="Bi A7 structure (2 atoms per unit cell), using PAW,  within LDA. Fixed cell dimensions. Treated as a semi-conductor Test the spin-orbit coupling - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2) Also tests spnorbscl and pawcpxocc variables reserved to exp. users." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t17.in">tests/v5/Input/t17.in</a></li>
+<li><a class="wikilink test-link" data-content="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../../tests/v5/Input/t20.in">tests/v5/Input/t20.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
