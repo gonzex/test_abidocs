@@ -4,8 +4,6 @@ rpath: /index.md
 
 ### **0\. Foreword**
 
-hello
-
 The ABINIT project is a group effort of dozens of people worldwide, whose
 central outcome is the main ABINIT application, delivered with many other
 files in the ABINIT package. The ABINIT project includes also resources

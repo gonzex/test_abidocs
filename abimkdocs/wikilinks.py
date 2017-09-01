@@ -85,6 +85,7 @@ class WikiLinks(Pattern):
                 return a
             except Exception as exc:
                 print("Exception while trying to handle wikilink `%s` in rpath `%s`" % (token, rpath))
+                print(exc)
                 return ""
 
                 raise

@@ -492,7 +492,7 @@ This page gives hints on how to {howto} with the ABINIT package.
                 fh.write('##  %s  \n\n' % suite_name)
                 for rpath, test in group:
                     fh.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
-                    fh.write(test.description)
+                    fh.write(unicode(test.description))
                     fh.write("\n\n")
                     fh.write("Executable: %s   \n" % test.executable)
                     if test.keywords:
@@ -622,9 +622,9 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         ref = self.bib_data.entries[key]
         url = "/theory/bibliography/#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
-        a = WikiLink('a')
+        a = etree.Element('a')
         content = ref.fields["title"] #+ "\n\n" + ref.authors
-        a.add_popover(content=content)
+        add_popover(a, content=content)
         a.set('href', url)
         a.text = "[%s]" % key if text is None else text
         if html_class: a.set('class', html_class)
@@ -710,7 +710,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         #    return ""
 
         html_classes = ["wikilink"]
-        a = WikiLink("a")
+        a = etree.Element("a")
 
         if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
             # Handle [[www.google.com|text]]
@@ -750,7 +750,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     url = "/topics/%s" % name
                     if text is None: text = "%s topic" % name
                     html_classes.append("topic-link")
-                    a.add_popover(content=self.howto_topic[name])
+                    add_popover(a, content=self.howto_topic[name])
 
                 elif name.startswith("help_"):
                     # Handle [[help_abinit|text]]
@@ -791,7 +791,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     if nm in self.rpath2test:
                         test = self.rpath2test[nm]
                         content = test.description # + "\n\n" + ", ".join(test.authors)
-                        a.add_popover(content=content)
+                        add_popover(a, content=content)
 
                 elif name in self.variables_code.characteristics:
                     # TODO
@@ -805,7 +805,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
                     url, text = "/input_variables/external_parameters#%s", name
-                    a.add_popover(title=self.variables_code.external_params[name], content=content)
+                    add_popover(a, title=self.variables_code.external_params[name], content=content)
 
                 else:
                     msg = "Don't know how to handle wikilink token `%s`" % token
@@ -842,7 +842,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 url = "/topics/%s" % name
                 html_classes.append("topic-link")
                 if text is None: text = "%s_%s" % (namespace, name)
-                a.add_popover(content=self.howto_topic[name])
+                add_popover(a, content=self.howto_topic[name])
 
             elif namespace == "bib":
                 # Handle [[bib:biblio|bibliography]]
@@ -1063,9 +1063,10 @@ class Page(object):
     #    return "\n".join(lines)
 
 
-class WikiLink(etree.Element):
-
-    #def __init__(self, attrib={}, **extra)
+#class WikiLink(etree.Element):
+#class WikiLink(object):
+    #def __init__(self, attrib={}, **extra):
+    #    self = etree.Element("a", attrib={}, **extra)
     #    super(Wikilink, self).__init__("a", attrib={}, **extra)
     #    self.abidata = {
     #        token=None,
@@ -1076,13 +1077,14 @@ class WikiLink(etree.Element):
     #    }
     #def set_abidata(self)
 
-    def add_popover(self, title=None, content=None):
-       self.set("data-toggle", "popover")
-       if title: self.set("title", title)
-       self.set("data-placement", "right")
-       self.set("data-trigger", "hover")
-       if content: self.set("data-content", content)
-       #a.set("html", "true")
+def add_popover(element, title=None, content=None):
+    # Cannot subclass etree.Element in py2.7
+    element.set("data-toggle", "popover")
+    if title: element.set("title", title)
+    element.set("data-placement", "right")
+    element.set("data-trigger", "hover")
+    if content: element.set("data-content", content)
+    #a.set("html", "true")
 
 
 class MarkdownPage(Page):
@@ -1100,6 +1102,7 @@ class MarkdownPage(Page):
                 link = website.get_wikilink(token)
             except Exception as exc:
                 cprint("Exception while trying to handle wikilink `%s` in `%s`" % (token, self.path))
+                print(exc)
                 continue
 
             link_class = link.get("class", "")
@@ -1182,4 +1185,5 @@ class AbinitStats(object):
     def json_dump(self, path):
         import json
         with io.open(path, "wt", encoding="utf-8") as fh:
-            json.dump(self.data, fh)
+            fh.write(unicode(json.dumps(self.data, ensure_ascii=False)))
+            #json.dump(self.data, fh)
