@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -488,8 +576,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -548,8 +660,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -562,6 +674,18 @@
   <li class="md-nav__item">
     <a href="../Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -644,6 +768,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -658,18 +818,6 @@
   <li class="md-nav__item">
     <a href="../DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -728,8 +876,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -752,20 +912,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -824,6 +972,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -850,18 +1022,6 @@
   <li class="md-nav__item">
     <a href="../Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1004,8 +1164,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1028,6 +1200,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1040,20 +1224,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1148,8 +1320,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1160,8 +1332,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1292,6 +1464,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1362,6 +1546,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Verification/" title="Verification" class="md-nav__link">
+      Verification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Wannier/" title="Wannier" class="md-nav__link">
       Wannier
     </a>
@@ -1421,31 +1617,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1698,8 +1894,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1807,6 +2027,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1822,10 +2054,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1873,8 +2225,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1903,13 +2267,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1963,13 +2375,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1993,14 +2405,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2034,8 +2602,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2058,7 +2638,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2094,8 +2686,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2218,15 +2846,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/topics/vdw.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
                 
                   <h1>Vdw</h1>
                 
                 <!-- Return to Top -->
 
-<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<p>This page gives hints on how to use Van der Waals functionals with the ABINIT package.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>It is well known that long range correlations responsible of van der Waals
 interactions are out of reach for both LDA and GGA approximations to the
 exchange-correlation energy in DFT. In recent years several methods have been
@@ -2234,113 +2867,113 @@ devised to include such interactions, which can be grouped into two
 strategies, namely <em>ad hoc</em> methods and self-consistent approaches. Currently
 ABINIT can perform calculations based on either the DFT-D methods or the vdW-
 WF methods, as described later, both belonging to the first group.</p>
-<p>A fully customizable implementation of the vdW-DF method <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Dion2004" title="Van der Waals Density Functional for General Geometries">Dion2004</a>, a self-
+<p>A fully customizable implementation of the vdW-DF method <a class="wikilink citation-link" data-content="Van der Waals Density Functional for General Geometries" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#dion2004">[Dion2004]</a>, a self-
 consistent approach, and an adaptation of the strategy followed by G.Roman-
-Perez <em>et al.</em> <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Romanperez2009" title="Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes">Romanperez2009</a> to the case of ABINIT are under development.
+Perez <em>et al.</em> <a class="wikilink citation-link" data-content="Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#romanperez2009">[Romanperez2009]</a> to the case of ABINIT are under development.
 It will offer around 25 ajustable parameters and be delivered with graphical
 tools to help users assess the quality of their kernels. It does not only aim
 at performing production calculations with vdW-DF, but also at helping
 researchers who develop new density functionals optimised for systems
 requiring van-der-Waals interactions.</p>
 <p>The DFT-D methods have been implemented inside ABINIT, namely DFT-D2
-<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Grimme2006" title="Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction">Grimme2006</a>, DFT-D3 <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Grimme2010" title="A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu">Grimme2010</a> and DFT-D3(BJ) <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Grimme2010a" title="Effect of the Damping Function in Dispersion Corrected Density Functional Theory">Grimme2010a</a>. In these
+<a class="wikilink citation-link" data-content="Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#grimme2006">[Grimme2006]</a>, DFT-D3 <a class="wikilink citation-link" data-content="A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#grimme2010">[Grimme2010]</a> and DFT-D3(BJ) <a class="wikilink citation-link" data-content="Effect of the Damping Function in Dispersion Corrected Density Functional Theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#grimme2010a">[Grimme2010a]</a>. In these
 cases, pair-wise terms (and 3-body corrections for DFT-D3 and DFT-D3(BJ)) are
 added to the DFT energy, which are independent of the electronic density, in
 order to mimic the vdW interactions. The implementation includes the
 contributions of these methods to forces and stresses, in view of geometry
 optimization, as well as to first-order response functions like dynamical
 matrices, clamped elastic constants and internal strain coupling parameters.</p>
-<p>To activate DFT-D dispersion correction, two keywords are in use: <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> =
-5/6/7 to choose between DFT-D2, DFT-D3 and DFT-D3(BJ), and <a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>, to
+<p>To activate DFT-D dispersion correction, two keywords are in use: <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> =
+&#8538;/7 to choose between DFT-D2, DFT-D3 and DFT-D3(BJ), and <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>, to
 control the inclusion of largely distant pairs (those giving a contribution
-below <a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> are ignored). It is also possible to include 3-body
-corrections <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Grimme2010" title="A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu">Grimme2010</a> (for ground-state only) with the keyword
-<a class="wikilink" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>, which also controls the tolerance over this term.</p>
+below <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> are ignored). It is also possible to include 3-body
+corrections <a class="wikilink citation-link" data-content="A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#grimme2010">[Grimme2010]</a> (for ground-state only) with the keyword
+<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>, which also controls the tolerance over this term.</p>
 <p>Methods based on maximally localized Wannier functions (MLWFs) to calculate
 vdW energy corrections have also been implemented in ABINIT. In this case the
 pair-wise terms come from contributions of pairs of MLWFs rather than from
 atoms. Among the implemented methods in ABINIT it is found vdW-WF1
-<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Silvestrelli2008" title="van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions">Silvestrelli2008</a>,<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Silvestrelli2009" title="van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions">Silvestrelli2009</a> vdW-WF2 <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Ambrosetti2012" title="van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach">Ambrosetti2012</a> and vdW-
-QHO-WF <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Silvestrelli2013" title="van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions">Silvestrelli2013</a>. A full description of the implementation of vdW-
-WF1 is reported in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Espejo2012" title="Wannier functions approach to van der Waals interactions in {ABINIT}">Espejo2012</a>.</p>
-<p>Selection of one of these 3 methods is achieved by using <a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>=10/11/14
+<a class="wikilink citation-link" data-content="van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2008">[Silvestrelli2008]</a>,<a class="wikilink citation-link" data-content="van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2009">[Silvestrelli2009]</a> vdW-WF2 <a class="wikilink citation-link" data-content="van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#ambrosetti2012">[Ambrosetti2012]</a> and vdW-
+QHO-WF <a class="wikilink citation-link" data-content="van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2013">[Silvestrelli2013]</a>. A full description of the implementation of vdW-
+WF1 is reported in <a class="wikilink citation-link" data-content="Wannier functions approach to van der Waals interactions in {ABINIT}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#espejo2012">[Espejo2012]</a>.</p>
+<p>Selection of one of these 3 methods is achieved by using <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>=10/11/14
 respectivelly. Since vdW-WF1 and vdW-WF2 methods are approximations for the
 dispersion energy of non overlapping electronic densities, it is necessary to
 define the interacting fragments of the system whose dispersion energy is
 going to be calculated. The latter is achieved by using the input variables
-<a class="wikilink" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a> and <a class="wikilink" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a> to define the number of interacting
+<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a> and <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a> to define the number of interacting
 fragments in the unit cell and to assign each atom to a fragment. A given MLWF
 belongs to the same fragment as its closer atom. The need for defining the
 interacting fragments is overridden in the vdW-QHO-WF, for which these input
 variables are not used. When dealing with periodic systems the input variable
-<a class="wikilink" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a> controls the number of neighbor unit cells that will be
-included in the calculation. Each one of the 3 components of <a class="wikilink" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>
+<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a> controls the number of neighbor unit cells that will be
+included in the calculation. Each one of the 3 components of <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>
 indicates the maximum number of cells along both positive or negative
 directions of the corresponding primitive vector. This is useful for studying
 the spacial convergency of the vdW energy. It should be noticed that the user
 must set the variables associated to the calculation of MLWFs and that the
 resulting vdW energies strongly depend on the obtained Wannier functions.</p>
-<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a>  Van Der Waals Number of interacting FRAGments</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>  Van Der Waals correction from Wannier functions in SUPERCELL</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>  Van Der Waals TOLerance for 3-Body Term</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a>  Van Der Waals TYPe of FRAGment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a>  Van Der Waals Number of interacting FRAGments</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>  Van Der Waals correction from Wannier functions in SUPERCELL</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>  Van Der Waals TOLerance for 3-Body Term</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a>  Van Der Waals TYPe of FRAGment</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>  Van Der Waals TOLerance</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>  Van Der Waals eXchange-Correlation functional</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>  Van Der Waals TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>  Van Der Waals eXchange-Correlation functional</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_acutmin">vdw_df_acutmin</a>  vdW-DF MINimum Angular CUT-off</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_aratio">vdw_df_aratio</a>  vdW-DF Angle RATIO between the highest and
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_acutmin">vdw_df_acutmin</a>  vdW-DF MINimum Angular CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_aratio">vdw_df_aratio</a>  vdW-DF Angle RATIO between the highest and
 lowest angles.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_damax">vdw_df_damax</a>  vdW-DF Delta for Angles, MAXimum </li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_damin">vdw_df_damin</a>  vdW-DF Delta for Angles, MINimum</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_dcut">vdw_df_dcut</a>  vdW-DF D-mesh CUT-off</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_dratio">vdw_df_dratio</a>  vdW-DF, between the highest and
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_damax">vdw_df_damax</a>  vdW-DF Delta for Angles, MAXimum </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_damin">vdw_df_damin</a>  vdW-DF Delta for Angles, MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dcut">vdw_df_dcut</a>  vdW-DF D-mesh CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dratio">vdw_df_dratio</a>  vdW-DF, between the highest and
 lowest D, RATIO.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_dsoft">vdw_df_dsoft</a>  vdW-DF Distance for SOFTening.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_gcut">vdw_df_gcut</a>  vdW-DF G-space CUT-off</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_ndpts">vdw_df_ndpts</a>  vdW-DF Number of D-mesh PoinTS</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_ngpts">vdw_df_ngpts</a>  vdW-DF Number of G-mesh PoinTS</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_nqpts">vdw_df_nqpts</a>  vdW-DF Number of Q-mesh PoinTS</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_nrpts">vdw_df_nrpts</a>  vdW-DF Number of R-PoinTS</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_nsmooth">vdw_df_nsmooth</a>  vdW-DF Number of SMOOTHening iterations</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_phisoft">vdw_df_phisoft</a>  vdW-DF PHI value SOFTening.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_qcut">vdw_df_qcut</a>  vdW-DF Q-mesh CUT-off</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_qratio">vdw_df_qratio</a>  vdW-DF, between highest and lowest Q, RATIO .</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_rcut">vdw_df_rcut</a>  vdW-DF Real-space CUT-off</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_rsoft">vdw_df_rsoft</a>  vdW-DF radius SOFTening.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_threshold">vdw_df_threshold</a>  vdW-DF energy calculation THRESHOLD</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_tolerance">vdw_df_tolerance</a>  vdW-DF global TOLERANCE.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_tweaks">vdw_df_tweaks</a>  vdW-DF TWEAKS.</li>
-<li><a class="wikilink" href="../../input_variables/vdw/#vdw_df_zab">vdw_df_zab</a>  vdW-DF ZAB parameter</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dsoft">vdw_df_dsoft</a>  vdW-DF Distance for SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_gcut">vdw_df_gcut</a>  vdW-DF G-space CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_ndpts">vdw_df_ndpts</a>  vdW-DF Number of D-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_ngpts">vdw_df_ngpts</a>  vdW-DF Number of G-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nqpts">vdw_df_nqpts</a>  vdW-DF Number of Q-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nrpts">vdw_df_nrpts</a>  vdW-DF Number of R-PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nsmooth">vdw_df_nsmooth</a>  vdW-DF Number of SMOOTHening iterations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_phisoft">vdw_df_phisoft</a>  vdW-DF PHI value SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_qcut">vdw_df_qcut</a>  vdW-DF Q-mesh CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_qratio">vdw_df_qratio</a>  vdW-DF, between highest and lowest Q, RATIO .</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_rcut">vdw_df_rcut</a>  vdW-DF Real-space CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_rsoft">vdw_df_rsoft</a>  vdW-DF radius SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_threshold">vdw_df_threshold</a>  vdW-DF energy calculation THRESHOLD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_tolerance">vdw_df_tolerance</a>  vdW-DF global TOLERANCE.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_tweaks">vdw_df_tweaks</a>  vdW-DF TWEAKS.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_zab">vdw_df_zab</a>  vdW-DF ZAB parameter</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/vdw/#irdvdw">irdvdw</a>  Integer that governs the ReaDing of _VDW files</li>
-<li><a class="wikilink" href="../../input_variables/files/#prtwf">prtwf</a>  PRinT the WaveFunction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#irdvdw">irdvdw</a>  Integer that governs the ReaDing of _VDW files</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files/#prtwf">prtwf</a>  PRinT the WaveFunction</li>
 </ul>
-<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in" title="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term">tests/v7/Input/t97.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in" title="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix">tests/v7/Input/t98.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in" title="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains">tests/v7/Input/t99.in</a></li>
+<li><a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">tests/v7/Input/t97.in</a></li>
+<li><a class="wikilink test-link" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in">tests/v7/Input/t98.in</a></li>
+<li><a class="wikilink test-link" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in">tests/v7/Input/t99.in</a></li>
 </ul>
 <p><em>vdwxc:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in" title="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.">tests/vdwxc/Input/t10.in</a></li>
+<li><a class="wikilink test-link" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in">tests/vdwxc/Input/t10.in</a></li>
 </ul>
 <p><em>wannier90:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in" title="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions.">tests/wannier90/Input/t11.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in" title="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions.">tests/wannier90/Input/t12.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in" title="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions.">tests/wannier90/Input/t13.in</a></li>
+<li><a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">tests/wannier90/Input/t11.in</a></li>
+<li><a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">tests/wannier90/Input/t12.in</a></li>
+<li><a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">tests/wannier90/Input/t13.in</a></li>
 </ul>
                 
                   
@@ -2354,15 +2987,186 @@ lowest D, RATIO.</li>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-<center>Copyright &copy; 2017 The Abinit Group (YPouillon, BVanTroeye)</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../UnitCell/" title="UnitCell" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                UnitCell
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Verification/" title="Verification" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Verification
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (YPouillon, BVanTroeye)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

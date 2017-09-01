@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1765,6 +1985,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1780,10 +2012,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1831,8 +2183,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1858,18 +2222,66 @@
           
           
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8" checked>
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1886,6 +2298,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         GW1
@@ -1899,49 +2313,58 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-computation-of-the-silicon-band-gap-at-using-a-gw-calculation" title="** 1. Computation of the Silicon band gap at Γ, using a GW calculation." class="md-nav__link">
-    ** 1. Computation of the Silicon band gap at Γ, using a GW calculation.
+  <a href="#the-quasi-particle-band-structure-of-silicon-in-the-gw-approximation" title="The quasi-particle band structure of Silicon, in the GW approximation." class="md-nav__link">
+    The quasi-particle band structure of Silicon, in the GW approximation.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-general-example-of-well-converged-gw-calculation" title="1 General example of well converged GW calculation" class="md-nav__link">
+    1 General example of well converged GW calculation
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1a-the-four-steps-of-a-gw-calculation" title="1.a The four steps of a GW calculation." class="md-nav__link">
-    1.a The four steps of a GW calculation.
+  <a href="#1a-the-four-steps-of-a-gw-calculation" title="** 1.a The four steps of a GW calculation.**" class="md-nav__link">
+    ** 1.a The four steps of a GW calculation.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="1.b Generating the Kohn-Sham band structure: the WFK file." class="md-nav__link">
-    1.b Generating the Kohn-Sham band structure: the WFK file.
+  <a href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="** 1.b Generating the Kohn-Sham band structure: the WFK file.**" class="md-nav__link">
+    ** 1.b Generating the Kohn-Sham band structure: the WFK file.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1c-generating-the-screening-the-scr-file" title="1.c Generating the screening: the SCR file." class="md-nav__link">
-    1.c Generating the screening: the SCR file.
+  <a href="#1c-generating-the-screening-the-scr-file" title="** 1.c Generating the screening: the SCR file.**" class="md-nav__link">
+    ** 1.c Generating the screening: the SCR file.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1d-computing-the-gw-energies" title="1.d Computing the GW energies." class="md-nav__link">
-    1.d Computing the GW energies.
+  <a href="#1d-computing-the-gw-energies" title="** 1.d Computing the GW energies.**" class="md-nav__link">
+    ** 1.d Computing the GW energies.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1e-examination-of-the-output-file" title="1.e Examination of the output file." class="md-nav__link">
-    1.e Examination of the output file.
+  <a href="#1e-examination-of-the-output-file" title="** 1.e Examination of the output file.**" class="md-nav__link">
+    ** 1.e Examination of the output file.**
   </a>
   
 </li>
@@ -1952,23 +2375,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-advanced-features-in-the-gw-code" title="10 Advanced features in the GW code" class="md-nav__link">
-    10 Advanced features in the GW code
+  <a href="#2-preparing-convergence-studies-kohn-sham-structure-wfk-file-and-screening" title="2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening" class="md-nav__link">
+    2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="3 Convergence on the number of planewaves in the wavefunctions to calculate the" class="md-nav__link">
+    3 Convergence on the number of planewaves in the wavefunctions to calculate the
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-convergence-on-the-number-of-planewaves-to-calculate-x-optional" title="4 Convergence on the number of planewaves to calculate Σx (optional)" class="md-nav__link">
+    4 Convergence on the number of planewaves to calculate Σx (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-convergence-on-the-number-of-bands-to-calculate-c-important" title="5 Convergence on the number of bands to calculate Σc (important)" class="md-nav__link">
+    5 Convergence on the number of bands to calculate Σc (important)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="6 Convergence on the number of planewaves in the wavefunctions to calculate the" class="md-nav__link">
+    6 Convergence on the number of planewaves in the wavefunctions to calculate the
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-convergence-on-the-number-of-bands-to-calculate-the-screening-1" title="7 Convergence on the number of bands to calculate the screening (ε-1)" class="md-nav__link">
+    7 Convergence on the number of bands to calculate the screening (ε-1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-convergence-on-the-dimension-of-the-screening-1-matrix-important" title="8 Convergence on the dimension of the screening ε-1 matrix (important)" class="md-nav__link">
+    8 Convergence on the dimension of the screening ε-1 matrix (important)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-calculation-of-the-gw-corrections-for-the-band-gap-in" title="9 Calculation of the GW corrections for the band gap in Γ" class="md-nav__link">
+    9 Calculation of the GW corrections for the band gap in Γ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-features-in-the-gw-code" title="Advanced features in the GW code" class="md-nav__link">
+    Advanced features in the GW code
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#calculations-without-using-the-plasmon-pole-model" title="Calculations without using the Plasmon-Pole model" class="md-nav__link">
-    Calculations without using the Plasmon-Pole model
+  <a href="#calculations-without-using-the-plasmon-pole-model" title="** Calculations without using the Plasmon-Pole model **" class="md-nav__link">
+    ** Calculations without using the Plasmon-Pole model **
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#self-consistent-calculations" title="Self-consistent calculations" class="md-nav__link">
-    Self-consistent calculations
+  <a href="#self-consistent-calculations" title="** Self-consistent calculations **" class="md-nav__link">
+    ** Self-consistent calculations **
   </a>
   
 </li>
@@ -2023,13 +2502,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2053,14 +2532,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2094,8 +2729,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2118,7 +2765,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2154,8 +2813,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2239,49 +2934,58 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-computation-of-the-silicon-band-gap-at-using-a-gw-calculation" title="** 1. Computation of the Silicon band gap at Γ, using a GW calculation." class="md-nav__link">
-    ** 1. Computation of the Silicon band gap at Γ, using a GW calculation.
+  <a href="#the-quasi-particle-band-structure-of-silicon-in-the-gw-approximation" title="The quasi-particle band structure of Silicon, in the GW approximation." class="md-nav__link">
+    The quasi-particle band structure of Silicon, in the GW approximation.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-general-example-of-well-converged-gw-calculation" title="1 General example of well converged GW calculation" class="md-nav__link">
+    1 General example of well converged GW calculation
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1a-the-four-steps-of-a-gw-calculation" title="1.a The four steps of a GW calculation." class="md-nav__link">
-    1.a The four steps of a GW calculation.
+  <a href="#1a-the-four-steps-of-a-gw-calculation" title="** 1.a The four steps of a GW calculation.**" class="md-nav__link">
+    ** 1.a The four steps of a GW calculation.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="1.b Generating the Kohn-Sham band structure: the WFK file." class="md-nav__link">
-    1.b Generating the Kohn-Sham band structure: the WFK file.
+  <a href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="** 1.b Generating the Kohn-Sham band structure: the WFK file.**" class="md-nav__link">
+    ** 1.b Generating the Kohn-Sham band structure: the WFK file.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1c-generating-the-screening-the-scr-file" title="1.c Generating the screening: the SCR file." class="md-nav__link">
-    1.c Generating the screening: the SCR file.
+  <a href="#1c-generating-the-screening-the-scr-file" title="** 1.c Generating the screening: the SCR file.**" class="md-nav__link">
+    ** 1.c Generating the screening: the SCR file.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1d-computing-the-gw-energies" title="1.d Computing the GW energies." class="md-nav__link">
-    1.d Computing the GW energies.
+  <a href="#1d-computing-the-gw-energies" title="** 1.d Computing the GW energies.**" class="md-nav__link">
+    ** 1.d Computing the GW energies.**
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#1e-examination-of-the-output-file" title="1.e Examination of the output file." class="md-nav__link">
-    1.e Examination of the output file.
+  <a href="#1e-examination-of-the-output-file" title="** 1.e Examination of the output file.**" class="md-nav__link">
+    ** 1.e Examination of the output file.**
   </a>
   
 </li>
@@ -2292,23 +2996,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#10-advanced-features-in-the-gw-code" title="10 Advanced features in the GW code" class="md-nav__link">
-    10 Advanced features in the GW code
+  <a href="#2-preparing-convergence-studies-kohn-sham-structure-wfk-file-and-screening" title="2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening" class="md-nav__link">
+    2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="3 Convergence on the number of planewaves in the wavefunctions to calculate the" class="md-nav__link">
+    3 Convergence on the number of planewaves in the wavefunctions to calculate the
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-convergence-on-the-number-of-planewaves-to-calculate-x-optional" title="4 Convergence on the number of planewaves to calculate Σx (optional)" class="md-nav__link">
+    4 Convergence on the number of planewaves to calculate Σx (optional)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-convergence-on-the-number-of-bands-to-calculate-c-important" title="5 Convergence on the number of bands to calculate Σc (important)" class="md-nav__link">
+    5 Convergence on the number of bands to calculate Σc (important)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="6 Convergence on the number of planewaves in the wavefunctions to calculate the" class="md-nav__link">
+    6 Convergence on the number of planewaves in the wavefunctions to calculate the
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-convergence-on-the-number-of-bands-to-calculate-the-screening-1" title="7 Convergence on the number of bands to calculate the screening (ε-1)" class="md-nav__link">
+    7 Convergence on the number of bands to calculate the screening (ε-1)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-convergence-on-the-dimension-of-the-screening-1-matrix-important" title="8 Convergence on the dimension of the screening ε-1 matrix (important)" class="md-nav__link">
+    8 Convergence on the dimension of the screening ε-1 matrix (important)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-calculation-of-the-gw-corrections-for-the-band-gap-in" title="9 Calculation of the GW corrections for the band gap in Γ" class="md-nav__link">
+    9 Calculation of the GW corrections for the band gap in Γ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-features-in-the-gw-code" title="Advanced features in the GW code" class="md-nav__link">
+    Advanced features in the GW code
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#calculations-without-using-the-plasmon-pole-model" title="Calculations without using the Plasmon-Pole model" class="md-nav__link">
-    Calculations without using the Plasmon-Pole model
+  <a href="#calculations-without-using-the-plasmon-pole-model" title="** Calculations without using the Plasmon-Pole model **" class="md-nav__link">
+    ** Calculations without using the Plasmon-Pole model **
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#self-consistent-calculations" title="Self-consistent calculations" class="md-nav__link">
-    Self-consistent calculations
+  <a href="#self-consistent-calculations" title="** Self-consistent calculations **" class="md-nav__link">
+    ** Self-consistent calculations **
   </a>
   
 </li>
@@ -2332,15 +3092,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/gw1.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>GW1</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing how to calculate self-energy corrections to the
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="first-lesson-on-gw">First lesson on GW<a class="headerlink" href="#first-lesson-on-gw" title="Permanent link">&para;</a></h1>
+<h2 id="the-quasi-particle-band-structure-of-silicon-in-the-gw-approximation">The quasi-particle band structure of Silicon, in the GW approximation.<a class="headerlink" href="#the-quasi-particle-band-structure-of-silicon-in-the-gw-approximation" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to calculate self-energy corrections to the
 DFT Kohn-Sham eigenvalues in the GW approximation.</p>
 <p>A brief description of the formalism and of the equations implemented in the
 code can be found in the
@@ -2351,81 +3110,21 @@ by Valerio Olevano (who also wrote the first version of this tutorial), see
 <p>For a much more consistent discussion of the theoretical aspects of the GW
 method we refer the reader to the review</p>
 <ul>
-<li>"Quasiparticle calculations in solids", by Aulbur WG, Jonsson L, Wilkins JW, <br />
+<li>&ldquo;Quasiparticle calculations in solids&rdquo;, by Aulbur WG, Jonsson L, Wilkins JW, <br />
 in Solid State Physics 54, 1-218 (2000),<br />
 also available at <a href="http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2">
-http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2</a></li>
+<a href="http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2">http://ftp.abinit.org/docs/quasiparticle_calculations_in_solids.pdf.bz2</a></a></li>
 </ul>
-<p>It is suggested to
-<a href="../../../bibliography/generated_files/acknowledgments.html">acknowledge</a> the
-efforts of developers of the GW part of ABINIT, by citing<br />
-X. Gonze, G.-M. Rignanese, M. Verstraete, J.-M. Beuken, Y. Pouillon, R.
-Caracas, F. Jollet, M. Torrent, G. Zerah, M. Mikami, Ph. Ghosez, M. Veithen,
-J.-Y. Raty, V. Olevano, F. Bruneval, L. Reining, R. Godby, G. Onida, D.R.
-Hamann, and D.C. Allan. Zeit. Kristallogr. 220, 558-562 (2005).  </p>
+<p>It is suggested to <a class="wikilink" href="../FAKE_URL/#b">FAKE_URL</a> the efforts of developers of
+the GW part of ABINIT, by citing the <a class="wikilink citation-link" data-content="A brief introduction to the ABINIT software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gonze2005">2005 ABINIT publication</a>.</p>
 <p>The user should be familiarized with the four basic lessons of ABINIT, see the
 <a href="../lesson_welcome.html">tutorial home page</a>.</p>
 <p>After this first tutorial on GW, you should read the <a href="../lesson_gw2.html">second lesson on
 GW</a>.</p>
 <p>This lesson should take about 2 hours.</p>
-<ul>
-<li>
-<ol>
-<li>General example of well converged GW calculation. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Calculation of the WFK and of the screening (SCR file). </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the number of planewaves in the wavefunctions to calculate the Self-Energy. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the number of planewaves to calculate Σx. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the number of bands to calculate Σc. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the number of planewaves in the wavefunctions to calculate ε-1. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the number of bands to calculate ε-1. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Convergence on the dimension of the ε-1 matrix. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Calculation of the GW corrections for the band gap in Γ. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Advanced features: calculations without plasmon-pole models, and self-consistency. </li>
-</ol>
-</li>
-</ul>
-<hr />
-<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
-<h3 id="146-computation-of-the-silicon-band-gap-at-using-a-gw-calculation">** 1. Computation of the Silicon band gap at Γ, using a GW calculation.<a class="headerlink" href="#146-computation-of-the-silicon-band-gap-at-using-a-gw-calculation" title="Permanent link">&para;</a></h3>
-<p>**</p>
+<h2 id="1-general-example-of-well-converged-gw-calculation">1 General example of well converged GW calculation<a class="headerlink" href="#1-general-example-of-well-converged-gw-calculation" title="Permanent link">&para;</a></h2>
 <p><em>Before beginning, you might consider to work in a different subdirectory as
-for the other lessons. Why not "Work_gw1" ?</em></p>
+for the other lessons. Why not &ldquo;Work_gw1&rdquo; ?</em></p>
 <p>At the end of <a href="../lesson_base3.html#35">lesson 3</a>, we computed the Kohn-Sham band
 structure of silicon. In this approximation, the band dispersion as well as
 the band widths are reasonable, but the band gaps are qualitatively wrong.
@@ -2443,12 +3142,14 @@ explain what has been done.</p>
 ~abinit/tests/tutorial/Input/tgw1_x.files and tgw1_1.in, and modify the
 tgw1_x.files file as usual (see lesson 1).</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_1.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_1.log &amp;
+</pre></div>
+
+
 <p>It is very important to run this job in background because it takes about 1
 minute. In the meantime, you should read the following.</p>
-<h4 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<h4 id="1a-the-four-steps-of-a-gw-calculation"><strong> 1.a The four steps of a GW calculation.</strong><a class="headerlink" href="#1a-the-four-steps-of-a-gw-calculation" title="Permanent link">&para;</a></h4>
+<h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<h4 id="1a-the-four-steps-of-a-gw-calculation">** 1.a The four steps of a GW calculation.**<a class="headerlink" href="#1a-the-four-steps-of-a-gw-calculation" title="Permanent link">&para;</a></h4>
 <p>In order to perform a standard one-shot GW calculation one has to:</p>
 <ol>
 <li>
@@ -2458,10 +3159,10 @@ minute. In the meantime, you should read the following.</p>
 <p>Perform a non self-consistent run to compute the Kohn-Sham eigenvalues and the eigenfunctions including several empty states. Note that, unlike standard band structure calculations, here the KS states must be computed on a regular grid of k-points. </p>
 </li>
 <li>
-<p>Use <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 to compute the independent-particle susceptibility (χ0) on a regular grid of <strong>q</strong>-points, for at least two frequencies (usually, ω=0 and a large purely imaginary frequency - of the order of the plasmon frequency, a dozen of eV). The inverse dielectric matrix (ε-1) is then obtained via matrix inversion and stored in an external file (SCR). The list of <strong>q</strong>-points is automatically defined by the k-mesh used to generate the KS states in the previous step. </p>
+<p>Use <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 to compute the independent-particle susceptibility (χ0) on a regular grid of <strong>q</strong>-points, for at least two frequencies (usually, ω=0 and a large purely imaginary frequency - of the order of the plasmon frequency, a dozen of eV). The inverse dielectric matrix (ε-1) is then obtained via matrix inversion and stored in an external file (SCR). The list of <strong>q</strong>-points is automatically defined by the k-mesh used to generate the KS states in the previous step. </p>
 </li>
 <li>
-<p>Use <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>=4 to compute the self-energy (Σ) matrix element for a given set of k-points in order to obtain the GW quasiparticle energies Note that the k-point must belong to the k-mesh used to generate the WFK file in step 2. </p>
+<p>Use <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=4 to compute the self-energy (Σ) matrix element for a given set of k-points in order to obtain the GW quasiparticle energies Note that the k-point must belong to the k-mesh used to generate the WFK file in step 2. </p>
 </li>
 </ol>
 <p>The flowchart diagram of a standard one-shot run is depicted in the figure
@@ -2474,8 +3175,8 @@ dataset reads the previous density file and performs a NSCF run including
 several empty states. The third dataset reads the WFK file produced in the
 previous step and drives the computation of susceptibility and dielectric
 matrices, producing another specialized file, tgw1_xo_DS2_SCR (_SCR for
-"Screening", actually the inverse dielectric matrix ε-1). Then, in the fourth
-dataset, the code calculates the quasiparticle energies for the 4th and 5th
+&ldquo;Screening&rdquo;, actually the inverse dielectric matrix ε-1). Then, in the fourth
+dataset, the code calculates the quasiparticle energies for the 4<sup>th</sup> and 5<sup>th</sup>
 bands at the Γ point.</p>
 <p>So, you can edit this tgw1_1.in file.</p>
 <p>The dataset-independent part of this file (the last half of the file),
@@ -2483,15 +3184,15 @@ contains the usual set of input variables describing the cell, atom types,
 number, position, planewave cut-off energy, SCF convergence parameters driving
 the Kohn-Sham band structure calculation. Then, for the fourth datasets, you
 will find specialized additional input variables.</p>
-<h4 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
-<h4 id="1b-generating-the-kohn-sham-band-structure-the-wfk-file"><strong> 1.b Generating the Kohn-Sham band structure: the WFK file.</strong><a class="headerlink" href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="Permanent link">&para;</a></h4>
-<p>Dataset 1 is a rather standard SCF calculation. It's worth noticing that we
+<h4 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<h4 id="1b-generating-the-kohn-sham-band-structure-the-wfk-file">** 1.b Generating the Kohn-Sham band structure: the WFK file.**<a class="headerlink" href="#1b-generating-the-kohn-sham-band-structure-the-wfk-file" title="Permanent link">&para;</a></h4>
+<p>Dataset 1 is a rather standard SCF calculation. It&rsquo;s worth noticing that we
 use tolvrs to stop the SCF cycle because we want a well-converged KS potential
 to be used in the subsequent NSCF calculation. Dataset 2 computes 40 bands and
 we set nbdbuf to 5 so that only the first 35 states must be converged within
 tolwfr. This tricks allows us to save several minimization steps because the
 last bands usually require more iterations to converge</p>
-<pre><code>############
+<div class="codehilite"><pre><span></span>############
 # Dataset 1
 ############
 # SCF-GS run 
@@ -2507,34 +3208,44 @@ nbdbuf2      5
 iscf2       -2
 getden2     -1
 tolwfr2  1.0d-18     # Will stop when this tolerance is achieved
-</code></pre>
-<h4 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
-<h4 id="1c-generating-the-screening-the-scr-file"><strong> 1.c Generating the screening: the SCR file.</strong><a class="headerlink" href="#1c-generating-the-screening-the-scr-file" title="Permanent link">&para;</a></h4>
+</pre></div>
+
+
+<h4 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h4 id="1c-generating-the-screening-the-scr-file">** 1.c Generating the screening: the SCR file.**<a class="headerlink" href="#1c-generating-the-screening-the-scr-file" title="Permanent link">&para;</a></h4>
 <p>In dataset 3, the calculation of the screening (susceptibility, dielectric
-matrix) is performed. We need to set <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 to do that:</p>
-<pre><code>optdriver3  3        # Screening calculation
-</code></pre>
-<p>The <a class="wikilink" href="../../input_variables/files/#getwfk">getwfk</a> input variable is similar to other "get" input variables of
+matrix) is performed. We need to set <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 to do that:</p>
+<div class="codehilite"><pre><span></span>optdriver3  3        # Screening calculation
+</pre></div>
+
+
+<p>The <a class="wikilink codevar-link" href="../../input_variables/files/#getwfk">getwfk</a> input variable is similar to other &ldquo;get&rdquo; input variables of
 ABINIT:</p>
-<pre><code>getwfk3     -1       # Obtain WFK file from previous dataset
-</code></pre>
+<div class="codehilite"><pre><span></span>getwfk3     -1       # Obtain WFK file from previous dataset
+</pre></div>
+
+
 <p>In this case, it tells the code to use the WFK file calculated in the previous
 dataset.</p>
 <p>Then, three input variables describe the computation:</p>
-<pre><code>nband3      17       # Bands used in the screening calculation
+<div class="codehilite"><pre><span></span>nband3      17       # Bands used in the screening calculation
 ecut        8.0      # Cut-off energy of the planewave set to represent the wavefunctions
 ecuteps3    3.6      # Cut-off energy of the planewave set to represent the dielectric matrix
-</code></pre>
+</pre></div>
+
+
 <p>In this case, we use 17 bands to calculate the Kohn-Sham response function
 <script type="math/tex">\chi^{(0)}_{KS}</script>. A cut-off of 8 Hartree is used to represent the
 wavefunctions in the calculation of <script type="math/tex">\chi^{(0)}_{KS}</script>. The dimension of
 <script type="math/tex">\chi^{(0)}_{KS}</script>, as well as all the other matrices (<script type="math/tex">\chi</script>, <script type="math/tex">\epsilon</script>) is
-determined by <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a>=3.6 Hartree, giving 169 planewaves.</p>
+determined by <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>=3.6 Hartree, giving 169 planewaves.</p>
 <p>Finally, we define the frequencies at which the screening must be evaluated:
 ω=0.0 eV and the imaginary frequency ω= i 16.7 eV. The latter is determined by
-the input variable <a class="wikilink" href="../../input_variables/gw/#ppmfrq">ppmfrq</a></p>
-<pre><code>ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screening
-</code></pre>
+the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmfrq">ppmfrq</a></p>
+<div class="codehilite"><pre><span></span>ppmfrq3    16.7 eV  # Imaginary frequency where to calculate the screening
+</pre></div>
+
+
 <p>The two frequencies are used to calculate the plasmon-pole model parameters.
 For the non-zero frequency it is recommended to use a value close to the
 plasmon frequency for the plasmon-pole model to work well. Plasmons
@@ -2542,50 +3253,56 @@ frequencies are usually close to 0.5 Hartree. The parameters for the screening
 calculation are not far from the ones that give converged Energy Loss Function
 (-Im \epsilon^-1_00) spectra, So that one can start up by using indications
 from EELS calculations existing in literature.</p>
-<h4 id="_5"><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
-<h4 id="1d-computing-the-gw-energies"><strong> 1.d Computing the GW energies.</strong><a class="headerlink" href="#1d-computing-the-gw-energies" title="Permanent link">&para;</a></h4>
+<h4 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h4 id="1d-computing-the-gw-energies">** 1.d Computing the GW energies.**<a class="headerlink" href="#1d-computing-the-gw-energies" title="Permanent link">&para;</a></h4>
 <p>In dataset 4 the calculation of the Self-Energy matrix elements is performed.
 One needs to define the driver option, as well as the _WFK and _SCR files.</p>
-<pre><code>optdriver4  4       # Self-Energy calculation
+<div class="codehilite"><pre><span></span>optdriver4  4       # Self-Energy calculation
 getwfk4    -2       # Obtain WFK file from dataset 1
 getscr4    -1       # Obtain SCR file from previous dataset
-</code></pre>
-<p>The <a class="wikilink" href="../../input_variables/files/#getscr">getscr</a> input variable is similar to other "get" input variables of
+</pre></div>
+
+
+<p>The <a class="wikilink codevar-link" href="../../input_variables/files/#getscr">getscr</a> input variable is similar to other &ldquo;get&rdquo; input variables of
 ABINIT.</p>
 <p>Then, comes the definition of parameters needed to compute the self-energy. As
 for the computation of the susceptibility and dielectric matrices, one must
 define the set of bands, and two sets of planewaves:</p>
-<pre><code>nband4       30      # Bands to be used in the Self-Energy calculation
+<div class="codehilite"><pre><span></span>nband4       30      # Bands to be used in the Self-Energy calculation
 ecutsigx4   6.0      # Dimension of the G sum in Sigma_x
                      # (the dimension in Sigma_c is controlled by npweps)
-</code></pre>
-<p>In this case, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a> controls the number of bands used to calculate the
-correlation part of the Self-Energy. <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a> gives the number of
+</pre></div>
+
+
+<p>In this case, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> controls the number of bands used to calculate the
+correlation part of the Self-Energy. <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a> gives the number of
 planewaves used to calculate σx (the exchange part of the self-energy). The
 size of the planewave set used to compute Σc (the correlation part of the
-self-energy) is controlled by <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a> (cannot be larger than the value
+self-energy) is controlled by <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a> (cannot be larger than the value
 used to generate the SCR file). However, it is taken equal to the number of
 planewave of Σx if the latter is smaller than the one for Σc.</p>
 <p>Then, come the parameters defining the k-points and the band indices for which
 the quasiparticle energies will be computed:</p>
-<pre><code>nkptgw4      1               # number of k-point where to calculate the GW correction
+<div class="codehilite"><pre><span></span>nkptgw4      1               # number of k-point where to calculate the GW correction
 kptgw4                       # k-points
   -0.125    0.000    0.000
 bdgw4       4  5             # calculate GW corrections for bands from 4 to 5
-</code></pre>
-<p><a class="wikilink" href="../../input_variables/gw/#nkptgw">nkptgw</a> defines the number of k-points for which the GW corrections will be
-computed. The k-point reduced coordinates are specified in <a class="wikilink" href="../../input_variables/gw/#kptgw">kptgw</a>. At
+</pre></div>
+
+
+<p><a class="wikilink codevar-link" href="../../input_variables/gw/#nkptgw">nkptgw</a> defines the number of k-points for which the GW corrections will be
+computed. The k-point reduced coordinates are specified in <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a>. At
 present, they MUST belong to the k-mesh used to generate the WFK file. Hence
 if you wish the GW correction in a particular k-point, you should choose a
 grid containing it. Usually this is done by taking the k-point grid where the
 convergence is achieved and shifting it such as at least one k-point is placed
-on the wished position in the Brillouin zone. <a class="wikilink" href="../../input_variables/gw/#bdgw">bdgw</a> gives the
+on the wished position in the Brillouin zone. <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a> gives the
 minimum/maximum band whose energies are calculated for the given k-point.</p>
-<p>There is an additional parameter, called <a class="wikilink" href="../../input_variables/gw/#zcut">zcut</a>, related to the self-energy
+<p>There is an additional parameter, called <a class="wikilink codevar-link" href="../../input_variables/gw/#zcut">zcut</a>, related to the self-energy
 computation. It is meant to avoid some divergences that might occur in the
 calculation due to integrable poles along the integration path.</p>
-<h4 id="_6"><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
-<h4 id="1e-examination-of-the-output-file"><strong> 1.e Examination of the output file.</strong><a class="headerlink" href="#1e-examination-of-the-output-file" title="Permanent link">&para;</a></h4>
+<h4 id="_5"><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<h4 id="1e-examination-of-the-output-file">** 1.e Examination of the output file.**<a class="headerlink" href="#1e-examination-of-the-output-file" title="Permanent link">&para;</a></h4>
 <p>Let us hope that your calculation has been completed, and that we can examine
 the output file. Open tgw1_1.out in your preferred editor and find the section
 corresponding to DATASET 3.</p>
@@ -2593,7 +3310,7 @@ corresponding to DATASET 3.</p>
 find the list of k-points used for the electrons and the grid of q-point (in
 the Irreducible part of the Brillouin Zone) on which the susceptibility and
 dielectric matrices will be computed. It is a set of BZ points defined as all
-the possible differences among the k-points (<em>q=k-k'</em>) of the grid chosen to
+the possible differences among the k-points (<em>q=k-k&rsquo;</em>) of the grid chosen to
 generate the WFK file. From the last statement it is clear the interest to
 choose homogeneous k-point grids, in order not to minimize the number of
 q-points.</p>
@@ -2605,12 +3322,12 @@ the density in the unit cell.</p>
 <p>On the basis of the density, one can obtain the classical Drude plasmon
 frequency. The next lines calculate the average density of the system, and
 evaluate the r_s parameter, then compute the Drude plasmon frequency. This is
-the value used by default for <a class="wikilink" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>. It is in fact the second frequency
+the value used by default for <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>. It is in fact the second frequency
 where the code calculates the dielectric matrix to adjust the plasmon-pole
 model parameters. It has been found that Drude plasma frequency is a
 reasonable value where to adjust the model. The control over this parameter is
 however left to the user in order to check that the result does not change
-when changing <a class="wikilink" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>. If it is the case, then the plasmon-pole model is
+when changing <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>. If it is the case, then the plasmon-pole model is
 not appropriated and one should go beyond by taking into account a full
 dynamical dependence in the screening (see later, the contour-deformation
 method). However, the plasmon-pole model has been found to work well for a
@@ -2618,9 +3335,11 @@ very large range of systems when focusing only on the real part of the GW
 corrections.</p>
 <p>At the end of the screening calculation, the macroscopic dielectric constant
 is printed:</p>
-<pre><code>  dielectric constant =  13.5073
+<div class="codehilite"><pre><span></span>  dielectric constant =  13.5073
   dielectric constant without local fields =  15.0536
-</code></pre>
+</pre></div>
+
+
 <p>Note that the convergence in the dielectric constant DOES NOT guarantee the
 convergence in the GW corrections. In fact, the dielectric constant is
 representative of only one element i.e. the head of the full dielectric
@@ -2640,7 +3359,7 @@ the echo of parameters for the plasmon-pole model, and the inverse dielectric
 function (the screening). The self-energy operator has been constructed, and
 one can evaluate the GW energies, for each of the states.</p>
 <p>The final results are:</p>
-<pre><code>k =   -0.125   0.000   0.000
+<div class="codehilite"><pre><span></span>k =   -0.125   0.000   0.000
  Band     E0  &lt;VxcLDA&gt;   SigX SigC(E0)    Z dSigC/dE  Sig(E)    E-E0     E
     4   5.616 -11.115 -12.334   1.257   0.775  -0.290 -11.085   0.030   5.646
     5   8.357 -10.140  -5.951  -3.336   0.779  -0.284  -9.476   0.664   9.021
@@ -2648,7 +3367,9 @@ one can evaluate the GW energies, for each of the states.</p>
  E^0_gap          2.741
  E^GW_gap         3.375
  DeltaE^GW_gap    0.634
-</code></pre>
+</pre></div>
+
+
 <p>For the desired k-point, state 4, then state 5, one finds different
 information:</p>
 <ul>
@@ -2697,9 +3418,8 @@ potential for the state 5 (a conduction state), but the correlation correction
 is much larger than for state 4. On the whole, the difference between Kohn-
 Sham and GW energies is not very large, but nevertheless, it is quite
 important when compared with the size of the gap.</p>
-<hr />
-<h3 id="_7"><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p><strong>2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening (SCR file). </strong></p>
+<h2 id="2-preparing-convergence-studies-kohn-sham-structure-wfk-file-and-screening">2 Preparing convergence studies: Kohn-Sham structure (WFK file) and screening<a class="headerlink" href="#2-preparing-convergence-studies-kohn-sham-structure-wfk-file-and-screening" title="Permanent link">&para;</a></h2>
+<p>(SCR file)</p>
 <p>In the following sections, we will perform different convergence studies. In
 order to keep the CPU time at a reasonable level, we will use fake WFK and SCR
 data. Moreover we will only consider the correction at the Γ point only. In
@@ -2711,62 +3431,64 @@ convenient approach although some caution should always be used.</p>
 ../tgw1_2.in, and modify the tgw1_x.files file as usual. Edit the tgw1_2.in
 file, and take the time to examine it.</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_2.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_2.log &amp;
+</pre></div>
+
+
 <p>After this step you will need the WFK and SCR files produced in this run for
 the next runs (up to 6.8). Move tgw1o_DS2_WFK to tgw1o_DS1_WFK and
 tgw1o_DS3_SCR to tgw1o_DS1_SCR.</p>
 <p>The next sections are intended to show you how to find the converged
 parameters for a GW calculation. In principle, the following parameters might
 be used to decrease the CPU time and/or the memory requirements:
-<a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=3
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a>, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>. and for
-<a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=4,
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>. and for <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=4,
+<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>.</p>
 <p>Before 2008, the advice was indeed to check independently what was the best
 value for each of these. However, with the evolution of memory/disk space, as
 well as the advent of new techniques to diminish the number of bands that is
 needed (see e.g. F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008), and
-the input variable <a class="wikilink" href="../../input_variables/gw/#gwcomp">gwcomp</a>), standard calculations nowadays only need the
-tuning of <a class="wikilink" href="../../input_variables/basic/#nband">nband</a> <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a>, simultaneously for
-<a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=3 and
-=4. Indeed, <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> and can have the default value of <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>, while
-<a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a> can have the default value of 4*<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> for norm-conserving
-pseudopotentials, or <a class="wikilink" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> for PAW calculations. Actually, the present
+the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcomp">gwcomp</a>), standard calculations nowadays only need the
+tuning of <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>, simultaneously for <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 and =4.
+Indeed, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> and can have the default value of <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>, while
+<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a> can have the default value of 4*<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> for norm-conserving
+pseudopotentials, or <a class="wikilink codevar-link" href="../../input_variables/paw/#pawecutdg">pawecutdg</a> for PAW calculations. Actually, the present
 tutorial needs to be updated to account for the current practice.</p>
 <p>We begin by the convergence study on the three parameters needed in the self-
-energy calculation
-(<a href="../../../input_variables/generated_files/vargs.html#optdriver">optdriver</a>=4):
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>. This is because for these, we will not
-need a double dataset loop to check this convergence, and we will rely on the
-previously determined SCR file.</p>
-<hr />
-<h3 id="_8"><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p><strong>3 Convergence on the number of planewaves in the wavefunctions to calculate the Self-Energy (optional). </strong></p>
+energy calculation (<a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=4): <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>.
+This is because for these, we will not need a double dataset loop to check
+this convergence, and we will rely on the previously determined SCR file.</p>
+<h2 id="3-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the">3 Convergence on the number of planewaves in the wavefunctions to calculate the<a class="headerlink" href="#3-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="Permanent link">&para;</a></h2>
+<p>Self-Energy (optional)</p>
 <p>The convergence study is done in the input file tgw1_3.in. First, we check the
 convergence on the number of planewaves used to describe the wavefunctions, in
 the calculation of the Self-Energy. This will be done by defining five
-datasets, with increasing <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>:</p>
-<pre><code>ndtset     5
+datasets, with increasing <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>:</p>
+<div class="codehilite"><pre><span></span>ndtset     5
 ecutwfn:  3.0
 ecutwfn+  1.0
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_3.in, and modify the tgw1_x.files file as usual. Edit the tgw1_3.in
 file, and take the time to examine it.</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_3.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_3.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of plane waves used for the wavefunctions in
 the computation of the self-energy is mentioned in the fragments of output:</p>
-<pre><code> SIGMA fundamental parameters:
+<div class="codehilite"><pre><span></span> SIGMA fundamental parameters:
  PLASMON POLE MODEL
  number of plane-waves for SigmaX                  169
  number of plane-waves for SigmaC and W            169
  number of plane-waves for wavefunctions            59
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the GW energies for each planewave set, one gets:</p>
-<pre><code> number of plane-waves for wavefunctions            59
+<div class="codehilite"><pre><span></span> number of plane-waves for wavefunctions            59
  Band     E0  VxcLDA    SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     4   5.915 -11.490 -15.198   4.050   0.812  -0.232 -11.212   0.277   6.192
     5   8.445  -9.431  -3.101  -5.381   0.822  -0.216  -8.651   0.781   9.226
@@ -2790,39 +3512,45 @@ the computation of the self-energy is mentioned in the fragments of output:</p>
  Band     E0  VxcLDA    SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     4   5.915 -11.650 -15.250   3.790   0.806  -0.241 -11.497   0.152   6.068
     5   8.445  -9.697  -3.218  -5.583   0.818  -0.223  -8.965   0.733   9.178
-</code></pre>
-<p>So that <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=5.0 (<a class="wikilink" href="../../input_variables/internal/#npwwfn">npwwfn</a>=137) can be considered to lead to
+</pre></div>
+
+
+<p>So that <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=5.0 (<a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>=137) can be considered to lead to
 eigenenergies converged within 0.01 eV.</p>
-<hr />
-<h3 id="_9"><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
-<p><strong>4 Convergence on the number of planewaves to calculate Σx (optional). </strong></p>
+<h2 id="4-convergence-on-the-number-of-planewaves-to-calculate-x-optional">4 Convergence on the number of planewaves to calculate Σx (optional)<a class="headerlink" href="#4-convergence-on-the-number-of-planewaves-to-calculate-x-optional" title="Permanent link">&para;</a></h2>
 <p>Second, we check the convergence on the number of planewaves in the
 calculation of Σx. This study in done in tgw1_4.in As mentioned in the
-documentation <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, safe values exist for <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, so that if you
+documentation <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, safe values exist for <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>, so that if you
 do not want to squeeze the CPU time for your calculation (you might gain only
-a few percent in some cases ...), you can impose these values, and skip the
+a few percent in some cases &hellip;), you can impose these values, and skip the
 corresponding convergence study.</p>
 <p>In this lesson, this convergence study will be done by defining five datasets,
-with increasing <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>:</p>
-<pre><code>ndtset     7
+with increasing <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>:</p>
+<div class="codehilite"><pre><span></span>ndtset     7
 ecutsigx:  3.0
 ecutsigx+  1.0
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_4.in, and modify the tgw1_x.files file as usual. Edit the tgw1_4.in
 file, and take the time to examine it.</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_4.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_4.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of plane waves used for Σx is mentioned in
 the fragments of output:</p>
-<pre><code> SIGMA fundamental parameters:
+<div class="codehilite"><pre><span></span> SIGMA fundamental parameters:
  PLASMON POLE MODEL
  number of plane-waves for SigmaX                   59
  number of plane-waves for SigmaC and W             59
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the GW energies for each planewave set, one gets:</p>
-<pre><code> number of plane-waves for SigmaX                   59
+<div class="codehilite"><pre><span></span> number of plane-waves for SigmaX                   59
  number of plane-waves for SigmaC and W             59
  Band     E0  VxcLDA    SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     4   5.915 -11.639 -15.194   3.886   0.808  -0.238 -11.372   0.268   6.183
@@ -2863,38 +3591,44 @@ the fragments of output:</p>
  Band     E0  VxcLDA    SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     4   5.915 -11.639 -15.246   3.810   0.806  -0.241 -11.475   0.164   6.079
     5   8.445  -9.675  -3.215  -5.557   0.818  -0.223  -8.937   0.738   9.183
-</code></pre>
+</pre></div>
+
+
 <p>So that ecutsigx=6.0 (npwsigx=169) can be considered converged within 0.01 eV.</p>
-<hr />
-<h3 id="_10"><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<p><strong>5 Convergence on the number of bands to calculate Σc (important). </strong></p>
+<h2 id="5-convergence-on-the-number-of-bands-to-calculate-c-important">5 Convergence on the number of bands to calculate Σc (important)<a class="headerlink" href="#5-convergence-on-the-number-of-bands-to-calculate-c-important" title="Permanent link">&para;</a></h2>
 <p>At last, as concerns the computation of the self-energy, we check the
 convergence on the number of bands in the calculation of Σc. This convergence
 study is rather important, usually, BUT it can be done at the same time as the
 convergence study for the number of bands for the dielectric matrix.</p>
 <p>The convergence on the number of bands to calculate the Self-Energy will be
-done by defining five datasets, with increasing <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>:</p>
-<pre><code>ndtset  5
+done by defining five datasets, with increasing <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>:</p>
+<div class="codehilite"><pre><span></span>ndtset  5
 nband:  50
 nband+  50
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_5.in, and modify the tgw1_x.files file as usual. Edit the tgw1_5.in
 file, and take the time to examine it.<br />
 Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_5.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_5.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of bands used for the self-energy is
 mentioned in the fragments of output:</p>
-<pre><code> SIGMA fundamental parameters:
+<div class="codehilite"><pre><span></span> SIGMA fundamental parameters:
  PLASMON POLE MODEL
  number of plane-waves for SigmaX                  169
  number of plane-waves for SigmaC and W            169
  number of plane-waves for wavefunctions           137
  number of bands                                    50
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the GW energies for each number of bands, one gets:</p>
-<pre><code> number of bands                                   50
+<div class="codehilite"><pre><span></span> number of bands                                   50
     4   5.915 -11.639 -15.244   3.878   0.807  -0.240 -11.419   0.220   6.135
     5   8.445  -9.675  -3.213  -5.492   0.819  -0.222  -8.881   0.794   9.239
 
@@ -2913,58 +3647,71 @@ mentioned in the fragments of output:</p>
  number of bands                                  250
     4   5.915 -11.639 -15.244   3.804   0.806  -0.241 -11.479   0.160   6.075
     5   8.445  -9.675  -3.213  -5.564   0.818  -0.223  -8.941   0.734   9.179
-</code></pre>
+</pre></div>
+
+
 <p>So that nband=100 can be considered converged within 0.01 eV.</p>
 <p>At this stage, we know that for the self-energy computation, we need
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=5.0 <a class="wikilink" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>=6.0, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>=100 .</p>
-<hr />
-<h3 id="_11"><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<p><strong>6 Convergence on the number of planewaves in the wavefunctions to calculate the screening (ε-1) (optional). </strong></p>
+<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=5.0 <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>=6.0, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>=100 .</p>
+<h2 id="6-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the">6 Convergence on the number of planewaves in the wavefunctions to calculate the<a class="headerlink" href="#6-convergence-on-the-number-of-planewaves-in-the-wavefunctions-to-calculate-the" title="Permanent link">&para;</a></h2>
+<p>screening (ε-1) (optional)</p>
 <p>Now, we come back to the calculation of the screening. Adequate convergence
-studies will couple the change of parameters for <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 with a
+studies will couple the change of parameters for <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=3 with a
 computation of the GW energy changes. One cannot rely on the convergence of
 the macroscopic dielectric constant to assess the convergence of the GW
 energies.</p>
 <p>As a consequence, we will define a double loop over the datasets:</p>
-<pre><code>ndtset      10
+<div class="codehilite"><pre><span></span>ndtset      10
 udtset      5  2
-</code></pre>
+</pre></div>
+
+
 <p>The datasets 12,22,32,42 and 52, drive the computation of the GW energies:</p>
-<pre><code># Calculation of the Self-Energy matrix elements (GW corrections)
+<div class="codehilite"><pre><span></span># Calculation of the Self-Energy matrix elements (GW corrections)
 optdriver?2   4
 getscr?2     -1
 ecutwfn?2     5.0
 ecutsigx      6.0
 nband?2       100
-</code></pre>
+</pre></div>
+
+
 <p>The datasets 11,21,31,41 and 51, drive the corresponding computation of the
 screening:</p>
-<pre><code># Calculation of the screening (epsilon^-1 matrix)
+<div class="codehilite"><pre><span></span># Calculation of the screening (epsilon^-1 matrix)
 optdriver?1  3
-</code></pre>
+</pre></div>
+
+
 <p>In this latter series, we will have to vary the three different parameters
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a> and <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>.</p>
 <p>First, we check the convergence on the number of planewaves to describe the
 wavefunctions, in the calculation of the screening. This will be done by
-defining five datasets, with increasing <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>:</p>
-<pre><code>ecutwfn:?   3.0
+defining five datasets, with increasing <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>:</p>
+<div class="codehilite"><pre><span></span>ecutwfn:?   3.0
 ecutwfn+?   1.0
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_6.in, and modify the tgw1_x.files file as usual. Edit the tgw1_6.in
 file, and take the time to examine it.<br />
 Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_6.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_6.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of plane waves used for the wavefunctions in
 the computation of the screening is mentioned in the fragments of output:</p>
-<pre><code> EPSILON^-1 parameters (SCR file):
+<div class="codehilite"><pre><span></span> EPSILON^-1 parameters (SCR file):
  dimension of the eps^-1 matrix                    169
  number of plane-waves for wavefunctions            59
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the macroscopic dielectric constant and GW energies for each
 planewave set, one gets:</p>
-<pre><code> dielectric constant =  99.4320
+<div class="codehilite"><pre><span></span> dielectric constant =  99.4320
  dielectric constant without local fields = 147.6068
  number of plane-waves for wavefunctions            59
     4   5.915 -11.639 -15.244   3.843   0.811  -0.233 -11.446   0.193   6.108
@@ -2993,42 +3740,49 @@ planewave set, one gets:</p>
  number of plane-waves for wavefunctions           259
     4   5.915 -11.639 -15.244   3.769   0.804  -0.244 -11.508   0.131   6.047
     5   8.445  -9.675  -3.213  -5.578   0.815  -0.227  -8.954   0.721   9.166
-</code></pre>
-<p>So that <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=4.0 (<a class="wikilink" href="../../input_variables/internal/#npwwfn">npwwfn</a>=113) can be considered to lead to
+</pre></div>
+
+
+<p>So that <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=4.0 (<a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>=113) can be considered to lead to
 eigenenergies converged within 0.01 eV.</p>
-<hr />
-<h3 id="_12"><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
-<p><strong>7 Convergence on the number of bands to calculate the screening (important). </strong></p>
+<h2 id="7-convergence-on-the-number-of-bands-to-calculate-the-screening-1">7 Convergence on the number of bands to calculate the screening (ε-1)<a class="headerlink" href="#7-convergence-on-the-number-of-bands-to-calculate-the-screening-1" title="Permanent link">&para;</a></h2>
+<p>(important)</p>
 <p>This convergence study is rather important. It can be done at the same time as
 the convergence study for the number of bands for the self-energy. Note that
 the number of bands used to calculate both the screening and the self-energy
 can be lowered by a large amount by resorting to the extrapolar technique (see
-the input variable <a class="wikilink" href="../../input_variables/gw/#gwcomp">gwcomp</a>).</p>
+the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcomp">gwcomp</a>).</p>
 <p>Second, we check the convergence on the number of bands in the calculation of
 the screening. This will be done by defining five datasets, with increasing
-<a class="wikilink" href="../../input_variables/basic/#nband">nband</a>:</p>
-<pre><code>nband11  25
+<a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>:</p>
+<div class="codehilite"><pre><span></span>nband11  25
 nband21  50
 nband31  100
 nband41  150
 nband51  200
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_7.in, and modify the tgw1_x.files file as usual. Edit the tgw1_7.in
 file, and take the time to examine it.</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_7.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_7.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of bands used for the wavefunctions in the
 computation of the screening is mentioned in the fragments of output:</p>
-<pre><code> EPSILON^-1 parameters (SCR file):
+<div class="codehilite"><pre><span></span> EPSILON^-1 parameters (SCR file):
  dimension of the eps^-1 matrix                    169
  number of plane-waves for wavefunctions           113
  number of bands                                    25
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the macroscopic dielectric constant and GW energies for each number
 of bands, one gets:</p>
-<pre><code> dielectric constant =  99.8529
+<div class="codehilite"><pre><span></span> dielectric constant =  99.8529
  dielectric constant without local fields = 144.5675
  number of bands                                    25
     4   5.915 -11.639 -15.244   3.789   0.804  -0.244 -11.492   0.147   6.063
@@ -3057,32 +3811,38 @@ of bands, one gets:</p>
  number of bands                                   200
     4   5.915 -11.639 -15.244   3.568   0.807  -0.240 -11.669  -0.030   5.885
     5   8.445  -9.675  -3.213  -5.801   0.813  -0.230  -9.137   0.537   8.983
-</code></pre>
+</pre></div>
+
+
 <p>So that the computation using 100 bands can be considered converged within
 0.01 eV.</p>
-<hr />
-<h3 id="_13"><a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
-<p><strong>8 Convergence on the dimension of the ε-1 matrix (important). </strong></p>
+<h2 id="8-convergence-on-the-dimension-of-the-screening-1-matrix-important">8 Convergence on the dimension of the screening ε-1 matrix (important)<a class="headerlink" href="#8-convergence-on-the-dimension-of-the-screening-1-matrix-important" title="Permanent link">&para;</a></h2>
 <p>Third, we check the convergence on the number of plane waves in the
 calculation of the screening. This will be done by defining six datasets, with
-increasing <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a>:</p>
-<pre><code>ecuteps:?     3.0
+increasing <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>:</p>
+<div class="codehilite"><pre><span></span>ecuteps:?     3.0
 ecuteps+?     1.0
-</code></pre>
+</pre></div>
+
+
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_8.in, and modify the tgw1_x.files file as usual. Edit the tgw1_8.in
 file, and take the time to examine it.</p>
 <p>Then, issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_8.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_8.log &amp;
+</pre></div>
+
+
 <p>Edit the output file. The number of bands used for the wavefunctions in the
 computation of the screening is mentioned in the fragments of output:</p>
-<pre><code> EPSILON^-1 parameters (SCR file):
+<div class="codehilite"><pre><span></span> EPSILON^-1 parameters (SCR file):
  dimension of the eps^-1 matrix                     59
-</code></pre>
+</pre></div>
+
+
 <p>Gathering the macroscopic dielectric constant and GW energies for each number
 of bands, one gets:</p>
-<pre><code> dielectric constant = 102.1696
+<div class="codehilite"><pre><span></span> dielectric constant = 102.1696
  dielectric constant without local fields = 144.5703
  dimension of the eps^-1 matrix                     59
     4   5.915 -11.639 -15.244   3.721   0.808  -0.237 -11.545   0.094   6.009
@@ -3116,10 +3876,12 @@ of bands, one gets:</p>
  dimension of the eps^-1 matrix                    283
     4   5.915 -11.639 -15.244   3.577   0.807  -0.239 -11.662  -0.023   5.892
     5   8.445  -9.675  -3.213  -5.792   0.813  -0.230  -9.130   0.544   8.990
-</code></pre>
+</pre></div>
+
+
 <p>So that ecuteps=6.0 (npweps=169) can be considered converged within 0.01 eV.</p>
 <p>At this stage, we know that for the screening computation, we need
-<a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=4.0 <a class="wikilink" href="../../input_variables/gw/#ecuteps">ecuteps</a>=6.0, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>=100.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>=4.0 <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>=6.0, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>=100.</p>
 <p>Of course, until now, we have skipped the most difficult part of the
 convergence tests: the convergence in the number of k-points. It is as
 important to check the convergence on this parameter, than on the other ones.
@@ -3128,23 +3890,27 @@ square of the number of k points (roughly), and the number of k-points can
 increase very rapidly from one possible grid to the next denser one. This is
 why we will leave this out of the present tutorial, and consider that we
 already know a sufficient k-point grid, for the last calculation.</p>
-<hr />
-<h3 id="_14"><a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
-<p><strong>9 Calculation of the GW corrections for the band gap in Γ. </strong></p>
+<h2 id="9-calculation-of-the-gw-corrections-for-the-band-gap-in">9 Calculation of the GW corrections for the band gap in Γ<a class="headerlink" href="#9-calculation-of-the-gw-corrections-for-the-band-gap-in" title="Permanent link">&para;</a></h2>
 <p>Now we try to perform a GW calculation for a real problem: the calculation of
 the GW corrections for the direct band gap of bulk Silicon in Γ.</p>
 <p>In directory ~abinit/tests/tutorial/Input/Work_gw1, copy the file
 ../tgw1_9.in, and modify the tgw1_x.files file as usual. Then, edit the
 tgw1_9.in file, and, without examining it, comment the line</p>
-<pre><code> ngkpt    2 2 2         # Density of k points used for the automatic tests of the tutorial
-</code></pre>
+<div class="codehilite"><pre><span></span> ngkpt    2 2 2         # Density of k points used for the automatic tests of the tutorial
+</pre></div>
+
+
 <p>and uncomment the line</p>
-<pre><code>#ngkpt    4 4 4        # Density of k points needed for a converged calculation
-</code></pre>
+<div class="codehilite"><pre><span></span>#ngkpt    4 4 4        # Density of k points needed for a converged calculation
+</pre></div>
+
+
 <p>Then,<br />
 Issue:</p>
-<pre><code>abinit &lt; tgw1_x.files &gt;&amp; tgw1_9.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tgw1_x.files &gt;&amp; tgw1_9.log &amp;
+</pre></div>
+
+
 <p>This job lasts about 1 minute so it is worth to run it before the examination
 of the input file.</p>
 <p>Now, you can examine it.<br />
@@ -3165,8 +3931,8 @@ the Γ point, which allows us to tackle the computation of the band gap at this
 point.</p>
 <p>In dataset 3 we calculate the screening. The screening calculation is very
 time-consuming. So, we have decided to decrease a bit the parameters found in
-the previous convergence studies. Indeed, <a class="wikilink" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> has been decreased from
-4.0 to 3.6. This is rather innocuous. Also, <a class="wikilink" href="../../input_variables/basic/#nband">nband</a> has been decreased from
+the previous convergence studies. Indeed, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> has been decreased from
+4.0 to 3.6. This is rather innocuous. Also, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> has been decreased from
 100 to 25. This is a drastic change. The CPU time of this part is linear with
 respect to this parameter (or more exactly, with the number of conduction
 bands). Thus, the CPU time has been decreased by a factor of 4. Referring to
@@ -3185,7 +3951,7 @@ quantities like the work function.</p>
 <p>Finally in dataset 4 we calculate the self-energy matrix element in Γ, using
 the previously determined parameters.</p>
 <p>You should obtain the following results:</p>
-<pre><code> k =    0.000   0.000   0.000
+<div class="codehilite"><pre><span></span> k =    0.000   0.000   0.000
  Band     E0  VxcLDA    SigX SigC(E0)      Z dSigC/dE  Sig(E)    E-E0       E
     4   5.951 -11.253 -12.628   1.187   0.777  -0.287 -11.398  -0.146   5.806
     5   8.464 -10.042  -5.563  -3.878   0.777  -0.287  -9.575   0.467   8.931
@@ -3193,12 +3959,14 @@ the previously determined parameters.</p>
  E^0_gap          2.513
  E^GW_gap         3.126
  DeltaE^GW_gap    0.613
-</code></pre>
+</pre></div>
+
+
 <p>So that the LDA energy gap in Γ is about 2.53 eV, while the GW correction is
 about 0.64 eV, so that the GW band gap found is 3.17 eV.</p>
 <p>One can compare now what have been obtained to what one can get from the
 literature.</p>
-<pre><code> EXP         3.40 eV   Landolt-Boernstein
+<div class="codehilite"><pre><span></span> EXP         3.40 eV   Landolt-Boernstein
 
  LDA         2.57 eV   L. Hedin, Phys. Rev. 139, A796 (1965)
  LDA         2.57 eV   M.S. Hybertsen and S. Louie, PRL 55, 1418 (1985)
@@ -3213,7 +3981,9 @@ literature.</p>
  GW  (PAW)   3.15 eV   B. Arnaud and M. Alouani, PRB 62, 4464 (2000)
  GW  (FLAPW) 3.12 eV   W. Ku and A.G. Eguiluz, PRL 89, 126401 (2002)
  GW          3.17 eV   present work
-</code></pre>
+</pre></div>
+
+
 <p>The values are spread over an interval of 0.2 eV. They depend on the details
 of the calculation. In the case of pseudopotential calculations, they depend
 of course on the pseudopotential used. However, a GW result is hardly
@@ -3234,11 +4004,10 @@ respect to the 0-order LDA energy for each state. One can then simply correct
 the Kohn-Sham band structure at any point, by using a GW correction for the
 k-points where it has not been calculated explicitly, using a fit of the GW
 correction at a sparse set of points.</p>
-<hr />
-<h3 id="10-advanced-features-in-the-gw-code"><strong>10 Advanced features in the GW code </strong><a class="headerlink" href="#10-advanced-features-in-the-gw-code" title="Permanent link">&para;</a></h3>
+<h2 id="advanced-features-in-the-gw-code">Advanced features in the GW code<a class="headerlink" href="#advanced-features-in-the-gw-code" title="Permanent link">&para;</a></h2>
 <p>The user might switch to the <a href="../lesson_gw2.html">second GW tutorial</a> before
 coming back to the present section.</p>
-<h4 id="calculations-without-using-the-plasmon-pole-model"><strong> Calculations without using the Plasmon-Pole model </strong><a class="headerlink" href="#calculations-without-using-the-plasmon-pole-model" title="Permanent link">&para;</a></h4>
+<h4 id="calculations-without-using-the-plasmon-pole-model">** Calculations without using the Plasmon-Pole model **<a class="headerlink" href="#calculations-without-using-the-plasmon-pole-model" title="Permanent link">&para;</a></h4>
 <p>In order to circumvent the plasmon-pole model, the GW frequency convolution
 has to be calculated explicitly along the real axis. This is a tough job,
 since G and W have poles along the real axis. Therefore it is more convenient
@@ -3247,34 +4016,34 @@ enclosed in the path.</p>
 <p>Consequently, it is better to evaluate the screening for imaginary frequencies
 (to perform the integration) and also for real frequencies (to evaluate the
 contributions of the residues that may enter into the path of integration).
-The number of imaginary frequencies is set by the input variable <a class="wikilink" href="../../input_variables/gw/#nfreqim">nfreqim</a>.
+The number of imaginary frequencies is set by the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqim">nfreqim</a>.
 The regular grid of real frequencies is determined by the input variables
-<a class="wikilink" href="../../input_variables/gw/#nfreqre">nfreqre</a>, which sets the number of real frequencies, and <a class="wikilink" href="../../input_variables/gw/#freqremax">freqremax</a>,
+<a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqre">nfreqre</a>, which sets the number of real frequencies, and <a class="wikilink codevar-link" href="../../input_variables/gw/#freqremax">freqremax</a>,
 which indicates the maximum real frequency used.</p>
 <p>The method is particularly suited to output the spectral function (contained
 in file out.sig). The grid of real frequencies used to calculate the spectral
-function is set by the number of frequencies (input variable <a class="wikilink" href="../../input_variables/gw/#nfreqsp">nfreqsp</a>) and
-by the maximum frequency calculated (input variable <a class="wikilink" href="../../input_variables/gw/#freqspmax">freqspmax</a>).</p>
-<h4 id="self-consistent-calculations"><strong> Self-consistent calculations </strong><a class="headerlink" href="#self-consistent-calculations" title="Permanent link">&para;</a></h4>
+function is set by the number of frequencies (input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqsp">nfreqsp</a>) and
+by the maximum frequency calculated (input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#freqspmax">freqspmax</a>).</p>
+<h4 id="self-consistent-calculations">** Self-consistent calculations **<a class="headerlink" href="#self-consistent-calculations" title="Permanent link">&para;</a></h4>
 <p>The details in the implementation and the justification for the approximations
 retained can be found in F. Bruneval, N. Vast, and L. Reining, Phys. Rev. B
 <strong>74</strong>, 045102 (2006).<br />
-The only added input variables are <a class="wikilink" href="../../input_variables/files/#getqps">getqps</a> and <a class="wikilink" href="../../input_variables/files/#irdqps">irdqps</a>. These variables
+The only added input variables are <a class="wikilink codevar-link" href="../../input_variables/files/#getqps">getqps</a> and <a class="wikilink codevar-link" href="../../input_variables/files/#irdqps">irdqps</a>. These variables
 concerns the reading of the _QPS file, that contains the eigenvalues and the
 unitary transform matrices of a previous quasiparticle calculation. QPS stands
-for "QuasiParticle Structure".<br />
+for &ldquo;QuasiParticle Structure&rdquo;.<br />
 The only modified input variables for self-consistent calculations are
-<a class="wikilink" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> and <a class="wikilink" href="../../input_variables/gw/#bdgw">bdgw</a>.<br />
-When the variable <a class="wikilink" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 0 and 9, The code calculates the
+<a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>.<br />
+When the variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 0 and 9, The code calculates the
 quasiparticle energies only and does not output any QPS file (as in a standard
 GW run).<br />
-When the variable <a class="wikilink" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 10 and 19, the code calculates
+When the variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 10 and 19, the code calculates
 the quasiparticle energies only and outputs them in a QPS file.<br />
-When the variable <a class="wikilink" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 20 and 29, the code calculates
+When the variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> is in between 20 and 29, the code calculates
 the quasiparticle energies and wavefunctions and outputs them in a QPS file.<br />
 For a full self-consistency calculation, the quasiparticle wavefunctions are
 expanded in the basis set of the Kohn-Sham wavefunctions. The variable
-<a class="wikilink" href="../../input_variables/gw/#bdgw">bdgw</a> now indicates the size of all matrices to be calculated and
+<a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a> now indicates the size of all matrices to be calculated and
 diagonalized. The quasiparticle wavefunctions are consequently linear
 combinations of the Kohn-Sham wavefunctions in between the min and max values
 of bdgw.</p>
@@ -3302,7 +4071,7 @@ initialization reasons. Therefore, a correct HF calculations should look like</p
 <p>In the case of a self-consistent calculation, the output is slightly more
 complex:<br />
 <strong>For instance, iteration 2</strong></p>
-<pre><code> k =    0.500   0.250   0.000
+<div class="codehilite"><pre><span></span> k =    0.500   0.250   0.000
  Band     E_lda  &lt;Vxclda&gt;    E(N-1) &lt;Hhartree&gt;    SigX  SigC[E(N-1)]    Z     dSigC/dE  Sig[E(N)]  DeltaE  E(N)_pert E(N)_diago
     1    -3.422   -10.273    -3.761     6.847   -15.232     4.034     1.000     0.000   -11.198    -0.590    -4.351    -4.351
     2    -0.574   -10.245    -0.850     9.666   -13.806     2.998     1.000     0.000   -10.807    -0.291    -1.141    -1.141
@@ -3316,7 +4085,9 @@ complex:<br />
  E^0_gap          3.684
  E^GW_gap         5.764
  DeltaE^GW_gap    2.080
-</code></pre>
+</pre></div>
+
+
 <p>The columns are</p>
 <ul>
 <li>
@@ -3371,15 +4142,186 @@ complex:<br />
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../tdepes/" title="Tdepes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tdepes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gw2/" title="GW2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GW2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (VOlevano, XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1765,6 +1985,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1780,10 +2012,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1831,8 +2183,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1861,13 +2225,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1923,13 +2335,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9" checked>
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1946,6 +2358,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Base
@@ -1959,31 +2373,33 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-generalities" title="1. Generalities" class="md-nav__link">
-    1. Generalities
+  <a href="#parallelism-in-abinit-generalities-and-environments" title="Parallelism in ABINIT, generalities and environments." class="md-nav__link">
+    Parallelism in ABINIT, generalities and environments.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-characteristics-of-parallel-environments" title="2. Characteristics of parallel environments" class="md-nav__link">
-    2. Characteristics of parallel environments
+  <a href="#1-generalities" title="1 Generalities" class="md-nav__link">
+    1 Generalities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-characteristics-of-parallel-environments" title="2 Characteristics of parallel environments" class="md-nav__link">
+    2 Characteristics of parallel environments
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generalities" title="Generalities" class="md-nav__link">
-    Generalities
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#mpi" title="MPI" class="md-nav__link">
@@ -2019,15 +2435,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-what-parts-of-abinit-are-parallel" title="3. What parts of ABINIT are parallel?" class="md-nav__link">
-    3. What parts of ABINIT are parallel?
+  <a href="#3-what-parts-of-abinit-are-parallel" title="3 What parts of ABINIT are parallel?" class="md-nav__link">
+    3 What parts of ABINIT are parallel?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-a-simple-example-of-parallelism-in-abinit" title="4. A simple example of parallelism in ABINIT" class="md-nav__link">
-    4. A simple example of parallelism in ABINIT
+  <a href="#4-a-simple-example-of-parallelism-in-abinit" title="4 A simple example of parallelism in ABINIT" class="md-nav__link">
+    4 A simple example of parallelism in ABINIT
   </a>
   
     <nav class="md-nav">
@@ -2074,8 +2490,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-details-of-the-implementation" title="5. Details of the implementation" class="md-nav__link">
-    5. Details of the implementation
+  <a href="#5-details-of-the-implementation" title="5 Details of the implementation" class="md-nav__link">
+    5 Details of the implementation
   </a>
   
     <nav class="md-nav">
@@ -2115,14 +2531,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2156,8 +2728,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2180,7 +2764,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2216,8 +2812,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2301,31 +2933,33 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-generalities" title="1. Generalities" class="md-nav__link">
-    1. Generalities
+  <a href="#parallelism-in-abinit-generalities-and-environments" title="Parallelism in ABINIT, generalities and environments." class="md-nav__link">
+    Parallelism in ABINIT, generalities and environments.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-characteristics-of-parallel-environments" title="2. Characteristics of parallel environments" class="md-nav__link">
-    2. Characteristics of parallel environments
+  <a href="#1-generalities" title="1 Generalities" class="md-nav__link">
+    1 Generalities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-characteristics-of-parallel-environments" title="2 Characteristics of parallel environments" class="md-nav__link">
+    2 Characteristics of parallel environments
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#generalities" title="Generalities" class="md-nav__link">
-    Generalities
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#mpi" title="MPI" class="md-nav__link">
@@ -2361,15 +2995,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-what-parts-of-abinit-are-parallel" title="3. What parts of ABINIT are parallel?" class="md-nav__link">
-    3. What parts of ABINIT are parallel?
+  <a href="#3-what-parts-of-abinit-are-parallel" title="3 What parts of ABINIT are parallel?" class="md-nav__link">
+    3 What parts of ABINIT are parallel?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-a-simple-example-of-parallelism-in-abinit" title="4. A simple example of parallelism in ABINIT" class="md-nav__link">
-    4. A simple example of parallelism in ABINIT
+  <a href="#4-a-simple-example-of-parallelism-in-abinit" title="4 A simple example of parallelism in ABINIT" class="md-nav__link">
+    4 A simple example of parallelism in ABINIT
   </a>
   
     <nav class="md-nav">
@@ -2416,8 +3050,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-details-of-the-implementation" title="5. Details of the implementation" class="md-nav__link">
-    5. Details of the implementation
+  <a href="#5-details-of-the-implementation" title="5 Details of the implementation" class="md-nav__link">
+    5 Details of the implementation
   </a>
   
     <nav class="md-nav">
@@ -2456,15 +3090,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/basepar.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Base</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-There are many situations where a sequential code is not enough, often because
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="lesson-on-basic-parallelism">Lesson on basic parallelism<a class="headerlink" href="#lesson-on-basic-parallelism" title="Permanent link">&para;</a></h1>
+<h2 id="parallelism-in-abinit-generalities-and-environments">Parallelism in ABINIT, generalities and environments.<a class="headerlink" href="#parallelism-in-abinit-generalities-and-environments" title="Permanent link">&para;</a></h2>
+<p>There are many situations where a sequential code is not enough, often because
 it would take too much time to get a result. There are also cases where you
 just want things to go as fast as your computational resources allow it. By
 using more than one processor, you might also have access to more memory than
@@ -2477,59 +3110,19 @@ gone through all four basic tutorials. If this is not the case, we strongly
 advise you to do so, in order to truly benefit from this tutorial.</p>
 <p>We strongly recommend you to acquaint yourself with some basic concepts of
 <a href="https://en.wikipedia.org/wiki/Parallel_computing">parallel computing</a> too. In
-particular <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law"> Almdalh's law</a>,
+particular <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law"> Almdalh&rsquo;s law</a>,
 that rationalizes the fact that, beyond some number of processors, the
 inherently sequential parts will dominate parallel parts, and give a
 limitation to the maximal speed-up that can be achieved.</p>
-<ul>
-<li>
-<ol>
-<li>Generalities</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Parallel environments </li>
-<li>Generalities</li>
-<li>MPI</li>
-<li>OpenMP</li>
-<li>Scalapack</li>
-<li>Fast/slow communications</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>What parts of ABINIT are parallel?</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>A simple example of parallelism in ABINIT </li>
-<li>Running a job</li>
-<li>Parallelism over the k-points</li>
-<li>Parallelism over the spins</li>
-<li>Number of computing cores to accomplish a task</li>
-<li>Evidencing overhead</li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Details of the implementation </li>
-<li>The MPI toolbox in ABINIT</li>
-<li>How to parallelize a routine: some hints</li>
-</ol>
-</li>
-</ul>
-<hr />
-<h2 id="146-generalities">1. Generalities<a class="headerlink" href="#146-generalities" title="Permanent link">&para;</a></h2>
+<h2 id="1-generalities">1 Generalities<a class="headerlink" href="#1-generalities" title="Permanent link">&para;</a></h2>
 <p>With the broad availability of multi-core processors, everybody now has a
 parallel machine at hand. ABINIT will be able to take advantage of the
 availability of several cores for most of its capabilities, be it ground-state
 calculations, molecular dynamics, linear-response, many-body perturbation
-theory, ...</p>
+theory, &hellip;</p>
 <p>Such tightly integrated multi-core processors (or so-called SMP machines,
 meaning Symmetric Multi-Processing) can be interlinked within networks, based
-on Ethernet or other types of connections (Quadrics, Myrinet, etc ...). The
+on Ethernet or other types of connections (Quadrics, Myrinet, etc &hellip;). The
 number of cores in such composite machines can easily exceed one hundred, and
 go up to a fraction of a million these days. Most ABINIT capabilities can use
 efficiently several hundred computing cores. In some cases, even more than ten
@@ -2547,9 +3140,7 @@ to you.</p>
 and that you are familiar with the peculiarities of your system. Please
 remember that, as there is no standard way of setting up a parallel
 environment, we are not able to provide you with support beyond ABINIT itself.</p>
-<hr />
-<h2 id="246-characteristics-of-parallel-environments">2. Characteristics of parallel environments<a class="headerlink" href="#246-characteristics-of-parallel-environments" title="Permanent link">&para;</a></h2>
-<h3 id="generalities">Generalities<a class="headerlink" href="#generalities" title="Permanent link">&para;</a></h3>
+<h2 id="2-characteristics-of-parallel-environments">2 Characteristics of parallel environments<a class="headerlink" href="#2-characteristics-of-parallel-environments" title="Permanent link">&para;</a></h2>
 <p>Different software solutions can be used to benefit from parallelism. Most of
 ABINIT parallelism is based on MPI, but some additional speed-up (or a better
 distribution of data, allowing to run bigger calculations) is based on OpenMP.
@@ -2601,12 +3192,12 @@ its use in ABINIT in this tutorial.</p>
 the whole set of cores) is a complex task. At a quite basic level, one has to
 recognize that not only the quantity of data that can be transferred per unit
 of time is important, but also the time that is needed to initialize such a
-transfer (so called "latency").</p>
+transfer (so called &ldquo;latency&rdquo;).</p>
 <p>Broadly speaking, one can categorize computers following the speed of
 communications. In the fast communication machines, the latency is very low
 and the transfer time, once initialized, is very low too. For the parallelised
 part of ABINIT, SMP machines and machines with fast interconnect (Quadrics,
-Myrinet ...) will usually not be limited by their network characteristics, but
+Myrinet &hellip;) will usually not be limited by their network characteristics, but
 by the existence of residual sequential parts. The tutorials that have been
 developed for ABINIT have been based on fast communication machines.</p>
 <p>If the set of computing cores that you plan to use is not entirely linked
@@ -2614,8 +3205,7 @@ using a fast network, but includes some connections based e.g. on Ethernet,
 then, you might not be able to benefit from the speed-up announced in the
 tutorials. You have to perform some tests on your actual machine to gain
 knowledge of it.</p>
-<hr />
-<h2 id="346-what-parts-of-abinit-are-parallel">3. What parts of ABINIT are parallel?<a class="headerlink" href="#346-what-parts-of-abinit-are-parallel" title="Permanent link">&para;</a></h2>
+<h2 id="3-what-parts-of-abinit-are-parallel">3 What parts of ABINIT are parallel?<a class="headerlink" href="#3-what-parts-of-abinit-are-parallel" title="Permanent link">&para;</a></h2>
 <p>Parallelizing a code is a very delicate and complicated task, thus do not
 expect that things will systematically go faster just because you are using a
 parallel version of ABINIT. Please keep also in mind that in some situations,
@@ -2625,8 +3215,8 @@ that have been parallelized, and for which a tutorial is available, include:</p>
 <li><a href="../lesson_paral_gspw.html">ground state with plane waves</a>,</li>
 <li><a href="../lesson_paral_gswvl.html">ground state with wavelets</a>,</li>
 <li><a href="../lesson_paral_moldyn.html">molecular dynamics</a>,</li>
-<li><a href="../lesson_paral_string.html">parallelism on "images"</a>,</li>
-<li><a href="../lesson_paral_dfpt.html">response functions</a>,</li>
+<li><a href="../lesson_paral_images.html">parallelism on &ldquo;images&rdquo;</a>,</li>
+<li><a href="../lesson_paral_dfpt.html">density-functional perturbation theory (DFPT)</a>,</li>
 <li><a href="../lesson_paral_mbt.html">Many-Body Perturbation Theory</a>.</li>
 </ul>
 <p>Note that the tutorial on <a href="../lesson_paral_gspw.html">ground state with plane
@@ -2637,33 +3227,34 @@ several hundreds of processors.</p>
 <p>Actually, the two levels based on</p>
 <ul>
 <li>the treatment of k-points in reciprocal space;</li>
-<li>the treatment of spins, for spin-polarized collinear situations (when <a href="../../../input_variables/generated_files/varbas.html#nsppol">nsppol</a>=2);</li>
+<li>the treatment of spins, for spin-polarized collinear situations <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a>=2);</li>
 </ul>
 <p>are, on the contrary, quite easy to use. An example of such parallelism will
 be given in the next section.</p>
-<hr />
-<h2 id="446-a-simple-example-of-parallelism-in-abinit">4. A simple example of parallelism in ABINIT<a class="headerlink" href="#446-a-simple-example-of-parallelism-in-abinit" title="Permanent link">&para;</a></h2>
+<h2 id="4-a-simple-example-of-parallelism-in-abinit">4 A simple example of parallelism in ABINIT<a class="headerlink" href="#4-a-simple-example-of-parallelism-in-abinit" title="Permanent link">&para;</a></h2>
 <h3 id="running-a-job">Running a job<a class="headerlink" href="#running-a-job" title="Permanent link">&para;</a></h3>
 <p><em>Before starting, you might consider working in a different subdirectory as
-for the other lessons. Why not "Work_paral" ?</em></p>
+for the other lessons. Why not &ldquo;Work_paral&rdquo; ?</em></p>
 <p>Copy the <em>files</em> file and the input file from the <em>~abinit/tests/tutorial</em>
 directory to your work directory. They are named <em>tbasepar_1.files</em> and
 <em>tbasepar_1.in</em>. You can start immediately a sequential run, to have a
 reference CPU time. On a 2.8GHz PC, it runs in about one minute.</p>
-<p>Contrary to the sequential case, it is worth to have a look at the "files"
+<p>Contrary to the sequential case, it is worth to have a look at the &ldquo;files&rdquo;
 file, and to modify it for the parallel execution, as one should avoid
 unnecessary network communications. If every node has its own temporary or
 scratch directory, you can achieve this by providing a path to a local disk
 for the temporary files in <em>abinit.files</em>. Supposing each processor has access
 to a local temporary disk space named <em>/scratch/user</em>, then you might modify
-the 5th line of the <em>files</em> file so that it becomes:</p>
-<pre><code>tbasepar_1.in
+the 5<sup>th</sup> line of the <em>files</em> file so that it becomes:</p>
+<div class="codehilite"><pre><span></span>tbasepar_1.in
 tbasepar_1.out
 tbasepar_1i
 tbasepar_1o
 /scratch/user/tbasepar_1
 ../../Psps_for_tests/HGH/82pb.4.hgh
-</code></pre>
+</pre></div>
+
+
 <p>Note that determining ahead of time the precise resources you will need for
 your run will save you a lot of time if you are using a batch queue system.</p>
 <h3 id="parallelism-over-the-k-points">Parallelism over the k-points<a class="headerlink" href="#parallelism-over-the-k-points" title="Permanent link">&para;</a></h3>
@@ -2674,7 +3265,7 @@ them.</p>
 lead, which requires a large number of k-points if one wants to get an
 accurate description of the ground state. Examine this file. Note that the
 cut-off is realistic, as well as the grid of k-points (giving 60 k points in
-the irreducible Brillouin zone). However, the number of SCF steps, <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>,
+the irreducible Brillouin zone). However, the number of SCF steps, <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>,
 has been set to 3 only. This is to keep the CPU time reasonable for this
 tutorial, without affecting the way parallelism on the k points will be able
 to increase the speed. Once done, your output files have likely been produced.
@@ -2684,48 +3275,58 @@ Wall time), and keep note of it.</p>
 might succeed to use two compute cores by issuing the run command for your MPI
 implementation, and mention the number of processors you want to use, as well
 as the abinit command:</p>
-<pre><code>mpirun -np 2 ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
-</code></pre>
-<p>Depending on your particular machine, "mpirun" might have to be replaced by
-"mpiexec", and "-np" by some other option.</p>
+<div class="codehilite"><pre><span></span>mpirun -np 2 ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
+</pre></div>
+
+
+<p>Depending on your particular machine, &ldquo;mpirun&rdquo; might have to be replaced by
+&ldquo;mpiexec&rdquo;, and &ldquo;-np&rdquo; by some other option.</p>
 <p>On a cluster, with the MPICH implementation of MPI, you have to set up a file
-with the addresses of the different CPUs. Let's suppose you call it <em>cluster</em>.
+with the addresses of the different CPUs. Let&rsquo;s suppose you call it <em>cluster</em>.
 For a PC bi-processor machine, this file could have only one line, like the
 following:</p>
-<pre><code>sleepy.pcpm.ucl.ac.be:2
-</code></pre>
+<div class="codehilite"><pre><span></span>sleepy.pcpm.ucl.ac.be:2
+</pre></div>
+
+
 <p>For a cluster of four machines, you might have something like:</p>
-<pre><code>tux0
+<div class="codehilite"><pre><span></span>tux0
 tux1
 tux2
 tux3
-</code></pre>
+</pre></div>
+
+
 <p>More possibilities are mentioned in the file <em>~abinit/doc/users/paral_use</em>.</p>
 <p>Then, you have to issue the run command for your MPI implementation, and
 mention the number of processors you want to use, as well as the abinit
 command and the file containing the CPU addresses.</p>
 <p>On a PC bi-processor machine, this gives the following:</p>
-<pre><code>mpirun -np 2 -machinefile cluster ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>mpirun -np 2 -machinefile cluster ../../src/main/abinit &lt; tbasepar_1.files &gt;&amp; tbasepar_1.log &amp;
+</pre></div>
+
+
 <p>Now, examine the corresponding output file. If you have kept the output from
 the sequential job, you can make a diff between the two files. You will notice
 that the numerical results are quite identical. You will also see that 60
 k-points have been kept in the memory in the sequential case, while 30
 k-points have been kept in the memory (per processor !) in the parallel case.</p>
 <p>The timing can be found at the end of the file. Here is an example:</p>
-<pre><code>- Proc.   0 individual time (sec): cpu=         28.3  wall=         28.3
+<div class="codehilite"><pre><span></span>- Proc.   0 individual time (sec): cpu=         28.3  wall=         28.3
 
 ================================================================================
 
  Calculation completed.
  Delivered    1 WARNINGs and   1 COMMENTs to log file.
 +Overall time at end (sec) : cpu=         56.6  wall=         56.6
-</code></pre>
+</pre></div>
+
+
 <p>This corresponds effectively to a speed-up of the job by a factor of two.
-Let's examine it. The line beginning with <code>Proc. 0</code> corresponds to the CPU and
+Let&rsquo;s examine it. The line beginning with <code class="codehilite">Proc. 0</code> corresponds to the CPU and
 Wall clock timing seen by the processor number 0 (processor indexing always
 starts at 0: here the other is number 1): 28.3 sec of CPU time, and the same
-amount of Wall clock time. The line that starts with <code>+Overall time</code>
+amount of Wall clock time. The line that starts with <code class="codehilite">+Overall time</code>
 corresponds to the sum of CPU times and Wall clock timing for all processors.
 The summation is quite meaningful for the CPU time, but not so for the wall
 clock time: the job was finished after 28.3 sec, and not 56.6 sec.</p>
@@ -2737,7 +3338,7 @@ further the Wall clock time seen by one processor. It is not worth to try to
 use more processors. You should get a curve similar to this one:</p>
 <p><img alt="" src="../../documents/lesson_basepar/lesson_basepar_speedup.png" /></p>
 <p>The red curve materializes the speed-up achieved, while the green one is the
-"y = x" line. The shape of the red curve will vary depending on your hardware
+&ldquo;y = x&rdquo; line. The shape of the red curve will vary depending on your hardware
 configuration. The definition of the speed-up is the time taken in a
 sequential calculation divided by the time for your parallel calculation
 (hopefully &gt; 1) .</p>
@@ -2769,24 +3370,25 @@ Run this test case, in sequential, then in parallel.</p>
 <p>While the jobs are running, read the input and files file. Then look closely
 at the output and log files. They are quite similar. With a diff, you will see
 the only obvious manifestation of the parallelism in the following:</p>
-<pre><code>&lt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1
+<div class="codehilite"><pre><span></span>&lt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1
 &lt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1
 ---
 &gt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1 by node    0
 &gt; P newkpt: treating     40 bands with npw=    2698 for ikpt=   1 by node    1
-</code></pre>
+</pre></div>
+
+
 <p>In the second case (parallelism), node 0 is taking care of the up state for
 k-point 1, while node 1 is taking care of the down state for k-point 1. The
 timing analysis is very similar to the k-point parallelism case.</p>
 <p>If you have more than 2 processors at hand, you might increase the value of
-<a href="../../../input_variables/generated_files/varbas.html#ngkpt">ngkpt</a>, so that more
-than one k-point is available, and see that the k-point and spin parallelism
-indeed work concurrently.</p>
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ngkpt">ngkpt</a>, so that more than one k-point is available, and see that the
+k-point and spin parallelism indeed work concurrently.</p>
 <h3 id="number-of-computing-cores-to-accomplish-a-task">Number of computing cores to accomplish a task<a class="headerlink" href="#number-of-computing-cores-to-accomplish-a-task" title="Permanent link">&para;</a></h3>
 <p>Balancing efficiently the load on the processors is not always
 straightforward. When using k-point- and spin-parallelism, the ideal numbers
-of processors to use are those that divide the product of <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a> by
-<a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a> (e.g. for <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>*<a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a>, it is quite efficient to use 2, 3, 4,
+of processors to use are those that divide the product of <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a> by
+<a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a> (e.g. for <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a>*<a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a>, it is quite efficient to use 2, 3, 4,
 6 or 12 processors). ABINIT will nevertheless handle correctly other numbers
 of processors, albeit slightly less efficiently, as the final time will be
 determined by the processor that will have the biggest share of the work to
@@ -2797,8 +3399,7 @@ saturates, and may even decrease. This is due to the inevitable overhead
 resulting from the increasing amount of communication between the processors.
 The loss of efficiency is highly dependent on the implementation and linked to
 the decreasing charge on each processor too.</p>
-<hr />
-<h2 id="546-details-of-the-implementation">5. Details of the implementation<a class="headerlink" href="#546-details-of-the-implementation" title="Permanent link">&para;</a></h2>
+<h2 id="5-details-of-the-implementation">5 Details of the implementation<a class="headerlink" href="#5-details-of-the-implementation" title="Permanent link">&para;</a></h2>
 <h3 id="the-mpi-toolbox-in-abinit">The MPI toolbox in ABINIT<a class="headerlink" href="#the-mpi-toolbox-in-abinit" title="Permanent link">&para;</a></h3>
 <p>The ABINIT-specific MPI routines are located in different subdirectories of
 <em>~abinit/src</em>: 12_hide_mpi/, 51_manage_mpi/, 56_io_mpi/, 79_seqpar_mpi/. They
@@ -2821,37 +3422,41 @@ with ABINIT internals and source code. Anyway, you can skip this section
 without hesitation, as it is primarily intended for advanced developers.</p>
 <p>First, every call to a MPI routine and every purely parallel section of your
 subroutine <strong>must</strong> be surrounded by the following preprocessing directives:</p>
-<pre><code>#if defined MPI
+<div class="codehilite"><pre><span></span>#if defined MPI
 ...
 #endif
-</code></pre>
-<p>The first block of this type will likely appear in the "local variables"
+</pre></div>
+
+
+<p>The first block of this type will likely appear in the &ldquo;local variables&rdquo;
 section, where you will declare all MPI-specific variables. Please note that
 some of them will be used in sequential mode as well, and thus will be
 declared outside this block (typically <em>am_master</em>, master, me_loc, etc.).</p>
 <p>The MPI communications should be initialized at the very beginning of your
 subroutine. To do this, we suggest the following piece of code:</p>
-<pre><code>!Init mpi_comm
- call xcomm_world(spaceComm)
- am_master=.true.
- master = 0
+<div class="codehilite"><pre><span></span><span class="sx">!Init mpi_comm</span>
+ <span class="n">call</span> <span class="n">xcomm_world</span><span class="p">(</span><span class="n">spaceComm</span><span class="p">)</span>
+ <span class="n">am_master</span><span class="p">=.</span><span class="n">true</span><span class="p">.</span>
+ <span class="n">master</span> <span class="p">=</span> <span class="mi">0</span>
 
-!Init ntot proc max
- call xproc_max(nproc_loc,ierr)
+<span class="sx">!Init ntot proc max</span>
+ <span class="n">call</span> <span class="n">xproc_max</span><span class="p">(</span><span class="n">nproc_loc</span><span class="p">,</span><span class="n">ierr</span><span class="p">)</span>
 
-!Define who i am
- call xme_whoiam(me_loc)
+<span class="sx">!Define who i am</span>
+ <span class="n">call</span> <span class="n">xme_whoiam</span><span class="p">(</span><span class="n">me_loc</span><span class="p">)</span>
 
-#if defined HAVE_MPI
- if (me_loc/=0) then
-  am_master=.FALSE.
- endif
+#<span class="k">if</span> <span class="n">defined</span> <span class="n">HAVE_MPI</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">me_loc</span><span class="o">/</span><span class="p">=</span><span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
+  <span class="n">am_master</span><span class="p">=.</span><span class="n">FALSE</span><span class="p">.</span>
+ <span class="n">endif</span>
 
- write(message, '(a,i3,a)' ) ' &lt;ROUTINE NAME&gt; ',nproc_loc,' CPU synchronized'
- call wrtout(std_out,message,'COLL')
- ...
-#endif
-</code></pre>
+ <span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s">&#39;(a,i3,a)&#39;</span> <span class="p">)</span> <span class="s">&#39; &lt;ROUTINE NAME&gt; &#39;</span><span class="p">,</span><span class="n">nproc_loc</span><span class="p">,</span><span class="s">&#39; CPU synchronized&#39;</span>
+ <span class="n">call</span> <span class="n">wrtout</span><span class="p">(</span><span class="n">std_out</span><span class="p">,</span><span class="n">message</span><span class="p">,</span><span class="s">&#39;COLL&#39;</span><span class="p">)</span>
+ <span class="c">...</span>
+#<span class="n">endif</span>
+</pre></div>
+
+
 <p>Note that the first calls to x* are outside the preprocessing - they must be
 called in all cases, and have their own pre-processed sections. The cleaning
 and closing of MPI stuff is done in a central part of abinit at the end of the
@@ -2868,15 +3473,186 @@ run.</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../bse/" title="Bethe-Salpeter" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Bethe-Salpeter
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../paral_dfpt/" title="DFPT" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                DFPT
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (YP, XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

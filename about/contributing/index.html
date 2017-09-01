@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -486,8 +574,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -546,8 +658,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -560,6 +672,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -642,6 +766,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -656,18 +816,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -726,8 +874,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -750,20 +910,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -822,6 +970,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -848,18 +1020,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1002,8 +1162,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1026,6 +1198,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1038,20 +1222,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1146,8 +1318,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1158,8 +1330,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1290,6 +1462,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1304,6 +1488,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1373,31 +1569,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1650,8 +1846,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1759,6 +1979,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1774,10 +2006,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1825,8 +2177,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1855,13 +2219,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1915,13 +2327,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1945,14 +2357,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -1986,8 +2554,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2010,7 +2590,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2046,8 +2638,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2252,12 +2880,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/about/contributing.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
                 
                 <!-- Return to Top -->
 
-<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
 <h1 id="how-to-contribute-to-abinit">How to contribute to ABINIT<a class="headerlink" href="#how-to-contribute-to-abinit" title="Permanent link">&para;</a></h1>
 <p>This page provides a description of the procedures followed for development of
 the ABINIT package through collaboration of different groups of persons, based
@@ -2266,7 +2893,6 @@ Infos/Notes_for_coding/contributing.html text file.</p>
 <p>Any comment or suggestion to improve these procedures will be welcome!</p>
 <div class="toc">
 <ul>
-<li><a href="#_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></a></li>
 <li><a href="#how-to-contribute-to-abinit">How to contribute to ABINIT</a><ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#code-repositories">Code repositories</a></li>
@@ -2295,24 +2921,24 @@ share the result of their coding efforts with other users of the code.</p>
 <p>Of course, a collaborative effort has also some drawbacks. In particular, the
 collaboration between distant developers should be carefully planned, since
 orthogonal modifications of the same piece of code by two different people at
-the same time is very likely to happen, generating "negative progress", i.e. a
+the same time is very likely to happen, generating &ldquo;negative progress&rdquo;, i.e. a
 large waste of time when synchronization is to be done. Also, it is required
 to use a well-defined coding style, to provide test case files, and to comment
 the modifications and additions as much as possible, in order to facilitate
 the maintenance and the future modifications.</p>
-<p>This document aims at defining the protocol to be followed to avoid "negative
-progress" due to lack of synchronization. The analogy with the procedures to
+<p>This document aims at defining the protocol to be followed to avoid &ldquo;negative
+progress&rdquo; due to lack of synchronization. The analogy with the procedures to
 be used for the parallelization of a code is obvious. The aim is that each
-external 'node' does not waste its time, that communications are kept at the
+external &lsquo;node&rsquo; does not waste its time, that communications are kept at the
 lowest level possible, and that the final result is correct ! We will need
-barriers for synchronization, and so on ...</p>
+barriers for synchronization, and so on &hellip;</p>
 <p>The ability to incorporate the contributions of different groups in a
 harmonious way might become a noticeable strength of the ABINIT project.</p>
 <h2 id="code-repositories">Code repositories<a class="headerlink" href="#code-repositories" title="Permanent link">&para;</a></h2>
 <p>Managing different versions of ABINIT is done thanks to a utility called
 <a href="http://www.bazaar-vcs.org/"><strong>Bazaar</strong></a>. For an introduction to this powerful
 and versatile tool, you can have a look at our dedicated pages in the
-Developers' corner of the ABINIT web site.</p>
+Developers&rsquo; corner of the ABINIT web site.</p>
 <p>Thanks to Bazaar, the development of a project becomes completely transparent,
 since all the changes in the files are registered: the latest version is of
 course available, but one can come backwards in time to track bugs easily or
@@ -2337,8 +2963,8 @@ the development effort. All concerned developers are supposed to use this
 branch as a starting point for their tasks and to keep permanently in sync
 with it. They may have at least one branch of their own.</p>
 <h2 id="basic-philosophy">Basic philosophy<a class="headerlink" href="#basic-philosophy" title="Permanent link">&para;</a></h2>
-<p>In the following, we will distinguish between <strong>"debugging" contributions</strong>
-and <strong>"development" contributions</strong>.</p>
+<p>In the following, we will distinguish between <strong>&ldquo;debugging&rdquo; contributions</strong>
+and <strong>&ldquo;development&rdquo; contributions</strong>.</p>
 <p><em>Debugging contributions</em> are typically modifications of a few lines in one or
 relatively few routines, needed for the code to work properly or to be
 properly documented. Sometimes they are related to comments within routines or
@@ -2347,7 +2973,7 @@ synchronization and can be sent directly to the coordinator via email, in the
 form of a patch. It is however possible to have them synchronized by recording
 them inside the <strong>abinit-release</strong> category of the repository.</p>
 <p>For the time being, Xavier
-<a href="mailto:gonze@pcpm.ucl.ac.be">&lt;gonze@pcpm.ucl.ac.be&gt;</a> should be
+<a href="mailto:gonze@pcpm.ucl.ac.be">&lt;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#103;&#111;&#110;&#122;&#101;&#64;&#112;&#99;&#112;&#109;&#46;&#117;&#99;&#108;&#46;&#97;&#99;&#46;&#98;&#101;">&#103;&#111;&#110;&#122;&#101;&#64;&#112;&#99;&#112;&#109;&#46;&#117;&#99;&#108;&#46;&#97;&#99;&#46;&#98;&#101;</a>&gt;</a> should be
 contacted.</p>
 <p><em>Development contributions</em> usually involve the addition of new capabilities
 to the code. Despite the use of Bazaar, synchronization with the coordinator
@@ -2388,13 +3014,13 @@ that the test is reproduced in a satisfactory way. The subsequent maintenance
 will be automatically done by checking that the corresponding test is still
 working despite modifications.</p>
 <h2 id="detailed-protocol-for-the-developer">Detailed protocol for the developer<a class="headerlink" href="#detailed-protocol-for-the-developer" title="Permanent link">&para;</a></h2>
-<p><strong>a.</strong> The developer proposes a modification or addition to the code to the coordinator. In most cases, such a proposal will be warmly welcome! There might be some discussions possibly involving other scientists to improve the original proposal. The developers mailing list has been set-up for that purpose (see the "Community section" on the ABINIT web site). </p>
-<p><strong>b.</strong> With respect to the latest official version, the developers define their task and make a list of routines they wish to heavily modify (and those they would like to add, but this is not really needed at that time). Following the current coding practice, adding new input variables would need rather small modifications of a very large number of routines (invars, abinit, gstate, brdmin, move, scfcv, vtorho ...). In order to avoid the allocation of too large an area of development within the source code, which would make other development efforts impossible, it is assumed that the developer will make appropriate use of the different 'user' input variables. This appropriate use means that none of the aforementioned routines will be modified for that purpose. The easiest case to handle is when a routine or a set of routines are added to the package, and the interface to the rest of the code involves only a set of called subroutines the interface (list of arguments) should not change, and just one (modified) calling routine. Many development projects of this type can coexist. By contrast, if one of the development efforts involves major changes to major routines, it will prohibit the execution of another development project of the same type, taking into account the current structure of the code. </p>
+<p><strong>a.</strong> The developer proposes a modification or addition to the code to the coordinator. In most cases, such a proposal will be warmly welcome! There might be some discussions possibly involving other scientists to improve the original proposal. The developers mailing list has been set-up for that purpose (see the &ldquo;Community section&rdquo; on the ABINIT web site). </p>
+<p><strong>b.</strong> With respect to the latest official version, the developers define their task and make a list of routines they wish to heavily modify (and those they would like to add, but this is not really needed at that time). Following the current coding practice, adding new input variables would need rather small modifications of a very large number of routines (invars, abinit, gstate, brdmin, move, scfcv, vtorho &hellip;). In order to avoid the allocation of too large an area of development within the source code, which would make other development efforts impossible, it is assumed that the developer will make appropriate use of the different &lsquo;user&rsquo; input variables. This appropriate use means that none of the aforementioned routines will be modified for that purpose. The easiest case to handle is when a routine or a set of routines are added to the package, and the interface to the rest of the code involves only a set of called subroutines the interface (list of arguments) should not change, and just one (modified) calling routine. Many development projects of this type can coexist. By contrast, if one of the development efforts involves major changes to major routines, it will prohibit the execution of another development project of the same type, taking into account the current structure of the code. </p>
 <p><strong>c.</strong> Having gathered the different suggestions made on the basis of the current official version, the coordinator releases the next version, adequately prepared to allow the proposed developments by different developer groups, with a list of routines allocated to each group, the number of the test cases allocated, and, for information, the tasks that will be done. </p>
-<p><strong>d.</strong> After installation on the development machine, and prior to any modification, the developer runs the internal tests, as well as the tests series <em>v1</em> to <em>v5</em> and the <em>paral</em> (sequential cases) suite of tests. The "<code>make tests_dev</code>" command is perfectly suited for that purpose. Checking against previous reference files that the results are OK is always nice enough. The developer can replace the reference files provided with the official version by those produced on their machines, to ease further checking of the results. Then the development effort can begin. It is expected <em>a priori</em> that the following files will be modified in any case: </p>
+<p><strong>d.</strong> After installation on the development machine, and prior to any modification, the developer runs the internal tests, as well as the tests series <em>v1</em> to <em>v5</em> and the <em>paral</em> (sequential cases) suite of tests. The &ldquo;<code class="codehilite">make tests_dev</code>&rdquo; command is perfectly suited for that purpose. Checking against previous reference files that the results are OK is always nice enough. The developer can replace the reference files provided with the official version by those produced on their machines, to ease further checking of the results. Then the development effort can begin. It is expected <em>a priori</em> that the following files will be modified in any case: </p>
 <ul>
 <li><em>abinit.src</em> files in some <em>src/*</em> directories, because the new routines must be listed there;</li>
-<li>the <em>allvariables.html</em> and some of the <em>var*.html</em> files, because the new input variables must be listed and documented there (the 'user' variables are now used, but a final, aesthetic, name should be proposed);</li>
+<li>the <em>allvariables.html</em> and some of the <em>var*.html</em> files, because the new input variables must be listed and documented there (the &lsquo;user&rsquo; variables are now used, but a final, aesthetic, name should be proposed);</li>
 <li>the <em>README</em> and <em>tests.cnf</em> files in the subdirectory <em>v5</em>, as well as an additional input file (at least).</li>
 </ul>
 <p><strong>IMPORTANT</strong>  </p>
@@ -2407,8 +3033,7 @@ their initials in the header of the new or modified routines. This will be
 useful if somebody needs information about this routine some time later.</p>
 <p>At the end of the development effort, it is mandatory that the developer runs
 again the <em>tests_dev</em> series, to be sure that the developments have not
-spoiled some other feature of the code. This is easily done by issuing <strong><code>make
-tests_dev</code></strong>. This command will run automatically the required tests, and
+spoiled some other feature of the code. This is easily done by issuing <strong><code class="codehilite">maketests_dev</code></strong>. This command will run automatically the required tests, and
 produce a file <em>summary_tests.tar.gz</em> that should be send with the updated
 routines and separate new tests. This is important, since the coordinator will
 have to run the suite of tests as well, but at that time, having trouble with
@@ -2416,7 +3041,7 @@ a modification done by some developer would mean an important delay in the
 delivery of the new official version, and thus a large waste of time. It is
 desirable that the tests of the new feature do not last more than 1 minute on
 Pentium III 1GHz, or about 20 seconds on other (faster) processors.</p>
-<p><strong>e.</strong> After the development has occurred, the developer prepares a gzipped (compressed) tar file with all the needed files (additional routines, modified routines, makemake, abinit_help, README, tests.cnf, ...), the <em>summary_tests.tar.gz</em> file, and makes it available to the coordinator (by email, FTP or SSH). </p>
+<p><strong>e.</strong> After the development has occurred, the developer prepares a gzipped (compressed) tar file with all the needed files (additional routines, modified routines, makemake, abinit_help, README, tests.cnf, &hellip;), the <em>summary_tests.tar.gz</em> file, and makes it available to the coordinator (by email, FTP or SSH). </p>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <p>a. David proposes a nice addition to the ABINIT package. Doug and Xavier are
 enthusiastic about it.</p>
@@ -2443,15 +3068,186 @@ allocated to the developper.</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-<center>Copyright &copy; 2017 The Abinit Group (XG)</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../release-notes/" title="About" class="md-tabs__link md-tabs__link--active">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../release-notes/" title="Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Release Notes
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../license/" title="License" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                License
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

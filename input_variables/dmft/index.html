@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../varlist_abinit/" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+        <a href="../" title="Input Variables" class="md-tabs__link md-tabs__link--active">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1378,34 +1574,34 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../" title="All Variables" class="md-nav__link">
+      All Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
     
-    <label class="md-nav__link" for="nav-3-1">
+    <label class="md-nav__link" for="nav-3-2">
       Abinit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
+      <label class="md-nav__title" for="nav-3-2">
         Abinit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
         
           
           
@@ -1454,6 +1650,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         DMFT
@@ -1466,6 +1664,8 @@
       
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -1879,8 +2079,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1988,6 +2212,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2003,10 +2239,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2054,8 +2410,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -2084,13 +2452,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2144,13 +2560,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2174,14 +2590,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2215,8 +2787,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2239,7 +2823,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2275,8 +2871,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2359,6 +2991,8 @@
                     
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -2574,111 +3208,109 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/input_variables/dmft.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>DMFT</h1>
                 
                 <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<h1 id="dmft-input-variables">dmft input variables<a class="headerlink" href="#dmft-input-variables" title="Permanent link">&para;</a></h1>
+<p>This document lists and provides the description of the name (keywords) of the
+dmft input variables to be used in the input file for the abinit executable.</p>
 <h2 id="dmft_dc"><strong>dmft_dc</strong><a class="headerlink" href="#dmft_dc" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Double Counting<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 1<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in" title="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy.">tests/v6/Input/t45.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Value of double counting used for DMFT. Only value 1 is activated for the
+<em>Default value:</em> 1  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [10/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Value of double counting used for DMFT. Only value 1 is activated for the
 moment and is the FLL double counting.</p>
 <hr />
 <h2 id="dmft_entropy"><strong>dmft_entropy</strong><a class="headerlink" href="#dmft_entropy" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: ENTROPY<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>==1 and <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-</ul>
-<p>If 1, enable the calculation of the entropy within the DMFT framework and so
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dev/#usedmft">usedmft</a>==1 and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li></ul></details><p>If 1, enable the calculation of the entropy within the DMFT framework and so
 allows the calculation of the total energy (free energy). In the current
-implementation, this is only possible with <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=5 (Continuous Time
-Quantum Monte Carlo). See also the input variable <a class="wikilink" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a>.</p>
+implementation, this is only possible with <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=5 (Continuous Time
+Quantum Monte Carlo). See also the input variable <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a>.</p>
 <hr />
 <h2 id="dmft_iter"><strong>dmft_iter</strong><a class="headerlink" href="#dmft_iter" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: number of ITERation<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Number of iterations for the DMFT inner loop.</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [22/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>, <a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of iterations for the DMFT inner loop.</p>
 <hr />
 <h2 id="dmft_mxsf"><strong>dmft_mxsf</strong><a class="headerlink" href="#dmft_mxsf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: MiXing parameter for the SelF energy<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.3  </p>
-<p>Mixing parameter for the simple mixing of the self-energy.</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [17/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Mixing parameter for the simple mixing of the self-energy.</p>
 <hr />
 <h2 id="dmft_nlambda"><strong>dmft_nlambda</strong><a class="headerlink" href="#dmft_nlambda" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Number of LAMBDA points<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 6<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dev/#usedmft">usedmft</a>==1 and <a class="wikilink" href="../../input_variables/dmft/#dmft_entropy">dmft_entropy</a>==1<br />
-Test list:</p>
-<ul>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-</ul>
-<p><a class="wikilink" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a> gives the number of integration points for the
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dev/#usedmft">usedmft</a>==1 and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_entropy">dmft_entropy</a>==1  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li></ul></details><p><a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nlambda">dmft_nlambda</a> gives the number of integration points for the
 thermodynamical integration in case of free energy calculation within DMFT.
 Its value must be greater or equal to 3.</p>
 <hr />
 <h2 id="dmft_nwli"><strong>dmft_nwli</strong><a class="headerlink" href="#dmft_nwli" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Number of frequency omega (W) in the LInear mesh<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Number of Matsubara frequencies (linear mesh)</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [22/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>, <a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of Matsubara frequencies (linear mesh)</p>
 <hr />
 <h2 id="dmft_nwlo"><strong>dmft_nwlo</strong><a class="headerlink" href="#dmft_nwlo" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Number of frequency omega (W) in the LOg mesh<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Number of frequencies in the log mesh.</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [22/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>, <a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of frequencies in the log mesh.</p>
 <hr />
 <h2 id="dmft_rslf"><strong>dmft_rslf</strong><a class="headerlink" href="#dmft_rslf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Read SeLF energy<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Flag to read/write Self-Energy. If put to one, self-energy is written and read
+<details class="note"><summary>Test list (click to open) (Moderately used, [17/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Flag to read/write Self-Energy. If put to one, self-energy is written and read
 at each DFT iteration.</p>
 <hr />
 <h2 id="dmft_solv"><strong>dmft_solv</strong><a class="headerlink" href="#dmft_solv" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: choice of SOLVer<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 5  </p>
-<p>Choice of solver for the Impurity model.</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [21/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>, <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Choice of solver for the Impurity model.</p>
 <ul>
-<li>0=&gt; No solver and U=0, J=0 (see <a class="wikilink" href="../../input_variables/paw/#upawu">upawu</a> and <a class="wikilink" href="../../input_variables/paw/#jpawu">jpawu</a>). </li>
+<li>0=&gt; No solver and U=0, J=0 (see <a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a> and <a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>). </li>
 <li>1=&gt; LDA+U self-energy is used (for testing purpose) </li>
 <li>2=&gt; Hubbard one solver. The Hubbard one solver is an approximation which gives a rough description of correlated Mott insulators. It should not be used for metals. </li>
 <li>5=&gt; Use the Continuous Time Quantum Monte Carlo (CTQMC) solver CT-Hyb of ABINIT in the density density representation, CTQMC calculations are much more time consuming that Hubbard I calculations. Nevertheless, the calculation is fully parallelised. </li>
@@ -2691,47 +3323,38 @@ discussion of density-density approximation with respect with the
 rotationnally invariant formulation, see e.g. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.155107"> Phys. Rev. B 86, 155107 (2012)
 </a>.<br />
 The ABINIT/CT Hyb implementation is discussed in <a href="http://dx.doi.org/10.1016/j.cpc.2016.04.003">
-http://dx.doi.org/10.1016/j.cpc.2016.04.003
+<a href="http://dx.doi.org/10.1016/j.cpc.2016.04.003">http://dx.doi.org/10.1016/j.cpc.2016.04.003</a>
 </a>.<br />
 The TRIQS/CT Hyb implementation is described in <a href="http://dx.doi.org/10.1016/j.cpc.2015.10.023"> Comp. Phys. Comm. 200, 274
 (2016) </a>. Before using it, it has
 to be installed following instructions at
-https://triqs.ipht.cnrs.fr/1.3/applications/cthyb/install.html. The current
+<a href="https://triqs.ipht.cnrs.fr/1.3/applications/cthyb/install.html">https://triqs.ipht.cnrs.fr/1.3/applications/cthyb/install.html</a>. The current
 interface is valid for TRIQS 1.3 and TRIQS/CTHYB 1.3.<br />
-See the useful variables for CT-QMC solver : <a class="wikilink" href="../../input_variables/dev/#dmftctqmc_basis">dmftctqmc_basis</a>,
-<a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_check">dmftctqmc_check</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_correl">dmftctqmc_correl</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_gmove">dmftctqmc_gmove</a>,
-<a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_grnns">dmftctqmc_grnns</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_meas">dmftctqmc_meas</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_mrka">dmftctqmc_mrka</a>,
-<a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_mov">dmftctqmc_mov</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_triqs_nleg">dmftctqmc_triqs_nleg</a>,
-<a class="wikilink" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_seed">dmftqmc_seed</a>, <a class="wikilink" href="../../input_variables/dmft/#dmftqmc_therm">dmftqmc_therm</a></p>
+See the useful variables for CT-QMC solver : <a class="wikilink codevar-link" href="../../input_variables/dev/#dmftctqmc_basis">dmftctqmc_basis</a>,
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_check">dmftctqmc_check</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_correl">dmftctqmc_correl</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_gmove">dmftctqmc_gmove</a>,
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_grnns">dmftctqmc_grnns</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_meas">dmftctqmc_meas</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_mrka">dmftctqmc_mrka</a>,
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_mov">dmftctqmc_mov</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_triqs_nleg">dmftctqmc_triqs_nleg</a>,
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_seed">dmftqmc_seed</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_therm">dmftqmc_therm</a></p>
 <hr />
 <h2 id="dmft_t2g"><strong>dmft_t2g</strong><a class="headerlink" href="#dmft_t2g" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: t2g orbitals<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Can be set to 1 only if in cubic symmetry. It enables one to carry a DFT+DMFT
+<em>Default value:</em> 0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [5/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Can be set to 1 only if in cubic symmetry. It enables one to carry a DFT+DMFT
 calculations only on t2g orbitals.</p>
 <hr />
 <h2 id="dmft_tolfreq"><strong>dmft_tolfreq</strong><a class="headerlink" href="#dmft_tolfreq" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: TOLerance on DFT correlated electron occupation matrix for the definition of the FREQuency grid<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0.0001<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>The LDA occupation matrix for correlated electrons can be computed directly.
-It can be compared to the calculation of the same quantity using LDA Green's
+<em>Default value:</em> 0.0001  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>The LDA occupation matrix for correlated electrons can be computed directly.
+It can be compared to the calculation of the same quantity using LDA Green&rsquo;s
 function, a sum over Matsubara frequencies and a projection over correlated
 orbitals. Because the Matsubara grid is finite, the two quantities differ. If
 this difference is larger than dmft_tolfreq, then the code stops and an error
@@ -2739,15 +3362,12 @@ message is given.</p>
 <hr />
 <h2 id="dmft_tollc"><strong>dmft_tollc</strong><a class="headerlink" href="#dmft_tollc" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: TOLerance on Local Charge for convergence of the DMFT loop<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 1e-05<br />
-Test list:</p>
-<ul>
-<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in" title="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy.">tests/v6/Input/t45.in</a></li>
-</ul>
-<p>Tolerance for the variation of Local Charge during iterations of the DMFT
+<em>Default value:</em> 1e-05  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v6:  <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a></li></ul></details><p>Tolerance for the variation of Local Charge during iterations of the DMFT
 Loop.<br />
 The default value is good for fast calculations. However, to obtain good
 convergence of the DFT Loop, the DMFT Loop needs a better convergence
@@ -2755,49 +3375,48 @@ criterion.</p>
 <hr />
 <h2 id="dmftbandf"><strong>dmftbandf</strong><a class="headerlink" href="#dmftbandf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Field Theory: BAND: Final<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p><a class="wikilink" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a> is the last band taken into account in the Projected Local
-Orbitals scheme of DFT+DMFT. With <a class="wikilink" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>, they define the energy window
+<details class="note"><summary>Test list (click to open) (Moderately used, [23/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>, <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>, <a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p><a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a> is the last band taken into account in the Projected Local
+Orbitals scheme of DFT+DMFT. With <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>, they define the energy window
 used to define Wannier Functions. (see Amadon, B., Lechermann, F., Georges,
 A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)</p>
 <hr />
 <h2 id="dmftbandi"><strong>dmftbandi</strong><a class="headerlink" href="#dmftbandi" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Field Theory: BAND: Initial<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p><a class="wikilink" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a> is the first band taken into account in the Projected Local
-Orbitals scheme of LDA+DMFT. With <a class="wikilink" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>, they define the energy window
+<details class="note"><summary>Test list (click to open) (Moderately used, [23/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>, <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a>, <a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a>, <a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a>, <a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p><a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a> is the first band taken into account in the Projected Local
+Orbitals scheme of LDA+DMFT. With <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>, they define the energy window
 used to define Wannier Functions. (see Amadon, B., Lechermann, F., Georges,
 A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)</p>
 <hr />
 <h2 id="dmftcheck"><strong>dmftcheck</strong><a class="headerlink" href="#dmftcheck" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: CHECKs<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Only for developer purposes. (Introduced by B. Amadon, v6.1.0)</p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [18/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>mpiio:  <a class="wikilink test-link" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/mpiio/Input/t99.in">tests/mpiio/Input/t99.in</a></li><li>paral:  <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t91.in">tests/paral/Input/t91.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a>, <a class="wikilink test-link" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t45.in">tests/v6/Input/t45.in</a>, <a class="wikilink test-link" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t46.in">tests/v6/Input/t46.in</a>, <a class="wikilink test-link" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t47.in">tests/v6/Input/t47.in</a></li><li>v7:  <a class="wikilink test-link" data-content="(Apparently the documentation section of this test has been lost)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t21.in">tests/v7/Input/t21.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Only for developer purposes. (Introduced by B. Amadon, v6.1.0)</p>
 <hr />
 <h2 id="dmftctqmc_check"><strong>dmftctqmc_check</strong><a class="headerlink" href="#dmftctqmc_check" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CHECK<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Check the fast calculations during the Monte Carlo simulation with very slow
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Check the fast calculations during the Monte Carlo simulation with very slow
 but robust methods. Should only be used for debugging.</p>
 <ul>
 <li>0=&gt; No check. </li>
@@ -2808,213 +3427,161 @@ but robust methods. Should only be used for debugging.</p>
 <hr />
 <h2 id="dmftctqmc_correl"><strong>dmftctqmc_correl</strong><a class="headerlink" href="#dmftctqmc_correl" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo CORRELations<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Flag to compute statistics about segments and anti-segments during the
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Flag to compute statistics about segments and anti-segments during the
 simulation. Slow down the simulation.</p>
 <ul>
 <li>0=&gt; Nothing done </li>
-<li>1=&gt; Calculations performed and written in "Correlation.dat" file </li>
+<li>1=&gt; Calculations performed and written in &ldquo;Correlation.dat&rdquo; file </li>
 </ul>
 <hr />
 <h2 id="dmftctqmc_gmove"><strong>dmftctqmc_gmove</strong><a class="headerlink" href="#dmftctqmc_gmove" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo Global MOVEs<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Default is no global moves. The value of this variable is the modulo used to
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Default is no global moves. The value of this variable is the modulo used to
 try a global move. A value of 5000 means that a global move is tried every
 5000 Monte Carlo sweep.</p>
 <hr />
 <h2 id="dmftctqmc_grnns"><strong>dmftctqmc_grnns</strong><a class="headerlink" href="#dmftctqmc_grnns" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo GReeNs NoiSe<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Compute the statistical noise for each time slice of each green function. This
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Compute the statistical noise for each time slice of each green function. This
 is a good approximation only if there is enough Monte Carlo sweeps per cpu.</p>
 <ul>
 <li>0=&gt; Nothing </li>
-<li>1=&gt; Do it and write the noise in the "Gtau.dat" file. </li>
+<li>1=&gt; Do it and write the noise in the &ldquo;Gtau.dat&rdquo; file. </li>
 </ul>
 <hr />
 <h2 id="dmftctqmc_meas"><strong>dmftctqmc_meas</strong><a class="headerlink" href="#dmftctqmc_meas" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MEASurements<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>The modulo used to measure the interaction energy and the number of electrons.
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>The modulo used to measure the interaction energy and the number of electrons.
 Example : 2 means the measure is perform every two sweeps.</p>
 <hr />
 <h2 id="dmftctqmc_mov"><strong>dmftctqmc_mov</strong><a class="headerlink" href="#dmftctqmc_mov" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MOVie<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Print a latex file per cpu displaying the full simulation. This option should
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Print a latex file per cpu displaying the full simulation. This option should
 only be use with very small number (&lt;1000) of Monte Carlo sweeps since it
 requires a lot of I/O band width.</p>
 <ul>
 <li>0=&gt; Nothing </li>
-<li>1=&gt; Write the "Movie_id.dat" file where id is the MPI rank of each process </li>
+<li>1=&gt; Write the &ldquo;Movie_id.dat&rdquo; file where id is the MPI rank of each process </li>
 </ul>
 <hr />
 <h2 id="dmftctqmc_mrka"><strong>dmftctqmc_mrka</strong><a class="headerlink" href="#dmftctqmc_mrka" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo MARKov Analysis<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Measure the time evolution of the number of electrons for each orbital and
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Measure the time evolution of the number of electrons for each orbital and
 perform a fourier transform. The result can be plotted using the
-"Markov_id.dat" file</p>
+&ldquo;Markov_id.dat&rdquo; file</p>
 <ul>
 <li>0=&gt; Nothing </li>
-<li>1=&gt; Do it and write the noise in the "Markov_id.dat" file where id is the rank of each MPI process. </li>
+<li>1=&gt; Do it and write the noise in the &ldquo;Markov_id.dat&rdquo; file where id is the rank of each MPI process. </li>
 </ul>
 <hr />
 <h2 id="dmftctqmc_order"><strong>dmftctqmc_order</strong><a class="headerlink" href="#dmftctqmc_order" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation ORDER<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Print a file containing the statistic distribution of the number of segments
-per orbital. The maximal order taken into account <a class="wikilink" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a> : 50
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Print a file containing the statistic distribution of the number of segments
+per orbital. The maximal order taken into account <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftctqmc_order">dmftctqmc_order</a> : 50
 means that we have the statistic distribution from 0 to 50 segments. The
-result is written in the "Perturbation.dat" file.</p>
+result is written in the &ldquo;Perturbation.dat&rdquo; file.</p>
 <hr />
 <h2 id="dmftctqmc_triqs_nleg"><strong>dmftctqmc_triqs_nleg</strong><a class="headerlink" href="#dmftctqmc_triqs_nleg" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Continuous Time Quantum Monte Carlo perturbation of TRIQS, Number of LEGendre polynomials<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 30<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==6 or 7<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Specify the number of Legendre polynomials used for the calculation of Green's
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==6 or 7  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Specify the number of Legendre polynomials used for the calculation of Green&rsquo;s
 function in CTQMC code from the library TRIQS. Default is 30. The value of
 coefficients are given in file whose name ending is
-"Legendre_coefficient.dat". (see also <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.075145"> Phys. Rev. B 84, 075145 (2010))
+&ldquo;Legendre_coefficient.dat&rdquo;. (see also <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.075145"> Phys. Rev. B 84, 075145 (2010))
 </a></p>
 <hr />
 <h2 id="dmftqmc_l"><strong>dmftqmc_l</strong><a class="headerlink" href="#dmftqmc_l" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Quantum Monte Carlo time sLices<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in" title="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1).">tests/v6/Input/t07.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Number of time slices used to represent the time green function. This value
-should be carefully chosen according to Niquist frequency and the <a class="wikilink" href="../../input_variables/gstate/#tsmear">tsmear</a>
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [10/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of time slices used to represent the time green function. This value
+should be carefully chosen according to Niquist frequency and the <a class="wikilink codevar-link" href="../../input_variables/gstate/#tsmear">tsmear</a>
 value.</p>
 <hr />
 <h2 id="dmftqmc_n"><strong>dmftqmc_n</strong><a class="headerlink" href="#dmftqmc_n" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Quantum Monte Carlo Number of sweeps<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in" title="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1).">tests/v6/Input/t07.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Number of Monte Carlo sweeps. Should be at least 10^6.</p>
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [10/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v6:  <a class="wikilink test-link" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t07.in">tests/v6/Input/t07.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of Monte Carlo sweeps. Should be at least 10^6.</p>
 <hr />
 <h2 id="dmftqmc_seed"><strong>dmftqmc_seed</strong><a class="headerlink" href="#dmftqmc_seed" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Quantum Monte Carlo SEED<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> <a class="wikilink" href="../../input_variables/basic/#jdtset">jdtset</a><br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4<br />
-Test list:</p>
-<ul>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a></li>
-</ul>
-<p>Seed to initilize the random number generator.<br />
+<em>Default value:</em> <a class="wikilink codevar-link" href="../../input_variables/basic/#jdtset">jdtset</a><br />
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>&gt;=4  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a></li></ul></details><p>Seed to initilize the random number generator.<br />
 Should not be relevant except for testing purpose.<br />
-NOTE : If the CT-QMC (<a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=5) is used on many CPUs, each CPU
+NOTE : If the CT-QMC (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=5) is used on many CPUs, each CPU
 initializes its random number generator with dmftqmc_seed+rank where rank is
 the rank of the cpu in the MPI communicator.</p>
 <hr />
 <h2 id="dmftqmc_therm"><strong>dmftqmc_therm</strong><a class="headerlink" href="#dmftqmc_therm" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Dynamical Mean Fied Theory: Quantum Monte Carlo THERMalization<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/DMFT">DMFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">DEVELOP</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DMFT">topic_DMFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1000<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5<br />
-Test list:</p>
-<ul>
-<li>paral:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in" title="Test CT-QMC parallelism">tests/paral/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/paral/Input/t99.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in" title="Test CT-QMC within DMFT for VSrO3 NSCF over density">tests/v7/Input/t27.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in" title="Test CT-QMC options only. Not realistic">tests/v7/Input/t29.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in" title="Test entropy calculation for SrVO3 within DMFT">tests/v7/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in" title="Test restart of entropy calculation for SrVO3 within DMFT">tests/v7/Input/t31.in</a></li>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in" title="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density">tests/v8/Input/t01.in</a></li>
-</ul>
-<p>Number of Monte Carlo sweeps for the thermalization</p>
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>==5  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [9/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC parallelism" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t92.in">tests/paral/Input/t92.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t99.in">tests/paral/Input/t99.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t27.in">tests/v7/Input/t27.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t28.in">tests/v7/Input/t28.in</a>, <a class="wikilink test-link" data-content="Test CT-QMC options only. Not realistic" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t29.in">tests/v7/Input/t29.in</a>, <a class="wikilink test-link" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t30.in">tests/v7/Input/t30.in</a>, <a class="wikilink test-link" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t31.in">tests/v7/Input/t31.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t01.in">tests/v8/Input/t01.in</a></li></ul></details><p>Number of Monte Carlo sweeps for the thermalization</p>
 <hr />
                 
                   
@@ -3028,15 +3595,186 @@ Test list:</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../dev/" title="Developers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Developers
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../eph/" title="Electron-Phonon" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Electron-Phonon
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

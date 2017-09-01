@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1754,6 +1974,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Base3
@@ -1767,41 +1989,50 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#31-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="** 3.1. Computing the total energy of silicon at fixed number of k points." class="md-nav__link">
-    ** 3.1. Computing the total energy of silicon at fixed number of k points.
+  <a href="#crystalline-silicon" title="Crystalline silicon." class="md-nav__link">
+    Crystalline silicon.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-starting-the-convergence-study-with-respect-to-k-points" title="3.2. Starting the convergence study with respect to k points" class="md-nav__link">
-    3.2. Starting the convergence study with respect to k points
+  <a href="#1-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="1 Computing the total energy of silicon at fixed number of k points" class="md-nav__link">
+    1 Computing the total energy of silicon at fixed number of k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#33-actually-performing-the-convergence-study-with-respect-to-k-points" title="** 3.3. Actually performing the convergence study with respect to k points" class="md-nav__link">
-    ** 3.3. Actually performing the convergence study with respect to k points
+  <a href="#2-starting-the-convergence-study-with-respect-to-k-points" title="2 Starting the convergence study with respect to k points" class="md-nav__link">
+    2 Starting the convergence study with respect to k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#34-determination-of-the-lattice-parameters" title="3.4. Determination of the lattice parameters." class="md-nav__link">
-    3.4. Determination of the lattice parameters.
+  <a href="#3-actually-performing-the-convergence-study-with-respect-to-k-points" title="3 Actually performing the convergence study with respect to k points" class="md-nav__link">
+    3 Actually performing the convergence study with respect to k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#35-computing-the-band-structure" title="3.5. Computing the band structure" class="md-nav__link">
-    3.5. Computing the band structure
+  <a href="#4-determination-of-the-lattice-parameters" title="4 Determination of the lattice parameters" class="md-nav__link">
+    4 Determination of the lattice parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-computing-the-band-structure" title="5 Computing the band structure" class="md-nav__link">
+    5 Computing the band structure
   </a>
   
 </li>
@@ -1827,6 +2058,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1842,10 +2085,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1893,8 +2256,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1923,13 +2298,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1983,13 +2406,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2013,14 +2436,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2054,8 +2633,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2078,7 +2669,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2114,8 +2717,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2199,41 +2838,50 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#31-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="** 3.1. Computing the total energy of silicon at fixed number of k points." class="md-nav__link">
-    ** 3.1. Computing the total energy of silicon at fixed number of k points.
+  <a href="#crystalline-silicon" title="Crystalline silicon." class="md-nav__link">
+    Crystalline silicon.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-starting-the-convergence-study-with-respect-to-k-points" title="3.2. Starting the convergence study with respect to k points" class="md-nav__link">
-    3.2. Starting the convergence study with respect to k points
+  <a href="#1-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="1 Computing the total energy of silicon at fixed number of k points" class="md-nav__link">
+    1 Computing the total energy of silicon at fixed number of k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#33-actually-performing-the-convergence-study-with-respect-to-k-points" title="** 3.3. Actually performing the convergence study with respect to k points" class="md-nav__link">
-    ** 3.3. Actually performing the convergence study with respect to k points
+  <a href="#2-starting-the-convergence-study-with-respect-to-k-points" title="2 Starting the convergence study with respect to k points" class="md-nav__link">
+    2 Starting the convergence study with respect to k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#34-determination-of-the-lattice-parameters" title="3.4. Determination of the lattice parameters." class="md-nav__link">
-    3.4. Determination of the lattice parameters.
+  <a href="#3-actually-performing-the-convergence-study-with-respect-to-k-points" title="3 Actually performing the convergence study with respect to k points" class="md-nav__link">
+    3 Actually performing the convergence study with respect to k points
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#35-computing-the-band-structure" title="3.5. Computing the band structure" class="md-nav__link">
-    3.5. Computing the band structure
+  <a href="#4-determination-of-the-lattice-parameters" title="4 Determination of the lattice parameters" class="md-nav__link">
+    4 Determination of the lattice parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-computing-the-band-structure" title="5 Computing the band structure" class="md-nav__link">
+    5 Computing the band structure
   </a>
   
 </li>
@@ -2252,15 +2900,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/base3.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Base3</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing you how to get the following physical properties,
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="third-basic-lesson">Third (basic) lesson<a class="headerlink" href="#third-basic-lesson" title="Permanent link">&para;</a></h1>
+<h2 id="crystalline-silicon">Crystalline silicon.<a class="headerlink" href="#crystalline-silicon" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing you how to get the following physical properties,
 for an insulator:</p>
 <ul>
 <li>the total energy </li>
@@ -2270,68 +2917,64 @@ You will learn about the use of k-points, as well as the smearing of the
 plane-wave kinetic energy cut-off.</li>
 </ul>
 <p>This lesson should take about 1 hour.</p>
-<ul>
-<li>3.1 Computing the total energy of silicon at fixed number of k points.</li>
-<li>3.2 Starting the convergence study with respect to k points</li>
-<li>3.3 Actually performing the convergence study with respect to k points</li>
-<li>3.4 Determination of the lattice parameters</li>
-<li>3.5 Computing the band structure</li>
-</ul>
-<hr />
-<h3 id="31-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points">** 3.1. Computing the total energy of silicon at fixed number of k points.<a class="headerlink" href="#31-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="Permanent link">&para;</a></h3>
-<p>**</p>
+<h2 id="1-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points">1 Computing the total energy of silicon at fixed number of k points<a class="headerlink" href="#1-computing-the-total-energy-of-silicon-at-fixed-number-of-k-points" title="Permanent link">&para;</a></h2>
 <p><em>Before beginning, you might consider to work in a different subdirectory as
-for lesson_base1 or lesson_base2 . Why not "Work3" ?</em></p>
+for lesson_base1 or lesson_base2 . Why not &ldquo;Work3&rdquo; ?</em></p>
 <p>The file ~abinit/tests/tutorial/Input/tbase3_x.files lists the file names and
 root names. You can copy it in the Work3 directory and change it as you did
 for the tbase1_x.files and tbase2_x.files files. You can also copy the file
 ~abinit/tests/tutorial/Input/tbase3_1.in in Work3. This is your input file.
-You should edit it, read it carefully, have a look at the following "new"
+You should edit it, read it carefully, have a look at the following &ldquo;new&rdquo;
 input variables, and their explanation :</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/basic/#rprim">rprim</a> </li>
-<li><a class="wikilink" href="../../input_variables/basic/#xred">xred</a> (used instead of xcart) </li>
-<li><a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>, <a class="wikilink" href="../../input_variables/basic/#ngkpt">ngkpt</a>, <a class="wikilink" href="../../input_variables/basic/#nshiftk">nshiftk</a>, <a class="wikilink" href="../../input_variables/basic/#shiftk">shiftk</a>, <a class="wikilink" href="../../input_variables/gstate/#kptrlatt">kptrlatt</a>, (not easy ... take your time !) </li>
-<li><a class="wikilink" href="../../input_variables/gstate/#diemac">diemac</a> (compared to isolated molecules, another value is used, while <a class="wikilink" href="../../input_variables/gstate/#diemix">diemix</a> has been suppressed). </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a> (used instead of xcart) </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#nshiftk">nshiftk</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#shiftk">shiftk</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate/#kptrlatt">kptrlatt</a>, (not easy &hellip; take your time !) </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#diemac">diemac</a> (compared to isolated molecules, another value is used, while <a class="wikilink codevar-link" href="../../input_variables/gstate/#diemix">diemix</a> has been suppressed). </li>
 </ul>
-<p>Note also the following: you will work at fixed <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> (=8Ha). It is
-implicit that in "real life", you should do a convergence test with respect to
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> ...<br />
-Here, a suitable <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> is given to you. It will allow to obtain 0.2%
+<p>Note also the following: you will work at fixed <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> (=8Ha). It is
+implicit that in &ldquo;real life&rdquo;, you should do a convergence test with respect to
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> &hellip;<br />
+Here, a suitable <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> is given to you. It will allow to obtain 0.2%
 relative accuracy on lattice parameters.</p>
 <p>When you have read the input file, you can run the code, as usual (it will run
 for a few seconds).<br />
 Then, read the output file, and note the total energy.</p>
-<pre><code>   etotal   -8.8662238960E+00
-</code></pre>
-<hr />
-<h3 id="32-starting-the-convergence-study-with-respect-to-k-points"><strong> 3.2. Starting the convergence study with respect to k points </strong><a class="headerlink" href="#32-starting-the-convergence-study-with-respect-to-k-points" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>   etotal   -8.8662238960E+00
+</pre></div>
+
+
+<h2 id="2-starting-the-convergence-study-with-respect-to-k-points">2 Starting the convergence study with respect to k points<a class="headerlink" href="#2-starting-the-convergence-study-with-respect-to-k-points" title="Permanent link">&para;</a></h2>
 <p>There is of course a convergence study associated with the sampling of the
 Brillouin zone. You should examine different grids, of increasing resolution.
 You might try the following series of grids:</p>
-<pre><code>ngkpt1  2 2 2
+<div class="codehilite"><pre><span></span>ngkpt1  2 2 2
 ngkpt2  4 4 4
 ngkpt3  6 6 6
 ngkpt4  8 8 8
-</code></pre>
+</pre></div>
+
+
 <p>However, the associated number of k points in the irreducible Brillouin zone
 grows very fast. It is</p>
-<pre><code>nkpt1  2
+<div class="codehilite"><pre><span></span>nkpt1  2
 nkpt2 10
 nkpt3 28
 nkpt4 60
-</code></pre>
+</pre></div>
+
+
 <p>ABINIT computes automatically this number of k points, from the definition of
 the grid and the symmetries.<br />
 You might nevertheless define an input nkpt value in the input file, in which
 case ABINIT will compare its computed value (from the grid) with this input
 value. We take this opportunity to examine the behaviour of ABINIT when a
-problem is detected. Let's suppose that with <code>ngkpt1 4 4 4</code> , one mentions
-<code>nkpt1 2</code> . The input file ~abinit/tests/tutorial/Input/tbase3_2.in is an
+problem is detected. Let&rsquo;s suppose that with <code class="codehilite">ngkpt1 4 4 4</code> , one mentions
+<code class="codehilite">nkpt1 2</code> . The input file ~abinit/tests/tutorial/Input/tbase3_2.in is an
 example. Do not forget to change tbase3_x.files, if you are using that file
 name . The message that you get a few dozen of lines before the end of the log
 file is :</p>
-<pre><code>--- !BUG
+<div class="codehilite"><pre><span></span><span class="gd">--- !BUG</span>
 message: |
     The argument nkpt=     2, does not match
       the number of k points generated by kptopt, kptrlatt, shiftk,
@@ -2344,21 +2987,23 @@ src_line: 415
 ...
 
   Action : contact ABINIT group.
-</code></pre>
+</pre></div>
+
+
 <p>This is a typical ABINIT error message. It states what is the problem that
 causes the stop of ABINIT, then suggests that it might be due to an error in
 the input file, namely, an erroneous value of nkpt. The expected value,
-<a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a> 10. is mentioned before the notice that the input file might be
+<a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a> 10. is mentioned before the notice that the input file might be
 erroneous. Then, the file at which the problem occured is mentioned, as well
 as the number of the line in that file.</p>
-<p>As the computation of <a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a> for specific grids of k points is not an easy
+<p>As the computation of <a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a> for specific grids of k points is not an easy
 task, while the even more important selection of specific economical grids
 (the best ratio between the accuracy of the integration in the Brillouin zone
 and the number of k-points) is more difficult, some help to the user is
 provided by ABINIT. ABINIT is able to examine automatically different k point
 grids, and to propose the best grids for integration. This is described in the
-abinit_help file, see the input variable <a class="wikilink" href="../../input_variables/files/#prtkpt">prtkpt</a>, and the associated
-characterisation of the integral accuracy, described in <a class="wikilink" href="../../input_variables/gstate/#kptrlen">kptrlen</a>. The
+abinit_help file, see the input variable <a class="wikilink codevar-link" href="../../input_variables/files/#prtkpt">prtkpt</a>, and the associated
+characterisation of the integral accuracy, described in <a class="wikilink codevar-link" href="../../input_variables/gstate/#kptrlen">kptrlen</a>. The
 generation of lists of k-point sets is done in different test cases, in the
 directory ~abinit/tests/v2 . You can directly have a look at the output files
 in ~abinit/tests/v2/Refs , the output files for the tests 61 to 73.</p>
@@ -2368,71 +3013,76 @@ for the k point convergence study. Do not forget that the CPU time will be
 linearly proportional to the number of k points to be treated: using 10 k
 points will take five more time than using 2 k points. Even for a similar
 accuracy of the Brillouin zone integration (about the same value of
-<a class="wikilink" href="../../input_variables/gstate/#kptrlen">kptrlen</a>), it might be easy to generate a grid that will fold to 10 k
+<a class="wikilink codevar-link" href="../../input_variables/gstate/#kptrlen">kptrlen</a>), it might be easy to generate a grid that will fold to 10 k
 points in the irreducible Brillouin zone, as well as one that will fold to 2 k
 points in the irreducible Brillouin zone. The latter is clearly to be
 preferred !</p>
-<hr />
-<h3 id="33-actually-performing-the-convergence-study-with-respect-to-k-points">** 3.3. Actually performing the convergence study with respect to k points<a class="headerlink" href="#33-actually-performing-the-convergence-study-with-respect-to-k-points" title="Permanent link">&para;</a></h3>
-<p>**</p>
+<h2 id="3-actually-performing-the-convergence-study-with-respect-to-k-points">3 Actually performing the convergence study with respect to k points<a class="headerlink" href="#3-actually-performing-the-convergence-study-with-respect-to-k-points" title="Permanent link">&para;</a></h2>
 <p>In order to understand k-point grids, you should read the Monkhorst and Pack
-paper, Phys. Rev. B 13, 5188 (1976) ... Well, maybe not immediately ... In the
+paper, Phys. Rev. B 13, 5188 (1976) &hellip; Well, maybe not immediately &hellip; In the
 meantime, you can try the above-mentioned convergence study.</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_3.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_3.out is a reference output file. In this
 output file, you should have a look at the echo of input variables. As you
-know, these are preprocessed, and, in particular, <a class="wikilink" href="../../input_variables/basic/#ngkpt">ngkpt</a> and <a class="wikilink" href="../../input_variables/basic/#shiftk">shiftk</a> are
-used to generate the list of k points (<a class="wikilink" href="../../input_variables/basic/#kpt">kpt</a>) and their weights (<a class="wikilink" href="../../input_variables/basic/#wtk">wtk</a>).
-You should read the information about <a class="wikilink" href="../../input_variables/basic/#kpt">kpt</a> and <a class="wikilink" href="../../input_variables/basic/#wtk">wtk</a>.</p>
+know, these are preprocessed, and, in particular, <a class="wikilink codevar-link" href="../../input_variables/basic/#ngkpt">ngkpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#shiftk">shiftk</a> are
+used to generate the list of k points (<a class="wikilink codevar-link" href="../../input_variables/basic/#kpt">kpt</a>) and their weights (<a class="wikilink codevar-link" href="../../input_variables/basic/#wtk">wtk</a>).
+You should read the information about <a class="wikilink codevar-link" href="../../input_variables/basic/#kpt">kpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#wtk">wtk</a>.</p>
 <p>From the output file, here is the evolution of total energy per unit cell:</p>
-<pre><code>    etotal1  -8.8662238960E+00
+<div class="codehilite"><pre><span></span>    etotal1  -8.8662238960E+00
     etotal2  -8.8724909739E+00
     etotal3  -8.8726017432E+00
     etotal4  -8.8726056405E+00
-</code></pre>
+</pre></div>
+
+
 <p>The difference between dataset 3 and dataset 4 is rather small. Even the
 dataset 2 gives an accuracy of about 0.0001 Ha<br />
-So, our converged value for the total energy, at fixed <a class="wikilink" href="../../input_variables/basic/#acell">acell</a>, fixed
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>, is -8.8726 Ha .</p>
-<hr />
-<h3 id="34-determination-of-the-lattice-parameters"><strong> 3.4. Determination of the lattice parameters. </strong><a class="headerlink" href="#34-determination-of-the-lattice-parameters" title="Permanent link">&para;</a></h3>
-<p>The input variable <a class="wikilink" href="../../input_variables/rlx/#optcell">optcell</a> governs the automatic optimisation of cell
+So, our converged value for the total energy, at fixed <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>, fixed
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>, is -8.8726 Ha .</p>
+<h2 id="4-determination-of-the-lattice-parameters">4 Determination of the lattice parameters<a class="headerlink" href="#4-determination-of-the-lattice-parameters" title="Permanent link">&para;</a></h2>
+<p>The input variable <a class="wikilink codevar-link" href="../../input_variables/rlx/#optcell">optcell</a> governs the automatic optimisation of cell
 shape and volume.<br />
 For the automatic optimisation of cell volume, use:</p>
-<pre><code>optcell 1
+<div class="codehilite"><pre><span></span>optcell 1
 ionmov 2
 ntime 10
 dilatmx 1.05
 ecutsm 0.5
-</code></pre>
-<p>You should read the indications about <a class="wikilink" href="../../input_variables/rlx/#dilatmx">dilatmx</a> and <a class="wikilink" href="../../input_variables/rlx/#ecutsm">ecutsm</a>.<br />
+</pre></div>
+
+
+<p>You should read the indications about <a class="wikilink codevar-link" href="../../input_variables/rlx/#dilatmx">dilatmx</a> and <a class="wikilink codevar-link" href="../../input_variables/rlx/#ecutsm">ecutsm</a>.<br />
 Do not test all the k point grids, only those with nkpt 2 and 10.</p>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_4.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_4.out is a reference output file.  </p>
 <p>You should obtain the following evolution of the lattice parameters:</p>
-<pre><code>     acell1   1.0233363682E+01  1.0233363682E+01  1.0233363682E+01 Bohr
+<div class="codehilite"><pre><span></span>     acell1   1.0233363682E+01  1.0233363682E+01  1.0233363682E+01 Bohr
      acell2   1.0216447241E+01  1.0216447241E+01  1.0216447241E+01 Bohr
-</code></pre>
+</pre></div>
+
+
 <p>with the following very small residual stresses:</p>
-<pre><code>    strten1   1.8591719160E-07  1.8591719160E-07  1.8591719160E-07
+<div class="codehilite"><pre><span></span>    strten1   1.8591719160E-07  1.8591719160E-07  1.8591719160E-07
               0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
     strten2  -2.8279720007E-08 -2.8279720007E-08 -2.8279720007E-08
               0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
-</code></pre>
+</pre></div>
+
+
 <p>The stress tensor is given in Hartree/Bohr^3, and the order of the components
 is</p>
-<pre><code>                        11  22  33
+<div class="codehilite"><pre><span></span>                        11  22  33
                         23  13  12
-</code></pre>
-<p>There is only a 0.13% relative difference between <a class="wikilink" href="../../input_variables/basic/#acell">acell</a>1 and <a class="wikilink" href="../../input_variables/basic/#acell">acell</a>2 .<br />
+</pre></div>
+
+
+<p>There is only a 0.13% relative difference between <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>1 and <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>2 .<br />
 So, our converged LDA value for Silicon, with the 14si.pspnc pseudopotential
-(see the tbase3_x.files file) is 10.216 Bohr (actually 10.21644...), that is
-5.406 Angstrom. The experimental value is <code>5.431 Angstrom at 25 degree
-Celsius</code>, see R.W.G. Wyckoff, Crystal structures Ed. Wiley and sons, New-York
+(see the tbase3_x.files file) is 10.216 Bohr (actually 10.21644&hellip;), that is
+5.406 Angstrom. The experimental value is <code class="codehilite">5.431 Angstrom at 25 degreeCelsius</code>, see R.W.G. Wyckoff, Crystal structures Ed. Wiley and sons, New-York
 (1963).</p>
-<hr />
-<h3 id="35-computing-the-band-structure"><strong>3.5. Computing the band structure</strong><a class="headerlink" href="#35-computing-the-band-structure" title="Permanent link">&para;</a></h3>
-<p>We fix the parameters <a class="wikilink" href="../../input_variables/basic/#acell">acell</a> to the theoretical value of 3*10.216, and we
+<h2 id="5-computing-the-band-structure">5 Computing the band structure<a class="headerlink" href="#5-computing-the-band-structure" title="Permanent link">&para;</a></h2>
+<p>We fix the parameters <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> to the theoretical value of 3*10.216, and we
 fix also the grid of k points (the 4x4x4 FCC grid, equivalent to a 8x8x8
 Monkhorst-pack grid)<br />
 We will ask for 8 bands (4 valence and 4 conduction).</p>
@@ -2447,43 +3097,47 @@ space, and these divisions give approximately the same distance between points
 along a line).<br />
 The circuit will be obtained easily by the following choice of segment end
 points:</p>
-<pre><code>L     (1/2 0 0)
+<div class="codehilite"><pre><span></span>L     (1/2 0 0)
 Gamma (0 0 0)
 X     (0 1/2 1/2)
 Gamma (1 1 1)
-</code></pre>
+</pre></div>
+
+
 <p>_Note:</p>
 <ol>
 <li>the last Gamma point is in another cell of the reciprocal space than the first one, this choice allows to construct the X-U-Gamma line easily ;</li>
-<li>the k-points are specified using reduced coordinates - in agreement with the input setting of the primitive 2-atom unit cell - in standard textbooks, you will often find the L, Gamma or X point given in coordinates of the conventional 8-atom cell: the above-mentioned circuit is then (1/2 1/2 1/2)-(0 0 0)-(1 0 0)-(1 1 1), but such (conventional) coordinates cannot be used with the 2-atom (non-conventional) cell.</li>
+<li>the k-points are specified using reduced coordinates - in agreement with the input setting of the primitive 2-atom unit cell - in standard textbooks, you will often find the L, Gamma or X point given in coordinates of the conventional 8-atom cell: the above-mentioned circuit is then (&frac12; &frac12; &frac12;)-(0 0 0)-(1 0 0)-(1 1 1), but such (conventional) coordinates cannot be used with the 2-atom (non-conventional) cell.</li>
 </ol>
 <p>_</p>
 <p>So, you should set up in your input file, for the first dataset, a usual SCF
-calculation in which you output the density (<a class="wikilink" href="../../input_variables/files/#prtden">prtden</a> 1), and, for the
+calculation in which you output the density (<a class="wikilink codevar-link" href="../../input_variables/files/#prtden">prtden</a> 1), and, for the
 second dataset:</p>
 <ul>
-<li>fix <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a> to -2, to make a non-self-consistent calculation ; </li>
-<li>define <a class="wikilink" href="../../input_variables/files/#getden">getden</a> -1, to take the output density of dataset 1 ; </li>
-<li>set <a class="wikilink" href="../../input_variables/basic/#nband">nband</a> to 8 ; </li>
-<li>set <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> to -3, to define three segments in the brillouin Zone ; </li>
-<li>set <a class="wikilink" href="../../input_variables/gstate/#ndivk">ndivk</a> to 10 12 17 (this means a circuit defined by 4 points, with 10 divisions of the first segment, 12 divisions of the second, 17 divisions of the third) </li>
+<li>fix <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a> to -2, to make a non-self-consistent calculation ; </li>
+<li>define <a class="wikilink codevar-link" href="../../input_variables/files/#getden">getden</a> -1, to take the output density of dataset 1 ; </li>
+<li>set <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> to 8 ; </li>
+<li>set <a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a> to -3, to define three segments in the brillouin Zone ; </li>
+<li>set <a class="wikilink codevar-link" href="../../input_variables/gstate/#ndivk">ndivk</a> to 10 12 17 (this means a circuit defined by 4 points, with 10 divisions of the first segment, 12 divisions of the second, 17 divisions of the third) </li>
 <li>
-<p>set <a class="wikilink" href="../../input_variables/gstate/#kptbounds">kptbounds</a> to </p>
-<pre><code>                0.5  0.0  0.0 # L point
+<p>set <a class="wikilink codevar-link" href="../../input_variables/gstate/#kptbounds">kptbounds</a> to </p>
+<div class="codehilite"><pre><span></span>                0.5  0.0  0.0 # L point
             0.0  0.0  0.0 # Gamma point
             0.0  0.5  0.5 # X point
             1.0  1.0  1.0 # Gamma point in another cell.
-</code></pre>
+</pre></div>
+
+
 </li>
 <li>
-<p>set <a class="wikilink" href="../../input_variables/gstate/#enunit">enunit</a> to 1, in order to have eigenenergies in eV </p>
+<p>set <a class="wikilink codevar-link" href="../../input_variables/gstate/#enunit">enunit</a> to 1, in order to have eigenenergies in eV </p>
 </li>
-<li>the only tolerance criterion admitted for non-self-consistent calculations is <a class="wikilink" href="../../input_variables/basic/#tolwfr">tolwfr</a>. You should set it to 1.0d-10 (or so), and suppress <a class="wikilink" href="../../input_variables/basic/#toldfe">toldfe</a>. </li>
+<li>the only tolerance criterion admitted for non-self-consistent calculations is <a class="wikilink codevar-link" href="../../input_variables/basic/#tolwfr">tolwfr</a>. You should set it to 1.0d-10 (or so), and suppress <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>. </li>
 </ul>
 <p>The input file ~abinit/tests/tutorial/Input/tbase3_5.in is an example, while
 ~abinit/tests/tutorial/Refs/tbase3_5.out is a reference output file.</p>
 <p>You should find the band structure starting at (second dataset):</p>
-<pre><code> Eigenvalues (   eV  ) for nkpt=  40  k points:
+<div class="codehilite"><pre><span></span> Eigenvalues (   eV  ) for nkpt=  40  k points:
  kpt#   1, nband=  8, wtk=  1.00000, kpt=  0.5000  0.0000  0.0000 (reduced coord)
   -3.78815  -1.15872   4.69668   4.69668   7.38795   9.23867   9.23867  13.45707
  kpt#   2, nband=  8, wtk=  1.00000, kpt=  0.4500  0.0000  0.0000 (reduced coord)
@@ -2493,14 +3147,16 @@ second dataset:</p>
  kpt#   4, nband=  8, wtk=  1.00000, kpt=  0.3500  0.0000  0.0000 (reduced coord)
   -4.64019   0.24941   4.85732   4.85732   7.56855   9.38323   9.38323  13.64601
  ....
-</code></pre>
-<p>One needs a graphical tool to represent all these data ... (For the MAPR 2451
+</pre></div>
+
+
+<p>One needs a graphical tool to represent all these data &hellip; (For the MAPR 2451
 lecture: try with MATLAB). In a separate file (_EIG), you will find the list
-of k-points and eigenenergies (the input variable <a class="wikilink" href="../../input_variables/files/#prteig">prteig</a> is set by default
+of k-points and eigenenergies (the input variable <a class="wikilink codevar-link" href="../../input_variables/files/#prteig">prteig</a> is set by default
 to 1).</p>
 <p>Even without a graphical tool we will have a quick look at the values at L,
 Gamma, X and Gamma again:</p>
-<pre><code> kpt#   1, nband=  8, wtk=  1.00000, kpt=  0.5000  0.0000  0.0000 (reduced coord)
+<div class="codehilite"><pre><span></span> kpt#   1, nband=  8, wtk=  1.00000, kpt=  0.5000  0.0000  0.0000 (reduced coord)
   -3.78815  -1.15872   4.69668   4.69668   7.38795   9.23867   9.23867  13.45707
 
  kpt#  11, nband=  8, wtk=  1.00000, kpt=  0.0000  0.0000  0.0000 (reduced coord)
@@ -2511,7 +3167,9 @@ Gamma, X and Gamma again:</p>
 
  kpt#  40, nband=  8, wtk=  1.00000, kpt=  1.0000  1.0000  1.0000 (reduced coord)
   -6.17005   5.91814   5.91814   5.91814   8.44836   8.44836   8.44836   9.17755
-</code></pre>
+</pre></div>
+
+
 <p>The last gamma is exactly equivalent to the first gamma. It can be checked
 that the top of the valence band is obtained at Gamma (=5.91814 eV). The width
 of the valence band is 12.09 eV, the lowest unoccupied state at X is 0.594 eV
@@ -2530,17 +3188,17 @@ Electronic structure and optical properties of semiconductors<br />
 Springer-Verlag New-York (1988).</p>
 <p>There is a subtlety that is worth to comment about. In non-self-consistent
 calculations, like those performed in the present band structure calculation,
-with <a class="wikilink" href="../../input_variables/basic/#iscf">iscf</a>=-2, not all bands are converged within the tolerance <a class="wikilink" href="../../input_variables/basic/#tolwfr">tolwfr</a>.
+with <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>=-2, not all bands are converged within the tolerance <a class="wikilink codevar-link" href="../../input_variables/basic/#tolwfr">tolwfr</a>.
 Indeed, the two upper bands (by default) have not been taken into account to
-apply this convergence criterion: they constitute a "buffer". The number of
-such "buffer" bands is governed by the input variable <a class="wikilink" href="../../input_variables/gstate/#nbdbuf">nbdbuf</a>.</p>
+apply this convergence criterion: they constitute a &ldquo;buffer&rdquo;. The number of
+such &ldquo;buffer&rdquo; bands is governed by the input variable <a class="wikilink codevar-link" href="../../input_variables/gstate/#nbdbuf">nbdbuf</a>.</p>
 <p>It can happen that the highest (or two highest) band(s), if not separated by a
 gap from non-treated bands, can exhibit a very slow convergence rate. This
-buffer allows to achieve convergence of "important", non-buffer bands. In the
+buffer allows to achieve convergence of &ldquo;important&rdquo;, non-buffer bands. In the
 present case, 6 bands have been converged with a residual better than
-<a class="wikilink" href="../../input_variables/basic/#tolwfr">tolwfr</a>, while the two upper bands are less converged (still sufficiently
+<a class="wikilink codevar-link" href="../../input_variables/basic/#tolwfr">tolwfr</a>, while the two upper bands are less converged (still sufficiently
 for graphical representation of the band structure). In order to achieve the
-same convergence for all 8 bands, it is advised to use <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>=10 (that is,
+same convergence for all 8 bands, it is advised to use <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>=10 (that is,
 8 + 2).</p>
                 
                   
@@ -2554,15 +3212,186 @@ same convergence for all 8 bands, it is advised to use <a class="wikilink" href=
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../base2/" title="Base2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Base2
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../base4/" title="Base4" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Base4
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (XG, RC)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

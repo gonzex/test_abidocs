@@ -1,0 +1,3383 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Abinit documentation">
+      
+      
+        <link rel="canonical" href="http://www.abinit.org/input_variables/">
+      
+      
+        <meta name="author" content="The Abinit group">
+      
+      
+        <link rel="shortcut icon" href="../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+    
+    
+      
+        <title>All Variables - abinit</title>
+      
+    
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    <!-- <script src="../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+    
+
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../images/abinit_logo.png" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Input Variables
+                </span>
+              
+            
+            All Variables
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      github-abinit
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="../images/abinit_logo.png">
+      </i>
+    
+    abinit
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      github-abinit
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/abinit/" title="Abinit" class="md-nav__link">
+      Abinit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
+      Mrgddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Artificial/" title="Artificial" class="md-nav__link">
+      Artificial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/AtomManipulator/" title="AtomManipulator" class="md-nav__link">
+      AtomManipulator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/AtomTypes/" title="AtomTypes" class="md-nav__link">
+      AtomTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Bader/" title="Bader" class="md-nav__link">
+      Bader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Berry/" title="Berry" class="md-nav__link">
+      Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/BSE/" title="BSE" class="md-nav__link">
+      BSE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ConstrainedPol/" title="ConstrainedPol" class="md-nav__link">
+      ConstrainedPol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Control/" title="Control" class="md-nav__link">
+      Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Coulomb/" title="Coulomb" class="md-nav__link">
+      Coulomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/CRPA/" title="CRPA" class="md-nav__link">
+      CRPA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/crystal/" title="Crystal" class="md-nav__link">
+      Crystal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Dev/" title="Dev" class="md-nav__link">
+      Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/DFPT/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/DMFT/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/EffMass/" title="EffMass" class="md-nav__link">
+      EffMass
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/EFG/" title="EFG" class="md-nav__link">
+      EFG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ElecDOS/" title="ElecDOS" class="md-nav__link">
+      ElecDOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/ForcesStresses/" title="ForcesStresses" class="md-nav__link">
+      ForcesStresses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/FrequencyMeshMBPT/" title="FrequencyMeshMBPT" class="md-nav__link">
+      FrequencyMeshMBPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/GeoConstraints/" title="GeoConstraints" class="md-nav__link">
+      GeoConstraints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/GeoOpt/" title="GeoOpt" class="md-nav__link">
+      GeoOpt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/GW/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/GWls/" title="GWls" class="md-nav__link">
+      GWls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Hybrids/" title="Hybrids" class="md-nav__link">
+      Hybrids
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/k-points/" title="K points" class="md-nav__link">
+      K points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/LOTF/" title="LOTF" class="md-nav__link">
+      LOTF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/MagField/" title="MagField" class="md-nav__link">
+      MagField
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/MagMom/" title="MagMom" class="md-nav__link">
+      MagMom
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/MolecularDynamics/" title="MolecularDynamics" class="md-nav__link">
+      MolecularDynamics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/multidtset/" title="Multidtset" class="md-nav__link">
+      Multidtset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/nonlinear/" title="Nonlinear" class="md-nav__link">
+      Nonlinear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Output/" title="Output" class="md-nav__link">
+      Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/parallelism/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PAW/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
+      PhononWidth
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/printing/" title="Printing" class="md-nav__link">
+      Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/PseudosPAW/" title="PseudosPAW" class="md-nav__link">
+      PseudosPAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/q-points/" title="Q points" class="md-nav__link">
+      Q points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/RandStopPow/" title="RandStopPow" class="md-nav__link">
+      RandStopPow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Recursion/" title="Recursion" class="md-nav__link">
+      Recursion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/RPACorrEn/" title="RPACorrEn" class="md-nav__link">
+      RPACorrEn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/SelfEnergy/" title="SelfEnergy" class="md-nav__link">
+      SelfEnergy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/SmartSymm/" title="SmartSymm" class="md-nav__link">
+      SmartSymm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/spinpolarisation/" title="Spinpolarisation" class="md-nav__link">
+      Spinpolarisation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/STM/" title="STM" class="md-nav__link">
+      STM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Susceptibility/" title="Susceptibility" class="md-nav__link">
+      Susceptibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/TDDFT/" title="TDDFT" class="md-nav__link">
+      TDDFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/TDepES/" title="TDepES" class="md-nav__link">
+      TDepES
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Temperature/" title="Temperature" class="md-nav__link">
+      Temperature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/TransPath/" title="TransPath" class="md-nav__link">
+      TransPath
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/TuningSpeed/" title="TuningSpeed" class="md-nav__link">
+      TuningSpeed
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/UnitCell/" title="UnitCell" class="md-nav__link">
+      UnitCell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/vdw/" title="Vdw" class="md-nav__link">
+      Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Wannier/" title="Wannier" class="md-nav__link">
+      Wannier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/Wavelets/" title="Wavelets" class="md-nav__link">
+      Wavelets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topics/xc/" title="Xc" class="md-nav__link">
+      Xc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Input Variables
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Input Variables
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        All Variables
+      </label>
+    
+    <a href="./" title="All Variables" class="md-nav__link md-nav__link--active">
+      All Variables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abinit-variables" title="abinit variables" class="md-nav__link">
+    abinit variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aim-variables" title="aim variables" class="md-nav__link">
+    aim variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anaddb-variables" title="anaddb variables" class="md-nav__link">
+    anaddb variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optic-variables" title="optic variables" class="md-nav__link">
+    optic variables
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="basic/" title="Basic" class="md-nav__link">
+      Basic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="dev/" title="Developers" class="md-nav__link">
+      Developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="eph/" title="Electron-Phonon" class="md-nav__link">
+      Electron-Phonon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ffield/" title="Varff" class="md-nav__link">
+      Varff
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="files/" title="File-handling" class="md-nav__link">
+      File-handling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="geo/" title="Geometry" class="md-nav__link">
+      Geometry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="gstate/" title="Ground-State" class="md-nav__link">
+      Ground-State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="gw/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="internal/" title="Internal" class="md-nav__link">
+      Internal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="paral/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="paw/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="rlx/" title="Relaxation" class="md-nav__link">
+      Relaxation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="vdw/" title="VdW" class="md-nav__link">
+      VdW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="w90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="varset_stats/" title="Statistics" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="connections/" title="Connections" class="md-nav__link">
+      Connections
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Lessons
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Lessons
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/welcome/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Base Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Base Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/base1/" title="Base1" class="md-nav__link">
+      Base1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/base2/" title="Base2" class="md-nav__link">
+      Base2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/base3/" title="Base3" class="md-nav__link">
+      Base3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/base4/" title="Base4" class="md-nav__link">
+      Base4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      PAW
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        DFPT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/rf1/" title="RF1" class="md-nav__link">
+      RF1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/rf2/" title="RF2" class="md-nav__link">
+      RF2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Many-Body
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Many-Body
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/gw1/" title="GW1" class="md-nav__link">
+      GW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/gw2/" title="GW2" class="md-nav__link">
+      GW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Parallelism
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Parallelism
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/basepar/" title="Base" class="md-nav__link">
+      Base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
+      Many-Body
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Theory
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Theory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/additional_material/" title="Additional Material" class="md-nav__link">
+      Additional Material
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/bibliography/" title="Bibliography" class="md-nav__link">
+      Bibliography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about/contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abinit-variables" title="abinit variables" class="md-nav__link">
+    abinit variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aim-variables" title="aim variables" class="md-nav__link">
+    aim variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anaddb-variables" title="anaddb variables" class="md-nav__link">
+    anaddb variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optic-variables" title="optic variables" class="md-nav__link">
+    optic variables
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>All Variables</h1>
+                
+                <!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<h2 id="abinit-variables"><strong>abinit</strong> variables<a class="headerlink" href="#abinit-variables" title="Permanent link">&para;</a></h2>
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#abinit-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#abinit-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#abinit-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#abinit-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#abinit-tabs-e" role="tab"                         data-toggle="tab">e</a></li>
+<li role="presentation"><a href="#abinit-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#abinit-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#abinit-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#abinit-tabs-j" role="tab"                         data-toggle="tab">j</a></li>
+<li role="presentation"><a href="#abinit-tabs-k" role="tab"                         data-toggle="tab">k</a></li>
+<li role="presentation"><a href="#abinit-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#abinit-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#abinit-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#abinit-tabs-o" role="tab"                         data-toggle="tab">o</a></li>
+<li role="presentation"><a href="#abinit-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#abinit-tabs-q" role="tab"                         data-toggle="tab">q</a></li>
+<li role="presentation"><a href="#abinit-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#abinit-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#abinit-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#abinit-tabs-u" role="tab"                         data-toggle="tab">u</a></li>
+<li role="presentation"><a href="#abinit-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
+<li role="presentation"><a href="#abinit-tabs-w" role="tab"                         data-toggle="tab">w</a></li>
+<li role="presentation"><a href="#abinit-tabs-x" role="tab"                         data-toggle="tab">x</a></li>
+<li role="presentation"><a href="#abinit-tabs-z" role="tab"                         data-toggle="tab">z</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="abinit-tabs-a">
+<a href="/input_variables/basic/#accuracy" target="_blank">accuracy</a> <a href="/input_variables/basic/#acell" target="_blank">acell</a> <a href="/input_variables/rlx/#adpimd" target="_blank">adpimd</a> <a href="/input_variables/rlx/#adpimd_gamma" target="_blank">adpimd_gamma</a> <a href="/input_variables/gstate/#algalch" target="_blank">algalch</a> <a href="/input_variables/rlx/#amu" target="_blank">amu</a> <a href="/input_variables/basic/#angdeg" target="_blank">angdeg</a> <a href="/input_variables/eph/#asr" target="_blank">asr</a> <a href="/input_variables/ffield/#atvshift" target="_blank">atvshift</a> <a href="/input_variables/paral/#autoparal" target="_blank">autoparal</a> <a href="/input_variables/gw/#awtr" target="_blank">awtr</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-b">
+<a href="/input_variables/paral/#bandpp" target="_blank">bandpp</a> <a href="/input_variables/ffield/#bdberry" target="_blank">bdberry</a> <a href="/input_variables/dfpt/#bdeigrf" target="_blank">bdeigrf</a> <a href="/input_variables/gw/#bdgw" target="_blank">bdgw</a> <a href="/input_variables/ffield/#berryopt" target="_blank">berryopt</a> <a href="/input_variables/ffield/#berrysav" target="_blank">berrysav</a> <a href="/input_variables/ffield/#berrystep" target="_blank">berrystep</a> <a href="/input_variables/ffield/#bfield" target="_blank">bfield</a> <a href="/input_variables/rlx/#bmass" target="_blank">bmass</a> <a href="/input_variables/gstate/#boxcenter" target="_blank">boxcenter</a> <a href="/input_variables/gstate/#boxcutmin" target="_blank">boxcutmin</a> <a href="/input_variables/geo/#brvltt" target="_blank">brvltt</a> <a href="/input_variables/bse/#bs_algorithm" target="_blank">bs_algorithm</a> <a href="/input_variables/bse/#bs_calctype" target="_blank">bs_calctype</a> <a href="/input_variables/bse/#bs_coulomb_term" target="_blank">bs_coulomb_term</a> <a href="/input_variables/bse/#bs_coupling" target="_blank">bs_coupling</a> <a href="/input_variables/bse/#bs_eh_cutoff" target="_blank">bs_eh_cutoff</a> <a href="/input_variables/bse/#bs_exchange_term" target="_blank">bs_exchange_term</a> <a href="/input_variables/bse/#bs_freq_mesh" target="_blank">bs_freq_mesh</a> <a href="/input_variables/bse/#bs_hayd_term" target="_blank">bs_hayd_term</a> <a href="/input_variables/bse/#bs_haydock_niter" target="_blank">bs_haydock_niter</a> <a href="/input_variables/bse/#bs_haydock_tol" target="_blank">bs_haydock_tol</a> <a href="/input_variables/bse/#bs_interp_kmult" target="_blank">bs_interp_kmult</a> <a href="/input_variables/bse/#bs_interp_m3_width" target="_blank">bs_interp_m3_width</a> <a href="/input_variables/bse/#bs_interp_method" target="_blank">bs_interp_method</a> <a href="/input_variables/bse/#bs_interp_mode" target="_blank">bs_interp_mode</a> <a href="/input_variables/bse/#bs_interp_prep" target="_blank">bs_interp_prep</a> <a href="/input_variables/bse/#bs_interp_rl_nb" target="_blank">bs_interp_rl_nb</a> <a href="/input_variables/bse/#bs_loband" target="_blank">bs_loband</a> <a href="/input_variables/bse/#bs_nstates" target="_blank">bs_nstates</a> <a href="/input_variables/dev/#builtintest" target="_blank">builtintest</a> <a href="/input_variables/paw/#bxctmindg" target="_blank">bxctmindg</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-c">
+<a href="/input_variables/gw/#cd_customnimfrqs" target="_blank">cd_customnimfrqs</a> <a href="/input_variables/gw/#cd_frqim_method" target="_blank">cd_frqim_method</a> <a href="/input_variables/gw/#cd_full_grid" target="_blank">cd_full_grid</a> <a href="/input_variables/gw/#cd_halfway_freq" target="_blank">cd_halfway_freq</a> <a href="/input_variables/gw/#cd_imfrqs" target="_blank">cd_imfrqs</a> <a href="/input_variables/gw/#cd_max_freq" target="_blank">cd_max_freq</a> <a href="/input_variables/gw/#cd_subset_freq" target="_blank">cd_subset_freq</a> <a href="/input_variables/dev/#cgtyphf" target="_blank">cgtyphf</a> <a href="/input_variables/gstate/#charge" target="_blank">charge</a> <a href="/input_variables/geo/#chempot" target="_blank">chempot</a> <a href="/input_variables/gstate/#chkexit" target="_blank">chkexit</a> <a href="/input_variables/gstate/#chkprim" target="_blank">chkprim</a> <a href="/input_variables/gstate/#chksymbreak" target="_blank">chksymbreak</a> <a href="/input_variables/eph/#chneut" target="_blank">chneut</a> <a href="/input_variables/rlx/#cineb_start" target="_blank">cineb_start</a> <a href="/input_variables/gstate/#cpuh" target="_blank">cpuh</a> <a href="/input_variables/gstate/#cpum" target="_blank">cpum</a> <a href="/input_variables/gstate/#cpus" target="_blank">cpus</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-d">
+<a href="/input_variables/dfpt/#d3e_pert1_atpol" target="_blank">d3e_pert1_atpol</a> <a href="/input_variables/dfpt/#d3e_pert1_dir" target="_blank">d3e_pert1_dir</a> <a href="/input_variables/dfpt/#d3e_pert1_elfd" target="_blank">d3e_pert1_elfd</a> <a href="/input_variables/dfpt/#d3e_pert1_phon" target="_blank">d3e_pert1_phon</a> <a href="/input_variables/dfpt/#d3e_pert2_atpol" target="_blank">d3e_pert2_atpol</a> <a href="/input_variables/dfpt/#d3e_pert2_dir" target="_blank">d3e_pert2_dir</a> <a href="/input_variables/dfpt/#d3e_pert2_elfd" target="_blank">d3e_pert2_elfd</a> <a href="/input_variables/dfpt/#d3e_pert2_phon" target="_blank">d3e_pert2_phon</a> <a href="/input_variables/dfpt/#d3e_pert3_atpol" target="_blank">d3e_pert3_atpol</a> <a href="/input_variables/dfpt/#d3e_pert3_dir" target="_blank">d3e_pert3_dir</a> <a href="/input_variables/dfpt/#d3e_pert3_elfd" target="_blank">d3e_pert3_elfd</a> <a href="/input_variables/dfpt/#d3e_pert3_phon" target="_blank">d3e_pert3_phon</a> <a href="/input_variables/ffield/#ddamp" target="_blank">ddamp</a> <a href="/input_variables/eph/#ddb_ngqpt" target="_blank">ddb_ngqpt</a> <a href="/input_variables/eph/#ddb_shiftq" target="_blank">ddb_shiftq</a> <a href="/input_variables/rlx/#delayperm" target="_blank">delayperm</a> <a href="/input_variables/dev/#densfor_pred" target="_blank">densfor_pred</a> <a href="/input_variables/dev/#densty" target="_blank">densty</a> <a href="/input_variables/ffield/#dfield" target="_blank">dfield</a> <a href="/input_variables/dfpt/#dfpt_sciss" target="_blank">dfpt_sciss</a> <a href="/input_variables/gstate/#diecut" target="_blank">diecut</a> <a href="/input_variables/gstate/#diegap" target="_blank">diegap</a> <a href="/input_variables/gstate/#dielam" target="_blank">dielam</a> <a href="/input_variables/gstate/#dielng" target="_blank">dielng</a> <a href="/input_variables/gstate/#diemac" target="_blank">diemac</a> <a href="/input_variables/gstate/#diemix" target="_blank">diemix</a> <a href="/input_variables/gstate/#diemixmag" target="_blank">diemixmag</a> <a href="/input_variables/rlx/#diismemory" target="_blank">diismemory</a> <a href="/input_variables/rlx/#dilatmx" target="_blank">dilatmx</a> <a href="/input_variables/eph/#dipdip" target="_blank">dipdip</a> <a href="/input_variables/paw/#dmatpawu" target="_blank">dmatpawu</a> <a href="/input_variables/paw/#dmatpuopt" target="_blank">dmatpuopt</a> <a href="/input_variables/paw/#dmatudiag" target="_blank">dmatudiag</a> <a href="/input_variables/dmft/#dmft_dc" target="_blank">dmft_dc</a> <a href="/input_variables/dmft/#dmft_entropy" target="_blank">dmft_entropy</a> <a href="/input_variables/dmft/#dmft_iter" target="_blank">dmft_iter</a> <a href="/input_variables/dmft/#dmft_mxsf" target="_blank">dmft_mxsf</a> <a href="/input_variables/dmft/#dmft_nlambda" target="_blank">dmft_nlambda</a> <a href="/input_variables/dmft/#dmft_nwli" target="_blank">dmft_nwli</a> <a href="/input_variables/dmft/#dmft_nwlo" target="_blank">dmft_nwlo</a> <a href="/input_variables/dev/#dmft_read_occnd" target="_blank">dmft_read_occnd</a> <a href="/input_variables/dmft/#dmft_rslf" target="_blank">dmft_rslf</a> <a href="/input_variables/dmft/#dmft_solv" target="_blank">dmft_solv</a> <a href="/input_variables/dmft/#dmft_t2g" target="_blank">dmft_t2g</a> <a href="/input_variables/dmft/#dmft_tolfreq" target="_blank">dmft_tolfreq</a> <a href="/input_variables/dmft/#dmft_tollc" target="_blank">dmft_tollc</a> <a href="/input_variables/dmft/#dmftbandf" target="_blank">dmftbandf</a> <a href="/input_variables/dmft/#dmftbandi" target="_blank">dmftbandi</a> <a href="/input_variables/dmft/#dmftcheck" target="_blank">dmftcheck</a> <a href="/input_variables/dev/#dmftctqmc_basis" target="_blank">dmftctqmc_basis</a> <a href="/input_variables/dmft/#dmftctqmc_check" target="_blank">dmftctqmc_check</a> <a href="/input_variables/dmft/#dmftctqmc_correl" target="_blank">dmftctqmc_correl</a> <a href="/input_variables/dmft/#dmftctqmc_gmove" target="_blank">dmftctqmc_gmove</a> <a href="/input_variables/dmft/#dmftctqmc_grnns" target="_blank">dmftctqmc_grnns</a> <a href="/input_variables/dmft/#dmftctqmc_meas" target="_blank">dmftctqmc_meas</a> <a href="/input_variables/dmft/#dmftctqmc_mov" target="_blank">dmftctqmc_mov</a> <a href="/input_variables/dmft/#dmftctqmc_mrka" target="_blank">dmftctqmc_mrka</a> <a href="/input_variables/dmft/#dmftctqmc_order" target="_blank">dmftctqmc_order</a> <a href="/input_variables/dmft/#dmftctqmc_triqs_nleg" target="_blank">dmftctqmc_triqs_nleg</a> <a href="/input_variables/dmft/#dmftqmc_l" target="_blank">dmftqmc_l</a> <a href="/input_variables/dmft/#dmftqmc_n" target="_blank">dmftqmc_n</a> <a href="/input_variables/dmft/#dmftqmc_seed" target="_blank">dmftqmc_seed</a> <a href="/input_variables/dmft/#dmftqmc_therm" target="_blank">dmftqmc_therm</a> <a href="/input_variables/gstate/#dosdeltae" target="_blank">dosdeltae</a> <a href="/input_variables/rlx/#dtion" target="_blank">dtion</a> <a href="/input_variables/rlx/#dynimage" target="_blank">dynimage</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-e">
+<a href="/input_variables/basic/#ecut" target="_blank">ecut</a> <a href="/input_variables/gw/#ecuteps" target="_blank">ecuteps</a> <a href="/input_variables/gw/#ecutsigx" target="_blank">ecutsigx</a> <a href="/input_variables/rlx/#ecutsm" target="_blank">ecutsm</a> <a href="/input_variables/gw/#ecutwfn" target="_blank">ecutwfn</a> <a href="/input_variables/dev/#effmass_free" target="_blank">effmass_free</a> <a href="/input_variables/ffield/#efield" target="_blank">efield</a> <a href="/input_variables/dfpt/#efmas" target="_blank">efmas</a> <a href="/input_variables/dfpt/#efmas_bands" target="_blank">efmas_bands</a> <a href="/input_variables/dfpt/#efmas_calc_dirs" target="_blank">efmas_calc_dirs</a> <a href="/input_variables/dfpt/#efmas_deg" target="_blank">efmas_deg</a> <a href="/input_variables/dfpt/#efmas_deg_tol" target="_blank">efmas_deg_tol</a> <a href="/input_variables/dfpt/#efmas_dim" target="_blank">efmas_dim</a> <a href="/input_variables/dfpt/#efmas_dirs" target="_blank">efmas_dirs</a> <a href="/input_variables/dfpt/#efmas_n_dirs" target="_blank">efmas_n_dirs</a> <a href="/input_variables/dfpt/#efmas_ntheta" target="_blank">efmas_ntheta</a> <a href="/input_variables/basic/#einterp" target="_blank">einterp</a> <a href="/input_variables/dfpt/#elph2_imagden" target="_blank">elph2_imagden</a> <a href="/input_variables/gstate/#enunit" target="_blank">enunit</a> <a href="/input_variables/eph/#eph_extrael" target="_blank">eph_extrael</a> <a href="/input_variables/eph/#eph_fermie" target="_blank">eph_fermie</a> <a href="/input_variables/eph/#eph_fsewin" target="_blank">eph_fsewin</a> <a href="/input_variables/eph/#eph_fsmear" target="_blank">eph_fsmear</a> <a href="/input_variables/eph/#eph_intmeth" target="_blank">eph_intmeth</a> <a href="/input_variables/eph/#eph_mustar" target="_blank">eph_mustar</a> <a href="/input_variables/eph/#eph_ngqpt_fine" target="_blank">eph_ngqpt_fine</a> <a href="/input_variables/dfpt/#eph_task" target="_blank">eph_task</a> <a href="/input_variables/eph/#eph_transport" target="_blank">eph_transport</a> <a href="/input_variables/dev/#eshift" target="_blank">eshift</a> <a href="/input_variables/dfpt/#esmear" target="_blank">esmear</a> <a href="/input_variables/dev/#exchmix" target="_blank">exchmix</a> <a href="/input_variables/dev/#exchn2n3d" target="_blank">exchn2n3d</a> <a href="/input_variables/dev/#extrapwf" target="_blank">extrapwf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-f">
+<a href="/input_variables/paw/#f4of2_sla" target="_blank">f4of2_sla</a> <a href="/input_variables/paw/#f6of2_sla" target="_blank">f6of2_sla</a> <a href="/input_variables/gstate/#fband" target="_blank">fband</a> <a href="/input_variables/dev/#fermie_nest" target="_blank">fermie_nest</a> <a href="/input_variables/dev/#fftalg" target="_blank">fftalg</a> <a href="/input_variables/dev/#fftcache" target="_blank">fftcache</a> <a href="/input_variables/gw/#fftgw" target="_blank">fftgw</a> <a href="/input_variables/gw/#freqim_alpha" target="_blank">freqim_alpha</a> <a href="/input_variables/gw/#freqremax" target="_blank">freqremax</a> <a href="/input_variables/gw/#freqremin" target="_blank">freqremin</a> <a href="/input_variables/gw/#freqspmax" target="_blank">freqspmax</a> <a href="/input_variables/gw/#freqspmin" target="_blank">freqspmin</a> <a href="/input_variables/rlx/#friction" target="_blank">friction</a> <a href="/input_variables/dfpt/#frzfermi" target="_blank">frzfermi</a> <a href="/input_variables/rlx/#fxcartfactor" target="_blank">fxcartfactor</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-g">
+<a href="/input_variables/rlx/#ga_algor" target="_blank">ga_algor</a> <a href="/input_variables/rlx/#ga_fitness" target="_blank">ga_fitness</a> <a href="/input_variables/rlx/#ga_n_rules" target="_blank">ga_n_rules</a> <a href="/input_variables/rlx/#ga_opt_percent" target="_blank">ga_opt_percent</a> <a href="/input_variables/rlx/#ga_rules" target="_blank">ga_rules</a> <a href="/input_variables/geo/#genafm" target="_blank">genafm</a> <a href="/input_variables/files/#get1den" target="_blank">get1den</a> <a href="/input_variables/files/#get1wf" target="_blank">get1wf</a> <a href="/input_variables/files/#getbscoup" target="_blank">getbscoup</a> <a href="/input_variables/files/#getbseig" target="_blank">getbseig</a> <a href="/input_variables/files/#getbsreso" target="_blank">getbsreso</a> <a href="/input_variables/rlx/#getcell" target="_blank">getcell</a> <a href="/input_variables/files/#getddb" target="_blank">getddb</a> <a href="/input_variables/files/#getddk" target="_blank">getddk</a> <a href="/input_variables/files/#getden" target="_blank">getden</a> <a href="/input_variables/dev/#getgam_eig2nkq" target="_blank">getgam_eig2nkq</a> <a href="/input_variables/files/#gethaydock" target="_blank">gethaydock</a> <a href="/input_variables/files/#getocc" target="_blank">getocc</a> <a href="/input_variables/files/#getqps" target="_blank">getqps</a> <a href="/input_variables/files/#getscr" target="_blank">getscr</a> <a href="/input_variables/files/#getsuscep" target="_blank">getsuscep</a> <a href="/input_variables/rlx/#getvel" target="_blank">getvel</a> <a href="/input_variables/files/#getwfk" target="_blank">getwfk</a> <a href="/input_variables/dev/#getwfkfine" target="_blank">getwfkfine</a> <a href="/input_variables/files/#getwfq" target="_blank">getwfq</a> <a href="/input_variables/rlx/#getxcart" target="_blank">getxcart</a> <a href="/input_variables/rlx/#getxred" target="_blank">getxred</a> <a href="/input_variables/rlx/#goprecon" target="_blank">goprecon</a> <a href="/input_variables/rlx/#goprecprm" target="_blank">goprecprm</a> <a href="/input_variables/paral/#gpu_devices" target="_blank">gpu_devices</a> <a href="/input_variables/paral/#gpu_linalg_limit" target="_blank">gpu_linalg_limit</a> <a href="/input_variables/gw/#gw_customnfreqsp" target="_blank">gw_customnfreqsp</a> <a href="/input_variables/gw/#gw_freqsp" target="_blank">gw_freqsp</a> <a href="/input_variables/gw/#gw_frqim_inzgrid" target="_blank">gw_frqim_inzgrid</a> <a href="/input_variables/gw/#gw_frqre_inzgrid" target="_blank">gw_frqre_inzgrid</a> <a href="/input_variables/gw/#gw_frqre_tangrid" target="_blank">gw_frqre_tangrid</a> <a href="/input_variables/gw/#gw_invalid_freq" target="_blank">gw_invalid_freq</a> <a href="/input_variables/gw/#gw_nqlwl" target="_blank">gw_nqlwl</a> <a href="/input_variables/gw/#gw_nstep" target="_blank">gw_nstep</a> <a href="/input_variables/gw/#gw_qlwl" target="_blank">gw_qlwl</a> <a href="/input_variables/gw/#gw_qprange" target="_blank">gw_qprange</a> <a href="/input_variables/gw/#gw_sctype" target="_blank">gw_sctype</a> <a href="/input_variables/gw/#gw_sigxcore" target="_blank">gw_sigxcore</a> <a href="/input_variables/gw/#gw_toldfeig" target="_blank">gw_toldfeig</a> <a href="/input_variables/gw/#gwcalctyp" target="_blank">gwcalctyp</a> <a href="/input_variables/gw/#gwcomp" target="_blank">gwcomp</a> <a href="/input_variables/gw/#gwencomp" target="_blank">gwencomp</a> <a href="/input_variables/gw/#gwfockmix" target="_blank">gwfockmix</a> <a href="/input_variables/gw/#gwgamma" target="_blank">gwgamma</a> <a href="/input_variables/gw/#gwls_band_index" target="_blank">gwls_band_index</a> <a href="/input_variables/gw/#gwls_correlation" target="_blank">gwls_correlation</a> <a href="/input_variables/gw/#gwls_diel_model" target="_blank">gwls_diel_model</a> <a href="/input_variables/gw/#gwls_exchange" target="_blank">gwls_exchange</a> <a href="/input_variables/gw/#gwls_first_seed" target="_blank">gwls_first_seed</a> <a href="/input_variables/gw/#gwls_kmax_analytic" target="_blank">gwls_kmax_analytic</a> <a href="/input_variables/gw/#gwls_kmax_complement" target="_blank">gwls_kmax_complement</a> <a href="/input_variables/gw/#gwls_kmax_numeric" target="_blank">gwls_kmax_numeric</a> <a href="/input_variables/gw/#gwls_kmax_poles" target="_blank">gwls_kmax_poles</a> <a href="/input_variables/gw/#gwls_list_proj_freq" target="_blank">gwls_list_proj_freq</a> <a href="/input_variables/gw/#gwls_model_parameter" target="_blank">gwls_model_parameter</a> <a href="/input_variables/gw/#gwls_n_proj_freq" target="_blank">gwls_n_proj_freq</a> <a href="/input_variables/gw/#gwls_npt_gauss_quad" target="_blank">gwls_npt_gauss_quad</a> <a href="/input_variables/gw/#gwls_nseeds" target="_blank">gwls_nseeds</a> <a href="/input_variables/gw/#gwls_print_debug" target="_blank">gwls_print_debug</a> <a href="/input_variables/gw/#gwls_recycle" target="_blank">gwls_recycle</a> <a href="/input_variables/gw/#gwls_stern_kmax" target="_blank">gwls_stern_kmax</a> <a href="/input_variables/gw/#gwmem" target="_blank">gwmem</a> <a href="/input_variables/paral/#gwpara" target="_blank">gwpara</a> <a href="/input_variables/gw/#gwrpacorr" target="_blank">gwrpacorr</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-i">
+<a href="/input_variables/rlx/#iatcon" target="_blank">iatcon</a> <a href="/input_variables/rlx/#iatfix" target="_blank">iatfix</a> <a href="/input_variables/rlx/#iatfixx" target="_blank">iatfixx</a> <a href="/input_variables/rlx/#iatfixy" target="_blank">iatfixy</a> <a href="/input_variables/rlx/#iatfixz" target="_blank">iatfixz</a> <a href="/input_variables/gstate/#iatsph" target="_blank">iatsph</a> <a href="/input_variables/paw/#iboxcut" target="_blank">iboxcut</a> <a href="/input_variables/gstate/#icoulomb" target="_blank">icoulomb</a> <a href="/input_variables/gw/#icutcoul" target="_blank">icutcoul</a> <a href="/input_variables/dfpt/#ieig2rf" target="_blank">ieig2rf</a> <a href="/input_variables/rlx/#imgmov" target="_blank">imgmov</a> <a href="/input_variables/gw/#inclvkb" target="_blank">inclvkb</a> <a href="/input_variables/dev/#intxc" target="_blank">intxc</a> <a href="/input_variables/dev/#iomode" target="_blank">iomode</a> <a href="/input_variables/rlx/#ionmov" target="_blank">ionmov</a> <a href="/input_variables/gstate/#iprcel" target="_blank">iprcel</a> <a href="/input_variables/dev/#iprcfc" target="_blank">iprcfc</a> <a href="/input_variables/gstate/#iqpt" target="_blank">iqpt</a> <a href="/input_variables/dev/#irandom" target="_blank">irandom</a> <a href="/input_variables/files/#ird1den" target="_blank">ird1den</a> <a href="/input_variables/files/#ird1wf" target="_blank">ird1wf</a> <a href="/input_variables/files/#irdbscoup" target="_blank">irdbscoup</a> <a href="/input_variables/files/#irdbseig" target="_blank">irdbseig</a> <a href="/input_variables/files/#irdbsreso" target="_blank">irdbsreso</a> <a href="/input_variables/files/#irdddb" target="_blank">irdddb</a> <a href="/input_variables/files/#irdddk" target="_blank">irdddk</a> <a href="/input_variables/files/#irdden" target="_blank">irdden</a> <a href="/input_variables/files/#irdhaydock" target="_blank">irdhaydock</a> <a href="/input_variables/files/#irdqps" target="_blank">irdqps</a> <a href="/input_variables/files/#irdscr" target="_blank">irdscr</a> <a href="/input_variables/files/#irdsuscep" target="_blank">irdsuscep</a> <a href="/input_variables/vdw/#irdvdw" target="_blank">irdvdw</a> <a href="/input_variables/files/#irdwfk" target="_blank">irdwfk</a> <a href="/input_variables/dev/#irdwfkfine" target="_blank">irdwfkfine</a> <a href="/input_variables/files/#irdwfq" target="_blank">irdwfq</a> <a href="/input_variables/basic/#iscf" target="_blank">iscf</a> <a href="/input_variables/dev/#isecur" target="_blank">isecur</a> <a href="/input_variables/rlx/#istatimg" target="_blank">istatimg</a> <a href="/input_variables/dev/#istatr" target="_blank">istatr</a> <a href="/input_variables/dev/#istatshft" target="_blank">istatshft</a> <a href="/input_variables/dev/#istwfk" target="_blank">istwfk</a> <a href="/input_variables/basic/#ixc" target="_blank">ixc</a> <a href="/input_variables/gstate/#ixcpositron" target="_blank">ixcpositron</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-j">
+<a href="/input_variables/basic/#jdtset" target="_blank">jdtset</a> <a href="/input_variables/gstate/#jellslab" target="_blank">jellslab</a> <a href="/input_variables/ffield/#jfielddir" target="_blank">jfielddir</a> <a href="/input_variables/paw/#jpawu" target="_blank">jpawu</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-k">
+<a href="/input_variables/ffield/#kberry" target="_blank">kberry</a> <a href="/input_variables/basic/#kpt" target="_blank">kpt</a> <a href="/input_variables/gstate/#kptbounds" target="_blank">kptbounds</a> <a href="/input_variables/gw/#kptgw" target="_blank">kptgw</a> <a href="/input_variables/basic/#kptnrm" target="_blank">kptnrm</a> <a href="/input_variables/internal/#kptns" target="_blank">kptns</a> <a href="/input_variables/basic/#kptopt" target="_blank">kptopt</a> <a href="/input_variables/gstate/#kptrlatt" target="_blank">kptrlatt</a> <a href="/input_variables/gstate/#kptrlen" target="_blank">kptrlen</a> <a href="/input_variables/files/#kssform" target="_blank">kssform</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-l">
+<a href="/input_variables/paw/#lexexch" target="_blank">lexexch</a> <a href="/input_variables/paral/#localrdwf" target="_blank">localrdwf</a> <a href="/input_variables/dev/#lotf_classic" target="_blank">lotf_classic</a> <a href="/input_variables/dev/#lotf_nitex" target="_blank">lotf_nitex</a> <a href="/input_variables/dev/#lotf_nneigx" target="_blank">lotf_nneigx</a> <a href="/input_variables/dev/#lotf_version" target="_blank">lotf_version</a> <a href="/input_variables/paw/#lpawu" target="_blank">lpawu</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-m">
+<a href="/input_variables/dev/#macro_uj" target="_blank">macro_uj</a> <a href="/input_variables/gstate/#magcon_lambda" target="_blank">magcon_lambda</a> <a href="/input_variables/gstate/#magconon" target="_blank">magconon</a> <a href="/input_variables/paral/#max_ncpus" target="_blank">max_ncpus</a> <a href="/input_variables/ffield/#maxestep" target="_blank">maxestep</a> <a href="/input_variables/dev/#maxnsym" target="_blank">maxnsym</a> <a href="/input_variables/internal/#mband" target="_blank">mband</a> <a href="/input_variables/gw/#mbpt_sciss" target="_blank">mbpt_sciss</a> <a href="/input_variables/gw/#mdf_epsinf" target="_blank">mdf_epsinf</a> <a href="/input_variables/rlx/#mdtemp" target="_blank">mdtemp</a> <a href="/input_variables/rlx/#mdwall" target="_blank">mdwall</a> <a href="/input_variables/dev/#mem_test" target="_blank">mem_test</a> <a href="/input_variables/rlx/#mep_mxstep" target="_blank">mep_mxstep</a> <a href="/input_variables/rlx/#mep_solver" target="_blank">mep_solver</a> <a href="/input_variables/internal/#mgfft" target="_blank">mgfft</a> <a href="/input_variables/internal/#mgfftdg" target="_blank">mgfftdg</a> <a href="/input_variables/gstate/#mixalch" target="_blank">mixalch</a> <a href="/input_variables/internal/#mpw" target="_blank">mpw</a> <a href="/input_variables/dev/#mqgrid" target="_blank">mqgrid</a> <a href="/input_variables/paw/#mqgriddg" target="_blank">mqgriddg</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-n">
+<a href="/input_variables/rlx/#natcon" target="_blank">natcon</a> <a href="/input_variables/rlx/#natfix" target="_blank">natfix</a> <a href="/input_variables/rlx/#natfixx" target="_blank">natfixx</a> <a href="/input_variables/rlx/#natfixy" target="_blank">natfixy</a> <a href="/input_variables/rlx/#natfixz" target="_blank">natfixz</a> <a href="/input_variables/basic/#natom" target="_blank">natom</a> <a href="/input_variables/internal/#natpawu" target="_blank">natpawu</a> <a href="/input_variables/geo/#natrd" target="_blank">natrd</a> <a href="/input_variables/gstate/#natsph" target="_blank">natsph</a> <a href="/input_variables/gstate/#natsph_extra" target="_blank">natsph_extra</a> <a href="/input_variables/ffield/#natvshift" target="_blank">natvshift</a> <a href="/input_variables/basic/#nband" target="_blank">nband</a> <a href="/input_variables/basic/#nbandhf" target="_blank">nbandhf</a> <a href="/input_variables/gw/#nbandkss" target="_blank">nbandkss</a> <a href="/input_variables/dev/#nbdblock" target="_blank">nbdblock</a> <a href="/input_variables/gstate/#nbdbuf" target="_blank">nbdbuf</a> <a href="/input_variables/ffield/#nberry" target="_blank">nberry</a> <a href="/input_variables/dev/#nc_xccc_gspace" target="_blank">nc_xccc_gspace</a> <a href="/input_variables/rlx/#nconeq" target="_blank">nconeq</a> <a href="/input_variables/dev/#nctime" target="_blank">nctime</a> <a href="/input_variables/gstate/#ndivk" target="_blank">ndivk</a> <a href="/input_variables/gstate/#ndivsm" target="_blank">ndivsm</a> <a href="/input_variables/basic/#ndtset" target="_blank">ndtset</a> <a href="/input_variables/internal/#ndynimage" target="_blank">ndynimage</a> <a href="/input_variables/rlx/#neb_algo" target="_blank">neb_algo</a> <a href="/input_variables/rlx/#neb_spring" target="_blank">neb_spring</a> <a href="/input_variables/internal/#nelect" target="_blank">nelect</a> <a href="/input_variables/internal/#nfft" target="_blank">nfft</a> <a href="/input_variables/internal/#nfftdg" target="_blank">nfftdg</a> <a href="/input_variables/gw/#nfreqim" target="_blank">nfreqim</a> <a href="/input_variables/gw/#nfreqmidm" target="_blank">nfreqmidm</a> <a href="/input_variables/gw/#nfreqre" target="_blank">nfreqre</a> <a href="/input_variables/gw/#nfreqsp" target="_blank">nfreqsp</a> <a href="/input_variables/gstate/#ngfft" target="_blank">ngfft</a> <a href="/input_variables/paw/#ngfftdg" target="_blank">ngfftdg</a> <a href="/input_variables/basic/#ngkpt" target="_blank">ngkpt</a> <a href="/input_variables/gstate/#ngqpt" target="_blank">ngqpt</a> <a href="/input_variables/rlx/#nimage" target="_blank">nimage</a> <a href="/input_variables/basic/#nkpath" target="_blank">nkpath</a> <a href="/input_variables/basic/#nkpt" target="_blank">nkpt</a> <a href="/input_variables/gw/#nkptgw" target="_blank">nkptgw</a> <a href="/input_variables/basic/#nkpthf" target="_blank">nkpthf</a> <a href="/input_variables/gstate/#nline" target="_blank">nline</a> <a href="/input_variables/dev/#nloc_alg" target="_blank">nloc_alg</a> <a href="/input_variables/dev/#nloc_mem" target="_blank">nloc_mem</a> <a href="/input_variables/rlx/#nnos" target="_blank">nnos</a> <a href="/input_variables/dev/#nnsclo" target="_blank">nnsclo</a> <a href="/input_variables/dev/#nnsclohf" target="_blank">nnsclohf</a> <a href="/input_variables/geo/#nobj" target="_blank">nobj</a> <a href="/input_variables/gw/#nomegasf" target="_blank">nomegasf</a> <a href="/input_variables/gw/#nomegasi" target="_blank">nomegasi</a> <a href="/input_variables/gw/#nomegasrd" target="_blank">nomegasrd</a> <a href="/input_variables/dev/#normpawu" target="_blank">normpawu</a> <a href="/input_variables/rlx/#noseinert" target="_blank">noseinert</a> <a href="/input_variables/paral/#np_slk" target="_blank">np_slk</a> <a href="/input_variables/paral/#npband" target="_blank">npband</a> <a href="/input_variables/paral/#npfft" target="_blank">npfft</a> <a href="/input_variables/paral/#nphf" target="_blank">nphf</a> <a href="/input_variables/paral/#npimage" target="_blank">npimage</a> <a href="/input_variables/paral/#npkpt" target="_blank">npkpt</a> <a href="/input_variables/paral/#nppert" target="_blank">nppert</a> <a href="/input_variables/gstate/#npsp" target="_blank">npsp</a> <a href="/input_variables/gstate/#npspalch" target="_blank">npspalch</a> <a href="/input_variables/paral/#npspinor" target="_blank">npspinor</a> <a href="/input_variables/dev/#npulayit" target="_blank">npulayit</a> <a href="/input_variables/gw/#npvel" target="_blank">npvel</a> <a href="/input_variables/internal/#npweps" target="_blank">npweps</a> <a href="/input_variables/gw/#npwkss" target="_blank">npwkss</a> <a href="/input_variables/internal/#npwsigx" target="_blank">npwsigx</a> <a href="/input_variables/internal/#npwwfn" target="_blank">npwwfn</a> <a href="/input_variables/gstate/#nqpt" target="_blank">nqpt</a> <a href="/input_variables/gw/#nqptdm" target="_blank">nqptdm</a> <a href="/input_variables/dev/#nscforder" target="_blank">nscforder</a> <a href="/input_variables/basic/#nshiftk" target="_blank">nshiftk</a> <a href="/input_variables/gstate/#nshiftq" target="_blank">nshiftq</a> <a href="/input_variables/gstate/#nspden" target="_blank">nspden</a> <a href="/input_variables/gstate/#nspinor" target="_blank">nspinor</a> <a href="/input_variables/basic/#nsppol" target="_blank">nsppol</a> <a href="/input_variables/basic/#nstep" target="_blank">nstep</a> <a href="/input_variables/basic/#nsym" target="_blank">nsym</a> <a href="/input_variables/rlx/#ntime" target="_blank">ntime</a> <a href="/input_variables/rlx/#ntimimage" target="_blank">ntimimage</a> <a href="/input_variables/gstate/#ntypalch" target="_blank">ntypalch</a> <a href="/input_variables/basic/#ntypat" target="_blank">ntypat</a> <a href="/input_variables/gstate/#ntyppure" target="_blank">ntyppure</a> <a href="/input_variables/gstate/#nucdipmom" target="_blank">nucdipmom</a> <a href="/input_variables/gstate/#nwfshist" target="_blank">nwfshist</a> <a href="/input_variables/geo/#nzchempot" target="_blank">nzchempot</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-o">
+<a href="/input_variables/geo/#objaat" target="_blank">objaat</a> <a href="/input_variables/geo/#objaax" target="_blank">objaax</a> <a href="/input_variables/geo/#objan" target="_blank">objan</a> <a href="/input_variables/geo/#objarf" target="_blank">objarf</a> <a href="/input_variables/geo/#objaro" target="_blank">objaro</a> <a href="/input_variables/geo/#objatr" target="_blank">objatr</a> <a href="/input_variables/geo/#objbat" target="_blank">objbat</a> <a href="/input_variables/geo/#objbax" target="_blank">objbax</a> <a href="/input_variables/geo/#objbn" target="_blank">objbn</a> <a href="/input_variables/geo/#objbrf" target="_blank">objbrf</a> <a href="/input_variables/geo/#objbro" target="_blank">objbro</a> <a href="/input_variables/geo/#objbtr" target="_blank">objbtr</a> <a href="/input_variables/gstate/#occ" target="_blank">occ</a> <a href="/input_variables/basic/#occopt" target="_blank">occopt</a> <a href="/input_variables/gw/#omegasimax" target="_blank">omegasimax</a> <a href="/input_variables/gw/#omegasrdmax" target="_blank">omegasrdmax</a> <a href="/input_variables/rlx/#optcell" target="_blank">optcell</a> <a href="/input_variables/gstate/#optdriver" target="_blank">optdriver</a> <a href="/input_variables/dev/#optforces" target="_blank">optforces</a> <a href="/input_variables/dev/#optnlxccc" target="_blank">optnlxccc</a> <a href="/input_variables/gstate/#optstress" target="_blank">optstress</a> <a href="/input_variables/dev/#ortalg" target="_blank">ortalg</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-p">
+<a href="/input_variables/dev/#papiopt" target="_blank">papiopt</a> <a href="/input_variables/paral/#paral_atom" target="_blank">paral_atom</a> <a href="/input_variables/paral/#paral_kgb" target="_blank">paral_kgb</a> <a href="/input_variables/paral/#paral_rf" target="_blank">paral_rf</a> <a href="/input_variables/paw/#pawcpxocc" target="_blank">pawcpxocc</a> <a href="/input_variables/paw/#pawcross" target="_blank">pawcross</a> <a href="/input_variables/paw/#pawecutdg" target="_blank">pawecutdg</a> <a href="/input_variables/paw/#pawfatbnd" target="_blank">pawfatbnd</a> <a href="/input_variables/paw/#pawlcutd" target="_blank">pawlcutd</a> <a href="/input_variables/paw/#pawlmix" target="_blank">pawlmix</a> <a href="/input_variables/paw/#pawmixdg" target="_blank">pawmixdg</a> <a href="/input_variables/paw/#pawnhatxc" target="_blank">pawnhatxc</a> <a href="/input_variables/paw/#pawnphi" target="_blank">pawnphi</a> <a href="/input_variables/paw/#pawntheta" target="_blank">pawntheta</a> <a href="/input_variables/paw/#pawnzlm" target="_blank">pawnzlm</a> <a href="/input_variables/paw/#pawoptmix" target="_blank">pawoptmix</a> <a href="/input_variables/paw/#pawoptosc" target="_blank">pawoptosc</a> <a href="/input_variables/paw/#pawovlp" target="_blank">pawovlp</a> <a href="/input_variables/dev/#pawprt_b" target="_blank">pawprt_b</a> <a href="/input_variables/dev/#pawprt_k" target="_blank">pawprt_k</a> <a href="/input_variables/paw/#pawprtden" target="_blank">pawprtden</a> <a href="/input_variables/paw/#pawprtdos" target="_blank">pawprtdos</a> <a href="/input_variables/paw/#pawprtvol" target="_blank">pawprtvol</a> <a href="/input_variables/paw/#pawprtwf" target="_blank">pawprtwf</a> <a href="/input_variables/paw/#pawspnorb" target="_blank">pawspnorb</a> <a href="/input_variables/paw/#pawstgylm" target="_blank">pawstgylm</a> <a href="/input_variables/paw/#pawsushat" target="_blank">pawsushat</a> <a href="/input_variables/dev/#pawujat" target="_blank">pawujat</a> <a href="/input_variables/dev/#pawujrad" target="_blank">pawujrad</a> <a href="/input_variables/dev/#pawujv" target="_blank">pawujv</a> <a href="/input_variables/paw/#pawusecp" target="_blank">pawusecp</a> <a href="/input_variables/paw/#pawxcdev" target="_blank">pawxcdev</a> <a href="/input_variables/eph/#ph_intmeth" target="_blank">ph_intmeth</a> <a href="/input_variables/eph/#ph_ndivsm" target="_blank">ph_ndivsm</a> <a href="/input_variables/dfpt/#ph_ngqpt" target="_blank">ph_ngqpt</a> <a href="/input_variables/eph/#ph_nqpath" target="_blank">ph_nqpath</a> <a href="/input_variables/eph/#ph_nqshift" target="_blank">ph_nqshift</a> <a href="/input_variables/dfpt/#ph_qpath" target="_blank">ph_qpath</a> <a href="/input_variables/eph/#ph_qshift" target="_blank">ph_qshift</a> <a href="/input_variables/eph/#ph_smear" target="_blank">ph_smear</a> <a href="/input_variables/eph/#ph_wstep" target="_blank">ph_wstep</a> <a href="/input_variables/rlx/#pimass" target="_blank">pimass</a> <a href="/input_variables/rlx/#pimd_constraint" target="_blank">pimd_constraint</a> <a href="/input_variables/rlx/#pitransform" target="_blank">pitransform</a> <a href="/input_variables/dev/#plowan_bandf" target="_blank">plowan_bandf</a> <a href="/input_variables/dev/#plowan_bandi" target="_blank">plowan_bandi</a> <a href="/input_variables/dev/#plowan_compute" target="_blank">plowan_compute</a> <a href="/input_variables/dev/#plowan_iatom" target="_blank">plowan_iatom</a> <a href="/input_variables/dev/#plowan_it" target="_blank">plowan_it</a> <a href="/input_variables/dev/#plowan_lcalc" target="_blank">plowan_lcalc</a> <a href="/input_variables/dev/#plowan_natom" target="_blank">plowan_natom</a> <a href="/input_variables/dev/#plowan_nbl" target="_blank">plowan_nbl</a> <a href="/input_variables/dev/#plowan_nt" target="_blank">plowan_nt</a> <a href="/input_variables/dev/#plowan_projcalc" target="_blank">plowan_projcalc</a> <a href="/input_variables/dev/#plowan_realspace" target="_blank">plowan_realspace</a> <a href="/input_variables/ffield/#polcen" target="_blank">polcen</a> <a href="/input_variables/gstate/#posdoppler" target="_blank">posdoppler</a> <a href="/input_variables/gstate/#positron" target="_blank">positron</a> <a href="/input_variables/gstate/#posnstep" target="_blank">posnstep</a> <a href="/input_variables/gstate/#posocc" target="_blank">posocc</a> <a href="/input_variables/gstate/#postoldfe" target="_blank">postoldfe</a> <a href="/input_variables/gstate/#postoldff" target="_blank">postoldff</a> <a href="/input_variables/gw/#ppmfrq" target="_blank">ppmfrq</a> <a href="/input_variables/gw/#ppmodel" target="_blank">ppmodel</a> <a href="/input_variables/dfpt/#prepanl" target="_blank">prepanl</a> <a href="/input_variables/dfpt/#prepgkk" target="_blank">prepgkk</a> <a href="/input_variables/dev/#prepscphon" target="_blank">prepscphon</a> <a href="/input_variables/files/#prt1dm" target="_blank">prt1dm</a> <a href="/input_variables/rlx/#prtatlist" target="_blank">prtatlist</a> <a href="/input_variables/dfpt/#prtbbb" target="_blank">prtbbb</a> <a href="/input_variables/dev/#prtbltztrp" target="_blank">prtbltztrp</a> <a href="/input_variables/dev/#prtcif" target="_blank">prtcif</a> <a href="/input_variables/files/#prtden" target="_blank">prtden</a> <a href="/input_variables/gstate/#prtdensph" target="_blank">prtdensph</a> <a href="/input_variables/dev/#prtdipole" target="_blank">prtdipole</a> <a href="/input_variables/files/#prtdos" target="_blank">prtdos</a> <a href="/input_variables/files/#prtdosm" target="_blank">prtdosm</a> <a href="/input_variables/gstate/#prtebands" target="_blank">prtebands</a> <a href="/input_variables/paw/#prtefg" target="_blank">prtefg</a> <a href="/input_variables/files/#prteig" target="_blank">prteig</a> <a href="/input_variables/files/#prtelf" target="_blank">prtelf</a> <a href="/input_variables/paw/#prtfc" target="_blank">prtfc</a> <a href="/input_variables/files/#prtfsurf" target="_blank">prtfsurf</a> <a href="/input_variables/files/#prtgden" target="_blank">prtgden</a> <a href="/input_variables/files/#prtgeo" target="_blank">prtgeo</a> <a href="/input_variables/files/#prtgkk" target="_blank">prtgkk</a> <a href="/input_variables/files/#prtgsr" target="_blank">prtgsr</a> <a href="/input_variables/files/#prtkden" target="_blank">prtkden</a> <a href="/input_variables/files/#prtkpt" target="_blank">prtkpt</a> <a href="/input_variables/files/#prtlden" target="_blank">prtlden</a> <a href="/input_variables/paw/#prtnabla" target="_blank">prtnabla</a> <a href="/input_variables/dev/#prtnest" target="_blank">prtnest</a> <a href="/input_variables/eph/#prtphbands" target="_blank">prtphbands</a> <a href="/input_variables/eph/#prtphdos" target="_blank">prtphdos</a> <a href="/input_variables/eph/#prtphsurf" target="_blank">prtphsurf</a> <a href="/input_variables/dev/#prtposcar" target="_blank">prtposcar</a> <a href="/input_variables/files/#prtpot" target="_blank">prtpot</a> <a href="/input_variables/files/#prtpsps" target="_blank">prtpsps</a> <a href="/input_variables/files/#prtspcur" target="_blank">prtspcur</a> <a href="/input_variables/files/#prtstm" target="_blank">prtstm</a> <a href="/input_variables/files/#prtsuscep" target="_blank">prtsuscep</a> <a href="/input_variables/files/#prtvclmb" target="_blank">prtvclmb</a> <a href="/input_variables/vdw/#prtvdw" target="_blank">prtvdw</a> <a href="/input_variables/files/#prtvha" target="_blank">prtvha</a> <a href="/input_variables/files/#prtvhxc" target="_blank">prtvhxc</a> <a href="/input_variables/files/#prtvol" target="_blank">prtvol</a> <a href="/input_variables/files/#prtvolimg" target="_blank">prtvolimg</a> <a href="/input_variables/files/#prtvpsp" target="_blank">prtvpsp</a> <a href="/input_variables/files/#prtvxc" target="_blank">prtvxc</a> <a href="/input_variables/files/#prtwant" target="_blank">prtwant</a> <a href="/input_variables/files/#prtwf" target="_blank">prtwf</a> <a href="/input_variables/files/#prtwf_full" target="_blank">prtwf_full</a> <a href="/input_variables/files/#prtxml" target="_blank">prtxml</a> <a href="/input_variables/paw/#ptcharge" target="_blank">ptcharge</a> <a href="/input_variables/geo/#ptgroupma" target="_blank">ptgroupma</a> <a href="/input_variables/gw/#pvelmax" target="_blank">pvelmax</a> <a href="/input_variables/paral/#pw_unbal_thresh" target="_blank">pw_unbal_thresh</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-q">
+<a href="/input_variables/rlx/#qmass" target="_blank">qmass</a> <a href="/input_variables/ffield/#qprtrb" target="_blank">qprtrb</a> <a href="/input_variables/gstate/#qpt" target="_blank">qpt</a> <a href="/input_variables/gw/#qptdm" target="_blank">qptdm</a> <a href="/input_variables/internal/#qptn" target="_blank">qptn</a> <a href="/input_variables/gstate/#qptnrm" target="_blank">qptnrm</a> <a href="/input_variables/gstate/#qptopt" target="_blank">qptopt</a> <a href="/input_variables/gstate/#qptrlatt" target="_blank">qptrlatt</a> <a href="/input_variables/paw/#quadmom" target="_blank">quadmom</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-r">
+<a href="/input_variables/rlx/#random_atpos" target="_blank">random_atpos</a> <a href="/input_variables/gstate/#ratsph" target="_blank">ratsph</a> <a href="/input_variables/gstate/#ratsph_extra" target="_blank">ratsph_extra</a> <a href="/input_variables/gw/#rcut" target="_blank">rcut</a> <a href="/input_variables/dev/#recefermi" target="_blank">recefermi</a> <a href="/input_variables/dev/#recgratio" target="_blank">recgratio</a> <a href="/input_variables/dev/#recnpath" target="_blank">recnpath</a> <a href="/input_variables/dev/#recnrec" target="_blank">recnrec</a> <a href="/input_variables/dev/#recptrott" target="_blank">recptrott</a> <a href="/input_variables/dev/#recrcut" target="_blank">recrcut</a> <a href="/input_variables/dev/#rectesteg" target="_blank">rectesteg</a> <a href="/input_variables/dev/#rectolden" target="_blank">rectolden</a> <a href="/input_variables/ffield/#red_dfield" target="_blank">red_dfield</a> <a href="/input_variables/ffield/#red_efield" target="_blank">red_efield</a> <a href="/input_variables/ffield/#red_efieldbar" target="_blank">red_efieldbar</a> <a href="/input_variables/rlx/#restartxf" target="_blank">restartxf</a> <a href="/input_variables/dfpt/#rf2_dkdk" target="_blank">rf2_dkdk</a> <a href="/input_variables/dfpt/#rfasr" target="_blank">rfasr</a> <a href="/input_variables/dfpt/#rfatpol" target="_blank">rfatpol</a> <a href="/input_variables/dfpt/#rfddk" target="_blank">rfddk</a> <a href="/input_variables/dfpt/#rfdir" target="_blank">rfdir</a> <a href="/input_variables/dfpt/#rfelfd" target="_blank">rfelfd</a> <a href="/input_variables/dfpt/#rfmagn" target="_blank">rfmagn</a> <a href="/input_variables/dfpt/#rfmeth" target="_blank">rfmeth</a> <a href="/input_variables/dfpt/#rfphon" target="_blank">rfphon</a> <a href="/input_variables/dfpt/#rfstrs" target="_blank">rfstrs</a> <a href="/input_variables/dfpt/#rfuser" target="_blank">rfuser</a> <a href="/input_variables/gw/#rhoqpmix" target="_blank">rhoqpmix</a> <a href="/input_variables/basic/#rprim" target="_blank">rprim</a> <a href="/input_variables/basic/#rprimd" target="_blank">rprimd</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-s">
+<a href="/input_variables/basic/#scalecart" target="_blank">scalecart</a> <a href="/input_variables/gstate/#scphon_supercell" target="_blank">scphon_supercell</a> <a href="/input_variables/gstate/#scphon_temp" target="_blank">scphon_temp</a> <a href="/input_variables/basic/#shiftk" target="_blank">shiftk</a> <a href="/input_variables/gstate/#shiftq" target="_blank">shiftq</a> <a href="/input_variables/rlx/#signperm" target="_blank">signperm</a> <a href="/input_variables/gstate/#slabwsrad" target="_blank">slabwsrad</a> <a href="/input_variables/gstate/#slabzbeg" target="_blank">slabzbeg</a> <a href="/input_variables/gstate/#slabzend" target="_blank">slabzend</a> <a href="/input_variables/dfpt/#smdelta" target="_blank">smdelta</a> <a href="/input_variables/gstate/#so_psp" target="_blank">so_psp</a> <a href="/input_variables/gw/#spbroad" target="_blank">spbroad</a> <a href="/input_variables/geo/#spgaxor" target="_blank">spgaxor</a> <a href="/input_variables/geo/#spgorig" target="_blank">spgorig</a> <a href="/input_variables/geo/#spgroup" target="_blank">spgroup</a> <a href="/input_variables/geo/#spgroupma" target="_blank">spgroupma</a> <a href="/input_variables/gstate/#spinat" target="_blank">spinat</a> <a href="/input_variables/ffield/#spinmagntarget" target="_blank">spinmagntarget</a> <a href="/input_variables/gw/#spmeth" target="_blank">spmeth</a> <a href="/input_variables/paw/#spnorbscl" target="_blank">spnorbscl</a> <a href="/input_variables/gstate/#stmbias" target="_blank">stmbias</a> <a href="/input_variables/rlx/#strfact" target="_blank">strfact</a> <a href="/input_variables/rlx/#string_algo" target="_blank">string_algo</a> <a href="/input_variables/rlx/#strprecon" target="_blank">strprecon</a> <a href="/input_variables/rlx/#strtarget" target="_blank">strtarget</a> <a href="/input_variables/gstate/#symafm" target="_blank">symafm</a> <a href="/input_variables/gw/#symchi" target="_blank">symchi</a> <a href="/input_variables/eph/#symdynmat" target="_blank">symdynmat</a> <a href="/input_variables/dev/#symmorphi" target="_blank">symmorphi</a> <a href="/input_variables/basic/#symrel" target="_blank">symrel</a> <a href="/input_variables/gw/#symsigma" target="_blank">symsigma</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-t">
+<a href="/input_variables/dfpt/#td_maxene" target="_blank">td_maxene</a> <a href="/input_variables/dfpt/#td_mexcit" target="_blank">td_mexcit</a> <a href="/input_variables/dev/#tfkinfunc" target="_blank">tfkinfunc</a> <a href="/input_variables/dev/#tfw_toldfe" target="_blank">tfw_toldfe</a> <a href="/input_variables/gstate/#timopt" target="_blank">timopt</a> <a href="/input_variables/gstate/#tl_nprccg" target="_blank">tl_nprccg</a> <a href="/input_variables/gstate/#tl_radius" target="_blank">tl_radius</a> <a href="/input_variables/basic/#tnons" target="_blank">tnons</a> <a href="/input_variables/basic/#toldfe" target="_blank">toldfe</a> <a href="/input_variables/basic/#toldff" target="_blank">toldff</a> <a href="/input_variables/rlx/#tolimg" target="_blank">tolimg</a> <a href="/input_variables/rlx/#tolmxde" target="_blank">tolmxde</a> <a href="/input_variables/rlx/#tolmxf" target="_blank">tolmxf</a> <a href="/input_variables/dev/#tolrde" target="_blank">tolrde</a> <a href="/input_variables/basic/#tolrff" target="_blank">tolrff</a> <a href="/input_variables/geo/#tolsym" target="_blank">tolsym</a> <a href="/input_variables/basic/#tolvrs" target="_blank">tolvrs</a> <a href="/input_variables/basic/#tolwfr" target="_blank">tolwfr</a> <a href="/input_variables/gstate/#tphysel" target="_blank">tphysel</a> <a href="/input_variables/gstate/#tsmear" target="_blank">tsmear</a> <a href="/input_variables/basic/#typat" target="_blank">typat</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-u">
+<a href="/input_variables/gw/#ucrpa" target="_blank">ucrpa</a> <a href="/input_variables/gw/#ucrpa_bands" target="_blank">ucrpa_bands</a> <a href="/input_variables/gw/#ucrpa_window" target="_blank">ucrpa_window</a> <a href="/input_variables/basic/#udtset" target="_blank">udtset</a> <a href="/input_variables/paw/#upawu" target="_blank">upawu</a> <a href="/input_variables/dev/#use_gemm_nonlop" target="_blank">use_gemm_nonlop</a> <a href="/input_variables/paral/#use_gpu_cuda" target="_blank">use_gpu_cuda</a> <a href="/input_variables/dev/#use_nonscf_gkk" target="_blank">use_nonscf_gkk</a> <a href="/input_variables/paral/#use_slk" target="_blank">use_slk</a> <a href="/input_variables/paw/#usedmatpu" target="_blank">usedmatpu</a> <a href="/input_variables/dev/#usedmft" target="_blank">usedmft</a> <a href="/input_variables/paw/#useexexch" target="_blank">useexexch</a> <a href="/input_variables/internal/#usefock" target="_blank">usefock</a> <a href="/input_variables/gstate/#usekden" target="_blank">usekden</a> <a href="/input_variables/internal/#usepaw" target="_blank">usepaw</a> <a href="/input_variables/paw/#usepawu" target="_blank">usepawu</a> <a href="/input_variables/paw/#usepotzero" target="_blank">usepotzero</a> <a href="/input_variables/internal/#userec" target="_blank">userec</a> <a href="/input_variables/dev/#useria" target="_blank">useria</a> <a href="/input_variables/dev/#userib" target="_blank">userib</a> <a href="/input_variables/dev/#useric" target="_blank">useric</a> <a href="/input_variables/dev/#userid" target="_blank">userid</a> <a href="/input_variables/dev/#userie" target="_blank">userie</a> <a href="/input_variables/dev/#userra" target="_blank">userra</a> <a href="/input_variables/dev/#userrb" target="_blank">userrb</a> <a href="/input_variables/dev/#userrc" target="_blank">userrc</a> <a href="/input_variables/dev/#userrd" target="_blank">userrd</a> <a href="/input_variables/dev/#userre" target="_blank">userre</a> <a href="/input_variables/basic/#usewvl" target="_blank">usewvl</a> <a href="/input_variables/paw/#usexcnhat" target="_blank">usexcnhat</a> <a href="/input_variables/dev/#useylm" target="_blank">useylm</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-v">
+<a href="/input_variables/geo/#vaclst" target="_blank">vaclst</a> <a href="/input_variables/geo/#vacnum" target="_blank">vacnum</a> <a href="/input_variables/gstate/#vacuum" target="_blank">vacuum</a> <a href="/input_variables/gstate/#vacwidth" target="_blank">vacwidth</a> <a href="/input_variables/gw/#vcutgeo" target="_blank">vcutgeo</a> <a href="/input_variables/vdw/#vdw_df_acutmin" target="_blank">vdw_df_acutmin</a> <a href="/input_variables/vdw/#vdw_df_aratio" target="_blank">vdw_df_aratio</a> <a href="/input_variables/vdw/#vdw_df_damax" target="_blank">vdw_df_damax</a> <a href="/input_variables/vdw/#vdw_df_damin" target="_blank">vdw_df_damin</a> <a href="/input_variables/vdw/#vdw_df_dcut" target="_blank">vdw_df_dcut</a> <a href="/input_variables/vdw/#vdw_df_dratio" target="_blank">vdw_df_dratio</a> <a href="/input_variables/vdw/#vdw_df_dsoft" target="_blank">vdw_df_dsoft</a> <a href="/input_variables/vdw/#vdw_df_gcut" target="_blank">vdw_df_gcut</a> <a href="/input_variables/vdw/#vdw_df_ndpts" target="_blank">vdw_df_ndpts</a> <a href="/input_variables/vdw/#vdw_df_ngpts" target="_blank">vdw_df_ngpts</a> <a href="/input_variables/vdw/#vdw_df_nqpts" target="_blank">vdw_df_nqpts</a> <a href="/input_variables/vdw/#vdw_df_nrpts" target="_blank">vdw_df_nrpts</a> <a href="/input_variables/vdw/#vdw_df_nsmooth" target="_blank">vdw_df_nsmooth</a> <a href="/input_variables/vdw/#vdw_df_phisoft" target="_blank">vdw_df_phisoft</a> <a href="/input_variables/vdw/#vdw_df_qcut" target="_blank">vdw_df_qcut</a> <a href="/input_variables/vdw/#vdw_df_qratio" target="_blank">vdw_df_qratio</a> <a href="/input_variables/vdw/#vdw_df_rcut" target="_blank">vdw_df_rcut</a> <a href="/input_variables/vdw/#vdw_df_rsoft" target="_blank">vdw_df_rsoft</a> <a href="/input_variables/vdw/#vdw_df_threshold" target="_blank">vdw_df_threshold</a> <a href="/input_variables/vdw/#vdw_df_tolerance" target="_blank">vdw_df_tolerance</a> <a href="/input_variables/vdw/#vdw_df_tweaks" target="_blank">vdw_df_tweaks</a> <a href="/input_variables/vdw/#vdw_df_zab" target="_blank">vdw_df_zab</a> <a href="/input_variables/vdw/#vdw_nfrag" target="_blank">vdw_nfrag</a> <a href="/input_variables/vdw/#vdw_supercell" target="_blank">vdw_supercell</a> <a href="/input_variables/vdw/#vdw_tol" target="_blank">vdw_tol</a> <a href="/input_variables/vdw/#vdw_tol_3bt" target="_blank">vdw_tol_3bt</a> <a href="/input_variables/vdw/#vdw_typfrag" target="_blank">vdw_typfrag</a> <a href="/input_variables/vdw/#vdw_xc" target="_blank">vdw_xc</a> <a href="/input_variables/rlx/#vel" target="_blank">vel</a> <a href="/input_variables/rlx/#vel_cell" target="_blank">vel_cell</a> <a href="/input_variables/rlx/#vis" target="_blank">vis</a> <a href="/input_variables/ffield/#vprtrb" target="_blank">vprtrb</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-w">
+<a href="/input_variables/w90/#w90iniprj" target="_blank">w90iniprj</a> <a href="/input_variables/w90/#w90prtunk" target="_blank">w90prtunk</a> <a href="/input_variables/dev/#wfoptalg" target="_blank">wfoptalg</a> <a href="/input_variables/rlx/#wtatcon" target="_blank">wtatcon</a> <a href="/input_variables/basic/#wtk" target="_blank">wtk</a> <a href="/input_variables/gstate/#wtq" target="_blank">wtq</a> <a href="/input_variables/gstate/#wvl_bigdft_comp" target="_blank">wvl_bigdft_comp</a> <a href="/input_variables/gstate/#wvl_crmult" target="_blank">wvl_crmult</a> <a href="/input_variables/gstate/#wvl_frmult" target="_blank">wvl_frmult</a> <a href="/input_variables/basic/#wvl_hgrid" target="_blank">wvl_hgrid</a> <a href="/input_variables/gstate/#wvl_ngauss" target="_blank">wvl_ngauss</a> <a href="/input_variables/gstate/#wvl_nprccg" target="_blank">wvl_nprccg</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-x">
+<a href="/input_variables/basic/#xangst" target="_blank">xangst</a> <a href="/input_variables/dev/#xc_denpos" target="_blank">xc_denpos</a> <a href="/input_variables/dev/#xc_tb09_c" target="_blank">xc_tb09_c</a> <a href="/input_variables/basic/#xcart" target="_blank">xcart</a> <a href="/input_variables/internal/#xclevel" target="_blank">xclevel</a> <a href="/input_variables/basic/#xred" target="_blank">xred</a> <a href="/input_variables/gstate/#xredsph_extra" target="_blank">xredsph_extra</a> <a href="/input_variables/geo/#xyzfile" target="_blank">xyzfile</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="abinit-tabs-z">
+<a href="/input_variables/gw/#zcut" target="_blank">zcut</a> <a href="/input_variables/ffield/#zeemanfield" target="_blank">zeemanfield</a> <a href="/input_variables/internal/#ziontypat" target="_blank">ziontypat</a> <a href="/input_variables/basic/#znucl" target="_blank">znucl</a>
+</div>
+</div> </div>
+
+<hr />
+<h2 id="aim-variables"><strong>aim</strong> variables<a class="headerlink" href="#aim-variables" title="Permanent link">&para;</a></h2>
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#aim-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#aim-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#aim-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#aim-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#aim-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#aim-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#aim-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#aim-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#aim-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#aim-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#aim-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#aim-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#aim-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#aim-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="aim-tabs-a">
+<a href="/input_variables/aim/#atom" target="_blank">atom</a> <a href="/input_variables/aim/#atrad" target="_blank">atrad</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-c">
+<a href="/input_variables/aim/#coff1" target="_blank">coff1</a> <a href="/input_variables/aim/#coff2" target="_blank">coff2</a> <a href="/input_variables/aim/#crit" target="_blank">crit</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-d">
+<a href="/input_variables/aim/#denout" target="_blank">denout</a> <a href="/input_variables/aim/#dltyp" target="_blank">dltyp</a> <a href="/input_variables/aim/#dpclim" target="_blank">dpclim</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-f">
+<a href="/input_variables/aim/#foldep" target="_blank">foldep</a> <a href="/input_variables/aim/#follow" target="_blank">follow</a> <a href="/input_variables/aim/#folstp" target="_blank">folstp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-g">
+<a href="/input_variables/aim/#gpsurf" target="_blank">gpsurf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-i">
+<a href="/input_variables/aim/#inpt" target="_blank">inpt</a> <a href="/input_variables/aim/#irho" target="_blank">irho</a> <a href="/input_variables/aim/#ivol" target="_blank">ivol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-l">
+<a href="/input_variables/aim/#lapout" target="_blank">lapout</a> <a href="/input_variables/aim/#lgrad" target="_blank">lgrad</a> <a href="/input_variables/aim/#lgrad2" target="_blank">lgrad2</a> <a href="/input_variables/aim/#lstep" target="_blank">lstep</a> <a href="/input_variables/aim/#lstep2" target="_blank">lstep2</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-m">
+<a href="/input_variables/aim/#maxatd" target="_blank">maxatd</a> <a href="/input_variables/aim/#maxcpd" target="_blank">maxcpd</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-n">
+<a href="/input_variables/aim/#ngrid" target="_blank">ngrid</a> <a href="/input_variables/aim/#nphi" target="_blank">nphi</a> <a href="/input_variables/aim/#nsa" target="_blank">nsa</a> <a href="/input_variables/aim/#nsb" target="_blank">nsb</a> <a href="/input_variables/aim/#nsc" target="_blank">nsc</a> <a href="/input_variables/aim/#ntheta" target="_blank">ntheta</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-p">
+<a href="/input_variables/aim/#phimax" target="_blank">phimax</a> <a href="/input_variables/aim/#phimin" target="_blank">phimin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-r">
+<a href="/input_variables/aim/#radstp" target="_blank">radstp</a> <a href="/input_variables/aim/#ratmin" target="_blank">ratmin</a> <a href="/input_variables/aim/#rsurdir" target="_blank">rsurdir</a> <a href="/input_variables/aim/#rsurf" target="_blank">rsurf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-s">
+<a href="/input_variables/aim/#scal" target="_blank">scal</a> <a href="/input_variables/aim/#surf" target="_blank">surf</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-t">
+<a href="/input_variables/aim/#thetamax" target="_blank">thetamax</a> <a href="/input_variables/aim/#thetamin" target="_blank">thetamin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="aim-tabs-v">
+<a href="/input_variables/aim/#vpts" target="_blank">vpts</a>
+</div>
+</div> </div>
+
+<hr />
+<h2 id="anaddb-variables"><strong>anaddb</strong> variables<a class="headerlink" href="#anaddb-variables" title="Permanent link">&para;</a></h2>
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#anaddb-tabs-a" role="tab"                         data-toggle="tab">a</a></li>
+<li role="presentation"><a href="#anaddb-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#anaddb-tabs-c" role="tab"                         data-toggle="tab">c</a></li>
+<li role="presentation"><a href="#anaddb-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#anaddb-tabs-e" role="tab"                         data-toggle="tab">e</a></li>
+<li role="presentation"><a href="#anaddb-tabs-f" role="tab"                         data-toggle="tab">f</a></li>
+<li role="presentation"><a href="#anaddb-tabs-g" role="tab"                         data-toggle="tab">g</a></li>
+<li role="presentation"><a href="#anaddb-tabs-i" role="tab"                         data-toggle="tab">i</a></li>
+<li role="presentation"><a href="#anaddb-tabs-k" role="tab"                         data-toggle="tab">k</a></li>
+<li role="presentation"><a href="#anaddb-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#anaddb-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#anaddb-tabs-o" role="tab"                         data-toggle="tab">o</a></li>
+<li role="presentation"><a href="#anaddb-tabs-p" role="tab"                         data-toggle="tab">p</a></li>
+<li role="presentation"><a href="#anaddb-tabs-q" role="tab"                         data-toggle="tab">q</a></li>
+<li role="presentation"><a href="#anaddb-tabs-r" role="tab"                         data-toggle="tab">r</a></li>
+<li role="presentation"><a href="#anaddb-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#anaddb-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#anaddb-tabs-u" role="tab"                         data-toggle="tab">u</a></li>
+<li role="presentation"><a href="#anaddb-tabs-v" role="tab"                         data-toggle="tab">v</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="anaddb-tabs-a">
+<a href="/input_variables/anaddb/#a2fsmear" target="_blank">a2fsmear</a> <a href="/input_variables/anaddb/#alphon" target="_blank">alphon</a> <a href="/input_variables/anaddb/#asr" target="_blank">asr</a> <a href="/input_variables/anaddb/#atftol" target="_blank">atftol</a> <a href="/input_variables/anaddb/#atifc" target="_blank">atifc</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-b">
+<a href="/input_variables/anaddb/#band_gap" target="_blank">band_gap</a> <a href="/input_variables/anaddb/#brav" target="_blank">brav</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-c">
+<a href="/input_variables/anaddb/#chneut" target="_blank">chneut</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-d">
+<a href="/input_variables/anaddb/#dieflag" target="_blank">dieflag</a> <a href="/input_variables/anaddb/#dipdip" target="_blank">dipdip</a> <a href="/input_variables/anaddb/#dosdeltae" target="_blank">dosdeltae</a> <a href="/input_variables/anaddb/#dossmear" target="_blank">dossmear</a> <a href="/input_variables/anaddb/#dossum" target="_blank">dossum</a> <a href="/input_variables/anaddb/#dostol" target="_blank">dostol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-e">
+<a href="/input_variables/anaddb/#eivec" target="_blank">eivec</a> <a href="/input_variables/anaddb/#elaflag" target="_blank">elaflag</a> <a href="/input_variables/anaddb/#elph_fermie" target="_blank">elph_fermie</a> <a href="/input_variables/anaddb/#elphflag" target="_blank">elphflag</a> <a href="/input_variables/anaddb/#elphsmear" target="_blank">elphsmear</a> <a href="/input_variables/anaddb/#enunit" target="_blank">enunit</a> <a href="/input_variables/anaddb/#ep_b_max" target="_blank">ep_b_max</a> <a href="/input_variables/anaddb/#ep_b_min" target="_blank">ep_b_min</a> <a href="/input_variables/anaddb/#ep_extrael" target="_blank">ep_extrael</a> <a href="/input_variables/anaddb/#ep_int_gkk" target="_blank">ep_int_gkk</a> <a href="/input_variables/anaddb/#ep_keepbands" target="_blank">ep_keepbands</a> <a href="/input_variables/anaddb/#ep_nqpt" target="_blank">ep_nqpt</a> <a href="/input_variables/anaddb/#ep_nspline" target="_blank">ep_nspline</a> <a href="/input_variables/anaddb/#ep_prt_yambo" target="_blank">ep_prt_yambo</a> <a href="/input_variables/anaddb/#ep_qptlist" target="_blank">ep_qptlist</a> <a href="/input_variables/anaddb/#ep_scalprod" target="_blank">ep_scalprod</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-f">
+<a href="/input_variables/anaddb/#freeze_displ" target="_blank">freeze_displ</a> <a href="/input_variables/anaddb/#frmax" target="_blank">frmax</a> <a href="/input_variables/anaddb/#frmin" target="_blank">frmin</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-g">
+<a href="/input_variables/anaddb/#gkqwrite" target="_blank">gkqwrite</a> <a href="/input_variables/anaddb/#gruns_ddbs" target="_blank">gruns_ddbs</a> <a href="/input_variables/anaddb/#gruns_nddbs" target="_blank">gruns_nddbs</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-i">
+<a href="/input_variables/anaddb/#iatfix" target="_blank">iatfix</a> <a href="/input_variables/anaddb/#iatprj_bs" target="_blank">iatprj_bs</a> <a href="/input_variables/anaddb/#ifcana" target="_blank">ifcana</a> <a href="/input_variables/anaddb/#ifcflag" target="_blank">ifcflag</a> <a href="/input_variables/anaddb/#ifcout" target="_blank">ifcout</a> <a href="/input_variables/anaddb/#ifltransport" target="_blank">ifltransport</a> <a href="/input_variables/anaddb/#instrflag" target="_blank">instrflag</a> <a href="/input_variables/anaddb/#istrfix" target="_blank">istrfix</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-k">
+<a href="/input_variables/anaddb/#kptrlatt" target="_blank">kptrlatt</a> <a href="/input_variables/anaddb/#kptrlatt_fine" target="_blank">kptrlatt_fine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-m">
+<a href="/input_variables/anaddb/#mustar" target="_blank">mustar</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-n">
+<a href="/input_variables/anaddb/#natfix" target="_blank">natfix</a> <a href="/input_variables/anaddb/#natifc" target="_blank">natifc</a> <a href="/input_variables/anaddb/#natprj_bs" target="_blank">natprj_bs</a> <a href="/input_variables/anaddb/#nchan" target="_blank">nchan</a> <a href="/input_variables/anaddb/#ndivsm" target="_blank">ndivsm</a> <a href="/input_variables/anaddb/#nfreq" target="_blank">nfreq</a> <a href="/input_variables/anaddb/#ng2qpt" target="_blank">ng2qpt</a> <a href="/input_variables/anaddb/#ngqpt" target="_blank">ngqpt</a> <a href="/input_variables/anaddb/#ngrids" target="_blank">ngrids</a> <a href="/input_variables/anaddb/#nlflag" target="_blank">nlflag</a> <a href="/input_variables/anaddb/#nph1l" target="_blank">nph1l</a> <a href="/input_variables/anaddb/#nph2l" target="_blank">nph2l</a> <a href="/input_variables/anaddb/#nqpath" target="_blank">nqpath</a> <a href="/input_variables/anaddb/#nqshft" target="_blank">nqshft</a> <a href="/input_variables/anaddb/#nsphere" target="_blank">nsphere</a> <a href="/input_variables/anaddb/#nstrfix" target="_blank">nstrfix</a> <a href="/input_variables/anaddb/#ntemper" target="_blank">ntemper</a> <a href="/input_variables/anaddb/#nwchan" target="_blank">nwchan</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-o">
+<a href="/input_variables/anaddb/#outboltztrap" target="_blank">outboltztrap</a> <a href="/input_variables/anaddb/#outscphon" target="_blank">outscphon</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-p">
+<a href="/input_variables/anaddb/#piezoflag" target="_blank">piezoflag</a> <a href="/input_variables/anaddb/#polflag" target="_blank">polflag</a> <a href="/input_variables/anaddb/#prt_ifc" target="_blank">prt_ifc</a> <a href="/input_variables/anaddb/#prtbltztrp" target="_blank">prtbltztrp</a> <a href="/input_variables/anaddb/#prtddb" target="_blank">prtddb</a> <a href="/input_variables/anaddb/#prtdos" target="_blank">prtdos</a> <a href="/input_variables/anaddb/#prtfsurf" target="_blank">prtfsurf</a> <a href="/input_variables/anaddb/#prtmbm" target="_blank">prtmbm</a> <a href="/input_variables/anaddb/#prtnest" target="_blank">prtnest</a> <a href="/input_variables/anaddb/#prtphbands" target="_blank">prtphbands</a> <a href="/input_variables/anaddb/#prtsrlr" target="_blank">prtsrlr</a> <a href="/input_variables/anaddb/#prtvol" target="_blank">prtvol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-q">
+<a href="/input_variables/anaddb/#q1shft" target="_blank">q1shft</a> <a href="/input_variables/anaddb/#q2shft" target="_blank">q2shft</a> <a href="/input_variables/anaddb/#qgrid_type" target="_blank">qgrid_type</a> <a href="/input_variables/anaddb/#qpath" target="_blank">qpath</a> <a href="/input_variables/anaddb/#qph1l" target="_blank">qph1l</a> <a href="/input_variables/anaddb/#qph2l" target="_blank">qph2l</a> <a href="/input_variables/anaddb/#qrefine" target="_blank">qrefine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-r">
+<a href="/input_variables/anaddb/#ramansr" target="_blank">ramansr</a> <a href="/input_variables/anaddb/#relaxat" target="_blank">relaxat</a> <a href="/input_variables/anaddb/#relaxstr" target="_blank">relaxstr</a> <a href="/input_variables/anaddb/#rfmeth" target="_blank">rfmeth</a> <a href="/input_variables/anaddb/#rifcsph" target="_blank">rifcsph</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-s">
+<a href="/input_variables/anaddb/#selectz" target="_blank">selectz</a> <a href="/input_variables/anaddb/#symdynmat" target="_blank">symdynmat</a> <a href="/input_variables/anaddb/#symgkq" target="_blank">symgkq</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-t">
+<a href="/input_variables/anaddb/#targetpol" target="_blank">targetpol</a> <a href="/input_variables/anaddb/#telphint" target="_blank">telphint</a> <a href="/input_variables/anaddb/#temperinc" target="_blank">temperinc</a> <a href="/input_variables/anaddb/#tempermin" target="_blank">tempermin</a> <a href="/input_variables/anaddb/#thmflag" target="_blank">thmflag</a> <a href="/input_variables/anaddb/#thmtol" target="_blank">thmtol</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-u">
+<a href="/input_variables/anaddb/#use_k_fine" target="_blank">use_k_fine</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="anaddb-tabs-v">
+<a href="/input_variables/anaddb/#vs_qrad_tolkms" target="_blank">vs_qrad_tolkms</a>
+</div>
+</div> </div>
+
+<hr />
+<h2 id="optic-variables"><strong>optic</strong> variables<a class="headerlink" href="#optic-variables" title="Permanent link">&para;</a></h2>
+<div>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" role="tablist">
+<li role="presentation" class="active"><a href="#optic-tabs-b" role="tab"                         data-toggle="tab">b</a></li>
+<li role="presentation"><a href="#optic-tabs-d" role="tab"                         data-toggle="tab">d</a></li>
+<li role="presentation"><a href="#optic-tabs-l" role="tab"                         data-toggle="tab">l</a></li>
+<li role="presentation"><a href="#optic-tabs-m" role="tab"                         data-toggle="tab">m</a></li>
+<li role="presentation"><a href="#optic-tabs-n" role="tab"                         data-toggle="tab">n</a></li>
+<li role="presentation"><a href="#optic-tabs-s" role="tab"                         data-toggle="tab">s</a></li>
+<li role="presentation"><a href="#optic-tabs-t" role="tab"                         data-toggle="tab">t</a></li>
+<li role="presentation"><a href="#optic-tabs-w" role="tab"                         data-toggle="tab">w</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="optic-tabs-b">
+<a href="/input_variables/optic/#broadening" target="_blank">broadening</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-d">
+<a href="/input_variables/optic/#ddkfile" target="_blank">ddkfile</a> <a href="/input_variables/optic/#domega" target="_blank">domega</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-l">
+<a href="/input_variables/optic/#lin_comp" target="_blank">lin_comp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-m">
+<a href="/input_variables/optic/#maxomega" target="_blank">maxomega</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-n">
+<a href="/input_variables/optic/#nonlin_comp" target="_blank">nonlin_comp</a> <a href="/input_variables/optic/#num_lin_comp" target="_blank">num_lin_comp</a> <a href="/input_variables/optic/#num_nonlin_comp" target="_blank">num_nonlin_comp</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-s">
+<a href="/input_variables/optic/#scissor" target="_blank">scissor</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-t">
+<a href="/input_variables/optic/#tolerance" target="_blank">tolerance</a>
+</div>
+<div role="tabpanel" class="tab-pane" id="optic-tabs-w">
+<a href="/input_variables/optic/#wfkfile" target="_blank">wfkfile</a>
+</div>
+</div> </div>
+
+<hr />
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../topics/xc/" title="Xc" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Xc
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="basic/" title="Basic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Basic
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-6940329b9f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      
+        <script src="../extra_javascript/abidocs.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

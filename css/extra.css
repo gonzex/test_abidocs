@@ -1,3 +1,42 @@
+/* Links 
+a.citation-link {
+   font-style: italic;
+   color: red;
+}
+*/
+
+/*
+body { 
+    color: #333;
+}
+
+a { 
+    color: #893e3e;  
+    text-decoration: none;
+}
+
+a:hover { 
+    color: #F18F34;
+}
+
+a:visited { 
+    color: #a14409;
+}
+
+a {
+    font-weight: 600;
+    color:  #e67e22 ;
+    text-decoration: none;
+}
+
+a:hover {
+ color: #E33A37;
+ font-weight: 600;
+ text-decoration: none;
+}
+*/
+
+
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */
 
@@ -64,25 +103,60 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
 } 
 */
 
-/* Popover Header */
+/* Popover Header 
 .popover-title {
-    /* background-color: #73AD21;
-    color: #FFFFFF; 
-    font-size: 28px;
-    */
+    //background-color: #73AD21;
+    //color: #FFFFFF; 
+    //font-size: 28px;
+    font-size: 1vw;
     text-align:center;
 }
+*/
 
 /* Popover Body 
 .popover-content {
-    background-color: coral;
-    color: #FFFFFF;
-    padding: 25px;
+    font-size: 1vw;
+    //background-color: coral;
+    //color: #FFFFFF;
+    //padding: 25px;
 }
 */
 
-/* Popover Arrow
-.arrow {
-    border-right-color: red !important;
-} 
-*/
+
+/* https://facelessuser.github.io/pymdown-extensions/extensions/details/ */
+details {
+  display: block;
+}
+
+details[open] > summary::before {
+  content: "\25BC";
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details summary::before {
+  content: "\25B6";
+  padding-right: 0.5em;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Attach the "no-details" class to details tags
+   in browsers that do not support them to get
+   open/show functionality. */
+details.no-details:not([open]) > * {
+  display: none;
+}
+
+details.no-details:not([open]) summary {
+  display: block;
+}

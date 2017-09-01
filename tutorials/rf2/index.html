@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1765,6 +1985,138 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      PAW
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1779,13 +2131,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" checked>
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-5">
       DFPT
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1814,6 +2166,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         RF2
@@ -1827,48 +2181,64 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-generation-of-the-derivative-databases" title="1. Generation of the derivative databases" class="md-nav__link">
-    1. Generation of the derivative databases
+  <a href="#phonon-band-structures-thermodynamical-properties" title="Phonon band structures, thermodynamical properties." class="md-nav__link">
+    Phonon band structures, thermodynamical properties.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="2. Manipulation of the derivative databases (the MRGDDB utility)" class="md-nav__link">
-    2. Manipulation of the derivative databases (the MRGDDB utility)
+  <a href="#0-to-be-filled" title="0 To be filled" class="md-nav__link">
+    0 To be filled
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-analysis-of-the-derivative-databases-the-anaddb-utility" title="3. Analysis of the derivative databases (the ANADDB utility)" class="md-nav__link">
-    3. Analysis of the derivative databases (the ANADDB utility)
+  <a href="#1-generation-of-a-derivative-database" title="1 Generation of a derivative database" class="md-nav__link">
+    1 Generation of a derivative database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-the-computation-of-interatomic-force-constants" title="4. The computation of interatomic force constants" class="md-nav__link">
-    4. The computation of interatomic force constants
+  <a href="#2-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="2 Manipulation of the derivative databases (the MRGDDB utility)" class="md-nav__link">
+    2 Manipulation of the derivative databases (the MRGDDB utility)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-the-efficient-computation-of-phonon-band-structures" title="5. The efficient computation of phonon band structures" class="md-nav__link">
-    5. The efficient computation of phonon band structures
+  <a href="#3-analysis-of-the-derivative-databases-the-anaddb-utility" title="3 Analysis of the derivative databases (the ANADDB utility)" class="md-nav__link">
+    3 Analysis of the derivative databases (the ANADDB utility)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-thermodynamical-properties" title="6. Thermodynamical properties." class="md-nav__link">
-    6. Thermodynamical properties.
+  <a href="#4-the-computation-of-interatomic-force-constants" title="4 The computation of interatomic force constants" class="md-nav__link">
+    4 The computation of interatomic force constants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-efficient-computation-of-phonon-band-structures" title="5 The efficient computation of phonon band structures" class="md-nav__link">
+    5 The efficient computation of phonon band structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-thermodynamical-properties" title="6 Thermodynamical properties" class="md-nav__link">
+    6 Thermodynamical properties
   </a>
   
 </li>
@@ -1900,8 +2270,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1930,13 +2312,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1990,13 +2420,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2020,14 +2450,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2061,8 +2647,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2085,7 +2683,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2121,8 +2731,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2206,48 +2852,64 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-generation-of-the-derivative-databases" title="1. Generation of the derivative databases" class="md-nav__link">
-    1. Generation of the derivative databases
+  <a href="#phonon-band-structures-thermodynamical-properties" title="Phonon band structures, thermodynamical properties." class="md-nav__link">
+    Phonon band structures, thermodynamical properties.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="2. Manipulation of the derivative databases (the MRGDDB utility)" class="md-nav__link">
-    2. Manipulation of the derivative databases (the MRGDDB utility)
+  <a href="#0-to-be-filled" title="0 To be filled" class="md-nav__link">
+    0 To be filled
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-analysis-of-the-derivative-databases-the-anaddb-utility" title="3. Analysis of the derivative databases (the ANADDB utility)" class="md-nav__link">
-    3. Analysis of the derivative databases (the ANADDB utility)
+  <a href="#1-generation-of-a-derivative-database" title="1 Generation of a derivative database" class="md-nav__link">
+    1 Generation of a derivative database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-the-computation-of-interatomic-force-constants" title="4. The computation of interatomic force constants" class="md-nav__link">
-    4. The computation of interatomic force constants
+  <a href="#2-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="2 Manipulation of the derivative databases (the MRGDDB utility)" class="md-nav__link">
+    2 Manipulation of the derivative databases (the MRGDDB utility)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-the-efficient-computation-of-phonon-band-structures" title="5. The efficient computation of phonon band structures" class="md-nav__link">
-    5. The efficient computation of phonon band structures
+  <a href="#3-analysis-of-the-derivative-databases-the-anaddb-utility" title="3 Analysis of the derivative databases (the ANADDB utility)" class="md-nav__link">
+    3 Analysis of the derivative databases (the ANADDB utility)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-thermodynamical-properties" title="6. Thermodynamical properties." class="md-nav__link">
-    6. Thermodynamical properties.
+  <a href="#4-the-computation-of-interatomic-force-constants" title="4 The computation of interatomic force constants" class="md-nav__link">
+    4 The computation of interatomic force constants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-efficient-computation-of-phonon-band-structures" title="5 The efficient computation of phonon band structures" class="md-nav__link">
+    5 The efficient computation of phonon band structures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-thermodynamical-properties" title="6 Thermodynamical properties" class="md-nav__link">
+    6 Thermodynamical properties
   </a>
   
 </li>
@@ -2266,22 +2928,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/rf2.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>RF2</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing how to get the following physical properties, for
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="second-lesson-on-dfpt">Second lesson on DFPT<a class="headerlink" href="#second-lesson-on-dfpt" title="Permanent link">&para;</a></h1>
+<h2 id="phonon-band-structures-thermodynamical-properties">Phonon band structures, thermodynamical properties.<a class="headerlink" href="#phonon-band-structures-thermodynamical-properties" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to get the following physical properties, for
 periodic solids :</p>
 <ul>
 <li>Interatomic forces constants </li>
 <li>Phonon band structures </li>
 <li>Thermodynamical properties </li>
 </ul>
+<p>The calculations will be based on density-functional perturbation theory
+(DFPT).</p>
 <p>This lesson should take about 1 hour.</p>
+<h2 id="0-to-be-filled">0 To be filled<a class="headerlink" href="#0-to-be-filled" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <ol>
@@ -2315,40 +2979,39 @@ periodic solids :</p>
 </li>
 </ul>
 <hr />
-<h3 id="146-generation-of-the-derivative-databases"><strong> 1. Generation of the derivative databases </strong><a class="headerlink" href="#146-generation-of-the-derivative-databases" title="Permanent link">&para;</a></h3>
+<h2 id="1-generation-of-a-derivative-database">1 Generation of a derivative database<a class="headerlink" href="#1-generation-of-a-derivative-database" title="Permanent link">&para;</a></h2>
 <p>_Before beginning, you might consider to work in a different subdirectory as
-for the other lessons. Why not create "Work_rf2" in
+for the other lessons. Why not create &ldquo;Work_rf2&rdquo; in
 ~abinit/tests/tutorespfn/Input ? _</p>
 <p>This tutorial starts by the generation of a database, that is quite time-
-consuming. We suggest you to start immediately this computation...<br />
+consuming. We suggest you to start immediately this computation&hellip;<br />
 Copy the files ~abinit/tests/tutorespfn/Input/trf2_1.files and
-~abinit/tests/tutorespfn/Input/trf2_1.in in "Work_rf2" .</p>
+~abinit/tests/tutorespfn/Input/trf2_1.in in &ldquo;Work_rf2&rdquo; .</p>
 <p>Issue now :</p>
 <ul>
 <li>_ abinit &lt; trf2_1.files &gt;&amp; log &amp;_</li>
 </ul>
-<p>It takes about 15 minutes to be completed on a PC 2.8 GHz ...</p>
+<p>It takes about 15 minutes to be completed on a PC 2.8 GHz &hellip;</p>
 <p>In order to do interatomic force constant calculations, and to compute
 associated phonon band structure and thermodynamical properties, you should
 first have some theoretical background.<br />
 Let us assume that you have read the litterature relative to the <a href="../lesson_rf1.html">first lesson
-on response functions</a>. You might find additional material,
-related to the present section, in the following references:  </p>
+on DFPT</a>. You might find additional material, related to the
+present section, in the following references:  </p>
 <p>X. Gonze and C. Lee, Phys. Rev. B55, 10355 (1997), especially section IX<br />
 C. Lee, X. Gonze, Phys. Rev. B 51, 8610 (1995)<br />
 S. Baroni, S. de Gironcoli, A. Dal Corso, P. Giannozzi, Rev. Mod. Phys. 73,
 515 (2001).</p>
-<p>If you haven't read parts of these references, you should take the time to get
+<p>If you haven&rsquo;t read parts of these references, you should take the time to get
 and read them now.</p>
 <p>In short, the idea is that, in order to compute properties for which the
 phonon frequencies are needed in all the Brillouin zone, one can use an
 elaborate Fourier interpolation, so that only few dynamical matrices need to
 be computed directly. Others will be computed by interpolation.</p>
 <p>Let us have a look at the input file trf2_1.in . The calculation is done for
-AlAs, the same crystalline material as for the previous lesson on response
-functions. Many input parameters are also quite similar, both at the level of
-the description of the unit cell, as for the choice of cut-off energy and k
-point grid.</p>
+AlAs, the same crystalline material as for the previous lesson on DFPT. Many
+input parameters are also quite similar, both at the level of the description
+of the unit cell, as for the choice of cut-off energy and k point grid.</p>
 <p>Still, this input file is rather complex : in one single run, one produces the
 (Derivative Databases) DDBs needed for the rest of this tutorial. So, it
 starts with a ground-state calculation (dataset 1), followed by the
@@ -2368,16 +3031,16 @@ it is advised to take a q point mesh that is adjusted to the k point mesh used
 for the electronic structure : all q wavevectors should connect two k point
 wavevectors from this grid.</p>
 <p>Such a set of q wavevectors can be generated straightforwardly by running a GS
-calculation with <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a>=1, <a class="wikilink" href="../../input_variables/basic/#nshiftk">nshiftk</a>=1, <a class="wikilink" href="../../input_variables/basic/#shiftk">shiftk</a>=0 0 0 (to include
+calculation with <a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a>=1, <a class="wikilink codevar-link" href="../../input_variables/basic/#nshiftk">nshiftk</a>=1, <a class="wikilink codevar-link" href="../../input_variables/basic/#shiftk">shiftk</a>=0 0 0 (to include
 gamma) and taking the output kpt set file as this qpt set. One might set
-<a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>=1 and <a class="wikilink" href="../../input_variables/gstate/#nline">nline</a>=1, so only one iteration runs.<br />
+<a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>=1 and <a class="wikilink codevar-link" href="../../input_variables/gstate/#nline">nline</a>=1, so only one iteration runs.<br />
 The input file ~abinit/tests/tutorespfn/Input/trf2_2.in is precisely an input
 file that can be used to generate such a set of k points. Copy it in the
 present Work_rf2 directly, as well as the accompanying
 ~abinit/tests/tutorespfn/Input/trf2_2.files. Examine these files, then run
-this calculation (it is very rapid - it won't hurt the trf2_1 job). The
+this calculation (it is very rapid - it won&rsquo;t hurt the trf2_1 job). The
 following k point set is obtained :</p>
-<pre><code>       kpt    0.00000000E+00  0.00000000E+00  0.00000000E+00
+<div class="codehilite"><pre><span></span>       kpt    0.00000000E+00  0.00000000E+00  0.00000000E+00
               2.50000000E-01  0.00000000E+00  0.00000000E+00
               5.00000000E-01  0.00000000E+00  0.00000000E+00
               2.50000000E-01  2.50000000E-01  0.00000000E+00
@@ -2385,7 +3048,9 @@ following k point set is obtained :</p>
              -2.50000000E-01  2.50000000E-01  0.00000000E+00
               5.00000000E-01  5.00000000E-01  0.00000000E+00
              -2.50000000E-01  5.00000000E-01  2.50000000E-01
-</code></pre>
+</pre></div>
+
+
 <p>It is, as promised, the same as the q point set in the trf2_1.in file.</p>
 <p>Now, it might be worth to examine in some detail one of the Derivative
 Database that has been created by the trf2_1 run. We suppose that the file
@@ -2403,30 +3068,30 @@ the run is not finished.<br />
 In the latter case, instead of waiting for trf2_1 to be finished, we suggest
 you to pursue with section 3. You will use as DDB file the one that can be
 found in ~abinit/tests/tutorespfn/Refs, with the name trf2_3.ddb.out,
-<a class="wikilink" href="../../tests/tutorespfn/Refs/trf2_3.ddb.out">tests/tutorespfn/Refs/trf2_3.ddb.out</a>, instead of the one that would result
+<a class="wikilink test-link" href="../../tests/tutorespfn/Refs/trf2_3.ddb.out">tests/tutorespfn/Refs/trf2_3.ddb.out</a>, instead of the one that would result
 from the section 2. Copy this file to the present directory, then go to
 section section 3 of this tutorial. You might come back to section 2
 afterwards.</p>
-<hr />
-<h3 id="246-manipulation-of-the-derivative-databases-the-mrgddb-utility"><strong> 2. Manipulation of the derivative databases (the MRGDDB utility) </strong><a class="headerlink" href="#246-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="Permanent link">&para;</a></h3>
+<h2 id="2-manipulation-of-the-derivative-databases-the-mrgddb-utility">2 Manipulation of the derivative databases (the MRGDDB utility)<a class="headerlink" href="#2-manipulation-of-the-derivative-databases-the-mrgddb-utility" title="Permanent link">&para;</a></h2>
 <p>The use of the MRGDDB utility is described in its <a href="../../../users/generated_files/help_mrgddb.html">help
 file</a>. Please, read it carefully
 now.</p>
-<p>Use MRGDDB to create the merge DDB from the eight DDB's corresponding to
+<p>Use MRGDDB to create the merge DDB from the eight DDB&rsquo;s corresponding to
 datasets 3 to 10 of the trf2_1 job, containing the dynamical matrices for the
 8 q points, as well as the response to the electric field (dielectric tensor
-and Born effective charges). Including also the one from dataset 1 won't hurt
+and Born effective charges). Including also the one from dataset 1 won&rsquo;t hurt
 (it contains the forces and stresses), but is not needed for the computation
 of phonon band structure, interatomic force constants, and thermodynamical
 properties. Name the new DDB trf2_3.ddb.out .</p>
 <p>File ~abinit/tests/tutorespfn/Input/trf2_3.in is an example of input file for
 MRGDDB. You can copy it in the Work_rf2 directory, and run the merge as
 follows :</p>
-<pre><code>mrgddb &lt; trf2_3.in
-</code></pre>
+<div class="codehilite"><pre><span></span>mrgddb &lt; trf2_3.in
+</pre></div>
+
+
 <p>It takes less than one second on a typical PC.</p>
-<hr />
-<h3 id="346-analysis-of-the-derivative-databases-the-anaddb-utility"><strong> 3. Analysis of the derivative databases (the ANADDB utility) </strong><a class="headerlink" href="#346-analysis-of-the-derivative-databases-the-anaddb-utility" title="Permanent link">&para;</a></h3>
+<h2 id="3-analysis-of-the-derivative-databases-the-anaddb-utility">3 Analysis of the derivative databases (the ANADDB utility)<a class="headerlink" href="#3-analysis-of-the-derivative-databases-the-anaddb-utility" title="Permanent link">&para;</a></h2>
 <p>An introduction to the use of the ANADDB utility is described in its <a href="../../../users/generated_files/help_anaddb.html">help
 file</a>. Please, read it carefully
 now.</p>
@@ -2435,65 +3100,64 @@ a selected set of input variables, with also some input variables common to
 many of the different tasks. The list of tasks to be done in one run is
 governed by different flags. Here is the list of flags :</p>
 <ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#dieflag">dieflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#elaflag">elaflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#elphflag">elphflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ifcflag">ifcflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#instrflag">instrflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nlflag">nlflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#piezoflag">piezoflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#polflag">polflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#thmflag">thmflag</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dieflag">dieflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elaflag">elaflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphflag">elphflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcflag">ifcflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#instrflag">instrflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nlflag">nlflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#piezoflag">piezoflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#polflag">polflag</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#thmflag">thmflag</a> </li>
 </ul>
 <p>Please, take some time to read the description of each of these flags. Note
 that some of these flags might be required to allow to run another task.</p>
-<p>In this tutorial, we will focus on the flags
-<a href="../../../users/generated_files/help_anaddb.html#ifcflag">ifcflag</a> and
-<a href="../../../users/generated_files/help_anaddb.html#thmflag">thmflag</a></p>
-<hr />
-<h3 id="446-the-computation-of-interatomic-force-constants"><strong> 4. The computation of interatomic force constants </strong><a class="headerlink" href="#446-the-computation-of-interatomic-force-constants" title="Permanent link">&para;</a></h3>
+<p>In this tutorial, we will focus on the flags <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcflag">ifcflag</a> and
+<a class="wikilink codevar-link" href="../../input_variables/anaddb/#thmflag">thmflag</a>.</p>
+<h2 id="4-the-computation-of-interatomic-force-constants">4 The computation of interatomic force constants<a class="headerlink" href="#4-the-computation-of-interatomic-force-constants" title="Permanent link">&para;</a></h2>
 <p>You can copy the files ~abinit/tests/tutorespfn/Input/trf2_4.in and
 ~abinit/tests/tutorespfn/Input/trf2_4.files to the Work_rf2 directory.<br />
-Edit the file trf2_4.in . Note that
-<a href="../../../users/generated_files/help_anaddb.html#ifcflag">ifcflag</a> is activated.
-Related input variables can be split in three groups.</p>
+Edit the file trf2_4.in . Note that <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcflag">ifcflag</a> is activated. Related
+input variables can be split in three groups.</p>
 <p>The first group of variables define the grid of q wavevectors :</p>
 <ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#brav">brav</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ngqpt">nqgpt</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nqshft">nqshft</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#q1shft">q1shft</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#brav">brav</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ngqpt">ngqpt</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nqshft">nqshft</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#q1shft">q1shft</a></li>
 </ul>
 <p>Unfortunately, the names of input variables and their meaning is not exactly
 the same as the names used to generate the k points in ABINIT. This is a
-shame, a remnant of history ... Please read carefully the documentation that
+shame, a remnant of history &hellip; Please read carefully the documentation that
 describes these input variables.</p>
 <p>The second group of variables allows to impose some known constraint on the
 dynamical matrices and Born effective charges before proceeding with the
 analysis :</p>
 <ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#asr">asr</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#chneut">chneut</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#asr">asr</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#chneut">chneut</a></li>
 </ul>
 <p>Please, read carefully the explanation for these input variables.</p>
 <p>Finally, a third group of variables is related specifically to the analysis of
 the Interatomic Force Constants :</p>
 <ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#dipdip">dipdip</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ifcana">ifcana</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ifcout">ifcout</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#natifc">natifc</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#atifc">atifc</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dipdip">dipdip</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcana">ifcana</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcout">ifcout</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#natifc">natifc</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#atifc">atifc</a></li>
 </ul>
 <p>Here also, spend some time to read the associated documentation.</p>
 <p>Now, you should issue :</p>
-<pre><code>anaddb &lt; trf2_4.files &gt; trf2_4.log
-</code></pre>
+<div class="codehilite"><pre><span></span>anaddb &lt; trf2_4.files &gt; trf2_4.log
+</pre></div>
+
+
 <p>It will last only a few seconds.</p>
 <p>The file trf2_4.out contains the list of interatomic force constants, as well
 as some analysis. Edit this file.<br />
 Try to find the following paragraph :</p>
-<pre><code> Analysis of interatomic force constants
+<div class="codehilite"><pre><span></span> Analysis of interatomic force constants
 
  Are given : column(1-3), the total force constant
        then  column(4-6), the Ewald part
@@ -2504,40 +3168,39 @@ Try to find the following paragraph :</p>
        of the generic atom along y,
  column 3, 6 and 9 are related to the displacement
        of the generic atom along z.
-</code></pre>
+</pre></div>
+
+
 <p>The interatomic force constants are output for the nuclei specified by the
-input variable <a href="../../../users/generated_files/help_anaddb.html#atifc">atifc</a>.
-Here, only atom 1 is considered. The IFCs with respect to the other nuclei is
-given, by order of increasing distance. For each pair of nuclei involving atom
-1, there is first the output of the IFCs in cartesian coordinates, as well as
-their decomposition into an Ewald and a short-range part, then, the analysis
-with respect to a local system of coordinate. The latter is chosen such as to
-diagonalize the IFC tensor, in case of the self-force constant, and in the
-other cases, the first vector is the vector joining the two nuclei, in order
-to decompose the IFC into a longitudinal and a transverse component.</p>
-<hr />
-<h3 id="546-the-efficient-computation-of-phonon-band-structures"><strong> 5. The efficient computation of phonon band structures </strong><a class="headerlink" href="#546-the-efficient-computation-of-phonon-band-structures" title="Permanent link">&para;</a></h3>
+input variable <a class="wikilink codevar-link" href="../../input_variables/anaddb/#atifc">atifc</a>. Here, only atom 1 is considered. The IFCs
+with respect to the other nuclei is given, by order of increasing distance.
+For each pair of nuclei involving atom 1, there is first the output of the
+IFCs in cartesian coordinates, as well as their decomposition into an Ewald
+and a short-range part, then, the analysis with respect to a local system of
+coordinate. The latter is chosen such as to diagonalize the IFC tensor, in
+case of the self-force constant, and in the other cases, the first vector is
+the vector joining the two nuclei, in order to decompose the IFC into a
+longitudinal and a transverse component.</p>
+<h2 id="5-the-efficient-computation-of-phonon-band-structures">5 The efficient computation of phonon band structures<a class="headerlink" href="#5-the-efficient-computation-of-phonon-band-structures" title="Permanent link">&para;</a></h2>
 <p>You can copy the files ~abinit/tests/tutorespfn/Input/trf2_5.in and
 ~abinit/tests/tutorespfn/Input/trf2_5.files to the Work_rf2 directory.<br />
-Edit the file trf2_5.in . Note that
-<a href="../../../users/generated_files/help_anaddb.html#ifcflag">ifcflag</a> is again
-activated. Indeed, in order to compute a phonon band structure using the
-Fourier interpolation, the IFCs are required. This is why the two first groups
-of variables, needed to generate the IFCs are still defined. The third group
-of variables is now restricted to
-<a href="../../../users/generated_files/help_anaddb.html#dipdip">dipdip</a> only.</p>
+Edit the file trf2_5.in . Note that <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcflag">ifcflag</a> is again activated.
+Indeed, in order to compute a phonon band structure using the Fourier
+interpolation, the IFCs are required. This is why the two first groups of
+variables, needed to generate the IFCs are still defined. The third group of
+variables is now restricted to <a class="wikilink codevar-link" href="../../input_variables/anaddb/#dipdip">dipdip</a> only.</p>
 <p>Then, come the input variables needed to define the list of q wavevectors in
 the band structure :</p>
-<ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#eivec">eivec</a>: flag to turn on the analysis of phonon eigenvectors</li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nph1l">nph1l</a> number of q-points for phonon interpolation</li>
-<li><a href="../../../users/generated_files/help_anaddb.html#qph1l">qph1l</a> list of q-points for phonon interpolation</li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nph2l">nph2l</a> number of q-directions for LO-TO correction</li>
-<li><a href="../../../users/generated_files/help_anaddb.html#qph2l">qph2l</a> list of q-directions for LO-TO correction</li>
-</ul>
+<p><a class="wikilink codevar-link" href="../../input_variables/anaddb/#eivec">eivec</a>: flag to turn on the analysis of phonon eigenvectors</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nph1l">nph1l</a> number of q-points for phonon interpolation</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qph1l">qph1l</a> list of q-points for phonon interpolation</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nph2l">nph2l</a> number of q-directions for LO-TO correction</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qph2l">qph2l</a> list of q-directions for LO-TO correction</p>
 <p>Now, you should issue :</p>
-<pre><code>anaddb &lt; trf2_5.files &gt; trf2_5.log
-</code></pre>
+<div class="codehilite"><pre><span></span>anaddb &lt; trf2_5.files &gt; trf2_5.log
+</pre></div>
+
+
 <p>It will last only a few seconds.</p>
 <p>The file trf2_5.out contains the list of eigenvalues, for all the needed
 q-wavevectors. You can edit it, and have a look at the different sections of
@@ -2547,16 +3210,20 @@ needed for the Fourier interpolation), but not printed.</p>
 the frequencies, in a format suitable for graphical output, using the program
 band2eps (the latter should be more documented, and will not be described in
 the present tutorial).</p>
-<p>You can copy the files <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/trf2_6.in" title="Input file for 'band2eps.' This data layout must be used,  line-by-line.">tests/tutorespfn/Input/trf2_6.in</a> and
-<a class="wikilink" href="../../tests/tutorespfn/Input/trf2_6.files">tests/tutorespfn/Input/trf2_6.files</a> to the Work_rf2 directory, then issue</p>
-<pre><code>band2eps &lt; trf2_6.files &gt; trf2_6.log
-</code></pre>
+<p>You can copy the files <a class="wikilink test-link" data-content="Input file for 'band2eps.' This data layout must be used,  line-by-line." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/trf2_6.in">tests/tutorespfn/Input/trf2_6.in</a> and
+<a class="wikilink test-link" href="../../tests/tutorespfn/Input/trf2_6.files">tests/tutorespfn/Input/trf2_6.files</a> to the Work_rf2 directory, then issue</p>
+<div class="codehilite"><pre><span></span>band2eps &lt; trf2_6.files &gt; trf2_6.log
+</pre></div>
+
+
 <p>The file trf2_6.out.eps has been produced. It is an .eps file (eps stand for
 Encapsulated PostScript). You can use the program ghostview to vizualize it.
 The command to issue will depend on the way you have configured your machine,
 but the following might perhaps do the work:</p>
-<pre><code>gv trf2_6.out.eps
-</code></pre>
+<div class="codehilite"><pre><span></span>gv trf2_6.out.eps
+</pre></div>
+
+
 <p>You should see a nice phonon band structure for AlAs. Well, not so nice, after
 all, because there are two strange dips for the highest phonon band, at the
 Gamma point.<br />
@@ -2567,22 +3234,25 @@ splitting by the following little hack.</p>
 <p>Edit the file trf2_5_B2EPS.freq, and note that the value of the frequency, in
 the sixth column, has a discontinuity exactly for the Gamma point (the three
 first columns give the k point coordinates), that is, at lines 1 and 31 :</p>
-<pre><code> 0.000000D+00  0.000000D+00  0.000000D+00  0.156855D-02  0.156855D-02  0.156855D-02
-</code></pre>
+<div class="codehilite"><pre><span></span> 0.000000D+00  0.000000D+00  0.000000D+00  0.156855D-02  0.156855D-02  0.156855D-02
+</pre></div>
+
+
 <p>Replace these values (sixth column, line 1 and 31) by the correct value,
 including the LO-TO splitting, that you can find in the file trf2_5.out, at
 the end, second list of vector. That is, the lines 1 and 31 should now read :</p>
-<pre><code> 0.000000D+00  0.000000D+00  0.000000D+00  0.156855D-02  0.156855D-02  1.730353E-03
-</code></pre>
+<div class="codehilite"><pre><span></span> 0.000000D+00  0.000000D+00  0.000000D+00  0.156855D-02  0.156855D-02  1.730353E-03
+</pre></div>
+
+
 <p>Now, run again band2eps. Your phonon band structure should be perfect !</p>
 <p>It can be compared with the AlAs phonon band structure published by<br />
 P. Giannozzi, S. de Gironcoli, P. Pavone, and S. Baroni, Phys. Rev. B 43, 7231
 (1991).</p>
 <p>Of course, one should make a convergence study, on the k and q point grids
 (separately !), as well as on the energy cut-off, and also test LDA and GGA
-... But this is left to the user !</p>
-<hr />
-<h3 id="646-thermodynamical-properties"><strong> 6. Thermodynamical properties. </strong><a class="headerlink" href="#646-thermodynamical-properties" title="Permanent link">&para;</a></h3>
+&hellip; But this is left to the user !</p>
+<h2 id="6-thermodynamical-properties">6 Thermodynamical properties<a class="headerlink" href="#6-thermodynamical-properties" title="Permanent link">&para;</a></h2>
 <p>We will give only a very short example of the use of ANADDB to compute
 thermodynamical properties. This is because this part of ANADDB is likely the
 farthest from a clean, stable, usage. By exploring the input variables, the
@@ -2595,20 +3265,20 @@ have a look at them.<br />
 The same DDB as for trf2_4 and trf2_5 is used, namely trf2_3.ddb.out. The
 following additional input variables are present :</p>
 <ul>
-<li><a href="../../../users/generated_files/help_anaddb.html#thmflag">thmflag</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ng2qpt">ng2qpt</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ngrids">ngrids</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#q2shft">q2shft</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nchan">nchan</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#nwchan">nwchan</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#thmtol">thmtol</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#ntemper">ntemper</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#temperinc">temperinc</a></li>
-<li><a href="../../../users/generated_files/help_anaddb.html#tempermin">tempermin</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#thmflag">thmflag</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ng2qpt">ng2qpt</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ngrids">ngrids</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#q2shft">q2shft</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nchan">nchan</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nwchan">nwchan</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#thmtol">thmtol</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ntemper">ntemper</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#temperinc">temperinc</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#tempermin">tempermin</a></li>
 </ul>
-<p>Examine the input file, the input variables, then run anaddb (as usual ...).
+<p>Examine the input file, the input variables, then run anaddb (as usual &hellip;).
 Then, edit the output file. You should be able to find the crucial section :</p>
-<pre><code># At  T     F(J/mol-c)     E(J/mol-c)     S(J/(mol-c.K)) C(J/(mol-c.K))
+<div class="codehilite"><pre><span></span># At  T     F(J/mol-c)     E(J/mol-c)     S(J/(mol-c.K)) C(J/(mol-c.K))
 # (A mol-c is the abbreviation of a mole-cell, that is, the
 #  number of Avogadro times the atoms in a unit cell)
  2.000E+01  8.1384755E+03  8.1463588E+03  3.9416455E-01  1.4169104E+00
@@ -2621,7 +3291,9 @@ Then, edit the output file. You should be able to find the crucial section :</p>
  1.600E+02  6.0396227E+03  1.1028289E+04  3.1179167E+01  3.4847423E+01
  1.800E+02  5.3732223E+03  1.1749439E+04  3.5423427E+01  3.7183864E+01
  2.000E+02  4.6241910E+03  1.2512641E+04  3.9442251E+01  3.9069448E+01
-</code></pre>
+</pre></div>
+
+
 <p>There, one finds, the phonon free energy, the phonon internal energy, the
 phonon entropy and the phonon heat capacity.</p>
 <p>Do not forget that we are working in the harmonic approximation ; beyond some
@@ -2640,15 +3312,186 @@ in tests/v5 , test 22 .</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../rf1/" title="RF1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                RF1
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../elastic/" title="Elastic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Elastic
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

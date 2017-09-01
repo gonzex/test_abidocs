@@ -1,0 +1,34 @@
+/* 
+ * This CSS snip will auto add numbering to all headings in your article,
+ * http://support.typora.io/Auto-Numbering/ 
+ * */
+
+/* https://codepen.io/X-Raym/pen/dBprG */
+
+/* 
+HTML / CSS autonumber headings?
+http://stackoverflow.com/a/535390/819887
+*/
+
+body{counter-reset: section}
+ h2{counter-reset: sub-section}
+ h3{counter-reset: composite}
+ h4{counter-reset: detail}
+
+ h2:before{
+   counter-increment: section;
+   content: counter(section) " ";
+ }
+ h3:before{
+   counter-increment: sub-section;
+   content: counter(section) "." counter(sub-section) " ";
+ }
+ h4:before{
+   counter-increment: composite;
+   content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+ }
+ h5:before{
+   counter-increment: detail;
+   content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+ }
+

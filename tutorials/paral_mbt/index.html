@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1765,6 +1985,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1780,10 +2012,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1831,8 +2183,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1861,13 +2225,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1923,13 +2335,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9" checked>
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1951,12 +2363,62 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
@@ -1971,28 +2433,37 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-generating-the-wfk-file-in-parallel" title="1 Generating the WFK file in parallel." class="md-nav__link">
-    1 Generating the WFK file in parallel.
+  <a href="#g0w0-corrections-in-quartz-sio2" title="G0W0 corrections in &alpha;-quartz SiO2." class="md-nav__link">
+    G0W0 corrections in &alpha;-quartz SiO2.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="2. Computing the screening in parallel using the Adler-Wiser expression**" class="md-nav__link">
-    2. Computing the screening in parallel using the Adler-Wiser expression**
+  <a href="#1-generating-the-wfk-file-in-parallel" title="1 Generating the WFK file in parallel" class="md-nav__link">
+    1 Generating the WFK file in parallel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="2 Computing the screening in parallel using the Adler-Wiser expression" class="md-nav__link">
+    2 Computing the screening in parallel using the Adler-Wiser expression
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2d-manual-parallelization-over-q-points" title="2.d Manual parallelization over q-points." class="md-nav__link">
-    2.d Manual parallelization over q-points.
+  <a href="#2d-manual-parallelization-over-q-points" title="** 2.d Manual parallelization over q-points.**" class="md-nav__link">
+    ** 2.d Manual parallelization over q-points.**
   </a>
   
 </li>
@@ -2003,22 +2474,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-computing-the-screening-in-parallel-using-the-hilbert-transform" title="3. Computing the screening in parallel using the Hilbert transform" class="md-nav__link">
-    3. Computing the screening in parallel using the Hilbert transform
+  <a href="#3-computing-the-screening-in-parallel-using-the-hilbert-transform-method" title="3 Computing the screening in parallel using the Hilbert transform method" class="md-nav__link">
+    3 Computing the screening in parallel using the Hilbert transform method
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-computing-the-one-shot-gw-corrections-in-parallel" title="4. Computing the one-shot GW corrections in parallel**" class="md-nav__link">
-    4. Computing the one-shot GW corrections in parallel**
+  <a href="#4-computing-the-one-shot-gw-corrections-in-parallel" title="4 Computing the one-shot GW corrections in parallel" class="md-nav__link">
+    4 Computing the one-shot GW corrections in parallel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-basic-rules-for-efficient-parallel-calculations" title="5. Basic rules for efficient parallel calculations:" class="md-nav__link">
-    5. Basic rules for efficient parallel calculations:
+  <a href="#5-basic-rules-for-efficient-parallel-calculations" title="5 Basic rules for efficient parallel calculations" class="md-nav__link">
+    5 Basic rules for efficient parallel calculations
   </a>
   
 </li>
@@ -2032,8 +2503,116 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2067,8 +2646,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2091,7 +2682,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2127,8 +2730,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2212,28 +2851,37 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-generating-the-wfk-file-in-parallel" title="1 Generating the WFK file in parallel." class="md-nav__link">
-    1 Generating the WFK file in parallel.
+  <a href="#g0w0-corrections-in-quartz-sio2" title="G0W0 corrections in &alpha;-quartz SiO2." class="md-nav__link">
+    G0W0 corrections in &alpha;-quartz SiO2.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="2. Computing the screening in parallel using the Adler-Wiser expression**" class="md-nav__link">
-    2. Computing the screening in parallel using the Adler-Wiser expression**
+  <a href="#1-generating-the-wfk-file-in-parallel" title="1 Generating the WFK file in parallel" class="md-nav__link">
+    1 Generating the WFK file in parallel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="2 Computing the screening in parallel using the Adler-Wiser expression" class="md-nav__link">
+    2 Computing the screening in parallel using the Adler-Wiser expression
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2d-manual-parallelization-over-q-points" title="2.d Manual parallelization over q-points." class="md-nav__link">
-    2.d Manual parallelization over q-points.
+  <a href="#2d-manual-parallelization-over-q-points" title="** 2.d Manual parallelization over q-points.**" class="md-nav__link">
+    ** 2.d Manual parallelization over q-points.**
   </a>
   
 </li>
@@ -2244,22 +2892,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-computing-the-screening-in-parallel-using-the-hilbert-transform" title="3. Computing the screening in parallel using the Hilbert transform" class="md-nav__link">
-    3. Computing the screening in parallel using the Hilbert transform
+  <a href="#3-computing-the-screening-in-parallel-using-the-hilbert-transform-method" title="3 Computing the screening in parallel using the Hilbert transform method" class="md-nav__link">
+    3 Computing the screening in parallel using the Hilbert transform method
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-computing-the-one-shot-gw-corrections-in-parallel" title="4. Computing the one-shot GW corrections in parallel**" class="md-nav__link">
-    4. Computing the one-shot GW corrections in parallel**
+  <a href="#4-computing-the-one-shot-gw-corrections-in-parallel" title="4 Computing the one-shot GW corrections in parallel" class="md-nav__link">
+    4 Computing the one-shot GW corrections in parallel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-basic-rules-for-efficient-parallel-calculations" title="5. Basic rules for efficient parallel calculations:" class="md-nav__link">
-    5. Basic rules for efficient parallel calculations:
+  <a href="#5-basic-rules-for-efficient-parallel-calculations" title="5 Basic rules for efficient parallel calculations" class="md-nav__link">
+    5 Basic rules for efficient parallel calculations
   </a>
   
 </li>
@@ -2278,15 +2926,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/paral_mbt.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Many-Body</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing how to perform parallel calculations with the GW
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="parallelism-for-many-body-calculations">Parallelism for many-body calculations<a class="headerlink" href="#parallelism-for-many-body-calculations" title="Permanent link">&para;</a></h1>
+<h2 id="g0w0-corrections-in-quartz-sio2">G<sub>0</sub>W<sub>0</sub> corrections in &alpha;-quartz SiO<sub>2</sub>.<a class="headerlink" href="#g0w0-corrections-in-quartz-sio2" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to perform parallel calculations with the GW
 part of ABINIT. We will discuss the approaches used to parallelize the
 different steps of a typical G0W0 calculation, and how to setup the parameters
 of the run in order to achieve good speedup. α-quartz SiO2 is used as test
@@ -2298,67 +2945,68 @@ core parallel computer.</p>
 <p>You are supposed to know already some basics of parallelism in ABINIT,
 explained in the tutorial <a href="../lesson_basepar.html">A first introduction to ABINIT in
 parallel</a>.</p>
-<p>In the following, when "run ABINIT over nn CPU cores" appears, you have to use
+<p>In the following, when &ldquo;run ABINIT over nn CPU cores&rdquo; appears, you have to use
 a specific command line according to the operating system and architecture of
 the computer you are using. This can be for instance:</p>
-<pre><code>mpirun -n nn abinit &lt; abinit.files
-</code></pre>
+<div class="codehilite"><pre><span></span>mpirun -n nn abinit &lt; abinit.files
+</pre></div>
+
+
 <p>or the use of a specific submission file.</p>
-<ul>
-<li>1 Generating the WFK file in parallel. </li>
-<li>2 Computing the screening in parallel using the Adler-Wiser expression </li>
-<li>3 Computing the screening in parallel using the Hilbert transform method </li>
-<li>4 Computing the one-shot GW corrections in parallel </li>
-<li>5 Basic rules for efficient parallel calculations </li>
-</ul>
-<hr />
-<p>** The input files necessary to run the examples related to this tutorial are located in the directory ~abinit/tests/tutoparal/Input. </p>
+<h2 id="1-generating-the-wfk-file-in-parallel">1 Generating the WFK file in parallel<a class="headerlink" href="#1-generating-the-wfk-file-in-parallel" title="Permanent link">&para;</a></h2>
+<p>The input files necessary to run the examples related to this tutorial are
+located in the directory ~abinit/tests/tutoparal/Input.</p>
 <p>Before beginning, you should create a working directory whose name might be
-"Work_mbt" (so ~abinit/tests/tutoparal/Input/Work_mbt).</p>
-<p>We will do most of the actions of this tutorial in this working directory.</p>
-<h3 id="1-generating-the-wfk-file-in-parallel"><strong>1 Generating the WFK file in parallel.</strong><a class="headerlink" href="#1-generating-the-wfk-file-in-parallel" title="Permanent link">&para;</a></h3>
-<p>In the <a href="../lesson_gw1.html">first lesson</a> of the GW tutorial, we have learned how
-to generate the WFK file with the sequential version of the code. Now we will
+&ldquo;Work_mbt&rdquo; (so ~abinit/tests/tutoparal/Input/Work_mbt).</p>
+<p>We will do most of the actions of this tutorial in this working directory. In
+the <a href="../lesson_gw1.html">first lesson</a> of the GW tutorial, we have learned how to
+generate the WFK file with the sequential version of the code. Now we will
 perform a similar calculation taking advantage of the k-point parallelism
 implemented in the ground-state part.</p>
 <p>First of all, you should copy the files file tmbt_1.files in the working
 directory Work_mbt:</p>
-<pre><code>$ cd Work_mbt
-$ cp ../tmbt_1.files .
-</code></pre>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; cd Work_mbt
+&gt;&gt;&gt; cp ../tmbt_1.files .
+</pre></div>
+
+
 <p>The abinit files files is described in <a href="../../../users/generated_files/help_abinit.html#intro1">section
 1.1</a> of the abinit_help
-file. Please, read it now if you haven't done it yet!</p>
+file. Please, read it now if you haven&rsquo;t done it yet!</p>
 <p>Now open the input file ~abinit/tests/tutoparal/Input/tmbt_1.in in your
 preferred editor, and look at its structure.</p>
 <p>The first dataset performs a rather standard SCF calculation to obtain the
 ground-state density. The second dataset reads the density file and calculates
 the Kohn-Sham band structure including many empty states:</p>
-<pre><code># DATASET 2 : WFK generation
+<div class="codehilite"><pre><span></span># DATASET 2 : WFK generation
 iscf2      -2      # NSCF
 getden2    -1      # Read previous density
 tolwfr2    1d-12   # Stopping criterion for the NSCF cycle.
 nband2      160    # Number of (occ and empty) bands computed in the NSCF cycle.
 nbdbuf2     10     # A large buffer helps to reduce the number of NSCF steps.
-</code></pre>
+</pre></div>
+
+
 <p>We have already encountered these variables in the <a href="../lesson_gw1.html">first
 lesson</a> of the GW tutorial so their meaning should be
 familiar to you.</p>
 <p>The only thing worth stressing is that this calculation solves the NSCF cycle
 with the conjugate-gradient method (paral_kgb == 0)</p>
 <p>The NSCF cycle is executed in parallel using the standard parallelism over
-k-points and spin in which the (<a class="wikilink" href="../../input_variables/basic/#nkpt">nkpt</a> x <a class="wikilink" href="../../input_variables/basic/#nsppol">nsppol</a>) blocks of bands are
+k-points and spin in which the (<a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a> x <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a>) blocks of bands are
 distributed among the nodes. This test uses an unshifted 4x4x3 grid (48 k
 points in the full Brillouin Zone, folding to 9 k-points in the irreducible
 wedge) hence the theoretical maximum speedup is 9.</p>
 <p>Now run ABINIT over nn CPU cores using</p>
-<pre><code>(mpirun ...) abinit &lt; tmbt_1.files &gt;&amp; tmbt_1.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>(mpirun ...) abinit &lt; tmbt_1.files &gt;&amp; tmbt_1.log &amp;
+</pre></div>
+
+
 <p>but keep in mind that, to avoid idle processors, the number of CPUs should
 divide 9. At the end of the run, the code will produce the file tmbt_1o_WFK
 needed for the subsequent GW calculations.</p>
 <p>With three nodes, the wall clock time is around 1.5 minutes.</p>
-<pre><code>$ tail tmbt_1.out
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; tail tmbt_1.out
 
 -
 - Proc.   0 individual time (sec): cpu=        209.0  wall=        209.0
@@ -2368,26 +3016,29 @@ needed for the subsequent GW calculations.</p>
  Calculation completed.
 .Delivered    0 WARNINGs and   5 COMMENTs to log file.
 +Overall time at end (sec) : cpu=        626.9  wall=        626.9
-</code></pre>
+</pre></div>
+
+
 <p>A reference output file is given in ~tests/tutoparal/Refs, under the name
 tmbt_1.out.</p>
 <p>Note that 150 bands are not enough to obtain converged GW results, you might
 increase the number of bands in proportion to your computing resources.</p>
-<hr />
-<h3 id="246-computing-the-screening-in-parallel-using-the-adler-wiser-expression">2. Computing the screening in parallel using the Adler-Wiser expression**<a class="headerlink" href="#246-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="Permanent link">&para;</a></h3>
+<h2 id="2-computing-the-screening-in-parallel-using-the-adler-wiser-expression">2 Computing the screening in parallel using the Adler-Wiser expression<a class="headerlink" href="#2-computing-the-screening-in-parallel-using-the-adler-wiser-expression" title="Permanent link">&para;</a></h2>
 <p>In this part of the tutorial, we will compute the RPA polarizability with the
 Adler-Wiser approach. The basic equations are discussed in this
 <a href="../../../theory/generated_files/theorydoc_mbt.html#RPA_Fourier_space">section</a>
 of the GW notes.</p>
 <p>First copy the files file tmbt_2.file in the working directory, then create a
 symbolic link pointing to the WFK file we have generated in the previous step:</p>
-<pre><code>$ ln -s tmbt_1o_DS2_WFK tmbt_2i_WFK
-</code></pre>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; ln -s tmbt_1o_DS2_WFK tmbt_2i_WFK
+</pre></div>
+
+
 <p>Now open the input file ~abinit/tests/tutoparal/Input/tmbt_2.in so that we can
 discuss its structure.</p>
 <p>The set of parameters controlling the screening computation is summarized
 below:</p>
-<pre><code>optdriver   3   # Screening run
+<div class="codehilite"><pre><span></span>optdriver   3   # Screening run
 irdwfk      1   # Read input WFK file
 symchi      1   # Use symmetries to speedup the BZ integration
 awtr        1   # Take advantage of time-reversal. Mandatory when gwpara=2 is used.
@@ -2396,11 +3047,13 @@ ecutwfn     24  # Cutoff for the wavefunctions.
 ecuteps     8   # Cutoff for the polarizability.
 nband       50  # Number of bands in the RPA expression (24 occupied bands)
 inclvkb     2   # Correct treatment of the optical limit.
-</code></pre>
+</pre></div>
+
+
 <p>Most of the variables have been already discussed in the
 <a href="../lesson_gw1.html">first</a> lesson of the GW tutorial. The only variables that
-deserve some additional explanation are <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a> and <a class="wikilink" href="../../input_variables/gw/#awtr">awtr</a>.</p>
-<p><a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a> selects the parallel algorithm used to compute the screening. Two
+deserve some additional explanation are <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>.</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a> selects the parallel algorithm used to compute the screening. Two
 different approaches are implemented:</p>
 <ul>
 <li>
@@ -2415,13 +3068,13 @@ documentation of the variable. In this tutorial, we will be focusing on
 <strong>gwpara</strong>=2 since this is the algorithm with the best MPI-scalability and,
 mostly important, it is the only one that allows for a significant reduction
 of the memory requirement.</p>
-<p>The option <a class="wikilink" href="../../input_variables/gw/#awtr">awtr</a>=1 specifies that the system presents time reversal
+<p>The option <a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>=1 specifies that the system presents time reversal
 symmetry so that it is possible to halve the number of transitions that have
 to be calculated explicitly (only resonant transitions are needed). Note that
-<a class="wikilink" href="../../input_variables/gw/#awtr">awtr</a>=1 is MANDATORY when <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>=1 is MANDATORY when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
 <p>Before running the calculation in parallel, it is worth discussing some
 important technical details of the implementation. For our purposes, it
-suffices to say that, when <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used in the screening part, the
+suffices to say that, when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used in the screening part, the
 code distributes the wavefunctions such that each processing unit owns the
 FULL set of occupied bands while the empty states are distributed among the
 nodes. The parallel computation of the inverse dielectric matrix is done in
@@ -2441,7 +3094,7 @@ three different steps that can be schematically described as follows:</p>
 <p>Both the first and second step of the algorithm are expected to scale well
 with the number of processors. Step 3, on the contrary, is performed in
 sequential thus it will have a detrimental effect on the overall scaling,
-especially in the case of large screening matrices (large <a class="wikilink" href="../../input_variables/internal/#npweps">npweps</a> or large
+especially in the case of large screening matrices (large <a class="wikilink codevar-link" href="../../input_variables/internal/#npweps">%npweps</a> or large
 number of frequency points ω).</p>
 <p>Note that the maximum number of CPUs that can be used is dictated by the
 number of empty states used to compute the polarizability. Most importantly, a
@@ -2450,7 +3103,7 @@ processors divides the number of conduction states.</p>
 <p>The main limitation of the present implementation is represented by the
 storage of the polarizability. This matrix, indeed, is not distributed hence
 each node must have enough memory to store in memory a table whose size is
-given by (<strong>npweps</strong>2 x <strong>nomega</strong> x 16 bytes) where <strong>nomega</strong> is the total
+given by (<strong>npweps**2 x **nomega</strong> x 16 bytes) where <strong>nomega</strong> is the total
 number of frequencies computed.</p>
 <p>Tests performed at the Barcelona Supercomputing Center (see figures below)
 have revealed that the first and the second part of the MPI algorithm have a
@@ -2463,15 +3116,17 @@ namely the reading of the WFK file and the matrix inversion (qloop).</p>
 <p><img alt="" src="../../documents/lesson_paral_mbt/screening_rel_times.png" /></p>
 <p>At this point, the most important technical details of the implementation have
 been covered, and we can finally run ABINIT over nn CPU cores using</p>
-<pre><code>(mpirun ...) abinit &lt; tmbt_2.files &gt;&amp; tmbt_2.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>(mpirun ...) abinit &lt; tmbt_2.files &gt;&amp; tmbt_2.log &amp;
+</pre></div>
+
+
 <p>Run the input file tmb_2.in using different number of processors and keep
 track of the time for each processor number so that we can test the
 scalability of the implementation. The performance analysis reported in the
 figures above was obtained with PAW using ZnO as tests case, but you should
 observe a similar behavior also in SiO2.</p>
-<p>Now let's have a look at the output results. Since this tutorial mainly
-focuses on how to run efficient MPI computations, we won't perform any
+<p>Now let&rsquo;s have a look at the output results. Since this tutorial mainly
+focuses on how to run efficient MPI computations, we won&rsquo;t perform any
 converge study for SiO2. Most of the parameters used in the input files are
 already close to converge, only the k-point sampling and the number of empty
 states should be increased. You might modify the input files to perform the
@@ -2479,45 +3134,49 @@ standard converge tests following the procedure described in the <a href="../les
 lesson</a> of the GW tutorial.</p>
 <p>In the main output file, there is a section reporting how the bands are
 distributed among the nodes. For a sequential calculation, we have</p>
-<pre><code> screening : taking advantage of time-reversal symmetry
+<div class="codehilite"><pre><span></span> screening : taking advantage of time-reversal symmetry
  Maximum band index for partially occupied states nbvw =    24
  Remaining bands to be divided among processors   nbcw =    26
  Number of bands treated by each node ~   26
-</code></pre>
+</pre></div>
+
+
 <p>The value reported in the last line will decrease when the computation is done
 with more processors.</p>
 <p>The memory allocated for the wavefunctions scales with the number of
 processors. You can use the grep utility to extract this information from the
 log file. For a calculation in sequential, we have:</p>
-<pre><code>$ grep "Memory needed" tmbt_2.log
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; grep &quot;Memory needed&quot; tmbt_2.log
 
   Memory needed for storing ug=         29.5 [Mb]
   Memory needed for storing ur=        180.2 [Mb]
-</code></pre>
+</pre></div>
+
+
 <p><em>ug</em> denotes the internal buffer used to store the Fourier components of the
-orbitals whose size scales linearly with
-<a href="../../../input_variables/generated_files/varint.html#npwwfn">npwwfn</a>. <em>ur</em> is
-the array storing the orbitals on the real space FFT mesh. Keep in mind that
-the size of <em>ur</em> scales linearly with the total number of points in the FFT
-box, number that is usually much larger than the number of planewaves
-(<a href="../../../input_variables/generated_files/varint.html#npwwfn">npwwfn</a>). The
-number of FFT divisions used in the GW code can be extracted from the main
-output file using</p>
-<pre><code>$ grep setmesh tmbt_2.out  -A 1
+orbitals whose size scales linearly with <a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>. <em>ur</em> is the array storing
+the orbitals on the real space FFT mesh. Keep in mind that the size of <em>ur</em>
+scales linearly with the total number of points in the FFT box, number that is
+usually much larger than the number of planewaves (<a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>). The number of
+FFT divisions used in the GW code can be extracted from the main output file
+using</p>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; grep setmesh tmbt_2.out  -A 1
  setmesh: FFT mesh size selected  =  27x 27x 36
           total number of points  =    26244
-</code></pre>
+</pre></div>
+
+
 <p>As discussed in this
 <a href="../../../theory/generated_files/theorydoc_mbt.html#oscillator_notes">section</a> of
 the GW notes, the Fast Fourier Transform represents one of the most CPU
 intensive part of the execution. For this reason the code provides the input
-variable <a class="wikilink" href="../../input_variables/gw/#fftgw">fftgw</a> that can be used to decrease the number of FFT points for
-better efficiency. The second digit of the input variable <a class="wikilink" href="../../input_variables/gw/#gwmem">gwmem</a>, instead,
+variable <a class="wikilink codevar-link" href="../../input_variables/gw/#fftgw">fftgw</a> that can be used to decrease the number of FFT points for
+better efficiency. The second digit of the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>, instead,
 governs the storage of the real space orbitals and can used to avoid the
 storage of the costly array <em>ur</em> at the price of an increase in computational
 time.</p>
 <h4 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
-<h4 id="2d-manual-parallelization-over-q-points"><strong> 2.d Manual parallelization over q-points.</strong><a class="headerlink" href="#2d-manual-parallelization-over-q-points" title="Permanent link">&para;</a></h4>
+<h4 id="2d-manual-parallelization-over-q-points">** 2.d Manual parallelization over q-points.**<a class="headerlink" href="#2d-manual-parallelization-over-q-points" title="Permanent link">&para;</a></h4>
 <p>The computational effort required by the screening computation scales linearly
 with the number of q-points. As explained in this
 <a href="../../../theory/generated_files/theorydoc_mbt.html#RPA_Fourier_space">section</a>
@@ -2528,13 +3187,11 @@ achieve converged results. Typical examples are GW calculations in metals or
 optical properties within the Bethe-Salpeter formalism.</p>
 <p>If enough processing units are available, the linear factor due to the q-point
 sampling can be trivially absorbed by splitting the calculation of the
-q-points into several independent runs using the variables <a class="wikilink" href="../../input_variables/gw/#nqptdm">nqptdm</a> and
-<a class="wikilink" href="../../input_variables/gw/#qptdm">qptdm</a>. The results can then be gathered in a unique binary file by means
+q-points into several independent runs using the variables <a class="wikilink codevar-link" href="../../input_variables/gw/#nqptdm">nqptdm</a> and
+<a class="wikilink codevar-link" href="../../input_variables/gw/#qptdm">qptdm</a>. The results can then be gathered in a unique binary file by means
 of the <strong>mrgscr</strong> utility (see also the automatic tests v3/t87, v3/t88 and
 v3/t89).</p>
-<hr />
-<h3 id="346-computing-the-screening-in-parallel-using-the-hilbert-transform">3. Computing the screening in parallel using the Hilbert transform<a class="headerlink" href="#346-computing-the-screening-in-parallel-using-the-hilbert-transform" title="Permanent link">&para;</a></h3>
-<p>method**</p>
+<h2 id="3-computing-the-screening-in-parallel-using-the-hilbert-transform-method">3 Computing the screening in parallel using the Hilbert transform method<a class="headerlink" href="#3-computing-the-screening-in-parallel-using-the-hilbert-transform-method" title="Permanent link">&para;</a></h2>
 <p>As discussed in the
 <a href="../../../theory/generated_files/theorydoc_mbt.html#RPA_Fourier_space">GW_notes</a>,
 the algorithm based on the Adler-Wiser expression is not optimal when many
@@ -2545,13 +3202,15 @@ section</a> of
 the GW notes.</p>
 <p>As usual, we have to copy the files file tmbt_3.file in the working directory,
 and then create a symbolic link pointing to the WFK file.</p>
-<pre><code>$ ln -s tmbt_1o_DS2_WFK tmbt_3i_WFK
-</code></pre>
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; ln -s tmbt_1o_DS2_WFK tmbt_3i_WFK
+</pre></div>
+
+
 <p>The input file is ~abinit/tests/tutoparal/Input/tmbt_3.in. Open it so that we
 can have a look at its structure.</p>
 <p>A snapshot of the most important parameters governing the algorithm is
 reported below.</p>
-<pre><code>gwcalctyp   2    # Contour-deformation technique.
+<div class="codehilite"><pre><span></span>gwcalctyp   2    # Contour-deformation technique.
 spmeth      1    # Enable the spectral method.
 nomegasf  100    # Number of points for the spectral function. 
 gwpara      2    # Parallelization over bands
@@ -2559,9 +3218,11 @@ awtr        1    # Take advantage of time-reversal. Mandatory when gwpara=2 is u
 freqremax  40 eV # Frequency mesh for the polarizability
 nfreqre    20
 nfreqim     5
-</code></pre>
+</pre></div>
+
+
 <p>The input file is similar to the one we used for the Adler-Wiser calculation.
-The input variable <a class="wikilink" href="../../input_variables/gw/#spmeth">spmeth</a> enables the spectral method. <a class="wikilink" href="../../input_variables/gw/#nomegasf">nomegasf</a>
+The input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#spmeth">spmeth</a> enables the spectral method. <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasf">nomegasf</a>
 defines the number of ω′ points in the linear mesh used for the spectral
 function i.e. the number of ω′ in the
 <a href="../../../theory/generated_files/theorydoc_mbt.html#hilbert_transform">equation</a>
@@ -2569,45 +3230,50 @@ for the spectral function.</p>
 <p>As discussed in the <a href="../../../theory/generated_files/theorydoc_mbt.html#hilbert_transform">GW
 notes</a>, the
 Hilbert transform method is much more memory demanding that the Adler-Wiser
-approach, mainly because of the large value of <a class="wikilink" href="../../input_variables/gw/#nomegasf">nomegasf</a> that is usually
+approach, mainly because of the large value of <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasf">nomegasf</a> that is usually
 needed to converge the results. Fortunately, the particular distribution of
-the data employed in <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2 turns out to be well suited for the
+the data employed in <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 turns out to be well suited for the
 calculation of the spectral function since each processor has to store and
 treat only a subset of the entire range of transition energies. The algorithm
 therefore presents good MPI-scalability since the number of ω′ frequencies
 that have to be stored and considered in the Hilbert transform decreases with
 the number of processors.</p>
 <p>Now run ABINIT over nn CPU cores using</p>
-<pre><code>(mpirun ...) abinit &lt; tmbt_3.files &gt;&amp; tmbt_3.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>(mpirun ...) abinit &lt; tmbt_3.files &gt;&amp; tmbt_3.log &amp;
+</pre></div>
+
+
 <p>and test the scaling by varying the number of processors. Keep in mind that,
 also in this case, the distribution of the computing work is well balanced
 when the number of CPUs divides the number of conduction states.</p>
 <p>The memory needed to store the spectral function is reported in the log file:</p>
-<pre><code>$ grep "sf_chi0q0" tmbt_3.log
+<div class="codehilite"><pre><span></span>&gt;&gt;&gt; grep &quot;sf_chi0q0&quot; tmbt_3.log
  memory required by sf_chi0q0:           1.0036 [Gb]
-</code></pre>
+</pre></div>
+
+
 <p>Note how the size of this array decreases when more processors are used.</p>
 <p>The figure below shows the electron energy loss function (EELF) of SiO2
 calculated using the Adler-Wiser and the Hilbert transform method. You might
 try to reproduce these results (the EELF is reported in the file tmbt_3o_EELF,
 a much denser k-sampling is required to achieve convergence).</p>
 <p><img alt="" src="../../documents/lesson_paral_mbt/comp-AW-spect.png" /></p>
-<hr />
-<h3 id="446-computing-the-one-shot-gw-corrections-in-parallel">4. Computing the one-shot GW corrections in parallel**<a class="headerlink" href="#446-computing-the-one-shot-gw-corrections-in-parallel" title="Permanent link">&para;</a></h3>
+<h2 id="4-computing-the-one-shot-gw-corrections-in-parallel">4 Computing the one-shot GW corrections in parallel<a class="headerlink" href="#4-computing-the-one-shot-gw-corrections-in-parallel" title="Permanent link">&para;</a></h2>
 <p>In this last paragraph, we discuss how to calculate G0W0 corrections in
-parallel with <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2. The basic equations used to compute the self-
+parallel with <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2. The basic equations used to compute the self-
 energy matrix elements are discussed in <a href="../../../theory/generated_files/theorydoc_mbt.html#evaluation_gw_sigma">this
 part</a> of
 the GW notes.</p>
 <p>Before running the calculation, copy the files file tmbt_4.file in the working
 directory. Then create two symbolic links for the SCR and the WFK file:</p>
-<pre><code>ln -s tmbt_1o_DS2_WFK tmbt_4i_WFK
+<div class="codehilite"><pre><span></span>ln -s tmbt_1o_DS2_WFK tmbt_4i_WFK
 ln -s tmbt_2o_SCR     tmbt_4i_SCR
-</code></pre>
+</pre></div>
+
+
 <p>Now open the input file ~abinit/tests/tutoparal/Input/tmbt_4.in.</p>
 <p>The most important parameters of the calculation are reported below:</p>
-<pre><code>optdriver   4            # Sigma run.
+<div class="codehilite"><pre><span></span>optdriver   4            # Sigma run.
 irdwfk      1  
 irdscr      1
 gwcalctyp   0 ppmodel 1  # G0W0 calculation with the plasmon-pole approximation.
@@ -2618,22 +3284,24 @@ ecutwfn    24            # Cutoff for the wavefunctions.
 ecuteps     8            # Cutoff in the correlation part.
 ecutsigx   20            # Cutoff in the exchange part.
 nband       50           # Number of bands for the correlation part.
-</code></pre>
+</pre></div>
+
+
 <p>For our purposes, it suffices to say that this input file defines a standard
 one-shot calculation with the plasmon-pole model approximation. We refer to
 the documentation and to the <a href="../lesson_gw1.html">first lesson</a> of the GW
 tutorial for a more complete description of the meaning of these variables.</p>
-<p>Also in this case, we use <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2 to perform the calculation in parallel.
+<p>Also in this case, we use <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 to perform the calculation in parallel.
 Note, however, that the distribution of the orbitals employed in the self-
 energy part significantly differs from the one used to compute the screening.
 In what follows, we briefly describe the two-step procedure used to distribute
 the wavefunctions:</p>
 <ol>
 <li>
-<p>Each node reads and stores in memory the states where the QP corrections are computed (the list of states specified by <a class="wikilink" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink" href="../../input_variables/gw/#bdgw">bdgw</a>). </p>
+<p>Each node reads and stores in memory the states where the QP corrections are computed (the list of states specified by <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>). </p>
 </li>
 <li>
-<p>The <a class="wikilink" href="../../input_variables/basic/#nband">nband</a> bands are distributed using the following partition scheme: </p>
+<p>The <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> bands are distributed using the following partition scheme: </p>
 </li>
 </ol>
 <p><img alt="" src="../../documents/lesson_paral_mbt/band_distribution_sigma.png" /></p>
@@ -2641,7 +3309,7 @@ the wavefunctions:</p>
 denotes the MPI rank).</p>
 <p>By virtue of the particular distribution adopted, the computation of the
 correlation part is expected to scale well with the number CPUs. The maximum
-number of processors that can be used is limited by <a class="wikilink" href="../../input_variables/basic/#nband">nband</a>. Note, however,
+number of processors that can be used is limited by <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>. Note, however,
 that only a subset of processors will receive the occupied states when the
 bands are distributed in step 2. As a consequence, the theoretical maximum
 speedup that can be obtained in the exchange part is limited by the
@@ -2664,7 +3332,7 @@ worst-case scenario. The computation of the self-energy matrix elements
 (csigme) scales well up to 64 processors. For large number number of CPUs, the
 scaling departs from the linear behavior due to the unbalanced distribution of
 the occupied bands. The non-scalable parts of the implementation (init1,
-rdkss) limit the total speedup due to Amdhal's law.</p>
+rdkss) limit the total speedup due to Amdhal&rsquo;s law.</p>
 <p><img alt="" src="../../documents/lesson_paral_mbt/sigma_analysis.png" /></p>
 <p>The implementation presents good memory scalability since the largest arrays
 are distributed. Only the size of the screening does not scale with the number
@@ -2673,11 +3341,13 @@ all the q-points and frequencies in order to optimize the computation. In the
 case of large matrices, however, it possible to opt for an out-of-core
 solution in which only a single q-point is stored in memory and the data is
 read from the external SCR file (slower but less memory demanding). This
-option is controlled by the first digit of <a class="wikilink" href="../../input_variables/gw/#gwmem">gwmem</a>.</p>
+option is controlled by the first digit of <a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>.</p>
 <p>Now that we know how distribute the load efficiently, we can finally run the
 calculation using</p>
-<pre><code>(mpirun ...) abinit &lt; tmbt_4.files &gt;&amp; tmbt_4.log &amp;
-</code></pre>
+<div class="codehilite"><pre><span></span>(mpirun ...) abinit &lt; tmbt_4.files &gt;&amp; tmbt_4.log &amp;
+</pre></div>
+
+
 <p>Keep track of the time for each processor number so that we can test the
 scalability of the self-energy part.</p>
 <p>Please note that the results of these tests are not converged. A well
@@ -2694,15 +3364,14 @@ account that this calculation has been performed at the theoretical LDA
 parameters, while the experimental structure is used in all the input files of
 this tutorial).</p>
 <p><img alt="" src="../../documents/lesson_paral_mbt/SiO2_KSG0W0_PPM1.png" /></p>
-<hr />
-<h3 id="546-basic-rules-for-efficient-parallel-calculations"><strong>5. Basic rules for efficient parallel calculations:</strong><a class="headerlink" href="#546-basic-rules-for-efficient-parallel-calculations" title="Permanent link">&para;</a></h3>
+<h2 id="5-basic-rules-for-efficient-parallel-calculations">5 Basic rules for efficient parallel calculations<a class="headerlink" href="#5-basic-rules-for-efficient-parallel-calculations" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Remember that "Anything that can possibly go wrong, does" so, when writing your input file, try to "Keep It Short and Simple". </p>
+<p>Remember that &ldquo;Anything that can possibly go wrong, does&rdquo; so, when writing your input file, try to &ldquo;Keep It Short and Simple&rdquo;. </p>
 </li>
 <li>
 <p>Do one thing and do it well: <br />
-Avoid using different values of <a class="wikilink" href="../../input_variables/gstate/#optdriver">optdriver</a> in the same input file. Each
+Avoid using different values of <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a> in the same input file. Each
 runlevel employs different approaches to distribute memory and CPU time, hence
 it is almost impossible to find the number of processors that will produce a
 balanced run in each dataset.</p>
@@ -2712,15 +3381,13 @@ balanced run in each dataset.</p>
 Convergence studies should be executed in parallel only when the parameters
 that are tested do not interfere with the MPI algorithm. For example, the
 convergence study in the number of bands in the screening should be done in
-separated input files when <a class="wikilink" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
+separated input files when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
 </li>
 <li>
 <p>Less is more: <br />
 Split big calculations into smaller runs whenever possible. For example,
 screening calculations can be split over q-points. The calculation of the
-self-energy can be easily split over
-<a href="../../../input_variables/generated_files/vargw.html#kptgw">kptgw</a> and
-<a href="../../../input_variables/generated_files/vargw.html#bdgw">bdgw</a>.</p>
+self-energy can be easily split over <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>.</p>
 </li>
 <li>
 <p>Look before you leap: <br />
@@ -2742,15 +3409,186 @@ calculation with converged parameters.</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../paral_images/" title="Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Images
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../paral_moldyn/" title="Moldyn" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Moldyn
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (MG, MS)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

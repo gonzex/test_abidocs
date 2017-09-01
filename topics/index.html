@@ -16,13 +16,13 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
     
       
-        <title>Home - abinit</title>
+        <title>Topic List - abinit</title>
       
     
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../css/codehilite.css">
-    
       <link rel="stylesheet" href="../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -155,7 +151,7 @@
                 </span>
               
             
-            Home
+            Topic List
           
         </span>
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -486,10 +574,213 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Topic List
+      </label>
+    
+    <a href="./" title="Topic List" class="md-nav__link md-nav__link--active">
+      Topic List
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a" title="A" class="md-nav__link">
+    A
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b" title="B" class="md-nav__link">
+    B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" title="C" class="md-nav__link">
+    C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d" title="D" class="md-nav__link">
+    D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" title="E" class="md-nav__link">
+    E
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f" title="F" class="md-nav__link">
+    F
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#g" title="G" class="md-nav__link">
+    G
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h" title="H" class="md-nav__link">
+    H
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k" title="K" class="md-nav__link">
+    K
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l" title="L" class="md-nav__link">
+    L
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#m" title="M" class="md-nav__link">
+    M
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#n" title="N" class="md-nav__link">
+    N
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o" title="O" class="md-nav__link">
+    O
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#p" title="P" class="md-nav__link">
+    P
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q" title="Q" class="md-nav__link">
+    Q
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r" title="R" class="md-nav__link">
+    R
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#s" title="S" class="md-nav__link">
+    S
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#t" title="T" class="md-nav__link">
+    T
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#u" title="U" class="md-nav__link">
+    U
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v" title="V" class="md-nav__link">
+    V
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#w" title="W" class="md-nav__link">
+    W
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#x" title="X" class="md-nav__link">
+    X
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
-    <a href="./" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -548,8 +839,8 @@
 
 
   <li class="md-nav__item">
-    <a href="BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -562,6 +853,18 @@
   <li class="md-nav__item">
     <a href="Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -644,6 +947,42 @@
 
 
   <li class="md-nav__item">
+    <a href="DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -658,18 +997,6 @@
   <li class="md-nav__item">
     <a href="DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -728,8 +1055,20 @@
 
 
   <li class="md-nav__item">
-    <a href="ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -752,20 +1091,8 @@
 
 
   <li class="md-nav__item">
-    <a href="ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -824,6 +1151,30 @@
 
 
   <li class="md-nav__item">
+    <a href="Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -851,225 +1202,6 @@
     <a href="Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
     </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
-      </label>
-    
-    <a href="./" title="Home" class="md-nav__link md-nav__link--active">
-      Home
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#a" title="A" class="md-nav__link">
-    A
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#b" title="B" class="md-nav__link">
-    B
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c" title="C" class="md-nav__link">
-    C
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#d" title="D" class="md-nav__link">
-    D
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#e" title="E" class="md-nav__link">
-    E
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#f" title="F" class="md-nav__link">
-    F
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#g" title="G" class="md-nav__link">
-    G
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#h" title="H" class="md-nav__link">
-    H
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#l" title="L" class="md-nav__link">
-    L
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#m" title="M" class="md-nav__link">
-    M
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o" title="O" class="md-nav__link">
-    O
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#p" title="P" class="md-nav__link">
-    P
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#r" title="R" class="md-nav__link">
-    R
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#s" title="S" class="md-nav__link">
-    S
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#t" title="T" class="md-nav__link">
-    T
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#u" title="U" class="md-nav__link">
-    U
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#w" title="W" class="md-nav__link">
-    W
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#c_1" title="c" class="md-nav__link">
-    c
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#k" title="k" class="md-nav__link">
-    k
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#m_1" title="m" class="md-nav__link">
-    m
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#n" title="n" class="md-nav__link">
-    n
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#p_1" title="p" class="md-nav__link">
-    p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#q" title="q" class="md-nav__link">
-    q
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#s_1" title="s" class="md-nav__link">
-    s
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v" title="v" class="md-nav__link">
-    v
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#x" title="x" class="md-nav__link">
-    x
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1211,8 +1343,20 @@
 
 
   <li class="md-nav__item">
-    <a href="PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1235,6 +1379,18 @@
 
 
   <li class="md-nav__item">
+    <a href="PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1247,20 +1403,8 @@
 
 
   <li class="md-nav__item">
-    <a href="PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1355,8 +1499,8 @@
 
 
   <li class="md-nav__item">
-    <a href="SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1367,8 +1511,8 @@
 
 
   <li class="md-nav__item">
-    <a href="SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1499,6 +1643,18 @@
 
 
   <li class="md-nav__item">
+    <a href="Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1513,6 +1669,18 @@
   <li class="md-nav__item">
     <a href="vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1582,31 +1750,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1859,8 +2027,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1968,6 +2160,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1983,10 +2187,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2034,8 +2358,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -2064,13 +2400,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2124,13 +2508,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2154,14 +2538,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2195,8 +2735,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2219,7 +2771,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2255,8 +2819,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2401,6 +3001,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#k" title="K" class="md-nav__link">
+    K
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#l" title="L" class="md-nav__link">
     L
   </a>
@@ -2415,6 +3022,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#n" title="N" class="md-nav__link">
+    N
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#o" title="O" class="md-nav__link">
     O
   </a>
@@ -2424,6 +3038,13 @@
         <li class="md-nav__item">
   <a href="#p" title="P" class="md-nav__link">
     P
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q" title="Q" class="md-nav__link">
+    Q
   </a>
   
 </li>
@@ -2457,6 +3078,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#v" title="V" class="md-nav__link">
+    V
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#w" title="W" class="md-nav__link">
     W
   </a>
@@ -2464,64 +3092,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#c_1" title="c" class="md-nav__link">
-    c
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#k" title="k" class="md-nav__link">
-    k
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#m_1" title="m" class="md-nav__link">
-    m
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#n" title="n" class="md-nav__link">
-    n
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#p_1" title="p" class="md-nav__link">
-    p
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#q" title="q" class="md-nav__link">
-    q
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#s_1" title="s" class="md-nav__link">
-    s
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v" title="v" class="md-nav__link">
-    v
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#x" title="x" class="md-nav__link">
-    x
+  <a href="#x" title="X" class="md-nav__link">
+    X
   </a>
   
 </li>
@@ -2540,159 +3112,195 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/topics/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
+                  <h1>Topic List</h1>
                 
-                  <h1>Home</h1>
-                
-                <p>Alphabetical list of topics</p>
-<h2 id="a"><em>A</em><a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
+                <!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<p><!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+Alphabetical list of topics</p>
+<h2 id="a">A<a class="headerlink" href="#a" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/Artificial">Artificial</a></li>
-<li><a class="wikilink" href="../topics/AtomManipulator">AtomManipulator</a></li>
-<li><a class="wikilink" href="../topics/AtomTypes">AtomTypes</a></li>
+<li><a class="wikilink topic-link" data-content="How to use the Abipy ABINIT post-processor" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Abipy">Abipy</a>: How to use the Abipy ABINIT post-processor</li>
+<li><a class="wikilink topic-link" data-content="How to use the APPA post-processing tool for the analysis of molecular dynamics
+output files (trajectories)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/APPA">APPA</a>: How to use the APPA post-processing tool for the analysis of molecular dynamics
+output files (trajectories)</li>
+<li><a class="wikilink topic-link" data-content="How to perform some artificial modifications of the physics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Artificial">Artificial</a>: How to perform some artificial modifications of the physics</li>
+<li><a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/AtomManipulator">AtomManipulator</a>: How to manipulate atoms and groups of atoms to generate the set of atomic positions</li>
+<li><a class="wikilink topic-link" data-content="How to specify the types of atoms that form the system" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/AtomTypes">AtomTypes</a>: How to specify the types of atoms that form the system</li>
 </ul>
-<h2 id="b"><em>B</em><a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
+<h2 id="b">B<a class="headerlink" href="#b" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/BSE">BSE</a></li>
-<li><a class="wikilink" href="../topics/Bader">Bader</a></li>
-<li><a class="wikilink" href="../topics/BandOcc">BandOcc</a></li>
-<li><a class="wikilink" href="../topics/Berry">Berry</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform a Bader analysis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Bader">Bader</a>: How to perform a Bader analysis</li>
+<li><a class="wikilink topic-link" data-content="How to plot phonon band structures" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Band2eps">Band2eps</a>: How to plot phonon band structures</li>
+<li><a class="wikilink topic-link" data-content="How to compute the polarisation and take into account a finite homogeneous electric
+field" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Berry">Berry</a>: How to compute the polarisation and take into account a finite homogeneous electric
+field</li>
+<li><a class="wikilink topic-link" data-content="How to to specify bands and occupation numbers, for metals or insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/BandOcc">BandOcc</a>: How to to specify bands and occupation numbers, for metals or insulators</li>
+<li><a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
+dielectric function" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/BSE">BSE</a>: How to perform a Bethe-Salpeter calculation of neutral excitation energies and
+dielectric function</li>
 </ul>
-<h2 id="c"><em>C</em><a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<h2 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/CRPA">CRPA</a></li>
-<li><a class="wikilink" href="../topics/ConstrainedPol">ConstrainedPol</a></li>
-<li><a class="wikilink" href="../topics/Control">Control</a></li>
-<li><a class="wikilink" href="../topics/Coulomb">Coulomb</a></li>
+<li><a class="wikilink topic-link" data-content="How to optimize the geometry under constrained polarization" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ConstrainedPol">ConstrainedPol</a>: How to optimize the geometry under constrained polarization</li>
+<li><a class="wikilink topic-link" data-content="How to control the flow of ABINIT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Control">Control</a>: How to control the flow of ABINIT</li>
+<li><a class="wikilink topic-link" data-content="How to treat adequately the Coulomb interaction, especially in charged cells," data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Coulomb">Coulomb</a>: How to treat adequately the Coulomb interaction, especially in charged cells,</li>
+<li><a class="wikilink topic-link" data-content="How to calculate the effective Coulomb interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/CRPA">CRPA</a>: How to calculate the effective Coulomb interaction</li>
+<li><a class="wikilink topic-link" data-content="How to to specify a crystal, with atomic positions and symmetries" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/crystal">crystal</a>: How to to specify a crystal, with atomic positions and symmetries</li>
 </ul>
-<h2 id="d"><em>D</em><a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
+<h2 id="d">D<a class="headerlink" href="#d" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/DFPT">DFPT</a></li>
-<li><a class="wikilink" href="../topics/DFT+U">DFT+U</a></li>
-<li><a class="wikilink" href="../topics/DMFT">DMFT</a></li>
-<li><a class="wikilink" href="../topics/Dev">Dev</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform a DFT+U calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/DFT+U">DFT+U</a>: How to perform a DFT+U calculation</li>
+<li><a class="wikilink topic-link" data-content="How to to perform a Δ-SCF calculation of neutral excitations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/DeltaSCF">DeltaSCF</a>: How to to perform a Δ-SCF calculation of neutral excitations</li>
+<li><a class="wikilink topic-link" data-content="How to analyze the densities and potentials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/DensityPotential">DensityPotential</a>: How to analyze the densities and potentials</li>
+<li><a class="wikilink topic-link" data-content="How to modify ABINIT behaviour for developers" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Dev">Dev</a>: How to modify ABINIT behaviour for developers</li>
+<li><a class="wikilink topic-link" data-content="How to generically perform DFPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/DFPT">DFPT</a>: How to generically perform DFPT calculations</li>
+<li><a class="wikilink topic-link" data-content="How to perform a DMFT calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/DMFT">DMFT</a>: How to perform a DMFT calculation</li>
 </ul>
-<h2 id="e"><em>E</em><a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
+<h2 id="e">E<a class="headerlink" href="#e" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/EFG">EFG</a></li>
-<li><a class="wikilink" href="../topics/EffMass">EffMass</a></li>
-<li><a class="wikilink" href="../topics/ElPhonInt">ElPhonInt</a></li>
-<li><a class="wikilink" href="../topics/ElPhonTransport">ElPhonTransport</a></li>
-<li><a class="wikilink" href="../topics/Elastic">Elastic</a></li>
-<li><a class="wikilink" href="../topics/ElecBandStructure">ElecBandStructure</a></li>
-<li><a class="wikilink" href="../topics/ElecDOS">ElecDOS</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform an effective mass calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/EffMass">EffMass</a>: How to perform an effective mass calculation</li>
+<li><a class="wikilink topic-link" data-content="How to calculate electric fields gradients" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/EFG">EFG</a>: How to calculate electric fields gradients</li>
+<li><a class="wikilink topic-link" data-content="How to compute elastic, piezoelectric and internal strain tensors from DFPT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Elastic">Elastic</a>: How to compute elastic, piezoelectric and internal strain tensors from DFPT</li>
+<li><a class="wikilink topic-link" data-content="How to compute the matrix elements of the electron-phonon interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ElPhonInt">ElPhonInt</a>: How to compute the matrix elements of the electron-phonon interaction</li>
+<li><a class="wikilink topic-link" data-content="How to compute transport properties that are determined by the electron-phonon
+interaction (electrical resistivity, superconductivity, thermal conductivity)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ElPhonTransport">ElPhonTransport</a>: How to compute transport properties that are determined by the electron-phonon
+interaction (electrical resistivity, superconductivity, thermal conductivity)</li>
+<li><a class="wikilink topic-link" data-content="How to generate the electronic DOS and related topics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ElecDOS">ElecDOS</a>: How to generate the electronic DOS and related topics</li>
+<li><a class="wikilink topic-link" data-content="How to generate the electronic band structure related topics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ElecBandStructure">ElecBandStructure</a>: How to generate the electronic band structure related topics</li>
 </ul>
-<h2 id="f"><em>F</em><a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
+<h2 id="f">F<a class="headerlink" href="#f" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/ForcesStresses">ForcesStresses</a></li>
-<li><a class="wikilink" href="../topics/FrequencyMeshMBPT">FrequencyMeshMBPT</a></li>
+<li><a class="wikilink topic-link" data-content="How to to tune the computation of forces and stresses" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/ForcesStresses">ForcesStresses</a>: How to to tune the computation of forces and stresses</li>
+<li><a class="wikilink topic-link" data-content="How to define frequency meshes (on the imaginary and real axes) for MBPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/FrequencyMeshMBPT">FrequencyMeshMBPT</a>: How to define frequency meshes (on the imaginary and real axes) for MBPT calculations</li>
 </ul>
-<h2 id="g"><em>G</em><a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
+<h2 id="g">G<a class="headerlink" href="#g" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/GW">GW</a></li>
-<li><a class="wikilink" href="../topics/GWls">GWls</a></li>
-<li><a class="wikilink" href="../topics/GeoConstraints">GeoConstraints</a></li>
-<li><a class="wikilink" href="../topics/GeoOpt">GeoOpt</a></li>
+<li><a class="wikilink topic-link" data-content="How to constaint the geometry of the system in geometry optimization, molecular
+dynamics or searches" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/GeoConstraints">GeoConstraints</a>: How to constaint the geometry of the system in geometry optimization, molecular
+dynamics or searches</li>
+<li><a class="wikilink topic-link" data-content="How to perform a geometry optimization" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/GeoOpt">GeoOpt</a>: How to perform a geometry optimization</li>
+<li><a class="wikilink topic-link" data-content="How to " data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Git">Git</a>: How to </li>
+<li><a class="wikilink topic-link" data-content="How to build an input file for a ground state calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/GSintroduction">GSintroduction</a>: How to build an input file for a ground state calculation</li>
+<li><a class="wikilink topic-link" data-content="How to perform a GW calculation, including self-consistency" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/GW">GW</a>: How to perform a GW calculation, including self-consistency</li>
+<li><a class="wikilink topic-link" data-content="How to perform a GW- Lanczos-Sternheimer calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/GWls">GWls</a>: How to perform a GW- Lanczos-Sternheimer calculation</li>
 </ul>
-<h2 id="h"><em>H</em><a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
+<h2 id="h">H<a class="headerlink" href="#h" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/Hybrids">Hybrids</a></li>
+<li><a class="wikilink topic-link" data-content="How to use hybrid functionals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Hybrids">Hybrids</a>: How to use hybrid functionals</li>
 </ul>
-<h2 id="l"><em>L</em><a class="headerlink" href="#l" title="Permanent link">&para;</a></h2>
+<h2 id="k">K<a class="headerlink" href="#k" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/LOTF">LOTF</a></li>
+<li><a class="wikilink topic-link" data-content="How to set parameters related to the electronic wavevectors (k-points)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/k-points">k-points</a>: How to set parameters related to the electronic wavevectors (k-points)</li>
 </ul>
-<h2 id="m"><em>M</em><a class="headerlink" href="#m" title="Permanent link">&para;</a></h2>
+<h2 id="l">L<a class="headerlink" href="#l" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/MagField">MagField</a></li>
-<li><a class="wikilink" href="../topics/MagMom">MagMom</a></li>
-<li><a class="wikilink" href="../topics/MolecularDynamics">MolecularDynamics</a></li>
+<li><a class="wikilink topic-link" data-content="How to use the Learn-of-the-flight feature" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/LOTF">LOTF</a>: How to use the Learn-of-the-flight feature</li>
 </ul>
-<h2 id="o"><em>O</em><a class="headerlink" href="#o" title="Permanent link">&para;</a></h2>
+<h2 id="m">M<a class="headerlink" href="#m" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/Optic">Optic</a></li>
-<li><a class="wikilink" href="../topics/Output">Output</a></li>
+<li><a class="wikilink topic-link" data-content="How to take into account an external magnetic field" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/MagField">MagField</a>: How to take into account an external magnetic field</li>
+<li><a class="wikilink topic-link" data-content="How to perform calculation with constrained atomic magnetic moments" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/MagMom">MagMom</a>: How to perform calculation with constrained atomic magnetic moments</li>
+<li><a class="wikilink topic-link" data-content="How to perform a molecular dynamics calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/MolecularDynamics">MolecularDynamics</a>: How to perform a molecular dynamics calculation</li>
+<li><a class="wikilink topic-link" data-content="How to set parameters for a multi dataset calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/multidtset">multidtset</a>: How to set parameters for a multi dataset calculation</li>
 </ul>
-<h2 id="p"><em>P</em><a class="headerlink" href="#p" title="Permanent link">&para;</a></h2>
+<h2 id="n">N<a class="headerlink" href="#n" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/PAW">PAW</a></li>
-<li><a class="wikilink" href="../topics/PIMD">PIMD</a></li>
-<li><a class="wikilink" href="../topics/PhononBands">PhononBands</a></li>
-<li><a class="wikilink" href="../topics/PhononWidth">PhononWidth</a></li>
-<li><a class="wikilink" href="../topics/Phonons">Phonons</a></li>
-<li><a class="wikilink" href="../topics/Planewaves">Planewaves</a></li>
-<li><a class="wikilink" href="../topics/PseudosPAW">PseudosPAW</a></li>
+<li><a class="wikilink topic-link" data-content="How to compute Raman intensity, and the related electro-optic coefficients" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/nonlinear">nonlinear</a>: How to compute Raman intensity, and the related electro-optic coefficients</li>
 </ul>
-<h2 id="r"><em>R</em><a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
+<h2 id="o">O<a class="headerlink" href="#o" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/RPACorrEn">RPACorrEn</a></li>
-<li><a class="wikilink" href="../topics/RandStopPow">RandStopPow</a></li>
-<li><a class="wikilink" href="../topics/Recursion">Recursion</a></li>
+<li><a class="wikilink topic-link" data-content="How to compute linear and non-linear optical properties in the independent-particle
+approximation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Optic">Optic</a>: How to compute linear and non-linear optical properties in the independent-particle
+approximation</li>
+<li><a class="wikilink topic-link" data-content="How to tune the output of computed quantities" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Output">Output</a>: How to tune the output of computed quantities</li>
 </ul>
-<h2 id="s"><em>S</em><a class="headerlink" href="#s" title="Permanent link">&para;</a></h2>
+<h2 id="p">P<a class="headerlink" href="#p" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/SCFAlgorithms">SCFAlgorithms</a></li>
-<li><a class="wikilink" href="../topics/SCFControl">SCFControl</a></li>
-<li><a class="wikilink" href="../topics/STM">STM</a></li>
-<li><a class="wikilink" href="../topics/SelfEnergy">SelfEnergy</a></li>
-<li><a class="wikilink" href="../topics/SmartSymm">SmartSymm</a></li>
-<li><a class="wikilink" href="../topics/Susceptibility">Susceptibility</a></li>
+<li><a class="wikilink topic-link" data-content="How to set parameters for a parallel calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/parallelism">parallelism</a>: How to set parameters for a parallel calculation</li>
+<li><a class="wikilink topic-link" data-content="How to set parameters for a PAW calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PAW">PAW</a>: How to set parameters for a PAW calculation</li>
+<li><a class="wikilink topic-link" data-content="How to perform a PIMD calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PIMD">PIMD</a>: How to perform a PIMD calculation</li>
+<li><a class="wikilink topic-link" data-content="How to perform numerically precise calculations with planewaves or projector-
+augmented waves and pseudopotentials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Planewaves">Planewaves</a>: How to perform numerically precise calculations with planewaves or projector-
+augmented waves and pseudopotentials</li>
+<li><a class="wikilink topic-link" data-content="How to compute phonon frequencies and modes, IR and Raman spectra, Born effective
+charges, IR reflectivity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Phonons">Phonons</a>: How to compute phonon frequencies and modes, IR and Raman spectra, Born effective
+charges, IR reflectivity &hellip;</li>
+<li><a class="wikilink topic-link" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
+velocity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PhononBands">PhononBands</a>: How to compute phonon bands, density of states, interatomic force constants, sound
+velocity &hellip;</li>
+<li><a class="wikilink topic-link" data-content="How to compute the linewidth (or lifetime) of phonons, due to the electron-phonon
+interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PhononWidth">PhononWidth</a>: How to compute the linewidth (or lifetime) of phonons, due to the electron-phonon
+interaction</li>
+<li><a class="wikilink topic-link" data-content="How to " data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PortabilityNonRegression">PortabilityNonRegression</a>: How to </li>
+<li><a class="wikilink topic-link" data-content="How to set parameters for a calculation with a positron in the system." data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/positron">positron</a>: How to set parameters for a calculation with a positron in the system.</li>
+<li><a class="wikilink topic-link" data-content="How to print some useful quantities" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/printing">printing</a>: How to print some useful quantities</li>
+<li><a class="wikilink topic-link" data-content="How to master the use of norm-conserving pseudopotentials and PAW atomic data, and
+their consequences" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/PseudosPAW">PseudosPAW</a>: How to master the use of norm-conserving pseudopotentials and PAW atomic data, and
+their consequences</li>
 </ul>
-<h2 id="t"><em>T</em><a class="headerlink" href="#t" title="Permanent link">&para;</a></h2>
+<h2 id="q">Q<a class="headerlink" href="#q" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/TDDFT">TDDFT</a></li>
-<li><a class="wikilink" href="../topics/TDepES">TDepES</a></li>
-<li><a class="wikilink" href="../topics/Temperature">Temperature</a></li>
-<li><a class="wikilink" href="../topics/TransPath">TransPath</a></li>
-<li><a class="wikilink" href="../topics/TuningSpeed">TuningSpeed</a></li>
+<li><a class="wikilink topic-link" data-content="How to set parameters related to the phonon wavevectors (q-points) in DFPT
+calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/q-points">q-points</a>: How to set parameters related to the phonon wavevectors (q-points) in DFPT
+calculations</li>
 </ul>
-<h2 id="u"><em>U</em><a class="headerlink" href="#u" title="Permanent link">&para;</a></h2>
+<h2 id="r">R<a class="headerlink" href="#r" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/UnitCell">UnitCell</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform random stopping power calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/RandStopPow">RandStopPow</a>: How to perform random stopping power calculation</li>
+<li><a class="wikilink topic-link" data-content="How to perform orbital-free calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Recursion">Recursion</a>: How to perform orbital-free calculations</li>
+<li><a class="wikilink topic-link" data-content="How to calculate the RPA correlation energy" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/RPACorrEn">RPACorrEn</a>: How to calculate the RPA correlation energy</li>
 </ul>
-<h2 id="w"><em>W</em><a class="headerlink" href="#w" title="Permanent link">&para;</a></h2>
+<h2 id="s">S<a class="headerlink" href="#s" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/Wannier">Wannier</a></li>
-<li><a class="wikilink" href="../topics/Wavelets">Wavelets</a></li>
+<li><a class="wikilink topic-link" data-content="How to control the SCF cycle" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/SCFControl">SCFControl</a>: How to control the SCF cycle</li>
+<li><a class="wikilink topic-link" data-content="How to select the SCF algorithm" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/SCFAlgorithms">SCFAlgorithms</a>: How to select the SCF algorithm</li>
+<li><a class="wikilink topic-link" data-content="How to compute the electronic self-energy (due to electron-electron interaction)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/SelfEnergy">SelfEnergy</a>: How to compute the electronic self-energy (due to electron-electron interaction)</li>
+<li><a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/SmartSymm">SmartSymm</a>: How to use the symetry information to build the system from the irreducible part of
+the primitive cell</li>
+<li><a class="wikilink topic-link" data-content="How to set parameters for a spin-polarized calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/spinpolarisation">spinpolarisation</a>: How to set parameters for a spin-polarized calculation</li>
+<li><a class="wikilink topic-link" data-content="How to obtain a Scanning Tunneling Microscopy map" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/STM">STM</a>: How to obtain a Scanning Tunneling Microscopy map</li>
+<li><a class="wikilink topic-link" data-content="How to compute the frequency-dependent susceptibility matrix, and related screened
+interaction matrix, and inverse dielectric marix" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Susceptibility">Susceptibility</a>: How to compute the frequency-dependent susceptibility matrix, and related screened
+interaction matrix, and inverse dielectric marix</li>
 </ul>
-<h2 id="c_1"><em>c</em><a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h2>
+<h2 id="t">T<a class="headerlink" href="#t" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/crystal">crystal</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform time-dependent density-functional theory calculations of neutral
+excitation energies" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/TDDFT">TDDFT</a>: How to perform time-dependent density-functional theory calculations of neutral
+excitation energies</li>
+<li><a class="wikilink topic-link" data-content="How to calculate the temperature dependence of the electronic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/TDepES">TDepES</a>: How to calculate the temperature dependence of the electronic structure</li>
+<li><a class="wikilink topic-link" data-content="How to compute vibrational free energy, entropy, specific heat, thermal expansion, as
+well as atomic temperature factors" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Temperature">Temperature</a>: How to compute vibrational free energy, entropy, specific heat, thermal expansion, as
+well as atomic temperature factors</li>
+<li><a class="wikilink topic-link" data-content="How to calculate transition paths" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/TransPath">TransPath</a>: How to calculate transition paths</li>
+<li><a class="wikilink topic-link" data-content="How to tune the speed and memory usage" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/TuningSpeed">TuningSpeed</a>: How to tune the speed and memory usage</li>
 </ul>
-<h2 id="k"><em>k</em><a class="headerlink" href="#k" title="Permanent link">&para;</a></h2>
+<h2 id="u">U<a class="headerlink" href="#u" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/k-points">k-points</a></li>
+<li><a class="wikilink topic-link" data-content="How to unfold supercell band structures" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Unfolding">Unfolding</a>: How to unfold supercell band structures</li>
+<li><a class="wikilink topic-link" data-content="How to specify the unit cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/UnitCell">UnitCell</a>: How to specify the unit cell</li>
 </ul>
-<h2 id="m_1"><em>m</em><a class="headerlink" href="#m_1" title="Permanent link">&para;</a></h2>
+<h2 id="v">V<a class="headerlink" href="#v" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/multidtset">multidtset</a></li>
+<li><a class="wikilink topic-link" data-content="How to use Van der Waals functionals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/vdw">vdw</a>: How to use Van der Waals functionals</li>
+<li><a class="wikilink topic-link" data-content="How to become convinced that results are numerically correct" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Verification">Verification</a>: How to become convinced that results are numerically correct</li>
 </ul>
-<h2 id="n"><em>n</em><a class="headerlink" href="#n" title="Permanent link">&para;</a></h2>
+<h2 id="w">W<a class="headerlink" href="#w" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/nonlinear">nonlinear</a></li>
+<li><a class="wikilink topic-link" data-content="How to perform Wannier functions calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Wannier">Wannier</a>: How to perform Wannier functions calculation</li>
+<li><a class="wikilink topic-link" data-content="How to perform calculations on a wavelet basis" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/Wavelets">Wavelets</a>: How to perform calculations on a wavelet basis</li>
 </ul>
-<h2 id="p_1"><em>p</em><a class="headerlink" href="#p_1" title="Permanent link">&para;</a></h2>
+<h2 id="x">X<a class="headerlink" href="#x" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink" href="../topics/parallelism">parallelism</a></li>
-<li><a class="wikilink" href="../topics/positron">positron</a></li>
-<li><a class="wikilink" href="../topics/printing">printing</a></li>
-</ul>
-<h2 id="q"><em>q</em><a class="headerlink" href="#q" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a class="wikilink" href="../topics/q-points">q-points</a></li>
-</ul>
-<h2 id="s_1"><em>s</em><a class="headerlink" href="#s_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a class="wikilink" href="../topics/spinpolarisation">spinpolarisation</a></li>
-</ul>
-<h2 id="v"><em>v</em><a class="headerlink" href="#v" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a class="wikilink" href="../topics/vdw">vdw</a></li>
-</ul>
-<h2 id="x"><em>x</em><a class="headerlink" href="#x" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a class="wikilink" href="../topics/xc">xc</a></li>
+<li><a class="wikilink topic-link" data-content="How to set parameters related to the exchange and correlation functionals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../topics/xc">xc</a>: How to set parameters related to the exchange and correlation functionals</li>
 </ul>
                 
                   
@@ -2706,15 +3314,186 @@
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href=".." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" title="Topics" class="md-tabs__link md-tabs__link--active">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../user-guide/respfn/" title="Respfn" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Respfn
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="Abipy/" title="Abipy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Abipy
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../assets/javascripts/application-6940329b9f.js"></script>

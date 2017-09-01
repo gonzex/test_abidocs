@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="./assets/images/favicon.png">
+        <link rel="shortcut icon" href="./images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="./js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="./assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="./assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="./css/codehilite.css">
-    
       <link rel="stylesheet" href="./css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="./images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="developers/README/" title="Developers" class="md-tabs__link">
+        <a href="developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="./images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -422,8 +414,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-the-abinit-executable-abinit" title="2. The ABINIT executable : abinit." class="md-nav__link">
-    2. The ABINIT executable : abinit.
+  <a href="#246-the-abinit-executable-abinit" title="**2. The ABINIT executable : abinit. **" class="md-nav__link">
+    **2. The ABINIT executable : abinit. **
   </a>
   
 </li>
@@ -450,22 +442,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-output-files" title="6. Output files." class="md-nav__link">
-    6. Output files.
+  <a href="#646-output-files" title="** 6. Output files.**" class="md-nav__link">
+    ** 6. Output files.**
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#746-what-does-the-code-do" title="7. What does the code do?" class="md-nav__link">
-    7. What does the code do?
+  <a href="#746-what-does-the-code-do" title="** 7. What does the code do?**" class="md-nav__link">
+    ** 7. What does the code do?**
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#846-versioning-logic" title="8. Versioning logic." class="md-nav__link">
-    8. Versioning logic.
+  <a href="#846-versioning-logic" title="** 8. Versioning logic.**" class="md-nav__link">
+    ** 8. Versioning logic.**
   </a>
   
 </li>
@@ -509,7 +501,7 @@
 
 
   <li class="md-nav__item">
-    <a href="user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -521,7 +513,67 @@
 
 
   <li class="md-nav__item">
-    <a href="user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -533,8 +585,44 @@
 
 
   <li class="md-nav__item">
-    <a href="user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -569,8 +657,32 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -629,8 +741,8 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -643,6 +755,18 @@
   <li class="md-nav__item">
     <a href="topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -725,6 +849,42 @@
 
 
   <li class="md-nav__item">
+    <a href="topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -739,18 +899,6 @@
   <li class="md-nav__item">
     <a href="topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -809,8 +957,20 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -833,20 +993,8 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -905,6 +1053,30 @@
 
 
   <li class="md-nav__item">
+    <a href="topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -931,18 +1103,6 @@
   <li class="md-nav__item">
     <a href="topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1085,8 +1245,20 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1109,6 +1281,18 @@
 
 
   <li class="md-nav__item">
+    <a href="topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1121,20 +1305,8 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1229,8 +1401,8 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1241,8 +1413,8 @@
 
 
   <li class="md-nav__item">
-    <a href="topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1373,6 +1545,18 @@
 
 
   <li class="md-nav__item">
+    <a href="topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1387,6 +1571,18 @@
   <li class="md-nav__item">
     <a href="topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1456,31 +1652,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1733,8 +1929,32 @@
 
 
   <li class="md-nav__item">
+    <a href="input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1842,6 +2062,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1857,10 +2089,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1908,8 +2260,20 @@
 
 
   <li class="md-nav__item">
-    <a href="tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1938,13 +2302,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1998,13 +2410,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2028,14 +2440,170 @@
 
 
   <li class="md-nav__item">
+    <a href="tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2069,8 +2637,20 @@
 
 
   <li class="md-nav__item">
-    <a href="theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2093,7 +2673,19 @@
 
 
   <li class="md-nav__item">
-    <a href="bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2129,8 +2721,44 @@
 
 
   <li class="md-nav__item">
-    <a href="developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2226,8 +2854,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-the-abinit-executable-abinit" title="2. The ABINIT executable : abinit." class="md-nav__link">
-    2. The ABINIT executable : abinit.
+  <a href="#246-the-abinit-executable-abinit" title="**2. The ABINIT executable : abinit. **" class="md-nav__link">
+    **2. The ABINIT executable : abinit. **
   </a>
   
 </li>
@@ -2254,22 +2882,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-output-files" title="6. Output files." class="md-nav__link">
-    6. Output files.
+  <a href="#646-output-files" title="** 6. Output files.**" class="md-nav__link">
+    ** 6. Output files.**
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#746-what-does-the-code-do" title="7. What does the code do?" class="md-nav__link">
-    7. What does the code do?
+  <a href="#746-what-does-the-code-do" title="** 7. What does the code do?**" class="md-nav__link">
+    ** 7. What does the code do?**
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#846-versioning-logic" title="8. Versioning logic." class="md-nav__link">
-    8. Versioning logic.
+  <a href="#846-versioning-logic" title="** 8. Versioning logic.**" class="md-nav__link">
+    ** 8. Versioning logic.**
   </a>
   
 </li>
@@ -2288,22 +2916,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
                 
                   <h1>Introduction</h1>
                 
                 <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
 <h3 id="046-foreword"><strong>0. Foreword</strong><a class="headerlink" href="#046-foreword" title="Permanent link">&para;</a></h3>
+<p>hello</p>
 <p>The ABINIT project is a group effort of dozens of people worldwide, whose
 central outcome is the main ABINIT application, delivered with many other
 files in the ABINIT package. The ABINIT project includes also resources
 provided on the <a href="http://www.abinit.org">ABINIT Web site</a> and the 
 <a href="https://github.com/abinit">ABINIT Github repository</a>.</p>
-<p>After having gone through the present New User's Guide, you should follow the
-ABINIT tutorial (<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>).</p>
+<p>After having gone through the present New User&rsquo;s Guide, you should follow the
+ABINIT tutorial (<a class="wikilink lesson-link" href="./tutorials/welcome">lesson_welcome</a>).</p>
 <p>ABINIT is a package whose main program allows to find the total energy, charge
 density and electronic structure of systems made of electrons and nuclei
 (molecules and periodic solids) within Density Functional Theory, using
@@ -2323,7 +2951,7 @@ unpacked it and installed it. If not, you might nevertheless continue reading
 the present Web page, just to get an overview, but it might prove more
 fruitful to have first downloaded the ABINIT package and at least unpacked it,
 see the <a href="http://www.abinit.org/installation">installation notes</a>.</p>
-<p>We will use the name "~abinit" to refer to the directory that contains the
+<p>We will use the name &ldquo;~abinit&rdquo; to refer to the directory that contains the
 ABINIT package after download. In practice, a version number is appended to
 this name, to give for example : abinit-8.4.0 . The ABINIT package versioning
 scheme is explained later in this file.</p>
@@ -2331,7 +2959,7 @@ scheme is explained later in this file.</p>
 well as other descriptive files, should be found in ~abinit/doc/users . Other
 subdirectories will be described later.</p>
 <hr />
-<h3 id="246-the-abinit-executable-abinit"><strong>2. The ABINIT executable : abinit. </strong><a class="headerlink" href="#246-the-abinit-executable-abinit" title="Permanent link">&para;</a></h3>
+<h3 id="246-the-abinit-executable-abinit">**2. The ABINIT executable : abinit. **<a class="headerlink" href="#246-the-abinit-executable-abinit" title="Permanent link">&para;</a></h3>
 <p>After compilation, the main code will be present in the package as
 ~abinit/src/98_main/abinit (or perhaps at another place, depending on your
 installation).</p>
@@ -2344,23 +2972,23 @@ installation).</p>
 </ul>
 <p>With these items a job can be run.</p>
 <p>The full list of input variables, all of which are provided in the single
-input file, is given in the ABINIT <a class="wikilink" href="./allvariables/">allvariables</a>.<br />
-The detailed description of input variables is given in many "VAR*" files,
+input file, is given in the ABINIT <a class="wikilink" href="./FAKE_URL">FAKE_URL</a>.<br />
+The detailed description of input variables is given in many &ldquo;VAR*&rdquo; files,
 including:</p>
 <ul>
-<li>Basic variables, <a class="wikilink" href="./varbas/">varbas</a></li>
-<li>Ground-state calculation variables, <a class="wikilink" href="./vargs/">vargs</a></li>
-<li>GW variables, <a class="wikilink" href="./vargw/">vargw</a></li>
-<li>Files handling variables, <a class="wikilink" href="./varfil/">varfil</a></li>
-<li>Parallelisation variables, <a class="wikilink" href="./varpar/">varpar</a></li>
-<li>Response Function variables, <a class="wikilink" href="./varrf/">varrf</a></li>
-<li>... </li>
+<li>Basic variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>Ground-state calculation variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>GW variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>Files handling variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>Parallelisation variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>Response Function variables, <a class="wikilink" href="./FAKE_URL">FAKE_URL</a></li>
+<li>&hellip; </li>
 </ul>
 <p>A set of examples aimed at guiding the beginner is available in the tutorial
-(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>).</p>
+(<a class="wikilink lesson-link" href="./tutorials/welcome">lesson_welcome</a>).</p>
 <p>Other test cases (more than 800 input files) can be found in the ~abinit/test
-subdirectories, e.g. "fast", the "vX" series (v1, v2, ... v67mbpt, v7, v8),
-"libxc", "paral", the "tutoX" series ...</p>
+subdirectories, e.g. &ldquo;fast&rdquo;, the &ldquo;vX&rdquo; series (v1, v2, &hellip; v67mbpt, v7, v8),
+&ldquo;libxc&rdquo;, &ldquo;paral&rdquo;, the &ldquo;tutoX&rdquo; series &hellip;</p>
 <p>Many different sorts of pseudopotentials can be used with ABINIT. Most of them
 can be found on the <a href="http://www.abinit.org/downloads/atomic-data-files">atomic data
 files</a> page of the ABINIT
@@ -2378,10 +3006,10 @@ package.</p>
 their sources is also in ~abinit/src/98_main .<br />
 These include : <strong>mrgddb</strong>, <strong>anaddb</strong>, <strong>aim</strong>, <strong>conducti</strong>, <strong>optics</strong>,
 <strong>mrgscr</strong>, <strong>cut3d</strong>, and <strong>fold2Bloch</strong>.</p>
-<p><strong>mrgddb</strong> and <strong>anaddb</strong> allow to post-process responses to atomic displacements and/or to homogeneous electric field, and/or to strain perturbation, as generated by abinit, to produce full phonon band structures, thermodynamical functions, piezoelectric properties, superconducting properties, to name a few. "mrgddb" is for "Merge of Derivative DataBases", while "anaddb" is for "Analysis of Derivative DataBases". </p>
-<p><strong>cut3d</strong> can be used to post-process the three-dimensional density (or potential) files generated by abinit. It allows one to deduce charge density in selected planes (for isodensity plots), along selected lines, or at selected points. It allows one also to make the Hirshfeld decomposition of the charge density in "atomic" contributions. </p>
+<p><strong>mrgddb</strong> and <strong>anaddb</strong> allow to post-process responses to atomic displacements and/or to homogeneous electric field, and/or to strain perturbation, as generated by abinit, to produce full phonon band structures, thermodynamical functions, piezoelectric properties, superconducting properties, to name a few. &ldquo;mrgddb&rdquo; is for &ldquo;Merge of Derivative DataBases&rdquo;, while &ldquo;anaddb&rdquo; is for &ldquo;Analysis of Derivative DataBases&rdquo;. </p>
+<p><strong>cut3d</strong> can be used to post-process the three-dimensional density (or potential) files generated by abinit. It allows one to deduce charge density in selected planes (for isodensity plots), along selected lines, or at selected points. It allows one also to make the Hirshfeld decomposition of the charge density in &ldquo;atomic&rdquo; contributions. </p>
 <p><strong>fold2Bloch</strong> is used for unfolding of first-principle electronic band structure obtained with ABINIT code. </p>
-<p><strong>aim</strong> is also a post-processor of the three-dimensional density files generated by abinit. It performs the Bader Atom-In-Molecule decomposition of the charge density in "atomic" contributions. </p>
+<p><strong>aim</strong> is also a post-processor of the three-dimensional density files generated by abinit. It performs the Bader Atom-In-Molecule decomposition of the charge density in &ldquo;atomic&rdquo; contributions. </p>
 <p><strong>conducti</strong> allows one to compute the frequency-dependent optical conductivity. </p>
 <p>Some utility programs are not written in F90, but in Python. They are
 contained in ~abinit/scripts, where post-processing (numerous tools) and pre-
@@ -2393,7 +3021,7 @@ outputs, like abinit_eignc_to_bandstructure.py .</p>
 <a href="https://github.com/abinit">ABINIT GitHub site</a>. The sources of the latest
 version of the ABINIT package are actually mirrored on this site, but for
 other resources (not in the package) this is the only download point.</p>
-<p><strong>abipy</strong> is an open-source library for analyzing the results produced by ABINIT (including visualisation), and for preparing input files and workflows to automate ab-initio calculations (so-called high-throughput calculations). It provides interface with pymatgen, developed by the Materials Project. Links for AbiPy : <a href="https://github.com/abinit/abipy">https://github.com/abinit/abipy</a>, and <a href="http://abinit.github.io/abipy/">http://abinit.github.io/abipy</a>. </p>
+<p><strong>abipy</strong> is an open-source library for analyzing the results produced by ABINIT (including visualisation), and for preparing input files and workflows to automate ab-initio calculations (so-called high-throughput calculations). It provides interface with pymatgen, developed by the Materials Project. Links for AbiPy : <a href="https://github.com/abinit/abipy">https://github.com/abinit/abipy</a>, and <a href="http://abinit.github.io/abipy/"><a href="http://abinit.github.io/abipy">http://abinit.github.io/abipy</a></a>. </p>
 <p>The <strong>pseudo-dojo</strong> is a Python framework for generating and validating
 pseudopotentials (or PAW atomic data files). Normal ABINIT users benefit a lot
 from this project, since the ABINIT recommended table of norm-conserving
@@ -2407,80 +3035,80 @@ community through the ABINIT packages, portal and Github, many ABINIT-
 independent commercial or free applications can be used to visualize ABINIT
 outputs or interact with ABINIT. We provide a (not very well maintained) list
 of links in <a href="http://www.abinit.org/community/links">http://www.abinit.org/community/links</a>. Of course, you might get
-more by browsing the Web...</p>
+more by browsing the Web&hellip;</p>
 <hr />
 <h3 id="546-input-variables-to-abinit"><strong>5. Input variables to abinit.</strong><a class="headerlink" href="#546-input-variables-to-abinit" title="Permanent link">&para;</a></h3>
 <p>As an overview, the most important input variables, to be provided in the
 input file, are listed below:</p>
 <p>Specification of the geometry of the problem, and types of atoms :</p>
-<p><a class="wikilink" href="./input_variables/basic/#natom">natom</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>
 : total number of atoms in unit cell</p>
-<p><a class="wikilink" href="./input_variables/basic/#ntypat">ntypat</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#ntypat">ntypat</a>
 : number of types of atoms</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>the atomic coordinates (<a class="wikilink" href="./input_variables/basic/#xangst">xangst</a>, <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> or <a class="wikilink" href="./input_variables/basic/#xred">xred</a>)
+<p>the atomic coordinates (<a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a>, <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> or <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a>)
 must be specified in the same order</p>
 </div>
-<p><a class="wikilink" href="./input_variables/basic/#rprim">rprim</a> (3,3)
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#rprim">rprim</a> (3,3)
 : unscaled primitive translations of periodic cell;
   each COLUMN of this array is one primitive translation</p>
-<p><a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
 : cartesian coordinates (Angstrom) of atoms in unit cell
-  NOTE: only used when <a class="wikilink" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> are absent</p>
-<p><a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> are absent</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
 : cartesian coordinates (Bohr) of atoms in unit cell
-  NOTE: only used when <a class="wikilink" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> are absent</p>
-<p><a class="wikilink" href="./input_variables/basic/#xred">xred</a> (3,<a class="wikilink" href="./input_variables/basic/#natom">natom</a>)
+  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> are absent</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
 : fractional coordinates for atomic locations;
-  NOTE: leave out if <a class="wikilink" href="./input_variables/basic/#xangst">xangst</a> or <a class="wikilink" href="./input_variables/basic/#xcart">xcart</a> is used</p>
-<p><a class="wikilink" href="./input_variables/basic/#znucl">znucl</a> (<a class="wikilink" href="./input_variables/basic/#ntypat">ntypat</a>)
+  NOTE: leave out if <a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> or <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> is used</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#znucl">znucl</a> (<a class="wikilink codevar-link" href="./input_variables/basic/#ntypat">ntypat</a>)
 : Nuclear charge of each type of element; must agree with
   nuclear charge found in psp file.</p>
 <p>Specification of the planewave basis set, Brillouin zone wavevector sampling, and occupation of the bands:</p>
-<p><a class="wikilink" href="./input_variables/basic/#ecut">ecut</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#ecut">ecut</a>
 : planewave kinetic energy cutoff in Hartree</p>
-<p><a class="wikilink" href="./input_variables/basic/#kptopt">kptopt</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#kptopt">kptopt</a>
 : option for specifying the k-point grid
-  if <a class="wikilink" href="./input_variables/basic/#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
+  if <a class="wikilink codevar-link" href="./input_variables/basic/#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
   (for the latter, see the <a href="./help_abinit.html">help_abinit</a> file)</p>
-<p><a class="wikilink" href="./input_variables/basic/#ngkpt">ngkpt</a> (3)
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#ngkpt">ngkpt</a> (3)
 : dimensions of the three-dimensional grid of k-points</p>
-<p><a class="wikilink" href="./input_variables/basic/#occopt">occopt</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#occopt">occopt</a>
 : set the occupation of electronic levels:
     =1 for semiconductors
-    =3 ... 7  for metals</p>
+    =3 &hellip; 7  for metals</p>
 <p>Specification of the type of calculation to be done:</p>
-<p><a class="wikilink" href="./input_variables/rlx/#ionmov">ionmov</a>
-: when <a class="wikilink" href="./input_variables/rlx/#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
+<p><a class="wikilink codevar-link" href="./input_variables/rlx/#ionmov">ionmov</a>
+: when <a class="wikilink codevar-link" href="./input_variables/rlx/#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
                   = 2 : search for the equilibrium geometry
                   = 6 : molecular dynamics</p>
-<p><a class="wikilink" href="./input_variables/basic/#iscf">iscf</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#iscf">iscf</a>
 : either a positive number for defining self-consistent
   algorithm (usual), or -2 for band structure in fixed potential</p>
-<p><a class="wikilink" href="./input_variables/gstate/#optdriver">optdriver</a>
+<p><a class="wikilink codevar-link" href="./input_variables/gstate/#optdriver">optdriver</a>
 : when == 3 and 4 : will do GW calculations (many-body perturbation theory)</p>
-<p><a class="wikilink" href="./input_variables/dfpt/#rfelfd">rfelfd</a>
+<p><a class="wikilink codevar-link" href="./input_variables/dfpt/#rfelfd">rfelfd</a>
 : when /= 0 : will do response calculation to electric field</p>
-<p><a class="wikilink" href="./input_variables/dfpt/#rfphon">rfphon</a>
+<p><a class="wikilink codevar-link" href="./input_variables/dfpt/#rfphon">rfphon</a>
 : when = 1 : will do response calculation to atomic displacements</p>
 <p>Specification of the numerical convergency of the calculation:</p>
-<p><a class="wikilink" href="./input_variables/basic/#nstep">nstep</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#nstep">nstep</a>
 : maximal number of self-consistent cycles (on the order of 20)</p>
-<p><a class="wikilink" href="./input_variables/basic/#tolvrs">tolvrs</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic/#tolvrs">tolvrs</a>
 : tolerance on self-consistent convergence</p>
-<p><a class="wikilink" href="./input_variables/rlx/#ntime">ntime</a>
+<p><a class="wikilink codevar-link" href="./input_variables/rlx/#ntime">ntime</a>
 : number of molecular dynamics or relaxation steps</p>
-<p><a class="wikilink" href="./input_variables/rlx/#tolmxf">tolmxf</a>
+<p><a class="wikilink codevar-link" href="./input_variables/rlx/#tolmxf">tolmxf</a>
 : force tolerance for structural relaxation in Hartree/Bohr</p>
 <hr />
-<h3 id="646-output-files"><strong> 6. Output files.</strong><a class="headerlink" href="#646-output-files" title="Permanent link">&para;</a></h3>
+<h3 id="646-output-files">** 6. Output files.**<a class="headerlink" href="#646-output-files" title="Permanent link">&para;</a></h3>
 <p>Output from an abinit run shows up in several files and in the standard
 output. Usually one runs the command with a pipe of standard output to a log
 file, which can be inspected for warnings or error messages if anything goes
 wrong or otherwise can be discarded at the end of a run. The more easily
 readable formatted output goes to the output file whose name is given in the
-"files" file, i.e. you provide the name of the formatted output file. No error
+&ldquo;files&rdquo; file, i.e. you provide the name of the formatted output file. No error
 message is reported in the latter file. On the other hand, this is the file
 that is usually kept for archival purposes.</p>
 <p>In addition, wavefunctions can be input (starting point) or output (result of
@@ -2490,16 +3118,16 @@ unformatted files.<br />
 The Density Of States (DOS) can also be an output as a formatted (readable)
 file.<br />
 An analysis of geometry can also be provided (GEO file)<br />
-The name of these files is constructed from a "root" name, that must be
+The name of these files is constructed from a &ldquo;root&rdquo; name, that must be
 different for input files and output files, and that is provided by the user,
 to which the code will append a descriptor, like WFK for wavefunctions, DEN
-for the density, POT for the potential, DOS for the density of states ...</p>
-<p>There are also different temporary files. A "root" name should be provided by
+for the density, POT for the potential, DOS for the density of states &hellip;</p>
+<p>There are also different temporary files. A &ldquo;root&rdquo; name should be provided by
 the user, from which the code generates a full name. Amongst these files,
-there is a "status" file, summarizing the current status of advancement of the
+there is a &ldquo;status&rdquo; file, summarizing the current status of advancement of the
 code, in long jobs. The <a href="./help_abinit.html">ABINIT help file</a> contains more details.</p>
 <hr />
-<h3 id="746-what-does-the-code-do"><strong> 7. What does the code do?</strong><a class="headerlink" href="#746-what-does-the-code-do" title="Permanent link">&para;</a></h3>
+<h3 id="746-what-does-the-code-do">** 7. What does the code do?**<a class="headerlink" href="#746-what-does-the-code-do" title="Permanent link">&para;</a></h3>
 <p>The simplest sort of job computes an electronic structure for a fixed set of
 atomic positions within a periodic unit cell. By electronic structure, we mean
 a set of eigenvalues and wavefunctions which achieve the lowest (DFT) energy
@@ -2516,37 +3144,37 @@ code can optionally adjust atomic positions to move the forces toward zero and
 adjust unit cell parameters to move toward zero stress. It can performs
 molecular dynamics. It can also be used to find responses to atomic
 displacements and homogeneous electric field, so that the full phonon band
-structure can be constructed...</p>
+structure can be constructed&hellip;</p>
 <hr />
-<h3 id="846-versioning-logic"><strong> 8. Versioning logic.</strong><a class="headerlink" href="#846-versioning-logic" title="Permanent link">&para;</a></h3>
-<p>We finish this "new user guide" with a brief explanation of the logic of
+<h3 id="846-versioning-logic">** 8. Versioning logic.**<a class="headerlink" href="#846-versioning-logic" title="Permanent link">&para;</a></h3>
+<p>We finish this &ldquo;new user guide&rdquo; with a brief explanation of the logic of
 ABINIT version releases.</p>
 <p>The full name of a version has three digits (for example, 8.4.0). The first
 digit is the slowly varying one (in average, it is changed after two or three
 years). It indicates the major efforts and trends in that version. At the
 level of 1.x.y ABINIT (before 2000 !), the major effort was placed on the
-"ground-state" properties (total energy, forces, geometry optimisation,
-molecular dynamics ...). With version 2.x.y , response-function features
+&ldquo;ground-state&rdquo; properties (total energy, forces, geometry optimisation,
+molecular dynamics &hellip;). With version 2.x.y , response-function features
 (phonons, dielectric response, effective charges, interatomic force constants
-...) were included. The main additional characteristics of version 3.x.y were
+&hellip;) were included. The main additional characteristics of version 3.x.y were
 the distribution under the GNU General Public Licence, the set-up of the
 documentation and help to the user through the Web site in html format, and
 the availability of GW capabilities. The version 4.x.y put a lot of effort in
 the speed of ABINIT (e.g. PAW), and its parallelisation. These historical
-developments explain why the tests are gathered in directories "v1", "v2",
-"v3", etc. Every 4 to 8 months, we release a "production version" of ABINIT in
+developments explain why the tests are gathered in directories &ldquo;v1&rdquo;, &ldquo;v2&rdquo;,
+&ldquo;v3&rdquo;, etc. Every 4 to 8 months, we release a &ldquo;production version&rdquo; of ABINIT in
 which the second digit, an even number, is incremented, which usually goes
 with additional features. A release notes document is issued, with the list of
 additional capabilities, and other information with respect to modifications
 with the previous release. The odd second digits are used for internal
-management only, so-called "development versions" of ABINIT (for example
+management only, so-called &ldquo;development versions&rdquo; of ABINIT (for example
 8.5.0). Two versions differing by the last (third) digit have the same
 capabilities, but the one with the largest last digit is more debugged than
 the other : version 8.4.1 is more debugged than 8.4.0, but no new features has
 been added (so likely, no additional bug!).</p>
 <hr />
 <p>In order to start using ABINIT, please follow the tutorial
-(<a class="wikilink" href="./lesson_welcome/">lesson_welcome</a>)</p>
+(<a class="wikilink lesson-link" href="./tutorials/welcome">lesson_welcome</a>)</p>
                 
                   
                 
@@ -2559,15 +3187,172 @@ been added (so likely, no additional bug!).</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="." title="User Guide" class="md-tabs__link md-tabs__link--active">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="installation/" title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Installation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="./assets/javascripts/application-6940329b9f.js"></script>

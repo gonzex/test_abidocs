@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -488,8 +576,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -548,8 +660,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -562,6 +674,18 @@
   <li class="md-nav__item">
     <a href="../Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -644,6 +768,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -658,18 +818,6 @@
   <li class="md-nav__item">
     <a href="../DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -728,8 +876,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -752,20 +912,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -824,6 +972,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -850,18 +1022,6 @@
   <li class="md-nav__item">
     <a href="../Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1002,6 +1162,42 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1047,24 +1243,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
       
       
     </ul>
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Phonons/" title="Phonons" class="md-nav__link">
-      Phonons
-    </a>
   </li>
 
         
@@ -1086,20 +1277,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1194,8 +1373,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1206,8 +1385,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1338,6 +1517,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1352,6 +1543,18 @@
   <li class="md-nav__item">
     <a href="../vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1421,31 +1624,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1698,8 +1901,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1807,6 +2034,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1822,10 +2061,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1873,8 +2232,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1903,13 +2274,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1963,13 +2382,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1993,14 +2412,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2034,8 +2609,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2058,7 +2645,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2094,8 +2693,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2204,6 +2839,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2218,107 +2860,118 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/topics/PhononBands.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
                 
                   <h1>PhononBands</h1>
                 
                 <!-- Return to Top -->
 
-<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<p>This page gives hints on how to compute phonon bands, density of states, interatomic force constants, sound
+velocity &hellip; with the ABINIT package.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The Fourier transformation of the phonon dynamical matrices generates
-interatomic force constants in real space, as explained in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gonze1997a" title="Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory">Gonze1997a</a>.
+interatomic force constants in real space, as explained in <a class="wikilink citation-link" data-content="Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gonze1997a">[Gonze1997a]</a>.
 Backtransforming to reciprocal space gives the Fourier interpolation of the
 initial phonon band structure. After such Fourier interpolation, the DOS can
-be produced (see <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Lee1995" title="Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite">Lee1995</a>), the phonon eigenenergies plotted along lines,
+be produced (see <a class="wikilink citation-link" data-content="Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#lee1995">[Lee1995]</a>), the phonon eigenenergies plotted along lines,
 the slope of the energy versus cristalline momentum evaluated (to give sound
 velocity).</p>
 <p>The two-phonon sum and difference spectra can also be obtained, see
-<a class="wikilink" href="../../input_variables/anaddb/#dossum">dossum</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/anaddb/#dossum">dossum</a>.</p>
 <p>For the related computation of temperature-dependent properties, see
-<a class="wikilink" href="../../topic_Temperature/">topic_Temperature</a>.</p>
-<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<a class="wikilink topic-link" data-content="How to compute vibrational free energy, entropy, specific heat, thermal expansion, as
+well as atomic temperature factors" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/Temperature">Temperature topic</a>.</p>
+<h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#asr">asr</a>  Acoustic Sum Rule</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#atifc">atifc</a>  AToms for IFC analysis</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#dipdip">dipdip</a>  DIPole-DIPole interaction</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#dossum">dossum</a>  DOS SUM</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ngqpt">ngqpt</a>  Number of Grids points for Q PoinTs</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nph1l">nph1l</a>  Number of PHonons in List 1</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nph2l">nph2l</a>  Number of PHonons in List 2</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nqpath">nqpath</a>  Number of Q wavevectors defining a PATH</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtdos">prtdos</a>  PRinT the phonon Density Of States</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#qpath">qpath</a>  Q wavevectors defining a PATH</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#qph1l">qph1l</a>  Q for PHonon List 1</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#qph2l">qph2l</a>  PHonon List 2</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#asr">asr</a>  Acoustic Sum Rule</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#atifc">atifc</a>  AToms for IFC analysis</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dipdip">dipdip</a>  DIPole-DIPole interaction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dossum">dossum</a>  DOS SUM</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ngqpt">ngqpt</a>  Number of Grids points for Q PoinTs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nph1l">nph1l</a>  Number of PHonons in List 1</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nph2l">nph2l</a>  Number of PHonons in List 2</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nqpath">nqpath</a>  Number of Q wavevectors defining a PATH</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtdos">prtdos</a>  PRinT the phonon Density Of States</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qpath">qpath</a>  Q wavevectors defining a PATH</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qph1l">qph1l</a>  Q for PHonon List 1</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qph2l">qph2l</a>  PHonon List 2</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ifcflag">ifcflag</a>  Interatomic Force Constants FLAG</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcflag">ifcflag</a>  Interatomic Force Constants FLAG</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#freeze_displ">freeze_displ</a>  FREEZE DISPLacement of phonons into supercells</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nchan">nchan</a>  Number of CHANnels</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ngrids">ngrids</a>  Number of GRIDS</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#outboltztrap">outboltztrap</a>  OUTput files for BOLTZTRAP code</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#outscphon">outscphon</a>  OUTput files for Self Consistent PHONons</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtbltztrp">prtbltztrp</a>  PRinT input files for BoLTZTRaP code.</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#qrefine">qrefine</a>  Q-point REFINEment order (experimental)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#freeze_displ">freeze_displ</a>  FREEZE DISPLacement of phonons into supercells</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nchan">nchan</a>  Number of CHANnels</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ngrids">ngrids</a>  Number of GRIDS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#outboltztrap">outboltztrap</a>  OUTput files for BOLTZTRAP code</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#outscphon">outscphon</a>  OUTput files for Self Consistent PHONons</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtbltztrp">prtbltztrp</a>  PRinT input files for BoLTZTRaP code.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qrefine">qrefine</a>  Q-point REFINEment order (experimental)</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#brav">brav</a>  BRAVais</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#dosdeltae">dosdeltae</a>  DOS DELTA in Energy</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#dossmear">dossmear</a>  DOS SMEARing value</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#dostol">dostol</a>  DOS TOLerance</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#eivec">eivec</a>  EIgenVECtors</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#enunit">enunit</a>  ENergy UNITs</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#iatprj_bs">iatprj_bs</a>  Indices of the AToms for the PRoJection of the phonon Band Structure</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ifcana">ifcana</a>  IFC ANAlysis</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ifcout">ifcout</a>  IFC OUTput</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#natifc">natifc</a>  Number of AToms for IFC analysis</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#natprj_bs">natprj_bs</a>  Number of AToms for PRoJection of the Band Structure</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ng2qpt">ng2qpt</a>  Number of Grids points for Q PoinTs (grid 2)</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nqshft">nqshft</a>  Number of Q SHiFTs</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nsphere">nsphere</a>  Number of atoms in SPHERe</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nwchan">nwchan</a>  Number of Widths of CHANnels</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prt_ifc">prt_ifc</a>  PRinT the Interatomic Force Constants</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtddb">prtddb</a>  PRinT the Derivative DataBase files</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtphbands">prtphbands</a>  PRinT PHonon BANDS</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtsrlr">prtsrlr</a>  PRinT the Short-Range/Long-Range decomposition of phonon FREQuencies</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtvol">prtvol</a>  PRinT VOLume</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#q1shft">q1shft</a>  Q shifts for the grid number 1</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#q2shft">q2shft</a>  Q points SHiFTs for the grids 2</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#rifcsph">rifcsph</a>  Radius of the Interatomic Force Constant SPHere</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#vs_qrad_tolkms">vs_qrad_tolkms</a>  Speed of Sound Q-radius, TOLerance KiloMeter/Second</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#brav">brav</a>  BRAVais</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dosdeltae">dosdeltae</a>  DOS DELTA in Energy</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dossmear">dossmear</a>  DOS SMEARing value</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#dostol">dostol</a>  DOS TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#eivec">eivec</a>  EIgenVECtors</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#enunit">enunit</a>  ENergy UNITs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#iatprj_bs">iatprj_bs</a>  Indices of the AToms for the PRoJection of the phonon Band Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcana">ifcana</a>  IFC ANAlysis</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifcout">ifcout</a>  IFC OUTput</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#natifc">natifc</a>  Number of AToms for IFC analysis</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#natprj_bs">natprj_bs</a>  Number of AToms for PRoJection of the Band Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ng2qpt">ng2qpt</a>  Number of Grids points for Q PoinTs (grid 2)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nqshft">nqshft</a>  Number of Q SHiFTs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nsphere">nsphere</a>  Number of atoms in SPHERe</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nwchan">nwchan</a>  Number of Widths of CHANnels</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prt_ifc">prt_ifc</a>  PRinT the Interatomic Force Constants</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtddb">prtddb</a>  PRinT the Derivative DataBase files</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtphbands">prtphbands</a>  PRinT PHonon BANDS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtsrlr">prtsrlr</a>  PRinT the Short-Range/Long-Range decomposition of phonon FREQuencies</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtvol">prtvol</a>  PRinT VOLume</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#q1shft">q1shft</a>  Q shifts for the grid number 1</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#q2shft">q2shft</a>  Q points SHiFTs for the grids 2</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#rifcsph">rifcsph</a>  Radius of the Interatomic Force Constant SPHere</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#vs_qrad_tolkms">vs_qrad_tolkms</a>  Speed of Sound Q-radius, TOLerance KiloMeter/Second</li>
 </ul>
-<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t15.in" title="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization).">tests/v2/Input/t15.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t16.in" title="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore.">tests/v2/Input/t16.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t17.in" title="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. IFCs are computed as in test 16,  but by limiting artificially the number of allowed interacting shells to 2. The total number of atoms to be taken into account is 17 (1 for the shell 0, 4 for the shell 1,  and 12 for the shell 2). The frequencies at X and L points are again computed. They can be compared with those provided in TABLE II (TA(X) mode at 161.684 cm-1) and TABLE III (TA(L) mode at 127.508 cm-1) in the above-mentioned paper. The number are close,  with small differences at the level of 0.001 cm-1 .">tests/v2/Input/t17.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t19.in" title="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 non-shifted grid (referred to as M1 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest frequency is  i 178.8 cm-1 .">tests/v2/Input/t19.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t20.in" title="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 BCC grid (referred to as M2 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest mode is  i 153.5 cm-1 . The error,  compared with the reference result of test 18, is still 10%,  but much less than with the grid of test 19. Also,  the IFCs are obtained and can be compared with those provided in TABLE III-V of the Ghosez et al paper. Note the decomposition between dipole-dipole contribution and short-ranged contribution.">tests/v2/Input/t20.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t22.in" title="Analyze a DDB for ZrO2,  containing only the dynamical matrices at Gamma,  X and L. Generate the IFC using a rough sampling,  based on Gamma and X only,  then produces the phonon band structure along Gamma-X, as well as in L. The degeneracies can be compared with those of Detraux et al,  Phys. Rev. Lett. 81,  3297 (1998). The errors produced with this sampling are still large,  as can be judged from the comparison at L. The frequencies (in cm-1) from the DDB are 128.8 (2-deg),  271.4,  413.7 (2-deg),  518.2,  521.8 (2-deg),  598.1; while from the IFCs,  using the interpolation,  they are 152.5 (2-deg),  290.8,  429.6 (2-deg),  434.6 (2-deg),  551.9,  576.0 . The same DDB allows to generate a slightly better sampling,  by using nqshft=2 and two shifts (0.0 0.0 0.0) and (0.5 0.5 0.5). In this case,  the L point is used for the interpolation. The comparison can be done at the level of the mid-point between Gamma and X : from the GX grid,  one gets 107.0 (2-deg),  260.3,  295.5 (2-deg),  394.3,  577.0 (2-deg),  682.1; from the GXL grid,  one gets 106.3 (2-deg),  262.6,  302.7 (2-deg),  403.8,  582.5 (2-deg),  684.2; while directly from the ABINIT code,  one gets 106.3 (2-deg),  270.0,  277.9 (2-deg),  443.2,  581.6 (2-deg),  681.6  . This is not yet satisfactory. More points are needed for better results,  the next interesting grid being obtained by changing ngqpt from 2 2 2 to 4 4 4 in the t22.in file. Two additional dynamical matrices are then needed.">tests/v2/Input/t22.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t25.in" title="Analyze a DDB for PbZrO3. It is also a ABO3 compound,  like BaTiO3 (see tests 18 to 21),  but the DDB contains the q-wavevectors on a 2x2x2 FCC grid,  finer than those tested for BaTiO3. Output : analysis of IFCs,  as well as a few phonon frequencies.">tests/v2/Input/t25.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t28.in" title="Phonon band structure of Al,  from DDB of test 27. The parameters were really too low in test 26,  so that some phonon unstabilities are present close to Gamma. These do not appear anymore in test 29.">tests/v2/Input/t28.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t29.in" title="Phonon band structure of Al. Similar to test 28, except that the DDB was generated with parameters much better than those of test 26,  the better parameters are mentioned in the t26.in file,  for information. The convergence is not complete though,  but the frequencies compare already rather well with those in Quong and Klein,  PRB 46,  10734 (1992),  except close to Gamma (still,  no instability is observed,  unlike in test 28).">tests/v2/Input/t29.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t32.in" title="The derivative database generated by case 31 is now analyzed,  and serves to compute a phonon band structure. There is a very small breaking of the symmetry-induced degeneracy of modes along the (x x x) direction. This is due to an incomplete convergence. Indeed,  if one makes tolwfr more stringent for response calculations (from 1.0d-16 to 1.0d-20),  the lowest acoustic modes at (0.1 0.1 0.1),  that are 4.042cm-1 and 4.067cm-1,  becomes 4.05398 cm-1 and 4.05400 cm-1 . Of course,  this effect cannot be seen for other modes,  since only the acoustic modes are sensitive to that level of accuracy !">tests/v2/Input/t32.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t39.in" title="BaSr(TiO3)2 FCC unit cell. Show how to use only the q Gamma point to obtain symmetric IFCs using Anaddb.">tests/v2/Input/t39.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t15.in">tests/v2/Input/t15.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t16.in">tests/v2/Input/t16.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. IFCs are computed as in test 16,  but by limiting artificially the number of allowed interacting shells to 2. The total number of atoms to be taken into account is 17 (1 for the shell 0, 4 for the shell 1,  and 12 for the shell 2). The frequencies at X and L points are again computed. They can be compared with those provided in TABLE II (TA(X) mode at 161.684 cm-1) and TABLE III (TA(L) mode at 127.508 cm-1) in the above-mentioned paper. The number are close,  with small differences at the level of 0.001 cm-1 ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t17.in">tests/v2/Input/t17.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 non-shifted grid (referred to as M1 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest frequency is  i 178.8 cm-1 ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t19.in">tests/v2/Input/t19.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 BCC grid (referred to as M2 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest mode is  i 153.5 cm-1 . The error,  compared with the reference result of test 18, is still 10%,  but much less than with the grid of test 19. Also,  the IFCs are obtained and can be compared with those provided in TABLE III-V of the Ghosez et al paper. Note the decomposition between dipole-dipole contribution and short-ranged contribution." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t20.in">tests/v2/Input/t20.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for ZrO2,  containing only the dynamical matrices at Gamma,  X and L. Generate the IFC using a rough sampling,  based on Gamma and X only,  then produces the phonon band structure along Gamma-X, as well as in L. The degeneracies can be compared with those of Detraux et al,  Phys. Rev. Lett. 81,  3297 (1998). The errors produced with this sampling are still large,  as can be judged from the comparison at L. The frequencies (in cm-1) from the DDB are 128.8 (2-deg),  271.4,  413.7 (2-deg),  518.2,  521.8 (2-deg),  598.1; while from the IFCs,  using the interpolation,  they are 152.5 (2-deg),  290.8,  429.6 (2-deg),  434.6 (2-deg),  551.9,  576.0 . The same DDB allows to generate a slightly better sampling,  by using nqshft=2 and two shifts (0.0 0.0 0.0) and (0.5 0.5 0.5). In this case,  the L point is used for the interpolation. The comparison can be done at the level of the mid-point between Gamma and X : from the GX grid,  one gets 107.0 (2-deg),  260.3,  295.5 (2-deg),  394.3,  577.0 (2-deg),  682.1; from the GXL grid,  one gets 106.3 (2-deg),  262.6,  302.7 (2-deg),  403.8,  582.5 (2-deg),  684.2; while directly from the ABINIT code,  one gets 106.3 (2-deg),  270.0,  277.9 (2-deg),  443.2,  581.6 (2-deg),  681.6  . This is not yet satisfactory. More points are needed for better results,  the next interesting grid being obtained by changing ngqpt from 2 2 2 to 4 4 4 in the t22.in file. Two additional dynamical matrices are then needed." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t22.in">tests/v2/Input/t22.in</a></li>
+<li><a class="wikilink test-link" data-content="Analyze a DDB for PbZrO3. It is also a ABO3 compound,  like BaTiO3 (see tests 18 to 21),  but the DDB contains the q-wavevectors on a 2x2x2 FCC grid,  finer than those tested for BaTiO3. Output : analysis of IFCs,  as well as a few phonon frequencies." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t25.in">tests/v2/Input/t25.in</a></li>
+<li><a class="wikilink test-link" data-content="Phonon band structure of Al,  from DDB of test 27. The parameters were really too low in test 26,  so that some phonon unstabilities are present close to Gamma. These do not appear anymore in test 29." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t28.in">tests/v2/Input/t28.in</a></li>
+<li><a class="wikilink test-link" data-content="Phonon band structure of Al. Similar to test 28, except that the DDB was generated with parameters much better than those of test 26,  the better parameters are mentioned in the t26.in file,  for information. The convergence is not complete though,  but the frequencies compare already rather well with those in Quong and Klein,  PRB 46,  10734 (1992),  except close to Gamma (still,  no instability is observed,  unlike in test 28)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t29.in">tests/v2/Input/t29.in</a></li>
+<li><a class="wikilink test-link" data-content="The derivative database generated by case 31 is now analyzed,  and serves to compute a phonon band structure. There is a very small breaking of the symmetry-induced degeneracy of modes along the (x x x) direction. This is due to an incomplete convergence. Indeed,  if one makes tolwfr more stringent for response calculations (from 1.0d-16 to 1.0d-20),  the lowest acoustic modes at (0.1 0.1 0.1),  that are 4.042cm-1 and 4.067cm-1,  becomes 4.05398 cm-1 and 4.05400 cm-1 . Of course,  this effect cannot be seen for other modes,  since only the acoustic modes are sensitive to that level of accuracy !" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t32.in">tests/v2/Input/t32.in</a></li>
+<li><a class="wikilink test-link" data-content="BaSr(TiO3)2 FCC unit cell. Show how to use only the q Gamma point to obtain symmetric IFCs using Anaddb." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t39.in">tests/v2/Input/t39.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t95.in" title="Test rifcsph cutoff radius for IFC Fourier transform. Use output from t85-87">tests/v5/Input/t95.in</a></li>
+<li><a class="wikilink test-link" data-content="Test rifcsph cutoff radius for IFC Fourier transform. Use output from t85-87" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t95.in">tests/v5/Input/t95.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t76.in" title="anaddb run using standard integration method also tests the *atprj_bs variables,  for atomic projections of the phonon band structure">tests/v6/Input/t76.in</a></li>
+<li><a class="wikilink test-link" data-content="anaddb run using standard integration method also tests the *atprj_bs variables,  for atomic projections of the phonon band structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t76.in">tests/v6/Input/t76.in</a></li>
+</ul>
+<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a class="wikilink lesson-link" href="../../tutorials/rf2">The lesson Response-Function 2 (RF2)</a> presents the analysis of the DDBs that have been introduced in the <a class="wikilink lesson-link" href="../../tutorials/rf1">lesson_rf1</a>. The computation of the interatomic forces and the computation of thermodynamical properties is an outcome of this lesson.</li>
 </ul>
                 
                   
@@ -2332,15 +2985,186 @@ velocity).</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-<center>Copyright &copy; 2017 The Abinit Group (MT)</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Phonons/" title="Phonons" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Phonons
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../PhononWidth/" title="PhononWidth" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                PhononWidth
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (MT)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

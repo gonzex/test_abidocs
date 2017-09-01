@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1377,31 +1573,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1654,8 +1850,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1765,6 +1985,138 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      PAW
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1779,13 +2131,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" checked>
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-5">
       DFPT
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1802,6 +2154,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         RF1
@@ -1815,48 +2169,57 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-the-ground-state-geometry-of-alas" title="1. The ground-state geometry of AlAs." class="md-nav__link">
-    1. The ground-state geometry of AlAs.
+  <a href="#dynamical-and-dielectric-properties-of-alas" title="Dynamical and dielectric properties of AlAs." class="md-nav__link">
+    Dynamical and dielectric properties of AlAs.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-frozen-phonon-calculation-of-a-second-derivative-of-the-total" title="**2. Frozen-phonon calculation of a second derivative of the total" class="md-nav__link">
-    **2. Frozen-phonon calculation of a second derivative of the total
+  <a href="#1-the-ground-state-geometry-of-alas" title="1 The ground-state geometry of AlAs" class="md-nav__link">
+    1 The ground-state geometry of AlAs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-response-function-calculation-of-a-second-derivative-of-the-total" title="**3. Response-function calculation of a second derivative of the total" class="md-nav__link">
-    **3. Response-function calculation of a second derivative of the total
+  <a href="#2-frozen-phonon-calculation-of-a-second-derivative-of-the-total-energy" title="2 Frozen-phonon calculation of a second derivative of the total energy" class="md-nav__link">
+    2 Frozen-phonon calculation of a second derivative of the total energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-response-function-calculation-of-the-dynamical-matrix-at-gamma" title="4. Response-function calculation of the dynamical matrix at Gamma." class="md-nav__link">
-    4. Response-function calculation of the dynamical matrix at Gamma.
+  <a href="#3-dfpt-calculation-of-a-second-derivative-of-the-total-energy" title="3 DFPT calculation of a second derivative of the total energy" class="md-nav__link">
+    3 DFPT calculation of a second derivative of the total energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-response-function-calculation-of-the-effect-of-an-homogeneous" title="**5. Response-function calculation of the effect of an homogeneous" class="md-nav__link">
-    **5. Response-function calculation of the effect of an homogeneous
+  <a href="#4-dfpt-calculation-of-the-dynamical-matrix-at-gamma" title="4 DFPT calculation of the dynamical matrix at Gamma" class="md-nav__link">
+    4 DFPT calculation of the dynamical matrix at Gamma
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-response-function-calculation-of-phonon-frequencies-at-non-zero-q" title="6. Response-function calculation of phonon frequencies at non-zero q." class="md-nav__link">
-    6. Response-function calculation of phonon frequencies at non-zero q.
+  <a href="#5-dfpt-calculation-of-the-effect-of-an-homogeneous-electric-field" title="5 DFPT calculation of the effect of an homogeneous electric field" class="md-nav__link">
+    5 DFPT calculation of the effect of an homogeneous electric field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dfpt-calculation-of-phonon-frequencies-at-non-zero-q" title="6 DFPT calculation of phonon frequencies at non-zero q" class="md-nav__link">
+    6 DFPT calculation of phonon frequencies at non-zero q
   </a>
   
 </li>
@@ -1900,8 +2263,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1930,13 +2305,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1990,13 +2413,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2020,14 +2443,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2061,8 +2640,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2085,7 +2676,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2121,8 +2724,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2206,48 +2845,57 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#146-the-ground-state-geometry-of-alas" title="1. The ground-state geometry of AlAs." class="md-nav__link">
-    1. The ground-state geometry of AlAs.
+  <a href="#dynamical-and-dielectric-properties-of-alas" title="Dynamical and dielectric properties of AlAs." class="md-nav__link">
+    Dynamical and dielectric properties of AlAs.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#246-frozen-phonon-calculation-of-a-second-derivative-of-the-total" title="**2. Frozen-phonon calculation of a second derivative of the total" class="md-nav__link">
-    **2. Frozen-phonon calculation of a second derivative of the total
+  <a href="#1-the-ground-state-geometry-of-alas" title="1 The ground-state geometry of AlAs" class="md-nav__link">
+    1 The ground-state geometry of AlAs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#346-response-function-calculation-of-a-second-derivative-of-the-total" title="**3. Response-function calculation of a second derivative of the total" class="md-nav__link">
-    **3. Response-function calculation of a second derivative of the total
+  <a href="#2-frozen-phonon-calculation-of-a-second-derivative-of-the-total-energy" title="2 Frozen-phonon calculation of a second derivative of the total energy" class="md-nav__link">
+    2 Frozen-phonon calculation of a second derivative of the total energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#446-response-function-calculation-of-the-dynamical-matrix-at-gamma" title="4. Response-function calculation of the dynamical matrix at Gamma." class="md-nav__link">
-    4. Response-function calculation of the dynamical matrix at Gamma.
+  <a href="#3-dfpt-calculation-of-a-second-derivative-of-the-total-energy" title="3 DFPT calculation of a second derivative of the total energy" class="md-nav__link">
+    3 DFPT calculation of a second derivative of the total energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#546-response-function-calculation-of-the-effect-of-an-homogeneous" title="**5. Response-function calculation of the effect of an homogeneous" class="md-nav__link">
-    **5. Response-function calculation of the effect of an homogeneous
+  <a href="#4-dfpt-calculation-of-the-dynamical-matrix-at-gamma" title="4 DFPT calculation of the dynamical matrix at Gamma" class="md-nav__link">
+    4 DFPT calculation of the dynamical matrix at Gamma
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#646-response-function-calculation-of-phonon-frequencies-at-non-zero-q" title="6. Response-function calculation of phonon frequencies at non-zero q." class="md-nav__link">
-    6. Response-function calculation of phonon frequencies at non-zero q.
+  <a href="#5-dfpt-calculation-of-the-effect-of-an-homogeneous-electric-field" title="5 DFPT calculation of the effect of an homogeneous electric field" class="md-nav__link">
+    5 DFPT calculation of the effect of an homogeneous electric field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-dfpt-calculation-of-phonon-frequencies-at-non-zero-q" title="6 DFPT calculation of phonon frequencies at non-zero q" class="md-nav__link">
+    6 DFPT calculation of phonon frequencies at non-zero q
   </a>
   
 </li>
@@ -2266,15 +2914,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/rf1.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>RF1</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing how to get the following physical properties, for
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="first-lesson-on-dfpt">First lesson on DFPT<a class="headerlink" href="#first-lesson-on-dfpt" title="Permanent link">&para;</a></h1>
+<h2 id="dynamical-and-dielectric-properties-of-alas">Dynamical and dielectric properties of AlAs.<a class="headerlink" href="#dynamical-and-dielectric-properties-of-alas" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to get the following physical properties, for
 an insulator :</p>
 <ul>
 <li>the phonon frequencies and eigenvectors at Gamma </li>
@@ -2282,114 +2929,106 @@ an insulator :</p>
 <li>the Born effective charges </li>
 <li>the LO-TO splitting </li>
 <li>the phonon frequencies and eigenvectors at other q-points in the Brillouin Zone 
-You will learn to use of response-function features of ABINIT. In order to
-learn the use of the associated codes Mrgddb and Anaddb, to produce
-efficiently phonon band structures and the associated thermodynamical
-properties, please see the <a href="../lesson_rf2.html"> tutorial response-function 2</a>.</li>
+You will learn to use of density-functional perturbation theory (DFPT)
+features of ABINIT. In order to learn the use of the associated codes Mrgddb
+and Anaddb, to produce efficiently phonon band structures and the associated
+thermodynamical properties, please see the <a href="../lesson_rf2.html"> tutorial DFPT
+2</a>.</li>
 </ul>
 <p>This lesson should take about 2 hours.</p>
-<ul>
-<li>1 The ground-state geometry of AlAs.</li>
-<li>2 Frozen-phonon calculation of a second derivative of the total energy.</li>
-<li>3 Response-function calculation of a second derivative of the total energy.</li>
-<li>4 Response-function calculation of the dynamical matrix at Gamma.</li>
-<li>5 Response-function calculation of the effect of an homogeneous electric field.</li>
-<li>6 Response-function calculation of phonon frequencies at non-zero q.</li>
-</ul>
-<hr />
-<h3 id="146-the-ground-state-geometry-of-alas"><strong>1. The ground-state geometry of AlAs.</strong><a class="headerlink" href="#146-the-ground-state-geometry-of-alas" title="Permanent link">&para;</a></h3>
-<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h2 id="1-the-ground-state-geometry-of-alas">1 The ground-state geometry of AlAs<a class="headerlink" href="#1-the-ground-state-geometry-of-alas" title="Permanent link">&para;</a></h2>
 <p>_Before beginning, you might consider to work in a different subdirectory as
-for the other lessons. Why not create "Work_rf1" in
+for the other lessons. Why not create &ldquo;Work_rf1&rdquo; in
 ~abinit/tests/tutorespfn/Input ? _  </p>
 <p>NOTE : the reference directory that contains the example files for the
 tutorial is no more ~abinit/tests/tutorial (as for the basic lessons and the
-specialized, non-response ones), but ~abinit/tests/tutorespfn . This will be
-the case for all the response-function based part of the tutorial.</p>
+specialized, non-DFPT ones), but ~abinit/tests/tutorespfn . This will be the
+case for all the DFPT based part of the tutorial.</p>
 <p>The file ~abinit/tests/tutorespfn/Input/trf1_x.files lists the file names and
 root names. You can copy it in the Work_rf1 directory (and change it, as
-usual). Note that two pseudopotentials are mentioned in this "files" file: one
+usual). Note that two pseudopotentials are mentioned in this &ldquo;files&rdquo; file: one
 for the Aluminum atom, and one for the Arsenic atom. The first to be
 mentioned, for Al, will define the first type of atom. The second to be
 mentioned, for As, will define the second type of atom. It might the first
 time that you encounter this situation (more than one type of atoms) in the
-tutorials, at variance with the four "basic" lessons.</p>
+tutorials, at variance with the four &ldquo;basic&rdquo; lessons.</p>
 <p>You can also copy the file ~abinit/tests/tutorespfn/Input/trf1_1.in in
 Work_rf1. This is your input file. You should edit it, and read it carefully.</p>
 <p>Because of the use of two types of atoms, have a look at the following input
 variables :</p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a> </li>
-<li><a class="wikilink" href="../../input_variables/basic/#typat">typat</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a> </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a> </li>
 </ul>
-<p>Note that the value of <a class="wikilink" href="../../input_variables/basic/#tolvrs">tolvrs</a> is rather stringent. This is because the
+<p>Note that the value of <a class="wikilink codevar-link" href="../../input_variables/basic/#tolvrs">tolvrs</a> is rather stringent. This is because the
 wavefunctions determined by the present run will be used later as starting
-point of the response-function calculation. However, the number of steps,
-<a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>, in this example file has been set to 15, and you will see that this
-is not enough to reach the target <a class="wikilink" href="../../input_variables/basic/#tolvrs">tolvrs</a>. In production runs, you should
-choose a larger value of <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a>, sufficient to reach your target
-<a class="wikilink" href="../../input_variables/basic/#tolvrs">tolvrs</a>. In the present tutorial, due to portability concerns related to
-automatic testing, we could not allow a larger <a class="wikilink" href="../../input_variables/basic/#nstep">nstep</a> value. This minor
-problem with some tutorial examples was mentioned briefly in <a href="../lesson_base1.html#aq1">a side note to
-the answer to question 1 of lesson 1</a>. So, do not
-follow blindly all examples in the tutorials : check by yourself the
-convergence of your runs !</p>
-<p>You will work at fixed <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> (=3Ha) and k-point grid, defined by
-<a class="wikilink" href="../../input_variables/gstate/#kptrlatt">kptrlatt</a> (the 8x8x8 Monkhorst-Pack grid). It is implicit that in "real
-life", you should do a convergence test with respect to both convergence
+point of the DFPT calculation. However, the number of steps, <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>, in
+this example file has been set to 15, and you will see that this is not enough
+to reach the target <a class="wikilink codevar-link" href="../../input_variables/basic/#tolvrs">tolvrs</a>. In production runs, you should choose a larger
+value of <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>, sufficient to reach your target <a class="wikilink codevar-link" href="../../input_variables/basic/#tolvrs">tolvrs</a>. In the present
+tutorial, due to portability concerns related to automatic testing, we could
+not allow a larger <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a> value. This minor problem with some tutorial
+examples was mentioned briefly in <a href="../lesson_base1.html#aq1">a side note to the answer to question 1 of
+lesson 1</a>. So, do not follow blindly all examples in
+the tutorials : check by yourself the convergence of your runs !</p>
+<p>You will work at fixed <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> (=3Ha) and k-point grid, defined by
+<a class="wikilink codevar-link" href="../../input_variables/gstate/#kptrlatt">kptrlatt</a> (the 8x8x8 Monkhorst-Pack grid). It is implicit that in &ldquo;real
+life&rdquo;, you should do a convergence test with respect to both convergence
 parameters. We postpone the discussion of the accuracy of these choices and
 the choice of pseudopotential to the end of the fifth section of this
 tutorial. They give acceptable results, not very accurate, but, more
 important, the speed is reasonable for a tutorial.  </p>
 <p>You should make the run (a few seconds), and obtain the following value for
 the energy, in the final echo section :</p>
-<pre><code> etotal   -9.7626837450E+00
-</code></pre>
+<div class="codehilite"><pre><span></span> etotal   -9.7626837450E+00
+</pre></div>
+
+
 <p>However, we will rely later on a more accurate (more digits) value of this
 total energy, that can be found about a dozen of lines before this final echo
 :</p>
-<pre><code>    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -9.76268374500280E+00
-</code></pre>
+<div class="codehilite"><pre><span></span>    &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -9.76268374500280E+00
+</pre></div>
+
+
 <p>The output file also mentions that the forces on both atoms vanish.</p>
 <p>The run that you just made will be considered as defining a ground-state
-configuration, on top of which response functions will be computed. The main
-output of this ground-state run is the wavefunction file trf1_1o_WFK, that you
-can already rename as trf1_1i_WFK. Indeed, it will be used in the next runs,
-as an input file. <strong>So, in the corresponding "files" file for all the
-following runs, at third line, pay attention TO KEEP "trf1_1i", even if you
-change the root name for output files (fourth line) to "trf1_2o" or "trf1_3o",
-as well as the first, second and fifth lines of this file.</strong></p>
-<hr />
-<h3 id="246-frozen-phonon-calculation-of-a-second-derivative-of-the-total">**2. Frozen-phonon calculation of a second derivative of the total<a class="headerlink" href="#246-frozen-phonon-calculation-of-a-second-derivative-of-the-total" title="Permanent link">&para;</a></h3>
-<p>energy.**</p>
-<h3 id="_2"><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+configuration, on top of which responses to perturbations will be computed.
+The main output of this ground-state run is the wavefunction file trf1_1o_WFK,
+that you can already rename as trf1_1i_WFK. Indeed, it will be used in the
+next runs, as an input file. <strong>So, in the corresponding &ldquo;files&rdquo; file for all
+the following runs, at third line, pay attention TO KEEP &ldquo;trf1_1i&rdquo;, even if
+you change the root name for output files (fourth line) to &ldquo;trf1_2o&rdquo; or
+&ldquo;trf1_3o&rdquo;, as well as the first, second and fifth lines of this file.</strong></p>
+<h2 id="2-frozen-phonon-calculation-of-a-second-derivative-of-the-total-energy">2 Frozen-phonon calculation of a second derivative of the total energy<a class="headerlink" href="#2-frozen-phonon-calculation-of-a-second-derivative-of-the-total-energy" title="Permanent link">&para;</a></h2>
 <p>We will now aim at computing the second derivative of the total energy with
 respect to an atomic displacement by different means. For that purpose, you
 must first read <a href="../../../users/generated_files/help_respfn.html#0">sections 0 and the first paragraph of section
 1</a> of the respfn_help file
-(the auxiliary help file, that deals specifically with the response function
-features).</p>
+(the auxiliary help file, that deals specifically with the DFPT features).</p>
 <p>We will explain later, in more detail, the signification of the different
 input parameters introduced in section 1 of the respfn_help file.</p>
 <p>For now, in order to be able to perform a direct comparison with the result of
-a response-function calculation, we choose as a perturbation the displacement
-of the Al atom along the first axis of the reduced coordinates.</p>
+a DFPT calculation, we choose as a perturbation the displacement of the Al
+atom along the first axis of the reduced coordinates.</p>
 <p>You can copy the file ~abinit/tests/tutorespfn/Input/trf1_2.in in Work_rf1.
 This is your input file. You should edit it and briefly look at the two
 changes with respect to the file ~abinit/tests/tutorespfn/Input/trf1_1.in :
-the change of <a class="wikilink" href="../../input_variables/basic/#xred">xred</a>, and the reading of the wavefunction file, using the
-<a class="wikilink" href="../../input_variables/files/#irdwfk">irdwfk</a> input variable. Then, you can make the run. The symmetry is lowered
+the change of <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>, and the reading of the wavefunction file, using the
+<a class="wikilink codevar-link" href="../../input_variables/files/#irdwfk">irdwfk</a> input variable. Then, you can make the run. The symmetry is lowered
 with respect to the ground-state geometry, so that the number of k-points
 increases a lot, and of course, the CPU time.</p>
 <p>From this run, it is possible to get the values of the total energy, and the
 value of the gradient of the total energy (dE) with respect to change of
 reduced coordinate (dt):</p>
-<pre><code> rms dE/dt=  3.5517E-03; max dE/dt=  5.0079E-03; dE/dt below (all hartree)
+<div class="codehilite"><pre><span></span> rms dE/dt=  3.5517E-03; max dE/dt=  5.0079E-03; dE/dt below (all hartree)
     1       0.005007937776      0.002526310510      0.002526310510
     2      -0.005007879256     -0.002526283046     -0.002526283046
  ...
     &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Etotal= -9.76268124105767E+00
-</code></pre>
+</pre></div>
+
+
 <p>The change of reduced coordinate of the Al atom along the first axis was
 rather small (1/1000), and we can make an estimate of the second derivative of
 the total energy with respect to the reduced coordinate thanks to finite-
@@ -2413,11 +3052,13 @@ calculation, in which the change of reduced coordinate along the first axis is
 0.002, instead of 0.001. The doubling of the perturbation allows for a rather
 simple higher-order estimation, as we will see later. The results of this
 calculation are as follows :</p>
-<pre><code> rms dE/dt=  7.1249E-03; max dE/dt=  1.0016E-02; dE/dt below (all hartree)
+<div class="codehilite"><pre><span></span> rms dE/dt=  7.1249E-03; max dE/dt=  1.0016E-02; dE/dt below (all hartree)
     1       0.010016307568      0.005097516146      0.005097516146
     2      -0.010016187598     -0.005097463261     -0.005097463261
  ...
-</code></pre>
+</pre></div>
+
+
 <p>From these data, taking into account that the perturbation was twice stronger,
 the same procedure as above leads to the values 5.00800219 hartree (from
 finite difference of energy) and 5.008153784 hartree (from finite difference
@@ -2430,52 +3071,53 @@ estimation is concerned, the difference is 0.00011194 Ha, which divided by
 three, and subtracted from 5.00789025 hartree, gives 5.00785294 hartree. The
 same higher-order procedure for force estimates gives 5.0078657 hartree. So,
 the agreement between total-energy estimate and force estimate of the 2DTE can
-be observed up to the 6th digit, inclusive.</p>
-<p>Before comparing this result with the 2DTE directly computed from the
-response-function capabilities of ABINIT, a last comment is in order. One can
-observe that the action-reaction law is fulfilled only approximately by the
-system. Indeed, the force created on the second atom, should be exactly equal
-in magnitude to the force on the first atom. The values of dE/dt, mentioned
-above show a small, but non-negligible difference between the two atoms. As an
-example, for the doubled perturbation, there is a difference in the absolute
-values of the first component of the reduced force, 0.010016307568 and
--0.010016187598. Actually, the forces should cancel each other exactly if the
-translation symmetry were perfect. This is not the case, but the breaking of
-this symmetry can be shown to arise <strong>only</strong> from the presence of the
-exchange-correlation grid of points. This grid does not move when atoms are
-displaced, and so there is a very small variation of the total energy when the
-system is moved as a whole. It is easy to restore the action-reaction law, by
-subtracting from every force component the mean of the forces on all atoms.
-This is actually done when the gradient with respect to reduced coordinates
-are transformed into forces, and specified in cartesian coordinates, as can be
-seen in the output file for the small displacement :</p>
-<pre><code> cartesian forces (hartree/bohr) at end:
+be observed up to the 6<sup>th</sup> digit, inclusive.</p>
+<p>Before comparing this result with the 2DTE directly computed from the DFPT
+capabilities of ABINIT, a last comment is in order. One can observe that the
+action-reaction law is fulfilled only approximately by the system. Indeed, the
+force created on the second atom, should be exactly equal in magnitude to the
+force on the first atom. The values of dE/dt, mentioned above show a small,
+but non-negligible difference between the two atoms. As an example, for the
+doubled perturbation, there is a difference in the absolute values of the
+first component of the reduced force, 0.010016307568 and -0.010016187598.
+Actually, the forces should cancel each other exactly if the translation
+symmetry were perfect. This is not the case, but the breaking of this symmetry
+can be shown to arise <strong>only</strong> from the presence of the exchange-correlation
+grid of points. This grid does not move when atoms are displaced, and so there
+is a very small variation of the total energy when the system is moved as a
+whole. It is easy to restore the action-reaction law, by subtracting from
+every force component the mean of the forces on all atoms. This is actually
+done when the gradient with respect to reduced coordinates are transformed
+into forces, and specified in cartesian coordinates, as can be seen in the
+output file for the small displacement :</p>
+<div class="codehilite"><pre><span></span> cartesian forces (hartree/bohr) at end:
     1     -0.00001684560079    -0.00094403841497    -0.00094403841497
     2      0.00001684560079     0.00094403841497     0.00094403841497
-</code></pre>
-<p>This effect will be seen also at the level of 2DTE. The so-called "acoustic
-sum rule", imposing that the frequency of three modes (called acoustic modes)
+</pre></div>
+
+
+<p>This effect will be seen also at the level of 2DTE. The so-called &ldquo;acoustic
+sum rule&rdquo;, imposing that the frequency of three modes (called acoustic modes)
 tend to zero with vanishing wavevector, will also be slightly broken. In this
 case also, it will be rather easy to reimpose the acoustic sum rule. In any
 case, taking a finer XC grid will allow one to reduce this effect.</p>
-<hr />
-<h3 id="346-response-function-calculation-of-a-second-derivative-of-the-total">**3. Response-function calculation of a second derivative of the total<a class="headerlink" href="#346-response-function-calculation-of-a-second-derivative-of-the-total" title="Permanent link">&para;</a></h3>
-<p>energy.**</p>
-<h3 id="_3"><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h2 id="3-dfpt-calculation-of-a-second-derivative-of-the-total-energy">3 DFPT calculation of a second derivative of the total energy<a class="headerlink" href="#3-dfpt-calculation-of-a-second-derivative-of-the-total-energy" title="Permanent link">&para;</a></h2>
 <p>We now compute the second derivative of the total energy with respect to the
-same atomic displacement, using the response-function capabilities of ABINIT.</p>
+same atomic displacement, using the DFPT capabilities of ABINIT.</p>
 <p>You can copy the file ~abinit/tests/tutorespfn/Input/trf1_3.in in Work_rf1.
 This is your input file. You should examine it. The changes with respect to
 the file ~abinit/tests/tutorespfn/Input/trf1_1.in are all gathered in the
 first part of this file, before</p>
-<pre><code>#######################################################################
+<div class="codehilite"><pre><span></span>#######################################################################
 #Common input variables
-</code></pre>
+</pre></div>
+
+
 <p>Accordingly, you should get familiarized with the new input variables :
-<a class="wikilink" href="../../input_variables/dfpt/#rfphon">rfphon</a>, <a class="wikilink" href="../../input_variables/dfpt/#rfatpol">rfatpol</a>, <a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a>. Then, pay attention to the special use of
-the <a class="wikilink" href="../../input_variables/basic/#kptopt">kptopt</a> input variable. It will be explained in more detail later.</p>
+<a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfphon">rfphon</a>, <a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfatpol">rfatpol</a>, <a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfdir">rfdir</a>. Then, pay attention to the special use of
+the <a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a> input variable. It will be explained in more detail later.</p>
 <p>When you have understood the purpose of the input variable values specified
-before the "Common input variables" section, you can make the code run.</p>
+before the &ldquo;Common input variables&rdquo; section, you can make the code run.</p>
 <p>Then, we need to analyze the different output files. For that purpose, you
 should read the content of the <a href="../../../users/generated_files/help_respfn.html#6"> section
 6</a> of the respfn_help file.
@@ -2484,14 +3126,14 @@ Read it quickly, as we will come back to the most important points hereafter.</p
 <ul>
 <li>trf1_3.log (the log file) </li>
 <li>trf1_3.out (the output file) </li>
-<li>trf1_3o_1WF1 (the 1st-order wavefunction file) </li>
+<li>trf1_3o_1WF1 (the 1<sup>st</sup>-order wavefunction file) </li>
 <li>trf1_3o_DDB (the derivative database) </li>
 </ul>
 <p>Let us have a look at the output file. You can follow the description provided
 in the <a href="../../../users/generated_files/help_respfn.html#6.2"> section 6.2</a> of the
 respfn_help file. You should be able to find the place where the iterations
 for the minimisation (with respect to the unique perturbation) take place :</p>
-<pre><code>      iter   2DEtotal(Ha)       deltaE(Ha) residm    vres2
+<div class="codehilite"><pre><span></span>      iter   2DEtotal(Ha)       deltaE(Ha) residm    vres2
 -ETOT  1   6.5156050845578     -1.464E+01 1.146E-02 1.947E+02
  ETOT  2   5.0216332567384     -1.494E+00 9.267E-04 2.027E+00
  ETOT  3   5.0081675390166     -1.347E-02 5.325E-06 5.660E-02
@@ -2499,30 +3141,30 @@ for the minimisation (with respect to the unique perturbation) take place :</p>
  ETOT  5   5.0078558671678     -9.675E-06 5.588E-09 3.089E-05
  ETOT  6   5.0078557436628     -1.235E-07 9.879E-11 2.297E-07
  ETOT  7   5.0078557427888     -8.741E-10 8.545E-13 2.728E-09
-</code></pre>
-<p>From these data, you can see that the 2DTE determined by the response-function
-technique is in excellent agreement with the higher-order finite-difference
-values for the 2DTE, determined in the previous section : 5.007855 hartree
-from the energy differences, and 5.007852 hartree from the force differences.</p>
+</pre></div>
+
+
+<p>From these data, you can see that the 2DTE determined by the DFPT technique is
+in excellent agreement with the higher-order finite-difference values for the
+2DTE, determined in the previous section : 5.007855 hartree from the energy
+differences, and 5.007852 hartree from the force differences.</p>
 <p>Now, you can read the remaining of the <a href="../../../users/generated_files/help_respfn.html#6.2"> section
 6.2</a> of the respfn_help
 file. Then, you should also edit the trf1_3o_DDB file, and read the
 corresponding <a href="../../../users/generated_files/help_respfn.html#6.5"> section 6.5</a>
 of the respfn_help file.</p>
 <p>Finally, the excellent agreement between the finite-difference formula and the
-response-function approach calls for some accuracy considerations. These can
-be found in <a href="../../../users/generated_files/help_respfn.html#7"> section 7</a> of
-the respfn_help file.</p>
-<hr />
-<h3 id="446-response-function-calculation-of-the-dynamical-matrix-at-gamma"><strong>4. Response-function calculation of the dynamical matrix at Gamma.</strong><a class="headerlink" href="#446-response-function-calculation-of-the-dynamical-matrix-at-gamma" title="Permanent link">&para;</a></h3>
-<h3 id="_4"><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+DFPT approach calls for some accuracy considerations. These can be found in <a href="../../../users/generated_files/help_respfn.html#7">
+section 7</a> of the respfn_help
+file.</p>
+<h2 id="4-dfpt-calculation-of-the-dynamical-matrix-at-gamma">4 DFPT calculation of the dynamical matrix at Gamma<a class="headerlink" href="#4-dfpt-calculation-of-the-dynamical-matrix-at-gamma" title="Permanent link">&para;</a></h2>
 <p>We are now in the position to compute the full dynamical matrix at Gamma
 (q=0). You can copy the file ~abinit/tests/tutorespfn/Input/trf1_4.in in
 Work_rf1. This is your input file. You should edit it. As for test rf1_3, the
 changes with respect to the file ~abinit/tests/tutorespfn/Input/trf1_1.in are
 all gathered in the first part of this file. Moreover, the changes with
-respect to trf1_3.in concern only the input variables <a class="wikilink" href="../../input_variables/dfpt/#rfatpol">rfatpol</a>, and
-<a class="wikilink" href="../../input_variables/dfpt/#rfdir">rfdir</a>. Namely, all the atoms will be displaced, in all the directions.</p>
+respect to trf1_3.in concern only the input variables <a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfatpol">rfatpol</a>, and
+<a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfdir">rfdir</a>. Namely, all the atoms will be displaced, in all the directions.</p>
 <p>There are six perturbations to consider. So, one might think that the CPU time
 will raise accordingly. This is not true, as ABINIT is able to determine which
 perturbations are the symmetric of another perturbation, see <a href="../../../users/generated_files/help_respfn.html#3"> section
@@ -2530,24 +3172,28 @@ perturbations are the symmetric of another perturbation, see <a href="../../../u
 <p>Now, you can make the run. You edit the file trf1_4.out, and notice that the
 response to two perturbations were computed explicitly, while the response to
 the other four could be deduced by using the symmetries.</p>
-<pre><code> The list of irreducible perturbations for this q vector is:
+<div class="codehilite"><pre><span></span> The list of irreducible perturbations for this q vector is:
     1)    idir= 1    ipert=   1
     2)    idir= 1    ipert=   2
-</code></pre>
+</pre></div>
+
+
 <p>Nothing mysterious : one of the two irreducible perturbations is for the Al
 atom, placed in a rather symmetric local site, and the other perturbation is
 for the As atom.</p>
 <p>The phonon frequencies, obtained by diagonalizing the dynamical matrix (where
-the atomic masses have been taken into account, see <a class="wikilink" href="../../input_variables/rlx/#amu">amu</a>), are given as
+the atomic masses have been taken into account, see <a class="wikilink codevar-link" href="../../input_variables/rlx/#amu">amu</a>), are given as
 follows :</p>
-<pre><code>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
+<div class="codehilite"><pre><span></span>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
  Phonon energies in Hartree :
    2.558878E-06  2.558879E-06  2.558880E-06  1.568559E-03  1.568559E-03
    1.568559E-03
  Phonon frequencies in cm-1    :
 -  5.616089E-01  5.616089E-01  5.616092E-01  3.442590E+02  3.442590E+02
 -  3.442590E+02
-</code></pre>
+</pre></div>
+
+
 <p><em>You might wonder about the dash sign present in the first column of the two
 lines giving the frequencies in cm-1. The first column of the main ABINIT
 output files is always dedicated to signs needed to automatically treat the
@@ -2565,17 +3211,14 @@ Gironcoli, P. Pavone and S. Baroni, Phys. Rev. B 43, 7231 (1991) , especially
 Fig. 2.</p>
 <p>Actually, we have forgotten to take into account the coupling between atomic
 displacements and the homogeneous electric field, that exists in the case of
-polar insulators, for so-called "Longitudinal Optic (LO) modes". A splitting
-appears between these modes and the "Transverse Optic (TO) modes". This
+polar insulators, for so-called &ldquo;Longitudinal Optic (LO) modes&rdquo;. A splitting
+appears between these modes and the &ldquo;Transverse Optic (TO) modes&rdquo;. This
 splitting (Lyddane-Sachs-Teller LO-TO splitting) is presented in simple terms
 in standard textbooks, and should not be forgotten in doing Ab initio
 calculations of phonon frequencies.</p>
 <p>Thus we have now to treat correctly the homogeneous electric field type
 perturbation.</p>
-<hr />
-<h3 id="546-response-function-calculation-of-the-effect-of-an-homogeneous">**5. Response-function calculation of the effect of an homogeneous<a class="headerlink" href="#546-response-function-calculation-of-the-effect-of-an-homogeneous" title="Permanent link">&para;</a></h3>
-<p>electric field.**</p>
-<h3 id="_5"><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h2 id="5-dfpt-calculation-of-the-effect-of-an-homogeneous-electric-field">5 DFPT calculation of the effect of an homogeneous electric field<a class="headerlink" href="#5-dfpt-calculation-of-the-effect-of-an-homogeneous-electric-field" title="Permanent link">&para;</a></h2>
 <p>The treatment of the homogeneous electric field perturbation is formally much
 more complex than the treatment of atomic displacements. This is primarily
 because the change of potential associated with an homogeneous electric field
@@ -2612,7 +3255,7 @@ other perturbations (electric field as well as atomic displacements).</p>
 <p>The analysis of the output file is even more cumbersome than the previous
 ones. Let us skip the first dataset. In the dataset 2 section, one
 perturbation is correctly selected :</p>
-<pre><code> ==&gt;  initialize data related to q vector &lt;==
+<div class="codehilite"><pre><span></span> ==&gt;  initialize data related to q vector &lt;==
 
  The list of irreducible perturbations for this q vector is:
     1)    idir= 1    ipert=   3
@@ -2622,25 +3265,31 @@ perturbation is correctly selected :</p>
 --------------------------------------------------------------------------------
  Perturbation wavevector (in red.coord.)   0.000000  0.000000  0.000000
  Perturbation : derivative vs k along direction   1
-</code></pre>
+</pre></div>
+
+
 <p>The analysis of the output for this particular perturbation is not
 particularly interesting, except for the f-sum rule ratio</p>
-<pre><code> loper3 : ek2=    1.6833336546E+01
+<div class="codehilite"><pre><span></span> loper3 : ek2=    1.6833336546E+01
           f-sum rule ratio=    1.0028582975E+00
-</code></pre>
-<p>that should be close to 1, and becomes closer to it when <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> is
+</pre></div>
+
+
+<p>that should be close to 1, and becomes closer to it when <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> is
 increased, and the sampling of k points is improved. (In the present status of
-ABINIT, the f-rule ratio is not computed correctly when <a class="wikilink" href="../../input_variables/rlx/#ecutsm">ecutsm</a>/=0)</p>
+ABINIT, the f-rule ratio is not computed correctly when <a class="wikilink codevar-link" href="../../input_variables/rlx/#ecutsm">ecutsm</a>/=0)</p>
 <p>In the third dataset section, three irreducible perturbations are considered :</p>
-<pre><code> ==&gt;  initialize data related to q vector &lt;==
+<div class="codehilite"><pre><span></span> ==&gt;  initialize data related to q vector &lt;==
 
  The list of irreducible perturbations for this q vector is:
     1)    idir= 1    ipert=   1
     2)    idir= 1    ipert=   2
     3)    idir= 1    ipert=   4
-</code></pre>
+</pre></div>
+
+
 <p>Much later, the dielectric tensor is given :</p>
-<pre><code>  Dielectric tensor, in cartesian coordinates,
+<div class="codehilite"><pre><span></span>  Dielectric tensor, in cartesian coordinates,
      j1       j2             matrix element
   dir pert dir pert     real part    imaginary part
 
@@ -2655,7 +3304,9 @@ ABINIT, the f-rule ratio is not computed correctly when <a class="wikilink" href
    3    4   1    4    0.0000000000    -0.0000000000
    3    4   2    4    0.0000000000    -0.0000000000
    3    4   3    4    9.7606052146    -0.0000000000
-</code></pre>
+</pre></div>
+
+
 <p>It is diagonal and isotropic, and corresponds to a dielectric constant of
 9.7606052146.</p>
 <p>Then, the Born effective charges are given, either computed from the
@@ -2663,21 +3314,25 @@ derivative of the wavefunctions with respect to the electric field, or
 computed from the derivative of the wavefunctions with respect to an atomic
 displacement, as explained in section II of X. Gonze, Phys. Rev. B55, 10355
 (1997) :</p>
-<pre><code>  Effective charges, in cartesian coordinates,
+<div class="codehilite"><pre><span></span>  Effective charges, in cartesian coordinates,
   (from electric field response)
   ...
-</code></pre>
+</pre></div>
+
+
 <p>and</p>
-<pre><code>  Effective charges, in cartesian coordinates,
+<div class="codehilite"><pre><span></span>  Effective charges, in cartesian coordinates,
   (from phonon response)
   ...
-</code></pre>
+</pre></div>
+
+
 <p>Namely, the Born effective charge of the Al atom is 2.104, and the one of the
 As atom is -2.127 . The charge neutrality sum rule is not fulfilled exactly.
-When <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> is increased, and the sampling of k points is improved, the sum
+When <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> is increased, and the sampling of k points is improved, the sum
 of the two charges goes closer to zero.</p>
 <p>Finally, the phonon frequencies are computed:</p>
-<pre><code>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
+<div class="codehilite"><pre><span></span>  Phonon wavevector (reduced coordinates) :  0.00000  0.00000  0.00000
  Phonon energies in Hartree :
    2.558878E-06  2.558879E-06  2.558880E-06  1.568559E-03  1.568559E-03
    1.568559E-03
@@ -2711,7 +3366,9 @@ of the two charges goes closer to zero.</p>
  Phonon frequencies in cm-1    :
 -  5.616089E-01  5.616092E-01  8.930223E-01  3.442590E+02  3.442590E+02
 -  3.795979E+02
-</code></pre>
+</pre></div>
+
+
 <p>The first few lines discard any effect of the homogeneous electric field,
 while the next sections consider it along the three cartesian coordinates.</p>
 <p>In the present material, the directionality of the electric field has no
@@ -2721,35 +3378,33 @@ cm^-1, and one LO mode at 379.6 cm^-1 .</p>
 <p>These values can be compared to experimental (361 cm^-1 , 402 cm^-1) as well
 as theoretical (363 cm^-1 , 400 cm^-1) values (again the Gianozzi et al paper
 mentioned above). Most of the discrepancy comes from the too low value of
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>. Using ABINIT with <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree gives (358.8 cm^-1 , 389.8
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>. Using ABINIT with <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree gives (358.8 cm^-1 , 389.8
 cm^-1). The remaining of the discrepancy may come partly from the
 pseudopotentials, that are particularly soft.</p>
 <p>The comparison of Born effective charges is also interesting. After imposition
 of the neutrality sum rule, the Al Born effective charge is 2.116 . The value
 from Gianozzi et al is 2.17, the experimental value is 2.18. Increasing
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a> to 6 hartree in ABINIT gives 2.168.</p>
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> to 6 hartree in ABINIT gives 2.168.</p>
 <p>For the dielectric tensor, it is more delicate. The value from Gianozzi et al
 is 9.2, while the experimental value is 8.2 . The agreement is not very good,
 a fact that can be attributed to the LDA lack of polarization-dependence ( X.
 Gonze, Ph. Ghosez and R. Godby, Phys. Rev. Lett. (1995)). Still, the agreement
 of our calculation with the theoretical result is not very good. With
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=3 hartree, we have 9.76. Changing it to 6 hartree gives 10.40 . A
-better k point sampling (8x8x8), with <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, reduces the value to
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=3 hartree, we have 9.76. Changing it to 6 hartree gives 10.40 . A
+better k point sampling (8x8x8), with <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, reduces the value to
 9.89 . Changing pseudopotentials finally improves the agreement : with the
 much harder 13al.pspgth and 33as.psphgh pseudopotentials with adequate
-<a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=16 hartree and 8x8x8 Monkhorst-Pack sampling, we reach a value of
+<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=16 hartree and 8x8x8 Monkhorst-Pack sampling, we reach a value of
 9.37 . This illustrates that the dielectric tensor is a much more sensitive
 quantity than the others.</p>
-<hr />
-<h3 id="646-response-function-calculation-of-phonon-frequencies-at-non-zero-q"><strong>6. Response-function calculation of phonon frequencies at non-zero q.</strong><a class="headerlink" href="#646-response-function-calculation-of-phonon-frequencies-at-non-zero-q" title="Permanent link">&para;</a></h3>
-<h3 id="_6"><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h2 id="6-dfpt-calculation-of-phonon-frequencies-at-non-zero-q">6 DFPT calculation of phonon frequencies at non-zero q<a class="headerlink" href="#6-dfpt-calculation-of-phonon-frequencies-at-non-zero-q" title="Permanent link">&para;</a></h2>
 <p>The computation of phonon frequencies at non-zero q is actually simpler than
 the one at Gamma. One must distinguish two cases. Either the q wavevector
 connects k points that belong to the same grid, or the wavevector q is
-general. In any case, the computation within the response-function formalism
-is more efficient than using the frozen-phonon technique: the use of supercell
-is completely avoided. For an explanation of this fact, see for example
-section IV of X. Gonze, Phys. Rev. B55, 10337 (1997).</p>
+general. In any case, the computation within the DFPT formalism is more
+efficient than using the frozen-phonon technique: the use of supercell is
+completely avoided. For an explanation of this fact, see for example section
+IV of X. Gonze, Phys. Rev. B55, 10337 (1997).</p>
 <p>You can copy the file ~abinit/tests/tutorespfn/Input/trf1_6.in in Work_rf1.
 This is your input file. You should edit it. As for the other RF tests, the
 changes with respect to the file ~abinit/tests/tutorespfn/Input/trf1_1.in are
@@ -2764,17 +3419,17 @@ documentation (why not the
 Gianozzi et al paper. The agreement is rather good, despite the low cut-off
 energy, and different pseudopotentials.</p>
 <p>At X, they get 95cm^-1, 216cm^-1, 337cm^-1 and 393cm^-1, while we get
-92.5cm^-1, 204.6cm^-1, 313.9cm^-1 and 375.9cm^-1. With <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, we
+92.5cm^-1, 204.6cm^-1, 313.9cm^-1 and 375.9cm^-1. With <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, we
 get 89.7cm^-1, 212.3cm^-1, 328.5cm^-1 and 385.8cm^-1.</p>
 <p>At L, they get 71cm^-1, 212cm^-1, 352cm^-1 and 372cm^-1, while we get
-69.0cm^-1, 202.5cm^-1, 332.6cm^-1 and 352.3cm^-1. With <a class="wikilink" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, we
+69.0cm^-1, 202.5cm^-1, 332.6cm^-1 and 352.3cm^-1. With <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>=6 hartree, we
 get 68.1cm^-1, 208.5cm^-1, 346.7cm^-1 and 362.6cm^-1.</p>
 <p>At q=(0.1 0 0), we get 31.6cm^-1, 63.6cm^-1, 342.0cm^-1 and 379.7cm^-1. The
 acoustic modes tends (nearly-)linearly to zero, while the optic modes are
 close to their values at Gamma : 344.3 cm^-1 and 379.6 cm^-1.</p>
 <hr />
 <p>This ABINIT tutorial is now finished. You are advised to read now the <a href="../lesson_rf2.html"> second
-tutorial on response functions</a></p>
+tutorial on DFPT</a></p>
                 
                   
                 
@@ -2787,15 +3442,186 @@ tutorial on response functions</a></p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Ucalc crpa
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../rf2/" title="RF2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                RF2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (XG, RC)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

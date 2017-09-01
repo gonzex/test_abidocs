@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -488,8 +576,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -548,8 +660,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -562,6 +674,18 @@
   <li class="md-nav__item">
     <a href="../Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -644,6 +768,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -658,18 +818,6 @@
   <li class="md-nav__item">
     <a href="../DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -728,8 +876,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -752,20 +912,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -824,6 +972,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -850,18 +1022,6 @@
   <li class="md-nav__item">
     <a href="../Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -987,6 +1147,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -1050,8 +1217,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1074,6 +1253,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1086,20 +1277,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1194,8 +1373,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1206,8 +1385,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1338,6 +1517,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1352,6 +1543,18 @@
   <li class="md-nav__item">
     <a href="../vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1421,31 +1624,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1698,8 +1901,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1807,6 +2034,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1822,10 +2061,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1873,8 +2232,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1903,13 +2274,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1963,13 +2382,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1993,14 +2412,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2034,8 +2609,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2058,7 +2645,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2094,8 +2693,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2204,6 +2839,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tutorials" title="Tutorials" class="md-nav__link">
+    Tutorials
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -2218,15 +2860,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/topics/nonlinear.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
                 
                   <h1>Nonlinear</h1>
                 
                 <!-- Return to Top -->
 
-<h2 id="_1"><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h2 id="introduction"><strong> Introduction </strong><a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<p>This page gives hints on how to compute Raman intensity, and the related electro-optic coefficients with the ABINIT package.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>In Raman experiments, the incident light, usually a polarized or unpolarized
 laser, is scattered by the sample, and the energy as well as polarization of
 the outgoing light is measured. A Raman spectrum, presenting the energy of the
@@ -2240,7 +2887,8 @@ spectrum is directly related to the energy of phonons at the Brillouin-zone
 center: when the zero of the energy scale is set at the incident light energy,
 the absolute value of the energy of the peaks corresponds to the energy of the
 phonons.</p>
-<p>The computation of phonon energies is presented in <a class="wikilink" href="../../topic_Phonons/">topic_Phonons</a>. Raman
+<p>The computation of phonon energies is presented in <a class="wikilink topic-link" data-content="How to compute phonon frequencies and modes, IR and Raman spectra, Born effective
+charges, IR reflectivity ..." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/Phonons">Phonons topic</a>. Raman
 intensities due to one-phonon emission or absorption are not linked to second-
 order derivatives of the total energy, but, within the adiabatic
 approximation, to derivative of the dielectric phonon with respect to atomic
@@ -2255,76 +2903,100 @@ the gap, the DFPT cannot be used, but, if the adiabatic approximation can be
 used (the phonon frequency much smaller than the gap, and also features
 smaller than the largest phonon frequency cannot be resolved in the Raman
 spectrum), one can compute the Raman intensities thanks to finite differences
-of dielectric function, see <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gillet2013" title="First-principles study of excitonic effects in Raman intensities">Gillet2013</a>. For the two-phonon Raman spectrum,
-see <a class="wikilink" href="../../Gillet2017/">Gillet2017</a>.</p>
+of dielectric function, see <a class="wikilink citation-link" data-content="First-principles study of excitonic effects in Raman intensities" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gillet2013">[Gillet2013]</a>. For the two-phonon Raman spectrum,
+see <a class="wikilink citation-link" data-content="Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gillet2017">[Gillet2017]</a>.</p>
 <p>Both the derivatives of the linear electronic dielectric susceptibilities with
 respect to atomic displacements and the non-linear electronic dielectric
 susceptibilities required to evaluate the Raman intensities are thus non-
 linear responses. In the ABINIT implementation, they are computed within the
-density functional perturbation theory, as described in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Veithen2005" title="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory">Veithen2005</a>.
+density functional perturbation theory, as described in <a class="wikilink citation-link" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#veithen2005">[Veithen2005]</a>.
 Thanks to the 2n+1 theorem, their formulation only requires the knowledge of
 the ground-state and first-order changes in the wavefunctions.</p>
 <p>This non-linear response formalism has been successfully applied to a large
 variety of systems. We have so far studied the Raman spectra of ferroelectric
-oxides ( BaTiO3 and PbTiO3 <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Hermet2009" title="Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.">Hermet2009</a>), different minerals under pressure
-conditions characteristic to the interior of the Earth <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Caracas2007a" title="Post-perovskite phase in selected sesquioxides from density-functional calculations">Caracas2007a</a> or
-molecular solids under extreme conditions <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Caracas2008" title="Dynamical Instabilities of Ice X">Caracas2008</a>. The computation of
+oxides ( BaTiO3 and PbTiO3 <a class="wikilink citation-link" data-content="Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#hermet2009">[Hermet2009]</a>), different minerals under pressure
+conditions characteristic to the interior of the Earth <a class="wikilink citation-link" data-content="Post-perovskite phase in selected sesquioxides from density-functional calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#caracas2007a">[Caracas2007a]</a> or
+molecular solids under extreme conditions <a class="wikilink citation-link" data-content="Dynamical Instabilities of Ice X" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#caracas2008">[Caracas2008]</a>. The computation of
 the non-linear optical susceptibilities has also been applied to several polar
-dielectrics <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Caracas2007" title="Prediction of polar ordered oxynitride perovskites">Caracas2007</a>.</p>
+dielectrics <a class="wikilink citation-link" data-content="Prediction of polar ordered oxynitride perovskites" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#caracas2007">[Caracas2007]</a>.</p>
 <p>As a by-product of the calculation of the Raman tensor and non-linear optical
 coefficients, it is also possible to determine directly within ABINIT the
 electro-optic (EO) coefficients rijγ (Pockels effect) which describe the
 change of optical dielectric tensor in a (quasi-)static electric field through
-the following expression <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Veithen2005" title="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory">Veithen2005</a>: Δ(ε-1)ij=∑γ=1,3 rijγΕγ</p>
+the following expression <a class="wikilink citation-link" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#veithen2005">[Veithen2005]</a>: Δ(ε-1)ij=∑γ=1,3 rijγΕγ</p>
 <p>The clamped (zero strain) EO coefficients include an electronic and an ionic
 contribution directly accessible within ABINIT. The unclamped EO coefficients
 include an additional piezoelectric contribution which must be computed
 separately from the knowledge of the elasto-optic and piezoelectric strain
 coefficients. This formalism was for instance applied to different
-ferroelectric ABO3 compounds <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Veithen2005a" title="Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles">Veithen2005a</a>.</p>
+ferroelectric ABO3 compounds <a class="wikilink citation-link" data-content="Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#veithen2005a">[Veithen2005a]</a>.</p>
 <p>The implementation is available for norm-conserving pseudopotentials, in the
 LDA approximation. The extension to the PAW framework is in progress.</p>
-<h2 id="related-input-variables"><strong> Related Input Variables </strong><a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
+<h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#alphon">alphon</a>  ALign PHONon mode eigendisplacements</li>
-<li><a class="wikilink" href="../../input_variables/anaddb/#ramansr">ramansr</a>  RAMAN Sum-Rule</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert1_atpol">d3e_pert1_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert1_dir">d3e_pert1_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: DIRections</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert1_elfd">d3e_pert1_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: ELectric FielD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert1_phon">d3e_pert1_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: PHONons</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert2_atpol">d3e_pert2_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert2_dir">d3e_pert2_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: DIRections</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert2_elfd">d3e_pert2_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: ELectric FielD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert2_phon">d3e_pert2_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: PHONons</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert3_atpol">d3e_pert3_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert3_dir">d3e_pert3_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: DIRections</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert3_elfd">d3e_pert3_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: ELectric FielD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#d3e_pert3_phon">d3e_pert3_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: PHONons</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#prepanl">prepanl</a>  PREPAre Non-Linear response calculation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#alphon">alphon</a>  ALign PHONon mode eigendisplacements</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ramansr">ramansr</a>  RAMAN Sum-Rule</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#nlflag">nlflag</a>  Non-Linear FLAG</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nlflag">nlflag</a>  Non-Linear FLAG</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink" href="../../input_variables/anaddb/#prtmbm">prtmbm</a>  PRinT Mode-By-Mode decomposition of the electrooptic tensor</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files/#get1den">get1den</a>  GET the first-order density from _1DEN file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files/#ird1den">ird1den</a>  Integer that governs the ReaDing of 1<sup>st</sup>-order DEN file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtmbm">prtmbm</a>  PRinT Mode-By-Mode decomposition of the electrooptic tensor</li>
 </ul>
-<h2 id="selected-input-files"><strong> Selected Input Files </strong><a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
+<h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t54.in" title="GaAs in zinc-blende structure;  GS and RF calculation (similar to test v2 #30,  except that only two q points are considered) the 5-th dataset compute 3DTE. localrdwf=1 Also check parallelism for Raman calculations.">tests/paral/Input/t54.in</a></li>
+<li><a class="wikilink test-link" data-content="GaAs in zinc-blende structure;  GS and RF calculation (similar to test v2 #30,  except that only two q points are considered) the 5-th dataset compute 3DTE. localrdwf=1 Also check parallelism for Raman calculations." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t54.in">tests/paral/Input/t54.in</a></li>
 </ul>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t83.in" title="AlAs (zinc-blende structure). Compute different response functions,  then perform a computation of 3rd derivative of total energy. (to be described in more detail)">tests/v3/Input/t83.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs (zinc-blende structure). Compute different response functions,  then perform a computation of 3rd derivative of total energy. (to be described in more detail)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t83.in">tests/v3/Input/t83.in</a></li>
 </ul>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t52.in" title="AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 53 and 54.">tests/v4/Input/t52.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t54.in" title="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 53,  for the generation of the electro-optic tensor,  and Raman susceptibility coefficients.">tests/v4/Input/t54.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 53 and 54." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t52.in">tests/v4/Input/t52.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 53,  for the generation of the electro-optic tensor,  and Raman susceptibility coefficients." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t54.in">tests/v4/Input/t54.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t63.in" title="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized. However nsppol=2 for testing purposes. Over 1200 WARNINGS. This test must give the same results of the test 64 non-linear response with nsppol=1 does not support MPI with nprocs &gt; 1">tests/v6/Input/t63.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t64.in" title="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized Over 1200 WARNINGS. This test must give the same results of the test 63">tests/v6/Input/t64.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t65.in" title="NaCl Molecule in a big box 3DTE calculation with only one k-point">tests/v6/Input/t65.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t66.in" title="He dimer,  with bare pseudopotential ixc=0 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  giving DFPT: 0.039868 Finite-differences: 1.6318415296 - 1.6216781815 = 0.0101633077 to be divided by 0.02 (the difference in xcart) and 4pi =&gt; 0.040439 Going to ngkpt 80 1 1,  gives: DFPT: 0.040052 Finite-differences: 0.040054 The DFPT with ngkpt 320 1 1 gives 0.040055.">tests/v6/Input/t66.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t67.in" title="Charged (He dimer)+,  with bare pseudopotential. ixc=7 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  like the previous one. Going to ngkpt 80 1 1 gives Finite-differences: 0.022275 The DFPT with ngkpt 320 1 1 gives 0.022279 . (To obtain the finite-difference results,  one has to reactivate the dtset 15 case) Cannot be executed on more that 1 MPI proc due to different values of nband_k">tests/v6/Input/t67.in</a></li>
+<li><a class="wikilink test-link" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized. However nsppol=2 for testing purposes. Over 1200 WARNINGS. This test must give the same results of the test 64 non-linear response with nsppol=1 does not support MPI with nprocs &gt; 1" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t63.in">tests/v6/Input/t63.in</a></li>
+<li><a class="wikilink test-link" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized Over 1200 WARNINGS. This test must give the same results of the test 63" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t64.in">tests/v6/Input/t64.in</a></li>
+<li><a class="wikilink test-link" data-content="NaCl Molecule in a big box 3DTE calculation with only one k-point" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t65.in">tests/v6/Input/t65.in</a></li>
+<li><a class="wikilink test-link" data-content="He dimer,  with bare pseudopotential ixc=0 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  giving DFPT: 0.039868 Finite-differences: 1.6318415296 - 1.6216781815 = 0.0101633077 to be divided by 0.02 (the difference in xcart) and 4pi =&gt; 0.040439 Going to ngkpt 80 1 1,  gives: DFPT: 0.040052 Finite-differences: 0.040054 The DFPT with ngkpt 320 1 1 gives 0.040055." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t66.in">tests/v6/Input/t66.in</a></li>
+<li><a class="wikilink test-link" data-content="Charged (He dimer)+,  with bare pseudopotential. ixc=7 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  like the previous one. Going to ngkpt 80 1 1 gives Finite-differences: 0.022275 The DFPT with ngkpt 320 1 1 gives 0.022279 . (To obtain the finite-difference results,  one has to reactivate the dtset 15 case) Cannot be executed on more that 1 MPI proc due to different values of nband_k" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t67.in">tests/v6/Input/t67.in</a></li>
 </ul>
 <p><em>v8:</em></p>
 <ul>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t49.in" title="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test t48,  for the generation of the nonlinear coefficients and the first order change of the dielectric tensor.">tests/v8/Input/t49.in</a></li>
-<li><a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t50.in" title="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 48,  for the generation of the nonlinear coefficients only.">tests/v8/Input/t50.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test t48,  for the generation of the nonlinear coefficients and the first order change of the dielectric tensor." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t49.in">tests/v8/Input/t49.in</a></li>
+<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 48,  for the generation of the nonlinear coefficients only." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t50.in">tests/v8/Input/t50.in</a></li>
 </ul>
+<h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
+<p><a class="wikilink lesson-link" href="../../tutorials/nlo">The lesson on static non-linear properties</a> presents the
+computation of responses beyond the linear order, within Density-Functional
+Perturbation Theory (beyond the simple Sum-Over-State approximation): Raman
+scattering efficiencies (non-resonant case), non-linear electronic
+susceptibility, electro-optic effect. Comparison with the finite field
+technique (combining the computation of linear response functions with finite
+difference calculations), is also provided.</p>
                 
                   
                 
@@ -2337,15 +3009,186 @@ LDA approximation. The extension to the PAW framework is in progress.</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-<center>Copyright &copy; 2017 The Abinit Group (RC, XG)</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../multidtset/" title="Multidtset" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Multidtset
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Optic/" title="Optic" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Optic
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (RC, XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

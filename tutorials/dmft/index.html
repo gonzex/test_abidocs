@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -203,7 +199,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -254,19 +250,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../../input_variables/varlist_abinit/" title="Input Variables" class="md-tabs__link">
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -288,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -301,7 +291,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -336,7 +326,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -357,7 +349,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -426,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -438,7 +430,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -450,8 +502,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -486,8 +574,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -546,8 +658,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -560,6 +672,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -642,6 +766,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -656,18 +816,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -726,8 +874,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -750,20 +910,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -822,6 +970,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -848,18 +1020,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1002,8 +1162,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1026,6 +1198,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1038,20 +1222,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1146,8 +1318,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1158,8 +1330,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1290,6 +1462,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1304,6 +1488,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1373,31 +1569,31 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
-    
-    <label class="md-nav__link" for="nav-3-1">
-      Abinit
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
-        Abinit
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
   <li class="md-nav__item">
-    <a href="../../input_variables/varlist_abinit/" title="All Variables" class="md-nav__link">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
       All Variables
     </a>
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1650,8 +1846,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1761,6 +1981,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1776,10 +2008,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1827,8 +2179,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -1849,6 +2213,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         DMFT
@@ -1862,63 +2228,72 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-the-dftdmft-method-summary-and-key-parameters" title="1. The DFT+DMFT method: summary and key parameters" class="md-nav__link">
-    1. The DFT+DMFT method: summary and key parameters
+  <a href="#a-dftdmft-calculation-for-srvo3" title="A DFT+DMFT calculation for SrVO3." class="md-nav__link">
+    A DFT+DMFT calculation for SrVO3.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-electronic-structure-of-srvo3-in-lda" title="2. Electronic Structure of SrVO3 in LDA" class="md-nav__link">
-    2. Electronic Structure of SrVO3 in LDA
+  <a href="#1-the-dftdmft-method-summary-and-key-parameters" title="1 The DFT+DMFT method: summary and key parameters" class="md-nav__link">
+    1 The DFT+DMFT method: summary and key parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="3. Electronic Structure of SrVO3: DFT+DMFT calculation" class="md-nav__link">
-    3. Electronic Structure of SrVO3: DFT+DMFT calculation
+  <a href="#2-electronic-structure-of-srvo3-in-lda" title="2 Electronic Structure of SrVO3 in LDA" class="md-nav__link">
+    2 Electronic Structure of SrVO3 in LDA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="3 Electronic Structure of SrVO3: DFT+DMFT calculation" class="md-nav__link">
+    3 Electronic Structure of SrVO3: DFT+DMFT calculation
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="2.1. The input file for DMFT calculation: correlated orbitals, screened" class="md-nav__link">
-    2.1. The input file for DMFT calculation: correlated orbitals, screened
+  <a href="#31-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="3.1. The input file for DMFT calculation: correlated orbitals, screened" class="md-nav__link">
+    3.1. The input file for DMFT calculation: correlated orbitals, screened
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-the-dftdmft-calculation-the-log-file" title="2.2. The DFT+DMFT calculation: the log file" class="md-nav__link">
-    2.2. The DFT+DMFT calculation: the log file
+  <a href="#32-the-dftdmft-calculation-the-log-file" title="3.2. The DFT+DMFT calculation: the log file" class="md-nav__link">
+    3.2. The DFT+DMFT calculation: the log file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-the-self-energy" title="2.3. The self energy" class="md-nav__link">
-    2.3. The self energy
+  <a href="#33-the-self-energy" title="3.3. The self energy" class="md-nav__link">
+    3.3. The self energy
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-the-greens-function-for-correlated-orbitals" title="2.4. The Green's function for correlated orbitals" class="md-nav__link">
-    2.4. The Green's function for correlated orbitals
+  <a href="#34-the-greens-function-for-correlated-orbitals" title="3.4. The Green's function for correlated orbitals" class="md-nav__link">
+    3.4. The Green's function for correlated orbitals
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#25-the-local-spectral-function" title="2.5. The local spectral function" class="md-nav__link">
-    2.5. The local spectral function
+  <a href="#35-the-local-spectral-function" title="3.5. The local spectral function" class="md-nav__link">
+    3.5. The local spectral function
   </a>
   
 </li>
@@ -1929,29 +2304,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="4. Electronic Structure of SrVO3: Choice of correlated orbitals" class="md-nav__link">
-    4. Electronic Structure of SrVO3: Choice of correlated orbitals
+  <a href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="4 Electronic Structure of SrVO3: Choice of correlated orbitals" class="md-nav__link">
+    4 Electronic Structure of SrVO3: Choice of correlated orbitals
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-electronic-structure-of-srvo3-the-internal-energy" title="5. Electronic Structure of SrVO3: the internal energy" class="md-nav__link">
-    5. Electronic Structure of SrVO3: the internal energy
+  <a href="#5-electronic-structure-of-srvo3-the-internal-energy" title="5 Electronic Structure of SrVO3: The internal energy" class="md-nav__link">
+    5 Electronic Structure of SrVO3: The internal energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="6. Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume" class="md-nav__link">
-    6. Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume
+  <a href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="6 Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume" class="md-nav__link">
+    6 Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-electronic-structure-of-srvo3-conclusion" title="7. Electronic Structure of SrVO3: Conclusion" class="md-nav__link">
-    7. Electronic Structure of SrVO3: Conclusion
+  <a href="#7-electronic-structure-of-srvo3-conclusion" title="7 Electronic Structure of SrVO3: Conclusion" class="md-nav__link">
+    7 Electronic Structure of SrVO3: Conclusion
   </a>
   
 </li>
@@ -1972,13 +2347,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2032,13 +2455,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2062,14 +2485,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2103,8 +2682,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2127,7 +2718,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2163,8 +2766,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2248,63 +2887,72 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-the-dftdmft-method-summary-and-key-parameters" title="1. The DFT+DMFT method: summary and key parameters" class="md-nav__link">
-    1. The DFT+DMFT method: summary and key parameters
+  <a href="#a-dftdmft-calculation-for-srvo3" title="A DFT+DMFT calculation for SrVO3." class="md-nav__link">
+    A DFT+DMFT calculation for SrVO3.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-electronic-structure-of-srvo3-in-lda" title="2. Electronic Structure of SrVO3 in LDA" class="md-nav__link">
-    2. Electronic Structure of SrVO3 in LDA
+  <a href="#1-the-dftdmft-method-summary-and-key-parameters" title="1 The DFT+DMFT method: summary and key parameters" class="md-nav__link">
+    1 The DFT+DMFT method: summary and key parameters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="3. Electronic Structure of SrVO3: DFT+DMFT calculation" class="md-nav__link">
-    3. Electronic Structure of SrVO3: DFT+DMFT calculation
+  <a href="#2-electronic-structure-of-srvo3-in-lda" title="2 Electronic Structure of SrVO3 in LDA" class="md-nav__link">
+    2 Electronic Structure of SrVO3 in LDA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="3 Electronic Structure of SrVO3: DFT+DMFT calculation" class="md-nav__link">
+    3 Electronic Structure of SrVO3: DFT+DMFT calculation
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="2.1. The input file for DMFT calculation: correlated orbitals, screened" class="md-nav__link">
-    2.1. The input file for DMFT calculation: correlated orbitals, screened
+  <a href="#31-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="3.1. The input file for DMFT calculation: correlated orbitals, screened" class="md-nav__link">
+    3.1. The input file for DMFT calculation: correlated orbitals, screened
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-the-dftdmft-calculation-the-log-file" title="2.2. The DFT+DMFT calculation: the log file" class="md-nav__link">
-    2.2. The DFT+DMFT calculation: the log file
+  <a href="#32-the-dftdmft-calculation-the-log-file" title="3.2. The DFT+DMFT calculation: the log file" class="md-nav__link">
+    3.2. The DFT+DMFT calculation: the log file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-the-self-energy" title="2.3. The self energy" class="md-nav__link">
-    2.3. The self energy
+  <a href="#33-the-self-energy" title="3.3. The self energy" class="md-nav__link">
+    3.3. The self energy
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-the-greens-function-for-correlated-orbitals" title="2.4. The Green's function for correlated orbitals" class="md-nav__link">
-    2.4. The Green's function for correlated orbitals
+  <a href="#34-the-greens-function-for-correlated-orbitals" title="3.4. The Green's function for correlated orbitals" class="md-nav__link">
+    3.4. The Green's function for correlated orbitals
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#25-the-local-spectral-function" title="2.5. The local spectral function" class="md-nav__link">
-    2.5. The local spectral function
+  <a href="#35-the-local-spectral-function" title="3.5. The local spectral function" class="md-nav__link">
+    3.5. The local spectral function
   </a>
   
 </li>
@@ -2315,29 +2963,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="4. Electronic Structure of SrVO3: Choice of correlated orbitals" class="md-nav__link">
-    4. Electronic Structure of SrVO3: Choice of correlated orbitals
+  <a href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="4 Electronic Structure of SrVO3: Choice of correlated orbitals" class="md-nav__link">
+    4 Electronic Structure of SrVO3: Choice of correlated orbitals
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-electronic-structure-of-srvo3-the-internal-energy" title="5. Electronic Structure of SrVO3: the internal energy" class="md-nav__link">
-    5. Electronic Structure of SrVO3: the internal energy
+  <a href="#5-electronic-structure-of-srvo3-the-internal-energy" title="5 Electronic Structure of SrVO3: The internal energy" class="md-nav__link">
+    5 Electronic Structure of SrVO3: The internal energy
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="6. Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume" class="md-nav__link">
-    6. Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume
+  <a href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="6 Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume" class="md-nav__link">
+    6 Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-electronic-structure-of-srvo3-conclusion" title="7. Electronic Structure of SrVO3: Conclusion" class="md-nav__link">
-    7. Electronic Structure of SrVO3: Conclusion
+  <a href="#7-electronic-structure-of-srvo3-conclusion" title="7 Electronic Structure of SrVO3: Conclusion" class="md-nav__link">
+    7 Electronic Structure of SrVO3: Conclusion
   </a>
   
 </li>
@@ -2356,123 +3004,86 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/tutorials/dmft.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>DMFT</h1>
                 
                 <!-- Return to Top -->
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-This lesson aims at showing how to perform a DFT+DMFT calculation using
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="lesson-on-dftdmft">Lesson on DFT+DMFT<a class="headerlink" href="#lesson-on-dftdmft" title="Permanent link">&para;</a></h1>
+<h2 id="a-dftdmft-calculation-for-srvo3">A DFT+DMFT calculation for SrVO<sub>3</sub>.<a class="headerlink" href="#a-dftdmft-calculation-for-srvo3" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to perform a DFT+DMFT calculation using
 Abinit.</p>
 <p>You will not learn here what is DFT+DMFT. But you will learn how to do a
 DFT+DMFT calculation and what are the main input variables controlling this
 type of calculation.</p>
 <p>It might be useful that you already know how to do PAW calculations using
 ABINIT but it is not mandatory (you can follow the two lessons on PAW in
-ABINIT (<a href="../lesson_paw1.html">PAW1</a>, <a href="../lesson_paw2.html">PAW2</a>)). Also the DFT+U
-tutorial in ABINIT (<a href="../lesson_ldau.html">DFT+U</a>) might be useful to know some
-basic variables common to DFT+U and DFT+DMFT.</p>
+ABINIT, <a class="wikilink lesson-link" href="../../tutorials/paw1">PAW1</a> and <a class="wikilink lesson-link" href="../../tutorials/paw2">PAW2</a>). Also the
+<a class="wikilink lesson-link" href="../../tutorials/dftu">DFT+U lesson</a> in ABINIT might be useful to know some basic
+variables common to DFT+U and DFT+DMFT.</p>
 <p>This lesson should take one hour to complete (especially if you have access to
 several processors).</p>
-<ul>
-<li>
-<ol>
-<li>The DFT+DMFT method: summary and key parameters. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic structure calculation of SrVO3 in LDA. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic Structure of SrVO3: DFT+DMFT calculation. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic Structure of SrVO3: Choice of correlated orbitals </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic Structure of SrVO3: the Internal energy </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Electronic Structure of SrVO3: Conclusion </li>
-</ol>
-</li>
-</ul>
-<hr />
-<h3 id="1-the-dftdmft-method-summary-and-key-parameters"><strong>1. The DFT+DMFT method: summary and key parameters</strong><a class="headerlink" href="#1-the-dftdmft-method-summary-and-key-parameters" title="Permanent link">&para;</a></h3>
+<h2 id="1-the-dftdmft-method-summary-and-key-parameters">1 The DFT+DMFT method: summary and key parameters<a class="headerlink" href="#1-the-dftdmft-method-summary-and-key-parameters" title="Permanent link">&para;</a></h2>
 <p>The DFT+DMFT method aims at improving the description of strongly correlated
 systems. Generally, these highly correlated materials contain rare-earth
 metals or transition metals, which have partially filled <em>d</em> or <em>f</em> bands and
 thus localized electrons. For further information on this method, please refer
-to <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Georges1996" title="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions">Georges1996</a> and <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Kotliar2006" title="Electronic structure calculations with dynamical mean-field theory">Kotliar2006</a>. For an introduction to Many Body
-Physics (Green's function, Self-energy, imaginary time, and Matsubara
-frequencies), see e.g. <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Coleman2015" title="Introduction to Many-Body Physics">Coleman2015</a> and <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Tremblay2017" title="Probl\`eme \`a N-corps">Tremblay2017</a>.</p>
+to <a class="wikilink citation-link" data-content="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#georges1996">[Georges1996]</a> and <a class="wikilink citation-link" data-content="Electronic structure calculations with dynamical mean-field theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#kotliar2006">[Kotliar2006]</a>. For an introduction to Many Body
+Physics (Green&rsquo;s function, Self-energy, imaginary time, and Matsubara
+frequencies), see e.g. <a class="wikilink citation-link" data-content="Introduction to Many-Body Physics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#coleman2015">[Coleman2015]</a> and <a class="wikilink citation-link" data-content="Probl\`eme \`a N-corps" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#tremblay2017">[Tremblay2017]</a>.</p>
 <p>Several parameters (both physical and technical) needs to be discussed for a
 DFT+DMFT calculation.</p>
 <ul>
-<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>, and <a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandi</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a href="../../../input_variables/generated_files/vardev.html#nnsclo">nnsclo</a>, and <a href="../../../input_variables/generated_files/vargs.html#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008a" title="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters">Amadon2008a</a>). The relation between the two expressions is briefly discussed in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>. </li>
-<li>The definition of the Coulomb and exchange interaction U and J are done as in DFT+U through the variables <a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a> and <a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>. They could be computed with the cRPA method, also available in ABINIT. The value of U and J should in principle depend on the definition of correlated orbitals. In this tutorial, U and J will be seen as parameters, as in the DFT+U approach. As in DFT+U, two double counting methods are available (see the <a href="../../../input_variables/generated_files/vardmft.html#dmft_dc">dmft_dc</a> input variable). Note that in version 7.10.5 (but not in later versions) <a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>=0 is required if the density matrix in the correlated subspace is not diagonal. </li>
-<li>The choice of the double counting correction. The current default choice in ABINIT is (<a href="../../../input_variables/generated_files/vardmft.html#dmft_dc">dmft_dc</a>=1) which corresponds to the full localized limit. </li>
-<li>The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=2) the Continuous time Quantum Monte Carlo (CTQMC) method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=5) or the static mean field method (<a href="../../../input_variables/generated_files/vardmft.html#dmft_solv">dmft_solv</a>=1) equivalent to usual DFT+U. </li>
-<li>The solution of the Anderson Hamiltonian and the DMFT solution are strongly dependent over temperature. So the temperature <a href="../../../input_variables/generated_files/vargs.html#tsmear">tsmear</a> is a very important physical parameter of the calculation. </li>
-<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green's function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a href="../../../input_variables/generated_files/vardmft.html#dmft_iter">dmft_iter</a> and <a href="../../../input_variables/generated_files/varbas.html#nstep">nstep</a>. Other useful variables are <a href="../../../input_variables/generated_files/vardmft.html#dmft_rslf">dmft_rslf</a>=1 and <a href="../../../input_variables/generated_files/varfil.html#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwli">dmft_nwli</a> and <a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a href="../../../input_variables/generated_files/varpaw.html#pawprtvol">pawprtvol</a>=3. </li>
+<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>, and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a class="wikilink codevar-link" href="../../input_variables/dev/#nnsclo">nnsclo</a>, and <a class="wikilink codevar-link" href="../../input_variables/gstate/#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008a">[Amadon2008a]</a>). The relation between the two expressions is briefly discussed in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>. </li>
+<li>The definition of the Coulomb and exchange interaction U and J are done as in DFT+U through the variables <a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a> and <a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>. They could be computed with the cRPA method, also available in ABINIT. The value of U and J should in principle depend on the definition of correlated orbitals. In this tutorial, U and J will be seen as parameters, as in the DFT+U approach. As in DFT+U, two double counting methods are available (see the <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_dc">dmft_dc</a> input variable). Note that in version 7.10.5 (but not in later versions) <a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>=0 is required if the density matrix in the correlated subspace is not diagonal. </li>
+<li>The choice of the double counting correction. The current default choice in ABINIT is (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_dc">dmft_dc</a>=1) which corresponds to the full localized limit. </li>
+<li>The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=2) the Continuous time Quantum Monte Carlo (CTQMC) method (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=5) or the static mean field method (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_solv">dmft_solv</a>=1) equivalent to usual DFT+U. </li>
+<li>The solution of the Anderson Hamiltonian and the DMFT solution are strongly dependent over temperature. So the temperature <a class="wikilink codevar-link" href="../../input_variables/gstate/#tsmear">tsmear</a> is a very important physical parameter of the calculation. </li>
+<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green&rsquo;s function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_iter">dmft_iter</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>. Other useful variables are <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_rslf">dmft_rslf</a>=1 and <a class="wikilink codevar-link" href="../../input_variables/files/#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nwli">dmft_nwli</a> and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a class="wikilink codevar-link" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=3. </li>
 </ul>
-<hr />
-<h3 id="2-electronic-structure-of-srvo3-in-lda"><strong>2. Electronic Structure of SrVO3 in LDA </strong><a class="headerlink" href="#2-electronic-structure-of-srvo3-in-lda" title="Permanent link">&para;</a></h3>
+<h2 id="2-electronic-structure-of-srvo3-in-lda">2 Electronic Structure of SrVO3 in LDA<a class="headerlink" href="#2-electronic-structure-of-srvo3-in-lda" title="Permanent link">&para;</a></h2>
 <p>You might create a subdirectory of the ~abinit/tests/tutoparal directory, and
 use it for the tutorial. In what follows, the names of files will be mentioned
 as if you were in this subdirectory</p>
 <p>Copy the files ../Input/tdmft_1.in and ../Input/tdmft_x.files in your Work
-directory and run ABINIT (as usual, the actual "abinit" command is something
+directory and run ABINIT (as usual, the actual &ldquo;abinit&rdquo; command is something
 like ../../../../src/98_main/abinit):</p>
-<pre><code>abinit &lt; tdmft_x.files &gt; log_1
-</code></pre>
+<div class="codehilite"><pre><span></span>abinit &lt; tdmft_x.files &gt; log_1
+</pre></div>
+
+
 <p>This run should take some time. It is recommended that you use at least 10
 processors (and 32 should be fast). It calculates the LDA ground state of
 SrVO3 and compute the band structure in a second step. The variable
-<a href="../../../input_variables/generated_files/varpaw.html#pawfatbnd">pawfatbnd</a>
-allows to create files with "fatbands" (see description of the variable in the
-list of variables): the width of the line along each k-point path and for each
-band is proportional to the contribution of a given atomic orbital on this
-particular Kohn Sham Wavefunction. A low cutoff and a small number of k-points
-are used in order to speed up the calculation. During this time you can take a
-look at the input file. There are two datasets. The first one is a ground
-state calculations with
-<a href="../../../input_variables/generated_files/vardev.html#nnsclo">nnsclo</a>=3 and
-<a href="../../../input_variables/generated_files/vargs.html#nline">nline</a>=3 in order to
-have well diagonalized eigenfunctions even for empty states. In practice, you
-have however to check that the residue of wavefunctions is small at the end of
-the calculation. In this calculation, we find 1.E-06, which is large (1.E-10
-would be better, so nnsclo and nline should be increased, but it would take
-more time). When the calculation is finished, you can plot the fatbands for
-Vanadium and l=2. Several possibilities are available for that purpose. We
+<a class="wikilink codevar-link" href="../../input_variables/paw/#pawfatbnd">pawfatbnd</a> allows to create files with &ldquo;fatbands&rdquo; (see description of the
+variable in the list of variables): the width of the line along each k-point
+path and for each band is proportional to the contribution of a given atomic
+orbital on this particular Kohn Sham Wavefunction. A low cutoff and a small
+number of k-points are used in order to speed up the calculation. During this
+time you can take a look at the input file. There are two datasets. The first
+one is a ground state calculations with <a class="wikilink codevar-link" href="../../input_variables/dev/#nnsclo">nnsclo</a>=3 and <a class="wikilink codevar-link" href="../../input_variables/gstate/#nline">nline</a>=3 in order
+to have well diagonalized eigenfunctions even for empty states. In practice,
+you have however to check that the residue of wavefunctions is small at the
+end of the calculation. In this calculation, we find 1.E-06, which is large
+(1.E-10 would be better, so nnsclo and nline should be increased, but it would
+take more time). When the calculation is finished, you can plot the fatbands
+for Vanadium and l=2. Several possibilities are available for that purpose. We
 will work with the simple XMGRACE package (you need to install it, if not
 already avaialble on your machine).</p>
-<pre><code>xmgrace tdmft_1o_DS2_FATBANDS_at0001_V_is1_l0002
-</code></pre>
+<div class="codehilite"><pre><span></span>xmgrace tdmft_1o_DS2_FATBANDS_at0001_V_is1_l0002
+</pre></div>
+
+
 <p>The band structure is given in eV.<br />
 <img alt="FatbandV" src="../../documents/lesson_dmft/fatbandV.jpg" />  </p>
 <p>and the fatbands for Oxygen and l=1 with</p>
-<pre><code>xmgrace tdmft_1o_DS2_FATBANDS_at0003_O_is1_l0001.
-</code></pre>
+<div class="codehilite"><pre><span></span>xmgrace tdmft_1o_DS2_FATBANDS_at0003_O_is1_l0001.
+</pre></div>
+
+
 <p><img alt="FatbandV" src="../../documents/lesson_dmft/fatbandO.jpg" /><br />
 In these plots, you recover the band structure of SrVO3 (see for comparison
-the band structure of Fig.3 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>). , and the main character of
+the band structure of Fig.3 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>). , and the main character of
 the bands. Bands 21 to 25 are mainly <em>d</em> and bands 12 to 20 are mainly oxygen
 <em>p</em>. However, we clearly see an important hybridization. The Fermi level (at 0
 eV) is in the middle of bands 21-23.</p>
@@ -2493,9 +3104,8 @@ toward oxygen atoms, <em>t2g</em>-like bands are lower in energy and filled with
 electron, whereas <em>eg</em>-like bands are higher and empty.</p>
 <p>In the next section, we will thus use the <em>t2g</em>-like bands to built Wannier
 functions and do the DFT+DMFT calculation.</p>
-<hr />
-<h3 id="3-electronic-structure-of-srvo3-dftdmft-calculation"><strong>3. Electronic Structure of SrVO3: DFT+DMFT calculation </strong><a class="headerlink" href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="Permanent link">&para;</a></h3>
-<h4 id="21-the-input-file-for-dmft-calculation-correlated-orbitals-screened">2.1. The input file for DMFT calculation: correlated orbitals, screened<a class="headerlink" href="#21-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="Permanent link">&para;</a></h4>
+<h2 id="3-electronic-structure-of-srvo3-dftdmft-calculation">3 Electronic Structure of SrVO3: DFT+DMFT calculation<a class="headerlink" href="#3-electronic-structure-of-srvo3-dftdmft-calculation" title="Permanent link">&para;</a></h2>
+<h4 id="31-the-input-file-for-dmft-calculation-correlated-orbitals-screened">3.1. The input file for DMFT calculation: correlated orbitals, screened<a class="headerlink" href="#31-the-input-file-for-dmft-calculation-correlated-orbitals-screened" title="Permanent link">&para;</a></h4>
 <p>Coulomb interaction and frequency mesh</p>
 <p>In ABINIT, correlated orbitals are defined using the projected local orbitals
 Wannier functions as outlined above. The definition requires to define a given
@@ -2510,13 +3120,10 @@ like bands but also in oxygen bands.</p>
 <p>So, we can use only the <em>t2g</em>-like bands to define Wannier functions or also
 both the <em>t2g</em>-like and <em>O-p</em>-like bands.</p>
 <p>The first case corresponds to the input file tdmft_2.in. In this case
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>=21
-and
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandi</a>=23.
-As we only put the electron interaction on <em>t2g</em> orbitals, we have to use
-first lpawu=2, but also the keyword
-<a href="../../../input_variables/generated_files/vardmft.html#dmft_t2g">dmft_t2g</a>=1 in
-order to restrict the application of interaction on <em>t2g</em> orbitals.</p>
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>=21 and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>=23. As we only put the electron interaction
+on <em>t2g</em> orbitals, we have to use first lpawu=2, but also the keyword
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_t2g">dmft_t2g</a>=1 in order to restrict the application of interaction on <em>t2g</em>
+orbitals.</p>
 <p>Notice also that before launching a DMFT calculation, the LDA should be
 perfectly converged, including the empty states (check nline and nnsclo in the
 input file). The input file tdmft_2.in thus contains two datasets: the first
@@ -2525,238 +3132,270 @@ calculation.</p>
 <p>Notice the other dmft variables used in the input file and check their meaning
 in the input variable glossary. In particular, we are using dmft_solv=5 for
 the dmft dataset in order to use the density-density continuous time quantum
-monte carlo (CTQMC) solver. (See <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gull2011" title="Continuous-time Monte Carlo methods for quantum impurity models">Gull2011</a>, as well as the ABINIT 2016
-paper <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Gonze2016" title="Recent developments in the {ABINIT} software package">Gonze2016</a> for details about the CTQMC implementation in ABINIT.)<br />
-Note that the number of imaginary frequencies
-<a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a> has
-to be set to at least twice the value of
-<a href="../../../input_variables/generated_files/vardmft.html#dmftqmc_l">dmftqmc_l</a> (the
-discretization in imaginary time). Here, we choose a temperature of 1200 K.
-For lower temperature, the number of Matsubara frequencies should be higher.</p>
+monte carlo (CTQMC) solver. (See <a class="wikilink citation-link" data-content="Continuous-time Monte Carlo methods for quantum impurity models" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gull2011">[Gull2011]</a>, as well as the ABINIT 2016
+paper <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#gonze2016">[Gonze2016]</a> for details about the CTQMC implementation in ABINIT.)<br />
+Note that the number of imaginary frequencies <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a> has to be set to
+at least twice the value of <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a> (the discretization in imaginary
+time). Here, we choose a temperature of 1200 K. For lower temperature, the
+number of Matsubara frequencies should be higher.</p>
 <p>Here we use a fast calculation, with a small value of the parameters,
-especially
-<a href="../../../input_variables/generated_files/vardmft.html#dmft_nwlo">dmft_nwlo</a>,
-<a href="../../../input_variables/generated_files/vardmft.html#dmftqmc_l">dmftqmc_l</a> and
-<a href="../../../input_variables/generated_files/vardmft.html#dmftqmc_n">dmftqmc_n</a>.</p>
-<p>Let's now discuss the value of the effective Coulomb interaction U
-(<a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a>) and J
-(<a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>). The values
-of U and J used in ABINIT in DMFT use the same convention as in DFT+U
-calculations in ABINIT (cf <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008a" title="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters">Amadon2008a</a>). However, calculations in Ref.
-<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a> use for U and J the usual convention for _ t2g _ systems as
-found in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Lechermann2006" title="Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials">Lechermann2006</a>, Eq. 26 (see also the appendix in
-<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Fresard1997" title="Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model">Fresard1997</a>). It corresponds to the Slater integral F4=0 and we can show
+especially <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmft_nwlo">dmft_nwlo</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_l">dmftqmc_l</a> and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>.</p>
+<p>Let&rsquo;s now discuss the value of the effective Coulomb interaction U (<a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a>)
+and J (<a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>). The values of U and J used in ABINIT in DMFT use the same
+convention as in DFT+U calculations in ABINIT (cf <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008a">[Amadon2008a]</a>). However,
+calculations in Ref. <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a> use for U and J the usual convention for _
+t2g _ systems as found in <a class="wikilink citation-link" data-content="Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#lechermann2006">[Lechermann2006]</a>, Eq. 26 (see also the appendix in
+<a class="wikilink citation-link" data-content="Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#fresard1997">[Fresard1997]</a>). It corresponds to the Slater integral F4=0 and we can show
 that U_abinit=U-4/3 J and J_abinit=7/6 J . So in order to use U=4 eV and
-J=0.65 eV with these latter conventions (as in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>), we have to use
-in ABINIT:
-<a href="../../../input_variables/generated_files/varpaw.html#upawu">upawu</a>=3.13333 eV;
-<a href="../../../input_variables/generated_files/varpaw.html#jpawu">jpawu</a>=0.75833 eV
-and
-<a href="../../../input_variables/generated_files/varpaw.html#f4of2_sla">f4of2_sla</a>=0.</p>
+J=0.65 eV with these latter conventions (as in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>), we have to use
+in ABINIT: <a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a>=3.13333 eV; <a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>=0.75833 eV and <a class="wikilink codevar-link" href="../../input_variables/paw/#f4of2_sla">f4of2_sla</a>=0.</p>
 <p>Now, you can launch the calculation:</p>
 <p>Copy the files ../Input/tdmft_2.in and modify tdmft_x.files in your Work
 directory and run ABINIT:</p>
-<pre><code>mpirun -n 32 ../../../tmp/src/98_main/abinit &lt; tdmft_x.files &gt; log_2
-</code></pre>
-<h4 id="22-the-dftdmft-calculation-the-log-file">2.2. The DFT+DMFT calculation: the log file<a class="headerlink" href="#22-the-dftdmft-calculation-the-log-file" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>mpirun -n 32 ../../../tmp/src/98_main/abinit &lt; tdmft_x.files &gt; log_2
+</pre></div>
+
+
+<h4 id="32-the-dftdmft-calculation-the-log-file">3.2. The DFT+DMFT calculation: the log file<a class="headerlink" href="#32-the-dftdmft-calculation-the-log-file" title="Permanent link">&para;</a></h4>
 <p>We are now going to browse quickly the log file (log_2) for this calculation.</p>
 <p>Starting from</p>
-<pre><code>     =====  Start of DMFT calculation
-</code></pre>
+<div class="codehilite"><pre><span></span>     =====  Start of DMFT calculation
+</pre></div>
+
+
 <p>we have first the definition of logarithmic grid for frequency, then, after:</p>
-<pre><code>  == Prepare data for DMFT calculation
-</code></pre>
+<div class="codehilite"><pre><span></span>  == Prepare data for DMFT calculation
+</pre></div>
+
+
 <p>The projection of Kohn Sham wavefunctions and (truncated) atomic orbitals are
-computed (Eq.(2.1) in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>) and unnormalized orbitals are built
-(Eq.(2.2) in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>) The occupation matrix in this orbital basis is</p>
-<pre><code>  ------ Symetrised Occupation
+computed (Eq.(2.1) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>) and unnormalized orbitals are built
+(Eq.(2.2) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>) The occupation matrix in this orbital basis is</p>
+<div class="codehilite"><pre><span></span>  ------ Symetrised Occupation
 
 
 
         0.11142  -0.00000  -0.00000
        -0.00000   0.11142  -0.00000
        -0.00000  -0.00000   0.11142
-</code></pre>
+</pre></div>
+
+
 <p>and the Normalization of this orbital basis is</p>
-<pre><code>  ------ Symetrised Norm
+<div class="codehilite"><pre><span></span>  ------ Symetrised Norm
 
 
 
         0.65790   0.00000   0.00000
         0.00000   0.65790   0.00000
         0.00000   0.00000   0.65790
-</code></pre>
-<p>Now, let's compare these numbers to other quantities. If the preceding LDA
-calculation is converged, dmatpuopt=1 is used, and
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>=1
-and
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandf">dmftbandf</a>=nband,
-then the above Symetrised Occupation should be exactly equal to the occupation
-matrix given in the usual DFT+U occupation matrix written in the log file
-(with dmatpuopt=1) (see discussion in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>). In our case, we are not
-in this case because
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>=21
-so this condition is not fulfilled. Concerning the norm if these orbitals, two
-factors play a role:</p>
+</pre></div>
+
+
+<p>Now, let&rsquo;s compare these numbers to other quantities. If the preceding LDA
+calculation is converged, dmatpuopt=1 is used, and <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>=1 and
+<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandf">dmftbandf</a>=nband, then the above Symetrised Occupation should be exactly
+equal to the occupation matrix given in the usual DFT+U occupation matrix
+written in the log file (with dmatpuopt=1) (see discussion in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>).
+In our case, we are not in this case because <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>=21 so this
+condition is not fulfilled. Concerning the norm if these orbitals, two factors
+play a role:</p>
 <ul>
-<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
+<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
 <li>
-<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep "ph0phiint(icount)= 1" log_2). (See also the discussion in Section B.3 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>). 
-Next the LDA Green's function is computed.</p>
+<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep &ldquo;ph0phiint(icount)= 1&rdquo; log_2). (See also the discussion in Section B.3 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>). 
+Next the LDA Green&rsquo;s function is computed.</p>
 <p>=====  LDA Green Function Calculation</p>
 </li>
 </ul>
-<p>Then the Green's function is integrated to compute the occupation matrix.
+<p>Then the Green&rsquo;s function is integrated to compute the occupation matrix.
 Interestingly, the density matrix here must be equal to the density matrix
 computed with the unnormalized correlated orbitals. If this is not the case,
 it means that the frequency grid is not sufficiently large. In our case, we
 find:</p>
-<pre><code>        0.11143   0.00000   0.00000
+<div class="codehilite"><pre><span></span>        0.11143   0.00000   0.00000
         0.00000   0.11143   0.00000
         0.00000   0.00000   0.11143
-</code></pre>
+</pre></div>
+
+
 <p>So the error is very small (1.10E-5). As an exercise, you can decrease the
 number of frequencies and see that the error becomes larger.</p>
-<p>Then the true orthonormal Wannier functions are built and the Green's function
+<p>Then the true orthonormal Wannier functions are built and the Green&rsquo;s function
 is computed in this basis just after:</p>
-<pre><code> =====  LDA Green Function Calculation with renormalized psichi
-</code></pre>
+<div class="codehilite"><pre><span></span> =====  LDA Green Function Calculation with renormalized psichi
+</pre></div>
+
+
 <p>The occupation matrix is now:</p>
-<pre><code>        0.16937   0.00000  -0.00000
+<div class="codehilite"><pre><span></span>        0.16937   0.00000  -0.00000
         0.00000   0.16937   0.00000
        -0.00000   0.00000   0.16937
-</code></pre>
+</pre></div>
+
+
 <p>We see that because of the orthonormalization of the orbitals necessary to
 built Wannier functions, the occupation matrix logically increases.</p>
 <p>Then, after:</p>
-<pre><code> =====  Define Interaction and self-energy
-</code></pre>
+<div class="codehilite"><pre><span></span> =====  Define Interaction and self-energy
+</pre></div>
+
+
 <p>The Interaction kernel is computed from U and J, and the self energy is read
-from the disk file (if it exists). Then, the Green's function is computed with
+from the disk file (if it exists). Then, the Green&rsquo;s function is computed with
 the self energy and the Fermi level is computed. Then the DMFT Loop starts.</p>
-<pre><code> =====  DMFT Loop starts here
-</code></pre>
+<div class="codehilite"><pre><span></span> =====  DMFT Loop starts here
+</pre></div>
+
+
 <p>The log contains a lot of details about the calculation (especially if
-<a href="../../../input_variables/generated_files/varpaw.html#pawprtvol">pawprtvol</a>=3).
-In order to have a more synthetic overview of the calculation (this is
-especially useful to detect possible divergence of the calculation), the
-following command extracts the evolution of the number of electrons (LDA, LDA
-with Wannier functions, and DMFT number of electrons) as a function of
-iterations (be careful, all numbers of electron are computed differently as
-explained in the log file):</p>
-<pre><code>grep -e Nb -e ITER log_2
-</code></pre>
+<a class="wikilink codevar-link" href="../../input_variables/paw/#pawprtvol">pawprtvol</a>=3). In order to have a more synthetic overview of the
+calculation (this is especially useful to detect possible divergence of the
+calculation), the following command extracts the evolution of the number of
+electrons (LDA, LDA with Wannier functions, and DMFT number of electrons) as a
+function of iterations (be careful, all numbers of electron are computed
+differently as explained in the log file):</p>
+<div class="codehilite"><pre><span></span>grep -e Nb -e ITER log_2
+</pre></div>
+
+
 <p>Besides, during each DMFT calculation, there are one or more CTQMC
 calculations:</p>
-<pre><code>Starting QMC  (Thermalization)
-</code></pre>
+<div class="codehilite"><pre><span></span>Starting QMC  (Thermalization)
+</pre></div>
+
+
 <p>For the sake of efficiency, the DMFT Loop is in this calculation done only
-once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2012" title="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}">Amadon2012</a>). At the end
+once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2012">[Amadon2012]</a>). At the end
 of the calculation, the occupation matrix is written and is:</p>
-<pre><code>          -- polarization spin component  1
+<div class="codehilite"><pre><span></span>          -- polarization spin component  1
         0.16843   0.00000  -0.00000
        -0.00000   0.16843  -0.00000
        -0.00000   0.00000   0.16843
-</code></pre>
+</pre></div>
+
+
 <p>We can see that the total number of electron is very close to one and it does
 not change much as a function of iterations. As an output of the calculation,
 you can find the self energy in file tdmft_2o_DS2Self-omega_iatom0001_isppol1
-and the Green's function is file Gtau.dat.</p>
-<h4 id="23-the-self-energy">2.3. The self energy<a class="headerlink" href="#23-the-self-energy" title="Permanent link">&para;</a></h4>
+and the Green&rsquo;s function is file Gtau.dat.</p>
+<h4 id="33-the-self-energy">3.3. The self energy<a class="headerlink" href="#33-the-self-energy" title="Permanent link">&para;</a></h4>
 <p>You can use the self-energy to compute the quasiparticle renormalization
 weight. We first extract the first six Matsubara frequencies:</p>
-<pre><code>head -n 8 tdmft_2o_DS2Self-omega_iatom0001_isppol1 &gt; self.dat
-</code></pre>
+<div class="codehilite"><pre><span></span>head -n 8 tdmft_2o_DS2Self-omega_iatom0001_isppol1 &gt; self.dat
+</pre></div>
+
+
 <p>Then we plot the imaginary part of the self-energy (in imaginary frequency):</p>
-<pre><code>xmgrace -block self.dat -bxy 1:3
-</code></pre>
+<div class="codehilite"><pre><span></span>xmgrace -block self.dat -bxy 1:3
+</pre></div>
+
+
 <p>Then using xmgrace, you click on <em>Data</em>, then on _ Transformations _ and then
-on _ Regression _ and you can do a 4th order fit as:<br />
+on _ Regression _ and you can do a 4<sup>th</sup> order fit as:<br />
 <img alt="self" src="../../documents/lesson_dmft/self.jpg" /><br />
 The slope at zero frequency obtained is 0.82. From this number, the
 quasiparticle renormalisation weight can be obtained using Z=1/(1+0.82)=0.55.</p>
-<h4 id="24-the-greens-function-for-correlated-orbitals">2.4. The Green's function for correlated orbitals<a class="headerlink" href="#24-the-greens-function-for-correlated-orbitals" title="Permanent link">&para;</a></h4>
-<p>The impurity (or local) Green's function for correlated orbitals is written in
+<h4 id="34-the-greens-function-for-correlated-orbitals">3.4. The Green&rsquo;s function for correlated orbitals<a class="headerlink" href="#34-the-greens-function-for-correlated-orbitals" title="Permanent link">&para;</a></h4>
+<p>The impurity (or local) Green&rsquo;s function for correlated orbitals is written in
 the file Gtau.dat. It is plotted as a function of the imaginary time in the
 interval [0,β] where β is the inverse temperature (in Hartree). You can plot
-this Green's function for the six <em>t2g</em> orbitals using e.g xmgrace</p>
-<pre><code>xmgrace -nxy Gtau.dat
-</code></pre>
+this Green&rsquo;s function for the six <em>t2g</em> orbitals using e.g xmgrace</p>
+<div class="codehilite"><pre><span></span>xmgrace -nxy Gtau.dat
+</pre></div>
+
+
 <p><img alt="Gtau" src="../../documents/lesson_dmft/Gtau.jpg" /><br />
-As the six _ t2g _ orbitals are degenerated, the six Green's function must be
-similar, within the stochastic noise. Moreover, this imaginary time Green's
+As the six _ t2g _ orbitals are degenerated, the six Green&rsquo;s function must be
+similar, within the stochastic noise. Moreover, this imaginary time Green&rsquo;s
 function must be negative and the value of G(β) for the orbital i is equal to
 the opposite of the number of electrons in the orbital i (-ni). Optionnally,
-you can check how the Green's function can be a rough way to check for the
+you can check how the Green&rsquo;s function can be a rough way to check for the
 importance of stochastic noise. For example, change for simplicity the number
 of steps for the DMFT calculation to 1:</p>
-<pre><code>nstep2 1
-</code></pre>
+<div class="codehilite"><pre><span></span>nstep2 1
+</pre></div>
+
+
 <p>and then use a much smaller number of steps for the Monte Carlo Solver such as</p>
-<pre><code>dmftqmc_n 1.d3
-</code></pre>
+<div class="codehilite"><pre><span></span>dmftqmc_n 1.d3
+</pre></div>
+
+
 <p>save the previous Gtau.dat file:</p>
-<pre><code>cp Gtau.dat Gtau.dat_save
-</code></pre>
-<p>Then relaunch the calculation. After it is completed, compare the new Green's
-function and the old one with the previous value of
-<a href="../../../input_variables/generated_files/vardmft.html#dmftqmc_n">dmftqmc_n</a>.
-Using xmgrace,</p>
-<pre><code>xmgrace -nxy Gtau.dat_save -nxy Gtau.dat
-</code></pre>
+<div class="codehilite"><pre><span></span>cp Gtau.dat Gtau.dat_save
+</pre></div>
+
+
+<p>Then relaunch the calculation. After it is completed, compare the new Green&rsquo;s
+function and the old one with the previous value of <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>. Using
+xmgrace,</p>
+<div class="codehilite"><pre><span></span>xmgrace -nxy Gtau.dat_save -nxy Gtau.dat
+</pre></div>
+
+
 <p>one obtains:<br />
 <img alt="Gtau2" src="../../documents/lesson_dmft/Gtau2.jpg" /><br />
 One naturally sees that the stochastic noise is much larger in this case. This
 stochastic noise can induces that the variation of physical quantities (number
 of electrons, electronic density, energy) as a function of the number of
 iteration is noisy. Once you have finished this comparison, copy the saved
-Green's function into Gtau.dat in order to continue the tutorial with a
-precise Green's function in Gtau.dat:</p>
-<pre><code>cp Gtau.dat_save Gtau.dat
-</code></pre>
-<h4 id="25-the-local-spectral-function">2.5. The local spectral function<a class="headerlink" href="#25-the-local-spectral-function" title="Permanent link">&para;</a></h4>
-<p>You can now use the imaginary time Green's function (contained in file
+Green&rsquo;s function into Gtau.dat in order to continue the tutorial with a
+precise Green&rsquo;s function in Gtau.dat:</p>
+<div class="codehilite"><pre><span></span>cp Gtau.dat_save Gtau.dat
+</pre></div>
+
+
+<h4 id="35-the-local-spectral-function">3.5. The local spectral function<a class="headerlink" href="#35-the-local-spectral-function" title="Permanent link">&para;</a></h4>
+<p>You can now use the imaginary time Green&rsquo;s function (contained in file
 Gtau.dat) to compute the spectral function in real frequency. Such analytical
 continuation can be done on quantum Monte Carlo data using the Maximum Entropy
 method.</p>
 <p>A maximum entropy code has been published recently by D. Bergeron. It can be
 downloaded
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Main_Page">here</a>. Please
-cite the related paper <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bergeron2016" title="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation">Bergeron2016</a> if you use this code in a publication.</p>
+cite the related paper <a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bergeron2016">[Bergeron2016]</a> if you use this code in a publication.</p>
 <p>The code has a lot of options, and definitely, the method should be understood
 and the user guide should be read before any real use. It is not the goal of
 this DFT+DMFT tutorial to introduce to the Maximum Entropy Method (see
-<a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Bergeron2016" title="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation">Bergeron2016</a> and references therein). We give here a very quick way to
+<a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bergeron2016">[Bergeron2016]</a> and references therein). We give here a very quick way to
 obtain a spectral function. First, you have to install this code and the
 armadillo library by following the
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Download">guidelines</a>,
 and then launch it on the current directory in order to generate the default
 input file OmegaMaxEnt_input_params.dat.</p>
-<pre><code>OmegaMaxEnt
-</code></pre>
+<div class="codehilite"><pre><span></span>OmegaMaxEnt
+</pre></div>
+
+
 <p>Then edit the file OmegaMaxEnt_input_params.dat, and modify the first seven
 lines with:</p>
-<pre><code>data file: Gtau.dat
+<div class="codehilite"><pre><span></span>data file: Gtau.dat
 
 OPTIONAL PREPROCESSING TIME PARAMETERS
 
 DATA PARAMETERS
 bosonic data (yes/[no]): no
 imaginary time data (yes/[no]): yes
-</code></pre>
+</pre></div>
+
+
 <p>Then relaunch the code</p>
-<pre><code>OmegaMaxEnt
-</code></pre>
+<div class="codehilite"><pre><span></span>OmegaMaxEnt
+</pre></div>
+
+
 <p>and plot the spectral function:</p>
-<pre><code>xmgrace OmegaMaxEnt_final_result/optimal_spectral_function_*.dat
-</code></pre>
+<div class="codehilite"><pre><span></span>xmgrace OmegaMaxEnt_final_result/optimal_spectral_function_*.dat
+</pre></div>
+
+
 <p>Change the unit from Hartree to eV, and then, you have the spectral function:<br />
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction.jpg" /><br />
 Even if the calculation is not well converged, you recognize in the spectral
 functions the quasiparticle peak as well as Hubbard bands at -2 eV and +2.5 eV
-as in Fig.4 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>.</p>
-<hr />
-<h3 id="4-electronic-structure-of-srvo3-choice-of-correlated-orbitals"><strong>4. Electronic Structure of SrVO3: Choice of correlated orbitals </strong><a class="headerlink" href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="Permanent link">&para;</a></h3>
+as in Fig.4 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>.</p>
+<h2 id="4-electronic-structure-of-srvo3-choice-of-correlated-orbitals">4 Electronic Structure of SrVO3: Choice of correlated orbitals<a class="headerlink" href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="Permanent link">&para;</a></h2>
 <p>Previously, only the <em>t2g</em>-like bands were used in the definition of Wannier
 functions. If there were no hybridization between <em>t2g</em> orbitals and oxygen
 <em>p</em> orbitals, the Wannier functions would be pure atomic orbitals and they
@@ -2764,45 +3403,53 @@ would not change if the energy window was increased. But there is an important
 hybridization, as a consequence, we will now built Wannier functions with a
 large window, by including oxygen <em>p</em>-like bands in the definition of Wannier
 functions. Create a new input file:</p>
-<pre><code>cp tdmft_2.in tdmft_3.in
-</code></pre>
-<p>and use
-<a href="../../../input_variables/generated_files/vardmft.html#dmftbandi">dmftbandi</a>= 12
-in tdmft_3.in. Now the code will built Wannier functions with a larger window,
-including <em>O-p</em>-like bands, and thus much more localized. Launch the
-calculation after having updated tdmft_x.files (if the calculation is too
-long, you can decide to restart the second dataset directly from a converged
-LDA calculation instead of redoing the LDA calculation for each new DMFT
-calculation).</p>
-<pre><code>abinit &lt; tdmft_x.files &gt; log_3
-</code></pre>
+<div class="codehilite"><pre><span></span>cp tdmft_2.in tdmft_3.in
+</pre></div>
+
+
+<p>and use <a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftbandi">dmftbandi</a>= 12 in tdmft_3.in. Now the code will built Wannier
+functions with a larger window, including <em>O-p</em>-like bands, and thus much more
+localized. Launch the calculation after having updated tdmft_x.files (if the
+calculation is too long, you can decide to restart the second dataset directly
+from a converged LDA calculation instead of redoing the LDA calculation for
+each new DMFT calculation).</p>
+<div class="codehilite"><pre><span></span>abinit &lt; tdmft_x.files &gt; log_3
+</pre></div>
+
+
 <p>In this case, both the occupation and the norm are larger because more states
 are taken into account: you have the occupation matrix which is</p>
-<pre><code>  ------ Symetrised Occupation
+<div class="codehilite"><pre><span></span>  ------ Symetrised Occupation
 
 
 
         0.23573  -0.00000  -0.00000
        -0.00000   0.23573  -0.00000
        -0.00000  -0.00000   0.23573
-</code></pre>
+</pre></div>
+
+
 <p>and the norm is:</p>
-<pre><code>  ------ Symetrised Norm
+<div class="codehilite"><pre><span></span>  ------ Symetrised Norm
 
 
 
         0.78223   0.00000  -0.00000
         0.00000   0.78223  -0.00000
        -0.00000  -0.00000   0.78223
-</code></pre>
+</pre></div>
+
+
 <p>Let us now compare the total number of electron and the norm with the two
 energy window:</p>
-<pre><code> Energy window:                              _t2g_-like bands         _t2g_-like+_O-p_-like bands
+<div class="codehilite"><pre><span></span> Energy window:                              _t2g_-like bands         _t2g_-like+_O-p_-like bands
  dmftbandi/dmftbandf:                           21/23                      12/23
  Norm:                                           0.66                       0.78
  LDA Number of electrons (before ⊥):            0.66(=0.11*6)              1.42(=0.235*6)
  LDA Number of electrons (after  ⊥):            1.02                       1.81
-</code></pre>
+</pre></div>
+
+
 <p>For the large window, as we use more Kohn Sham states, both the occupation and
 the norm are larger, mainly because of the important weight of <em>d</em> orbitals in
 the oxygen bands (because of the hybridization). Concerning the norm, remind
@@ -2817,30 +3464,33 @@ electrons before and after orthonormalization are simply linked by
 n_before/Norm=n_after, i.e. 1.81≈1.42/0.78 and 1.02≈0.66/0.66</p>
 <p>At the end of the DFT+DMFT calculation, the occupation matrix is written and
 is</p>
-<pre><code>          -- polarization spin component  1
+<div class="codehilite"><pre><span></span>          -- polarization spin component  1
         0.29450   0.00000   0.00000
         0.00000   0.29450   0.00000
         0.00000   0.00000   0.29450
-</code></pre>
+</pre></div>
+
+
 <p>Similarly to the previous calculation, the spectral function can be plotted
 using the Maximum Entropy code: we find a spectral function with an
-hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>.<br />
+hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>.<br />
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction2.jpg" /><br />
 Resolving the lower Hubbard bands would require a more converged calculation.</p>
 <p>As above, one can compute the renormalization weight and it gives 0.68. It
 shows that with the same value of U and J, interactions have a weaker effect
 for the large window Wannier functions. Indeed, the value of the screened
 interaction U should be larger because the Wannier functions are more
-localized (see discussion in <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../bibliography/#Amadon2008" title="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals">Amadon2008</a>).</p>
-<hr />
-<h3 id="5-electronic-structure-of-srvo3-the-internal-energy"><strong>5. Electronic Structure of SrVO3: the internal energy </strong><a class="headerlink" href="#5-electronic-structure-of-srvo3-the-internal-energy" title="Permanent link">&para;</a></h3>
+localized (see discussion in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008">[Amadon2008]</a>).</p>
+<h2 id="5-electronic-structure-of-srvo3-the-internal-energy">5 Electronic Structure of SrVO3: The internal energy<a class="headerlink" href="#5-electronic-structure-of-srvo3-the-internal-energy" title="Permanent link">&para;</a></h2>
 <p>The internal energy can be obtained with</p>
-<pre><code>grep -e ITER -e Internal log_3
-</code></pre>
+<div class="codehilite"><pre><span></span>grep -e ITER -e Internal log_3
+</pre></div>
+
+
 <p>and select the second occurrence for each iteration (the double counting
 expression) which should be accurate with iscf=17 (at convergence both
 expressions are equals also in DFT+DMFT). So after gathering the data:</p>
-<pre><code>  1      -1.51483736718814E+02
+<div class="codehilite"><pre><span></span>  1      -1.51483736718814E+02
   2      -1.51480860837124E+02
   3      -1.51479980721122E+02
   4      -1.51479456233951E+02
@@ -2850,7 +3500,9 @@ expressions are equals also in DFT+DMFT). So after gathering the data:</p>
   8      -1.51479539558451E+02
   9      -1.51479457525225E+02
  10      -1.51479582334490E+02
-</code></pre>
+</pre></div>
+
+
 <p>You can plot the evolution of the internal energy as a function of the
 iteration.<br />
 <img alt="internal" src="../../documents/lesson_dmft/internal.jpg" /><br />
@@ -2862,31 +3514,31 @@ consistency cycle is larger than the statistical noise, but then the internal
 energy fluctuates around a mean value. So if the statistical noise is larger
 than the tolerance, the calculation will never converge. So if a given
 precision on the total energy is expected, a practical solution is to increase
-the number of Quantum Monte Carlo steps
-(<a href="../../../input_variables/generated_files/vardmft.html#dmftqmc_n">dmftqmc_n</a>) in
-order to lower the statistical noise. Also another solution is to do an
-average over the last values of the internal energy. Note that in version
-7.10.5, only the Internal energy has a physical meaning in DFT+DMFT and not
-Etotal or ETOT.</p>
-<hr />
-<h3 id="6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume"><strong>6. Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume </strong><a class="headerlink" href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="Permanent link">&para;</a></h3>
+the number of Quantum Monte Carlo steps (<a class="wikilink codevar-link" href="../../input_variables/dmft/#dmftqmc_n">dmftqmc_n</a>) in order to lower the
+statistical noise. Also another solution is to do an average over the last
+values of the internal energy. Note that in version 7.10.5, only the Internal
+energy has a physical meaning in DFT+DMFT and not Etotal or ETOT.</p>
+<h2 id="6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume">6 Electronic Structure of SrVO3 in DFT+DMFT: Equilibrium volume<a class="headerlink" href="#6-electronic-structure-of-srvo3-in-dftdmft-equilibrium-volume" title="Permanent link">&para;</a></h2>
 <p>We focus now on the total energy. Create a new input file, tdmft_4.in:</p>
-<pre><code>cp tdmft_3.in tdmft_4.in
-</code></pre>
+<div class="codehilite"><pre><span></span>cp tdmft_3.in tdmft_4.in
+</pre></div>
+
+
 <p>And use acell=7.1605 instead of 7.2605. Relaunch the calculation and note the
 Internal energy (grep Internal tdmft_4.out).</p>
 <p>Redo another calculation with acell=7.00. Then extract the LDA Internal energy
 and the DMFT Internal energy (grep Internal tdmft_5.out).</p>
-<pre><code>acell   Internal energy LDA    Internal energy DMFT
+<div class="codehilite"><pre><span></span>acell   Internal energy LDA    Internal energy DMFT
 7.0000   -151.51517               -151.4797
 7.1605   -151.52399               -151.4877
 7.2605   -151.51515               -151.4795
-</code></pre>
+</pre></div>
+
+
 <p>and then plot DMFT and LDA energies as a function of acell. You will notice
 that the equilibrium volume is very weakly modified by the strong correlations
 is this case.</p>
-<hr />
-<h3 id="7-electronic-structure-of-srvo3-conclusion"><strong>7. Electronic Structure of SrVO3: Conclusion </strong><a class="headerlink" href="#7-electronic-structure-of-srvo3-conclusion" title="Permanent link">&para;</a></h3>
+<h2 id="7-electronic-structure-of-srvo3-conclusion">7 Electronic Structure of SrVO3: Conclusion<a class="headerlink" href="#7-electronic-structure-of-srvo3-conclusion" title="Permanent link">&para;</a></h2>
 <p>To sum up, the important physical parameters for DFT+DMFT are the definition
 of correlated orbitals, the choice of U and J (and double counting). The
 important technical parameters are the frequency and time grids as well as the
@@ -2905,15 +3557,186 @@ renormalization weights and total internal energy.</p>
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../nlo/" title="Nlo" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Nlo
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../eph/" title="Eph" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Eph
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (BAmadon)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>

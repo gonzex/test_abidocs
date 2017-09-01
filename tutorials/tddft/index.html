@@ -1,0 +1,3503 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Abinit documentation">
+      
+      
+        <link rel="canonical" href="http://www.abinit.org/tutorials/tddft/">
+      
+      
+        <meta name="author" content="The Abinit group">
+      
+      
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
+    
+    
+      
+        <title>Tddft - abinit</title>
+      
+    
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    <!-- <script src="../../js/somelib.js"></script> -->
+
+    <!-- Jquery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- MathJax support -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script> 
+    <!--
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    </script> 
+    -->
+
+    <!--
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
+    -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          TeX: {
+              equationNumbers: { autoNumber: "all" },
+              extensions: ["AMSmath.js"],
+              Macros: {
+                  rr: "{\\bf r}",
+                  GG: "{\\bf G}",
+                  kk: "{\\bf k}",
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
+              }
+          }
+      });
+    </script>
+
+    <!-- See http://docs.mathjax.org/en/latest/start.html 
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "MathMenu.js", "MathZoom.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML],
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    -->
+
+    
+
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Lessons
+                </span>
+              
+            
+            Tddft
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      github-abinit
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
+    
+    abinit
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/abinit/abinit/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      github-abinit
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/" title="Installation" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
+      Abinit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
+      Mrgddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Artificial/" title="Artificial" class="md-nav__link">
+      Artificial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/AtomManipulator/" title="AtomManipulator" class="md-nav__link">
+      AtomManipulator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/AtomTypes/" title="AtomTypes" class="md-nav__link">
+      AtomTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Bader/" title="Bader" class="md-nav__link">
+      Bader
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
+      Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BSE/" title="BSE" class="md-nav__link">
+      BSE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ConstrainedPol/" title="ConstrainedPol" class="md-nav__link">
+      ConstrainedPol
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Control/" title="Control" class="md-nav__link">
+      Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Coulomb/" title="Coulomb" class="md-nav__link">
+      Coulomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/CRPA/" title="CRPA" class="md-nav__link">
+      CRPA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/crystal/" title="Crystal" class="md-nav__link">
+      Crystal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
+      Dev
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DMFT/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/EffMass/" title="EffMass" class="md-nav__link">
+      EffMass
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/EFG/" title="EFG" class="md-nav__link">
+      EFG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElecDOS/" title="ElecDOS" class="md-nav__link">
+      ElecDOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ForcesStresses/" title="ForcesStresses" class="md-nav__link">
+      ForcesStresses
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/FrequencyMeshMBPT/" title="FrequencyMeshMBPT" class="md-nav__link">
+      FrequencyMeshMBPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GeoConstraints/" title="GeoConstraints" class="md-nav__link">
+      GeoConstraints
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GeoOpt/" title="GeoOpt" class="md-nav__link">
+      GeoOpt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GW/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GWls/" title="GWls" class="md-nav__link">
+      GWls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
+      Hybrids
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/k-points/" title="K points" class="md-nav__link">
+      K points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/LOTF/" title="LOTF" class="md-nav__link">
+      LOTF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MagField/" title="MagField" class="md-nav__link">
+      MagField
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MagMom/" title="MagMom" class="md-nav__link">
+      MagMom
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/MolecularDynamics/" title="MolecularDynamics" class="md-nav__link">
+      MolecularDynamics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/multidtset/" title="Multidtset" class="md-nav__link">
+      Multidtset
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/nonlinear/" title="Nonlinear" class="md-nav__link">
+      Nonlinear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Output/" title="Output" class="md-nav__link">
+      Output
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/parallelism/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PAW/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Phonons/" title="Phonons" class="md-nav__link">
+      Phonons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
+      PhononWidth
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/printing/" title="Printing" class="md-nav__link">
+      Printing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/PseudosPAW/" title="PseudosPAW" class="md-nav__link">
+      PseudosPAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/q-points/" title="Q points" class="md-nav__link">
+      Q points
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/RandStopPow/" title="RandStopPow" class="md-nav__link">
+      RandStopPow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Recursion/" title="Recursion" class="md-nav__link">
+      Recursion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/RPACorrEn/" title="RPACorrEn" class="md-nav__link">
+      RPACorrEn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SelfEnergy/" title="SelfEnergy" class="md-nav__link">
+      SelfEnergy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/SmartSymm/" title="SmartSymm" class="md-nav__link">
+      SmartSymm
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/spinpolarisation/" title="Spinpolarisation" class="md-nav__link">
+      Spinpolarisation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/STM/" title="STM" class="md-nav__link">
+      STM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Susceptibility/" title="Susceptibility" class="md-nav__link">
+      Susceptibility
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TDDFT/" title="TDDFT" class="md-nav__link">
+      TDDFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TDepES/" title="TDepES" class="md-nav__link">
+      TDepES
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Temperature/" title="Temperature" class="md-nav__link">
+      Temperature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TransPath/" title="TransPath" class="md-nav__link">
+      TransPath
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/TuningSpeed/" title="TuningSpeed" class="md-nav__link">
+      TuningSpeed
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
+      UnitCell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
+      Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Wannier/" title="Wannier" class="md-nav__link">
+      Wannier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Wavelets/" title="Wavelets" class="md-nav__link">
+      Wavelets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/xc/" title="Xc" class="md-nav__link">
+      Xc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Input Variables
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Input Variables
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/" title="All Variables" class="md-nav__link">
+      All Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Abinit
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Abinit
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/basic/" title="Basic" class="md-nav__link">
+      Basic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/dev/" title="Developers" class="md-nav__link">
+      Developers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/eph/" title="Electron-Phonon" class="md-nav__link">
+      Electron-Phonon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/ffield/" title="Varff" class="md-nav__link">
+      Varff
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/files/" title="File-handling" class="md-nav__link">
+      File-handling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/geo/" title="Geometry" class="md-nav__link">
+      Geometry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/gstate/" title="Ground-State" class="md-nav__link">
+      Ground-State
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/gw/" title="GW" class="md-nav__link">
+      GW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/internal/" title="Internal" class="md-nav__link">
+      Internal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/paral/" title="Parallelism" class="md-nav__link">
+      Parallelism
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/paw/" title="PAW" class="md-nav__link">
+      PAW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/rlx/" title="Relaxation" class="md-nav__link">
+      Relaxation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/vdw/" title="VdW" class="md-nav__link">
+      VdW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/w90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/varset_stats/" title="Statistics" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../input_variables/connections/" title="Connections" class="md-nav__link">
+      Connections
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Lessons
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Lessons
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../welcome/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Base Tutorials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Base Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../base1/" title="Base1" class="md-nav__link">
+      Base1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../base2/" title="Base2" class="md-nav__link">
+      Base2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../base3/" title="Base3" class="md-nav__link">
+      Base3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../base4/" title="Base4" class="md-nav__link">
+      Base4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      PAW
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
+        DFPT
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rf1/" title="RF1" class="md-nav__link">
+      RF1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rf2/" title="RF2" class="md-nav__link">
+      RF2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../elastic/" title="Elastic" class="md-nav__link">
+      Elastic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nlo/" title="Nlo" class="md-nav__link">
+      Nlo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dmft/" title="DMFT" class="md-nav__link">
+      DMFT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Many-Body
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Many-Body
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gw1/" title="GW1" class="md-nav__link">
+      GW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gw2/" title="GW2" class="md-nav__link">
+      GW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Parallelism
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Parallelism
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basepar/" title="Base" class="md-nav__link">
+      Base
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_mbt/" title="Many-Body" class="md-nav__link">
+      Many-Body
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Tddft
+      </label>
+    
+    <a href="./" title="Tddft" class="md-nav__link md-nav__link--active">
+      Tddft
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#time-dependent-density-functional-theory-casidas-approach" title="Time-Dependent Density Functional Theory, Casida's approach." class="md-nav__link">
+    Time-Dependent Density Functional Theory, Casida's approach.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-brief-theoretical-introduction" title="1 Brief theoretical introduction" class="md-nav__link">
+    1 Brief theoretical introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-first-computation-of-electronic-excitation-energies-and-oscillator" title="2 A first computation of electronic excitation energies and oscillator" class="md-nav__link">
+    2 A first computation of electronic excitation energies and oscillator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-convergence-studies" title="3 Convergence studies" class="md-nav__link">
+    3 Convergence studies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-choice-of-the-exchange-correlation-potential" title="4 The choice of the exchange-correlation potential" class="md-nav__link">
+    4 The choice of the exchange-correlation potential
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Theory
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Theory
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/additional_material/" title="Additional Material" class="md-nav__link">
+      Additional Material
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
+      Bibliography
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/contributing/" title="Contributing" class="md-nav__link">
+      Contributing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#time-dependent-density-functional-theory-casidas-approach" title="Time-Dependent Density Functional Theory, Casida's approach." class="md-nav__link">
+    Time-Dependent Density Functional Theory, Casida's approach.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-brief-theoretical-introduction" title="1 Brief theoretical introduction" class="md-nav__link">
+    1 Brief theoretical introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-first-computation-of-electronic-excitation-energies-and-oscillator" title="2 A first computation of electronic excitation energies and oscillator" class="md-nav__link">
+    2 A first computation of electronic excitation energies and oscillator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-convergence-studies" title="3 Convergence studies" class="md-nav__link">
+    3 Convergence studies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-the-choice-of-the-exchange-correlation-potential" title="4 The choice of the exchange-correlation potential" class="md-nav__link">
+    4 The choice of the exchange-correlation potential
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <!-- Return to Top -->
+
+<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<h1 id="lesson-on-tddft">Lesson on TDDFT<a class="headerlink" href="#lesson-on-tddft" title="Permanent link">&para;</a></h1>
+<h2 id="time-dependent-density-functional-theory-casidas-approach">Time-Dependent Density Functional Theory, Casida&rsquo;s approach.<a class="headerlink" href="#time-dependent-density-functional-theory-casidas-approach" title="Permanent link">&para;</a></h2>
+<p>This lesson aims at showing how to get the following physical properties, for
+finite systems :</p>
+<ul>
+<li>Excitation energies </li>
+<li>Associated oscillator strengths </li>
+<li>Frequency-dependent polarizability and optical spectra 
+in the Casida approach, within Time-Dependent Density Functional Theory.</li>
+</ul>
+<p>This lesson should take about 30 minutes.</p>
+<h2 id="1-brief-theoretical-introduction">1 Brief theoretical introduction<a class="headerlink" href="#1-brief-theoretical-introduction" title="Permanent link">&para;</a></h2>
+<p>In order to do Time-Dependent Density Functional Theory calculations (TDDFT)
+of electronic excitations and oscillator strengths, in the Casida&rsquo;s approach,
+you should first have some theoretical background.<br />
+TDDFT was first developed in the eighties, but the direct calculation of
+electronic excitations was introduced much later, by Casida and co-workers. A
+comprehensive description of the underlying formalism is given in</p>
+<div class="codehilite"><pre><span></span>&quot;Time-Dependent Density Functional Response Theory of Molecular Systems:
+ Theory, Computational Methods, and Functionals&quot;
+ M. E. Casida
+ in Recent Development and Applications of Modern Density Functional Theory,
+ edited by J.M. Seminario (Elsevier, Amsterdam, 1996), p. 391.
+ &lt;http://dx.doi.org/10.1016/S1380-7323(96)80093-8&gt;
+</pre></div>
+
+
+<p>However this reference might be hard to get, that is why we have based the
+tutorial instead on the following (also early) papers : <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>,
+<a class="wikilink citation-link" data-content="Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde's 1A1 manifold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998a">[Casida1998a]</a>, and <a class="wikilink" href="../FAKE_URL">FAKE_URL</a>.</p>
+<p>The first of these papers, <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>, will be used as main reference for
+our tutorial.</p>
+<p>From these papers, you will learn that a TDDFT calculation of electronic
+excitation energies start first from a usual ground-state calculation, with a
+chosen XC functional. Such a calculation produces a spectrum of Kohn-Sham
+electronic energies. It is widely known that differences between occupied and
+unoccupied Kohn-Sham electronic energies resemble excitation energies (the
+difference in energy between an excited state and the ground state), although
+there is no real theoretical justification for this similarity.</p>
+<p>These differences between Kohn-Sham electronic energies are the starting point
+of Casida&rsquo;s approach : in the framework of TDDFT, their square give the main
+contribution to the diagonal part of a matrix, whose eigenvalues will be the
+square of the excitation energies. One has to add to the diagonal matrix made
+from the squares of Kohn-Sham energy differences, a coupling matrix, whose
+elements are four-wavefunction integrals of the Coulomb and Exchange-
+Correlation kernel. The exchange-correlation kernel contribution will differ
+in the spin-singlet and in the spin-triplet states, this being the only
+difference between spin-singlet and spin-triplet states. See Eqs.(1.3) and
+(1.4) of <a class="wikilink" href="../FAKE_URL">FAKE_URL</a>, and Eqs.(1-2) of <a class="wikilink citation-link" data-content="Ab initio Excitation Spectra and Collective Electronic Response in Atoms and Clusters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#vasiliev1998">[Vasiliev1998]</a>.</p>
+<p>The construction of the coupling matrix can be done on the basis of an
+exchange-correlation kernel that is derived from the exchange-correlation
+functional used for the ground-state, but this is not a requirement of the
+theory, since such a correspondance only holds for the exact functional. In
+practice, the approximation to the XC potential and the one to the XC kernel
+are often different. See section III of <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>.</p>
+<p>A big drawback of the currently known XC potentials and XC kernels is observed
+when the system is infinite in at least one direction (e.g. polymers, slabs,
+or solids). In this case, the addition of the coupling matrix is unable to
+shift the edges of the Kohn-Sham band structure (each four-wavefunction
+integral becomes too small). There is only a redistribution of the oscillator
+strengths. In particular, the DFT band gap problem is NOT solved by TDDFT.
+Also, the Casida&rsquo;s approach relies on the discreteness of the Kohn-Sham
+spectrum.</p>
+<p>Thus, the TDDFT approach to electronic excitation energies in ABINIT is ONLY
+valid for finite systems (atoms, molecules, clusters). Actually, only one
+k-point can be used, and a &ldquo;box center&rdquo; must be defined, close to the center
+of gravity of the system.</p>
+<p>The Casida formalism also gives access to the oscillator strengths, needed to
+obtain the frequency-dependent polarizability, and corresponding optical
+spectrum. In the ABINIT implementation, the oscillators strengths are given as
+a second-rank tensor, in cartesian coordinates, as well as the average over
+all directions usually used for molecules and clusters. It is left to the user
+to generate the polarisability spectrum, according to e.g. Eq.(1.2) of
+<a class="wikilink citation-link" data-content="Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde's 1A1 manifold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998a">[Casida1998a]</a>.</p>
+<p>One can also combine the ground state total energy with the electronic
+excitation energies to obtain Born-Oppenheimer potential energy curves for
+excited states. This is illustrated for formaldehyde in <a class="wikilink citation-link" data-content="Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde's 1A1 manifold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998a">[Casida1998a]</a>.</p>
+<p>Given its simplicity, and the relatively modest CPU cost of this type of
+calculation, Casida&rsquo;s approach enjoys a wide popularity. There has been
+hundreds of papers published on the basis of methodology. Still, its accuracy
+might be below the expectations, as you will see. As often, test this method
+to see if it suits your needs, and read the recent literature &hellip;</p>
+<h2 id="2-a-first-computation-of-electronic-excitation-energies-and-oscillator">2 A first computation of electronic excitation energies and oscillator<a class="headerlink" href="#2-a-first-computation-of-electronic-excitation-energies-and-oscillator" title="Permanent link">&para;</a></h2>
+<p>strengths, for N2</p>
+<p>We will now compute and analyse the excitation energies of the diatomic
+molecule N2. This is a rather simple system, with cylindrical symmetry,
+allowing interesting understanding. Although we will suppose that you are
+familiarized with quantum numbers for diatomic molecules, this should not play
+an important role in the understanding of the way to use Abinit&rsquo;s
+implementation of Casida&rsquo;s formalism.</p>
+<p>_Before beginning, you might consider to work in a different subdirectory as
+for the other lessons. Why not &ldquo;Work_tddft&rdquo; ? _</p>
+<p>Now, you are ready to run ABINIT and prepare the needed file.</p>
+<p>Copy the files ttddft_x.files and ttddft_1.in in &ldquo;Work_tddft&rdquo; :</p>
+<ul>
+<li>_cp ../ttddft_x.files . _</li>
+<li>_cp ../ttddft_1.in . _</li>
+</ul>
+<p>So, issue now :</p>
+<ul>
+<li>_ ../../abinit &lt; ttddft_x.files &gt;&amp; log _</li>
+</ul>
+<p>The computation is quite fast : about 15 secs on a 2.8 GHz PC.<br />
+Let&rsquo;s examine the input file ttddft_1.in.<br />
+There are two datasets : the first one corresponds to a typical ground-state
+calculation, with only occupied bands. The density and wavefunctions are
+written, for use in the second data set. The second dataset is the one where
+the TDDFT calculation is done. Moreover, the non-self-consistent calculation
+of the occupied eigenfunctions and corresponding eigenenergies is also
+accomplished. This is obtained by setting <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a> to -1. Please, take now
+some time to read the information about this value of <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>, and the few
+input variables that acquire some meaning in this context (namely,
+<a class="wikilink codevar-link" href="../../input_variables/gstate/#boxcenter">boxcenter</a>, <a class="wikilink codevar-link" href="../../input_variables/dfpt/#td_mexcit">td_mexcit</a>, and <a class="wikilink codevar-link" href="../../input_variables/dfpt/#td_maxene">td_maxene</a>). Actually, this is most of
+the information that should be known to use the TDDFT in ABINIT !<br />
+You will note that we have 5 occupied bands (defined for dataset 1), and that
+we add 7 unoccupied bands in the dataset 2, to obtain a total of 12 bands. The
+box is not very large (6x5x5 Angstrom), the cutoff is quite reasonable, 25
+Hartree), and as requested for the Casida&rsquo;s formalism, only one k point is
+used. We have chosen the Perdew-Wang 92 LDA functional for both the self-
+consistent and non-self-consistent calculations (<a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>=7).</p>
+<p>We can now examine the output file ttddft_1.out.<br />
+One can jump to the second dataset section, and skip a few non-interesting
+information, in order to reach the following information :</p>
+<div class="codehilite"><pre><span></span> *** TDDFT : computation of excited states ***
+ Splitting of  12 bands in   5 occupied bands, and   7 unoccupied bands,
+ giving    35 excitations.
+</pre></div>
+
+
+<p>The matrix that is diagonalized, in the Casida&rsquo;s formalism, is thus a 35x35
+matrix. It will give 35 excitation energies.<br />
+Then, follows the list of excitation energies, obtained from the difference of
+Kohn-Sham eigenvalues (occupied and unoccupied), for further reference. They
+are ordered by increasing energy. In order to analyze the TDDFT as well as
+experimental data in the next section, let us mention that the Kohn-Sham
+eigenfunctions in this simulation have the following characteristics :</p>
+<ul>
+<li>The first and fifth states are (non-degenerate) occupied sigma states (m=0), with even parity </li>
+<li>The second state is a (non-degenerate) occupied sigma state (m=0), with odd parity </li>
+<li>The third and fourth states are degenerate occupied pi states (m=+1,-1), with odd parity </li>
+<li>The sixth and seventh states are degenerate unoccupied pi states (m=+1,-1), with even parity </li>
+<li>
+<p>The state 8 is a (non-degenerate) unoccupied sigma state (m=0), with even parity 
+Combining states 3,4 and 5 with 6, 7 and 8, give the first nine Kohn-Sham
+energy differences :</p>
+<p>Transition  (Ha)  and   (eV)   Tot. Ene. (Ha)  Aver     XX       YY       ZZ
+   5-&gt;  6 3.10888E-01 8.45969E+00 -1.92741E+01 0.0000E+00 0.00E+00 0.00E+00 0.00E+00
+   5-&gt;  7 3.10888E-01 8.45969E+00 -1.92741E+01 0.0000E+00 0.00E+00 0.00E+00 0.00E+00
+   5-&gt;  8 3.44036E-01 9.36171E+00 -1.92409E+01 0.0000E+00 0.00E+00 0.00E+00 0.00E+00
+   4-&gt;  6 3.64203E-01 9.91046E+00 -1.92207E+01 1.4463E-01 4.34E-01 0.00E+00 0.00E+00
+   3-&gt;  6 3.64203E-01 9.91046E+00 -1.92207E+01 4.2299E-01 1.27E+00 0.00E+00 0.00E+00
+   4-&gt;  7 3.64203E-01 9.91046E+00 -1.92207E+01 4.2299E-01 1.27E+00 0.00E+00 0.00E+00
+   3-&gt;  7 3.64203E-01 9.91046E+00 -1.92207E+01 1.4463E-01 4.34E-01 0.00E+00 0.00E+00
+   4-&gt;  8 3.97351E-01 1.08125E+01 -1.91876E+01 4.0028E-02 0.00E+00 1.20E-01 0.00E+00
+   3-&gt;  8 3.97351E-01 1.08125E+01 -1.91876E+01 4.0028E-02 0.00E+00 0.00E+00 1.20E-01</p>
+</li>
+</ul>
+<p>Without the coupling matrix, these would be the excitation energies, for both
+the spin-singlet and spin-triplet states. The coupling matrix modifies the
+eigenenergies, by mixing different electronic excitations, and also lift some
+degeneracies, e.g. the quadruplet formed by the combination of the degenerate
+states 3-4 and 6-7 that gives the excitation energies with 3.64203E-01 Ha in
+the above table.</p>
+<p>Indeed, concerning the spin-singlet, the following excitation energies are
+obtained (see the next section of the output file):</p>
+<div class="codehilite"><pre><span></span>  TDDFT singlet excitation energies (at most 20 of them are printed),
+  and corresponding total energies.
+  Excit#   (Ha)    and    (eV)    total energy (Ha)    major contributions
+   1    3.47952E-01   9.46826E+00   -1.923699E+01    0.83(  5-&gt;  6)  0.17(  5-&gt;  7)
+   2    3.48006E-01   9.46971E+00   -1.923693E+01    0.83(  5-&gt;  7)  0.17(  5-&gt;  6)
+   3    3.62425E-01   9.86208E+00   -1.922251E+01    0.99(  5-&gt;  8)  0.00(  2-&gt; 10)
+   4    3.64202E-01   9.91043E+00   -1.922074E+01    0.37(  3-&gt;  7)  0.37(  4-&gt;  6)
+   5    3.84223E-01   1.04553E+01   -1.920072E+01    0.37(  4-&gt;  6)  0.37(  3-&gt;  7)
+   6    3.84236E-01   1.04556E+01   -1.920070E+01    0.37(  4-&gt;  7)  0.37(  3-&gt;  6)
+   7    3.96699E-01   1.07947E+01   -1.918824E+01    0.99(  3-&gt;  8)  0.01(  4-&gt;  8)
+   8    3.96723E-01   1.07954E+01   -1.918822E+01    0.99(  4-&gt;  8)  0.01(  3-&gt;  8)
+   9    4.54145E-01   1.23579E+01   -1.913079E+01    1.00(  5-&gt;  9)  0.00(  3-&gt; 12)
+   ...
+</pre></div>
+
+
+<p>The excitation energies are numbered according to increasing energies, in Ha
+as well as in eV. The total energy is also given (adding excitation energy to
+the the ground-state energy), and finally, the two major contributions to each
+of these excitations are mentioned (size of the contribution then
+identification).</p>
+<p>It is seen that the first and second excitations are degenerate (numerical
+inaccuracies accounts for the meV difference), and mainly comes from the first
+and second Kohn-Sham energy differences (between occupied state 5 and
+unoccupied states 6 and 7). This is also true for the third excitation, that
+comes from the third Kohn-Sham energy difference (between occupied state 5 and
+unoccupied state 8). The quadruplet of Kohn-Sham energy differences, that was
+observed at 3.64203E-01 Ha, has been split into one doublet and two singlets,
+with numbers 4 (the lowest singlet), 5-6 (the doublet) while the last singlet
+is not present in the 20 lowest excitations.<br />
+The list of oscillator strength is then provided.</p>
+<div class="codehilite"><pre><span></span>  Oscillator strengths :  (elements smaller than 1.e-6 are set to zero)
+  Excit#   (Ha)   Average    XX        YY        ZZ         XY        XZ        YZ
+   1 3.47952E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   2 3.48006E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   3 3.62425E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   4 3.64202E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   5 3.84223E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   6 3.84236E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   7 3.96699E-01 5.759E-02 0.000E+00 1.928E-03 1.709E-01  0.00E+00  0.00E+00 -1.82E-02
+   8 3.96723E-01 5.544E-02 0.000E+00 1.645E-01 1.855E-03  0.00E+00  0.00E+00  1.75E-02
+   9 4.54145E-01 0.000E+00 0.000E+00 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+  10 4.60223E-01 9.496E-02 2.849E-01 0.000E+00 0.000E+00  0.00E+00  0.00E+00  0.00E+00
+   ...
+</pre></div>
+
+
+<p>The first six transitions are forbidden, with zero oscillator strength. The
+seventh and eighth transitions are allowed, with sizeable YY, YZ and ZZ
+components.</p>
+<p>Next, one finds the excitation energies for the spin-triplet states :</p>
+<div class="codehilite"><pre><span></span>  TDDFT triplet excitation energies (at most 20 of them are printed),
+  and corresponding total energies.
+  Excit#   (Ha)    and    (eV)    total energy (Ha)    major contributions
+   1    2.88423E-01   7.84838E+00   -1.929652E+01    0.82(  5-&gt;  6)  0.18(  5-&gt;  7)
+   2    2.88424E-01   7.84842E+00   -1.929652E+01    0.82(  5-&gt;  7)  0.18(  5-&gt;  6)
+   3    2.99762E-01   8.15693E+00   -1.928518E+01    0.37(  3-&gt;  6)  0.37(  4-&gt;  7)
+   4    3.33749E-01   9.08177E+00   -1.925119E+01    0.37(  4-&gt;  6)  0.37(  3-&gt;  7)
+   5    3.33809E-01   9.08339E+00   -1.925113E+01    0.37(  4-&gt;  7)  0.37(  3-&gt;  6)
+   6    3.36922E-01   9.16812E+00   -1.924802E+01    1.00(  5-&gt;  8)  0.00(  2-&gt; 10)
+   7    3.64202E-01   9.91045E+00   -1.922074E+01    0.37(  3-&gt;  7)  0.37(  4-&gt;  6)
+   8    3.90779E-01   1.06336E+01   -1.919416E+01    0.67(  3-&gt;  8)  0.27(  2-&gt;  6)
+   9    3.90834E-01   1.06351E+01   -1.919411E+01    0.67(  4-&gt;  8)  0.27(  2-&gt;  7)
+   ...
+</pre></div>
+
+
+<p>Spin-triplet energies are markedly lower than the corresponding spin-singlet
+energies. Also, the highest singlet derived from the Kohn-Sham quadruplet is
+now the excitation number 7. The oscillator strengths also follow. At this
+stage, we are in position to compare with experimental data, and try to
+improve the quality of our calculation.</p>
+<p>To summarize our results, we obtain the following five lowest-lying spin-
+singlet excitation energies, with corresponding quantum numbers (that we
+derive from the knowledge of the Kohn-Sham states quantum numbers):</p>
+<div class="codehilite"><pre><span></span>9.47 eV   m=+1,-1  even parity (Pi_g state)
+9.86 eV   m=0      even parity (Sigma_g state)
+9.91 eV   m=0      odd parity  (Sigma_u state)
+10.46 eV  m=+2,-2  odd parity  (Delta_u state)
+10.79 eV  m=+1,-1  odd parity  (Pi_u state)
+</pre></div>
+
+
+<p>and the following five lowest-lying spin-triplet excitations energies, with
+corresponding quantum numbers :</p>
+<div class="codehilite"><pre><span></span>7.85 eV   m=+1,-1  even parity (Pi_g state)
+8.16 eV   m=0      odd parity  (Sigma_u state)
+9.08 eV   m=+2,-2  odd parity  (Delta_u state)
+9.16 eV   m=0      even parity (Sigma_g state)
+9.91 eV   m=0      odd parity  (Sigma_u state)
+</pre></div>
+
+
+<p>The quantum number related to the effect of a mirror plane, needed for Sigma
+states, could not be attributed on the sole basis of the knowledge of Kohn-
+Sham orbitals quantum numbers.</p>
+<p>The lowest-lying experimental spin-singlet excitation energies, see table III
+of <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>, are as follows :</p>
+<div class="codehilite"><pre><span></span>9.31 eV   m=+1,-1  even parity (Pi_g state)
+9.92 eV   m=0      odd parity  (Sigma_u- state)
+10.27 eV  m=+2,-2  odd parity  (Delta_u state)
+</pre></div>
+
+
+<p>and the lowest-lying experimental spin-triplet excitations energies are :</p>
+<div class="codehilite"><pre><span></span>7.75 eV   m=0      odd parity  (Sigma_u+ state)
+8.04 eV   m=+1,-1  even parity (Pi_g state)
+8.88 eV   m=+2,-2  odd parity  (Delta_u state)
+9.67 eV   m=0      odd parity  (Sigma_u- state)
+</pre></div>
+
+
+<p>In several cases, the agreement is quite satisfactory, on the order of 0.1-0.2
+eV. However, there are also noticeable discrepancies. Indeed, we have to
+understand, in our simulation :</p>
+<ul>
+<li>The appearance of the spin-singlet Sigma_g state at 9.86 eV (Spin-singlet state 2)</li>
+<li>The inversion between the spin-triplet Pi_g and Sigma_u states (Spin-triplet states 1 and 2)</li>
+<li>The appearance of the spin-triplet Sigma_g state at 9.16 eV (Spin-triplet state 4)</li>
+</ul>
+<p>Still, the agreement between these TDDFT values and the experimental values is
+much better than anything that can be done on the sole basis of Kohn-Sham
+energy differences, that are (for spin-singlet and -triplet) :</p>
+<div class="codehilite"><pre><span></span>8.46 eV   m=+1,-1   even parity (Pi_g state)
+9.36 eV   m=0       odd parity  (Sigma_u state)
+9.91 eV   m=0(twice),+2,-2 odd parity  (Sigma_u and Delta_u states)
+10.81 eV  m=+1,-1   odd parity  (Pi_u state)
+</pre></div>
+
+
+<h2 id="3-convergence-studies">3 Convergence studies<a class="headerlink" href="#3-convergence-studies" title="Permanent link">&para;</a></h2>
+<p>There are several parameters subject to convergence studies in this context :
+the energy cut-off, the box size, and the number of unoccupied bands.</p>
+<p>We will start with the number of unoccupied states. The only input parameter
+to be changed in the input file is the value of nband2. The following results
+are obtained, for nband2 = 12, 30, 60, 100 and 150 (Energies given in eV):</p>
+<div class="codehilite"><pre><span></span>Singlet 1 :  9.47   9.44   9.39   9.36   9.35
+Singlet 2 :  9.86   9.74   9.68   9.66   9.66
+Singlet 3 :  9.91   9.91   9.91   9.91   9.91
+Singlet 4 : 10.46  10.45  10.44  10.44  10.43
+Singlet 5 : 10.79  10.79  10.79  10.79  10.79
+Triplet 1 :  7.85   7.84   7.83   7.82   7.82
+Triplet 2 :  8.16   8.08   8.03   8.00   8.00
+Triplet 3 :  9.08   9.07   9.05   9.05   9.04
+Triplet 4 :  9.16   9.16   9.15   9.15   9.15
+Triplet 5 :  9.91   9.91   9.91   9.91   9.91
+</pre></div>
+
+
+<p>You might try to obtain one of these &hellip; The computation with nband2=100 takes
+about 7 minutes on a 2.8 GHz PC, and gives a result likely converged within
+0.01 eV. Let&rsquo;s have a look at these data. Unfortunately, none of the above-
+mentioned discrepancies with experimental data is resolved, although the
+difference between the first and second spin-triplet states decreases
+significantly. Although we see that at least 60 bands are needed to obtain
+results converged within 0.05 eV, we will continue to rely on 12 bands to try
+to understand the most important discrepancies, while keeping the CPU time to
+a low level.</p>
+<p>We next try to increase the cut-off energy. Again, this is fairly easy. One
+can e.g. set up a double dataset loop. The following results are obtained, for
+ecut = 25, 35, 45, 55, 65, and 75 Ha :</p>
+<div class="codehilite"><pre><span></span>Singlet 1 :  9.47   9.41   9.39   9.36   9.36
+Singlet 2 :  9.86   9.83   9.78   9.76   9.76
+Singlet 3 :  9.91   9.97  10.01  10.02  10.03
+Singlet 4 : 10.46  10.37  10.32  10.30  10.29
+Singlet 5 : 10.79  10.87  10.90  10.91  10.92
+Triplet 1 :  7.85   7.79   7.76   7.74   7.73
+Triplet 2 :  8.16   8.02   7.94   7.92   7.91
+Triplet 3 :  9.08   8.98   8.92   8.90   8.89
+Triplet 4 :  9.16   9.28   9.33   9.34   9.34
+Triplet 5 :  9.91   9.83   9.78   9.77   9.76
+</pre></div>
+
+
+<p>You might try to obtain one of these &hellip; The computation with ecut=75 takes
+about 90 secs on a 2.8 GHz PC, and gives a result likely converged within 0.01
+eV. Let us have a look at these data. Concerning the discrepancies with the
+experimental results, we see that the position of the second spin-singlet
+state has even worsened, the difference between the first and second spin-
+triplet states decreases, so that, together with an increase of nband, their
+order might become the correct one, and the fourth spin-triplet state energy
+has increased, but not enough.</p>
+<p>We finally examine the effect of the cell size. Again, this is fairly easy.
+One can e.g. set up a double dataset loop. The following results are obtained,
+for acell = (6 5 5), (7 6 6), (8 7 7), (9 8 8), (10 9 9) and (12 11 11) :</p>
+<div class="codehilite"><pre><span></span>Singlet 1 :  9.47   9.37   9.33   9.33   9.33   9.33
+Singlet 2 :  9.86   9.78   9.84   9.91   9.96  10.03
+Singlet 3 :  9.91   9.88   9.85   9.85   9.85   9.85
+Singlet 4 : 10.46  10.41  10.38  10.37  10.37  10.37
+Singlet 5 : 10.79  10.98  11.14  11.27  11.19  11.04
+Triplet 1 :  7.85   7.75   7.72   7.71   7.72   7.72
+Triplet 2 :  8.16   8.18   8.18   8.18   8.19   8.20
+Triplet 3 :  9.08   9.07   9.06   9.06   9.06   9.06
+Triplet 4 :  9.16   9.36   9.55   9.68   9.78   9.90
+Triplet 5 :  9.91   9.88   9.85   9.85   9.85   9.85
+</pre></div>
+
+
+<p>Obviously, the cell size plays an important role in the spurious appearance of
+the states, that was remarked when comparing against experimental data.
+Indeed, the singlet 2 and triplet 4 states energy increases strongly with the
+cell size, while all other states quickly stabilize (except the still higher
+singlet 5 state).</p>
+<p>There is one lesson to be learned from that convergence study : the
+convergence of different states can be quite different. Usually, converging
+the lower excited states do not require too much effort, while it is quite
+difficult, especially concerning the supercell size, to converge higher
+states.</p>
+<p>At this stage, we will simply stop this convergence study, and give the
+results of an ABINIT calculation using ecut 45 Hartree, acell 12 11 11, and 30
+bands (not fully converged, though !), then compare the results with other
+LDA/TDLDA results (from <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>) and experimental results :</p>
+<div class="codehilite"><pre><span></span>                    present Casida experimental
+Singlet Pi_g      :  9.25    9.05     9.31
+Singlet Sigma_u-  :  9.72    9.63     9.92
+Singlet Delta_u   : 10.22   10.22    10.27
+Triplet Sigma_u+  :  7.95    7.85     7.75
+Triplet Pi_g      :  7.64    7.54     8.04
+Triplet Delta_u   :  8.89    8.82     8.88
+Triplet Sigma_u-  :  9.72    9.63     9.67
+</pre></div>
+
+
+<p>Our calculation is based on pseudopotentials, while Casida&rsquo;s calculation is an
+all-electron one. This fact might account for the 0.1-0.2 eV discrepancy
+between both calculations (it is of course the user&rsquo;s responsability to test
+the influence of different pseudopotentials on his/her calculations). The
+agreement with experimental data is on the order of 0.2 eV, with the exception
+of the Triplet Pi_g state (0.4 eV). In particular, we note that LDA/TDLDA is
+not able to get the correct ordering of the lower two triplet states &hellip; One
+of our problems was intrinsic to the LDA/TDLDA approximation &hellip;</p>
+<h2 id="4-the-choice-of-the-exchange-correlation-potential">4 The choice of the exchange-correlation potential<a class="headerlink" href="#4-the-choice-of-the-exchange-correlation-potential" title="Permanent link">&para;</a></h2>
+<p>As emphasized in <a class="wikilink citation-link" data-content="Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#casida1998">[Casida1998]</a>, choosing a different functional for the self-
+consistent part (XC potential) and the generation of the coupling matrix (XC
+kernel) can give a better description of the higher-lying states. Indeed, a
+potential with a -1/r tail (unlike the LDA or GGA) like the van Leeuwen-
+Baerends one, can reproduce fairly well the ionisation energy, giving a much
+better description of the Rydberg states. Still, the LDA kernel works pretty
+well.</p>
+<p>In order to activate this procedure, set the value of ixc in dataset 1 to the
+SCF functional, and the value of ixc in dataset 2 to the XC functional to be
+used for the kernel. Use pseudopotentials that agree with the SCF functional.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../input_variables/" title="Input Variables" class="md-tabs__link">
+          Input Variables
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../welcome/" title="Lessons" class="md-tabs__link md-tabs__link--active">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../source_code/" title="Source code" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Source code
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../wannier90/" title="Wannier90" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Wannier90
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group (XG)
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-6940329b9f.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      
+        <script src="../../extra_javascript/abidocs.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

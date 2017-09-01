@@ -16,7 +16,7 @@
         <meta name="author" content="The Abinit group">
       
       
-        <link rel="shortcut icon" href="../../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../../images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
@@ -31,37 +31,29 @@
     
     <!-- <script src="../../js/somelib.js"></script> -->
 
-    <!-- Jquery from Google CDN 
-    -->
+    <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
-    <!-- Latest compiled and minified CSS 
-    -->
-
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme
-    -->
+    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript
-    -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- MathJax support -->
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     <!--
-    <script type="text/javascript" async 
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
     -->
 
     <!--
-    Configure MathJax to produce automatic equation numbers
-    http://docs.mathjax.org/en/latest/tex.html
+    Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
     -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -72,7 +64,8 @@
                   rr: "{\\bf r}",
                   GG: "{\\bf G}",
                   kk: "{\\bf k}",
-                  qq: "{\\bf q}"
+                  qq: "{\\bf q}",
+                  kq: "{\\kk + \\qq}"
               }
           }
       });
@@ -93,9 +86,13 @@
     </script>
     -->
 
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -109,8 +106,6 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../css/codehilite.css">
-    
       <link rel="stylesheet" href="../../css/extra.css">
     
     
@@ -119,7 +114,7 @@
   
   
   
-    <body>
+    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -138,7 +133,8 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://www.abinit.org" title="abinit" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
+            <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
       </div>
@@ -207,7 +203,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -258,19 +254,13 @@
         
   
   
-    
-    
-  
-  
     <li class="md-tabs__item">
       
-        <a href="../varlist_abinit/" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+        <a href="../" title="Input Variables" class="md-tabs__link md-tabs__link--active">
           Input Variables
         </a>
       
     </li>
-  
-
   
 
       
@@ -292,7 +282,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../theory/theory_mbt/" title="Theory" class="md-tabs__link">
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
           Theory
         </a>
       
@@ -305,7 +295,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/README/" title="Developers" class="md-tabs__link">
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
           Developers
         </a>
       
@@ -340,7 +330,9 @@
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
-      <i class="md-icon md-icon--home md-nav__button"></i>
+      <i class="md-logo md-nav__button">
+        <img src="../../images/abinit_logo.png">
+      </i>
     
     abinit
   </label>
@@ -361,7 +353,7 @@
       </div>
     
     <div class="md-source__repository">
-      GitHub
+      github-abinit
     </div>
   </a>
 
@@ -430,7 +422,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -442,7 +434,67 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
+      Aim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
+      Anaddb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
+      Cut3d
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+      Fold2Bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -454,8 +506,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../user-guide/help_optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
+      Mrgscr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
+      NewUser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
+      Respfn
     </a>
   </li>
 
@@ -490,8 +578,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Complete List" class="md-nav__link">
-      Complete List
+    <a href="../../topics/" title="Topic List" class="md-nav__link">
+      Topic List
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Abipy/" title="Abipy" class="md-nav__link">
+      Abipy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/APPA/" title="APPA" class="md-nav__link">
+      APPA
     </a>
   </li>
 
@@ -550,8 +662,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
-      BandOcc
+    <a href="../../topics/Band2eps/" title="Band2eps" class="md-nav__link">
+      Band2eps
     </a>
   </li>
 
@@ -564,6 +676,18 @@
   <li class="md-nav__item">
     <a href="../../topics/Berry/" title="Berry" class="md-nav__link">
       Berry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/BandOcc/" title="BandOcc" class="md-nav__link">
+      BandOcc
     </a>
   </li>
 
@@ -646,6 +770,42 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
+      DFT+U
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DeltaSCF/" title="DeltaSCF" class="md-nav__link">
+      DeltaSCF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/DensityPotential/" title="DensityPotential" class="md-nav__link">
+      DensityPotential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/Dev/" title="Dev" class="md-nav__link">
       Dev
     </a>
@@ -660,18 +820,6 @@
   <li class="md-nav__item">
     <a href="../../topics/DFPT/" title="DFPT" class="md-nav__link">
       DFPT
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/DFT+U/" title="DFT+U" class="md-nav__link">
-      DFT+U
     </a>
   </li>
 
@@ -730,8 +878,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
-      ElecBandStructure
+    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
+      ElPhonInt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
+      ElPhonTransport
     </a>
   </li>
 
@@ -754,20 +914,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/ElPhonInt/" title="ElPhonInt" class="md-nav__link">
-      ElPhonInt
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/ElPhonTransport/" title="ElPhonTransport" class="md-nav__link">
-      ElPhonTransport
+    <a href="../../topics/ElecBandStructure/" title="ElecBandStructure" class="md-nav__link">
+      ElecBandStructure
     </a>
   </li>
 
@@ -826,6 +974,30 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/GSintroduction/" title="GSintroduction" class="md-nav__link">
+      GSintroduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/GW/" title="GW" class="md-nav__link">
       GW
     </a>
@@ -852,18 +1024,6 @@
   <li class="md-nav__item">
     <a href="../../topics/Hybrids/" title="Hybrids" class="md-nav__link">
       Hybrids
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/" title="Home" class="md-nav__link">
-      Home
     </a>
   </li>
 
@@ -1006,8 +1166,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
-      PhononBands
+    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
+      PIMD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
+      Planewaves
     </a>
   </li>
 
@@ -1030,6 +1202,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/PhononBands/" title="PhononBands" class="md-nav__link">
+      PhononBands
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/PhononWidth/" title="PhononWidth" class="md-nav__link">
       PhononWidth
     </a>
@@ -1042,20 +1226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/PIMD/" title="PIMD" class="md-nav__link">
-      PIMD
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../topics/Planewaves/" title="Planewaves" class="md-nav__link">
-      Planewaves
+    <a href="../../topics/PortabilityNonRegression/" title="PortabilityNonRegression" class="md-nav__link">
+      PortabilityNonRegression
     </a>
   </li>
 
@@ -1150,8 +1322,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
-      SCFAlgorithms
+    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
+      SCFControl
     </a>
   </li>
 
@@ -1162,8 +1334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/SCFControl/" title="SCFControl" class="md-nav__link">
-      SCFControl
+    <a href="../../topics/SCFAlgorithms/" title="SCFAlgorithms" class="md-nav__link">
+      SCFAlgorithms
     </a>
   </li>
 
@@ -1294,6 +1466,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../topics/Unfolding/" title="Unfolding" class="md-nav__link">
+      Unfolding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../topics/UnitCell/" title="UnitCell" class="md-nav__link">
       UnitCell
     </a>
@@ -1308,6 +1492,18 @@
   <li class="md-nav__item">
     <a href="../../topics/vdw/" title="Vdw" class="md-nav__link">
       Vdw
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../topics/Verification/" title="Verification" class="md-nav__link">
+      Verification
     </a>
   </li>
 
@@ -1378,34 +1574,34 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../" title="All Variables" class="md-nav__link">
+      All Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
     
-    <label class="md-nav__link" for="nav-3-1">
+    <label class="md-nav__link" for="nav-3-2">
       Abinit
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
+      <label class="md-nav__title" for="nav-3-2">
         Abinit
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../varlist_abinit/" title="All Variables" class="md-nav__link">
-      All Variables
-    </a>
-  </li>
-
         
           
           
@@ -1502,6 +1698,8 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Geometry
@@ -1514,6 +1712,8 @@
       
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -1872,8 +2072,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../external_parameters/" title="External Parameters" class="md-nav__link">
+      External Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../varset_stats/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../connections/" title="Connections" class="md-nav__link">
+      Connections
     </a>
   </li>
 
@@ -1981,6 +2205,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/spin/" title="Spin" class="md-nav__link">
+      Spin
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1996,10 +2232,130 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
-      DFPT
+      PAW
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
+        PAW
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw1/" title="PAW1" class="md-nav__link">
+      PAW1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw2/" title="PAW2" class="md-nav__link">
+      PAW2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paw3/" title="PAW3" class="md-nav__link">
+      PAW3
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      DFT_PLUS_U
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        DFT_PLUS_U
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/dftu/" title="Dftu" class="md-nav__link">
+      Dftu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/udet/" title="Udet" class="md-nav__link">
+      Udet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/ucalc_crpa/" title="Ucalc crpa" class="md-nav__link">
+      Ucalc crpa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+    
+    <label class="md-nav__link" for="nav-4-5">
+      DFPT
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-5">
         DFPT
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2047,8 +2403,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/eph/" title="EPH" class="md-nav__link">
-      EPH
+    <a href="../../tutorials/ffield/" title="Ffield" class="md-nav__link">
+      Ffield
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nlo/" title="Nlo" class="md-nav__link">
+      Nlo
     </a>
   </li>
 
@@ -2077,13 +2445,61 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
     
-    <label class="md-nav__link" for="nav-4-5">
+    <label class="md-nav__link" for="nav-4-7">
+      EPH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        EPH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/eph/" title="Eph" class="md-nav__link">
+      Eph
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tdepes/" title="Tdepes" class="md-nav__link">
+      Tdepes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
       Many-Body
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-5">
+      <label class="md-nav__title" for="nav-4-8">
         Many-Body
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2137,13 +2553,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-6">
+    <label class="md-nav__link" for="nav-4-9">
       Parallelism
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-6">
+      <label class="md-nav__title" for="nav-4-9">
         Parallelism
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -2167,14 +2583,170 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/paral_dfpt/" title="DFPT" class="md-nav__link">
+      DFPT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gspw/" title="GSPW" class="md-nav__link">
+      GSPW
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_gswvl/" title="GSWVL" class="md-nav__link">
+      GSWVL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/paral_mbt/" title="Many-Body" class="md-nav__link">
       Many-Body
     </a>
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/paral_moldyn/" title="Moldyn" class="md-nav__link">
+      Moldyn
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/analysis_tools/" title="Analysis tools" class="md-nav__link">
+      Analysis tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/fold2bloch/" title="Fold2bloch" class="md-nav__link">
+      Fold2bloch
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/nuc/" title="Nuc" class="md-nav__link">
+      Nuc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/optic/" title="Optic" class="md-nav__link">
+      Optic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/positron/" title="Positron" class="md-nav__link">
+      Positron
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/source_code/" title="Source code" class="md-nav__link">
+      Source code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/tddft/" title="Tddft" class="md-nav__link">
+      Tddft
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/wannier90/" title="Wannier90" class="md-nav__link">
+      Wannier90
+    </a>
   </li>
 
         
@@ -2208,8 +2780,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../theory/theory_mbt/" title="MBPT" class="md-nav__link">
-      MBPT
+    <a href="../../theory/mbt/" title="Many-Body Perturbation Theory" class="md-nav__link">
+      Many-Body Perturbation Theory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bse/" title="Bethe-Salpeter" class="md-nav__link">
+      Bethe-Salpeter
     </a>
   </li>
 
@@ -2232,7 +2816,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../../bibliography/" title="Bibliography" class="md-nav__link">
+    <a href="../../theory/acknowledgments/" title="Acknowledgments" class="md-nav__link">
+      Acknowledgments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../theory/bibliography/" title="Bibliography" class="md-nav__link">
       Bibliography
     </a>
   </li>
@@ -2268,8 +2864,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/README/" title="How to write docs" class="md-nav__link">
-      How to write docs
+    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+      Abimkdocs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+      Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+      Test Suite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+      Code stats
     </a>
   </li>
 
@@ -2352,6 +2984,8 @@
                     
 <nav class="md-nav md-nav--secondary">
   
+  
+    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -2560,35 +3194,41 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/abinit/abinit/edit/master/docs/input_variables/geo.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
-                
-                
-                  <h1>Geometry</h1>
                 
                 <!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
+<hr />
+<!--
+This file is automatically generated by mksite.py. All changes will be lost.
+Change the input yaml files or the python code
+-->
+
+<h1 id="geo-input-variables">geo input variables<a class="headerlink" href="#geo-input-variables" title="Permanent link">&para;</a></h1>
+<p>This document lists and provides the description of the name (keywords) of the
+geo input variables to be used in the input file for the abinit executable.</p>
 <h2 id="brvltt"><strong>brvltt</strong><a class="headerlink" href="#brvltt" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> BRaVais LaTTice type<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/UnitCell">UnitCell</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to specify the unit cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/UnitCell">topic_UnitCell</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a> != 0  </p>
-<p>Set the type of Bravais lattice. The cell defined by <a class="wikilink" href="../../input_variables/basic/#acell">acell</a> and <a class="wikilink" href="../../input_variables/basic/#rprim">rprim</a>
-or <a class="wikilink" href="../../input_variables/basic/#angdeg">angdeg</a> should be the CONVENTIONAL cell.</p>
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a> != 0  </p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [29/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v2:  <a class="wikilink test-link" data-content="Space group number 225 : FCC Aluminum,  in both conventional and primitive unit cells." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t59.in">tests/v2/Input/t59.in</a>, <a class="wikilink test-link" data-content="Space group number 139 : elongated aluminum,  BCT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t60.in">tests/v2/Input/t60.in</a></li><li>v3:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the triclinic and monoclinic space groups,  from spgroup 1 to 15." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t25.in">tests/v3/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the orthorhombic space groups,  from spgroup 16 to 74." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t26.in">tests/v3/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the tetragonal space groups,  from spgroup 75 to 142." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t27.in">tests/v3/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the cubic space groups,  from spgroup 195 to 230." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t29.in">tests/v3/Input/t29.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part III)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li><li>v4:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part I : spgroup 16 to 46)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part II : spgroup 47 to 62)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part III : spgroup 63 to 74)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part I : spgroup 75 to 98)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part II : spgroup 99 to 122)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part III : spgroup 123 to 130)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part IV : spgroup 131 to 142)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the hexagonal sub system (spgroup 168 to 194)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t29.in">tests/v4/Input/t29.in</a></li><li>v5:  <a class="wikilink test-link" data-content="White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t77.in">tests/v5/Input/t77.in</a></li><li>v6:  <a class="wikilink test-link" data-content="Hydrure of Lithium-Boron,  in a face-centered monoclinic cell. Test the recognition of the space group (C2/c (# 15)). Was lacking a case before Dec 2011." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t30.in">tests/v6/Input/t30.in</a>, <a class="wikilink test-link" data-content="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t44.in">tests/v6/Input/t44.in</a></li></ul></details><p>Set the type of Bravais lattice. The cell defined by <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a>
+or <a class="wikilink codevar-link" href="../../input_variables/basic/#angdeg">angdeg</a> should be the CONVENTIONAL cell.</p>
 <p>If brvltt=0, the code will assign brvltt from the space group information
-<a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>, and produce the symmetry operations for the conventional unit
+<a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>, and produce the symmetry operations for the conventional unit
 cell. If the conventional cell is not primitive, the user should set
-<a class="wikilink" href="../../input_variables/gstate/#chkprim">chkprim</a>=0.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gstate/#chkprim">chkprim</a>=0.</p>
 <p>If brvltt=-1, the code will assign brvltt from the space group information,
-then reduce the unit cell to a primitive unit cell. The echo of <a class="wikilink" href="../../input_variables/basic/#acell">acell</a> and
-<a class="wikilink" href="../../input_variables/basic/#rprim">rprim</a> might thus differ from those derived directly from the input
-variables. Also, the input variable <a class="wikilink" href="../../input_variables/basic/#xred">xred</a> will refer to the CONVENTIONAL
+then reduce the unit cell to a primitive unit cell. The echo of <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> and
+<a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a> might thus differ from those derived directly from the input
+variables. Also, the input variable <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a> will refer to the CONVENTIONAL
 unit cell, but its echo will refer to the preprocessed PRIMITIVE unit cell.
-There is of course no problem with <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> and <a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>, as they are
+There is of course no problem with <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a>, as they are
 independent of the unit cell.</p>
-<p>The echo of <a class="wikilink" href="../../input_variables/geo/#brvltt">brvltt</a> in the output file will be one of the following Bravais
+<p>The echo of <a class="wikilink codevar-link" href="../../input_variables/geo/#brvltt">brvltt</a> in the output file will be one of the following Bravais
 lattices:  </p>
 <ul>
 <li>1 = Primitive with no associated translations </li>
@@ -2600,27 +3240,23 @@ lattices:  </p>
 <li>7 = Rhombohedral lattice. </li>
 </ul>
 <p>The user might also input directly these values, although they might not be
-consistent with <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>.</p>
+consistent with <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>.</p>
 <p>The space groups 146, 148, 155, 160, 161, 166, 167, when used with
-<a class="wikilink" href="../../input_variables/geo/#spgaxor">spgaxor</a>=1 (hexagonal axes) will have <a class="wikilink" href="../../input_variables/geo/#brvltt">brvltt</a>=7 and two associated
-translations: (2/3, 1/3, 1/3) and (1/3, 2/3, 2/3).<br />
+<a class="wikilink codevar-link" href="../../input_variables/geo/#spgaxor">spgaxor</a>=1 (hexagonal axes) will have <a class="wikilink codevar-link" href="../../input_variables/geo/#brvltt">brvltt</a>=7 and two associated
+translations: (&#8532;, &#8531;, &#8531;) and (&#8531;, &#8532;, &#8532;).<br />
 For more details see the space group <a href="../../../users/spacegrouphelpfile.html"> help file
 </a> .</p>
 <hr />
 <h2 id="chempot"><strong>chempot</strong><a class="headerlink" href="#chempot" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> spatially varying CHEMical POTential<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Artificial">Artificial</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform some artificial modifications of the physics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/Artificial">topic_Artificial</a><br />
 <em>Variable type:</em> real<br />
-<em>Dimensions:</em> (3,<a class="wikilink" href="../../'nzchempot'/">'nzchempot'</a>,<a class="wikilink" href="../../'ntype'/">'ntype'</a>)<br />
+<em>Dimensions:</em> (3,<a class="wikilink codevar-link" href="../../input_variables/geo/#nzchempot">nzchempot</a>,<a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>)<br />
 <em>Default value:</em> 0.0<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/geo/#nzchempot">nzchempot</a>/=0<br />
-Test list:</p>
-<ul>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t30.in" title="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus. The z coordinate of the molecule is changed from 0 to 5 Bohr. There is a linear part to the chemical potential. The energy and force should be the same in datasets 11 to 15 (without chemical potentiel). One sees that this is not completely the case. The force along z vanishes in these cases,  because the translational invariance is imposed by ABINIT. In datasets 21 to 23,  the energy should increase linearly,  and the force along z should be non-zero and constant. Small fluctuations are observed. Dataset 24 and 25 corresponds to the cubic part of the chemical potential. Dataset 26 places the molecule at a symmetric value of z. The total energy should be the same as with dataset 11,  16,  or 21.">tests/v8/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t31.in" title="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly.">tests/v8/Input/t31.in</a></li>
-</ul>
-<p>For each type of atoms, from 1 to <a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>, specifies the spatially varying
-chemical potential, through the specification of <a class="wikilink" href="../../input_variables/geo/#nzchempot">nzchempot</a> triplets of
-real numbers. They give data for <a class="wikilink" href="../../input_variables/geo/#nzchempot">nzchempot</a> delimiting planes, all parallel
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#nzchempot">nzchempot</a>/=0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v8:  <a class="wikilink test-link" data-content="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus. The z coordinate of the molecule is changed from 0 to 5 Bohr. There is a linear part to the chemical potential. The energy and force should be the same in datasets 11 to 15 (without chemical potentiel). One sees that this is not completely the case. The force along z vanishes in these cases,  because the translational invariance is imposed by ABINIT. In datasets 21 to 23,  the energy should increase linearly,  and the force along z should be non-zero and constant. Small fluctuations are observed. Dataset 24 and 25 corresponds to the cubic part of the chemical potential. Dataset 26 places the molecule at a symmetric value of z. The total energy should be the same as with dataset 11,  16,  or 21." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t30.in">tests/v8/Input/t30.in</a>, <a class="wikilink test-link" data-content="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t31.in">tests/v8/Input/t31.in</a></li></ul></details><p>For each type of atoms, from 1 to <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>, specifies the spatially varying
+chemical potential, through the specification of <a class="wikilink codevar-link" href="../../input_variables/geo/#nzchempot">nzchempot</a> triplets of
+real numbers. They give data for <a class="wikilink codevar-link" href="../../input_variables/geo/#nzchempot">nzchempot</a> delimiting planes, all parallel
 to each other, each determined by its z reduced coordinate. The first real
 number is the z reduced coordinate of the delimiting plane. The second real
 number is the value of the chemical potential for this type of atom on this
@@ -2636,7 +3272,7 @@ allowed, and means that the first one applies to the adjacent space with lower
 values of z, while the second applies to the adjacent space with higher values
 of z. When the spatial chemical potential is defined only for one type of atom
 (and no chemical potential is present for the other atoms), simply set the
-related values to *0.0 in the <a class="wikilink" href="../../input_variables/geo/#chempot">chempot</a> array. In the present input array,
+related values to *0.0 in the <a class="wikilink codevar-link" href="../../input_variables/geo/#chempot">chempot</a> array. In the present input array,
 reduced positions, energies and derivatives of energies are mixed. Hence,
 although the chemical potential is an energy, one cannot use the usual energy
 definitions (i.e. the chemical potential is always to be input in Hartree
@@ -2644,127 +3280,112 @@ atomic units).</p>
 <hr />
 <h2 id="genafm"><strong>genafm</strong><a class="headerlink" href="#genafm" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> GENerator of the translation for Anti-FerroMagnetic space group<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to set parameters for a spin-polarized calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/spinpolarisation">topic_spinpolarisation</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (3)<br />
-<em>Default value:</em> 3*0<br />
-Test list:</p>
-<ul>
-<li>v3:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in" title="Test different ways to obtain the NiO antiferromagnetic structure">tests/v3/Input/t22.in</a></li>
-</ul>
-<p>This input variable might be used to define a Shubnikov type IV magnetic space
-group (anti-ferromagnetic space group). The user is advised to consult "The
+<em>Default value:</em> 3*0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v3:  <a class="wikilink test-link" data-content="Test different ways to obtain the NiO antiferromagnetic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in">tests/v3/Input/t22.in</a></li></ul></details><p>This input variable might be used to define a Shubnikov type IV magnetic space
+group (anti-ferromagnetic space group). The user is advised to consult &ldquo;The
 mathematical theory of symmetry in solids, Representation theory for point
 groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
-Press, Oxford."<br />
+Press, Oxford.&rdquo;<br />
 A Shubnikov type IV magnetic space group might be defined by its Fedorov space
 group (set of spatial symmetries, that do not change the magnetization), and
-one translation associated with a change of magnetization. <a class="wikilink" href="../../input_variables/geo/#genafm">genafm</a> is
-precisely this translation, in reduced coordinates (like <a class="wikilink" href="../../input_variables/basic/#xred">xred</a>)<br />
+one translation associated with a change of magnetization. <a class="wikilink codevar-link" href="../../input_variables/geo/#genafm">genafm</a> is
+precisely this translation, in reduced coordinates (like <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>)<br />
 Thus, one way to specify a Shubnikov IV magnetic space group, is to define
-both <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a> and <a class="wikilink" href="../../input_variables/geo/#genafm">genafm</a>. Alternatively, one might define <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>
-and <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>, or define by hand the set of symmetries, using <a class="wikilink" href="../../input_variables/basic/#symrel">symrel</a>,
-<a class="wikilink" href="../../input_variables/basic/#tnons">tnons</a> and <a class="wikilink" href="../../input_variables/gstate/#symafm">symafm</a></p>
+both <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#genafm">genafm</a>. Alternatively, one might define <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>
+and <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>, or define by hand the set of symmetries, using <a class="wikilink codevar-link" href="../../input_variables/basic/#symrel">symrel</a>,
+<a class="wikilink codevar-link" href="../../input_variables/basic/#tnons">tnons</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate/#symafm">symafm</a></p>
 <hr />
 <h2 id="natrd"><strong>natrd</strong><a class="headerlink" href="#natrd" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of AToms ReaD<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> <a class="wikilink" href="../../input_variables/basic/#natom">natom</a>  </p>
-<p>Gives the number of atoms to be read from the input file, in the case the atom
-manipulator or the smart symmetriser is used. In this case, <a class="wikilink" href="../../input_variables/geo/#natrd">natrd</a> is also
-used to dimension the array <a class="wikilink" href="../../input_variables/basic/#typat">typat</a>, and the arrays <a class="wikilink" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> and
-<a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>.<br />
-Must take into account the vacancies (see <a class="wikilink" href="../../input_variables/geo/#vacnum">vacnum</a> and <a class="wikilink" href="../../input_variables/geo/#vaclst">vaclst</a>).<br />
-Despite possible vacancies, cannot be bigger than <a class="wikilink" href="../../input_variables/basic/#natom">natom</a>.</p>
+<em>Default value:</em> <a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a>  </p>
+<details class="note"><summary>Test list (click to open) (Moderately used, [45/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>paral:  <a class="wikilink test-link" data-content="LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen,  then modified by DHamann) Test parallelism of the Berry phase calculation,  and finite electric field calculation." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t06.in">tests/paral/Input/t06.in</a>, <a class="wikilink test-link" data-content="LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen,  then modified by DHamann) Test parallelism of the Berry phase calculation,  and finite electric field calculation." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t06.in">tests/paral/Input/t06.in</a>, <a class="wikilink test-link" data-content="LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen,  then modified by DHamann) Test parallelism of the Berry phase calculation,  and finite electric field calculation." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t06.in">tests/paral/Input/t06.in</a>, <a class="wikilink test-link" data-content="LiNbO3,  parallelism over k points (coming from test v4#55 written by MVeithen,  then modified by DHamann) Test parallelism of the Berry phase calculation,  and finite electric field calculation." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/paral/Input/t06.in">tests/paral/Input/t06.in</a></li><li>seq:  <a class="wikilink test-link" data-content="LiNbO3,  rhombohedral. Test finite electric field Check the corectness of the symmetry operations with non-zero tnons." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/seq/Input/tsv4_55.in">tests/seq/Input/tsv4_55.in</a></li><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a>, <a class="wikilink test-link" data-content="Si 8-atom cube. Test the symmetrizer : generate the full set of atoms from the symmetry operations and an irreducible set of atoms." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t90.in">tests/v1/Input/t90.in</a>, <a class="wikilink test-link" data-content="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>, <a class="wikilink test-link" data-content="Crazy 8-atom Si cell. Test the symmetrizer: Fast test for the same orthorhombic group,  uses different orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t92.in">tests/v1/Input/t92.in</a>, <a class="wikilink test-link" data-content="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>, <a class="wikilink test-link" data-content="Crazy tetragonal Si cell with 8 atoms. Test the symmetrizer. Used to test the generation of symmetry matrices from input spatial group,  P42/mnm Dataset 1 : Full set of atoms Dataset 2 : Irreducible unit cell." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t94.in">tests/v1/Input/t94.in</a>, <a class="wikilink test-link" data-content="Crazy cubic Si cell with 4 atoms. Test the symmetrizer. Test for cubic space group with two possible origin choices: Dataset 1 and 2 : first origin choice Dataset 1 : Irreducible unit cell and space group Dataset 2 : Full set of atoms and space group Dataset 3 and 4 : second origin choice Dataset 3 : Irreducible unit cell and space group Dataset 4 : Full set of atoms and full set of symmetry." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t95.in">tests/v1/Input/t95.in</a>, <a class="wikilink test-link" data-content="Al2O3 cell in rhombohedric cell with different axes. Dataset 1 : Rhombohedral axes;  full set of symmetries and full set of atoms Dataset 2 : Rhombohedral axes;  irreducible unit cell and space group Dataset 3 : Hexagonal axes;  irreducible unit cell and space group Dataset 4 : Hexagonal axes;  full unit cell and space group The results are equivalent for Dataset 1 and 2 and Dataset 3 and 4." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t96.in">tests/v1/Input/t96.in</a></li><li>v2:  <a class="wikilink test-link" data-content="Space group number 225 : FCC Aluminum,  in both conventional and primitive unit cells." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t59.in">tests/v2/Input/t59.in</a>, <a class="wikilink test-link" data-content="Space group number 139 : elongated aluminum,  BCT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t60.in">tests/v2/Input/t60.in</a></li><li>v3:  <a class="wikilink test-link" data-content="Test different ways to obtain the NiO antiferromagnetic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the triclinic and monoclinic space groups,  from spgroup 1 to 15." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t25.in">tests/v3/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the orthorhombic space groups,  from spgroup 16 to 74." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t26.in">tests/v3/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the tetragonal space groups,  from spgroup 75 to 142." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t27.in">tests/v3/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the cubic space groups,  from spgroup 195 to 230." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t29.in">tests/v3/Input/t29.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part III)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li><li>v4:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part I : spgroup 16 to 46)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part II : spgroup 47 to 62)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part III : spgroup 63 to 74)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part I : spgroup 75 to 98)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part II : spgroup 99 to 122)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part III : spgroup 123 to 130)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part IV : spgroup 131 to 142)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the hexagonal sub system (spgroup 168 to 194)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t29.in">tests/v4/Input/t29.in</a></li><li>v5:  <a class="wikilink test-link" data-content="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t33.in">tests/v5/Input/t33.in</a>, <a class="wikilink test-link" data-content="White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t77.in">tests/v5/Input/t77.in</a></li><li>v6:  <a class="wikilink test-link" data-content="Hydrure of Lithium-Boron,  in a face-centered monoclinic cell. Test the recognition of the space group (C2/c (# 15)). Was lacking a case before Dec 2011." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t30.in">tests/v6/Input/t30.in</a></li></ul></details><p>Gives the number of atoms to be read from the input file, in the case the atom
+manipulator or the smart symmetriser is used. In this case, <a class="wikilink codevar-link" href="../../input_variables/geo/#natrd">natrd</a> is also
+used to dimension the array <a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a>, and the arrays <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> and
+<a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a>.<br />
+Must take into account the vacancies (see <a class="wikilink codevar-link" href="../../input_variables/geo/#vacnum">vacnum</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#vaclst">vaclst</a>).<br />
+Despite possible vacancies, cannot be bigger than <a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a>.</p>
 <hr />
 <h2 id="nobj"><strong>nobj</strong><a class="headerlink" href="#nobj" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of OBJects<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives the number of 'objects' to be used by the atom manipulator in order to
+<em>Default value:</em> 0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives the number of &lsquo;objects&rsquo; to be used by the atom manipulator in order to
 find the full set of atoms. At present, only one or two objects can be
-defined, identified as objects 'a' and 'b'.<br />
-Related variables for object 'a' are : <a class="wikilink" href="../../input_variables/geo/#objan">objan</a>, <a class="wikilink" href="../../input_variables/geo/#objaat">objaat</a>, <a class="wikilink" href="../../input_variables/geo/#objarf">objarf</a>,
-<a class="wikilink" href="../../input_variables/geo/#objatr">objatr</a>, <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a>, <a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a>. Related variables for object 'b' are :
-<a class="wikilink" href="../../input_variables/geo/#objbn">objbn</a> , <a class="wikilink" href="../../input_variables/geo/#objbat">objbat</a> , <a class="wikilink" href="../../input_variables/geo/#objbrf">objbrf</a> , <a class="wikilink" href="../../input_variables/geo/#objbtr">objbtr</a> , <a class="wikilink" href="../../input_variables/geo/#objbro">objbro</a> , <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a> .  </p>
+defined, identified as objects &lsquo;a&rsquo; and &lsquo;b&rsquo;.<br />
+Related variables for object &lsquo;a&rsquo; are : <a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#objaat">objaat</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#objarf">objarf</a>,
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objatr">objatr</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a>. Related variables for object &lsquo;b&rsquo; are :
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objbn">objbn</a> , <a class="wikilink codevar-link" href="../../input_variables/geo/#objbat">objbat</a> , <a class="wikilink codevar-link" href="../../input_variables/geo/#objbrf">objbrf</a> , <a class="wikilink codevar-link" href="../../input_variables/geo/#objbtr">objbtr</a> , <a class="wikilink codevar-link" href="../../input_variables/geo/#objbro">objbro</a> , <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a> .  </p>
 <p>More detailed explanation : when the atom manipulator is used (i.e. when
-<a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==1 or <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==2), the code will be given a primitive set of atoms,
+<a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==1 or <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==2), the code will be given a primitive set of atoms,
 from which it will have to deduce the full set of atoms.<br />
-An object will be specified by the number of atoms it includes (<a class="wikilink" href="../../input_variables/geo/#objan">objan</a> or
-<a class="wikilink" href="../../input_variables/geo/#objbn">objbn</a> ), and the list of these atoms (<a class="wikilink" href="../../input_variables/geo/#objaat">objaat</a> or <a class="wikilink" href="../../input_variables/geo/#objbat">objbat</a> ).<br />
+An object will be specified by the number of atoms it includes (<a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a> or
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objbn">objbn</a> ), and the list of these atoms (<a class="wikilink codevar-link" href="../../input_variables/geo/#objaat">objaat</a> or <a class="wikilink codevar-link" href="../../input_variables/geo/#objbat">objbat</a> ).<br />
 Examples of physical realisation of an object can be a molecule, or a group of
 atom to be repeated, or a part of a molecule to be rotated. The atom
-amnipulator can indeed repeat these objects (<a class="wikilink" href="../../input_variables/geo/#objarf">objarf</a> or <a class="wikilink" href="../../input_variables/geo/#objbrf">objbrf</a> ),
-rotate them (<a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a> or <a class="wikilink" href="../../input_variables/geo/#objbro">objbro</a> ) with respect to an axis (<a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> or
-<a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a> ), and translate them (<a class="wikilink" href="../../input_variables/geo/#objatr">objatr</a> or <a class="wikilink" href="../../input_variables/geo/#objbtr">objbtr</a> ). After having
+amnipulator can indeed repeat these objects (<a class="wikilink codevar-link" href="../../input_variables/geo/#objarf">objarf</a> or <a class="wikilink codevar-link" href="../../input_variables/geo/#objbrf">objbrf</a> ),
+rotate them (<a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a> or <a class="wikilink codevar-link" href="../../input_variables/geo/#objbro">objbro</a> ) with respect to an axis (<a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> or
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a> ), and translate them (<a class="wikilink codevar-link" href="../../input_variables/geo/#objatr">objatr</a> or <a class="wikilink codevar-link" href="../../input_variables/geo/#objbtr">objbtr</a> ). After having
 generated a geometry thanks to rotation, translation and repetition of
 objects, it is possible to remove some atoms, in order to create vacancies
-(<a class="wikilink" href="../../input_variables/geo/#vacnum">vacnum</a> and <a class="wikilink" href="../../input_variables/geo/#vaclst">vaclst</a>). The number of atoms in the primitive set, those
-that will be read from the input file, is specified by the variable <a class="wikilink" href="../../input_variables/geo/#natrd">natrd</a>.
+(<a class="wikilink codevar-link" href="../../input_variables/geo/#vacnum">vacnum</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#vaclst">vaclst</a>). The number of atoms in the primitive set, those
+that will be read from the input file, is specified by the variable <a class="wikilink codevar-link" href="../../input_variables/geo/#natrd">natrd</a>.
 It will be always smaller than the final number of atoms, given by the
-variable <a class="wikilink" href="../../input_variables/basic/#natom">natom</a>. The code checks whether the primitive number of atoms plus
+variable <a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a>. The code checks whether the primitive number of atoms plus
 those obtained by the repetition operation is coherent with the variable
-<a class="wikilink" href="../../input_variables/basic/#natom">natom</a>, taking into account possible vacancies.<br />
-You should look at the other variables for more information. Go to <a class="wikilink" href="../../input_variables/geo/#objan">objan</a>,
+<a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a>, taking into account possible vacancies.<br />
+You should look at the other variables for more information. Go to <a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a>,
 for example.  </p>
 <hr />
 <h2 id="nzchempot"><strong>nzchempot</strong><a class="headerlink" href="#nzchempot" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of Z reduced coordinates that define the spatial CHEMical POTential<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/Artificial">Artificial</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to perform some artificial modifications of the physics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/Artificial">topic_Artificial</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> None<br />
-Test list:</p>
-<ul>
-<li>v8:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t30.in" title="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus. The z coordinate of the molecule is changed from 0 to 5 Bohr. There is a linear part to the chemical potential. The energy and force should be the same in datasets 11 to 15 (without chemical potentiel). One sees that this is not completely the case. The force along z vanishes in these cases,  because the translational invariance is imposed by ABINIT. In datasets 21 to 23,  the energy should increase linearly,  and the force along z should be non-zero and constant. Small fluctuations are observed. Dataset 24 and 25 corresponds to the cubic part of the chemical potential. Dataset 26 places the molecule at a symmetric value of z. The total energy should be the same as with dataset 11,  16,  or 21.">tests/v8/Input/t30.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t31.in" title="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly.">tests/v8/Input/t31.in</a></li>
-</ul>
-<p>Defines the number of z reduced coordinates that defines the spatially varying
-chemical potential. See the input variable <a class="wikilink" href="../../input_variables/geo/#chempot">chempot</a>, of which <a class="wikilink" href="../../input_variables/geo/#nzchempot">nzchempot</a>
+<em>Default value:</em> None  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v8:  <a class="wikilink test-link" data-content="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus. The z coordinate of the molecule is changed from 0 to 5 Bohr. There is a linear part to the chemical potential. The energy and force should be the same in datasets 11 to 15 (without chemical potentiel). One sees that this is not completely the case. The force along z vanishes in these cases,  because the translational invariance is imposed by ABINIT. In datasets 21 to 23,  the energy should increase linearly,  and the force along z should be non-zero and constant. Small fluctuations are observed. Dataset 24 and 25 corresponds to the cubic part of the chemical potential. Dataset 26 places the molecule at a symmetric value of z. The total energy should be the same as with dataset 11,  16,  or 21." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t30.in">tests/v8/Input/t30.in</a>, <a class="wikilink test-link" data-content="LiH molecule test the use of spatial chemical potential. The molecule starts aligned along the x direction, while the Li chemical potential pulls the Li nucleus toward -z,  and the H chemical potential pushes the H nucleus toward +z. See whether the optimization runs properly." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t31.in">tests/v8/Input/t31.in</a></li></ul></details><p>Defines the number of z reduced coordinates that defines the spatially varying
+chemical potential. See the input variable <a class="wikilink codevar-link" href="../../input_variables/geo/#chempot">chempot</a>, of which <a class="wikilink codevar-link" href="../../input_variables/geo/#nzchempot">nzchempot</a>
 is the second dimension.</p>
 <hr />
 <h2 id="objaat"><strong>objaat</strong><a class="headerlink" href="#objaat" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : list of AToms<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
-<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/geo/#objan">objan</a>)<br />
+<em>Dimensions:</em> (<a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a>)<br />
 <em>Default value:</em> None<br />
-<em>Only relevant if:</em> '<a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==1'</p>
-<p>Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives the list of atoms in object a. This list is specified by giving, for
-each atom, its index in the list of coordinates (<a class="wikilink" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> or
-<a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
+<em>Only relevant if:</em> &lsquo;<a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==1&rsquo;</p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives the list of atoms in object a. This list is specified by giving, for
+each atom, its index in the list of coordinates (<a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> or
+<a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
 These objects can be thought as molecules, or groups of atoms, or parts of
 molecules, to be repeated, rotated and translated to generate the full set of
 atoms.<br />
-Look at <a class="wikilink" href="../../input_variables/geo/#objarf">objarf</a> for further explanations.  </p>
+Look at <a class="wikilink codevar-link" href="../../input_variables/geo/#objarf">objarf</a> for further explanations.  </p>
 <hr />
 <h2 id="objaax"><strong>objaax</strong><a class="headerlink" href="#objaax" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : AXis<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a>, <a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (6)<br />
 <em>Default value:</em> None<br />
-<em>Comment:</em> <a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> must be provided if (<a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==1 and one component of <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a> != 0). Moreover,
-<a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> AND <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a> must be provided if ( <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a> == 2 and one component of <a class="wikilink" href="../../input_variables/geo/#objbro">objbro</a> != 0 ).<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives, for each object, the cartesian coordinates of two points (first point :
-<a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a>(1:3) second point : <a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a>(4:6). By default, given in Bohr
+<em>Comment:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> must be provided if (<a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==1 and one component of <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a> != 0). Moreover,
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> AND <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a> must be provided if ( <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a> == 2 and one component of <a class="wikilink codevar-link" href="../../input_variables/geo/#objbro">objbro</a> != 0 ).  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives, for each object, the cartesian coordinates of two points (first point :
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a>(1:3) second point : <a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a>(4:6). By default, given in Bohr
 atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
-specified, if preferred, since these variables have the '<a class="wikilink" href="../../LENGTH/">LENGTH</a>'
+specified, if preferred, since these variables have the &lsquo;<a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a>&lsquo;
 characteristics.<br />
 The two points define an axis of rotation of the corresponding object.<br />
 Note that the rotation of the object is done BEFORE the object is translated.<br />
@@ -2774,38 +3395,32 @@ toward point 2 (coordinates 4:6).  </p>
 <hr />
 <h2 id="objan"><strong>objan</strong><a class="headerlink" href="#objan" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : Number of atoms<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None<br />
-<em>Comment:</em>  <a class="wikilink" href="../../input_variables/geo/#objan">objan</a> MUST be provided if <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==1.
- <a class="wikilink" href="../../input_variables/geo/#objan">objan</a> and <a class="wikilink" href="../../input_variables/geo/#objbn">objbn</a> MUST be provided if <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==2.<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives the number of atoms in object a. The list of atoms is given by the
-variables <a class="wikilink" href="../../input_variables/geo/#objaat">objaat</a>.  </p>
+<em>Comment:</em>  <a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a> MUST be provided if <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==1.
+ <a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbn">objbn</a> MUST be provided if <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==2.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives the number of atoms in object a. The list of atoms is given by the
+variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objaat">objaat</a>.  </p>
 <hr />
 <h2 id="objarf"><strong>objarf</strong><a class="headerlink" href="#objarf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : Repetition Factors<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> (3)<br />
-<em>Default value:</em> [1, 1, 1]<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives three repetition factors of the objects a.<br />
+<em>Default value:</em> [1, 1, 1]  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives three repetition factors of the objects a.<br />
 This gives the opportunity to generate a three-dimensional set of repeated
 objects, although a simple one-dimensional repetition will be easily obtained
 through the specification of<br />
-'nrep' 1 1<br />
-where 'nrep' is the 1D repetition factor.<br />
+&lsquo;nrep&rsquo; 1 1<br />
+where &lsquo;nrep&rsquo; is the 1D repetition factor.<br />
 The initial rotation and translation of the object, as well as the increment
 of rotation or translation from one object to the next are specified by the
-variables <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a> and <a class="wikilink" href="../../input_variables/geo/#objatr">objatr</a>, for object a,<br />
+variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objatr">objatr</a>, for object a,<br />
 Note that the atom manipulator will generate the full set of atoms from the
 primitive set of atoms using the following order : it will process each atom
 in the primitive list one by one, determine whether it belongs to either
@@ -2820,21 +3435,18 @@ repeating it, simply use 1 1 1, which is also the Default value.  </p>
 <hr />
 <h2 id="objaro"><strong>objaro</strong><a class="headerlink" href="#objaro" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : ROtations<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (4)<br />
-<em>Default value:</em> 4<em>0.0d0<br />
-</em>Comment:* (no rotation)<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Give, for each object, the angles of rotation in degrees to be applied to the
+<em>Default value:</em> 4*0.0d0<br />
+<em>Comment:</em> (no rotation)  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Give, for each object, the angles of rotation in degrees to be applied to the
 corresponding object.<br />
 The rotation is applied before the translation, and the axis is defined by the
-variables <a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> and <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a>. See the latter variables for the
+variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a>. See the latter variables for the
 definition of the sign of the rotation.<br />
-The first component <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a>(1) and <strong> objbro </strong> (1) gives the angle of
+The first component <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a>(1) and ** objbro ** (1) gives the angle of
 rotation to be applied to the first instance of the object. The second, third
 or fourth component (resp.) gives the increment of rotation angle from one
 instance to the next instance, defined by the first, second or third
@@ -2843,21 +3455,18 @@ with different rotation angles.  </p>
 <hr />
 <h2 id="objatr"><strong>objatr</strong><a class="headerlink" href="#objatr" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect A : TRanslations<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a>, <a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (12)<br />
-<em>Default value:</em> 12<em>0.0d0<br />
-</em>Comment:* (no translation)<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Give, for each object, the vectors of translations, in cartesian coordinates,
+<em>Default value:</em> 12*0.0d0<br />
+<em>Comment:</em> (no translation)  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Give, for each object, the vectors of translations, in cartesian coordinates,
 to be applied to the corresponding object. By default, given in Bohr atomic
 units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
-preferred, since these variables have the '<a class="wikilink" href="../../LENGTH/">LENGTH</a>' characteristics.<br />
+preferred, since these variables have the &lsquo;<a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a>&lsquo; characteristics.<br />
 The translation is applied after the rotation.<br />
-The first vector <a class="wikilink" href="../../input_variables/geo/#objatr">objatr</a>(3,1) and <a class="wikilink" href="../../input_variables/geo/#objbtr">objbtr</a>(3,1) gives the translation to
+The first vector <a class="wikilink codevar-link" href="../../input_variables/geo/#objatr">objatr</a>(3,1) and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbtr">objbtr</a>(3,1) gives the translation to
 be applied to the first instance of the object. The second, third or fourth
 component (resp.) gives the increment of translation from one instance to the
 next instance, defined by the first, second or third repetition factor (resp.)
@@ -2870,39 +3479,33 @@ Not present in the dtset array (no internal).</p>
 <hr />
 <h2 id="objbat"><strong>objbat</strong><a class="headerlink" href="#objbat" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : list of AToms<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
-<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/geo/#objbn">objbn</a>)<br />
+<em>Dimensions:</em> (<a class="wikilink codevar-link" href="../../input_variables/geo/#objbn">objbn</a>)<br />
 <em>Default value:</em> None<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==2<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives the list of atoms in object b. This list is specified by giving, for
-each atom, its index in the list of coordinates (<a class="wikilink" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> or
-<a class="wikilink" href="../../input_variables/basic/#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==2  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives the list of atoms in object b. This list is specified by giving, for
+each atom, its index in the list of coordinates (<a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> or
+<a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a>), that also corresponds to a type of atom (given by the array type).
 These objects can be thought as molecules, or groups of atoms, or parts of
 molecules, to be repeated, rotated and translated to generate the full set of
 atoms.<br />
-Look at <a class="wikilink" href="../../input_variables/geo/#objbrf">objbrf</a> for further explanations.  </p>
+Look at <a class="wikilink codevar-link" href="../../input_variables/geo/#objbrf">objbrf</a> for further explanations.  </p>
 <hr />
 <h2 id="objbax"><strong>objbax</strong><a class="headerlink" href="#objbax" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : AXis<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a>, <a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (6)<br />
 <em>Default value:</em> None<br />
-<em>Comment:</em> <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a> must be provided if (<a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==1 and one component of <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a> != 0). Moreover,
-<a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> AND <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a> must be provided if ( <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a> == 2 and one component of <a class="wikilink" href="../../input_variables/geo/#objbro">objbro</a> != 0 ).<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives, for each object, the cartesian coordinates of two points (first point :
-<a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a>(1:3) second point : <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a>(4:6). By default, given in Bohr
+<em>Comment:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a> must be provided if (<a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==1 and one component of <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a> != 0). Moreover,
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> AND <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a> must be provided if ( <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a> == 2 and one component of <a class="wikilink codevar-link" href="../../input_variables/geo/#objbro">objbro</a> != 0 ).  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives, for each object, the cartesian coordinates of two points (first point :
+<a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a>(1:3) second point : <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a>(4:6). By default, given in Bohr
 atomic units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be
-specified, if preferred, since these variables have the '<a class="wikilink" href="../../LENGTH/">LENGTH</a>'
+specified, if preferred, since these variables have the &lsquo;<a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a>&lsquo;
 characteristics.<br />
 The two points define an axis of rotation of the corresponding object.<br />
 Note that the rotation of the object is done BEFORE the object is translated.<br />
@@ -2912,36 +3515,30 @@ toward point 2 (coordinates 4:6).  </p>
 <hr />
 <h2 id="objbn"><strong>objbn</strong><a class="headerlink" href="#objbn" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : Number of atoms<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None<br />
-<em>Comment:</em>  <a class="wikilink" href="../../input_variables/geo/#objan">objan</a> and <a class="wikilink" href="../../input_variables/geo/#objbn">objbn</a> MUST be provided if <a class="wikilink" href="../../input_variables/geo/#nobj">nobj</a>==2.<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives the number of atoms in either object b. The list of atoms is given by
-the variables <a class="wikilink" href="../../input_variables/geo/#objbat">objbat</a>.  </p>
+<em>Comment:</em>  <a class="wikilink codevar-link" href="../../input_variables/geo/#objan">objan</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbn">objbn</a> MUST be provided if <a class="wikilink codevar-link" href="../../input_variables/geo/#nobj">nobj</a>==2.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives the number of atoms in either object b. The list of atoms is given by
+the variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objbat">objbat</a>.  </p>
 <hr />
 <h2 id="objbrf"><strong>objbrf</strong><a class="headerlink" href="#objbrf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : Repetition Factors<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> (3)<br />
-<em>Default value:</em> [1, 1, 1]<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Gives three repetition factors of the objects a or b.<br />
+<em>Default value:</em> [1, 1, 1]  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Gives three repetition factors of the objects a or b.<br />
 This gives the opportunity to generate a three-dimensional set of repeated
 objects, although a simple one-dimensional repetition will be easily obtained
 through the specification of<br />
 nrep 1 1 &lt;r&gt; where nrep is the 1D repetition factor.<br />
 The initial rotation and translation of the object, as well as the increment
 of rotation or translation from one object to the next are specified by the
-variables <a class="wikilink" href="../../input_variables/geo/#objbro">objbro</a> and <a class="wikilink" href="../../input_variables/geo/#objbtr">objbtr</a>, for object b.<br />
+variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objbro">objbro</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbtr">objbtr</a>, for object b.<br />
 Note that the atom manipulator will generate the full set of atoms from the
 primitive set of atoms using the following order : it will process each atom
 in the primitive list one by one, determine whether it belongs to either
@@ -2956,21 +3553,18 @@ repeating it, simply use 1 1 1, which is also the Default value.  </p>
 <hr />
 <h2 id="objbro"><strong>objbro</strong><a class="headerlink" href="#objbro" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : ROtations<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (4)<br />
-<em>Default value:</em> 4<em>0.0d0<br />
-</em>Comment:* (no rotation)<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Give, for each object, the angles of rotation in degrees to be applied to the
+<em>Default value:</em> 4*0.0d0<br />
+<em>Comment:</em> (no rotation)  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Give, for each object, the angles of rotation in degrees to be applied to the
 corresponding object.<br />
 The rotation is applied before the translation, and the axis is defined by the
-variables <a class="wikilink" href="../../input_variables/geo/#objaax">objaax</a> and <a class="wikilink" href="../../input_variables/geo/#objbax">objbax</a>. See the latter variables for the
+variables <a class="wikilink codevar-link" href="../../input_variables/geo/#objaax">objaax</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbax">objbax</a>. See the latter variables for the
 definition of the sign of the rotation.<br />
-The first component <a class="wikilink" href="../../input_variables/geo/#objaro">objaro</a>(1) and <strong> objbro </strong> (1) gives the angle of
+The first component <a class="wikilink codevar-link" href="../../input_variables/geo/#objaro">objaro</a>(1) and ** objbro ** (1) gives the angle of
 rotation to be applied to the first instance of the object. The second, third
 or fourth component (resp.) gives the increment of rotation angle from one
 instance to the next instance, defined by the first, second or third
@@ -2979,21 +3573,18 @@ with different rotation angles.  </p>
 <hr />
 <h2 id="objbtr"><strong>objbtr</strong><a class="headerlink" href="#objbtr" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> OBJect B : TRanslations<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a>, <a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (12)<br />
-<em>Default value:</em> 12<em>0.0d0<br />
-</em>Comment:* (no translation)<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in" title="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time).">tests/v1/Input/t42.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in" title="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK.">tests/v1/Input/t43.in</a></li>
-</ul>
-<p>Give, for each object, the vectors of translations, in cartesian coordinates,
+<em>Default value:</em> 12*0.0d0<br />
+<em>Comment:</em> (no translation)  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t42.in">tests/v1/Input/t42.in</a>, <a class="wikilink test-link" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t43.in">tests/v1/Input/t43.in</a></li></ul></details><p>Give, for each object, the vectors of translations, in cartesian coordinates,
 to be applied to the corresponding object. By default, given in Bohr atomic
 units (1 Bohr=0.5291772108 Angstroms), although Angstrom can be specified, if
-preferred, since these variables have the '<a class="wikilink" href="../../LENGTH/">LENGTH</a>' characteristics.<br />
+preferred, since these variables have the &lsquo;<a class="wikilink" href="../FAKE_CHARACTERISTIC">LENGTH</a>&lsquo; characteristics.<br />
 The translation is applied after the rotation.<br />
-The first vector <a class="wikilink" href="../../input_variables/geo/#objatr">objatr</a>(3,1) and <a class="wikilink" href="../../input_variables/geo/#objbtr">objbtr</a>(3,1) gives the translation to
+The first vector <a class="wikilink codevar-link" href="../../input_variables/geo/#objatr">objatr</a>(3,1) and <a class="wikilink codevar-link" href="../../input_variables/geo/#objbtr">objbtr</a>(3,1) gives the translation to
 be applied to the first instance of the object. The second, third or fourth
 component (resp.) gives the increment of translation from one instance to the
 next instance, defined by the first, second or third repetition factor (resp.)
@@ -3005,16 +3596,17 @@ which case, only rotations are needed.  </p>
 <hr />
 <h2 id="ptgroupma"><strong>ptgroupma</strong><a class="headerlink" href="#ptgroupma" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> PoinT GROUP number for the MAgnetic space group<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to set parameters for a spin-polarized calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/spinpolarisation">topic_spinpolarisation</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0<br />
-Test list:</p>
-<p>This internal variable characterizes a Shubnikov type III magnetic space group
-(anti-ferromagnetic space group). The user is advised to consult "The
+<em>Default value:</em> 0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/1132] in all tests, [0/135] in tutorials.)</summary></details><p>This internal variable characterizes a Shubnikov type III magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult &ldquo;The
 mathematical theory of symmetry in solids, Representation theory for point
 groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
-Press, Oxford."<br />
+Press, Oxford.&rdquo;<br />
 A Shubnikov type III magnetic space group might be defined by its Fedorov
 space group (set of all spatial symmetries, irrespective of their magnetic
 action), and the halving space group (only the symmetries that do not change
@@ -3022,21 +3614,16 @@ the magnetization).<br />
 The specification of the halving space group might be done by specifying, for
 each point symmetry, the magnetic action. See Table 7.1 of the above-mentioned
 reference. Magnetic point groups are numbered from 1 to 58.</p>
-<p>Related input variables : <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>, <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>, <a class="wikilink" href="../../input_variables/geo/#genafm">genafm</a></p>
+<p>Related input variables : <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>, <a class="wikilink codevar-link" href="../../input_variables/geo/#genafm">genafm</a></p>
 <hr />
 <h2 id="spgaxor"><strong>spgaxor</strong><a class="headerlink" href="#spgaxor" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> SPace Group : AXes ORientation<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 1<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in" title="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed.">tests/v1/Input/t91.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t92.in" title="Crazy 8-atom Si cell. Test the symmetrizer: Fast test for the same orthorhombic group,  uses different orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ.">tests/v1/Input/t92.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in" title="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ.">tests/v1/Input/t93.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t96.in" title="Al2O3 cell in rhombohedric cell with different axes. Dataset 1 : Rhombohedral axes;  full set of symmetries and full set of atoms Dataset 2 : Rhombohedral axes;  irreducible unit cell and space group Dataset 3 : Hexagonal axes;  irreducible unit cell and space group Dataset 4 : Hexagonal axes;  full unit cell and space group The results are equivalent for Dataset 1 and 2 and Dataset 3 and 4.">tests/v1/Input/t96.in</a></li>
-<li>v3:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in" title="Test different ways to obtain the NiO antiferromagnetic structure">tests/v3/Input/t22.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t28.in" title="H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194.">tests/v3/Input/t28.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in" title="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups">tests/v3/Input/t38.in</a></li>
-<li>v4:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in" title="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)">tests/v4/Input/t28.in</a></li>
-</ul>
-<p>It is taken into account only when <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>/=0; it allows one to define the
+<em>Default value:</em> 1  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [8/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>, <a class="wikilink test-link" data-content="Crazy 8-atom Si cell. Test the symmetrizer: Fast test for the same orthorhombic group,  uses different orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t92.in">tests/v1/Input/t92.in</a>, <a class="wikilink test-link" data-content="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>, <a class="wikilink test-link" data-content="Al2O3 cell in rhombohedric cell with different axes. Dataset 1 : Rhombohedral axes;  full set of symmetries and full set of atoms Dataset 2 : Rhombohedral axes;  irreducible unit cell and space group Dataset 3 : Hexagonal axes;  irreducible unit cell and space group Dataset 4 : Hexagonal axes;  full unit cell and space group The results are equivalent for Dataset 1 and 2 and Dataset 3 and 4." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t96.in">tests/v1/Input/t96.in</a></li><li>v3:  <a class="wikilink test-link" data-content="Test different ways to obtain the NiO antiferromagnetic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in">tests/v3/Input/t38.in</a></li><li>v4:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in">tests/v4/Input/t28.in</a></li></ul></details><p>It is taken into account only when <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>/=0; it allows one to define the
 axes orientation for the specific space groups for which this is needed.
 Trigonal groups (number 146,148,155,160,161,166,167):</p>
 <ul>
@@ -3069,23 +3656,20 @@ where,</p>
 </ul>
 <p>How to determine which spgaxor you need:</p>
 <ol>
-<li>check the reduced positions you have, for more symmetric positions, e.g. 1/2 1/4 3/4 etc... Let us say your symmetric positions are in the first coordinate (a axis) and you are using spgroup 62. </li>
-<li>look up the raw space group Wyckoff positions on <a href="http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-wp-list"> the Bilbao server </a> to see where they put the corresponding symmetric positions. For spgroup 62 Bilbao puts the 1/4 3/4 in the second coordinate, ie along the b axis. </li>
+<li>check the reduced positions you have, for more symmetric positions, e.g. &frac12; &frac14; &frac34; etc&hellip; Let us say your symmetric positions are in the first coordinate (a axis) and you are using spgroup 62. </li>
+<li>look up the raw space group Wyckoff positions on <a href="http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-wp-list"> the Bilbao server </a> to see where they put the corresponding symmetric positions. For spgroup 62 Bilbao puts the &frac14; &frac34; in the second coordinate, ie along the b axis. </li>
 <li>in this case you need to swap the axes from the original abc order to a new order where the Bilbao axis (b) is in the first position. In this case you have 2 possibilities, spgaxor 3 or 5. If you have more than one highly symmetric coordinate you may have only a single possibility. </li>
 </ol>
 <hr />
 <h2 id="spgorig"><strong>spgorig</strong><a class="headerlink" href="#spgorig" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> SPace Group : ORIGin<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1<br />
-<em>Only relevant if:</em> <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>!=0<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in" title="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed.">tests/v1/Input/t91.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in" title="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ.">tests/v1/Input/t93.in</a>, <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t95.in" title="Crazy cubic Si cell with 4 atoms. Test the symmetrizer. Test for cubic space group with two possible origin choices: Dataset 1 and 2 : first origin choice Dataset 1 : Irreducible unit cell and space group Dataset 2 : Full set of atoms and space group Dataset 3 and 4 : second origin choice Dataset 3 : Irreducible unit cell and space group Dataset 4 : Full set of atoms and full set of symmetry.">tests/v1/Input/t95.in</a></li>
-</ul>
-<p>Gives the choice of origin for the axes system.<br />
+<em>Only relevant if:</em> <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>!=0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>, <a class="wikilink test-link" data-content="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>, <a class="wikilink test-link" data-content="Crazy cubic Si cell with 4 atoms. Test the symmetrizer. Test for cubic space group with two possible origin choices: Dataset 1 and 2 : first origin choice Dataset 1 : Irreducible unit cell and space group Dataset 2 : Full set of atoms and space group Dataset 3 and 4 : second origin choice Dataset 3 : Irreducible unit cell and space group Dataset 4 : Full set of atoms and full set of symmetry." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t95.in">tests/v1/Input/t95.in</a></li></ul></details><p>Gives the choice of origin for the axes system.<br />
 It is defined according to the origin choice in the International Tables of
 Crystallography.<br />
 It applies only to the space groups 48, 50, 59, 70, 85, 86, 88, 125, 126, 129,
@@ -3095,14 +3679,15 @@ For details see the space group <a href="../../../users/spacegrouphelpfile.html"
 <hr />
 <h2 id="spgroup"><strong>spgroup</strong><a class="headerlink" href="#spgroup" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> SPace GROUP number<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/crystal">crystal</a>, <a class="wikilink" href="../../topics/UnitCell">UnitCell</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to to specify a crystal, with atomic positions and symmetries" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/crystal">topic_crystal</a>, <a class="wikilink topic-link" data-content="How to specify the unit cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/UnitCell">topic_UnitCell</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Gives the number of the space group.<br />
-If <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a> is 0, the code assumes that all the symmetries are input
-through the <a class="wikilink" href="../../input_variables/basic/#symrel">symrel</a> matrices and the <a class="wikilink" href="../../input_variables/basic/#tnons">tnons</a> vectors, or obtained from
-the symmetry finder (the default when <a class="wikilink" href="../../input_variables/basic/#nsym">nsym</a>==0).<br />
+<details class="note"><summary>Test list (click to open) (Moderately used, [36/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Crazy 4-atom Si cell. Test the symmetrizer. Dataset 1 : Full set of symmetries and full set of atoms, Dataset 2 : Spatial group index is given,  with an irreducible set of atoms Dataset 3 : Spatial group index is given,  with a full set of atoms, and checks are performed." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t91.in">tests/v1/Input/t91.in</a>, <a class="wikilink test-link" data-content="Crazy 8-atom Si cell. Test the symmetrizer: Fast test for the same orthorhombic group,  uses different orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t92.in">tests/v1/Input/t92.in</a>, <a class="wikilink test-link" data-content="Crazy orthorhombic 16-atoms Si cell. Test the symmetrizer. Long test for all possible orientations and origin choices. Dataset 1-6 : space group origin choice 1 Dataset 7-12 : space group origin choice 2 Dataset 1, 7;  2, 8;  3, 9;  4, 10;  5, 11;  and 6, 12 all the possible orientations. Note : since the sets of atoms generated for different orientations are not equivalent,  the final energies also differ." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t93.in">tests/v1/Input/t93.in</a>, <a class="wikilink test-link" data-content="Crazy tetragonal Si cell with 8 atoms. Test the symmetrizer. Used to test the generation of symmetry matrices from input spatial group,  P42/mnm Dataset 1 : Full set of atoms Dataset 2 : Irreducible unit cell." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t94.in">tests/v1/Input/t94.in</a>, <a class="wikilink test-link" data-content="Crazy cubic Si cell with 4 atoms. Test the symmetrizer. Test for cubic space group with two possible origin choices: Dataset 1 and 2 : first origin choice Dataset 1 : Irreducible unit cell and space group Dataset 2 : Full set of atoms and space group Dataset 3 and 4 : second origin choice Dataset 3 : Irreducible unit cell and space group Dataset 4 : Full set of atoms and full set of symmetry." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t95.in">tests/v1/Input/t95.in</a>, <a class="wikilink test-link" data-content="Al2O3 cell in rhombohedric cell with different axes. Dataset 1 : Rhombohedral axes;  full set of symmetries and full set of atoms Dataset 2 : Rhombohedral axes;  irreducible unit cell and space group Dataset 3 : Hexagonal axes;  irreducible unit cell and space group Dataset 4 : Hexagonal axes;  full unit cell and space group The results are equivalent for Dataset 1 and 2 and Dataset 3 and 4." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t96.in">tests/v1/Input/t96.in</a></li><li>v2:  <a class="wikilink test-link" data-content="Space group number 225 : FCC Aluminum,  in both conventional and primitive unit cells." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t59.in">tests/v2/Input/t59.in</a>, <a class="wikilink test-link" data-content="Space group number 139 : elongated aluminum,  BCT" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t60.in">tests/v2/Input/t60.in</a></li><li>v3:  <a class="wikilink test-link" data-content="Test different ways to obtain the NiO antiferromagnetic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the triclinic and monoclinic space groups,  from spgroup 1 to 15." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t25.in">tests/v3/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the orthorhombic space groups,  from spgroup 16 to 74." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t26.in">tests/v3/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the tetragonal space groups,  from spgroup 75 to 142." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t27.in">tests/v3/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the trigonal and hexagonal space groups,  from spgroup 143 to 194." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t28.in">tests/v3/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals. Test the generation and recognition of the cubic space groups,  from spgroup 195 to 230." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t29.in">tests/v3/Input/t29.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part III)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li><li>v4:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part I : spgroup 16 to 46)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part II : spgroup 47 to 62)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part III : spgroup 63 to 74)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part I : spgroup 75 to 98)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part II : spgroup 99 to 122)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part III : spgroup 123 to 130)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part IV : spgroup 131 to 142)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the hexagonal sub system (spgroup 168 to 194)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t29.in">tests/v4/Input/t29.in</a></li><li>v5:  <a class="wikilink test-link" data-content="White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t77.in">tests/v5/Input/t77.in</a></li><li>v6:  <a class="wikilink test-link" data-content="Hydrure of Lithium-Boron,  in a face-centered monoclinic cell. Test the recognition of the space group (C2/c (# 15)). Was lacking a case before Dec 2011." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t30.in">tests/v6/Input/t30.in</a>, <a class="wikilink test-link" data-content="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t44.in">tests/v6/Input/t44.in</a></li></ul></details><p>Gives the number of the space group.<br />
+If <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a> is 0, the code assumes that all the symmetries are input
+through the <a class="wikilink codevar-link" href="../../input_variables/basic/#symrel">symrel</a> matrices and the <a class="wikilink codevar-link" href="../../input_variables/basic/#tnons">tnons</a> vectors, or obtained from
+the symmetry finder (the default when <a class="wikilink codevar-link" href="../../input_variables/basic/#nsym">nsym</a>==0).<br />
 It should be between 1 and 230. This option can be used to obtain all the
 atoms in the unit cell, starting from the asymmetric unit cell.<br />
 The references for computing the symmetry corresponding to the space groups
@@ -3116,98 +3701,85 @@ are :</p>
 <hr />
 <h2 id="spgroupma"><strong>spgroupma</strong><a class="headerlink" href="#spgroupma" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> SPace GROUP number defining a MAgnetic space group<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/spinpolarisation">spinpolarisation</a>, <a class="wikilink" href="../../topics/SmartSymm">SmartSymm</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to set parameters for a spin-polarized calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/spinpolarisation">topic_spinpolarisation</a>, <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
+the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>This input variable might be used to define a Shubnikov magnetic space group
-(anti-ferromagnetic space group). The user is advised to consult "The
+<details class="note"><summary>Test list (click to open) (Moderately used, [20/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v3:  <a class="wikilink test-link" data-content="Test different ways to obtain the NiO antiferromagnetic structure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t22.in">tests/v3/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t23.in">tests/v3/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t24.in">tests/v3/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the triclinic and monoclinic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t32.in">tests/v3/Input/t32.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t33.in">tests/v3/Input/t33.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t34.in">tests/v3/Input/t34.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the orthorhombic space groups (part III)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t35.in">tests/v3/Input/t35.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part I)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t36.in">tests/v3/Input/t36.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the tetragonal space groups (part II)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t37.in">tests/v3/Input/t37.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the trigonal and hexagonal space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t38.in">tests/v3/Input/t38.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type IV Test the generation and recognition of the cubic space groups" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t39.in">tests/v3/Input/t39.in</a></li><li>v4:  <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part I : spgroup 16 to 46)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t21.in">tests/v4/Input/t21.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part II : spgroup 47 to 62)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t22.in">tests/v4/Input/t22.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the orthorhombic space groups (part III : spgroup 63 to 74)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t23.in">tests/v4/Input/t23.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part I : spgroup 75 to 98)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t24.in">tests/v4/Input/t24.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part II : spgroup 99 to 122)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t25.in">tests/v4/Input/t25.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part III : spgroup 123 to 130)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t26.in">tests/v4/Input/t26.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the tetragonal space groups (part IV : spgroup 131 to 142)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t27.in">tests/v4/Input/t27.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the rhombohedral sub system (spgroup 143 to 167)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t28.in">tests/v4/Input/t28.in</a>, <a class="wikilink test-link" data-content="H based fake crystals : magnetic groups,  Shubnikov type III Test the generation and recognition of the hexagonal sub system (spgroup 168 to 194)" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t29.in">tests/v4/Input/t29.in</a></li></ul></details><p>This input variable might be used to define a Shubnikov magnetic space group
+(anti-ferromagnetic space group). The user is advised to consult &ldquo;The
 mathematical theory of symmetry in solids, Representation theory for point
 groups and space groups, 1972, C.J. Bradley and A.P. Cracknell, Clarendon
-Press, Oxford."<br />
+Press, Oxford.&rdquo;<br />
 A Shubnikov type IV magnetic space group might be defined by its Fedorov space
 group (set of spatial symmetries that do not change the magnetization), and an
-additional magnetic space group number <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
+additional magnetic space group number <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
 A Shubnikov type III magnetic space group might be defined by its Fedorov
 space group (set of all spatial symmetries, irrespective of their magnetic
-action), and an additional magnetic space group number <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
-For the additional number <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>, we follow the definition of Table 7.4
+action), and an additional magnetic space group number <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
+For the additional number <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>, we follow the definition of Table 7.4
 of the above-mentioned Bradley and Cracknell textbook.<br />
 Thus, one way to specify a Shubnikov IV magnetic space group, is to define
-both <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a> and <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
-For example, the group P2_1/c_prime has <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>=14 and <a class="wikilink" href="../../input_variables/geo/#spgroupma">spgroupma</a>=78.<br />
-Alternatively, for Shubnikov IV magnetic groups, one might define <a class="wikilink" href="../../input_variables/geo/#spgroup">spgroup</a>
-and <a class="wikilink" href="../../input_variables/geo/#genafm">genafm</a>. For both the type III and IV, one might define by hand the set
-of symmetries, using <a class="wikilink" href="../../input_variables/basic/#symrel">symrel</a>, <a class="wikilink" href="../../input_variables/basic/#tnons">tnons</a> and <a class="wikilink" href="../../input_variables/gstate/#symafm">symafm</a>.</p>
+both <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a> and <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>.<br />
+For example, the group P2_1/c_prime has <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>=14 and <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroupma">spgroupma</a>=78.<br />
+Alternatively, for Shubnikov IV magnetic groups, one might define <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>
+and <a class="wikilink codevar-link" href="../../input_variables/geo/#genafm">genafm</a>. For both the type III and IV, one might define by hand the set
+of symmetries, using <a class="wikilink codevar-link" href="../../input_variables/basic/#symrel">symrel</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#tnons">tnons</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate/#symafm">symafm</a>.</p>
 <hr />
 <h2 id="tolsym"><strong>tolsym</strong><a class="headerlink" href="#tolsym" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> TOLERANCE for SYMmetries<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/crystal">crystal</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to to specify a crystal, with atomic positions and symmetries" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/crystal">topic_crystal</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 1e-08<br />
-Test list:</p>
-<ul>
-<li>v5:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t78.in" title="FeCO3,  rhombohedral. This test checks the capability of ABINIT to identify a numerically broken symmetry, using the tolsym input variables.">tests/v5/Input/t78.in</a></li>
-<li>v7:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t13.in" title="Fake body-centered tetragonal crystal This test checks the capability of ABINIT to identify and correct inaccurate primitive vectors using the tolsym input variable.">tests/v7/Input/t13.in</a></li>
-</ul>
-<p>Gives the tolerance on the atomic positions (reduced coordinates), primitive
+<em>Default value:</em> 1e-08  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v5:  <a class="wikilink test-link" data-content="FeCO3,  rhombohedral. This test checks the capability of ABINIT to identify a numerically broken symmetry, using the tolsym input variables." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t78.in">tests/v5/Input/t78.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Fake body-centered tetragonal crystal This test checks the capability of ABINIT to identify and correct inaccurate primitive vectors using the tolsym input variable." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t13.in">tests/v7/Input/t13.in</a></li></ul></details><p>Gives the tolerance on the atomic positions (reduced coordinates), primitive
 vectors, or magnetization, to be considered equivalent, thanks to symmetry
 operations. This is used in the recognition of the set of symmetries of the
 system, or the application of the symmetry operations to generate from a
 reduced set of atoms, the full set of atoms. Note that a value larger than
 0.01 is considered to be unacceptable.<br />
 Note : ABINIT needs the atomic positions to be symmmetric to each others
-within 1.e-8 . If <a class="wikilink" href="../../input_variables/geo/#tolsym">tolsym</a> is set to a larger value than 1.e-8, then the
+within 1.e-8 . If <a class="wikilink codevar-link" href="../../input_variables/geo/#tolsym">tolsym</a> is set to a larger value than 1.e-8, then the
 input atomic coordinates will be automatically symmetrized by the symmetry
 operations that will have been found.</p>
 <hr />
 <h2 id="vaclst"><strong>vaclst</strong><a class="headerlink" href="#vaclst" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> VACancies LiST<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
-<em>Dimensions:</em> (<a class="wikilink" href="../../input_variables/geo/#vacnum">vacnum</a>)<br />
-<em>Default value:</em> None<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a></li>
-</ul>
-<p>Gives the identification number(s) of atoms to be subtracted from the set of
+<em>Dimensions:</em> (<a class="wikilink codevar-link" href="../../input_variables/geo/#vacnum">vacnum</a>)<br />
+<em>Default value:</em> None  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a></li></ul></details><p>Gives the identification number(s) of atoms to be subtracted from the set of
 atoms that are obtained after having rotated, translated and repeated the
 objects.<br />
 Useful to created vacancies.</p>
 <hr />
 <h2 id="vacnum"><strong>vacnum</strong><a class="headerlink" href="#vacnum" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> VACancies NUMber<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/AtomManipulator">AtomManipulator</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to manipulate atoms and groups of atoms to generate the set of atomic positions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/AtomManipulator">topic_AtomManipulator</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0<br />
-Test list:</p>
-<ul>
-<li>v1:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in" title="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course.">tests/v1/Input/t40.in</a></li>
-</ul>
-<p>Gives the number of atoms to be subtracted from the list of atoms after the
+<em>Default value:</em> 0  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v1:  <a class="wikilink test-link" data-content="Diamond : vacancy. This test is for testing a large number of atoms (63 atoms),  with a large number of plane waves (unlike test42). Small number of line minimisations,  of course." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t40.in">tests/v1/Input/t40.in</a></li></ul></details><p>Gives the number of atoms to be subtracted from the list of atoms after the
 rotations, translations and repetitions have been done. The list of these
-atoms is contained in <a class="wikilink" href="../../input_variables/geo/#vaclst">vaclst</a>.</p>
+atoms is contained in <a class="wikilink codevar-link" href="../../input_variables/geo/#vaclst">vaclst</a>.</p>
 <hr />
 <h2 id="xyzfile"><strong>xyzfile</strong><a class="headerlink" href="#xyzfile" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> XYZ FILE input for geometry<br />
-<em>Mentioned in topic(s):</em> <a class="wikilink" href="../../topics/crystal">crystal</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../FAKE_CHARACTERISTIC">INPUT_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-link" data-content="How to to specify a crystal, with atomic positions and symmetries" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/crystal">topic_crystal</a><br />
 <em>Variable type:</em> string<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> None<br />
-Test list:</p>
-<ul>
-<li>v6:  <a class="wikilink" data-placement="auto bottom" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t10.in" title="Read in Silane positions and znucl from an .xyz format file t10.in.xyz Demonstrates the use of the xyzfile input variable">tests/v6/Input/t10.in</a></li>
-</ul>
-<p>Gives the name of a xyz format file, to take <a class="wikilink" href="../../input_variables/basic/#natom">natom</a>, <a class="wikilink" href="../../input_variables/basic/#ntypat">ntypat</a>, <a class="wikilink" href="../../input_variables/basic/#typat">typat</a>,
-<a class="wikilink" href="../../input_variables/basic/#znucl">znucl</a>, and <a class="wikilink" href="../../input_variables/basic/#xangst">xangst</a> from. This input can not be mixed with normal atom
+<em>Default value:</em> None  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/1132] in all tests, [0/135] in tutorials.)</summary><ul><li>v6:  <a class="wikilink test-link" data-content="Read in Silane positions and znucl from an .xyz format file t10.in.xyz Demonstrates the use of the xyzfile input variable" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t10.in">tests/v6/Input/t10.in</a></li></ul></details><p>Gives the name of a xyz format file, to take <a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a>,
+<a class="wikilink codevar-link" href="../../input_variables/basic/#znucl">znucl</a>, and <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> from. This input can not be mixed with normal atom
 specifications for other datasets.</p>
 <p>Notes: do not quote the file name in the abinit input file, simply leave a
 space after xyzfile. The xyz format is the number of atoms on the first line,
 a comment line, then one line per atom, with the element as a 2 letter symbol
-("As" "O" or "Pu") and the three cartesian coordinates in Angstrom.</p>
+(&ldquo;As&rdquo; &ldquo;O&rdquo; or &ldquo;Pu&rdquo;) and the three cartesian coordinates in Angstrom.</p>
 <hr />
                 
                   
@@ -3221,15 +3793,186 @@ a comment line, then one line per atom, with the element as a 2 letter symbol
         </div>
       </main>
       
-<hr>
 
-    <center>Abinit version 8.5.4</center>
+  
 
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="User Guide" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
 
-    <center>Copyright &copy; 2017 The Abinit Group</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../topics/" title="Topics" class="md-tabs__link">
+          Topics
+        </a>
+      
+    </li>
+  
 
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Input Variables" class="md-tabs__link md-tabs__link--active">
+          Input Variables
+        </a>
+      
+    </li>
+  
 
-<center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/welcome/" title="Lessons" class="md-tabs__link">
+          Lessons
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../theory/mbt/" title="Theory" class="md-tabs__link">
+          Theory
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../about/release-notes/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../files/" title="File-handling" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                File-handling
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../gstate/" title="Ground-State" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Ground-State
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+            <center>Abinit version 8.5.4</center>
+        
+
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The Abinit Group
+          </div>
+        
+
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/abinit/abinit" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/hashtag/abinit" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="http://www.facebook.com/abinit.org" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4" class="md-footer-social__link fa fa-youtube"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
     </div>
     
       <script src="../../assets/javascripts/application-6940329b9f.js"></script>
