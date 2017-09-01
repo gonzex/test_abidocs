@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG
-    -   - rpath
-        - tutorials/welcome.md
+authors: XG
+rpath: tutorials/welcome.md
 ---
 
 # Welcome  

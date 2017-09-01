@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - DCA,  XG
-    -   - rpath
-        - user-guide/abinit.md
+authors: DCA,  XG
+rpath: user-guide/abinit.md
 ---
 
 # ABINIT, the main code  

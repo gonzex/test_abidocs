@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - DCA, XG, RC
-    -   - rpath
-        - user-guide/new_user.md
+authors: DCA, XG, RC
+rpath: user-guide/new_user.md
 ---
 
 # new user help file  

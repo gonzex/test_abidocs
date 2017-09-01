@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - JB
-    -   - rpath
-        - tutorials/paral_moldyn.md
+authors: JB
+rpath: tutorials/paral_moldyn.md
 ---
 
 # Parallelism for molecular dynamics  

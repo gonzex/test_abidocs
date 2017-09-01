@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - JWZ, XG
-    -   - rpath
-        - tutorials/nuc.md
+authors: JWZ, XG
+rpath: tutorials/nuc.md
 ---
 
 # Lesson on properties at the nuclei  

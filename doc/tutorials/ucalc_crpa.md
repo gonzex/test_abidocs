@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - BAmadon
-    -   - rpath
-        - tutorials/ucalc_crpa.md
+authors: BAmadon
+rpath: tutorials/ucalc_crpa.md
 ---
 
 # Calculation of U and J using cRPA  

@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - DJA
-    -   - rpath
-        - tutorials/udet.md
+authors: DJA
+rpath: tutorials/udet.md
 ---
 
 # Calculation of U and J using Cococcioni's approach  

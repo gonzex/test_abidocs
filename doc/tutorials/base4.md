@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG, RC
-    -   - rpath
-        - tutorials/base4.md
+authors: XG, RC
+rpath: tutorials/base4.md
 ---
 
 # Fourth (basic) lesson  

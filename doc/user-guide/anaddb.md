@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG, DCA
-    -   - rpath
-        - user-guide/anaddb.md
+authors: XG, DCA
+rpath: user-guide/anaddb.md
 ---
 
 # the Anaddb utility  

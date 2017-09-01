@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - FB
-    -   - rpath
-        - tutorials/paral_gspw.md
+authors: FB
+rpath: tutorials/paral_gspw.md
 ---
 
 # Parallelism for the ground state  

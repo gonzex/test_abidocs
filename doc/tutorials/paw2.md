@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - MT
-    -   - rpath
-        - tutorials/paw2.md
+authors: MT
+rpath: tutorials/paw2.md
 ---
 
 # Second lesson on the projector-augmented wave (PAW) technique  

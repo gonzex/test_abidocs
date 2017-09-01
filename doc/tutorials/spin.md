@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - GZ, MT
-    -   - rpath
-        - tutorials/spin.md
+authors: GZ, MT
+rpath: tutorials/spin.md
 ---
 
 # Lesson about the spin  

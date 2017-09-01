@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG, RC, GMR, JFB, MCote
-    -   - rpath
-        - user-guide/cut3d.md
+authors: XG, RC, GMR, JFB, MCote
+rpath: user-guide/cut3d.md
 ---
 
 # the Cut3D utility  

@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - YP
-    -   - rpath
-        - tutorials/source_code.md
+authors: YP
+rpath: tutorials/source_code.md
 ---
 
 # Developing for ABINIT  

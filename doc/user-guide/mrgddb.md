@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG, DCA
-    -   - rpath
-        - user-guide/mrgddb.md
+authors: XG, DCA
+rpath: user-guide/mrgddb.md
 ---
 
 # the Mrgddb utility  

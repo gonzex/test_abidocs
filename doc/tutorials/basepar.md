@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - YP, XG
-    -   - rpath
-        - tutorials/basepar.md
+authors: YP, XG
+rpath: tutorials/basepar.md
 ---
 
 # Lesson on basic parallelism  

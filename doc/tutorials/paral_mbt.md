@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - MG, MS
-    -   - rpath
-        - tutorials/paral_mbt.md
+authors: MG, MS
+rpath: tutorials/paral_mbt.md
 ---
 
 # Parallelism for many-body calculations  

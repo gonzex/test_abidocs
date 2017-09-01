@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG, RC
-    -   - rpath
-        - tutorials/base2.md
+authors: XG, RC
+rpath: tutorials/base2.md
 ---
 
 # Second (basic) lesson  

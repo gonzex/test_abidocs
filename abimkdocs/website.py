@@ -707,7 +707,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         return namespace, name, section, text
 
-    def get_wikilink(self, token):
+    def get_wikilink(self, token, page_rpath):
         #token = token.strip()
         #if not token:
         #    print("Warning: empty wikilink", token)
@@ -882,11 +882,20 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 cprint("WARNING: %s" % msg, "yellow")
                 url, text = "FAKE_URL", "FAKE_URL"
 
-        if section is not None: url = "%s/#%s" % (url, section)
-        a.set('href', url)
         html_class = " ".join(html_classes)
         a.set("class", html_class)
         a.text = text
+        if section is not None: url = "%s#%s" % (url, section)
+
+        # from root-relative url to relative url.
+        end = ""
+        if "#" in url:
+            url, end = url.split("#")
+        page_rpath = page_rpath.replace(".md", "")
+        url = os.path.relpath(url, page_rpath)
+        if end: url = "%s#%s" % (url, end)
+        a.set('href', url)
+
         return a
 
     def validate_html_build(self):
@@ -1124,10 +1133,22 @@ class MarkdownPage(Page):
                     break
             else:
                 raise RuntimeError("Cannot find second `---` marker in %s" % path)
-            d = yaml.load("\n".join(lines[1:i]))
+
+            # Cannot used OrderedDict because markdown parser does not understand !!python/object
+            # If py2, convert strings to ascii to avoid !!unicode in meta!
+            d = dict(**yaml.load("\n".join(lines[1:i])))
+            if sys.version_info[0] <= 2:
+                def to_ascii_if_string(obj):
+                    try:
+                        obj + "hello"
+                    except TypeError:
+                        return obj
+                    return ascii(obj)
+                d = {ascii(k): to_ascii_if_string(d[k])  for k in d}
             #print(self.path, "\n".join(lines[1:i]))
             rpath = os.path.relpath(path, website.root)
             if "rpath" not in d or d["rpath"] != rpath:
+            #if True:
                 d["rpath"] = rpath
                 #d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
                 del lines[1:i]

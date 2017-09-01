@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - SPesant, MCote, XG, BAmadon
-    -   - rpath
-        - tutorials/dftu.md
+authors: SPesant, MCote, XG, BAmadon
+rpath: tutorials/dftu.md
 ---
 
 # Lesson on DFT+U  

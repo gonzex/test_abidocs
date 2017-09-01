@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - DRH
-    -   - rpath
-        - tutorials/elastic.md
+authors: DRH
+rpath: tutorials/elastic.md
 ---
 
 # Lesson on elastic properties  

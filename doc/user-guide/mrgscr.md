@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - RShaltaf
-    -   - rpath
-        - user-guide/mrgscr.md
+authors: RShaltaf
+rpath: user-guide/mrgscr.md
 ---
 
 # the Mrgscr utility  

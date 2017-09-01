@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - PCasek, FF, XG
-    -   - rpath
-        - user-guide/aim.md
+authors: PCasek, FF, XG
+rpath: user-guide/aim.md
 ---
 
 # the AIM utility  

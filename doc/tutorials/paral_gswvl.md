@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - DC
-    -   - rpath
-        - tutorials/paral_gswvl.md
+authors: DC
+rpath: tutorials/paral_gswvl.md
 ---
 
 # Parallelism for the ground state using wavelets  

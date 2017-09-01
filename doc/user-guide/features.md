@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - FJ, XG
-    -   - rpath
-        - user-guide/features.md
+authors: FJ, XG
+rpath: user-guide/features.md
 ---
 
 # ABINIT features  

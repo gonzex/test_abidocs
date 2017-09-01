@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - MG, MS
-    -   - rpath
-        - theory/bse.md
+authors: MG, MS
+rpath: theory/bse.md
 ---
 
 # Bethe-Salpeter equation in ABINIT  

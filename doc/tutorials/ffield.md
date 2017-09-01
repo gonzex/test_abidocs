@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - PhG,  MVeithen,  XG
-    -   - rpath
-        - tutorials/ffield.md
+authors: PhG,  MVeithen,  XG
+rpath: tutorials/ffield.md
 ---
 
 # Lesson on polarization and finite electric fields  

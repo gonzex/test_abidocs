@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - XG
-    -   - rpath
-        - tutorials/tddft.md
+authors: XG
+rpath: tutorials/tddft.md
 ---
 
 # Lesson on TDDFT  

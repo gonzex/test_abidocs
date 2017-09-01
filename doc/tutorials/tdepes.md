@@ -1,9 +1,6 @@
 ---
-!!python/object/apply:collections.OrderedDict
--   -   - authors
-        - SP
-    -   - rpath
-        - tutorials/tdepes.md
+authors: SP
+rpath: tutorials/tdepes.md
 ---
 
 # Lesson TDepES  
