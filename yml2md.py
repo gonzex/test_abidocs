@@ -161,7 +161,6 @@ def lesson2md(yaml_path):
     if data:
         raise ValueError("In %s. Remaing keys: %s" % (yaml_path, data.keys()))
 
-
     #print(md)
     return md
 

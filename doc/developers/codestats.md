@@ -1,7 +1,6 @@
 ---
 plotly: true
 rpath: developers/codestats.md
-
 ---
 
 <div class="plotly-graph-div" id="abinit_stats_plot" style="width:90%;height:750px;"></div>

@@ -484,7 +484,8 @@ class VarDatabase(OrderedDict):
         # but that are used in the documentation of other variables
         # then convert to dict {name --> description}
         with io.open(os.path.join(os.path.dirname(yaml_path), "list_externalvars.yml"), "rt", encoding="utf-8") as f:
-            new.external_params = {k: v for k, v in yaml.load(f)}
+            d = {k: v for k, v in yaml.load(f)}
+            new.external_params = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
 
         codes = set(v.code for v in vlist)
         for codename in sorted(codes):
@@ -496,10 +497,10 @@ class VarDatabase(OrderedDict):
 
         return new
 
-    #def iter_allvars(self):
-    #    for vd in self.values():
-    #        for var in vd.values():
-    #            yield var
+    def iter_allvars(self):
+        for vd in self.values():
+            for var in vd.values():
+                yield var
 
 
 class InputVariables(OrderedDict):

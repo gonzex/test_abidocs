@@ -1,7 +1,6 @@
 ---
 authors: MT, FJ
 rpath: tutorials/paw1.md
-
 ---
 
 # First lesson on the projector-augmented wave (PAW) technique  

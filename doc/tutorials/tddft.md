@@ -1,7 +1,6 @@
 ---
 authors: XG
 rpath: tutorials/tddft.md
-
 ---
 
 # Lesson on TDDFT  

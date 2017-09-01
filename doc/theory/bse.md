@@ -1,7 +1,6 @@
 ---
 authors: MG, MS
 rpath: theory/bse.md
-
 ---
 
 # Bethe-Salpeter equation in ABINIT  

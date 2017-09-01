@@ -1,7 +1,6 @@
 ---
 authors: SS, XG, YG
 rpath: user-guide/optic.md
-
 ---
 
 # the Optic utility  

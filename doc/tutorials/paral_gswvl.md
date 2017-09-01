@@ -1,7 +1,6 @@
 ---
 authors: DC
 rpath: tutorials/paral_gswvl.md
-
 ---
 
 # Parallelism for the ground state using wavelets  

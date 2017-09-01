@@ -1,7 +1,6 @@
 ---
 authors: FJ, XG
 rpath: user-guide/features.md
-
 ---
 
 # ABINIT features  

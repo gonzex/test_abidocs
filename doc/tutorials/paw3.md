@@ -1,7 +1,6 @@
 ---
 authors: MS, MT
 rpath: tutorials/paw3.md
-
 ---
 
 # Third lesson on the projector-augmented wave (PAW) technique  

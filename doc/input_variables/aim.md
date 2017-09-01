@@ -937,6 +937,12 @@ specified in the input variable [[aim:rsurdir]]
 
 
 
+
+
+
+SCALing of the cartesian coordinates.
+
+
 * * *
 
 ## **surf** 

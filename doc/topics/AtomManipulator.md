@@ -21,7 +21,7 @@ and rotated. Then, atoms can be removed, to form e.g. vacancies. See [[nobj]]
 as entry point.
 
 The related input variables being used for preprocessing of the input file,
-they are not echoed in the output file ([[NO_INTERNAL]] characteristics).
+they are not echoed in the output file ([[INPUT_ONLY]] characteristics).
 
 
 

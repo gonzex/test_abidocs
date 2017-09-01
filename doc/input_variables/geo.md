@@ -77,7 +77,7 @@ For more details see the space group [ help file
 *Mnemonics:* spatially varying CHEMical POTential  
 *Mentioned in topic(s):* [[topic:Artificial]]  
 *Variable type:* real  
-*Dimensions:* (3,[['nzchempot']],[['ntype']])  
+*Dimensions:* (3,[[nzchempot]],[[ntypat]])  
 *Default value:* 0.0  
 *Only relevant if:* [[nzchempot]]/=0  
 

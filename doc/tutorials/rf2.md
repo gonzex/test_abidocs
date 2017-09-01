@@ -1,7 +1,6 @@
 ---
 authors: XG
 rpath: tutorials/rf2.md
-
 ---
 
 # Second lesson on DFPT  

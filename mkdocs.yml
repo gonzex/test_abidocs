@@ -137,6 +137,7 @@ pages:
     - Anaddb: input_variables/anaddb.md
     - Optic: input_variables/optic.md
     - Aim: input_variables/aim.md
+    - External Parameters: input_variables/external_parameters.md
     - Statistics: input_variables/varset_stats.md
     - Connections: input_variables/connections.md
 - Lessons:
@@ -189,6 +190,7 @@ pages:
     - Many-Body Perturbation Theory: theory/mbt.md
     - Bethe-Salpeter: theory/bse.md
     - Additional Material: theory/additional_material.md
+    - Acknowledgments: theory/acknowledgments.md
     - Bibliography: theory/bibliography.md
 - Developers:
     - Abimkdocs: developers/abimkdocs.md
@@ -201,7 +203,7 @@ pages:
     - License: about/license.md
 
 markdown_extensions:
-  - markdown.extensions.meta
+  - markdown.extensions.meta:
   - markdown.extensions.toc:
         permalink: true
         #separator: "_"
@@ -260,7 +262,7 @@ theme_dir: abinit_theme
 extra_css:
     #- css/my_codehilite.css
     - css/extra.css
-    - css/auto_numbering.css
+    #- css/auto_numbering.css
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js

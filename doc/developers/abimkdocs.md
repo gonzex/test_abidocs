@@ -1,7 +1,6 @@
 ---
 authors: MG, XG
 rpath: developers/abimkdocs.md
-
 ---
 
 *Proof of concept* website available at <https://gmatteo.github.io/test_abidocs/>

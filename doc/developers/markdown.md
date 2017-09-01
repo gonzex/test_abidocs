@@ -2,9 +2,9 @@
 authors: MG, XG
 plotly: true
 rpath: developers/markdown.md
-title: Writing Documentation
-
 ---
+
+# Writing Documentation
 
 This page is intended as a quick reference to the Markdown syntax used to write the Abinit documentation.
 Markdown can be used **almost everywhere** including the description of the input variables
@@ -314,9 +314,13 @@ G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \ra
 \end{equation}
 ```
 
+that produces:
+
 \begin{equation}
 G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef}
 \end{equation}
+
+Equations can be referenced with:
 
     The propagator in Eq.\ref{eq:GreenDef}
 

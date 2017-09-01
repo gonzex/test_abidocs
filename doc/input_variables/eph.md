@@ -145,6 +145,13 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 
 
 
+
+
+
+Number of electrons per unit cell to be added to the initial value computed
+from the pseudopotentials and unit cell.
+
+
 * * *
 
 ## **eph_fermie** 

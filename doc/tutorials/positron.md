@@ -1,7 +1,6 @@
 ---
 authors: JW, MT
 rpath: tutorials/positron.md
-
 ---
 
 # Electron-positron annihilation  

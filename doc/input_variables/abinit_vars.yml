@@ -2963,8 +2963,8 @@
     defaultval: 0.0
     dimensions:
     - 3
-    -   -   - nzchempot
-    -   -   - ntype
+    - "[[nzchempot]]"
+    - "[[ntypat]]"
     excludes: null
     mnemonics: spatially varying CHEMical POTential
     requires: '[[nzchempot]]/=0'
@@ -6596,7 +6596,8 @@
     excludes: null
     mnemonics: 'Electron-PHonon: EXTRA ELectrons'
     requires: null
-    text: null
+    text: |-
+        Number of electrons per unit cell to be added to the initial value computed from the pseudopotentials and unit cell.
     topics: ElPhonInt_expert
     varset: eph
     vartype: real
@@ -25570,8 +25571,7 @@
     commentdims: null
     defaultval: !valuewithconditions
         defaultval: 2.0
-        usepaw==1:
-        -   - AUTO_FROM_PSP
+        usepaw==1: "[[AUTO_FROM_PSP]]"
     dimensions:
     - '[[ntypat]]'
     excludes: null
@@ -26752,7 +26752,8 @@
     excludes: null
     mnemonics: SCALing of the cartesian coordinates
     requires: null
-    text: null
+    text: |-
+        SCALing of the cartesian coordinates.
     topics: Bader_expert
     varset: aim
     vartype: real

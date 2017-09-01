@@ -269,11 +269,10 @@ class Website(object):
             return vused
 
         # Find variables used in tests.
-        for vd in self.variables_code.values():
-            for var in vd.values():
-                assert not hasattr(var, "tests")
-                var.tests = []
-                var.tests_info = {}
+        for var in self.variables_code.iter_allvars():
+            assert not hasattr(var, "tests")
+            var.tests = []
+            var.tests_info = {}
 
         for test in tests:
             vd = self.variables_code.get(test.executable, None) # FIXME Multibinit, conducti?
@@ -284,11 +283,10 @@ class Website(object):
 
         # Pre-compute vars.tests frequency.
         num_all_tutorial_tests = len([t for t in tests if t.suite_name.startswith("tuto")])
-        for vd in self.variables_code.values():
-            for var in vd.values():
-                var.tests_info["num_all_tests"] = len(tests)
-                var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
-                var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
+        for var in self.variables_code.iter_allvars():
+            var.tests_info["num_all_tests"] = len(tests)
+            var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
+            var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
 
         cprint("Initial website generation completed in %.2f [s]" % (time.time() - start), "green")
 
@@ -324,6 +322,20 @@ Change the input yaml files or the python code
                 fh.write("## **%s** variables   \n\n" % code)
                 fh.write(vd.get_vartabs_html())
                 fh.write(2*"\n" + "* * *\n")
+
+        # Write page with external parameters.
+        with self.new_mdfile(os.path.join(workdir, "external_parameters.md")) as fh:
+            fh.write("""\
+This document lists and provides the description of the name (keywords) of external parameters
+that are not input variables, but that are used in the documentation of other variables,
+typically compilation parameters, available libraries, or number of processors.
+
+You can change these parameters at compile or run time usually.
+
+""")
+            for pname, info in self.variables_code.external_params.items():
+                fh.write("## %s  \n" % pname)
+                fh.write("%s\n * * *\n" % info)
 
 	# Build markdown page for the different sets.
         for code, vd in self.variables_code.items():
@@ -384,20 +396,20 @@ in order of number of occurrence in the input files provided with the package.
 
         cprint("Generating Markdown files with topics ...", "green")
         workdir = os.path.join(self.root, "topics")
-        repo_root = "/Users/gmatteo/git_repos/gitlab_trunk_abinit/doc/topics/origin_files/"
+        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
 
         with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
-            all_topics = sorted(yaml.load(fh), key=lambda t: t[0].upper())
+            self.all_topics = sorted(yaml.load(fh), key=lambda t: t[0].upper())
 
         with io.open(os.path.join(repo_root, "list_tribes.yml"), "rt", encoding="utf-8") as fh:
             # tribe_name --> description
-            all_tribes = OrderedDict(yaml.load(fh))
+            self.all_tribes = OrderedDict(yaml.load(fh))
 
         # datastructures needed for topics index.md
         index_md = ["Alphabetical list of topics"]
         self.howto_topic = {}
 
-        for topic in all_topics:
+        for topic in self.all_topics:
             # Read template and prepare markdown string
             with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
                 top = yaml.load(fh)[0]
@@ -411,15 +423,8 @@ in order of number of occurrence in the input files provided with the package.
             # Find list of variables associated to this topic
             # Group vlist by tribes and write list with links.
             # TODO: Can we have multiple tribes with the same topic?
-
-            # Get list of topics for this `code`.
-            vlist = []
-            for code, vd in self.variables_code.items():
-                for var in vd.values():
-                    if topic in var.topic_tribes:
-                        vlist.append(var)
-
             related_variables = "No variable associated to this topic."
+            vlist = [var for var in self.variables_code.iter_allvars() if topic in var.topic_tribes]
             if vlist:
                 lines = []
                 items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: t[0])
@@ -470,7 +475,7 @@ This page gives hints on how to {howto} with the ABINIT package.
                 fh.write(text)
 
         # Now we can write topics index.md (sorted by first character)
-        for firstchar, group in groupby(all_topics, key=lambda t: t[0].upper()):
+        for firstchar, group in groupby(self.all_topics, key=lambda t: t[0].upper()):
             index_md.append("## %s" % firstchar)
             index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, self.howto_topic[topic]) for topic in group)
 
@@ -487,7 +492,6 @@ This page gives hints on how to {howto} with the ABINIT package.
                 fh.write('##  %s  \n\n' % suite_name)
                 for rpath, test in group:
                     fh.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
-                    #fh.write(test.listoftests())
                     fh.write(test.description)
                     fh.write("\n\n")
                     fh.write("Executable: %s   \n" % test.executable)
@@ -499,9 +503,8 @@ This page gives hints on how to {howto} with the ABINIT package.
                         fh.write("Author(s): %s  \n" % ", ".join(a for a in sorted(test.authors)))
                     fh.write("\n\n* * *\n\n")
 
-        # All markdown files have been generated.
-        # Now find all wikilinks, in particular the
-        # bibliographic references needed to generate backlinks.
+        # All markdown files have been generated. Now find all wikilinks,
+        # in particular the bibliographic references needed to generate backlinks.
         self.analyze_pages()
 
         # Now generate page with bibliography
@@ -533,6 +536,24 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 lines.append("* * *")
             fh.write("\n".join(lines))
 
+        # Write acknowledgments page
+        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/biblio/origin_files/"
+        with io.open(os.path.join(repo_root, "bibfiles.yml"), "rt", encoding="utf-8") as fh:
+            for comp in yaml.load(fh):
+                if comp.name == "acknow": break
+            else:
+                raise RuntimeError("Cannot find `acknow` section in components")
+
+        with self.new_mdfile(os.path.join(self.root, "theory", "acknowledgments.md")) as fh:
+            fh.write("# Acknowledgments  \n")
+            fh.write(html2text(comp.purpose))
+            fh.write(html2text(comp.introduction))
+
+        #topic2pages = defaultdict(list)
+        #for page in self.md_pages:
+        #    for topic in page.topics:
+        #        topic2pages[topic].append(page)
+
         cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
 
     def analyze_pages(self):
@@ -545,7 +566,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             #if any(root.startswith(e) for e in excludes):
             #    dirs[:] = []
             #    continue
-            print(root)
+            #print(root)
             for f in files:
                 if f.startswith("_"): continue
                 #if f == "README.md": continue
@@ -609,10 +630,6 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         if html_class: a.set('class', html_class)
         return a
 
-    #def get_pages_citing(self, page_rurl):
-    #    for page in self.md_pages:
-    #        for link in page.wikilinks:
-
     def slugify(self, value):
         """ Slugify a string, to make it URL friendly. """
         from markdown.extensions.toc import slugify
@@ -655,7 +672,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                         break
                 else:
                     raise RuntimeError("Cannot find second `---` marker")
-            new_lines.insert(i, """\
+            new_lines.insert(i, """
 <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 """)
@@ -783,13 +800,11 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     url, text = "FAKE_CHARACTERISTIC", name
 
                 elif name in self.variables_code.external_params:
-                    # handle [[AUTO_FROM_PSP]] by building popover instead of link
-                    # i.e. external parameters that are not input variables,
-                    # but that are used in the documentation of other variables
+                    # handle [[AUTO_FROM_PSP]] by building link with popover
                     content = ("This is an external parameter\n"
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
-                    url, text = "FAKE_URL", name
+                    url, text = "/input_variables/external_parameters/#%s", name
                     a.add_popover(title=self.variables_code.external_params[name], content=content)
 
                 else:
@@ -1084,7 +1099,7 @@ class MarkdownPage(Page):
             try:
                 link = website.get_wikilink(token)
             except Exception as exc:
-                print("Exception while trying to handle wikilink `%s`" % token)
+                cprint("Exception while trying to handle wikilink `%s` in `%s`" % (token, self.path))
                 continue
 
             link_class = link.get("class", "")

@@ -1,7 +1,6 @@
 ---
 authors: RShaltaf
 rpath: user-guide/mrgscr.md
-
 ---
 
 # the Mrgscr utility  

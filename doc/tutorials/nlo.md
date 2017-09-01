@@ -1,7 +1,6 @@
 ---
 authors: PhG,  MVeithen,  XG
 rpath: tutorials/nlo.md
-
 ---
 
 # Lesson on static non-linear properties  

@@ -1,7 +1,6 @@
 ---
 authors: AB,  OR
 rpath: user-guide/fold2bloch.md
-
 ---
 
 # the Fold2Bloch utility  

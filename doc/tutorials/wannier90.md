@@ -1,7 +1,6 @@
 ---
 authors: TRangel
 rpath: tutorials/wannier90.md
-
 ---
 
 # Lesson on the use of Wannier90 library  

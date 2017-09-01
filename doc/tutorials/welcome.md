@@ -1,7 +1,6 @@
 ---
 authors: XG
 rpath: tutorials/welcome.md
-
 ---
 
 # Welcome  

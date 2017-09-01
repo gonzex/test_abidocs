@@ -3040,7 +3040,7 @@ procedure.
 *Mentioned in topic(s):* [[topic:printing]], [[topic:MagMom]], [[topic:ElecBandStructure]], [[topic:ElecDOS]]  
 *Variable type:* real  
 *Dimensions:* ([[ntypat]])  
-*Default value:* [['AUTO_FROM_PSP']] if usepaw==1,
+*Default value:* [[AUTO_FROM_PSP]] if usepaw==1,
 2.0 otherwise.
   
 

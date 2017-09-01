@@ -35,8 +35,8 @@ superceded by specifying [[amu]].
 **Alchemical potentials**
 
 For norm-conserving pseudopotentials, ABINIT can mix the pseudopotentials, as
-described in [[TOBEPROVIDED]], to create so-called "alchemical potentials",
-see [[mixalch]].  
+described in [[https:wiki.abinit.org/doku.php?id=developers:pseudos|the ABINIT
+wiki]], to create so-called "alchemical potentials", see [[mixalch]].  
 In this case, the number of pseudopotentials to be given, [[npsp]], will
 usually be larger than the number of types of atoms, [[ntypat]]. Using
 alchemical potentials makes sense to treat alloys in which similar ions are

@@ -1,7 +1,6 @@
 ---
 authors: BAmadon
 rpath: tutorials/dmft.md
-
 ---
 
 # Lesson on DFT+DMFT  

@@ -340,7 +340,7 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.77.205112" target="_blank">https:
     </div>
   </div>
 </div>
-Referred to in: <a href="/developers/markdown"> /developers/markdown </a>, <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/topics/Wannier"> /topics/Wannier </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>, <a href="/tutorials/ucalc_crpa"> /tutorials/ucalc_crpa </a>
+Referred to in: <a href="/developers/markdown"> /developers/markdown </a>, <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/DMFT"> /topics/DMFT </a>, <a href="/topics/Wannier"> /topics/Wannier </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>, <a href="/tutorials/ucalc_crpa"> /tutorials/ucalc_crpa </a>
 * * *
 
 
@@ -1295,7 +1295,7 @@ Comp. Mat. Sci. **42**, 329--336 (2008)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/GWls"> /topics/GWls </a>, <a href="/topics/parallelism"> /topics/parallelism </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/GWls"> /topics/GWls </a>, <a href="/topics/parallelism"> /topics/parallelism </a>
 * * *
 
 
@@ -1358,6 +1358,7 @@ Phys. Rev. B **74**, 045102 (2006)
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -1392,7 +1393,7 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.78.085125" target="_blank">https:
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>
 * * *
 
 
@@ -2679,6 +2680,7 @@ Phys. Rev. B **55**, 10337--10354 (1997)
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -2709,7 +2711,7 @@ Phys. Rev. B **55**, 10355 (1997)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Phonons"> /topics/Phonons </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Phonons"> /topics/Phonons </a>
 * * *
 
 
@@ -2740,6 +2742,7 @@ Comp. Mat. Science **25**, 478--492 (2002)
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -2770,6 +2773,7 @@ Zeit. Kristallogr **220**, 558-562 (2005)
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -2800,7 +2804,7 @@ Comp. Phys. Comm. **180**, 2582-2615 (2009)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/GWls"> /topics/GWls </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/GWls"> /topics/GWls </a>
 * * *
 
 
@@ -2866,7 +2870,7 @@ URL: <a href="http://www.sciencedirect.com/science/article/pii/S0010465516300923
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/ElPhonInt"> /topics/ElPhonInt </a>, <a href="/topics/RPACorrEn"> /topics/RPACorrEn </a>, <a href="/tutorials/dmft"> /tutorials/dmft </a>
 * * *
 
 
@@ -3125,7 +3129,7 @@ Phys. Rev. B **71**, 035117 (2005)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/Elastic"> /topics/Elastic </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/Elastic"> /topics/Elastic </a>
 * * *
 
 
@@ -3160,6 +3164,7 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.88.085117" target="_blank">https:
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -3937,7 +3942,7 @@ Phys. Rev. B **93**, 205147 (2016)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/EffMass"> /topics/EffMass </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/EffMass"> /topics/EffMass </a>
 * * *
 
 
@@ -4030,7 +4035,7 @@ Phys. Rev. B **51**, 8610 (1995)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Temperature"> /topics/Temperature </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/PhononBands"> /topics/PhononBands </a>, <a href="/topics/Temperature"> /topics/Temperature </a>
 * * *
 
 
@@ -4911,7 +4916,7 @@ Comp. Mat. Sci. **83**, 341 - 348 (2014)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>, <a href="/topics/Verification"> /topics/Verification </a>, <a href="/tutorials/tdepes"> /tutorials/tdepes </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/TDepES"> /topics/TDepES </a>, <a href="/topics/Verification"> /topics/Verification </a>, <a href="/tutorials/tdepes"> /tutorials/tdepes </a>
 * * *
 
 
@@ -4973,7 +4978,7 @@ J. Chem. Phys. **143**, 102813 (2015)
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/TDepES"> /topics/TDepES </a>, <a href="/tutorials/tdepes"> /tutorials/tdepes </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/TDepES"> /topics/TDepES </a>, <a href="/tutorials/tdepes"> /tutorials/tdepes </a>
 * * *
 
 
@@ -5969,7 +5974,7 @@ URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025607002108
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/PAW"> /topics/PAW </a>, <a href="/tutorials/paw1"> /tutorials/paw1 </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/PAW"> /topics/PAW </a>, <a href="/tutorials/paw1"> /tutorials/paw1 </a>
 * * *
 
 
@@ -6221,6 +6226,7 @@ Phys. Rev. B **93**, 144304 (2016)
     </div>
   </div>
 </div>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>
 * * *
 
 
@@ -6346,7 +6352,7 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.71.125107" target="_blank">https:
     </div>
   </div>
 </div>
-Referred to in: <a href="/topics/nonlinear"> /topics/nonlinear </a>
+Referred to in: <a href="/theory/acknowledgments"> /theory/acknowledgments </a>, <a href="/topics/nonlinear"> /topics/nonlinear </a>
 * * *
 
 
