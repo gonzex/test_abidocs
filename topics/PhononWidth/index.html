@@ -2877,39 +2877,39 @@ interaction with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>This topic concerns metals only.</p>
 <p>After generating a GKK file (see <a class="wikilink topic-link" data-content="How to compute the matrix elements of the electron-phonon interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/ElPhonInt">ElPhonInt topic</a>), the Electron-Phonon
-Coupling (EPC) analysis is performed in anaddb, setting <a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphflag">elphflag</a>
+Coupling (EPC) analysis is performed in anaddb, setting <a class="wikilink codevar-link" href="../../input_variables/anaddb#elphflag">elphflag</a>
 variable to 1. Most of the procedure is automatic, but can be lengthy if a
-large number of k-points is being used. The <a class="wikilink codevar-link" href="../../input_variables/anaddb/#nqpath">nqpath</a> and
-<a class="wikilink codevar-link" href="../../input_variables/anaddb/#qpath">qpath</a> variables must be set, specifying a path in reciprocal space.
+large number of k-points is being used. The <a class="wikilink codevar-link" href="../../input_variables/anaddb#nqpath">nqpath</a> and
+<a class="wikilink codevar-link" href="../../input_variables/anaddb#qpath">qpath</a> variables must be set, specifying a path in reciprocal space.
 anaddb generates files containing the phonon linewidths (suffixed _LWD) and
-frequencies ωqj (suffixed _BST) along <a class="wikilink codevar-link" href="../../input_variables/anaddb/#qpath">qpath</a>. One can calculate the
-nesting function n(q) = ∑kii&rsquo; δ(εk,i) δ(εk+q,i&rsquo;) by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtnest">prtnest</a>
+frequencies ωqj (suffixed _BST) along <a class="wikilink codevar-link" href="../../input_variables/anaddb#qpath">qpath</a>. One can calculate the
+nesting function n(q) = ∑kii&rsquo; δ(εk,i) δ(εk+q,i&rsquo;) by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb#prtnest">prtnest</a>
 to 1 (output to _NEST).</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#kptrlatt">kptrlatt</a>  K PoinT Reciprocal LATTice</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#nqpath">nqpath</a>  Number of Q wavevectors defining a PATH</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qpath">qpath</a>  Q wavevectors defining a PATH</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#telphint">telphint</a>  Technique for ELectron-PHonon INTegration</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#kptrlatt">kptrlatt</a>  K PoinT Reciprocal LATTice</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#nqpath">nqpath</a>  Number of Q wavevectors defining a PATH</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#qpath">qpath</a>  Q wavevectors defining a PATH</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#telphint">telphint</a>  Technique for ELectron-PHonon INTegration</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphflag">elphflag</a>  ELectron-PHonon FLAG</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#elphflag">elphflag</a>  ELectron-PHonon FLAG</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#qgrid_type">qgrid_type</a>  Q GRID TYPE</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#use_k_fine">use_k_fine</a>  USE K-grid FINEr than the coarse k-grid</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#qgrid_type">qgrid_type</a>  Q GRID TYPE</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#use_k_fine">use_k_fine</a>  USE K-grid FINEr than the coarse k-grid</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_int_gkk">ep_int_gkk</a>  Electron-Phonon INTerpolation of GKK</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_qptlist">ep_qptlist</a>  Electron Phonon Q PoinT LIST</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_scalprod">ep_scalprod</a>  DO SCALar PRODuct for gkk matrix elements</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtnest">prtnest</a>  PRinT the NESTing function</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtvol">prtvol</a>  PRinT VOLume</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_int_gkk">ep_int_gkk</a>  Electron-Phonon INTerpolation of GKK</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_qptlist">ep_qptlist</a>  Electron Phonon Q PoinT LIST</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_scalprod">ep_scalprod</a>  DO SCALar PRODuct for gkk matrix elements</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtnest">prtnest</a>  PRinT the NESTing function</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>tutorespfn:</em></p>

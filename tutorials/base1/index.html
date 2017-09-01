@@ -2915,7 +2915,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/base1.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -3071,14 +3076,14 @@ took place: how to run the code, what is in the &ldquo;tbase1_1.in&rdquo; input 
 later, what is in the &ldquo;tbase1_1.out&rdquo; and &ldquo;log&rdquo; output files.</p>
 <p><strong>1.1.e</strong> Running the code is described in the <a href="../../../users/generated_files/help_abinit.html#exec">section 1.2</a> of the abinit_help file. Please, read it now (it will take 30 seconds or less).</p>
 <p><strong>1.1.f</strong> It is now time to edit the tbase1_1.in file. You can have a first glance at it. It is not very long: about 50 lines, mostly comments. Do not try to understand everything immediately. After having gone through it, you should read general explanation about its content, and the format of such input files in the <a href="../../../users/generated_files/help_abinit.html#intro3">section 3.1</a> of the abinit_help file. </p>
-<p><strong>1.1.g</strong> You might now examine in more details some input variables. An alphabetically ordered <a class="wikilink" href="../../input_variables/index/">index of all variables</a> is provided, and their description is found in different files (non-exhaustive list): </p>
+<p><strong>1.1.g</strong> You might now examine in more details some input variables. An alphabetically ordered <a class="wikilink" href="../../input_variables/index">index of all variables</a> is provided, and their description is found in different files (non-exhaustive list): </p>
 <ul>
 <li>Basic variables, varset_<a class="wikilink" href="../../input_variables/basic">basic varset</a></li>
 <li>Files handling variables, varset_<a class="wikilink" href="../../input_variables/files">files varset</a></li>
 <li>Ground-state calculation variables, varset_<a class="wikilink" href="../../input_variables/gstate">gstate varset</a></li>
-<li>GW variables, varset_<a class="wikilink" href="../../input_variables/GW">GW varset</a></li>
+<li>GW variables, varset_<a class="wikilink" href="../../input_variables/gw">gw varset</a></li>
 <li>Parallelisation variables, varset_<a class="wikilink" href="../../input_variables/paral">paral varset</a></li>
-<li>Density Functional Perturbation Theory (DFPT) variables, varset_<a class="wikilink" href="../../input_variables/DFPT">DFPT varset</a></li>
+<li>Density Functional Perturbation Theory (DFPT) variables, varset_<a class="wikilink" href="../../input_variables/dfpt">dfpt varset</a></li>
 </ul>
 <p>However, the number of such variables is rather large! Note that a dozen of
 input variables were needed to run the first test case. This is possible
@@ -3091,19 +3096,19 @@ for the few input variables that you find in tbase1_1.in . These are
 particularly important input variables. So, take a few minutes to have a look
 at the input variables of tbase1_1.in:</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#znucl">znucl</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#natom">natom</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a></li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#diemac">diemac</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#znucl">znucl</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#natom">natom</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a></li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#diemac">diemac</a></li>
 </ul>
-<p>Have also a look at <a class="wikilink codevar-link" href="../../input_variables/basic/#kpt">kpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>.</p>
+<p>Have also a look at <a class="wikilink codevar-link" href="../../input_variables/basic#kpt">kpt</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>.</p>
 <p>It is now time to have a look at the two output files of the run.</p>
 <p><strong>1.1.h</strong> First, open the &ldquo;log&rdquo; file. You can begin to read it. It is nasty. Jump to its end. You will find there the number of WARNINGS and COMMENTS that were issued by the code during execution. You might try to find them in the file (localize the keywords &ldquo;WARNING&rdquo; or &ldquo;COMMENT&rdquo; in this file). Some of them are for the experienced user. For the present time, we will ignore them. You can find more information about messages in the log file in the <a href="../../../users/generated_files/help_abinit.html#logfile">section 6.1</a> of the abinit_help file.</p>
 <p><strong>1.1.i</strong> Then, open the <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_1.out">tests/tutorial/Refs/tbase1_1.out</a> file. You find some general information about the output file in <a href="../../../users/generated_files/help_abinit.html#outputfile"> section 6.2</a> of the abinit_help file. You should also: </p>
@@ -3122,15 +3127,15 @@ first examine the &ldquo;tbase1_1.in&rdquo; file in more details, and read the m
 each of its variables in the corresponding input variables file, if it has not
 yet been done. Then, you should examine some variables that were NOT defined
 in the input file, but that appear in the echo written in &ldquo;tbase1_1.out&rdquo;:  </p>
-<p>- <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>: its value is 2.<br />
+<p>- <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>: its value is 2.<br />
 It is the number of electronic states that will be treated by the code. It has
 been computed by counting the number of valence electrons in the unit cell
 (summing the valence electrons brought by each pseudopotential) then occupying
-the lowest states (look at the <a class="wikilink codevar-link" href="../../input_variables/gstate/#occ">occ</a> variable), and adding some states (at
+the lowest states (look at the <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a> variable), and adding some states (at
 least one, maybe more, depending on the size of the system).  </p>
-<p>- <a class="wikilink codevar-link" href="../../input_variables/gstate/#ngfft">ngfft</a>: its value is 30 30 30 .<br />
+<p>- <a class="wikilink codevar-link" href="../../input_variables/gstate#ngfft">ngfft</a>: its value is 30 30 30 .<br />
 It is the number of points of the three-dimensional FFT grid. It has been
-derived from <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> and the dimension of the cell (<a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>).  </p>
+derived from <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> and the dimension of the cell (<a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>).  </p>
 <p>The maximal number of plane waves &ldquo;<strong>mpw</strong>&rdquo; is mentioned in the memory
 evaluation section: it is <strong>752</strong>.<br />
 Well, this is not completely right, as the code took advantage of the time-
@@ -3138,16 +3143,16 @@ reversal symmetry, valid for the k-point (0 0 0), to decrease the number of
 planewave by about a factor of two.<br />
 The full set of plane waves is <strong>1503</strong> (see later in the &ldquo;tbase1_1.out&rdquo;
 file).<br />
-The code indicates the time-reversal symmetry by a value of <a class="wikilink codevar-link" href="../../input_variables/dev/#istwfk">istwfk</a>=2 ,
-instead of the usual <a class="wikilink codevar-link" href="../../input_variables/dev/#istwfk">istwfk</a>=1 default.  </p>
-<p>- <a class="wikilink codevar-link" href="../../input_variables/basic/#nsym">nsym</a>: its value is 16.<br />
-It is the number of symmetries of the system. The 3x3 matrices <a class="wikilink codevar-link" href="../../input_variables/basic/#symrel">symrel</a>
+The code indicates the time-reversal symmetry by a value of <a class="wikilink codevar-link" href="../../input_variables/dev#istwfk">istwfk</a>=2 ,
+instead of the usual <a class="wikilink codevar-link" href="../../input_variables/dev#istwfk">istwfk</a>=1 default.  </p>
+<p>- <a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>: its value is 16.<br />
+It is the number of symmetries of the system. The 3x3 matrices <a class="wikilink codevar-link" href="../../input_variables/basic#symrel">symrel</a>
 define the symmetries operation. In this case, none of the symmetries is
-accompanied by a translation, that would appear in the variable <a class="wikilink codevar-link" href="../../input_variables/basic/#tnons">tnons</a>. The
+accompanied by a translation, that would appear in the variable <a class="wikilink codevar-link" href="../../input_variables/basic#tnons">tnons</a>. The
 code did an automatic analysis of symmetries.<br />
 They could alternatively be set by hand, or using the symmetry builder (to be
 described later).  </p>
-<p>- <a class="wikilink codevar-link" href="../../input_variables/basic/#xangst">xangst</a> and <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a> are alternative ways to <a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a> to specify the
+<p>- <a class="wikilink codevar-link" href="../../input_variables/basic#xangst">xangst</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a> are alternative ways to <a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a> to specify the
 positions of atoms within the primitive cell.</p>
 <p>Now, you can start reading the description of the remaining of the
 tbase1_1.out file, in the <a href="../../../users/generated_files/help_abinit.html#6.3"> section 6.3
@@ -3156,11 +3161,11 @@ Look at the tbase1_1.out file at the same time.</p>
 <p>** 1.1.j  ** You have read completely an output file! </p>
 <p>Could you answer the following questions?</p>
 <ul>
-<li>Q1. How many SCF cycles were needed to have the <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a> criterion satisfied? </li>
-<li>Q2. Is the energy likely more converged than <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>? </li>
+<li>Q1. How many SCF cycles were needed to have the <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a> criterion satisfied? </li>
+<li>Q2. Is the energy likely more converged than <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>? </li>
 <li>Q3. What is the value of the force on each atom, in Ha/Bohr? </li>
 <li>Q4. What is the difference of eigenenergies between the two electronic states? </li>
-<li>Q5. Can you insert &lsquo;<a class="wikilink codevar-link" href="../../input_variables/files/#prtvol">prtvol</a> 2&rsquo; in the input file, run again abinit, and find where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
+<li>Q5. Can you insert &lsquo;<a class="wikilink codevar-link" href="../../input_variables/files#prtvol">prtvol</a> 2&rsquo; in the input file, run again abinit, and find where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
 </ul>
 <p>(answers are given at the end of the present file)</p>
 <h2 id="2-computation-of-the-interatomic-distance-method-1">2 Computation of the interatomic distance (method 1)<a class="headerlink" href="#2-computation-of-the-interatomic-distance-method-1" title="Permanent link">&para;</a></h2>
@@ -3184,7 +3189,7 @@ multiple datasets.</li>
 decide to examine the interatomic distances from 1.0 Bohr to 2.0 Bohr, by
 steps of 0.05 Bohr. That is, 21 calculations.<br />
 If you are a UNIX guru, it will be easy for you to write a script that will
-drive these 21 calculations, changing automatically the variable <a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a> in
+drive these 21 calculations, changing automatically the variable <a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a> in
 the input file, and then gather all the data, in a convenient form to be
 plotted.<br />
 Well, are you a UNIX guru? If not, there is an easier path, all within ABINIT!</p>
@@ -3194,12 +3199,12 @@ sections <a href="../../../users/generated_files/help_abinit.html#multidataset">
 <a href="../../../users/generated_files/help_abinit.html#loop">3.5</a> and
 <a href="../../../users/generated_files/help_abinit.html#3.6">3.6</a>, of the abinit_help
 file.</p>
-<p><strong>1.2.c</strong> Now, can you write an input file that will do the computation described above (interatomic distances from 1.0 Bohr to 2.0 Bohr, by steps of 0.05 Bohr)? You might start from tbase1_1.in. Try to define a series, and to use the <a class="wikilink codevar-link" href="../../input_variables/files/#getwfk">getwfk</a> input variable (the latter will make the computation much faster). </p>
-<p>You should likely have a look at the section that describes the <a class="wikilink codevar-link" href="../../input_variables/files/#irdwfk">irdwfk</a> and
-<a class="wikilink codevar-link" href="../../input_variables/files/#getwfk">getwfk</a> input variables: in particular, look at the meaning of <em><strong>getwfk
+<p><strong>1.2.c</strong> Now, can you write an input file that will do the computation described above (interatomic distances from 1.0 Bohr to 2.0 Bohr, by steps of 0.05 Bohr)? You might start from tbase1_1.in. Try to define a series, and to use the <a class="wikilink codevar-link" href="../../input_variables/files#getwfk">getwfk</a> input variable (the latter will make the computation much faster). </p>
+<p>You should likely have a look at the section that describes the <a class="wikilink codevar-link" href="../../input_variables/files#irdwfk">irdwfk</a> and
+<a class="wikilink codevar-link" href="../../input_variables/files#getwfk">getwfk</a> input variables: in particular, look at the meaning of <em><strong>getwfk
 -1</strong></em></p>
 <p>Also, define explicitly the number of states (or supercell &ldquo;bands&rdquo;) to be one,
-using the input variable <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>. The input file
+using the input variable <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>. The input file
 <a class="wikilink test-link" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
 job, while <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_2.out">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.
 If you decide to use the ~abinit/tests/tutorial/Input/tbase1_2.in file, do not
@@ -3257,21 +3262,21 @@ Note that <em>the number of SCF cycles drops from 6 to 5 when the wavefunctions
 are read from the previous dataset.</em></p>
 <h2 id="3-computation-of-the-interatomic-distance-method-2">3 Computation of the interatomic distance (method 2)<a class="headerlink" href="#3-computation-of-the-interatomic-distance-method-2" title="Permanent link">&para;</a></h2>
 <p><strong>1.3.a</strong> The other methodology is based on an automatic computation of the minimum. <br />
-There are different algorithms to do that. See the input variable <a class="wikilink codevar-link" href="../../input_variables/rlx/#ionmov">ionmov</a>,
+There are different algorithms to do that. See the input variable <a class="wikilink codevar-link" href="../../input_variables/rlx#ionmov">ionmov</a>,
 with values 2 and 7. In the present case, with only one degree of freedom to
-be optimized, the best choice is <a class="wikilink codevar-link" href="../../input_variables/rlx/#ionmov">ionmov</a> 2 .</p>
+be optimized, the best choice is <a class="wikilink codevar-link" href="../../input_variables/rlx#ionmov">ionmov</a> 2 .</p>
 <p>You have also to define the maximal number of timesteps for this optimization.
-Set the input variable <a class="wikilink codevar-link" href="../../input_variables/rlx/#ntime">ntime</a> to 10, it will be largely enough. For the
-stopping criterion <a class="wikilink codevar-link" href="../../input_variables/rlx/#tolmxf">tolmxf</a>, use the reasonable value of 5.0d-4 Ha/Bohr.
+Set the input variable <a class="wikilink codevar-link" href="../../input_variables/rlx#ntime">ntime</a> to 10, it will be largely enough. For the
+stopping criterion <a class="wikilink codevar-link" href="../../input_variables/rlx#tolmxf">tolmxf</a>, use the reasonable value of 5.0d-4 Ha/Bohr.
 This defines the force threshold to consider that the geometry is converged.
 The code will stop if the residual forces are below that value before reaching
-<a class="wikilink codevar-link" href="../../input_variables/rlx/#ntime">ntime</a>.</p>
+<a class="wikilink codevar-link" href="../../input_variables/rlx#ntime">ntime</a>.</p>
 <p>It is also worth to change the stopping criterion for the SCF cycle, in order
 to be sure that the forces generated for each trial interatomic distance are
-sufficiently converged. Indeed, the value used for <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>, namely 1.0d-6,
+sufficiently converged. Indeed, the value used for <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>, namely 1.0d-6,
 might be sufficient for total energy calculations, but definitely not for the
-accurate computation of other properties. So, change <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a> in <a class="wikilink codevar-link" href="../../input_variables/basic/#toldff">toldff</a>,
-and set the latter input variable to ten times smaller than <a class="wikilink codevar-link" href="../../input_variables/rlx/#tolmxf">tolmxf</a>. The
+accurate computation of other properties. So, change <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a> in <a class="wikilink codevar-link" href="../../input_variables/basic#toldff">toldff</a>,
+and set the latter input variable to ten times smaller than <a class="wikilink codevar-link" href="../../input_variables/rlx#tolmxf">tolmxf</a>. The
 input file <a class="wikilink test-link" data-content="H2 molecule in a big box This file will optimize automatically the interatomic distance" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
 will do the job, while <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_3.out">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. If you decide to use these files, do not forget to change the
@@ -3288,7 +3293,7 @@ the final echo of variables:</p>
 </pre></div>
 
 
-<p>According to these data (see <a class="wikilink codevar-link" href="../../input_variables/basic/#xcart">xcart</a>), the optimal interatomic distance is
+<p>According to these data (see <a class="wikilink codevar-link" href="../../input_variables/basic#xcart">xcart</a>), the optimal interatomic distance is
 about 1.522 Bohr, in good agreement with the estimation of tbase1_2.out . If
 you have time (this is to be done at home), you might try to change the
 stopping criteria, and redo the calculation, to see the level of convergence
@@ -3301,7 +3306,7 @@ same computation is done on different platforms.</p>
 <h2 id="4-computation-of-the-charge-density">4 Computation of the charge density<a class="headerlink" href="#4-computation-of-the-charge-density" title="Permanent link">&para;</a></h2>
 <p>The charge density has already been computed, for all geometries, in the
 above-mentioned runs. Here, we will print this quantity.</p>
-<p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink codevar-link" href="../../input_variables/files/#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink codevar-link" href="../../input_variables/files/#prtden">prtden</a> description, it is worth to read a much more detailed description of the &ldquo;files&rdquo; file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
+<p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a> description, it is worth to read a much more detailed description of the &ldquo;files&rdquo; file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
 <p><strong>1.4.b</strong> The input file <a class="wikilink test-link" data-content="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
 <p>The density will be output in the <strong>tbase1_xo_DEN</strong> file. Try to edit it &hellip;
 No luck ! This file is unformatted, not written using the ASCII code. Even if
@@ -3316,7 +3321,7 @@ wavefunctions files, as these files contain the same header as the density
 file, see sections
 <a href="../../../users/generated_files/help_abinit.html#localpotfile">6.6</a> and
 <a href="../../../users/generated_files/help_abinit.html#wavefctfile">6.7</a></p>
-<p><strong>1.4.c</strong> Such a density file can be read by ABINIT, to restart a calculation (see the input variable <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>, when its value is -2), but more usually, by an utility called &ldquo;cut3d&rdquo;. This utility is available in the ABINIT package. You might try to use it now, to generate two-dimensional cuts in the density, and visualize the charge density contours. <br />
+<p><strong>1.4.c</strong> Such a density file can be read by ABINIT, to restart a calculation (see the input variable <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>, when its value is -2), but more usually, by an utility called &ldquo;cut3d&rdquo;. This utility is available in the ABINIT package. You might try to use it now, to generate two-dimensional cuts in the density, and visualize the charge density contours. <br />
 Read the corresponding <a href="../../../users/generated_files/help_cut3d.html">Cut3D help
 file</a>. Then, try to run cut3d to
 analyse <strong>tbase1_xo_DEN</strong>. You should first try to translate the unformatted
@@ -3336,14 +3341,14 @@ hydrogen atom. The atomisation energy will be the difference between the total
 energy of H2 and twice the total energy of H.<br />
 There are some subtleties in the calculation of an isolated atom.</p>
 <ul>
-<li>in many cases, the ground state of an isolated atom is spin-polarized, see the variables <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate/#spinat">spinat</a> ; </li>
+<li>in many cases, the ground state of an isolated atom is spin-polarized, see the variables <a class="wikilink codevar-link" href="../../input_variables/basic#nsppol">nsppol</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate#spinat">spinat</a> ; </li>
 <li>the highest occupied level might be degenerate with the lowest unoccupied level of the same spin, in which case the techniques usually appropriate for metals are to be used (see <a href="../lesson_base4.html">lesson_base4</a>) </li>
-<li>also often, the symmetry of the ground-state charge density will NOT be spherical, so that the automatic determination of symmetries by the code, based on the atomic coordinates, should be disabled, see the input variable <a class="wikilink codevar-link" href="../../input_variables/basic/#nsym">nsym</a>, to be set to 1 in this case. </li>
+<li>also often, the symmetry of the ground-state charge density will NOT be spherical, so that the automatic determination of symmetries by the code, based on the atomic coordinates, should be disabled, see the input variable <a class="wikilink codevar-link" href="../../input_variables/basic#nsym">nsym</a>, to be set to 1 in this case. </li>
 </ul>
 <p>For Hydrogen, we are lucky that the ground state is spherical (1s orbital),
 and that the highest occupied level and lowest unoccupied level, although
 degenerate, have a different spin. We will define by hand the occupation of
-each spin, see the input variables <a class="wikilink codevar-link" href="../../input_variables/basic/#occopt">occopt</a> (to be set to 2), and <a class="wikilink codevar-link" href="../../input_variables/gstate/#occ">occ</a> .<br />
+each spin, see the input variables <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> (to be set to 2), and <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a> .<br />
 Finally, in order to make numerical errors cancel, it is important to compute
 the above-mentioned difference in the same box, for the same cut-off, and even
 for a location in the box that is similar to the molecule case (although the
@@ -3368,7 +3373,7 @@ the spin-polarisation:</p>
   -0.11112</p>
 </li>
 <li>
-<p>If you run again, while having inserted in the input file &lsquo;<a class="wikilink codevar-link" href="../../input_variables/files/#prtvol">prtvol</a> 2&rsquo;, because <a class="wikilink codevar-link" href="../../input_variables/basic/#occopt">occopt</a>, the charge density and spin polarisation at each point of the FFT grid is also analyzed: </p>
+<p>If you run again, while having inserted in the input file &lsquo;<a class="wikilink codevar-link" href="../../input_variables/files#prtvol">prtvol</a> 2&rsquo;, because <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a>, the charge density and spin polarisation at each point of the FFT grid is also analyzed: </p>
 <div class="codehilite"><pre><span></span> Total charge density [el/Bohr^3]
   Maximum=    1.4053E-01  at reduced coord.    0.0000    0.0000    0.0000
 </pre></div>
@@ -3438,9 +3443,9 @@ too low, 5 % off.</p>
 Well, are you sure that the input parameters that we did not discuss are
 correct? These are:</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> (the plane-wave kinetic energy cut-off) </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> (the supercell size) </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a> (not even mentioned until now, this input variable specifies what kind of exchange-correlation functional is to be used &hellip;) </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> (the plane-wave kinetic energy cut-off) </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> (the supercell size) </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a> (not even mentioned until now, this input variable specifies what kind of exchange-correlation functional is to be used &hellip;) </li>
 <li>the pseudopotential </li>
 </ul>
 <p>We used 10 Ha as cut-off energy, a 10x10x10 Bohr^3 supercell, the local-
@@ -3452,8 +3457,8 @@ of these parameters (except the pseudopotential).</p>
 <h2 id="6-answers-to-the-questions">6 Answers to the questions<a class="headerlink" href="#6-answers-to-the-questions" title="Permanent link">&para;</a></h2>
 <p>**Answers to the questions, section 1.1.j  **: </p>
 <ul>
-<li>Q1. How many SCF cycles were needed to have the <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a> criterion satisfied? </li>
-<li>Q2. Is the energy likely more converged than <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>? </li>
+<li>Q1. How many SCF cycles were needed to have the <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a> criterion satisfied? </li>
+<li>Q2. Is the energy likely more converged than <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>? </li>
 <li>Q3. What is the value of the force on each atom, in Ha/Bohr? </li>
 <li>Q4. What is the difference of eigenenergies between the two electronic states? </li>
 <li>Q5. Where is located the maximum of the electronic density, and how much is it, in electrons/Bohr^3 ? </li>
@@ -3474,17 +3479,17 @@ quoted results !</em></p>
 </pre></div>
 
 
-<p>Note that the number of steps that were allowed, <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a>=10, is larger than
+<p>Note that the number of steps that were allowed, <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a>=10, is larger than
 the number of steps effectively needed to reach the stopping criterion. As a
 rule, you should always check that the number of steps that you allowed was
 sufficient to reach the target tolerance. You might now play a bit with nstep,
 as e.g. set it to 5, to see how ABINIT reacts.</p>
-<p>Side note: in most of the tutorial examples, <a class="wikilink codevar-link" href="../../input_variables/basic/#nstep">nstep</a> will be enough to reach
+<p>Side note: in most of the tutorial examples, <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a> will be enough to reach
 the target tolerance, defined by one of the &ldquo;tolXXX&rdquo; input variables. However,
 this is not always the case (e.g. the test case 1 of the <a href="../lesson_rf1.html">lesson DFPT
 1</a>), because of some portability problems, that could only be
 solved by stopping the SCF cycles before the required tolerance.</p>
-<p><strong>Q2.</strong> The information is contained in the same piece of the output file. Yes, the energy is more converged than <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>, since the stopping criterion asked for the difference between successive evaluations of the energy to be smaller than <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a> twice in a row, while the evolution of the energy is nice, and always decreasing by smaller and smaller amounts. </p>
+<p><strong>Q2.</strong> The information is contained in the same piece of the output file. Yes, the energy is more converged than <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>, since the stopping criterion asked for the difference between successive evaluations of the energy to be smaller than <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a> twice in a row, while the evolution of the energy is nice, and always decreasing by smaller and smaller amounts. </p>
 <p><strong>Q3.</strong> These values are: </p>
 <div class="codehilite"><pre><span></span> cartesian forces (hartree/bohr) at end:
     1     -0.03740558871217     0.00000000000000     0.00000000000000
@@ -3677,7 +3682,7 @@ experimental excitation energies !<br />
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (XG, RC)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 

@@ -2876,42 +2876,42 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>ABINIT needs three dimensioned non-coplanar vectors, forming the unit cell, to
 set up the real space lattice.</p>
-<p>An initial set of three vectors, specified in real space by <a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a> or as
-unit vectors with angles <a class="wikilink codevar-link" href="../../input_variables/basic/#angdeg">angdeg</a>, are dimensioned in a second step using
-scaling factors as specified by <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> or by rescaling their cartesian
-coordinates, as specified by <a class="wikilink codevar-link" href="../../input_variables/basic/#scalecart">scalecart</a>. Internally, only the final result,
-<a class="wikilink codevar-link" href="../../input_variables/basic/#rprimd">%rprimd</a> matters. The most detailed explanation can be found by looking at
-<a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a>.</p>
+<p>An initial set of three vectors, specified in real space by <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a> or as
+unit vectors with angles <a class="wikilink codevar-link" href="../../input_variables/basic#angdeg">angdeg</a>, are dimensioned in a second step using
+scaling factors as specified by <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> or by rescaling their cartesian
+coordinates, as specified by <a class="wikilink codevar-link" href="../../input_variables/basic#scalecart">scalecart</a>. Internally, only the final result,
+<a class="wikilink codevar-link" href="../../input_variables/basic#rprimd">%rprimd</a> matters. The most detailed explanation can be found by looking at
+<a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>.</p>
 <p>Note that ABINIT expects the mixed product of the three vectors (R1xR2).R3 to
 be positive. If it is not the case, exchange two of them.</p>
 <p>More information about the way the real space lattice, the reciprocal lattice,
 and symmetries are defined in ABINIT can be found
 <a href="../../documents/geometry.pdf">here</a>.</p>
 <p><strong>Smart symmetriser</strong></p>
-<p>ABINIT has also a smart symmetriser capability, when <a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>!=0 and
-<a class="wikilink codevar-link" href="../../input_variables/geo/#brvltt">brvltt</a>=-1. In this case, the CONVENTIONAL unit cell must be input through
-the usual input variables <a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#angdeg">angdeg</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a> and/or
-<a class="wikilink codevar-link" href="../../input_variables/basic/#scalecart">scalecart</a>. ABINIT will fold the conventional unit to the primitive cell,
+<p>ABINIT has also a smart symmetriser capability, when <a class="wikilink codevar-link" href="../../input_variables/geo#spgroup">spgroup</a>!=0 and
+<a class="wikilink codevar-link" href="../../input_variables/geo#brvltt">brvltt</a>=-1. In this case, the CONVENTIONAL unit cell must be input through
+the usual input variables <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#angdeg">angdeg</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a> and/or
+<a class="wikilink codevar-link" href="../../input_variables/basic#scalecart">scalecart</a>. ABINIT will fold the conventional unit to the primitive cell,
 and also generate all the nuclei positions from the irreducible ones. See
 <a class="wikilink topic-link" data-content="How to use the symetry information to build the system from the irreducible part of
 the primitive cell" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/SmartSymm">topic_SmartSymm</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>  CELL lattice vector scaling</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a>  Real space PRIMitive translations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>  CELL lattice vector scaling</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>  Real space PRIMitive translations</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#rprimd">%rprimd</a>  Real space PRIMitive translations, Dimensional</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#rprimd">%rprimd</a>  Real space PRIMitive translations, Dimensional</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#angdeg">angdeg</a>  ANGles in DEGrees</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/geo/#brvltt">brvltt</a>  BRaVais LaTTice type</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#chkprim">chkprim</a>  CHecK whether the cell is PRIMitive</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#scalecart">scalecart</a>  SCALE CARTesian coordinates</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/geo/#spgroup">spgroup</a>  SPace GROUP number</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#angdeg">angdeg</a>  ANGles in DEGrees</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/geo#brvltt">brvltt</a>  BRaVais LaTTice type</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#chkprim">chkprim</a>  CHecK whether the cell is PRIMitive</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#scalecart">scalecart</a>  SCALE CARTesian coordinates</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/geo#spgroup">spgroup</a>  SPace GROUP number</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>tutorial:</em></p>

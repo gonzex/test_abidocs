@@ -1,0 +1,72 @@
+devtools.py:        res = open('/proc/cpuinfo').read().count('processor\t:')
+devtools.py:            dmesg = open('/var/run/dmesg.boot').read()
+devtools.py:                self.fd = os.open(self.lockfile, os.O_CREAT|os.O_EXCL|os.O_RDWR)
+diff.py:    fromlines = open(fromfile, 'U').readlines()
+diff.py:    tolines = open(tofile, 'U').readlines()
+diff.py:        fh = open(options.file, "w")
+testsuite.py:from subprocess import Popen, PIPE
+testsuite.py:        #with open(fname, "rt", encoding="ISO-8859-1") as fh:
+testsuite.py:        #with open(fname, "rt", encoding="utf-8", errors="ignore") as fh:
+testsuite.py:        with open(fname, "rt", encoding="utf-8") as fh:
+testsuite.py:        with open(fname, "rt") as fh:
+testsuite.py:        with open(fname, "rt", encoding="utf-8") as fh:
+testsuite.py:        with open(fname, "rt") as fh:
+testsuite.py:    with open(fname, "wt") as fh:
+testsuite.py:    with open(fname, "wt") as fh:
+testsuite.py:    with open(path, "r") as fh:
+testsuite.py:        with open(os.path.join(workdir, path), "rt") as fh:
+testsuite.py:            with open(filepath, "r") as f:
+testsuite.py:        from subprocess import Popen, PIPE
+testsuite.py:        p = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE)
+testsuite.py:    with open(fname, "r") as fh:
+testsuite.py:    with open(fname, "r") as fh:
+testsuite.py:            p = Popen(cmd_str, shell=True, stdout=PIPE, stderr=PIPE)
+testsuite.py:            p = Popen(cmd_str, shell=True, stdout=PIPE, stderr=PIPE, universal_newlines=True)
+testsuite.py:        with open(self.cpkl_fname, "wb") as fh:
+testsuite.py:        with open(self.inp_fname, "r") as fh:
+testsuite.py:            with open(self.stdin_fname, "w") as fh:
+testsuite.py:                with open(fldiff_fname,"w") as fh:
+testsuite.py:                        f = open(abort_file, "r")
+testsuite.py:            fh = open(html_report, "w")
+testsuite.py:                    with open(abort_file, "rt") as f:
+testsuite.py:                <py-open code = "for h in Headings:"> </py-open>
+testsuite.py:                <py-open>for idx, f in enumerate(self.files_to_test):</py-open>
+testsuite.py:              <py-open>for idx, f in enumerate(self.files_to_test):</py-open>
+testsuite.py:                <py-open code="if f.fld_status != 'succeeded':"/>
+testsuite.py:              <py-open code="if self.status == "failed":"/>
+testsuite.py:                <py-open code="if self.exceptions:"/>
+testsuite.py:                  <py-open code="for idx, e in enumerate(self.exceptions):"/>
+testsuite.py:        with open(self.cpkl_fname, "wb") as fh:
+testsuite.py:        with open(html_report, "w") as fh:
+testsuite.py:        with open(self.cpkl_fname, "wb") as fh:
+testsuite.py:            targz = tarfile.open(ofname, "w:gz")
+testsuite.py:        with open(os.path.join(self.workdir, "results.txt"), "w") as fh:
+testsuite.py:        fh = open(fname, "w")
+testsuite.py:             <py-open code = "for h in suite_headings:"> </py-open>
+testsuite.py:            <py-open code = "for h in suite_headings:"> </py-open>
+testsuite.py:             <py-open code = "for h in test_headings:"> </py-open>
+testsuite.py:           <py-open code="for test in self.%s_tests():"/>
+testsuite.py:        # Loop over the tests, open the stderr to see if it's empty ot not
+testsuite.py:        with open(cpkl_fname, "wb") as fh:
+xyaptu.py:            inf = open(input)
+xyaptu.py:                raise ValueError("Can't open file (%s)" % input)
+xyaptu.py:        # <py-open code="for k in pageVars.keys():" />
+xyaptu.py:          <py-open\s+code\s*=\s*"([^"]*)"\s*/> |
+xyaptu.py:          <py-open\s+code\s*=\s*"([^"]*)"\s*>[^<]*</py-open\s*> |
+xyaptu.py:          <py-open\s*>([^<]*)</py-open\s*>
+xyaptu.py:        def ropen(match,self=self):
+xyaptu.py:        xStr = reOpen.sub(ropen, xStr)
+xyaptu.py:    <py-open code="if session:"/>
+xyaptu.py:      <py-open code="for LG in LogSeverity:"/>
+xyaptu.py:      <py-open code = "for h in logHeadings:" > code attribute takes precedence
+xyaptu.py:       over this text, which is duly ignored </py-open>
+xyaptu.py:     <py-open code="for logentry in logEntries:"/>
+xyaptu.py:       <py-open>for i in range(0,len(logentry)):</py-open>
+xyaptu.py:        <py-open code="if i &lt; numH:" />
+xyaptu.py:(such as python expressions, statements, opening and closing blocks) and not particularly
+xyaptu.py:still keeping all the options open for the HTML or XML document designer.
+xyaptu.py:There are only 5 XML tags, to handle python statements (expression, line, block open,
+xyaptu.py:statement <py-open code="if inSession:"/> -- block open <py-clause code="else:"/> -- block
+xyaptu.py:<py-expr>pvkey -- expression <py-line>pvkeys=pVars.keys() -- line statement <py-open>if
+xyaptu.py:inSession: -- block open <py-clause>else: -- block continuation clause <py-close># close
+xyaptu.py:For each python statement (open, close, ...), yaptu adds an extra blank line. To be

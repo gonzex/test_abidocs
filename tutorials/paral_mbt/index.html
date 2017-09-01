@@ -2927,7 +2927,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MG, MS
+    -   - rpath
+        - tutorials/paral_mbt.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -2993,7 +2998,7 @@ familiar to you.</p>
 <p>The only thing worth stressing is that this calculation solves the NSCF cycle
 with the conjugate-gradient method (paral_kgb == 0)</p>
 <p>The NSCF cycle is executed in parallel using the standard parallelism over
-k-points and spin in which the (<a class="wikilink codevar-link" href="../../input_variables/basic/#nkpt">nkpt</a> x <a class="wikilink codevar-link" href="../../input_variables/basic/#nsppol">nsppol</a>) blocks of bands are
+k-points and spin in which the (<a class="wikilink codevar-link" href="../../input_variables/basic#nkpt">nkpt</a> x <a class="wikilink codevar-link" href="../../input_variables/basic#nsppol">nsppol</a>) blocks of bands are
 distributed among the nodes. This test uses an unshifted 4x4x3 grid (48 k
 points in the full Brillouin Zone, folding to 9 k-points in the irreducible
 wedge) hence the theoretical maximum speedup is 9.</p>
@@ -3052,8 +3057,8 @@ inclvkb     2   # Correct treatment of the optical limit.
 
 <p>Most of the variables have been already discussed in the
 <a href="../lesson_gw1.html">first</a> lesson of the GW tutorial. The only variables that
-deserve some additional explanation are <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>.</p>
-<p><a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a> selects the parallel algorithm used to compute the screening. Two
+deserve some additional explanation are <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#awtr">awtr</a>.</p>
+<p><a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a> selects the parallel algorithm used to compute the screening. Two
 different approaches are implemented:</p>
 <ul>
 <li>
@@ -3068,13 +3073,13 @@ documentation of the variable. In this tutorial, we will be focusing on
 <strong>gwpara</strong>=2 since this is the algorithm with the best MPI-scalability and,
 mostly important, it is the only one that allows for a significant reduction
 of the memory requirement.</p>
-<p>The option <a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>=1 specifies that the system presents time reversal
+<p>The option <a class="wikilink codevar-link" href="../../input_variables/gw#awtr">awtr</a>=1 specifies that the system presents time reversal
 symmetry so that it is possible to halve the number of transitions that have
 to be calculated explicitly (only resonant transitions are needed). Note that
-<a class="wikilink codevar-link" href="../../input_variables/gw/#awtr">awtr</a>=1 is MANDATORY when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
+<a class="wikilink codevar-link" href="../../input_variables/gw#awtr">awtr</a>=1 is MANDATORY when <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2 is used.</p>
 <p>Before running the calculation in parallel, it is worth discussing some
 important technical details of the implementation. For our purposes, it
-suffices to say that, when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used in the screening part, the
+suffices to say that, when <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2 is used in the screening part, the
 code distributes the wavefunctions such that each processing unit owns the
 FULL set of occupied bands while the empty states are distributed among the
 nodes. The parallel computation of the inverse dielectric matrix is done in
@@ -3094,7 +3099,7 @@ three different steps that can be schematically described as follows:</p>
 <p>Both the first and second step of the algorithm are expected to scale well
 with the number of processors. Step 3, on the contrary, is performed in
 sequential thus it will have a detrimental effect on the overall scaling,
-especially in the case of large screening matrices (large <a class="wikilink codevar-link" href="../../input_variables/internal/#npweps">%npweps</a> or large
+especially in the case of large screening matrices (large <a class="wikilink codevar-link" href="../../input_variables/internal#npweps">%npweps</a> or large
 number of frequency points ω).</p>
 <p>Note that the maximum number of CPUs that can be used is dictated by the
 number of empty states used to compute the polarizability. Most importantly, a
@@ -3154,10 +3159,10 @@ log file. For a calculation in sequential, we have:</p>
 
 
 <p><em>ug</em> denotes the internal buffer used to store the Fourier components of the
-orbitals whose size scales linearly with <a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>. <em>ur</em> is the array storing
+orbitals whose size scales linearly with <a class="wikilink codevar-link" href="../../input_variables/internal#npwwfn">%npwwfn</a>. <em>ur</em> is the array storing
 the orbitals on the real space FFT mesh. Keep in mind that the size of <em>ur</em>
 scales linearly with the total number of points in the FFT box, number that is
-usually much larger than the number of planewaves (<a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>). The number of
+usually much larger than the number of planewaves (<a class="wikilink codevar-link" href="../../input_variables/internal#npwwfn">%npwwfn</a>). The number of
 FFT divisions used in the GW code can be extracted from the main output file
 using</p>
 <div class="codehilite"><pre><span></span>&gt;&gt;&gt; grep setmesh tmbt_2.out  -A 1
@@ -3170,8 +3175,8 @@ using</p>
 <a href="../../../theory/generated_files/theorydoc_mbt.html#oscillator_notes">section</a> of
 the GW notes, the Fast Fourier Transform represents one of the most CPU
 intensive part of the execution. For this reason the code provides the input
-variable <a class="wikilink codevar-link" href="../../input_variables/gw/#fftgw">fftgw</a> that can be used to decrease the number of FFT points for
-better efficiency. The second digit of the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>, instead,
+variable <a class="wikilink codevar-link" href="../../input_variables/gw#fftgw">fftgw</a> that can be used to decrease the number of FFT points for
+better efficiency. The second digit of the input variable <a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>, instead,
 governs the storage of the real space orbitals and can used to avoid the
 storage of the costly array <em>ur</em> at the price of an increase in computational
 time.</p>
@@ -3187,8 +3192,8 @@ achieve converged results. Typical examples are GW calculations in metals or
 optical properties within the Bethe-Salpeter formalism.</p>
 <p>If enough processing units are available, the linear factor due to the q-point
 sampling can be trivially absorbed by splitting the calculation of the
-q-points into several independent runs using the variables <a class="wikilink codevar-link" href="../../input_variables/gw/#nqptdm">nqptdm</a> and
-<a class="wikilink codevar-link" href="../../input_variables/gw/#qptdm">qptdm</a>. The results can then be gathered in a unique binary file by means
+q-points into several independent runs using the variables <a class="wikilink codevar-link" href="../../input_variables/gw#nqptdm">nqptdm</a> and
+<a class="wikilink codevar-link" href="../../input_variables/gw#qptdm">qptdm</a>. The results can then be gathered in a unique binary file by means
 of the <strong>mrgscr</strong> utility (see also the automatic tests v3/t87, v3/t88 and
 v3/t89).</p>
 <h2 id="3-computing-the-screening-in-parallel-using-the-hilbert-transform-method">3 Computing the screening in parallel using the Hilbert transform method<a class="headerlink" href="#3-computing-the-screening-in-parallel-using-the-hilbert-transform-method" title="Permanent link">&para;</a></h2>
@@ -3222,7 +3227,7 @@ nfreqim     5
 
 
 <p>The input file is similar to the one we used for the Adler-Wiser calculation.
-The input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#spmeth">spmeth</a> enables the spectral method. <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasf">nomegasf</a>
+The input variable <a class="wikilink codevar-link" href="../../input_variables/gw#spmeth">spmeth</a> enables the spectral method. <a class="wikilink codevar-link" href="../../input_variables/gw#nomegasf">nomegasf</a>
 defines the number of ω′ points in the linear mesh used for the spectral
 function i.e. the number of ω′ in the
 <a href="../../../theory/generated_files/theorydoc_mbt.html#hilbert_transform">equation</a>
@@ -3230,9 +3235,9 @@ for the spectral function.</p>
 <p>As discussed in the <a href="../../../theory/generated_files/theorydoc_mbt.html#hilbert_transform">GW
 notes</a>, the
 Hilbert transform method is much more memory demanding that the Adler-Wiser
-approach, mainly because of the large value of <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasf">nomegasf</a> that is usually
+approach, mainly because of the large value of <a class="wikilink codevar-link" href="../../input_variables/gw#nomegasf">nomegasf</a> that is usually
 needed to converge the results. Fortunately, the particular distribution of
-the data employed in <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 turns out to be well suited for the
+the data employed in <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2 turns out to be well suited for the
 calculation of the spectral function since each processor has to store and
 treat only a subset of the entire range of transition energies. The algorithm
 therefore presents good MPI-scalability since the number of ω′ frequencies
@@ -3260,7 +3265,7 @@ a much denser k-sampling is required to achieve convergence).</p>
 <p><img alt="" src="../../documents/lesson_paral_mbt/comp-AW-spect.png" /></p>
 <h2 id="4-computing-the-one-shot-gw-corrections-in-parallel">4 Computing the one-shot GW corrections in parallel<a class="headerlink" href="#4-computing-the-one-shot-gw-corrections-in-parallel" title="Permanent link">&para;</a></h2>
 <p>In this last paragraph, we discuss how to calculate G0W0 corrections in
-parallel with <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2. The basic equations used to compute the self-
+parallel with <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2. The basic equations used to compute the self-
 energy matrix elements are discussed in <a href="../../../theory/generated_files/theorydoc_mbt.html#evaluation_gw_sigma">this
 part</a> of
 the GW notes.</p>
@@ -3291,17 +3296,17 @@ nband       50           # Number of bands for the correlation part.
 one-shot calculation with the plasmon-pole model approximation. We refer to
 the documentation and to the <a href="../lesson_gw1.html">first lesson</a> of the GW
 tutorial for a more complete description of the meaning of these variables.</p>
-<p>Also in this case, we use <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 to perform the calculation in parallel.
+<p>Also in this case, we use <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2 to perform the calculation in parallel.
 Note, however, that the distribution of the orbitals employed in the self-
 energy part significantly differs from the one used to compute the screening.
 In what follows, we briefly describe the two-step procedure used to distribute
 the wavefunctions:</p>
 <ol>
 <li>
-<p>Each node reads and stores in memory the states where the QP corrections are computed (the list of states specified by <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>). </p>
+<p>Each node reads and stores in memory the states where the QP corrections are computed (the list of states specified by <a class="wikilink codevar-link" href="../../input_variables/gw#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a>). </p>
 </li>
 <li>
-<p>The <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> bands are distributed using the following partition scheme: </p>
+<p>The <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> bands are distributed using the following partition scheme: </p>
 </li>
 </ol>
 <p><img alt="" src="../../documents/lesson_paral_mbt/band_distribution_sigma.png" /></p>
@@ -3309,7 +3314,7 @@ the wavefunctions:</p>
 denotes the MPI rank).</p>
 <p>By virtue of the particular distribution adopted, the computation of the
 correlation part is expected to scale well with the number CPUs. The maximum
-number of processors that can be used is limited by <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>. Note, however,
+number of processors that can be used is limited by <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>. Note, however,
 that only a subset of processors will receive the occupied states when the
 bands are distributed in step 2. As a consequence, the theoretical maximum
 speedup that can be obtained in the exchange part is limited by the
@@ -3341,7 +3346,7 @@ all the q-points and frequencies in order to optimize the computation. In the
 case of large matrices, however, it possible to opt for an out-of-core
 solution in which only a single q-point is stored in memory and the data is
 read from the external SCR file (slower but less memory demanding). This
-option is controlled by the first digit of <a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>.</p>
+option is controlled by the first digit of <a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>.</p>
 <p>Now that we know how distribute the load efficiently, we can finally run the
 calculation using</p>
 <div class="codehilite"><pre><span></span>(mpirun ...) abinit &lt; tmbt_4.files &gt;&amp; tmbt_4.log &amp;
@@ -3371,7 +3376,7 @@ this tutorial).</p>
 </li>
 <li>
 <p>Do one thing and do it well: <br />
-Avoid using different values of <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a> in the same input file. Each
+Avoid using different values of <a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a> in the same input file. Each
 runlevel employs different approaches to distribute memory and CPU time, hence
 it is almost impossible to find the number of processors that will produce a
 balanced run in each dataset.</p>
@@ -3381,13 +3386,13 @@ balanced run in each dataset.</p>
 Convergence studies should be executed in parallel only when the parameters
 that are tested do not interfere with the MPI algorithm. For example, the
 convergence study in the number of bands in the screening should be done in
-separated input files when <a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>=2 is used.</p>
+separated input files when <a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>=2 is used.</p>
 </li>
 <li>
 <p>Less is more: <br />
 Split big calculations into smaller runs whenever possible. For example,
 screening calculations can be split over q-points. The calculation of the
-self-energy can be easily split over <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>.</p>
+self-energy can be easily split over <a class="wikilink codevar-link" href="../../input_variables/gw#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a>.</p>
 </li>
 <li>
 <p>Look before you leap: <br />
@@ -3558,7 +3563,7 @@ calculation with converged parameters.</p>
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (MG, MS)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 

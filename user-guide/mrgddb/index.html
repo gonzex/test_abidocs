@@ -2867,7 +2867,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, DCA
+    -   - rpath
+        - user-guide/mrgddb.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -2897,13 +2902,13 @@ if they are produced independently on different machines.</p>
 <p>The DDBs are made of two parts. The first part is a list of the parameters
 that were used to make the DDB, and the second part lists the 2DTEs and 3DTEs.
 The merging code will check if the following variables are exactly the same in
-the different input DDB : natom, <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#acell">acell</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx/#amu">amu</a>,
-<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>, lloc, <a class="wikilink codevar-link" href="../../input_variables/gstate/#ngfft">ngfft</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate/#occ">occ</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic/#xred">xred</a>,
-zion. For <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate/#occ">occ</a>, the value of <a class="wikilink codevar-link" href="../../input_variables/basic/#occopt">occopt</a> is taken into account
+the different input DDB : natom, <a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#acell">acell</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#amu">amu</a>,
+<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>, lloc, <a class="wikilink codevar-link" href="../../input_variables/gstate#ngfft">ngfft</a>, <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#rprim">rprim</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a>, <a class="wikilink codevar-link" href="../../input_variables/basic#xred">xred</a>,
+zion. For <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a> and <a class="wikilink codevar-link" href="../../input_variables/gstate#occ">occ</a>, the value of <a class="wikilink codevar-link" href="../../input_variables/basic#occopt">occopt</a> is taken into account
 (see abinit help file). If possible, MRGDDB will produce a DDB with occopt=0.
 In case of two different data sets, the code will print an error message and
 stop. The code cannot merge two DDB that have been generated using two
-different geometries or convergence (<a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>, &hellip;) parameters. The only
+different geometries or convergence (<a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, &hellip;) parameters. The only
 exception is connected to the possibility to use Time-reversal symmetry to
 decrease the number of special k points when the wavevector of the
 perturbation is Gamma. In that case, the code will merge the DDBs and put the
@@ -3079,7 +3084,7 @@ provided at the end of the DDB file.</p>
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (XG, DCA)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 

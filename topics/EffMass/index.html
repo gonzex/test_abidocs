@@ -2864,12 +2864,12 @@ Change the input yaml files or the python code
 <a class="wikilink topic-link" data-content="How to generically perform DFPT calculations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/DFPT">topic_DFPT</a> has been implemented within the linear response part of ABINIT
 <a class="wikilink citation-link" data-content="Precise Effective Masses from Density Functional Perturbation Theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#laflamme2016">[Laflamme2016]</a>. This method avoids the use of finite differences to estimate
 these masses, which eliminates the associated numerical noise and convergence
-study. To compute the effective masses, one has to set the keyword <a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas">efmas</a>
+study. To compute the effective masses, one has to set the keyword <a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas">efmas</a>
 to 1 within a calculation of the derivative of ground-state wavefunctions with
-respect to wavevector (<a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfelfd">rfelfd</a> = 1 or 2). The effective masses will then be
+respect to wavevector (<a class="wikilink codevar-link" href="../../input_variables/dfpt#rfelfd">rfelfd</a> = 1 or 2). The effective masses will then be
 computed for all k-points and bands present in the calculation. One can
 optionally specify the range of bands to be treated for each k-point with the
-keyword <a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_bands">efmas_bands</a>.</p>
+keyword <a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_bands">efmas_bands</a>.</p>
 <p>An additional feature of the effective mass implementation is the correct
 treatment of degenerate bands. Indeed, the concept of effective mass breaks
 down at degenerate band extrema since it is no longer possible to describe
@@ -2880,7 +2880,7 @@ provide the user with effective mass tensors which, while not describing the
 band curvature, describe accurately the contribution of the individual bands
 to transport properties.</p>
 <p>The implementation supports both NCPP and PAW schemes.</p>
-<p>Spin-polarized systems (<a class="wikilink codevar-link" href="../../input_variables/gstate/#nspden">nspden</a> = 2) as well as spinors (<a class="wikilink codevar-link" href="../../input_variables/gstate/#nspinor">nspinor</a> = 2)
+<p>Spin-polarized systems (<a class="wikilink codevar-link" href="../../input_variables/gstate#nspden">nspden</a> = 2) as well as spinors (<a class="wikilink codevar-link" href="../../input_variables/gstate#nspinor">nspinor</a> = 2)
 can be treated, although the spin-orbit interaction can only be treated in the
 PAW case.</p>
 <p>The treatment of degenerescences is limited to the extremal points of the band
@@ -2890,22 +2890,22 @@ printed during a d/dk calculation, and corresponds to the electronic velocity.</
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_dirs">efmas_dirs</a>  EFfective MASs, DIRectionS to be calculated</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_n_dirs">efmas_n_dirs</a>  EFfective MASs, Number of DIRectionS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_ntheta">efmas_ntheta</a>  EFfective MASs, Number of points for integration w/r to THETA</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_dirs">efmas_dirs</a>  EFfective MASs, DIRectionS to be calculated</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_n_dirs">efmas_n_dirs</a>  EFfective MASs, Number of DIRectionS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_ntheta">efmas_ntheta</a>  EFfective MASs, Number of points for integration w/r to THETA</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas">efmas</a>  EFfective MASs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfelfd">rfelfd</a>  Response Function with respect to the ELectric FielD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas">efmas</a>  EFfective MASs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#rfelfd">rfelfd</a>  Response Function with respect to the ELectric FielD</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_bands">efmas_bands</a>  EFfective MASs, BANDS to be treated.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_calc_dirs">efmas_calc_dirs</a>  EFfective MASs, CALCulate along DIRectionS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_deg">efmas_deg</a>  EFfective MASs, activate DEGenerate formalism</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_deg_tol">efmas_deg_tol</a>  EFfective MASs, DEGeneracy TOLerance</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dfpt/#efmas_dim">efmas_dim</a>  EFfective MASs, DIMension of the effective mass tensor</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_bands">efmas_bands</a>  EFfective MASs, BANDS to be treated.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_calc_dirs">efmas_calc_dirs</a>  EFfective MASs, CALCulate along DIRectionS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_deg">efmas_deg</a>  EFfective MASs, activate DEGenerate formalism</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_deg_tol">efmas_deg_tol</a>  EFfective MASs, DEGeneracy TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dfpt#efmas_dim">efmas_dim</a>  EFfective MASs, DIMension of the effective mass tensor</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>

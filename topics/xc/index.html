@@ -2931,15 +2931,15 @@ Change the input yaml files or the python code
 <p>Total energy computation in ABINIT is done according to Density Functional
 Theory (DFT). Although formally exact, an approximate exchange-correlation
 (XC) functional must be chosen. This is governed by the input variable
-<a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>.<br />
+<a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>.<br />
 However, the pseudopotentials (or PAW data sets) are constructed for one
-specific XC functional. If <a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a> is not specified, ABINIT will simply take
-the <a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a> of the given pseudopoential(s) - hoping they are coherent with
+specific XC functional. If <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a> is not specified, ABINIT will simply take
+the <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a> of the given pseudopoential(s) - hoping they are coherent with
 each others. One introduces an error by using a pseudopotential generated with
 an XC functional that is not the same as the one explicitly specified by
-<a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>. However, ABINIT will nevertheless do the calculation.</p>
+<a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>. However, ABINIT will nevertheless do the calculation.</p>
 <p>Many exchange-correlation functionals are available (see the list in the
-description of <a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>), through two different implementations : one is the
+description of <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>), through two different implementations : one is the
 native ABINIT implementation, the other is the ETSF library of XC functionals
 (LibXC is a plug-in to ABINIT). In the native ABINIT set, most of the
 important local approximations (LDA) are available, including the Perdew-
@@ -2962,37 +2962,37 @@ exact exchange, correlation and hybrid does not deliver the forces and
 stresses at present, at the exception of forces with norm-conserving
 pseudopotentials.</p>
 <h4 id="local-exact-exchange"><strong>Local exact exchange:</strong><a class="headerlink" href="#local-exact-exchange" title="Permanent link">&para;</a></h4>
-<p>When <a class="wikilink codevar-link" href="../../input_variables/paw/#useexexch">useexexch</a>=1, the hybrid functional PBE0 is used in PAW, inside PAW
-spheres only, and only for correlated orbitals given by <a class="wikilink codevar-link" href="../../input_variables/paw/#lexexch">lexexch</a>. To change
-the ratio of exact exchange, see also <a class="wikilink codevar-link" href="../../input_variables/dev/#exchmix">exchmix</a>. The implementation of local
+<p>When <a class="wikilink codevar-link" href="../../input_variables/paw#useexexch">useexexch</a>=1, the hybrid functional PBE0 is used in PAW, inside PAW
+spheres only, and only for correlated orbitals given by <a class="wikilink codevar-link" href="../../input_variables/paw#lexexch">lexexch</a>. To change
+the ratio of exact exchange, see also <a class="wikilink codevar-link" href="../../input_variables/dev#exchmix">exchmix</a>. The implementation of local
 exact exchange in ABINIT is provided in <a class="wikilink citation-link" data-content="Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#jollet2009">[Jollet2009]</a>. See useful input
-variables <a class="wikilink codevar-link" href="../../input_variables/dev/#exchmix">exchmix</a>, <a class="wikilink codevar-link" href="../../input_variables/paw/#lexexch">lexexch</a> and <a class="wikilink codevar-link" href="../../input_variables/paw/#useexexch">useexexch</a>.  </p>
+variables <a class="wikilink codevar-link" href="../../input_variables/dev#exchmix">exchmix</a>, <a class="wikilink codevar-link" href="../../input_variables/paw#lexexch">lexexch</a> and <a class="wikilink codevar-link" href="../../input_variables/paw#useexexch">useexexch</a>.  </p>
 <h4 id="van-der-waals-functionals"><strong>Van der Waals functionals:</strong><a class="headerlink" href="#van-der-waals-functionals" title="Permanent link">&para;</a></h4>
 <p>Several <a href="../topic_vdw.html">Van der Waals functionals</a> are available : Grimme
 (D2, D3, D3(Becke-Johnson)), Silvestrelli.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ixc">ixc</a>  Index of eXchange-Correlation functional</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>  Index of eXchange-Correlation functional</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#densty">densty</a>  initial DENSity for each TYpe of atom</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#intxc">intxc</a>  INTerpolation for eXchange-Correlation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#optnlxccc">optnlxccc</a>  OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#usekden">usekden</a>  USE Kinetic energy DENsity</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#xc_denpos">xc_denpos</a>  eXchange-Correlation - DENsity POSitivity value</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#xc_tb09_c">xc_tb09_c</a>  Value of the c parameter in the eXchange-Correlation TB09 functional</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#densty">densty</a>  initial DENSity for each TYpe of atom</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#intxc">intxc</a>  INTerpolation for eXchange-Correlation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#optnlxccc">optnlxccc</a>  OPTion for the calculation of Non-Linear eXchange-Correlation Core Correction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#usekden">usekden</a>  USE Kinetic energy DENsity</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#xc_denpos">xc_denpos</a>  eXchange-Correlation - DENsity POSitivity value</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#xc_tb09_c">xc_tb09_c</a>  Value of the c parameter in the eXchange-Correlation TB09 functional</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal/#xclevel">%xclevel</a>  eXchange Correlation functional LEVEL</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#xclevel">%xclevel</a>  eXchange Correlation functional LEVEL</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#exchmix">exchmix</a>  EXCHange MIXing</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#lexexch">lexexch</a>  value of angular momentum L for EXact EXCHange</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#useexexch">useexexch</a>  USE of EXact EXCHange</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#exchmix">exchmix</a>  EXCHange MIXing</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#lexexch">lexexch</a>  value of angular momentum L for EXact EXCHange</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#useexexch">useexexch</a>  USE of EXact EXCHange</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v1:</em></p>

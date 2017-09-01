@@ -2883,12 +2883,12 @@ order to mimic the vdW interactions. The implementation includes the
 contributions of these methods to forces and stresses, in view of geometry
 optimization, as well as to first-order response functions like dynamical
 matrices, clamped elastic constants and internal strain coupling parameters.</p>
-<p>To activate DFT-D dispersion correction, two keywords are in use: <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a> =
-&#8538;/7 to choose between DFT-D2, DFT-D3 and DFT-D3(BJ), and <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>, to
+<p>To activate DFT-D dispersion correction, two keywords are in use: <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_xc">vdw_xc</a> =
+&#8538;/7 to choose between DFT-D2, DFT-D3 and DFT-D3(BJ), and <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_tol">vdw_tol</a>, to
 control the inclusion of largely distant pairs (those giving a contribution
-below <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a> are ignored). It is also possible to include 3-body
+below <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_tol">vdw_tol</a> are ignored). It is also possible to include 3-body
 corrections <a class="wikilink citation-link" data-content="A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#grimme2010">[Grimme2010]</a> (for ground-state only) with the keyword
-<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>, which also controls the tolerance over this term.</p>
+<a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_tol_3bt">vdw_tol_3bt</a>, which also controls the tolerance over this term.</p>
 <p>Methods based on maximally localized Wannier functions (MLWFs) to calculate
 vdW energy corrections have also been implemented in ABINIT. In this case the
 pair-wise terms come from contributions of pairs of MLWFs rather than from
@@ -2896,18 +2896,18 @@ atoms. Among the implemented methods in ABINIT it is found vdW-WF1
 <a class="wikilink citation-link" data-content="van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2008">[Silvestrelli2008]</a>,<a class="wikilink citation-link" data-content="van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2009">[Silvestrelli2009]</a> vdW-WF2 <a class="wikilink citation-link" data-content="van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#ambrosetti2012">[Ambrosetti2012]</a> and vdW-
 QHO-WF <a class="wikilink citation-link" data-content="van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#silvestrelli2013">[Silvestrelli2013]</a>. A full description of the implementation of vdW-
 WF1 is reported in <a class="wikilink citation-link" data-content="Wannier functions approach to van der Waals interactions in {ABINIT}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#espejo2012">[Espejo2012]</a>.</p>
-<p>Selection of one of these 3 methods is achieved by using <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>=10/11/14
+<p>Selection of one of these 3 methods is achieved by using <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_xc">vdw_xc</a>=10/11/14
 respectivelly. Since vdW-WF1 and vdW-WF2 methods are approximations for the
 dispersion energy of non overlapping electronic densities, it is necessary to
 define the interacting fragments of the system whose dispersion energy is
 going to be calculated. The latter is achieved by using the input variables
-<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a> and <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a> to define the number of interacting
+<a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_nfrag">vdw_nfrag</a> and <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_typfrag">vdw_typfrag</a> to define the number of interacting
 fragments in the unit cell and to assign each atom to a fragment. A given MLWF
 belongs to the same fragment as its closer atom. The need for defining the
 interacting fragments is overridden in the vdW-QHO-WF, for which these input
 variables are not used. When dealing with periodic systems the input variable
-<a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a> controls the number of neighbor unit cells that will be
-included in the calculation. Each one of the 3 components of <a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>
+<a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_supercell">vdw_supercell</a> controls the number of neighbor unit cells that will be
+included in the calculation. Each one of the 3 components of <a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_supercell">vdw_supercell</a>
 indicates the maximum number of cells along both positive or negative
 directions of the corresponding primitive vector. This is useful for studying
 the spacial convergency of the vdW energy. It should be noticed that the user
@@ -2916,47 +2916,47 @@ resulting vdW energies strongly depend on the obtained Wannier functions.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_nfrag">vdw_nfrag</a>  Van Der Waals Number of interacting FRAGments</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_supercell">vdw_supercell</a>  Van Der Waals correction from Wannier functions in SUPERCELL</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol_3bt">vdw_tol_3bt</a>  Van Der Waals TOLerance for 3-Body Term</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_typfrag">vdw_typfrag</a>  Van Der Waals TYPe of FRAGment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_nfrag">vdw_nfrag</a>  Van Der Waals Number of interacting FRAGments</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_supercell">vdw_supercell</a>  Van Der Waals correction from Wannier functions in SUPERCELL</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_tol_3bt">vdw_tol_3bt</a>  Van Der Waals TOLerance for 3-Body Term</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_typfrag">vdw_typfrag</a>  Van Der Waals TYPe of FRAGment</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_tol">vdw_tol</a>  Van Der Waals TOLerance</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_xc">vdw_xc</a>  Van Der Waals eXchange-Correlation functional</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_tol">vdw_tol</a>  Van Der Waals TOLerance</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_xc">vdw_xc</a>  Van Der Waals eXchange-Correlation functional</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_acutmin">vdw_df_acutmin</a>  vdW-DF MINimum Angular CUT-off</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_aratio">vdw_df_aratio</a>  vdW-DF Angle RATIO between the highest and
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_acutmin">vdw_df_acutmin</a>  vdW-DF MINimum Angular CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_aratio">vdw_df_aratio</a>  vdW-DF Angle RATIO between the highest and
 lowest angles.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_damax">vdw_df_damax</a>  vdW-DF Delta for Angles, MAXimum </li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_damin">vdw_df_damin</a>  vdW-DF Delta for Angles, MINimum</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dcut">vdw_df_dcut</a>  vdW-DF D-mesh CUT-off</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dratio">vdw_df_dratio</a>  vdW-DF, between the highest and
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_damax">vdw_df_damax</a>  vdW-DF Delta for Angles, MAXimum </li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_damin">vdw_df_damin</a>  vdW-DF Delta for Angles, MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_dcut">vdw_df_dcut</a>  vdW-DF D-mesh CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_dratio">vdw_df_dratio</a>  vdW-DF, between the highest and
 lowest D, RATIO.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_dsoft">vdw_df_dsoft</a>  vdW-DF Distance for SOFTening.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_gcut">vdw_df_gcut</a>  vdW-DF G-space CUT-off</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_ndpts">vdw_df_ndpts</a>  vdW-DF Number of D-mesh PoinTS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_ngpts">vdw_df_ngpts</a>  vdW-DF Number of G-mesh PoinTS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nqpts">vdw_df_nqpts</a>  vdW-DF Number of Q-mesh PoinTS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nrpts">vdw_df_nrpts</a>  vdW-DF Number of R-PoinTS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_nsmooth">vdw_df_nsmooth</a>  vdW-DF Number of SMOOTHening iterations</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_phisoft">vdw_df_phisoft</a>  vdW-DF PHI value SOFTening.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_qcut">vdw_df_qcut</a>  vdW-DF Q-mesh CUT-off</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_qratio">vdw_df_qratio</a>  vdW-DF, between highest and lowest Q, RATIO .</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_rcut">vdw_df_rcut</a>  vdW-DF Real-space CUT-off</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_rsoft">vdw_df_rsoft</a>  vdW-DF radius SOFTening.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_threshold">vdw_df_threshold</a>  vdW-DF energy calculation THRESHOLD</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_tolerance">vdw_df_tolerance</a>  vdW-DF global TOLERANCE.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_tweaks">vdw_df_tweaks</a>  vdW-DF TWEAKS.</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#vdw_df_zab">vdw_df_zab</a>  vdW-DF ZAB parameter</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_dsoft">vdw_df_dsoft</a>  vdW-DF Distance for SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_gcut">vdw_df_gcut</a>  vdW-DF G-space CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_ndpts">vdw_df_ndpts</a>  vdW-DF Number of D-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_ngpts">vdw_df_ngpts</a>  vdW-DF Number of G-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_nqpts">vdw_df_nqpts</a>  vdW-DF Number of Q-mesh PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_nrpts">vdw_df_nrpts</a>  vdW-DF Number of R-PoinTS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_nsmooth">vdw_df_nsmooth</a>  vdW-DF Number of SMOOTHening iterations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_phisoft">vdw_df_phisoft</a>  vdW-DF PHI value SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_qcut">vdw_df_qcut</a>  vdW-DF Q-mesh CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_qratio">vdw_df_qratio</a>  vdW-DF, between highest and lowest Q, RATIO .</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_rcut">vdw_df_rcut</a>  vdW-DF Real-space CUT-off</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_rsoft">vdw_df_rsoft</a>  vdW-DF radius SOFTening.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_threshold">vdw_df_threshold</a>  vdW-DF energy calculation THRESHOLD</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_tolerance">vdw_df_tolerance</a>  vdW-DF global TOLERANCE.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_tweaks">vdw_df_tweaks</a>  vdW-DF TWEAKS.</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#vdw_df_zab">vdw_df_zab</a>  vdW-DF ZAB parameter</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/vdw/#irdvdw">irdvdw</a>  Integer that governs the ReaDing of _VDW files</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#prtwf">prtwf</a>  PRinT the WaveFunction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/vdw#irdvdw">irdvdw</a>  Integer that governs the ReaDing of _VDW files</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#prtwf">prtwf</a>  PRinT the WaveFunction</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>

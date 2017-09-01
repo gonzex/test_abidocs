@@ -2886,7 +2886,7 @@ function Γ(1,2,3) describes the interactions between virtual holes and
 electrons.</p>
 <p>A typical self-energy calculation combines a quasi-particle band structure
 with a screened interaction and possibly a vertex correction to the QP
-corrections (<a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=4).</p>
+corrections (<a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>=4).</p>
 <p>In the frequency domain, the GW self-energy Σ(ω) can be evaluated in ABINIT
 with two different, more effective, techniques:</p>
 <ul>
@@ -2899,18 +2899,18 @@ analytically.</p>
 <p>In the latter approach, the integral is evaluated numerically extending the
 functions in the complex plane in order have a smoother integrand.</p>
 <p>Four different plasmon pole models (PPMs) are available in ABINIT. The choice
-of the particular PPM to be used is controlled by the variable <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>.
-The first two options (<a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>=1,2) refer to approximations employed in
+of the particular PPM to be used is controlled by the variable <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>.
+The first two options (<a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=1,2) refer to approximations employed in
 the pioneering implementations of the GW formalism: the plasmon-pole models of
 Godby-Needs <a class="wikilink citation-link" data-content="Metal-insulator transition in Kohn-Sham theory and quasiparticle theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#godby1989">[Godby1989]</a> (GN) and Hybertsen and Louie <a class="wikilink citation-link" data-content="Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#hybertsen1986">[Hybertsen1986]</a> (HL).</p>
 <p>The contour deformation technique is activated by setting the input variable
-<a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a> to 2. The integration along the imaginary axis requires the
+<a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a> to 2. The integration along the imaginary axis requires the
 calculation of ε-1(ω) for purely imaginary frequencies. The frequency mesh for
-the quadrature is governed by the input variable <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqim">nfreqim</a>, and can be very
+the quadrature is governed by the input variable <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqim">nfreqim</a>, and can be very
 coarse since the integrands is very smooth in this region.</p>
 <p>The evaluation of the residue of the poles requires the calculation of ε-1(ω)
 on a fine mesh along the real axis. This regular mesh, sampling the interval
-[0,+∞], is defined by the two input variables <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqre">nfreqre</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#freqremax">freqremax</a>.</p>
+[0,+∞], is defined by the two input variables <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqre">nfreqre</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#freqremax">freqremax</a>.</p>
 <p>The CD approach requires many evaluations of ε-1(ω) and can therefore be
 computationally highly demanding. On the other hand, it is the preferred
 approach for calculating the QP correction of low-lying states. Moreover, it
@@ -2928,66 +2928,66 @@ axes are described in <a class="wikilink topic-link" data-content="How to define
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a>  BanDs for GW calculation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#freqspmax">freqspmax</a>  FREQuencies for the SPectral function MAXimum</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#freqspmin">freqspmin</a>  FREQuencies for the SPectral function MINimum</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a>  GW CALCulation TYPe</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paral/#gwpara">gwpara</a>  GW PARAllelization level</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a>  K-PoinTs for GW calculations</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqsp">nfreqsp</a>  Number of FREQuencies for the SPectral function</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#nkptgw">nkptgw</a>  Number of K-PoinTs for GW corrections</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasi">nomegasi</a>  Number of OMEGA(S) along the Imaginary axis</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#omegasimax">omegasimax</a>  OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#omegasrdmax">omegasrdmax</a>  OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>  Plasmon Pole Model FReQuency</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>  Plasmon Pole MODEL</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a>  BanDs for GW calculation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#freqspmax">freqspmax</a>  FREQuencies for the SPectral function MAXimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#freqspmin">freqspmin</a>  FREQuencies for the SPectral function MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a>  GW CALCulation TYPe</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paral#gwpara">gwpara</a>  GW PARAllelization level</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#kptgw">kptgw</a>  K-PoinTs for GW calculations</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nfreqsp">nfreqsp</a>  Number of FREQuencies for the SPectral function</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nkptgw">nkptgw</a>  Number of K-PoinTs for GW corrections</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nomegasi">nomegasi</a>  Number of OMEGA(S) along the Imaginary axis</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#omegasimax">omegasimax</a>  OMEGA to evaluate Sigma along the Imaginary axis D: MAXimal value</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#omegasrdmax">omegasrdmax</a>  OMEGA to evaluate the Sigma Real axis Derivative : MAXimal value</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ppmfrq">ppmfrq</a>  Plasmon Pole Model FReQuency</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>  Plasmon Pole MODEL</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>  Energy CUT-off for SIGma eXchange</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>  Energy CUT-off for WaveFunctioNs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecutsigx">ecutsigx</a>  Energy CUT-off for SIGma eXchange</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a>  Energy CUT-off for WaveFunctioNs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#einterp">einterp</a>  Electron bands INTERPolation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#fftgw">fftgw</a>  FFT for GW calculation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#freqim_alpha">freqim_alpha</a>  FREQuencies along the IMaginary axis ALPHA parameter</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gw_invalid_freq">gw_invalid_freq</a>  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gw_nqlwl">gw_nqlwl</a>  GW, Number of Q-points for the Long Wave-Length Limit</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gw_qlwl">gw_qlwl</a>  GW, Q-points for the Long Wave-Length limit</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gw_sigxcore">gw_sigxcore</a>  GW, SIGma (self-energy) for the CORE contribution</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gwgamma">gwgamma</a>  GW GAMMA</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>  GW MEMory</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#kssform">kssform</a>  Kohn Sham Structure file FORMat</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#npwkss">npwkss</a>  Number of PlaneWaves in the KSS file</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#pawoptosc">pawoptosc</a>  PAW - OPTion for the computation of the OSCillator matrix elements</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#symsigma">symsigma</a>  SYMmetrization of SIGMA matrix elements</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#zcut">zcut</a>  Z-CUT</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#einterp">einterp</a>  Electron bands INTERPolation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#fftgw">fftgw</a>  FFT for GW calculation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#freqim_alpha">freqim_alpha</a>  FREQuencies along the IMaginary axis ALPHA parameter</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_invalid_freq">gw_invalid_freq</a>  GW treatment of INVALID FREQuency for Hybertsen-Louie PPM</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_nqlwl">gw_nqlwl</a>  GW, Number of Q-points for the Long Wave-Length Limit</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_qlwl">gw_qlwl</a>  GW, Q-points for the Long Wave-Length limit</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_sigxcore">gw_sigxcore</a>  GW, SIGma (self-energy) for the CORE contribution</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwgamma">gwgamma</a>  GW GAMMA</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>  GW MEMory</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#kssform">kssform</a>  Kohn Sham Structure file FORMat</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#npwkss">npwkss</a>  Number of PlaneWaves in the KSS file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawoptosc">pawoptosc</a>  PAW - OPTion for the computation of the OSCillator matrix elements</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#symsigma">symsigma</a>  SYMmetrization of SIGMA matrix elements</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a>  Z-CUT</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal/#npwsigx">%npwsigx</a>  Number of PlaneWaves for SIGma eXchange</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal/#npwwfn">%npwwfn</a>  Number of PlaneWaves for WaveFunctioNs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#npwsigx">%npwsigx</a>  Number of PlaneWaves for SIGma eXchange</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#npwwfn">%npwwfn</a>  Number of PlaneWaves for WaveFunctioNs</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#getqps">getqps</a>  GET QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#getscr">getscr</a>  GET SCReening (the inverse dielectric matrix) from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#getsuscep">getsuscep</a>  GET SUSCEPtibility (the irreducible polarizability) from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gw_qprange">gw_qprange</a>  GW QuasiParticle RANGE policy</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gwcomp">gwcomp</a>  GW COMPleteness</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#gwencomp">gwencomp</a>  GW ENergy for COMPleteness</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#irdscr">irdscr</a>  Integer that governs the ReaDing of the SCReening</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/files/#irdsuscep">irdsuscep</a>  Integer that governs the ReaDing of the SUSCEPtibility</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#mbpt_sciss">mbpt_sciss</a>  Many Body Perturbation Theory SCISSor operator</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#nbandkss">nbandkss</a>  Number of BANDs in the KSS file</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasrd">nomegasrd</a>  Number of OMEGA to evaluate the Sigma Real axis Derivative</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#usepawu">usepawu</a>  USE PAW+U (spherical part)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#getqps">getqps</a>  GET QuasiParticle Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#getscr">getscr</a>  GET SCReening (the inverse dielectric matrix) from &hellip;</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#getsuscep">getsuscep</a>  GET SUSCEPtibility (the irreducible polarizability) from &hellip;</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gw_qprange">gw_qprange</a>  GW QuasiParticle RANGE policy</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwcomp">gwcomp</a>  GW COMPleteness</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#gwencomp">gwencomp</a>  GW ENergy for COMPleteness</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#irdscr">irdscr</a>  Integer that governs the ReaDing of the SCReening</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/files#irdsuscep">irdsuscep</a>  Integer that governs the ReaDing of the SUSCEPtibility</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#mbpt_sciss">mbpt_sciss</a>  Many Body Perturbation Theory SCISSor operator</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nbandkss">nbandkss</a>  Number of BANDs in the KSS file</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gw#nomegasrd">nomegasrd</a>  Number of OMEGA to evaluate the Sigma Real axis Derivative</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#usepawu">usepawu</a>  USE PAW+U (spherical part)</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p>No input file associated to this topic.</p>

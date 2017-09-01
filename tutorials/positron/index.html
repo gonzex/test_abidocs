@@ -2909,7 +2909,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - JW, MT
+    -   - rpath
+        - tutorials/positron.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -2961,11 +2966,11 @@ the system. You can see that in this case we set:</p>
 </pre></div>
 
 
-<p>Here we set <a class="wikilink codevar-link" href="../../input_variables/gstate/#positron">positron</a>=1, which corresponds to a positronic ground-state
+<p>Here we set <a class="wikilink codevar-link" href="../../input_variables/gstate#positron">positron</a>=1, which corresponds to a positronic ground-state
 calculation, considering that the electrons are not perturbed by the presence
 of the positron. The electron density is read from the file resulting from
 dataset 1. As we consider the positron to be completely delocalized, we only
-consider the Γ point. The keyword <a class="wikilink codevar-link" href="../../input_variables/gstate/#ixcpositron">ixcpositron</a> selects the electron-
+consider the Γ point. The keyword <a class="wikilink codevar-link" href="../../input_variables/gstate#ixcpositron">ixcpositron</a> selects the electron-
 positron correlation functional and enhancement factor. In this calculation we
 use the functional parametrized by Boronski and Nieminen [Phys. Rev. B 34,
 3820 (1986)], using the data provided by Arponen and Pajanne [J. Phys. F 9,
@@ -2996,13 +3001,13 @@ calculated in the RPA limit:</p>
 the same number of valence electrons in [Phys. Rev. B 92, 125113 (2015)] and
 with the experimental value of about 219 ps [Phys. Rev. B 56, 7356 (1997)].</p>
 <p>_ Note: if we had not used the &ldquo;zero positron density limit&rdquo; approximation
-(using, for example, another value of <a class="wikilink codevar-link" href="../../input_variables/gstate/#ixcpositron">ixcpositron</a>), we would theoretically
+(using, for example, another value of <a class="wikilink codevar-link" href="../../input_variables/gstate#ixcpositron">ixcpositron</a>), we would theoretically
 have needed a box of infinite size for the positron to completely delocalise
-itself in the crystal. This can be avoided by the use of the <a class="wikilink codevar-link" href="../../input_variables/gstate/#posocc">posocc</a> input
+itself in the crystal. This can be avoided by the use of the <a class="wikilink codevar-link" href="../../input_variables/gstate#posocc">posocc</a> input
 parameter. Numerically, it is equivalent to calculate the density of 1
 positron in a box of size N and that of x positron in a box of size N * x.
 Thus, we can calculate the lifetime of a positron in a primitive cell by
-setting <a class="wikilink codevar-link" href="../../input_variables/gstate/#posocc">posocc</a> to a small value (0.0001 &hellip;). This value must obviously be
+setting <a class="wikilink codevar-link" href="../../input_variables/gstate#posocc">posocc</a> to a small value (0.0001 &hellip;). This value must obviously be
 tested &hellip; _</p>
 <h2 id="2-computing-the-positron-lifetime-in-a-si-monovacancy">2 Computing the positron lifetime in a Si monovacancy<a class="headerlink" href="#2-computing-the-positron-lifetime-in-a-si-monovacancy" title="Permanent link">&para;</a></h2>
 <p>We will now perform a positron lifetime calculation for a monovacancy in
@@ -3054,11 +3059,11 @@ densities. As this calculation will take a few minutes, you can already issue
 <p>This calculation is significantly longer than the previous one, because the
 electron and positron steps will be repeated until the convergence criterion
 is reached. In tpositron_3.in we only have one dataset and we set
-<a class="wikilink codevar-link" href="../../input_variables/gstate/#positron">positron</a>=-10 to perform an automatic calculation of electrons and positron
-densities. The convergence is controlled by <a class="wikilink codevar-link" href="../../input_variables/gstate/#postoldfe">postoldfe</a>=1d-5. This means
+<a class="wikilink codevar-link" href="../../input_variables/gstate#positron">positron</a>=-10 to perform an automatic calculation of electrons and positron
+densities. The convergence is controlled by <a class="wikilink codevar-link" href="../../input_variables/gstate#postoldfe">postoldfe</a>=1d-5. This means
 that we will repeat the electron and positron steps until the energy
 difference between them is lower than 1d-5 Ha. This value should always be
-larger than <a class="wikilink codevar-link" href="../../input_variables/basic/#toldfe">toldfe</a>. In this calculation we still use <a class="wikilink codevar-link" href="../../input_variables/gstate/#ixcpositron">ixcpositron</a>=1,
+larger than <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a>. In this calculation we still use <a class="wikilink codevar-link" href="../../input_variables/gstate#ixcpositron">ixcpositron</a>=1,
 which means that we are using the GGGC scheme (see [Phys. Rev. Lett. 72, 3214
 (1994)] and [Phys. Rev. B 92, 125113 (2015)].</p>
 <p>Once the calculation is finished, look at the positron lifetime in
@@ -3088,9 +3093,9 @@ the relaxation of the vacancy by issuing:<br />
 
 
 <p>In this calculation we switched on the atomic relaxation by setting
-<a class="wikilink codevar-link" href="../../input_variables/rlx/#ionmov">ionmov</a>=2. We need to calculate forces to be able to move the atoms, so we
-set <a class="wikilink codevar-link" href="../../input_variables/dev/#optforces">optforces</a>=1. In the provided tpositron_4.in file, We only perform 4
-relaxation steps (<a class="wikilink codevar-link" href="../../input_variables/rlx/#ntime">ntime</a>=4) to save time, but more steps would be needed to
+<a class="wikilink codevar-link" href="../../input_variables/rlx#ionmov">ionmov</a>=2. We need to calculate forces to be able to move the atoms, so we
+set <a class="wikilink codevar-link" href="../../input_variables/dev#optforces">optforces</a>=1. In the provided tpositron_4.in file, We only perform 4
+relaxation steps (<a class="wikilink codevar-link" href="../../input_variables/rlx#ntime">ntime</a>=4) to save time, but more steps would be needed to
 converge the positron lifetime.</p>
 <p>Look at the positron lifetime in the RPA limit after each ionic step:</p>
 <div class="codehilite"><pre><span></span> Positron lifetime                         (ps)   =  2.55617112E+02
@@ -3102,7 +3107,7 @@ converge the positron lifetime.</p>
 
 <p>As the vacancy relaxes outwards, the positron lifetime increases. 4 steps were
 not enough to relax the defect completely, as the lifetime still changes.
-Indeed, setting <a class="wikilink codevar-link" href="../../input_variables/rlx/#ntime">ntime</a> to 10 delivers:</p>
+Indeed, setting <a class="wikilink codevar-link" href="../../input_variables/rlx#ntime">ntime</a> to 10 delivers:</p>
 <div class="codehilite"><pre><span></span>Positron lifetime                         (ps)   =  2.55617112E+02
 Positron lifetime                         (ps)   =  2.56981106E+02
 Positron lifetime                         (ps)   =  2.81986782E+02
@@ -3134,11 +3139,11 @@ wavefunctions and not densities.</p>
 
 
 <p>Now take a look at the input file tpositron_5.in. The momentum distribution
-calculation is activated by <a class="wikilink codevar-link" href="../../input_variables/gstate/#posdoppler">posdoppler</a>=1. You can also notice that instead
+calculation is activated by <a class="wikilink codevar-link" href="../../input_variables/gstate#posdoppler">posdoppler</a>=1. You can also notice that instead
 of having two datasets as in the first part of this tutorial, we now use the
-automatic electron-positron loop and set <a class="wikilink codevar-link" href="../../input_variables/gstate/#posnstep">posnstep</a>=2. This is done because
+automatic electron-positron loop and set <a class="wikilink codevar-link" href="../../input_variables/gstate#posnstep">posnstep</a>=2. This is done because
 we need to have the full electron and positron wavefunctions in memory, which
-is only the case when <a class="wikilink codevar-link" href="../../input_variables/gstate/#positron">positron</a>&lt;=-10. Additionally, the momentum
+is only the case when <a class="wikilink codevar-link" href="../../input_variables/gstate#positron">positron</a>&lt;=-10. Additionally, the momentum
 distribution calculations require using a full k-point grid. In the input file
 we set:</p>
 <div class="codehilite"><pre><span></span>    kptopt 0
@@ -3397,7 +3402,7 @@ PAW datasets</a>.</p>
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (JW, MT)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 

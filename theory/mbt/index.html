@@ -2979,7 +2979,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MG, MS
+    -   - rpath
+        - theory/mbt.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -3161,17 +3166,17 @@ contribute (for simplicity we have assumed a semiconductor with time-reversal
 invariance, the conventions used for the Fourier transform are discussed in
 the <a class="wikilink" href="../../#notations">notation</a> section).</p>
 <p>The number of bands used to compute the polarizability is specified by
-<a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>, while <a class="wikilink codevar-link" href="../../input_variables/gw/#zcut">zcut</a> gives the small complex shift used to avoid the
+<a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>, while <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> gives the small complex shift used to avoid the
 divergences in the denominators. The frequency mesh is defined by the set of
-variables <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqre">nfreqre</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqim">nfreqim</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#freqremax">freqremax</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw/#freqremin">freqremin</a> (a number
+variables <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqre">nfreqre</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqim">nfreqim</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#freqremax">freqremax</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw#freqremin">freqremin</a> (a number
 of more exotic grid choices are available through input variables beginning
-with gw_&hellip; or cd_&hellip;, e.g. <a class="wikilink codevar-link" href="../../input_variables/gw/#gw_frqim_inzgrid">gw_frqim_inzgrid</a>).</p>
+with gw_&hellip; or cd_&hellip;, e.g. <a class="wikilink codevar-link" href="../../input_variables/gw#gw_frqim_inzgrid">gw_frqim_inzgrid</a>).</p>
 <p><em>M</em> is a shorthand notation to denote the matrix element of a plane wave
 sandwiched between two wavefunctions (i.e. oscillator matrix elements). The
 number of planewaves (PW) used to describe the wavefunctions is determined by
-<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> while the number of <em>G</em>-vectors used to describe the
+<a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a> while the number of <em>G</em>-vectors used to describe the
 polarizability (i.e. the number of <em>G</em> vectors in the oscillator matrix
-elements) is determined by <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>. The oscillators are ubiquitous in the
+elements) is determined by <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>. The oscillators are ubiquitous in the
 Many-Body part of ABINIT and their calculation represents one of the most CPU
 intensive part of the execution. For this reason we devote <a class="wikilink" href="../../#6">section 6</a> to
 the discussion of some important technical details concerning their
@@ -3213,7 +3218,7 @@ to optimize the computation.</p>
 <p>There can be a significant speed-up in this component depending on the
 numerical FFT library used. If possible, it should always be advantageous to
 link and use the FFTW3 library in GW calculations (controlled by setting
-<a class="wikilink codevar-link" href="../../input_variables/dev/#fftalg">fftalg</a> 312). The performance of the various FFT libraries for a given type
+<a class="wikilink codevar-link" href="../../input_variables/dev#fftalg">fftalg</a> 312). The performance of the various FFT libraries for a given type
 of calculation can be benchmarked with the <strong>fftprof</strong> utility.</p>
 <p>For a given set of indices (<em>b1</em>, <em>b2</em>, <strong>k</strong>, <strong>q</strong>), the calculation of the
 oscillator is done in four different steps:</p>
@@ -3230,15 +3235,15 @@ representation of the orbitals at the price of a reasonable increase of the
 memory allocated. However, for very memory demanding calculations, the real
 space orbitals can be calculated on the fly with an increase in computational
 time instead. This option is controlled by the second digit of the input
-variable <a class="wikilink codevar-link" href="../../input_variables/gw/#gwmem">gwmem</a>.</p>
+variable <a class="wikilink codevar-link" href="../../input_variables/gw#gwmem">gwmem</a>.</p>
 <p>The third term in the equation defining the oscillators makes it clear that
 the product of the periodic part of the orbitals has non-zero Fourier
 components in a sphere whose radius is 2×<em>Rwfn</em> where <em>Rwfn</em> is the radius of
-the <strong>G</strong>-sphere used for the wavefunctions (set by <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a>). To avoid
+the <strong>G</strong>-sphere used for the wavefunctions (set by <a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a>). To avoid
 aliasing errors in the FFT one should therefore use an FFT box that encloses
 the sphere with radius 2×<em>Rwfn</em>, but this leads to a significant increase in
 the computing effort as well as in the memory requirements. The input variable
-<a class="wikilink codevar-link" href="../../input_variables/gw/#fftgw">fftgw</a> specifies how to setup the FFT box for the oscillators and should be
+<a class="wikilink codevar-link" href="../../input_variables/gw#fftgw">fftgw</a> specifies how to setup the FFT box for the oscillators and should be
 used to test how the aliasing errors affect the final results. The default
 setting of <strong>fftgw 21</strong> is safe, a setting of <strong>fftgw 11</strong> is fast but can be
 inaccurate, and a setting of <strong>fftgw 31</strong> gives the maximum possible accuracy
@@ -3246,7 +3251,7 @@ at a significant computational cost.</p>
 <h2 id="7-hilbert-transform-method">7 Hilbert transform method<a class="headerlink" href="#7-hilbert-transform-method" title="Permanent link">&para;</a></h2>
 <p>The computational effort for the evaluation of the RPA polarizability with the
 Adler-Wiser expression scales linearly with the number of frequencies computed
-(<a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqre">nfreqre</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#nfreqim">nfreqim</a>), albeit with a large prefactor which increases
+(<a class="wikilink codevar-link" href="../../input_variables/gw#nfreqre">nfreqre</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#nfreqim">nfreqim</a>), albeit with a large prefactor which increases
 with the fourth power of the number of atoms. The main reason for the linear
 scaling is that the frequency dependence cannot be factorised out of the sum
 over transitions, hence a distinct and expensive summation over transitions
@@ -3263,12 +3268,12 @@ in [14], in which only the spectral function</p>
 conduction states. The Dirac delta function can be approximated either by
 means of a triangular function centered at the energy transition following
 [14] or a gaussian approximant following [13] (see the related input variables
-<a class="wikilink codevar-link" href="../../input_variables/gw/#spmeth">spmeth</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw/#spbroad">spbroad</a>). The spectral function is evaluated on a linear
+<a class="wikilink codevar-link" href="../../input_variables/gw#spmeth">spmeth</a>, and <a class="wikilink codevar-link" href="../../input_variables/gw#spbroad">spbroad</a>). The spectral function is evaluated on a linear
 frequency mesh which covers the entire set of transition energies included in
-the calculation. The number of points in the mesh is given by <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasf">nomegasf</a>.</p>
+the calculation. The number of points in the mesh is given by <a class="wikilink codevar-link" href="../../input_variables/gw#nomegasf">nomegasf</a>.</p>
 <p>The evaluation of the spectral function is rather efficient thanks to the
 presence of the delta-function in the expression above. For example, when
-<a class="wikilink codevar-link" href="../../input_variables/gw/#spmeth">spmeth</a>=1, the CPU time required to compute the spectral function on an
+<a class="wikilink codevar-link" href="../../input_variables/gw#spmeth">spmeth</a>=1, the CPU time required to compute the spectral function on an
 arbitrarily dense frequency mesh is just twice that required by a single
 static computation based on the standard Adler-Wiser expression.</p>
 <p>The full polarizability is then efficiently retrieved by means of a less
@@ -3278,9 +3283,9 @@ expensive frequency integration (a Hilbert transform):</p>
 has to be stored in memory and a Hilbert transform has to be performed for
 each pair (**G**1, **G**2). Since the computing time required for the
 transform scales quadratically with the number of vectors in the
-polarizability (governed by <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>), the CPU time spent in this part will
+polarizability (governed by <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>), the CPU time spent in this part will
 overcome the computing time of the standard Adler-Wiser formalism for large
-<a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>. A theoretical estimate of the crossover point is hard to give
+<a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>. A theoretical estimate of the crossover point is hard to give
 because it depends on many factors. However, if many frequencies are needed,
 such as for the evaluation of optical spectra, or accurate contour deformation
 integrations, or even mapping full grids in the complex plane, the Hilbert
@@ -3302,7 +3307,7 @@ quasiparticle amplitudes</p>
 <p>while the dynamic part Σc(ω) accounts for correlation effects beyond Σx.</p>
 <p>It is important to stress that, for computational efficiency, the code does
 not compute the full self-energy operator by default. Only its matrix elements
-for the states specified by <a class="wikilink codevar-link" href="../../input_variables/gw/#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#bdgw">bdgw</a> are computed and used to
+for the states specified by <a class="wikilink codevar-link" href="../../input_variables/gw#kptgw">kptgw</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#bdgw">bdgw</a> are computed and used to
 obtain the QP corrections.</p>
 <p>When expressed in reciprocal space, the diagonal matrix elements of the
 exchange part are given by:</p>
@@ -3311,10 +3316,10 @@ exchange part are given by:</p>
 time since only occupied states are involved. However we should always keep in
 mind that, due to the long range of the bare Coulomb interaction, the
 convergence with respect to the number of plane waves used in the oscillators
-<em>M</em> (<a class="wikilink codevar-link" href="../../input_variables/gw/#ecutsigx">ecutsigx</a>) is usually slow, much slower than the convergence of the
+<em>M</em> (<a class="wikilink codevar-link" href="../../input_variables/gw#ecutsigx">ecutsigx</a>) is usually slow, much slower than the convergence of the
 correlation part, which is short-ranged. This plane wave cutoff can be
 converged independently of others if necessary, and given a much larger value
-in comparison to <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/gw/#ecutwfn">ecutwfn</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a>.</p>
+in comparison to <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>, <a class="wikilink codevar-link" href="../../input_variables/gw#ecutwfn">ecutwfn</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>.</p>
 <p>Another point worth noting is the presence in the expression of the Coulomb
 singularity for |<strong>q</strong>+<strong>G</strong>| -&gt; 0. From a mathematical point of view, the
 integral is well-defined since the singularity is integrable in three-
@@ -3324,7 +3329,7 @@ for practical applications, and a careful numerical treatment is needed to
 avoid an exceedingly slow convergence with respect to the BZ sampling. To
 accelerate the convergence in the number of <strong>q</strong>-points, the code implements
 several techniques proposed in the literature. We refer to the documentation
-of <a class="wikilink codevar-link" href="../../input_variables/gw/#icutcoul">icutcoul</a> for a more extensive discussion.</p>
+of <a class="wikilink codevar-link" href="../../input_variables/gw#icutcoul">icutcoul</a> for a more extensive discussion.</p>
 <p>The expression for the matrix elements of the correlation part is instead
 given by:</p>
 <p><img alt="" src="../../documents/theory_mbt/self_c_mel.png" /></p>
@@ -3335,23 +3340,23 @@ screened interaction. The code implements four different plasmon-pole
 techniques to model the frequency dependence of <strong>W</strong> in an efficient but
 approximate way, alternatively, it is possible to use the more sophisticated
 frequency integration of the contour deformation method [15] for accurate QP
-calculations (see the related variables <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#gwcalctyp">gwcalctyp</a>).</p>
+calculations (see the related variables <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#gwcalctyp">gwcalctyp</a>).</p>
 <p>The double sum over <strong>G</strong>-vectors is performed for all the plane waves
-contained within a sphere of energy <a class="wikilink codevar-link" href="../../input_variables/gw/#ecuteps">ecuteps</a> (it cannot be larger than the
+contained within a sphere of energy <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a> (it cannot be larger than the
 value used to generate the SCR file). For each state, the correlated matrix
 elements are evaluated on a linear frequency mesh centered around the initial
 KS energy and the derivative needed for the renormalization factor is obtained
-numerically (see <a class="wikilink codevar-link" href="../../input_variables/gw/#nomegasrd">nomegasrd</a> and <a class="wikilink codevar-link" href="../../input_variables/gw/#omegasrdmax">omegasrdmax</a>).</p>
+numerically (see <a class="wikilink codevar-link" href="../../input_variables/gw#nomegasrd">nomegasrd</a> and <a class="wikilink codevar-link" href="../../input_variables/gw#omegasrdmax">omegasrdmax</a>).</p>
 <p>Note that here, in contrast to the exchange term, the sum over the band index
 <em>n</em> should extend up to infinity although in practice only a finite number of
-states can be used (specified by <a class="wikilink codevar-link" href="../../input_variables/basic/#nband">nband</a>).</p>
+states can be used (specified by <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>).</p>
 <h2 id="9-plasmon-pole-models">9 Plasmon-pole models<a class="headerlink" href="#9-plasmon-pole-models" title="Permanent link">&para;</a></h2>
 <p>One of the major computational efforts in self-energy calculations is
 represented by the calculation of the frequency dependence of the screened
 interaction, which is needed for the evaluation of the convolution. Due to the
 ragged behavior of <em>G</em>(ω) and <em>W</em>(ω) along the real axis, numerous real
 frequencies are in principle required to converge the results (note that the
-maximum frequencies needed are now reported if <a class="wikilink codevar-link" href="../../input_variables/files/#prtvol">prtvol</a> &gt; 9). On the
+maximum frequencies needed are now reported if <a class="wikilink codevar-link" href="../../input_variables/files#prtvol">prtvol</a> &gt; 9). On the
 other hand, since the fine details of <em>W</em>(ω) are integrated over, it is
 reasonable to expect that approximate models, able to capture the main
 physical features of the screened interaction, should give sufficiently
@@ -3361,22 +3366,22 @@ frequency dependence of <em>W</em>(ω) is modelled in terms of analytic expressi
 depending on coefficients that are derived from first principles, i.e. without
 any adjustable external parameters.</p>
 <p>Four different plasmon-pole techniques are available in ABINIT and the input
-variable <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a> selects the method to be used.</p>
-<p>When <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>=1,2 the frequency dependence of the inverse dielectric
+variable <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a> selects the method to be used.</p>
+<p>When <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=1,2 the frequency dependence of the inverse dielectric
 function is modeled according to</p>
 <p><img alt="" src="../../documents/theory_mbt/ppmodel_imag.png" /></p>
 <p><img alt="" src="../../documents/theory_mbt/ppmodel_real.png" /></p>
 <p>The two models differ in the approach used to compute the parameters.
-<a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>=1 derives the parameters such that the inverse dielectric matrix
+<a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=1 derives the parameters such that the inverse dielectric matrix
 is correctly reproduced at two different explicitly calculated frequencies:
 the static limit (ω = 0) and an additional imaginary point located at
-<a class="wikilink codevar-link" href="../../input_variables/gw/#ppmfrq">ppmfrq</a>. Unless the user overrides this, the default value is calculated
+<a class="wikilink codevar-link" href="../../input_variables/gw#ppmfrq">ppmfrq</a>. Unless the user overrides this, the default value is calculated
 from the average electronic density of the system. The plasmon-pole parameters
-of <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>=2 are calculated so as to reproduce the static limit exactly
+of <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=2 are calculated so as to reproduce the static limit exactly
 and to fulfill a generalized frequency sum rule relating the imaginary part of
 the many-body inverse dielectric matrix to the plasma frequency and the charge
 density [12]</p>
-<p>For a discussion of the models corresponding to <a class="wikilink codevar-link" href="../../input_variables/gw/#ppmodel">ppmodel</a>=3,4 we refer the
+<p>For a discussion of the models corresponding to <a class="wikilink codevar-link" href="../../input_variables/gw#ppmodel">ppmodel</a>=3,4 we refer the
 reader to the original papers cited in the documentation of the variable.</p>
 <h2 id="10-contour-deformation-technique">10 Contour deformation technique<a class="headerlink" href="#10-contour-deformation-technique" title="Permanent link">&para;</a></h2>
 <p>The contour deformation method was proposed in order to avoid having to deal
@@ -3586,7 +3591,7 @@ throughout.</p>
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (MG, MS)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 

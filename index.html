@@ -2919,12 +2919,14 @@
                 
                   <h1>Introduction</h1>
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - rpath
+        - index.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
 <h3 id="046-foreword"><strong>0. Foreword</strong><a class="headerlink" href="#046-foreword" title="Permanent link">&para;</a></h3>
-<p>hello</p>
 <p>The ABINIT project is a group effort of dozens of people worldwide, whose
 central outcome is the main ABINIT application, delivered with many other
 files in the ABINIT package. The ABINIT project includes also resources
@@ -3041,65 +3043,65 @@ more by browsing the Web&hellip;</p>
 <p>As an overview, the most important input variables, to be provided in the
 input file, are listed below:</p>
 <p>Specification of the geometry of the problem, and types of atoms :</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#natom">natom</a>
 : total number of atoms in unit cell</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#ntypat">ntypat</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#ntypat">ntypat</a>
 : number of types of atoms</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>the atomic coordinates (<a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a>, <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> or <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a>)
+<p>the atomic coordinates (<a class="wikilink codevar-link" href="./input_variables/basic#xangst">xangst</a>, <a class="wikilink codevar-link" href="./input_variables/basic#xcart">xcart</a> or <a class="wikilink codevar-link" href="./input_variables/basic#xred">xred</a>)
 must be specified in the same order</p>
 </div>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#rprim">rprim</a> (3,3)
+<p><a class="wikilink codevar-link" href="./input_variables/basic#rprim">rprim</a> (3,3)
 : unscaled primitive translations of periodic cell;
   each COLUMN of this array is one primitive translation</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
+<p><a class="wikilink codevar-link" href="./input_variables/basic#xangst">xangst</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic#natom">natom</a>)
 : cartesian coordinates (Angstrom) of atoms in unit cell
-  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> are absent</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
+  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic#xcart">xcart</a> are absent</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#xcart">xcart</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic#natom">natom</a>)
 : cartesian coordinates (Bohr) of atoms in unit cell
-  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> are absent</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#xred">xred</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic/#natom">natom</a>)
+  NOTE: only used when <a class="wikilink codevar-link" href="./input_variables/basic#xred">xred</a> and <a class="wikilink codevar-link" href="./input_variables/basic#xangst">xangst</a> are absent</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#xred">xred</a> (3,<a class="wikilink codevar-link" href="./input_variables/basic#natom">natom</a>)
 : fractional coordinates for atomic locations;
-  NOTE: leave out if <a class="wikilink codevar-link" href="./input_variables/basic/#xangst">xangst</a> or <a class="wikilink codevar-link" href="./input_variables/basic/#xcart">xcart</a> is used</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#znucl">znucl</a> (<a class="wikilink codevar-link" href="./input_variables/basic/#ntypat">ntypat</a>)
+  NOTE: leave out if <a class="wikilink codevar-link" href="./input_variables/basic#xangst">xangst</a> or <a class="wikilink codevar-link" href="./input_variables/basic#xcart">xcart</a> is used</p>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#znucl">znucl</a> (<a class="wikilink codevar-link" href="./input_variables/basic#ntypat">ntypat</a>)
 : Nuclear charge of each type of element; must agree with
   nuclear charge found in psp file.</p>
 <p>Specification of the planewave basis set, Brillouin zone wavevector sampling, and occupation of the bands:</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#ecut">ecut</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#ecut">ecut</a>
 : planewave kinetic energy cutoff in Hartree</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#kptopt">kptopt</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#kptopt">kptopt</a>
 : option for specifying the k-point grid
-  if <a class="wikilink codevar-link" href="./input_variables/basic/#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
+  if <a class="wikilink codevar-link" href="./input_variables/basic#kptopt">kptopt</a>=1, automatic generation, using ngkpt and shiftk.
   (for the latter, see the <a href="./help_abinit.html">help_abinit</a> file)</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#ngkpt">ngkpt</a> (3)
+<p><a class="wikilink codevar-link" href="./input_variables/basic#ngkpt">ngkpt</a> (3)
 : dimensions of the three-dimensional grid of k-points</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#occopt">occopt</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#occopt">occopt</a>
 : set the occupation of electronic levels:
     =1 for semiconductors
     =3 &hellip; 7  for metals</p>
 <p>Specification of the type of calculation to be done:</p>
-<p><a class="wikilink codevar-link" href="./input_variables/rlx/#ionmov">ionmov</a>
-: when <a class="wikilink codevar-link" href="./input_variables/rlx/#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
+<p><a class="wikilink codevar-link" href="./input_variables/rlx#ionmov">ionmov</a>
+: when <a class="wikilink codevar-link" href="./input_variables/rlx#ionmov">ionmov</a> = 0 : the ions and cell shape are fixed
                   = 2 : search for the equilibrium geometry
                   = 6 : molecular dynamics</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#iscf">iscf</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#iscf">iscf</a>
 : either a positive number for defining self-consistent
   algorithm (usual), or -2 for band structure in fixed potential</p>
-<p><a class="wikilink codevar-link" href="./input_variables/gstate/#optdriver">optdriver</a>
+<p><a class="wikilink codevar-link" href="./input_variables/gstate#optdriver">optdriver</a>
 : when == 3 and 4 : will do GW calculations (many-body perturbation theory)</p>
-<p><a class="wikilink codevar-link" href="./input_variables/dfpt/#rfelfd">rfelfd</a>
+<p><a class="wikilink codevar-link" href="./input_variables/dfpt#rfelfd">rfelfd</a>
 : when /= 0 : will do response calculation to electric field</p>
-<p><a class="wikilink codevar-link" href="./input_variables/dfpt/#rfphon">rfphon</a>
+<p><a class="wikilink codevar-link" href="./input_variables/dfpt#rfphon">rfphon</a>
 : when = 1 : will do response calculation to atomic displacements</p>
 <p>Specification of the numerical convergency of the calculation:</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#nstep">nstep</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#nstep">nstep</a>
 : maximal number of self-consistent cycles (on the order of 20)</p>
-<p><a class="wikilink codevar-link" href="./input_variables/basic/#tolvrs">tolvrs</a>
+<p><a class="wikilink codevar-link" href="./input_variables/basic#tolvrs">tolvrs</a>
 : tolerance on self-consistent convergence</p>
-<p><a class="wikilink codevar-link" href="./input_variables/rlx/#ntime">ntime</a>
+<p><a class="wikilink codevar-link" href="./input_variables/rlx#ntime">ntime</a>
 : number of molecular dynamics or relaxation steps</p>
-<p><a class="wikilink codevar-link" href="./input_variables/rlx/#tolmxf">tolmxf</a>
+<p><a class="wikilink codevar-link" href="./input_variables/rlx#tolmxf">tolmxf</a>
 : force tolerance for structural relaxation in Hartree/Bohr</p>
 <hr />
 <h3 id="646-output-files">** 6. Output files.**<a class="headerlink" href="#646-output-files" title="Permanent link">&para;</a></h3>

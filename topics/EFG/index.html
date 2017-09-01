@@ -2906,17 +2906,17 @@ for example assuming all bands are doubly occupied, and permits the current
 approach to be used with more complex electronic and magnetic states than just
 insulators.</p>
 <p>Within ABINIT, the electric field gradient computation is invoked with the key
-word <a class="wikilink codevar-link" href="../../input_variables/paw/#prtefg">prtefg</a> (for Print EFG), together with the key word <a class="wikilink codevar-link" href="../../input_variables/paw/#quadmom">quadmom</a>. The
-<a class="wikilink codevar-link" href="../../input_variables/paw/#prtefg">prtefg</a> key word takes the values 1&ndash;3. For value 1, the electric field
+word <a class="wikilink codevar-link" href="../../input_variables/paw#prtefg">prtefg</a> (for Print EFG), together with the key word <a class="wikilink codevar-link" href="../../input_variables/paw#quadmom">quadmom</a>. The
+<a class="wikilink codevar-link" href="../../input_variables/paw#prtefg">prtefg</a> key word takes the values 1&ndash;3. For value 1, the electric field
 gradient coupling in MHz is reported, where the conversion is made by atom by
 combining the gradient with the nuclear quadrupole moments supplied by
-<a class="wikilink codevar-link" href="../../input_variables/paw/#quadmom">quadmom</a>. When <a class="wikilink codevar-link" href="../../input_variables/paw/#prtefg">prtefg</a> is input as 2, the additional breakdown of the
+<a class="wikilink codevar-link" href="../../input_variables/paw#quadmom">quadmom</a>. When <a class="wikilink codevar-link" href="../../input_variables/paw#prtefg">prtefg</a> is input as 2, the additional breakdown of the
 field gradient in terms of valence and on-site PAW terms is reported, along
 with the eigenvectors of the EFG matrix, so that principal directions may be
-determined with respect to the crystal axes. Finally, <a class="wikilink codevar-link" href="../../input_variables/paw/#prtefg">prtefg</a>=3 allows
+determined with respect to the crystal axes. Finally, <a class="wikilink codevar-link" href="../../input_variables/paw#prtefg">prtefg</a>=3 allows
 additional computation of a point-charge model of the gradient, for comparison
 purposes. The point charges by atom are supplied through the additional
-variable <a class="wikilink codevar-link" href="../../input_variables/paw/#ptcharge">ptcharge</a>. Detailed examples of the use of ABINIT to compute EFG&rsquo;s
+variable <a class="wikilink codevar-link" href="../../input_variables/paw#ptcharge">ptcharge</a>. Detailed examples of the use of ABINIT to compute EFG&rsquo;s
 can be found in <a class="wikilink citation-link" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#zwanziger2008">[Zwanziger2008]</a>,<a class="wikilink citation-link" data-content="First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#zwanziger2009a">[Zwanziger2009a]</a>.</p>
 <p>The Fermi contact interaction, which is just the electron density evaluated
 precisely at the nuclear location, is an important component of the isomer
@@ -2931,7 +2931,7 @@ site all-electron valence functions are required <a class="wikilink citation-lin
 are evaluated from a linear fit to the first few points of the PAW radial
 functions.</p>
 <p>Within ABINIT the Fermi contact interaction is invoked with the key word
-<a class="wikilink codevar-link" href="../../input_variables/paw/#prtfc">prtfc</a> (for Print Fermi Contact), which only takes the value 1. When
+<a class="wikilink codevar-link" href="../../input_variables/paw#prtfc">prtfc</a> (for Print Fermi Contact), which only takes the value 1. When
 called, the electron density at each nuclear position is reported, in atomic
 units (electrons per cubic Bohr). The isomer shift as measured in Mossbauer
 spectroscopy is typically reported in velocity units and is obtained from the
@@ -2949,10 +2949,10 @@ variety of compounds.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#prtefg">prtefg</a>  PRint Electric Field Gradient</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#prtfc">prtfc</a>  PRinT Fermi Contact term</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#ptcharge">ptcharge</a>  PoinT CHARGEs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#quadmom">quadmom</a>  QUADrupole MOMents</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#prtefg">prtefg</a>  PRint Electric Field Gradient</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#prtfc">prtfc</a>  PRinT Fermi Contact term</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#ptcharge">ptcharge</a>  PoinT CHARGEs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#quadmom">quadmom</a>  QUADrupole MOMents</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>

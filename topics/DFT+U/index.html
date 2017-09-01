@@ -2881,8 +2881,8 @@ counting are provided: the Full Localized limit and the Around Mean Field
 approximation. Our implementation is described in <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#amadon2008a">[Amadon2008a]</a>. It follows
 the main lines of <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bengone2000">[Bengone2000]</a>. See als <a class="wikilink citation-link" data-content="Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#czyzyk1994">[Czyzyk1994]</a>. Forces and stress
 are implemented. For details on keywords
-(<a class="wikilink codevar-link" href="../../input_variables/paw/#lpawu">lpawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>,<a class="wikilink codevar-link" href="../../input_variables/paw/#dmatudiag">dmatudiag</a>) see
-keyword <a class="wikilink codevar-link" href="../../input_variables/paw/#usepawu">usepawu</a> in input variables.</p>
+(<a class="wikilink codevar-link" href="../../input_variables/paw#lpawu">lpawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw#upawu">upawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw#usedmatpu">usedmatpu</a>,<a class="wikilink codevar-link" href="../../input_variables/paw#dmatpuopt">dmatpuopt</a>,<a class="wikilink codevar-link" href="../../input_variables/paw#dmatudiag">dmatudiag</a>) see
+keyword <a class="wikilink codevar-link" href="../../input_variables/paw#usepawu">usepawu</a> in input variables.</p>
 <p>In both the output and log files, we can find:</p>
 <p>- The DFT+U contribution of energy which is contained inside the PAW
 Spherical terms in the output file.</p>
@@ -2890,7 +2890,7 @@ Spherical terms in the output file.</p>
 counting term, and sum of the two) in the log file.</p>
 <p>- The orbital density matrix (n_{m,m&rsquo;}^{\sigma}), also called occupation
 matrix (corresponding to Eq.(9) of <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bengone2000">[Bengone2000]</a> and Eq.(1) of
-<a class="wikilink citation-link" data-content="Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#liechtenstein1995">[Liechtenstein1995]</a>, see also [5] and variable <a class="wikilink codevar-link" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>) is also given
+<a class="wikilink citation-link" data-content="Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#liechtenstein1995">[Liechtenstein1995]</a>, see also [5] and variable <a class="wikilink codevar-link" href="../../input_variables/paw#dmatpuopt">dmatpuopt</a>) is also given
 for each atom in the basis of real spherical harmonics. It is given at each
 SCF step in the log file: one can thus check the convergency of the
 calculation.</p>
@@ -2898,33 +2898,33 @@ calculation.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#jpawu">jpawu</a>  value of J for PAW+U</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#lpawu">lpawu</a>  value of angular momentum L for PAW+U</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#upawu">upawu</a>  value of U for PAW+U</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#usepawu">usepawu</a>  USE PAW+U (spherical part)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>  value of J for PAW+U</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#lpawu">lpawu</a>  value of angular momentum L for PAW+U</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#upawu">upawu</a>  value of U for PAW+U</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#usepawu">usepawu</a>  USE PAW+U (spherical part)</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/ffield/#atvshift">atvshift</a>  ATomic potential (V) energy SHIFTs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#dmatpuopt">dmatpuopt</a>  Density MATrix for PAW+U OPTion</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#dmatudiag">dmatudiag</a>  Density MATrix for paw+U, DIAGonalization</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#f4of2_sla">f4of2_sla</a>  F4 Over F2 ratio of Slater integrals</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#f6of2_sla">f6of2_sla</a>  F6 Over F2 ratio of Slater integrals</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#macro_uj">macro_uj</a>  MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/ffield/#natvshift">natvshift</a>  Number of ATomic potential (V) energy SHIFTs (per atom)</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#normpawu">normpawu</a>  NORMalize atomic PAW+U projector</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#pawujat">pawujat</a>  PAW+macro_UJ, ATom number</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#pawujrad">pawujrad</a>  PAW+macro_UJ, sphere RADius</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/dev/#pawujv">pawujv</a>  PAW+macro_UJ, potential shift (V)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#atvshift">atvshift</a>  ATomic potential (V) energy SHIFTs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#dmatpuopt">dmatpuopt</a>  Density MATrix for PAW+U OPTion</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#dmatudiag">dmatudiag</a>  Density MATrix for paw+U, DIAGonalization</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#f4of2_sla">f4of2_sla</a>  F4 Over F2 ratio of Slater integrals</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#f6of2_sla">f6of2_sla</a>  F6 Over F2 ratio of Slater integrals</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#macro_uj">macro_uj</a>  MACRO variable that activates the determination of the U and J parameter (for the PAW+U calculations)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/ffield#natvshift">natvshift</a>  Number of ATomic potential (V) energy SHIFTs (per atom)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#normpawu">normpawu</a>  NORMalize atomic PAW+U projector</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#pawujat">pawujat</a>  PAW+macro_UJ, ATom number</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#pawujrad">pawujrad</a>  PAW+macro_UJ, sphere RADius</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/dev#pawujv">pawujv</a>  PAW+macro_UJ, potential shift (V)</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal/#natpawu">%natpawu</a>  Number of AToms on which PAW+U is applied</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#natpawu">%natpawu</a>  Number of AToms on which PAW+U is applied</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#dmatpawu">dmatpawu</a>  initial Density MATrix for PAW+U</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#usedmatpu">usedmatpu</a>  USE of an initial Density MATrix in Paw+U</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#dmatpawu">dmatpawu</a>  initial Density MATrix for PAW+U</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#usedmatpu">usedmatpu</a>  USE of an initial Density MATrix in Paw+U</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>

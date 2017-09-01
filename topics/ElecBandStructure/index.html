@@ -2861,14 +2861,14 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to generate the electronic band structure related topics with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The eigenenergies along a set of segments can be computed (non-self-consistent
-calculations <a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>=-2) using a negative value of <a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a>, with
-<a class="wikilink codevar-link" href="../../input_variables/gstate/#kptbounds">kptbounds</a> defining the end points of the segments, and <a class="wikilink codevar-link" href="../../input_variables/gstate/#ndivsm">ndivsm</a> (or
-<a class="wikilink codevar-link" href="../../input_variables/gstate/#ndivk">ndivk</a>) defining the sampling.</p>
+calculations <a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>=-2) using a negative value of <a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>, with
+<a class="wikilink codevar-link" href="../../input_variables/gstate#kptbounds">kptbounds</a> defining the end points of the segments, and <a class="wikilink codevar-link" href="../../input_variables/gstate#ndivsm">ndivsm</a> (or
+<a class="wikilink codevar-link" href="../../input_variables/gstate#ndivk">ndivk</a>) defining the sampling.</p>
 <p>A band structure can even be represented using weights proportional to the
 orbital content (so-called &ldquo;Fat Bands&rdquo;), in case of PAW calculation, see
-<a class="wikilink codevar-link" href="../../input_variables/paw/#pawfatbnd">pawfatbnd</a>, and related variables.</p>
+<a class="wikilink codevar-link" href="../../input_variables/paw#pawfatbnd">pawfatbnd</a>, and related variables.</p>
 <p>Different interpolation schemes for the band energies can be defined thanks to
-<a class="wikilink codevar-link" href="../../input_variables/basic/#einterp">einterp</a>. The Wannier interpolation is also available through the use of
+<a class="wikilink codevar-link" href="../../input_variables/basic#einterp">einterp</a>. The Wannier interpolation is also available through the use of
 the <a class="wikilink lesson-link" href="../../tutorials/wannier90">wannier90 lesson</a> post-processor.</p>
 <p>The band structure from a supercell calculation can be unfolded to the (large)
 Brillouin zone of the (small) primitive cell thanks to the <a class="wikilink user-guide-link" href="../../user-guide/help_fold2bloch">fold2bloch help file</a>
@@ -2881,19 +2881,19 @@ plot_bandstructure.py or abinit_eignc_to_bandstructure.py.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#kptopt">kptopt</a>  KPoinTs OPTion</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#kptopt">kptopt</a>  KPoinTs OPTion</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#einterp">einterp</a>  Electron bands INTERPolation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#iatsph">iatsph</a>  Index for the ATomic SPHeres of the atom-projected density-of-states</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#natsph">natsph</a>  Number of ATomic SPHeres for the atom-projected density-of-states</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/paw/#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#einterp">einterp</a>  Electron bands INTERPolation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#iatsph">iatsph</a>  Index for the ATomic SPHeres of the atom-projected density-of-states</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#natsph">natsph</a>  Number of ATomic SPHeres for the atom-projected density-of-states</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/paw#pawfatbnd">pawfatbnd</a>  PAW: print band structure in the FAT-BaND representation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ratsph">ratsph</a>  Radii of the ATomic SPHere(s)</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>

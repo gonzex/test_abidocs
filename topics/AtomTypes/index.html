@@ -2880,23 +2880,24 @@ nuclear charge (and their mass for dynamical properties).</p>
 <p>However, in a pseudopotential or PAW approach, the knowledge of the nuclear
 charge does not define the potential felt by the electron, only the atomic
 data file (pseudopotential or PAW) defines it. Thus, in addition to the number
-of types of atoms <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>, and their nuclear charge <a class="wikilink codevar-link" href="../../input_variables/basic/#znucl">znucl</a>, ABINIT
+of types of atoms <a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>, and their nuclear charge <a class="wikilink codevar-link" href="../../input_variables/basic#znucl">znucl</a>, ABINIT
 requires to know the pseudopotential/PAW to use for each type of atom. The
 latters are specified in the <a class="wikilink user-guide-link" href="../../user-guide/help_abinit/#intro1">&ldquo;files&rdquo; file</a>. Unless
 alchemical potentials are used (see later), the number of pseudopotentials to
-be read, <a class="wikilink codevar-link" href="../../input_variables/gstate/#npsp">npsp</a>, is the same as <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>. Note that one cannot mix norm-
+be read, <a class="wikilink codevar-link" href="../../input_variables/gstate#npsp">npsp</a>, is the same as <a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>. Note that one cannot mix norm-
 conserving pseudopotentials with PAW atomic data files in a single ABINIT run,
 even for different datasets. One has to stick either to norm-conserving
 pseudopotentials or to PAW.<br />
 More on the pseudos/PAW in <a class="wikilink topic-link" data-content="How to master the use of norm-conserving pseudopotentials and PAW atomic data, and
 their consequences" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/PseudosPAW">topic_PseudosPAW</a>.</p>
 <p>ABINIT also has a default table of the atomic masses, but this can be
-superceded by specifying <a class="wikilink codevar-link" href="../../input_variables/rlx/#amu">amu</a>.</p>
+superceded by specifying <a class="wikilink codevar-link" href="../../input_variables/rlx#amu">amu</a>.</p>
 <p><strong>Alchemical potentials</strong></p>
 <p>For norm-conserving pseudopotentials, ABINIT can mix the pseudopotentials, as
-described in , to create so-called &ldquo;alchemical potentials&rdquo;, see <a class="wikilink codevar-link" href="../../input_variables/gstate/#mixalch">mixalch</a>.<br />
-In this case, the number of pseudopotentials to be given, <a class="wikilink codevar-link" href="../../input_variables/gstate/#npsp">npsp</a>, will
-usually be larger than the number of types of atoms, <a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>. Using
+described in <a href="https://wiki.abinit.org/doku.php?id=developers:pseudos">the
+ABINIT wiki</a>, to create so-called &ldquo;alchemical potentials&rdquo;, see <a class="wikilink codevar-link" href="../../input_variables/gstate#mixalch">mixalch</a>.<br />
+In this case, the number of pseudopotentials to be given, <a class="wikilink codevar-link" href="../../input_variables/gstate#npsp">npsp</a>, will
+usually be larger than the number of types of atoms, <a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>. Using
 alchemical potentials makes sense to treat alloys in which similar ions are
 present, and whose specific chemical properties are not crucial for the
 property of interest. Usually it is done only for isovalent species, and ions
@@ -2905,29 +2906,29 @@ electronic properties.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/rlx/#amu">amu</a>  Atomic Mass Units</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#typat">typat</a>  TYPe of AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/rlx#amu">amu</a>  Atomic Mass Units</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#typat">typat</a>  TYPe of AToms</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#ntypat">ntypat</a>  Number of TYPes of AToms</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/basic/#znucl">znucl</a>  charge -Z- of the NUCLeus</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#ntypat">ntypat</a>  Number of TYPes of AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/basic#znucl">znucl</a>  charge -Z- of the NUCLeus</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#algalch">algalch</a>  ALGorithm for generating ALCHemical pseudopotentials</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#algalch">algalch</a>  ALGorithm for generating ALCHemical pseudopotentials</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#npspalch">%npspalch</a>  Number of PSeudoPotentials that are &ldquo;ALCHemical&rdquo;</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#ntyppure">%ntyppure</a>  Number of TYPe of atoms that are &ldquo;PURe&rdquo;</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/internal/#ziontypat">%ziontypat</a>  Z (charge) of the IONs for the different TYPes of AToms</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#npspalch">%npspalch</a>  Number of PSeudoPotentials that are &ldquo;ALCHemical&rdquo;</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ntyppure">%ntyppure</a>  Number of TYPe of atoms that are &ldquo;PURe&rdquo;</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/internal#ziontypat">%ziontypat</a>  Z (charge) of the IONs for the different TYPes of AToms</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#mixalch">mixalch</a>  MIXing coefficients for ALCHemical potentials</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#npsp">npsp</a>  Number of PSeudoPotentials</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/gstate/#ntypalch">ntypalch</a>  Number of TYPe of atoms that are &ldquo;ALCHemical&rdquo;</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#mixalch">mixalch</a>  MIXing coefficients for ALCHemical potentials</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#npsp">npsp</a>  Number of PSeudoPotentials</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/gstate#ntypalch">ntypalch</a>  Number of TYPe of atoms that are &ldquo;ALCHemical&rdquo;</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v3:</em></p>

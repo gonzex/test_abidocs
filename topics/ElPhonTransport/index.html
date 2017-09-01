@@ -2884,64 +2884,64 @@ of electron-phonon.</p>
 <p>A preliminary calculation of the derivatives of the wavefunctions with respect
 to k-vector must be carried out. After generating a GKK file (see
 <a class="wikilink topic-link" data-content="How to compute the matrix elements of the electron-phonon interaction" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/ElPhonInt">ElPhonInt topic</a>), the Electron-Phonon Coupling (EPC) analysis is performed
-in anaddb, setting <a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphflag">elphflag</a> variable to 1. Most of the procedure is
+in anaddb, setting <a class="wikilink codevar-link" href="../../input_variables/anaddb#elphflag">elphflag</a> variable to 1. Most of the procedure is
 automatic, but can be lengthy if a large number of k-points is being used.</p>
 <p>For the superconductivity calculations, The electron-phonon interaction is
 interpolated in reciprocal space, then integrated over the Fermi surface to
 give the Eliashberg function. Several quadrature methods are available. The
-default (<a class="wikilink codevar-link" href="../../input_variables/anaddb/#telphint">telphint</a>=1) is to use Gaussian weighting, with a width
-<a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphsmear">elphsmear</a>. Another option is the improved tetrahedron
-<a class="wikilink citation-link" data-content="Improved tetrahedron method for Brillouin-zone integrations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bloechl1994a">[Bloechl1994a]</a> (<a class="wikilink codevar-link" href="../../input_variables/anaddb/#telphint">telphint</a>=0). Finally (<a class="wikilink codevar-link" href="../../input_variables/anaddb/#telphint">telphint</a>=2), one
-can integrate a given set of electron bands, between <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_b_max">ep_b_max</a> and
-<a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_b_min">ep_b_min</a>. The resulting integrated quantities are the Eliashberg
+default (<a class="wikilink codevar-link" href="../../input_variables/anaddb#telphint">telphint</a>=1) is to use Gaussian weighting, with a width
+<a class="wikilink codevar-link" href="../../input_variables/anaddb#elphsmear">elphsmear</a>. Another option is the improved tetrahedron
+<a class="wikilink citation-link" data-content="Improved tetrahedron method for Brillouin-zone integrations" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography/#bloechl1994a">[Bloechl1994a]</a> (<a class="wikilink codevar-link" href="../../input_variables/anaddb#telphint">telphint</a>=0). Finally (<a class="wikilink codevar-link" href="../../input_variables/anaddb#telphint">telphint</a>=2), one
+can integrate a given set of electron bands, between <a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_b_max">ep_b_max</a> and
+<a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_b_min">ep_b_min</a>. The resulting integrated quantities are the Eliashberg
 function (in a file suffixed _A2F), and the EPC strength λ which is printed in
 the main output file.</p>
-<p>The transport calculation is turned on by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifltransport">ifltransport</a> to 1
+<p>The transport calculation is turned on by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb#ifltransport">ifltransport</a> to 1
 in anaddb. The transport quantities depend on the Fermi velocity for each
 band, and the electronic band-dependence of the matrix elements must be
-preserved before integration, by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_keepbands">ep_keepbands</a> to 1. This
+preserved before integration, by setting <a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_keepbands">ep_keepbands</a> to 1. This
 increases the memory used, by the square of the number of bands crossing EF.
 The results are the transport Eliashberg function (in file _A2F_TR), the
 electrical resistivity (in file _RHO), and the thermal conductivity (in file
 _WTH).</p>
 <p>It is also possible to consider the temperature dependence of the Fermi
-energy: cubic spline interpolation (<a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_nspline">ep_nspline</a>) enables to linearly
+energy: cubic spline interpolation (<a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_nspline">ep_nspline</a>) enables to linearly
 interpolate the transport arrays and reduce the memory usage. Besides setting
-the Fermi level with <a class="wikilink codevar-link" href="../../input_variables/anaddb/#elph_fermie">elph_fermie</a> (in Hartree), it is also possible
+the Fermi level with <a class="wikilink codevar-link" href="../../input_variables/anaddb#elph_fermie">elph_fermie</a> (in Hartree), it is also possible
 to specify the extra electrons per unit cell, (i.e., the doping concentration
-often expressed in cm-3) with <a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_extrael">ep_extrael</a>.</p>
+often expressed in cm-3) with <a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_extrael">ep_extrael</a>.</p>
 <p>Some details about the calculation of electron-phonon quantities in ABINIT and
 ANADDB can be found <a href="../../documents/elphon_manual.pdf">here</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_keepbands">ep_keepbands</a>  Electron-Phonon KEEP dependence on electron BANDS</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ifltransport">ifltransport</a>  IFLag for TRANSPORT</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#kptrlatt">kptrlatt</a>  K PoinT Reciprocal LATTice</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#telphint">telphint</a>  Technique for ELectron-PHonon INTegration</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_keepbands">ep_keepbands</a>  Electron-Phonon KEEP dependence on electron BANDS</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ifltransport">ifltransport</a>  IFLag for TRANSPORT</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#kptrlatt">kptrlatt</a>  K PoinT Reciprocal LATTice</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#telphint">telphint</a>  Technique for ELectron-PHonon INTegration</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphflag">elphflag</a>  ELectron-PHonon FLAG</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#elphflag">elphflag</a>  ELectron-PHonon FLAG</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#band_gap">band_gap</a>  BAND GAP</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_nqpt">ep_nqpt</a>  Electron Phonon Number of Q PoinTs</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#kptrlatt_fine">kptrlatt_fine</a>  K PoinT Reciprocal LATTice for FINE grid</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#band_gap">band_gap</a>  BAND GAP</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_nqpt">ep_nqpt</a>  Electron Phonon Number of Q PoinTs</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#kptrlatt_fine">kptrlatt_fine</a>  K PoinT Reciprocal LATTice for FINE grid</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#a2fsmear">a2fsmear</a>  Alpha2F SMEARing factor</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elph_fermie">elph_fermie</a>  ELectron-PHonon FERMI Energy</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#elphsmear">elphsmear</a>  ELectron-PHonon SMEARing factor</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_b_max">ep_b_max</a>  Electron Phonon integration Band MAXimum</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_b_min">ep_b_min</a>  Electron Phonon integration Band MINimum</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_extrael">ep_extrael</a>  Electron-Phonon EXTRA ELectrons</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#ep_nspline">ep_nspline</a>  Electron Phonon Number for SPLINE interpolation</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#mustar">mustar</a>  MU STAR</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtfsurf">prtfsurf</a>  PRinT the Fermi SURFace</li>
-<li><a class="wikilink codevar-link" href="../../input_variables/anaddb/#prtvol">prtvol</a>  PRinT VOLume</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#a2fsmear">a2fsmear</a>  Alpha2F SMEARing factor</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#elph_fermie">elph_fermie</a>  ELectron-PHonon FERMI Energy</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#elphsmear">elphsmear</a>  ELectron-PHonon SMEARing factor</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_b_max">ep_b_max</a>  Electron Phonon integration Band MAXimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_b_min">ep_b_min</a>  Electron Phonon integration Band MINimum</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_extrael">ep_extrael</a>  Electron-Phonon EXTRA ELectrons</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#ep_nspline">ep_nspline</a>  Electron Phonon Number for SPLINE interpolation</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#mustar">mustar</a>  MU STAR</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtfsurf">prtfsurf</a>  PRinT the Fermi SURFace</li>
+<li><a class="wikilink codevar-link" href="../../input_variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>

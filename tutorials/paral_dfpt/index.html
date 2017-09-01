@@ -2873,7 +2873,12 @@
               
                 
                 
-                <!-- Return to Top -->
+                <p>!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/paral_dfpt.md</p>
+<!-- Return to Top -->
 
 <p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
 <hr />
@@ -2886,12 +2891,11 @@ that are computed on the basis of the density-functional perturbation theory
 <li>responses to atomic displacements (to compute phonon frequencies, band structures, &hellip; ) </li>
 <li>responses to homogeneous electric fields (dielectric constant, Born effective charges, Infra-red characteristics ) </li>
 <li>responses to strain (elastic constants, piezoelectric constants &hellip;) 
-Such computations are realized when one of the input variables <a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfphon">rfphon</a>,
-<a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfelfd">rfelfd</a> or <a class="wikilink codevar-link" href="../../input_variables/dfpt/#rfstrs">rfstrs</a> are non-zero, which activates <a class="wikilink codevar-link" href="../../input_variables/gstate/#optdriver">optdriver</a>=1. You
+Such computations are realized when one of the input variables <a class="wikilink codevar-link" href="../../input_variables/dfpt#rfphon">rfphon</a>,
+<a class="wikilink codevar-link" href="../../input_variables/dfpt#rfelfd">rfelfd</a> or <a class="wikilink codevar-link" href="../../input_variables/dfpt#rfstrs">rfstrs</a> are non-zero, which activates <a class="wikilink codevar-link" href="../../input_variables/gstate#optdriver">optdriver</a>=1. You
 are supposed to be well-familiarized with such calculations before starting
-the present tutorial. See the input variables described in the file <a class="wikilink" href="../FAKE_URL">FAKE_URL</a>
-and the tutorial <a href="../lesson_rf1.html">Response-Function 1</a> and subsequent
-tutorials.</li>
+the present tutorial. See the input variables described in <a class="wikilink" href="../../input_variables/dfpt">dfpt varset</a> and
+the tutorial <a href="../lesson_rf1.html">Response-Function 1</a> and subsequent tutorials.</li>
 </ul>
 <p>You will learn about the basic implementation of parallelism for DFPT
 calculations, then will execute a very simple, quick calculation for one
@@ -3108,7 +3112,7 @@ will be possible to decrease the total time, but not below the value of 7.387
 seconds in any case. You should observe a similar behaviour with your own
 tests.</p>
 <h2 id="3-computation-of-one-perturbation-for-a-slab-of-29-atoms-of-barium-titanate">3 Computation of one perturbation for a slab of 29 atoms of barium titanate<a class="headerlink" href="#3-computation-of-one-perturbation-for-a-slab-of-29-atoms-of-barium-titanate" title="Permanent link">&para;</a></h2>
-<p><strong>3.1.</strong> This test, with 29 atoms, is slower, but scales better than the Al FCC case. It consists in the computation of one perturbation at qpt 0.0 0.25 0.0 for a 29 atom slab of barium titanate, artificially terminated by a double TiO2 layer on each face, with a reasonable k-point sampling of the Brillouin zone. The symmetry of the system and perturbation will allow to decrease this sampling to one quarter of the Brillouin zone. E.g. with the k-point sampling ngkpt 4 4 1 , there will be actually 4 k-points in the irreducible Brillouin zone for the Ground state calculations. For the DFPT case, only one symmetry will survive, so that, after the calculation of the frozen-wavefunction part (for which no symmetry is used), the self-consistent part will be done with 8 k points in the corresponding irreducible Brillouin zone. With the sampling 8 8 1, there will be 32 k points in the irreducible Brillouin zone for the DFPT case. There are 120 bands. Note that the value of <a class="wikilink codevar-link" href="../../input_variables/basic/#ecut">ecut</a> that is used in the present tutorial is too low to obtain physical results (it should be around 40 Hartree). </p>
+<p><strong>3.1.</strong> This test, with 29 atoms, is slower, but scales better than the Al FCC case. It consists in the computation of one perturbation at qpt 0.0 0.25 0.0 for a 29 atom slab of barium titanate, artificially terminated by a double TiO2 layer on each face, with a reasonable k-point sampling of the Brillouin zone. The symmetry of the system and perturbation will allow to decrease this sampling to one quarter of the Brillouin zone. E.g. with the k-point sampling ngkpt 4 4 1 , there will be actually 4 k-points in the irreducible Brillouin zone for the Ground state calculations. For the DFPT case, only one symmetry will survive, so that, after the calculation of the frozen-wavefunction part (for which no symmetry is used), the self-consistent part will be done with 8 k points in the corresponding irreducible Brillouin zone. With the sampling 8 8 1, there will be 32 k points in the irreducible Brillouin zone for the DFPT case. There are 120 bands. Note that the value of <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a> that is used in the present tutorial is too low to obtain physical results (it should be around 40 Hartree). </p>
 <p>As in the previous case, a preparatory ground-state calculation is needed.</p>
 <p>The input files are provided, in the directory ~abinit/tests/tutoparal/Input .
 The preparatory step is governed by tdfpt_03.files (and tdfpt_03.in). The real
@@ -3388,7 +3392,7 @@ hundred computing cores.</p>
 
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 The Abinit Group (XG, RC)
+            Copyright &copy; 2017 The Abinit Group
           </div>
         
 
