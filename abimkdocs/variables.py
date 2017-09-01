@@ -524,11 +524,11 @@ class InputVariables(OrderedDict):
         for i, char in enumerate(ch2vars):
             id_char = "#%s-%s" % (idname, char)
             if i == 0:
-                html += '<li role="presentation" class="active"><a href="%s" role="tab"\
-                         data-toggle="tab">%s</a></li>\n' % (id_char, char)
+                html += """\n
+<li role="presentation" class="active"><a href="%s" role="tab" data-toggle="tab">%s</a></li>\n""" % (id_char, char)
             else:
-                html += '<li role="presentation"><a href="%s" role="tab"\
-                         data-toggle="tab">%s</a></li>\n' % (id_char, char)
+                html += """\
+<li role="presentation"><a href="%s" role="tab" data-toggle="tab">%s</a></li>\n""" % (id_char, char)
         html += """\
 </ul>
 <!-- Tab panes -->

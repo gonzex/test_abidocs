@@ -620,11 +620,11 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             cprint("WARNING: Found markdown files in mkdocs.py not present in directories", "yellow")
             for item in diff: print(item)
 
-    def get_citation_aelement(self, key, text=None, html_class=None):
+    def _get_citation_aelement(self, key, text=None, html_class=None):
         if html_class is None: html_class = " ".join(["wikilink", "citation-link"])
         # Handle citation
         ref = self.bib_data.entries[key]
-        url = "/theory/bibliography/#%s" % self.slugify(key)
+        url = "/theory/bibliography#%s" % self.slugify(key)
         # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
         a = etree.Element('a')
         content = ref.fields["title"] #+ "\n\n" + ref.authors
@@ -781,7 +781,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
                 elif name in self.bib_data.entries:
                     # Handle citation
-                    return self.get_citation_aelement(name, text=text)
+                    return self._get_citation_aelement(name, text=text)
 
                 elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
                     # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
@@ -856,7 +856,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 else:
                     # Handle [[bib:Amadon2008]]
                     try:
-                        return self.get_citation_aelement(name, text=text)
+                        return self._get_citation_aelement(name, text=text)
                     except Exception as exc:
                         cprint("WARNING: %s" % str(exc), "yellow")
                         url, text = "FAKE_URL", "FAKE_URL"
@@ -892,7 +892,9 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         if "#" in url:
             url, end = url.split("#")
         page_rpath = page_rpath.replace(".md", "")
+        if not page_rpath.startswith("/"): page_rpath = "/" + page_rpath
         url = os.path.relpath(url, page_rpath)
+        #print("page_rpath", page_rpath, "url", url)
         if end: url = "%s#%s" % (url, end)
         a.set('href', url)
 
@@ -1112,7 +1114,7 @@ class MarkdownPage(Page):
         for m in re.finditer(website.WIKILINK_RE, string):
             token = m.group(1).strip()
             try:
-                link = website.get_wikilink(token)
+                link = website.get_wikilink(token, self.url)
             except Exception as exc:
                 cprint("Exception while trying to handle wikilink `%s` in `%s`" % (token, self.path))
                 print(exc)
