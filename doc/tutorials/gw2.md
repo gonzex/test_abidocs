@@ -1,6 +1,9 @@
 ---
-authors: FBruneval, XG
-rpath: tutorials/gw2.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - FBruneval, XG
+    -   - rpath
+        - tutorials/gw2.md
 ---
 
 # Second lesson on GW  

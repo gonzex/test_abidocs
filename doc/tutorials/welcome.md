@@ -1,6 +1,9 @@
 ---
-authors: XG
-rpath: tutorials/welcome.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG
+    -   - rpath
+        - tutorials/welcome.md
 ---
 
 # Welcome  
@@ -27,7 +30,7 @@ capabilities are demonstrated in the lessons belonging to the violet blocks.
 The right-hand side blocks gather the lessons related to the parallelism
 inside ABINIT.
 
-![Schema 1](../documents/lesson_welcome/tutorial_flowchart_v5.png)
+![Schema 1](../documents/lesson_welcome/tutorial_flowchart_v6.png)
 
 Before following the tutorials, you should have read the [ "new user's
 guide"](../../users/generated_files/help_new_user.html), as well as the pages

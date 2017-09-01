@@ -1,6 +1,9 @@
 ---
-authors: MT
-rpath: tutorials/paw2.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MT
+    -   - rpath
+        - tutorials/paw2.md
 ---
 
 # Second lesson on the projector-augmented wave (PAW) technique  
@@ -100,8 +103,8 @@ flavor="...+atompaw"" option, the ATOMPAW code is directly available from
 command line.  
 First, just try to type: atompaw  
 if "atompaw vx.y.z" message appears, everything is fine.  
-Otherwise, you can try
-"~abinit_compilation_directory/fallbacks/exports/bin/atompaw-abinit"
+Otherwise, you can try "~abinit_compilation_directory/fallbacks/exports/bin
+/atompaw-abinit"
 
 In any case, in the following, we name atompaw the ATOMPAW executable.
 
@@ -467,8 +470,8 @@ physical results. Selecting a value of rVloc between 0.6*rPAW and 0.8*rPAW is
 a good choice; but the best way to adjust rVloc value is to have a look at the
 two values of evale in Ni file which are sensitive to the choice of rVloc. To
 change the value of  rVloc, one has to detail the line containing all radii
-(rPAW, rshape, rVloc and rcore); see [user's
-guide](../documents/lesson_paw2/atompaw-usersguide.pdf).
+(rPAW, rshape, rVloc and rcore); see [user's guide](../documents/lesson_paw2
+/atompaw-usersguide.pdf).
 
 * Change the matching radius rc for one (or both) l partial-wave(s). In some cases, changing rc can remove ghost states. 
 

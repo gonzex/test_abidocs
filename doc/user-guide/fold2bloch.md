@@ -1,6 +1,9 @@
 ---
-authors: AB,  OR
-rpath: user-guide/fold2bloch.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - AB,  OR
+    -   - rpath
+        - user-guide/fold2bloch.md
 ---
 
 # the Fold2Bloch utility  

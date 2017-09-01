@@ -1,5 +1,7 @@
 ---
-rpath: /index.md
+!!python/object/apply:collections.OrderedDict
+-   -   - rpath
+        - index.md
 ---
 
 ### **0\. Foreword**

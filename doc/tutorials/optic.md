@@ -1,6 +1,9 @@
 ---
-authors: SS, XG, YG
-rpath: tutorials/optic.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - SS, XG, YG
+    -   - rpath
+        - tutorials/optic.md
 ---
 
 # Lesson on optical properties  

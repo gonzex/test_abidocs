@@ -1,6 +1,9 @@
 ---
-authors: BAmadon
-rpath: tutorials/dmft.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - BAmadon
+    -   - rpath
+        - tutorials/dmft.md
 ---
 
 # Lesson on DFT+DMFT  

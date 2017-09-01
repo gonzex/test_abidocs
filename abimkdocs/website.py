@@ -18,6 +18,13 @@ from doc.tests.pymods.termcolor import cprint
 from .variables import Variable
 
 
+def my_unicode(s):
+    if sys.version_info[0] <= 2:
+        return unicode(s)
+    else:
+        return str(s)
+
+
 class lazy_property(object):
     """
     lazy_property descriptor
@@ -114,12 +121,9 @@ def splitall(path):
 class MyEntry(Entry):
     """https://bitbucket.org/pybtex-devs/pybtex/"""
 
-    @property
+    @lazy_property
     def authors(self):
-        if sys.version[0:3] <= '2.7':
-            return ", ".join(unicode(p) for p in self.persons["author"])
-        else:
-            return ", ".join(str(p) for p in self.persons["author"])
+        return ", ".join(my_unicode(p) for p in self.persons["author"])
 
     def to_markdown(self):
         fields = self.fields
@@ -489,10 +493,10 @@ This page gives hints on how to {howto} with the ABINIT package.
         workdir = os.path.join(self.root, "developers")
         with self.new_mdfile(os.path.join(workdir, "testsuite.md")) as fh:
             for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
-                fh.write('##  %s  \n\n' % suite_name)
+                fh.write('## %s  \n\n' % suite_name)
                 for rpath, test in group:
                     fh.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
-                    fh.write(unicode(test.description))
+                    fh.write(my_unicode(test.description))
                     fh.write("\n\n")
                     fh.write("Executable: %s   \n" % test.executable)
                     if test.keywords:
@@ -712,7 +716,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         html_classes = ["wikilink"]
         a = etree.Element("a")
 
-        if any(token.startswith(prefix) for prefix in ("www.", "http://", "https://", "ftp://", "file://")):
+        if any(token.startswith(prefix) for prefix in ("www.", "http:", "https:", "ftp:", "file:")):
             # Handle [[www.google.com|text]]
             url, text = token, token
             if "|" in token:
@@ -1126,10 +1130,10 @@ class MarkdownPage(Page):
             if "rpath" not in d or d["rpath"] != rpath:
                 d["rpath"] = rpath
                 #d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
-                #del lines[1:i]
-                #lines.insert(1, yaml.dump(d, indent=4, default_flow_style=False).strip())
-                #with io.open(self.path, "wt", encoding="utf-8") as fh:
-                #    fh.write("\n".join(lines))
+                del lines[1:i]
+                lines.insert(1, yaml.dump(d, indent=4, default_flow_style=False).strip())
+                with io.open(self.path, "wt", encoding="utf-8") as fh:
+                    fh.write("\n".join(lines))
 
         #print(self)
 
@@ -1185,5 +1189,5 @@ class AbinitStats(object):
     def json_dump(self, path):
         import json
         with io.open(path, "wt", encoding="utf-8") as fh:
-            fh.write(unicode(json.dumps(self.data, ensure_ascii=False)))
+            fh.write(my_unicode(json.dumps(self.data, ensure_ascii=False)))
             #json.dump(self.data, fh)

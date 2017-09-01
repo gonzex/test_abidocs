@@ -1,6 +1,9 @@
 ---
-authors: MS, MT
-rpath: tutorials/paw3.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MS, MT
+    -   - rpath
+        - tutorials/paw3.md
 ---
 
 # Third lesson on the projector-augmented wave (PAW) technique  
@@ -370,6 +373,8 @@ that we are converged within abinit:
     ...
     
 
+
+
 #### **3.2 Carbon - calculating the equilibrium lattice parameter**
 
 That we have converged the dataset on its own does of course not mean that the
@@ -497,6 +502,8 @@ then take the third root, so:
     
 
 at equilibrium for this dataset.
+
+
 
 #### **3.3 Carbon - the all-electron calculation**
 
@@ -1122,6 +1129,8 @@ Then we make sure to match the automatically determined smearing width, and
 most importantly, make sure that we match the smearing function used between
 the elk and the abinit calculation.
 
+
+
 #### **4.1 Magnesium - The all-electron calculation**
 
 There is an elk input file prepared at: [ elk_Mg_band.in
@@ -1310,6 +1319,8 @@ with this scale factor, we have that:
     
 
 Now we have all the information needed to proceed with the abinit calculation.
+
+
 
 #### **4.2 Magnesium - The abinit calculation**
 

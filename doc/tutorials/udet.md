@@ -1,6 +1,9 @@
 ---
-authors: DJA
-rpath: tutorials/udet.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - DJA
+    -   - rpath
+        - tutorials/udet.md
 ---
 
 # Calculation of U and J using Cococcioni's approach  
@@ -77,10 +80,10 @@ _You can compare your results with reference output files located in
 __~abinit/tests/tutorial/Refs __directories (for the present tutorial they are
 named tudet*.out)._
 
-The input file tudet_1.in is an example of a file to prepare a wave function
-for further processing. You might use the file tudet_1.files as a "files"
+The input file tudet_1.in is an example of a file to prepare a wave function
+for further processing. You might use the file tudet_1.files as a "files"
 file, and get the corresponding output file ../Refs/tudet_1.out).  
-Copy the files tudet_1.in and tudet_1.files in your work directory, and run
+Copy the files tudet_1.in and tudet_1.files in your work directory, and run
 ABINIT:
 
     
@@ -98,7 +101,7 @@ We do not suppress the writing of the _WFK file, because this is the input for
 the calculations of U.
 
 Once this calculation has finished, run the second one:  
-Copy the files tudet_2.in and tudet_2.files in your work directory, and run
+Copy the files tudet_2.in and tudet_2.files in your work directory, and run
 ABINIT:
 
     

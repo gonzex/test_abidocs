@@ -1,6 +1,9 @@
 ---
-authors: MT, FJ
-rpath: tutorials/paw1.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MT, FJ
+    -   - rpath
+        - tutorials/paw1.md
 ---
 
 # First lesson on the projector-augmented wave (PAW) technique  
@@ -506,13 +509,13 @@ Now, let's plot the DOS for the two new PAW datasets.
 
 \- First, save the existing tpaw1_4o_DOS_AT0001 file, naming it, for instance,
 tpaw1_4o_4proj_DOS_AT0001.  
-\- Open the tpaw1_4.files file and modify it in order to use the
-6c.lda.test-2proj.atompaw PAW dataset.  
+\- Open the tpaw1_4.files file and modify it in order to use the 6c.lda.test-
+2proj.atompaw PAW dataset.  
 \- Launch ABINIT again.  
 \- Save the new tpaw1_4o_DOS_AT0001 file, naming it, for instance,
 tpaw1_4o_2proj_DOS_AT0001.  
-\- Open the tpaw1_4.files file and modify it in order to use the
-6c.lda.test-6proj.atompaw PAW dataset.  
+\- Open the tpaw1_4.files file and modify it in order to use the 6c.lda.test-
+6proj.atompaw PAW dataset.  
 \- Launch ABINIT again.  
 \- Save the new tpaw1_4o_DOS_AT0001 file, naming it, for instance,
 tpaw1_4o_6proj_DOS_AT0001.

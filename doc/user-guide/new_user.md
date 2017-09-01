@@ -1,6 +1,9 @@
 ---
-authors: DCA, XG, RC
-rpath: user-guide/new_user.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - DCA, XG, RC
+    -   - rpath
+        - user-guide/new_user.md
 ---
 
 # new user help file  
@@ -111,15 +114,15 @@ subdirectories, e.g. "fast", the "vX" series (v1, v2, ... v67mbpt, v7, v8),
 "libxc", "paral", the "tutoX" series ...
 
 Many different sorts of pseudopotentials can be used with ABINIT. Most of them
-can be found on the [atomic data
-files](http://www.abinit.org/downloads/atomic-data-files) page of the ABINIT
-web site. There are official recommended pseudopotentials tables (the PAW JTH
-table, and the norm-conserving table from ONCVPSP), and also some older sets
-of pseudopotentials. A subset of existing pseudopotentials are used for test
-cases, and are located in the ~abinit/tests/Psps_for_tests directory, but they
-are not recommended for production. Information on pseudopotential files can
-be found in the [ABINIT help file](help_abinit.html#5) and the
-~abinit/doc/psp_infos directory.
+can be found on the [atomic data files](http://www.abinit.org/downloads
+/atomic-data-files) page of the ABINIT web site. There are official
+recommended pseudopotentials tables (the PAW JTH table, and the norm-
+conserving table from ONCVPSP), and also some older sets of pseudopotentials.
+A subset of existing pseudopotentials are used for test cases, and are located
+in the ~abinit/tests/Psps_for_tests directory, but they are not recommended
+for production. Information on pseudopotential files can be found in the
+[ABINIT help file](help_abinit.html#5) and the ~abinit/doc/psp_infos
+directory.
 
 
 

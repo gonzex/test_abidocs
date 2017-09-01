@@ -1,6 +1,9 @@
 ---
-authors: XG
-rpath: tutorials/tddft.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG
+    -   - rpath
+        - tutorials/tddft.md
 ---
 
 # Lesson on TDDFT  
@@ -40,7 +43,7 @@ comprehensive description of the underlying formalism is given in
 
 However this reference might be hard to get, that is why we have based the
 tutorial instead on the following (also early) papers : [[Casida1998]],
-[[Casida1998a]], and [[Vasiliev1999]].
+[[Casida1998a]], and [[Vasiliev1998]].
 
 The first of these papers, [[Casida1998]], will be used as main reference for
 our tutorial.
@@ -62,7 +65,7 @@ elements are four-wavefunction integrals of the Coulomb and Exchange-
 Correlation kernel. The exchange-correlation kernel contribution will differ
 in the spin-singlet and in the spin-triplet states, this being the only
 difference between spin-singlet and spin-triplet states. See Eqs.(1.3) and
-(1.4) of [[Casida1998b]], and Eqs.(1-2) of [[Vasiliev1998]].
+(1.4) of [[Casida1998a]], and Eqs.(1-2) of [[Vasiliev1998]].
 
 The construction of the coupling matrix can be done on the basis of an
 exchange-correlation kernel that is derived from the exchange-correlation

@@ -1,6 +1,9 @@
 ---
-authors: MVer
-rpath: tutorials/eph.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MVer
+    -   - rpath
+        - tutorials/eph.md
 ---
 
 # Electron-phonon lesson  

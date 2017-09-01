@@ -1,5 +1,7 @@
 ---
-rpath: /installation.md
+!!python/object/apply:collections.OrderedDict
+-   -   - rpath
+        - installation.md
 ---
 
 

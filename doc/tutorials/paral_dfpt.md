@@ -1,6 +1,9 @@
 ---
-authors: XG, RC
-rpath: tutorials/paral_dfpt.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/paral_dfpt.md
 ---
 
 # Parallelism in the DFPT formalism  
@@ -17,9 +20,8 @@ that are computed on the basis of the density-functional perturbation theory
 Such computations are realized when one of the input variables [[rfphon]],
 [[rfelfd]] or [[rfstrs]] are non-zero, which activates [[optdriver]]=1. You
 are supposed to be well-familiarized with such calculations before starting
-the present tutorial. See the input variables described in the file [[varrf]]
-and the tutorial [Response-Function 1](lesson_rf1.html) and subsequent
-tutorials.
+the present tutorial. See the input variables described in [[varset:dfpt]] and
+the tutorial [Response-Function 1](lesson_rf1.html) and subsequent tutorials.
 
 You will learn about the basic implementation of parallelism for DFPT
 calculations, then will execute a very simple, quick calculation for one

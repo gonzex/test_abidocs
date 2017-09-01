@@ -1,6 +1,9 @@
 ---
-authors: XG, RC
-rpath: tutorials/base3.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/base3.md
 ---
 
 # Third (basic) lesson  

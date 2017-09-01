@@ -1,6 +1,9 @@
 ---
-authors: VOlevano, XG
-rpath: tutorials/gw1.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - VOlevano, XG
+    -   - rpath
+        - tutorials/gw1.md
 ---
 
 # First lesson on GW  

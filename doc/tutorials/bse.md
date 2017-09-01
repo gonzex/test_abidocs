@@ -1,6 +1,9 @@
 ---
-authors: MG, MS
-rpath: tutorials/bse.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MG, MS
+    -   - rpath
+        - tutorials/bse.md
 ---
 
 # Lesson on Bethe-Salpeter calculations  

@@ -1,6 +1,9 @@
 ---
-authors: MT, GG
-rpath: tutorials/paral_images.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MT, GG
+    -   - rpath
+        - tutorials/paral_images.md
 ---
 
 # Parallelism on images, the string method  

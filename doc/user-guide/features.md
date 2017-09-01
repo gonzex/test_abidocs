@@ -1,6 +1,9 @@
 ---
-authors: FJ, XG
-rpath: user-guide/features.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - FJ, XG
+    -   - rpath
+        - user-guide/features.md
 ---
 
 # ABINIT features  
@@ -240,17 +243,23 @@ see [[prtelf]]). See the list of "printing" input variables in
 
 
 
-## 9 Other properties (e.g. positron) and analysis/postprocessing tools
+## 9 Other physical properties (e.g. positron)
 
   
   1. [[topic:positron|Positron calculations]]
-  2. [[topic:Abipy|Abipy]]
-  3. [[topic:APPA|Abinit Post-Processor Application (APPA), for molecular-dynamics trajectory analysis]]
-  4. [[topic:Band2eps|Band2eps for phonon dispersion curves]]
 
 
 
-## 10 Miscellaneous topics
+## 10 Analysis/postprocessing tools
+
+  
+  1. [[topic:Abipy|Abipy - ABINIT swiss knife]]
+  2. [[topic:APPA|Abinit Post-Processor Application (APPA), for molecular-dynamics trajectory analysis]]
+  3. [[topic:Band2eps|Band2eps for phonon dispersion curves]]
+
+
+
+## 11 Miscellaneous topics
 
   
   1. [[topic:Verification|Verification of the implementation]]

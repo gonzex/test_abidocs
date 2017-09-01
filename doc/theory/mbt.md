@@ -1,6 +1,9 @@
 ---
-authors: MG, MS
-rpath: theory/mbt.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MG, MS
+    -   - rpath
+        - theory/mbt.md
 ---
 
 # Many-Body Theory in ABINIT  

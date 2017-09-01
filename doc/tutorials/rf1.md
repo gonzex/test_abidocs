@@ -1,6 +1,9 @@
 ---
-authors: XG, RC
-rpath: tutorials/rf1.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/rf1.md
 ---
 
 # First lesson on DFPT  

@@ -1,6 +1,9 @@
 ---
-authors: XG, DCA
-rpath: user-guide/respfn.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, DCA
+    -   - rpath
+        - user-guide/respfn.md
 ---
 
 # DFPT  

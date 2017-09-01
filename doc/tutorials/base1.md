@@ -1,6 +1,9 @@
 ---
-authors: XG, RC
-rpath: tutorials/base1.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - XG, RC
+    -   - rpath
+        - tutorials/base1.md
 ---
 
 # First (basic) lesson  
@@ -185,9 +188,9 @@ later, what is in the "tbase1_1.out" and "log" output files.
   * Basic variables, varset_[[varset:basic]]
   * Files handling variables, varset_[[varset:files]]
   * Ground-state calculation variables, varset_[[varset:gstate]]
-  * GW variables, varset_[[varset:GW]]
+  * GW variables, varset_[[varset:gw]]
   * Parallelisation variables, varset_[[varset:paral]]
-  * Density Functional Perturbation Theory (DFPT) variables, varset_[[varset:DFPT]]
+  * Density Functional Perturbation Theory (DFPT) variables, varset_[[varset:dfpt]]
 
 However, the number of such variables is rather large! Note that a dozen of
 input variables were needed to run the first test case. This is possible

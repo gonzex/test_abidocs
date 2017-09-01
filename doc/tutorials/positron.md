@@ -1,6 +1,9 @@
 ---
-authors: JW, MT
-rpath: tutorials/positron.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - JW, MT
+    -   - rpath
+        - tutorials/positron.md
 ---
 
 # Electron-positron annihilation  

@@ -1,6 +1,9 @@
 ---
-authors: DCA,  XG
-rpath: user-guide/abinit.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - DCA,  XG
+    -   - rpath
+        - user-guide/abinit.md
 ---
 
 # ABINIT, the main code  
@@ -236,8 +239,8 @@ the input variable is given : a **mnemonics**, possibly some
 **characteristics**, the **variable type** (integer, real, string), and the
 **default value**. Then, follows the description of the variable.
 
-The **characteristics** can be one of the following : **DEVELOP**, **NO
-MULTI**, **INTERNAL_ONLY**, **INPUT_ONLY**, **EVOLVING**, **ENERGY**,
+The **characteristics** can be one of the following : **DEVELOP**,
+**NO_MULTI**, **INTERNAL_ONLY**, **INPUT_ONLY**, **EVOLVING**, **ENERGY**,
 **LENGTH**, **MAGNETIC FIELD**, as described now.
 
 **

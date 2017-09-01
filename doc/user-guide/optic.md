@@ -1,6 +1,9 @@
 ---
-authors: SS, XG, YG
-rpath: user-guide/optic.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - SS, XG, YG
+    -   - rpath
+        - user-guide/optic.md
 ---
 
 # the Optic utility  

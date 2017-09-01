@@ -1,6 +1,9 @@
 ---
-authors: MC, SP
-rpath: tutorials/analysis_tools.md
+!!python/object/apply:collections.OrderedDict
+-   -   - authors
+        - MC, SP
+    -   - rpath
+        - tutorials/analysis_tools.md
 ---
 
 # Lesson on analysis tools  
