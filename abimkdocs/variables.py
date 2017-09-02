@@ -256,11 +256,14 @@ class Variable(yaml.YAMLObject):
 
         return set(parents)
 
-    def website_ilink(self, label=None):
-        """String with the URL of the web page."""
+    def internal_link(self, website, page_rpath, label=None):
+        """String with the website internal URL."""
         label = self.name if label is None else str(label)
-        url = "/input_variables/%s#%s" % (self.varset, self.name)
-        return '<a href="%s">%s</a>' % (url, label)
+        #url = "/input_variables/%s#%s" % (self.varset, self.name)
+        #return '<a href="%s">%s</a>' % (url, label)
+        token = "%s:%s" % (self.code, self.name)
+        a = website.get_wikilink(token, page_rpath)
+        return '<a href="%s" class="%s">%s</a>' % (a.get("href"), a.get("class"), a.text)
 
     def to_markdown(self):
         lines = []; app = lines.append
@@ -512,7 +515,7 @@ class InputVariables(OrderedDict):
             od[char] = [self[name] for name in group]
         return od
 
-    def get_vartabs_html(self):
+    def get_vartabs_html(self, website, page_rpath):
         ch2vars = self.groupby_first_letter()
         # http://getbootstrap.com/javascript/#tabs
         html = """\
@@ -537,7 +540,8 @@ class InputVariables(OrderedDict):
 
         for i, (char, vlist) in enumerate(ch2vars.items()):
             id_char = "%s-%s" % (idname, char)
-            p = " ".join(v.website_ilink() for v in vlist)
+            p = " ".join(v.internal_link(website, page_rpath) for v in vlist)
+            #p = " ".join("[[%s:%s]]" % (v.code, v.name) for v in vlist)
             if i == 0:
                 html += '<div role="tabpanel" class="tab-pane active" id="%s">\n%s\n</div>\n' % (id_char, p)
             else:

@@ -6,6 +6,7 @@ import os
 import io
 import time
 import re
+import uuid
 import yaml
 import markdown
 
@@ -92,7 +93,6 @@ def gen_id(n=1, pre="uuid-"):
     # The HTML4 spec says:
     # ID and NAME tokens must begin with a letter ([A-Za-z]) and may be followed by any number of letters,
     # digits ([0-9]), hyphens ("-"), underscores ("_"), colons (":"), and periods (".").
-    import uuid
     if n == 1:
         return pre + str(uuid.uuid4())
     elif n > 1:
@@ -116,6 +116,10 @@ def splitall(path):
             path = parts[0]
             allparts.insert(0, parts[1])
     return allparts
+
+
+def sort_and_groupby(items, key, reverse=False):
+    return groupby(sorted(items, key=key, reverse=reverse), key=key)
 
 
 class MyEntry(Entry):
@@ -193,7 +197,7 @@ class MyEntry(Entry):
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="{modal_label_id}">bibtex</h4>
       </div>
-      <div class="modal-body"> {text} </div>
+      <div class="modal-body">{text}</div>
     </div>
   </div>
 </div>""".format(**locals())
@@ -228,7 +232,7 @@ class Website(object):
         self.verbose = verbose
 
         # Read mkdocs configuration file.
-        with io.open(os.path.join(self.root, "../", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
+        with io.open(os.path.join(self.root, "..", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
             self.config = yaml.load(fh)
 
         # Build database with Abinit input variables
@@ -285,7 +289,7 @@ class Website(object):
                 var = vd[vname]
                 var.tests.append(test)
 
-        # Pre-compute vars.tests frequency.
+        # Pre-compute vars.tests and their frequency.
         num_all_tutorial_tests = len([t for t in tests if t.suite_name.startswith("tuto")])
         for var in self.variables_code.iter_allvars():
             var.tests_info["num_all_tests"] = len(tests)
@@ -306,6 +310,7 @@ Change the input yaml files or the python code
     #    return "\n".join(lines)
 
     def new_mdfile(self, path, meta=None):
+        if self.verbose: print("Generating markdown file: `%s`" % path)
         rpath = "/" + os.path.relpath(path, self.root)
         if meta is None: meta = {}
         assert rpath not in meta
@@ -318,36 +323,39 @@ Change the input yaml files or the python code
 
     def generate_markdown_files(self):
         start = time.time()
-
         # Write files with the description of the input variables.
         workdir = os.path.join(self.root, "input_variables")
-        with self.new_mdfile(os.path.join(workdir, "index.md")) as fh:
+        md_path = os.path.join(workdir, "index.md")
+        page_rpath = "/" + os.path.relpath(md_path, self.root)
+        with self.new_mdfile(md_path) as mdf:
+        #with self.new_mdfile("input_variables", "index.md") as mdf:
             for code, vd in self.variables_code.items():
-                fh.write("## **%s** variables   \n\n" % code)
-                fh.write(vd.get_vartabs_html())
-                fh.write(2*"\n" + "* * *\n")
+                mdf.write("## %s variables   \n\n" % code)
+                mdf.write(vd.get_vartabs_html(self, page_rpath))
+                mdf.write(2*"\n" + "* * *\n")
 
-        # Write page with external parameters.
-        with self.new_mdfile(os.path.join(workdir, "external_parameters.md")) as fh:
-            fh.write("""\
+        # Build markdown page with external parameters.
+        with self.new_mdfile(os.path.join(workdir, "external_parameters.md")) as mdf:
+        #with self.new_mdfile("input_variables", "external_parameters.md")) as mdf:
+            mdf.write("""\
 This document lists and provides the description of the name (keywords) of external parameters
 that are not input variables, but that are used in the documentation of other variables,
 typically compilation parameters, available libraries, or number of processors.
-
 You can change these parameters at compile or run time usually.
 
 """)
             for pname, info in self.variables_code.external_params.items():
-                fh.write("## %s  \n" % pname)
-                fh.write("%s\n * * *\n" % info)
+                mdf.write("## %s  \n" % pname)
+                mdf.write("%s\n * * *\n" % info)
 
 	# Build markdown page for the different sets.
         for code, vd in self.variables_code.items():
             cprint("Generating markdown files with input variables of code: `%s`..." % vd.codename, "green")
             for varset in vd.all_varset:
                 var_list = [v for v in vd.values() if v.varset == varset]
-                with self.new_mdfile(os.path.join(workdir, varset + ".md")) as fh:
-                    fh.write("""\
+                with self.new_mdfile(os.path.join(workdir, varset + ".md")) as mdf:
+                #with self.new_mdfile("input_variables", varset + ".md")) as mdf:
+                    mdf.write("""\
 # {varset} input variables
 
 This document lists and provides the description of the name (keywords) of the
@@ -356,36 +364,41 @@ This document lists and provides the description of the name (keywords) of the
 """.format(varset=varset, codename=vd.codename))
 
                     for var in var_list:
-                        fh.write(var.to_markdown())
+                        mdf.write(var.to_markdown())
 
         # Add plotly figures.
         """"
-        with self.new_mdfile(os.path.join(workdir, "connections.md"), meta={"plotly": True}) as fh:
+        with self.new_mdfile(os.path.join(workdir, "connections.md"), meta={"plotly": True}) as mdf:
             for code, vd in self.variables_code.items():
                 for varset in vd.all_varset:
-                    fh.write("## %s, varset: %s  \n\n" % (code, varset))
-                    fh.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
-                    #fh.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
-                    fh.write(2*"\n" + "* * *\n")
+                    mdf.write("## %s, varset: %s  \n\n" % (code, varset))
+                    mdf.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
+                    #mdf.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
+                    mdf.write(2*"\n" + "* * *\n")
         """
 
-        with self.new_mdfile(os.path.join(workdir, "varset_stats.md")) as fh:
-            fh.write("# Input variables, statistics\n")
-            fh.write("""\
+        md_path = os.path.join(workdir, "varset_stats.md")
+        page_rpath = "/" + os.path.relpath(md_path, self.root)
+        with self.new_mdfile(md_path) as mdf:
+        #with self.new_mdfile("input_variables", md_path) as mdf:
+            mdf.write("""
+# Input variables, statistics
+
 This document lists the input variables for ABINIT and three post-processors of ABINIT,
 in order of number of occurrence in the input files provided with the package.
+
 """)
             for code, vd in self.variables_code.items():
                 num_tests = len([test for test in self.rpath2test.values() if test.executable == code])
-                fh.write("\n\n## **%s** \n\n" % code)
-                fh.write("%d tests\n\n" % num_tests)
+                mdf.write("\n\n## **%s** \n\n" % code)
+                mdf.write("%d tests\n\n" % num_tests)
                 # TODO The number of tests is smaller than ecut! Count Tutorial
                 items = sorted([(len(v.tests), v) for v in vd.values()], key=lambda t: t[0], reverse=True)
                 # https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp
                 lines = ['<ul class="list-group">']
                 for count, group in groupby(items, key=lambda t: t[0]):
                     vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
-                    s = ", ".join(v.website_ilink() for v in vlist)
+                    s = ", ".join(v.internal_link(self, page_rpath) for v in vlist)
                     # Set color depending on coverage.
                     ratio = 100 * count / num_tests
                     if ratio > 40:
@@ -396,15 +409,14 @@ in order of number of occurrence in the input files provided with the package.
                         cls = "list-group-item-danger"
                     lines.append('<li class="list-group-item %s"> %s <span class="badge"> %d </span></li>' % (cls, s, count))
 
-                fh.write("\n".join(lines) + "</ul>")
+                mdf.write("\n".join(lines) + "</ul>")
 
         cprint("Generating Markdown files with topics ...", "green")
         workdir = os.path.join(self.root, "topics")
-        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
 
+        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
         with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
             self.all_topics = sorted(yaml.load(fh), key=lambda t: t[0].upper())
-
         with io.open(os.path.join(repo_root, "list_tribes.yml"), "rt", encoding="utf-8") as fh:
             # tribe_name --> description
             self.all_tribes = OrderedDict(yaml.load(fh))
@@ -431,8 +443,8 @@ in order of number of occurrence in the input files provided with the package.
             vlist = [var for var in self.variables_code.iter_allvars() if topic in var.topic_tribes]
             if vlist:
                 lines = []
-                items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: t[0])
-                for tribe, group in groupby(items, key=lambda t: t[0]):
+                items = [(v.topic_tribes[topic][0], v) for v in vlist]
+                for tribe, group in sort_and_groupby(items, key=lambda t: t[0]):
                     lines.append("*%s:*\n" % tribe)
                     lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
                     lines.append(" ")
@@ -443,9 +455,8 @@ in order of number of occurrence in the input files provided with the package.
             items = [(rpath, test) for (rpath, test) in self.rpath2test.items() if topic in test.topics]
             selected_input_files = "No input file associated to this topic."
             if items:
-                items = sorted(items, key=lambda t: t[1].suite_name)
                 lines = []
-                for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
+                for suite_name, group in sort_and_groupby(items, key=lambda t: t[1].suite_name):
                     lines.append("*%s:*\n" % suite_name)
                     lines.extend("- [[%s]]" % rpath for (rpath, test) in group)
                     lines.append(" ")
@@ -475,37 +486,40 @@ This page gives hints on how to {howto} with the ABINIT package.
 
 {tutorials}""".format(tutorials=html2text(tutorials))
 
-            with self.new_mdfile(os.path.join(workdir, topic + ".md"), meta={"authors": top.authors}) as fh:
-                fh.write(text)
+            with self.new_mdfile(os.path.join(workdir, topic + ".md"), meta={"authors": top.authors}) as mdf:
+            #with self.new_mdfile("topics", topic + ".md", meta={"authors": top.authors}) as mdf:
+                mdf.write(text)
 
         # Now we can write topics index.md (sorted by first character)
-        for firstchar, group in groupby(self.all_topics, key=lambda t: t[0].upper()):
+        for firstchar, group in sort_and_groupby(self.all_topics, key=lambda t: t[0].upper()):
             index_md.append("## %s" % firstchar)
             index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, self.howto_topic[topic]) for topic in group)
 
-        with self.new_mdfile(os.path.join(workdir, "index.md")) as fh:
-            fh.write("\n".join(index_md))
+        with self.new_mdfile(os.path.join(workdir, "index.md")) as mdf:
+        #with self.new_mdfile("topics", "index.md") as mdf:
+            mdf.write("\n".join(index_md))
 
         # Build page with full list of tests grouped by `suite_name`.
         cprint("Generating Markdown file with tests ...", "green")
         items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
-        items = sorted(items, key=lambda t: t[1].suite_name)
         workdir = os.path.join(self.root, "developers")
-        with self.new_mdfile(os.path.join(workdir, "testsuite.md")) as fh:
-            for suite_name, group in groupby(items, key=lambda t: t[1].suite_name):
-                fh.write('## %s  \n\n' % suite_name)
+        with self.new_mdfile(os.path.join(workdir, "testsuite.md")) as mdf:
+        #with self.new_mdfile("developers", "testsuite.md")) as mdf:
+            for suite_name, group in sort_and_groupby(items, key=lambda t: t[1].suite_name):
+                mdf.write('## %s  \n\n' % suite_name)
                 for rpath, test in group:
-                    fh.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
-                    fh.write(my_unicode(test.description))
-                    fh.write("\n\n")
-                    fh.write("Executable: %s   \n" % test.executable)
+                    #mdf.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
+                    mdf.write('### [[%s]]   \n\n' %  rpath)
+                    mdf.write(my_unicode(test.description))
+                    mdf.write("\n\n")
+                    mdf.write("Executable: %s   \n" % test.executable)
                     if test.keywords:
-                        fh.write("Keywords(s): %s   \n" % ", ".join(k for k in sorted(test.keywords)))
+                        mdf.write("Keywords(s): %s   \n" % ", ".join(k for k in sorted(test.keywords)))
                     if test.topics:
-                        fh.write("Topic(s): %s  \n" % ", ".join("[[topic:%s]]" % t for t in test.topics))
+                        mdf.write("Topic(s): %s  \n" % ", ".join("[[topic:%s]]" % t for t in test.topics))
                     if test.authors and "Unknown" not in test.authors:
-                        fh.write("Author(s): %s  \n" % ", ".join(a for a in sorted(test.authors)))
-                    fh.write("\n\n* * *\n\n")
+                        mdf.write("Author(s): %s  \n" % ", ".join(a for a in sorted(test.authors)))
+                    mdf.write("\n\n* * *\n\n")
 
         # All markdown files have been generated. Now find all wikilinks,
         # in particular the bibliographic references needed to generate backlinks.
@@ -518,7 +532,8 @@ This page gives hints on how to {howto} with the ABINIT package.
             for citation in page.citations:
                 citation2pages[citation].append(page)
 
-        with self.new_mdfile(os.path.join(self.root, "theory", "bibliography.md")) as fh:
+        with self.new_mdfile(os.path.join(self.root, "theory", "bibliography.md")) as mdf:
+        #with self.new_mdfile("theory", "bibliography.md")) as mdf:
             lines = []
             lines.append("""\
 # Bibliography
@@ -535,10 +550,10 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 except Exception as exc:
                     raise ValueError("Exception while trying to convert bibtex entry `%s`\n%s\n" % (name, str(exc)))
                 if citation2pages[name]:
-                    lines.append("Referred to in: %s" % ", ".join('<a href="{url}"> {url} </a>'.format(url=page.url)
+                    lines.append("Referred to in: %s" % ", ".join('<a href="{url}"> {url} </a>'.format(url=page.relurl)
                         for page in citation2pages[name]))
                 lines.append("* * *")
-            fh.write("\n".join(lines))
+            mdf.write("\n".join(lines))
 
         # Write acknowledgments page
         repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/biblio/origin_files/"
@@ -548,10 +563,11 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             else:
                 raise RuntimeError("Cannot find `acknow` section in components")
 
-        with self.new_mdfile(os.path.join(self.root, "theory", "acknowledgments.md")) as fh:
-            fh.write("# Acknowledgments  \n")
-            fh.write(html2text(comp.purpose))
-            fh.write(html2text(comp.introduction))
+        with self.new_mdfile(os.path.join(self.root, "theory", "acknowledgments.md")) as mdf:
+        #with self.new_mdfile("theory", "acknowledgments.md")) as mdf:
+            mdf.write("# Acknowledgments  \n")
+            mdf.write(html2text(comp.purpose))
+            mdf.write(html2text(comp.introduction))
 
         #topic2pages = defaultdict(list)
         #for page in self.md_pages:
@@ -619,20 +635,6 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         if diff:
             cprint("WARNING: Found markdown files in mkdocs.py not present in directories", "yellow")
             for item in diff: print(item)
-
-    def _get_citation_aelement(self, key, text=None, html_class=None):
-        if html_class is None: html_class = " ".join(["wikilink", "citation-link"])
-        # Handle citation
-        ref = self.bib_data.entries[key]
-        url = "/theory/bibliography#%s" % self.slugify(key)
-        # Popover https://www.w3schools.com/bootstrap/bootstrap_popover.asp
-        a = etree.Element('a')
-        content = ref.fields["title"] #+ "\n\n" + ref.authors
-        add_popover(a, content=content)
-        a.set('href', url)
-        a.text = "[%s]" % key if text is None else text
-        if html_class: a.set('class', html_class)
-        return a
 
     def slugify(self, value):
         """ Slugify a string, to make it URL friendly. """
@@ -712,7 +714,6 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         #if not token:
         #    print("Warning: empty wikilink", token)
         #    return ""
-
         html_classes = ["wikilink"]
         a = etree.Element("a")
 
@@ -732,7 +733,8 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             raise ValueError("Cannot parse wikilink token `%s`" % token)
 
         if namespace is not None and name is None:
-            raise ValueError("Wrong wikilink token: `%s`. namespace is not None and name is None" % token)
+            raise ValueError("Wrong wikilink token: `%s` in `%s`.\nnamespace is not None and name is None" %
+                    (token, page_rpath))
 
         # Find url and text
         if namespace is None:
@@ -781,7 +783,11 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
                 elif name in self.bib_data.entries:
                     # Handle citation
-                    return self._get_citation_aelement(name, text=text)
+                    ref = self.bib_data.entries[name]
+                    url = "/theory/bibliography#%s" % self.slugify(name)
+                    add_popover(a, content=ref.fields["title"]) #+ "\n\n" + ref.authors
+                    text = "[%s]" % name if text is None else text
+                    html_classes.append("citation-link")
 
                 elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
                     # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
@@ -812,7 +818,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     add_popover(a, title=self.variables_code.external_params[name], content=content)
 
                 else:
-                    msg = "Don't know how to handle wikilink token `%s`" % token
+                    msg = "Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath)
                     cprint("WARNING: %s" % msg, "yellow")
                     url, text = "FAKE_URL", "FAKE_URL"
                     #raise ValueError(msg)
@@ -836,7 +842,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
             elif namespace == "help":
                 # [[help:optic|text]
-                # %%[[help_codename]]%% is echoed "codename help file" :
+                # NB: [[help_codename]] is echoed "codename help file"
                 url = "/user-guide/help_%s" % name
                 if text is None: text = "%s help file" % name
                 html_classes.append("user-guide-link")
@@ -856,9 +862,13 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 else:
                     # Handle [[bib:Amadon2008]]
                     try:
-                        return self._get_citation_aelement(name, text=text)
+                        ref = self.bib_data.entries[name]
+                        url = "/theory/bibliography#%s" % self.slugify(name)
+                        add_popover(a, content=ref.fields["title"]) #+ "\n\n" + ref.authors
+                        text = "[%s]" % name if text is None else text
+                        html_classes.append("citation-link")
                     except Exception as exc:
-                        cprint("WARNING: %s" % str(exc), "yellow")
+                        cprint("WARNING: token: `%s` in `%s`\n%s" % (token, page_rpath, str(exc)), "yellow")
                         url, text = "FAKE_URL", "FAKE_URL"
 
             elif namespace == "theorydoc":
@@ -877,7 +887,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 if text is None: text = "%s varset" % name
 
             else:
-                msg = "Don't know how to handle wikilink token `%s`" % token
+                msg = "Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath)
                 #raise ValueError(msg)
                 cprint("WARNING: %s" % msg, "yellow")
                 url, text = "FAKE_URL", "FAKE_URL"
@@ -891,13 +901,17 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         end = ""
         if "#" in url:
             url, end = url.split("#")
-        page_rpath = page_rpath.replace(".md", "")
-        if not page_rpath.startswith("/"): page_rpath = "/" + page_rpath
-        url = os.path.relpath(url, page_rpath)
-        #print("page_rpath", page_rpath, "url", url)
-        if end: url = "%s#%s" % (url, end)
-        a.set('href', url)
+        if not url:
+            # Handle `#internal_link`
+            href = end
+        else:
+            page_rpath = os.path.dirname(page_rpath.replace(".md", ""))
+            if not page_rpath.startswith("/"): page_rpath = "/" + page_rpath
+            url = os.path.relpath(url, page_rpath)
+            #print("page_rpath", page_rpath, "url", url)
+            if end: url = "%s#%s" % (url, end)
 
+        a.set('href', url)
         return a
 
     def validate_html_build(self):
@@ -972,7 +986,6 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         s = """\
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
-
 <!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -1041,17 +1054,20 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         for i, (path, tid) in enumerate(zip(paths, tab_ids)):
             s += """\
-                    <li class="{li_class}">
-                    <a href="{href}" data-toggle="pill">{path}</a>
-                    </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
-        s +=  """</ul>
-                 <!-- Tab panes -->
-                 <div class="tab-content clearfix">"""
+<li class="{li_class}">
+<a href="{href}" data-toggle="pill">{path}</a>
+</li>""".format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+        s +=  """\
+</ul>
+<!-- Tab panes -->
+<div class="tab-content clearfix">
+"""
 
         for i, (text, tid, editor_id) in enumerate(zip(text_list, tab_ids, editor_ids)):
-            s += """<div class="tab-pane {active}" id="{tid}">
-                <div id="{editor_id}" class="editor" hidden>{text}</div></div>""".format(
-                    active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
+            s += """\
+<div class="tab-pane {active}" id="{tid}">
+<div id="{editor_id}" class="editor" hidden>{text}</div></div>
+""".format(active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
 
         s +=  2 * "</div> "
         return s
@@ -1070,6 +1086,10 @@ class Page(object):
         return os.path.relpath(self.path, self.website.root)
 
     @property
+    def relurl(self):
+        return os.path.relpath(self.path, self.website.root).replace(".md", "")
+
+    @property
     def url(self):
         return ("/" + self.relpath).replace(".md", "")
 
@@ -1083,14 +1103,6 @@ class Page(object):
     #def __init__(self, attrib={}, **extra):
     #    self = etree.Element("a", attrib={}, **extra)
     #    super(Wikilink, self).__init__("a", attrib={}, **extra)
-    #    self.abidata = {
-    #        token=None,
-    #        namespace=None
-    #        name=None
-    #        section=None,
-    #        text=None,
-    #    }
-    #def set_abidata(self)
 
 def add_popover(element, title=None, content=None):
     # Cannot subclass etree.Element in py2.7
@@ -1117,6 +1129,7 @@ class MarkdownPage(Page):
                 link = website.get_wikilink(token, self.url)
             except Exception as exc:
                 cprint("Exception while trying to handle wikilink `%s` in `%s`" % (token, self.path))
+                raise
                 print(exc)
                 continue
 
@@ -1213,4 +1226,3 @@ class AbinitStats(object):
         import json
         with io.open(path, "wt", encoding="utf-8") as fh:
             fh.write(my_unicode(json.dumps(self.data, ensure_ascii=False)))
-            #json.dump(self.data, fh)

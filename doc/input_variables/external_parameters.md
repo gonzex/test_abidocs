@@ -8,7 +8,6 @@ Change the input yaml files or the python code
 This document lists and provides the description of the name (keywords) of external parameters
 that are not input variables, but that are used in the documentation of other variables,
 typically compilation parameters, available libraries, or number of processors.
-
 You can change these parameters at compile or run time usually.
 
 ## AUTO_FROM_PSP  

@@ -1,8 +1,10 @@
 site_name: abinit
 site_url: http://www.abinit.org
+#site_url: https://gmatteo.github.io/test_abidocs/
 site_description: Abinit documentation
 site_author: The Abinit group
 site_favicon: images/favicon.ico
+#edit_uri: edit/master/docs/
 docs_dir: doc
 
 repo_name: github-abinit
@@ -10,9 +12,9 @@ repo_url: https://github.com/abinit/abinit/
 
 # If `True`, use `<page_name>/index.hmtl` style files with hyperlinks to
 # the directory. If `False`, use `<page_name>.html style file with hyperlinks to the file.
-# True generates nicer URLs, but False is useful if browsing the output on
-# a filesystem.
+# True generates nicer URLs, but False is useful if browsing the output on a filesystem.
 use_directory_urls: True
+#use_directory_urls: False
 
 pages:
 #- Quick Start: 
