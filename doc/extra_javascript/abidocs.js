@@ -36,6 +36,7 @@ $(document).ready(function(){
 
 
 // Return to top arrow. https://codepen.io/rdallaire/pen/apoyx
+/*
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -43,6 +44,7 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
+*/
 
 $('#return-to-top').click(function() {      // When arrow is clicked
     $('body,html').animate({
