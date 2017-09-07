@@ -1,4 +1,8 @@
 # coding: utf-8
+"""
+Classes and functions used to generate the (static) website with the Abinit documentation
+and tutorials using markdown files and mkdocs.
+"""
 from __future__ import print_function, division, unicode_literals, absolute_import
 
 import sys
@@ -17,13 +21,6 @@ from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
 from doc.tests.pymods.termcolor import cprint
 from .variables import Variable
-
-
-def my_unicode(s):
-    if sys.version_info[0] <= 2:
-        return unicode(s)
-    else:
-        return str(s)
 
 
 class lazy_property(object):
@@ -78,15 +75,16 @@ class lazy_property(object):
         if name in inst.__dict__:
             del inst.__dict__[name]
 
-def escape(text):
-    # Recent Python 3.2 have html module with html.escape() and html.unescape() functions.
-    # html.escape() differs from cgi.escape() by its defaults to quote=True
-    try:
-        import html
-        return html.escape(text)
-    except ImportError:
-        import cgi
-        return cgi.escape(text)
+
+def my_unicode(s):
+    return unicode(s) if sys.version_info[0] <= 2 else str(s)
+
+def escape(text, tag=None):
+    import cgi
+    text = cgi.escape(text, quote=True)
+    if tag:
+        text = "<{tag}>\n{text}\n</{tag}>\n".format(tag=tag, text=text)
+    return text
 
 
 def gen_id(n=1, pre="uuid-"):
@@ -137,9 +135,11 @@ class MyEntry(Entry):
         if self.type == "article":
             s = '{}  \n{}  \n'.format(authors, title)
             if "eprint" in fields:
-                s += "{} **{}**, {} ({})".format(fields["journal"], fields.get("archivePrefix", ""), fields["eprint"], fields["year"])
+                s += "{} **{}**, {} ({})".format(fields["journal"], fields.get("archivePrefix", ""),
+                        fields["eprint"], fields["year"])
             else:
-                s += "{} **{}**, {} ({})".format(fields["journal"], fields["volume"], fields["pages"], fields["year"])
+                s += "{} **{}**, {} ({})".format(fields["journal"], fields["volume"],
+                        fields["pages"], fields["year"])
 
         elif self.type in ("book", "incollection"): # FIXME Better treatment for incollection
             #editors = ", ".join(str(e) for e in self.persons["editor"]])
@@ -181,7 +181,7 @@ class MyEntry(Entry):
 
     def get_bibtex_linkmodal(self):
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
-        text = "<pre>" + escape(self.to_bibtex()) + "</pre>"
+        text = escape(self.to_bibtex(), tag="pre")
         # Construct ids from self.key as they are unique.
         modal_id, modal_label_id = "modal-id-%s" % self.key, "modal-label-id-%s" % self.key
 
@@ -221,7 +221,6 @@ def get_website():
 
 
 class Website(object):
-
     #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
     #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
     WIKILINK_RE = r'\[\[([^\[]+)\]\]'
@@ -230,12 +229,14 @@ class Website(object):
         start = time.time()
         self.root = os.path.abspath(root)
         self.verbose = verbose
+        self.md_generated = []
 
         # Read mkdocs configuration file.
+        # TODO: Should read version from a centralized file.
         with io.open(os.path.join(self.root, "..", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
             self.config = yaml.load(fh)
 
-        # Build database with Abinit input variables
+        # Build database with all input variables indexed by code name.
         from .variables import get_variables_code
         self.variables_code = get_variables_code()
 
@@ -244,7 +245,7 @@ class Website(object):
         for entry in self.bib_data.entries.values():
             entry.__class__ = MyEntry
 
-        # Get code statistics.
+        # Read code statistics from file and produce json file.
         self.abinit_stats = AbinitStats(os.path.join(self.root, "statistics.txt"))
         self.abinit_stats.json_dump(os.path.join(self.root, "data", "statistics.json"))
 
@@ -264,17 +265,9 @@ class Website(object):
         #self.rpath2test = {t.inp_fname: t for t in tests}
         self.rpath2test = {}
         for t in tests:
-            toks = splitall(t.inp_fname)[-4:]
-            key = os.path.join(*toks)
+            key = os.path.join(*splitall(t.inp_fname)[-4:])
             self.rpath2test[key] = t
         #print(self.rpath2test.keys())
-
-        def test_get_varnames(test, varnames):
-            """This should become a method of BaseTest."""
-            with io.open(test.inp_fname, "rt", encoding="utf-8") as fh:
-                s = fh.read()
-            vused = [v for v in varnames if v in s] # TODO This can be improved.
-            return vused
 
         # Find variables used in tests.
         for var in self.variables_code.iter_allvars():
@@ -282,19 +275,31 @@ class Website(object):
             var.tests = []
             var.tests_info = {}
 
+        def test_get_varnames(test, varnames):
+            # TODO: This should become a method of BaseTest.
+            with io.open(test.inp_fname, "rt", encoding="utf-8") as fh:
+                s = fh.read()
+            vused = [v for v in varnames if v in s] # TODO This can be improved.
+            return vused
+
         for test in tests:
-            vd = self.variables_code.get(test.executable, None) # FIXME Multibinit, conducti?
-            if vd is None: continue
+            vd = self.variables_code.get(test.executable, None)
+            if vd is None: continue  # TODO Multibinit, conducti?
             for vname in test_get_varnames(test, list(vd.keys())):
                 var = vd[vname]
                 var.tests.append(test)
 
         # Pre-compute vars.tests and their frequency.
-        num_all_tutorial_tests = len([t for t in tests if t.suite_name.startswith("tuto")])
+        #num_all_tutorial_tests = len([t for t in tests if t.suite_name.startswith("tuto")])
         for var in self.variables_code.iter_allvars():
-            var.tests_info["num_all_tests"] = len(tests)
-            var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
-            var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
+            #var.tests_info["num_all_tests"] = len(tests)
+            #var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
+            #var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
+            var.tests_info["num_all_tests"] = len([t for t in tests if t.executable == var.code])
+            var.tests_info["num_all_tutorial_tests"] = len([t for t in tests
+                if t.executable == var.code and t.suite_name.startswith("tuto")])
+            var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests
+                if t.executable == var.code and t.suite_name.startswith("tuto")])
 
         cprint("Initial website generation completed in %.2f [s]" % (time.time() - start), "green")
 
@@ -304,39 +309,34 @@ This file is automatically generated by mksite.py. All changes will be lost.
 Change the input yaml files or the python code
 -->
 """
-    #def __str__(self):
-    #    lines = []
-    #    app = lines.append
-    #    return "\n".join(lines)
-
-    def new_mdfile(self, path, meta=None):
+    def new_mdfile(self, dirname, mdname, meta=None):
+        path = os.path.join(self.root, dirname, mdname)
+        assert path not in self.md_generated
+        self.md_generated.append(path)
         if self.verbose: print("Generating markdown file: `%s`" % path)
         rpath = "/" + os.path.relpath(path, self.root)
         if meta is None: meta = {}
-        assert rpath not in meta
+        assert "rpath" not in meta
         meta["rpath"] = rpath
         s = yaml.dump(meta, indent=4, default_flow_style=False).strip()
-        fh = io.open(path, "wt", encoding="utf-8")
-        fh.write("---\n%s\n---\n" % s)
-        fh.write(self.do_not_edit_comment)
-        return fh
+        mdf = io.open(path, "wt", encoding="utf-8")
+        mdf.write("---\n%s\n---\n" % s)
+        mdf.write(self.do_not_edit_comment)
+        mdf.rpath = rpath
+        return mdf
 
     def generate_markdown_files(self):
         start = time.time()
-        # Write files with the description of the input variables.
-        workdir = os.path.join(self.root, "input_variables")
-        md_path = os.path.join(workdir, "index.md")
-        page_rpath = "/" + os.path.relpath(md_path, self.root)
-        with self.new_mdfile(md_path) as mdf:
-        #with self.new_mdfile("input_variables", "index.md") as mdf:
+        # Write index.md with the description of the input variables.
+        with self.new_mdfile("input_variables", "index.md") as mdf:
             for code, vd in self.variables_code.items():
                 mdf.write("## %s variables   \n\n" % code)
+                page_rpath = mdf.rpath
                 mdf.write(vd.get_vartabs_html(self, page_rpath))
                 mdf.write(2*"\n" + "* * *\n")
 
         # Build markdown page with external parameters.
-        with self.new_mdfile(os.path.join(workdir, "external_parameters.md")) as mdf:
-        #with self.new_mdfile("input_variables", "external_parameters.md")) as mdf:
+        with self.new_mdfile("input_variables", "external_parameters.md") as mdf:
             mdf.write("""\
 This document lists and provides the description of the name (keywords) of external parameters
 that are not input variables, but that are used in the documentation of other variables,
@@ -348,13 +348,12 @@ You can change these parameters at compile or run time usually.
                 mdf.write("## %s  \n" % pname)
                 mdf.write("%s\n * * *\n" % info)
 
-	# Build markdown page for the different sets.
+	# Build markdown pages for the different sets of variables..
         for code, vd in self.variables_code.items():
             cprint("Generating markdown files with input variables of code: `%s`..." % vd.codename, "green")
             for varset in vd.all_varset:
                 var_list = [v for v in vd.values() if v.varset == varset]
-                with self.new_mdfile(os.path.join(workdir, varset + ".md")) as mdf:
-                #with self.new_mdfile("input_variables", varset + ".md")) as mdf:
+                with self.new_mdfile("input_variables", varset + ".md") as mdf:
                     mdf.write("""\
 # {varset} input variables
 
@@ -362,13 +361,12 @@ This document lists and provides the description of the name (keywords) of the
 {varset} input variables to be used in the input file for the {codename} executable.
 
 """.format(varset=varset, codename=vd.codename))
-
                     for var in var_list:
                         mdf.write(var.to_markdown())
 
         # Add plotly figures.
         """"
-        with self.new_mdfile(os.path.join(workdir, "connections.md"), meta={"plotly": True}) as mdf:
+        with self.new_mdfile("input_variables", "connections.md"), meta={"plotly": True}) as mdf:
             for code, vd in self.variables_code.items():
                 for varset in vd.all_varset:
                     mdf.write("## %s, varset: %s  \n\n" % (code, varset))
@@ -377,10 +375,8 @@ This document lists and provides the description of the name (keywords) of the
                     mdf.write(2*"\n" + "* * *\n")
         """
 
-        md_path = os.path.join(workdir, "varset_stats.md")
-        page_rpath = "/" + os.path.relpath(md_path, self.root)
-        with self.new_mdfile(md_path) as mdf:
-        #with self.new_mdfile("input_variables", md_path) as mdf:
+        # Write Markdown page with statistics.
+        with self.new_mdfile("input_variables", "varset_stats.md") as mdf:
             mdf.write("""
 # Input variables, statistics
 
@@ -390,7 +386,7 @@ in order of number of occurrence in the input files provided with the package.
 """)
             for code, vd in self.variables_code.items():
                 num_tests = len([test for test in self.rpath2test.values() if test.executable == code])
-                mdf.write("\n\n## **%s** \n\n" % code)
+                mdf.write("\n\n## %s \n\n" % code)
                 mdf.write("%d tests\n\n" % num_tests)
                 # TODO The number of tests is smaller than ecut! Count Tutorial
                 items = sorted([(len(v.tests), v) for v in vd.values()], key=lambda t: t[0], reverse=True)
@@ -398,7 +394,9 @@ in order of number of occurrence in the input files provided with the package.
                 lines = ['<ul class="list-group">']
                 for count, group in groupby(items, key=lambda t: t[0]):
                     vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
-                    s = ", ".join(v.internal_link(self, page_rpath) for v in vlist)
+                    #rpath = mdf.rpath
+                    rpath = os.path.join(mdf.rpath.replace(".md", ""), "index.md")
+                    s = ", ".join(v.internal_link(self, rpath) for v in vlist)
                     # Set color depending on coverage.
                     ratio = 100 * count / num_tests
                     if ratio > 40:
@@ -408,11 +406,9 @@ in order of number of occurrence in the input files provided with the package.
                     else:
                         cls = "list-group-item-danger"
                     lines.append('<li class="list-group-item %s"> %s <span class="badge"> %d </span></li>' % (cls, s, count))
-
                 mdf.write("\n".join(lines) + "</ul>")
 
         cprint("Generating Markdown files with topics ...", "green")
-        workdir = os.path.join(self.root, "topics")
 
         repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
         with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
@@ -426,15 +422,14 @@ in order of number of occurrence in the input files provided with the package.
         self.howto_topic = {}
 
         for topic in self.all_topics:
-            # Read template and prepare markdown string
+            # Read data from yaml file and generate markdown string.
             with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
                 top = yaml.load(fh)[0]
-
-            title = html2text(top.title)
-            introduction = html2text(top.introduction)
-            howto = html2text(top.howto).strip()
-            self.howto_topic[topic] = "How to " + howto
-            tutorials = top.tutorials.strip()
+                title = html2text(top.title)
+                introduction = html2text(top.introduction)
+                howto = html2text(top.howto).strip().lstrip()
+                self.howto_topic[topic] = "How to " + howto
+                tutorials = top.tutorials.strip()
 
             # Find list of variables associated to this topic
             # Group vlist by tribes and write list with links.
@@ -451,7 +446,7 @@ in order of number of occurrence in the input files provided with the package.
                 related_variables = "\n".join(lines)
 
             # Find tests associated to this `topic`
-            # Group tests by `suite_name` and write list with links.
+            # Group tests by `suite_name` and write markdown list with links.
             items = [(rpath, test) for (rpath, test) in self.rpath2test.items() if topic in test.topics]
             selected_input_files = "No input file associated to this topic."
             if items:
@@ -462,7 +457,7 @@ in order of number of occurrence in the input files provided with the package.
                     lines.append(" ")
                 selected_input_files = "\n".join(lines)
 
-            # Build markdown and write md file.
+            # Build markdown text and write md file.
             text = """
 This page gives hints on how to {howto} with the ABINIT package.
 
@@ -486,30 +481,25 @@ This page gives hints on how to {howto} with the ABINIT package.
 
 {tutorials}""".format(tutorials=html2text(tutorials))
 
-            with self.new_mdfile(os.path.join(workdir, topic + ".md"), meta={"authors": top.authors}) as mdf:
-            #with self.new_mdfile("topics", topic + ".md", meta={"authors": top.authors}) as mdf:
+            with self.new_mdfile("topics", topic + ".md", meta={"authors": top.authors}) as mdf:
                 mdf.write(text)
 
-        # Now we can write topics index.md (sorted by first character)
+        # Now write topics index.md (sorted by first character)
         for firstchar, group in sort_and_groupby(self.all_topics, key=lambda t: t[0].upper()):
             index_md.append("## %s" % firstchar)
             index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, self.howto_topic[topic]) for topic in group)
 
-        with self.new_mdfile(os.path.join(workdir, "index.md")) as mdf:
-        #with self.new_mdfile("topics", "index.md") as mdf:
+        with self.new_mdfile("topics", "index.md") as mdf:
             mdf.write("\n".join(index_md))
 
         # Build page with full list of tests grouped by `suite_name`.
         cprint("Generating Markdown file with tests ...", "green")
         items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
-        workdir = os.path.join(self.root, "developers")
-        with self.new_mdfile(os.path.join(workdir, "testsuite.md")) as mdf:
-        #with self.new_mdfile("developers", "testsuite.md")) as mdf:
+        with self.new_mdfile("developers", "testsuite.md") as mdf:
             for suite_name, group in sort_and_groupby(items, key=lambda t: t[1].suite_name):
                 mdf.write('## %s  \n\n' % suite_name)
                 for rpath, test in group:
-                    #mdf.write('### <a href="{url}">{rpath}</a>   \n\n'.format(url="/" + rpath, rpath=rpath))
-                    mdf.write('### [[%s]]   \n\n' %  rpath)
+                    mdf.write('### [[%s]]   \n\n' % rpath)
                     mdf.write(my_unicode(test.description))
                     mdf.write("\n\n")
                     mdf.write("Executable: %s   \n" % test.executable)
@@ -521,25 +511,25 @@ This page gives hints on how to {howto} with the ABINIT package.
                         mdf.write("Author(s): %s  \n" % ", ".join(a for a in sorted(test.authors)))
                     mdf.write("\n\n* * *\n\n")
 
-        # All markdown files have been generated. Now find all wikilinks,
+        # All markdown files have been generated. Now scan all md files to find all wikilinks,
         # in particular the bibliographic references needed to generate backlinks.
         self.analyze_pages()
 
-        # Now generate page with bibliography
+        # Now generate page with bibliography.
         cprint("Generating Markdown file with bibliographic entries ...", "green")
         citation2pages = defaultdict(list)
         for page in self.md_pages:
             for citation in page.citations:
                 citation2pages[citation].append(page)
 
-        with self.new_mdfile(os.path.join(self.root, "theory", "bibliography.md")) as mdf:
-        #with self.new_mdfile("theory", "bibliography.md")) as mdf:
+        with self.new_mdfile("theory", "bibliography.md") as mdf:
             lines = []
             lines.append("""\
 # Bibliography
 
 This document lists all the bibliographical references mentioned in the ABINIT documentation,
 with link(s) to the Web pages where such references are mentioned, as well as to the bibtex formatted reference.
+The bibtex file is available [here](../abiref.bib).
 
 """)
             for name in sorted(self.bib_data.entries.keys()):
@@ -550,12 +540,12 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 except Exception as exc:
                     raise ValueError("Exception while trying to convert bibtex entry `%s`\n%s\n" % (name, str(exc)))
                 if citation2pages[name]:
-                    lines.append("Referred to in: %s" % ", ".join('<a href="{url}"> {url} </a>'.format(url=page.relurl)
-                        for page in citation2pages[name]))
+                    lines.append("Referred to in: %s" % ", ".join('[{url}]({url})'.format(url=url)
+                        for url in sorted([page.url for page in citation2pages[name]])))
                 lines.append("* * *")
             mdf.write("\n".join(lines))
 
-        # Write acknowledgments page
+        # Write acknowledgments page.
         repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/biblio/origin_files/"
         with io.open(os.path.join(repo_root, "bibfiles.yml"), "rt", encoding="utf-8") as fh:
             for comp in yaml.load(fh):
@@ -563,8 +553,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             else:
                 raise RuntimeError("Cannot find `acknow` section in components")
 
-        with self.new_mdfile(os.path.join(self.root, "theory", "acknowledgments.md")) as mdf:
-        #with self.new_mdfile("theory", "acknowledgments.md")) as mdf:
+        with self.new_mdfile("theory", "acknowledgments.md") as mdf:
             mdf.write("# Acknowledgments  \n")
             mdf.write(html2text(comp.purpose))
             mdf.write(html2text(comp.introduction))
@@ -576,12 +565,16 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
 
+        with open(os.path.join(self.root, ".gitignore"), "wt") as fh:
+            fh.write("The following md files have been automatically generated and should be `git ignored`\n")
+            for p in self.md_generated:
+                fh.write(os.path.relpath(p, self.root) + "\n")
+
     def analyze_pages(self):
         cprint("Analyzing markdown pages ...", "green")
         start = time.time()
         self.md_pages, self.html_pages = [], []
-        excludes = [os.path.join(self.root, f) for f in
-                ("site", os.path.join("doc", "tests"))]
+        excludes = [os.path.join(self.root, f) for f in ("site", os.path.join("doc", "tests"))]
         for root, dirs, files in os.walk(self.root, topdown=True):
             #if any(root.startswith(e) for e in excludes):
             #    dirs[:] = []
@@ -593,15 +586,19 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 path = os.path.join(root, f)
                 if f.endswith(".md"):
                     self.md_pages.append(MarkdownPage(path, self))
-                elif f.endswith(".html") or f.endswith(".htm"):
+                elif f.endswith(".html"):
                     self.html_pages.append(HtmlPage(path, self))
 
         self.find_unreferenced_mds()
         cprint("Completed in %.2f [s]" % (time.time() - start), "green")
 
     def find_unreferenced_mds(self):
-
+        """
+        Extract all md pages listed in mkdocs.yml and compare them with the md files
+        in docs directory. Issue a warning the two sets are not equal.
+        """
         def find_mds(obj):
+            """Return list of md files reported in mkdocs.yml"""
             md_files = []
             if isinstance(obj, list):
                 for item in obj:
@@ -614,7 +611,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 assert obj.endswith(".md")
                 md_files.append(obj)
             else:
-                raise TypeError("Don't know how to hande type %s\n%s" % (type(obj), str(obj)))
+                raise TypeError("Don't know how to handle type %s\n%s" % (type(obj), str(obj)))
 
             return md_files
 
@@ -623,10 +620,9 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             pages_in_toolbar.extend(find_mds(entry))
         #for p in pages_in_toolbar: print(p)
 
+        # Find elements in `pages_on_disk` not in `pages_in_toolbar`
         pages_in_toolbar = set(pages_in_toolbar)
         pages_on_disk = set(p.relpath for p in self.md_pages)
-
-        # Find elements in pages_on_disk not in pages_in_toolbar
         diff = pages_on_disk.difference(pages_in_toolbar)
         if diff:
             cprint("WARNING: Found markdown files on disk not included in mkdocs.py", "yellow")
@@ -669,7 +665,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
         # Add `return to top arrow` after meta section.
         # Based on https://codepen.io/rdallaire/pen/apoyx
-        if len(new_lines) > 50:
+        if False and len(new_lines) > 50:
             i = 0
             if new_lines[0].startswith("---"):
                 for i, l in enumerate(new_lines[1:]):
@@ -687,17 +683,22 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
     @staticmethod
     def parse_wikilink_token(token):
-        # namespace:name#section|text
-        # where namespace, section and text are optional
+        """
+        Parse wikilink token of the form `namespace:name#fragment|text`
+        where namespace, fragment and text are optional
+
+        Return: (namespace, name, fragment, text)
+            Individual entries are set to None if non present in token.
+        """
         text = None
         if "|" in token:
             token, text = token.split("|")
             text = text.strip()
 
-        section = None
+        fragment = None
         if "#" in token:
-            token, section = token.split("#")
-            section = section.strip()
+            token, fragment = token.split("#")
+            fragment = fragment.strip()
 
         namespace = None
         if ":" in token:
@@ -707,7 +708,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             name = token.strip()
             if not name: name = None
 
-        return namespace, name, section, text
+        return namespace, name, fragment, text
 
     def get_wikilink(self, token, page_rpath):
         #token = token.strip()
@@ -726,9 +727,9 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             a.text = text
             return a
 
-        # [[namespace:name#section|text]]
+        # [[namespace:name#fragment|text]]
         try:
-            namespace, name, section, text = self.parse_wikilink_token(token)
+            namespace, name, fragment, text = self.parse_wikilink_token(token)
         except ValueError:
             raise ValueError("Cannot parse wikilink token `%s`" % token)
 
@@ -736,13 +737,14 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             raise ValueError("Wrong wikilink token: `%s` in `%s`.\nnamespace is not None and name is None" %
                     (token, page_rpath))
 
-        # Find url and text
+        # Treat different cases and define `url` and `text`
+        # Note that url is a root-relative URL that will be converted to relative URL at the end.
         if namespace is None:
             if name is None:
                 # Handle [[#internal_link|text]]
-                assert section is not None
+                assert fragment is not None
                 url = ""
-                if text is None: text = section
+                if text is None: text = fragment
             else:
                 if name.startswith("lesson_"):
                     # Handle [[lesson_gw1|text]]
@@ -790,24 +792,29 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                     html_classes.append("citation-link")
 
                 elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
-                    # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
-                    assert section is None
+                    assert fragment is None
                     text = name if text is None else text
-                    #if not text.startswith("~abinit/"): text = "~abinit/" + text
-                    nm = name.replace("~abinit/", "")
-                    url = "/" + nm
-                    html_classes.append("test-link")
-                    # Add popover with test description if input file.
-                    if nm in self.rpath2test:
-                        test = self.rpath2test[nm]
-                        content = test.description # + "\n\n" + ", ".join(test.authors)
-                        add_popover(a, content=content)
+                    if "Psps_for_tests" in name:
+                        # Handle [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
+                        nm = name.replace("~abinit/", "")
+                        url = "/" + nm
+
+                    else:
+                        # Handle [[tests/tutorial/Refs/tbase1_2.out|text]]
+                        #if not text.startswith("~abinit/"): text = "~abinit/" + text
+                        nm = name.replace("~abinit/", "")
+                        url = "/" + nm
+                        html_classes.append("test-link")
+                        # Add popover with test description if input file.
+                        if nm in self.rpath2test:
+                            test = self.rpath2test[nm]
+                            content = test.description # + "\n\n" + ", ".join(test.authors)
+                            add_popover(a, content=content)
 
                 elif name in self.variables_code.characteristics:
-                    # TODO
-                    #print("WARNING: got characteristics", name)
-                    #url, text = "FAKE_URL", name
-                    url, text = "FAKE_CHARACTERISTIC", name
+                    # handle [[ENERGY]] by building internal link to abinit user guide
+                    url = "/user-guide/abinit/#32-more-about-abinit-input-variables"
+                    text = name
 
                 elif name in self.variables_code.external_params:
                     # handle [[AUTO_FROM_PSP]] by building link with popover
@@ -827,7 +834,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             # namespace is defined
             if namespace in self.variables_code:
                 # Handle [[anaddb:asr|text]] or [[abinit:ecut|text]]
-                assert section is None
+                assert fragment is None
                 var = self.variables_code[namespace][name]
                 url = "/input_variables/%s#%s" % (var.varset, var.name)
                 html_classes.append("codevar-link")
@@ -841,8 +848,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 html_classes.append("lesson-link")
 
             elif namespace == "help":
-                # [[help:optic|text]
-                # NB: [[help_codename]] is echoed "codename help file"
+                # Handle [[help:optic|text] NB: [[help_codename]] is echoed "codename help file"
                 url = "/user-guide/help_%s" % name
                 if text is None: text = "%s help file" % name
                 html_classes.append("user-guide-link")
@@ -879,12 +885,14 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 
             elif namespace == "varset":
                 # Handle [[varset:BSE|text]]
-                assert section is None
+                assert fragment is None
                 if name == "allvars":
                     url = "/input_variables/index"
                 else:
                     url = "/input_variables/%s" % name
                 if text is None: text = "%s varset" % name
+
+            #elif namespace == "ac":  TODO
 
             else:
                 msg = "Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath)
@@ -895,22 +903,23 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         html_class = " ".join(html_classes)
         a.set("class", html_class)
         a.text = text
-        if section is not None: url = "%s#%s" % (url, section)
+        if fragment is not None: url = "%s#%s" % (url, fragment)
 
-        # from root-relative url to relative url.
+        # From root-relative url to relative url.
         end = ""
         if "#" in url:
             url, end = url.split("#")
         if not url:
             # Handle `#internal_link`
-            href = end
+            url = "#" + end
         else:
-            page_rpath = os.path.dirname(page_rpath.replace(".md", ""))
             if not page_rpath.startswith("/"): page_rpath = "/" + page_rpath
+            page_rpath = os.path.dirname(page_rpath.replace(".md", ""))
+            #page_rpath = page_rpath.replace(".md", "")
             url = os.path.relpath(url, page_rpath)
-            #print("page_rpath", page_rpath, "url", url)
             if end: url = "%s#%s" % (url, end)
 
+        #print("token", token, "page_rpath", page_rpath, "url", url)
         a.set('href', url)
         return a
 
@@ -943,12 +952,13 @@ with link(s) to the Web pages where such references are mentioned, as well as to
                 #    #print(errors)
 
     def modal_from_filename(self, path, title=None):
-        # https://v4-alpha.getbootstrap.com/components/modal/#examples
+        # Based on https://v4-alpha.getbootstrap.com/components/modal/#examples
+        # See also https://stackoverflow.com/questions/14971766/load-content-with-ajax-in-bootstrap-modal
         title = path if title is None else title
         with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
-            text = "<pre>" + escape(fh.read()) + "</pre>"
+            text = escape(fh.read(), tag="pre")
 
-        s = """\
+        return """\
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
   View {path}
@@ -962,14 +972,10 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="{modal_label_id}">{title}</h4>
       </div>
-      <div class="modal-body">
-        {text}
-      </div>
+      <div class="modal-body">{text}</div>
     </div>
   </div>
 </div>""".format(modal_id=gen_id(), modal_label_id=gen_id(), **locals())
-
-        return s
 
     def modal_with_tabs(self, paths, title=None):
         # Based on http://jsfiddle.net/n__o/19rhfnqm/
@@ -980,8 +986,8 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         text_list = []
         for p in apaths:
             with io.open(p, "rt", encoding="utf-8") as fh:
-                text_list.append("<pre>" + escape(fh.read()) + "</pre>")
-        tab_ids = gen_id(n=len(text_list))
+                text_list.append(escape(fh.read(), tag="pre"))
+        tab_ids = gen_id(n=len(apaths))
 
         s = """\
 <!-- Button trigger modal -->
@@ -1015,24 +1021,21 @@ with link(s) to the Web pages where such references are mentioned, as well as to
             s += """<div role="tabpanel" class="tab-pane {active}" id="{tid}">{text}</div>""".format(
                     active="active" if i == 0 else " ", tid=tid, text=text)
 
-        s += 6 * " </div> "
+        s += 6 * "</div>"
 
         return s
 
     def editor_panel(self, path, title=None):
         title = path if title is None else str(title)
-
         path = os.path.join(self.root, path)
         with io.open(os.path.join(path), "rt", encoding="utf-8") as fh:
-            text = escape(fh.read())
+            text = escape(fh.read(), tag="pre")
 
-        s = """\
+        return """\
 <div class="panel panel-default">
     <div class="panel-heading">{title}</div>
     <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
 </div>""".format(editor_id=gen_id(), **locals())
-
-        return s
 
     def editor_tabs(self, paths, title=None):
         title = "EditorTabs" if title is None else str(title)
@@ -1041,7 +1044,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
         text_list = []
         for path in apaths:
             with io.open(path, "rt", encoding="utf-8") as fh:
-                text_list.append(escape(fh.read()))
+                text_list.append(escape(fh.read(), tag="pre"))
         tab_ids = gen_id(n=len(text_list))
         editor_ids = gen_id(n=len(text_list))
 
@@ -1057,6 +1060,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 <li class="{li_class}">
 <a href="{href}" data-toggle="pill">{path}</a>
 </li>""".format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+
         s +=  """\
 </ul>
 <!-- Tab panes -->
@@ -1069,7 +1073,7 @@ with link(s) to the Web pages where such references are mentioned, as well as to
 <div id="{editor_id}" class="editor" hidden>{text}</div></div>
 """.format(active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
 
-        s +=  2 * "</div> "
+        s +=  2 * "</div>"
         return s
 
 
@@ -1093,25 +1097,17 @@ class Page(object):
     def url(self):
         return ("/" + self.relpath).replace(".md", "")
 
-    #def __str__(self):
-    #    lines = ["Page: %s" % self.relpath]
-    #    return "\n".join(lines)
 
-
-#class WikiLink(etree.Element):
-#class WikiLink(object):
-    #def __init__(self, attrib={}, **extra):
-    #    self = etree.Element("a", attrib={}, **extra)
-    #    super(Wikilink, self).__init__("a", attrib={}, **extra)
-
-def add_popover(element, title=None, content=None):
-    # Cannot subclass etree.Element in py2.7
+def add_popover(element, title=None, content=None, html=False):
+    # NB: Unfortunately, cannot subclass etree.Element in py2.7.
+    def tos(s):
+        return s if html else escape(s)
     element.set("data-toggle", "popover")
-    if title: element.set("title", title)
-    element.set("data-placement", "right")
+    if title: element.set("title", tos(title))
+    element.set("data-placement", "auto right")
     element.set("data-trigger", "hover")
-    if content: element.set("data-content", content)
-    #a.set("html", "true")
+    if content: element.set("data-content", tos(content))
+    if html: a.set("data-html", "true")
 
 
 class MarkdownPage(Page):
@@ -1183,7 +1179,9 @@ class AbinitStats(object):
 
     def __init__(self, path):
         self.path = os.path.abspath(path)
+        self.parse()
 
+    def parse(self):
         """
         =====================================================================
         Version  Date       Size         Number        Number        Number
@@ -1221,6 +1219,7 @@ class AbinitStats(object):
         num_f90files = int(check_output(["ls -l %s/*/*.F90 | wc" % src_dir], shell=True))
         num_f90lines = int(check_output(["cat %s/*/*.F90 | wc" % src_dir], shell=True))
         num_tests = int(check_output(["ls %s/tests/*/Input/t*in | wc" % src_dir], shell=True))
+        self.parse()
 
     def json_dump(self, path):
         import json

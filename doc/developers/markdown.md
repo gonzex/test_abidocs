@@ -54,6 +54,33 @@ that produces:
 $ abinit < tbase1_x.files 2> log &
 ```
 
+To include figures, use the standard Markdown syntax:
+
+```md
+![](/tutorials/bse_assets/tbs2_1.png)
+```
+
+that produces
+
+![](/tutorials/bse_assets/tbs2_1.png)
+
+For figures with a caption use the [markdown-figures extension](https://github.com/helderco/markdown-figures):
+
+```md
+![](/tutorials/bse_assets/tbs5.png)
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+```
+
+that produces
+
+![](/tutorials/bse_assets/tbs5.png)
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+
+!!! note
+    `<img>` and `<figure>` elements are automatically centered via CSS directives 
+     declared in `extra.css`.
+
+
 For more complete introduction to Markdown, see 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and references therein.
 
@@ -111,6 +138,8 @@ Examples:
 | `[[tests/tutorial/Input/tbase1_1.in]]` | [[tests/tutorial/Input/tbase1_1.in]] |
 | `[[tests/tutorial/Refs/tbase1_1.out]]` |  [[tests/tutorial/Refs/tbase1_1.out]] |
 | `[[~abinit/tests/tutorial/Refs/tbase1_1.out]]` |  [[~abinit/tests/tutorial/Refs/tbase1_1.out]] |
+| `[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]` | [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
+| `[[tests/Psps_for_tests/6c.lda.atompaw]]` | [[tests/Psps_for_tests/6c.lda.atompaw]]
 
 
 !!! note
@@ -206,7 +235,7 @@ Examples:
 
 `[[topic:PIMD#1|Introduction]]` becomes [[topic:PIMD#1|Introduction]]
 
-`[[#notations|internal link]]` becomes [[#notations|internal link]]
+`[[#markdown-quick-reference|quick reference]]` becomes [[#markdown-quick-reference|quick reference]]
   
 Actually, using the real name of the file without suffix, e.g. `lesson_gw1` will also be recognized, 
 although this real name is echoed, instead of the name without namespace.
@@ -231,7 +260,9 @@ As for dokuwiki, some external links are also recognized. The following case are
 | :-- | :-- |
 | `[[www.abinit.org]]` | [[www.abinit.org]] 
 | `www.abinit.org` | www.abinit.org 
-| `[[https://wiki.abinit.org | The ABINIT Wiki]]` | [[https://wiki.abinit.org | The ABINIT Wiki]] 
+
+It's also possible to specify the name of the link with:
+`[[https://wiki.abinit.org | The ABINIT Wiki]]` that gives [[https://wiki.abinit.org | The ABINIT Wiki]] 
 
 
 ### Permalinks

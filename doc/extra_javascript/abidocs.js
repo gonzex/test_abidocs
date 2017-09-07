@@ -1,4 +1,3 @@
-
 // That selector matches all spans that have an id attribute and it starts with foo (e.g. fooblah
 $(function() {
     $(".editor").each(function(index, element) {
@@ -135,3 +134,13 @@ var details = (function () {
 })();
 
 }());
+
+
+/* This is for  https://bootsnipp.com/snippets/featured/inbox-by-gmail */
+$('.fab').hover(function () {
+    $(this).toggleClass('active');
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

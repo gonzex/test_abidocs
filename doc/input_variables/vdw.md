@@ -20,7 +20,7 @@ vdw input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -46,7 +46,7 @@ Supported values:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -69,7 +69,7 @@ Print out a NetCDF file containing a vdW-DF kernel.
 *Default value:* 10  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -93,7 +93,7 @@ lowest angles.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -116,7 +116,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 0.5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -139,7 +139,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 0.01  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -162,7 +162,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -186,7 +186,7 @@ lowest D, RATIO.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -209,7 +209,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 1.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -232,7 +232,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -255,7 +255,7 @@ Used when [[vdw_xc]]&gt;0, to filter the vdW-DF kernel in reciprocal space.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -278,7 +278,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* -1  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -301,7 +301,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -324,7 +324,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 2048  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -348,7 +348,7 @@ real-space.
 *Default value:* 12  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -371,7 +371,7 @@ Used when [[vdw_xc]]&gt;0, to exponentially smoothen q near q0.
 *Default value:* -1.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -394,7 +394,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -417,7 +417,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -440,7 +440,7 @@ Used when [[vdw_xc]]&gt;0, .
 *Default value:* 100  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -463,7 +463,7 @@ Used when [[vdw_xc]]&gt;0, to define the vdW-DF kernel cut-off radius.
 *Default value:* 0.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -486,7 +486,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 0.01  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -513,7 +513,7 @@ vdW-DF energy contributions never being calculated.
 *Default value:* 1e-13  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -536,7 +536,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -560,7 +560,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* -0.8491  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 
@@ -585,7 +585,7 @@ doi:10.1103/PhysRevLett.92.246401
 *Default value:* 1  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - wannier90:  [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
 
 
@@ -615,7 +615,7 @@ corners or at limiting faces of the unit cell.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - wannier90:  [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
 
 
@@ -647,7 +647,7 @@ will indicate that the corresponding direction is normal to the layers.
 *Default value:* 1e-10  
 *Only relevant if:* [[vdw_xc]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t97.in]], [[tests/v7/Input/t98.in]], [[tests/v7/Input/t99.in]]
     - vdwxc:  [[tests/vdwxc/Input/t10.in]]
 
@@ -676,7 +676,7 @@ of atom must have contribution to the energy larger than [[vdw_tol]].
 *Comment:* Do include the 3-body term in the correction  
 *Only relevant if:* [[vdw_xc]] == 6  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t97.in]]
 
 
@@ -719,7 +719,7 @@ elastic constants, dynamical matrix and internal strains)
 *Default value:* 1*[[natom]]  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - wannier90:  [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
 
 
@@ -748,7 +748,7 @@ visualization.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [7/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t97.in]], [[tests/v7/Input/t98.in]], [[tests/v7/Input/t99.in]]
     - vdwxc:  [[tests/vdwxc/Input/t10.in]]
     - wannier90:  [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]

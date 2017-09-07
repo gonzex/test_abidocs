@@ -28,7 +28,6 @@ def build_url(label, base, end):
     """ Build a url from the label, a base, and an end. """
     clean_label = re.sub(r'([ ]+_)|(_[ ]+)|([ ]+)', '_', label)
     #print(clean_label)
-
     variables = website.variables_code["abinit"]
 
     if clean_label in variables:
@@ -72,7 +71,7 @@ class WikiLinks(Pattern):
     def handleMatch(self, m):
         token = m.group(2).strip()
         if token:
-            base_url, end_url, html_class = self._getMeta()
+            #base_url, end_url, html_class = self._getMeta()
             #url = self.config['build_url'](token, base_url, end_url)
             page_rpath = "??"
             if hasattr(self.md, 'Meta') and "rpath" in self.md.Meta:

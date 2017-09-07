@@ -19,7 +19,7 @@ eph input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [6/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v5:  [[tests/v5/Input/t24.in]]
     - v6:  [[tests/v6/Input/t37.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
@@ -45,7 +45,7 @@ Same meaning as the corresponding anaddb variable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -68,7 +68,7 @@ charges. Same meaning as the corresponding anaddb variable.
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Rarely used, [4/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
     - v8:  [[tests/v8/Input/t44.in]], [[tests/v8/Input/t65.in]]
 
@@ -93,7 +93,7 @@ the description of the [[getddb]] input variable.
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.0]  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t89.in]]
     - v8:  [[tests/v8/Input/t65.in]]
 
@@ -118,7 +118,7 @@ variable. See [[shiftk]] for more information on the definition.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -141,7 +141,7 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -165,7 +165,7 @@ from the pseudopotentials and unit cell.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -190,7 +190,7 @@ has effect only if set to a non-zero value. See also [[eph_extrael]].
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -220,7 +220,7 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 *Default value:* 0.01 Hartree  
 *Only relevant if:* [[eph_intmeth]] == 1  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -243,7 +243,7 @@ the Fermi surface when [[eph_intmeth]] == 1.
 *Dimensions:* scalar  
 *Default value:* 2  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -271,7 +271,7 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 *Dimensions:* scalar  
 *Default value:* 0.1  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -294,7 +294,7 @@ superconducting Tc using Mc-Millan's formula.
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Rarely used, [3/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]], [[tests/v8/Input/t65.in]]
 
@@ -324,7 +324,7 @@ DDB file (default behavior).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -348,7 +348,7 @@ corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 *Dimensions:* scalar  
 *Default value:* 2  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -378,7 +378,7 @@ q-points in the BZ)
 *Dimensions:* scalar  
 *Default value:* 20  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -404,7 +404,7 @@ specified by [[ph_qpath]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -427,7 +427,7 @@ This integer defines the number of points in the [[ph_qpath]] array.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -453,7 +453,7 @@ code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[ph_nqshift]]  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -480,7 +480,7 @@ given, a Gamma-centered mesh is used.
 *Default value:* 0.00002 Hartree  
 *Only relevant if:* [[ph_intmeth]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -505,7 +505,7 @@ Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 *Dimensions:* scalar  
 *Default value:* 0.1 meV  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
     - v8:  [[tests/v8/Input/t44.in]]
 
@@ -530,7 +530,7 @@ the code.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -558,7 +558,7 @@ Possible values:
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t89.in]]
     - v8:  [[tests/v8/Input/t65.in]]
 
@@ -582,7 +582,7 @@ Print the phonon density of states. It is activated by default when
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
     - v7:  [[tests/v7/Input/t88.in]]
 
 
@@ -608,7 +608,7 @@ not supported by Xcrysden. This variable requires [[optdriver]]==7.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [0/1136] in all tests, [0/135] in tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
 
 
 

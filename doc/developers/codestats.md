@@ -7,7 +7,7 @@ rpath: developers/codestats.md
 
 <script>
 $(function() {
-    Plotly.d3.json("..//data/statistics.json", function(stats) {
+    Plotly.d3.json("../../data/statistics.json", function(stats) {
         var mode = "lines+markers";
         var x = stats.dates;
         var trace1 = {x: x, y: stats.num_f90lines, mode: mode, name: "Number of F90 lines"};

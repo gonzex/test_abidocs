@@ -300,15 +300,16 @@ class Variable(yaml.YAMLObject):
             elif ratio_all > 0.01:
                 frequency = "Moderately used"
 
-            info = "%s, [%d/%d] in all tests, [%d/%d] in tutorials." % (
-                frequency, len(self.tests), tests_info["num_all_tests"],
-                tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"])
+            info = "%s, [%d/%d] in all %s tests, [%d/%d] in %s tutorials." % (
+                frequency, len(self.tests), tests_info["num_all_tests"], self.code,
+                tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"], self.code)
 
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
             # TODO?
             #if len(self.tests) <= 10:
             app('\n??? note "Test list (click to open) (%s)"' % info)
-            for suite_name, tests_in_suite in groupby(self.tests, key=lambda t: t.suite_name):
+            tlist = sorted(self.tests, key=lambda t: t.suite_name)
+            for suite_name, tests_in_suite in groupby(tlist, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
                 #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
                 s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
@@ -541,7 +542,6 @@ class InputVariables(OrderedDict):
         for i, (char, vlist) in enumerate(ch2vars.items()):
             id_char = "%s-%s" % (idname, char)
             p = " ".join(v.internal_link(website, page_rpath) for v in vlist)
-            #p = " ".join("[[%s:%s]]" % (v.code, v.name) for v in vlist)
             if i == 0:
                 html += '<div role="tabpanel" class="tab-pane active" id="%s">\n%s\n</div>\n' % (id_char, p)
             else:
