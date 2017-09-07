@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/theory/mbt/">
+        <link rel="canonical" href="http://www.abinit.org/theory/mbt/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2977,13 +2979,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="many-body-theory-in-abinit">Many-Body Theory in ABINIT<a class="headerlink" href="#many-body-theory-in-abinit" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="many-body-theory-in-abinit">Many-Body Theory in ABINIT<a class="headerlink" href="#many-body-theory-in-abinit" title="Permanent link">&para;</a></h1>
 <h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>The aim of this section is to introduce the Green&rsquo;s function formalism, the
 concept of self-energy and the set of coupled equations proposed by Hedin
@@ -3007,7 +3011,7 @@ overlap between the final and the initial state, <script type="math/tex">G(12)</
 is the time-ordering operator and the creation and annihilation field
 operators act on the ground state of the <script type="math/tex">N</script>-electron many-body Hamiltonian
 (the conventions used in the equations are explained in the section on
-<a class="wikilink" href="">notations</a>). The propagator contains only part of the full information
+<a class="wikilink" href="#notations">notations</a>). The propagator contains only part of the full information
 carried by the many-body wave function, but it includes the relevant part for
 the study of charged excitations. Also, any single-particle operator acting on
 the system can be evaluated once the Green&rsquo;s function is known.</p>
@@ -3159,7 +3163,7 @@ particle polarizability assumes the form:</p>
 <p>where only the transitions between valence (<em>v</em>) and conduction states (<em>c</em>)
 contribute (for simplicity we have assumed a semiconductor with time-reversal
 invariance, the conventions used for the Fourier transform are discussed in
-the <a class="wikilink" href="">notation</a> section).</p>
+the <a class="wikilink" href="#notations">notation</a> section).</p>
 <p>The number of bands used to compute the polarizability is specified by
 <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>, while <a class="wikilink codevar-link" href="../../input_variables/gw#zcut">zcut</a> gives the small complex shift used to avoid the
 divergences in the denominators. The frequency mesh is defined by the set of
@@ -3173,7 +3177,7 @@ number of planewaves (PW) used to describe the wavefunctions is determined by
 polarizability (i.e. the number of <em>G</em> vectors in the oscillator matrix
 elements) is determined by <a class="wikilink codevar-link" href="../../input_variables/gw#ecuteps">ecuteps</a>. The oscillators are ubiquitous in the
 Many-Body part of ABINIT and their calculation represents one of the most CPU
-intensive part of the execution. For this reason we devote <a class="wikilink" href="">section 6</a> to
+intensive part of the execution. For this reason we devote <a class="wikilink" href="#6">section 6</a> to
 the discussion of some important technical details concerning their
 computation.</p>
 <p>In principle, the set of <strong>q</strong>-points in the screening matrix is given by all
@@ -3429,6 +3433,37 @@ throughout.</p>
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/tutorials/paw1/">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/paw1/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2941,13 +2943,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="first-lesson-on-the-projector-augmented-wave-paw-technique">First lesson on the projector-augmented wave (PAW) technique<a class="headerlink" href="#first-lesson-on-the-projector-augmented-wave-paw-technique" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="first-lesson-on-the-projector-augmented-wave-paw-technique">First lesson on the projector-augmented wave (PAW) technique<a class="headerlink" href="#first-lesson-on-the-projector-augmented-wave-paw-technique" title="Permanent link">&para;</a></h1>
 <h2 id="projector-augmented-wave-technique-how-to-use-it">Projector Augmented-Wave technique, how to use it ?<a class="headerlink" href="#projector-augmented-wave-technique-how-to-use-it" title="Permanent link">&para;</a></h2>
 <p>This lesson aims at showing how to perform a calculation in the frame of the
 PAW method.</p>
@@ -2982,8 +2986,8 @@ rather similar to a norm-conserving pseudopotential one. Most noticeably, one
 will have to use a special atomic data file (PAW dataset) that contains the
 φi,~φi and ~pi and that plays the same role as a pseudopotential file.</p>
 <p>It is highly recommended to read the following papers to understand correctly
-the basic concepts of the PAW method: <a class="wikilink citation-link" data-content="Projector augmented-wave method" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bloechl1994">[Bloechl1994]</a> and <a class="wikilink citation-link" data-content="From ultrasoft pseudopotentials to the projector augmented-wave method" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#kresse1999">[Kresse1999]</a>.</p>
-<p>The implementation of the PAW method in ABINIT is detailed in <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#torrent2008">[Torrent2008]</a>,
+the basic concepts of the PAW method: <a class="wikilink citation-link" data-content="Projector augmented-wave method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bloechl1994">[Bloechl1994]</a> and <a class="wikilink citation-link" data-content="From ultrasoft pseudopotentials to the projector augmented-wave method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#kresse1999">[Kresse1999]</a>.</p>
+<p>The implementation of the PAW method in ABINIT is detailed in <a class="wikilink citation-link" data-content="Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#torrent2008">[Torrent2008]</a>,
 describing specific notations and formulations</p>
 <h2 id="2-using-paw-with-abinit">2 Using PAW with ABINIT<a class="headerlink" href="#2-using-paw-with-abinit" title="Permanent link">&para;</a></h2>
 <p><em>Before continuing, you might consider to work in a different subdirectory as
@@ -3531,6 +3535,37 @@ help&hellip;  </p>
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

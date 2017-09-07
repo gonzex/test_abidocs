@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/tutorials/dmft/">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/dmft/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -3003,13 +3005,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="lesson-on-dftdmft">Lesson on DFT+DMFT<a class="headerlink" href="#lesson-on-dftdmft" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="lesson-on-dftdmft">Lesson on DFT+DMFT<a class="headerlink" href="#lesson-on-dftdmft" title="Permanent link">&para;</a></h1>
 <h2 id="a-dftdmft-calculation-for-srvo3">A DFT+DMFT calculation for SrVO<sub>3</sub>.<a class="headerlink" href="#a-dftdmft-calculation-for-srvo3" title="Permanent link">&para;</a></h2>
 <p>This lesson aims at showing how to perform a DFT+DMFT calculation using
 Abinit.</p>
@@ -3028,18 +3032,18 @@ several processors).</p>
 systems. Generally, these highly correlated materials contain rare-earth
 metals or transition metals, which have partially filled <em>d</em> or <em>f</em> bands and
 thus localized electrons. For further information on this method, please refer
-to <a class="wikilink citation-link" data-content="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#georges1996">[Georges1996]</a> and <a class="wikilink citation-link" data-content="Electronic structure calculations with dynamical mean-field theory" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#kotliar2006">[Kotliar2006]</a>. For an introduction to Many Body
+to <a class="wikilink citation-link" data-content="Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#georges1996">[Georges1996]</a> and <a class="wikilink citation-link" data-content="Electronic structure calculations with dynamical mean-field theory" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#kotliar2006">[Kotliar2006]</a>. For an introduction to Many Body
 Physics (Green&rsquo;s function, Self-energy, imaginary time, and Matsubara
-frequencies), see e.g. <a class="wikilink citation-link" data-content="Introduction to Many-Body Physics" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#coleman2015">[Coleman2015]</a> and <a class="wikilink citation-link" data-content="Probl\`eme \`a N-corps" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#tremblay2017">[Tremblay2017]</a>.</p>
+frequencies), see e.g. <a class="wikilink citation-link" data-content="Introduction to Many-Body Physics" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#coleman2015">[Coleman2015]</a> and <a class="wikilink citation-link" data-content="Probl\`eme \`a N-corps" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#tremblay2017">[Tremblay2017]</a>.</p>
 <p>Several parameters (both physical and technical) needs to be discussed for a
 DFT+DMFT calculation.</p>
 <ul>
-<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandi">dmftbandi</a>, and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandf">dmftbandf</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a class="wikilink codevar-link" href="../../input_variables/dev#nnsclo">nnsclo</a>, and <a class="wikilink codevar-link" href="../../input_variables/gstate#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008a">[Amadon2008a]</a>). The relation between the two expressions is briefly discussed in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>. </li>
+<li>The definition of correlated orbitals. In the ABINIT DMFT implementation, it is done with the help of Projected Wannier orbitals (see <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>). The first part of the tutorial explains the importance of this choice. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band index <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandi">dmftbandi</a>, and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandf">dmftbandf</a>. Thus, as empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for <a class="wikilink codevar-link" href="../../input_variables/dev#nnsclo">nnsclo</a>, and <a class="wikilink codevar-link" href="../../input_variables/gstate#nline">nline</a> for DMFT calculations and preceding DFT calculations. Roughly speaking, the larger dmftbandf-dmftbandi is, the more localized is the radial part of the orbital. Note that this definition is different from the definition of correlated orbitals in the DFT+U implementation in ABINIT (see <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008a">[Amadon2008a]</a>). The relation between the two expressions is briefly discussed in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>. </li>
 <li>The definition of the Coulomb and exchange interaction U and J are done as in DFT+U through the variables <a class="wikilink codevar-link" href="../../input_variables/paw#upawu">upawu</a> and <a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>. They could be computed with the cRPA method, also available in ABINIT. The value of U and J should in principle depend on the definition of correlated orbitals. In this tutorial, U and J will be seen as parameters, as in the DFT+U approach. As in DFT+U, two double counting methods are available (see the <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_dc">dmft_dc</a> input variable). Note that in version 7.10.5 (but not in later versions) <a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>=0 is required if the density matrix in the correlated subspace is not diagonal. </li>
 <li>The choice of the double counting correction. The current default choice in ABINIT is (<a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_dc">dmft_dc</a>=1) which corresponds to the full localized limit. </li>
 <li>The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method (<a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_solv">dmft_solv</a>=2) the Continuous time Quantum Monte Carlo (CTQMC) method (<a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_solv">dmft_solv</a>=5) or the static mean field method (<a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_solv">dmft_solv</a>=1) equivalent to usual DFT+U. </li>
 <li>The solution of the Anderson Hamiltonian and the DMFT solution are strongly dependent over temperature. So the temperature <a class="wikilink codevar-link" href="../../input_variables/gstate#tsmear">tsmear</a> is a very important physical parameter of the calculation. </li>
-<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green&rsquo;s function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_iter">dmft_iter</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a>. Other useful variables are <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_rslf">dmft_rslf</a>=1 and <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwli">dmft_nwli</a> and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a class="wikilink codevar-link" href="../../input_variables/paw#pawprtvol">pawprtvol</a>=3. </li>
+<li>The practical solution of the DFT+DMFT scheme is usually presented as a double loop over first the local Green&rsquo;s function, and second the electronic local density. (cf Fig. 1 in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). The number of iterations of both loops are respectively given in ABINIT by keywords <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_iter">dmft_iter</a> and <a class="wikilink codevar-link" href="../../input_variables/basic#nstep">nstep</a>. Other useful variables are <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_rslf">dmft_rslf</a>=1 and <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a>=-1 (to be able to restart the calculation from the density file). Lastly, one linear and one logarithmic grid are used for Matsubara Frequencies indicated by <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwli">dmft_nwli</a> and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwlo">dmft_nwlo</a> (Typical values are 100000 and 100, but convergence should be studied). A large number of informations are given in the log file using <a class="wikilink codevar-link" href="../../input_variables/paw#pawprtvol">pawprtvol</a>=3. </li>
 </ul>
 <h2 id="2-electronic-structure-of-srvo3-in-lda">2 Electronic Structure of SrVO3 in LDA<a class="headerlink" href="#2-electronic-structure-of-srvo3-in-lda" title="Permanent link">&para;</a></h2>
 <p>You might create a subdirectory of the ~abinit/tests/tutoparal directory, and
@@ -3083,7 +3087,7 @@ already avaialble on your machine).</p>
 
 <p><img alt="FatbandV" src="../../documents/lesson_dmft/fatbandO.jpg" /><br />
 In these plots, you recover the band structure of SrVO3 (see for comparison
-the band structure of Fig.3 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>). , and the main character of
+the band structure of Fig.3 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>). , and the main character of
 the bands. Bands 21 to 25 are mainly <em>d</em> and bands 12 to 20 are mainly oxygen
 <em>p</em>. However, we clearly see an important hybridization. The Fermi level (at 0
 eV) is in the middle of bands 21-23.</p>
@@ -3132,8 +3136,8 @@ calculation.</p>
 <p>Notice the other dmft variables used in the input file and check their meaning
 in the input variable glossary. In particular, we are using dmft_solv=5 for
 the dmft dataset in order to use the density-density continuous time quantum
-monte carlo (CTQMC) solver. (See <a class="wikilink citation-link" data-content="Continuous-time Monte Carlo methods for quantum impurity models" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gull2011">[Gull2011]</a>, as well as the ABINIT 2016
-paper <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">[Gonze2016]</a> for details about the CTQMC implementation in ABINIT.)<br />
+monte carlo (CTQMC) solver. (See <a class="wikilink citation-link" data-content="Continuous-time Monte Carlo methods for quantum impurity models" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gull2011">[Gull2011]</a>, as well as the ABINIT 2016
+paper <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">[Gonze2016]</a> for details about the CTQMC implementation in ABINIT.)<br />
 Note that the number of imaginary frequencies <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwlo">dmft_nwlo</a> has to be set to
 at least twice the value of <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftqmc_l">dmftqmc_l</a> (the discretization in imaginary
 time). Here, we choose a temperature of 1200 K. For lower temperature, the
@@ -3142,12 +3146,12 @@ number of Matsubara frequencies should be higher.</p>
 especially <a class="wikilink codevar-link" href="../../input_variables/dmft#dmft_nwlo">dmft_nwlo</a>, <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftqmc_l">dmftqmc_l</a> and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftqmc_n">dmftqmc_n</a>.</p>
 <p>Let&rsquo;s now discuss the value of the effective Coulomb interaction U (<a class="wikilink codevar-link" href="../../input_variables/paw#upawu">upawu</a>)
 and J (<a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>). The values of U and J used in ABINIT in DMFT use the same
-convention as in DFT+U calculations in ABINIT (cf <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008a">[Amadon2008a]</a>). However,
-calculations in Ref. <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a> use for U and J the usual convention for _
-t2g _ systems as found in <a class="wikilink citation-link" data-content="Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#lechermann2006">[Lechermann2006]</a>, Eq. 26 (see also the appendix in
-<a class="wikilink citation-link" data-content="Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#fresard1997">[Fresard1997]</a>). It corresponds to the Slater integral F4=0 and we can show
+convention as in DFT+U calculations in ABINIT (cf <a class="wikilink citation-link" data-content="$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008a">[Amadon2008a]</a>). However,
+calculations in Ref. <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a> use for U and J the usual convention for _
+t2g _ systems as found in <a class="wikilink citation-link" data-content="Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#lechermann2006">[Lechermann2006]</a>, Eq. 26 (see also the appendix in
+<a class="wikilink citation-link" data-content="Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#fresard1997">[Fresard1997]</a>). It corresponds to the Slater integral F4=0 and we can show
 that U_abinit=U-4/3 J and J_abinit=7/6 J . So in order to use U=4 eV and
-J=0.65 eV with these latter conventions (as in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>), we have to use
+J=0.65 eV with these latter conventions (as in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>), we have to use
 in ABINIT: <a class="wikilink codevar-link" href="../../input_variables/paw#upawu">upawu</a>=3.13333 eV; <a class="wikilink codevar-link" href="../../input_variables/paw#jpawu">jpawu</a>=0.75833 eV and <a class="wikilink codevar-link" href="../../input_variables/paw#f4of2_sla">f4of2_sla</a>=0.</p>
 <p>Now, you can launch the calculation:</p>
 <p>Copy the files ../Input/tdmft_2.in and modify tdmft_x.files in your Work
@@ -3169,8 +3173,8 @@ directory and run ABINIT:</p>
 
 
 <p>The projection of Kohn Sham wavefunctions and (truncated) atomic orbitals are
-computed (Eq.(2.1) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>) and unnormalized orbitals are built
-(Eq.(2.2) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>) The occupation matrix in this orbital basis is</p>
+computed (Eq.(2.1) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>) and unnormalized orbitals are built
+(Eq.(2.2) in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>) The occupation matrix in this orbital basis is</p>
 <div class="codehilite"><pre><span></span>  ------ Symetrised Occupation
 
 
@@ -3196,14 +3200,14 @@ computed (Eq.(2.1) in <a class="wikilink citation-link" data-content="A self-con
 calculation is converged, dmatpuopt=1 is used, and <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandi">dmftbandi</a>=1 and
 <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandf">dmftbandf</a>=nband, then the above Symetrised Occupation should be exactly
 equal to the occupation matrix given in the usual DFT+U occupation matrix
-written in the log file (with dmatpuopt=1) (see discussion in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>).
+written in the log file (with dmatpuopt=1) (see discussion in <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>).
 In our case, we are not in this case because <a class="wikilink codevar-link" href="../../input_variables/dmft#dmftbandi">dmftbandi</a>=21 so this
 condition is not fulfilled. Concerning the norm if these orbitals, two factors
 play a role:</p>
 <ul>
-<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
+<li>Firstly, the number of Kohn Sham function used should be infinite (cf Eq. B.4 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>), which is not the case here, because we take into account only bands 21-23. We emphasize that it is not a limitation of our approach, but just a physical choice concerning Wannier functions. This physical choice induces that these intermediate wave functions have a very low norm. </li>
 <li>
-<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep &ldquo;ph0phiint(icount)= 1&rdquo; log_2). (See also the discussion in Section B.3 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). 
+<p>Secondly, the atomic orbitals used to do the projection are cut at the PAW radius. As a consequence, even if we would use a complete set of KS wavefunctions and thus the closure relation, the norm could not be one. In our case, it could be at most 0.86852, which is the norm of the truncated atomic function of <em>d</em> orbitals of Vanadium used in this calculation. This number can be found in the log file by searching for ph0phiint (grep &ldquo;ph0phiint(icount)= 1&rdquo; log_2). (See also the discussion in Section B.3 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). 
 Next the LDA Green&rsquo;s function is computed.</p>
 <p>=====  LDA Green Function Calculation</p>
 </li>
@@ -3266,7 +3270,7 @@ calculations:</p>
 
 
 <p>For the sake of efficiency, the DMFT Loop is in this calculation done only
-once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). At the end
+once before doing again the DFT Loop (cf Fig. 1 of <a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>). At the end
 of the calculation, the occupation matrix is written and is:</p>
 <div class="codehilite"><pre><span></span>          -- polarization spin component  1
         0.16843   0.00000  -0.00000
@@ -3354,11 +3358,11 @@ method.</p>
 <p>A maximum entropy code has been published recently by D. Bergeron. It can be
 downloaded
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Main_Page">here</a>. Please
-cite the related paper <a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bergeron2016">[Bergeron2016]</a> if you use this code in a publication.</p>
+cite the related paper <a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bergeron2016">[Bergeron2016]</a> if you use this code in a publication.</p>
 <p>The code has a lot of options, and definitely, the method should be understood
 and the user guide should be read before any real use. It is not the goal of
 this DFT+DMFT tutorial to introduce to the Maximum Entropy Method (see
-<a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bergeron2016">[Bergeron2016]</a> and references therein). We give here a very quick way to
+<a class="wikilink citation-link" data-content="Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#bergeron2016">[Bergeron2016]</a> and references therein). We give here a very quick way to
 obtain a spectral function. First, you have to install this code and the
 armadillo library by following the
 <a href="https://www.physique.usherbrooke.ca/MaxEnt/index.php/Download">guidelines</a>,
@@ -3394,7 +3398,7 @@ imaginary time data (yes/[no]): yes
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction.jpg" /><br />
 Even if the calculation is not well converged, you recognize in the spectral
 functions the quasiparticle peak as well as Hubbard bands at -2 eV and +2.5 eV
-as in Fig.4 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>.</p>
+as in Fig.4 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>.</p>
 <h2 id="4-electronic-structure-of-srvo3-choice-of-correlated-orbitals">4 Electronic Structure of SrVO3: Choice of correlated orbitals<a class="headerlink" href="#4-electronic-structure-of-srvo3-choice-of-correlated-orbitals" title="Permanent link">&para;</a></h2>
 <p>Previously, only the <em>t2g</em>-like bands were used in the definition of Wannier
 functions. If there were no hybridization between <em>t2g</em> orbitals and oxygen
@@ -3473,14 +3477,14 @@ is</p>
 
 <p>Similarly to the previous calculation, the spectral function can be plotted
 using the Maximum Entropy code: we find a spectral function with an
-hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>.<br />
+hybridation peak at -5 eV, as described in Fig.5 of <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>.<br />
 <img alt="spectralfunction" src="../../documents/lesson_dmft/spectralfunction2.jpg" /><br />
 Resolving the lower Hubbard bands would require a more converged calculation.</p>
 <p>As above, one can compute the renormalization weight and it gives 0.68. It
 shows that with the same value of U and J, interactions have a weaker effect
 for the large window Wannier functions. Indeed, the value of the screened
 interaction U should be larger because the Wannier functions are more
-localized (see discussion in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>).</p>
+localized (see discussion in <a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>).</p>
 <h2 id="5-electronic-structure-of-srvo3-the-internal-energy">5 Electronic Structure of SrVO3: The internal energy<a class="headerlink" href="#5-electronic-structure-of-srvo3-the-internal-energy" title="Permanent link">&para;</a></h2>
 <p>The internal energy can be obtained with</p>
 <div class="codehilite"><pre><span></span>grep -e ITER -e Internal log_3
@@ -3549,6 +3553,37 @@ renormalization weights and total internal energy.</p>
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

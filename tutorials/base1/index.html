@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/tutorials/base1/">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/base1/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2913,13 +2915,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="first-basic-lesson">First (basic) lesson<a class="headerlink" href="#first-basic-lesson" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="first-basic-lesson">First (basic) lesson<a class="headerlink" href="#first-basic-lesson" title="Permanent link">&para;</a></h1>
 <h2 id="the-h2-molecule-without-convergence-studies">The H<sub>2</sub> molecule, without convergence studies.<a class="headerlink" href="#the-h2-molecule-without-convergence-studies" title="Permanent link">&para;</a></h2>
 <p>This lesson aims at showing how to get the following physical properties:</p>
 <ul>
@@ -2968,7 +2972,7 @@ tbase1_1.in<br />
 tbase1_1.out<br />
 Later, you will again modify these lines, to treat more cases. Make sure that
 the last line, gives the correct location of the pseudopotential. Close the
-tbase1_x.files file. Then, copy the file <a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a>
+tbase1_x.files file. Then, copy the file <a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a>
 in &ldquo;Work&rdquo;:  </p>
 <ul>
 <li>_ cp ../tbase1_1.in . _</li>
@@ -3200,7 +3204,7 @@ file.</p>
 -1</strong></em></p>
 <p>Also, define explicitly the number of states (or supercell &ldquo;bands&rdquo;) to be one,
 using the input variable <a class="wikilink codevar-link" href="../../input_variables/basic#nband">nband</a>. The input file
-<a class="wikilink test-link" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
+<a class="wikilink test-link" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
 job, while <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_2.out">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.
 If you decide to use the ~abinit/tests/tutorial/Input/tbase1_2.in file, do not
 forget to change the file names in the &ldquo;tbase1_x.files&rdquo; file &hellip;</p>
@@ -3272,7 +3276,7 @@ sufficiently converged. Indeed, the value used for <a class="wikilink codevar-li
 might be sufficient for total energy calculations, but definitely not for the
 accurate computation of other properties. So, change <a class="wikilink codevar-link" href="../../input_variables/basic#toldfe">toldfe</a> in <a class="wikilink codevar-link" href="../../input_variables/basic#toldff">toldff</a>,
 and set the latter input variable to ten times smaller than <a class="wikilink codevar-link" href="../../input_variables/rlx#tolmxf">tolmxf</a>. The
-input file <a class="wikilink test-link" data-content="H2 molecule in a big box This file will optimize automatically the interatomic distance" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
+input file <a class="wikilink test-link" data-content="H2 molecule in a big box This file will optimize automatically the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
 will do the job, while <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_3.out">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. If you decide to use these files, do not forget to change the
 file names in the &ldquo;tbase1_x.files&rdquo; file &hellip; So, you run the code with your
@@ -3302,7 +3306,7 @@ same computation is done on different platforms.</p>
 <p>The charge density has already been computed, for all geometries, in the
 above-mentioned runs. Here, we will print this quantity.</p>
 <p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink codevar-link" href="../../input_variables/files#prtden">prtden</a> description, it is worth to read a much more detailed description of the &ldquo;files&rdquo; file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
-<p><strong>1.4.b</strong> The input file <a class="wikilink test-link" data-content="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
+<p><strong>1.4.b</strong> The input file <a class="wikilink test-link" data-content="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
 <p>The density will be output in the <strong>tbase1_xo_DEN</strong> file. Try to edit it &hellip;
 No luck ! This file is unformatted, not written using the ASCII code. Even if
 you cannot read it, its description is provided in the abinit_help. It
@@ -3348,7 +3352,7 @@ Finally, in order to make numerical errors cancel, it is important to compute
 the above-mentioned difference in the same box, for the same cut-off, and even
 for a location in the box that is similar to the molecule case (although the
 latter might not be so important).</p>
-<p>The input file <a class="wikilink test-link" data-content="H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_5.in">tests/tutorial/Input/tbase1_5.in</a> is an example of file that
+<p>The input file <a class="wikilink test-link" data-content="H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_5.in">tests/tutorial/Input/tbase1_5.in</a> is an example of file that
 will do the job, while <a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_5.out">tests/tutorial/Refs/tbase1_5.out</a> is an example of
 output file. If you decide to use the tbase1_5.in file, do not forget to
 change the file names in the tbase1_x.files file. The run lasts a few seconds.</p>
@@ -3520,6 +3524,37 @@ experimental excitation energies !<br />
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

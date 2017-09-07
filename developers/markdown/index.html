@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/developers/markdown/">
+        <link rel="canonical" href="http://www.abinit.org/developers/markdown/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -136,7 +138,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2703,78 +2705,8 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#internal-links-with-namespace" title="Internal links with namespace" class="md-nav__link">
-    Internal links with namespace
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-links" title="External links" class="md-nav__link">
-    External links
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permalinks" title="Permalinks" class="md-nav__link">
-    Permalinks
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mathjax" title="MathJax" class="md-nav__link">
-    MathJax
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smartsymbols" title="SmartSymbols" class="md-nav__link">
-    SmartSymbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#admonitions" title="Admonitions" class="md-nav__link">
-    Admonitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#details" title="Details" class="md-nav__link">
-    Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plotly" title="Plotly" class="md-nav__link">
-    Plotly
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-content" title="Media Content" class="md-nav__link">
-    Media Content
-  </a>
   
 </li>
       
@@ -2918,78 +2850,8 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#internal-links-with-namespace" title="Internal links with namespace" class="md-nav__link">
-    Internal links with namespace
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#external-links" title="External links" class="md-nav__link">
-    External links
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permalinks" title="Permalinks" class="md-nav__link">
-    Permalinks
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mathjax" title="MathJax" class="md-nav__link">
-    MathJax
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#smartsymbols" title="SmartSymbols" class="md-nav__link">
-    SmartSymbols
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#admonitions" title="Admonitions" class="md-nav__link">
-    Admonitions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#details" title="Details" class="md-nav__link">
-    Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plotly" title="Plotly" class="md-nav__link">
-    Plotly
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-content" title="Media Content" class="md-nav__link">
-    Media Content
-  </a>
   
 </li>
       
@@ -3006,13 +2868,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="writing-documentation">Writing Documentation<a class="headerlink" href="#writing-documentation" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="writing-documentation">Writing Documentation<a class="headerlink" href="#writing-documentation" title="Permanent link">&para;</a></h1>
 <p>This page is intended as a quick reference to the Markdown syntax used to write the Abinit documentation.
 Markdown can be used <strong>almost everywhere</strong> including the description of the input variables
 stored in <code class="codehilite">abinit_vars.yml</code> and the description of the automatic tests given in the <code class="codehilite">TEST_INFO</code> section.</p>
@@ -3106,6 +2970,27 @@ Content Cell  | Content Cell
 <div class="codehilite"><pre><span></span>$ abinit &lt; tbase1_x.files <span class="m">2</span>&gt; log <span class="p">&amp;</span>
 </pre></div>
 
+<p>To include figures, use the standard Markdown syntax:</p>
+<div class="codehilite"><pre><span></span>![](/tutorials/bse_assets/tbs2_1.png)
+</pre></div>
+
+<p>that produces</p>
+<p><img alt="" src="../../tutorials/bse_assets/tbs2_1.png" /></p>
+<p>For figures with a caption use the <a href="https://github.com/helderco/markdown-figures">markdown-figures extension</a>:</p>
+<div class="codehilite"><pre><span></span>![](/tutorials/bse_assets/tbs5.png)
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+</pre></div>
+
+<p>that produces</p>
+<figure><img alt="" src="../../tutorials/bse_assets/tbs5.png" /><figcaption>
+<p>Convergenge of BSE optical spectrum wrt <script type="math/tex">\kk</script>-point sampling.</p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="codehilite">&lt;img&gt;</code> and <code class="codehilite">&lt;figure&gt;</code> elements are automatically centered via CSS directives 
+ declared in <code class="codehilite">extra.css</code>.</p>
+</div>
 <p>For more complete introduction to Markdown, see 
 <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> and references therein.</p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
@@ -3189,15 +3074,15 @@ There are a couple of names immediately recognized:</p>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[Amadon2008]]</code></td>
-<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
+<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[~abinit/tests/tutorial/Input/tbase1_1.in]]</code></td>
-<td align="left"><a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">~abinit/tests/tutorial/Input/tbase1_1.in</a></td>
+<td align="left"><a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">~abinit/tests/tutorial/Input/tbase1_1.in</a></td>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[tests/tutorial/Input/tbase1_1.in]]</code></td>
-<td align="left"><a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a></td>
+<td align="left"><a class="wikilink test-link" data-content="H2 molecule in a big box" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a></td>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[tests/tutorial/Refs/tbase1_1.out]]</code></td>
@@ -3206,6 +3091,14 @@ There are a couple of names immediately recognized:</p>
 <tr>
 <td align="left"><code class="codehilite">[[~abinit/tests/tutorial/Refs/tbase1_1.out]]</code></td>
 <td align="left"><a class="wikilink test-link" href="../../tests/tutorial/Refs/tbase1_1.out">~abinit/tests/tutorial/Refs/tbase1_1.out</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]</code></td>
+<td align="left"><a class="wikilink" href="../../tests/Psps_for_tests/6c.lda.atompaw">~abinit/tests/Psps_for_tests/6c.lda.atompaw</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[tests/Psps_for_tests/6c.lda.atompaw]]</code></td>
+<td align="left"><a class="wikilink" href="../../tests/Psps_for_tests/6c.lda.atompaw">tests/Psps_for_tests/6c.lda.atompaw</a></td>
 </tr>
 </tbody>
 </table>
@@ -3225,7 +3118,7 @@ For the latter input variables, one has thus also the choice between the syntax 
 </pre></div>
 
 
-<p>that in rendered in HTML as: Please consult <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">the last generic ABINIT article</a>.</p>
+<p>that in rendered in HTML as: Please consult <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">the last generic ABINIT article</a>.</p>
 <p>The script generate_doc.py does a bit of formatting in these examples: it keeps one pair of square brackets 
 in the case of a bibliographic reference, and add &ldquo;~abinit/&rdquo; in the case of a path.</p>
 <p>It&rsquo;s also possbile to create a button that opens a modal window containing 
@@ -3236,20 +3129,20 @@ the input file with the syntax:</p>
 <p>that produces:</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-db05f793-d42c-4b8d-b5b5-49bec6ee11f3">
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-b83a6780-7599-49e8-a12b-db94f47cb583">
   View tests/v1/Input/t01.in
 </button></p>
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-db05f793-d42c-4b8d-b5b5-49bec6ee11f3" tabindex="-1" role="dialog" aria-labelledby="uuid-46dde4c1-381b-4374-b8d2-98f591ad9be0">
+<div class="modal fade" id="uuid-b83a6780-7599-49e8-a12b-db94f47cb583" tabindex="-1" role="dialog" aria-labelledby="uuid-79629424-fb3c-4173-bda9-d8fb39fd830a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-46dde4c1-381b-4374-b8d2-98f591ad9be0">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-79629424-fb3c-4173-bda9-d8fb39fd830a">tests/v1/Input/t01.in</h4>
       </div>
-      <div class="modal-body">
-        <pre>#   FCC Al; 2 special points
+      <div class="modal-body"><pre>
+#   FCC Al; 2 special points
 
 #nband 8
 #nspinor 2
@@ -3318,8 +3211,9 @@ the input file with the syntax:</p>
 #%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;
 #%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
 #%%&lt;END TEST_INFO&gt;
+
 </pre>
-      </div>
+</div>
     </div>
   </div>
 </div>
@@ -3332,32 +3226,30 @@ If multiple files are used such as in: </p>
 <p>a modal window with tabs is produced</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-bb57e6c2-dc7e-4909-872a-b8b32551cb39">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button></p>
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-772f2adc-1700-4d03-8f17-fd27113e08fe">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
 <!-- Modal -->
-
-<div class="modal fade" id="uuid-bb57e6c2-dc7e-4909-872a-b8b32551cb39" tabindex="-1" role="dialog" aria-labelledby="uuid-aa96dd2c-8e25-4e3a-9d7c-7677a20dd610" aria-hidden="true">
+<div class="modal fade" id="uuid-772f2adc-1700-4d03-8f17-fd27113e08fe" tabindex="-1" role="dialog" aria-labelledby="uuid-92ec0028-e72a-4dab-9aac-f84d0f85d6fe" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                 <h4 class="modal-title" id="uuid-aa96dd2c-8e25-4e3a-9d7c-7677a20dd610"></h4>
+                 <h4 class="modal-title" id="uuid-92ec0028-e72a-4dab-9aac-f84d0f85d6fe"></h4>
             </div>
             <div class="modal-body">
                 <div role="tabpanel">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">                    <li role="presentation" class="active">
-                    <a href="#uuid-a8776715-c69f-43d4-b748-53b701eb0656" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+                    <a href="#uuid-c2089f77-82cd-4408-a63e-8c968dc3e640" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
                     </li>                     <li role="presentation" class=" ">
-                    <a href="#uuid-34b39cb0-77f7-4f50-b23a-61bb9317d951" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+                    <a href="#uuid-6cb0c464-e6ca-4187-8d5f-2bb4c782ae1f" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
                     </li> </ul>
                  <!-- Tab panes -->
-                 <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-a8776715-c69f-43d4-b748-53b701eb0656"><pre>#   FCC Al; 2 special points
-
-#nband 8
-#nspinor 2
-
- acell 3*7.60
+                 <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-c2089f77-82cd-4408-a63e-8c968dc3e640"><pre></p>
+<h1 id="fcc-al-2-special-points">FCC Al; 2 special points<a class="headerlink" href="#fcc-al-2-special-points" title="Permanent link">&para;</a></h1>
+<h1 id="nband-8">nband 8<a class="headerlink" href="#nband-8" title="Permanent link">&para;</a></h1>
+<h1 id="nspinor-2">nspinor 2<a class="headerlink" href="#nspinor-2" title="Permanent link">&para;</a></h1>
+<p>acell 3*7.60
  ecut 10
  enunit 2
  intxc 1
@@ -3402,28 +3294,27 @@ If multiple files are used such as in: </p>
  typat  1
  wtk   1 3
  xred  0.0 0.0 0.0
- znucl 13.0
-
-
-## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
-#%%&lt;BEGIN TEST_INFO&gt;
-#%% [setup]
-#%% executable = abinit
-#%% [files]
-#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0
-#%% psp_files=13al.pspgth
-#%% [paral_info]
-#%% max_nprocs = 2
-#%% [extra_info]
-#%% keywords = NC
-#%% description = 
-#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .
-#%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;
-#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
-#%%&lt;END TEST_INFO&gt;
-</pre></div><div role="tabpanel" class="tab-pane  " id="uuid-34b39cb0-77f7-4f50-b23a-61bb9317d951"><pre>#   FCC Al; 2 special points
-
- acell 3*7.60
+ znucl 13.0</p>
+<h2 id="after-modifying-the-following-section-one-might-need-to-regenerate-the-pickle-database-with-runtestspy-r">After modifying the following section, one might need to regenerate the pickle database with runtests.py -r<a class="headerlink" href="#after-modifying-the-following-section-one-might-need-to-regenerate-the-pickle-database-with-runtestspy-r" title="Permanent link">&para;</a></h2>
+<h1 id="begin-test_info">%%&lt;BEGIN TEST_INFO&gt;<a class="headerlink" href="#begin-test_info" title="Permanent link">&para;</a></h1>
+<h1 id="setup">%% [setup]<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h1>
+<h1 id="executable-abinit">%% executable = abinit<a class="headerlink" href="#executable-abinit" title="Permanent link">&para;</a></h1>
+<h1 id="files">%% [files]<a class="headerlink" href="#files" title="Permanent link">&para;</a></h1>
+<h1 id="files_to_test-t01out-tolnlines0-tolabs00-tolrel00">%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0<a class="headerlink" href="#files_to_test-t01out-tolnlines0-tolabs00-tolrel00" title="Permanent link">&para;</a></h1>
+<h1 id="psp_files13alpspgth">%% psp_files=13al.pspgth<a class="headerlink" href="#psp_files13alpspgth" title="Permanent link">&para;</a></h1>
+<h1 id="paral_info">%% [paral_info]<a class="headerlink" href="#paral_info" title="Permanent link">&para;</a></h1>
+<h1 id="max_nprocs-2">%% max_nprocs = 2<a class="headerlink" href="#max_nprocs-2" title="Permanent link">&para;</a></h1>
+<h1 id="extra_info">%% [extra_info]<a class="headerlink" href="#extra_info" title="Permanent link">&para;</a></h1>
+<h1 id="keywords-nc">%% keywords = NC<a class="headerlink" href="#keywords-nc" title="Permanent link">&para;</a></h1>
+<h1 id="description">%% description =<a class="headerlink" href="#description" title="Permanent link">&para;</a></h1>
+<h1 id="bulk-aluminium-fcc-with-2-special-points-occopt4-and-tsmear005">%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .<a class="headerlink" href="#bulk-aluminium-fcc-with-2-special-points-occopt4-and-tsmear005" title="Permanent link">&para;</a></h1>
+<h1 id="designed-to-test-the-treatment-of-metals-using-the-cold-smearing">%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;<a class="headerlink" href="#designed-to-test-the-treatment-of-metals-using-the-cold-smearing" title="Permanent link">&para;</a></h1>
+<h1 id="of-n-marzari-with-a-5634-minimization-of-the-bump">%%  of N. Marzari , with a=-.5634 (minimization of the bump).<a class="headerlink" href="#of-n-marzari-with-a-5634-minimization-of-the-bump" title="Permanent link">&para;</a></h1>
+<h1 id="end-test_info">%%&lt;END TEST_INFO&gt;<a class="headerlink" href="#end-test_info" title="Permanent link">&para;</a></h1>
+<p></pre>
+</div><div role="tabpanel" class="tab-pane  " id="uuid-6cb0c464-e6ca-4187-8d5f-2bb4c782ae1f"><pre></p>
+<h1 id="fcc-al-2-special-points_1">FCC Al; 2 special points<a class="headerlink" href="#fcc-al-2-special-points_1" title="Permanent link">&para;</a></h1>
+<p>acell 3*7.60
  ecut 10
  enunit 2
  intxc 1
@@ -3466,28 +3357,26 @@ If multiple files are used such as in: </p>
  typat  1
  wtk   1 3
  xred  0.0 0.0 0.0
- znucl 13.0
-
-
-## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
-#%%&lt;BEGIN TEST_INFO&gt;
-#%% [setup]
-#%% executable = abinit
-#%% [files]
-#%% psp_files=13al.pspgth
-#%% files_to_test = t02.out, tolnlines=  1, tolabs=  1.001e-09, tolrel=  1.100e-04
-#%% [paral_info]
-#%% max_nprocs = 2
-#%% [extra_info]
-#%% keywords = NC
-#%% description = 
-#%%   Bulk Aluminium, FCC, with 2 special points, occopt=5 and tsmear=0.05.
-#%%   Designed to test the treatment of metals, using the &quot;cold smearing&quot;
-#%%   of N. Marzari , with a=-.8165 (monotonic function in the tail).
-#%% topics = BandOcc
-#%%&lt;END TEST_INFO&gt;
-</pre></div> </div>  </div>  </div>  </div>  </div>  </div>
-
+ znucl 13.0</p>
+<h2 id="after-modifying-the-following-section-one-might-need-to-regenerate-the-pickle-database-with-runtestspy-r_1">After modifying the following section, one might need to regenerate the pickle database with runtests.py -r<a class="headerlink" href="#after-modifying-the-following-section-one-might-need-to-regenerate-the-pickle-database-with-runtestspy-r_1" title="Permanent link">&para;</a></h2>
+<h1 id="begin-test_info_1">%%&lt;BEGIN TEST_INFO&gt;<a class="headerlink" href="#begin-test_info_1" title="Permanent link">&para;</a></h1>
+<h1 id="setup_1">%% [setup]<a class="headerlink" href="#setup_1" title="Permanent link">&para;</a></h1>
+<h1 id="executable-abinit_1">%% executable = abinit<a class="headerlink" href="#executable-abinit_1" title="Permanent link">&para;</a></h1>
+<h1 id="files_1">%% [files]<a class="headerlink" href="#files_1" title="Permanent link">&para;</a></h1>
+<h1 id="psp_files13alpspgth_1">%% psp_files=13al.pspgth<a class="headerlink" href="#psp_files13alpspgth_1" title="Permanent link">&para;</a></h1>
+<h1 id="files_to_test-t02out-tolnlines-1-tolabs-1001e-09-tolrel-1100e-04">%% files_to_test = t02.out, tolnlines=  1, tolabs=  1.001e-09, tolrel=  1.100e-04<a class="headerlink" href="#files_to_test-t02out-tolnlines-1-tolabs-1001e-09-tolrel-1100e-04" title="Permanent link">&para;</a></h1>
+<h1 id="paral_info_1">%% [paral_info]<a class="headerlink" href="#paral_info_1" title="Permanent link">&para;</a></h1>
+<h1 id="max_nprocs-2_1">%% max_nprocs = 2<a class="headerlink" href="#max_nprocs-2_1" title="Permanent link">&para;</a></h1>
+<h1 id="extra_info_1">%% [extra_info]<a class="headerlink" href="#extra_info_1" title="Permanent link">&para;</a></h1>
+<h1 id="keywords-nc_1">%% keywords = NC<a class="headerlink" href="#keywords-nc_1" title="Permanent link">&para;</a></h1>
+<h1 id="description_1">%% description =<a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h1>
+<h1 id="bulk-aluminium-fcc-with-2-special-points-occopt5-and-tsmear005">%%   Bulk Aluminium, FCC, with 2 special points, occopt=5 and tsmear=0.05.<a class="headerlink" href="#bulk-aluminium-fcc-with-2-special-points-occopt5-and-tsmear005" title="Permanent link">&para;</a></h1>
+<h1 id="designed-to-test-the-treatment-of-metals-using-the-cold-smearing_1">%%   Designed to test the treatment of metals, using the &quot;cold smearing&quot;<a class="headerlink" href="#designed-to-test-the-treatment-of-metals-using-the-cold-smearing_1" title="Permanent link">&para;</a></h1>
+<h1 id="of-n-marzari-with-a-8165-monotonic-function-in-the-tail">%%   of N. Marzari , with a=-.8165 (monotonic function in the tail).<a class="headerlink" href="#of-n-marzari-with-a-8165-monotonic-function-in-the-tail" title="Permanent link">&para;</a></h1>
+<h1 id="topics-bandocc">%% topics = BandOcc<a class="headerlink" href="#topics-bandocc" title="Permanent link">&para;</a></h1>
+<h1 id="end-test_info_1">%%&lt;END TEST_INFO&gt;<a class="headerlink" href="#end-test_info_1" title="Permanent link">&para;</a></h1>
+<p></pre>
+</div></div></div></div></div></div></div></p>
 <p>To create a panel with the output file use:</p>
 <div class="codehilite"><pre><span></span>    {% editor tests/v1/Refs/t01.out %}
 </pre></div>
@@ -3495,9 +3384,10 @@ If multiple files are used such as in: </p>
 <p>that gives:</p>
 <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-1aa33cc8-d269-44ff-9852-6dec79b48e1b">
+    <div class="panel-body"><div class="editor" hidden id="uuid-a92c8460-c7e5-4962-878c-cd1a770a9386"><pre>
+
 .Version 8.0.3 of ABINIT 
-.(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
+.(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
 
 .Copyright (C) 1998-2017 ABINIT group . 
  ABINIT comes with ABSOLUTELY NO WARRANTY.
@@ -4046,6 +3936,8 @@ P           mkmem           2
  Calculation completed.
 .Delivered   1 WARNINGs and   2 COMMENTs to log file.
 +Overall time at end (sec) : cpu=          0.6  wall=          0.3
+
+</pre>
 </div></div>
 </div>
 
@@ -4058,16 +3950,18 @@ P           mkmem           2
 
 <div id="exTab1">
 <!-- Nav tabs -->
-<ul class="nav nav-pills nav-justified">                    <li class="active">
-                    <a href="#uuid-dfecc0d8-44ec-4a20-8548-5b09b7fa627b" data-toggle="pill">tests/v1/Refs/t01.out</a>
-                    </li>                     <li class=" ">
-                    <a href="#uuid-8715e6d2-24c7-4551-bec5-d0e2f58437ff" data-toggle="pill">tests/v1/Refs/t02.out</a>
-                    </li> </ul>
-                 <!-- Tab panes -->
-                 <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-dfecc0d8-44ec-4a20-8548-5b09b7fa627b">
-                <div id="uuid-21ad489c-b0d9-4aa4-b17a-94a4845ae55b" class="editor" hidden>
+<ul class="nav nav-pills nav-justified"><li class="active">
+<a href="#uuid-fc2e5b8b-4820-4e8a-9470-f5fb21ec426c" data-toggle="pill">tests/v1/Refs/t01.out</a>
+</li><li class=" ">
+<a href="#uuid-cc93b557-3e1d-48f1-a2c6-973d423fe083" data-toggle="pill">tests/v1/Refs/t02.out</a>
+</li></ul>
+<!-- Tab panes -->
+<div class="tab-content clearfix">
+<div class="tab-pane fade in active" id="uuid-fc2e5b8b-4820-4e8a-9470-f5fb21ec426c">
+<div id="uuid-5d14d947-076d-4f84-9aeb-6c8093695058" class="editor" hidden><pre>
+
 .Version 8.0.3 of ABINIT 
-.(MPI version, prepared for a x86_64_linux_gnu5.3 computer)
+.(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
 
 .Copyright (C) 1998-2017 ABINIT group . 
  ABINIT comes with ABSOLUTELY NO WARRANTY.
@@ -4616,8 +4510,12 @@ P           mkmem           2
  Calculation completed.
 .Delivered   1 WARNINGs and   2 COMMENTs to log file.
 +Overall time at end (sec) : cpu=          0.6  wall=          0.3
-</div></div><div class="tab-pane fade" id="uuid-8715e6d2-24c7-4551-bec5-d0e2f58437ff">
-                <div id="uuid-aae35395-2848-4df6-8d81-a2f1c36c84fe" class="editor" hidden>
+
+</pre>
+</div></div>
+<div class="tab-pane fade" id="uuid-cc93b557-3e1d-48f1-a2c6-973d423fe083">
+<div id="uuid-f2513c13-1571-41d2-8292-57f1eef49cfe" class="editor" hidden><pre>
+
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
 
@@ -5168,7 +5066,10 @@ P           mkmem           2
  Calculation completed.
 .Delivered   1 WARNINGs and   2 COMMENTs to log file.
 +Overall time at end (sec) : cpu=          0.7  wall=          0.3
-</div></div></div> </div>
+
+</pre>
+</div></div>
+</div></div>
 
 <h3 id="internal-links-with-namespace">Internal links with namespace<a class="headerlink" href="#internal-links-with-namespace" title="Permanent link">&para;</a></h3>
 <p>Other internal links can be recognized thanks to the namespace. 
@@ -5200,7 +5101,7 @@ that has a name that start with the namespace and end with the name, the link wi
 <tr>
 <td align="left"><code class="codehilite">[[topic:BSE]]</code></td>
 <td align="left"><a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
-dielectric function" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/BSE">topic_BSE</a></td>
+dielectric function" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/BSE">topic_BSE</a></td>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[help:abinit]]</code></td>
@@ -5208,7 +5109,7 @@ dielectric function" data-placement="right" data-toggle="popover" data-trigger="
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[bib:Amadon2008]]</code></td>
-<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
+<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
 </tr>
 <tr>
 <td align="left"><code class="codehilite">[[theorydoc:mbpt]]</code></td>
@@ -5220,8 +5121,8 @@ dielectric function" data-placement="right" data-toggle="popover" data-trigger="
 </tr>
 </tbody>
 </table>
-<p><code class="codehilite">[[topic:PIMD#1|Introduction]]</code> becomes <a class="wikilink topic-link" data-content="How to perform a PIMD calculation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../topics/PIMD#1">Introduction</a></p>
-<p><code class="codehilite">[[#notations|internal link]]</code> becomes <a class="wikilink" href="">internal link</a></p>
+<p><code class="codehilite">[[topic:PIMD#1|Introduction]]</code> becomes <a class="wikilink topic-link" data-content="How to perform a PIMD calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/PIMD#1">Introduction</a></p>
+<p><code class="codehilite">[[#markdown-quick-reference|quick reference]]</code> becomes <a class="wikilink" href="#markdown-quick-reference">quick reference</a></p>
 <p>Actually, using the real name of the file without suffix, e.g. <code class="codehilite">lesson_gw1</code> will also be recognized, 
 although this real name is echoed, instead of the name without namespace.</p>
 <p><code class="codehilite">[[lesson_gw1]]</code> becomes <a class="wikilink lesson-link" href="../../tutorials/gw1">lesson_gw1</a>
@@ -5252,12 +5153,10 @@ abinit help file</p>
 <td align="left"><code class="codehilite">www.abinit.org</code></td>
 <td align="left"><a href="http://www.abinit.org">www.abinit.org</a></td>
 </tr>
-<tr>
-<td align="left"><code class="codehilite">[[https://wiki.abinit.org | The ABINIT Wiki]]</code></td>
-<td align="left">[[<a href="https://wiki.abinit.org">https://wiki.abinit.org</a></td>
-</tr>
 </tbody>
 </table>
+<p>It&rsquo;s also possible to specify the name of the link with:
+<code class="codehilite">[[https://wiki.abinit.org | The ABINIT Wiki]]</code> that gives <a href="https://wiki.abinit.org "> The ABINIT Wiki</a> </p>
 <h3 id="permalinks">Permalinks<a class="headerlink" href="#permalinks" title="Permanent link">&para;</a></h3>
 <p>Permalinks are a feature of the <a href="https://pythonhosted.org/Markdown/extensions/toc.html">Table of Contents extension</a>, 
 which is part of the standard Markdown library. 
@@ -5603,14 +5502,14 @@ Links require no special syntax.</p>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="/tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
+      <img src="../../tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
       <div class="carousel-caption">
         <h3>Unconverged BSE optical spectrum</h3>
       </div>
     </div>
 
     <div class="item">
-      <img src="/tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
+      <img src="../../tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
       <div class="carousel-caption">
         <h3>Convergenge of BSE optical spectrum wrt k-point sampling</h3>
       </div>
@@ -5633,6 +5532,37 @@ Links require no special syntax.</p>
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/tutorials/tdepes/">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/tdepes/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2937,13 +2939,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="lesson-tdepes">Lesson TDepES<a class="headerlink" href="#lesson-tdepes" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="lesson-tdepes">Lesson TDepES<a class="headerlink" href="#lesson-tdepes" title="Permanent link">&para;</a></h1>
 <h2 id="temperature-dependence-of-the-electronic-structure">Temperature-DEPendence of the Electronic Structure.<a class="headerlink" href="#temperature-dependence-of-the-electronic-structure" title="Permanent link">&para;</a></h2>
 <p>This lesson aims at showing how to get the following physical properties, for
 periodic solids:</p>
@@ -2959,7 +2963,7 @@ periodic solids:</p>
 </li>
 </ul>
 <p>For the theory related to the temperature-dependent calculations, you can read
-the following papers: <a class="wikilink citation-link" data-content="Temperature dependence of the electronic structure of semiconductors and insulators" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2015">[Ponce2015]</a>, <a class="wikilink citation-link" data-content="Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2014">[Ponce2014]</a> and <a class="wikilink citation-link" data-content="Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2014a">[Ponce2014a]</a>.</p>
+the following papers: <a class="wikilink citation-link" data-content="Temperature dependence of the electronic structure of semiconductors and insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2015">[Ponce2015]</a>, <a class="wikilink citation-link" data-content="Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2014">[Ponce2014]</a> and <a class="wikilink citation-link" data-content="Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#ponce2014a">[Ponce2014a]</a>.</p>
 <p>There are two ways to compute the temperature dependence with Abinit:</p>
 <ul>
 <li><strong>Using Anaddb</strong>: historically the first coded way. This option does not require the use of Netcdf.</li>
@@ -2970,7 +2974,7 @@ the following papers: <a class="wikilink citation-link" data-content="Temperatur
 <p>The reference input files for this lesson are located in
 ~abinit/tests/tutorespfn/Input and the corresponding reference output files
 are in ~abinit/tests/tutorespfn/Refs. The prefix is &ldquo;tdepes&rdquo;. First, run the
-calculation using the <a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_1.in">tests/tutorespfn/Input/tdepes_1.in</a> input file. You
+calculation using the <a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_1.in">tests/tutorespfn/Input/tdepes_1.in</a> input file. You
 can use the files file <a class="wikilink test-link" href="../../tests/tutorespfn/Input/tdepes_1.files">tests/tutorespfn/Input/tdepes_1.files</a> for abinit
 (will always be the same, just change the last digit for the other
 calculations):</p>
@@ -3031,7 +3035,7 @@ in semiconductors.</p>
 but since we only have one q-point we do not have to do it. The static
 temperature dependence as well as the G2F can be computed thanks to anaddb
 with the files file <a class="wikilink test-link" href="../../tests/tutorespfn/Input/tdepes_2.files">tests/tutorespfn/Input/tdepes_2.files</a> and the input
-file <a class="wikilink test-link" data-content="Input file for the anaddb code. Analysis of the C DDB" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_2.in">tests/tutorespfn/Input/tdepes_2.in</a> The run will generate 3 files:</p>
+file <a class="wikilink test-link" data-content="Input file for the anaddb code. Analysis of the C DDB" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_2.in">tests/tutorespfn/Input/tdepes_2.in</a> The run will generate 3 files:</p>
 <ul>
 <li>
 <p><strong>tdepes_2.out_ep_G2F</strong>: This g2F spectral function represents the contribution of the phononic modes of energy E to the change of electronic eigenenergies according to the equation<br />
@@ -3057,7 +3061,7 @@ slowly but in a consistent manner. Since this methods is a little bit less
 user friendly we will focus on the homogenous integration. The first thing we
 need to do is to determine the number of q-point in the IBZ for a given
 q-point grid. We choose here a 4x4x4 q -point grid. Use the input file
-<a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_3.in">tests/tutorespfn/Input/tdepes_3.in</a>. Launch this job, and kill it after a
+<a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_3.in">tests/tutorespfn/Input/tdepes_3.in</a>. Launch this job, and kill it after a
 few seconds. Then look into the log file to find the following line after the
 list of q-points:</p>
 <div class="codehilite"><pre><span></span><span class="n">symkpt</span> <span class="o">:</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">k</span><span class="o">-</span><span class="n">points</span><span class="o">,</span> <span class="n">thanks</span> <span class="n">to</span> <span class="n">the</span> <span class="n">symmetries</span><span class="o">,</span>
@@ -3098,7 +3102,7 @@ Different datasets are required to compute the following quantites:</p>
 <li>Ψ(0)kBS+q, the ground-state wavefunctions obtained from reading the perturbed density of the previous dataset. </li>
 <li>Reading the previous quantity we obtain the el-ph matrix elements along the BS with all physical quantities integrated over a homogeneous grid. </li>
 </ol>
-<p>Run the calculation using the <a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_4.in">tests/tutorespfn/Input/tdepes_4.in</a> input
+<p>Run the calculation using the <a class="wikilink test-link" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tdepes_4.in">tests/tutorespfn/Input/tdepes_4.in</a> input
 file, then the files file <a class="wikilink test-link" href="../../tests/tutorespfn/Input/tdepes_4.files">tests/tutorespfn/Input/tdepes_4.files</a> for the
 python script. Of course, the high symmetry points that we computed in section
 2 have the same value here. It is a good idea to check it by running the
@@ -3167,6 +3171,37 @@ set to 1E-4.</p>
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               

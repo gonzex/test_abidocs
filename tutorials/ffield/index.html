@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="https://gmatteo.github.io/test_abidocs/tutorials/ffield/">
+        <link rel="canonical" href="http://www.abinit.org/tutorials/ffield/">
       
       
         <meta name="author" content="The Abinit group">
@@ -44,13 +44,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- MathJax support -->
+    <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
+    -->
     <!--
+    This is compatible with plotly.
+    -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
-    -->
 
     <!--
     Configure MathJax to produce automatic equation numbers http://docs.mathjax.org/en/latest/tex.html
@@ -133,7 +135,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="https://gmatteo.github.io/test_abidocs/" title="abinit" class="md-logo md-header-nav__button">
+          <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
             <img src="../../images/abinit_logo.png" width="24" height="24">
           </a>
         
@@ -2871,13 +2873,15 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-                
-                
-                <!-- Return to Top -->
+<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx -->
+<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-<p><a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></p>
-<hr />
-<h1 id="lesson-on-polarization-and-finite-electric-fields">Lesson on polarization and finite electric fields<a class="headerlink" href="#lesson-on-polarization-and-finite-electric-fields" title="Permanent link">&para;</a></h1>
+                <!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
+                <a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+                 -->
+                
+                
+                <h1 id="lesson-on-polarization-and-finite-electric-fields">Lesson on polarization and finite electric fields<a class="headerlink" href="#lesson-on-polarization-and-finite-electric-fields" title="Permanent link">&para;</a></h1>
 <h2 id="polarization-and-responses-to-finite-electric-fields-for-alas">Polarization, and responses to finite electric fields for AlAs.<a class="headerlink" href="#polarization-and-responses-to-finite-electric-fields-for-alas" title="Permanent link">&para;</a></h2>
 <p>This lesson aims at showing how to get the following physical properties, for
 an insulator :</p>
@@ -2949,7 +2953,7 @@ equal to 7.45*0.707*2 Bohr=10.53 Bohr (instead of the converged value of 10.64
 Bohr). For comparison, results with <a class="wikilink codevar-link" href="../../input_variables/basic#ecut">ecut</a>=5 are also reported and, in that
 case, were obtained at the optimized lattice constant of 10.64 bohr. For those
 who would like to try later, convergence tests and structural optimizations
-can be done using the file <a class="wikilink test-link" data-content="Structural optimisation" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tnlo_1.in">tests/tutorespfn/Input/tnlo_1.in</a>. Before going
+can be done using the file <a class="wikilink test-link" data-content="Structural optimisation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tnlo_1.in">tests/tutorespfn/Input/tnlo_1.in</a>. Before going
 further, you might refresh your memory concerning the other variables :
 <a class="wikilink codevar-link" href="../../input_variables/basic#ixc">ixc</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#ecutsm">ecutsm</a>, <a class="wikilink codevar-link" href="../../input_variables/rlx#dilatmx">dilatmx</a>.</p>
 <h2 id="2-berry-phase-calculation-of-polarization-in-zero-field">2 Berry phase calculation of polarization in zero field<a class="headerlink" href="#2-berry-phase-calculation-of-polarization-in-zero-field" title="Permanent link">&para;</a></h2>
@@ -2957,7 +2961,7 @@ further, you might refresh your memory concerning the other variables :
 the polarization. As a practical problem we will try to compute the Born
 effective charges from finite difference of the polarization (under finite
 atomic displacements), for AlAs.</p>
-<p>You can now copy the file <a class="wikilink test-link" data-content="Finite difference calculation of the Born effective charges of AlAs" data-placement="right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tffield_1.in">tests/tutorespfn/Input/tffield_1.in</a> and
+<p>You can now copy the file <a class="wikilink test-link" data-content="Finite difference calculation of the Born effective charges of AlAs" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/tffield_1.in">tests/tutorespfn/Input/tffield_1.in</a> and
 <a class="wikilink test-link" href="../../tests/tutorespfn/Input/tffield_x.files">tests/tutorespfn/Input/tffield_x.files</a> in Work-ffield, and modify the
 latter as usual (for example, edit it so that the various file names it
 contains refer to tffield_1 rather than tffield_x).</p>
@@ -3370,6 +3374,37 @@ relax  , one can access the relaxed ion proper piezoelectric constant. At
                   
                 
               
+
+<div class="container">
+  <div class="row">
+    <div id="inbox">
+      <div class="fab btn-group show-on-hover dropup">
+        <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
+          <button type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                <i class="fa fa-map fa-stack-1x fa-inverse fab-primary"></i>
+                <i class="fa fa-map-signs fa-stack-1x fa-inverse fab-secondary"></i>
+            </span>
+          </button></div>
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+            <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+                <i class="fa fa-user-circle-o"></i></a></li>
+            <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
+                <i class="fa fa-question"></i></a></li>
+            <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
+                <i class="fa fa-file-text-o"></i></a></li>
+            <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
+                <i class="fa fa-graduation-cap"></i></a></li>
+            <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
+                <i class="fa fa-book"></i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               
                 
               
