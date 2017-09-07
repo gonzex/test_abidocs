@@ -67,7 +67,7 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     */
 }
 
-/* return to top arrow. https://codepen.io/rdallaire/pen/apoyx */
+/* return to top arrow. https://codepen.io/rdallaire/pen/apoyx 
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -111,6 +111,7 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     color: #fff;
     top: 5px;
 }
+ */
 
 
 /* Popover
@@ -212,7 +213,7 @@ body {padding:10px;}
 #inbox .show-on-hover {
     /* position: absolute; */
     position: fixed;
-    bottom: 80px;
+    bottom: 20px;
     right: 20px;
 }
 #inbox .btn-io{
