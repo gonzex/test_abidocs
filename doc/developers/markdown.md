@@ -127,17 +127,18 @@ There are a couple of names immediately recognized:
 
 Examples:
 
-| Markdown | Result |
-| :-- | :-- |
+| Markdown | Result 
+| :-- | :-- 
 | `[[ecut]]` | [[ecut]] 
-| `[[abinit:ecut]]` | [[abinit:ecut]] |
-| `[[anaddb:dipdip]]` | [[anaddb:dipdip]] |
-| `[[dipdip@anaddb]]` | [[dipdip@anaddb]] |
-| `[[Amadon2008]]` | [[Amadon2008]] |
-| `[[~abinit/tests/tutorial/Input/tbase1_1.in]]` | [[~abinit/tests/tutorial/Input/tbase1_1.in]] |
-| `[[tests/tutorial/Input/tbase1_1.in]]` | [[tests/tutorial/Input/tbase1_1.in]] |
-| `[[tests/tutorial/Refs/tbase1_1.out]]` |  [[tests/tutorial/Refs/tbase1_1.out]] |
-| `[[~abinit/tests/tutorial/Refs/tbase1_1.out]]` |  [[~abinit/tests/tutorial/Refs/tbase1_1.out]] |
+| `[[abinit:ecut]]` | [[abinit:ecut]] 
+| `[[anaddb:dipdip]]` | [[anaddb:dipdip]] 
+| `[[dipdip@anaddb]]` | [[dipdip@anaddb]] 
+| `[[Amadon2008]]` | [[Amadon2008]] 
+| `[[~abinit/tests/tutorial/Input/tbase1_1.in]]` | [[~abinit/tests/tutorial/Input/tbase1_1.in]] 
+| `[[tests/tutorial/Input/tbase1_1.in]]` | [[tests/tutorial/Input/tbase1_1.in]] 
+| `[[test:libxc_41]]` | [[test:libxc_41]] 
+| `[[tests/tutorial/Refs/tbase1_1.out]]` |  [[tests/tutorial/Refs/tbase1_1.out]] 
+| `[[~abinit/tests/tutorial/Refs/tbase1_1.out]]` |  [[~abinit/tests/tutorial/Refs/tbase1_1.out]] 
 | `[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]` | [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
 | `[[tests/Psps_for_tests/6c.lda.atompaw]]` | [[tests/Psps_for_tests/6c.lda.atompaw]]
 

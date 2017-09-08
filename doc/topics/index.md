@@ -18,7 +18,7 @@ output files (trajectories)
 - [[topic:Band2eps|Band2eps]]: How to plot phonon band structures
 - [[topic:Berry|Berry]]: How to compute the polarisation and take into account a finite homogeneous electric
 field
-- [[topic:BandOcc|BandOcc]]: How to to specify bands and occupation numbers, for metals or insulators
+- [[topic:BandOcc|BandOcc]]: How to specify bands and occupation numbers, for metals or insulators
 - [[topic:BSE|BSE]]: How to perform a Bethe-Salpeter calculation of neutral excitation energies and
 dielectric function
 ## C
@@ -26,10 +26,10 @@ dielectric function
 - [[topic:Control|Control]]: How to control the flow of ABINIT
 - [[topic:Coulomb|Coulomb]]: How to treat adequately the Coulomb interaction, especially in charged cells,
 - [[topic:CRPA|CRPA]]: How to calculate the effective Coulomb interaction
-- [[topic:crystal|crystal]]: How to to specify a crystal, with atomic positions and symmetries
+- [[topic:crystal|crystal]]: How to specify a crystal, with atomic positions and symmetries
 ## D
 - [[topic:DFT+U|DFT+U]]: How to perform a DFT+U calculation
-- [[topic:DeltaSCF|DeltaSCF]]: How to to perform a Δ-SCF calculation of neutral excitations
+- [[topic:DeltaSCF|DeltaSCF]]: How to perform a Δ-SCF calculation of neutral excitations
 - [[topic:DensityPotential|DensityPotential]]: How to analyze the densities and potentials
 - [[topic:Dev|Dev]]: How to modify ABINIT behaviour for developers
 - [[topic:DFPT|DFPT]]: How to generically perform DFPT calculations
@@ -44,7 +44,7 @@ interaction (electrical resistivity, superconductivity, thermal conductivity)
 - [[topic:ElecDOS|ElecDOS]]: How to generate the electronic DOS and related topics
 - [[topic:ElecBandStructure|ElecBandStructure]]: How to generate the electronic band structure related topics
 ## F
-- [[topic:ForcesStresses|ForcesStresses]]: How to to tune the computation of forces and stresses
+- [[topic:ForcesStresses|ForcesStresses]]: How to tune the computation of forces and stresses
 - [[topic:FrequencyMeshMBPT|FrequencyMeshMBPT]]: How to define frequency meshes (on the imaginary and real axes) for MBPT calculations
 ## G
 - [[topic:GeoConstraints|GeoConstraints]]: How to constaint the geometry of the system in geometry optimization, molecular

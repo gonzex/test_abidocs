@@ -1,3 +1,7 @@
+---
+rpath: about/release-notes.md
+---
+
 ## v8.4
 
 Many thanks to the contributors to the ABINIT project between
@@ -43,7 +47,9 @@ B.  Most noticeable achievements
 
 B.1 Implementation of algorithms to interpolate the electronic band structure,
     based either on "star functions" of on "B-splines" (as alternatives to Wannier function interpolation).
-    See the input variables einterp, nkpath, and prtebands, and tests Tlibxc#42, Tv8#04.
+    See the input variables [[einterp]], [[nkpath]], and [[prtebands]], and tests 
+    old syntax: `Tlibxc#42, Tv8#04` replaced by `[[tests/libxc/Input/t41.in]], [[test:v8_04]]`
+    [[tests/libxc/Input/t41.in]], [[test:v8_04]]
     Work by M. Giantomassi
 
 B.2 The Fock mixing factor for the HSE hybrid functional can be tuned thanks to the input variable gwfockmix  .
@@ -52,7 +58,7 @@ B.2 The Fock mixing factor for the HSE hybrid functional can be tuned thanks to 
     Work by W. Chen.
 
 B.3 Implementation of spatially-varying chemical potential, for each atomic species.
-    See the input variables chempot and nzchempot, and tests Tv8#30 and 31.
+    See the input variables [[chempot]] and [[nzchempot]], and tests Tv8#30 and 31.
     Work by X. Gonze
 
 B.4 Linear geometrical constraints can now be imposed on PIMD runs.
@@ -73,14 +79,14 @@ B.6 Computation of Gruneisen parameters by finite differences, within ANADDB.
     See test v8#45
     Work by M. Giantomassi
 
-B.7 New LOBPCG implementation wfoptalg=114.
-    This is the default when paral_kgb=1.
+B.7 New LOBPCG implementation [[wfoptalg]] = 114.
+    This is the default when [[paral_kgb]] == 1.
     Performances are equivalent in standard use (MPI alone) and much better with openmp+multithreaded linalg. 
     It also allows to have only one block for large system and to reduce memory copies.
     This version has been developed keeping in mind the next generation of HPC.
     Work by J. Bieder
 
-B.8 New algorithms for the displacement of nuclei (ionmov) :
+B.8 New algorithms for the displacement of nuclei ([[ionmov]]) :
     - Hybrid Monte Carlo (HMC) predictor (ionmov=25)
     - Velocity Verlet (VV) NVE molecular dynamics predictor (ionmov=24)
     See Tv8#12 for ionmov=24. 
@@ -89,7 +95,7 @@ B.8 New algorithms for the displacement of nuclei (ionmov) :
 B.9 Refactoring of ANADDB for the production of DOS and other thermodynamic quantities,
     also the mean square displacement and mean square velocity.
     The DOS is obtained using usual DOS methods, instead of the histogram method,
-    and converges much faster with ng2qpt. Activated with prtdos 1 or 2 in anaddb.
+    and converges much faster with [[anaddb:ng2qpt]]. Activated with [[anaddb:prtdos]] 1 or 2 in anaddb.
     Work by M. Verstraete.
 
 * * *
@@ -106,26 +112,26 @@ C.1 Management of the test farm : the new bot ubu_intel_17_openmpi
 
 D.  Other changes (or on-going developments, not yet finalized).
 
-D.1 The printing of potentials (e.g. prtvxc ...) works now for DFPT.
+D.1 The printing of potentials (e.g. [[prtvxc]] ...) works now for DFPT.
     By M. Verstraete.
 
-D.2 New input variable prtphbands.
+D.2 New input variable [[prtphbands]].
     See tests v7#88 and v8#46.
     By M. Giantomassi
 
 D.3 In case the ANADDB interpolation of phonon frequencies produces
-    erroneously a negative slope around gamma, the new nsphere=-1 possibility
+    erroneously a negative slope around gamma, the new [[anaddb:nsphere]] = -1 possibility
     allows ANADDB to select a set of IFCs that does not lead to such non-physical behaviour.
     See test v8#46.
     Work by M. Giantomassi.
 
-D.4 Added new value for nlflag=3 that computes only the non-linear susceptibility.
+D.4 Added new value for [[anaddb:nlflag]] = 3 that computes only the non-linear susceptibility.
     By F. Naccarato.
 
 D.5 Computation of forces is now possible in the Wavelets + PAW case.
     By M. Torrent.
 
-D.6 Ongoing work concerning the new "driver" optdrive=7 specifically dealing with electron-phonon 
+D.6 Ongoing work concerning the new "driver" [[optdriver]] = 7 specifically dealing with electron-phonon 
     related computations (including zero-point renormalisation). 
     See new tests v8#41 to 44.
     Work by M. Giantomassi.
@@ -134,7 +140,7 @@ D.7 Ongoing work : Raman intensities, in the PAW case, using DFPT.
     By L. Baguet and M. Torrent
 
 D.8 Ongoing work related to non-collinear DFPT.
-    Definition of the new input variable rfmagn, as well as Tv8#20 .
+    Definition of the new input variable [[rfmagn]], as well as Tv8#20 .
     DFPT with static B-field (Zeeman term only) works for q=(0 0 0).
     Adjustmanet of dfpt corrections for metals to non-collinear case.
     Bug fix for GS calculations with finite magnetic field (case of collinear spins).
@@ -146,7 +152,7 @@ D.9 Ongoing work on the multibinit project.
     Note that tests Tv7#120-124 have been renumbered Tv8#07-11.
     Work by A. Martin
 
-D.10 New test paral#62, to make sure paralkgb=0 works when there are some idle procs.
+D.10 New test paral#62, to make sure [[paral_kgb]] = 0 works when there are some idle procs.
      By M. Giantomassi
 
 D.11 Ongoing work on forces and stresses for hybrid functionals.
@@ -165,7 +171,7 @@ D.14 Implemented KSS.nc output with netcdf primitives
 D.15 Concerning  the Fourier interpolation of the phonon band structure,
      inside ANADDB, work by G Petretto :
      - Updates in the calculation of sound velocity, 
-     - Small modifications for nlflag==3 and added some quantities to the anaddb netcdf file,
+     - Small modifications for [[anaddb:nlflag]] == 3 and added some quantities to the anaddb netcdf file,
      - Fix a bug in the implementation of the new weights
 
 D.16 Concerning Path Integral Molecular Dynamics with Quantum Thermal Bath :
@@ -227,9 +233,9 @@ A.0 The 2016 article by the ABINIT group is now mentioned in the acknowledgments
     See http://www.abinit.org/doc/helpfiles/for-v8.2/users/acknowledgments.html , as well as
     the notice at the end of ABINIT runs.
    
-A.1 inclvkb 1 has been removed. Now the possible values are either 0 or 2
+A.1 [[inclvkb]] 1 has been removed. Now the possible values are either 0 or 2
 
-A.2 The default strategy of so_psp has been changed 
+A.2 The default strategy of [[so_psp]] has been changed 
     (see the description of the input variable so_psp).
 
 * * *
@@ -237,7 +243,7 @@ A.2 The default strategy of so_psp has been changed
 B.  Most noticeable achievements
 
 B.1 Implementation of the Limited-memory Broyden-Fletcher-Goldfarb-Shanno (LBFGS) 
-    minimization algorithm.  Activate this algorithm using ionmov=22. 
+    minimization algorithm.  Activate this algorithm using [[ionmov]] = 22. 
     From the tests that have been run, this algorithm can be much better
     than the native implementation of BFGS in ABINIT when one approaches convergence, 
     perhaps because of better treatment of numerical details. 
@@ -319,7 +325,7 @@ D.4 As a follow-up of the Achievement B3 in the release notes of ABINITv8.0 (DMF
 D.5 More systematic tests of the IO in parallel (different files) have been set up,
     in the norm-conserving, PAW and PAW + spin-orbit cases.
     See tests mpiio#26, 27 and 28.
-    Also, the case paral_kgb=0 is now tested with idle processors. See test paral#62.
+    Also, the case [[paral_kgb]] = 0 is now tested with idle processors. See test paral#62.
     Work by M. Giantomassi
 
 D.6 The load balancing for the repartition of the plane waves among procs is now monitored,

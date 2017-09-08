@@ -260,7 +260,7 @@ class Variable(yaml.YAMLObject):
     def internal_link(self, website, page_rpath, label=None):
         """String with the website internal URL."""
         label = self.name if label is None else str(label)
-        #url = "/input_variables/%s#%s" % (self.varset, self.name)
+        #url = "/variables/%s#%s" % (self.varset, self.name)
         #return '<a href="%s">%s</a>' % (url, label)
         token = "%s:%s" % (self.executable, self.name)
         a = website.get_wikilink(token, page_rpath)
@@ -468,7 +468,7 @@ _VARS = None
 def get_variables_code():
     global _VARS
     if _VARS is None:
-        yaml_path = os.path.join(os.path.dirname(__file__), "..", "doc", "input_variables", "abinit_vars.yml")
+        yaml_path = os.path.join(os.path.dirname(__file__), "..", "doc", "variables", "abinit_vars.yml")
         _VARS = VarDatabase.from_file(yaml_path)
     return _VARS
 

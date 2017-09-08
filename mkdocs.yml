@@ -116,32 +116,32 @@ pages:
     - topics/Wannier.md
     - topics/Wavelets.md
     - topics/xc.md
-- Input Variables:
-    - All Variables: input_variables/index.md
+- Variables:
+    - All Variables: variables/index.md
     - Abinit:
-        - Basic: input_variables/basic.md
-        - Bethe-Salpeter: input_variables/bse.md
-        - Developers: input_variables/dev.md
-        - DMFT: input_variables/dmft.md
-        - Electron-Phonon: input_variables/eph.md
-        - Varff: input_variables/ffield.md
-        - File-handling: input_variables/files.md
-        - Geometry: input_variables/geo.md
-        - Ground-State: input_variables/gstate.md
-        - GW: input_variables/gw.md
-        - Internal: input_variables/internal.md
-        - Parallelism: input_variables/paral.md
-        - PAW: input_variables/paw.md
-        - DFPT: input_variables/dfpt.md
-        - Relaxation: input_variables/rlx.md
-        - VdW: input_variables/vdw.md
-        - Wannier90: input_variables/w90.md
-    - Anaddb: input_variables/anaddb.md
-    - Optic: input_variables/optic.md
-    - Aim: input_variables/aim.md
-    - External Parameters: input_variables/external_parameters.md
-    - Statistics: input_variables/varset_stats.md
-    - Connections: input_variables/connections.md
+        - Basic: variables/basic.md
+        - Bethe-Salpeter: variables/bse.md
+        - Developers: variables/dev.md
+        - DMFT: variables/dmft.md
+        - Electron-Phonon: variables/eph.md
+        - Varff: variables/ffield.md
+        - File-handling: variables/files.md
+        - Geometry: variables/geo.md
+        - Ground-State: variables/gstate.md
+        - GW: variables/gw.md
+        - Internal: variables/internal.md
+        - Parallelism: variables/paral.md
+        - PAW: variables/paw.md
+        - DFPT: variables/dfpt.md
+        - Relaxation: variables/rlx.md
+        - VdW: variables/vdw.md
+        - Wannier90: variables/w90.md
+    - Anaddb: variables/anaddb.md
+    - Optic: variables/optic.md
+    - Aim: variables/aim.md
+    - External Parameters: variables/external_parameters.md
+    - Statistics: variables/varset_stats.md
+    - Connections: variables/connections.md
 - Lessons:
     - Overview: tutorials/welcome.md
     - Base Tutorials: 

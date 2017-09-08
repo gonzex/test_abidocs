@@ -123,7 +123,8 @@ def main():
         return website.validate_html_build()
 
     if "--dry-run" in sys.argv: return 0
-    return mkdocs.__main__.cli()
+    mkdocs_retcode = mkdocs.__main__.cli()
+    return mkdocs_retcode + len(website.warnings)
 
 
 if __name__ == '__main__':

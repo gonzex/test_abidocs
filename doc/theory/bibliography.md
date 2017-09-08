@@ -1233,7 +1233,7 @@ Journal of Molecular Structure (Theochem) **419**, 19 (1997)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/paw](/input_variables/paw)
+Referred to in: [/variables/paw](/variables/paw)
 * * *
 
 
@@ -2818,7 +2818,7 @@ Phys. Rev. B **54**, 1703--1710 (1996)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/basic](/input_variables/basic)
+Referred to in: [/variables/basic](/variables/basic)
 * * *
 
 
@@ -4862,7 +4862,7 @@ Phys. Rev. B **40**, 3616 (1989)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/basic](/input_variables/basic)
+Referred to in: [/variables/basic](/variables/basic)
 * * *
 
 
@@ -5185,7 +5185,7 @@ Phys. Rev. B **23**, 5048 (1981)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/basic](/input_variables/basic)
+Referred to in: [/variables/basic](/variables/basic)
 * * *
 
 
@@ -5333,7 +5333,7 @@ Phys. Rev. B **38**, 2721 (1988)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/basic](/input_variables/basic)
+Referred to in: [/variables/basic](/variables/basic)
 * * *
 
 
@@ -6733,7 +6733,7 @@ Phys. Rev. B **61**, 1639 (2000)
     </div>
   </div>
 </div>
-Referred to in: [/input_variables/basic](/input_variables/basic)
+Referred to in: [/variables/basic](/variables/basic)
 * * *
 
 
