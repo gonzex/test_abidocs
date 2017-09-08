@@ -5,53 +5,56 @@ rpath: developers/abimkdocs.md
 
 *Proof of concept* website available at <https://gmatteo.github.io/test_abidocs/>
 
-
-List of variables, lessons of the tutorial, help files, ABINIT topics, bibliography, theory documents 
-are all important documentation files, posted on the Web, to help the users. 
-This page describes the details of the documentation system of Abinit and how to contribute. 
-We also have a more basic overview on how to contribute to this guide or the user guide.
+This page describes the details of the documentation system of Abinit 
+and how to contribute to it. 
 
 Most of the Abinit documentation is written in [Markdown](https://en.wikipedia.org/wiki/Markdown)
 a lightweight markup language with plain text 
 [formatting syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-For documentation, we mean the Abinit lessons, the User Guide, the Abinit topics 
-written by the Abinit developers as well as pages that are generated automatically in python using the information about
-the input variables stored in `abinit_vars.yml` and the bibliographic citations given in `abiref.bib`.
+The documentation includes the User Guide, the Abinit lessons, the topics 
+as well as the pages with the input variables and the bibliographic references that are generated automatically 
+in python using the information reported in `abinit_vars.yml` and the bibtex entries in `abiref.bib`.
 
-The website, indeed, is automatically generated with [MkDocs](http://www.mkdocs.org/)
+The website is automatically generated with [MkDocs](http://www.mkdocs.org/)
 a static site generator geared towards project documentation. 
 starting from a single YAML configuration file (`mkdocs.yml`) that describes the 
 organization of the pages on the website.
 MkDocs uses [Python-Markdown](https://pythonhosted.org/Markdown) to parse the Markdown documentation
 and can generate automatically the navigation bars and the Table of Contents (TOC) for the different pages
-thanks to the [jinja template engine](http://jinja.pocoo.org/).
+using the [jinja template engine](http://jinja.pocoo.org/).
 
-In addition to the basic markdown syntax, the Abinit documentation supports extensions/shortcuts
+MkDocs includes a couple built-in themes as well as various third party themes,
+all of which can easily be customized with extra CSS or JavaScript or overridden from the theme directory. 
+[Material](http://squidfunk.github.io/mkdocs-material/) is a theme for MkDocs, 
+It is built using Google's [Material Design](https://www.google.com/design/spec/material-design) guidelines.
+[Bootstrap](http://getbootstrap.com/) a popular HTML, CSS, and Javascript framework 
+for developing responsive, mobile first projects on the web (shrink the browser window to see the effect).
+
+In addition to the basic markdown syntax, the Abinit documentation supports extensions and shortcuts
 to ease the writing of hyperlinks and the inclusion of bibliographic citations stored in bibtex format
 in the `abiref.bib` file.
 A detailed description of *our markdown dialect* is given in [our markdown page](markdown).
 Also [MathJax](https://www.mathjax.org/) for equations in LaTeX is activated, 
 and the (few) specificities of its usage in the ABINIT docs are explained [here](markdown#MathJax).
-As a net result, Abinit developers can write nice-looking documentation working in an environment that 
-is Abinit-aware and without having to use HTML directly. 
+As a net result, Abinit developers can write nice-looking documentation withouth having to use 
+HTML explicitly while working in an environment that 
+is well-integrated with the Abinit ecosystem (database of input variables, test suite, bibtex citations).
+Adding new content usually requires a few steps ...
 
-[Bootstrap](http://getbootstrap.com/) a popular HTML, CSS, and JS framework 
-for developing responsive, mobile first projects on the web.
-MkDocs includes a couple built-in themes as well as various third party themes,
-all of which can easily be customized with extra CSS or JavaScript or overridden from the theme directory. 
-[Material](http://squidfunk.github.io/mkdocs-material/) is a theme for MkDocs, 
-It is built using Google's [Material Design](https://www.google.com/design/spec/material-design) guidelines.
-Other mkdocs themes are available at <http://mkdocs.github.io/mkdocs-bootswatch>.
+Note that HTML code can be mixed with Markdown so 
 
 
 ## Getting started
 
-Install the python packages required to build the static website with:
+Install the python packages required to build the website with:
 
 ```sh
 $ cd ~abinit/docs
 $ pip install -r requirements.txt
 ```
+
+!!! note
+    Python 3.6 is strongly recommended although the code works with python2.7 as well.
 
 MkDocs comes with a built-in dev-server that lets you preview your documentation as you work on it. 
 Make sure you are in `~abinit/docs`, and then start *our customized* server 
@@ -74,13 +77,16 @@ INFO    -  Cleaning site directory
 ```
 
 Open up `http://127.0.0.1:8000/` in your browser, and you'll see the default home page being displayed.
+Note that the generation of the website takes 1-2 minutes but this is a price that must be paid only once.
+The web server, indeed, reloads automatically the source files that are modified by the user
+so that one can easily change the markdown files and watch the changes in the corresponding HTML files.
 
 !!! tip
     Use `mksite.py serve --dirtyreload` to enable the live reloading in the development server, 
     but only re-build files that have changed. 
     This option is designed for site development purposes and is **much faster** than the default live reloading.
 
-Note that the HTML files are be produced in a temporary directory and therefore they are **not** under revision control.
+Note that the HTML files are produced in a temporary directory, thus they are **not** under revision control.
 The real source is represented by the `.md` files and the other `.yml` files, these are the files that can be 
 changed by the developers and are therefore under revision control).
 
@@ -139,14 +145,16 @@ The markdown files are stored inside the `doc` directory according to the follow
 The directory in *italic* are mainly used to build the website and are not visible outside.
 The other directories contain markdown files, each directory is associated to an 
 entry in the website menu (see `pages` in `mkdocs.yml`).
-Each directory has `index.md` file that is supposed to give an overview 
+Each directory contains an `index.md` file that is supposed to give an overview 
 
 `lessons/lesson_bse.html` becomes `lesson/bse.md`
 
 images and additional material associated to the lesson are stored in the `lesson/bse_assets`
 
 !!! note
-
+    If `True`, use `<page_name>/index.hmtl` style files with hyperlinks to
+    the directory. If `False`, use `<page_name>.html style file with hyperlinks to the file.
+    True generates nicer URLs, but False is useful if browsing the output on a filesystem.
 
 
 ### Front matter
@@ -207,7 +215,7 @@ where NAME is the name of the topic. The first section ("introduction") is also 
 as well as the information on lessons of the tutorial that are relevant for this topic. 
 The "text" content of the "introduction" section is in plain HTML.
 
-At variance, the other sections of the topic_NAME.html are created from other sources. 
+At variance, the other sections of the `topic_NAME.html` are created from other sources. 
 The list of input variables that are relevant to this topics is assembled from the information
 given for these input variables, see [Input variables: how_to_add_modify](#how-to-addmodify)
 as well as [Topics and tribes](topics-and-tribes), while the list of relevant input files

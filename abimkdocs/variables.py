@@ -153,6 +153,7 @@ class Variable(yaml.YAMLObject):
     range = None
     requires = None
     excludes = None
+    # TODO This is not used and should be removed
     executables = None
     topics = None
 
@@ -185,7 +186,7 @@ class Variable(yaml.YAMLObject):
         return self.abivarname if "@" not in self.abivarname else self.abivarname.split("@")[0]
 
     @property
-    def code(self):
+    def executable(self):
         if "@" in self.abivarname:
             code = self.abivarname.split("@")[1]
             assert code == self.varset
@@ -210,7 +211,7 @@ class Variable(yaml.YAMLObject):
 
     @property
     def mdlink(self):
-        return "[[%s:%s]]" % (self.code, self.name)
+        return "[[%s:%s]]" % (self.executable, self.name)
 
     @classmethod
     def from_array(cls, array):
@@ -261,7 +262,7 @@ class Variable(yaml.YAMLObject):
         label = self.name if label is None else str(label)
         #url = "/input_variables/%s#%s" % (self.varset, self.name)
         #return '<a href="%s">%s</a>' % (url, label)
-        token = "%s:%s" % (self.code, self.name)
+        token = "%s:%s" % (self.executable, self.name)
         a = website.get_wikilink(token, page_rpath)
         return '<a href="%s" class="%s">%s</a>' % (a.get("href"), a.get("class"), a.text)
 
@@ -301,8 +302,8 @@ class Variable(yaml.YAMLObject):
                 frequency = "Moderately used"
 
             info = "%s, [%d/%d] in all %s tests, [%d/%d] in %s tutorials." % (
-                frequency, len(self.tests), tests_info["num_all_tests"], self.code,
-                tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"], self.code)
+                frequency, len(self.tests), tests_info["num_all_tests"], self.executable,
+                tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"], self.executable)
 
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
             # TODO?
@@ -491,13 +492,12 @@ class VarDatabase(OrderedDict):
             d = {k: v for k, v in yaml.load(f)}
             new.external_params = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
 
-        codes = set(v.code for v in vlist)
-        for codename in sorted(codes):
-            items = [(v.name, v) for v in vlist if v.code == codename]
+        for exname in sorted(set(v.executable for v in vlist)):
+            items = [(v.name, v) for v in vlist if v.executable == exname]
             vd = InputVariables(sorted(items, key=lambda t: t[0]))
-            vd.codename = codename
+            vd.executable = exname
             vd.all_varset = sorted(set(v.varset for v in vd.values()))
-            new[codename] =  vd
+            new[exname] =  vd
 
         return new
 
@@ -524,7 +524,7 @@ class InputVariables(OrderedDict):
 <!-- Nav tabs -->
 <ul class="nav nav-pills" role="tablist">\n"""
 
-        idname = self.codename + "-tabs"
+        idname = self.executable + "-tabs"
         for i, char in enumerate(ch2vars):
             id_char = "#%s-%s" % (idname, char)
             if i == 0:

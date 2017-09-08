@@ -42,7 +42,6 @@
         {% if config.extra.version %}
             <center>Abinit version {{ config.extra.version }}</center>
         {% endif %}
-
         {% if config.copyright and page.meta and page.meta.authors %}
           <div class="md-footer-copyright__highlight">
             {{ config.copyright }} ({{ page.meta.authors | join(", ") }})

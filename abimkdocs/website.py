@@ -79,6 +79,7 @@ class lazy_property(object):
 def my_unicode(s):
     return unicode(s) if sys.version_info[0] <= 2 else str(s)
 
+
 def escape(text, tag=None):
     import cgi
     text = cgi.escape(text, quote=True)
@@ -185,7 +186,8 @@ class MyEntry(Entry):
         # Construct ids from self.key as they are unique.
         modal_id, modal_label_id = "modal-id-%s" % self.key, "modal-label-id-%s" % self.key
 
-        link = """<!-- Links -->
+        link = """\
+<!-- Links -->
 <a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
 
         modal = """\
@@ -290,16 +292,12 @@ class Website(object):
                 var.tests.append(test)
 
         # Pre-compute vars.tests and their frequency.
-        #num_all_tutorial_tests = len([t for t in tests if t.suite_name.startswith("tuto")])
         for var in self.variables_code.iter_allvars():
-            #var.tests_info["num_all_tests"] = len(tests)
-            #var.tests_info["num_all_tutorial_tests"] = num_all_tutorial_tests
-            #var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests if t.suite_name.startswith("tuto")])
-            var.tests_info["num_all_tests"] = len([t for t in tests if t.executable == var.code])
+            var.tests_info["num_all_tests"] = len([t for t in tests if t.executable == var.executable])
             var.tests_info["num_all_tutorial_tests"] = len([t for t in tests
-                if t.executable == var.code and t.suite_name.startswith("tuto")])
+                if t.executable == var.executable and t.suite_name.startswith("tuto")])
             var.tests_info["num_tests_in_tutorial"] = len([t for t in var.tests
-                if t.executable == var.code and t.suite_name.startswith("tuto")])
+                if t.executable == var.executable and t.suite_name.startswith("tuto")])
 
         cprint("Initial website generation completed in %.2f [s]" % (time.time() - start), "green")
 
@@ -350,7 +348,7 @@ You can change these parameters at compile or run time usually.
 
 	# Build markdown pages for the different sets of variables..
         for code, vd in self.variables_code.items():
-            cprint("Generating markdown files with input variables of code: `%s`..." % vd.codename, "green")
+            cprint("Generating markdown files with input variables of code: `%s`..." % vd.executable, "green")
             for varset in vd.all_varset:
                 var_list = [v for v in vd.values() if v.varset == varset]
                 with self.new_mdfile("input_variables", varset + ".md") as mdf:
@@ -358,9 +356,9 @@ You can change these parameters at compile or run time usually.
 # {varset} input variables
 
 This document lists and provides the description of the name (keywords) of the
-{varset} input variables to be used in the input file for the {codename} executable.
+{varset} input variables to be used in the input file for the {executable} executable.
 
-""".format(varset=varset, codename=vd.codename))
+""".format(varset=varset, executable=vd.executable))
                     for var in var_list:
                         mdf.write(var.to_markdown())
 
@@ -662,22 +660,6 @@ The bibtex file is available [here](../abiref.bib).
 
                 else:
                     raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
-
-        # Add `return to top arrow` after meta section.
-        # Based on https://codepen.io/rdallaire/pen/apoyx
-        if False and len(new_lines) > 50:
-            i = 0
-            if new_lines[0].startswith("---"):
-                for i, l in enumerate(new_lines[1:]):
-                    if l.startswith("---"):
-                        i += 1
-                        break
-                else:
-                    raise RuntimeError("Cannot find second `---` marker")
-            new_lines.insert(i, """
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
-""")
 
         return new_lines
 

@@ -2,20 +2,22 @@
 
 {% block libs %}
     {{ super() }}
-    <!-- <script src="{{ base_url }}/js/somelib.js"></script> -->
-
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
 
     <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -61,7 +63,7 @@
     </script>
     -->
 
-    {% if page.meta and page.meta.plotly %}
+    {% if page.meta and page.meta.plotly == true %}
         <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js">
         </script> 
     {% endif %}
@@ -69,11 +71,12 @@
 {% endblock %}
 
 {% block content %}
-<!-- Add teturn to Top. Based on https://codepen.io/rdallaire/pen/apoyx
-<a href="javascript:" id="return-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
- -->
 {{ super() }}
 
+<!-- 
+ add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
+ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
+-->
 <div class="container">
   <div class="row">
     <div id="inbox">
@@ -98,28 +101,27 @@
           "fa-user-circle-o", 
           ] %}
         {% for nav_item in nav | reverse %}
-          {% set title = title | default(nav_item.title) %}
           <li><a href="{{ (nav_item.children | first).url }}" data-toggle="tooltip" data-placement="left" 
-                  title={{ title }}> <i class="fa {{ icons[loop.index0] }}"></i></a></li>
+                  title={{ nav_item.title }}> <i class="fa {{ icons[loop.index0] }}"></i></a></li>
         {% endfor %}
         <!--
-          <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
+        <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
               <i class="fa fa-user-circle-o"></i></a></li>
-          <li><a href="/topics/" data-toggle="tooltip" data-placement="left" title="Topics">
-              <i class="fa fa-question"></i></a></li>
-          <li><a href="/input_variables/" data-toggle="tooltip" data-placement="left" title="Input Variables">
-              <i class="fa fa-file-text-o"></i></a></li>
-          <li><a href="/tutorials/welcome/" data-toggle="tooltip" data-placement="left" title="Tutorials">
-              <i class="fa fa-graduation-cap"></i></a></li>
-          <li><a href="/theory/mbt" data-toggle="tooltip" data-placement="left" title="Theory">
-              <i class="fa fa-book"></i></a></li>
-          -->
+        -->
         </ul>
       </div>
     </div>
   </div>
 </div>
 
+{% endblock %}
+
+{% block footer %}
+    <!-- Add tabs to footer -->
+    {% if feature.tabs %}
+        {% include "partials/tabs.html" %}
+    {% endif %}
+    {{ super() }}
 {% endblock %}
 
 <!--

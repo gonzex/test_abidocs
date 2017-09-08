@@ -594,16 +594,11 @@ The video below gives an overwiew of the command line options of `runtests.py`
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="../../tutorials/bse_assets/tbs2_1.png" alt="Uncoverged BSE spectrum">
-      <div class="carousel-caption">
-        <h3>Unconverged BSE optical spectrum</h3>
-      </div>
+      <div class="carousel-caption">Unconverged BSE optical spectrum</div>
     </div>
-
     <div class="item">
       <img src="../../tutorials/bse_assets/tbs5.png" alt="Converged BSE spectrum">
-      <div class="carousel-caption">
-        <h3>Convergenge of BSE optical spectrum wrt k-point sampling</h3>
-      </div>
+      <div class="carousel-caption">Convergenge of BSE optical spectrum wrt k-point sampling</div>
     </div>
   </div>
 
