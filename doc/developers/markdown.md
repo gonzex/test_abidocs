@@ -141,6 +141,7 @@ Examples:
 | `[[~abinit/tests/tutorial/Refs/tbase1_1.out]]` |  [[~abinit/tests/tutorial/Refs/tbase1_1.out]] 
 | `[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]` | [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
 | `[[tests/Psps_for_tests/6c.lda.atompaw]]` | [[tests/Psps_for_tests/6c.lda.atompaw]]
+| `[[ac:abiref_gnu_5.3_debug.ac]]` | [[ac:abiref_gnu_5.3_debug.ac]]
 
 
 !!! note

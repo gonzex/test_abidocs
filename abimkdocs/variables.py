@@ -312,8 +312,8 @@ class Variable(yaml.YAMLObject):
             tlist = sorted(self.tests, key=lambda t: t.suite_name)
             for suite_name, tests_in_suite in groupby(tlist, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
-                #s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, t.id) for (p, t) in zip(ipaths, tests_in_suite))
-                s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
+                s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, os.path.basename(p)) for p in ipaths)
+                #s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
                 app("    " + s)
             app("\n\n")
 

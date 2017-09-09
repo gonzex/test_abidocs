@@ -21,7 +21,7 @@ anaddb input variables to be used in the input file for the anaddb executable.
 *Default value:* 2e-05  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t91.in]]
+    - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
 
@@ -45,9 +45,9 @@ are replaced by Gaussians of width **a2fsmear** (by default in Hartree).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -75,11 +75,11 @@ of uniaxial crystals, the z-axis should be chosen along the optical axis.
 *Comment:* was 0 before v5.3  
 
 ??? note "Test list (click to open) (Moderately used, [20/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v2:  [[tests/v2/Input/t24.in]]
-    - v5:  [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v2:  [[tests/v2/Input/t24.in|t24.in]]
+    - v5:  [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -176,13 +176,13 @@ the next bigger is smaller than **wtol2**.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -209,8 +209,8 @@ confusing, and should be taken away in one future version - sorry for this).
 *Default value:* 999.0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -235,13 +235,13 @@ the descirption is strange ...!
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -275,13 +275,13 @@ should be replaced by routines used by the main abinit code.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [40/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
-    - v7:  [[tests/v7/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -314,13 +314,13 @@ effective charges.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [36/66] in all anaddb tests, [4/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -348,13 +348,13 @@ Integer. Frequency-dependent dielectric tensor flag.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Very frequently used, [49/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -402,7 +402,7 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 *Default value:* 4.5E-05 Hartree = 10 cm<sup>-1</sup>  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t91.in]]
+    - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
 
@@ -424,7 +424,7 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v2:  [[tests/v2/Input/t15.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]]
 
 
 
@@ -448,8 +448,8 @@ sum and different is reported in the output file **dossum**.
 *Default value:* 0.25  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -474,13 +474,13 @@ bigger is smaller than **dostol**.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [35/66] in all anaddb tests, [5/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
-    - v2:  [[tests/v2/Input/t17.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-    - v5:  [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
+    - v2:  [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
+    - v5:  [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -504,8 +504,8 @@ bigger is smaller than **dostol**.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t83.in|t83.in]]
 
 
 
@@ -535,8 +535,8 @@ Flag for calculation of elastic and compliance tensors
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t93.in]]
-    - v6:  [[tests/v6/Input/t93.in]]
+    - v5:  [[tests/v5/Input/t93.in|t93.in]]
+    - v6:  [[tests/v6/Input/t93.in|t93.in]]
 
 
 
@@ -561,10 +561,10 @@ and [[anaddb:ep_extrael]] should not be used at the same time.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -588,7 +588,7 @@ coupling.
 *Default value:* 0.01 Hartree  
 
 ??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
 
 
 
@@ -610,11 +610,11 @@ Smearing width for the Fermi surface integration (in Hartree by default).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [11/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v2:  [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-    - v6:  [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v2:  [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
+    - v6:  [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -641,7 +641,7 @@ the console log file, for which Hartree units are used).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t92.in]]
+    - v5:  [[tests/v5/Input/t92.in|t92.in]]
 
 
 
@@ -667,7 +667,7 @@ equal weight is given to all k-points, for all bands between
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t92.in]]
+    - v5:  [[tests/v5/Input/t92.in|t92.in]]
 
 
 
@@ -690,8 +690,8 @@ integration, instead of the upper bound. See also [[anaddb:telphint]].
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -742,10 +742,10 @@ are treated symmetrically.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -770,7 +770,7 @@ transport calculations **ep_keepbands** must be set to 1.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
 
@@ -795,7 +795,7 @@ anaddb input (ngqpt)
 *Default value:* 20  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t94.in|t94.in]]
 
 
 
@@ -818,7 +818,7 @@ time approximation ([[anaddb:ifltransport]]=3).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t91.in]]
+    - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
 
@@ -841,7 +841,7 @@ yambo code.
 *Default value:* (3*[[anaddb:ep_nqpt]])*0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
 
@@ -866,9 +866,9 @@ q-points to be found in the GKK file, independently of the normal anaddb input
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -897,8 +897,8 @@ or high symmetry points. I do not know why...
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -926,8 +926,8 @@ phonon mode, then let it relax in abinit afterwards.
 *Default value:* 10.0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -950,8 +950,8 @@ in Hartree.
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -974,7 +974,7 @@ in Hartree.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t91.in]]
+    - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
 
@@ -997,7 +997,7 @@ gkqfile. This reduces strongly the memory needed for an electron-phonon run.
 *Default value:* Empty  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t45.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
 
@@ -1027,7 +1027,7 @@ finite difference.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t45.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
 
@@ -1072,8 +1072,8 @@ constrained polarization. See [[anaddb:polflag]].
 *Default value:* 0*'[[anaddb:natprj_bs]]'  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -1096,13 +1096,13 @@ eigenvectors, giving a weighted phonon band structure file.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [34/66] in all anaddb tests, [4/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1137,13 +1137,13 @@ the matrix in local coordinates).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [53/66] in all anaddb tests, [8/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -1179,13 +1179,13 @@ for checking purpose, and if there is not enough information in the DDB.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [46/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1210,10 +1210,10 @@ distance with respect to the generic atom.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -1238,8 +1238,8 @@ calculates the k-dependent relaxation time. (needs[[anaddb:elphflag]] = 1)
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t83.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t83.in|t83.in]]
 
 
 
@@ -1264,7 +1264,7 @@ Internal strain tensor flag.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]]
 
 
 
@@ -1296,9 +1296,9 @@ See [[anaddb:polflag]].
 *Default value:* 9*0  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -1344,10 +1344,10 @@ not work yet, as of June 2010.
 *Default value:* 0.1  
 
 ??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -1392,13 +1392,13 @@ polarization. See [[anaddb:polflag]].
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1421,8 +1421,8 @@ The list of these atoms is provided by [[anaddb:atifc]].
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -1445,11 +1445,11 @@ will be output. The list of these atoms is provided by [[iatprj_bs@anaddb]].
 *Default value:* 800  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1473,7 +1473,7 @@ frequency sampled. The first channel begins at 0.
 *Default value:* 20  
 
 ??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -1498,8 +1498,8 @@ along the path using the coordinates given in the array [[anaddb:qpath]].
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1524,12 +1524,12 @@ equidistant values from [[anaddb:frmin]] to [[anaddb:frmax]].
 *Comment:* (will not work)  
 
 ??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
-    - v6:  [[tests/v6/Input/t76.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1554,13 +1554,13 @@ distribution) or for the DOS.
 *Comment:* (will not work)  
 
 ??? note "Test list (click to open) (Very frequently used, [53/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -1582,11 +1582,11 @@ The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
 *Default value:* 4  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1612,9 +1612,9 @@ ngqpt_igrid(ii)=(ng2qpt(ii)*igrid)/**ngrids**
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -1641,13 +1641,13 @@ Non-linear properties flag.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [56/66] in all anaddb tests, [6/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -1674,12 +1674,12 @@ the corresponding eigenfrequencies will be printed.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1715,11 +1715,11 @@ without non-analyticities.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -1742,13 +1742,13 @@ the phonon band structure and phonon linewidths are interpolated.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -1774,9 +1774,9 @@ sampling (Warning: not BCC lattice, BCC *sampling*), and 4 for FCC sampling
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v2:  [[tests/v2/Input/t17.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t46.in]], [[tests/v8/Input/t49.in]]
+    - v2:  [[tests/v2/Input/t17.in|t17.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1813,7 +1813,7 @@ Transform.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]]
 
 
 
@@ -1836,13 +1836,13 @@ constrained polarization. See [[anaddb:polflag]].
 *Default value:* 10  
 
 ??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1872,11 +1872,11 @@ temperature.
 *Default value:* 10  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -1902,7 +1902,7 @@ converged when the convergence criterion based on [[anaddb:dostol]] and
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t76.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]]
 
 
 
@@ -1950,8 +1950,8 @@ for Primitive Cell INFOrmation.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]]
 
 
 
@@ -1982,7 +1982,7 @@ Flag for calculation of piezoelectric tensors
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
 
@@ -2028,7 +2028,7 @@ calculation of the effective charges and the piezoelectric tensor.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v2:  [[tests/v2/Input/t15.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]]
 
 
 
@@ -2076,7 +2076,7 @@ available options are:
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t64.in]]
+    - v8:  [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2104,8 +2104,8 @@ The available options are:
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [9/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -2175,9 +2175,9 @@ this array must be zero.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -2200,9 +2200,9 @@ this array must be zero.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
 
 
@@ -2241,7 +2241,7 @@ reciprocal space, moreover off-diagonal elements are not allowed, i.e kptrlatt
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t46.in]]
+    - v8:  [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -2294,7 +2294,7 @@ For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t45.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
 
@@ -2316,13 +2316,13 @@ Control the volume of printed output.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2385,9 +2385,9 @@ For a FCC lattice, it is possible to sample only the Gamma point by using a
 *Default value:* 3* 0  
 
 ??? note "Test list (click to open) (Moderately used, [4/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v5:  [[tests/v5/Input/t22.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]]
 
 
 
@@ -2411,7 +2411,7 @@ Note that [[anaddb:nqshft]] for this series of grids corresponds to 1.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t94.in]]
+    - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
 
@@ -2436,11 +2436,11 @@ to a regular grid as in the rest of anaddb (using [[anaddb:ngqpt]]).
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t45.in]], [[tests/v8/Input/t46.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
 
@@ -2467,13 +2467,13 @@ for the output of the nesting function if [[anaddb:prtnest]]=1.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [55/66] in all anaddb tests, [6/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]], [[tests/v2/Input/t17.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]], [[tests/v2/Input/t28.in]], [[tests/v2/Input/t29.in]], [[tests/v2/Input/t32.in]], [[tests/v2/Input/t39.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]], [[tests/v5/Input/t83.in]], [[tests/v5/Input/t84.in]], [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]], [[tests/v5/Input/t99.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]], [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t80.in]], [[tests/v6/Input/t81.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]], [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]], [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t80.in|t80.in]], [[tests/v6/Input/t81.in|t81.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2504,12 +2504,12 @@ fourth is stored in the array qnrml1(nph1l).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in]]
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t18.in]], [[tests/v2/Input/t19.in]], [[tests/v2/Input/t20.in]], [[tests/v2/Input/t21.in]], [[tests/v2/Input/t22.in]], [[tests/v2/Input/t24.in]], [[tests/v2/Input/t25.in]]
-    - v4:  [[tests/v4/Input/t50.in]], [[tests/v4/Input/t54.in]], [[tests/v4/Input/t68.in]], [[tests/v4/Input/t70.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t70.in]], [[tests/v6/Input/t71.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]]
+    - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t70.in|t70.in]], [[tests/v6/Input/t71.in|t71.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -2548,7 +2548,7 @@ fourth is stored in the array qnrml2(nph2l).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v6:  [[tests/v6/Input/t81.in]]
+    - v6:  [[tests/v6/Input/t81.in|t81.in]]
 
 
 
@@ -2576,9 +2576,9 @@ Should implement Gaal-Nagy's algorithm in PRB **73** 014117.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -2611,7 +2611,7 @@ For the time being, **ramansr**=1 is the preferred choice.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
 
@@ -2634,7 +2634,7 @@ constrained polarization. See [[anaddb:polflag]].
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t74.in]], [[tests/v4/Input/t77.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
 
@@ -2657,9 +2657,9 @@ relaxation at constrained polarization. See [[anaddb:polflag]].
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Moderately used, [8/66] in all anaddb tests, [2/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2689,7 +2689,7 @@ is less accurate.
 *Default value:* zero  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t95.in]]
+    - v5:  [[tests/v5/Input/t95.in|t95.in]]
 
 
 
@@ -2717,9 +2717,9 @@ not be put to zero.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2753,8 +2753,8 @@ The result with non-zero **selectz** are unphysical.
 *Comment:* (was 0 before v5.3)  
 
 ??? note "Test list (click to open) (Moderately used, [11/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v2:  [[tests/v2/Input/t13.in]], [[tests/v2/Input/t15.in]], [[tests/v2/Input/t39.in]]
-    - v5:  [[tests/v5/Input/t88.in]], [[tests/v5/Input/t89.in]], [[tests/v5/Input/t90.in]], [[tests/v5/Input/t91.in]], [[tests/v5/Input/t92.in]], [[tests/v5/Input/t93.in]], [[tests/v5/Input/t94.in]], [[tests/v5/Input/t95.in]]
+    - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t39.in|t39.in]]
+    - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]]
 
 
 
@@ -2784,7 +2784,7 @@ additional symmetrization.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v5:  [[tests/v5/Input/t90.in]]
+    - v5:  [[tests/v5/Input/t90.in|t90.in]]
 
 
 
@@ -2808,7 +2808,7 @@ should always be used, except for debugging or test purposes.
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v4:  [[tests/v4/Input/t71.in]], [[tests/v4/Input/t77.in]]
+    - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
 
@@ -2831,9 +2831,9 @@ Target value of the polarization in cartesian coordinates and in C/m^2. See
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_5.in]], [[tests/tutorespfn/Input/teph_6.in]]
-    - v5:  [[tests/v5/Input/t92.in]]
-    - v6:  [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
+    - v5:  [[tests/v5/Input/t92.in|t92.in]]
+    - v6:  [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]]
 
 
 
@@ -2860,13 +2860,13 @@ phonon quantities.
 *Default value:* 100.0  
 
 ??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -2895,13 +2895,13 @@ temperature.
 *Default value:* 100.0  
 
 ??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t89.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t76.in]], [[tests/v6/Input/t93.in]], [[tests/v6/Input/t94.in]]
-    - v7:  [[tests/v7/Input/t54.in]], [[tests/v7/Input/t93.in]], [[tests/v7/Input/t94.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t89.in|t89.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]], [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -2931,13 +2931,13 @@ anharmonic effects might be important already at room temperature.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [18/66] in all anaddb tests, [3/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in]], [[tests/tutorespfn/Input/tnlo_5.in]], [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]], [[tests/v5/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t40.in]], [[tests/v6/Input/t53.in]], [[tests/v6/Input/t57.in]], [[tests/v6/Input/t59.in]], [[tests/v6/Input/t69.in]]
-    - v7:  [[tests/v7/Input/t54.in]]
-    - v8:  [[tests/v8/Input/t49.in]], [[tests/v8/Input/t50.in]], [[tests/v8/Input/t64.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]], [[tests/v5/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t40.in|t40.in]], [[tests/v6/Input/t53.in|t53.in]], [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]]
+    - v7:  [[tests/v7/Input/t54.in|t54.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
 
 
 
@@ -2979,11 +2979,11 @@ Input variables that may be needed if this flag is activated:
 *Default value:* 0.05  
 
 ??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in]]
-    - v2:  [[tests/v2/Input/t15.in]], [[tests/v2/Input/t16.in]]
-    - v4:  [[tests/v4/Input/t54.in]], [[tests/v4/Input/t71.in]]
-    - v5:  [[tests/v5/Input/t22.in]]
-    - v8:  [[tests/v8/Input/t49.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
+    - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
+    - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
+    - v5:  [[tests/v5/Input/t22.in|t22.in]]
+    - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
 
 
@@ -3032,7 +3032,7 @@ needed. Note that the coarse k-grid must be a subset of the fine k-grid.
 *Default value:* 2*0.0d0  
 
 ??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials.)"
-    - v8:  [[tests/v8/Input/t45.in]]
+    - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
 

@@ -20,10 +20,10 @@ eph input variables to be used in the input file for the abinit executable.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t24.in]]
-    - v6:  [[tests/v6/Input/t37.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
-    - v7:  [[tests/v7/Input/t50.in]], [[tests/v7/Input/t51.in]], [[tests/v7/Input/t88.in]]
+    - v5:  [[tests/v5/Input/t24.in|t24.in]]
+    - v6:  [[tests/v6/Input/t37.in|t37.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
+    - v7:  [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t51.in|t51.in]], [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -46,7 +46,7 @@ Same meaning as the corresponding anaddb variable.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -69,8 +69,8 @@ charges. Same meaning as the corresponding anaddb variable.
 *Default value:* [0, 0, 0]  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
-    - v8:  [[tests/v8/Input/t44.in]], [[tests/v8/Input/t65.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t89.in|t89.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
 
 
@@ -94,8 +94,8 @@ the description of the [[getddb]] input variable.
 *Default value:* [0.0, 0.0, 0.0]  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t89.in]]
-    - v8:  [[tests/v8/Input/t65.in]]
+    - v7:  [[tests/v7/Input/t89.in|t89.in]]
+    - v8:  [[tests/v8/Input/t65.in|t65.in]]
 
 
 
@@ -119,7 +119,7 @@ variable. See [[shiftk]] for more information on the definition.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -142,7 +142,7 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -166,7 +166,7 @@ from the pseudopotentials and unit cell.
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -191,7 +191,7 @@ has effect only if set to a non-zero value. See also [[eph_extrael]].
 *Default value:* 0.01 Hartree  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -221,7 +221,7 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 *Only relevant if:* [[eph_intmeth]] == 1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -244,7 +244,7 @@ the Fermi surface when [[eph_intmeth]] == 1.
 *Default value:* 2  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -272,7 +272,7 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 *Default value:* 0.1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -295,8 +295,8 @@ superconducting Tc using Mc-Millan's formula.
 *Default value:* [0, 0, 0]  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]], [[tests/v8/Input/t65.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
 
 
@@ -325,7 +325,7 @@ DDB file (default behavior).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -349,8 +349,8 @@ corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 *Default value:* 2  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -379,8 +379,8 @@ q-points in the BZ)
 *Default value:* 20  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -405,8 +405,8 @@ specified by [[ph_qpath]].
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -428,8 +428,8 @@ This integer defines the number of points in the [[ph_qpath]] array.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -454,8 +454,8 @@ code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 *Only relevant if:* [[ph_nqshift]]  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -481,8 +481,8 @@ given, a Gamma-centered mesh is used.
 *Only relevant if:* [[ph_intmeth]]==1  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -506,8 +506,8 @@ Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 *Default value:* 0.1 meV  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -531,7 +531,7 @@ the code.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -559,8 +559,8 @@ Possible values:
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t89.in]]
-    - v8:  [[tests/v8/Input/t65.in]]
+    - v7:  [[tests/v7/Input/t89.in|t89.in]]
+    - v8:  [[tests/v8/Input/t65.in|t65.in]]
 
 
 
@@ -583,7 +583,7 @@ Print the phonon density of states. It is activated by default when
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 

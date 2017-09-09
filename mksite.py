@@ -108,6 +108,8 @@ def prof_main(main):
 @prof_main
 def main():
     verbose = 1 if "-v" in sys.argv or "--verbose" in sys.argv else 0
+    strict = "-s" in sys.argv or "--strict" in sys.argv
+
     if "--help" in sys.argv or "-h" in sys.argv:
         return mkdocs.__main__.cli()
 

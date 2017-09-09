@@ -20,14 +20,14 @@ files input variables to be used in the input file for the abinit executable.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [7/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_4.in]], [[tests/tutorespfn/Input/teph_1.in]], [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]]
-    - v3:  [[tests/v3/Input/t83.in]]
-    - v4:  [[tests/v4/Input/t52.in]]
-    - v5:  [[tests/v5/Input/t85.in]]
-    - v6:  [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]], [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
-    - v7:  [[tests/v7/Input/t90.in]]
-    - v8:  [[tests/v8/Input/t47.in]]
+    - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/teph_1.in|teph_1.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]]
+    - v3:  [[tests/v3/Input/t83.in|t83.in]]
+    - v4:  [[tests/v4/Input/t52.in|t52.in]]
+    - v5:  [[tests/v5/Input/t85.in|t85.in]]
+    - v6:  [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]], [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
+    - v7:  [[tests/v7/Input/t90.in|t90.in]]
+    - v8:  [[tests/v8/Input/t47.in|t47.in]]
 
 
 
@@ -63,14 +63,14 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [21/920] in all abinit tests, [5/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t51.in]]
-    - paral:  [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]]
-    - v2:  [[tests/v2/Input/t01.in]], [[tests/v2/Input/t30.in]]
-    - v3:  [[tests/v3/Input/t06.in]], [[tests/v3/Input/t83.in]]
-    - v4:  [[tests/v4/Input/t52.in]]
-    - v6:  [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]]
-    - v8:  [[tests/v8/Input/t47.in]]
+    - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]]
+    - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]]
+    - v2:  [[tests/v2/Input/t01.in|t01.in]], [[tests/v2/Input/t30.in|t30.in]]
+    - v3:  [[tests/v3/Input/t06.in|t06.in]], [[tests/v3/Input/t83.in|t83.in]]
+    - v4:  [[tests/v4/Input/t52.in|t52.in]]
+    - v6:  [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]]
+    - v8:  [[tests/v8/Input/t47.in|t47.in]]
 
 
 
@@ -166,7 +166,7 @@ from a disk file, so that it is as if [[getbscoup]]=0 for that initialisation.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
 
 
 
@@ -202,7 +202,7 @@ from a disk file, so that it is as if [[getbseig]]=0 for that initialisation.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
 
 
 
@@ -238,8 +238,8 @@ from a disk file, so that it is as if [[getbsreso]]=0 for that initialisation.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - v7:  [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t89.in|t89.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -286,18 +286,18 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [65/920] in all abinit tests, [11/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t81.in]], [[tests/libxc/Input/t82.in]]
-    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
-    - paral:  [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
-    - seq:  [[tests/seq/Input/tsv3_05.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/telast_2.in]], [[tests/tutorespfn/Input/telast_5.in]], [[tests/tutorespfn/Input/tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/trf1_5.in]], [[tests/tutorespfn/Input/trf2_1.in]]
-    - v2:  [[tests/v2/Input/t05.in]], [[tests/v2/Input/t06.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t98.in]]
-    - v3:  [[tests/v3/Input/t09.in]], [[tests/v3/Input/t16.in]], [[tests/v3/Input/t77.in]], [[tests/v3/Input/t83.in]], [[tests/v3/Input/t84.in]]
-    - v4:  [[tests/v4/Input/t02.in]], [[tests/v4/Input/t52.in]], [[tests/v4/Input/t65.in]], [[tests/v4/Input/t66.in]], [[tests/v4/Input/t67.in]], [[tests/v4/Input/t69.in]], [[tests/v4/Input/t75.in]]
-    - v5:  [[tests/v5/Input/t24.in]], [[tests/v5/Input/t25.in]]
-    - v6:  [[tests/v6/Input/t62.in]], [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]]
-    - v7:  [[tests/v7/Input/t43.in]], [[tests/v7/Input/t46.in]], [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t88.in]]
-    - v8:  [[tests/v8/Input/t07.in]], [[tests/v8/Input/t47.in]]
+    - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
+    - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
+    - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
+    - seq:  [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_2.in|telast_2.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in|tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/trf1_5.in|trf1_5.in]], [[tests/tutorespfn/Input/trf2_1.in|trf2_1.in]]
+    - v2:  [[tests/v2/Input/t05.in|t05.in]], [[tests/v2/Input/t06.in|t06.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t98.in|t98.in]]
+    - v3:  [[tests/v3/Input/t09.in|t09.in]], [[tests/v3/Input/t16.in|t16.in]], [[tests/v3/Input/t77.in|t77.in]], [[tests/v3/Input/t83.in|t83.in]], [[tests/v3/Input/t84.in|t84.in]]
+    - v4:  [[tests/v4/Input/t02.in|t02.in]], [[tests/v4/Input/t52.in|t52.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t67.in|t67.in]], [[tests/v4/Input/t69.in|t69.in]], [[tests/v4/Input/t75.in|t75.in]]
+    - v5:  [[tests/v5/Input/t24.in|t24.in]], [[tests/v5/Input/t25.in|t25.in]]
+    - v6:  [[tests/v6/Input/t62.in|t62.in]], [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]]
+    - v7:  [[tests/v7/Input/t43.in|t43.in]], [[tests/v7/Input/t46.in|t46.in]], [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t88.in|t88.in]]
+    - v8:  [[tests/v8/Input/t07.in|t07.in]], [[tests/v8/Input/t47.in|t47.in]]
 
 
 
@@ -358,26 +358,26 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [205/920] in all abinit tests, [33/116] in abinit tutorials.)"
-    - etsf_io:  [[tests/etsf_io/Input/t02.in]]
-    - gpu:  [[tests/gpu/Input/t01.in]]
-    - libxc:  [[tests/libxc/Input/t19.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
-    - paral:  [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t77.in]]
-    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_1.in]]
-    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in]], [[tests/tutorespfn/Input/telast_5.in]], [[tests/tutorespfn/Input/telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in]], [[tests/tutorespfn/Input/trf1_6.in]]
-    - tutorial:  [[tests/tutorial/Input/tbase3_5.in]], [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_1.in]], [[tests/tutorial/Input/tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in]], [[tests/tutorial/Input/tpositron_6.in]], [[tests/tutorial/Input/tspin_3.in]], [[tests/tutorial/Input/ttddft_1.in]], [[tests/tutorial/Input/tfold2bloch_1.in]]
-    - v1:  [[tests/v1/Input/t69.in]], [[tests/v1/Input/t70.in]]
-    - v2:  [[tests/v2/Input/t04.in]], [[tests/v2/Input/t06.in]], [[tests/v2/Input/t07.in]], [[tests/v2/Input/t09.in]], [[tests/v2/Input/t11.in]], [[tests/v2/Input/t12.in]], [[tests/v2/Input/t26.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t36.in]], [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]], [[tests/v2/Input/t42.in]], [[tests/v2/Input/t43.in]], [[tests/v2/Input/t47.in]], [[tests/v2/Input/t74.in]], [[tests/v2/Input/t76.in]], [[tests/v2/Input/t94.in]]
-    - v3:  [[tests/v3/Input/t09.in]], [[tests/v3/Input/t13.in]], [[tests/v3/Input/t16.in]], [[tests/v3/Input/t18.in]], [[tests/v3/Input/t45.in]], [[tests/v3/Input/t46.in]], [[tests/v3/Input/t54.in]], [[tests/v3/Input/t55.in]], [[tests/v3/Input/t62.in]], [[tests/v3/Input/t65.in]], [[tests/v3/Input/t76.in]], [[tests/v3/Input/t77.in]], [[tests/v3/Input/t78.in]], [[tests/v3/Input/t83.in]], [[tests/v3/Input/t84.in]], [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]], [[tests/v3/Input/t92.in]]
-    - v4:  [[tests/v4/Input/t20.in]], [[tests/v4/Input/t35.in]], [[tests/v4/Input/t38.in]], [[tests/v4/Input/t52.in]], [[tests/v4/Input/t56.in]], [[tests/v4/Input/t59.in]], [[tests/v4/Input/t60.in]], [[tests/v4/Input/t65.in]], [[tests/v4/Input/t66.in]], [[tests/v4/Input/t72.in]], [[tests/v4/Input/t75.in]], [[tests/v4/Input/t79.in]], [[tests/v4/Input/t89.in]]
-    - v5:  [[tests/v5/Input/t02.in]], [[tests/v5/Input/t05.in]], [[tests/v5/Input/t07.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t21.in]], [[tests/v5/Input/t25.in]], [[tests/v5/Input/t54.in]], [[tests/v5/Input/t60.in]], [[tests/v5/Input/t61.in]], [[tests/v5/Input/t62.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t72.in]]
-    - v6:  [[tests/v6/Input/t11.in]], [[tests/v6/Input/t14.in]], [[tests/v6/Input/t20.in]], [[tests/v6/Input/t30.in]], [[tests/v6/Input/t34.in]], [[tests/v6/Input/t35.in]], [[tests/v6/Input/t37.in]], [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]], [[tests/v6/Input/t78.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]], [[tests/v67mbpt/Input/t52.in]]
-    - v7:  [[tests/v7/Input/t07.in]], [[tests/v7/Input/t12.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t36.in]], [[tests/v7/Input/t41.in]], [[tests/v7/Input/t46.in]], [[tests/v7/Input/t47.in]], [[tests/v7/Input/t50.in]], [[tests/v7/Input/t55.in]], [[tests/v7/Input/t57.in]], [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]], [[tests/v7/Input/t80.in]], [[tests/v7/Input/t81.in]], [[tests/v7/Input/t82.in]], [[tests/v7/Input/t83.in]], [[tests/v7/Input/t85.in]], [[tests/v7/Input/t89.in]], [[tests/v7/Input/t98.in]]
-    - v8:  [[tests/v8/Input/t04.in]], [[tests/v8/Input/t41.in]], [[tests/v8/Input/t47.in]], [[tests/v8/Input/t61.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]], [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
+    - libxc:  [[tests/libxc/Input/t19.in|t19.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
+    - paral:  [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t77.in|t77.in]]
+    - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_1.in|tmbt_1.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in|tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in|tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in|tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/telast_6.in|telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in|tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/toptic_1.in|toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in|toptic_3.in]], [[tests/tutorespfn/Input/trf1_6.in|trf1_6.in]]
+    - tutorial:  [[tests/tutorial/Input/tbase3_5.in|tbase3_5.in]], [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_1.in|tgw2_1.in]], [[tests/tutorial/Input/tpositron_1.in|tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in|tpositron_2.in]], [[tests/tutorial/Input/tpositron_6.in|tpositron_6.in]], [[tests/tutorial/Input/tspin_3.in|tspin_3.in]], [[tests/tutorial/Input/ttddft_1.in|ttddft_1.in]], [[tests/tutorial/Input/tfold2bloch_1.in|tfold2bloch_1.in]]
+    - v1:  [[tests/v1/Input/t69.in|t69.in]], [[tests/v1/Input/t70.in|t70.in]]
+    - v2:  [[tests/v2/Input/t04.in|t04.in]], [[tests/v2/Input/t06.in|t06.in]], [[tests/v2/Input/t07.in|t07.in]], [[tests/v2/Input/t09.in|t09.in]], [[tests/v2/Input/t11.in|t11.in]], [[tests/v2/Input/t12.in|t12.in]], [[tests/v2/Input/t26.in|t26.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t36.in|t36.in]], [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]], [[tests/v2/Input/t42.in|t42.in]], [[tests/v2/Input/t43.in|t43.in]], [[tests/v2/Input/t47.in|t47.in]], [[tests/v2/Input/t74.in|t74.in]], [[tests/v2/Input/t76.in|t76.in]], [[tests/v2/Input/t94.in|t94.in]]
+    - v3:  [[tests/v3/Input/t09.in|t09.in]], [[tests/v3/Input/t13.in|t13.in]], [[tests/v3/Input/t16.in|t16.in]], [[tests/v3/Input/t18.in|t18.in]], [[tests/v3/Input/t45.in|t45.in]], [[tests/v3/Input/t46.in|t46.in]], [[tests/v3/Input/t54.in|t54.in]], [[tests/v3/Input/t55.in|t55.in]], [[tests/v3/Input/t62.in|t62.in]], [[tests/v3/Input/t65.in|t65.in]], [[tests/v3/Input/t76.in|t76.in]], [[tests/v3/Input/t77.in|t77.in]], [[tests/v3/Input/t78.in|t78.in]], [[tests/v3/Input/t83.in|t83.in]], [[tests/v3/Input/t84.in|t84.in]], [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]], [[tests/v3/Input/t92.in|t92.in]]
+    - v4:  [[tests/v4/Input/t20.in|t20.in]], [[tests/v4/Input/t35.in|t35.in]], [[tests/v4/Input/t38.in|t38.in]], [[tests/v4/Input/t52.in|t52.in]], [[tests/v4/Input/t56.in|t56.in]], [[tests/v4/Input/t59.in|t59.in]], [[tests/v4/Input/t60.in|t60.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t72.in|t72.in]], [[tests/v4/Input/t75.in|t75.in]], [[tests/v4/Input/t79.in|t79.in]], [[tests/v4/Input/t89.in|t89.in]]
+    - v5:  [[tests/v5/Input/t02.in|t02.in]], [[tests/v5/Input/t05.in|t05.in]], [[tests/v5/Input/t07.in|t07.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t21.in|t21.in]], [[tests/v5/Input/t25.in|t25.in]], [[tests/v5/Input/t54.in|t54.in]], [[tests/v5/Input/t60.in|t60.in]], [[tests/v5/Input/t61.in|t61.in]], [[tests/v5/Input/t62.in|t62.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v6:  [[tests/v6/Input/t11.in|t11.in]], [[tests/v6/Input/t14.in|t14.in]], [[tests/v6/Input/t20.in|t20.in]], [[tests/v6/Input/t30.in|t30.in]], [[tests/v6/Input/t34.in|t34.in]], [[tests/v6/Input/t35.in|t35.in]], [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]], [[tests/v6/Input/t78.in|t78.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t15.in|t15.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]], [[tests/v67mbpt/Input/t52.in|t52.in]]
+    - v7:  [[tests/v7/Input/t07.in|t07.in]], [[tests/v7/Input/t12.in|t12.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t36.in|t36.in]], [[tests/v7/Input/t41.in|t41.in]], [[tests/v7/Input/t46.in|t46.in]], [[tests/v7/Input/t47.in|t47.in]], [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t57.in|t57.in]], [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]], [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]], [[tests/v7/Input/t83.in|t83.in]], [[tests/v7/Input/t85.in|t85.in]], [[tests/v7/Input/t89.in|t89.in]], [[tests/v7/Input/t98.in|t98.in]]
+    - v8:  [[tests/v8/Input/t04.in|t04.in]], [[tests/v8/Input/t41.in|t41.in]], [[tests/v8/Input/t47.in|t47.in]], [[tests/v8/Input/t61.in|t61.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]], [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
 
@@ -465,8 +465,8 @@ initialisation.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v2:  [[tests/v2/Input/t11.in]]
-    - v3:  [[tests/v3/Input/t18.in]]
+    - v2:  [[tests/v2/Input/t11.in|t11.in]]
+    - v3:  [[tests/v3/Input/t18.in|t18.in]]
 
 
 
@@ -517,11 +517,11 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t42.in]]
-    - paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - v4:  [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t42.in|t42.in]]
+    - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - v4:  [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in|t36.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -557,14 +557,14 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [67/920] in all abinit tests, [10/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -609,8 +609,8 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t70.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+    - v5:  [[tests/v5/Input/t70.in|t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
 
@@ -663,26 +663,26 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [435/920] in all abinit tests, [50/116] in abinit tutorials.)"
-    - atompaw:  [[tests/atompaw/Input/t04.in]]
-    - bigdft:  [[tests/bigdft/Input/t18.in]]
-    - gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]]
-    - libxc:  [[tests/libxc/Input/t19.in]], [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]], [[tests/libxc/Input/t51.in]], [[tests/libxc/Input/t52.in]], [[tests/libxc/Input/t53.in]], [[tests/libxc/Input/t81.in]], [[tests/libxc/Input/t82.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t51.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t99.in]]
-    - paral:  [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t06.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t07.in]], [[tests/paral/Input/t28.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t56.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t59.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t62.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t77.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t93.in]], [[tests/paral/Input/t94.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t99.in]]
-    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]], [[tests/seq/Input/tsv4_55.in]], [[tests/seq/Input/tsv4_78.in]], [[tests/seq/Input/tsv4_80.in]], [[tests/seq/Input/tsv7_70.in]]
-    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in]], [[tests/tutorespfn/Input/telast_1.in]], [[tests/tutorespfn/Input/telast_2.in]], [[tests/tutorespfn/Input/telast_4.in]], [[tests/tutorespfn/Input/telast_5.in]], [[tests/tutorespfn/Input/telast_6.in]], [[tests/tutorespfn/Input/teph_1.in]], [[tests/tutorespfn/Input/tffield_2.in]], [[tests/tutorespfn/Input/tffield_6.in]], [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in]], [[tests/tutorespfn/Input/trf1_5.in]], [[tests/tutorespfn/Input/trf1_6.in]], [[tests/tutorespfn/Input/trf2_1.in]]
-    - tutorial:  [[tests/tutorial/Input/tbase1_2.in]], [[tests/tutorial/Input/tbase3_3.in]], [[tests/tutorial/Input/tbase3_4.in]], [[tests/tutorial/Input/tbase4_2.in]], [[tests/tutorial/Input/tbase4_3.in]], [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in]], [[tests/tutorial/Input/ttddft_1.in]]
-    - v1:  [[tests/v1/Input/t61.in]], [[tests/v1/Input/t62.in]], [[tests/v1/Input/t63.in]], [[tests/v1/Input/t64.in]], [[tests/v1/Input/t65.in]], [[tests/v1/Input/t66.in]], [[tests/v1/Input/t69.in]], [[tests/v1/Input/t70.in]], [[tests/v1/Input/t74.in]], [[tests/v1/Input/t75.in]], [[tests/v1/Input/t76.in]], [[tests/v1/Input/t77.in]], [[tests/v1/Input/t80.in]], [[tests/v1/Input/t83.in]], [[tests/v1/Input/t84.in]], [[tests/v1/Input/t87.in]], [[tests/v1/Input/t88.in]], [[tests/v1/Input/t89.in]]
-    - v2:  [[tests/v2/Input/t01.in]], [[tests/v2/Input/t04.in]], [[tests/v2/Input/t05.in]], [[tests/v2/Input/t06.in]], [[tests/v2/Input/t07.in]], [[tests/v2/Input/t08.in]], [[tests/v2/Input/t09.in]], [[tests/v2/Input/t11.in]], [[tests/v2/Input/t12.in]], [[tests/v2/Input/t26.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t33.in]], [[tests/v2/Input/t34.in]], [[tests/v2/Input/t35.in]], [[tests/v2/Input/t36.in]], [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]], [[tests/v2/Input/t40.in]], [[tests/v2/Input/t41.in]], [[tests/v2/Input/t42.in]], [[tests/v2/Input/t44.in]], [[tests/v2/Input/t45.in]], [[tests/v2/Input/t46.in]], [[tests/v2/Input/t47.in]], [[tests/v2/Input/t48.in]], [[tests/v2/Input/t50.in]], [[tests/v2/Input/t75.in]], [[tests/v2/Input/t76.in]], [[tests/v2/Input/t83.in]], [[tests/v2/Input/t87.in]], [[tests/v2/Input/t88.in]], [[tests/v2/Input/t90.in]], [[tests/v2/Input/t91.in]], [[tests/v2/Input/t92.in]], [[tests/v2/Input/t93.in]], [[tests/v2/Input/t94.in]], [[tests/v2/Input/t95.in]], [[tests/v2/Input/t96.in]], [[tests/v2/Input/t97.in]], [[tests/v2/Input/t98.in]], [[tests/v2/Input/t99.in]]
-    - v3:  [[tests/v3/Input/t02.in]], [[tests/v3/Input/t06.in]], [[tests/v3/Input/t07.in]], [[tests/v3/Input/t08.in]], [[tests/v3/Input/t09.in]], [[tests/v3/Input/t10.in]], [[tests/v3/Input/t11.in]], [[tests/v3/Input/t12.in]], [[tests/v3/Input/t13.in]], [[tests/v3/Input/t14.in]], [[tests/v3/Input/t15.in]], [[tests/v3/Input/t16.in]], [[tests/v3/Input/t17.in]], [[tests/v3/Input/t18.in]], [[tests/v3/Input/t19.in]], [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t46.in]], [[tests/v3/Input/t47.in]], [[tests/v3/Input/t48.in]], [[tests/v3/Input/t49.in]], [[tests/v3/Input/t50.in]], [[tests/v3/Input/t51.in]], [[tests/v3/Input/t54.in]], [[tests/v3/Input/t55.in]], [[tests/v3/Input/t65.in]], [[tests/v3/Input/t70.in]], [[tests/v3/Input/t71.in]], [[tests/v3/Input/t72.in]], [[tests/v3/Input/t73.in]], [[tests/v3/Input/t74.in]], [[tests/v3/Input/t75.in]], [[tests/v3/Input/t76.in]], [[tests/v3/Input/t77.in]], [[tests/v3/Input/t78.in]], [[tests/v3/Input/t80.in]], [[tests/v3/Input/t81.in]], [[tests/v3/Input/t82.in]], [[tests/v3/Input/t83.in]], [[tests/v3/Input/t84.in]], [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]], [[tests/v3/Input/t87.in]], [[tests/v3/Input/t92.in]]
-    - v4:  [[tests/v4/Input/t02.in]], [[tests/v4/Input/t08.in]], [[tests/v4/Input/t09.in]], [[tests/v4/Input/t35.in]], [[tests/v4/Input/t38.in]], [[tests/v4/Input/t46.in]], [[tests/v4/Input/t52.in]], [[tests/v4/Input/t56.in]], [[tests/v4/Input/t58.in]], [[tests/v4/Input/t59.in]], [[tests/v4/Input/t60.in]], [[tests/v4/Input/t61.in]], [[tests/v4/Input/t62.in]], [[tests/v4/Input/t63.in]], [[tests/v4/Input/t64.in]], [[tests/v4/Input/t65.in]], [[tests/v4/Input/t66.in]], [[tests/v4/Input/t67.in]], [[tests/v4/Input/t69.in]], [[tests/v4/Input/t72.in]], [[tests/v4/Input/t75.in]], [[tests/v4/Input/t79.in]], [[tests/v4/Input/t81.in]], [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t01.in]], [[tests/v5/Input/t02.in]], [[tests/v5/Input/t05.in]], [[tests/v5/Input/t06.in]], [[tests/v5/Input/t11.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t17.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t21.in]], [[tests/v5/Input/t23.in]], [[tests/v5/Input/t24.in]], [[tests/v5/Input/t25.in]], [[tests/v5/Input/t26.in]], [[tests/v5/Input/t29.in]], [[tests/v5/Input/t30.in]], [[tests/v5/Input/t48.in]], [[tests/v5/Input/t49.in]], [[tests/v5/Input/t51.in]], [[tests/v5/Input/t60.in]], [[tests/v5/Input/t61.in]], [[tests/v5/Input/t62.in]], [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]], [[tests/v5/Input/t80.in]], [[tests/v5/Input/t81.in]], [[tests/v5/Input/t85.in]], [[tests/v5/Input/t96.in]]
-    - v6:  [[tests/v6/Input/t01.in]], [[tests/v6/Input/t02.in]], [[tests/v6/Input/t04.in]], [[tests/v6/Input/t14.in]], [[tests/v6/Input/t17.in]], [[tests/v6/Input/t20.in]], [[tests/v6/Input/t30.in]], [[tests/v6/Input/t34.in]], [[tests/v6/Input/t35.in]], [[tests/v6/Input/t36.in]], [[tests/v6/Input/t37.in]], [[tests/v6/Input/t43.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]], [[tests/v6/Input/t50.in]], [[tests/v6/Input/t54.in]], [[tests/v6/Input/t58.in]], [[tests/v6/Input/t60.in]], [[tests/v6/Input/t61.in]], [[tests/v6/Input/t62.in]], [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]], [[tests/v6/Input/t68.in]], [[tests/v6/Input/t72.in]], [[tests/v6/Input/t78.in]], [[tests/v6/Input/t89.in]], [[tests/v6/Input/t90.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]], [[tests/v67mbpt/Input/t52.in]]
-    - v7:  [[tests/v7/Input/t03.in]], [[tests/v7/Input/t05.in]], [[tests/v7/Input/t12.in]], [[tests/v7/Input/t16.in]], [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t36.in]], [[tests/v7/Input/t41.in]], [[tests/v7/Input/t43.in]], [[tests/v7/Input/t45.in]], [[tests/v7/Input/t46.in]], [[tests/v7/Input/t47.in]], [[tests/v7/Input/t50.in]], [[tests/v7/Input/t51.in]], [[tests/v7/Input/t55.in]], [[tests/v7/Input/t57.in]], [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t63.in]], [[tests/v7/Input/t65.in]], [[tests/v7/Input/t66.in]], [[tests/v7/Input/t70.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]], [[tests/v7/Input/t80.in]], [[tests/v7/Input/t81.in]], [[tests/v7/Input/t82.in]], [[tests/v7/Input/t83.in]], [[tests/v7/Input/t85.in]], [[tests/v7/Input/t88.in]], [[tests/v7/Input/t89.in]], [[tests/v7/Input/t90.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]], [[tests/v7/Input/t98.in]], [[tests/v7/Input/t99.in]]
-    - v8:  [[tests/v8/Input/t01.in]], [[tests/v8/Input/t04.in]], [[tests/v8/Input/t07.in]], [[tests/v8/Input/t20.in]], [[tests/v8/Input/t41.in]], [[tests/v8/Input/t44.in]], [[tests/v8/Input/t47.in]], [[tests/v8/Input/t61.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]], [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
+    - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
+    - bigdft:  [[tests/bigdft/Input/t18.in|t18.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]]
+    - libxc:  [[tests/libxc/Input/t19.in|t19.in]], [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]], [[tests/libxc/Input/t51.in|t51.in]], [[tests/libxc/Input/t52.in|t52.in]], [[tests/libxc/Input/t53.in|t53.in]], [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t99.in|t99.in]]
+    - paral:  [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t77.in|t77.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t93.in|t93.in]], [[tests/paral/Input/t94.in|t94.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t99.in|t99.in]]
+    - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]], [[tests/seq/Input/tsv4_55.in|tsv4_55.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv4_80.in|tsv4_80.in]], [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in|tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in|tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in|tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/telast_1.in|telast_1.in]], [[tests/tutorespfn/Input/telast_2.in|telast_2.in]], [[tests/tutorespfn/Input/telast_4.in|telast_4.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/telast_6.in|telast_6.in]], [[tests/tutorespfn/Input/teph_1.in|teph_1.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tffield_6.in|tffield_6.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in|tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/toptic_1.in|toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in|toptic_3.in]], [[tests/tutorespfn/Input/trf1_5.in|trf1_5.in]], [[tests/tutorespfn/Input/trf1_6.in|trf1_6.in]], [[tests/tutorespfn/Input/trf2_1.in|trf2_1.in]]
+    - tutorial:  [[tests/tutorial/Input/tbase1_2.in|tbase1_2.in]], [[tests/tutorial/Input/tbase3_3.in|tbase3_3.in]], [[tests/tutorial/Input/tbase3_4.in|tbase3_4.in]], [[tests/tutorial/Input/tbase4_2.in|tbase4_2.in]], [[tests/tutorial/Input/tbase4_3.in|tbase4_3.in]], [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tpaw1_2.in|tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in|tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_5.in|tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in|tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in|tpaw2_2.in]], [[tests/tutorial/Input/ttddft_1.in|ttddft_1.in]]
+    - v1:  [[tests/v1/Input/t61.in|t61.in]], [[tests/v1/Input/t62.in|t62.in]], [[tests/v1/Input/t63.in|t63.in]], [[tests/v1/Input/t64.in|t64.in]], [[tests/v1/Input/t65.in|t65.in]], [[tests/v1/Input/t66.in|t66.in]], [[tests/v1/Input/t69.in|t69.in]], [[tests/v1/Input/t70.in|t70.in]], [[tests/v1/Input/t74.in|t74.in]], [[tests/v1/Input/t75.in|t75.in]], [[tests/v1/Input/t76.in|t76.in]], [[tests/v1/Input/t77.in|t77.in]], [[tests/v1/Input/t80.in|t80.in]], [[tests/v1/Input/t83.in|t83.in]], [[tests/v1/Input/t84.in|t84.in]], [[tests/v1/Input/t87.in|t87.in]], [[tests/v1/Input/t88.in|t88.in]], [[tests/v1/Input/t89.in|t89.in]]
+    - v2:  [[tests/v2/Input/t01.in|t01.in]], [[tests/v2/Input/t04.in|t04.in]], [[tests/v2/Input/t05.in|t05.in]], [[tests/v2/Input/t06.in|t06.in]], [[tests/v2/Input/t07.in|t07.in]], [[tests/v2/Input/t08.in|t08.in]], [[tests/v2/Input/t09.in|t09.in]], [[tests/v2/Input/t11.in|t11.in]], [[tests/v2/Input/t12.in|t12.in]], [[tests/v2/Input/t26.in|t26.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t33.in|t33.in]], [[tests/v2/Input/t34.in|t34.in]], [[tests/v2/Input/t35.in|t35.in]], [[tests/v2/Input/t36.in|t36.in]], [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]], [[tests/v2/Input/t40.in|t40.in]], [[tests/v2/Input/t41.in|t41.in]], [[tests/v2/Input/t42.in|t42.in]], [[tests/v2/Input/t44.in|t44.in]], [[tests/v2/Input/t45.in|t45.in]], [[tests/v2/Input/t46.in|t46.in]], [[tests/v2/Input/t47.in|t47.in]], [[tests/v2/Input/t48.in|t48.in]], [[tests/v2/Input/t50.in|t50.in]], [[tests/v2/Input/t75.in|t75.in]], [[tests/v2/Input/t76.in|t76.in]], [[tests/v2/Input/t83.in|t83.in]], [[tests/v2/Input/t87.in|t87.in]], [[tests/v2/Input/t88.in|t88.in]], [[tests/v2/Input/t90.in|t90.in]], [[tests/v2/Input/t91.in|t91.in]], [[tests/v2/Input/t92.in|t92.in]], [[tests/v2/Input/t93.in|t93.in]], [[tests/v2/Input/t94.in|t94.in]], [[tests/v2/Input/t95.in|t95.in]], [[tests/v2/Input/t96.in|t96.in]], [[tests/v2/Input/t97.in|t97.in]], [[tests/v2/Input/t98.in|t98.in]], [[tests/v2/Input/t99.in|t99.in]]
+    - v3:  [[tests/v3/Input/t02.in|t02.in]], [[tests/v3/Input/t06.in|t06.in]], [[tests/v3/Input/t07.in|t07.in]], [[tests/v3/Input/t08.in|t08.in]], [[tests/v3/Input/t09.in|t09.in]], [[tests/v3/Input/t10.in|t10.in]], [[tests/v3/Input/t11.in|t11.in]], [[tests/v3/Input/t12.in|t12.in]], [[tests/v3/Input/t13.in|t13.in]], [[tests/v3/Input/t14.in|t14.in]], [[tests/v3/Input/t15.in|t15.in]], [[tests/v3/Input/t16.in|t16.in]], [[tests/v3/Input/t17.in|t17.in]], [[tests/v3/Input/t18.in|t18.in]], [[tests/v3/Input/t19.in|t19.in]], [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t46.in|t46.in]], [[tests/v3/Input/t47.in|t47.in]], [[tests/v3/Input/t48.in|t48.in]], [[tests/v3/Input/t49.in|t49.in]], [[tests/v3/Input/t50.in|t50.in]], [[tests/v3/Input/t51.in|t51.in]], [[tests/v3/Input/t54.in|t54.in]], [[tests/v3/Input/t55.in|t55.in]], [[tests/v3/Input/t65.in|t65.in]], [[tests/v3/Input/t70.in|t70.in]], [[tests/v3/Input/t71.in|t71.in]], [[tests/v3/Input/t72.in|t72.in]], [[tests/v3/Input/t73.in|t73.in]], [[tests/v3/Input/t74.in|t74.in]], [[tests/v3/Input/t75.in|t75.in]], [[tests/v3/Input/t76.in|t76.in]], [[tests/v3/Input/t77.in|t77.in]], [[tests/v3/Input/t78.in|t78.in]], [[tests/v3/Input/t80.in|t80.in]], [[tests/v3/Input/t81.in|t81.in]], [[tests/v3/Input/t82.in|t82.in]], [[tests/v3/Input/t83.in|t83.in]], [[tests/v3/Input/t84.in|t84.in]], [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]], [[tests/v3/Input/t87.in|t87.in]], [[tests/v3/Input/t92.in|t92.in]]
+    - v4:  [[tests/v4/Input/t02.in|t02.in]], [[tests/v4/Input/t08.in|t08.in]], [[tests/v4/Input/t09.in|t09.in]], [[tests/v4/Input/t35.in|t35.in]], [[tests/v4/Input/t38.in|t38.in]], [[tests/v4/Input/t46.in|t46.in]], [[tests/v4/Input/t52.in|t52.in]], [[tests/v4/Input/t56.in|t56.in]], [[tests/v4/Input/t58.in|t58.in]], [[tests/v4/Input/t59.in|t59.in]], [[tests/v4/Input/t60.in|t60.in]], [[tests/v4/Input/t61.in|t61.in]], [[tests/v4/Input/t62.in|t62.in]], [[tests/v4/Input/t63.in|t63.in]], [[tests/v4/Input/t64.in|t64.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t67.in|t67.in]], [[tests/v4/Input/t69.in|t69.in]], [[tests/v4/Input/t72.in|t72.in]], [[tests/v4/Input/t75.in|t75.in]], [[tests/v4/Input/t79.in|t79.in]], [[tests/v4/Input/t81.in|t81.in]], [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t01.in|t01.in]], [[tests/v5/Input/t02.in|t02.in]], [[tests/v5/Input/t05.in|t05.in]], [[tests/v5/Input/t06.in|t06.in]], [[tests/v5/Input/t11.in|t11.in]], [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]], [[tests/v5/Input/t17.in|t17.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t21.in|t21.in]], [[tests/v5/Input/t23.in|t23.in]], [[tests/v5/Input/t24.in|t24.in]], [[tests/v5/Input/t25.in|t25.in]], [[tests/v5/Input/t26.in|t26.in]], [[tests/v5/Input/t29.in|t29.in]], [[tests/v5/Input/t30.in|t30.in]], [[tests/v5/Input/t48.in|t48.in]], [[tests/v5/Input/t49.in|t49.in]], [[tests/v5/Input/t51.in|t51.in]], [[tests/v5/Input/t60.in|t60.in]], [[tests/v5/Input/t61.in|t61.in]], [[tests/v5/Input/t62.in|t62.in]], [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]], [[tests/v5/Input/t80.in|t80.in]], [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t85.in|t85.in]], [[tests/v5/Input/t96.in|t96.in]]
+    - v6:  [[tests/v6/Input/t01.in|t01.in]], [[tests/v6/Input/t02.in|t02.in]], [[tests/v6/Input/t04.in|t04.in]], [[tests/v6/Input/t14.in|t14.in]], [[tests/v6/Input/t17.in|t17.in]], [[tests/v6/Input/t20.in|t20.in]], [[tests/v6/Input/t30.in|t30.in]], [[tests/v6/Input/t34.in|t34.in]], [[tests/v6/Input/t35.in|t35.in]], [[tests/v6/Input/t36.in|t36.in]], [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t43.in|t43.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]], [[tests/v6/Input/t50.in|t50.in]], [[tests/v6/Input/t54.in|t54.in]], [[tests/v6/Input/t58.in|t58.in]], [[tests/v6/Input/t60.in|t60.in]], [[tests/v6/Input/t61.in|t61.in]], [[tests/v6/Input/t62.in|t62.in]], [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]], [[tests/v6/Input/t68.in|t68.in]], [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t78.in|t78.in]], [[tests/v6/Input/t89.in|t89.in]], [[tests/v6/Input/t90.in|t90.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t15.in|t15.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]], [[tests/v67mbpt/Input/t52.in|t52.in]]
+    - v7:  [[tests/v7/Input/t03.in|t03.in]], [[tests/v7/Input/t05.in|t05.in]], [[tests/v7/Input/t12.in|t12.in]], [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t22.in|t22.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t36.in|t36.in]], [[tests/v7/Input/t41.in|t41.in]], [[tests/v7/Input/t43.in|t43.in]], [[tests/v7/Input/t45.in|t45.in]], [[tests/v7/Input/t46.in|t46.in]], [[tests/v7/Input/t47.in|t47.in]], [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t51.in|t51.in]], [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t57.in|t57.in]], [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t63.in|t63.in]], [[tests/v7/Input/t65.in|t65.in]], [[tests/v7/Input/t66.in|t66.in]], [[tests/v7/Input/t70.in|t70.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]], [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]], [[tests/v7/Input/t83.in|t83.in]], [[tests/v7/Input/t85.in|t85.in]], [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t89.in|t89.in]], [[tests/v7/Input/t90.in|t90.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]], [[tests/v7/Input/t98.in|t98.in]], [[tests/v7/Input/t99.in|t99.in]]
+    - v8:  [[tests/v8/Input/t01.in|t01.in]], [[tests/v8/Input/t04.in|t04.in]], [[tests/v8/Input/t07.in|t07.in]], [[tests/v8/Input/t20.in|t20.in]], [[tests/v8/Input/t41.in|t41.in]], [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t47.in|t47.in]], [[tests/v8/Input/t61.in|t61.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]], [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
 
@@ -743,14 +743,14 @@ refers to dataset 2 when dataset 4 is initialized.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [36/920] in all abinit tests, [4/116] in abinit tutorials.)"
-    - gpu:  [[tests/gpu/Input/t01.in]]
-    - paral:  [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in]], [[tests/tutorespfn/Input/trf1_6.in]]
-    - v2:  [[tests/v2/Input/t04.in]], [[tests/v2/Input/t07.in]], [[tests/v2/Input/t09.in]], [[tests/v2/Input/t11.in]], [[tests/v2/Input/t12.in]], [[tests/v2/Input/t26.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t36.in]], [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]]
-    - v3:  [[tests/v3/Input/t18.in]], [[tests/v3/Input/t76.in]], [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]], [[tests/v3/Input/t92.in]]
-    - v5:  [[tests/v5/Input/t21.in]], [[tests/v5/Input/t25.in]]
-    - v6:  [[tests/v6/Input/t35.in]], [[tests/v6/Input/t37.in]], [[tests/v6/Input/t78.in]]
-    - v7:  [[tests/v7/Input/t50.in]], [[tests/v7/Input/t55.in]], [[tests/v7/Input/t57.in]], [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t83.in]], [[tests/v7/Input/t89.in]], [[tests/v7/Input/t98.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
+    - paral:  [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/trf1_6.in|trf1_6.in]]
+    - v2:  [[tests/v2/Input/t04.in|t04.in]], [[tests/v2/Input/t07.in|t07.in]], [[tests/v2/Input/t09.in|t09.in]], [[tests/v2/Input/t11.in|t11.in]], [[tests/v2/Input/t12.in|t12.in]], [[tests/v2/Input/t26.in|t26.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t36.in|t36.in]], [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]]
+    - v3:  [[tests/v3/Input/t18.in|t18.in]], [[tests/v3/Input/t76.in|t76.in]], [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]], [[tests/v3/Input/t92.in|t92.in]]
+    - v5:  [[tests/v5/Input/t21.in|t21.in]], [[tests/v5/Input/t25.in|t25.in]]
+    - v6:  [[tests/v6/Input/t35.in|t35.in]], [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t78.in|t78.in]]
+    - v7:  [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t57.in|t57.in]], [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t83.in|t83.in]], [[tests/v7/Input/t89.in|t89.in]], [[tests/v7/Input/t98.in|t98.in]]
 
 
 
@@ -813,7 +813,7 @@ refers to dataset 2 when dataset 4 is initialized.
   
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
 
 
 
@@ -844,8 +844,8 @@ variables, see the [ section 4
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in]]
-    - v3:  [[tests/v3/Input/t77.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
+    - v3:  [[tests/v3/Input/t77.in|t77.in]]
 
 
 
@@ -910,7 +910,7 @@ block produced in a previous run.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]]
 
 
 
@@ -933,7 +933,7 @@ eigenvectors produced in a previous run.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
 
@@ -958,7 +958,7 @@ block produced in a previous run.
   
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]]
+    - v7:  [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]]
 
 
 
@@ -992,8 +992,8 @@ variables, see the [ section 4
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [2/116] in abinit tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]]
-    - v5:  [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
+    - v5:  [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]]
 
 
 
@@ -1038,10 +1038,10 @@ Response-function calculation :
   
 
 ??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [5/116] in abinit tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]]
-    - tutorial:  [[tests/tutorial/Input/tudet_1.in]]
-    - v5:  [[tests/v5/Input/t38.in]], [[tests/v5/Input/t40.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
+    - tutorial:  [[tests/tutorial/Input/tudet_1.in|tudet_1.in]]
+    - v5:  [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t40.in|t40.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -1091,8 +1091,8 @@ produced in a previous run.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -1116,10 +1116,10 @@ achieve a self-consistent quasiparticle calculations. See also [[getqps]]
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [4/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
 
 
 
@@ -1149,7 +1149,7 @@ variables, see the [ section 4
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
 
 
 
@@ -1179,20 +1179,20 @@ variables, see the [ section 4
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [82/920] in all abinit tests, [15/116] in abinit tutorials.)"
-    - bigdft:  [[tests/bigdft/Input/t16.in]], [[tests/bigdft/Input/t17.in]]
-    - built-in:  [[tests/built-in/Input/testin_wannier90.in]]
-    - fast:  [[tests/fast/Input/t05.in]], [[tests/fast/Input/t06.in]], [[tests/fast/Input/t07.in]], [[tests/fast/Input/t08.in]], [[tests/fast/Input/t09.in]], [[tests/fast/Input/t11.in]], [[tests/fast/Input/t12.in]], [[tests/fast/Input/t14.in]], [[tests/fast/Input/t16.in]], [[tests/fast/Input/t19.in]], [[tests/fast/Input/t20.in]], [[tests/fast/Input/t21.in]], [[tests/fast/Input/t23.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
-    - paral:  [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tdfpt_04.in]], [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]], [[tests/tutorespfn/Input/trf1_2.in]], [[tests/tutorespfn/Input/trf1_3.in]], [[tests/tutorespfn/Input/trf1_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tudet_2.in]]
-    - v1:  [[tests/v1/Input/t07.in]], [[tests/v1/Input/t12.in]], [[tests/v1/Input/t13.in]], [[tests/v1/Input/t14.in]], [[tests/v1/Input/t15.in]], [[tests/v1/Input/t16.in]], [[tests/v1/Input/t17.in]], [[tests/v1/Input/t18.in]], [[tests/v1/Input/t19.in]], [[tests/v1/Input/t20.in]], [[tests/v1/Input/t22.in]], [[tests/v1/Input/t23.in]], [[tests/v1/Input/t24.in]], [[tests/v1/Input/t32.in]], [[tests/v1/Input/t46.in]], [[tests/v1/Input/t47.in]], [[tests/v1/Input/t52.in]], [[tests/v1/Input/t55.in]], [[tests/v1/Input/t56.in]], [[tests/v1/Input/t57.in]], [[tests/v1/Input/t58.in]], [[tests/v1/Input/t71.in]], [[tests/v1/Input/t72.in]], [[tests/v1/Input/t73.in]], [[tests/v1/Input/t99.in]]
-    - v3:  [[tests/v3/Input/t01.in]]
-    - v4:  [[tests/v4/Input/t60.in]]
-    - v5:  [[tests/v5/Input/t39.in]], [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t51.in]]
-    - wannier90:  [[tests/wannier90/Input/t00.in]], [[tests/wannier90/Input/t01.in]], [[tests/wannier90/Input/t02.in]], [[tests/wannier90/Input/t03.in]]
+    - bigdft:  [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]]
+    - built-in:  [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
+    - fast:  [[tests/fast/Input/t05.in|t05.in]], [[tests/fast/Input/t06.in|t06.in]], [[tests/fast/Input/t07.in|t07.in]], [[tests/fast/Input/t08.in|t08.in]], [[tests/fast/Input/t09.in|t09.in]], [[tests/fast/Input/t11.in|t11.in]], [[tests/fast/Input/t12.in|t12.in]], [[tests/fast/Input/t14.in|t14.in]], [[tests/fast/Input/t16.in|t16.in]], [[tests/fast/Input/t19.in|t19.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t23.in|t23.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]]
+    - paral:  [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_04.in|tdfpt_04.in]], [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]], [[tests/tutorespfn/Input/trf1_2.in|trf1_2.in]], [[tests/tutorespfn/Input/trf1_3.in|trf1_3.in]], [[tests/tutorespfn/Input/trf1_4.in|trf1_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
+    - v1:  [[tests/v1/Input/t07.in|t07.in]], [[tests/v1/Input/t12.in|t12.in]], [[tests/v1/Input/t13.in|t13.in]], [[tests/v1/Input/t14.in|t14.in]], [[tests/v1/Input/t15.in|t15.in]], [[tests/v1/Input/t16.in|t16.in]], [[tests/v1/Input/t17.in|t17.in]], [[tests/v1/Input/t18.in|t18.in]], [[tests/v1/Input/t19.in|t19.in]], [[tests/v1/Input/t20.in|t20.in]], [[tests/v1/Input/t22.in|t22.in]], [[tests/v1/Input/t23.in|t23.in]], [[tests/v1/Input/t24.in|t24.in]], [[tests/v1/Input/t32.in|t32.in]], [[tests/v1/Input/t46.in|t46.in]], [[tests/v1/Input/t47.in|t47.in]], [[tests/v1/Input/t52.in|t52.in]], [[tests/v1/Input/t55.in|t55.in]], [[tests/v1/Input/t56.in|t56.in]], [[tests/v1/Input/t57.in|t57.in]], [[tests/v1/Input/t58.in|t58.in]], [[tests/v1/Input/t71.in|t71.in]], [[tests/v1/Input/t72.in|t72.in]], [[tests/v1/Input/t73.in|t73.in]], [[tests/v1/Input/t99.in|t99.in]]
+    - v3:  [[tests/v3/Input/t01.in|t01.in]]
+    - v4:  [[tests/v4/Input/t60.in|t60.in]]
+    - v5:  [[tests/v5/Input/t39.in|t39.in]], [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t51.in|t51.in]]
+    - wannier90:  [[tests/wannier90/Input/t00.in|t00.in]], [[tests/wannier90/Input/t01.in|t01.in]], [[tests/wannier90/Input/t02.in|t02.in]], [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -1235,8 +1235,8 @@ Response-function calculation :
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]], [[tests/paral/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t51.in]]
+    - paral:  [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t51.in|t51.in]]
 
 
 
@@ -1279,8 +1279,8 @@ Response-function calculation :
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - etsf_io:  [[tests/etsf_io/Input/t02.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -1310,9 +1310,9 @@ k-points.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - fast:  [[tests/fast/Input/t30.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v7:  [[tests/v7/Input/t04.in]], [[tests/v7/Input/t05.in]]
+    - fast:  [[tests/fast/Input/t30.in|t30.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v7:  [[tests/v7/Input/t04.in|t04.in]], [[tests/v7/Input/t05.in|t05.in]]
 
 
 
@@ -1338,31 +1338,31 @@ density on bi-dimensional slices of the FFT grid.
   
 
 ??? note "Test list (click to open) (Moderately used, [300/920] in all abinit tests, [37/116] in abinit tutorials.)"
-    - atompaw:  [[tests/atompaw/Input/t04.in]]
-    - bigdft:  [[tests/bigdft/Input/t01.in]], [[tests/bigdft/Input/t02.in]], [[tests/bigdft/Input/t03.in]], [[tests/bigdft/Input/t04.in]], [[tests/bigdft/Input/t05.in]], [[tests/bigdft/Input/t06.in]], [[tests/bigdft/Input/t07.in]], [[tests/bigdft/Input/t09.in]], [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t11.in]], [[tests/bigdft/Input/t12.in]], [[tests/bigdft/Input/t14.in]], [[tests/bigdft/Input/t16.in]], [[tests/bigdft/Input/t17.in]], [[tests/bigdft/Input/t18.in]], [[tests/bigdft/Input/t20.in]], [[tests/bigdft/Input/t21.in]], [[tests/bigdft/Input/t22.in]], [[tests/bigdft/Input/t23.in]], [[tests/bigdft/Input/t31.in]], [[tests/bigdft/Input/t32.in]], [[tests/bigdft/Input/t33.in]], [[tests/bigdft/Input/t34.in]]
-    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t02.in]], [[tests/bigdft_paral/Input/t02.in]]
-    - etsf_io:  [[tests/etsf_io/Input/t02.in]], [[tests/etsf_io/Input/t04.in]]
-    - fast:  [[tests/fast/Input/t08.in]], [[tests/fast/Input/t17.in]], [[tests/fast/Input/t27.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t30.in]]
-    - gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
-    - libxc:  [[tests/libxc/Input/t02.in]], [[tests/libxc/Input/t05.in]], [[tests/libxc/Input/t06.in]], [[tests/libxc/Input/t07.in]], [[tests/libxc/Input/t08.in]], [[tests/libxc/Input/t10.in]], [[tests/libxc/Input/t17.in]], [[tests/libxc/Input/t18.in]], [[tests/libxc/Input/t20.in]], [[tests/libxc/Input/t21.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t49.in]], [[tests/mpiio/Input/t69.in]], [[tests/mpiio/Input/t69.in]]
-    - paral:  [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t05.in]], [[tests/paral/Input/t28.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t54.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t55.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t57.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t60.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
-    - seq:  [[tests/seq/Input/tsv2_81.in]], [[tests/seq/Input/tsv2_82.in]], [[tests/seq/Input/tsv3_03.in]], [[tests/seq/Input/tsv3_04.in]], [[tests/seq/Input/tsv3_05.in]], [[tests/seq/Input/tsv4_78.in]], [[tests/seq/Input/tsv5_113.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in]], [[tests/tutoparal/Input/tdfpt_04.in]], [[tests/tutoparal/Input/tstring_01.in]]
-    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/telast_5.in]], [[tests/tutorespfn/Input/telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in]], [[tests/tutorespfn/Input/toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in]], [[tests/tutorespfn/Input/trf1_6.in]]
-    - tutorial:  [[tests/tutorial/Input/tbase1_4.in]], [[tests/tutorial/Input/tbase3_5.in]], [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in]], [[tests/tutorial/Input/tspin_1.in]], [[tests/tutorial/Input/tspin_2.in]], [[tests/tutorial/Input/tspin_3.in]], [[tests/tutorial/Input/ttddft_1.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
-    - v1:  [[tests/v1/Input/t25.in]], [[tests/v1/Input/t39.in]], [[tests/v1/Input/t40.in]], [[tests/v1/Input/t69.in]], [[tests/v1/Input/t70.in]]
-    - v2:  [[tests/v2/Input/t04.in]], [[tests/v2/Input/t06.in]], [[tests/v2/Input/t07.in]], [[tests/v2/Input/t09.in]], [[tests/v2/Input/t11.in]], [[tests/v2/Input/t12.in]], [[tests/v2/Input/t26.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t36.in]], [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]], [[tests/v2/Input/t42.in]], [[tests/v2/Input/t43.in]], [[tests/v2/Input/t47.in]], [[tests/v2/Input/t74.in]], [[tests/v2/Input/t76.in]], [[tests/v2/Input/t94.in]]
-    - v3:  [[tests/v3/Input/t09.in]], [[tests/v3/Input/t13.in]], [[tests/v3/Input/t16.in]], [[tests/v3/Input/t18.in]], [[tests/v3/Input/t45.in]], [[tests/v3/Input/t46.in]], [[tests/v3/Input/t54.in]], [[tests/v3/Input/t55.in]], [[tests/v3/Input/t56.in]], [[tests/v3/Input/t60.in]], [[tests/v3/Input/t62.in]], [[tests/v3/Input/t65.in]], [[tests/v3/Input/t76.in]], [[tests/v3/Input/t77.in]], [[tests/v3/Input/t78.in]], [[tests/v3/Input/t83.in]], [[tests/v3/Input/t84.in]], [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]], [[tests/v3/Input/t92.in]], [[tests/v3/Input/t93.in]], [[tests/v3/Input/t94.in]]
-    - v4:  [[tests/v4/Input/t08.in]], [[tests/v4/Input/t09.in]], [[tests/v4/Input/t17.in]], [[tests/v4/Input/t20.in]], [[tests/v4/Input/t30.in]], [[tests/v4/Input/t32.in]], [[tests/v4/Input/t35.in]], [[tests/v4/Input/t38.in]], [[tests/v4/Input/t40.in]], [[tests/v4/Input/t42.in]], [[tests/v4/Input/t46.in]], [[tests/v4/Input/t52.in]], [[tests/v4/Input/t56.in]], [[tests/v4/Input/t59.in]], [[tests/v4/Input/t60.in]], [[tests/v4/Input/t65.in]], [[tests/v4/Input/t66.in]], [[tests/v4/Input/t72.in]], [[tests/v4/Input/t75.in]], [[tests/v4/Input/t79.in]], [[tests/v4/Input/t89.in]], [[tests/v4/Input/t95.in]]
-    - v5:  [[tests/v5/Input/t05.in]], [[tests/v5/Input/t06.in]], [[tests/v5/Input/t09.in]], [[tests/v5/Input/t11.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t21.in]], [[tests/v5/Input/t30.in]], [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]], [[tests/v5/Input/t36.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]], [[tests/v5/Input/t54.in]], [[tests/v5/Input/t55.in]], [[tests/v5/Input/t56.in]], [[tests/v5/Input/t57.in]], [[tests/v5/Input/t58.in]], [[tests/v5/Input/t59.in]], [[tests/v5/Input/t61.in]], [[tests/v5/Input/t62.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t77.in]], [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]], [[tests/v5/Input/t96.in]]
-    - v6:  [[tests/v6/Input/t03.in]], [[tests/v6/Input/t04.in]], [[tests/v6/Input/t07.in]], [[tests/v6/Input/t14.in]], [[tests/v6/Input/t20.in]], [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]], [[tests/v6/Input/t33.in]], [[tests/v6/Input/t34.in]], [[tests/v6/Input/t35.in]], [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]], [[tests/v6/Input/t63.in]], [[tests/v6/Input/t64.in]], [[tests/v6/Input/t65.in]], [[tests/v6/Input/t66.in]], [[tests/v6/Input/t67.in]], [[tests/v6/Input/t72.in]], [[tests/v6/Input/t78.in]], [[tests/v6/Input/t90.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]], [[tests/v67mbpt/Input/t52.in]]
-    - v7:  [[tests/v7/Input/t02.in]], [[tests/v7/Input/t03.in]], [[tests/v7/Input/t07.in]], [[tests/v7/Input/t08.in]], [[tests/v7/Input/t11.in]], [[tests/v7/Input/t16.in]], [[tests/v7/Input/t26.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t41.in]], [[tests/v7/Input/t46.in]], [[tests/v7/Input/t47.in]], [[tests/v7/Input/t50.in]], [[tests/v7/Input/t55.in]], [[tests/v7/Input/t57.in]], [[tests/v7/Input/t58.in]], [[tests/v7/Input/t59.in]], [[tests/v7/Input/t63.in]], [[tests/v7/Input/t90.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]], [[tests/v7/Input/t97.in]]
-    - v8:  [[tests/v8/Input/t02.in]], [[tests/v8/Input/t05.in]], [[tests/v8/Input/t07.in]], [[tests/v8/Input/t12.in]], [[tests/v8/Input/t47.in]]
-    - vdwxc:  [[tests/vdwxc/Input/t10.in]]
-    - wannier90:  [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
+    - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
+    - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t06.in|t06.in]], [[tests/bigdft/Input/t07.in|t07.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
+    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]], [[tests/etsf_io/Input/t04.in|t04.in]]
+    - fast:  [[tests/fast/Input/t08.in|t08.in]], [[tests/fast/Input/t17.in|t17.in]], [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t30.in|t30.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]], [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t04.in|t04.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
+    - libxc:  [[tests/libxc/Input/t02.in|t02.in]], [[tests/libxc/Input/t05.in|t05.in]], [[tests/libxc/Input/t06.in|t06.in]], [[tests/libxc/Input/t07.in|t07.in]], [[tests/libxc/Input/t08.in|t08.in]], [[tests/libxc/Input/t10.in|t10.in]], [[tests/libxc/Input/t17.in|t17.in]], [[tests/libxc/Input/t18.in|t18.in]], [[tests/libxc/Input/t20.in|t20.in]], [[tests/libxc/Input/t21.in|t21.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
+    - paral:  [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
+    - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv5_113.in|tsv5_113.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in|tdfpt_03.in]], [[tests/tutoparal/Input/tdfpt_04.in|tdfpt_04.in]], [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in|tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in|tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in|tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/telast_6.in|telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]], [[tests/tutorespfn/Input/tnlo_6.in|tnlo_6.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]], [[tests/tutorespfn/Input/toptic_1.in|toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in|toptic_3.in]], [[tests/tutorespfn/Input/trf1_6.in|trf1_6.in]]
+    - tutorial:  [[tests/tutorial/Input/tbase1_4.in|tbase1_4.in]], [[tests/tutorial/Input/tbase3_5.in|tbase3_5.in]], [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tpaw1_1.in|tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in|tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in|tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in|tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in|tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in|tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in|tpaw2_2.in]], [[tests/tutorial/Input/tspin_1.in|tspin_1.in]], [[tests/tutorial/Input/tspin_2.in|tspin_2.in]], [[tests/tutorial/Input/tspin_3.in|tspin_3.in]], [[tests/tutorial/Input/ttddft_1.in|ttddft_1.in]], [[tests/tutorial/Input/tudet_1.in|tudet_1.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
+    - v1:  [[tests/v1/Input/t25.in|t25.in]], [[tests/v1/Input/t39.in|t39.in]], [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t69.in|t69.in]], [[tests/v1/Input/t70.in|t70.in]]
+    - v2:  [[tests/v2/Input/t04.in|t04.in]], [[tests/v2/Input/t06.in|t06.in]], [[tests/v2/Input/t07.in|t07.in]], [[tests/v2/Input/t09.in|t09.in]], [[tests/v2/Input/t11.in|t11.in]], [[tests/v2/Input/t12.in|t12.in]], [[tests/v2/Input/t26.in|t26.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t36.in|t36.in]], [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]], [[tests/v2/Input/t42.in|t42.in]], [[tests/v2/Input/t43.in|t43.in]], [[tests/v2/Input/t47.in|t47.in]], [[tests/v2/Input/t74.in|t74.in]], [[tests/v2/Input/t76.in|t76.in]], [[tests/v2/Input/t94.in|t94.in]]
+    - v3:  [[tests/v3/Input/t09.in|t09.in]], [[tests/v3/Input/t13.in|t13.in]], [[tests/v3/Input/t16.in|t16.in]], [[tests/v3/Input/t18.in|t18.in]], [[tests/v3/Input/t45.in|t45.in]], [[tests/v3/Input/t46.in|t46.in]], [[tests/v3/Input/t54.in|t54.in]], [[tests/v3/Input/t55.in|t55.in]], [[tests/v3/Input/t56.in|t56.in]], [[tests/v3/Input/t60.in|t60.in]], [[tests/v3/Input/t62.in|t62.in]], [[tests/v3/Input/t65.in|t65.in]], [[tests/v3/Input/t76.in|t76.in]], [[tests/v3/Input/t77.in|t77.in]], [[tests/v3/Input/t78.in|t78.in]], [[tests/v3/Input/t83.in|t83.in]], [[tests/v3/Input/t84.in|t84.in]], [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]], [[tests/v3/Input/t92.in|t92.in]], [[tests/v3/Input/t93.in|t93.in]], [[tests/v3/Input/t94.in|t94.in]]
+    - v4:  [[tests/v4/Input/t08.in|t08.in]], [[tests/v4/Input/t09.in|t09.in]], [[tests/v4/Input/t17.in|t17.in]], [[tests/v4/Input/t20.in|t20.in]], [[tests/v4/Input/t30.in|t30.in]], [[tests/v4/Input/t32.in|t32.in]], [[tests/v4/Input/t35.in|t35.in]], [[tests/v4/Input/t38.in|t38.in]], [[tests/v4/Input/t40.in|t40.in]], [[tests/v4/Input/t42.in|t42.in]], [[tests/v4/Input/t46.in|t46.in]], [[tests/v4/Input/t52.in|t52.in]], [[tests/v4/Input/t56.in|t56.in]], [[tests/v4/Input/t59.in|t59.in]], [[tests/v4/Input/t60.in|t60.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t72.in|t72.in]], [[tests/v4/Input/t75.in|t75.in]], [[tests/v4/Input/t79.in|t79.in]], [[tests/v4/Input/t89.in|t89.in]], [[tests/v4/Input/t95.in|t95.in]]
+    - v5:  [[tests/v5/Input/t05.in|t05.in]], [[tests/v5/Input/t06.in|t06.in]], [[tests/v5/Input/t09.in|t09.in]], [[tests/v5/Input/t11.in|t11.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t17.in|t17.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t21.in|t21.in]], [[tests/v5/Input/t30.in|t30.in]], [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]], [[tests/v5/Input/t36.in|t36.in]], [[tests/v5/Input/t37.in|t37.in]], [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t39.in|t39.in]], [[tests/v5/Input/t40.in|t40.in]], [[tests/v5/Input/t54.in|t54.in]], [[tests/v5/Input/t55.in|t55.in]], [[tests/v5/Input/t56.in|t56.in]], [[tests/v5/Input/t57.in|t57.in]], [[tests/v5/Input/t58.in|t58.in]], [[tests/v5/Input/t59.in|t59.in]], [[tests/v5/Input/t61.in|t61.in]], [[tests/v5/Input/t62.in|t62.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t77.in|t77.in]], [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]], [[tests/v5/Input/t96.in|t96.in]]
+    - v6:  [[tests/v6/Input/t03.in|t03.in]], [[tests/v6/Input/t04.in|t04.in]], [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t14.in|t14.in]], [[tests/v6/Input/t20.in|t20.in]], [[tests/v6/Input/t31.in|t31.in]], [[tests/v6/Input/t32.in|t32.in]], [[tests/v6/Input/t33.in|t33.in]], [[tests/v6/Input/t34.in|t34.in]], [[tests/v6/Input/t35.in|t35.in]], [[tests/v6/Input/t44.in|t44.in]], [[tests/v6/Input/t49.in|t49.in]], [[tests/v6/Input/t63.in|t63.in]], [[tests/v6/Input/t64.in|t64.in]], [[tests/v6/Input/t65.in|t65.in]], [[tests/v6/Input/t66.in|t66.in]], [[tests/v6/Input/t67.in|t67.in]], [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t78.in|t78.in]], [[tests/v6/Input/t90.in|t90.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]], [[tests/v67mbpt/Input/t52.in|t52.in]]
+    - v7:  [[tests/v7/Input/t02.in|t02.in]], [[tests/v7/Input/t03.in|t03.in]], [[tests/v7/Input/t07.in|t07.in]], [[tests/v7/Input/t08.in|t08.in]], [[tests/v7/Input/t11.in|t11.in]], [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t26.in|t26.in]], [[tests/v7/Input/t32.in|t32.in]], [[tests/v7/Input/t41.in|t41.in]], [[tests/v7/Input/t46.in|t46.in]], [[tests/v7/Input/t47.in|t47.in]], [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t57.in|t57.in]], [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t63.in|t63.in]], [[tests/v7/Input/t90.in|t90.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]], [[tests/v7/Input/t97.in|t97.in]]
+    - v8:  [[tests/v8/Input/t02.in|t02.in]], [[tests/v8/Input/t05.in|t05.in]], [[tests/v8/Input/t07.in|t07.in]], [[tests/v8/Input/t12.in|t12.in]], [[tests/v8/Input/t47.in|t47.in]]
+    - vdwxc:  [[tests/vdwxc/Input/t10.in|t10.in]]
+    - wannier90:  [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
 
@@ -1444,17 +1444,17 @@ to another, use the _DEN file for that.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [38/920] in all abinit tests, [4/116] in abinit tutorials.)"
-    - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
-    - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
-    - libxc:  [[tests/libxc/Input/t03.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - tutorial:  [[tests/tutorial/Input/tpaw1_4.in]], [[tests/tutorial/Input/tspin_1.in]], [[tests/tutorial/Input/tspin_2.in]], [[tests/tutorial/Input/tspin_3.in]]
-    - v1:  [[tests/v1/Input/t07.in]]
-    - v3:  [[tests/v3/Input/t01.in]], [[tests/v3/Input/t46.in]]
-    - v4:  [[tests/v4/Input/t01.in]], [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]], [[tests/v4/Input/t35.in]], [[tests/v4/Input/t38.in]], [[tests/v4/Input/t94.in]]
-    - v5:  [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t40.in]], [[tests/v5/Input/t96.in]]
-    - v7:  [[tests/v7/Input/t04.in]], [[tests/v7/Input/t06.in]], [[tests/v7/Input/t17.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t00.in]], [[tests/wannier90/Input/t01.in]], [[tests/wannier90/Input/t02.in]]
+    - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
+    - libxc:  [[tests/libxc/Input/t03.in|t03.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - tutorial:  [[tests/tutorial/Input/tpaw1_4.in|tpaw1_4.in]], [[tests/tutorial/Input/tspin_1.in|tspin_1.in]], [[tests/tutorial/Input/tspin_2.in|tspin_2.in]], [[tests/tutorial/Input/tspin_3.in|tspin_3.in]]
+    - v1:  [[tests/v1/Input/t07.in|t07.in]]
+    - v3:  [[tests/v3/Input/t01.in|t01.in]], [[tests/v3/Input/t46.in|t46.in]]
+    - v4:  [[tests/v4/Input/t01.in|t01.in]], [[tests/v4/Input/t04.in|t04.in]], [[tests/v4/Input/t05.in|t05.in]], [[tests/v4/Input/t06.in|t06.in]], [[tests/v4/Input/t07.in|t07.in]], [[tests/v4/Input/t35.in|t35.in]], [[tests/v4/Input/t38.in|t38.in]], [[tests/v4/Input/t94.in|t94.in]]
+    - v5:  [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t40.in|t40.in]], [[tests/v5/Input/t96.in|t96.in]]
+    - v7:  [[tests/v7/Input/t04.in|t04.in]], [[tests/v7/Input/t06.in|t06.in]], [[tests/v7/Input/t17.in|t17.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t00.in|t00.in]], [[tests/wannier90/Input/t01.in|t01.in]], [[tests/wannier90/Input/t02.in|t02.in]]
 
 
 
@@ -1547,7 +1547,7 @@ tetrahedron method (as [[prtdos]]=2).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t40.in]]
+    - v5:  [[tests/v5/Input/t40.in|t40.in]]
 
 
 
@@ -1579,21 +1579,21 @@ spherical harmonics in the same basis as the LDA+U occupation matrix.
   
 
 ??? note "Test list (click to open) (Moderately used, [103/920] in all abinit tests, [20/116] in abinit tutorials.)"
-    - atompaw:  [[tests/atompaw/Input/t04.in]]
-    - bigdft:  [[tests/bigdft/Input/t01.in]], [[tests/bigdft/Input/t02.in]], [[tests/bigdft/Input/t03.in]], [[tests/bigdft/Input/t04.in]], [[tests/bigdft/Input/t05.in]], [[tests/bigdft/Input/t09.in]], [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t11.in]], [[tests/bigdft/Input/t12.in]], [[tests/bigdft/Input/t20.in]], [[tests/bigdft/Input/t21.in]], [[tests/bigdft/Input/t22.in]], [[tests/bigdft/Input/t23.in]], [[tests/bigdft/Input/t31.in]], [[tests/bigdft/Input/t32.in]], [[tests/bigdft/Input/t33.in]], [[tests/bigdft/Input/t34.in]]
-    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t02.in]], [[tests/bigdft_paral/Input/t02.in]]
-    - gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
-    - libxc:  [[tests/libxc/Input/t02.in]], [[tests/libxc/Input/t05.in]], [[tests/libxc/Input/t06.in]], [[tests/libxc/Input/t07.in]], [[tests/libxc/Input/t17.in]], [[tests/libxc/Input/t18.in]], [[tests/libxc/Input/t20.in]], [[tests/libxc/Input/t21.in]]
-    - paral:  [[tests/paral/Input/t28.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t52.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in]], [[tests/tutoparal/Input/tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in]]
-    - tutorial:  [[tests/tutorial/Input/tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in]], [[tests/tutorial/Input/tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in]], [[tests/tutorial/Input/tpositron_3.in]], [[tests/tutorial/Input/tpositron_4.in]], [[tests/tutorial/Input/tpositron_5.in]], [[tests/tutorial/Input/tpositron_6.in]], [[tests/tutorial/Input/tpositron_7.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
-    - v1:  [[tests/v1/Input/t39.in]], [[tests/v1/Input/t40.in]]
-    - v4:  [[tests/v4/Input/t08.in]], [[tests/v4/Input/t09.in]], [[tests/v4/Input/t17.in]]
-    - v5:  [[tests/v5/Input/t05.in]], [[tests/v5/Input/t06.in]], [[tests/v5/Input/t07.in]], [[tests/v5/Input/t11.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]], [[tests/v5/Input/t30.in]], [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]], [[tests/v5/Input/t36.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]], [[tests/v5/Input/t77.in]], [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]]
-    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]]
-    - v7:  [[tests/v7/Input/t02.in]], [[tests/v7/Input/t11.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t35.in]], [[tests/v7/Input/t63.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]], [[tests/v7/Input/t97.in]]
-    - v8:  [[tests/v8/Input/t07.in]]
-    - vdwxc:  [[tests/vdwxc/Input/t10.in]]
+    - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
+    - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
+    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]], [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t04.in|t04.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
+    - libxc:  [[tests/libxc/Input/t02.in|t02.in]], [[tests/libxc/Input/t05.in|t05.in]], [[tests/libxc/Input/t06.in|t06.in]], [[tests/libxc/Input/t07.in|t07.in]], [[tests/libxc/Input/t17.in|t17.in]], [[tests/libxc/Input/t18.in|t18.in]], [[tests/libxc/Input/t20.in|t20.in]], [[tests/libxc/Input/t21.in|t21.in]]
+    - paral:  [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in|tgspw_01.in]], [[tests/tutoparal/Input/tgspw_02.in|tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in|tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
+    - tutorial:  [[tests/tutorial/Input/tpaw1_1.in|tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in|tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in|tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in|tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in|tpaw1_5.in]], [[tests/tutorial/Input/tpaw2_1.in|tpaw2_1.in]], [[tests/tutorial/Input/tpaw2_2.in|tpaw2_2.in]], [[tests/tutorial/Input/tpositron_1.in|tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in|tpositron_2.in]], [[tests/tutorial/Input/tpositron_3.in|tpositron_3.in]], [[tests/tutorial/Input/tpositron_4.in|tpositron_4.in]], [[tests/tutorial/Input/tpositron_5.in|tpositron_5.in]], [[tests/tutorial/Input/tpositron_6.in|tpositron_6.in]], [[tests/tutorial/Input/tpositron_7.in|tpositron_7.in]], [[tests/tutorial/Input/tudet_1.in|tudet_1.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
+    - v1:  [[tests/v1/Input/t39.in|t39.in]], [[tests/v1/Input/t40.in|t40.in]]
+    - v4:  [[tests/v4/Input/t08.in|t08.in]], [[tests/v4/Input/t09.in|t09.in]], [[tests/v4/Input/t17.in|t17.in]]
+    - v5:  [[tests/v5/Input/t05.in|t05.in]], [[tests/v5/Input/t06.in|t06.in]], [[tests/v5/Input/t07.in|t07.in]], [[tests/v5/Input/t11.in|t11.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t17.in|t17.in]], [[tests/v5/Input/t30.in|t30.in]], [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]], [[tests/v5/Input/t36.in|t36.in]], [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t39.in|t39.in]], [[tests/v5/Input/t40.in|t40.in]], [[tests/v5/Input/t77.in|t77.in]], [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]]
+    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t44.in|t44.in]], [[tests/v6/Input/t49.in|t49.in]]
+    - v7:  [[tests/v7/Input/t02.in|t02.in]], [[tests/v7/Input/t11.in|t11.in]], [[tests/v7/Input/t32.in|t32.in]], [[tests/v7/Input/t35.in|t35.in]], [[tests/v7/Input/t63.in|t63.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]], [[tests/v7/Input/t97.in|t97.in]]
+    - v8:  [[tests/v8/Input/t07.in|t07.in]]
+    - vdwxc:  [[tests/vdwxc/Input/t10.in|t10.in]]
 
 
 
@@ -1616,8 +1616,8 @@ eigenvalues is printed.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v5:  [[tests/v5/Input/t50.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v5:  [[tests/v5/Input/t50.in|t50.in]]
 
 
 
@@ -1659,8 +1659,8 @@ Please note that ELF is ** not ** yet implemented in the case of PAW
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v6:  [[tests/v6/Input/t14.in]]
-    - v7:  [[tests/v7/Input/t88.in]]
+    - v6:  [[tests/v6/Input/t14.in|t14.in]]
+    - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
 
@@ -1694,9 +1694,9 @@ Xcrysden)
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v1:  [[tests/v1/Input/t21.in]]
-    - v6:  [[tests/v6/Input/t12.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v1:  [[tests/v1/Input/t21.in|t21.in]]
+    - v6:  [[tests/v6/Input/t12.in|t12.in]]
 
 
 
@@ -1724,9 +1724,9 @@ unformatted output file is described below, see section 6).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - fast:  [[tests/fast/Input/t27.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t29.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v6:  [[tests/v6/Input/t30.in]]
+    - fast:  [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v6:  [[tests/v6/Input/t30.in|t30.in]]
 
 
 
@@ -1765,10 +1765,10 @@ If [[prtgeo]]&gt;0, the maximum number of atoms ([[natom]]) is 9999.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in]]
-    - v5:  [[tests/v5/Input/t85.in]]
-    - v6:  [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
-    - v7:  [[tests/v7/Input/t90.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]]
+    - v5:  [[tests/v5/Input/t85.in|t85.in]]
+    - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
+    - v7:  [[tests/v7/Input/t90.in|t90.in]]
 
 
 
@@ -1795,7 +1795,7 @@ electron-phonon treatment in ABINIT is given in the tutorial
 *Default value:* prtgsr = 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v3:  [[tests/v3/Input/t30.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]]
 
 
 
@@ -1822,11 +1822,11 @@ Note that, by default, the GSR file contains the electronic density unless
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t19.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v1:  [[tests/v1/Input/t21.in]]
-    - v5:  [[tests/v5/Input/t51.in]]
-    - v6:  [[tests/v6/Input/t12.in]], [[tests/v6/Input/t17.in]], [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]]
+    - libxc:  [[tests/libxc/Input/t19.in|t19.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v1:  [[tests/v1/Input/t21.in|t21.in]]
+    - v5:  [[tests/v5/Input/t51.in|t51.in]]
+    - v6:  [[tests/v6/Input/t12.in|t12.in]], [[tests/v6/Input/t17.in|t17.in]], [[tests/v6/Input/t31.in|t31.in]], [[tests/v6/Input/t32.in|t32.in]]
 
 
 
@@ -1858,10 +1858,10 @@ case of PAW ([[usepaw]]=1) calculations.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutorial:  [[tests/tutorial/Input/tspin_3.in]]
-    - v2:  [[tests/v2/Input/t61.in]], [[tests/v2/Input/t62.in]], [[tests/v2/Input/t63.in]], [[tests/v2/Input/t64.in]], [[tests/v2/Input/t65.in]], [[tests/v2/Input/t66.in]], [[tests/v2/Input/t67.in]], [[tests/v2/Input/t68.in]], [[tests/v2/Input/t69.in]], [[tests/v2/Input/t70.in]], [[tests/v2/Input/t71.in]], [[tests/v2/Input/t72.in]], [[tests/v2/Input/t73.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
-    - v8:  [[tests/v8/Input/t03.in]]
+    - tutorial:  [[tests/tutorial/Input/tspin_3.in|tspin_3.in]]
+    - v2:  [[tests/v2/Input/t61.in|t61.in]], [[tests/v2/Input/t62.in|t62.in]], [[tests/v2/Input/t63.in|t63.in]], [[tests/v2/Input/t64.in|t64.in]], [[tests/v2/Input/t65.in|t65.in]], [[tests/v2/Input/t66.in|t66.in]], [[tests/v2/Input/t67.in|t67.in]], [[tests/v2/Input/t68.in|t68.in]], [[tests/v2/Input/t69.in|t69.in]], [[tests/v2/Input/t70.in|t70.in]], [[tests/v2/Input/t71.in|t71.in]], [[tests/v2/Input/t72.in|t72.in]], [[tests/v2/Input/t73.in|t73.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
+    - v8:  [[tests/v8/Input/t03.in|t03.in]]
 
 
 
@@ -1907,9 +1907,9 @@ corresponding weights is produced
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v1:  [[tests/v1/Input/t21.in]]
-    - v6:  [[tests/v6/Input/t12.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v1:  [[tests/v1/Input/t21.in|t21.in]]
+    - v6:  [[tests/v6/Input/t12.in|t12.in]]
 
 
 
@@ -1937,12 +1937,12 @@ unformatted output file is described below (see [ section 6
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - fast:  [[tests/fast/Input/t27.in]], [[tests/fast/Input/t28.in]], [[tests/fast/Input/t30.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]]
-    - v6:  [[tests/v6/Input/t04.in]]
-    - v7:  [[tests/v7/Input/t05.in]], [[tests/v7/Input/t85.in]]
-    - v8:  [[tests/v8/Input/t02.in]]
+    - fast:  [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t30.in|t30.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v5:  [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]]
+    - v6:  [[tests/v6/Input/t04.in|t04.in]]
+    - v7:  [[tests/v7/Input/t05.in|t05.in]], [[tests/v7/Input/t85.in|t85.in]]
+    - v8:  [[tests/v8/Input/t02.in|t02.in]]
 
 
 
@@ -1978,7 +1978,7 @@ The file structure of this unformatted output file is described in [ section
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t10.in]]
+    - v7:  [[tests/v7/Input/t10.in|t10.in]]
 
 
 
@@ -2003,7 +2003,7 @@ exit after the output of the PSPS.nc file.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t46.in]]
+    - v5:  [[tests/v5/Input/t46.in|t46.in]]
 
 
 
@@ -2028,8 +2028,8 @@ yet.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]]
-    - v4:  [[tests/v4/Input/t46.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
+    - v4:  [[tests/v4/Input/t46.in|t46.in]]
 
 
 
@@ -2087,9 +2087,9 @@ No other printing variables for density or potentials should be activated
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v3:  [[tests/v3/Input/t87.in]]
-    - v5:  [[tests/v5/Input/t70.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t37.in]]
+    - v3:  [[tests/v3/Input/t87.in|t87.in]]
+    - v5:  [[tests/v5/Input/t70.in|t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
 
 
 
@@ -2112,8 +2112,8 @@ only the _SCR file will be output.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t04.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t04.in|t04.in]]
 
 
 
@@ -2141,10 +2141,10 @@ If **prtvclmb=2**, only the smooth part of the Coulomb potential is output.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - fast:  [[tests/fast/Input/t30.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t04.in]]
-    - v8:  [[tests/v8/Input/t02.in]]
+    - fast:  [[tests/fast/Input/t30.in|t30.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t04.in|t04.in]]
+    - v8:  [[tests/v8/Input/t02.in|t02.in]]
 
 
 
@@ -2179,11 +2179,11 @@ The file structure of this unformatted output file is described in [ section
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - fast:  [[tests/fast/Input/t30.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v4:  [[tests/v4/Input/t42.in]]
-    - v5:  [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]]
-    - v6:  [[tests/v6/Input/t04.in]]
+    - fast:  [[tests/fast/Input/t30.in|t30.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v4:  [[tests/v4/Input/t42.in|t42.in]]
+    - v5:  [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]]
+    - v6:  [[tests/v6/Input/t04.in|t04.in]]
 
 
 
@@ -2219,23 +2219,23 @@ The file structure of this unformatted output file is described in [ section
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [199/920] in all abinit tests, [6/116] in abinit tutorials.)"
-    - built-in:  [[tests/built-in/Input/testin_fast.in]], [[tests/built-in/Input/testin_v1.in]], [[tests/built-in/Input/testin_v5.in]]
-    - etsf_io:  [[tests/etsf_io/Input/t22.in]]
-    - fast:  [[tests/fast/Input/t00.in]], [[tests/fast/Input/t02.in]], [[tests/fast/Input/t03.in]], [[tests/fast/Input/t20.in]], [[tests/fast/Input/t21.in]], [[tests/fast/Input/t23.in]], [[tests/fast/Input/t24.in]], [[tests/fast/Input/t27.in]], [[tests/fast/Input/t30.in]]
-    - libxc:  [[tests/libxc/Input/t01.in]], [[tests/libxc/Input/t53.in]]
-    - mpiio:  [[tests/mpiio/Input/t99.in]]
-    - paral:  [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t03.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t41.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t51.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t99.in]]
-    - tutoplugs:  [[tests/tutoplugs/Input/tw90_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbase1_5.in]], [[tests/tutorial/Input/tgw2_1.in]], [[tests/tutorial/Input/tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v1:  [[tests/v1/Input/t00.in]], [[tests/v1/Input/t01.in]], [[tests/v1/Input/t02.in]], [[tests/v1/Input/t03.in]], [[tests/v1/Input/t04.in]], [[tests/v1/Input/t07.in]], [[tests/v1/Input/t05.in]], [[tests/v1/Input/t10.in]], [[tests/v1/Input/t11.in]], [[tests/v1/Input/t12.in]], [[tests/v1/Input/t13.in]], [[tests/v1/Input/t14.in]], [[tests/v1/Input/t15.in]], [[tests/v1/Input/t16.in]], [[tests/v1/Input/t17.in]], [[tests/v1/Input/t18.in]], [[tests/v1/Input/t19.in]], [[tests/v1/Input/t20.in]], [[tests/v1/Input/t22.in]], [[tests/v1/Input/t23.in]], [[tests/v1/Input/t24.in]], [[tests/v1/Input/t28.in]], [[tests/v1/Input/t29.in]], [[tests/v1/Input/t30.in]], [[tests/v1/Input/t31.in]], [[tests/v1/Input/t32.in]], [[tests/v1/Input/t34.in]], [[tests/v1/Input/t35.in]], [[tests/v1/Input/t36.in]], [[tests/v1/Input/t38.in]], [[tests/v1/Input/t40.in]], [[tests/v1/Input/t41.in]], [[tests/v1/Input/t42.in]], [[tests/v1/Input/t43.in]], [[tests/v1/Input/t45.in]], [[tests/v1/Input/t46.in]], [[tests/v1/Input/t47.in]], [[tests/v1/Input/t48.in]], [[tests/v1/Input/t49.in]], [[tests/v1/Input/t50.in]], [[tests/v1/Input/t51.in]], [[tests/v1/Input/t53.in]], [[tests/v1/Input/t54.in]], [[tests/v1/Input/t55.in]], [[tests/v1/Input/t57.in]], [[tests/v1/Input/t58.in]], [[tests/v1/Input/t59.in]], [[tests/v1/Input/t71.in]], [[tests/v1/Input/t72.in]], [[tests/v1/Input/t73.in]], [[tests/v1/Input/t77.in]], [[tests/v1/Input/t90.in]], [[tests/v1/Input/t91.in]], [[tests/v1/Input/t92.in]], [[tests/v1/Input/t93.in]], [[tests/v1/Input/t94.in]], [[tests/v1/Input/t95.in]], [[tests/v1/Input/t96.in]]
-    - v2:  [[tests/v2/Input/t03.in]], [[tests/v2/Input/t04.in]], [[tests/v2/Input/t05.in]], [[tests/v2/Input/t07.in]], [[tests/v2/Input/t09.in]], [[tests/v2/Input/t30.in]], [[tests/v2/Input/t37.in]], [[tests/v2/Input/t38.in]], [[tests/v2/Input/t42.in]], [[tests/v2/Input/t75.in]]
-    - v3:  [[tests/v3/Input/t02.in]], [[tests/v3/Input/t21.in]], [[tests/v3/Input/t22.in]], [[tests/v3/Input/t23.in]], [[tests/v3/Input/t24.in]], [[tests/v3/Input/t25.in]], [[tests/v3/Input/t26.in]], [[tests/v3/Input/t27.in]], [[tests/v3/Input/t28.in]], [[tests/v3/Input/t29.in]], [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t32.in]], [[tests/v3/Input/t33.in]], [[tests/v3/Input/t34.in]], [[tests/v3/Input/t35.in]], [[tests/v3/Input/t36.in]], [[tests/v3/Input/t37.in]], [[tests/v3/Input/t38.in]], [[tests/v3/Input/t39.in]], [[tests/v3/Input/t40.in]], [[tests/v3/Input/t45.in]], [[tests/v3/Input/t78.in]], [[tests/v3/Input/t83.in]], [[tests/v3/Input/t85.in]], [[tests/v3/Input/t87.in]], [[tests/v3/Input/t92.in]]
-    - v4:  [[tests/v4/Input/t21.in]], [[tests/v4/Input/t22.in]], [[tests/v4/Input/t23.in]], [[tests/v4/Input/t24.in]], [[tests/v4/Input/t25.in]], [[tests/v4/Input/t26.in]], [[tests/v4/Input/t27.in]], [[tests/v4/Input/t28.in]], [[tests/v4/Input/t29.in]], [[tests/v4/Input/t61.in]], [[tests/v4/Input/t62.in]], [[tests/v4/Input/t63.in]], [[tests/v4/Input/t64.in]], [[tests/v4/Input/t65.in]], [[tests/v4/Input/t66.in]], [[tests/v4/Input/t67.in]], [[tests/v4/Input/t81.in]], [[tests/v4/Input/t98.in]], [[tests/v4/Input/t99.in]]
-    - v5:  [[tests/v5/Input/t00.in]], [[tests/v5/Input/t08.in]], [[tests/v5/Input/t09.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t24.in]], [[tests/v5/Input/t45.in]], [[tests/v5/Input/t63.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
-    - v6:  [[tests/v6/Input/t03.in]], [[tests/v6/Input/t13.in]], [[tests/v6/Input/t16.in]], [[tests/v6/Input/t21.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t12.in]]
-    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t26.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t70.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]]
-    - v8:  [[tests/v8/Input/t01.in]], [[tests/v8/Input/t03.in]], [[tests/v8/Input/t05.in]], [[tests/v8/Input/t07.in]], [[tests/v8/Input/t20.in]], [[tests/v8/Input/t30.in]]
+    - built-in:  [[tests/built-in/Input/testin_fast.in|testin_fast.in]], [[tests/built-in/Input/testin_v1.in|testin_v1.in]], [[tests/built-in/Input/testin_v5.in|testin_v5.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t22.in|t22.in]]
+    - fast:  [[tests/fast/Input/t00.in|t00.in]], [[tests/fast/Input/t02.in|t02.in]], [[tests/fast/Input/t03.in|t03.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t23.in|t23.in]], [[tests/fast/Input/t24.in|t24.in]], [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t30.in|t30.in]]
+    - libxc:  [[tests/libxc/Input/t01.in|t01.in]], [[tests/libxc/Input/t53.in|t53.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
+    - paral:  [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t41.in|t41.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t99.in|t99.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbase1_5.in|tbase1_5.in]], [[tests/tutorial/Input/tgw2_1.in|tgw2_1.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v1:  [[tests/v1/Input/t00.in|t00.in]], [[tests/v1/Input/t01.in|t01.in]], [[tests/v1/Input/t02.in|t02.in]], [[tests/v1/Input/t03.in|t03.in]], [[tests/v1/Input/t04.in|t04.in]], [[tests/v1/Input/t07.in|t07.in]], [[tests/v1/Input/t05.in|t05.in]], [[tests/v1/Input/t10.in|t10.in]], [[tests/v1/Input/t11.in|t11.in]], [[tests/v1/Input/t12.in|t12.in]], [[tests/v1/Input/t13.in|t13.in]], [[tests/v1/Input/t14.in|t14.in]], [[tests/v1/Input/t15.in|t15.in]], [[tests/v1/Input/t16.in|t16.in]], [[tests/v1/Input/t17.in|t17.in]], [[tests/v1/Input/t18.in|t18.in]], [[tests/v1/Input/t19.in|t19.in]], [[tests/v1/Input/t20.in|t20.in]], [[tests/v1/Input/t22.in|t22.in]], [[tests/v1/Input/t23.in|t23.in]], [[tests/v1/Input/t24.in|t24.in]], [[tests/v1/Input/t28.in|t28.in]], [[tests/v1/Input/t29.in|t29.in]], [[tests/v1/Input/t30.in|t30.in]], [[tests/v1/Input/t31.in|t31.in]], [[tests/v1/Input/t32.in|t32.in]], [[tests/v1/Input/t34.in|t34.in]], [[tests/v1/Input/t35.in|t35.in]], [[tests/v1/Input/t36.in|t36.in]], [[tests/v1/Input/t38.in|t38.in]], [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t41.in|t41.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]], [[tests/v1/Input/t45.in|t45.in]], [[tests/v1/Input/t46.in|t46.in]], [[tests/v1/Input/t47.in|t47.in]], [[tests/v1/Input/t48.in|t48.in]], [[tests/v1/Input/t49.in|t49.in]], [[tests/v1/Input/t50.in|t50.in]], [[tests/v1/Input/t51.in|t51.in]], [[tests/v1/Input/t53.in|t53.in]], [[tests/v1/Input/t54.in|t54.in]], [[tests/v1/Input/t55.in|t55.in]], [[tests/v1/Input/t57.in|t57.in]], [[tests/v1/Input/t58.in|t58.in]], [[tests/v1/Input/t59.in|t59.in]], [[tests/v1/Input/t71.in|t71.in]], [[tests/v1/Input/t72.in|t72.in]], [[tests/v1/Input/t73.in|t73.in]], [[tests/v1/Input/t77.in|t77.in]], [[tests/v1/Input/t90.in|t90.in]], [[tests/v1/Input/t91.in|t91.in]], [[tests/v1/Input/t92.in|t92.in]], [[tests/v1/Input/t93.in|t93.in]], [[tests/v1/Input/t94.in|t94.in]], [[tests/v1/Input/t95.in|t95.in]], [[tests/v1/Input/t96.in|t96.in]]
+    - v2:  [[tests/v2/Input/t03.in|t03.in]], [[tests/v2/Input/t04.in|t04.in]], [[tests/v2/Input/t05.in|t05.in]], [[tests/v2/Input/t07.in|t07.in]], [[tests/v2/Input/t09.in|t09.in]], [[tests/v2/Input/t30.in|t30.in]], [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]], [[tests/v2/Input/t42.in|t42.in]], [[tests/v2/Input/t75.in|t75.in]]
+    - v3:  [[tests/v3/Input/t02.in|t02.in]], [[tests/v3/Input/t21.in|t21.in]], [[tests/v3/Input/t22.in|t22.in]], [[tests/v3/Input/t23.in|t23.in]], [[tests/v3/Input/t24.in|t24.in]], [[tests/v3/Input/t25.in|t25.in]], [[tests/v3/Input/t26.in|t26.in]], [[tests/v3/Input/t27.in|t27.in]], [[tests/v3/Input/t28.in|t28.in]], [[tests/v3/Input/t29.in|t29.in]], [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t32.in|t32.in]], [[tests/v3/Input/t33.in|t33.in]], [[tests/v3/Input/t34.in|t34.in]], [[tests/v3/Input/t35.in|t35.in]], [[tests/v3/Input/t36.in|t36.in]], [[tests/v3/Input/t37.in|t37.in]], [[tests/v3/Input/t38.in|t38.in]], [[tests/v3/Input/t39.in|t39.in]], [[tests/v3/Input/t40.in|t40.in]], [[tests/v3/Input/t45.in|t45.in]], [[tests/v3/Input/t78.in|t78.in]], [[tests/v3/Input/t83.in|t83.in]], [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t87.in|t87.in]], [[tests/v3/Input/t92.in|t92.in]]
+    - v4:  [[tests/v4/Input/t21.in|t21.in]], [[tests/v4/Input/t22.in|t22.in]], [[tests/v4/Input/t23.in|t23.in]], [[tests/v4/Input/t24.in|t24.in]], [[tests/v4/Input/t25.in|t25.in]], [[tests/v4/Input/t26.in|t26.in]], [[tests/v4/Input/t27.in|t27.in]], [[tests/v4/Input/t28.in|t28.in]], [[tests/v4/Input/t29.in|t29.in]], [[tests/v4/Input/t61.in|t61.in]], [[tests/v4/Input/t62.in|t62.in]], [[tests/v4/Input/t63.in|t63.in]], [[tests/v4/Input/t64.in|t64.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t67.in|t67.in]], [[tests/v4/Input/t81.in|t81.in]], [[tests/v4/Input/t98.in|t98.in]], [[tests/v4/Input/t99.in|t99.in]]
+    - v5:  [[tests/v5/Input/t00.in|t00.in]], [[tests/v5/Input/t08.in|t08.in]], [[tests/v5/Input/t09.in|t09.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t24.in|t24.in]], [[tests/v5/Input/t45.in|t45.in]], [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v6:  [[tests/v6/Input/t03.in|t03.in]], [[tests/v6/Input/t13.in|t13.in]], [[tests/v6/Input/t16.in|t16.in]], [[tests/v6/Input/t21.in|t21.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t12.in|t12.in]]
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t26.in|t26.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t32.in|t32.in]], [[tests/v7/Input/t70.in|t70.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]]
+    - v8:  [[tests/v8/Input/t01.in|t01.in]], [[tests/v8/Input/t03.in|t03.in]], [[tests/v8/Input/t05.in|t05.in]], [[tests/v8/Input/t07.in|t07.in]], [[tests/v8/Input/t20.in|t20.in]], [[tests/v8/Input/t30.in|t30.in]]
 
 
 
@@ -2286,9 +2286,9 @@ This debugging feature is not yet activated in the RF routines. Note that
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]], [[tests/paral/Input/t08.in]]
-    - v6:  [[tests/v6/Input/t21.in]]
-    - v8:  [[tests/v8/Input/t05.in]]
+    - paral:  [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]]
+    - v6:  [[tests/v6/Input/t21.in|t21.in]]
+    - v8:  [[tests/v8/Input/t05.in|t05.in]]
 
 
 
@@ -2318,8 +2318,8 @@ total energy and convergence residuals only.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v6:  [[tests/v6/Input/t04.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v6:  [[tests/v6/Input/t04.in|t04.in]]
 
 
 
@@ -2354,10 +2354,10 @@ The file structure of this unformatted output file is described in [ section
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - bigdft:  [[tests/bigdft/Input/t22.in]]
-    - fast:  [[tests/fast/Input/t30.in]]
-    - mpiio:  [[tests/mpiio/Input/t26.in]], [[tests/mpiio/Input/t27.in]], [[tests/mpiio/Input/t28.in]]
-    - v8:  [[tests/v8/Input/t02.in]]
+    - bigdft:  [[tests/bigdft/Input/t22.in|t22.in]]
+    - fast:  [[tests/fast/Input/t30.in|t30.in]]
+    - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
+    - v8:  [[tests/v8/Input/t02.in|t02.in]]
 
 
 
@@ -2392,10 +2392,10 @@ The file structure of this unformatted output file is described in [ section
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [4/116] in abinit tutorials.)"
-    - built-in:  [[tests/built-in/Input/testin_wannier90.in]]
-    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in]]
-    - v4:  [[tests/v4/Input/t89.in]]
-    - wannier90:  [[tests/wannier90/Input/t00.in]], [[tests/wannier90/Input/t01.in]], [[tests/wannier90/Input/t02.in]], [[tests/wannier90/Input/t03.in]], [[tests/wannier90/Input/t11.in]], [[tests/wannier90/Input/t12.in]], [[tests/wannier90/Input/t13.in]]
+    - built-in:  [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
+    - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in|tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in|tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in|tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
+    - v4:  [[tests/v4/Input/t89.in|t89.in]]
+    - wannier90:  [[tests/wannier90/Input/t00.in|t00.in]], [[tests/wannier90/Input/t01.in|t01.in]], [[tests/wannier90/Input/t02.in|t02.in]], [[tests/wannier90/Input/t03.in|t03.in]], [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
 
@@ -2484,27 +2484,27 @@ Additional Notes:
   
 
 ??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials.)"
-    - bigdft:  [[tests/bigdft/Input/t01.in]], [[tests/bigdft/Input/t02.in]], [[tests/bigdft/Input/t03.in]], [[tests/bigdft/Input/t04.in]], [[tests/bigdft/Input/t05.in]], [[tests/bigdft/Input/t09.in]], [[tests/bigdft/Input/t10.in]], [[tests/bigdft/Input/t11.in]], [[tests/bigdft/Input/t12.in]], [[tests/bigdft/Input/t14.in]], [[tests/bigdft/Input/t16.in]], [[tests/bigdft/Input/t17.in]], [[tests/bigdft/Input/t18.in]], [[tests/bigdft/Input/t20.in]], [[tests/bigdft/Input/t21.in]], [[tests/bigdft/Input/t22.in]], [[tests/bigdft/Input/t23.in]], [[tests/bigdft/Input/t31.in]], [[tests/bigdft/Input/t32.in]], [[tests/bigdft/Input/t33.in]], [[tests/bigdft/Input/t34.in]]
-    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t01.in]], [[tests/bigdft_paral/Input/t02.in]], [[tests/bigdft_paral/Input/t02.in]]
-    - built-in:  [[tests/built-in/Input/testin_etsf_io.in]]
-    - etsf_io:  [[tests/etsf_io/Input/t00.in]], [[tests/etsf_io/Input/t09.in]]
-    - gpu:  [[tests/gpu/Input/t01.in]], [[tests/gpu/Input/t02.in]], [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t04.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
-    - libxc:  [[tests/libxc/Input/t02.in]], [[tests/libxc/Input/t03.in]], [[tests/libxc/Input/t05.in]], [[tests/libxc/Input/t06.in]], [[tests/libxc/Input/t07.in]], [[tests/libxc/Input/t08.in]], [[tests/libxc/Input/t10.in]], [[tests/libxc/Input/t17.in]], [[tests/libxc/Input/t18.in]], [[tests/libxc/Input/t20.in]], [[tests/libxc/Input/t21.in]]
-    - mpiio:  [[tests/mpiio/Input/t62.in]], [[tests/mpiio/Input/t62.in]]
-    - paral:  [[tests/paral/Input/t28.in]], [[tests/paral/Input/t29.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]], [[tests/paral/Input/t95.in]]
-    - seq:  [[tests/seq/Input/tsv4_90.in]], [[tests/seq/Input/tsv5_113.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tstring_01.in]]
-    - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in]], [[tests/tutorespfn/Input/tnlo_6.in]], [[tests/tutorespfn/Input/toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in]], [[tests/tutorial/Input/tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in]], [[tests/tutorial/Input/tpositron_3.in]], [[tests/tutorial/Input/tpositron_4.in]], [[tests/tutorial/Input/tpositron_5.in]], [[tests/tutorial/Input/tpositron_6.in]], [[tests/tutorial/Input/tpositron_7.in]], [[tests/tutorial/Input/tudet_2.in]]
-    - v1:  [[tests/v1/Input/t25.in]], [[tests/v1/Input/t39.in]], [[tests/v1/Input/t40.in]]
-    - v3:  [[tests/v3/Input/t58.in]]
-    - v4:  [[tests/v4/Input/t01.in]], [[tests/v4/Input/t04.in]], [[tests/v4/Input/t05.in]], [[tests/v4/Input/t06.in]], [[tests/v4/Input/t07.in]], [[tests/v4/Input/t08.in]], [[tests/v4/Input/t09.in]], [[tests/v4/Input/t17.in]], [[tests/v4/Input/t91.in]], [[tests/v4/Input/t92.in]], [[tests/v4/Input/t94.in]]
-    - v5:  [[tests/v5/Input/t05.in]], [[tests/v5/Input/t06.in]], [[tests/v5/Input/t07.in]], [[tests/v5/Input/t11.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t17.in]], [[tests/v5/Input/t23.in]], [[tests/v5/Input/t30.in]], [[tests/v5/Input/t31.in]], [[tests/v5/Input/t32.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t34.in]], [[tests/v5/Input/t35.in]], [[tests/v5/Input/t36.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]], [[tests/v5/Input/t54.in]], [[tests/v5/Input/t55.in]], [[tests/v5/Input/t56.in]], [[tests/v5/Input/t57.in]], [[tests/v5/Input/t58.in]], [[tests/v5/Input/t59.in]], [[tests/v5/Input/t60.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t73.in]], [[tests/v5/Input/t74.in]], [[tests/v5/Input/t77.in]], [[tests/v5/Input/t81.in]], [[tests/v5/Input/t82.in]], [[tests/v5/Input/t85.in]]
-    - v6:  [[tests/v6/Input/t03.in]], [[tests/v6/Input/t07.in]], [[tests/v6/Input/t08.in]], [[tests/v6/Input/t09.in]], [[tests/v6/Input/t10.in]], [[tests/v6/Input/t14.in]], [[tests/v6/Input/t31.in]], [[tests/v6/Input/t32.in]], [[tests/v6/Input/t33.in]], [[tests/v6/Input/t44.in]], [[tests/v6/Input/t49.in]], [[tests/v6/Input/t62.in]], [[tests/v6/Input/t72.in]], [[tests/v6/Input/t90.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t52.in]]
-    - v7:  [[tests/v7/Input/t02.in]], [[tests/v7/Input/t03.in]], [[tests/v7/Input/t08.in]], [[tests/v7/Input/t11.in]], [[tests/v7/Input/t16.in]], [[tests/v7/Input/t26.in]], [[tests/v7/Input/t32.in]], [[tests/v7/Input/t35.in]], [[tests/v7/Input/t36.in]], [[tests/v7/Input/t41.in]], [[tests/v7/Input/t43.in]], [[tests/v7/Input/t50.in]], [[tests/v7/Input/t63.in]], [[tests/v7/Input/t85.in]], [[tests/v7/Input/t90.in]], [[tests/v7/Input/t95.in]], [[tests/v7/Input/t96.in]], [[tests/v7/Input/t97.in]]
-    - v8:  [[tests/v8/Input/t02.in]], [[tests/v8/Input/t05.in]], [[tests/v8/Input/t07.in]], [[tests/v8/Input/t20.in]]
-    - vdwxc:  [[tests/vdwxc/Input/t10.in]]
+    - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
+    - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
+    - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
+    - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]], [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t04.in|t04.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
+    - libxc:  [[tests/libxc/Input/t02.in|t02.in]], [[tests/libxc/Input/t03.in|t03.in]], [[tests/libxc/Input/t05.in|t05.in]], [[tests/libxc/Input/t06.in|t06.in]], [[tests/libxc/Input/t07.in|t07.in]], [[tests/libxc/Input/t08.in|t08.in]], [[tests/libxc/Input/t10.in|t10.in]], [[tests/libxc/Input/t17.in|t17.in]], [[tests/libxc/Input/t18.in|t18.in]], [[tests/libxc/Input/t20.in|t20.in]], [[tests/libxc/Input/t21.in|t21.in]]
+    - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]]
+    - paral:  [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
+    - seq:  [[tests/seq/Input/tsv4_90.in|tsv4_90.in]], [[tests/seq/Input/tsv5_113.in|tsv5_113.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]], [[tests/tutorespfn/Input/tnlo_6.in|tnlo_6.in]], [[tests/tutorespfn/Input/toptic_1.in|toptic_1.in]], [[tests/tutorespfn/Input/toptic_3.in|toptic_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tpaw1_1.in|tpaw1_1.in]], [[tests/tutorial/Input/tpaw1_2.in|tpaw1_2.in]], [[tests/tutorial/Input/tpaw1_3.in|tpaw1_3.in]], [[tests/tutorial/Input/tpaw1_4.in|tpaw1_4.in]], [[tests/tutorial/Input/tpaw1_5.in|tpaw1_5.in]], [[tests/tutorial/Input/tpositron_1.in|tpositron_1.in]], [[tests/tutorial/Input/tpositron_2.in|tpositron_2.in]], [[tests/tutorial/Input/tpositron_3.in|tpositron_3.in]], [[tests/tutorial/Input/tpositron_4.in|tpositron_4.in]], [[tests/tutorial/Input/tpositron_5.in|tpositron_5.in]], [[tests/tutorial/Input/tpositron_6.in|tpositron_6.in]], [[tests/tutorial/Input/tpositron_7.in|tpositron_7.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
+    - v1:  [[tests/v1/Input/t25.in|t25.in]], [[tests/v1/Input/t39.in|t39.in]], [[tests/v1/Input/t40.in|t40.in]]
+    - v3:  [[tests/v3/Input/t58.in|t58.in]]
+    - v4:  [[tests/v4/Input/t01.in|t01.in]], [[tests/v4/Input/t04.in|t04.in]], [[tests/v4/Input/t05.in|t05.in]], [[tests/v4/Input/t06.in|t06.in]], [[tests/v4/Input/t07.in|t07.in]], [[tests/v4/Input/t08.in|t08.in]], [[tests/v4/Input/t09.in|t09.in]], [[tests/v4/Input/t17.in|t17.in]], [[tests/v4/Input/t91.in|t91.in]], [[tests/v4/Input/t92.in|t92.in]], [[tests/v4/Input/t94.in|t94.in]]
+    - v5:  [[tests/v5/Input/t05.in|t05.in]], [[tests/v5/Input/t06.in|t06.in]], [[tests/v5/Input/t07.in|t07.in]], [[tests/v5/Input/t11.in|t11.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t17.in|t17.in]], [[tests/v5/Input/t23.in|t23.in]], [[tests/v5/Input/t30.in|t30.in]], [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]], [[tests/v5/Input/t36.in|t36.in]], [[tests/v5/Input/t39.in|t39.in]], [[tests/v5/Input/t40.in|t40.in]], [[tests/v5/Input/t54.in|t54.in]], [[tests/v5/Input/t55.in|t55.in]], [[tests/v5/Input/t56.in|t56.in]], [[tests/v5/Input/t57.in|t57.in]], [[tests/v5/Input/t58.in|t58.in]], [[tests/v5/Input/t59.in|t59.in]], [[tests/v5/Input/t60.in|t60.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t73.in|t73.in]], [[tests/v5/Input/t74.in|t74.in]], [[tests/v5/Input/t77.in|t77.in]], [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]], [[tests/v5/Input/t85.in|t85.in]]
+    - v6:  [[tests/v6/Input/t03.in|t03.in]], [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t08.in|t08.in]], [[tests/v6/Input/t09.in|t09.in]], [[tests/v6/Input/t10.in|t10.in]], [[tests/v6/Input/t14.in|t14.in]], [[tests/v6/Input/t31.in|t31.in]], [[tests/v6/Input/t32.in|t32.in]], [[tests/v6/Input/t33.in|t33.in]], [[tests/v6/Input/t44.in|t44.in]], [[tests/v6/Input/t49.in|t49.in]], [[tests/v6/Input/t62.in|t62.in]], [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t52.in|t52.in]]
+    - v7:  [[tests/v7/Input/t02.in|t02.in]], [[tests/v7/Input/t03.in|t03.in]], [[tests/v7/Input/t08.in|t08.in]], [[tests/v7/Input/t11.in|t11.in]], [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t26.in|t26.in]], [[tests/v7/Input/t32.in|t32.in]], [[tests/v7/Input/t35.in|t35.in]], [[tests/v7/Input/t36.in|t36.in]], [[tests/v7/Input/t41.in|t41.in]], [[tests/v7/Input/t43.in|t43.in]], [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t63.in|t63.in]], [[tests/v7/Input/t85.in|t85.in]], [[tests/v7/Input/t90.in|t90.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]], [[tests/v7/Input/t97.in|t97.in]]
+    - v8:  [[tests/v8/Input/t02.in|t02.in]], [[tests/v8/Input/t05.in|t05.in]], [[tests/v8/Input/t07.in|t07.in]], [[tests/v8/Input/t20.in|t20.in]]
+    - vdwxc:  [[tests/vdwxc/Input/t10.in|t10.in]]
 
 
 
@@ -2610,7 +2610,7 @@ probably something set wrong in the input file.
 *Only relevant if:* [[prtwf]] == 1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t36.in]]
+    - v7:  [[tests/v7/Input/t36.in|t36.in]]
 
 
 
@@ -2638,7 +2638,7 @@ greater than 3.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t79.in]]
+    - v5:  [[tests/v5/Input/t79.in|t79.in]]
 
 
 

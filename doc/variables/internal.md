@@ -350,7 +350,7 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 *Only relevant if:* [[nqpt]]==1  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v3:  [[tests/v3/Input/t85.in]], [[tests/v3/Input/t86.in]]
+    - v3:  [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]]
 
 
 
@@ -415,14 +415,14 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 *Default value:* [[AUTO_FROM_PSP]]  
 
 ??? note "Test list (click to open) (Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials.)"
-    - gpu:  [[tests/gpu/Input/t03.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]], [[tests/gpu/Input/t05.in]]
-    - mpiio:  [[tests/mpiio/Input/t99.in]]
-    - paral:  [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t91.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t92.in]], [[tests/paral/Input/t99.in]]
-    - tutorial:  [[tests/tutorial/Input/tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in]], [[tests/tutorial/Input/tudet_1.in]], [[tests/tutorial/Input/tudet_2.in]]
-    - v5:  [[tests/v5/Input/t08.in]], [[tests/v5/Input/t14.in]], [[tests/v5/Input/t15.in]], [[tests/v5/Input/t16.in]], [[tests/v5/Input/t19.in]], [[tests/v5/Input/t20.in]], [[tests/v5/Input/t33.in]], [[tests/v5/Input/t37.in]], [[tests/v5/Input/t38.in]], [[tests/v5/Input/t39.in]], [[tests/v5/Input/t40.in]]
-    - v6:  [[tests/v6/Input/t07.in]], [[tests/v6/Input/t45.in]], [[tests/v6/Input/t46.in]], [[tests/v6/Input/t47.in]]
-    - v7:  [[tests/v7/Input/t21.in]], [[tests/v7/Input/t22.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t27.in]], [[tests/v7/Input/t28.in]], [[tests/v7/Input/t29.in]], [[tests/v7/Input/t30.in]], [[tests/v7/Input/t31.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - v8:  [[tests/v8/Input/t01.in]]
+    - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
+    - tutorial:  [[tests/tutorial/Input/tdftu_2.in|tdftu_2.in]], [[tests/tutorial/Input/tdftu_3.in|tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in|tdftu_4.in]], [[tests/tutorial/Input/tudet_1.in|tudet_1.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
+    - v5:  [[tests/v5/Input/t08.in|t08.in]], [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t37.in|t37.in]], [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t39.in|t39.in]], [[tests/v5/Input/t40.in|t40.in]]
+    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t22.in|t22.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - v8:  [[tests/v8/Input/t01.in|t01.in]]
 
 
 

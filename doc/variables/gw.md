@@ -21,14 +21,14 @@ gw input variables to be used in the input file for the abinit executable.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Moderately used, [31/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -59,16 +59,16 @@ choice [[awtr]]=0.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [63/920] in all abinit tests, [11/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -115,7 +115,7 @@ symmetries and energy degenerations are preserved.
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -140,7 +140,7 @@ are specified with [[cd_imfrqs]].
 *Only relevant if:* [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
 
@@ -244,7 +244,7 @@ frequency sections.
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -289,7 +289,7 @@ the ** Mrgscr ** utility.
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -315,7 +315,7 @@ approximately linear up to this point. To be used in conjunction with
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -351,7 +351,7 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -411,15 +411,15 @@ merged with the ** mrgscr ** utility.
 *Only relevant if:* [[optdriver]]==3 or [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [87/920] in all abinit tests, [14/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -451,16 +451,16 @@ gap). In any case, a convergence study is worth.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [69/920] in all abinit tests, [11/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -492,16 +492,16 @@ upper limits.
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [93/920] in all abinit tests, [18/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -534,9 +534,9 @@ The size of this set of planewaves is [[npwwfn]].
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t19.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t19.in|t19.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
 
 
 
@@ -592,7 +592,7 @@ The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
 
@@ -624,13 +624,13 @@ description of the formula.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw2_2.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -659,9 +659,9 @@ frequency mesh along the real axis.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t37.in]]
-    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t37.in|t37.in]]
+    - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -694,10 +694,10 @@ frequency mesh along the real axis.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
-    - v4:  [[tests/v4/Input/t84.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -725,8 +725,8 @@ be used to make a user-defined grid.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -754,8 +754,8 @@ user-defined grid.
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -781,8 +781,8 @@ specified with [[gw_freqsp]].
 *Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -818,7 +818,7 @@ If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
 
@@ -850,7 +850,7 @@ frequency.
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t22.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
 
@@ -890,7 +890,7 @@ during Contour Deformation sigma calculations.
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t21.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
 
@@ -919,7 +919,7 @@ transformed grid.
 *Only relevant if:* [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t41.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t41.in|t41.in]]
 
 
 
@@ -947,7 +947,7 @@ invalid (negative or imaginary).
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
 
@@ -1020,7 +1020,7 @@ define the type of self-consistency.
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
 
@@ -1046,8 +1046,8 @@ effects) are evaluated for each direction specified by [[gw_qlwl]].
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - libxc:  [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -1132,7 +1132,7 @@ consistent iteration.
 *Only relevant if:* [[optdriver]]==4 and [[usepaw]]==1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v5:  [[tests/v5/Input/t66.in]]
+    - v5:  [[tests/v5/Input/t66.in|t66.in]]
 
 
 
@@ -1203,15 +1203,15 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Moderately used, [42/920] in all abinit tests, [5/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -1254,10 +1254,10 @@ Also
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
-    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
+    - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -1286,10 +1286,10 @@ methodology.
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcomp]]==1  
 
 ??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
-    - v7:  [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
+    - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -1317,7 +1317,7 @@ the methodology.
 *Only relevant if:* [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t43.in]]
+    - libxc:  [[tests/libxc/Input/t43.in|t43.in]]
 
 
 
@@ -1342,8 +1342,8 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 *Only relevant if:* [[optdriver]]=3 or 4 (Sigma calculations)  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t36.in]]
-    - v7:  [[tests/v7/Input/t16.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t36.in|t36.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
 
@@ -1380,8 +1380,8 @@ kernel.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1406,7 +1406,7 @@ to be corrected in the G0W0 scheme.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1443,7 +1443,7 @@ removed.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1466,7 +1466,7 @@ Not used yet.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1491,7 +1491,7 @@ Governs whether the exact exchange for the state to be corrected
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1524,7 +1524,7 @@ therefore keep the default value.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1550,8 +1550,8 @@ converged to a few 10s of meV for all molecules studied so far.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1587,7 +1587,7 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1615,7 +1615,7 @@ converged to a few 10s of meV for all molecules studied so far.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1650,7 +1650,7 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1680,7 +1680,7 @@ frequency is to be used) is fine and no frequencies need to be picked up.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1718,7 +1718,7 @@ optimal.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1746,7 +1746,7 @@ the default ([[gwls_n_proj_freq]]==0) is fine.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1771,7 +1771,7 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1797,7 +1797,7 @@ been tested for now and users should keep this value.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1821,8 +1821,8 @@ calculation. Users should keep its value at the default.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1867,8 +1867,8 @@ construction of the basis.
 *Only relevant if:* [[optdriver]]==66  
 
 ??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t15.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
 
@@ -1894,9 +1894,9 @@ criterion of 50meV on the eigenenergies.
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - v5:  [[tests/v5/Input/t65.in]], [[tests/v5/Input/t70.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t22.in]]
+    - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t70.in|t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
 
@@ -1929,7 +1929,7 @@ The first digit is only meaningful when performing sigma calculations.
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t19.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
 
 
 
@@ -1956,16 +1956,16 @@ The first digit is only meaningful when performing sigma calculations.
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [6/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t36.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t15.in|t15.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t36.in|t36.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -2015,12 +2015,12 @@ in the sphere is equal to the volume of the solid.
 *Only relevant if:* [[optdriver]] in [3,99]  
 
 ??? note "Test list (click to open) (Moderately used, [58/920] in all abinit tests, [6/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
 
 
 
@@ -2059,17 +2059,17 @@ optical properties.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -2100,10 +2100,10 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
 ??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
-    - v5:  [[tests/v5/Input/t67.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
+    - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
+    - v5:  [[tests/v5/Input/t67.in|t67.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
 
 
 
@@ -2127,8 +2127,8 @@ it mimics a second iteration self-consistent GW calculation.
 *Only relevant if:* [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
 
 ??? note "Test list (click to open) (Moderately used, [11/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t16.in]], [[tests/v67mbpt/Input/t29.in]], [[tests/v67mbpt/Input/t31.in]], [[tests/v67mbpt/Input/t32.in]], [[tests/v67mbpt/Input/t33.in]], [[tests/v67mbpt/Input/t34.in]], [[tests/v67mbpt/Input/t35.in]]
+    - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
 
@@ -2153,8 +2153,8 @@ Eq. (7) of Phys. Rev. B **37**, (1988)
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - etsf_io:  [[tests/etsf_io/Input/t02.in]], [[tests/etsf_io/Input/t04.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t71.in]], [[tests/v7/Input/t72.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]], [[tests/etsf_io/Input/t04.in|t04.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2198,13 +2198,13 @@ in order to generate a _KSS file.
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
 ??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2258,13 +2258,13 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
 ??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]]
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t37.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t37.in|t37.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2302,11 +2302,11 @@ any ppmodel.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t77.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw2_4.in]]
-    - v4:  [[tests/v4/Input/t84.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t15.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - paral:  [[tests/paral/Input/t77.in|t77.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t15.in|t15.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2330,17 +2330,17 @@ spectral function of the GW Green's function.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]]
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t87.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t65.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_3.in|tgw2_3.in]], [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -2365,9 +2365,9 @@ done. It is used to dimension [[kptgw]]
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]!=0  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
 
 
 
@@ -2401,7 +2401,7 @@ kept in mind, however, that the memory required grows fast with the value of
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
 
@@ -2426,7 +2426,7 @@ interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
 
 
 
@@ -2451,7 +2451,7 @@ energy is numerically estimated through linear interpolation.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t16.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
 
@@ -2514,7 +2514,7 @@ k-points.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v3:  [[tests/v3/Input/t87.in]]
+    - v3:  [[tests/v3/Input/t87.in|t87.in]]
 
 
 
@@ -2546,7 +2546,7 @@ stops.
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
 
@@ -2572,7 +2572,7 @@ employed to sample the self-energy along the imaginary axis.
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
 
 
 
@@ -2598,12 +2598,12 @@ sampled [[nomegasrd]] times.
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [9/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t71.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t72.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]]
-    - tutorial:  [[tests/tutorial/Input/tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]], [[tests/v3/Input/t87.in]]
-    - v5:  [[tests/v5/Input/t66.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t70.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t22.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]]
+    - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
+    - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
+    - v5:  [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t70.in|t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t22.in|t22.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
 
 
 
@@ -2662,11 +2662,11 @@ details.
 *Only relevant if:* [[optdriver]] in [3,4]  
 
 ??? note "Test list (click to open) (Moderately used, [19/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t67.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t70.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t01.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t12.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t70.in|t70.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t12.in|t12.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2706,7 +2706,7 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t16.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
 
@@ -2732,7 +2732,7 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 *Only relevant if:* [[optdriver]]==3 and [[nqptdm]]!=0  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v3:  [[tests/v3/Input/t87.in]]
+    - v3:  [[tests/v3/Input/t87.in|t87.in]]
 
 
 
@@ -2758,11 +2758,11 @@ cartesian coordinates!). For further explanation, see the input variable
 *Default value:* 0.0  
 
 ??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]], [[tests/libxc/Input/t42.in]], [[tests/libxc/Input/t43.in]]
-    - mpiio:  [[tests/mpiio/Input/t42.in]]
-    - paral:  [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t75.in]], [[tests/paral/Input/t77.in]]
-    - v5:  [[tests/v5/Input/t75.in]], [[tests/v5/Input/t76.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]], [[tests/v67mbpt/Input/t09.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t29.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
+    - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
+    - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]]
+    - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t09.in|t09.in]], [[tests/v67mbpt/Input/t15.in|t15.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t29.in|t29.in]]
 
 
 
@@ -2788,10 +2788,10 @@ the same volume inside the cutoff as the volume of the primitive cell.
 *Default value:* 1.0  
 
 ??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t73.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]], [[tests/paral/Input/t74.in]]
-    - v4:  [[tests/v4/Input/t88.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t36.in]]
-    - wannier90:  [[tests/wannier90/Input/t03.in]]
+    - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
+    - v4:  [[tests/v4/Input/t88.in|t88.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t36.in|t36.in]]
+    - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
 
 
@@ -2819,7 +2819,7 @@ wavefunctions with [[gwcalctyp]] &gt;= 20\.
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]==2  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
 
@@ -2845,9 +2845,9 @@ gaussian is given by [[spbroad]].
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in]]
-    - v5:  [[tests/v5/Input/t71.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t37.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - v5:  [[tests/v5/Input/t71.in|t71.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
 
 
 
@@ -2901,13 +2901,13 @@ Summarizing:
 *Only relevant if:* [[optdriver]]==3  
 
 ??? note "Test list (click to open) (Moderately used, [29/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_1.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v4:  [[tests/v4/Input/t84.in]], [[tests/v4/Input/t85.in]], [[tests/v4/Input/t86.in]], [[tests/v4/Input/t88.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t11.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t19.in]], [[tests/v67mbpt/Input/t21.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t36.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v4:  [[tests/v4/Input/t84.in|t84.in]], [[tests/v4/Input/t85.in|t85.in]], [[tests/v4/Input/t86.in|t86.in]], [[tests/v4/Input/t88.in|t88.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t19.in|t19.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t36.in|t36.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -2939,11 +2939,11 @@ between these two equivalent methods:
 *Only relevant if:* [[optdriver]]==4  
 
 ??? note "Test list (click to open) (Moderately used, [20/920] in all abinit tests, [1/116] in abinit tutorials.)"
-    - libxc:  [[tests/libxc/Input/t41.in]]
-    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in]]
-    - v5:  [[tests/v5/Input/t63.in]], [[tests/v5/Input/t64.in]], [[tests/v5/Input/t66.in]], [[tests/v5/Input/t68.in]], [[tests/v5/Input/t69.in]], [[tests/v5/Input/t70.in]], [[tests/v5/Input/t71.in]], [[tests/v5/Input/t72.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t02.in]], [[tests/v67mbpt/Input/t04.in]], [[tests/v67mbpt/Input/t05.in]], [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t22.in]], [[tests/v67mbpt/Input/t40.in]], [[tests/v67mbpt/Input/t41.in]]
-    - v8:  [[tests/v8/Input/t44.in]]
+    - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
+    - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
+    - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t22.in|t22.in]], [[tests/v67mbpt/Input/t40.in|t40.in]], [[tests/v67mbpt/Input/t41.in|t41.in]]
+    - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
 
 
@@ -2980,7 +2980,7 @@ accidental degeneracy.
 *Only relevant if:* [[nspinor]] == 1  
 
 ??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]], [[tests/v7/Input/t79.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -3028,7 +3028,7 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 *Comment:* That is, the default includes no band.  
 
 ??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t23.in]], [[tests/v7/Input/t24.in]], [[tests/v7/Input/t25.in]], [[tests/v7/Input/t78.in]]
+    - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]]
 
 
 
@@ -3052,7 +3052,7 @@ polarisability.
 *Comment:* That is, the energy window is empty by default.  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v7:  [[tests/v7/Input/t79.in]]
+    - v7:  [[tests/v7/Input/t79.in|t79.in]]
 
 
 
@@ -3080,7 +3080,7 @@ numbers) with respect to the position of the Fermi level.
 *Only relevant if:* [[icutcoul]] in [1,2]  
 
 ??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
-    - v67mbpt:  [[tests/v67mbpt/Input/t03.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
 
@@ -3141,12 +3141,12 @@ defines ....
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
 ??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials.)"
-    - paral:  [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]], [[tests/paral/Input/t76.in]]
-    - tutorial:  [[tests/tutorial/Input/tbs_2.in]], [[tests/tutorial/Input/tbs_3.in]], [[tests/tutorial/Input/tbs_4.in]]
-    - v3:  [[tests/v3/Input/t30.in]], [[tests/v3/Input/t31.in]]
-    - v5:  [[tests/v5/Input/t64.in]], [[tests/v5/Input/t67.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t06.in]], [[tests/v67mbpt/Input/t07.in]], [[tests/v67mbpt/Input/t08.in]], [[tests/v67mbpt/Input/t14.in]], [[tests/v67mbpt/Input/t15.in]], [[tests/v67mbpt/Input/t50.in]], [[tests/v67mbpt/Input/t51.in]]
-    - v7:  [[tests/v7/Input/t16.in]]
+    - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
+    - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
+    - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
+    - v5:  [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t67.in|t67.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t15.in|t15.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
+    - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
 

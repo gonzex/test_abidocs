@@ -292,7 +292,7 @@ or
 
 The use of the atomic units is mandatory for other dimensioned input
 variables, like the tolerance on forces ([[toldff]]), parameters that define
-an 'object' ([[objaax|objaax, objbax]], [[objatr|objatr, objbtr]]), and the
+an 'object' ([[objaax]], [[objaax]], [[objatr]], [[objbtr]]), and the
 initial velocity of atoms ([[vel]] \- if needed).
 
 The initial atomic positions can be input in Bohr or Angstrom through

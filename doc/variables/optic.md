@@ -20,10 +20,10 @@ optic input variables to be used in the input file for the optic executable.
 *Default value:* 1.d-3 Ha  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -56,10 +56,10 @@ the spectrum.
 *Comment:* no default  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -88,10 +88,10 @@ use as string with the filename: ddkfile_X, where X is the file number.
 *Default value:* 1.d-3 Ha  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -116,10 +116,10 @@ grid. In order to go to higher frequency, increase the maximum.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -144,10 +144,10 @@ z respectively. For example 11 would be xx and 32 would mean zy.
 *Default value:* 1 Ha  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -172,10 +172,10 @@ grid. In order to go to higher frequency, increase the maximum.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -200,10 +200,10 @@ z respectively. For example 111 would be xxx and 321 would mean zyx.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -229,10 +229,10 @@ Note that the directions are along the Cartesian axis.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -259,10 +259,10 @@ Note that the directions are along the Cartesian axis.
 *Comment:* in Ha  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -292,10 +292,10 @@ opening of the gap due to the GW correction can be used as scissor shift.
 *Default value:* 1.d-3 Ha  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 
@@ -319,10 +319,10 @@ from the sum.
 *Comment:* no default  
 
 ??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials.)"
-    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in]]
-    - v4:  [[tests/v4/Input/t57.in]]
-    - v67mbpt:  [[tests/v67mbpt/Input/t53.in]]
-    - v7:  [[tests/v7/Input/t42.in]], [[tests/v7/Input/t48.in]]
+    - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
+    - v4:  [[tests/v4/Input/t57.in|t57.in]]
+    - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
+    - v7:  [[tests/v7/Input/t42.in|t42.in]], [[tests/v7/Input/t48.in|t48.in]]
 
 
 

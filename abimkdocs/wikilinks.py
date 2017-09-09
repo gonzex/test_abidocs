@@ -69,27 +69,19 @@ class WikiLinks(Pattern):
         self.config = config
 
     def handleMatch(self, m):
-        token = m.group(2).strip()
-        if token:
-            #base_url, end_url, html_class = self._getMeta()
-            #url = self.config['build_url'](token, base_url, end_url)
-            page_rpath = "??"
-            if hasattr(self.md, 'Meta') and "rpath" in self.md.Meta:
-                page_rpath = self.md.Meta["rpath"][0]
-
-            try:
-                a = website.get_wikilink(token, page_rpath)
-                if a.get("href") == "FAKE_URL":
-                    print("Invalid wikilink `%s` in page `%s`" % (token, page_rpath))
-                return a
-            except Exception as exc:
-                print("Exception while trying to handle wikilink `%s` in page `%s`" % (token, page_rpath))
-                print(exc)
-                return ""
-                raise
-        else:
-            print("Warning: empty wikilink in page `%s`", (m.group(0), page_rpath))
-            return ''
+        token = m.group(2)
+        #base_url, end_url, html_class = self._getMeta()
+        #url = self.config['build_url'](token, base_url, end_url)
+        #page_rpath = "??"
+        #if hasattr(self.md, 'Meta') and "rpath" in self.md.Meta:
+        #    page_rpath = self.md.Meta["rpath"][0]
+        page_rpath = self.md.Meta["rpath"][0]
+        try:
+            return website.get_wikilink(token, page_rpath)
+        except Exception as exc:
+            website.warn("Exception `%s:%s`\nwhile treating wikilink token: `%s` in `%s`" %
+                (exc.__class__, str(exc), token, page_rpath))
+            return ""
 
     def _getMeta(self):
         """ Return meta data or config data. """

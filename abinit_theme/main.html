@@ -63,9 +63,8 @@
     </script>
     -->
 
-    {% if page.meta and page.meta.plotly == true %}
-        <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js">
-        </script> 
+    {% if page.meta and page.meta.plotly %}
+        <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
     {% endif %}
 
 {% endblock %}

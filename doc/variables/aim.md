@@ -20,9 +20,9 @@ aim input variables to be used in the input file for the aim executable.
 *Default value:* 1  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -44,8 +44,8 @@ Index of the investigated atom.
 *Default value:* 1.0  
 
 ??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -110,9 +110,9 @@ See the input variable [[ratmin@aim]].
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -209,7 +209,7 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
 *Default value:* 1.d-2  
 
 ??? note "Test list (click to open) (Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v4:  [[tests/v4/Input/t33.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]]
 
 
 
@@ -257,9 +257,9 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -303,9 +303,9 @@ The first step for following the gradient path.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -331,9 +331,9 @@ calculated Bader surface.
 *Default value:* 100  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -356,9 +356,9 @@ sensitive).
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -383,7 +383,7 @@ Drives the integration of the charge of the Bader atom.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -436,8 +436,8 @@ the core density (see [[aim:dltyp]]).
 *Default value:* 1.d-12  
 
 ??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -466,8 +466,8 @@ searching procedure continues with the next seed.
 *Default value:* 1.d-5  
 
 ??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -490,8 +490,8 @@ Determines the criterion for deciding that a CP has been found. See
 *Default value:* 1.d-10  
 
 ??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -514,8 +514,8 @@ for more details.
 *Default value:* 1.d-5  
 
 ??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -538,9 +538,9 @@ Determines the criterion for deciding that a CP has been found. See
 *Default value:* 10.0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -567,9 +567,9 @@ the desired atoms.
 *Default value:* 5.0  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -617,9 +617,9 @@ governed by [[aim:denout]] and [[aim:lapout]].
 *Default value:* 48  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -646,8 +646,8 @@ pi/2 (for symmetry reasons), the recommended value is 20.
 *Default value:* 3  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -683,8 +683,8 @@ each primitive direction. This supercell is build as follows :
 *Default value:* 3  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -720,8 +720,8 @@ each primitive direction. This supercell is build as follows :
 *Default value:* 3  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -757,9 +757,9 @@ each primitive direction. This supercell is build as follows :
 *Default value:* 32  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -785,8 +785,8 @@ is pi/2 (for symmetry reasons), the recommended value is 20.
 *Default value:* 2.0  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 
@@ -833,8 +833,8 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Default value:* 0.05  
 
 ??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -856,8 +856,8 @@ The length of the first step in the search of the exact Bader radius.
 *Default value:* 1.0  
 
 ??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -955,9 +955,9 @@ SCALing of the cartesian coordinates.
 *Default value:* 0  
 
 ??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
-    - v6:  [[tests/v6/Input/t19.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
+    - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
 
@@ -982,8 +982,8 @@ Drive the computation of the full Bader surface.
 *Default value:* pi  
 
 ??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials.)"
-    - v3:  [[tests/v3/Input/t57.in]]
-    - v4:  [[tests/v4/Input/t31.in]], [[tests/v4/Input/t33.in]], [[tests/v4/Input/t34.in]]
+    - v3:  [[tests/v3/Input/t57.in|t57.in]]
+    - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
 
 

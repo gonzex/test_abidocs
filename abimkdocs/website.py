@@ -226,12 +226,14 @@ class Website(object):
     #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
     #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
     WIKILINK_RE = r'\[\[([^\[]+)\]\]'
+    #WIKILINK_RE = r'(?![~`])\[\[([^\[]+)\]\]'
 
     def __init__(self, root, verbose=0):
         start = time.time()
         self.root = os.path.abspath(root)
         self.verbose = verbose
         self.md_generated = []
+        self.pdf_paths = []
         self.warnings = []
 
         # Read mkdocs configuration file.
@@ -353,7 +355,7 @@ You can change these parameters at compile or run time usually.
                 mdf.write("## %s  \n" % pname)
                 mdf.write("%s\n * * *\n" % info)
 
-	# Build markdown pages for the different sets of variables..
+        # Build markdown pages for the different sets of variables.
         for code, vd in self.variables_code.items():
             cprint("Generating markdown files with input variables of code: `%s`..." % vd.executable, "green")
             for varset in vd.all_varset:
@@ -563,6 +565,16 @@ The bibtex file is available [here](../abiref.bib).
             mdf.write(html2text(comp.purpose))
             mdf.write(html2text(comp.introduction))
 
+        with self.new_mdfile("theory", "documents.md") as mdf:
+            mdf.write("# PDF files  \n")
+            pdf_paths = sorted(self.pdf_paths, key=lambda p: os.path.basename(p))
+            for pdf_path in pdf_paths:
+                mdf.write("## %s  \n" % os.path.basename(pdf_path))
+                rpdf = "/" + os.path.relpath(pdf_path, self.root)
+                src = os.path.relpath(rpdf, mdf.rpath)
+                html = '<embed src="{src}" type="application/pdf" width="100%" height="480px"/>\n\n'.format(src=src)
+                mdf.write(html)
+
         #topic2pages = defaultdict(list)
         #for page in self.md_pages:
         #    for topic in page.topics:
@@ -593,6 +605,8 @@ The bibtex file is available [here](../abiref.bib).
                     self.md_pages.append(MarkdownPage(path, self))
                 elif f.endswith(".html"):
                     self.html_pages.append(HtmlPage(path, self))
+                elif f.endswith(".pdf"):
+                    self.pdf_paths.append(path)
 
         self.find_unreferenced_mds()
         cprint("Completed in %.2f [s]" % (time.time() - start), "green")
@@ -702,6 +716,14 @@ The bibtex file is available [here](../abiref.bib).
         if not token:
             self.warn("Empty wikilink in %s" % page_rpath)
             return ""
+
+        #if token.startswith("~~") and token.endswith("~~"):
+        #    token = token[2:-2]
+        #    try:
+        #        a = self.get_wikilink(token, page_rpath)
+        #        return a.text
+        #    except:
+        #        return token
 
         html_classes = ["wikilink"]
         a = etree.Element("a")
@@ -815,7 +837,6 @@ The bibtex file is available [here](../abiref.bib).
                 else:
                     self.warn("Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath))
                     url, text = "FAKE_URL", "FAKE_URL"
-                    #raise ValueError(msg)
 
         else:
             # namespace is defined
@@ -861,7 +882,8 @@ The bibtex file is available [here](../abiref.bib).
                         text = "[%s]" % name if text is None else text
                         html_classes.append("citation-link")
                     except Exception as exc:
-                        self.warn("token: `%s` in `%s`\n%s" % (token, page_rpath, str(exc)))
+                        self.warn("Exception `%s:%s`\nwhile treating wikilink token: `%s` in `%s`" %
+                                (exc.__class__, str(exc), token, page_rpath))
                         url, text = "FAKE_URL", "FAKE_URL"
 
             elif namespace == "theorydoc":
@@ -879,9 +901,10 @@ The bibtex file is available [here](../abiref.bib).
                     url = "/variables/%s" % name
                 if text is None: text = "%s varset" % name
 
-            #elif namespace == "ac":  TODO
-            #   url = "/build/config-examples/%s" % name
-            #   if text is None: text = name
+            elif namespace == "ac":
+                # Handle [[ac:abiref_gnu_5.3_debug.ac]]
+                url = "/build/config-examples/%s" % name
+                if text is None: text = name
 
             elif namespace == "test":
                 # Handle [[test:libxc_41]]
@@ -1026,7 +1049,7 @@ The bibtex file is available [here](../abiref.bib).
     def editor_panel(self, path, title=None):
         title = path if title is None else str(title)
         path = os.path.join(self.root, path)
-        with io.open(os.path.join(path), "rt", encoding="utf-8") as fh:
+        with io.open(path, "rt", encoding="utf-8") as fh:
             text = escape(fh.read(), tag="pre")
 
         return """\
@@ -1105,7 +1128,7 @@ def add_popover(element, title=None, content=None, html=False):
     element.set("data-placement", "auto right")
     element.set("data-trigger", "hover")
     if content: element.set("data-content", tos(content))
-    if html: a.set("data-html", "true")
+    if html: element.set("data-html", "true")
 
 
 class MarkdownPage(Page):
@@ -1127,11 +1150,12 @@ class MarkdownPage(Page):
                 print(exc)
                 continue
 
-            link_class = link.get("class", "")
-            if "citation-link" in link_class:
-                self.citations.add(token)  # TODO Should be name
-            elif "topic-link" in link_class:
-                self.topics.add(token) # TODO: Should be name
+            if hasattr(link, "get"):
+                link_class = link.get("class", "")
+                if "citation-link" in link_class:
+                    self.citations.add(token)  # TODO Should be name
+                elif "topic-link" in link_class:
+                    self.topics.add(token) # TODO: Should be name
 
         # Add rpath to meta (useful to give the origin of errors in markdown extensions)
         lines = string.split("\n")
@@ -1169,7 +1193,7 @@ class MarkdownPage(Page):
 
 
 class HtmlPage(Page):
-    def __init__(self, path, websiste):
+    def __init__(self, path, website):
         super(HtmlPage, self).__init__(path, website)
 
 
