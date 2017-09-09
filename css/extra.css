@@ -1,60 +1,33 @@
-figure {
-/*
-width: 400px;
-height: 250px;
-line-height: 250px;
+/* wikilink style
+a.wikilink:link {
+    text-decoration: none;
+}
+
+a.wikilink:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a.wikilink:hover {
+    text-decoration: underline;
+}
+
+a.wikilink:active {
+    text-decoration: underline;
+}
 */
-text-align: center;
+
+figure {
+    text-align: center;
 }
 
 img {
-    /* vertical-align: middle; */
     display: block;
     margin: auto;
 }
 
-/* Links 
-a.citation-link {
-   font-style: italic;
-   color: red;
-}
-*/
-
-/*
-body { 
-    color: #333;
-}
-
-a { 
-    color: #893e3e;  
-    text-decoration: none;
-}
-
-a:hover { 
-    color: #F18F34;
-}
-
-a:visited { 
-    color: #a14409;
-}
-
-a {
-    font-weight: 600;
-    color:  #e67e22 ;
-    text-decoration: none;
-}
-
-a:hover {
- color: #E33A37;
- font-weight: 600;
- text-decoration: none;
-}
-*/
-
-
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */
-
 .editor { 
     height: 480px; 
     /*
@@ -113,33 +86,6 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
 }
  */
 
-
-/* Popover
-.popover {
-    border: 2px dotted red;
-} 
-*/
-
-/* Popover Header 
-.popover-title {
-    //background-color: #73AD21;
-    //color: #FFFFFF; 
-    //font-size: 28px;
-    font-size: 1vw;
-    text-align:center;
-}
-*/
-
-/* Popover Body 
-.popover-content {
-    font-size: 1vw;
-    //background-color: coral;
-    //color: #FFFFFF;
-    //padding: 25px;
-}
-*/
-
-
 /* https://facelessuser.github.io/pymdown-extensions/extensions/details/ */
 details {
   display: block;
@@ -178,37 +124,32 @@ details.no-details:not([open]) summary {
   display: block;
 }
 
-/* 
- * This is for  https://bootsnipp.com/snippets/featured/inbox-by-gmail
-body {padding:10px;}
- * */
-
+/* CSS for https://bootsnipp.com/snippets/featured/inbox-by-gmail */
 .fab {
-  cursor: pointer;
+    cursor: pointer;
 }
 .fab-backdrop {
-  color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
 }
 .fab-primary, .fab-secondary {
-  transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
 }
 .fab.active .fab-primary {
-  opacity: 0;
-  transform: rotate(225deg);
+    opacity: 0;
+    transform: rotate(225deg);
 }
 .fab-secondary {
-  opacity: 0;
-  transform: rotate(-225deg);
+    opacity: 0;
+    transform: rotate(-225deg);
 }
 .fab.active .fab-secondary {
-  opacity: 1;
-  transform: rotate(0);
-  margin-top: -2px;
+    opacity: 1;
+    transform: rotate(0);
+    margin-top: -2px;
 }
 
 #inbox .show-on-hover:hover > ul.dropdown-menu {
     display: block;    
-    
 }
 #inbox .show-on-hover {
     /* position: absolute; */
@@ -224,57 +165,59 @@ body {padding:10px;}
     box-shadow: 0px 3px 7px 0px rgba(202, 124, 124, 0.72);
 }
 #inbox .dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
-top: auto;
-bottom: 100%;
-margin-bottom: 1px;
-margin-bottom: -5px;
-padding-bottom: 30px;
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+    margin-bottom: -5px;
+    padding-bottom: 30px;
 }
 #inbox .dropdown-menu-right {
-right: 0 !Important;
-left: auto !Important;
+    right: 0 !Important;
+    left: auto !Important;
 }
 #inbox .dropdown-menu {
-position: absolute;
-top: 100%;
-left: 0;
-z-index: 1000;
-display: none;
-float: left;
-min-width: 50px;
-padding: 5px 0;
-margin: 2px 0 0;
-font-size: 14px;
-text-align: center;
-list-style: none;
-background-color: rgba(255, 255, 255, 0) !Important;
--webkit-background-clip: padding-box;
-background-clip: padding-box;
-border: none;
-border-radius: 0px;
--webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0) !Important;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0) !Important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 50px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0) !Important;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0) !Important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0) !Important;
 }
+
 #inbox .fa-iox{
     font-size: 22px;
 }
+
 #inbox .dropdown-menu > li > a {
-display: block;
-padding: 0;
-padding-top: 4px;
-margin-top: 20px;
-clear: both;
-font-weight: normal;
-line-height: 1.42857143;
-color: #333;
-background: #fff;
-white-space: nowrap;
-width: 40px;
-height: 40px;
-border: solid 1px #ccc;
-border-radius: 50px;
-font-size: 21px;
-box-shadow: 0px 3px 7px 0px rgba(203, 203, 203, 0.72);
+    display: block;
+    padding: 0;
+    padding-top: 4px;
+    margin-top: 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    background: #fff;
+    white-space: nowrap;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #ccc;
+    border-radius: 50px;
+    font-size: 21px;
+    box-shadow: 0px 3px 7px 0px rgba(203, 203, 203, 0.72);
 }
 
 #inbox .dropdown-menu > li:first-child>a {
@@ -283,6 +226,18 @@ box-shadow: 0px 3px 7px 0px rgba(203, 203, 203, 0.72);
 }
 #inbox .dropdown-menu > li:last-child>a {
     background: #D3A516;
+    color: #fff;
+}
+#inbox .dropdown-menu > li:nth-child(6)>a {
+    background: #3C80F6;
+    color: #fff;
+}
+#inbox .dropdown-menu > li:nth-child(5)>a {
+    background: #3C80F6;
+    color: #fff;
+}
+#inbox .dropdown-menu > li:nth-child(4)>a {
+    background: #3C80F6;
     color: #fff;
 }
 #inbox .dropdown-menu > li:nth-child(3)>a {
