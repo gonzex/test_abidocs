@@ -572,7 +572,7 @@ The bibtex file is available [here](../abiref.bib).
                 mdf.write("## %s  \n" % os.path.basename(pdf_path))
                 rpdf = "/" + os.path.relpath(pdf_path, self.root)
                 src = os.path.relpath(rpdf, mdf.rpath)
-                html = '<embed src="{src}" type="application/pdf" width="100%" height="480px"/>\n\n'.format(src=src)
+                html = '<embed src="{src}" type="application/pdf" width="100%" height="480px">\n\n'.format(src=src)
                 mdf.write(html)
 
         #topic2pages = defaultdict(list)

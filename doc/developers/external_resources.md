@@ -33,3 +33,21 @@ $(function() {
     }); 
 });
 </script>
+
+<blockquote class="embedly-card" data-card-controls="0"><h4><a href="http://pythonhosted.org/abipy/">Getting Started - abipy 0.2.0 documentation</a></h4><p>abipy is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="http://jp-minerals.org/vesta/en/">VESTA</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="https://www.materialsproject.org/">Materials Project</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="http://www.aflowlib.org/">Card</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="http://www.aflowlib.org/CrystalDatabase/">Card</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="http://schmeling.ac.rwth-aachen.de/cohp/index.php?menuID=6">COHP - Crystal Orbital Hamilton Population * Download</a>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
