@@ -251,3 +251,8 @@ details.no-details:not([open]) summary {
 #inbox .fa-iosm{
     margin-top: 7px;
 }
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -63,8 +63,26 @@
     </script>
     -->
 
+    <!-- Plotly support -->
     {% if page.meta and page.meta.plotly %}
         <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    {% endif %}
+
+    <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
+    {% if page.meta and page.meta.light_gallery %}
+
+        <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom" />
+        -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" 
+            integrity="sha256-6hdzBLI5YrM1ltRrsPdV0y2CsqGgLYCeNlLFFQoh7MY=" crossorigin="anonymous" />
+
+        <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/js/lightgallery-all.min.js" 
+            integrity="sha256-n9ZE2vNe6Iv4S6dUXnzuvvt2yLWOZPJqD787TC7S4W4=" crossorigin="anonymous"></script>
     {% endif %}
 
 {% endblock %}
