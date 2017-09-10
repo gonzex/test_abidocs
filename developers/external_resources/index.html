@@ -10,7 +10,7 @@
         <meta name="description" content="Abinit documentation">
       
       
-        <link rel="canonical" href="http://www.abinit.org/user-guide/help_what_ABINIT_does/">
+        <link rel="canonical" href="http://www.abinit.org/developers/external_resources/">
       
       
         <meta name="author" content="The Abinit group">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Overview - abinit</title>
+        <title>External Resources - abinit</title>
       
     
     
@@ -96,6 +96,20 @@
     <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
     
 
+        <!--
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom" />
+        -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" 
+            integrity="sha256-6hdzBLI5YrM1ltRrsPdV0y2CsqGgLYCeNlLFFQoh7MY=" crossorigin="anonymous" />
+
+        <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/js/lightgallery-all.min.js" 
+            integrity="sha256-n9ZE2vNe6Iv4S6dUXnzuvvt2yLWOZPJqD787TC7S4W4=" crossorigin="anonymous"></script>
+    
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -155,11 +169,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  User Guide
+                  Developers
                 </span>
               
             
-            Overview
+            External Resources
           
         </span>
       </div>
@@ -234,7 +248,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../.." title="User Guide" class="md-tabs__link md-tabs__link--active">
+        <a href="../.." title="User Guide" class="md-tabs__link">
           User Guide
         </a>
       
@@ -299,7 +313,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+        <a href="../abimkdocs/" title="Developers" class="md-tabs__link md-tabs__link--active">
           Developers
         </a>
       
@@ -369,12 +383,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       User Guide
@@ -414,92 +426,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Overview
-      </label>
-    
-    <a href="./" title="Overview" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../user-guide/help_what_ABINIT_does/" title="Overview" class="md-nav__link">
       Overview
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-introduction" title="1. Introduction" class="md-nav__link">
-    1. Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-ground-state-static-calculations" title="**2. Ground state static calculations. **" class="md-nav__link">
-    **2. Ground state static calculations. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-molecular-dynamics-geometry-optimization-transition-paths" title="3. Molecular dynamics, geometry optimization, transition paths." class="md-nav__link">
-    3. Molecular dynamics, geometry optimization, transition paths.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-correlated-electrons" title="4. Correlated electrons." class="md-nav__link">
-    4. Correlated electrons.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5response-functions" title="** 5.Response functions. **" class="md-nav__link">
-    ** 5.Response functions. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6excited-state-calculations" title="** 6.Excited state calculations. **" class="md-nav__link">
-    ** 6.Excited state calculations. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-practical-settings" title="** 7. Practical settings.**" class="md-nav__link">
-    ** 7. Practical settings.**
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#846-others" title="** 8. Others.**" class="md-nav__link">
-    ** 8. Others.**
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -509,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../abinit/" title="Abinit" class="md-nav__link">
+    <a href="../../user-guide/abinit/" title="Abinit" class="md-nav__link">
       Abinit
     </a>
   </li>
@@ -521,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../aim/" title="Aim" class="md-nav__link">
+    <a href="../../user-guide/aim/" title="Aim" class="md-nav__link">
       Aim
     </a>
   </li>
@@ -533,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../anaddb/" title="Anaddb" class="md-nav__link">
+    <a href="../../user-guide/anaddb/" title="Anaddb" class="md-nav__link">
       Anaddb
     </a>
   </li>
@@ -545,7 +476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cut3d/" title="Cut3d" class="md-nav__link">
+    <a href="../../user-guide/cut3d/" title="Cut3d" class="md-nav__link">
       Cut3d
     </a>
   </li>
@@ -557,7 +488,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../features/" title="Features" class="md-nav__link">
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
       Features
     </a>
   </li>
@@ -569,7 +500,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../fold2bloch/" title="Fold2Bloch" class="md-nav__link">
+    <a href="../../user-guide/fold2bloch/" title="Fold2Bloch" class="md-nav__link">
       Fold2Bloch
     </a>
   </li>
@@ -581,7 +512,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mrgddb/" title="Mrgddb" class="md-nav__link">
+    <a href="../../user-guide/mrgddb/" title="Mrgddb" class="md-nav__link">
       Mrgddb
     </a>
   </li>
@@ -593,7 +524,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mrgscr/" title="Mrgscr" class="md-nav__link">
+    <a href="../../user-guide/mrgscr/" title="Mrgscr" class="md-nav__link">
       Mrgscr
     </a>
   </li>
@@ -605,7 +536,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../new_user/" title="NewUser" class="md-nav__link">
+    <a href="../../user-guide/new_user/" title="NewUser" class="md-nav__link">
       NewUser
     </a>
   </li>
@@ -617,7 +548,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../optic/" title="Optic" class="md-nav__link">
+    <a href="../../user-guide/optic/" title="Optic" class="md-nav__link">
       Optic
     </a>
   </li>
@@ -629,7 +560,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../respfn/" title="Respfn" class="md-nav__link">
+    <a href="../../user-guide/respfn/" title="Respfn" class="md-nav__link">
       Respfn
     </a>
   </li>
@@ -2720,10 +2651,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Developers
@@ -2741,7 +2674,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/abimkdocs/" title="Abimkdocs" class="md-nav__link">
+    <a href="../abimkdocs/" title="Abimkdocs" class="md-nav__link">
       Abimkdocs
     </a>
   </li>
@@ -2753,7 +2686,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/markdown/" title="Markdown" class="md-nav__link">
+    <a href="../markdown/" title="Markdown" class="md-nav__link">
       Markdown
     </a>
   </li>
@@ -2765,7 +2698,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/testsuite/" title="Test Suite" class="md-nav__link">
+    <a href="../testsuite/" title="Test Suite" class="md-nav__link">
       Test Suite
     </a>
   </li>
@@ -2777,7 +2710,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../developers/codestats/" title="Code stats" class="md-nav__link">
+    <a href="../codestats/" title="Code stats" class="md-nav__link">
       Code stats
     </a>
   </li>
@@ -2787,11 +2720,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../developers/external_resources/" title="External Resources" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="External Resources" class="md-nav__link md-nav__link--active">
       External Resources
     </a>
+    
   </li>
 
         
@@ -2875,69 +2815,6 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#146-introduction" title="1. Introduction" class="md-nav__link">
-    1. Introduction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#246-ground-state-static-calculations" title="**2. Ground state static calculations. **" class="md-nav__link">
-    **2. Ground state static calculations. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#346-molecular-dynamics-geometry-optimization-transition-paths" title="3. Molecular dynamics, geometry optimization, transition paths." class="md-nav__link">
-    3. Molecular dynamics, geometry optimization, transition paths.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#446-correlated-electrons" title="4. Correlated electrons." class="md-nav__link">
-    4. Correlated electrons.
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5response-functions" title="** 5.Response functions. **" class="md-nav__link">
-    ** 5.Response functions. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6excited-state-calculations" title="** 6.Excited state calculations. **" class="md-nav__link">
-    ** 6.Excited state calculations. **
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#746-practical-settings" title="** 7. Practical settings.**" class="md-nav__link">
-    ** 7. Practical settings.**
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#846-others" title="** 8. Others.**" class="md-nav__link">
-    ** 8. Others.**
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2950,124 +2827,38 @@
 
                 
                 
-                  <h1>Overview</h1>
+                  <h1>External Resources</h1>
                 
-                <p>This file gives for the beginner an overview of the features implemented in
-the ABINIT package, grouped in different topics, also answering the question
-&ldquo;How to &hellip; with ABINIT ?&rdquo;</p>
-<div class="toc">
-<ul>
-<li><a href="#146-introduction">1. Introduction</a></li>
-<li><a href="#246-ground-state-static-calculations">**2. Ground state static calculations. **</a></li>
-<li><a href="#346-molecular-dynamics-geometry-optimization-transition-paths">3. Molecular dynamics, geometry optimization, transition paths.</a></li>
-<li><a href="#446-correlated-electrons">4. Correlated electrons.</a></li>
-<li><a href="#5response-functions">** 5.Response functions. **</a></li>
-<li><a href="#6excited-state-calculations">** 6.Excited state calculations. **</a></li>
-<li><a href="#746-practical-settings">** 7. Practical settings.**</a></li>
-<li><a href="#846-others">** 8. Others.**</a></li>
-</ul>
+                <div id="video-gallery" class="gallery">
+  <a href="https://www.youtube.com/watch?v=DppLQ-KQA68">
+    <img src="//img.youtube.com/vi/DppLQ-KQA68/default.jpg">
+  </a>
+  <a href="https://youtu.be/EfJcYi1MNBg">
+    <img src="//img.youtube.com/vi/EfJcYi1MNBg/default.jpg">
+  </a>
+  <a href="https://www.youtube.com/watch?v=gcbfb_Mteo4">
+    <img src="//img.youtube.com/vi/gcbfb_Mteo4/default.jpg">
+  </a>
+  <a href="https://youtu.be/UNlRHw9Avvw">
+    <img src="//img.youtube.com/vi/UNlRHw9Avvw/default.jpg">
+  </a>
+  <a href="https://youtu.be/j9z4AJIx40M">
+    <img src="//img.youtube.com/vi/j9z4AJIx40M/default.jpg">
+  </a>
 </div>
-<hr />
-<h3 id="146-introduction"><strong>1. Introduction</strong><a class="headerlink" href="#146-introduction" title="Permanent link">&para;</a></h3>
-<p>ABINIT is a package whose main program allows to find the total energy, charge
-density and electronic structure of systems made of electrons and nuclei
-(molecules and periodic solids) within Density Functional Theory, using
-pseudopotentials and a planewave basis, or augmented plane waves, or even
-wavelets. Some possibilities of ABINIT go beyond Density Functional Theory,
-i.e. the many-body perturbation theory (GW approximation) and Time-Dependent
-Density Functional Theory. ABINIT also includes options to optimize the
-geometry according to the DFT forces and stresses, or to perform molecular
-dynamics simulation using these forces, or to generate dynamical (vibrations -
-phonons) properties, dielectric properties, mechanical properties,
-thermodynamical properties, etc . In addition to the main ABINIT code,
-different utility programs are provided.</p>
-<p>The simplest sort of job computes an electronic structure for a fixed set of
-atomic positions within a periodic unit cell. By electronic structure , we
-mean a set of eigenvalues and wavefunctions which achieve the lowest (DFT)
-energy possible for that basis set (that number of planewaves). The code takes
-the description of the unit cell and atomic positions and assembles a crystal
-potential from the input atomic pseudopotentials, then uses either an input
-wavefunction or simple gaussians to generate the initial charge density and
-screening potential, then uses a self-consistent algorithm to iteratively
-adjust the planewave coefficients until a sufficient convergence is reached in
-the energy.</p>
-<p>Analytic derivatives of the energy with respect to atomic positions and unit
-cell primitive translations yield atomic forces and the stress tensor. The
-code can optionally adjust atomic positions to move the forces toward zero and
-adjust unit cell parameters to move toward zero stress. It can performs
-molecular dynamics. It can also be used to find responses to atomic
-displacements and homogeneous electric field, so that the full phonon band
-structure can be constructed&hellip;</p>
-<hr />
-<h3 id="246-ground-state-static-calculations">**2. Ground state static calculations. **<a class="headerlink" href="#246-ground-state-static-calculations" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../../topics/generated_files/topic_GSintroduction.html">1.</a> Building an input file. </li>
-<li><a href="../../../topics/generated_files/topic_GSgeneral.html">2.</a> General settings. </li>
-<li><a href="../../../topics/generated_files/topic_crystal.html">3.</a> Crystalline structure and symmetries. </li>
-<li><a href="../../../topics/generated_files/topic_k-points.html">4.</a> k-points. </li>
-<li><a href="../../../topics/generated_files/topic_xc.html">5.</a> Exchange and correlation functionals. </li>
-<li><a href="../../../topics/generated_files/topic_convergency.html">6.</a> Convergency settings. </li>
-<li><a href="../../../topics/generated_files/topic_PAW.html">7.</a> PAW special settings. </li>
-<li><a href="../../../topics/generated_files/topic_spinpolarisation.html">8.</a> Spin-polarised systems and spin-orbit coupling </li>
-<li><a href="../../../topics/generated_files/topic_otherGS.html">9.</a> Other settings. </li>
-</ul>
-<hr />
-<h3 id="346-molecular-dynamics-geometry-optimization-transition-paths"><strong>3. Molecular dynamics, geometry optimization, transition paths.</strong><a class="headerlink" href="#346-molecular-dynamics-geometry-optimization-transition-paths" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../../topics/generated_files/topic_MolecularDynamics.html">1.</a> Molecular dynamics calculations. </li>
-<li><a href="../../../topics/generated_files/topic_GeoOpt.html">2.</a> Geometry optimization calculations. </li>
-<li><a href="../../../topics/generated_files/topic_TransPath.html">3.</a> Transition path calculations: NEB and string method. </li>
-<li><a href="../../../topics/generated_files/topic_PIMD.html">4.</a> PIMD calculations. </li>
-</ul>
-<hr />
-<h3 id="446-correlated-electrons"><strong>4. Correlated electrons.</strong><a class="headerlink" href="#446-correlated-electrons" title="Permanent link">&para;</a></h3>
-<p>When correlated electrons are to be considered, it is necessary to go beyond
-the DFT framework. ABINIT enables the following possibilities:</p>
-<ul>
-<li><a href="../../../topics/generated_files/topic_Hybrids.html">1.</a> The use of hybrid functionals. </li>
-<li><a href="../../../topics/generated_files/topic_CRPA.html">2.</a> Calculation of the effective Coulomb interaction. </li>
-<li><a href="../../../topics/generated_files/topic_DFT+U.html">3.</a> The use of the DFT+U approximation. </li>
-<li><a href="../../../topics/generated_files/topic_DMFT.html">4.</a> The use of the DMFT framework. </li>
-</ul>
-<hr />
-<h3 id="5response-functions">** 5.Response functions. **<a class="headerlink" href="#5response-functions" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../../topics/generated_files/topic_DFPT.html">1.</a> DFPT: phonon modes, elastic tensors, effective charges, dielectric tensors,&hellip; </li>
-<li><a href="../../../topics/generated_files/topic_nonlinear.html">2.</a> Raman intensities and electro-optic properties. </li>
-<li><a href="../../../topics/generated_files/topic_ElPhon.html">3.</a> Electron-phonon calculations. </li>
-<li><a href="../../../topics/generated_files/topic_EffMass.html">4.</a> Effective mass calculations. </li>
-</ul>
-<hr />
-<h3 id="6excited-state-calculations">** 6.Excited state calculations. **<a class="headerlink" href="#6excited-state-calculations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<ol>
-<li>GW calculations. </li>
-</ol>
-</li>
-<li>
-<ol>
-<li>Bethe-Salpeter calculations. </li>
-</ol>
-</li>
-<li><a href="../../../topics/generated_files/topic_GWls.html">3.</a> GW- Lanczos-Sternheimer method. </li>
-<li><a href="../../../topics/generated_files/topic_TDDFT.html">4.</a> TDDFT calculations. </li>
-</ul>
-<hr />
-<h3 id="746-practical-settings">** 7. Practical settings.**<a class="headerlink" href="#746-practical-settings" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../../topics/generated_files/topic_multidtset.html">1.</a> Multi-dataset calculations. </li>
-<li><a href="../../../topics/generated_files/topic_parallelism.html">2.</a> Parallelism and ABINIT. </li>
-<li><a href="../../../topics/generated_files/topic_printing.html">3.</a> Printing options. </li>
-</ul>
-<hr />
-<h3 id="846-others">** 8. Others.**<a class="headerlink" href="#846-others" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../../../topics/generated_files/topic_positron.html">1.</a> Positron calculations. </li>
-<li><a href="../../../topics/generated_files/topic_Wavelets.html">2.</a> Wavelets in ABINIT. </li>
-<li><a href="../../../topics/generated_files/topic_Wannier.html">3.</a> Wannier functions in ABINIT. </li>
-<li><a href="../../../topics/generated_files/topic_recursion.html">4.</a> Recursion methods and orbital free calculations. </li>
-</ul>
+
+<script>
+$(function() {
+    // Automatic video thumbnails
+    //$('#video-gallery').lightGallery();
+    $('#video-gallery').lightGallery({
+        loadYoutubeThumbnail: true,
+        youtubeThumbSize: 'default',
+        loadVimeoThumbnail: true,
+        vimeoThumbSize: 'thumbnail_medium',
+    }); 
+});
+</script>
                 
                   
                 
@@ -3096,7 +2887,7 @@ the DFT framework. ABINIT enables the following possibilities:</p>
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
                   title=About> <i class="fa fa-info-circle"></i></a></li>
         
-          <li><a href="../../developers/abimkdocs/" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../abimkdocs/" data-toggle="tooltip" data-placement="left" 
                   title=Developers> <i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
@@ -3148,7 +2939,7 @@ the DFT framework. ABINIT enables the following possibilities:</p>
   
     <li class="md-tabs__item">
       
-        <a href="../.." title="User Guide" class="md-tabs__link md-tabs__link--active">
+        <a href="../.." title="User Guide" class="md-tabs__link">
           User Guide
         </a>
       
@@ -3213,7 +3004,7 @@ the DFT framework. ABINIT enables the following possibilities:</p>
   
     <li class="md-tabs__item">
       
-        <a href="../../developers/abimkdocs/" title="Developers" class="md-tabs__link">
+        <a href="../abimkdocs/" title="Developers" class="md-tabs__link md-tabs__link--active">
           Developers
         </a>
       
@@ -3245,7 +3036,7 @@ the DFT framework. ABINIT enables the following possibilities:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../installation/" title="Installation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../codestats/" title="Code stats" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -3254,19 +3045,19 @@ the DFT framework. ABINIT enables the following possibilities:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Installation
+                Code stats
               </span>
             </div>
           </a>
         
         
-          <a href="../abinit/" title="Abinit" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../about/release-notes/" title="Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Abinit
+                Release Notes
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
