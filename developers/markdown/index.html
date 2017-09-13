@@ -26,9 +26,11 @@
       
     
     
+
     
       <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
+
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -45,6 +47,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!--
+    <script src="/extra_javascript/pace.min.js"></script>
+    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
+    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    -->
 
     <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -90,14 +98,12 @@
     </script>
     -->
 
-    <!-- Plotly support -->
     
+        <!-- Plotly support -->
         <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
     
-
-    <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
     
-
+    
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -141,6 +147,7 @@
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
@@ -216,6 +223,22 @@
           </div>
         </div>
       
+
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="dropdown">
+          <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+            8.5.4
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            
+            <li><a href="#">8.2.0</a></li>
+            
+            <li><a href="#">8.1.0</a></li>
+            
+          </ul>
+        </div>
+      </div>
+
     </div>
   </nav>
 </header>
@@ -3128,10 +3151,6 @@ There are a couple of names immediately recognized:</p>
 <td align="left"><code class="codehilite">[[tests/Psps_for_tests/6c.lda.atompaw]]</code></td>
 <td align="left"><a class="wikilink" href="../../tests/Psps_for_tests/6c.lda.atompaw">tests/Psps_for_tests/6c.lda.atompaw</a></td>
 </tr>
-<tr>
-<td align="left"><code class="codehilite">[[ac:abiref_gnu_5.3_debug.ac]]</code></td>
-<td align="left"><a class="wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a></td>
-</tr>
 </tbody>
 </table>
 <div class="admonition note">
@@ -3161,17 +3180,17 @@ the input file with the syntax:</p>
 <p>that produces:</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-a485c49b-8ed8-4a99-9e95-3b6018792862">
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-8d168563-6646-4072-89c8-dae27e1c449f">
   View tests/v1/Input/t01.in
 </button></p>
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-a485c49b-8ed8-4a99-9e95-3b6018792862" tabindex="-1" role="dialog" aria-labelledby="uuid-b0ea1635-3961-4de4-b38a-987ff9d8f64b">
+<div class="modal fade" id="uuid-8d168563-6646-4072-89c8-dae27e1c449f" tabindex="-1" role="dialog" aria-labelledby="uuid-f00f0988-460b-42e2-8527-1a32797f52a1">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b0ea1635-3961-4de4-b38a-987ff9d8f64b">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-f00f0988-460b-42e2-8527-1a32797f52a1">tests/v1/Input/t01.in</h4>
       </div>
       <div class="modal-body"><pre>
 #   FCC Al; 2 special points
@@ -3258,26 +3277,26 @@ If multiple files are used such as in: </p>
 <p>a modal window with tabs is produced</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-e3d86b83-ec49-4cc3-881d-5cf30c670783">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-03064f73-eef8-42b4-a1a2-f1e423f2ab45">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
 <!-- Modal -->
-<div class="modal fade" id="uuid-e3d86b83-ec49-4cc3-881d-5cf30c670783" tabindex="-1" role="dialog" aria-labelledby="uuid-87fe9cd9-9c5c-4f08-a2a9-fe6be508ddba" aria-hidden="true">
+<div class="modal fade" id="uuid-03064f73-eef8-42b4-a1a2-f1e423f2ab45" tabindex="-1" role="dialog" aria-labelledby="uuid-08507d90-d13b-4c29-90b6-864c1fcc5415" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                 <h4 class="modal-title" id="uuid-87fe9cd9-9c5c-4f08-a2a9-fe6be508ddba"></h4>
+                 <h4 class="modal-title" id="uuid-08507d90-d13b-4c29-90b6-864c1fcc5415"></h4>
             </div>
             <div class="modal-body">
                 <div role="tabpanel">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">                    <li role="presentation" class="active">
-                    <a href="#uuid-5a26d454-6859-42f9-a7f7-621800d79180" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+                    <a href="#uuid-46d8f412-2644-4b01-b753-33459433c6d7" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
                     </li>                     <li role="presentation" class=" ">
-                    <a href="#uuid-15e5695e-e77f-4593-abd9-756aff292446" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+                    <a href="#uuid-508d05d3-83c8-4f5c-a609-4a6a2d998dc2" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
                     </li> </ul>
                  <!-- Tab panes -->
-                 <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-5a26d454-6859-42f9-a7f7-621800d79180"><pre></p>
+                 <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-46d8f412-2644-4b01-b753-33459433c6d7"><pre></p>
 <h1 id="fcc-al-2-special-points">FCC Al; 2 special points<a class="headerlink" href="#fcc-al-2-special-points" title="Permanent link">&para;</a></h1>
 <h1 id="nband-8">nband 8<a class="headerlink" href="#nband-8" title="Permanent link">&para;</a></h1>
 <h1 id="nspinor-2">nspinor 2<a class="headerlink" href="#nspinor-2" title="Permanent link">&para;</a></h1>
@@ -3344,7 +3363,7 @@ If multiple files are used such as in: </p>
 <h1 id="of-n-marzari-with-a-5634-minimization-of-the-bump">%%  of N. Marzari , with a=-.5634 (minimization of the bump).<a class="headerlink" href="#of-n-marzari-with-a-5634-minimization-of-the-bump" title="Permanent link">&para;</a></h1>
 <h1 id="end-test_info">%%&lt;END TEST_INFO&gt;<a class="headerlink" href="#end-test_info" title="Permanent link">&para;</a></h1>
 <p></pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-15e5695e-e77f-4593-abd9-756aff292446"><pre></p>
+</div><div role="tabpanel" class="tab-pane  " id="uuid-508d05d3-83c8-4f5c-a609-4a6a2d998dc2"><pre></p>
 <h1 id="fcc-al-2-special-points_1">FCC Al; 2 special points<a class="headerlink" href="#fcc-al-2-special-points_1" title="Permanent link">&para;</a></h1>
 <p>acell 3*7.60
  ecut 10
@@ -3414,9 +3433,10 @@ If multiple files are used such as in: </p>
 </pre></div>
 
 <p>that gives:</p>
+<div class="md-container">
 <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-1fafb482-48b8-4b3a-8b01-b068ce8a0393"><pre>
+    <div class="panel-body"><div class="editor" hidden id="uuid-eddb8234-b8bc-4ed0-a5a2-81d067e5a9f4"><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -3971,26 +3991,26 @@ P           mkmem           2
 
 </pre>
 </div></div>
-</div>
+</div></div>
 
 <p>Also in this case, a multi-tab panel is produced if multiple files are used such as in:</p>
 <div class="codehilite"><pre><span></span>    {% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
 </pre></div>
 
 <p>that produces:</p>
+<div class="md-container">
 <div><EditorTabs</div>
-
 <div id="exTab1">
 <!-- Nav tabs -->
 <ul class="nav nav-pills nav-justified"><li class="active">
-<a href="#uuid-8cf06412-2abe-4043-97f7-7cf3fb7acb44" data-toggle="pill">tests/v1/Refs/t01.out</a>
+<a href="#uuid-834e1089-56a5-484c-9719-6ca80dd35068" data-toggle="pill">tests/v1/Refs/t01.out</a>
 </li><li class=" ">
-<a href="#uuid-6e76c875-c723-48e1-bc3c-ba01d61a1513" data-toggle="pill">tests/v1/Refs/t02.out</a>
+<a href="#uuid-4e61487a-6db2-4df5-a3dd-94322303f3ad" data-toggle="pill">tests/v1/Refs/t02.out</a>
 </li></ul>
 <!-- Tab panes -->
 <div class="tab-content clearfix">
-<div class="tab-pane fade in active" id="uuid-8cf06412-2abe-4043-97f7-7cf3fb7acb44">
-<div id="uuid-049d5149-df44-4f99-8df1-13eb273ce756" class="editor" hidden><pre>
+<div class="tab-pane fade in active" id="uuid-834e1089-56a5-484c-9719-6ca80dd35068">
+<div id="uuid-e804d2c3-eae2-4db9-8dad-8b3c33df7a01" class="editor" hidden><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -4545,8 +4565,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-6e76c875-c723-48e1-bc3c-ba01d61a1513">
-<div id="uuid-ef63cd3e-758b-4983-a7dc-52492efb1e77" class="editor" hidden><pre>
+<div class="tab-pane fade" id="uuid-4e61487a-6db2-4df5-a3dd-94322303f3ad">
+<div id="uuid-b08d085e-0996-4ff0-bd88-054d2a7104ba" class="editor" hidden><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5101,7 +5121,7 @@ P           mkmem           2
 
 </pre>
 </div></div>
-</div></div>
+</div></div></div>
 
 <h3 id="internal-links-with-namespace">Internal links with namespace<a class="headerlink" href="#internal-links-with-namespace" title="Permanent link">&para;</a></h3>
 <p>Other internal links can be recognized thanks to the namespace. 
@@ -5113,6 +5133,8 @@ A first set of allowed internal namespaces are: </p>
 <li><code class="codehilite">bib</code></li>
 <li><code class="codehilite">theorydoc</code></li>
 <li><code class="codehilite">varset</code></li>
+<li><code class="codehilite">ac</code></li>
+<li><code class="codehilite">src</code></li>
 </ul>
 <p>In such cases, provided there is a corresponding generated HTML file 
 in one of the ~abinit/doc/*/generated_files subdirectories, 
@@ -5150,6 +5172,18 @@ dielectric function" data-placement="auto right" data-toggle="popover" data-trig
 <tr>
 <td align="left"><code class="codehilite">[[varset:bse]]</code></td>
 <td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[varset:bse]]</code></td>
+<td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[src:94_scfcv/scfcv.F90]]</code></td>
+<td align="left"><a class="wikilink" href="https://github.com/abinit/abinit/blob/master/src/94_scfcv/scfcv.F90">94_scfcv/scfcv.F90</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[ac:abiref_gnu_5.3_debug.ac]]</code></td>
+<td align="left"><a class="wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a></td>
 </tr>
 </tbody>
 </table>
@@ -5561,10 +5595,10 @@ Links require no special syntax.</p>
               
 
 <!-- 
- add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
- and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
+add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
+and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
 -->
-<div class="container">
+<div class="md-container">
   <div class="row">
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
@@ -5610,7 +5644,6 @@ Links require no special syntax.</p>
     </div>
   </div>
 </div>
-
 
               
                 

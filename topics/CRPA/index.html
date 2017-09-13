@@ -26,9 +26,11 @@
       
     
     
+
     
       <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
+
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -45,6 +47,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!--
+    <script src="/extra_javascript/pace.min.js"></script>
+    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
+    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    -->
 
     <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -90,12 +98,9 @@
     </script>
     -->
 
-    <!-- Plotly support -->
     
-
-    <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
     
-
+    
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -139,6 +144,7 @@
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
@@ -214,6 +220,22 @@
           </div>
         </div>
       
+
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="dropdown">
+          <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+            8.5.4
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            
+            <li><a href="#">8.2.0</a></li>
+            
+            <li><a href="#">8.1.0</a></li>
+            
+          </ul>
+        </div>
+      </div>
+
     </div>
   </nav>
 </header>
@@ -2917,8 +2939,8 @@ weight to define the polarisability, using Wannier orbitals as correlated
 orbitals.</p>
 <p>This method is well adapted to compute the effective interaction for the same
 orbitals used in DFT+DMFT. To use the same orbitals as in DFT+U, the Wannier
-functions should be defined with a very large energy window
-<a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a>,<a class="wikilink citation-link" data-content="A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2012">[Amadon2012]</a>.</p>
+functions can be ajusted such that the bare interaction is close to the bare
+interaction of atomic orbitals as used in DFT+<em>U</em> (see tutorial).</p>
 <p>Secondly, a linear response method <a class="wikilink citation-link" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a> is implemented. The
 implementation is not yet in production. The implementation in ABINIT takes
 into account the truncated atomic orbitals from PAW and therefore differs from
@@ -2954,10 +2976,10 @@ particular, considerably higher effective values for U are found.</p>
               
 
 <!-- 
- add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
- and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
+add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
+and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
 -->
-<div class="container">
+<div class="md-container">
   <div class="row">
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
@@ -3003,7 +3025,6 @@ particular, considerably higher effective values for U are found.</p>
     </div>
   </div>
 </div>
-
 
               
                 
