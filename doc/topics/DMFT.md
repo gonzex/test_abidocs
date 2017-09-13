@@ -27,13 +27,13 @@ field (i.e., an Anderson model). The effective field reproduces the effect of
 the surrounding correlated atoms and is thus self-consistently related to the
 solution of the Anderson model [[Georges1996]].
 
-The combination of DFT with DMFT [[Georges2004]],[[Kotliar2006]] [[usedmft]]=
-1}) relies on :
+The combination of DFT with DMFT [[Georges2004]],[[Kotliar2006]] ([[usedmft]]=
+1) relies on :
 
 * The definition of correlated orbitals. In ABINIT, we use Wannier functions built using projected local orbitals [[Amadon2008]]. Wannier functions are unitarily related to a selected set of Kohn Sham (KS) wavefunctions, specified in ABINIT by band indices [[dmftbandi]] and [[dmftbandf]]. As empty bands are necessary to build Wannier functions, it is required in DMFT calculations that the KS Hamiltonian is correctly diagonalized: use high values for [[nnsclo]] and [[nline]]. In order to make a first rough estimation of the orbital character of KS bands and choose the band index, the band structure with highlighted atomic orbital character (so called _fatbands_) can be plotted, using the [[pawfatbnd]] variable. Band structures obtained from projected orbitals Wannier functions can also be plotted using [[plowan_compute]] and related variables. 
 * The choice of the screened Coulomb interaction U ([[upawu]]) and J ([[jpawu]]). Note that up to version 7.10.5 (but not in later versions) [[jpawu]]= 0 is required if the density matrix in the correlated subspace is not diagonal.
-* The choice of the double counting correction [[Amadon2012]]. The current default choice in ABINIT is [[dmft_dc]]= 1} which corresponds to the full localized limit.
-* The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method [[Amadon2012]] ([[dmft_solv]]= 2), the Continuous time Quantum Monte Carlo (CTQMC) method [[Gull2011]],[[Bieder2014]] ([[dmft_solv]]= 5) or the static mean field method ([[dmft_solv]]= 1}, equivalent to usual DFT+U [[Amadon2012]]).
+* The choice of the double counting correction [[Amadon2012]]. The current default choice in ABINIT is [[dmft_dc]]= 1 which corresponds to the full localized limit.
+* The method of resolution of the Anderson model. In ABINIT, it can be the Hubbard I method [[Amadon2012]] ([[dmft_solv]]= 2), the Continuous time Quantum Monte Carlo (CTQMC) method [[Gull2011]],[[Bieder2014]] ([[dmft_solv]]= 5) or the static mean field method ([[dmft_solv]]= 1), equivalent to usual DFT+U [[Amadon2012]]).
 
 The practical solution of the DFT+DMFT scheme is usually presented as a double
 loop over, first, the local Green's function, and second the electronic local
@@ -51,7 +51,7 @@ file by setting [[pawprtvol]]=3.
 
 The main output of the calculations are the imaginary time Green's function ,
 from which spectral functions can be obtained using an external maximum
-entropy code [[Bergeron2015]], self-energies, from which quasiparticle
+entropy code [[Bergeron2016]], self-energies, from which quasiparticle
 renormalization weight can be extracted, the density matrix of correlated
 orbitals, and the internal energies [[Amadon2006]]. The electronic entropic
 contribution to the free energy can also be obtained using [[dmft_entropy]]
@@ -63,9 +63,9 @@ _density-density_ multiorbital interaction [[Gull2011]]. Moreover, the
 hybridization function [[Gull2011]] is assumed to be diagonal in the orbital
 (or flavor) index. This is exact for cubic symmetry without spin orbit
 coupling but, in general, one should always check that the off-diagonal terms
-are much smaller than the diagonal ones. The non diagonal hybridization and
-coupling to the exact rotationally invariant interaction [[Gull2011]] is not
-available in version 7.10.5.
+are much smaller than the diagonal ones. A link to the exact rotationally
+invariant interaction CTQMC code of the TRIQS library is also available using
+[[dmft_solv]]=7.
 
 As the CTQMC solver uses a Fourier transform, the time grid [[dmftqmc_l]] in
 imaginary space must be chosen so that the Nyquist frequency, defined by

@@ -1,6 +1,7 @@
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
+
       <div class="md-flex__cell md-flex__cell--shrink">
         {% if config.extra.logo %}
           <a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
@@ -41,6 +42,20 @@
           </div>
         </div>
       {% endif %}
+
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="dropdown">
+          <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+            {{ config.extra.version }}
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            {% for version in config.extra.previous_published_versions %}
+            <li><a href="#">{{version}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
     </div>
   </nav>
 </header>

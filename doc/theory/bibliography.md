@@ -450,7 +450,7 @@ URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604" t
     </div>
   </div>
 </div>
-Referred to in: [/topics/CRPA](/topics/CRPA), [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
+Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 * * *
 
 
@@ -1127,7 +1127,6 @@ arXiv e-prints **arXiv:cond-mat.str-el**, 1507.01012 (2015)
     </div>
   </div>
 </div>
-Referred to in: [/topics/DMFT](/topics/DMFT)
 * * *
 
 
@@ -1161,7 +1160,7 @@ Phys. Rev. E **94**, 023303 (2016)
     </div>
   </div>
 </div>
-Referred to in: [/tutorials/dmft](/tutorials/dmft)
+Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 * * *
 
 

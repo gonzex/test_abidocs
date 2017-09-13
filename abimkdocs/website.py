@@ -332,6 +332,29 @@ Change the input yaml files or the python code
         mdf.rpath = rpath
         return mdf
 
+    def generate_mdindex(self, dirname):
+        """
+        Generate the index.md file from the meta data section given in the md files stored in
+        directory `dirname`.
+        """
+        workdir = os.path.join(self.root, dirname)
+        pages = [MarkdownPage(os.path.join(workdir, fname), self) for fname in os.listdir(workdir)
+                if fname.endswith(".md") and fname != "index.md"]
+
+        index_md = ["# Index of files in %s.\n\n" % dirname]
+        for page in sorted(pages, key=lambda p: p.basename):
+            try:
+                desc = page.meta["description"]
+            except KeyError:
+                raise KeyError(
+                    "Markdown page `%s` does not have `description` key in front matter.\n"
+                    "This is required to generate index.md automatically in python" % page.path)
+            #desc = ??
+            index_md.append("*  [%s](%s): %s" % (page.basename.replace(".md", ""), page.url, desc))
+
+        with self.new_mdfile(dirname, "index.md", meta=None) as mdf:
+            mdf.write("\n".join(index_md))
+
     def generate_markdown_files(self):
         start = time.time()
         # Write index.md with the description of the input variables.
@@ -425,7 +448,7 @@ in order of number of occurrence in the input files provided with the package.
             self.all_tribes = OrderedDict(yaml.load(fh))
 
         # datastructures needed for topics index.md
-        index_md = ["Alphabetical list of topics"]
+        index_md = ["# Alphabetical list of topics"]
         self.howto_topic = {}
 
         for topic in self.all_topics:
@@ -730,16 +753,15 @@ The bibtex file is available [here](../abiref.bib).
 
         if any(token.startswith(prefix) for prefix in ("www.", "http:", "https:", "ftp:", "file:")):
             # Handle [[www.google.com|text]]
-            url, text = token, token
+            url, a.text = token, token
             if "|" in token:
-                url, text = token.split("|")
+                url, a.text = token.split("|")
             a.set('href', url)
-            a.text = text
             return a
 
         # [[namespace:name#fragment|text]]
         try:
-            namespace, name, fragment, text = self.parse_wikilink_token(token)
+            namespace, name, fragment, a.text = self.parse_wikilink_token(token)
         except ValueError:
             raise ValueError("Cannot parse wikilink token `%s`" % token)
 
@@ -754,19 +776,19 @@ The bibtex file is available [here](../abiref.bib).
                 # Handle [[#internal_link|text]]
                 assert fragment is not None
                 url = ""
-                if text is None: text = fragment
+                if a.text is None: a.text = fragment
             else:
                 if name.startswith("lesson_"):
                     # Handle [[lesson_gw1|text]]
                     url = "/tutorials/%s" % name.replace("lesson_" , " ", 1).strip()
-                    if text is None: text = name
+                    if a.text is None: a.text = name
                     html_classes.append("lesson-link")
 
                 elif name.startswith("topic_"):
                     # Handle [[topic_SelfEnergy|text]]
                     name = name.replace("topic_" , " ", 1).strip()
                     url = "/topics/%s" % name
-                    if text is None: text = "%s topic" % name
+                    if a.text is None: a.text = "%s topic" % name
                     html_classes.append("topic-link")
                     add_popover(a, content=self.howto_topic[name])
 
@@ -774,7 +796,7 @@ The bibtex file is available [here](../abiref.bib).
                     # Handle [[help_abinit|text]]
                     code = name.replace("help_" , " ", 1).strip()
                     url = "/user-guide/%s" % code
-                    if text is None: text = "%s help file" % code
+                    if a.text is None: a.text = "%s help file" % code
                     html_classes.append("user-guide-link")
 
                 elif "@" in name:
@@ -782,7 +804,7 @@ The bibtex file is available [here](../abiref.bib).
                     vname, code = name.split("@")
                     var = self.variables_code[code][vname]
                     url = "/variables/%s#%s" % (var.varset, var.name)
-                    if text is None: text = name
+                    if a.text is None: a.text = name
                     html_classes.append("codevar-link")
 
                 elif name in self.variables_code["abinit"]:
@@ -790,20 +812,20 @@ The bibtex file is available [here](../abiref.bib).
                     var = self.variables_code["abinit"][name]
                     url = "/variables/%s#%s" % (var.varset, var.name)
                     html_classes.append("codevar-link")
-                    if text is None:
-                        text = var.name if not var.is_internal else "%%%s" % var.name
+                    if a.text is None:
+                        a.text = var.name if not var.is_internal else "%%%s" % var.name
 
                 elif name in self.bib_data.entries:
                     # Handle citation
                     ref = self.bib_data.entries[name]
                     url = "/theory/bibliography#%s" % self.slugify(name)
                     add_popover(a, content=ref.fields["title"]) #+ "\n\n" + ref.authors
-                    text = "[%s]" % name if text is None else text
+                    if a.text is None: a.text = "[%s]" % name
                     html_classes.append("citation-link")
 
                 elif name.startswith("tests/") or name.startswith("~abinit/tests/"):
                     assert fragment is None
-                    text = name if text is None else text
+                    if a.text is None: a.text = name
                     if "Psps_for_tests" in name:
                         # Handle [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
                         nm = name.replace("~abinit/", "")
@@ -824,19 +846,20 @@ The bibtex file is available [here](../abiref.bib).
                 elif name in self.variables_code.characteristics:
                     # handle [[ENERGY]] by building internal link to abinit user guide
                     url = "/user-guide/abinit/#32-more-about-abinit-input-variables"
-                    text = name
+                    if a.text is None: a.text = name
 
                 elif name in self.variables_code.external_params:
                     # handle [[AUTO_FROM_PSP]] by building link with popover
                     content = ("This is an external parameter\n"
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
-                    url, text = "/variables/external_parameters#%s", name
+                    url = "/variables/external_parameters#%s"
+                    if a.text is None: a.text = name
                     add_popover(a, title=self.variables_code.external_params[name], content=content)
 
                 else:
                     self.warn("Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath))
-                    url, text = "FAKE_URL", "FAKE_URL"
+                    url, a.text = "FAKE_URL", "FAKE_URL"
 
         else:
             # namespace is defined
@@ -846,51 +869,51 @@ The bibtex file is available [here](../abiref.bib).
                 var = self.variables_code[namespace][name]
                 url = "/variables/%s#%s" % (var.varset, var.name)
                 html_classes.append("codevar-link")
-                if text is None:
-                    text = var.name if not var.is_internal else "%%%s" % var.name
+                if a.text is None:
+                    a.text = var.name if not var.is_internal else "%%%s" % var.name
 
             elif namespace == "lesson":
                 # Handle [[lesson:wannier90|text]]
                 url = "/tutorials/%s" % name
-                if text is None: text = "%s %s" % (name, namespace)
+                if a.text is None: a.text = "%s %s" % (name, namespace)
                 html_classes.append("lesson-link")
 
             elif namespace == "help":
                 # Handle [[help:optic|text] NB: [[help_codename]] is echoed "codename help file"
                 url = "/user-guide/help_%s" % name
-                if text is None: text = "%s help file" % name
+                if a.text is None: a.text = "%s help file" % name
                 html_classes.append("user-guide-link")
 
             elif namespace == "topic":
                 # Handle [[topic:BSE|text]]
                 url = "/topics/%s" % name
                 html_classes.append("topic-link")
-                if text is None: text = "%s_%s" % (namespace, name)
+                if a.text is None: a.text = "%s_%s" % (namespace, name)
                 add_popover(a, content=self.howto_topic[name])
 
             elif namespace == "bib":
                 # Handle [[bib:biblio|bibliography]]
                 if name == "biblio":
                     url = "/theory/bibliography/"
-                    if text is None: text = "bibliography"
+                    if a.text is None: a.text = "bibliography"
                 else:
                     # Handle [[bib:Amadon2008]]
                     try:
                         ref = self.bib_data.entries[name]
                         url = "/theory/bibliography#%s" % self.slugify(name)
                         add_popover(a, content=ref.fields["title"]) #+ "\n\n" + ref.authors
-                        text = "[%s]" % name if text is None else text
+                        if a.text is None: a.text = "[%s]" % name
                         html_classes.append("citation-link")
                     except Exception as exc:
                         self.warn("Exception `%s:%s`\nwhile treating wikilink token: `%s` in `%s`" %
                                 (exc.__class__, str(exc), token, page_rpath))
-                        url, text = "FAKE_URL", "FAKE_URL"
+                        url, a.text = "FAKE_URL", "FAKE_URL"
 
             elif namespace == "theorydoc":
                 # Handle [[theorydoc:mbpt|text]]
                 url = "/theory/%s" % name
                 html_classes.append("theory-link")
-                if text is None: text = name
+                if a.text is None: a.text = name
 
             elif namespace == "varset":
                 # Handle [[varset:BSE|text]]
@@ -899,12 +922,7 @@ The bibtex file is available [here](../abiref.bib).
                     url = "/variables/index"
                 else:
                     url = "/variables/%s" % name
-                if text is None: text = "%s varset" % name
-
-            elif namespace == "ac":
-                # Handle [[ac:abiref_gnu_5.3_debug.ac]]
-                url = "/build/config-examples/%s" % name
-                if text is None: text = name
+                if a.text is None: a.text = "%s varset" % name
 
             elif namespace == "test":
                 # Handle [[test:libxc_41]]
@@ -912,24 +930,39 @@ The bibtex file is available [here](../abiref.bib).
                 tokens = name.split("_")
                 suite_name, tnum = "_".join(tokens[:-1]), tokens[-1]
                 url = "/tests/%s/Input/t%s.in" % (suite_name, tnum)
-                if text is None: text = "%s[%s]" % (suite_name, tnum)
+                if a.text is None: a.text = "%s[%s]" % (suite_name, tnum)
                 test = self.rpath2test[url[1:]]
                 content = test.description # + "\n\n" + ", ".join(test.authors)
                 add_popover(a, content=content)
 
+            elif namespace == "src":
+                # Handle [[src:94_scfcv/scfcv.F90]]
+                url = "https://github.com/abinit/abinit/blob/master/src/%s" % name
+                if a.text is None: a.text = name
+
+            elif namespace == "ac":
+                # Handle [[ac:abiref_gnu_5.3_debug.ac]]
+                url = "/build/config-examples/%s" % name
+                if a.text is None: a.text = name
+
             else:
                 self.warn("Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath))
-                url, text = "FAKE_URL", "FAKE_URL"
+                url, a.text = "FAKE_URL", "FAKE_URL"
 
-        html_class = " ".join(html_classes)
-        a.set("class", html_class)
-        a.text = text
+        a.set("class", " ".join(html_classes))
         if fragment is not None: url = "%s#%s" % (url, fragment)
+
+        from urllib.parse import urlparse
+        o = urlparse(url)
+        if o.scheme:
+            a.set('href', url)
+            return a
 
         # From root-relative url to relative url.
         end = ""
         if "#" in url:
             url, end = url.split("#")
+
         if not url:
             # Handle `#internal_link`
             url = "#" + end
@@ -1053,10 +1086,11 @@ The bibtex file is available [here](../abiref.bib).
             text = escape(fh.read(), tag="pre")
 
         return """\
+<div class="md-container">
 <div class="panel panel-default">
     <div class="panel-heading">{title}</div>
     <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
-</div>""".format(editor_id=gen_id(), **locals())
+</div></div>""".format(editor_id=gen_id(), **locals())
 
     def editor_tabs(self, paths, title=None):
         title = "EditorTabs" if title is None else str(title)
@@ -1071,6 +1105,7 @@ The bibtex file is available [here](../abiref.bib).
 
         # https://codepen.io/wizly/pen/BlKxo?editors=1000
         s = """\
+<div class="md-container">
 <div><{title}</div>
 <div id="exTab1">
 <!-- Nav tabs -->
@@ -1094,7 +1129,7 @@ The bibtex file is available [here](../abiref.bib).
 <div id="{editor_id}" class="editor" hidden>{text}</div></div>
 """.format(active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
 
-        s +=  2 * "</div>"
+        s +=  3 * "</div>"
         return s
 
 
@@ -1105,6 +1140,10 @@ class Page(object):
         self.website = website
         self.citations = set()
         self.topics = set()
+
+    @property
+    def basename(self):
+        return os.path.basename(self.path)
 
     @property
     def relpath(self):

@@ -7,29 +7,29 @@ Change the input yaml files or the python code
 -->
 # PDF files  
 ## elasticity-oganov.pdf  
-<embed src="../additional_material_assets/elasticity-oganov.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../additional_material_assets/elasticity-oganov.pdf" type="application/pdf" width="100%" height="480px">
 
 ## elphon_manual.pdf  
-<embed src="../elphon_manual.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../elphon_manual.pdf" type="application/pdf" width="100%" height="480px">
 
 ## geometry.pdf  
-<embed src="../geometry.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../geometry.pdf" type="application/pdf" width="100%" height="480px">
 
 ## howto_chebfi.pdf  
-<embed src="../howto_chebfi.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../howto_chebfi.pdf" type="application/pdf" width="100%" height="480px">
 
 ## hybrids-2017.pdf  
-<embed src="../hybrids-2017.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../hybrids-2017.pdf" type="application/pdf" width="100%" height="480px">
 
 ## noncol.pdf  
-<embed src="../noncol.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../noncol.pdf" type="application/pdf" width="100%" height="480px">
 
 ## report_MGGA.pdf  
-<embed src="../MGGA/report_MGGA.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../MGGA/report_MGGA.pdf" type="application/pdf" width="100%" height="480px">
 
 ## response.pdf  
-<embed src="../response.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../response.pdf" type="application/pdf" width="100%" height="480px">
 
 ## test_report_kden.pdf  
-<embed src="../test_report_kden.pdf" type="application/pdf" width="100%" height="480px"/>
+<embed src="../test_report_kden.pdf" type="application/pdf" width="100%" height="480px">
 

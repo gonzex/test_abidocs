@@ -34,7 +34,41 @@ $(function() {
 });
 </script>
 
+
+<div class="md-container">
+  <!-- Example row of columns -->
+  <div class="row"><h2>TEST: Embedly embeds</h2></div>
+  <div class="row"> 
+    <div class="col-md-4">
+      <h2>Abinit github repo</h2>
+      <p>
+      <a class="embedly-card" data-card-controls="0" href="https://github.com/abinit/abinit">abinit/abinit</a>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </div>
+ 
+    <div class="col-md-4">
+      <h2>abiconfig</h2>
+      <p>
+      <a class="embedly-card" data-card-controls="0" href="https://github.com/abinit/abiconfig">abinit/abiconfig</a>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </div>
+ 
+    <div class="col-md-4">
+      <h2>abiconda</h2>
+      <p>
+      <a class="embedly-card" data-card-controls="0" href="https://github.com/abinit/abiconda">abinit/abiconda</a>
+      <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    </div>
+ 
+  </div> <!-- /row -->
+  <hr>
+</div> <!-- /container -->
+
+
 <blockquote class="embedly-card" data-card-controls="0"><h4><a href="http://pythonhosted.org/abipy/">Getting Started - abipy 0.2.0 documentation</a></h4><p>abipy is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+<a class="embedly-card" data-card-controls="0" href="http://www.pseudo-dojo.org/">The Periodic Table with tested pseudopotentials</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
 <a class="embedly-card" data-card-controls="0" href="http://jp-minerals.org/vesta/en/">VESTA</a>

@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block libs %}
+
     {{ super() }}
+
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -18,6 +20,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!--
+    <script src="/extra_javascript/pace.min.js"></script>
+    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
+    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    -->
 
     <!-- MathJax support
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -63,18 +71,13 @@
     </script>
     -->
 
-    <!-- Plotly support -->
     {% if page.meta and page.meta.plotly %}
+        <!-- Plotly support -->
         <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
     {% endif %}
-
-    <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
+    
     {% if page.meta and page.meta.light_gallery %}
-
-        <!--
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/lightgallery,npm/lg-autoplay,npm/lg-fullscreen,npm/lg-hash,npm/lg-pager,npm/lg-share,npm/lg-thumbnail,npm/lg-video,npm/lg-zoom" />
-        -->
-
+        <!-- lightgallery support. See https://github.com/sachinchoolur/lightGallery-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" 
             integrity="sha256-6hdzBLI5YrM1ltRrsPdV0y2CsqGgLYCeNlLFFQoh7MY=" crossorigin="anonymous" />
 
@@ -84,17 +87,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/js/lightgallery-all.min.js" 
             integrity="sha256-n9ZE2vNe6Iv4S6dUXnzuvvt2yLWOZPJqD787TC7S4W4=" crossorigin="anonymous"></script>
     {% endif %}
-
 {% endblock %}
 
 {% block content %}
 {{ super() }}
 
 <!-- 
- add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
- and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
+add dropdown button with toolbar (based on https://bootsnipp.com/snippets/featured/inbox-by-gmail)
+and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
 -->
-<div class="container">
+<div class="md-container">
   <div class="row">
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
@@ -130,7 +132,6 @@
     </div>
   </div>
 </div>
-
 {% endblock %}
 
 {% block footer %}

@@ -141,7 +141,7 @@ Examples:
 | `[[~abinit/tests/tutorial/Refs/tbase1_1.out]]` |  [[~abinit/tests/tutorial/Refs/tbase1_1.out]] 
 | `[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]` | [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
 | `[[tests/Psps_for_tests/6c.lda.atompaw]]` | [[tests/Psps_for_tests/6c.lda.atompaw]]
-| `[[ac:abiref_gnu_5.3_debug.ac]]` | [[ac:abiref_gnu_5.3_debug.ac]]
+
 
 
 !!! note
@@ -219,6 +219,8 @@ A first set of allowed internal namespaces are:
 * `bib`
 * `theorydoc`
 * `varset`
+* `ac`
+* `src`
 
 In such cases, provided there is a corresponding generated HTML file 
 in one of the ~abinit/doc/*/generated_files subdirectories, 
@@ -234,6 +236,9 @@ Examples:
 | `[[bib:Amadon2008]]` | [[bib:Amadon2008]] 
 | `[[theorydoc:mbpt]]` | [[theorydoc:mbpt]] 
 | `[[varset:bse]]` | [[varset:bse]] 
+| `[[varset:bse]]` | [[varset:bse]] 
+| `[[src:94_scfcv/scfcv.F90]]` | [[src:94_scfcv/scfcv.F90]]
+| `[[ac:abiref_gnu_5.3_debug.ac]]` | [[ac:abiref_gnu_5.3_debug.ac]]
 
 `[[topic:PIMD#1|Introduction]]` becomes [[topic:PIMD#1|Introduction]]
 

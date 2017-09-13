@@ -28,8 +28,8 @@ orbitals.
 
 This method is well adapted to compute the effective interaction for the same
 orbitals used in DFT+DMFT. To use the same orbitals as in DFT+U, the Wannier
-functions should be defined with a very large energy window
-[[Amadon2014]],[[Amadon2012]].
+functions can be ajusted such that the bare interaction is close to the bare
+interaction of atomic orbitals as used in DFT+_U_ (see tutorial).
 
 Secondly, a linear response method [[Cococcioni2005]] is implemented. The
 implementation is not yet in production. The implementation in ABINIT takes
