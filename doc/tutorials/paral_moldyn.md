@@ -1,6 +1,6 @@
 ---
 authors: JB
-rpath: tutorials/paral_moldyn.md
+rpath: /tutorials/paral_moldyn.md
 ---
 
 # Parallelism for molecular dynamics  

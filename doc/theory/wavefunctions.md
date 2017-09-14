@@ -1,3 +1,8 @@
+---
+description: ABINIT data structures and their theoretical justifications
+rpath: /theory/wavefunctions.md
+---
+
 %\title{ABINIT data structures and their theoretical justifications}
 \documentclass{article}
 \title{Representation and conversion of one wavefunction\\

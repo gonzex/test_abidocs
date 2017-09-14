@@ -1,6 +1,6 @@
 ---
 authors: DCA,  XG
-rpath: user-guide/abinit.md
+rpath: /user-guide/abinit.md
 ---
 
 # ABINIT, the main code  

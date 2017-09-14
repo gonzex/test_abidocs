@@ -1,6 +1,6 @@
 ---
 authors: FBruneval, XG
-rpath: tutorials/gw2.md
+rpath: /tutorials/gw2.md
 ---
 
 # Second lesson on GW  

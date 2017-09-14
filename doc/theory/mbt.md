@@ -1,6 +1,7 @@
 ---
 authors: MG, MS
-rpath: theory/mbt.md
+description: introduction to the Green's function formalism and Hedin's equations
+rpath: /theory/mbt.md
 ---
 
 # Many-Body Theory in ABINIT  

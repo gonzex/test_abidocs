@@ -1,4 +1,5 @@
 ---
+description: Bibliographical references mentioned in the ABINIT documentation
 rpath: /theory/bibliography.md
 ---
 <!--

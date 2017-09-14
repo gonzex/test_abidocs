@@ -1,6 +1,6 @@
 ---
 authors: YP, XG
-rpath: tutorials/basepar.md
+rpath: /tutorials/basepar.md
 ---
 
 # Lesson on basic parallelism  

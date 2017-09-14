@@ -325,6 +325,7 @@ Change the input yaml files or the python code
         if meta is None: meta = {}
         assert "rpath" not in meta
         meta["rpath"] = rpath
+        # FIXME This is not portable (py2.7 issue)
         s = yaml.dump(meta, indent=4, default_flow_style=False).strip()
         mdf = io.open(path, "wt", encoding="utf-8")
         mdf.write("---\n%s\n---\n" % s)
@@ -349,16 +350,18 @@ Change the input yaml files or the python code
                 raise KeyError(
                     "Markdown page `%s` does not have `description` key in front matter.\n"
                     "This is required to generate index.md automatically in python" % page.path)
-            #desc = ??
+            desc = desc[0]
             index_md.append("*  [%s](%s): %s" % (page.basename.replace(".md", ""), page.url, desc))
 
-        with self.new_mdfile(dirname, "index.md", meta=None) as mdf:
+        with self.new_mdfile(dirname, "index.md") as mdf:
             mdf.write("\n".join(index_md))
 
     def generate_markdown_files(self):
         start = time.time()
+
         # Write index.md with the description of the input variables.
-        with self.new_mdfile("variables", "index.md") as mdf:
+        meta = {"description": "Complete list of Abinit input variables"}
+        with self.new_mdfile("variables", "index.md", meta=meta) as mdf:
             for code, vd in self.variables_code.items():
                 mdf.write("## %s variables   \n\n" % code)
                 page_rpath = mdf.rpath
@@ -383,7 +386,8 @@ You can change these parameters at compile or run time usually.
             cprint("Generating markdown files with input variables of code: `%s`..." % vd.executable, "green")
             for varset in vd.all_varset:
                 var_list = [v for v in vd.values() if v.varset == varset]
-                with self.new_mdfile("variables", varset + ".md") as mdf:
+                meta = {"description": "%s input variables" % varset}
+                with self.new_mdfile("variables", varset + ".md", meta=meta) as mdf:
                     mdf.write("""\
 # {varset} input variables
 
@@ -448,7 +452,7 @@ in order of number of occurrence in the input files provided with the package.
             self.all_tribes = OrderedDict(yaml.load(fh))
 
         # datastructures needed for topics index.md
-        index_md = ["# Alphabetical list of topics"]
+        index_md = ["# Alphabetical list of topics\n"]
         self.howto_topic = {}
 
         for topic in self.all_topics:
@@ -511,7 +515,8 @@ This page gives hints on how to {howto} with the ABINIT package.
 
 {tutorials}""".format(tutorials=html2text(tutorials))
 
-            with self.new_mdfile("topics", topic + ".md", meta={"authors": top.authors}) as mdf:
+            meta = {"authors": top.authors, "description": "%s Abinit topic" % topic}
+            with self.new_mdfile("topics", topic + ".md", meta=meta) as mdf:
                 mdf.write(text)
 
         # Now write topics index.md (sorted by first character)
@@ -519,13 +524,15 @@ This page gives hints on how to {howto} with the ABINIT package.
             index_md.append("## %s" % firstchar)
             index_md.extend("- [[topic:%s|%s]]: %s" % (topic, topic, self.howto_topic[topic]) for topic in group)
 
-        with self.new_mdfile("topics", "index.md") as mdf:
+        meta = {"description": "List of Abinit topics"}
+        with self.new_mdfile("topics", "index.md", meta=meta) as mdf:
             mdf.write("\n".join(index_md))
 
         # Build page with full list of tests grouped by `suite_name`.
         cprint("Generating Markdown file with tests ...", "green")
+        meta = {"description": "List of Abinit tests"}
         items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
-        with self.new_mdfile("developers", "testsuite.md") as mdf:
+        with self.new_mdfile("developers", "testsuite.md", meta=meta) as mdf:
             for suite_name, group in sort_and_groupby(items, key=lambda t: t[1].suite_name):
                 mdf.write('## %s  \n\n' % suite_name)
                 for rpath, test in group:
@@ -552,7 +559,8 @@ This page gives hints on how to {howto} with the ABINIT package.
             for citation in page.citations:
                 citation2pages[citation].append(page)
 
-        with self.new_mdfile("theory", "bibliography.md") as mdf:
+        meta = {"description": "Bibliographical references mentioned in the ABINIT documentation"}
+        with self.new_mdfile("theory", "bibliography.md", meta=meta) as mdf:
             lines = []
             lines.append("""\
 # Bibliography
@@ -583,12 +591,14 @@ The bibtex file is available [here](../abiref.bib).
             else:
                 raise RuntimeError("Cannot find `acknow` section in components")
 
-        with self.new_mdfile("theory", "acknowledgments.md") as mdf:
+        meta = {"description": "suggested acknowledgments and references"}
+        with self.new_mdfile("theory", "acknowledgments.md", meta=meta) as mdf:
             mdf.write("# Acknowledgments  \n")
             mdf.write(html2text(comp.purpose))
             mdf.write(html2text(comp.introduction))
 
-        with self.new_mdfile("theory", "documents.md") as mdf:
+        meta = {"description": "List of PDF files provided by the Abinit documentation"}
+        with self.new_mdfile("theory", "documents.md", meta=meta) as mdf:
             mdf.write("# PDF files  \n")
             pdf_paths = sorted(self.pdf_paths, key=lambda p: os.path.basename(p))
             for pdf_path in pdf_paths:
@@ -597,6 +607,9 @@ The bibtex file is available [here](../abiref.bib).
                 src = os.path.relpath(rpdf, mdf.rpath)
                 html = '<embed src="{src}" type="application/pdf" width="100%" height="480px">\n\n'.format(src=src)
                 mdf.write(html)
+
+        #for dirname in ["theory"]:
+        #    self.generate_mdindex(dirname)
 
         #topic2pages = defaultdict(list)
         #for page in self.md_pages:
@@ -952,7 +965,11 @@ The bibtex file is available [here](../abiref.bib).
         a.set("class", " ".join(html_classes))
         if fragment is not None: url = "%s#%s" % (url, fragment)
 
-        from urllib.parse import urlparse
+        if sys.version_info[0] <= 2:
+            from urlparse import urlparse
+        else:
+            from urllib.parse import urlparse
+
         o = urlparse(url)
         if o.scheme:
             a.set('href', url)
@@ -1177,6 +1194,8 @@ class MarkdownPage(Page):
         self.meta = {}
         with io.open(self.path, "rt", encoding="utf-8") as fh:
            string = fh.read()
+        lines = string.split("\n")
+        #self.meta = self._get_meta(string.split("\n"))
 
         # Note: this logic is able to detect backlinks only if wikilinks syntax is used.
         for m in re.finditer(website.WIKILINK_RE, string):
@@ -1197,7 +1216,6 @@ class MarkdownPage(Page):
                     self.topics.add(token) # TODO: Should be name
 
         # Add rpath to meta (useful to give the origin of errors in markdown extensions)
-        lines = string.split("\n")
         if len(lines) > 1 and lines[0].startswith("---"):
             for i, l in enumerate(lines[1:]):
                 if l.startswith("---"):
@@ -1209,26 +1227,52 @@ class MarkdownPage(Page):
             # Cannot used OrderedDict because markdown parser does not understand !!python/object
             # If py2, convert strings to ascii to avoid !!unicode in meta!
             d = dict(**yaml.load("\n".join(lines[1:i])))
-            if sys.version_info[0] <= 2:
-                def to_ascii_if_string(obj):
-                    try:
-                        obj + "hello"
-                    except TypeError:
-                        return obj
-                    return ascii(obj)
-                d = {ascii(k): to_ascii_if_string(d[k])  for k in d}
-            #print(self.path, "\n".join(lines[1:i]))
-            rpath = os.path.relpath(path, website.root)
-            if "rpath" not in d or d["rpath"] != rpath:
-            #if True:
+
+            rpath = "/" + os.path.relpath(path, website.root)
+            if "rpath" not in d:
+                raise RuntimeError("rpath front matter entry missing in %s" % self.path)
+            if d["rpath"] != rpath:
+                raise RuntimeError("Wrong rpath in %s.\nExpecting `%s` but got `%s`" % (self.path, rpath, d["rpath"]))
+
+            # This to add rpat automatically to md pages. WARNING: Requires py3k.
+            if False and "rpath" not in d or d["rpath"] != rpath and sys.version_info[0] >= 3:
                 d["rpath"] = rpath
-                #d = OrderedDict([(k, d[k]) for k in sorted(d.keys())])
                 del lines[1:i]
                 lines.insert(1, yaml.dump(d, indent=4, default_flow_style=False).strip())
                 with io.open(self.path, "wt", encoding="utf-8") as fh:
                     fh.write("\n".join(lines))
 
         #print(self)
+
+    def _get_meta(self, lines):
+        """ Parse Meta-Data and store in Markdown.Meta. """
+        # https://github.com/Python-Markdown/markdown/blob/master/markdown/extensions/meta.py
+        from markdown.extensions.meta import BEGIN_RE, END_RE, META_RE, META_MORE_RE
+        meta = {}
+        key = None
+        if lines and BEGIN_RE.match(lines[0]):
+            lines.pop(0)
+        while lines:
+            line = lines.pop(0)
+            m1 = META_RE.match(line)
+            if line.strip() == '' or END_RE.match(line):
+                break  # blank line or end of YAML header - done
+            if m1:
+                key = m1.group('key').lower().strip()
+                value = m1.group('value').strip()
+                try:
+                    meta[key].append(value)
+                except KeyError:
+                    meta[key] = [value]
+            else:
+                m2 = META_MORE_RE.match(line)
+                if m2 and key:
+                    # Add another line to existing key
+                    meta[key].append(m2.group('value').strip())
+                else:
+                    lines.insert(0, line)
+                    break  # no meta data - done
+        return meta
 
 
 class HtmlPage(Page):

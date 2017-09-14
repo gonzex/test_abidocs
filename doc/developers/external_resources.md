@@ -1,5 +1,5 @@
 ---
-rpath: developers/external_resources.md
+rpath: /developers/external_resources.md
 light_gallery: true
 ---
 

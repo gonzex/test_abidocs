@@ -1,6 +1,7 @@
 ---
 authors: MG, MS
-rpath: theory/bse.md
+description: introduction to the Bethe-Salpeter formalism
+rpath: /theory/bse.md
 ---
 
 # Bethe-Salpeter equation in ABINIT  

@@ -1,6 +1,6 @@
 ---
 authors: XG, RC
-rpath: tutorials/rf1.md
+rpath: /tutorials/rf1.md
 ---
 
 # First lesson on DFPT  

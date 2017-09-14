@@ -1,6 +1,6 @@
 ---
 authors: MG, XG
-rpath: developers/abimkdocs.md
+rpath: /developers/abimkdocs.md
 ---
 
 *Proof of concept* website available at <https://gmatteo.github.io/test_abidocs/>
@@ -331,7 +331,7 @@ for topic "parallelism" and topic "GW".
 As values in the `~abinit/doc/input_variables/origin_files/abinit_vars.yml` file, 
 you can specify numbers, string, arrays, following the standard specification of YAML:
 
-* [Wikipedia YAML page]([http://en.wikipedia.org/wiki/YAML)
+* [Wikipedia YAML page](http://en.wikipedia.org/wiki/YAML)
 * [The official YAML page](http://www.yaml.org/)
 
 Several "types" are defined to allow sufficient flexibility in the specifications, as follows.

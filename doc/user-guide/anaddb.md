@@ -1,6 +1,6 @@
 ---
 authors: XG, DCA
-rpath: user-guide/anaddb.md
+rpath: /user-guide/anaddb.md
 ---
 
 # the Anaddb utility  

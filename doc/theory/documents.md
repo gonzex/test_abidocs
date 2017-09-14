@@ -1,4 +1,5 @@
 ---
+description: List of PDF files provided by the Abinit documentation
 rpath: /theory/documents.md
 ---
 <!--

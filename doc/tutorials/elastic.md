@@ -1,6 +1,6 @@
 ---
 authors: DRH
-rpath: tutorials/elastic.md
+rpath: /tutorials/elastic.md
 ---
 
 # Lesson on elastic properties  

@@ -1,5 +1,5 @@
 ---
-rpath: index.md
+rpath: /index.md
 ---
 
 ### **0\. Foreword**

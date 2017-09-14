@@ -1,6 +1,6 @@
 ---
 authors: BAmadon
-rpath: tutorials/ucalc_crpa.md
+rpath: /tutorials/ucalc_crpa.md
 ---
 
 # Calculation of U and J using cRPA  

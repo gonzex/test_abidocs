@@ -1,6 +1,6 @@
 ---
 authors: PCasek, FF, XG
-rpath: user-guide/aim.md
+rpath: /user-guide/aim.md
 ---
 
 # the AIM utility  

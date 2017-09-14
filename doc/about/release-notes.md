@@ -1,5 +1,5 @@
 ---
-rpath: about/release-notes.md
+rpath: /about/release-notes.md
 ---
 
 ## v8.4

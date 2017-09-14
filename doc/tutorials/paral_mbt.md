@@ -1,6 +1,6 @@
 ---
 authors: MG, MS
-rpath: tutorials/paral_mbt.md
+rpath: /tutorials/paral_mbt.md
 ---
 
 # Parallelism for many-body calculations  

@@ -1,6 +1,6 @@
 ---
 authors: PhG,  MVeithen,  XG
-rpath: tutorials/ffield.md
+rpath: /tutorials/ffield.md
 ---
 
 # Lesson on polarization and finite electric fields  

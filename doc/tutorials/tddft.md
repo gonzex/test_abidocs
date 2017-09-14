@@ -1,6 +1,6 @@
 ---
 authors: XG
-rpath: tutorials/tddft.md
+rpath: /tutorials/tddft.md
 ---
 
 # Lesson on TDDFT  

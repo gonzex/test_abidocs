@@ -1,6 +1,6 @@
 ---
 authors: XG
-rpath: about/contributing.md
+rpath: /about/contributing.md
 ---
 
 

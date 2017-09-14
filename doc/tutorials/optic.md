@@ -1,6 +1,6 @@
 ---
 authors: SS, XG, YG
-rpath: tutorials/optic.md
+rpath: /tutorials/optic.md
 ---
 
 # Lesson on optical properties  

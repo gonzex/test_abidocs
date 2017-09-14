@@ -1,6 +1,6 @@
 ---
 authors: XG, RC
-rpath: tutorials/base2.md
+rpath: /tutorials/base2.md
 ---
 
 # Second (basic) lesson  

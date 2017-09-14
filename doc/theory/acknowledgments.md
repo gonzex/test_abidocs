@@ -1,4 +1,5 @@
 ---
+description: suggested acknowledgments and references
 rpath: /theory/acknowledgments.md
 ---
 <!--

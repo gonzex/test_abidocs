@@ -1,6 +1,6 @@
 ---
 authors: XG, RC
-rpath: tutorials/paral_dfpt.md
+rpath: /tutorials/paral_dfpt.md
 ---
 
 # Parallelism in the DFPT formalism  

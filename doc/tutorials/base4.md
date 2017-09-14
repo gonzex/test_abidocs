@@ -1,6 +1,6 @@
 ---
 authors: XG, RC
-rpath: tutorials/base4.md
+rpath: /tutorials/base4.md
 ---
 
 # Fourth (basic) lesson  

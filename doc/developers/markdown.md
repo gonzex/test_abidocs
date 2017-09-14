@@ -1,7 +1,7 @@
 ---
 authors: MG, XG
 plotly: true
-rpath: developers/markdown.md
+rpath: /developers/markdown.md
 ---
 
 # Writing Documentation
