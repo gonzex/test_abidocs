@@ -21,7 +21,8 @@ The bibtex file is available [here](../abiref.bib).
 Abrikosov, A.A., Gorkov, L.P., Dzyaloshinskii, E.  
 Methods of quantum field theory in statistical physics  
 Dover, New-York ****,  (1975)  
-DOI: <a href="https://doi.org/" target="_blank">https://doi.org/</a><br><!-- Links -->
+DOI: <https://doi.org/>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Abrikosov1975">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Abrikosov1975" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Abrikosov1975">
   <div class="modal-dialog modal-lg" role="document">
@@ -58,7 +59,8 @@ Referred to in: [/topics/GW](/topics/GW)
 Albrecht, S., Reining, L., Del Sole, R., Onida, G.  
 Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors  
 Phys. Rev. Lett. **80**, 4510--4513 (1998)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.80.4510" target="_blank">https://doi.org/10.1103/PhysRevLett.80.4510</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.80.4510>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Albrecht1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Albrecht1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Albrecht1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -302,7 +304,8 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Amadon, B., Biermann, S., Georges, A., Aryasetiawan, F.  
 The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven  
 Phys. Rev. Lett. **96**, 066402 (2006)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.96.066402" target="_blank">https://doi.org/10.1103/PhysRevLett.96.066402</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.96.066402>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2006">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2006">
   <div class="modal-dialog modal-lg" role="document">
@@ -341,7 +344,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 Amadon, B., Lechermann, F., Georges, A., Jollet, F., Wehling, T. O., Liechtenstein, A. I.  
 Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals  
 Phys. Rev. B **77**, 205112 (2008)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.77.205112" target="_blank">https://doi.org/10.1103/PhysRevB.77.205112</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.77.205112>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2008">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008">
   <div class="modal-dialog modal-lg" role="document">
@@ -382,7 +386,8 @@ Referred to in: [/developers/markdown](/developers/markdown), [/theory/acknowled
 Amadon, B., Jollet, F., Torrent, M.  
 $\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters  
 Phys. Rev. B **77**, 155104 (2008)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.77.155104" target="_blank">https://doi.org/10.1103/PhysRevB.77.155104</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.77.155104>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2008a">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2008a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008a">
   <div class="modal-dialog modal-lg" role="document">
@@ -421,7 +426,8 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U), [/topics/DMFT](/topics/DMFT), [/
 Amadon, B.  
 A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}  
 J. Phys.: Cond. Matt. **24**, 075604 (2012)  
-URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604" target="_blank">http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604</a><br><!-- Links -->
+URL: <http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2012">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2012">
   <div class="modal-dialog modal-lg" role="document">
@@ -461,7 +467,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 Amadon, B., Applencourt, T., Bruneval, F.  
 Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium  
 Phys. Rev. B **89**, 125110 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.89.125110" target="_blank">https://doi.org/10.1103/PhysRevB.89.125110</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.89.125110>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -499,7 +506,8 @@ Referred to in: [/topics/CRPA](/topics/CRPA), [/tutorials/ucalc_crpa](/tutorials
 Amadon, B., Gerossier, A.  
 Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals  
 Phys. Rev. B **91**, 161103 (2015)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.91.161103" target="_blank">https://doi.org/10.1103/PhysRevB.91.161103</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.91.161103>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Amadon2015">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Amadon2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2015">
   <div class="modal-dialog modal-lg" role="document">
@@ -571,7 +579,8 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Anisimov, V. I., Gunnarsson, O.  
 Density-functional calculation of effective Coulomb interactions in metals  
 Phys. Rev. B **43**, 7570--7574 (1991)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.43.7570" target="_blank">https://doi.org/10.1103/PhysRevB.43.7570</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.43.7570>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Anisimov1991">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Anisimov1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Anisimov1991">
   <div class="modal-dialog modal-lg" role="document">
@@ -677,7 +686,8 @@ Phys. Rev. B **92**, 085137 (2015)
 Arponen, J., Pajanne, E.  
 Angular correlation in positron annihilation  
 J. Phys. F **9**, 2359 (1979)  
-DOI: <a href="https://doi.org/10.1088/0305-4608/9/12/009" target="_blank">https://doi.org/10.1088/0305-4608/9/12/009</a><br><!-- Links -->
+DOI: <https://doi.org/10.1088/0305-4608/9/12/009>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Arponen1979">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Arponen1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Arponen1979">
   <div class="modal-dialog modal-lg" role="document">
@@ -711,7 +721,8 @@ DOI: <a href="https://doi.org/10.1088/0305-4608/9/12/009" target="_blank">https:
 Aryasetiawan, F., Imada, M., Georges, A., Kotliar, G., Biermann, S., Liechtenstein, A. I.  
 Frequency-dependent local interactions and low-energy effective models from electronic structure calculations  
 Phys. Rev. B **70**, 195104-- (2004)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.70.195104" target="_blank">https://doi.org/10.1103/PhysRevB.70.195104</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.70.195104>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Aryasetiawan2004">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Aryasetiawan2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Aryasetiawan2004">
   <div class="modal-dialog modal-lg" role="document">
@@ -852,7 +863,8 @@ Phys. Rev. B **78**, 035105 (2008)
 Bachelet, G.B., Hamann, D.R., Schl\"uter, M.  
 Pseudopotentials that work: From {H} to {P}u  
 Phys. Rev. B **26**, 4199--4228 (1982)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.26.4199" target="_blank">https://doi.org/10.1103/PhysRevB.26.4199</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.26.4199>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bachelet1982">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bachelet1982" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bachelet1982">
   <div class="modal-dialog modal-lg" role="document">
@@ -888,7 +900,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.26.4199" target="_blank">https://
 Bader, R. F. W.  
 Atoms in Molecules: A Quantum Theory  
 Oxford University Press. **ISBN 978-0-19-855865-1**,  (1994)  
-URL: <a href="" target="_blank"></a><br><!-- Links -->
+URL: <>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bader1994">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bader1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bader1994">
   <div class="modal-dialog modal-lg" role="document">
@@ -924,7 +937,8 @@ URL: <a href="" target="_blank"></a><br><!-- Links -->
 Barbiellini, B., Puska, M. J., Korhonen, T., Harju, A., Torsti, T., Nieminen, R. M.  
 Calculation of positron states and annihilation in solids: A density-gradient-correction scheme  
 Phys. Rev. B **53**, 16201 (1996)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.53.16201" target="_blank">https://doi.org/10.1103/PhysRevB.53.16201</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.53.16201>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Barbiellini1996">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Barbiellini1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Barbiellini1996">
   <div class="modal-dialog modal-lg" role="document">
@@ -993,7 +1007,8 @@ Phys. Rev. Lett. **58**, 1861--1864 (1987)
 Becke, A. D., Edgecombe, K. E.  
 A simple measure of electron localization in atomic and molecular systems  
 J. Chem. Phys. **92**, 5397-5403 (1990)  
-URL: <a href="http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517" target="_blank">http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517</a><br><!-- Links -->
+URL: <http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Becke1990">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Becke1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Becke1990">
   <div class="modal-dialog modal-lg" role="document">
@@ -1029,7 +1044,8 @@ URL: <a href="http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.45
 Benedict, L. X., Shirley, E. L., Bohn, R. B.  
 Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation  
 Phys. Rev. Lett. **80**, 4514--4517 (1998)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.80.4514" target="_blank">https://doi.org/10.1103/PhysRevLett.80.4514</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.80.4514>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Benedict1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Benedict1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Benedict1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -1171,7 +1187,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 Bieder, J., Amadon, B.  
 Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles  
 Phys. Rev. B **89**, 195132 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.89.195132" target="_blank">https://doi.org/10.1103/PhysRevB.89.195132</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.89.195132>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bieder2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bieder2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bieder2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -1243,7 +1260,8 @@ Referred to in: [/variables/paw](/variables/paw)
 Bl\"{o}chl, P.E.  
 Projector augmented-wave method  
 Phys. Rev. B **50**, 17953-17979 (1994)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.50.17953" target="_blank">https://doi.org/10.1103/PhysRevB.50.17953</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.50.17953>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bloechl1994">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bloechl1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994">
   <div class="modal-dialog modal-lg" role="document">
@@ -1278,7 +1296,8 @@ Referred to in: [/tutorials/paw1](/tutorials/paw1)
 Bl\"ochl, Peter E., Jepsen, O., Andersen, O. K.  
 Improved tetrahedron method for Brillouin-zone integrations  
 Phys. Rev. B **49**, 16223--16233 (1994)  
-URL: <a href="https://link.aps.org/doi/10.1103/PhysRevB.49.16223" target="_blank">https://link.aps.org/doi/10.1103/PhysRevB.49.16223</a><br><!-- Links -->
+URL: <https://link.aps.org/doi/10.1103/PhysRevB.49.16223>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bloechl1994a">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bloechl1994a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994a">
   <div class="modal-dialog modal-lg" role="document">
@@ -1351,7 +1370,8 @@ Comp. Phys. Comm. **107**, 187 (1997)
 Boro\'nski, E., Nieminen, R. M.  
 Electron-positron density-functional theory  
 Phys. Rev. B **34**, 3820 (1986)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.34.3820" target="_blank">https://doi.org/10.1103/PhysRevB.34.3820</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.34.3820>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Boronski1986">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Boronski1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Boronski1986">
   <div class="modal-dialog modal-lg" role="document">
@@ -1423,7 +1443,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/GWl
 Bousquet, E., Spaldin, N. A., Delaney, K. T.  
 Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity  
 Phys. Rev. Lett. **106**, 107202 (2011)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.106.107202" target="_blank">https://doi.org/10.1103/PhysRevLett.106.107202</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.106.107202>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bousquet2011">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bousquet2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bousquet2011">
   <div class="modal-dialog modal-lg" role="document">
@@ -1492,7 +1513,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Bruneval, F., Gonze, X.  
 Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems  
 Phys. Rev. B **78**, 085125 (2008)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.78.085125" target="_blank">https://doi.org/10.1103/PhysRevB.78.085125</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.78.085125>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bruneval2008">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bruneval2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2008">
   <div class="modal-dialog modal-lg" role="document">
@@ -1530,7 +1552,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/RPA
 Bruneval, F.  
 Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects  
 Phys. Rev. Lett. **108**, 256403 (2012)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.108.256403" target="_blank">https://doi.org/10.1103/PhysRevLett.108.256403</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.108.256403>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bruneval2012">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bruneval2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2012">
   <div class="modal-dialog modal-lg" role="document">
@@ -1568,7 +1591,8 @@ Referred to in: [/topics/RPACorrEn](/topics/RPACorrEn)
 Bruneval, F., Crocombette, J.-P., Gonze, X., Dorado, B., Torrent, M., Jollet, F.  
 Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited  
 Phys. Rev. B **89**, 045116 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.89.045116" target="_blank">https://doi.org/10.1103/PhysRevB.89.045116</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.89.045116>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Bruneval2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Bruneval2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -1641,7 +1665,8 @@ Phys. Rev. B **72**, 054112 (2005)
 Campillo, I., Pitarke, J. M., Eguiluz, A. G.  
 Electronic stopping power of aluminum crystal  
 Phys. Rev. B **58**, 10307 - 10314 (1998)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.58.10307" target="_blank">https://doi.org/10.1103/PhysRevB.58.10307</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.58.10307>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Campillo1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Campillo1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Campillo1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -1677,7 +1702,8 @@ Referred to in: [/topics/RandStopPow](/topics/RandStopPow)
 Cappellini, G., Del Sole, R., Reining, L., Bechstedt, F.  
 Model dielectric function for semiconductors  
 Phys. Rev. B **47**, 9892--9895 (1993)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.47.9892" target="_blank">https://doi.org/10.1103/PhysRevB.47.9892</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.47.9892>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Cappellini1993">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Cappellini1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cappellini1993">
   <div class="modal-dialog modal-lg" role="document">
@@ -1716,7 +1742,8 @@ Referred to in: [/topics/BSE](/topics/BSE)
 Caracas, R., Cohen, R.E.  
 Prediction of polar ordered oxynitride perovskites  
 J. Appl. Phys. Lett. **91**, 092902 (2007)  
-DOI: <a href="https://doi.org/10.1063/1.2776370" target="_blank">https://doi.org/10.1063/1.2776370</a><br><!-- Links -->
+DOI: <https://doi.org/10.1063/1.2776370>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Caracas2007">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Caracas2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007">
   <div class="modal-dialog modal-lg" role="document">
@@ -1753,7 +1780,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Caracas, R., Cohen, R.E.  
 Post-perovskite phase in selected sesquioxides from density-functional calculations  
 Phys. Rev. B **76**, 184101 (2007)  
-DOI: <a href="https://doi.org/" target="_blank">https://doi.org/</a><br><!-- Links -->
+DOI: <https://doi.org/>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Caracas2007a">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Caracas2007a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007a">
   <div class="modal-dialog modal-lg" role="document">
@@ -1790,7 +1818,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Caracas, R.  
 Dynamical Instabilities of Ice X  
 Phys. Rev. Lett. **101**, 085502 (2008)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.101.085502" target="_blank">https://doi.org/10.1103/PhysRevLett.101.085502</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.101.085502>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Caracas2008">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Caracas2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2008">
   <div class="modal-dialog modal-lg" role="document">
@@ -1827,7 +1856,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Casida, Mark E., Jamorski, Christine, Casida, Kim C., Salahub, Dennis R.  
 Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold  
 J. Chem. Phys. **108**, 4439 (1998)  
-DOI: <a href="https://doi.org/10.1063/1.475855" target="_blank">https://doi.org/10.1063/1.475855</a><br><!-- Links -->
+DOI: <https://doi.org/10.1063/1.475855>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Casida1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Casida1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Casida1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -1896,7 +1926,8 @@ Referred to in: [/tutorials/tddft](/tutorials/tddft)
 Cococcioni, M., de Gironcoli, S.  
 Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method  
 Phys. Rev. B **71**, 035105 (2005)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.71.035105" target="_blank">https://doi.org/10.1103/PhysRevB.71.035105</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.71.035105>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Cococcioni2005">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Cococcioni2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cococcioni2005">
   <div class="modal-dialog modal-lg" role="document">
@@ -2038,7 +2069,8 @@ Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, 
 Dion, M., Rydberg, H., Schr\"oder, E., Langreth, D. C., Lundqvist, B. I.  
 Van der Waals Density Functional for General Geometries  
 Phys. Rev. Lett. **92**, 246401 (2004)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.92.246401" target="_blank">https://doi.org/10.1103/PhysRevLett.92.246401</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.92.246401>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Dion2004">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Dion2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Dion2004">
   <div class="modal-dialog modal-lg" role="document">
@@ -2212,7 +2244,8 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 Freund, R. W., Nachtigal, N. M.  
 Software for simplified {L}anczos and {QMR} algorithms  
 Applied Numerical Mathematics **19**, 319 (1995)  
-DOI: <a href="https://doi.org/10.1016/0168-9274(95)00089-5" target="_blank">https://doi.org/10.1016/0168-9274(95)00089-5</a><br><!-- Links -->
+DOI: <https://doi.org/10.1016/0168-9274(95)00089-5>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Freund1995">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Freund1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Freund1995">
   <div class="modal-dialog modal-lg" role="document">
@@ -2247,7 +2280,8 @@ Referred to in: [/topics/GWls](/topics/GWls)
 Fuchs, M., Scheffler, M.  
 Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory  
 Comp. Phys. Comm. **119**, 67 - 98 (1999)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/S001046559800201X" target="_blank">http://www.sciencedirect.com/science/article/pii/S001046559800201X</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/S001046559800201X>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Fuchs1999">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Fuchs1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fuchs1999">
   <div class="modal-dialog modal-lg" role="document">
@@ -2285,7 +2319,8 @@ URL: <a href="http://www.sciencedirect.com/science/article/pii/S001046559800201X
 Garrity, K.F., Bennett, J.W., Rabe, K.M., Vanderbilt, D.  
 Pseudopotentials for high-throughput {DFT} calculations  
 Comp. Mat. Sci. **81**, 446 - 452 (2014)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025613005077" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025613005077</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/S0927025613005077>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Garrity2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Garrity2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Garrity2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -2494,7 +2529,8 @@ J. Chem. Phys. **131**, 034103 (2009)
 Georges, A., Kotliar, G., Krauth, W., Rozenberg, M.J.  
 Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions  
 Rev. Mod. Phys. **68**, 13--125 (1996)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.68.13" target="_blank">https://doi.org/10.1103/RevModPhys.68.13</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.68.13>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Georges1996">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Georges1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges1996">
   <div class="modal-dialog modal-lg" role="document">
@@ -2531,7 +2567,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 Georges, A.  
 Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure  
 {AIP} {C}onf. {P}roc. **715**, 3--74 (2004)  
-DOI: <a href="https://doi.org/10.1063/1.1800733" target="_blank">https://doi.org/10.1063/1.1800733</a><br><!-- Links -->
+DOI: <https://doi.org/10.1063/1.1800733>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Georges2004">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Georges2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges2004">
   <div class="modal-dialog modal-lg" role="document">
@@ -2572,7 +2609,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 Giannozzi, P., Baroni, S., Bonini, N., Calandra, M., Car, R., Cavazzoni, C., Ceresoli, D., Chiarotti, G.L., Cococcioni, M., Dabo, I., Dal Corso, A., de Gironcoli, S., Fabris, S., Fratesi, G., Gebauer, R., Gerstmann, U., Gougoussis, C., Kokalj, A., Lazzeri, M., Martin-Samos, L., Marzari, N., Mauri, F., Mazzarello, R., Paolini, S., Pasquarello, A., Paulatto, L., Sbraccia, C., Scandolo, S., Sclauzero, G., Seitsonen, A.P., Smogunov, A., Umari, P., Wentzcovitch, R.M.  
 {QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials  
 J. Phys.: Cond. Matt. **21**, 395502 (2009)  
-URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502" target="_blank">http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502</a><br><!-- Links -->
+URL: <http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Giannozzi2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Giannozzi2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giannozzi2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -2608,7 +2646,8 @@ Referred to in: [/topics/Coulomb](/topics/Coulomb)
 Giantomassi, M., Stankovski, M., Shaltaf, R., Gruning, M., Bruneval, F., Rinke, P., Rignanese, G.M.  
 {Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}  
 Physica Status Solidi B **248**, 275--289 (2011)  
-DOI: <a href="https://doi.org/10.1002/pssb.201046094" target="_blank">https://doi.org/10.1002/pssb.201046094</a><br><!-- Links -->
+DOI: <https://doi.org/10.1002/pssb.201046094>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Giantomassi2011">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Giantomassi2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giantomassi2011">
   <div class="modal-dialog modal-lg" role="document">
@@ -2644,7 +2683,8 @@ Referred to in: [/topics/BSE](/topics/BSE), [/topics/GWls](/topics/GWls)
 Gillet, Y., Giantomassi, M., Gonze, X.  
 First-principles study of excitonic effects in Raman intensities  
 Phys. Rev. B **88**, 094305 (2013)  
-URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.88.094305" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.88.094305</a><br><!-- Links -->
+URL: <http://link.aps.org/doi/10.1103/PhysRevB.88.094305>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gillet2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gillet2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -2684,7 +2724,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Gillet, Y., Giantomassi, M., Gonze, X.  
 Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra  
 Comput. Phys. Comm. **203C**, 83-93 (2016)  
-DOI: <a href="https://doi.org/10.1016/j.cpc.2016.02.008" target="_blank">https://doi.org/10.1016/j.cpc.2016.02.008</a><br><!-- Links -->
+DOI: <https://doi.org/10.1016/j.cpc.2016.02.008>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gillet2015">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gillet2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2015">
   <div class="modal-dialog modal-lg" role="document">
@@ -2755,7 +2796,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Godby, R. W., Needs, R. J.  
 Metal-insulator transition in Kohn-Sham theory and quasiparticle theory  
 Phys. Rev. Lett. **62**, 1169 (1989)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.62.1169" target="_blank">https://doi.org/10.1103/PhysRevLett.62.1169</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.62.1169>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Godby1989">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Godby1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Godby1989">
   <div class="modal-dialog modal-lg" role="document">
@@ -2828,7 +2870,8 @@ Referred to in: [/variables/basic](/variables/basic)
 Gonze, X., Stumpf, R., Scheffler, M.  
 Analysis of separable potentials  
 Phys. Rev. B **44**, 8503--8513 (1991)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.44.8503" target="_blank">https://doi.org/10.1103/PhysRevB.44.8503</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.44.8503>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gonze1991">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gonze1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1991">
   <div class="modal-dialog modal-lg" role="document">
@@ -2865,7 +2908,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.44.8503" target="_blank">https://
 Gonze, X.  
 Adiabatic density-functional perturbation theory  
 Phys. Rev. A **52**, 1096--1114 (1995)  
-DOI: <a href="https://doi.org/10.1103/PhysRevA.52.1096" target="_blank">https://doi.org/10.1103/PhysRevA.52.1096</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevA.52.1096>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gonze1995">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gonze1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1995">
   <div class="modal-dialog modal-lg" role="document">
@@ -3104,7 +3148,8 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 Gonze, X., Jollet, F., Araujo, F. Abreu, Adams, D., Amadon, B., Applencourt, T., Audouze, C., Beuken, J.-M., Bieder, J., Bokhanchuk, A., Bousquet, E., Bruneval, F., Caliste, D., C\^ot\'e, M., Dahm, F., Pieve, F. Da, Delaveau, M., Gennaro, M. Di, Dorado, B., Espejo, C., Geneste, G., Genovese, L., Gerossier, A., Giantomassi, M., Gillet, Y., Hamann, D.R., He, L., Jomard, G., Janssen, J. Laflamme, Roux, S. Le, Levitt, A., Lherbier, A., Liu, F., Lukacevic, I., Martin, A., Martins, C., Oliveira, M.J.T., Ponc\'e, S., Pouillon, Y., Rangel, T., Rignanese, G.-M., Romero, A.H., Rousseau, B., Rubel, O., Shukri, A.A., Stankovski, M., Torrent, M., Setten, M.J. Van, troeye, B. Van, Verstraete, M.J., Waroquier, D., Wiktor, J., Xue, B., Zhou, A., Zwanziger, J.W.  
 Recent developments in the {ABINIT} software package  
 Computer Physics Communications **205**, 106 (2016)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/S0010465516300923" target="_blank">http://www.sciencedirect.com/science/article/pii/S0010465516300923</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/S0010465516300923>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gonze2016">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gonze2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2016">
   <div class="modal-dialog modal-lg" role="document">
@@ -3276,7 +3321,8 @@ North-Holland (1981)
 Gull, E., Millis, A.J., Liechtenstein, A. I., Rubtsov, A.N., Troyer, M., Werner, P.  
 Continuous-time Monte Carlo methods for quantum impurity models  
 Rev. Mod. Phys. **83**, 349--404 (2011)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.83.349" target="_blank">https://doi.org/10.1103/RevModPhys.83.349</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.83.349>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Gull2011">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Gull2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gull2011">
   <div class="modal-dialog modal-lg" role="document">
@@ -3318,7 +3364,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 Hamann, D.R., Schl\"uter, M., Chiang, C.  
 Norm-Conserving Pseudopotentials  
 Phys. Rev. Lett. **43**, 1494--1497 (1979)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.43.1494" target="_blank">https://doi.org/10.1103/PhysRevLett.43.1494</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.43.1494>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hamann1979">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hamann1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1979">
   <div class="modal-dialog modal-lg" role="document">
@@ -3354,7 +3401,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevLett.43.1494" target="_blank">https
 Hamann, D. R.  
 Generalized norm-conserving pseudopotentials  
 Phys. Rev. B **40**, 2980--2987 (1989)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.40.2980" target="_blank">https://doi.org/10.1103/PhysRevB.40.2980</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.40.2980>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hamann1989">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hamann1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1989">
   <div class="modal-dialog modal-lg" role="document">
@@ -3425,7 +3473,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/Ela
 Hamann, D. R.  
 Optimized norm-conserving Vanderbilt pseudopotentials  
 Phys. Rev. B **88**, 085117 (2013)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.88.085117" target="_blank">https://doi.org/10.1103/PhysRevB.88.085117</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.88.085117>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hamann2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hamann2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -3497,7 +3546,8 @@ Lecture Notes in Computer Science **7782**, 3--26 (2013)
 Harl, J., Schimka, L., Kresse, G.  
 Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids  
 Phys. Rev. B **81**, 115126 (2010)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.81.115126" target="_blank">https://doi.org/10.1103/PhysRevB.81.115126</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.81.115126>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Harl2010">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Harl2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Harl2010">
   <div class="modal-dialog modal-lg" role="document">
@@ -3569,7 +3619,8 @@ Phys. Rev. B **58**, 3641--3662 (1998)
 Haydock, R.  
 The recursive solution of the {S}chr\"{o}dinger equation  
 Comp. Phys. Comm. **20**, 11 - 16 (1980)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/0010465580901010" target="_blank">http://www.sciencedirect.com/science/article/pii/0010465580901010</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/0010465580901010>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Haydock1980">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Haydock1980" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Haydock1980">
   <div class="modal-dialog modal-lg" role="document">
@@ -3608,7 +3659,8 @@ Referred to in: [/topics/BSE](/topics/BSE)
 He, L., Liu, F., Hautier, G., Oliveira, M. J. T., Marques, M. A. L., Vila, F. D., Rehr, J. J., Rignanese, G.-M., Zhou, A.  
 Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations  
 Phys. Rev. B **89**, 064305 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.89.064305" target="_blank">https://doi.org/10.1103/PhysRevB.89.064305</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.89.064305>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-He2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-He2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-He2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -3747,7 +3799,8 @@ Referred to in: [/topics/TransPath](/topics/TransPath)
 Hermet, P., Veithen, M., Ghosez, P.  
 Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.  
 J. Phys. : Condens. Matter **21**, 215901 (2009)  
-DOI: <a href="https://doi.org/10.1088/0953-8984/21/21/215901" target="_blank">https://doi.org/10.1088/0953-8984/21/21/215901</a><br><!-- Links -->
+DOI: <https://doi.org/10.1088/0953-8984/21/21/215901>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hermet2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hermet2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hermet2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -3784,7 +3837,8 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Hohenberg, P., Kohn, W.  
 Inhomogeneous Electron Gas  
 Phys. Rev. **136**, B864--B871 (1964)  
-DOI: <a href="https://doi.org/10.1103/PhysRev.136.B864" target="_blank">https://doi.org/10.1103/PhysRev.136.B864</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRev.136.B864>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hohenberg1964">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hohenberg1964" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hohenberg1964">
   <div class="modal-dialog modal-lg" role="document">
@@ -3853,7 +3907,8 @@ Comp. Phys. Comm. **135**, 329 (2001)
 Hughes, J. L. P., Sipe, J. E.  
 Calculation of second-order optical response in semiconductors  
 Phys. Rev. B **53**, 10751--10763 (1996)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.53.10751" target="_blank">https://doi.org/10.1103/PhysRevB.53.10751</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.53.10751>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hughes1996">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hughes1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hughes1996">
   <div class="modal-dialog modal-lg" role="document">
@@ -3891,7 +3946,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.53.10751" target="_blank">https:/
 Hybertsen, M. S., Louie, S. G.  
 Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies  
 Phys. Rev. B **34**, 5390 (1986)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.34.5390" target="_blank">https://doi.org/10.1103/PhysRevB.34.5390</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.34.5390>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Hybertsen1986">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Hybertsen1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hybertsen1986">
   <div class="modal-dialog modal-lg" role="document">
@@ -3927,7 +3983,8 @@ Referred to in: [/topics/SelfEnergy](/topics/SelfEnergy)
 Laflamme Janssen, J., Rousseau, B., C{\^o}t{\'e}, M.  
 Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations  
 Phys. Rev. B **91**, 125120 (2015)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.91.125120" target="_blank">https://doi.org/10.1103/PhysRevB.91.125120</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.91.125120>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Janssen2015">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Janssen2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Janssen2015">
   <div class="modal-dialog modal-lg" role="document">
@@ -4134,7 +4191,8 @@ Phys. rev. B **47**, 1651--1654 (1993)
 Kohn, W., Sham, L. J.  
 Self-Consistent Equations Including Exchange and Correlation Effects  
 Phys. Rev. **140**, A1133--A1138 (1965)  
-DOI: <a href="https://doi.org/10.1103/PhysRev.140.A1133" target="_blank">https://doi.org/10.1103/PhysRev.140.A1133</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRev.140.A1133>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Kohn1965">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Kohn1965" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kohn1965">
   <div class="modal-dialog modal-lg" role="document">
@@ -4203,7 +4261,8 @@ Rev. Mod. Phys. **32**, 219 (1960)
 Kotliar, G., Savrasov, S. Y., Haule, K., Oudovenko, V. S., Parcollet, O., Marianetti, C. A.  
 Electronic structure calculations with dynamical mean-field theory  
 Rev. Mod. Phys. **78**, 865--951 (2006)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.78.865" target="_blank">https://doi.org/10.1103/RevModPhys.78.865</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.78.865>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Kotliar2006">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Kotliar2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kotliar2006">
   <div class="modal-dialog modal-lg" role="document">
@@ -4244,7 +4303,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 Kresse, G., Joubert, D.  
 From ultrasoft pseudopotentials to the projector augmented-wave method  
 Phys. Rev. B **59**, 1758--1775 (1999)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.59.1758" target="_blank">https://doi.org/10.1103/PhysRevB.59.1758</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.59.1758>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Kresse1999">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Kresse1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kresse1999">
   <div class="modal-dialog modal-lg" role="document">
@@ -4483,7 +4543,8 @@ Referred to in: [/topics/parallelism](/topics/parallelism)
 Liechtenstein, A. I., Anisimov, V. I., Zaanen, J.  
 Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators  
 Phys. Rev. B **52**, R5467--R5470 (1995)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.52.R5467" target="_blank">https://doi.org/10.1103/PhysRevB.52.R5467</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.52.R5467>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Liechtenstein1995">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Liechtenstein1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Liechtenstein1995">
   <div class="modal-dialog modal-lg" role="document">
@@ -4559,7 +4620,8 @@ Referred to in: [/topics/RandStopPow](/topics/RandStopPow)
 Luttinger, J.M., Kohn, W.  
 {Motion of Electrons and Holes in Perturbed Periodic Fields}  
 Phys. Rev. **97**, 869--883 (1955)  
-DOI: <a href="https://doi.org/10.1103/PhysRev.97.869" target="_blank">https://doi.org/10.1103/PhysRev.97.869</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRev.97.869>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Luttinger1955">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Luttinger1955" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Luttinger1955">
   <div class="modal-dialog modal-lg" role="document">
@@ -4699,7 +4761,8 @@ J. Phys.: Cond. Matt. **26**, 1--15 (2014)
 Marques, M. A. L., Oliveira, M. J. T., Burnus, T.  
 {Libxc: A library of exchange and correlation functionals for density functional theory}  
 Comput. Phys. Commun. **183**, 2272--2281 (2012)  
-DOI: <a href="https://doi.org/10.1016/j.cpc.2012.05.007" target="_blank">https://doi.org/10.1016/j.cpc.2012.05.007</a><br><!-- Links -->
+DOI: <https://doi.org/10.1016/j.cpc.2012.05.007>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Marques2012">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Marques2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marques2012">
   <div class="modal-dialog modal-lg" role="document">
@@ -4768,7 +4831,8 @@ Referred to in: [/topics/PIMD](/topics/PIMD)
 Mecholsky, N.A., Resca, L., Pegg, I.L., Fornari, M.  
 {Theory of band warping and its effects on thermoelectronic transport properties}  
 Phys. Rev. B **89**, 155131 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.89.155131" target="_blank">https://doi.org/10.1103/PhysRevB.89.155131</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.89.155131>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Mecholsky2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Mecholsky2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Mecholsky2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -4976,7 +5040,8 @@ Referred to in: [/topics/MagMom](/topics/MagMom)
 Nieminen, R. M., Boro\'nski, E., Lantto, L. J.  
 Two-component density-functional theory: Application to positron states  
 Phys. Rev. B **32**, 1377 (1985)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.32.1377" target="_blank">https://doi.org/10.1103/PhysRevB.32.1377</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.32.1377>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Nieminen1985">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Nieminen1985" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Nieminen1985">
   <div class="modal-dialog modal-lg" role="document">
@@ -5047,7 +5112,8 @@ Referred to in: [/topics/Berry](/topics/Berry)
 Ong, S.P., Richards, W.D., Jain, A., Hautier, G., Kocher, M., Cholia, S., Gunter, D., Chevrier, V.L., Persson, K.A., Ceder, G.  
 Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis  
 Comp. Mat. Sci. **68**, 314 - 319 (2013)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025612006295" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025612006295</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/S0927025612006295>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Ong2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Ong2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ong2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -5086,7 +5152,8 @@ URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025612006295
 Onida, G., Reining, L., Rubio, A.  
 Electronic excitations: density-functional versus many-body Green's-function approaches  
 Rev. Mod. Phys. **74**, 601--659 (2002)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.74.601" target="_blank">https://doi.org/10.1103/RevModPhys.74.601</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.74.601>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Onida2002">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Onida2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Onida2002">
   <div class="modal-dialog modal-lg" role="document">
@@ -5123,7 +5190,8 @@ Referred to in: [/topics/BSE](/topics/BSE), [/topics/GW](/topics/GW)
 Payne, M. C., Teter, M. P., Allan, D. C., Arias, T. A., Joannopoulos, J. D.  
 Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients  
 Rev. Mod. Phys. **64**, 1045--1097 (1992)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.64.1045" target="_blank">https://doi.org/10.1103/RevModPhys.64.1045</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.64.1045>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Payne1992">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Payne1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Payne1992">
   <div class="modal-dialog modal-lg" role="document">
@@ -5229,7 +5297,8 @@ Referred to in: [/topics/Recursion](/topics/Recursion)
 Petrilli, Helena M., Bl\"ochl, Peter E., Blaha, Peter, Schwarz, Karlheinz  
 Electric-field-gradient calculations using the projector augmented wave method  
 Phys. Rev. B **57**, 14690--14697 (1998)  
-URL: <a href="https://link.aps.org/doi/10.1103/PhysRevB.57.14690" target="_blank">https://link.aps.org/doi/10.1103/PhysRevB.57.14690</a><br><!-- Links -->
+URL: <https://link.aps.org/doi/10.1103/PhysRevB.57.14690>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Petrilli1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Petrilli1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Petrilli1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -5269,7 +5338,8 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Pickard, Chris J., Mauri, Francesco  
 All-electron magnetic response with pseudopotentials: NMR chemical shifts  
 Phys. Rev. B **63**, 245101 (2001)  
-URL: <a href="https://link.aps.org/doi/10.1103/PhysRevB.63.245101" target="_blank">https://link.aps.org/doi/10.1103/PhysRevB.63.245101</a><br><!-- Links -->
+URL: <https://link.aps.org/doi/10.1103/PhysRevB.63.245101>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Pickard2001">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Pickard2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pickard2001">
   <div class="modal-dialog modal-lg" role="document">
@@ -5546,7 +5616,8 @@ Comput. Sci. Eng. **13**, 62 (2011)
 Profeta, M., Mauri, F., Pickard, C. J.  
 Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum  
 J. Am. Chem. Soc. **125**, 541 (2003)  
-DOI: <a href="https://doi.org/10.1021/ja027124r" target="_blank">https://doi.org/10.1021/ja027124r</a><br><!-- Links -->
+DOI: <https://doi.org/10.1021/ja027124r>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Profeta2003">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Profeta2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Profeta2003">
   <div class="modal-dialog modal-lg" role="document">
@@ -5583,7 +5654,8 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Puska, M. J., Nieminen, R. M.  
 Theory of positrons in solids and on solid surfaces  
 Rev. Mod. Phys. **66**, 841 (1994)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.66.841" target="_blank">https://doi.org/10.1103/RevModPhys.66.841</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.66.841>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Puska1994">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Puska1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1994">
   <div class="modal-dialog modal-lg" role="document">
@@ -5619,7 +5691,8 @@ DOI: <a href="https://doi.org/10.1103/RevModPhys.66.841" target="_blank">https:/
 Puska, M. J., Seitsonen, A. P., Nieminen, R. M.  
 Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations  
 Phys. Rev. B **52**, 10947 (1995)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.52.10947" target="_blank">https://doi.org/10.1103/PhysRevB.52.10947</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.52.10947>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Puska1995">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Puska1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1995">
   <div class="modal-dialog modal-lg" role="document">
@@ -5690,7 +5763,8 @@ Referred to in: [/topics/Wavelets](/topics/Wavelets)
 Rappe, A.M., Rabe, K.M., Kaxiras, E.S., Joannopoulos, J.D.  
 Optimized pseudopotentials  
 Phys. Rev. B **41**, 1227--1230 (1990)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.41.1227" target="_blank">https://doi.org/10.1103/PhysRevB.41.1227</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.41.1227>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Rappe1990">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Rappe1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rappe1990">
   <div class="modal-dialog modal-lg" role="document">
@@ -5796,7 +5870,8 @@ Referred to in: [/topics/Berry](/topics/Berry)
 Restrepo, O. D., Varga, K., Pantelides, S. T.  
 First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering  
 App. Phys. Lett. **94**,  (2009)  
-URL: <a href="http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189" target="_blank">http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189</a><br><!-- Links -->
+URL: <http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Restrepo2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Restrepo2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Restrepo2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -5833,7 +5908,8 @@ URL: <a href="http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3
 Rieger, M., Steinbeck, L., White, I. D., Rojas, H. N., Godby, R. W.  
 The {GW} space-time method for the self-energy of large systems  
 Comp. Phys. Comm. **117**, 211--228 (1999)  
-DOI: <a href="https://doi.org/10.1016/S0010-4655(98)00174-X" target="_blank">https://doi.org/10.1016/S0010-4655(98)00174-X</a><br><!-- Links -->
+DOI: <https://doi.org/10.1016/S0010-4655(98)00174-X>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Rieger1999">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Rieger1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rieger1999">
   <div class="modal-dialog modal-lg" role="document">
@@ -5869,7 +5945,8 @@ Referred to in: [/topics/GWls](/topics/GWls)
 Rohlfing, M., Louie, S.G.  
 Electron-hole excitations and optical spectra from first principles  
 Phys. Rev. B **62**, 4927--4944 (2000)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.62.4927" target="_blank">https://doi.org/10.1103/PhysRevB.62.4927</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.62.4927>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Rohlfing2000">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Rohlfing2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rohlfing2000">
   <div class="modal-dialog modal-lg" role="document">
@@ -5906,7 +5983,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.62.4927" target="_blank">https://
 Rom\'an-P\'erez, G., Soler, J.M.  
 Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes  
 Phys. Rev. Lett. **103**, 096102 (2009)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.103.096102" target="_blank">https://doi.org/10.1103/PhysRevLett.103.096102</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.103.096102>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Romanperez2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Romanperez2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Romanperez2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -5941,7 +6019,8 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Rostgaard, C.  
 Exact exchange in density functional calculations  
 Technical University of Denmark (2006)  
-URL: <a href="https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf" target="_blank">https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf</a><br><!-- Links -->
+URL: <https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Rostgaard2006">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Rostgaard2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rostgaard2006">
   <div class="modal-dialog modal-lg" role="document">
@@ -6043,7 +6122,8 @@ Numerische Mathematik **16**, 205--223 (1970)
 Sakuma, R., Aryasetiawan, F.  
 First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)  
 Phys. Rev. B **87**, 165118 (2013)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.87.165118" target="_blank">https://doi.org/10.1103/PhysRevB.87.165118</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.87.165118>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Sakuma2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Sakuma2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sakuma2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -6079,7 +6159,8 @@ Referred to in: [/topics/CRPA](/topics/CRPA), [/tutorials/ucalc_crpa](/tutorials
 Savin, A., Jepsen, O., Flad, J., Andersen, O. K., Preuss, H., von Schnering, H. G.  
 Electron Localization in Solid-State Structures of the Elements: the Diamond Structure  
 Angewandte Chemie International Edition in English **31**, 187--188 (1992)  
-DOI: <a href="https://doi.org/10.1002/anie.199201871" target="_blank">https://doi.org/10.1002/anie.199201871</a><br><!-- Links -->
+DOI: <https://doi.org/10.1002/anie.199201871>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Savin1992">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Savin1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Savin1992">
   <div class="modal-dialog modal-lg" role="document">
@@ -6147,7 +6228,8 @@ Phys. Rev. B **54**, 16487 (1996)
 Sharma, S., Dewhurst, J. K., Ambrosch-Draxl, C.  
 Linear and second-order optical response of {III}-{V} monolayer superlattices  
 Phys. Rev. B **67**, 165332 (2003)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.67.165332" target="_blank">https://doi.org/10.1103/PhysRevB.67.165332</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.67.165332>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Sharma2003">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Sharma2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2003">
   <div class="modal-dialog modal-lg" role="document">
@@ -6181,7 +6263,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.67.165332" target="_blank">https:
 Sharma, S., {A}mbrosch-{D}raxl, C.  
 {S}econd-{H}armonic Optical Response from First Principles  
 Phys. Scripta **2004**, 128 (2004)  
-URL: <a href="http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128" target="_blank">http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128</a><br><!-- Links -->
+URL: <http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Sharma2004">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Sharma2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2004">
   <div class="modal-dialog modal-lg" role="document">
@@ -6215,7 +6298,8 @@ URL: <a href="http://iopscience.iop.org/article/10.1238/Physica.Topical.109a0012
 Shih, B.-C., Zhang, Y., Zhang, W., Zhang, P.  
 Screened Coulomb interaction of localized electrons in solids from first principles  
 Phys. Rev. B **85**, 045132 (2012)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.85.045132" target="_blank">https://doi.org/10.1103/PhysRevB.85.045132</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.85.045132>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Shih2012">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Shih2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Shih2012">
   <div class="modal-dialog modal-lg" role="document">
@@ -6355,7 +6439,8 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Sipe, J. E., Ghahramani, E.  
 Nonlinear optical response of semiconductors in the independent-particle approximation  
 Phys. Rev. B **48**, 11705--11722 (1993)  
-URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.48.11705" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.48.11705</a><br><!-- Links -->
+URL: <http://link.aps.org/doi/10.1103/PhysRevB.48.11705>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Sipe1993">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Sipe1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sipe1993">
   <div class="modal-dialog modal-lg" role="document">
@@ -6494,7 +6579,8 @@ Phys. Rev. B **43**, 13892 (1991)
 Torrent, Marc, Jollet, Fran\c{c}ois, Bottin, Fran\c{c}ois, Z\'erah, Gilles, Gonze, Xavier  
 Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure  
 Computational Materials Science **42**, 337 - 351 (2008)  
-URL: <a href="http://www.sciencedirect.com/science/article/pii/S0927025607002108" target="_blank">http://www.sciencedirect.com/science/article/pii/S0927025607002108</a><br><!-- Links -->
+URL: <http://www.sciencedirect.com/science/article/pii/S0927025607002108>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Torrent2008">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Torrent2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Torrent2008">
   <div class="modal-dialog modal-lg" role="document">
@@ -6534,7 +6620,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/PAW
 Tran, F., Blaha, P.  
 Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential  
 Phys. Rev. Lett. **102**, 226401 (2009)  
-URL: <a href="http://link.aps.org/doi/10.1103/PhysRevLett.102.226401" target="_blank">http://link.aps.org/doi/10.1103/PhysRevLett.102.226401</a><br><!-- Links -->
+URL: <http://link.aps.org/doi/10.1103/PhysRevLett.102.226401>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Tran2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Tran2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tran2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -6571,7 +6658,8 @@ URL: <a href="http://link.aps.org/doi/10.1103/PhysRevLett.102.226401" target="_b
 
 Tremblay, Andr\'e-Marie  
 Probl\`eme \`a N-corps (2017)  
-URL: <a href="https://www.physique.usherbrooke.ca/pages/en/node/3436" target="_blank">https://www.physique.usherbrooke.ca/pages/en/node/3436</a><br><!-- Links -->
+URL: <https://www.physique.usherbrooke.ca/pages/en/node/3436>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Tremblay2017">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Tremblay2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tremblay2017">
   <div class="modal-dialog modal-lg" role="document">
@@ -6672,7 +6760,8 @@ Referred to in: [/topics/PIMD](/topics/PIMD)
 Tuomisto, F., Makkonen, I.  
 Defect identification in semiconductors with positron annihilation: Experiment and theory  
 Rev. Mod. Phys. **85**, 1583 (2013)  
-DOI: <a href="https://doi.org/10.1103/RevModPhys.85.1583" target="_blank">https://doi.org/10.1103/RevModPhys.85.1583</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/RevModPhys.85.1583>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Tuomisto2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Tuomisto2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tuomisto2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -6743,7 +6832,8 @@ Referred to in: [/variables/basic](/variables/basic)
 Vanderbilt, D., {K}ing-{S}mith, R. D.  
 Electronic polarization in the ultrasoft pseudopotential formalism  
 arXiv/cond-mat ****, 9801177 (1998)  
-URL: <a href="https://arxiv.org/abs/cond-mat/9801177" target="_blank">https://arxiv.org/abs/cond-mat/9801177</a><br><!-- Links -->
+URL: <https://arxiv.org/abs/cond-mat/9801177>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Vanderbilt1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Vanderbilt1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vanderbilt1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -6810,7 +6900,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Vasiliev, I., Ogut, S., Chelikowsky, J. R.  
 Ab initio Excitation Spectra and Collective Electronic Response in Atoms and Clusters  
 Phys. Rev. Lett. **82**, 1919 (1999)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.82.1919" target="_blank">https://doi.org/10.1103/PhysRevLett.82.1919</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.82.1919>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Vasiliev1998">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Vasiliev1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vasiliev1998">
   <div class="modal-dialog modal-lg" role="document">
@@ -6913,7 +7004,8 @@ Referred to in: [/topics/Phonons](/topics/Phonons)
 Veithen, M., Gonze, X., Ghosez, Ph.  
 Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory  
 Phys. Rev. B **71**, 125107 (2005)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.71.125107" target="_blank">https://doi.org/10.1103/PhysRevB.71.125107</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.71.125107>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Veithen2005">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Veithen2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005">
   <div class="modal-dialog modal-lg" role="document">
@@ -6948,7 +7040,8 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/non
 Veithen, M., Ghosez, Ph.  
 Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles  
 Phys. Rev. B **71**, 132101 (2005)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.71.132101" target="_blank">https://doi.org/10.1103/PhysRevB.71.132101</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.71.132101>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Veithen2005a">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Veithen2005a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005a">
   <div class="modal-dialog modal-lg" role="document">
@@ -7051,7 +7144,8 @@ Adv. Funct. Mater. **23**, 1586--1596 (2013)
 Waroquiers, D., Lherbier, A., Miglio, A., Stankovski, M., Ponc\'e, S., Oliveira, M.J.T., Giantomassi, M., Rignanese, G.-M., Gonze, X.  
 Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory  
 Phys. Rev. B **87**, 075121 (2013)  
-DOI: <a href="https://doi.org/" target="_blank">https://doi.org/</a><br><!-- Links -->
+DOI: <https://doi.org/>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Waroquiers2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Waroquiers2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Waroquiers2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -7121,7 +7215,8 @@ Referred to in: [/topics/TransPath](/topics/TransPath)
 Werner, P., Comanac, A., de Medici, L., Troyer, M., Millis, A.J.  
 Continuous-Time Solver for Quantum Impurity Models  
 Phys. Rev. Lett. **97**, 076405 (2006)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.97.076405" target="_blank">https://doi.org/10.1103/PhysRevLett.97.076405</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.97.076405>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Werner2006">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Werner2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Werner2006">
   <div class="modal-dialog modal-lg" role="document">
@@ -7161,7 +7256,8 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 Wiktor, J., Jomard, G., Torrent, M., Bertolus, M.  
 Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}  
 Phys. Rev. B **87**, 235207 (2013)  
-DOI: <a href="https://doi.org/10.1103/PhysRevB.87.235207" target="_blank">https://doi.org/10.1103/PhysRevB.87.235207</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevB.87.235207>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Wiktor2013">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Wiktor2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2013">
   <div class="modal-dialog modal-lg" role="document">
@@ -7270,7 +7366,8 @@ Referred to in: [/topics/positron](/topics/positron)
 Wiktor, J., Jomard, G., Bertolus, M.  
 Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect  
 Nucl. Instrum. Meth. **327**, 63 (2014)  
-DOI: <a href="https://doi.org/10.1016/j.nimb.2013.09.050" target="_blank">https://doi.org/10.1016/j.nimb.2013.09.050</a><br><!-- Links -->
+DOI: <https://doi.org/10.1016/j.nimb.2013.09.050>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Wiktor2014b">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Wiktor2014b" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014b">
   <div class="modal-dialog modal-lg" role="document">
@@ -7306,7 +7403,8 @@ Referred to in: [/topics/positron](/topics/positron)
 Wiktor, J., Jomard, G., Torrent, M.  
 Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions  
 Phys. Rev. B **92**, 125113 (2015)  
-URL: <a href="http://link.aps.org/doi/10.1103/PhysRevB.92.125113" target="_blank">http://link.aps.org/doi/10.1103/PhysRevB.92.125113</a><br><!-- Links -->
+URL: <http://link.aps.org/doi/10.1103/PhysRevB.92.125113>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Wiktor2015">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Wiktor2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2015">
   <div class="modal-dialog modal-lg" role="document">
@@ -7346,7 +7444,8 @@ Referred to in: [/topics/positron](/topics/positron)
 Xu, B., Verstraete, M. J.  
 First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium  
 Phys. Rev. Lett. **112**, 196603 (2014)  
-DOI: <a href="https://doi.org/10.1103/PhysRevLett.112.196603" target="_blank">https://doi.org/10.1103/PhysRevLett.112.196603</a><br><!-- Links -->
+DOI: <https://doi.org/10.1103/PhysRevLett.112.196603>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Xu2014">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Xu2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Xu2014">
   <div class="modal-dialog modal-lg" role="document">
@@ -7383,7 +7482,8 @@ DOI: <a href="https://doi.org/10.1103/PhysRevLett.112.196603" target="_blank">ht
 Zhou, Y., Saad, Y., Tiago, M.L., Chelikowsky, J.R.  
 Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration  
 Phys. Rev. E **74**, 066704 (2006)  
-URL: <a href="http://link.aps.org/doi/10.1103/PhysRevE.74.066704" target="_blank">http://link.aps.org/doi/10.1103/PhysRevE.74.066704</a><br><!-- Links -->
+URL: <http://link.aps.org/doi/10.1103/PhysRevE.74.066704>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Zhou2006">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Zhou2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zhou2006">
   <div class="modal-dialog modal-lg" role="document">
@@ -7487,7 +7587,8 @@ Oxford University Press (1960)
 Zwanziger, J. W.and Torrent, M.  
 First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators  
 Applied Magnetic Resonance **33**, 447--456 (2008)  
-URL: <a href="10.1007/s00723-008-0080-1" target="_blank">10.1007/s00723-008-0080-1</a><br><!-- Links -->
+URL: <10.1007/s00723-008-0080-1>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Zwanziger2008">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Zwanziger2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2008">
   <div class="modal-dialog modal-lg" role="document">
@@ -7525,7 +7626,8 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Zwanziger, J W  
 Computation of M\"ossbauer isomer shifts from first principles  
 Journal of Physics: Condensed Matter **21**, 195501 (2009)  
-DOI: <a href="https://doi.org/10.1088/0953-8984/21/19/195501" target="_blank">https://doi.org/10.1088/0953-8984/21/19/195501</a><br><!-- Links -->
+DOI: <https://doi.org/10.1088/0953-8984/21/19/195501>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Zwanziger2009">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Zwanziger2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009">
   <div class="modal-dialog modal-lg" role="document">
@@ -7560,7 +7662,8 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Zwanziger, J. W.  
 First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$  
 Phys. Rev. B **79**, 033112 (2009)  
-URL: <a href="https://link.aps.org/doi/10.1103/PhysRevB.79.033112" target="_blank">https://link.aps.org/doi/10.1103/PhysRevB.79.033112</a><br><!-- Links -->
+URL: <https://link.aps.org/doi/10.1103/PhysRevB.79.033112>  
+<!-- Links -->
 <a data-toggle="modal" href="#modal-id-Zwanziger2009a">bibtex</a><!-- Modal -->
 <div class="modal fade" id="modal-id-Zwanziger2009a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009a">
   <div class="modal-dialog modal-lg" role="document">

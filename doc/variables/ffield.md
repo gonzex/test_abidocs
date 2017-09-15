@@ -22,7 +22,7 @@ ffield input variables to be used in the input file for the abinit executable.
 *Default value:* *0.0d0  
 *Only relevant if:* [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]]
 
 
@@ -54,7 +54,7 @@ sets of 7 numbers, corresponding to m=-3 to m=+3.
 *Default value:* 4*0  
 *Only relevant if:* [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [1/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_5.in|telast_5.in]]
     - v4:  [[tests/v4/Input/t66.in|t66.in]]
@@ -89,7 +89,7 @@ will cause an early exit.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [40/920] in all abinit tests, [7/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [40/920] in all abinit tests, [7/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]], [[tests/seq/Input/tsv4_55.in|tsv4_55.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv4_80.in|tsv4_80.in]], [[tests/seq/Input/tsv5_112.in|tsv5_112.in]], [[tests/seq/Input/tsv5_113.in|tsv5_113.in]], [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_123.in|tsv6_123.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]], [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_4.in|telast_4.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/tffield_1.in|tffield_1.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tffield_4.in|tffield_4.in]], [[tests/tutorespfn/Input/tffield_5.in|tffield_5.in]], [[tests/tutorespfn/Input/tffield_6.in|tffield_6.in]]
@@ -161,7 +161,7 @@ In case of finite electric and displacement field calculations
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_124.in|tsv6_124.in]]
 
 
@@ -185,7 +185,7 @@ In case of finite electric and displacement field calculations
 *Default value:* 1  
 *Only relevant if:* 0 > [[berryopt]]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t20.in|t20.in]]
 
 
@@ -219,7 +219,7 @@ gained with this procedure, the outlook is promising.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - v6:  [[tests/v6/Input/t43.in|t43.in]]
 
@@ -244,7 +244,7 @@ Perform finite magnetic field calculation.
 *Default value:* 0.1  
 *Only relevant if:* [[berryopt]] = 6 or 16  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -276,7 +276,7 @@ calculations (berryopt=6,16,17).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 6, [[efield]]  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -301,7 +301,7 @@ constraint during the calculation.
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 4 or 6  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [1/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - seq:  [[tests/seq/Input/tsv4_55.in|tsv4_55.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv4_80.in|tsv4_80.in]], [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_123.in|tsv6_123.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]], [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tffield_6.in|tffield_6.in]]
@@ -347,7 +347,7 @@ electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 *Default value:* 3*0  
 *Only relevant if:* [[berryopt]] = 17  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -387,7 +387,7 @@ have d_1,d_2, these are good guesses for b, c.
 *Default value:* *0  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
 
 
@@ -429,7 +429,7 @@ initialize the [[kptopt]]=3 computation.
 *Default value:* 0.005  
 *Only relevant if:* [[berryopt]] = 6, 16, or 17  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -455,7 +455,7 @@ in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 *Default value:* 0  
 *Only relevant if:* [[usepawu]] /= 0, [[atvshift]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]]
 
 
@@ -481,7 +481,7 @@ should define [[usepawu]], [[lpawu]] and [[atvshift]].
 *Default value:* 1  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]]
 
 
@@ -520,7 +520,7 @@ allowed, nor are parallel computations.
 *Dimensions:* (3)  
 *Default value:* 3*0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -549,7 +549,7 @@ Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vprtrb]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t01.in|t01.in]], [[tests/v6/Input/t02.in|t02.in]]
 
 
@@ -574,7 +574,7 @@ explanation.
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16, [[red_efield]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -602,7 +602,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -630,7 +630,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 14  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -657,7 +657,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Dimensions:* scalar  
 *Default value:* -99.99  
 
-??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t25.in|t25.in]]
     - paral:  [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t94.in|t94.in]]
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv4_90.in|tsv4_90.in]]
@@ -710,7 +710,7 @@ spin up Fermi energy.
 *Default value:* [0.0, 0.0]  
 *Only relevant if:* [[qprtrb]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t01.in|t01.in]], [[tests/v6/Input/t02.in|t02.in]]
 
 
@@ -740,7 +740,7 @@ of the perturbation, which is added to the local potential, is:
 *Dimensions:* (3)  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t17.in|t17.in]]
 
 

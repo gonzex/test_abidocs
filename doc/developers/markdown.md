@@ -9,11 +9,12 @@ rpath: /developers/markdown.md
 This page is intended as a quick reference to the Markdown syntax used to write the Abinit documentation.
 Markdown can be used **almost everywhere** including the description of the input variables
 stored in `abinit_vars.yml` and the description of the automatic tests given in the `TEST_INFO` section.
+For a more complete introduction to Markdown, see 
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+## Markdown quick reference
 
-## Markdown Quick Reference
-
-Inline styles:
+### Inline styles
 
 | Markdown | Result | Extension required |
 | :-- | :-- | :-- |
@@ -25,6 +26,49 @@ Inline styles:
 | `CH~3~CH~2~OH` | CH~3~CH~2~OH |  [Tilde](https://facelessuser.github.io/pymdown-extensions/extensions/tilde/) 
 | `==highlight==` | ==highlight== | [Mark](http://facelessuser.github.io/pymdown-extensions/extensions/mark/) 
 | `^^underline me^^` | ^^underline me^^ | [Caret](https://facelessuser.github.io/pymdown-extensions/extensions/caret/) 
+
+
+### Code and syntax highlighting
+
+Blocks of code are either fenced by lines with three back-ticks ``` or are indented with four spaces. 
+For example, the Markdown text:
+
+```
+Inline `code` has `back-ticks around` it.
+```
+
+produces: Inline `code` has `back-ticks around` it.
+
+The fastest way to include shell commands is to indent the code with four space:
+
+```md
+    $ abinit < tbase1_x.files 2> log &
+```
+
+that produces:
+
+    $ abinit < tbase1_x.files 2> log &
+
+Fenced blocks allow the specification of the language used for syntax highlighting.
+Fortran code, for example, can be included with:
+
+~~~md
+```fortran
+do ii=1, 10
+  write(*,*)"Hello world"
+end do
+```
+~~~
+
+that is displayed as:
+
+```fortran
+do ii=1, 10
+  write(*,*)"Hello world"
+end do
+```
+
+### Tables
 
 To create a table in Markdown use the syntax:
 
@@ -42,17 +86,8 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-To create and highlight code blocks place triple backticks ``` before and after the code block.
 
-    ```sh
-        $ abinit < tbase1_x.files 2> log &
-    ```
-
-that produces:
-
-```sh
-$ abinit < tbase1_x.files 2> log &
-```
+### Figures
 
 To include figures, use the standard Markdown syntax:
 
@@ -60,29 +95,24 @@ To include figures, use the standard Markdown syntax:
 ![](/tutorials/bse_assets/tbs2_1.png)
 ```
 
-that produces
-
 ![](/tutorials/bse_assets/tbs2_1.png)
 
 For figures with a caption use the [markdown-figures extension](https://github.com/helderco/markdown-figures):
 
 ```md
 ![](/tutorials/bse_assets/tbs5.png)
-:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling. 
+    See also [[ngkpt]] and [[shiftk]].
 ```
 
-that produces
-
 ![](/tutorials/bse_assets/tbs5.png)
-:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling. 
+    See also [[ngkpt]] and [[shiftk]].
 
 !!! note
-    `<img>` and `<figure>` elements are automatically centered via CSS directives 
-     declared in `extra.css`.
+     The caption can contain Latex equations as well as [Abinit wiki links](#wiki-links).
+    `<img>` and `<figure>` elements are automatically centered via CSS directives declared in `extra.css`.
 
-
-For more complete introduction to Markdown, see 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and references therein.
 
 ## Links
 
@@ -95,12 +125,14 @@ The Markdown syntax for links is:
 | `https://www.abinit.org` | https://www.abinit.org | [MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
 
 
-This is the **recommended** approach to create links to external resources and internal links.
+This is the **recommended** approach to create links to external resources and internal links to other pages/sections
+of the website.
 There are however cases in which we would like to have an even simpler syntax to generate automatically 
 links in the documentation pages, in particular links to:
 
 * The input variables declared in `abinit_vars.yml`.
 * The bibliographic citations declared in `abiref.bib`.
+* Input files of the Abinit test suite.
 * Website pages commonly used e.g. a topic page.
 
 For this reason, we extend the Markdown syntax to account for typical cases
@@ -114,7 +146,9 @@ In the simple case, this gives `[[name]]` but, more generally `[[namespace:name#
 where `namespace`, `section` and `text` are optional (in such case, the adequate separator should not be mentioned). 
 The namespace is not echoed in the Web page, while if a `text` is given, it will supercede the echo of the 
 `name` in the Web page (see examples below).
-Limitation: do not use parentheses within the pair of double brackets, the whole expression will not be recognized.
+
+!!! warning
+    Do not use parentheses within the pair of double brackets, the whole expression will not be recognized.
 
 When an internal link is recognized, the dokuwiki item is replaced by the adequate HTML link 
 There are a couple of names immediately recognized:
@@ -142,12 +176,10 @@ Examples:
 | `[[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]` | [[~abinit/tests/Psps_for_tests/6c.lda.atompaw]]
 | `[[tests/Psps_for_tests/6c.lda.atompaw]]` | [[tests/Psps_for_tests/6c.lda.atompaw]]
 
-
-
 !!! note
     Note the difference between `[[anaddb:dipdip]]` and `[[dipdip@anaddb]]`.
     In the first case, only `dipdip` is echoed,  while in the second case, `dipdip@anaddb` is echoed.
-    This syntax is needed becase there's also a `dipdip` variable in Abinit.
+    This syntax is needed because there's also a `dipdip` variable in Abinit.
 
     The links to input files have a popover with the description of the test.
     Hovering on a citation opens a popover with the title of the Bibtex entry.
@@ -155,7 +187,6 @@ Examples:
 Also, the input variables for anaddb, optic and aim(bader) will be recognized if they are used with 
 the namespaces `anaddb`, `optic` and `aim`. 
 For the latter input variables, one has thus also the choice between the syntax 
-
 
 To specify the name of the anchor in a bibliographic citation use the syntax with the `|` separator:
 
@@ -166,47 +197,6 @@ that in rendered in HTML as: Please consult [[Gonze2016 | the last generic ABINI
 The script generate_doc.py does a bit of formatting in these examples: it keeps one pair of square brackets 
 in the case of a bibliographic reference, and add "~abinit/" in the case of a path.
 
-It's also possbile to create a button that opens a modal window containing 
-the input file with the syntax:
-
-```
-    {% modal tests/v1/Input/t01.in %}
-```
-
-that produces:
-
-{% modal tests/v1/Input/t01.in %}
-
-This is useful for lessons to give direct access to the input files.
-If multiple files are used such as in: 
-
-```
-    {% modal tests/v1/Input/t01.in tests/v1/Input/t02.in %}
-```
-
-a modal window with tabs is produced
-
-{% modal tests/v1/Input/t01.in tests/v1/Input/t02.in %}
-
-To create a panel with the output file use:
-
-```
-    {% editor tests/v1/Refs/t01.out %}
-```
-
-that gives:
-
-{% editor tests/v1/Refs/t01.out %}
-
-Also in this case, a multi-tab panel is produced if multiple files are used such as in:
-
-```
-    {% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
-```
-
-that produces:
-
-{% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
 
 ### Internal links with namespace
 
@@ -268,7 +258,7 @@ As for dokuwiki, some external links are also recognized. The following case are
 | `[[www.abinit.org]]` | [[www.abinit.org]] 
 | `www.abinit.org` | www.abinit.org 
 
-It's also possible to specify the name of the link with:
+It's also possible to specify the name of the link with the `|` separator:
 `[[https://wiki.abinit.org | The ABINIT Wiki]]` that gives [[https://wiki.abinit.org | The ABINIT Wiki]] 
 
 
@@ -377,8 +367,9 @@ commonly used in our domain:
 
 Please consult the preamble in `abinit_theme/main.html` for the complete list of macros.
 
+## Markdown extensions
 
-## SmartSymbols
+### SmartSymbols
 
 [SmartSymbols](https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/) 
 adds syntax for creating special characters such as trademarks, arrows, fractions, etc. 
@@ -399,7 +390,7 @@ Markdown       | Result
 `1st 2nd etc.` |1st 2nd etc.
 
 
-## Admonitions
+### Admonitions
 
 [Admonitions](https://pythonhosted.org/Markdown/extensions/admonition.html) are useful
 to stress important statements (useful e.g. in lessons).
@@ -450,7 +441,7 @@ The Material theme [supports](http://squidfunk.github.io/mkdocs-material/extensi
 For the complete list, consult the mkdocs-material 
 [documentation](/http://squidfunk.github.io/mkdocs-material/extensions/admonition/)
 
-## Details
+### Details
 
 [Detail](https://facelessuser.github.io/pymdown-extensions/extensions/details/)
 is an extension that creates collapsible elements that hide their content. 
@@ -483,6 +474,83 @@ creates a *closed* element:
 
 ??? note "Click to open!"
      [[ecut]] [[asr@anaddb]]
+
+
+### MagicLink
+
+[MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
+scans for URLs and emails and generates proper HTML links for them.  
+No special syntax is required, you just type or paste the links and they get converted.  
+MagicLink auto-links HTML, FTP, and email links.
+
+If you happen to have some conflicts with syntax for a specific case, you can always revert 
+to the old auto-link format as well: `<https://www.link.com>`.  
+
+For even more magic, enable `repo_url_shortener` for shorter concise links for popular source code hosts.  
+Issue, pull request, and commit links will be shortened in the style of GFM. 
+Issues are shortened to `user/repo#1` for repositories external to `base_repo_url` and `#1` for internal links.  
+For commit links, external commits will show as `` user/repo@`abc1234` `` and internal commits 
+will show as `` `abc1234` ``. Currently supports GitHub, GitLab, and Bitbucket.
+Links require no special syntax.
+
+To refer to a particular git commit inside a Markdown document use:
+
+    Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
+
+that produces: Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
+
+It's also possible to mention a particular github issue with the syntax:
+
+    Fix https://github.com/abinit/abinit/issues/1
+
+that produces: Fix https://github.com/abinit/abinit/issues/1
+
+!!! note
+    This extension is useful to generate nice changelogs and release notes.
+
+### Abinit extensions
+
+It's also possbile to create a button that opens a modal window containing 
+the input file with the syntax:
+
+```
+    {% modal tests/v1/Input/t01.in %}
+```
+
+that produces:
+
+{% modal tests/v1/Input/t01.in %}
+
+This is useful for lessons to give direct access to the input files.
+If multiple files are used such as in: 
+
+```
+    {% modal tests/v1/Input/t01.in tests/v1/Input/t02.in %}
+```
+
+a modal window with tabs is produced
+
+{% modal tests/v1/Input/t01.in tests/v1/Input/t02.in %}
+
+To create a panel with the output file use:
+
+```
+    {% editor tests/v1/Refs/t01.out %}
+```
+
+that gives:
+
+{% editor tests/v1/Refs/t01.out %}
+
+Also in this case, a multi-tab panel is produced if multiple files are used such as in:
+
+```
+    {% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
+```
+
+that produces:
+
+{% editor tests/v1/Refs/t01.out tests/v1/Refs/t02.out %}
 
 
 ## Plotly
@@ -540,40 +608,7 @@ plotly is used to plot the [connection network](/input_variables/connections) fo
 and the [code statistics](/developers/codestats).
 
 
-## MagicLink
-
-[MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
-scans for URLs and emails and generates proper HTML links for them.  
-No special syntax is required, you just type or paste the links and they get converted.  
-MagicLink auto-links HTML, FTP, and email links.
-
-If you happen to have some conflicts with syntax for a specific case, you can always revert 
-to the old auto-link format as well: `<https://www.link.com>`.  
-
-For even more magic, enable `repo_url_shortener` for shorter concise links for popular source code hosts.  
-Issue, pull request, and commit links will be shortened in the style of GFM. 
-Issues are shortened to `user/repo#1` for repositories external to `base_repo_url` and `#1` for internal links.  
-For commit links, external commits will show as `` user/repo@`abc1234` `` and internal commits 
-will show as `` `abc1234` ``. Currently supports GitHub, GitLab, and Bitbucket.
-Links require no special syntax.
-
-To refer to a particular git commit inside a Markdown document use:
-
-    Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
-
-that produces: Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
-
-It's also possible to mention a particular github issue with the syntax:
-
-    Fix https://github.com/abinit/abinit/issues/1
-
-that produces: Fix https://github.com/abinit/abinit/issues/1
-
-!!! note
-    This extension is useful to generate nice changelogs and release notes.
-
-
-## Media Content
+## Media content
 
 Links to videos can be included with the standard Markdown syntax:
 

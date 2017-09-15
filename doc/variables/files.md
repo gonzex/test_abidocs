@@ -20,7 +20,7 @@ files input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [7/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [7/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/teph_1.in|teph_1.in]], [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -63,7 +63,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [21/920] in all abinit tests, [5/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [21/920] in all abinit tests, [5/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]]
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]]
@@ -131,7 +131,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -166,7 +166,7 @@ from a disk file, so that it is as if [[getbscoup]]=0 for that initialisation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
 
 
@@ -202,7 +202,7 @@ from a disk file, so that it is as if [[getbseig]]=0 for that initialisation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
 
 
@@ -238,7 +238,7 @@ from a disk file, so that it is as if [[getbsreso]]=0 for that initialisation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]], [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -286,7 +286,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [65/920] in all abinit tests, [11/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [65/920] in all abinit tests, [11/116] in abinit tutorials)"
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
@@ -358,7 +358,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [205/920] in all abinit tests, [33/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [205/920] in all abinit tests, [33/116] in abinit tutorials)"
     - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]]
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t19.in|t19.in]]
@@ -431,7 +431,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -465,7 +465,7 @@ initialisation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v2:  [[tests/v2/Input/t11.in|t11.in]]
     - v3:  [[tests/v3/Input/t18.in|t18.in]]
 
@@ -517,7 +517,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials)"
     - libxc:  [[tests/libxc/Input/t42.in|t42.in]]
     - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - v4:  [[tests/v4/Input/t87.in|t87.in]], [[tests/v4/Input/t88.in|t88.in]]
@@ -557,7 +557,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [67/920] in all abinit tests, [10/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [67/920] in all abinit tests, [10/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
@@ -609,7 +609,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t70.in|t70.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
@@ -663,7 +663,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [435/920] in all abinit tests, [50/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [435/920] in all abinit tests, [50/116] in abinit tutorials)"
     - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
     - bigdft:  [[tests/bigdft/Input/t18.in|t18.in]]
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]]
@@ -743,7 +743,7 @@ refers to dataset 2 when dataset 4 is initialized.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [36/920] in all abinit tests, [4/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [36/920] in all abinit tests, [4/116] in abinit tutorials)"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - paral:  [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]], [[tests/tutorespfn/Input/trf1_6.in|trf1_6.in]]
@@ -813,7 +813,7 @@ refers to dataset 2 when dataset 4 is initialized.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [1/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
 
 
@@ -844,7 +844,7 @@ variables, see the [ section 4
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t77.in|t77.in]]
 
@@ -888,7 +888,7 @@ Response-function calculation :
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -910,7 +910,7 @@ block produced in a previous run.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]]
 
 
@@ -933,7 +933,7 @@ eigenvectors produced in a previous run.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -958,7 +958,7 @@ block produced in a previous run.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t58.in|t58.in]], [[tests/v7/Input/t59.in|t59.in]]
 
 
@@ -992,7 +992,7 @@ variables, see the [ section 4
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [2/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [2/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v5:  [[tests/v5/Input/t81.in|t81.in]], [[tests/v5/Input/t82.in|t82.in]]
 
@@ -1038,7 +1038,7 @@ Response-function calculation :
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [5/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [5/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - tutorial:  [[tests/tutorial/Input/tudet_1.in|tudet_1.in]]
     - v5:  [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t40.in|t40.in]]
@@ -1069,7 +1069,7 @@ variables, see the [ section 4
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -1091,7 +1091,7 @@ produced in a previous run.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
     - wannier90:  [[tests/wannier90/Input/t03.in|t03.in]]
 
@@ -1116,7 +1116,7 @@ achieve a self-consistent quasiparticle calculations. See also [[getqps]]
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [4/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [4/116] in abinit tutorials)"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
@@ -1149,7 +1149,7 @@ variables, see the [ section 4
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]]
 
 
@@ -1179,7 +1179,7 @@ variables, see the [ section 4
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [82/920] in all abinit tests, [15/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [82/920] in all abinit tests, [15/116] in abinit tutorials)"
     - bigdft:  [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]]
     - built-in:  [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
     - fast:  [[tests/fast/Input/t05.in|t05.in]], [[tests/fast/Input/t06.in|t06.in]], [[tests/fast/Input/t07.in|t07.in]], [[tests/fast/Input/t08.in|t08.in]], [[tests/fast/Input/t09.in|t09.in]], [[tests/fast/Input/t11.in|t11.in]], [[tests/fast/Input/t12.in|t12.in]], [[tests/fast/Input/t14.in|t14.in]], [[tests/fast/Input/t16.in|t16.in]], [[tests/fast/Input/t19.in|t19.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t23.in|t23.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]]
@@ -1235,7 +1235,7 @@ Response-function calculation :
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t53.in|t53.in]]
     - v7:  [[tests/v7/Input/t51.in|t51.in]]
 
@@ -1279,7 +1279,7 @@ Response-function calculation :
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials)"
     - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -1310,7 +1310,7 @@ k-points.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - fast:  [[tests/fast/Input/t30.in|t30.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v7:  [[tests/v7/Input/t04.in|t04.in]], [[tests/v7/Input/t05.in|t05.in]]
@@ -1338,7 +1338,7 @@ density on bi-dimensional slices of the FFT grid.
 1 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [300/920] in all abinit tests, [37/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [300/920] in all abinit tests, [37/116] in abinit tutorials)"
     - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
     - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t06.in|t06.in]], [[tests/bigdft/Input/t07.in|t07.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
@@ -1444,7 +1444,7 @@ to another, use the _DEN file for that.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [38/920] in all abinit tests, [4/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [38/920] in all abinit tests, [4/116] in abinit tutorials)"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
     - libxc:  [[tests/libxc/Input/t03.in|t03.in]]
@@ -1547,7 +1547,7 @@ tetrahedron method (as [[prtdos]]=2).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t40.in|t40.in]]
 
 
@@ -1579,7 +1579,7 @@ spherical harmonics in the same basis as the LDA+U occupation matrix.
 1 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [103/920] in all abinit tests, [20/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [103/920] in all abinit tests, [20/116] in abinit tutorials)"
     - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
     - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
@@ -1616,7 +1616,7 @@ eigenvalues is printed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v5:  [[tests/v5/Input/t50.in|t50.in]]
 
@@ -1659,7 +1659,7 @@ Please note that ELF is ** not ** yet implemented in the case of PAW
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t14.in|t14.in]]
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
@@ -1694,7 +1694,7 @@ Xcrysden)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v1:  [[tests/v1/Input/t21.in|t21.in]]
     - v6:  [[tests/v6/Input/t12.in|t12.in]]
@@ -1724,7 +1724,7 @@ unformatted output file is described below, see section 6).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
     - fast:  [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v6:  [[tests/v6/Input/t30.in|t30.in]]
@@ -1765,7 +1765,7 @@ If [[prtgeo]]&gt;0, the maximum number of atoms ([[natom]]) is 9999.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]]
     - v5:  [[tests/v5/Input/t85.in|t85.in]]
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
@@ -1795,7 +1795,7 @@ electron-phonon treatment in ABINIT is given in the tutorial
 *Dimensions:* scalar  
 *Default value:* prtgsr = 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t30.in|t30.in]]
 
 
@@ -1822,7 +1822,7 @@ Note that, by default, the GSR file contains the electronic density unless
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
     - libxc:  [[tests/libxc/Input/t19.in|t19.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v1:  [[tests/v1/Input/t21.in|t21.in]]
@@ -1858,7 +1858,7 @@ case of PAW ([[usepaw]]=1) calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [1/116] in abinit tutorials)"
     - tutorial:  [[tests/tutorial/Input/tspin_3.in|tspin_3.in]]
     - v2:  [[tests/v2/Input/t61.in|t61.in]], [[tests/v2/Input/t62.in|t62.in]], [[tests/v2/Input/t63.in|t63.in]], [[tests/v2/Input/t64.in|t64.in]], [[tests/v2/Input/t65.in|t65.in]], [[tests/v2/Input/t66.in|t66.in]], [[tests/v2/Input/t67.in|t67.in]], [[tests/v2/Input/t68.in|t68.in]], [[tests/v2/Input/t69.in|t69.in]], [[tests/v2/Input/t70.in|t70.in]], [[tests/v2/Input/t71.in|t71.in]], [[tests/v2/Input/t72.in|t72.in]], [[tests/v2/Input/t73.in|t73.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
@@ -1907,7 +1907,7 @@ corresponding weights is produced
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v1:  [[tests/v1/Input/t21.in|t21.in]]
     - v6:  [[tests/v6/Input/t12.in|t12.in]]
@@ -1937,7 +1937,7 @@ unformatted output file is described below (see [ section 6
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials)"
     - fast:  [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t30.in|t30.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
     - v5:  [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t35.in|t35.in]]
@@ -1978,7 +1978,7 @@ The file structure of this unformatted output file is described in [ section
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t10.in|t10.in]]
 
 
@@ -2003,7 +2003,7 @@ exit after the output of the PSPS.nc file.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t46.in|t46.in]]
 
 
@@ -2028,7 +2028,7 @@ yet.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v4:  [[tests/v4/Input/t46.in|t46.in]]
 
@@ -2087,7 +2087,7 @@ No other printing variables for density or potentials should be activated
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t87.in|t87.in]]
     - v5:  [[tests/v5/Input/t70.in|t70.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]], [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
@@ -2112,7 +2112,7 @@ only the _SCR file will be output.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
     - v6:  [[tests/v6/Input/t04.in|t04.in]]
 
@@ -2141,7 +2141,7 @@ If **prtvclmb=2**, only the smooth part of the Coulomb potential is output.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
     - fast:  [[tests/fast/Input/t30.in|t30.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
     - v6:  [[tests/v6/Input/t04.in|t04.in]]
@@ -2179,7 +2179,7 @@ The file structure of this unformatted output file is described in [ section
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
     - fast:  [[tests/fast/Input/t30.in|t30.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
     - v4:  [[tests/v4/Input/t42.in|t42.in]]
@@ -2219,7 +2219,7 @@ The file structure of this unformatted output file is described in [ section
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [199/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [199/920] in all abinit tests, [6/116] in abinit tutorials)"
     - built-in:  [[tests/built-in/Input/testin_fast.in|testin_fast.in]], [[tests/built-in/Input/testin_v1.in|testin_v1.in]], [[tests/built-in/Input/testin_v5.in|testin_v5.in]]
     - etsf_io:  [[tests/etsf_io/Input/t22.in|t22.in]]
     - fast:  [[tests/fast/Input/t00.in|t00.in]], [[tests/fast/Input/t02.in|t02.in]], [[tests/fast/Input/t03.in|t03.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t23.in|t23.in]], [[tests/fast/Input/t24.in|t24.in]], [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t30.in|t30.in]]
@@ -2286,7 +2286,7 @@ This debugging feature is not yet activated in the RF routines. Note that
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]]
     - v6:  [[tests/v6/Input/t21.in|t21.in]]
     - v8:  [[tests/v8/Input/t05.in|t05.in]]
@@ -2318,7 +2318,7 @@ total energy and convergence residuals only.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
     - v6:  [[tests/v6/Input/t04.in|t04.in]]
 
@@ -2354,7 +2354,7 @@ The file structure of this unformatted output file is described in [ section
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
     - bigdft:  [[tests/bigdft/Input/t22.in|t22.in]]
     - fast:  [[tests/fast/Input/t30.in|t30.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]]
@@ -2392,7 +2392,7 @@ The file structure of this unformatted output file is described in [ section
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [4/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [4/116] in abinit tutorials)"
     - built-in:  [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
     - tutoplugs:  [[tests/tutoplugs/Input/tw90_1.in|tw90_1.in]], [[tests/tutoplugs/Input/tw90_2.in|tw90_2.in]], [[tests/tutoplugs/Input/tw90_3.in|tw90_3.in]], [[tests/tutoplugs/Input/tw90_4.in|tw90_4.in]]
     - v4:  [[tests/v4/Input/t89.in|t89.in]]
@@ -2484,7 +2484,7 @@ Additional Notes:
 1 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials)"
     - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
@@ -2610,7 +2610,7 @@ probably something set wrong in the input file.
 *Default value:* 0  
 *Only relevant if:* [[prtwf]] == 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t36.in|t36.in]]
 
 
@@ -2638,7 +2638,7 @@ greater than 3.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t79.in|t79.in]]
 
 

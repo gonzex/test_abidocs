@@ -301,7 +301,7 @@ class Variable(yaml.YAMLObject):
             elif ratio_all > 0.01:
                 frequency = "Moderately used"
 
-            info = "%s, [%d/%d] in all %s tests, [%d/%d] in %s tutorials." % (
+            info = "%s, [%d/%d] in all %s tests, [%d/%d] in %s tutorials" % (
                 frequency, len(self.tests), tests_info["num_all_tests"], self.executable,
                 tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"], self.executable)
 

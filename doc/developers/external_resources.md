@@ -5,12 +5,13 @@ light_gallery: true
 
 <!-- https://codepen.io/sachinchoolur/pen/XNavPP -->
 <div class="md-container">
-  <div class="demo-gallery dark">
-    <ul id="lightgallery">
+  <div class="gallery dark">
+    <span class="gallery-note">Click on any of the images to see the gallery</span>
+    <ul id="video-gallery">
       <li class="video" data-src="https://www.youtube.com/watch?v=DppLQ-KQA68">
         <a href="">
           <img class="img-responsive" src="//img.youtube.com/vi/DppLQ-KQA68/hqdefault.jpg">
-          <div class="demo-gallery-poster">
+          <div class="gallery-poster">
             <img src="https://sachinchoolur.github.io/lightGallery/static/img/play-button.png">
           </div>
         </a>
@@ -18,7 +19,7 @@ light_gallery: true
       <li class="video" data-src="https://youtu.be/EfJcYi1MNBg">
         <a href="">
           <img class="img-responsive" src="//img.youtube.com/vi/EfJcYi1MNBg/hqdefault.jpg">
-          <div class="demo-gallery-poster">
+          <div class="gallery-poster">
             <img src="https://sachinchoolur.github.io/lightGallery/static/img/play-button.png">
           </div>
         </a>
@@ -26,7 +27,7 @@ light_gallery: true
       <li class="video" data-src="https://www.youtube.com/watch?v=gcbfb_Mteo4"">
         <a href="">
           <img class="img-responsive" src="//img.youtube.com/vi/gcbfb_Mteo4/hqdefault.jpg">
-          <div class="demo-gallery-poster">
+          <div class="gallery-poster">
             <img src="https://sachinchoolur.github.io/lightGallery/static/img/play-button.png">
           </div>
         </a>
@@ -34,7 +35,7 @@ light_gallery: true
       <li class="video" data-src="https://youtu.be/UNlRHw9Avvw">
         <a href="">
           <img class="img-responsive" src="//img.youtube.com/vi/UNlRHw9Avvw/hqdefault.jpg">
-          <div class="demo-gallery-poster">
+          <div class="gallery-poster">
             <img src="https://sachinchoolur.github.io/lightGallery/static/img/play-button.png">
           </div>
         </a>
@@ -42,19 +43,18 @@ light_gallery: true
       <li class="video" data-src="https://youtu.be/j9z4AJIx40M">
         <a href="">
           <img class="img-responsive" src="//img.youtube.com/vi/j9z4AJIx40M/hqdefault.jpg">
-          <div class="demo-gallery-poster">
+          <div class="gallery-poster">
             <img src="https://sachinchoolur.github.io/lightGallery/static/img/play-button.png">
           </div>
         </a>
       </li>
     </ul>
-    <span class="small">Click on any of the images to see the gallery</span>
   </div>
 </div>
 
 <script>
 $(function() {
-  $('#lightgallery').lightGallery();
+  $('#video-gallery').lightGallery();
 });
 </script>
 

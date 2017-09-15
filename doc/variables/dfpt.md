@@ -21,7 +21,7 @@ dfpt input variables to be used in the input file for the abinit executable.
 *Default value:* -1  
 *Only relevant if:* [[ieig2rf]] in [1,2,3,4,5]  
 
-??? note "Test list (click to open) (Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t50.in|t50.in]], [[tests/v6/Input/t54.in|t54.in]], [[tests/v6/Input/t58.in|t58.in]], [[tests/v6/Input/t61.in|t61.in]], [[tests/v6/Input/t68.in|t68.in]]
     - v7:  [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t83.in|t83.in]]
@@ -54,7 +54,7 @@ to nband.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -86,7 +86,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -119,7 +119,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -151,7 +151,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -181,7 +181,7 @@ See [[rfphon]] for additional details.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -208,7 +208,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -241,7 +241,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -273,7 +273,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -298,7 +298,7 @@ See [[rfphon]] for additional details.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -325,7 +325,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -358,7 +358,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -390,7 +390,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -415,7 +415,7 @@ See [[rfphon]] for additional details.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t46.in|t46.in]]
 
 
@@ -442,7 +442,7 @@ Typical use is for response to electric field ([[rfelfd]]=3), but NOT for d/dk
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -476,7 +476,7 @@ calculations are NOT currently supported. Also, for both NC and PAW,
 *Default value:* The full range of band available in the calculation for each k-point.  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -502,7 +502,7 @@ specified range.
 *Default value:* 0  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -540,7 +540,7 @@ cases.
 *Default value:* 1  
 *Only relevant if:* [[efmas]]>0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -565,7 +565,7 @@ idea (see [PRB 89 155131 (2014)](https://doi.org/10.1103/PhysRevB.89.155131)).
 *Default value:* 1e-05  
 *Only relevant if:* [[efmas_deg]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -590,7 +590,7 @@ the '[[ENERGY]]' characteristics.
 *Default value:* 3  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]]
 
 
@@ -625,7 +625,7 @@ line immediately after the effective mass.
 *Default value:* 0  
 *Only relevant if:* [[efmas_calc_dirs]]>0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -650,7 +650,7 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 *Default value:* 0  
 *Only relevant if:* [[efmas_calc_dirs]]>0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -674,7 +674,7 @@ Number of directions in [[efmas_dirs]], to be considered according to
 *Default value:* 1000  
 *Only relevant if:* [[efmas]]==1 and [[efmas_bands]]==(degenerate band index)  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -702,7 +702,7 @@ required. The default value gives a tensor accurate to the 4th decimal in Ge.
 *Default value:* 0.0  
 *Only relevant if:* [[ieig2rf]] != 0  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]]
@@ -736,7 +736,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -763,7 +763,7 @@ When [[optdriver]]==7, select the task to be performed. The choice is among :
 *Default value:* 0.01  
 *Only relevant if:* [[smdelta]] != 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v6:  [[tests/v6/Input/t60.in|t60.in]]
 
 
@@ -793,7 +793,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v2:  [[tests/v2/Input/t26.in|t26.in]]
     - v3:  [[tests/v3/Input/t75.in|t75.in]]
     - v6:  [[tests/v6/Input/t89.in|t89.in]]
@@ -820,7 +820,7 @@ incorrect.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v5:  [[tests/v5/Input/t26.in|t26.in]]
@@ -874,7 +874,7 @@ Related variables :
 *Dimensions:* (3)  
 *Default value:* [20, 20, 20]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -900,7 +900,7 @@ Eliashberg function via Fourier interpolation. Related input variables:
 *Default value:* None  
 *Only relevant if:* specified([[ph_nqpath]])  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -925,7 +925,7 @@ for phonon band structures and phonon linewidths. See also [[ph_nqpath]] and
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [6/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [6/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v4:  [[tests/v4/Input/t52.in|t52.in]]
@@ -965,7 +965,7 @@ and (ii) to keep the full number of k-points.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]]
     - v5:  [[tests/v5/Input/t85.in|t85.in]]
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
@@ -994,7 +994,7 @@ conjunction with [[prtgkk]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v3:  [[tests/v3/Input/t77.in|t77.in]]
 
 
@@ -1018,7 +1018,7 @@ X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -1050,7 +1050,7 @@ auxiliary quantity in the calculations of 3rd-order derivatives of the energy
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t24.in|t24.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]]
     - v7:  [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t51.in|t51.in]]
@@ -1085,7 +1085,7 @@ at the level of the ANADDB utility, with the two independent input variables
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
 
-??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials)"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1134,7 +1134,7 @@ or stress type (see [ the response function help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v5:  [[tests/v5/Input/t30.in|t30.in]]
 
 
@@ -1162,7 +1162,7 @@ The directions for the derivatives are determined by [[rfdir]].
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Moderately used, [216/920] in all abinit tests, [29/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [216/920] in all abinit tests, [29/116] in abinit tutorials)"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1209,7 +1209,7 @@ corresponding direction. If 0, this direction should not be considered.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [85/920] in all abinit tests, [14/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [85/920] in all abinit tests, [14/116] in abinit tutorials)"
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
@@ -1257,7 +1257,7 @@ shift is to be used, it is usually not applied for the d/dk response).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v8:  [[tests/v8/Input/t20.in|t20.in]]
 
 
@@ -1281,7 +1281,7 @@ account and the perturbing potential has Zeeman form.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -1303,7 +1303,7 @@ allowed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [164/920] in all abinit tests, [18/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [164/920] in all abinit tests, [18/116] in abinit tutorials)"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1338,7 +1338,7 @@ It must be equal to 1 to run phonon response function calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [26/920] in all abinit tests, [5/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [26/920] in all abinit tests, [5/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_2.in|telast_2.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/telast_6.in|telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]]
     - v4:  [[tests/v4/Input/t58.in|t58.in]], [[tests/v4/Input/t59.in|t59.in]], [[tests/v4/Input/t61.in|t61.in]], [[tests/v4/Input/t62.in|t62.in]], [[tests/v4/Input/t63.in|t63.in]], [[tests/v4/Input/t64.in|t64.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t67.in|t67.in]], [[tests/v4/Input/t69.in|t69.in]], [[tests/v4/Input/t75.in|t75.in]], [[tests/v4/Input/t79.in|t79.in]], [[tests/v4/Input/t81.in|t81.in]]
@@ -1373,7 +1373,7 @@ respfn help file ](../../users/generated_files/help_respfn.html#1) .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
 
 
 
@@ -1410,7 +1410,7 @@ variable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials)"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v5:  [[tests/v5/Input/t26.in|t26.in]]
@@ -1444,7 +1444,7 @@ electronic lifetimes. The delta function is evaluated using:
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v1:  [[tests/v1/Input/t69.in|t69.in]]
 
 
@@ -1476,7 +1476,7 @@ See [[td_mexcit]] for an alternative way to decrease N.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)"
+??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
     - v1:  [[tests/v1/Input/t69.in|t69.in]]
 
 

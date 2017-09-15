@@ -162,12 +162,14 @@ class MyEntry(Entry):
 
         s += "  \n"
         if "url" in fields:
-            s += 'URL: <a href="{url}" target="_blank">{url}</a><br>'.format(url=fields["url"])
+            #s += 'URL: <a href="{url}" target="_blank">{url}</a><br>'.format(url=fields["url"])
+            s += 'URL: <{url}>  \n'.format(url=fields["url"])
         elif "doi" in fields:
             doi = fields["doi"]
             doi_root = "https://doi.org/"
             if not doi.startswith(doi_root): doi = doi_root + doi
-            s += 'DOI: <a href="{doi}" target="_blank">{doi}</a><br>'.format(doi=doi)
+            s += 'DOI: <{doi}>  \n'.format(doi=doi)
+            #s += 'DOI: <a href="{doi}" target="_blank">{doi}</a><br>'.format(doi=doi)
 
         # Add modal window with bibtex entry.
         link, modal = self.get_bibtex_linkmodal()
@@ -401,15 +403,15 @@ This document lists and provides the description of the name (keywords) of the
                         mdf.write(var.to_markdown())
 
         # Add plotly figures.
-        """"
-        with self.new_mdfile("variables", "connections.md"), meta={"plotly": True}) as mdf:
-            for code, vd in self.variables_code.items():
-                for varset in vd.all_varset:
-                    mdf.write("## %s, varset: %s  \n\n" % (code, varset))
-                    mdf.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
-                    #mdf.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
-                    mdf.write(2*"\n" + "* * *\n")
-        """
+        deploy = False
+        if deploy:
+            with self.new_mdfile("variables", "connections.md", meta={"plotly": True}) as mdf:
+                for code, vd in self.variables_code.items():
+                    for varset in vd.all_varset:
+                        mdf.write("## %s, varset: %s  \n\n" % (code, varset))
+                        mdf.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
+                        #mdf.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
+                        mdf.write(2*"\n" + "* * *\n")
 
         # Write Markdown page with statistics.
         with self.new_mdfile("variables", "varset_stats.md") as mdf:
@@ -1060,8 +1062,7 @@ The bibtex file is available [here](../abiref.bib).
             with io.open(p, "rt", encoding="utf-8") as fh:
                 text_list.append(escape(fh.read(), tag="pre"))
         tab_ids = gen_id(n=len(apaths))
-        print("paths", paths)
-        print("tab_ids", tab_ids)
+        #print("paths", paths, "\ntab_ids", tab_ids)
 
         s = """\
 <!-- Button trigger modal -->
