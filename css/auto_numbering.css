@@ -6,7 +6,7 @@
 /* https://codepen.io/X-Raym/pen/dBprG */
 
 /* 
-HTML / CSS autonumber headings?
+HTML/CSS autonumber headings?
 http://stackoverflow.com/a/535390/819887
 */
 
@@ -31,4 +31,3 @@ body{counter-reset: section}
    counter-increment: detail;
    content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
  }
-

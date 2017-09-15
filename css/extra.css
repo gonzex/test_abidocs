@@ -114,8 +114,7 @@ details summary::-webkit-details-marker {
 }
 
 /* Attach the "no-details" class to details tags
-   in browsers that do not support them to get
-   open/show functionality. */
+   in browsers that do not support them to get open/show functionality. */
 details.no-details:not([open]) > * {
   display: none;
 }
@@ -128,20 +127,25 @@ details.no-details:not([open]) summary {
 .fab {
     cursor: pointer;
 }
+
 .fab-backdrop {
     color: rgba(255, 255, 255, 0);
 }
+
 .fab-primary, .fab-secondary {
     transition: all 0.35s ease-in-out;
 }
+
 .fab.active .fab-primary {
     opacity: 0;
     transform: rotate(225deg);
 }
+
 .fab-secondary {
     opacity: 0;
     transform: rotate(-225deg);
 }
+
 .fab.active .fab-secondary {
     opacity: 1;
     transform: rotate(0);
@@ -151,12 +155,13 @@ details.no-details:not([open]) summary {
 #inbox .show-on-hover:hover > ul.dropdown-menu {
     display: block;    
 }
+
 #inbox .show-on-hover {
-    /* position: absolute; */
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
+
 #inbox .btn-io{
     border-radius: 50%;
     height: 54px;
@@ -164,6 +169,7 @@ details.no-details:not([open]) summary {
     padding: 0 !important;
     box-shadow: 0px 3px 7px 0px rgba(202, 124, 124, 0.72);
 }
+
 #inbox .dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
@@ -171,10 +177,12 @@ details.no-details:not([open]) summary {
     margin-bottom: -5px;
     padding-bottom: 30px;
 }
+
 #inbox .dropdown-menu-right {
     right: 0 !Important;
     left: auto !Important;
 }
+
 #inbox .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -224,35 +232,81 @@ details.no-details:not([open]) summary {
     background: #6E4320 !important;
     color: #fff !important;
 }
+
 #inbox .dropdown-menu > li:last-child>a {
     background: #D3A516;
     color: #fff;
 }
+
 #inbox .dropdown-menu > li:nth-child(6)>a {
     background: #3C80F6;
     color: #fff;
 }
+
 #inbox .dropdown-menu > li:nth-child(5)>a {
     background: #3C80F6;
     color: #fff;
 }
+
 #inbox .dropdown-menu > li:nth-child(4)>a {
     background: #3C80F6;
     color: #fff;
 }
+
 #inbox .dropdown-menu > li:nth-child(3)>a {
     background: #3C80F6;
     color: #fff;
 }
+
 #inbox .dropdown-menu > li:nth-child(2)>a {
     background: #2CAC26;
     color: #fff;
 }
+
 #inbox .fa-iosm{
     margin-top: 7px;
 }
 
-div.gallery {
-  display: flex;
-  flex-wrap: wrap;
+/*
+.btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
 }
+
+.btn-lg {
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 1.33333;
+  padding: 10px 16px;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #152836;
+}
+
+.btn-primary {
+  background-color: #152836;
+  border-color: #0e1a24;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border-color: #eeeeee;
+  color: #eeeeee;
+  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
+}
+*/
