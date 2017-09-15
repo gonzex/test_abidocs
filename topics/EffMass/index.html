@@ -48,20 +48,38 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
+    <!--Pace support. http://github.hubspot.com/pace/ -->
+    <script>
+        paceOptions = {
+            ajax: true,      // disabled
+            document: true,  // activated
+            eventLag: false  // disabled
+            //target: 'article'
+            //elements: {selectors: ['.my-page']}
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-bounce.min.css" />
     <!--
-    <script src="/extra_javascript/pace.min.js"></script>
-    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
-    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flat-top.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-loading-bar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-atom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-big-counter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flash.min.css" />
     -->
 
     <!-- MathJax support
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     -->
     <!--
     This is compatible with plotly.
     -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
 
     <!--
@@ -101,6 +119,10 @@
     
     
     
+
+    <!-- Load Ubuntu fonts used for input variables -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -2980,7 +3002,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
         <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
-          <button id="return-to-top" type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+          <button id="return-to-top" type="button" class="btn btn-primary btn-io dropdown-toggle" data-toggle="dropdown">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
                 <i class="fa fa-chevron-up fa-stack-1x fa-inverse fab-primary"></i>
@@ -2992,27 +3014,28 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
         
         
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
-                  title=About> <i class="fa fa-info-circle"></i></a></li>
+                  title=About><i class="fa fa-info-circle"></i></a></li>
         
           <li><a href="../../developers/abimkdocs/" data-toggle="tooltip" data-placement="left" 
-                  title=Developers> <i class="fa fa-terminal"></i></a></li>
+                  title=Developers><i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
-                  title=Theory> <i class="fa fa-book"></i></a></li>
+                  title=Theory><i class="fa fa-book"></i></a></li>
         
           <li><a href="../../tutorials/welcome/" data-toggle="tooltip" data-placement="left" 
-                  title=Lessons> <i class="fa fa-graduation-cap"></i></a></li>
+                  title=Lessons><i class="fa fa-graduation-cap"></i></a></li>
         
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
-                  title=Variables> <i class="fa fa-file-text-o"></i></a></li>
+                  title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
           <li><a href="../" data-toggle="tooltip" data-placement="left" 
-                  title=Topics> <i class="fa fa-question"></i></a></li>
+                  title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
-                  title=User Guide> <i class="fa fa-user-circle-o"></i></a></li>
+                  title=User Guide><i class="fa fa-user-circle-o"></i></a></li>
         
         <!--
+        Example: 
         <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
               <i class="fa fa-user-circle-o"></i></a></li>
         -->

@@ -48,20 +48,38 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
+    <!--Pace support. http://github.hubspot.com/pace/ -->
+    <script>
+        paceOptions = {
+            ajax: true,      // disabled
+            document: true,  // activated
+            eventLag: false  // disabled
+            //target: 'article'
+            //elements: {selectors: ['.my-page']}
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-bounce.min.css" />
     <!--
-    <script src="/extra_javascript/pace.min.js"></script>
-    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
-    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flat-top.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-loading-bar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-atom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-big-counter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flash.min.css" />
     -->
 
     <!-- MathJax support
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     -->
     <!--
     This is compatible with plotly.
     -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
 
     <!--
@@ -101,6 +119,10 @@
     
     
     
+
+    <!-- Load Ubuntu fonts used for input variables -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -3224,7 +3246,7 @@ eph input variables to be used in the input file for the abinit executable.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v5:  <a class="wikilink test-link" data-content="GeTe in rhombohedral structure Test the computation of phonons,  dielectric tensor and Born effective charges,  with and without spin-orbit coupling." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t24.in">t24.in</a></li><li>v6:  <a class="wikilink test-link" data-content="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . Warning : only valid for Gamma,  AND the temperature-dependent shifts must be averaged over degenerate states." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t37.in">t37.in</a></li><li>v67mbpt:  <a class="wikilink test-link" data-content="SiC in zinc-blende structure Calculation of the GW corrections with 4 different plasmon-pole models. The following variables are tested: inclvkb=2,  nomegasrd and omegasrd." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t01.in">t01.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . The temperature-dependent shifts must be averaged over degenerate states. This temperature-dependent calculation make use of a k-point interpolation to speed up the convergence study with respect to the q-points integration. Two q-points are computed." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t50.in">t50.in</a>, <a class="wikilink test-link" data-content="This tests make use of the irdwfkfine variable instead of the getwfkfine variable used in the previous test. The third q-point is computed here." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t51.in">t51.in</a>, <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Govern the imposition of the Acoustic Sum Rule (ASR) in phonon calculations.
+<details class="note"><summary>Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v5:  <a class="wikilink test-link" data-content="GeTe in rhombohedral structure Test the computation of phonons,  dielectric tensor and Born effective charges,  with and without spin-orbit coupling." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t24.in">t24.in</a></li><li>v6:  <a class="wikilink test-link" data-content="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . Warning : only valid for Gamma,  AND the temperature-dependent shifts must be averaged over degenerate states." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t37.in">t37.in</a></li><li>v67mbpt:  <a class="wikilink test-link" data-content="SiC in zinc-blende structure Calculation of the GW corrections with 4 different plasmon-pole models. The following variables are tested: inclvkb=2,  nomegasrd and omegasrd." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v67mbpt/Input/t01.in">t01.in</a></li><li>v7:  <a class="wikilink test-link" data-content="Diamond. Test temperature-dependent of the electronic structure,  with reduction of the number of q points to be computed,  thanks to thmflag=7 . The temperature-dependent shifts must be averaged over degenerate states. This temperature-dependent calculation make use of a k-point interpolation to speed up the convergence study with respect to the q-points integration. Two q-points are computed." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t50.in">t50.in</a>, <a class="wikilink test-link" data-content="This tests make use of the irdwfkfine variable instead of the getwfkfine variable used in the previous test. The third q-point is computed here." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t51.in">t51.in</a>, <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Govern the imposition of the Acoustic Sum Rule (ASR) in phonon calculations.
 Same meaning as the corresponding anaddb variable.</p>
 <hr />
 <h2 id="chneut"><strong>chneut</strong><a class="headerlink" href="#chneut" title="Permanent link">&para;</a></h2>
@@ -3234,7 +3256,7 @@ charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" 
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Set the treatment of the Charge Neutrality requirement for the effective
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Set the treatment of the Charge Neutrality requirement for the effective
 charges. Same meaning as the corresponding anaddb variable.</p>
 <hr />
 <h2 id="ddb_ngqpt"><strong>ddb_ngqpt</strong><a class="headerlink" href="#ddb_ngqpt" title="Permanent link">&para;</a></h2>
@@ -3243,7 +3265,7 @@ charges. Same meaning as the corresponding anaddb variable.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> [0, 0, 0]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a>, <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a>, <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>This variable is mandatory when <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7. It defines the number of
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a>, <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a>, <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>This variable is mandatory when <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7. It defines the number of
 divisions in the (homogeneous) q-mesh used to generate the DDB file. See also
 the description of the <a class="wikilink codevar-link" href="../files#getddb">getddb</a> input variable.</p>
 <hr />
@@ -3253,7 +3275,7 @@ the description of the <a class="wikilink codevar-link" href="../files#getddb">g
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> [0.0, 0.0, 0.0]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>Only relevant when <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7. It defines the shift in the q-mesh used
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>Only relevant when <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7. It defines the shift in the q-mesh used
 to generate the DDB file, which is defined by the <a class="wikilink codevar-link" href="../eph#ddb_ngqpt">ddb_ngqpt</a> input
 variable. See <a class="wikilink codevar-link" href="../basic#shiftk">shiftk</a> for more information on the definition.</p>
 <hr />
@@ -3264,7 +3286,7 @@ charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" 
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the treatment of the dipole-dipole interaction. Same
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the treatment of the dipole-dipole interaction. Same
 meaning as the corresponding anaddb variable <a class="wikilink codevar-link" href="../anaddb#dipdip">dipdip@anaddb</a></p>
 <hr />
 <h2 id="eph_extrael"><strong>eph_extrael</strong><a class="headerlink" href="#eph_extrael" title="Permanent link">&para;</a></h2>
@@ -3273,7 +3295,7 @@ meaning as the corresponding anaddb variable <a class="wikilink codevar-link" hr
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Number of electrons per unit cell to be added to the initial value computed
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Number of electrons per unit cell to be added to the initial value computed
 from the pseudopotentials and unit cell.</p>
 <hr />
 <h2 id="eph_fermie"><strong>eph_fermie</strong><a class="headerlink" href="#eph_fermie" title="Permanent link">&para;</a></h2>
@@ -3283,7 +3305,7 @@ from the pseudopotentials and unit cell.</p>
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable can be used to change the value of the Fermi level when
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable can be used to change the value of the Fermi level when
 performing electron-phonon calculations with <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7. This variable
 has effect only if set to a non-zero value. See also <a class="wikilink codevar-link" href="../eph#eph_extrael">eph_extrael</a>.</p>
 <hr />
@@ -3294,7 +3316,7 @@ has effect only if set to a non-zero value. See also <a class="wikilink codevar-
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.01 Hartree  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the energy window around the Fermi level used for e-ph
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the energy window around the Fermi level used for e-ph
 calculations (<a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a> = 7). Only the states located in the energy range
 [efermi - eph_fsewin, efermi + eph_fsewin] are included in the e-ph
 calculation.</p>
@@ -3309,7 +3331,7 @@ calculation.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.01 Hartree<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../eph#eph_intmeth">eph_intmeth</a> == 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the gaussian broadening used for the integration over
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the gaussian broadening used for the integration over
 the Fermi surface when <a class="wikilink codevar-link" href="../eph#eph_intmeth">eph_intmeth</a> == 1.</p>
 <hr />
 <h2 id="eph_intmeth"><strong>eph_intmeth</strong><a class="headerlink" href="#eph_intmeth" title="Permanent link">&para;</a></h2>
@@ -3318,7 +3340,7 @@ the Fermi surface when <a class="wikilink codevar-link" href="../eph#eph_intmeth
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 2  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the technique for the integration on the Fermi surface
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This variable defines the technique for the integration on the Fermi surface
 of electron-phonon quantities.</p>
 <p>1 for Gaussian technique with broadening factor <a class="wikilink codevar-link" href="../eph#eph_fsmear">eph_fsmear</a>. 2 for
 tetrahedron method.</p>
@@ -3330,7 +3352,7 @@ tetrahedron method.</p>
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Average electron-electron interaction strength, for the computation of the
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Average electron-electron interaction strength, for the computation of the
 superconducting Tc using Mc-Millan&rsquo;s formula.</p>
 <hr />
 <h2 id="eph_ngqpt_fine"><strong>eph_ngqpt_fine</strong><a class="headerlink" href="#eph_ngqpt_fine" title="Permanent link">&para;</a></h2>
@@ -3339,7 +3361,7 @@ superconducting Tc using Mc-Millan&rsquo;s formula.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> [0, 0, 0]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a>, <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>This variable activates the interpolation of the first-order variation of the
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a>, <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>This variable activates the interpolation of the first-order variation of the
 self-consistent potential in the electron-phonon code. If eph_nqgpt_fine
 differs from [0, 0, 0], the code will use the Fourier transform to interpolate
 the DFPT potentials on this fine q-mesh starting from the irreducible set of
@@ -3354,7 +3376,7 @@ DDB file (default behavior).</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>NB - this does not work yet. This variable can be used to turn on the
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>NB - this does not work yet. This variable can be used to turn on the
 calculation of transport quantities in the eph module of abinit. Value of 1
 corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov</p>
 <hr />
@@ -3365,7 +3387,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 2  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>Select the integration technique for computing the phonon DOS and the
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>Select the integration technique for computing the phonon DOS and the
 Eliashberg function a2fF(w).</p>
 <p>1 for Gaussian scheme (see also <a class="wikilink codevar-link" href="../eph#ph_smear">ph_smear</a>).  </p>
 <p>2 for tetrahedron method (no other input is needed but requires at least 4
@@ -3378,7 +3400,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 20  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This variable is used in conjunction with <a class="wikilink codevar-link" href="../eph#ph_nqpath">ph_nqpath</a> and <a class="wikilink codevar-link" href="../dfpt#ph_qpath">ph_qpath</a> to
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This variable is used in conjunction with <a class="wikilink codevar-link" href="../eph#ph_nqpath">ph_nqpath</a> and <a class="wikilink codevar-link" href="../dfpt#ph_qpath">ph_qpath</a> to
 define the q-path used for phonon band structures and phonon linewidths. It
 gives the number of points used to sample the smallest segment in the q-path
 specified by <a class="wikilink codevar-link" href="../dfpt#ph_qpath">ph_qpath</a>.</p>
@@ -3390,7 +3412,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This integer defines the number of points in the <a class="wikilink codevar-link" href="../dfpt#ph_qpath">ph_qpath</a> array.</p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This integer defines the number of points in the <a class="wikilink codevar-link" href="../dfpt#ph_qpath">ph_qpath</a> array.</p>
 <hr />
 <h2 id="ph_nqshift"><strong>ph_nqshift</strong><a class="headerlink" href="#ph_nqshift" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> PHonons: Number of Q-SHIFTs<br />
@@ -3399,7 +3421,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This variable defines the number of shifts in the q-mesh used for the phonon
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This variable defines the number of shifts in the q-mesh used for the phonon
 DOS and for the Eliashberg functions (see <a class="wikilink codevar-link" href="../dfpt#ph_ngqpt">ph_ngqpt</a>). If not given, the
 code assumes a Gamma-centered mesh. The shifts are specified by <a class="wikilink codevar-link" href="../eph#ph_qshift">ph_qshift</a>.</p>
 <hr />
@@ -3411,7 +3433,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Dimensions:</em> (3,ph_nqshift)<br />
 <em>Default value:</em> [0, 0, 0]<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../eph#ph_nqshift">ph_nqshift</a>  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This array gives the shifts to be used to construct the q-mesh for computing
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>This array gives the shifts to be used to construct the q-mesh for computing
 the phonon DOS and the Eliashberg functions (see also <a class="wikilink codevar-link" href="../eph#ph_nqshift">ph_nqshift</a>. If not
 given, a Gamma-centered mesh is used.</p>
 <hr />
@@ -3424,7 +3446,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.00002 Hartree<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../eph#ph_intmeth">ph_intmeth</a>==1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>The gaussian broadening used for the integration of the phonon DOS and the
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>The gaussian broadening used for the integration of the phonon DOS and the
 Eliashberg function. See also <a class="wikilink codevar-link" href="../eph#ph_intmeth">ph_intmeth</a> and <a class="wikilink codevar-link" href="../dfpt#ph_ngqpt">ph_ngqpt</a>.</p>
 <hr />
 <h2 id="ph_wstep"><strong>ph_wstep</strong><a class="headerlink" href="#ph_wstep" title="Permanent link">&para;</a></h2>
@@ -3435,7 +3457,7 @@ calculations" data-placement="auto right" data-toggle="popover" data-trigger="ho
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.1 meV  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>The step used to generate the (linear) frequency mesh for the phonon DOS and
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li><li>v8:  <a class="wikilink test-link" data-content="WARNING: This code is still under development. Use at your own risk. Calculation of the Fan-Migdal + Debye-Waller self-energy matrix elements." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t44.in">t44.in</a></li></ul></details><p>The step used to generate the (linear) frequency mesh for the phonon DOS and
 the Eliashberg function. The extrema of the mesh are automatically computed by
 the code.</p>
 <hr />
@@ -3445,7 +3467,7 @@ the code.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This option activates the output of the phonon frequencies in the EPH code.
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>This option activates the output of the phonon frequencies in the EPH code.
 Possible values:</p>
 <ul>
 <li>0 Disable the output of the phonon frequencies.</li>
@@ -3460,7 +3482,7 @@ Possible values:</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>Print the phonon density of states. It is activated by default when
+<details class="note"><summary>Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">t89.in</a></li><li>v8:  <a class="wikilink test-link" data-content="Testing of the phonon potential interpolation routines." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t65.in">t65.in</a></li></ul></details><p>Print the phonon density of states. It is activated by default when
 <a class="wikilink codevar-link" href="../gstate#optdriver">optdriver</a>==7.</p>
 <hr />
 <h2 id="prtphsurf"><strong>prtphsurf</strong><a class="headerlink" href="#prtphsurf" title="Permanent link">&para;</a></h2>
@@ -3469,7 +3491,7 @@ Possible values:</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Print a bxsf file (Xcrysden format) with the (interpolated) phonon frequencies
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Calculation of phonon linewidths and e-ph coupling parameter lambda." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t88.in">t88.in</a></li></ul></details><p>Print a bxsf file (Xcrysden format) with the (interpolated) phonon frequencies
 computed of the q-mesh determined by <a class="wikilink codevar-link" href="../dfpt#ph_ngqpt">ph_ngqpt</a>. The file can be use to
 visualize isosurfaces with Xcrysden or other similar tools supporting the bxsf
 format. Note that the (dense) q-mesh must be Gamma-centered, shifted meshs are
@@ -3482,7 +3504,7 @@ charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" 
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>If symdynmat is equal to 1, the dynamical matrix is symmetrized before the
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>If symdynmat is equal to 1, the dynamical matrix is symmetrized before the
 diagonalization (same meaning as the corresponding anaddb variable). Note that
 symdynmat==1 will automatically enable the symmetrization of the electron-
 phonon linewidths.</p>
@@ -3501,7 +3523,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
         <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
-          <button id="return-to-top" type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+          <button id="return-to-top" type="button" class="btn btn-primary btn-io dropdown-toggle" data-toggle="dropdown">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
                 <i class="fa fa-chevron-up fa-stack-1x fa-inverse fab-primary"></i>
@@ -3513,27 +3535,28 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
         
         
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
-                  title=About> <i class="fa fa-info-circle"></i></a></li>
+                  title=About><i class="fa fa-info-circle"></i></a></li>
         
           <li><a href="../../developers/abimkdocs/" data-toggle="tooltip" data-placement="left" 
-                  title=Developers> <i class="fa fa-terminal"></i></a></li>
+                  title=Developers><i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
-                  title=Theory> <i class="fa fa-book"></i></a></li>
+                  title=Theory><i class="fa fa-book"></i></a></li>
         
           <li><a href="../../tutorials/welcome/" data-toggle="tooltip" data-placement="left" 
-                  title=Lessons> <i class="fa fa-graduation-cap"></i></a></li>
+                  title=Lessons><i class="fa fa-graduation-cap"></i></a></li>
         
           <li><a href="../" data-toggle="tooltip" data-placement="left" 
-                  title=Variables> <i class="fa fa-file-text-o"></i></a></li>
+                  title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
           <li><a href="../../topics/" data-toggle="tooltip" data-placement="left" 
-                  title=Topics> <i class="fa fa-question"></i></a></li>
+                  title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
-                  title=User Guide> <i class="fa fa-user-circle-o"></i></a></li>
+                  title=User Guide><i class="fa fa-user-circle-o"></i></a></li>
         
         <!--
+        Example: 
         <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
               <i class="fa fa-user-circle-o"></i></a></li>
         -->

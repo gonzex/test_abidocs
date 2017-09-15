@@ -48,20 +48,38 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
+    <!--Pace support. http://github.hubspot.com/pace/ -->
+    <script>
+        paceOptions = {
+            ajax: true,      // disabled
+            document: true,  // activated
+            eventLag: false  // disabled
+            //target: 'article'
+            //elements: {selectors: ['.my-page']}
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-bounce.min.css" />
     <!--
-    <script src="/extra_javascript/pace.min.js"></script>
-    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
-    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flat-top.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-loading-bar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-atom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-big-counter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flash.min.css" />
     -->
 
     <!-- MathJax support
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     -->
     <!--
     This is compatible with plotly.
     -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
 
     <!--
@@ -101,6 +119,10 @@
     
     
     
+
+    <!-- Load Ubuntu fonts used for input variables -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -3309,7 +3331,7 @@ vdw input variables to be used in the input file for the abinit executable.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to read previously calculated vdW-DF variables.<br />
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to read previously calculated vdW-DF variables.<br />
 Supported values:</p>
 <ul>
 <li>0 =&gt; do not read vdW-DF variables </li>
@@ -3323,7 +3345,7 @@ Supported values:</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Print out a NetCDF file containing a vdW-DF kernel.</p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Print out a NetCDF file containing a vdW-DF kernel.</p>
 <hr />
 <h2 id="vdw_df_acutmin"><strong>vdw_df_acutmin</strong><a class="headerlink" href="#vdw_df_acutmin" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF MINimum Angular CUT-off<br />
@@ -3333,7 +3355,7 @@ Supported values:</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 10<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_aratio"><strong>vdw_df_aratio</strong><a class="headerlink" href="#vdw_df_aratio" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Angle RATIO between the highest and
@@ -3344,7 +3366,7 @@ lowest angles.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 30<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_damax"><strong>vdw_df_damax</strong><a class="headerlink" href="#vdw_df_damax" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Delta for Angles, MAXimum <br />
@@ -3354,7 +3376,7 @@ lowest angles.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.5<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_damin"><strong>vdw_df_damin</strong><a class="headerlink" href="#vdw_df_damin" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Delta for Angles, MINimum<br />
@@ -3364,7 +3386,7 @@ lowest angles.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.01<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build angular meshes for the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_dcut"><strong>vdw_df_dcut</strong><a class="headerlink" href="#vdw_df_dcut" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF D-mesh CUT-off<br />
@@ -3374,7 +3396,7 @@ lowest angles.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 30<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_dratio"><strong>vdw_df_dratio</strong><a class="headerlink" href="#vdw_df_dratio" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF, between the highest and
@@ -3385,7 +3407,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 20<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_dsoft"><strong>vdw_df_dsoft</strong><a class="headerlink" href="#vdw_df_dsoft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Distance for SOFTening.<br />
@@ -3395,7 +3417,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1.0<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_gcut"><strong>vdw_df_gcut</strong><a class="headerlink" href="#vdw_df_gcut" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF G-space CUT-off<br />
@@ -3405,7 +3427,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 5<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to filter the vdW-DF kernel in reciprocal space.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to filter the vdW-DF kernel in reciprocal space.  </p>
 <hr />
 <h2 id="vdw_df_ndpts"><strong>vdw_df_ndpts</strong><a class="headerlink" href="#vdw_df_ndpts" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Number of D-mesh PoinTS<br />
@@ -3415,7 +3437,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 20<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_ngpts"><strong>vdw_df_ngpts</strong><a class="headerlink" href="#vdw_df_ngpts" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Number of G-mesh PoinTS<br />
@@ -3425,7 +3447,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> -1<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_nqpts"><strong>vdw_df_nqpts</strong><a class="headerlink" href="#vdw_df_nqpts" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Number of Q-mesh PoinTS<br />
@@ -3435,7 +3457,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 30<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_nrpts"><strong>vdw_df_nrpts</strong><a class="headerlink" href="#vdw_df_nrpts" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Number of R-PoinTS<br />
@@ -3445,7 +3467,7 @@ lowest D, RATIO.<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 2048<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to define the sampling of the vdW-DF-kernel in
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to define the sampling of the vdW-DF-kernel in
 real-space.  </p>
 <hr />
 <h2 id="vdw_df_nsmooth"><strong>vdw_df_nsmooth</strong><a class="headerlink" href="#vdw_df_nsmooth" title="Permanent link">&para;</a></h2>
@@ -3456,7 +3478,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 12<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to exponentially smoothen q near q0.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to exponentially smoothen q near q0.  </p>
 <hr />
 <h2 id="vdw_df_phisoft"><strong>vdw_df_phisoft</strong><a class="headerlink" href="#vdw_df_phisoft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF PHI value SOFTening.<br />
@@ -3466,7 +3488,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> -1.0<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_qcut"><strong>vdw_df_qcut</strong><a class="headerlink" href="#vdw_df_qcut" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Q-mesh CUT-off<br />
@@ -3476,7 +3498,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 5<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_qratio"><strong>vdw_df_qratio</strong><a class="headerlink" href="#vdw_df_qratio" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF, between highest and lowest Q, RATIO .<br />
@@ -3486,7 +3508,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 20<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, .  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, .  </p>
 <hr />
 <h2 id="vdw_df_rcut"><strong>vdw_df_rcut</strong><a class="headerlink" href="#vdw_df_rcut" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF Real-space CUT-off<br />
@@ -3496,7 +3518,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 100<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to define the vdW-DF kernel cut-off radius.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to define the vdW-DF kernel cut-off radius.  </p>
 <hr />
 <h2 id="vdw_df_rsoft"><strong>vdw_df_rsoft</strong><a class="headerlink" href="#vdw_df_rsoft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF radius SOFTening.<br />
@@ -3506,7 +3528,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.0<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_threshold"><strong>vdw_df_threshold</strong><a class="headerlink" href="#vdw_df_threshold" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF energy calculation THRESHOLD<br />
@@ -3516,7 +3538,7 @@ real-space.  </p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0.01<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Sets a threshold for the energy gradient that, when reached, will cause the
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Sets a threshold for the energy gradient that, when reached, will cause the
 vdW-DF interactions to be calculated.<br />
 Adjust it to a big value (e.g. 1e12) to enable it all along the SCF
 calculation. Too small values, as well as negative values, will result in the
@@ -3530,7 +3552,7 @@ vdW-DF energy contributions never being calculated.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1e-13<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.  </p>
 <hr />
 <h2 id="vdw_df_tweaks"><strong>vdw_df_tweaks</strong><a class="headerlink" href="#vdw_df_tweaks" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> vdW-DF TWEAKS.<br />
@@ -3540,7 +3562,7 @@ vdW-DF energy contributions never being calculated.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.<br />
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, to build the vdW-DF kernel.<br />
 <strong> _ IMPORTANT NOTE: modifying this variable will likely transform the calculated energies and their gradients into garbage. You have been warned! _ </strong>   </p>
 <hr />
 <h2 id="vdw_df_zab"><strong>vdw_df_zab</strong><a class="headerlink" href="#vdw_df_zab" title="Permanent link">&para;</a></h2>
@@ -3551,7 +3573,7 @@ vdW-DF energy contributions never being calculated.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> -0.8491<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials.)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, as introduced in <a href="http://dx.doi.org/10.1103/PhysRevLett.92.246401">
+<details class="note"><summary>Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)</summary></details><p>Used when <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>&gt;0, as introduced in <a href="http://dx.doi.org/10.1103/PhysRevLett.92.246401">
 doi:10.1103/PhysRevLett.92.246401
 </a> .  </p>
 <hr />
@@ -3563,7 +3585,7 @@ doi:10.1103/PhysRevLett.92.246401
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a> in [10,11]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>The absolute value of vdw_nfrag is the number of vdW interacting fragments in
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>The absolute value of vdw_nfrag is the number of vdW interacting fragments in
 the unit cell. As wannierization takes place in reciprocal space, the MLWF
 center positions could be translated by some lattice vector from the cell
 where atoms are placed. If <a class="wikilink codevar-link" href="../vdw#vdw_nfrag">vdw_nfrag</a> &gt;= 1 then MLWFs are translated to
@@ -3579,7 +3601,7 @@ corners or at limiting faces of the unit cell.</p>
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> [0, 0, 0]<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a> in [10,11]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>Set of dimensionless positive numbers which define the maximum multiples of
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>Set of dimensionless positive numbers which define the maximum multiples of
 the primitive translations (<a class="wikilink codevar-link" href="../basic#rprimd">%rprimd</a>) in the supercell construction. Each
 component of vdw_supercell indicates the maximum number of cells along both
 positive or negative directions of the corresponding primitive vector i.e. the
@@ -3597,7 +3619,7 @@ will indicate that the corresponding direction is normal to the layers.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1e-10<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>==5  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a>, <a class="wikilink test-link" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in">t98.in</a>, <a class="wikilink test-link" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in">t99.in</a></li><li>vdwxc:  <a class="wikilink test-link" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in">t10.in</a></li></ul></details><p>The DFT-D methods (S. Grimme approach) dispersion potentials, <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>==5 or
+<details class="note"><summary>Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a>, <a class="wikilink test-link" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in">t98.in</a>, <a class="wikilink test-link" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in">t99.in</a></li><li>vdwxc:  <a class="wikilink test-link" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in">t10.in</a></li></ul></details><p>The DFT-D methods (S. Grimme approach) dispersion potentials, <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a>==5 or
 6 or 7, include a pair potential. The number of pairs of atoms contributing to
 the potential is necessarily limited. To be included in the potential a pair
 of atom must have contribution to the energy larger than <a class="wikilink codevar-link" href="../vdw#vdw_tol">vdw_tol</a>.</p>
@@ -3611,7 +3633,7 @@ of atom must have contribution to the energy larger than <a class="wikilink code
 <em>Default value:</em> -1<br />
 <em>Comment:</em> Do include the 3-body term in the correction<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a> == 6  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a></li></ul></details><p>Control the computation of the 3-body correction inside DFT-D3 dispersion
+<details class="note"><summary>Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a></li></ul></details><p>Control the computation of the 3-body correction inside DFT-D3 dispersion
 correction (Grimme approach) to the total energy:<br />
 -If ** vdw_tol_3bt**&lt;0, no 3-body correction. <br />
 -If ** vdw_tol_3bt**&gt;0, the 3-body term is included with a tolerance = <strong>vdw_tol_3bt</strong>   </p>
@@ -3641,7 +3663,7 @@ elastic constants, dynamical matrix and internal strains)</p>
 <em>Dimensions:</em> (<a class="wikilink codevar-link" href="../basic#natom">natom</a>)<br />
 <em>Default value:</em> 1*<a class="wikilink codevar-link" href="../basic#natom">natom</a><br />
 <em>Only relevant if:</em> <a class="wikilink codevar-link" href="../vdw#vdw_xc">vdw_xc</a> in [10,11]  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>This array defines the interacting fragments by assigning to each atom an
+<details class="note"><summary>Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>This array defines the interacting fragments by assigning to each atom an
 integer index from 1 to ** vdw_nfrag ** . The ordering of <a class="wikilink codevar-link" href="../vdw#vdw_typfrag">vdw_typfrag</a> is
 the same as <a class="wikilink codevar-link" href="../basic#typat">typat</a> or <a class="wikilink codevar-link" href="../basic#xcart">xcart</a>. Internally each MLWF is assigned to a
 given fragment by computing the distance to the atoms. MLWFs belong to the
@@ -3656,7 +3678,7 @@ visualization.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials.)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a>, <a class="wikilink test-link" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in">t98.in</a>, <a class="wikilink test-link" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in">t99.in</a></li><li>vdwxc:  <a class="wikilink test-link" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in">t10.in</a></li><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>Selects a van-der-Waals density functional to apply the corresponding
+<details class="note"><summary>Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)</summary><ul><li>v7:  <a class="wikilink test-link" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t97.in">t97.in</a>, <a class="wikilink test-link" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t98.in">t98.in</a>, <a class="wikilink test-link" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t99.in">t99.in</a></li><li>vdwxc:  <a class="wikilink test-link" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/vdwxc/Input/t10.in">t10.in</a></li><li>wannier90:  <a class="wikilink test-link" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t11.in">t11.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t12.in">t12.in</a>, <a class="wikilink test-link" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/wannier90/Input/t13.in">t13.in</a></li></ul></details><p>Selects a van-der-Waals density functional to apply the corresponding
 correction to the exchange-correlation energy. If set to zero, no correction
 will be applied.<br />
 Possible values are:</p>
@@ -3728,7 +3750,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
         <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
-          <button id="return-to-top" type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+          <button id="return-to-top" type="button" class="btn btn-primary btn-io dropdown-toggle" data-toggle="dropdown">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
                 <i class="fa fa-chevron-up fa-stack-1x fa-inverse fab-primary"></i>
@@ -3740,27 +3762,28 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
         
         
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
-                  title=About> <i class="fa fa-info-circle"></i></a></li>
+                  title=About><i class="fa fa-info-circle"></i></a></li>
         
           <li><a href="../../developers/abimkdocs/" data-toggle="tooltip" data-placement="left" 
-                  title=Developers> <i class="fa fa-terminal"></i></a></li>
+                  title=Developers><i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
-                  title=Theory> <i class="fa fa-book"></i></a></li>
+                  title=Theory><i class="fa fa-book"></i></a></li>
         
           <li><a href="../../tutorials/welcome/" data-toggle="tooltip" data-placement="left" 
-                  title=Lessons> <i class="fa fa-graduation-cap"></i></a></li>
+                  title=Lessons><i class="fa fa-graduation-cap"></i></a></li>
         
           <li><a href="../" data-toggle="tooltip" data-placement="left" 
-                  title=Variables> <i class="fa fa-file-text-o"></i></a></li>
+                  title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
           <li><a href="../../topics/" data-toggle="tooltip" data-placement="left" 
-                  title=Topics> <i class="fa fa-question"></i></a></li>
+                  title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
-                  title=User Guide> <i class="fa fa-user-circle-o"></i></a></li>
+                  title=User Guide><i class="fa fa-user-circle-o"></i></a></li>
         
         <!--
+        Example: 
         <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
               <i class="fa fa-user-circle-o"></i></a></li>
         -->

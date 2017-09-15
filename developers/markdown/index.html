@@ -48,20 +48,38 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
+    <!--Pace support. http://github.hubspot.com/pace/ -->
+    <script>
+        paceOptions = {
+            ajax: true,      // disabled
+            document: true,  // activated
+            eventLag: false  // disabled
+            //target: 'article'
+            //elements: {selectors: ['.my-page']}
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-bounce.min.css" />
     <!--
-    <script src="/extra_javascript/pace.min.js"></script>
-    <link href="/css/pace-theme-flash.tmpl.css" rel="stylesheet" />
-    <link href="/css/pace-theme-center-atom.tmpl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flat-top.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-loading-bar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-center-atom.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-big-counter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-flash.min.css" />
     -->
 
     <!-- MathJax support
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
     </script> 
     -->
     <!--
     This is compatible with plotly.
     -->
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
+    <script type="text/javascript" async 
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_SVG">
     </script> 
 
     <!--
@@ -104,6 +122,10 @@
     
     
     
+
+    <!-- Load Ubuntu fonts used for input variables -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
@@ -2726,9 +2748,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#markdown-quick-reference" title="Markdown Quick Reference" class="md-nav__link">
-    Markdown Quick Reference
+  <a href="#markdown-quick-reference" title="Markdown quick reference" class="md-nav__link">
+    Markdown quick reference
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inline-styles" title="Inline styles" class="md-nav__link">
+    Inline styles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-and-syntax-highlighting" title="Code and syntax highlighting" class="md-nav__link">
+    Code and syntax highlighting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" title="Tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figures" title="Figures" class="md-nav__link">
+    Figures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2781,23 +2837,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#markdown-extensions" title="Markdown extensions" class="md-nav__link">
+    Markdown extensions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#smartsymbols" title="SmartSymbols" class="md-nav__link">
     SmartSymbols
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#admonitions" title="Admonitions" class="md-nav__link">
     Admonitions
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#details" title="Details" class="md-nav__link">
     Details
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magiclink" title="MagicLink" class="md-nav__link">
+    MagicLink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abinit-extensions" title="Abinit extensions" class="md-nav__link">
+    Abinit extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2809,15 +2892,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-content" title="Media Content" class="md-nav__link">
-    Media Content
+  <a href="#media-content" title="Media content" class="md-nav__link">
+    Media content
   </a>
   
 </li>
@@ -2953,9 +3029,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#markdown-quick-reference" title="Markdown Quick Reference" class="md-nav__link">
-    Markdown Quick Reference
+  <a href="#markdown-quick-reference" title="Markdown quick reference" class="md-nav__link">
+    Markdown quick reference
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inline-styles" title="Inline styles" class="md-nav__link">
+    Inline styles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-and-syntax-highlighting" title="Code and syntax highlighting" class="md-nav__link">
+    Code and syntax highlighting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" title="Tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#figures" title="Figures" class="md-nav__link">
+    Figures
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3008,23 +3118,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#markdown-extensions" title="Markdown extensions" class="md-nav__link">
+    Markdown extensions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#smartsymbols" title="SmartSymbols" class="md-nav__link">
     SmartSymbols
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#admonitions" title="Admonitions" class="md-nav__link">
     Admonitions
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#details" title="Details" class="md-nav__link">
     Details
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magiclink" title="MagicLink" class="md-nav__link">
+    MagicLink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abinit-extensions" title="Abinit extensions" class="md-nav__link">
+    Abinit extensions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3036,15 +3173,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#media-content" title="Media Content" class="md-nav__link">
-    Media Content
+  <a href="#media-content" title="Media content" class="md-nav__link">
+    Media content
   </a>
   
 </li>
@@ -3068,9 +3198,11 @@
                 <h1 id="writing-documentation">Writing Documentation<a class="headerlink" href="#writing-documentation" title="Permanent link">&para;</a></h1>
 <p>This page is intended as a quick reference to the Markdown syntax used to write the Abinit documentation.
 Markdown can be used <strong>almost everywhere</strong> including the description of the input variables
-stored in <code class="codehilite">abinit_vars.yml</code> and the description of the automatic tests given in the <code class="codehilite">TEST_INFO</code> section.</p>
-<h2 id="markdown-quick-reference">Markdown Quick Reference<a class="headerlink" href="#markdown-quick-reference" title="Permanent link">&para;</a></h2>
-<p>Inline styles:</p>
+stored in <code class="codehilite">abinit_vars.yml</code> and the description of the automatic tests given in the <code class="codehilite">TEST_INFO</code> section.
+For a more complete introduction to Markdown, see 
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a>.</p>
+<h2 id="markdown-quick-reference">Markdown quick reference<a class="headerlink" href="#markdown-quick-reference" title="Permanent link">&para;</a></h2>
+<h3 id="inline-styles">Inline styles<a class="headerlink" href="#inline-styles" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -3122,6 +3254,38 @@ stored in <code class="codehilite">abinit_vars.yml</code> and the description of
 </tr>
 </tbody>
 </table>
+<h3 id="code-and-syntax-highlighting">Code and syntax highlighting<a class="headerlink" href="#code-and-syntax-highlighting" title="Permanent link">&para;</a></h3>
+<p>Blocks of code are either fenced by lines with three back-ticks ``` or are indented with four spaces. 
+For example, the Markdown text:</p>
+<div class="codehilite"><pre><span></span>Inline `code` has `back-ticks around` it.
+</pre></div>
+
+<p>produces: Inline <code class="codehilite">code</code> has <code class="codehilite">back-ticks around</code> it.</p>
+<p>The fastest way to include shell commands is to indent the code with four space:</p>
+<div class="codehilite"><pre><span></span>    $ abinit &lt; tbase1_x.files 2&gt; log &amp;
+</pre></div>
+
+<p>that produces:</p>
+<div class="codehilite"><pre><span></span>$ abinit &lt; tbase1_x.files <span class="m">2</span>&gt; log <span class="p">&amp;</span>
+</pre></div>
+
+
+<p>Fenced blocks allow the specification of the language used for syntax highlighting.
+Fortran code, for example, can be included with:</p>
+<div class="codehilite"><pre><span></span><span class="s">```fortran</span>
+<span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span>
+  <span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="o">*</span><span class="p">)</span><span class="s2">&quot;Hello world&quot;</span>
+<span class="k">end do</span>
+<span class="s">```</span>
+</pre></div>
+
+<p>that is displayed as:</p>
+<div class="codehilite"><pre><span></span><span class="k">do </span><span class="n">ii</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span>
+  <span class="k">write</span><span class="p">(</span><span class="o">*</span><span class="p">,</span><span class="o">*</span><span class="p">)</span><span class="s2">&quot;Hello world&quot;</span>
+<span class="k">end do</span>
+</pre></div>
+
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
 <p>To create a table in Markdown use the syntax:</p>
 <div class="codehilite"><pre><span></span>First Header  | Second Header
 ------------- | -------------
@@ -3148,40 +3312,28 @@ Content Cell  | Content Cell
 </tr>
 </tbody>
 </table>
-<p>To create and highlight code blocks place triple backticks ``` before and after the code block.</p>
-<div class="codehilite"><pre><span></span>```sh
-    $ abinit &lt; tbase1_x.files 2&gt; log &amp;
-```
-</pre></div>
-
-
-<p>that produces:</p>
-<div class="codehilite"><pre><span></span>$ abinit &lt; tbase1_x.files <span class="m">2</span>&gt; log <span class="p">&amp;</span>
-</pre></div>
-
+<h3 id="figures">Figures<a class="headerlink" href="#figures" title="Permanent link">&para;</a></h3>
 <p>To include figures, use the standard Markdown syntax:</p>
 <div class="codehilite"><pre><span></span>![](/tutorials/bse_assets/tbs2_1.png)
 </pre></div>
 
-<p>that produces</p>
 <p><img alt="" src="../../tutorials/bse_assets/tbs2_1.png" /></p>
 <p>For figures with a caption use the <a href="https://github.com/helderco/markdown-figures">markdown-figures extension</a>:</p>
 <div class="codehilite"><pre><span></span>![](/tutorials/bse_assets/tbs5.png)
-:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling.
+:   Convergenge of BSE optical spectrum wrt $\kk$-point sampling. 
+    See also [[ngkpt]] and [[shiftk]].
 </pre></div>
 
-<p>that produces</p>
 <figure><img alt="" src="../../tutorials/bse_assets/tbs5.png" /><figcaption>
-<p>Convergenge of BSE optical spectrum wrt <script type="math/tex">\kk</script>-point sampling.</p>
+<p>Convergenge of BSE optical spectrum wrt <script type="math/tex">\kk</script>-point sampling. 
+See also <a class="wikilink codevar-link" href="../../variables/basic#ngkpt">ngkpt</a> and <a class="wikilink codevar-link" href="../../variables/basic#shiftk">shiftk</a>.</p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code class="codehilite">&lt;img&gt;</code> and <code class="codehilite">&lt;figure&gt;</code> elements are automatically centered via CSS directives 
- declared in <code class="codehilite">extra.css</code>.</p>
+<p>The caption can contain Latex equations as well as <a href="#wiki-links">Abinit wiki links</a>.
+<code class="codehilite">&lt;img&gt;</code> and <code class="codehilite">&lt;figure&gt;</code> elements are automatically centered via CSS directives declared in <code class="codehilite">extra.css</code>.</p>
 </div>
-<p>For more complete introduction to Markdown, see 
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> and references therein.</p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <p>The Markdown syntax for links is:</p>
 <table>
@@ -3210,12 +3362,14 @@ Content Cell  | Content Cell
 </tr>
 </tbody>
 </table>
-<p>This is the <strong>recommended</strong> approach to create links to external resources and internal links.
+<p>This is the <strong>recommended</strong> approach to create links to external resources and internal links to other pages/sections
+of the website.
 There are however cases in which we would like to have an even simpler syntax to generate automatically 
 links in the documentation pages, in particular links to:</p>
 <ul>
 <li>The input variables declared in <code class="codehilite">abinit_vars.yml</code>.</li>
 <li>The bibliographic citations declared in <code class="codehilite">abiref.bib</code>.</li>
+<li>Input files of the Abinit test suite.</li>
 <li>Website pages commonly used e.g. a topic page.</li>
 </ul>
 <p>For this reason, we extend the Markdown syntax to account for typical cases
@@ -3225,8 +3379,11 @@ that are discussed in the next sections.</p>
 In the simple case, this gives <code class="codehilite">[[name]]</code> but, more generally <code class="codehilite">[[namespace:name#section|text]]</code>
 where <code class="codehilite">namespace</code>, <code class="codehilite">section</code> and <code class="codehilite">text</code> are optional (in such case, the adequate separator should not be mentioned). 
 The namespace is not echoed in the Web page, while if a <code class="codehilite">text</code> is given, it will supercede the echo of the 
-<code class="codehilite">name</code> in the Web page (see examples below).
-Limitation: do not use parentheses within the pair of double brackets, the whole expression will not be recognized.</p>
+<code class="codehilite">name</code> in the Web page (see examples below).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use parentheses within the pair of double brackets, the whole expression will not be recognized.</p>
+</div>
 <p>When an internal link is recognized, the dokuwiki item is replaced by the adequate HTML link 
 There are a couple of names immediately recognized:</p>
 <ul>
@@ -3299,7 +3456,7 @@ There are a couple of names immediately recognized:</p>
 <p class="admonition-title">Note</p>
 <p>Note the difference between <code class="codehilite">[[anaddb:dipdip]]</code> and <code class="codehilite">[[dipdip@anaddb]]</code>.
 In the first case, only <code class="codehilite">dipdip</code> is echoed,  while in the second case, <code class="codehilite">dipdip@anaddb</code> is echoed.
-This syntax is needed becase there&rsquo;s also a <code class="codehilite">dipdip</code> variable in Abinit.</p>
+This syntax is needed because there&rsquo;s also a <code class="codehilite">dipdip</code> variable in Abinit.</p>
 <p>The links to input files have a popover with the description of the test.
 Hovering on a citation opens a popover with the title of the Bibtex entry.</p>
 </div>
@@ -3314,6 +3471,385 @@ For the latter input variables, one has thus also the choice between the syntax 
 <p>that in rendered in HTML as: Please consult <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">the last generic ABINIT article</a>.</p>
 <p>The script generate_doc.py does a bit of formatting in these examples: it keeps one pair of square brackets 
 in the case of a bibliographic reference, and add &ldquo;~abinit/&rdquo; in the case of a path.</p>
+<h3 id="internal-links-with-namespace">Internal links with namespace<a class="headerlink" href="#internal-links-with-namespace" title="Permanent link">&para;</a></h3>
+<p>Other internal links can be recognized thanks to the namespace. 
+A first set of allowed internal namespaces are: </p>
+<ul>
+<li><code class="codehilite">lesson</code></li>
+<li><code class="codehilite">topic</code></li>
+<li><code class="codehilite">help</code></li>
+<li><code class="codehilite">bib</code></li>
+<li><code class="codehilite">theorydoc</code></li>
+<li><code class="codehilite">varset</code></li>
+<li><code class="codehilite">ac</code></li>
+<li><code class="codehilite">src</code></li>
+</ul>
+<p>In such cases, provided there is a corresponding generated HTML file 
+in one of the ~abinit/doc/*/generated_files subdirectories, 
+that has a name that start with the namespace and end with the name, the link will be established.</p>
+<p>Examples:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Markdown</th>
+<th align="left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code class="codehilite">[[lesson:gw1]]</code></td>
+<td align="left"><a class="wikilink lesson-link" href="../../tutorials/gw1">gw1 lesson</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[topic:BSE]]</code></td>
+<td align="left"><a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
+dielectric function" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/BSE">topic_BSE</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[help:abinit]]</code></td>
+<td align="left"><a class="wikilink user-guide-link" href="../../user-guide/help_abinit">abinit help file</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[bib:Amadon2008]]</code></td>
+<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[theorydoc:mbpt]]</code></td>
+<td align="left"><a class="wikilink theory-link" href="../../theory/mbpt">mbpt</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[varset:bse]]</code></td>
+<td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[varset:bse]]</code></td>
+<td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[src:94_scfcv/scfcv.F90]]</code></td>
+<td align="left"><a class="wikilink" href="https://github.com/abinit/abinit/blob/master/src/94_scfcv/scfcv.F90">94_scfcv/scfcv.F90</a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">[[ac:abiref_gnu_5.3_debug.ac]]</code></td>
+<td align="left"><a class="wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a></td>
+</tr>
+</tbody>
+</table>
+<p><code class="codehilite">[[topic:PIMD#1|Introduction]]</code> becomes <a class="wikilink topic-link" data-content="How to perform a PIMD calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/PIMD#1">Introduction</a></p>
+<p><code class="codehilite">[[#markdown-quick-reference|quick reference]]</code> becomes <a class="wikilink" href="#markdown-quick-reference">quick reference</a></p>
+<p>Actually, using the real name of the file without suffix, e.g. <code class="codehilite">lesson_gw1</code> will also be recognized, 
+although this real name is echoed, instead of the name without namespace.</p>
+<p><code class="codehilite">[[lesson_gw1]]</code> becomes <a class="wikilink lesson-link" href="../../tutorials/gw1">lesson_gw1</a>
+lesson_gw1</p>
+<p>There is an added formatting by generate_doc.py, in the case of the help files: 
+<code class="codehilite">[[help_codename]]</code>is echoed &ldquo;codename help file&rdquo;:</p>
+<p><code class="codehilite">[[help_abinit]]</code> becomes <a class="wikilink user-guide-link" href="../../user-guide/abinit">abinit help file</a>
+abinit help file</p>
+<h3 id="external-links">External links<a class="headerlink" href="#external-links" title="Permanent link">&para;</a></h3>
+<p>As for dokuwiki, some external links are also recognized. The following case are treated:</p>
+<ul>
+<li>a link that starts with <code class="codehilite">www.</code></li>
+<li>the namespaces <code class="codehilite">http</code>, <code class="codehilite">https</code>, <code class="codehilite">ftp</code>, <code class="codehilite">file</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">Markdown</th>
+<th align="left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code class="codehilite">[[www.abinit.org]]</code></td>
+<td align="left"><a href="../www.abinit.org"><a href="http://www.abinit.org">www.abinit.org</a></a></td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">www.abinit.org</code></td>
+<td align="left"><a href="http://www.abinit.org">www.abinit.org</a></td>
+</tr>
+</tbody>
+</table>
+<p>It&rsquo;s also possible to specify the name of the link with the <code class="codehilite">|</code> separator:
+<code class="codehilite">[[https://wiki.abinit.org | The ABINIT Wiki]]</code> that gives <a href="https://wiki.abinit.org "> The ABINIT Wiki</a> </p>
+<h3 id="permalinks">Permalinks<a class="headerlink" href="#permalinks" title="Permanent link">&para;</a></h3>
+<p>Permalinks are a feature of the <a href="https://pythonhosted.org/Markdown/extensions/toc.html">Table of Contents extension</a>, 
+which is part of the standard Markdown library. 
+The extension inserts an anchor at the end of each headline, which makes it possible to directly link to a subpart of the document.</p>
+<p>By default, all headers will automatically have unique id attributes generated based upon the text of the header. 
+The name of the anchor is constructed from the header by converting the string to lower-case and replacing
+white spaces with <code class="codehilite">-</code>.
+For instance, <code class="codehilite">#wiki-links</code> is the anchor associated to the &ldquo;Wiki Links&rdquo; section 
+of this page and we can refer to it with the Markdown syntax:</p>
+<div class="codehilite"><pre><span></span>As we have seen in the [<span class="nt">previous section</span>](<span class="na">#wiki-links</span>)
+</pre></div>
+
+<p>that produces: As we have seen in the <a href="#wiki-links">previous section</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hover with the mouse on the header in the HTML page to show the permalink in the browser.</p>
+</div>
+<p>Links to external pages are a little bit more difficult to handle because
+you need to know how to locate the external page with respect to the present one.
+There are two possible approaches: <em>relative links</em> and <em>root-relative links</em>.
+In the first case</p>
+<div class="codehilite"><pre><span></span>An example of [<span class="nt">relative link</span>](<span class="na">abimkdocs/#getting-started</span>)
+</pre></div>
+
+<p>produces: An example of <a href="../abimkdocs/#getting-started">relative link</a></p>
+<p>while</p>
+<div class="codehilite"><pre><span></span>An example of [<span class="nt">root-relative link</span>](<span class="na">/developers/abimkdocs/#getting-started</span>)
+</pre></div>
+
+<p>produces: An example of <a href="../../developers/abimkdocs#getting-started">root-relative link</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is also possible to generate automatically the Table of Contents by just 
+placing the <code class="codehilite">[TOC]</code> marker in the document where you would like the Table of Contents to appear. 
+Then, a nested list of all the headers in the document will replace the marker. 
+Note, however, the use of <code class="codehilite">[TOC]</code> in the Abinit Markdown pages is not recomended as
+the Table of Contents is automatically generated by the Mkdocs them and displayed 
+inside the website navigation bar.</p>
+</div>
+<h2 id="mathjax">MathJax<a class="headerlink" href="#mathjax" title="Permanent link">&para;</a></h2>
+<p>Formulas written in LaTeX are interpreted automatically (at visualization time) thanks to the 
+<a href="http://docs.mathjax.org/en/latest/mathjax.html">MathJax</a> on-the-flight processor
+while the math extension for Python-Markdown is provided by 
+<a href="https://github.com/mitya57/python-markdown-math">python-markdown-math</a>.</p>
+<p>Latex equations can be used <strong>everywhere</strong> in the documentation including the description of the variables
+reported in <code class="codehilite">abinit_vars.yml</code> and the description of the tests gives in the <code class="codehilite">TEST_INFO</code> section.
+For the ABINIT documentation, the conventions are:</p>
+<ul>
+<li><code class="codehilite">$...$</code>  yields an <em>onlinecite</em> translation of the LaTeX formula.</li>
+<li><code class="codehilite">$$...$$</code> yields <em>display</em> mode, the LaTeX formula being rendered on one dedicated line (moreover, centered).</li>
+<li>To have the equations numbered, use the display mode above, and (inside the markers) declare your equation 
+  within the standard <code class="codehilite">\begin{equation}...\end{equation}</code> markers.</li>
+<li>When a <code class="codehilite">$</code> sign is inside a <code class="codehilite"><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span></code> HTML section, MathJax does not interpret it.</li>
+<li>Use <code class="codehilite">\$</code> to prevent a real \$ to be interpreted.</li>
+</ul>
+<p>For instance <code class="codehilite"><span class="s">$</span><span class="nb">|</span><span class="nv">\Phi\rangle</span><span class="s">$</span></code> produces <script type="math/tex">|\Phi\rangle</script> while <code class="codehilite"><span class="sb">$$</span><span class="nv">\Phi</span><span class="nb">_</span><span class="nv">\kq</span><span class="o">(</span><span class="nv">\rr</span><span class="o">)</span><span class="s">$$</span></code> produces</p>
+<p>
+<script type="math/tex; mode=display">\Phi_\kq(\rr)</script>
+</p>
+<p>Equations enclosed by <code class="codehilite">$$...$$</code> or <code class="codehilite">\begin{equation}...\end{equation}</code> markers are automatically numbered 
+and can be referenced inside the Markdown text using the standard Latex syntax:</p>
+<div class="codehilite"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+G(12) = -i <span class="k">\langle</span> <span class="k">\Theta</span><span class="nb">^</span>N<span class="nb">_</span>0|T<span class="k">\bigl</span><span class="na">[\Psi(1)\Psi^\dagger(2)\bigr]</span>|<span class="k">\Theta</span><span class="nb">^</span>N<span class="nb">_</span>0 <span class="k">\rangle</span> <span class="k">\label</span><span class="nb">{</span>eq:GreenDef<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+</pre></div>
+
+<p>that produces:</p>
+<p>
+<script type="math/tex; mode=display">\begin{equation}
+G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef}
+\end{equation}</script>
+</p>
+<p>Equations can be referenced with:</p>
+<div class="codehilite"><pre><span></span>The propagator in Eq.\ref{eq:GreenDef}
+</pre></div>
+
+
+<p>that produces: The propagator in Eq.\ref{eq:GreenDef}</p>
+<p>Note that MathJax is configured with Latex macros to facilitate the insertion of symbols
+commonly used in our domain:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Markdown</th>
+<th align="left">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code class="codehilite">$\rr$</code></td>
+<td align="left">
+<script type="math/tex">\rr</script>
+</td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">$\GG$</code></td>
+<td align="left">
+<script type="math/tex">\GG</script>
+</td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">$\kk$</code></td>
+<td align="left">
+<script type="math/tex">\kk</script>
+</td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">$\qq$</code></td>
+<td align="left">
+<script type="math/tex">\qq</script>
+</td>
+</tr>
+<tr>
+<td align="left"><code class="codehilite">$\kq$</code></td>
+<td align="left">
+<script type="math/tex">\kq</script>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Please consult the preamble in <code class="codehilite">abinit_theme/main.html</code> for the complete list of macros.</p>
+<h2 id="markdown-extensions">Markdown extensions<a class="headerlink" href="#markdown-extensions" title="Permanent link">&para;</a></h2>
+<h3 id="smartsymbols">SmartSymbols<a class="headerlink" href="#smartsymbols" title="Permanent link">&para;</a></h3>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/">SmartSymbols</a> 
+adds syntax for creating special characters such as trademarks, arrows, fractions, etc. 
+The list of symbols supported by the extension is:</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="codehilite">(tm)</code></td>
+<td>&trade;</td>
+</tr>
+<tr>
+<td><code class="codehilite">(c)</code></td>
+<td>(c)</td>
+</tr>
+<tr>
+<td><code class="codehilite">(r)</code></td>
+<td>(r)</td>
+</tr>
+<tr>
+<td><code class="codehilite">c/o</code></td>
+<td>c/o</td>
+</tr>
+<tr>
+<td><code class="codehilite">+/-</code></td>
+<td>&plusmn;</td>
+</tr>
+<tr>
+<td><code class="codehilite">--&gt;</code></td>
+<td>&rarr;</td>
+</tr>
+<tr>
+<td><code class="codehilite">&lt;--</code></td>
+<td>&larr;</td>
+</tr>
+<tr>
+<td><code class="codehilite">&lt;--&gt;</code></td>
+<td>&harr;</td>
+</tr>
+<tr>
+<td><code class="codehilite">=/=</code></td>
+<td>&ne;</td>
+</tr>
+<tr>
+<td><code class="codehilite">1/4, etc.</code></td>
+<td>&frac14;, etc.</td>
+</tr>
+<tr>
+<td><code class="codehilite">1st 2nd etc.</code></td>
+<td>1<sup>st</sup> 2<sup>nd</sup> etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h3>
+<p><a href="https://pythonhosted.org/Markdown/extensions/admonition.html">Admonitions</a> are useful
+to stress important statements (useful e.g. in lessons).
+Admonition are created using the Markdown syntax:</p>
+<div class="codehilite"><pre><span></span>!!! note
+    Here is a note for you.
+</pre></div>
+
+<p>and </p>
+<div class="codehilite"><pre><span></span>!!! danger &quot;Don&#39;t try this at home!&quot;
+    Stand back. I&#39;m about to try science!
+</pre></div>
+
+<p>for an admonition with a custom title (make sure to quote the title).</p>
+<p>The types of admonitions available for use in MkDocs depend on the theme being used. 
+The Material theme <a href="http://squidfunk.github.io/mkdocs-material/extensions/admonition/#types">supports</a> the following types:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I am a &ldquo;note&rdquo; admonition and look the same as &ldquo;seealso&rdquo;.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I am a &ldquo;tip&rdquo; admonition and look the same as &ldquo;hint&rdquo; and &ldquo;important&rdquo;.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>I am a &ldquo;warning&rdquo; admonition and look the same as &ldquo;attention&rdquo; and &ldquo;caution&rdquo;.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>I am a &ldquo;danger&rdquo; admonition and look the same as &ldquo;error&rdquo;.</p>
+</div>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>I am a &ldquo;summary&rdquo; admonition and look the same as &ldquo;tldr&rdquo;.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>I am a &ldquo;success&rdquo; admonition and look the same as &ldquo;check&rdquo; and &ldquo;done&rdquo;.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>I am a &ldquo;failure&rdquo; admonition and look the same as &ldquo;fail&rdquo; and &ldquo;missing&rdquo;.</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>I am a &ldquo;bug&rdquo; admonition.</p>
+</div>
+<p>For the complete list, consult the mkdocs-material 
+<a href="../../http://squidfunk.github.io/mkdocs-material/extensions/admonition/">documentation</a></p>
+<h3 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h3>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/details/">Detail</a>
+is an extension that creates collapsible elements that hide their content. 
+It uses the HTML5 <code class="codehilite"><span class="p">&lt;</span><span class="nt">details</span><span class="p">&gt;&lt;</span><span class="nt">summary</span><span class="p">&gt;</span></code> tags to accomplish this. 
+It supports nesting and you can also force the default state to be open. 
+This extension is used in the documentation of the input variable to generate 
+a container with the list of tests associated to the variable. </p>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span>???+ note &quot;List of variables&quot;
+     [[ecut]] [[asr@anaddb]]
+</pre></div>
+
+<p>produces the <em>open</em> element:</p>
+<details class="note" open="open"><summary>List of variables</summary><p><a class="wikilink codevar-link" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-link" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><p>while </p>
+<div class="codehilite"><pre><span></span>??? note &quot;Click to open!&quot;
+     [[ecut]] [[asr@anaddb]]
+</pre></div>
+
+<p>creates a <em>closed</em> element:</p>
+<details class="note"><summary>Click to open!</summary><p><a class="wikilink codevar-link" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-link" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><h3 id="magiclink">MagicLink<a class="headerlink" href="#magiclink" title="Permanent link">&para;</a></h3>
+<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">MagicLink</a>
+scans for URLs and emails and generates proper HTML links for them.<br />
+No special syntax is required, you just type or paste the links and they get converted.<br />
+MagicLink auto-links HTML, FTP, and email links.</p>
+<p>If you happen to have some conflicts with syntax for a specific case, you can always revert 
+to the old auto-link format as well: <code class="codehilite">&lt;https://www.link.com&gt;</code>.  </p>
+<p>For even more magic, enable <code class="codehilite">repo_url_shortener</code> for shorter concise links for popular source code hosts.<br />
+Issue, pull request, and commit links will be shortened in the style of GFM. 
+Issues are shortened to <code class="codehilite">user/repo#1</code> for repositories external to <code class="codehilite">base_repo_url</code> and <code class="codehilite">#1</code> for internal links.<br />
+For commit links, external commits will show as <code class="codehilite">user/repo@`abc1234`</code> and internal commits 
+will show as <code class="codehilite">`abc1234`</code>. Currently supports GitHub, GitLab, and Bitbucket.
+Links require no special syntax.</p>
+<p>To refer to a particular git commit inside a Markdown document use:</p>
+<div class="codehilite"><pre><span></span>Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
+</pre></div>
+
+
+<p>that produces: Solved in <a href="https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e"><code class="codehilite">f74dba1</code></a></p>
+<p>It&rsquo;s also possible to mention a particular github issue with the syntax:</p>
+<div class="codehilite"><pre><span></span>Fix https://github.com/abinit/abinit/issues/1
+</pre></div>
+
+
+<p>that produces: Fix <a href="https://github.com/abinit/abinit/issues/1">#1</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This extension is useful to generate nice changelogs and release notes.</p>
+</div>
+<h3 id="abinit-extensions">Abinit extensions<a class="headerlink" href="#abinit-extensions" title="Permanent link">&para;</a></h3>
 <p>It&rsquo;s also possbile to create a button that opens a modal window containing 
 the input file with the syntax:</p>
 <div class="codehilite"><pre><span></span>    {% modal tests/v1/Input/t01.in %}
@@ -3322,17 +3858,17 @@ the input file with the syntax:</p>
 <p>that produces:</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-27765799-eba7-49db-addf-ba6694d2c9f1">
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-f7febda3-2367-4c82-bcec-f53b3e90473e">
   View tests/v1/Input/t01.in
 </button></p>
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-27765799-eba7-49db-addf-ba6694d2c9f1" tabindex="-1" role="dialog" aria-labelledby="uuid-fa2d4435-7379-47ac-9b37-2f7bb63300ac">
+<div class="modal fade" id="uuid-f7febda3-2367-4c82-bcec-f53b3e90473e" tabindex="-1" role="dialog" aria-labelledby="uuid-ac82c00a-532c-4c06-96e0-97404c562130">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-fa2d4435-7379-47ac-9b37-2f7bb63300ac">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-ac82c00a-532c-4c06-96e0-97404c562130">tests/v1/Input/t01.in</h4>
       </div>
       <div class="modal-body"><pre>
 #   FCC Al; 2 special points
@@ -3419,26 +3955,26 @@ If multiple files are used such as in: </p>
 <p>a modal window with tabs is produced</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-82077323-6793-42be-9107-cf541fdfe5af">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button></p>
+<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-40325e32-7430-4a69-8905-5e69951b4873">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button></p>
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-82077323-6793-42be-9107-cf541fdfe5af" tabindex="-1" role="dialog" aria-labelledby="uuid-b07491fc-bccc-4fe7-9731-0c9f2337ce4a" aria-hidden="true">
+<div class="modal fade" id="uuid-40325e32-7430-4a69-8905-5e69951b4873" tabindex="-1" role="dialog" aria-labelledby="uuid-2d854721-48e3-4fed-b815-995924a8ef05" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-b07491fc-bccc-4fe7-9731-0c9f2337ce4a"></h4>
+        <h4 class="modal-title" id="uuid-2d854721-48e3-4fed-b815-995924a8ef05"></h4>
       </div>
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">          <li role="presentation" class="active">
-          <a href="#uuid-43ae1e17-acee-47b8-a1eb-41c37268b81a" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+          <a href="#uuid-2ff1dd0c-8e64-4a98-841c-aeff11ecacec" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
           </li>           <li role="presentation" class=" ">
-          <a href="#uuid-51ac72e7-a35c-4cf7-8870-8c558df8dd9a" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+          <a href="#uuid-b5c1ccee-5f3e-4b67-a198-9b3686f279b2" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
           </li>           </ul>
           <!-- Tab panes -->
-          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-43ae1e17-acee-47b8-a1eb-41c37268b81a"><pre>
+          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-2ff1dd0c-8e64-4a98-841c-aeff11ecacec"><pre>
 #   FCC Al; 2 special points
 
 #nband 8
@@ -3510,7 +4046,7 @@ If multiple files are used such as in: </p>
 #%%&lt;END TEST_INFO&gt;
 
 </pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-51ac72e7-a35c-4cf7-8870-8c558df8dd9a"><pre>
+</div><div role="tabpanel" class="tab-pane  " id="uuid-b5c1ccee-5f3e-4b67-a198-9b3686f279b2"><pre>
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -3588,7 +4124,7 @@ If multiple files are used such as in: </p>
 <div class="md-container">
   <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-c98add43-8624-460e-bbff-b2382c2b5c60"><pre>
+    <div class="panel-body"><div class="editor" hidden id="uuid-684be985-e585-4c61-b0cc-be0c38419248"><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -4154,10 +4690,10 @@ P           mkmem           2
   <div><EditorTabs</div>
     <div id="exTab1">
       <!-- Nav tabs -->
-        <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-05f89e73-48b7-4800-a040-5a9cea24c2ea" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-877ecedf-9eac-4d4b-b0a3-9670fe74dc67" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
+        <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-d4cd21e9-3194-489f-93c0-8249b588eedf" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-2e3faace-340e-4ec1-8ace-4c66af9273a8" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
         <!-- Tab panes -->
-        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-05f89e73-48b7-4800-a040-5a9cea24c2ea">
-<div id="uuid-7556b314-4174-4c75-9010-08c3c52fb531" class="editor" hidden><pre>
+        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-d4cd21e9-3194-489f-93c0-8249b588eedf">
+<div id="uuid-b5cc7f82-ee01-4f91-87a6-2601100caaa2" class="editor" hidden><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -4712,8 +5248,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-877ecedf-9eac-4d4b-b0a3-9670fe74dc67">
-<div id="uuid-612eb53c-885d-4af0-a776-0856d3cd3e91" class="editor" hidden><pre>
+<div class="tab-pane fade" id="uuid-2e3faace-340e-4ec1-8ace-4c66af9273a8">
+<div id="uuid-d02fd800-900b-410d-a2a6-dae0d1e6e1c5" class="editor" hidden><pre>
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5270,355 +5806,7 @@ P           mkmem           2
 </div></div>
 </div></div></div>
 
-<h3 id="internal-links-with-namespace">Internal links with namespace<a class="headerlink" href="#internal-links-with-namespace" title="Permanent link">&para;</a></h3>
-<p>Other internal links can be recognized thanks to the namespace. 
-A first set of allowed internal namespaces are: </p>
-<ul>
-<li><code class="codehilite">lesson</code></li>
-<li><code class="codehilite">topic</code></li>
-<li><code class="codehilite">help</code></li>
-<li><code class="codehilite">bib</code></li>
-<li><code class="codehilite">theorydoc</code></li>
-<li><code class="codehilite">varset</code></li>
-<li><code class="codehilite">ac</code></li>
-<li><code class="codehilite">src</code></li>
-</ul>
-<p>In such cases, provided there is a corresponding generated HTML file 
-in one of the ~abinit/doc/*/generated_files subdirectories, 
-that has a name that start with the namespace and end with the name, the link will be established.</p>
-<p>Examples:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Markdown</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code class="codehilite">[[lesson:gw1]]</code></td>
-<td align="left"><a class="wikilink lesson-link" href="../../tutorials/gw1">gw1 lesson</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[topic:BSE]]</code></td>
-<td align="left"><a class="wikilink topic-link" data-content="How to perform a Bethe-Salpeter calculation of neutral excitation energies and
-dielectric function" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/BSE">topic_BSE</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[help:abinit]]</code></td>
-<td align="left"><a class="wikilink user-guide-link" href="../../user-guide/help_abinit">abinit help file</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[bib:Amadon2008]]</code></td>
-<td align="left"><a class="wikilink citation-link" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2008">[Amadon2008]</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[theorydoc:mbpt]]</code></td>
-<td align="left"><a class="wikilink theory-link" href="../../theory/mbpt">mbpt</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[varset:bse]]</code></td>
-<td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[varset:bse]]</code></td>
-<td align="left"><a class="wikilink" href="../../variables/bse">bse varset</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[src:94_scfcv/scfcv.F90]]</code></td>
-<td align="left"><a class="wikilink" href="https://github.com/abinit/abinit/blob/master/src/94_scfcv/scfcv.F90">94_scfcv/scfcv.F90</a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">[[ac:abiref_gnu_5.3_debug.ac]]</code></td>
-<td align="left"><a class="wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a></td>
-</tr>
-</tbody>
-</table>
-<p><code class="codehilite">[[topic:PIMD#1|Introduction]]</code> becomes <a class="wikilink topic-link" data-content="How to perform a PIMD calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../topics/PIMD#1">Introduction</a></p>
-<p><code class="codehilite">[[#markdown-quick-reference|quick reference]]</code> becomes <a class="wikilink" href="#markdown-quick-reference">quick reference</a></p>
-<p>Actually, using the real name of the file without suffix, e.g. <code class="codehilite">lesson_gw1</code> will also be recognized, 
-although this real name is echoed, instead of the name without namespace.</p>
-<p><code class="codehilite">[[lesson_gw1]]</code> becomes <a class="wikilink lesson-link" href="../../tutorials/gw1">lesson_gw1</a>
-lesson_gw1</p>
-<p>There is an added formatting by generate_doc.py, in the case of the help files: 
-<code class="codehilite">[[help_codename]]</code>is echoed &ldquo;codename help file&rdquo;:</p>
-<p><code class="codehilite">[[help_abinit]]</code> becomes <a class="wikilink user-guide-link" href="../../user-guide/abinit">abinit help file</a>
-abinit help file</p>
-<h3 id="external-links">External links<a class="headerlink" href="#external-links" title="Permanent link">&para;</a></h3>
-<p>As for dokuwiki, some external links are also recognized. The following case are treated:</p>
-<ul>
-<li>a link that starts with <code class="codehilite">www.</code></li>
-<li>the namespaces <code class="codehilite">http</code>, <code class="codehilite">https</code>, <code class="codehilite">ftp</code>, <code class="codehilite">file</code></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="left">Markdown</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code class="codehilite">[[www.abinit.org]]</code></td>
-<td align="left"><a href="../www.abinit.org"><a href="http://www.abinit.org">www.abinit.org</a></a></td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">www.abinit.org</code></td>
-<td align="left"><a href="http://www.abinit.org">www.abinit.org</a></td>
-</tr>
-</tbody>
-</table>
-<p>It&rsquo;s also possible to specify the name of the link with:
-<code class="codehilite">[[https://wiki.abinit.org | The ABINIT Wiki]]</code> that gives <a href="https://wiki.abinit.org "> The ABINIT Wiki</a> </p>
-<h3 id="permalinks">Permalinks<a class="headerlink" href="#permalinks" title="Permanent link">&para;</a></h3>
-<p>Permalinks are a feature of the <a href="https://pythonhosted.org/Markdown/extensions/toc.html">Table of Contents extension</a>, 
-which is part of the standard Markdown library. 
-The extension inserts an anchor at the end of each headline, which makes it possible to directly link to a subpart of the document.</p>
-<p>By default, all headers will automatically have unique id attributes generated based upon the text of the header. 
-The name of the anchor is constructed from the header by converting the string to lower-case and replacing
-white spaces with <code class="codehilite">-</code>.
-For instance, <code class="codehilite">#wiki-links</code> is the anchor associated to the &ldquo;Wiki Links&rdquo; section 
-of this page and we can refer to it with the Markdown syntax:</p>
-<div class="codehilite"><pre><span></span>As we have seen in the [<span class="nt">previous section</span>](<span class="na">#wiki-links</span>)
-</pre></div>
-
-<p>that produces: As we have seen in the <a href="#wiki-links">previous section</a></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Hover with the mouse on the header in the HTML page to show the permalink in the browser.</p>
-</div>
-<p>Links to external pages are a little bit more difficult to handle because
-you need to know how to locate the external page with respect to the present one.
-There are two possible approaches: <em>relative links</em> and <em>root-relative links</em>.
-In the first case</p>
-<div class="codehilite"><pre><span></span>An example of [<span class="nt">relative link</span>](<span class="na">abimkdocs/#getting-started</span>)
-</pre></div>
-
-<p>produces: An example of <a href="../abimkdocs/#getting-started">relative link</a></p>
-<p>while</p>
-<div class="codehilite"><pre><span></span>An example of [<span class="nt">root-relative link</span>](<span class="na">/developers/abimkdocs/#getting-started</span>)
-</pre></div>
-
-<p>produces: An example of <a href="../../developers/abimkdocs#getting-started">root-relative link</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It is also possible to generate automatically the Table of Contents by just 
-placing the <code class="codehilite">[TOC]</code> marker in the document where you would like the Table of Contents to appear. 
-Then, a nested list of all the headers in the document will replace the marker. 
-Note, however, the use of <code class="codehilite">[TOC]</code> in the Abinit Markdown pages is not recomended as
-the Table of Contents is automatically generated by the Mkdocs them and displayed 
-inside the website navigation bar.</p>
-</div>
-<h2 id="mathjax">MathJax<a class="headerlink" href="#mathjax" title="Permanent link">&para;</a></h2>
-<p>Formulas written in LaTeX are interpreted automatically (at visualization time) thanks to the 
-<a href="http://docs.mathjax.org/en/latest/mathjax.html">MathJax</a> on-the-flight processor
-while the math extension for Python-Markdown is provided by 
-<a href="https://github.com/mitya57/python-markdown-math">python-markdown-math</a>.</p>
-<p>Latex equations can be used <strong>everywhere</strong> in the documentation including the description of the variables
-reported in <code class="codehilite">abinit_vars.yml</code> and the description of the tests gives in the <code class="codehilite">TEST_INFO</code> section.
-For the ABINIT documentation, the conventions are:</p>
-<ul>
-<li><code class="codehilite">$...$</code>  yields an <em>onlinecite</em> translation of the LaTeX formula.</li>
-<li><code class="codehilite">$$...$$</code> yields <em>display</em> mode, the LaTeX formula being rendered on one dedicated line (moreover, centered).</li>
-<li>To have the equations numbered, use the display mode above, and (inside the markers) declare your equation 
-  within the standard <code class="codehilite">\begin{equation}...\end{equation}</code> markers.</li>
-<li>When a <code class="codehilite">$</code> sign is inside a <code class="codehilite"><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span></code> HTML section, MathJax does not interpret it.</li>
-<li>Use <code class="codehilite">\$</code> to prevent a real \$ to be interpreted.</li>
-</ul>
-<p>For instance <code class="codehilite"><span class="s">$</span><span class="nb">|</span><span class="nv">\Phi\rangle</span><span class="s">$</span></code> produces <script type="math/tex">|\Phi\rangle</script> while <code class="codehilite"><span class="sb">$$</span><span class="nv">\Phi</span><span class="nb">_</span><span class="nv">\kq</span><span class="o">(</span><span class="nv">\rr</span><span class="o">)</span><span class="s">$$</span></code> produces</p>
-<p>
-<script type="math/tex; mode=display">\Phi_\kq(\rr)</script>
-</p>
-<p>Equations enclosed by <code class="codehilite">$$...$$</code> or <code class="codehilite">\begin{equation}...\end{equation}</code> markers are automatically numbered 
-and can be referenced inside the Markdown text using the standard Latex syntax:</p>
-<div class="codehilite"><pre><span></span><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
-G(12) = -i <span class="k">\langle</span> <span class="k">\Theta</span><span class="nb">^</span>N<span class="nb">_</span>0|T<span class="k">\bigl</span><span class="na">[\Psi(1)\Psi^\dagger(2)\bigr]</span>|<span class="k">\Theta</span><span class="nb">^</span>N<span class="nb">_</span>0 <span class="k">\rangle</span> <span class="k">\label</span><span class="nb">{</span>eq:GreenDef<span class="nb">}</span>
-<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
-</pre></div>
-
-<p>that produces:</p>
-<p>
-<script type="math/tex; mode=display">\begin{equation}
-G(12) = -i \langle \Theta^N_0|T\bigl[\Psi(1)\Psi^\dagger(2)\bigr]|\Theta^N_0 \rangle \label{eq:GreenDef}
-\end{equation}</script>
-</p>
-<p>Equations can be referenced with:</p>
-<div class="codehilite"><pre><span></span>The propagator in Eq.\ref{eq:GreenDef}
-</pre></div>
-
-
-<p>that produces: The propagator in Eq.\ref{eq:GreenDef}</p>
-<p>Note that MathJax is configured with Latex macros to facilitate the insertion of symbols
-commonly used in our domain:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Markdown</th>
-<th align="left">Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code class="codehilite">$\rr$</code></td>
-<td align="left">
-<script type="math/tex">\rr</script>
-</td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">$\GG$</code></td>
-<td align="left">
-<script type="math/tex">\GG</script>
-</td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">$\kk$</code></td>
-<td align="left">
-<script type="math/tex">\kk</script>
-</td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">$\qq$</code></td>
-<td align="left">
-<script type="math/tex">\qq</script>
-</td>
-</tr>
-<tr>
-<td align="left"><code class="codehilite">$\kq$</code></td>
-<td align="left">
-<script type="math/tex">\kq</script>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Please consult the preamble in <code class="codehilite">abinit_theme/main.html</code> for the complete list of macros.</p>
-<h2 id="smartsymbols">SmartSymbols<a class="headerlink" href="#smartsymbols" title="Permanent link">&para;</a></h2>
-<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/">SmartSymbols</a> 
-adds syntax for creating special characters such as trademarks, arrows, fractions, etc. 
-The list of symbols supported by the extension is:</p>
-<table>
-<thead>
-<tr>
-<th>Markdown</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code class="codehilite">(tm)</code></td>
-<td>&trade;</td>
-</tr>
-<tr>
-<td><code class="codehilite">(c)</code></td>
-<td>(c)</td>
-</tr>
-<tr>
-<td><code class="codehilite">(r)</code></td>
-<td>(r)</td>
-</tr>
-<tr>
-<td><code class="codehilite">c/o</code></td>
-<td>c/o</td>
-</tr>
-<tr>
-<td><code class="codehilite">+/-</code></td>
-<td>&plusmn;</td>
-</tr>
-<tr>
-<td><code class="codehilite">--&gt;</code></td>
-<td>&rarr;</td>
-</tr>
-<tr>
-<td><code class="codehilite">&lt;--</code></td>
-<td>&larr;</td>
-</tr>
-<tr>
-<td><code class="codehilite">&lt;--&gt;</code></td>
-<td>&harr;</td>
-</tr>
-<tr>
-<td><code class="codehilite">=/=</code></td>
-<td>&ne;</td>
-</tr>
-<tr>
-<td><code class="codehilite">1/4, etc.</code></td>
-<td>&frac14;, etc.</td>
-</tr>
-<tr>
-<td><code class="codehilite">1st 2nd etc.</code></td>
-<td>1<sup>st</sup> 2<sup>nd</sup> etc.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h2>
-<p><a href="https://pythonhosted.org/Markdown/extensions/admonition.html">Admonitions</a> are useful
-to stress important statements (useful e.g. in lessons).
-Admonition are created using the Markdown syntax:</p>
-<div class="codehilite"><pre><span></span>!!! note
-    Here is a note for you.
-</pre></div>
-
-<p>and </p>
-<div class="codehilite"><pre><span></span>!!! danger &quot;Don&#39;t try this at home!&quot;
-    Stand back. I&#39;m about to try science!
-</pre></div>
-
-<p>for an admonition with a custom title (make sure to quote the title).</p>
-<p>The types of admonitions available for use in MkDocs depend on the theme being used. 
-The Material theme <a href="http://squidfunk.github.io/mkdocs-material/extensions/admonition/#types">supports</a> the following types:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>I am a &ldquo;note&rdquo; admonition and look the same as &ldquo;seealso&rdquo;.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>I am a &ldquo;tip&rdquo; admonition and look the same as &ldquo;hint&rdquo; and &ldquo;important&rdquo;.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>I am a &ldquo;warning&rdquo; admonition and look the same as &ldquo;attention&rdquo; and &ldquo;caution&rdquo;.</p>
-</div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>I am a &ldquo;danger&rdquo; admonition and look the same as &ldquo;error&rdquo;.</p>
-</div>
-<div class="admonition summary">
-<p class="admonition-title">Summary</p>
-<p>I am a &ldquo;summary&rdquo; admonition and look the same as &ldquo;tldr&rdquo;.</p>
-</div>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p>I am a &ldquo;success&rdquo; admonition and look the same as &ldquo;check&rdquo; and &ldquo;done&rdquo;.</p>
-</div>
-<div class="admonition failure">
-<p class="admonition-title">Failure</p>
-<p>I am a &ldquo;failure&rdquo; admonition and look the same as &ldquo;fail&rdquo; and &ldquo;missing&rdquo;.</p>
-</div>
-<div class="admonition bug">
-<p class="admonition-title">Bug</p>
-<p>I am a &ldquo;bug&rdquo; admonition.</p>
-</div>
-<p>For the complete list, consult the mkdocs-material 
-<a href="../../http://squidfunk.github.io/mkdocs-material/extensions/admonition/">documentation</a></p>
-<h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h2>
-<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/details/">Detail</a>
-is an extension that creates collapsible elements that hide their content. 
-It uses the HTML5 <code class="codehilite"><span class="p">&lt;</span><span class="nt">details</span><span class="p">&gt;&lt;</span><span class="nt">summary</span><span class="p">&gt;</span></code> tags to accomplish this. 
-It supports nesting and you can also force the default state to be open. 
-This extension is used in the documentation of the input variable to generate 
-a container with the list of tests associated to the variable. </p>
-<p>Examples:</p>
-<div class="codehilite"><pre><span></span>???+ note &quot;List of variables&quot;
-     [[ecut]] [[asr@anaddb]]
-</pre></div>
-
-<p>produces the <em>open</em> element:</p>
-<details class="note" open="open"><summary>List of variables</summary><p><a class="wikilink codevar-link" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-link" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><p>while </p>
-<div class="codehilite"><pre><span></span>??? note &quot;Click to open!&quot;
-     [[ecut]] [[asr@anaddb]]
-</pre></div>
-
-<p>creates a <em>closed</em> element:</p>
-<details class="note"><summary>Click to open!</summary><p><a class="wikilink codevar-link" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-link" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><h2 id="plotly">Plotly<a class="headerlink" href="#plotly" title="Permanent link">&para;</a></h2>
+<h2 id="plotly">Plotly<a class="headerlink" href="#plotly" title="Permanent link">&para;</a></h2>
 <p><a href="https://plot.ly/api/">plotly</a> is a high-level, declarative charting library built on top of d3.js and stack.gl.
 plotly.js ships with over 20 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, 
 financial charts, and more.
@@ -5666,36 +5854,7 @@ $(function() {
 
 <p>plotly is used to plot the <a href="../../input_variables/connections">connection network</a> for the input variables
 and the <a href="../../developers/codestats">code statistics</a>.</p>
-<h2 id="magiclink">MagicLink<a class="headerlink" href="#magiclink" title="Permanent link">&para;</a></h2>
-<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">MagicLink</a>
-scans for URLs and emails and generates proper HTML links for them.<br />
-No special syntax is required, you just type or paste the links and they get converted.<br />
-MagicLink auto-links HTML, FTP, and email links.</p>
-<p>If you happen to have some conflicts with syntax for a specific case, you can always revert 
-to the old auto-link format as well: <code class="codehilite">&lt;https://www.link.com&gt;</code>.  </p>
-<p>For even more magic, enable <code class="codehilite">repo_url_shortener</code> for shorter concise links for popular source code hosts.<br />
-Issue, pull request, and commit links will be shortened in the style of GFM. 
-Issues are shortened to <code class="codehilite">user/repo#1</code> for repositories external to <code class="codehilite">base_repo_url</code> and <code class="codehilite">#1</code> for internal links.<br />
-For commit links, external commits will show as <code class="codehilite">user/repo@`abc1234`</code> and internal commits 
-will show as <code class="codehilite">`abc1234`</code>. Currently supports GitHub, GitLab, and Bitbucket.
-Links require no special syntax.</p>
-<p>To refer to a particular git commit inside a Markdown document use:</p>
-<div class="codehilite"><pre><span></span>Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
-</pre></div>
-
-
-<p>that produces: Solved in <a href="https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e"><code class="codehilite">f74dba1</code></a></p>
-<p>It&rsquo;s also possible to mention a particular github issue with the syntax:</p>
-<div class="codehilite"><pre><span></span>Fix https://github.com/abinit/abinit/issues/1
-</pre></div>
-
-
-<p>that produces: Fix <a href="https://github.com/abinit/abinit/issues/1">#1</a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This extension is useful to generate nice changelogs and release notes.</p>
-</div>
-<h2 id="media-content">Media Content<a class="headerlink" href="#media-content" title="Permanent link">&para;</a></h2>
+<h2 id="media-content">Media content<a class="headerlink" href="#media-content" title="Permanent link">&para;</a></h2>
 <p>Links to videos can be included with the standard Markdown syntax:</p>
 <div class="codehilite"><pre><span></span>The video below gives an overwiew of the command line options of <span class="sb">`runtests.py`</span>
 
@@ -5750,7 +5909,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
     <div id="inbox">
       <div class="fab btn-group show-on-hover dropup">
         <div data-toggle="tooltip" data-placement="left" title="Menu" style="margin-left: 42px;">
-          <button id="return-to-top" type="button" class="btn btn-danger btn-io dropdown-toggle" data-toggle="dropdown">
+          <button id="return-to-top" type="button" class="btn btn-primary btn-io dropdown-toggle" data-toggle="dropdown">
             <span class="fa-stack fa-2x">
                 <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
                 <i class="fa fa-chevron-up fa-stack-1x fa-inverse fab-primary"></i>
@@ -5762,27 +5921,28 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
         
         
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
-                  title=About> <i class="fa fa-info-circle"></i></a></li>
+                  title=About><i class="fa fa-info-circle"></i></a></li>
         
           <li><a href="../abimkdocs/" data-toggle="tooltip" data-placement="left" 
-                  title=Developers> <i class="fa fa-terminal"></i></a></li>
+                  title=Developers><i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
-                  title=Theory> <i class="fa fa-book"></i></a></li>
+                  title=Theory><i class="fa fa-book"></i></a></li>
         
           <li><a href="../../tutorials/welcome/" data-toggle="tooltip" data-placement="left" 
-                  title=Lessons> <i class="fa fa-graduation-cap"></i></a></li>
+                  title=Lessons><i class="fa fa-graduation-cap"></i></a></li>
         
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
-                  title=Variables> <i class="fa fa-file-text-o"></i></a></li>
+                  title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
           <li><a href="../../topics/" data-toggle="tooltip" data-placement="left" 
-                  title=Topics> <i class="fa fa-question"></i></a></li>
+                  title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
-                  title=User Guide> <i class="fa fa-user-circle-o"></i></a></li>
+                  title=User Guide><i class="fa fa-user-circle-o"></i></a></li>
         
         <!--
+        Example: 
         <li><a href="/index.html" data-toggle="tooltip" data-placement="left" title="User-Guide">
               <i class="fa fa-user-circle-o"></i></a></li>
         -->
