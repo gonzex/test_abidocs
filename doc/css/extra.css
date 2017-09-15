@@ -17,12 +17,12 @@ a.wikilink:active {
 }
 */
 
-a.wikilink.codevar-link {
+a.codevar-link {
     font-family: 'Ubuntu Mono', monospace;
 }
 
 /*
-a.wikilink.citation-link {
+a.citation-link {
     font-family: 'Ubuntu Mono', monospace;
 }
 */

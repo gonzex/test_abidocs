@@ -518,6 +518,7 @@ class InputVariables(OrderedDict):
 
     def get_vartabs_html(self, website, page_rpath):
         ch2vars = self.groupby_first_letter()
+        ch2vars["All"] = self.values()
         # http://getbootstrap.com/javascript/#tabs
         html = """\
 <div>
