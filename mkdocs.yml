@@ -265,9 +265,10 @@ theme: material   # Nice
 theme_dir: abinit_theme
 
 extra_css:
-    #- css/my_codehilite.css
-    #- css/auto_numbering.css
     - css/extra.css
+    - css/gallery.css
+    #- css/auto_numbering.css
+    #- css/my_codehilite.css
     #- https://unpkg.com/nprogress@0.2.0/nprogress.css
 
 extra_javascript:

@@ -122,8 +122,10 @@ def sort_and_groupby(items, key, reverse=False):
 
 
 class MyEntry(Entry):
-    """https://bitbucket.org/pybtex-devs/pybtex/"""
-
+    """
+    Extends pybtex Entry with useful methods.
+    See https://bitbucket.org/pybtex-devs/pybtex/
+    """
     @lazy_property
     def authors(self):
         return ", ".join(my_unicode(p) for p in self.persons["author"])
@@ -349,7 +351,7 @@ Change the input yaml files or the python code
             except KeyError:
                 raise KeyError(
                     "Markdown page `%s` does not have `description` key in front matter.\n"
-                    "This is required to generate index.md automatically in python" % page.path)
+                    "This is required to generate index.md automatically in python." % page.path)
             desc = desc[0]
             index_md.append("*  [%s](%s): %s" % (page.basename.replace(".md", ""), page.url, desc))
 
@@ -443,7 +445,6 @@ in order of number of occurrence in the input files provided with the package.
                 mdf.write("\n".join(lines) + "</ul>")
 
         cprint("Generating Markdown files with topics ...", "green")
-
         repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
         with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
             self.all_topics = sorted(yaml.load(fh), key=lambda t: t[0].upper())
@@ -591,7 +592,7 @@ The bibtex file is available [here](../abiref.bib).
             else:
                 raise RuntimeError("Cannot find `acknow` section in components")
 
-        meta = {"description": "suggested acknowledgments and references"}
+        meta = {"description": "Suggested acknowledgments and references"}
         with self.new_mdfile("theory", "acknowledgments.md", meta=meta) as mdf:
             mdf.write("# Acknowledgments  \n")
             mdf.write(html2text(comp.purpose))
@@ -1059,34 +1060,37 @@ The bibtex file is available [here](../abiref.bib).
             with io.open(p, "rt", encoding="utf-8") as fh:
                 text_list.append(escape(fh.read(), tag="pre"))
         tab_ids = gen_id(n=len(apaths))
+        print("paths", paths)
+        print("tab_ids", tab_ids)
 
         s = """\
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
+
 <!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
-                </button>
-                 <h4 class="modal-title" id="{modal_label_id}">{title}</h4>
-            </div>
-            <div class="modal-body">
-                <div role="tabpanel">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">""".format(
-                            modal_id=gen_id(), modal_label_id=gen_id(), **locals())
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="{modal_label_id}">{title}</h4>
+      </div>
+      <div class="modal-body">
+        <div role="tabpanel">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">""".format(
+              modal_id=gen_id(), modal_label_id=gen_id(), **locals())
 
         for i, (path, tid) in enumerate(zip(paths, tab_ids)):
             s += """\
-                    <li role="presentation" class="{li_class}">
-                    <a href="{href}" aria-controls="uploadTab" role="tab" data-toggle="tab">{path}</a>
-                    </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+          <li role="presentation" class="{li_class}">
+          <a href="{href}" aria-controls="uploadTab" role="tab" data-toggle="tab">{path}</a>
+          </li> """.format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
 
-        s +=  """</ul>
-                 <!-- Tab panes -->
-                 <div class="tab-content">"""
+        s +=  """\
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">"""
 
         for i, (text, tid) in enumerate(zip(text_list, tab_ids)):
             s += """<div role="tabpanel" class="tab-pane {active}" id="{tid}">{text}</div>""".format(
@@ -1104,7 +1108,7 @@ The bibtex file is available [here](../abiref.bib).
 
         return """\
 <div class="md-container">
-<div class="panel panel-default">
+  <div class="panel panel-default">
     <div class="panel-heading">{title}</div>
     <div class="panel-body"><div class="editor" hidden id="{editor_id}">{text}</div></div>
 </div></div>""".format(editor_id=gen_id(), **locals())
@@ -1123,22 +1127,19 @@ The bibtex file is available [here](../abiref.bib).
         # https://codepen.io/wizly/pen/BlKxo?editors=1000
         s = """\
 <div class="md-container">
-<div><{title}</div>
-<div id="exTab1">
-<!-- Nav tabs -->
-<ul class="nav nav-pills nav-justified">""".format(title=title)
+  <div><{title}</div>
+    <div id="exTab1">
+      <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified">""".format(title=title)
 
         for i, (path, tid) in enumerate(zip(paths, tab_ids)):
-            s += """\
-<li class="{li_class}">
-<a href="{href}" data-toggle="pill">{path}</a>
-</li>""".format(li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
+            s += """<li class="{li_class}"><a href="{href}" data-toggle="pill">{path}</a></li>""".format(
+                li_class="active" if i == 0 else " ", href="#%s" % tid, path=path)
 
         s +=  """\
-</ul>
-<!-- Tab panes -->
-<div class="tab-content clearfix">
-"""
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content clearfix">"""
 
         for i, (text, tid, editor_id) in enumerate(zip(text_list, tab_ids, editor_ids)):
             s += """\
