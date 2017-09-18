@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2974,7 +2987,7 @@ inherent to the unperturbed unit cell. We will construct a supercell of 6
 hydrogen atoms, perform self-consistent cycle and plot the corresponding band
 structure. At the end, we will recover the familiar dispersion relation using
 the fold2Bloch utility.<br />
-See also the <a class="wikilink user-guide-link" href="../../user-guide/fold2bloch">fold2bloch help file</a>.</p>
+See also the <a class="wikilink user-guide-wikilink" href="../../user-guide/fold2bloch">fold2bloch help file</a>.</p>
 <p>This lesson should take about 1 hour.</p>
 <h2 id="1-creating-a-hydrogen-supercell-structure">1 Creating a Hydrogen supercell structure<a class="headerlink" href="#1-creating-a-hydrogen-supercell-structure" title="Permanent link">&para;</a></h2>
 <p>Let&rsquo;s begin with the simplest structure: a lattice of hydrogen atoms. It is a
@@ -3005,8 +3018,8 @@ for the other lessons. Why not &ldquo;Work_fold2Bloch&rdquo; ? _</p>
 <p>In order to use the fold2Bloch, you need to first generate a wave function
 file (_WFK file).</p>
 <p>In the directory ~abinit/tests/tutorial/Input/Work_fold2Bloch, copy the files
-<a class="wikilink test-link" href="../../tests/tutorial/Input/tfold2bloch_1.files">tests/tutorial/Input/tfold2bloch_1.files</a> and
-<a class="wikilink test-link" data-content="H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:3 (x:y:z) Produce WFK file to be analyzed with fold2bloch" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorial/Input/tfold2bloch_1.in">tests/tutorial/Input/tfold2bloch_1.in</a>. The input file has two datasets,
+<a class="wikilink abifile-wikilink" href="../../tests/tutorial/Input/tfold2bloch_1.files">tests/tutorial/Input/tfold2bloch_1.files</a> and
+<a class="wikilink abifile-wikilink" data-content="H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:3 (x:y:z) Produce WFK file to be analyzed with fold2bloch" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tfold2bloch_1.in">tests/tutorial/Input/tfold2bloch_1.in</a>. The input file has two datasets,
 the first to generate the _WFK file, and the second to draw the band
 structure.</p>
 <p>Now you are ready to run Abinit. Issue the following :</p>

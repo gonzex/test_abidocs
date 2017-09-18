@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2950,12 +2963,12 @@ Change the input yaml files or the python code
 
 <p>This page gives hints on how to compute the matrix elements of the electron-phonon interaction with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>The theory and details of the implementation are described in <a class="wikilink citation-link" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2009">[Gonze2009]</a>
-and <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">[Gonze2016]</a>.</p>
+<p>The theory and details of the implementation are described in <a class="wikilink citation-wikilink" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze2009">[Gonze2009]</a>
+and <a class="wikilink citation-wikilink" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze2016">[Gonze2016]</a>.</p>
 <p>Basic calculations of electron-phonon interaction in ABINIT: one performs a
-normal ground state, then DFPT phonon calculations (using <a class="wikilink codevar-link" href="../../variables/dfpt#rfphon">rfphon</a>, with
-added keywords <a class="wikilink codevar-link" href="../../variables/dfpt#prepgkk">prepgkk</a> and <a class="wikilink codevar-link" href="../../variables/files#prtgkk">prtgkk</a>, which saves the matrix elements to
-files suffixed GKK. The main change in this respect is that <a class="wikilink codevar-link" href="../../variables/files#prtgkk">prtgkk</a> now
+normal ground state, then DFPT phonon calculations (using <a class="wikilink codevar-wikilink" href="../../variables/dfpt#rfphon">rfphon</a>, with
+added keywords <a class="wikilink codevar-wikilink" href="../../variables/dfpt#prepgkk">prepgkk</a> and <a class="wikilink codevar-wikilink" href="../../variables/files#prtgkk">prtgkk</a>, which saves the matrix elements to
+files suffixed GKK. The main change in this respect is that <a class="wikilink codevar-wikilink" href="../../variables/files#prtgkk">prtgkk</a> now
 disables the use of symmetry in reducing q-points and perturbations. This
 avoids ambiguities in wave function phases due to band degeneracies. The
 resulting GKK files are merged using the mrggkk utility, and processed by
@@ -2963,67 +2976,67 @@ anaddb.</p>
 <p>With the implementation of phonons in PAW DFPT, the electron phonon coupling
 is also available in PAW, though this has not yet been tested extensively. The
 input variables for electron-phonon coupling in anaddb are described in
-<a class="wikilink citation-link" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2009">[Gonze2009]</a> and <a class="wikilink citation-link" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#gonze2016">[Gonze2016]</a>.</p>
+<a class="wikilink citation-wikilink" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze2009">[Gonze2009]</a> and <a class="wikilink citation-wikilink" data-content="Recent developments in the {ABINIT} software package" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze2016">[Gonze2016]</a>.</p>
 <p>Some details about the calculation of electron-phonon quantities in ABINIT and
 ANADDB can be found <a href="../../documents/elphon_manual.pdf">here</a>.</p>
 <p>Subsequently, the GKK file is used to compute many quantities, as explained in
-<a class="wikilink topic-link" data-content="How to compute the linewidth (or lifetime) of phonons, due to the electron-phonon
-interaction" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../PhononWidth">PhononWidth topic</a>, <a class="wikilink topic-link" data-content="How to calculate the temperature dependence of the electronic structure" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../TDepES">TDepES topic</a> and <a class="wikilink topic-link" data-content="How to compute transport properties that are determined by the electron-phonon
-interaction (electrical resistivity, superconductivity, thermal conductivity)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../ElPhonTransport">ElPhonTransport topic</a>.</p>
+<a class="wikilink topic-wikilink" data-content="How to compute the linewidth (or lifetime) of phonons, due to the electron-phonon
+interaction" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../PhononWidth">PhononWidth topic</a>, <a class="wikilink topic-wikilink" data-content="How to calculate the temperature dependence of the electronic structure" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../TDepES">TDepES topic</a> and <a class="wikilink topic-wikilink" data-content="How to compute transport properties that are determined by the electron-phonon
+interaction (electrical resistivity, superconductivity, thermal conductivity)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../ElPhonTransport">ElPhonTransport topic</a>.</p>
 <p>A brand new ABINIT driver, focusing on the treatment of electron-phonon
 interaction is under development. Most of the input variables for experts,
-with <a class="wikilink codevar-link" href="../../variables/gstate#optdriver">optdriver</a>==7 are related to this development, that is not yet
+with <a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a>==7 are related to this development, that is not yet
 operational as of v8.5 .</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
-<li><a class="wikilink codevar-link" href="../../variables/dfpt#prepgkk">prepgkk</a>  PREPAre GKK calculation</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#prtgkk">prtgkk</a>  PRinT the GKK matrix elements file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#prepgkk">prepgkk</a>  PREPAre GKK calculation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#prtgkk">prtgkk</a>  PRinT the GKK matrix elements file</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/eph#ddb_ngqpt">ddb_ngqpt</a>  Derivative DataBase: Number of Grid points for Q-PoinTs</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#ddb_shiftq">ddb_shiftq</a>  Derivative DataBase: SHIFT of the Q-points </li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_extrael">eph_extrael</a>  Electron-PHonon: EXTRA ELectrons</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_fermie">eph_fermie</a>  Electron-PHonon: FERMI Energy</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_fsewin">eph_fsewin</a>  Electron-Phonon: Fermi Surface Energy WINdow</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_fsmear">eph_fsmear</a>  Electron-PHonon: Fermi surface SMEARing</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_intmeth">eph_intmeth</a>  Electron-Phonon: INTegration METHod</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_mustar">eph_mustar</a>  Electron-PHonon : MU STAR (electron-electron interaction strength)</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_ngqpt_fine">eph_ngqpt_fine</a>  Electron-PHonon : Number of Grid Q-PoinTs in FINE grid.</li>
-<li><a class="wikilink codevar-link" href="../../variables/dfpt#eph_task">eph_task</a>  Electron-PHonon: Task</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#eph_transport">eph_transport</a>  Electron-PHonon: TRANSPORT flag</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getddb">getddb</a>  GET the DDB from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#prtphdos">prtphdos</a>  PRinT the PHonon Density Of States</li>
-<li><a class="wikilink codevar-link" href="../../variables/eph#prtphsurf">prtphsurf</a>  PRinT PHonon iso-SURFace</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ep_prt_yambo">ep_prt_yambo</a>  Electron Phonon PRinTout YAMBO data</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#symgkq">symgkq</a>  SYMmetrize the GKk matrix elements for each Q</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ddb_ngqpt">ddb_ngqpt</a>  Derivative DataBase: Number of Grid points for Q-PoinTs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ddb_shiftq">ddb_shiftq</a>  Derivative DataBase: SHIFT of the Q-points </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_extrael">eph_extrael</a>  Electron-PHonon: EXTRA ELectrons</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_fermie">eph_fermie</a>  Electron-PHonon: FERMI Energy</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_fsewin">eph_fsewin</a>  Electron-Phonon: Fermi Surface Energy WINdow</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_fsmear">eph_fsmear</a>  Electron-PHonon: Fermi surface SMEARing</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_intmeth">eph_intmeth</a>  Electron-Phonon: INTegration METHod</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_mustar">eph_mustar</a>  Electron-PHonon : MU STAR (electron-electron interaction strength)</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_ngqpt_fine">eph_ngqpt_fine</a>  Electron-PHonon : Number of Grid Q-PoinTs in FINE grid.</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#eph_task">eph_task</a>  Electron-PHonon: Task</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#eph_transport">eph_transport</a>  Electron-PHonon: TRANSPORT flag</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getddb">getddb</a>  GET the DDB from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#prtphdos">prtphdos</a>  PRinT the PHonon Density Of States</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#prtphsurf">prtphsurf</a>  PRinT PHonon iso-SURFace</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ep_prt_yambo">ep_prt_yambo</a>  Electron Phonon PRinTout YAMBO data</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#symgkq">symgkq</a>  SYMmetrize the GKk matrix elements for each Q</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/files#get1den">get1den</a>  GET the first-order density from _1DEN file</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdddb">irdddb</a>  Integer that governs the ReaDing of DDB file</li>
-<li><a class="wikilink codevar-link" href="../../variables/dev#use_nonscf_gkk">use_nonscf_gkk</a>  USE NON-SCF calculation of GKK matrix elements (electron phonon)</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#gkqwrite">gkqwrite</a>  GKk for input Q grid to be WRITtEn to disk</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#get1den">get1den</a>  GET the first-order density from _1DEN file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdddb">irdddb</a>  Integer that governs the ReaDing of DDB file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#use_nonscf_gkk">use_nonscf_gkk</a>  USE NON-SCF calculation of GKK matrix elements (electron phonon)</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#gkqwrite">gkqwrite</a>  GKk for input Q grid to be WRITtEn to disk</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="FCC Ni - get phonons and ddk in preparation for an electron-phonon coupling run. a few extra features are used compared to the tutorial." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t96.in">tests/v5/Input/t96.in</a></li>
-<li><a class="wikilink test-link" data-content="mrgddb: merge the ddb files from t96" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t97.in">tests/v5/Input/t97.in</a></li>
-<li><a class="wikilink test-link" data-content="mrggkk: merge the 1WF files from t96" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t98.in">tests/v5/Input/t98.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="FCC Ni - get phonons and ddk in preparation for an electron-phonon coupling run. a few extra features are used compared to the tutorial." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t96.in">tests/v5/Input/t96.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="mrgddb: merge the ddb files from t96" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t97.in">tests/v5/Input/t97.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="mrggkk: merge the 1WF files from t96" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t98.in">tests/v5/Input/t98.in</a></li>
 </ul>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t89.in">tests/v7/Input/t89.in</a></li>
-<li><a class="wikilink test-link" data-content="Ground state and phonons of bcc Li" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t90.in">tests/v7/Input/t90.in</a></li>
-<li><a class="wikilink test-link" data-content="mrgddb of test 90" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t91.in">tests/v7/Input/t91.in</a></li>
-<li><a class="wikilink test-link" data-content="mrggkk of test 90" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t92.in">tests/v7/Input/t92.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Calculation of e-ph coupling matrix elements" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t89.in">tests/v7/Input/t89.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Ground state and phonons of bcc Li" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t90.in">tests/v7/Input/t90.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="mrgddb of test 90" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t91.in">tests/v7/Input/t91.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="mrggkk of test 90" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t92.in">tests/v7/Input/t92.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink lesson-link" href="../../tutorials/rf1">The lesson Response-Function 1 (RF1)</a> presents the basics of DFPT calculations within ABINIT. The example given is the study of dynamical and dielectric properties of AlAs (an insulator): phonons at Gamma, dielectric constant, Born effective charges, LO-TO splitting, phonons in the whole Brillouin zone. The creation of the &ldquo;Derivative Data Base&rdquo; (DDB) is presented.</li>
+<li><a class="wikilink lesson-wikilink" href="../../tutorials/rf1">The lesson Response-Function 1 (RF1)</a> presents the basics of DFPT calculations within ABINIT. The example given is the study of dynamical and dielectric properties of AlAs (an insulator): phonons at Gamma, dielectric constant, Born effective charges, LO-TO splitting, phonons in the whole Brillouin zone. The creation of the &ldquo;Derivative Data Base&rdquo; (DDB) is presented.</li>
 <li><a href="../../../tutorial/generated_files/lesson_eph.html">The lesson on the electron-phonon interaction</a> presents the use of the utility MRGKK and ANADDB to examine the electron-phonon interaction and the subsequent calculation of superconductivity temperature (for bulk systems).</li>
 </ul>
                 

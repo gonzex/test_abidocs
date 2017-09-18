@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2945,17 +2958,17 @@ D. Other changes (or on-going developments, not finalized)</p>
 <p>B.  Most noticeable achievements</p>
 <p>B.1 Implementation of algorithms to interpolate the electronic band structure,
     based either on &ldquo;star functions&rdquo; of on &ldquo;B-splines&rdquo; (as alternatives to Wannier function interpolation).
-    See the input variables <a class="wikilink codevar-link" href="../../variables/basic#einterp">einterp</a>, <a class="wikilink codevar-link" href="../../variables/basic#nkpath">nkpath</a>, and <a class="wikilink codevar-link" href="../../variables/gstate#prtebands">prtebands</a>, and tests 
+    See the input variables <a class="wikilink codevar-wikilink" href="../../variables/basic#einterp">einterp</a>, <a class="wikilink codevar-wikilink" href="../../variables/basic#nkpath">nkpath</a>, and <a class="wikilink codevar-wikilink" href="../../variables/gstate#prtebands">prtebands</a>, and tests 
     old syntax: <code class="codehilite">Tlibxc#42, Tv8#04</code> replaced by <code class="codehilite">[[tests/libxc/Input/t41.in]], [[test:v8_04]]</code>
-    <a class="wikilink test-link" data-content="Diamond: hybrid functional calculation with the GW code Perturbative approach to the HSE06,  PBE0,  and B3LYP band gaps HSE06 and PBE0 tests temporarily disabled,  waiting for the next version of the libxc)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/libxc/Input/t41.in">tests/libxc/Input/t41.in</a>, <a class="wikilink" data-content="Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v8/Input/t04.in">v8[04]</a> 
-    <a class="wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a>
+    <a class="wikilink abifile-wikilink" data-content="Diamond: hybrid functional calculation with the GW code Perturbative approach to the HSE06,  PBE0,  and B3LYP band gaps HSE06 and PBE0 tests temporarily disabled,  waiting for the next version of the libxc)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/libxc/Input/t41.in">tests/libxc/Input/t41.in</a>, <a class="wikilink abifile-wikilink" data-content="Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t04.in">v8[04]</a> 
+    <a class="wikilink abifile-wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac">abiref_gnu_5.3_debug.ac</a>
     Work by M. Giantomassi</p>
 <p>B.2 The Fock mixing factor for the HSE hybrid functional can be tuned thanks to the input variable gwfockmix  .
     (Warning : this is for the GW-type approach to electronic structure only, not for total energies)
     See test Tlibxc#43 .
     Work by W. Chen.</p>
 <p>B.3 Implementation of spatially-varying chemical potential, for each atomic species.
-    See the input variables <a class="wikilink codevar-link" href="../../variables/geo#chempot">chempot</a> and <a class="wikilink codevar-link" href="../../variables/geo#nzchempot">nzchempot</a>, and tests Tv8#30 and 31.
+    See the input variables <a class="wikilink codevar-wikilink" href="../../variables/geo#chempot">chempot</a> and <a class="wikilink codevar-wikilink" href="../../variables/geo#nzchempot">nzchempot</a>, and tests Tv8#30 and 31.
     Work by X. Gonze</p>
 <p>B.4 Linear geometrical constraints can now be imposed on PIMD runs.
     This allows ABINIT to use the blue moon sampling technique.
@@ -2972,13 +2985,13 @@ D. Other changes (or on-going developments, not finalized)</p>
 <p>B.6 Computation of Gruneisen parameters by finite differences, within ANADDB.
     See test v8#45
     Work by M. Giantomassi</p>
-<p>B.7 New LOBPCG implementation <a class="wikilink codevar-link" href="../../variables/dev#wfoptalg">wfoptalg</a> = 114.
-    This is the default when <a class="wikilink codevar-link" href="../../variables/paral#paral_kgb">paral_kgb</a> == 1.
+<p>B.7 New LOBPCG implementation <a class="wikilink codevar-wikilink" href="../../variables/dev#wfoptalg">wfoptalg</a> = 114.
+    This is the default when <a class="wikilink codevar-wikilink" href="../../variables/paral#paral_kgb">paral_kgb</a> == 1.
     Performances are equivalent in standard use (MPI alone) and much better with openmp+multithreaded linalg. 
     It also allows to have only one block for large system and to reduce memory copies.
     This version has been developed keeping in mind the next generation of HPC.
     Work by J. Bieder</p>
-<p>B.8 New algorithms for the displacement of nuclei (<a class="wikilink codevar-link" href="../../variables/rlx#ionmov">ionmov</a>) :
+<p>B.8 New algorithms for the displacement of nuclei (<a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a>) :
     - Hybrid Monte Carlo (HMC) predictor (ionmov=25)
     - Velocity Verlet (VV) NVE molecular dynamics predictor (ionmov=24)
     See Tv8#12 for ionmov=24. 
@@ -2986,7 +2999,7 @@ D. Other changes (or on-going developments, not finalized)</p>
 <p>B.9 Refactoring of ANADDB for the production of DOS and other thermodynamic quantities,
     also the mean square displacement and mean square velocity.
     The DOS is obtained using usual DOS methods, instead of the histogram method,
-    and converges much faster with <a class="wikilink codevar-link" href="../../variables/anaddb#ng2qpt">ng2qpt</a>. Activated with <a class="wikilink codevar-link" href="../../variables/anaddb#prtdos">prtdos</a> 1 or 2 in anaddb.
+    and converges much faster with <a class="wikilink codevar-wikilink" href="../../variables/anaddb#ng2qpt">ng2qpt</a>. Activated with <a class="wikilink codevar-wikilink" href="../../variables/anaddb#prtdos">prtdos</a> 1 or 2 in anaddb.
     Work by M. Verstraete.</p>
 <hr />
 <p>C. Changes for the developers (also compilers)</p>
@@ -2997,28 +3010,28 @@ D. Other changes (or on-going developments, not finalized)</p>
     By J.M. Beuken.</p>
 <hr />
 <p>D.  Other changes (or on-going developments, not yet finalized).</p>
-<p>D.1 The printing of potentials (e.g. <a class="wikilink codevar-link" href="../../variables/files#prtvxc">prtvxc</a> &hellip;) works now for DFPT.
+<p>D.1 The printing of potentials (e.g. <a class="wikilink codevar-wikilink" href="../../variables/files#prtvxc">prtvxc</a> &hellip;) works now for DFPT.
     By M. Verstraete.</p>
-<p>D.2 New input variable <a class="wikilink codevar-link" href="../../variables/eph#prtphbands">prtphbands</a>.
+<p>D.2 New input variable <a class="wikilink codevar-wikilink" href="../../variables/eph#prtphbands">prtphbands</a>.
     See tests v7#88 and v8#46.
     By M. Giantomassi</p>
 <p>D.3 In case the ANADDB interpolation of phonon frequencies produces
-    erroneously a negative slope around gamma, the new <a class="wikilink codevar-link" href="../../variables/anaddb#nsphere">nsphere</a> = -1 possibility
+    erroneously a negative slope around gamma, the new <a class="wikilink codevar-wikilink" href="../../variables/anaddb#nsphere">nsphere</a> = -1 possibility
     allows ANADDB to select a set of IFCs that does not lead to such non-physical behaviour.
     See test v8#46.
     Work by M. Giantomassi.</p>
-<p>D.4 Added new value for <a class="wikilink codevar-link" href="../../variables/anaddb#nlflag">nlflag</a> = 3 that computes only the non-linear susceptibility.
+<p>D.4 Added new value for <a class="wikilink codevar-wikilink" href="../../variables/anaddb#nlflag">nlflag</a> = 3 that computes only the non-linear susceptibility.
     By F. Naccarato.</p>
 <p>D.5 Computation of forces is now possible in the Wavelets + PAW case.
     By M. Torrent.</p>
-<p>D.6 Ongoing work concerning the new &ldquo;driver&rdquo; <a class="wikilink codevar-link" href="../../variables/gstate#optdriver">optdriver</a> = 7 specifically dealing with electron-phonon 
+<p>D.6 Ongoing work concerning the new &ldquo;driver&rdquo; <a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a> = 7 specifically dealing with electron-phonon 
     related computations (including zero-point renormalisation). 
     See new tests v8#41 to 44.
     Work by M. Giantomassi.</p>
 <p>D.7 Ongoing work : Raman intensities, in the PAW case, using DFPT. 
     By L. Baguet and M. Torrent</p>
 <p>D.8 Ongoing work related to non-collinear DFPT.
-    Definition of the new input variable <a class="wikilink codevar-link" href="../../variables/dfpt#rfmagn">rfmagn</a>, as well as Tv8#20 .
+    Definition of the new input variable <a class="wikilink codevar-wikilink" href="../../variables/dfpt#rfmagn">rfmagn</a>, as well as Tv8#20 .
     DFPT with static B-field (Zeeman term only) works for q=(0 0 0).
     Adjustmanet of dfpt corrections for metals to non-collinear case.
     Bug fix for GS calculations with finite magnetic field (case of collinear spins).
@@ -3028,7 +3041,7 @@ D. Other changes (or on-going developments, not finalized)</p>
     New tests v8#06 and paral#100, to check the correct IO of XML files.
     Note that tests Tv7#120-124 have been renumbered Tv8#07-11.
     Work by A. Martin</p>
-<p>D.10 New test paral#62, to make sure <a class="wikilink codevar-link" href="../../variables/paral#paral_kgb">paral_kgb</a> = 0 works when there are some idle procs.
+<p>D.10 New test paral#62, to make sure <a class="wikilink codevar-wikilink" href="../../variables/paral#paral_kgb">paral_kgb</a> = 0 works when there are some idle procs.
      By M. Giantomassi</p>
 <p>D.11 Ongoing work on forces and stresses for hybrid functionals.
      By F. Jollet </p>
@@ -3042,7 +3055,7 @@ D. Other changes (or on-going developments, not finalized)</p>
 <p>D.15 Concerning  the Fourier interpolation of the phonon band structure,
      inside ANADDB, work by G Petretto :
      - Updates in the calculation of sound velocity, 
-     - Small modifications for <a class="wikilink codevar-link" href="../../variables/anaddb#nlflag">nlflag</a> == 3 and added some quantities to the anaddb netcdf file,
+     - Small modifications for <a class="wikilink codevar-wikilink" href="../../variables/anaddb#nlflag">nlflag</a> == 3 and added some quantities to the anaddb netcdf file,
      - Fix a bug in the implementation of the new weights</p>
 <p>D.16 Concerning Path Integral Molecular Dynamics with Quantum Thermal Bath :
      allow restart from history file.
@@ -3085,13 +3098,13 @@ D. Other changes (or on-going developments, not finalized)</p>
     Computer. Phys. Communications 205, 106 (2016)&rdquo;.
     See <a href="http://www.abinit.org/doc/helpfiles/for-v8.2/users/acknowledgments.html">http://www.abinit.org/doc/helpfiles/for-v8.2/users/acknowledgments.html</a> , as well as
     the notice at the end of ABINIT runs.</p>
-<p>A.1 <a class="wikilink codevar-link" href="../../variables/gw#inclvkb">inclvkb</a> 1 has been removed. Now the possible values are either 0 or 2</p>
-<p>A.2 The default strategy of <a class="wikilink codevar-link" href="../../variables/gstate#so_psp">so_psp</a> has been changed 
+<p>A.1 <a class="wikilink codevar-wikilink" href="../../variables/gw#inclvkb">inclvkb</a> 1 has been removed. Now the possible values are either 0 or 2</p>
+<p>A.2 The default strategy of <a class="wikilink codevar-wikilink" href="../../variables/gstate#so_psp">so_psp</a> has been changed 
     (see the description of the input variable so_psp).</p>
 <hr />
 <p>B.  Most noticeable achievements</p>
 <p>B.1 Implementation of the Limited-memory Broyden-Fletcher-Goldfarb-Shanno (LBFGS) 
-    minimization algorithm.  Activate this algorithm using <a class="wikilink codevar-link" href="../../variables/rlx#ionmov">ionmov</a> = 22. 
+    minimization algorithm.  Activate this algorithm using <a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a> = 22. 
     From the tests that have been run, this algorithm can be much better
     than the native implementation of BFGS in ABINIT when one approaches convergence, 
     perhaps because of better treatment of numerical details. 
@@ -3157,7 +3170,7 @@ D. Other changes (or on-going developments, not finalized)</p>
 <p>D.5 More systematic tests of the IO in parallel (different files) have been set up,
     in the norm-conserving, PAW and PAW + spin-orbit cases.
     See tests mpiio#26, 27 and 28.
-    Also, the case <a class="wikilink codevar-link" href="../../variables/paral#paral_kgb">paral_kgb</a> = 0 is now tested with idle processors. See test paral#62.
+    Also, the case <a class="wikilink codevar-wikilink" href="../../variables/paral#paral_kgb">paral_kgb</a> = 0 is now tested with idle processors. See test paral#62.
     Work by M. Giantomassi</p>
 <p>D.6 The load balancing for the repartition of the plane waves among procs is now monitored,
     and a dynamical equilibration is made possible thanks to the new input variable pw_unbal_thresh.

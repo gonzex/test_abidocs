@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2952,48 +2965,48 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>LDA+U as well as DFT+DMFT requires as input values the effective Coulomb
 interaction. Two ways to compute them are available in ABINIT.</p>
-<p>Firstly, the constrained Random Phase Approximation <a class="wikilink citation-link" data-content="Frequency-dependent local interactions and low-energy effective models from electronic structure calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#aryasetiawan2004">[Aryasetiawan2004]</a>
-<a class="wikilink codevar-link" href="../../variables/gw#ucrpa">ucrpa</a> allows one to take into account the screening of the Coulomb
+<p>Firstly, the constrained Random Phase Approximation <a class="wikilink citation-wikilink" data-content="Frequency-dependent local interactions and low-energy effective models from electronic structure calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#aryasetiawan2004">[Aryasetiawan2004]</a>
+<a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa">ucrpa</a> allows one to take into account the screening of the Coulomb
 interaction between correlated electrons, by non-interacting electrons. For
-non-entangled bands (<a class="wikilink codevar-link" href="../../variables/gw#ucrpa">ucrpa</a>= 1), the bands excluded from the polarisability
-can be specified either by a band index (<a class="wikilink codevar-link" href="../../variables/gw#ucrpa_bands">ucrpa_bands</a>) or an energy window
-(<a class="wikilink codevar-link" href="../../variables/gw#ucrpa_window">ucrpa_window</a>) <a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a>.</p>
-<p>For entangled bands (<a class="wikilink codevar-link" href="../../variables/gw#ucrpa">ucrpa</a>= 2}), the scheme used in ABINIT
-<a class="wikilink citation-link" data-content="Screened Coulomb interaction of localized electrons in solids from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#shih2012">[Shih2012]</a>,<a class="wikilink citation-link" data-content="First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#sakuma2013">[Sakuma2013]</a>,<a class="wikilink citation-link" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#amadon2014">[Amadon2014]</a> uses a band and k-point dependent
+non-entangled bands (<a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa">ucrpa</a>= 1), the bands excluded from the polarisability
+can be specified either by a band index (<a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa_bands">ucrpa_bands</a>) or an energy window
+(<a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa_window">ucrpa_window</a>) <a class="wikilink citation-wikilink" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#amadon2014">[Amadon2014]</a>.</p>
+<p>For entangled bands (<a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa">ucrpa</a>= 2}), the scheme used in ABINIT
+<a class="wikilink citation-wikilink" data-content="Screened Coulomb interaction of localized electrons in solids from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#shih2012">[Shih2012]</a>,<a class="wikilink citation-wikilink" data-content="First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#sakuma2013">[Sakuma2013]</a>,<a class="wikilink citation-wikilink" data-content="Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#amadon2014">[Amadon2014]</a> uses a band and k-point dependent
 weight to define the polarisability, using Wannier orbitals as correlated
 orbitals.</p>
 <p>This method is well adapted to compute the effective interaction for the same
 orbitals used in DFT+DMFT. To use the same orbitals as in DFT+U, the Wannier
 functions can be ajusted such that the bare interaction is close to the bare
 interaction of atomic orbitals as used in DFT+<em>U</em> (see tutorial).</p>
-<p>Secondly, a linear response method <a class="wikilink citation-link" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a> is implemented. The
+<p>Secondly, a linear response method <a class="wikilink citation-wikilink" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a> is implemented. The
 implementation is not yet in production. The implementation in ABINIT takes
 into account the truncated atomic orbitals from PAW and therefore differs from
-the original work <a class="wikilink citation-link" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a> treating full atomic orbitals. In
+the original work <a class="wikilink citation-wikilink" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a> treating full atomic orbitals. In
 particular, considerably higher effective values for U are found.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/gw#ucrpa_bands">ucrpa_bands</a>  For the calculation of U with the Constrained RPA method, gives correlated BANDS</li>
-<li><a class="wikilink codevar-link" href="../../variables/gw#ucrpa_window">ucrpa_window</a>  For the calculation of U with the Constrained RPA method, gives energy WINDOW</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa_bands">ucrpa_bands</a>  For the calculation of U with the Constrained RPA method, gives correlated BANDS</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa_window">ucrpa_window</a>  For the calculation of U with the Constrained RPA method, gives energy WINDOW</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/gw#ucrpa">ucrpa</a>  calculation of the screened interaction U with the Constrained RPA method</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gw#ucrpa">ucrpa</a>  calculation of the screened interaction U with the Constrained RPA method</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a></li>
-<li><a class="wikilink test-link" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a></li>
-<li><a class="wikilink test-link" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a></li>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a></li>
-<li><a class="wikilink test-link" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t23.in">tests/v7/Input/t23.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t24.in">tests/v7/Input/t24.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t25.in">tests/v7/Input/t25.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t78.in">tests/v7/Input/t78.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t79.in">tests/v7/Input/t79.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../../../tutorial/generated_files/lesson_ucalc_crpa.html">The lesson on the calculation of effective interactions U and J by the cRPA method</a> shows how to determine the U value with the constrained Random Phase Approximation <a class="wikilink citation-link" data-content="Frequency-dependent local interactions and low-energy effective models from electronic structure calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#aryasetiawan2004">[Aryasetiawan2004]</a> using projected Wannier orbitals. Prerequisite : DFT+U.</li>
-<li><a href="../../../tutorial/generated_files/lesson_udet.html">The lesson on the determination of U for DFT+U</a> shows how to determine the U value with the linear response method <a class="wikilink citation-link" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a>, to be used in the DFT+U approach. Prerequisite : DFT+U.</li>
+<li><a href="../../../tutorial/generated_files/lesson_ucalc_crpa.html">The lesson on the calculation of effective interactions U and J by the cRPA method</a> shows how to determine the U value with the constrained Random Phase Approximation <a class="wikilink citation-wikilink" data-content="Frequency-dependent local interactions and low-energy effective models from electronic structure calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#aryasetiawan2004">[Aryasetiawan2004]</a> using projected Wannier orbitals. Prerequisite : DFT+U.</li>
+<li><a href="../../../tutorial/generated_files/lesson_udet.html">The lesson on the determination of U for DFT+U</a> shows how to determine the U value with the linear response method <a class="wikilink citation-wikilink" data-content="Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#cococcioni2005">[Cococcioni2005]</a>, to be used in the DFT+U approach. Prerequisite : DFT+U.</li>
 </ul>
                 
                   

@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2938,81 +2951,81 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Different algorithms (Broyden; modified Broyden; Verlet with sudden stop of
 atoms) allows to find the equilibrium configuration of the nuclei, for which
-the forces vanish, see <a class="wikilink codevar-link" href="../../variables/rlx#ionmov">ionmov</a>. The cell parameters can also be optimized
-concurently with the atomic positions <a class="wikilink codevar-link" href="../../variables/rlx#optcell">optcell</a>, possibly with a state of
-given stress as a target, <a class="wikilink codevar-link" href="../../variables/rlx#strtarget">strtarget</a>.</p>
+the forces vanish, see <a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a>. The cell parameters can also be optimized
+concurently with the atomic positions <a class="wikilink codevar-wikilink" href="../../variables/rlx#optcell">optcell</a>, possibly with a state of
+given stress as a target, <a class="wikilink codevar-wikilink" href="../../variables/rlx#strtarget">strtarget</a>.</p>
 <p>Specified lattice parameters, or angles, or atomic positions, can be kept
-fixed if needed, see <a class="wikilink topic-link" data-content="How to constaint the geometry of the system in geometry optimization, molecular
-dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../GeoConstraints">GeoConstraints topic</a>.</p>
+fixed if needed, see <a class="wikilink topic-wikilink" data-content="How to constaint the geometry of the system in geometry optimization, molecular
+dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../GeoConstraints">GeoConstraints topic</a>.</p>
 <p>A genetic algorithm has been coded, for global optimisation. Not in production
-yet. See <a class="wikilink codevar-link" href="../../variables/rlx#ga_rules">ga_rules</a>.</p>
+yet. See <a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_rules">ga_rules</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#dilatmx">dilatmx</a>  lattice DILATation : MaXimal value</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ntime">ntime</a>  Number of TIME steps</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#strfact">strfact</a>  STRess FACTor</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#tolmxde">tolmxde</a>  TOLerance on the MaXimal Difference in Energy</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#tolmxf">tolmxf</a>  TOLerance on the MaXimal Force</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#dilatmx">dilatmx</a>  lattice DILATation : MaXimal value</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ntime">ntime</a>  Number of TIME steps</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#strfact">strfact</a>  STRess FACTor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#tolmxde">tolmxde</a>  TOLerance on the MaXimal Difference in Energy</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#tolmxf">tolmxf</a>  TOLerance on the MaXimal Force</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ionmov">ionmov</a>  IONic MOVEs</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#optcell">optcell</a>  OPTimize the CELL shape and dimensions</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a>  IONic MOVEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#optcell">optcell</a>  OPTimize the CELL shape and dimensions</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#fxcartfactor">fxcartfactor</a>  Forces to (X) CARTesian coordinates FACTOR</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ga_algor">ga_algor</a>  Genetic Algorithm - ALGOrithm selection</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ga_fitness">ga_fitness</a>  Genetic Algorithm FITNESS function selection</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ga_n_rules">ga_n_rules</a>  Genetic Algorithm Number of RULES</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ga_opt_percent">ga_opt_percent</a>  Genetic Algorithm OPTimal PERCENT</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#ga_rules">ga_rules</a>  Genetic Algorithm RULES</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#goprecon">goprecon</a>  Geometry Optimization PRECONditioner equations</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#goprecprm">goprecprm</a>  Geometry Optimization PREconditioner PaRaMeters equations</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#random_atpos">random_atpos</a>  RANDOM ATomic POSitions</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#fxcartfactor">fxcartfactor</a>  Forces to (X) CARTesian coordinates FACTOR</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_algor">ga_algor</a>  Genetic Algorithm - ALGOrithm selection</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_fitness">ga_fitness</a>  Genetic Algorithm FITNESS function selection</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_n_rules">ga_n_rules</a>  Genetic Algorithm Number of RULES</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_opt_percent">ga_opt_percent</a>  Genetic Algorithm OPTimal PERCENT</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ga_rules">ga_rules</a>  Genetic Algorithm RULES</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#goprecon">goprecon</a>  Geometry Optimization PRECONditioner equations</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#goprecprm">goprecprm</a>  Geometry Optimization PREconditioner PaRaMeters equations</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#random_atpos">random_atpos</a>  RANDOM ATomic POSitions</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/dev#iprcfc">iprcfc</a>  Integer for PReConditioner of Force Constants</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#strprecon">strprecon</a>  STRess PRECONditioner</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#strtarget">strtarget</a>  STRess TARGET</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#iprcfc">iprcfc</a>  Integer for PReConditioner of Force Constants</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#strprecon">strprecon</a>  STRess PRECONditioner</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#strtarget">strtarget</a>  STRess TARGET</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v1:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Test the option ionmov=4. 8-atom Si cube,  non spin-polarized. Same test as number 22a of fast,  except for the change of ionmov,  no reading of wavefunctions,  iscf to 2,  and different tolerance criteria." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t44.in">tests/v1/Input/t44.in</a></li>
-<li><a class="wikilink test-link" data-content="2 special k point Si in 2-atom diamond unit cell. Optimization of unit cell volume (optcell=1). Use 2 datasets,  and the variable getcell." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t78.in">tests/v1/Input/t78.in</a></li>
-<li><a class="wikilink test-link" data-content="H2 molecule in a cell of variable size along the H2 chain =&amp;gt; H polymer. Optimization of cell size and atomic distances (optcell=4)." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t79.in">tests/v1/Input/t79.in</a></li>
-<li><a class="wikilink test-link" data-content="Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC (optcell=2). Also test the output of the HIST.nc file (restartxf==-1)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t80.in">tests/v1/Input/t80.in</a></li>
-<li><a class="wikilink test-link" data-content="Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC,  with conservation of volume (optcell=3)." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t81.in">tests/v1/Input/t81.in</a></li>
-<li><a class="wikilink test-link" data-content="Mg bi-dimensional layer,  1 atom per unit cell. Start with deformed 2D hexagonal lattice, optimize the lattice towards hexagonal, with conservation of inter-layer distance (optcell=7)." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t82.in">tests/v1/Input/t82.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test the option ionmov=4. 8-atom Si cube,  non spin-polarized. Same test as number 22a of fast,  except for the change of ionmov,  no reading of wavefunctions,  iscf to 2,  and different tolerance criteria." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t44.in">tests/v1/Input/t44.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2 special k point Si in 2-atom diamond unit cell. Optimization of unit cell volume (optcell=1). Use 2 datasets,  and the variable getcell." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t78.in">tests/v1/Input/t78.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="H2 molecule in a cell of variable size along the H2 chain =&amp;gt; H polymer. Optimization of cell size and atomic distances (optcell=4)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t79.in">tests/v1/Input/t79.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC (optcell=2). Also test the output of the HIST.nc file (restartxf==-1)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t80.in">tests/v1/Input/t80.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Mg crystal,  1 atom per unit cell. Start with deformed FCC lattice, optimize the lattice towards FCC,  with conservation of volume (optcell=3)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t81.in">tests/v1/Input/t81.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Mg bi-dimensional layer,  1 atom per unit cell. Start with deformed 2D hexagonal lattice, optimize the lattice towards hexagonal, with conservation of inter-layer distance (optcell=7)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t82.in">tests/v1/Input/t82.in</a></li>
 </ul>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Arsenic in rhombohedral structure. Optimization of unit cell size and shape. With 4x4x4 k point grid,  ecut 3.0,  occopt 4 and tsmear 0.06d0, one get acell 3*7.325  angdeg 3*57.36 and xred 0.2277 These input parameters are too small,  but still give a realistic geometry,  since with the much better parameters 12x12x12 k point grid,  ecut 12.0,  occopt 4 and tsmear 0.04d0, one gets acell 3*7.633  angdeg 3*54.95 and xred 0.2296,  while the experimental values are acell 3*7.751   angdeg 3*54.554 and xred 0.2276" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t44.in">tests/v2/Input/t44.in</a></li>
-<li><a class="wikilink test-link" data-content="H2 molecule in a big box. Comparison of the modified Broyden algorithm (ionmov=3) with the original one (ionmov=2). Start with different values of xcart,  from 0.6 to 1.1,  by step of 0.1 . The number of Broyden steps needed to reach acceptable residual forces with the ionmov=3 algorithm are : 3,  2,  2,  3,  3,  4,  while with the ionmov=2 algorithms,  one get : 4,  3,  2,  5,  and then, either the algorithm does not converge within 8 steps,  or it converges to a saddle point of the energy ! This test was hard to make portable. This is why the tolerance for fldiff is very large." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t48.in">tests/v2/Input/t48.in</a></li>
-<li><a class="wikilink test-link" data-content="Basic test of geometry optimization for water First computing the ground state of a close configuration Uses 5 different methods to find the relaxed positions" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t88.in">tests/v2/Input/t88.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Arsenic in rhombohedral structure. Optimization of unit cell size and shape. With 4x4x4 k point grid,  ecut 3.0,  occopt 4 and tsmear 0.06d0, one get acell 3*7.325  angdeg 3*57.36 and xred 0.2277 These input parameters are too small,  but still give a realistic geometry,  since with the much better parameters 12x12x12 k point grid,  ecut 12.0,  occopt 4 and tsmear 0.04d0, one gets acell 3*7.633  angdeg 3*54.95 and xred 0.2296,  while the experimental values are acell 3*7.751   angdeg 3*54.554 and xred 0.2276" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t44.in">tests/v2/Input/t44.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box. Comparison of the modified Broyden algorithm (ionmov=3) with the original one (ionmov=2). Start with different values of xcart,  from 0.6 to 1.1,  by step of 0.1 . The number of Broyden steps needed to reach acceptable residual forces with the ionmov=3 algorithm are : 3,  2,  2,  3,  3,  4,  while with the ionmov=2 algorithms,  one get : 4,  3,  2,  5,  and then, either the algorithm does not converge within 8 steps,  or it converges to a saddle point of the energy ! This test was hard to make portable. This is why the tolerance for fldiff is very large." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t48.in">tests/v2/Input/t48.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Basic test of geometry optimization for water First computing the ground state of a close configuration Uses 5 different methods to find the relaxed positions" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t88.in">tests/v2/Input/t88.in</a></li>
 </ul>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="8 atoms of Si in an elongated box. 4 of them are fixed,  while atoms 5 and 6 and 7 and 8 are grouped by pair,  such as the sum of their relative separations along y is constrained to 8.0 . This is a crazy constraint,  just to show that it can be done !" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t40.in">tests/v3/Input/t40.in</a></li>
-<li><a class="wikilink test-link" data-content="Magnesium HCP. Optimize the cell volume and shape using different constraints. Checks whether the stresses are symmetric,  and whether the optimisation algorithm does not break the symmetry." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v3/Input/t42.in">tests/v3/Input/t42.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="8 atoms of Si in an elongated box. 4 of them are fixed,  while atoms 5 and 6 and 7 and 8 are grouped by pair,  such as the sum of their relative separations along y is constrained to 8.0 . This is a crazy constraint,  just to show that it can be done !" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t40.in">tests/v3/Input/t40.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Magnesium HCP. Optimize the cell volume and shape using different constraints. Checks whether the stresses are symmetric,  and whether the optimisation algorithm does not break the symmetry." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t42.in">tests/v3/Input/t42.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Test of geometry optimization using using ionmov=1, 4, 5 and 7 Hydrogen molecule inside a box of 12 Bohr This test was created to test ionmov=5" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t02.in">tests/v5/Input/t02.in</a></li>
-<li><a class="wikilink test-link" data-content="White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t77.in">tests/v5/Input/t77.in</a></li>
-<li><a class="wikilink test-link" data-content="Make a simple geometry relaxation and validate the XML output (testing prtxml)." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v5/Input/t79.in">tests/v5/Input/t79.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test of geometry optimization using using ionmov=1, 4, 5 and 7 Hydrogen molecule inside a box of 12 Bohr This test was created to test ionmov=5" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t02.in">tests/v5/Input/t02.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="White tin,  body-centered tetragonal. This test checks that in an optcell 2 run,  the symmetry of the body-centered case is not broken. This test is run for two values of strprecon also, to test the strprecon variable. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t77.in">tests/v5/Input/t77.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Make a simple geometry relaxation and validate the XML output (testing prtxml)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t79.in">tests/v5/Input/t79.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Genetic algorithm structure random search. Hydrogen has been used as an example. No physical meaning. Number of images is only 10 but experience shows that at least 20 are fine." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v6/Input/t27.in">tests/v6/Input/t27.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Genetic algorithm structure random search. Hydrogen has been used as an example. No physical meaning. Number of images is only 10 but experience shows that at least 20 are fine." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t27.in">tests/v6/Input/t27.in</a></li>
 </ul>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Nickel ferromagnetic fcc structure with an ONCVPSP pseudo containing valence density. We test several improvements that are available when the NC file contains the PS valence charge. More specifically,  we test the initialization of the density from atomic quantities (initro.F90), the correction to the forces due to the residuals and the extrapolation of the density for structural relaxations (well,  xred is fixed by symmetry). We also test the treatment of the core charge in G-space in the case of GS calculations By default,  abinit handles XCCC in real space,  here we use nc_xccc_gspace==1 to treat it in G-space using the same approach as the one used in PAW." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v7/Input/t10.in">tests/v7/Input/t10.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Nickel ferromagnetic fcc structure with an ONCVPSP pseudo containing valence density. We test several improvements that are available when the NC file contains the PS valence charge. More specifically,  we test the initialization of the density from atomic quantities (initro.F90), the correction to the forces due to the residuals and the extrapolation of the density for structural relaxations (well,  xred is fixed by symmetry). We also test the treatment of the core charge in G-space in the case of GS calculations By default,  abinit handles XCCC in real space,  here we use nc_xccc_gspace==1 to treat it in G-space using the same approach as the one used in PAW." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t10.in">tests/v7/Input/t10.in</a></li>
 </ul>
                 
                   

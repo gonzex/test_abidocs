@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -3061,7 +3074,7 @@ Therefore, you must include this file in the folder:</p>
 <p>Let&rsquo;s examine the input file tw90_1.in, while the calculation is running.<br />
 The input file should look familiar to you. It is indeed the silicon case. It
 has two data sets: first a SCF calculation and then a NSCF calculation which
-will call the Wannier90 library. The only new input variable is <a class="wikilink codevar-link" href="../../variables/files#prtwant">prtwant</a>
+will call the Wannier90 library. The only new input variable is <a class="wikilink codevar-wikilink" href="../../variables/files#prtwant">prtwant</a>
 which has to be set to 2 in order to use the Wannier90 utility.</p>
 <p>Now lets look the secondary input file wannier90.win. This is a mandatory
 input file required by the Wannier90 library. There are many variables that
@@ -3139,9 +3152,9 @@ And modify the Isovalue, put, for instance, 0.3 and check the option &quot;Rende
 
 <p>** Notes:**</p>
 <ul>
-<li>It is important to set <a class="wikilink codevar-link" href="../../variables/dev#istwfk">istwfk</a> equal to 1 for every k-point avoiding using symmetries. The reason is that the formalism used to extract the MLWF assumes that you have a uniform grid of k-points. See section IV of MV. </li>
+<li>It is important to set <a class="wikilink codevar-wikilink" href="../../variables/dev#istwfk">istwfk</a> equal to 1 for every k-point avoiding using symmetries. The reason is that the formalism used to extract the MLWF assumes that you have a uniform grid of k-points. See section IV of MV. </li>
 <li>The number of Wannier functions to extract should be minor or equal to the number of bands. If <em>nband &gt; nwan</em> then the disentanglement routines will be called. </li>
-<li>The number of k-points should be equal to ngkpt(1)*ngkpt(2)*ngkpt(3). This is achieved by using the input variables <a class="wikilink codevar-link" href="../../variables/basic#kptopt">kptopt</a>= 3, <a class="wikilink codevar-link" href="../../variables/basic#ngkpt">ngkpt</a> and <a class="wikilink codevar-link" href="../../variables/basic#nshiftk">nshiftk</a>= 1. </li>
+<li>The number of k-points should be equal to ngkpt(1)*ngkpt(2)*ngkpt(3). This is achieved by using the input variables <a class="wikilink codevar-wikilink" href="../../variables/basic#kptopt">kptopt</a>= 3, <a class="wikilink codevar-wikilink" href="../../variables/basic#ngkpt">ngkpt</a> and <a class="wikilink codevar-wikilink" href="../../variables/basic#nshiftk">nshiftk</a>= 1. </li>
 <li>The prefix of all wannier90 files in this sample case is <em>wannier90</em>. <br />
 Other possible prefixes are w90_ and <strong>abo</strong>__w90_, where <strong>abo</strong> is the
 fourth line on your .file file.<br />
@@ -3153,7 +3166,7 @@ if it is not found then it will look for <em>w90.win</em> and finally for
 <p>Before starting it is assumed that you have already completed the tutorials
 <a href="../lesson_paw1.html">PAW1</a> and <a href="../lesson_paw1.html">PAW2</a>.</p>
 <p>The PAW method is implemented in such a way that it is very easy to use. For
-the silicon case we just have to add the variable <a class="wikilink codevar-link" href="../../variables/paw#pawecutdg">pawecutdg</a>. And the PAW
+the silicon case we just have to add the variable <a class="wikilink codevar-wikilink" href="../../variables/paw#pawecutdg">pawecutdg</a>. And the PAW
 Atomic Data is included in the pseudopotential file. An example has already
 been prepared.</p>
 <p>Just copy the files tw90_2.files and tw90_2.in into &ldquo;Work_w90&rdquo;:</p>

@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2950,60 +2963,60 @@ wavefunctions.</p>
 <p>For such purpose, the multi-dataset mode has been implemented.</p>
 <p>It allows the code to treat, in one run, different sets of data, and to chain
 them. The number of datasets to be treated is specified by the variable
-<a class="wikilink codevar-link" href="../../variables/basic#ndtset">ndtset</a>, while the indices of the datasets (by default 1, 2, 3, and so on)
-can be eventually provided by the arrays <a class="wikilink codevar-link" href="../../variables/basic#jdtset">jdtset</a> or <a class="wikilink codevar-link" href="../../variables/basic#udtset">udtset</a>.</p>
+<a class="wikilink codevar-wikilink" href="../../variables/basic#ndtset">ndtset</a>, while the indices of the datasets (by default 1, 2, 3, and so on)
+can be eventually provided by the arrays <a class="wikilink codevar-wikilink" href="../../variables/basic#jdtset">jdtset</a> or <a class="wikilink codevar-wikilink" href="../../variables/basic#udtset">udtset</a>.</p>
 <p>A full description of the multidataset capabilities of ABINIT can be found in
-<a class="wikilink user-guide-link" href="../../user-guide/help_abinit#multidataset">the multidataset section of the ABINIT help file</a>.</p>
+<a class="wikilink user-guide-wikilink" href="../../user-guide/help_abinit#multidataset">the multidataset section of the ABINIT help file</a>.</p>
 <p>A very important mechanism allows to pass information obtained from some
 earlier calculation, by defining &ldquo;get*&rdquo; input variables. Important examples
-are <a class="wikilink codevar-link" href="../../variables/files#getden">getden</a> for chaining a self-consistent determination of the density
+are <a class="wikilink codevar-wikilink" href="../../variables/files#getden">getden</a> for chaining a self-consistent determination of the density
 with a non-self-consistent calculation of the Kohn-Sham band structure, or
-<a class="wikilink codevar-link" href="../../variables/files#getwfk">getwfk</a> for chaining a ground-state determination of wavefunctions with a
+<a class="wikilink codevar-wikilink" href="../../variables/files#getwfk">getwfk</a> for chaining a ground-state determination of wavefunctions with a
 DFPT or GW computation.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/basic#jdtset">jdtset</a>  index -J- for DaTaSETs</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#udtset">udtset</a>  Upper limit on DaTa SETs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#jdtset">jdtset</a>  index -J- for DaTaSETs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#udtset">udtset</a>  Upper limit on DaTa SETs</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/basic#ndtset">ndtset</a>  Number of DaTaSETs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#ndtset">ndtset</a>  Number of DaTaSETs</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/files#get1wf">get1wf</a>  GET the first-order wavefunctions from _1WF file </li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getbscoup">getbscoup</a>  GET the Bethe-Salpeter COUPling block from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getbseig">getbseig</a>  GET the Bethe-Salpeter EIGenstates from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getbsreso">getbsreso</a>  GET the Bethe-Salpeter RESOnant block from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#getcell">getcell</a>  GET CELL parameters from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getddk">getddk</a>  GET the DDK wavefunctions from _1WF file</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getden">getden</a>  GET the DENsity from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/dev#getgam_eig2nkq">getgam_eig2nkq</a>  GET the GAMma phonon data EIG2NKQ from dataset</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#gethaydock">gethaydock</a>  GET the HAYDOCK restart file from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getocc">getocc</a>  GET OCC parameters from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getqps">getqps</a>  GET QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getscr">getscr</a>  GET SCReening (the inverse dielectric matrix) from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getsuscep">getsuscep</a>  GET SUSCEPtibility (the irreducible polarizability) from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#getvel">getvel</a>  GET VEL from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getwfk">getwfk</a>  GET the wavefunctions from _WFK file </li>
-<li><a class="wikilink codevar-link" href="../../variables/dev#getwfkfine">getwfkfine</a>  GET the fine grid wavefunctions from _WFK file</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#getwfq">getwfq</a>  GET the wavefunctions from _WFQ file </li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#getxcart">getxcart</a>  GET XCART from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/rlx#getxred">getxred</a>  GET XRED from &hellip;</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdden">irdden</a>  Integer that governs the ReaDing of DEN file</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdscr">irdscr</a>  Integer that governs the ReaDing of the SCReening</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdsuscep">irdsuscep</a>  Integer that governs the ReaDing of the SUSCEPtibility</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#irdwfk">irdwfk</a>  Integer that governs the ReaDing of _WFK files</li>
-<li><a class="wikilink codevar-link" href="../../variables/dev#irdwfkfine">irdwfkfine</a>  Integer that governs the ReaDing of the grid _WFK file on the FINE grid</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#get1wf">get1wf</a>  GET the first-order wavefunctions from _1WF file </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getbscoup">getbscoup</a>  GET the Bethe-Salpeter COUPling block from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getbseig">getbseig</a>  GET the Bethe-Salpeter EIGenstates from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getbsreso">getbsreso</a>  GET the Bethe-Salpeter RESOnant block from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#getcell">getcell</a>  GET CELL parameters from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getddk">getddk</a>  GET the DDK wavefunctions from _1WF file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getden">getden</a>  GET the DENsity from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#getgam_eig2nkq">getgam_eig2nkq</a>  GET the GAMma phonon data EIG2NKQ from dataset</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#gethaydock">gethaydock</a>  GET the HAYDOCK restart file from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getocc">getocc</a>  GET OCC parameters from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getqps">getqps</a>  GET QuasiParticle Structure</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getscr">getscr</a>  GET SCReening (the inverse dielectric matrix) from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getsuscep">getsuscep</a>  GET SUSCEPtibility (the irreducible polarizability) from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#getvel">getvel</a>  GET VEL from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getwfk">getwfk</a>  GET the wavefunctions from _WFK file </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#getwfkfine">getwfkfine</a>  GET the fine grid wavefunctions from _WFK file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#getwfq">getwfq</a>  GET the wavefunctions from _WFQ file </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#getxcart">getxcart</a>  GET XCART from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#getxred">getxred</a>  GET XRED from &hellip;</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdden">irdden</a>  Integer that governs the ReaDing of DEN file</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdqps">irdqps</a>  Integer that governs the ReaDing of QuasiParticle Structure</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdscr">irdscr</a>  Integer that governs the ReaDing of the SCReening</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdsuscep">irdsuscep</a>  Integer that governs the ReaDing of the SUSCEPtibility</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#irdwfk">irdwfk</a>  Integer that governs the ReaDing of _WFK files</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#irdwfkfine">irdwfkfine</a>  Integer that governs the ReaDing of the grid _WFK file on the FINE grid</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v1:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using series" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t83.in">tests/v1/Input/t83.in</a></li>
-<li><a class="wikilink test-link" data-content="2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using metacharacters only." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t84.in">tests/v1/Input/t84.in</a></li>
-<li><a class="wikilink test-link" data-content="H atom (spin-unpolarized in a medium size cubic box,  k=0 0 0 similar to test 1 of fast) Using multi-dataset mode,  examine the following combinations of fftalg and istwfk : (112, 2), (112, 1), (111, 1), (111, 2), (110, 2), (110, 1), (100, 1),  then compute the energy with nstep=0 for (112, 2) and (112, 1). Then again SCF test for (400, 1),  (401, 1),  (402, 1). For the second dataset,  reads the wavefunctions of the first dataset." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v1/Input/t87.in">tests/v1/Input/t87.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using series" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t83.in">tests/v1/Input/t83.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2 special k point Si in 2-atom diamond unit cell. Double-loop over acell and ecut using metacharacters only." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t84.in">tests/v1/Input/t84.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="H atom (spin-unpolarized in a medium size cubic box,  k=0 0 0 similar to test 1 of fast) Using multi-dataset mode,  examine the following combinations of fftalg and istwfk : (112, 2), (112, 1), (111, 1), (111, 2), (110, 2), (110, 1), (100, 1),  then compute the energy with nstep=0 for (112, 2) and (112, 1). Then again SCF test for (400, 1),  (401, 1),  (402, 1). For the second dataset,  reads the wavefunctions of the first dataset." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t87.in">tests/v1/Input/t87.in</a></li>
 </ul>
                 
                   

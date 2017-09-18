@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2952,26 +2965,26 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Since ABINIT is based on periodic boundary conditions, every wavefunction is
 characterized by a wavevector, usually denoted k-point.</p>
-<p>Any list of k-point can be specified, thanks to the keywords <a class="wikilink codevar-link" href="../../variables/basic#nkpt">nkpt</a> and
-<a class="wikilink codevar-link" href="../../variables/basic#kpt">kpt</a>.</p>
+<p>Any list of k-point can be specified, thanks to the keywords <a class="wikilink codevar-wikilink" href="../../variables/basic#nkpt">nkpt</a> and
+<a class="wikilink codevar-wikilink" href="../../variables/basic#kpt">kpt</a>.</p>
 <p>Still, k-points are used in two different contexts in the vast majority of
 cases:</p>
 <ul>
 <li>the sampling of the Brillouin Zone, with the goal to produce integrated quantities (e.g. the charge density, the electronic energy, the electronic DOS &hellip;) that are numerically precise;</li>
 <li>or the specific computation of wavefunctions and eigenenergies e.g. to get an electronic band structure. 
 In the first case, please complete the present topic by reading
-<a class="wikilink topic-link" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../BandOcc">BandOcc topic</a>, while in the second case, please read
-<a class="wikilink topic-link" data-content="How to generate the electronic band structure related topics" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../ElecBandStructure">ElecBandStructure topic</a>.</li>
+<a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../BandOcc">BandOcc topic</a>, while in the second case, please read
+<a class="wikilink topic-wikilink" data-content="How to generate the electronic band structure related topics" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../ElecBandStructure">ElecBandStructure topic</a>.</li>
 </ul>
 <p>In the first case, the Brillouin zone must be sampled adequately, with grids
 that, in general will be homogeneous distributions of k-points throughout the
 Brillouin Zone (e.g. Monkhorst-Pack grids, or their generalisations).. For
-such grids, see <a class="wikilink codevar-link" href="../../variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-link" href="../../variables/basic#nshiftk">nshiftk</a>, <a class="wikilink codevar-link" href="../../variables/basic#shiftk">shiftk</a> or even the more general
-<a class="wikilink codevar-link" href="../../variables/gstate#kptrlatt">kptrlatt</a>. A list of interesting k point sets can be generated
+such grids, see <a class="wikilink codevar-wikilink" href="../../variables/basic#ngkpt">ngkpt</a>, <a class="wikilink codevar-wikilink" href="../../variables/basic#nshiftk">nshiftk</a>, <a class="wikilink codevar-wikilink" href="../../variables/basic#shiftk">shiftk</a> or even the more general
+<a class="wikilink codevar-wikilink" href="../../variables/gstate#kptrlatt">kptrlatt</a>. A list of interesting k point sets can be generated
 automatically, including a measure of their accuracy in term of integration
-within the Brillouin Zone, see <a class="wikilink codevar-link" href="../../variables/files#prtkpt">prtkpt</a>, <a class="wikilink codevar-link" href="../../variables/gstate#kptrlen">kptrlen</a>. For metals, a joint
-convergenc study on <a class="wikilink codevar-link" href="../../variables/gstate#tsmear">tsmear</a> AND the k-point grid is important.</p>
-<p>For the definition of a path of k-points, see <a class="wikilink topic-link" data-content="How to generate the electronic band structure related topics" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../ElecBandStructure">ElecBandStructure topic</a>.  </p>
+within the Brillouin Zone, see <a class="wikilink codevar-wikilink" href="../../variables/files#prtkpt">prtkpt</a>, <a class="wikilink codevar-wikilink" href="../../variables/gstate#kptrlen">kptrlen</a>. For metals, a joint
+convergenc study on <a class="wikilink codevar-wikilink" href="../../variables/gstate#tsmear">tsmear</a> AND the k-point grid is important.</p>
+<p>For the definition of a path of k-points, see <a class="wikilink topic-wikilink" data-content="How to generate the electronic band structure related topics" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../ElecBandStructure">ElecBandStructure topic</a>.  </p>
 <p>More detailed explanation concerning the convergence with respect to the
 k-point sampling. The number of k-points to be used for this sampling, in the
 full Brillouin zone, is inversely proportional to the unit cell volume, but
@@ -2985,7 +2998,7 @@ irreducible part of the Brillouin zone must be sampled. Moreover the time-
 reversal symmetry (k equivalent to -k) can be used for ground-state
 calculations, to reduce sometimes even further the portion of the brillouin
 zone to be sampled. The number of k points to be used in a calculation is
-named <a class="wikilink codevar-link" href="../../variables/basic#nkpt">nkpt</a>. There is another way to take advantage of the time-reversal
+named <a class="wikilink codevar-wikilink" href="../../variables/basic#nkpt">nkpt</a>. There is another way to take advantage of the time-reversal
 symmetry, in the specific case of k-points that are invariant under k =&gt; -k ,
 or are sent to another vector distant of the original one by some vector of
 the reciprocal lattice. See below for more explanation about the advantages of
@@ -3001,45 +3014,45 @@ supercell, one k-point is enough).</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#chksymbreak">chksymbreak</a>  CHecK SYMmetry BREAKing</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#kptopt">kptopt</a>  KPoinTs OPTion</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#ngkpt">ngkpt</a>  Number of Grid points for K PoinTs generation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#chksymbreak">chksymbreak</a>  CHecK SYMmetry BREAKing</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#kptopt">kptopt</a>  KPoinTs OPTion</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#ngkpt">ngkpt</a>  Number of Grid points for K PoinTs generation</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#vacuum">vacuum</a>  VACUUM identification</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#vacwidth">vacwidth</a>  VACuum WIDTH</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#vacuum">vacuum</a>  VACUUM identification</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#vacwidth">vacwidth</a>  VACuum WIDTH</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/internal#kptns">%kptns</a>  K-PoinTs re-Normalized and Shifted</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/internal#kptns">%kptns</a>  K-PoinTs re-Normalized and Shifted</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/dev#istwfk">istwfk</a>  Integer for choice of STorage of WaveFunction at each k point</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#kpt">kpt</a>  K - PoinTs</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#kptnrm">kptnrm</a>  K - PoinTs NoRMalization</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#kptrlatt">kptrlatt</a>  K - PoinTs grid : Real space LATTice</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#kptrlen">kptrlen</a>  K - PoinTs grid : Real space LENgth</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
-<li><a class="wikilink codevar-link" href="../../variables/gstate#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#nkpath">nkpath</a>  Number of K-points defining the PATH</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#nkpt">nkpt</a>  Number of K - Points</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#nshiftk">nshiftk</a>  Number of SHIFTs for K point grids</li>
-<li><a class="wikilink codevar-link" href="../../variables/files#prtkpt">prtkpt</a>  PRinT the K-PoinTs sets</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#shiftk">shiftk</a>  SHIFT for K points</li>
-<li><a class="wikilink codevar-link" href="../../variables/basic#wtk">wtk</a>  WeighTs for K points</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#istwfk">istwfk</a>  Integer for choice of STorage of WaveFunction at each k point</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#kpt">kpt</a>  K - PoinTs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#kptbounds">kptbounds</a>  K PoinT BOUNDarieS</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#kptnrm">kptnrm</a>  K - PoinTs NoRMalization</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#kptrlatt">kptrlatt</a>  K - PoinTs grid : Real space LATTice</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#kptrlen">kptrlen</a>  K - PoinTs grid : Real space LENgth</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#ndivk">ndivk</a>  Number of DIVisions of K lines</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#ndivsm">ndivsm</a>  Number of DIVisions for the SMallest segment</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#nkpath">nkpath</a>  Number of K-points defining the PATH</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#nkpt">nkpt</a>  Number of K - Points</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#nshiftk">nshiftk</a>  Number of SHIFTs for K point grids</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/files#prtkpt">prtkpt</a>  PRinT the K-PoinTs sets</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#shiftk">shiftk</a>  SHIFT for K points</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#wtk">wtk</a>  WeighTs for K points</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="BCC Molybdenum. Test the k point generator : Monkhorst-Pack grid,  then band structure." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t43.in">tests/v2/Input/t43.in</a></li>
-<li><a class="wikilink test-link" data-content="Arsenic in rhombohedral structure. Optimization of unit cell size and shape. With 4x4x4 k point grid,  ecut 3.0,  occopt 4 and tsmear 0.06d0, one get acell 3*7.325  angdeg 3*57.36 and xred 0.2277 These input parameters are too small,  but still give a realistic geometry,  since with the much better parameters 12x12x12 k point grid,  ecut 12.0,  occopt 4 and tsmear 0.04d0, one gets acell 3*7.633  angdeg 3*54.95 and xred 0.2296,  while the experimental values are acell 3*7.751   angdeg 3*54.554 and xred 0.2276" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t44.in">tests/v2/Input/t44.in</a></li>
-<li><a class="wikilink test-link" data-content="2D hexagonal lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t61.in">tests/v2/Input/t61.in</a></li>
-<li><a class="wikilink test-link" data-content="2D square lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t62.in">tests/v2/Input/t62.in</a></li>
-<li><a class="wikilink test-link" data-content="2D 4 point symmetry: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t63.in">tests/v2/Input/t63.in</a></li>
-<li><a class="wikilink test-link" data-content="2D rectangular lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v2/Input/t64.in">tests/v2/Input/t64.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="BCC Molybdenum. Test the k point generator : Monkhorst-Pack grid,  then band structure." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t43.in">tests/v2/Input/t43.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Arsenic in rhombohedral structure. Optimization of unit cell size and shape. With 4x4x4 k point grid,  ecut 3.0,  occopt 4 and tsmear 0.06d0, one get acell 3*7.325  angdeg 3*57.36 and xred 0.2277 These input parameters are too small,  but still give a realistic geometry,  since with the much better parameters 12x12x12 k point grid,  ecut 12.0,  occopt 4 and tsmear 0.04d0, one gets acell 3*7.633  angdeg 3*54.95 and xred 0.2296,  while the experimental values are acell 3*7.751   angdeg 3*54.554 and xred 0.2276" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t44.in">tests/v2/Input/t44.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2D hexagonal lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t61.in">tests/v2/Input/t61.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2D square lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t62.in">tests/v2/Input/t62.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2D 4 point symmetry: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t63.in">tests/v2/Input/t63.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="2D rectangular lattice: test the sets of k points generated automatically" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t64.in">tests/v2/Input/t64.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -3107,9 +3120,9 @@ it is advised to take a q point mesh that is adjusted to the k point mesh used
 for the electronic structure : all q wavevectors should connect two k point
 wavevectors from this grid.</p>
 <p>Such a set of q wavevectors can be generated straightforwardly by running a GS
-calculation with <a class="wikilink codevar-link" href="../../variables/basic#kptopt">kptopt</a>=1, <a class="wikilink codevar-link" href="../../variables/basic#nshiftk">nshiftk</a>=1, <a class="wikilink codevar-link" href="../../variables/basic#shiftk">shiftk</a>=0 0 0 (to include
+calculation with <a class="wikilink codevar-wikilink" href="../../variables/basic#kptopt">kptopt</a>=1, <a class="wikilink codevar-wikilink" href="../../variables/basic#nshiftk">nshiftk</a>=1, <a class="wikilink codevar-wikilink" href="../../variables/basic#shiftk">shiftk</a>=0 0 0 (to include
 gamma) and taking the output kpt set file as this qpt set. One might set
-<a class="wikilink codevar-link" href="../../variables/basic#nstep">nstep</a>=1 and <a class="wikilink codevar-link" href="../../variables/gstate#nline">nline</a>=1, so only one iteration runs.<br />
+<a class="wikilink codevar-wikilink" href="../../variables/basic#nstep">nstep</a>=1 and <a class="wikilink codevar-wikilink" href="../../variables/gstate#nline">nline</a>=1, so only one iteration runs.<br />
 The input file ~abinit/tests/tutorespfn/Input/trf2_2.in is precisely an input
 file that can be used to generate such a set of k points. Copy it in the
 present Work_rf2 directly, as well as the accompanying
@@ -3144,7 +3157,7 @@ the run is not finished.<br />
 In the latter case, instead of waiting for trf2_1 to be finished, we suggest
 you to pursue with section 3. You will use as DDB file the one that can be
 found in ~abinit/tests/tutorespfn/Refs, with the name trf2_3.ddb.out,
-<a class="wikilink test-link" href="../../tests/tutorespfn/Refs/trf2_3.ddb.out">tests/tutorespfn/Refs/trf2_3.ddb.out</a>, instead of the one that would result
+<a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Refs/trf2_3.ddb.out">tests/tutorespfn/Refs/trf2_3.ddb.out</a>, instead of the one that would result
 from the section 2. Copy this file to the present directory, then go to
 section section 3 of this tutorial. You might come back to section 2
 afterwards.</p>
@@ -3176,31 +3189,31 @@ a selected set of input variables, with also some input variables common to
 many of the different tasks. The list of tasks to be done in one run is
 governed by different flags. Here is the list of flags :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#dieflag">dieflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#elaflag">elaflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#elphflag">elphflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ifcflag">ifcflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#instrflag">instrflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#nlflag">nlflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#piezoflag">piezoflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#polflag">polflag</a> </li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#thmflag">thmflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#dieflag">dieflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#elaflag">elaflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#elphflag">elphflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcflag">ifcflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#instrflag">instrflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nlflag">nlflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#piezoflag">piezoflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#polflag">polflag</a> </li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#thmflag">thmflag</a> </li>
 </ul>
 <p>Please, take some time to read the description of each of these flags. Note
 that some of these flags might be required to allow to run another task.</p>
-<p>In this tutorial, we will focus on the flags <a class="wikilink codevar-link" href="../../variables/anaddb#ifcflag">ifcflag</a> and
-<a class="wikilink codevar-link" href="../../variables/anaddb#thmflag">thmflag</a>.</p>
+<p>In this tutorial, we will focus on the flags <a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcflag">ifcflag</a> and
+<a class="wikilink codevar-wikilink" href="../../variables/anaddb#thmflag">thmflag</a>.</p>
 <h2 id="4-the-computation-of-interatomic-force-constants">4 The computation of interatomic force constants<a class="headerlink" href="#4-the-computation-of-interatomic-force-constants" title="Permanent link">&para;</a></h2>
 <p>You can copy the files ~abinit/tests/tutorespfn/Input/trf2_4.in and
 ~abinit/tests/tutorespfn/Input/trf2_4.files to the Work_rf2 directory.<br />
-Edit the file trf2_4.in . Note that <a class="wikilink codevar-link" href="../../variables/anaddb#ifcflag">ifcflag</a> is activated. Related
+Edit the file trf2_4.in . Note that <a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcflag">ifcflag</a> is activated. Related
 input variables can be split in three groups.</p>
 <p>The first group of variables define the grid of q wavevectors :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#brav">brav</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ngqpt">ngqpt</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#nqshft">nqshft</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#q1shft">q1shft</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#brav">brav</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ngqpt">ngqpt</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nqshft">nqshft</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#q1shft">q1shft</a></li>
 </ul>
 <p>Unfortunately, the names of input variables and their meaning is not exactly
 the same as the names used to generate the k points in ABINIT. This is a
@@ -3210,18 +3223,18 @@ describes these input variables.</p>
 dynamical matrices and Born effective charges before proceeding with the
 analysis :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#asr">asr</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#chneut">chneut</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#asr">asr</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#chneut">chneut</a></li>
 </ul>
 <p>Please, read carefully the explanation for these input variables.</p>
 <p>Finally, a third group of variables is related specifically to the analysis of
 the Interatomic Force Constants :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#dipdip">dipdip</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ifcana">ifcana</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ifcout">ifcout</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#natifc">natifc</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#atifc">atifc</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#dipdip">dipdip</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcana">ifcana</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcout">ifcout</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#natifc">natifc</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#atifc">atifc</a></li>
 </ul>
 <p>Here also, spend some time to read the associated documentation.</p>
 <p>Now, you should issue :</p>
@@ -3248,7 +3261,7 @@ Try to find the following paragraph :</p>
 
 
 <p>The interatomic force constants are output for the nuclei specified by the
-input variable <a class="wikilink codevar-link" href="../../variables/anaddb#atifc">atifc</a>. Here, only atom 1 is considered. The IFCs
+input variable <a class="wikilink codevar-wikilink" href="../../variables/anaddb#atifc">atifc</a>. Here, only atom 1 is considered. The IFCs
 with respect to the other nuclei is given, by order of increasing distance.
 For each pair of nuclei involving atom 1, there is first the output of the
 IFCs in cartesian coordinates, as well as their decomposition into an Ewald
@@ -3260,18 +3273,18 @@ longitudinal and a transverse component.</p>
 <h2 id="5-the-efficient-computation-of-phonon-band-structures">5 The efficient computation of phonon band structures<a class="headerlink" href="#5-the-efficient-computation-of-phonon-band-structures" title="Permanent link">&para;</a></h2>
 <p>You can copy the files ~abinit/tests/tutorespfn/Input/trf2_5.in and
 ~abinit/tests/tutorespfn/Input/trf2_5.files to the Work_rf2 directory.<br />
-Edit the file trf2_5.in . Note that <a class="wikilink codevar-link" href="../../variables/anaddb#ifcflag">ifcflag</a> is again activated.
+Edit the file trf2_5.in . Note that <a class="wikilink codevar-wikilink" href="../../variables/anaddb#ifcflag">ifcflag</a> is again activated.
 Indeed, in order to compute a phonon band structure using the Fourier
 interpolation, the IFCs are required. This is why the two first groups of
 variables, needed to generate the IFCs are still defined. The third group of
-variables is now restricted to <a class="wikilink codevar-link" href="../../variables/anaddb#dipdip">dipdip</a> only.</p>
+variables is now restricted to <a class="wikilink codevar-wikilink" href="../../variables/anaddb#dipdip">dipdip</a> only.</p>
 <p>Then, come the input variables needed to define the list of q wavevectors in
 the band structure :</p>
-<p><a class="wikilink codevar-link" href="../../variables/anaddb#eivec">eivec</a>: flag to turn on the analysis of phonon eigenvectors</p>
-<p><a class="wikilink codevar-link" href="../../variables/anaddb#nph1l">nph1l</a> number of q-points for phonon interpolation</p>
-<p><a class="wikilink codevar-link" href="../../variables/anaddb#qph1l">qph1l</a> list of q-points for phonon interpolation</p>
-<p><a class="wikilink codevar-link" href="../../variables/anaddb#nph2l">nph2l</a> number of q-directions for LO-TO correction</p>
-<p><a class="wikilink codevar-link" href="../../variables/anaddb#qph2l">qph2l</a> list of q-directions for LO-TO correction</p>
+<p><a class="wikilink codevar-wikilink" href="../../variables/anaddb#eivec">eivec</a>: flag to turn on the analysis of phonon eigenvectors</p>
+<p><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nph1l">nph1l</a> number of q-points for phonon interpolation</p>
+<p><a class="wikilink codevar-wikilink" href="../../variables/anaddb#qph1l">qph1l</a> list of q-points for phonon interpolation</p>
+<p><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nph2l">nph2l</a> number of q-directions for LO-TO correction</p>
+<p><a class="wikilink codevar-wikilink" href="../../variables/anaddb#qph2l">qph2l</a> list of q-directions for LO-TO correction</p>
 <p>Now, you should issue :</p>
 <div class="codehilite"><pre><span></span>anaddb &lt; trf2_5.files &gt; trf2_5.log
 </pre></div>
@@ -3286,8 +3299,8 @@ needed for the Fourier interpolation), but not printed.</p>
 the frequencies, in a format suitable for graphical output, using the program
 band2eps (the latter should be more documented, and will not be described in
 the present tutorial).</p>
-<p>You can copy the files <a class="wikilink test-link" data-content="Input file for 'band2eps.' This data layout must be used,  line-by-line." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/tutorespfn/Input/trf2_6.in">tests/tutorespfn/Input/trf2_6.in</a> and
-<a class="wikilink test-link" href="../../tests/tutorespfn/Input/trf2_6.files">tests/tutorespfn/Input/trf2_6.files</a> to the Work_rf2 directory, then issue</p>
+<p>You can copy the files <a class="wikilink abifile-wikilink" data-content="Input file for 'band2eps.' This data layout must be used,  line-by-line." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/trf2_6.in">tests/tutorespfn/Input/trf2_6.in</a> and
+<a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/trf2_6.files">tests/tutorespfn/Input/trf2_6.files</a> to the Work_rf2 directory, then issue</p>
 <div class="codehilite"><pre><span></span>band2eps &lt; trf2_6.files &gt; trf2_6.log
 </pre></div>
 
@@ -3341,16 +3354,16 @@ have a look at them.<br />
 The same DDB as for trf2_4 and trf2_5 is used, namely trf2_3.ddb.out. The
 following additional input variables are present :</p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#thmflag">thmflag</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ng2qpt">ng2qpt</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ngrids">ngrids</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#q2shft">q2shft</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#nchan">nchan</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#nwchan">nwchan</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#thmtol">thmtol</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#ntemper">ntemper</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#temperinc">temperinc</a></li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#tempermin">tempermin</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#thmflag">thmflag</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ng2qpt">ng2qpt</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ngrids">ngrids</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#q2shft">q2shft</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nchan">nchan</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nwchan">nwchan</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#thmtol">thmtol</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ntemper">ntemper</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#temperinc">temperinc</a></li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#tempermin">tempermin</a></li>
 </ul>
 <p>Examine the input file, the input variables, then run anaddb (as usual &hellip;).
 Then, edit the output file. You should be able to find the crucial section :</p>

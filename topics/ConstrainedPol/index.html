@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -2939,29 +2952,29 @@ Change the input yaml files or the python code
 <p>Compute polarization in cartesian coordinates, and update lattice constants
 and atomic positions in order to perform a structural optimization at
 constrained polarization, following the formalism described in Na Sai et al,
-PRB 66, 104108 (2002). More details in <a class="wikilink codevar-link" href="../../variables/anaddb#polflag">polflag</a>. The geometry
+PRB 66, 104108 (2002). More details in <a class="wikilink codevar-wikilink" href="../../variables/anaddb#polflag">polflag</a>. The geometry
 optimization is done in ANADDB.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#polflag">polflag</a>  POLarization FLAG</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#polflag">polflag</a>  POLarization FLAG</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#iatfix">iatfix</a>  Indices of the AToms that are FIXed</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#istrfix">istrfix</a>  Index of STRain FIXed</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#natfix">natfix</a>  Number of AToms FIXed</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#nstrfix">nstrfix</a>  Number of STRain components FIXed</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#relaxat">relaxat</a>  RELAXation of AToms</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#relaxstr">relaxstr</a>  RELAXation of STRain</li>
-<li><a class="wikilink codevar-link" href="../../variables/anaddb#targetpol">targetpol</a>  TARGET POLarization</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#iatfix">iatfix</a>  Indices of the AToms that are FIXed</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#istrfix">istrfix</a>  Index of STRain FIXed</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#natfix">natfix</a>  Number of AToms FIXed</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nstrfix">nstrfix</a>  Number of STRain components FIXed</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#relaxat">relaxat</a>  RELAXation of AToms</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#relaxstr">relaxstr</a>  RELAXation of STRain</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#targetpol">targetpol</a>  TARGET POLarization</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink test-link" data-content="Tetragonal PbTiO3. Use ANADDB to impose a polarization with fixed in-plane lattice constant" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t71.in">tests/v4/Input/t71.in</a></li>
-<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. Use ANADDB to compute the polarization of the previous two tests in cartesian coordinates." data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t74.in">tests/v4/Input/t74.in</a></li>
-<li><a class="wikilink test-link" data-content="AlAs,  zinc-blende structure. (Test of Na Sai's technique) To impose a polarization on AlAs: compute new values of the cell parameters and atomic positions. (in practical calculations,  these operations must be repeated until convergence is reached)" data-placement="auto right" data-toggle="popover" data-trigger="hover" href="../../tests/v4/Input/t77.in">tests/v4/Input/t77.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Tetragonal PbTiO3. Use ANADDB to impose a polarization with fixed in-plane lattice constant" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t71.in">tests/v4/Input/t71.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Use ANADDB to compute the polarization of the previous two tests in cartesian coordinates." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t74.in">tests/v4/Input/t74.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. (Test of Na Sai's technique) To impose a polarization on AlAs: compute new values of the cell parameters and atomic positions. (in practical calculations,  these operations must be repeated until convergence is reached)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t77.in">tests/v4/Input/t77.in</a></li>
 </ul>
                 
                   

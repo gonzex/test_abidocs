@@ -123,6 +123,19 @@
 
     <!-- Load Ubuntu fonts used for input variables -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- 
+    https://github.com/daneden/animate.css
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    -->
+
+    <!-- 
+    https://github.com/IanLunn/Hover
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
+    -->
+
 
 
     
@@ -3061,15 +3074,15 @@ system. You have first to optimize properly these initial and final
 configurations, using for instance the Broyden algorithm implemented in
 ABINIT.  </p>
 <p>Open the tstring_01.in file and look at it carefully. The unit cell is defined
-at the end. Note that the keywords <a class="wikilink codevar-link" href="../../variables/rlx#natfix">natfix</a> and <a class="wikilink codevar-link" href="../../variables/rlx#iatfix">iatfix</a> are used to keep
+at the end. Note that the keywords <a class="wikilink codevar-wikilink" href="../../variables/rlx#natfix">natfix</a> and <a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfix">iatfix</a> are used to keep
 fixed the positions of the O and N atoms. The cell is tetragonal and its size
 is larger along x so that the periodic images of the system are separated by
-4.0 Ä of vacuum in the three directions. The keyword <a class="wikilink codevar-link" href="../../variables/gstate#charge">charge</a> is used to
+4.0 Ä of vacuum in the three directions. The keyword <a class="wikilink codevar-wikilink" href="../../variables/gstate#charge">charge</a> is used to
 remove an electron of the system and thus obtain a protonated molecule
 (neutrality is recovered by adding a uniform compensating charge background).  </p>
 <p>The exchange-correlation functional uses the external library libxc. You have
 to compile ABINIT using the libxc plugin (if not, simply replace
-<a class="wikilink codevar-link" href="../../variables/basic#ixc">ixc</a>=-001009 by <a class="wikilink codevar-link" href="../../variables/basic#ixc">ixc</a> 7). This input file has to be run in parallel using
+<a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=-001009 by <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a> 7). This input file has to be run in parallel using
 20 CPU cores. You might use the tstring.files file. Edit it and adapt it with
 the appropriate file names.  </p>
 <p>Then run the calculation in parallel over 20 CPU cores, first for the initial
@@ -3097,24 +3110,24 @@ should obtain the following positions:  </p>
 <p>Once you have properly optimized the initial and final states of the process,
 you can turn to the computation of the MEP. Let us first have a look at the
 related keywords.  </p>
-<p>1) <a class="wikilink codevar-link" href="../../variables/rlx#imgmov">imgmov</a>: selects an algorithm using replicas of the unit cell. For the
+<p>1) <a class="wikilink codevar-wikilink" href="../../variables/rlx#imgmov">imgmov</a>: selects an algorithm using replicas of the unit cell. For the
 string method, choose 2.<br />
-2) <a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a>: gives the number of replicas of the unit cell including the
+2) <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>: gives the number of replicas of the unit cell including the
 initial and final ones.<br />
-3) <a class="wikilink codevar-link" href="../../variables/rlx#dynimage">dynimage</a>(<a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a>): arrays of flags specifying if the image evolves
+3) <a class="wikilink codevar-wikilink" href="../../variables/rlx#dynimage">dynimage</a>(<a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>): arrays of flags specifying if the image evolves
 or not (0: does not evolve; 1: evolves).<br />
-4) <a class="wikilink codevar-link" href="../../variables/rlx#ntimimage">ntimimage</a>: gives the maximum number of iterations (for the relaxation
+4) <a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>: gives the maximum number of iterations (for the relaxation
 of the string).<br />
-5) <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>: convergence criterion (in Hartree) on the total energy
-(averaged over the <a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a> images).<br />
-6) <a class="wikilink codevar-link" href="../../variables/rlx#fxcartfactor">fxcartfactor</a>: &ldquo;time step&rdquo; (in Bohr^2/Hartree) for the evolution step of
+5) <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>: convergence criterion (in Hartree) on the total energy
+(averaged over the <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a> images).<br />
+6) <a class="wikilink codevar-wikilink" href="../../variables/rlx#fxcartfactor">fxcartfactor</a>: &ldquo;time step&rdquo; (in Bohr^2/Hartree) for the evolution step of
 the string method. For the time being (ABINITv6.10), only steepest-descent
 algorithm is implemented.<br />
-7) <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a>: gives the number of processors among which the work load over
+7) <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>: gives the number of processors among which the work load over
 the image level is shared. Only dynamical images are considered (images for
-which <a class="wikilink codevar-link" href="../../variables/rlx#dynimage">dynimage</a> is 1). This input variable can be automatically set by
+which <a class="wikilink codevar-wikilink" href="../../variables/rlx#dynimage">dynimage</a> is 1). This input variable can be automatically set by
 ABINIT if the number of processors is large enough.<br />
-8) <a class="wikilink codevar-link" href="../../variables/files#prtvolimg">prtvolimg</a>: governs the printing volume in the output file (0: full
+8) <a class="wikilink codevar-wikilink" href="../../variables/files#prtvolimg">prtvolimg</a>: governs the printing volume in the output file (0: full
 output; 1: intermediate; 2: minimum output).</p>
 <h2 id="4-computation-of-the-mep-without-parallelism-over-images">4 Computation of the MEP without parallelism over images<a class="headerlink" href="#4-computation-of-the-mep-without-parallelism-over-images" title="Permanent link">&para;</a></h2>
 <p>You can now start with the string method.</p>
@@ -3122,25 +3135,25 @@ output; 1: intermediate; 2: minimum output).</p>
 thus only perform one step of string method.</p>
 <p>Open the tstring_03.in file and look at it. The initial and final
 configurations are specified at the end through the keywords [[xangst] and
-<a class="wikilink codevar-link" href="../../variables/rlx#nimage">xangst_lastimg</a>. By default, ABINIT generates the intermediate
+<a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">xangst_lastimg</a>. By default, ABINIT generates the intermediate
 images by a linear interpolation between these two configurations. In this
 first calculation, we will sample the MEP with 12 points (2 are fixed and
-correspond to the initial and final states, 10 are evolving). <a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a> is
-thus set to 12. The keyword <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a> is set to 1 (no parallelism over
-images) and <a class="wikilink codevar-link" href="../../variables/rlx#ntimimage">ntimimage</a> is set to 1 (only one time step).</p>
+correspond to the initial and final states, 10 are evolving). <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a> is
+thus set to 12. The keyword <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a> is set to 1 (no parallelism over
+images) and <a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a> is set to 1 (only one time step).</p>
 <p>You might use the tstring.files file. Edit it and adapt it with the
 appropriate file names. Since the parallelism over the images is not used,
 this calculation has to be run over 20 CPU cores.</p>
 <h2 id="5-computation-of-the-mep-using-parallelism-over-images">5 Computation of the MEP using parallelism over images<a class="headerlink" href="#5-computation-of-the-mep-using-parallelism-over-images" title="Permanent link">&para;</a></h2>
 <p>Now you can perform the complete computation of the MEP using the parallelism
 over the images.  </p>
-<p>Open the tstring_04.in file. The keyword <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a> has been set to 10, and
-<a class="wikilink codevar-link" href="../../variables/rlx#ntimimage">ntimimage</a> has been increased to 50.  </p>
+<p>Open the tstring_04.in file. The keyword <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a> has been set to 10, and
+<a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a> has been increased to 50.  </p>
 <p>This calculation has thus to be run over 200 CPU cores. Note that the output
 file is very big, so that no reference file is provided in the ABINIT package.  </p>
-<p>The convergence of the string method algorithm is controlled by <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>,
+<p>The convergence of the string method algorithm is controlled by <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>,
 which has been set to 0.0001 Ha. In order to obtain a more lisible output
-file, you can decrease the printing volume and set <a class="wikilink codevar-link" href="../../variables/files#prtvolimg">prtvolimg</a> to 2. Here
+file, you can decrease the printing volume and set <a class="wikilink codevar-wikilink" href="../../variables/files#prtvolimg">prtvolimg</a> to 2. Here
 again, you might use the tstring.files. Edit it and adapt it with the
 appropriate file names. Then run ABINIT over 200 CPU cores.  </p>
 <p>When the calculation is completed, ABINIT provides you with 12 configurations
@@ -3168,20 +3181,20 @@ fcart_1img, fcart_2img, &hellip;, fcart_12img.  </p>
 <p>Total energy as a function of OH distance for the path computed with 12 images
 and tolimg=0.0001 (which is very close to the x coordinate of the proton:
 first coordinate of xangst for the 8<sup>th</sup> atom in the output file).  </p>
-<p>The keyword <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a> can be automatically set by ABINIT. It takes the
+<p>The keyword <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a> can be automatically set by ABINIT. It takes the
 requested total number of CPU cores divided by the number of dynamical images.
 The remaining cores are, if possible, distributed over k, band and FFT.  </p>
 <p>Let us test this functionnality. Edit again the tstring_04.in file and comment
-the <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a> line. Then run the calculation again over a number of cores of
+the <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a> line. Then run the calculation again over a number of cores of
 your choice (less than 200). If the code stops with an error message
 indicating that the number of kpt, band and FFT processors is not correct,
-adapt the value of <a class="wikilink codevar-link" href="../../variables/paral#npband">npband</a> and <a class="wikilink codevar-link" href="../../variables/paral#npfft">npfft</a>.  </p>
-<p>Open the output file and look at the <a class="wikilink codevar-link" href="../../variables/paral#npimage">npimage</a> value &hellip;</p>
+adapt the value of <a class="wikilink codevar-wikilink" href="../../variables/paral#npband">npband</a> and <a class="wikilink codevar-wikilink" href="../../variables/paral#npfft">npfft</a>.  </p>
+<p>Open the output file and look at the <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a> value &hellip;</p>
 <h2 id="6-converging-the-mep">6 Converging the MEP<a class="headerlink" href="#6-converging-the-mep" title="Permanent link">&para;</a></h2>
 <p>Like all physical quantities, the MEP has to be converged with respect to some
 numerical parameters. The two most important are the number of points along
-the path (<a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a>) and the convergence criterion (<a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>).  </p>
-<p>1) <a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a><br />
+the path (<a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>) and the convergence criterion (<a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>).  </p>
+<p>1) <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a><br />
 Increase the number of images to 22 (2 fixed + 20 evolving) and recompute the
 MEP. The graph below superimposes the previous MEP (black curve, calculated
 with 12 images) and the new one obtained by using 22 images (red curve). You
@@ -3197,17 +3210,17 @@ images obtained at the end of this calculation, from (i) to (f) and then from
 <p><a href="../../documents/lesson_paral_images/stringvideo.gif"><img alt="image" src="../../documents/lesson_paral_images/start.gif" /></a>  </p>
 <p>Click on the above image to visualize the animation (that should open in
 another window).  </p>
-<p>2) <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a><br />
-Come back to <a class="wikilink codevar-link" href="../../variables/rlx#nimage">nimage</a>=12. First you can increase <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a> to 0.001 and
+<p>2) <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a><br />
+Come back to <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>=12. First you can increase <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a> to 0.001 and
 recompute the MEP. This will be much faster than in the previous case.  </p>
-<p>Then you should decrease <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a> to 0.00001 and recompute the MEP. To gain
+<p>Then you should decrease <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a> to 0.00001 and recompute the MEP. To gain
 CPU time, you can start your calculation by using the 12 images obtained at
-the end of the calculation that used <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>=0.0001. In your input file,
-these starting images will be specified by the keywords <a class="wikilink codevar-link" href="../../variables/basic#xangst">xangst</a>,
-<a class="wikilink codevar-link" href="../../variables/rlx#nimage">xangst_2img</a>, <a class="wikilink codevar-link" href="../../variables/rlx#nimage">xangst_3img</a> &hellip; <a class="wikilink codevar-link" href="../../variables/rlx#nimage">xangst_12img</a>.
+the end of the calculation that used <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>=0.0001. In your input file,
+these starting images will be specified by the keywords <a class="wikilink codevar-wikilink" href="../../variables/basic#xangst">xangst</a>,
+<a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">xangst_2img</a>, <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">xangst_3img</a> &hellip; <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">xangst_12img</a>.
 You can copy them directly from the output file obtained at the previous
 section. The graph below superimposes the path obtained with 12 images and
-<a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>=0.001 (red curve) and the one with 12 images and <a class="wikilink codevar-link" href="../../variables/rlx#tolimg">tolimg</a>=0.0001
+<a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>=0.001 (red curve) and the one with 12 images and <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>=0.0001
 (black curve).  </p>
 <p><img alt="image" src="../../documents/lesson_paral_images/curve3.png" />  </p>
 <p>Total energy as a function of OH distance for the path computed with 12 images
