@@ -3059,8 +3059,8 @@ the following papers: <a class="wikilink citation-wikilink" data-content="Temper
 <p>The reference input files for this lesson are located in
 ~abinit/tests/tutorespfn/Input and the corresponding reference output files
 are in ~abinit/tests/tutorespfn/Refs. The prefix is &ldquo;tdepes&rdquo;. First, run the
-calculation using the <a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_1.in">tests/tutorespfn/Input/tdepes_1.in</a> input file. You
-can use the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_1.files">tests/tutorespfn/Input/tdepes_1.files</a> for abinit
+calculation using the <a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_1.in" target="_blank">tests/tutorespfn/Input/tdepes_1.in</a> input file. You
+can use the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_1.files" target="_blank">tests/tutorespfn/Input/tdepes_1.files</a> for abinit
 (will always be the same, just change the last digit for the other
 calculations):</p>
 <h4 id="if-abinit-is-compiled-with-netcdf"><strong>If Abinit is compiled with Netcdf</strong><a class="headerlink" href="#if-abinit-is-compiled-with-netcdf" title="Permanent link">&para;</a></h4>
@@ -3119,8 +3119,8 @@ in semiconductors.</p>
 <p>In this case, we should first use mrgddb to merge the _DDB and _EIGR2D/_EIGI2D
 but since we only have one q-point we do not have to do it. The static
 temperature dependence as well as the G2F can be computed thanks to anaddb
-with the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_2.files">tests/tutorespfn/Input/tdepes_2.files</a> and the input
-file <a class="wikilink abifile-wikilink" data-content="Input file for the anaddb code. Analysis of the C DDB" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_2.in">tests/tutorespfn/Input/tdepes_2.in</a> The run will generate 3 files:</p>
+with the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_2.files" target="_blank">tests/tutorespfn/Input/tdepes_2.files</a> and the input
+file <a class="wikilink abifile-wikilink" data-content="Input file for the anaddb code. Analysis of the C DDB" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_2.in" target="_blank">tests/tutorespfn/Input/tdepes_2.in</a> The run will generate 3 files:</p>
 <ul>
 <li>
 <p><strong>tdepes_2.out_ep_G2F</strong>: This g2F spectral function represents the contribution of the phononic modes of energy E to the change of electronic eigenenergies according to the equation<br />
@@ -3146,7 +3146,7 @@ slowly but in a consistent manner. Since this methods is a little bit less
 user friendly we will focus on the homogenous integration. The first thing we
 need to do is to determine the number of q-point in the IBZ for a given
 q-point grid. We choose here a 4x4x4 q -point grid. Use the input file
-<a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_3.in">tests/tutorespfn/Input/tdepes_3.in</a>. Launch this job, and kill it after a
+<a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_3.in" target="_blank">tests/tutorespfn/Input/tdepes_3.in</a>. Launch this job, and kill it after a
 few seconds. Then look into the log file to find the following line after the
 list of q-points:</p>
 <div class="codehilite"><pre><span></span><span class="n">symkpt</span> <span class="o">:</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">k</span><span class="o">-</span><span class="n">points</span><span class="o">,</span> <span class="n">thanks</span> <span class="n">to</span> <span class="n">the</span> <span class="n">symmetries</span><span class="o">,</span>
@@ -3168,7 +3168,7 @@ python script</p>
 </pre></div>
 
 
-<p>with the file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_3.files">tests/tutorespfn/Input/tdepes_3.files</a>. The plotting of the
+<p>with the file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_3.files" target="_blank">tests/tutorespfn/Input/tdepes_3.files</a>. The plotting of the
 same HOMO band at k=Γ for a 4x4x4 q-point grid gives a very different result
 than previously (this graph has been obtained with <a class="wikilink codevar-wikilink" href="../../variables/basic#ecut">ecut</a> = 10).<br />
 <img alt="" src="../../documents/lesson_tdepes/plot3.png" /></p>
@@ -3187,11 +3187,11 @@ Different datasets are required to compute the following quantites:</p>
 <li>Ψ(0)kBS+q, the ground-state wavefunctions obtained from reading the perturbed density of the previous dataset. </li>
 <li>Reading the previous quantity we obtain the el-ph matrix elements along the BS with all physical quantities integrated over a homogeneous grid. </li>
 </ol>
-<p>Run the calculation using the <a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_4.in">tests/tutorespfn/Input/tdepes_4.in</a> input
-file, then the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_4.files">tests/tutorespfn/Input/tdepes_4.files</a> for the
+<p>Run the calculation using the <a class="wikilink abifile-wikilink" data-content="Temperature dependence calculation of diamond." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorespfn/Input/tdepes_4.in" target="_blank">tests/tutorespfn/Input/tdepes_4.in</a> input
+file, then the files file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_4.files" target="_blank">tests/tutorespfn/Input/tdepes_4.files</a> for the
 python script. Of course, the high symmetry points that we computed in section
 2 have the same value here. It is a good idea to check it by running the
-script with the file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_3bis.files">tests/tutorespfn/Input/tdepes_3bis.files</a>.</p>
+script with the file <a class="wikilink abifile-wikilink" href="../../tests/tutorespfn/Input/tdepes_3bis.files" target="_blank">tests/tutorespfn/Input/tdepes_3bis.files</a>.</p>
 <p>You can then copy the plotting script (Plot-EP-BS) python file from
 ~abinit/scripts/post_processing/plot_bs.py into the directory where you did
 the Abinit calculations.<br />

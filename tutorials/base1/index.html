@@ -3057,7 +3057,7 @@ tbase1_1.in<br />
 tbase1_1.out<br />
 Later, you will again modify these lines, to treat more cases. Make sure that
 the last line, gives the correct location of the pseudopotential. Close the
-tbase1_x.files file. Then, copy the file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_1.in">tests/tutorial/Input/tbase1_1.in</a>
+tbase1_x.files file. Then, copy the file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_1.in" target="_blank">tests/tutorial/Input/tbase1_1.in</a>
 in &ldquo;Work&rdquo;:  </p>
 <ul>
 <li>_ cp ../tbase1_1.in . _</li>
@@ -3095,7 +3095,7 @@ directory.</p>
 <p>(if you declared the path, you will not find &lsquo;abinit&rsquo; in the list). Different
 output files have been created, including a &ldquo;log&rdquo; file and the output file
 &ldquo;tbase1_1.out&rdquo;. To check that everything is correct, you can make a diff of
-tbase1_1.out with a reference file <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_1.out">tests/tutorial/Refs/tbase1_1.out</a>
+tbase1_1.out with a reference file <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_1.out" target="_blank">tests/tutorial/Refs/tbase1_1.out</a>
 contained in the ~abinit/tests/tutorial/Refs directory:</p>
 <ul>
 <li><em>diff tbase1_1.out ../../Refs/tbase1_1.out | more</em></li>
@@ -3195,7 +3195,7 @@ at the input variables of tbase1_1.in:</p>
 <p>Have also a look at <a class="wikilink codevar-wikilink" href="../../variables/basic#kpt">kpt</a> and <a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a>.</p>
 <p>It is now time to have a look at the two output files of the run.</p>
 <p><strong>1.1.h</strong> First, open the &ldquo;log&rdquo; file. You can begin to read it. It is nasty. Jump to its end. You will find there the number of WARNINGS and COMMENTS that were issued by the code during execution. You might try to find them in the file (localize the keywords &ldquo;WARNING&rdquo; or &ldquo;COMMENT&rdquo; in this file). Some of them are for the experienced user. For the present time, we will ignore them. You can find more information about messages in the log file in the <a href="../../../users/generated_files/help_abinit.html#logfile">section 6.1</a> of the abinit_help file.</p>
-<p><strong>1.1.i</strong> Then, open the <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_1.out">tests/tutorial/Refs/tbase1_1.out</a> file. You find some general information about the output file in <a href="../../../users/generated_files/help_abinit.html#outputfile"> section 6.2</a> of the abinit_help file. You should also: </p>
+<p><strong>1.1.i</strong> Then, open the <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_1.out" target="_blank">tests/tutorial/Refs/tbase1_1.out</a> file. You find some general information about the output file in <a href="../../../users/generated_files/help_abinit.html#outputfile"> section 6.2</a> of the abinit_help file. You should also: </p>
 <ul>
 <li>examine the header of &ldquo;tbase1_1.out&rdquo; </li>
 <li>examine the report on memory needs (do not read each value of parameters) </li>
@@ -3289,8 +3289,8 @@ file.</p>
 -1</strong></em></p>
 <p>Also, define explicitly the number of states (or supercell &ldquo;bands&rdquo;) to be one,
 using the input variable <a class="wikilink codevar-wikilink" href="../../variables/basic#nband">nband</a>. The input file
-<a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_2.in">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
-job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_2.out">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.
+<a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_2.in" target="_blank">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
+job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_2.out" target="_blank">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.
 If you decide to use the ~abinit/tests/tutorial/Input/tbase1_2.in file, do not
 forget to change the file names in the &ldquo;tbase1_x.files&rdquo; file &hellip;</p>
 <p>So, you run the code with your input file (this might take fifteen seconds or
@@ -3361,8 +3361,8 @@ sufficiently converged. Indeed, the value used for <a class="wikilink codevar-wi
 might be sufficient for total energy calculations, but definitely not for the
 accurate computation of other properties. So, change <a class="wikilink codevar-wikilink" href="../../variables/basic#toldfe">toldfe</a> in <a class="wikilink codevar-wikilink" href="../../variables/basic#toldff">toldff</a>,
 and set the latter input variable to ten times smaller than <a class="wikilink codevar-wikilink" href="../../variables/rlx#tolmxf">tolmxf</a>. The
-input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file will optimize automatically the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_3.in">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
-will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_3.out">tests/tutorial/Refs/tbase1_3.out</a> is an example of
+input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file will optimize automatically the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_3.in" target="_blank">tests/tutorial/Input/tbase1_3.in</a> is an example of file that
+will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_3.out" target="_blank">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. If you decide to use these files, do not forget to change the
 file names in the &ldquo;tbase1_x.files&rdquo; file &hellip; So, you run the code with your
 input file (a few seconds), examine quietly this file (which is much smaller
@@ -3391,7 +3391,7 @@ same computation is done on different platforms.</p>
 <p>The charge density has already been computed, for all geometries, in the
 above-mentioned runs. Here, we will print this quantity.</p>
 <p><strong>1.4.a</strong> We start from the optimized interatomic distance 1.522 Bohr, and make a run at fixed geometry. The input variable <a class="wikilink codevar-wikilink" href="../../variables/files#prtden">prtden</a> must be set to 1. To understand correctly the content of the <a class="wikilink codevar-wikilink" href="../../variables/files#prtden">prtden</a> description, it is worth to read a much more detailed description of the &ldquo;files&rdquo; file, in <a href="../../../users/generated_files/help_abinit.html#4">section 4 </a> of the abinit_help file. </p>
-<p><strong>1.4.b</strong> The input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_4.in">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
+<p><strong>1.4.b</strong> The input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box Print the charge density that corresponds to optimized interatomic distance." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_4.in" target="_blank">tests/tutorial/Input/tbase1_4.in</a> is an example of input file for a run that will print a density. If you decide to use this file, do not forget to change the file names in tbase1_x.files. The run will take a few seconds. </p>
 <p>The density will be output in the <strong>tbase1_xo_DEN</strong> file. Try to edit it &hellip;
 No luck ! This file is unformatted, not written using the ASCII code. Even if
 you cannot read it, its description is provided in the abinit_help. It
@@ -3437,8 +3437,8 @@ Finally, in order to make numerical errors cancel, it is important to compute
 the above-mentioned difference in the same box, for the same cut-off, and even
 for a location in the box that is similar to the molecule case (although the
 latter might not be so important).</p>
-<p>The input file <a class="wikilink abifile-wikilink" data-content="H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_5.in">tests/tutorial/Input/tbase1_5.in</a> is an example of file that
-will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_5.out">tests/tutorial/Refs/tbase1_5.out</a> is an example of
+<p>The input file <a class="wikilink abifile-wikilink" data-content="H atom in a big box Same file as t11.in,  except that natom,  typat,  and xcart were changed, and that the input variables nband,  nsppol,  occ and occopt are used." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_5.in" target="_blank">tests/tutorial/Input/tbase1_5.in</a> is an example of file that
+will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_5.out" target="_blank">tests/tutorial/Refs/tbase1_5.out</a> is an example of
 output file. If you decide to use the tbase1_5.in file, do not forget to
 change the file names in the tbase1_x.files file. The run lasts a few seconds.</p>
 <p>You should read the output file, and note the tiny differences related with

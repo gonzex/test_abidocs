@@ -2750,8 +2750,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#website-organization" title="Website organization" class="md-nav__link">
-    Website organization
+  <a href="#writing-docs" title="Writing docs" class="md-nav__link">
+    Writing docs
   </a>
   
     <nav class="md-nav">
@@ -2766,6 +2766,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-guide-lines" title="Documentation Guide lines" class="md-nav__link">
+    Documentation Guide lines
+  </a>
   
 </li>
       
@@ -2822,6 +2829,13 @@
           <li class="md-nav__item">
   <a href="#topics-and-tribes" title="Topics and tribes" class="md-nav__link">
     Topics and tribes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
   </a>
   
 </li>
@@ -3034,8 +3048,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#website-organization" title="Website organization" class="md-nav__link">
-    Website organization
+  <a href="#writing-docs" title="Writing docs" class="md-nav__link">
+    Writing docs
   </a>
   
     <nav class="md-nav">
@@ -3050,6 +3064,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-guide-lines" title="Documentation Guide lines" class="md-nav__link">
+    Documentation Guide lines
+  </a>
   
 </li>
       
@@ -3106,6 +3127,13 @@
           <li class="md-nav__item">
   <a href="#topics-and-tribes" title="Topics and tribes" class="md-nav__link">
     Topics and tribes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-notes" title="Release Notes" class="md-nav__link">
+    Release Notes
   </a>
   
 </li>
@@ -3188,56 +3216,62 @@
                 
                   <h1>Abimkdocs</h1>
                 
-                <p>This page describes the details of the documentation system of Abinit 
-and how to contribute to it. 
-A <em>Proof of concept</em> website available at <a href="https://gmatteo.github.io/test_abidocs">https://gmatteo.github.io/test_abidocs</a>.</p>
+                <p>This page describes the details of the documentation system of Abinit and how to contribute to it. 
+A <em>Proof of concept</em> website is available at <a href="https://gmatteo.github.io/test_abidocs">https://gmatteo.github.io/test_abidocs</a>.</p>
 <p>Most of the documentation is written in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>
 a lightweight markup language with plain text 
 <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">formatting syntax</a>.
-The documentation includes the User Guide, the Abinit lessons, the topics 
-as well as the pages with the input variables and the bibliographic references that are generated automatically 
-in python from the information reported in <code class="codehilite">abinit_vars.yml</code> and the bibtex entries given in the <code class="codehilite">abiref.bib</code> file.</p>
+The documentation includes the User Guide, the Abinit lessons, the topics, the release notes
+as well as the pages with the <a href="../../variables/">input variables</a> and the <a href="../../theory/bibliography/">bibliographic references</a>
+that are generated <em>automatically</em> in python from the information reported in <code class="codehilite">abinit_vars.yml</code> and the bibtex 
+entries given in the <code class="codehilite">abiref.bib</code> file.</p>
 <p>The website is automatically generated with <a href="http://www.mkdocs.org/">MkDocs</a>
 a static site generator geared towards project documentation.
 MkDocs employs <a href="https://pythonhosted.org/Markdown">Python-Markdown</a> to parse the Markdown documentation
-and use a single YAML configuration file (<code class="codehilite">mkdocs.yml</code>) describing the organization of the pages on the website.
-Navigation bars, header and footer are generated automatically by the framework
-using the <a href="http://jinja.pocoo.org/">jinja template engine</a>.</p>
+and use a single <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> configuration file (<code class="codehilite">mkdocs.yml</code>) 
+defining the organization of the pages on the website.
+Navigation bars, header and footer are generated <em>automatically</em> by the framework
+using the <a href="http://jinja.pocoo.org/">jinja template engine</a>.
+Previous versions of the documentation can be consulted using the drop down menu 
+at the top-right corner. (<mark>not yet operational</mark>)</p>
 <p>MkDocs includes a couple built-in themes as well as various third party themes,
 all of which can easily be customized with extra CSS or JavaScript or overridden from the theme directory. 
-The Abinit website uses <a href="http://squidfunk.github.io/mkdocs-material/">Material</a>, a theme
+The Abinit website uses <a href="http://squidfunk.github.io/mkdocs-material/">Mkdocs-Material</a>, a theme
 built using Google&rsquo;s <a href="https://www.google.com/design/spec/material-design">Material Design</a> guidelines.
 We also use <a href="http://fontawesome.io/">fontawesome icons</a> and
 <a href="http://getbootstrap.com/">Bootstrap</a> a popular HTML, CSS, and Javascript framework 
-for developing responsive, mobile first projects on the web (shrink the browser window to see the effect).
+for developing responsive, mobile first projects on the web 
+(shrink the browser window to see how the menu and the navigation bars react).
 Note that the majority of the Abinit developers do not need to know how to use these technologies
-since they will usually interact with markdown files (plain text files that can be easily modified in the editor).</p>
+since they will mainly interact with markdown files (plain text files that can be easily modified in the editor)
+while Mkdocs will handle the HTML/CSS/Javascript part.</p>
 <p>In addition to the basic markdown syntax, the Abinit documentation supports extensions and shortcuts
-to ease the writing of hyperlinks and the inclusion of bibliographic citations stored in bibtex format
-in the <code class="codehilite">abiref.bib</code> file.
+to ease the writing of hyperlinks and the inclusion of bibliographic citations.
 A detailed description of <em>our markdown dialect</em> is given in <a href="../markdown">our markdown page</a>.
 Also <a href="https://www.mathjax.org/">MathJax</a> for equations in LaTeX is activated, 
-and the (few) specificities of its usage in the ABINIT docs are explained <a href="../markdown#MathJax">here</a>.</p>
-<p>As a net result, Abinit developers can write nice-looking documentation without having to use 
+and the (few) specificities of its usage in the Abinit docs are explained <a href="../markdown/#MathJax">in this section</a>.</p>
+<p>As a net result, Abinit developers can write nice-looking documentation and release notes without having to use 
 HTML explicitly while working in an environment that is well-integrated with the Abinit ecosystem 
 (the yaml database of input variables, the test suite, bibtex citations).
 Adding new content is straightforward: write a new page in Markdown, add the new entry to <code class="codehilite">mkdocs.yml</code> 
 and finally regenerate the website with MkDocs.</p>
 <h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>Install the python packages required to build the website with:</p>
-<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> ~abinit/docs
-$ pip install -r requirements.txt
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> ~abinit/docs
+pip install -r requirements.txt
 </pre></div>
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Python 3.6 is strongly recommended although the code works with python2.7 as well.</p>
+<p>Python 3.6 is strongly recommended although the code works with python2.7 as well.
+The entire documentation supports Unicode so feel free to use unicode symbols in the docs.</p>
 </div>
 <p>MkDocs comes with a built-in dev-server that lets you preview your documentation as you work on it. 
 Make sure you are in <code class="codehilite">~abinit/docs</code>, and then start <em>our customized</em> server 
-by running the <code class="codehilite">mksite.py</code> serve command:</p>
-<div class="codehilite"><pre><span></span>$ <span class="nb">cd</span> ~abinit/docs
-$ ./mksite.py serve
+by running the <code class="codehilite">mksite.py serve</code> command:</p>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> ~abinit/docs
+./mksite.py serve
+
 Regenerating database...
 Saving database to /Users/gmatteo/git_repos/abidocs/doc/tests/test_suite.cpkl
 Initial website generation completed in <span class="m">9</span>.17 <span class="o">[</span>s<span class="o">]</span>
@@ -3254,16 +3288,18 @@ INFO    -  Cleaning site directory
 <p>Open up <code class="codehilite">http://127.0.0.1:8000/</code> in your browser, and you&rsquo;ll see the default home page being displayed.
 Note that the generation of the website takes 1-2 minutes but this is a price that must be paid only once.
 The web server, indeed, reloads automatically the source files that are modified by the user
-so that one can easily change the markdown documentation and inspect the changes in the corresponding HTML files.</p>
+so that one can easily change the documentation and inspect the changes in the corresponding HTML files.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Use <code class="codehilite">mksite.py serve --dirtyreload</code> to enable the live reloading in the development server, 
 but only re-build files that have changed. 
 This option is designed for site development purposes and is <strong>much faster</strong> than the default live reloading.</p>
 </div>
-<p>Note that the HTML files are produced in a temporary directory, thus they are <strong>not</strong> under revision control.
+<p>Note that the HTML files are produced in a temporary directory, thus they <strong>are not under revision control</strong>.
 The real source is represented by the <code class="codehilite"><span class="na">.md</span></code> files and the other <code class="codehilite"><span class="na">.yml</span></code> files, these are the files that can be 
-changed by the developers and are therefore under revision control).</p>
+changed by the developers and are therefore under revision control).
+The Markdown pages generated by <code class="codehilite">mksite.py</code> are automatically listed in <code class="codehilite">~abinit/doc/.gitignore</code> 
+and are thus ignored by git.</p>
 <p>The <code class="codehilite">~abinit/doc/mksite.py</code> script generates the website by converting markdown files into HTML.
 The script:</p>
 <ul>
@@ -3280,11 +3316,11 @@ The script:</p>
 <li>Expands special strings, of the form <code class="codehilite">[[namespace:name#section|text]]</code> to create HTML links.</li>
 <li>Creates the needed HMTL files </li>
 </ul>
-<p>The expansion of special strings is documented in the <a href="../markdown#links">links section</a>. 
+<p>The expansion of special strings is documented in the <a href="../markdown/#links">links section</a>. 
 It can be used in all the YAML files mentioned below. 
 For equations/formulas, <a href="http://docs.mathjax.org/en/latest/mathjax.html">Mathjax</a> is activated, and allows
-to process and visualize LaTeX formulas, see also <a href="../markdown#MathJax">our MathJax section</a>.</p>
-<h2 id="website-organization">Website organization<a class="headerlink" href="#website-organization" title="Permanent link">&para;</a></h2>
+to process and visualize LaTeX formulas, see also <a href="../markdown/#MathJax">this section</a> for further details.</p>
+<h2 id="writing-docs">Writing docs<a class="headerlink" href="#writing-docs" title="Permanent link">&para;</a></h2>
 <p>The markdown files are stored inside the <code class="codehilite">doc</code> directory according to the following structure:</p>
 <div class="codehilite"><pre><span></span><span class="go">├── doc</span>
 <span class="go">│   ├── about</span>
@@ -3293,7 +3329,7 @@ to process and visualize LaTeX formulas, see also <a href="../markdown#MathJax">
 <span class="go">│   ├── developers</span>
 <span class="go">│   ├── extra_javascript</span>
 <span class="go">│   ├── images</span>
-<span class="go">│   ├── input_variables</span>
+<span class="go">│   ├── variables</span>
 <span class="go">│   ├── tests</span>
 <span class="go">│   ├── theory</span>
 <span class="go">│   ├── topics</span>
@@ -3305,12 +3341,12 @@ to process and visualize LaTeX formulas, see also <a href="../markdown#MathJax">
 <li>about: Files with release notes, license</li>
 <li><em>css</em>: Extra CSS files used by the website</li>
 <li><em>data</em>: </li>
-<li>developers: Documentation for developers (website, git, coding rules&hellip;)</li>
+<li>developers: Documentation for developers (documentation howtos, git, coding rules&hellip;)</li>
 <li><em>extra_javascript</em>: Extra javascript code used by the website</li>
 <li><em>images</em>: logos and favicon</li>
-<li>input_variables: files with input variables (automatically generated).</li>
+<li>variables: files with input variables (automatically generated).</li>
 <li><em>tests</em>: symbolic links to the <code class="codehilite">~abinit/tests</code> directory.</li>
-<li>theory: files with </li>
+<li>theory: files with theoretical notes</li>
 <li>topics: files with Abinit topics</li>
 <li>tutorials: official Abinit lessons</li>
 <li>user-guide: help files for main executables</li>
@@ -3318,15 +3354,34 @@ to process and visualize LaTeX formulas, see also <a href="../markdown#MathJax">
 <p>The directory in <em>italic</em> are mainly used to build the website and are not visible outside.
 The other directories contain markdown files, each directory is associated to an 
 entry in the website menu (see <code class="codehilite">pages</code> in <code class="codehilite">mkdocs.yml</code>).
-Each directory contains an <code class="codehilite">index.md</code> file that is supposed to give an overview </p>
-<p><code class="codehilite">lessons/lesson_bse.html</code> becomes <code class="codehilite">lesson/bse.md</code></p>
-<p>images and additional material associated to the lesson are stored in the <code class="codehilite">lesson/bse_assets</code></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If <code class="codehilite">True</code>, use <code class="codehilite">&lt;page_name&gt;/index.html</code> style files with hyperlinks to
-the directory. If <code class="codehilite">False</code>, use <code class="codehilite">&lt;page_name&gt;.html</code> style file with hyperlinks to the file.
-True generates nicer URLs, but False is useful if browsing the output on a filesystem.</p>
-</div>
+The <a href="http://www.mkdocs.org/user-guide/writing-your-docs/">pages configuration</a> in <code class="codehilite">mkdocs.yml</code> 
+defines which pages are built by MkDocs and how they appear in the documentation navigation. </p>
+<p>Each directory contains an <code class="codehilite">index.md</code> file that is supposed to give an overview 
+of the topics treated in that directory.
+Some of these <code class="codehilite">index.md</code> files are automatically generated by python (e.g. <code class="codehilite">variables/index.md</code>)
+but others such as <code class="codehilite">lessons/index.md</code> are not. 
+So make sure that new documentation pages are properly mentioned and linked in the corresponding 
+<code class="codehilite">index.md</code> file when a new page is added.
+<!--
+When you organize several markdown files into one folder, it's good practice to include an <code class="codehilite">wzxhzdk:34</code> file 
+within the folder and list this index file first in the list of pages within the folder in <code class="codehilite">wzxhzdk:35</code>. 
+This creates a "general" page which follows the same URL structure as the other pages in the folder but 
+allows readers to hack the URL more easily.
+--></p>
+<p>Images and additional material (e.g. scripts) associated to a markdown page are stored 
+in the corresponding &ldquo;assets&rdquo; directory whose name is constructed from the base name of the markdown page.
+For instance the figures used in <code class="codehilite">lesson/bse.md</code> are stored in <code class="codehilite">lesson/bse_assets</code></p>
+<p>Note that some files have been renamed when compared to the previous website so
+<code class="codehilite">lessons/lesson_bse.html</code> becomes <code class="codehilite">lesson/bse.md</code>.
+This modification is necessary to have nicer URLs, it allows power users to hack the URL more easily.
+and reduce the amount of typing required to insert link.</p>
+<!--
+!!! note
+    If `True`, use `<page_name>/index.html` style files with hyperlinks to
+    the directory. If `False`, use `<page_name>.html` style file with hyperlinks to the file.
+    True generates nicer URLs, but False is useful if browsing the output on a filesystem.
+-->
+
 <h3 id="front-matter">Front matter<a class="headerlink" href="#front-matter" title="Permanent link">&para;</a></h3>
 <p>Front matter is the first section of the markdown file and must take the form of valid YAML 
 document enclosed between triple-dashed lines. Here is a basic example:</p>
@@ -3344,10 +3399,47 @@ For instance, the list of authors is reported in the HTML page footer while <cod
 to the HTML meta section.
 <code class="codehilite">rpath</code> gives the location of the markdown page with respect to <code class="codehilite">~abinit/docs</code> and it&rsquo;s the only 
 required entry in the front matter.</p>
+<h2 id="documentation-guide-lines">Documentation Guide lines<a class="headerlink" href="#documentation-guide-lines" title="Permanent link">&para;</a></h2>
+<p><mark>To be discussed</mark></p>
+<ul>
+<li>
+<p>Each paragraph name should be short enough to fit nicely in the menu, but also long enough to stand 
+  on its own to a reasonable extent. 
+  The titles set here are used in the navigation menu and the page title that displays in the browser tab. </p>
+</li>
+<li>
+<p>Each page should start with a paragraph that explains what will be covered.
+  The first heading in a page should be Heading1 (<code class="codehilite">#</code> in Markdown). 
+  All others should be in H2  (<code class="codehilite">##</code>) and H3 (<code class="codehilite">###</code>), only where necessary. 
+  If you find yourself wanting to use H4, consider if it&rsquo;s truly necessary.</p>
+</li>
+<li>
+<p>Don&rsquo;t use terms like &ldquo;previous page&rdquo;, etc. because we may add or re-arrange pages in the future. 
+  Instead, use a hyperlink to the chapter.
+  Also avoid sentences like <em>If you follow the tutorial, you should go back to the tutorial window now.</em></p>
+</li>
+<li>
+<p>Number the paragraphs only if really needed: the links in the navigation bar are not readable and besides
+  the number will appear in the <a href="../markdown/#permalinks">permalink</a>.
+  This means that you may need to change several links if you decide to add a new section to the page later on.
+  Users may want to share or bookmarks links to the Abinit documentation so broken links should be avoided 
+  as much as possible.</p>
+</li>
+<li>
+<p>The fact the <a href="../markdown/#wiki-links">wikilink syntax</a> facilitates the inclusion of hyperlinks does not 
+  mean that we have to add links <em>everywhere</em>. 
+  This is especially true in the documentation of the input variables in which it does not make sense to
+  put links to the same variable we are describing or the same link over and over again in the same paragraph.</p>
+</li>
+<li>
+<p>Text in all uppercase is significantly more difficult to read than lower and mixed case text.
+  Writing in all caps is like shouting so use all caps sparingly.</p>
+</li>
+</ul>
 <h2 id="how-to-addmodify">How to add/modify?<a class="headerlink" href="#how-to-addmodify" title="Permanent link">&para;</a></h2>
 <h3 id="input-variables">Input variables<a class="headerlink" href="#input-variables" title="Permanent link">&para;</a></h3>
-<p>Edit the file <code class="codehilite">abinit_vars.yml</code> with the Abivars.jar GUI:</p>
-<div class="codehilite"><pre><span></span>$ java -jar Abivars.jar
+<p>Edit the file <code class="codehilite">abinit_vars.yml</code> with the <code class="codehilite">Abivars.jar</code> GUI:</p>
+<div class="codehilite"><pre><span></span>java -jar Abivars.jar
 </pre></div>
 
 
@@ -3371,12 +3463,12 @@ Then, build the HTML pages using <code class="codehilite">mksite.py serve</code>
 <p>If you know the DOI of the article, it&rsquo;s possible to use <a href="https://github.com/nschloe/betterbib">BetterBib</a>
 to fetch data from <a href="http://www.crossref.org/">Crossref</a> and produce the bibtex entry.
 BetterBib is available from the Python Package Index, so simply type:</p>
-<div class="codehilite"><pre><span></span>$ pip install betterbib
+<div class="codehilite"><pre><span></span>pip install betterbib
 </pre></div>
 
 
 <p>and then use <code class="codehilite">doi2bibtex</code> from the command line:</p>
-<div class="codehilite"><pre><span></span>$ doi2bibtex 10.1103/PhysRevLett.96.066402
+<div class="codehilite"><pre><span></span>doi2bibtex 10.1103/PhysRevLett.96.066402
 
 @article{bibtex,
   author = {Amadon, B. and Biermann, S. and Georges, A. and Aryasetiawan, F.},
@@ -3407,7 +3499,7 @@ given for these input variables, see <a href="#how-to-addmodify">Input variables
 as well as <a href="../topics-and-tribes">Topics and tribes</a>, while the list of relevant input files
 is assembled from the information in each of these input files (add a line &ldquo;#%% topics = &rdquo; in the last section of the input file.). 
 The bibliography list is assembled from the references cited in the &ldquo;introduction&rdquo; section, 
-that use <a href="../markdown#links">Shortcuts for Web links</a>.</p>
+that use <a href="../markdown/#links">Shortcuts for Web links</a>.</p>
 <p>Note the file <code class="codehilite">default_topic.yml</code>, whose components are used in case they are not specified explicitly 
 in the more specific file <code class="codehilite">topic_NAME.yml</code>.
 The list of topics is found in the file <code class="codehilite">~abinit/doc/topics/origin_files/list_of_topics.yml</code>.</p>
@@ -3490,6 +3582,54 @@ the field &ldquo;topics&rdquo; is used inside the <code class="codehilite">~abin
 </ul>
 <p>The latter is a case where one input variable is associated to two topics, with a different tribe 
 for topic &ldquo;parallelism&rdquo; and topic &ldquo;GW&rdquo;.</p>
+<h3 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h3>
+<p>Release notes are written in Markdown so it&rsquo;s possible to use the <a href="../markdown/#wiki-links">wikilink syntax</a>
+to insert links to new tests, new autoconf files and even links to pull-requests and issues that will redirect
+the reader to the Abinit repository on github.
+For example, the following markdown text</p>
+<div class="codehilite"><pre><span></span>B.1   
+Implementation of algorithms to interpolate the electronic band structure.
+See the new input variables [[einterp]], [[nkpath]], and [[prtebands]], 
+and the new tests [[test:v8_04]], [[test:libxc_41]].
+Added in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
+
+B.2
+Fix issue https://github.com/abinit/abinit/issues/1
+
+C.2  
+New versions of Fortran compilers have been integrated in the test farm:
+
+<span class="k">-</span> intel 16.0
+<span class="k">-</span> gnu 6.1 and 6.2
+<span class="k">-</span> IBM xlf compiler 14.1
+<span class="k">-</span> NAG 5.3
+
+Corresponding examples are available in [[ac:abiref_gnu_5.3_debug.ac]]
+</pre></div>
+
+<p>produces a nice report with links to the features available in the new version:</p>
+<p>B.1 <br />
+Implementation of algorithms to interpolate the electronic band structure.
+See the new input variables <a class="wikilink codevar-wikilink" href="../../variables/basic#einterp">einterp</a>, <a class="wikilink codevar-wikilink" href="../../variables/basic#nkpath">nkpath</a>, and <a class="wikilink codevar-wikilink" href="../../variables/gstate#prtebands">prtebands</a>, 
+and the new tests <a class="wikilink abifile-wikilink" data-content="Interpolation of electronic bands with two different techniques (star functions and B-spline interpolation)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t04.in" target="_blank">v8[04]</a>, <a class="wikilink abifile-wikilink" data-content="Diamond: hybrid functional calculation with the GW code Perturbative approach to the HSE06,  PBE0,  and B3LYP band gaps HSE06 and PBE0 tests temporarily disabled,  waiting for the next version of the libxc)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/libxc/Input/t41.in" target="_blank">libxc[41]</a>.
+Added in <a href="https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e"><code class="codehilite">f74dba1</code></a></p>
+<p>B.2
+Fix issue <a href="https://github.com/abinit/abinit/issues/1">#1</a></p>
+<p>C.2<br />
+New versions of Fortran compilers have been integrated in the test farm:</p>
+<ul>
+<li>intel 16.0</li>
+<li>gnu 6.1 and 6.2</li>
+<li>IBM xlf compiler 14.1</li>
+<li>NAG 5.3</li>
+</ul>
+<p>Corresponding examples are available in <a class="wikilink abifile-wikilink" href="../../build/config-examples/abiref_gnu_5.3_debug.ac" target="_blank">abiref_gnu_5.3_debug.ac</a></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We are already using Markdown on gitlab to document our merge requests.
+This means that we can easily integrate all this gitlab documentation
+with the release notes published on the website.</p>
+</div>
 <h2 id="abinit_varsyml-format">abinit_vars.yml format<a class="headerlink" href="#abinit_varsyml-format" title="Permanent link">&para;</a></h2>
 <p>As values in the <code class="codehilite">~abinit/doc/input_variables/origin_files/abinit_vars.yml</code> file, 
 you can specify numbers, string, arrays, following the <a href="http://en.wikipedia.org/wiki/YAML">YAML specifications</a>.
@@ -3579,7 +3719,7 @@ the CONDITION to be fulfilled.</p>
 <p>Pay attention to strings. If it is recognized as string directly, you don&rsquo;t need ticks (&lsquo; &lsquo;).
 Otherwise, you need to put ticks. 
 For example, if you want to use a link as a value, use a link shortcut like <code class="codehilite">[[abivarname]]</code>. 
-See the doc about link shortcuts at <a href="../markdown#links">links shortcuts</a>. </p>
+See the doc about link shortcuts at <a href="../markdown/#links">links shortcuts</a>. </p>
                 
                   
                 
