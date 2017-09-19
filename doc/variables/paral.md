@@ -21,7 +21,7 @@ paral input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [11/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [11/920] in all abinit tests, [1/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
     - paral:  [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t26.in|t26.in]]
     - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in|tgspw_01.in]]
@@ -69,9 +69,6 @@ total number of processors from 2 to [[max_ncpus]]. A weight is associated to
 each distribution and the higher this weight is the better the distribution
 is. After having printed out the weights, the code stops.
 
-
-* * *
-
 ## **bandpp** 
 
 
@@ -83,7 +80,7 @@ is. After having printed out the weights, the code stops.
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [2/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]]
     - paral:  [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t29.in|t29.in]]
     - tutoparal:  [[tests/tutoparal/Input/tgspw_03.in|tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
@@ -116,9 +113,6 @@ the convergency, but not as concerns the speed) is generally performed by
 using [[bandpp]]*[[npband]]=[[nband]]. Put [[bandpp]]=2 when [[istwfk]]=2 (the
 time spent in FFTs is divided by two).
 
-
-* * *
-
 ## **gpu_devices** 
 
 
@@ -129,7 +123,7 @@ time spent in FFTs is divided by two).
 *Default value:* [-1, -1, -1, -1, -1]  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
 
 
@@ -160,9 +154,6 @@ the 3rd GPU card is not used.
 GPU card are numbered starting from 0; to get the GPU devices list, type
 "nvidia-smi" or "lspci | grep -i nvidia".
 
-
-* * *
-
 ## **gpu_linalg_limit** 
 
 
@@ -173,7 +164,7 @@ GPU card are numbered starting from 0; to get the GPU devices list, type
 *Default value:* 2000000  
 *Only relevant if:* [[use_gpu_cuda]]==1 (CUDA functionality)  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t04.in|t04.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
 
 
@@ -193,9 +184,6 @@ When SIZE&gt;=[[gpu_linalg_limit]], [[wfoptalg]] parameter is automatically
 set to 14 which corresponds to the use of LOBPCG algorithm for the calculation
 of the eigenstates.
 
-
-* * *
-
 ## **gwpara** 
 
 
@@ -207,7 +195,7 @@ of the eigenstates.
 *Comment:* The default value has been changed in v8. From 1 to 2   
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [51/920] in all abinit tests, [4/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [51/920] in all abinit tests, [4/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -236,9 +224,6 @@ In the present status of the code, only the parallelization over bands
 Using [[gwpara]]=1, indeed, requires the same amount of memory as a sequential
 run, irrespectively of the number of CPUs used.
 
-
-* * *
-
 ## **localrdwf** 
 
 
@@ -249,7 +234,7 @@ run, irrespectively of the number of CPUs used.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [41/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [41/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]]
     - paral:  [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
 
@@ -277,9 +262,6 @@ machine, the input wavefunction file must be available on all nodes if
 [[localrdwf]]=1, while it is needed only for the master node if
 [[localrdwf]]=0.
 
-
-* * *
-
 ## **max_ncpus** 
 
 
@@ -289,7 +271,7 @@ machine, the input wavefunction file must be available on all nodes if
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tgspw_01.in|tgspw_01.in]]
 
 
@@ -302,9 +284,6 @@ the efficiency of the process distribution for each possible number of
 processors from 2 to [[max_ncpus]]. After having printed out the efficiency,
 the code stops.
 
-
-* * *
-
 ## **np_slk** 
 
 
@@ -316,7 +295,7 @@ the code stops.
 *Default value:* 1000000  
 *Only relevant if:* [[optdriver]]==1 and [[paral_kgb]]==1 (Ground-state calculations with LOBPCG algorithm)  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t30.in|t30.in]]
 
 
@@ -335,9 +314,6 @@ np_slk must divide the number of processors involved in diagonalizations
 Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
-
-* * *
-
 ## **npband** 
 
 
@@ -348,7 +324,7 @@ the [[autoparal]] input keyword.
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Moderately used, [29/920] in all abinit tests, [4/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [29/920] in all abinit tests, [4/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]], [[tests/mpiio/Input/t42.in|t42.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t41.in|t41.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t77.in|t77.in]]
     - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in|tdfpt_03.in]], [[tests/tutoparal/Input/tgspw_02.in|tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in|tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
@@ -371,9 +347,6 @@ be a divisor or equal to [[nband]]
 Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
-
-* * *
-
 ## **npfft** 
 
 
@@ -384,7 +357,7 @@ the [[autoparal]] input keyword.
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Moderately used, [28/920] in all abinit tests, [4/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [28/920] in all abinit tests, [4/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]], [[tests/mpiio/Input/t42.in|t42.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t41.in|t41.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t77.in|t77.in]]
     - tutoparal:  [[tests/tutoparal/Input/tdfpt_03.in|tdfpt_03.in]], [[tests/tutoparal/Input/tgspw_02.in|tgspw_02.in]], [[tests/tutoparal/Input/tgspw_03.in|tgspw_03.in]], [[tests/tutoparal/Input/tstring_01.in|tstring_01.in]]
@@ -410,9 +383,6 @@ and then [[ngfft]] also.
 Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
-
-* * *
-
 ## **nphf** 
 
 
@@ -422,7 +392,7 @@ the [[autoparal]] input keyword.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t53.in|t53.in]]
     - paral:  [[tests/paral/Input/t93.in|t93.in]], [[tests/paral/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t65.in|t65.in]], [[tests/v7/Input/t66.in|t66.in]], [[tests/v7/Input/t70.in|t70.in]]
@@ -442,9 +412,6 @@ Note : [[nphf]] should be a divisor or equal to the number of k-point times
 the number of bands for exact exchange ([[nkpthf]]*[[nbandhf]]) in order to
 have the better load-balancing and efficiency.  
 
-
-* * *
-
 ## **npimage** 
 
 
@@ -454,7 +421,7 @@ have the better load-balancing and efficiency.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]]
 
 
@@ -473,9 +440,6 @@ the [[autoparal]] input keyword.
 _See [[paral_kgb]], [[npkpt]], [[npband]], [[npfft]] and [[npspinor]] for the
 additional information on the use of k-point/band/FFT parallelisation. _
 
-
-* * *
-
 ## **npkpt** 
 
 
@@ -486,7 +450,7 @@ additional information on the use of k-point/band/FFT parallelisation. _
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Moderately used, [32/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [32/920] in all abinit tests, [1/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t53.in|t53.in]]
     - mpiio:  [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]], [[tests/mpiio/Input/t42.in|t42.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t93.in|t93.in]], [[tests/paral/Input/t94.in|t94.in]]
@@ -513,9 +477,6 @@ and efficiency.
 Note: an optimal value for this parameter can be automatically found by using
 the [[autoparal]] input keyword.
 
-
-* * *
-
 ## **nppert** 
 
 
@@ -526,7 +487,7 @@ the [[autoparal]] input keyword.
 *Default value:* 1  
 *Only relevant if:* [[paral_rf]]==1  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
 
 
@@ -540,9 +501,6 @@ perturbations(see [[paral_rf]] ), for a linear response calculation.
 perturbation level is shared. It can even be specified separately for each
 dataset.
 
-
-* * *
-
 ## **npspinor** 
 
 
@@ -553,7 +511,7 @@ dataset.
 *Default value:* 1  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t28.in|t28.in]]
     - paral:  [[tests/paral/Input/t28.in|t28.in]]
 
@@ -575,9 +533,6 @@ the [[autoparal]] input keyword.
 _See [[npkpt]], [[npband]], [[npfft]], and [[paral_kgb]] for the additional
 information on the use of band/FFT/k-point parallelisation._  
 
-
-* * *
-
 ## **paral_atom** 
 
 
@@ -587,7 +542,7 @@ information on the use of band/FFT/k-point parallelisation._
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t53.in|t53.in]]
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]]
     - paral:  [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
@@ -604,9 +559,6 @@ This keyword controls the parallel distribution of memory over atomic sites.
 Calculations are also distributed using the "kpt-band" communicator.
 Compatible with ground-state calculations and response function calculations  
 
-
-* * *
-
 ## **paral_kgb** 
 
 
@@ -616,7 +568,7 @@ Compatible with ground-state calculations and response function calculations
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [124/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [124/920] in all abinit tests, [5/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t02.in|t02.in]]
     - mpiio:  [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]], [[tests/mpiio/Input/t28.in|t28.in]], [[tests/mpiio/Input/t42.in|t42.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t08.in|t08.in]], [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t27.in|t27.in]], [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t41.in|t41.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t56.in|t56.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t77.in|t77.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
@@ -660,9 +612,6 @@ be optimal. To optimize the repartition use:
 
 ** If paral_kgb=1 ** and ** max_ncpus = n /= 0 ** ABINIT will test automatically if all the processor numbers between 2 and n are convenient for a parallel calculation and print the possible values in the log file. A weight is attributed to each possible processors repartition. It is adviced to select a processor repartition for which the weight is high (as closed to the number of processors as possible). The code will then stop after the printing. This test can be done as well with a sequential as with a parallel version of the code. The user can then choose the adequate number of processor on which he can run his job. He must put again paral_kgb=1 in the input file and put the corresponding values for [[npkpt]], [[npfft]], [[npband]],[[bandpp]] and eventually [[npspinor]] in the input file. 
 
-
-* * *
-
 ## **paral_rf** 
 
 
@@ -672,7 +621,7 @@ be optimal. To optimize the repartition use:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
 
 
@@ -693,9 +642,6 @@ stops.
 
 [[paral_rf]] can be specified separately for each dataset.
 
-
-* * *
-
 ## **pw_unbal_thresh** 
 
 
@@ -706,7 +652,7 @@ stops.
 *Default value:* 40%  
 *Only relevant if:* [[paral_kgb]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]]
 
 
@@ -720,9 +666,6 @@ balancing procedure is activated when the ratio between the number of plane
 waves treated by a processor and the ideal one is higher than
 _pw_unbal_thresh_ %.
 
-
-* * *
-
 ## **use_gpu_cuda** 
 
 
@@ -734,7 +677,7 @@ _pw_unbal_thresh_ %.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t02.in|t02.in]], [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]]
 
@@ -755,9 +698,6 @@ external library (i.e. Lapack on GPUs). The latter is activated during
 compilation stage (see "configure" step of ABINIT compilation process). If
 MAGMA is not used, ABINIT performances on GPUs can be poor.
 
-
-* * *
-
 ## **use_slk** 
 
 
@@ -768,7 +708,7 @@ MAGMA is not used, ABINIT performances on GPUs can be poor.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t27.in|t27.in]]
     - paral:  [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t29.in|t29.in]]
 
@@ -778,7 +718,4 @@ MAGMA is not used, ABINIT performances on GPUs can be poor.
 
 
 If set to 1, enable the use of ScaLapack within LOBPCG.
-
-
-* * *
 

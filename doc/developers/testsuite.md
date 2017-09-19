@@ -48,10 +48,6 @@ Bulk Nickel,  using the atomic data file generated in test 03
 Executable: abinit   
 Keywords(s): PAW, abinit   
 Author(s): M. Torrent  
-
-
-* * *
-
 ## bigdft  
 
 ### [[tests/bigdft/Input/t00.in]]   
@@ -333,10 +329,6 @@ Executable: abinit
 Keywords(s): PAW, WVL, abinit   
 Topic(s): [[topic:Wavelets]]  
 Author(s): T. Rangel  
-
-
-* * *
-
 ## bigdft_paral  
 
 ### [[tests/bigdft_paral/Input/t01.in]]   
@@ -359,10 +351,6 @@ Executable: abinit
 Keywords(s): PAW, WVL, abinit   
 Topic(s): [[topic:Wavelets]]  
 Author(s): M. Torrent, T. Rangel  
-
-
-* * *
-
 ## built-in  
 
 ### [[tests/built-in/Input/testin_fast.in]]   
@@ -431,10 +419,6 @@ GaAs crystal with few bands.
 
 Executable: abinit   
 Keywords(s): abinit, bigdft   
-
-
-* * *
-
 ## etsf_io  
 
 ### [[tests/etsf_io/Input/t00.in]]   
@@ -521,10 +505,6 @@ Single H atom in a box.. Test of prtvol = -2,  so stop after init,  and echo in 
 Executable: abinit   
 Keywords(s): abinit, netcdf   
 Author(s): D. Caliste  
-
-
-* * *
-
 ## fast  
 
 ### [[tests/fast/Input/t00.in]]   
@@ -785,10 +765,6 @@ This test is due to Z. Levine. It is a run on Si with the bond center at the ori
 
 Executable: abinit   
 Keywords(s): abinit   
-
-
-* * *
-
 ## gpu  
 
 ### [[tests/gpu/Input/t01.in]]   
@@ -842,10 +818,6 @@ NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU
 Executable: abinit   
 Keywords(s): LDAU, PAW, abinit   
 Author(s): M. Torrent  
-
-
-* * *
-
 ## libxc  
 
 ### [[tests/libxc/Input/t00.in]]   
@@ -1104,10 +1076,6 @@ Silicon Test the equivalence between the internal and LibXC implementations of t
 Executable: abinit   
 Keywords(s): DFPT, PAW, abinit   
 Author(s): G.-M. Rignanese  
-
-
-* * *
-
 ## mpiio  
 
 ### [[tests/mpiio/Input/t01.in]]   
@@ -1255,10 +1223,6 @@ NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I
 Executable: abinit   
 Keywords(s): DMFT, PAW, abinit   
 Author(s): B. Amadon  
-
-
-* * *
-
 ## paral  
 
 ### [[tests/paral/Input/t01.in]]   
@@ -1762,10 +1726,6 @@ read ddb and HIST,  fit the anharmonic part and generate effective potential
 Executable: multibinit   
 Keywords(s): Effective potential, multibinit   
 Author(s): A. MARTIN  
-
-
-* * *
-
 ## psml  
 
 ### [[tests/psml/Input/t01.in]]   
@@ -1786,10 +1746,6 @@ Bulk iron,  with and without spin-polarization
 Executable: abinit   
 Keywords(s): NC, abinit   
 Author(s): M. Verstraete  
-
-
-* * *
-
 ## seq  
 
 ### [[tests/seq/Input/tsv2_81.in]]   
@@ -1974,10 +1930,6 @@ PAW Berrys Phase calculation of forces in finite electric fields (contributed by
 Executable: abinit   
 Keywords(s): DFPT, PAW, abinit   
 Author(s): J. Zwanziger  
-
-
-* * *
-
 ## tutoparal  
 
 ### [[tests/tutoparal/Input/tdfpt_03.in]]   
@@ -2083,10 +2035,6 @@ Hydronium ion + NH3 molecule Ground state calculation keeping O and H atoms fixe
 
 Executable: abinit   
 Keywords(s): abinit   
-
-
-* * *
-
 ## tutoplugs  
 
 ### [[tests/tutoplugs/Input/tw90_1.in]]   
@@ -2125,10 +2073,6 @@ Test Wannier90 interface with NC pseudos
 
 Executable: abinit   
 Keywords(s): NC, abinit   
-
-
-* * *
-
 ## tutorespfn  
 
 ### [[tests/tutorespfn/Input/tdepes_1.in]]   
@@ -2652,10 +2596,6 @@ Crystalline AlAs : computation of the set of q point needed for the Fourier inte
 
 Executable: abinit   
 Keywords(s): abinit   
-
-
-* * *
-
 ## tutorial  
 
 ### [[tests/tutorial/Input/tbase1_1.in]]   
@@ -3393,10 +3333,6 @@ H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:
 Executable: fold2Bloch   
 Keywords(s): FOLD2BLOCH, fold2Bloch   
 Author(s): O. Rubel  
-
-
-* * *
-
 ## unitary  
 
 ### [[tests/unitary/Input/tfftsg_01.in]]   
@@ -3769,10 +3705,6 @@ Test fourwf with ndat=1 and istwfk = 9 TODO: 411,  412 are buggy
 Executable: fftprof   
 Keywords(s): fftprof   
 Author(s): M. Giantomassi  
-
-
-* * *
-
 ## v1  
 
 ### [[tests/v1/Input/t00.in]]   
@@ -4780,10 +4712,6 @@ Same job as 98,  starting from the wavefunctions that were generated then.
 
 Executable: abinit   
 Keywords(s): NC, abinit   
-
-
-* * *
-
 ## v2  
 
 ### [[tests/v2/Input/t01.in]]   
@@ -5729,10 +5657,6 @@ Nb BCC along the Gamma-H direction Remnant of the bug search of winter 2000-2001
 
 Executable: abinit   
 Keywords(s): DFPT, NC, abinit   
-
-
-* * *
-
 ## v3  
 
 ### [[tests/v3/Input/t01.in]]   
@@ -6669,10 +6593,6 @@ Fake MoSixO(1-x) molecule along the diagonal of a cube, using alchemical pseudop
 Executable: abinit   
 Keywords(s): abinit   
 Topic(s): [[topic:AtomTypes]]  
-
-
-* * *
-
 ## v4  
 
 ### [[tests/v4/Input/t01.in]]   
@@ -7560,10 +7480,6 @@ Test a fake antiferromagnetic Fe crystal : recognition of symmetries when there 
 Executable: abinit   
 Keywords(s): abinit   
 Author(s): A. Dick  
-
-
-* * *
-
 ## v5  
 
 ### [[tests/v5/Input/t00.in]]   
@@ -8650,10 +8566,6 @@ anaddb run for Ni,  from t96 t97 t98. Calculate e-p coupling
 Executable: anaddb   
 Keywords(s): anaddb   
 Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]  
-
-
-* * *
-
 ## v6  
 
 ### [[tests/v6/Input/t01.in]]   
@@ -9558,10 +9470,6 @@ Executable: anaddb
 Keywords(s): anaddb   
 Topic(s): [[topic:PhononWidth]], [[topic:ElPhonTransport]]  
 Author(s): B. Xu  
-
-
-* * *
-
 ## v67mbpt  
 
 ### [[tests/v67mbpt/Input/t01.in]]   
@@ -9947,10 +9855,6 @@ Executable: optic
 Keywords(s): NC, optic   
 Topic(s): [[topic:Optic]]  
 Author(s): Y. Gillet  
-
-
-* * *
-
 ## v7  
 
 ### [[tests/v7/Input/t01.in]]   
@@ -10857,10 +10761,6 @@ Executable: abinit
 Keywords(s): DFPT, DFT-D3(BJ), ELASTIC, VDW, abinit   
 Topic(s): [[topic:vdw]]  
 Author(s): B. VAN TROEYE  
-
-
-* * *
-
 ## v8  
 
 ### [[tests/v8/Input/t01.in]]   
@@ -11217,10 +11117,6 @@ Testing of the phonon potential interpolation routines.
 Executable: abinit   
 Keywords(s): DFPT, EPH, NC, abinit   
 Author(s): G. Antonius  
-
-
-* * *
-
 ## vdwxc  
 
 ### [[tests/vdwxc/Input/t10.in]]   
@@ -11231,10 +11127,6 @@ Executable: abinit
 Keywords(s): abinit   
 Topic(s): [[topic:vdw]]  
 Author(s): M. Torrent  
-
-
-* * *
-
 ## wannier90  
 
 ### [[tests/wannier90/Input/t00.in]]   
@@ -11312,7 +11204,3 @@ Executable: abinit
 Keywords(s): FAILS_IFMPI, abinit   
 Topic(s): [[topic:vdw]], [[topic:Wannier]]  
 Author(s): C. Espejo, Y. Pouillon  
-
-
-* * *
-

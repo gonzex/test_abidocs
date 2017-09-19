@@ -21,7 +21,7 @@ dev input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t00.in|t00.in]]
     - built-in:  [[tests/built-in/Input/testin_fast.in|testin_fast.in]], [[tests/built-in/Input/testin_v1.in|testin_v1.in]], [[tests/built-in/Input/testin_v5.in|testin_v5.in]], [[tests/built-in/Input/testin_bigdft.in|testin_bigdft.in]], [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]], [[tests/built-in/Input/testin_libxc.in|testin_libxc.in]], [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]]
@@ -45,9 +45,6 @@ fallbacks have been connected or not (bigdft, etsf_io, libxc, wannier90). At
 present, [[builtintest]]=1 ... 7 are allowed. See more information in
 tests/built-in/README .
 
-
-* * *
-
 ## **cgtyphf** 
 
 
@@ -60,7 +57,7 @@ tests/built-in/README .
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t65.in|t65.in]], [[tests/v7/Input/t66.in|t66.in]]
 
 
@@ -75,9 +72,6 @@ time in the conjugate gradient. The value 1 corresponds to calculate the Fock
 exact exchange contribution only for the initial guess (not for the gradient
 direction) in the conjugate gradient
 
-
-* * *
-
 ## **densfor_pred** 
 
 
@@ -91,7 +85,7 @@ direction) in the conjugate gradient
   
 *Only relevant if:* [[iscf]] >0  
 
-??? note "Test list (click to open) (Moderately used, [35/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [35/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_fast.in|testin_fast.in]]
     - fast:  [[tests/fast/Input/t00.in|t00.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]]
     - libxc:  [[tests/libxc/Input/t53.in|t53.in]]
@@ -161,9 +155,6 @@ Also note that, to be efficient, this algorithm requires a minimum convergence
 of the SCF cycle; Typically, vres2 (or nres2) has to be small enough (10  -4
 ...10  -5  ).
 
-
-* * *
-
 ## **densty** 
 
 
@@ -174,7 +165,7 @@ of the SCF cycle; Typically, vres2 (or nres2) has to be small enough (10  -4
 *Dimensions:* ([[ntypat]])  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]], [[tests/mpiio/Input/t01.in|t01.in]]
     - paral:  [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t01.in|t01.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t02.in|t02.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t03.in|t03.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t51.in|t51.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]]
     - v1:  [[tests/v1/Input/t67.in|t67.in]], [[tests/v1/Input/t68.in|t68.in]]
@@ -193,9 +184,6 @@ corresponds to an average radius (a.u.) of the density, and is used to
 generate a gaussian density. If set to 0.0d0, an optimized value is used.  
 No meaning for RF calculations.
 
-
-* * *
-
 ## **dmft_read_occnd** 
 
 
@@ -206,7 +194,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
@@ -232,9 +220,6 @@ An alternative and more simple way to restart a DFT+DMFT calculation is to use
 the density file (obtained with [[prtden]]=1 or [[prtden]]=-1) and the self-
 energy (see [[dmft_rslf]]).
 
-
-* * *
-
 ## **dmftctqmc_basis** 
 
 
@@ -246,7 +231,7 @@ energy (see [[dmft_rslf]]).
 *Default value:* 1  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -262,9 +247,6 @@ Choose the basis to perform CTQMC calculation.
   * 1=&gt; Default value, diagonalize the local Hamiltonian (but only if it is not diagonal). The best choice in general. 
   * 2=&gt; Diagonalise the local correlated occupation matrix. Can lead to non diagonal Hamiltonian that cannot be handled by CTQMC. This option should be thus avoided. 
 
-
-* * *
-
 ## **effmass_free** 
 
 
@@ -275,7 +257,7 @@ Choose the basis to perform CTQMC calculation.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t25.in|t25.in]]
     - v6:  [[tests/v6/Input/t31.in|t31.in]], [[tests/v6/Input/t32.in|t32.in]]
 
@@ -291,9 +273,6 @@ The electron mass is simply changed in the Schrodinger equation.
 
 Only for testing purposes, of course.
 
-
-* * *
-
 ## **eshift** 
 
 
@@ -305,7 +284,7 @@ Only for testing purposes, of course.
 *Default value:* 0  
 *Only relevant if:* [[wfoptalg]]==3  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t45.in|t45.in]]
 
 
@@ -319,9 +298,6 @@ squared. The algorithm will determine eigenvalues and eigenvectors centered on
 Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
-
-* * *
-
 ## **exchmix** 
 
 
@@ -333,7 +309,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 *Default value:* 0.25  
 *Only relevant if:* [[useexexch]] == 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t18.in|t18.in]]
 
 
@@ -343,9 +319,6 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
 [[exchmix]] allows to tune the ratio of exact exchange when [[useexexch]] is
 used. The default value of 0.25 corresponds to PBE0.
-
-
-* * *
 
 ## **exchn2n3d** 
 
@@ -357,7 +330,7 @@ used. The default value of 0.25 corresponds to PBE0.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t92.in|t92.in]]
 
 
@@ -370,9 +343,6 @@ reciprocal space will be array(n1,n3,n2), where the second and third
 dimensions have been switched. This is to allow to be coherent with the
 [[exchn2n3d]]=4xx FFT treatment.
 
-
-* * *
-
 ## **extrapwf** 
 
 
@@ -384,7 +354,7 @@ dimensions have been switched. This is to allow to be coherent with the
 *Default value:* 0  
 *Only relevant if:* [[densfor_pred]]==5 or [[densfor_pred]]==6  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t09.in|t09.in]]
 
 
@@ -403,9 +373,6 @@ extrapolation is activated (see [[densfor_pred]]).
 ABINIT 7.10: this option is **under development** and might give wrong
 results.
 
-
-* * *
-
 ## **fermie_nest** 
 
 
@@ -415,7 +382,7 @@ results.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
     - v7:  [[tests/v7/Input/t90.in|t90.in]]
 
@@ -426,9 +393,6 @@ results.
 
 This input variable is only effective when [[prtnest]]=1. The energy is
 relative to the calculated fermi energy.
-
-
-* * *
 
 ## **fftalg** 
 
@@ -443,7 +407,7 @@ relative to the calculated fermi energy.
 112 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [34/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [34/920] in all abinit tests, [1/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t04.in|t04.in]]
     - mpiio:  [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t42.in|t42.in]], [[tests/mpiio/Input/t49.in|t49.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t28.in|t28.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t41.in|t41.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
@@ -491,9 +455,6 @@ The third digit (C) is related to fourwf.f :
 
 Internal representation as [[ngfft]](7).
 
-
-* * *
-
 ## **fftcache** 
 
 
@@ -505,7 +466,7 @@ Internal representation as [[ngfft]](7).
 *Default value:* 16  
 *Comment:* todo: Not yet machine-dependent  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t03.in|t03.in]]
 
 
@@ -515,9 +476,6 @@ Internal representation as [[ngfft]](7).
 
 Gives the cache size of the current machine, in Kbytes.  
 Internal representation as [[ngfft]](8).
-
-
-* * *
 
 ## **getgam_eig2nkq** 
 
@@ -529,7 +487,7 @@ Internal representation as [[ngfft]](8).
 *Default value:* 0  
 *Only relevant if:* [[ieig2rf]] != 0 and [[qpt]] != (0.0,0.0,0.0)  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t50.in|t50.in]]
 
 
@@ -546,9 +504,6 @@ The variable [[getgam_eig2nkq]] allows to transmit the information about the
 second-order derivatives of the eigenvalues for q=Gamma from the dataset where
 the calculation at Gamma was done, to the datasets for other wavevectors.
 
-
-* * *
-
 ## **getwfkfine** 
 
 
@@ -558,7 +513,7 @@ the calculation at Gamma was done, to the datasets for other wavevectors.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
     - v7:  [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t51.in|t51.in]]
 
@@ -611,9 +566,6 @@ Bethe-Salpeter calculation :
 
 ** This variable is experimental. In development. **
 
-
-* * *
-
 ## **intxc** 
 
 
@@ -624,7 +576,7 @@ Bethe-Salpeter calculation :
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [148/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [148/920] in all abinit tests, [1/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_v1.in|testin_v1.in]]
     - etsf_io:  [[tests/etsf_io/Input/t21.in|t21.in]], [[tests/etsf_io/Input/t22.in|t22.in]]
     - fast:  [[tests/fast/Input/t01.in|t01.in]], [[tests/fast/Input/t02.in|t02.in]], [[tests/fast/Input/t03.in|t03.in]], [[tests/fast/Input/t05.in|t05.in]], [[tests/fast/Input/t06.in|t06.in]], [[tests/fast/Input/t07.in|t07.in]], [[tests/fast/Input/t08.in|t08.in]], [[tests/fast/Input/t09.in|t09.in]], [[tests/fast/Input/t11.in|t11.in]], [[tests/fast/Input/t12.in|t12.in]], [[tests/fast/Input/t16.in|t16.in]], [[tests/fast/Input/t04.in|t04.in]], [[tests/fast/Input/t17.in|t17.in]], [[tests/fast/Input/t19.in|t19.in]], [[tests/fast/Input/t20.in|t20.in]], [[tests/fast/Input/t21.in|t21.in]], [[tests/fast/Input/t23.in|t23.in]], [[tests/fast/Input/t24.in|t24.in]], [[tests/fast/Input/t25.in|t25.in]], [[tests/fast/Input/t26.in|t26.in]], [[tests/fast/Input/t27.in|t27.in]], [[tests/fast/Input/t28.in|t28.in]], [[tests/fast/Input/t29.in|t29.in]], [[tests/fast/Input/t30.in|t30.in]]
@@ -662,9 +614,6 @@ targets are prioritary... You will notice that many automatic tests use
 [[intxc]]=1. Please, do not follow this historical choice for your production
 runs.
 
-
-* * *
-
 ## **iomode** 
 
 
@@ -677,7 +626,7 @@ runs.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [28/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [28/920] in all abinit tests, [0/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t22.in|t22.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t01.in|t01.in]], [[tests/etsf_io/Input/t02.in|t02.in]], [[tests/etsf_io/Input/t04.in|t04.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
@@ -731,9 +680,6 @@ References:
   * "Sharing electronic structure and crystallographic data with ETSF_IO", D. Caliste, Y. Pouillon, M.J. Verstraete, V. Olevano, X. Gonze, Comput. Physics Communications 179, 748 (2008) 
   * see also [ http://www.etsf.eu/fileformats ](http://www.etsf.eu/fileformats) . 
 
-
-* * *
-
 ## **iprcfc** 
 
 
@@ -744,7 +690,7 @@ References:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t44.in|t44.in]], [[tests/v1/Input/t45.in|t45.in]], [[tests/v1/Input/t48.in|t48.in]], [[tests/v1/Input/t49.in|t49.in]]
 
 
@@ -766,9 +712,6 @@ Supported values :
 
 No meaning for RF calculations.
 
-
-* * *
-
 ## **irandom** 
 
 
@@ -779,7 +722,7 @@ No meaning for RF calculations.
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t26.in|t26.in]]
     - v7:  [[tests/v7/Input/t08.in|t08.in]]
     - v8:  [[tests/v8/Input/t05.in|t05.in]]
@@ -802,9 +745,6 @@ Supported values :
 [[irandom]]=3 is strongly advised when performing Molecular Dynamics restarts
 (avoids bias).
 
-
-* * *
-
 ## **irdwfkfine** 
 
 
@@ -814,7 +754,7 @@ Supported values :
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t51.in|t51.in]]
 
 
@@ -845,9 +785,6 @@ Bethe-Salpeter calculation :
 
 ** This variable is experimental. In development. **
 
-
-* * *
-
 ## **isecur** 
 
 
@@ -858,7 +795,7 @@ Bethe-Salpeter calculation :
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - fast:  [[tests/fast/Input/t17.in|t17.in]], [[tests/fast/Input/t19.in|t19.in]]
     - v1:  [[tests/v1/Input/t08.in|t08.in]], [[tests/v1/Input/t33.in|t33.in]], [[tests/v1/Input/t85.in|t85.in]], [[tests/v1/Input/t86.in|t86.in]], [[tests/v1/Input/t98.in|t98.in]], [[tests/v1/Input/t99.in|t99.in]]
     - v2:  [[tests/v2/Input/t51.in|t51.in]]
@@ -882,9 +819,6 @@ minimisation, but this can make the algorithm unstable. Lower values of
 non-SCF computation per line minimisation.  
 No meaning for RF calculations yet.
 
-
-* * *
-
 ## **istatr** 
 
 
@@ -896,7 +830,7 @@ No meaning for RF calculations yet.
 *Default value:* 0  
 *Comment:* Values lower than 10 may not work on some machines.  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_fast.in|testin_fast.in]]
     - fast:  [[tests/fast/Input/t00.in|t00.in]]
     - paral:  [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]], [[tests/paral/Input/t52.in|t52.in]], [[tests/paral/Input/t53.in|t53.in]]
@@ -914,9 +848,6 @@ the number of the call to the status subroutine is equal to ' ** istatshft **
 When '[[istatr]]'=0, there is no writing of a status file (which is the
 default).
 
-
-* * *
-
 ## **istatshft** 
 
 
@@ -927,7 +858,7 @@ default).
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t45.in|t45.in]]
 
 
@@ -941,9 +872,6 @@ modulo ' ** istatr ** ', so that it is written once every ' ** istatr ** '
 call. There is also a writing for each of the 5 first calls, and the 10th
 call.
 
-
-* * *
-
 ## **istwfk** 
 
 
@@ -954,7 +882,7 @@ call.
 *Default value:* *0  
 *Comment:* For RF calculations, the Default is not used : <b>istwfk</b> is forced to be 1 deep inside the code, for all k points. For spin-orbit calculations ([[nspinor]]=2), <b>istwfk</b> is also forced to be 1, for all k points.  
 
-??? note "Test list (click to open) (Moderately used, [232/920] in all abinit tests, [34/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [232/920] in all abinit tests, [34/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t06.in|t06.in]], [[tests/bigdft/Input/t07.in|t07.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t22.in|t22.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]], [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
@@ -1011,9 +939,6 @@ used in the RF calculations.
   * 9=&gt; use time-reversal symmetry for k=(1/2 1/2 1/2) 
   * 0=&gt; (preprocessed) for each k point, choose automatically the appropriate time-reversal option when it is allowed, and chose [[istwfk]]=1 for all the other k points. 
 
-
-* * *
-
 ## **lotf_classic** 
 
 
@@ -1024,7 +949,7 @@ used in the RF calculations.
 *Dimensions:* scalar  
 *Default value:* 5  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
 
@@ -1034,9 +959,6 @@ used in the RF calculations.
 
 Glue model used in LOTF.  
 For the moment it is imposed to be 5.
-
-
-* * *
 
 ## **lotf_nitex** 
 
@@ -1048,7 +970,7 @@ For the moment it is imposed to be 5.
 *Dimensions:* scalar  
 *Default value:* 10  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
 
@@ -1057,9 +979,6 @@ For the moment it is imposed to be 5.
 
 
 Set the number of Molecular Dynamics iterations which are computed by LOTF.
-
-
-* * *
 
 ## **lotf_nneigx** 
 
@@ -1071,7 +990,7 @@ Set the number of Molecular Dynamics iterations which are computed by LOTF.
 *Dimensions:* scalar  
 *Default value:* 5  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
 
@@ -1081,9 +1000,6 @@ Set the number of Molecular Dynamics iterations which are computed by LOTF.
 
 Set the max number of Neighbours used in the LOTF method.  
 For the moment it is imposed to be 40.
-
-
-* * *
 
 ## **lotf_version** 
 
@@ -1095,7 +1011,7 @@ For the moment it is imposed to be 40.
 *Dimensions:* scalar  
 *Default value:* 2  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
 
@@ -1105,9 +1021,6 @@ For the moment it is imposed to be 40.
 
 Set the MD algorithm in the LOTF method.  
 For the moment it is imposed to be 2.
-
-
-* * *
 
 ## **macro_uj** 
 
@@ -1119,7 +1032,7 @@ For the moment it is imposed to be 2.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [2/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tudet_1.in|tudet_1.in]], [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
     - v5:  [[tests/v5/Input/t38.in|t38.in]], [[tests/v5/Input/t39.in|t39.in]]
 
@@ -1144,9 +1057,6 @@ by symmetry relations (either input reduced symmetries manually, define
 concerned atom as a separate atomic species or shift concerned atom from ideal
 position).
 
-
-* * *
-
 ## **maxnsym** 
 
 
@@ -1157,7 +1067,7 @@ position).
 *Dimensions:* scalar  
 *Default value:* 384  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -1170,9 +1080,6 @@ The default value is sufficient for most applications. It might have to be
 increased in the case of the use of a supercell (unit cell identically
 repeated).
 
-
-* * *
-
 ## **mem_test** 
 
 
@@ -1183,7 +1090,7 @@ repeated).
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t29.in|t29.in]]
 
 
@@ -1198,9 +1105,6 @@ values:
   * 1 the routine tries to allocate the estimated memory, for testing purposes, and if a failure occurs, the routine stops. 
   * 2 like 1, but before stopping, the routine will provide an estimation of the available memory. 
 
-
-* * *
-
 ## **mqgrid** 
 
 
@@ -1211,7 +1115,7 @@ values:
 *Dimensions:* scalar  
 *Default value:* 3001  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t17.in|t17.in]], [[tests/v4/Input/t62.in|t62.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -1223,9 +1127,6 @@ values:
 Govern the size of the one-dimensional information related to
 pseudopotentials, in reciprocal space : potentials, or projector functions.
 
-
-* * *
-
 ## **nbdblock** 
 
 
@@ -1236,7 +1137,7 @@ pseudopotentials, in reciprocal space : potentials, or projector functions.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t93.in|t93.in]], [[tests/v4/Input/t94.in|t94.in]]
 
 
@@ -1248,9 +1149,6 @@ In case of non-standard, blocked algorithms for the optimization of the
 wavefunctions (that is, if [[wfoptalg]]=4):
 
   * if [[wfoptalg]]=4, [[nbdblock]] defines the number of blocks (the number of bands in the block is then [[nband]]/[[nbdblock]] ). 
-
-
-* * *
 
 ## **nc_xccc_gspace** 
 
@@ -1266,7 +1164,7 @@ wavefunctions (that is, if [[wfoptalg]]=4):
   
 *Comment:* 0 when [[usepaw]]=0, 1 when [[usepaw]]=1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t10.in|t10.in]], [[tests/v7/Input/t45.in|t45.in]]
 
 
@@ -1287,9 +1185,6 @@ G-space. Several NC pseudos available in the Abinit table are not optimized
 for the G-space formalism and users are strongly invited to perform
 convergence studies with respect to ecut before using this option.
 
-
-* * *
-
 ## **nctime** 
 
 
@@ -1300,7 +1195,7 @@ convergence studies with respect to ecut before using this option.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - etsf_io:  [[tests/etsf_io/Input/t21.in|t21.in]]
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
@@ -1342,9 +1237,6 @@ file :
     }
      
 
-
-* * *
-
 ## **nloc_alg** 
 
 
@@ -1355,7 +1247,7 @@ file :
 *Dimensions:* scalar  
 *Default value:* 4  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - v2:  [[tests/v2/Input/t37.in|t37.in]], [[tests/v2/Input/t38.in|t38.in]]
     - v4:  [[tests/v4/Input/t20.in|t20.in]], [[tests/v4/Input/t61.in|t61.in]], [[tests/v4/Input/t62.in|t62.in]]
 
@@ -1380,9 +1272,6 @@ Note: internally, [[nloc_alg]] is stored in _ nloalg(1) _ . See also
 [[nloc_mem]] for the tuning of the memory used in the non-local operator
 application.
 
-
-* * *
-
 ## **nloc_mem** 
 
 
@@ -1395,7 +1284,7 @@ application.
 1 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
 
 
@@ -1421,9 +1310,6 @@ Note: internally, sign([[nloc_mem]]) is stored in _ nloalg(2) _ and
 abs([[nloc_mem]])-1 is stored in _ nloalg(3) _ . See also [[nloc_alg]] for the
 algorithm for the non-local operator application.
 
-
-* * *
-
 ## **nnsclo** 
 
 
@@ -1434,7 +1320,7 @@ algorithm for the non-local operator application.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [39/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [39/920] in all abinit tests, [2/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
@@ -1464,9 +1350,6 @@ The Default value of 0 -- for wavelets calculations ([[usewvl]]=1) --
 corresponds to make 2 steps with 3 non-self consistent loops , 2 steps with 2
 non-self consistent loops, then the next ones with 1 non-self consistent loop.
 
-
-* * *
-
 ## **nnsclohf** 
 
 
@@ -1479,7 +1362,7 @@ non-self consistent loops, then the next ones with 1 non-self consistent loop.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t65.in|t65.in]], [[tests/v7/Input/t66.in|t66.in]]
 
 
@@ -1493,9 +1376,6 @@ The Default value is 0 when [[usefock]] = 0. Default value is 1 when
 [[usefock]] = 1 and correspond to update occupied wavefunctions at each self-
 consistent loop.
 
-
-* * *
-
 ## **normpawu** 
 
 
@@ -1506,7 +1386,7 @@ consistent loop.
 *Dimensions:* ([[ntypat]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1519,9 +1399,6 @@ be renormalized to 1 within PAW sphere.
   * [[normpawu]]=0 : leave projector 
   * [[normpawu]]=1 : renormalize 
 
-
-* * *
-
 ## **npulayit** 
 
 
@@ -1533,7 +1410,7 @@ be renormalized to 1 within PAW sphere.
 *Default value:* 7  
 *Only relevant if:* [[iscf]] in [7,17]  
 
-??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [12/920] in all abinit tests, [1/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t99.in|t99.in]]
     - tutorial:  [[tests/tutorial/Input/tfold2bloch_1.in|tfold2bloch_1.in]]
     - v3:  [[tests/v3/Input/t47.in|t47.in]], [[tests/v3/Input/t78.in|t78.in]]
@@ -1550,9 +1427,6 @@ be renormalized to 1 within PAW sphere.
 Gives the number of previous iterations involved in Pulay mixing (mixing
 during electronic SC iterations).
 
-
-* * *
-
 ## **nscforder** 
 
 
@@ -1562,7 +1436,7 @@ during electronic SC iterations).
 *Dimensions:* scalar  
 *Default value:* 16  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t00.in|t00.in]], [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t03.in|t03.in]], [[tests/bigdft/Input/t04.in|t04.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
     - built-in:  [[tests/built-in/Input/testin_bigdft.in|testin_bigdft.in]]
@@ -1578,9 +1452,6 @@ variable). This variable is of seldom use since the default value is large
 enough. Nonetheless, possible values are 8, 14, 16, 20, 24, 30, 40, 50, 60,
 100. Values greater than 20 are included in ABINIT for test purposes only.
 
-
-* * *
-
 ## **optforces** 
 
 
@@ -1593,7 +1464,7 @@ enough. Nonetheless, possible values are 8, 14, 16, 20, 24, 30, 40, 50, 60,
 2 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [49/920] in all abinit tests, [17/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [49/920] in all abinit tests, [17/116] in abinit tutorials"
     - bigdft:  [[tests/bigdft/Input/t00.in|t00.in]], [[tests/bigdft/Input/t01.in|t01.in]], [[tests/bigdft/Input/t02.in|t02.in]], [[tests/bigdft/Input/t05.in|t05.in]], [[tests/bigdft/Input/t09.in|t09.in]], [[tests/bigdft/Input/t10.in|t10.in]], [[tests/bigdft/Input/t11.in|t11.in]], [[tests/bigdft/Input/t12.in|t12.in]], [[tests/bigdft/Input/t14.in|t14.in]], [[tests/bigdft/Input/t16.in|t16.in]], [[tests/bigdft/Input/t17.in|t17.in]], [[tests/bigdft/Input/t18.in|t18.in]], [[tests/bigdft/Input/t20.in|t20.in]], [[tests/bigdft/Input/t21.in|t21.in]], [[tests/bigdft/Input/t23.in|t23.in]], [[tests/bigdft/Input/t31.in|t31.in]], [[tests/bigdft/Input/t32.in|t32.in]], [[tests/bigdft/Input/t33.in|t33.in]], [[tests/bigdft/Input/t34.in|t34.in]]
     - bigdft_paral:  [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t01.in|t01.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]], [[tests/bigdft_paral/Input/t02.in|t02.in]]
     - built-in:  [[tests/built-in/Input/testin_bigdft.in|testin_bigdft.in]]
@@ -1617,9 +1488,6 @@ Allows to choose options for the calculation of forces.
   * [[optforces]]=1 : calculation of forces at each SCF iteration, allowing to use forces as criterion to stop the SCF cycles 
   * [[optforces]]=2 : calculation of forces at the end of the SCF iterations (like the stresses) 
 
-
-* * *
-
 ## **optnlxccc** 
 
 
@@ -1630,7 +1498,7 @@ Allows to choose options for the calculation of forces.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t45.in|t45.in]]
 
 
@@ -1644,9 +1512,6 @@ present, only relevant for the FHI type of pseudopotentials, with pspcod=6 .
   * [[optnlxccc]]=1 : uses the old psp6cc.f routine, with inconsistent treatment of real-space derivatives of the core function (computed in this routine, while splined in the other parts of the code) 
   * [[optnlxccc]]=2 : consistent calculation derivatives, in the psp6cc_dhr.f routine from DHamann. 
 
-
-* * *
-
 ## **ortalg** 
 
 
@@ -1659,7 +1524,7 @@ present, only relevant for the FHI type of pseudopotentials, with pspcod=6 .
 2 otherwise.
   
 
-??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
     - fast:  [[tests/fast/Input/t27.in|t27.in]]
@@ -1686,9 +1551,6 @@ The maximal value is presently 4 and -4.
 Tests have shown that [[ortalg]]=2 or -2 is suitable for use on the available
 platforms.
 
-
-* * *
-
 ## **papiopt** 
 
 
@@ -1698,7 +1560,7 @@ platforms.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1717,9 +1579,6 @@ routine. All the timing output of ABINIT is then done with PAPI values. The
 measurements are more accurate and give also access to the flops of the
 calculation.
 
-
-* * *
-
 ## **pawprt_b** 
 
 
@@ -1730,7 +1589,7 @@ calculation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1742,9 +1601,6 @@ be used in conjuction with: **
 [[pawprtwf]]=1 ** and [[pawprt_k]]. The indexing of the bands start with one
 for the lowest occupied band and goes up from there.
 
-
-* * *
-
 ## **pawprt_k** 
 
 
@@ -1755,7 +1611,7 @@ for the lowest occupied band and goes up from there.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1766,9 +1622,6 @@ Forces the output of the all-electron wavefunction for only a single k-point.
 To be used in conjuction with: **  
 [[pawprtwf]]=1 ** and [[pawprt_b]]. The indexing follows the order in ouptput
 of the internal variable ** kpt ** in the beginning of the run.
-
-
-* * *
 
 ## **pawujat** 
 
@@ -1781,7 +1634,7 @@ of the internal variable ** kpt ** in the beginning of the run.
 *Default value:* 1  
 *Comment:*  i.e. the first atom treated with PAW+U.  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
     - v5:  [[tests/v5/Input/t39.in|t39.in]]
 
@@ -1793,9 +1646,6 @@ of the internal variable ** kpt ** in the beginning of the run.
 Determines the atom for which U (or J) should be determined. See also
 [[macro_uj]].
 
-
-* * *
-
 ## **pawujrad** 
 
 
@@ -1806,7 +1656,7 @@ Determines the atom for which U (or J) should be determined. See also
 *Dimensions:* scalar  
 *Default value:* 20 a.u.  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
     - v5:  [[tests/v5/Input/t39.in|t39.in]]
 
@@ -1820,9 +1670,6 @@ larger sphere radius. See also [[macro_uj]]. As most projector functions are
 localized within r_paw to ≈80%, 20 a.u. contains ≈100% of the wavefunction and
 corresponds to r_paw -&gt; ∞.
 
-
-* * *
-
 ## **pawujv** 
 
 
@@ -1833,7 +1680,7 @@ corresponds to r_paw -&gt; ∞.
 *Dimensions:* scalar  
 *Default value:* 0.1 eV  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tudet_2.in|tudet_2.in]]
     - v5:  [[tests/v5/Input/t39.in|t39.in]]
 
@@ -1845,9 +1692,6 @@ corresponds to r_paw -&gt; ∞.
 Amplitude of the potential shift for the determination of U (or J). See also
 [[macro_uj]].
 
-
-* * *
-
 ## **plowan_bandf** 
 
 
@@ -1858,7 +1702,7 @@ Amplitude of the potential shift for the determination of U (or J). See also
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -1868,9 +1712,6 @@ Amplitude of the potential shift for the determination of U (or J). See also
 
   
 Gives the upper band to include in the calculation of Wannier functions
-
-
-* * *
 
 ## **plowan_bandi** 
 
@@ -1882,7 +1723,7 @@ Gives the upper band to include in the calculation of Wannier functions
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -1892,9 +1733,6 @@ Gives the upper band to include in the calculation of Wannier functions
 
   
 Gives the lower band to include in the calculation of Wannier functions
-
-
-* * *
 
 ## **plowan_compute** 
 
@@ -1906,7 +1744,7 @@ Gives the lower band to include in the calculation of Wannier functions
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -1931,9 +1769,6 @@ parallelized. (The calculation of projections is detailed in [ Phys. Rev. B
 77, 205112, (2008)
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.205112) )
 
-
-* * *
-
 ## **plowan_iatom** 
 
 
@@ -1944,7 +1779,7 @@ parallelized. (The calculation of projections is detailed in [ Phys. Rev. B
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -1956,9 +1791,6 @@ parallelized. (The calculation of projections is detailed in [ Phys. Rev. B
 Gives the indices of the [[plowan_natom]] atoms on which the projections will
 be done.
 
-
-* * *
-
 ## **plowan_it** 
 
 
@@ -1969,7 +1801,7 @@ be done.
 *Dimensions:* (3,[[plowan_nt]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -1984,9 +1816,6 @@ using the real space vectors basis. These atoms are used to define Wannier
 functions in real space. These real space Wannier functions are used as a
 basis to compute the Hamiltonian.
 
-
-* * *
-
 ## **plowan_lcalc** 
 
 
@@ -1997,7 +1826,7 @@ basis to compute the Hamiltonian.
 *Dimensions:* (sum([[plowan_nbl]]))  
 *Default value:* -1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2009,9 +1838,6 @@ basis to compute the Hamiltonian.
 Gives the [[plowan_nbl]] values of angular momenta for each atom, in the order
 of the atoms as given in [[plowan_iatom]].
 
-
-* * *
-
 ## **plowan_natom** 
 
 
@@ -2022,7 +1848,7 @@ of the atoms as given in [[plowan_iatom]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2032,9 +1858,6 @@ of the atoms as given in [[plowan_iatom]].
 
   
 Gives the number of atoms on which the projection will be done
-
-
-* * *
 
 ## **plowan_nbl** 
 
@@ -2046,7 +1869,7 @@ Gives the number of atoms on which the projection will be done
 *Dimensions:* ([[plowan_natom]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2057,9 +1880,6 @@ Gives the number of atoms on which the projection will be done
   
 Gives the total number of angular momenta (over all atoms) to compute the
 projections.
-
-
-* * *
 
 ## **plowan_nt** 
 
@@ -2072,7 +1892,7 @@ energy are computed
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2085,9 +1905,6 @@ Requires [[plowan_realspace]] to be greater than 0. Gives a number of selected
 atoms. These atoms are used to define Wannier functions in real space. These
 real space Wannier functions are used as a basis to compute the Hamiltonian.
 
-
-* * *
-
 ## **plowan_projcalc** 
 
 
@@ -2098,7 +1915,7 @@ real space Wannier functions are used as a basis to compute the Hamiltonian.
 *Dimensions:* (sum([[plowan_nbl]]))  
 *Default value:* -1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2111,9 +1928,6 @@ Gives the [[plowan_nbl]] values of projectors for each atom, in the order of
 the atoms as given in [[plowan_iatom]]. The index i for the projectors refers
 to the ith number on line orbitals of the PAW atomic data file.
 
-
-* * *
-
 ## **plowan_realspace** 
 
 
@@ -2124,7 +1938,7 @@ to the ith number on line orbitals of the PAW atomic data file.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
 
@@ -2138,9 +1952,6 @@ Can take the following values:
   * 1=&gt; Compute PLO Wannier in real space for analysis. These data can also be used in a following dataset to perform a Wannier interpolation. 
   * 2=&gt; Do simple Wannier Interpolation for a given k points starting from real space Wannier function Hamiltonian computed in a preceding dataset. 
 
-
-* * *
-
 ## **prepscphon** 
 
 
@@ -2151,7 +1962,7 @@ Can take the following values:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2164,9 +1975,6 @@ q-point, and there is presently no tool to symmetrize or merge these files, so
 use anaddb instead (with prtscphon input variable). The abinit input variable
 is destined to someday bypass the use of anaddb for scphon calculations.
 
-
-* * *
-
 ## **prtbltztrp** 
 
 
@@ -2177,7 +1985,7 @@ is destined to someday bypass the use of anaddb for scphon calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t11.in|t11.in]]
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
@@ -2191,9 +1999,6 @@ the [ BoltzTraP
 code](https://www.imc.tuwien.ac.at/forschungsbereich_theoretische_chemie/forschungsgruppen/prof_dr_gkh_madsen_theoretical_materials_chemistry/boltztrap/)
 by Georg Madsen.
 
-
-* * *
-
 ## **prtcif** 
 
 
@@ -2204,7 +2009,7 @@ by Georg Madsen.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tfold2bloch_1.in|tfold2bloch_1.in]]
     - v6:  [[tests/v6/Input/t08.in|t08.in]], [[tests/v6/Input/t09.in|t09.in]]
 
@@ -2216,9 +2021,6 @@ by Georg Madsen.
 If set to 1, a CIF file is output with the crystallographic data for the
 present run (cell size shape and atomic positions).
 
-
-* * *
-
 ## **prtdipole** 
 
 
@@ -2229,7 +2031,7 @@ present run (cell size shape and atomic positions).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t06.in|t06.in]]
 
 
@@ -2239,9 +2041,6 @@ present run (cell size shape and atomic positions).
 
 Print out dipole of unit cell, calculated in real space for the primitive cell
 only. Under development.
-
-
-* * *
 
 ## **prtnest** 
 
@@ -2253,7 +2052,7 @@ only. Under development.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
     - v7:  [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t90.in|t90.in]]
 
@@ -2266,9 +2065,6 @@ If set to 1, the nesting function for the k-point grid is printed. For the
 moment the path in q space for the nesting function is fixed, but will become
 an input as well.
 
-
-* * *
-
 ## **prtposcar** 
 
 
@@ -2279,7 +2075,7 @@ an input as well.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t01.in|t01.in]]
 
 
@@ -2292,9 +2088,6 @@ codes for frozen phonon calculations. See the associated script in
 ~abinit/extras/post_processing/phondisp2abi.py for further details on
 interfacing with PHON, PHONOPY, etc...
 
-
-* * *
-
 ## **recefermi** 
 
 
@@ -2305,7 +2098,7 @@ interfacing with PHON, PHONOPY, etc...
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2317,9 +2110,6 @@ interfacing with PHON, PHONOPY, etc...
 Used in Recursion method ([[tfkinfunc]]=2). In the first SCF calculation it
 fixes the initial guess for the Fermi energy.
 
-
-* * *
-
 ## **recgratio** 
 
 
@@ -2330,7 +2120,7 @@ fixes the initial guess for the Fermi energy.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
 
@@ -2347,9 +2137,6 @@ density and the recursion coefficients are interpolated on the fine grid by
 FFT interpolation. Note that ngfft/recgratio=number of points of the coarse
 grid has to be compatible with the parallelization parameters.
 
-
-* * *
-
 ## **recnpath** 
 
 
@@ -2360,7 +2147,7 @@ grid has to be compatible with the parallelization parameters.
 *Dimensions:* scalar  
 *Default value:* 500  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2374,9 +2161,6 @@ discretisation points to compute some path integral in the recursion method ;
 those path integrals are used to compute the entropy and the eigenvalues
 energy. during the latest SFC cycles.
 
-
-* * *
-
 ## **recnrec** 
 
 
@@ -2387,7 +2171,7 @@ energy. during the latest SFC cycles.
 *Dimensions:* scalar  
 *Default value:* 10  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2401,9 +2185,6 @@ recursion, that is the dimension of the krylov space we use to compute
 density. If the precision set by [[rectolden]] is reached before that order,
 the recursion method automatically stops.
 
-
-* * *
-
 ## **recptrott** 
 
 
@@ -2414,7 +2195,7 @@ the recursion method automatically stops.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2433,9 +2214,6 @@ be necessary to increase [[ngfft]]. The discretisation error is essentially
 the discretisation error of the green kernel exp((recptrott/beta*|r|^2)) on
 the ngfft grid.
 
-
-* * *
-
 ## **recrcut** 
 
 
@@ -2446,7 +2224,7 @@ the ngfft grid.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2460,9 +2238,6 @@ time in the case of the recursion method in a large cell: the density at a
 point will be computed with taking account only of a sphere of radius
 [[recrcut]].
 
-
-* * *
-
 ## **rectesteg** 
 
 
@@ -2473,7 +2248,7 @@ point will be computed with taking account only of a sphere of radius
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t76.in|t76.in]]
 
 
@@ -2483,9 +2258,6 @@ point will be computed with taking account only of a sphere of radius
 
 Used in Recursion method ([[tfkinfunc]]=2). It is used to test an electron gas
 by putting the ion potential equal to zero.
-
-
-* * *
 
 ## **rectolden** 
 
@@ -2498,7 +2270,7 @@ by putting the ion potential equal to zero.
 *Default value:* 0.0  
 *Comment:* Default value to be changed.  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
 
@@ -2513,9 +2285,6 @@ cycle to stop. That electronic density difference is computed in the infinity
 norm (that is, it is computed point-by-point, and then the maximum difference
 is computed).
 
-
-* * *
-
 ## **symmorphi** 
 
 
@@ -2526,7 +2295,7 @@ is computed).
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [28/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [28/920] in all abinit tests, [5/116] in abinit tutorials"
     - fast:  [[tests/fast/Input/t07.in|t07.in]]
     - paral:  [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - seq:  [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
@@ -2560,9 +2329,6 @@ were restricted to the IBZ. In order to prepare GW calculations, and to
 perform GW calculations, [[symmorphi]]=0 was to be used, together with
 [[nsym]]=0.
 
-
-* * *
-
 ## **tfkinfunc** 
 
 
@@ -2573,7 +2339,7 @@ perform GW calculations, [[symmorphi]]=0 was to be used, together with
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - v4:  [[tests/v4/Input/t97.in|t97.in]]
     - v5:  [[tests/v5/Input/t75.in|t75.in]], [[tests/v5/Input/t76.in|t76.in]]
@@ -2612,9 +2378,6 @@ symmetries.
 In the recursion method the following variables are set to: [[useylm]]=1,
 [[userec]]=1.
 
-
-* * *
-
 ## **tfw_toldfe** 
 
 
@@ -2626,7 +2389,7 @@ In the recursion method the following variables are set to: [[useylm]]=1,
 *Default value:* 1.0E-6 or [[toldfe]] is present  
 *Only relevant if:* [[tfkinfunc]]=11  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t11.in|t11.in]]
 
 
@@ -2642,9 +2405,6 @@ correction) to stop and the gradient correction to be added.
 Can be specified in Ha (the default), Ry, eV or Kelvin, since it has the
 'ENERGY' characteristics.
 
-
-* * *
-
 ## **tolrde** 
 
 
@@ -2654,7 +2414,7 @@ Can be specified in Ha (the default), Ry, eV or Kelvin, since it has the
 *Dimensions:* scalar  
 *Default value:* 0.005  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [1/116] in abinit tutorials"
     - atompaw:  [[tests/atompaw/Input/t04.in|t04.in]]
     - tutoparal:  [[tests/tutoparal/Input/tdfpt_04.in|tdfpt_04.in]]
 
@@ -2673,9 +2433,6 @@ This stopping criterion is present for both GS and RF calculations. In RF
 calculations, [[tolrde]] is actually doubled before comparing with the above-
 mentioned ratio, for historical reasons.
 
-
-* * *
-
 ## **use_gemm_nonlop** 
 
 
@@ -2687,7 +2444,7 @@ mentioned ratio, for historical reasons.
 *Default value:* 0  
 *Comment:* because it is not usually worth using it unless bandpp is large and it requires additional memory  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t30.in|t30.in]]
 
 
@@ -2709,9 +2466,6 @@ The performance depends crucially on having a good BLAS installed. Provided
 the BLAS supports OpenMP, this option also yields very good scaling for the
 nonlocal operator.
 
-
-* * *
-
 ## **use_nonscf_gkk** 
 
 
@@ -2723,7 +2477,7 @@ nonlocal operator.
 *Default value:* 0  
 *Comment:* Default is 0 for the moment. Do not use non-scf method.  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]]
     - v5:  [[tests/v5/Input/t85.in|t85.in]]
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
@@ -2753,9 +2507,6 @@ or so is recommended everywhere. There may be problems using use_nonscf_gkk =
 1 with non-symmorphic symmetries - please check (at least) that lifetimes for
 phonons go to 0 for acoustic modes at Gamma.
 
-
-* * *
-
 ## **usedmft** 
 
 
@@ -2766,7 +2517,7 @@ phonons go to 0 for acoustic modes at Gamma.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -2834,9 +2585,6 @@ calculation is not done and only projections are computed at the end of the
 calculation. They can be used by an external code or used to compute the
 screened interaction (see variable [[ucrpa]]).
 
-
-* * *
-
 ## **useria** 
 
 
@@ -2846,7 +2594,7 @@ screened interaction (see variable [[ucrpa]]).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2859,9 +2607,6 @@ of the ABINIT code, and should ease independent developments (hopefully
 integrated in the official version afterwards).  
 Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
-
-
-* * *
 
 ## **userib** 
 
@@ -2872,7 +2617,7 @@ dtset%useria .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2885,9 +2630,6 @@ of the ABINIT code, and should ease independent developments (hopefully
 integrated in the official version afterwards).  
 Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
-
-
-* * *
 
 ## **useric** 
 
@@ -2898,7 +2640,7 @@ dtset%useria .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2911,9 +2653,6 @@ of the ABINIT code, and should ease independent developments (hopefully
 integrated in the official version afterwards).  
 Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
-
-
-* * *
 
 ## **userid** 
 
@@ -2924,7 +2663,7 @@ dtset%useria .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2937,9 +2676,6 @@ of the ABINIT code, and should ease independent developments (hopefully
 integrated in the official version afterwards).  
 Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
-
-
-* * *
 
 ## **userie** 
 
@@ -2950,7 +2686,7 @@ dtset%useria .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2964,9 +2700,6 @@ integrated in the official version afterwards).
 Internally, they are available in the dtset structured datatype, e.g.
 dtset%useria .
 
-
-* * *
-
 ## **userra** 
 
 
@@ -2976,7 +2709,7 @@ dtset%useria .
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2984,9 +2717,6 @@ dtset%useria .
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
-
-
-* * *
 
 ## **userrb** 
 
@@ -2997,7 +2727,7 @@ These are user-definable with the same purpose as [[useria]] and cie.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -3005,9 +2735,6 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
-
-
-* * *
 
 ## **userrc** 
 
@@ -3018,7 +2745,7 @@ These are user-definable with the same purpose as [[useria]] and cie.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -3026,9 +2753,6 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
-
-
-* * *
 
 ## **userrd** 
 
@@ -3039,7 +2763,7 @@ These are user-definable with the same purpose as [[useria]] and cie.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -3047,9 +2771,6 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
-
-
-* * *
 
 ## **userre** 
 
@@ -3060,7 +2781,7 @@ These are user-definable with the same purpose as [[useria]] and cie.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -3068,9 +2789,6 @@ These are user-definable with the same purpose as [[useria]] and cie.
 
 
 These are user-definable with the same purpose as [[useria]] and cie.
-
-
-* * *
 
 ## **useylm** 
 
@@ -3085,7 +2803,7 @@ These are user-definable with the same purpose as [[useria]] and cie.
 0 otherwise.
   
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_wannier90.in|testin_wannier90.in]]
     - v4:  [[tests/v4/Input/t01.in|t01.in]], [[tests/v4/Input/t02.in|t02.in]], [[tests/v4/Input/t03.in|t03.in]]
     - wannier90:  [[tests/wannier90/Input/t00.in|t00.in]], [[tests/wannier90/Input/t01.in|t01.in]], [[tests/wannier90/Input/t02.in|t02.in]]
@@ -3106,9 +2824,6 @@ P  lmn  (r)=Y  lm  (r)*p  ln  (r)
 When [[useylm]]=0, the sum over Y_lm can be reduced to a Legendre polynomial
 form.
 
-
-* * *
-
 ## **wfoptalg** 
 
 
@@ -3120,7 +2835,7 @@ form.
 *Default value:* [[AUTO_FROM_PSP]]  
 *Comment:* 0 when [[usepaw]]=0 (norm-conserving pseudopotentials), 10 when [[usepaw]]=1 (PAW) ; 114 if [[paral_kgb]]=1.  
 
-??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [16/920] in all abinit tests, [0/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]], [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t21.in|t21.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t49.in|t49.in]]
     - paral:  [[tests/paral/Input/t21.in|t21.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t41.in|t41.in]]
@@ -3145,9 +2860,6 @@ The different possibilities are :
   * [[wfoptalg]]=114 : A new version of [[wfoptalg]]=14 which is more efficient for few blocks and can take advantage of OpenMP if abinit is compiled with a multithreaded linear algebra library. With more than 1 thread [[npfft]] shoud NOT be used for the time being. 
   * [[wfoptalg]]=1 : new algorithm based on Chebyshev filtering, designed for very large number of processors, in the regime where LOBPCG does not scale anymore. It is not able to use preconditionning and therefore might converge slower than other algorithms. By design, it will ** not ** converge the last bands: it is recommended to use slightly more bands than necessary. For usage with [[tolwfr]], it is imperative to use [[nbdbuf]]. For more performance, try [[use_gemm_nonlop]]. For more information, see the [ performance guide ](../../theory/howto_chebfi.pdf) and the [ paper ](https://arxiv.org/abs/1406.4350) by A. Levitt and M. Torrent. Status: experimental but usable. Questions and bug reports should be sent to antoine (dot) levitt (at) gmail.com. 
 
-
-* * *
-
 ## **xc_denpos** 
 
 
@@ -3158,7 +2870,7 @@ The different possibilities are :
 *Dimensions:* scalar  
 *Default value:* 1e-14  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t13.in|t13.in]]
 
 
@@ -3183,9 +2895,6 @@ case, setting [[xc_denpos]] to 1.0e-7 ... 1.0e-6 has been seen to allow good
 convergence. Of course, this will affect the numerical results somehow, and
 one should play a bit with this value to avoid incorrect calculations.
 
-
-* * *
-
 ## **xc_tb09_c** 
 
 
@@ -3195,7 +2904,7 @@ one should play a bit with this value to avoid incorrect calculations.
 *Dimensions:* scalar  
 *Default value:* 99.99  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t13.in|t13.in]]
 
 
@@ -3220,7 +2929,4 @@ d3r)
 The c parameter is evaluated thanks to the previous equation when xc_tb09_c is
 equal to the "magic" default value 99.99. The c parameter can also be fixed to
 some (property-optimized or material-optimized) value by using this variable.
-
-
-* * *
 

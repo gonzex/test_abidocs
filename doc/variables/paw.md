@@ -21,7 +21,7 @@ paw input variables to be used in the input file for the abinit executable.
 *Default value:* 2.0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t17.in|t17.in]]
 
 
@@ -43,9 +43,6 @@ box cut-off ratio larger than two, the density is never exact. Sometimes, this
 ratio must be much larger than two for the computation to be converged at the
 required level of accuracy.
 
-
-* * *
-
 ## **dmatpawu** 
 
 
@@ -56,7 +53,7 @@ required level of accuracy.
 *Default value:* *-10.0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[usedmatpu]]!=0  
 
-??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - tutorial:  [[tests/tutorial/Input/tdftu_3.in|tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in|tdftu_4.in]]
     - v5:  [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t37.in|t37.in]]
@@ -130,9 +127,6 @@ one is ignored by the code.
 
   
 
-
-* * *
-
 ## **dmatpuopt** 
 
 
@@ -143,7 +137,7 @@ one is ignored by the code.
 *Default value:* 2  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (click to open) (Moderately used, [36/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [36/920] in all abinit tests, [0/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -172,9 +166,6 @@ In the general case [[dmatpuopt]]=2 is suitable. The use of [[dmatpuopt]]=1 is
 restricted to PAW datasets in which the first atomic wavefunction of the
 correlated subspace is a normalized atomic eigenfunction.
 
-
-* * *
-
 ## **dmatudiag** 
 
 
@@ -185,7 +176,7 @@ correlated subspace is a normalized atomic eigenfunction.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1 and [[nspden]] != 4  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t19.in|t19.in]]
 
 
@@ -201,9 +192,6 @@ Relevant values are:
   * 1: occupation matrix is diagonalized and printed in log file at each SCF cycle (eigenvectors are also given in the log file). 
   * 2: for testing purpose. 
 
-
-* * *
-
 ## **f4of2_sla** 
 
 
@@ -214,7 +202,7 @@ Relevant values are:
 *Default value:* ['0.625 for d electron', '0.6681 for f electron']  
 *Only relevant if:* [[usepaw]]==1 and ([[usepawu]]==1 or [[usedmft]]==1)  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t99.in|t99.in]]
     - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
     - v8:  [[tests/v8/Input/t01.in|t01.in]]
@@ -228,9 +216,6 @@ This gives the ratio of Slater Integrals F4 and F2. It is used in DFT+U or
 DFT+DMFT for the calculation of the orbital dependent screened coulomb
 interaction.
 
-
-* * *
-
 ## **f6of2_sla** 
 
 
@@ -241,7 +226,7 @@ interaction.
 *Default value:* 0.4943  
 *Only relevant if:* ([[usepawu]]==1 or [[usedmft]]==1) and [[lpawu]]=3  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t21.in|t21.in]]
 
 
@@ -253,9 +238,6 @@ Gives the ratio of Slater Integrals F6 and F2. It is used with
 [[f4of2_sla]]==3 in DFT+U or DFT+DMFT for the calculation of the orbital
 dependent screened coulomb interaction.
 
-
-* * *
-
 ## **iboxcut** 
 
 
@@ -265,7 +247,7 @@ dependent screened coulomb interaction.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t17.in|t17.in]]
 
 
@@ -279,9 +261,6 @@ conserving.
   * if set to 0 all reciprocal space summations are done in a sphere contained in the FFT box. 
   * if set to 1 all reciprocal space summations are done in the whole FFT box (useful for tests). 
 
-
-* * *
-
 ## **jpawu** 
 
 
@@ -293,7 +272,7 @@ conserving.
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (click to open) (Moderately used, [37/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [37/920] in all abinit tests, [3/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -312,9 +291,6 @@ Gives the value of the screened exchange interaction between correlated
 electrons corresponding to [[lpawu]] for each species.  
 In the case where [[lpawu]] =-1, the value is not used.
 
-
-* * *
-
 ## **lexexch** 
 
 
@@ -325,7 +301,7 @@ In the case where [[lpawu]] =-1, the value is not used.
 *Default value:* -1  
 *Only relevant if:* [[useexexch]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t18.in|t18.in]]
 
 
@@ -335,9 +311,6 @@ In the case where [[lpawu]] =-1, the value is not used.
 
 Give for each species the value of the angular momentum (only values 2 or 3
 are allowed) on which to apply the exact exchange correction.
-
-
-* * *
 
 ## **lpawu** 
 
@@ -349,7 +322,7 @@ are allowed) on which to apply the exact exchange correction.
 *Default value:* *-1  
 *Only relevant if:* [[usepawu]]==1 or [[usepawu]]== 2  
 
-??? note "Test list (click to open) (Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -370,9 +343,6 @@ are allowed)  on which to apply the LDA+U correction.
   * If equal to 2 (d-orbitals)  or 3 (f-orbitals), values of [[upawu]] and  [[jpawu]] are used in the calculation. 
   * If equal to -1: do not apply LDA+U correction on the species. 
 
-
-* * *
-
 ## **mqgriddg** 
 
 
@@ -383,7 +353,7 @@ are allowed)  on which to apply the LDA+U correction.
 *Dimensions:* scalar  
 *Default value:* 3001  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials"
     - v4:  [[tests/v4/Input/t17.in|t17.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -396,9 +366,6 @@ Maximum number of wavevectors used to sample the local part of the potential,
 in PAW. Actually referred to as mqgrid_vl internally. Should change name to
 the latter ... See also [[mqgrid]]
 
-
-* * *
-
 ## **ngfftdg** 
 
 
@@ -409,7 +376,7 @@ the latter ... See also [[mqgrid]]
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t24.in|t24.in]], [[tests/mpiio/Input/t25.in|t25.in]], [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - paral:  [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t24.in|t24.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t27.in|t27.in]], [[tests/paral/Input/t29.in|t29.in]], [[tests/paral/Input/t30.in|t30.in]]
 
@@ -421,9 +388,6 @@ the latter ... See also [[mqgrid]]
 This variable has the same meaning as ngfft (gives the size of fast Fourier
 transform (fft) grid in three dimensions) but concerns the "double grid" only
 used for PAW calculations.
-
-
-* * *
 
 ## **pawcpxocc** 
 
@@ -437,7 +401,7 @@ used for PAW calculations.
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t17.in|t17.in]]
     - v7:  [[tests/v7/Input/t32.in|t32.in]]
 
@@ -465,9 +429,6 @@ In order to save CPU time, when molecular dynamics is selected
 ([[ionmov]]&gt;=6) and SCF mixing done on density ([[iscf]]&gt;=10),
 [[pawcpxocc]]=2 is (by default) set to ** 1 **
 
-
-* * *
-
 ## **pawcross** 
 
 
@@ -478,7 +439,7 @@ In order to save CPU time, when molecular dynamics is selected
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -489,9 +450,6 @@ When ** pawcross=1 ** , the overlap between the plane-wave part of one band
 and the on-site part of an other is taken into account in the computation of
 the oscillator strengths. Hence, the completeness of the on-site basis is no
 longer assumed.
-
-
-* * *
 
 ## **pawecutdg** 
 
@@ -505,7 +463,7 @@ longer assumed.
 *Comment:* pawecutdg MUST be specified for PAW calculations.  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [158/920] in all abinit tests, [23/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [158/920] in all abinit tests, [23/116] in abinit tutorials"
     - atompaw:  [[tests/atompaw/Input/t02.in|t02.in]], [[tests/atompaw/Input/t04.in|t04.in]]
     - bigdft:  [[tests/bigdft/Input/t23.in|t23.in]]
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
@@ -551,9 +509,6 @@ be made on the total energy or derived quantities, like forces, but also on
 the two values of the "Compensation charge inside spheres", a quantity written
 in the log file.
 
-
-* * *
-
 ## **pawfatbnd** 
 
 
@@ -564,7 +519,7 @@ in the log file.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1   
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t20.in|t20.in]]
     - v7:  [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
 
@@ -588,9 +543,6 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
   * 1: The fatbands are only resolved in L. 
   * 2: The fatbands are resolved in L and M. 
 
-
-* * *
-
 ## **pawlcutd** 
 
 
@@ -601,7 +553,7 @@ xmgrace FATBANDS_at0001_Ni_is2_l2_m-1). Relevant values are:
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -620,9 +572,6 @@ study. The convergence test might be made on the total energy or derived
 quantities, like forces, but also on the two values of the "Compensation
 charge inside spheres", a quantity written in the log file.
 
-
-* * *
-
 ## **pawlmix** 
 
 
@@ -633,7 +582,7 @@ charge inside spheres", a quantity written in the log file.
 *Default value:* 10  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -650,9 +599,6 @@ in the mixing process.
 This option is useful to save CPU time but DOES have a bearing on the
 numerical accuracy of the results.
 
-
-* * *
-
 ## **pawmixdg** 
 
 
@@ -665,7 +611,7 @@ numerical accuracy of the results.
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
     - paral:  [[tests/paral/Input/t27.in|t27.in]]
@@ -699,9 +645,6 @@ In ** wavelet ** calculations [[usewvl]]=1:
 \- A value of 0 is not allowed.  
 \- Density/potential is mixed in REAL space (Here only one grid is used).
 
-
-* * *
-
 ## **pawnhatxc** 
 
 
@@ -712,7 +655,7 @@ In ** wavelet ** calculations [[usewvl]]=1:
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -730,9 +673,6 @@ demanding, it is possible to bypass it with [[pawnhatxc]]=0; but the numerical
 accuracy can be affected by this choice. It is recommended to test the
 validity of this approximation before use.
 
-
-* * *
-
 ## **pawnphi** 
 
 
@@ -743,7 +683,7 @@ validity of this approximation before use.
 *Default value:* 13  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -755,9 +695,6 @@ Number of phi angles (longitude) used to discretize the data on the atomic
 spheres. This discretization is completely defined by [[pawnphi]] and
 [[pawntheta]].
 
-
-* * *
-
 ## **pawntheta** 
 
 
@@ -768,7 +705,7 @@ spheres. This discretization is completely defined by [[pawnphi]] and
 *Default value:* 12  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -780,9 +717,6 @@ Number of theta angles (latitude) used to discretize the data on the atomic
 spheres. This discretization is completely defined by [[pawntheta]] and
 [[pawnphi]].
 
-
-* * *
-
 ## **pawnzlm** 
 
 
@@ -793,7 +727,7 @@ spheres. This discretization is completely defined by [[pawntheta]] and
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -810,9 +744,6 @@ density are computed at each electronic iteration (they are all computed at
 the first iteration then only those found to be non-zero will be computed ;
 thus the first iteration is more cpu intensive)
 
-
-* * *
-
 ## **pawoptmix** 
 
 
@@ -823,7 +754,7 @@ thus the first iteration is more cpu intensive)
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - built-in:  [[tests/built-in/Input/testin_etsf_io.in|testin_etsf_io.in]]
     - etsf_io:  [[tests/etsf_io/Input/t00.in|t00.in]], [[tests/etsf_io/Input/t09.in|t09.in]]
     - v4:  [[tests/v4/Input/t04.in|t04.in]], [[tests/v4/Input/t05.in|t05.in]], [[tests/v4/Input/t06.in|t06.in]], [[tests/v4/Input/t07.in|t07.in]]
@@ -851,9 +782,6 @@ In cas of mixing problems, the first suggestion is to increase the size of the
 history (see [[npulayit]]). Then it is also possible to play with the
 parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 
-
-* * *
-
 ## **pawoptosc** 
 
 
@@ -863,7 +791,7 @@ parameters of the Kerker mixing: [[diemix]], [[diemac]], etc...
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t29.in|t29.in]]
     - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -883,9 +811,6 @@ set of PAW partial waves is complete.
 If [[pawoptosc]]=2 the matrix elements are computed with the approximated
 expression proposed by Shishkin and Kresse in PRB 74. 035101
 
-
-* * *
-
 ## **pawovlp** 
 
 
@@ -896,7 +821,7 @@ expression proposed by Shishkin and Kresse in PRB 74. 035101
 *Default value:* 5.0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t41.in|t41.in]]
     - v6:  [[tests/v6/Input/t89.in|t89.in]]
     - v7:  [[tests/v7/Input/t08.in|t08.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]]
@@ -923,9 +848,6 @@ The following values are permitted for [[pawovlp]]:
 \- [[pawovlp]]&gt;0\. and &lt;100\. : overlap is allowed only if it is less
 than [[pawovlp]] %
 
-
-* * *
-
 ## **pawprtden** 
 
 
@@ -936,7 +858,7 @@ than [[pawovlp]] %
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -944,9 +866,6 @@ than [[pawovlp]] %
 
 
 ** Deprecated : ** See the [[prtden]]. 
-
-
-* * *
 
 ## **pawprtdos** 
 
@@ -958,7 +877,7 @@ than [[pawovlp]] %
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[prtdos]]==3  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tpaw1_4.in|tpaw1_4.in]]
     - v5:  [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t20.in|t20.in]]
     - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
@@ -990,9 +909,6 @@ spheres.
 \- In that case, the [[ratsph]] variable is automatically set to the PAW
 radius.
 
-
-* * *
-
 ## **pawprtvol** 
 
 
@@ -1003,7 +919,7 @@ radius.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [24/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [24/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v5:  [[tests/v5/Input/t08.in|t08.in]], [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t66.in|t66.in]]
@@ -1031,9 +947,6 @@ the 1st and last atom are printed.
 When [[pawprtvol]]&lt;0, all components of rho_ij and D_ij matrices for all
 atoms are printed.  
 
-
-* * *
-
 ## **pawprtwf** 
 
 
@@ -1044,7 +957,7 @@ atoms are printed.
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - etsf_io:  [[tests/etsf_io/Input/t09.in|t09.in]]
 
 
@@ -1068,9 +981,6 @@ contributions to the all-electron wavefunction. By default the full available
 set of bands and k-points are ouput, but a single band and k-point index can
 be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
 
-
-* * *
-
 ## **pawspnorb** 
 
 
@@ -1083,7 +993,7 @@ be requested by using the variables [[pawprt_b]] and [[pawprt_k]].
   
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [1/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]]
     - mpiio:  [[tests/mpiio/Input/t28.in|t28.in]]
     - paral:  [[tests/paral/Input/t28.in|t28.in]]
@@ -1121,9 +1031,6 @@ reversal symmetry has to be avoided.
 An artificial scaling of the spin-orbit can be introduced thanks to the
 [[spnorbscl]] input variable.
 
-
-* * *
-
 ## **pawstgylm** 
 
 
@@ -1134,7 +1041,7 @@ An artificial scaling of the spin-orbit can be introduced thanks to the
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]=1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -1161,9 +1068,6 @@ Note:
 g_l(r) are shape functions (analytically known)  
 Y_lm(r) are real spherical harmonics
 
-
-* * *
-
 ## **pawsushat** 
 
 
@@ -1174,7 +1078,7 @@ Y_lm(r) are real spherical harmonics
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[optdriver]]==0   
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1198,9 +1102,6 @@ Possible choices:
 computed.  
 \- [[pawsushat]]=1 : the whole suscep. matrix (PW + PAW on-site) is computed.  
 
-
-* * *
-
 ## **pawusecp** 
 
 
@@ -1211,7 +1112,7 @@ computed.
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
 
 
@@ -1232,9 +1133,6 @@ projector).
   
 For the time being, only activated for RF calculations.  
 
-
-* * *
-
 ## **pawxcdev** 
 
 
@@ -1245,7 +1143,7 @@ For the time being, only activated for RF calculations.
 *Default value:* 1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t22.in|t22.in]]
 
 
@@ -1260,9 +1158,6 @@ For the time being, only activated for RF calculations.
   
 Be careful: GGA requires [[pawxcdev]] &gt; 0
 
-
-* * *
-
 ## **prtefg** 
 
 
@@ -1273,7 +1168,7 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1, [[quadmom]]  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t10.in|t10.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v5:  [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t35.in|t35.in]]
@@ -1288,9 +1183,6 @@ Be careful: GGA requires [[pawxcdev]] &gt; 0
 The option prtefg is compatible with spin polarized calculations (see
 [[nspden]]) and also LDA+U (see [[usepawu]]).
 
-
-* * *
-
 ## **prtfc** 
 
 
@@ -1301,7 +1193,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t10.in|t10.in]]
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v5:  [[tests/v5/Input/t34.in|t34.in]], [[tests/v5/Input/t36.in|t36.in]]
@@ -1313,9 +1205,6 @@ The option prtefg is compatible with spin polarized calculations (see
 
   * If set to 1, print the Fermi contact interaction at each nuclear site, that is, the electron density at each site. The result appears in the main output file (search for FC). Note that this calculation is different than what is done by cut3d, because it also computes the PAW on-site corrections in addition to the contribution from the valence pseudo-wavefunctions. 
 
-
-* * *
-
 ## **prtnabla** 
 
 
@@ -1326,7 +1215,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t26.in|t26.in]], [[tests/mpiio/Input/t27.in|t27.in]]
     - v5:  [[tests/v5/Input/t09.in|t09.in]]
 
@@ -1336,9 +1225,6 @@ The option prtefg is compatible with spin polarized calculations (see
 
 
   * If set to 1, calculate the matrix elements &lt;Psi_n|-inabla|Psi_m&gt; and write it in file _OPT to be read by the code conducti. 
-
-
-* * *
 
 ## **ptcharge** 
 
@@ -1350,7 +1236,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=3   
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t35.in|t35.in]]
 
 
@@ -1362,9 +1248,6 @@ The option prtefg is compatible with spin polarized calculations (see
 
   * Array of point charges, in atomic units, of the nuclei. In the normal computation of electric field gradients (see [[prtefg]]) the ionic contribution is calculated from the core charges of the atomic sites. Thus for example in a PAW data set for oxygen where the core is 1s2, the core charge is +6 (total nuclear charge minus core electron charge). In point charge models, which are much less accurate than PAW calculations, all atomic sites are treated as ions with charges determined by their valence states. In such a case oxygen almost always would have a point charge of -2. The present variable taken together with [[prtefg]] performs a full PAW computation of the electric field gradient and also a simple point charge computation. The user inputs whatever point charges he/she wishes for each atom type. 
 
-
-* * *
-
 ## **quadmom** 
 
 
@@ -1375,7 +1258,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[prtefg]]>=1   
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t10.in|t10.in]]
     - v5:  [[tests/v5/Input/t31.in|t31.in]], [[tests/v5/Input/t32.in|t32.in]], [[tests/v5/Input/t33.in|t33.in]], [[tests/v5/Input/t35.in|t35.in]]
     - v6:  [[tests/v6/Input/t44.in|t44.in]], [[tests/v6/Input/t49.in|t49.in]]
@@ -1387,9 +1270,6 @@ The option prtefg is compatible with spin polarized calculations (see
 
   * Array of quadrupole moments, in barns, of the nuclei. These values are used in conjunction with the electric field gradients computed with [[prtefg]] to calculate the quadrupole couplings in MHz, as well as the asymmetries. Note that the electric field gradient at a nuclear site is independent of the nuclear quadrupole moment, thus the quadrupole moment of a nucleus can be input as 0, and the option [[prtefg]]=2 used to determine the electric field gradient at the site. 
 
-
-* * *
-
 ## **spnorbscl** 
 
 
@@ -1400,7 +1280,7 @@ The option prtefg is compatible with spin polarized calculations (see
 *Default value:* 1.0  
 *Only relevant if:* [[usepaw]]==1 and [[pawspnorb]]>= 1   
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t17.in|t17.in]]
 
 
@@ -1413,9 +1293,6 @@ principles value, while other values are used for the analysis of the effect
 of the spin-orbit interaction, but are not expected to correspond to any
 physical situation.
 
-
-* * *
-
 ## **upawu** 
 
 
@@ -1427,7 +1304,7 @@ physical situation.
 *Default value:* *0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (click to open) (Moderately used, [37/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [37/920] in all abinit tests, [3/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -1474,9 +1351,6 @@ eV, one has to define :
     upawu4   5.5 eV   ! This is for the screening calculation
      
 
-
-* * *
-
 ## **usedmatpu** 
 
 
@@ -1487,7 +1361,7 @@ eV, one has to define :
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1 and [[usepawu]]==1  
 
-??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - tutorial:  [[tests/tutorial/Input/tdftu_3.in|tdftu_3.in]], [[tests/tutorial/Input/tdftu_4.in|tdftu_4.in]]
     - v5:  [[tests/v5/Input/t16.in|t16.in]], [[tests/v5/Input/t19.in|t19.in]], [[tests/v5/Input/t20.in|t20.in]], [[tests/v5/Input/t37.in|t37.in]]
@@ -1516,9 +1390,6 @@ ionic step
 \- When [[usedmatpu]]&lt;0, the density matrix is kept constant at each ionic
 step  
 
-
-* * *
-
 ## **useexexch** 
 
 
@@ -1529,7 +1400,7 @@ step
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t18.in|t18.in]]
 
 
@@ -1541,9 +1412,6 @@ When [[useexexch]]=1, the hybrid functional PBE0 is used in PAW, inside PAW
 spheres only, and only for correlated orbitals given by [[lexexch]]. To change
 the ratio of exact exchange, see also [[exchmix]].
 
-
-* * *
-
 ## **usepawu** 
 
 
@@ -1554,7 +1422,7 @@ the ratio of exact exchange, see also [[exchmix]].
 *Default value:* 0  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -1614,9 +1482,6 @@ References:
 Suggested acknowledgment:  
 \- B. Amadon, F. Jollet and M. Torrent, Phys. Rev. B 77, 155104 (2008).  
 
-
-* * *
-
 ## **usepotzero** 
 
 
@@ -1626,7 +1491,7 @@ Suggested acknowledgment:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t26.in|t26.in]]
 
 
@@ -1638,9 +1503,6 @@ Suggested acknowledgment:
   * [[usepotzero]]=1, the new convention: the physical potential is set to zero average value. 
   * [[usepotzero]]=2, the PWscf convention: the potential of equivalent point charges is set to zero average value (convention also valid for NC pseudopotentials). 
 
-
-* * *
-
 ## **usexcnhat** 
 
 
@@ -1651,7 +1513,7 @@ Suggested acknowledgment:
 *Default value:* -1  
 *Only relevant if:* [[usepaw]]==1  
 
-??? note "Test list (click to open) (Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [12/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
     - v5:  [[tests/v5/Input/t06.in|t06.in]]
     - v7:  [[tests/v7/Input/t32.in|t32.in]], [[tests/v7/Input/t60.in|t60.in]], [[tests/v7/Input/t61.in|t61.in]], [[tests/v7/Input/t62.in|t62.in]], [[tests/v7/Input/t95.in|t95.in]], [[tests/v7/Input/t96.in|t96.in]]
@@ -1672,7 +1534,4 @@ charge density, i.e. Vxc=Vxc(tild_Ncore + tild_Nvalence + hat_N).
 When [[usexcnhat]]=-1,the value of [[usexcnhat]] is determined from the
 reading of the PAW dataset file (pseudopotential file). When PAW datasets with
 different treatment of Vxc are used in the same run, the code stops.
-
-
-* * *
 

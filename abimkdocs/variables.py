@@ -266,7 +266,7 @@ class Variable(yaml.YAMLObject):
         a = website.get_wikilink(token, page_rpath)
         return '<a href="%s" class="%s">%s</a>' % (a.get("href"), a.get("class"), a.text)
 
-    def to_markdown(self):
+    def to_markdown(self, with_hr=True):
         lines = []; app = lines.append
 
         app("## **%s** \n\n" % self.name)
@@ -308,7 +308,7 @@ class Variable(yaml.YAMLObject):
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
             # TODO?
             #if len(self.tests) <= 10:
-            app('\n??? note "Test list (click to open) (%s)"' % info)
+            app('\n??? note "Test list (click to open). %s"' % info)
             tlist = sorted(self.tests, key=lambda t: t.suite_name)
             for suite_name, tests_in_suite in groupby(tlist, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
@@ -325,7 +325,8 @@ class Variable(yaml.YAMLObject):
         else:
             print("WARNING: Variable:", self.name, "with None text")
 
-        app("* * *" + 2*"\n")
+        if with_hr:
+            app("* * *" + 2*"\n")
         return "\n".join(lines)
 
 ####################################################################################################

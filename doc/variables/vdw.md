@@ -21,7 +21,7 @@ vdw input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -34,9 +34,6 @@ Supported values:
   * 0 =&gt; do not read vdW-DF variables 
   * 1 =&gt; read vdW-DF variables 
 
-
-* * *
-
 ## **prtvdw** 
 
 
@@ -47,7 +44,7 @@ Supported values:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -55,9 +52,6 @@ Supported values:
 
 
 Print out a NetCDF file containing a vdW-DF kernel.
-
-
-* * *
 
 ## **vdw_df_acutmin** 
 
@@ -70,7 +64,7 @@ Print out a NetCDF file containing a vdW-DF kernel.
 *Default value:* 10  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -78,9 +72,6 @@ Print out a NetCDF file containing a vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_aratio** 
 
@@ -94,7 +85,7 @@ lowest angles.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -102,9 +93,6 @@ lowest angles.
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_damax** 
 
@@ -117,7 +105,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 0.5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -125,9 +113,6 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_damin** 
 
@@ -140,7 +125,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 0.01  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -148,9 +133,6 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_dcut** 
 
@@ -163,7 +145,7 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -171,9 +153,6 @@ Used when [[vdw_xc]]&gt;0, to build angular meshes for the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_dratio** 
 
@@ -187,7 +166,7 @@ lowest D, RATIO.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -195,9 +174,6 @@ lowest D, RATIO.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_dsoft** 
 
@@ -210,7 +186,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 1.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -218,9 +194,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_gcut** 
 
@@ -233,7 +206,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -241,9 +214,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to filter the vdW-DF kernel in reciprocal space.  
-
-
-* * *
 
 ## **vdw_df_ndpts** 
 
@@ -256,7 +226,7 @@ Used when [[vdw_xc]]&gt;0, to filter the vdW-DF kernel in reciprocal space.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -264,9 +234,6 @@ Used when [[vdw_xc]]&gt;0, to filter the vdW-DF kernel in reciprocal space.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_ngpts** 
 
@@ -279,7 +246,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* -1  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -287,9 +254,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_nqpts** 
 
@@ -302,7 +266,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 30  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -310,9 +274,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_nrpts** 
 
@@ -325,7 +286,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 2048  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -334,9 +295,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 Used when [[vdw_xc]]&gt;0, to define the sampling of the vdW-DF-kernel in
 real-space.  
-
-
-* * *
 
 ## **vdw_df_nsmooth** 
 
@@ -349,7 +307,7 @@ real-space.
 *Default value:* 12  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -357,9 +315,6 @@ real-space.
 
 
 Used when [[vdw_xc]]&gt;0, to exponentially smoothen q near q0.  
-
-
-* * *
 
 ## **vdw_df_phisoft** 
 
@@ -372,7 +327,7 @@ Used when [[vdw_xc]]&gt;0, to exponentially smoothen q near q0.
 *Default value:* -1.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -380,9 +335,6 @@ Used when [[vdw_xc]]&gt;0, to exponentially smoothen q near q0.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_qcut** 
 
@@ -395,7 +347,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 5  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -403,9 +355,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_qratio** 
 
@@ -418,7 +367,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 20  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -426,9 +375,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 
 Used when [[vdw_xc]]&gt;0, .  
-
-
-* * *
 
 ## **vdw_df_rcut** 
 
@@ -441,7 +387,7 @@ Used when [[vdw_xc]]&gt;0, .
 *Default value:* 100  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -449,9 +395,6 @@ Used when [[vdw_xc]]&gt;0, .
 
 
 Used when [[vdw_xc]]&gt;0, to define the vdW-DF kernel cut-off radius.  
-
-
-* * *
 
 ## **vdw_df_rsoft** 
 
@@ -464,7 +407,7 @@ Used when [[vdw_xc]]&gt;0, to define the vdW-DF kernel cut-off radius.
 *Default value:* 0.0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -472,9 +415,6 @@ Used when [[vdw_xc]]&gt;0, to define the vdW-DF kernel cut-off radius.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_threshold** 
 
@@ -487,7 +427,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 0.01  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -500,9 +440,6 @@ Adjust it to a big value (e.g. 1e12) to enable it all along the SCF
 calculation. Too small values, as well as negative values, will result in the
 vdW-DF energy contributions never being calculated.
 
-
-* * *
-
 ## **vdw_df_tolerance** 
 
 
@@ -514,7 +451,7 @@ vdW-DF energy contributions never being calculated.
 *Default value:* 1e-13  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -522,9 +459,6 @@ vdW-DF energy contributions never being calculated.
 
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
-
-
-* * *
 
 ## **vdw_df_tweaks** 
 
@@ -537,7 +471,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* 0  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -546,9 +480,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 
 Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.  
 ** _ IMPORTANT NOTE: modifying this variable will likely transform the calculated energies and their gradients into garbage. You have been warned! _ **   
-
-
-* * *
 
 ## **vdw_df_zab** 
 
@@ -561,7 +492,7 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 *Default value:* -0.8491  
 *Only relevant if:* [[vdw_xc]]>0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -571,9 +502,6 @@ Used when [[vdw_xc]]&gt;0, to build the vdW-DF kernel.
 Used when [[vdw_xc]]&gt;0, as introduced in [
 doi:10.1103/PhysRevLett.92.246401
 ](http://dx.doi.org/10.1103/PhysRevLett.92.246401) .  
-
-
-* * *
 
 ## **vdw_nfrag** 
 
@@ -586,7 +514,7 @@ doi:10.1103/PhysRevLett.92.246401
 *Default value:* 1  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - wannier90:  [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
@@ -602,9 +530,6 @@ the original unit cell, otherwise the program will keep the positions obtained
 by Wannier90. The later is usually correct if some atoms are located at the
 corners or at limiting faces of the unit cell.
 
-
-* * *
-
 ## **vdw_supercell** 
 
 
@@ -616,7 +541,7 @@ corners or at limiting faces of the unit cell.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - wannier90:  [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
@@ -634,9 +559,6 @@ of vdW corrections coming from MLWFs in the same layer (fragment) must be
 avoided. Both a negative or null value for one component of [[vdw_supercell]]
 will indicate that the corresponding direction is normal to the layers.
 
-
-* * *
-
 ## **vdw_tol** 
 
 
@@ -648,7 +570,7 @@ will indicate that the corresponding direction is normal to the layers.
 *Default value:* 1e-10  
 *Only relevant if:* [[vdw_xc]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t97.in|t97.in]], [[tests/v7/Input/t98.in|t98.in]], [[tests/v7/Input/t99.in|t99.in]]
     - vdwxc:  [[tests/vdwxc/Input/t10.in|t10.in]]
 
@@ -662,9 +584,6 @@ The DFT-D methods (S. Grimme approach) dispersion potentials, [[vdw_xc]]==5 or
 the potential is necessarily limited. To be included in the potential a pair
 of atom must have contribution to the energy larger than [[vdw_tol]].
 
-
-* * *
-
 ## **vdw_tol_3bt** 
 
 
@@ -677,7 +596,7 @@ of atom must have contribution to the energy larger than [[vdw_tol]].
 *Comment:* Do include the 3-body term in the correction  
 *Only relevant if:* [[vdw_xc]] == 6  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t97.in|t97.in]]
 
 
@@ -706,9 +625,6 @@ to lead to an overestimation of lattice parameters for weakly bound systems
 contribution to energy, to forces and to stress is available (not planned for
 elastic constants, dynamical matrix and internal strains)
 
-
-* * *
-
 ## **vdw_typfrag** 
 
 
@@ -720,7 +636,7 @@ elastic constants, dynamical matrix and internal strains)
 *Default value:* 1*[[natom]]  
 *Only relevant if:* [[vdw_xc]] in [10,11]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - wannier90:  [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
 
 
@@ -736,9 +652,6 @@ same fragment as their nearest atom. The resulting set of MLWFs in each
 interacting fragment can be found in the output file in xyz format for easy
 visualization.
 
-
-* * *
-
 ## **vdw_xc** 
 
 
@@ -749,7 +662,7 @@ visualization.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t97.in|t97.in]], [[tests/v7/Input/t98.in|t98.in]], [[tests/v7/Input/t99.in|t99.in]]
     - vdwxc:  [[tests/vdwxc/Input/t10.in|t10.in]]
     - wannier90:  [[tests/wannier90/Input/t11.in|t11.in]], [[tests/wannier90/Input/t12.in|t12.in]], [[tests/wannier90/Input/t13.in|t13.in]]
@@ -807,7 +720,4 @@ vdw_supercell ** is not enabled in this case.
 For [[vdw_xc]]=1 and [[vdw_xc]]=2, the implementation follows the strategy
 devised in the article of Roman-Perez and Soler
 ([doi:10.1103/PhysRevLett.103.096102](https://dx.doi.org/10.1103/PhysRevLett.103.096102))
-
-
-* * *
 

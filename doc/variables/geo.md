@@ -21,7 +21,7 @@ geo input variables to be used in the input file for the abinit executable.
 *Default value:* 0  
 *Only relevant if:* [[spgroup]] != 0  
 
-??? note "Test list (click to open) (Moderately used, [29/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [29/920] in all abinit tests, [0/116] in abinit tutorials"
     - v2:  [[tests/v2/Input/t59.in|t59.in]], [[tests/v2/Input/t60.in|t60.in]]
     - v3:  [[tests/v3/Input/t23.in|t23.in]], [[tests/v3/Input/t24.in|t24.in]], [[tests/v3/Input/t25.in|t25.in]], [[tests/v3/Input/t26.in|t26.in]], [[tests/v3/Input/t27.in|t27.in]], [[tests/v3/Input/t28.in|t28.in]], [[tests/v3/Input/t29.in|t29.in]], [[tests/v3/Input/t32.in|t32.in]], [[tests/v3/Input/t33.in|t33.in]], [[tests/v3/Input/t34.in|t34.in]], [[tests/v3/Input/t35.in|t35.in]], [[tests/v3/Input/t36.in|t36.in]], [[tests/v3/Input/t37.in|t37.in]], [[tests/v3/Input/t38.in|t38.in]], [[tests/v3/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t21.in|t21.in]], [[tests/v4/Input/t22.in|t22.in]], [[tests/v4/Input/t23.in|t23.in]], [[tests/v4/Input/t24.in|t24.in]], [[tests/v4/Input/t25.in|t25.in]], [[tests/v4/Input/t26.in|t26.in]], [[tests/v4/Input/t27.in|t27.in]], [[tests/v4/Input/t28.in|t28.in]], [[tests/v4/Input/t29.in|t29.in]]
@@ -69,9 +69,6 @@ translations: (2/3, 1/3, 1/3) and (1/3, 2/3, 2/3).
 For more details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
-
-* * *
-
 ## **chempot** 
 
 
@@ -82,7 +79,7 @@ For more details see the space group [ help file
 *Default value:* 0.0  
 *Only relevant if:* [[nzchempot]]/=0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v8:  [[tests/v8/Input/t30.in|t30.in]], [[tests/v8/Input/t31.in|t31.in]]
 
 
@@ -114,9 +111,6 @@ although the chemical potential is an energy, one cannot use the usual energy
 definitions (i.e. the chemical potential is always to be input in Hartree
 atomic units).
 
-
-* * *
-
 ## **genafm** 
 
 
@@ -126,7 +120,7 @@ atomic units).
 *Dimensions:* (3)  
 *Default value:* 3*0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t22.in|t22.in]]
 
 
@@ -148,9 +142,6 @@ both [[spgroup]] and [[genafm]]. Alternatively, one might define [[spgroup]]
 and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 [[tnons]] and [[symafm]]
 
-
-* * *
-
 ## **natrd** 
 
 
@@ -160,7 +151,7 @@ and [[spgroupma]], or define by hand the set of symmetries, using [[symrel]],
 *Dimensions:* scalar  
 *Default value:* [[natom]]  
 
-??? note "Test list (click to open) (Moderately used, [45/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [45/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]]
     - seq:  [[tests/seq/Input/tsv4_55.in|tsv4_55.in]]
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]], [[tests/v1/Input/t90.in|t90.in]], [[tests/v1/Input/t91.in|t91.in]], [[tests/v1/Input/t92.in|t92.in]], [[tests/v1/Input/t93.in|t93.in]], [[tests/v1/Input/t94.in|t94.in]], [[tests/v1/Input/t95.in|t95.in]], [[tests/v1/Input/t96.in|t96.in]]
@@ -182,9 +173,6 @@ used to dimension the array [[typat]], and the arrays [[xred]], [[xangst]] and
 Must take into account the vacancies (see [[vacnum]] and [[vaclst]]).  
 Despite possible vacancies, cannot be bigger than [[natom]].
 
-
-* * *
-
 ## **nobj** 
 
 
@@ -195,7 +183,7 @@ Despite possible vacancies, cannot be bigger than [[natom]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -231,9 +219,6 @@ those obtained by the repetition operation is coherent with the variable
 You should look at the other variables for more information. Go to [[objan]],
 for example.  
 
-
-* * *
-
 ## **nzchempot** 
 
 
@@ -243,7 +228,7 @@ for example.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v8:  [[tests/v8/Input/t30.in|t30.in]], [[tests/v8/Input/t31.in|t31.in]]
 
 
@@ -254,9 +239,6 @@ for example.
 Defines the number of z reduced coordinates that defines the spatially varying
 chemical potential. See the input variable [[chempot]], of which [[nzchempot]]
 is the second dimension.
-
-
-* * *
 
 ## **objaat** 
 
@@ -270,7 +252,7 @@ is the second dimension.
 *Only relevant if:* '[[nobj]]==1'
   
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -286,9 +268,6 @@ molecules, to be repeated, rotated and translated to generate the full set of
 atoms.  
 Look at [[objarf]] for further explanations.  
 
-
-* * *
-
 ## **objaax** 
 
 
@@ -301,7 +280,7 @@ Look at [[objarf]] for further explanations.
 *Comment:* [[objaax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -320,9 +299,6 @@ The sign of the rotation angle is positive if the object is to be rotated
 clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
 toward point 2 (coordinates 4:6).  
 
-
-* * *
-
 ## **objan** 
 
 
@@ -335,7 +311,7 @@ toward point 2 (coordinates 4:6).
 *Comment:*  [[objan]] MUST be provided if [[nobj]]==1.
  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -345,9 +321,6 @@ toward point 2 (coordinates 4:6).
 
 Gives the number of atoms in object a. The list of atoms is given by the
 variables [[objaat]].  
-
-
-* * *
 
 ## **objarf** 
 
@@ -359,7 +332,7 @@ variables [[objaat]].
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -388,9 +361,6 @@ list, and so on.
 If the atom manipulator is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
-
-* * *
-
 ## **objaro** 
 
 
@@ -402,7 +372,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -422,9 +392,6 @@ instance to the next instance, defined by the first, second or third
 repetition factor (resp.) . This allows to generate 3D arrays of molecules
 with different rotation angles.  
 
-
-* * *
-
 ## **objatr** 
 
 
@@ -436,7 +403,7 @@ with different rotation angles.
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]], [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -460,9 +427,6 @@ exception, one can have a set of molecules regularly spaced on a circle, in
 which case, only rotations are needed.  
 Not present in the dtset array (no internal).
 
-
-* * *
-
 ## **objbat** 
 
 
@@ -474,7 +438,7 @@ Not present in the dtset array (no internal).
 *Default value:* None  
 *Only relevant if:* [[nobj]]==2  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -490,9 +454,6 @@ molecules, to be repeated, rotated and translated to generate the full set of
 atoms.  
 Look at [[objbrf]] for further explanations.  
 
-
-* * *
-
 ## **objbax** 
 
 
@@ -505,7 +466,7 @@ Look at [[objbrf]] for further explanations.
 *Comment:* [[objbax]] must be provided if ([[nobj]]==1 and one component of [[objaro]] != 0). Moreover,
 [[objaax]] AND [[objbax]] must be provided if ( [[nobj]] == 2 and one component of [[objbro]] != 0 ).  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -524,9 +485,6 @@ The sign of the rotation angle is positive if the object is to be rotated
 clockwise when looking to it along the axis, from point 1 (coordinates 1:3)
 toward point 2 (coordinates 4:6).  
 
-
-* * *
-
 ## **objbn** 
 
 
@@ -538,7 +496,7 @@ toward point 2 (coordinates 4:6).
 *Default value:* None  
 *Comment:*  [[objan]] and [[objbn]] MUST be provided if [[nobj]]==2.  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -548,9 +506,6 @@ toward point 2 (coordinates 4:6).
 
 Gives the number of atoms in either object b. The list of atoms is given by
 the variables [[objbat]].  
-
-
-* * *
 
 ## **objbrf** 
 
@@ -562,7 +517,7 @@ the variables [[objbat]].
 *Dimensions:* (3)  
 *Default value:* [1, 1, 1]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -590,9 +545,6 @@ list, and so on.
 If the atom manipulator is only used to rotate or translate an object, without
 repeating it, simply use 1 1 1, which is also the Default value.  
 
-
-* * *
-
 ## **objbro** 
 
 
@@ -604,7 +556,7 @@ repeating it, simply use 1 1 1, which is also the Default value.
 *Default value:* 4*0.0d0  
 *Comment:* (no rotation)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -624,9 +576,6 @@ instance to the next instance, defined by the first, second or third
 repetition factor (resp.) . This allows to generate 3D arrays of molecules
 with different rotation angles.  
 
-
-* * *
-
 ## **objbtr** 
 
 
@@ -638,7 +587,7 @@ with different rotation angles.
 *Default value:* 12*0.0d0  
 *Comment:* (no translation)  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t42.in|t42.in]], [[tests/v1/Input/t43.in|t43.in]]
 
 
@@ -661,9 +610,6 @@ since otherwise, the repeated objects pack in the same region of space. As an
 exception, one can have a set of molecules regularly spaced on a circle, in
 which case, only rotations are needed.  
 
-
-* * *
-
 ## **ptgroupma** 
 
 
@@ -674,7 +620,7 @@ which case, only rotations are needed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -696,9 +642,6 @@ reference. Magnetic point groups are numbered from 1 to 58.
 
 Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 
-
-* * *
-
 ## **spgaxor** 
 
 
@@ -708,7 +651,7 @@ Related input variables : [[spgroup]], [[spgroupma]], [[genafm]]
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t91.in|t91.in]], [[tests/v1/Input/t92.in|t92.in]], [[tests/v1/Input/t93.in|t93.in]], [[tests/v1/Input/t96.in|t96.in]]
     - v3:  [[tests/v3/Input/t22.in|t22.in]], [[tests/v3/Input/t28.in|t28.in]], [[tests/v3/Input/t38.in|t38.in]]
     - v4:  [[tests/v4/Input/t28.in|t28.in]]
@@ -755,9 +698,6 @@ How to determine which spgaxor you need:
   2. look up the raw space group Wyckoff positions on [ the Bilbao server ](http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-wp-list) to see where they put the corresponding symmetric positions. For spgroup 62 Bilbao puts the 1/4 3/4 in the second coordinate, ie along the b axis. 
   3. in this case you need to swap the axes from the original abc order to a new order where the Bilbao axis (b) is in the first position. In this case you have 2 possibilities, spgaxor 3 or 5. If you have more than one highly symmetric coordinate you may have only a single possibility. 
 
-
-* * *
-
 ## **spgorig** 
 
 
@@ -768,7 +708,7 @@ How to determine which spgaxor you need:
 *Default value:* 1  
 *Only relevant if:* [[spgroup]]!=0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t91.in|t91.in]], [[tests/v1/Input/t93.in|t93.in]], [[tests/v1/Input/t95.in|t95.in]]
 
 
@@ -784,9 +724,6 @@ It applies only to the space groups 48, 50, 59, 70, 85, 86, 88, 125, 126, 129,
 For details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
-
-* * *
-
 ## **spgroup** 
 
 
@@ -796,7 +733,7 @@ For details see the space group [ help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [36/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [36/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t91.in|t91.in]], [[tests/v1/Input/t92.in|t92.in]], [[tests/v1/Input/t93.in|t93.in]], [[tests/v1/Input/t94.in|t94.in]], [[tests/v1/Input/t95.in|t95.in]], [[tests/v1/Input/t96.in|t96.in]]
     - v2:  [[tests/v2/Input/t59.in|t59.in]], [[tests/v2/Input/t60.in|t60.in]]
     - v3:  [[tests/v3/Input/t22.in|t22.in]], [[tests/v3/Input/t23.in|t23.in]], [[tests/v3/Input/t24.in|t24.in]], [[tests/v3/Input/t25.in|t25.in]], [[tests/v3/Input/t26.in|t26.in]], [[tests/v3/Input/t27.in|t27.in]], [[tests/v3/Input/t28.in|t28.in]], [[tests/v3/Input/t29.in|t29.in]], [[tests/v3/Input/t32.in|t32.in]], [[tests/v3/Input/t33.in|t33.in]], [[tests/v3/Input/t34.in|t34.in]], [[tests/v3/Input/t35.in|t35.in]], [[tests/v3/Input/t36.in|t36.in]], [[tests/v3/Input/t37.in|t37.in]], [[tests/v3/Input/t38.in|t38.in]], [[tests/v3/Input/t39.in|t39.in]]
@@ -825,9 +762,6 @@ are :
 For details see the space group [ help file
 ](../../users/spacegrouphelpfile.html) .
 
-
-* * *
-
 ## **spgroupma** 
 
 
@@ -838,7 +772,7 @@ For details see the space group [ help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [20/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [20/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t22.in|t22.in]], [[tests/v3/Input/t23.in|t23.in]], [[tests/v3/Input/t24.in|t24.in]], [[tests/v3/Input/t32.in|t32.in]], [[tests/v3/Input/t33.in|t33.in]], [[tests/v3/Input/t34.in|t34.in]], [[tests/v3/Input/t35.in|t35.in]], [[tests/v3/Input/t36.in|t36.in]], [[tests/v3/Input/t37.in|t37.in]], [[tests/v3/Input/t38.in|t38.in]], [[tests/v3/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t21.in|t21.in]], [[tests/v4/Input/t22.in|t22.in]], [[tests/v4/Input/t23.in|t23.in]], [[tests/v4/Input/t24.in|t24.in]], [[tests/v4/Input/t25.in|t25.in]], [[tests/v4/Input/t26.in|t26.in]], [[tests/v4/Input/t27.in|t27.in]], [[tests/v4/Input/t28.in|t28.in]], [[tests/v4/Input/t29.in|t29.in]]
 
@@ -867,9 +801,6 @@ Alternatively, for Shubnikov IV magnetic groups, one might define [[spgroup]]
 and [[genafm]]. For both the type III and IV, one might define by hand the set
 of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 
-
-* * *
-
 ## **tolsym** 
 
 
@@ -879,7 +810,7 @@ of symmetries, using [[symrel]], [[tnons]] and [[symafm]].
 *Dimensions:* scalar  
 *Default value:* 1e-08  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t78.in|t78.in]]
     - v7:  [[tests/v7/Input/t13.in|t13.in]]
 
@@ -899,9 +830,6 @@ within 1.e-8 . If [[tolsym]] is set to a larger value than 1.e-8, then the
 input atomic coordinates will be automatically symmetrized by the symmetry
 operations that will have been found.
 
-
-* * *
-
 ## **vaclst** 
 
 
@@ -912,7 +840,7 @@ operations that will have been found.
 *Dimensions:* ([[vacnum]])  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]]
 
 
@@ -925,9 +853,6 @@ atoms that are obtained after having rotated, translated and repeated the
 objects.  
 Useful to created vacancies.
 
-
-* * *
-
 ## **vacnum** 
 
 
@@ -937,7 +862,7 @@ Useful to created vacancies.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t40.in|t40.in]]
 
 
@@ -949,9 +874,6 @@ Gives the number of atoms to be subtracted from the list of atoms after the
 rotations, translations and repetitions have been done. The list of these
 atoms is contained in [[vaclst]].
 
-
-* * *
-
 ## **xyzfile** 
 
 
@@ -962,7 +884,7 @@ atoms is contained in [[vaclst]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t10.in|t10.in]]
 
 
@@ -978,7 +900,4 @@ Notes: do not quote the file name in the abinit input file, simply leave a
 space after xyzfile. The xyz format is the number of atoms on the first line,
 a comment line, then one line per atom, with the element as a 2 letter symbol
 ("As" "O" or "Pu") and the three cartesian coordinates in Angstrom.
-
-
-* * *
 

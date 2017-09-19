@@ -21,7 +21,7 @@ internal input variables to be used in the input file for the abinit executable.
 *Dimensions:* (3,[[nkpt]])  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -36,9 +36,6 @@ variable is derived from [[kpt]],[[kptnrm]] and [[qptn]] [[kptns]](1:3,:)=
 [[kpt]](1:3,:)/ [[kptnrm]]+ [[qptn]](1:3), so that it is [[kpt]] renormalized
 by [[kptnrm]], then shifted by [[qptn]](1:3).
 
-
-* * *
-
 ## **mband** 
 
 
@@ -49,7 +46,7 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -58,9 +55,6 @@ by [[kptnrm]], then shifted by [[qptn]](1:3).
 
 This internal variable derives the maximum number of bands over all k-points
 and spin-polarisation from [[nband]](1:nkpt*nsppol).
-
-
-* * *
 
 ## **mgfft** 
 
@@ -72,7 +66,7 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -80,9 +74,6 @@ and spin-polarisation from [[nband]](1:nkpt*nsppol).
 
 
 This internal variable contains the maximum of [[ngfft]](1:3).
-
-
-* * *
 
 ## **mgfftdg** 
 
@@ -94,7 +85,7 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -102,9 +93,6 @@ This internal variable contains the maximum of [[ngfft]](1:3).
 
 
 This internal variable contains the maximum of [[ngfftdg]](1:3).
-
-
-* * *
 
 ## **mpw** 
 
@@ -116,7 +104,7 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -126,9 +114,6 @@ This internal variable contains the maximum of [[ngfftdg]](1:3).
 This internal variable gives the maximum of the number of plane waves over all
 k-points. It is computed from [[ecut]] and the description of the cell,
 provided by [[acell]], [[rprim]], and/or [[angdeg]].
-
-
-* * *
 
 ## **natpawu** 
 
@@ -141,7 +126,7 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 *Default value:* None  
 *Only relevant if:* [[usepawu]]==1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -150,9 +135,6 @@ provided by [[acell]], [[rprim]], and/or [[angdeg]].
 
 This internal variable gives the number of atoms on which the LDA/GGA+U method
 is applied. This value is determined from [[lpawu]].
-
-
-* * *
 
 ## **ndynimage** 
 
@@ -164,7 +146,7 @@ is applied. This value is determined from [[lpawu]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -176,9 +158,6 @@ deduced from the number of non-zero values present in [[dynimage]]. It is used
 to dimension many memory-consuming arrays (one copy for each image), e.g. the
 wavefunction array (cg), the density array (rho), etc .
 
-
-* * *
-
 ## **nelect** 
 
 
@@ -189,7 +168,7 @@ wavefunction array (cg), the density array (rho), etc .
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -202,9 +181,6 @@ the pseudopotential, where it is called "zion"), and the input variable
 [[charge]]:  
 [[nelect]]=zion-[[charge]].
 
-
-* * *
-
 ## **nfft** 
 
 
@@ -215,7 +191,7 @@ the pseudopotential, where it is called "zion"), and the input variable
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -232,9 +208,6 @@ particular processor. It is no longer the above-mentioned simple product, but
 a number usually close to this product divided by the number of processors on
 which the space is shared.
 
-
-* * *
-
 ## **nfftdg** 
 
 
@@ -245,7 +218,7 @@ which the space is shared.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -262,9 +235,6 @@ particular processor. It is no longer the above-mentioned simple product, but
 a number usually close to this product divided by the number of processors on
 which the space is shared.
 
-
-* * *
-
 ## **npweps** 
 
 
@@ -275,7 +245,7 @@ which the space is shared.
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -287,9 +257,6 @@ independent-particle susceptibility $\chi^{(0)}_{KS}$, the dielectric matrix
 $\epsilon$ and its inverse.  
 It is an internal variable, determined from [[ecuteps]].
 
-
-* * *
-
 ## **npwsigx** 
 
 
@@ -300,7 +267,7 @@ It is an internal variable, determined from [[ecuteps]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -310,9 +277,6 @@ It is an internal variable, determined from [[ecuteps]].
 [[npwsigx]] determines the cut-off energy of the planewave set used to
 generate the exchange part of the self-energy operator.  
 It is an internal variable, determed from [[ecutsigx]].
-
-
-* * *
 
 ## **npwwfn** 
 
@@ -324,7 +288,7 @@ It is an internal variable, determed from [[ecutsigx]].
 *Dimensions:* scalar  
 *Default value:* None  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -335,9 +299,6 @@ It is an internal variable, determed from [[ecutsigx]].
 wavefunctions in the formula that generates the independent-particle
 susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 [[ecutwfn]].
-
-
-* * *
 
 ## **qptn** 
 
@@ -350,7 +311,7 @@ susceptibility $\chi^{(0)}_{KS}$. It is an internal variable, determined from
 *Default value:* 3*0  
 *Only relevant if:* [[nqpt]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t85.in|t85.in]], [[tests/v3/Input/t86.in|t86.in]]
 
 
@@ -376,9 +337,6 @@ in reciprocal space is taken into account). Tests remain to be done to see
 whether other q points might be allowed (perhaps with some modification of the
 code).
 
-
-* * *
-
 ## **usefock** 
 
 
@@ -389,7 +347,7 @@ code).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -402,9 +360,6 @@ refers to an Hartree-Fock calculation or hybrid functionals.
   * 0 =&gt; No use of exact exchange. 
   * 1 =&gt; exact exchange is required for the calculation. 
 
-
-* * *
-
 ## **usepaw** 
 
 
@@ -415,7 +370,7 @@ refers to an Hartree-Fock calculation or hybrid functionals.
 *Dimensions:* scalar  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (click to open) (Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t03.in|t03.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]], [[tests/gpu/Input/t05.in|t05.in]]
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
@@ -436,9 +391,6 @@ while pseudopotential calculations are performed in ABINIT with norm-
 conserving pseudopotential input files. Most functionalities in ABINIT are
 available with either type of calculation.
 
-
-* * *
-
 ## **userec** 
 
 
@@ -449,7 +401,7 @@ available with either type of calculation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -458,9 +410,6 @@ available with either type of calculation.
 
 This internal variable is set to 1 when the recursion method is activated (see
 [[tfkinfunc]]).
-
-
-* * *
 
 ## **xclevel** 
 
@@ -472,7 +421,7 @@ This internal variable is set to 1 when the recursion method is activated (see
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -486,9 +435,6 @@ Automatically determined from the value of [[ixc]].
   * 2 =&gt; GGA functional or hybrid functional based on GGA. 
   * 3 =&gt; Functional for TDDFT. 
 
-
-* * *
-
 ## **ziontypat** 
 
 
@@ -499,7 +445,7 @@ Automatically determined from the value of [[ixc]].
 *Dimensions:* ([[ntypat]])  
 *Default value:* [[AUTO_FROM_PSP]]  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -508,7 +454,4 @@ Automatically determined from the value of [[ixc]].
 
 Charge of the pseudo-ion (=number of valence electrons that are needed to
 screen exactly the pseudopotential).
-
-
-* * *
 

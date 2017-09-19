@@ -209,14 +209,17 @@ pages:
 markdown_extensions:
   - markdown.extensions.meta:
   - markdown.extensions.toc:
-        permalink: true
+        permalink: true  # For ¶
+        #permalink: "#"
         #separator: "_"
   - markdown.extensions.admonition
   - markdown.extensions.fenced_code 
   - markdown.extensions.codehilite
   - markdown.extensions.smarty
   - markdown.extensions.tables
-  #- markdown.extensions.def_list
+  - markdown.extensions.def_list
+  #- markdown.extensions.nl2br
+  - markdown.extensions.sane_lists
   #- markdown_newtab
   - mdx_math:
         enable_dollar_delimiter: True

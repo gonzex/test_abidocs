@@ -21,7 +21,7 @@ dmft input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]]
     - v7:  [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
@@ -36,9 +36,6 @@ dmft input variables to be used in the input file for the abinit executable.
 Value of double counting used for DMFT. Only value 1 is activated for the
 moment and is the FLL double counting.
 
-
-* * *
-
 ## **dmft_entropy** 
 
 
@@ -49,7 +46,7 @@ moment and is the FLL double counting.
 *Default value:* 0  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
 
 
@@ -62,9 +59,6 @@ allows the calculation of the total energy (free energy). In the current
 implementation, this is only possible with [[dmft_solv]]=5 (Continuous Time
 Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 
-
-* * *
-
 ## **dmft_iter** 
 
 
@@ -75,7 +69,7 @@ Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -90,9 +84,6 @@ Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
   
 Number of iterations for the DMFT inner loop.
 
-
-* * *
-
 ## **dmft_mxsf** 
 
 
@@ -103,7 +94,7 @@ Number of iterations for the DMFT inner loop.
 *Dimensions:* scalar  
 *Default value:* 0.3  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -118,9 +109,6 @@ Number of iterations for the DMFT inner loop.
   
 Mixing parameter for the simple mixing of the self-energy.
 
-
-* * *
-
 ## **dmft_nlambda** 
 
 
@@ -132,7 +120,7 @@ Mixing parameter for the simple mixing of the self-energy.
 *Default value:* 6  
 *Only relevant if:* [[usedmft]]==1 and [[dmft_entropy]]==1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
 
 
@@ -144,9 +132,6 @@ Mixing parameter for the simple mixing of the self-energy.
 thermodynamical integration in case of free energy calculation within DMFT.
 Its value must be greater or equal to 3.
 
-
-* * *
-
 ## **dmft_nwli** 
 
 
@@ -157,7 +142,7 @@ Its value must be greater or equal to 3.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -172,9 +157,6 @@ Its value must be greater or equal to 3.
   
 Number of Matsubara frequencies (linear mesh)
 
-
-* * *
-
 ## **dmft_nwlo** 
 
 
@@ -185,7 +167,7 @@ Number of Matsubara frequencies (linear mesh)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -200,9 +182,6 @@ Number of Matsubara frequencies (linear mesh)
   
 Number of frequencies in the log mesh.
 
-
-* * *
-
 ## **dmft_rslf** 
 
 
@@ -213,7 +192,7 @@ Number of frequencies in the log mesh.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -228,9 +207,6 @@ Number of frequencies in the log mesh.
 Flag to read/write Self-Energy. If put to one, self-energy is written and read
 at each DFT iteration.
 
-
-* * *
-
 ## **dmft_solv** 
 
 
@@ -241,7 +217,7 @@ at each DFT iteration.
 *Dimensions:* scalar  
 *Default value:* 5  
 
-??? note "Test list (click to open) (Moderately used, [21/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [21/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -283,9 +259,6 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 [[dmftctqmc_mov]], [[dmftctqmc_order]], [[dmftctqmc_triqs_nleg]],
 [[dmftqmc_l]], [[dmftqmc_n]], [[dmftqmc_seed]], [[dmftqmc_therm]]
 
-
-* * *
-
 ## **dmft_t2g** 
 
 
@@ -296,7 +269,7 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t99.in|t99.in]]
     - v7:  [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
     - v8:  [[tests/v8/Input/t01.in|t01.in]]
@@ -310,9 +283,6 @@ See the useful variables for CT-QMC solver : [[dmftctqmc_basis]],
 Can be set to 1 only if in cubic symmetry. It enables one to carry a DFT+DMFT
 calculations only on t2g orbitals.
 
-
-* * *
-
 ## **dmft_tolfreq** 
 
 
@@ -323,7 +293,7 @@ calculations only on t2g orbitals.
 *Dimensions:* scalar  
 *Default value:* 0.0001  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t99.in|t99.in]]
     - v8:  [[tests/v8/Input/t01.in|t01.in]]
 
@@ -340,9 +310,6 @@ orbitals. Because the Matsubara grid is finite, the two quantities differ. If
 this difference is larger than dmft_tolfreq, then the code stops and an error
 message is given.
 
-
-* * *
-
 ## **dmft_tollc** 
 
 
@@ -353,7 +320,7 @@ message is given.
 *Dimensions:* scalar  
 *Default value:* 1e-05  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t45.in|t45.in]]
 
 
@@ -368,9 +335,6 @@ The default value is good for fast calculations. However, to obtain good
 convergence of the DFT Loop, the DMFT Loop needs a better convergence
 criterion.
 
-
-* * *
-
 ## **dmftbandf** 
 
 
@@ -381,7 +345,7 @@ criterion.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -399,9 +363,6 @@ used to define Wannier Functions. (see Amadon, B., Lechermann, F., Georges,
 A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)
 
-
-* * *
-
 ## **dmftbandi** 
 
 
@@ -412,7 +373,7 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -430,9 +391,6 @@ used to define Wannier Functions. (see Amadon, B., Lechermann, F., Georges,
 A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 (2008).)
 
-
-* * *
-
 ## **dmftcheck** 
 
 
@@ -443,7 +401,7 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
     - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
@@ -458,9 +416,6 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
   
 Only for developer purposes. (Introduced by B. Amadon, v6.1.0)
 
-
-* * *
-
 ## **dmftctqmc_check** 
 
 
@@ -472,7 +427,7 @@ Only for developer purposes. (Introduced by B. Amadon, v6.1.0)
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -490,9 +445,6 @@ but robust methods. Should only be used for debugging.
   * 2=&gt; Check the update of M matrix calculation (Bath operator). 
   * 3=&gt; Check both. 
 
-
-* * *
-
 ## **dmftctqmc_correl** 
 
 
@@ -504,7 +456,7 @@ but robust methods. Should only be used for debugging.
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -520,9 +472,6 @@ simulation. Slow down the simulation.
   * 0=&gt; Nothing done 
   * 1=&gt; Calculations performed and written in "Correlation.dat" file 
 
-
-* * *
-
 ## **dmftctqmc_gmove** 
 
 
@@ -534,7 +483,7 @@ simulation. Slow down the simulation.
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -548,9 +497,6 @@ Default is no global moves. The value of this variable is the modulo used to
 try a global move. A value of 5000 means that a global move is tried every
 5000 Monte Carlo sweep.
 
-
-* * *
-
 ## **dmftctqmc_grnns** 
 
 
@@ -562,7 +508,7 @@ try a global move. A value of 5000 means that a global move is tried every
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -578,9 +524,6 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
   * 0=&gt; Nothing 
   * 1=&gt; Do it and write the noise in the "Gtau.dat" file. 
 
-
-* * *
-
 ## **dmftctqmc_meas** 
 
 
@@ -592,7 +535,7 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
 *Default value:* 1  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -605,9 +548,6 @@ is a good approximation only if there is enough Monte Carlo sweeps per cpu.
 The modulo used to measure the interaction energy and the number of electrons.
 Example : 2 means the measure is perform every two sweeps.
 
-
-* * *
-
 ## **dmftctqmc_mov** 
 
 
@@ -619,7 +559,7 @@ Example : 2 means the measure is perform every two sweeps.
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -636,9 +576,6 @@ requires a lot of I/O band width.
   * 0=&gt; Nothing 
   * 1=&gt; Write the "Movie_id.dat" file where id is the MPI rank of each process 
 
-
-* * *
-
 ## **dmftctqmc_mrka** 
 
 
@@ -650,7 +587,7 @@ requires a lot of I/O band width.
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -667,9 +604,6 @@ perform a fourier transform. The result can be plotted using the
   * 0=&gt; Nothing 
   * 1=&gt; Do it and write the noise in the "Markov_id.dat" file where id is the rank of each MPI process. 
 
-
-* * *
-
 ## **dmftctqmc_order** 
 
 
@@ -681,7 +615,7 @@ perform a fourier transform. The result can be plotted using the
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]]
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
@@ -696,9 +630,6 @@ per orbital. The maximal order taken into account [[dmftctqmc_order]] : 50
 means that we have the statistic distribution from 0 to 50 segments. The
 result is written in the "Perturbation.dat" file.
 
-
-* * *
-
 ## **dmftctqmc_triqs_nleg** 
 
 
@@ -710,7 +641,7 @@ result is written in the "Perturbation.dat" file.
 *Default value:* 30  
 *Only relevant if:* [[dmft_solv]]==6 or 7  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t99.in|t99.in]]
     - v8:  [[tests/v8/Input/t01.in|t01.in]]
 
@@ -726,9 +657,6 @@ coefficients are given in file whose name ending is
 "Legendre_coefficient.dat". (see also [ Phys. Rev. B 84, 075145 (2010))
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.075145)
 
-
-* * *
-
 ## **dmftqmc_l** 
 
 
@@ -740,7 +668,7 @@ coefficients are given in file whose name ending is
 *Default value:* 0  
 *Only relevant if:* [[dmft_solv]]>=4  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]]
     - v7:  [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
@@ -756,9 +684,6 @@ Number of time slices used to represent the time green function. This value
 should be carefully chosen according to Niquist frequency and the [[tsmear]]
 value.
 
-
-* * *
-
 ## **dmftqmc_n** 
 
 
@@ -770,7 +695,7 @@ value.
 *Default value:* 0.0  
 *Only relevant if:* [[dmft_solv]]>=4  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t07.in|t07.in]]
     - v7:  [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
@@ -784,9 +709,6 @@ value.
   
 Number of Monte Carlo sweeps. Should be at least 10^6.
 
-
-* * *
-
 ## **dmftqmc_seed** 
 
 
@@ -798,7 +720,7 @@ Number of Monte Carlo sweeps. Should be at least 10^6.
 *Default value:* [[jdtset]]  
 *Only relevant if:* [[dmft_solv]]>=4  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]]
 
 
@@ -813,9 +735,6 @@ NOTE : If the CT-QMC ([[dmft_solv]]=5) is used on many CPUs, each CPU
 initializes its random number generator with dmftqmc_seed+rank where rank is
 the rank of the cpu in the MPI communicator.
 
-
-* * *
-
 ## **dmftqmc_therm** 
 
 
@@ -827,7 +746,7 @@ the rank of the cpu in the MPI communicator.
 *Default value:* 1000  
 *Only relevant if:* [[dmft_solv]]==5  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
     - v7:  [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]]
     - v8:  [[tests/v8/Input/t01.in|t01.in]]
@@ -839,7 +758,4 @@ the rank of the cpu in the MPI communicator.
 
   
 Number of Monte Carlo sweeps for the thermalization
-
-
-* * *
 

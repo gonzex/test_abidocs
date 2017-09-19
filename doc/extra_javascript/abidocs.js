@@ -1,5 +1,23 @@
-// That selector matches all spans that have an id attribute and it starts with foo (e.g. fooblah
+
 $(function() {
+
+    // Enable all popovers and tooltips in the document:
+    $('[data-toggle="popover"]').popover(); 
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // This is for https://bootsnipp.com/snippets/featured/inbox-by-gmail
+    $('.fab').hover(function () {
+        $(this).toggleClass('active');
+    });
+
+    // When arrow is clicked scroll to top of body
+    $('#return-to-top').click(function() {      
+        $('body,html').animate({
+            scrollTop: 0                       
+        }, 500);
+    });
+
+    // That selector matches all spans that have an id attribute and it starts with foo (e.g. fooblah
     $(".editor").each(function(index, element) {
         element.removeAttribute("hidden")
         var editor = ace.edit(element.id);
@@ -29,11 +47,6 @@ $(function() {
 })
 */
 
-// The following code will enable all popovers in the document:
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover(); 
-});
-
 
 // Return to top arrow. https://codepen.io/rdallaire/pen/apoyx
 /*
@@ -45,14 +58,6 @@ $(window).scroll(function() {
     }
 });
 */
-
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop: 0                       // Scroll to top of body
-    }, 500);
-});
-
-
 
 // https://facelessuser.github.io/pymdown-extensions/extensions/details/
 (function () {
@@ -136,13 +141,3 @@ var details = (function () {
 })();
 
 }());
-
-
-/* This is for  https://bootsnipp.com/snippets/featured/inbox-by-gmail */
-$('.fab').hover(function () {
-    $(this).toggleClass('active');
-});
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})

@@ -20,7 +20,7 @@ optic input variables to be used in the input file for the optic executable.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -43,9 +43,6 @@ the denominator from ever going to 0 and acts as a broadening to the spectrum.
 The broadening should not be too large as this would wash out the features in
 the spectrum.
 
-
-* * *
-
 ## **ddkfile** 
 
 
@@ -56,7 +53,7 @@ the spectrum.
 *Default value:* None  
 *Comment:* no default  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -76,9 +73,6 @@ k-points are the same in all the files.
 
 use as string with the filename: ddkfile_X, where X is the file number.
 
-
-* * *
-
 ## **domega** 
 
 
@@ -88,7 +82,7 @@ use as string with the filename: ddkfile_X, where X is the file number.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -104,9 +98,6 @@ formula number of energy mesh points=maximum/step (zero excluded). So in order
 to capture more features you can decrease the step size to get a finer energy
 grid. In order to go to higher frequency, increase the maximum.
 
-
-* * *
-
 ## **lin_comp** 
 
 
@@ -116,7 +107,7 @@ grid. In order to go to higher frequency, increase the maximum.
 *Dimensions:* (['num_lin_comp'])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -132,9 +123,6 @@ These numbers are called a and b Eqs. 46 in [Ref.
 1](../../users/generated_files/help_optic.html#Ref1). 1 2 3 represent x y and
 z respectively. For example 11 would be xx and 32 would mean zy.
 
-
-* * *
-
 ## **maxomega** 
 
 
@@ -144,7 +132,7 @@ z respectively. For example 11 would be xx and 32 would mean zy.
 *Dimensions:* scalar  
 *Default value:* 1 Ha  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -160,9 +148,6 @@ formula number of energy mesh points=maximum/step (zero excluded). So in order
 to capture more features you can decrease the step size to get a finer energy
 grid. In order to go to higher frequency, increase the maximum.
 
-
-* * *
-
 ## **nonlin_comp** 
 
 
@@ -172,7 +157,7 @@ grid. In order to go to higher frequency, increase the maximum.
 *Dimensions:* (['num_nonlin_comp'])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -188,9 +173,6 @@ These numbers are called a, b and c in [Ref.
 1](../../users/generated_files/help_optic.html#Ref1). 1 2 3 represent x y and
 z respectively. For example 111 would be xxx and 321 would mean zyx.
 
-
-* * *
-
 ## **num_lin_comp** 
 
 
@@ -200,7 +182,7 @@ z respectively. For example 111 would be xxx and 321 would mean zyx.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -217,9 +199,6 @@ symmetry of the material (for detail see [Ref.
 3](../../users/generated_files/help_optic.html#Ref3)).  
 Note that the directions are along the Cartesian axis.
 
-
-* * *
-
 ## **num_nonlin_comp** 
 
 
@@ -229,7 +208,7 @@ Note that the directions are along the Cartesian axis.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -246,9 +225,6 @@ the symmetry of the material (for detail see [Ref.
 3](../../users/generated_files/help_optic.html#Ref3)).  
 Note that the directions are along the Cartesian axis.
 
-
-* * *
-
 ## **scissor** 
 
 
@@ -259,7 +235,7 @@ Note that the directions are along the Cartesian axis.
 *Default value:* 0.0  
 *Comment:* in Ha  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -280,9 +256,6 @@ self energy using the [GW
 approach](../../tutorial/generated_files/lesson_gw1.html). In this case the
 opening of the gap due to the GW correction can be used as scissor shift.
 
-
-* * *
-
 ## **tolerance** 
 
 
@@ -292,7 +265,7 @@ opening of the gap due to the GW correction can be used as scissor shift.
 *Dimensions:* scalar  
 *Default value:* 1.d-3 Ha  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -306,9 +279,6 @@ opening of the gap due to the GW correction can be used as scissor shift.
 When energy denominators are smaller than **tolerance**, the term is discarded
 from the sum.
 
-
-* * *
-
 ## **wfkfile** 
 
 
@@ -319,7 +289,7 @@ from the sum.
 *Default value:* None  
 *Comment:* no default  
 
-??? note "Test list (click to open) (Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials)"
+??? note "Test list (click to open). Very frequently used, [6/6] in all optic tests, [2/2] in optic tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/toptic_2.in|toptic_2.in]], [[tests/tutorespfn/Input/toptic_4.in|toptic_4.in]]
     - v4:  [[tests/v4/Input/t57.in|t57.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t53.in|t53.in]]
@@ -336,7 +306,4 @@ direction X. It must not contain the first-order wavefunctions and may be
 generated using [[prtwf]] 3.  
 You should make sure that the number of bands, of spin channels and of
 k-points are the same in all the files.
-
-
-* * *
 

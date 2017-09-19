@@ -20,7 +20,7 @@ aim input variables to be used in the input file for the aim executable.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -32,9 +32,6 @@ aim input variables to be used in the input file for the aim executable.
 
 Index of the investigated atom.
 
-
-* * *
-
 ## **atrad** 
 
 
@@ -44,7 +41,7 @@ Index of the investigated atom.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
@@ -56,9 +53,6 @@ Index of the investigated atom.
 A first estimation of the Bader radius (not too important - it is used only
 two times)
 
-
-* * *
-
 ## **coff1** 
 
 
@@ -68,7 +62,7 @@ two times)
 *Dimensions:* scalar  
 *Default value:* 0.98  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -76,9 +70,6 @@ two times)
 
 
 See the input variable [[ratmin@aim]].
-
-
-* * *
 
 ## **coff2** 
 
@@ -89,7 +80,7 @@ See the input variable [[ratmin@aim]].
 *Dimensions:* scalar  
 *Default value:* 0.95  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -97,9 +88,6 @@ See the input variable [[ratmin@aim]].
 
 
 See the input variable [[ratmin@aim]].
-
-
-* * *
 
 ## **crit** 
 
@@ -110,7 +98,7 @@ See the input variable [[ratmin@aim]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -143,9 +131,6 @@ this only for CP(3,-1). When CP analysis is rather fast (with respect to
 surface determination), 2 is recommended. In all cases the number of neighbors
 considered is limited by distance cutoff (variable [[maxatd@aim]])
 
-
-* * *
-
 ## **denout** 
 
 
@@ -155,7 +140,7 @@ considered is limited by distance cutoff (variable [[maxatd@aim]])
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -171,9 +156,6 @@ density (see [[dltyp@aim]]).
   * 1, 1D distribution 
   * 2, 2D distribution 
 
-
-* * *
-
 ## **dltyp** 
 
 
@@ -183,7 +165,7 @@ density (see [[dltyp@aim]]).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -197,9 +179,6 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
   * 1, only the valence density 
   * 2, only the core density 
 
-
-* * *
-
 ## **dpclim** 
 
 
@@ -209,7 +188,7 @@ the density and/or laplacian output (see [[denout@aim]] and [[lapout@aim]])
 *Dimensions:* scalar  
 *Default value:* 1.d-2  
 
-??? note "Test list (click to open) (Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials"
     - v4:  [[tests/v4/Input/t33.in|t33.in]]
 
 
@@ -224,9 +203,6 @@ different finite elements. The default should be OK when the ecut is quite
 large, on the order of 60 Hartree. For less accurate calculations of the
 density, increase the default value to 5.d-2, let's say.
 
-
-* * *
-
 ## **foldep** 
 
 
@@ -236,7 +212,7 @@ density, increase the default value to 5.d-2, let's say.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -244,9 +220,6 @@ density, increase the default value to 5.d-2, let's say.
 
 
 Needed in the case [[aim:follow]]=1 only. Defines the starting point.
-
-
-* * *
 
 ## **follow** 
 
@@ -257,7 +230,7 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -270,9 +243,6 @@ Needed in the case [[aim:follow]]=1 only. Defines the starting point.
 Follow the gradient path to the corresponding atom starting from the position
 specified in the input variable [[aim:foldep]].
 
-
-* * *
-
 ## **folstp** 
 
 
@@ -282,7 +252,7 @@ specified in the input variable [[aim:foldep]].
 *Dimensions:* scalar  
 *Default value:* 0.5  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -290,9 +260,6 @@ specified in the input variable [[aim:foldep]].
 
 
 The first step for following the gradient path.
-
-
-* * *
 
 ## **gpsurf** 
 
@@ -303,7 +270,7 @@ The first step for following the gradient path.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -319,9 +286,6 @@ calculated Bader surface.
   * 0, not output 
   * 1, output 
 
-
-* * *
-
 ## **inpt** 
 
 
@@ -331,7 +295,7 @@ calculated Bader surface.
 *Dimensions:* scalar  
 *Default value:* 100  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -344,9 +308,6 @@ calculated Bader surface.
 Number of radial points used for integration of the Bader charge (not too
 sensitive).
 
-
-* * *
-
 ## **irho** 
 
 
@@ -356,7 +317,7 @@ sensitive).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -371,9 +332,6 @@ Drives the integration of the charge of the Bader atom.
   * 0, not calculated 
   * 1, calculated (usual mode) 
 
-
-* * *
-
 ## **ivol** 
 
 
@@ -383,7 +341,7 @@ Drives the integration of the charge of the Bader atom.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Moderately used, [1/5] in all aim tests, [0/0] in aim tutorials"
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
 
@@ -396,9 +354,6 @@ Drives the integration of the volume of the Bader atom.
   * 0, not calculated 
   * 1, calculated 
 
-
-* * *
-
 ## **lapout** 
 
 
@@ -408,7 +363,7 @@ Drives the integration of the volume of the Bader atom.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -424,9 +379,6 @@ the core density (see [[aim:dltyp]]).
   * 1, 1D distribution 
   * 2, 2D distribution 
 
-
-* * *
-
 ## **lgrad** 
 
 
@@ -436,7 +388,7 @@ the core density (see [[aim:dltyp]]).
 *Dimensions:* scalar  
 *Default value:* 1.d-12  
 
-??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -454,9 +406,6 @@ number of search step becomes larger than an internal limit (presently set to
 criteria on [[aim:lgrad2]] and [[aim:lstep2]] are not satisfied, then the
 searching procedure continues with the next seed.
 
-
-* * *
-
 ## **lgrad2** 
 
 
@@ -466,7 +415,7 @@ searching procedure continues with the next seed.
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
 
-??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -478,9 +427,6 @@ searching procedure continues with the next seed.
 Determines the criterion for deciding that a CP has been found. See
 [[aim:lgrad]] for more details.
 
-
-* * *
-
 ## **lstep** 
 
 
@@ -490,7 +436,7 @@ Determines the criterion for deciding that a CP has been found. See
 *Dimensions:* scalar  
 *Default value:* 1.d-10  
 
-??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -502,9 +448,6 @@ Determines the criterion for deciding that a CP has been found. See
 Determines the criterion for deciding a CP has been found. See [[aim:lgrad]]
 for more details.
 
-
-* * *
-
 ## **lstep2** 
 
 
@@ -514,7 +457,7 @@ for more details.
 *Dimensions:* scalar  
 *Default value:* 1.d-5  
 
-??? note "Test list (click to open) (Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [3/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -526,9 +469,6 @@ for more details.
 Determines the criterion for deciding that a CP has been found. See
 [[aim:lgrad]] for more details.
 
-
-* * *
-
 ## **maxatd** 
 
 
@@ -538,7 +478,7 @@ Determines the criterion for deciding that a CP has been found. See
 *Dimensions:* scalar  
 *Default value:* 10.0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -555,9 +495,6 @@ Note that the supercell, determined by [[aim:nsa]], [[aim:nsb]], and
 [[aim:nsc]] might be too small to actually lead to the consideration of all
 the desired atoms.
 
-
-* * *
-
 ## **maxcpd** 
 
 
@@ -567,7 +504,7 @@ the desired atoms.
 *Dimensions:* scalar  
 *Default value:* 5.0  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -583,9 +520,6 @@ Note that the supercell, determined by [[aim:nsa]], [[aim:nsb]], and
 [[aim:nsc]] might be too small to actually lead to the consideration of all
 the critical points.
 
-
-* * *
-
 ## **ngrid** 
 
 
@@ -595,7 +529,7 @@ the critical points.
 *Dimensions:* (2)  
 *Default value:* 2*30  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -604,9 +538,6 @@ the critical points.
 
 Defines the grid in real space, for the density and laplacian outputs,
 governed by [[aim:denout]] and [[aim:lapout]].
-
-
-* * *
 
 ## **nphi** 
 
@@ -617,7 +548,7 @@ governed by [[aim:denout]] and [[aim:lapout]].
 *Dimensions:* scalar  
 *Default value:* 48  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -634,9 +565,6 @@ between these two variables is 2 pi, the recommended value of **nphi** is 48.
 When it is pi (for symmetry reasons), the recommended value is 32. When it is
 pi/2 (for symmetry reasons), the recommended value is 20.
 
-
-* * *
-
 ## **nsa** 
 
 
@@ -646,7 +574,7 @@ pi/2 (for symmetry reasons), the recommended value is 20.
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -670,9 +598,6 @@ each primitive direction. This supercell is build as follows :
        enddo
       enddo
       
-
-
-* * *
 
 ## **nsb** 
 
@@ -683,7 +608,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -707,9 +632,6 @@ each primitive direction. This supercell is build as follows :
        enddo
       enddo
       
-
-
-* * *
 
 ## **nsc** 
 
@@ -720,7 +642,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 3  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -745,9 +667,6 @@ each primitive direction. This supercell is build as follows :
       enddo
       
 
-
-* * *
-
 ## **ntheta** 
 
 
@@ -757,7 +676,7 @@ each primitive direction. This supercell is build as follows :
 *Dimensions:* scalar  
 *Default value:* 32  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -773,9 +692,6 @@ between [[aim:thetamin]] and [[aim:thetamax]]. When the difference between
 these two variables is pi, the recommended value of **ntheta** is 32. When it
 is pi/2 (for symmetry reasons), the recommended value is 20.
 
-
-* * *
-
 ## **phimax** 
 
 
@@ -785,7 +701,7 @@ is pi/2 (for symmetry reasons), the recommended value is 20.
 *Dimensions:* scalar  
 *Default value:* 2.0  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -798,9 +714,6 @@ Angular limits of integration of the Bader volume for the phi variables. The
 number of integration points is given by [[aim:nphi]]. The range of
 integration can be decreased if there are symmetry reasons for doing this.
 
-
-* * *
-
 ## **phimin** 
 
 
@@ -810,7 +723,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -821,9 +734,6 @@ Angular limits of integration of the Bader volume for the phi variables. The
 number of integration points is given by [[aim:nphi]]. The range of
 integration can be decreased if there are symmetry reasons for doing this.
 
-
-* * *
-
 ## **radstp** 
 
 
@@ -833,7 +743,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.05  
 
-??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
@@ -844,9 +754,6 @@ integration can be decreased if there are symmetry reasons for doing this.
 
 The length of the first step in the search of the exact Bader radius.
 
-
-* * *
-
 ## **ratmin** 
 
 
@@ -856,7 +763,7 @@ The length of the first step in the search of the exact Bader radius.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (click to open) (Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Moderately used, [2/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
 
@@ -875,9 +782,6 @@ of the ad hoc parameter [[aim:coff1]] (default 0.98) by the distance of the
 nearest bonding CP. If there is a problem later, [[aim:coff2]] (default 0.95)
 is used instead.
 
-
-* * *
-
 ## **rsurdir** 
 
 
@@ -887,7 +791,7 @@ is used instead.
 *Dimensions:* (2)  
 *Default value:* 2*0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -896,9 +800,6 @@ is used instead.
 
 In the case [[aim:rsurf]]=1, gives the direction (angular coordinates
 theta,phi) along which the radius of the Bader surface is to be determined.
-
-
-* * *
 
 ## **rsurf** 
 
@@ -909,7 +810,7 @@ theta,phi) along which the radius of the Bader surface is to be determined.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -922,9 +823,6 @@ specified in the input variable [[aim:rsurdir]]
   * 0, not calculated 
   * 1, calculated 
 
-
-* * *
-
 ## **scal** 
 
 
@@ -934,7 +832,7 @@ specified in the input variable [[aim:rsurdir]]
 *Dimensions:* (3)  
 *Default value:* 1.0 1.0 1.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -942,9 +840,6 @@ specified in the input variable [[aim:rsurdir]]
 
 
 SCALing of the cartesian coordinates.
-
-
-* * *
 
 ## **surf** 
 
@@ -955,7 +850,7 @@ SCALing of the cartesian coordinates.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [5/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
     - v6:  [[tests/v6/Input/t19.in|t19.in]]
@@ -970,9 +865,6 @@ Drive the computation of the full Bader surface.
   * 0, not calculated 
   * 1, calculated 
 
-
-* * *
-
 ## **thetamax** 
 
 
@@ -982,7 +874,7 @@ Drive the computation of the full Bader surface.
 *Dimensions:* scalar  
 *Default value:* pi  
 
-??? note "Test list (click to open) (Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Very frequently used, [4/5] in all aim tests, [0/0] in aim tutorials"
     - v3:  [[tests/v3/Input/t57.in|t57.in]]
     - v4:  [[tests/v4/Input/t31.in|t31.in]], [[tests/v4/Input/t33.in|t33.in]], [[tests/v4/Input/t34.in|t34.in]]
 
@@ -995,9 +887,6 @@ Angular limits of integration of the Bader volume for the theta variables. The
 number of integration points is given by [[aim:ntheta]]. The range of
 integration can be decreased if there are symmetry reasons for doing this.
 
-
-* * *
-
 ## **thetamin** 
 
 
@@ -1007,7 +896,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -1017,9 +906,6 @@ integration can be decreased if there are symmetry reasons for doing this.
 Angular limits of integration of the Bader volume for the theta variables. The
 number of integration points is given by [[aim:ntheta]]. The range of
 integration can be decreased if there are symmetry reasons for doing this.
-
-
-* * *
 
 ## **vpts** 
 
@@ -1031,7 +917,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *commentdims:* 6 for 1D, 9 for 2D  
 *Default value:* 6*0.0  
 
-??? note "Test list (click to open) (Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials)"
+??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"
 
 
 
@@ -1041,7 +927,4 @@ integration can be decreased if there are symmetry reasons for doing this.
 Basic vectors of the line or rectangle in real space, defining the points for
 which the density or laplacian will be computed, thanks to [[aim:denout]] or
 [[aim:lapout]]
-
-
-* * *
 

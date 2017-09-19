@@ -21,7 +21,7 @@ gw input variables to be used in the input file for the abinit executable.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Moderately used, [31/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [31/920] in all abinit tests, [3/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
@@ -46,9 +46,6 @@ not.
 Note that the parallel algorithm [[gwpara]]=2 is not compatible with the
 choice [[awtr]]=0.
 
-
-* * *
-
 ## **bdgw** 
 
 
@@ -59,7 +56,7 @@ choice [[awtr]]=0.
 *Default value:* *0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [63/920] in all abinit tests, [11/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [63/920] in all abinit tests, [11/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -102,9 +99,6 @@ expand the GW wavefunctions should include all the degenerate states belonging
 to the same irreducible representation. Only in this case, indeed, the initial
 symmetries and energy degenerations are preserved.
 
-
-* * *
-
 ## **cd_customnimfrqs** 
 
 
@@ -115,7 +109,7 @@ symmetries and energy degenerations are preserved.
 *Default value:* 0  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -127,9 +121,6 @@ symmetries and energy degenerations are preserved.
 axis by hand. Set this to the number of frequencies you want. The frequencies
 are specified with [[cd_imfrqs]].
 
-
-* * *
-
 ## **cd_frqim_method** 
 
 
@@ -140,7 +131,7 @@ are specified with [[cd_imfrqs]].
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==4  and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
@@ -231,9 +222,6 @@ file (using the utility), one only needs to perform the screening calculation
 the utility to merge independent screening calculations over q-points and
 frequency sections.
 
-
-* * *
-
 ## **cd_full_grid** 
 
 
@@ -244,7 +232,7 @@ frequency sections.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -275,9 +263,6 @@ inner loop and the imaginary as the outer loop. The contents of the generated
 SUS and SCR files can be extracted for visualisation and further analysis with
 the ** Mrgscr ** utility.
 
-
-* * *
-
 ## **cd_halfway_freq** 
 
 
@@ -289,7 +274,7 @@ the ** Mrgscr ** utility.
 *Default value:* 100.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -302,9 +287,6 @@ points defined in [[nfreqre]] are used up. The tangent transformed grid is
 approximately linear up to this point. To be used in conjunction with
 [[gw_frqre_tangrid]].
 
-
-* * *
-
 ## **cd_imfrqs** 
 
 
@@ -315,7 +297,7 @@ approximately linear up to this point. To be used in conjunction with
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and [[cd_customnimfrqs]] != 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -337,9 +319,6 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 
 ** Use at own risk! ** The use of a custom grid makes it your responsibility that the SUS and SCR files are valid in self-energy (i.e. [[optdriver]]=4) calculations, so caution is advised. Note that frequencies have to be strictly increasing, and the point at zero frequency is ** not ** considered to be part of the imaginary grid, but rather the grid along the real axis. The calculation of that point should be controlled by [[nfreqre]] and related variables. 
 
-
-* * *
-
 ## **cd_max_freq** 
 
 
@@ -351,7 +330,7 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 *Default value:* 1000.0 eV  
 *Only relevant if:* ([[optdriver]]==3 or [[optdriver]]==4) and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -361,9 +340,6 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 
 [[cd_max_freq]] determines the frequency where all the points defined in
 [[nfreqre]] are used up. To be used in conjunction with [[gw_frqre_tangrid]].
-
-
-* * *
 
 ## **cd_subset_freq** 
 
@@ -375,7 +351,7 @@ If [[nfreqim]] is not equal to [[cd_customnimfrqs]] a warning will be issued.
 *Default value:* [1, '[[nfreqre]]']  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,9,12,19,22,29] and  [[gw_frqre_tangrid]]==0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -397,9 +373,6 @@ with:
 Any resulting susceptibility (_SUS) and screening (_SCR) files can then be
 merged with the ** mrgscr ** utility.
 
-
-* * *
-
 ## **ecuteps** 
 
 
@@ -411,7 +384,7 @@ merged with the ** mrgscr ** utility.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3 or [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [87/920] in all abinit tests, [14/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [87/920] in all abinit tests, [14/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]], [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
@@ -437,9 +410,6 @@ overkill. A value of [[ecuteps]] between 5 and 10 Hartree often (but not
 always) leads to converged results (at the level of 0.01 eV for the energy
 gap). In any case, a convergence study is worth.
 
-
-* * *
-
 ## **ecutsigx** 
 
 
@@ -451,7 +421,7 @@ gap). In any case, a convergence study is worth.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [69/920] in all abinit tests, [11/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [69/920] in all abinit tests, [11/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -476,9 +446,6 @@ if you do not care about CPU time, please use these values. If you want to
 spare some CPU time, you might try to use a value between [[ecut]] and these
 upper limits.
 
-
-* * *
-
 ## **ecutwfn** 
 
 
@@ -492,7 +459,7 @@ upper limits.
   
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [93/920] in all abinit tests, [18/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [93/920] in all abinit tests, [18/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -521,9 +488,6 @@ although a convergence study is needed to choose correctly both values.
 
 The size of this set of planewaves is [[npwwfn]].
 
-
-* * *
-
 ## **fftgw** 
 
 
@@ -534,7 +498,7 @@ The size of this set of planewaves is [[npwwfn]].
 *Default value:* 21  
 *Only relevant if:*  [[optdriver]]==3 or [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [14/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t72.in|t72.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t06.in|t06.in]], [[tests/v67mbpt/Input/t07.in|t07.in]], [[tests/v67mbpt/Input/t08.in|t08.in]], [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t19.in|t19.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]]
@@ -579,9 +543,6 @@ not:
 
 The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 
-
-* * *
-
 ## **freqim_alpha** 
 
 
@@ -592,7 +553,7 @@ The behaviour of ABINIT before v5.5 corresponds to the default value 11.
 *Default value:* 5.0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
@@ -610,9 +571,6 @@ _ is the plasma frequency determined by the average density of the system
 grids in the descriptive text for [[cd_frqim_method]] for a detailed
 description of the formula.
 
-
-* * *
-
 ## **freqremax** 
 
 
@@ -624,7 +582,7 @@ description of the formula.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [13/920] in all abinit tests, [2/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
@@ -645,9 +603,6 @@ matrix in order to perform the numerical integration of the GW self-energy.
 [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
 frequency mesh along the real axis.
 
-
-* * *
-
 ## **freqremin** 
 
 
@@ -659,7 +614,7 @@ frequency mesh along the real axis.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t71.in|t71.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t37.in|t37.in]]
     - v7:  [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
@@ -680,9 +635,6 @@ single screening file that can used for self-energy calculations. Note that
 [[freqremax]], [[freqremin]] and [[nfreqre]] define the spacing of the
 frequency mesh along the real axis.
 
-
-* * *
-
 ## **freqspmax** 
 
 
@@ -694,7 +646,7 @@ frequency mesh along the real axis.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [8/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorial:  [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
     - v4:  [[tests/v4/Input/t84.in|t84.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
@@ -711,9 +663,6 @@ function from the GW Green's function. [[freqspmin]], [[freqspmax]] and
 axis. Alternatively, the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can
 be used to make a user-defined grid.
 
-
-* * *
-
 ## **freqspmin** 
 
 
@@ -725,7 +674,7 @@ be used to make a user-defined grid.
 *Default value:* -[[freqspmax]]  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -741,9 +690,6 @@ spacing of an equidistant frequency mesh along the real axis. Alternatively,
 the variables [[gw_customnfreqsp]] and [[gw_freqsp]] can be used to make a
 user-defined grid.
 
-
-* * *
-
 ## **gw_customnfreqsp** 
 
 
@@ -754,7 +700,7 @@ user-defined grid.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -768,9 +714,6 @@ frequency axis by hand for the calculation of the self-energy along the real
 axis. Set this to the number of frequencies you want. The frequencies are
 specified with [[gw_freqsp]].
 
-
-* * *
-
 ## **gw_freqsp** 
 
 
@@ -781,7 +724,7 @@ specified with [[gw_freqsp]].
 *Default value:* [ 1 ... [[gw_customnfreqsp]] ]  
 *Only relevant if:* [[optdriver]]==4 and [[gw_customnfreqsp]] > 0   
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -805,9 +748,6 @@ equal to 0. The number of frequencies is set by the value of
 
 If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 
-
-* * *
-
 ## **gw_frqim_inzgrid** 
 
 
@@ -818,7 +758,7 @@ If [[nfreqsp]] is not equal to [[gw_customnfreqsp]] a warning will be issued.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
@@ -837,9 +777,6 @@ Here  _ ω p  _ is the plasma frequency (default can be overridden by setting
 and the points are distributed so that half of them lie below the plasma
 frequency.
 
-
-* * *
-
 ## **gw_frqre_inzgrid** 
 
 
@@ -850,7 +787,7 @@ frequency.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t22.in|t22.in]]
 
 
@@ -877,9 +814,6 @@ typically only a smaller range of frequencies near the origin is required. The
 maximum value needed along the real frequency axis is output in the logfile
 during Contour Deformation sigma calculations.
 
-
-* * *
-
 ## **gw_frqre_tangrid** 
 
 
@@ -890,7 +824,7 @@ during Contour Deformation sigma calculations.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcalctyp]] in [2,9,12,19,22,29]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t21.in|t21.in]]
 
 
@@ -906,9 +840,6 @@ function which decays as 1/x^2. To be used in conjunction with [[nfreqre]],
 [[cd_max_freq]] and [[cd_halfway_freq]] which determine the parameters of the
 transformed grid.
 
-
-* * *
-
 ## **gw_invalid_freq** 
 
 
@@ -919,7 +850,7 @@ transformed grid.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[ppmodel]] in [2]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t41.in|t41.in]]
 
 
@@ -934,9 +865,6 @@ invalid (negative or imaginary).
   * [[gw_invalid_freq]]=1 : Set them to 1 hartree, as done for the PPM of Godby-Needs. 
   * [[gw_invalid_freq]]=2 : Set them to infinity. 
 
-
-* * *
-
 ## **gw_nqlwl** 
 
 
@@ -947,7 +875,7 @@ invalid (negative or imaginary).
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
@@ -982,9 +910,6 @@ evaluated. By default the Bethe-Salpeter code calculates the macroscopic
 dielectric function using six different directions in q-space (the three basis
 vectors of the reciprocal lattice and the three Cartesian axis).
 
-
-* * *
-
 ## **gw_nstep** 
 
 
@@ -995,7 +920,7 @@ vectors of the reciprocal lattice and the three Cartesian axis).
 *Default value:* 30  
 *Only relevant if:* [[optdriver]]==8  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1007,9 +932,6 @@ which G and/or W will be updated until the quasi-particle energies are
 converged within [[gw_toldfeig]]. [[gwcalctyp]] and [[gw_sctype]] are used to
 define the type of self-consistency.
 
-
-* * *
-
 ## **gw_qlwl** 
 
 
@@ -1020,7 +942,7 @@ define the type of self-consistency.
 *Default value:* [1e-05, 2e-05, 3e-05]  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
@@ -1033,9 +955,6 @@ that are considered during the evaluation of the non-analytical behaviour of
 the dielectric matrix. Optical spectra (with and without non-local field
 effects) are evaluated for each direction specified by [[gw_qlwl]].
 
-
-* * *
-
 ## **gw_qprange** 
 
 
@@ -1046,7 +965,7 @@ effects) are evaluated for each direction specified by [[gw_qlwl]].
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -1078,9 +997,6 @@ included. Note also that [[kptgw]], and [[bdgw]] are ignored when this options
 is used. If you want to select manually the list of k-points and bands, you
 have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 
-
-* * *
-
 ## **gw_sctype** 
 
 
@@ -1091,7 +1007,7 @@ have to provide the three variables [[nkptgw]], [[kptgw]], and [[bdgw]].
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1119,9 +1035,6 @@ previously calculated SCR or SUSC file via the variables [[getscr]] or
 file thus initializing the Green functions to be used in the first self-
 consistent iteration.
 
-
-* * *
-
 ## **gw_sigxcore** 
 
 
@@ -1132,7 +1045,7 @@ consistent iteration.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4 and [[usepaw]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t66.in|t66.in]]
 
 
@@ -1164,9 +1077,6 @@ contribution to sigma.
   * [[gw_sigxcore]] = 0, standard approach, the core contribution is approximated with vxc. 
   * [[gw_sigxcore]] = 1, the core term is approximated with the Fock operator inside the PAW spheres. 
 
-
-* * *
-
 ## **gw_toldfeig** 
 
 
@@ -1178,7 +1088,7 @@ contribution to sigma.
 *Default value:* 0.1 eV  
 *Only relevant if:* [[optdriver]]==8  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1190,9 +1100,6 @@ self-consistent GW cycle to stop.
 Can be specified in Ha (the default), Ry, eV or Kelvin, since ** toldfe ** has
 the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)  
 
-
-* * *
-
 ## **gwcalctyp** 
 
 
@@ -1203,7 +1110,7 @@ the '[[ENERGY]]' characteristics (1 Ha=27.2113845 eV)
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [42/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [42/920] in all abinit tests, [5/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]], [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -1241,9 +1148,6 @@ Also
   * [[gwcalctyp]] = 205,225 : PBE0 calculations (1-shot and self-consistent) 
   * [[gwcalctyp]] = 305,325 : B3LYP calculations (1-shot and self-consistent) 
 
-
-* * *
-
 ## **gwcomp** 
 
 
@@ -1254,7 +1158,7 @@ Also
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t72.in|t72.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
@@ -1273,9 +1177,6 @@ needed in the extrapolar approximation is set by [[gwencomp]]. See F.
 Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of the
 methodology.
 
-
-* * *
-
 ## **gwencomp** 
 
 
@@ -1286,7 +1187,7 @@ methodology.
 *Default value:* 2.0  
 *Only relevant if:* [[optdriver]] in [3,4] and [[gwcomp]]==1  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t72.in|t72.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
@@ -1304,9 +1205,6 @@ bands much faster.
 See F. Bruneval, X. Gonze, Phys. Rev. B 78, 085125 (2008) for a description of
 the methodology.
 
-
-* * *
-
 ## **gwfockmix** 
 
 
@@ -1317,7 +1215,7 @@ the methodology.
 *Default value:* 0.25  
 *Only relevant if:* [[optdriver]]=4, [[gwcalctyp]] = 1x5 (HSE) or 2x5 (PBE0).  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t43.in|t43.in]]
 
 
@@ -1329,9 +1227,6 @@ Mixing parameter of Fock exchange for PBE0 and HSE hybrid-functional
 calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 (essentially PBE) to 1.
 
-
-* * *
-
 ## **gwgamma** 
 
 
@@ -1342,7 +1237,7 @@ calculations via the GW self-energy subroutine. [[gwfockmix]] ranges from 0
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]=3 or 4 (Sigma calculations)  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t04.in|t04.in]], [[tests/v67mbpt/Input/t05.in|t05.in]], [[tests/v67mbpt/Input/t36.in|t36.in]]
     - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
@@ -1367,9 +1262,6 @@ kernel.
 [[gwgamma]]=-8 uses the RPA bootstrap-like kernel (one-shot) [Phys. Rev. Lett.
 115, 137402 (2015), ibid. 114, 146402 (2015)].
 
-
-* * *
-
 ## **gwls_band_index** 
 
 
@@ -1380,7 +1272,7 @@ kernel.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -1393,9 +1285,6 @@ Governs the DFT eigenstate |e> in which the self-energy will be evaluated, as
 shown in eq. (7) of Phys. Rev. B 91, 125120 (2015). That is, it is the state
 to be corrected in the G0W0 scheme.
 
-
-* * *
-
 ## **gwls_correlation** 
 
 
@@ -1406,7 +1295,7 @@ to be corrected in the G0W0 scheme.
 *Default value:* 3  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1430,9 +1319,6 @@ The default, ([[gwls_correlation]] == 3), is the most performant option and
 should be kept by the user. Option 1, 2 and 5 are deprecated and will be
 removed.
 
-
-* * *
-
 ## **gwls_diel_model** 
 
 
@@ -1443,7 +1329,7 @@ removed.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1452,9 +1338,6 @@ removed.
 
 
 Not used yet.
-
-
-* * *
 
 ## **gwls_exchange** 
 
@@ -1466,7 +1349,7 @@ Not used yet.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1478,9 +1361,6 @@ Governs whether the exact exchange for the state to be corrected
 ([[gwls_band_index]]) is calculated ([[gwls_exchange]]==1) or not
 ([[gwls_exchange]]==0).
 
-
-* * *
-
 ## **gwls_first_seed** 
 
 
@@ -1491,7 +1371,7 @@ Governs whether the exact exchange for the state to be corrected
 *Default value:* [[gwls_band_index]]  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1511,9 +1391,6 @@ The default [[gwls_first_seed]]==[[gwls_band_index]] and [[gwls_nseeds]]==1
 has been thoroughly tested and seems to be the most performant. Users should
 therefore keep the default value.
 
-
-* * *
-
 ## **gwls_kmax_analytic** 
 
 
@@ -1524,7 +1401,7 @@ therefore keep the default value.
 *Default value:* 8  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1537,9 +1414,6 @@ eq. (35) of Phys. Rev. B 91, 125120 (2015) to solve it at all external
 frequencies requested by the user ([[gw_freqsp]]). The default value is
 converged to a few 10s of meV for all molecules studied so far.
 
-
-* * *
-
 ## **gwls_kmax_complement** 
 
 
@@ -1550,7 +1424,7 @@ converged to a few 10s of meV for all molecules studied so far.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -1574,9 +1448,6 @@ In the context where the model dielectric matrix is used in the calculations,
 For more information on the exact role of these bases and on the model
 dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 
-
-* * *
-
 ## **gwls_kmax_numeric** 
 
 
@@ -1587,7 +1458,7 @@ dielectric operator used, see section V of Phys. Rev. B 91, 125120 (2015).
 *Default value:* 16  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1602,9 +1473,6 @@ integration frequencies (generated automatically by the number of points
 frequencies requested by the user ([[gw_freqsp]]). The default value is
 converged to a few 10s of meV for all molecules studied so far.
 
-
-* * *
-
 ## **gwls_kmax_poles** 
 
 
@@ -1615,7 +1483,7 @@ converged to a few 10s of meV for all molecules studied so far.
 *Default value:* 4  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1637,9 +1505,6 @@ the default value by the user.
 For more information on the Lanczos basis constructed for the calculation of
 the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 
-
-* * *
-
 ## **gwls_list_proj_freq** 
 
 
@@ -1650,7 +1515,7 @@ the residues, see section IV of Phys. Rev. B 91, 125120 (2015).
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1666,9 +1531,6 @@ since the frequencies \Infty and (if [[gwls_recycle]]>0) 0.0 are used at no
 computational cost, [[gwls_n_proj_freq]]==0 (which means no ADDITIONAL
 frequency is to be used) is fine and no frequencies need to be picked up.
 
-
-* * *
-
 ## **gwls_model_parameter** 
 
 
@@ -1680,7 +1542,7 @@ frequency is to be used) is fine and no frequencies need to be picked up.
 *Default value:* 1.0  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1705,9 +1567,6 @@ calculation with respect to the number of frequencies of integration
 calculation. Typically, the default ([[gwls_model_parameter]]==1.0) is
 optimal.
 
-
-* * *
-
 ## **gwls_n_proj_freq** 
 
 
@@ -1718,7 +1577,7 @@ optimal.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1733,9 +1592,6 @@ equations involved in the construction of the dielectric matrix at finite
 frequencies. See section VI of Phys. Rev. B 91, 125120 (2015). For most cases,
 the default ([[gwls_n_proj_freq]]==0) is fine.
 
-
-* * *
-
 ## **gwls_npt_gauss_quad** 
 
 
@@ -1746,7 +1602,7 @@ the default ([[gwls_n_proj_freq]]==0) is fine.
 *Default value:* 10  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1758,9 +1614,6 @@ This variable defines the number of points used for the numerical integration
 of the self-energy over frequencies in GWLS computations (see eq. (12) of
 Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 
-
-* * *
-
 ## **gwls_nseeds** 
 
 
@@ -1771,7 +1624,7 @@ Phys. Rev. B 91, 125120 (2015)). The default is fine for most cases.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1784,9 +1637,6 @@ of the Lanczos basis for the (static) dielectric matrix in a GWLS calculation.
 See section IV of Phys. Rev. B 91, 125120 (2015). Only [[gwls_nseeds]]==1 has
 been tested for now and users should keep this value.
 
-
-* * *
-
 ## **gwls_print_debug** 
 
 
@@ -1797,7 +1647,7 @@ been tested for now and users should keep this value.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
 
@@ -1807,9 +1657,6 @@ been tested for now and users should keep this value.
 
 Influences the level of verbosity for debugging purposes in a GWLS
 calculation. Users should keep its value at the default.
-
-
-* * *
 
 ## **gwls_recycle** 
 
@@ -1821,7 +1668,7 @@ calculation. Users should keep its value at the default.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -1854,9 +1701,6 @@ path of the file to be on disk space local to the processor in large MPI
 calculations, since each processor need only his own solutions in the
 construction of the basis.
 
-
-* * *
-
 ## **gwls_stern_kmax** 
 
 
@@ -1867,7 +1711,7 @@ construction of the basis.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==66  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t15.in|t15.in]]
 
@@ -1881,9 +1725,6 @@ calculation (see section IV of Phys. Rev. B 91, 125120 (2015)). Typically
 converged at a value of a few hundreds to a few thousands for a convergence
 criterion of 50meV on the eigenenergies.
 
-
-* * *
-
 ## **gwmem** 
 
 
@@ -1894,7 +1735,7 @@ criterion of 50meV on the eigenenergies.
 *Default value:* 11  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [8/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - v5:  [[tests/v5/Input/t65.in|t65.in]], [[tests/v5/Input/t70.in|t70.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t22.in|t22.in]]
@@ -1916,9 +1757,6 @@ The default is [[gwmem]] = 11, which is the fastest, but also the most memory
 consuming. When experiencing memory shortage, one should try [[gwmem]] = 0.
 The first digit is only meaningful when performing sigma calculations.
 
-
-* * *
-
 ## **gwrpacorr** 
 
 
@@ -1929,7 +1767,7 @@ The first digit is only meaningful when performing sigma calculations.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [1,11,21]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t19.in|t19.in]]
 
 
@@ -1943,9 +1781,6 @@ The first digit is only meaningful when performing sigma calculations.
   * [[gwrpacorr]] = 1, the RPA correlation energy is calculated using an exact integration over the coupling constant: it requires one diagonalization of the polarizability matrix 
   * [[gwrpacorr]] = _ n _ &gt; 1, the RPA correlation energy is calculated using _ n _ values for the coupling constant: it requires _ n _ inversions of the polarizability matrix 
 
-
-* * *
-
 ## **icutcoul** 
 
 
@@ -1956,7 +1791,7 @@ The first digit is only meaningful when performing sigma calculations.
 *Default value:* 6  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [68/920] in all abinit tests, [6/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -2002,9 +1837,6 @@ case, use a negative value for the cutoff radius of the sphere
 ([[rcut]]&lt;0), which is automatically calculated so that the volume enclosed
 in the sphere is equal to the volume of the solid.
 
-
-* * *
-
 ## **inclvkb** 
 
 
@@ -2015,7 +1847,7 @@ in the sphere is equal to the volume of the solid.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]] in [3,99]  
 
-??? note "Test list (click to open) (Moderately used, [58/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [58/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
@@ -2046,9 +1878,6 @@ converged.
 The use of [[inclvkb]]=2 is strongly recommended for the calculation of
 optical properties.
 
-
-* * *
-
 ## **kptgw** 
 
 
@@ -2059,7 +1888,7 @@ optical properties.
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -2086,9 +1915,6 @@ At present, not all k-points are possible. Only those corresponding to the
 k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 [[ngkpt]] ) than the GS one, but WITHOUT any shift, are allowed.
 
-
-* * *
-
 ## **mbpt_sciss** 
 
 
@@ -2100,7 +1926,7 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v5:  [[tests/v5/Input/t67.in|t67.in]]
@@ -2114,9 +1940,6 @@ k-point grid defined with the same repetition parameters ( [[kptrlatt]], or
 The Scissors operator energy added to the conductions states. In some cases,
 it mimics a second iteration self-consistent GW calculation.
 
-
-* * *
-
 ## **mdf_epsinf** 
 
 
@@ -2127,7 +1950,7 @@ it mimics a second iteration self-consistent GW calculation.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==99 and [[bs_coulomb_term]] in [20,21] (Bethe-Salpeter calculas with a model dielectric function  
 
-??? note "Test list (click to open) (Moderately used, [11/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [11/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
@@ -2141,9 +1964,6 @@ to model the screening function (see Solid State Commun. **84**, 765 (1992)).
 The proper spatial symmetry of the screening W(r,r_prime) is enforced using
 Eq. (7) of Phys. Rev. B **37**, (1988)  
 
-
-* * *
-
 ## **nbandkss** 
 
 
@@ -2153,7 +1973,7 @@ Eq. (7) of Phys. Rev. B **37**, (1988)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - etsf_io:  [[tests/etsf_io/Input/t02.in|t02.in]], [[tests/etsf_io/Input/t04.in|t04.in]]
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t71.in|t71.in]], [[tests/v7/Input/t72.in|t72.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
@@ -2185,9 +2005,6 @@ outkss.F90.
 Very important : for the time being, [[istwfk]] must be 1 for all the k-points
 in order to generate a _KSS file.
 
-
-* * *
-
 ## **nfreqim** 
 
 
@@ -2198,7 +2015,7 @@ in order to generate a _KSS file.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
-??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
@@ -2216,9 +2033,6 @@ in order to generate a _KSS file.
 the dielectric matrix in order to perform the numerical integration of the GW
 self-energy.
 
-
-* * *
-
 ## **nfreqmidm** 
 
 
@@ -2229,7 +2043,7 @@ self-energy.
 *Default value:* None  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2245,9 +2059,6 @@ the Dielectric matrix or its inverse,
 
 see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 
-
-* * *
-
 ## **nfreqre** 
 
 
@@ -2258,7 +2069,7 @@ see M. Taut, J. Phys. C: Solid State Phys. 18 (1985) 2677-2690.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[gwcalctyp]] in [2,12,22,9,19,29]  
 
-??? note "Test list (click to open) (Moderately used, [23/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]], [[tests/tutorial/Input/tgw2_2.in|tgw2_2.in]]
@@ -2289,9 +2100,6 @@ ppmodel to use, then s/he is not advised to use this input variable. Using the
 default values, one must be able to get a screening file that can be used with
 any ppmodel.
 
-
-* * *
-
 ## **nfreqsp** 
 
 
@@ -2302,7 +2110,7 @@ any ppmodel.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [10/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [10/920] in all abinit tests, [1/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t77.in|t77.in]]
     - tutorial:  [[tests/tutorial/Input/tgw2_4.in|tgw2_4.in]]
     - v4:  [[tests/v4/Input/t84.in|t84.in]]
@@ -2317,9 +2125,6 @@ any ppmodel.
 [[nfreqsp]] defines the number of real frequencies used to calculate the
 spectral function of the GW Green's function.
 
-
-* * *
-
 ## **nkptgw** 
 
 
@@ -2330,7 +2135,7 @@ spectral function of the GW Green's function.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [68/920] in all abinit tests, [11/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
@@ -2351,9 +2156,6 @@ spectral function of the GW Green's function.
 [[nkptgw]] gives the number of k-points for which the GW calculation must be
 done. It is used to dimension [[kptgw]]
 
-
-* * *
-
 ## **nomegasf** 
 
 
@@ -2365,7 +2167,7 @@ done. It is used to dimension [[kptgw]]
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]!=0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - v5:  [[tests/v5/Input/t71.in|t71.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
@@ -2388,9 +2190,6 @@ of $\chi^{(0)}_{KS}$ requires an extremely dense frequency mesh. It should be
 kept in mind, however, that the memory required grows fast with the value of
 [[nomegasf]].
 
-
-* * *
-
 ## **nomegasi** 
 
 
@@ -2401,7 +2200,7 @@ kept in mind, however, that the memory required grows fast with the value of
 *Default value:* 12  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
@@ -2413,9 +2212,6 @@ kept in mind, however, that the memory required grows fast with the value of
 energy along the imaginary axis. The frequency mesh is linear and covers the
 interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 
-
-* * *
-
 ## **nomegasrd** 
 
 
@@ -2426,7 +2222,7 @@ interval between OMEGASIMIN=0.01 Hartree and [[omegasimax]].
 *Default value:* 9  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
 
 
@@ -2438,9 +2234,6 @@ The number of real frequencies around the KS energy where the self-energy
 Sigma is evaluated. From these values, the derivative of Sigma at the KS
 energy is numerically estimated through linear interpolation.
 
-
-* * *
-
 ## **npvel** 
 
 
@@ -2451,7 +2244,7 @@ energy is numerically estimated through linear interpolation.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
@@ -2467,9 +2260,6 @@ The direction and the velocity maximum are set with the input variable
 [[pvelmax]]. Note that the results are output for a Z=1 impinging ion, i.e. a
 proton.
 
-
-* * *
-
 ## **npwkss** 
 
 
@@ -2479,7 +2269,7 @@ proton.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -2501,9 +2291,6 @@ planewave basis is the same for all k-points.
 Very important : for the time being, [[istwfk]] must be 1 for all the
 k-points.
 
-
-* * *
-
 ## **nqptdm** 
 
 
@@ -2514,7 +2301,7 @@ k-points.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t87.in|t87.in]]
 
 
@@ -2532,9 +2319,6 @@ merged thanks to the ** Mrgscr ** utility. If [[nqptdm]] is equal to -1, the
 code reports the list of q-points in the log file (YAML format) and then
 stops.
 
-
-* * *
-
 ## **omegasimax** 
 
 
@@ -2546,7 +2330,7 @@ stops.
 *Default value:* 50 eV  
 *Only relevant if:* [[optdriver]]==4 and [[gwcalctyp]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
@@ -2557,9 +2341,6 @@ stops.
 [[omegasimax]] defines the maximum frequency along the imaginary the axis. In
 conjunction with [[nomegasi]], [[omegasimax]] uniquely defines the linear mesh
 employed to sample the self-energy along the imaginary axis.
-
-
-* * *
 
 ## **omegasrdmax** 
 
@@ -2572,7 +2353,7 @@ employed to sample the self-energy along the imaginary axis.
 *Default value:* 1.0 eV  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
 
 
@@ -2583,9 +2364,6 @@ employed to sample the self-energy along the imaginary axis.
 The maximum distance from the KS energy where to evaluate Sigma. Sigma is
 evaluated at [ KS_energy - [[omegasrdmax]], KS_energy + [[omegasrdmax]] ]
 sampled [[nomegasrd]] times.
-
-
-* * *
 
 ## **ppmfrq** 
 
@@ -2598,7 +2376,7 @@ sampled [[nomegasrd]] times.
 *Default value:* 0.0 Ha  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [9/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [33/920] in all abinit tests, [9/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t71.in|t71.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t72.in|t72.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]]
     - tutorial:  [[tests/tutorial/Input/tgw1_1.in|tgw1_1.in]], [[tests/tutorial/Input/tgw1_2.in|tgw1_2.in]], [[tests/tutorial/Input/tgw1_3.in|tgw1_3.in]], [[tests/tutorial/Input/tgw1_4.in|tgw1_4.in]], [[tests/tutorial/Input/tgw1_5.in|tgw1_5.in]], [[tests/tutorial/Input/tgw1_6.in|tgw1_6.in]], [[tests/tutorial/Input/tgw1_7.in|tgw1_7.in]], [[tests/tutorial/Input/tgw1_8.in|tgw1_8.in]], [[tests/tutorial/Input/tgw1_9.in|tgw1_9.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]], [[tests/v3/Input/t87.in|t87.in]]
@@ -2649,9 +2427,6 @@ of gridpoints along the imaginary and real frequency axes. See
 [[cd_frqim_method]], [[gw_frqim_inzgrid]] and [[gw_frqre_inzgrid]] for more
 details.
 
-
-* * *
-
 ## **ppmodel** 
 
 
@@ -2662,7 +2437,7 @@ details.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] in [3,4]  
 
-??? note "Test list (click to open) (Moderately used, [19/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [19/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
     - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t67.in|t67.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t70.in|t70.in]]
@@ -2693,9 +2468,6 @@ not simple mathematical parameters, but rather have a physical meaning (at
 least the lowest ones). Thus the calculated plasmon band structure (plasmon
 energy vs q vector) is reported in the output file for the lowest 10 bands.
 
-
-* * *
-
 ## **pvelmax** 
 
 
@@ -2706,7 +2478,7 @@ energy vs q vector) is reported in the output file for the lowest 10 bands.
 *Default value:* 3*1.0  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t16.in|t16.in]]
 
 
@@ -2719,9 +2491,6 @@ calculations on a velocity grid along the direction determined by [[pvelmax]].
 The vector [[pvelmax]] defines both the direction and the maximum velocity.
 [[pvelmax]] is input in Cartesian coordinates.
 
-
-* * *
-
 ## **qptdm** 
 
 
@@ -2732,7 +2501,7 @@ The vector [[pvelmax]] defines both the direction and the maximum velocity.
 *Default value:* *0.0  
 *Only relevant if:* [[optdriver]]==3 and [[nqptdm]]!=0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t87.in|t87.in]]
 
 
@@ -2746,9 +2515,6 @@ points are given in terms of reciprocal space primitive translations (NOT in
 cartesian coordinates!). For further explanation, see the input variable
 [[nqptdm]].
 
-
-* * *
-
 ## **rcut** 
 
 
@@ -2758,7 +2524,7 @@ cartesian coordinates!). For further explanation, see the input variable
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [16/920] in all abinit tests, [0/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]], [[tests/libxc/Input/t42.in|t42.in]], [[tests/libxc/Input/t43.in|t43.in]]
     - mpiio:  [[tests/mpiio/Input/t42.in|t42.in]]
     - paral:  [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t75.in|t75.in]], [[tests/paral/Input/t77.in|t77.in]]
@@ -2776,9 +2542,6 @@ is governed by the cutoff shape option [[icutcoul]].
 If [[rcut]] is negative, the cutoff is automatically calculated so to enclose
 the same volume inside the cutoff as the volume of the primitive cell.
 
-
-* * *
-
 ## **rhoqpmix** 
 
 
@@ -2788,7 +2551,7 @@ the same volume inside the cutoff as the volume of the primitive cell.
 *Dimensions:* scalar  
 *Default value:* 1.0  
 
-??? note "Test list (click to open) (Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [9/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t73.in|t73.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]], [[tests/paral/Input/t74.in|t74.in]]
     - v4:  [[tests/v4/Input/t88.in|t88.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t36.in|t36.in]]
@@ -2805,9 +2568,6 @@ oscillations in the Hartree potential when achieving self-consistency.
 [[rhoqpmix]] is meaningful only when doing self-consistency on the
 wavefunctions with [[gwcalctyp]] &gt;= 20\.
 
-
-* * *
-
 ## **spbroad** 
 
 
@@ -2819,7 +2579,7 @@ wavefunctions with [[gwcalctyp]] &gt;= 20\.
 *Default value:* 0.0  
 *Only relevant if:* [[optdriver]]==3 and [[spmeth]]==2  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]]
 
 
@@ -2832,9 +2592,6 @@ of the irreducible polarizability in which the delta function is replaced by
 the gaussian approximant ([[spmeth]]==2), the standard deviation of the
 gaussian is given by [[spbroad]].
 
-
-* * *
-
 ## **spmeth** 
 
 
@@ -2845,7 +2602,7 @@ gaussian is given by [[spbroad]].
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - v5:  [[tests/v5/Input/t71.in|t71.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t02.in|t02.in]], [[tests/v67mbpt/Input/t21.in|t21.in]], [[tests/v67mbpt/Input/t37.in|t37.in]]
@@ -2887,9 +2644,6 @@ Summarizing:
   * 1 =&gt; use the spectral method approximating the delta function with a triangular approximant as proposed in ** REF TO BE ADDED **
   * 2 =&gt; use spectral method but approximating the delta function with a Taylor expansion of the exponential as proposed in ** REF TO BE ADDED **
 
-
-* * *
-
 ## **symchi** 
 
 
@@ -2901,7 +2655,7 @@ Summarizing:
 *Default value:* 1  
 *Only relevant if:* [[optdriver]]==3  
 
-??? note "Test list (click to open) (Moderately used, [29/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [29/920] in all abinit tests, [3/116] in abinit tutorials"
     - tutoparal:  [[tests/tutoparal/Input/tmbt_2.in|tmbt_2.in]], [[tests/tutoparal/Input/tmbt_3.in|tmbt_3.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_1.in|tbs_1.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
@@ -2926,9 +2680,6 @@ between these two equivalent methods:
   * 0=&gt; the summation over k-points is performed considering ALL the points in the BZ (useful for testing and debugging). 
   * 1=&gt; the summation is restricted to the k-points belonging to the irreducible wedge defined by the little group associated to the external vector q. 
 
-
-* * *
-
 ## **symsigma** 
 
 
@@ -2939,7 +2690,7 @@ between these two equivalent methods:
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==4  
 
-??? note "Test list (click to open) (Moderately used, [20/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [20/920] in all abinit tests, [1/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t41.in|t41.in]]
     - tutoparal:  [[tests/tutoparal/Input/tmbt_4.in|tmbt_4.in]]
     - v5:  [[tests/v5/Input/t63.in|t63.in]], [[tests/v5/Input/t64.in|t64.in]], [[tests/v5/Input/t66.in|t66.in]], [[tests/v5/Input/t68.in|t68.in]], [[tests/v5/Input/t69.in|t69.in]], [[tests/v5/Input/t70.in|t70.in]], [[tests/v5/Input/t71.in|t71.in]], [[tests/v5/Input/t72.in|t72.in]]
@@ -2967,9 +2718,6 @@ taken in the presence of accidental degeneracies. since GW calculations
 performed with [[symsigma]]=1 will not be able to remove the initial
 accidental degeneracy.
 
-
-* * *
-
 ## **ucrpa** 
 
 
@@ -2980,7 +2728,7 @@ accidental degeneracy.
 *Default value:* 0  
 *Only relevant if:* [[nspinor]] == 1  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
 
 
@@ -3015,9 +2763,6 @@ be found in Section II and Appendix A of [ B. Amadon, T. Applencourt and F.
 Bruneval Phys. Rev. B 89, 125110 (2014)
 ](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.89.125110) .
 
-
-* * *
-
 ## **ucrpa_bands** 
 
 
@@ -3028,7 +2773,7 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 *Default value:* [-1, -1]  
 *Comment:* That is, the default includes no band.  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t78.in|t78.in]]
 
 
@@ -3038,9 +2783,6 @@ Bruneval Phys. Rev. B 89, 125110 (2014)
 
 Gives the first and last correlated bands for the cRPA calculation of the
 polarisability.
-
-
-* * *
 
 ## **ucrpa_window** 
 
@@ -3052,7 +2794,7 @@ polarisability.
 *Default value:* [-1, -1]  
 *Comment:* That is, the energy window is empty by default.  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t79.in|t79.in]]
 
 
@@ -3067,9 +2809,6 @@ constrained polarisabilty calculations.
 The lower bound and the upper bound energies must be specified (two real
 numbers) with respect to the position of the Fermi level.
 
-
-* * *
-
 ## **vcutgeo** 
 
 
@@ -3080,7 +2819,7 @@ numbers) with respect to the position of the Fermi level.
 *Default value:* 3*0.0  
 *Only relevant if:* [[icutcoul]] in [1,2]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t03.in|t03.in]]
 
 
@@ -3126,9 +2865,6 @@ example: icutcoul 2 vcutgeo 1 1 0 It is also possible to define a finite
 surface by employing negative values For example: icutcoul 2 vcutgeo -3 -2 0
 defines ....
 
-
-* * *
-
 ## **zcut** 
 
 
@@ -3141,7 +2877,7 @@ defines ....
 *Comment:* 0.0036749326 Ha = 0.1 eV  
 *Only relevant if:* [[optdriver]] in [3,4,99]  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v3:  [[tests/v3/Input/t30.in|t30.in]], [[tests/v3/Input/t31.in|t31.in]]
@@ -3171,7 +2907,4 @@ larger than the typical distance between the eigenvalues of the exciton
 Hamiltonian.  
 Ideally, one should make a convergence study decreasing the value of [[zcut]]
 for increasing number of k-points.
-
-
-* * *
 

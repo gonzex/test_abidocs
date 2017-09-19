@@ -20,7 +20,7 @@ eph input variables to be used in the input file for the abinit executable.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [6/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t24.in|t24.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t01.in|t01.in]]
@@ -34,9 +34,6 @@ eph input variables to be used in the input file for the abinit executable.
 Govern the imposition of the Acoustic Sum Rule (ASR) in phonon calculations.
 Same meaning as the corresponding anaddb variable.
 
-
-* * *
-
 ## **chneut** 
 
 
@@ -46,7 +43,7 @@ Same meaning as the corresponding anaddb variable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -57,9 +54,6 @@ Same meaning as the corresponding anaddb variable.
 Set the treatment of the Charge Neutrality requirement for the effective
 charges. Same meaning as the corresponding anaddb variable.
 
-
-* * *
-
 ## **ddb_ngqpt** 
 
 
@@ -69,7 +63,7 @@ charges. Same meaning as the corresponding anaddb variable.
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]], [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -82,9 +76,6 @@ This variable is mandatory when [[optdriver]]==7. It defines the number of
 divisions in the (homogeneous) q-mesh used to generate the DDB file. See also
 the description of the [[getddb]] input variable.
 
-
-* * *
-
 ## **ddb_shiftq** 
 
 
@@ -94,7 +85,7 @@ the description of the [[getddb]] input variable.
 *Dimensions:* (3)  
 *Default value:* [0.0, 0.0, 0.0]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t65.in|t65.in]]
 
@@ -107,9 +98,6 @@ Only relevant when [[optdriver]]==7. It defines the shift in the q-mesh used
 to generate the DDB file, which is defined by the [[ddb_ngqpt]] input
 variable. See [[shiftk]] for more information on the definition.
 
-
-* * *
-
 ## **dipdip** 
 
 
@@ -119,7 +107,7 @@ variable. See [[shiftk]] for more information on the definition.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -130,9 +118,6 @@ variable. See [[shiftk]] for more information on the definition.
 This variable defines the treatment of the dipole-dipole interaction. Same
 meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 
-
-* * *
-
 ## **eph_extrael** 
 
 
@@ -142,7 +127,7 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -152,9 +137,6 @@ meaning as the corresponding anaddb variable [[dipdip@anaddb]]
 
 Number of electrons per unit cell to be added to the initial value computed
 from the pseudopotentials and unit cell.
-
-
-* * *
 
 ## **eph_fermie** 
 
@@ -166,7 +148,7 @@ from the pseudopotentials and unit cell.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -178,9 +160,6 @@ This variable can be used to change the value of the Fermi level when
 performing electron-phonon calculations with [[optdriver]]==7. This variable
 has effect only if set to a non-zero value. See also [[eph_extrael]].
 
-
-* * *
-
 ## **eph_fsewin** 
 
 
@@ -191,7 +170,7 @@ has effect only if set to a non-zero value. See also [[eph_extrael]].
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -207,9 +186,6 @@ calculation.
 Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 [[eph_fermie]].
 
-
-* * *
-
 ## **eph_fsmear** 
 
 
@@ -221,7 +197,7 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 *Default value:* 0.01 Hartree  
 *Only relevant if:* [[eph_intmeth]] == 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -232,9 +208,6 @@ Related input variables: [[eph_intmeth]], [[eph_fsmear]], [[eph_extrael]] and
 This variable defines the gaussian broadening used for the integration over
 the Fermi surface when [[eph_intmeth]] == 1.
 
-
-* * *
-
 ## **eph_intmeth** 
 
 
@@ -244,7 +217,7 @@ the Fermi surface when [[eph_intmeth]] == 1.
 *Dimensions:* scalar  
 *Default value:* 2  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -260,9 +233,6 @@ tetrahedron method.
 
 See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 
-
-* * *
-
 ## **eph_mustar** 
 
 
@@ -272,7 +242,7 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 *Dimensions:* scalar  
 *Default value:* 0.1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -283,9 +253,6 @@ See also [[eph_fsewin]], [[eph_extrael]] and [[eph_fermie]].
 Average electron-electron interaction strength, for the computation of the
 superconducting Tc using Mc-Millan's formula.
 
-
-* * *
-
 ## **eph_ngqpt_fine** 
 
 
@@ -295,7 +262,7 @@ superconducting Tc using Mc-Millan's formula.
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -313,9 +280,6 @@ interpolate the interatomic force constants in q-space. If eph_ngqpt_fine is
 not given, the EPH code uses the list of irreducible q-points reported in the
 DDB file (default behavior).
 
-
-* * *
-
 ## **eph_transport** 
 
 
@@ -325,7 +289,7 @@ DDB file (default behavior).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -337,9 +301,6 @@ NB - this does not work yet. This variable can be used to turn on the
 calculation of transport quantities in the eph module of abinit. Value of 1
 corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 
-
-* * *
-
 ## **ph_intmeth** 
 
 
@@ -349,7 +310,7 @@ corresponds to elastic LOVA as in the PRB by Savrasov and Savrasov
 *Dimensions:* scalar  
 *Default value:* 2  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -367,9 +328,6 @@ Eliashberg function a2fF(w).
 2 for tetrahedron method (no other input is needed but requires at least 4
 q-points in the BZ)
 
-
-* * *
-
 ## **ph_ndivsm** 
 
 
@@ -379,7 +337,7 @@ q-points in the BZ)
 *Dimensions:* scalar  
 *Default value:* 20  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -393,9 +351,6 @@ define the q-path used for phonon band structures and phonon linewidths. It
 gives the number of points used to sample the smallest segment in the q-path
 specified by [[ph_qpath]].
 
-
-* * *
-
 ## **ph_nqpath** 
 
 
@@ -405,7 +360,7 @@ specified by [[ph_qpath]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -416,9 +371,6 @@ specified by [[ph_qpath]].
 
 This integer defines the number of points in the [[ph_qpath]] array.
 
-
-* * *
-
 ## **ph_nqshift** 
 
 
@@ -428,7 +380,7 @@ This integer defines the number of points in the [[ph_qpath]] array.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -441,9 +393,6 @@ This variable defines the number of shifts in the q-mesh used for the phonon
 DOS and for the Eliashberg functions (see [[ph_ngqpt]]). If not given, the
 code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 
-
-* * *
-
 ## **ph_qshift** 
 
 
@@ -454,7 +403,7 @@ code assumes a Gamma-centered mesh. The shifts are specified by [[ph_qshift]].
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[ph_nqshift]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -467,9 +416,6 @@ This array gives the shifts to be used to construct the q-mesh for computing
 the phonon DOS and the Eliashberg functions (see also [[ph_nqshift]]. If not
 given, a Gamma-centered mesh is used.
 
-
-* * *
-
 ## **ph_smear** 
 
 
@@ -481,7 +427,7 @@ given, a Gamma-centered mesh is used.
 *Default value:* 0.00002 Hartree  
 *Only relevant if:* [[ph_intmeth]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -493,9 +439,6 @@ given, a Gamma-centered mesh is used.
 The gaussian broadening used for the integration of the phonon DOS and the
 Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 
-
-* * *
-
 ## **ph_wstep** 
 
 
@@ -506,7 +449,7 @@ Eliashberg function. See also [[ph_intmeth]] and [[ph_ngqpt]].
 *Dimensions:* scalar  
 *Default value:* 0.1 meV  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -519,9 +462,6 @@ The step used to generate the (linear) frequency mesh for the phonon DOS and
 the Eliashberg function. The extrema of the mesh are automatically computed by
 the code.
 
-
-* * *
-
 ## **prtphbands** 
 
 
@@ -531,7 +471,7 @@ the code.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -546,9 +486,6 @@ Possible values:
   * 1 Write frequencies in xmgrace format. A file with extension `PHBANDS.agr` is produced. Use `xmgrace file_PHBANDS.agr` to visualize the data
   * 2 Write frequencies in gnuplot format. The code produces a `PHBANDS.dat` file with the eigenvalues and a `PHBANDS.gnuplot` script. Use `gnuplot file_PHBANDS.gnuplot` to visualize the phonon band structure.
 
-
-* * *
-
 ## **prtphdos** 
 
 
@@ -559,7 +496,7 @@ Possible values:
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t65.in|t65.in]]
 
@@ -571,9 +508,6 @@ Possible values:
 Print the phonon density of states. It is activated by default when
 [[optdriver]]==7.
 
-
-* * *
-
 ## **prtphsurf** 
 
 
@@ -583,7 +517,7 @@ Print the phonon density of states. It is activated by default when
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
 
 
@@ -597,9 +531,6 @@ visualize isosurfaces with Xcrysden or other similar tools supporting the bxsf
 format. Note that the (dense) q-mesh must be Gamma-centered, shifted meshs are
 not supported by Xcrysden. This variable requires [[optdriver]]==7.
 
-
-* * *
-
 ## **symdynmat** 
 
 
@@ -609,7 +540,7 @@ not supported by Xcrysden. This variable requires [[optdriver]]==7.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -620,7 +551,4 @@ If symdynmat is equal to 1, the dynamical matrix is symmetrized before the
 diagonalization (same meaning as the corresponding anaddb variable). Note that
 symdynmat==1 will automatically enable the symmetrization of the electron-
 phonon linewidths.
-
-
-* * *
 

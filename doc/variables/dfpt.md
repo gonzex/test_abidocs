@@ -21,7 +21,7 @@ dfpt input variables to be used in the input file for the abinit executable.
 *Default value:* -1  
 *Only relevant if:* [[ieig2rf]] in [1,2,3,4,5]  
 
-??? note "Test list (click to open) (Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [15/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]], [[tests/v6/Input/t50.in|t50.in]], [[tests/v6/Input/t54.in|t54.in]], [[tests/v6/Input/t58.in|t58.in]], [[tests/v6/Input/t61.in|t61.in]], [[tests/v6/Input/t68.in|t68.in]]
     - v7:  [[tests/v7/Input/t55.in|t55.in]], [[tests/v7/Input/t83.in|t83.in]]
@@ -41,9 +41,6 @@ during the computation of these corrections.
 If [[bdeigrf]] is set to -1, the code will automatically set [[bdeigrf]] equal
 to nband.
 
-
-* * *
-
 ## **d3e_pert1_atpol** 
 
 
@@ -54,7 +51,7 @@ to nband.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -73,9 +70,6 @@ May take values from 1 to [[natom]], with
 **d3e_pert1_atpol**(1)&lt;=**d3e_pert1_atpol**(2).  
 See [[rfatpol]] for additional details.
 
-
-* * *
-
 ## **d3e_pert1_dir** 
 
 
@@ -86,7 +80,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -106,9 +100,6 @@ space (atomic displacement), or in reciprocal space (electric field
 perturbation).  
 See [[rfdir]] for additional details.
 
-
-* * *
-
 ## **d3e_pert1_elfd** 
 
 
@@ -119,7 +110,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -138,9 +129,6 @@ consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.  
 See [[rfelfd]] for additional details.
 
-
-* * *
-
 ## **d3e_pert1_phon** 
 
 
@@ -151,7 +139,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -168,9 +156,6 @@ Turns on atomic displacement perturbation in non-linear computation, as 1st
 perturbation.  
 See [[rfphon]] for additional details.
 
-
-* * *
-
 ## **d3e_pert2_atpol** 
 
 
@@ -181,7 +166,7 @@ See [[rfphon]] for additional details.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -195,9 +180,6 @@ May take values from 1 to [[natom]], with
 **d3e_pert2_atpol**(1)&lt;=**d3e_pert2_atpol**(2).  
 See [[rfatpol]] for additional details.
 
-
-* * *
-
 ## **d3e_pert2_dir** 
 
 
@@ -208,7 +190,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -228,9 +210,6 @@ space (atomic displacement), or in reciprocal space (electric field
 perturbation).  
 See [[rfdir]] for additional details.
 
-
-* * *
-
 ## **d3e_pert2_elfd** 
 
 
@@ -241,7 +220,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -260,9 +239,6 @@ consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.  
 See [[rfelfd]] for additional details.
 
-
-* * *
-
 ## **d3e_pert2_phon** 
 
 
@@ -273,7 +249,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -285,9 +261,6 @@ Turns on atomic displacement perturbation in non-linear computation, as 2nd
 perturbation.  
 See [[rfphon]] for additional details.
 
-
-* * *
-
 ## **d3e_pert3_atpol** 
 
 
@@ -298,7 +271,7 @@ See [[rfphon]] for additional details.
 *Default value:* [1, 1]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -312,9 +285,6 @@ May take values from 1 to [[natom]], with
 **d3e_pert3_atpol**(1)&lt;=**d3e_pert3_atpol**(2).  
 See [[rfatpol]] for additional details.
 
-
-* * *
-
 ## **d3e_pert3_dir** 
 
 
@@ -325,7 +295,7 @@ See [[rfatpol]] for additional details.
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -345,9 +315,6 @@ space (atomic displacement), or in reciprocal space (electric field
 perturbation).  
 See [[rfdir]] for additional details.
 
-
-* * *
-
 ## **d3e_pert3_elfd** 
 
 
@@ -358,7 +325,7 @@ See [[rfdir]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
@@ -377,9 +344,6 @@ consistent calculation of derivatives with respect to k, independently of the
 electric field perturbation itself.  
 See [[rfelfd]] for additional details.
 
-
-* * *
-
 ## **d3e_pert3_phon** 
 
 
@@ -390,7 +354,7 @@ See [[rfelfd]] for additional details.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]]==5 (non-linear response computations)  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t83.in|t83.in]]
 
 
@@ -402,9 +366,6 @@ Turns on atomic displacement perturbation in non-linear computation, as 3rd
 perturbation.  
 See [[rfphon]] for additional details.
 
-
-* * *
-
 ## **dfpt_sciss** 
 
 
@@ -415,7 +376,7 @@ See [[rfphon]] for additional details.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t46.in|t46.in]]
 
 
@@ -430,9 +391,6 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 Typical use is for response to electric field ([[rfelfd]]=3), but NOT for d/dk
 ([[rfelfd]]=2) and phonon responses.
 
-
-* * *
-
 ## **efmas** 
 
 
@@ -442,7 +400,7 @@ Typical use is for response to electric field ([[rfelfd]]=3), but NOT for d/dk
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -463,9 +421,6 @@ supported. Also, for PAW calculations only, [[nspinor]]==2 and
 calculations are NOT currently supported. Also, for both NC and PAW,
 [[nspden]]/=1 and [[nsppol]]/=1 are NOT supported.
 
-
-* * *
-
 ## **efmas_bands** 
 
 
@@ -476,7 +431,7 @@ calculations are NOT currently supported. Also, for both NC and PAW,
 *Default value:* The full range of band available in the calculation for each k-point.  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -489,9 +444,6 @@ be calculated. If a band is degenerate, all other bands of the degenerate
 group will automatically be treated, even if they were not part of the user
 specified range.
 
-
-* * *
-
 ## **efmas_calc_dirs** 
 
 
@@ -502,7 +454,7 @@ specified range.
 *Default value:* 0  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -527,9 +479,6 @@ coordinates, respectively. In the case [[efmas_calc_dirs]]==3, 2 real values
 per directions are read, whereas 3 real values are read in the two other
 cases.
 
-
-* * *
-
 ## **efmas_deg** 
 
 
@@ -540,7 +489,7 @@ cases.
 *Default value:* 1  
 *Only relevant if:* [[efmas]]>0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -552,9 +501,6 @@ Activate (==1) or not (==0) the treatment of degenerate bands (within a
 criterion [[efmas_deg_tol]]) using the transport equivalent effective mass
 idea (see [PRB 89 155131 (2014)](https://doi.org/10.1103/PhysRevB.89.155131)).
 
-
-* * *
-
 ## **efmas_deg_tol** 
 
 
@@ -565,7 +511,7 @@ idea (see [PRB 89 155131 (2014)](https://doi.org/10.1103/PhysRevB.89.155131)).
 *Default value:* 1e-05  
 *Only relevant if:* [[efmas_deg]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -577,9 +523,6 @@ Energy difference below which 2 bands are considered degenerate (and treated
 using the formalism activated with [[efmas_deg]]==1). [[efmas_deg_tol]] has
 the '[[ENERGY]]' characteristics.
 
-
-* * *
-
 ## **efmas_dim** 
 
 
@@ -590,7 +533,7 @@ the '[[ENERGY]]' characteristics.
 *Default value:* 3  
 *Only relevant if:* [[efmas]]==1  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]]
 
 
@@ -612,9 +555,6 @@ factor by which these transport tensors should be scaled once determined from
 the 'transport equivatlent' effective mass tensor is output separately on the
 line immediately after the effective mass.
 
-
-* * *
-
 ## **efmas_dirs** 
 
 
@@ -625,7 +565,7 @@ line immediately after the effective mass.
 *Default value:* 0  
 *Only relevant if:* [[efmas_calc_dirs]]>0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -637,9 +577,6 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 [[efmas_calc_dirs]]. The directions are specified by 3 real values if
 [[efmas_calc_dirs]]==1 or 2 and by 2 real values if [[efmas_calc_dirs]]==3.
 
-
-* * *
-
 ## **efmas_n_dirs** 
 
 
@@ -650,7 +587,7 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 *Default value:* 0  
 *Only relevant if:* [[efmas_calc_dirs]]>0  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -660,9 +597,6 @@ List of [[efmas_n_dirs]] directions to be considered according to the value of
 
 Number of directions in [[efmas_dirs]], to be considered according to
 [[efmas_calc_dirs]].
-
-
-* * *
 
 ## **efmas_ntheta** 
 
@@ -674,7 +608,7 @@ Number of directions in [[efmas_dirs]], to be considered according to
 *Default value:* 1000  
 *Only relevant if:* [[efmas]]==1 and [[efmas_bands]]==(degenerate band index)  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t80.in|t80.in]], [[tests/v7/Input/t81.in|t81.in]], [[tests/v7/Input/t82.in|t82.in]]
 
 
@@ -688,9 +622,6 @@ tensor' that reproduces the contribution of the band to the conductivity
 tensor. To obtain this tensor, an integration over the solid sphere is
 required. The default value gives a tensor accurate to the 4th decimal in Ge.
 
-
-* * *
-
 ## **elph2_imagden** 
 
 
@@ -702,7 +633,7 @@ required. The default value gives a tensor accurate to the 4th decimal in Ge.
 *Default value:* 0.0  
 *Only relevant if:* [[ieig2rf]] != 0  
 
-??? note "Test list (click to open) (Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [18/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]]
@@ -723,9 +654,6 @@ the Debye frequency or the maximum phonon frequency.
 Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
-
-* * *
-
 ## **eph_task** 
 
 
@@ -736,7 +664,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t89.in|t89.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -749,9 +677,6 @@ When [[optdriver]]==7, select the task to be performed. The choice is among :
 [[eph_task]]=1 : phonon linewidth  
 [[eph_task]]=2 : electron-phonon coupling elements
 
-
-* * *
-
 ## **esmear** 
 
 
@@ -763,7 +688,7 @@ When [[optdriver]]==7, select the task to be performed. The choice is among :
 *Default value:* 0.01  
 *Only relevant if:* [[smdelta]] != 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t60.in|t60.in]]
 
 
@@ -781,9 +706,6 @@ maximum phonon frequency.
 Can be specified in Ha (the default), Ry, eV or Kelvin, since ** ecut ** has
 the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 
-
-* * *
-
 ## **frzfermi** 
 
 
@@ -793,7 +715,7 @@ the '[[ENERGY]]' characteristics. (1 Ha=27.2113845 eV)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v2:  [[tests/v2/Input/t26.in|t26.in]]
     - v3:  [[tests/v3/Input/t75.in|t75.in]]
     - v6:  [[tests/v6/Input/t89.in|t89.in]]
@@ -808,9 +730,6 @@ in case of Response Function calculation for metals at Q=0. The input variable
 [[frzfermi]], if set to 1, allows to suppress this contribution, but this is
 incorrect.
 
-
-* * *
-
 ## **ieig2rf** 
 
 
@@ -820,7 +739,7 @@ incorrect.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v5:  [[tests/v5/Input/t26.in|t26.in]]
@@ -862,9 +781,6 @@ less disk space and memory (but run a little bit slower). Note that
 Related variables :
 [[bdeigrf]],[[elph2_imagden]],[[getgam_eig2nkq]],[[smdelta]]
 
-
-* * *
-
 ## **ph_ngqpt** 
 
 
@@ -874,7 +790,7 @@ Related variables :
 *Dimensions:* (3)  
 *Default value:* [20, 20, 20]  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]], [[tests/v8/Input/t65.in|t65.in]]
 
@@ -887,9 +803,6 @@ This variable defines the q-mesh used to compute the phonon DOS and the
 Eliashberg function via Fourier interpolation. Related input variables:
 [[ph_qshift]] and [[ph_nqshift]].
 
-
-* * *
-
 ## **ph_qpath** 
 
 
@@ -900,7 +813,7 @@ Eliashberg function via Fourier interpolation. Related input variables:
 *Default value:* None  
 *Only relevant if:* specified([[ph_nqpath]])  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v7:  [[tests/v7/Input/t88.in|t88.in]]
     - v8:  [[tests/v8/Input/t44.in|t44.in]]
 
@@ -913,9 +826,6 @@ This array contains the list of special q-points used to construct the q-path
 for phonon band structures and phonon linewidths. See also [[ph_nqpath]] and
 [[[ph_ndivsm]].
 
-
-* * *
-
 ## **prepanl** 
 
 
@@ -925,7 +835,7 @@ for phonon band structures and phonon linewidths. See also [[ph_nqpath]] and
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [6/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [6/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_2.in|tnlo_2.in]], [[tests/tutorespfn/Input/tnlo_7.in|tnlo_7.in]], [[tests/tutorespfn/Input/tnlo_8.in|tnlo_8.in]], [[tests/tutorespfn/Input/tnlo_9.in|tnlo_9.in]], [[tests/tutorespfn/Input/tnlo_10.in|tnlo_10.in]], [[tests/tutorespfn/Input/tnlo_11.in|tnlo_11.in]]
     - v4:  [[tests/v4/Input/t52.in|t52.in]]
@@ -953,9 +863,6 @@ calculation, one should put [[prepanl]] to 1 in order to force ABINIT (i) to
 compute the electric field perturbation along the three directions explicitly,
 and (ii) to keep the full number of k-points.
 
-
-* * *
-
 ## **prepgkk** 
 
 
@@ -965,7 +872,7 @@ and (ii) to keep the full number of k-points.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [1/116] in abinit tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_1.in|teph_1.in]]
     - v5:  [[tests/v5/Input/t85.in|t85.in]]
     - v6:  [[tests/v6/Input/t72.in|t72.in]], [[tests/v6/Input/t90.in|t90.in]]
@@ -982,9 +889,6 @@ of all the perturbations (all atoms in all directions) for the chosen set of
 to reduce the number of perturbations, set [[prepgkk]] to 1. Use in
 conjunction with [[prtgkk]].
 
-
-* * *
-
 ## **prtbbb** 
 
 
@@ -994,7 +898,7 @@ conjunction with [[prtgkk]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v3:  [[tests/v3/Input/t77.in|t77.in]]
 
 
@@ -1006,9 +910,6 @@ If [[prtbbb]] is 1, print the band-by-band decomposition of Born effective
 charges and localization tensor, in case they are computed. See Ph. Ghosez and
 X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).
 
-
-* * *
-
 ## **rf2_dkdk** 
 
 
@@ -1018,7 +919,7 @@ X. Gonze, J. Phys.: Condens. Matter 12, 9179 (2000).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1038,9 +939,6 @@ auxiliary quantity in the calculations of 3rd-order derivatives of the energy
   * 2=&gt;calculation along off-diagonal directions (d2/(dk_i dk_j), natom+11 is activated) 
   * 3=&gt;calculation along all directions (both natom+10 and natom+11 are activated) 
 
-
-* * *
-
 ## **rfasr** 
 
 
@@ -1050,7 +948,7 @@ auxiliary quantity in the calculations of 3rd-order derivatives of the energy
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t24.in|t24.in]]
     - v6:  [[tests/v6/Input/t37.in|t37.in]]
     - v7:  [[tests/v7/Input/t50.in|t50.in]], [[tests/v7/Input/t51.in|t51.in]]
@@ -1073,9 +971,6 @@ The treatment of the acoustic sum rule and charge neutrality sum rule is finer
 at the level of the ANADDB utility, with the two independent input variables
 [[anaddb:asr]] and [[anaddb:chneut]].
 
-
-* * *
-
 ## **rfatpol** 
 
 
@@ -1085,7 +980,7 @@ at the level of the ANADDB utility, with the two independent input variables
 *Dimensions:* (2)  
 *Default value:* [1, 1]  
 
-??? note "Test list (click to open) (Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [163/920] in all abinit tests, [18/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1122,9 +1017,6 @@ assume values larger than [[natom]], denoting perturbations of electric field
 or stress type (see [ the response function help file
 ](../../users/generated_files/help_respfn.html) ).
 
-
-* * *
-
 ## **rfddk** 
 
 
@@ -1134,7 +1026,7 @@ or stress type (see [ the response function help file
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t30.in|t30.in]]
 
 
@@ -1150,9 +1042,6 @@ The directions for the derivatives are determined by [[rfdir]].
   * 0=&gt;no derivative calculation 
   * 1=&gt;calculation of first derivatives of wavefunctions with respect to k points (d/dk calculation). The exact same functionality is provided by [[rfelfd]] = 2. 
 
-
-* * *
-
 ## **rfdir** 
 
 
@@ -1162,7 +1051,7 @@ The directions for the derivatives are determined by [[rfdir]].
 *Dimensions:* (3)  
 *Default value:* [0, 0, 0]  
 
-??? note "Test list (click to open) (Moderately used, [216/920] in all abinit tests, [29/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [216/920] in all abinit tests, [29/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1197,9 +1086,6 @@ If equal to 1, response functions, as defined by [[rfddk]], [[rfelfd]],
 [[rfphon]], [[rfdir]] and [[rfatpol]], are to be computed for the
 corresponding direction. If 0, this direction should not be considered.
 
-
-* * *
-
 ## **rfelfd** 
 
 
@@ -1209,7 +1095,7 @@ corresponding direction. If 0, this direction should not be considered.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [85/920] in all abinit tests, [14/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [85/920] in all abinit tests, [14/116] in abinit tutorials"
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
     - paral:  [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t54.in|t54.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t55.in|t55.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t57.in|t57.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
@@ -1245,9 +1131,6 @@ as phonon.
 The options 2 and 3 proves useful in that context ; also, in case a scissor
 shift is to be used, it is usually not applied for the d/dk response).
 
-
-* * *
-
 ## **rfmagn** 
 
 
@@ -1257,7 +1140,7 @@ shift is to be used, it is usually not applied for the d/dk response).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v8:  [[tests/v8/Input/t20.in|t20.in]]
 
 
@@ -1269,9 +1152,6 @@ It must be equal to 1 to run response function calculations with respect to
 external magnetic field. Currently, orbital magnetism is not taken into
 account and the perturbing potential has Zeeman form.
 
-
-* * *
-
 ## **rfmeth** 
 
 
@@ -1281,7 +1161,7 @@ account and the perturbing potential has Zeeman form.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1290,9 +1170,6 @@ account and the perturbing potential has Zeeman form.
 
 Selects method used in response function calculations. Presently, only 1 is
 allowed.
-
-
-* * *
 
 ## **rfphon** 
 
@@ -1303,7 +1180,7 @@ allowed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [164/920] in all abinit tests, [18/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [164/920] in all abinit tests, [18/116] in abinit tutorials"
     - gpu:  [[tests/gpu/Input/t01.in|t01.in]]
     - libxc:  [[tests/libxc/Input/t81.in|t81.in]], [[tests/libxc/Input/t82.in|t82.in]]
     - mpiio:  [[tests/mpiio/Input/t51.in|t51.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t62.in|t62.in]], [[tests/mpiio/Input/t69.in|t69.in]], [[tests/mpiio/Input/t69.in|t69.in]]
@@ -1326,9 +1203,6 @@ allowed.
 
 It must be equal to 1 to run phonon response function calculations.
 
-
-* * *
-
 ## **rfstrs** 
 
 
@@ -1338,7 +1212,7 @@ It must be equal to 1 to run phonon response function calculations.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [26/920] in all abinit tests, [5/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [26/920] in all abinit tests, [5/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]], [[tests/paral/Input/t95.in|t95.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_2.in|telast_2.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/telast_6.in|telast_6.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tnlo_3.in|tnlo_3.in]]
     - v4:  [[tests/v4/Input/t58.in|t58.in]], [[tests/v4/Input/t59.in|t59.in]], [[tests/v4/Input/t61.in|t61.in]], [[tests/v4/Input/t62.in|t62.in]], [[tests/v4/Input/t63.in|t63.in]], [[tests/v4/Input/t64.in|t64.in]], [[tests/v4/Input/t65.in|t65.in]], [[tests/v4/Input/t66.in|t66.in]], [[tests/v4/Input/t67.in|t67.in]], [[tests/v4/Input/t69.in|t69.in]], [[tests/v4/Input/t75.in|t75.in]], [[tests/v4/Input/t79.in|t79.in]], [[tests/v4/Input/t81.in|t81.in]]
@@ -1361,9 +1235,6 @@ constants). Define, with [[rfdir]], the set of perturbations.
 See the possible restrictions on the use of strain perturbations, in the [
 respfn help file ](../../users/generated_files/help_respfn.html#1) .
 
-
-* * *
-
 ## **rfuser** 
 
 
@@ -1373,7 +1244,7 @@ respfn help file ](../../users/generated_files/help_respfn.html#1) .
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -1398,9 +1269,6 @@ these routines, the developper should pay a particular attention to the rfpert
 array, defined in the routine respfn.F90 , as well as to the ipert local
 variable.
 
-
-* * *
-
 ## **smdelta** 
 
 
@@ -1410,7 +1278,7 @@ variable.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [25/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t59.in|t59.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]], [[tests/paral/Input/t60.in|t60.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_1.in|tdepes_1.in]], [[tests/tutorespfn/Input/tdepes_3.in|tdepes_3.in]], [[tests/tutorespfn/Input/tdepes_4.in|tdepes_4.in]]
     - v5:  [[tests/v5/Input/t26.in|t26.in]]
@@ -1432,9 +1300,6 @@ electronic lifetimes. The delta function is evaluated using:
   * when [[smdelta]] == 4, Smearing of Methfessel and Paxton (PRB40,3616(1989)) with Hermite polynomial of degree 2, corresponding to "Cold smearing" of N. Marzari with a=0 (so, same smeared delta function as smdelta=2, with different a). 
   * when [[smdelta]] == 5, Gaussian smearing : 1.0d0*exp(-xx**2)/sqrt(pi) 
 
-
-* * *
-
 ## **td_maxene** 
 
 
@@ -1444,7 +1309,7 @@ electronic lifetimes. The delta function is evaluated using:
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t69.in|t69.in]]
 
 
@@ -1464,9 +1329,6 @@ difference is less than [[td_maxene]]. The default value 0.0 means that all
 pairs are taken into account.  
 See [[td_mexcit]] for an alternative way to decrease N.
 
-
-* * *
-
 ## **td_mexcit** 
 
 
@@ -1476,7 +1338,7 @@ See [[td_mexcit]] for an alternative way to decrease N.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v1:  [[tests/v1/Input/t69.in|t69.in]]
 
 
@@ -1495,7 +1357,4 @@ The input variable [[td_mexcit]] allows to diminish N : it selects the first
 increasing Kohn-Sham energy difference. However, when [[td_mexcit]] is zero,
 all pairs are allowed.  
 See [[td_maxene]] for an alternative way to decrease N.
-
-
-* * *
 

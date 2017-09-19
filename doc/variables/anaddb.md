@@ -21,7 +21,7 @@ anaddb input variables to be used in the input file for the anaddb executable.
 *Dimensions:* scalar  
 *Default value:* 2e-05  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
@@ -33,9 +33,6 @@ Smearing width for the Eliashberg alpha^2F function (similar to a phonon DOS),
 which is sampled on a finite q and k grid. The Dirac delta functions in energy
 are replaced by Gaussians of width **a2fsmear** (by default in Hartree).
 
-
-* * *
-
 ## **alphon** 
 
 
@@ -45,7 +42,7 @@ are replaced by Gaussians of width **a2fsmear** (by default in Hartree).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
@@ -62,9 +59,6 @@ option is useful in the mode-by-mode decomposition of the electrooptic tensor,
 and to compute the Raman susceptibilities of individual phonon modes. In case
 of uniaxial crystals, the z-axis should be chosen along the optical axis.
 
-
-* * *
-
 ## **asr** 
 
 
@@ -75,7 +69,7 @@ of uniaxial crystals, the z-axis should be chosen along the optical axis.
 *Default value:* 1  
 *Comment:* was 0 before v5.3  
 
-??? note "Test list (click to open) (Moderately used, [20/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [20/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v2:  [[tests/v2/Input/t24.in|t24.in]]
     - v5:  [[tests/v5/Input/t83.in|t83.in]], [[tests/v5/Input/t84.in|t84.in]], [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
@@ -140,9 +134,6 @@ the breaking of the ASR is rather severe. In order to clear the situation, one
 should use a diagonalisation routine for non-hermitian matrices. So, at the
 present status of understanding, one should always use the **asr**=2 option ).  
 
-
-* * *
-
 ## **atftol** 
 
 
@@ -152,7 +143,7 @@ present status of understanding, one should always use the **asr**=2 option ).
 *Dimensions:* scalar  
 *Default value:* 0.05  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -164,9 +155,6 @@ determine when the series of channel widths with which the DOS is calculated
 can be stopped, i.e. the mean of the relative change going from one grid to
 the next bigger is smaller than **wtol2**.
 
-
-* * *
-
 ## **atifc** 
 
 
@@ -176,7 +164,7 @@ the next bigger is smaller than **wtol2**.
 *Dimensions:* (array '[[anaddb:natifc]]')  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -196,9 +184,6 @@ to be written and eventually analysed.
 WARNING: there will be an in-place change of meaning of atifc (this is
 confusing, and should be taken away in one future version - sorry for this).
 
-
-* * *
-
 ## **band_gap** 
 
 
@@ -209,7 +194,7 @@ confusing, and should be taken away in one future version - sorry for this).
 *Dimensions:* scalar  
 *Default value:* 999.0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
@@ -223,9 +208,6 @@ Allow setting the target band gap, in eV. ([[elphflag@anaddb]]=1).
 NOTE XG20170811 : apparently no effective test for this input variable. Also,
 the descirption is strange ...!
 
-
-* * *
-
 ## **brav** 
 
 
@@ -235,7 +217,7 @@ the descirption is strange ...!
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -263,9 +245,6 @@ Note that in the latter case, the rprim of the unit cell have to be 1.0 0.0
 Warning: the generation of q-points in anaddb is rather old-fashioned, and
 should be replaced by routines used by the main abinit code.
 
-
-* * *
-
 ## **chneut** 
 
 
@@ -275,7 +254,7 @@ should be replaced by routines used by the main abinit code.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [40/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [40/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
@@ -302,9 +281,6 @@ sometimes strongly violated. In particular, this will make the lowest
 frequencies at Gamma non-zero. There is no "best" way of imposing the ASR on
 effective charges.
 
-
-* * *
-
 ## **dieflag** 
 
 
@@ -314,7 +290,7 @@ effective charges.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [36/66] in all anaddb tests, [4/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [36/66] in all anaddb tests, [4/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -336,9 +312,6 @@ Integer. Frequency-dependent dielectric tensor flag.
   * 3 => Compute and print the relaxed-ion dielectric tensor. Requirements for preceding response-function DDB generation run: electric-field and full atomic-displacement responses. Set [[rfstrs]] = 1, 2, or 3 (preferably 3). Set [[rfatpol]] and [[rfdir]] to do a full calculation of phonons at Q=0 (needed because the inverse of force-constant tensor is required). Furthermore, in the anaddb input file the variable [[anaddb:nph2l]] must be nonzero in order to initiate computation of atomic displacements. If only the dielectric response is needed it is sufficient to set [[anaddb:nph2l]] to 1 and leave [[anaddb:qph2l]] at its default value (the Gamma point). Note that the relaxed-ion dielectric tensor computed here can also be obtained as the zero-frequency limit of the frequency-dependent dielectric tensor using input variables dieflag=1 and frmin=0.0. (The results obtained using these two approaches should agree to good numerical precision.) The ability to compute and print the static dielectric tensor here is provided for completeness and consistency with the other tensor quantities that are computed in this section of the code. 
   * 4 => Calculate dielectric tensor of both relaxed ion and free stress. We need information of internal strain and elastic tensor (relaxed ion) in this computation. So please set: [[anaddb:elaflag]]=2,3,4 or 5 and [[anaddb:instrflag]]=1 
 
-
-* * *
-
 ## **dipdip** 
 
 
@@ -348,7 +321,7 @@ Integer. Frequency-dependent dielectric tensor flag.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Very frequently used, [49/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [49/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -367,9 +340,6 @@ Integer. Frequency-dependent dielectric tensor flag.
 
 The abinit input variable [[dipdip]] has a similar meaning.
 
-
-* * *
-
 ## **dosdeltae** 
 
 
@@ -379,7 +349,7 @@ The abinit input variable [[dipdip]] has a similar meaning.
 *Dimensions:* scalar  
 *Default value:* 4.5E-06 Hartree = 1 cm<sup>-1</sup>  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -388,9 +358,6 @@ The abinit input variable [[dipdip]] has a similar meaning.
 
 The input variable **dosdeltae** is used to define the step of the frequency
 grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
-
-
-* * *
 
 ## **dossmear** 
 
@@ -402,7 +369,7 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 *Dimensions:* scalar  
 *Default value:* 4.5E-05 Hartree = 10 cm<sup>-1</sup>  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
@@ -411,9 +378,6 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 
 
 **dossmear** defines the gaussian broadening used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
-
-
-* * *
 
 ## **dossum** 
 
@@ -424,7 +388,7 @@ grid used to calculate the phonon density of states when [[anaddb:prtdos]]=1.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v2:  [[tests/v2/Input/t15.in|t15.in]]
 
 
@@ -436,9 +400,6 @@ Set the flag to calculate the two phonon dos density of states. Sum and
 Difference for the Gamma point. The DOS is converged and based on that, the
 sum and different is reported in the output file **dossum**.
 
-
-* * *
-
 ## **dostol** 
 
 
@@ -448,7 +409,7 @@ sum and different is reported in the output file **dossum**.
 *Dimensions:* scalar  
 *Default value:* 0.25  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
@@ -462,9 +423,6 @@ determine when the series of grids with which the DOS is calculated can be
 stopped, i.e. the mean of the relative change going from one grid to the next
 bigger is smaller than **dostol**.
 
-
-* * *
-
 ## **eivec** 
 
 
@@ -474,7 +432,7 @@ bigger is smaller than **dostol**.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [35/66] in all anaddb tests, [5/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [35/66] in all anaddb tests, [5/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
     - v2:  [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
@@ -492,9 +450,6 @@ bigger is smaller than **dostol**.
   * 1 or 2 => write the phonon eigenvectors;
   * 4 => generate output files for band2eps (drawing tool for the phonon band structure);
 
-
-* * *
-
 ## **elaflag** 
 
 
@@ -504,7 +459,7 @@ bigger is smaller than **dostol**.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t83.in|t83.in]]
 
@@ -522,9 +477,6 @@ Flag for calculation of elastic and compliance tensors
   * 4 => Calculate the elastic and compliance tensors (relaxed ion) at fixed displacement field, the relaxed-ion tensors at fixed electric field will be printed out too, for comparison. When **elaflag**=4, we need the information of internal strain and relaxed-ion dielectric tensor to build the whole tensor, so we need set [[anaddb:instrflag]]=1 and [[anaddb:dieflag]]=3 or 4 . 
   * 5 => Calculate the relaxed ion elastic and compliance tensors, considering the stress left inside cell. At the same time, bare relaxed ion tensors will still be printed out for comparison. In this calculation, stress tensor is needed to compute the correction term, so one supposed to merge the first order derivative data base (DDB file) with the second order derivative data base (DDB file) into a new DDB file, which can contain both information. And the program will also check for the users. 
 
-
-* * *
-
 ## **elph_fermie** 
 
 
@@ -535,7 +487,7 @@ Flag for calculation of elastic and compliance tensors
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t93.in|t93.in]]
     - v6:  [[tests/v6/Input/t93.in|t93.in]]
 
@@ -549,9 +501,6 @@ semiconductors), in the electron-phonon case. Note that [[anaddb:elph_fermie]]
 and [[anaddb:ep_extrael]] should not be used at the same time.
 ([[anaddb:elphflag]]=1).
 
-
-* * *
-
 ## **elphflag** 
 
 
@@ -561,7 +510,7 @@ and [[anaddb:ep_extrael]] should not be used at the same time.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -575,9 +524,6 @@ and [[anaddb:ep_extrael]] should not be used at the same time.
 If **elphflag** is 1, anaddb performs an analysis of the electron-phonon
 coupling.
 
-
-* * *
-
 ## **elphsmear** 
 
 
@@ -588,7 +534,7 @@ coupling.
 *Dimensions:* scalar  
 *Default value:* 0.01 Hartree  
 
-??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [2/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
 
 
@@ -597,9 +543,6 @@ coupling.
 
 
 Smearing width for the Fermi surface integration (in Hartree by default).
-
-
-* * *
 
 ## **enunit** 
 
@@ -610,7 +553,7 @@ Smearing width for the Fermi surface integration (in Hartree by default).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [11/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [11/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v2:  [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
@@ -629,9 +572,6 @@ the console log file, for which Hartree units are used).
   * 1 => meV and Thz;
   * 2 => Hartree, cm-1, meV, Thz, and Kelvin.
 
-
-* * *
-
 ## **ep_b_max** 
 
 
@@ -641,7 +581,7 @@ the console log file, for which Hartree units are used).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t92.in|t92.in]]
 
 
@@ -655,9 +595,6 @@ code. Instead of weighting according to a distance from the Fermi surface, an
 equal weight is given to all k-points, for all bands between
 [[anaddb:ep_b_min]] and **ep_b_max**.
 
-
-* * *
-
 ## **ep_b_min** 
 
 
@@ -667,7 +604,7 @@ equal weight is given to all k-points, for all bands between
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t92.in|t92.in]]
 
 
@@ -678,9 +615,6 @@ equal weight is given to all k-points, for all bands between
 As for [[anaddb:ep_b_max]], but **ep_b_min** is the lower bound on the band
 integration, instead of the upper bound. See also [[anaddb:telphint]].
 
-
-* * *
-
 ## **ep_extrael** 
 
 
@@ -690,7 +624,7 @@ integration, instead of the upper bound. See also [[anaddb:telphint]].
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
@@ -706,9 +640,6 @@ with doping concentration, in the units of cm-3 (negative for electron
 doping). Note that **ep_extrael** and [[anaddb:elph_fermie]] should not be
 used at the same time. ([[anaddb:elphflag]]=1).
 
-
-* * *
-
 ## **ep_int_gkk** 
 
 
@@ -718,7 +649,7 @@ used at the same time. ([[anaddb:elphflag]]=1).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -730,9 +661,6 @@ elements over the coarse k-grid is done (**ep_int_gkk** 1) before summing with
 appropriate Fermi Surface weights. In this way, the two integration weights
 are treated symmetrically.
 
-
-* * *
-
 ## **ep_keepbands** 
 
 
@@ -742,7 +670,7 @@ are treated symmetrically.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t89.in|t89.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -758,9 +686,6 @@ elements on the electron band index is kept (**ep_keepbands** 1), or whether
 it is summed over immediately with appropriate Fermi Surface weights. For
 transport calculations **ep_keepbands** must be set to 1.
 
-
-* * *
-
 ## **ep_nqpt** 
 
 
@@ -770,7 +695,7 @@ transport calculations **ep_keepbands** must be set to 1.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
@@ -783,9 +708,6 @@ of the electron-phonon quantities without interpolation, this specifies the
 number of q-points to be found in the GKK file, independently of the normal
 anaddb input (ngqpt)
 
-
-* * *
-
 ## **ep_nspline** 
 
 
@@ -795,7 +717,7 @@ anaddb input (ngqpt)
 *Dimensions:* scalar  
 *Default value:* 20  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t94.in|t94.in]]
 
 
@@ -806,9 +728,6 @@ anaddb input (ngqpt)
 The scale factor for cubic spline interpolation, only used in the relaxation
 time approximation ([[anaddb:ifltransport]]=3).
 
-
-* * *
-
 ## **ep_prt_yambo** 
 
 
@@ -818,7 +737,7 @@ time approximation ([[anaddb:ifltransport]]=3).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
@@ -829,9 +748,6 @@ time approximation ([[anaddb:ifltransport]]=3).
 For electron-phonon calculations, print out matrix elements for use by the
 yambo code.
 
-
-* * *
-
 ## **ep_qptlist** 
 
 
@@ -841,7 +757,7 @@ yambo code.
 *Dimensions:* (3,[[anaddb:ep_nqpt]])  
 *Default value:* (3*[[anaddb:ep_nqpt]])*0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
@@ -854,9 +770,6 @@ of the electron-phonon quantities without interpolation, this specifies the
 q-points to be found in the GKK file, independently of the normal anaddb input
 (ngqpt), in reduced coordinates of the reciprocal space lattice.
 
-
-* * *
-
 ## **ep_scalprod** 
 
 
@@ -866,7 +779,7 @@ q-points to be found in the GKK file, independently of the normal anaddb input
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [6/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t89.in|t89.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
@@ -885,9 +798,6 @@ Doing so afterwards (**ep_scalprod** 0) eliminates the diagonalization error,
 but sometimes gives small spikes in the phonon linewidths near band crossings
 or high symmetry points. I do not know why...
 
-
-* * *
-
 ## **freeze_displ** 
 
 
@@ -897,7 +807,7 @@ or high symmetry points. I do not know why...
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
@@ -914,9 +824,6 @@ phonon mode, then let it relax in abinit afterwards.
 **freeze_displ** is unitless, but has a physical meaning: it is related to the Bose distribution n_B and the frequency w_qs of the phonon mode. At a given temperature T, **freeze_displ** will give the mean square displacement of atoms (along with the displacement vectors, which are in Bohr). In atomic units **freeze_displ** = sqrt((0.5 + n_B(w_qs/kT) / w_qs) Typical values are 50-200 for a frequency of a few hundred cm-1 and room temperature. If all you want is to break the symmetry in the right direction, any reasonable value (10-50) should be ok.   
 **WARNING**: this will create a _lot_ of files (3*natom*nph1l), so it should be used with a small number [[anaddb:nph1l]] of q-points for interpolation.
 
-
-* * *
-
 ## **frmax** 
 
 
@@ -926,7 +833,7 @@ phonon mode, then let it relax in abinit afterwards.
 *Dimensions:* scalar  
 *Default value:* 10.0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
@@ -938,9 +845,6 @@ phonon mode, then let it relax in abinit afterwards.
 Value of the largest frequency for the frequency-dependent dielectric tensor,
 in Hartree.
 
-
-* * *
-
 ## **frmin** 
 
 
@@ -950,7 +854,7 @@ in Hartree.
 *Dimensions:* scalar  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
@@ -962,9 +866,6 @@ in Hartree.
 Value of the lowest frequency for the frequency-dependent dielectric tensor,
 in Hartree.
 
-
-* * *
-
 ## **gkqwrite** 
 
 
@@ -974,7 +875,7 @@ in Hartree.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t91.in|t91.in]]
 
 
@@ -985,9 +886,6 @@ in Hartree.
 Flag to write out the reciprocal space matrix elements to a disk file named
 gkqfile. This reduces strongly the memory needed for an electron-phonon run.
 
-
-* * *
-
 ## **gruns_ddbs** 
 
 
@@ -997,7 +895,7 @@ gkqfile. This reduces strongly the memory needed for an electron-phonon run.
 *Dimensions:* ([[anaddb:gruns_nddbs]])  
 *Default value:* Empty  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
@@ -1015,9 +913,6 @@ volume comes first) and the volume increment must be constant. The code
 computes the derivative of the dynamical matrix wrt the volume using central
 finite difference.
 
-
-* * *
-
 ## **gruns_nddbs** 
 
 
@@ -1027,7 +922,7 @@ finite difference.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
@@ -1038,9 +933,6 @@ finite difference.
 This variable defines the number of DDB files (read from
 [[anaddb:gruns_ddbs]]) used for the calculation of the Gruneisen parameters.
 
-
-* * *
-
 ## **iatfix** 
 
 
@@ -1050,7 +942,7 @@ This variable defines the number of DDB files (read from
 *Dimensions:* ([[anaddb:natfix]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -1059,9 +951,6 @@ This variable defines the number of DDB files (read from
 
 Indices of the atoms that are fixed during a structural relaxation at
 constrained polarization. See [[anaddb:polflag]].
-
-
-* * *
 
 ## **iatprj_bs** 
 
@@ -1072,7 +961,7 @@ constrained polarization. See [[anaddb:polflag]].
 *Dimensions:* ([[anaddb:natprj_bs]])  
 *Default value:* 0*'[[anaddb:natprj_bs]]'  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
@@ -1084,9 +973,6 @@ constrained polarization. See [[anaddb:polflag]].
 Indices of the atoms that are chosen for projection of the phonon
 eigenvectors, giving a weighted phonon band structure file.
 
-
-* * *
-
 ## **ifcana** 
 
 
@@ -1096,7 +982,7 @@ eigenvectors, giving a weighted phonon band structure file.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [34/66] in all anaddb tests, [4/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [34/66] in all anaddb tests, [4/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1125,9 +1011,6 @@ vanish; the third vector is perpendicular to the two other) also calculate
 ratios with respect to the longitudinal force constant ( the (1,1) element of
 the matrix in local coordinates).
 
-
-* * *
-
 ## **ifcflag** 
 
 
@@ -1137,7 +1020,7 @@ the matrix in local coordinates).
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [53/66] in all anaddb tests, [8/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [53/66] in all anaddb tests, [8/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1167,9 +1050,6 @@ generated starting from this set of interatomic force constants. It is
 suggested to always use **ifcflag**=1. The **ifcflag**=0 option is available
 for checking purpose, and if there is not enough information in the DDB.
 
-
-* * *
-
 ## **ifcout** 
 
 
@@ -1179,7 +1059,7 @@ for checking purpose, and if there is not enough information in the DDB.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [46/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [46/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1198,9 +1078,6 @@ the number of neighbouring atoms for which the ifc's will be output (written)
 and eventually analysed. The neighbouring atoms are selected by decreasing
 distance with respect to the generic atom.
 
-
-* * *
-
 ## **ifltransport** 
 
 
@@ -1210,7 +1087,7 @@ distance with respect to the generic atom.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t89.in|t89.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -1226,9 +1103,6 @@ transport properties: electrical and thermal resistivities from electron-
 phonon interactions in the variational approach. If ifltransport=3, anaddb
 calculates the k-dependent relaxation time. (needs[[anaddb:elphflag]] = 1)
 
-
-* * *
-
 ## **instrflag** 
 
 
@@ -1238,7 +1112,7 @@ calculates the k-dependent relaxation time. (needs[[anaddb:elphflag]] = 1)
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [6/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t83.in|t83.in]]
 
@@ -1252,9 +1126,6 @@ Internal strain tensor flag.
   * 0 => No internal-strain calculation.
   * 1 => Print out both force-response and displacement-response internal-strain tensor. Requirements for preceding response-function DDB generation run: Strain and full atomic-displacement responses. Set [[rfstrs]] = 1, 2, or 3 (preferably 3). Set [[rfatpol]] and [[rfdir]] to do a full calculation of phonons at Q=0. 
 
-
-* * *
-
 ## **istrfix** 
 
 
@@ -1264,7 +1135,7 @@ Internal strain tensor flag.
 *Dimensions:* ([[anaddb:nstrfix]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]]
 
 
@@ -1284,9 +1155,6 @@ structural relaxation at constrained polarisation:
 
 See [[anaddb:polflag]].
 
-
-* * *
-
 ## **kptrlatt** 
 
 
@@ -1296,7 +1164,7 @@ See [[anaddb:polflag]].
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
@@ -1310,9 +1178,6 @@ Unnormalized lattice vectors for the k-point grid in reciprocal space (see
 [[kptrlatt]] abinit variable definitionas well). Input needed in electron-
 phonon calculations using nesting functions or tetrahedron integration.
 
-
-* * *
-
 ## **kptrlatt_fine** 
 
 
@@ -1322,7 +1187,7 @@ phonon calculations using nesting functions or tetrahedron integration.
 *Dimensions:* (3,3)  
 *Default value:* 9*0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -1331,9 +1196,6 @@ phonon calculations using nesting functions or tetrahedron integration.
 
 As kptrlatt above, but for a finer grid of k-points. Under development. Does
 not work yet, as of June 2010.
-
-
-* * *
 
 ## **mustar** 
 
@@ -1344,7 +1206,7 @@ not work yet, as of June 2010.
 *Dimensions:* scalar  
 *Default value:* 0.1  
 
-??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [17/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -1358,9 +1220,6 @@ not work yet, as of June 2010.
 Average electron-electron interaction strength, for the computation of the
 superconducting Tc using Mc-Millan's formula.
 
-
-* * *
-
 ## **natfix** 
 
 
@@ -1370,7 +1229,7 @@ superconducting Tc using Mc-Millan's formula.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -1379,9 +1238,6 @@ superconducting Tc using Mc-Millan's formula.
 
 Number of atoms that are fixed during a structural optimisation at constrained
 polarization. See [[anaddb:polflag]].
-
-
-* * *
 
 ## **natifc** 
 
@@ -1392,7 +1248,7 @@ polarization. See [[anaddb:polflag]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [33/66] in all anaddb tests, [4/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1409,9 +1265,6 @@ polarization. See [[anaddb:polflag]].
 Give the number of atoms for which IFCs are written and eventually analysed.
 The list of these atoms is provided by [[anaddb:atifc]].
 
-
-* * *
-
 ## **natprj_bs** 
 
 
@@ -1421,7 +1274,7 @@ The list of these atoms is provided by [[anaddb:atifc]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
 
@@ -1433,9 +1286,6 @@ The list of these atoms is provided by [[anaddb:atifc]].
 Give the number of atoms for which atomic-projected phonon band structures
 will be output. The list of these atoms is provided by [[iatprj_bs@anaddb]].
 
-
-* * *
-
 ## **nchan** 
 
 
@@ -1445,7 +1295,7 @@ will be output. The list of these atoms is provided by [[iatprj_bs@anaddb]].
 *Dimensions:* scalar  
 *Default value:* 800  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1461,9 +1311,6 @@ The number of channels of width 1 cm-1 used in calculating the phonon density
 of states through the histogram method, or, equivalently, the largest
 frequency sampled. The first channel begins at 0.
 
-
-* * *
-
 ## **ndivsm** 
 
 
@@ -1473,7 +1320,7 @@ frequency sampled. The first channel begins at 0.
 *Dimensions:* scalar  
 *Default value:* 20  
 
-??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
 
@@ -1486,9 +1333,6 @@ segment of the q-path used for the phonon band structure. If ndivsm is
 specified in the input file, the code will automatically generate the points
 along the path using the coordinates given in the array [[anaddb:qpath]].
 
-
-* * *
-
 ## **nfreq** 
 
 
@@ -1498,7 +1342,7 @@ along the path using the coordinates given in the array [[anaddb:qpath]].
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
 
@@ -1511,9 +1355,6 @@ Number of frequencies wanted for the frequency-dependent dielectric tensor.
 Should be positive. See [[anaddb:dieflag]]. The code will take **nfreq**
 equidistant values from [[anaddb:frmin]] to [[anaddb:frmax]].
 
-
-* * *
-
 ## **ng2qpt** 
 
 
@@ -1524,7 +1365,7 @@ equidistant values from [[anaddb:frmin]] to [[anaddb:frmax]].
 *Default value:* 3*0  
 *Comment:* (will not work)  
 
-??? note "Test list (click to open) (Moderately used, [17/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [17/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1541,9 +1382,6 @@ The Monkhorst-Pack grid linear dimensions, for the finer of the series of fine
 grids. Used for the integration of thermodynamical functions (Bose-Einstein
 distribution) or for the DOS.
 
-
-* * *
-
 ## **ngqpt** 
 
 
@@ -1554,7 +1392,7 @@ distribution) or for the DOS.
 *Default value:* 3*0  
 *Comment:* (will not work)  
 
-??? note "Test list (click to open) (Very frequently used, [53/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [53/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1570,9 +1408,6 @@ distribution) or for the DOS.
 
 The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
 
-
-* * *
-
 ## **ngrids** 
 
 
@@ -1582,7 +1417,7 @@ The Monkhorst-Pack grid linear dimensions, for the DDB (coarse grid).
 *Dimensions:* scalar  
 *Default value:* 4  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1600,9 +1435,6 @@ one described by [[anaddb:ng2qpt]]. The intermediate grids are defined for
 igrid=1... **ngrids**, by the numbers
 ngqpt_igrid(ii)=(ng2qpt(ii)*igrid)/**ngrids**
 
-
-* * *
-
 ## **nlflag** 
 
 
@@ -1612,7 +1444,7 @@ ngqpt_igrid(ii)=(ng2qpt(ii)*igrid)/**ngrids**
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
@@ -1629,9 +1461,6 @@ Non-linear properties flag.
   * 2 => only the non-linear optical susceptibilities and first-order changes of the dielectric tensor induced by an atomic displacement are calculated;
   * 3 => only the non-linear optical susceptibility is calculated.
 
-
-* * *
-
 ## **nph1l** 
 
 
@@ -1641,7 +1470,7 @@ Non-linear properties flag.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [56/66] in all anaddb tests, [6/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [56/66] in all anaddb tests, [6/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1662,9 +1491,6 @@ directly from the DDB - if [[anaddb:ifcflag]]=0 - or through the interatomic
 forces interpolation - if [[anaddb:ifcflag]]=1 -), will be diagonalized, and
 the corresponding eigenfrequencies will be printed.
 
-
-* * *
-
 ## **nph2l** 
 
 
@@ -1674,7 +1500,7 @@ the corresponding eigenfrequencies will be printed.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1703,9 +1529,6 @@ eigenvalues.
 three first numbers are zero, then the code will do a calculation at Gamma
 without non-analyticities.
 
-
-* * *
-
 ## **nqpath** 
 
 
@@ -1715,7 +1538,7 @@ without non-analyticities.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -1730,9 +1553,6 @@ without non-analyticities.
 Number of q-points in the array [[anaddb:qpath]] defining the path along which
 the phonon band structure and phonon linewidths are interpolated.
 
-
-* * *
-
 ## **nqshft** 
 
 
@@ -1742,7 +1562,7 @@ the phonon band structure and phonon linewidths are interpolated.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1762,9 +1582,6 @@ of shifts it is always taken to be 1). Usually, put it to 1. Use 2 if BCC
 sampling (Warning: not BCC lattice, BCC *sampling*), and 4 for FCC sampling
 (Warning: not FCC lattice, FCC *sampling*).
 
-
-* * *
-
 ## **nsphere** 
 
 
@@ -1774,7 +1591,7 @@ sampling (Warning: not BCC lattice, BCC *sampling*), and 4 for FCC sampling
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v2:  [[tests/v2/Input/t17.in|t17.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
     - v8:  [[tests/v8/Input/t46.in|t46.in]], [[tests/v8/Input/t49.in|t49.in]]
@@ -1801,9 +1618,6 @@ the range of the interatomic force constants), because the acoustic sum rule
 will be violated if some atoms are no more included in the inverse Fourier
 Transform.
 
-
-* * *
-
 ## **nstrfix** 
 
 
@@ -1813,7 +1627,7 @@ Transform.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]]
 
 
@@ -1824,9 +1638,6 @@ Transform.
 Number of strain component that are fixed during a structural optimisation at
 constrained polarization. See [[anaddb:polflag]].
 
-
-* * *
-
 ## **ntemper** 
 
 
@@ -1836,7 +1647,7 @@ constrained polarization. See [[anaddb:polflag]].
 *Dimensions:* scalar  
 *Default value:* 10  
 
-??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1860,9 +1671,6 @@ anaddb will be important. For weakly bounded systems (e.g. Van der Waals
 solids), such anharmonic effects might be important already at room
 temperature.
 
-
-* * *
-
 ## **nwchan** 
 
 
@@ -1872,7 +1680,7 @@ temperature.
 *Dimensions:* scalar  
 *Default value:* 10  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -1890,9 +1698,6 @@ of 1 cm-1), from this channel width to 1, eventually. It considers to have
 converged when the convergence criterion based on [[anaddb:dostol]] and
 [[anaddb:thmtol]] have been fulfilled.
 
-
-* * *
-
 ## **outboltztrap** 
 
 
@@ -1902,7 +1707,7 @@ converged when the convergence criterion based on [[anaddb:dostol]] and
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t76.in|t76.in]]
 
 
@@ -1914,9 +1719,6 @@ If set to 1, the phonon frequencies on the ngqpt grid are output in a format
 legible by the BoltzTrap code, which does band interpolation and gets group
 velocities. The output file will be appended _BTRAP
 
-
-* * *
-
 ## **outscphon** 
 
 
@@ -1926,7 +1728,7 @@ velocities. The output file will be appended _BTRAP
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -1938,9 +1740,6 @@ Consistent phonon run (as in Souvatzis PRL **100** 095901) will be output to
 files appended _PHFRQ and _PHVEC. The third file needed is appended _PCINFO
 for Primitive Cell INFOrmation.
 
-
-* * *
-
 ## **piezoflag** 
 
 
@@ -1950,7 +1749,7 @@ for Primitive Cell INFOrmation.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [5/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [5/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/telast_3.in|telast_3.in]], [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]]
 
@@ -1970,9 +1769,6 @@ Flag for calculation of piezoelectric tensors
   * 6 =&gt; Calculate the piezoelectric h tensor (relaxed ion). In this calculation, we need information of internal strain and dielectric tensor (relaxed ion). So we need set: [[anaddb:instrflag]]=1 and [[anaddb:dieflag]]=3 or 4. The subroutine will also do a check for you, and print warning message without stopping even if flags were not correctly set. 
   * 7 =&gt; calculate all the possible piezoelectric tensors, including e (clamped and relaxed ion), d, g and h tensors. The flags should be set to satisfy the above rules from 1 to 6.
 
-
-* * *
-
 ## **polflag** 
 
 
@@ -1982,7 +1778,7 @@ Flag for calculation of piezoelectric tensors
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
@@ -2016,9 +1812,6 @@ In case both [[anaddb:relaxat]] and [[anaddb:relaxstr]] are 0, while
 difference expression of the ddk ([[berryopt]]=2 or -2) in the linear response
 calculation of the effective charges and the piezoelectric tensor.
 
-
-* * *
-
 ## **prt_ifc** 
 
 
@@ -2028,7 +1821,7 @@ calculation of the effective charges and the piezoelectric tensor.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v2:  [[tests/v2/Input/t15.in|t15.in]]
 
 
@@ -2042,9 +1835,6 @@ available options are:
   * 0 =&gt; do nothing (IFC are printed to the log file);
   * 1 =&gt; write out the IFC in file ifcinfo.out (the name is fixed) to be used by AI2PS from John Rehr's group
 
-
-* * *
-
 ## **prtbltztrp** 
 
 
@@ -2054,7 +1844,7 @@ available options are:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -2063,9 +1853,6 @@ available options are:
 
   * 0 =&gt; do not write the BoltzTraP input files;
   * 1 =&gt; write out the input files for BoLTZTRaP code.
-
-
-* * *
 
 ## **prtddb** 
 
@@ -2076,7 +1863,7 @@ available options are:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t64.in|t64.in]]
 
 
@@ -2092,9 +1879,6 @@ The available options are:
   * 0 =&gt; no output of DDB (default);
   * 1 =&gt; Interpolate the DDB and write out the DDB and DDB.nc files. 
 
-
-* * *
-
 ## **prtdos** 
 
 
@@ -2104,7 +1888,7 @@ The available options are:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [9/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [9/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]]
     - v8:  [[tests/v8/Input/t45.in|t45.in]], [[tests/v8/Input/t46.in|t46.in]]
 
@@ -2127,9 +1911,6 @@ The available options are:
 The step of the frequency grid employed to calculate the DOS can be defined
 through the input variable [[anaddb:dosdeltae]].
 
-
-* * *
-
 ## **prtfsurf** 
 
 
@@ -2139,7 +1920,7 @@ through the input variable [[anaddb:dosdeltae]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -2163,9 +1944,6 @@ set to (0,0,0) during the GS calculation with [[nshiftk]]=1. Furthermore if
 [[kptrlatt]] is used to generate the k-grid, all the off-diagonal elements of
 this array must be zero.
 
-
-* * *
-
 ## **prtmbm** 
 
 
@@ -2175,7 +1953,7 @@ this array must be zero.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
@@ -2188,9 +1966,6 @@ this array must be zero.
   * 0 =&gt; do not write the mode-by-mode decomposition of the electrooptic tensor;
   * 1 =&gt; write out the contribution of the individual zone-center phonon modes to the electrooptic tensor.
 
-
-* * *
-
 ## **prtnest** 
 
 
@@ -2200,7 +1975,7 @@ this array must be zero.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
     - v7:  [[tests/v7/Input/t93.in|t93.in]], [[tests/v7/Input/t94.in|t94.in]]
@@ -2229,9 +2004,6 @@ reciprocal space, moreover off-diagonal elements are not allowed, i.e kptrlatt
   * 1 =&gt; write only the nesting function along the q-path in the X-Y format;
   * 2 =&gt; write out the nesting function both in the X-Y and in the XSF format.
 
-
-* * *
-
 ## **prtphbands** 
 
 
@@ -2241,7 +2013,7 @@ reciprocal space, moreover off-diagonal elements are not allowed, i.e kptrlatt
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t46.in|t46.in]]
 
 
@@ -2255,9 +2027,6 @@ phonon band structure. Possible values:
   * 1 Write frequencies in xmgrace format. A file with extension `PHBANDS.agr` is produced. Use `xmgrace file_PHBANDS.agr` to visualize the data
   * 2 Write frequencies in gnuplot format. The code produces a `PHBANDS.dat` file with the eigenvalues and a `PHBANDS.gnuplot` script. Use `gnuplot file_PHBANDS.gnuplot` to visualize the phonon band structure.
 
-
-* * *
-
 ## **prtsrlr** 
 
 
@@ -2267,7 +2036,7 @@ phonon band structure. Possible values:
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -2282,9 +2051,6 @@ Only if [[anaddb:ifcflag]]=1. The available options are:
 For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 [[anaddb:ifcflag]], [[anaddb:ifcflag]] and [[anaddb:dipdip]].
 
-
-* * *
-
 ## **prtvol** 
 
 
@@ -2294,7 +2060,7 @@ For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
@@ -2303,9 +2069,6 @@ For details see _Europhys. Lett., 33 (9), pp. 713-718 (1996)_. See also
 
 
 Control the volume of printed output.
-
-
-* * *
 
 ## **q1shft** 
 
@@ -2316,7 +2079,7 @@ Control the volume of printed output.
 *Dimensions:* ([[anaddb:nqshft]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [51/66] in all anaddb tests, [7/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_4.in|trf2_4.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2373,9 +2136,6 @@ points in the full BZ of 2, 4, 4, 16, 32 and 32.
 For a FCC lattice, it is possible to sample only the Gamma point by using a
 1x1x1 BCC sampling (nqshft=2).
 
-
-* * *
-
 ## **q2shft** 
 
 
@@ -2385,7 +2145,7 @@ For a FCC lattice, it is possible to sample only the Gamma point by using a
 *Dimensions:* (3)  
 *Default value:* 3* 0  
 
-??? note "Test list (click to open) (Moderately used, [4/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [4/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v5:  [[tests/v5/Input/t22.in|t22.in]]
@@ -2399,9 +2159,6 @@ Similar to [[anaddb:q1shft]], but for the series of fine grids.
 
 Note that [[anaddb:nqshft]] for this series of grids corresponds to 1.
 
-
-* * *
-
 ## **qgrid_type** 
 
 
@@ -2411,7 +2168,7 @@ Note that [[anaddb:nqshft]] for this series of grids corresponds to 1.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t94.in|t94.in]]
 
 
@@ -2424,9 +2181,6 @@ If **qgrid_type** is set to 1, the electron-phonon part of anaddb will use the
 q-points to calculate the electron-phonon coupling for. This is an alternative
 to a regular grid as in the rest of anaddb (using [[anaddb:ngqpt]]).
 
-
-* * *
-
 ## **qpath** 
 
 
@@ -2436,7 +2190,7 @@ to a regular grid as in the rest of anaddb (using [[anaddb:ngqpt]]).
 *Dimensions:* (3,[[anaddb:nqpath]])  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [19/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]], [[tests/v5/Input/t99.in|t99.in]]
     - v6:  [[tests/v6/Input/t76.in|t76.in]], [[tests/v6/Input/t93.in|t93.in]], [[tests/v6/Input/t94.in|t94.in]]
@@ -2455,9 +2209,6 @@ number of divisions in each segment is automatically calculated inside the
 code to respect the proportion between the segments. The same circuit is used
 for the output of the nesting function if [[anaddb:prtnest]]=1.
 
-
-* * *
-
 ## **qph1l** 
 
 
@@ -2467,7 +2218,7 @@ for the output of the nesting function if [[anaddb:prtnest]]=1.
 *Dimensions:* (4,[[anaddb:nph1l]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Very frequently used, [55/66] in all anaddb tests, [6/10] in anaddb tutorials)"
+??? note "Test list (click to open). Very frequently used, [55/66] in all anaddb tests, [6/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_4.in|teph_4.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]], [[tests/v2/Input/t17.in|t17.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]], [[tests/v2/Input/t28.in|t28.in]], [[tests/v2/Input/t29.in|t29.in]], [[tests/v2/Input/t32.in|t32.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2492,9 +2243,6 @@ The internal representation of this array is as follows: for each wavevector,
 the three first numbers are stored in the array qph1l(3,nph1l), while the
 fourth is stored in the array qnrml1(nph1l).
 
-
-* * *
-
 ## **qph2l** 
 
 
@@ -2504,7 +2252,7 @@ fourth is stored in the array qnrml1(nph1l).
 *Dimensions:* (4,[[anaddb:nph2l]])  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [21/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_5.in|trf2_5.in]]
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t18.in|t18.in]], [[tests/v2/Input/t19.in|t19.in]], [[tests/v2/Input/t20.in|t20.in]], [[tests/v2/Input/t21.in|t21.in]], [[tests/v2/Input/t22.in|t22.in]], [[tests/v2/Input/t24.in|t24.in]], [[tests/v2/Input/t25.in|t25.in]]
     - v4:  [[tests/v4/Input/t50.in|t50.in]], [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t68.in|t68.in]], [[tests/v4/Input/t70.in|t70.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2536,9 +2284,6 @@ The internal representation of this array is as follows: for each wavevector,
 the three first numbers are stored in the array qph2l(3,nph2l), while the
 fourth is stored in the array qnrml2(nph2l).
 
-
-* * *
-
 ## **qrefine** 
 
 
@@ -2548,7 +2293,7 @@ fourth is stored in the array qnrml2(nph2l).
 *Dimensions:* (3)  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v6:  [[tests/v6/Input/t81.in|t81.in]]
 
 
@@ -2564,9 +2309,6 @@ with a 2x2x2 grid). The dynamical matrices are interpolated onto the full
 imposed, before proceeding to normal band structure and other interpolations.
 Should implement Gaal-Nagy's algorithm in PRB **73** 014117.
 
-
-* * *
-
 ## **ramansr** 
 
 
@@ -2576,7 +2318,7 @@ Should implement Gaal-Nagy's algorithm in PRB **73** 014117.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]]
@@ -2599,9 +2341,6 @@ imposed by giving each atom a part of the discrepancy.
 
 For the time being, **ramansr**=1 is the preferred choice.
 
-
-* * *
-
 ## **relaxat** 
 
 
@@ -2611,7 +2350,7 @@ For the time being, **ramansr**=1 is the preferred choice.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
@@ -2622,9 +2361,6 @@ For the time being, **ramansr**=1 is the preferred choice.
 If **relaxat**=1, relax atomic positions during a structural relaxation at
 constrained polarization. See [[anaddb:polflag]].
 
-
-* * *
-
 ## **relaxstr** 
 
 
@@ -2634,7 +2370,7 @@ constrained polarization. See [[anaddb:polflag]].
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [3/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t74.in|t74.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
@@ -2645,9 +2381,6 @@ constrained polarization. See [[anaddb:polflag]].
 If **relaxat**=1, relax lattice constants (lengths/angles) during a structural
 relaxation at constrained polarization. See [[anaddb:polflag]].
 
-
-* * *
-
 ## **rfmeth** 
 
 
@@ -2657,7 +2390,7 @@ relaxation at constrained polarization. See [[anaddb:polflag]].
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [8/66] in all anaddb tests, [2/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [8/66] in all anaddb tests, [2/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tffield_3.in|tffield_3.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
@@ -2677,9 +2410,6 @@ For more detailed explanations, see [[help_abinit]] If the information in the
 DDB is available, always use the option 2. If not, you can try option 1, which
 is less accurate.
 
-
-* * *
-
 ## **rifcsph** 
 
 
@@ -2689,7 +2419,7 @@ is less accurate.
 *Dimensions:* scalar  
 *Default value:* zero  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t95.in|t95.in]]
 
 
@@ -2705,9 +2435,6 @@ This number defines the atoms for which the short range part of the
 interatomic force constants, after imposition of the acoustic sum rule, will
 not be put to zero.
 
-
-* * *
-
 ## **selectz** 
 
 
@@ -2717,7 +2444,7 @@ not be put to zero.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
     - v8:  [[tests/v8/Input/t49.in|t49.in]], [[tests/v8/Input/t50.in|t50.in]], [[tests/v8/Input/t64.in|t64.in]]
@@ -2740,9 +2467,6 @@ calculations.
 Note: this is for analysis the effect of anisotropy in the effective charge.
 The result with non-zero **selectz** are unphysical.
 
-
-* * *
-
 ## **symdynmat** 
 
 
@@ -2753,7 +2477,7 @@ The result with non-zero **selectz** are unphysical.
 *Default value:* 1  
 *Comment:* (was 0 before v5.3)  
 
-??? note "Test list (click to open) (Moderately used, [11/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [11/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v2:  [[tests/v2/Input/t13.in|t13.in]], [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t39.in|t39.in]]
     - v5:  [[tests/v5/Input/t88.in|t88.in]], [[tests/v5/Input/t89.in|t89.in]], [[tests/v5/Input/t90.in|t90.in]], [[tests/v5/Input/t91.in|t91.in]], [[tests/v5/Input/t92.in|t92.in]], [[tests/v5/Input/t93.in|t93.in]], [[tests/v5/Input/t94.in|t94.in]], [[tests/v5/Input/t95.in|t95.in]]
 
@@ -2772,9 +2496,6 @@ interpolation procedure based on interatomic force constant is used: there are
 some slight symmetry breaking effects. The latter can be bypassed by this
 additional symmetrization.
 
-
-* * *
-
 ## **symgkq** 
 
 
@@ -2784,7 +2505,7 @@ additional symmetrization.
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v5:  [[tests/v5/Input/t90.in|t90.in]]
 
 
@@ -2796,9 +2517,6 @@ If **symgkq** is equal to 1, the electron-phonon matrix elements are
 symmetrized over the small group of the q-point they correspond to. This
 should always be used, except for debugging or test purposes.
 
-
-* * *
-
 ## **targetpol** 
 
 
@@ -2808,7 +2526,7 @@ should always be used, except for debugging or test purposes.
 *Dimensions:* (3)  
 *Default value:* 0.0  
 
-??? note "Test list (click to open) (Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [2/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v4:  [[tests/v4/Input/t71.in|t71.in]], [[tests/v4/Input/t77.in|t77.in]]
 
 
@@ -2819,9 +2537,6 @@ should always be used, except for debugging or test purposes.
 Target value of the polarization in cartesian coordinates and in C/m^2. See
 [[anaddb:polflag]].
 
-
-* * *
-
 ## **telphint** 
 
 
@@ -2831,7 +2546,7 @@ Target value of the polarization in cartesian coordinates and in C/m^2. See
 *Dimensions:* scalar  
 *Default value:* 1  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_5.in|teph_5.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]]
     - v5:  [[tests/v5/Input/t92.in|t92.in]]
     - v6:  [[tests/v6/Input/t57.in|t57.in]], [[tests/v6/Input/t59.in|t59.in]], [[tests/v6/Input/t69.in|t69.in]]
@@ -2848,9 +2563,6 @@ phonon quantities.
   * 1 = Gaussian smearing (see [[anaddb:elphsmear]])
   * 2 = uniformly weighted band window between [[anaddb:ep_b_min]] and [[anaddb:ep_b_max]], for all k-points
 
-
-* * *
-
 ## **temperinc** 
 
 
@@ -2860,7 +2572,7 @@ phonon quantities.
 *Dimensions:* scalar  
 *Default value:* 100.0  
 
-??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2883,9 +2595,6 @@ anaddb will be important. For weakly bounded systems (e.g. Van der Waals
 solids), such anharmonic effects might be important already at room
 temperature.
 
-
-* * *
-
 ## **tempermin** 
 
 
@@ -2895,7 +2604,7 @@ temperature.
 *Dimensions:* scalar  
 *Default value:* 100.0  
 
-??? note "Test list (click to open) (Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [15/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/teph_6.in|teph_6.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2919,9 +2628,6 @@ effects not accounted in the harmonic approximation implemented in anaddb will
 be important. For weakly bounded systems (e.g. Van der Waals solids), such
 anharmonic effects might be important already at room temperature.
 
-
-* * *
-
 ## **thmflag** 
 
 
@@ -2931,7 +2637,7 @@ anharmonic effects might be important already at room temperature.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [18/66] in all anaddb tests, [3/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [18/66] in all anaddb tests, [3/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/tdepes_2.in|tdepes_2.in]], [[tests/tutorespfn/Input/tnlo_5.in|tnlo_5.in]], [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2967,9 +2673,6 @@ Input variables that may be needed if this flag is activated:
 [[anaddb:tempermin]], as well as the wavevector grid number 2 definition,
 [[anaddb:ng2qpt]], [[anaddb:ngrids]], [[anaddb:q2shft]].
 
-
-* * *
-
 ## **thmtol** 
 
 
@@ -2979,7 +2682,7 @@ Input variables that may be needed if this flag is activated:
 *Dimensions:* scalar  
 *Default value:* 0.05  
 
-??? note "Test list (click to open) (Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [7/66] in all anaddb tests, [1/10] in anaddb tutorials"
     - tutorespfn:  [[tests/tutorespfn/Input/trf2_7.in|trf2_7.in]]
     - v2:  [[tests/v2/Input/t15.in|t15.in]], [[tests/v2/Input/t16.in|t16.in]]
     - v4:  [[tests/v4/Input/t54.in|t54.in]], [[tests/v4/Input/t71.in|t71.in]]
@@ -2996,9 +2699,6 @@ determine when the series of channel widths with which the DOS is calculated
 can be stopped, i.e. the mean of the relative change going from one grid to
 the next bigger is smaller than **thmtol**.
 
-
-* * *
-
 ## **use_k_fine** 
 
 
@@ -3008,7 +2708,7 @@ the next bigger is smaller than **thmtol**.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Rarely used, [0/66] in all anaddb tests, [0/10] in anaddb tutorials"
 
 
 
@@ -3020,9 +2720,6 @@ version, both eigenvalues (densergridGKK, obtained from mrggkk with only the
 GS WFK file) and electronic velocities(GKK files from DDK calculation) are
 needed. Note that the coarse k-grid must be a subset of the fine k-grid.
 
-
-* * *
-
 ## **vs_qrad_tolkms** 
 
 
@@ -3032,7 +2729,7 @@ needed. Note that the coarse k-grid must be a subset of the fine k-grid.
 *Dimensions:* (2)  
 *Default value:* 2*0.0d0  
 
-??? note "Test list (click to open) (Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials)"
+??? note "Test list (click to open). Moderately used, [1/66] in all anaddb tests, [0/10] in anaddb tutorials"
     - v8:  [[tests/v8/Input/t45.in|t45.in]]
 
 
@@ -3050,7 +2747,4 @@ increased until the integration converges twice withing the tolerance
 specified by the user (typical values for tolkms: 0.05 km/s).
 
 The default values will not work.
-
-
-* * *
 

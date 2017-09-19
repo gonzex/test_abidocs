@@ -21,7 +21,7 @@ bse input variables to be used in the input file for the abinit executable.
 *Default value:* 2  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -38,9 +38,6 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
   * 2 =&gt; Haydock iterative method. The macroscopic dielectric function is obtained by iterative applications of the Hamiltonian on a set of vectors in the electron-hole space. Advantages: It is less memory demanding and usually faster than the direct diagonalization provided that [[zcut]] is larger than the typical energy spacing of the eigenvalues. Drawbacks: It is an iterative method therefore the convergence with respect to bs_haydock_niter should be checked. It is not possible to have direct information on the exciton spectrum, oscillator strengths and excitonic wave functions. For the time being [[bs_algorithm]]=2 cannot be used for calculations in which the coupling term is included (Tamm-Dancoff approximation). 
   * 3 =&gt; Conjugate-gradient method. This method allows to find the few first excitonic eigenvalues. Only available for resonant calculations (Tamm-Dancoff approximation). 
 
-
-* * *
-
 ## **bs_calctype** 
 
 
@@ -51,7 +48,7 @@ the macroscopic dielectric function. Possible values are 1, 2 or 3:
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -67,9 +64,6 @@ Possible values are 1,2,3.
   * 2 =&gt; The transition space is constructed with Kohn-Sham orbitals but the energies are read from the external GW file 
   * 3 =&gt; QP amplitudes and energies will be read from the QPS file and used to construct H_ex. Not coded yet because &lt;\psi|r|\psj&gt;^QP should be calculated taking into account the non-locality of the self-energy in the commutator [H,r]. 
 
-
-* * *
-
 ## **bs_coulomb_term** 
 
 
@@ -80,7 +74,7 @@ Possible values are 1,2,3.
 *Default value:* 11  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -105,9 +99,6 @@ The second digit (B) can assume the values 0,1:
   * 0 =&gt; Use a diagonal approximation for W_GG' (mainly used for accelerating convergence studies). 
   * 1 =&gt; The Coulomb term is correctly evaluated using the truly non-local W(r,r'). 
 
-
-* * *
-
 ## **bs_coupling** 
 
 
@@ -118,7 +109,7 @@ The second digit (B) can assume the values 0,1:
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -134,9 +125,6 @@ of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
   * 0 =&gt; The coupling block is neglected (the so-called Tamm-Dancoff approximation). The code runs faster and the Hamiltonian matrix requires less memory (factor 4). It is a good approximation for the absorption spectrum which only requires the knowledge of Im(\epsilon). The reliability of this approximation should be tested in the case of EELF calculations. 
   * 1 =&gt; The coupling term is included (non Tamm-Dancoff approxmation). 
 
-
-* * *
-
 ## **bs_eh_cutoff** 
 
 
@@ -147,7 +135,7 @@ of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
 *Default value:* [-inf, inf]  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials"
 
 
 
@@ -157,9 +145,6 @@ of the Bethe-Salpeter Hamiltonian. Possible values are 0,1.
 It is used to define a cutoff in the e-h basis set. Only those transitions
 whose energy is between bs_eh_window(1) and bs_eh_window(2) will be considered
 during the construction of the e-h Hamiltonian.
-
-
-* * *
 
 ## **bs_exchange_term** 
 
@@ -171,7 +156,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -184,9 +169,6 @@ during the construction of the e-h Hamiltonian.
   * 0 =&gt;The exchange term is not calculated. This is equivalent to neglecting local field effects in the macroscopic dielectric function.
   * 1 =&gt;The exchange term is calculated and added to the excitonic Hamiltonian. 
 
-
-* * *
-
 ## **bs_freq_mesh** 
 
 
@@ -198,7 +180,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* [0.0, 0.0, 0.01]  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [16/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [16/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -214,9 +196,6 @@ during the construction of the e-h Hamiltonian.
 
 **bs_freq_mesh(3)** gives the step of the linear mesh used for evaluating the macroscopic dielectric function. 
 
-
-* * *
-
 ## **bs_hayd_term** 
 
 
@@ -227,7 +206,7 @@ during the construction of the e-h Hamiltonian.
 *Default value:* 1  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -242,9 +221,6 @@ by smoothing the oscillation in the high energy part of the spectrum
   * 0 =&gt; No terminator. The contribution given by the terms missing in the Lanczos chain are set to zero. 
   * 1 =&gt; Use the terminator function. The particular expression depends on the type of calculation: In the resonant-only case, the a_i and b_i coefficients for i &gt; niter, are replaced by their values at i=niter. Even the coupling block is included, the terminator function described in D. Rocca, R. Gebauer, Y. Saad, S. Baroni, J. Chem. Phys. 128, 154105 (2008) is used. 
 
-
-* * *
-
 ## **bs_haydock_niter** 
 
 
@@ -255,7 +231,7 @@ by smoothing the oscillation in the high energy part of the spectrum
 *Default value:* 100  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [14/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -270,9 +246,6 @@ calculate the macroscopic dielectric function. The iterative algorithm stops
 when the difference between two consecutive evaluations of the optical spectra
 is less than [[bs_haydock_tol]].
 
-
-* * *
-
 ## **bs_haydock_tol** 
 
 
@@ -283,7 +256,7 @@ is less than [[bs_haydock_tol]].
 *Default value:* [0.02, 0]  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]]==2  
 
-??? note "Test list (click to open) (Moderately used, [14/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [14/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -308,9 +281,6 @@ entire frequency range (mild criterion).
   * 1 -&gt; only the real part 
   * 2 -&gt; only the imaginary part 
 
-
-* * *
-
 ## **bs_interp_kmult** 
 
 
@@ -321,7 +291,7 @@ entire frequency range (mild criterion).
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -333,9 +303,6 @@ entire frequency range (mild criterion).
 mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 ** * [[ngkpt]] of the coarse mesh.
 
-
-* * *
-
 ## **bs_interp_m3_width** 
 
 
@@ -346,7 +313,7 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 *Default value:* 1.0  
 *Only relevant if:* [[bs_interp_mode]]==3 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t34.in|t34.in]]
 
 
@@ -356,9 +323,6 @@ mesh in the interpolation. [[ngkpt]] of the dense mesh = ** bs_interp_kmult(:)
 
 Defines the width of the region where divergence treatment is applied for BSE
 interpolation
-
-
-* * *
 
 ## **bs_interp_method** 
 
@@ -370,7 +334,7 @@ interpolation
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -383,9 +347,6 @@ interpolation
   * 0 =&gt; Interpolate using Y. Gillet technique with 8 neighbours (see Comput. Phys. Commun. 203, 83 (2016)) 
   * 1 =&gt; Interpolation using Rohlfing & Louie technique (see above-mentioned article and Phys. Rev. B 62, 4927 (2000)) 
 
-
-* * *
-
 ## **bs_interp_mode** 
 
 
@@ -396,7 +357,7 @@ interpolation
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -411,9 +372,6 @@ interpolation
   * 2 =&gt; Treatment of the divergence on the whole set of dense k-points 
   * 3 =&gt; Treatment of the divergence along the diagonal in k-space and simple interpolation elsewhere. 
 
-
-* * *
-
 ## **bs_interp_prep** 
 
 
@@ -424,7 +382,7 @@ interpolation
 *Default value:* 0  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t31.in|t31.in]]
 
 
@@ -436,9 +394,6 @@ interpolation
 method 2 or method 3. It generates the decomposition of BSR in a,b,c
 coefficients used for the interpolation.
 
-
-* * *
-
 ## **bs_interp_rl_nb** 
 
 
@@ -449,7 +404,7 @@ coefficients used for the interpolation.
 *Default value:* 1  
 *Only relevant if:* [[bs_interp_mode]] > 0 and [[bs_algorithm]]==2 and [[bs_interp_method]] == 1 and [[bs_coupling]]==0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t35.in|t35.in]]
 
 
@@ -458,9 +413,6 @@ coefficients used for the interpolation.
 
 
 Gives the index of the neighbour that is used for Rohlfing & Louie method
-
-
-* * *
 
 ## **bs_loband** 
 
@@ -472,7 +424,7 @@ Gives the index of the neighbour that is used for Rohlfing & Louie method
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99  
 
-??? note "Test list (click to open) (Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [17/920] in all abinit tests, [3/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]], [[tests/paral/Input/t76.in|t76.in]]
     - tutorial:  [[tests/tutorial/Input/tbs_2.in|tbs_2.in]], [[tests/tutorial/Input/tbs_3.in|tbs_3.in]], [[tests/tutorial/Input/tbs_4.in|tbs_4.in]]
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t14.in|t14.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t31.in|t31.in]], [[tests/v67mbpt/Input/t32.in|t32.in]], [[tests/v67mbpt/Input/t33.in|t33.in]], [[tests/v67mbpt/Input/t34.in|t34.in]], [[tests/v67mbpt/Input/t35.in|t35.in]], [[tests/v67mbpt/Input/t50.in|t50.in]], [[tests/v67mbpt/Input/t51.in|t51.in]]
@@ -488,9 +440,6 @@ one must provide two separated indices for spin up and spin down. An
 additional cutoff energy can be applied by means of the bs_eh_window input
 variable.
 
-
-* * *
-
 ## **bs_nstates** 
 
 
@@ -501,7 +450,7 @@ variable.
 *Default value:* 0  
 *Only relevant if:* [[optdriver]] == 99 and [[bs_algorithm]] in [2,3]  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - v67mbpt:  [[tests/v67mbpt/Input/t11.in|t11.in]], [[tests/v67mbpt/Input/t16.in|t16.in]], [[tests/v67mbpt/Input/t29.in|t29.in]], [[tests/v67mbpt/Input/t50.in|t50.in]]
 
 
@@ -514,7 +463,4 @@ the direct diagonalization of the excitonic matrix or in the conjugate-
 gradient method. The number of states should be sufficiently large for a
 correct description of the optical properties in the frequency range of
 interest.
-
-
-* * *
 

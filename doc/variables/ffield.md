@@ -22,7 +22,7 @@ ffield input variables to be used in the input file for the abinit executable.
 *Default value:* *0.0d0  
 *Only relevant if:* [[usepawu]] /= 0 and [[natvshift]] in [5,7]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]]
 
 
@@ -41,9 +41,6 @@ spin-down channel. In the case of f states, the same ordering applies, for
 sets of 7 numbers, corresponding to m=-3 to m=+3.  
 [[usepawu]] should be non-zero, [[lpawu]] should be 2 or 3.
 
-
-* * *
-
 ## **bdberry** 
 
 
@@ -54,7 +51,7 @@ sets of 7 numbers, corresponding to m=-3 to m=+3.
 *Default value:* 4*0  
 *Only relevant if:* [[berryopt]] in [1, 2, 3] and [[nberry]] > 0  
 
-??? note "Test list (click to open) (Rarely used, [7/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [7/920] in all abinit tests, [1/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_5.in|telast_5.in]]
     - v4:  [[tests/v4/Input/t66.in|t66.in]]
@@ -77,9 +74,6 @@ Presently, [[bdberry]] MUST be initialized by the user in case of a Berry
 phase calculation with [[berryopt]] = 1, 2, or 3: the above-mentioned default
 will cause an early exit.
 
-
-* * *
-
 ## **berryopt** 
 
 
@@ -89,7 +83,7 @@ will cause an early exit.
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Moderately used, [40/920] in all abinit tests, [7/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [40/920] in all abinit tests, [7/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]], [[tests/seq/Input/tsv4_55.in|tsv4_55.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv4_80.in|tsv4_80.in]], [[tests/seq/Input/tsv5_112.in|tsv5_112.in]], [[tests/seq/Input/tsv5_113.in|tsv5_113.in]], [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_123.in|tsv6_123.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]], [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/telast_4.in|telast_4.in]], [[tests/tutorespfn/Input/telast_5.in|telast_5.in]], [[tests/tutorespfn/Input/tffield_1.in|tffield_1.in]], [[tests/tutorespfn/Input/tffield_2.in|tffield_2.in]], [[tests/tutorespfn/Input/tffield_4.in|tffield_4.in]], [[tests/tutorespfn/Input/tffield_5.in|tffield_5.in]], [[tests/tutorespfn/Input/tffield_6.in|tffield_6.in]]
@@ -149,9 +143,6 @@ In case of finite electric and displacement field calculations
 ([[berryopt]]=4,6,7,14,16,17), see also the input variables [[berrysav]],
 [[dfield]], [[red_dfield]], [[red_efield]], [[ddamp]]
 
-
-* * *
-
 ## **berrysav** 
 
 
@@ -161,7 +152,7 @@ In case of finite electric and displacement field calculations
 *Dimensions:* scalar  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_124.in|tsv6_124.in]]
 
 
@@ -171,9 +162,6 @@ In case of finite electric and displacement field calculations
 
   * 0 =&gt; for finite electric field calculation ([[berryopt]]=4/14), the polarization branch will be chosen on each iteration from (-pi, pi); for finite electric displacement field calculation([[berryopt]]=6/7/16/17), the polarization will be chosen to minimize the internal energy. 
   * 1 =&gt; the polarization will be kept in the same branch on each iteration. At the end of the run, a file "POLSAVE" will be saved containing the reduced polarization in atomic units. Note: Make sure that "POLSAVE" is empty or it does not exist before the calculation, or else that it specifies the desired polarization branch. 
-
-
-* * *
 
 ## **berrystep** 
 
@@ -185,7 +173,7 @@ In case of finite electric and displacement field calculations
 *Default value:* 1  
 *Only relevant if:* 0 > [[berryopt]]  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t20.in|t20.in]]
 
 
@@ -207,9 +195,6 @@ all the multiple-step berry phase from the single-step to the
 the single-step berry phase. Use with care: while experience is still to be
 gained with this procedure, the outlook is promising.
 
-
-* * *
-
 ## **bfield** 
 
 
@@ -219,7 +204,7 @@ gained with this procedure, the outlook is promising.
 *Dimensions:* (3)  
 *Default value:* 3*0.0  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - v6:  [[tests/v6/Input/t43.in|t43.in]]
 
@@ -231,9 +216,6 @@ gained with this procedure, the outlook is promising.
 Perform finite magnetic field calculation.  
 **THIS CODE IS UNDER DEVELOPMENT AND IS NOT READY FOR USE.**
 
-
-* * *
-
 ## **ddamp** 
 
 
@@ -244,7 +226,7 @@ Perform finite magnetic field calculation.
 *Default value:* 0.1  
 *Only relevant if:* [[berryopt]] = 6 or 16  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -263,9 +245,6 @@ If you have difficulty getting convergence, try to reduce this value or reduce
 maxestep. This parameter is used in finite electric displacement field
 calculations (berryopt=6,16,17).
 
-
-* * *
-
 ## **dfield** 
 
 
@@ -276,7 +255,7 @@ calculations (berryopt=6,16,17).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 6, [[efield]]  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -288,9 +267,6 @@ In case [[berryopt]]=6, [[dfield]] specifies the (unreduced) finite electric
 displacement field vector, in atomic units, that is to be imposed as a
 constraint during the calculation.
 
-
-* * *
-
 ## **efield** 
 
 
@@ -301,7 +277,7 @@ constraint during the calculation.
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 4 or 6  
 
-??? note "Test list (click to open) (Moderately used, [22/920] in all abinit tests, [1/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [1/116] in abinit tutorials"
     - paral:  [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t06.in|t06.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]], [[tests/paral/Input/t07.in|t07.in]]
     - seq:  [[tests/seq/Input/tsv4_55.in|tsv4_55.in]], [[tests/seq/Input/tsv4_78.in|tsv4_78.in]], [[tests/seq/Input/tsv4_80.in|tsv4_80.in]], [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_123.in|tsv6_123.in]], [[tests/seq/Input/tsv6_124.in|tsv6_124.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]], [[tests/seq/Input/tsv7_70.in|tsv7_70.in]]
     - tutorespfn:  [[tests/tutorespfn/Input/tffield_6.in|tffield_6.in]]
@@ -334,9 +310,6 @@ e_Cb is the electronic charge in Coulomb (1.60217653e-19), eps0 is the
 electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 (0.5291772108e-10).
 
-
-* * *
-
 ## **jfielddir** 
 
 
@@ -347,7 +320,7 @@ electric constant (8.854187817d-12 F/m), and a0 is the Bohr radius in meter
 *Default value:* 3*0  
 *Only relevant if:* [[berryopt]] = 17  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -374,9 +347,6 @@ have ebar_3, which is a good guess for a. Then do another single run for fixed
 ebar calculation ([[red_efieldbar]]=(0 0 0)), from the final results you will
 have d_1,d_2, these are good guesses for b, c.
 
-
-* * *
-
 ## **kberry** 
 
 
@@ -387,7 +357,7 @@ have d_1,d_2, these are good guesses for b, c.
 *Default value:* *0  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
-??? note "Test list (click to open) (Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [5/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]], [[tests/seq/Input/tsv3_05.in|tsv3_05.in]]
 
 
@@ -416,9 +386,6 @@ irreducible part of the grid, with [[kptopt]] equal to 1, and then use these
 converged wavefunctions in the entire Brillouin zone, by reading them to
 initialize the [[kptopt]]=3 computation.
 
-
-* * *
-
 ## **maxestep** 
 
 
@@ -429,7 +396,7 @@ initialize the [[kptopt]]=3 computation.
 *Default value:* 0.005  
 *Only relevant if:* [[berryopt]] = 6, 16, or 17  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -442,9 +409,6 @@ electric field after each SCF iteration. When the calculation is difficult to
 converge, try reducing this value or reducing [[ddamp]]. This variable is used
 in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 
-
-* * *
-
 ## **natvshift** 
 
 
@@ -455,7 +419,7 @@ in finite electric displacement field calculations ([[berryopt]]=6,16,17).
 *Default value:* 0  
 *Only relevant if:* [[usepawu]] /= 0, [[atvshift]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v5:  [[tests/v5/Input/t14.in|t14.in]], [[tests/v5/Input/t15.in|t15.in]]
 
 
@@ -468,9 +432,6 @@ array [[atvshift]]. If non-zero, only two possibilities exist : 5 for d states
 (with [[lpawu]]=2), and 7 for f states (with [[lpawu]]=3). If non-zero, one
 should define [[usepawu]], [[lpawu]] and [[atvshift]].
 
-
-* * *
-
 ## **nberry** 
 
 
@@ -481,7 +442,7 @@ should define [[usepawu]], [[lpawu]] and [[atvshift]].
 *Default value:* 1  
 *Only relevant if:* [[berryopt]] = 1, 2, or 3  
 
-??? note "Test list (click to open) (Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv2_82.in|tsv2_82.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv3_04.in|tsv3_04.in]]
 
 
@@ -508,9 +469,6 @@ for which a Berry phase is computed.
 For the [[berryopt]] = 1, 2, and 3 cases, spinor wavefunctions are not
 allowed, nor are parallel computations.
 
-
-* * *
-
 ## **polcen** 
 
 
@@ -520,7 +478,7 @@ allowed, nor are parallel computations.
 *Dimensions:* (3)  
 *Default value:* 3*0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_126.in|tsv6_126.in]]
 
 
@@ -535,9 +493,6 @@ coordinates, in atomic units) in the input file. See Eq.(24) in the Suppl. of
 Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 (2009))
 
-
-* * *
-
 ## **qprtrb** 
 
 
@@ -549,7 +504,7 @@ Nat. Phys. (M. Stengel, N.A. Spaldin and D. Vanderbilt, Nat. Phys. 5,304
 *Default value:* [0, 0, 0]  
 *Only relevant if:* [[vprtrb]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t01.in|t01.in]], [[tests/v6/Input/t02.in|t02.in]]
 
 
@@ -561,9 +516,6 @@ Gives the wavevector, in units of reciprocal lattice primitive translations,
 of a perturbing potential of strength [[vprtrb]]. See [[vprtrb]] for more
 explanation.
 
-
-* * *
-
 ## **red_dfield** 
 
 
@@ -574,7 +526,7 @@ explanation.
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16, [[red_efield]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -589,9 +541,6 @@ direction is determined by [[red_dfield]]. It must be given in atomic units.
 [[red_dfield]] is defined via Eq.(26) in the Supplement of M. Stengel, N.A.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
-
-* * *
-
 ## **red_efield** 
 
 
@@ -602,7 +551,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 16  
 
-??? note "Test list (click to open) (Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [3/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_122.in|tsv6_122.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -617,9 +566,6 @@ initial electric field used on the first iteration, in atomic units.
 [[red_efield]] is defined via Eq.(25) in the Supplement of M. Stengel, N.A.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
-
-* * *
-
 ## **red_efieldbar** 
 
 
@@ -630,7 +576,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Default value:* 3*0.0  
 *Only relevant if:* [[berryopt]] = 14  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - seq:  [[tests/seq/Input/tsv6_121.in|tsv6_121.in]], [[tests/seq/Input/tsv6_125.in|tsv6_125.in]]
 
 
@@ -645,9 +591,6 @@ by red_efieldbar. It must be given in atomic units.
 [[red_efieldbar]] is defined via Eq.(28) in the Supplement of M. Stengel, N.A.
 Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 
-
-* * *
-
 ## **spinmagntarget** 
 
 
@@ -657,7 +600,7 @@ Spaldin and D. Vanderbilt, Nat. Phys. 5,304 (2009).
 *Dimensions:* scalar  
 *Default value:* -99.99  
 
-??? note "Test list (click to open) (Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Moderately used, [33/920] in all abinit tests, [0/116] in abinit tutorials"
     - mpiio:  [[tests/mpiio/Input/t22.in|t22.in]], [[tests/mpiio/Input/t25.in|t25.in]]
     - paral:  [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t05.in|t05.in]], [[tests/paral/Input/t22.in|t22.in]], [[tests/paral/Input/t25.in|t25.in]], [[tests/paral/Input/t26.in|t26.in]], [[tests/paral/Input/t30.in|t30.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t62.in|t62.in]], [[tests/paral/Input/t94.in|t94.in]]
     - seq:  [[tests/seq/Input/tsv2_81.in|tsv2_81.in]], [[tests/seq/Input/tsv3_03.in|tsv3_03.in]], [[tests/seq/Input/tsv4_90.in|tsv4_90.in]]
@@ -696,9 +639,6 @@ Note : for the time being, only the spin down Fermi energy is written out in
 the main output file. In the fixed magnetic moment case, it differs from the
 spin up Fermi energy.
 
-
-* * *
-
 ## **vprtrb** 
 
 
@@ -710,7 +650,7 @@ spin up Fermi energy.
 *Default value:* [0.0, 0.0]  
 *Only relevant if:* [[qprtrb]]  
 
-??? note "Test list (click to open) (Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t01.in|t01.in]], [[tests/v6/Input/t02.in|t02.in]]
 
 
@@ -727,9 +667,6 @@ of the perturbation, which is added to the local potential, is:
   * ([[vprtrb]](1)+I*[[vprtrb]](2))/2 at G=[[qprtrb]] and 
   * ([[vprtrb]](1)-I*[[vprtrb]](2))/2 at G=-[[qprtrb]] (see [[qprtrb]] also). 
 
-
-* * *
-
 ## **zeemanfield** 
 
 
@@ -740,7 +677,7 @@ of the perturbation, which is added to the local potential, is:
 *Dimensions:* (3)  
 *Default value:* 0  
 
-??? note "Test list (click to open) (Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials)"
+??? note "Test list (click to open). Rarely used, [1/920] in all abinit tests, [0/116] in abinit tutorials"
     - v6:  [[tests/v6/Input/t17.in|t17.in]]
 
 
@@ -751,7 +688,4 @@ of the perturbation, which is added to the local potential, is:
 Give the value of the Zeeman field, H, acting on the spinorial wavefunctions.
 Note that Tesla are admitted. This sets the magnitude of mu_0*H, in Tesla,
 with H in Amperes/metre.
-
-
-* * *
 

@@ -1,28 +1,36 @@
-/* wikilink style
-a.wikilink:link {
-    text-decoration: none;
+/*
+a:link {
+    color: blue;
 }
 
-a.wikilink:visited {
-    text-decoration: none;
-    color: red;
-}
 
-a.wikilink:hover {
+a:visited {
+    color: purple;
+}
+*/
+
+/* link style
+a.link:hover {
     text-decoration: underline;
 }
 
-a.wikilink:active {
+a.link:active {
     text-decoration: underline;
 }
 */
 
-a.codevar-link {
+
+/* wikilink style */
+a.codevar-wikilink, a.abifile-wikilink {
+    /* 
     font-family: 'Ubuntu Mono', monospace;
+     * */
+    font-family: Inconsolata, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    */
 }
 
 /*
-a.citation-link {
+a.citation-wikilink {
     font-family: 'Ubuntu Mono', monospace;
 }
 */
@@ -39,7 +47,7 @@ a[href^="https://"]:after {
     font-weight: normal;
     text-decoration: inherit;
     margin: 0 0 0 -3px;
-    font-size: 8px;
+    font-size: 7px;
     padding-bottom: 0.5em;
     position: absolute;
     display: inline-block;
@@ -134,7 +142,9 @@ details {
 }
 
 details[open] > summary::before {
-  content: "\25BC";
+  /* content: "\25BC"; */
+  content: "\f150";
+  font-family: FontAwesome;
 }
 
 details summary {
@@ -147,7 +157,9 @@ details summary:focus {
 }
 
 details summary::before {
-  content: "\25B6";
+  /* * content: "\25B6"; */
+  content: "\f152";
+  font-family: FontAwesome;
   padding-right: 0.5em;
 }
 
@@ -309,64 +321,79 @@ details.no-details:not([open]) summary {
     margin-top: 7px;
 }
 
-/* Style Bootstrap buttons
-.btn {
-  -moz-user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857;
-  margin-bottom: 0;
-  padding: 6px 12px;
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
+
+/* 
+ * Based on example 5 of https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/ 
+
+.md-main {
+	counter-reset: section-1, section-2, section-3, section-4;
+}
+ * */
+
+.md-main h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    /*
+    counter-increment: section-1;
+    counter-reset: section-2 section-3 section-4;
+    */
 }
 
-.btn-lg {
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 1.33333;
-  padding: 10px 16px;
+.md-main h2 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    /*
+    counter-increment: section-2;
+    counter-reset: section-3 section-4;
+    */
 }
 
-.btn-primary:hover {
-  background-color: #fff;
-  color: #152836;
+.md-main h3 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    /*
+    counter-increment: section-3;
+    counter-reset: section-4;
+    */
 }
 
-.btn-primary {
-  background-color: #152836;
-  border-color: #0e1a24;
-  color: #ffffff;
+.md-main h4 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    /* counter-increment: section-4; */
 }
-
-.btn-primary {
-  border-color: #eeeeee;
-  color: #eeeeee;
-  transition: color 0.1s ease 0s, background-color 0.15s ease 0s;
-}
+/*
 */
 
 /*
-.pace .pace-progress {
-  background: #ffffff;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  /*right: 100%;*/
-  width: 100%;
-  height: 10px;
-}
+.md-main h1:before { content: counter(section-1) ". "; }
+.md-main h2:before { content: counter(section-1) "." counter(section-2) " "; }
+.md-main h3:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
+.md-main h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
 */
 
-/*
-.md-tabs {
-  position: fixed;
+
+/* CUSTOM POPOVERS 
+.popover {background-color: #bfd8ea;}
+.popover-content {background-color: #bfd8ea;}
+.popover.right .arrow:after {
+  border-top-color: #bfd8ea;
+  border-bottom-color: #bfd8ea;
+  background-color: #bfd8ea;
 }
 */
