@@ -5,6 +5,7 @@ pymdown-extensions
 python-markdown-math
 pyyaml>=3.11
 pygments
+pybtex
 #pytest
 #networkx
 #plotly
