@@ -233,13 +233,13 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.magiclink:
-      base_repo_url: https://github.com/abinit/abinit
-      repo_url_shortener: true
+        base_repo_url: https://github.com/abinit/abinit
+        repo_url_shortener: true
   - pymdownx.mark
   - pymdownx.smartsymbols:
-      registered: false
-      copyright: false
-      care_of: false
+        registered: false
+        copyright: false
+        care_of: false
   - pymdownx.superfences
   #- pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
@@ -272,7 +272,6 @@ extra_css:
     - css/gallery.css
     #- css/auto_numbering.css
     #- css/my_codehilite.css
-    #- https://unpkg.com/nprogress@0.2.0/nprogress.css
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js
@@ -286,8 +285,8 @@ extra:
     feature:
         tabs: true
     palette:
-        primary: indigo
-        accent: indigo
+        primary: orange
+        accent: orange
     #font:
         #fonttext: 'Ubuntu'
         #fontcode: 'Ubuntu Mono'

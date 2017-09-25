@@ -347,8 +347,10 @@ Change the input yaml files or the python code
         if meta is None: meta = {}
         assert "rpath" not in meta
         meta["rpath"] = rpath
+        meta = {k.encode("ascii", errors="strict"): meta[k] for k in meta}
         # FIXME This is not portable (py2.7 issue)
         s = yaml.dump(meta, indent=4, default_flow_style=False).strip()
+        s = s.replace(" !!python/unicode", "")
         #s = yaml.safe_dump(meta).strip()
         mdf = io.open(path, "wt", encoding="utf-8")
         mdf.write("---\n%s\n---\n" % s)
