@@ -275,6 +275,9 @@ class Website(object):
         for t in tests:
             key = os.path.join(*splitall(t.inp_fname)[-4:])
             self.rpath2test[key] = t
+        # Build OrderedDict to have deterministic behaviour.
+        self.rpath2test = OrderedDict([(k, self.rpath2test[k])
+            for k in sorted(self.rpath2test.keys())])
         #print(self.rpath2test.keys())
 
         # Find variables used in tests.
@@ -346,6 +349,7 @@ Change the input yaml files or the python code
         meta["rpath"] = rpath
         # FIXME This is not portable (py2.7 issue)
         s = yaml.dump(meta, indent=4, default_flow_style=False).strip()
+        #s = yaml.safe_dump(meta).strip()
         mdf = io.open(path, "wt", encoding="utf-8")
         mdf.write("---\n%s\n---\n" % s)
         mdf.write(self.do_not_edit_comment)
