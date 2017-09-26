@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="parallelism Abinit topic">
+        <meta name="description" content="'parallelism Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/parallelism/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2964,8 +2964,8 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to set parameters for a parallel calculation with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <ul>
-<li>For ground-state calculations, the code has been parallelized (MPI-based parallelism) on the k-points, on the spins, on the spinor components, on the bands, and on the FFT grid and plane wave coefficients. For the k-point and spin parallelisations (using MPI), the communication load is generally very small. This allows it to be used on a cluster of workstations. However, the number of nodes that can be used in parallel might be small, and depends strongly on the physics of the problem. A combined FFT / band parallelisation (LOBPCG)is available <a class="wikilink citation-wikilink" data-content="Large-scale ab initio calculations based on three levels of parallelization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#bottin2008">[Bottin2008]</a>, and has shown very large speed up (&gt;1000) on powerful computers with a large number of processors and high-speed interconnect. The combination of FFT / band / k point and spin parallelism is also available, and quite efficient for such computers. Available for norm-conserving as well as PAW cases. Automatic determination of the best combination of parallelism levels is available. Use of MPIIO is mandatory for the largest speed ups to be observed. </li>
-<li>Chebyshev filtering (Chebfi) is a method to solve the linear eigenvalue problem, and can be used as a SCF solver in Abinit. It is implemented in Abinit <a class="wikilink citation-wikilink" data-content="Parallel eigensolvers in plane-wave Density Functional Theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#levitt2015">[Levitt2015]</a>. The design goal is for Chebfi to replace LOBPCG as the solver of choice for large-scale computations in Abinit. By performing less orthogonalizations and diagonalizations than LOBPCG, scaling to higher processor counts is possible. A manual to use Chebfi is available <a href="../../documents/howto_chebfi.pdf">here</a>. </li>
+<li>For ground-state calculations, the code has been parallelized (MPI-based parallelism) on the k-points, on the spins, on the spinor components, on the bands, and on the FFT grid and plane wave coefficients. For the k-point and spin parallelisations (using MPI), the communication load is generally very small. This allows it to be used on a cluster of workstations. However, the number of nodes that can be used in parallel might be small, and depends strongly on the physics of the problem. A combined FFT / band parallelisation (LOBPCG)is available <a class="wikilink citation-wikilink" data-content="Large-scale ab initio calculations based on three levels of parallelization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#bottin2008">[Bottin2008]</a>, and has shown very large speed up (&gt;1000) on powerful computers with a large number of processors and high-speed interconnect. The combination of FFT / band / k point and spin parallelism is also available, and quite efficient for such computers. Available for norm-conserving as well as PAW cases. Automatic determination of the best combination of parallelism levels is available. Use of MPIIO is mandatory for the largest speed ups to be observed. </li>
+<li>Chebyshev filtering (Chebfi) is a method to solve the linear eigenvalue problem, and can be used as a SCF solver in Abinit. It is implemented in Abinit <a class="wikilink citation-wikilink" data-content="Parallel eigensolvers in plane-wave Density Functional Theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#levitt2015">[Levitt2015]</a>. The design goal is for Chebfi to replace LOBPCG as the solver of choice for large-scale computations in Abinit. By performing less orthogonalizations and diagonalizations than LOBPCG, scaling to higher processor counts is possible. A manual to use Chebfi is available <a href="../../documents/howto_chebfi.pdf">here</a>. </li>
 <li>For ground-state calculations, with a set of images (e.g. nudged elastic band method, the string method, the path-integral molecular dynamics, the genetic algorithm), MPI-based parallelism is used. The work load for the different images has been distributed, and this parallelism can be combined with the parallelism described in point hereabove, leading to speed-up beyond 5000. </li>
 <li>
 <p>For ground-state calculations, GPU can be used. This is based on CUDA+MAGMA. </p>
@@ -2986,48 +2986,48 @@ Change the input yaml files or the python code
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#autoparal">autoparal</a>  AUTOmatisation of the PARALlelism</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#paral_atom">paral_atom</a>  activate PARALelization over (paw) ATOMic sites</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#paral_kgb">paral_kgb</a>  activate PARALelization over K-point, G-vectors and Bands</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#paral_rf">paral_rf</a>  activate PARALlelization over Response Function perturbations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#autoparal">autoparal</a>  AUTOmatisation of the PARALlelism</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_atom">paral_atom</a>  activate PARALelization over (paw) ATOMic sites</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_kgb">paral_kgb</a>  activate PARALelization over K-point, G-vectors and Bands</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_rf">paral_rf</a>  activate PARALlelization over Response Function perturbations</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#gpu_devices">gpu_devices</a>  GPU: choice of DEVICES on one node</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#gpu_linalg_limit">gpu_linalg_limit</a>  GPU (Cuda): LINear ALGebra LIMIT</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#iomode">iomode</a>  Input-Output MODE</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#localrdwf">localrdwf</a>  LOCAL ReaD WaveFunctions</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#np_slk">np_slk</a>  Number of mpi Processors used for ScaLapacK calls</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#pw_unbal_thresh">pw_unbal_thresh</a>  Plane Wave UNBALancing: THRESHold for balancing procedure</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#use_gemm_nonlop">use_gemm_nonlop</a>  USE the GEMM routine for the application of the NON-Local OPerator</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#use_gpu_cuda">use_gpu_cuda</a>  activate USE of GPU accelerators with CUDA (nvidia)</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#use_slk">use_slk</a>  USE ScaLapacK</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#gpu_devices">gpu_devices</a>  GPU: choice of DEVICES on one node</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#gpu_linalg_limit">gpu_linalg_limit</a>  GPU (Cuda): LINear ALGebra LIMIT</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#iomode">iomode</a>  Input-Output MODE</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#localrdwf">localrdwf</a>  LOCAL ReaD WaveFunctions</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#np_slk">np_slk</a>  Number of mpi Processors used for ScaLapacK calls</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#pw_unbal_thresh">pw_unbal_thresh</a>  Plane Wave UNBALancing: THRESHold for balancing procedure</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#use_gemm_nonlop">use_gemm_nonlop</a>  USE the GEMM routine for the application of the NON-Local OPerator</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#use_gpu_cuda">use_gpu_cuda</a>  activate USE of GPU accelerators with CUDA (nvidia)</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#use_slk">use_slk</a>  USE ScaLapacK</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#bandpp">bandpp</a>  BAND Per Processor</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#gwpara">gwpara</a>  GW PARAllelization level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#max_ncpus">max_ncpus</a>  MAXimum Number of CPUS</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npband">npband</a>  Number of Processors at the BAND level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npfft">npfft</a>  Number of Processors at the FFT level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#nphf">nphf</a>  Number of Processors for (Hartree)-Fock exact exchange</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npkpt">npkpt</a>  Number of Processors at the K-Point Level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#nppert">nppert</a>  Number of Processors at the PERTurbation level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npspinor">npspinor</a>  Number of Processors at the SPINOR level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#bandpp">bandpp</a>  BAND Per Processor</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#gwpara">gwpara</a>  GW PARAllelization level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#max_ncpus">max_ncpus</a>  MAXimum Number of CPUS</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npband">npband</a>  Number of Processors at the BAND level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npfft">npfft</a>  Number of Processors at the FFT level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#nphf">nphf</a>  Number of Processors for (Hartree)-Fock exact exchange</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npkpt">npkpt</a>  Number of Processors at the K-Point Level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#nppert">nppert</a>  Number of Processors at the PERTurbation level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npspinor">npspinor</a>  Number of Processors at the SPINOR level</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Test the string method within parallelization over images Inspired by test v6#22. Hydrogen diatomic molecule in a cell,  close to BCC 7 images,  exploring the transition path. Three datasets,  testing each value of prtvolimg. Processors distribution automatically determined:" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t08.in" target="_blank">tests/paral/Input/t08.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t21.in" target="_blank">tests/paral/Input/t21.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t22.in" target="_blank">tests/paral/Input/t22.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over FFT and kpoints: npband*npfft*npkpt=1*2*2=4 processors. In test tY.in we check other distributions for guarantee." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t24.in" target="_blank">tests/paral/Input/t24.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t25.in" target="_blank">tests/paral/Input/t25.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 4 procs. Same of test R:test the automatic parallelisation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t26.in" target="_blank">tests/paral/Input/t26.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test MPI-FFT with 2 processors,  istwfk=2 and bandpp 2" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t29.in" target="_blank">tests/paral/Input/t29.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Chebyshev,  C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Also test gemm_nonlop" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t30.in" target="_blank">tests/paral/Input/t30.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="FCC Al metallic;  10 special points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t51.in" target="_blank">tests/paral/Input/t51.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test the string method within parallelization over images Inspired by test v6#22. Hydrogen diatomic molecule in a cell,  close to BCC 7 images,  exploring the transition path. Three datasets,  testing each value of prtvolimg. Processors distribution automatically determined:" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t08.in" target="_blank">tests/paral/Input/t08.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t21.in" target="_blank">tests/paral/Input/t21.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t22.in" target="_blank">tests/paral/Input/t22.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over FFT and kpoints: npband*npfft*npkpt=1*2*2=4 processors. In test tY.in we check other distributions for guarantee." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t24.in" target="_blank">tests/paral/Input/t24.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t25.in" target="_blank">tests/paral/Input/t25.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 4 procs. Same of test R:test the automatic parallelisation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t26.in" target="_blank">tests/paral/Input/t26.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test MPI-FFT with 2 processors,  istwfk=2 and bandpp 2" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t29.in" target="_blank">tests/paral/Input/t29.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Chebyshev,  C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Also test gemm_nonlop" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t30.in" target="_blank">tests/paral/Input/t30.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="FCC Al metallic;  10 special points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t51.in" target="_blank">tests/paral/Input/t51.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3079,7 +3079,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3132,7 +3132,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

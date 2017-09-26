@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="GeoConstraints Abinit topic">
+        <meta name="description" content="'GeoConstraints Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/GeoConstraints/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2951,35 +2951,35 @@ Change the input yaml files or the python code
 dynamics or searches with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>There are two mechanisms to put constraints on the atom positions in ABINIT.
-They can be used in <a class="wikilink topic-wikilink" data-content="How to perform a geometry optimization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../GeoOpt">geometry optimization</a>,
-<a class="wikilink topic-wikilink" data-content="How to perform a molecular dynamics calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../MolecularDynamics">molecular dynamics</a> (including PIMD) or other
-geometry algorithms (e.g. <a class="wikilink topic-wikilink" data-content="How to calculate transition paths" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../TransPath">transition path searches</a>).</p>
-<p>The simplest one (entry point <a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfix">iatfix</a>) simply define a set of atoms that
+They can be used in <a class="wikilink topic-wikilink" data-content="How to perform a geometry optimization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/GeoOpt">geometry optimization</a>,
+<a class="wikilink topic-wikilink" data-content="How to perform a molecular dynamics calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/MolecularDynamics">molecular dynamics</a> (including PIMD) or other
+geometry algorithms (e.g. <a class="wikilink topic-wikilink" data-content="How to calculate transition paths" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/TransPath">transition path searches</a>).</p>
+<p>The simplest one (entry point <a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfix">iatfix</a>) simply define a set of atoms that
 are fixed, either entirely, or only along one of the directions (for the
-latter, see the warning in <a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfix">iatfix</a>)</p>
+latter, see the warning in <a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfix">iatfix</a>)</p>
 <p>A more complex one, but also much more powerful, allows to place constraints
 on linear combinations of atomic positions. Thanks to such constraint, the
 mean position of two atoms (or a fragment, like a molecule) can be fixed, or
 constrained to stay within an arbitrary plane. One can thus also sample
-different mean positions. See a complete description in <a class="wikilink codevar-wikilink" href="../../variables/rlx#wtatcon">wtatcon</a>.</p>
+different mean positions. See a complete description in <a class="wikilink codevar-wikilink" href="../../../variables/rlx#wtatcon">wtatcon</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfix">iatfix</a>  Indices of AToms that are FIXed </li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfixx">iatfixx</a>  Indices of AToms that are FIXed along the X direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfixy">iatfixy</a>  Indices of AToms that are FIXed along the Y direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#iatfixz">iatfixz</a>  Indices of AToms that are FIXed along the Z direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#natfix">natfix</a>  Number of Atoms that are FIXed</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#natfixx">natfixx</a>  Number of Atoms that are FIXed along the X direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#natfixy">natfixy</a>  Number of Atoms that are FIXed along the Y direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#natfixz">natfixz</a>  Number of Atoms that are FIXed along the Z direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfix">iatfix</a>  Indices of AToms that are FIXed </li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfixx">iatfixx</a>  Indices of AToms that are FIXed along the X direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfixy">iatfixy</a>  Indices of AToms that are FIXed along the Y direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatfixz">iatfixz</a>  Indices of AToms that are FIXed along the Z direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#natfix">natfix</a>  Number of Atoms that are FIXed</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#natfixx">natfixx</a>  Number of Atoms that are FIXed along the X direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#natfixy">natfixy</a>  Number of Atoms that are FIXed along the Y direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#natfixz">natfixz</a>  Number of Atoms that are FIXed along the Z direction</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#iatcon">iatcon</a>  Indices of AToms in CONstraint equations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#natcon">natcon</a>  Number of AToms in CONstraint equations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#nconeq">nconeq</a>  Number of CONstraint EQuations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#wtatcon">wtatcon</a>  WeighTs for AToms in CONstraint equations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#iatcon">iatcon</a>  Indices of AToms in CONstraint equations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#natcon">natcon</a>  Number of AToms in CONstraint equations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#nconeq">nconeq</a>  Number of CONstraint EQuations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#wtatcon">wtatcon</a>  WeighTs for AToms in CONstraint equations</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p>No input file associated to this topic.</p>
@@ -3023,7 +3023,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3076,7 +3076,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Phonons Abinit topic">
+        <meta name="description" content="'Phonons Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/Phonons/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2966,17 +2966,17 @@ charges, IR reflectivity &hellip; with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>The computation of the second-order derivative of the total energy with
 respect to atomic displacements at an arbitrary wavevector, using
-<a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../DFPT">topic_DFPT</a>, opens the possibility to compute the dynamical matrix at that
+<a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/DFPT">topic_DFPT</a>, opens the possibility to compute the dynamical matrix at that
 wavevector, and hence, to compute the phonon eigenfrequency and
 eigendisplacements. When the wavevector is (0,0,0), usually denoted as the
 Gamma point, the combination of the atomic displacements and electric field
 type perturbations opens also the access to Born effective charges, electronic
 (for frequencies lower than the electronic band gap) dielectric constants, and
 then, to infra-red reflectivity of materials (in the infinite lifetime
-approximation). See <a class="wikilink citation-wikilink" data-content="Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze1997a">[Gonze1997a]</a> for the presentation of the theory with
+approximation). See <a class="wikilink citation-wikilink" data-content="Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#gonze1997a">[Gonze1997a]</a> for the presentation of the theory with
 DFPT.</p>
 <p>In ABINIT, with one dataset for a fixed wavevector (see <a class="wikilink topic-wikilink" data-content="How to set parameters related to the phonon wavevectors (q-points) in DFPT
-calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../q-points">q-points topic</a>),
+calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/q-points">q-points topic</a>),
 one can compute all such second-order derivatives. ABINIT will already perform
 some post-processing treatment of the second-order derivatives (e.g.
 computation of the dynamical matrix, and corresponding eigenenergies and
@@ -2989,68 +2989,68 @@ the previously mentioned difference in capabilities. In the database of input
 variables, the input variables related to ABINIT or ANADDB are clearly
 distinguished.</p>
 <p>The band-by-band decomposition of the Born effective charge tensors can be
-computed thanks to <a class="wikilink codevar-wikilink" href="../../variables/dfpt#prtbbb">prtbbb</a>. The related localization tensor (see
-<a class="wikilink citation-wikilink" data-content="Electron localization: Band-by-band decomposition and application to oxides" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#veithen2002">[Veithen2002]</a> can also be computed.</p>
+computed thanks to <a class="wikilink codevar-wikilink" href="../../../variables/dfpt#prtbbb">prtbbb</a>. The related localization tensor (see
+<a class="wikilink citation-wikilink" data-content="Electron localization: Band-by-band decomposition and application to oxides" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#veithen2002">[Veithen2002]</a> can also be computed.</p>
 <p>Phonon calculations are arbitrary q-points can be done under finite electric
 field (<a class="wikilink topic-wikilink" data-content="How to compute the polarisation and take into account a finite homogeneous electric
-field" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../Berry">Berry topic</a>).</p>
+field" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Berry">Berry topic</a>).</p>
 <p>It will be the easiest to discover the capabilities of these two executables
-through the <a class="wikilink lesson-wikilink" href="../../tutorials/rf1">lesson_rf1</a> of the tutorial.</p>
-<p>See <a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../DFPT">DFPT topic</a> for the general information about DFPT, <a class="wikilink topic-wikilink" data-content="How to set parameters related to the phonon wavevectors (q-points) in DFPT
-calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../q-points">q-points topic</a>
+through the <a class="wikilink lesson-wikilink" href="../../../tutorials/rf1">lesson_rf1</a> of the tutorial.</p>
+<p>See <a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/DFPT">DFPT topic</a> for the general information about DFPT, <a class="wikilink topic-wikilink" data-content="How to set parameters related to the phonon wavevectors (q-points) in DFPT
+calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/q-points">q-points topic</a>
 for the specification of q-points, and <a class="wikilink topic-wikilink" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
-velocity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../PhononBands">PhononBands topic</a> for the
+velocity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/PhononBands">PhononBands topic</a> for the
 computation of full phonon bands.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#rfasr">rfasr</a>  Response Function : Acoustic Sum Rule</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#asr">asr</a>  Acoustic Sum Rule</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#dieflag">dieflag</a>  DIElectric FLAG</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ngqpt">ngqpt</a>  Number of Grids points for Q PoinTs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#rfasr">rfasr</a>  Response Function : Acoustic Sum Rule</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#asr">asr</a>  Acoustic Sum Rule</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#dieflag">dieflag</a>  DIElectric FLAG</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#ngqpt">ngqpt</a>  Number of Grids points for Q PoinTs</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#rfatpol">rfatpol</a>  Response Function : ATomic POLarisation</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#rfdir">rfdir</a>  Response Function : DIRections</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#rfatpol">rfatpol</a>  Response Function : ATomic POLarisation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#rfdir">rfdir</a>  Response Function : DIRections</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#rfmeth">rfmeth</a>  Response-Function METHod</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#selectz">selectz</a>  SeLECT Z</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#rfmeth">rfmeth</a>  Response-Function METHod</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#selectz">selectz</a>  SeLECT Z</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/eph#chneut">chneut</a>  CHarge NEUTrality treatment </li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/eph#dipdip">dipdip</a>  DIPole-DIPole interaction </li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/eph#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#chneut">chneut</a>  Integer for CHarge NEUTrality treatment</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#eivec">eivec</a>  EIgenVECtors</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#enunit">enunit</a>  ENergy UNITs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#frmax">frmax</a>  FRequency MAXimum</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#frmin">frmin</a>  FRequency MINimum</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nfreq">nfreq</a>  Number of FREQuencies</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#q1shft">q1shft</a>  Q shifts for the grid number 1</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#chneut">chneut</a>  CHarge NEUTrality treatment </li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#dipdip">dipdip</a>  DIPole-DIPole interaction </li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#chneut">chneut</a>  Integer for CHarge NEUTrality treatment</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#eivec">eivec</a>  EIgenVECtors</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#enunit">enunit</a>  ENergy UNITs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#frmax">frmax</a>  FRequency MAXimum</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#frmin">frmin</a>  FRequency MINimum</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#nfreq">nfreq</a>  Number of FREQuencies</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#prtvol">prtvol</a>  PRinT VOLume</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#q1shft">q1shft</a>  Q shifts for the grid number 1</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#symdynmat">symdynmat</a>  SYMmetrize the DYNamical MATrix</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a simple DDB for quartz,  but do not test interatomic force constants (see test 15 for this). Compute phonon frequencies at gamma with and without LO-TO splitting." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t13.in" target="_blank">tests/v2/Input/t13.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t15.in" target="_blank">tests/v2/Input/t15.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t16.in" target="_blank">tests/v2/Input/t16.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. IFCs are computed as in test 16,  but by limiting artificially the number of allowed interacting shells to 2. The total number of atoms to be taken into account is 17 (1 for the shell 0, 4 for the shell 1,  and 12 for the shell 2). The frequencies at X and L points are again computed. They can be compared with those provided in TABLE II (TA(X) mode at 161.684 cm-1) and TABLE III (TA(L) mode at 127.508 cm-1) in the above-mentioned paper. The number are close,  with small differences at the level of 0.001 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t17.in" target="_blank">tests/v2/Input/t17.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3 (see also tests 19 and 20). Here, no use of IFCs is done. Phonon frequencies at the Gamma,  X,  M,  R and along the Gamma-R line are obtained directly from the DDB. They are to be compared with the data in the TABLE II of Ghosez et al,  Ferroelectrics, 206-207,  205 (1998),  as well as FIGURE I. At q(1/8 1/8 1/8),  the lowest frequency is  i 136.7 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t18.in" target="_blank">tests/v2/Input/t18.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 non-shifted grid (referred to as M1 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest frequency is  i 178.8 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t19.in" target="_blank">tests/v2/Input/t19.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 BCC grid (referred to as M2 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest mode is  i 153.5 cm-1 . The error,  compared with the reference result of test 18, is still 10%,  but much less than with the grid of test 19. Also,  the IFCs are obtained and can be compared with those provided in TABLE III-V of the Ghosez et al paper. Note the decomposition between dipole-dipole contribution and short-ranged contribution." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t20.in" target="_blank">tests/v2/Input/t20.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18. Compute the phonon frequencies at Gamma,  and also output the corresponing eigenvectors. These data can be compared with those published by Ghosez et al,  Ferroelectrics 194,  39 (1997), TABLE II,  although the normalisation factor is different. For example,  the z displacement of mode 1 given by the code is ( .25d-4,  .158d-2,  -.261d-2,  -.118d-2,  -.118d-2 ),  that multiplied by -60.54 and rounded to the third digit, gives values that appear in the first line of that TABLE II : ( -0.002,  -0.096,  0.158,  0.071,  0.071 )" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t21.in" target="_blank">tests/v2/Input/t21.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="BaSr(TiO3)2 FCC unit cell. Show how to use only the q Gamma point to obtain symmetric IFCs using Anaddb." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t39.in" target="_blank">tests/v2/Input/t39.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a simple DDB for quartz,  but do not test interatomic force constants (see test 15 for this). Compute phonon frequencies at gamma with and without LO-TO splitting." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t13.in" target="_blank">tests/v2/Input/t13.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze the DDB for quartz build in test 14. Compute the interatomic force constants,  the phonon Density of States, different thermodynamical functions of temperature, phonon frequencies in the whole Brillouin zone, oscillator strengths and mode effective charges at q(0 0 0), the electronic dielectric tensor,  and the (full) dielectric tensor at zero frequency (so including atomic displacements and related polarization)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t15.in" target="_blank">tests/v2/Input/t15.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. Here,  IFCs are obtained,  and can be compared to those published in Table I of Rignanese et al,  PRB53,  4488 (1996). For example,  the atoms numbers for NN=0, 1, 2, 5 in Table I are found as atoms 1, 5, 17, 20. The numbers are equal in the paper or in the output of the code. The frequencies at X and L points are also computed. They can be compared with those provided in TABLE II (TA(X) mode at 140.466 cm-1) and TABLE III (TA(L) mode at 108.626 cm-1) in the above-mentioned paper. The numbers are equal in the paper or in the output of the code. Thermodynamic quantities are also obtained. The input parameters of the code does not give particularly well converged quantities (one needs reasonable CPU time for testing !), but it is OK for comparison with the paper. In the output of the code,  a mole corresponds to the number of Avogadro times one CELL. As a Silicon cell contains 2 atoms,  caution must be taken in the comparison with experiment ! We will refer to the numbers given by the code as being given for a mole-cell (in short a mol-c). The distinction between the usual definition of a mole (Avogadro number times 1 Silicon atom) and a mole-cell (Avogadro number times 2 Silicon atom) was unfortunately the source of errors in the paper by Rignanese et al (our thanks to Steve Erwin for noticing this - an errata should be written). From the output of the code ( zero Kelvin is approximated by results at 1 Kelvin) : the zero point contribution to the Helmholtz free energy is 11.90 kJ/mol-c,  so 5.95 kJ/mole;  the entropy at 298.15K is 38.25 J/(mol-c.K),  so 19.12 J/(mole.K);  the constant-volume specific heat at 298.15K is 39.59 J/(mol-c.K),  so 19.80 J/(mole.K); the change in F (Helmholtz free energy) from 1 K to 298.15 K is -4.91 kJ/mol-c,  so -2.45 kJ/mole;  the change in E (internal energy) from 1 K to 298.15 K is 6.49 kJ/mol-c,  so 3.25 kJ/mole. Supposing that we take the usual definition of a mole (Avogadro number times 1 Silicon atom),  then,  in the above-mentioned paper,  the FIG. 3,  5 and 8 should be rescaled,  as well as the zero-point contribution to the Helmholtz free energy (5.95 kJ/mole,  and not 12 J/mole - the 'k' was also missing),  that is only 1.25% of the cohesive energy. The output of the code is now more clear than in 1995,  and this kind of error should not appear anymore." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t16.in" target="_blank">tests/v2/Input/t16.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for Silicon. Lattice parameter = 10.18 Angstrom. IFCs are computed as in test 16,  but by limiting artificially the number of allowed interacting shells to 2. The total number of atoms to be taken into account is 17 (1 for the shell 0, 4 for the shell 1,  and 12 for the shell 2). The frequencies at X and L points are again computed. They can be compared with those provided in TABLE II (TA(X) mode at 161.684 cm-1) and TABLE III (TA(L) mode at 127.508 cm-1) in the above-mentioned paper. The number are close,  with small differences at the level of 0.001 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t17.in" target="_blank">tests/v2/Input/t17.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3 (see also tests 19 and 20). Here, no use of IFCs is done. Phonon frequencies at the Gamma,  X,  M,  R and along the Gamma-R line are obtained directly from the DDB. They are to be compared with the data in the TABLE II of Ghosez et al,  Ferroelectrics, 206-207,  205 (1998),  as well as FIGURE I. At q(1/8 1/8 1/8),  the lowest frequency is  i 136.7 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t18.in" target="_blank">tests/v2/Input/t18.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 non-shifted grid (referred to as M1 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest frequency is  i 178.8 cm-1 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t19.in" target="_blank">tests/v2/Input/t19.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18,  but IFCs are obtained from a 2x2x2 BCC grid (referred to as M2 in the above-mentioned paper by Ghosez et al). At q(1/8 1/8 1/8),  the lowest mode is  i 153.5 cm-1 . The error,  compared with the reference result of test 18, is still 10%,  but much less than with the grid of test 19. Also,  the IFCs are obtained and can be compared with those provided in TABLE III-V of the Ghosez et al paper. Note the decomposition between dipole-dipole contribution and short-ranged contribution." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t20.in" target="_blank">tests/v2/Input/t20.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Analyze a DDB for BaTiO3,  same as test18. Compute the phonon frequencies at Gamma,  and also output the corresponing eigenvectors. These data can be compared with those published by Ghosez et al,  Ferroelectrics 194,  39 (1997), TABLE II,  although the normalisation factor is different. For example,  the z displacement of mode 1 given by the code is ( .25d-4,  .158d-2,  -.261d-2,  -.118d-2,  -.118d-2 ),  that multiplied by -60.54 and rounded to the third digit, gives values that appear in the first line of that TABLE II : ( -0.002,  -0.096,  0.158,  0.071,  0.071 )" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t21.in" target="_blank">tests/v2/Input/t21.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="BaSr(TiO3)2 FCC unit cell. Show how to use only the q Gamma point to obtain symmetric IFCs using Anaddb." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t39.in" target="_blank">tests/v2/Input/t39.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a class="wikilink lesson-wikilink" href="../../tutorials/rf1">The lesson Response-Function 1 (RF1)</a> presents the basics of DFPT calculations within ABINIT. The example given is the study of dynamical and dielectric properties of AlAs (an insulator): phonons at Gamma, dielectric constant, Born effective charges, LO-TO splitting, phonons in the whole Brillouin zone. The creation of the &ldquo;Derivative Data Base&rdquo; (DDB) is presented.</li>
+<li><a class="wikilink lesson-wikilink" href="../../../tutorials/rf1">The lesson Response-Function 1 (RF1)</a> presents the basics of DFPT calculations within ABINIT. The example given is the study of dynamical and dielectric properties of AlAs (an insulator): phonons at Gamma, dielectric constant, Born effective charges, LO-TO splitting, phonons in the whole Brillouin zone. The creation of the &ldquo;Derivative Data Base&rdquo; (DDB) is presented.</li>
 </ul>
                 
                   
@@ -3092,7 +3092,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3145,7 +3145,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

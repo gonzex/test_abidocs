@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="EFG Abinit topic">
+        <meta name="description" content="'EFG Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/EFG/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2977,9 +2977,9 @@ field gradient or Fermi contact interaction. Such concerns turn out to be
 unwarranted, however, as our experience and others have shown that the PAW
 formalism together with a typical chemical valence/core separation are
 sufficient for accurate description of nuclear point properties such as the
-electric field gradient <a class="wikilink citation-wikilink" data-content="Electric-field-gradient calculations using the projector augmented wave method" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#petrilli1998">[Petrilli1998]</a>,<a class="wikilink citation-wikilink" data-content="Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#profeta2003">[Profeta2003]</a>,<a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a>,
-Fermi contact interaction <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a> and magnetic chemical shielding
-<a class="wikilink citation-wikilink" data-content="All-electron magnetic response with pseudopotentials: NMR chemical shifts" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#pickard2001">[Pickard2001]</a>.</p>
+electric field gradient <a class="wikilink citation-wikilink" data-content="Electric-field-gradient calculations using the projector augmented wave method" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#petrilli1998">[Petrilli1998]</a>,<a class="wikilink citation-wikilink" data-content="Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#profeta2003">[Profeta2003]</a>,<a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a>,
+Fermi contact interaction <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a> and magnetic chemical shielding
+<a class="wikilink citation-wikilink" data-content="All-electron magnetic response with pseudopotentials: NMR chemical shifts" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#pickard2001">[Pickard2001]</a>.</p>
 <p>Both the electric field gradient and Fermi contact interaction are ground-
 state observables, and their computation adds negligible time to a normal
 self-consistent ground state calculation. The total charge density in the PAW
@@ -2990,23 +2990,23 @@ is computed in reciprocal space, and the gradient due to the (fixed) ionic
 charges is computed with an Ewald sum approach. The PAW sphere charge
 densities contribute matrix elements of (3xα xβ -r2δαβ)/r5, weighted by the
 charge densities in each channel determined by the self-consistent
-minimization procedure. This treatment <a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a> is more flexible than
+minimization procedure. This treatment <a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a> is more flexible than
 for example assuming all bands are doubly occupied, and permits the current
 approach to be used with more complex electronic and magnetic states than just
 insulators.</p>
 <p>Within ABINIT, the electric field gradient computation is invoked with the key
-word <a class="wikilink codevar-wikilink" href="../../variables/paw#prtefg">prtefg</a> (for Print EFG), together with the key word <a class="wikilink codevar-wikilink" href="../../variables/paw#quadmom">quadmom</a>. The
-<a class="wikilink codevar-wikilink" href="../../variables/paw#prtefg">prtefg</a> key word takes the values 1&ndash;3. For value 1, the electric field
+word <a class="wikilink codevar-wikilink" href="../../../variables/paw#prtefg">prtefg</a> (for Print EFG), together with the key word <a class="wikilink codevar-wikilink" href="../../../variables/paw#quadmom">quadmom</a>. The
+<a class="wikilink codevar-wikilink" href="../../../variables/paw#prtefg">prtefg</a> key word takes the values 1&ndash;3. For value 1, the electric field
 gradient coupling in MHz is reported, where the conversion is made by atom by
 combining the gradient with the nuclear quadrupole moments supplied by
-<a class="wikilink codevar-wikilink" href="../../variables/paw#quadmom">quadmom</a>. When <a class="wikilink codevar-wikilink" href="../../variables/paw#prtefg">prtefg</a> is input as 2, the additional breakdown of the
+<a class="wikilink codevar-wikilink" href="../../../variables/paw#quadmom">quadmom</a>. When <a class="wikilink codevar-wikilink" href="../../../variables/paw#prtefg">prtefg</a> is input as 2, the additional breakdown of the
 field gradient in terms of valence and on-site PAW terms is reported, along
 with the eigenvectors of the EFG matrix, so that principal directions may be
-determined with respect to the crystal axes. Finally, <a class="wikilink codevar-wikilink" href="../../variables/paw#prtefg">prtefg</a>=3 allows
+determined with respect to the crystal axes. Finally, <a class="wikilink codevar-wikilink" href="../../../variables/paw#prtefg">prtefg</a>=3 allows
 additional computation of a point-charge model of the gradient, for comparison
 purposes. The point charges by atom are supplied through the additional
-variable <a class="wikilink codevar-wikilink" href="../../variables/paw#ptcharge">ptcharge</a>. Detailed examples of the use of ABINIT to compute EFG&rsquo;s
-can be found in <a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a>,<a class="wikilink citation-wikilink" data-content="First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2009a">[Zwanziger2009a]</a>.</p>
+variable <a class="wikilink codevar-wikilink" href="../../../variables/paw#ptcharge">ptcharge</a>. Detailed examples of the use of ABINIT to compute EFG&rsquo;s
+can be found in <a class="wikilink citation-wikilink" data-content="First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2008">[Zwanziger2008]</a>,<a class="wikilink citation-wikilink" data-content="First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2009a">[Zwanziger2009a]</a>.</p>
 <p>The Fermi contact interaction, which is just the electron density evaluated
 precisely at the nuclear location, is an important component of the isomer
 shift measured in Mossbauer spectroscopy. The isomer shift is directly
@@ -3016,11 +3016,11 @@ position can be accomplished by treating δ(<strong>r</strong>-<strong>R</strong
 that is, the three-dimensional Dirac delta function centered on the nuclear
 position <strong>R</strong>. Because of the short-range nature of the delta function, in
 the PAW-transformed version of the observable only matrix elements of the on-
-site all-electron valence functions are required <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a>, and these
+site all-electron valence functions are required <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a>, and these
 are evaluated from a linear fit to the first few points of the PAW radial
 functions.</p>
 <p>Within ABINIT the Fermi contact interaction is invoked with the key word
-<a class="wikilink codevar-wikilink" href="../../variables/paw#prtfc">prtfc</a> (for Print Fermi Contact), which only takes the value 1. When
+<a class="wikilink codevar-wikilink" href="../../../variables/paw#prtfc">prtfc</a> (for Print Fermi Contact), which only takes the value 1. When
 called, the electron density at each nuclear position is reported, in atomic
 units (electrons per cubic Bohr). The isomer shift as measured in Mossbauer
 spectroscopy is typically reported in velocity units and is obtained from the
@@ -3033,30 +3033,30 @@ and source respectively. Because of the linearity of this formula in the
 density at the absorber (sample) nucleus, the only unknown (Δ〈r2〉) can be
 obtained by comparing the calculated values in several standards to experiment
 and then the computations can be used to interpret the measurements of new
-materials. In <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a> it is showed how to perform such studies on a
+materials. In <a class="wikilink citation-wikilink" data-content="Computation of M\&amp;quot;ossbauer isomer shifts from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#zwanziger2009">[Zwanziger2009]</a> it is showed how to perform such studies on a
 variety of compounds.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paw#prtefg">prtefg</a>  PRint Electric Field Gradient</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paw#prtfc">prtfc</a>  PRinT Fermi Contact term</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paw#ptcharge">ptcharge</a>  PoinT CHARGEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paw#quadmom">quadmom</a>  QUADrupole MOMents</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paw#prtefg">prtefg</a>  PRint Electric Field Gradient</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paw#prtfc">prtfc</a>  PRinT Fermi Contact term</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paw#ptcharge">ptcharge</a>  PoinT CHARGEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paw#quadmom">quadmom</a>  QUADrupole MOMents</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003). Coded by J. Zwanziger and M. Torrent." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t31.in" target="_blank">tests/v5/Input/t31.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. GGA (PBE). Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t32.in" target="_blank">tests/v5/Input/t32.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t33.in" target="_blank">tests/v5/Input/t33.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the Fermi contact term at each atomic site. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t34.in" target="_blank">tests/v5/Input/t34.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t35.in" target="_blank">tests/v5/Input/t35.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="BCC iron,  ferromagnetic,  computation of Fermi contact term with two spin densities. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t36.in" target="_blank">tests/v5/Input/t36.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003). Coded by J. Zwanziger and M. Torrent." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t31.in" target="_blank">tests/v5/Input/t31.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. GGA (PBE). Computation of the electric field gradient at each atomic site. This tests the implementation of the PAW-based efg algorithm as outlined in Profeta,  Mauri,  and Pickard,  J. Am. Chem. Soc. 125,  541-548 (2003)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t32.in" target="_blank">tests/v5/Input/t32.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t33.in" target="_blank">tests/v5/Input/t33.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the Fermi contact term at each atomic site. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t34.in" target="_blank">tests/v5/Input/t34.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Stishovite,  high-pressure polymorph of SiO2. LDA. Computation of the electric field gradient at each site using both PAW and a simple point charge model. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t35.in" target="_blank">tests/v5/Input/t35.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="BCC iron,  ferromagnetic,  computation of Fermi contact term with two spin densities. Coded and contributed by J. Zwanziger." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t36.in" target="_blank">tests/v5/Input/t36.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t44.in" target="_blank">tests/v6/Input/t44.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Electric field gradients in ICl molecule,  with and without spin orbit coupling." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t49.in" target="_blank">tests/v6/Input/t49.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Electric field gradient of indium metal,  body-centered tetragonal,  included to check EFG symmetry in this case." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t44.in" target="_blank">tests/v6/Input/t44.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Electric field gradients in ICl molecule,  with and without spin orbit coupling." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t49.in" target="_blank">tests/v6/Input/t49.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3102,7 +3102,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3155,7 +3155,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

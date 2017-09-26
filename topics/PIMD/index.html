@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="PIMD Abinit topic">
+        <meta name="description" content="'PIMD Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/PIMD/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2951,7 +2951,7 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Path-Integral Molecular Dynamics (PIMD) is a technique allowing to simulate
 the quantum fluctuations of the nuclei at thermodynamic equilibrium
-<a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#marx1996">[Marx1996]</a>. It is implemented in ABINIT in the NVT ensemble since v7.8.2.</p>
+<a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#marx1996">[Marx1996]</a>. It is implemented in ABINIT in the NVT ensemble since v7.8.2.</p>
 <p>In the Path-Integral formalism of quantum statistical mechanics, the (quantum)
 nuclei are replaced by a set of images (beads) treated by means of classical
 mechanics, and interacting with each other through a specific effective
@@ -2964,79 +2964,79 @@ DFT calculation is performed for each image. PIMD can be used with any XC
 functional and works in the PAW framework as well as in the norm-conserving
 pseudopotential (NCPP) case.</p>
 <p>PIMD in ABINIT follows the set of numerical schemes developed by several
-authors in the 90&rsquo;s <a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#marx1996">[Marx1996]</a>,<a class="wikilink citation-wikilink" data-content="Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#tuckerman1996">[Tuckerman1996]</a>. PIMD in the canonical
+authors in the 90&rsquo;s <a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#marx1996">[Marx1996]</a>,<a class="wikilink citation-wikilink" data-content="Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#tuckerman1996">[Tuckerman1996]</a>. PIMD in the canonical
 ensemble needs specific thermostats to ensure that the trajectories are
 ergodic: the Nose-Hoover chains are implemented, as well as the Langevin
-thermostat (controlled by the value of <a class="wikilink codevar-wikilink" href="../../variables/rlx#imgmov">imgmov</a>). Also, it is possible to
+thermostat (controlled by the value of <a class="wikilink codevar-wikilink" href="../../../variables/rlx#imgmov">imgmov</a>). Also, it is possible to
 use coordinate transformations (staging and normal mode), that are controlled
-by the keyword <a class="wikilink codevar-wikilink" href="../../variables/rlx#pitransform">pitransform</a>. In standard equilibrium PIMD, only static
+by the keyword <a class="wikilink codevar-wikilink" href="../../../variables/rlx#pitransform">pitransform</a>. In standard equilibrium PIMD, only static
 observables are relevant (quantum time-correlation functions are not
 accessible): the masses associated to the motion of the beads are controlled
-by the keyword <a class="wikilink codevar-wikilink" href="../../variables/rlx#pimass">pimass</a>, whereas the true masses of the atoms are given by
-<a class="wikilink codevar-wikilink" href="../../variables/rlx#amu">amu</a>. The values given in <a class="wikilink codevar-wikilink" href="../../variables/rlx#pimass">pimass</a> are used to fix the so-called
-fictitious masses <a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#marx1996">[Marx1996]</a>. In the case where a coordinate transformation
+by the keyword <a class="wikilink codevar-wikilink" href="../../../variables/rlx#pimass">pimass</a>, whereas the true masses of the atoms are given by
+<a class="wikilink codevar-wikilink" href="../../../variables/rlx#amu">amu</a>. The values given in <a class="wikilink codevar-wikilink" href="../../../variables/rlx#pimass">pimass</a> are used to fix the so-called
+fictitious masses <a class="wikilink citation-wikilink" data-content="Ab initio path integral molecular dynamics: Basic ideas" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#marx1996">[Marx1996]</a>. In the case where a coordinate transformation
 is used, the fictitious masses are automatically fixed in the code to match
 the so-called staging masses or normal mode masses. The number of time steps
-of the trajectory is controlled by <a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>, the initial and thermostat
-temperature by <a class="wikilink codevar-wikilink" href="../../variables/rlx#mdtemp">mdtemp</a>. Except if specified, the images in the initial
+of the trajectory is controlled by <a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntimimage">ntimimage</a>, the initial and thermostat
+temperature by <a class="wikilink codevar-wikilink" href="../../../variables/rlx#mdtemp">mdtemp</a>. Except if specified, the images in the initial
 configuration are assumed to be at the same position, and a random
-distribution of velocities is applied (governed by <a class="wikilink codevar-wikilink" href="../../variables/rlx#mdtemp">mdtemp</a>) to start the
+distribution of velocities is applied (governed by <a class="wikilink codevar-wikilink" href="../../../variables/rlx#mdtemp">mdtemp</a>) to start the
 dynamics.</p>
 <p>At each time step, ABINIT delivers in the output file:</p>
 <ul>
 <li>(i) information about the ground state DFT calculation of the ground state for each image</li>
 <li>(ii) the instantaneous temperature, the instantaneous energy as given by the primitive and virial estimators, and the pressure tensor as given by the primitive estimator.</li>
 </ul>
-<p>The number of images (keyword <a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>) is associated to a specific
-parallelization level (keyword <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>).</p>
+<p>The number of images (keyword <a class="wikilink codevar-wikilink" href="../../../variables/rlx#nimage">nimage</a>) is associated to a specific
+parallelization level (keyword <a class="wikilink codevar-wikilink" href="../../../variables/paral#npimage">npimage</a>).</p>
 <p>PIMD has been used with ABINIT to reproduce the large isotope effect on the
 phase transition between phase I and phase II of dense hydrogen
-<a class="wikilink citation-wikilink" data-content="Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#geneste2012">[Geneste2012]</a>, and also some aspects of diffusion at low and room
-temperature in proton-conducting oxides for fuel cells <a class="wikilink citation-wikilink" data-content="Proton transport in barium stannate: classical, semi-classical and quantum regimes" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#geneste2015">[Geneste2015]</a>. PIMD
+<a class="wikilink citation-wikilink" data-content="Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#geneste2012">[Geneste2012]</a>, and also some aspects of diffusion at low and room
+temperature in proton-conducting oxides for fuel cells <a class="wikilink citation-wikilink" data-content="Proton transport in barium stannate: classical, semi-classical and quantum regimes" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#geneste2015">[Geneste2015]</a>. PIMD
 in the NPT ensemble is not available yet.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#nnos">nnos</a>  Number of NOSe masses</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#optcell">optcell</a>  OPTimize the CELL shape and dimensions</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#qmass">qmass</a>  Q thermostat MASS</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#vis">vis</a>  VIScosity</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#nnos">nnos</a>  Number of NOSe masses</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#optcell">optcell</a>  OPTimize the CELL shape and dimensions</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#qmass">qmass</a>  Q thermostat MASS</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#vis">vis</a>  VIScosity</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#dtion">dtion</a>  Delta Time for IONs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#imgmov">imgmov</a>  IMaGe MOVEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#mdtemp">mdtemp</a>  Molecular Dynamics TEMPeratures</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>  Number of IMAGEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>  Number of TIME steps for IMAGE propagation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#dtion">dtion</a>  Delta Time for IONs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#imgmov">imgmov</a>  IMaGe MOVEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#mdtemp">mdtemp</a>  Molecular Dynamics TEMPeratures</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#nimage">nimage</a>  Number of IMAGEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntimimage">ntimimage</a>  Number of TIME steps for IMAGE propagation</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#adpimd">adpimd</a>  ADiabatic Path-Integral Molecular Dynamics</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#adpimd_gamma">adpimd_gamma</a>  ADiabatic Path-Integral Molecular Dynamics: GAMMA factor</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#dynimage">dynimage</a>  DYNamics of the IMAGE</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#irandom">irandom</a>  Integer for the choice of the RANDOM number generator</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#istatimg">istatimg</a>  Integer governing the computation of STATic IMaGes</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#vel_cell">vel_cell</a>  VELocity of the CELL parameters</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#adpimd">adpimd</a>  ADiabatic Path-Integral Molecular Dynamics</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#adpimd_gamma">adpimd_gamma</a>  ADiabatic Path-Integral Molecular Dynamics: GAMMA factor</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#dynimage">dynimage</a>  DYNamics of the IMAGE</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#irandom">irandom</a>  Integer for the choice of the RANDOM number generator</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#istatimg">istatimg</a>  Integer governing the computation of STATic IMaGes</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#vel_cell">vel_cell</a>  VELocity of the CELL parameters</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/internal#ndynimage">%ndynimage</a>  Number of DYNamical IMAGEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/internal#ndynimage">%ndynimage</a>  Number of DYNamical IMAGEs</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#pimass">pimass</a>  Path Integral fictitious MASSes</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#pimd_constraint">pimd_constraint</a>  Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#pitransform">pitransform</a>  Path Integral coordinate TRANSFORMation</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#vel">vel</a>  VELocity</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#pimass">pimass</a>  Path Integral fictitious MASSes</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#pimd_constraint">pimd_constraint</a>  Path-Integral Molecular Dynamics: CONSTRAINT to be applied on a reaction coordinate</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#pitransform">pitransform</a>  Path Integral coordinate TRANSFORMation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#vel">vel</a>  VELocity</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Hydrogen molecule: Test the Path-Integral Molecular Dynamics (PIMD) implementation in (N, V, T) ensemble. THe two thermostats (Nose-Hoover chains and Langevin) are tested together with the three coordinate systems (primitive,  normal mode,  staging). NOTE: MPI run with 2 procs is ok but fldiff comparison fails due to an extra section with --- Pseudopotential description --" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t08.in" target="_blank">tests/v7/Input/t08.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Hydrogen molecule: Test the Path-Integral Molecular Dynamics (PIMD) implementation in (N, V, T) ensemble. THe two thermostats (Nose-Hoover chains and Langevin) are tested together with the three coordinate systems (primitive,  normal mode,  staging). NOTE: MPI run with 2 procs is ok but fldiff comparison fails due to an extra section with --- Pseudopotential description --" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v7/Input/t08.in" target="_blank">tests/v7/Input/t08.in</a></li>
 </ul>
                 
                   
@@ -3078,7 +3078,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3131,7 +3131,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="internal input variables">
+        <meta name="description" content="'internal input variables'">
       
       
         <link rel="canonical" href="http://www.abinit.org/variables/internal/">
@@ -311,7 +311,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../topics/" title="Topics" class="md-tabs__link">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link">
           Topics
         </a>
       
@@ -646,8 +646,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../topics/" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -3186,179 +3186,179 @@ Change the input yaml files or the python code
 internal input variables to be used in the input file for the abinit executable.</p>
 <h2 id="kptns"><strong>kptns</strong><a class="headerlink" href="#kptns" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> K-PoinTs re-Normalized and Shifted<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters related to the electronic wavevectors (k-points)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/k-points">topic_k-points</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters related to the electronic wavevectors (k-points)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/k-points">topic_k-points</a><br />
 <em>Variable type:</em> real<br />
-<em>Dimensions:</em> (3,<a class="wikilink codevar-wikilink" href="../basic#nkpt">nkpt</a>)<br />
+<em>Dimensions:</em> (3,<a class="wikilink codevar-wikilink" href="../../../variables/basic#nkpt">nkpt</a>)<br />
 <em>Default value:</em> None  </p>
-<p>If <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=0, or if one is doing a reponse calculation, this internal
-variable is derived from <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a> and <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>: <a class="wikilink codevar-wikilink" href="../internal#kptns">%kptns</a>(1:3,:)=
-<a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a>(1:3,:)/ <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>, so that it is <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a> renormalized by <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>.<br />
-If <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=1 and one is not doing a ground-state calculation, this internal
-variable is derived from <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a>,<a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a> and <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a> <a class="wikilink codevar-wikilink" href="../internal#kptns">%kptns</a>(1:3,:)=
-<a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a>(1:3,:)/ <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>+ <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3), so that it is <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a> renormalized
-by <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>, then shifted by <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3).</p>
+<p>If <a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>=0, or if one is doing a reponse calculation, this internal
+variable is derived from <a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a> and <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a>: <a class="wikilink codevar-wikilink" href="../../../variables/internal#kptns">%kptns</a>(1:3,:)=
+<a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a>(1:3,:)/ <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a>, so that it is <a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a> renormalized by <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a>.<br />
+If <a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>=1 and one is not doing a ground-state calculation, this internal
+variable is derived from <a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a>,<a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a> and <a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a> <a class="wikilink codevar-wikilink" href="../../../variables/internal#kptns">%kptns</a>(1:3,:)=
+<a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a>(1:3,:)/ <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a>+ <a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a>(1:3), so that it is <a class="wikilink codevar-wikilink" href="../../../variables/basic#kpt">kpt</a> renormalized
+by <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptnrm">kptnrm</a>, then shifted by <a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a>(1:3).</p>
 <h2 id="mband"><strong>mband</strong><a class="headerlink" href="#mband" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum number of BANDs<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/BandOcc">topic_BandOcc</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/BandOcc">topic_BandOcc</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
 <p>This internal variable derives the maximum number of bands over all k-points
-and spin-polarisation from <a class="wikilink codevar-wikilink" href="../basic#nband">nband</a>(1:nkpt*nsppol).</p>
+and spin-polarisation from <a class="wikilink codevar-wikilink" href="../../../variables/basic#nband">nband</a>(1:nkpt*nsppol).</p>
 <h2 id="mgfft"><strong>mgfft</strong><a class="headerlink" href="#mgfft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum of nGFFT<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Planewaves">topic_Planewaves</a><br />
+augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Planewaves">topic_Planewaves</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>(1:3).</p>
+<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../../../variables/gstate#ngfft">ngfft</a>(1:3).</p>
 <h2 id="mgfftdg"><strong>mgfftdg</strong><a class="headerlink" href="#mgfftdg" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum of nGFFT for the Double Grid<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Planewaves">topic_Planewaves</a><br />
+augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Planewaves">topic_Planewaves</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>(1:3).</p>
+<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../../../variables/paw#ngfftdg">ngfftdg</a>(1:3).</p>
 <h2 id="mpw"><strong>mpw</strong><a class="headerlink" href="#mpw" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum number of Plane Waves<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Planewaves">topic_Planewaves</a><br />
+augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Planewaves">topic_Planewaves</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
 <p>This internal variable gives the maximum of the number of plane waves over all
-k-points. It is computed from <a class="wikilink codevar-wikilink" href="../basic#ecut">ecut</a> and the description of the cell,
-provided by <a class="wikilink codevar-wikilink" href="../basic#acell">acell</a>, <a class="wikilink codevar-wikilink" href="../basic#rprim">rprim</a>, and/or <a class="wikilink codevar-wikilink" href="../basic#angdeg">angdeg</a>.</p>
+k-points. It is computed from <a class="wikilink codevar-wikilink" href="../../../variables/basic#ecut">ecut</a> and the description of the cell,
+provided by <a class="wikilink codevar-wikilink" href="../../../variables/basic#acell">acell</a>, <a class="wikilink codevar-wikilink" href="../../../variables/basic#rprim">rprim</a>, and/or <a class="wikilink codevar-wikilink" href="../../../variables/basic#angdeg">angdeg</a>.</p>
 <h2 id="natpawu"><strong>natpawu</strong><a class="headerlink" href="#natpawu" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of AToms on which PAW+U is applied<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform a DFT+U calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/DFT+U">topic_DFT+U</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform a DFT+U calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/DFT+U">topic_DFT+U</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None<br />
-<em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../paw#usepawu">usepawu</a>==1  </p>
+<em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../../../variables/paw#usepawu">usepawu</a>==1  </p>
 <p>This internal variable gives the number of atoms on which the LDA/GGA+U method
-is applied. This value is determined from <a class="wikilink codevar-wikilink" href="../paw#lpawu">lpawu</a>.</p>
+is applied. This value is determined from <a class="wikilink codevar-wikilink" href="../../../variables/paw#lpawu">lpawu</a>.</p>
 <h2 id="ndynimage"><strong>ndynimage</strong><a class="headerlink" href="#ndynimage" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of DYNamical IMAGEs<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform a PIMD calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/PIMD">topic_PIMD</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform a PIMD calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/PIMD">topic_PIMD</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
 <p>This internal variable gives the number of dynamical images, immediately
-deduced from the number of non-zero values present in <a class="wikilink codevar-wikilink" href="../rlx#dynimage">dynimage</a>. It is used
+deduced from the number of non-zero values present in <a class="wikilink codevar-wikilink" href="../../../variables/rlx#dynimage">dynimage</a>. It is used
 to dimension many memory-consuming arrays (one copy for each image), e.g. the
 wavefunction array (cg), the density array (rho), etc .</p>
 <h2 id="nelect"><strong>nelect</strong><a class="headerlink" href="#nelect" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of ELECTrons<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/BandOcc">topic_BandOcc</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/BandOcc">topic_BandOcc</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> <a class="wikilink" data-content="This is an external parameter
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
-" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
+" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../variables/external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
 <p>This internal variable gives the number of electrons per unit cell, as
 computed from the sum of the valence electrons related to each atom (given in
 the pseudopotential, where it is called &ldquo;zion&rdquo;), and the input variable
-<a class="wikilink codevar-wikilink" href="../gstate#charge">charge</a>:<br />
-<a class="wikilink codevar-wikilink" href="../internal#nelect">%nelect</a>=zion-<a class="wikilink codevar-wikilink" href="../gstate#charge">charge</a>.</p>
+<a class="wikilink codevar-wikilink" href="../../../variables/gstate#charge">charge</a>:<br />
+<a class="wikilink codevar-wikilink" href="../../../variables/internal#nelect">%nelect</a>=zion-<a class="wikilink codevar-wikilink" href="../../../variables/gstate#charge">charge</a>.</p>
 <h2 id="nfft"><strong>nfft</strong><a class="headerlink" href="#nfft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of FFT points<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Planewaves">topic_Planewaves</a><br />
+augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Planewaves">topic_Planewaves</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
+<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_kgb">paral_kgb</a>==0), this
 internal variable gives the number of Fast Fourier Transform points in the
-grid generated by <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>(1:3). It is simply the product of the three
-components of <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>.<br />
-If space parallelisation is used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==1), then it
+grid generated by <a class="wikilink codevar-wikilink" href="../../../variables/gstate#ngfft">ngfft</a>(1:3). It is simply the product of the three
+components of <a class="wikilink codevar-wikilink" href="../../../variables/gstate#ngfft">ngfft</a>.<br />
+If space parallelisation is used (that is, if <a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_kgb">paral_kgb</a>==1), then it
 becomes the number of Fast Fourier Transform points attributed to the
 particular processor. It is no longer the above-mentioned simple product, but
 a number usually close to this product divided by the number of processors on
 which the space is shared.</p>
 <h2 id="nfftdg"><strong>nfftdg</strong><a class="headerlink" href="#nfftdg" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of FFT points for the Double Grid<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform numerically precise calculations with planewaves or projector-
-augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Planewaves">topic_Planewaves</a><br />
+augmented waves and pseudopotentials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Planewaves">topic_Planewaves</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
+<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_kgb">paral_kgb</a>==0), this
 internal variable gives the number of Fast Fourier Transform points in the
-(double) grid generated by <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>(1:3). It is simply the product of the
-three components of <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>.<br />
-If space parallelisation is used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==1), then it
+(double) grid generated by <a class="wikilink codevar-wikilink" href="../../../variables/paw#ngfftdg">ngfftdg</a>(1:3). It is simply the product of the
+three components of <a class="wikilink codevar-wikilink" href="../../../variables/paw#ngfftdg">ngfftdg</a>.<br />
+If space parallelisation is used (that is, if <a class="wikilink codevar-wikilink" href="../../../variables/paral#paral_kgb">paral_kgb</a>==1), then it
 becomes the number of Fast Fourier Transform points attributed to the
 particular processor. It is no longer the above-mentioned simple product, but
 a number usually close to this product divided by the number of processors on
 which the space is shared.</p>
 <h2 id="npweps"><strong>npweps</strong><a class="headerlink" href="#npweps" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of PlaneWaves for EPSilon (the dielectric matrix)<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to compute the frequency-dependent susceptibility matrix, and related screened
-interaction matrix, and inverse dielectric marix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Susceptibility">topic_Susceptibility</a><br />
+interaction matrix, and inverse dielectric marix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Susceptibility">topic_Susceptibility</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p><a class="wikilink codevar-wikilink" href="../internal#npweps">%npweps</a> determines the size of the planewave set used to represent the
+<p><a class="wikilink codevar-wikilink" href="../../../variables/internal#npweps">%npweps</a> determines the size of the planewave set used to represent the
 independent-particle susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>, the dielectric matrix
 <script type="math/tex">\epsilon</script> and its inverse.<br />
-It is an internal variable, determined from <a class="wikilink codevar-wikilink" href="../gw#ecuteps">ecuteps</a>.</p>
+It is an internal variable, determined from <a class="wikilink codevar-wikilink" href="../../../variables/gw#ecuteps">ecuteps</a>.</p>
 <h2 id="npwsigx"><strong>npwsigx</strong><a class="headerlink" href="#npwsigx" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of PlaneWaves for SIGma eXchange<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to compute the electronic self-energy (due to electron-electron interaction)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/SelfEnergy">topic_SelfEnergy</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to compute the electronic self-energy (due to electron-electron interaction)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/SelfEnergy">topic_SelfEnergy</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p><a class="wikilink codevar-wikilink" href="../internal#npwsigx">%npwsigx</a> determines the cut-off energy of the planewave set used to
+<p><a class="wikilink codevar-wikilink" href="../../../variables/internal#npwsigx">%npwsigx</a> determines the cut-off energy of the planewave set used to
 generate the exchange part of the self-energy operator.<br />
-It is an internal variable, determed from <a class="wikilink codevar-wikilink" href="../gw#ecutsigx">ecutsigx</a>.</p>
+It is an internal variable, determed from <a class="wikilink codevar-wikilink" href="../../../variables/gw#ecutsigx">ecutsigx</a>.</p>
 <h2 id="npwwfn"><strong>npwwfn</strong><a class="headerlink" href="#npwwfn" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of PlaneWaves for WaveFunctioNs<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to compute the frequency-dependent susceptibility matrix, and related screened
-interaction matrix, and inverse dielectric marix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Susceptibility">topic_Susceptibility</a>, <a class="wikilink topic-wikilink" data-content="How to compute the electronic self-energy (due to electron-electron interaction)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/SelfEnergy">topic_SelfEnergy</a><br />
+interaction matrix, and inverse dielectric marix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Susceptibility">topic_Susceptibility</a>, <a class="wikilink topic-wikilink" data-content="How to compute the electronic self-energy (due to electron-electron interaction)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/SelfEnergy">topic_SelfEnergy</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<p><a class="wikilink codevar-wikilink" href="../internal#npwwfn">%npwwfn</a> is the size of the planewave set used to represent the
+<p><a class="wikilink codevar-wikilink" href="../../../variables/internal#npwwfn">%npwwfn</a> is the size of the planewave set used to represent the
 wavefunctions in the formula that generates the independent-particle
 susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>. It is an internal variable, determined from
-<a class="wikilink codevar-wikilink" href="../gw#ecutwfn">ecutwfn</a>.</p>
+<a class="wikilink codevar-wikilink" href="../../../variables/gw#ecutwfn">ecutwfn</a>.</p>
 <h2 id="qptn"><strong>qptn</strong><a class="headerlink" href="#qptn" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Q-PoinT re-Normalized<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/DFPT">topic_DFPT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to generically perform DFPT calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/DFPT">topic_DFPT</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> 3*0<br />
-<em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>==1  </p>
-<p>Only used if <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=1.<br />
-In ground-state calculation, the vector <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3) is added to each
-renormalized k point (whatever the value of <a class="wikilink codevar-wikilink" href="../basic#kptopt">kptopt</a> that was used) to
-generate the normalized, shifted, set of k-points <a class="wikilink codevar-wikilink" href="../internal#kptns">%kptns</a>(1:3,1: ** nkpt **
+<em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>==1  </p>
+<p>Only used if <a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>=1.<br />
+In ground-state calculation, the vector <a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a>(1:3) is added to each
+renormalized k point (whatever the value of <a class="wikilink codevar-wikilink" href="../../../variables/basic#kptopt">kptopt</a> that was used) to
+generate the normalized, shifted, set of k-points <a class="wikilink codevar-wikilink" href="../../../variables/internal#kptns">%kptns</a>(1:3,1: ** nkpt **
 ).<br />
-In response-function calculations, <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3) is the wavevector of the
+In response-function calculations, <a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a>(1:3) is the wavevector of the
 phonon-type calculation.<br />
-<a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3) can be produced on the basis of the different methods described
-in <a class="wikilink codevar-wikilink" href="../gstate#qptopt">qptopt</a>, like using <a class="wikilink codevar-wikilink" href="../gstate#qpt">qpt</a>(1:3) with renormalisation provided by
-<a class="wikilink codevar-wikilink" href="../gstate#qptnrm">qptnrm</a>, or using the other possibilities defined by <a class="wikilink codevar-wikilink" href="../gstate#iqpt">iqpt</a>, <a class="wikilink codevar-wikilink" href="../gstate#ngqpt">ngqpt</a>,
-<a class="wikilink codevar-wikilink" href="../gstate#nshiftq">nshiftq</a>, <a class="wikilink codevar-wikilink" href="../gstate#qptrlatt">qptrlatt</a>, <a class="wikilink codevar-wikilink" href="../gstate#shiftq">shiftq</a>,<br />
+<a class="wikilink codevar-wikilink" href="../../../variables/internal#qptn">%qptn</a>(1:3) can be produced on the basis of the different methods described
+in <a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptopt">qptopt</a>, like using <a class="wikilink codevar-wikilink" href="../../../variables/gstate#qpt">qpt</a>(1:3) with renormalisation provided by
+<a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptnrm">qptnrm</a>, or using the other possibilities defined by <a class="wikilink codevar-wikilink" href="../../../variables/gstate#iqpt">iqpt</a>, <a class="wikilink codevar-wikilink" href="../../../variables/gstate#ngqpt">ngqpt</a>,
+<a class="wikilink codevar-wikilink" href="../../../variables/gstate#nshiftq">nshiftq</a>, <a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptrlatt">qptrlatt</a>, <a class="wikilink codevar-wikilink" href="../../../variables/gstate#shiftq">shiftq</a>,<br />
 For insulators, there is no restriction on the q-points to be used for the
 perturbations. By contrast, for metals, for the time being, it is advised to
 take q points for which the k and k+q grids are the same (when the periodicity
@@ -3367,12 +3367,12 @@ whether other q points might be allowed (perhaps with some modification of the
 code).</p>
 <h2 id="usefock"><strong>usefock</strong><a class="headerlink" href="#usefock" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> USE FOCK exact exchange<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to use hybrid functionals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Hybrids">topic_Hybrids</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to use hybrid functionals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Hybrids">topic_Hybrids</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>This internal variable is automatically set to 1 when the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>
+<p>This internal variable is automatically set to 1 when the value of <a class="wikilink codevar-wikilink" href="../../../variables/basic#ixc">ixc</a>
 refers to an Hartree-Fock calculation or hybrid functionals.</p>
 <ul>
 <li>0 =&gt; No use of exact exchange. </li>
@@ -3380,37 +3380,37 @@ refers to an Hartree-Fock calculation or hybrid functionals.</p>
 </ul>
 <h2 id="usepaw"><strong>usepaw</strong><a class="headerlink" href="#usepaw" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> USE Projector Augmented Waves method<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters for a PAW calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/PAW">topic_PAW</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters for a PAW calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/PAW">topic_PAW</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> <a class="wikilink" data-content="This is an external parameter
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
-" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
+" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../variables/external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
 <p>This variable is determined by the pseudopotentials files. PAW calculations
-(see <a class="wikilink lesson-wikilink" href="../../tutorials/paw1">paw1 lesson</a>) can only be performed with PAW atomic data input files,
+(see <a class="wikilink lesson-wikilink" href="../../../tutorials/paw1">paw1 lesson</a>) can only be performed with PAW atomic data input files,
 while pseudopotential calculations are performed in ABINIT with norm-
 conserving pseudopotential input files. Most functionalities in ABINIT are
 available with either type of calculation.</p>
 <h2 id="userec"><strong>userec</strong><a class="headerlink" href="#userec" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> USE RECursion<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform orbital-free calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/Recursion">topic_Recursion</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to perform orbital-free calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Recursion">topic_Recursion</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
 <p>This internal variable is set to 1 when the recursion method is activated (see
-<a class="wikilink codevar-wikilink" href="../dev#tfkinfunc">tfkinfunc</a>).</p>
+<a class="wikilink codevar-wikilink" href="../../../variables/dev#tfkinfunc">tfkinfunc</a>).</p>
 <h2 id="xclevel"><strong>xclevel</strong><a class="headerlink" href="#xclevel" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> eXchange Correlation functional LEVEL<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters related to the exchange and correlation functionals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/xc">topic_xc</a>, <a class="wikilink topic-wikilink" data-content="How to perform time-dependent density-functional theory calculations of neutral
-excitation energies" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/TDDFT">topic_TDDFT</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to set parameters related to the exchange and correlation functionals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/xc">topic_xc</a>, <a class="wikilink topic-wikilink" data-content="How to perform time-dependent density-functional theory calculations of neutral
+excitation energies" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/TDDFT">topic_TDDFT</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<p>Automatically determined from the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>.</p>
+<p>Automatically determined from the value of <a class="wikilink codevar-wikilink" href="../../../variables/basic#ixc">ixc</a>.</p>
 <ul>
 <li>0 =&gt; No XC contribution. </li>
 <li>1 =&gt; LDA functional. </li>
@@ -3419,15 +3419,15 @@ excitation energies" data-placement="auto right" data-toggle="popover" data-trig
 </ul>
 <h2 id="ziontypat"><strong>ziontypat</strong><a class="headerlink" href="#ziontypat" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Z (charge) of the IONs for the different TYPes of AToms<br />
-<em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
-<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify the types of atoms that form the system" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/AtomTypes">topic_AtomTypes</a>, <a class="wikilink topic-wikilink" data-content="How to master the use of norm-conserving pseudopotentials and PAW atomic data, and
-their consequences" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/PseudosPAW">topic_PseudosPAW</a><br />
+<em>Characteristics:</em> <a class="wikilink" href="../../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
+<em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify the types of atoms that form the system" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/AtomTypes">topic_AtomTypes</a>, <a class="wikilink topic-wikilink" data-content="How to master the use of norm-conserving pseudopotentials and PAW atomic data, and
+their consequences" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/PseudosPAW">topic_PseudosPAW</a><br />
 <em>Variable type:</em> real<br />
-<em>Dimensions:</em> (<a class="wikilink codevar-wikilink" href="../basic#ntypat">ntypat</a>)<br />
+<em>Dimensions:</em> (<a class="wikilink codevar-wikilink" href="../../../variables/basic#ntypat">ntypat</a>)<br />
 <em>Default value:</em> <a class="wikilink" data-content="This is an external parameter
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
-" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
+" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../variables/external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
 <p>Charge of the pseudo-ion (=number of valence electrons that are needed to
 screen exactly the pseudopotential).</p>
                 
@@ -3470,7 +3470,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../../topics/" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3523,7 +3523,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../../topics/" title="Topics" class="md-tabs__link">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link">
           Topics
         </a>
       

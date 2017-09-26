@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="GWls Abinit topic">
+        <meta name="description" content="'GWls Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/GWls/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2950,16 +2950,16 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to perform a GW- Lanczos-Sternheimer calculation with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>** This functionality is not in production.**</p>
-<p>A high performance G0W0 implementation <a class="wikilink citation-wikilink" data-content="Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#janssen2015">[Janssen2015]</a> has been developed
+<p>A high performance G0W0 implementation <a class="wikilink citation-wikilink" data-content="Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#janssen2015">[Janssen2015]</a> has been developed
 within ABINIT. It is more efficient than the traditional implementation
-<a class="wikilink citation-wikilink" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gonze2009">[Gonze2009]</a>,<a class="wikilink citation-wikilink" data-content="{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#giantomassi2011">[Giantomassi2011]</a> thanks to the treatment of the two major
+<a class="wikilink citation-wikilink" data-content="{ABINIT}: First-Principle approach to material and nanosystem properties" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#gonze2009">[Gonze2009]</a>,<a class="wikilink citation-wikilink" data-content="{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#giantomassi2011">[Giantomassi2011]</a> thanks to the treatment of the two major
 bottlenecks: the summations over conduction states and the inversion of the
 dielectric matrix. However, note that this implementation has only limited
 applicability at present (see below).</p>
 <ul>
-<li>The first bottleneck is circumvented by converting the summations into Sternheimer equations. Note that the introduction of approximations beyond the G0W0 (such as analytic continuation <a class="wikilink citation-wikilink" data-content="The {GW} space-time method for the self-energy of large systems" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#rieger1999">[Rieger1999]</a>) is avoided thanks to use of the simplified quasiminimal residual (SQMR) algorithm <a class="wikilink citation-wikilink" data-content="Software for simplified {L}anczos and {QMR} algorithms" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#freund1995">[Freund1995]</a>.</li>
+<li>The first bottleneck is circumvented by converting the summations into Sternheimer equations. Note that the introduction of approximations beyond the G0W0 (such as analytic continuation <a class="wikilink citation-wikilink" data-content="The {GW} space-time method for the self-energy of large systems" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#rieger1999">[Rieger1999]</a>) is avoided thanks to use of the simplified quasiminimal residual (SQMR) algorithm <a class="wikilink citation-wikilink" data-content="Software for simplified {L}anczos and {QMR} algorithms" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#freund1995">[Freund1995]</a>.</li>
 <li>Then, the second bottleneck is assessed by expressing the dielectric matrix in a Lanczos basis, which reduces the matrix size by orders of magnitude with respect to a plane wave basis.
-A model dielectric operator has also been developed <a class="wikilink citation-wikilink" data-content="Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#janssen2015">[Janssen2015]</a> and can
+A model dielectric operator has also been developed <a class="wikilink citation-wikilink" data-content="Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#janssen2015">[Janssen2015]</a> and can
 optionally be used to further reduce the dielectric matrix size. The resulting
 implementation exhibits a 500-fold speedup for the silane molecule, without
 introducing approximations beyond the G0W0 formalism and the pseudopotential
@@ -2968,55 +2968,55 @@ method.</li>
 <p>At the time of writing, the implementation supports simulations of molecular
 systems only (only one k-point).</p>
 <p>Furthermore, it does not supports PAW and spinors.</p>
-<p>However, it supports parallelism over bands and FFTs <a class="wikilink citation-wikilink" data-content="Large-scale ab initio calculations based on three levels of parallelization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#bottin2008">[Bottin2008]</a>.</p>
+<p>However, it supports parallelism over bands and FFTs <a class="wikilink citation-wikilink" data-content="Large-scale ab initio calculations based on three levels of parallelization" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#bottin2008">[Bottin2008]</a>.</p>
 <p>To compute G0W0 corrections to DFT eigenenergies, one needs to set
-<a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a>= 66 in the input file. This type of calculation requires that
+<a class="wikilink codevar-wikilink" href="../../../variables/gstate#optdriver">optdriver</a>= 66 in the input file. This type of calculation requires that
 the ground state density and wavefunctions be available from disk (using
-<a class="wikilink codevar-wikilink" href="../../variables/files#getden">getden</a> and <a class="wikilink codevar-wikilink" href="../../variables/files#getwfk">getwfk</a>). It also requires the user to specify the state to
-be corrected (<a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_band_index">gwls_band_index</a>), the maximum allowed residual when solving
-the Sternheimer equations (<a class="wikilink codevar-wikilink" href="../../variables/basic#tolwfr">tolwfr</a>), and the number of Lanczos vectors used
-to express the dielectric matrix (<a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_stern_kmax">gwls_stern_kmax</a>). Note that a
+<a class="wikilink codevar-wikilink" href="../../../variables/files#getden">getden</a> and <a class="wikilink codevar-wikilink" href="../../../variables/files#getwfk">getwfk</a>). It also requires the user to specify the state to
+be corrected (<a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_band_index">gwls_band_index</a>), the maximum allowed residual when solving
+the Sternheimer equations (<a class="wikilink codevar-wikilink" href="../../../variables/basic#tolwfr">tolwfr</a>), and the number of Lanczos vectors used
+to express the dielectric matrix (<a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_stern_kmax">gwls_stern_kmax</a>). Note that a
 convergence study on the latter value is required to check the accuracy of the
 results. Since only molecular systems are currently supported, the calculation
 also requires that the Coulomb potential be spherically truncated
-(<a class="wikilink codevar-wikilink" href="../../variables/gw#icutcoul">icutcoul</a>= 0) with a radius <a class="wikilink codevar-wikilink" href="../../variables/gw#rcut">rcut</a> that should be validated with a
+(<a class="wikilink codevar-wikilink" href="../../../variables/gw#icutcoul">icutcoul</a>= 0) with a radius <a class="wikilink codevar-wikilink" href="../../../variables/gw#rcut">rcut</a> that should be validated with a
 convergence study.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#rcut">rcut</a>  Radius of the CUT-off for coulomb interaction</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#vcutgeo">vcutgeo</a>  V (potential) CUT-off GEOmetry</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_band_index">gwls_band_index</a>  GWLS BAND INDEX</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_correlation">gwls_correlation</a>  GWLS CORRELATION</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_diel_model">gwls_diel_model</a>  GWLS dielectric model</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_exchange">gwls_exchange</a>  GWLS exact EXCHANGE</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_first_seed">gwls_first_seed</a>  GWLS FIRST SEED vector</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_kmax_analytic">gwls_kmax_analytic</a>  GWLS KMAX for the ANALYTIC term</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_kmax_complement">gwls_kmax_complement</a>  GWLS KMAX for the COMPLEMENT space.</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_kmax_numeric">gwls_kmax_numeric</a>  GWLS KMAX for the NUMERIC term</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_kmax_poles">gwls_kmax_poles</a>  GWLS KMAX for the calculation of the POLES residue</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_list_proj_freq">gwls_list_proj_freq</a>  GWLS LIST of the PROJection FREQuencies</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_model_parameter">gwls_model_parameter</a>  GWLS MODEL PARAMETER</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_n_proj_freq">gwls_n_proj_freq</a>  GWLS Number of PROJection FREQuencies</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>  GWLS Number of PoinTs to use for the GAUSSian QUADrature </li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_nseeds">gwls_nseeds</a>  GWLS Number of SEED vectorS</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_print_debug">gwls_print_debug</a>  GWLS PRINT level for DEBUGging</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_recycle">gwls_recycle</a>  GWLS RECYCLE</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gw#gwls_stern_kmax">gwls_stern_kmax</a>  GWLS Kmax</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_band_index">gwls_band_index</a>  GWLS BAND INDEX</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_correlation">gwls_correlation</a>  GWLS CORRELATION</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_diel_model">gwls_diel_model</a>  GWLS dielectric model</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_exchange">gwls_exchange</a>  GWLS exact EXCHANGE</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_first_seed">gwls_first_seed</a>  GWLS FIRST SEED vector</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_kmax_analytic">gwls_kmax_analytic</a>  GWLS KMAX for the ANALYTIC term</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_kmax_complement">gwls_kmax_complement</a>  GWLS KMAX for the COMPLEMENT space.</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_kmax_numeric">gwls_kmax_numeric</a>  GWLS KMAX for the NUMERIC term</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_kmax_poles">gwls_kmax_poles</a>  GWLS KMAX for the calculation of the POLES residue</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_list_proj_freq">gwls_list_proj_freq</a>  GWLS LIST of the PROJection FREQuencies</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_model_parameter">gwls_model_parameter</a>  GWLS MODEL PARAMETER</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_n_proj_freq">gwls_n_proj_freq</a>  GWLS Number of PROJection FREQuencies</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_npt_gauss_quad">gwls_npt_gauss_quad</a>  GWLS Number of PoinTs to use for the GAUSSian QUADrature </li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_nseeds">gwls_nseeds</a>  GWLS Number of SEED vectorS</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_print_debug">gwls_print_debug</a>  GWLS PRINT level for DEBUGging</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_recycle">gwls_recycle</a>  GWLS RECYCLE</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#gwls_stern_kmax">gwls_stern_kmax</a>  GWLS Kmax</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t77.in" target="_blank">tests/paral/Input/t77.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t77.in" target="_blank">tests/paral/Input/t77.in</a></li>
 </ul>
 <p><em>v67mbpt:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v67mbpt/Input/t15.in" target="_blank">tests/v67mbpt/Input/t15.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Molecular SiH4 in GWLS (G0W0 with Lanczos basis and Sternheimer equations)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v67mbpt/Input/t15.in" target="_blank">tests/v67mbpt/Input/t15.in</a></li>
 </ul>
                 
                   
@@ -3058,7 +3058,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3111,7 +3111,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

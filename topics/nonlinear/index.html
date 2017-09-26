@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="nonlinear Abinit topic">
+        <meta name="description" content="'nonlinear Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/nonlinear/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2977,7 +2977,7 @@ center: when the zero of the energy scale is set at the incident light energy,
 the absolute value of the energy of the peaks corresponds to the energy of the
 phonons.</p>
 <p>The computation of phonon energies is presented in <a class="wikilink topic-wikilink" data-content="How to compute phonon frequencies and modes, IR and Raman spectra, Born effective
-charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../Phonons">Phonons topic</a>. Raman
+charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Phonons">Phonons topic</a>. Raman
 intensities due to one-phonon emission or absorption are not linked to second-
 order derivatives of the total energy, but, within the adiabatic
 approximation, to derivative of the dielectric phonon with respect to atomic
@@ -2992,94 +2992,94 @@ the gap, the DFPT cannot be used, but, if the adiabatic approximation can be
 used (the phonon frequency much smaller than the gap, and also features
 smaller than the largest phonon frequency cannot be resolved in the Raman
 spectrum), one can compute the Raman intensities thanks to finite differences
-of dielectric function, see <a class="wikilink citation-wikilink" data-content="First-principles study of excitonic effects in Raman intensities" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gillet2013">[Gillet2013]</a>. For the two-phonon Raman spectrum,
-see <a class="wikilink citation-wikilink" data-content="Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#gillet2017">[Gillet2017]</a>.</p>
+of dielectric function, see <a class="wikilink citation-wikilink" data-content="First-principles study of excitonic effects in Raman intensities" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#gillet2013">[Gillet2013]</a>. For the two-phonon Raman spectrum,
+see <a class="wikilink citation-wikilink" data-content="Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#gillet2017">[Gillet2017]</a>.</p>
 <p>Both the derivatives of the linear electronic dielectric susceptibilities with
 respect to atomic displacements and the non-linear electronic dielectric
 susceptibilities required to evaluate the Raman intensities are thus non-
 linear responses. In the ABINIT implementation, they are computed within the
-density functional perturbation theory, as described in <a class="wikilink citation-wikilink" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#veithen2005">[Veithen2005]</a>.
+density functional perturbation theory, as described in <a class="wikilink citation-wikilink" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#veithen2005">[Veithen2005]</a>.
 Thanks to the 2n+1 theorem, their formulation only requires the knowledge of
 the ground-state and first-order changes in the wavefunctions.</p>
 <p>This non-linear response formalism has been successfully applied to a large
 variety of systems. We have so far studied the Raman spectra of ferroelectric
-oxides ( BaTiO3 and PbTiO3 <a class="wikilink citation-wikilink" data-content="Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#hermet2009">[Hermet2009]</a>), different minerals under pressure
-conditions characteristic to the interior of the Earth <a class="wikilink citation-wikilink" data-content="Post-perovskite phase in selected sesquioxides from density-functional calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#caracas2007a">[Caracas2007a]</a> or
-molecular solids under extreme conditions <a class="wikilink citation-wikilink" data-content="Dynamical Instabilities of Ice X" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#caracas2008">[Caracas2008]</a>. The computation of
+oxides ( BaTiO3 and PbTiO3 <a class="wikilink citation-wikilink" data-content="Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#hermet2009">[Hermet2009]</a>), different minerals under pressure
+conditions characteristic to the interior of the Earth <a class="wikilink citation-wikilink" data-content="Post-perovskite phase in selected sesquioxides from density-functional calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#caracas2007a">[Caracas2007a]</a> or
+molecular solids under extreme conditions <a class="wikilink citation-wikilink" data-content="Dynamical Instabilities of Ice X" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#caracas2008">[Caracas2008]</a>. The computation of
 the non-linear optical susceptibilities has also been applied to several polar
-dielectrics <a class="wikilink citation-wikilink" data-content="Prediction of polar ordered oxynitride perovskites" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#caracas2007">[Caracas2007]</a>.</p>
+dielectrics <a class="wikilink citation-wikilink" data-content="Prediction of polar ordered oxynitride perovskites" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#caracas2007">[Caracas2007]</a>.</p>
 <p>As a by-product of the calculation of the Raman tensor and non-linear optical
 coefficients, it is also possible to determine directly within ABINIT the
 electro-optic (EO) coefficients rijγ (Pockels effect) which describe the
 change of optical dielectric tensor in a (quasi-)static electric field through
-the following expression <a class="wikilink citation-wikilink" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#veithen2005">[Veithen2005]</a>: Δ(ε-1)ij=∑γ=1,3 rijγΕγ</p>
+the following expression <a class="wikilink citation-wikilink" data-content="Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#veithen2005">[Veithen2005]</a>: Δ(ε-1)ij=∑γ=1,3 rijγΕγ</p>
 <p>The clamped (zero strain) EO coefficients include an electronic and an ionic
 contribution directly accessible within ABINIT. The unclamped EO coefficients
 include an additional piezoelectric contribution which must be computed
 separately from the knowledge of the elasto-optic and piezoelectric strain
 coefficients. This formalism was for instance applied to different
-ferroelectric ABO3 compounds <a class="wikilink citation-wikilink" data-content="Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#veithen2005a">[Veithen2005a]</a>.</p>
+ferroelectric ABO3 compounds <a class="wikilink citation-wikilink" data-content="Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#veithen2005a">[Veithen2005a]</a>.</p>
 <p>The implementation is available for norm-conserving pseudopotentials, in the
 LDA approximation. The extension to the PAW framework is in progress.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert1_atpol">d3e_pert1_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert1_dir">d3e_pert1_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: DIRections</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert1_elfd">d3e_pert1_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: ELectric FielD</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert1_phon">d3e_pert1_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: PHONons</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert2_atpol">d3e_pert2_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert2_dir">d3e_pert2_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: DIRections</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert2_elfd">d3e_pert2_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: ELectric FielD</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert2_phon">d3e_pert2_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: PHONons</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert3_atpol">d3e_pert3_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert3_dir">d3e_pert3_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: DIRections</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert3_elfd">d3e_pert3_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: ELectric FielD</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#d3e_pert3_phon">d3e_pert3_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: PHONons</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#prepanl">prepanl</a>  PREPAre Non-Linear response calculation</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#alphon">alphon</a>  ALign PHONon mode eigendisplacements</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#ramansr">ramansr</a>  RAMAN Sum-Rule</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert1_atpol">d3e_pert1_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert1_dir">d3e_pert1_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: DIRections</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert1_elfd">d3e_pert1_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: ELectric FielD</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert1_phon">d3e_pert1_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 1: PHONons</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert2_atpol">d3e_pert2_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert2_dir">d3e_pert2_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: DIRections</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert2_elfd">d3e_pert2_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: ELectric FielD</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert2_phon">d3e_pert2_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 2: PHONons</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert3_atpol">d3e_pert3_atpol</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: limits of ATomic POLarisations</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert3_dir">d3e_pert3_dir</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: DIRections</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert3_elfd">d3e_pert3_elfd</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: ELectric FielD</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#d3e_pert3_phon">d3e_pert3_phon</a>  3<sup>rd</sup> Derivative of Energy, mixed PERTurbation 3: PHONons</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#prepanl">prepanl</a>  PREPAre Non-Linear response calculation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#alphon">alphon</a>  ALign PHONon mode eigendisplacements</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#ramansr">ramansr</a>  RAMAN Sum-Rule</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#nlflag">nlflag</a>  Non-Linear FLAG</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#optdriver">optdriver</a>  OPTions for the DRIVER</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#nlflag">nlflag</a>  Non-Linear FLAG</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/files#get1den">get1den</a>  GET the first-order density from _1DEN file</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/files#ird1den">ird1den</a>  Integer that governs the ReaDing of 1<sup>st</sup>-order DEN file</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/anaddb#prtmbm">prtmbm</a>  PRinT Mode-By-Mode decomposition of the electrooptic tensor</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/files#get1den">get1den</a>  GET the first-order density from _1DEN file</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/files#ird1den">ird1den</a>  Integer that governs the ReaDing of 1<sup>st</sup>-order DEN file</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/anaddb#prtmbm">prtmbm</a>  PRinT Mode-By-Mode decomposition of the electrooptic tensor</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="GaAs in zinc-blende structure;  GS and RF calculation (similar to test v2 #30,  except that only two q points are considered) the 5-th dataset compute 3DTE. localrdwf=1 Also check parallelism for Raman calculations." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t54.in" target="_blank">tests/paral/Input/t54.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="GaAs in zinc-blende structure;  GS and RF calculation (similar to test v2 #30,  except that only two q points are considered) the 5-th dataset compute 3DTE. localrdwf=1 Also check parallelism for Raman calculations." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t54.in" target="_blank">tests/paral/Input/t54.in</a></li>
 </ul>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="AlAs (zinc-blende structure). Compute different response functions,  then perform a computation of 3rd derivative of total energy. (to be described in more detail)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t83.in" target="_blank">tests/v3/Input/t83.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs (zinc-blende structure). Compute different response functions,  then perform a computation of 3rd derivative of total energy. (to be described in more detail)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v3/Input/t83.in" target="_blank">tests/v3/Input/t83.in</a></li>
 </ul>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 53 and 54." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t52.in" target="_blank">tests/v4/Input/t52.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 53,  for the generation of the electro-optic tensor,  and Raman susceptibility coefficients." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t54.in" target="_blank">tests/v4/Input/t54.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code abinit (gstate+respfn+nonlinear) Generate the linear and non-linear coefficients,  in two DDBs, to be merged and analysed in the tests 53 and 54." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v4/Input/t52.in" target="_blank">tests/v4/Input/t52.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 53,  for the generation of the electro-optic tensor,  and Raman susceptibility coefficients." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v4/Input/t54.in" target="_blank">tests/v4/Input/t54.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized. However nsppol=2 for testing purposes. Over 1200 WARNINGS. This test must give the same results of the test 64 non-linear response with nsppol=1 does not support MPI with nprocs &amp;gt; 1" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t63.in" target="_blank">tests/v6/Input/t63.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized Over 1200 WARNINGS. This test must give the same results of the test 63" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t64.in" target="_blank">tests/v6/Input/t64.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="NaCl Molecule in a big box 3DTE calculation with only one k-point" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t65.in" target="_blank">tests/v6/Input/t65.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="He dimer,  with bare pseudopotential ixc=0 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  giving DFPT: 0.039868 Finite-differences: 1.6318415296 - 1.6216781815 = 0.0101633077 to be divided by 0.02 (the difference in xcart) and 4pi =&amp;gt; 0.040439 Going to ngkpt 80 1 1,  gives: DFPT: 0.040052 Finite-differences: 0.040054 The DFPT with ngkpt 320 1 1 gives 0.040055." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t66.in" target="_blank">tests/v6/Input/t66.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Charged (He dimer)+,  with bare pseudopotential. ixc=7 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  like the previous one. Going to ngkpt 80 1 1 gives Finite-differences: 0.022275 The DFPT with ngkpt 320 1 1 gives 0.022279 . (To obtain the finite-difference results,  one has to reactivate the dtset 15 case) Cannot be executed on more that 1 MPI proc due to different values of nband_k" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t67.in" target="_blank">tests/v6/Input/t67.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized. However nsppol=2 for testing purposes. Over 1200 WARNINGS. This test must give the same results of the test 64 non-linear response with nsppol=1 does not support MPI with nprocs &amp;gt; 1" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t63.in" target="_blank">tests/v6/Input/t63.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Si diatomic molecule Test of linear and non-linear response in the non-spin-polarized case. Only four bands are allowed,  both spin-up and spin-down,  so that the molecule is non spin polarized Over 1200 WARNINGS. This test must give the same results of the test 63" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t64.in" target="_blank">tests/v6/Input/t64.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="NaCl Molecule in a big box 3DTE calculation with only one k-point" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t65.in" target="_blank">tests/v6/Input/t65.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="He dimer,  with bare pseudopotential ixc=0 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  giving DFPT: 0.039868 Finite-differences: 1.6318415296 - 1.6216781815 = 0.0101633077 to be divided by 0.02 (the difference in xcart) and 4pi =&amp;gt; 0.040439 Going to ngkpt 80 1 1,  gives: DFPT: 0.040052 Finite-differences: 0.040054 The DFPT with ngkpt 320 1 1 gives 0.040055." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t66.in" target="_blank">tests/v6/Input/t66.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Charged (He dimer)+,  with bare pseudopotential. ixc=7 Compute Raman intensity,  showing essentially perfect agreement between DFPT and finite-differences,  when the number of k points is extended to infinity. The present test use ngkpt 10 1 1,  like the previous one. Going to ngkpt 80 1 1 gives Finite-differences: 0.022275 The DFPT with ngkpt 320 1 1 gives 0.022279 . (To obtain the finite-difference results,  one has to reactivate the dtset 15 case) Cannot be executed on more that 1 MPI proc due to different values of nband_k" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t67.in" target="_blank">tests/v6/Input/t67.in</a></li>
 </ul>
 <p><em>v8:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test t48,  for the generation of the nonlinear coefficients and the first order change of the dielectric tensor." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t49.in" target="_blank">tests/v8/Input/t49.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 48,  for the generation of the nonlinear coefficients only." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t50.in" target="_blank">tests/v8/Input/t50.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test t48,  for the generation of the nonlinear coefficients and the first order change of the dielectric tensor." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v8/Input/t49.in" target="_blank">tests/v8/Input/t49.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="AlAs,  zinc-blende structure. Code anaddb Analyse the DDB from test 48,  for the generation of the nonlinear coefficients only." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v8/Input/t50.in" target="_blank">tests/v8/Input/t50.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
-<p><a class="wikilink lesson-wikilink" href="../../tutorials/nlo">The lesson on static non-linear properties</a> presents the
+<p><a class="wikilink lesson-wikilink" href="../../../tutorials/nlo">The lesson on static non-linear properties</a> presents the
 computation of responses beyond the linear order, within Density-Functional
 Perturbation Theory (beyond the simple Sum-Over-State approximation): Raman
 scattering efficiencies (non-resonant case), non-linear electronic
@@ -3126,7 +3126,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3179,7 +3179,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       

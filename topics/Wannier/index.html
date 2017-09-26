@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Wannier Abinit topic">
+        <meta name="description" content="'Wannier Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/Wannier/">
@@ -307,7 +307,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
@@ -644,8 +644,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Topic List" class="md-nav__link">
-      Topic List
+    <a href="../../user-guide/features/" title="Features" class="md-nav__link">
+      Features
     </a>
   </li>
 
@@ -2965,11 +2965,11 @@ Change the input yaml files or the python code
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>There are two ways to obtain Wannier functions with ABINIT:</p>
 <ul>
-<li>The first one is to use an internal implementation of Projected Local Orbital Wannier functions <a class="wikilink citation-wikilink" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#amadon2008">[Amadon2008]</a>, <a class="wikilink citation-wikilink" data-content="Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#amadon2015">[Amadon2015]</a> that can be activated with the input variable <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_compute">plowan_compute</a>. The variables <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_bandi">plowan_bandi</a> and <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_bandf">plowan_bandf</a> specifies the Kohn Sham bands that are used to built Wannier functions, whereas variables <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_natom">plowan_natom</a>,<a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_iatom">plowan_iatom</a>,<a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_nbl">plowan_nbl</a>, <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_lcalc">plowan_lcalc</a>, and <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_projcalc">plowan_projcalc</a> specify the atoms, angular momentum and projectors corresponding to the projected local Orbital Wannier functions. </li>
+<li>The first one is to use an internal implementation of Projected Local Orbital Wannier functions <a class="wikilink citation-wikilink" data-content="Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#amadon2008">[Amadon2008]</a>, <a class="wikilink citation-wikilink" data-content="Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#amadon2015">[Amadon2015]</a> that can be activated with the input variable <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_compute">plowan_compute</a>. The variables <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_bandi">plowan_bandi</a> and <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_bandf">plowan_bandf</a> specifies the Kohn Sham bands that are used to built Wannier functions, whereas variables <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_natom">plowan_natom</a>,<a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_iatom">plowan_iatom</a>,<a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_nbl">plowan_nbl</a>, <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_lcalc">plowan_lcalc</a>, and <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_projcalc">plowan_projcalc</a> specify the atoms, angular momentum and projectors corresponding to the projected local Orbital Wannier functions. </li>
 </ul>
 <p>In order to do Wannier interpolation or analysis of hopping integrals, real
-space Wannier functions can be built using the variables <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_realspace">plowan_realspace</a>
-and <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_nt">plowan_nt</a> as well as <a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_it">plowan_it</a>. Real space Hamiltonian for
+space Wannier functions can be built using the variables <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_realspace">plowan_realspace</a>
+and <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_nt">plowan_nt</a> as well as <a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_it">plowan_it</a>. Real space Hamiltonian for
 analysis is given in latex file whose name ending is &ldquo;wanniereigen&rdquo; and the
 band structure is given in the output and log file.</p>
 <ul>
@@ -2985,47 +2985,47 @@ band structure is given in the output and log file.</p>
 and compute these two ingredients. Then, Wannier90 is run. Wannier90 is
 included as a library and ABINIT and the process is automatic, so that in a
 single run you can do both the ground state calculation and the computation of
-MLWFs. The input variables <a class="wikilink codevar-wikilink" href="../../variables/files#prtwant">prtwant</a>, <a class="wikilink codevar-wikilink" href="../../variables/w90#w90iniprj">w90iniprj</a> and <a class="wikilink codevar-wikilink" href="../../variables/w90#w90prtunk">w90prtunk</a> are
+MLWFs. The input variables <a class="wikilink codevar-wikilink" href="../../../variables/files#prtwant">prtwant</a>, <a class="wikilink codevar-wikilink" href="../../../variables/w90#w90iniprj">w90iniprj</a> and <a class="wikilink codevar-wikilink" href="../../../variables/w90#w90prtunk">w90prtunk</a> are
 related to the use of the wannier90 librairy.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/w90#w90iniprj">w90iniprj</a>  Wannier90- INItial PROJections</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/w90#w90prtunk">w90prtunk</a>  Wannier90- PRINT UNKp.s file</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/w90#w90iniprj">w90iniprj</a>  Wannier90- INItial PROJections</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/w90#w90prtunk">w90prtunk</a>  Wannier90- PRINT UNKp.s file</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_bandf">plowan_bandf</a>  Projected Local Orbital WANnier functions BAND Final</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_bandi">plowan_bandi</a>  Projected Local Orbital WANnier functions BAND Initial</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_compute">plowan_compute</a>  Projected Local Orbital WANnier functions COMPUTATION</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_iatom">plowan_iatom</a>  Projected Local Orbital WANnier functions, Index of ATOM</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_lcalc">plowan_lcalc</a>  Projected Local Orbital WANnier functions,  L values to use for CALCulation</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_natom">plowan_natom</a>  Projected Local Orbital WANnier functions, Number of ATOMs</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_nbl">plowan_nbl</a>  Projected Local Orbital WANnier functions,  NumBer of L values</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_projcalc">plowan_projcalc</a>  Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/files#prtwant">prtwant</a>  PRinT WANT file</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_bandf">plowan_bandf</a>  Projected Local Orbital WANnier functions BAND Final</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_bandi">plowan_bandi</a>  Projected Local Orbital WANnier functions BAND Initial</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_compute">plowan_compute</a>  Projected Local Orbital WANnier functions COMPUTATION</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_iatom">plowan_iatom</a>  Projected Local Orbital WANnier functions, Index of ATOM</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_lcalc">plowan_lcalc</a>  Projected Local Orbital WANnier functions,  L values to use for CALCulation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_natom">plowan_natom</a>  Projected Local Orbital WANnier functions, Number of ATOMs</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_nbl">plowan_nbl</a>  Projected Local Orbital WANnier functions,  NumBer of L values</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_projcalc">plowan_projcalc</a>  Projected Local Orbital WANnier functions,  PROJectors values to use for CALCulation</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/files#prtwant">prtwant</a>  PRinT WANT file</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_it">plowan_it</a>  Projected Local Orbital WANnier functions,  Index of Translation.</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_nt">plowan_nt</a>  Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_it">plowan_it</a>  Projected Local Orbital WANnier functions,  Index of Translation.</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_nt">plowan_nt</a>  Projected Local Orbital WANnier functions,  Number of Translation on which the real space values of
 energy are computed</li>
-<li><a class="wikilink codevar-wikilink" href="../../variables/dev#plowan_realspace">plowan_realspace</a>  Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.</li>
+<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#plowan_realspace">plowan_realspace</a>  Projected Local Orbital WANnier functions,  activate REAL SPACE calculation.</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t71.in" target="_blank">tests/v7/Input/t71.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Calculation of Projected Wannier functions and compute a simplified interpolated band structure" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t72.in" target="_blank">tests/v7/Input/t72.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Calculation of Projected Wannier functions and compute band structure in the d orbital Wannier basis" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v7/Input/t71.in" target="_blank">tests/v7/Input/t71.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Calculation of Projected Wannier functions and compute a simplified interpolated band structure" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v7/Input/t72.in" target="_blank">tests/v7/Input/t72.in</a></li>
 </ul>
 <p><em>wannier90:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Gallium Arsenide,  zinc-blende. 8 bands. prtwant=2 Should still be completed by the call to wannier90,  and subsequent fldiff use..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t01.in" target="_blank">tests/wannier90/Input/t01.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="The same as in 01 but using PAW." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t02.in" target="_blank">tests/wannier90/Input/t02.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Cannot be executed in parallel (mlwfovl_qp) Si fcc,  in primitive cell (2 atoms/cell) Test of self-consistent model GW (2 iterations) following Faleev et al., [PRL 93,  126406 (2004)] followed by construction of quasiparticle maximally-localized wannier functions [Hamann &amp;amp; Vanderbilt, arXiv:0810.3616v1 (cond-mat.mtrl-sci)].  Cutoffs are set for test- acceptable speed,  and the results are poorly converged.  The input file is sufficiently annotated to serve as a model.  Note that well- converged GW calculations are extremely time consuming,  and in general it is advisable to run the SCGW part separately on a parallel system, and then run a separate serial job modeled on the last dataset, substituting &amp;quot;irdwfk&amp;quot; and &amp;quot;irdqps&amp;quot; for &amp;quot;getwfk&amp;quot; and &amp;quot;getqps, &amp;quot; with appropriate links to the files produced in the serial run.  Note that the _DEN file from the first dataset is also needed as input,  although the discontinued &amp;quot;irdden&amp;quot; input variable is not needed or supported. Note that acceptable names for the secondary input file needed by the wannier90 library are wannier90.win,  w90.win,  abo_DSn_w90.win (ndtset &amp;gt;0) and abo_w90.win (ndtset=0),  where abo is the 4th line of the .files file and n is the wannier dataset." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t03.in" target="_blank">tests/wannier90/Input/t03.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t11.in" target="_blank">tests/wannier90/Input/t11.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t12.in" target="_blank">tests/wannier90/Input/t12.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t13.in" target="_blank">tests/wannier90/Input/t13.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Gallium Arsenide,  zinc-blende. 8 bands. prtwant=2 Should still be completed by the call to wannier90,  and subsequent fldiff use..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t01.in" target="_blank">tests/wannier90/Input/t01.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="The same as in 01 but using PAW." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t02.in" target="_blank">tests/wannier90/Input/t02.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Cannot be executed in parallel (mlwfovl_qp) Si fcc,  in primitive cell (2 atoms/cell) Test of self-consistent model GW (2 iterations) following Faleev et al., [PRL 93,  126406 (2004)] followed by construction of quasiparticle maximally-localized wannier functions [Hamann &amp;amp; Vanderbilt, arXiv:0810.3616v1 (cond-mat.mtrl-sci)].  Cutoffs are set for test- acceptable speed,  and the results are poorly converged.  The input file is sufficiently annotated to serve as a model.  Note that well- converged GW calculations are extremely time consuming,  and in general it is advisable to run the SCGW part separately on a parallel system, and then run a separate serial job modeled on the last dataset, substituting &amp;quot;irdwfk&amp;quot; and &amp;quot;irdqps&amp;quot; for &amp;quot;getwfk&amp;quot; and &amp;quot;getqps, &amp;quot; with appropriate links to the files produced in the serial run.  Note that the _DEN file from the first dataset is also needed as input,  although the discontinued &amp;quot;irdden&amp;quot; input variable is not needed or supported. Note that acceptable names for the secondary input file needed by the wannier90 library are wannier90.win,  w90.win,  abo_DSn_w90.win (ndtset &amp;gt;0) and abo_w90.win (ndtset=0),  where abo is the 4th line of the .files file and n is the wannier dataset." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t03.in" target="_blank">tests/wannier90/Input/t03.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t11.in" target="_blank">tests/wannier90/Input/t11.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t12.in" target="_blank">tests/wannier90/Input/t12.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/wannier90/Input/t13.in" target="_blank">tests/wannier90/Input/t13.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>
@@ -3071,7 +3071,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           <li><a href="../../variables/" data-toggle="tooltip" data-placement="left" 
                   title=Variables><i class="fa fa-file-text-o"></i></a></li>
         
-          <li><a href="../" data-toggle="tooltip" data-placement="left" 
+          <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
                   title=Topics><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
@@ -3124,7 +3124,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
   
     <li class="md-tabs__item">
       
-        <a href="../" title="Topics" class="md-tabs__link md-tabs__link--active">
+        <a href="../../user-guide/features/" title="Topics" class="md-tabs__link md-tabs__link--active">
           Topics
         </a>
       
