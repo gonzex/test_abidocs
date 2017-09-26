@@ -165,7 +165,7 @@
   
   
   
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
   
     <svg class="md-svg">
       <defs>
@@ -186,7 +186,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <a href="http://www.abinit.org" title="abinit" class="md-logo md-header-nav__button">
-            <img src="../../images/abinit_logo.png" width="24" height="24">
+            <img src="../../images/logo-abinit-2015.svg" width="24" height="24">
           </a>
         
       </div>
@@ -399,7 +399,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     
       <i class="md-logo md-nav__button">
-        <img src="../../images/abinit_logo.png">
+        <img src="../../images/logo-abinit-2015.svg">
       </i>
     
     abinit
@@ -3191,7 +3191,7 @@ internal input variables to be used in the input file for the abinit executable.
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> (3,<a class="wikilink codevar-wikilink" href="../basic#nkpt">nkpt</a>)<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>If <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=0, or if one is doing a reponse calculation, this internal
+<p>If <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=0, or if one is doing a reponse calculation, this internal
 variable is derived from <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a> and <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>: <a class="wikilink codevar-wikilink" href="../internal#kptns">%kptns</a>(1:3,:)=
 <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a>(1:3,:)/ <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>, so that it is <a class="wikilink codevar-wikilink" href="../basic#kpt">kpt</a> renormalized by <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>.<br />
 If <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=1 and one is not doing a ground-state calculation, this internal
@@ -3205,7 +3205,7 @@ by <a class="wikilink codevar-wikilink" href="../basic#kptnrm">kptnrm</a>, then 
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable derives the maximum number of bands over all k-points
+<p>This internal variable derives the maximum number of bands over all k-points
 and spin-polarisation from <a class="wikilink codevar-wikilink" href="../basic#nband">nband</a>(1:nkpt*nsppol).</p>
 <h2 id="mgfft"><strong>mgfft</strong><a class="headerlink" href="#mgfft" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum of nGFFT<br />
@@ -3215,7 +3215,7 @@ augmented waves and pseudopotentials" data-placement="auto right" data-toggle="p
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>(1:3).</p>
+<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>(1:3).</p>
 <h2 id="mgfftdg"><strong>mgfftdg</strong><a class="headerlink" href="#mgfftdg" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum of nGFFT for the Double Grid<br />
 <em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
@@ -3224,7 +3224,7 @@ augmented waves and pseudopotentials" data-placement="auto right" data-toggle="p
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>(1:3).</p>
+<p>This internal variable contains the maximum of <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>(1:3).</p>
 <h2 id="mpw"><strong>mpw</strong><a class="headerlink" href="#mpw" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Maximum number of Plane Waves<br />
 <em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">INTERNAL_ONLY</a><br />
@@ -3233,7 +3233,7 @@ augmented waves and pseudopotentials" data-placement="auto right" data-toggle="p
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable gives the maximum of the number of plane waves over all
+<p>This internal variable gives the maximum of the number of plane waves over all
 k-points. It is computed from <a class="wikilink codevar-wikilink" href="../basic#ecut">ecut</a> and the description of the cell,
 provided by <a class="wikilink codevar-wikilink" href="../basic#acell">acell</a>, <a class="wikilink codevar-wikilink" href="../basic#rprim">rprim</a>, and/or <a class="wikilink codevar-wikilink" href="../basic#angdeg">angdeg</a>.</p>
 <h2 id="natpawu"><strong>natpawu</strong><a class="headerlink" href="#natpawu" title="Permanent link">&para;</a></h2>
@@ -3244,7 +3244,7 @@ provided by <a class="wikilink codevar-wikilink" href="../basic#acell">acell</a>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../paw#usepawu">usepawu</a>==1  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable gives the number of atoms on which the LDA/GGA+U method
+<p>This internal variable gives the number of atoms on which the LDA/GGA+U method
 is applied. This value is determined from <a class="wikilink codevar-wikilink" href="../paw#lpawu">lpawu</a>.</p>
 <h2 id="ndynimage"><strong>ndynimage</strong><a class="headerlink" href="#ndynimage" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Number of DYNamical IMAGEs<br />
@@ -3253,7 +3253,7 @@ is applied. This value is determined from <a class="wikilink codevar-wikilink" h
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable gives the number of dynamical images, immediately
+<p>This internal variable gives the number of dynamical images, immediately
 deduced from the number of non-zero values present in <a class="wikilink codevar-wikilink" href="../rlx#dynimage">dynimage</a>. It is used
 to dimension many memory-consuming arrays (one copy for each image), e.g. the
 wavefunction array (cg), the density array (rho), etc .</p>
@@ -3267,7 +3267,7 @@ wavefunction array (cg), the density array (rho), etc .</p>
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
 " data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable gives the number of electrons per unit cell, as
+<p>This internal variable gives the number of electrons per unit cell, as
 computed from the sum of the valence electrons related to each atom (given in
 the pseudopotential, where it is called &ldquo;zion&rdquo;), and the input variable
 <a class="wikilink codevar-wikilink" href="../gstate#charge">charge</a>:<br />
@@ -3280,7 +3280,7 @@ augmented waves and pseudopotentials" data-placement="auto right" data-toggle="p
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
+<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
 internal variable gives the number of Fast Fourier Transform points in the
 grid generated by <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>(1:3). It is simply the product of the three
 components of <a class="wikilink codevar-wikilink" href="../gstate#ngfft">ngfft</a>.<br />
@@ -3297,7 +3297,7 @@ augmented waves and pseudopotentials" data-placement="auto right" data-toggle="p
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
+<p>If space parallelisation is not used (that is, if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==0), this
 internal variable gives the number of Fast Fourier Transform points in the
 (double) grid generated by <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>(1:3). It is simply the product of the
 three components of <a class="wikilink codevar-wikilink" href="../paw#ngfftdg">ngfftdg</a>.<br />
@@ -3314,7 +3314,7 @@ interaction matrix, and inverse dielectric marix" data-placement="auto right" da
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p><a class="wikilink codevar-wikilink" href="../internal#npweps">%npweps</a> determines the size of the planewave set used to represent the
+<p><a class="wikilink codevar-wikilink" href="../internal#npweps">%npweps</a> determines the size of the planewave set used to represent the
 independent-particle susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>, the dielectric matrix
 <script type="math/tex">\epsilon</script> and its inverse.<br />
 It is an internal variable, determined from <a class="wikilink codevar-wikilink" href="../gw#ecuteps">ecuteps</a>.</p>
@@ -3325,7 +3325,7 @@ It is an internal variable, determined from <a class="wikilink codevar-wikilink"
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p><a class="wikilink codevar-wikilink" href="../internal#npwsigx">%npwsigx</a> determines the cut-off energy of the planewave set used to
+<p><a class="wikilink codevar-wikilink" href="../internal#npwsigx">%npwsigx</a> determines the cut-off energy of the planewave set used to
 generate the exchange part of the self-energy operator.<br />
 It is an internal variable, determed from <a class="wikilink codevar-wikilink" href="../gw#ecutsigx">ecutsigx</a>.</p>
 <h2 id="npwwfn"><strong>npwwfn</strong><a class="headerlink" href="#npwwfn" title="Permanent link">&para;</a></h2>
@@ -3336,7 +3336,7 @@ interaction matrix, and inverse dielectric marix" data-placement="auto right" da
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> None  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p><a class="wikilink codevar-wikilink" href="../internal#npwwfn">%npwwfn</a> is the size of the planewave set used to represent the
+<p><a class="wikilink codevar-wikilink" href="../internal#npwwfn">%npwwfn</a> is the size of the planewave set used to represent the
 wavefunctions in the formula that generates the independent-particle
 susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>. It is an internal variable, determined from
 <a class="wikilink codevar-wikilink" href="../gw#ecutwfn">ecutwfn</a>.</p>
@@ -3348,7 +3348,7 @@ susceptibility <script type="math/tex">\chi^{(0)}_{KS}</script>. It is an intern
 <em>Dimensions:</em> (3)<br />
 <em>Default value:</em> 3*0<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>==1  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [2/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>v3:  <a class="wikilink abifile-wikilink" data-content="NiTi simple cubic (RockSalt) Metallic. Different mems are zero. The second perturbation does not converge well ! Should be improved." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t85.in" target="_blank">t85.in</a>, <a class="wikilink abifile-wikilink" data-content="Si diamond Spin-polarized calculation (nspden=2) RF phonon with q=0.5 0 0" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t86.in" target="_blank">t86.in</a></li></ul></details><p>Only used if <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=1.<br />
+<p>Only used if <a class="wikilink codevar-wikilink" href="../gstate#nqpt">nqpt</a>=1.<br />
 In ground-state calculation, the vector <a class="wikilink codevar-wikilink" href="../internal#qptn">%qptn</a>(1:3) is added to each
 renormalized k point (whatever the value of <a class="wikilink codevar-wikilink" href="../basic#kptopt">kptopt</a> that was used) to
 generate the normalized, shifted, set of k-points <a class="wikilink codevar-wikilink" href="../internal#kptns">%kptns</a>(1:3,1: ** nkpt **
@@ -3372,7 +3372,7 @@ code).</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable is automatically set to 1 when the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>
+<p>This internal variable is automatically set to 1 when the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>
 refers to an Hartree-Fock calculation or hybrid functionals.</p>
 <ul>
 <li>0 =&gt; No use of exact exchange. </li>
@@ -3388,7 +3388,7 @@ refers to an Hartree-Fock calculation or hybrid functionals.</p>
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
 " data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
-<details class="note"><summary>Test list (click to open). Moderately used, [44/920] in all abinit tests, [5/116] in abinit tutorials</summary><ul><li>gpu:  <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure Test the use of GPU within Projector Augmented-Wave formalism. Test ferromagnetic and non-collinear magnetism. ABINIT v7.0: GPU is not used when nspinor=2" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t03.in" target="_blank">t03.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a></li><li>mpiio:  <a class="wikilink abifile-wikilink" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t99.in" target="_blank">t99.in</a></li><li>paral:  <a class="wikilink abifile-wikilink" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t91.in" target="_blank">t91.in</a>, <a class="wikilink abifile-wikilink" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t91.in" target="_blank">t91.in</a>, <a class="wikilink abifile-wikilink" data-content="Test k-point parallelization for selfconsistent DFT+DMFT calculations. NiO" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t91.in" target="_blank">t91.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC parallelism" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t92.in" target="_blank">t92.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC parallelism" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t92.in" target="_blank">t92.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t99.in" target="_blank">t99.in</a></li><li>tutorial:  <a class="wikilink abifile-wikilink" data-content="second lesson of the LDA+U tutorial" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tdftu_2.in" target="_blank">tdftu_2.in</a>, <a class="wikilink abifile-wikilink" data-content="third lesson of the LDA+U tutorial" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tdftu_3.in" target="_blank">tdftu_3.in</a>, <a class="wikilink abifile-wikilink" data-content="Fourth lesson of the LDA+U tutorial" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tdftu_4.in" target="_blank">tdftu_4.in</a>, <a class="wikilink abifile-wikilink" data-content="Fe bcc 2 atomic supercell - ferromag.- PAW DJA 2010 &amp;amp; MT 2009 Prelimirary step for test v5#39 (macro_uj) and v5#40 (testirdden)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tudet_1.in" target="_blank">tudet_1.in</a>, <a class="wikilink abifile-wikilink" data-content="Fe bcc structure - ferromagnetic PAW determine U from change of occupation on atoms upon potential shift on atom 1" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tudet_2.in" target="_blank">tudet_2.in</a></li><li>v5:  <a class="wikilink abifile-wikilink" data-content="Simple test for LDA+U implementation. no forces,  2 Ni and 2 O atoms in an fcc supercell. The cut-off is unrealistic. This test tests the following part of the code : * paw LDA+U (pawpupot,  pawpuenergy,  pawpuinit)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t08.in" target="_blank">t08.in</a>, <a class="wikilink abifile-wikilink" data-content="Ni atom in a big box. Test the use of the atvshift variable : change the potential of the d orbitals." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t14.in" target="_blank">t14.in</a>, <a class="wikilink abifile-wikilink" data-content="Ni molecule in a big box. Test the use of the atvshift variable First dataset : no shift,  the ten states number 9 to 18 come from the 3d atomic states,  the state number 19 is a bonding 4s state. States number 16 and 17 are degenerate 3d pi antibonding states (m=1 and -1). State number 18 is a 3d sigma antibonding state (m=0). Second dataset : add a 0.001 atomic shift to the m=0 potential. Most of the levels change by less than 0.0002 (and their energy decrease),  except state number 9 (a 3d sigma bonding state (m=0)),  that goes from -0.24020 to -0.23982 (+0.0004) and state number 18,  that goes from -0.15439 to 0.15399 (+0.0004). Third dataset : add a 0.001 atomic shift to the m=1 and m=-1 potentials. All the levels are affected (likely the m=1 and -1 orbitals adjust,  and cause modification of the potential),  but the states 10,  11,  16,  and 17 increase their energy,  while the other state see their energy decrease. Acting separately on the m=1 potential or the m=-1 cause (correctly) the breaking of the degeneracy. This test was not easy to make portable. The problem lies in the fact that when the density becomes negative,  due to Bragg oscillations,  the xc kernel can be extremely large,  and when use for the prediction of the residual of the forces,  the differences between machines can be extremely large. IN order to see this effect,  put ecut 7 and npulayit 7 (its default value)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t15.in" target="_blank">t15.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO: 2 Ni and 2 O atoms in an fcc supercell. Different combinations of nsppol/nspden/nspinor/pawspnorb are tested in the PAW+U formalism: 1- non-magnetic                     nsppol/nspden/nspinor=1/1/1 2- non-magnetic LDA+U               nsppol/nspden/nspinor=1/1/1 3- ferro-magnetic LDA+U             nsppol/nspden/nspinor=2/2/1 4- antiferro-magnetic LDA+U         nsppol/nspden/nspinor=1/2/1 5- non-collinear magnetism          nsppol/nspden/nspinor=1/4/2 6- non-collinear magnetism LDA+U    nsppol/nspden/nspinor=1/4/2 7- non-collinear magnetism LDA+U+SO nsppol/nspden/nspinor=1/4/2 8- non-magnetic LDA+U+SO            nsppol/nspden/nspinor=1/1/2 Cut-off and k-points are unrealistic." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t16.in" target="_blank">t16.in</a>, <a class="wikilink abifile-wikilink" data-content="FCC Gadolinium. PAW + U calculation Test the imposition of the density matrix (10 first steps) and related variables. Test of partial DOS is also done (through the diff of DOS_AT0001)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t19.in" target="_blank">t19.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO antiferromagnetic. Test of prtfatbnd==2 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Computation of band structure in PAW+U * Calculation of partial DOS (diffs of partial DOS is not done) * Calculation of Fatbands (diff of a fatband file is done)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t20.in" target="_blank">t20.in</a>, <a class="wikilink abifile-wikilink" data-content="Crystalline Cu2O Computation of the total energy and EFG tensors in LDA+U formalism Note: Cu2O is a nonmagnetic insulator. However,  LDA+U as implemented requires nspden=2 in all cases." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t33.in" target="_blank">t33.in</a>, <a class="wikilink abifile-wikilink" data-content="Simple test for LDA+U features. 2 Ni and 2 O atoms in an fcc supercell. The cut-offs are unrealistic. The aim of this test is to verify: * Antiferromagnetism and PAW+U * Use of an initial and constant density matrix during the first SCF iterations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t37.in" target="_blank">t37.in</a>, <a class="wikilink abifile-wikilink" data-content="Preliminary step for test 40: bcc Fe ferromagnetic structure. Relatively low cut-offs and few k-points. This test is done within GGA and magnetism in PAW formalism. Wavefunction printed to be used in v5#39  test. Density is printed out to prepare v5#40 test." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t38.in" target="_blank">t38.in</a>, <a class="wikilink abifile-wikilink" data-content="Compute U in bcc Fe in 2 atomic supercell." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t39.in" target="_blank">t39.in</a>, <a class="wikilink abifile-wikilink" data-content="Density from test 38 is read;  then a non self-consistent calculation is done and the m-decomposed LDOS on the first atom is printed out." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t40.in" target="_blank">t40.in</a></li><li>v6:  <a class="wikilink abifile-wikilink" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t07.in" target="_blank">t07.in</a>, <a class="wikilink abifile-wikilink" data-content="DMFT tests on ferromagnetic NiO (2 atoms),  check DMFT for several values of dmft_solv : computes occupations and energy." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t45.in" target="_blank">t45.in</a>, <a class="wikilink abifile-wikilink" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t46.in" target="_blank">t46.in</a>, <a class="wikilink abifile-wikilink" data-content="DMFT on Gd (f-orbitals) without spin-orbit coupling : compute occupations and energy." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t47.in" target="_blank">t47.in</a></li><li>v7:  <a class="wikilink abifile-wikilink" data-content="(Apparently the documentation section of this test has been lost)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t21.in" target="_blank">t21.in</a>, <a class="wikilink abifile-wikilink" data-content="EuO rock salt structure. 27-electron PAW pseudo (4f and 5d are explicitly treated : 4d10 4f7 5s2 5p6 (5d0) 6s2 ) Test of initialisation using occopt=1 (the default) with non-zero spinmagntarget, and also metallic occopt. Also test pawxcdev=0" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t22.in" target="_blank">t22.in</a>, <a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute density,  WFC and KSS files." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t23.in" target="_blank">t23.in</a>, <a class="wikilink abifile-wikilink" data-content="Test the calculation of dielectric function in constrained RPA for SrVO3. Uses KSS file from test 23" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t24.in" target="_blank">t24.in</a>, <a class="wikilink abifile-wikilink" data-content="Test the computation of U in CRPA for SrVO3 for t2g and eg orbitals. Uses KSS and SCR file from tests 23 and 24." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t25.in" target="_blank">t25.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC within DMFT for VSrO3 NSCF over density" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t27.in" target="_blank">t27.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC options only. Not realistic" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t28.in" target="_blank">t28.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC options only. Not realistic" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t29.in" target="_blank">t29.in</a>, <a class="wikilink abifile-wikilink" data-content="Test entropy calculation for SrVO3 within DMFT" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t30.in" target="_blank">t30.in</a>, <a class="wikilink abifile-wikilink" data-content="Test restart of entropy calculation for SrVO3 within DMFT" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t31.in" target="_blank">t31.in</a>, <a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute cRPA screened interaction U in the d-dp(b) model" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t78.in" target="_blank">t78.in</a>, <a class="wikilink abifile-wikilink" data-content="For SrVO3,  compute cRPA screened interaction U by excluding an energy window to compute epsilon" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t79.in" target="_blank">t79.in</a></li><li>v8:  <a class="wikilink abifile-wikilink" data-content="Test CT-QMC within DMFT in ABINIT and QMC solver from TRIQS for VSrO3 NSCF over density" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t01.in" target="_blank">t01.in</a></li></ul></details><p>This variable is determined by the pseudopotentials files. PAW calculations
+<p>This variable is determined by the pseudopotentials files. PAW calculations
 (see <a class="wikilink lesson-wikilink" href="../../tutorials/paw1">paw1 lesson</a>) can only be performed with PAW atomic data input files,
 while pseudopotential calculations are performed in ABINIT with norm-
 conserving pseudopotential input files. Most functionalities in ABINIT are
@@ -3400,7 +3400,7 @@ available with either type of calculation.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>This internal variable is set to 1 when the recursion method is activated (see
+<p>This internal variable is set to 1 when the recursion method is activated (see
 <a class="wikilink codevar-wikilink" href="../dev#tfkinfunc">tfkinfunc</a>).</p>
 <h2 id="xclevel"><strong>xclevel</strong><a class="headerlink" href="#xclevel" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> eXchange Correlation functional LEVEL<br />
@@ -3410,7 +3410,7 @@ excitation energies" data-placement="auto right" data-toggle="popover" data-trig
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>Automatically determined from the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>.</p>
+<p>Automatically determined from the value of <a class="wikilink codevar-wikilink" href="../basic#ixc">ixc</a>.</p>
 <ul>
 <li>0 =&gt; No XC contribution. </li>
 <li>1 =&gt; LDA functional. </li>
@@ -3428,7 +3428,7 @@ their consequences" data-placement="auto right" data-toggle="popover" data-trigg
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
 " data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="Means that the value is read from the PSP file">AUTO_FROM_PSP</a>  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [0/920] in all abinit tests, [0/116] in abinit tutorials</summary></details><p>Charge of the pseudo-ion (=number of valence electrons that are needed to
+<p>Charge of the pseudo-ion (=number of valence electrons that are needed to
 screen exactly the pseudopotential).</p>
                 
                   
