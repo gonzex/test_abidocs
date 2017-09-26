@@ -415,7 +415,7 @@ Change the input yaml files or the python code
         pages = [MarkdownPage(os.path.join(workdir, fname), self) for fname in os.listdir(workdir)
                 if fname.endswith(".md") and fname != "index.md"]
 
-        index_md = ["# Index of files in %s.\n\n" % dirname]
+        #index_md = ["# Index of files in %s.\n\n" % dirname]
         for page in sorted(pages, key=lambda p: p.basename):
             try:
                 desc = page.meta["description"]
@@ -424,10 +424,10 @@ Change the input yaml files or the python code
                     "Markdown page `%s` does not have `description` key in front matter.\n"
                     "This is required to generate index.md automatically in python." % page.path)
             desc = desc[0]
-            index_md.append("*  [%s](%s): %s" % (page.basename.replace(".md", ""), page.url, desc))
+            #index_md.append("*  [%s](%s): %s" % (page.basename.replace(".md", ""), page.url, desc))
 
-        with self.new_mdfile(dirname, "index.md") as mdf:
-            mdf.write("\n".join(index_md))
+        #with self.new_mdfile(dirname, "index.md") as mdf:
+        #    mdf.write("\n".join(index_md))
 
     def generate_markdown_files(self):
         """Generate markdown files using the data stored in the bibtex file, the abivars file ..."""

@@ -4,8 +4,7 @@ body {
     background-image: url("http://www.pseudo-dojo.org/img/pw_maze_white.png");
 }
 
-/*
-*/
+/* Increase logo width because mkdocs material enforces 48 x 48 */
 .md-logo img {
     width: 48px;
     height: auto;
@@ -50,6 +49,12 @@ a.wikilink:hover:before {
     md-source
     md-footer-social__link
     md-footer-nav__link
+
+:not() selector
+.reMode_hover:not(.reMode_selected):hover
+{
+   background-color: #f0ac00;
+}
 
 a:link {
     color: black !important;
