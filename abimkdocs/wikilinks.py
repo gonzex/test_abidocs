@@ -20,8 +20,8 @@ from markdown.inlinepatterns import Pattern
 
 import re
 
-from abimkdocs.website import get_website
-website = get_website()
+from abimkdocs.website import Website
+website = Website.get()
 
 
 def build_url(label, base, end):

@@ -1,9 +1,40 @@
 /*
-a:link {
-    color: blue;
+*/
+body {
+    background-image: url("http://www.pseudo-dojo.org/img/pw_maze_white.png");
+}
+
+.md-logo img {
+    width: 48px;
+    height: auto;
 }
 
 
+/*
+    text-decoration: underline;
+    color: #E65100;
+    border-color: #FF8500;
+    border-color: #E65100;
+    md-nav__link
+    md-source
+    md-footer-social__link
+    md-footer-nav__link
+
+a:link {
+    color: black !important;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+a:link {
+    font-style: italic;
+}
+*/
+
+/*
 a:visited {
     color: purple;
 }
@@ -19,22 +50,36 @@ a.link:active {
 }
 */
 
-
-/* wikilink style */
-a.codevar-wikilink, a.abifile-wikilink {
-    /* 
-    font-family: 'Ubuntu Mono', monospace;
-     * */
-    font-family: Inconsolata, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-    */
+/* wikilink style 
+*/
+a.wikilink:link {
+    color: black !important;
+    border-bottom: 1px solid #000;
+    border-color: #E65100;
+    padding-bottom: 1px;
+    text-decoration: none;
+    font-style: italic;
 }
+
+
+/*
+a.codevar-wikilink, a.abifile-wikilink {
+    font-family: Inconsolata, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    color: #279fcd !important;
+    color: black !important;
+    color: #DA621E !important;
+    text-decoration: underline !important;
+    color: #EF6C00 ! important;
+    color: #FF6600 !important;
+    color: #E65100 !important;
+}
+*/
 
 /*
 a.citation-wikilink {
     font-family: 'Ubuntu Mono', monospace;
 }
 */
-
 
 /* Add fa icon to external links a la wikipedia.
  * See http://astronautweb.co/snippet/font-awesome/ */
@@ -65,7 +110,6 @@ a[href="https://github.com/abinit/abinit/"]:after {
   content:"" !important;
   padding-left: 0;
 }
-
 
 figure {
     text-align: center;
@@ -324,7 +368,6 @@ details.no-details:not([open]) summary {
 
 /* 
  * Based on example 5 of https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/ 
-
 .md-main {
 	counter-reset: section-1, section-2, section-3, section-4;
 }

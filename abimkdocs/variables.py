@@ -289,7 +289,7 @@ class Variable(yaml.YAMLObject):
             app("*The use of this variable forbids the use of:* %s  " % self.excludes)
 
         # Add links to tests.
-        if hasattr(self, "tests"):
+        if hasattr(self, "tests") and not self.is_internal:
             # Constitutes an usage report e.g.
             # Rarely used, in abinit tests [8/888], in tuto abinit tests [2/136].
             assert hasattr(self, "tests_info")

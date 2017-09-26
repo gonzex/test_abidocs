@@ -3,8 +3,8 @@ from __future__ import absolute_import, unicode_literals, print_function
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
-from abimkdocs.website import get_website
-website = get_website()
+from abimkdocs.website import Website
+website = Website.get()
 
 
 class MarkdownInclude(Extension):

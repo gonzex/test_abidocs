@@ -1,7 +1,7 @@
 # coding: utf-8
 """
 Classes and functions used to generate the (static) website with the Abinit documentation
-and tutorials using markdown files and mkdocs.
+and the tutorials from markdown files and mkdocs.
 """
 from __future__ import print_function, division, unicode_literals, absolute_import
 
@@ -21,6 +21,11 @@ from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
 from doc.tests.pymods.termcolor import cprint
 from .variables import Variable
+
+
+ABINIT_REPO = "/Users/gmatteo/git_repos/abinit_quick_prs/"
+if not os.path.exists(ABINIT_REPO):
+    raise ValueError("ABINIT_REPO: %s does not exist\n. Please change the global variable in the python module")
 
 
 class lazy_property(object):
@@ -77,10 +82,12 @@ class lazy_property(object):
 
 
 def my_unicode(s):
+    """Convert string to unicode (needed for py2.7 DOH!)"""
     return unicode(s) if sys.version_info[0] <= 2 else str(s)
 
 
 def escape(text, tag=None):
+    """Escape HTML entities in `text` string. Enclose new text in tag if tag."""
     import cgi
     text = cgi.escape(text, quote=True)
     if tag:
@@ -89,6 +96,10 @@ def escape(text, tag=None):
 
 
 def gen_id(n=1, pre="uuid-"):
+    """
+    Generate `n` universally unique identifiers prepended with `pre` string.
+    Return string if n == 1 or list of strings if n > 1
+    """
     # The HTML4 spec says:
     # ID and NAME tokens must begin with a letter ([A-Za-z]) and may be followed by any number of letters,
     # digits ([0-9]), hyphens ("-"), underscores ("_"), colons (":"), and periods (".").
@@ -118,6 +129,7 @@ def splitall(path):
 
 
 def sort_and_groupby(items, key, reverse=False):
+    """Sort items use `key` function and invoke groupby to group items."""
     return groupby(sorted(items, key=key, reverse=reverse), key=key)
 
 
@@ -128,9 +140,11 @@ class MyEntry(Entry):
     """
     @lazy_property
     def authors(self):
+        """String with authors."""
         return ", ".join(my_unicode(p) for p in self.persons["author"])
 
     def to_markdown(self):
+        """Return markdown string with bibliographic entry."""
         fields = self.fields
         title = "*%s*" % fields["title"]
         authors = self.authors
@@ -178,6 +192,7 @@ class MyEntry(Entry):
         return s
 
     def to_html(self):
+        """Return string with entry in HTML format."""
         return markdown.markdown(self.to_markdown())
 
     def to_bibtex(self):
@@ -185,6 +200,11 @@ class MyEntry(Entry):
         return BibliographyData({self.key: self}).to_string("bibtex")
 
     def get_bibtex_linkmodal(self):
+        """
+        Build HTML string with bootstrap modal and link to open the modal.
+
+        Return: (link, modal)
+        """
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
         text = escape(self.to_bibtex(), tag="pre")
         # Construct ids from self.key as they are unique.
@@ -213,34 +233,47 @@ class MyEntry(Entry):
 
 _WEBSITE = None
 
-def build_website(root, verbose=0):
-    global _WEBSITE
-    assert _WEBSITE is None
-    _WEBSITE = Website(root, verbose=verbose)
-    return _WEBSITE
-
-
-def get_website():
-    global _WEBSITE
-    assert _WEBSITE is not None
-    return _WEBSITE
-
-
 class Website(object):
+    """
+    This object is a singleton and stores all the information required to generated the HTML documentation
+    (input variables, test suite, bibtex entries).
+    It also provides methods such as get_wikilink that will be invoked by the python markdown
+    parser to implement extensions to the markdown syntax.
+    """
+    # Regular expression for wikilinks.
     #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
     #WIKILINK_RE = r'\[\[([\w0-9_ -\./]+)\]\]'
     WIKILINK_RE = r'\[\[([^\[]+)\]\]'
     #WIKILINK_RE = r'(?![~`])\[\[([^\[]+)\]\]'
 
-    def __init__(self, root, verbose=0):
+    @classmethod
+    def build(cls, root, deploy, verbose):
+        """
+        Build Website object from directory `root` and cache it.
+        Main entry point for client code.
+        """
+        global _WEBSITE
+        assert _WEBSITE is None
+        _WEBSITE = cls(root, deploy, verbose=verbose)
+        return _WEBSITE
+
+    @classmethod
+    def get(cls):
+        """Return Website instance. Assume object already initialized with build_website."""
+        global _WEBSITE
+        assert _WEBSITE is not None
+        return _WEBSITE
+
+    def __init__(self, root, deploy, verbose=0):
         start = time.time()
         self.root = os.path.abspath(root)
+        self.deploy = bool(deploy)
         self.verbose = verbose
         self.md_generated = []
         self.warnings = []
 
         # Read mkdocs configuration file.
-        # TODO: Should read version from a centralized file.
+        # TODO: Should read Abinit version from a centralized file.
         with io.open(os.path.join(self.root, "..", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
             self.config = yaml.load(fh)
 
@@ -276,8 +309,7 @@ class Website(object):
             key = os.path.join(*splitall(t.inp_fname)[-4:])
             self.rpath2test[key] = t
         # Build OrderedDict to have deterministic behaviour.
-        self.rpath2test = OrderedDict([(k, self.rpath2test[k])
-            for k in sorted(self.rpath2test.keys())])
+        self.rpath2test = OrderedDict([(k, self.rpath2test[k]) for k in sorted(self.rpath2test.keys())])
         #print(self.rpath2test.keys())
 
         # Find variables used in tests.
@@ -322,6 +354,10 @@ Change the input yaml files or the python code
 """
 
     def walk_filepath(self):
+        """
+        Iterate over the files stored in the doc directory. Return (filename, path).
+        Files in site and ~abinit/doc/tests are excluded.
+        """
         excludes = [os.path.join(self.root, f) for f in ("site", os.path.join("doc", "tests"))]
         for root, dirs, files in os.walk(self.root, topdown=True):
             #if any(root.startswith(e) for e in excludes):
@@ -334,11 +370,23 @@ Change the input yaml files or the python code
                 yield f, os.path.join(root, f)
 
     def warn(self, msg):
+        """Print warning message to terminal and save it for future reference."""
         msg = "WARNING: %s" % msg
         self.warnings.append(msg)
         cprint(msg, color="yellow")
 
     def new_mdfile(self, dirname, mdname, meta=None):
+        """
+        Create new markdown file with name `mdname` in directory `dirname`.
+        `meta` is an optional dictionary with meta-variables added to the front matter.
+
+        Return:
+            File object.
+
+        .. warning:
+
+            Unicode characters in meta are not supported (annoying portability issue with py2.7)
+        """
         path = os.path.join(self.root, dirname, mdname)
         assert path not in self.md_generated
         self.md_generated.append(path)
@@ -347,11 +395,11 @@ Change the input yaml files or the python code
         if meta is None: meta = {}
         assert "rpath" not in meta
         meta["rpath"] = rpath
-        meta = {k.encode("ascii", errors="strict"): meta[k] for k in meta}
-        # FIXME This is not portable (py2.7 issue)
-        s = yaml.dump(meta, indent=4, default_flow_style=False).strip()
-        s = s.replace(" !!python/unicode", "")
-        #s = yaml.safe_dump(meta).strip()
+        # Must convert to ASCII to avoid !!python/unicode tags in YAML doc
+        # (mkdocs does not use pyaml to parse the front matter.
+        if sys.version_info[0] <= 2:
+            meta = {k.encode("ascii", errors="strict"): meta[k] for k in meta}
+        s = yaml.dump(meta, indent=4, default_flow_style=False).strip().replace(" !!python/unicode", "")
         mdf = io.open(path, "wt", encoding="utf-8")
         mdf.write("---\n%s\n---\n" % s)
         mdf.write(self.do_not_edit_comment)
@@ -360,8 +408,8 @@ Change the input yaml files or the python code
 
     def generate_mdindex(self, dirname):
         """
-        Generate the index.md file from the meta data section given in the md files stored in
-        directory `dirname`.
+        Generate the index.md file from the meta data section given in
+        the md files stored in directory `dirname`.
         """
         workdir = os.path.join(self.root, dirname)
         pages = [MarkdownPage(os.path.join(workdir, fname), self) for fname in os.listdir(workdir)
@@ -382,6 +430,7 @@ Change the input yaml files or the python code
             mdf.write("\n".join(index_md))
 
     def generate_markdown_files(self):
+        """Generate markdown files using the data stored in the bibtex file, the abivars file ..."""
         start = time.time()
 
         # Write index.md with the description of the input variables.
@@ -424,15 +473,20 @@ This document lists and provides the description of the name (keywords) of the
                         mdf.write(var.to_markdown(with_hr=False))
 
         # Add plotly figures.
-        deploy = False
-        if deploy:
+        if self.deploy:
             with self.new_mdfile("variables", "connections.md", meta={"plotly": True}) as mdf:
+                mdf.write("# Dependency graphs  \n")
+                mdf.write("""
+These graphs show the dependencies of the input variables towards each other.
+The colormap gives the number of input variables connected to the node.
+
+""")
                 for code, vd in self.variables_code.items():
                     for varset in vd.all_varset:
                         mdf.write("## %s, varset: %s  \n\n" % (code, varset))
                         mdf.write(vd.get_plotly_networkx(varset=varset, include_plotlyjs=False))
                         #mdf.write(vd.get_plotly_networkx_3d(varset=varset, include_plotlyjs=False))
-                        mdf.write(2*"\n" + "* * *\n")
+                        #mdf.write(2*"\n" + "* * *\n")
 
         # Write Markdown page with statistics.
         with self.new_mdfile("variables", "varset_stats.md") as mdf:
@@ -468,10 +522,10 @@ in order of number of occurrence in the input files provided with the package.
                 mdf.write("\n".join(lines) + "</ul>")
 
         cprint("Generating Markdown files with topics ...", "green")
-        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/topics/origin_files/"
-        with io.open(os.path.join(repo_root, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
+        repo_path = os.path.join(ABINIT_REPO, "doc/topics/origin_files/")
+        with io.open(os.path.join(repo_path, "list_of_topics.yml"), "rt", encoding="utf-8") as fh:
             self.all_topics = sorted(yaml.load(fh), key=lambda t: t[0].upper())
-        with io.open(os.path.join(repo_root, "list_tribes.yml"), "rt", encoding="utf-8") as fh:
+        with io.open(os.path.join(repo_path, "list_tribes.yml"), "rt", encoding="utf-8") as fh:
             # tribe_name --> description
             self.all_tribes = OrderedDict(yaml.load(fh))
 
@@ -481,7 +535,7 @@ in order of number of occurrence in the input files provided with the package.
 
         for topic in self.all_topics:
             # Read data from yaml file and generate markdown string.
-            with io.open(os.path.join(repo_root, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
+            with io.open(os.path.join(repo_path, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
                 top = yaml.load(fh)[0]
                 title = html2text(top.title)
                 introduction = html2text(top.introduction)
@@ -490,13 +544,22 @@ in order of number of occurrence in the input files provided with the package.
                 tutorials = top.tutorials.strip()
 
             # Find list of variables associated to this topic
-            # Group vlist by tribes and write list with links.
+            # Order and group vlist by tribes and write list with links.
             # TODO: Can we have multiple tribes with the same topic?
             related_variables = "No variable associated to this topic."
             vlist = [var for var in self.variables_code.iter_allvars() if topic in var.topic_tribes]
             if vlist:
                 lines = []
-                items = [(v.topic_tribes[topic][0], v) for v in vlist]
+                def sort_tribes(t):
+                    try:
+                        return {"basic": 0, "compulsory": 1, "expert": 2, "useful": 3, "internal": 4,
+                                "prpot": 5, "prfermi": 6, "prden": 7, "prgeo": 8, "prdos": 9, "prgs": 10,
+                                "prngs": 11, "prmisc": 12}[t[0]]
+                    except KeyError:
+                        raise KeyError("Cannot find tribe %s in dict. Add it to sort_tribes with the proper rank" % str(t))
+
+                items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: sort_tribes(t))
+
                 for tribe, group in sort_and_groupby(items, key=lambda t: t[0]):
                     lines.append("*%s:*\n" % tribe)
                     lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
@@ -610,8 +673,8 @@ The bibtex file is available [here](../abiref.bib).
             mdf.write("\n".join(lines))
 
         # Write acknowledgments page.
-        repo_root = "/Users/gmatteo/git_repos/abinit_quick_prs/doc/biblio/origin_files/"
-        with io.open(os.path.join(repo_root, "bibfiles.yml"), "rt", encoding="utf-8") as fh:
+        repo_path = os.path.join(ABINIT_REPO, "doc/biblio/origin_files/")
+        with io.open(os.path.join(repo_path, "bibfiles.yml"), "rt", encoding="utf-8") as fh:
             for comp in yaml.load(fh):
                 if comp.name == "acknow": break
             else:
@@ -649,6 +712,7 @@ The bibtex file is available [here](../abiref.bib).
                 fh.write(os.path.relpath(p, self.root) + "\n")
 
     def analyze_pages(self):
+        """Analyze all markdown pages, find wiklinks in pages required to generate backlinks in docs."""
         cprint("Analyzing markdown pages ...", "green")
         start = time.time()
         self.md_pages, self.html_pages = [], []
@@ -666,7 +730,7 @@ The bibtex file is available [here](../abiref.bib).
     def find_unreferenced_mds(self):
         """
         Extract all md pages listed in mkdocs.yml and compare them with the md files
-        in docs directory. Issue a warning the two sets are not equal.
+        in docs directory. Issue a warning if the two sets are not equal.
         """
         def find_mds(obj):
             """Return list of md files reported in mkdocs.yml"""
@@ -702,11 +766,14 @@ The bibtex file is available [here](../abiref.bib).
             self.warn("Found markdown files in mkdocs.py not present in directories:\n%s" % "\n".join(diff))
 
     def slugify(self, value):
-        """ Slugify a string, to make it URL friendly. """
+        """
+        Slugify a string, to make it URL friendly. Use same convention as TOC extensions of python markdown.
+        """
         from markdown.extensions.toc import slugify
         return slugify(value, separator="-")
 
     def preprocess_mdlines(self, lines):
+        """Preprocess markdown lines."""
         INC_SYNTAX = re.compile(r'^\{%\s*(.+?)\s*%\}')
         new_lines = []
         for line in lines:
@@ -764,6 +831,16 @@ The bibtex file is available [here](../abiref.bib).
         return namespace, name, fragment, text
 
     def get_wikilink(self, token, page_rpath):
+        """
+        Involked by the wikilink extension to implement the wikilink syntax [`namespace:name#fragment|text`]
+
+        Args:
+            token: The string enclosed between square brackets.
+            page_rpath: The root-relative path of the markdown file (needed to generate relative links).
+
+        Return:
+            :class:`etree.Element` instance represent the HTML anchor.
+        """
         token = token.strip()
         if not token:
             self.warn("Empty wikilink in %s" % page_rpath)
@@ -776,7 +853,6 @@ The bibtex file is available [here](../abiref.bib).
         #        return a.text
         #    except:
         #        return token
-
 
         html_classes = ["wikilink"]
         #html_classes = ["wikilink animated pulse"]
@@ -1065,6 +1141,7 @@ The bibtex file is available [here](../abiref.bib).
             #    #print(errors)
 
     def modal_from_filename(self, path, title=None):
+        """Return HTML string with bootstrap modal and content taken from file `path`."""
         # Based on https://v4-alpha.getbootstrap.com/components/modal/#examples
         # See also https://stackoverflow.com/questions/14971766/load-content-with-ajax-in-bootstrap-modal
         title = path if title is None else title
@@ -1217,6 +1294,7 @@ class Page(object):
 
 
 def add_popover(element, title=None, content=None, html=False):
+    """Helper function to add popover to the anchor element."""
     # NB: Unfortunately, cannot subclass etree.Element in py2.7.
     def tos(s):
         return s if html else escape(s)
@@ -1322,6 +1400,10 @@ class HtmlPage(Page):
 
 
 class AbinitStats(object):
+    """
+    This object parses the data stored in statistics.txt and produces the JSON document
+    that will be used by plotly to plot the results on the web-site.
+    """
 
     def __init__(self, path):
         self.path = os.path.abspath(path)
@@ -1368,6 +1450,7 @@ class AbinitStats(object):
         self.parse()
 
     def json_dump(self, path):
+        """Write data in JSON format to file `path`."""
         import json
         with io.open(path, "wt", encoding="utf-8") as fh:
             fh.write(my_unicode(json.dumps(self.data, ensure_ascii=False)))

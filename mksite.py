@@ -113,9 +113,10 @@ def main():
     if "--help" in sys.argv or "-h" in sys.argv:
         return mkdocs.__main__.cli()
 
-    from abimkdocs.website import build_website
+    from abimkdocs.website import Website
     if len(sys.argv) > 1 and ("--help" not in sys.argv or "-h" not in sys.argv):
-        website = build_website("./doc", verbose=verbose)
+        deploy = True
+        website = Website.build("./doc", deploy=deploy, verbose=verbose)
 
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
         website.generate_markdown_files()

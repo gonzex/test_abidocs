@@ -7,7 +7,3 @@ pyyaml>=3.11
 pygments
 pybtex
 #pytest
-#networkx
-#plotly
-#matplotlib>=1.5
-#mkdocs-bootswatch
