@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'gstate input variables'">
+        <meta name="description" content="gstate input variables">
       
       
         <link rel="canonical" href="http://www.abinit.org/variables/gstate/">
@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../../images/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
     
       
@@ -28,7 +28,7 @@
     
 
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
 
     <!-- Jquery from Google CDN -->
@@ -47,6 +47,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!-- Support for bootstrap table http://bootstrap-table.wenzhixin.net.cn/ -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
 
     <!--Pace support. http://github.hubspot.com/pace/ -->
     <script>
@@ -139,9 +145,9 @@
 
 
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -221,7 +227,7 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -397,13 +403,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
-      
-        
-          <img src="../../images/anna-logo-abinit-2015.svg">
-        
-      
-    </div>
+    
+      <i class="md-logo md-nav__button">
+        <img src="../../images/anna-logo-abinit-2015.svg">
+      </i>
+    
     abinit
   </label>
   
@@ -4581,9 +4585,9 @@ frequencies)</p>
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to specify bands and occupation numbers, for metals or insulators" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/BandOcc">topic_BandOcc</a><br />
 <em>Variable type:</em> real<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 0.5 if <a class="wikilink codevar-wikilink" href="../basic#occopt">occopt</a>&gt;2,
+<em>Default value:</em> 0.125 if <a class="wikilink codevar-wikilink" href="../basic#occopt">occopt</a>==1,
+0.5 if <a class="wikilink codevar-wikilink" href="../basic#occopt">occopt</a>&gt;2,
 0.0 if <a class="wikilink codevar-wikilink" href="../basic#usewvl">usewvl</a>==1,
-0.125 if <a class="wikilink codevar-wikilink" href="../basic#occopt">occopt</a>==1,
 0.0 otherwise.</p>
 <details class="note"><summary>Test list (click to open). Rarely used, [4/920] in all abinit tests, [1/116] in abinit tutorials</summary><ul><li>tutorial:  <a class="wikilink abifile-wikilink" data-content="H6 Supercell Generates a 6 atom Hydrogen supercell with the multiplicity of 1:2:3 (x:y:z) Produce WFK file to be analyzed with fold2bloch" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tfold2bloch_1.in" target="_blank">tfold2bloch_1.in</a></li><li>v1:  <a class="wikilink abifile-wikilink" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=6 and tsmear=0.05. Designed to test the treatment of metals, with the Gaussian-Hermite smearing of Methfessel and Paxton. Also test the use of fband instead of nband." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t03.in" target="_blank">t03.in</a>, <a class="wikilink abifile-wikilink" data-content="Test the geometry builder : - H2O molecule repeated four times,  with rotations and translations - Si (100) unreconstructed surface : 2*2*2 objects of eight atoms - 16 H atoms at the bottom This test is not realistic (it would take too much time)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t42.in" target="_blank">t42.in</a>, <a class="wikilink abifile-wikilink" data-content="Test the geometry builder,  and the non-ordering of atoms  : Same thing as test 42,  but with an other order for the input of atoms. Also permutes objects a and b,  to check whether everything is OK." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t43.in" target="_blank">t43.in</a></li></ul></details><p>Governs the number of bands to be used in the code in the case the parameter
 <a class="wikilink codevar-wikilink" href="../basic#nband">nband</a> is not defined in the input file (which means that <a class="wikilink codevar-wikilink" href="../basic#occopt">occopt</a> is not
@@ -6546,7 +6550,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
 
     </div>
     
-      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      <script src="../../assets/javascripts/application-6940329b9f.js"></script>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>

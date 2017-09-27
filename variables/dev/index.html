@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'dev input variables'">
+        <meta name="description" content="dev input variables">
       
       
         <link rel="canonical" href="http://www.abinit.org/variables/dev/">
@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../../images/favicon.ico">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.1">
     
     
       
@@ -28,7 +28,7 @@
     
 
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
 
     <!-- Jquery from Google CDN -->
@@ -47,6 +47,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!-- Support for bootstrap table http://bootstrap-table.wenzhixin.net.cn/ -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
 
     <!--Pace support. http://github.hubspot.com/pace/ -->
     <script>
@@ -139,9 +145,9 @@
 
 
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
     
     
@@ -221,7 +227,7 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -397,13 +403,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <div class="md-nav__button md-logo">
-      
-        
-          <img src="../../images/anna-logo-abinit-2015.svg">
-        
-      
-    </div>
+    
+      <i class="md-logo md-nav__button">
+        <img src="../../images/anna-logo-abinit-2015.svg">
+      </i>
+    
     abinit
   </label>
   
@@ -4305,8 +4309,8 @@ end of the run, against a hard-coded value of total energy (and possibly
 stresses, forces &hellip;). The echo of the analysis is done in the STATUS file. In
 particular, such built-in tests can be used to check quickly whether ABINIT
 fallbacks have been connected or not (bigdft, etsf_io, libxc, wannier90). At
-present, <a class="wikilink codevar-wikilink" href="../dev#builtintest">builtintest</a>=1 &hellip; 7 are allowed. See more information in tests
-/built-in/README .</p>
+present, <a class="wikilink codevar-wikilink" href="../dev#builtintest">builtintest</a>=1 &hellip; 7 are allowed. See more information in
+tests/built-in/README .</p>
 <h2 id="cgtyphf"><strong>cgtyphf</strong><a class="headerlink" href="#cgtyphf" title="Permanent link">&para;</a></h2>
 <p><em>Mnemonics:</em> Conjugate Gradient TYPe used for Hartree Fock exact exchange<br />
 <em>Characteristics:</em> <a class="wikilink" href="../../user-guide/abinit#32-more-about-abinit-input-variables">DEVELOP</a><br />
@@ -4503,11 +4507,11 @@ relative to the calculated fermi energy.</p>
 <em>Mentioned in topic(s):</em> <a class="wikilink topic-wikilink" data-content="How to tune the speed and memory usage" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../topics/TuningSpeed">topic_TuningSpeed</a><br />
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
-<em>Default value:</em> 401 if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==1,
-312 if <a class="wikilink" data-content="This is an external parameter
+<em>Default value:</em> 312 if <a class="wikilink" data-content="This is an external parameter
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
 " data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="True if FFTW3 is enabled (compilation)">FFTW3</a> and <a class="wikilink codevar-wikilink" href="../dev#usedmft">usedmft</a>==0,
+401 if <a class="wikilink codevar-wikilink" href="../paral#paral_kgb">paral_kgb</a>==1,
 112 otherwise.</p>
 <details class="note"><summary>Test list (click to open). Moderately used, [34/920] in all abinit tests, [1/116] in abinit tutorials</summary><ul><li>gpu:  <a class="wikilink abifile-wikilink" data-content="Silicon - diamond structure - PAW - volume relaxation Test the use of GPU within Projector Augmented-Wave formalism. Test structure relaxation (multiple calls to gstate routine)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t04.in" target="_blank">t04.in</a></li><li>mpiio:  <a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t21.in" target="_blank">t21.in</a>, <a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t25.in" target="_blank">t25.in</a>, <a class="wikilink abifile-wikilink" data-content="He FCC solid in conventional cell (4 atoms). Test the recursion algorithm (for high-temperature calculations). Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t42.in" target="_blank">t42.in</a>, <a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  parallel IO. Test of ground state Only with 4 procs,  no sequential version (tests accesswf 1)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t49.in" target="_blank">t49.in</a>, <a class="wikilink abifile-wikilink" data-content="This test check the parallelization over atomic sites both for the ground state and response function features (within PAW formalism),  together with parallelization over perturbations. Computation of phonons and response to electric field within PAW (both q=0 and q/=0) Test on AlAs structure inspired by v6/t62. Ground state,  DDK,  effective charges and dielectric tensor are computed. Phonon modes at q=0 are computed. Phonon modes at q=(1/4, 0, 0) and q=(-1/4, 1/2/1/4) are computed. Note: Charge neutrality is not achieved with the present dataset, but can be easily reached by increasing some parameters;  for instance: (ngkpt 8 8 8,  ecut 15.,  pawecutdg 30.) gives Z(Al)=2.1184310,  Z(As)=-2.1184804" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t62.in" target="_blank">t62.in</a>, <a class="wikilink abifile-wikilink" data-content="This test check the parallelization over atomic sites both for the ground state and response function features (within PAW formalism),  together with parallelization over perturbations. Computation of phonons and response to electric field within PAW (both q=0 and q/=0) Test on AlAs structure inspired by v6/t62. Ground state,  DDK,  effective charges and dielectric tensor are computed. Phonon modes at q=0 are computed. Phonon modes at q=(1/4, 0, 0) and q=(-1/4, 1/2/1/4) are computed. Note: Charge neutrality is not achieved with the present dataset, but can be easily reached by increasing some parameters;  for instance: (ngkpt 8 8 8,  ecut 15.,  pawecutdg 30.) gives Z(Al)=2.1184310,  Z(As)=-2.1184804" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t62.in" target="_blank">t62.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO with 4 atoms in DMFT low cutoff,  low number of k-points DMFT with hubbard I tested with self-consistency over density Test of paral_kgb with DMFT" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t99.in" target="_blank">t99.in</a></li><li>paral:  <a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t21.in" target="_blank">t21.in</a>, <a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test the triple parallelisation. We cannot check the distribution npband*npfft*npkpt=2*2*2=8 processors, this number being not allowed in the test procedure. Here,  we only test the parallelisation over bands and spins: npband*npfft*npkpt=2*1*2=4 processors. In addition,  we also test here various features of bandfft-kpt parallelisation In particular,  the bandpp,  istwfk=2 and wfoptalg=14 variables." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t25.in" target="_blank">t25.in</a>, <a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 4 procs. Same of test R:test the automatic parallelisation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t26.in" target="_blank">t26.in</a>, <a class="wikilink abifile-wikilink" data-content="Test the parallelization over spinorial components of WF Bi A7 structure (2 atoms,  treated as semi-conductor), using PAW,  within LDA and spin-orbit coupling. - with zero magnetization      (nspden=1,  nspinor=2) - with non-collinear magnetism (nspden=4,  nspinor=2)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t28.in" target="_blank">t28.in</a>, <a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test MPI-FFT with 2 processors,  istwfk=2 and bandpp 2" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t29.in" target="_blank">t29.in</a>, <a class="wikilink abifile-wikilink" data-content="Chebyshev,  C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Also test gemm_nonlop" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t30.in" target="_blank">t30.in</a>, <a class="wikilink abifile-wikilink" data-content="Gold,  8 atom supercell,  with PAW. Test lotf_nitex,  lotf_classic,  lotf_version,  lotf_nneigx. These variables,  concerning LOTF method,  are taken into account only if the enable_lotf=&amp;quot;yes&amp;quot; is used in configuration." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t41.in" target="_blank">t41.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC parallelism" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t92.in" target="_blank">t92.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC parallelism" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t92.in" target="_blank">t92.in</a></li><li>tutoparal:  <a class="wikilink abifile-wikilink" data-content="BaTiO3 linear response calculation" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutoparal/Input/tdfpt_03.in" target="_blank">tdfpt_03.in</a></li><li>v1:  <a class="wikilink abifile-wikilink" data-content="Bulk Aluminium,  FCC,  with 2 special points,  occopt=3 and tsmear=0.02. Designed to test the treatment of metals,  with a finite temperature corresponding to about 6300 Kelvin. Use fftalg=400" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t05.in" target="_blank">t05.in</a>, <a class="wikilink abifile-wikilink" data-content="H atom (spin-unpolarized in a medium size cubic box,  k=0 0 0 similar to test 1 of fast) Using multi-dataset mode,  examine the following combinations of fftalg and istwfk : (112, 2), (112, 1), (111, 1), (111, 2), (110, 2), (110, 1), (100, 1),  then compute the energy with nstep=0 for (112, 2) and (112, 1). Then again SCF test for (400, 1),  (401, 1),  (402, 1). For the second dataset,  reads the wavefunctions of the first dataset." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t87.in" target="_blank">t87.in</a>, <a class="wikilink abifile-wikilink" data-content="H atom,  similar to test 87,  except that the box is not cubic, but only parallelipipedic (not even a rectangle parallelipiped). However,  the primitive vectors describe the same lattice as in case 87,  so that the results must be identical to those of test 87,  even if a different FFT grid is used. That is what is observed." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t88.in" target="_blank">t88.in</a>, <a class="wikilink abifile-wikilink" data-content="Mg atom,  in a big box,  displaced from the center, test different k points with time-reversal symmetry,  and different fftalg values." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t89.in" target="_blank">t89.in</a></li><li>v2:  <a class="wikilink abifile-wikilink" data-content="MgO FCC crystal,  with very low cut-off,  and 32 k points. Pseudopotentials WITHOUT a non-linear core correction. Compute the dynamical matrices at q(0.25 0.5 0.498) and q(0.25 0.5 0.5). The results should be very close to each other,  but were not in pre v2.1 versions,  because the symmetry was not treated correctly for the highest-symmetry q vector q(0.25 0.5 0.5) (test case found by PTepesch)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t37.in" target="_blank">t37.in</a></li><li>v3:  <a class="wikilink abifile-wikilink" data-content="Mg atom,  in a big box,  displaced from the center, test different k points with time-reversal symmetry,  and different fftalg values (4xx) corresponding to the 2002 FFT of SGoedecker." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t50.in" target="_blank">t50.in</a></li><li>v4:  <a class="wikilink abifile-wikilink" data-content="Test of Mg2 molecule chains,  in a slab supercell geometry. Symmetries are broken. k point (1/4 1/4 1/4) Use of default values of fftalg and exchn2n3 Reference for test #92." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t91.in" target="_blank">t91.in</a>, <a class="wikilink abifile-wikilink" data-content="Test of Mg2 molecule chains,  in a slab supercell geometry. Symmetries are broken. k point (1/4 1/4 1/4) Use fftalg 412 and exchn2n3 1. Suitable for tests of space parallelisation." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t92.in" target="_blank">t92.in</a>, <a class="wikilink abifile-wikilink" data-content="Test of Ca,  simple cubic,  2  k-point. Testing GS  energy and lobpcg algorithm." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t93.in" target="_blank">t93.in</a>, <a class="wikilink abifile-wikilink" data-content="Test of Ca,  simple cubic,  2  k-point. Testing GS  PAW  energy and lobpcg algorithm." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t94.in" target="_blank">t94.in</a></li><li>v5:  <a class="wikilink abifile-wikilink" data-content="Simple test for double grid (fine/coarse) system,  the cutting radius and the initial fermi energy in recursion method Corresponding variables: recgratio,  recrcut, recefermi respectively Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t75.in" target="_blank">t75.in</a></li><li>v6:  <a class="wikilink abifile-wikilink" data-content="Chain of Silicon diatomic molecules (1 Si2 molecule in the cell) Uses different values of fftcache. Test similar to B3 of the cpu series (case with ecut=112 and ngfft=3*96). The default fftcache=16 seems OK : With fftcache=1,  the tcpu/ncalls/ndata is 0.028 on testf (the reference machine,  20090912) With fftcache=16 (the default),  the tcpu/ncalls/ndata is 0.021 With fftcache=128,  the tcpu/ncalls/ndata is 0.021" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t03.in" target="_blank">t03.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO with 4 atoms. Check of the modified self-consistent loop over electronic density for DMFT. This calculation use LDA occupations for the test and is not running the DMFT part (dmftcheck2=-1)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t07.in" target="_blank">t07.in</a>, <a class="wikilink abifile-wikilink" data-content="DMFT tests on Antiferromagnetic NiO (4 atoms),  check DMFT loop with Hubbard I,  DMFT self-consistency and density self-consistency : computes occupations and energy." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t46.in" target="_blank">t46.in</a></li><li>v7:  <a class="wikilink abifile-wikilink" data-content="(Apparently the documentation section of this test has been lost)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t21.in" target="_blank">t21.in</a>, <a class="wikilink abifile-wikilink" data-content="Test CT-QMC options only. Not realistic" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t28.in" target="_blank">t28.in</a></li></ul></details><p>This keyword is ** irrelevant ** when Fast Fourier Transforms are done using
 ** Graphics Processing Units ** (GPU), i.e. when <a class="wikilink codevar-wikilink" href="../paral#use_gpu_cuda">use_gpu_cuda</a>=1 (in that
@@ -6097,7 +6101,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
 
     </div>
     
-      <script src="../../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      <script src="../../assets/javascripts/application-6940329b9f.js"></script>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>
